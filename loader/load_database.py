@@ -10,9 +10,10 @@ from mock import MONGO_CLIENT
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
 # capaz mover a un .env despues
-DB_PATH = "../vector_db"
-CORPUS_PATH = "../corpus"
-CACHE_MODELS_PATH = "../models/embeddings"
+PROJECT_ROOT_PATH = Path(__file__).parent.parent
+DB_PATH = f"{PROJECT_ROOT_PATH}/vector_db_test"
+CORPUS_PATH = f"{PROJECT_ROOT_PATH}/corpus"
+CACHE_MODELS_PATH = f"{PROJECT_ROOT_PATH}/models/embeddings"
 
 
 def load_json(file_path):
@@ -21,17 +22,24 @@ def load_json(file_path):
         return json.load(f)
 
 
-def load_vector_db(folder_path=DB_PATH):
+def load_embedding_model():
     cache_folder = Path(CACHE_MODELS_PATH)
     cache_folder.mkdir(exist_ok=True)
 
-    model_name = "sentence-transformers/all-mpnet-base-v2"  # otro que podriamos probar "sentence-transformers/all-MiniLM-L6-v2"
-    embedding_model = HuggingFaceEmbeddings(
+    model_name = "sentence-transformers/all-mpnet-base-v2"
+    # otros que podriamos probar
+    # > "sentence-transformers/all-MiniLM-L6-v2"
+    # > "jinaai/jina-embeddings-v2-base-es"
+    return HuggingFaceEmbeddings(
         cache_folder=str(cache_folder),
         model_name=model_name,
         model_kwargs={"device": "cuda:0"},  # 'cpu' si no quieren/pueden GPU
         show_progress=True,
     )
+
+
+def load_vector_db(folder_path=DB_PATH):
+    embedding_model = load_embedding_model()
 
     if Path(folder_path + "/index.faiss").exists():
         db = FAISS.load_local(
@@ -40,13 +48,13 @@ def load_vector_db(folder_path=DB_PATH):
             allow_dangerous_deserialization=True,
         )
     else:
-        db = seed_vector_db(folder_path, embedding_model=embedding_model)
+        db = seed_vector_db(folder_path, embedding_model)
 
     return db
 
 
 def seed_vector_db(
-    db_folder_path=DB_PATH, data_folder_path=CORPUS_PATH, embedding_model=None
+    embedding_model, db_folder_path=DB_PATH, data_folder_path=CORPUS_PATH
 ):
     all_docs_ids = MONGO_CLIENT["database"]["classes"].find({}, projection={"_id": 1})
 
@@ -84,6 +92,14 @@ def drop_vector_db(folder_path=DB_PATH):
     (folder_path / "index.pkl").unlink(missing_ok=True)
 
 
+def add_document_to_db(db, document):
+    raise NotImplementedError
+
+
+def checkpoint_vector_db(db):
+    raise NotImplementedError
+
+
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--seed", action="store_true")
@@ -91,8 +107,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.seed:
-        logging.info(f"Seeding vector database from {DB_PATH}")
-        seed_vector_db()
+        logging.info(f"Seeding vector database {DB_PATH} with data from {CORPUS_PATH}")
+        seed_vector_db(embedding_model=load_embedding_model())
 
     if args.drop:
         logging.info(f"Dropping vector database from {DB_PATH}")
