@@ -11,14 +11,11 @@ MONGO_CLIENT = {
 
 class CustomList(list):
     def find(self, query, projection=None):
-        # Implement your custom find logic here
-        # For example, if no query is provided, return all document IDs
         if query == {}:
             res = [doc["_id"] for doc in self]
             print(res)
             return res
         else:
-            # Implement your query logic
             pass
 
 
