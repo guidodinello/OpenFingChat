@@ -1,20 +1,23 @@
 from scrapper.helpers.subjects import getSubjectsLinks, getSubject
-from scrapper.helpers.lessons import getLessonsLinks, getLesson
+from scrapper.helpers.lessons import getLesson, getLessonsTags
 
 def scrapping():
+    print("START SCRAPPING")
     subjectsLinks = getSubjectsLinks()
 
     for subjectLink in subjectsLinks:
-        print(f"Start Scraping Subject {subjectLink}")
+        subjectName = subjectLink.split("/")[-2]
+        print(f"### Start Scraping Subject {subjectName} ###")
         
         subject = getSubject(subjectLink)
-        lessonsLinks = getLessonsLinks(subject["url"])
+        lessonsTags = getLessonsTags(subject["url"])
 
-        for lessonLink in lessonsLinks:
-            print(f"Start Scraping Lesson {lessonLink}")
-            lesson = getLesson(lessonLink, subject["_id"])
-            print(f"End Scrapping Lesson '{lesson["name"]}'")
+        for lessonTag in lessonsTags:
+            lesson = getLesson(lessonTag, subject["_id"], subjectName)
+            print(f"Lesson '{lesson["name"]}' successfully scrapped!")
 
-        print(f"End Scraping Subject '{subject["name"]}'")
+        print(f"Subject '{subject["name"]}' successfully scrapped!")
+
+    print("FINISH SCRAPPING")
 
 
