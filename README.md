@@ -3,46 +3,59 @@
 ### Variables de Ambiente
 
 Duplicar el archivo `.env.example`.
+
 ```python
 MONGODB_URI="mongodb://localhost:27017/"
 OPENFING_URL="https://open.fing.edu.uy"
 DATABASE_NAME="webir"
+
+CACHE_PATH="models" # Folder to persist models and avoid downloading every time, e.g., embeddings.
+VDB_PATH="vector_db_test" # Folder where the vector database will be persisted.
+DATA_PATH="corpus" # Folder containing transcribed and segmented lessons outputted by Whisper.
 ```
 
 ### Requerimientos
 
 Ver el archivo `requirments.txt`.
 
-* Para **instalar** los requerimientos ejecutar:
+-   Para **instalar** los requerimientos ejecutar:
+
 ```
 pip install -r requirements.txt
 ```
 
-* Para **actualizar** el archivo de `requirments.txt` hacer:
+-   Para **actualizar** el archivo de `requirments.txt` hacer:
+
 ```
 pip freeze > requirements.txt
 ```
+
 ## Store
 
 ### Data
+
 En este modulo se gestiona los datos de las materias (`subjects`) y sus clases (`lessons`) que son almacenados en una base de datos no relacional de **Mongo DB**.
 
 #### Ejecutando MongoDB
+
 Para ejecutar **Mongo DB** localmente, simplemente se debe:
+
 1. Instalar Mongo DB ([Manual](https://www.mongodb.com/docs/manual/installation/)).
 2. (Opcional) Instalar la interfaz de usuario [MongoDB Compass](https://www.mongodb.com/try/download/compass).
-3. Setear la variable de ambiente `MONGODB_URI` con el link de conexión correspondiente. Por defecto es `mongodb://localhost:27017/`.   
+3. Setear la variable de ambiente `MONGODB_URI` con el link de conexión correspondiente. Por defecto es `mongodb://localhost:27017/`.
 
 Para ejecutar **Mongo DB** en el servidor, se debe:
+
 1. Ir a [Atlas MongoDB](https://www.mongodb.com/atlas).
 2. Ingresar con su cuenta.
 3. Ingresar al proyecto **Webir** (se envio una invitación al proyecto). En este proyecto ya se creo un cluster que corre en AWS que se llama WebirDatabase.
 4. Conectar al cluster WebirDatabase usando Python Drivers, lo cual ya esta configurado. Simplemente se tiene que modificar la variable de ambiente `MONGODB_URI` con el connection string correspondiente.
 5. Agregar la IP local actual para que permita la conexión satisfactoriamente.
-![alt text](image.png)
-Ver [Network Access](https://cloud.mongodb.com/v2/664a4897fbf0be7fcc03e6c6#/security/network/accessList) para otros tipos de conexiones (Por ejemplo para conectarse desde el colab).
+   ![alt text](image.png)
+   Ver [Network Access](https://cloud.mongodb.com/v2/664a4897fbf0be7fcc03e6c6#/security/network/accessList) para otros tipos de conexiones (Por ejemplo para conectarse desde el colab).
 
 #### Modelos de Subjects y Lessons
+
 Dentro del modulo **data** hay un submodulo **models** en los cuales se tiene dos modelos: `SubjectModel` y `LessonModel`.
 
 Estos modelos cuentan con metodos para crear, actualizar, obtener por el id, obtener un item por el valor de algun atributo y obtener todos los items de la colección correspondiente.
@@ -89,8 +102,8 @@ print(f"Retrieved subject with lessons: {sWithLessons}\n")
 
 ### Transcriptions
 
-
 ## Scrapper
+
 Para ejecurar el scrapper se debe correr el siguiente comando:
 
 ```
@@ -98,4 +111,3 @@ python main.py scrapping
 ```
 
 Verificar `MONGODB_URI` para saber donde se esta guardando la info (localhost o en el servidor de atlas).
-
