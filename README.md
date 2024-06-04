@@ -111,3 +111,30 @@ python main.py scrapping
 ```
 
 Verificar `MONGODB_URI` para saber donde se esta guardando la info (localhost o en el servidor de atlas).
+
+## Chat
+
+### Deploy
+Para hacer el deploy del Chat en vercel, seguir los siguientes pasos:
+
+1. Instalar (globalmente) Vercel CLI:
+```
+npm install -g vercel
+```
+2. Iniciar sesión con vercel
+```
+vercel login
+```
+Usar el email ```webirgrupo3@gmail.com```. Luego entrar a gmail con ese correo y contraseña ```WEBIRwebir``` para verificar (si pide un codigo se los mando porque asocie mi telefono).
+
+Todo esto porque no permitia crear team en la version gratis.
+
+3. Ir al directorio del chat
+```
+cd chat
+```
+4. Ejecutar el script para el deploy
+```
+npm run deploy
+```
+![alt text](image-1.png)
