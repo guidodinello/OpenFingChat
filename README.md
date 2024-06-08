@@ -111,3 +111,23 @@ python main.py scrapping
 ```
 
 Verificar `MONGODB_URI` para saber donde se esta guardando la info (localhost o en el servidor de atlas).
+
+#### Loader
+
+Se puede ejecutar el loader, desde la raiz del proyecto de las siguientes maneras:
+
+-   Llamando al script loader usando main.py
+
+```python
+python main.py loader (--seed [path to folder with seeding data] | --drop)
+```
+
+-   Ejecutando el script loader.py directamente como un modulo de python
+
+```python
+python -m loader.loader (--seed [path to folder with seeding data] | --drop)
+```
+
+> Note: se asume que el path_to_folder es relativo a donde se esta ejecutando el script.
+
+> Note: acordarse de agregar tu ip publica a la whitelist de ips en el cluster de mongo atlas (Ver Ejecutando MongoDB) al usar la funcionalidad seed dado que se conecta al mismo para recuperar los id de las clases transcritas.
