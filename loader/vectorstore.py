@@ -50,6 +50,9 @@ class VectorStore:
             self.seed(self.data_path)
 
     def seed(self, data_path: PathLike) -> None:
+        """
+        Seed the vectorstore with the whisper-segmented-json files inside data_path folder
+        """
         data_path = data_path or self.data_path
 
         if not Path(data_path).exists():
@@ -61,6 +64,15 @@ class VectorStore:
             filters={"transcribed": True},
             projection={"_id": 1},
         )
+        if not lessons_id:
+            logging.error("No transcribed lessons returned from the database!")
+            # si no hay lessons marcadas como transcriptas, para testear se puede usar el mock
+            # from mock import MONGO_CLIENT
+            # lessons_id = MONGO_CLIENT["database"]["classes"].find(
+            #     {"transcribed": True},
+            #     projection={"_id": 1},
+            # )
+            return self
 
         job = functools.partial(process_transcript, data_path)
         with futures.ThreadPoolExecutor() as executor:
@@ -90,7 +102,7 @@ class VectorStore:
         (self.path / "index.pkl").unlink(missing_ok=True)
 
 
-def process_transcript(data_folder: PathLike, lesson_id: str):
+def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]:
     class_transcript = Path(f"{data_folder}/{lesson_id}.json")
     if not class_transcript.exists():
         logging.error(
@@ -98,6 +110,7 @@ def process_transcript(data_folder: PathLike, lesson_id: str):
         )
         return None
 
+    # TODO: asumi que los archivos segmentados estan guardados localmente
     with open(class_transcript, "r", encoding="utf-8") as f:
         content = json.load(f)
 
