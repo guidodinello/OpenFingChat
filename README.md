@@ -112,7 +112,7 @@ python main.py scrapping
 
 Verificar `MONGODB_URI` para saber donde se esta guardando la info (localhost o en el servidor de atlas).
 
-#### Loader
+## Loader
 
 Se puede ejecutar el loader, desde la raiz del proyecto de las siguientes maneras:
 
@@ -131,3 +131,31 @@ python -m loader.loader (--seed [path to folder with seeding data] | --drop)
 > Note: se asume que el path_to_folder es relativo a donde se esta ejecutando el script.
 
 > Note: acordarse de agregar tu ip publica a la whitelist de ips en el cluster de mongo atlas (Ver Ejecutando MongoDB) al usar la funcionalidad seed dado que se conecta al mismo para recuperar los id de las clases transcritas.
+
+
+## Chat
+
+### Deploy
+Para hacer el deploy del Chat en vercel, seguir los siguientes pasos:
+
+1. Instalar (globalmente) Vercel CLI:
+```
+npm install -g vercel
+```
+2. Iniciar sesión con vercel
+```
+vercel login
+```
+Usar el email ```webirgrupo3@gmail.com```. Luego entrar a gmail con ese correo y contraseña ```WEBIRwebir``` para verificar (si pide un codigo se los mando porque asocie mi telefono).
+
+Todo esto porque no permitia crear team en la version gratis.
+
+3. Ir al directorio del chat
+```
+cd chat
+```
+4. Ejecutar el script para el deploy
+```
+npm run deploy
+```
+![alt text](image-1.png)
