@@ -2,12 +2,13 @@ from pathlib import Path
 from typing import List, Tuple
 
 import pydantic_core
+from bson import ObjectId
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from store.data.models.lessons import LessonModel
 
-from .models import Query, Response, Source
+from .models import ChatResponse, Source, UserQuery
 
 TEST = True
 
@@ -23,10 +24,10 @@ app.add_middleware(
 
 
 @app.post("/query")
-def query(query: Query) -> Response:
+def query(query: UserQuery) -> ChatResponse:
     if TEST:
         with open(Path(__file__).parent / "mock_response.json", "r") as f:
-            return Response(**pydantic_core.from_json(f.read()))
+            return ChatResponse(**pydantic_core.from_json(f.read()))
 
     # asumo answer_metadata es una lista de tuplas (lesson_id, lista de timestamps)
     answer_metadata: List[Tuple[str, List[float]]]
@@ -46,8 +47,7 @@ def query(query: Query) -> Response:
         else:
             lesson_timestamps[lesson_id] = timestamps
 
-    # capaz preciso convertirlos a ObjectId primero
-    lessons_id = list(lesson_timestamps.keys())
+    lessons_id = [ObjectId(id) for id in lesson_timestamps.keys()]
     pipeline = [
         {"$match": {"_id": {"$in": lessons_id}}},  # para las lessons
         {  # hacer un join con subjects
