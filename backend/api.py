@@ -3,14 +3,22 @@ from typing import List, Tuple
 
 import pydantic_core
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
-from models import Query, Response, Source
-from RAG.rag import rag
 from store.data.models.lessons import LessonModel
+
+from .models import Query, Response, Source
+
+TEST = True
 
 app = FastAPI()
 
-TEST = True
+# https://fastapi.tiangolo.com/tutorial/cors/
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "https://chat-mu-lemon.vercel.app/"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/query")
@@ -21,7 +29,10 @@ def query(query: Query) -> Response:
 
     # asumo answer_metadata es una lista de tuplas (lesson_id, lista de timestamps)
     answer_metadata: List[Tuple[str, List[float]]]
-    llm_answer, answer_metadata = rag(query.query, query.metadata)
+    llm_answer, answer_metadata = (
+        "stub",
+        [("11f", [0.0, 1.0])],
+    )  # rag(query.query, query.metadata)
 
     if not answer_metadata:
         return {"llm_response": llm_answer, "sources": []}
