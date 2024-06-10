@@ -1,27 +1,25 @@
-import Search from "@/components/search";
+"use client";
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Paper } from "@mui/material";
+import Logo from "@/components/logo";
+import { useChat } from "@/feature/chat/context";
+import { useQuery } from "@/feature/query/context";
 
 const Home = () => {
-  const messages: string[] = [];
+  const {
+    state: { messages, loading },
+  } = useChat();
+  const { state: query } = useQuery();
 
   return (
-    <Container maxWidth="lg">
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={6}>
-          <Typography>1</Typography>
-        </Grid>
-        <Grid item xs={6}>
-          <Typography>2</Typography>
-        </Grid>
-        <Grid item xs={6}>
-          <Typography>3</Typography>
-        </Grid>
-        <Grid item xs={6}>
-          <Typography>4</Typography>
-        </Grid>
-      </Grid>
-      Press Enter to start editing
+    <Container maxWidth="md">
+      <Logo size={40} />
+      <Paper elevation={1} style={{ padding: 20, margin: 20 }}>
+        {JSON.stringify({ messages, loading })}
+      </Paper>
+      <Paper elevation={10} style={{ padding: 20, margin: 20 }}>
+        {JSON.stringify(query)}
+      </Paper>
     </Container>
   );
 };
