@@ -1,6 +1,5 @@
 from os import PathLike
 from pathlib import Path
-from typing import Self
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
@@ -9,7 +8,7 @@ class Embeddings:
     _instance = None
 
     @classmethod
-    def load(cls, cache_path: PathLike) -> Self:
+    def load(cls, cache_path: PathLike):
         if cls._instance is None:
             cls._instance = cls._load_embedding_model(cache_path=cache_path)
         return cls._instance
@@ -26,6 +25,6 @@ class Embeddings:
         return HuggingFaceEmbeddings(
             cache_folder=str(cache_folder),
             model_name=model_name,
-            model_kwargs={"device": "cuda:0"},  # 'cpu' si no quieren/pueden GPU
+            model_kwargs={"device": "cpu"},  # 'cpu' si no quieren/pueden GPU
             show_progress=True,
         )
