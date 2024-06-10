@@ -10,8 +10,8 @@ OPENFING_URL="https://open.fing.edu.uy"
 DATABASE_NAME="webir"
 
 CACHE_PATH="models" # Folder to persist models and avoid downloading every time, e.g., embeddings.
-VDB_PATH="vector_db_test" # Folder where the vector database will be persisted.
-DATA_PATH="corpus" # Folder containing transcribed and segmented lessons outputted by Whisper.
+VDB_PATH="store/embeddings" # Folder where the vector database will be persisted.
+DATA_PATH="store/transcriptions" # Folder containing transcribed and segmented lessons outputted by Whisper.
 ```
 
 ### Requerimientos
@@ -132,30 +132,38 @@ python -m loader.loader (--seed [path to folder with seeding data] | --drop)
 
 > Note: acordarse de agregar tu ip publica a la whitelist de ips en el cluster de mongo atlas (Ver Ejecutando MongoDB) al usar la funcionalidad seed dado que se conecta al mismo para recuperar los id de las clases transcritas.
 
-
 ## Chat
 
 ### Deploy
+
 Para hacer el deploy del Chat en vercel, seguir los siguientes pasos:
 
 1. Instalar (globalmente) Vercel CLI:
+
 ```
 npm install -g vercel
 ```
+
 2. Iniciar sesión con vercel
+
 ```
 vercel login
 ```
-Usar el email ```webirgrupo3@gmail.com```. Luego entrar a gmail con ese correo y contraseña ```WEBIRwebir``` para verificar (si pide un codigo se los mando porque asocie mi telefono).
+
+Usar el email `webirgrupo3@gmail.com`. Luego entrar a gmail con ese correo y contraseña `WEBIRwebir` para verificar (si pide un codigo se los mando porque asocie mi telefono).
 
 Todo esto porque no permitia crear team en la version gratis.
 
 3. Ir al directorio del chat
+
 ```
 cd chat
 ```
+
 4. Ejecutar el script para el deploy
+
 ```
 npm run deploy
 ```
+
 ![alt text](image-1.png)
