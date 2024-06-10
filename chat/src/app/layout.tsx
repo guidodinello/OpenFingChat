@@ -8,6 +8,8 @@ import theme from "@/theme/theme";
 import "./globals.css";
 
 import { Open_Sans } from "next/font/google";
+import { ChatProvider } from "@/feature/chat/context";
+import { QueryProvider } from "@/feature/query/context";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,12 +25,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={font.className}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <Background />
-            {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <QueryProvider>
+          <ChatProvider>
+            <AppRouterCacheProvider>
+              <ThemeProvider theme={theme}>
+                <Background />
+                {children}
+              </ThemeProvider>
+            </AppRouterCacheProvider>
+          </ChatProvider>
+        </QueryProvider>
       </body>
     </html>
   );
