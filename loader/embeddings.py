@@ -1,7 +1,6 @@
 import logging
 from os import PathLike
 from pathlib import Path
-from typing import Self  # precisa python>=3.11
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from torch import cuda
@@ -11,7 +10,7 @@ class Embeddings:
     _instance = None
 
     @classmethod
-    def load(cls, cache_path: PathLike) -> Self:
+    def load(cls, cache_path: PathLike):
         if cls._instance is None:
             cls._instance = cls._load_embedding_model(cache_path=cache_path)
         return cls._instance
