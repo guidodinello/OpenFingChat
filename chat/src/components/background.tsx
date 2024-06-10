@@ -1,4 +1,5 @@
 "use client";
+import { Box, useTheme } from "@mui/material";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useState } from "react";
@@ -6,27 +7,50 @@ import { useEffect, useState } from "react";
 const Background = () => {
   const [init, setInit] = useState(false);
 
+  const { palette } = useTheme();
+
   useEffect(() => {
     initParticlesEngine(async (engine) => await loadSlim(engine)).then(() =>
       setInit(true)
     );
   }, []);
 
+  const bgColor = palette.background.default;
+  const particlesColor = palette.grey[300];
+
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <Box
+      position="fixed"
+      top={0}
+      left={0}
+      width="100%"
+      height="100%"
+      zIndex={-1}
+      bgcolor={palette.background.default}
+    >
       {init && (
         <Particles
           id="tsparticles"
           options={{
-            background: { color: { value: "#111" } },
+            interactivity: {
+              events: {
+                onClick: { enable: true, mode: "push" },
+                onHover: { enable: true, mode: "repulse" },
+              },
+              modes: {
+                push: { quantity: 2 },
+                repulse: { distance: 80, duration: 0.4 },
+              },
+            },
+            background: { color: { value: bgColor } },
             fpsLimit: 120,
             particles: {
-              color: { value: "#ffffff" },
+              color: { value: particlesColor },
               links: {
-                color: "#ffffff",
+                color: particlesColor,
                 distance: 150,
                 enable: true,
-                opacity: 0.3,
+                opacity: 1,
                 width: 1,
               },
               move: {
@@ -34,7 +58,7 @@ const Background = () => {
                 direction: "none",
                 outModes: { default: "bounce" },
                 random: false,
-                speed: 5,
+                speed: 2,
                 straight: true,
               },
               number: {
@@ -49,7 +73,7 @@ const Background = () => {
           }}
         />
       )}
-    </div>
+    </Box>
   );
 };
 
