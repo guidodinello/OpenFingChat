@@ -16,6 +16,7 @@ from RAG.prompt import TEMPLATE
 from loader.vectorstore import VectorStore
 from store.data.models.subjects import SubjectModel
 from store.data.models.lessons import LessonModel
+from loader.vectorstore import VectorStore
 
 load_dotenv(override=True)
 
