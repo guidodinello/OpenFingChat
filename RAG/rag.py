@@ -16,6 +16,7 @@ sys.path.append(parent_dir)
 
 from RAG.prompt import TEMPLATE
 from loader.embeddings import Embeddings
+from loader.vectorstore import VectorStore
 
 load_dotenv(override=True)
 
@@ -34,14 +35,9 @@ def initialize_llm():
         huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN,
     )
 
-def initialize_embeddings():
-    CACHE_PATH = str(os.getenv("CACHE_PATH"))
-    return Embeddings.load(cache_path=CACHE_PATH)
-
 def initialize_retriever():
-    embeddings = initialize_embeddings()
-    vectorstore = FAISS.load_local("../vector_db_test", embeddings, allow_dangerous_deserialization=True)
-    retriever = vectorstore.as_retriever()
+    vectorstore = VectorStore()
+    retriever = vectorstore.db.as_retriever()
     return retriever
 
 def initialize_prompt():
