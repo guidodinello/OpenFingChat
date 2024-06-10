@@ -135,6 +135,16 @@ python -m loader.loader (--seed [path to folder with seeding data] | --drop)
 
 > Note: acordarse de agregar tu ip publica a la whitelist de ips en el cluster de mongo atlas (Ver Ejecutando MongoDB) al usar la funcionalidad seed dado que se conecta al mismo para recuperar los id de las clases transcritas.
 
+## Backend
+
+Para ejecutar el backend, se debe correr el siguiente comando:
+
+```bash
+fastapi (run | dev) backend/api.py
+```
+
+> Note: [See FastAPI CLI docs](https://fastapi.tiangolo.com/fastapi-cli/)
+
 ## Chat
 
 ### Deploy
