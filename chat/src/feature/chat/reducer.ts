@@ -1,3 +1,10 @@
+import {
+  IChatActions,
+  ADD_CHAT_MESSAGE,
+  SET_CHAT_LOADING,
+  RESET_CHAT,
+} from "./action-types";
+
 const initialState: IChat = {
   messages: [],
   loading: false,

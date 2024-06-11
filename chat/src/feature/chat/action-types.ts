@@ -1,6 +1,6 @@
-const ADD_CHAT_MESSAGE = "ADD_CHAT_MESSAGE";
-const SET_CHAT_LOADING = "SET_CHAT_LOADING";
-const RESET_CHAT = "RESET_CHAT";
+export const ADD_CHAT_MESSAGE = "ADD_CHAT_MESSAGE";
+export const SET_CHAT_LOADING = "SET_CHAT_LOADING";
+export const RESET_CHAT = "RESET_CHAT";
 
 interface IAddChatMessageAction {
   type: typeof ADD_CHAT_MESSAGE;
@@ -16,7 +16,7 @@ interface IResetChatAction {
   type: typeof RESET_CHAT;
 }
 
-type IChatActions =
+export type IChatActions =
   | IAddChatMessageAction
   | ISetChatLoadingAction
   | IResetChatAction;

@@ -1,3 +1,9 @@
+import {
+  IQueryActions,
+  RESET_QUERY_PARAMS,
+  SET_QUERY_PARAMS,
+} from "./action-types";
+
 const initialState: IQuery = {
   query: "",
   subject: undefined,

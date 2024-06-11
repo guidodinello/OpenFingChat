@@ -7,6 +7,7 @@ import {
   useReducer,
 } from "react";
 import queryReducer, { initialState } from "./reducer";
+import { IQueryActions } from "./action-types";
 
 // context
 const QueryContext = createContext<{
