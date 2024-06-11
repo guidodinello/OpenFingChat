@@ -1,3 +1,10 @@
+import {
+  IChatActions,
+  ADD_CHAT_MESSAGE,
+  SET_CHAT_LOADING,
+  RESET_CHAT,
+} from "./action-types";
+
 export const addChatMessage = (message: IMessage): IChatActions => ({
   type: ADD_CHAT_MESSAGE,
   payload: { message },

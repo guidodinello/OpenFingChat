@@ -7,6 +7,7 @@ import {
   useReducer,
 } from "react";
 import queryReducer, { initialState } from "./reducer";
+import { IChatActions } from "./action-types";
 
 // context
 const ChatContext = createContext<{
