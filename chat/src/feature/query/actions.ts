@@ -1,9 +1,15 @@
+import {
+  IQueryActions,
+  RESET_QUERY_PARAMS,
+  SET_QUERY_PARAMS,
+} from "./action-types";
+
 export const setQueryParams = (params: IQuery): IQueryActions => ({
   type: SET_QUERY_PARAMS,
   payload: { params },
 });
 
-export const setExtraParams = (params?: IQuery): IQueryActions => ({
+export const resetQueryParams = (params?: IQuery): IQueryActions => ({
   type: RESET_QUERY_PARAMS,
   payload: { params },
 });
