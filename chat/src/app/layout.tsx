@@ -8,8 +8,8 @@ import theme from "@/theme/theme";
 import "./globals.css";
 
 import { Open_Sans } from "next/font/google";
-import { ChatProvider } from "@/feature/chat/context";
-import { QueryProvider } from "@/feature/query/context";
+import { ChatProvider } from "@/features/chat/context";
+import { QueryProvider } from "@/features/query/context";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
