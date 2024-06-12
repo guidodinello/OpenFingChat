@@ -9,6 +9,7 @@ interface IMessageSource {
 interface IMessage {
   message: string;
   sources: IMessageSource[];
+  error?: boolean;
 }
 
 interface IChat {
