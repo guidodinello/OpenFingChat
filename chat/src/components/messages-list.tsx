@@ -1,8 +1,8 @@
 import { useChat } from "@/features/chat/context";
 import {
-  Container,
   List,
   ListItem,
+  Container,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -17,14 +17,26 @@ const MessagesList = () => {
   const isSmall = useMediaQuery(breakpoints.down("sm"));
 
   return (
-    <Container maxWidth={"md"} sx={{ px: isSmall ? 0 : 2 }}>
-      <List sx={{ px: isSmall ? 0 : 4 }}>
+    <Container
+      maxWidth="md"
+      sx={{
+        pb: isSmall ? 10 : 12,
+        pt: isSmall ? 6 : 8,
+        px: isSmall ? 0 : 2,
+        overflow: "auto",
+      }}
+    >
+      <List sx={{ px: isSmall ? 2 : 7 }}>
         {messages.map((msg, index) => (
-          <ListItem key={index}>
-            <Message message={msg} />
+          <ListItem key={index} sx={{ px: 0 }}>
+            <Message message={msg} from={index % 2 == 0 ? "user" : "chat"} />
           </ListItem>
         ))}
-        {loading && <MessageLoading />}
+        {loading && (
+          <ListItem key={-1} sx={{ px: 0 }}>
+            <MessageLoading />
+          </ListItem>
+        )}
       </List>
     </Container>
   );

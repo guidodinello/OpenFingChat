@@ -47,7 +47,13 @@ const BottomSearch = () => {
 
   return (
     <Paper
-      sx={{ position: "fixed", bottom: 0, left: 0, right: 0, py: 2 }}
+      sx={{
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        py: isSmall ? 1.25 : 2,
+      }}
       elevation={6}
     >
       <Container
