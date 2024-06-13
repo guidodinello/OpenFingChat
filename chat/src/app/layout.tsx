@@ -13,7 +13,7 @@ import { QueryProvider } from "@/features/query/context";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fing Chat",
+  title: "Chat OpenFing",
   description: "Chatbot for students using OpenFing platform.",
 };
 
