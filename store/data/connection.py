@@ -11,7 +11,7 @@ DATABASE_NAME = os.environ['DATABASE_NAME']
 def getDatabase():
     try:
         # Create a connection using MongoClient
-        client = MongoClient(MONGODB_URI, server_api=ServerApi('1'))
+        client = MongoClient(MONGODB_URI, server_api=ServerApi('1'), tls=True, tlsAllowInvalidCertificates=True)
         # Attempt to connect
         client.server_info()
         
