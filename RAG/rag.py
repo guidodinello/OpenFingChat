@@ -54,10 +54,9 @@ def format_docs(docs):
     metadata = "" # ademas de lesson y subject va a tener la metadata necesaria para devolver el video (url, start, etc)
     for doc in docs:
         context += "Contenido: " + doc.page_content + "\n"
-        # subject = SubjectModel()
-        # subject = subject.get(doc.metadata['subject_id'])
-        #context += "Asignatura: " + subject['name'] + "\n"
-        lesson = LessonModel().get(doc.metadata['lesson_id'])
+        lessonId = doc.metadata['lesson_id']
+        lesson = LessonModel().get(lessonId, True)
+        context += "Asignatura: " + lesson["subject"]['name'] + "\n"
         context += "Clase: " + lesson['name'] + "\n\n"
         metadata += doc.metadata['lesson_id'] + str(doc.metadata['start']) + "\n"
     return context#, metadata
