@@ -2,7 +2,9 @@ import sys
 import os
 from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEndpoint
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.runnables.history import RunnableWithMessageHistory
+from langchain.memory import ChatMessageHistory
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langsmith import traceable
@@ -39,21 +41,26 @@ def initialize_retriever():
     return retriever
 
 def initialize_prompt():
-    template = TEMPLATE # the prompt template takes in context and question as values to be substituted in the prompt
-    return ChatPromptTemplate.from_messages(template)
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", TEMPLATE),
+        ("context", "{context}"),
+        MessagesPlaceholder(variable_name="history"),
+        ("human", "{question}"),
+    ])
+    return prompt
 
 def format_docs(docs):
     context = ""
+    metadata = "" # ademas de lesson y subject va a tener la metadata necesaria para devolver el video (url, start, etc)
     for doc in docs:
         context += "Contenido: " + doc.page_content + "\n"
         # subject = SubjectModel()
-        # subject_name = subject.get(doc.metadata['subject_id'])
-        #context += "Asignatura: " + doc.metadata['lesson_id'] + "\n"
-        #lessons = LessonModel()
-        #lesson_name = lessons.get(doc.metadata['lesson_id'])
-        context += "Clase: " + doc.metadata['lesson_id'] + "\n\n"
-    print(context)
-    return context
+        # subject = subject.get(doc.metadata['subject_id'])
+        #context += "Asignatura: " + subject['name'] + "\n"
+        lesson = LessonModel().get(doc.metadata['lesson_id'])
+        context += "Clase: " + lesson['name'] + "\n\n"
+        metadata += doc.metadata['lesson_id'] + str(doc.metadata['start']) + "\n"
+    return context#, metadata
 
 @traceable
 def rag(query):
@@ -63,15 +70,35 @@ def rag(query):
 
     prompt = initialize_prompt()
 
+    print("defini el prompt")
+
     rag_chain = (
         {"context": retriever | format_docs, "question": RunnablePassthrough()} # RunnablePassthrough() copies the user’s question. It is a runnable that behaves almost like the identity function, except that it can be configured to add additional keys to the output, if the input is a dict.
         | prompt
         | llm
         | StrOutputParser() # converts any input into a string
     )
+    
+    print("defini la rag_chain")
+    
+    demo_ephemeral_chat_history_for_chain = ChatMessageHistory()
 
-    return rag_chain.invoke(query)
+    rag_chain_with_history = RunnableWithMessageHistory(
+        rag_chain,
+        lambda session_id: demo_ephemeral_chat_history_for_chain, # El front deberia pasar un session id (establecer uno al entrar a la pagina, y cada vez que se recarga, limpiar el chat y enviar un session id nuevo). Ver como borrar la historia cada vez que se recibe un session id nuevo
+        input_messages_key="question",
+        history_messages_key="history",
+    )
+
+    print("defini la rag_chain_with_history")
+
+    return rag_chain_with_history.invoke(
+        {"question": query},
+        {"configurable": {"session_id": "unused"}},
+    )#, metadata
 
 if __name__ == "__main__":
-    response = rag("Qué es la programación lógica?")
+    response = rag("Qué es la evolución natural?")
     print(response)
+    response2 = rag("Cuál fue mi primera pregunta?")
+    print(response2)

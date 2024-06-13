@@ -22,10 +22,6 @@ Your response will vary depending on whether you are provided with pieces of ret
 ### Instructions
 
 Please use the following pieces of retrieved context to answer the question, adhering to the outlined format. Please reply in the same language as the question.
-
-Question: {question} 
-
-Context: {context} 
-
-Answer:
 """
+
+# the prompt template takes in context and question as values to be substituted in the prompt
