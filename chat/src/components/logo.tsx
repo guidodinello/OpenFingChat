@@ -4,7 +4,7 @@ const logoFont = Raleway({ subsets: ["latin"] });
 
 const Logo = ({
   size = 22,
-  color1 = "#333333",
+  color1 = "#ff9800",
   color2 = "#205c9a",
   shadow = false,
 }) => {

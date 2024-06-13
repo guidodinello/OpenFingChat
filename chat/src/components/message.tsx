@@ -1,6 +1,7 @@
 import {
   Box,
   Card,
+  Link,
   Paper,
   Stack,
   Typography,
@@ -46,13 +47,20 @@ const Message = ({
               {message.message}
             </Typography>
           </Paper>
-          {message.sources.map((s, index) => (
-            <Paper
-              key={`source_${index}`}
-              sx={{ py: 1, px: 2 }}
-              elevation={2}
-            ></Paper>
-          ))}
+
+          {message.sources.length > 0 && (
+            <Typography variant="caption">
+              Referencias:{" "}
+              {message.sources.map((s, index, array) => (
+                <>
+                  <Link href={`${s.url}?t=${s.start}`} target="_blank">
+                    {s.lessonName}
+                  </Link>
+                  {index === array.length - 1 ? "." : ", "}
+                </>
+              ))}
+            </Typography>
+          )}
         </Box>
       </Box>
     </Box>

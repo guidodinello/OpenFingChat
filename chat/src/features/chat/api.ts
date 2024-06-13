@@ -11,7 +11,6 @@ class ChatAPI {
             lessonName: s.lesson_name,
             subjectName: s.subject_name,
             url: s.url,
-            video: s.video,
             start: s.timestamps[0],
             end: s.timestamps[1],
           })),
