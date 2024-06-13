@@ -1,7 +1,6 @@
 from bson import ObjectId
 from pymongo import errors
 from store.data.connection import getDatabase
-from store.data.models.lessons import LessonModel
 
 class SubjectModel:
 
@@ -17,9 +16,6 @@ class SubjectModel:
     def get(self, subjectId, withLessons = False):
         try:
             subject = self.collection.find_one({"_id": ObjectId(subjectId)})
-            if subject and withLessons:
-                lessons = LessonModel()
-                subject["lessons"] = lessons.getAll({"subjectId": ObjectId(subjectId)})
 
             return subject
         except errors.PyMongoError as err:

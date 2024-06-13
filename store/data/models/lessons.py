@@ -2,6 +2,7 @@ from bson import ObjectId
 from pymongo import errors
 
 from store.data.connection import getDatabase
+from store.data.models.subjects import SubjectModel
 
 
 class LessonModel:
@@ -14,9 +15,12 @@ class LessonModel:
             print(err)
             raise RuntimeError(f"Initialization failed: {err}")
 
-    def get(self, lessonId):
+    def get(self, lessonId, withSubject = False):
         try:
             lesson = self.collection.find_one({"_id": ObjectId(lessonId)})
+            if lesson and withSubject:
+                lessons = SubjectModel()
+                lesson["subject"] = lessons.get(lesson["subjectId"])
             return lesson
         except errors.PyMongoError as err:
             print(f"An error occurred while retrieving the lesson: {err}")

@@ -19,11 +19,6 @@ if __name__ == "__main__":
 
     if script == "scrapping":
         scrapping()
-    elif script == "hola":
-        print("JOSE\n")
-        lessons = LessonModel()
-        one = lessons.getBy()
-        print(one)
     elif script == "loader":
         loader.main(script_args)
     else:
