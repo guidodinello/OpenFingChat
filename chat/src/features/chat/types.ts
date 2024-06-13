@@ -2,7 +2,6 @@ interface IMessageSource {
   lessonName: string;
   subjectName: string;
   url: string;
-  video: string;
   start: string;
   end: string;
 }
