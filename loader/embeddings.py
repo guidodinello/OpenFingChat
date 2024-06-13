@@ -2,7 +2,7 @@ import logging
 from os import PathLike
 from pathlib import Path
 
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from torch import cuda
 
 
@@ -24,13 +24,10 @@ class Embeddings:
 
         device = "cuda:0" if cuda.is_available() else "cpu"
 
-        model_name = "sentence-transformers/all-mpnet-base-v2"
-        # otros que podriamos probar
-        # > "sentence-transformers/all-MiniLM-L6-v2"
-        # > "jinaai/jina-embeddings-v2-base-es"
-        return HuggingFaceEmbeddings(
+        # https://huggingface.co/BAAI/bge-large-en/discussions/15
+        model_name = "BAAI/bge-m3"
+        return HuggingFaceBgeEmbeddings(
             cache_folder=str(cache_folder),
             model_name=model_name,
             model_kwargs={"device": device},
-            show_progress=True,
         )
