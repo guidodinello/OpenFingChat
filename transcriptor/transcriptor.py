@@ -12,10 +12,17 @@ from moviepy.editor import VideoFileClip
 import requests
 import os
 from tqdm import tqdm
-from whisper
+import whisper
 import json
+from store.data.models.subjects import SubjectModel
+from store.data.models.lessons import LessonModel
 
 BASE_PATH = '../store/transcriptions/'
+
+# Add parent directory to the sys.path (list of directories where Python is going to search for modules when doing imports)
+current_dir = os.path.dirname(os.path.realpath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
 
 def convert_video_to_audio(video_file_path, audio_file_path):
     video = VideoFileClip(video_file_path)
@@ -67,25 +74,29 @@ def transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, c
 
 
 
-uri='mongodb+srv://spoturno:AJFY2oSTelEuFT66@webirdatabase.slyw0m4.mongodb.net/?retryWrites=true&w=majority&appName=WebirDatabase'
-client = MongoClient(uri, tls=True, tlsAllowInvalidCertificates=False)
-db = client['webir']
-collection = db['lessons']
 
-all_documents = collection.find()
-documents_list = list(all_documents)
+def transcript():
+    #uri='mongodb+srv://spoturno:AJFY2oSTelEuFT66@webirdatabase.slyw0m4.mongodb.net/?retryWrites=true&w=majority&appName=WebirDatabase'
+    #client = MongoClient(uri, tls=True, tlsAllowInvalidCertificates=False)
+    #db = client['webir']
+    #collection = db['lessons']
 
-os.makedirs(BASE_PATH, exist_ok=True)
+    #all_documents = collection.find()
+    #documents_list = list(all_documents)
 
-for document in documents_list[:1]:
-    video_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp4')
-    audio_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp3')
-    transcription_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.json')
+    lessons = LessonModel()
+    documents_list = lessons.getAll()
 
-    download_video(document['video'], video_file_path)
-    convert_video_to_audio(video_file_path, audio_file_path)
-    transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, False, 0, 0)
+    os.makedirs(BASE_PATH, exist_ok=True)
 
-    os.remove(video_file_path)
-    os.remove(audio_file_path)
+    for document in documents_list[:1]:
+        video_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp4')
+        audio_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp3')
+        transcription_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.json')
+        print(document["_id"])
+        #download_video(document['video'], video_file_path)
+        #convert_video_to_audio(video_file_path, audio_file_path)
+        #transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, False, 0, 0)
 
+        #os.remove(video_file_path)
+        #os.remove(audio_file_path)
