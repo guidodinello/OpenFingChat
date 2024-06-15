@@ -1,0 +1,2847 @@
+[
+    {
+        "text": " Ok, buenas noches, hoy vamos a seguir con el tema del álgebra de matrices. La vez",
+        "start": 0.0,
+        "end": 27.04
+    },
+    {
+        "text": " pasada vimos algunas operaciones, entonces voy a recordar las operaciones que vimos sobre las",
+        "start": 27.04,
+        "end": 33.0
+    },
+    {
+        "text": " matrices. Vimos la suma. Amazbe, acá es una operación sencilla, consiste en tomar dos",
+        "start": 33.0,
+        "end": 46.480000000000004
+    },
+    {
+        "text": " matrices que tienen las mismas dimensiones y sumar entrada por entrada, entonces no se usa",
+        "start": 46.480000000000004,
+        "end": 56.08
+    },
+    {
+        "text": " ninguna parte de cerebro, es algo completamente automático. Vimos también el producto de número",
+        "start": 56.08,
+        "end": 63.32
+    },
+    {
+        "text": " por matriz. Es decir, la operación que consiste en tomar un número y multiplicar cada entrada",
+        "start": 63.32,
+        "end": 82.84
+    },
+    {
+        "text": " de la matriz por el número, y tampoco hay que pensar para hacer esta operación, no hay nada difícil.",
+        "start": 82.84,
+        "end": 89.16
+    },
+    {
+        "text": " Vimos también la matriz nula, que se escribe con una o gordita, esta matriz nula es decir, para",
+        "start": 89.16,
+        "end": 107.84
+    },
+    {
+        "text": " cada tamaño de matriz podemos conseguir la matriz de tamaño m por n, que son chinesceros adentro,",
+        "start": 107.84,
+        "end": 114.96000000000001
+    },
+    {
+        "text": " y es el elemento neutro respecto a la suma, es decir, si yo sumo la matriz nula, si ya es la",
+        "start": 114.96000000000001,
+        "end": 125.32000000000001
+    },
+    {
+        "text": " dimensión, entonces obtengo la matriz inicial. Vimos también la matriz opuesta, menos a, que",
+        "start": 125.32,
+        "end": 137.64
+    },
+    {
+        "text": " consiste en tomar todos los opuestos para cada entrada, y vimos también que es lo mismo, la",
+        "start": 137.64,
+        "end": 145.92
+    },
+    {
+        "text": " matriz opuesta es lo mismo que el número menos uno multiplicado por a, esto es obvio.",
+        "start": 145.92,
+        "end": 153.83999999999997
+    },
+    {
+        "text": " La cantidad de filas igual a la cantidad de filas de primera, y una cantidad de columnas igual a la",
+        "start": 205.92,
+        "end": 214.88
+    },
+    {
+        "text": " cantidad de columnas de la segunda, ok, es el tipo del producto, y yo recuerdo la definición, es decir, el producto",
+        "start": 214.88,
+        "end": 229.04
+    },
+    {
+        "text": " de AB, el producto AB es la matriz C, cuyos coeficientes son da los por, acá C sub I j, es igual a la suma",
+        "start": 229.04,
+        "end": 256.52
+    },
+    {
+        "text": " de K igual a 1 AB, de A sub I j, B sub K sub J para todos, y entre 1 y m y J entre 1 y n, ok, esto",
+        "start": 256.52,
+        "end": 278.47999999999996
+    },
+    {
+        "text": " está fórmula del producto de matriz. Ok, entonces hay que verificar que la fórmula funciona,",
+        "start": 278.47999999999996,
+        "end": 285.4
+    },
+    {
+        "text": " ya vimos se ves pasada, pero se puede recordar, y es un índice de fila para el producto, entonces",
+        "start": 285.4,
+        "end": 294.12
+    },
+    {
+        "text": " vive entre 1 y m, es un número entre 1 y m, pero también aparece como índice de fila de AB y está",
+        "start": 294.12,
+        "end": 303.47999999999996
+    },
+    {
+        "text": " bien, porque AB también tiene m filas. J es un índice de columna para la matriz producto, entonces hay",
+        "start": 303.47999999999996,
+        "end": 312.79999999999995
+    },
+    {
+        "text": " n columnas, pero también aparece como índice de columna para la matriz B, y la matriz B tiene n columnas,",
+        "start": 312.8,
+        "end": 320.32
+    },
+    {
+        "text": " funciona bien, y además la suma se hace sobre un índice que recorre todos los enteros de 1 a p y K,",
+        "start": 320.32,
+        "end": 331.72
+    },
+    {
+        "text": " entonces aparece a la vez como índice de columna de A y tenemos p columnas, funciona bien, y también",
+        "start": 331.72,
+        "end": 340.84000000000003
+    },
+    {
+        "text": " aparece como índice de fila de AB y también de Tiene p filas, ok, esa razón, porque tenemos este p",
+        "start": 340.84000000000003,
+        "end": 350.48
+    },
+    {
+        "text": " igual a este p, porque cuando hacemos el producto usamos el mismo índice para el índice de columna",
+        "start": 350.48,
+        "end": 356.92
+    },
+    {
+        "text": " de A y índice de fila, ok, y vimos como se construye el producto, gráficamente si yo tengo mi matriz A así,",
+        "start": 356.92,
+        "end": 367.32
+    },
+    {
+        "text": " mi matriz B así, a 1, 1 hasta a 1 p, a m 1 hasta a m p, acá tengo m filas, p columnas, y acá tengo",
+        "start": 367.32,
+        "end": 392.36
+    },
+    {
+        "text": " p filas, acá yo puedo poder a mi compás, tengo la misma dimensión, y acá tengo de B1, 1 hasta B1,",
+        "start": 392.36,
+        "end": 404.6
+    },
+    {
+        "text": " tengo BN1, uno, uno N disculpa, hasta BPN, y ahora como se construye el producto, para acá la",
+        "start": 404.6,
+        "end": 426.56
+    },
+    {
+        "text": " entrada, si yo quiero calcular la entrada C subíjota, yo hago el producto de la fila número",
+        "start": 426.56,
+        "end": 437.08
+    },
+    {
+        "text": " y acá, por la columna de índice j, y hago la suma, me dice que es esto por esto, más esto por",
+        "start": 437.08,
+        "end": 462.44
+    },
+    {
+        "text": " esto, más esto por esto, y está bien, porque vimos que hay exactamente elementos acá,",
+        "start": 462.44,
+        "end": 475.12
+    },
+    {
+        "text": " elementos acá y se pueden hacer los productos, o que es la definición del producto y vimos como",
+        "start": 475.12,
+        "end": 481.36
+    },
+    {
+        "text": " funcionaba, y también vimos a complejirá, es decir, vimos que cuando se calcula este se necesitan",
+        "start": 481.36,
+        "end": 491.0
+    },
+    {
+        "text": " M por N por P productos y M por N por P menos 1 sumas, entonces es una operación que",
+        "start": 491.0,
+        "end": 509.92
+    },
+    {
+        "text": " cuesta mucho, ok, ahora vamos a ver otros métodos para calcular el producto, una primera observación",
+        "start": 509.92,
+        "end": 524.64
+    },
+    {
+        "text": " es que se pueden hacer productos por filas y por columnas, observación, por columnas y por filas,",
+        "start": 524.64,
+        "end": 550.12
+    },
+    {
+        "text": " acá hay una primera observación, es que pasa si es nuevo el producto de una matriz de cualquiera",
+        "start": 550.12,
+        "end": 559.92
+    },
+    {
+        "text": " por una matriz que tiene solo una columna, esto es una matriz columna, ¿cuál será alta manio de",
+        "start": 559.92,
+        "end": 574.16
+    },
+    {
+        "text": " la matriz resultado? Eve por uno, será una columna, entonces ya sabemos que la observación es que",
+        "start": 574.16,
+        "end": 582.12
+    },
+    {
+        "text": " matriz multiplicada por una columna con el buen tamaño igual una columna, cuando multiplican una",
+        "start": 582.12,
+        "end": 595.8
+    },
+    {
+        "text": " matriz por cualquier columna, si el producto está definido, el resultado es una columna, y esto",
+        "start": 595.8,
+        "end": 602.12
+    },
+    {
+        "text": " ya permite calcular mi producto, y se puede observar que, de hecho, la matriz have la matriz have",
+        "start": 602.12,
+        "end": 617.0
+    },
+    {
+        "text": " también se puede ver como una matriz columna definida por, yo multiplico a por la primera columna de",
+        "start": 617.0,
+        "end": 628.88
+    },
+    {
+        "text": " vez, obtengo una columna, esto significa la primera columna de vez, ¿ok? entonces es una matriz",
+        "start": 628.88,
+        "end": 636.6
+    },
+    {
+        "text": " al por una matriz que solo tiene una columna y obtengo una única columna y que obtengo",
+        "start": 636.6,
+        "end": 643.6
+    },
+    {
+        "text": " la columna de vez, y después puedo continuar hasta con la Ns' columna de vez, esto es un producto por",
+        "start": 643.6,
+        "end": 658.0400000000001
+    },
+    {
+        "text": " columna, ¿ok? entonces es una descomposición posible del producto, en lugar de calcular la matriz",
+        "start": 658.0400000000001,
+        "end": 667.08
+    },
+    {
+        "text": " producto en una única operación, yo les compongo por columna de vez, yo hago el producto de a por",
+        "start": 667.08,
+        "end": 675.08
+    },
+    {
+        "text": " primera columna de vez, obtengo la primera columna de vez, después a por la segunda columna de vez,",
+        "start": 675.08,
+        "end": 682.1600000000001
+    },
+    {
+        "text": " obtengo la segunda columna de a vez, etcétera, y al final, a por la última columna de vez, y obtengo la última",
+        "start": 682.1600000000001,
+        "end": 690.8000000000001
+    },
+    {
+        "text": " columna de vez, pero también puedo hacer las cosas con las filas, pero ahora con las filas de a,",
+        "start": 690.8,
+        "end": 698.0
+    },
+    {
+        "text": " puedo decir también que es igual, la primera fila de a, es la primera fila de a por b, y acá observo que",
+        "start": 700.5,
+        "end": 712.64
+    },
+    {
+        "text": " una matriz, una fila por una matriz, es una fila, ¿por qué? si yo tengo una matriz de esta forma,",
+        "start": 712.64,
+        "end": 726.04
+    },
+    {
+        "text": " una fila, por una matriz cualquiera, obtengo una matriz acá de tamaño 1 por N, y acá yo",
+        "start": 726.04,
+        "end": 735.6
+    },
+    {
+        "text": " obtenía M por N, ok entonces fila por matriz igual fila, y lo que digo es que la primera fila de a",
+        "start": 735.6,
+        "end": 746.52
+    },
+    {
+        "text": " es la primera fila de a por todo lo b, me equivoqué, acá M1, acá es P por N,",
+        "start": 746.52,
+        "end": 763.28
+    },
+    {
+        "text": " el resultado es uno por N, porque uno y N, entonces esto muestra que es una fila por una matriz",
+        "start": 763.28,
+        "end": 774.24
+    },
+    {
+        "text": " desaparece este y me queda una fila, ok entonces es una geometría que hay que saber cuando",
+        "start": 774.24,
+        "end": 782.16
+    },
+    {
+        "text": " multiplican, tienen dos figuras que tienen que tener en la cabeza, matriz por columna,",
+        "start": 782.16,
+        "end": 789.72
+    },
+    {
+        "text": " me da una columna, ¿cuál ver? y fila por una matriz me da una fila, ok, que",
+        "start": 789.72,
+        "end": 808.24
+    },
+    {
+        "text": " ométricamente se ve, y lo que digo es que para calcular la matriz a b, también puero,",
+        "start": 808.24,
+        "end": 814.96
+    },
+    {
+        "text": " pero una cosa, multiplicar la primera fila de a por b, y obtengo la primera fila de a M, y después",
+        "start": 814.96,
+        "end": 823.84
+    },
+    {
+        "text": " a segunda etcétera, hasta la última y esto va, acá tengo que precisar que a sub y es la y",
+        "start": 823.84,
+        "end": 837.36
+    },
+    {
+        "text": " esima fila de a, mientras b a la j es la j esima columna, db, entonces pueden elegir a veces",
+        "start": 837.36,
+        "end": 858.5600000000001
+    },
+    {
+        "text": " porque estas descomposiciones son interesantes, ¿qué va a pasar? supongo por ejemplo que alguna columna",
+        "start": 858.56,
+        "end": 868.2399999999999
+    },
+    {
+        "text": " debe sea nula, ¿qué va a pasar? si alguna columna le ve es nula, entonces esa columna correspondiente en",
+        "start": 868.2399999999999,
+        "end": 877.92
+    },
+    {
+        "text": " a b ser anula, porque si b a la j es nula, a b j ser anula y toda esta columna ser anula,",
+        "start": 877.92,
+        "end": 885.68
+    },
+    {
+        "text": " ok, esto corresponde a la idea es que si yo tengo una columna nula que la multiplico por cualquier",
+        "start": 886.64,
+        "end": 893.92
+    },
+    {
+        "text": " matriz por la izquierda, obtengo una columna nula, de mismo modo, si yo tengo una fila nula en a,",
+        "start": 893.92,
+        "end": 903.28
+    },
+    {
+        "text": " que va a pasar, acá la misma fila será nula, todos estos trucos son trucos para facilitar las cuentas,",
+        "start": 903.28,
+        "end": 911.56
+    },
+    {
+        "text": " ok, entienden la idea, entonces si una fila de a es nula, la fila correspondiente del producto es nula,",
+        "start": 911.56,
+        "end": 921.0
+    },
+    {
+        "text": " si una columna debe es nula, la columna correspondiente en el producto es nula y ahora que pasa cuando las",
+        "start": 921.0,
+        "end": 931.0
+    },
+    {
+        "text": " cosas pasan a revés, supongo que yo tengo una columna nula de a, no puedo decir nada, y si",
+        "start": 931.0,
+        "end": 940.7199999999999
+    },
+    {
+        "text": " yo tengo una fila nula leve, no puedo decir nada, entonces esas cosas funcionan bien con las",
+        "start": 940.72,
+        "end": 949.48
+    },
+    {
+        "text": " filas de a, o bien con las columnas de a, pueden ver que es algo que no es simétrico, es decir,",
+        "start": 949.48,
+        "end": 957.64
+    },
+    {
+        "text": " el producto funcionaba con las filas de a y las columnas de a, pero no con las columnas de a y las",
+        "start": 957.64,
+        "end": 965.64
+    },
+    {
+        "text": " filas de a, de mismo modo, supongo que por ejemplo yo me equivoco y intercambio 2 columnas de",
+        "start": 965.72,
+        "end": 973.68
+    },
+    {
+        "text": " b, que va a pasar, voy a intercambiar 2 columnas de a, de mismo modo si yo intercambio 2 columnas de a,",
+        "start": 973.68,
+        "end": 984.0
+    },
+    {
+        "text": " voy disculpa gracias, 2 filas de a, si yo intercambio 2 filas de a, voy a intercambiar las mismas",
+        "start": 984.0,
+        "end": 993.48
+    },
+    {
+        "text": " filas en el producto AB, ok, entonces es así que hay que entender la geometría de las",
+        "start": 993.48,
+        "end": 1001.48
+    },
+    {
+        "text": " fantasises, ok, esto es un primer ejemplo de cómo se puede calcular por trozos una matriz",
+        "start": 1001.48,
+        "end": 1010.24
+    },
+    {
+        "text": " producto, porque vimos que una para, matriz producto es mucho trabajo, entonces a veces es más",
+        "start": 1010.24,
+        "end": 1015.0
+    },
+    {
+        "text": " interesante hacer trozos, pero también hay otro método mucho más usado en informática que",
+        "start": 1015.0,
+        "end": 1022.6800000000001
+    },
+    {
+        "text": " es lo siguiente, que se llama producto por bloques, ahora voy a suponer algunas cosas,",
+        "start": 1022.68,
+        "end": 1031.6
+    },
+    {
+        "text": " producto por bloques, observación, producto por bloques,",
+        "start": 1036.8799999999999,
+        "end": 1043.12
+    },
+    {
+        "text": " entonces todo esto son observaciones sobre cómo se pueden calcular productos cuando tenemos",
+        "start": 1043.12,
+        "end": 1056.3999999999999
+    },
+    {
+        "text": " matrices gigantescas, ok, cómo se puede reducir las cuantas, ok, ahora supongamos que",
+        "start": 1056.3999999999999,
+        "end": 1066.0
+    },
+    {
+        "text": " a es un matriz de tamaño M por P, B es un matriz de tamaño P por N, esto quiere decir que",
+        "start": 1066.0,
+        "end": 1086.28
+    },
+    {
+        "text": " podemos hacer el producto, ok, y ahora también se supone que M tiene una descomposición de la",
+        "start": 1086.28,
+        "end": 1095.36
+    },
+    {
+        "text": " forma M1 más M2, que P tiene una descomposición de la forma P1 más P2 y que también tenemos que N",
+        "start": 1095.36,
+        "end": 1109.52
+    },
+    {
+        "text": " tiene la descomposición de la forma M1 más N2, entonces podemos dividir nuestras dos matrices cada",
+        "start": 1109.52,
+        "end": 1120.68
+    },
+    {
+        "text": " 1 en cuatro bloques, ok, ahora yo tengo mi matriz A, y acá mi matriz D, y matriz A ahora como corte",
+        "start": 1120.68,
+        "end": 1137.5600000000002
+    },
+    {
+        "text": " IP en dos trozos P1 y P2, tengo cuatro bloques, que voy a escribir A1, A1, A2, esto es A, y A2,",
+        "start": 1137.56,
+        "end": 1154.52
+    },
+    {
+        "text": " 1, A2, 2, ok, tengo cuatro bloques para calcular la matriz A, y de mismo modo acá uso mi compás,",
+        "start": 1154.52,
+        "end": 1164.6
+    },
+    {
+        "text": " tengo P1, FIDAS, P2 FIDAS y también tengo una descomposición N1, N2, acá es una descomposición",
+        "start": 1167.8799999999999,
+        "end": 1177.68
+    },
+    {
+        "text": " en M1, M2, pueden ver como os suelo discompongo las cosas, y puedo es componer mi matriz D en cuatro bloques,",
+        "start": 1177.68,
+        "end": 1189.3600000000001
+    },
+    {
+        "text": " ahora la pregunta es cómo se calcula los cuatro bloques acá, que son de tamaño N1, N2,",
+        "start": 1189.36,
+        "end": 1206.52
+    },
+    {
+        "text": " M1, M2 y la suma S, M y las cálas suma S, M, como calcular por bloques, fácil hay que usar la misma",
+        "start": 1206.52,
+        "end": 1219.6
+    },
+    {
+        "text": " formula, el bloque C sub H, es la suma de cá ahora tenemos dos entradas, dos entradas de",
+        "start": 1219.6,
+        "end": 1229.12
+    },
+    {
+        "text": " cá igual a 1 a 2, de A sub H, por y ahora es un producto de matrices, B sub cá J, esa misma formula",
+        "start": 1229.12,
+        "end": 1241.6399999999999
+    },
+    {
+        "text": " que se extiende a las matrices, es decir acá voy a tener A1, 1 por B1, 1, 1, más A1, 2 por B2, 1,",
+        "start": 1241.64,
+        "end": 1259.96
+    },
+    {
+        "text": " ok y acá voy a tener A1, 1 por B1, 2, más B1, 2, más A1, 2 y disculpa, y A1, 2 por B2, 2,",
+        "start": 1259.96,
+        "end": 1284.28
+    },
+    {
+        "text": " y etcétera, A1, B1, 1, más A2, 2, B2, 1 y acá tendré A2, 1, B1, 2, más A2, 2,",
+        "start": 1284.28,
+        "end": 1313.3999999999999
+    },
+    {
+        "text": " B2, 2, es decir eso es y en nuestra forma, entonces la moral deja es que también se pueden",
+        "start": 1313.4,
+        "end": 1323.92
+    },
+    {
+        "text": " calcular matrices por bloques así, entienden la idea, es decir eso usó la misma idea, pero",
+        "start": 1323.92,
+        "end": 1331.4
+    },
+    {
+        "text": " ahora ojo, estas cosas no son más números, son matrices, se llaman sub matrices, entonces",
+        "start": 1331.4,
+        "end": 1340.24
+    },
+    {
+        "text": " no tengo el derecho con montar las cosas, es siempre A por B, A algo por B algo y no nunca",
+        "start": 1340.24,
+        "end": 1349.96
+    },
+    {
+        "text": " B algo por A algo, no tengo el derecho con montar las operaciones, ok, es decir esta",
+        "start": 1349.96,
+        "end": 1358.64
+    },
+    {
+        "text": " formula que conocemos para calcular el producto de matrices que vimos funciona al nivel",
+        "start": 1358.64,
+        "end": 1366.64
+    },
+    {
+        "text": " microscopico también funciona al nivel macroscopico, es decir podemos funcionar que una",
+        "start": 1366.64,
+        "end": 1376.0800000000002
+    },
+    {
+        "text": " matriz es una matriz de matrices y que esta matriz es una matriz de matrices y la misma",
+        "start": 1376.0800000000002,
+        "end": 1381.96
+    },
+    {
+        "text": " formula se apica, ok y en general es así que se multiplican las matrices en informática,",
+        "start": 1381.96,
+        "end": 1390.64
+    },
+    {
+        "text": " es decir el algoritmo es el siguiente, si mis dos matrices son pequeñas vamos a usar la",
+        "start": 1390.64,
+        "end": 1399.5200000000002
+    },
+    {
+        "text": " formula usual, pero si son largas, yo corto cada matriz en cuatro trozos y yo llamo",
+        "start": 1399.5200000000002,
+        "end": 1407.68
+    },
+    {
+        "text": " recurso y se ve a la entemia al algoritmo para calcular esto, esto y esto, ok, es así que",
+        "start": 1407.68,
+        "end": 1416.0
+    },
+    {
+        "text": " este calcular matrices se enla práctica, por supuesto nosotros casi nunca vamos a verlo, pero",
+        "start": 1416.0,
+        "end": 1422.4
+    },
+    {
+        "text": " es algo importante saber que existe, es un método que funciona muy bien y a veces cuando",
+        "start": 1422.4,
+        "end": 1428.64
+    },
+    {
+        "text": " tenemos matrices dar las por trozos por bloques, podemos hacer productos por bloques, pero",
+        "start": 1428.64,
+        "end": 1436.32
+    },
+    {
+        "text": " ojo hay que verificar que las dimensiones funcionan bien, puede ver que este P1 es",
+        "start": 1436.32,
+        "end": 1442.32
+    },
+    {
+        "text": " una de las composiciones con dos bloques de dos por dos matrices, pero funciona para cuál",
+        "start": 1442.32,
+        "end": 1454.6799999999998
+    },
+    {
+        "text": " quieres composición, pueden tener 15 bloques acá, 15 bloques acá, 17 bloques acá, 17 bloques",
+        "start": 1454.6799999999998,
+        "end": 1464.48
+    },
+    {
+        "text": " acá y 23 bloques acá, funcionar en el mismo modo, ok se llama producto por bloques, entonces",
+        "start": 1464.48,
+        "end": 1471.6399999999999
+    },
+    {
+        "text": " ahora normalmente tienen un montón de algoritmos, esto despara mostrar que esta operación que",
+        "start": 1471.64,
+        "end": 1476.68
+    },
+    {
+        "text": " parecía muy artificial, de hecho funciona muy bien, se puede calcular muy bien, ok, podemos dar",
+        "start": 1476.68,
+        "end": 1484.0400000000002
+    },
+    {
+        "text": " un ejemplo por ejemplo de producto por bloques, ok, yo me doy dos matrices, ejemplo, yo quiero",
+        "start": 1484.0400000000002,
+        "end": 1498.64
+    },
+    {
+        "text": " calcular, yo tengo dos matrices, M, N, de tamaño, dos N por dos N y definidas por M, esta",
+        "start": 1498.64,
+        "end": 1514.64
+    },
+    {
+        "text": " matriz A, B, C y acá esa matriz nula, ok, pongo la matriz nula, mi serogorlita, y acá",
+        "start": 1514.64,
+        "end": 1531.5200000000002
+    },
+    {
+        "text": " N es igual a de E, F y acá pongo la nula, ahora queremos que acúda el producto, acá",
+        "start": 1531.52,
+        "end": 1549.92
+    },
+    {
+        "text": " su tengo calma 3 n 4 troprosos y acá puse un próximo nulo, cuál es el producto M por N, vamos",
+        "start": 1549.92,
+        "end": 1561.2
+    },
+    {
+        "text": " a calcularlo, M es A, B, Nula, C, esta es D, E, Nula, F y al, al, al el producto, A por D,",
+        "start": 1561.2,
+        "end": 1584.3600000000001
+    },
+    {
+        "text": " M, B por Cero es decir Cero, acá tengo A por E, tengo acá B por F, acá tengo Cero por D,",
+        "start": 1584.36,
+        "end": 1602.6
+    },
+    {
+        "text": " nada, más C por Cero nada, entonces tengo la nula y además tengo que esta es para terminar,",
+        "start": 1602.6,
+        "end": 1617.04
+    },
+    {
+        "text": " Cero por E, Cero y C por F y pueden ver que cuando tengo dos matrices que tienen este",
+        "start": 1617.04,
+        "end": 1632.48
+    },
+    {
+        "text": " bloque nula, este bloque nulo, el producto también se mantiene este bloque nulo, pueden ver",
+        "start": 1632.48,
+        "end": 1643.12
+    },
+    {
+        "text": " y es así para esto que sirve el producto por bloque, acá esto me simplificó las cuentas,",
+        "start": 1644.08,
+        "end": 1651.7199999999998
+    },
+    {
+        "text": " ok, entonces esto que yo tenía que decir sobre el producto por bloque, ahora vamos a recordar",
+        "start": 1653.7199999999998,
+        "end": 1661.4799999999998
+    },
+    {
+        "text": " las propiedades, ya vimos se vea espasada pero yo puedo recordar las propiedades, el producto de",
+        "start": 1661.4799999999998,
+        "end": 1668.52
+    },
+    {
+        "text": " matrices, ahora para los informáticos si hay en la sala hay un montón de algoritmos que",
+        "start": 1668.52,
+        "end": 1675.92
+    },
+    {
+        "text": " ya pueden implementar, ok, ahora propiedades, ya digo pero voy a recordar, la primera propiedad es que",
+        "start": 1675.92,
+        "end": 1689.12
+    },
+    {
+        "text": " el producto es una operación asociativa, ok, es decir la cosa que no tengo el derecho a hacer es",
+        "start": 1689.12,
+        "end": 1703.76
+    },
+    {
+        "text": " intercambiar a los cosas, pero por otro lado las paréntesis no tienen ninguna importancia, ok y",
+        "start": 1703.76,
+        "end": 1713.1999999999998
+    },
+    {
+        "text": " acá significa, ojo esto solo tiene sentido cuando la cantidad de columnas de a, es decir",
+        "start": 1713.2,
+        "end": 1719.8
+    },
+    {
+        "text": " voilà la cantidad de filas de b, y que la cantidad de columnas de b es decir o la cantidad de filas de c,",
+        "start": 1719.8,
+        "end": 1725.1200000000001
+    },
+    {
+        "text": " ok, entonces ahora es si la cantidad de columnas de a es decir o la cantidad de filas de b, y la cantidad",
+        "start": 1725.1200000000001,
+        "end": 1737.48
+    },
+    {
+        "text": " de columnas de b es igual la cantidad de filas de c, ok, entonces que quiere decir esa cosa,",
+        "start": 1737.48,
+        "end": 1752.24
+    },
+    {
+        "text": " es que cuando yo tengo que hacer dos productos, yo tengo dos opciones, o bien empiezo a armar el",
+        "start": 1752.24,
+        "end": 1762.08
+    },
+    {
+        "text": " producto de a, y después hacer el producto de c por la derecha, o bien empiezo a armar el",
+        "start": 1762.08,
+        "end": 1766.8799999999999
+    },
+    {
+        "text": " producto de b por c y hacer el producto de a por la izquierda, ok, esto quiere decir también que a",
+        "start": 1766.8799999999999,
+        "end": 1773.84
+    },
+    {
+        "text": " partir de ahora nunca escribire esto, lo escribire a b, ok sin paréntesis, porque no se ven para nada,",
+        "start": 1773.84,
+        "end": 1783.12
+    },
+    {
+        "text": " ok, como yo lo hacemos, ya lo hacemos con números, con números cuando escribimos un",
+        "start": 1783.12,
+        "end": 1791.6
+    },
+    {
+        "text": " producto de tres números nunca ponemos paréntesis, porque sabemos que las paréntesis los",
+        "start": 1791.6,
+        "end": 1795.9599999999998
+    },
+    {
+        "text": " sirven para nada, y acá es el caso, pero ojo a b c, que es su mismo que a b por c o bien que a",
+        "start": 1795.9599999999998,
+        "end": 1804.7199999999998
+    },
+    {
+        "text": " por b c, no es su mismo que a c b, no es su mismo que b c c, no es su mismo que b c, no es lo mismo que",
+        "start": 1804.72,
+        "end": 1813.84
+    },
+    {
+        "text": " c b c, ok, tengo derecha el sacar las paréntesis, pero no tengo el derecha cambiar el orden, ok,",
+        "start": 1813.84,
+        "end": 1823.1200000000001
+    },
+    {
+        "text": " según la propiedad que es obvia es la distributividad a por b más c, es igual a b más a c, y de",
+        "start": 1823.12,
+        "end": 1839.04
+    },
+    {
+        "text": " mismo modo funciona también por la izquierda, la derecha, c por el a más b, es igual a c a más c b,",
+        "start": 1839.04,
+        "end": 1848.0
+    },
+    {
+        "text": " ok, esto se llama la distributividad, es una propiedad que ya conocen entre el producto y",
+        "start": 1848.0,
+        "end": 1855.84
+    },
+    {
+        "text": " asuma, es decir, eso puede desarrollar productos, ok, sin duda, y ojo como siempre lo único que no",
+        "start": 1855.84,
+        "end": 1868.84
+    },
+    {
+        "text": " tengo derecho a hacer es intercambiar a b acá, acá,",
+        "start": 1868.84,
+        "end": 1877.48
+    },
+    {
+        "text": " no porque c es por la izquierda, no no porque acá es c por a más b, respectual orden c a más c b,",
+        "start": 1877.48,
+        "end": 1890.28
+    },
+    {
+        "text": " arriba, arriba como es a por b más c, a esta la izquierda, respectual orden, yo puedo intercambiar",
+        "start": 1890.28,
+        "end": 1900.76
+    },
+    {
+        "text": " las sumas, a b más c es igual a c más a b, porque b más c es igual a c más b, la suma no hace",
+        "start": 1900.76,
+        "end": 1908.4
+    },
+    {
+        "text": " problemas, es el producto ahora, o que entienden la cosa, exactamente, no tiene nada que vera,",
+        "start": 1908.4,
+        "end": 1916.76
+    },
+    {
+        "text": " es el punto importante, es decir, en general esta matriz no tiene nada que ver con esta matriz,",
+        "start": 1916.76,
+        "end": 1922.76
+    },
+    {
+        "text": " de mismo modo que en esta matriz no tiene nada que ver con esta matriz y que esta matriz",
+        "start": 1922.76,
+        "end": 1927.8
+    },
+    {
+        "text": " no tiene nada que ver con esta matriz, ok, y de hecho no tienen las mismas dimensiones, acá yo",
+        "start": 1927.8,
+        "end": 1935.0
+    },
+    {
+        "text": " debería poner las restricciones para que esto tenga sentido, necesito que las columnas de a",
+        "start": 1935.0,
+        "end": 1945.0
+    },
+    {
+        "text": " sean igual a las filas de b y a las filas de c, ok, y que también para sumarlas hay que",
+        "start": 1945.0,
+        "end": 1958.52
+    },
+    {
+        "text": " tener que las columnas de b sean iguales a las columnas de c, ok, pero ahora cambia todo,",
+        "start": 1958.52,
+        "end": 1974.04
+    },
+    {
+        "text": " ahora son las columnas de c que tienen que ser iguales a las filas de a y las filas de b y",
+        "start": 1974.04,
+        "end": 1989.04
+    },
+    {
+        "text": " también las columnas de a tienen que ser iguales a las columnas de b, pueden ver que estas",
+        "start": 1989.04,
+        "end": 2000.04
+    },
+    {
+        "text": " restricciones sobre los tamaños no son los mismos, ok, entonces la moral deja es que las leches",
+        "start": 2000.04,
+        "end": 2012.44
+    },
+    {
+        "text": " usuales de sacar las perentesis todavía funcionan y todavía podemos hacer desarrollo,",
+        "start": 2012.44,
+        "end": 2019.08
+    },
+    {
+        "text": " podemos hacer desarrollo, lo que no tenemos derecho a hacer es interjamiar productos,",
+        "start": 2020.08,
+        "end": 2026.08
+    },
+    {
+        "text": " ok, y de mismo modo, se lo tengo que la matriz nula por a es igual a la nula y a por la nula,",
+        "start": 2026.08,
+        "end": 2041.08
+    },
+    {
+        "text": " pero nula mismo nula es igual a la nula, sí, sí gracias, es una b, es para verificar si siguen,",
+        "start": 2041.08,
+        "end": 2057.08
+    },
+    {
+        "text": " a veces siempre me equivoco intencionalmente para verificar si siguen la clase,",
+        "start": 2057.08,
+        "end": 2067.08
+    },
+    {
+        "text": " ¿no? porque no tienes derecho, poner porque c es ubica, a izquierda de a, siempre hay que mantener el orden multiplicativo",
+        "start": 2067.08,
+        "end": 2090.08
+    },
+    {
+        "text": " ¿Y usted?",
+        "start": 2090.08,
+        "end": 2093.08
+    },
+    {
+        "text": " Se izquierda de allá, se prohiscala de vez.",
+        "start": 2093.08,
+        "end": 2097.08
+    },
+    {
+        "text": " Entonces son las re fallas, se saca los semmos, pero hay que cuidar un poquito más.",
+        "start": 2097.08,
+        "end": 2105.08
+    },
+    {
+        "text": " ¿No se en que se senta de ayudar para el desempecimiento?",
+        "start": 2105.08,
+        "end": 2108.08
+    },
+    {
+        "text": " Ah, no, por supuesto, acá no se pueden sacar las paréntesis.",
+        "start": 2108.08,
+        "end": 2112.08
+    },
+    {
+        "text": " Por supuesto, se pueden sacar las paréntesis, sólo entre sumas y entre productos.",
+        "start": 2112.08,
+        "end": 2117.08
+    },
+    {
+        "text": " Pero son cosas que ya sabemos. ¿Cuándo escribís esto?",
+        "start": 2117.08,
+        "end": 2126.08
+    },
+    {
+        "text": " ¿No tienes derecho de decir que es su mismo que esto?",
+        "start": 2126.08,
+        "end": 2130.08
+    },
+    {
+        "text": " No, no, claro. Es que el re quitar y lo otro lado, cambien con re re y se liberan.",
+        "start": 2130.08,
+        "end": 2135.08
+    },
+    {
+        "text": " Sí, el problema es que el número supone sin tercambiaro, de acá lo lo puedes.",
+        "start": 2135.08,
+        "end": 2140.08
+    },
+    {
+        "text": " El paréntesis mantiene, pero que la hay que meter a la izquierda y a la derecha.",
+        "start": 2141.08,
+        "end": 2146.08
+    },
+    {
+        "text": " ¿A qué no entiendo tu problema?",
+        "start": 2146.08,
+        "end": 2149.08
+    },
+    {
+        "text": " Sí, tiene.",
+        "start": 2149.08,
+        "end": 2150.08
+    },
+    {
+        "text": " ¿A la derecha que lo habías?",
+        "start": 2150.08,
+        "end": 2152.08
+    },
+    {
+        "text": " ¿Por qué no podrías por el derecho de la V?",
+        "start": 2154.08,
+        "end": 2156.08
+    },
+    {
+        "text": " No.",
+        "start": 2156.08,
+        "end": 2157.08
+    },
+    {
+        "text": " ¿Por qué acá se se encuentra también por la izquierda de V?",
+        "start": 2157.08,
+        "end": 2161.08
+    },
+    {
+        "text": " Se también se encuentra por la izquierda de V.",
+        "start": 2162.08,
+        "end": 2165.08
+    },
+    {
+        "text": " ¿Estima que hagan por ser?",
+        "start": 2165.08,
+        "end": 2168.08
+    },
+    {
+        "text": " Ambos propiedades parecen la misma porque tenés la primera o la matriciedad.",
+        "start": 2168.08,
+        "end": 2171.08
+    },
+    {
+        "text": " Pues se pareció.",
+        "start": 2171.08,
+        "end": 2172.08
+    },
+    {
+        "text": " Claro.",
+        "start": 2172.08,
+        "end": 2173.08
+    },
+    {
+        "text": " Lo que queremos es la misma propiedad.",
+        "start": 2173.08,
+        "end": 2174.08
+    },
+    {
+        "text": " Claro, lo que queremos es poner primero el paréntesis y después...",
+        "start": 2174.08,
+        "end": 2177.08
+    },
+    {
+        "text": " ¿A qué?",
+        "start": 2177.08,
+        "end": 2178.08
+    },
+    {
+        "text": " Ok, gracias.",
+        "start": 2182.08,
+        "end": 2184.08
+    },
+    {
+        "text": " Muchas gracias.",
+        "start": 2184.08,
+        "end": 2185.08
+    },
+    {
+        "text": " Era para verificar si siguen.",
+        "start": 2185.08,
+        "end": 2187.08
+    },
+    {
+        "text": " Por supuesto que acá escribí el boludo que soy.",
+        "start": 2189.08,
+        "end": 2193.08
+    },
+    {
+        "text": " Escribió dos veces la misma propiedad con dos letras distintas.",
+        "start": 2194.08,
+        "end": 2199.08
+    },
+    {
+        "text": " Es lo que querían decirme y no entendía.",
+        "start": 2199.08,
+        "end": 2204.08
+    },
+    {
+        "text": " Ok, boludo primero, soy.",
+        "start": 2204.08,
+        "end": 2207.08
+    },
+    {
+        "text": " Por supuesto.",
+        "start": 2208.08,
+        "end": 2210.08
+    },
+    {
+        "text": " Por supuesto.",
+        "start": 2210.08,
+        "end": 2211.08
+    },
+    {
+        "text": " Prefiaré esto ya que cambiar las condiciones.",
+        "start": 2222.08,
+        "end": 2226.08
+    },
+    {
+        "text": " Les dejo hacer en ejercicio.",
+        "start": 2227.08,
+        "end": 2229.08
+    },
+    {
+        "text": " Disculpa.",
+        "start": 2231.08,
+        "end": 2232.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2233.08,
+        "end": 2234.08
+    },
+    {
+        "text": " Yo no entendía nada.",
+        "start": 2235.08,
+        "end": 2236.08
+    },
+    {
+        "text": " Ahora es la buena cosa.",
+        "start": 2236.08,
+        "end": 2239.08
+    },
+    {
+        "text": " Ok, y entienden cómo pasa?",
+        "start": 2239.08,
+        "end": 2242.08
+    },
+    {
+        "text": " ¿Qué estamos de acuerdo?",
+        "start": 2242.08,
+        "end": 2244.08
+    },
+    {
+        "text": " Gracias.",
+        "start": 2244.08,
+        "end": 2245.08
+    },
+    {
+        "text": " Y última cosa, hay que ver cómo funciona.",
+        "start": 2248.08,
+        "end": 2252.08
+    },
+    {
+        "text": " Tenemos dos productos.",
+        "start": 2252.08,
+        "end": 2254.08
+    },
+    {
+        "text": " Producto por un número y producto por matrices.",
+        "start": 2254.08,
+        "end": 2259.08
+    },
+    {
+        "text": " Y la chance que tenemos es que la suerte que tenemos es que el producto por número.",
+        "start": 2259.08,
+        "end": 2265.08
+    },
+    {
+        "text": " Conmuta con el producto de matrices.",
+        "start": 2265.08,
+        "end": 2268.08
+    },
+    {
+        "text": " Es el único que conmuta.",
+        "start": 2268.08,
+        "end": 2270.08
+    },
+    {
+        "text": " Es decir, tenemos que lambda por un producto.",
+        "start": 2270.08,
+        "end": 2275.08
+    },
+    {
+        "text": " Es igual lambda por a producto por v.",
+        "start": 2275.08,
+        "end": 2281.08
+    },
+    {
+        "text": " Y de mi modo es igual a por lambda por v.",
+        "start": 2281.08,
+        "end": 2286.08
+    },
+    {
+        "text": " Acá puede ver que el lambda se puede viajar al dentro de los productos.",
+        "start": 2286.08,
+        "end": 2293.08
+    },
+    {
+        "text": " Acá el lambda hace un gran viaje al dentro de los productos.",
+        "start": 2293.08,
+        "end": 2298.08
+    },
+    {
+        "text": " Porque el lambda solo es un número y él no tiene problema de computación.",
+        "start": 2298.08,
+        "end": 2304.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2304.08,
+        "end": 2305.08
+    },
+    {
+        "text": " Son los productos de matrices que tienen problemas de computación.",
+        "start": 2305.08,
+        "end": 2309.08
+    },
+    {
+        "text": " Pero los pequeños productos no tienen problemas de computación.",
+        "start": 2309.08,
+        "end": 2313.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2313.08,
+        "end": 2314.08
+    },
+    {
+        "text": " Entonces son las propiedades que tenemos.",
+        "start": 2314.08,
+        "end": 2318.08
+    },
+    {
+        "text": " Pero tenemos que a b es distinto de b a en general.",
+        "start": 2318.08,
+        "end": 2329.08
+    },
+    {
+        "text": " Por supuesto, hay excepciones.",
+        "start": 2329.08,
+        "end": 2332.08
+    },
+    {
+        "text": " Por ejemplo, si supongo b igual a a por a será igual a a por a.",
+        "start": 2332.08,
+        "end": 2338.08
+    },
+    {
+        "text": " Pero en general tenemos a b es distinto de b a.",
+        "start": 2339.08,
+        "end": 2342.08
+    },
+    {
+        "text": " Y es otra muy importante del universo.",
+        "start": 2342.08,
+        "end": 2345.08
+    },
+    {
+        "text": " Ya saben que cuando dividen por cero en algúda par del mundo, Dios mata un gatito.",
+        "start": 2345.08,
+        "end": 2354.08
+    },
+    {
+        "text": " Ya lo saben.",
+        "start": 2354.08,
+        "end": 2355.08
+    },
+    {
+        "text": " Pero cuando intercambian un producto, Dios no mata un gatito.",
+        "start": 2355.08,
+        "end": 2361.08
+    },
+    {
+        "text": " Mata a un estudiante.",
+        "start": 2361.08,
+        "end": 2364.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2364.08,
+        "end": 2367.08
+    },
+    {
+        "text": " Entonces por favor que no hagan este error con matrices.",
+        "start": 2367.08,
+        "end": 2375.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2375.08,
+        "end": 2377.08
+    },
+    {
+        "text": " Ahora vamos a ver un pequeño ejemplo para ver cómo se calculan.",
+        "start": 2377.08,
+        "end": 2380.08
+    },
+    {
+        "text": " ¿Cómo se calculan las expresiones con matrices?",
+        "start": 2380.08,
+        "end": 2384.08
+    },
+    {
+        "text": " ¿Qué es?",
+        "start": 2384.08,
+        "end": 2389.08
+    },
+    {
+        "text": " ¿Qué ejemplo?",
+        "start": 2389.08,
+        "end": 2393.08
+    },
+    {
+        "text": " Supongo que tengo 2 matrices cuadradas para simplificar las cosas.",
+        "start": 2393.08,
+        "end": 2402.08
+    },
+    {
+        "text": " ¿Cuál es la ventaja trabajar con matrices cuadradas?",
+        "start": 2402.08,
+        "end": 2406.08
+    },
+    {
+        "text": " Es que siempre se pueden sumar cuando tienen el mismo tamaño y siempre se pueden multiplicar.",
+        "start": 2406.08,
+        "end": 2412.08
+    },
+    {
+        "text": " Ok. No tengo problemas de dimensión.",
+        "start": 2412.08,
+        "end": 2415.08
+    },
+    {
+        "text": " Ahora, ¿qué quiero yo calcular?",
+        "start": 2415.08,
+        "end": 2419.08
+    },
+    {
+        "text": " Las identidades notales.",
+        "start": 2419.08,
+        "end": 2423.08
+    },
+    {
+        "text": " ¿A más b y cuadrado?",
+        "start": 2423.08,
+        "end": 2425.08
+    },
+    {
+        "text": " ¿Qué significa a cuadrado?",
+        "start": 2425.08,
+        "end": 2428.08
+    },
+    {
+        "text": " A cuadrado por definiciones a por a.",
+        "start": 2428.08,
+        "end": 2432.08
+    },
+    {
+        "text": " ¿Cómo siempre? No vamos a cambiar esta notación.",
+        "start": 2432.08,
+        "end": 2436.08
+    },
+    {
+        "text": " ¿Cómo se calcula a más b y cuadrado?",
+        "start": 2436.08,
+        "end": 2439.08
+    },
+    {
+        "text": " ¿Cos matrices ahora?",
+        "start": 2439.08,
+        "end": 2441.08
+    },
+    {
+        "text": " Es a más b por a más b.",
+        "start": 2441.08,
+        "end": 2448.08
+    },
+    {
+        "text": " Yo puedo usar, por ejemplo, la distributa y activity real 3.",
+        "start": 2448.08,
+        "end": 2455.08
+    },
+    {
+        "text": " Es a por a más b más b por a más b.",
+        "start": 2455.08,
+        "end": 2465.08
+    },
+    {
+        "text": " Ok. Y después puede usar la distributividad 2.",
+        "start": 2465.08,
+        "end": 2471.08
+    },
+    {
+        "text": " Es a cuadrado más a b más b a más b cuadrado.",
+        "start": 2471.08,
+        "end": 2481.08
+    },
+    {
+        "text": " Voy a ver que es calcula que usted tiene mucha duda.",
+        "start": 2481.08,
+        "end": 2484.08
+    },
+    {
+        "text": " La consumre a hacerlo.",
+        "start": 2484.08,
+        "end": 2485.08
+    },
+    {
+        "text": " Y ahora que voy a hacer show.",
+        "start": 2485.08,
+        "end": 2489.08
+    },
+    {
+        "text": " A b más b a que voy a hacer.",
+        "start": 2489.08,
+        "end": 2493.08
+    },
+    {
+        "text": " Nada, porque no quieren matar a estudiantes.",
+        "start": 2493.08,
+        "end": 2497.08
+    },
+    {
+        "text": " Y no sé si no puedo simplificar.",
+        "start": 2497.08,
+        "end": 2499.08
+    },
+    {
+        "text": " Y la cosa importante es que esta operación",
+        "start": 2499.08,
+        "end": 2502.08
+    },
+    {
+        "text": " no se puede más simplificar.",
+        "start": 2502.08,
+        "end": 2504.08
+    },
+    {
+        "text": " Porque esto es distinto de 2 a b y también es distinto de 2 b a.",
+        "start": 2504.08,
+        "end": 2512.08
+    },
+    {
+        "text": " En general.",
+        "start": 2512.08,
+        "end": 2516.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2516.08,
+        "end": 2518.08
+    },
+    {
+        "text": " Entonces, en este caso no podemos simplificar.",
+        "start": 2518.08,
+        "end": 2521.08
+    },
+    {
+        "text": " Disculpa.",
+        "start": 2521.08,
+        "end": 2523.08
+    },
+    {
+        "text": " Y de mismo modo tenemos que",
+        "start": 2523.08,
+        "end": 2531.08
+    },
+    {
+        "text": " a menos b cuadrado.",
+        "start": 2531.08,
+        "end": 2538.08
+    },
+    {
+        "text": " Es igual a cuadrado.",
+        "start": 2538.08,
+        "end": 2541.08
+    },
+    {
+        "text": " A b menos b a menos más b cuadrado.",
+        "start": 2541.08,
+        "end": 2550.08
+    },
+    {
+        "text": " Y esto no se puede simplificar.",
+        "start": 2550.08,
+        "end": 2555.08
+    },
+    {
+        "text": " Es de aquí.",
+        "start": 2555.08,
+        "end": 2557.08
+    },
+    {
+        "text": " Esto es distinto de menos 2 a b y es distinto de menos 2 b a.",
+        "start": 2557.08,
+        "end": 2565.08
+    },
+    {
+        "text": " En general.",
+        "start": 2565.08,
+        "end": 2568.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2568.08,
+        "end": 2570.08
+    },
+    {
+        "text": " Y la última igualdad que queremos ver.",
+        "start": 2570.08,
+        "end": 2576.08
+    },
+    {
+        "text": " Esa siguiente.",
+        "start": 2576.08,
+        "end": 2582.08
+    },
+    {
+        "text": " Vamos a calcular a más b por a menos b.",
+        "start": 2582.08,
+        "end": 2588.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2588.08,
+        "end": 2590.08
+    },
+    {
+        "text": " A por a a cuadrado.",
+        "start": 2590.08,
+        "end": 2593.08
+    },
+    {
+        "text": " A por menos b menos a b.",
+        "start": 2593.08,
+        "end": 2597.08
+    },
+    {
+        "text": " B por a más b a.",
+        "start": 2597.08,
+        "end": 2601.08
+    },
+    {
+        "text": " B por menos b menos b cuadrado.",
+        "start": 2601.08,
+        "end": 2606.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2606.08,
+        "end": 2608.08
+    },
+    {
+        "text": " Y esto se puede simplificar o no?",
+        "start": 2608.08,
+        "end": 2611.08
+    },
+    {
+        "text": " No.",
+        "start": 2611.08,
+        "end": 2612.08
+    },
+    {
+        "text": " En general es distinto de la matrestura.",
+        "start": 2612.08,
+        "end": 2617.08
+    },
+    {
+        "text": " Entonces, todo esto para mostrar que las cuentas se hacen casi de la misma manera",
+        "start": 2617.08,
+        "end": 2623.08
+    },
+    {
+        "text": " que hicimos anteriormente.",
+        "start": 2623.08,
+        "end": 2626.08
+    },
+    {
+        "text": " Pero, ojo, la única diferencia es que el producto ya no es connotativo",
+        "start": 2626.08,
+        "end": 2631.08
+    },
+    {
+        "text": " y no se puede intercambiar cosas como lo hacíamos con números.",
+        "start": 2631.08,
+        "end": 2637.08
+    },
+    {
+        "text": " Pero con estas sutiles, a fuera de estas sutiles,",
+        "start": 2637.08,
+        "end": 2644.08
+    },
+    {
+        "text": " todas las cuentas entre matrices funcionan de modo usual.",
+        "start": 2644.08,
+        "end": 2649.08
+    },
+    {
+        "text": " Son las reglas que usamos con los números.",
+        "start": 2649.08,
+        "end": 2652.08
+    },
+    {
+        "text": " Fuerza de estas cosas sutiles.",
+        "start": 2652.08,
+        "end": 2655.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2655.08,
+        "end": 2656.08
+    },
+    {
+        "text": " Y esto también justifica porque el producto se llama producto.",
+        "start": 2656.08,
+        "end": 2660.08
+    },
+    {
+        "text": " Porque cuando definí la suma era claro que era la suma porque era sólo usaba sumas.",
+        "start": 2660.08,
+        "end": 2666.08
+    },
+    {
+        "text": " Pero como el producto usa en su definición o la combinación de productos de suma,",
+        "start": 2666.08,
+        "end": 2672.08
+    },
+    {
+        "text": " porque abre el producto?",
+        "start": 2672.08,
+        "end": 2674.08
+    },
+    {
+        "text": " Que me dio la permisión de hablar de producto?",
+        "start": 2674.08,
+        "end": 2679.08
+    },
+    {
+        "text": " Yo hubiera podido hablar de según la suma también.",
+        "start": 2679.08,
+        "end": 2682.08
+    },
+    {
+        "text": " Yo hubiera podido hablar de suma productante, no sé qué.",
+        "start": 2682.08,
+        "end": 2686.08
+    },
+    {
+        "text": " Un suma productiva, un producto sumante, no sé.",
+        "start": 2686.08,
+        "end": 2692.08
+    },
+    {
+        "text": " ¿Por qué no hable producto?",
+        "start": 2692.08,
+        "end": 2694.08
+    },
+    {
+        "text": " Debido a estas reglas.",
+        "start": 2694.08,
+        "end": 2696.08
+    },
+    {
+        "text": " Que son las reglas en su suales de producto.",
+        "start": 2696.08,
+        "end": 2699.08
+    },
+    {
+        "text": " Cuando algo se distribuye con una suma,",
+        "start": 2699.08,
+        "end": 2702.08
+    },
+    {
+        "text": " en matemática los matemáticos se shaman esta cosa un producto.",
+        "start": 2702.08,
+        "end": 2706.08
+    },
+    {
+        "text": " Un producto es una operación asociativa que distribuye con una suma.",
+        "start": 2707.08,
+        "end": 2712.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2714.08,
+        "end": 2715.08
+    },
+    {
+        "text": " Entonces ahora tenemos todo lo que hay que saber sobre el producto.",
+        "start": 2716.08,
+        "end": 2721.08
+    },
+    {
+        "text": " Y vamos a ver otro tema más sencillo que es el tema de la transpuesta, matriz transpuesta.",
+        "start": 2721.08,
+        "end": 2729.08
+    },
+    {
+        "text": " Entonces acá para trabajar el producto,",
+        "start": 2729.08,
+        "end": 2733.08
+    },
+    {
+        "text": " usamos un montón de sudor,",
+        "start": 2733.08,
+        "end": 2736.08
+    },
+    {
+        "text": " porque es un tema un poquito complicado, un poquito nuevo.",
+        "start": 2736.08,
+        "end": 2740.08
+    },
+    {
+        "text": " Entonces para descansar un poquito,",
+        "start": 2740.08,
+        "end": 2743.08
+    },
+    {
+        "text": " vamos a ver un tema muy sencillo, matriz transpuesta.",
+        "start": 2743.08,
+        "end": 2747.08
+    },
+    {
+        "text": " Ok. Vieron que cuando hablamos de matrices,",
+        "start": 2757.08,
+        "end": 2762.08
+    },
+    {
+        "text": " podemos descumponer las matrices en filas o bien en columnas.",
+        "start": 2762.08,
+        "end": 2767.08
+    },
+    {
+        "text": " Pero por otro lado, es claro que en general lo que funciona para las filas,",
+        "start": 2767.08,
+        "end": 2773.08
+    },
+    {
+        "text": " en general por simetría debería funcionar para las columnas.",
+        "start": 2773.08,
+        "end": 2777.08
+    },
+    {
+        "text": " Y lo que funciona para las columnas debería funcionar más o menos para las filas.",
+        "start": 2777.08,
+        "end": 2782.08
+    },
+    {
+        "text": " Lo que nos falta es una operación que intercambie la noción de fila con la noción de columna.",
+        "start": 2783.08,
+        "end": 2789.08
+    },
+    {
+        "text": " Y como se hace haciendo una simetría respecto a la diagonal.",
+        "start": 2789.08,
+        "end": 2794.08
+    },
+    {
+        "text": " Si yo hago una simetría respecto a la diagonal,",
+        "start": 2794.08,
+        "end": 2797.08
+    },
+    {
+        "text": " voy a intercambiar las nociones de fila y de columna y esta noción de maldrist transpuesta.",
+        "start": 2797.08,
+        "end": 2803.08
+    },
+    {
+        "text": " Ok. Definición.",
+        "start": 2803.08,
+        "end": 2806.08
+    },
+    {
+        "text": " Dada una matriz.",
+        "start": 2809.08,
+        "end": 2812.08
+    },
+    {
+        "text": " A, con coeficientes a su hijo ta, deta manio M e por L.",
+        "start": 2812.08,
+        "end": 2824.08
+    },
+    {
+        "text": " Se chama.",
+        "start": 2824.08,
+        "end": 2827.08
+    },
+    {
+        "text": " Transpuesta a la yad.",
+        "start": 2829.08,
+        "end": 2833.08
+    },
+    {
+        "text": " A la matriz.",
+        "start": 2835.08,
+        "end": 2838.08
+    },
+    {
+        "text": " Que se escribe. A, a la t de, a transpuesta.",
+        "start": 2839.08,
+        "end": 2843.08
+    },
+    {
+        "text": " Cuchos coeficientes a prima o subi jota y ahora es una matriz de tamaño M e por L.",
+        "start": 2845.08,
+        "end": 2853.08
+    },
+    {
+        "text": " Intercambiamos filas y columnas.",
+        "start": 2853.08,
+        "end": 2857.08
+    },
+    {
+        "text": " Definirá por.",
+        "start": 2857.08,
+        "end": 2860.08
+    },
+    {
+        "text": " Definiciones. La transpuesta a prima subi jota es igual a formular su verificil a subjota y.",
+        "start": 2860.08,
+        "end": 2872.08
+    },
+    {
+        "text": " Es decir, hay que intercambiar indices de fila y columnas y para todos.",
+        "start": 2872.08,
+        "end": 2878.08
+    },
+    {
+        "text": " Y ahora entre uno y N y j entre uno y M.",
+        "start": 2881.08,
+        "end": 2887.08
+    },
+    {
+        "text": " Ok. Vamos a ver un ejemplo.",
+        "start": 2890.08,
+        "end": 2895.08
+    },
+    {
+        "text": " Ejemplo.",
+        "start": 2900.08,
+        "end": 2903.08
+    },
+    {
+        "text": " No sé. Tomo por ejemplo esta matriz.",
+        "start": 2903.08,
+        "end": 2908.08
+    },
+    {
+        "text": " 3, 0, 1, R de 2, p menos 5.",
+        "start": 2908.08,
+        "end": 2915.08
+    },
+    {
+        "text": " Es una matriz.",
+        "start": 2916.08,
+        "end": 2918.08
+    },
+    {
+        "text": " So quiero calcular su transpuesta. Es igual a que.",
+        "start": 2918.08,
+        "end": 2923.08
+    },
+    {
+        "text": " Acá es una matriz de queta manio.",
+        "start": 2923.08,
+        "end": 2926.08
+    },
+    {
+        "text": " 2 por 3 y después voy a tener la matriz de tamaño.",
+        "start": 2926.08,
+        "end": 2930.08
+    },
+    {
+        "text": " 3 por 2.",
+        "start": 2930.08,
+        "end": 2933.08
+    },
+    {
+        "text": " Ok. Escribos yo acá.",
+        "start": 2933.08,
+        "end": 2936.08
+    },
+    {
+        "text": " 3, R de 2, 0, p, 1, menos 5.",
+        "start": 2936.08,
+        "end": 2945.08
+    },
+    {
+        "text": " Intercambiamos la nación de filas. Es decir, las filas de la transpuesta son las columnas de la matriz inicial.",
+        "start": 2945.08,
+        "end": 2953.08
+    },
+    {
+        "text": " Mientras las columnas de la transpuesta son las filas de la matriz inicial.",
+        "start": 2953.08,
+        "end": 2958.08
+    },
+    {
+        "text": " No hay nada otro que decir.",
+        "start": 2958.08,
+        "end": 2962.08
+    },
+    {
+        "text": " Ok.",
+        "start": 2962.08,
+        "end": 2965.08
+    },
+    {
+        "text": " Esa es la definición de la transpuesta.",
+        "start": 2965.08,
+        "end": 2967.08
+    },
+    {
+        "text": " El interés de esta operación es intercambiar la nación de fila con la nación de columna.",
+        "start": 2967.08,
+        "end": 2972.08
+    },
+    {
+        "text": " En general esto permite porque los matemalicos hacen tal escuestas.",
+        "start": 2972.08,
+        "end": 2977.08
+    },
+    {
+        "text": " En general tenemos un montón de teoremas sobre las filas y sobre las columnas.",
+        "start": 2977.08,
+        "end": 2982.08
+    },
+    {
+        "text": " Y como nosotros no sé ustedes, pero nosotros somos perezosos,",
+        "start": 2982.08,
+        "end": 2987.08
+    },
+    {
+        "text": " queremos dividir la cantidad de trabajo.",
+        "start": 2987.08,
+        "end": 2990.08
+    },
+    {
+        "text": " Entonces en general lo que hacemos es mostrar la propiedad para las filas o bien las columnas.",
+        "start": 2990.08,
+        "end": 2997.08
+    },
+    {
+        "text": " Y gracias a la transpuesta aplicando la misma propiedad a las transpuestas,",
+        "start": 2997.08,
+        "end": 3002.08
+    },
+    {
+        "text": " vamos a obtener la misma propiedad, pero para las filas las columnas o las filas.",
+        "start": 3002.08,
+        "end": 3007.08
+    },
+    {
+        "text": " Ok. Es el truco.",
+        "start": 3007.08,
+        "end": 3010.08
+    },
+    {
+        "text": " En un césar hay que ver las propiedades de la transpuesta, propiedades.",
+        "start": 3010.08,
+        "end": 3019.08
+    },
+    {
+        "text": " Primera propiedad que es muy fácil es que cuelas la transpuesta de una suma,",
+        "start": 3019.08,
+        "end": 3039.08
+    },
+    {
+        "text": " esto mismo que la suma de las transpuestas.",
+        "start": 3039.08,
+        "end": 3047.08
+    },
+    {
+        "text": " Y de hecho se puede añadir, ¿cuál es la transpuesta de una matriz nula?",
+        "start": 3047.08,
+        "end": 3054.08
+    },
+    {
+        "text": " Es la matriz nula, pero hay que intercambiar las cosas, m por n, que cae en n por n.",
+        "start": 3054.08,
+        "end": 3063.08
+    },
+    {
+        "text": " Transpuesta de lo puesto, es igual a un puesto de la transpuesta.",
+        "start": 3063.08,
+        "end": 3076.08
+    },
+    {
+        "text": " Acá no hay dificuldades.",
+        "start": 3076.08,
+        "end": 3084.08
+    },
+    {
+        "text": " Después, producto por un número.",
+        "start": 3084.08,
+        "end": 3088.08
+    },
+    {
+        "text": " Si, yo tomo una matriz, la multiplicó por un número y después hago la transpuesta. ¿Qué va a pasar?",
+        "start": 3088.08,
+        "end": 3096.08
+    },
+    {
+        "text": " Es lo mismo que calcular la transpuesta y después multiplicarla por el número.",
+        "start": 3096.08,
+        "end": 3103.08
+    },
+    {
+        "text": " Ok. Esto es obvio, por definición. Son las dos operaciones sencillas.",
+        "start": 3104.08,
+        "end": 3109.08
+    },
+    {
+        "text": " Ahora, ojo, ¿qué pasa con un producto real?",
+        "start": 3109.08,
+        "end": 3113.08
+    },
+    {
+        "text": " El producto difícil, el producto de matrices.",
+        "start": 3113.08,
+        "end": 3116.08
+    },
+    {
+        "text": " Yo hago un producto de dos matrices y yo hago la transpuesta. ¿Qué pasa?",
+        "start": 3116.08,
+        "end": 3124.08
+    },
+    {
+        "text": " Por supuesto, los que ya cogeron, ya saben, pero los nuevos que piensan.",
+        "start": 3124.08,
+        "end": 3131.08
+    },
+    {
+        "text": " Es claro que la transpuesta de un producto será un producto de transpuestas,",
+        "start": 3132.08,
+        "end": 3138.08
+    },
+    {
+        "text": " pero la única trampa es que hay que intercambiar ambas matrices.",
+        "start": 3138.08,
+        "end": 3143.08
+    },
+    {
+        "text": " Como intercambiamos el papel de los columnas y los filas,",
+        "start": 3146.08,
+        "end": 3151.08
+    },
+    {
+        "text": " y que el producto depende fuertemente de quién es fila y quién es columna,",
+        "start": 3151.08,
+        "end": 3156.08
+    },
+    {
+        "text": " tenemos que intercambiar el producto.",
+        "start": 3156.08,
+        "end": 3159.08
+    },
+    {
+        "text": " Es la única trampa.",
+        "start": 3162.08,
+        "end": 3166.08
+    },
+    {
+        "text": " Ok. Y después, con esta cosa pueden calcular.",
+        "start": 3168.08,
+        "end": 3173.08
+    },
+    {
+        "text": " Es calcular fácilmente expresiones con transpuestas y me olviden la última.",
+        "start": 3173.08,
+        "end": 3179.08
+    },
+    {
+        "text": " La última, ¿qué es la transpuesta de la transpuesta?",
+        "start": 3179.08,
+        "end": 3184.08
+    },
+    {
+        "text": " Esa. Es decir, se llama, se dice que es una operación involutiva.",
+        "start": 3185.08,
+        "end": 3192.08
+    },
+    {
+        "text": " Una operación involutiva en matemática es una operación cuando las hacemos dos veces,",
+        "start": 3196.08,
+        "end": 3201.08
+    },
+    {
+        "text": " volvemos al punto inicial.",
+        "start": 3201.08,
+        "end": 3204.08
+    },
+    {
+        "text": " Hay muchas operaciones involutivas en matemática,",
+        "start": 3204.08,
+        "end": 3207.08
+    },
+    {
+        "text": " el opuesto, el inverso cuando está definido y la transpuesta.",
+        "start": 3207.08,
+        "end": 3212.08
+    },
+    {
+        "text": " Hay muchas otras para los que conocen, por ejemplo, los números complejos,",
+        "start": 3213.08,
+        "end": 3217.08
+    },
+    {
+        "text": " hay el conjugado de un número complejo que también es una operación involutiva.",
+        "start": 3217.08,
+        "end": 3222.08
+    },
+    {
+        "text": " Tenemos un montón de involuciones en matemática.",
+        "start": 3222.08,
+        "end": 3227.08
+    },
+    {
+        "text": " Y en la vida corriente también,",
+        "start": 3229.08,
+        "end": 3231.08
+    },
+    {
+        "text": " el intercambio entre izquierda y derecha, si yo lo hago dos veces, obtengo lo mismo.",
+        "start": 3231.08,
+        "end": 3235.08
+    },
+    {
+        "text": " Ok, entonces, es todo lo que tengo que escribir sobre la transpuesta,",
+        "start": 3236.08,
+        "end": 3242.08
+    },
+    {
+        "text": " porque no hay muchas cosas que decir.",
+        "start": 3242.08,
+        "end": 3245.08
+    },
+    {
+        "text": " Así que, quizás, voy a hacer un ejemplo.",
+        "start": 3245.08,
+        "end": 3247.08
+    },
+    {
+        "text": " Sí, sí.",
+        "start": 3247.08,
+        "end": 3249.08
+    },
+    {
+        "text": " De hecho, es un ejercicio.",
+        "start": 3249.08,
+        "end": 3251.08
+    },
+    {
+        "text": " Voy a acumular yo, antes de ejercicio, voy a acumular yo.",
+        "start": 3251.08,
+        "end": 3254.08
+    },
+    {
+        "text": " Se dice que una matriz.",
+        "start": 3260.08,
+        "end": 3262.08
+    },
+    {
+        "text": " Matriz cuadrada.",
+        "start": 3265.08,
+        "end": 3267.08
+    },
+    {
+        "text": " Es, voy a decir que es simétrica.",
+        "start": 3275.08,
+        "end": 3279.08
+    },
+    {
+        "text": " Cuando es igual a su propia transpuesta.",
+        "start": 3284.08,
+        "end": 3289.08
+    },
+    {
+        "text": " Entonces, es una matriz.",
+        "start": 3290.08,
+        "end": 3294.08
+    },
+    {
+        "text": " Si metricas es una matriz cuando yo hago la simetría respecto a la diona, no cambia nada.",
+        "start": 3294.08,
+        "end": 3300.08
+    },
+    {
+        "text": " El ejemplo de matriz simétrica.",
+        "start": 3300.08,
+        "end": 3303.08
+    },
+    {
+        "text": " Uno, no tres, dos, tres.",
+        "start": 3303.08,
+        "end": 3307.08
+    },
+    {
+        "text": " Esta matriz es simétrica.",
+        "start": 3307.08,
+        "end": 3309.08
+    },
+    {
+        "text": " Si yo calculo su transpuesta, obtengo la misma matriz.",
+        "start": 3309.08,
+        "end": 3313.08
+    },
+    {
+        "text": " Y voy a decir que una matriz es antisimétrica.",
+        "start": 3313.08,
+        "end": 3317.08
+    },
+    {
+        "text": " Cuando su transpuesta es igual a su propia transpuesta.",
+        "start": 3320.08,
+        "end": 3328.08
+    },
+    {
+        "text": " Esta es simétrica, es antisimétrica o no?",
+        "start": 3328.08,
+        "end": 3332.08
+    },
+    {
+        "text": " No, porque su propia está no tiene la que ver.",
+        "start": 3332.08,
+        "end": 3337.08
+    },
+    {
+        "text": " Entonces, ¿qué se puede decir sobre las matrices antisimétricas?",
+        "start": 3337.08,
+        "end": 3342.08
+    },
+    {
+        "text": " ¿Qué pasa sobre la diona?",
+        "start": 3342.08,
+        "end": 3345.08
+    },
+    {
+        "text": " Cuando hacemos una transposición, ¿qué pasa sobre la diona?",
+        "start": 3345.08,
+        "end": 3349.08
+    },
+    {
+        "text": " Nada.",
+        "start": 3349.08,
+        "end": 3350.08
+    },
+    {
+        "text": " Entonces, si es igual a su propuesta, la diona tiene que ser igual a su propia opuesta. ¿Qué quiere decir esto?",
+        "start": 3350.08,
+        "end": 3359.08
+    },
+    {
+        "text": " Tiene que ser nula.",
+        "start": 3359.08,
+        "end": 3362.08
+    },
+    {
+        "text": " Las matrices transpuestas tienen necesariamente una diona nula.",
+        "start": 3362.08,
+        "end": 3367.08
+    },
+    {
+        "text": " Entonces, acá ejemplo de matriz simétrica es uno, tres, tres, dos.",
+        "start": 3367.08,
+        "end": 3378.08
+    },
+    {
+        "text": " Y acá no tengo otra opción que decía, por ejemplo, cinco menos cuatro.",
+        "start": 3378.08,
+        "end": 3383.08
+    },
+    {
+        "text": " No, es culpa.",
+        "start": 3383.08,
+        "end": 3385.08
+    },
+    {
+        "text": " Tengo que poner el cero y cero acá.",
+        "start": 3385.08,
+        "end": 3388.08
+    },
+    {
+        "text": " Porque este tiene que ser igual a su cuerpo.",
+        "start": 3388.08,
+        "end": 3390.08
+    },
+    {
+        "text": " Y este tiene que ser igual a su opuesto.",
+        "start": 3390.08,
+        "end": 3392.08
+    },
+    {
+        "text": " Y acá yo puedo poner cualquier cosa, menos cinco o cinco.",
+        "start": 3392.08,
+        "end": 3397.08
+    },
+    {
+        "text": " Y esta es antisimétrica. ¿Entienden?",
+        "start": 3397.08,
+        "end": 3401.08
+    },
+    {
+        "text": " Cuando su calculo su transpuesta obtengo la matriz cero menos cinco o cinco cero, que es su puesta.",
+        "start": 3404.08,
+        "end": 3413.08
+    },
+    {
+        "text": " Ok, entonces en pequeño aj... ¿si?",
+        "start": 3415.08,
+        "end": 3418.08
+    },
+    {
+        "text": " Ahí ya, la diona la vamos a decir.",
+        "start": 3418.08,
+        "end": 3420.08
+    },
+    {
+        "text": " Sí.",
+        "start": 3420.08,
+        "end": 3421.08
+    },
+    {
+        "text": " Esa diona donde i es igual a jota.",
+        "start": 3421.08,
+        "end": 3423.08
+    },
+    {
+        "text": " El índice de fila es igual el índice de columna.",
+        "start": 3423.08,
+        "end": 3426.08
+    },
+    {
+        "text": " Entonces la diona siempre en las patrices es esta diona.",
+        "start": 3426.08,
+        "end": 3431.08
+    },
+    {
+        "text": " La otra no se llama la diona, se llama la antidiegonal.",
+        "start": 3431.08,
+        "end": 3435.08
+    },
+    {
+        "text": " Acá son las centradas que corresponden a índice de fila igual a índice de columna.",
+        "start": 3438.08,
+        "end": 3445.08
+    },
+    {
+        "text": " Ok, ahora hay una ejercicio.",
+        "start": 3449.08,
+        "end": 3453.08
+    },
+    {
+        "text": " Ej ejercicio.",
+        "start": 3455.08,
+        "end": 3457.08
+    },
+    {
+        "text": " Mostrá que cada matriz cuadrada se puede descomponer como la suma de una matriz cimetrica y de una matriz antísimétrica.",
+        "start": 3461.08,
+        "end": 3471.08
+    },
+    {
+        "text": " A toda la matriz cuadrada se puede escribir como la suma de una matriz que voy a llamar a un matriz.",
+        "start": 3478.08,
+        "end": 3507.08
+    },
+    {
+        "text": " A uno que es cimetrica y otra que es antísimétrica donde A uno es cimetrica y A dos es antísimétrica.",
+        "start": 3507.08,
+        "end": 3523.08
+    },
+    {
+        "text": " Es ejercicio.",
+        "start": 3528.08,
+        "end": 3530.08
+    },
+    {
+        "text": " Toda la matriz se puede ver como la suma de una cimetrica matriz cuadrada.",
+        "start": 3531.08,
+        "end": 3536.08
+    },
+    {
+        "text": " Toda la matriz cuadrada es la suma de una matriz cimetrica y de una matriz antísimétrica.",
+        "start": 3536.08,
+        "end": 3543.08
+    },
+    {
+        "text": " Y después, según la pregunta demostrar que esta descomposición es única, no hay otra.",
+        "start": 3544.08,
+        "end": 3551.08
+    },
+    {
+        "text": " Esa es una única posibilidad. Les voy a dar una ayuda.",
+        "start": 3551.08,
+        "end": 3556.08
+    },
+    {
+        "text": " Hay alguien que tiene una idea.",
+        "start": 3557.08,
+        "end": 3559.08
+    },
+    {
+        "text": " Cualquier matriz cuadrada se me da una matriz de un misión por un misión cualquiera existe una matriz cimetrica y una matriz antísimétrica cuya suma me da la matriz inicia.",
+        "start": 3559.08,
+        "end": 3573.08
+    },
+    {
+        "text": " Es un teore males de descomposición muy interesante.",
+        "start": 3573.08,
+        "end": 3578.08
+    },
+    {
+        "text": " Si le iría, no.",
+        "start": 3579.08,
+        "end": 3581.08
+    },
+    {
+        "text": " Ustedes les voy a mostrar.",
+        "start": 3581.08,
+        "end": 3583.08
+    },
+    {
+        "text": " Tomar a uno igual a un medio de A más su respuesta y tomar a dos igual a un medio de A menos su respuesta.",
+        "start": 3589.08,
+        "end": 3605.08
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 3609.08,
+        "end": 3611.08
+    },
+    {
+        "text": " Entienen que ambas matrices son definidas. Cuando su tengo una matriz cuadrada, yo la puedo sumar a su respuesta o tengo una matriz.",
+        "start": 3613.08,
+        "end": 3621.08
+    },
+    {
+        "text": " La puedo dividir por dos.",
+        "start": 3621.08,
+        "end": 3623.08
+    },
+    {
+        "text": " Lo mismo pero con una resta.",
+        "start": 3623.08,
+        "end": 3626.08
+    },
+    {
+        "text": " ¿Qué se puede decir de la suma de ambas matrices? Si yo hago las cuentas, ¿qué pasa?",
+        "start": 3626.08,
+        "end": 3632.08
+    },
+    {
+        "text": " O tengo un medio de A más un medio de A. Es decir, A.",
+        "start": 3633.08,
+        "end": 3638.08
+    },
+    {
+        "text": " Y acá obtengo un medio de la respuesta, menos un medio de la respuesta que pasa, obtengo Cero. Disapparece.",
+        "start": 3638.08,
+        "end": 3645.08
+    },
+    {
+        "text": " Entonces es claro que a uno más a dos es igual a A.",
+        "start": 3645.08,
+        "end": 3653.08
+    },
+    {
+        "text": " ¿Y qué pasa si yo calculo la respuesta de esta?",
+        "start": 3653.08,
+        "end": 3657.08
+    },
+    {
+        "text": " Obtengo un medio de la respuesta, más un medio de la respuesta es decir, un medio de A.",
+        "start": 3657.08,
+        "end": 3664.08
+    },
+    {
+        "text": " Y es la misma cosa revés y cómo la suma es con mutativa. No hay problemas, eso mismo.",
+        "start": 3664.08,
+        "end": 3671.08
+    },
+    {
+        "text": " Entienden que si yo tomo una respuesta de esta matriz, obtengo A1.",
+        "start": 3671.08,
+        "end": 3677.08
+    },
+    {
+        "text": " Y de mismo modo, ¿qué pasa si yo tomo la respuesta de esta matriz?",
+        "start": 3677.08,
+        "end": 3683.08
+    },
+    {
+        "text": " Obtengo acá a respuesta, acá a respuesta desaparece y obtengo la misma expresión pero la opuesta.",
+        "start": 3683.08,
+        "end": 3692.08
+    },
+    {
+        "text": " Esto muestra que esta matriz es cimetrica y esta matriz es antísimétrica.",
+        "start": 3692.08,
+        "end": 3700.08
+    },
+    {
+        "text": " Hay que hacer las merecricaciones, pero hay que verificar que esta es cimetrica y esta es antísimétrica.",
+        "start": 3700.08,
+        "end": 3708.08
+    },
+    {
+        "text": " Por solo por cuentas. La cosa es muy interesante en esta demostración es que nunca tuve que examinar los coeficientes interanos.",
+        "start": 3708.08,
+        "end": 3719.08
+    },
+    {
+        "text": " Es una demostración puramente exacta que funciona, incluso si yo tengo una matriz de un bisón por un bisón y no me interesan los coeficientes.",
+        "start": 3719.08,
+        "end": 3730.08
+    },
+    {
+        "text": " Es un método abstracto, ¿qué funciona bien?",
+        "start": 3730.08,
+        "end": 3734.08
+    },
+    {
+        "text": " Ok, este ejemplo que yo tenía para las matrices transpuestas.",
+        "start": 3734.08,
+        "end": 3740.08
+    },
+    {
+        "text": " Ahora vamos a hablar de matriz inversa.",
+        "start": 3740.08,
+        "end": 3746.08
+    },
+    {
+        "text": " Nuevo tema.",
+        "start": 3746.08,
+        "end": 3749.08
+    },
+    {
+        "text": " Ok, tengo esto.",
+        "start": 3764.08,
+        "end": 3773.08
+    },
+    {
+        "text": " Ahora quiero recordar algo.",
+        "start": 3773.08,
+        "end": 3780.08
+    },
+    {
+        "text": " Sabimos a vez que cuando teníamos un sistema, se podría escribir cada sistema lineal,",
+        "start": 3780.08,
+        "end": 3787.08
+    },
+    {
+        "text": " se podría escribir como la matriz de coeficientes por la columna de las incógnitas igual los términos independientes.",
+        "start": 3787.08,
+        "end": 3799.08
+    },
+    {
+        "text": " Lo vimos con un ejemplo pero es una proposición que funciona para cualquier sistema.",
+        "start": 3799.08,
+        "end": 3804.08
+    },
+    {
+        "text": " Entonces voy a iniciar la proposición, proposición cada sistema lineal y ahora escribo un sistema lineal cualquiera,",
+        "start": 3804.08,
+        "end": 3823.08
+    },
+    {
+        "text": " este es que es a 1, 1, x, 1, más etc., más a 1, n, x, n igual a b sub 1 hasta a m, 1, x, 1 más a m, n, x, n, etc.,",
+        "start": 3823.08,
+        "end": 3852.08
+    },
+    {
+        "text": " y ahora b sub m.",
+        "start": 3852.08,
+        "end": 3858.08
+    },
+    {
+        "text": " Cada sistema lineal es equivalente a un ecuación matricial.",
+        "start": 3858.08,
+        "end": 3864.08
+    },
+    {
+        "text": " Y tengo que escribir la ecuación matricial.",
+        "start": 3864.08,
+        "end": 3885.08
+    },
+    {
+        "text": " Es equivalente a la ecuación matricial, matriz de coeficientes a 1, 1, 1, n, a m, 1, a m, n, por la columna de las incógnitas,",
+        "start": 3885.08,
+        "end": 3910.08
+    },
+    {
+        "text": " x, 1, x, n igual a la columna de los términos independientes, b, 1, b, y ahora necesito otro marcaror.",
+        "start": 3910.08,
+        "end": 3930.08
+    },
+    {
+        "text": " Ahora, es que a ropa la ecuación, si yo hago el producto de esta matriz por esta columna, ya sabemos que una matriz por una columna me da una columna.",
+        "start": 3930.08,
+        "end": 3944.08
+    },
+    {
+        "text": " Entonces, esta bien escribir es una ecuación entre dos columnas.",
+        "start": 3944.08,
+        "end": 3949.08
+    },
+    {
+        "text": " Y el producto de esta matriz por esta columna es a 1, 1, por x, 1, más a 1, 2, por x, 2, más etc., más a 1 por x, n, que me da la primera b, etc., etc., etc.",
+        "start": 3949.08,
+        "end": 3963.08
+    },
+    {
+        "text": " ¿Qué quiere decir esto? Esto es la matriz A, esto es la matriz X, esto es la matriz B, es decir que toda ecuación de los sistemas",
+        "start": 3963.08,
+        "end": 3984.08
+    },
+    {
+        "text": " límites, todos los sistemas límites, es corresponde a una ecuación de primer grado con las matrizas. ¿Qué?",
+        "start": 3984.08,
+        "end": 3995.08
+    },
+    {
+        "text": " Entonces, esto corresponde a la filosofía alematimática, que corresponde a lo siguiente, empujar la complejidad del problema al entro del objeto.",
+        "start": 3996.08,
+        "end": 4009.08
+    },
+    {
+        "text": " Aquí, partimos de un problema complejo, muchas incógnitas, muchas ecuaciones con objetos sencillos, que son números, y transformamos este problema en un problema sencillo, una ecuación, una incóguita sobre objetos complejos.",
+        "start": 4009.08,
+        "end": 4030.08
+    },
+    {
+        "text": " Todo esto es el método alematimática de generando, el poder de abstracción de la matemática viene de es que es capaz transformar problemas complejos sobre objetos sencillos,",
+        "start": 4031.08,
+        "end": 4045.08
+    },
+    {
+        "text": " y esto nos ayuda mucho, ¿por qué nos ayuda mucho? ¿Por qué? ¿Pues es algo interesante acá?",
+        "start": 4045.08,
+        "end": 4059.08
+    },
+    {
+        "text": " Por supuesto, ustedes son mayores de él, y no realmente saben que son matrices, y que no se manipulan como los números exactamente, pero imagínense que todos y todas acá tienen un sobre y no menor, una sobre y nada, o bien un hermano menor, o bien una hermana, que está en el visión, en el colegio.",
+        "start": 4059.08,
+        "end": 4086.08
+    },
+    {
+        "text": " ¿Puedes hacer esta pregunta a su hermana, hermano, sobre y no sobre y na? ¿Cómo resolver esto? ¿Y general qué va a hacer?",
+        "start": 4087.08,
+        "end": 4096.08
+    },
+    {
+        "text": " Por supuesto lo que va a hacer es algo horrible para nosotros, va a decir fácil, tranquilo, tranquilo, ya se resolverlo, va a decir esto, ¿no?",
+        "start": 4097.08,
+        "end": 4110.08
+    },
+    {
+        "text": " Ok, ahora pido a Dios que no se en OJ, es algo pedagógico que estoy haciendo, esto es reviendo algo horrible, pero esta buena idea, por supuesto, es razón de ser las matrices,",
+        "start": 4111.08,
+        "end": 4124.08
+    },
+    {
+        "text": " el objetivo los matemáticos cuando inventaron las matrices es precisamente transformar un problema súper complicado en una ecuación de primera lado, y lo que quería hacer es dar un sentido a esta cosa.",
+        "start": 4124.08,
+        "end": 4140.08
+    },
+    {
+        "text": " El problema es que cuál es el defecto de este consciente, hay dos defectos, primera defecto no sabemos si se puede invertir dividir por A, y de mismo modo como la matemática, la multiplicación no es con mutativa, la división tampoco es con mutativa, entonces de hecho tenemos dos conscientes, tenemos este consciente que el mismo momento,",
+        "start": 4140.08,
+        "end": 4169.08
+    },
+    {
+        "text": " en general se escribe así, y el otro consciente que se puede escribir así, consciente por la izquierda, consciente por la derecha, horrible, ¿no?",
+        "start": 4170.08,
+        "end": 4188.08
+    },
+    {
+        "text": " Pero es normal, estamos en un mundo no con mutativos, son cosas naturales que aparecen, entonces esa razón de ser porque nunca vamos a usar esta escritura, demasiado complicado, yo no sé trabajar con esta escritura, esta última vez que le van a ver, ahora vamos a reinplezar por estas cosas, pero todavía nos falta dar un sentido a la noción de universo, ¿ok?",
+        "start": 4189.08,
+        "end": 4216.08
+    },
+    {
+        "text": " Ahora, entonces el objetivo es decir dar un sentido a esta notación, y si somos capaz de dar un sentido a esta notación, podríamos decir fácil, si aquí hay aquí se sigúa a B, si yo multiplico por A menos U por la izquierda y por la derecha,",
+        "start": 4217.08,
+        "end": 4237.08
+    },
+    {
+        "text": " yo obtengo que X es igual a A menos U por B y tendré la solución, cuando el método usual de primer grado, el método de colegio, ¿ok?",
+        "start": 4237.08,
+        "end": 4249.08
+    },
+    {
+        "text": " Entonces todo el objetivo de las matrices es extender los métodos de colegio a cosas que no son números, ¿cómo se define la noción de inversa?",
+        "start": 4249.08,
+        "end": 4260.08
+    },
+    {
+        "text": " ¿Cómo digo choque en Matrimagica que I es igual a X menos U? ¿Cuál es la definición de la inversa? ¿Cómo se define?",
+        "start": 4261.08,
+        "end": 4271.08
+    },
+    {
+        "text": " Sí, pero uno sobre esa misma cosa que la inversa, exactamente, el producto me da uno, esa buena definición, esa definición es el producto me da uno.",
+        "start": 4271.08,
+        "end": 4284.08
+    },
+    {
+        "text": " Acá si yo quiero extender esta cosa de las matrices, tengo dos problemas, me falta definir uno, todavía no tengo una matrices uno, tengo un acero pero no tengo la uno, y también tengo un problema de orden, ¿en qué orden?",
+        "start": 4285.08,
+        "end": 4302.08
+    },
+    {
+        "text": " ¿Ok? Entonces voy a decir uno, primera cosa voy a decir uno, y después vamos a hablar del orden, ¿entienden lo que quiero hacer?",
+        "start": 4302.08,
+        "end": 4312.08
+    },
+    {
+        "text": " Tengo que extender conceptos que se acongúsemos desde el colegio pero a objetos nuevos.",
+        "start": 4312.08,
+        "end": 4319.08
+    },
+    {
+        "text": " Ok, voy a definir la matrices y dentila, definición, matrices y dentila, se llama matrices y dentila.",
+        "start": 4319.08,
+        "end": 4338.08
+    },
+    {
+        "text": " Detamano es una matrices cuadrado, siempre hay, n por n, a la matrices, se llama I sub n, identidad, es el 1 de las matrices, sus coeficientes se llaman delta sub ij, definida por",
+        "start": 4338.08,
+        "end": 4367.08
+    },
+    {
+        "text": " la formula supersensicha, delta i sub j es igual a 1 si i es igual a j y 0 si no.",
+        "start": 4367.08,
+        "end": 4378.08
+    },
+    {
+        "text": " Ok, ahora eso necesita una explicação, ¿qué significa esto? Significa si estamos en un anional el coeficiente es 1 y en todo el resto de la matrices el coeficiente es 0.",
+        "start": 4379.08,
+        "end": 4394.08
+    },
+    {
+        "text": " Entonces, I n también se puede escribir así, es una diagonal de unos, es una matrices cuadrada y todo el resto son serros.",
+        "start": 4395.08,
+        "end": 4406.08
+    },
+    {
+        "text": " Se llama la matrices y dentila.",
+        "start": 4412.08,
+        "end": 4414.08
+    },
+    {
+        "text": " Ok, tenemos la matrices y dentila, ahora hay que verificar que es 1, se comporta como 1, cuesta propiedad de 1 en la multiplicación,",
+        "start": 4415.08,
+        "end": 4432.08
+    },
+    {
+        "text": " y cuando su multiplico algo por 1 me da el algo, tengo que verificar que lo mismo ocurre con la identidad, propiedad para toda la matrices.",
+        "start": 4433.08,
+        "end": 4447.08
+    },
+    {
+        "text": " Ah, le tamaño cualquiera tengo, se llama equivoc, es I m por A, acá es una matrices tamaño M por M, multiplicada por una matrices tamaño M por N,",
+        "start": 4448.08,
+        "end": 4469.08
+    },
+    {
+        "text": " bueno, es M por N, esto es M por N, entonces resulta lo este tipo M por N, esto es lo mismo que A, multiplicada por la identidad de tamaño N,",
+        "start": 4469.08,
+        "end": 4486.08
+    },
+    {
+        "text": " y esto ahora es una matrices tamaño M por N, por una matrices tamaño N por N, y obtenemos también M por N, y es igual a A,",
+        "start": 4487.08,
+        "end": 4498.08
+    },
+    {
+        "text": " es decir, la identidad es el 1 de las matrices, es el elemento neutro del producto, no voy a ser ascuentas, es fácil verificar que todo esto funciona.",
+        "start": 4500.08,
+        "end": 4514.08
+    },
+    {
+        "text": " Y la idea es muy sencisha, cuando yo multiplico la matrices A por un 1 acá, esto me extrae la primera columna de la matrices,",
+        "start": 4517.08,
+        "end": 4531.08
+    },
+    {
+        "text": " si yo la multiplico por 0, 1 y el resto 0, esto me extrae la segunda columna de la matrices, y después voy a extraer la tercera columna y si yo aplico primera, desorce un, etc., obtengo la misma matrices.",
+        "start": 4532.08,
+        "end": 4548.08
+    },
+    {
+        "text": " Es el truco, la matrices identidad esta matrices que no cambia es pronto, pero ojo es una matrices siempre cuadrada y A y es cimetrica o antísimetrica.",
+        "start": 4549.08,
+        "end": 4564.08
+    },
+    {
+        "text": " Es cimetrica, es una matrices y matrices, es la arquitectura de matrices y matrices, ok, es la matrices y matrices por excelencia, ok, es el neutro del producto,",
+        "start": 4566.08,
+        "end": 4577.08
+    },
+    {
+        "text": " ahora se puede definir la noción de matrices en brazo, definición matrices invertible,",
+        "start": 4578.08,
+        "end": 4595.08
+    },
+    {
+        "text": " se dice que es una matrices, cuadrada, solo las cuadradas pueden ser invertibles, es invertible,",
+        "start": 4595.08,
+        "end": 4615.08
+    },
+    {
+        "text": " cuando existe otra matrices cuadrada también de mismo tamaño, tal que, y ahora tengo un problema, tengo dos opciones posibles,",
+        "start": 4616.08,
+        "end": 4637.08
+    },
+    {
+        "text": " o bien digo yo que A por B es igual a la identidad, o bien puedo decir que B por A es igual a la identidad, que voy a hacer esto y perdido acá,",
+        "start": 4637.08,
+        "end": 4649.08
+    },
+    {
+        "text": " entonces como soy un poquito conservador y que tengo miedo voy a suponer que ambas cosas se cumple,",
+        "start": 4650.08,
+        "end": 4656.08
+    },
+    {
+        "text": " entonces la buena edifición es que cuando A es igual A B y esto lo esto es igual a la identidad, ok, digo que una matrices es invertible,",
+        "start": 4657.08,
+        "end": 4672.08
+    },
+    {
+        "text": " cuando existe una matrices B que es inverse a por la derecha y a la vez que es inverse a por la izquierda,",
+        "start": 4672.08,
+        "end": 4680.08
+    },
+    {
+        "text": " y cuando es el caso, la matrices B es única, no hay dos,",
+        "start": 4681.08,
+        "end": 4698.08
+    },
+    {
+        "text": " se llama la inversa B, D, y se describe B igual a a la menos 1, y tenemos la edifición de la hibera,",
+        "start": 4698.08,
+        "end": 4721.08
+    },
+    {
+        "text": " cuando existe y por supuesto ya sabemos que hay matrices que no son invertibles, pueden darme un ejemplo de matrices que nunca vamos a poder invertir,",
+        "start": 4722.08,
+        "end": 4732.08
+    },
+    {
+        "text": " tiene que ser cuadrada, las matrices no cuadrarás, no se podrá invertir, pero tenemos ejemplos de matrices cuadrarás que si no se puede invertir,",
+        "start": 4735.08,
+        "end": 4742.08
+    },
+    {
+        "text": " hay un ejemplo muy sencillo, hay que pensar a los gatitos como siempre, cuáles ejemplo de la matrices que nunca se podrá invertir,",
+        "start": 4743.08,
+        "end": 4750.08
+    },
+    {
+        "text": " la matrices dula, porque la nula por cualquier cosa será igual a 0, no será la identidad,",
+        "start": 4752.08,
+        "end": 4758.08
+    },
+    {
+        "text": " entonces ya sabemos que existe al menos una matrices que no se puede invertir, esa nula,",
+        "start": 4759.08,
+        "end": 4764.08
+    },
+    {
+        "text": " y el lunes que viene vamos a ver que hay un montón de matrices que no son libertines, ok, gracias.",
+        "start": 4764.08,
+        "end": 4771.08
+    }
+]
