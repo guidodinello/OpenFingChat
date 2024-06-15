@@ -89,10 +89,10 @@ def transcript():
 
     os.makedirs(BASE_PATH, exist_ok=True)
 
-    for subject_id in subject_ids[:1]:
+    for subject_id in subject_ids:
         filters = {"subjectId": ObjectId(subject_id), "transcribed": False}
         lessons = lesson_model.getAll(**filters)
-        for lesson in lessons[:1]:
+        for lesson in lessons:
             video_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp4")
             audio_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp3")
             transcription_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.json")
@@ -105,6 +105,6 @@ def transcript():
             else:
                 print("CUDA is not available. Whisper API coming soon.")
                 
-            # lesson_model.update(lesson['_id'], {"transcribed": True})
+            lesson_model.update(lesson['_id'], {"transcribed": True})
             os.remove(video_file_path)
             os.remove(audio_file_path)
