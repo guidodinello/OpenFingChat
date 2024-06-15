@@ -1,0 +1,6522 @@
+[
+    {
+        "text": " Bueno, entonces los objetivos y las clases de hoy son, vamos a hablar un par de toeremas",
+        "start": 0.0,
+        "end": 11.84
+    },
+    {
+        "text": " para calcular el radio espectral, que tiene que ver con el límite de las normas de las",
+        "start": 11.84,
+        "end": 19.580000000000002
+    },
+    {
+        "text": " matrices cuando la sucesión de matrices a la n o a la m o a s,",
+        "start": 19.580000000000002,
+        "end": 28.88
+    },
+    {
+        "text": " necesitamos un lema técnico y un teorema y todo esto no le da es interesante de por",
+        "start": 28.88,
+        "end": 33.519999999999996
+    },
+    {
+        "text": " sí porque calcula el radio espectral pero también es interesante porque ya empieza",
+        "start": 33.519999999999996,
+        "end": 37.879999999999995
+    },
+    {
+        "text": " a armar la base para el siguiente punto que es ser idea de potencia y ahí termina",
+        "start": 37.879999999999995,
+        "end": 48.879999999999995
+    },
+    {
+        "text": " la semana con ser idea de potencia hoy mismo voy a arrancar con algún ejemplo de ser idea",
+        "start": 48.879999999999995,
+        "end": 53.72
+    },
+    {
+        "text": " de potencia, es muy sencillo y el viernes vamos a dar dos resultados que tienen que ver",
+        "start": 53.72,
+        "end": 59.6
+    },
+    {
+        "text": " con eso bastante liviano, no quiero acrumarlos en las últimas clases teóricas que es de espacio",
+        "start": 59.6,
+        "end": 65.2
+    },
+    {
+        "text": " y después ya viene la sección 5 que son exponenciales de matrices esa la vamos a dejar a no",
+        "start": 65.2,
+        "end": 70.12
+    },
+    {
+        "text": " ser que realmente la necesitemos, por ejemplo para la parte de grafos estoy seguro que no",
+        "start": 70.12,
+        "end": 75.52
+    },
+    {
+        "text": " se necesites ponerse la de matrices pero si se necesiten alguna otra parte, voy, toco, saco",
+        "start": 75.52,
+        "end": 82.12
+    },
+    {
+        "text": " lo que necesite para digamos la aplicación correspondiente, ya estaríamos después de",
+        "start": 82.12,
+        "end": 91.0
+    },
+    {
+        "text": " esparcial, la sección después de esparcial empezar con el capítulo 2 que es las aplicaciones",
+        "start": 91.0,
+        "end": 97.64
+    },
+    {
+        "text": " que les contaba en economía etcétera, bueno entonces empezamos hoy la clase que el título",
+        "start": 97.64,
+        "end": 107.48
+    },
+    {
+        "text": " va a ser el le digo para las compañeros, el cálculo del radio espectral, vamos a ponerle",
+        "start": 107.48,
+        "end": 113.88000000000001
+    },
+    {
+        "text": " así, bueno recordar que nosotros tomábamos como la norma de una matrices, supongamos que",
+        "start": 113.88000000000001,
+        "end": 130.6
+    },
+    {
+        "text": " es una matrices cuadrada digamos las cuentas de hoy son todo como matrices cuadradas, la",
+        "start": 130.6,
+        "end": 138.12
+    },
+    {
+        "text": " norma se puede definir en general pero lo estoy repasando justamente para la clase de",
+        "start": 138.12,
+        "end": 143.92
+    },
+    {
+        "text": " hoy entendíamos como que esta matrices que es n por n está nc n2, no, con pacientes complejos",
+        "start": 143.92,
+        "end": 155.28
+    },
+    {
+        "text": " entonces tiene n cuadrado entre las complejas y entonces la norma es justamente tomábamos la",
+        "start": 155.28,
+        "end": 164.88
+    },
+    {
+        "text": "uclidiana, habíamos dicho ayer que cualquiera las tres y la semana pasada también cualquiera",
+        "start": 164.88,
+        "end": 170.44
+    },
+    {
+        "text": " tres funcionaba, la raiz cuadrada de la sumatoria es de igual 1 y de j igual 1 hasta n, o sea las 2 sumatorias",
+        "start": 170.44,
+        "end": 188.44
+    },
+    {
+        "text": " de igual hasta n, así que prefieres notarlo así o prefieres notarlo así, o igual 1 n, j igual 1 n",
+        "start": 188.44,
+        "end": 196.07999999999998
+    },
+    {
+        "text": " como quieran, como estas entradas son complejos tenemos que tomar su módulo, la",
+        "start": 196.64000000000001,
+        "end": 206.8
+    },
+    {
+        "text": " módulo de cuadrado, la raiz cuadrada de la sumatoria esto, y estos elementos de cuadrado, esa es la",
+        "start": 206.8,
+        "end": 216.96
+    },
+    {
+        "text": " normauclidiana pero podemos haber tomado la norma del máximo o la norma de la suma,",
+        "start": 216.96,
+        "end": 223.92000000000002
+    },
+    {
+        "text": " yo va a hacer, yo va a pensar como esa la demostración, la demostración que está en el libro,",
+        "start": 224.92,
+        "end": 230.6
+    },
+    {
+        "text": " sobre todo para aquellos que están en el epifín y quiera ir mirando el libro, yo estuve pensando",
+        "start": 230.6,
+        "end": 236.23999999999998
+    },
+    {
+        "text": " a otras dos demostraciones usando las equivalencias entre las tres normas, la de la suma, la de la de la",
+        "start": 236.23999999999998,
+        "end": 246.0
+    },
+    {
+        "text": " suma, cual era la otra que hicimos ya la del máximo era y lauclidiano, y estuve repasando",
+        "start": 246.0,
+        "end": 255.68
+    },
+    {
+        "text": " como estas las cuentas rápidamente para mostrarles que eran las tres equivalencias, y esa era una",
+        "start": 255.68,
+        "end": 261.72
+    },
+    {
+        "text": " demostración bastante sencilla pero después dije no voy a ir directamente a la demostración que",
+        "start": 261.72,
+        "end": 265.76
+    },
+    {
+        "text": " están en el libro porque para que puedan ir y revisar la demostración y contrastar lo que",
+        "start": 265.76,
+        "end": 273.32
+    },
+    {
+        "text": " están en el pizarrón con lo que están en el libro o lo que están en el epifín, cuando están en el libro.",
+        "start": 273.5,
+        "end": 276.78
+    },
+    {
+        "text": " Así que vamos a hacer la demostración del libro. Entonces es la normauclidiana de cualquier",
+        "start": 276.78,
+        "end": 282.88
+    },
+    {
+        "text": " matriz, ya lo habíamos dicho, aparece en el práctico esto ya, y entonces el teorema central,",
+        "start": 282.88,
+        "end": 292.76
+    },
+    {
+        "text": " lo que voy a hacer es la misma que la que está en el libro, voy a plantear el teorema,",
+        "start": 292.76,
+        "end": 297.03999999999996
+    },
+    {
+        "text": " voy a hacer la demostración del teorema, siendo que en el medio aparece un resultado necesario y ese",
+        "start": 297.76000000000005,
+        "end": 306.48
+    },
+    {
+        "text": " resultado lo voy a llamar lema técnico y lo vamos a demostrar después, lo aceptamos durante la",
+        "start": 306.48,
+        "end": 310.72
+    },
+    {
+        "text": " demostración del teorema y lo demostramos después, es un limito tengo. Las dos demostraciones son una",
+        "start": 310.72,
+        "end": 317.36
+    },
+    {
+        "text": " belleza pero en particular el lema técnico es una belleza en la demostración matemática en",
+        "start": 317.36,
+        "end": 323.8
+    },
+    {
+        "text": " sí, es muy muy bonito. Entonces el teorema lo que dice es así, tomamos una matriz cuadrada",
+        "start": 323.8,
+        "end": 332.92
+    },
+    {
+        "text": " con coficitis complejos, que repito decir una matriz cuadrada, es lo mismo que decir, lo vamos a",
+        "start": 335.40000000000003,
+        "end": 342.2
+    },
+    {
+        "text": " ver como un matriz, o lo vamos a ver también como un victor de enel cuadrado, este entrada,",
+        "start": 342.2,
+        "end": 351.2
+    },
+    {
+        "text": " está, y lo mismo, acá o acá, a veces lo vamos a ver como un matriz, ya sabemos que es lo",
+        "start": 351.2,
+        "end": 359.84
+    },
+    {
+        "text": " mismo y simplemente como lo está sanotando, como un matriz o todo, de hecho esta norma es la norma",
+        "start": 359.84,
+        "end": 369.36
+    },
+    {
+        "text": " del victor de enel cuadrado entradas, la norma colidiana, bueno entonces lo que dice aquí",
+        "start": 369.36,
+        "end": 378.08
+    },
+    {
+        "text": " este teorema es que el radio espectral se calcula exactamente como el límite cuando ese tiene",
+        "start": 378.08,
+        "end": 387.32
+    },
+    {
+        "text": " más infinito de la raíz, ese esima de la norma de a la s, a ver ya lo que dice es y es impresionante,",
+        "start": 387.32,
+        "end": 398.15999999999997
+    },
+    {
+        "text": " aquí digamos una pausa me remito al ejercicio 6 del práctico 4, el último ejercicio del último",
+        "start": 399.04,
+        "end": 410.24
+    },
+    {
+        "text": " práctico que dice cómo usar la sucesión de matrices a la s, la sucesión de potencias de una",
+        "start": 410.24,
+        "end": 420.16
+    },
+    {
+        "text": " matriz a la s para calcular la radi espectral, no es este el objetivo, este es otro, ese es más fácil,",
+        "start": 420.16,
+        "end": 427.76000000000005
+    },
+    {
+        "text": " se supone que es otra forma más fácil, que es la que en realidad digamos muchas veces aparece",
+        "start": 427.76000000000005,
+        "end": 434.40000000000003
+    },
+    {
+        "text": " como se calcula en biología en estadística, no sé si es más fácil, por lo menos es la más",
+        "start": 434.40000000000003,
+        "end": 440.16
+    },
+    {
+        "text": " abistuja, después que tengamos este resultado ya sabemos, pum, tremendous potencia del teorema",
+        "start": 440.16,
+        "end": 446.0
+    },
+    {
+        "text": " pero bueno el objetivo es descubrir otro camino para encontrar el radio espectral,",
+        "start": 446.88,
+        "end": 450.8
+    },
+    {
+        "text": " usando la sucesión de matrices a la s, este, no hay que, la idea es ingeniarse la en ese",
+        "start": 450.8,
+        "end": 462.2
+    },
+    {
+        "text": " ejercicio 6 del práctico, bueno acá es tremende teorema, lo que dice es así se calcula el",
+        "start": 462.2,
+        "end": 468.24
+    },
+    {
+        "text": " radios espectral, vamos a repasar el radio espectral que era el mayor de los módulos de los valores",
+        "start": 468.8,
+        "end": 474.64
+    },
+    {
+        "text": " propios, el valor propio es más grande digamos, solo que hoy ojo con decir más grande porque",
+        "start": 474.64,
+        "end": 480.16
+    },
+    {
+        "text": " lo valor de propio son números complejos y bueno podés comparar números complejos así",
+        "start": 480.16,
+        "end": 483.8
+    },
+    {
+        "text": " no más, cuál es más grande, este o este no, como complejo no es ninguno más grande, el módulo",
+        "start": 483.8,
+        "end": 491.08
+    },
+    {
+        "text": " es más grande, entonces voy a comparar los módulos, este radio espectral es el,",
+        "start": 491.08,
+        "end": 496.84
+    },
+    {
+        "text": " es el máximo de los módulos de los valores propios, y otra manera, todos los valores propios",
+        "start": 501.47999999999996,
+        "end": 509.91999999999996
+    },
+    {
+        "text": " están adentro del círculo que tiene como radio, este radio, están adentro, todos los valores",
+        "start": 509.91999999999996,
+        "end": 517.52
+    },
+    {
+        "text": " propios están adentro, bueno entonces la demostración es muy muy bonita, está y la",
+        "start": 517.52,
+        "end": 526.6
+    },
+    {
+        "text": " el lema aún más todavía por lo menos mi maravillón, la demostración, vamos a la demostración",
+        "start": 526.6,
+        "end": 535.28
+    },
+    {
+        "text": " esto, esto es el objetivo de hoy es esto, el lema técnico que no va a llevar un buen rato",
+        "start": 535.28,
+        "end": 539.76
+    },
+    {
+        "text": " a entender bien las demostraciones y comenzar con ser hipotécios, objetivos muy concretos,",
+        "start": 539.76,
+        "end": 544.48
+    },
+    {
+        "text": " como siempre ya sabemos que para demostrar estas cosas para eso y si moshordan nos basamos en el",
+        "start": 545.36,
+        "end": 552.6
+    },
+    {
+        "text": " gran truco, este de tener la forma de llorda asuciada, este dicho se da paso ayer cuando en",
+        "start": 552.6,
+        "end": 561.72
+    },
+    {
+        "text": " práctico les comenté muy del pasar sobre el final de la clase cual era la forma de llordan",
+        "start": 561.72,
+        "end": 568.52
+    },
+    {
+        "text": " cuando cuando cuerpo no es aggeráicamente cerrado, no es la hice, no es la hice muy prolija,",
+        "start": 568.52,
+        "end": 573.5600000000001
+    },
+    {
+        "text": " parece medio de prelijo pero lo voy a poner mejor en el Eva para que quede clarito,",
+        "start": 573.56,
+        "end": 577.7199999999999
+    },
+    {
+        "text": " esta en el libro por supuesto pero no quedó muy bien, pero nada más, es un comentario del",
+        "start": 577.7199999999999,
+        "end": 586.64
+    },
+    {
+        "text": " pasado, entonces nos basamos de vuelta en el bueno en todo lo que hemos construido, todo lo que",
+        "start": 586.64,
+        "end": 594.52
+    },
+    {
+        "text": " hemos mostrado respecto de la forma de llordan y esta de la forma de llordan asuciada por supuesto",
+        "start": 594.52,
+        "end": 600.3199999999999
+    },
+    {
+        "text": " y lo primero es recordar esto ¿no? ¿qué pasa con los radios espectrales?",
+        "start": 600.88,
+        "end": 608.24
+    },
+    {
+        "text": " ¿cómo estamos?",
+        "start": 616.08,
+        "end": 616.8000000000001
+    },
+    {
+        "text": " el día a y el el jodadía ¿por qué se nivó?",
+        "start": 618.5600000000001,
+        "end": 622.88
+    },
+    {
+        "text": " claro, exactamente también y por qué compartimos malores propios",
+        "start": 622.88,
+        "end": 627.5200000000001
+    },
+    {
+        "text": " porque son semejantes, exactamente, dos matrices semejantes tienen los mismos valores propios,",
+        "start": 628.52,
+        "end": 632.92
+    },
+    {
+        "text": " entonces el más grande del valor de propio es el módulo, teniendo cuidado, digamos de ahora más",
+        "start": 632.92,
+        "end": 639.28
+    },
+    {
+        "text": " más grande el valor de propios, pero teniendo cuidado que no son los valores propios y no el módulo",
+        "start": 639.28,
+        "end": 643.1999999999999
+    },
+    {
+        "text": " pero a veces el lenguaje coloquiais sin todos lo que estamos diciendo no pasa nada, lo podemos",
+        "start": 643.1999999999999,
+        "end": 650.72
+    },
+    {
+        "text": " decir así, bueno muy bien, entonces tienen el mismo radio espectral, buenísimo,",
+        "start": 650.72,
+        "end": 656.52
+    },
+    {
+        "text": " sí, ¿recorde? recordemos que el radio espectral de A y si igual el radio espectral de",
+        "start": 657.0799999999999,
+        "end": 669.36
+    },
+    {
+        "text": " jodadía ¿no? primer idea de que entonces como siempre hacemos todas las demostraciones",
+        "start": 669.36,
+        "end": 677.52
+    },
+    {
+        "text": " terminamos pasando el problema a jodadía, o sea ¿qué les vamos a temer aprobando?",
+        "start": 677.52,
+        "end": 683.76
+    },
+    {
+        "text": " que el radio espectral de jodadía es igual al límite del la raíz esésima de la norma de jodadía",
+        "start": 684.3199999999999,
+        "end": 693.48
+    },
+    {
+        "text": " suala y vamos a terminar probando que son todos iguales, los cuatro, los cuatro, este con este y este con",
+        "start": 693.48,
+        "end": 700.3199999999999
+    },
+    {
+        "text": " este con todo, entonces al final de cuenta por ahí pasar a la cosa, pasando de la pelota jodadía",
+        "start": 700.3199999999999,
+        "end": 706.56
+    },
+    {
+        "text": " pero claro necesitamos probar que esta ya les sabemos, pero tenemos que hacer cuentas de este lado",
+        "start": 706.56,
+        "end": 711.36
+    },
+    {
+        "text": " bueno muy bien, entonces hasta aquí tendíamos que probar",
+        "start": 712.36,
+        "end": 721.72
+    },
+    {
+        "text": " que rode jodadía es igual a ese límite",
+        "start": 729.72,
+        "end": 733.32
+    },
+    {
+        "text": " bueno, aquí entonces es que yo voy a citar por acá en esta esquina le maté en",
+        "start": 742.36,
+        "end": 749.64
+    },
+    {
+        "text": " límite que vamos a demostrar más tarde y lo que dice el límite es justamente una de las",
+        "start": 749.64,
+        "end": 767.52
+    },
+    {
+        "text": " aristas de secuadrado de equivalencias que el límite cuando ese tiene más infinito de la",
+        "start": 767.52,
+        "end": 777.4399999999999
+    },
+    {
+        "text": " raíz esésima de la raíz es igual al límite cuando ese tiene más infinito de la raíz esésima",
+        "start": 777.44,
+        "end": 787.24
+    },
+    {
+        "text": " de la norma de jodadía suala y entonces decíamos tenemos rode j algún dibujo",
+        "start": 789.44,
+        "end": 799.5200000000001
+    },
+    {
+        "text": " si quieren por fuera de la demostración o si quieren por no lo adentro de la demostración",
+        "start": 801.2800000000001,
+        "end": 804.9200000000001
+    },
+    {
+        "text": " tenemos rode a sabemos que esto es igual a rode jodadía",
+        "start": 804.92,
+        "end": 809.4799999999999
+    },
+    {
+        "text": " el lema técnico ese me dice lo pongo el rojo para que el límite",
+        "start": 816.4799999999999,
+        "end": 824.3199999999999
+    },
+    {
+        "text": " de la raíz esésima de la norma de jodadía suala esés, donde se tiene más infinito es igual",
+        "start": 824.32,
+        "end": 836.32
+    },
+    {
+        "text": " es el límite al límite cuando ese tiene más infinito de la raíz esésima de la norma de la",
+        "start": 836.32,
+        "end": 847.96
+    },
+    {
+        "text": " raíz lo que quiero probar está acá esto es lo que quiero probar y entonces lo que vamos a",
+        "start": 847.96,
+        "end": 861.08
+    },
+    {
+        "text": " hacer ahora dentro de esta aceptemos el lema técnico lo vamos a mostrar esta parte si",
+        "start": 861.08,
+        "end": 866.32
+    },
+    {
+        "text": " mostramos esta parte tenemos la igual de arriba está bien entonces nos vamos a bocar a este",
+        "start": 866.32,
+        "end": 873.4000000000001
+    },
+    {
+        "text": " vuelta este es nuestro objetivo ahora dentro del del torem muy bien entonces lo pongo",
+        "start": 873.4,
+        "end": 888.16
+    },
+    {
+        "text": " por acá y lo pongo una arranja para que lo vea objetivo es probar que rode jodadía sua es igual",
+        "start": 888.16,
+        "end": 901.4
+    },
+    {
+        "text": " al límite si finito la raíz esésima de jodad suala esés, pues por suerte la matriz de",
+        "start": 901.4,
+        "end": 914.72
+    },
+    {
+        "text": " sordas las conocemos bien y tienen un excelente comportamiento etcétera estamos trabajando en",
+        "start": 914.72,
+        "end": 921.76
+    },
+    {
+        "text": " lo complejo lo primero es la jodad sua vamos a recordar los juntos a ver cómo era esto de",
+        "start": 921.76,
+        "end": 932.4399999999999
+    },
+    {
+        "text": " la jodad suala forma de sorda tenía muchos bloques de sorda asociados a los diferentes valores",
+        "start": 932.4399999999999,
+        "end": 941.64
+    },
+    {
+        "text": " propios para un valor propio podrían aparecer varios bloques de sorda en tinto más grande más",
+        "start": 941.64,
+        "end": 947.24
+    },
+    {
+        "text": " y después venía el otro valor propio con diferentes bloques de sorda ni así no verdad ahora",
+        "start": 948.24,
+        "end": 954.24
+    },
+    {
+        "text": " hay un valor propio hay un valor propio que es el que te da por lo menos hay uno capaz que",
+        "start": 954.24,
+        "end": 960.24
+    },
+    {
+        "text": " justo hay más de uno pero en principio hay uno que te da al radi espectral hay un valor propio",
+        "start": 960.24,
+        "end": 967.24
+    },
+    {
+        "text": " cuyo módulo es el más grande ojo puede haber muchos en principio pero hay uno por lo menos",
+        "start": 967.24,
+        "end": 973.08
+    },
+    {
+        "text": " que a ese le vamos a llamar a ese valor propio le vamos a llamar para poner la misma",
+        "start": 973.08,
+        "end": 979.48
+    },
+    {
+        "text": " notación le puse lambda entonces si tomamos lambda valor propio tal que el módulo de lambda",
+        "start": 979.48,
+        "end": 992.6800000000001
+    },
+    {
+        "text": " es el radi espectral de uno hay entonces se están de acuerdo que la matriz de sorda la",
+        "start": 992.68,
+        "end": 1006.88
+    },
+    {
+        "text": " poscribir como jodad su té de lambda más j 1 a ver si estoy si lo llamé o sea la matriz de",
+        "start": 1006.88,
+        "end": 1026.4
+    },
+    {
+        "text": " sorda tiene una parte que está asociada a la lambda y la otra parte que no está asociada",
+        "start": 1026.4,
+        "end": 1031.48
+    },
+    {
+        "text": " a la lambda simplemente hay uno que tiene valor propio entonces se le pongo separado se acuerda",
+        "start": 1031.48,
+        "end": 1038.08
+    },
+    {
+        "text": " como era la suma direita cada uno de su mundo es el que hemos hablado muchas veces o sea que la jota",
+        "start": 1038.08,
+        "end": 1043.68
+    },
+    {
+        "text": " su uno no tiene que ver con lambda es eso pero es una matriz de sorda también tiene una forma de",
+        "start": 1043.68,
+        "end": 1049.16
+    },
+    {
+        "text": " yo entonces este truco le hemos hecho muchas veces cuantos las jotas va a la s que es una",
+        "start": 1049.16,
+        "end": 1057.68
+    },
+    {
+        "text": " de las cosas que tengo que calcular sea la cuanto a la jota suala es si cada uno está en su",
+        "start": 1057.68,
+        "end": 1063.52
+    },
+    {
+        "text": " mundo",
+        "start": 1063.52,
+        "end": 1063.88
+    },
+    {
+        "text": " exactamente jota uno a la es cada uno en su mundo no ya está eso es muy importante porque esa de",
+        "start": 1071.92,
+        "end": 1079.2
+    },
+    {
+        "text": " las trucos más importantes que nos deja hacer las cuentas por separado bueno vamos a ponerle",
+        "start": 1079.2,
+        "end": 1087.3200000000002
+    },
+    {
+        "text": " o sea si yo quiero calcular normas no tiene que tener que calcular normas por toda la parte",
+        "start": 1087.32,
+        "end": 1092.72
+    },
+    {
+        "text": " normal a la a la jota sua a la s le voy a poner este cuantos van en los coeficientes digamos o sea",
+        "start": 1092.72,
+        "end": 1102.1599999999999
+    },
+    {
+        "text": " un nombre a los coeficientes",
+        "start": 1102.1599999999999,
+        "end": 1104.28
+    },
+    {
+        "text": " este para poder hablar de la norma",
+        "start": 1107.8799999999999,
+        "end": 1111.56
+    },
+    {
+        "text": " la jota suala es que se sabemos cómo se comporta a los coeficientes lo llamo",
+        "start": 1112.56,
+        "end": 1118.32
+    },
+    {
+        "text": " beso y jota suprase porque suprase porque para cada nivel de potencia tengo coeficientes",
+        "start": 1118.32,
+        "end": 1126.08
+    },
+    {
+        "text": " otro nivel de potencia otro coeficiente no verdad tengo tres variables la de la fila la de la",
+        "start": 1126.08,
+        "end": 1131.44
+    },
+    {
+        "text": " columna y en qué matriz estoy si estoy en jota cuadrado jota cubo etc.",
+        "start": 1131.44,
+        "end": 1136.8
+    },
+    {
+        "text": " no ha complicado por ahora ahora le pregunto a ustedes cuánto vale tiene que usar toda la",
+        "start": 1137.8,
+        "end": 1147.8799999999999
+    },
+    {
+        "text": " información que está en este pedacito acá cuánto vale este beso y y si uno menor igual que",
+        "start": 1147.8799999999999,
+        "end": 1156.68
+    },
+    {
+        "text": " cuánto vale muy bien por qué",
+        "start": 1166.8,
+        "end": 1171.24
+    },
+    {
+        "text": " y me parece no termine el té no termine el té o sea que sólo estoy mirando la parte que corresponde",
+        "start": 1175.8,
+        "end": 1183.28
+    },
+    {
+        "text": " a la banda hasta ahí entonces esto es la banda la es muy bien bueno en particular",
+        "start": 1183.28,
+        "end": 1198.04
+    },
+    {
+        "text": " una pregunta antes de seguir toda la matemática la van a entender que se los prometo y es muy bonita",
+        "start": 1203.24,
+        "end": 1209.52
+    },
+    {
+        "text": " pero todos los que están acá tienen salvado o bueno se hicieron calculados",
+        "start": 1209.52,
+        "end": 1215.04
+    },
+    {
+        "text": " Alexandra pues y Kayla se va",
+        "start": 1216.52,
+        "end": 1225.24
+    },
+    {
+        "text": " se tiene que apuenta segundo no me se vacía así no me equivoco para mí se va y sentía",
+        "start": 1228.52,
+        "end": 1234.36
+    },
+    {
+        "text": " o sea no me voy a decir de culí siempre rosado y gelete para mirar también en fin",
+        "start": 1234.36,
+        "end": 1241.36
+    },
+    {
+        "text": " hay algunos que juegan a las gedres y cuando anotan no se confunden la de con la e o la f3",
+        "start": 1244.76,
+        "end": 1251.8799999999999
+    },
+    {
+        "text": " con c6 o f3 con f6 y cd por si en la simetría se esté",
+        "start": 1251.8799999999999,
+        "end": 1259.08
+    },
+    {
+        "text": " sobre todo en el pimpón que ya está se tiene que ver una taja cualquier cosa bueno me",
+        "start": 1259.6399999999999,
+        "end": 1266.1599999999999
+    },
+    {
+        "text": " pasan esas cosas que voy a hacer perdón sentíamos bueno en particular urises este acabamos a meter",
+        "start": 1266.1599999999999,
+        "end": 1272.96
+    },
+    {
+        "text": " un montón de cuentas de cálculo de cálculos como no es para requisito las tengo más o menos",
+        "start": 1272.96,
+        "end": 1278.96
+    },
+    {
+        "text": " preparada para que todo el mundo las pueda ver con con cuidad creo que para próximas ediciones",
+        "start": 1278.96,
+        "end": 1284.96
+    },
+    {
+        "text": " cálculos va a ser para requisito porque hay mucha matemática que se basa en eso lo que se",
+        "start": 1284.96,
+        "end": 1290.8
+    },
+    {
+        "text": " vi un cálculos cálculos varios variables entonces la norma de j suave a la s es por definición",
+        "start": 1290.8,
+        "end": 1300.04
+    },
+    {
+        "text": " lo que tenemos hacia arriba la raíz cuadrada de la sumatoria en y en j lo lo escribo más",
+        "start": 1300.04,
+        "end": 1310.44
+    },
+    {
+        "text": " chiquitito o sea que lo decir más chiquitito con menos notación al cuadrado vean por favor no",
+        "start": 1310.44,
+        "end": 1318.28
+    },
+    {
+        "text": " hice otra cosa que poner lo que es la norma ya que tenemos los como se anotan los conficientes de",
+        "start": 1318.28,
+        "end": 1324.1200000000001
+    },
+    {
+        "text": " j suave a la s la puse no puse más nada que eso en vez de poner todo igual uno hasta n de j",
+        "start": 1324.1200000000001,
+        "end": 1330.02
+    },
+    {
+        "text": " puse variando y j",
+        "start": 1330.02,
+        "end": 1331.76
+    },
+    {
+        "text": " ahora que pasa nosotros algunos los conocemos",
+        "start": 1334.72,
+        "end": 1337.48
+    },
+    {
+        "text": " los ves huir eso que están ahí los conocemos entonces esto es mayor igual",
+        "start": 1338.08,
+        "end": 1344.96
+    },
+    {
+        "text": " que la sumatoria desde igual uno hasta t",
+        "start": 1348.6,
+        "end": 1355.0
+    },
+    {
+        "text": " de ró de j suave a la dos es un mes yo lo escribo así desde hoy 30 segundos",
+        "start": 1357.1200000000001,
+        "end": 1367.24
+    },
+    {
+        "text": " mientras corris jota porque le cambió una notación al libro y entonces a veces puse la",
+        "start": 1367.24,
+        "end": 1373.32
+    },
+    {
+        "text": " libro",
+        "start": 1373.32,
+        "end": 1373.56
+    },
+    {
+        "text": " quién me la explica esa",
+        "start": 1380.4,
+        "end": 1381.72
+    },
+    {
+        "text": " se le pregunté a Sara le podría preguntar a Kevin",
+        "start": 1384.92,
+        "end": 1387.6
+    },
+    {
+        "text": " es bastante sencillo no este se usa todo lo que te pito arriba",
+        "start": 1389.6,
+        "end": 1393.64
+    },
+    {
+        "text": " quewin",
+        "start": 1397.74,
+        "end": 1404.6
+    },
+    {
+        "text": " que son ten",
+        "start": 1412.2,
+        "end": 1422.06
+    },
+    {
+        "text": " y te agarras que landa, a veces disculpen, a veces.",
+        "start": 1422.06,
+        "end": 1428.0
+    },
+    {
+        "text": " ¿De más pero bueno está todo?",
+        "start": 1428.0,
+        "end": 1429.3
+    },
+    {
+        "text": " Disculpen, norma y módulo sabemos que a veces se nota así o si se nota así.",
+        "start": 1429.3,
+        "end": 1433.46
+    },
+    {
+        "text": " Si quieren voy a tratar de ser cuidadoso de que cuando se un número complejo le pongo",
+        "start": 1433.46,
+        "end": 1437.78
+    },
+    {
+        "text": " así y cuando la matriz le pongo así, pero cuántos libros el módulo aparece así,",
+        "start": 1437.78,
+        "end": 1444.86
+    },
+    {
+        "text": " montón de libros, o sea, por eso simplemente trataré de cuidar para que no se me marejen",
+        "start": 1444.86,
+        "end": 1450.58
+    },
+    {
+        "text": " más pero es correcto de la manera.",
+        "start": 1450.58,
+        "end": 1452.78
+    },
+    {
+        "text": " ¿Se le parejiste por el resistir?",
+        "start": 1452.78,
+        "end": 1455.58
+    },
+    {
+        "text": " La sumatoria es para la manera que lo que le habla y lo que le lo que le da es para",
+        "start": 1455.58,
+        "end": 1461.58
+    },
+    {
+        "text": " la diagonal de ahí.",
+        "start": 1461.58,
+        "end": 1462.58
+    },
+    {
+        "text": " Exactamente, o sea, me olvidé de 400 mil sumando, me olvidé casi todo lo sumando,",
+        "start": 1462.58,
+        "end": 1468.1
+    },
+    {
+        "text": " sólo puse estos.",
+        "start": 1468.1,
+        "end": 1469.58
+    },
+    {
+        "text": " Y estos, como están en norma, la norma de la onda, la esa, la norma de la onda, la",
+        "start": 1469.58,
+        "end": 1478.98
+    },
+    {
+        "text": " esa, el mismo, la norma de la onda, la esa, la norma de la onda, la esa, el mismo.",
+        "start": 1478.98,
+        "end": 1485.98
+    },
+    {
+        "text": " ¿Cierto?",
+        "start": 1485.98,
+        "end": 1487.98
+    },
+    {
+        "text": " Porque la norma es multiplicativo.",
+        "start": 1487.98,
+        "end": 1493.98
+    },
+    {
+        "text": " Entonces fue lo que hice y claro, como la norma de la onda es rodea, sí lo ven.",
+        "start": 1493.98,
+        "end": 1502.98
+    },
+    {
+        "text": " ¿Cómo es la tu nombre?",
+        "start": 1502.98,
+        "end": 1505.98
+    },
+    {
+        "text": " ¿Qué es la Sebastián?",
+        "start": 1505.98,
+        "end": 1507.98
+    },
+    {
+        "text": " ¿Qué es tu culpa?",
+        "start": 1507.98,
+        "end": 1509.98
+    },
+    {
+        "text": " ¿Qué es la un poco?",
+        "start": 1509.98,
+        "end": 1512.98
+    },
+    {
+        "text": " ¿Lo ves ahí Sebastián?",
+        "start": 1512.98,
+        "end": 1514.98
+    },
+    {
+        "text": " ¿Seguro?",
+        "start": 1514.98,
+        "end": 1515.98
+    },
+    {
+        "text": " Entonces me olvidé un montón de sumando de hecho, lo que hice me olvidé un montón de sumando.",
+        "start": 1515.98,
+        "end": 1520.98
+    },
+    {
+        "text": " Ahora ahí, este numerista no depende de nadie, o sea, ese mismo nombre que lo está",
+        "start": 1520.98,
+        "end": 1526.34
+    },
+    {
+        "text": " sumando tal vez en un número, rodear, rodear, rodear a la docesa, ¿no?",
+        "start": 1526.34,
+        "end": 1530.98
+    },
+    {
+        "text": " Que es la parada de la docesa, entonces esto es Tvs ese número, pero después tengo que",
+        "start": 1530.98,
+        "end": 1540.6200000000001
+    },
+    {
+        "text": " sacar la rey cuadrada también ¿no?",
+        "start": 1540.6200000000001,
+        "end": 1543.8600000000001
+    },
+    {
+        "text": " Entonces esto es rey cuadrada dT, porque Tvs este número, por lo de j...",
+        "start": 1543.8600000000001,
+        "end": 1554.98
+    },
+    {
+        "text": " ...a la s.",
+        "start": 1554.98,
+        "end": 1558.98
+    },
+    {
+        "text": " Está bien así, porque está el cuadrado y está en un medio, entonces se van eso, sí.",
+        "start": 1559.98,
+        "end": 1570.98
+    },
+    {
+        "text": " El rey de Tv, porque son Tvs.",
+        "start": 1570.98,
+        "end": 1573.98
+    },
+    {
+        "text": " Te queda T por rey de A, la docesa.",
+        "start": 1573.98,
+        "end": 1576.98
+    },
+    {
+        "text": " Está bien, bueno, pero yo no tengo que calcular esto, yo tengo que calcular la rey ssima de...",
+        "start": 1576.98,
+        "end": 1583.98
+    },
+    {
+        "text": " entonces le metemos la rey ssima, hacemos la rey ssima de j sua a la s.",
+        "start": 1583.98,
+        "end": 1592.98
+    },
+    {
+        "text": " Está claro que me estoy manejando en los positivos ¿no?",
+        "start": 1592.98,
+        "end": 1597.98
+    },
+    {
+        "text": " O sea, cuando yo ya tome la norma, cuando tome los módulos, todo me estoy manejando en los",
+        "start": 1597.98,
+        "end": 1603.98
+    },
+    {
+        "text": " positivos, o sea, acá no tengo ningún lío con la rey s cuadrada ni la desigualdad.",
+        "start": 1603.98,
+        "end": 1608.98
+    },
+    {
+        "text": " Yo meto la rey ssima y acá tengo una cadena de desigualdades, la rey ssima de esta parte",
+        "start": 1609.98,
+        "end": 1614.98
+    },
+    {
+        "text": " va a ser mayor igual que la rey ssima de esta parte ¿no?",
+        "start": 1614.98,
+        "end": 1618.98
+    },
+    {
+        "text": " Está bien.",
+        "start": 1618.98,
+        "end": 1620.98
+    },
+    {
+        "text": " Bien, entonces esto queda mayor igual, están de acuerdo que...",
+        "start": 1623.98,
+        "end": 1629.98
+    },
+    {
+        "text": " que el rey de T es lo mismo que escribirte en la un medio ¿no?",
+        "start": 1632.98,
+        "end": 1635.98
+    },
+    {
+        "text": " Y entonces la rey ssima de rey de T lo mismo que escribirte en la un medio sobre la dosa,",
+        "start": 1636.98,
+        "end": 1641.98
+    },
+    {
+        "text": " la s y lo para escribirlo más córdeo ¿no?",
+        "start": 1641.98,
+        "end": 1644.98
+    },
+    {
+        "text": " T en la un medio sobre doses, en la rey s, doses, s, ¿no?",
+        "start": 1644.98,
+        "end": 1648.98
+    },
+    {
+        "text": " Está más fácil y acá se fue, me queda...",
+        "start": 1648.98,
+        "end": 1653.98
+    },
+    {
+        "text": " ...la ir en el radio de este tráneo.",
+        "start": 1653.98,
+        "end": 1656.98
+    },
+    {
+        "text": " Ahora, el T, esta es un número fijo,",
+        "start": 1659.98,
+        "end": 1664.98
+    },
+    {
+        "text": " el T es el... usted me dijo, es el tamaño del bloque de ssora, esta fijo.",
+        "start": 1664.98,
+        "end": 1670.98
+    },
+    {
+        "text": " Cuando ese tiene infinito, ¿cuánto tiene esto?",
+        "start": 1671.98,
+        "end": 1674.98
+    },
+    {
+        "text": " Mica.",
+        "start": 1674.98,
+        "end": 1676.98
+    },
+    {
+        "text": " ¿A cuánto?",
+        "start": 1677.98,
+        "end": 1679.98
+    },
+    {
+        "text": " Sí, sí, depende de T, pero es un número...",
+        "start": 1680.98,
+        "end": 1683.98
+    },
+    {
+        "text": " Es un tamaño, es un número natural todos tres días, no sé,",
+        "start": 1683.98,
+        "end": 1687.98
+    },
+    {
+        "text": " sólo que el S tiene infinito.",
+        "start": 1688.98,
+        "end": 1690.98
+    },
+    {
+        "text": " A uno, perfecto.",
+        "start": 1691.98,
+        "end": 1693.98
+    },
+    {
+        "text": " Entonces, lo que sacamos es que el límite,",
+        "start": 1694.98,
+        "end": 1699.98
+    },
+    {
+        "text": " cuando ese tiene más infinito de la rey ssima,",
+        "start": 1699.98,
+        "end": 1704.98
+    },
+    {
+        "text": " de j sua a la s es mayor igual,",
+        "start": 1704.98,
+        "end": 1708.98
+    },
+    {
+        "text": " porque acá tomo límite también ¿no?",
+        "start": 1708.98,
+        "end": 1710.98
+    },
+    {
+        "text": " ¿no? ¿no? ¿no? ¿no? ¿no? ¿no? ¿no?",
+        "start": 1710.98,
+        "end": 1712.98
+    },
+    {
+        "text": " ¿no? ¿no? ¿no? ¿no? ¿no?",
+        "start": 1712.98,
+        "end": 1714.98
+    },
+    {
+        "text": " Pero este...",
+        "start": 1714.98,
+        "end": 1716.98
+    },
+    {
+        "text": " Todo esto tendió a uno, uno por rode jodadiano, que dos rode jodadiano.",
+        "start": 1717.98,
+        "end": 1720.98
+    },
+    {
+        "text": " Y acá tenemos la primera desigualdad.",
+        "start": 1721.98,
+        "end": 1723.98
+    },
+    {
+        "text": " ¿cierto?",
+        "start": 1725.98,
+        "end": 1726.98
+    },
+    {
+        "text": " El objetivo en anaja pide probar una igualdad entre esos dos números.",
+        "start": 1726.98,
+        "end": 1731.98
+    },
+    {
+        "text": " Alcansamos una desigualdad.",
+        "start": 1731.98,
+        "end": 1734.98
+    },
+    {
+        "text": " Y ahora vamos a probar la otra desigualdad.",
+        "start": 1735.98,
+        "end": 1737.98
+    },
+    {
+        "text": " Y con eso tenemos el objetivo en anaja ¿no?",
+        "start": 1739.98,
+        "end": 1742.98
+    },
+    {
+        "text": " Para la otra desigualdad es lo que yo les decía,",
+        "start": 1743.98,
+        "end": 1746.98
+    },
+    {
+        "text": " estoy pensando,",
+        "start": 1746.98,
+        "end": 1747.98
+    },
+    {
+        "text": " si hacerla cambiando de la norma,",
+        "start": 1748.98,
+        "end": 1751.98
+    },
+    {
+        "text": " quedaba muy cortita y bonita,",
+        "start": 1751.98,
+        "end": 1753.98
+    },
+    {
+        "text": " dije, ¿no vamos a hacerlo del libro?",
+        "start": 1754.98,
+        "end": 1756.98
+    },
+    {
+        "text": " Vamos a hacerlo del libro, porque perfectamente pueden recordarse",
+        "start": 1756.98,
+        "end": 1759.98
+    },
+    {
+        "text": " de la estranora, no de haberlas visto,",
+        "start": 1759.98,
+        "end": 1761.98
+    },
+    {
+        "text": " o justo el curso que ustedes hicieron,",
+        "start": 1761.98,
+        "end": 1763.98
+    },
+    {
+        "text": " no probaron que eran equivalentes,",
+        "start": 1763.98,
+        "end": 1765.98
+    },
+    {
+        "text": " o probaron, pero no tienen claro que quiere decir que eran equivalentes.",
+        "start": 1765.98,
+        "end": 1768.98
+    },
+    {
+        "text": " Había muchas razones por las cuales se esté.",
+        "start": 1768.98,
+        "end": 1770.98
+    },
+    {
+        "text": " Optía por seguir la demostración del libro.",
+        "start": 1771.98,
+        "end": 1773.98
+    },
+    {
+        "text": " Entonces, ahora ya tenemos esta desigualdad,",
+        "start": 1774.98,
+        "end": 1777.98
+    },
+    {
+        "text": " vamos a probar ahora que el radio es mayor igual que el limite.",
+        "start": 1777.98,
+        "end": 1780.98
+    },
+    {
+        "text": " ¿Tá?",
+        "start": 1780.98,
+        "end": 1781.98
+    },
+    {
+        "text": " ¿Qué se vuelve a hacer este lado?",
+        "start": 1781.98,
+        "end": 1782.98
+    },
+    {
+        "text": " Voy a borrar el teorema así,",
+        "start": 1786.98,
+        "end": 1788.98
+    },
+    {
+        "text": " porque quizás el objetivo,",
+        "start": 1788.98,
+        "end": 1789.98
+    },
+    {
+        "text": " ya tenemos resumido acá.",
+        "start": 1789.98,
+        "end": 1791.98
+    },
+    {
+        "text": " Este es el resultado del teorema que queremos",
+        "start": 1792.98,
+        "end": 1794.98
+    },
+    {
+        "text": " y necesitamos el objetivo en anaja para concretarlo.",
+        "start": 1794.98,
+        "end": 1797.98
+    },
+    {
+        "text": " A partir del lema técnico rojo que viene después.",
+        "start": 1797.98,
+        "end": 1800.98
+    },
+    {
+        "text": " Bueno, entonces vamos a probar",
+        "start": 1816.98,
+        "end": 1818.98
+    },
+    {
+        "text": " que el radio espectral es mayor igual que el limite.",
+        "start": 1818.98,
+        "end": 1820.98
+    },
+    {
+        "text": " Entonces lo vimos en los casos,",
+        "start": 1820.98,
+        "end": 1821.98
+    },
+    {
+        "text": " un caso muy sencillo,",
+        "start": 1821.98,
+        "end": 1822.98
+    },
+    {
+        "text": " si quieren pongan al comienzo acá,",
+        "start": 1823.98,
+        "end": 1825.98
+    },
+    {
+        "text": " quiera bien en el cuaderno.",
+        "start": 1825.98,
+        "end": 1827.98
+    },
+    {
+        "text": " Queremos probar la otra desigualdad.",
+        "start": 1827.98,
+        "end": 1829.98
+    },
+    {
+        "text": " La voy a poner para que la gente lo creen fin lo veis.",
+        "start": 1829.98,
+        "end": 1832.98
+    },
+    {
+        "text": " Ahora queremos probar la otra desigualdad,",
+        "start": 1834.98,
+        "end": 1842.98
+    },
+    {
+        "text": " o sea que rojo.",
+        "start": 1842.98,
+        "end": 1844.98
+    },
+    {
+        "text": " El jodo suave es mayor igual que el limite.",
+        "start": 1844.98,
+        "end": 1847.98
+    },
+    {
+        "text": " Cuando eso tiene más infinito.",
+        "start": 1848.98,
+        "end": 1850.98
+    },
+    {
+        "text": " A veces uno carga el pizarro,",
+        "start": 1856.98,
+        "end": 1859.98
+    },
+    {
+        "text": " como el uece,",
+        "start": 1859.98,
+        "end": 1861.98
+    },
+    {
+        "text": " y si no me nota eso que se obvio.",
+        "start": 1861.98,
+        "end": 1863.98
+    },
+    {
+        "text": " Después estás en el medio de las cuentas,",
+        "start": 1863.98,
+        "end": 1866.98
+    },
+    {
+        "text": " ahí repasando,",
+        "start": 1866.98,
+        "end": 1867.98
+    },
+    {
+        "text": " o le siendo de vuelta,",
+        "start": 1867.98,
+        "end": 1869.98
+    },
+    {
+        "text": " y te olvides de anotar eso.",
+        "start": 1869.98,
+        "end": 1871.98
+    },
+    {
+        "text": " Y una cuenta la escribiste mal,",
+        "start": 1871.98,
+        "end": 1873.98
+    },
+    {
+        "text": " y se te armonmate,",
+        "start": 1873.98,
+        "end": 1874.98
+    },
+    {
+        "text": " no es la mejor escribirle más.",
+        "start": 1874.98,
+        "end": 1876.98
+    },
+    {
+        "text": " Bueno, caso uno,",
+        "start": 1878.98,
+        "end": 1880.98
+    },
+    {
+        "text": " cuando rojo está,",
+        "start": 1880.98,
+        "end": 1882.98
+    },
+    {
+        "text": " es 0.",
+        "start": 1882.98,
+        "end": 1883.98
+    },
+    {
+        "text": " O sea,",
+        "start": 1886.98,
+        "end": 1887.98
+    },
+    {
+        "text": " el máximo es 0. ¿Qué quiere decir si el máximo",
+        "start": 1887.98,
+        "end": 1890.98
+    },
+    {
+        "text": " de los módulos de los valores propios es 0?",
+        "start": 1890.98,
+        "end": 1893.98
+    },
+    {
+        "text": " Son dos 0.",
+        "start": 1894.98,
+        "end": 1895.98
+    },
+    {
+        "text": " Todos los valores propios son 0.",
+        "start": 1895.98,
+        "end": 1897.98
+    },
+    {
+        "text": " Entonces,",
+        "start": 1897.98,
+        "end": 1899.98
+    },
+    {
+        "text": " de acá, como dijo,",
+        "start": 1900.98,
+        "end": 1902.98
+    },
+    {
+        "text": " se va ahora así,",
+        "start": 1902.98,
+        "end": 1904.98
+    },
+    {
+        "text": " el espectro de J suba",
+        "start": 1904.98,
+        "end": 1906.98
+    },
+    {
+        "text": " es 0,",
+        "start": 1907.98,
+        "end": 1908.98
+    },
+    {
+        "text": " y es que ese nimo que es el espectro de A,",
+        "start": 1908.98,
+        "end": 1910.98
+    },
+    {
+        "text": " por supuesto,",
+        "start": 1910.98,
+        "end": 1911.98
+    },
+    {
+        "text": " sólo tiene valor propio 0.",
+        "start": 1911.98,
+        "end": 1912.98
+    },
+    {
+        "text": " Y si el único valor propio es 0,",
+        "start": 1915.98,
+        "end": 1917.98
+    },
+    {
+        "text": " como es J,",
+        "start": 1917.98,
+        "end": 1919.98
+    },
+    {
+        "text": " es una matriz,",
+        "start": 1919.98,
+        "end": 1921.98
+    },
+    {
+        "text": " nil potente excelente,",
+        "start": 1923.98,
+        "end": 1926.98
+    },
+    {
+        "text": " para mi interesa que lo habieran todos,",
+        "start": 1926.98,
+        "end": 1928.98
+    },
+    {
+        "text": " todos bien,",
+        "start": 1928.98,
+        "end": 1929.98
+    },
+    {
+        "text": " o sea, ¿cuáles son esos?",
+        "start": 1929.98,
+        "end": 1930.98
+    },
+    {
+        "text": " Si tenes todos los 0 en la diagonal,",
+        "start": 1930.98,
+        "end": 1931.98
+    },
+    {
+        "text": " la matriz es el potente,",
+        "start": 1931.98,
+        "end": 1933.98
+    },
+    {
+        "text": " porque es una de suarda,",
+        "start": 1933.98,
+        "end": 1934.98
+    },
+    {
+        "text": " que le metir,",
+        "start": 1934.98,
+        "end": 1935.98
+    },
+    {
+        "text": " o sea,",
+        "start": 1935.98,
+        "end": 1936.98
+    },
+    {
+        "text": " ese es excelente, ¿por qué pasa?",
+        "start": 1936.98,
+        "end": 1937.98
+    },
+    {
+        "text": " Entonces,",
+        "start": 1938.98,
+        "end": 1939.98
+    },
+    {
+        "text": " existe un m,",
+        "start": 1939.98,
+        "end": 1941.98
+    },
+    {
+        "text": " tal que J suba la m,",
+        "start": 1941.98,
+        "end": 1943.98
+    },
+    {
+        "text": " es 0,",
+        "start": 1943.98,
+        "end": 1945.98
+    },
+    {
+        "text": " la matriz es el nimo potente,",
+        "start": 1945.98,
+        "end": 1948.98
+    },
+    {
+        "text": " y si el termino ya provate la igualdad,",
+        "start": 1948.98,
+        "end": 1950.98
+    },
+    {
+        "text": " porque de un lado tenés 0,",
+        "start": 1951.98,
+        "end": 1954.98
+    },
+    {
+        "text": " 0, el número 0,",
+        "start": 1955.98,
+        "end": 1957.98
+    },
+    {
+        "text": " número 0,",
+        "start": 1957.98,
+        "end": 1959.98
+    },
+    {
+        "text": " y por otro lado,",
+        "start": 1959.98,
+        "end": 1961.98
+    },
+    {
+        "text": " quieres probar que es mayor igual,",
+        "start": 1961.98,
+        "end": 1963.98
+    },
+    {
+        "text": " a este límite,",
+        "start": 1963.98,
+        "end": 1965.98
+    },
+    {
+        "text": " pero resulta que a partir de un momento,",
+        "start": 1965.98,
+        "end": 1967.98
+    },
+    {
+        "text": " esto vale la matriz nula,",
+        "start": 1967.98,
+        "end": 1969.98
+    },
+    {
+        "text": " por lo tanto,",
+        "start": 1973.98,
+        "end": 1975.98
+    },
+    {
+        "text": " este límite,",
+        "start": 1975.98,
+        "end": 1977.98
+    },
+    {
+        "text": " cuando ese tiene más infinito,",
+        "start": 1977.98,
+        "end": 1979.98
+    },
+    {
+        "text": " de la raíz es s,",
+        "start": 1979.98,
+        "end": 1981.98
+    },
+    {
+        "text": " de la norma,",
+        "start": 1981.98,
+        "end": 1983.98
+    },
+    {
+        "text": " de la j suba,",
+        "start": 1983.98,
+        "end": 1985.98
+    },
+    {
+        "text": " a la s,",
+        "start": 1985.98,
+        "end": 1987.98
+    },
+    {
+        "text": " como te queda a partir de un momento,",
+        "start": 1987.98,
+        "end": 1989.98
+    },
+    {
+        "text": " la matriz nula,",
+        "start": 1989.98,
+        "end": 1991.98
+    },
+    {
+        "text": " esto es la norma es 0,",
+        "start": 1991.98,
+        "end": 1993.98
+    },
+    {
+        "text": " y la raíz es s,",
+        "start": 1993.98,
+        "end": 1995.98
+    },
+    {
+        "text": " es 0,",
+        "start": 1995.98,
+        "end": 1996.98
+    },
+    {
+        "text": " o sea, que es 0,",
+        "start": 1996.98,
+        "end": 1997.98
+    },
+    {
+        "text": " probamos,",
+        "start": 1997.98,
+        "end": 1999.98
+    },
+    {
+        "text": " lo probamos,",
+        "start": 1999.98,
+        "end": 2001.98
+    },
+    {
+        "text": " caso 2, claro,",
+        "start": 2001.98,
+        "end": 2003.98
+    },
+    {
+        "text": " cuando,",
+        "start": 2003.98,
+        "end": 2005.98
+    },
+    {
+        "text": " caso 2,",
+        "start": 2005.98,
+        "end": 2007.98
+    },
+    {
+        "text": " si el radio es para el tral,",
+        "start": 2007.98,
+        "end": 2009.98
+    },
+    {
+        "text": " es más grande que ser,",
+        "start": 2009.98,
+        "end": 2011.98
+    },
+    {
+        "text": " es un caso un poquito más,",
+        "start": 2011.98,
+        "end": 2013.98
+    },
+    {
+        "text": " un poquito más largo,",
+        "start": 2013.98,
+        "end": 2015.98
+    },
+    {
+        "text": " más complicado,",
+        "start": 2015.98,
+        "end": 2016.98
+    },
+    {
+        "text": " pero también,",
+        "start": 2016.98,
+        "end": 2017.98
+    },
+    {
+        "text": " va a ser muy sencillo de mostrar.",
+        "start": 2017.98,
+        "end": 2019.98
+    },
+    {
+        "text": " Aquí,",
+        "start": 2021.98,
+        "end": 2023.98
+    },
+    {
+        "text": " voy a recordar,",
+        "start": 2023.98,
+        "end": 2025.98
+    },
+    {
+        "text": " una cuenta que hicimos juntos,",
+        "start": 2025.98,
+        "end": 2027.98
+    },
+    {
+        "text": " y que es muy útil,",
+        "start": 2027.98,
+        "end": 2029.98
+    },
+    {
+        "text": " y que es muy útil,",
+        "start": 2029.98,
+        "end": 2031.98
+    },
+    {
+        "text": " esta cuenta le hicimos juntos,",
+        "start": 2037.98,
+        "end": 2039.98
+    },
+    {
+        "text": " j suben el landa a la m,",
+        "start": 2039.98,
+        "end": 2041.98
+    },
+    {
+        "text": " un día que repasamos,",
+        "start": 2041.98,
+        "end": 2045.98
+    },
+    {
+        "text": " a la siguiente clase,",
+        "start": 2045.98,
+        "end": 2047.98
+    },
+    {
+        "text": " vuelm mismo,",
+        "start": 2047.98,
+        "end": 2049.98
+    },
+    {
+        "text": " el día que repasamos,",
+        "start": 2049.98,
+        "end": 2051.98
+    },
+    {
+        "text": " con m y igual que,",
+        "start": 2051.98,
+        "end": 2053.98
+    },
+    {
+        "text": " dijimos para,",
+        "start": 2053.98,
+        "end": 2055.98
+    },
+    {
+        "text": " y nos quedaba,",
+        "start": 2055.98,
+        "end": 2057.98
+    },
+    {
+        "text": " una noticia,",
+        "start": 2057.98,
+        "end": 2059.98
+    },
+    {
+        "text": " en la noticia,",
+        "start": 2059.98,
+        "end": 2061.98
+    },
+    {
+        "text": " el aborto y lo estuvo,",
+        "start": 2061.98,
+        "end": 2063.98
+    },
+    {
+        "text": " porque,",
+        "start": 2063.98,
+        "end": 2065.98
+    },
+    {
+        "text": " seguros que lo recuerdan,",
+        "start": 2065.98,
+        "end": 2067.98
+    },
+    {
+        "text": " porque es poco,",
+        "start": 2067.98,
+        "end": 2069.98
+    },
+    {
+        "text": " dejó el tope de arriba,",
+        "start": 2069.98,
+        "end": 2071.98
+    },
+    {
+        "text": " para que lo recordamos juntos,",
+        "start": 2071.98,
+        "end": 2073.98
+    },
+    {
+        "text": " porque es un punto clave,",
+        "start": 2073.98,
+        "end": 2075.98
+    },
+    {
+        "text": " el tope de arriba,",
+        "start": 2075.98,
+        "end": 2077.98
+    },
+    {
+        "text": " aparecía en las combinaciones,",
+        "start": 2077.98,
+        "end": 2079.98
+    },
+    {
+        "text": " landa a la m menos j,",
+        "start": 2079.98,
+        "end": 2081.98
+    },
+    {
+        "text": " por n a las j,",
+        "start": 2081.98,
+        "end": 2083.98
+    },
+    {
+        "text": " dos cosas.",
+        "start": 2083.98,
+        "end": 2085.98
+    },
+    {
+        "text": " porque había una cuestión con el nivel de la impotencia del tamaño de la matriz",
+        "start": 2085.98,
+        "end": 2090.78
+    },
+    {
+        "text": " acuora de eso y otra pregunta en la N se acuerdan quien era, era la misma matriz",
+        "start": 2090.78,
+        "end": 2097.54
+    },
+    {
+        "text": " de sordan que le quitabas todo de la diagonal y entonces te quedaba la N en el potente",
+        "start": 2097.54,
+        "end": 2102.58
+    },
+    {
+        "text": " para recordar que era la parte en el potente de la sordan, o sea la sordan era",
+        "start": 2102.58,
+        "end": 2108.3
+    },
+    {
+        "text": " lambda veces la identidad más esta N y de ahí quísimos la cuenta con el binomíagleta",
+        "start": 2108.3,
+        "end": 2113.7
+    },
+    {
+        "text": " pero esto me interesa recordar por supuesto pero lo que más me interesa recordar es la forma que hicimos juntos",
+        "start": 2113.7,
+        "end": 2118.5
+    },
+    {
+        "text": " como quedaba la forma",
+        "start": 2118.5,
+        "end": 2120.7
+    },
+    {
+        "text": " te acuerdas aquí a San Mate que quedó un colores rojo verde azul es donde iban apareciendo los",
+        "start": 2120.7,
+        "end": 2126.8999999999996
+    },
+    {
+        "text": " diferentes combinaciones bueno no lo voy a hacer en colores ahora pero le quedaba cada",
+        "start": 2126.8999999999996,
+        "end": 2132.2999999999997
+    },
+    {
+        "text": " lambda la M en la diagonal",
+        "start": 2132.2999999999997,
+        "end": 2136.2999999999997
+    },
+    {
+        "text": " por supuesto acá que abantó cero",
+        "start": 2136.3,
+        "end": 2143.3
+    },
+    {
+        "text": " y que aparecía, voy a poner el colores y para que se vea mejor, no no no no me recuerdo",
+        "start": 2145.3,
+        "end": 2150.9
+    },
+    {
+        "text": " los colores que se la trae por supuesto aquí aparecía aquí en esto aparecía",
+        "start": 2150.9,
+        "end": 2156.3
+    },
+    {
+        "text": " combinaciones de M tomada de 1 lambda a la M menos 1 si por N a la 1 por esa aparecía",
+        "start": 2156.3,
+        "end": 2162.3
+    },
+    {
+        "text": " acá por N a la 1 por eso aparecía acá y acá se lo mismo",
+        "start": 2162.3,
+        "end": 2169.3
+    },
+    {
+        "text": " y lo menos 1 combinaciones",
+        "start": 2169.3,
+        "end": 2174.3
+    },
+    {
+        "text": " cierto después combinaciones de M tomada de 2 de lambda a la M menos 2 si se trace tra y el último",
+        "start": 2175.3,
+        "end": 2184.3
+    },
+    {
+        "text": " quedaba combinaciones vamos copiado para no en realidad exactamente como quedaba de M",
+        "start": 2185.3,
+        "end": 2191.3
+    },
+    {
+        "text": " a el tomada de M menos 1 de lambda a la M menos N a la 1 por lambda a la M menos N a la",
+        "start": 2191.3,
+        "end": 2204.3
+    },
+    {
+        "text": " M más 1, esta fue la que hicimos juntos en la trae",
+        "start": 2204.3,
+        "end": 2211.3
+    },
+    {
+        "text": " todas combinaciones por el medio, o sea a ver ahora ¿quién se anima a decirme?",
+        "start": 2211.3,
+        "end": 2220.3
+    },
+    {
+        "text": " ¿cuánto vale si 1 menor igual que i menor igual que j?",
+        "start": 2221.3,
+        "end": 2234.3
+    },
+    {
+        "text": " 1 menor igual que i menor que j, menor igual que N, ¿cuánto vale V subj a la S?",
+        "start": 2234.3,
+        "end": 2243.3
+    },
+    {
+        "text": " el modo si quiere el modo no es importante digamos ¿no? J más grande que i, ¿cuánto vale esto?",
+        "start": 2244.3,
+        "end": 2254.3
+    },
+    {
+        "text": " o sea acá estos estos veces y j son exactamente los coeficiente de j suala a la S",
+        "start": 2259.3,
+        "end": 2271.3
+    },
+    {
+        "text": " o sea V subj suprase",
+        "start": 2272.3,
+        "end": 2274.3
+    },
+    {
+        "text": " recuerde que esto es para un lambda, dirácticamente hay un pequeñísimo error didáctico",
+        "start": 2280.3,
+        "end": 2286.3
+    },
+    {
+        "text": " no matemático que yo ya me lambda acá y lambda justo les llamamos al valor propio",
+        "start": 2286.3,
+        "end": 2293.3
+    },
+    {
+        "text": " que tiene el máximo de los modelos esto valía para cualquier valor propio",
+        "start": 2293.3,
+        "end": 2299.3
+    },
+    {
+        "text": " no solamente parece lambda para todos los valores propios, se cuándo se llaman en la lambda prima",
+        "start": 2299.3,
+        "end": 2303.3
+    },
+    {
+        "text": " esto mismo o si quieren le cambia acá el nombre, este es para cualquier lambda todos los bloques de llor",
+        "start": 2303.3,
+        "end": 2311.3
+    },
+    {
+        "text": " tenia este comportamiento que lo decían dependiendo de tamaño y del valor propio",
+        "start": 2311.3,
+        "end": 2318.3
+    },
+    {
+        "text": " no me han cambiado todo esto error didáctico y el acepto",
+        "start": 2318.3,
+        "end": 2322.3
+    },
+    {
+        "text": " ahí eso es para cualquier valor propio, entonces como queda esto acá?",
+        "start": 2322.3,
+        "end": 2328.3
+    },
+    {
+        "text": " estos son los v subj, así van quedando los v subj",
+        "start": 2328.3,
+        "end": 2332.3
+    },
+    {
+        "text": " V DM, acá lo que tenés es a la S, a la S, a ver, entonces yo lo que digo es que esto val",
+        "start": 2332.3,
+        "end": 2342.3
+    },
+    {
+        "text": " el modelo, las combinaciones son un número entero, o sea que sale para fuera de los modelos",
+        "start": 2342.3,
+        "end": 2347.3
+    },
+    {
+        "text": " y entra porque es un número positivo, entonces esto yo digo que es combinaciones de S",
+        "start": 2347.3,
+        "end": 2354.3
+    },
+    {
+        "text": " primero que nada porque acá estoy elevando a la S, acá era la M pero nosotros a las cuentas",
+        "start": 2354.3,
+        "end": 2359.3
+    },
+    {
+        "text": " estamos siendo elevando a la S, j-c, a ver, j-c",
+        "start": 2359.3,
+        "end": 2367.3
+    },
+    {
+        "text": " es porque si estás en el casi cero, V suy j, j más grande, tienes que",
+        "start": 2367.3,
+        "end": 2374.3
+    },
+    {
+        "text": " porque acá hay un 1, porque está a 1 de la diagonal, porque acá hay un 2, ya abrir un 2",
+        "start": 2374.3,
+        "end": 2380.3
+    },
+    {
+        "text": " porque está a 2 de la diagonal ¿no verdad? entonces ¿a cuánto estás de la diagonal?",
+        "start": 2380.3,
+        "end": 2386.3
+    },
+    {
+        "text": " J-c, porque J es más grande que I, cuánto? J-c",
+        "start": 2386.3,
+        "end": 2390.3
+    },
+    {
+        "text": " también, entonces parece ese número, el modelo lambda R, porque los valores propios",
+        "start": 2390.3,
+        "end": 2402.3
+    },
+    {
+        "text": " lambda, lambda 1, lambda 2, lambda R, hay mucho valores propios, es uno cualquiera, depende de dónde",
+        "start": 2402.3,
+        "end": 2409.3
+    },
+    {
+        "text": " esté, es un lambda R, elevado a cuánto, a ver si le mocamos elevado a cuánto, acá",
+        "start": 2409.3,
+        "end": 2418.3
+    },
+    {
+        "text": " esté elevado a la M-1, el M sería S, sería S-1 pero estoy en el casi cero y j, acá está",
+        "start": 2418.3,
+        "end": 2427.3
+    },
+    {
+        "text": " sería la S-1, entonces te queda elevado a la S-j-c",
+        "start": 2427.3,
+        "end": 2437.3
+    },
+    {
+        "text": " o sea menos j más I, a la S menos j-c",
+        "start": 2437.3,
+        "end": 2445.3
+    },
+    {
+        "text": " se entiende, si quiere lo que digo de la otra manera para que se vea mejor cuando repasen",
+        "start": 2445.3,
+        "end": 2451.3
+    },
+    {
+        "text": " S menos j, menos I, para que se entiende que es la distancia a la diagonal",
+        "start": 2451.3,
+        "end": 2458.3
+    },
+    {
+        "text": " bueno a ver, gurise esto es magia, pura, quiero decir, tener la posibilidad de hacerlas",
+        "start": 2458.3,
+        "end": 2470.3
+    },
+    {
+        "text": " cuentas de esta manera es brutal, lo hicimos junto, no es magia que en el sentido de que",
+        "start": 2470.3,
+        "end": 2475.3
+    },
+    {
+        "text": " la saqué de la de la, no lo hicimos junto todo esto, sabemos cuánto vale cada coeficiente",
+        "start": 2475.3,
+        "end": 2482.3
+    },
+    {
+        "text": " en cada nivel de potencia de las matrices de yoga, es brutal tener esa información,",
+        "start": 2482.3,
+        "end": 2489.3
+    },
+    {
+        "text": " bueno, entonces yo lo que afirmo es que esto es menor igual, sigo por acá abajo,",
+        "start": 2489.3,
+        "end": 2498.3
+    },
+    {
+        "text": " combinaciones de S, te va a bajar menos I, pura, rodea a la S menos j más I,",
+        "start": 2499.3,
+        "end": 2512.3
+    },
+    {
+        "text": " el S menos j menos I o S menos j más I es porque les saqué el paréntesis, eso no es nada",
+        "start": 2512.3,
+        "end": 2519.3
+    },
+    {
+        "text": " y lo otro lo ven, porque todos los módulos, primero lo que estoy usando es que el módulo",
+        "start": 2519.3,
+        "end": 2526.3
+    },
+    {
+        "text": " es el producto de los módulos, eso lo estoy usando, pero lo otro que estoy usando es que el módulo",
+        "start": 2526.3,
+        "end": 2536.3
+    },
+    {
+        "text": " de los valores propios más grandes es el de rodea, entonces estoy usando eso, comparando",
+        "start": 2536.3,
+        "end": 2542.3
+    },
+    {
+        "text": " el módulo de la r, con el de rodea, estoy usando eso, muy bien, y acá viene una discusión",
+        "start": 2542.3,
+        "end": 2552.3
+    },
+    {
+        "text": " porque para la próxima desigualdad, yo tengo que fijarme si rodea más grande o más",
+        "start": 2552.3,
+        "end": 2561.3
+    },
+    {
+        "text": " chico que uno, porque el rodea pues es grande o te, pero puede ser, así como fue cero,",
+        "start": 2561.3,
+        "end": 2566.3
+    },
+    {
+        "text": " porque había la posibilidad que fuera cero, ah hay un detalle, vieron que a veces confundo",
+        "start": 2566.3,
+        "end": 2573.3
+    },
+    {
+        "text": " y pongo rodea y rodea, es que el libro lo hace así y eso cuando lo está perfecto,",
+        "start": 2573.3,
+        "end": 2578.3
+    },
+    {
+        "text": " porque ya sabemos que esto es igual, la discusión es la misma, disculpen si a veces pongo",
+        "start": 2578.3,
+        "end": 2585.3
+    },
+    {
+        "text": " a y a veces pongo j, de a, como quiera, sabemos que es igual, bueno entonces tenemos que discutir",
+        "start": 2585.3,
+        "end": 2592.3
+    },
+    {
+        "text": " ahora si ese radio espectral es mayor o menor que uno para la siente desigualdad,",
+        "start": 2592.3,
+        "end": 2596.3
+    },
+    {
+        "text": " entonces acá voy a poner menor igual y tengo dos casos, vamos a poner los dos casos,",
+        "start": 2596.3,
+        "end": 2603.3
+    },
+    {
+        "text": " el caso rodea mayor igual o rodejo Tazua, mayor igual que uno y el caso,",
+        "start": 2604.3,
+        "end": 2615.3
+    },
+    {
+        "text": " rodejo Tazua menor que uno, ahora vamos a las cuentas primero en el caso rodejo Tazua",
+        "start": 2620.3,
+        "end": 2628.3
+    },
+    {
+        "text": " mayor igual que uno, entonces yo digo que ese número es menor igual,",
+        "start": 2629.3,
+        "end": 2637.3
+    },
+    {
+        "text": " dejo las combinaciones quietitas, combinaciones de ese tomado a J menos sí,",
+        "start": 2637.3,
+        "end": 2644.3
+    },
+    {
+        "text": " por rodea a la s, esto en el caso,",
+        "start": 2644.3,
+        "end": 2650.3
+    },
+    {
+        "text": " y por qué, es muy sencillo pero aquí hay que los plique para que nadie quede empantanado",
+        "start": 2658.3,
+        "end": 2665.3
+    },
+    {
+        "text": " claro va creciendo y por qué hice más potencia Mateo",
+        "start": 2676.3,
+        "end": 2680.3
+    },
+    {
+        "text": " me lo jota más grande, le restate más que lo que su mate, entonces de hecho este número",
+        "start": 2681.3,
+        "end": 2692.3
+    },
+    {
+        "text": " es más chiquito que es, entonces para llegar a eso multiplicaste alguna vez por rodear ese",
+        "start": 2692.3,
+        "end": 2698.3
+    },
+    {
+        "text": " y como rodeas mayor que uno o mayor igual que uno está bien la desigualdad,",
+        "start": 2698.3,
+        "end": 2702.3
+    },
+    {
+        "text": " pero vieron que no la puedo usar en el caso azul, en el caso azul no te sirve esta demostración,",
+        "start": 2702.3,
+        "end": 2709.3
+    },
+    {
+        "text": " entonces hay que hacer otra y la que ponemos acá es esta,",
+        "start": 2709.3,
+        "end": 2713.3
+    },
+    {
+        "text": " el caso azul parecida para el otro lado, es combinaciones de ese J menos sí,",
+        "start": 2713.3,
+        "end": 2721.3
+    },
+    {
+        "text": " por rodea a la s menos n,",
+        "start": 2721.3,
+        "end": 2726.3
+    },
+    {
+        "text": " esto es todos números en negro y el azul, son casi iguales ¿no?",
+        "start": 2739.3,
+        "end": 2747.3
+    },
+    {
+        "text": " ¿Cuál tiene más factores de rodea?",
+        "start": 2747.3,
+        "end": 2751.3
+    },
+    {
+        "text": " El negro o el azul?",
+        "start": 2751.3,
+        "end": 2756.3
+    },
+    {
+        "text": " El negro, entonces como rodeas menos de uno es la chicaste,",
+        "start": 2756.3,
+        "end": 2763.3
+    },
+    {
+        "text": " o sea este más chico que el azul, perfecto y por qué tiene más factores de rodea?",
+        "start": 2763.3,
+        "end": 2767.3
+    },
+    {
+        "text": " Claro, n es mayor que el jodame lo sí, porque justamente esto dos están entre uno y n,",
+        "start": 2767.3,
+        "end": 2775.3
+    },
+    {
+        "text": " entonces la diferencia está entre uno y n, entonces acá le restaste un montón,",
+        "start": 2775.3,
+        "end": 2781.3
+    },
+    {
+        "text": " quiere decir que para pasar de este a este, tienes que multiplicar por rodeo de jodame,",
+        "start": 2781.3,
+        "end": 2786.3
+    },
+    {
+        "text": " pero es lo de jodame lo que uno en este caso azul, entonces está bien la desigualdad,",
+        "start": 2786.3,
+        "end": 2790.3
+    },
+    {
+        "text": " ¿se dan cuenta?",
+        "start": 2790.3,
+        "end": 2792.3
+    },
+    {
+        "text": " Son dos casos distintos, pero los dos nos van a llevar a la misma conclusión,",
+        "start": 2793.3,
+        "end": 2797.3
+    },
+    {
+        "text": " en un momento van a terminar en la misma conclusión,",
+        "start": 2797.3,
+        "end": 2801.3
+    },
+    {
+        "text": " pero tenemos que hacerlas cuenta distintas, ¿qué vamos a hacer?",
+        "start": 2801.3,
+        "end": 2804.3
+    },
+    {
+        "text": " Muy bien,",
+        "start": 2804.3,
+        "end": 2807.3
+    },
+    {
+        "text": " ahora yo vuelvo a destacar este, ¿no?",
+        "start": 2807.3,
+        "end": 2809.3
+    },
+    {
+        "text": " saber cuánto vale cada término es una información increíble tener este información,",
+        "start": 2809.3,
+        "end": 2815.3
+    },
+    {
+        "text": " les hicimos junto con mucha chica.",
+        "start": 2815.3,
+        "end": 2818.3
+    },
+    {
+        "text": " Entonces vamos a tomar ahora sí, teniendo los módulos de cada uno,",
+        "start": 2818.3,
+        "end": 2823.3
+    },
+    {
+        "text": " vamos a tomar la norma de jodasua a la s, que era justamente la norma,",
+        "start": 2823.3,
+        "end": 2831.3
+    },
+    {
+        "text": " que lo quita por acá, es la raíz cuadrada, el asuma de los cuadrados s,",
+        "start": 2831.3,
+        "end": 2836.3
+    },
+    {
+        "text": " entonces vamos a aprovechar que tenemos que tener la información.",
+        "start": 2836.3,
+        "end": 2840.3
+    },
+    {
+        "text": " Bueno,",
+        "start": 2841.3,
+        "end": 2843.3
+    },
+    {
+        "text": " me la juego va a borrar este cuadrado acá, yo sé que todos se van a acordar,",
+        "start": 2849.3,
+        "end": 2854.3
+    },
+    {
+        "text": " ya lo aprovechamos, pero creo que lo tengo que aprovechar una vez más,",
+        "start": 2855.3,
+        "end": 2859.3
+    },
+    {
+        "text": " pero bueno, ya sé que se van a acordar,",
+        "start": 2859.3,
+        "end": 2863.3
+    },
+    {
+        "text": " entonces voy a tomar por acá la norma de jodasua a la s,",
+        "start": 2863.3,
+        "end": 2870.3
+    },
+    {
+        "text": " por definición la tenemos ahí,",
+        "start": 2871.3,
+        "end": 2874.3
+    },
+    {
+        "text": " es la raíz cuadrada variando y j, de la norma de v, su hijota s,",
+        "start": 2874.3,
+        "end": 2887.3
+    },
+    {
+        "text": " al cuadrado, todo esto la raíz cuadrada,",
+        "start": 2887.3,
+        "end": 2891.3
+    },
+    {
+        "text": " lo puse chiquito de lo mismo que estaba ahí,",
+        "start": 2891.3,
+        "end": 2894.3
+    },
+    {
+        "text": " y ya no puse más raíz cuadrada, le pongo de un medio,",
+        "start": 2894.3,
+        "end": 2897.3
+    },
+    {
+        "text": " ya sabes que lo mismo, de su misma notación.",
+        "start": 2897.3,
+        "end": 2900.3
+    },
+    {
+        "text": " Bueno, y entonces yo digo que esto es menor igual,",
+        "start": 2901.3,
+        "end": 2904.3
+    },
+    {
+        "text": " ahora voy a aprovechar todo el cálculo que hicimos junto de cuánto vale el módulo de cada uno de los coeficientes,",
+        "start": 2904.3,
+        "end": 2912.3
+    },
+    {
+        "text": " en el caso verde, en el caso azul, lo voy a aprovechar acá,",
+        "start": 2912.3,
+        "end": 2916.3
+    },
+    {
+        "text": " este que son cada uno de los sumando que están ahí,",
+        "start": 2916.3,
+        "end": 2919.3
+    },
+    {
+        "text": " entonces en el caso verde, menor igual, si abren dos casos,",
+        "start": 2919.3,
+        "end": 2924.3
+    },
+    {
+        "text": " en el caso verde jodasua, más yo igual que uno,",
+        "start": 2924.3,
+        "end": 2936.3
+    },
+    {
+        "text": " menor igual, quiero de arae,",
+        "start": 2936.3,
+        "end": 2942.3
+    },
+    {
+        "text": " por una menor igual que i, menor que j,",
+        "start": 2942.3,
+        "end": 2950.3
+    },
+    {
+        "text": " también igual que n,",
+        "start": 2950.3,
+        "end": 2954.3
+    },
+    {
+        "text": " o también o si,",
+        "start": 2954.3,
+        "end": 2958.3
+    },
+    {
+        "text": " al cuadrado,",
+        "start": 2958.3,
+        "end": 2962.3
+    },
+    {
+        "text": " al hume,",
+        "start": 2962.3,
+        "end": 2968.3
+    },
+    {
+        "text": " veamos lo, no hay nada, simplemente es sustituina,",
+        "start": 2968.3,
+        "end": 2971.3
+    },
+    {
+        "text": " además, es muy chocuida, vano tendo,",
+        "start": 2971.3,
+        "end": 2974.3
+    },
+    {
+        "text": " estoy aprovechando y la cuenta que hicimos juntos,",
+        "start": 2974.3,
+        "end": 2977.3
+    },
+    {
+        "text": " en el caso verde,",
+        "start": 2977.3,
+        "end": 2983.3
+    },
+    {
+        "text": " cada sumando que está elevado al cuadrado dentro de la suma,",
+        "start": 2983.3,
+        "end": 2987.3
+    },
+    {
+        "text": " cada sumando de esos es menor igual que esto,",
+        "start": 2987.3,
+        "end": 2992.3
+    },
+    {
+        "text": " como estoy siempre manejándome en los números positivos,",
+        "start": 2992.3,
+        "end": 2995.3
+    },
+    {
+        "text": " no hay ningún problema con todo esto,",
+        "start": 2995.3,
+        "end": 2997.3
+    },
+    {
+        "text": " en los cuadrados y la rese cuadrada,",
+        "start": 2997.3,
+        "end": 3001.3
+    },
+    {
+        "text": " bueno,",
+        "start": 3001.3,
+        "end": 3005.3
+    },
+    {
+        "text": " un único detalle que ocurrices es que el rodeala s que aparece",
+        "start": 3005.3,
+        "end": 3009.3
+    },
+    {
+        "text": " en todos los términos, cuando vos sustituis que este es menor igual que este,",
+        "start": 3009.3,
+        "end": 3013.3
+    },
+    {
+        "text": " te queda rodeala s en todos los términos,",
+        "start": 3013.3,
+        "end": 3017.3
+    },
+    {
+        "text": " pero está elevado al cuadrado,",
+        "start": 3017.3,
+        "end": 3019.3
+    },
+    {
+        "text": " pero después está lo sacado de factor común y te queda la recuadrado,",
+        "start": 3019.3,
+        "end": 3022.3
+    },
+    {
+        "text": " entonces se le va al cuadrado y pues está elevado,",
+        "start": 3022.3,
+        "end": 3024.3
+    },
+    {
+        "text": " por eso está rodeala s, ¿sabes?",
+        "start": 3024.3,
+        "end": 3027.3
+    },
+    {
+        "text": " porque en cada término lo tienes que elevar al cuadrado,",
+        "start": 3027.3,
+        "end": 3030.3
+    },
+    {
+        "text": " pero después como está el mismo en todos los acá de factor común",
+        "start": 3030.3,
+        "end": 3033.3
+    },
+    {
+        "text": " y le metes la recuadrado,",
+        "start": 3033.3,
+        "end": 3034.3
+    },
+    {
+        "text": " entonces queda rodeala s, ¿sabes?",
+        "start": 3034.3,
+        "end": 3036.3
+    },
+    {
+        "text": " ¿sabes?",
+        "start": 3036.3,
+        "end": 3037.3
+    },
+    {
+        "text": " es el único detallecito de la cuenta, ¿eh?",
+        "start": 3037.3,
+        "end": 3040.3
+    },
+    {
+        "text": " y después lo que te aparece en ahí,",
+        "start": 3040.3,
+        "end": 3042.3
+    },
+    {
+        "text": " los s's se entiende la notación,",
+        "start": 3042.3,
+        "end": 3044.3
+    },
+    {
+        "text": " las combinaciones se están elevadas al cuadrado,",
+        "start": 3044.3,
+        "end": 3046.3
+    },
+    {
+        "text": " combinaciones de eso, ¿por qué?",
+        "start": 3046.3,
+        "end": 3047.3
+    },
+    {
+        "text": " ¿por qué?",
+        "start": 3047.3,
+        "end": 3048.3
+    },
+    {
+        "text": " bueno, ¿por qué?",
+        "start": 3048.3,
+        "end": 3049.3
+    },
+    {
+        "text": " ¿A cada hubo que elevar al cuadrado?",
+        "start": 3049.3,
+        "end": 3050.3
+    },
+    {
+        "text": " ¿no más? ¿sabes?",
+        "start": 3050.3,
+        "end": 3051.3
+    },
+    {
+        "text": " ¿sabes? ¿cada uno esto sumando?",
+        "start": 3051.3,
+        "end": 3053.3
+    },
+    {
+        "text": " combinaciones tan elevadas al cuadrado,",
+        "start": 3053.3,
+        "end": 3055.3
+    },
+    {
+        "text": " ¿y por qué va desde uno menor igual que i,",
+        "start": 3055.3,
+        "end": 3057.3
+    },
+    {
+        "text": " menor que j, también igual que n?",
+        "start": 3057.3,
+        "end": 3058.3
+    },
+    {
+        "text": " porque sabemos que esa es la forma que tienen...",
+        "start": 3058.3,
+        "end": 3061.3
+    },
+    {
+        "text": " bueno, es justamente lo que borre,",
+        "start": 3061.3,
+        "end": 3065.3
+    },
+    {
+        "text": " disculpa, ¿sabemos que ahí es donde aparecen los términos",
+        "start": 3065.3,
+        "end": 3069.3
+    },
+    {
+        "text": " en la triangular superior,",
+        "start": 3069.3,
+        "end": 3070.3
+    },
+    {
+        "text": " en los rectos no aparecen, ¿sabes?",
+        "start": 3070.3,
+        "end": 3073.3
+    },
+    {
+        "text": " ¿sabes?",
+        "start": 3073.3,
+        "end": 3074.3
+    },
+    {
+        "text": " vamos a lo mismo con el caso azul,",
+        "start": 3074.3,
+        "end": 3076.3
+    },
+    {
+        "text": " así vamos llevándolo 2 casos en paralelo,",
+        "start": 3076.3,
+        "end": 3079.3
+    },
+    {
+        "text": " en el caso azul nos queda exactamente lo mismo,",
+        "start": 3079.3,
+        "end": 3084.3
+    },
+    {
+        "text": " pero con elevado a la s-n,",
+        "start": 3084.3,
+        "end": 3087.3
+    },
+    {
+        "text": " ¿sabes?",
+        "start": 3087.3,
+        "end": 3088.3
+    },
+    {
+        "text": " y...",
+        "start": 3088.3,
+        "end": 3090.3
+    },
+    {
+        "text": " todo se no queda,",
+        "start": 3093.3,
+        "end": 3095.3
+    },
+    {
+        "text": " todo día elevado a la s-n,",
+        "start": 3095.3,
+        "end": 3098.3
+    },
+    {
+        "text": " y así, todo está cuadrado,",
+        "start": 3108.3,
+        "end": 3110.3
+    },
+    {
+        "text": " está cuadrado,",
+        "start": 3110.3,
+        "end": 3111.3
+    },
+    {
+        "text": " en el caso que el roo de j,",
+        "start": 3111.3,
+        "end": 3113.3
+    },
+    {
+        "text": " está suave hacia menor y otra.",
+        "start": 3113.3,
+        "end": 3115.3
+    },
+    {
+        "text": " ¿Está bien?",
+        "start": 3116.3,
+        "end": 3118.3
+    },
+    {
+        "text": " y lo tenemos ahí, ¿eh?",
+        "start": 3120.3,
+        "end": 3121.3
+    },
+    {
+        "text": " lo tenemos ahí, el problema,",
+        "start": 3121.3,
+        "end": 3122.3
+    },
+    {
+        "text": " yo ya lo tenemos casi pronto.",
+        "start": 3122.3,
+        "end": 3124.3
+    },
+    {
+        "text": " Este es el tipo de cuentita que a mí me gustan,",
+        "start": 3124.3,
+        "end": 3126.3
+    },
+    {
+        "text": " pero yo les quería ahorrar,",
+        "start": 3126.3,
+        "end": 3128.3
+    },
+    {
+        "text": " justamente haciendo la otra demostración que les mencioné antes.",
+        "start": 3128.3,
+        "end": 3133.3
+    },
+    {
+        "text": " Pero está muy bien también,",
+        "start": 3133.3,
+        "end": 3135.3
+    },
+    {
+        "text": " son todas cuentitas muy sencillas,",
+        "start": 3135.3,
+        "end": 3138.3
+    },
+    {
+        "text": " vamos explicando de espacito,",
+        "start": 3138.3,
+        "end": 3140.3
+    },
+    {
+        "text": " nadie se me pierda.",
+        "start": 3140.3,
+        "end": 3142.3
+    },
+    {
+        "text": " Bueno, muy bien, entonces,",
+        "start": 3143.3,
+        "end": 3146.3
+    },
+    {
+        "text": " vamos a analizar primero dos situaciones,",
+        "start": 3146.3,
+        "end": 3150.3
+    },
+    {
+        "text": " las puses separadas para que,",
+        "start": 3150.3,
+        "end": 3152.3
+    },
+    {
+        "text": " porque el libro acá ya saca las conclusiones,",
+        "start": 3152.3,
+        "end": 3154.3
+    },
+    {
+        "text": " y está muy bien,",
+        "start": 3154.3,
+        "end": 3155.3
+    },
+    {
+        "text": " las conclusiones se pueden entender,",
+        "start": 3155.3,
+        "end": 3157.3
+    },
+    {
+        "text": " pero yo lo quiero analizar por separado,",
+        "start": 3157.3,
+        "end": 3160.3
+    },
+    {
+        "text": " primero, analicemos, ¿qué pasa con esto?",
+        "start": 3160.3,
+        "end": 3165.3
+    },
+    {
+        "text": " ¿Está?",
+        "start": 3168.3,
+        "end": 3170.3
+    },
+    {
+        "text": " esto,",
+        "start": 3171.3,
+        "end": 3173.3
+    },
+    {
+        "text": " se las voy a poner distintos, si quieren.",
+        "start": 3173.3,
+        "end": 3176.3
+    },
+    {
+        "text": " Vamos a llamarle el eso ahí,",
+        "start": 3177.3,
+        "end": 3179.3
+    },
+    {
+        "text": " este, el el es menor que,",
+        "start": 3179.3,
+        "end": 3181.3
+    },
+    {
+        "text": " es como hace un rato dijo Martín, ¿no?",
+        "start": 3181.3,
+        "end": 3184.3
+    },
+    {
+        "text": " Las combinaciones de ese,",
+        "start": 3185.3,
+        "end": 3187.3
+    },
+    {
+        "text": " tomar el j, también lo sí,",
+        "start": 3187.3,
+        "end": 3188.3
+    },
+    {
+        "text": " lo llamo así, ¿no?",
+        "start": 3188.3,
+        "end": 3189.3
+    },
+    {
+        "text": " Más, le cambia el nombre,",
+        "start": 3189.3,
+        "end": 3190.3
+    },
+    {
+        "text": " lo llamo el es,",
+        "start": 3190.3,
+        "end": 3192.3
+    },
+    {
+        "text": " un número que está,",
+        "start": 3192.3,
+        "end": 3193.3
+    },
+    {
+        "text": " como dijo en este Nicolás,",
+        "start": 3193.3,
+        "end": 3194.3
+    },
+    {
+        "text": " pero, ¿qué es menor que el en esto?",
+        "start": 3194.3,
+        "end": 3197.3
+    },
+    {
+        "text": " ¿no?",
+        "start": 3197.3,
+        "end": 3199.3
+    },
+    {
+        "text": " No, no.",
+        "start": 3199.3,
+        "end": 3200.3
+    },
+    {
+        "text": " A lo sumo,",
+        "start": 3200.3,
+        "end": 3202.3
+    },
+    {
+        "text": " lo más largo que puede ser la distancia entre hijos,",
+        "start": 3202.3,
+        "end": 3204.3
+    },
+    {
+        "text": " estáis en el menos uno.",
+        "start": 3204.3,
+        "end": 3206.3
+    },
+    {
+        "text": " Bueno, está, eso número,",
+        "start": 3206.3,
+        "end": 3208.3
+    },
+    {
+        "text": " ahí menos que el.",
+        "start": 3208.3,
+        "end": 3209.3
+    },
+    {
+        "text": " Pero esto, una vez se lo analizamos juntos,",
+        "start": 3209.3,
+        "end": 3212.3
+    },
+    {
+        "text": " la variabilidad acá, ¿cuál es?",
+        "start": 3212.3,
+        "end": 3214.3
+    },
+    {
+        "text": " ¿sabes? Vamos, vamos,",
+        "start": 3214.3,
+        "end": 3215.3
+    },
+    {
+        "text": " vuelve para atrás, ¿cuál es ese problema?",
+        "start": 3215.3,
+        "end": 3217.3
+    },
+    {
+        "text": " Yo estoy tomando este límite,",
+        "start": 3217.3,
+        "end": 3219.3
+    },
+    {
+        "text": " yo estoy tomando el límite en arajo,",
+        "start": 3219.3,
+        "end": 3222.3
+    },
+    {
+        "text": " y estoy queriendo acotar esta parte,",
+        "start": 3222.3,
+        "end": 3225.3
+    },
+    {
+        "text": " este es mi objetivo.",
+        "start": 3225.3,
+        "end": 3228.3
+    },
+    {
+        "text": " Ajá.",
+        "start": 3228.3,
+        "end": 3231.3
+    },
+    {
+        "text": " Entonces, la que se mueve es ese,",
+        "start": 3231.3,
+        "end": 3233.3
+    },
+    {
+        "text": " la que se lo está moviéndose,",
+        "start": 3233.3,
+        "end": 3235.3
+    },
+    {
+        "text": " Ajá.",
+        "start": 3235.3,
+        "end": 3237.3
+    },
+    {
+        "text": " Lo que yo digo es que,",
+        "start": 3237.3,
+        "end": 3239.3
+    },
+    {
+        "text": " cuando se mueve ese,",
+        "start": 3239.3,
+        "end": 3240.3
+    },
+    {
+        "text": " cuando vos tomás las combinaciones",
+        "start": 3240.3,
+        "end": 3242.3
+    },
+    {
+        "text": " de ese tomado del el efijo,",
+        "start": 3242.3,
+        "end": 3244.3
+    },
+    {
+        "text": " cualquiera que sea,",
+        "start": 3244.3,
+        "end": 3246.3
+    },
+    {
+        "text": " j, menos y fijo,",
+        "start": 3246.3,
+        "end": 3247.3
+    },
+    {
+        "text": " que le sirve,",
+        "start": 3247.3,
+        "end": 3248.3
+    },
+    {
+        "text": " uno cualquiera de ellos,",
+        "start": 3248.3,
+        "end": 3249.3
+    },
+    {
+        "text": " eso es un polinomio.",
+        "start": 3249.3,
+        "end": 3252.3
+    },
+    {
+        "text": " En todos los casos,",
+        "start": 3253.3,
+        "end": 3255.3
+    },
+    {
+        "text": " esto es un polinomio de grado menor que N,",
+        "start": 3255.3,
+        "end": 3258.3
+    },
+    {
+        "text": " es un polinomio Ns, ¿no?",
+        "start": 3258.3,
+        "end": 3260.3
+    },
+    {
+        "text": " ¿sacueras como era la fórmula?",
+        "start": 3260.3,
+        "end": 3262.3
+    },
+    {
+        "text": " Ese por,",
+        "start": 3262.3,
+        "end": 3263.3
+    },
+    {
+        "text": " ese, ese por ese minus 1,",
+        "start": 3263.3,
+        "end": 3265.3
+    },
+    {
+        "text": " por ese minus 2,",
+        "start": 3265.3,
+        "end": 3266.3
+    },
+    {
+        "text": " por ese,",
+        "start": 3266.3,
+        "end": 3267.3
+    },
+    {
+        "text": " ¿sacueras que lo hicimos juntos?",
+        "start": 3267.3,
+        "end": 3269.3
+    },
+    {
+        "text": " Lo de las combinaciones.",
+        "start": 3269.3,
+        "end": 3270.3
+    },
+    {
+        "text": " Esto es un polinomio Ns de grado menor que N,",
+        "start": 3270.3,
+        "end": 3277.3
+    },
+    {
+        "text": " Ns de grado,",
+        "start": 3278.3,
+        "end": 3282.3
+    },
+    {
+        "text": " L menor que N,",
+        "start": 3282.3,
+        "end": 3285.3
+    },
+    {
+        "text": " ¿sacuerá?",
+        "start": 3285.3,
+        "end": 3287.3
+    },
+    {
+        "text": " Yo lo quise.",
+        "start": 3287.3,
+        "end": 3289.3
+    },
+    {
+        "text": " A su L,",
+        "start": 3289.3,
+        "end": 3291.3
+    },
+    {
+        "text": " a no, a, a,",
+        "start": 3291.3,
+        "end": 3293.3
+    },
+    {
+        "text": " estamos usando el A para algo,",
+        "start": 3293.3,
+        "end": 3297.3
+    },
+    {
+        "text": " no, no,",
+        "start": 3297.3,
+        "end": 3298.3
+    },
+    {
+        "text": " que le pongo para el A,",
+        "start": 3298.3,
+        "end": 3300.3
+    },
+    {
+        "text": " A su L por,",
+        "start": 3300.3,
+        "end": 3302.3
+    },
+    {
+        "text": " ese,",
+        "start": 3302.3,
+        "end": 3303.3
+    },
+    {
+        "text": " Ese a la L,",
+        "start": 3303.3,
+        "end": 3304.3
+    },
+    {
+        "text": " más,",
+        "start": 3304.3,
+        "end": 3305.3
+    },
+    {
+        "text": " el minus 1,",
+        "start": 3305.3,
+        "end": 3306.3
+    },
+    {
+        "text": " por ese,",
+        "start": 3306.3,
+        "end": 3307.3
+    },
+    {
+        "text": " la N,",
+        "start": 3307.3,
+        "end": 3308.3
+    },
+    {
+        "text": " más,",
+        "start": 3308.3,
+        "end": 3309.3
+    },
+    {
+        "text": " etc.",
+        "start": 3309.3,
+        "end": 3310.3
+    },
+    {
+        "text": " Su polinomio Ns,",
+        "start": 3310.3,
+        "end": 3313.3
+    },
+    {
+        "text": " de grado,",
+        "start": 3313.3,
+        "end": 3315.3
+    },
+    {
+        "text": " L.",
+        "start": 3315.3,
+        "end": 3317.3
+    },
+    {
+        "text": " Esta lo hicimos hasta cuenta juntos ya una vez.",
+        "start": 3318.3,
+        "end": 3321.3
+    },
+    {
+        "text": " Pero lo que digo,",
+        "start": 3321.3,
+        "end": 3323.3
+    },
+    {
+        "text": " es que un polinomio Ns de grado,",
+        "start": 3323.3,
+        "end": 3325.3
+    },
+    {
+        "text": " L,",
+        "start": 3325.3,
+        "end": 3326.3
+    },
+    {
+        "text": " cuando L es menor que N,",
+        "start": 3326.3,
+        "end": 3329.3
+    },
+    {
+        "text": " ¿qué pasa?",
+        "start": 3329.3,
+        "end": 3330.3
+    },
+    {
+        "text": " Yo voy a dividir y después voy a multiplicar,",
+        "start": 3330.3,
+        "end": 3334.3
+    },
+    {
+        "text": " por ese A la N,",
+        "start": 3334.3,
+        "end": 3335.3
+    },
+    {
+        "text": " dividamos todo entre ese A la N,",
+        "start": 3335.3,
+        "end": 3337.3
+    },
+    {
+        "text": " todo ese polinomio,",
+        "start": 3337.3,
+        "end": 3338.3
+    },
+    {
+        "text": " divido entre ese A la N,",
+        "start": 3338.3,
+        "end": 3340.3
+    },
+    {
+        "text": " mentalmente,",
+        "start": 3340.3,
+        "end": 3343.3
+    },
+    {
+        "text": " así no tengo que dividir,",
+        "start": 3343.3,
+        "end": 3345.3
+    },
+    {
+        "text": " después borrar que me queda poco pizarro,",
+        "start": 3345.3,
+        "end": 3347.3
+    },
+    {
+        "text": " pero ustedes si quieren dividir,",
+        "start": 3347.3,
+        "end": 3348.3
+    },
+    {
+        "text": " después los divine vuelta,",
+        "start": 3348.3,
+        "end": 3350.3
+    },
+    {
+        "text": " me, me dividan todas las presiones del polinomio",
+        "start": 3350.3,
+        "end": 3353.3
+    },
+    {
+        "text": " entre ese A la N,",
+        "start": 3353.3,
+        "end": 3356.3
+    },
+    {
+        "text": " entonces te queda,",
+        "start": 3356.3,
+        "end": 3358.3
+    },
+    {
+        "text": " a su,",
+        "start": 3358.3,
+        "end": 3360.3
+    },
+    {
+        "text": " Ese a la N,",
+        "start": 3360.3,
+        "end": 3362.3
+    },
+    {
+        "text": " Ese a la N,",
+        "start": 3362.3,
+        "end": 3363.3
+    },
+    {
+        "text": " el TAM,",
+        "start": 3363.3,
+        "end": 3364.3
+    },
+    {
+        "text": " el N es el que está ahí.",
+        "start": 3364.3,
+        "end": 3366.3
+    },
+    {
+        "text": " Entonces te queda,",
+        "start": 3366.3,
+        "end": 3367.3
+    },
+    {
+        "text": " Ese a la N y V,",
+        "start": 3367.3,
+        "end": 3368.3
+    },
+    {
+        "text": " Ese a la N,",
+        "start": 3368.3,
+        "end": 3369.3
+    },
+    {
+        "text": " Ese a la N menos 1,",
+        "start": 3369.3,
+        "end": 3370.3
+    },
+    {
+        "text": " Ese a la N, ¿no verdad?",
+        "start": 3370.3,
+        "end": 3372.3
+    },
+    {
+        "text": " O sea, si quieres te queda,",
+        "start": 3372.3,
+        "end": 3374.3
+    },
+    {
+        "text": " Ese,",
+        "start": 3374.3,
+        "end": 3376.3
+    },
+    {
+        "text": " donde hay más,",
+        "start": 3376.3,
+        "end": 3378.3
+    },
+    {
+        "text": " arriba abajo,",
+        "start": 3378.3,
+        "end": 3380.3
+    },
+    {
+        "text": " Ese a la N y V,",
+        "start": 3380.3,
+        "end": 3381.3
+    },
+    {
+        "text": " Ese a la N,",
+        "start": 3381.3,
+        "end": 3382.3
+    },
+    {
+        "text": " más abajo,",
+        "start": 3382.3,
+        "end": 3383.3
+    },
+    {
+        "text": " porque hay más grande,",
+        "start": 3383.3,
+        "end": 3385.3
+    },
+    {
+        "text": " hay más abajo,",
+        "start": 3385.3,
+        "end": 3386.3
+    },
+    {
+        "text": " porque hay más grande.",
+        "start": 3386.3,
+        "end": 3387.3
+    },
+    {
+        "text": " Entonces, ¿cómo son estos números?",
+        "start": 3387.3,
+        "end": 3389.3
+    },
+    {
+        "text": " Ese a la N y V,",
+        "start": 3389.3,
+        "end": 3391.3
+    },
+    {
+        "text": " Ese a la N es el N menos 1 y V,",
+        "start": 3391.3,
+        "end": 3393.3
+    },
+    {
+        "text": " Ese a la N, ¿cómo son?",
+        "start": 3393.3,
+        "end": 3394.3
+    },
+    {
+        "text": " Menor que 1,",
+        "start": 3394.3,
+        "end": 3396.3
+    },
+    {
+        "text": " menor que 1,",
+        "start": 3396.3,
+        "end": 3397.3
+    },
+    {
+        "text": " porque el Ese se supone que tiene infinito, ¿no verdad?",
+        "start": 3397.3,
+        "end": 3400.3
+    },
+    {
+        "text": " Son todos menores que 1.",
+        "start": 3400.3,
+        "end": 3402.3
+    },
+    {
+        "text": " Ah, y si son todos menores que 1,",
+        "start": 3402.3,
+        "end": 3405.3
+    },
+    {
+        "text": " y estos números son números del polinomio,",
+        "start": 3405.3,
+        "end": 3407.3
+    },
+    {
+        "text": " o están fijos,",
+        "start": 3407.3,
+        "end": 3408.3
+    },
+    {
+        "text": " son los constantes,",
+        "start": 3408.3,
+        "end": 3409.3
+    },
+    {
+        "text": " quiere decir que esto,",
+        "start": 3409.3,
+        "end": 3410.3
+    },
+    {
+        "text": " esto,",
+        "start": 3410.3,
+        "end": 3412.3
+    },
+    {
+        "text": " todo dividido ese A la N,",
+        "start": 3412.3,
+        "end": 3414.3
+    },
+    {
+        "text": " es menor que 1 constante D,",
+        "start": 3414.3,
+        "end": 3416.3
+    },
+    {
+        "text": " pues estos son números por 1,",
+        "start": 3416.3,
+        "end": 3418.3
+    },
+    {
+        "text": " por algo menor que 1,",
+        "start": 3418.3,
+        "end": 3419.3
+    },
+    {
+        "text": " un número por algo menor que 1,",
+        "start": 3419.3,
+        "end": 3421.3
+    },
+    {
+        "text": " un número por algo menor que 1.",
+        "start": 3421.3,
+        "end": 3422.3
+    },
+    {
+        "text": " Entonces, esto es menor,",
+        "start": 3422.3,
+        "end": 3425.3
+    },
+    {
+        "text": " y un número de,",
+        "start": 3425.3,
+        "end": 3426.3
+    },
+    {
+        "text": " fijo,",
+        "start": 3426.3,
+        "end": 3427.3
+    },
+    {
+        "text": " una constante.",
+        "start": 3427.3,
+        "end": 3428.3
+    },
+    {
+        "text": " Pero esta cuenta que hicimos mentalmente,",
+        "start": 3430.3,
+        "end": 3432.3
+    },
+    {
+        "text": " no sé si hay aquí en el papel,",
+        "start": 3432.3,
+        "end": 3433.3
+    },
+    {
+        "text": " ir a dividir en el 3 a la N,",
+        "start": 3433.3,
+        "end": 3434.3
+    },
+    {
+        "text": " yo no dividir en el 3 a la N,",
+        "start": 3434.3,
+        "end": 3435.3
+    },
+    {
+        "text": " yo no dividir en el 3 a la N,",
+        "start": 3435.3,
+        "end": 3436.3
+    },
+    {
+        "text": " yo sé que tengo que multiplicar por el 3 a la N.",
+        "start": 3436.3,
+        "end": 3438.3
+    },
+    {
+        "text": " Dicho otra manera,",
+        "start": 3443.3,
+        "end": 3444.3
+    },
+    {
+        "text": " existe una constante de,",
+        "start": 3446.3,
+        "end": 3448.3
+    },
+    {
+        "text": " tal que esto es menor,",
+        "start": 3448.3,
+        "end": 3449.3
+    },
+    {
+        "text": " si yo se lo decía como comportamiento",
+        "start": 3449.3,
+        "end": 3451.3
+    },
+    {
+        "text": " en el infinito,",
+        "start": 3451.3,
+        "end": 3452.3
+    },
+    {
+        "text": " nadie lo daba, ¿no?",
+        "start": 3452.3,
+        "end": 3453.3
+    },
+    {
+        "text": " Ah, claro,",
+        "start": 3453.3,
+        "end": 3454.3
+    },
+    {
+        "text": " profe porque el infinito,",
+        "start": 3454.3,
+        "end": 3455.3
+    },
+    {
+        "text": " el S la N le gana cualquier otra potencia,",
+        "start": 3455.3,
+        "end": 3457.3
+    },
+    {
+        "text": " porque la demás son menores,",
+        "start": 3457.3,
+        "end": 3459.3
+    },
+    {
+        "text": " y sí tiene un razón.",
+        "start": 3459.3,
+        "end": 3460.3
+    },
+    {
+        "text": " Pero,",
+        "start": 3461.3,
+        "end": 3462.3
+    },
+    {
+        "text": " era un poquito más fino que el comportamiento",
+        "start": 3462.3,
+        "end": 3463.3
+    },
+    {
+        "text": " del infinito,",
+        "start": 3463.3,
+        "end": 3464.3
+    },
+    {
+        "text": " quería escribir explícitamente",
+        "start": 3464.3,
+        "end": 3466.3
+    },
+    {
+        "text": " que esto es menor que D,",
+        "start": 3466.3,
+        "end": 3467.3
+    },
+    {
+        "text": " porque existe una constante,",
+        "start": 3467.3,
+        "end": 3468.3
+    },
+    {
+        "text": " entonces,",
+        "start": 3468.3,
+        "end": 3469.3
+    },
+    {
+        "text": " dividimos todo entre D a la N,",
+        "start": 3469.3,
+        "end": 3471.3
+    },
+    {
+        "text": " y después multiplico entre D a la N y Chao 1.",
+        "start": 3471.3,
+        "end": 3473.3
+    },
+    {
+        "text": " Bueno,",
+        "start": 3476.3,
+        "end": 3477.3
+    },
+    {
+        "text": " eso es lo que hace el libro,",
+        "start": 3477.3,
+        "end": 3479.3
+    },
+    {
+        "text": " lo hace hacia el toque,",
+        "start": 3479.3,
+        "end": 3480.3
+    },
+    {
+        "text": " yo quería analizarlo de espacito",
+        "start": 3480.3,
+        "end": 3481.3
+    },
+    {
+        "text": " para que todo mundo lo viera.",
+        "start": 3481.3,
+        "end": 3483.3
+    },
+    {
+        "text": " Bien,",
+        "start": 3485.3,
+        "end": 3486.3
+    },
+    {
+        "text": " y otra cosa que voy a analizar",
+        "start": 3486.3,
+        "end": 3487.3
+    },
+    {
+        "text": " de espacito con ustedes,",
+        "start": 3487.3,
+        "end": 3488.3
+    },
+    {
+        "text": " recordándoles un poquito,",
+        "start": 3489.3,
+        "end": 3490.3
+    },
+    {
+        "text": " cálculo 1, probablemente.",
+        "start": 3490.3,
+        "end": 3492.3
+    },
+    {
+        "text": " Así tenemos todos de las herramientas",
+        "start": 3494.3,
+        "end": 3496.3
+    },
+    {
+        "text": " bien claritas,",
+        "start": 3496.3,
+        "end": 3498.3
+    },
+    {
+        "text": " y ya después patemos el penal.",
+        "start": 3499.3,
+        "end": 3500.3
+    },
+    {
+        "text": " O sea, analicemos 1 y analicemos 2.",
+        "start": 3503.3,
+        "end": 3505.3
+    },
+    {
+        "text": " Son insumos,",
+        "start": 3505.3,
+        "end": 3506.3
+    },
+    {
+        "text": " para seguir con la desigueldad ahora, ¿sí?",
+        "start": 3506.3,
+        "end": 3508.3
+    },
+    {
+        "text": " Y sumos por separado.",
+        "start": 3509.3,
+        "end": 3511.3
+    },
+    {
+        "text": " ¿Cuánto vale el este limiter?",
+        "start": 3511.3,
+        "end": 3515.3
+    },
+    {
+        "text": " Estamos hablando ahora de números reales,",
+        "start": 3516.3,
+        "end": 3518.3
+    },
+    {
+        "text": " si quieren o...",
+        "start": 3518.3,
+        "end": 3519.3
+    },
+    {
+        "text": " cálculo 1.",
+        "start": 3523.3,
+        "end": 3524.3
+    },
+    {
+        "text": " Ese tiene más infinito.",
+        "start": 3537.3,
+        "end": 3539.3
+    },
+    {
+        "text": " Es la potencia,",
+        "start": 3539.3,
+        "end": 3540.3
+    },
+    {
+        "text": " se veamos pensando en su número entero, ¿no?",
+        "start": 3540.3,
+        "end": 3542.3
+    },
+    {
+        "text": " Es el que va a jugar de potencia.",
+        "start": 3543.3,
+        "end": 3545.3
+    },
+    {
+        "text": " ¿Cuánto vale ese limiter?",
+        "start": 3546.3,
+        "end": 3547.3
+    },
+    {
+        "text": " Por un lado, el E se quiere ir al infinito",
+        "start": 3549.3,
+        "end": 3551.3
+    },
+    {
+        "text": " y el E se la en esta fijo, ¿no?",
+        "start": 3551.3,
+        "end": 3553.3
+    },
+    {
+        "text": " El E se quiere ir al infinito,",
+        "start": 3553.3,
+        "end": 3555.3
+    },
+    {
+        "text": " pero otro lado, la raíz es E,",
+        "start": 3555.3,
+        "end": 3557.3
+    },
+    {
+        "text": " si más lo quiere,",
+        "start": 3557.3,
+        "end": 3558.3
+    },
+    {
+        "text": " la chica.",
+        "start": 3558.3,
+        "end": 3559.3
+    },
+    {
+        "text": " ¿Qué manáis? ¿Cómo o cuánto va ese limiter?",
+        "start": 3560.3,
+        "end": 3562.3
+    },
+    {
+        "text": " ¿A quién se acuerda?",
+        "start": 3566.3,
+        "end": 3568.3
+    },
+    {
+        "text": " ¿A quién se acuerda?",
+        "start": 3570.3,
+        "end": 3571.3
+    },
+    {
+        "text": " A uno.",
+        "start": 3572.3,
+        "end": 3573.3
+    },
+    {
+        "text": " ¿Y cómo se demostra...",
+        "start": 3574.3,
+        "end": 3576.3
+    },
+    {
+        "text": " Tengo un truco llado en el mente,",
+        "start": 3577.3,
+        "end": 3579.3
+    },
+    {
+        "text": " pero capaz que ustedes tienen otro truco.",
+        "start": 3579.3,
+        "end": 3581.3
+    },
+    {
+        "text": " Llevarlo a otro conocido, ¿no?",
+        "start": 3585.3,
+        "end": 3587.3
+    },
+    {
+        "text": " Porque esto es siempre es comparación de órdenes.",
+        "start": 3587.3,
+        "end": 3590.3
+    },
+    {
+        "text": " Pero este orden es como que le ojeje,",
+        "start": 3590.3,
+        "end": 3592.3
+    },
+    {
+        "text": " es que él es este, ¿no?",
+        "start": 3592.3,
+        "end": 3593.3
+    },
+    {
+        "text": " ¿Qué pasa?",
+        "start": 3594.3,
+        "end": 3596.3
+    },
+    {
+        "text": " Me permite en este...",
+        "start": 3596.3,
+        "end": 3598.3
+    },
+    {
+        "text": " Se acuerdan la...",
+        "start": 3601.3,
+        "end": 3603.3
+    },
+    {
+        "text": " Poco es multiplicar dividir por el mismo número,",
+        "start": 3603.3,
+        "end": 3605.3
+    },
+    {
+        "text": " su mal y restar el mismo número,",
+        "start": 3605.3,
+        "end": 3607.3
+    },
+    {
+        "text": " ese truco le...",
+        "start": 3607.3,
+        "end": 3608.3
+    },
+    {
+        "text": " Pero muchas veces en cálculo 1,",
+        "start": 3608.3,
+        "end": 3609.3
+    },
+    {
+        "text": " elevaban E a la logarismo D.",
+        "start": 3609.3,
+        "end": 3612.3
+    },
+    {
+        "text": " O sea, EX es igual E a la logarismo DX, ¿accuerdan?",
+        "start": 3612.3,
+        "end": 3616.3
+    },
+    {
+        "text": " Así es, aparecer una función en la inversa.",
+        "start": 3616.3,
+        "end": 3618.3
+    },
+    {
+        "text": " Y, bueno, vamos a hacer eso.",
+        "start": 3618.3,
+        "end": 3620.3
+    },
+    {
+        "text": " Entonces, esto es el límite.",
+        "start": 3621.3,
+        "end": 3623.3
+    },
+    {
+        "text": " Cuando E tiene más infinito de E a la logarismo,",
+        "start": 3623.3,
+        "end": 3628.3
+    },
+    {
+        "text": " va a ser, por supuesto, de la misma expresión.",
+        "start": 3628.3,
+        "end": 3632.3
+    },
+    {
+        "text": " Y, en principio, es la complicaste, pero no,",
+        "start": 3633.3,
+        "end": 3635.3
+    },
+    {
+        "text": " porque el logarismo ayudaba...",
+        "start": 3635.3,
+        "end": 3637.3
+    },
+    {
+        "text": " salen muy tonicosa para fuera, ¿cierto?",
+        "start": 3637.3,
+        "end": 3639.3
+    },
+    {
+        "text": " ¿Quién me ayuda acá?",
+        "start": 3642.3,
+        "end": 3643.3
+    },
+    {
+        "text": " El límite cuando E tiene más infinito de E a la cuanto.",
+        "start": 3645.3,
+        "end": 3648.3
+    },
+    {
+        "text": " Y el N, ¿no lo puedo sacar también?",
+        "start": 3651.3,
+        "end": 3654.3
+    },
+    {
+        "text": " Que no puedo dar el N.",
+        "start": 3654.3,
+        "end": 3656.3
+    },
+    {
+        "text": " Ahí va. Y...",
+        "start": 3656.3,
+        "end": 3657.3
+    },
+    {
+        "text": " ¿Quién me puede dar el N sobre E a la logarismo DX?",
+        "start": 3657.3,
+        "end": 3659.3
+    },
+    {
+        "text": " E, sobre E a la logarismo DX. ¿Están de acuerdo?",
+        "start": 3659.3,
+        "end": 3663.3
+    },
+    {
+        "text": " Porque el raíces EX es 1A,",
+        "start": 3666.3,
+        "end": 3668.3
+    },
+    {
+        "text": " es 1A, es 1A, ¿no?",
+        "start": 3668.3,
+        "end": 3670.3
+    },
+    {
+        "text": " Sí.",
+        "start": 3670.3,
+        "end": 3671.3
+    },
+    {
+        "text": " ¿Quién me puede hacer el mismo...",
+        "start": 3671.3,
+        "end": 3673.3
+    },
+    {
+        "text": " El sumímino que es sumitar como EX a la N sobre EX",
+        "start": 3673.3,
+        "end": 3678.3
+    },
+    {
+        "text": " y como EX al finito,",
+        "start": 3678.3,
+        "end": 3680.3
+    },
+    {
+        "text": " ¿dejone el A0?",
+        "start": 3680.3,
+        "end": 3682.3
+    },
+    {
+        "text": " Y el A base tiene infinito.",
+        "start": 3682.3,
+        "end": 3684.3
+    },
+    {
+        "text": " ¿Y no van a ayudar a la logarismo DX?",
+        "start": 3684.3,
+        "end": 3687.3
+    },
+    {
+        "text": " Sí, claro, pero es lo que te estoy mostrando.",
+        "start": 3687.3,
+        "end": 3689.3
+    },
+    {
+        "text": " Sí, sí, yo estoy a acuerdo contigo.",
+        "start": 3689.3,
+        "end": 3691.3
+    },
+    {
+        "text": " Estoy a acuerdo contigo.",
+        "start": 3691.3,
+        "end": 3692.3
+    },
+    {
+        "text": " Pero te estoy mostrando que eso es verdad, ¿no?",
+        "start": 3692.3,
+        "end": 3695.3
+    },
+    {
+        "text": " Eso lo ven.",
+        "start": 3696.3,
+        "end": 3697.3
+    },
+    {
+        "text": " O sea, el raíces EX y el Maburíces acuerdan C que le puedo cambiar",
+        "start": 3697.3,
+        "end": 3701.3
+    },
+    {
+        "text": " y le puedo poner así, ¿no?",
+        "start": 3701.3,
+        "end": 3703.3
+    },
+    {
+        "text": " EX a la N sobre EX.",
+        "start": 3703.3,
+        "end": 3705.3
+    },
+    {
+        "text": " Capaje se den más fácil, ¿no?",
+        "start": 3705.3,
+        "end": 3707.3
+    },
+    {
+        "text": " Y el N sobre EX es a la parafuera del logarismo.",
+        "start": 3707.3,
+        "end": 3710.3
+    },
+    {
+        "text": " Y ahora, todavía estoy muy arregado, muy agarrario",
+        "start": 3710.3,
+        "end": 3714.3
+    },
+    {
+        "text": " y este...",
+        "start": 3714.3,
+        "end": 3716.3
+    },
+    {
+        "text": " Este lo hace así, ¿miren?",
+        "start": 3716.3,
+        "end": 3718.3
+    },
+    {
+        "text": " N lo darimos de EX sobre EX.",
+        "start": 3718.3,
+        "end": 3721.3
+    },
+    {
+        "text": " De la misma N, solamente los cambia de EX.",
+        "start": 3721.3,
+        "end": 3724.3
+    },
+    {
+        "text": " Y ahí lo ven clarito, ¿no?",
+        "start": 3724.3,
+        "end": 3725.3
+    },
+    {
+        "text": " Lo darimos de EX sobre EX, ¿quién ganan ahí?",
+        "start": 3725.3,
+        "end": 3728.3
+    },
+    {
+        "text": " Lo darimos de EX dividido EX.",
+        "start": 3731.3,
+        "end": 3733.3
+    },
+    {
+        "text": " EX?",
+        "start": 3733.3,
+        "end": 3734.3
+    },
+    {
+        "text": " Porque uno es lo barímic, lo otro es este potencial.",
+        "start": 3734.3,
+        "end": 3738.3
+    },
+    {
+        "text": " Entonces, si ganan cuánto tiende esto, esto tiende a 0.",
+        "start": 3738.3,
+        "end": 3743.3
+    },
+    {
+        "text": " Bueno, en estas fijo, su número fijo, esto tiende a 0 e a la 0, 1.",
+        "start": 3743.3,
+        "end": 3748.3
+    },
+    {
+        "text": " O sea, que es verdad lo que me dijeros de síntil de la mente,",
+        "start": 3748.3,
+        "end": 3752.3
+    },
+    {
+        "text": " eso tiende a 1.",
+        "start": 3752.3,
+        "end": 3754.3
+    },
+    {
+        "text": " Pero, ¿viste?",
+        "start": 3754.3,
+        "end": 3755.3
+    },
+    {
+        "text": " Por lo menos lo repasamos, se va.",
+        "start": 3755.3,
+        "end": 3757.3
+    },
+    {
+        "text": " Ganar el exponente.",
+        "start": 3757.3,
+        "end": 3758.3
+    },
+    {
+        "text": " Estoy a acuerdo.",
+        "start": 3758.3,
+        "end": 3759.3
+    },
+    {
+        "text": " Ahora tenemos todas las herramientas, Burice.",
+        "start": 3761.3,
+        "end": 3763.3
+    },
+    {
+        "text": " Con esto se va a dar a nadie si queremos por separado.",
+        "start": 3764.3,
+        "end": 3767.3
+    },
+    {
+        "text": " Tenemos todas las herramientas para terminar las cotas, la verde y la roja.",
+        "start": 3767.3,
+        "end": 3771.3
+    },
+    {
+        "text": " Voy a borrar a ella la derecha.",
+        "start": 3771.3,
+        "end": 3773.3
+    },
+    {
+        "text": " Muy bien.",
+        "start": 3794.3,
+        "end": 3795.3
+    },
+    {
+        "text": " Ah, bueno, me quedó un detallecito más, una análisis 3,",
+        "start": 3803.3,
+        "end": 3806.3
+    },
+    {
+        "text": " pero este es el más fácil de todo y yo sé que lo saben.",
+        "start": 3806.3,
+        "end": 3809.3
+    },
+    {
+        "text": " Ya sé que lo saben, este es muy sencillo.",
+        "start": 3809.3,
+        "end": 3812.3
+    },
+    {
+        "text": " ¿Cuánto da este límite?",
+        "start": 3812.3,
+        "end": 3814.3
+    },
+    {
+        "text": " Este es mucho más fácil.",
+        "start": 3814.3,
+        "end": 3815.3
+    },
+    {
+        "text": " De eso un número fijo.",
+        "start": 3815.3,
+        "end": 3817.3
+    },
+    {
+        "text": " Este es más fácil.",
+        "start": 3823.3,
+        "end": 3825.3
+    },
+    {
+        "text": " Si cuando ese se movía y tenía infinito dio 1, este es cuando da.",
+        "start": 3825.3,
+        "end": 3829.3
+    },
+    {
+        "text": " ¿Este es?",
+        "start": 3829.3,
+        "end": 3830.3
+    },
+    {
+        "text": " Uno.",
+        "start": 3830.3,
+        "end": 3832.3
+    },
+    {
+        "text": " Uno.",
+        "start": 3832.3,
+        "end": 3833.3
+    },
+    {
+        "text": " ¿Este es este día?",
+        "start": 3833.3,
+        "end": 3835.3
+    },
+    {
+        "text": " ¿Reis cuadrada de la descuvica de la descuarta de la quinta de cada vez más, cerca de 1?",
+        "start": 3835.3,
+        "end": 3841.3
+    },
+    {
+        "text": " ¿No?",
+        "start": 3841.3,
+        "end": 3842.3
+    },
+    {
+        "text": " ¿Siguiente o cuesta la descuvica?",
+        "start": 3843.3,
+        "end": 3845.3
+    },
+    {
+        "text": " No, pero desde...",
+        "start": 3845.3,
+        "end": 3847.3
+    },
+    {
+        "text": " desde a ver para Camille es uno...",
+        "start": 3848.3,
+        "end": 3851.3
+    },
+    {
+        "text": " Es uno nuestro pero para un poquitito es este.",
+        "start": 3851.3,
+        "end": 3854.3
+    },
+    {
+        "text": " Acá había aparecido el des.",
+        "start": 3854.3,
+        "end": 3856.3
+    },
+    {
+        "text": " Es la constante.",
+        "start": 3856.3,
+        "end": 3857.3
+    },
+    {
+        "text": " Si, gracias.",
+        "start": 3857.3,
+        "end": 3858.3
+    },
+    {
+        "text": " Desde este constante.",
+        "start": 3858.3,
+        "end": 3860.3
+    },
+    {
+        "text": " No, y vamos y puede ser ser.",
+        "start": 3860.3,
+        "end": 3862.3
+    },
+    {
+        "text": " No, bueno, está bien, pero la constante va a ser número grande.",
+        "start": 3862.3,
+        "end": 3865.3
+    },
+    {
+        "text": " Se supone positivo o grande.",
+        "start": 3865.3,
+        "end": 3868.3
+    },
+    {
+        "text": " Es más de hecho la puedo tomar tan grande como quiera.",
+        "start": 3868.3,
+        "end": 3871.3
+    },
+    {
+        "text": " Sé que existe uno y si no me comese, puede tomar uno mucho mayor.",
+        "start": 3872.3,
+        "end": 3877.3
+    },
+    {
+        "text": " Entonces supone que estoy manejando un número grande, pero cuando le meto la raíz es esima y como el número está fijo, eso da un.",
+        "start": 3877.3,
+        "end": 3885.3
+    },
+    {
+        "text": " Ahora sí, estamos pronto. Vamos a hacer la cuenta juntos.",
+        "start": 3885.3,
+        "end": 3888.3
+    },
+    {
+        "text": " Entonces, voy a tomar.",
+        "start": 3890.3,
+        "end": 3893.3
+    },
+    {
+        "text": " Vieron que acá, ya tenemos que el anormal de jala S es menor igual que la parte verde y la parte azul.",
+        "start": 3893.3,
+        "end": 3900.3
+    },
+    {
+        "text": " Voy a tomar el límite, quiero que necesitamos esta parte, el límite y quiero terminar probando que es menor igual que el radio espectral.",
+        "start": 3901.3,
+        "end": 3909.3
+    },
+    {
+        "text": " Pero estamos pronto.",
+        "start": 3909.3,
+        "end": 3910.3
+    },
+    {
+        "text": " Tomamos el límite acá.",
+        "start": 3910.3,
+        "end": 3912.3
+    },
+    {
+        "text": " Entonces, el límite, cuando S tiene más infinito,",
+        "start": 3912.3,
+        "end": 3917.3
+    },
+    {
+        "text": " este, el límite de la norma de la raíz es esima, ¿no verdad?",
+        "start": 3920.3,
+        "end": 3925.3
+    },
+    {
+        "text": " La raíz es esima y la norma de jala S es menor igual.",
+        "start": 3925.3,
+        "end": 3935.3
+    },
+    {
+        "text": " Entonces, le paso al color verde.",
+        "start": 3935.3,
+        "end": 3943.3
+    },
+    {
+        "text": " Bueno, tengo que tomar la raíz es esima de este número.",
+        "start": 3944.3,
+        "end": 3952.3
+    },
+    {
+        "text": " De vuelta, estoy manejando a medir, digamos, toda la zona positiva, acá no hay ningún problema.",
+        "start": 3952.3,
+        "end": 3958.3
+    },
+    {
+        "text": " Tomé la raíz es esima y tome el límite.",
+        "start": 3958.3,
+        "end": 3961.3
+    },
+    {
+        "text": " Entonces, menor igual que el límite tomando la raíz es es esima de esto.",
+        "start": 3961.3,
+        "end": 3965.3
+    },
+    {
+        "text": " Este es un número fijo elevado a la S, o sea que este queda roto, o sea que tengo que mirar acá.",
+        "start": 3965.3,
+        "end": 3970.3
+    },
+    {
+        "text": " Me queda menor igual que rodea, que es el que quiero que aparezca.",
+        "start": 3971.3,
+        "end": 3976.3
+    },
+    {
+        "text": " Por supuesto, estamos rodeando el radio espectral por el límite, cuando S tiene más infinito.",
+        "start": 3976.3,
+        "end": 3982.3
+    },
+    {
+        "text": " De, yo lo pongo así, y ustedes lo van a entender por S,",
+        "start": 3982.3,
+        "end": 4011.3
+    },
+    {
+        "text": " y todo esto es el medio y todo esto es el medio.",
+        "start": 4011.3,
+        "end": 4031.3
+    },
+    {
+        "text": " Esto en el caso rodea mayor igual que lo.",
+        "start": 4031.3,
+        "end": 4037.3
+    },
+    {
+        "text": " Vamos de a poquito.",
+        "start": 4038.3,
+        "end": 4039.3
+    },
+    {
+        "text": " Estoy usando todo lo que escribimos abajo.",
+        "start": 4039.3,
+        "end": 4044.3
+    },
+    {
+        "text": " Lo primero que hice es al tomar a la 1 sobre S separen dos partes.",
+        "start": 4044.3,
+        "end": 4050.3
+    },
+    {
+        "text": " Como esto es un producto muy bien, pero a la 1 sobre S como esta estaba elevado a la S quedó rodea,",
+        "start": 4050.3,
+        "end": 4057.3
+    },
+    {
+        "text": " esa parte nadie le discute.",
+        "start": 4057.3,
+        "end": 4059.3
+    },
+    {
+        "text": " Ahora bien, esto le puse el límite, pero además ya puse menor igual,",
+        "start": 4059.3,
+        "end": 4063.3
+    },
+    {
+        "text": " porque este es menor igual que tomando el límite acá dentro, pero este ya lo acotea,",
+        "start": 4064.3,
+        "end": 4070.3
+    },
+    {
+        "text": " ya lo acotea acá.",
+        "start": 4070.3,
+        "end": 4071.3
+    },
+    {
+        "text": " O sea, acá yo otro salto, este es menor igual que este también.",
+        "start": 4071.3,
+        "end": 4077.3
+    },
+    {
+        "text": " Más allá de que tomé la raíz S es es y malo que quiero decir es que hay una desigualdad en el medio.",
+        "start": 4077.3,
+        "end": 4082.3
+    },
+    {
+        "text": " ¿Qué cuál es la desigualdad?",
+        "start": 4082.3,
+        "end": 4084.3
+    },
+    {
+        "text": " Bueno, resulta que estos cada uno estos términos, combinaciones de ese,",
+        "start": 4084.3,
+        "end": 4089.3
+    },
+    {
+        "text": " tomar J-1 de esto, ¿no?",
+        "start": 4089.3,
+        "end": 4091.3
+    },
+    {
+        "text": " Y todos estos, cuando va variando J-1 ahí, todos estos son menor que D a la S por S lm,",
+        "start": 4091.3,
+        "end": 4102.3
+    },
+    {
+        "text": " porque en todos estos casos el l, el J-1 es menor que N, cualquiera fuera J-1.",
+        "start": 4102.3,
+        "end": 4108.3
+    },
+    {
+        "text": " Entonces, eso sumando, la cuestión es que J-1 es menor que N,",
+        "start": 4108.3,
+        "end": 4112.3
+    },
+    {
+        "text": " entonces siempre se verifica que es menor que D por S lm.",
+        "start": 4112.3,
+        "end": 4115.3
+    },
+    {
+        "text": " ¿Tá?",
+        "start": 4116.3,
+        "end": 4117.3
+    },
+    {
+        "text": " Hay un detalle, profe, usted me dijo que el D era para este polinomio.",
+        "start": 4117.3,
+        "end": 4121.3
+    },
+    {
+        "text": " Bueno, ahí está bien, tapas que tenemos que hacer más prolígito, si decir,",
+        "start": 4121.3,
+        "end": 4126.3
+    },
+    {
+        "text": " el mismo D que sirva para todos los polinomios que surgen tomando combinaciones de ese tomado de L,",
+        "start": 4126.3,
+        "end": 4132.3
+    },
+    {
+        "text": " todas las combinaciones que aparecen acá.",
+        "start": 4132.3,
+        "end": 4135.3
+    },
+    {
+        "text": " ¿Cómo son muchos polinomios?",
+        "start": 4135.3,
+        "end": 4137.3
+    },
+    {
+        "text": " Bueno, tomemos 1, pero es un número finito, ¿no? Es un número finito.",
+        "start": 4137.3,
+        "end": 4140.3
+    },
+    {
+        "text": " Entonces, agarró el D más grande posible, tomo ese mismo D para todos,",
+        "start": 4140.3,
+        "end": 4143.3
+    },
+    {
+        "text": " el que sirva para todos. Es un detalle importante.",
+        "start": 4143.3,
+        "end": 4147.3
+    },
+    {
+        "text": " Entonces quiere decir que cada uno de estos sumando lo acoto por D por S,",
+        "start": 4147.3,
+        "end": 4153.3
+    },
+    {
+        "text": " a la N, ¿vieron? D por S, a la N.",
+        "start": 4153.3,
+        "end": 4156.3
+    },
+    {
+        "text": " Sólo que estaba el cuadrado ahí adentro, y como está el cuadrado aparece D cuadrado y C a la 12.",
+        "start": 4156.3,
+        "end": 4161.3
+    },
+    {
+        "text": " ¿Y esto que está acá que es N por N-1 sobre 2?",
+        "start": 4161.3,
+        "end": 4166.3
+    },
+    {
+        "text": " Claro, porque en definitiva es el triángulo de arriba,",
+        "start": 4166.3,
+        "end": 4171.3
+    },
+    {
+        "text": " que al osumo tiene N por N-1, tiene menos todavía,",
+        "start": 4171.3,
+        "end": 4175.3
+    },
+    {
+        "text": " pero N por N-1 sobre 2 sumando.",
+        "start": 4175.3,
+        "end": 4178.3
+    },
+    {
+        "text": " Este triángulo de arriba de la matriz N por N, ¿no?",
+        "start": 4178.3,
+        "end": 4181.3
+    },
+    {
+        "text": " ¿Cuánto sumando tiene ahí? N por N-1 sobre 2.",
+        "start": 4181.3,
+        "end": 4185.3
+    },
+    {
+        "text": " No tiene exactamente N por N-1.",
+        "start": 4185.3,
+        "end": 4189.3
+    },
+    {
+        "text": " ¿A bien? Son los sumando sesos que están ahí arriba.",
+        "start": 4189.3,
+        "end": 4192.3
+    },
+    {
+        "text": " La cantidad, digamos, la cantidad de sumando.",
+        "start": 4192.3,
+        "end": 4194.3
+    },
+    {
+        "text": " Lucé todo, todo lo que sabemos, lo que sé.",
+        "start": 4194.3,
+        "end": 4197.3
+    },
+    {
+        "text": " Todo esto elevado, ¿el medio? ¿Por qué está elevado el medio por este?",
+        "start": 4197.3,
+        "end": 4200.3
+    },
+    {
+        "text": " ¿Por qué está la medio por este medio?",
+        "start": 4200.3,
+        "end": 4203.3
+    },
+    {
+        "text": " Y todo elevado el a 1 sobre ese, ¿por qué?",
+        "start": 4203.3,
+        "end": 4205.3
+    },
+    {
+        "text": " Porque le tomaste la raíz E-S y Maya.",
+        "start": 4205.3,
+        "end": 4209.3
+    },
+    {
+        "text": " Ok, usamos todo bien y explicamos todo.",
+        "start": 4209.3,
+        "end": 4214.3
+    },
+    {
+        "text": " Hacemos lo azul junto, pero ahora que tenemos lo verde,",
+        "start": 4218.3,
+        "end": 4221.3
+    },
+    {
+        "text": " lo azul es muy sencillo, es muy parecido, digamos.",
+        "start": 4221.3,
+        "end": 4223.3
+    },
+    {
+        "text": " Lo azul siempre es como...",
+        "start": 4223.3,
+        "end": 4225.3
+    },
+    {
+        "text": " Es el otro caso que es bastante parecido.",
+        "start": 4225.3,
+        "end": 4228.3
+    },
+    {
+        "text": " Nos queda rodea por el límite, cuando ese tiene más infinito.",
+        "start": 4228.3,
+        "end": 4235.3
+    },
+    {
+        "text": " Voy a dejar un espacio acá.",
+        "start": 4240.3,
+        "end": 4242.3
+    },
+    {
+        "text": " Voy a dejar un espacio chiquitito.",
+        "start": 4242.3,
+        "end": 4244.3
+    },
+    {
+        "text": " Dejen un espacio que ahora agrega un factor que es la única diferencia que tienen en las 2.",
+        "start": 4244.3,
+        "end": 4248.3
+    },
+    {
+        "text": " Y después viene N por N-1 sobre 2,",
+        "start": 4248.3,
+        "end": 4253.3
+    },
+    {
+        "text": " por D cuadrado por E a la 2N.",
+        "start": 4253.3,
+        "end": 4257.3
+    },
+    {
+        "text": " A la 1, a la 1 sobre E a la 1 sobre E.",
+        "start": 4257.3,
+        "end": 4262.3
+    },
+    {
+        "text": " Y cuál es la única diferencia del factor?",
+        "start": 4262.3,
+        "end": 4266.3
+    },
+    {
+        "text": " Es que acá nosotros sacamos el ímpico rodea en el verde,",
+        "start": 4266.3,
+        "end": 4270.3
+    },
+    {
+        "text": " pero acá profe, usted me sacó rodea y no tiene rodeada.",
+        "start": 4270.3,
+        "end": 4273.3
+    },
+    {
+        "text": " Acá tiene rodeada, la S menos N.",
+        "start": 4273.3,
+        "end": 4276.3
+    },
+    {
+        "text": " Entonces, el menos N lo mandé para adentro.",
+        "start": 4276.3,
+        "end": 4279.3
+    },
+    {
+        "text": " Y entonces me queda acá 1 sobre RdA a la N.",
+        "start": 4279.3,
+        "end": 4286.3
+    },
+    {
+        "text": " O sea, acá estaría...",
+        "start": 4286.3,
+        "end": 4288.3
+    },
+    {
+        "text": " ¿Tú en el mundo lo vio?",
+        "start": 4288.3,
+        "end": 4290.3
+    },
+    {
+        "text": " RdA, acá estaría rodeada a la S,",
+        "start": 4290.3,
+        "end": 4293.3
+    },
+    {
+        "text": " pero la raiza es E a la S, entonces quedó rodea solito.",
+        "start": 4293.3,
+        "end": 4298.3
+    },
+    {
+        "text": " Como un truco, ¿no?",
+        "start": 4298.3,
+        "end": 4300.3
+    },
+    {
+        "text": " O sea, acá estaría rodeada a la S,",
+        "start": 4300.3,
+        "end": 4303.3
+    },
+    {
+        "text": " pero la raiza es E a la S,",
+        "start": 4303.3,
+        "end": 4305.3
+    },
+    {
+        "text": " entonces quedó rodea solito.",
+        "start": 4305.3,
+        "end": 4307.3
+    },
+    {
+        "text": " Como un truco, usted me sacó la RdA,",
+        "start": 4307.3,
+        "end": 4310.3
+    },
+    {
+        "text": " pero la raiza es E a la S,",
+        "start": 4310.3,
+        "end": 4313.3
+    },
+    {
+        "text": " entonces quedó rodeada solito.",
+        "start": 4313.3,
+        "end": 4315.3
+    },
+    {
+        "text": " Como un truco, usted me sacó la RdA,",
+        "start": 4315.3,
+        "end": 4318.3
+    },
+    {
+        "text": " y el rodea que estaba restando,",
+        "start": 4318.3,
+        "end": 4320.3
+    },
+    {
+        "text": " se lo saqué para poder que quede enterito y afuera.",
+        "start": 4320.3,
+        "end": 4323.3
+    },
+    {
+        "text": " Está, es la única diferencia del lado.",
+        "start": 4323.3,
+        "end": 4325.3
+    },
+    {
+        "text": " Y vamos por ahí donde estamos.",
+        "start": 4325.3,
+        "end": 4327.3
+    },
+    {
+        "text": " Acá estamos en el caso,",
+        "start": 4327.3,
+        "end": 4329.3
+    },
+    {
+        "text": " rodea menor que ahora.",
+        "start": 4329.3,
+        "end": 4331.3
+    },
+    {
+        "text": " No sé si, ¿a cuántas que estamos usando?",
+        "start": 4331.3,
+        "end": 4333.3
+    },
+    {
+        "text": " Gal 1, Gal 2,",
+        "start": 4333.3,
+        "end": 4335.3
+    },
+    {
+        "text": " Calculo 1, Calculo 2.",
+        "start": 4335.3,
+        "end": 4338.3
+    },
+    {
+        "text": " Toda en la matemática,",
+        "start": 4338.3,
+        "end": 4340.3
+    },
+    {
+        "text": " a ver, ¿sí tiene algo o el inocente curso?",
+        "start": 4340.3,
+        "end": 4344.3
+    },
+    {
+        "text": " Sí, sí, sí, sí, pero está acá fuera.",
+        "start": 4344.3,
+        "end": 4349.3
+    },
+    {
+        "text": " Ah, está bien, ¿no?",
+        "start": 4349.3,
+        "end": 4352.3
+    },
+    {
+        "text": " Sí, sí, sí, sí, correctísimo.",
+        "start": 4352.3,
+        "end": 4354.3
+    },
+    {
+        "text": " Está, está, está,",
+        "start": 4354.3,
+        "end": 4355.3
+    },
+    {
+        "text": " incluye a este muchacho, ¿no?",
+        "start": 4355.3,
+        "end": 4357.3
+    },
+    {
+        "text": " Sí, sí.",
+        "start": 4357.3,
+        "end": 4358.3
+    },
+    {
+        "text": " Bueno, muy bien.",
+        "start": 4358.3,
+        "end": 4362.3
+    },
+    {
+        "text": " Y ahora sí, ya estamos pronto para patir al penal, ¿no?",
+        "start": 4362.3,
+        "end": 4365.3
+    },
+    {
+        "text": " A ver, ¿gurices?",
+        "start": 4365.3,
+        "end": 4366.3
+    },
+    {
+        "text": " Este...",
+        "start": 4366.3,
+        "end": 4368.3
+    },
+    {
+        "text": " El límite este,",
+        "start": 4368.3,
+        "end": 4370.3
+    },
+    {
+        "text": " cuando analicemos el límite",
+        "start": 4370.3,
+        "end": 4373.3
+    },
+    {
+        "text": " cuando el sitio es más infinito.",
+        "start": 4373.3,
+        "end": 4374.3
+    },
+    {
+        "text": " Cada pedacito,",
+        "start": 4374.3,
+        "end": 4375.3
+    },
+    {
+        "text": " el D, empecemos por el D.",
+        "start": 4375.3,
+        "end": 4377.3
+    },
+    {
+        "text": " D el cuadrado está a la 1 medio.",
+        "start": 4377.3,
+        "end": 4380.3
+    },
+    {
+        "text": " Si quieren los sacamos,",
+        "start": 4380.3,
+        "end": 4382.3
+    },
+    {
+        "text": " el cuadrado a 1 medio te queda D,",
+        "start": 4382.3,
+        "end": 4383.3
+    },
+    {
+        "text": " a la 1 sobre ese, ¿cuánto da?",
+        "start": 4383.3,
+        "end": 4385.3
+    },
+    {
+        "text": " 1, ese trocito da,",
+        "start": 4385.3,
+        "end": 4388.3
+    },
+    {
+        "text": " a 1 está analizado acá.",
+        "start": 4388.3,
+        "end": 4389.3
+    },
+    {
+        "text": " ¿no?",
+        "start": 4389.3,
+        "end": 4390.3
+    },
+    {
+        "text": " Ahora, esta parte,",
+        "start": 4390.3,
+        "end": 4392.3
+    },
+    {
+        "text": " ese a la 2m,",
+        "start": 4392.3,
+        "end": 4393.3
+    },
+    {
+        "text": " elevado a 1 medio te crea ese a la n.",
+        "start": 4393.3,
+        "end": 4395.3
+    },
+    {
+        "text": " ¿Cierto?",
+        "start": 4395.3,
+        "end": 4397.3
+    },
+    {
+        "text": " A la 1 sobre ese,",
+        "start": 4397.3,
+        "end": 4398.3
+    },
+    {
+        "text": " lo analizamos juntos.",
+        "start": 4398.3,
+        "end": 4400.3
+    },
+    {
+        "text": " Acá, ¿cuánto da?",
+        "start": 4400.3,
+        "end": 4402.3
+    },
+    {
+        "text": " 1.",
+        "start": 4402.3,
+        "end": 4403.3
+    },
+    {
+        "text": " Y esta parte que es,",
+        "start": 4403.3,
+        "end": 4405.3
+    },
+    {
+        "text": " eso es un número,",
+        "start": 4405.3,
+        "end": 4406.3
+    },
+    {
+        "text": " otro D digamos,",
+        "start": 4406.3,
+        "end": 4407.3
+    },
+    {
+        "text": " otro número fijo,",
+        "start": 4407.3,
+        "end": 4408.3
+    },
+    {
+        "text": " en esta fijo,",
+        "start": 4408.3,
+        "end": 4410.3
+    },
+    {
+        "text": " elevado a 1 medio,",
+        "start": 4410.3,
+        "end": 4411.3
+    },
+    {
+        "text": " un número fijo,",
+        "start": 4411.3,
+        "end": 4412.3
+    },
+    {
+        "text": " elevado a la 1 sobre ese,",
+        "start": 4412.3,
+        "end": 4413.3
+    },
+    {
+        "text": " se va a comportar igual que esto.",
+        "start": 4413.3,
+        "end": 4415.3
+    },
+    {
+        "text": " 1, o sea que toda esta parte",
+        "start": 4415.3,
+        "end": 4416.3
+    },
+    {
+        "text": " es cuando tiende a 1.",
+        "start": 4416.3,
+        "end": 4419.3
+    },
+    {
+        "text": " Para, para, no.",
+        "start": 4419.3,
+        "end": 4420.3
+    },
+    {
+        "text": " Y el azul,",
+        "start": 4420.3,
+        "end": 4421.3
+    },
+    {
+        "text": " lo mismo, ¿no?",
+        "start": 4421.3,
+        "end": 4423.3
+    },
+    {
+        "text": " Este, por el sea,",
+        "start": 4423.3,
+        "end": 4424.3
+    },
+    {
+        "text": " alguien se confunde acá.",
+        "start": 4424.3,
+        "end": 4425.3
+    },
+    {
+        "text": " ¿Qué pasa con este?",
+        "start": 4425.3,
+        "end": 4426.3
+    },
+    {
+        "text": " ¿Qué es la única diferencia?",
+        "start": 4426.3,
+        "end": 4427.3
+    },
+    {
+        "text": " El en esta fijo,",
+        "start": 4427.3,
+        "end": 4429.3
+    },
+    {
+        "text": " el en esta fijo",
+        "start": 4429.3,
+        "end": 4431.3
+    },
+    {
+        "text": " y el rodea,",
+        "start": 4431.3,
+        "end": 4432.3
+    },
+    {
+        "text": " esta fijo,",
+        "start": 4432.3,
+        "end": 4433.3
+    },
+    {
+        "text": " es un número.",
+        "start": 4433.3,
+        "end": 4434.3
+    },
+    {
+        "text": " O sea que cuando leves a la 1 sobre ese,",
+        "start": 4434.3,
+        "end": 4436.3
+    },
+    {
+        "text": " se comporta igual que este igual que esto,",
+        "start": 4436.3,
+        "end": 4437.3
+    },
+    {
+        "text": " tiende a 1.",
+        "start": 4437.3,
+        "end": 4438.3
+    },
+    {
+        "text": " ¿Centen Dios?",
+        "start": 4438.3,
+        "end": 4440.3
+    },
+    {
+        "text": " Y si hemos todas las cuentas antes",
+        "start": 4440.3,
+        "end": 4441.3
+    },
+    {
+        "text": " y ahora es una papa,",
+        "start": 4441.3,
+        "end": 4442.3
+    },
+    {
+        "text": " todo tiende a 1.",
+        "start": 4442.3,
+        "end": 4444.3
+    },
+    {
+        "text": " Ajá, entonces,",
+        "start": 4444.3,
+        "end": 4446.3
+    },
+    {
+        "text": " cuáles la conclusión, entonces.",
+        "start": 4446.3,
+        "end": 4449.3
+    },
+    {
+        "text": " Esto,",
+        "start": 4449.3,
+        "end": 4451.3
+    },
+    {
+        "text": " este límite es 1.",
+        "start": 4451.3,
+        "end": 4454.3
+    },
+    {
+        "text": " Toda esta límite.",
+        "start": 4456.3,
+        "end": 4458.3
+    },
+    {
+        "text": " Es 1.",
+        "start": 4458.3,
+        "end": 4460.3
+    },
+    {
+        "text": " Y todo este límite",
+        "start": 4460.3,
+        "end": 4463.3
+    },
+    {
+        "text": " es 1.",
+        "start": 4463.3,
+        "end": 4466.3
+    },
+    {
+        "text": " La pregunta.",
+        "start": 4483.3,
+        "end": 4485.3
+    },
+    {
+        "text": " Voy a ser más fino todavía.",
+        "start": 4485.3,
+        "end": 4488.3
+    },
+    {
+        "text": " ¿Uno más?",
+        "start": 4488.3,
+        "end": 4491.3
+    },
+    {
+        "text": " Se acuerda por la derecha por la izquierda.",
+        "start": 4491.3,
+        "end": 4495.3
+    },
+    {
+        "text": " Se animan a decirme si es 1 más, ¿no?",
+        "start": 4495.3,
+        "end": 4499.3
+    },
+    {
+        "text": " El verde, el verde.",
+        "start": 4499.3,
+        "end": 4501.3
+    },
+    {
+        "text": " Empecé a mover el verde aquí más fácil.",
+        "start": 4501.3,
+        "end": 4503.3
+    },
+    {
+        "text": " Este es clarísimo.",
+        "start": 4503.3,
+        "end": 4504.3
+    },
+    {
+        "text": " No son todos números,",
+        "start": 4504.3,
+        "end": 4505.3
+    },
+    {
+        "text": " gran dotes, gran dotes, gran dotes, que...",
+        "start": 4505.3,
+        "end": 4507.3
+    },
+    {
+        "text": " Entonces, este es 1 más.",
+        "start": 4507.3,
+        "end": 4511.3
+    },
+    {
+        "text": " Y este.",
+        "start": 4511.3,
+        "end": 4513.3
+    },
+    {
+        "text": " Acá capas que viene a complicar un poquito",
+        "start": 4513.3,
+        "end": 4516.3
+    },
+    {
+        "text": " y el verde a la n,",
+        "start": 4516.3,
+        "end": 4518.3
+    },
+    {
+        "text": " pero lo que pasa es que este es un número fijo",
+        "start": 4518.3,
+        "end": 4520.3
+    },
+    {
+        "text": " y este se vale infinito.",
+        "start": 4520.3,
+        "end": 4522.3
+    },
+    {
+        "text": " Por lo tanto,",
+        "start": 4522.3,
+        "end": 4524.3
+    },
+    {
+        "text": " esto es más grande que 1 a partir del momento",
+        "start": 4524.3,
+        "end": 4526.3
+    },
+    {
+        "text": " y si es mucho más grande que 1",
+        "start": 4526.3,
+        "end": 4528.3
+    },
+    {
+        "text": " y después cuando viene este muchacho",
+        "start": 4528.3,
+        "end": 4530.3
+    },
+    {
+        "text": " el 1 sobre 0 se lo hace tender a 1.",
+        "start": 4530.3,
+        "end": 4532.3
+    },
+    {
+        "text": " Entonces, los 2 son 1 más.",
+        "start": 4532.3,
+        "end": 4534.3
+    },
+    {
+        "text": " ¿Y por qué es 1 más?",
+        "start": 4534.3,
+        "end": 4536.3
+    },
+    {
+        "text": " Porque solo que quiero",
+        "start": 4536.3,
+        "end": 4538.3
+    },
+    {
+        "text": " es poder decir que los límites",
+        "start": 4538.3,
+        "end": 4540.3
+    },
+    {
+        "text": " también son menos iguales.",
+        "start": 4540.3,
+        "end": 4543.3
+    },
+    {
+        "text": " Porque si valía unos menos",
+        "start": 4543.3,
+        "end": 4545.3
+    },
+    {
+        "text": " más o menos menos,",
+        "start": 4545.3,
+        "end": 4547.3
+    },
+    {
+        "text": " yo quiero la conclusión siguiente.",
+        "start": 4547.3,
+        "end": 4549.3
+    },
+    {
+        "text": " De acá donde voy ahora,",
+        "start": 4549.3,
+        "end": 4551.3
+    },
+    {
+        "text": " allá se termino la demostración.",
+        "start": 4551.3,
+        "end": 4553.3
+    },
+    {
+        "text": " Pero para sacar esa conclusión",
+        "start": 4553.3,
+        "end": 4555.3
+    },
+    {
+        "text": " tienes que sacar",
+        "start": 4555.3,
+        "end": 4557.3
+    },
+    {
+        "text": " este,",
+        "start": 4557.3,
+        "end": 4559.3
+    },
+    {
+        "text": " es realidad era correcta,",
+        "start": 4559.3,
+        "end": 4561.3
+    },
+    {
+        "text": " en cualquier manera,",
+        "start": 4561.3,
+        "end": 4562.3
+    },
+    {
+        "text": " aunque fuera 1 menos era correcta la conclusión.",
+        "start": 4562.3,
+        "end": 4564.3
+    },
+    {
+        "text": " Pero en todo caso,",
+        "start": 4564.3,
+        "end": 4565.3
+    },
+    {
+        "text": " acá no tengo ni siquiera que discutir.",
+        "start": 4565.3,
+        "end": 4568.3
+    },
+    {
+        "text": " Ah, no al revés.",
+        "start": 4568.3,
+        "end": 4571.3
+    },
+    {
+        "text": " Este es el caso que hay que discutir.",
+        "start": 4571.3,
+        "end": 4573.3
+    },
+    {
+        "text": " Si era 1 menos,",
+        "start": 4573.3,
+        "end": 4575.3
+    },
+    {
+        "text": " será más fácil.",
+        "start": 4575.3,
+        "end": 4576.3
+    },
+    {
+        "text": " Si es uno más,",
+        "start": 4576.3,
+        "end": 4577.3
+    },
+    {
+        "text": " es un poquito más complicado.",
+        "start": 4577.3,
+        "end": 4578.3
+    },
+    {
+        "text": " Pero no importa,",
+        "start": 4578.3,
+        "end": 4579.3
+    },
+    {
+        "text": " la conclusión es correcta",
+        "start": 4579.3,
+        "end": 4582.3
+    },
+    {
+        "text": " en cualquier lado de los 2 casi.",
+        "start": 4582.3,
+        "end": 4584.3
+    },
+    {
+        "text": " A ver,",
+        "start": 4587.3,
+        "end": 4588.3
+    },
+    {
+        "text": " yo quiero aprobar que esto es menor igual que este número.",
+        "start": 4588.3,
+        "end": 4591.3
+    },
+    {
+        "text": " Que es esta menor igual que este número.",
+        "start": 4591.3,
+        "end": 4593.3
+    },
+    {
+        "text": " Los límites dan 1,",
+        "start": 4593.3,
+        "end": 4594.3
+    },
+    {
+        "text": " exactamente.",
+        "start": 4594.3,
+        "end": 4595.3
+    },
+    {
+        "text": " Entonces, eso ya está aprofado",
+        "start": 4595.3,
+        "end": 4596.3
+    },
+    {
+        "text": " porque si los límites dan 1,",
+        "start": 4596.3,
+        "end": 4597.3
+    },
+    {
+        "text": " bueno, lo que pasa es que",
+        "start": 4597.3,
+        "end": 4599.3
+    },
+    {
+        "text": " este",
+        "start": 4599.3,
+        "end": 4601.3
+    },
+    {
+        "text": " comportamiento al límite es 1,",
+        "start": 4602.3,
+        "end": 4604.3
+    },
+    {
+        "text": " pero yo quiero la conclusión sacando al límite.",
+        "start": 4604.3,
+        "end": 4607.3
+    },
+    {
+        "text": " Entonces,",
+        "start": 4608.3,
+        "end": 4610.3
+    },
+    {
+        "text": " por eso el libro,",
+        "start": 4610.3,
+        "end": 4611.3
+    },
+    {
+        "text": " si ustedes lo leen con cuidado,",
+        "start": 4611.3,
+        "end": 4612.3
+    },
+    {
+        "text": " da ese detalle.",
+        "start": 4612.3,
+        "end": 4613.3
+    },
+    {
+        "text": " Yo lo voy a escribir ese detalle.",
+        "start": 4614.3,
+        "end": 4616.3
+    },
+    {
+        "text": " Para mí,",
+        "start": 4616.3,
+        "end": 4617.3
+    },
+    {
+        "text": " la conclusión es directa.",
+        "start": 4617.3,
+        "end": 4618.3
+    },
+    {
+        "text": " Para la intuición a veces,",
+        "start": 4618.3,
+        "end": 4620.3
+    },
+    {
+        "text": " pero voy a poner la parte formal,",
+        "start": 4620.3,
+        "end": 4623.3
+    },
+    {
+        "text": " si quieren las escribir,",
+        "start": 4623.3,
+        "end": 4624.3
+    },
+    {
+        "text": " si quieren no,",
+        "start": 4624.3,
+        "end": 4625.3
+    },
+    {
+        "text": " porque quiero sentirme tranquilo",
+        "start": 4625.3,
+        "end": 4627.3
+    },
+    {
+        "text": " de darle la explicación formal.",
+        "start": 4627.3,
+        "end": 4629.3
+    },
+    {
+        "text": " Pero ya está la demostración.",
+        "start": 4630.3,
+        "end": 4632.3
+    },
+    {
+        "text": " ¿Qué quiere decir que este límite es 1?",
+        "start": 4632.3,
+        "end": 4634.3
+    },
+    {
+        "text": " Me en realidad son uno más en los 2 casos.",
+        "start": 4634.3,
+        "end": 4636.3
+    },
+    {
+        "text": " Que,",
+        "start": 4636.3,
+        "end": 4638.3
+    },
+    {
+        "text": " a partir de un momento,",
+        "start": 4638.3,
+        "end": 4640.3
+    },
+    {
+        "text": " acá está el número 1,",
+        "start": 4640.3,
+        "end": 4643.3
+    },
+    {
+        "text": " para todo Epsilon,",
+        "start": 4643.3,
+        "end": 4645.3
+    },
+    {
+        "text": " que toames,",
+        "start": 4645.3,
+        "end": 4646.3
+    },
+    {
+        "text": " existe un momento,",
+        "start": 4646.3,
+        "end": 4649.3
+    },
+    {
+        "text": " no le vas a amar en grande",
+        "start": 4649.3,
+        "end": 4650.3
+    },
+    {
+        "text": " porque se va a comunir,",
+        "start": 4650.3,
+        "end": 4651.3
+    },
+    {
+        "text": " existe un momento",
+        "start": 4651.3,
+        "end": 4652.3
+    },
+    {
+        "text": " que le voy a llamar",
+        "start": 4652.3,
+        "end": 4653.3
+    },
+    {
+        "text": " este H,",
+        "start": 4653.3,
+        "end": 4654.3
+    },
+    {
+        "text": " que depende de Epsilon,",
+        "start": 4654.3,
+        "end": 4656.3
+    },
+    {
+        "text": " tal que para todo ese,",
+        "start": 4656.3,
+        "end": 4658.3
+    },
+    {
+        "text": " mayor igual que H,",
+        "start": 4658.3,
+        "end": 4660.3
+    },
+    {
+        "text": " que depende de Epsilon,",
+        "start": 4660.3,
+        "end": 4661.3
+    },
+    {
+        "text": " este momento es un momento natural,",
+        "start": 4661.3,
+        "end": 4663.3
+    },
+    {
+        "text": " ¿no verdad?",
+        "start": 4663.3,
+        "end": 4664.3
+    },
+    {
+        "text": " Un número natural,",
+        "start": 4664.3,
+        "end": 4665.3
+    },
+    {
+        "text": " que depende de Epsilon,",
+        "start": 4665.3,
+        "end": 4666.3
+    },
+    {
+        "text": " tal un Epsilon,",
+        "start": 4666.3,
+        "end": 4667.3
+    },
+    {
+        "text": " lo que sucede es que todo este número,",
+        "start": 4667.3,
+        "end": 4671.3
+    },
+    {
+        "text": " vamos a hacerlo con el caso azul,",
+        "start": 4671.3,
+        "end": 4673.3
+    },
+    {
+        "text": " si quieren,",
+        "start": 4673.3,
+        "end": 4674.3
+    },
+    {
+        "text": " el verde es igual.",
+        "start": 4674.3,
+        "end": 4675.3
+    },
+    {
+        "text": " Que toda esta expresión azul",
+        "start": 4675.3,
+        "end": 4677.3
+    },
+    {
+        "text": " le voy a llamar",
+        "start": 4677.3,
+        "end": 4678.3
+    },
+    {
+        "text": " a la expresión,",
+        "start": 4678.3,
+        "end": 4680.3
+    },
+    {
+        "text": " le voy a llamar",
+        "start": 4680.3,
+        "end": 4681.3
+    },
+    {
+        "text": " X,",
+        "start": 4681.3,
+        "end": 4683.3
+    },
+    {
+        "text": " que depende de ese toda la expresión",
+        "start": 4684.3,
+        "end": 4687.3
+    },
+    {
+        "text": " que debe llamar",
+        "start": 4687.3,
+        "end": 4688.3
+    },
+    {
+        "text": " X, de expresión,",
+        "start": 4688.3,
+        "end": 4690.3
+    },
+    {
+        "text": " está por acá,",
+        "start": 4690.3,
+        "end": 4691.3
+    },
+    {
+        "text": " toda la expresión que depende de ese,",
+        "start": 4691.3,
+        "end": 4694.3
+    },
+    {
+        "text": " está por ahí.",
+        "start": 4694.3,
+        "end": 4695.3
+    },
+    {
+        "text": " Y si tome un Epsilon más chico,",
+        "start": 4695.3,
+        "end": 4697.3
+    },
+    {
+        "text": " existe un momento más grande,",
+        "start": 4697.3,
+        "end": 4698.3
+    },
+    {
+        "text": " a partir del cual la expresión se mete dentro.",
+        "start": 4698.3,
+        "end": 4700.3
+    },
+    {
+        "text": " Entonces, no es la defisión de límite, ¿no verdad?",
+        "start": 4700.3,
+        "end": 4702.3
+    },
+    {
+        "text": " Y entonces, que es lo que está diciendo,",
+        "start": 4702.3,
+        "end": 4704.3
+    },
+    {
+        "text": " formalmente lo que está diciendo,",
+        "start": 4704.3,
+        "end": 4706.3
+    },
+    {
+        "text": " lo que digo formal por una vez,",
+        "start": 4706.3,
+        "end": 4708.3
+    },
+    {
+        "text": " que el límite,",
+        "start": 4708.3,
+        "end": 4709.3
+    },
+    {
+        "text": " cuando ese tiene a más infinito,",
+        "start": 4709.3,
+        "end": 4712.3
+    },
+    {
+        "text": " de raíz ese sima,",
+        "start": 4712.3,
+        "end": 4714.3
+    },
+    {
+        "text": " de la norma,",
+        "start": 4714.3,
+        "end": 4715.3
+    },
+    {
+        "text": " de jz a la s,",
+        "start": 4715.3,
+        "end": 4717.3
+    },
+    {
+        "text": " es menor igual,",
+        "start": 4717.3,
+        "end": 4719.3
+    },
+    {
+        "text": " que rodea",
+        "start": 4719.3,
+        "end": 4721.3
+    },
+    {
+        "text": " por",
+        "start": 4721.3,
+        "end": 4723.3
+    },
+    {
+        "text": " uno más Epsilon.",
+        "start": 4723.3,
+        "end": 4727.3
+    },
+    {
+        "text": " Porque la parte azul se mete y adentro.",
+        "start": 4729.3,
+        "end": 4733.3
+    },
+    {
+        "text": " Para cuando,",
+        "start": 4733.3,
+        "end": 4735.3
+    },
+    {
+        "text": " para todo",
+        "start": 4735.3,
+        "end": 4738.3
+    },
+    {
+        "text": " H,",
+        "start": 4738.3,
+        "end": 4740.3
+    },
+    {
+        "text": " para todo ese mayor igual,",
+        "start": 4740.3,
+        "end": 4742.3
+    },
+    {
+        "text": " que H de Epsilon.",
+        "start": 4742.3,
+        "end": 4744.3
+    },
+    {
+        "text": " Pero el S está grande como quiere, ¿no verdad?",
+        "start": 4744.3,
+        "end": 4746.3
+    },
+    {
+        "text": " Pues es un límito.",
+        "start": 4746.3,
+        "end": 4747.3
+    },
+    {
+        "text": " Entonces, formalmente diría esto.",
+        "start": 4747.3,
+        "end": 4750.3
+    },
+    {
+        "text": " Pero el Epsilon,",
+        "start": 4750.3,
+        "end": 4752.3
+    },
+    {
+        "text": " le puede tomar más chico,",
+        "start": 4752.3,
+        "end": 4754.3
+    },
+    {
+        "text": " y le puede tomar más chico.",
+        "start": 4754.3,
+        "end": 4755.3
+    },
+    {
+        "text": " Entonces, esta desigualdad,",
+        "start": 4755.3,
+        "end": 4756.3
+    },
+    {
+        "text": " que le puede tomar para cualquier Epsilon,",
+        "start": 4756.3,
+        "end": 4758.3
+    },
+    {
+        "text": " y siempre es valida, ¿no?",
+        "start": 4758.3,
+        "end": 4761.3
+    },
+    {
+        "text": " Termina probando,",
+        "start": 4761.3,
+        "end": 4763.3
+    },
+    {
+        "text": " como esto vale para todo Epsilon,",
+        "start": 4763.3,
+        "end": 4766.3
+    },
+    {
+        "text": " entonces la conclusión,",
+        "start": 4766.3,
+        "end": 4768.3
+    },
+    {
+        "text": " es exactamente que el límite,",
+        "start": 4768.3,
+        "end": 4771.3
+    },
+    {
+        "text": " de la norma,",
+        "start": 4772.3,
+        "end": 4774.3
+    },
+    {
+        "text": " de la raíz ese sima,",
+        "start": 4774.3,
+        "end": 4776.3
+    },
+    {
+        "text": " de la norma,",
+        "start": 4776.3,
+        "end": 4777.3
+    },
+    {
+        "text": " de jz a la s,",
+        "start": 4777.3,
+        "end": 4779.3
+    },
+    {
+        "text": " es menor igual, que rodea.",
+        "start": 4779.3,
+        "end": 4782.3
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 4782.3,
+        "end": 4784.3
+    },
+    {
+        "text": " Tanto para las presiones suelen como la expresión verde,",
+        "start": 4785.3,
+        "end": 4787.3
+    },
+    {
+        "text": " es el mismo análisis.",
+        "start": 4787.3,
+        "end": 4789.3
+    },
+    {
+        "text": " Y esta es la desigualdad que nos faltaba.",
+        "start": 4789.3,
+        "end": 4793.3
+    },
+    {
+        "text": " Ojo, si alguien me dice,",
+        "start": 4795.3,
+        "end": 4797.3
+    },
+    {
+        "text": " profe,",
+        "start": 4797.3,
+        "end": 4798.3
+    },
+    {
+        "text": " el límite suelen y por lo tanto,",
+        "start": 4798.3,
+        "end": 4799.3
+    },
+    {
+        "text": " si igualdad yo estoy bien,",
+        "start": 4799.3,
+        "end": 4800.3
+    },
+    {
+        "text": " estoy convencido,",
+        "start": 4800.3,
+        "end": 4801.3
+    },
+    {
+        "text": " no voy a discutirles",
+        "start": 4801.3,
+        "end": 4802.3
+    },
+    {
+        "text": " porque esta parte es más intuitiva.",
+        "start": 4802.3,
+        "end": 4804.3
+    },
+    {
+        "text": " Sólo que formalmente había,",
+        "start": 4804.3,
+        "end": 4806.3
+    },
+    {
+        "text": " ¿qué está en el libro también ese tallísito?",
+        "start": 4806.3,
+        "end": 4808.3
+    },
+    {
+        "text": " ¿Está?",
+        "start": 4808.3,
+        "end": 4809.3
+    },
+    {
+        "text": " Entonces, en final, si quieren olvidarse lo de un problema,",
+        "start": 4809.3,
+        "end": 4812.3
+    },
+    {
+        "text": " pero la intuición es muy fuerte en ese caso.",
+        "start": 4812.3,
+        "end": 4815.3
+    },
+    {
+        "text": " Bueno, remámosse,",
+        "start": 4816.3,
+        "end": 4818.3
+    },
+    {
+        "text": " no se ve que una hora 10,",
+        "start": 4818.3,
+        "end": 4820.3
+    },
+    {
+        "text": " más o menos este tema.",
+        "start": 4820.3,
+        "end": 4821.3
+    },
+    {
+        "text": " Lo hicimos despacito",
+        "start": 4821.3,
+        "end": 4822.3
+    },
+    {
+        "text": " y lo hicimos analizando casos.",
+        "start": 4822.3,
+        "end": 4824.3
+    },
+    {
+        "text": " Una hora y media, ¿uris?",
+        "start": 4824.3,
+        "end": 4826.3
+    },
+    {
+        "text": " Este...",
+        "start": 4827.3,
+        "end": 4829.3
+    },
+    {
+        "text": " Ahora viene el lema técnico.",
+        "start": 4833.3,
+        "end": 4835.3
+    },
+    {
+        "text": " Les pido tres cosas nada más.",
+        "start": 4835.3,
+        "end": 4837.3
+    },
+    {
+        "text": " El lema técnico no le vamos a dar,",
+        "start": 4837.3,
+        "end": 4838.3
+    },
+    {
+        "text": " lo vamos a dar en la clase que viene.",
+        "start": 4838.3,
+        "end": 4840.3
+    },
+    {
+        "text": " Pero para la clase que viene les pido tres cosas.",
+        "start": 4840.3,
+        "end": 4842.3
+    },
+    {
+        "text": " Pregunto, este...",
+        "start": 4842.3,
+        "end": 4845.3
+    },
+    {
+        "text": " De cálculo 2.",
+        "start": 4850.3,
+        "end": 4852.3
+    },
+    {
+        "text": " Pregunta, una transformación lineal",
+        "start": 4853.3,
+        "end": 4856.3
+    },
+    {
+        "text": " que va de RLN en RLN,",
+        "start": 4856.3,
+        "end": 4859.3
+    },
+    {
+        "text": " pero es una transformación lineal.",
+        "start": 4859.3,
+        "end": 4861.3
+    },
+    {
+        "text": " Pero no estoy en Galdor,",
+        "start": 4861.3,
+        "end": 4862.3
+    },
+    {
+        "text": " estoy en Calculador.",
+        "start": 4862.3,
+        "end": 4864.3
+    },
+    {
+        "text": " ¿Cómo es? ¿Qué propiedad tiene?",
+        "start": 4865.3,
+        "end": 4868.3
+    },
+    {
+        "text": " Una transformación lineal de RLN en RLN",
+        "start": 4870.3,
+        "end": 4873.3
+    },
+    {
+        "text": " o en RLN en RLS,",
+        "start": 4873.3,
+        "end": 4875.3
+    },
+    {
+        "text": " importa el tamaño, ¿no?",
+        "start": 4875.3,
+        "end": 4877.3
+    },
+    {
+        "text": " Continuos, ¿sacuaron eso?",
+        "start": 4878.3,
+        "end": 4880.3
+    },
+    {
+        "text": " Toda transformación lineal",
+        "start": 4881.3,
+        "end": 4883.3
+    },
+    {
+        "text": " termina siendo una función de RLN",
+        "start": 4883.3,
+        "end": 4885.3
+    },
+    {
+        "text": " lo que tamaño que tenga,",
+        "start": 4885.3,
+        "end": 4887.3
+    },
+    {
+        "text": " donde los pasos vectoriales,",
+        "start": 4887.3,
+        "end": 4889.3
+    },
+    {
+        "text": " en el caso, es continuo.",
+        "start": 4889.3,
+        "end": 4891.3
+    },
+    {
+        "text": " Bueno, eso es una de las cosas que va a musar.",
+        "start": 4891.3,
+        "end": 4893.3
+    },
+    {
+        "text": " ¿Tabien?",
+        "start": 4893.3,
+        "end": 4894.3
+    },
+    {
+        "text": " Segundo, la esfera,",
+        "start": 4894.3,
+        "end": 4896.3
+    },
+    {
+        "text": " la esfera en RLN.",
+        "start": 4896.3,
+        "end": 4898.3
+    },
+    {
+        "text": " Son aquellos vectores de RLN",
+        "start": 4898.3,
+        "end": 4900.3
+    },
+    {
+        "text": " o desea la N en importa.",
+        "start": 4900.3,
+        "end": 4902.3
+    },
+    {
+        "text": " Lo mismo que estoy haciendo para RLN",
+        "start": 4902.3,
+        "end": 4903.3
+    },
+    {
+        "text": " y vamos a usar en RLN,",
+        "start": 4903.3,
+        "end": 4905.3
+    },
+    {
+        "text": " es lo mismo.",
+        "start": 4905.3,
+        "end": 4906.3
+    },
+    {
+        "text": " Son aquellos vectores,",
+        "start": 4906.3,
+        "end": 4908.3
+    },
+    {
+        "text": " la esfera, son aquellos vectores norma 1,",
+        "start": 4908.3,
+        "end": 4909.3
+    },
+    {
+        "text": " ¿sacurando? ¿Sí?",
+        "start": 4909.3,
+        "end": 4911.3
+    },
+    {
+        "text": " ¿Cómo es ese conjunto?",
+        "start": 4911.3,
+        "end": 4913.3
+    },
+    {
+        "text": " Estoy en calculador.",
+        "start": 4913.3,
+        "end": 4915.3
+    },
+    {
+        "text": " Concept cerrado y acotado,",
+        "start": 4918.3,
+        "end": 4921.3
+    },
+    {
+        "text": " en particular, o sea, ¿quién se ha recotado?",
+        "start": 4921.3,
+        "end": 4923.3
+    },
+    {
+        "text": " ¿Quién?",
+        "start": 4923.3,
+        "end": 4924.3
+    },
+    {
+        "text": " Los compactos.",
+        "start": 4924.3,
+        "end": 4925.3
+    },
+    {
+        "text": " ¿E?",
+        "start": 4925.3,
+        "end": 4926.3
+    },
+    {
+        "text": " Compacto. ¿Cierto?",
+        "start": 4926.3,
+        "end": 4927.3
+    },
+    {
+        "text": " También, ¿apuemos poner con todo el interior,",
+        "start": 4927.3,
+        "end": 4930.3
+    },
+    {
+        "text": " si quieren la abuela entera,",
+        "start": 4930.3,
+        "end": 4931.3
+    },
+    {
+        "text": " pero estoy hablando de la esfera,",
+        "start": 4931.3,
+        "end": 4932.3
+    },
+    {
+        "text": " la de norma 1.",
+        "start": 4932.3,
+        "end": 4934.3
+    },
+    {
+        "text": " Con forma 10, ¿mín?",
+        "start": 4934.3,
+        "end": 4935.3
+    },
+    {
+        "text": " ¿Pero lo vamos a usar la de norma 1?",
+        "start": 4935.3,
+        "end": 4937.3
+    },
+    {
+        "text": " Y tercer concepto. ¿Qué decía el diario de baistras calculados?",
+        "start": 4937.3,
+        "end": 4941.3
+    },
+    {
+        "text": " ¿Quién ha hecho un consenso?",
+        "start": 4941.3,
+        "end": 4943.3
+    },
+    {
+        "text": " Ahí va, que toda función continua sobre un.",
+        "start": 4943.3,
+        "end": 4949.3
+    },
+    {
+        "text": " ¿Compacto?",
+        "start": 4949.3,
+        "end": 4951.3
+    },
+    {
+        "text": " Compacto, o sea, un cerrado y acotado.",
+        "start": 4951.3,
+        "end": 4953.3
+    },
+    {
+        "text": " Por ejemplo, la feira,",
+        "start": 4953.3,
+        "end": 4954.3
+    },
+    {
+        "text": " ¿qué va al condomínio?",
+        "start": 4954.3,
+        "end": 4956.3
+    },
+    {
+        "text": " Los reales, ¿no?",
+        "start": 4956.3,
+        "end": 4958.3
+    },
+    {
+        "text": " Porque va ahí a traer la para función",
+        "start": 4958.3,
+        "end": 4960.3
+    },
+    {
+        "text": " y que van al condomínio en los reales.",
+        "start": 4960.3,
+        "end": 4962.3
+    },
+    {
+        "text": " ¿Qué pasaban? ¿Tenías un?",
+        "start": 4962.3,
+        "end": 4963.3
+    },
+    {
+        "text": " Un máximo y un mil. ¿Se acuerdan?",
+        "start": 4963.3,
+        "end": 4966.3
+    },
+    {
+        "text": " ¿Se acuerdan?",
+        "start": 4966.3,
+        "end": 4967.3
+    },
+    {
+        "text": " En un punto, se capaz que es más de un punto,",
+        "start": 4967.3,
+        "end": 4969.3
+    },
+    {
+        "text": " pero hay un punto que se encuentra al máximo",
+        "start": 4969.3,
+        "end": 4971.3
+    },
+    {
+        "text": " y hay un punto que se encuentra al mínimo.",
+        "start": 4971.3,
+        "end": 4973.3
+    },
+    {
+        "text": " ¿Qué es el máximo?",
+        "start": 4973.3,
+        "end": 4974.3
+    },
+    {
+        "text": " El máximo de baistras funcionando, ¿no?",
+        "start": 4974.3,
+        "end": 4976.3
+    },
+    {
+        "text": " Por eso que estamos midiendo en los reales,",
+        "start": 4976.3,
+        "end": 4978.3
+    },
+    {
+        "text": " no podemos ir a cualquier lado,",
+        "start": 4978.3,
+        "end": 4979.3
+    },
+    {
+        "text": " no podemos meter a red R8 ni a la cumplejo.",
+        "start": 4979.3,
+        "end": 4981.3
+    },
+    {
+        "text": " Perfecto, eso son las tres claves",
+        "start": 4981.3,
+        "end": 4984.3
+    },
+    {
+        "text": " para demostrarle matélico la clase de vida.",
+        "start": 4984.3,
+        "end": 4987.3
+    },
+    {
+        "text": " Vamos arriba, nos vemos bien.",
+        "start": 4987.3,
+        "end": 4989.3
+    }
+]
