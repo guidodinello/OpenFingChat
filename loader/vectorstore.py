@@ -67,12 +67,12 @@ class VectorStore:
         if not lessons_id:
             logging.error("No transcribed lessons returned from the database!")
             # si no hay lessons marcadas como transcriptas, para testear se puede usar el mock
-            # from mock import MONGO_CLIENT
-            # lessons_id = MONGO_CLIENT["database"]["classes"].find(
-            #     {"transcribed": True},
-            #     projection={"_id": 1},
-            # )
-            return self
+            from .mock import MONGO_CLIENT
+            lessons_id = MONGO_CLIENT["database"]["classes"].find(
+                {"transcribed": True},
+                projection={"_id": 1},
+            )
+            # return self
 
         job = functools.partial(process_transcript, data_path)
         with futures.ThreadPoolExecutor() as executor:
