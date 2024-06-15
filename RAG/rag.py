@@ -5,7 +5,7 @@ from langchain_huggingface import HuggingFaceEndpoint
 from langchain.chains import create_history_aware_retriever
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, FewShotChatMessagePromptTemplate
 from langchain_core.messages import HumanMessage
 from langsmith import traceable
 
@@ -14,7 +14,7 @@ current_dir = os.path.dirname(os.path.realpath(__file__))
 parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
-from RAG.prompt import PROMPT
+from RAG.prompt import PROMPT, EXAMPLES
 from RAG.contextualize_prompt import CONTEXTUALIZE_PROMPT
 from loader.vectorstore import VectorStore
 from store.data.models.subjects import SubjectModel
@@ -46,7 +46,7 @@ def initialize_retriever(llm):
     contextualize_q_prompt = ChatPromptTemplate.from_messages(
         [
             ("system", contextualize_q_system_prompt),
-            MessagesPlaceholder("chat_history"),
+            MessagesPlaceholder("chat_history"), # Prompt template that assumes variable is already list of messages.
             ("human", "{input}"),
         ]
     )
@@ -62,9 +62,23 @@ def initialize_retriever(llm):
     return history_aware_retriever
 
 def initialize_prompt():
+    # This is a prompt template used to format each individual example.
+    example_prompt = ChatPromptTemplate.from_messages(
+        [
+            ("human", "{input}"),
+            ("ai", "{output}"),
+        ]
+    )
+    few_shot_prompt = FewShotChatMessagePromptTemplate(
+        example_prompt=example_prompt,
+        examples=EXAMPLES,
+    )
+    
+    # Assemble our final prompt
     prompt = ChatPromptTemplate.from_messages([
         ("system", PROMPT),
-        MessagesPlaceholder(variable_name="chat_history"), # Prompt template that assumes variable is already list of messages.
+        few_shot_prompt,
+        MessagesPlaceholder(variable_name="chat_history"),
         ("human", "{input}"),
     ])
 
