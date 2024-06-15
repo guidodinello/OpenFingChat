@@ -1,0 +1,4802 @@
+[
+    {
+        "text": " Bueno, ¿saben?",
+        "start": 0.0,
+        "end": 16.0
+    },
+    {
+        "text": " Buenas noches.",
+        "start": 16.0,
+        "end": 18.0
+    },
+    {
+        "text": " La vez pasada empezamos con el tema de los determinantes y vamos a seguir sobre el mismo tema.",
+        "start": 18.0,
+        "end": 25.0
+    },
+    {
+        "text": " El determinante voy a recordar la definición.",
+        "start": 25.0,
+        "end": 31.0
+    },
+    {
+        "text": " Entonces, el determinante,",
+        "start": 31.0,
+        "end": 40.0
+    },
+    {
+        "text": " que se escribe a entre barras y es un número real de una matriz cuadrada.",
+        "start": 40.0,
+        "end": 48.0
+    },
+    {
+        "text": " A, ditamaño, n por n, esta lefilo, por inducción sobre n.",
+        "start": 48.0,
+        "end": 71.0
+    },
+    {
+        "text": " Y es una inducción que empieza a partir de n e igual a 1,",
+        "start": 71.0,
+        "end": 75.0
+    },
+    {
+        "text": " porque nunca vimos matriz 6 de tamaño nulo.",
+        "start": 75.0,
+        "end": 80.0
+    },
+    {
+        "text": " Ok, entonces hay dos casos.",
+        "start": 80.0,
+        "end": 83.0
+    },
+    {
+        "text": " El caso n e igual a 1 y el determinante de a es fácil,",
+        "start": 83.0,
+        "end": 88.0
+    },
+    {
+        "text": " es la única entrada de la matriz.",
+        "start": 88.0,
+        "end": 95.0
+    },
+    {
+        "text": " Y después, como se calcula los determinantes de dimensiones superiores,",
+        "start": 95.0,
+        "end": 102.0
+    },
+    {
+        "text": " entonces es fácil, el determinante de a es, voy a ser un desarrollo respecto a la primera columna,",
+        "start": 102.0,
+        "end": 110.0
+    },
+    {
+        "text": " es primer elemento de la primera columna.",
+        "start": 110.0,
+        "end": 119.0
+    },
+    {
+        "text": " Primero elemento, por la matriz adjunta, la matriz adjunta es lo que queda cuando os saco la primera fila y la primera columna.",
+        "start": 119.0,
+        "end": 131.0
+    },
+    {
+        "text": " Y acá, esto es la matriz adjunta, que tiene dimensión menor, tiene dimensión n e 1 por n e 1.",
+        "start": 131.0,
+        "end": 141.0
+    },
+    {
+        "text": " Menos, y después hay alternación de signos, a 2, 1 por el determinante de la matriz adjunta, a 2, 1.",
+        "start": 141.0,
+        "end": 154.0
+    },
+    {
+        "text": " Es decir, ahora yo considero este elemento y yo saco esta columna y esta fila.",
+        "start": 154.0,
+        "end": 166.0
+    },
+    {
+        "text": " Entonces, obtengo este elemento por el determinante de la matriz cuando la que me queda eliminando esta fila y esta columna.",
+        "start": 166.0,
+        "end": 175.0
+    },
+    {
+        "text": " Y cada vez con alternación de signos, a 3, 1 por a 3, 1, determinante de a 3, 1, etc.",
+        "start": 175.0,
+        "end": 186.0
+    },
+    {
+        "text": " Y esto se termina con a, acá hay un menos 1 a la n e 1, que se aparirá de la última fila por el determinante de la matriz adjunta a la última fila y primera columna.",
+        "start": 187.0,
+        "end": 206.0
+    },
+    {
+        "text": " Y esto también se puede escribir de modo sintético como la suma de i igual a 1 a n, de menos 1 a la i más 1 determinante de i1 la matriz adjunta.",
+        "start": 207.0,
+        "end": 226.0
+    },
+    {
+        "text": " Esto era la definición de la nación determinante y vimos que más grande esta dimensión y más cuentas tenemos que hacer.",
+        "start": 227.0,
+        "end": 238.0
+    },
+    {
+        "text": " Entonces, vimos varias cosas, entonces no hay que desciernar sobre los determinantes en dimensión 1, porque, de hecho, no sierven para nada, son números sencillos.",
+        "start": 240.0,
+        "end": 250.0
+    },
+    {
+        "text": " Sabimos que el determinante de la matriz a b c d es igual a a por d, que acá la matriz adjunta es muy sencilla, menos se por b.",
+        "start": 251.0,
+        "end": 268.0
+    },
+    {
+        "text": " Sabimos esto, y también vimos que la matriz nula tiene el determinante cero y la matriz c d es un determinante para cualquier dimensión.",
+        "start": 268.0,
+        "end": 288.0
+    },
+    {
+        "text": " A me faltan el asoque, disculpa, por supuesto, faltan el asoque i1 por, ¿ok? ¿No sé, acá esto va? ¿Cómo esto?",
+        "start": 299.0,
+        "end": 313.0
+    },
+    {
+        "text": " ¿Ok? ¿Y culpa? Xame equivo, ¿qué? ¿Cómo siempre? ¿Ok? Entonces tenemos esta formula que permite calcular. Hay que entender geómetricamente como se calcula.",
+        "start": 314.0,
+        "end": 326.0
+    },
+    {
+        "text": " Es decir, para calcular un determinante de un matriz de tamaño 6, hay que calcular 6 determinantes de matriz 6 de tamaño 5.",
+        "start": 326.0,
+        "end": 335.0
+    },
+    {
+        "text": " Para cada matriz de tamaño 5, tengo que calcular 5 determinantes de matriz 6 de tamaño 4. Para cada matriz de tamaño 4, etcétera, etcétera. ¿Cuál es ver lo que pasa?",
+        "start": 336.0,
+        "end": 346.0
+    },
+    {
+        "text": " Entonces, ya se puede ver que el cálculo es muy complejo. De hecho, ya podemos tener una idea. ¿A no? No, no, no, porque esto cambia el determinante.",
+        "start": 346.0,
+        "end": 359.0
+    },
+    {
+        "text": " Vamos a ver que hay algunas operaciones de escolarización de K no cambian el determinante y otras que lo cambiam. Ojo.",
+        "start": 360.0,
+        "end": 367.0
+    },
+    {
+        "text": " Esto lo vamos a ver después. Cuando una columna esto lo 0 es 0. ¿Sí? ¿Preunta?",
+        "start": 369.0,
+        "end": 375.0
+    },
+    {
+        "text": " Ainda la 10a punto que está su N1.",
+        "start": 376.0,
+        "end": 379.0
+    },
+    {
+        "text": " Ah, sí, por supuesto. Sí, me olvidé esto. Gracias. Había simplificado demasiado la formula de determinante.",
+        "start": 379.0,
+        "end": 387.0
+    },
+    {
+        "text": " Sí, claro, claro. Gracias. Sí, esto es correcto. ¿Ok?",
+        "start": 389.0,
+        "end": 395.0
+    },
+    {
+        "text": " ¿Ok? Es correcto hasta ahora y en 10 minutos alguien me va a decir que falta alta.",
+        "start": 395.0,
+        "end": 403.0
+    },
+    {
+        "text": " ¿Ok? Tenemos esto. Ahora lo que me gustaría ver es cuál es la complejidad del cálculo. Vamos a ver lo que pasa.",
+        "start": 405.0,
+        "end": 415.0
+    },
+    {
+        "text": " ¿Complejidad del cálculo del determinante? Para tener una idea de la cantidad de cuentas que tenemos que hacer para calcular un determinante, usando la formula.",
+        "start": 416.0,
+        "end": 428.0
+    },
+    {
+        "text": " ¿Ok? Caso N1 solo tenemos una entrada.",
+        "start": 429.0,
+        "end": 435.0
+    },
+    {
+        "text": " Y nos tenemos que hacer ninguna cuenta. Cero cuenta. Fas. En el caso N12 ya tenemos la formula.",
+        "start": 435.0,
+        "end": 447.0
+    },
+    {
+        "text": " Tenemos una suma de dos productos de dos entradas.",
+        "start": 448.0,
+        "end": 453.0
+    },
+    {
+        "text": " ¿Ok? Ya se ve. Ahora vamos a imaginar lo que pasa si choca el culo un determinante de tamaño 3.",
+        "start": 453.0,
+        "end": 473.0
+    },
+    {
+        "text": " Si choque el culo un determinante de tamaño 3, este por ejemplo.",
+        "start": 473.0,
+        "end": 481.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 481.0,
+        "end": 488.0
+    },
+    {
+        "text": " 2, 3 a 3. 1 a 3. 2 a 3. Quiero calcular. No lo voy a hacer pero se puede ver que yo voy a calcular 3 determinantes de tamaño 2.",
+        "start": 490.0,
+        "end": 509.0
+    },
+    {
+        "text": " Pero cada determinante de tamaño 2 me da una suma de dos productos. Entonces tendré una suma de 3 por 2 productos.",
+        "start": 510.0,
+        "end": 521.0
+    },
+    {
+        "text": " Y como se voy a añadir una entrada en cada producto, voy a tener 6, una suma de 6 productos de 3 entradas.",
+        "start": 522.0,
+        "end": 533.0
+    },
+    {
+        "text": " ¿Ok? Enchené la idea acá. Acá tengo que calcular 3 determinantes. Cada determinante es más suma de los productos.",
+        "start": 533.0,
+        "end": 552.0
+    },
+    {
+        "text": " Entonces obtendré una suma de 6 productos 3 por 2. Y cada producto tendrá 3 entradas porque habrá una entrada acá por el resto que tendrán 2 entradas.",
+        "start": 552.0,
+        "end": 564.0
+    },
+    {
+        "text": " Y a partir de esto es fácil generalizar que el caso general, caso general, tenemos una suma de factorial N productos.",
+        "start": 566.0,
+        "end": 581.0
+    },
+    {
+        "text": " 1 por 2 por 3 por 4 por 5 por 6 etc. Productos de N entradas. ¿Qué significa N entradas? N factorial. ¿No es N entradas?",
+        "start": 582.0,
+        "end": 600.0
+    },
+    {
+        "text": " Entrada en el matriz. Una casilla. ¿Ok? Acá no hay que calcular nada.",
+        "start": 601.0,
+        "end": 610.0
+    },
+    {
+        "text": " Yo podría hacer esto. Ejicio calcular la fórmula para ustedes para ver el caso determinante de tamaño 3 y se va a obtener una suma con signos que alternan.",
+        "start": 610.0,
+        "end": 625.0
+    },
+    {
+        "text": " Cuando se oliga una suma hay alternación de signos y cada sumando tendrá exactamente 3 elementos.",
+        "start": 625.0,
+        "end": 634.0
+    },
+    {
+        "text": " De hecho es fácil, yo puedo dar la fórmula. Esto por esto por esto más esto por esto por esto menos esto por esto menos esto por esto menos esto por esto por esto.",
+        "start": 634.0,
+        "end": 651.0
+    },
+    {
+        "text": " La voy a endecificar. Entonces hice 6 cosas, una suma de 6 cosas y cada cosa eran produtos de 3 entradas.",
+        "start": 652.0,
+        "end": 661.0
+    },
+    {
+        "text": " Entonces ya puede medir. Para calcular un determinante de tamaño 7 por 7, 7 factorial es 5.040, tendrían hacer 5.040 sumas de productos de siente elementos.",
+        "start": 662.0,
+        "end": 679.0
+    },
+    {
+        "text": " Entonces pueden ver la cantidad de cuentas que hay para calcular un determinante. Entonces es un objeto muy complicado, contiene un montón de información computación del entro.",
+        "start": 680.0,
+        "end": 693.0
+    },
+    {
+        "text": " Y esta razón por qué? Antes de calcular determinantes, entonces el buen ejercicio es darles un determinante de tamaño 10 por 10.",
+        "start": 693.0,
+        "end": 702.0
+    },
+    {
+        "text": " Entonces tienen 100.000 sumas de productos de 10 elementos, estamos tranquilos hasta el fin de su carrera.",
+        "start": 702.0,
+        "end": 710.0
+    },
+    {
+        "text": " Por supuesto, somos seres humanos, no somos máquinas, entonces vamos a ver métodos para acelerar las cuentas y esta cosa que nos importa ahora.",
+        "start": 710.0,
+        "end": 722.0
+    },
+    {
+        "text": " Nos da primera cosa que hay que hacer es ver que se puede generalizar esta fórmula.",
+        "start": 723.0,
+        "end": 729.0
+    },
+    {
+        "text": " ¿Cómo? ¿Cómo? ¿Qué te digo de ir a chica para la ventana?",
+        "start": 738.0,
+        "end": 744.0
+    },
+    {
+        "text": " Si no, la idea es que vamos a ver que hay trucos que permiten reducir la complejidad.",
+        "start": 744.0,
+        "end": 751.0
+    },
+    {
+        "text": " Ok, vamos a ver. Primero la cosa es desarrollo por filas y columnas.",
+        "start": 751.0,
+        "end": 776.0
+    },
+    {
+        "text": " La idea es que cuando escribí la fórmula que se aborre,",
+        "start": 782.0,
+        "end": 786.0
+    },
+    {
+        "text": " yo hice un desarrollo respecto a la primera columna, pero también se puede elegir cualquier columna y también se puede tomar cualquier fila para hacer desarrollo.",
+        "start": 786.0,
+        "end": 797.0
+    },
+    {
+        "text": " Entonces, ya vimos que se ve espasada, que se da propiedad, es data 1,3 a la tamaño n por n con n más oro igual a 2.",
+        "start": 798.0,
+        "end": 812.0
+    },
+    {
+        "text": " Tenemos que el determinante se puede calcular bien respecto a una columna j fija",
+        "start": 812.0,
+        "end": 825.0
+    },
+    {
+        "text": " como la suma de igual a 1 a n de menos 1 a la y más j de a su y j por la matriz atj.",
+        "start": 825.0,
+        "end": 836.0
+    },
+    {
+        "text": " Es decir, acá lo que está fijado está columna j está no se mueve, no cambia y cambia el índice de fila.",
+        "start": 836.0,
+        "end": 845.0
+    },
+    {
+        "text": " Yo hago el desarrollo respecto a la columna j y cada vez calculo la matriz atj respecto al elemento índice, es decir, el imino, la fila y la columna j.",
+        "start": 846.0,
+        "end": 859.0
+    },
+    {
+        "text": " Pero esto también lo puedo hacer, entonces es para todo j, entre 1 y n, pero también lo puedo hacer respecto a una fila cualquiera.",
+        "start": 859.0,
+        "end": 873.0
+    },
+    {
+        "text": " Ahora son las columnas que se mueven y esta misma forma, después.",
+        "start": 873.0,
+        "end": 880.0
+    },
+    {
+        "text": " Ok, y acá pueden ver que acá son las columnas que se mueven y la fila y esta fijada.",
+        "start": 890.0,
+        "end": 901.0
+    },
+    {
+        "text": " Es decir, tomamos una fila, por ejemplo, este, esta, y hacemos este elemento depender el signo del elemento por la matriz atj,",
+        "start": 901.0,
+        "end": 917.0
+    },
+    {
+        "text": " más o menos este elemento por la matriz atj, más o menos este elemento por la matriz atj y acá hay signos que dependen de la entrada y funciona con la g3.",
+        "start": 917.0,
+        "end": 929.0
+    },
+    {
+        "text": " Es decir, acá sabemos que tenemos más, menos, más, menos, más, etc.",
+        "start": 929.0,
+        "end": 941.0
+    },
+    {
+        "text": " La columna siempre hay más, es ideal.",
+        "start": 942.0,
+        "end": 948.0
+    },
+    {
+        "text": " Ok, entonces si quieren, por ejemplo, hacer un desarrollo respecto a esta fila, o a esta fila, por ejemplo, la segunda fila,",
+        "start": 948.0,
+        "end": 956.0
+    },
+    {
+        "text": " van a hacer menos este elemento por el determinante de la matriz atj, más este elemento por el determinante de la matriz atj, menos este elemento, etc.",
+        "start": 956.0,
+        "end": 966.0
+    },
+    {
+        "text": " Ok, entonces esta primera propiedad que tenemos sobre los determinantes y esto induce un montón de cosas muy obvidas que salen de la propiedad.",
+        "start": 966.0,
+        "end": 980.0
+    },
+    {
+        "text": " Hay muchas propiedades que nos dais que salen de esto y la primera propiedad que sale es que piensan si yo reemplazo mi matriz at, por su respuesta que va a pasar en el calculo del determinante.",
+        "start": 997.0,
+        "end": 1019.0
+    },
+    {
+        "text": " De hecho no va a pasar nada. Es obvio porque la matriz de signos no cambia y en lugar de hacer un desarrollo por columna, haremos un desarrollo por filas y la misma formula vale.",
+        "start": 1020.0,
+        "end": 1035.0
+    },
+    {
+        "text": " Entonces por la inducción sobre n se le muestra que para toda la matriz at, la determinante de I igual el determinante de su respuesta.",
+        "start": 1035.0,
+        "end": 1045.0
+    },
+    {
+        "text": " Entonces para toda la matriz at, deta manio n por n tiene que ser cuadrada, tenemos que el determinante de la transpuestaria a, y si igual el determinante de A,",
+        "start": 1046.0,
+        "end": 1064.0
+    },
+    {
+        "text": " es decir hay una simetría perfecta entre las filas y las columnas y lo cuenta si intercambio veamos las filas y las cuentas, las columnas.",
+        "start": 1064.0,
+        "end": 1074.0
+    },
+    {
+        "text": " Ok, muy bien. Ahora vamos a ver otro ejemplo, es muy interesante es el determinante de una matriz triangular superior.",
+        "start": 1074.0,
+        "end": 1083.0
+    },
+    {
+        "text": " El determinante es el determinante de una matriz triangular superior.",
+        "start": 1084.0,
+        "end": 1100.0
+    },
+    {
+        "text": " Bueno, decir lo que es una matriz triangular superior es una matriz que no es cuadrado pero un triangle. Es decir es una matriz de esta forma.",
+        "start": 1101.0,
+        "end": 1114.0
+    },
+    {
+        "text": " Tiene elementos de gonales que voy a escribir alfa 1 hasta alfa n, tienen cosas con la izquierda por encima del diagonal y tienen serro acá. Esto es una matriz triangular superior.",
+        "start": 1115.0,
+        "end": 1129.0
+    },
+    {
+        "text": " Entiene en la forma, es decir pasan muchas cosas acá pero por debajo de la gonal no hay nada. ¿Ok? ¿Qué va a pasar cuando yo voy a ejecular el determinante?",
+        "start": 1130.0,
+        "end": 1144.0
+    },
+    {
+        "text": " Si yo hago el desarrollo respecto a la primera columna, voy a hacer alfa 1 por el determinante de la matriz que me queda acá.",
+        "start": 1144.0,
+        "end": 1155.0
+    },
+    {
+        "text": " Acá era el entrada y acá después tú solo tendré 0 entonces no lo va a juntar pero esta lo que le queda también es una triangular superior.",
+        "start": 1156.0,
+        "end": 1166.0
+    },
+    {
+        "text": " Entonces será alfa 1 por alfa 2 por alfa n. ¿Ok? Esto se le muestra por la inducción sobre n. La idea es que el determinante de A es igual al producto de los elementos diagonales.",
+        "start": 1166.0,
+        "end": 1183.0
+    },
+    {
+        "text": " No cuenta la parte superior y esto es debido a que se le muestra por la inducción sobre n. El caso n igual a 0 es obvio, n igual a 1 es obvio porque solo tenemos una entrada y que ya es el elemento diagonal.",
+        "start": 1184.0,
+        "end": 1204.0
+    },
+    {
+        "text": " Entonces es alfa 1 y por inducción supongo que la propiedad se cumple para n menos 1 y voy a ejecular el determinante de esta matriz de tamaño n. ¿Ok?",
+        "start": 1205.0,
+        "end": 1216.0
+    },
+    {
+        "text": " Será esta entrada por el determinante de la matriz at Junta. Menos esta entrada a pero no existe, entonces se aprece.",
+        "start": 1216.0,
+        "end": 1224.0
+    },
+    {
+        "text": " Más esta entrada no existe, no existe. Sólo esta entrada por el determinante de la matriz at Junta. Pero la matriz at Junta todavía es triangular superior. Por hipotesis de inducción ya sé que su determinante es el producto alfa 2 hasta alfa n.",
+        "start": 1225.0,
+        "end": 1244.0
+    },
+    {
+        "text": " Luego el determinante global será alfa 1 por alfa 2 hasta alfa n. ¿Entienden la idea?",
+        "start": 1244.0,
+        "end": 1251.0
+    },
+    {
+        "text": " Entonces cuando tiene una matriz triangular superior, ya está. Y por supuesto de modo simétrico, funcional de mismo modo para un matriz triangular inferior.",
+        "start": 1251.0,
+        "end": 1264.0
+    },
+    {
+        "text": " Entonces en general cuando tendremos matrices, la regla del juego consiste en simplificar las cuentas para obtener una matriz triangular superior o inferior dependiendo de las veces.",
+        "start": 1265.0,
+        "end": 1279.0
+    },
+    {
+        "text": " Y es todo lo que vamos a ver como se simplifican las cuentas de matrices. En particular, que a su particular las matrices llegó nales.",
+        "start": 1280.0,
+        "end": 1289.0
+    },
+    {
+        "text": " Es un caso particular. ¿Qué es su particular? ¿Qué es decir las matrices llegó nales?",
+        "start": 1289.0,
+        "end": 1299.0
+    },
+    {
+        "text": " La es la de la matriz diagonal afa 1 hasta alfa n. No le acá, hay cerros en todas esas partes. Es una matriz que es a la vez triangular superior y triangular inferior. Es el producto de los elementos llegó nales.",
+        "start": 1300.0,
+        "end": 1321.0
+    },
+    {
+        "text": " Y de hecho la identidad es un caso particular. El determinante de la identidad es 1 por 1 por 1 por 1 por 1 por 1 por 1 por 1 n y veces es de cierta 1.",
+        "start": 1322.0,
+        "end": 1333.0
+    },
+    {
+        "text": " Entonces cuando tienen matrices triangular, ya está, no hay que hacer nada más. Es el producto de diagonal y pueden ignorar los otros coeficientes.",
+        "start": 1336.0,
+        "end": 1348.0
+    },
+    {
+        "text": " Entonces es un truco para circular determinantes. Y después vamos a ver regla de simplificación y regla del juego de simplificar hasta este punto cuando sea posible.",
+        "start": 1349.0,
+        "end": 1361.0
+    },
+    {
+        "text": " Ok, vimos esto. Ahora vamos a ver otros temas, las propiedades generales les es tramilante.",
+        "start": 1361.0,
+        "end": 1369.0
+    },
+    {
+        "text": " Ok, propiedades del determinante.",
+        "start": 1392.0,
+        "end": 1398.0
+    },
+    {
+        "text": " Ok, propiedades del determinante.",
+        "start": 1399.0,
+        "end": 1405.0
+    },
+    {
+        "text": " Primero a cosa es ojo, el determinante ojo.",
+        "start": 1414.0,
+        "end": 1420.0
+    },
+    {
+        "text": " De hecho no es suficiente.",
+        "start": 1421.0,
+        "end": 1427.0
+    },
+    {
+        "text": " El determinante no es una función ideal.",
+        "start": 1431.0,
+        "end": 1437.0
+    },
+    {
+        "text": " Es decir, en general, en general, el determinante de la suma no tiene nada que ver con la suma de los determinantes.",
+        "start": 1437.0,
+        "end": 1461.0
+    },
+    {
+        "text": " Y de mismo modo, el determinante de lambda por a en general no tiene nada que ver con lambda por el determinante de a.",
+        "start": 1462.0,
+        "end": 1468.0
+    },
+    {
+        "text": " De hecho, veremos que tiene algo que ver pero no está buena formula.",
+        "start": 1468.0,
+        "end": 1479.0
+    },
+    {
+        "text": " Ok, entonces es primera cosa porque en este curso de algebraa lineal hacemos montón de cosas lineales.",
+        "start": 1479.0,
+        "end": 1487.0
+    },
+    {
+        "text": " Por ejemplo, operación sobre las filas, pero no es una operación lineal.",
+        "start": 1488.0,
+        "end": 1494.0
+    },
+    {
+        "text": " Determinante cualquier persona que me escribe que el determinante de la suma es igual a la suma de los determinantes.",
+        "start": 1494.0,
+        "end": 1503.0
+    },
+    {
+        "text": " Ponemos cero a todo el parcial, ya está.",
+        "start": 1503.0,
+        "end": 1507.0
+    },
+    {
+        "text": " No, menos 10.",
+        "start": 1507.0,
+        "end": 1509.0
+    },
+    {
+        "text": " Entonces es cosa que no hay que hacer.",
+        "start": 1509.0,
+        "end": 1512.0
+    },
+    {
+        "text": " Es ojo.",
+        "start": 1513.0,
+        "end": 1514.0
+    },
+    {
+        "text": " Ojo, pero hay, es una función que vamos a ver que es lineal por filas y lineal por columnas.",
+        "start": 1515.0,
+        "end": 1524.0
+    },
+    {
+        "text": " Y es esto que voy a explicar ahora.",
+        "start": 1524.0,
+        "end": 1527.0
+    },
+    {
+        "text": " Entonces, la primera propiedad que es la propiedad 1, que es la adicimidad respecto a una fila.",
+        "start": 1528.0,
+        "end": 1546.0
+    },
+    {
+        "text": " Entonces, ¿qué pasa?",
+        "start": 1547.0,
+        "end": 1551.0
+    },
+    {
+        "text": " Yo supongo que yo tengo una matriz para toda la matriz A.",
+        "start": 1551.0,
+        "end": 1558.0
+    },
+    {
+        "text": " Detamagnó MN por N, como siempre.",
+        "start": 1562.0,
+        "end": 1566.0
+    },
+    {
+        "text": " Y para toda la fila.",
+        "start": 1566.0,
+        "end": 1569.0
+    },
+    {
+        "text": " Para todo I, para, voy a escribir, que para todo I, todo I, es un índice de fila.",
+        "start": 1570.0,
+        "end": 1587.0
+    },
+    {
+        "text": " Y para toda la descomposición de la fila.",
+        "start": 1587.0,
+        "end": 1592.0
+    },
+    {
+        "text": " Descomposición de la fila I.",
+        "start": 1600.0,
+        "end": 1606.0
+    },
+    {
+        "text": " En la forma, a su I, es igual a dos filas, B su I, C su I.",
+        "start": 1608.0,
+        "end": 1618.0
+    },
+    {
+        "text": " Tenemos lo siguiente.",
+        "start": 1618.0,
+        "end": 1621.0
+    },
+    {
+        "text": " El determinante R, es igual al determinante de las filas A1 a sub I, hasta sub N.",
+        "start": 1630.0,
+        "end": 1649.0
+    },
+    {
+        "text": " Es una descomposición por fila.",
+        "start": 1649.0,
+        "end": 1651.0
+    },
+    {
+        "text": " Esto se puede componer como a sub I, B su I, a sub N, más a sub I, a sub N.",
+        "start": 1652.0,
+        "end": 1671.0
+    },
+    {
+        "text": " Es decir, la única cosa que cambia es la fila.",
+        "start": 1671.0,
+        "end": 1676.0
+    },
+    {
+        "text": " Y las otras filas lo cambian.",
+        "start": 1676.0,
+        "end": 1683.0
+    },
+    {
+        "text": " Es decir, si yo tengo, es por su posición, si a sub I, se puede componer en B su I más a sub N.",
+        "start": 1683.0,
+        "end": 1694.0
+    },
+    {
+        "text": " Es decir, si tienen una descomposición de la fila como otras dos filas que salen de nada,",
+        "start": 1694.0,
+        "end": 1704.0
+    },
+    {
+        "text": " entonces, el determinante de esta matriz es igual a el determinante de esta matriz,",
+        "start": 1704.0,
+        "end": 1708.0
+    },
+    {
+        "text": " más el determinante de esta matriz.",
+        "start": 1708.0,
+        "end": 1710.0
+    },
+    {
+        "text": " Y la cosa importante es que la única cosa que se descompone es la fila I.",
+        "start": 1710.0,
+        "end": 1717.0
+    },
+    {
+        "text": " Las otras filas no cambian, son identicas.",
+        "start": 1717.0,
+        "end": 1721.0
+    },
+    {
+        "text": " Esta primera propiedad que tenemos.",
+        "start": 1721.0,
+        "end": 1726.0
+    },
+    {
+        "text": " Y acá, por ejemplo, voy a dar un ejemplo, tengo 1.",
+        "start": 1726.0,
+        "end": 1733.0
+    },
+    {
+        "text": " Por ejemplo, hasta el día de hoy no sabemos que el curar este determinante.",
+        "start": 1740.0,
+        "end": 1748.0
+    },
+    {
+        "text": " Si lo sabemos hacer, hay que hacer las cuentas.",
+        "start": 1748.0,
+        "end": 1752.0
+    },
+    {
+        "text": " Pero no me importa.",
+        "start": 1753.0,
+        "end": 1754.0
+    },
+    {
+        "text": " Yo puedo, por ejemplo, descomponer la fila I es 0, 1, 2, más 1, 1, 1, 1.",
+        "start": 1754.0,
+        "end": 1765.0
+    },
+    {
+        "text": " Ok, es una descomposición posible la primera fila.",
+        "start": 1765.0,
+        "end": 1769.0
+    },
+    {
+        "text": " 0, 1, 2, más 1, 1, 1, 1, me da 1, 2, 3.",
+        "start": 1769.0,
+        "end": 1772.0
+    },
+    {
+        "text": " Y ahora es todo lo cambio.",
+        "start": 1772.0,
+        "end": 1775.0
+    },
+    {
+        "text": " Y acá, esto ya siano la descomposición respecto a la primera fila.",
+        "start": 1775.0,
+        "end": 1784.0
+    },
+    {
+        "text": " Pero también yo puedo hacer una descomposición respecto a la segunda fila.",
+        "start": 1784.0,
+        "end": 1791.0
+    },
+    {
+        "text": " Por ejemplo, acá, yo puedo decir que este determinante también es igual a,",
+        "start": 1791.0,
+        "end": 1802.0
+    },
+    {
+        "text": " yo puedo descomponer la segunda fila como 3, 2, 1,",
+        "start": 1803.0,
+        "end": 1809.0
+    },
+    {
+        "text": " más lo que me queda son 2, 3 y 2, no, es acá me equivo, que es 1, 3 y 5.",
+        "start": 1809.0,
+        "end": 1821.0
+    },
+    {
+        "text": " Están de acuerdo que es una buena descomposición de mis filas.",
+        "start": 1821.0,
+        "end": 1826.0
+    },
+    {
+        "text": " Y el resto lo cambia, 1, 2, 3, 1, 2, 3, 7, 8, 9.",
+        "start": 1827.0,
+        "end": 1833.0
+    },
+    {
+        "text": " 7, 8, 9.",
+        "start": 1833.0,
+        "end": 1835.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1835.0,
+        "end": 1837.0
+    },
+    {
+        "text": " Es lineal sobre cada fila.",
+        "start": 1840.0,
+        "end": 1843.0
+    },
+    {
+        "text": " Y se dice cuando somos matemáticos que es una función n lineal.",
+        "start": 1843.0,
+        "end": 1849.0
+    },
+    {
+        "text": " Es decir, es lineal respecto a cada fila.",
+        "start": 1849.0,
+        "end": 1853.0
+    },
+    {
+        "text": " Pero las otras sin cambio.",
+        "start": 1854.0,
+        "end": 1857.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1857.0,
+        "end": 1859.0
+    },
+    {
+        "text": " Ahí siempre es una determinante fila que cambia.",
+        "start": 1859.0,
+        "end": 1864.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 1864.0,
+        "end": 1866.0
+    },
+    {
+        "text": " Sí, sí, la fila que cambia y las otras que cambian.",
+        "start": 1866.0,
+        "end": 1871.0
+    },
+    {
+        "text": " Es importante.",
+        "start": 1871.0,
+        "end": 1873.0
+    },
+    {
+        "text": " Es decir, es una operación lineal respecto a cada fila.",
+        "start": 1873.0,
+        "end": 1877.0
+    },
+    {
+        "text": " Las otras filas están fijadas.",
+        "start": 1877.0,
+        "end": 1882.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1882.0,
+        "end": 1884.0
+    },
+    {
+        "text": " Pero se puede tener cualquier...",
+        "start": 1884.0,
+        "end": 1887.0
+    },
+    {
+        "text": " No se pueden hacer suave con pasos.",
+        "start": 1887.0,
+        "end": 1890.0
+    },
+    {
+        "text": " Ah, después, por supuesto lo pueden hacer en muchos pasos.",
+        "start": 1890.0,
+        "end": 1893.0
+    },
+    {
+        "text": " Claro, pero porque veo que en la segunda composición no más tuviste lo que había cambiado rigo.",
+        "start": 1893.0,
+        "end": 1899.0
+    },
+    {
+        "text": " Ah, no, no, acá son dos pasos distintos.",
+        "start": 1899.0,
+        "end": 1901.0
+    },
+    {
+        "text": " No se pueden hacer juntos.",
+        "start": 1901.0,
+        "end": 1904.0
+    },
+    {
+        "text": " Ojo, no.",
+        "start": 1904.0,
+        "end": 1905.0
+    },
+    {
+        "text": " Está mejor hacer cada paso después de cada paso.",
+        "start": 1905.0,
+        "end": 1909.0
+    },
+    {
+        "text": " ¿Pero por mí es equivocarse o por qué no se puede?",
+        "start": 1909.0,
+        "end": 1912.0
+    },
+    {
+        "text": " Depende de cómo se puede y hay riesgo de equivocarte.",
+        "start": 1912.0,
+        "end": 1917.0
+    },
+    {
+        "text": " Yo al menos tengo un riesgo de equivocarme.",
+        "start": 1917.0,
+        "end": 1920.0
+    },
+    {
+        "text": " Quizás sabes contar mejor que yo.",
+        "start": 1920.0,
+        "end": 1923.0
+    },
+    {
+        "text": " Lo que es posible, pero yo prefiero no equivocarme y yo escribo.",
+        "start": 1923.0,
+        "end": 1927.0
+    },
+    {
+        "text": " Aquí es un ejemplo y acá es otro ejemplo.",
+        "start": 1927.0,
+        "end": 1929.0
+    },
+    {
+        "text": " No tiene nada que ver.",
+        "start": 1929.0,
+        "end": 1931.0
+    },
+    {
+        "text": " Su vez para mostrar que hay varias descomposiciones que existen.",
+        "start": 1931.0,
+        "end": 1934.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1934.0,
+        "end": 1935.0
+    },
+    {
+        "text": " Y, de hecho, por si metrilla la misma propiedad valé para las columnas.",
+        "start": 1935.0,
+        "end": 1941.0
+    },
+    {
+        "text": " ¿Propie?",
+        "start": 1941.0,
+        "end": 1942.0
+    },
+    {
+        "text": " Entonces, otra proposición es misma propiedad para las columnas.",
+        "start": 1942.0,
+        "end": 1953.0
+    },
+    {
+        "text": " Porque vimos que el determinante es agnóstico respecto a la división entre filas y columnas.",
+        "start": 1953.0,
+        "end": 1964.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1964.0,
+        "end": 1966.0
+    },
+    {
+        "text": " No tiene ninguna pro diferencia sobre las columnas o las filas.",
+        "start": 1966.0,
+        "end": 1971.0
+    },
+    {
+        "text": " Entonces, no tengo que expresar la propiedad.",
+        "start": 1971.0,
+        "end": 1974.0
+    },
+    {
+        "text": " Hay que tomar unas matrices simétricas.",
+        "start": 1974.0,
+        "end": 1976.0
+    },
+    {
+        "text": " Y la misma propiedad, entonces, es lineal respecto a cada columna también.",
+        "start": 1976.0,
+        "end": 1982.0
+    },
+    {
+        "text": " Y la buena cosa es que tienen muchas opciones para usar esta propiedad linearidad.",
+        "start": 1982.0,
+        "end": 1987.0
+    },
+    {
+        "text": " Les pueden usar sobre en filas o bien en columnas.",
+        "start": 1987.0,
+        "end": 1991.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1991.0,
+        "end": 1994.0
+    },
+    {
+        "text": " Ah.",
+        "start": 1994.0,
+        "end": 1997.0
+    },
+    {
+        "text": " Ok.",
+        "start": 1997.0,
+        "end": 1998.0
+    },
+    {
+        "text": " Ahora vamos a hablar de homogeneída.",
+        "start": 1998.0,
+        "end": 2001.0
+    },
+    {
+        "text": " Según la propiedad, es la homogeneída.",
+        "start": 2001.0,
+        "end": 2004.0
+    },
+    {
+        "text": " Homogeneída.",
+        "start": 2017.0,
+        "end": 2039.0
+    },
+    {
+        "text": " Entonces, esta propiedad 2, es homogeneída.",
+        "start": 2039.0,
+        "end": 2053.0
+    },
+    {
+        "text": " Es decir, de la una matrices a, de la por filas, a uno, etcétera, hasta a n.",
+        "start": 2053.0,
+        "end": 2068.0
+    },
+    {
+        "text": " Y acá, yo debería poner para la entesión porque es una matrices.",
+        "start": 2068.0,
+        "end": 2073.0
+    },
+    {
+        "text": " No es un determinante.",
+        "start": 2073.0,
+        "end": 2075.0
+    },
+    {
+        "text": " Soy una matrices de la por sus filas.",
+        "start": 2075.0,
+        "end": 2079.0
+    },
+    {
+        "text": " Entonces, para todo indice la fila,",
+        "start": 2079.0,
+        "end": 2090.0
+    },
+    {
+        "text": " tenemos que...",
+        "start": 2091.0,
+        "end": 2097.0
+    },
+    {
+        "text": " Sotengo el derecho a multiplicar una fila por lambda.",
+        "start": 2097.0,
+        "end": 2101.0
+    },
+    {
+        "text": " Y en este caso, me multiplica mi determinante por lambda.",
+        "start": 2101.0,
+        "end": 2104.0
+    },
+    {
+        "text": " Pero solo sobre una fila.",
+        "start": 2104.0,
+        "end": 2106.0
+    },
+    {
+        "text": " Es decir, el determinante de a uno, sin cambio, lambda a subí, y es la única que cambia.",
+        "start": 2106.0,
+        "end": 2116.0
+    },
+    {
+        "text": " Y el resto lo cambia a n sin cambio.",
+        "start": 2117.0,
+        "end": 2122.0
+    },
+    {
+        "text": " Es igual a lambda el determinante de a.",
+        "start": 2122.0,
+        "end": 2128.0
+    },
+    {
+        "text": " Es decir, cada vez que yo multiplico una fila por lambda,",
+        "start": 2131.0,
+        "end": 2137.0
+    },
+    {
+        "text": " multiplico, todo el determinante, es como la ilitividad, es la homogeneída,",
+        "start": 2137.0,
+        "end": 2143.0
+    },
+    {
+        "text": " es decir, es una función lineal por filas.",
+        "start": 2144.0,
+        "end": 2146.0
+    },
+    {
+        "text": " Ok, multiplico, el determinante, es decir, esta cosa interesante,",
+        "start": 2146.0,
+        "end": 2153.0
+    },
+    {
+        "text": " es decir, la propiedad de lambda se funciona pero solo para las filas individuales.",
+        "start": 2153.0,
+        "end": 2158.0
+    },
+    {
+        "text": " En particular, entienden esta propiedad, si yo hago el producto de una fila,",
+        "start": 2158.0,
+        "end": 2165.0
+    },
+    {
+        "text": " las otras no cambian, por un número, esto me multiplica el determinante por dicho número.",
+        "start": 2165.0,
+        "end": 2172.0
+    },
+    {
+        "text": " Entonces, ¿qué pasa si yo ahora hago el producto de una matriz entera por el número lambda?",
+        "start": 2173.0,
+        "end": 2180.0
+    },
+    {
+        "text": " ¿Qué va a pasar?",
+        "start": 2181.0,
+        "end": 2183.0
+    },
+    {
+        "text": " Obtendrá el producto n veces, porque una vez por cada fila, esto que vamos a ver después.",
+        "start": 2185.0,
+        "end": 2193.0
+    },
+    {
+        "text": " Antes de decir esto, tengo la propiedad que por supuesto la misma propiedad vale para las columnas.",
+        "start": 2193.0,
+        "end": 2199.0
+    },
+    {
+        "text": " Ok, por ejemplo, voy a tomar mi matriz favorita.",
+        "start": 2202.0,
+        "end": 2206.0
+    },
+    {
+        "text": " Si yo tomo esta matriz, ejemplo, el determinante de esta matriz,",
+        "start": 2233.0,
+        "end": 2243.0
+    },
+    {
+        "text": " es igual, por ejemplo, a un medio del determinante de,",
+        "start": 2246.0,
+        "end": 2252.0
+    },
+    {
+        "text": " acá yo multiplico por 2, esto es para compensar, 2, 4, 6 y el resto lo cambia.",
+        "start": 2252.0,
+        "end": 2260.0
+    },
+    {
+        "text": " Es claro que si yo multiplico la primera fila por medio, obtengo esta fila,",
+        "start": 2263.0,
+        "end": 2269.0
+    },
+    {
+        "text": " es el resto lo cambia, entonces tengo la igualdad.",
+        "start": 2269.0,
+        "end": 2273.0
+    },
+    {
+        "text": " Entienden?",
+        "start": 2275.0,
+        "end": 2276.0
+    },
+    {
+        "text": " Pero también tengo un show derecho de decir que, por ejemplo, esto...",
+        "start": 2277.0,
+        "end": 2284.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 2284.0,
+        "end": 2286.0
+    },
+    {
+        "text": " ¿No te dios? ¿Puesa nada de ver a que le di un metro?",
+        "start": 2286.0,
+        "end": 2289.0
+    },
+    {
+        "text": " Bueno, esto es un medio por esta fila, ¿qué te da?",
+        "start": 2289.0,
+        "end": 2294.0
+    },
+    {
+        "text": " Es la misma propiedad, con la mda igual a un medio, es un lambda autorizado,",
+        "start": 2294.0,
+        "end": 2299.0
+    },
+    {
+        "text": " no tiene que ser entero.",
+        "start": 2299.0,
+        "end": 2301.0
+    },
+    {
+        "text": " Ok, un medio por esta cosa, acá...",
+        "start": 2301.0,
+        "end": 2305.0
+    },
+    {
+        "text": " Apliqué solo una fila, la primera fila.",
+        "start": 2305.0,
+        "end": 2308.0
+    },
+    {
+        "text": " Apliqué, ¿cómo sabe que es para la primera fila?",
+        "start": 2308.0,
+        "end": 2311.0
+    },
+    {
+        "text": " Ah, pero acá es un ejemplo.",
+        "start": 2311.0,
+        "end": 2313.0
+    },
+    {
+        "text": " Yo puedo usar para cualquiera fila.",
+        "start": 2313.0,
+        "end": 2316.0
+    },
+    {
+        "text": " Es un ejemplo de cómo se puede aplicar.",
+        "start": 2317.0,
+        "end": 2320.0
+    },
+    {
+        "text": " También puedo decir show, pero yo voy a multiplicar la segunda por tres.",
+        "start": 2320.0,
+        "end": 2325.0
+    },
+    {
+        "text": " No sé, voy a entender no sé, 12, 15 y ese 8.",
+        "start": 2326.0,
+        "end": 2333.0
+    },
+    {
+        "text": " Y acá para compensar, pongo un tercero y el resto lo cambia.",
+        "start": 2333.0,
+        "end": 2338.0
+    },
+    {
+        "text": " Me equivoqué?",
+        "start": 2343.0,
+        "end": 2344.0
+    },
+    {
+        "text": " Ah, gracias.",
+        "start": 2344.0,
+        "end": 2347.0
+    },
+    {
+        "text": " Por supuesto.",
+        "start": 2347.0,
+        "end": 2348.0
+    },
+    {
+        "text": " Hay gente que sigue en este corso.",
+        "start": 2348.0,
+        "end": 2351.0
+    },
+    {
+        "text": " Ok, por supuesto, no debía que cambiara la primera fila.",
+        "start": 2351.0,
+        "end": 2355.0
+    },
+    {
+        "text": " Ok, estos son dos ejemplos desvinculados, no hay nada.",
+        "start": 2355.0,
+        "end": 2360.0
+    },
+    {
+        "text": " Sólo esperamos que yo pueda usar cualquier fila, cualquier columna.",
+        "start": 2360.0,
+        "end": 2364.0
+    },
+    {
+        "text": " Entonces, si yo necesito cambiar una fila o una columna,",
+        "start": 2364.0,
+        "end": 2369.0
+    },
+    {
+        "text": " yo pueda poder multiplicar y ya sé que su determinante será multiplicado",
+        "start": 2369.0,
+        "end": 2373.0
+    },
+    {
+        "text": " por la misma cantidad.",
+        "start": 2373.0,
+        "end": 2375.0
+    },
+    {
+        "text": " Entonces, acá como multiplique esta fila por tres,",
+        "start": 2375.0,
+        "end": 2379.0
+    },
+    {
+        "text": " este determinante es tres veces este, y si yo quiero la igual,",
+        "start": 2379.0,
+        "end": 2383.0
+    },
+    {
+        "text": " yo pongo un tercero para compensar.",
+        "start": 2383.0,
+        "end": 2386.0
+    },
+    {
+        "text": " Es su mismo, es otro modo para verlo.",
+        "start": 2387.0,
+        "end": 2390.0
+    },
+    {
+        "text": " Por es verlo como este determinante es tres veces este luego,",
+        "start": 2390.0,
+        "end": 2396.0
+    },
+    {
+        "text": " este es un tercero de este.",
+        "start": 2396.0,
+        "end": 2398.0
+    },
+    {
+        "text": " Obien, por es ver, si yo multiplico por un tercero la segunda fila,",
+        "start": 2398.0,
+        "end": 2403.0
+    },
+    {
+        "text": " obtengo esta.",
+        "start": 2403.0,
+        "end": 2405.0
+    },
+    {
+        "text": " Es equivalente.",
+        "start": 2405.0,
+        "end": 2407.0
+    },
+    {
+        "text": " Entonces, ¿se puede dar una fila a su I?",
+        "start": 2407.0,
+        "end": 2410.0
+    },
+    {
+        "text": " Si es igual, el determinante,",
+        "start": 2410.0,
+        "end": 2413.0
+    },
+    {
+        "text": " uno sobre la anda para el determinante,",
+        "start": 2413.0,
+        "end": 2415.0
+    },
+    {
+        "text": " no es que esa fila publicaría.",
+        "start": 2415.0,
+        "end": 2417.0
+    },
+    {
+        "text": " ¿De qué es el determinante de su I?",
+        "start": 2417.0,
+        "end": 2419.0
+    },
+    {
+        "text": " Porque lo estamos haciendo con una fila de la fila por la anda.",
+        "start": 2419.0,
+        "end": 2422.0
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2422.0,
+        "end": 2423.0
+    },
+    {
+        "text": " Entonces, el determinante va a ser uno sobre la anda",
+        "start": 2423.0,
+        "end": 2426.0
+    },
+    {
+        "text": " y la anda puede determinar esta.",
+        "start": 2426.0,
+        "end": 2428.0
+    },
+    {
+        "text": " No, no, será lambda porque el determinante de esta",
+        "start": 2428.0,
+        "end": 2432.0
+    },
+    {
+        "text": " es igual, tres veces el determinante de esta.",
+        "start": 2432.0,
+        "end": 2435.0
+    },
+    {
+        "text": " Pero ¿cómo yo lo quiero poner al revés?",
+        "start": 2435.0,
+        "end": 2438.0
+    },
+    {
+        "text": " Supongo esta es un tercero de esta.",
+        "start": 2438.0,
+        "end": 2440.0
+    },
+    {
+        "text": " ¿Pero tu anda ahí es tres?",
+        "start": 2440.0,
+        "end": 2442.0
+    },
+    {
+        "text": " Sí, mi anda es tres.",
+        "start": 2442.0,
+        "end": 2443.0
+    },
+    {
+        "text": " O un tercero de la independiente, ¿qué dirección estás leyendo la igualdad?",
+        "start": 2443.0,
+        "end": 2447.0
+    },
+    {
+        "text": " Las igualdad es un cimetrica se maté maldica,",
+        "start": 2447.0,
+        "end": 2450.0
+    },
+    {
+        "text": " se pueden leer en dos direcciones.",
+        "start": 2450.0,
+        "end": 2453.0
+    },
+    {
+        "text": " ¿Entiene?",
+        "start": 2453.0,
+        "end": 2454.0
+    },
+    {
+        "text": " ¿OK?",
+        "start": 2454.0,
+        "end": 2455.0
+    },
+    {
+        "text": " Entonces, es fácil, hay que entender.",
+        "start": 2455.0,
+        "end": 2457.0
+    },
+    {
+        "text": " Si yo hago el producto por tres, si prefieren,",
+        "start": 2457.0,
+        "end": 2461.0
+    },
+    {
+        "text": " si no les gusta esta igualdad,",
+        "start": 2461.0,
+        "end": 2463.0
+    },
+    {
+        "text": " puedo reemplazarla por esta.",
+        "start": 2463.0,
+        "end": 2465.0
+    },
+    {
+        "text": " Es tres veces, un, dos, tres, cuatro, cinco, seis, siete, ocho y nueve.",
+        "start": 2472.0,
+        "end": 2478.0
+    },
+    {
+        "text": " Quizás en esta dirección entiende el mejor.",
+        "start": 2478.0,
+        "end": 2481.0
+    },
+    {
+        "text": " Pero esa es mi facosa.",
+        "start": 2482.0,
+        "end": 2484.0
+    },
+    {
+        "text": " ¿Entonces hay un corolario?",
+        "start": 2488.0,
+        "end": 2491.0
+    },
+    {
+        "text": " ¿Qué es obvio? ¿Qué pasa si yo hago?",
+        "start": 2491.0,
+        "end": 2494.0
+    },
+    {
+        "text": " Corolario.",
+        "start": 2497.0,
+        "end": 2498.0
+    },
+    {
+        "text": " ¿Qué pasa si ahora yo múltiples toda la matriz A por lambda?",
+        "start": 2506.0,
+        "end": 2510.0
+    },
+    {
+        "text": " ¿Estoy mismo que multiplicar cada una de las N filas por lambda?",
+        "start": 2512.0,
+        "end": 2519.0
+    },
+    {
+        "text": " Es decir, voy a obtener lambda a la N por el determinante de A.",
+        "start": 2519.0,
+        "end": 2525.0
+    },
+    {
+        "text": " Y es esto que es importante.",
+        "start": 2525.0,
+        "end": 2527.0
+    },
+    {
+        "text": " Y depender de la dimensión.",
+        "start": 2527.0,
+        "end": 2529.0
+    },
+    {
+        "text": " En dimensión tres será lambda a tres.",
+        "start": 2529.0,
+        "end": 2532.0
+    },
+    {
+        "text": " En dimensión mil será lambda a la mil.",
+        "start": 2532.0,
+        "end": 2536.0
+    },
+    {
+        "text": " Eso es solo consistente en la pica de esta igualdad en y veces.",
+        "start": 2542.0,
+        "end": 2546.0
+    },
+    {
+        "text": " Ahora vimos esto.",
+        "start": 2547.0,
+        "end": 2550.0
+    },
+    {
+        "text": " Por supuesto, esto nos va a ayudar para que calcúan las cosas, hacer simplificaciones.",
+        "start": 2550.0,
+        "end": 2555.0
+    },
+    {
+        "text": " Ahora vamos a ver propiedad tres.",
+        "start": 2555.0,
+        "end": 2560.0
+    },
+    {
+        "text": " propiedad tres es intercambio.",
+        "start": 2560.0,
+        "end": 2564.0
+    },
+    {
+        "text": " Esto era la propiedad dos.",
+        "start": 2564.0,
+        "end": 2566.0
+    },
+    {
+        "text": " No lo es gili, pero voy a ver la propiedad dos.",
+        "start": 2566.0,
+        "end": 2569.0
+    },
+    {
+        "text": " Ahora propiedad tres.",
+        "start": 2570.0,
+        "end": 2572.0
+    },
+    {
+        "text": " Intercambio de filas.",
+        "start": 2576.0,
+        "end": 2578.0
+    },
+    {
+        "text": " Ahora vamos a aplicar operaciones elementales.",
+        "start": 2586.0,
+        "end": 2592.0
+    },
+    {
+        "text": " propiedad tres.",
+        "start": 2593.0,
+        "end": 2595.0
+    },
+    {
+        "text": " Es que el determinante de la transformada intercambio de filas por A.",
+        "start": 2599.0,
+        "end": 2608.0
+    },
+    {
+        "text": " Es decir, acá es, si soparto de A,",
+        "start": 2608.0,
+        "end": 2611.0
+    },
+    {
+        "text": " y si o intercambio dos filas,",
+        "start": 2611.0,
+        "end": 2613.0
+    },
+    {
+        "text": " se acuerdan de la notación que usé para las transformaciones elementales.",
+        "start": 2613.0,
+        "end": 2617.0
+    },
+    {
+        "text": " O que es decir, intercambiar.",
+        "start": 2618.0,
+        "end": 2620.0
+    },
+    {
+        "text": " Es decir, A con filas y j intercambiadas.",
+        "start": 2622.0,
+        "end": 2628.0
+    },
+    {
+        "text": " Intercambiar dos filas en una matriz para el determinante.",
+        "start": 2633.0,
+        "end": 2637.0
+    },
+    {
+        "text": " Sóo consistente cambiar el signo.",
+        "start": 2637.0,
+        "end": 2639.0
+    },
+    {
+        "text": " Entonces vimos que multiplicar una fila para un número,",
+        "start": 2648.0,
+        "end": 2653.0
+    },
+    {
+        "text": " que esto también es una transformación elemental.",
+        "start": 2653.0,
+        "end": 2656.0
+    },
+    {
+        "text": " Consiste de multiplicar el determinante por el número,",
+        "start": 2656.0,
+        "end": 2659.0
+    },
+    {
+        "text": " y intercambiar dos filas,",
+        "start": 2659.0,
+        "end": 2662.0
+    },
+    {
+        "text": " consiste en intercambiar el signo.",
+        "start": 2662.0,
+        "end": 2665.0
+    },
+    {
+        "text": " Es algo raro, es decir, por ejemplo, esta matriz.",
+        "start": 2665.0,
+        "end": 2669.0
+    },
+    {
+        "text": " Es el opuesto de esta matriz.",
+        "start": 2672.0,
+        "end": 2674.0
+    },
+    {
+        "text": " Disculpa.",
+        "start": 2678.0,
+        "end": 2680.0
+    },
+    {
+        "text": " Acá intercambiar la fila 1 con la fila 3.",
+        "start": 2682.0,
+        "end": 2685.0
+    },
+    {
+        "text": " Y por supuesto, mis propiedad para las columnas.",
+        "start": 2688.0,
+        "end": 2692.0
+    },
+    {
+        "text": " Como siempre, si yo intercambio dos columnas,",
+        "start": 2692.0,
+        "end": 2697.0
+    },
+    {
+        "text": " obtengo un intercambio...",
+        "start": 2697.0,
+        "end": 2699.0
+    },
+    {
+        "text": " Me llame equivocé, no.",
+        "start": 2701.0,
+        "end": 2703.0
+    },
+    {
+        "text": " Ah, menos, más, menos por supuesto.",
+        "start": 2703.0,
+        "end": 2706.0
+    },
+    {
+        "text": " Acá hay menos.",
+        "start": 2707.0,
+        "end": 2708.0
+    },
+    {
+        "text": " De hecho, lo que escribi acá,",
+        "start": 2709.0,
+        "end": 2712.0
+    },
+    {
+        "text": " acá esta trampa, se cumplía.",
+        "start": 2712.0,
+        "end": 2714.0
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 2714.0,
+        "end": 2715.0
+    },
+    {
+        "text": " Porque veremos que este determinante es duro.",
+        "start": 2715.0,
+        "end": 2718.0
+    },
+    {
+        "text": " Entonces es un mal ejemplo,",
+        "start": 2722.0,
+        "end": 2724.0
+    },
+    {
+        "text": " porque de hecho este determinante es duro,",
+        "start": 2724.0,
+        "end": 2726.0
+    },
+    {
+        "text": " cumplir un montón de propiedades.",
+        "start": 2726.0,
+        "end": 2728.0
+    },
+    {
+        "text": " Pero acá, no hay que decirlo.",
+        "start": 2728.0,
+        "end": 2730.0
+    },
+    {
+        "text": " Entonces, olviden que es un determinante duro.",
+        "start": 2732.0,
+        "end": 2735.0
+    },
+    {
+        "text": " Entonces también es igual a su opuesto.",
+        "start": 2735.0,
+        "end": 2737.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2738.0,
+        "end": 2739.0
+    },
+    {
+        "text": " Entonces, me voy a ver...",
+        "start": 2740.0,
+        "end": 2742.0
+    },
+    {
+        "text": " Para las columnas.",
+        "start": 2750.0,
+        "end": 2755.0
+    },
+    {
+        "text": " Es decir, acá si intercambian dos columnas,",
+        "start": 2757.0,
+        "end": 2760.0
+    },
+    {
+        "text": " cambian del signo.",
+        "start": 2760.0,
+        "end": 2762.0
+    },
+    {
+        "text": " A partir de esto, se puede hacer un montón de permutaciones",
+        "start": 2763.0,
+        "end": 2766.0
+    },
+    {
+        "text": " de las filas o de las columnas.",
+        "start": 2766.0,
+        "end": 2768.0
+    },
+    {
+        "text": " Usando que cualquier permutación de columnas o de filas",
+        "start": 2768.0,
+        "end": 2772.0
+    },
+    {
+        "text": " se puede hacer con intercambios.",
+        "start": 2772.0,
+        "end": 2775.0
+    },
+    {
+        "text": " Por ejemplo, ¿cómo puede yo relacionar ese determinante?",
+        "start": 2777.0,
+        "end": 2782.0
+    },
+    {
+        "text": " Y acá hago un ciclo.",
+        "start": 2785.0,
+        "end": 2787.0
+    },
+    {
+        "text": " Y yo quiero pasar a este determinado emilante.",
+        "start": 2788.0,
+        "end": 2790.0
+    },
+    {
+        "text": " 4, 5, 6, 7, 8, 9, 1, 2, 3.",
+        "start": 2791.0,
+        "end": 2795.0
+    },
+    {
+        "text": " Vieron que hice un ciclo.",
+        "start": 2795.0,
+        "end": 2797.0
+    },
+    {
+        "text": " Aquí está filabaca, esta filabaca y esta fila...",
+        "start": 2800.0,
+        "end": 2804.0
+    },
+    {
+        "text": " Ups, hacer ciclo.",
+        "start": 2804.0,
+        "end": 2805.0
+    },
+    {
+        "text": " Es un ciclo.",
+        "start": 2806.0,
+        "end": 2807.0
+    },
+    {
+        "text": " ¿Cómo se puede hacer?",
+        "start": 2808.0,
+        "end": 2809.0
+    },
+    {
+        "text": " Se puede hacer mediante dos transposiciones.",
+        "start": 2810.0,
+        "end": 2813.0
+    },
+    {
+        "text": " Yo puedo pasar haciendo una primera permutación",
+        "start": 2814.0,
+        "end": 2817.0
+    },
+    {
+        "text": " que es permutar estas filas.",
+        "start": 2817.0,
+        "end": 2821.0
+    },
+    {
+        "text": " Y después, otra intercambio.",
+        "start": 2824.0,
+        "end": 2828.0
+    },
+    {
+        "text": " ¿Entienden?",
+        "start": 2830.0,
+        "end": 2831.0
+    },
+    {
+        "text": " Entonces, para pasar de acá un cambio de signo,",
+        "start": 2832.0,
+        "end": 2835.0
+    },
+    {
+        "text": " para pasar de acá un cambio de signo, conclusión, son iguales.",
+        "start": 2835.0,
+        "end": 2840.0
+    },
+    {
+        "text": " ¿Pueden ver?",
+        "start": 2840.0,
+        "end": 2843.0
+    },
+    {
+        "text": " Este ciclo se puede descomponer como dos intercambios.",
+        "start": 2844.0,
+        "end": 2848.0
+    },
+    {
+        "text": " Para implementar a este ciclo,",
+        "start": 2849.0,
+        "end": 2852.0
+    },
+    {
+        "text": " acá, primero intercambio, intercambio fila 1 y fila 2.",
+        "start": 2852.0,
+        "end": 2856.0
+    },
+    {
+        "text": " Y después, segundo intercambio, intercambio,",
+        "start": 2856.0,
+        "end": 2859.0
+    },
+    {
+        "text": " la fila 2 y la fila 3.",
+        "start": 2859.0,
+        "end": 2862.0
+    },
+    {
+        "text": " Acá este determinante es el opuesto de este determinante,",
+        "start": 2863.0,
+        "end": 2866.0
+    },
+    {
+        "text": " que es igual, el opuesto determinante,",
+        "start": 2866.0,
+        "end": 2869.0
+    },
+    {
+        "text": " luego, estos determinantes son iguales.",
+        "start": 2869.0,
+        "end": 2872.0
+    },
+    {
+        "text": " Voy a ver un montón de ejercicios en los cuales, por ejemplo,",
+        "start": 2873.0,
+        "end": 2877.0
+    },
+    {
+        "text": " ejemplo típico, si yo tengo, no sé, un determinante de algo de esta forma.",
+        "start": 2877.0,
+        "end": 2881.0
+    },
+    {
+        "text": " Matriz, el resto nulo.",
+        "start": 2890.0,
+        "end": 2893.0
+    },
+    {
+        "text": " Si yo hago acá un intercambio,",
+        "start": 2896.0,
+        "end": 2898.0
+    },
+    {
+        "text": " obtengo una matriz triangular superior.",
+        "start": 2899.0,
+        "end": 2902.0
+    },
+    {
+        "text": " ¿Pueden ver? Si yo intercambio esta y esta,",
+        "start": 2905.0,
+        "end": 2908.0
+    },
+    {
+        "text": " obtengo una matriz triangular superior y después,",
+        "start": 2908.0,
+        "end": 2910.0
+    },
+    {
+        "text": " sabré calcular el determinante.",
+        "start": 2910.0,
+        "end": 2912.0
+    },
+    {
+        "text": " ¿Pueden ver que esto ayuda?",
+        "start": 2913.0,
+        "end": 2915.0
+    },
+    {
+        "text": " Es decir, a veces, para que la matriz tenga una buena forma,",
+        "start": 2916.0,
+        "end": 2919.0
+    },
+    {
+        "text": " hay que intercambiar algunas columnas y algunas filas",
+        "start": 2919.0,
+        "end": 2924.0
+    },
+    {
+        "text": " y que tener en cuenta la escanidad de signos",
+        "start": 2924.0,
+        "end": 2927.0
+    },
+    {
+        "text": " y que intercambian cada vez",
+        "start": 2927.0,
+        "end": 2930.0
+    },
+    {
+        "text": " para poner la matriz en una buena forma.",
+        "start": 2931.0,
+        "end": 2934.0
+    },
+    {
+        "text": " Todos estos son reglas que ayudan para hacer las cuentas.",
+        "start": 2934.0,
+        "end": 2938.0
+    },
+    {
+        "text": " Vimos que la cantidad de cuentas es imposible.",
+        "start": 2939.0,
+        "end": 2942.0
+    },
+    {
+        "text": " Entonces, como queremos calcular determinantes,",
+        "start": 2942.0,
+        "end": 2945.0
+    },
+    {
+        "text": " se necesitas hacer simplificaciones.",
+        "start": 2945.0,
+        "end": 2948.0
+    },
+    {
+        "text": " ¿Y...",
+        "start": 2948.0,
+        "end": 2949.0
+    },
+    {
+        "text": " Siempre, cuando cambias de una fila, cambias de una fila,",
+        "start": 2949.0,
+        "end": 2953.0
+    },
+    {
+        "text": " cambias de una fila.",
+        "start": 2953.0,
+        "end": 2954.0
+    },
+    {
+        "text": " ¿Tal?",
+        "start": 2954.0,
+        "end": 2955.0
+    },
+    {
+        "text": " Si vos es la cambia de la misma fila,",
+        "start": 2955.0,
+        "end": 2956.0
+    },
+    {
+        "text": " voy a la que te decimos.",
+        "start": 2956.0,
+        "end": 2957.0
+    },
+    {
+        "text": " Sí, tal cual.",
+        "start": 2957.0,
+        "end": 2959.0
+    },
+    {
+        "text": " Porque cada cambio decimos.",
+        "start": 2959.0,
+        "end": 2960.0
+    },
+    {
+        "text": " Cada cambio te cuesta un signo.",
+        "start": 2960.0,
+        "end": 2962.0
+    },
+    {
+        "text": " Es fácil.",
+        "start": 2962.0,
+        "end": 2963.0
+    },
+    {
+        "text": " Es la moneda que tienes que gastar.",
+        "start": 2963.0,
+        "end": 2966.0
+    },
+    {
+        "text": " Cada vez que intercambias dos filas,",
+        "start": 2967.0,
+        "end": 2969.0
+    },
+    {
+        "text": " gastas un cambio decido.",
+        "start": 2969.0,
+        "end": 2971.0
+    },
+    {
+        "text": " Acá para pasar, cuando hice el ciclo,",
+        "start": 2971.0,
+        "end": 2975.0
+    },
+    {
+        "text": " contenía implicitamente dos intercambios.",
+        "start": 2975.0,
+        "end": 2978.0
+    },
+    {
+        "text": " Entonces, hace dos veces un cambio decido,",
+        "start": 2978.0,
+        "end": 2981.0
+    },
+    {
+        "text": " es decir, un cambio decido.",
+        "start": 2981.0,
+        "end": 2983.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 2986.0,
+        "end": 2987.0
+    },
+    {
+        "text": " ¿No puedes aquí, ¿no?",
+        "start": 2987.0,
+        "end": 2988.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 2988.0,
+        "end": 2989.0
+    },
+    {
+        "text": " No puedes aquí, ¿no?",
+        "start": 2989.0,
+        "end": 2990.0
+    },
+    {
+        "text": " No puedes de la fila de la fila de la fila de la fila de la fila.",
+        "start": 2990.0,
+        "end": 2993.0
+    },
+    {
+        "text": " Sí, hay otro modo para hacerlo, ¿es lo que le sis?",
+        "start": 2993.0,
+        "end": 2996.0
+    },
+    {
+        "text": " Pero se puede cambiar la fila a uno o la fila.",
+        "start": 2996.0,
+        "end": 3001.0
+    },
+    {
+        "text": " ¿Apárselo que me atrisa?",
+        "start": 3002.0,
+        "end": 3003.0
+    },
+    {
+        "text": " ¿Estás?",
+        "start": 3003.0,
+        "end": 3004.0
+    },
+    {
+        "text": " Hay un par de dos y dos de uno.",
+        "start": 3004.0,
+        "end": 3005.0
+    },
+    {
+        "text": " ¿Cómo? ¿Cómo? ¿Cómo? ¿Cómo?",
+        "start": 3005.0,
+        "end": 3007.0
+    },
+    {
+        "text": " ¿No entiendo?",
+        "start": 3007.0,
+        "end": 3008.0
+    },
+    {
+        "text": " Esa me parece que llegar de la uno al atrero.",
+        "start": 3008.0,
+        "end": 3010.0
+    },
+    {
+        "text": " Así sí, pero así sí, no tienen que hacer con...",
+        "start": 3010.0,
+        "end": 3013.0
+    },
+    {
+        "text": " Acá es lo que hice acá.",
+        "start": 3013.0,
+        "end": 3015.0
+    },
+    {
+        "text": " Acá intercambiar la fila a uno y la fila a tres.",
+        "start": 3015.0,
+        "end": 3018.0
+    },
+    {
+        "text": " No tienen que hacer consecutivas.",
+        "start": 3019.0,
+        "end": 3021.0
+    },
+    {
+        "text": " Cualquier par de filas, cuando haces un intercambio,",
+        "start": 3022.0,
+        "end": 3026.0
+    },
+    {
+        "text": " te cuesta un cambio decido.",
+        "start": 3026.0,
+        "end": 3028.0
+    },
+    {
+        "text": " Entonces, cuando se hace un montón de cambios de filas,",
+        "start": 3029.0,
+        "end": 3033.0
+    },
+    {
+        "text": " una reordenación de las filas,",
+        "start": 3033.0,
+        "end": 3035.0
+    },
+    {
+        "text": " hay que cantar, contar la cantidad de intercambios",
+        "start": 3035.0,
+        "end": 3039.0
+    },
+    {
+        "text": " que hicimos para implementar esta permutación.",
+        "start": 3039.0,
+        "end": 3042.0
+    },
+    {
+        "text": " Sí sí.",
+        "start": 3048.0,
+        "end": 3049.0
+    },
+    {
+        "text": " Acá no tienes nada para ir directamente de acá.",
+        "start": 3050.0,
+        "end": 3054.0
+    },
+    {
+        "text": " Porque acá es toda una transposición.",
+        "start": 3055.0,
+        "end": 3058.0
+    },
+    {
+        "text": " Es una transmutación, no es una transposición, es una permutación.",
+        "start": 3059.0,
+        "end": 3062.0
+    },
+    {
+        "text": " No es consistente, es decir, por ejemplo,",
+        "start": 3062.0,
+        "end": 3065.0
+    },
+    {
+        "text": " acá, esta transposición, esta transposición,",
+        "start": 3065.0,
+        "end": 3068.0
+    },
+    {
+        "text": " quizá hay otra implementación posible,",
+        "start": 3068.0,
+        "end": 3071.0
+    },
+    {
+        "text": " pero al final me va a costar dos cambios de signo.",
+        "start": 3071.0,
+        "end": 3074.0
+    },
+    {
+        "text": " Y por supuesto, todo lo que digo sobre las filas",
+        "start": 3077.0,
+        "end": 3080.0
+    },
+    {
+        "text": " funcionan de modo igual para las columnas.",
+        "start": 3080.0,
+        "end": 3084.0
+    },
+    {
+        "text": " Ok, esta propiedad 3.",
+        "start": 3085.0,
+        "end": 3087.0
+    },
+    {
+        "text": " Ahora hay un corrolario,",
+        "start": 3087.0,
+        "end": 3089.0
+    },
+    {
+        "text": " porque, ya vimos, de hecho, la propiedad 2, ya la vimos.",
+        "start": 3089.0,
+        "end": 3093.0
+    },
+    {
+        "text": " La propiedad 2, recordatorio, la propiedad 2,",
+        "start": 3094.0,
+        "end": 3097.0
+    },
+    {
+        "text": " también se puede expresar como una transformación elemental.",
+        "start": 3098.0,
+        "end": 3101.0
+    },
+    {
+        "text": " Es decir, multiplicar la fila y por alpha,",
+        "start": 3101.0,
+        "end": 3105.0
+    },
+    {
+        "text": " es lo mismo que alpha por el terminante de A.",
+        "start": 3109.0,
+        "end": 3112.0
+    },
+    {
+        "text": " Ya vimos esta propiedad, es la homogenería.",
+        "start": 3112.0,
+        "end": 3115.0
+    },
+    {
+        "text": " Multiplicar una fila por un número",
+        "start": 3116.0,
+        "end": 3118.0
+    },
+    {
+        "text": " es una propiedad de transformación elemental.",
+        "start": 3119.0,
+        "end": 3121.0
+    },
+    {
+        "text": " Ah, disculpa, hay el caso nulo.",
+        "start": 3122.0,
+        "end": 3125.0
+    },
+    {
+        "text": " La propiedad de multiplicación por un alpha también funciona para cero.",
+        "start": 3125.0,
+        "end": 3130.0
+    },
+    {
+        "text": " Entonces, esta propiedad 2 prima,",
+        "start": 3131.0,
+        "end": 3133.0
+    },
+    {
+        "text": " si alpha es distinto de cero.",
+        "start": 3133.0,
+        "end": 3135.0
+    },
+    {
+        "text": " Pero, de hecho, en este caso también funciona para el caso alpha igual de cero.",
+        "start": 3135.0,
+        "end": 3139.0
+    },
+    {
+        "text": " Y acá, se multiplica por cero y obtenemos cero.",
+        "start": 3139.0,
+        "end": 3142.0
+    },
+    {
+        "text": " Ok, ya lo vimos.",
+        "start": 3145.0,
+        "end": 3146.0
+    },
+    {
+        "text": " Es otra manera para implementar la homogenería.",
+        "start": 3146.0,
+        "end": 3152.0
+    },
+    {
+        "text": " Ahora, nos queda una tercera transformación elemental y vamos a ver lo que pasa.",
+        "start": 3154.0,
+        "end": 3159.0
+    },
+    {
+        "text": " Y esta es un corrolario",
+        "start": 3160.0,
+        "end": 3163.0
+    },
+    {
+        "text": " de lo que ya vimos.",
+        "start": 3167.0,
+        "end": 3169.0
+    },
+    {
+        "text": " Acá tenemos a tres propiedades fundamentales de las matrices.",
+        "start": 3170.0,
+        "end": 3174.0
+    },
+    {
+        "text": " Son las tres que hay que acordarse.",
+        "start": 3174.0,
+        "end": 3176.0
+    },
+    {
+        "text": " Es decir, suma de filas, linearidad respecto a una fila,",
+        "start": 3176.0,
+        "end": 3182.0
+    },
+    {
+        "text": " homogeneridad respecto a una fila,",
+        "start": 3183.0,
+        "end": 3186.0
+    },
+    {
+        "text": " se multiplica una fila por alpha y la tercera propiedad es intercambiar los filas.",
+        "start": 3186.0,
+        "end": 3191.0
+    },
+    {
+        "text": " Y todo el resto se puede descomponer a partir de estas tres propiedades.",
+        "start": 3191.0,
+        "end": 3195.0
+    },
+    {
+        "text": " Entonces, la propia al cuatro, que siguieron los anteriores,",
+        "start": 3196.0,
+        "end": 3201.0
+    },
+    {
+        "text": " es un corrolario.",
+        "start": 3201.0,
+        "end": 3202.0
+    },
+    {
+        "text": " Es que cuando yo aplico la transformación elemental,",
+        "start": 3207.0,
+        "end": 3210.0
+    },
+    {
+        "text": " T de i más alpha por la fila j de a,",
+        "start": 3210.0,
+        "end": 3219.0
+    },
+    {
+        "text": " esto no me cambia el determinante.",
+        "start": 3219.0,
+        "end": 3222.0
+    },
+    {
+        "text": " A ser, subarle a una fila,",
+        "start": 3223.0,
+        "end": 3226.0
+    },
+    {
+        "text": " múltiples de otra, no cambia el determinante.",
+        "start": 3226.0,
+        "end": 3229.0
+    },
+    {
+        "text": " Voy a mostrar por qué.",
+        "start": 3231.0,
+        "end": 3233.0
+    },
+    {
+        "text": " Supongo que sotengo a1",
+        "start": 3234.0,
+        "end": 3238.0
+    },
+    {
+        "text": " y acá la fila a y más alpha a subj,",
+        "start": 3238.0,
+        "end": 3244.0
+    },
+    {
+        "text": " es la que me importa.",
+        "start": 3244.0,
+        "end": 3246.0
+    },
+    {
+        "text": " Y el resto no cambia a subn.",
+        "start": 3246.0,
+        "end": 3249.0
+    },
+    {
+        "text": " Ok, yo quiero calcular ese determinante.",
+        "start": 3252.0,
+        "end": 3255.0
+    },
+    {
+        "text": " Es decir, el determinante le matris a,",
+        "start": 3255.0,
+        "end": 3257.0
+    },
+    {
+        "text": " donde en la fila y sume múltiples de la fila j.",
+        "start": 3257.0,
+        "end": 3262.0
+    },
+    {
+        "text": " Como se puede descomponer, yo puedo usar la additividad.",
+        "start": 3263.0,
+        "end": 3266.0
+    },
+    {
+        "text": " Entienden,",
+        "start": 3268.0,
+        "end": 3270.0
+    },
+    {
+        "text": " eso mismo que a1,",
+        "start": 3271.0,
+        "end": 3274.0
+    },
+    {
+        "text": " acá es a subi,",
+        "start": 3275.0,
+        "end": 3277.0
+    },
+    {
+        "text": " acá es a subn,",
+        "start": 3278.0,
+        "end": 3280.0
+    },
+    {
+        "text": " más,",
+        "start": 3281.0,
+        "end": 3283.0
+    },
+    {
+        "text": " acá tengo a1,",
+        "start": 3283.0,
+        "end": 3285.0
+    },
+    {
+        "text": " acá de modo excepcional tengo alpha a subj,",
+        "start": 3286.0,
+        "end": 3289.0
+    },
+    {
+        "text": " que reemplaza la fila y,",
+        "start": 3289.0,
+        "end": 3292.0
+    },
+    {
+        "text": " y acá tengo a subn.",
+        "start": 3294.0,
+        "end": 3297.0
+    },
+    {
+        "text": " Ok, entienden esta igualdad,",
+        "start": 3302.0,
+        "end": 3304.0
+    },
+    {
+        "text": " acá apliquen la propiedad 1.",
+        "start": 3304.0,
+        "end": 3306.0
+    },
+    {
+        "text": " Pero yo también puedo apliquen la propiedad 2,",
+        "start": 3306.0,
+        "end": 3309.0
+    },
+    {
+        "text": " el alpha acá puede salir.",
+        "start": 3309.0,
+        "end": 3312.0
+    },
+    {
+        "text": " Ahora, ¿qué tiene que es la propiedad rara de esta matriz?",
+        "start": 3318.0,
+        "end": 3322.0
+    },
+    {
+        "text": " acá puse en la fila y, la fila j.",
+        "start": 3323.0,
+        "end": 3327.0
+    },
+    {
+        "text": " Entonces esta matriz tiene 2 filas identicas.",
+        "start": 3327.0,
+        "end": 3331.0
+    },
+    {
+        "text": " Bueno, ¿verdad? Esta matriz, esta matriz.",
+        "start": 3334.0,
+        "end": 3337.0
+    },
+    {
+        "text": " Tienen filas y y j identicas.",
+        "start": 3340.0,
+        "end": 3346.0
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 3349.0,
+        "end": 3351.0
+    },
+    {
+        "text": " La fila j se queda acá o bien acá o bien acá.",
+        "start": 3351.0,
+        "end": 3353.0
+    },
+    {
+        "text": " Es una otra fila.",
+        "start": 3354.0,
+        "end": 3356.0
+    },
+    {
+        "text": " Y en lugar de la fila y puse la fila j.",
+        "start": 3356.0,
+        "end": 3359.0
+    },
+    {
+        "text": " Entonces esta matriz tiene 2 filas identicas.",
+        "start": 3359.0,
+        "end": 3362.0
+    },
+    {
+        "text": " ¿Qué pasa cuando una matriz tiene 2 filas identicas?",
+        "start": 3363.0,
+        "end": 3366.0
+    },
+    {
+        "text": " ¿Qué pasa si yo intercambio mi matristo va a cambiar?",
+        "start": 3367.0,
+        "end": 3372.0
+    },
+    {
+        "text": " Pero ¿qué va a hablar su determinante?",
+        "start": 3372.0,
+        "end": 3375.0
+    },
+    {
+        "text": " Su puesto.",
+        "start": 3376.0,
+        "end": 3378.0
+    },
+    {
+        "text": " Entonces una matriz que tiene 2 filas identicas es el opuesto de esa misma.",
+        "start": 3378.0,
+        "end": 3385.0
+    },
+    {
+        "text": " ¿Y qué es un número que es su propio opuesto?",
+        "start": 3387.0,
+        "end": 3390.0
+    },
+    {
+        "text": " Es 0.",
+        "start": 3391.0,
+        "end": 3392.0
+    },
+    {
+        "text": " Si una matriz tiene 2 filas identicas, necesariamente su determinante va a leerlo.",
+        "start": 3393.0,
+        "end": 3398.0
+    },
+    {
+        "text": " Lo vamos a ver después.",
+        "start": 3398.0,
+        "end": 3400.0
+    },
+    {
+        "text": " Pero esto es este determinante va a leerlo.",
+        "start": 3400.0,
+        "end": 3405.0
+    },
+    {
+        "text": " El determinante.",
+        "start": 3408.0,
+        "end": 3410.0
+    },
+    {
+        "text": " Es igual a 0.",
+        "start": 3414.0,
+        "end": 3416.0
+    },
+    {
+        "text": " Lo vamos a ver después.",
+        "start": 3417.0,
+        "end": 3419.0
+    },
+    {
+        "text": " Cada vez que una matriz tiene 2 filas identicas,",
+        "start": 3419.0,
+        "end": 3423.0
+    },
+    {
+        "text": " como es invariante por intercambio,",
+        "start": 3423.0,
+        "end": 3426.0
+    },
+    {
+        "text": " es invariante por intercambio de signo.",
+        "start": 3426.0,
+        "end": 3429.0
+    },
+    {
+        "text": " Y un número que es invariante por intercambio de signo es 0.",
+        "start": 3429.0,
+        "end": 3433.0
+    },
+    {
+        "text": " Es el único número que es igual a su opuesto.",
+        "start": 3433.0,
+        "end": 3437.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3437.0,
+        "end": 3438.0
+    },
+    {
+        "text": " Entonces esta parte no cuenta que me queda el determinante va.",
+        "start": 3438.0,
+        "end": 3445.0
+    },
+    {
+        "text": " Esta forma.",
+        "start": 3446.0,
+        "end": 3448.0
+    },
+    {
+        "text": " Es decir, aplicar esta transformación elemental a A,",
+        "start": 3451.0,
+        "end": 3456.0
+    },
+    {
+        "text": " no me cambia el determinante.",
+        "start": 3456.0,
+        "end": 3458.0
+    },
+    {
+        "text": " Ojo.",
+        "start": 3458.0,
+        "end": 3460.0
+    },
+    {
+        "text": " Nunca dije que las matrices son invariantes por transformaciones elementales.",
+        "start": 3460.0,
+        "end": 3466.0
+    },
+    {
+        "text": " Dependere a transformación elemental.",
+        "start": 3466.0,
+        "end": 3469.0
+    },
+    {
+        "text": " Si mi transformación elemental es multiplicar una fila por alpha,",
+        "start": 3469.0,
+        "end": 3473.0
+    },
+    {
+        "text": " esto induce un producto por alpha del determinante.",
+        "start": 3473.0,
+        "end": 3476.0
+    },
+    {
+        "text": " Si mi transformación elemental es intercambio de filas,",
+        "start": 3476.0,
+        "end": 3480.0
+    },
+    {
+        "text": " es cambio de signo del determinante.",
+        "start": 3480.0,
+        "end": 3483.0
+    },
+    {
+        "text": " Y si la transformación elemental está la tercera,",
+        "start": 3483.0,
+        "end": 3487.0
+    },
+    {
+        "text": " no cambia el determinante.",
+        "start": 3487.0,
+        "end": 3490.0
+    },
+    {
+        "text": " Es decir, cuando hacemos cuentas,",
+        "start": 3490.0,
+        "end": 3492.0
+    },
+    {
+        "text": " podemos hacer transformaciones,",
+        "start": 3492.0,
+        "end": 3494.0
+    },
+    {
+        "text": " algunas transformaciones elementales,",
+        "start": 3494.0,
+        "end": 3496.0
+    },
+    {
+        "text": " bajo la cosa que hay que verificar los cambios de signos o le múltiples.",
+        "start": 3496.0,
+        "end": 3502.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3504.0,
+        "end": 3506.0
+    },
+    {
+        "text": " Esto nos va a ayudar mucho para calcular cosas.",
+        "start": 3506.0,
+        "end": 3512.0
+    },
+    {
+        "text": " Y voy a tomar un ejemplo.",
+        "start": 3512.0,
+        "end": 3514.0
+    },
+    {
+        "text": " Ejemplo.",
+        "start": 3517.0,
+        "end": 3519.0
+    },
+    {
+        "text": " Un ejemplo realístico.",
+        "start": 3524.0,
+        "end": 3526.0
+    },
+    {
+        "text": " Y por supuesto, me olvidé y decía que misma propiedad para las columnas.",
+        "start": 3526.0,
+        "end": 3532.0
+    },
+    {
+        "text": " Y.",
+        "start": 3533.0,
+        "end": 3535.0
+    },
+    {
+        "text": " Es decir, pueden hacer estas cosas para las columnas también.",
+        "start": 3543.0,
+        "end": 3549.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3549.0,
+        "end": 3551.0
+    },
+    {
+        "text": " Ahora tenemos que ver lo que pasa con un ejemplo,",
+        "start": 3551.0,
+        "end": 3557.0
+    },
+    {
+        "text": " para entender cómo se usa esta cosa en la práctica.",
+        "start": 3557.0,
+        "end": 3562.0
+    },
+    {
+        "text": " Vamos a tomar una matriz de tamaño razonable,",
+        "start": 3562.0,
+        "end": 3574.0
+    },
+    {
+        "text": " porque hasta ahora consideramos determinantes de niños.",
+        "start": 3574.0,
+        "end": 3580.0
+    },
+    {
+        "text": " Ejemplo.",
+        "start": 3580.0,
+        "end": 3582.0
+    },
+    {
+        "text": " Ejemplo, de hecho, esta ejemplo es un ejemplo del primer parcial del semestre pasado.",
+        "start": 3582.0,
+        "end": 3589.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3590.0,
+        "end": 3591.0
+    },
+    {
+        "text": " Se usó a preguntar el parcial.",
+        "start": 3591.0,
+        "end": 3592.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 3592.0,
+        "end": 3593.0
+    },
+    {
+        "text": " Es una matriz 6x6.",
+        "start": 3593.0,
+        "end": 3595.0
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3595.0,
+        "end": 3597.0
+    },
+    {
+        "text": " Yo voy a tomar ese...",
+        "start": 3597.0,
+        "end": 3599.0
+    },
+    {
+        "text": " Sofiero del culo que está determinante.",
+        "start": 3599.0,
+        "end": 3601.0
+    },
+    {
+        "text": " Uno, uno, uno, uno.",
+        "start": 3601.0,
+        "end": 3603.0
+    },
+    {
+        "text": " Uno, uno, uno.",
+        "start": 3603.0,
+        "end": 3606.0
+    },
+    {
+        "text": " Primera fila.",
+        "start": 3606.0,
+        "end": 3608.0
+    },
+    {
+        "text": " Uno, menos uno.",
+        "start": 3608.0,
+        "end": 3610.0
+    },
+    {
+        "text": " Uno.",
+        "start": 3610.0,
+        "end": 3612.0
+    },
+    {
+        "text": " Menos uno.",
+        "start": 3612.0,
+        "end": 3614.0
+    },
+    {
+        "text": " Uno, menos uno.",
+        "start": 3614.0,
+        "end": 3616.0
+    },
+    {
+        "text": " Uno, uno.",
+        "start": 3616.0,
+        "end": 3619.0
+    },
+    {
+        "text": " Menos uno.",
+        "start": 3619.0,
+        "end": 3621.0
+    },
+    {
+        "text": " Menos uno.",
+        "start": 3621.0,
+        "end": 3623.0
+    },
+    {
+        "text": " Uno, uno.",
+        "start": 3623.0,
+        "end": 3625.0
+    },
+    {
+        "text": " Acá uno, uno, uno.",
+        "start": 3625.0,
+        "end": 3629.0
+    },
+    {
+        "text": " Menos uno, menos uno, menos uno.",
+        "start": 3629.0,
+        "end": 3633.0
+    },
+    {
+        "text": " Y después uno, uno, uno, uno.",
+        "start": 3633.0,
+        "end": 3637.0
+    },
+    {
+        "text": " Dos.",
+        "start": 3637.0,
+        "end": 3639.0
+    },
+    {
+        "text": " Uno, uno, uno, uno, uno, uno, dos.",
+        "start": 3639.0,
+        "end": 3646.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3646.0,
+        "end": 3647.0
+    },
+    {
+        "text": " ¿Factorial 4 es 24?",
+        "start": 3647.0,
+        "end": 3658.0
+    },
+    {
+        "text": " Factorial 6 es 120.",
+        "start": 3658.0,
+        "end": 3660.0
+    },
+    {
+        "text": " Si yo hago aplico la fórmula usual,",
+        "start": 3660.0,
+        "end": 3665.0
+    },
+    {
+        "text": " tengo una suma de 120 humanos",
+        "start": 3665.0,
+        "end": 3672.0
+    },
+    {
+        "text": " cada uno con un producto de 6 entradas.",
+        "start": 3672.0,
+        "end": 3677.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3677.0,
+        "end": 3678.0
+    },
+    {
+        "text": " Entonces, pueden durante el parcial.",
+        "start": 3678.0,
+        "end": 3680.0
+    },
+    {
+        "text": " Nadie les proybo hacerlo.",
+        "start": 3680.0,
+        "end": 3683.0
+    },
+    {
+        "text": " Puede hacerlo.",
+        "start": 3683.0,
+        "end": 3685.0
+    },
+    {
+        "text": " Si tienen la fuerza computacional suficiente,",
+        "start": 3685.0,
+        "end": 3688.0
+    },
+    {
+        "text": " puede hacerlo.",
+        "start": 3688.0,
+        "end": 3690.0
+    },
+    {
+        "text": " En general, los estudiantes",
+        "start": 3690.0,
+        "end": 3692.0
+    },
+    {
+        "text": " y siguieron los profesores la tienen.",
+        "start": 3692.0,
+        "end": 3695.0
+    },
+    {
+        "text": " Entonces, ahora hay que ver el truco.",
+        "start": 3695.0,
+        "end": 3698.0
+    },
+    {
+        "text": " La idea es que estos uno me molestan,",
+        "start": 3698.0,
+        "end": 3702.0
+    },
+    {
+        "text": " pero esta matriz, si yo ignoro estos unos,",
+        "start": 3702.0,
+        "end": 3705.0
+    },
+    {
+        "text": " es casi triangular.",
+        "start": 3705.0,
+        "end": 3708.0
+    },
+    {
+        "text": " Entonces, voy a hacer combinaciones.",
+        "start": 3708.0,
+        "end": 3712.0
+    },
+    {
+        "text": " ¿Qué pasa si yo resto la primera columna a la segunda?",
+        "start": 3712.0,
+        "end": 3720.0
+    },
+    {
+        "text": " Primera columna no cambia.",
+        "start": 3720.0,
+        "end": 3727.0
+    },
+    {
+        "text": " Ya por si le más ya los argumentados.",
+        "start": 3727.0,
+        "end": 3729.0
+    },
+    {
+        "text": " El caso voy a hacer, segunda, menos a primera.",
+        "start": 3729.0,
+        "end": 3732.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3732.0,
+        "end": 3733.0
+    },
+    {
+        "text": " Obtengo 0, menos 1, menos 1, menos 2.",
+        "start": 3733.0,
+        "end": 3737.0
+    },
+    {
+        "text": " Uno, menos 1, 0.",
+        "start": 3737.0,
+        "end": 3740.0
+    },
+    {
+        "text": " Menos 1, menos 1, menos 2.",
+        "start": 3740.0,
+        "end": 3742.0
+    },
+    {
+        "text": " Uno, menos 1, 0.",
+        "start": 3742.0,
+        "end": 3744.0
+    },
+    {
+        "text": " Menos 1, menos 1, menos 1, menos 1,",
+        "start": 3744.0,
+        "end": 3749.0
+    },
+    {
+        "text": " es menos 2.",
+        "start": 3749.0,
+        "end": 3751.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3751.0,
+        "end": 3752.0
+    },
+    {
+        "text": " Si yo pongo la misma cosa acá,",
+        "start": 3752.0,
+        "end": 3755.0
+    },
+    {
+        "text": " el determinante lo cambia.",
+        "start": 3755.0,
+        "end": 3758.0
+    },
+    {
+        "text": " Puede ver, pero yo puedo hacer las cosas",
+        "start": 3758.0,
+        "end": 3761.0
+    },
+    {
+        "text": " para las otras filas también.",
+        "start": 3761.0,
+        "end": 3763.0
+    },
+    {
+        "text": " Es decir, esta propiedad,",
+        "start": 3763.0,
+        "end": 3766.0
+    },
+    {
+        "text": " la voy a aplicar muchas veces.",
+        "start": 3766.0,
+        "end": 3770.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3770.0,
+        "end": 3771.0
+    },
+    {
+        "text": " Voy a restar también la primera fila a la tercera fila.",
+        "start": 3771.0,
+        "end": 3775.0
+    },
+    {
+        "text": " 0, 0, menos 1, menos 1, es menos 2.",
+        "start": 3775.0,
+        "end": 3780.0
+    },
+    {
+        "text": " Menos 1, menos 1, menos 1, menos 2.",
+        "start": 3780.0,
+        "end": 3783.0
+    },
+    {
+        "text": " Uno, menos 1, 0.",
+        "start": 3783.0,
+        "end": 3786.0
+    },
+    {
+        "text": " Uno, menos 1, 0.",
+        "start": 3786.0,
+        "end": 3788.0
+    },
+    {
+        "text": " Está bien.",
+        "start": 3788.0,
+        "end": 3789.0
+    },
+    {
+        "text": " Voy a hacer la misma cosa con la cuerda fila.",
+        "start": 3789.0,
+        "end": 3793.0
+    },
+    {
+        "text": " Uno, acá, obtengo 0, 0, 0.",
+        "start": 3793.0,
+        "end": 3799.0
+    },
+    {
+        "text": " Menos 1, menos 1, menos 2, menos 2, etc.",
+        "start": 3799.0,
+        "end": 3803.0
+    },
+    {
+        "text": " Menos 2, menos 2.",
+        "start": 3803.0,
+        "end": 3805.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3805.0,
+        "end": 3806.0
+    },
+    {
+        "text": " Quinta fila.",
+        "start": 3806.0,
+        "end": 3808.0
+    },
+    {
+        "text": " 0, 0, 0.",
+        "start": 3808.0,
+        "end": 3810.0
+    },
+    {
+        "text": " Acá 0.",
+        "start": 3810.0,
+        "end": 3812.0
+    },
+    {
+        "text": " 2, menos 1, 1, 1.",
+        "start": 3812.0,
+        "end": 3816.0
+    },
+    {
+        "text": " Y acá, una cosa, 0, 0, 0, 0.",
+        "start": 3816.0,
+        "end": 3821.0
+    },
+    {
+        "text": " Acá 0, 2, menos 1, 1.",
+        "start": 3821.0,
+        "end": 3828.0
+    },
+    {
+        "text": " Aplique acá 1, 2, 3, 4, 5 veces esta propiedad.",
+        "start": 3828.0,
+        "end": 3834.0
+    },
+    {
+        "text": " Voy a ver lo que hice.",
+        "start": 3834.0,
+        "end": 3836.0
+    },
+    {
+        "text": " Yo hubiera debido descomponer a mis cuentas.",
+        "start": 3836.0,
+        "end": 3839.0
+    },
+    {
+        "text": " No lo hice.",
+        "start": 3839.0,
+        "end": 3840.0
+    },
+    {
+        "text": " Ok.",
+        "start": 3840.0,
+        "end": 3842.0
+    },
+    {
+        "text": " Y ahora, entonces, como aplique 5 veces esta propiedad,",
+        "start": 3842.0,
+        "end": 3847.0
+    },
+    {
+        "text": " lo cambiable es germinante.",
+        "start": 3847.0,
+        "end": 3850.0
+    },
+    {
+        "text": " Son iguales.",
+        "start": 3850.0,
+        "end": 3853.0
+    },
+    {
+        "text": " Puede ver el truco.",
+        "start": 3854.0,
+        "end": 3856.0
+    },
+    {
+        "text": " Y ahora, ¿qué aparece?",
+        "start": 3856.0,
+        "end": 3859.0
+    },
+    {
+        "text": " Es una matriz triangular superior.",
+        "start": 3859.0,
+        "end": 3864.0
+    },
+    {
+        "text": " Entonces, sabemos que el cular la matriz.",
+        "start": 3864.0,
+        "end": 3867.0
+    },
+    {
+        "text": " Es decir, es igual a 1 por menos 2, por menos 2, por menos 2,",
+        "start": 3867.0,
+        "end": 3874.0
+    },
+    {
+        "text": " por 1 por 1, es decir, menos 8.",
+        "start": 3874.0,
+        "end": 3879.0
+    },
+    {
+        "text": " Ya está.",
+        "start": 3879.0,
+        "end": 3882.0
+    },
+    {
+        "text": " Y pueden ver que hice mucho menos cuentas.",
+        "start": 3882.0,
+        "end": 3887.0
+    },
+    {
+        "text": " ¿Qué es lo que hay acá?",
+        "start": 3887.0,
+        "end": 3890.0
+    },
+    {
+        "text": " Acá es.",
+        "start": 3890.0,
+        "end": 3891.0
+    },
+    {
+        "text": " Son iguales 5 transforaciones que haré.",
+        "start": 3891.0,
+        "end": 3893.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 3893.0,
+        "end": 3894.0
+    },
+    {
+        "text": " Son iguales 5 transformaciones que haré.",
+        "start": 3894.0,
+        "end": 3896.0
+    },
+    {
+        "text": " No, no, porque acá es una transformación que no cambia nada.",
+        "start": 3896.0,
+        "end": 3899.0
+    },
+    {
+        "text": " Ah, ahí no.",
+        "start": 3899.0,
+        "end": 3900.0
+    },
+    {
+        "text": " Acá no hay...",
+        "start": 3900.0,
+        "end": 3901.0
+    },
+    {
+        "text": " Acá no se ve una transformación que no cambia nada.",
+        "start": 3901.0,
+        "end": 3904.0
+    },
+    {
+        "text": " Ojo, hay transformaciones que te cambia en el terminante",
+        "start": 3904.0,
+        "end": 3907.0
+    },
+    {
+        "text": " y nos le cambian.",
+        "start": 3907.0,
+        "end": 3910.0
+    },
+    {
+        "text": " Acá ha gustado la transformación que es...",
+        "start": 3910.0,
+        "end": 3913.0
+    },
+    {
+        "text": " Acá hice esta operación, F2, es igual a F2,",
+        "start": 3913.0,
+        "end": 3917.0
+    },
+    {
+        "text": " menos F2, menos F1, F3, menos F1,",
+        "start": 3917.0,
+        "end": 3923.0
+    },
+    {
+        "text": " F4, menos F1, F5, menos F1,",
+        "start": 3923.0,
+        "end": 3928.0
+    },
+    {
+        "text": " F6, menos F1.",
+        "start": 3928.0,
+        "end": 3930.0
+    },
+    {
+        "text": " Y acá son transformaciones de este tipo.",
+        "start": 3930.0,
+        "end": 3935.0
+    },
+    {
+        "text": " Yo debería escribir los pasos intermeños",
+        "start": 3935.0,
+        "end": 3939.0
+    },
+    {
+        "text": " para hacer cada vez y el resto lo cambia.",
+        "start": 3939.0,
+        "end": 3943.0
+    },
+    {
+        "text": " Pero hice todos en un bloque.",
+        "start": 3943.0,
+        "end": 3947.0
+    },
+    {
+        "text": " Y esto, un sé que este tipo de transformación elemental",
+        "start": 3947.0,
+        "end": 3951.0
+    },
+    {
+        "text": " corresponde a una ausencia de cambio del determinante.",
+        "start": 3951.0,
+        "end": 3956.0
+    },
+    {
+        "text": " Acá es una igualdad.",
+        "start": 3959.0,
+        "end": 3961.0
+    },
+    {
+        "text": " Y esto, si yo tuviera un intercambio de los filas",
+        "start": 3961.0,
+        "end": 3965.0
+    },
+    {
+        "text": " para regalar el problema, yo debería tener en cuenta",
+        "start": 3965.0,
+        "end": 3968.0
+    },
+    {
+        "text": " el cambio de signo.",
+        "start": 3968.0,
+        "end": 3971.0
+    },
+    {
+        "text": " Cada vez que su aplicación transformación elemental,",
+        "start": 3971.0,
+        "end": 3974.0
+    },
+    {
+        "text": " hay algo que hay que tener en cuenta.",
+        "start": 3974.0,
+        "end": 3977.0
+    },
+    {
+        "text": " Esta no hay que dar a que tener en cuenta,",
+        "start": 3977.0,
+        "end": 3979.0
+    },
+    {
+        "text": " intercambio de filas hay que cambiar el signo",
+        "start": 3979.0,
+        "end": 3982.0
+    },
+    {
+        "text": " y multiplicar una fila por alpha,",
+        "start": 3982.0,
+        "end": 3984.0
+    },
+    {
+        "text": " hay que multiplicar por alpha.",
+        "start": 3984.0,
+        "end": 3988.0
+    },
+    {
+        "text": " Y esto facilita las cuentas de un determinante.",
+        "start": 3988.0,
+        "end": 3991.0
+    },
+    {
+        "text": " Entonces, el tipo de ejercicio que encanta los profesores,",
+        "start": 3991.0,
+        "end": 3996.0
+    },
+    {
+        "text": " porque hay el estudiante que conoce bien su definición",
+        "start": 3996.0,
+        "end": 3999.0
+    },
+    {
+        "text": " para el que no conoce las propiedades",
+        "start": 3999.0,
+        "end": 4003.0
+    },
+    {
+        "text": " y se pierde en las cuentas de 120 términos de seis productos.",
+        "start": 4003.0,
+        "end": 4010.0
+    },
+    {
+        "text": " Y en general la experiencia muestra que un ser humano promedio",
+        "start": 4010.0,
+        "end": 4017.0
+    },
+    {
+        "text": " no es capaz de hacerse al cuenta sin equivocar.",
+        "start": 4017.0,
+        "end": 4021.0
+    },
+    {
+        "text": " Pero esto se puede hacer sin equivocar sin dura.",
+        "start": 4021.0,
+        "end": 4025.0
+    },
+    {
+        "text": " Ok, es el ejemplo que tuve acá.",
+        "start": 4025.0,
+        "end": 4029.0
+    },
+    {
+        "text": " Ahora hay que ver otras propiedades de los determinantes.",
+        "start": 4032.0,
+        "end": 4037.0
+    },
+    {
+        "text": " Entonces, un ejemplo real de tomado desde un parcial.",
+        "start": 4037.0,
+        "end": 4042.0
+    },
+    {
+        "text": " La próxima vez",
+        "start": 4042.0,
+        "end": 4045.0
+    },
+    {
+        "text": " lo que podemos hacer es intercambiar los filas.",
+        "start": 4045.0,
+        "end": 4050.0
+    },
+    {
+        "text": " Para que la cosa nos los de directamente",
+        "start": 4050.0,
+        "end": 4055.0
+    },
+    {
+        "text": " una matriz triangular superior,",
+        "start": 4055.0,
+        "end": 4057.0
+    },
+    {
+        "text": " porque también hay que intercambiar los filas.",
+        "start": 4057.0,
+        "end": 4060.0
+    },
+    {
+        "text": " Algo así. Esto era el examen, yo pienso.",
+        "start": 4060.0,
+        "end": 4064.0
+    },
+    {
+        "text": " El examen además pusimos un intercambio de filas.",
+        "start": 4064.0,
+        "end": 4069.0
+    },
+    {
+        "text": " También después se puede hacer",
+        "start": 4069.0,
+        "end": 4071.0
+    },
+    {
+        "text": " para hacer un poquito más feo,",
+        "start": 4071.0,
+        "end": 4073.0
+    },
+    {
+        "text": " es intercambiar dos columnas",
+        "start": 4073.0,
+        "end": 4075.0
+    },
+    {
+        "text": " para esconder un poquito más la forma triangular.",
+        "start": 4075.0,
+        "end": 4078.0
+    },
+    {
+        "text": " Entonces en general las únicas matricias que sabemos",
+        "start": 4078.0,
+        "end": 4081.0
+    },
+    {
+        "text": " que al curar los determinantes son unas triangular.",
+        "start": 4081.0,
+        "end": 4085.0
+    },
+    {
+        "text": " Porque para esas tenemos una forma una sensilla.",
+        "start": 4085.0,
+        "end": 4089.0
+    },
+    {
+        "text": " Solo hay que tomar el producto del diagonal.",
+        "start": 4089.0,
+        "end": 4091.0
+    },
+    {
+        "text": " Puede ver que ha parido de eso.",
+        "start": 4091.0,
+        "end": 4094.0
+    },
+    {
+        "text": " No con todo nada de esto.",
+        "start": 4094.0,
+        "end": 4096.0
+    },
+    {
+        "text": " En este caso, ¿qué hace?",
+        "start": 4096.0,
+        "end": 4098.0
+    },
+    {
+        "text": " ¿Por qué? ¿Qué hace?",
+        "start": 4098.0,
+        "end": 4100.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4100.0,
+        "end": 4101.0
+    },
+    {
+        "text": " Así que eso tiene menos suelo acá.",
+        "start": 4101.0,
+        "end": 4103.0
+    },
+    {
+        "text": " ¿Menos suelo? Porque dice una resta.",
+        "start": 4103.0,
+        "end": 4105.0
+    },
+    {
+        "text": " Es menos suelo.",
+        "start": 4105.0,
+        "end": 4107.0
+    },
+    {
+        "text": " Por es ver que acá el alpha que aparece acá no aparece acha.",
+        "start": 4107.0,
+        "end": 4111.0
+    },
+    {
+        "text": " No cuenta.",
+        "start": 4111.0,
+        "end": 4113.0
+    },
+    {
+        "text": " ¿Entienden? Entonces, hay algo sucil.",
+        "start": 4113.0,
+        "end": 4116.0
+    },
+    {
+        "text": " Cada transformación elemental tiene su propia persona",
+        "start": 4116.0,
+        "end": 4121.0
+    },
+    {
+        "text": " que tiene que ver.",
+        "start": 4121.0,
+        "end": 4123.0
+    },
+    {
+        "text": " Cada transformación elemental tiene su propia personalidad",
+        "start": 4123.0,
+        "end": 4126.0
+    },
+    {
+        "text": " respecto al determinante.",
+        "start": 4126.0,
+        "end": 4128.0
+    },
+    {
+        "text": " Hay las que no te cambian determinantes",
+        "start": 4128.0,
+        "end": 4130.0
+    },
+    {
+        "text": " las que te cambian el sino y las que te hacen un producto.",
+        "start": 4130.0,
+        "end": 4133.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4133.0,
+        "end": 4134.0
+    },
+    {
+        "text": " ¿Y si yo probaba cancelar piquen columnas",
+        "start": 4134.0,
+        "end": 4138.0
+    },
+    {
+        "text": " y que me pide de un uno todos los heros",
+        "start": 4138.0,
+        "end": 4142.0
+    },
+    {
+        "text": " en la que da ese uno por el efecto de terminante",
+        "start": 4142.0,
+        "end": 4145.0
+    },
+    {
+        "text": " y ahí voy cancelando hasta que me quede uno por algo.",
+        "start": 4145.0,
+        "end": 4149.0
+    },
+    {
+        "text": " Sí, sí.",
+        "start": 4149.0,
+        "end": 4150.0
+    },
+    {
+        "text": " Esto también lo podría hacer.",
+        "start": 4150.0,
+        "end": 4152.0
+    },
+    {
+        "text": " Lo que les hice es que no tengo que usaría",
+        "start": 4152.0,
+        "end": 4154.0
+    },
+    {
+        "text": " es cancelar suelo de esta parte.",
+        "start": 4154.0,
+        "end": 4156.0
+    },
+    {
+        "text": " También, que no sirve para nada.",
+        "start": 4156.0,
+        "end": 4158.0
+    },
+    {
+        "text": " Lo cual es hacer.",
+        "start": 4158.0,
+        "end": 4160.0
+    },
+    {
+        "text": " Y al final te va a quedar una columna de matriz llegó da.",
+        "start": 4160.0,
+        "end": 4163.0
+    },
+    {
+        "text": " Pero no sirve porque ya sabemos que al poder",
+        "start": 4163.0,
+        "end": 4165.0
+    },
+    {
+        "text": " el determinante tiene una matriz triangular.",
+        "start": 4165.0,
+        "end": 4168.0
+    },
+    {
+        "text": " No tengo una triangular sino que me quede determinante",
+        "start": 4168.0,
+        "end": 4173.0
+    },
+    {
+        "text": " de dos por dos y por varios números.",
+        "start": 4173.0,
+        "end": 4177.0
+    },
+    {
+        "text": " ¿Seguro seros que me he quedado un número de una columna?",
+        "start": 4178.0,
+        "end": 4182.0
+    },
+    {
+        "text": " Yo lo puedo contestarse porque yo necesito que me muestras después.",
+        "start": 4182.0,
+        "end": 4186.0
+    },
+    {
+        "text": " Pero podemos ver después.",
+        "start": 4186.0,
+        "end": 4188.0
+    },
+    {
+        "text": " ¿OK?",
+        "start": 4188.0,
+        "end": 4189.0
+    },
+    {
+        "text": " Estos necesitas ser dibujos.",
+        "start": 4189.0,
+        "end": 4191.0
+    },
+    {
+        "text": " Es un que son más complicados.",
+        "start": 4191.0,
+        "end": 4193.0
+    },
+    {
+        "text": " ¿OK?",
+        "start": 4193.0,
+        "end": 4194.0
+    },
+    {
+        "text": " Entonces, vamos ahora a hablar de determinantes nulos.",
+        "start": 4194.0,
+        "end": 4197.0
+    },
+    {
+        "text": " ¿A?",
+        "start": 4202.0,
+        "end": 4203.0
+    },
+    {
+        "text": " ¿Esto qué vamos a ver ahora?",
+        "start": 4203.0,
+        "end": 4205.0
+    },
+    {
+        "text": " ¿Qué pasa si la última fila es nula?",
+        "start": 4207.0,
+        "end": 4209.0
+    },
+    {
+        "text": " ¿Ya tenés la respuesta?",
+        "start": 4209.0,
+        "end": 4211.0
+    },
+    {
+        "text": " ¿Es cero?",
+        "start": 4211.0,
+        "end": 4212.0
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 4212.0,
+        "end": 4213.0
+    },
+    {
+        "text": " Por desarrollo de respetuosa última fila.",
+        "start": 4213.0,
+        "end": 4215.0
+    },
+    {
+        "text": " Entonces, ahora vamos a considerar todos los casos",
+        "start": 4215.0,
+        "end": 4217.0
+    },
+    {
+        "text": " donde sin hacer cuentas se puede reconocer que un determinante es nulo.",
+        "start": 4217.0,
+        "end": 4223.0
+    },
+    {
+        "text": " Y yo les recuerdo que porque el determinante es importante",
+        "start": 4229.0,
+        "end": 4233.0
+    },
+    {
+        "text": " porque al final de la clase voy a demostrar el teorema fundamental",
+        "start": 4233.0,
+        "end": 4237.0
+    },
+    {
+        "text": " que es que una matriz es invertible si y solo si su determinante no es nulo.",
+        "start": 4237.0,
+        "end": 4242.0
+    },
+    {
+        "text": " Es decir, el determinante es la medida del carácter invertible de una matriz.",
+        "start": 4242.0,
+        "end": 4248.0
+    },
+    {
+        "text": " ¿Con quiénes todas las cuentas adentro?",
+        "start": 4248.0,
+        "end": 4251.0
+    },
+    {
+        "text": " Entonces, ahora hay que ver casos determinantes nulos.",
+        "start": 4255.0,
+        "end": 4261.0
+    },
+    {
+        "text": " ¿Qué es el caso interesante?",
+        "start": 4263.0,
+        "end": 4265.0
+    },
+    {
+        "text": " Es mirar.",
+        "start": 4265.0,
+        "end": 4267.0
+    },
+    {
+        "text": " Entonces, proposición sea a una matriz cuadrada.",
+        "start": 4267.0,
+        "end": 4271.0
+    },
+    {
+        "text": " Entonces, cuando una de las siguientes probabilidades",
+        "start": 4293.0,
+        "end": 4307.0
+    },
+    {
+        "text": " se cumple",
+        "start": 4311.0,
+        "end": 4313.0
+    },
+    {
+        "text": " tenemos que su determinante es igual a ser.",
+        "start": 4316.0,
+        "end": 4322.0
+    },
+    {
+        "text": " Ahora voy a dar una lista de criterios que dicen cuándo un determinante puede ser nulo.",
+        "start": 4323.0,
+        "end": 4330.0
+    },
+    {
+        "text": " Primera cosa que sabemos",
+        "start": 4330.0,
+        "end": 4334.0
+    },
+    {
+        "text": " haciene una fila o columna nula.",
+        "start": 4334.0,
+        "end": 4345.0
+    },
+    {
+        "text": " Ya es claro, no, sabemos.",
+        "start": 4345.0,
+        "end": 4349.0
+    },
+    {
+        "text": " Si tiene una fila nula hay que desarrollar el determinante terrespecto a esta fila.",
+        "start": 4349.0,
+        "end": 4354.0
+    },
+    {
+        "text": " Y vamos a obtener 0 por el go, menos 0 por el go, más 0 por el go, menos 0 por el go,",
+        "start": 4354.0,
+        "end": 4360.0
+    },
+    {
+        "text": " y al final nos da 0.",
+        "start": 4360.0,
+        "end": 4363.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4363.0,
+        "end": 4364.0
+    },
+    {
+        "text": " Primero criterio, es decir, el criterio es más sencillo.",
+        "start": 4367.0,
+        "end": 4369.0
+    },
+    {
+        "text": " Es decir, cuando tienen una matriz que tiene una fila o una columna nula",
+        "start": 4369.0,
+        "end": 4372.0
+    },
+    {
+        "text": " ya está a no hay que ser cuentas su determinante es nulo.",
+        "start": 4372.0,
+        "end": 4375.0
+    },
+    {
+        "text": " Y de hecho, ya sabemos que no es un nivel divertible, también tampoco.",
+        "start": 4375.0,
+        "end": 4380.0
+    },
+    {
+        "text": " ¿Cosa más complicadas?",
+        "start": 4380.0,
+        "end": 4383.0
+    },
+    {
+        "text": " Ah, tiene dos filas o dos columnas iguales.",
+        "start": 4383.0,
+        "end": 4398.0
+    },
+    {
+        "text": " ¿Qué pasa cuando una matriz tiene dos filas iguales?",
+        "start": 4398.0,
+        "end": 4402.0
+    },
+    {
+        "text": " Esta propia la que vimos,",
+        "start": 4403.0,
+        "end": 4406.0
+    },
+    {
+        "text": " yo puedo intercambiar dos filas y no va a cambiar el determinante,",
+        "start": 4406.0,
+        "end": 4411.0
+    },
+    {
+        "text": " pero la propiedad me dice que el determinante también es supuesto.",
+        "start": 4411.0,
+        "end": 4415.0
+    },
+    {
+        "text": " Entonces el número es igual a él y también es supuesto, necesariamente es 0.",
+        "start": 4415.0,
+        "end": 4420.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4420.0,
+        "end": 4422.0
+    },
+    {
+        "text": " Y esto viene de que si su intercambio dos filas su tenga igual a menos determinante dea,",
+        "start": 4422.0,
+        "end": 4429.0
+    },
+    {
+        "text": " porque acá pique un intercambio de dos filas, no me cambió la matriz,",
+        "start": 4429.0,
+        "end": 4434.0
+    },
+    {
+        "text": " pero me cambió el sigo.",
+        "start": 4434.0,
+        "end": 4437.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 4437.0,
+        "end": 4439.0
+    },
+    {
+        "text": " ¿Como?",
+        "start": 4439.0,
+        "end": 4440.0
+    },
+    {
+        "text": " ¿Como?",
+        "start": 4440.0,
+        "end": 4441.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4441.0,
+        "end": 4442.0
+    },
+    {
+        "text": " Entonces no hay problemas, tenemos dos filas o dos columnas iguales",
+        "start": 4442.0,
+        "end": 4447.0
+    },
+    {
+        "text": " ya está determinante nulo.",
+        "start": 4447.0,
+        "end": 4449.0
+    },
+    {
+        "text": " Más generalmente,",
+        "start": 4450.0,
+        "end": 4452.0
+    },
+    {
+        "text": " a tiene dos filas o dos columnas proporcionales.",
+        "start": 4452.0,
+        "end": 4461.0
+    },
+    {
+        "text": " Esto es lo mismo, porque es solo que multiplicar por un coeficiente alfa.",
+        "start": 4467.0,
+        "end": 4473.0
+    },
+    {
+        "text": " Si yo tengo una matriz que tiene dos filas proporcionales,",
+        "start": 4474.0,
+        "end": 4480.0
+    },
+    {
+        "text": " multiplicando una de ambas filas por el buen número,",
+        "start": 4480.0,
+        "end": 4485.0
+    },
+    {
+        "text": " voy a obtener una matriz con dos filas identicas y habrá un coeficiente alfa.",
+        "start": 4485.0,
+        "end": 4490.0
+    },
+    {
+        "text": " Y esta ya sabemos que es nula, tiene determinante cero.",
+        "start": 4490.0,
+        "end": 4496.0
+    },
+    {
+        "text": " Entonces es un caso, es una generalización sencilla del caso anterior.",
+        "start": 4496.0,
+        "end": 4503.0
+    },
+    {
+        "text": " Y más generalmente, no lo voy a demostrar, de hecho,",
+        "start": 4503.0,
+        "end": 4508.0
+    },
+    {
+        "text": " a tiene una fila o una columna que es combinación lineal",
+        "start": 4508.0,
+        "end": 4533.0
+    },
+    {
+        "text": " de las filas o columnas restantes.",
+        "start": 4534.0,
+        "end": 4545.0
+    },
+    {
+        "text": " Esto se puede mostrar.",
+        "start": 4545.0,
+        "end": 4547.0
+    },
+    {
+        "text": " ¿Qué digo eso?",
+        "start": 4547.0,
+        "end": 4548.0
+    },
+    {
+        "text": " Nunca hablen de combinación lineal.",
+        "start": 4548.0,
+        "end": 4550.0
+    },
+    {
+        "text": " Esta primera vez que aparece en esta clase, que aparece la noción de combinación lineal.",
+        "start": 4550.0,
+        "end": 4555.0
+    },
+    {
+        "text": " Tengo que decir algo.",
+        "start": 4555.0,
+        "end": 4557.0
+    },
+    {
+        "text": " Esto quiere decir, voy a precisar.",
+        "start": 4557.0,
+        "end": 4564.0
+    },
+    {
+        "text": " Es decir, por ejemplo, quizá voy a dar un ejemplo de combinación lineal.",
+        "start": 4572.0,
+        "end": 4578.0
+    },
+    {
+        "text": " Cominar linealmente filas es tomar un multiplicado de una fila,",
+        "start": 4578.0,
+        "end": 4583.0
+    },
+    {
+        "text": " más otro multiplicado de otra fila, más otro multiplicado de otra fila y sumarlo.",
+        "start": 4583.0,
+        "end": 4588.0
+    },
+    {
+        "text": " Es decir, por ejemplo, digo que por ejemplo la fila 1 es 2 veces la fila 2,",
+        "start": 4588.0,
+        "end": 4593.0
+    },
+    {
+        "text": " menos 7 veces la fila 3, más 4 veces la fila 5.",
+        "start": 4593.0,
+        "end": 4597.0
+    },
+    {
+        "text": " Es una combinación lineal.",
+        "start": 4597.0,
+        "end": 4600.0
+    },
+    {
+        "text": " Cada vez que usa una fila es combinación lineal de las filas restantes,",
+        "start": 4600.0,
+        "end": 4604.0
+    },
+    {
+        "text": " el determinante es nula.",
+        "start": 4604.0,
+        "end": 4606.0
+    },
+    {
+        "text": " Y cómo se puede mostrar aplicando combinaciones de todas estas cosas.",
+        "start": 4606.0,
+        "end": 4612.0
+    },
+    {
+        "text": " Y hecho esto es un sí solos, vamos a verlo después.",
+        "start": 4614.0,
+        "end": 4619.0
+    },
+    {
+        "text": " Es decir, un determinante es nula, sí solos, hay una fila que es combinación lineal de las filas restantes.",
+        "start": 4619.0,
+        "end": 4628.0
+    },
+    {
+        "text": " Entonces, vamos a ver un ejemplo.",
+        "start": 4628.0,
+        "end": 4631.0
+    },
+    {
+        "text": " Mi matriz preferida, ejemplo.",
+        "start": 4631.0,
+        "end": 4635.0
+    },
+    {
+        "text": " Ya saben que es mi matriz preferida, yo quiero calcular su determinante.",
+        "start": 4643.0,
+        "end": 4650.0
+    },
+    {
+        "text": " Pero yo puedo observar que si yo hago 12 veces la fila 2,",
+        "start": 4650.0,
+        "end": 4662.0
+    },
+    {
+        "text": " menos la fila 1, ¿qué pasa?",
+        "start": 4662.0,
+        "end": 4672.0
+    },
+    {
+        "text": " Si yo hago, 2 veces la fila 2, menos la fila 1, ¿qué obtengo yo?",
+        "start": 4672.0,
+        "end": 4680.0
+    },
+    {
+        "text": " 2 x 4 igual a 1 o 7, 2 x 5 o 10 menos 2 o 8, 2 x 6, 2 x 3, 9,",
+        "start": 4680.0,
+        "end": 4689.0
+    },
+    {
+        "text": " obteno la fila 3. Es decir, acá tenemos la fila 3,",
+        "start": 4689.0,
+        "end": 4693.0
+    },
+    {
+        "text": " es igual a 2 veces la fila 2, menos la fila 1.",
+        "start": 4693.0,
+        "end": 4699.0
+    },
+    {
+        "text": " La fila 3 es combinación lineal de las filas restantes.",
+        "start": 4699.0,
+        "end": 4704.0
+    },
+    {
+        "text": " Luego, no hay que calcular nada.",
+        "start": 4704.0,
+        "end": 4708.0
+    },
+    {
+        "text": " Cero.",
+        "start": 4708.0,
+        "end": 4711.0
+    },
+    {
+        "text": " Entienden?",
+        "start": 4714.0,
+        "end": 4715.0
+    },
+    {
+        "text": " Acá, por supuesto, la cosa difícil es observar que una era combinación lineal de las otras.",
+        "start": 4715.0,
+        "end": 4722.0
+    },
+    {
+        "text": " De hecho, también se puede ver con las columnas.",
+        "start": 4722.0,
+        "end": 4725.0
+    },
+    {
+        "text": " Se puede observar que la última columna, 3, 6, 9, también es igual a 2 veces la segunda columna,",
+        "start": 4725.0,
+        "end": 4734.0
+    },
+    {
+        "text": " menos la primera columna.",
+        "start": 4734.0,
+        "end": 4739.0
+    },
+    {
+        "text": " Ok, 2 x 2, 4, menos 1, 3, 2 x 5, 10, menos 4, 6, 2 x 8, 16, menos 7, 9.",
+        "start": 4739.0,
+        "end": 4751.0
+    },
+    {
+        "text": " Esto también funciona para las columnas.",
+        "start": 4751.0,
+        "end": 4754.0
+    },
+    {
+        "text": " Ojo.",
+        "start": 4754.0,
+        "end": 4757.0
+    },
+    {
+        "text": " Por otro lado, una matriz puede tener una fila que es igual a la columna.",
+        "start": 4757.0,
+        "end": 4763.0
+    },
+    {
+        "text": " Y eso lo cuenta.",
+        "start": 4763.0,
+        "end": 4764.0
+    },
+    {
+        "text": " Solo son las filas entre sí, o bien, las columnas entre sí.",
+        "start": 4764.0,
+        "end": 4768.0
+    },
+    {
+        "text": " No hay que mezclar las filas con las columnas.",
+        "start": 4768.0,
+        "end": 4771.0
+    },
+    {
+        "text": " Si no, yo puedo demostrar que la identidad tiene determinante duro,",
+        "start": 4771.0,
+        "end": 4778.0
+    },
+    {
+        "text": " porque tiene cada fila corresponde a la misma columna.",
+        "start": 4778.0,
+        "end": 4782.0
+    },
+    {
+        "text": " No, no funciona.",
+        "start": 4782.0,
+        "end": 4785.0
+    },
+    {
+        "text": " Ok, entonces hay que aplicar las cosas con las filas entre sí, o las columnas entre sí.",
+        "start": 4785.0,
+        "end": 4791.0
+    },
+    {
+        "text": " Y son las cosas importantes.",
+        "start": 4791.0,
+        "end": 4795.0
+    },
+    {
+        "text": " Ahora voy a hablar de determinante de un producto.",
+        "start": 4795.0,
+        "end": 4802.0
+    },
+    {
+        "text": " Y es el teorema que yo quiero demostrar.",
+        "start": 4802.0,
+        "end": 4806.0
+    },
+    {
+        "text": " Disculpa, borre este pizarro.",
+        "start": 4815.0,
+        "end": 4819.0
+    },
+    {
+        "text": " Hay unos que se van a morir.",
+        "start": 4820.0,
+        "end": 4823.0
+    },
+    {
+        "text": " No borre este.",
+        "start": 4823.0,
+        "end": 4824.0
+    },
+    {
+        "text": " Yo hubiera debido borrar este.",
+        "start": 4824.0,
+        "end": 4826.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4833.0,
+        "end": 4835.0
+    },
+    {
+        "text": " Ahora, determinante de un producto.",
+        "start": 4835.0,
+        "end": 4839.0
+    },
+    {
+        "text": " Verifico que no me olvide la la.",
+        "start": 4839.0,
+        "end": 4842.0
+    },
+    {
+        "text": " Y es lo que voy a hacer hoy.",
+        "start": 4850.0,
+        "end": 4854.0
+    },
+    {
+        "text": " Ok, sabemos, récordatorio.",
+        "start": 4855.0,
+        "end": 4858.0
+    },
+    {
+        "text": " En general, el determinante de Amas B es distinto de el determinante de Amas el determinante de Amas.",
+        "start": 4863.0,
+        "end": 4871.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4872.0,
+        "end": 4875.0
+    },
+    {
+        "text": " Esta formula no funciona.",
+        "start": 4878.0,
+        "end": 4880.0
+    },
+    {
+        "text": " La linearidad solo funciona fin a por fina o bien columna por columna.",
+        "start": 4880.0,
+        "end": 4885.0
+    },
+    {
+        "text": " Y también vimos que el determinante de Ama por A es igual a Amdala N por el interaclinante de Amas.",
+        "start": 4885.0,
+        "end": 4895.0
+    },
+    {
+        "text": " Y esto en general es distinto de Amdala por el interaclinante de Amas.",
+        "start": 4896.0,
+        "end": 4901.0
+    },
+    {
+        "text": " Ahora, sabemos, entonces, el determinante, la conclusión es que el determinante es algo que no funciona bien con la suma.",
+        "start": 4904.0,
+        "end": 4915.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4916.0,
+        "end": 4918.0
+    },
+    {
+        "text": " Solo funciona, sí.",
+        "start": 4918.0,
+        "end": 4921.0
+    },
+    {
+        "text": " Ah, no, esto es igual.",
+        "start": 4921.0,
+        "end": 4923.0
+    },
+    {
+        "text": " La Amdala N.",
+        "start": 4923.0,
+        "end": 4925.0
+    },
+    {
+        "text": " Puse la Amdala N esta cosa importante.",
+        "start": 4925.0,
+        "end": 4928.0
+    },
+    {
+        "text": " Esto es igual, la Amdala N.",
+        "start": 4928.0,
+        "end": 4930.0
+    },
+    {
+        "text": " Esto es distinto de Amdala por A.",
+        "start": 4930.0,
+        "end": 4933.0
+    },
+    {
+        "text": " Ok.",
+        "start": 4933.0,
+        "end": 4935.0
+    },
+    {
+        "text": " Entonces, cuál es la operación que me falta que nunca use hasta ahora?",
+        "start": 4935.0,
+        "end": 4939.0
+    },
+    {
+        "text": " Hay una operación sobre las matrices que nunca use.",
+        "start": 4939.0,
+        "end": 4943.0
+    },
+    {
+        "text": " El producto teore, pero ¿cómo se comporta el determinante con el producto?",
+        "start": 4943.0,
+        "end": 4948.0
+    },
+    {
+        "text": " Entonces, ah, muy bien.",
+        "start": 4952.0,
+        "end": 4956.0
+    },
+    {
+        "text": " Ah, primera ejercicio es una ejercicio de pronunciación.",
+        "start": 4956.0,
+        "end": 4966.0
+    },
+    {
+        "text": " Y, ¿sí culpas? Son dos matemáticos franceses.",
+        "start": 4966.0,
+        "end": 4969.0
+    },
+    {
+        "text": " Entonces, voy a usar mi interisía.",
+        "start": 4969.0,
+        "end": 4975.0
+    },
+    {
+        "text": " Esto es, ¿bine?",
+        "start": 4975.0,
+        "end": 4978.0
+    },
+    {
+        "text": " A, ¿co?",
+        "start": 4978.0,
+        "end": 4980.0
+    },
+    {
+        "text": " Muy sencillo para pronunciar. ¿Bine?",
+        "start": 4980.0,
+        "end": 4983.0
+    },
+    {
+        "text": " Entonces, no se pronunciará a usted.",
+        "start": 4983.0,
+        "end": 4985.0
+    },
+    {
+        "text": " Franceses saca la mitad de la etatrasa antes de pronunciar para facilitar el trabajo.",
+        "start": 4985.0,
+        "end": 4990.0
+    },
+    {
+        "text": " ¿Bine? ¿co?",
+        "start": 4990.0,
+        "end": 4992.0
+    },
+    {
+        "text": " Entonces, para ustedes, ¿sí yo hago en español sería, ¿bine?",
+        "start": 4993.0,
+        "end": 4997.0
+    },
+    {
+        "text": " ¿co? ¿co? ¿sí? ¿algo así?",
+        "start": 4997.0,
+        "end": 5002.0
+    },
+    {
+        "text": " ¿Bine coche?",
+        "start": 5005.0,
+        "end": 5007.0
+    },
+    {
+        "text": " Por favor, noté.",
+        "start": 5007.0,
+        "end": 5009.0
+    },
+    {
+        "text": " Y nos cauchí, no, coche.",
+        "start": 5009.0,
+        "end": 5012.0
+    },
+    {
+        "text": " ¿Bine coche? Tenemos nombre de sensación.",
+        "start": 5012.0,
+        "end": 5015.0
+    },
+    {
+        "text": " Ok. Teore mal, ¿bine coche? Es super fácil.",
+        "start": 5017.0,
+        "end": 5020.0
+    },
+    {
+        "text": " Es para todas las matrices.",
+        "start": 5021.0,
+        "end": 5023.0
+    },
+    {
+        "text": " Ah, y ve, de mismo tamaño, por supuesto, y chen que se arcuadradas.",
+        "start": 5032.0,
+        "end": 5036.0
+    },
+    {
+        "text": " Porque, ojo, los determinantes sólo existen para las matrices cuadradas.",
+        "start": 5036.0,
+        "end": 5042.0
+    },
+    {
+        "text": " Entonces, ¿cuando se trata de calcular el determinante de una matriz rectangular?",
+        "start": 5042.0,
+        "end": 5049.0
+    },
+    {
+        "text": " ¿Qué hacemos? Vamos a aplachar. No hay que nada de hacer, porque no existe.",
+        "start": 5049.0,
+        "end": 5054.0
+    },
+    {
+        "text": " Ok. Ah, no, no, no hay un tiempo lindo hoy para ir a la placha.",
+        "start": 5054.0,
+        "end": 5058.0
+    },
+    {
+        "text": " Pero bueno, en un mes o dos, podemos ir a la placha.",
+        "start": 5058.0,
+        "end": 5063.0
+    },
+    {
+        "text": " Ok. Para todas las matrices, la fórmula más fácil del mundo,",
+        "start": 5063.0,
+        "end": 5069.0
+    },
+    {
+        "text": " el determinante de un producto es el producto de los determinantes.",
+        "start": 5069.0,
+        "end": 5074.0
+    },
+    {
+        "text": " Wow.",
+        "start": 5075.0,
+        "end": 5078.0
+    },
+    {
+        "text": " Entonces, es un teorema, si el teorema le viene coche,",
+        "start": 5082.0,
+        "end": 5085.0
+    },
+    {
+        "text": " que es ahora es casi un teorema de magia negra,",
+        "start": 5085.0,
+        "end": 5089.0
+    },
+    {
+        "text": " porque vimos que el determinante tiene una edifición recomplicada.",
+        "start": 5089.0,
+        "end": 5094.0
+    },
+    {
+        "text": " El producto tiene una edifición recomplicada.",
+        "start": 5094.0,
+        "end": 5098.0
+    },
+    {
+        "text": " Entonces, pero que no tiene nada que ver.",
+        "start": 5098.0,
+        "end": 5101.0
+    },
+    {
+        "text": " Entonces, hay que biencular algo complicado con algo complicado.",
+        "start": 5102.0,
+        "end": 5106.0
+    },
+    {
+        "text": " Ok. Y eso funciona. Es un teorema,",
+        "start": 5107.0,
+        "end": 5110.0
+    },
+    {
+        "text": " es decir, para todas las otras tres, es un universal.",
+        "start": 5110.0,
+        "end": 5113.0
+    },
+    {
+        "text": " Y, a partir de esto, vamos a deducir a esta propiedad,",
+        "start": 5113.0,
+        "end": 5117.0
+    },
+    {
+        "text": " se va a eluciar sencillamente que un matriz es invertible,",
+        "start": 5117.0,
+        "end": 5121.0
+    },
+    {
+        "text": " si sólo si su determinante no es tu.",
+        "start": 5121.0,
+        "end": 5124.0
+    },
+    {
+        "text": " Entonces, el determinante de una matriz es la medida",
+        "start": 5124.0,
+        "end": 5129.0
+    },
+    {
+        "text": " del carácter invertible, del carácter invertible de matriz.",
+        "start": 5129.0,
+        "end": 5133.0
+    },
+    {
+        "text": " Ok.",
+        "start": 5133.0,
+        "end": 5136.0
+    },
+    {
+        "text": " No voy a hacer la prueba hoy.",
+        "start": 5136.0,
+        "end": 5138.0
+    },
+    {
+        "text": " Yo voy a explicar la idea de la prueba.",
+        "start": 5138.0,
+        "end": 5142.0
+    },
+    {
+        "text": " La idea de la prueba es que no lo voy a demostrar directamente",
+        "start": 5142.0,
+        "end": 5146.0
+    },
+    {
+        "text": " para todas esas matrices.",
+        "start": 5146.0,
+        "end": 5147.0
+    },
+    {
+        "text": " Voy a empezar demostrandola con matrices elementales",
+        "start": 5147.0,
+        "end": 5153.0
+    },
+    {
+        "text": " que son las matrices con las cuales sabemos calcular los determinantes",
+        "start": 5153.0,
+        "end": 5157.0
+    },
+    {
+        "text": " fácilmente.",
+        "start": 5157.0,
+        "end": 5160.0
+    },
+    {
+        "text": " Y después, haciendo pequeños productos,",
+        "start": 5160.0,
+        "end": 5164.0
+    },
+    {
+        "text": " matrices más gordas, más amplias,",
+        "start": 5164.0,
+        "end": 5167.0
+    },
+    {
+        "text": " vamos al final a llegar hasta la fórmula de producto.",
+        "start": 5167.0,
+        "end": 5170.0
+    },
+    {
+        "text": " Ok. Gracias.",
+        "start": 5170.0,
+        "end": 5171.0
+    },
+    {
+        "text": " Veremos la demostración de próximas.",
+        "start": 5171.0,
+        "end": 5174.0
+    }
+]
