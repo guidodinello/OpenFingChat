@@ -1,0 +1,2002 @@
+[
+    {
+        "text": " Bueno, tardes. Entonces vamos a seguir con el tema de las matrices",
+        "start": 0.0,
+        "end": 23.400000000000002
+    },
+    {
+        "text": " elementales que vimos al final de la clase pasada. Yo voy a recordar lo que es. Entonces esto viene",
+        "start": 23.4,
+        "end": 30.599999999999998
+    },
+    {
+        "text": " en una proposición que es la siguiente. Dados enteros, M-I-N, M-I-N, M-I-N, M-I-Mashore,",
+        "start": 30.599999999999998,
+        "end": 44.239999999999995
+    },
+    {
+        "text": " eso igual es a uno. Primera cosa es que para cada transformación elemental,",
+        "start": 44.24,
+        "end": 53.08
+    },
+    {
+        "text": " para cada transformación elemental sobre las matrices,",
+        "start": 62.28,
+        "end": 66.2
+    },
+    {
+        "text": " es una matriz, una matriz cuadrada,",
+        "start": 66.2,
+        "end": 89.72
+    },
+    {
+        "text": " es decir, acá, ojo, acá, cuando yo hablo de transformaciones elementales, se puede actuar sobre",
+        "start": 89.72,
+        "end": 106.16
+    },
+    {
+        "text": " cualquier matriz rectangular. Entonces, una transformación elemental actúa sobre las matrices",
+        "start": 106.16,
+        "end": 111.88
+    },
+    {
+        "text": " de tamaño M-N, pero las matrices elementales que les van a representar son matrices cuadradas que",
+        "start": 111.88,
+        "end": 120.6
+    },
+    {
+        "text": " tienen el cuadrado las filas. Entonces existe una matriz cuadrada, tal que aplicar la transformación",
+        "start": 120.6,
+        "end": 134.32
+    },
+    {
+        "text": " de cualquier matriz es lo mismo que multiplicar la matriz por la transformación elemental que corresponde y",
+        "start": 134.32,
+        "end": 143.72
+    },
+    {
+        "text": " es un producto por la izquierda. Entonces para toda matriz rectangular.",
+        "start": 143.72,
+        "end": 151.6
+    },
+    {
+        "text": " Ok, y además, además, además, la matriz elemental y es así que se llama,",
+        "start": 151.6,
+        "end": 169.24
+    },
+    {
+        "text": " la matriz elemental asociada a la transformación elemental de se obtiene por solo hay que aplicar",
+        "start": 169.24,
+        "end": 191.48000000000002
+    },
+    {
+        "text": " la transformación elemental correspondiente a la identidad de tamaño M. Ok, entonces, porque es",
+        "start": 191.48,
+        "end": 204.35999999999999
+    },
+    {
+        "text": " muy interesante, porque vimos que todo funciona en este curso gracias a un único algoritmo que se",
+        "start": 204.35999999999999,
+        "end": 212.12
+    },
+    {
+        "text": " llama Husefrobenius. Sabimos que hace todo, resuelve los sistemas, resuelve el problema de la",
+        "start": 212.12,
+        "end": 219.0
+    },
+    {
+        "text": " inversa, resuelve los proveedos de amor, los problemas de plata, les salud y todo. Ok, entonces hay que",
+        "start": 219.0,
+        "end": 225.64
+    },
+    {
+        "text": " entender cómo funciona este algoritmo. Entonces, vimos que este algoritmo consiste en aplicar de modo",
+        "start": 225.64,
+        "end": 234.68
+    },
+    {
+        "text": " judicioso transformaciones elementales a una matriz ampliada en general. Entonces es importante que",
+        "start": 234.68,
+        "end": 242.44
+    },
+    {
+        "text": " estudiemos las transformaciones elementales y la primera observación es que aplicar una transformación",
+        "start": 242.44,
+        "end": 253.4
+    },
+    {
+        "text": " elemental, dada una transformación elemental, aplicar una transformación elemental es lo mismo que",
+        "start": 253.4,
+        "end": 260.4
+    },
+    {
+        "text": " multiplicar la matriz A por cierta matriz elemental que hace el mismo trabajo. Ok, entonces cada vez que",
+        "start": 260.4,
+        "end": 272.0
+    },
+    {
+        "text": " tendremos que estudiar las propiedades de las transformaciones elementales, podremos reducir dichos",
+        "start": 272.0,
+        "end": 278.23999999999995
+    },
+    {
+        "text": " problemas al estudio de matrizes elementales. Ok, entonces acá transformación elemental corresponde",
+        "start": 278.23999999999995,
+        "end": 285.23999999999995
+    },
+    {
+        "text": " una matriz elemental. Ok, ahora hay que recordar los tres tipos, los tres tipos de matrizes elementales,",
+        "start": 285.24,
+        "end": 298.52
+    },
+    {
+        "text": " hay tres tipos, primer tipo, si yo tengo la transformación, te, si te, te alpha i, que es multiplicar",
+        "start": 298.52,
+        "end": 315.4
+    },
+    {
+        "text": " la fila i por alpha distinto de cero. Ok, es el primer tipo de transformación elemental.",
+        "start": 319.08,
+        "end": 327.4
+    },
+    {
+        "text": " La matriz elemental que corresponde es la siguiente y sub alpha i, es decir, este sub alpha i aplicada a la",
+        "start": 327.96,
+        "end": 340.64
+    },
+    {
+        "text": " transformación de matriz identidad, ahora yo escribo la matriz identidad, acá es la matriz identidad,",
+        "start": 340.64,
+        "end": 348.84
+    },
+    {
+        "text": " ahora acá escribí la matriz identidad, me falta que, me falta aplicar la transformación T, y la",
+        "start": 348.84,
+        "end": 360.56
+    },
+    {
+        "text": " transformación T dice multiplicar la fila i por alpha, es decir, este uno acá se vuelve en un alpha,",
+        "start": 360.56,
+        "end": 368.88
+    },
+    {
+        "text": " en la fila i y en la columna i. Ok, esto es la matriz elemental que corresponde a la transformación",
+        "start": 368.88,
+        "end": 380.64
+    },
+    {
+        "text": " elemental multiplicar la fila i por alpha. Ok, entonces es una matriz que es casi la matriz identidad,",
+        "start": 380.64,
+        "end": 388.4
+    },
+    {
+        "text": " pero en el buen lugar en la rioonal, reemplazamos el uno por un alpha. Ok, y las otros filas y",
+        "start": 388.4,
+        "end": 397.08
+    },
+    {
+        "text": " columnas cambia. Ok, y esto, cuéles se interesa, cada vez que show multiplico esta matriz por cualquier",
+        "start": 397.08,
+        "end": 405.76
+    },
+    {
+        "text": " matriz del buen tamaño, eso mismo que aplicar esa transformación elemental. Entienden la cosa",
+        "start": 405.76,
+        "end": 413.59999999999997
+    },
+    {
+        "text": " conceptual, pasaje como pasar de una transformación elemental a una matriz, producto de matriz. Segundo",
+        "start": 413.59999999999997,
+        "end": 421.36
+    },
+    {
+        "text": " tipo es intercambio de i, se intercambia con j, es decir, intercambiar las filas i y j,",
+        "start": 421.36,
+        "end": 438.92
+    },
+    {
+        "text": " misma cosa, show quiero calcular la matriz elemental que corresponde a esta cosa,",
+        "start": 438.92,
+        "end": 448.12
+    },
+    {
+        "text": " para toda la identidad de tamaño m, esta matriz es esta. Ok, y ahora tengo dos filas",
+        "start": 448.12,
+        "end": 462.68
+    },
+    {
+        "text": " particulares, i y j, que corresponden a un subcuadrado, y ok, esto es la fila i, esto es la fila",
+        "start": 462.68,
+        "end": 479.72
+    },
+    {
+        "text": " j, esto es la fila columna i, y esto es la columna j, y acá normalmente tengo un 1 acá y un 1",
+        "start": 479.72,
+        "end": 490.76
+    },
+    {
+        "text": " acá, pero qué pasa si yo intercambio, el 1 acá se va a poner acá, tengo un 1 acá y un cero acá,",
+        "start": 490.76,
+        "end": 498.32
+    },
+    {
+        "text": " y el 1 acá se va a poner acá, entonces tengo un 1 acá y un cero acá, y el resto no cambia,",
+        "start": 499.84,
+        "end": 508.0
+    },
+    {
+        "text": " es decir, adentro todavía hay unos, y antes del cero acá tengo un 1 y después del cero acá tengo",
+        "start": 508.0,
+        "end": 518.04
+    },
+    {
+        "text": " un 1 y todo el resto son cero, entienden lo que pasa, tome la matriz identidad de tamaño m,",
+        "start": 518.04,
+        "end": 528.1999999999999
+    },
+    {
+        "text": " intercambie las dos filas i y j, lo que hace es que este 1 se va acá y este 1 se va acá y el resto no",
+        "start": 528.1999999999999,
+        "end": 540.0
+    },
+    {
+        "text": " cambia, adentro particular tenemos una diagonal que sólo contiene unos salvo en dos posiciones",
+        "start": 540.0,
+        "end": 547.04
+    },
+    {
+        "text": " en la posición i tiene un cero, en la posición j tiene un cero y el 1 que se fue, se fue acá, se fue",
+        "start": 547.04,
+        "end": 556.64
+    },
+    {
+        "text": " allá y el 1 acá que estaba acá se fue, se fue allá, ok, esto es la matriz elemental asociada,",
+        "start": 556.64,
+        "end": 566.7199999999999
+    },
+    {
+        "text": " ahora tengo que escribirlo, a la transformación te intercambiar y con j, ok,",
+        "start": 566.72,
+        "end": 576.0400000000001
+    },
+    {
+        "text": " entonces la variación es una para la columna, ¿tienes?",
+        "start": 576.0400000000001,
+        "end": 580.6
+    },
+    {
+        "text": " No, de hecho acá tenemos suerte porque las operaciones que hicimos son simétricas con las filas y las",
+        "start": 580.6,
+        "end": 588.28
+    },
+    {
+        "text": " columnas, vamos a ver que no es el caso para el tercer transformación, acá tenemos suerte porque",
+        "start": 588.28,
+        "end": 595.0400000000001
+    },
+    {
+        "text": " acá son matrices simétricas, viste, es una tristeza simétrica, esto es una tristeza simétrica,",
+        "start": 595.04,
+        "end": 602.12
+    },
+    {
+        "text": " entonces hacer cosas con fila o con columna, eso cambia, pero ojo, acá tenemos m filas y m",
+        "start": 602.12,
+        "end": 609.88
+    },
+    {
+        "text": " columnas para hacer el buen producto, acá tengo algo de tamaño m por m y algo de tamaño m por n,",
+        "start": 609.88,
+        "end": 619.4399999999999
+    },
+    {
+        "text": " entonces es importante que acá son las filas que cuentas, de hecho también existe una",
+        "start": 619.44,
+        "end": 626.8800000000001
+    },
+    {
+        "text": " noción de transformación elemental por la derecha, esa misma cosa de modo simétrico intercambio",
+        "start": 626.8800000000001,
+        "end": 633.24
+    },
+    {
+        "text": " viendo las columnas y las filas, pero no vamos a verlas, acá sólo necesitamos este tipo de",
+        "start": 633.24,
+        "end": 639.32
+    },
+    {
+        "text": " transformación elemental, entonces esto era el primer tipo, segundo tipo, y hay un tercer tipo,",
+        "start": 639.32,
+        "end": 644.6400000000001
+    },
+    {
+        "text": " el tercer tipo, esa transformación que es te y más alpha j que es sumarle a la fila y",
+        "start": 644.64,
+        "end": 657.3199999999999
+    },
+    {
+        "text": " y a la fila y sumarle a fila y la fila j por alpha, ok y misma cosa, yo quiero obtener la",
+        "start": 657.32,
+        "end": 682.96
+    },
+    {
+        "text": " matriz E que corresponde, el matriz elemental que corresponde a la niña transformación,",
+        "start": 682.96,
+        "end": 687.4000000000001
+    },
+    {
+        "text": " como se obtiene, se obtiene aplicando la transformación a la identidad, ahora yo escribo la",
+        "start": 687.4000000000001,
+        "end": 698.6800000000001
+    },
+    {
+        "text": " identidad, acá es la matriz identidad, todo el resto son ceros y ahora necesito trabajar con una",
+        "start": 698.6800000000001,
+        "end": 712.52
+    },
+    {
+        "text": " fila y particular y una fila j particular, entonces tengo un 1 acá y un 1 acá, ok y quiero",
+        "start": 712.52,
+        "end": 723.3199999999999
+    },
+    {
+        "text": " sumarle a la fila y alpha por la fila j, que va a pasar, alpha por la fila j es esta fila",
+        "start": 723.3199999999999,
+        "end": 730.48
+    },
+    {
+        "text": " multiplicada por alpha, es decir acá hay un alpha y la voy a sumar a la fila y que voy a obtener",
+        "start": 730.48,
+        "end": 737.6
+    },
+    {
+        "text": " hay un alpha que va a aparecer acá y el alpha parece, aparece en la fila y y la columna j y acá",
+        "start": 737.6,
+        "end": 750.08
+    },
+    {
+        "text": " pueden ver que esta matriz no es cimetrica, el alpha se queda acá pero no hay alpha en posición",
+        "start": 750.08,
+        "end": 756.44
+    },
+    {
+        "text": " cimetrica, ok son los tres tipos de transformaciones elementales que tenemos, entonces hay que ser la",
+        "start": 756.44,
+        "end": 763.96
+    },
+    {
+        "text": " observación que es una transformación elemental, elemental es una forma particular",
+        "start": 763.96,
+        "end": 779.76
+    },
+    {
+        "text": " de función y es una función T que va de espacio de las matrices m por n a la al mismo espacio,",
+        "start": 779.76,
+        "end": 799.4399999999999
+    },
+    {
+        "text": " ok, entonces la proposición anterior dice que todas estas funciones particulares se pueden",
+        "start": 799.4399999999999,
+        "end": 809.52
+    },
+    {
+        "text": " representar mediante matrices elementales, ok, entonces la proposición anterior dice que estas",
+        "start": 809.52,
+        "end": 818.64
+    },
+    {
+        "text": " funciones son de la forma, entonces son de la forma T de a igual e a para donde a es la matriz",
+        "start": 818.64,
+        "end": 840.4
+    },
+    {
+        "text": " y es la matriz elemental correspondiente, ok es decir las transformaciones elementales cuando",
+        "start": 840.4,
+        "end": 862.28
+    },
+    {
+        "text": " presenté el algoritmo de husefrobenius que resuelve todo y más allá, cuando presenté",
+        "start": 862.28,
+        "end": 870.92
+    },
+    {
+        "text": " ese algoritmo lo presenté con transformaciones elementales sobre las filas, lo que yo había",
+        "start": 870.92,
+        "end": 877.12
+    },
+    {
+        "text": " escondido es que cada vez que yo hacía una transformación elemental en mi cabeza yo pensaba en",
+        "start": 877.12,
+        "end": 884.16
+    },
+    {
+        "text": " término de producto por la izquierda y ahora vamos a analizar lo que pasa, por qué el algoritmo",
+        "start": 884.16,
+        "end": 891.16
+    },
+    {
+        "text": " funciona, ok, porque de hecho este algoritmo las transformaciones elementales no son cosas",
+        "start": 891.16,
+        "end": 899.12
+    },
+    {
+        "text": " disjuntas de las matrices son matrices, ok, es decir no solo las matrices son matrices pero las",
+        "start": 899.12,
+        "end": 907.92
+    },
+    {
+        "text": " operaciones que usamos sobre las matrices también son matrices, es decir en alge bralineal básicamente",
+        "start": 907.92,
+        "end": 913.92
+    },
+    {
+        "text": " es todo es una matriz, ok, exageramos un poquito porque vamos a ver que una televisión no es una",
+        "start": 913.92,
+        "end": 923.52
+    },
+    {
+        "text": " matriz pero así es una matriz de píxeles y entonces esta idea las transformaciones elementales",
+        "start": 923.52,
+        "end": 931.92
+    },
+    {
+        "text": " también son matrices, los vectores son matrices las funciones son matrices, entonces son cosas",
+        "start": 931.92,
+        "end": 937.7199999999999
+    },
+    {
+        "text": " muy importantes, ok, ahora primera propiedad que vamos a estudiar sobre las matrices elementales",
+        "start": 937.7199999999999,
+        "end": 943.36
+    },
+    {
+        "text": " que es una muy obvia, qué piensan del carácter invertible las matrices elementales, las matrices",
+        "start": 943.36,
+        "end": 953.2
+    },
+    {
+        "text": " elementales son invertibles o no, esta por ejemplo es invertible o no, porque que tengo yo que",
+        "start": 953.2,
+        "end": 963.2
+    },
+    {
+        "text": " hacer, voy a reemplazar alpha por alpha a menos 1 su inversa y alpha no es nulo pero qué dice esto",
+        "start": 963.2,
+        "end": 972.28
+    },
+    {
+        "text": " sabemos que todas las transformaciones elementales como funciones son objectivas, son divertibles, si yo",
+        "start": 972.28,
+        "end": 982.24
+    },
+    {
+        "text": " he multiplicado una fila por alpha, si yo quiero deshacer lo que hice tengo que multiplicar la misma fila",
+        "start": 982.24,
+        "end": 988.76
+    },
+    {
+        "text": " por 1 sobre alpha y esto mismo para cada transformación elemental, cada transformación",
+        "start": 988.76,
+        "end": 995.52
+    },
+    {
+        "text": " elemental es una transformación invertible, por lo tanto las matrices elementales correspondientes",
+        "start": 995.52,
+        "end": 1001.64
+    },
+    {
+        "text": " también serán invertibles, ok, entonces primera observación es que todas las matrices elementales",
+        "start": 1001.64,
+        "end": 1008.84
+    },
+    {
+        "text": " todas las matrices elemental es invertible, en particular y ahora hay que ver los tres tipos",
+        "start": 1008.84,
+        "end": 1026.76
+    },
+    {
+        "text": " hay tres tipos, primer tipo, yo considero la matrices multiplicar la fila y por alpha y yo quiero",
+        "start": 1026.76,
+        "end": 1039.68
+    },
+    {
+        "text": " invertir la que voy a tener la matrices elemental multiplicar la fila y por 1 sobre alpha, ok, entonces",
+        "start": 1039.68,
+        "end": 1051.36
+    },
+    {
+        "text": " la inversa de la matrices elemental multiplicar la fila y por alpha es la matrices elemental multiplicar la",
+        "start": 1051.36,
+        "end": 1059.6399999999999
+    },
+    {
+        "text": " fila y por alpha a menos 1, ok, y esto es obvio solo hay que razonar con las transformaciones elementales,",
+        "start": 1059.6399999999999,
+        "end": 1070.6
+    },
+    {
+        "text": " ok, segundo tipo la matrices intercambiar las filas y y j, que es la operación universal intercambiar",
+        "start": 1070.6,
+        "end": 1085.08
+    },
+    {
+        "text": " y y j, cuelso operación que hace las cosas arreves es la misma operación, entonces es una matrices",
+        "start": 1085.08,
+        "end": 1094.6399999999999
+    },
+    {
+        "text": " auto-inversa, es decir es una matrices que es su propia inversa, acá tenemos algo muy interesante",
+        "start": 1094.64,
+        "end": 1104.3200000000002
+    },
+    {
+        "text": " porque acá tenemos un montón de matrices que son su propia inversa, no es el caso en los números",
+        "start": 1104.3200000000002,
+        "end": 1113.92
+    },
+    {
+        "text": " reales, cueles en el cuerpo de los números reales, cueles son los números que tienen que son sus",
+        "start": 1113.92,
+        "end": 1124.8400000000001
+    },
+    {
+        "text": " propios inversos, dénme un ejemplo de número real que es su inverso, o sea ahora quedo",
+        "start": 1124.8400000000001,
+        "end": 1136.0800000000002
+    },
+    {
+        "text": " sido de matí, de gatitos, si porque inversa inversa es 0, acá directo a inferno, directo, no, no está",
+        "start": 1136.08,
+        "end": 1146.36
+    },
+    {
+        "text": " así, no estás, ¿sabes? ¿sabes? ¿sabes? ¿sabes? ¿sabes?",
+        "start": 1146.36,
+        "end": 1149.3999999999999
+    },
+    {
+        "text": " acá hay un pequeño de un monegro y desapariciste y ya estás en inferno, con torturas no me puedo imaginar",
+        "start": 1150.0,
+        "end": 1160.0
+    },
+    {
+        "text": " ok, entonces quién es invertible en R y es su propia inversa, uno y hay otro,",
+        "start": 1161.64,
+        "end": 1169.16
+    },
+    {
+        "text": " menos uno, ¿y cueles son los otros? no hay otros, en los números reales hay exactamente dos",
+        "start": 1169.16,
+        "end": 1180.76
+    },
+    {
+        "text": " números que son iguales a su inversa, uno y menos uno, en las matrices tenemos un montón de",
+        "start": 1180.76,
+        "end": 1187.72
+    },
+    {
+        "text": " matrices que son iguales a su inversa y en particular todas las matrices de esta forma son iguales",
+        "start": 1187.72,
+        "end": 1196.4
+    },
+    {
+        "text": " a esta su inversa, ok, y el tercer tipo sumar a la fila y alfa por la fila j, ¿cueles la operación",
+        "start": 1196.4,
+        "end": 1212.16
+    },
+    {
+        "text": " inversa? es restar a la fila y alfa por la fila, alfa por j y en particular la inversa de una",
+        "start": 1212.16,
+        "end": 1232.96
+    },
+    {
+        "text": " matriz elemental es otra matriz elemental, entonces toda la matriz elemental es",
+        "start": 1232.96,
+        "end": 1238.96
+    },
+    {
+        "text": " diverta y la inversa de toda la matriz elemental de cada matriz elemental",
+        "start": 1238.96,
+        "end": 1248.4
+    },
+    {
+        "text": " es uno matriz elemental",
+        "start": 1254.72,
+        "end": 1257.2
+    },
+    {
+        "text": " ok, entonces esta buena docicia las matrices elementales tienen inversas y son también matrices",
+        "start": 1257.2,
+        "end": 1272.64
+    },
+    {
+        "text": " elementales, ok, ahora esta primera proposición, yo no lo voy a demostrar porque es completamente trivial",
+        "start": 1272.64,
+        "end": 1280.24
+    },
+    {
+        "text": " porque esto sale de la propia posición anterior y el el choquete cada transformación elemental es la",
+        "start": 1281.2,
+        "end": 1291.4
+    },
+    {
+        "text": " inversa de otra transformación elemental cuando yo transformo mi problema en problema de matrices",
+        "start": 1291.4,
+        "end": 1296.36
+    },
+    {
+        "text": " voy a obtener un problema de inversas de matrices, ok, ahora vamos a analizar el método de escalerización",
+        "start": 1296.36,
+        "end": 1305.1200000000001
+    },
+    {
+        "text": " de ruche frobenios, proposición, entonces sea una matriz de tamaño m por n es una",
+        "start": 1305.12,
+        "end": 1329.6799999999998
+    },
+    {
+        "text": " matriz rectangular cualquiera y ve una forma no se voy a llamar a prima para cambiar, a prima una forma",
+        "start": 1329.68,
+        "end": 1342.16
+    },
+    {
+        "text": " escaralizada de, ya vimos que cuando tengo aplico el algoritmo de escaralización, existen un",
+        "start": 1342.16,
+        "end": 1356.1200000000001
+    },
+    {
+        "text": " montón de formas escaralizadas, puede ser reducida o no reducida, entonces",
+        "start": 1356.12,
+        "end": 1362.6399999999999
+    },
+    {
+        "text": " existe una sucesión finita",
+        "start": 1362.64,
+        "end": 1375.6000000000001
+    },
+    {
+        "text": " y uno y dos heca de matrices elementales",
+        "start": 1375.6,
+        "end": 1385.36
+    },
+    {
+        "text": " tales que utalque porque esta sucesión que es talque talque si la matriz a prima es igual a heca",
+        "start": 1392.56,
+        "end": 1402.1599999999999
+    },
+    {
+        "text": " por etc por e dos por e uno por a",
+        "start": 1402.16,
+        "end": 1408.28
+    },
+    {
+        "text": " acá puse la sucesión a revés, es sucesión e uno e dos heca y acá es a por e uno por la izquierda",
+        "start": 1415.3200000000002,
+        "end": 1423.92
+    },
+    {
+        "text": " e dos por la izquierda hasta heca por la izquierda, ok, no es una propiedad obvia para ustedes",
+        "start": 1423.92,
+        "end": 1433.3600000000001
+    },
+    {
+        "text": " es obvia, porque es obvia, cómo se pasaba una matriz a su forma escaralizada aplicando una lista",
+        "start": 1437.3600000000001,
+        "end": 1446.16
+    },
+    {
+        "text": " final de operaciones transformaciones o elementales, pero ahora sabemos que aplicar una transformación",
+        "start": 1446.16,
+        "end": 1454.5600000000002
+    },
+    {
+        "text": " elemental es lo mismo que multiplicar por una matriz elemental, entonces para pasar de a a",
+        "start": 1454.5600000000002,
+        "end": 1463.0800000000002
+    },
+    {
+        "text": " prima voy a introducir cada transformación elementales, cada transformación elemental T sub i va",
+        "start": 1463.0800000000002,
+        "end": 1471.48
+    },
+    {
+        "text": " a corresponder una matriz elemental T sub i, entonces lo que voy a hacer es aplicar la primera",
+        "start": 1471.48,
+        "end": 1478.64
+    },
+    {
+        "text": " transformación, es decir, multiplicar por e uno, después aplicar la segunda transformación es",
+        "start": 1478.64,
+        "end": 1485.1200000000001
+    },
+    {
+        "text": " decir multiplicar por e dos, hasta la última transformación es decir multiplicar por eca y voy",
+        "start": 1485.1200000000001,
+        "end": 1490.92
+    },
+    {
+        "text": " a obtener la forma escaralizada, eso es una prueba, esto es el arumento, es decir,",
+        "start": 1490.92,
+        "end": 1499.28
+    },
+    {
+        "text": " solo puedo hacer de modográfico cuando yo hago mi escaralización, yo aparto de la matriz",
+        "start": 1500.68,
+        "end": 1509.4
+    },
+    {
+        "text": " a 0 igual a, aplico una primera transformación, una segunda, etcétera, hasta a menos 1 y acá y acá es",
+        "start": 1509.4,
+        "end": 1521.4
+    },
+    {
+        "text": " mi forma escaralizada, ok, y acá aplico una primera transformación T1, T2, acá tengo Tk y ya está,",
+        "start": 1521.4,
+        "end": 1531.8000000000002
+    },
+    {
+        "text": " es así que se hace escaralización, pero esto quiere decir que a 1 es e 1 por a,",
+        "start": 1532.36,
+        "end": 1545.0
+    },
+    {
+        "text": " donde e 1 es la matriz elemental que correga una transformación elemental T1, esto quiero decir",
+        "start": 1546.8,
+        "end": 1553.28
+    },
+    {
+        "text": " que esto es e 2 por a 1, donde e 2 es la matriz elemental, asociada transformación de",
+        "start": 1553.28,
+        "end": 1561.3999999999999
+    },
+    {
+        "text": " elemental T2, pero esto también es e 2 por e 1 por a, etcétera, hasta acá y acá esto será e subca",
+        "start": 1561.3999999999999,
+        "end": 1574.6
+    },
+    {
+        "text": " aplicada e menos 1, es decir, e subca, puntitos e 2 e 1 a esa demostración, ok, entonces",
+        "start": 1574.6,
+        "end": 1589.04
+    },
+    {
+        "text": " conceptualmente no hay nada en esta demostración, es decir para pasar de una matriz a una forma",
+        "start": 1589.04,
+        "end": 1595.48
+    },
+    {
+        "text": " escaralizada tengo que aplicar una cantidad de transformaciones elementales que corresponden a",
+        "start": 1595.48,
+        "end": 1601.12
+    },
+    {
+        "text": " ser productos con una cantidad finita de matrices elementales, ya está, ok, esto está primera",
+        "start": 1601.12,
+        "end": 1608.6799999999998
+    },
+    {
+        "text": " proposición y ahora un corrolario muy interesante, vamos a ver que toda la matriz",
+        "start": 1608.6799999999998,
+        "end": 1615.76
+    },
+    {
+        "text": " es un producto finito de matrices elementales, es decir si yo considero todos los productos",
+        "start": 1615.76,
+        "end": 1623.4399999999998
+    },
+    {
+        "text": " posibles de matrices elementales, claro que solo voy a obtener matrices",
+        "start": 1623.4399999999998,
+        "end": 1628.6399999999999
+    },
+    {
+        "text": " invertibles porque ya vimos que el producto de dos matrices universibles es un matriz",
+        "start": 1628.64,
+        "end": 1633.3200000000002
+    },
+    {
+        "text": " invertible, entonces si yo hago el producto de una matriz de una cantidad finita cualquiera",
+        "start": 1633.3200000000002,
+        "end": 1641.0400000000002
+    },
+    {
+        "text": " de matrices elementales voy a obtener una matriz invertible, pero gracias a este método",
+        "start": 1641.0400000000002,
+        "end": 1647.8400000000001
+    },
+    {
+        "text": " voy a obtener no solo una matriz invertible pero todas esas matrices universibles posibles,",
+        "start": 1647.8400000000001,
+        "end": 1652.92
+    },
+    {
+        "text": " no hay nadie que se puede escapar, ok, esa propiedad, una matriz cuadrada",
+        "start": 1652.92,
+        "end": 1665.5600000000002
+    },
+    {
+        "text": " ah, de tamaño n por n, es invertible, si y solo si existen, existe una sucesión",
+        "start": 1665.56,
+        "end": 1687.48
+    },
+    {
+        "text": " finita, si solo si es producto finito, por lo inscribidas, es producto finito de matrices",
+        "start": 1687.48,
+        "end": 1699.4
+    },
+    {
+        "text": " elementales, es decir si solo si a se escribe en la forma e1 e2 eca para algunos",
+        "start": 1699.4,
+        "end": 1717.44
+    },
+    {
+        "text": " matrices elementales e1 e2 eca que son matrices elementales, ok, es decir cada matriz se",
+        "start": 1717.44,
+        "end": 1740.4
+    },
+    {
+        "text": " puede invertible, se puede es componer como un producto finito de matrices elementales,",
+        "start": 1740.4,
+        "end": 1745.52
+    },
+    {
+        "text": " a que teorema sobre los números este resultado puede ser parecido a la descomposición",
+        "start": 1745.52,
+        "end": 1756.24
+    },
+    {
+        "text": " de enteros en números primos, entonces de algún modo no es exactamente el caso, es",
+        "start": 1756.24,
+        "end": 1763.24
+    },
+    {
+        "text": " más complicado, pero una intuición posible es que las matrices elementales tienen el papel",
+        "start": 1763.24,
+        "end": 1769.56
+    },
+    {
+        "text": " de como si fuera número matrices primas, ok, toda la matriz universible es producto",
+        "start": 1769.56,
+        "end": 1776.0
+    },
+    {
+        "text": " de matrices elementales, pero la gran diferencia es que dicha descomposición no es única,",
+        "start": 1776.0,
+        "end": 1782.84
+    },
+    {
+        "text": " en los números primos siempre es única, la descomposición, acá no es única, descomposición",
+        "start": 1782.84,
+        "end": 1788.2
+    },
+    {
+        "text": " no es única, ok, ahora hay que demostrarlo y estoy fácil, voy a hacer el recíproco",
+        "start": 1788.2,
+        "end": 1812.64
+    },
+    {
+        "text": " que es el más fácil, ¿cuál es el recíproco? ¿Qué piensan de una matriz que es producto",
+        "start": 1812.64,
+        "end": 1820.24
+    },
+    {
+        "text": " de matrices elementales? ¿Qué sabemos sobre las matrices elementales?",
+        "start": 1820.24,
+        "end": 1825.0800000000002
+    },
+    {
+        "text": " son invertibles, entonces un producto finito de matrices elementales es invertible, entonces",
+        "start": 1825.0800000000002,
+        "end": 1831.96
+    },
+    {
+        "text": " hay es invertible, entonces es claro que todo producto finito de matrices elementales",
+        "start": 1831.96,
+        "end": 1837.0800000000002
+    },
+    {
+        "text": " es invertible, ok, entonces si a, si escribiendo esta forma, a es invertible, pues todas",
+        "start": 1837.08,
+        "end": 1861.56
+    },
+    {
+        "text": " estas matrices y su y lo son, esto es trivial, ok, ahora la dirección que los intereses",
+        "start": 1861.56,
+        "end": 1876.28
+    },
+    {
+        "text": " mostrar que cada matriz invertible se puede es componer como un producto de matrices",
+        "start": 1876.28,
+        "end": 1883.28
+    },
+    {
+        "text": " elementales y esto viene de que como siempre tengo el problema, mostrar que existe una",
+        "start": 1883.28,
+        "end": 1889.84
+    },
+    {
+        "text": " cantidad finita de matrices elementales que me descomponen mi matriz invertible, ¿quién",
+        "start": 1889.84,
+        "end": 1896.56
+    },
+    {
+        "text": " me leo lo va a resolver? ¿Ruchef Robenius como siempre? Ok, entonces implicación",
+        "start": 1896.56,
+        "end": 1906.24
+    },
+    {
+        "text": " directa, si a es invertible, ¿qué va a pasar cuando yo la voy a invertir? Voy a aplicar",
+        "start": 1906.24,
+        "end": 1919.52
+    },
+    {
+        "text": " el sistema de ruchef Robenius hasta llegar a que matriz la identidad, ok, entonces si",
+        "start": 1919.52,
+        "end": 1929.64
+    },
+    {
+        "text": " es invertible, existe una sucesión finita, entonces si es invertible, entonces se puede",
+        "start": 1929.64,
+        "end": 1949.8000000000002
+    },
+    {
+        "text": " escaravizar hasta la matriz identidad, ¿no? Entonces por la proposición anterior, existen",
+        "start": 1949.8,
+        "end": 1978.56
+    },
+    {
+        "text": " matrices elementales, E1, E2 hasta E2, tal es que, y ahora cuéles mi ecuación, es que",
+        "start": 1978.56,
+        "end": 1999.48
+    },
+    {
+        "text": " la identidad es igual a E2 por E1 por A, ok, pero ¿qué quiere decir esto? Quiere",
+        "start": 1999.48,
+        "end": 2018.24
+    },
+    {
+        "text": " decir que luego sabemos que esta matriz es la inversa de A, por unidad, como tenemos esta",
+        "start": 2018.24,
+        "end": 2030.1200000000001
+    },
+    {
+        "text": " matriz por A igual la identidad, se deduce que esto es la inversa de A, luego a la menos 1,",
+        "start": 2030.1200000000001,
+        "end": 2037.72
+    },
+    {
+        "text": " es subca, etcétera, hasta E2, es sub 1 por unidad de la inversa.",
+        "start": 2037.72,
+        "end": 2047.08
+    },
+    {
+        "text": " Ok, ahora tenemos una formula que nos da a menos 1, pero ¿qué queremos? No queremos",
+        "start": 2056.56,
+        "end": 2062.92
+    },
+    {
+        "text": " descomponer a menos 1, queremos descomponer a que hay que hacer tomar la inversa, por lo tanto,",
+        "start": 2062.92,
+        "end": 2070.6
+    },
+    {
+        "text": " a que es igual a a menos 1 a la menos 1, es igual a esto a la menos 1,",
+        "start": 2075.12,
+        "end": 2081.84
+    },
+    {
+        "text": " ok, no hay problemas y aplico la fórmula de inversa del producto que consiste en inversar todo",
+        "start": 2081.84,
+        "end": 2095.52
+    },
+    {
+        "text": " y poner toda la revés, y esto es E1 menos 1, E2 a la menos 1, E1 a la menos 1, y que se",
+        "start": 2095.52,
+        "end": 2111.08
+    },
+    {
+        "text": " puede decir de E1 a la menos 1, es una matriz elemental, E2 a la menos 1, es una",
+        "start": 2111.08,
+        "end": 2118.84
+    },
+    {
+        "text": " matriz elemental, E2 a la menos 1, es una matriz elemental, lo que hiciste es esto es un producto",
+        "start": 2118.84,
+        "end": 2124.84
+    },
+    {
+        "text": " finito de matriz elemental, ok, entonces descompuse a como producto finito de matriz",
+        "start": 2124.84,
+        "end": 2149.52
+    },
+    {
+        "text": " de cere mentales, ok, no les llame E1, E2, E1 a la menos 1, E2 a la menos 1, pero hay que",
+        "start": 2149.52,
+        "end": 2157.44
+    },
+    {
+        "text": " armeplazar por la inversa, también es una triste elemental, ok, entonces una matriz",
+        "start": 2157.44,
+        "end": 2163.48
+    },
+    {
+        "text": " de señor chive si es solo si se puede descomponer en forma de matriz de cere mental, y además",
+        "start": 2163.48,
+        "end": 2169.28
+    },
+    {
+        "text": " como hacer la descomposición aplicando huche forovenius, la descomposición está dada por",
+        "start": 2169.28,
+        "end": 2176.08
+    },
+    {
+        "text": " huche forovenius, ok, esto es lo último que yo tengo que dar sobre la inversa y es un",
+        "start": 2176.08,
+        "end": 2184.96
+    },
+    {
+        "text": " teorema fundamental, es el teorema que hace el vínculo entre las matricias invertibles y las",
+        "start": 2184.96,
+        "end": 2192.96
+    },
+    {
+        "text": " matricias invertales, entonces se pueden ver las matricias invertibles como los átomos invertibles,",
+        "start": 2192.96,
+        "end": 2200.3199999999997
+    },
+    {
+        "text": " son las matricias invertibles atómicas, y cualquier matriz invertible es un producto de átomos,",
+        "start": 2201.04,
+        "end": 2207.6800000000003
+    },
+    {
+        "text": " ok, ahora voy a dar otra explicación de algoritmo de inversión, ¿cómo se hace la",
+        "start": 2207.6800000000003,
+        "end": 2218.2400000000002
+    },
+    {
+        "text": " inversión de matricias en la práctica? Entonces, partemos de la matriz A, D, A y identidad,",
+        "start": 2218.2400000000002,
+        "end": 2228.2400000000002
+    },
+    {
+        "text": " ok, esa sí que se hace la inversión, es otra interpretación de algoritmo de inversión,",
+        "start": 2228.24,
+        "end": 2235.3599999999997
+    },
+    {
+        "text": " la voy a llamar es una matriz dobre, la voy a llamar al sub-0, B sub-0, y qué hacemos?",
+        "start": 2236.64,
+        "end": 2243.2
+    },
+    {
+        "text": " aplicamos una primera transformación elemental, T1 se obtiene a sub-1, B sub-1,",
+        "start": 2243.2,
+        "end": 2252.56
+    },
+    {
+        "text": " ok, y al final hace mucho la escalización, y al final T sub-k se obtiene una matriz A sub-k, B sub-k,",
+        "start": 2252.7999999999997,
+        "end": 2270.7999999999997
+    },
+    {
+        "text": " es una matriz doble, donde A sub-k es la identidad, y qué pasa cuando llegamos a este punto,",
+        "start": 2270.8,
+        "end": 2282.88
+    },
+    {
+        "text": " qué se deduce si obtengo la forma renucida, qué es la identidad, qué es diversidad y además cuál",
+        "start": 2282.88,
+        "end": 2291.04
+    },
+    {
+        "text": " es la inversión, es B sub-k, lo vamos a mostrar, gracias a las matricias elementales, estas transformaciones",
+        "start": 2291.04,
+        "end": 2300.4
+    },
+    {
+        "text": " corresponden a matricias elementales, ok, entonces tenemos A sub-0, igual A y B sub-0, igual a la identidad,",
+        "start": 2301.04,
+        "end": 2317.12
+    },
+    {
+        "text": " después A sub-1 es igual a qué, cómo se aplicaste uno, es uno por A y uno por A, no,",
+        "start": 2317.12,
+        "end": 2327.6
+    },
+    {
+        "text": " y B sub-0 es E1 por la identidad, ok, aplicé el ambas matricias, la misma transformación elemental,",
+        "start": 2327.6,
+        "end": 2342.0
+    },
+    {
+        "text": " a B1 disculpa, gracias, después qué pasa si se aplicó la segunda transformación elemental,",
+        "start": 2342.0,
+        "end": 2348.72
+    },
+    {
+        "text": " corresponden multiplicar ambas matricias por E2, entonces obtengo que A2 es E2 por E1A, mientras B2 es E2 por E1 por la",
+        "start": 2348.72,
+        "end": 2368.4
+    },
+    {
+        "text": " identidad, ok, está sólo puedo borrar, no se oré para nada, ok, y al final qué vamos a obtener,",
+        "start": 2368.4,
+        "end": 2376.88
+    },
+    {
+        "text": " al final lo que se obtiene es qué A sub-k, es igual a E sub-k por E2 por E1 por A, ok, pero esto es",
+        "start": 2376.88,
+        "end": 2395.44
+    },
+    {
+        "text": " igual a la identidad, y la matriz B2, E1, es decir, la primera matriz contiene la acumulación",
+        "start": 2395.44,
+        "end": 2418.28
+    },
+    {
+        "text": " de todas las transformaciones elementales a partir de A, y la segunda matriz sólo es el producto de",
+        "start": 2418.28,
+        "end": 2424.12
+    },
+    {
+        "text": " todas las transformaciones elementales, las matricias elementales, y qué se deduce, cómo tenemos",
+        "start": 2424.12,
+        "end": 2431.3599999999997
+    },
+    {
+        "text": " identidad, igual a esto, yo dedusco que esto es a la menos 1, porque esta matriz por A me da la",
+        "start": 2431.3599999999997,
+        "end": 2442.3199999999997
+    },
+    {
+        "text": " identidad, luego este producto es a menos 1, pero este producto se queda acá, ok, lo que muestra,",
+        "start": 2442.3199999999997,
+        "end": 2452.08
+    },
+    {
+        "text": " luego es B sub-k, disculpa, B sub-k, luego B sub-k es a la menos 1, vamos a pasar a otro tema,",
+        "start": 2452.08,
+        "end": 2466.92
+    },
+    {
+        "text": " determinantes, nuevo capítulo, cuelse el objetivo los determinantes, el determinante es el para mí",
+        "start": 2466.92,
+        "end": 2477.4
+    },
+    {
+        "text": " es el inicio, ya vimos ochefrobenius y es la magia blanca del álgebra lineal, ahora para mí",
+        "start": 2477.4,
+        "end": 2485.56
+    },
+    {
+        "text": " los determinantes, ya es un poquito el inicio de la magia negra del álgebra lineal, entonces es una",
+        "start": 2485.56,
+        "end": 2493.44
+    },
+    {
+        "text": " cosa muy rara, el objetivo consiste en asociar a cada matriz cuadrada un número que mida si",
+        "start": 2493.44,
+        "end": 2502.56
+    },
+    {
+        "text": " dice matriz es inivertible o no, ok, entonces asociar el objetivo es asociar a cada matriz cuadrada,",
+        "start": 2502.56,
+        "end": 2520.08
+    },
+    {
+        "text": " solo fuirciar para las matricias cuadradas,",
+        "start": 2520.08,
+        "end": 2522.4
+    },
+    {
+        "text": " un número que se escribió entre baras, algo de formale, pero absoluto, que es un número real,",
+        "start": 2532.56,
+        "end": 2546.08
+    },
+    {
+        "text": " un único número, si yo tengo una matriz de un bixón por un bixón que contiene un bixón de",
+        "start": 2546.08,
+        "end": 2554.88
+    },
+    {
+        "text": " bixónles de números su determinante será un único número, ok, y un número tal que y el",
+        "start": 2554.88,
+        "end": 2565.36
+    },
+    {
+        "text": " teorema principal es que a es inivertible, si solo si, este número no es nuro,",
+        "start": 2565.36,
+        "end": 2574.48
+    },
+    {
+        "text": " es un número cuando lo calculamos, ya sabemos si no la matriz es inivertible o no, y para mí es un",
+        "start": 2574.48,
+        "end": 2586.28
+    },
+    {
+        "text": " poquito de magia negra y es un poquito trucho también, es super útil los determinantes, pero vamos",
+        "start": 2586.28,
+        "end": 2593.84
+    },
+    {
+        "text": " a ver que, de buena lo que podríamos pensar es, tenemos una forma de calcular a si una",
+        "start": 2593.84,
+        "end": 2601.04
+    },
+    {
+        "text": " matriz es inivertible, antes de calcular la inversa, es una buena idea, que linda idea, algo que nos permite",
+        "start": 2601.04,
+        "end": 2609.12
+    },
+    {
+        "text": " ahorrar trabajo, de hecho no, porque para calcular un determinante en general se necesitan mucho más",
+        "start": 2609.12,
+        "end": 2616.92
+    },
+    {
+        "text": " operaciones que la descargadilización, entonces es algo que tiene mucho más interés teórico, no",
+        "start": 2616.92,
+        "end": 2623.52
+    },
+    {
+        "text": " serve para inivertiar, pero serve para entender como funcionan esas cosas, entonces es la, esa intuición,",
+        "start": 2623.52,
+        "end": 2630.64
+    },
+    {
+        "text": " ok, ahora definición del determinante, ahora en toda esta parte del curso solo voy a trabajar con",
+        "start": 2630.64,
+        "end": 2642.64
+    },
+    {
+        "text": " matrices cuadradas, los rectángulos ya no existen, ok, matrices cuadradas, ok, ahora voy a",
+        "start": 2642.64,
+        "end": 2651.52
+    },
+    {
+        "text": " alefir la noción de matriz adjuntas, sea a una matriz cuadrada,",
+        "start": 2651.52,
+        "end": 2667.48
+    },
+    {
+        "text": " de dimensión n, y n más oro igual a dos, y dado sin disses,",
+        "start": 2667.48,
+        "end": 2686.88
+    },
+    {
+        "text": " y y jota entre uno y n, se llama matriz adjuntas,",
+        "start": 2686.88,
+        "end": 2702.12
+    },
+    {
+        "text": " la matriz, que se escribe a su hijo tal, es una mala notación, no tenemos otra notación,",
+        "start": 2702.12,
+        "end": 2728.4
+    },
+    {
+        "text": " detamagno n menos uno, es una matriz cuadrada, de dimensión n menos uno, se reduce la dimensión,",
+        "start": 2728.4,
+        "end": 2742.44
+    },
+    {
+        "text": " obtenida eliminando la fila y y la colombra jota, es una aparatión muy fácil,",
+        "start": 2742.44,
+        "end": 2750.7200000000003
+    },
+    {
+        "text": " ok, entonces hay que dibujar las cosas pero es super fácil, yo tomo una matriz adjuntas,",
+        "start": 2750.72,
+        "end": 2778.6
+    },
+    {
+        "text": " que es igual a esto, tiene tamaño n más oro dos filas y columbnas,",
+        "start": 2778.6,
+        "end": 2791.56
+    },
+    {
+        "text": " es una fila y columbna jota, ok, fila y columbna jota,",
+        "start": 2791.56,
+        "end": 2810.52
+    },
+    {
+        "text": " y yo borro la columbna jota y obtengo lo que se llama una matriz adjuntas,",
+        "start": 2810.52,
+        "end": 2821.0
+    },
+    {
+        "text": " ok, entonces no hay nada que hacer, esa operación más fácil del mundo, hay que borrar una fila y borrar una columbna,",
+        "start": 2821.0,
+        "end": 2830.48
+    },
+    {
+        "text": " en particular cuántos elementos perdemos, no, no, cuántos elementos tienen mis filacas,",
+        "start": 2830.48,
+        "end": 2844.44
+    },
+    {
+        "text": " ¿eh? ¿cuántos tienen mi columbna? entonces perdemos dos en menos uno, porque este no se puede borrar dos veces,",
+        "start": 2844.44,
+        "end": 2855.44
+    },
+    {
+        "text": " perdemos dos n menos uno elementos y si yo tomo n cuadrado menos dos n menos uno obtengo n menos uno cuadrado,",
+        "start": 2855.44,
+        "end": 2867.4
+    },
+    {
+        "text": " ok, obtengo una matriz de tamaño n menos uno por n menos uno, ok, esta definición le matriz adjunta,",
+        "start": 2867.4,
+        "end": 2875.4
+    },
+    {
+        "text": " ahora supongo definir el determinante y es una definición por inducción sobre la dimensión de la matriz,",
+        "start": 2875.4,
+        "end": 2883.4
+    },
+    {
+        "text": " el determinante que se escribió a entre barras, es un número real, se define por inducción sobre la dimensión,",
+        "start": 2884.4,
+        "end": 2903.4
+    },
+    {
+        "text": " cuando yo hablo la dimensión de A es decir es la cantidad de filas y lo mismo que la cantidad de columbnas,",
+        "start": 2903.4,
+        "end": 2912.4
+    },
+    {
+        "text": " ah, disculpa, fila y columbna j, de modo siguiente, vamos a definir el determinante de una matriz, caso uno,",
+        "start": 2912.4,
+        "end": 2930.4
+    },
+    {
+        "text": " caso uno, si n es igual a uno, cuantos elementos tienen la matriz, uno por definición, este único elemento es el determinante,",
+        "start": 2930.4,
+        "end": 2949.4
+    },
+    {
+        "text": " es decir, el determinante de A es el único elemento, única entrada de A, entonces es superfascil calcular los determinantes,",
+        "start": 2949.4,
+        "end": 2966.4
+    },
+    {
+        "text": " es decir, en las matrices de dimensión uno por uno no hay diferencia entre las matrices de dimensión uno por uno y los reales, son las mismas cosas,",
+        "start": 2966.4,
+        "end": 2977.4
+    },
+    {
+        "text": " entonces en esta espacial determinante es la función identidad, y ahora qué pasa si n es mayor o igual a dos,",
+        "start": 2977.4,
+        "end": 2990.4
+    },
+    {
+        "text": " ahora ojo voy a definir una fórmula complicada, la fórmula es la siguiente, el determinante de A,",
+        "start": 2990.4,
+        "end": 3000.4
+    },
+    {
+        "text": " voy a hacer la suma sobre todas las filas de la matriz, es una suma de i igual a uno a n,",
+        "start": 3000.4,
+        "end": 3013.4
+    },
+    {
+        "text": " lo que voy a hacer es que voy a sacar la fila i y la columna 1, es decir, voy a tomar la matriz a junta eliminando la fila i y la columna 1,",
+        "start": 3013.4,
+        "end": 3036.4
+    },
+    {
+        "text": " y lo que voy a hacer es que voy a multiplicar el elemento de la fila i y de la columna 1 por el determinante de la matriz a junta correspondiente.",
+        "start": 3036.4,
+        "end": 3055.4
+    },
+    {
+        "text": " Es decir, yo hago la lista de todos las primeras columnas, esto recorre toda la columna 1,",
+        "start": 3055.4,
+        "end": 3065.4
+    },
+    {
+        "text": " acá tengo todos los sindices de filas y acá unico indice de columna 1, recorro toda la columna y para cada elemento de la primera columna",
+        "start": 3065.4,
+        "end": 3075.4
+    },
+    {
+        "text": " construyo también la matriz a junta correspondiente, sacando la primera columna y la fila correspondiente,",
+        "start": 3075.4,
+        "end": 3084.4
+    },
+    {
+        "text": " yo puedo ahorrar el determinante porque es algo de tamaño n-1, voy a hacer la suma de todo esto y para complicar las cosas para los estudiantes",
+        "start": 3084.4,
+        "end": 3095.4
+    },
+    {
+        "text": " voy a cambiar alternar los signos, entonces es menos 1 a la n más a la i más 1, es decir,",
+        "start": 3095.4,
+        "end": 3114.4
+    },
+    {
+        "text": " es a 1 1 por el determinante de la matriz a junta a 1 1, menos a 2 1 por el determinante de la matriz a junta a 2 1,",
+        "start": 3114.4,
+        "end": 3135.4
+    },
+    {
+        "text": " pero es una forma super abstracta, y es una forma super abstracta,",
+        "start": 3135.4,
+        "end": 3160.4
+    },
+    {
+        "text": " ya está en el periodos, vamos a hacer ejemplos para entender lo que pasa,",
+        "start": 3161.4,
+        "end": 3167.4
+    },
+    {
+        "text": " entonces lo que hago, acá voy a ser quizá un dibujo, el determinante consiste en hacer lo siguiente,",
+        "start": 3167.4,
+        "end": 3181.4
+    },
+    {
+        "text": " yo me doy la matriz cuadrada, yo aisló la primera columna, ahora lo que hago es este número por la matriz a junta es",
+        "start": 3181.4,
+        "end": 3198.4
+    },
+    {
+        "text": " decir, sacando esta columna y esta fila, menos este número con la matriz del determinante de la matriz a junta, sacando esta fila y esta columna, etcétera alternando los signos,",
+        "start": 3198.4,
+        "end": 3216.4
+    },
+    {
+        "text": " ahora vamos a hacer cuentas para ver cómo se calcula, entonces el determinante es la función trivial sobre las matrices de tamaño 1,",
+        "start": 3216.4,
+        "end": 3227.4
+    },
+    {
+        "text": " determinante de una matriz de tamaño 1 por 1 es la entrada, ahora vamos a calcular la fórmula general de las matrices de tamaño 2 por 2,",
+        "start": 3227.4,
+        "end": 3239.4
+    },
+    {
+        "text": " ok, proposición en dimension 2, tenemos que el determinante de esta matriz, acá los determinantes siempre se escriben con barras verticales y son lo necesito poner las paréntesis,",
+        "start": 3239.4,
+        "end": 3264.4
+    },
+    {
+        "text": " esto significa determinante de la matriz a bcd, ¿qué va a hacer? vamos a calcularlo, ¿cuál es la primera columna a y c?, ¿ok, a por el determinante de la matriz a junta,",
+        "start": 3264.4,
+        "end": 3284.4
+    },
+    {
+        "text": " ¿cuál es la matriz a junta este elemento? es la matriz de eliminando la primera fila y la primera columna, entonces es a por determinante de esto es de,",
+        "start": 3284.4,
+        "end": 3299.4
+    },
+    {
+        "text": " después alternación de signo menos, ahora este c, ¿cuál es la matriz a junta acá? es b, fórmula que ya conocen,",
+        "start": 3299.4,
+        "end": 3314.4
+    },
+    {
+        "text": " ok, esto es la fórmula del determinante en dimension 2, también se pueden calcular los determinantes en dimension superior, ¿eje asisió para ustedes?",
+        "start": 3315.4,
+        "end": 3328.4
+    },
+    {
+        "text": " calcular el determinante de, el determinante de la matriz de tamaño 3 x 3,",
+        "start": 3328.4,
+        "end": 3347.4
+    },
+    {
+        "text": " es decir, a, 1, 1, a, 1, 2, a, 1, 3, a, 2, 1, a, 2, 2, 2, 3, a, 3, 1, a, 3, 2, a, 3, 3, ok, ¿eje asisió? van a obtener lo que es llamar a fórmula de zarros,",
+        "start": 3347.4,
+        "end": 3371.4
+    },
+    {
+        "text": " ahora la buena cosa es que para calcular ese determinante hay que conocer la fórmula para calcular los determinantes de tamaño 2 x 2, pero ya la tenemos,",
+        "start": 3372.4,
+        "end": 3382.4
+    },
+    {
+        "text": " ok, es decir, para cada tamaño hay una nueva fórmula que aparece y que se deduce por esta fórmula que está al final por inducción sobre el tamaño,",
+        "start": 3382.4,
+        "end": 3392.4
+    },
+    {
+        "text": " ok, ahora vamos a ver ejemplitos de determinantes, primero ejemplo, primero ejemplo es este, calculada el determinante de esta matriz,",
+        "start": 3393.4,
+        "end": 3413.4
+    },
+    {
+        "text": " 3, 1, 7 y 2, que vamos a hacer a pegar la fórmula, es 3 x 2 menos 7 x 1 y es menos 1,",
+        "start": 3413.4,
+        "end": 3432.4
+    },
+    {
+        "text": " acá hay una observación interesante, es que esta matriz solo contiene números positivos, pero debido a los signos alternados al final se obtiene un número negativo,",
+        "start": 3433.4,
+        "end": 3448.4
+    },
+    {
+        "text": " ojo, no se puede uncir el signo de un determinante a partir del signo de los elementos de la batriz, acá es un contra ejemplo,",
+        "start": 3449.4,
+        "end": 3457.4
+    },
+    {
+        "text": " ok, ahora vamos a calcular un determinante más complicado, determinante de esta matriz, 3 menos 4, 3 menos 1, 2, 7 menos 2, 4, 0, ok,",
+        "start": 3458.4,
+        "end": 3484.4
+    },
+    {
+        "text": " aplico la fórmula, es 3 x el determinante de la matriz atrunta, menos 1 x el determinante de la matriz atrunta,",
+        "start": 3485.4,
+        "end": 3504.4
+    },
+    {
+        "text": " es 3 y cuál es la matriz atrunta, 2, 7, 4, 0, ups, acá no es una paréntesis, es una barra, porque es un determinante,",
+        "start": 3504.4,
+        "end": 3519.4
+    },
+    {
+        "text": " después menos cambio de signo, menos 1 x determinante de la matriz atrunta, menos 4, 3, 4, 0,",
+        "start": 3520.4,
+        "end": 3532.4
+    },
+    {
+        "text": " más alternación de signos, menos 2 por determinante de la matriz atrunta, menos 4, 3, y acá 2, 7,",
+        "start": 3533.4,
+        "end": 3553.4
+    },
+    {
+        "text": " entender lo que hice, es así que se calculan los determinantes, ok, ahora hay que hacer todas las cuentas,",
+        "start": 3553.4,
+        "end": 3565.4
+    },
+    {
+        "text": " obtengo 3, esta fórmula es 2 x 0, menos 7 x 4, es menos 28, ok, acá es menos, menos,",
+        "start": 3566.4,
+        "end": 3581.4
+    },
+    {
+        "text": " determinante de esta matriz, es menos 4 por 0, es menos 12, y esto es menos 2 por este determinante,",
+        "start": 3582.4,
+        "end": 3597.4
+    },
+    {
+        "text": " menos 28, menos 28, menos 6, es decir, menos 34, ok, 28 por 3, 3 por 8, 24,",
+        "start": 3598.4,
+        "end": 3619.4
+    },
+    {
+        "text": " ok, menos 84, acá, menos 12, acá son 68, ok, ahora esto son,",
+        "start": 3619.4,
+        "end": 3638.4
+    },
+    {
+        "text": " no, menos 28, de hecho estaba escrito acá, pero no había las cuentas intermellas,",
+        "start": 3638.4,
+        "end": 3656.4
+    },
+    {
+        "text": " entonces obtenemos menos 28, pueden ver las cancelades cuentas, solo para calcular una determinante",
+        "start": 3656.4,
+        "end": 3663.4
+    },
+    {
+        "text": " tamaño 3, imagínense cuando vamos a calcular determinantes de tamaño N por N,",
+        "start": 3664.4,
+        "end": 3674.4
+    },
+    {
+        "text": " buen ejercicio para un estudiante, dar una matriz de tamaño 10 por 10, calcularme el determinante,",
+        "start": 3674.4,
+        "end": 3681.4
+    },
+    {
+        "text": " 3 años después tomamos pruebas, tercera ejemplo es calcular esta determinante 2,",
+        "start": 3681.4,
+        "end": 3692.4
+    },
+    {
+        "text": " 0, 1, 1, 2, 2, menos 4, menos 1, y menos 3, 1, 1, 1, 2, menos 2, 0, 0, ok, igual,",
+        "start": 3692.4,
+        "end": 3710.4
+    },
+    {
+        "text": " y ejercicio para ustedes, otro ejemplo, ¿cuál es el determinante le matriz 0?",
+        "start": 3710.4,
+        "end": 3722.4
+    },
+    {
+        "text": " ¿cuál es el determinante le matriz 0?",
+        "start": 3732.4,
+        "end": 3735.4
+    },
+    {
+        "text": " será que el determinante le matriz 0, ¿están seguros o quieren irse al infierno?",
+        "start": 3741.4,
+        "end": 3750.4
+    },
+    {
+        "text": " ¿de hecho todas las entradas sin 0? ¿cuándo voy a aplicar esta fórmula?",
+        "start": 3751.4,
+        "end": 3759.4
+    },
+    {
+        "text": " voy a obtener la suma de 0 por algo, más 0 por algo, más 0 por algo, más 0 por algo,",
+        "start": 3759.4,
+        "end": 3769.4
+    },
+    {
+        "text": " y al final que voy a obtener yo 0, ok, entonces es obvio que el determinante le matriz 0,",
+        "start": 3770.4,
+        "end": 3778.4
+    },
+    {
+        "text": " vale 0 en todos los tamaños, cuando es un tamaño 0, 1 vale 0 por supuesto,",
+        "start": 3778.4,
+        "end": 3786.4
+    },
+    {
+        "text": " porque esta única entrada, y cuando es un tamaño más 0 igual a 2,",
+        "start": 3786.4,
+        "end": 3792.4
+    },
+    {
+        "text": " aplico esta fórmula y esta fórmula me va a decir 0 por algo, menos 0 por algo,",
+        "start": 3793.4,
+        "end": 3799.4
+    },
+    {
+        "text": " más 0 por algo, menos 0 por algo, etcétera, y esto me va a dar 0.",
+        "start": 3799.4,
+        "end": 3804.4
+    },
+    {
+        "text": " más interesante, calcular la determinante de la matriz y la entidad,",
+        "start": 3805.4,
+        "end": 3812.4
+    },
+    {
+        "text": " acá hay que observar lo que pasa, el truco es hacer las cuentas por inducción sobre el tamaño,",
+        "start": 3819.4,
+        "end": 3828.4
+    },
+    {
+        "text": " cuando n es igual a 1, dimensión 1, ¿cuál es el determinante de la identidad?",
+        "start": 3829.4,
+        "end": 3834.4
+    },
+    {
+        "text": " 1, claro, ahora si yo calculo la identidad de tamaño 2, es ese determinante, ¿cuál es el determinante?",
+        "start": 3837.4,
+        "end": 3845.4
+    },
+    {
+        "text": " 1 por 1 menos 0 por 0 es 1, con getura, ¿qué vamos a con geturar?",
+        "start": 3847.4,
+        "end": 3853.4
+    },
+    {
+        "text": " que todas esas matrices y identidad vamos a con getural, que todos tienen determinante 1,",
+        "start": 3854.4,
+        "end": 3863.4
+    },
+    {
+        "text": " que voy a hacer show, una prueba por inducción, por inducción sobre n, vamos a mostrar que la identidad tiene determinante 1,",
+        "start": 3863.4,
+        "end": 3874.4
+    },
+    {
+        "text": " en todos los casos, entonces ya tenemos el caso de base, es el caso n igual a 1, ¿ok?",
+        "start": 3875.4,
+        "end": 3883.4
+    },
+    {
+        "text": " también tenemos el caso 2, hay que ver cuál es el caso n, es decir, el determinante de la matriz,",
+        "start": 3884.4,
+        "end": 3892.4
+    },
+    {
+        "text": " 1, 1, 1, acá el resto de la primera columna tengo 0 y el resto de acá son 0 y 0,",
+        "start": 3893.4,
+        "end": 3901.4
+    },
+    {
+        "text": " el resto de la primera la fiat también tengo 0, ¿ok? ¿qué pasa si yo aplico y fórmula?",
+        "start": 3901.4,
+        "end": 3910.4
+    },
+    {
+        "text": " ¿qué me va a obtener show? este coeficiente por el determinante de la matriz adjunta,",
+        "start": 3913.4,
+        "end": 3920.4
+    },
+    {
+        "text": " pero ¿cuál es la matriz adjunta acá?",
+        "start": 3920.4,
+        "end": 3923.4
+    },
+    {
+        "text": " esa identidad de tamaño menor, es decir es 1 por el determinante de la matriz y en menos 1,",
+        "start": 3924.4,
+        "end": 3933.4
+    },
+    {
+        "text": " puede ver lo que pasa y después tienen, tengo que hacer las cosas por a los otras filas,",
+        "start": 3936.4,
+        "end": 3942.4
+    },
+    {
+        "text": " pero ¿qué pasa acá? son todas nulas, entonces voy a obtener menos 0 por algo,",
+        "start": 3942.4,
+        "end": 3950.4
+    },
+    {
+        "text": " más 0 por algo, menos 0 por algo, etcétera, al final que obtengo show,",
+        "start": 3950.4,
+        "end": 3959.4
+    },
+    {
+        "text": " obtengo es igual a 1 por es igual al determinante de la matriz y identidad anterior,",
+        "start": 3960.4,
+        "end": 3968.4
+    },
+    {
+        "text": " y por hipotesis de inducción, sabemos que es 1, esto demuestra por inducción sobre n,",
+        "start": 3968.4,
+        "end": 3977.4
+    },
+    {
+        "text": " que la matriz y identidad para toda la manión tiene determinante 1, ¿ok?",
+        "start": 3977.4,
+        "end": 3985.4
+    },
+    {
+        "text": " ¿cuándo le fini el determinante? lo que hice era desarrollar el determinante respecto a la primera columna,",
+        "start": 3987.4,
+        "end": 3998.4
+    },
+    {
+        "text": " era mi definición, es decir, tomo la primera columna, primero el elemento por determinante de la matriz adjunta,",
+        "start": 3998.4,
+        "end": 4007.4
+    },
+    {
+        "text": " menos segundo el elemento por determinante de la matriz adjunta,",
+        "start": 4007.4,
+        "end": 4011.4
+    },
+    {
+        "text": " más 0, etcétera, etcétera, con alternación de signos, pero de hecho esta formula funciona para cualquier columna y también para cualquier fila,",
+        "start": 4011.4,
+        "end": 4024.4
+    },
+    {
+        "text": " es decir, se puede desarrollar los determinantes respecto a cualquier fila y cualquier columna,",
+        "start": 4024.4,
+        "end": 4030.4
+    },
+    {
+        "text": " pero hay que cuidar a los signos, como siempre, la cosa más difícil para los determinantes es como manejar con los signos,",
+        "start": 4030.4,
+        "end": 4039.4
+    },
+    {
+        "text": " ok, entonces, propiedad esa siguiente, para toda la matriz,",
+        "start": 4040.4,
+        "end": 4051.4
+    },
+    {
+        "text": " para toda la matriz adjuadrada, de tamaño, m, n por n, con n más x 2,",
+        "start": 4051.4,
+        "end": 4070.4
+    },
+    {
+        "text": " porque no necesita ser nada cuando tenemos n igual a 1, tenemos lo siguiente,",
+        "start": 4070.4,
+        "end": 4080.4
+    },
+    {
+        "text": " el determinante de a, se puede desarrollar respecto a cualquier fila, cualquier columna,",
+        "start": 4080.4,
+        "end": 4089.4
+    },
+    {
+        "text": " esta suma de i igual a 1 a n, acá esta formula que desarrocha el determinante respecto a la primera columna,",
+        "start": 4089.4,
+        "end": 4101.4
+    },
+    {
+        "text": " vamos a ver lo que pasa cuando desarrollamos el determinante respecto a la fila j, cualquier,",
+        "start": 4101.4,
+        "end": 4109.4
+    },
+    {
+        "text": " en lugar de usar a y 1, que es el i esivo elemento de la primera columna, voy a poner a y j,",
+        "start": 4109.4,
+        "end": 4124.4
+    },
+    {
+        "text": " ok, es decir, estoy desarrollando todas las filas de la j esiva columna,",
+        "start": 4124.4,
+        "end": 4131.4
+    },
+    {
+        "text": " por la matriz adjunta correspondiente, y ahora tengo que poner una alternación de signos,",
+        "start": 4131.4,
+        "end": 4142.4
+    },
+    {
+        "text": " y el troco es muy sencillo, es que acá vieron que había i más 1 acá,",
+        "start": 4142.4,
+        "end": 4150.4
+    },
+    {
+        "text": " porque había que empezar con 1 más 1, entonces lo que vamos a hacer es que vamos a hacer i más j,",
+        "start": 4150.4,
+        "end": 4160.4
+    },
+    {
+        "text": " el 1 esto era el ingase de columna, y ahora lo que pueden ver es que esta formula sólo depende de j,",
+        "start": 4160.4,
+        "end": 4175.4
+    },
+    {
+        "text": " y acá recorre todo lo que se indice entre 1 y n, y es una formula que sólo depende de j,",
+        "start": 4175.4,
+        "end": 4183.4
+    },
+    {
+        "text": " y esto se cumple para cada ingase de columna,",
+        "start": 4183.4,
+        "end": 4195.4
+    },
+    {
+        "text": " j es el intervalo que va de 1 hasta n, y esto se cumple, y ahora podemos desarrollar respecto a cualquier columna,",
+        "start": 4195.4,
+        "end": 4206.4
+    },
+    {
+        "text": " por ejemplo, también puede desarrollar la formula de identidad a partir de la última columna,",
+        "start": 4206.4,
+        "end": 4215.4
+    },
+    {
+        "text": " o bien de cualquier columna, entonces cuando hacen cuentas a veces es más cómodo desarrollar el determinante,",
+        "start": 4215.4,
+        "end": 4226.4
+    },
+    {
+        "text": " es respecto a una columna particular, pero ojo debido a este menos 1 a la i más j,",
+        "start": 4226.4,
+        "end": 4234.4
+    },
+    {
+        "text": " el ingase de comienzo va a depender del ingase de columna,",
+        "start": 4234.4,
+        "end": 4240.4
+    },
+    {
+        "text": " es decir, hay que entender que cada matriz viene implícitamente con una matriz de signos,",
+        "start": 4240.4,
+        "end": 4247.4
+    },
+    {
+        "text": " que funciólo como el juego de agendres,",
+        "start": 4247.4,
+        "end": 4251.4
+    },
+    {
+        "text": " más, menos, más, menos, menos, más, menos, más, más, menos, más, menos, menos, más, menos, más, menos, más, menos,",
+        "start": 4251.4,
+        "end": 4266.4
+    },
+    {
+        "text": " más, entienden cada matriz tiene una matriz implícita de signos, ¿qué es esto?",
+        "start": 4266.4,
+        "end": 4275.4
+    },
+    {
+        "text": " Y el primer signo que corresponde a 1 más 1 siempre es positivo, es menos 1 más 1,",
+        "start": 4275.4,
+        "end": 4281.4
+    },
+    {
+        "text": " es decir, es menos 1 cuadrado, es 1. Entonces, si yo desarrollo respecto a esta columna,",
+        "start": 4281.4,
+        "end": 4288.4
+    },
+    {
+        "text": " voy a decir es menos, este coeficiente por la matriz adjunta,",
+        "start": 4288.4,
+        "end": 4293.4
+    },
+    {
+        "text": " más este coeficiente por la matriz adjunta, menos este coeficiente por la matriz adjunta,",
+        "start": 4293.4,
+        "end": 4299.4
+    },
+    {
+        "text": " entienden como funciona, es así geométricamente que hay que ponerse en la cabeza,",
+        "start": 4299.4,
+        "end": 4304.4
+    },
+    {
+        "text": " y la misma formula funciona para las filas también por osimetría,",
+        "start": 4304.4,
+        "end": 4309.4
+    },
+    {
+        "text": " es decir, también tengo que el determinante A, me olvides, es un determinante A,",
+        "start": 4309.4,
+        "end": 4315.4
+    },
+    {
+        "text": " determinante A, también es igual acá ahora esa suba de j igual a 1 n,",
+        "start": 4315.4,
+        "end": 4323.4
+    },
+    {
+        "text": " es decir, ahora estoy recorriendo las columnas en una fila fijada y a resto la formula lo cambia.",
+        "start": 4323.4,
+        "end": 4335.4
+    },
+    {
+        "text": " Y esta formula se cumple para todo indice, defila y entre 1 y n,",
+        "start": 4335.4,
+        "end": 4360.4
+    },
+    {
+        "text": " es decir, por ejemplo, yo puebo calcular el determinante respecto a la tercera fila,",
+        "start": 4360.4,
+        "end": 4367.4
+    },
+    {
+        "text": " esta, es decir, será más este coeficiente por el determinante A,",
+        "start": 4367.4,
+        "end": 4376.4
+    },
+    {
+        "text": " menos este coeficiente por el determinante A, más este coeficiente por el determinante A,",
+        "start": 4376.4,
+        "end": 4386.4
+    },
+    {
+        "text": " menos este coeficiente por el determinante A, y ahora tiene un montón de métodos",
+        "start": 4386.4,
+        "end": 4394.4
+    },
+    {
+        "text": " que permiten calcular determinantes de matrices, que pasa si yo tengo una matriz con una columna nula,",
+        "start": 4394.4,
+        "end": 4404.4
+    },
+    {
+        "text": " que puebo les herixó, el determinante va a ser cero para verificarlo,",
+        "start": 4404.4,
+        "end": 4412.4
+    },
+    {
+        "text": " solo hay que desarrollar el determinante respecto a esta fila columna.",
+        "start": 4412.4,
+        "end": 4417.4
+    },
+    {
+        "text": " Entonces, ya sabemos gracias a estas fórmulas que cada matriz que tiene una columna nula tendrá determinante cero,",
+        "start": 4417.4,
+        "end": 4427.4
+    },
+    {
+        "text": " y en el mismo modo cada matriz que tendrá una fila nula tendrá determinante nulo,",
+        "start": 4427.4,
+        "end": 4434.4
+    },
+    {
+        "text": " entonces estos son métodos que nos van a permitir calcular determinante de matrices,",
+        "start": 4434.4,
+        "end": 4440.4
+    },
+    {
+        "text": " y ahora vamos a ver en detalle cómo se puede hacer esto la próxima vez. Gracias.",
+        "start": 4440.4,
+        "end": 4445.4
+    }
+]
