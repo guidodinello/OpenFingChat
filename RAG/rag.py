@@ -38,7 +38,7 @@ def initialize_llm():
 
 def initialize_retriever(llm):
     vectorstore = VectorStore()
-    retriever = vectorstore.db.as_retriever()
+    retriever = vectorstore.db.as_retriever(k=3, score_threshold=0.3)
     
     # First we define a sub-chain that takes historical messages and the latest user question, and reformulates the question if it makes reference to any information in the historical information.
     # Prompt to contextualize/reformulate the question to include history:
@@ -86,15 +86,14 @@ def initialize_prompt():
 
 def format_docs(docs):
     context = ""
-    metadata = "" # ademas de lesson y subject va a tener la metadata necesaria para devolver el video (url, start, etc)
-    for doc in docs:
-        context += "Contenido: " + doc.page_content + "\n"
+    for i, doc in enumerate(docs, start=1):
+        context += f"CHUNK NUMBER {i}: \n"
+        context += "Content: " + doc.page_content + "\n"
         lessonId = doc.metadata['lesson_id']
         lesson = LessonModel().get(lessonId, True)
-        context += "Asignatura: " + lesson["subject"]['name'] + "\n"
-        context += "Clase: " + lesson['name'] + "\n\n"
-        metadata += doc.metadata['lesson_id'] + str(doc.metadata['start']) + "\n"
-    return context#, metadata
+        context += "Subject: " + lesson["subject"]['name'] + "\n"
+        context += "Lesson: " + lesson['name'] + "\n\n"
+    return context
 
 @traceable
 def rag(query, chat_history):
@@ -115,7 +114,7 @@ def rag(query, chat_history):
     # Input keys: input and chat_history
     # Output: input, chat_history, context, and answer
 
-    return rag_chain.invoke({"input": query, "chat_history": chat_history}) #, metadata
+    return rag_chain.invoke({"input": query, "chat_history": chat_history})
 
 if __name__ == "__main__":
     chat_history = []
