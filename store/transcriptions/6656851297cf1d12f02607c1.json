@@ -1,0 +1,2957 @@
+[
+    {
+        "text": " ¡Buenas tardes! Hoy vamos a concluir sobre los productos escadarres, los productos",
+        "start": 0.0,
+        "end": 26.16
+    },
+    {
+        "text": " vectoriales y sus aplicaciones a la geometría. Ok, entonces hay que recordar hacer un poquito un",
+        "start": 26.16,
+        "end": 33.52
+    },
+    {
+        "text": " pequeño recordatorio de lo que hicimos las veces pasadas. Producto escalar. Producto escalar",
+        "start": 33.52,
+        "end": 43.64
+    },
+    {
+        "text": " tiene una definición que es muy sencilla, es la siguiente, u punto v que a veces se",
+        "start": 43.64,
+        "end": 53.6
+    },
+    {
+        "text": " escribe u, v es lo mismo, por definición es la norma de u, por la norma v, por el",
+        "start": 53.6,
+        "end": 63.480000000000004
+    },
+    {
+        "text": " coseno del ángulo, donde el ángulo es un ángulo positivo entre 0 y p. Ok, disculpa,",
+        "start": 63.48,
+        "end": 72.03999999999999
+    },
+    {
+        "text": " está. Ok, esa definición. En la práctica para que sirve esta definición, para tener la intuición",
+        "start": 72.03999999999999,
+        "end": 82.4
+    },
+    {
+        "text": " de lo que calcula el producto escalar con medio de proyecciones, es lo que vimos a vez pasada,",
+        "start": 82.4,
+        "end": 88.36
+    },
+    {
+        "text": " producto escalar, yo tengo un vector u, un vector v, un ángulo teta, como calcularlo,",
+        "start": 88.36,
+        "end": 98.08
+    },
+    {
+        "text": " su proyecto del vector v sobre el eje lefinido por u, proyección ortodonal, obtengo un nuevo",
+        "start": 98.08,
+        "end": 108.08
+    },
+    {
+        "text": " vector que se llama v prima y el producto escalar es el producto de la norma de u, por la norma de v",
+        "start": 108.08,
+        "end": 118.12
+    },
+    {
+        "text": " prima. Ok, porque la norma de v prima, esto es igual a la norma de v por el coseno de teta,",
+        "start": 118.12,
+        "end": 127.72
+    },
+    {
+        "text": " debido a relaciones bien conocidas sobre los triángulos. Ok, entonces es el único empleo de esta",
+        "start": 127.72,
+        "end": 136.64000000000001
+    },
+    {
+        "text": " fórmula es sirve para deducir angulos a partir del producto escalar, pero en una e y la observación",
+        "start": 136.64000000000001,
+        "end": 143.96
+    },
+    {
+        "text": " por supuesto es que tenemos que el producto escalar es nulo si y solo si los lectores son ortodonales.",
+        "start": 143.96,
+        "end": 153.44
+    },
+    {
+        "text": " Entonces también es una medida del carácter ortodonal de dos vectores y ojo el producto escalar",
+        "start": 153.44,
+        "end": 163.72
+    },
+    {
+        "text": " me producé un escalar, es decir me producé un número, esta gran diferencia entre el producto",
+        "start": 163.72,
+        "end": 170.24
+    },
+    {
+        "text": " escalar que construye un escalar y el producto de tutorial que construye un vector no, un vector. Ok,",
+        "start": 170.24,
+        "end": 178.68
+    },
+    {
+        "text": " ahora pero en una base ortodonal",
+        "start": 178.68,
+        "end": 184.24
+    },
+    {
+        "text": " tenemos que el producto escar de u por v es u1 v1 más u2 v2 más u3 v3 que es lo mismo que el",
+        "start": 184.24,
+        "end": 205.92000000000002
+    },
+    {
+        "text": " producto de esta matriz u1, u2, u3 por la columna v1, v2, v3. Ok, y por supuesto esta razón porque en la",
+        "start": 205.92,
+        "end": 219.56
+    },
+    {
+        "text": " práctica solo se consideran, se consideran bases ortodonales, ortodonales, porque es súper",
+        "start": 219.56,
+        "end": 230.51999999999998
+    },
+    {
+        "text": " complicado que el culo argumento, pero esto viene directo con las coronedadas. Entonces en",
+        "start": 230.52,
+        "end": 236.32000000000002
+    },
+    {
+        "text": " informática cuando hacemos informática sobre los puntos y los vectores geometría informática,",
+        "start": 236.32000000000002,
+        "end": 241.76000000000002
+    },
+    {
+        "text": " un vector solo es una tabla de tres componentes y hay una pequeña función que toma dos vectores,",
+        "start": 241.76000000000002,
+        "end": 250.0
+    },
+    {
+        "text": " es decir dos tablas de tres reales y que hace este producto y esto calcula el producto de escalar",
+        "start": 250.0,
+        "end": 256.32
+    },
+    {
+        "text": " y no hay más que decir y después por supuesto tiene un montón de propiedades y las propiedades son",
+        "start": 256.32,
+        "end": 264.0
+    },
+    {
+        "text": " las siguientes que permiten hacer cuentas y las propiedades son u, escalar v es igual a v escalar",
+        "start": 264.0,
+        "end": 281.28
+    },
+    {
+        "text": " u es decir es una operación commutativa, es 2 veces el mismo número, vimos que como para",
+        "start": 281.28,
+        "end": 288.52
+    },
+    {
+        "text": " las matrices tenemos que lambda por u escalar v es igual a u escalar lambda por v y es igual a lambda",
+        "start": 288.52,
+        "end": 297.4
+    },
+    {
+        "text": " producto de reales, acá ojo esto es un producto de un vector por un número, vector por un número pero",
+        "start": 297.4,
+        "end": 305.73999999999995
+    },
+    {
+        "text": " acá es un producto de dos números y tenemos la propiedad de distributividad que es u, 1 más u,",
+        "start": 305.74,
+        "end": 314.62
+    },
+    {
+        "text": " 2 escalar v es igual a u, 1 escalar v más u, 2 escalar v y tenemos que v, 2 misma cosa por",
+        "start": 314.62,
+        "end": 324.3
+    },
+    {
+        "text": " la derecha, tenemos que u escalar v 1 más v 2 es igual a u escalar v 1 más u escalar v 2 y por",
+        "start": 324.3,
+        "end": 336.02000000000004
+    },
+    {
+        "text": " fin que pasa cuando yo hago el producto escalar de un vector con él mismo u escalar u es el cuadrado",
+        "start": 336.02000000000004,
+        "end": 346.86
+    },
+    {
+        "text": " de anormal y es el cuadrado de anormal y es un número siempre positivo o nulo, ok, entonces el",
+        "start": 346.86,
+        "end": 359.22
+    },
+    {
+        "text": " producto escalar en la práctica permite calcular ángulos y distancias, ok, si, no es el cuadrado de anormal",
+        "start": 359.22,
+        "end": 371.82
+    },
+    {
+        "text": " punto, porque que pasa cuando haces esta formula con v igual a u, tienes u escalar u es igual a",
+        "start": 371.82,
+        "end": 380.34
+    },
+    {
+        "text": " normal y u por la normal y u y el ángulo entre u y u y el ángulo entre u y u es 0 su coce",
+        "start": 380.34,
+        "end": 387.3
+    },
+    {
+        "text": " no vale 1, entonces es una formula superfácil, entonces en el punto de vista moderno, el producto",
+        "start": 387.3,
+        "end": 396.53999999999996
+    },
+    {
+        "text": " escalar es la cosa primitiva, eso que define la geometría, porque es una estructura que contiene",
+        "start": 396.54,
+        "end": 403.78000000000003
+    },
+    {
+        "text": " a la vez la noción de distancia y la noción de ángulo, si yo tengo el producto escalar,",
+        "start": 403.78000000000003,
+        "end": 409.1
+    },
+    {
+        "text": " yo calculo el producto escalar con esta formula, no hay nada más fácil que hacer, yo calculo con",
+        "start": 409.1,
+        "end": 416.74
+    },
+    {
+        "text": " esta formula la normal y la normal y v dividiendo el producto escalar por la normal y u y la normal y v",
+        "start": 416.74,
+        "end": 423.22
+    },
+    {
+        "text": " obtengo el coce no el ángulo, no puede ser más fácil, entonces ese objeto es el concepto que",
+        "start": 423.3,
+        "end": 430.42
+    },
+    {
+        "text": " continúa a la vez la noción de distancia y la noción de ángulo y además se comporta bien",
+        "start": 430.42,
+        "end": 435.66
+    },
+    {
+        "text": " con las operaciones, desgracia el mente, pitagoras e u clíres no conocía a esta cosa, entonces",
+        "start": 435.66,
+        "end": 445.90000000000003
+    },
+    {
+        "text": " tuvieron que hacer mucho más cuentas que nosotros hoy, es una cosa que fue inventada a",
+        "start": 445.90000000000003,
+        "end": 452.06
+    },
+    {
+        "text": " el rededor del siglo XIX y entonces simplificó todo, esto permite mecanizar la geometría,",
+        "start": 452.06,
+        "end": 458.66
+    },
+    {
+        "text": " ok, esto es lo que, y en particular, entonces tenemos esto, en particular,",
+        "start": 458.66,
+        "end": 469.3
+    },
+    {
+        "text": " la normal de u siempre es la raíz cuadrada de u escalar u y no hay problema de gatitos acá,",
+        "start": 473.54,
+        "end": 481.62
+    },
+    {
+        "text": " porque u escalar u siempre es positivo o nulo y ahora solo hay que usar la formula acá,",
+        "start": 481.62,
+        "end": 488.82
+    },
+    {
+        "text": " poniendo v en lugar de u, u en lugar de v y se obtiene la formula usual para distancia 1 cuadrado,",
+        "start": 488.82,
+        "end": 497.54
+    },
+    {
+        "text": " más 2 cuadrado, más 3 cuadrado, ok, entonces no hay nada más que decir sobre el producto",
+        "start": 497.54,
+        "end": 507.06
+    },
+    {
+        "text": " escalar, se pueden hacer cuentas con estas fórmulas, se pueden reducir ángulos y distancias,",
+        "start": 507.06,
+        "end": 513.5
+    },
+    {
+        "text": " se pueden reducir ángulo con esto, se pueden reducir distancia con esta formula y tenemos todo,",
+        "start": 513.5,
+        "end": 520.26
+    },
+    {
+        "text": " ok, pero además cuando se hacen cosas, se necesita también el producto vectorial y vamos a",
+        "start": 520.26,
+        "end": 529.62
+    },
+    {
+        "text": " ver después para que sirve el producto vectorial, producto vectorial, entonces tiene una definición",
+        "start": 529.62,
+        "end": 541.66
+    },
+    {
+        "text": " geometrica, en definición geometrica me dice que u vectorial, v es un vector con la diferencia",
+        "start": 541.66,
+        "end": 558.9
+    },
+    {
+        "text": " de u escalar v que es un número y esto es un vector definición geometrica, ok, hay que",
+        "start": 558.9,
+        "end": 573.02
+    },
+    {
+        "text": " caracterizarlo, entonces como se define un vector, hay que definir su eje, su longitud y su sentido,",
+        "start": 573.02,
+        "end": 582.54
+    },
+    {
+        "text": " ok, entonces voy a empezar con la definición de su longitud, es decir su norma, su norma por",
+        "start": 582.54,
+        "end": 593.6999999999999
+    },
+    {
+        "text": " definición es la norma de u, por la norma de v por el seno de teta, donde teta es el ángulo y",
+        "start": 593.6999999999999,
+        "end": 601.54
+    },
+    {
+        "text": " como siempre es un ángulo positivo, porque es muy importante y es un teta, segunda vez que me",
+        "start": 601.54,
+        "end": 608.3399999999999
+    },
+    {
+        "text": " equivoco, acá porque supongo esto es un ángulo no ordenado, es un ángulo positivo para que el seno",
+        "start": 608.34,
+        "end": 617.22
+    },
+    {
+        "text": " esté positivo, es importante porque acá queremos algo positivo, ok, esto nos da la longitud,",
+        "start": 617.22,
+        "end": 626.22
+    },
+    {
+        "text": " ahora hay que darnos el eje y el eje dice, vaso menos que el producto vectorial, v es decir,",
+        "start": 626.22,
+        "end": 635.74
+    },
+    {
+        "text": " es ortodonal, a u y es ortodonal, a v, es decir es un vector que es ortodonal, a v es a u y a v,",
+        "start": 635.74,
+        "end": 646.3
+    },
+    {
+        "text": " entonces el producto vectorial está en la recta, en el eje ortodonal al plano vectorial,",
+        "start": 646.3,
+        "end": 657.82
+    },
+    {
+        "text": " definió por u y v, es así que hay que entenderlo, pero ojo u y v define el plano solo cuando no son",
+        "start": 657.82,
+        "end": 667.5400000000001
+    },
+    {
+        "text": " colineales, que pasa cuando son colineales, no tenemos problemas porque el ángulo valecero",
+        "start": 667.5400000000001,
+        "end": 674.86
+    },
+    {
+        "text": " opí, el seno desaparece y el producto vectorial valecero, es el vector nuro, entonces la observación y",
+        "start": 674.86,
+        "end": 683.2600000000001
+    },
+    {
+        "text": " hay que definir después falta el sentido y esto se hace con diciendo que la terna, la terna u, v y u",
+        "start": 683.26,
+        "end": 693.66
+    },
+    {
+        "text": " vectorial, v es positiva, es el sentido de los físicos, es decir, si yo tomo mis transvectoras u,",
+        "start": 693.66,
+        "end": 705.18
+    },
+    {
+        "text": " v y u vectorial v tienen que ir en la dirección antiorraria, es decir, el sentido positivo, ok,",
+        "start": 705.18,
+        "end": 715.0999999999999
+    },
+    {
+        "text": " sentido antiorraria, ok, y esto me definé un único vector y se llama el producto vectorial, por supuesto,",
+        "start": 715.0999999999999,
+        "end": 722.62
+    },
+    {
+        "text": " para que se arme esta cosa, para entender geométricamente de qué se trata, pero no se puede hacer cuentas",
+        "start": 723.8199999999999,
+        "end": 730.2199999999999
+    },
+    {
+        "text": " con esta definición, entonces tenemos una caracterización geométrica en una base hortonormal,",
+        "start": 730.22,
+        "end": 736.5400000000001
+    },
+    {
+        "text": " es una forma de determinante, es decir, el vector u vectorial v tiene tres componentes que se hacen",
+        "start": 744.38,
+        "end": 755.26
+    },
+    {
+        "text": " haciendo determinantes, es decir, supongo u1, u2, u3, v1, v2, v3 y para calcular la primera componente",
+        "start": 755.26,
+        "end": 767.66
+    },
+    {
+        "text": " del producto vectorial hago el determinante de lo que queda, ok, es decir, u2 por v3 menos u3 por v2",
+        "start": 767.66,
+        "end": 783.02
+    },
+    {
+        "text": " y es la única fórmula que me morirse en mi vida, porque no tengo la cabeza tan grande para",
+        "start": 783.02,
+        "end": 790.42
+    },
+    {
+        "text": " memorizar tantas fórmulas y lo que hago después es que sigo haciendo el ciclo, es decir, que viene",
+        "start": 790.42,
+        "end": 799.3
+    },
+    {
+        "text": " después de 2, entonces acá habrá u, v, menos u, v, u, v, menos u, v y la única cosa que falta son los",
+        "start": 799.3,
+        "end": 810.9
+    },
+    {
+        "text": " índices, voy a salir el ciclo, que viene después de 2, 3, que viene después de 3 haciendo el ciclo 1,",
+        "start": 810.9,
+        "end": 820.8199999999999
+    },
+    {
+        "text": " que viene después de 3, 1, 2, 3, 1, 2, 2, 3, 1 y ya está, tengo mi fórmula, es así que yo",
+        "start": 820.8199999999999,
+        "end": 833.86
+    },
+    {
+        "text": " me morriso, mucho más fácil, esto quiere decir que cuando yo quiero la segunda componente,",
+        "start": 833.86,
+        "end": 841.54
+    },
+    {
+        "text": " necesito esta determinante completando la cosa con un ciclo, etcétera,",
+        "start": 841.54,
+        "end": 851.38
+    },
+    {
+        "text": " ok, tenemos en una base o esto normal, o el vídeo de la cosa más importante positiva y es así que",
+        "start": 851.38,
+        "end": 864.38
+    },
+    {
+        "text": " se calculan los productos vectoriales, entonces por ejemplo si yo hago geometría informática,",
+        "start": 864.38,
+        "end": 869.86
+    },
+    {
+        "text": " el producto vectorial es una pequeña función, es una procedura que toma dos tablas de 3",
+        "start": 869.86,
+        "end": 876.54
+    },
+    {
+        "text": " números, dos, dos vectores y que me devuelve una tabla de 3 números que son estos 3 números,",
+        "start": 876.54,
+        "end": 882.26
+    },
+    {
+        "text": " ok, y para calcular un producto vectorial necesito 6 productos y 3 restas, ok,",
+        "start": 882.26,
+        "end": 893.18
+    },
+    {
+        "text": " ahora producto vectorial hay que ver cueles son las propiedades, a, y olvide la cosa muy",
+        "start": 895.18,
+        "end": 901.62
+    },
+    {
+        "text": " importante de producto vectorial es que por supuesto el producto vectorial es igual al",
+        "start": 901.62,
+        "end": 910.78
+    },
+    {
+        "text": " vector nulo si y solo si, si y solo si que son colinales, u ibe son colinales, es decir,",
+        "start": 910.78,
+        "end": 925.26
+    },
+    {
+        "text": " lo mismo modo que un producto es que cada mide el carácter ortodonal de dos vectores,",
+        "start": 925.26,
+        "end": 930.58
+    },
+    {
+        "text": " el producto vectorial mide el carácter colinial de dos vectores, entonces cuando quieren saber si",
+        "start": 930.58,
+        "end": 938.88
+    },
+    {
+        "text": " dos vectores son colinales tienen dos métodos, el primero es el que siempre usamos,",
+        "start": 938.88,
+        "end": 945.98
+    },
+    {
+        "text": " formamos una matriz 2x3 y calculamos su rango, tienes que ser 1 o 2, si es 1 los dos vectores",
+        "start": 946.54,
+        "end": 957.82
+    },
+    {
+        "text": " son proporcionales, si el rango es 2 no son proporcionales, no son colinales, pero con el método",
+        "start": 957.82,
+        "end": 965.1800000000001
+    },
+    {
+        "text": " de rúchefrobenius que resuelve todos los problemas del huñerazo, pero también acá lo que se hace",
+        "start": 965.1800000000001,
+        "end": 971.34
+    },
+    {
+        "text": " frecuentemente es hacer estas cuentas, si tengo dos vectores quiero verificar si son colinales o no,",
+        "start": 971.34,
+        "end": 977.14
+    },
+    {
+        "text": " yo calculo su producto vectorial, si ve del 0, 6, de hecho si miran esto, pueden observar que",
+        "start": 977.14,
+        "end": 987.94
+    },
+    {
+        "text": " esto mide el coeficiente de ortod, verifica que las cosas son proporcionales apares, eso que calcula el",
+        "start": 987.94,
+        "end": 998.74
+    },
+    {
+        "text": " determinante, y las propiedades, propiedades del producto vectorial, las que siempre hay que",
+        "start": 998.74,
+        "end": 1010.62
+    },
+    {
+        "text": " memorizar, primera cosa muy importante es que el producto vectorial no es commutativo, es anticonutativo,",
+        "start": 1010.62,
+        "end": 1018.74
+    },
+    {
+        "text": " ok, es decir, cuando su intercambio huy, yo tengo que cambiar el signo, de hecho no es el signo",
+        "start": 1018.74,
+        "end": 1028.1
+    },
+    {
+        "text": " porque los vectores no tienen signo, tengo que reemplazar un vector por su vector opuesto, y después",
+        "start": 1028.1,
+        "end": 1034.66
+    },
+    {
+        "text": " se comporta bien, yo puedo adaptar las ecuaciones anteriores, funcionan bien, es decir, lambda por",
+        "start": 1034.66,
+        "end": 1042.22
+    },
+    {
+        "text": " u vectorial v es igual a u vectorial lambda por v es igual a lambda por el producto vectorial u y",
+        "start": 1042.22,
+        "end": 1052.3
+    },
+    {
+        "text": " dv, y después es una aplicación bilineal, es decir, se puede distribuir por la izquierda o por",
+        "start": 1052.3,
+        "end": 1061.6200000000001
+    },
+    {
+        "text": " la derecha, es decir, u1 más u2 vectorial v es igual a u1 vectorial v más u2 vectorial v, acá y lo",
+        "start": 1061.62,
+        "end": 1075.6599999999999
+    },
+    {
+        "text": " mismo por la derecha, u vectorial v1 más v2 es igual a u vectorial v1 más u vectorial v2, ok,",
+        "start": 1075.6599999999999,
+        "end": 1086.4199999999998
+    },
+    {
+        "text": " y ya tenemos que hacer lo que queremos, tal cual, esa razón porque se llama producto,",
+        "start": 1086.42,
+        "end": 1096.22
+    },
+    {
+        "text": " ok, si no tuvieramos esta cosa, podríamos usar otra palabra, no sé, podríamos hacer tabla",
+        "start": 1096.22,
+        "end": 1110.18
+    },
+    {
+        "text": " vectorial, coso vectorial, truco vectorial, pero no serían un producto, pero estas propiedades me dan",
+        "start": 1110.18,
+        "end": 1121.14
+    },
+    {
+        "text": " las propiedades de producto, entonces es una cosa muy interesante porque captura la noción de",
+        "start": 1121.14,
+        "end": 1130.66
+    },
+    {
+        "text": " colinearía, además tiene una fórmula sencilla para hacer cuentas en una base orto normal positiva,",
+        "start": 1130.66,
+        "end": 1138.3400000000001
+    },
+    {
+        "text": " tiene una intuición geometrica y tiene buenas propiedades algebraicas, que queremos más, nada,",
+        "start": 1138.34,
+        "end": 1147.22
+    },
+    {
+        "text": " ok, ojo este producto vectorial no es una operación asociativo,",
+        "start": 1147.22,
+        "end": 1153.94
+    },
+    {
+        "text": " es decir, en general, u vectorial v vectorial v es distinto de u vectorial v vectorial",
+        "start": 1165.6200000000001,
+        "end": 1174.6200000000001
+    },
+    {
+        "text": " doble, en general, entonces la moral deja es que acá es el primer producto que vemos en nuestra",
+        "start": 1174.62,
+        "end": 1184.5
+    },
+    {
+        "text": " vida en el cual está prohibido sacar las paréntesis, porque el orden de las cuentas cuenta, ok,",
+        "start": 1184.5,
+        "end": 1194.06
+    },
+    {
+        "text": " pero tenemos esta fórmula mágica que nunca yuse mi en mi vida, tenemos la siguiente fórmula que es",
+        "start": 1194.06,
+        "end": 1202.6999999999998
+    },
+    {
+        "text": " u vectorial v vectorial doble, más yo hago un ciclo, v vectorial doble, vectorial u, más último ciclo,",
+        "start": 1202.7,
+        "end": 1214.38
+    },
+    {
+        "text": " después es doble vectorial u vectorial, ve, todo esto siempre la sumaba el vector duro,",
+        "start": 1214.38,
+        "end": 1224.5800000000002
+    },
+    {
+        "text": " es una rotación y acá yo pongo las paréntesis por la izquierda, la misma fórmula con las paréntesis",
+        "start": 1224.58,
+        "end": 1235.82
+    },
+    {
+        "text": " por la derecha también vale, ok, y es todo lo que tenía que decir sobre el producto vectorial,",
+        "start": 1235.82,
+        "end": 1244.4199999999998
+    },
+    {
+        "text": " de hecho para qué cierve el producto vectorial en la práctica, vimos que el producto es calar,",
+        "start": 1244.4199999999998,
+        "end": 1251.22
+    },
+    {
+        "text": " cierve para calcular distancias, normas, distancias y calcular ángulos, entonces nos",
+        "start": 1251.22,
+        "end": 1258.46
+    },
+    {
+        "text": " necesitan más el producto vectorial, de hecho el principal interés de producto vectorial es que",
+        "start": 1258.46,
+        "end": 1266.46
+    },
+    {
+        "text": " el me construye un vector que siempre es perpendicular a dos vectores dados y es su principal interés en",
+        "start": 1266.46,
+        "end": 1275.3
+    },
+    {
+        "text": " la vida, es decir me va a construir vectores normales a platos y ese principal interés del",
+        "start": 1275.3,
+        "end": 1281.94
+    },
+    {
+        "text": " producto vectorial, entonces vamos a hablar de aplicaciones a la geometría,",
+        "start": 1281.94,
+        "end": 1286.82
+    },
+    {
+        "text": " la implícita que queréis decir, exactamente tal cual, vamos a ver a lo ahora,",
+        "start": 1296.82,
+        "end": 1301.3
+    },
+    {
+        "text": " entonces vamos a ver aplicaciones a la geometría,",
+        "start": 1301.3,
+        "end": 1304.74
+    },
+    {
+        "text": " entonces aplicaciones a la geometría,",
+        "start": 1304.74,
+        "end": 1333.82
+    },
+    {
+        "text": " la primera cosa es explicar que los dos productos, los productos, los productos escagares y",
+        "start": 1334.74,
+        "end": 1351.14
+    },
+    {
+        "text": " vectoriales permiten calcular distancias y ángulos, ok, por ejemplo si yo quiero la distancia entre",
+        "start": 1351.14,
+        "end": 1376.8200000000002
+    },
+    {
+        "text": " 2 puntos por construcción esta norma del vector AB, ok esta distancia entre 2 puntos,",
+        "start": 1376.82,
+        "end": 1385.9399999999998
+    },
+    {
+        "text": " pero la norma de AB es el producto escagar de AB por AB con una raíz cuadrada y lo que nos",
+        "start": 1385.9399999999998,
+        "end": 1396.1
+    },
+    {
+        "text": " da la forma una conocida que es B1 menos A1 cuadrado, más B2 menos A2 cuadrado, más B3 menos A3 cuadrado y",
+        "start": 1396.1,
+        "end": 1409.9399999999998
+    },
+    {
+        "text": " ya está y también permiten calcular ángulos, es decir el coseno del ángulo entre 2 vectores es",
+        "start": 1409.9399999999998,
+        "end": 1423.02
+    },
+    {
+        "text": " su producto escagar dividido por el producto de las normas y el seno del ángulo entre 2 vectores es",
+        "start": 1423.02,
+        "end": 1437.62
+    },
+    {
+        "text": " la norma del producto vectorial sobre el producto de las normas, no sé por qué puse W acá, es una B,",
+        "start": 1437.62,
+        "end": 1447.06
+    },
+    {
+        "text": " ok, entonces es la cosa muy importante, es decir si hay una cosa que hay que memorizar es que para",
+        "start": 1447.06,
+        "end": 1459.46
+    },
+    {
+        "text": " qué sirven el producto escagar y el producto vectorial, de hecho, como ya lo vimos, ahora vimos muchas",
+        "start": 1459.46,
+        "end": 1467.26
+    },
+    {
+        "text": " aplicaciones acá y acá nos falta entender para qué sirve el producto vectorial y ahora es lo que",
+        "start": 1467.26,
+        "end": 1474.34
+    },
+    {
+        "text": " vamos a hacer hablando de la noción de normal a un plano, normal a un plano,",
+        "start": 1474.34,
+        "end": 1501.5
+    },
+    {
+        "text": " ok, ahora ojo en lo que sigue se trabaja en una base orto normal positivo,",
+        "start": 1504.34,
+        "end": 1528.74
+    },
+    {
+        "text": " porque se dije una base normal positiva para tener las formas mágicas que permiten hacer cuentas,",
+        "start": 1534.34,
+        "end": 1543.9399999999998
+    },
+    {
+        "text": " ok, entonces la definición definición un vector N, N1 es normal a un plano P,",
+        "start": 1543.94,
+        "end": 1565.9
+    },
+    {
+        "text": " si cuando es orto normal, N es orto normal a todo el vector de director del plano y la figura es",
+        "start": 1565.9,
+        "end": 1588.6200000000001
+    },
+    {
+        "text": " WCX, yo tengo mi plano, mi plano si son fijo un punto, si hay un montón de directores directores",
+        "start": 1588.62,
+        "end": 1595.62
+    },
+    {
+        "text": " acá y un normal, una normal es un vector acá, que es orto normal a este, a este, a este, a este,",
+        "start": 1595.62,
+        "end": 1607.2199999999998
+    },
+    {
+        "text": " y a este, pueden ver en tres dimensiones, es un vector normal y en particular esto es una definición",
+        "start": 1607.22,
+        "end": 1622.22
+    },
+    {
+        "text": " abstracta en la práctica solo hay que verificar que es orto con las dos vectores nucleoniales.",
+        "start": 1622.22,
+        "end": 1628.38
+    },
+    {
+        "text": " Ok, en particular lo voy a escribir acá.",
+        "start": 1637.22,
+        "end": 1666.82
+    },
+    {
+        "text": " Así que está definido por un punto A y dos vectores directores U y V, no colineales,",
+        "start": 1666.82,
+        "end": 1694.98
+    },
+    {
+        "text": " tenemos lo siguiente, tenemos que N es normal a P, si y solo si, N es car U es igual a N es car V es igual a Cero,",
+        "start": 1694.98,
+        "end": 1713.98
+    },
+    {
+        "text": " es decir es orto con Al a V es A U y A V, lo que digo es que si ya tienen dos vectores directores",
+        "start": 1713.98,
+        "end": 1721.98
+    },
+    {
+        "text": " no colineales de su plano, cuando verifican que un vector N es orto con Al a V es A U y A V,",
+        "start": 1721.98,
+        "end": 1730.98
+    },
+    {
+        "text": " entonces va a ser orto con Al a todos los otros vectores directores el plan y será un vector normal",
+        "start": 1730.98,
+        "end": 1737.98
+    },
+    {
+        "text": " del plan y de estas situaciones es quizensilla, entonces por supuesto la observación muy importante es que todos",
+        "start": 1737.98,
+        "end": 1752.98
+    },
+    {
+        "text": " los vectores normales de un plano son colineales entre sí, entonces hay dos observaciones,",
+        "start": 1752.98,
+        "end": 1762.98
+    },
+    {
+        "text": " todos los vectores normales de un plano son colineales entre sí, lo que es obvio sobre la figura,",
+        "start": 1762.98,
+        "end": 1786.98
+    },
+    {
+        "text": " es decir esto es un vector normal, solo lo reelusco es normal, si se tomo su puesto también es normal,",
+        "start": 1786.98,
+        "end": 1795.98
+    },
+    {
+        "text": " si tomo cualquier vector normal lo multiplico por una constante nonula obtengo otro vector normal,",
+        "start": 1795.98,
+        "end": 1802.98
+    },
+    {
+        "text": " entonces el vector normal está definido a menos de una constante multiplicativa nonula",
+        "start": 1802.98,
+        "end": 1810.98
+    },
+    {
+        "text": " y la segunda cosa es que existe si U y V son vectores directores no colineales de P,",
+        "start": 1810.98,
+        "end": 1829.98
+    },
+    {
+        "text": " entonces el vector un vectorial V es normal a P, lo que es obvio, porque por construcción el producto vectorial me construye un vector",
+        "start": 1829.98,
+        "end": 1846.98
+    },
+    {
+        "text": " que es orto con Al a V es A U y A V, entonces ahora vemos la principal aplicación de los productos vectoriales,",
+        "start": 1846.98,
+        "end": 1856.98
+    },
+    {
+        "text": " los productos vectoriales en la práctica sirven para construir vectores normales, tengo dos vectores directores no colineales,",
+        "start": 1856.98,
+        "end": 1865.98
+    },
+    {
+        "text": " tomo su producto vectorial, UF OPA, obtengo un vector normal, entonces cuando algo geometría que su busco un vector normal un plano",
+        "start": 1865.98,
+        "end": 1876.98
+    },
+    {
+        "text": " y que ya tengo dos vectores directores no tengo que pensar a nada calculo su producto vectorial y ya está, me da un ejemplo,",
+        "start": 1876.98,
+        "end": 1889.98
+    },
+    {
+        "text": " ahora entonces el consecuencia se puede también definir un plano no por un punto y dos vectores no colineales pero por un punto y un vector normal,",
+        "start": 1889.98,
+        "end": 1907.98
+    },
+    {
+        "text": " es otra defensa posible, es decir en general cuando sutengo un plano, suveno un punto A y dos vectores directores no colineales,",
+        "start": 1908.98,
+        "end": 1924.98
+    },
+    {
+        "text": " pero de hecho es una información redundante, porque lo que es un necesito también es un vector normal.",
+        "start": 1924.98,
+        "end": 1934.98
+    },
+    {
+        "text": " Ok, si sutengo un punto y un vector normal esto me le fíjelo un plano, ok, entonces también se puede definir un plano por un punto",
+        "start": 1937.98,
+        "end": 1965.98
+    },
+    {
+        "text": " y un vector normal N y en este caso ¿qué pasa?, ¿qué pasa cuando tenemos esto?, entonces en este caso para todo X para todo punto el universo",
+        "start": 1968.98,
+        "end": 1994.98
+    },
+    {
+        "text": " tenemos que ¿a qué condición el punto X perceles al plano?, si solo si el vector AX es ortogonal al vector normal",
+        "start": 1994.98,
+        "end": 2014.98
+    },
+    {
+        "text": " ok, si solo si el vector X es el vector AX es ortogonal al vector normal, esto es obvio",
+        "start": 2015.98,
+        "end": 2034.98
+    },
+    {
+        "text": " y ahora tenemos cuentas que se puede hacer, eso mismo que decir que el producto escar de AX por N es igual a 0 y ahora yo puedo desarrollar si solo si",
+        "start": 2035.98,
+        "end": 2057.98
+    },
+    {
+        "text": " X1 menos A1 por N1 más X2 menos a 2 por N2 más X3 menos a 3 por N3 es igual a 0 y ¿qué es esto?, es una ecuación implícita",
+        "start": 2058.98,
+        "end": 2085.98
+    },
+    {
+        "text": " es decir, la noción de vector normal nos da directamente la ecuación implícita",
+        "start": 2086.98,
+        "end": 2092.98
+    },
+    {
+        "text": " solo haciendo estas cuentas, por supuesto yo no tengo que memorizar nada, solo tengo que entender como pasé de esta idea",
+        "start": 2096.98,
+        "end": 2106.98
+    },
+    {
+        "text": " X perceles sea el plano, si solo si esto es un vector director al plano y esto es un vector director al plano, si solo si es ortogonal a N",
+        "start": 2107.98,
+        "end": 2117.98
+    },
+    {
+        "text": " entonces después tengo el producto escalar que me permite transformar esta propiedad en cuentas",
+        "start": 2117.98,
+        "end": 2122.98
+    },
+    {
+        "text": " y se puede hacer cuentas, de hecho no tiene su forma definitiva",
+        "start": 2122.98,
+        "end": 2134.98
+    },
+    {
+        "text": " ahora esto es la forma si solo si alpha x1 más beta x2 más beta x2 más beta x2",
+        "start": 2135.98,
+        "end": 2163.98
+    },
+    {
+        "text": " más gamma x3 más delta igual a 0 donde alpha es el factor en frente de X alpha es igual a N1 beta es igual a N2 gamma es igual a N3",
+        "start": 2163.98,
+        "end": 2184.98
+    },
+    {
+        "text": " alpha beta y gamma son las coordinadas del vector normal y además que es delta, de hecho es el opuesto y delta es el opuesto de producto escalar",
+        "start": 2185.98,
+        "end": 2199.98
+    },
+    {
+        "text": " del punto A por el vector normal",
+        "start": 2201.98,
+        "end": 2206.98
+    },
+    {
+        "text": " si miran lo que es delta, delta es menos a 1 N1 menos a 2 N2 menos a 3 N3 es decir es menos a producto escalar N",
+        "start": 2207.98,
+        "end": 2221.98
+    },
+    {
+        "text": " acá pueden ver que yo hago casi un crimen encontrar la humanela, yo tomo un producto escalar de un punto con un vector",
+        "start": 2221.98,
+        "end": 2231.98
+    },
+    {
+        "text": " pero como en N3 hemos hecho la identificación entre los puntos y los vectores se pueden hacer",
+        "start": 2231.98,
+        "end": 2238.98
+    },
+    {
+        "text": " y la cosa muy importante es que recibo que a mente",
+        "start": 2243.98,
+        "end": 2247.98
+    },
+    {
+        "text": " esto funcione a R",
+        "start": 2248.98,
+        "end": 2254.98
+    },
+    {
+        "text": " si P tiene equación",
+        "start": 2254.98,
+        "end": 2261.98
+    },
+    {
+        "text": " alpha x1 más beta x2 más gamma x3 más delta igual a 0",
+        "start": 2264.98,
+        "end": 2272.98
+    },
+    {
+        "text": " entonces tengo un vector normal, entonces el vector N igual de coordinadas alpha beta y gamma es un vector normal",
+        "start": 2272.98,
+        "end": 2285.98
+    },
+    {
+        "text": " y esto es maravilloso, ¿qué quiere decir esto?",
+        "start": 2286.98,
+        "end": 2297.98
+    },
+    {
+        "text": " lo que quiere decir es que en la práctica cuándo se trabaja con planos preferimos usar punto y vector normal",
+        "start": 2297.98,
+        "end": 2311.98
+    },
+    {
+        "text": " es mucho más fácil manipular planos así porque cuando se tenga un punto invector normal en 2 segundos obtengo la equación implícita",
+        "start": 2312.98,
+        "end": 2323.98
+    },
+    {
+        "text": " y a partir de la equación implícita obtengo directamente el vector normal le chendo la equación",
+        "start": 2323.98,
+        "end": 2329.98
+    },
+    {
+        "text": " no se puede ser más sencillo",
+        "start": 2329.98,
+        "end": 2333.98
+    },
+    {
+        "text": " ¿cuál es lo que voy a mostrar después?",
+        "start": 2334.98,
+        "end": 2340.98
+    },
+    {
+        "text": " como ir en ambas direcciones, entonces quizá informáticos en la sala porque escribo cosas y llutas",
+        "start": 2340.98,
+        "end": 2349.98
+    },
+    {
+        "text": " equación",
+        "start": 2349.98,
+        "end": 2352.98
+    },
+    {
+        "text": " y el problema es que tengo la nariz pegada en el pizarro y cuando yo tomo distancia yo vi las cosas",
+        "start": 2353.98,
+        "end": 2363.98
+    },
+    {
+        "text": " ¿cuál es la cosa interesante? antes de ir al tema siguiente se puede ver que como se define un plano informática",
+        "start": 2363.98,
+        "end": 2374.98
+    },
+    {
+        "text": " en la práctica un informático nunca va a definir un plano con un punto y dos vectores directores",
+        "start": 2374.98,
+        "end": 2381.98
+    },
+    {
+        "text": " porque un punto y dos vectores directores son 9 números",
+        "start": 2381.98,
+        "end": 2387.98
+    },
+    {
+        "text": " un informático va a definir con un punto invector normal",
+        "start": 2387.98,
+        "end": 2392.98
+    },
+    {
+        "text": " ok es decir 3 números",
+        "start": 2392.98,
+        "end": 2394.98
+    },
+    {
+        "text": " de hecho hará menos en general los informáticos cuando definen un plano solo construyen una tabla con 4 coeficientes",
+        "start": 2394.98,
+        "end": 2403.98
+    },
+    {
+        "text": " que son alpha beta gamma y delta y sasta nada más",
+        "start": 2403.98,
+        "end": 2409.98
+    },
+    {
+        "text": " entonces un plano informática es una tabla de 4 números",
+        "start": 2409.98,
+        "end": 2415.98
+    },
+    {
+        "text": " y esto permite denunciar todo",
+        "start": 2415.98,
+        "end": 2418.98
+    },
+    {
+        "text": " a partir de esto yo puedo reconstruir muchas cosas",
+        "start": 2418.98,
+        "end": 2423.98
+    },
+    {
+        "text": " yo tengo un vector normal de componentes alpha beta y gamma y vamos a ver como pasar de un punto de vista al otro",
+        "start": 2423.98,
+        "end": 2432.98
+    },
+    {
+        "text": " ok cambio de punto de vista",
+        "start": 2434.98,
+        "end": 2437.98
+    },
+    {
+        "text": " entonces resumen",
+        "start": 2442.98,
+        "end": 2445.98
+    },
+    {
+        "text": " esto nos da métodos para pasar de la equación paramétrica a la equación implica",
+        "start": 2448.98,
+        "end": 2472.98
+    },
+    {
+        "text": " entonces si yo tengo si yo quiero ir de la paramétrica a la implícita",
+        "start": 2472.98,
+        "end": 2487.98
+    },
+    {
+        "text": " la paramétrica esta definida a partir de una equación vectorial",
+        "start": 2487.98,
+        "end": 2493.98
+    },
+    {
+        "text": " x igual a más lambda u más un uv donde lambda uv precisa R y uv no colineales",
+        "start": 2493.98,
+        "end": 2507.98
+    },
+    {
+        "text": " ok es el punto de partida que hago yo hago",
+        "start": 2509.98,
+        "end": 2517.98
+    },
+    {
+        "text": " y como obtengo un vector normal calculo el producto vectorial",
+        "start": 2517.98,
+        "end": 2524.98
+    },
+    {
+        "text": " si a n igual al producto vectorial u vectorial b",
+        "start": 2524.98,
+        "end": 2534.98
+    },
+    {
+        "text": " ok obtengo esto muy bien un vectorial de ahora que voy a hacer yo puedo reconstruir",
+        "start": 2534.98,
+        "end": 2543.98
+    },
+    {
+        "text": " yo tengo un vector n y esto es alpha beta gamma y tengo la implícita",
+        "start": 2543.98,
+        "end": 2550.98
+    },
+    {
+        "text": " si yo tengo la implícita es alpha x1 más beta x2 más gamma x3 más delta igual a 0",
+        "start": 2550.98,
+        "end": 2563.98
+    },
+    {
+        "text": " a que me faltaba delta y delta donde ya tengo alpha beta y gamma son las componentes",
+        "start": 2563.98,
+        "end": 2574.98
+    },
+    {
+        "text": " donde delta es menos a escargar el vector normal",
+        "start": 2574.98,
+        "end": 2581.98
+    },
+    {
+        "text": " ya está pueden ver en 2 segundos pasé de la paramétrica la implícita",
+        "start": 2581.98,
+        "end": 2588.98
+    },
+    {
+        "text": " ok ahora yo quiero ir al revés es decir de la implícita a la paramétrica",
+        "start": 2588.98,
+        "end": 2602.98
+    },
+    {
+        "text": " yo supongo que tengo una implícita",
+        "start": 2602.98,
+        "end": 2609.98
+    },
+    {
+        "text": " a más gamma me olvide el gamma más delta",
+        "start": 2609.98,
+        "end": 2624.98
+    },
+    {
+        "text": " tengo una ecuación implícita",
+        "start": 2624.98,
+        "end": 2631.98
+    },
+    {
+        "text": " ahora hay un pequeño truco a que asar un punto",
+        "start": 2631.98,
+        "end": 2634.98
+    },
+    {
+        "text": " si tengo un vector normal ¿cuál es mi vector normal? alpha beta gamma",
+        "start": 2634.98,
+        "end": 2641.98
+    },
+    {
+        "text": " yo tengo el vector normal",
+        "start": 2641.98,
+        "end": 2648.98
+    },
+    {
+        "text": " ok chovedo y sean n igual a alpha beta gamma y esto es un vector normal",
+        "start": 2648.98,
+        "end": 2677.98
+    },
+    {
+        "text": " ya está ¿qué me falta? tengo un vector normal ¿qué me falta?",
+        "start": 2677.98,
+        "end": 2685.98
+    },
+    {
+        "text": " un punto este hay que asar una solución",
+        "start": 2685.98,
+        "end": 2695.98
+    },
+    {
+        "text": " el punto p del plano p y esto disculpa hay que hacer pequeñas cuentas",
+        "start": 2695.98,
+        "end": 2701.98
+    },
+    {
+        "text": " hay que asar una solución",
+        "start": 2701.98,
+        "end": 2708.98
+    },
+    {
+        "text": " y a partir de esto yo tengo mi plano",
+        "start": 2708.98,
+        "end": 2713.98
+    },
+    {
+        "text": " ahora yo quiero reconstruir vectores directores",
+        "start": 2713.98,
+        "end": 2718.98
+    },
+    {
+        "text": " como hago yo necesito dos vectores",
+        "start": 2718.98,
+        "end": 2725.98
+    },
+    {
+        "text": " Bector normal son que hay unas Reynolds",
+        "start": 2726.98,
+        "end": 2732.98
+    },
+    {
+        "text": " o la씬 2",
+        "start": 2732.98,
+        "end": 2737.5
+    },
+    {
+        "text": " eigenheitón un vector normal",
+        "start": 2737.5,
+        "end": 2737.98
+    },
+    {
+        "text": " doenios ableada",
+        "start": 2737.98,
+        "end": 2740.98
+    },
+    {
+        "text": " un vector al nivel sano",
+        "start": 2740.98,
+        "end": 2747.98
+    },
+    {
+        "text": " uno me hace konstruken",
+        "start": 2747.98,
+        "end": 2749.98
+    },
+    {
+        "text": " seworker",
+        "start": 2749.98,
+        "end": 2752.98
+    },
+    {
+        "text": " Victoria, un vector, vectorial, cuya quiera vector no colineal a él. Si no es",
+        "start": 2752.98,
+        "end": 2771.94
+    },
+    {
+        "text": " colineal, yo sé que el producto vectorial será nublo y eso sé que por",
+        "start": 2771.94,
+        "end": 2776.38
+    },
+    {
+        "text": " construcción será un vector autononal. Entonces en la práctica, típicamente",
+        "start": 2776.38,
+        "end": 2781.62
+    },
+    {
+        "text": " obiene el vector i j o k, porque son los vas sencillos y en los tres vectorores",
+        "start": 2781.62,
+        "end": 2789.82
+    },
+    {
+        "text": " de base, es decir, al vector 1 0 0, el vector 0 1 0 y el vector 0 0 1 siempre hay",
+        "start": 2789.82,
+        "end": 2796.38
+    },
+    {
+        "text": " al menos 1 que no es colineal a n.",
+        "start": 2796.38,
+        "end": 2801.54
+    },
+    {
+        "text": " Ok, porque un vector no puede ser colineal a los tres ejes de la base.",
+        "start": 2802.1,
+        "end": 2806.98
+    },
+    {
+        "text": " Ok, entonces eso que yo hago la práctica, yo determinó cuáles de estos tres",
+        "start": 2808.74,
+        "end": 2813.42
+    },
+    {
+        "text": " vectorores sencillos no es colineal a n, solo de que mirar y calculo el producto",
+        "start": 2813.42,
+        "end": 2820.62
+    },
+    {
+        "text": " vectorial de n por uno de estos tres vectorores. Y obtengo un primer vector que es",
+        "start": 2820.62,
+        "end": 2827.54
+    },
+    {
+        "text": " ortogonal y como yo hago el segundo vector fácil, yo hago n vectorial el primer vector y",
+        "start": 2827.54,
+        "end": 2842.46
+    },
+    {
+        "text": " ya está, porque va a funcionar, porque por construcción yo sé que este vector es",
+        "start": 2842.46,
+        "end": 2853.34
+    },
+    {
+        "text": " ortogonal a n y como u es ortogonal a n no es y no son nulos, no es colineal. Entonces",
+        "start": 2853.34,
+        "end": 2862.1000000000004
+    },
+    {
+        "text": " estoy seguro que esta cosa no es nula y además este vector por construcción va a ser",
+        "start": 2862.1000000000004,
+        "end": 2868.84
+    },
+    {
+        "text": " ortogonal a u. Entonces no será ortogonal a u y ya está. Hay otros métodos, pero es",
+        "start": 2868.84,
+        "end": 2877.8
+    },
+    {
+        "text": " el más rápido, lo más rápido para mí es esto. Bueno ver, uso dos productos vectoriales",
+        "start": 2877.8,
+        "end": 2884.04
+    },
+    {
+        "text": " porque no tengo imaginación, primer producto de escolarial me sirve para",
+        "start": 2884.04,
+        "end": 2888.6600000000003
+    },
+    {
+        "text": " calcular un vector ortogonal a n. El segundo producto vectorial me asegura que no solo es",
+        "start": 2888.6600000000003,
+        "end": 2897.96
+    },
+    {
+        "text": " ortogonal a n, lo que yo quiero, pero como es ortogonal a u también no será colineal a u y",
+        "start": 2897.96,
+        "end": 2905.92
+    },
+    {
+        "text": " es lo que yo quiero obtener un vector v, ahora me es ortogonal a n y a u y además mi ráculo es",
+        "start": 2905.92,
+        "end": 2914.56
+    },
+    {
+        "text": " que la base u, v y n es ortogonal. Yo tengo dos vectores ortogonales, directores",
+        "start": 2914.56,
+        "end": 2921.04
+    },
+    {
+        "text": " ortogonales, que en general es una mejor situación para manejar con un plano, cuando tenemos dos",
+        "start": 2921.04,
+        "end": 2926.48
+    },
+    {
+        "text": " vectores que no solo no son colineales pero que hay más son ortogonales.",
+        "start": 2926.48,
+        "end": 2933.32
+    },
+    {
+        "text": " No es ortogonal, es decir, yo hago el producto vectorial de n por un vector que no es",
+        "start": 2941.32,
+        "end": 2949.44
+    },
+    {
+        "text": " colineal a n, por ejemplo, por ejemplo y j, por ejemplo. Es decir, hay que calcular",
+        "start": 2949.44,
+        "end": 2960.84
+    },
+    {
+        "text": " obiene n vectorial y, obiene n vectorial j, obiene n vectorial k y hay que elegir",
+        "start": 2960.84,
+        "end": 2967.44
+    },
+    {
+        "text": " el de estos tres vectores que no es colineal a n, por ejemplo si n es colineal a k no hay que",
+        "start": 2967.44,
+        "end": 2974.7000000000003
+    },
+    {
+        "text": " tomar k, hay que tomar i o j, ok, pero pueden tomar cualquier otro vector, lo importante es",
+        "start": 2974.7,
+        "end": 2984.2599999999998
+    },
+    {
+        "text": " que este producto no se cancele.",
+        "start": 2984.2599999999998,
+        "end": 2986.2999999999997
+    },
+    {
+        "text": " Sí, tal cual y es 1, 0, 0, etcétera, j es 0, 1, 0, todo esto sirve para hacer cuentas",
+        "start": 2991.14,
+        "end": 3001.8999999999996
+    },
+    {
+        "text": " las sencillas por supuesto y es así que se hace en práctica, ok y ahora tengo el plano,",
+        "start": 3001.9,
+        "end": 3013.9
+    },
+    {
+        "text": " tengo la implícita, la de la parametrica, con el a que determinamos, achado una solución y",
+        "start": 3013.9,
+        "end": 3026.46
+    },
+    {
+        "text": " los vectores u y v calculados así y esto nos da lo que queremos. Ok, entonces son las manipulaciones",
+        "start": 3026.46,
+        "end": 3041.54
+    },
+    {
+        "text": " usuales como manejar con los productos vectoriales para calcular planos. En la práctica mi consejo",
+        "start": 3041.54,
+        "end": 3049.78
+    },
+    {
+        "text": " cuando trabajo con objetos geometricos en general con las rectas prefiero trabajar con implícitas,",
+        "start": 3049.78,
+        "end": 3056.78
+    },
+    {
+        "text": " es decir punto más vector y director y con los planos yo prefiero trabajar con ecuación",
+        "start": 3056.78,
+        "end": 3063.3
+    },
+    {
+        "text": " implícita, porque cada vez hay menos información y se reconstruye lo que queda de muy rápido.",
+        "start": 3063.3,
+        "end": 3069.86
+    },
+    {
+        "text": " Ok, tenemos esto, quizás yo debería motivar la razón porque vamos a hacer todo esto.",
+        "start": 3069.86,
+        "end": 3083.26
+    },
+    {
+        "text": " Ok, normalmente yo debería presentar cosas aburridas sobre ángulos distancias entre planos,",
+        "start": 3083.26,
+        "end": 3098.7400000000002
+    },
+    {
+        "text": " lo voy a hacer después, pero antes voy a hacer una pequeña pausa que me parece muy importante para",
+        "start": 3098.74,
+        "end": 3106.74
+    },
+    {
+        "text": " los futuros ingenieros que constituye. Ok, para que se arme esto en la práctica, en el mundo",
+        "start": 3106.74,
+        "end": 3121.3399999999997
+    },
+    {
+        "text": " real, para que? Para armar paraciales de gal uno, no, no está buena respuesta. Para que hacemos",
+        "start": 3121.34,
+        "end": 3131.58
+    },
+    {
+        "text": " tales cosas aburridas, en la vida real, en el mundo real, en donde se hace, si usa todo esto.",
+        "start": 3131.58,
+        "end": 3138.38
+    },
+    {
+        "text": " ¿Quién idea? Por supuesto en ingeniería cada vez que hacemos una simulación, tenemos que",
+        "start": 3140.38,
+        "end": 3149.94
+    },
+    {
+        "text": " representar por ejemplo un puente, serán un conjunto de puntos con segmentos, cada punto",
+        "start": 3149.94,
+        "end": 3159.18
+    },
+    {
+        "text": " chile corredada, para que calculan las fuerzas, necesitaremos calcular productos ángulos, distancias,",
+        "start": 3159.18,
+        "end": 3165.98
+    },
+    {
+        "text": " entonces necesitaremos productos vectoriares, productos cadáres. Esto es, entonces cada vez que se",
+        "start": 3165.98,
+        "end": 3174.42
+    },
+    {
+        "text": " hace geometría para una aplicación práctica, consulir un puente por ejemplo, son cosas útiles en la",
+        "start": 3174.42,
+        "end": 3180.42
+    },
+    {
+        "text": " vida, no saben, cosas como puentes, cada vez que se construye un avión hay que conocer las fuerzas,",
+        "start": 3180.42,
+        "end": 3186.2200000000003
+    },
+    {
+        "text": " entonces hay que hacer una modernización con todos los puntos del avión y para conocer las fuerzas",
+        "start": 3186.2200000000003,
+        "end": 3193.02
+    },
+    {
+        "text": " que se aplican para saber si el avión va a volar o bien si se va a caer, que es un detalle importante",
+        "start": 3193.02,
+        "end": 3200.06
+    },
+    {
+        "text": " en la vida, entonces habrá que hacer cuentas de fuerzas y todas estas cosas, y volucrar",
+        "start": 3200.06,
+        "end": 3209.2599999999998
+    },
+    {
+        "text": " muchas millones de productos cadáres para calcular ángulos y productos vectoriares,",
+        "start": 3209.2599999999998,
+        "end": 3214.86
+    },
+    {
+        "text": " típicamente para conocer cuando yo tengo un pequeño triángulito de filo por 3 puntos, si yo tengo",
+        "start": 3214.86,
+        "end": 3221.22
+    },
+    {
+        "text": " un triángulo de filo por 3 puntos, avise, tengo un punto y dos vectorores directores, el punto A,",
+        "start": 3221.22,
+        "end": 3227.2999999999997
+    },
+    {
+        "text": " vector A, vector A se, ya está, tengo mi plano, que necesito yo para saber la normal para",
+        "start": 3227.3,
+        "end": 3234.7000000000003
+    },
+    {
+        "text": " cerrar el culo, necesito el producto vectorial, ya está, ok, esto es la versión seria, pero de hecho",
+        "start": 3234.7000000000003,
+        "end": 3241.6200000000003
+    },
+    {
+        "text": " todavía no son ingenieros para la mayoría de ustedes, no son ingenieros, entonces nunca usaron,",
+        "start": 3241.6200000000003,
+        "end": 3248.94
+    },
+    {
+        "text": " pero en donde vieron para ustedes desde que son niños, cuál era la aplicación más importante",
+        "start": 3249.5,
+        "end": 3258.5
+    },
+    {
+        "text": " en los productos escarres y los productos vectoriales, dos aplicaciones, videojuegos en tres",
+        "start": 3258.5,
+        "end": 3267.5
+    },
+    {
+        "text": " dimensiones y además para los que nunca jugaron a un videojuego, no, Pac-Man no, Pac-Man no,",
+        "start": 3267.5,
+        "end": 3278.46
+    },
+    {
+        "text": " Pac-Man era mi época, a la tía Tushar también sí, disculpa, son los viejos y para mí era, pero ahora",
+        "start": 3278.46,
+        "end": 3289.74
+    },
+    {
+        "text": " en la época de hoy, hay videojuegos en tres de, y ¿qué piensan que hacen? ¿Cómo calculan los",
+        "start": 3290.4599999999996,
+        "end": 3297.18
+    },
+    {
+        "text": " reangulitos? La iluminación sobre las facetas usando millones de productos escarres y bichones de",
+        "start": 3297.18,
+        "end": 3303.8999999999996
+    },
+    {
+        "text": " productos normales, ok, cuando, pero cuesta segunda aplicación más importante en términos de plata,",
+        "start": 3303.8999999999996,
+        "end": 3311.66
+    },
+    {
+        "text": " el cine por supuesto, el cinema, todas las películas que vieron recientemente, por ejemplo,",
+        "start": 3311.66,
+        "end": 3320.7799999999997
+    },
+    {
+        "text": " Avenger, el futuro Star Wars que va a salir pronto, el último Spider-Man, uso bichones,",
+        "start": 3320.7799999999997,
+        "end": 3327.74
+    },
+    {
+        "text": " trisiones de productos escarres y de productos vectoriales, de hecho para calcular un pixel",
+        "start": 3327.74,
+        "end": 3334.22
+    },
+    {
+        "text": " de Spider-Man o de Avengers, se necesitan ya miles de productos escarres y de productos vectoriales,",
+        "start": 3334.7799999999997,
+        "end": 3341.1
+    },
+    {
+        "text": " entonces no me digan que no tenga aplicación, cuando cada vez que mieran una película sobre Netflix o",
+        "start": 3341.1,
+        "end": 3347.66
+    },
+    {
+        "text": " cualquier cosa hay bichones de productos escarres en su pantalla, voy a explicar cómo se hace,",
+        "start": 3347.66,
+        "end": 3353.8199999999997
+    },
+    {
+        "text": " es interesante ver cómo se usan estas cosas, en los videojuegos,",
+        "start": 3355.8199999999997,
+        "end": 3361.4199999999996
+    },
+    {
+        "text": " en general los personajes, por ejemplo el hero, yo, o el monstruo, ustedes, cuando yo tengo",
+        "start": 3361.42,
+        "end": 3371.5
+    },
+    {
+        "text": " videojuegos, yo pongo los nombres de mis estudiantes a los extraterrestrios y esto me permite,",
+        "start": 3371.5,
+        "end": 3377.7400000000002
+    },
+    {
+        "text": " como no tengo el derecho a hacerlo en la vida real, pongo el nombre de mis estudiantes,",
+        "start": 3377.7400000000002,
+        "end": 3384.94
+    },
+    {
+        "text": " esto me permite calmarme y estar feliz en clase, es el truco,",
+        "start": 3385.5,
+        "end": 3392.38
+    },
+    {
+        "text": " que voy a inventar en este porzo, yo quiero dibujar",
+        "start": 3392.38,
+        "end": 3400.2200000000003
+    },
+    {
+        "text": " obiene un mueble, en un videojuego, obiene una arma, obiene un personaje, al final todo se",
+        "start": 3400.2200000000003,
+        "end": 3406.9
+    },
+    {
+        "text": " reduce en un conjunto de triánguritos, que están definidos en el espacio, cada triángurito tiene",
+        "start": 3406.9,
+        "end": 3420.3
+    },
+    {
+        "text": " tres coordinadas, nueve coordinadas, después hay que traducir las tres coordinadas en un espacio",
+        "start": 3420.3,
+        "end": 3429.46
+    },
+    {
+        "text": " dos de, porque la plantacha no es de tres dimensiones, sólo tiene dos dimensiones, no voy a",
+        "start": 3429.46,
+        "end": 3433.94
+    },
+    {
+        "text": " explicar cómo se hace, pero la cosa es hay que saber cómo se pone la sombra,",
+        "start": 3433.94,
+        "end": 3439.5
+    },
+    {
+        "text": " porque cuando miran a un personaje tienes sombras o más luz en algunas partes y sombras en otras",
+        "start": 3442.18,
+        "end": 3449.5
+    },
+    {
+        "text": " partes, cómo se hace, tengo que determinar el vector normal a cada triángurito, cómo se calcula",
+        "start": 3449.5,
+        "end": 3457.46
+    },
+    {
+        "text": " este vector normal, producto vectorial, después tengo la fuente de luz, acá por ejemplo, fuente de luz,",
+        "start": 3457.46,
+        "end": 3466.02
+    },
+    {
+        "text": " esto me da un vector acá, lo que cuenta es el ángulo entre el a normal y el ángulo y el",
+        "start": 3468.42,
+        "end": 3483.86
+    },
+    {
+        "text": " vector de luz, porque si la luz es en la dirección del vector normal, es la luz entera que cae,",
+        "start": 3483.86,
+        "end": 3494.86
+    },
+    {
+        "text": " ¿no? como si no es sombra en este caso, esto corresponde, voy a, este vector del vector luz va",
+        "start": 3494.86,
+        "end": 3504.7400000000002
+    },
+    {
+        "text": " del punto acá, acá, si el producto es car, es positivo, es máximo, entonces no hay sombra, si es",
+        "start": 3504.74,
+        "end": 3515.8999999999996
+    },
+    {
+        "text": " negativo que dice esto, la luz está por el otro lado, entonces no es visible, esto descubro totalmente,",
+        "start": 3515.8999999999996,
+        "end": 3524.7799999999997
+    },
+    {
+        "text": " sólo hay la luz ambiente y acá entre esto y esto hay todos los grados posibles de sombra,",
+        "start": 3524.7799999999997,
+        "end": 3533.58
+    },
+    {
+        "text": " y que corresponde es un número en general proporcional, producto de escalar dividido por la norma del",
+        "start": 3534.2999999999997,
+        "end": 3540.18
+    },
+    {
+        "text": " primer vector y del segundo vector, es decir, si yo escribo este, el centro lo voy a llevar de,",
+        "start": 3540.18,
+        "end": 3545.98
+    },
+    {
+        "text": " acá es mi luz, el producto escalar de l por la norma, dividido por la norma de esto,",
+        "start": 3545.98,
+        "end": 3559.54
+    },
+    {
+        "text": " me da la cantidad de sombra de luz, es un coeficiente entre uno y menos uno, si es uno tengo toda la luz,",
+        "start": 3559.54,
+        "end": 3569.66
+    },
+    {
+        "text": " si es cero no, nada y si es negativo el objeto es inhibicible por esta luz,",
+        "start": 3569.66,
+        "end": 3575.42
+    },
+    {
+        "text": " es decir, te vas a multiplicar este coeficiente por el color del triángulo,",
+        "start": 3578.9,
+        "end": 3583.58
+    },
+    {
+        "text": " es decir te vas a poner todo el color, a cómo se codifican los colores, ya saben que son tres números,",
+        "start": 3583.58,
+        "end": 3591.94
+    },
+    {
+        "text": " un color es un vector de tres números, la parte roja, la parte azul y la parte verde,",
+        "start": 3591.94,
+        "end": 3602.42
+    },
+    {
+        "text": " rojo azul y verde, ¿qué son estos números? son un coeficiente de iluminación entre cero y uno,",
+        "start": 3602.42,
+        "end": 3610.22
+    },
+    {
+        "text": " es decir, donde re azul lo voy a escribir, de hecho, GB porque no voy a conseguir, es red green blue,",
+        "start": 3610.22,
+        "end": 3620.9399999999996
+    },
+    {
+        "text": " ok, re, g, i, b, está en intervalo cero uno, ok, me dan una intensidad, cero es no hay, uno es todo,",
+        "start": 3620.9399999999996,
+        "end": 3631.2999999999997
+    },
+    {
+        "text": " entonces el punto cero cero corresponde a qué color, negro uno uno uno, blanco uno cero cero,",
+        "start": 3631.3,
+        "end": 3641.78
+    },
+    {
+        "text": " rojo, cero uno, cero verde, cero cero uno azul, pero podemos hacer combinaciones, por ejemplo uno uno cero",
+        "start": 3641.78,
+        "end": 3653.54
+    },
+    {
+        "text": " amarillo, cero uno uno, no me equivo que uno t, uno uno cero amarillo, cero uno uno es cian,",
+        "start": 3653.54,
+        "end": 3666.34
+    },
+    {
+        "text": " es decir es el blue del azul del del cielo, y uno cero uno es violet, si hacen uno un medio cero van",
+        "start": 3666.34,
+        "end": 3678.58
+    },
+    {
+        "text": " obtener naranja y obtenen todos los colores intermeños, ok, y si yo multiplico un color por un número",
+        "start": 3678.58,
+        "end": 3688.46
+    },
+    {
+        "text": " más grande que uno, voy a intensificar la intensidad del color, se va a ir más cerca del uno uno uno,",
+        "start": 3688.46,
+        "end": 3698.14
+    },
+    {
+        "text": " si yo multiplico por un coeficiente pequeño entre cero y uno, voy a hacer las cosas más oscuras,",
+        "start": 3698.14,
+        "end": 3706.06
+    },
+    {
+        "text": " entonces es el coeficiente que voy a usar acá, voy a multiplicar mi color por este coeficiente, si es",
+        "start": 3706.06,
+        "end": 3712.7799999999997
+    },
+    {
+        "text": " negativo voy a tomar cero, si es positivo como es entre cero y uno voy a multiplicar mi color por",
+        "start": 3712.7799999999997,
+        "end": 3718.86
+    },
+    {
+        "text": " este, y esto me va a calcular la sombra, es una técnica posible, ok, y de hecho por supuesto hay que",
+        "start": 3718.86,
+        "end": 3726.7
+    },
+    {
+        "text": " hacer lo para cada faceta, pero es más complicado, porque en general esto era el caso hace 20 años en",
+        "start": 3726.7,
+        "end": 3734.58
+    },
+    {
+        "text": " los primeros videojuegos 3D, en 91 algo así, pero ahora tenemos cartarjetas videos más, lo que hace es que tiene",
+        "start": 3734.58,
+        "end": 3745.2599999999998
+    },
+    {
+        "text": " tres vectores normales distintos para simular una curva, y lo que hace es que calcula para cada pixel una",
+        "start": 3745.2599999999998,
+        "end": 3757.02
+    },
+    {
+        "text": " normal que es una interpolación entre las tres normales, que es una combinación lineal entre las tres normales,",
+        "start": 3757.02,
+        "end": 3763.14
+    },
+    {
+        "text": " si estamos cerca de este punto vamos a usar esta normal, si estamos cerca de este punto vamos a usar",
+        "start": 3763.7999999999997,
+        "end": 3770.66
+    },
+    {
+        "text": " esta normal, si estamos cerca de este punto vamos a usar esta normal y entre vamos a hacer la combinación en función",
+        "start": 3770.66,
+        "end": 3777.42
+    },
+    {
+        "text": " de que estamos cerca de este oeste, ok y para cada pixel vamos a hacer estas cuenta y de hecho sobre",
+        "start": 3777.42,
+        "end": 3787.3199999999997
+    },
+    {
+        "text": " y mi triángulo tengo una textura, mi triángulo no tiene color única, tiene un sistema de",
+        "start": 3787.32,
+        "end": 3793.44
+    },
+    {
+        "text": " parámetros, lambda y mu, ecuación paramétrica, que permite definir una grisza de píxeles",
+        "start": 3793.44,
+        "end": 3803.2000000000003
+    },
+    {
+        "text": " que se llamó un textur, cada tiene un color. Entonces, cuando calculamos un punto tenemos",
+        "start": 3803.2000000000003,
+        "end": 3810.1600000000003
+    },
+    {
+        "text": " que saber en qué partir la grisza estamos, hay que determinar el lambda y el mu, que es",
+        "start": 3810.1600000000003,
+        "end": 3814.6800000000003
+    },
+    {
+        "text": " un punto del plano, determinar el lambda y el mu que corresponde para obtener, deducir",
+        "start": 3814.68,
+        "end": 3819.62
+    },
+    {
+        "text": " el punto de la textura y con ese lambda y se puede calcular la buena combinación de",
+        "start": 3819.62,
+        "end": 3824.72
+    },
+    {
+        "text": " las tres normales para obtener la normal local y después calculamos esto con las fuentes",
+        "start": 3824.72,
+        "end": 3831.12
+    },
+    {
+        "text": " de luz y se obtiene al final sumando todo porque el general no tenemos una única fuente",
+        "start": 3831.12,
+        "end": 3836.04
+    },
+    {
+        "text": " de luz, tenemos varias fuentes de luz y hay que sumar todo y el final se obtiene el color",
+        "start": 3836.04,
+        "end": 3842.52
+    },
+    {
+        "text": " de este píxel, reproducir para cada de los píxeles de la imagen, es decir, algo como",
+        "start": 3842.52,
+        "end": 3848.6
+    },
+    {
+        "text": " 10 millones, cada vez que están jugando en un vídeo juego es lo que pasa para cada imagen",
+        "start": 3848.6,
+        "end": 3857.68
+    },
+    {
+        "text": " que miran. Entonces, si en la vida cierven los productos vectoriales y los productos escuelares,",
+        "start": 3857.68,
+        "end": 3864.0
+    },
+    {
+        "text": " misma cosa para el cinema. El cinema usa una técnica que se llama el trazado de rasgos",
+        "start": 3864.0,
+        "end": 3871.96
+    },
+    {
+        "text": " y voy a hablar un poquito de trazado de rasgos. Ya implementé tal escozas porque cuando",
+        "start": 3871.96,
+        "end": 3878.28
+    },
+    {
+        "text": " os os descubrí esto, me encanta las cosas así. Ahora hay que explicar cómo se sintetiza",
+        "start": 3878.28,
+        "end": 3891.76
+    },
+    {
+        "text": " hay un román o spiderman numérico, en el cinema. Esto empieza con una descripción geométrica",
+        "start": 3891.76,
+        "end": 3905.5600000000004
+    },
+    {
+        "text": " de la escena para una faima, para una imagen, por supuesto después cuando la animación",
+        "start": 3905.5600000000004,
+        "end": 3911.96
+    },
+    {
+        "text": " es, hay una cuarta coordenada que es el tiempo que se moverse todos los puntos de la imagen.",
+        "start": 3911.96,
+        "end": 3918.1600000000003
+    },
+    {
+        "text": " Ok, entonces mi imagen en general es una conexión de objeto geométrico, esferas, conos",
+        "start": 3918.16,
+        "end": 3924.2799999999997
+    },
+    {
+        "text": " o cosas así, planos y en general triángulitos, hay muchos triángulitos. Esto es una descripción",
+        "start": 3924.2799999999997,
+        "end": 3933.56
+    },
+    {
+        "text": " matemática, cada vez que hay una imagen de synthesis, al entrar a la computadora hay",
+        "start": 3933.56,
+        "end": 3938.72
+    },
+    {
+        "text": " vectores, puntos, planos, segmentos y todo esto, es una descripción geométrica. Después",
+        "start": 3938.72,
+        "end": 3946.2799999999997
+    },
+    {
+        "text": " hay que poner una cámara. La cámara existe también en el mundo virtual, pero es, en",
+        "start": 3946.28,
+        "end": 3953.44
+    },
+    {
+        "text": " un mundo virtual la cámara es virtual, solo es una cámara en un mundo virtual es un",
+        "start": 3953.44,
+        "end": 3958.84
+    },
+    {
+        "text": " punto que es el centro de la cámara y dos vectores, hortogonales, que son los ejes",
+        "start": 3958.84,
+        "end": 3965.2000000000003
+    },
+    {
+        "text": " de la cámara. Y también hay el espectador, cada vez que hay una cámara hay un ojo",
+        "start": 3965.2000000000003,
+        "end": 3972.92
+    },
+    {
+        "text": " que es el ojo de la cámara, que va a corresponder en la sala del cinema al ojo del espectador.",
+        "start": 3972.92,
+        "end": 3978.92
+    },
+    {
+        "text": " Entonces hay que poder después el ojo. Esto obtiene su coordenada, coordenada. Entonces",
+        "start": 3978.92,
+        "end": 3989.28
+    },
+    {
+        "text": " lo que define una cámara básicamente son tres vectores, son el punto, el ojo, la distancia",
+        "start": 3989.28,
+        "end": 3997.96
+    },
+    {
+        "text": " a la pantalla y los dos vectores que definen la horizontal de la cámara y la vertical.",
+        "start": 3997.96,
+        "end": 4004.96
+    },
+    {
+        "text": " Ahora queremos dibujar un píxel. Tenemos nuestra pantalla y tenemos un píxel acá. ¿Cuál",
+        "start": 4004.96,
+        "end": 4014.4
+    },
+    {
+        "text": " es su color? El problema es cómo determinar para cada píxel de la pantalla, ¿cuál es",
+        "start": 4014.4,
+        "end": 4019.44
+    },
+    {
+        "text": " su color? Hay que trazar un raso que parte del ojo hasta este píxel y después atraviesa",
+        "start": 4019.44,
+        "end": 4029.48
+    },
+    {
+        "text": " y quizá va a encontrar algo. Y acá ¿qué vamos a hacer? Esto es una recta, ecuación",
+        "start": 4029.48,
+        "end": 4038.84
+    },
+    {
+        "text": " paramétrica. Aquí tenemos un punto de recta, acá tenemos otro punto que depende del píxel,",
+        "start": 4038.84,
+        "end": 4046.56
+    },
+    {
+        "text": " esto me define un vector director, yo tengo la paramétrica y acá tengo implicitas",
+        "start": 4046.56,
+        "end": 4051.72
+    },
+    {
+        "text": " calculo la intersección. Aquí encuentra mi color. A partir de la intersección tengo",
+        "start": 4051.72,
+        "end": 4058.2
+    },
+    {
+        "text": " que deducir la información local, tengo mi color, acá ¿tó qué está parte? Gracias",
+        "start": 4058.2,
+        "end": 4066.7599999999998
+    },
+    {
+        "text": " a las ecuaciones, pueden ocácalcular el vector normal local, que depende del punto. Y",
+        "start": 4066.7599999999998,
+        "end": 4074.7599999999998
+    },
+    {
+        "text": " gracias a la descripción de mi escena también conozco la textura local. Y eso agó",
+        "start": 4074.76,
+        "end": 4082.36
+    },
+    {
+        "text": " lo mismo trabajo, el mismo trabajo. Para deducir, ¿cuál es los ángulos con las fuentes",
+        "start": 4082.36,
+        "end": 4091.48
+    },
+    {
+        "text": " de luz que existen? Si tal fuente de luz a partir de este punto es visible uno, calcular",
+        "start": 4091.48,
+        "end": 4097.52
+    },
+    {
+        "text": " el producto escadar para cada fuente de luz para obtener la intensidad del color, lo que",
+        "start": 4097.52,
+        "end": 4102.2
+    },
+    {
+        "text": " yo voy a hacer, voy a multiplicar la intensidad del color por la intensidad del color de este",
+        "start": 4102.2,
+        "end": 4107.36
+    },
+    {
+        "text": " píxel que viene la textura. Y yo lo hago para cada vez, yo tengo que ver si se encuentra",
+        "start": 4107.36,
+        "end": 4113.96
+    },
+    {
+        "text": " la acuesta y al final la acuesta pueden ser más complicadas, porque por ejemplo, si",
+        "start": 4113.96,
+        "end": 4121.12
+    },
+    {
+        "text": " me superficie, acá hay mi raso de luz que viene del ojo, cae el ojo, y si me superficie",
+        "start": 4121.12,
+        "end": 4131.64
+    },
+    {
+        "text": " es transparente que va a pasar, va a atravesar, va a que hacer otras cuentas para seguir.",
+        "start": 4131.64,
+        "end": 4140.2
+    },
+    {
+        "text": " Pero también podemos tener un efecto de espejo, es brillante, tenemos que calcular un vector",
+        "start": 4140.2,
+        "end": 4149.8
+    },
+    {
+        "text": " se va a rebotar, entonces tenemos que calcular nuevo vector, mismo angulo acá, nuevo calcula,",
+        "start": 4149.8,
+        "end": 4158.56
+    },
+    {
+        "text": " y después hay que rebotar en otras partes, es lo que pasa con los espejos, los rasios",
+        "start": 4158.56,
+        "end": 4163.92
+    },
+    {
+        "text": " de luz rebotan en muchas partes de la imagen, hasta que, hasta que, si tenemos suerte que",
+        "start": 4163.92,
+        "end": 4171.28
+    },
+    {
+        "text": " encontremos una fuente de luz, y como la trayectoria de la luz no depende del orden, podemos",
+        "start": 4171.28,
+        "end": 4181.28
+    },
+    {
+        "text": " decir que si trazando un raso acá que rebota en varias partes y que al final alcanza una",
+        "start": 4181.28,
+        "end": 4190.88
+    },
+    {
+        "text": " fuente de luz, se puede de luz, si en la dirección recibe, por acá funciona también",
+        "start": 4190.88,
+        "end": 4195.96
+    },
+    {
+        "text": " la fuente de luz y va a hacer todo este cabino y llegó al ojo a través de este pixel,",
+        "start": 4195.96,
+        "end": 4203.72
+    },
+    {
+        "text": " asegiendo las combinaciones de todas las cosas que pasa, es decir, reflexión, refracción,",
+        "start": 4203.72,
+        "end": 4210.52
+    },
+    {
+        "text": " luz difusa, obtenemos por combinaciones al final el color de un pixel, recomanzar para",
+        "start": 4210.52,
+        "end": 4218.28
+    },
+    {
+        "text": " los otros 10 millones de pisceles de la imagen, y así que se calcula.",
+        "start": 4218.28,
+        "end": 4224.68
+    },
+    {
+        "text": " Una buena relación matemática de la imagen, y todos son bichones, tricciones de productos",
+        "start": 4224.68,
+        "end": 4229.64
+    },
+    {
+        "text": " vectores, productos escadales y productos vectoriales, entonces para mí esta cosa más importante",
+        "start": 4229.64,
+        "end": 4235.04
+    },
+    {
+        "text": " quizás del curso es que de hecho cada vez que van a haber una película con muchos efectos",
+        "start": 4235.04,
+        "end": 4240.72
+    },
+    {
+        "text": " especiales, pueden ver una aplicación muy concreta de productos escadar y de producto",
+        "start": 4240.72,
+        "end": 4246.0
+    },
+    {
+        "text": " vectorial.",
+        "start": 4246.0,
+        "end": 4247.0
+    },
+    {
+        "text": " Ok, entonces ahora voy a ser cosas mesaborridas, voy a terminar para mostrar algunas aplicaciones",
+        "start": 4247.0,
+        "end": 4255.2
+    },
+    {
+        "text": " que se pueden calcular directamente porque acá por supuesto nadie lo puede calcular amado,",
+        "start": 4255.2,
+        "end": 4262.12
+    },
+    {
+        "text": " se necesita escribir programas, pero el ingeniero que construye los programas tiene que entender",
+        "start": 4262.12,
+        "end": 4268.36
+    },
+    {
+        "text": " toda la geometría.",
+        "start": 4268.36,
+        "end": 4272.2
+    },
+    {
+        "text": " Como?",
+        "start": 4272.2,
+        "end": 4273.2
+    },
+    {
+        "text": " Sí, ganan mucho.",
+        "start": 4273.2,
+        "end": 4275.04
+    },
+    {
+        "text": " Al final hicieron empresas, de hecho todos las compañías como ILM y estas cosas fueron",
+        "start": 4275.04,
+        "end": 4282.839999999999
+    },
+    {
+        "text": " construidas a partir de gente que diseñaron estos programas y ahora ganan un montón de",
+        "start": 4282.839999999999,
+        "end": 4287.719999999999
+    },
+    {
+        "text": " plata.",
+        "start": 4287.719999999999,
+        "end": 4288.719999999999
+    },
+    {
+        "text": " Ahora no sé si hay tanto espacio que se queda, fue un buen programa hace 20 años, 30 años.",
+        "start": 4288.719999999999,
+        "end": 4296.679999999999
+    },
+    {
+        "text": " Ok, ahora vamos a ver otras cosas, todo esto para decir que si quieren implementar su",
+        "start": 4296.68,
+        "end": 4305.200000000001
+    },
+    {
+        "text": " propio videojuego, ahora hay máquinas, hay motores ya construidos, entonces tenemos que",
+        "start": 4305.200000000001,
+        "end": 4309.6
+    },
+    {
+        "text": " hacer nada.",
+        "start": 4309.6,
+        "end": 4310.6
+    },
+    {
+        "text": " Hace 20 años cuando empecé programar videojuegos en 3D, su tenía que hacer yo mismo mi propio",
+        "start": 4310.6,
+        "end": 4317.64
+    },
+    {
+        "text": " motor.",
+        "start": 4317.64,
+        "end": 4318.64
+    },
+    {
+        "text": " Ahora no se necesita más, porque ahora la industria construye un montón de motores, es horrible.",
+        "start": 4318.64,
+        "end": 4324.280000000001
+    },
+    {
+        "text": " Se ha llegado en una parte donde todos ya hicieron todo, pero no era el caso de mi generación.",
+        "start": 4324.28,
+        "end": 4330.8
+    },
+    {
+        "text": " Pero también si quieren hacer imágenes de la incintesis, yo pienso que se pueden mejorar",
+        "start": 4330.8,
+        "end": 4335.639999999999
+    },
+    {
+        "text": " mucho, hay mucho trabajo que queda, en los últimos años consigieron hacer las cosas",
+        "start": 4335.639999999999,
+        "end": 4342.599999999999
+    },
+    {
+        "text": " como el pelo, como la piel, que necesita modelos de iluminación muy sutiles y como siempre",
+        "start": 4342.599999999999,
+        "end": 4350.8
+    },
+    {
+        "text": " muchas cuentas.",
+        "start": 4350.8,
+        "end": 4351.8
+    },
+    {
+        "text": " Y muchos, muchas lesiones matemáticas.",
+        "start": 4351.8,
+        "end": 4355.8
+    },
+    {
+        "text": " Ok, vamos a ver otras aplicaciones.",
+        "start": 4355.8,
+        "end": 4361.400000000001
+    },
+    {
+        "text": " Hace 20 años yo estaba sobre un foro de programadores de videojuegos y habían puesto",
+        "start": 4361.4,
+        "end": 4385.4
+    },
+    {
+        "text": " las 10 reglas esenciales del programador de videojuegos.",
+        "start": 4385.4,
+        "end": 4391.4
+    },
+    {
+        "text": " Y la primera regla era el programador de videojuegos, nunca tiene miedo en el matemático,",
+        "start": 4391.4,
+        "end": 4398.96
+    },
+    {
+        "text": " porque es su herramienta principal.",
+        "start": 4398.96,
+        "end": 4406.28
+    },
+    {
+        "text": " Pero van a ver que cuando programan esto, esto les va a ayudar mucho a entender, ¿porque",
+        "start": 4406.28,
+        "end": 4410.12
+    },
+    {
+        "text": " eso entiendo estas cosas bien?",
+        "start": 4410.12,
+        "end": 4411.96
+    },
+    {
+        "text": " ¿Por qué las programé?",
+        "start": 4411.96,
+        "end": 4413.5599999999995
+    },
+    {
+        "text": " Yo vi que cuando así es una confusión entre el producto, el editorial y el producto,",
+        "start": 4413.56,
+        "end": 4417.240000000001
+    },
+    {
+        "text": " es que ahora no funcionaba en la máquina.",
+        "start": 4417.240000000001,
+        "end": 4419.4400000000005
+    },
+    {
+        "text": " Yo veo cuando yo intercambio de signo, hay una luz que aparece a revés.",
+        "start": 4419.4400000000005,
+        "end": 4425.320000000001
+    },
+    {
+        "text": " Esto se ve en la vida, cuando se equivocan.",
+        "start": 4425.320000000001,
+        "end": 4429.76
+    },
+    {
+        "text": " No se ve en el paracial, pero se ve en la vida cuando hace un programa.",
+        "start": 4429.76,
+        "end": 4434.8
+    },
+    {
+        "text": " Ok, vamos a ver cosas.",
+        "start": 4434.8,
+        "end": 4437.56
+    },
+    {
+        "text": " Ahora vamos a ver, por ejemplo, ángulos, cómo se calcula ángulos, ángulos entre rectas",
+        "start": 4437.56,
+        "end": 4455.96
+    },
+    {
+        "text": " y planos.",
+        "start": 4455.96,
+        "end": 4459.96
+    },
+    {
+        "text": " Supongo que yo tengo dos rectas, una recta definida por un punto y un vector director",
+        "start": 4459.96,
+        "end": 4470.32
+    },
+    {
+        "text": " y no sé cómo se calcula.",
+        "start": 4470.32,
+        "end": 4475.44
+    },
+    {
+        "text": " Y igual a prima más lambda u prima.",
+        "start": 4475.44,
+        "end": 4479.56
+    },
+    {
+        "text": " ¿Cómo calculo yo el ángulo entre mis dos rectas?",
+        "start": 4479.56,
+        "end": 4485.6
+    },
+    {
+        "text": " El ángulo entre dos rectas es el ángulo entre los dos rectores, directores.",
+        "start": 4485.6,
+        "end": 4491.360000000001
+    },
+    {
+        "text": " Entonces, se conocemos a fórmula.",
+        "start": 4491.360000000001,
+        "end": 4494.0
+    },
+    {
+        "text": " El ángulo, el coceno de teta es que ya sabemos ese producto es que ha habido por el",
+        "start": 4494.0,
+        "end": 4506.860000000001
+    },
+    {
+        "text": " producto de las normas.",
+        "start": 4506.860000000001,
+        "end": 4507.96
+    },
+    {
+        "text": " Ya está.",
+        "start": 4507.96,
+        "end": 4509.96
+    },
+    {
+        "text": " Y para ver esto, con la funcional acoceno tenemos teta.",
+        "start": 4509.96,
+        "end": 4514.84
+    },
+    {
+        "text": " Es una cosa para dos planos, pero ahora que son implícitos.",
+        "start": 4514.84,
+        "end": 4521.360000000001
+    },
+    {
+        "text": " Si yo tengo un primo, un plano, primer plano p, de ecuación, alpha x1 más alpha beta x2",
+        "start": 4521.360000000001,
+        "end": 4535.34
+    },
+    {
+        "text": " más gamma x3 más delta igual a 0.",
+        "start": 4535.34,
+        "end": 4540.58
+    },
+    {
+        "text": " En segundo plano, alpha prima x1 más beta prima x2 más gamma prima x3 más delta prima",
+        "start": 4540.58,
+        "end": 4552.7
+    },
+    {
+        "text": " igual a 0.",
+        "start": 4552.7,
+        "end": 4553.7
+    },
+    {
+        "text": " ¡Aquí me gusta!",
+        "start": 4553.7,
+        "end": 4560.179999999999
+    },
+    {
+        "text": " ¡Ras son!",
+        "start": 4560.179999999999,
+        "end": 4562.58
+    },
+    {
+        "text": " Gracias.",
+        "start": 4562.58,
+        "end": 4563.58
+    },
+    {
+        "text": " Voy a mantener las mismas soltaciones.",
+        "start": 4563.58,
+        "end": 4566.96
+    },
+    {
+        "text": " ¿Qué pasa con el plano?",
+        "start": 4566.96,
+        "end": 4577.5199999999995
+    },
+    {
+        "text": " Acá no tenemos más vectores y directores o tenemos demasiados, pero tenemos vectores",
+        "start": 4577.5199999999995,
+        "end": 4581.38
+    },
+    {
+        "text": " normales.",
+        "start": 4581.38,
+        "end": 4582.38
+    },
+    {
+        "text": " Entonces, vamos a hacer lo mismo con los vectores normales.",
+        "start": 4582.38,
+        "end": 4586.78
+    },
+    {
+        "text": " El ángulo será, ahora, el producto es que ha de ambos vectores normales sobre el",
+        "start": 4586.78,
+        "end": 4595.7
+    },
+    {
+        "text": " producto de sus normas, donde primer vector normal es alpha beta gamma y el segundo vector",
+        "start": 4595.7,
+        "end": 4606.42
+    },
+    {
+        "text": " normal es alpha prima beta prima y gamma prima.",
+        "start": 4606.42,
+        "end": 4609.9400000000005
+    },
+    {
+        "text": " Está.",
+        "start": 4609.94,
+        "end": 4610.94
+    },
+    {
+        "text": " No hay nada más.",
+        "start": 4610.94,
+        "end": 4616.94
+    },
+    {
+        "text": " Ahora, ¿qué pasa cuando se obtengo un plano y un recto?",
+        "start": 4616.94,
+        "end": 4625.419999999999
+    },
+    {
+        "text": " Acá no dimuestro estas cosas, siguiendo lo que hicimos anteriormente.",
+        "start": 4625.42,
+        "end": 4650.9
+    },
+    {
+        "text": " ¿Qué pasa si yo tengo un recto y un plano y recto definida por una parametrica y",
+        "start": 4650.9,
+        "end": 4674.219999999999
+    },
+    {
+        "text": " un plano de prima definido por una implícita?",
+        "start": 4674.22,
+        "end": 4690.62
+    },
+    {
+        "text": " Yo puedo calcular el ángulo entre el vector normal y el vector director.",
+        "start": 4690.62,
+        "end": 4703.26
+    },
+    {
+        "text": " Es U, es quedar N prima sobre el producto de U por la normal del primer.",
+        "start": 4703.26,
+        "end": 4715.34
+    },
+    {
+        "text": " ¿Esto es verdad?",
+        "start": 4715.34,
+        "end": 4716.34
+    },
+    {
+        "text": " ¿El buen ángulo o no?",
+        "start": 4716.34,
+        "end": 4718.34
+    },
+    {
+        "text": " ¿Por qué me da un ángulo entre la recta y el vector normal del plano?",
+        "start": 4718.34,
+        "end": 4725.860000000001
+    },
+    {
+        "text": " ¿Qué hay que corregir?",
+        "start": 4725.860000000001,
+        "end": 4727.66
+    },
+    {
+        "text": " Hay que sacar piso sobre 2.",
+        "start": 4727.66,
+        "end": 4731.74
+    },
+    {
+        "text": " Entonces, ¿qué voy a obtener?",
+        "start": 4731.74,
+        "end": 4733.06
+    },
+    {
+        "text": " Es coseno de piso sobre 2 menos theta.",
+        "start": 4733.06,
+        "end": 4741.34
+    },
+    {
+        "text": " ¿Por qué esta diferencia?",
+        "start": 4741.34,
+        "end": 4743.34
+    },
+    {
+        "text": " Si yo tengo, por ejemplo, no sé.",
+        "start": 4743.34,
+        "end": 4751.34
+    },
+    {
+        "text": " Por ejemplo, acá es mi normal.",
+        "start": 4751.34,
+        "end": 4754.900000000001
+    },
+    {
+        "text": " Acá es mi recta.",
+        "start": 4754.900000000001,
+        "end": 4761.38
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 4761.38,
+        "end": 4764.38
+    },
+    {
+        "text": " Plama p primo y mi normal en el primo.",
+        "start": 4764.38,
+        "end": 4767.5
+    },
+    {
+        "text": " Acá entre la recta y la normal, tengo un pequeño ángulo.",
+        "start": 4767.5,
+        "end": 4774.22
+    },
+    {
+        "text": " Pero el íngulo que me interesa es el complemento.",
+        "start": 4774.22,
+        "end": 4777.62
+    },
+    {
+        "text": " Es este.",
+        "start": 4777.62,
+        "end": 4779.26
+    },
+    {
+        "text": " Este es theta y este es piso sobre 2 menos theta.",
+        "start": 4779.26,
+        "end": 4786.02
+    },
+    {
+        "text": " Puede ver, en la figura complicada porque no tengo mucho espacio.",
+        "start": 4786.02,
+        "end": 4791.66
+    },
+    {
+        "text": " Este es piso sobre 2 menos theta.",
+        "start": 4791.66,
+        "end": 4794.62
+    },
+    {
+        "text": " Es decir, el ángulo entre la recta y el plano es este.",
+        "start": 4794.62,
+        "end": 4800.0599999999995
+    },
+    {
+        "text": " Pero lo que yo sé calcular es el complemento respecto a este ángulo derecho.",
+        "start": 4800.0599999999995,
+        "end": 4806.7
+    },
+    {
+        "text": " Entonces lo que voy a calcular no es el coseno de theta, pero el coseno de piso sobre",
+        "start": 4806.7,
+        "end": 4811.3
+    },
+    {
+        "text": " 2 menos theta.",
+        "start": 4811.3,
+        "end": 4813.3
+    },
+    {
+        "text": " ¿Y es así que yo diré un cobel ángulo?",
+        "start": 4813.3,
+        "end": 4817.38
+    },
+    {
+        "text": " ¿No es esta idea?",
+        "start": 4817.38,
+        "end": 4819.58
+    },
+    {
+        "text": " En esta dirección, porque theta está entre 0 y p y piso sobre 2 menos 0.",
+        "start": 4819.58,
+        "end": 4826.34
+    },
+    {
+        "text": " Me va a dar...",
+        "start": 4826.34,
+        "end": 4830.14
+    },
+    {
+        "text": " Pero no va a cambiar porque sabes, piso sobre 2 menos theta y theta menos piso",
+        "start": 4830.14,
+        "end": 4835.54
+    },
+    {
+        "text": " sobre 2 tiene el mismo coseno.",
+        "start": 4835.54,
+        "end": 4839.82
+    },
+    {
+        "text": " No, porque acá, tienes tu plano.",
+        "start": 4839.82,
+        "end": 4841.58
+    },
+    {
+        "text": " El ángulo entre la recta, acá es mi recta.",
+        "start": 4841.58,
+        "end": 4844.86
+    },
+    {
+        "text": " El ángulo entre mi recta y mi plano es este.",
+        "start": 4844.86,
+        "end": 4848.0199999999995
+    },
+    {
+        "text": " Es él que yo quiero calcular.",
+        "start": 4848.02,
+        "end": 4850.580000000001
+    },
+    {
+        "text": " Pero él que yo sé calcular es un ángulo entre dos vectores.",
+        "start": 4850.580000000001,
+        "end": 4854.580000000001
+    },
+    {
+        "text": " Es el ángulo entre este vector y este vector que es el vector director.",
+        "start": 4854.580000000001,
+        "end": 4860.02
+    },
+    {
+        "text": " Entonces el ángulo que yo sé calcular que es este no es theta, es piso sobre 2 menos",
+        "start": 4860.02,
+        "end": 4864.700000000001
+    },
+    {
+        "text": " theta.",
+        "start": 4864.700000000001,
+        "end": 4868.26
+    },
+    {
+        "text": " Para memorizar esto hay que hacer la figura.",
+        "start": 4868.26,
+        "end": 4872.46
+    },
+    {
+        "text": " Por supuesto, nunca me morice esto.",
+        "start": 4872.46,
+        "end": 4874.780000000001
+    },
+    {
+        "text": " Todo esto se reduce de figuras, aquí escribí a la figura y después no hay problemas.",
+        "start": 4874.78,
+        "end": 4882.38
+    },
+    {
+        "text": " Y a través de cosas similar, vamos a circular distancias entre puntos y rectas y planos.",
+        "start": 4882.38,
+        "end": 4890.58
+    },
+    {
+        "text": " Por ejemplo, vamos a ver la distancia entre un punto y un plano.",
+        "start": 4890.58,
+        "end": 4898.94
+    },
+    {
+        "text": " Solo voy a dar un caso.",
+        "start": 4904.78,
+        "end": 4912.38
+    },
+    {
+        "text": " Los otros los pueden ver en los apuntes, en el libro azul y todos los casos detallados.",
+        "start": 4912.38,
+        "end": 4919.34
+    },
+    {
+        "text": " Ok, pero vamos a ver un ejemplo muy sencillo distancia de un punto cu a un plano p.",
+        "start": 4919.34,
+        "end": 4934.54
+    },
+    {
+        "text": " Yo tengo un punto cu y un plano p. Yo quiero calcular la distancia.",
+        "start": 4934.54,
+        "end": 4942.66
+    },
+    {
+        "text": " La definición es que la distancia entre el punto cu y el plano p, esto es un punto y",
+        "start": 4942.66,
+        "end": 4956.3
+    },
+    {
+        "text": " esto es un plano, que es, es el mínimo de las distancias entre cu y todos los puntos",
+        "start": 4956.3,
+        "end": 4965.860000000001
+    },
+    {
+        "text": " de p. La distancia entre un punto y un plano es la distancia del punto del plano que",
+        "start": 4965.860000000001,
+        "end": 4975.46
+    },
+    {
+        "text": " es el más cerca. Es eso, su proyección ortogonal.",
+        "start": 4975.46,
+        "end": 4983.34
+    },
+    {
+        "text": " Cuando yo tengo un plano p. Un punto cu. Yo tengo muchas distancias, pero la distancia",
+        "start": 4983.34,
+        "end": 4994.38
+    },
+    {
+        "text": " más pequeña viene de la proyección ortogonal. Esa está, que me da la distancia a mi ima.",
+        "start": 4994.38,
+        "end": 5005.22
+    },
+    {
+        "text": " Entonces, la distancia es el mínimo del conjunto de las distancias entre cu y x donde",
+        "start": 5005.22,
+        "end": 5015.780000000001
+    },
+    {
+        "text": " x recorre el plano p. Ok, ahora hay que obtener una fórmula. No lo voy a demostrar, voy",
+        "start": 5015.780000000001,
+        "end": 5023.780000000001
+    },
+    {
+        "text": " a dar la fórmula. La fórmula es supersensicia. La distancia, entonces, esta proposición.",
+        "start": 5023.780000000001,
+        "end": 5032.62
+    },
+    {
+        "text": " La distancia de cu al plano p. Esa la más que, eh, es producto, yo calculo el vector",
+        "start": 5032.62,
+        "end": 5046.34
+    },
+    {
+        "text": " a cu donde cu, a me olvides las cosas. Acá es un poquito desprolijo. Ok, yo tengo que",
+        "start": 5046.34,
+        "end": 5063.860000000001
+    },
+    {
+        "text": " decir quién es mi plano. P. Entonces, si yo tengo P plano definido por un punto a y",
+        "start": 5063.86,
+        "end": 5081.299999999999
+    },
+    {
+        "text": " un vector normal n y cu un punto cualquiera. La distancia de cu al plano p. Esto es igual",
+        "start": 5081.3,
+        "end": 5104.360000000001
+    },
+    {
+        "text": " a y después es un cosa que calculan. Es el producto vectorial del vector a cu con el",
+        "start": 5104.36,
+        "end": 5113.639999999999
+    },
+    {
+        "text": " vector normal. Yo tomo un valor absoluto para sacar los problemas de signos y yo divido",
+        "start": 5113.639999999999,
+        "end": 5121.12
+    },
+    {
+        "text": " por la normada del vector normal. Y esto me da la distancia. Pero esta cosa que es esto,",
+        "start": 5121.12,
+        "end": 5140.2
+    },
+    {
+        "text": " de hecho esta cosa es el valor de la ecuación implícita. Es decir, esto es lo mismo que vale",
+        "start": 5140.2,
+        "end": 5150.24
+    },
+    {
+        "text": " el absoluto de alpha por esto, esta implícita. Entonces, es alpha por cu uno menos a uno, más beta por y acá",
+        "start": 5150.24,
+        "end": 5166.36
+    },
+    {
+        "text": " me faltan cosas.",
+        "start": 5166.36,
+        "end": 5179.28
+    },
+    {
+        "text": " Más beta, cu 2 menos a dos, más gamma, cu 3 menos a 3, más delta, para el absoluto, sobre la",
+        "start": 5179.28,
+        "end": 5201.0
+    },
+    {
+        "text": " raíz cuadrada de alpha cuadrado, más beta cuadrado, más gamma cuadrado. Esto es la implícita, porque cuando",
+        "start": 5201.0,
+        "end": 5210.16
+    },
+    {
+        "text": " su tengo P con ecuación implícita, no hay que olvidar lo que representa este número. Este número es",
+        "start": 5210.16,
+        "end": 5227.52
+    },
+    {
+        "text": " nada otro que el producto vectorial de el punto a, del punto a, acá no hay que equivocar a",
+        "start": 5227.52,
+        "end": 5240.56
+    },
+    {
+        "text": " mí, el punto acu a x vectorial n. Entonces, acá de hecho no, ese producto, si es a x vectorial n, y acá",
+        "start": 5240.56,
+        "end": 5259.96
+    },
+    {
+        "text": " obtengo esto. Creo que yo me equivoqué, yo pienso que no, pero sí, no, no, no hay que hacer disculpa, me equivoqué, por supuesto, era una",
+        "start": 5259.96,
+        "end": 5272.32
+    },
+    {
+        "text": " formula mucho más decilla, alpha cu uno más beta cu 2, más gamma, cu 3, más delta, porque el punto a",
+        "start": 5272.32,
+        "end": 5286.16
+    },
+    {
+        "text": " está integrada en la implícita. No hay que memorizar esta formula, hay que memorizar esta, y después de",
+        "start": 5286.16,
+        "end": 5298.4
+    },
+    {
+        "text": " modo similar, se pueden calcular un montón de cosas. Distancia en los apuntes, en el libro azul, pueden ver un",
+        "start": 5298.4,
+        "end": 5306.5599999999995
+    },
+    {
+        "text": " montón de otras fórbulas, que les permiten calcular distancias de un punto a una recta, pero también",
+        "start": 5306.5599999999995,
+        "end": 5315.759999999999
+    },
+    {
+        "text": " distancia entre dos rectas, etcétera, etcétera, calcular intersecciones, proyecciones a ortodonáreas, etcétera, etcétera.",
+        "start": 5315.759999999999,
+        "end": 5323.0
+    },
+    {
+        "text": " Ok, y para muchas gracias.",
+        "start": 5323.0,
+        "end": 5326.8
+    }
+]
