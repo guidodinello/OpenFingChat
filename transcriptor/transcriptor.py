@@ -13,16 +13,17 @@ import requests
 import os
 from tqdm import tqdm
 import whisper
+import assemblyai as aai
 import json
 from store.data.models.subjects import SubjectModel
 from store.data.models.lessons import LessonModel
+from bson import ObjectId
+import torch
+import os
+from dotenv import load_dotenv
 
-BASE_PATH = '../store/transcriptions/'
+BASE_PATH = 'store/transcriptions/'
 
-# Add parent directory to the sys.path (list of directories where Python is going to search for modules when doing imports)
-current_dir = os.path.dirname(os.path.realpath(__file__))
-parent_dir = os.path.dirname(current_dir)
-sys.path.append(parent_dir)
 
 def convert_video_to_audio(video_file_path, audio_file_path):
     video = VideoFileClip(video_file_path)
@@ -51,8 +52,7 @@ def download_video(url, file_path):
         print(f"Failed to download video. Status code: {response.status_code}")
 
 
-
-def transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, change_timestamps=False, start_offset=0, end_offset=0):
+def transcribe_audio_with_whisper(audio_file_path, transcription_file_path, change_timestamps=False, start_offset=0, end_offset=0):
     model = whisper.load_model("base")
     result = model.transcribe(audio_file_path)
     segments = []
@@ -72,31 +72,39 @@ def transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, c
 
     return segments
 
-
-
-
 def transcript():
-    #uri='mongodb+srv://spoturno:AJFY2oSTelEuFT66@webirdatabase.slyw0m4.mongodb.net/?retryWrites=true&w=majority&appName=WebirDatabase'
-    #client = MongoClient(uri, tls=True, tlsAllowInvalidCertificates=False)
-    #db = client['webir']
-    #collection = db['lessons']
 
-    #all_documents = collection.find()
-    #documents_list = list(all_documents)
+    # Esto podría ser una variable de entorno o un argumento
+    subject_ids = [
+        '66567efb97cf1d12f025fde5', # AGPI
+        '66567f1097cf1d12f025fe07', # Algoritmos Evolutivos
+        '66567f8197cf1d12f025feb7', # Aplicaciones del Algebra Lineal
+        '665681ca97cf1d12f026025f', # Economía
+        '6656821b97cf1d12f02602e3', # El Negocio del Software,
+        '665683dc97cf1d12f02605c5', # Física 1
+        '665684ff97cf1d12f02607a3', # GAL 1
+    ]
 
-    lessons = LessonModel()
-    documents_list = lessons.getAll()
+    lesson_model = LessonModel()
 
     os.makedirs(BASE_PATH, exist_ok=True)
 
-    for document in documents_list[:1]:
-        video_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp4')
-        audio_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.mp3')
-        transcription_file_path = os.path.join(BASE_PATH, f'{document["_id"]}.json')
-        print(document["_id"])
-        #download_video(document['video'], video_file_path)
-        #convert_video_to_audio(video_file_path, audio_file_path)
-        #transcribe_audio_with_timestamps(audio_file_path, transcription_file_path, False, 0, 0)
+    for subject_id in subject_ids[:1]:
+        filters = {"subjectId": ObjectId(subject_id), "transcribed": False}
+        lessons = lesson_model.getAll(**filters)
+        for lesson in lessons[:1]:
+            video_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp4")
+            audio_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp3")
+            transcription_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.json")
+            download_video(lesson['video'], video_file_path)
+            convert_video_to_audio(video_file_path, audio_file_path)
 
-        #os.remove(video_file_path)
-        #os.remove(audio_file_path)
+            if torch.cuda.is_available():
+                print("CUDA is available. Using Whisper for transcription.")
+                transcribe_audio_with_whisper(audio_file_path, transcription_file_path)
+            else:
+                print("CUDA is not available. Whisper API coming soon.")
+                
+            # lesson_model.update(lesson['_id'], {"transcribed": True})
+            os.remove(video_file_path)
+            os.remove(audio_file_path)
