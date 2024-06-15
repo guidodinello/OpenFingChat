@@ -103,7 +103,14 @@ print(f"Retrieved subject with lessons: {sWithLessons}\n")
 
 ### Embedding
 
-### Transcriptions
+## Transcriptor
+Este  modulo se encarga de transcribir las clases de las materias almacenadas en la base de datos de MongoDB. Actualmente se transcriben solo las clases de las materias definidas dentro del arreglo subjects en el archivo `transcriptor/transcriptor.py`. Para ejecutar el transcriptor, se debe correr el siguiente comando:
+
+```bash
+python main.py transcriptor
+```
+
+Verificar MONGODB_URI para saber de donde está obteniendo la info (localhost o en el servidor de atlas).
 
 ## Scrapper
 
