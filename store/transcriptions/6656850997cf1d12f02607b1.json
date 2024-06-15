@@ -1,0 +1,1967 @@
+[
+    {
+        "text": " ¡Muchas gracias!",
+        "start": 0.0,
+        "end": 17.0
+    },
+    {
+        "text": " Buenas noches, hoy vamos a seguir con el problema de las",
+        "start": 20.0,
+        "end": 23.8
+    },
+    {
+        "text": " ecuaciones matriciales y de la matriz inversa. La vez pasada vimos que todo",
+        "start": 23.8,
+        "end": 32.04
+    },
+    {
+        "text": " sistema lineal, si tu choque un sistema lineal, entonces es un neco",
+        "start": 32.04,
+        "end": 36.44
+    },
+    {
+        "text": " en el corredatorio. Si yo tengo un sistema lineal,",
+        "start": 36.44,
+        "end": 45.08
+    },
+    {
+        "text": " ese de M ecuaciones y N incógnitas, todo sistema lineal es equivalente a la",
+        "start": 45.08,
+        "end": 68.36
+    },
+    {
+        "text": " ecuación, a x es igual, es decir una ecuación en primer lado pero entre matricias, donde",
+        "start": 68.36,
+        "end": 82.6
+    },
+    {
+        "text": " hay que ser. Acá es la matriz, es una matriz M por N licuficiente, es la matriz de",
+        "start": 82.6,
+        "end": 100.32
+    },
+    {
+        "text": " los coeficientes del sistema, x es la matriz columna, es decir de tamaño N por",
+        "start": 100.32,
+        "end": 111.6
+    },
+    {
+        "text": " uno de las incógnitas, y B es la matriz columna de tamaño M por uno de los terminos independientes.",
+        "start": 111.6,
+        "end": 129.79999999999998
+    },
+    {
+        "text": " Ok, entonces vimos que cada vez que yo escribo un sistema lineal con un",
+        "start": 129.8,
+        "end": 145.96
+    },
+    {
+        "text": " misión de ecuaciones, un misión de incógnitas, es lo mismo que escribir una única",
+        "start": 145.96,
+        "end": 153.60000000000002
+    },
+    {
+        "text": " ecuación entre dos matricias columnas. Ok, a x igual a B donde a esta matriz",
+        "start": 153.6,
+        "end": 162.32
+    },
+    {
+        "text": " coeficientes, x es la matriz de las incógnitas, tiene N filas, y B es la matriz columna de los",
+        "start": 162.32,
+        "end": 170.16
+    },
+    {
+        "text": " terminos independientes, hay M filas. Acá pueden observar que esta tiene tamaño M por",
+        "start": 170.16,
+        "end": 177.07999999999998
+    },
+    {
+        "text": " N, hago el producto que tiene tamaño N por uno, obtengo algo que tiene tamaño M por uno.",
+        "start": 177.08,
+        "end": 184.08
+    },
+    {
+        "text": " Ok, está bien. Y vimos que se equivara en tesó mismo, entonces achar el conjunto de",
+        "start": 184.08,
+        "end": 193.44
+    },
+    {
+        "text": " todas las soluciones es el conjunto de todas las matricias columnas que cumplen esta",
+        "start": 193.44,
+        "end": 200.4
+    },
+    {
+        "text": " ecuación. Entonces, ¿por qué es interesante? Porque lo que nos gustaría hacer, entonces,",
+        "start": 200.4,
+        "end": 211.64000000000001
+    },
+    {
+        "text": " ojo voy a escribir algo rimal, lo que nos gustaría hacer es hacer esto. Es lo que nos gustaría",
+        "start": 211.64000000000001,
+        "end": 221.44
+    },
+    {
+        "text": " hacer, pero no va a funcionar demasiado sencillo, demasiado ingenuo, pero lo que vamos",
+        "start": 221.44,
+        "end": 229.20000000000002
+    },
+    {
+        "text": " a ver es que esto se puede reemplazar por la inversar a por B, esto tiene a veces",
+        "start": 229.2,
+        "end": 238.28
+    },
+    {
+        "text": " tiene sentido. El problema acá es que en general el matimática se define el cociente como",
+        "start": 238.28,
+        "end": 248.35999999999999
+    },
+    {
+        "text": " x por y a la menos 1. Ok, es decir, la operación primitiva no es la división, es la inversa,",
+        "start": 248.35999999999999,
+        "end": 258.15999999999997
+    },
+    {
+        "text": " y lo que se llama la división, es la compuesta de dos operaciones, la operación de inversa",
+        "start": 258.16,
+        "end": 263.72
+    },
+    {
+        "text": " y la compuesta con la operación de producto. Y acá el problema es que tenemos dos posibilidades",
+        "start": 263.72,
+        "end": 271.16
+    },
+    {
+        "text": " o bien a menos 1, B o bien B por a menos 1. Y no son idénticas, vamos a ver que es la primera",
+        "start": 271.16,
+        "end": 278.20000000000005
+    },
+    {
+        "text": " que funciona. Ok, pero todo esto es la motivación, entonces no tengo derecho de hacerlo porque",
+        "start": 278.20000000000005,
+        "end": 285.56
+    },
+    {
+        "text": " no funciona siempre, entonces no tengo derecho de escribirlo por ahora. Pero es la idea,",
+        "start": 285.56,
+        "end": 293.96
+    },
+    {
+        "text": " es lo que queremos hacer. Entonces la primera cosa que tenemos que hacer es definir la",
+        "start": 293.96,
+        "end": 301.08
+    },
+    {
+        "text": " noción de matriz inversa. Y ya se sabe que en matimática, por definición se dice que",
+        "start": 301.08,
+        "end": 310.56
+    },
+    {
+        "text": " y es la inversa de x si y solo si x por y es igual a 1, es la definición de lo que es",
+        "start": 310.56,
+        "end": 321.32
+    },
+    {
+        "text": " el inversor de un número. Entonces vamos a tomar la misma definición, pero ojo hay que",
+        "start": 321.32,
+        "end": 328.64
+    },
+    {
+        "text": " tener un 1, hay que definir 1 y qué es la especialidad de 1, su función de matimática",
+        "start": 328.64,
+        "end": 336.28
+    },
+    {
+        "text": " es ser el neutro por la multiplicación, es decir x1 es igual a 1x es igual a x. Entonces",
+        "start": 336.28,
+        "end": 344.76
+    },
+    {
+        "text": " necesitamos una matriz similar que haga el mismo trabajo, es la matriz identila. Definición",
+        "start": 344.76,
+        "end": 356.11999999999995
+    },
+    {
+        "text": " matriz identila. Ok, se llama matriz identila de tamaño n por n a la matriz y su n",
+        "start": 356.12,
+        "end": 385.12
+    },
+    {
+        "text": " de finida a c. De finida por delta su ij es igual a 1 si i es igual a j y 0 si no. ¿Qué",
+        "start": 385.12,
+        "end": 406.08
+    },
+    {
+        "text": " quiere decir esta definición? Dice que los coeficientes de la identidad son iguales a 1",
+        "start": 406.08,
+        "end": 412.44
+    },
+    {
+        "text": " sobre la diagonal, es decir cuando i es igual a j, mismo ij se defila y de columna y cuando",
+        "start": 412.44,
+        "end": 418.96
+    },
+    {
+        "text": " estamos afuera de la diagonal vale en cero. Entonces tenemos que i n, esto es la definición",
+        "start": 418.96,
+        "end": 426.8
+    },
+    {
+        "text": " formal pero en la cabeza lo que hay que memorizar es esta, es una diagonal de 1 y 0 en todas las",
+        "start": 426.8,
+        "end": 436.92
+    },
+    {
+        "text": " otras entradas. Ok, es la identidad y por supuesto hay una identidad por cada tamaño de matriz,",
+        "start": 436.92,
+        "end": 447.32
+    },
+    {
+        "text": " yo tengo la identidad 1 por ejemplo que se pueden ver identidad 1, matriz que solo continúa",
+        "start": 447.32,
+        "end": 456.84000000000003
+    },
+    {
+        "text": " 1 no es muy interesante, es el 1 usual, matriz de dimensión 1, matriz identidad de dimensión 2",
+        "start": 456.84000000000003,
+        "end": 465.56
+    },
+    {
+        "text": " es esta, identidad de dimensión 3 es esta, etcétera, ok, entienden saben construir la matriz y",
+        "start": 465.56,
+        "end": 478.72
+    },
+    {
+        "text": " identidad y cuelos su propiedad es que para toda matriz toda matriz a detamaño m por n tenemos",
+        "start": 478.72,
+        "end": 498.6
+    },
+    {
+        "text": " que la identidad de m por a es igual a a por la identidad de tamaño n y esto es igual a, es decir",
+        "start": 498.6,
+        "end": 509.8
+    },
+    {
+        "text": " es la identidad neutra respecto al producto de matrices, ok, es la matriz que no cambia nada,",
+        "start": 509.8,
+        "end": 517.64
+    },
+    {
+        "text": " es su propiedad, entonces es 1 pero ojo como tenemos tamaños distintos de matrices ahora tenemos",
+        "start": 519.48,
+        "end": 528.2
+    },
+    {
+        "text": " un número una matriz uno para cada tamaño, ok, es lo que cambia y ahora se puede definir la",
+        "start": 528.2,
+        "end": 540.44
+    },
+    {
+        "text": " noción de matriz inversa, ok y ok, definición de la inversa ahora",
+        "start": 540.44,
+        "end": 547.96
+    },
+    {
+        "text": " definición una matriz",
+        "start": 547.96,
+        "end": 567.8000000000001
+    },
+    {
+        "text": " a cuadrada, antes de hablar de esto me olviden hacer algo importante es que esta matriz siempre es",
+        "start": 567.8,
+        "end": 582.4399999999999
+    },
+    {
+        "text": " cuadrada y simétrica, ok, esta matriz es cuadrada y simétrica, la identidad no hay noción de identidad",
+        "start": 582.44,
+        "end": 598.72
+    },
+    {
+        "text": " rectangular, esto no existe, solo hay una identidad cuadrada, entonces cuando vamos a",
+        "start": 598.72,
+        "end": 605.24
+    },
+    {
+        "text": " invertir matrices que vamos a hacer vamos a re-singirnos al caso de las matrices cuadradas, solo las",
+        "start": 605.24,
+        "end": 614.6
+    },
+    {
+        "text": " matrices cuadradas permiten preguntarle problema de inversa, las rectangulares nunca vamos a hablar",
+        "start": 614.6,
+        "end": 622.2
+    },
+    {
+        "text": " de inversa no existe, entonces una matriz cuadrada es inmersible cuando existe otra matriz",
+        "start": 622.2,
+        "end": 641.5200000000001
+    },
+    {
+        "text": " de mismo tamaño, y tiene que ser cuadrada también tal que a por b tiene que ser igual a b por a y",
+        "start": 641.52,
+        "end": 656.0
+    },
+    {
+        "text": " tiene que ser igual a la identidad de tamaño, ok, es la edificio, de mismo modo que en",
+        "start": 656.0,
+        "end": 666.4399999999999
+    },
+    {
+        "text": " más de matica un número x es invertible cuando existe otro número y tal que x por y es igual",
+        "start": 666.44,
+        "end": 672.1600000000001
+    },
+    {
+        "text": " a 1, pero ahora como en general a por b es distinto de b por a en la definición con razones de",
+        "start": 672.1600000000001,
+        "end": 681.1600000000001
+    },
+    {
+        "text": " segura y la vamos a poner ambas igualdales, es decir a b tiene que ser igual a la identidad en",
+        "start": 681.1600000000001,
+        "end": 686.9200000000001
+    },
+    {
+        "text": " el mismo modo b a tiene que ser igual a la identidad, ok, entonces se necesitan dos igualdales para",
+        "start": 686.9200000000001,
+        "end": 694.36
+    },
+    {
+        "text": " saber que una matriz es invertible y cuando b existe es única y se escribe b igual a a la",
+        "start": 694.36,
+        "end": 719.12
+    },
+    {
+        "text": " menos 1 es decir la inverazado de a, ok, ahora tengo que hacer una demostración, lo que",
+        "start": 719.12,
+        "end": 735.32
+    },
+    {
+        "text": " voy a hacer es demostrar que cuando b existe es única, ok, esto es fácil, demostración de la",
+        "start": 735.32,
+        "end": 745.6800000000001
+    },
+    {
+        "text": " unicidad, ok, supongamos que a tenga dos inversas, tenga dos inversas, b1 y b2 es decir",
+        "start": 745.68,
+        "end": 773.56
+    },
+    {
+        "text": " tenemos que a b1 es igual a b1a es igual a b2 es igual a b2a y es igual a b, las primeras igualdales me",
+        "start": 776.2399999999999,
+        "end": 790.3599999999999
+    },
+    {
+        "text": " dicen a esta es inversa como a b1 igual a b1a e igual a y esto me dice que es b1 es inversa de a y las",
+        "start": 790.3599999999999,
+        "end": 801.4399999999999
+    },
+    {
+        "text": " otras igualdales a b2 igual a b2a igual a y me dicen que b2 es inversaria, lo que quiero hacer es",
+        "start": 801.44,
+        "end": 808.32
+    },
+    {
+        "text": " mostrar que son iguales, ok, entonces tenemos que y acá sólo hay que hacer un poquito de algebra",
+        "start": 808.32,
+        "end": 820.0
+    },
+    {
+        "text": " b1 b1 es igual a b1 por y pues y es la identidad es neutro, ok, pero y es igual a b2",
+        "start": 820.0,
+        "end": 839.56
+    },
+    {
+        "text": " entonces es b1 por a b2, a b2 es igual a y por hipótesis, ok, pero tengo la sociatividad,",
+        "start": 839.56,
+        "end": 853.76
+    },
+    {
+        "text": " yo puedo cambiar las paréntesis sin cambiar el orden es b1a por b2, ok y b1a b1a por hipótesis también",
+        "start": 853.76,
+        "end": 872.0
+    },
+    {
+        "text": " es igual a y entonces y por b2 y es el neutro por el producto entonces es b2 al final obtengo",
+        "start": 872.0,
+        "end": 889.52
+    },
+    {
+        "text": " que b1 es igual a b2 son iguales esto muestra la unicidad de la inversa, ok, es decir,",
+        "start": 889.52,
+        "end": 901.84
+    },
+    {
+        "text": " cuando encuentran una matriz que cumple esto una matriz b que cumple esto no hay otra forma de",
+        "start": 901.84,
+        "end": 909.4399999999999
+    },
+    {
+        "text": " hacerlo es única y es la razón porque se escribe b a a la menos 1, ok, pero no siempre existe y",
+        "start": 909.44,
+        "end": 919.2
+    },
+    {
+        "text": " vamos a ver casos donde existe y casos donde no existe, ok, ahora vamos a hacer un ejemplo,",
+        "start": 919.2,
+        "end": 927.5200000000001
+    },
+    {
+        "text": " ejemplo es sencillo, yo ven hoy 2 matrices, esta 2, 1, 1, 1 y b es igual a 1,",
+        "start": 927.52,
+        "end": 946.88
+    },
+    {
+        "text": " 1 menos 1, 1, 2, ok, voy a calcular el producto a b, el producto a b hay que calcularlo,",
+        "start": 946.88,
+        "end": 961.16
+    },
+    {
+        "text": " entonces producto a b, 2, 1, 1, 1, recordatorio de cómo se hace un producto, ok, 2 por 1, 2, 1 por",
+        "start": 961.16,
+        "end": 975.44
+    },
+    {
+        "text": " menos 1, 1, 2, 1, 1, 1, 2 por menos 1, 2, 2, 2, 2, 2, 2, 0, acá 1 por 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,",
+        "start": 975.44,
+        "end": 987.96
+    },
+    {
+        "text": " acá, menos 1 por 1, 1, 2 por 1, 2, 2, 2, 1, 1, tenemos que a b es igual a y,",
+        "start": 987.96,
+        "end": 1000.96
+    },
+    {
+        "text": " pero ahora podemos calcular a b, ok, 1 por 2, 2, 2, menos 1, 1, 1, 1, 1, 1, acá es 1,",
+        "start": 1000.96,
+        "end": 1024.08
+    },
+    {
+        "text": " 1, 1, 1, 0, acá menos 1 por 2, menos 2, menos 2, 2, 2, 0 y acá menos 1 por 1,",
+        "start": 1024.08,
+        "end": 1032.24
+    },
+    {
+        "text": " menos 1, menos 1, 1, 1, 1, 2, 1, ah, también tenemos que b, es igual a la identidad, luego que se",
+        "start": 1032.24,
+        "end": 1041.28
+    },
+    {
+        "text": " puede elucir, b es la inversa a,",
+        "start": 1041.28,
+        "end": 1045.8
+    },
+    {
+        "text": " lo que dice es que a también es invertible, pero también que puedo elucir de mismo modo,",
+        "start": 1054.08,
+        "end": 1059.52
+    },
+    {
+        "text": " puedo elucir que a es la inversa a, b, se va en las dos direcciones,",
+        "start": 1061.52,
+        "end": 1067.0
+    },
+    {
+        "text": " ok, es algo que funciona en las dos direcciones, sabemos que un tercero es el inversor de 3,",
+        "start": 1072.1999999999998,
+        "end": 1082.04
+    },
+    {
+        "text": " pero 3 también es el inversor de un tercero y acá es lo mismo, ok, entonces sabemos que hay",
+        "start": 1082.04,
+        "end": 1089.36
+    },
+    {
+        "text": " besos inversibles y que cada una es la inversa de la otra, ok, es un ejemplo de matriz invertible,",
+        "start": 1089.36,
+        "end": 1096.8
+    },
+    {
+        "text": " ahora vamos a ver una matriz no invertible, tienen un ejemplo de matriz que no puede ser invertible,",
+        "start": 1096.8,
+        "end": 1103.6
+    },
+    {
+        "text": " las dos cuadradas no vamos a, ni siquiera vamos a hacer la pregunta, no, tienen un ejemplo de",
+        "start": 1103.6,
+        "end": 1115.24
+    },
+    {
+        "text": " matriz cuadradano invertible, donde está seguro que esto nunca va a funcionar, la matriz nula,",
+        "start": 1115.24,
+        "end": 1123.28
+    },
+    {
+        "text": " si yo pongo la matriz nula, si a cual sea la matriz v, voy a obtener a 0, nunca voy a obtener y,",
+        "start": 1123.28,
+        "end": 1130.3999999999999
+    },
+    {
+        "text": " ok, entonces la matriz nula no puede ser invertible, ok, pero hay otros ejemplos,",
+        "start": 1131.2,
+        "end": 1140.0400000000002
+    },
+    {
+        "text": " vamos a ver ejemplos, le matriz se es que no son invertibles sin cernuras,",
+        "start": 1140.0400000000002,
+        "end": 1145.2
+    },
+    {
+        "text": " ok, la matriz, tenemos ahora vamos a ver esta matriz, ejemplo,",
+        "start": 1150.0400000000002,
+        "end": 1154.48
+    },
+    {
+        "text": " es la matriz A, y ahora me doy la matriz, es esta 1, 1, 2, 1,",
+        "start": 1160.96,
+        "end": 1170.3600000000001
+    },
+    {
+        "text": " menos 1, menos 1, 0, 0, 0, invertible,",
+        "start": 1170.3600000000001,
+        "end": 1176.3200000000002
+    },
+    {
+        "text": " a que es una matriz nula, tiene 6 coeficientes nulos, que va a pasar si",
+        "start": 1176.32,
+        "end": 1190.56
+    },
+    {
+        "text": " yo hago el producto de a por B, la observación es que si yo multiplico esta matriz,",
+        "start": 1190.56,
+        "end": 1202.6
+    },
+    {
+        "text": " por cualquier matriz B, que yo puedo escribir así, de mismo tamaño, o voy a escribir,",
+        "start": 1207.6,
+        "end": 1218.8
+    },
+    {
+        "text": " con puntos de interagüación, si yo hago el producto de esto por esto,",
+        "start": 1220.56,
+        "end": 1235.6799999999998
+    },
+    {
+        "text": " ¿qué va a pasar en la última fila? va a ser 0, porque vimos que cuando hay una fila de la",
+        "start": 1235.6799999999998,
+        "end": 1245.9199999999998
+    },
+    {
+        "text": " primera matriz que es 0, necesariamente la última fila del productor 0, ok, entonces no",
+        "start": 1245.92,
+        "end": 1254.6000000000001
+    },
+    {
+        "text": " sé lo que pasa acá, pero estoy seguro que acá hay 0, entienden, estoy seguro que acá hay",
+        "start": 1254.6000000000001,
+        "end": 1266.0
+    },
+    {
+        "text": " 0, ya vimos que cuando hacemos un producto, si una fila de la matriz A es nula, entonces la",
+        "start": 1266.0,
+        "end": 1275.4
+    },
+    {
+        "text": " misma fila del producto es nula, ok, entonces esto podrá ser igual o no a la identidad, no porque",
+        "start": 1275.4,
+        "end": 1284.92
+    },
+    {
+        "text": " faltará siempre el 1 acá, entonces este siempre es distinto de la identidad, moraleja, la matriz A",
+        "start": 1284.92,
+        "end": 1294.32
+    },
+    {
+        "text": " no es invertible, es decir no importa la forma de B, acá si acueste a la matriz B, obtendré",
+        "start": 1294.32,
+        "end": 1307.1599999999999
+    },
+    {
+        "text": " 0 acá, ok, entonces nunca conseguiré obtener I, entonces moraleja, conclusión, A no es",
+        "start": 1307.1599999999999,
+        "end": 1320.04
+    },
+    {
+        "text": " invertible, más generalmente cada matriz que tiene una fila nula, nunca es invertible y por sí",
+        "start": 1320.04,
+        "end": 1334.12
+    },
+    {
+        "text": " metrilla como la noción inversa es cimetrica, no tiene nada que ver con las columnas y las filas,",
+        "start": 1334.12,
+        "end": 1340.28
+    },
+    {
+        "text": " cada matriz que tiene una columna nula es no invertible, si A tiene una fila nula,",
+        "start": 1340.28,
+        "end": 1357.6399999999999
+    },
+    {
+        "text": " una fila o una columna nula, entonces A no es invertible, ok, entonces es algo que cambia con",
+        "start": 1357.64,
+        "end": 1383.2
+    },
+    {
+        "text": " los números que conocemos, con los números que conocemos, cuáles son, por ejemplo, los reales,",
+        "start": 1383.2,
+        "end": 1391.8400000000001
+    },
+    {
+        "text": " cuáles son los reales no invertibles, cuáles son, ¿cero hay otros? No, 0 en R y en los números",
+        "start": 1391.8400000000001,
+        "end": 1406.96
+    },
+    {
+        "text": " que conocemos, 0 es el único número que no se puede invertir, todos se pueden invertir, acá no",
+        "start": 1406.96,
+        "end": 1414.52
+    },
+    {
+        "text": " es el caso, hay un montón de matrices que no se pueden invertir, entonces mucho más oportunidades",
+        "start": 1414.52,
+        "end": 1423.2
+    },
+    {
+        "text": " para matar a gatitos, ok, entonces si A tiene una fila o una columna nula, ya está, no se necesita",
+        "start": 1423.2,
+        "end": 1434.2
+    },
+    {
+        "text": " hacer nada, no tiene inversa, pero vamos a ver que hay muchos ejemplos de matrices que no son",
+        "start": 1434.2,
+        "end": 1442.3600000000001
+    },
+    {
+        "text": " inversibles sin tener ni un coeficiente nulo, por ejemplo es complicado, no lo voy a hacer hoy,",
+        "start": 1442.3600000000001,
+        "end": 1450.16
+    },
+    {
+        "text": " de hecho sí, yo voy a hacerlo, ¿por qué yo yo voy a hacerlo? Sí, sí, sí, sí, sí, sí,",
+        "start": 1450.16,
+        "end": 1463.3200000000002
+    },
+    {
+        "text": " vamos a tomar otro ejemplo, voy a improvisar otro ejemplo para mostrar que es mucho más",
+        "start": 1463.3200000000002,
+        "end": 1471.92
+    },
+    {
+        "text": " útil que podemos pensar, acá por ejemplo, otro ejemplo, yo considero la matriz A igual a 1,",
+        "start": 1471.92,
+        "end": 1489.28
+    },
+    {
+        "text": " 1, 1, 1, 1, 1, 1, 1, 1, 1, ok, no hay problemas, no tiene ni una fila nula, ni una columna nula,",
+        "start": 1489.28,
+        "end": 1499.72
+    },
+    {
+        "text": " parece súper positivo, no, solo que tiene coeficiente positivos, no hay ni un sero acá,",
+        "start": 1499.72,
+        "end": 1509.68
+    },
+    {
+        "text": " acá podemos pensar que no hay problemas con los gatitos, error, está tampoco es invertible,",
+        "start": 1509.68,
+        "end": 1518.08
+    },
+    {
+        "text": " ok, porque esto se puede ver, de hecho si suado el producto de A por B, como se hace,",
+        "start": 1519.08,
+        "end": 1531.8799999999999
+    },
+    {
+        "text": " es el producto de 1, 1, 1, 1, 1, 1, 1, 1, que tiene tres filas identicas, por una matriz B,",
+        "start": 1531.8799999999999,
+        "end": 1544.08
+    },
+    {
+        "text": " que voy a obtener, yo necesariamente como la primera fila de esta matriz es esta fila por B,",
+        "start": 1545.08,
+        "end": 1555.3999999999999
+    },
+    {
+        "text": " la segunda fila de esta matriz es esta fila por B, de hecho esta matriz tiene tres filas",
+        "start": 1555.3999999999999,
+        "end": 1564.4399999999998
+    },
+    {
+        "text": " identicas, es decir se escribe de la forma F, F, F, donde F es el producto de la matriz 1, 1, 1, 1,",
+        "start": 1564.44,
+        "end": 1577.72
+    },
+    {
+        "text": " por la matriz B, una fila por una matriz me da una fila, esto viene del producto por bloques,",
+        "start": 1577.72,
+        "end": 1587.48
+    },
+    {
+        "text": " producto por filas, entonces sabemos que sea cual sea la matriz B, cuando voy a ser el producto",
+        "start": 1587.48,
+        "end": 1597.44
+    },
+    {
+        "text": " con esta matriz voy a obtener tres filas identicas, entienden, pero eso puede ser o no igual a identidad,",
+        "start": 1597.44,
+        "end": 1608.04
+    },
+    {
+        "text": " no porque por construcción la fila la identidad nunca tiene dos filas identicas,",
+        "start": 1608.04,
+        "end": 1615.3999999999999
+    },
+    {
+        "text": " entonces esto será distinto de la identidad, entonces la conclusión que A,",
+        "start": 1619.3999999999999,
+        "end": 1631.8
+    },
+    {
+        "text": " esta matriz que para ese superamable no es invertible,",
+        "start": 1631.8,
+        "end": 1642.84
+    },
+    {
+        "text": " entonces tenemos un montón de ejemplos de matriz que dusan universibles, ahora vamos a ver las",
+        "start": 1642.84,
+        "end": 1659.3999999999999
+    },
+    {
+        "text": " propiedades las matrices universibles, ok, propiedades,",
+        "start": 1659.4,
+        "end": 1677.76
+    },
+    {
+        "text": " primera cosa es que cero la matriz nula no es invertible por supuesto y vimos que hay muchas",
+        "start": 1677.76,
+        "end": 1691.16
+    },
+    {
+        "text": " matrices no invertibles cada vez que tengo una fila nula o una columna nula, eso seguro que",
+        "start": 1691.16,
+        "end": 1698.24
+    },
+    {
+        "text": " el matriz no es invertible y a veces hay matrices que parecen super simpáticas y que tampoco son",
+        "start": 1698.24,
+        "end": 1705.2
+    },
+    {
+        "text": " universibles, ok, en general cuando una matriz tiene dos filas identicas o dos columnas",
+        "start": 1705.2,
+        "end": 1714.08
+    },
+    {
+        "text": " identicas no es invertible por la razón que dije, si tienen dos filas identicas el producto",
+        "start": 1714.08,
+        "end": 1720.76
+    },
+    {
+        "text": " va a tener dos filas identicas y es imposible ser la identidad, la identidad nunca tiene dos filas",
+        "start": 1720.76,
+        "end": 1726.96
+    },
+    {
+        "text": " identicas y si tiene dos columnas identicas si yo hago el producto arreves poniendo la matriz por la",
+        "start": 1726.96,
+        "end": 1733.68
+    },
+    {
+        "text": " derecha voy a obtener el producto dos columnas identicas y la matriz identidad no tiene dos columnas",
+        "start": 1733.68,
+        "end": 1740.32
+    },
+    {
+        "text": " identicas, ok, uno es que la matriz identidad es invertible, esto es claro y ¿cuál es su",
+        "start": 1740.32,
+        "end": 1755.64
+    },
+    {
+        "text": " universo? y a la menos uno es igual a que? es igual a y, acá no pongo el índice pero hay un índice",
+        "start": 1755.64,
+        "end": 1764.2800000000002
+    },
+    {
+        "text": " yo voy a escribir y directamente es decir para un tamaño fijado, ahora solo estoy hablando de",
+        "start": 1764.2800000000002,
+        "end": 1772.64
+    },
+    {
+        "text": " matrices cuadradas, solo hay una dimensión que cuenta porque es la identica para las filas y las",
+        "start": 1772.64,
+        "end": 1779.3600000000001
+    },
+    {
+        "text": " columnas, ahora dos si a es invertible y lambda es número no nulo entonces lambda a es",
+        "start": 1779.36,
+        "end": 1798.1999999999998
+    },
+    {
+        "text": " invertible, es decir si yo tengo una matriz invertible la puede multiplicar por cualquier número",
+        "start": 1798.1999999999998,
+        "end": 1807.12
+    },
+    {
+        "text": " no nulo y obtengo una otra matriz invertible y cuál será su inversa, cuál es la inversa de",
+        "start": 1807.12,
+        "end": 1815.04
+    },
+    {
+        "text": " lambda a a la menos uno, lambda a es uno sobre lambda es decir el inverso para los números por",
+        "start": 1815.04,
+        "end": 1826.04
+    },
+    {
+        "text": " la inversa de la matriz, ok, por ejemplo vamos a hacer un ejemplo, esta matriz 4, 4, 4",
+        "start": 1826.04,
+        "end": 1839.72
+    },
+    {
+        "text": " es invertible o no, sí porque es cuatro veces la identidad entonces su inversa es un cuarto de la",
+        "start": 1843.72,
+        "end": 1853.36
+    },
+    {
+        "text": " identidad, ok, entonces acá estoy componiendo el punto 1 y el punto 2 para hacer este ejemplo y después",
+        "start": 1853.36,
+        "end": 1876.9199999999998
+    },
+    {
+        "text": " 3 si a y b son invertibles y de mismo tamaño por supuesto, entonces el producto es",
+        "start": 1876.92,
+        "end": 1897.02
+    },
+    {
+        "text": " invertible y cuál será la inversa de producto, será el producto de las inversas pero al revés, ojo,",
+        "start": 1897.02,
+        "end": 1919.34
+    },
+    {
+        "text": " la inversa me intercambia el orden de los productos,",
+        "start": 1919.34,
+        "end": 1928.34
+    },
+    {
+        "text": " ok y por supuesto si a es invertible entonces su inversa es invertible, entonces a menos uno es",
+        "start": 1928.34,
+        "end": 1951.1399999999999
+    },
+    {
+        "text": " invertible y la inversa de la inversa es igual a a, esto es fácil y al final 5 si a es",
+        "start": 1951.14,
+        "end": 1967.8600000000001
+    },
+    {
+        "text": " invertible entonces también su traspuesta es invertible y la inversa de la respuesta es igual a la",
+        "start": 1967.86,
+        "end": 1982.2199999999998
+    },
+    {
+        "text": " respuesta de la inversa, ok, entonces no tenemos nada nuevo acá, cosas fáciles, ahora quizás voy",
+        "start": 1982.22,
+        "end": 2003.22
+    },
+    {
+        "text": " a hacer una demostración porque acá son cosas fáciles, la demostración es el ejercicio pero yo",
+        "start": 2003.22,
+        "end": 2009.26
+    },
+    {
+        "text": " puedo hacer, voy a hacer dos puntos que son fáciles, voy a demostrar el punto 3 y el punto 5,",
+        "start": 2009.26,
+        "end": 2024.82
+    },
+    {
+        "text": " demostración, los otros las pueden hacer como ejercicios, demostración, 3, entonces supongamos",
+        "start": 2024.82,
+        "end": 2041.22
+    },
+    {
+        "text": " que a y b son invertibles y yo voy a calcular para ver que esta matriz es la inversa de a b, la voy",
+        "start": 2041.22,
+        "end": 2059.9
+    },
+    {
+        "text": " a multiplicar por a b, ok, entonces voy a calcular a b por b menos uno a menos uno, qué verá, yo",
+        "start": 2059.9,
+        "end": 2074.26
+    },
+    {
+        "text": " puedo cambiar las paréntesis por la sociatividad, ya vimos que en el producto lo que no tenemos derecho",
+        "start": 2074.26,
+        "end": 2081.54
+    },
+    {
+        "text": " a hacer es intercambiar las matrices pero tenemos inter derecho a cambiar las paréntesis, ok, esto es",
+        "start": 2081.54,
+        "end": 2089.38
+    },
+    {
+        "text": " mismo que a por b menos uno por a, ok, b menos uno es igual a qué, es igual a bien cidad,",
+        "start": 2089.38,
+        "end": 2103.94
+    },
+    {
+        "text": " a y a es igual a qué, sí, a menos uno gracias, a y a la menos uno es igual a qué y desaparece,",
+        "start": 2103.94,
+        "end": 2122.02
+    },
+    {
+        "text": " es neutro, supongo simplificar por ahí y después a a a menos uno es igual a qué, es igual a y",
+        "start": 2122.02,
+        "end": 2134.22
+    },
+    {
+        "text": " funciona, ok, pero esto no es suficiente, tengo que hacerlo también a revés, luego de revés",
+        "start": 2134.22,
+        "end": 2143.1
+    },
+    {
+        "text": " b menos uno a menos uno por a b, mismo en truco es b a menos uno por a menos uno a el todo por b,",
+        "start": 2143.1,
+        "end": 2158.7
+    },
+    {
+        "text": " esto desaparece, cabo y más rápido y esto desaparece me queda,",
+        "start": 2158.7,
+        "end": 2166.06
+    },
+    {
+        "text": " pueden ver, eso es no hay nada difícil, entonces luego que quiere decir que ambas matrices a b y",
+        "start": 2166.06,
+        "end": 2182.06
+    },
+    {
+        "text": " b menos uno a menos uno son inversas la una de la otra, esto demuestra el punto tres, la inversa de a b,",
+        "start": 2182.06,
+        "end": 2193.82
+    },
+    {
+        "text": " la inversa de a b es b menos uno a menos uno y pueden ver acá que el orden era muy importante para",
+        "start": 2196.5,
+        "end": 2205.94
+    },
+    {
+        "text": " hacer las demostraciones, para simplificar era importante poner este b en frente de este b menos uno",
+        "start": 2205.94,
+        "end": 2214.2200000000003
+    },
+    {
+        "text": " para poder hacer la simplificación acá, si yo hubiera puesto las cosas a revés no hubiera podido hacer nada,",
+        "start": 2214.2200000000003,
+        "end": 2224.02
+    },
+    {
+        "text": " ok, pueden ver que el orden importa acá, ok y el punto cinco solo hay que verificar que lo que",
+        "start": 2224.02,
+        "end": 2237.42
+    },
+    {
+        "text": " pasa si yo multiplico la respuesta por voy a multiplicar la respuesta de a por la respuesta de a",
+        "start": 2237.42,
+        "end": 2250.42
+    },
+    {
+        "text": " a menos uno, quiero demostrar que esta matriz es la inversa de la respuesta, entonces hago el producto a",
+        "start": 2250.42,
+        "end": 2264.3
+    },
+    {
+        "text": " respuesta por respuesta de a a menos uno, qué pasa, producto de dos transpuestas que va a pasar es",
+        "start": 2264.3,
+        "end": 2273.54
+    },
+    {
+        "text": " transpuesta de el producto pero no en revés, ya vimos que la respuesta preserva los productos pero",
+        "start": 2273.54,
+        "end": 2287.02
+    },
+    {
+        "text": " intercambiando el orden, ok, qué pasa acá, esa respuesta de la identidad y cuál esa respuesta de la",
+        "start": 2287.02,
+        "end": 2299.42
+    },
+    {
+        "text": " identidad es la identidad y de mismo modo a menos uno a la t por a la t es igual a a a menos uno a la t es igual",
+        "start": 2299.42,
+        "end": 2314.7400000000002
+    },
+    {
+        "text": " a la identidad a la t esto es igual a la identidad luego la matriz a respuesta es invertible y su",
+        "start": 2314.7400000000002,
+        "end": 2323.88
+    },
+    {
+        "text": " inverso es la respuesta de la inversa, pueden ver que estas pruebas son súper fáciles y de",
+        "start": 2323.88,
+        "end": 2333.4
+    },
+    {
+        "text": " bien mismo modo pueden demostrar que i es invertible lo que es trivial porque i por i es igual a i por i es igual a i y",
+        "start": 2333.4,
+        "end": 2341.12
+    },
+    {
+        "text": " deboisme modo demuestran que si hay es invertible la mdaa también es invertible salvo cuando el ambas nulo,",
+        "start": 2341.12,
+        "end": 2347.88
+    },
+    {
+        "text": " ok ahora vamos a hacer una observación la observación del matemático peresoso la observación es",
+        "start": 2347.88,
+        "end": 2362.28
+    },
+    {
+        "text": " que para verificar que B es la inversa de A, se necesita verificar que",
+        "start": 2362.28,
+        "end": 2381.2000000000003
+    },
+    {
+        "text": " se necesita verificar dos igualdades es de izquierda A, B, Iguala, I y B, A, Iguala, I.",
+        "start": 2381.2,
+        "end": 2402.52
+    },
+    {
+        "text": " acá es el castigo, es el precio que tenemos que pagar para vivir en un mundo no con no con mutativo",
+        "start": 2403.52,
+        "end": 2412.12
+    },
+    {
+        "text": " entonces tenemos que verificar a priori dos igualdades y imagínense que tengamos una matriz dos",
+        "start": 2412.12,
+        "end": 2424.52
+    },
+    {
+        "text": " matrices A y B de 1000 por 1000, ok tenemos para cada producto nos cuesta un bichón de multiplicaciones",
+        "start": 2424.52,
+        "end": 2435.88
+    },
+    {
+        "text": " y un poquito menos de un bichón de sumas, cuesta mucho ahora no son un bichón de multiplicaciones",
+        "start": 2435.88,
+        "end": 2445.6
+    },
+    {
+        "text": " que hay que hacer pero dos bichones porque tenemos que calcular dos productos que no tienen nada que vero",
+        "start": 2445.6,
+        "end": 2450.8
+    },
+    {
+        "text": " y acá tenemos suerte esto viene de un teorema matemático muy complicado que no voy a demostrar hoy",
+        "start": 2451.32,
+        "end": 2458.0
+    },
+    {
+        "text": " que vamos a admitir directamente que es que por su puest por suerte solo es suficiente verificar una",
+        "start": 2458.0,
+        "end": 2467.1600000000003
+    },
+    {
+        "text": " solo se necesita verificar una y esto sale de un lema admitido",
+        "start": 2467.16,
+        "end": 2483.3999999999996
+    },
+    {
+        "text": " que es que para todas matrices",
+        "start": 2489.2,
+        "end": 2491.8799999999997
+    },
+    {
+        "text": " A y B de mismo tamaño son matrices cuadradas tenemos que A y B es Iguala I si solo si B a es Iguala I",
+        "start": 2497.16,
+        "end": 2517.16
+    },
+    {
+        "text": " es decir que cada vez que una se cumple la otra se cumple también pero también si esta se cumple",
+        "start": 2517.16,
+        "end": 2526.72
+    },
+    {
+        "text": " esta también se va a complicar este es el lema del matemático perresoso porque permite",
+        "start": 2527.68,
+        "end": 2536.08
+    },
+    {
+        "text": " dividir por dos la cantidad de cuentas entienden pero no lo voy a demostrar porque este tiene una",
+        "start": 2536.08,
+        "end": 2543.7599999999998
+    },
+    {
+        "text": " demostración complicada no tiene nada al traillal acá eran pruebas sencillas pero esto tiene una prueba",
+        "start": 2543.7599999999998,
+        "end": 2553.3999999999996
+    },
+    {
+        "text": " complicada pero se cumple y lo vamos a admitir porque esto nos va a simplificar las cuentas es",
+        "start": 2553.4,
+        "end": 2560.96
+    },
+    {
+        "text": " decir la próxima vez que tendré que verificar que dos matrices son inversas la una en la otra solo",
+        "start": 2560.96,
+        "end": 2567.64
+    },
+    {
+        "text": " haremos un producto y en general elegiré el producto más fácil para calcular",
+        "start": 2567.64,
+        "end": 2572.44
+    },
+    {
+        "text": " el que me conviene y deduciré que el otro funciona por ejemplo en esta prueba verifique",
+        "start": 2572.44,
+        "end": 2586.48
+    },
+    {
+        "text": " esta igualdad y esta igualdad ahora pueden sacar la segunda no se necesitaba y lo mismo",
+        "start": 2586.48,
+        "end": 2595.44
+    },
+    {
+        "text": " no en esta prueba verifique esta igualdad y esta igualdad pero no se necesitaba solo unas",
+        "start": 2595.44,
+        "end": 2602.8
+    },
+    {
+        "text": " eras suficientes esto es para decir que acá si escribieron todos en serios son tontos porque",
+        "start": 2602.8,
+        "end": 2611.4
+    },
+    {
+        "text": " había dos veces la cantidad de trabajo necesaria es era solo para el placer de hacerles escribir un",
+        "start": 2611.4,
+        "end": 2620.84
+    },
+    {
+        "text": " montón de cosas también para ver que se puede reducir la cantidad de trabajo cuelse",
+        "start": 2620.84,
+        "end": 2630.6000000000004
+    },
+    {
+        "text": " interés de este tema reducir la cantidad de trabajo ok y lo vamos al mi tier y funciona y la razón",
+        "start": 2630.6000000000004,
+        "end": 2638.44
+    },
+    {
+        "text": " muy profunda porque esto se cumple es que las matrices tienen dimensiones finitas también se",
+        "start": 2638.44,
+        "end": 2650.2000000000003
+    },
+    {
+        "text": " pueden considerar las cosas como matrices con dimensiones infinitas y esta propiedad no se",
+        "start": 2650.2,
+        "end": 2657.7999999999997
+    },
+    {
+        "text": " cumple más pero nunca vamos a ver esto por suerte vamos a quedarnos en un marco sencillo donde todas",
+        "start": 2657.7999999999997,
+        "end": 2671.2799999999997
+    },
+    {
+        "text": " las matrices son objetos finitos ok ahora ejemplo queremos resolver el sistema",
+        "start": 2671.28,
+        "end": 2682.6800000000003
+    },
+    {
+        "text": " es el siguiente es que esté va ese es dos x más y igual a x más y igual y acá tengo tres y",
+        "start": 2682.68,
+        "end": 2708.16
+    },
+    {
+        "text": " menos uno es decir queremos resolver la ecuación",
+        "start": 2708.16,
+        "end": 2722.96
+    },
+    {
+        "text": " a x igual a b con a igual a esta matriz aquí se es mi cognita es x e y b es la matriz de mis",
+        "start": 2722.96,
+        "end": 2742.7
+    },
+    {
+        "text": " términos independientes ok pero qué se show sobre la matriz a tuvimos su ejemplo anterior",
+        "start": 2742.7,
+        "end": 2757.02
+    },
+    {
+        "text": " tiene que volver al primer ejemplo de matrices invertible y esta es invertible hay",
+        "start": 2757.02,
+        "end": 2766.58
+    },
+    {
+        "text": " invertible y ya sabemos que hay es invertible ya sabemos ejemplo anterior sabimos sabimos que hay",
+        "start": 2766.58,
+        "end": 2779.74
+    },
+    {
+        "text": " es invertible y que a menos uno es era uno si me acuerdo bien que era a menos uno es era uno",
+        "start": 2779.74,
+        "end": 2795.5
+    },
+    {
+        "text": " menos uno menos uno dos era a la menos uno en este caso tienen suerte porque no se necesita usar el",
+        "start": 2795.5,
+        "end": 2811.58
+    },
+    {
+        "text": " método de ruche forbidden y la matriz invertible nos va a recitar todo el trabajo ok tenemos que",
+        "start": 2811.58,
+        "end": 2821.86
+    },
+    {
+        "text": " si a x igual a b qué implica esto esto me implica que a menos x a menos por a x es igual a a menos uno",
+        "start": 2821.86,
+        "end": 2848.26
+    },
+    {
+        "text": " b claro tengo dos columnas igual es yo puedo saber producto con a menos uno por la izquierda está",
+        "start": 2848.26,
+        "end": 2859.1400000000003
+    },
+    {
+        "text": " bien hecho ok pero esto esto mismo que a menos uno por a desaparece x es igual a a menos uno",
+        "start": 2859.1400000000003,
+        "end": 2874.0200000000004
+    },
+    {
+        "text": " b en general pero si x es igual a a 1 a menos uno b de mismo modo esto implica que a x es igual a b",
+        "start": 2874.02,
+        "end": 2888.7
+    },
+    {
+        "text": " usando el mismo razonamiento multiplicando todo por a por la izquierda en efecto si x es igual a a",
+        "start": 2889.9,
+        "end": 2897.02
+    },
+    {
+        "text": " menos uno b tengo que a x es igual a a por a menos uno b esto se simplifica esto es igual a b",
+        "start": 2897.02,
+        "end": 2905.78
+    },
+    {
+        "text": " entienden entonces tengo el derecho multiplicar por la izquierda o bien por la derecha mis matrices por la",
+        "start": 2908.2599999999998,
+        "end": 2920.5
+    },
+    {
+        "text": " inversa que obtuvejo yo es que de hecho esto es una equivalencia a x es igual a b si solo si x es igual a",
+        "start": 2920.5,
+        "end": 2931.94
+    },
+    {
+        "text": " a menos uno b qué pasa tengo la solución es un sistema compatible determinado ok",
+        "start": 2931.94,
+        "end": 2941.78
+    },
+    {
+        "text": " entonces la moral deja es que cada vez que tenemos lo vamos a decir después pero acá tengo que terminar",
+        "start": 2941.78,
+        "end": 2956.02
+    },
+    {
+        "text": " entonces el conjunto solución el sistema s solo tiene una solución que es a menos uno por b y esto",
+        "start": 2956.02,
+        "end": 2967.78
+    },
+    {
+        "text": " es una columna porque es una matriz por una columna esto me da una columna",
+        "start": 2968.7400000000002,
+        "end": 2974.1800000000003
+    },
+    {
+        "text": " ok entonces cada vez que tengo una matriz de coeficientes que es invertible para",
+        "start": 2977.78,
+        "end": 2986.7000000000003
+    },
+    {
+        "text": " obtener el sistema será compatible determinado ok y tendré como solución entonces es una",
+        "start": 2986.7,
+        "end": 2995.62
+    },
+    {
+        "text": " proposición es que todos sistemas lineal cuya matriz de coeficientes es compatible es invertible",
+        "start": 2995.62,
+        "end": 3007.8599999999997
+    },
+    {
+        "text": " entonces todo sistema lineal cuadrado porque para hacerse la pregunta de si las matriz de",
+        "start": 3007.86,
+        "end": 3019.38
+    },
+    {
+        "text": " coeficientes es invertible se necesita que tengamos exactamente la misma cantidad de incógnitas y",
+        "start": 3019.38,
+        "end": 3025.34
+    },
+    {
+        "text": " de ecuaciones entonces ojo todo sistema todo sistema cuadrado es decir un sistema que tiene la",
+        "start": 3025.34,
+        "end": 3044.9
+    },
+    {
+        "text": " misma cantidad de ecuaciones y de incógnitas que voy a escribir esta forma",
+        "start": 3044.9,
+        "end": 3050.94
+    },
+    {
+        "text": " cuya matriz de coeficientes",
+        "start": 3053.98,
+        "end": 3056.54
+    },
+    {
+        "text": " es es invertible es el sistema es compatible determinado",
+        "start": 3056.54,
+        "end": 3072.54
+    },
+    {
+        "text": " y tenemos que su conjunto solución es solo tiene una solución que es a menos uno por b y por fin",
+        "start": 3072.54,
+        "end": 3092.1
+    },
+    {
+        "text": " tenemos la resolución de ecuaciones de primer lado es el b sobre a ok esto que yo quería",
+        "start": 3092.1,
+        "end": 3100.42
+    },
+    {
+        "text": " obtener dar un sentido a esto es intuitivamente es b sobre a ok entonces parece super bien este esta",
+        "start": 3100.42,
+        "end": 3115.7000000000003
+    },
+    {
+        "text": " proposición de hecho no está tan bueno y voy a explicar por qué ahora por qué esta proposición es",
+        "start": 3115.7000000000003,
+        "end": 3127.5
+    },
+    {
+        "text": " buena es buena porque si tengo un sistema cuadrado y que por otra razón ya sé que mi matriz de",
+        "start": 3127.5,
+        "end": 3135.1
+    },
+    {
+        "text": " coeficientes es invertible directamente tengo la solución sin hacer cuentas sí tengo que hacer",
+        "start": 3135.1,
+        "end": 3142.22
+    },
+    {
+        "text": " cuentas tengo que hacer este producto pero suponiendo que ya tengo la diversa que alguien me",
+        "start": 3142.22,
+        "end": 3148.38
+    },
+    {
+        "text": " llora en diversa porque es algo complicado para calcular ok ahora crítica primero la cosa es que",
+        "start": 3148.38,
+        "end": 3155.78
+    },
+    {
+        "text": " a otra inventaja es que se puede observar que esta propiedad no depende de la columna de terror",
+        "start": 3155.78,
+        "end": 3164.34
+    },
+    {
+        "text": " y los dependientes independientes es decir cómo nos dependiente si tengo un sistema de la forma",
+        "start": 3164.34,
+        "end": 3171.38
+    },
+    {
+        "text": " hay que si igual a v donde es es invertible todo lo sistema de la forma hay que si igual a b",
+        "start": 3171.38,
+        "end": 3178.1400000000003
+    },
+    {
+        "text": " prima b segunda también será compatibilidad terminado no le penderá de la matriz de la columna",
+        "start": 3178.1400000000003,
+        "end": 3184.94
+    },
+    {
+        "text": " ok entonces la la observación que esto no depende de este propiedad no depende de b es la",
+        "start": 3184.94,
+        "end": 3197.94
+    },
+    {
+        "text": " principal ventaja pero de hecho la crítica es que hay muchos casos donde la matriz de coeficientes no",
+        "start": 3197.94,
+        "end": 3208.02
+    },
+    {
+        "text": " es invertible pero sin embargo tenemos una solución es decir que cuando la matriz de coeficientes no",
+        "start": 3208.02,
+        "end": 3216.02
+    },
+    {
+        "text": " es invertible no se puede concluir nada depende de b ok entonces observación",
+        "start": 3216.02,
+        "end": 3223.42
+    },
+    {
+        "text": " cuando a no es invertible no se puede concluir nada",
+        "start": 3223.42,
+        "end": 3235.7400000000002
+    },
+    {
+        "text": " entonces que vamos a hacer cuando a no es invertible vamos a escaravizar de modo usual ok",
+        "start": 3243.94,
+        "end": 3251.2200000000003
+    },
+    {
+        "text": " y de mismo modo cuando el sistema no es cuadrado misma cosa no se puede lucir nada es decir esta",
+        "start": 3253.94,
+        "end": 3261.78
+    },
+    {
+        "text": " proposición representa una pequeña fracción de los casos posibles pero es la fracción que para",
+        "start": 3261.78,
+        "end": 3269.02
+    },
+    {
+        "text": " mi te reduce la resolución del sistema b sobre a ok es decir el mismo método que ya",
+        "start": 3269.02,
+        "end": 3276.7000000000003
+    },
+    {
+        "text": " usamos para los números pero y misma cosa cuando a es cuadrada misma cosa misma observación cuando",
+        "start": 3276.7,
+        "end": 3288.46
+    },
+    {
+        "text": " no es cuadrada",
+        "start": 3290.46,
+        "end": 3291.5
+    },
+    {
+        "text": " es decir cuando tenemos sistemas no cuadrados no se puede usar el truco de la inversa",
+        "start": 3296.02,
+        "end": 3301.4199999999996
+    },
+    {
+        "text": " ok entonces es lo que tenemos pero sabemos hicimos la realidad el vinculo entre el método de",
+        "start": 3301.42,
+        "end": 3314.3
+    },
+    {
+        "text": " gusefrobenius en el caso particular donde esto existe y es el método del cociente y otra",
+        "start": 3314.3,
+        "end": 3322.78
+    },
+    {
+        "text": " criticado es que en general calcular si no conocen a la menos uno calcular a la menos uno cuesta",
+        "start": 3322.78,
+        "end": 3331.1400000000003
+    },
+    {
+        "text": " mucho más que hacer gusefrobenius esto tiene una ventaja si sólo sólo si ya conocen a la menos uno",
+        "start": 3331.1400000000003,
+        "end": 3339.26
+    },
+    {
+        "text": " por otra razón pero en general es una mala idea empezar a hacer esto ok ahora hay que concluir",
+        "start": 3339.26,
+        "end": 3349.5400000000004
+    },
+    {
+        "text": " ver cómo se puede invertir una matriz ok ahora queremos ver cómo se puede invertir una",
+        "start": 3350.2599999999998,
+        "end": 3359.46
+    },
+    {
+        "text": " matriz algoritmo de inversión de matriz",
+        "start": 3359.46,
+        "end": 3362.22
+    },
+    {
+        "text": " ya dije que este curso sólo hay un algoritmo que es gusefrobenius y ahora les voy a presentar",
+        "start": 3370.06,
+        "end": 3377.86
+    },
+    {
+        "text": " el algoritmo para invertir matrices y vamos a ver que no es gusefrobenius que vieimos pero es",
+        "start": 3378.58,
+        "end": 3384.5
+    },
+    {
+        "text": " super gusefrobenius es decir es una variante entonces gusefrobenius vuelve hoy y no está feliz",
+        "start": 3384.5,
+        "end": 3394.5
+    },
+    {
+        "text": " vamos a usarlo de modo mucho más potente ok ejemplo consideremos",
+        "start": 3394.5,
+        "end": 3404.1800000000003
+    },
+    {
+        "text": " sea a la siguiente matriz acá me pongo dos uno cuatro tres quiero ver si es",
+        "start": 3407.86,
+        "end": 3422.26
+    },
+    {
+        "text": " es inversible yo conozco la inversa nadie la calculo para mí tengo que determinarla entonces",
+        "start": 3422.26,
+        "end": 3430.98
+    },
+    {
+        "text": " se trata queremos determinar",
+        "start": 3431.54,
+        "end": 3433.7
+    },
+    {
+        "text": " si existe la matriz",
+        "start": 3441.94,
+        "end": 3446.14
+    },
+    {
+        "text": " y ahora es una matriz cuadrada x es mi matriz incognita que se escribe x1 1 1 x1 2 x2 1 x2",
+        "start": 3449.34,
+        "end": 3460.9
+    },
+    {
+        "text": " 2 tal que a por x es igual a x ok es lo que yo quiero x es mi matriz en",
+        "start": 3460.9,
+        "end": 3476.6600000000003
+    },
+    {
+        "text": " vera s ahora es mi incognita ok yo quiero asar la matriz en vera s y mi matriz es mi matriz",
+        "start": 3476.6600000000003,
+        "end": 3483.82
+    },
+    {
+        "text": " incognita yo quiero resolver el sistema a x igual a x ahora es una ecuación no entre los",
+        "start": 3483.82,
+        "end": 3490.98
+    },
+    {
+        "text": " columnas es una ecuación entre dos matrices cuadradas ok ahora hay que ver lo que pasa",
+        "start": 3490.98,
+        "end": 3500.5800000000004
+    },
+    {
+        "text": " ok a x es igual a que es 2 x1 1 más x2 1 acá son 4 por la primera columna x",
+        "start": 3500.58,
+        "end": 3530.2999999999997
+    },
+    {
+        "text": " 1 1 más 3 x2 1 acá son 2 x1 2 más x2 2 y acá son 4 x1 1 más 3 x2 no es 1 1 es 1 2 y acá es",
+        "start": 3530.3,
+        "end": 3557.54
+    },
+    {
+        "text": " x2 2 y la pregunta acá es una matriz 2 2 y se las cuentas y quiero resolver a priori tengo",
+        "start": 3557.54,
+        "end": 3572.02
+    },
+    {
+        "text": " 4 ecuaciones con 4 incognitas ok quiero resolver esto tiene que ser igual a 1 esto tiene que ser",
+        "start": 3572.02,
+        "end": 3582.86
+    },
+    {
+        "text": " igual a 0 esto tiene que ser igual a 0 y esto tiene que ser igual a 1 para que sea igual a la",
+        "start": 3582.86,
+        "end": 3589.1400000000003
+    },
+    {
+        "text": " identidad ok pero la observación es que yo puedo cortar el sistema en 2 trozos no es un sistema",
+        "start": 3589.1400000000003,
+        "end": 3600.38
+    },
+    {
+        "text": " 4 por 4 de hecho son 2 sistemas 2 2 es decir hay 2 sistemas independientes hay ese sistema y",
+        "start": 3600.38,
+        "end": 3608.1400000000003
+    },
+    {
+        "text": " este sistema ok entonces de hecho tenemos esto es equivalente a 2 sistemas entonces la ecuación",
+        "start": 3608.14,
+        "end": 3618.14
+    },
+    {
+        "text": " a x igual a y entonces se puede componer se reduce a 2 sistemas el sistema en la primera columna y el",
+        "start": 3623.14,
+        "end": 3637.18
+    },
+    {
+        "text": " sistema en la primera columna dice que 2 x1 1 más x2 1 si no me me equivoco igual a 1",
+        "start": 3637.18,
+        "end": 3656.2599999999998
+    },
+    {
+        "text": " segundo sistema acá es segunda ecuación es 4 x1 1 más 3 x2 1 igual a 0 que corresponde a la",
+        "start": 3656.26,
+        "end": 3677.82
+    },
+    {
+        "text": " matriz ampliada 2 1 4 3 1 0 y esto viene de que la primera columna del producto es igual a a por",
+        "start": 3677.82,
+        "end": 3694.3
+    },
+    {
+        "text": " la primera columna la x ok entonces esto solo dice para resolver este sistema esto es",
+        "start": 3694.3,
+        "end": 3707.1000000000004
+    },
+    {
+        "text": " esto es nada otro que la matriz apor la primera columna la x y su matriz ampliada está siguiente",
+        "start": 3708.78,
+        "end": 3721.9
+    },
+    {
+        "text": " y esto me va a dar la primera columna de x y después quiero hacer lo mismo con la segunda columna",
+        "start": 3724.2200000000003,
+        "end": 3730.86
+    },
+    {
+        "text": " de x lo que observo es que esta ecuación su segunda columna la segunda columna del producto es",
+        "start": 3730.86,
+        "end": 3740.86
+    },
+    {
+        "text": " apor la segunda columna de x y me da la segunda columna de x lo que me da el segundo sistema 2 x",
+        "start": 3740.86,
+        "end": 3753.02
+    },
+    {
+        "text": " ahora es 2 1 2 disculpa más x2 2 igual a 0 y 4 x1 2 más 3 x2 2 igual a 1 es decir",
+        "start": 3753.02,
+        "end": 3776.46
+    },
+    {
+        "text": " 2 1 4 3 y acá segunda columna de la identidad entienden entonces es súper fácil para resolver",
+        "start": 3776.46,
+        "end": 3788.58
+    },
+    {
+        "text": " cálcula reinversa de y esto es de hecho esto lo que escribí acá es a x1 igual a 1 0 y esto es a",
+        "start": 3788.58,
+        "end": 3800.42
+    },
+    {
+        "text": " segunda columna de x que hace 1 2 y x 2 2 igual a segunda columna de la identidad entonces tengo 2",
+        "start": 3800.42,
+        "end": 3812.46
+    },
+    {
+        "text": " sistemas que tienen la misma matriz de coeficientes y acá pongo la primera columna de la identidad",
+        "start": 3812.46,
+        "end": 3820.5
+    },
+    {
+        "text": " resolviendo ese sistema voy a obtener la primera columna de la inversa y resolviendo ese sistema",
+        "start": 3820.5,
+        "end": 3829.06
+    },
+    {
+        "text": " acá voy a obtener la segunda columna de la inversa entienden y es su mecanismo general vamos a",
+        "start": 3829.06,
+        "end": 3838.14
+    },
+    {
+        "text": " resolver ambos sistemas en pará de lo ok primera sistema partimos de esto",
+        "start": 3838.14,
+        "end": 3852.46
+    },
+    {
+        "text": " segundo sistema 2 1 o otro 3 pueden ver que ambos sistemas son muy similar",
+        "start": 3857.14,
+        "end": 3863.7799999999997
+    },
+    {
+        "text": " la única cosa es que acá pongo la primera columna de la identidad y acá pongo la segunda y cuando tendré una",
+        "start": 3864.38,
+        "end": 3871.1400000000003
+    },
+    {
+        "text": " matriz n por n conciere tendré que concier las n columnas de la identidad ok que pasa que voy a",
+        "start": 3871.1400000000003,
+        "end": 3880.3
+    },
+    {
+        "text": " hacer fila 2 menos dos veces la fila 1 f2 es f2 menos 2 o ese fila 1 ok 4 menos 4 0 3",
+        "start": 3880.3,
+        "end": 3899.98
+    },
+    {
+        "text": " menos 2 1 0 menos 2 menos 2 no estoy haciendo escaleraización ok acá que voy a ser como operación",
+        "start": 3899.98,
+        "end": 3916.9
+    },
+    {
+        "text": " exactamente la misma operación",
+        "start": 3918.7400000000002,
+        "end": 3920.54
+    },
+    {
+        "text": " ok 4 menos 2 por 2 es decir 4 menos 4 0 3 menos 2 1 a esto cambia 1 por 2 menos 2 por 0 1",
+        "start": 3930.1,
+        "end": 3942.86
+    },
+    {
+        "text": " ok la idea es que como la parte principal de esta matriz y esta matriz son identicas el proceso de",
+        "start": 3945.7400000000002,
+        "end": 3955.14
+    },
+    {
+        "text": " escaleraización es idéntico en ambos sistemas lo único que cambia es la última columna la columna",
+        "start": 3955.14,
+        "end": 3963.62
+    },
+    {
+        "text": " de los términos independientes que corresponden a las columnas de la identidad ok ahora que voy a",
+        "start": 3963.62,
+        "end": 3972.9
+    },
+    {
+        "text": " hacer show yo voy a restar la primera fila para sacar ese coeficiente yo quiere reducir todo esto",
+        "start": 3972.9,
+        "end": 3980.5
+    },
+    {
+        "text": " ok voy a sacar a la primera fila la segunda fila esto menos 2 y voy a ser fila 1 igual a fila 1",
+        "start": 3981.46,
+        "end": 3994.34
+    },
+    {
+        "text": " menos f2 ok 2 menos 0 0 1 menos 1 1 0 no 2 menos 2 disculpa 1 menos 1 esto es 0 1 menos",
+        "start": 3994.34,
+        "end": 4009.7000000000003
+    },
+    {
+        "text": " menos 2 son 3 ok y acá que voy a hacer exactamente la misma operación es decir voy a fijar esta fila",
+        "start": 4009.7000000000003,
+        "end": 4020.7400000000002
+    },
+    {
+        "text": " y voy a hacer ok f1 es igual a f1 menos f2 ok 2 menos 0 2 1 menos 1 0 0 menos 1 menos 1",
+        "start": 4020.74,
+        "end": 4038.8599999999997
+    },
+    {
+        "text": " pueden ver que ambas resoluciones son casi de son identicas sólo cambia la columna última y",
+        "start": 4040.54,
+        "end": 4047.7799999999997
+    },
+    {
+        "text": " después para obtener algo reducido voy a dividir la primera fila por 2 y que obtengo show 1 0 3",
+        "start": 4047.78,
+        "end": 4058.94
+    },
+    {
+        "text": " medio 0 1 menos 2 y acá obtengo 1 0 menos 1 medio y 0 1 1 ahora sistema compatible determinado",
+        "start": 4058.94,
+        "end": 4074.26
+    },
+    {
+        "text": " yo obtengo la primera columna de la inversa",
+        "start": 4074.26,
+        "end": 4077.26
+    },
+    {
+        "text": " acá es x1 2 1 es igual a este",
+        "start": 4084.26,
+        "end": 4090.6600000000003
+    },
+    {
+        "text": " 1 y aquí lo obtengo la segunda columna de la inversa x1 2 x2 2 igual a menos 1 medio 1 luego",
+        "start": 4090.66,
+        "end": 4107.0599999999995
+    },
+    {
+        "text": " tengo la inversa entienden para obtener todas las columnas de inversa en lugar de",
+        "start": 4107.0599999999995,
+        "end": 4116.94
+    },
+    {
+        "text": " la inversa a che cada una de las columnas de la inversa ok y para obtener una columna de la inversa",
+        "start": 4116.94,
+        "end": 4125.5
+    },
+    {
+        "text": " observe que acá si yo multiplico a por la j esima columna de la inversa voy a obtener la j esima",
+        "start": 4125.5,
+        "end": 4135.5
+    },
+    {
+        "text": " de la identidad esto me da un sistema lineal y mis dos sistemas señales y el general habrá n",
+        "start": 4135.5,
+        "end": 4143.0599999999995
+    },
+    {
+        "text": " sistemas lineales tienen la misma parte principal entonces se pueden escarerizar en",
+        "start": 4143.06,
+        "end": 4150.740000000001
+    },
+    {
+        "text": " para el héroe no nunca va a pasar este buena noticia de lía es decir acá de hecho acá",
+        "start": 4150.740000000001,
+        "end": 4161.780000000001
+    },
+    {
+        "text": " yo puedo concluir que conclusión x que también se llama la inversa es la matriz cuya columna son",
+        "start": 4161.78,
+        "end": 4174.94
+    },
+    {
+        "text": " tres medio menos dos y menos disculpa ahora tiene dos columnas menos medio 1 ok",
+        "start": 4174.94,
+        "end": 4190.54
+    },
+    {
+        "text": " entienden entonces obtuve la inversa y la iria es muy sencisha para obtener la inversa tengo que",
+        "start": 4190.54,
+        "end": 4205.1
+    },
+    {
+        "text": " achar una matriz cuadrada x tal que hay que se sigua ahí como esto es una ecuación complicada",
+        "start": 4205.1,
+        "end": 4210.9
+    },
+    {
+        "text": " la voy a reemplazar un like por una ecuación distinta un sistema distinto por cada columna es decir",
+        "start": 4210.9,
+        "end": 4217.66
+    },
+    {
+        "text": " digo a por la j primera columna de x es igual a primera columna de y primer sistema segundo",
+        "start": 4217.66,
+        "end": 4225.22
+    },
+    {
+        "text": " sistema es a por la segunda columna de x es igual a segunda columna de y etc etc etc etc y voy a",
+        "start": 4225.22,
+        "end": 4233.18
+    },
+    {
+        "text": " tener en el sistema lineales que comparten todos la misma matriz principal ok entonces hecho",
+        "start": 4233.18,
+        "end": 4242.38
+    },
+    {
+        "text": " acá cuando dije que había que resolver dos sistemas era una ficción porque era casi",
+        "start": 4243.1,
+        "end": 4250.74
+    },
+    {
+        "text": " identicos entonces el truco es hacer todo en una única operación ok ahora presentación del",
+        "start": 4250.74,
+        "end": 4256.86
+    },
+    {
+        "text": " calculo es claro que de hecho se pueden resolver ambos sistemas simultaneamente y ahora la",
+        "start": 4256.86,
+        "end": 4270.18
+    },
+    {
+        "text": " iria es muy sencisha se podían resolver ambos sistemas simultaneamente y como se hace en",
+        "start": 4270.18,
+        "end": 4295.06
+    },
+    {
+        "text": " lugar de hacer n sistemas cada uno con su columna de los términos independientes vamos a hacer un",
+        "start": 4295.06,
+        "end": 4302.46
+    },
+    {
+        "text": " único sistema con n columnas determinados independientes ok es decir voy a presentar el",
+        "start": 4302.46,
+        "end": 4310.620000000001
+    },
+    {
+        "text": " sistema 2 1 4 3 y acá pongo dos columnas determinados independientes que son las dos columnas de la",
+        "start": 4310.620000000001,
+        "end": 4322.3
+    },
+    {
+        "text": " identidad y que quiere decir esto es que estoy resolviendo de modo sin multaneo ese sistema con",
+        "start": 4322.3,
+        "end": 4333.18
+    },
+    {
+        "text": " esta columna determinado independiente y este sistema con la otra columna determinado",
+        "start": 4333.18,
+        "end": 4338.14
+    },
+    {
+        "text": " independiente y esto ahora es muy super sencillo porque acá aparece la matriz a y aparece la matriz",
+        "start": 4338.14,
+        "end": 4345.9400000000005
+    },
+    {
+        "text": " identidad y que voy a hacer rusefrobenius como siempre ok entonces son las mismas operaciones",
+        "start": 4345.94,
+        "end": 4355.5
+    },
+    {
+        "text": " que ya hice no hay nada que cambia ok 2 1 1 0 acá hago F2 igual a la F2 menos 2 veces la",
+        "start": 4355.5,
+        "end": 4366.58
+    },
+    {
+        "text": " fila 1 ok 4 menos 4 0 3 menos 2 1 0 menos 2 menos 1 1 menos 2 0 menos 2 tienes razón son",
+        "start": 4366.58,
+        "end": 4387.14
+    },
+    {
+        "text": " menos dos normalmente tienen que ser identicos a lo que escribí acá ok después el resto a la",
+        "start": 4387.14,
+        "end": 4395.1
+    },
+    {
+        "text": " primera fila resto a la primera fila la segunda fila obtengo 0 1 menos 2 1 y hago F1 es F1",
+        "start": 4395.1,
+        "end": 4410.46
+    },
+    {
+        "text": " menos la segunda fila ok 2 menos 0 2 1 menos 1 0 1 menos 2 3 0 menos 1 menos 1 y después",
+        "start": 4410.46,
+        "end": 4424.94
+    },
+    {
+        "text": " divido por 2 entonces se primera fila 1 0 3 medios menos 1 medio y que pasa acá tengo la",
+        "start": 4424.94,
+        "end": 4444.4
+    },
+    {
+        "text": " hibernación ya está esta presentación el calculo de la hibernación es el super método de rusefrobenius",
+        "start": 4444.4,
+        "end": 4455.4
+    },
+    {
+        "text": " donde en lugar de poner una columna determinado independientes pongo una matriz determinado independientes",
+        "start": 4455.4,
+        "end": 4463.4
+    },
+    {
+        "text": " que es la identidad y acá parci de A con la matriz identidad aplique rusefrobenius y obtuve la",
+        "start": 4463.4,
+        "end": 4475.4
+    },
+    {
+        "text": " identidad por la izquierda y necesariamente lo que me queda por la derecha esta inversa cuando",
+        "start": 4475.4,
+        "end": 4484.32
+    },
+    {
+        "text": " es invertible entonces será el método general la próxima vez vamos a ver el algoritmo pero",
+        "start": 4484.32,
+        "end": 4492.96
+    },
+    {
+        "text": " ya lo tiene la idea es muy sencilla es decir lo que vamos a hacer es formar la matriz con la",
+        "start": 4492.96,
+        "end": 4502.44
+    },
+    {
+        "text": " identidad aplica rusefrobenius hasta que obtengamos y por la izquierda esto va a funcionar solo si",
+        "start": 4502.44,
+        "end": 4512.08
+    },
+    {
+        "text": " tenemos n escalones y lo que vamos a obtener necesariamente por la derecha será inversa y si",
+        "start": 4512.08,
+        "end": 4521.04
+    },
+    {
+        "text": " acá tenemos menos que n escalones la matriz no será inversible ok vamos a ver esto",
+        "start": 4521.04,
+        "end": 4530.04
+    },
+    {
+        "text": " más precisión la próxima vez gracias",
+        "start": 4530.04,
+        "end": 4533.04
+    }
+]

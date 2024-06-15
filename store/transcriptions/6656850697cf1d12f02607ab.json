@@ -1,0 +1,1787 @@
+[
+    {
+        "text": " Ok, buenas noches. Hoy vamos a seguir con los sistemas lineales de ecuaciones y vamos",
+        "start": 0.0,
+        "end": 24.060000000000002
+    },
+    {
+        "text": " hablar del teorema de ruche frobenius. Antes de esto recordar cuál es el",
+        "start": 24.06,
+        "end": 29.84
+    },
+    {
+        "text": " método de escarrización de ruche frobenius.",
+        "start": 29.84,
+        "end": 35.56
+    },
+    {
+        "text": " Ok, vamos a partir del... vimos que hay tres casos cuando tenemos un sistema",
+        "start": 51.36,
+        "end": 58.760000000000005
+    },
+    {
+        "text": " lineal. Hay el caso incompatible y el caso compatible",
+        "start": 58.76,
+        "end": 66.16
+    },
+    {
+        "text": " indeterminado y cuál era el más difícil para tratar el",
+        "start": 66.16,
+        "end": 71.28
+    },
+    {
+        "text": " compatible indeterminado. Entonces vamos a partir del ejemplo 10.",
+        "start": 71.28,
+        "end": 76.75999999999999
+    },
+    {
+        "text": " Ok, entonces en el ejemplo 10 que ya vimos solo para recordar.",
+        "start": 76.75999999999999,
+        "end": 83.44
+    },
+    {
+        "text": " No voy a escribir el sistema que ya vimos se vea es pasada,",
+        "start": 83.44,
+        "end": 86.64
+    },
+    {
+        "text": " solo voy a escribir la matriz ampliada.",
+        "start": 86.64,
+        "end": 91.2
+    },
+    {
+        "text": " Entonces la matriz ampliada era...",
+        "start": 91.2,
+        "end": 95.4
+    },
+    {
+        "text": " 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 2, 0, 4, 1, 0, 5, 1, 9,",
+        "start": 95.4,
+        "end": 123.72
+    },
+    {
+        "text": " 1, 1, 3, 3, 3 y columna de los términos independientes, 1, 0, 1, 3,",
+        "start": 123.72,
+        "end": 136.68
+    },
+    {
+        "text": " menos 1, tengo que verificar, pero pienso que es esta, ¿no?",
+        "start": 136.68,
+        "end": 142.96
+    },
+    {
+        "text": " Matriz la vez pasada y después lo que hicimos era escarrizar y reducir",
+        "start": 142.96,
+        "end": 151.52
+    },
+    {
+        "text": " el sistema la matriz. Entonces obtuvimos por escarrización la",
+        "start": 151.52,
+        "end": 157.60000000000002
+    },
+    {
+        "text": " siguiente matriz. Ahora voy a dar el resultado directamente, que era 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.",
+        "start": 157.60000000000002,
+        "end": 181.36
+    },
+    {
+        "text": " y 3, menos 1, 2, 0, 0, 0, 0, 1, 0 y al final tuvimos menos 1, 1, 1, 1, 0.",
+        "start": 181.36,
+        "end": 203.36
+    },
+    {
+        "text": " Entonces, no voy a hacer las etapas intermigías, ya las hicimos la vez pasada y ahora hay que entender cómo se concluye a partir de tal forma, que es la forma escalerizada, reenucida.",
+        "start": 204.36,
+        "end": 218.36
+    },
+    {
+        "text": " Acá podemos ver que tenemos 1, 2, 3, 4 escalones, ok, tenemos 4 escalones, hay la misma cantidad de escalones en la parte de los coeficientes que en la parte ampliada,",
+        "start": 219.36,
+        "end": 235.36
+    },
+    {
+        "text": " es decir, la parte ampliada no introduce ningún nuevo escalón, lo que significa que mi sistema es compatible, pero por otro lado no tenemos una diagonal de 1,",
+        "start": 235.36,
+        "end": 249.36
+    },
+    {
+        "text": " porque acá tenemos algo un poquito raro, y esto viene de que tenemos algunos escalones que tienen ancho mayor que 1, ok, esto muestra que el sistema no es determinado,",
+        "start": 249.36,
+        "end": 263.36
+    },
+    {
+        "text": " es decir, es un sistema compatible indeterminado, ok, ahora hay que ver cómo se concluye a partir de esta forma, entonces solo hay que escribir la sistema,",
+        "start": 263.36,
+        "end": 279.36
+    },
+    {
+        "text": " acá yo insisto en que el sistema es en forma no solo escalerizada, pero escalerizada reducida, es decir, acá tenemos 1, cada escalón empieza con 1,",
+        "start": 279.36,
+        "end": 293.36
+    },
+    {
+        "text": " y a cada inicio de escalón acá el resto de la columna continúa cero, ok, esto muestra que es un sistema escalerizado, una matriz escalerizada reducida, ok,",
+        "start": 293.36,
+        "end": 313.36
+    },
+    {
+        "text": " ahora hay que entender lo que pasa, la idea es que cuando se escribe el sistema se obtiene que x1, más 2x2, acá más 3 medios de x5 es igual a menos 1,",
+        "start": 313.36,
+        "end": 330.36
+    },
+    {
+        "text": " primera ecuación, segunda ecuación es x3 menos 1 medio de x5 es igual a 1, tercera ecuación es x4, más 2x5 es igual a menos 1, y por fin x5 es igual a 1, ok,",
+        "start": 330.36,
+        "end": 357.36
+    },
+    {
+        "text": " acá lo que nos gustaría es hacer sustitución por atrás pero no se necesita, porque la cosa interesante es que se puede poner todo por el lado derecho de la secuación, es salvo la primera columna, ok,",
+        "start": 357.36,
+        "end": 376.36
+    },
+    {
+        "text": " yo tengo ese sistema, x1 es igual a menos 2x2 menos 3 medio de x5, menos 1, acá x3 es igual a 1 medio de x5, más 1, x4 es igual a menos 2x5,",
+        "start": 376.36,
+        "end": 401.36
+    },
+    {
+        "text": " menos 1 y al final x5 es igual a 1, me equivoqué? x6 es igual a x5, x6 es a disculpa, gracias por supuesto, x6, x6 y esto mucho mejor,",
+        "start": 401.36,
+        "end": 420.36
+    },
+    {
+        "text": " porque acá pueden ver que la sincognitas que yo tengo por la izquierda son distintas de la sincognitas que yo tengo por la derecha,",
+        "start": 420.36,
+        "end": 432.36
+    },
+    {
+        "text": " por la izquierda tengo x1 x3 x4 x6 y por la derecha tengo solo x2 y x5, ok, de qué sale esta propiedad?",
+        "start": 432.36,
+        "end": 446.36
+    },
+    {
+        "text": " sale de la propiedad que tenemos un sistema en forma reducida, es decir, acá es la incognita x1 x2 x3 x1 x3 x4 x6 y acá no dependen de las otras,",
+        "start": 446.36,
+        "end": 471.36
+    },
+    {
+        "text": " de solo dependen de la parte x2 y x5, las otras columnas son nullas y esa razón porque hicimos esto para obtener tal forma,",
+        "start": 471.36,
+        "end": 484.36
+    },
+    {
+        "text": " entonces es una forma muy agradable porque nos dice que del show no tenemos ninguna reflexión ni sobre x2 ni sobre x5 pueden ser cual es tierra, ok,",
+        "start": 484.36,
+        "end": 497.36
+    },
+    {
+        "text": " entonces el conjunto solución se escribe, acá la idea es que como no me gustan las letras x2 y x5 voy a usar otras letras,",
+        "start": 497.36,
+        "end": 515.36
+    },
+    {
+        "text": " voy a llamarles alpha y beta, es decir, alpha es x2 beta es x5, solo es un cambio de nombre nada más,",
+        "start": 515.36,
+        "end": 527.36
+    },
+    {
+        "text": " solo para poner las cosas en forma agradable, ok, entonces cuál es una solución,",
+        "start": 527.36,
+        "end": 533.36
+    },
+    {
+        "text": " primera componente es x1 es de la forma menos 2 alpha, menos 3 milió de beta, menos 1.",
+        "start": 533.36,
+        "end": 542.36
+    },
+    {
+        "text": " segunda componente es de la forma 1 milió de beta más 1, ¿si?",
+        "start": 545.36,
+        "end": 558.36
+    },
+    {
+        "text": " Esa es la tercera componente, ah, me equivo, ok, por supuesto, gracias, me olvidé dar la segunda componente que es x2 y que vale x2,",
+        "start": 558.36,
+        "end": 567.36
+    },
+    {
+        "text": " es alpha, acá se llama alpha, ok, es cualquiera, estoy acuerdos, lo voy a escribir después, ok, gracias y acá tengo un medio de beta más 1,",
+        "start": 567.36,
+        "end": 583.36
+    },
+    {
+        "text": " ok, cuarta cosa es menos 2 beta, menos 1, quinta cosa que nos escribí acá es beta, ahora no me equivoqué y la última cosa es que 6 igual a 1,",
+        "start": 583.36,
+        "end": 600.36
+    },
+    {
+        "text": " tengo que contar que tengo la buena cantidad, 1, 2, 3, 4, 5, 6 perfecto, donde alpha y beta recorren,",
+        "start": 600.36,
+        "end": 611.36
+    },
+    {
+        "text": " R es decir, son números, cuál esquiera y esto me da el conjunto solución y esto se ve fácilmente a partir de esta forma porque cuando tenemos un sistema,",
+        "start": 611.36,
+        "end": 624.36
+    },
+    {
+        "text": " una matriz ampliada en forma escadalizada, reducida y que se pone el sistema en esta forma, es decir, separar el comienzo de escalón del resto,",
+        "start": 624.36,
+        "end": 638.36
+    },
+    {
+        "text": " se observa que las 5 gritas acá no tienen nada que ver con las 5 gritas acá, el proceso de escaladización y reducción me separa el conjunto de 5 gritas en 2 conjuntos,",
+        "start": 638.36,
+        "end": 650.36
+    },
+    {
+        "text": " las 5 gritas que no tienen ninguna reflexión, que son los parámetros, acá son x2 y x5 y las 5 gritas que se definen a partir de los parámetros, ok,",
+        "start": 650.36,
+        "end": 663.36
+    },
+    {
+        "text": " y acá tenemos el conjunto solución y vimos que es un conjunto que tiene 2 grados de libertad, es un conjunto de dimensión 2,",
+        "start": 663.36,
+        "end": 671.36
+    },
+    {
+        "text": " depende de 2 parámetros y representa en el conjunto R a las 6, un conjunto de dimensión 6, representa un subespacio de dimensión 2,",
+        "start": 671.36,
+        "end": 683.36
+    },
+    {
+        "text": " ok, y también se puede escribir la solución general de forma paramétrica, acá estoy anticipando un poquito sobre lo que vamos a ver en el geometría,",
+        "start": 683.36,
+        "end": 698.36
+    },
+    {
+        "text": " la forma paramétrica es observar que acá cada expresión es una expresión lineal en alpha beta y hay un término constante,",
+        "start": 698.36,
+        "end": 713.36
+    },
+    {
+        "text": " acá hay algo que es múltiples de alpha, más múltiples de beta más constante, ok, entonces yo puedo separar las tres cosas,",
+        "start": 713.36,
+        "end": 721.36
+    },
+    {
+        "text": " yo puedo observar que la solución general es primera solución, hay una solución, la solución trivial corresponde al caso donde alpha y igual a beta y igual a 0, ok,",
+        "start": 721.36,
+        "end": 733.36
+    },
+    {
+        "text": " ahora pongo la solución trivial cuando alpha y igual a beta y igual a 0, es menos 1,",
+        "start": 733.36,
+        "end": 740.36
+    },
+    {
+        "text": " segunda componente 1, 0, ¿por qué? Tercera componente es 1, cuarta componente es menos 1, quinta componente es 0, ultima componente es 1,",
+        "start": 741.36,
+        "end": 757.36
+    },
+    {
+        "text": " acá es una solución, esa solución que yo obtengo poniendo alpha y beta y igual a 0, es una solución particular, pero yo puedo observar que se puede descomponer con alpha por,",
+        "start": 758.36,
+        "end": 773.36
+    },
+    {
+        "text": " ahora vamos a ver lo que depende de alpha, lo que depende de alpha, acá hay menos 2, acá hay 1,",
+        "start": 773.36,
+        "end": 781.36
+    },
+    {
+        "text": " menos 2, 1, acá no hay nada es 0, a menos 2, dije de menos 2 y escribi menos 1, problema de confusión mental,",
+        "start": 787.36,
+        "end": 802.36
+    },
+    {
+        "text": " ok, menos 2, 1, acá no hay alpha, entonces es 0, 0, 0, 0,",
+        "start": 802.36,
+        "end": 810.36
+    },
+    {
+        "text": " acá no hay alpha, pero ahí no veo ni 1, ahora lo que depende de beta, lo que depende de beta, acá menos 3,",
+        "start": 810.36,
+        "end": 830.36
+    },
+    {
+        "text": " segunda componente no hay nada, 0, tercera componente es 1, cuarta componente es menos 2, quinta componente es 1, ultima componente es 0,",
+        "start": 830.36,
+        "end": 850.36
+    },
+    {
+        "text": " ok, y esto se observa que cualquier solución es este punto más alpha por este vector, más beta por este vector,",
+        "start": 850.36,
+        "end": 863.36
+    },
+    {
+        "text": " ah, ojo, acá tenemos vectores que tienen 6 componentes, entonces para representarlos necesitamos vivir en un mundo de dimensión 6 y como ya lo saben nos faltan 3 dimensiones,",
+        "start": 864.36,
+        "end": 879.36
+    },
+    {
+        "text": " hay que pedir más presupuesto de la facultad para que tengamos clases con 6 dimensiones, ok, pero es una espación de dimensión,",
+        "start": 879.36,
+        "end": 888.36
+    },
+    {
+        "text": " esto es la descripción de un espacio, de un plano porque tiene 2 dimensiones, adentro de un espacio de dimensión 6,",
+        "start": 888.36,
+        "end": 897.36
+    },
+    {
+        "text": " es así que se entiende las cosas, ok, entonces ahora vamos a ver el teorema fundamental, que es el teorema,",
+        "start": 897.36,
+        "end": 908.36
+    },
+    {
+        "text": " que toda matriz se puede escarrizada, es decir toda matriz tiene una forma escarrizada, porque lo que vimos vimos un montón de ejemplos y en cada ejemplo vimos que a mil agro se podía escarrizar,",
+        "start": 908.36,
+        "end": 922.36
+    },
+    {
+        "text": " no es una coincidencia, no es porque tuvimos suerte, no es porque el profesor preparó bien sus ejemplos, es porque es un teorema global,",
+        "start": 922.36,
+        "end": 933.36
+    },
+    {
+        "text": " es decir cada matriz tiene una forma escarrizada y reducida si queremos, entonces el teorema es el siguiente, teorema, teorema,",
+        "start": 933.36,
+        "end": 943.36
+    },
+    {
+        "text": " toda matriz, toda matriz puede ser transformada,",
+        "start": 946.36,
+        "end": 956.36
+    },
+    {
+        "text": " en una matriz escarrizada o escarrizada reducida como quieran,",
+        "start": 963.36,
+        "end": 978.36
+    },
+    {
+        "text": " mediante, mediante una cantidad de fíjita de transformaciones elementales,",
+        "start": 978.36,
+        "end": 1006.36
+    },
+    {
+        "text": " ok, entonces esto es un teorema y sé que existe un método que permite escarillizar cualquier matriz, pueden construir una matriz a la asara y todavía funciona,",
+        "start": 1006.36,
+        "end": 1024.3600000000001
+    },
+    {
+        "text": " ok, entonces no voy a hacer el método de modo formal porque es un poquito pesado, lo que eso debería hacer si yo fuera en una clase mayor, lo que haría es escribir el algoritmo y demostrar que este algoritmo siempre termina y llega a una forma escarrizada,",
+        "start": 1024.36,
+        "end": 1045.36
+    },
+    {
+        "text": " sería un poquito pesado porque no son todos informáticos en la sala pero lo que voy a hacer es explicar cómo funciona el algoritmo y el algoritmo,",
+        "start": 1045.36,
+        "end": 1058.36
+    },
+    {
+        "text": " tiene la particularidad que en cada momento de algoritmo entonces es un algoritmo que trabaja adentro de una tabla rectangular, ok, que es la matriz,",
+        "start": 1058.36,
+        "end": 1070.36
+    },
+    {
+        "text": " acá no importa qué sea la matriz de coeficiente, eso viene la matriz ampliada, yo puedo ignorar la barra vertical a casi existe y la cosa es que siempre tenemos,",
+        "start": 1070.36,
+        "end": 1082.36
+    },
+    {
+        "text": " estamos observando las cosas adentro de una ventana corriente y la ventana corriente, que tiene que ir a la forma,",
+        "start": 1082.36,
+        "end": 1090.36
+    },
+    {
+        "text": " es una ventana que empieza a partir de cierta columna y que se va hasta el final de las columnas y que empieza a partir de cierta fila y que se va al final de las filas y este rectángulito lo voy a llamar ventana corriente, ok,",
+        "start": 1090.36,
+        "end": 1110.36
+    },
+    {
+        "text": " y la idea es que antes de la ventana ya hicimos el procesor de escarrización, es decir, acá tenemos forma escarrizada, acá tenemos cero y acá es lo que nos queda hacer, ok,",
+        "start": 1110.36,
+        "end": 1126.36
+    },
+    {
+        "text": " es lo que va a pasar durante el algoritmo y la idea es que vamos a arreglar los números acá y acá para reducir el tamaño de la ventana corriente y al final,",
+        "start": 1126.36,
+        "end": 1137.36
+    },
+    {
+        "text": " cuando la ventana corriente se va a desaparecer tendremos la matriz escarrizada, ok, ahora vamos a presentar el algoritmo,",
+        "start": 1137.36,
+        "end": 1145.36
+    },
+    {
+        "text": " al inicio la ventana corriente, la ventana corriente es toda la matriz, ok, es decir, acá hay todos los coeficientes que se pueden en las formas más, más, más horrible posible,",
+        "start": 1145.36,
+        "end": 1165.36
+    },
+    {
+        "text": " lo más horrible posible tenemos un montón de coeccientes y no sabemos nada, ahora cómo se aficáis el algoritmo,",
+        "start": 1165.36,
+        "end": 1174.36
+    },
+    {
+        "text": " primera cosa se observa la primera columna, ok, para determinar el comienzo de escalón, hay dos posibilidades,",
+        "start": 1174.36,
+        "end": 1185.36
+    },
+    {
+        "text": " o bien la columna es toda lula, o bien existir al menos una entrada, una lula en dicha columna,",
+        "start": 1185.36,
+        "end": 1194.36
+    },
+    {
+        "text": " qué pasa si mi columna es lula, qué puedo yo hacer, yo puedo hacer es ignorar la columna, si la columna es lula,",
+        "start": 1194.36,
+        "end": 1205.36
+    },
+    {
+        "text": " yo redusco mi forma levantana, mi ventana, ok, entonces si mi columna es lula, yo puedo por ejemplo acá,",
+        "start": 1205.36,
+        "end": 1213.36
+    },
+    {
+        "text": " si mi columna es lula, yo puedo sacar esta columna y obteno una ventana más pequeña y que mantiene la forma es ser arreizar, ok,",
+        "start": 1213.36,
+        "end": 1226.36
+    },
+    {
+        "text": " entonces en caso donde mi ventana contiene una primera columna nula, yo puedo reducir la ventana eliminando la primera columna,",
+        "start": 1226.36,
+        "end": 1238.36
+    },
+    {
+        "text": " ok, esto me arreducerá ventana, el objetivo es cancelar la ventana, entonces es un buen paso, pues me arreducerá ventana,",
+        "start": 1238.36,
+        "end": 1247.36
+    },
+    {
+        "text": " pero ahora qué pasa si yo tengo al menos un coeficiente nula acá por ejemplo, si yo tengo un coeficiente nula acá,",
+        "start": 1247.36,
+        "end": 1258.36
+    },
+    {
+        "text": " está bien, este que voy a tomar como escalón, pero qué pasa si por ejemplo tengo un cero acá y acá empieza con cero si tengo el primero nula acá,",
+        "start": 1258.36,
+        "end": 1271.36
+    },
+    {
+        "text": " exactamente vamos a intercambiar las filas, ok, entonces la operación de intercambio de fila sirve para poner el primero coeficiente nula acá,",
+        "start": 1272.36,
+        "end": 1285.36
+    },
+    {
+        "text": " ponerlo en la primera fila de la ventana, ok, es decir acá sería tomar intercambiar esta fila por ejemplo con esta fila,",
+        "start": 1285.36,
+        "end": 1295.36
+    },
+    {
+        "text": " acá es la visión global y acá es solo lo que pasa adentro de mi ventana, ok,",
+        "start": 1296.36,
+        "end": 1303.36
+    },
+    {
+        "text": " ahora entonces primera cosa es intercambio de filas para poner el coeficiente nula que voy a describir no sé cómo,",
+        "start": 1306.36,
+        "end": 1316.36
+    },
+    {
+        "text": " distinto de cero y acá quizá hay que hacer un intercambio de fila, ok,",
+        "start": 1316.36,
+        "end": 1322.36
+    },
+    {
+        "text": " cuándo es que por la izquierda de la ventana lo cambian nada porque solo hay cero, entonces no me destruye el resto de la matriz,",
+        "start": 1322.36,
+        "end": 1331.36
+    },
+    {
+        "text": " la idea es que vamos a hacer operaciones sobre las filas que no destruyen la parte cero acá,",
+        "start": 1331.36,
+        "end": 1338.36
+    },
+    {
+        "text": " es algo importante porque queremos mantener el resto que no queremos tocar, ok, ahora que tengo algo nula y lo que voy a hacer es cancelar el resto de la fila,",
+        "start": 1338.36,
+        "end": 1351.36
+    },
+    {
+        "text": " y como es fácil es decir acá supongo que es el índice y subcero, acá es el índice m, índice y subcero,",
+        "start": 1351.36,
+        "end": 1363.36
+    },
+    {
+        "text": " entonces lo que voy a hacer es para todo índice subcero más 1 hasta m, es decir para todos las filas que me queden a parte de ísubcero,",
+        "start": 1364.36,
+        "end": 1382.36
+    },
+    {
+        "text": " voy a hacer, f í, recibe f sub í menos el coeficiente, acá voy a suponer que el columna es ísubcero, j subcero,",
+        "start": 1383.36,
+        "end": 1396.36
+    },
+    {
+        "text": " j subcero, acá es j subcero, discultad, sub í, j subcero, divido por a sub í, quizá lo voy a escribir aquí,",
+        "start": 1396.36,
+        "end": 1413.36
+    },
+    {
+        "text": " es complicado, es decir, voy a restar a que la fila acá del paso de la fila ísubcero más 1 hasta la fila m,",
+        "start": 1414.36,
+        "end": 1437.36
+    },
+    {
+        "text": " voy a restar lo que es el múltible que es en necesidad de la primera fila para cancelar el primer coeficiente, y acá el coeficiente multiplicador es este,",
+        "start": 1438.36,
+        "end": 1452.36
+    },
+    {
+        "text": " es decir, es el primer coeficiente de la fila í en la ventana, sobre el primer coeficiente de la primera fila en la ventana,",
+        "start": 1452.36,
+        "end": 1463.36
+    },
+    {
+        "text": " y este, ya sé que no es nulo, porque tenemos que, por supuesto, sabemos acá que a su ísero j0 es distinto de 0, entonces no se muere ningún latito,",
+        "start": 1463.36,
+        "end": 1477.36
+    },
+    {
+        "text": " y qué le permite hacer esto, lo que le permite me mantiene este coeficiente y me transforma toda el resto de la columna en 0, y qué pasa, aparece un nuevo escalón y qué puede su hacer,",
+        "start": 1478.36,
+        "end": 1495.36
+    },
+    {
+        "text": " a chicar la ventana, ahora, supongo decir, ahora la nueva ventana es esta, y acá en este dibujo aparece un nuevo escalón acá y se a chica la ventana así,",
+        "start": 1496.36,
+        "end": 1509.36
+    },
+    {
+        "text": " y cuando se repite suficientemente la operación, al final que se obtiene una forma escalerizada, y pueden ver que las úicas operaciones que usen eran intercambio de filas y sumarle a caer a esta fila,",
+        "start": 1510.36,
+        "end": 1531.36
+    },
+    {
+        "text": " y la operación no se necesita esta operación, y entonces tienen el gorismo de escalerización y es más suminosa, pero lleva que es siempre es posible, es algo génerico,",
+        "start": 1532.36,
+        "end": 1555.36
+    },
+    {
+        "text": " o que ahora hay que entender cómo se puede reducir las cosas, esto es fácil, ahora, cómo se reduce una forma escalerizada, supongo que tengo una forma escalerizada,",
+        "start": 1556.36,
+        "end": 1574.36
+    },
+    {
+        "text": " acá los circulitos que escribo acá son cosas nunuras, son los comienzos de escalones, para reducir mi cosa, tengo que reemplazar estos circulitos que representan cada vez la primera entrada nunura, tengo que reemplazarlo por cero, que voy a hacer, voy a dividir,",
+        "start": 1575.36,
+        "end": 1602.36
+    },
+    {
+        "text": " por uno, tengo que reemplazarlos por unos gracias, entonces si yo quiero reemplazar esta cosa por uno tengo que dividir toda la fila por este coeficiente, y obtengo uno, ¿ok?",
+        "start": 1603.36,
+        "end": 1617.36
+    },
+    {
+        "text": " misma cosa acá, y acá, y pueden ver que acá estamos usando la operación que no usamos anteriormente, que era la operación de multiplicación de una fila por un número nulo,",
+        "start": 1617.36,
+        "end": 1632.36
+    },
+    {
+        "text": " entonces ya tenemos sus criterios 1, 2 y 3, nos falta el criterio 4, acá hay por ejemplo que matar todos estos coeficientes, ¿qué vamos a hacer? Vamos a restar a esta fila, el buen múltiple de esta fila, lo que me va a matar, este coeficiente,",
+        "start": 1633.36,
+        "end": 1657.36
+    },
+    {
+        "text": " y ahora yo quiero matar estos dos coeficientes, lo que voy a hacer es restar a esta fila, el buen múltiple de esta para matar este coeficiente, y restar a esta fila, el buen múltiple de esta fila para matar este coeficiente, y así siguiendo así,",
+        "start": 1658.36,
+        "end": 1682.36
+    },
+    {
+        "text": " y esto me permite llegar a la forma escarresada reducida, ¿ok? ¿entienden cómo se aplica el adivorismo? después si son programadores pueden implementarlo en cualquier lenguaje de programación, y ya lo hice, y funciona rey bien,",
+        "start": 1682.36,
+        "end": 1700.36
+    },
+    {
+        "text": " es excelente porque así que se pueden preparar los parciales con un software que dice o qué ahora elegir un sistema no demasiado fácil para los estudiantes, tengo todos los programas que permiten hacerlo, es maravilloso,",
+        "start": 1700.36,
+        "end": 1717.36
+    },
+    {
+        "text": " está dentro de una carpeta que se llama instrumentos de tortura para estudiantes, y...",
+        "start": 1717.36,
+        "end": 1727.36
+    },
+    {
+        "text": " ¿ok? ahora, ahora demostré más o menos, no es una demostración matemática, es una presentación de algoritmo, hay muchas pruebas matemáticas que consisten en aplicar un algoritmo para mostrar las cosas que se pueden transformar de cierto modo,",
+        "start": 1731.36,
+        "end": 1751.36
+    },
+    {
+        "text": " pero la cosa es claro, acá siempre va a funcionar este algoritmo, y con una cantidad finita de transformaciones elementales, voy a llegar en una forma escarresada reducida,",
+        "start": 1751.36,
+        "end": 1771.36
+    },
+    {
+        "text": " o escarresada si quiero no reducir las cosas, ahora tenemos esta cosa, y ahora voy a hacer una proposición que voy a admitir una proposición,",
+        "start": 1771.36,
+        "end": 1784.36
+    },
+    {
+        "text": " antes de esta proposición tengo que poner una definición, definición, y que es algo que sabimos, si es una matriz escarresada,",
+        "start": 1784.36,
+        "end": 1812.36
+    },
+    {
+        "text": " si se llama número de escalones, de E, la cantidad a la cantidad,",
+        "start": 1812.36,
+        "end": 1838.36
+    },
+    {
+        "text": " al número, de filas, no nullas, ¿ok? definición obvia, ya hablamos, monta un veces de el número de escalones, esta cantidad de escalones,",
+        "start": 1838.36,
+        "end": 1861.36
+    },
+    {
+        "text": " es una definición que solo funciona para las matrices escarresadas, entonces ojo esta definición solo tiene sentido para las matrices escarresadas.",
+        "start": 1861.36,
+        "end": 1881.36
+    },
+    {
+        "text": " Ahora, la proposición que voy a admitir, esto viene de que mi algoritmo de escalerización, de hecho, para escarregizar, su tengo un montón de opciones para hacerlo,",
+        "start": 1891.36,
+        "end": 1914.36
+    },
+    {
+        "text": " por ejemplo, cuando tuve que intercambiar dos filas, yo podría intercambiar la primera fila con cualquier fila cuyo primer coeficiente en la ventana era nulo,",
+        "start": 1914.36,
+        "end": 1925.36
+    },
+    {
+        "text": " entonces yo tenía muchas opciones en la escalerización, y lo que digo es que el proceso de escalerización no es un proceso de terminista,",
+        "start": 1925.36,
+        "end": 1936.36
+    },
+    {
+        "text": " decir hay varias opciones que se pueden hacer, por ejemplo, se pueden normalizar antes de escarregizar hay un montón de cosas, y a veces cuando no estamos cómodo con la discerrización intentamos operaciones y los son las buenas hacemos otras operaciones,",
+        "start": 1936.36,
+        "end": 1954.36
+    },
+    {
+        "text": " entonces hay un montón de opciones para escarregizar, entonces la proposición, proposición, admitida, si una matriz ha,",
+        "start": 1954.36,
+        "end": 1971.36
+    },
+    {
+        "text": " tiene dos formas escarresadas,",
+        "start": 1971.36,
+        "end": 1983.36
+    },
+    {
+        "text": " e 1 y e 2, entonces,",
+        "start": 1983.36,
+        "end": 1995.36
+    },
+    {
+        "text": " entonces, 1 y e 2 tienen el mismo número de escalone,",
+        "start": 1995.36,
+        "end": 2007.36
+    },
+    {
+        "text": " cosa muy importante es decir, en función del orden en el cual aplicamos las transformaciones elementales,",
+        "start": 2007.36,
+        "end": 2027.36
+    },
+    {
+        "text": " podemos llegar a una forma escarrizada distinta a partir de una misma matriz A, pero en todos los casos vamos a obtener el mismo número de escalones,",
+        "start": 2027.36,
+        "end": 2040.36
+    },
+    {
+        "text": " por ejemplo, si yo parto de esta matriz, si puedo llegar a esta matriz escarregada, acá,",
+        "start": 2040.36,
+        "end": 2053.3599999999997
+    },
+    {
+        "text": " cuantos escalones tiene 13 escalones, pero también quizá otro estudiante aplicando el proceso de escarrización va a obtener una matriz escarrizada de esta forma,",
+        "start": 2053.36,
+        "end": 2074.36
+    },
+    {
+        "text": " o un tercer estudiante podría obtener una forma escarrizada así, y depende de las opciones que dijeron durante la descarrización,",
+        "start": 2074.36,
+        "end": 2089.36
+    },
+    {
+        "text": " pero lo que nunca va a cambiar es la cantidad de escalones,",
+        "start": 2089.36,
+        "end": 2095.36
+    },
+    {
+        "text": " en particular, si tenemos dos estudiantes que resuelven el mismo sistema, que escarrizan la misma matriz, y que al final llegan a dos matrices que no tienen la misma cantidad de escalones,",
+        "start": 2095.36,
+        "end": 2114.36
+    },
+    {
+        "text": " que significa que al menos uno de ambos se equivocó y en general ambos, y porque son estudiantes, pero no realmente es algo para verificar que las cosas funcionan bien,",
+        "start": 2114.36,
+        "end": 2133.36
+    },
+    {
+        "text": " la cantidad de escalones, entonces esto, voy a demostrar esta proposición, esta proposición será demostrado mucho más adelante en el coroso, vamos a emitirla, y ahora esto me permite enunciar el teorema fundamental,",
+        "start": 2133.36,
+        "end": 2153.36
+    },
+    {
+        "text": " entonces en particular, que dice esto, dice que como una matriz A, todas sus formas escarrizadas tienen el mismo número de escalones, se puede definir la opción de número de escalones para cualquier matriz,",
+        "start": 2153.36,
+        "end": 2174.36
+    },
+    {
+        "text": " porque no le pende la forma escarraresada, y este número de escalones se llama el rango, entonces definición, el rango de una matriz,",
+        "start": 2174.36,
+        "end": 2191.36
+    },
+    {
+        "text": " es el número de escalones, de escalones, de una matriz A, de cualquier forma,",
+        "start": 2191.36,
+        "end": 2216.36
+    },
+    {
+        "text": " es escarrizada, de A, esta definición es rango, el rango de una matriz, veremos otra definición después, pero se puede ver como una primera definición es rango de una matriz,",
+        "start": 2216.36,
+        "end": 2238.36
+    },
+    {
+        "text": " es la cantidad de escalones, pero solo después de haber hecho el proceso de escalerización, entonces acá por ejemplo esta matriz puede tener 10.000 filas nonulas, pero después de la escalerización solo tenemos tres filas nonulas,",
+        "start": 2238.36,
+        "end": 2258.36
+    },
+    {
+        "text": " y diremos que dice a la tres, tiene rango tres, ahora se puede enunciar el teorema de rusefrobenius, teorema,",
+        "start": 2258.36,
+        "end": 2275.36
+    },
+    {
+        "text": " rusefrobenius, C-A-S, un sistema linear de M-equaciones,",
+        "start": 2275.36,
+        "end": 2304.36
+    },
+    {
+        "text": " y n-incoguitas, con matriz ambiana,",
+        "start": 2304.36,
+        "end": 2329.36
+    },
+    {
+        "text": " B, esa sí es escribir, acá es la matriz de coeficientes y acá la columna de los términos independientes, ahora C-A-S,",
+        "start": 2329.36,
+        "end": 2344.36
+    },
+    {
+        "text": " voy a escribir B, rango de A, solo la parte principal, y prima, rango de A-S,",
+        "start": 2344.36,
+        "end": 2364.36
+    },
+    {
+        "text": " es decir, cuando suave una escalerización de una matriz ampliaba, siempre hay una última columna que está columna a los términos independientes,",
+        "start": 2364.36,
+        "end": 2376.36
+    },
+    {
+        "text": " puedo contar la cantidad de escalones en la parte principal y también puedo contar la cantidad de escalones en toda la matriz,",
+        "start": 2376.36,
+        "end": 2386.36
+    },
+    {
+        "text": " pueden de cómo pueden diferir esas cosas, si cuando la pide tiene más escalones, si es incompatible,",
+        "start": 2386.36,
+        "end": 2396.36
+    },
+    {
+        "text": " si puede tener mucho más escalones, de hecho solo puede tener un escalón más, solo hay dos casos posibles,",
+        "start": 2396.36,
+        "end": 2407.36
+    },
+    {
+        "text": " solo P es igual a P-prima, o bien P-prima es P más 1, y no hay otra posibilidad,",
+        "start": 2407.36,
+        "end": 2415.36
+    },
+    {
+        "text": " porque como son cosas escarrisadas, la cosa prohibida, o bien tenemos esto,",
+        "start": 2415.36,
+        "end": 2423.36
+    },
+    {
+        "text": " acá tenemos 1, 2, 3, 4 escalones, o bien tenemos un escalón más acá, pero no podemos tener dos más porque no sería un escalón,",
+        "start": 2423.36,
+        "end": 2437.36
+    },
+    {
+        "text": " entonces observa que tenemos que observación, observación, o bien P-prima es igual a P, o bien P-prima es igual a P-prima son,",
+        "start": 2437.36,
+        "end": 2455.36
+    },
+    {
+        "text": " son las únicas dos opciones posibles, ahora, ¿qué pasa cuando el sistema P-prima es igual,",
+        "start": 2455.36,
+        "end": 2466.36
+    },
+    {
+        "text": " no es igual a P-prima, el sistema es incompatible, entonces tenemos el siguiente teorema,",
+        "start": 2466.36,
+        "end": 2473.36
+    },
+    {
+        "text": " primera cosa es que el sistema S es compatible, si y solo si, P es igual a P-prima,",
+        "start": 2473.36,
+        "end": 2495.36
+    },
+    {
+        "text": " misma cantidad de escalones, y esto es fácil vera, porque acá vimos que cada vez que tuvimos a misma cantidad de escalones,",
+        "start": 2495.36,
+        "end": 2507.36
+    },
+    {
+        "text": " cada vez sabíamos resolver el sistema, pero acá cuando tenemos un escalón más,",
+        "start": 2507.36,
+        "end": 2514.36
+    },
+    {
+        "text": " tenemos una ecuación de la forma 0 igual a algo de nulo, imposible, entonces es un si solo si,",
+        "start": 2514.36,
+        "end": 2523.36
+    },
+    {
+        "text": " y la segunda cosa si S, S es compatible es decir si P es igual a P-prima,",
+        "start": 2523.36,
+        "end": 2541.36
+    },
+    {
+        "text": " entonces S es determinado, si y solo si, la cantidad de escalones es igual a la cantidad de cogrites,",
+        "start": 2541.36,
+        "end": 2564.36
+    },
+    {
+        "text": " es decir P-prima es igual a n, lo que significa que los escalones forman una diagonal,",
+        "start": 2564.36,
+        "end": 2575.36
+    },
+    {
+        "text": " ok, el caso típico de una matriz determinada es este, diagonal y acá no cambia la cantidad de escalones,",
+        "start": 2575.36,
+        "end": 2589.36
+    },
+    {
+        "text": " tenemos una matriz diagonal, ser hoy cosa saca, acá es el caso típico de un sistema determinado,",
+        "start": 2589.36,
+        "end": 2601.36
+    },
+    {
+        "text": " y S es indeterminado, si y solo si, la cantidad de escalones es estrictamente menor que la cantidad de cogritas,",
+        "start": 2601.36,
+        "end": 2626.36
+    },
+    {
+        "text": " en ningún caso puede ser mayor, la cantidad de escalones siempre es menor o igual a la cantidad de incogitas,",
+        "start": 2626.36,
+        "end": 2634.36
+    },
+    {
+        "text": " ok, y el caso, entonces el caso indeterminado es algo así, tenemos trozos de diagonal,",
+        "start": 2634.36,
+        "end": 2646.36
+    },
+    {
+        "text": " y tenemos algunos escalones que tienen un ancho mayor que uno, y en este caso algunos escalones tienen ancho mayor que uno,",
+        "start": 2646.36,
+        "end": 2666.36
+    },
+    {
+        "text": " ok, y es el teorema fundamental, dice que a partir de la forma escalizada podemos concluir sobre el sistema,",
+        "start": 2666.36,
+        "end": 2682.36
+    },
+    {
+        "text": " ok, y sabimos cómo hacerlo después, entonces acá hay que observar que en el último caso observación no voy a demostrar el teorema,",
+        "start": 2682.36,
+        "end": 2696.36
+    },
+    {
+        "text": " es casi obvio porque sabimos que cuando tenemos un sistema escalizado podemos resolverlo y vemos exactamente cómo funciona,",
+        "start": 2696.36,
+        "end": 2703.36
+    },
+    {
+        "text": " pero la cosa importante es que en el último caso, en el caso 2b es decir caso p menor que n,",
+        "start": 2703.36,
+        "end": 2719.36
+    },
+    {
+        "text": " es compatible indeterminado, se expresa el conjunto solución, el conjunto se expresa,",
+        "start": 2719.36,
+        "end": 2745.36
+    },
+    {
+        "text": " se expresan las soluciones, en función de cuantos parámetros, si se obtengo p menor que n, cuantos parámetros voy a obtener para expresar las soluciones,",
+        "start": 2745.36,
+        "end": 2770.36
+    },
+    {
+        "text": " será n menos p, es lo que quedan, es decir acá los p cuestiones que me quedan solo permiten determinar n incoguitas y las que quedan son cuelesquiera,",
+        "start": 2771.36,
+        "end": 2787.36
+    },
+    {
+        "text": " entonces en función de n menos p parámetros, por ejemplo en el ejemplo que vimos anteriormente teníamos un sistema con 5 ecuaciones y 6 encoguitas y al final obtuvimos un rango 4 escalones,",
+        "start": 2788.36,
+        "end": 2816.36
+    },
+    {
+        "text": " entonces 6 encoguitas 4 escalones tuvimos que expresar el sistema en función de 6 menos 4 es decir 2 parámetros,",
+        "start": 2816.36,
+        "end": 2827.36
+    },
+    {
+        "text": " entonces se expresan las soluciones en función de n menos p parámetros y se dice que el sistema tiene n menos p grados de libertad,",
+        "start": 2827.36,
+        "end": 2850.36
+    },
+    {
+        "text": " cuelas de intuición es que nos faltan ecuaciones para tener un sistema determinado, ¿entienden? La idea es que simplificando el sistema obtuve un sistema que sólo tenía p ecuaciones independientes",
+        "start": 2850.36,
+        "end": 2873.36
+    },
+    {
+        "text": " y pero tengo n incoguitas, es decir mucho más y me faltan n menos p ecuaciones para hacer que el sistema sea determinado y las ecuaciones grados de libertad y acá lo que falta es la noción de grado libertad,",
+        "start": 2873.36,
+        "end": 2897.36
+    },
+    {
+        "text": " entonces en general tenemos la cosa que es rango del sistema más grados de libertad igual número de encoguitas.",
+        "start": 2897.36,
+        "end": 2918.36
+    },
+    {
+        "text": " Es decir acá son el número de ecuaciones independientes, es decir cuando se escarrisa en el sistema,",
+        "start": 2918.36,
+        "end": 2944.36
+    },
+    {
+        "text": " esto lo permite descubrir cuál era la cantidad mínima de ecuaciones para definir el sistema, es decir la cantidad mínima de ecuaciones independientes entre sí,",
+        "start": 2944.36,
+        "end": 2956.36
+    },
+    {
+        "text": " y esto me definen el rango y después como tenemos en el general más incoguitas nos faltan ecuaciones y se llama el grado libertad.",
+        "start": 2956.36,
+        "end": 2968.36
+    },
+    {
+        "text": " Y la cosa interesante es que esto, solo digo que p más n menos p es igual a n, entonces nos diga en algo, pero veremos después en otro contexto este teorema y se llamará el teorema de las dimensiones.",
+        "start": 2968.36,
+        "end": 2991.36
+    },
+    {
+        "text": " Para los que lo que vamos a ver en la segunda parte del curso pero ya se puede ver al comienzo este teorema acá en la resolución de sistemas.",
+        "start": 2991.36,
+        "end": 3002.36
+    },
+    {
+        "text": " Ahora vamos a terminar con tu ejemplo.",
+        "start": 3002.36,
+        "end": 3006.36
+    },
+    {
+        "text": " La idea es que la pregunta que hace es que solo conociendo la cantidad de incoguitas, la cantidad de ecuaciones que se puede lucir,",
+        "start": 3006.36,
+        "end": 3025.36
+    },
+    {
+        "text": " no muchas cosas sin deserrización pero ya sabes que el rango necesariamente es menor a la vez menor o igual a la vez que la cantidad de ecuaciones y que la cantidad de incoguitas.",
+        "start": 3025.36,
+        "end": 3037.36
+    },
+    {
+        "text": " Entonces ya se sabe si da ser nada que p es menor que el mínimo de la cantidad de ecuaciones y de incoguitas y puede ser cero.",
+        "start": 3037.36,
+        "end": 3054.36
+    },
+    {
+        "text": " Por ejemplo si tenemos un sistema de 12 ecuaciones y 42 incoguitas ya sabemos que el rango no podrá ser más orje 2 pero por otro lado si tenemos un sistema de 42 ecuaciones con 2 incoguitas el rango tampoco será más orje 2.",
+        "start": 3054.36,
+        "end": 3074.36
+    },
+    {
+        "text": " Pero si quiero obtener exactamente el rango el único método se llama la descarrización y esto me da exactamente el rango y también me permite resolver el sistema.",
+        "start": 3074.36,
+        "end": 3091.36
+    },
+    {
+        "text": " Aquí es muy interesante este algoritmo porque es el aspecto mágico del proceso de algoritmo de descarrización porque la propiedad del curso de Gal 1 como sabemos que tiene dificuldade para memorizar las cosas armamos el curso de tal modo que haya un único algoritmo en todo el curso.",
+        "start": 3091.36,
+        "end": 3110.36
+    },
+    {
+        "text": " Es la escalerrización y vamos a ver que todos los problemas de algoritmo se resuelven aplicando una variante de la escalerrización.",
+        "start": 3110.36,
+        "end": 3119.36
+    },
+    {
+        "text": " Esto es claro como se aplica este teorema para decir hay que escarrizar verificar cómo se aplica escarrizar el sistema, contar la cantidad de escalones en la prática principal y en la parte ampliada, si difieren esta sistema incompatible.",
+        "start": 3119.36,
+        "end": 3145.36
+    },
+    {
+        "text": " Si son iguales entonces hay dos opciones o bien hay igual la identidad entre la cantidad de escalones es de cierre el rango y la cantidad de incoguitas es de cierre tenemos un sistema diagonal y saltenemos un sistema incompatible determinado y en el otro caso cuando el rango es menor que la cantidad de incoguitas",
+        "start": 3145.36,
+        "end": 3170.36
+    },
+    {
+        "text": " tenemos rados de libertad que es exactamente la diferencia y eso nos permite escribir el conjunto solución. Vamos a concluir con el problema de los sistemas homogéneos.",
+        "start": 3170.36,
+        "end": 3185.36
+    },
+    {
+        "text": " Entonces la buena cosa es que ahora pueden resolver a cualquier sistema lineal y yo insisto los informáticos de brillante a hacer como ejercicio implementarlo.",
+        "start": 3185.36,
+        "end": 3200.36
+    },
+    {
+        "text": " Es muy interesante es una buena ejercicio informática y quieren ser ingenieros un día van a usar máquinas.",
+        "start": 3201.36,
+        "end": 3210.36
+    },
+    {
+        "text": " Aquí es una pequeña conclusión sobre los sistemas inéales y es un tema muy fácil es decir definición.",
+        "start": 3215.36,
+        "end": 3235.36
+    },
+    {
+        "text": " Se dice que un sistema S es homogéneo cuando todos sus términos independientes.",
+        "start": 3235.36,
+        "end": 3258.36
+    },
+    {
+        "text": " Son nulos, es decir todos los B subi son iguales a Cero. Es un caso muy particular. Vamos a ver que es un caso que ocurre muy frecuentemente y que facilita un poquito la resolución.",
+        "start": 3265.36,
+        "end": 3286.36
+    },
+    {
+        "text": " Entonces es que es un sistema homogéneo que pasa que se puede decir sobre un sistema homogéneo y se ha tengo un sistema de esta forma.",
+        "start": 3286.36,
+        "end": 3299.36
+    },
+    {
+        "text": " Matrisa y acá soltengo serros. ¿Qué se fue iniciar sobre el sistema? ¿Cómo? Siempre es compatible. ¿Por qué? La solución nula siempre funciona.",
+        "start": 3299.36,
+        "end": 3316.36
+    },
+    {
+        "text": " Es decir, tal sistema siempre es compatible. Entonces es primera propiedad. Es que un sistema homogéneo siempre es compatible.",
+        "start": 3316.36,
+        "end": 3332.36
+    },
+    {
+        "text": " Entonces esto nos elimina un caso.",
+        "start": 3332.36,
+        "end": 3344.36
+    },
+    {
+        "text": " Por que es uno igual a uno igual a uno igual a Cero. Es solución.",
+        "start": 3344.36,
+        "end": 3370.36
+    },
+    {
+        "text": " Claro. Si es un pongo algo por Cero, más algo por Cero, más algo por Cero, tengo Cero. Funciona.",
+        "start": 3370.36,
+        "end": 3383.36
+    },
+    {
+        "text": " Entonces un sistema homogéneo siempre es compatible. Esa buena noticia de línea. Y ya conocemos una solución.",
+        "start": 3383.36,
+        "end": 3396.36
+    },
+    {
+        "text": " Entonces si tienen un sistema, ejemplo típico de pregunta que se puede hacer durante un oral de Algebra, supongo un sistema homogéneo con mil ecuaciones mil incógnitas y dame una solución y el gente que empieza es calizar.",
+        "start": 3396.36,
+        "end": 3413.36
+    },
+    {
+        "text": " No, no, si, si, si quiero una solución, tengo que decir Cero, Cero, Cero, Cero, Cero, Cero, Funciona.",
+        "start": 3413.36,
+        "end": 3420.36
+    },
+    {
+        "text": " Ok, es la ventaja de los sistemas homogéneos para conocer si lo que queremos saber conocer es al menos una solución no se necesita escaresar.",
+        "start": 3420.36,
+        "end": 3431.36
+    },
+    {
+        "text": " Se necesita escaresar para saber si hay otras soluciones. ¿Ok?",
+        "start": 3431.36,
+        "end": 3437.36
+    },
+    {
+        "text": " ¿Puedo saber cómo es el punto de producción? ¿Tenéis que ponerle esa solución, ¿sero?",
+        "start": 3437.36,
+        "end": 3441.36
+    },
+    {
+        "text": " Ah, ¿cuándo te vas a resolver? Esa va a venir naturalmente. Vamos a ver lo que pasa, pero va a venir naturalmente.",
+        "start": 3441.36,
+        "end": 3447.36
+    },
+    {
+        "text": " No hay que cambiar el método de resolución. El método de resolución general que presentamos funciona en todos los casos, incluso en este caso.",
+        "start": 3447.36,
+        "end": 3455.36
+    },
+    {
+        "text": " Y te va a dar la buena solución. Ok, vamos a ver un ejemplo. Entonces esa primera cosa. ¿Y qué pasa?",
+        "start": 3455.36,
+        "end": 3464.36
+    },
+    {
+        "text": " Cuando yo voy a escaresar esta de matriz. Acá es la matriz ampliada de un sistema homogéneo. ¿Qué pasa si yo intercambió dos filas acá?",
+        "start": 3464.36,
+        "end": 3473.36
+    },
+    {
+        "text": " No cambia nada en la última columna. Si yo multiplico una fila por un número nodulo, ¿qué pasa? No cambia la última columna y si yo sumo en la fila,",
+        "start": 3473.36,
+        "end": 3484.36
+    },
+    {
+        "text": " multiplio otra fila, no cambia nada. Es decir, durante todo el proceso de escalerización, la fila, la columna de los términos independientes siempre es nulla.",
+        "start": 3484.36,
+        "end": 3496.36
+    },
+    {
+        "text": " No sé, nunca cambia. Ok. Durante el proceso de escalerización.",
+        "start": 3496.36,
+        "end": 3504.36
+    },
+    {
+        "text": " La última columna de la matriz ampliada es decir, la columna que corresponde los términos independientes.",
+        "start": 3514.36,
+        "end": 3537.36
+    },
+    {
+        "text": " Siempre es nulla. ¿Cuál es la conclusión para la persona que implementa el algoritmo? No sé la necesidad tenerla en cuenta.",
+        "start": 3538.36,
+        "end": 3559.36
+    },
+    {
+        "text": " Ok. Es decir, ¿cómo esta columna ya se que nunca se va a cambiar? Yo sólo considerar la primera parte. Esta parte no se quiere para dar.",
+        "start": 3560.36,
+        "end": 3570.36
+    },
+    {
+        "text": " Pueden sacarlo en la resolución. Y esto es sólo una columna menos. No es mucho trabajo menos.",
+        "start": 3570.36,
+        "end": 3579.36
+    },
+    {
+        "text": " Pero al menos esto permite ahorrar espacio sobre la hoja de papel. Ok.",
+        "start": 3580.36,
+        "end": 3587.36
+    },
+    {
+        "text": " Y la tercera cosa que es importante es que en particular el número de escalones siempre tendremos peigua la peprima.",
+        "start": 3587.36,
+        "end": 3600.36
+    },
+    {
+        "text": " Porque como la última columna siempre es nulla no puede introducir un nuevo escalón.",
+        "start": 3601.36,
+        "end": 3607.36
+    },
+    {
+        "text": " Y esto muestra que el sistema es compatible en particular.",
+        "start": 3608.36,
+        "end": 3614.36
+    },
+    {
+        "text": " Los rangos de A y de A B son iguales.",
+        "start": 3614.36,
+        "end": 3636.36
+    },
+    {
+        "text": " Es decir, P es igual a peprima con las notaciones anteriores. Claro. Porque si yo tengo una matriz escalizada con escalones y si mi última columna es nulla no puede introducir un nuevo escalón.",
+        "start": 3637.36,
+        "end": 3664.36
+    },
+    {
+        "text": " No puede aparecer un nuevo escalón. Ok. ¿Cómo es nulla?",
+        "start": 3665.36,
+        "end": 3671.36
+    },
+    {
+        "text": " Entonces tenemos P y igual a peprima. Lo que es otro argumento para decir que el sistema es compatible.",
+        "start": 3671.36,
+        "end": 3679.36
+    },
+    {
+        "text": " Ya lo sabíamos. Ok. Pero es una buena noticia que descubra que el sistema es compatible por otra razón.",
+        "start": 3679.36,
+        "end": 3687.36
+    },
+    {
+        "text": " Ok. Entonces, no hay que hacer otras cosas. Es solo una simplificación.",
+        "start": 3688.36,
+        "end": 3693.36
+    },
+    {
+        "text": " El caso de los sistemas homogéneos solo permite hacer algunas simplificaciones de cuenta.",
+        "start": 3693.36,
+        "end": 3699.36
+    },
+    {
+        "text": " Es decir, sabemos antes de hacer cualquier cosa sabemos que el sistema es compatible.",
+        "start": 3699.36,
+        "end": 3705.36
+    },
+    {
+        "text": " Entonces solo tendremos dos opciones. Obiene es compatible determinado o bien es compatible y determinado.",
+        "start": 3705.36,
+        "end": 3711.36
+    },
+    {
+        "text": " Eso único que queremos que determinadas no tenemos no hay un tercer caso.",
+        "start": 3712.36,
+        "end": 3716.36
+    },
+    {
+        "text": " Y cuando se hace la resolución no se necesita usar la última columna. Ok.",
+        "start": 3716.36,
+        "end": 3723.36
+    },
+    {
+        "text": " Vamos a terminar con un ejemplo de sistema homogéneo para ver cómo funciona la práctica.",
+        "start": 3723.36,
+        "end": 3731.36
+    },
+    {
+        "text": " Ok. Ejemplo de un sistema homogéneo.",
+        "start": 3731.36,
+        "end": 3737.36
+    },
+    {
+        "text": " Voy a unciera este sistema. S. Ok. S x más y menos z igual a 0.",
+        "start": 3742.36,
+        "end": 3763.36
+    },
+    {
+        "text": " S x más y menos 2 z igual a 0.",
+        "start": 3764.36,
+        "end": 3770.36
+    },
+    {
+        "text": " S x más 2 y y acá menos 3 z igual a 0.",
+        "start": 3770.36,
+        "end": 3779.36
+    },
+    {
+        "text": " Acá tengo 0 es un sistema homogéneo. Ok. Ahora vamos a resolverlo.",
+        "start": 3779.36,
+        "end": 3789.36
+    },
+    {
+        "text": " Matriz ampliada es 1 1 2 1 1 2 menos 1 menos 2 menos 3.",
+        "start": 3790.36,
+        "end": 3804.36
+    },
+    {
+        "text": " Y acá como soy un poquito involuduo voy a poner la última columna.",
+        "start": 3804.36,
+        "end": 3811.36
+    },
+    {
+        "text": " Solo para ver lo que hace. Para verificar que todo funciona bien.",
+        "start": 3812.36,
+        "end": 3818.36
+    },
+    {
+        "text": " Solo para por verificar que todo funciona bien. Ok. Tenemos ese sistema.",
+        "start": 3818.36,
+        "end": 3825.36
+    },
+    {
+        "text": " Ahora hay que escarrizarlo. Eso sabemos hacerlo. Entonces, ¿qué voy a hacer?",
+        "start": 3825.36,
+        "end": 3829.36
+    },
+    {
+        "text": " Voy a restar la primera fila a la segunda y dos veces a la primera fila al tercero.",
+        "start": 3829.36,
+        "end": 3835.36
+    },
+    {
+        "text": " Para cancelar estos dos coeficientes. Acá mi ventana es todo esto.",
+        "start": 3836.36,
+        "end": 3842.36
+    },
+    {
+        "text": " Y yo parzo de esto, ya no es un lo que no necesito intercambiar nada.",
+        "start": 3842.36,
+        "end": 3847.36
+    },
+    {
+        "text": " Y voy a usar esta fila como pivot para cancelar este número y este número.",
+        "start": 3847.36,
+        "end": 3854.36
+    },
+    {
+        "text": " Ok. 1 1 menos 1 0. Esto es mi fila 1 y la fila 2 será la fila 2 menos f1.",
+        "start": 3854.36,
+        "end": 3868.36
+    },
+    {
+        "text": " Vamos a ver lo que pasa. 1 menos 1 0. 1 menos 1 0.",
+        "start": 3868.36,
+        "end": 3874.36
+    },
+    {
+        "text": " 2 menos 1. Es decir, 2 más 1. Es decir, 1 0 menos 0.",
+        "start": 3874.36,
+        "end": 3883.36
+    },
+    {
+        "text": " ¿Cero? ¿Qué es esa ofresa?",
+        "start": 3883.36,
+        "end": 3886.36
+    },
+    {
+        "text": " Acá. Ahora fila 3 voy a poner la fila 3 menos 2 veces la fila 1.",
+        "start": 3886.36,
+        "end": 3896.36
+    },
+    {
+        "text": " Ok. 2 menos 2 0. Lo que quería. 2 menos 2. Tenemos suerte, es gero.",
+        "start": 3896.36,
+        "end": 3904.36
+    },
+    {
+        "text": " Minos 3 menos 2. Es menos 3 más 2. Es menos 1.",
+        "start": 3904.36,
+        "end": 3913.36
+    },
+    {
+        "text": " 0 menos 2 por 0. 0. ¿Qué es esa ofresa?",
+        "start": 3913.36,
+        "end": 3919.36
+    },
+    {
+        "text": " Suerte para verificar que esto funciona bien, que la última columna nunca se cambia.",
+        "start": 3919.36,
+        "end": 3923.36
+    },
+    {
+        "text": " Ok. Ahora, ya tengo 2 escalones. Me falta acá que voy a hacer. Voy a sumarla.",
+        "start": 3924.36,
+        "end": 3929.36
+    },
+    {
+        "text": " 1 1 menos 1. Acá 0 0 menos 1 acá.",
+        "start": 3932.36,
+        "end": 3943.36
+    },
+    {
+        "text": " Y voy a sumar la fila 3. Voy a sumar la fila 2 para obtener 0 0 0 0 0 0.",
+        "start": 3943.36,
+        "end": 3950.36
+    },
+    {
+        "text": " Me olvidé decir que acá es fila 3. Es la fila 3 más la fila 2.",
+        "start": 3950.36,
+        "end": 3956.36
+    },
+    {
+        "text": " O sea, tengo que verificar que acá me equivoqué.",
+        "start": 3956.36,
+        "end": 3960.36
+    },
+    {
+        "text": " ¿Me ven la fila 2?",
+        "start": 3960.36,
+        "end": 3962.36
+    },
+    {
+        "text": " Ah, tienes razón.",
+        "start": 3962.36,
+        "end": 3964.36
+    },
+    {
+        "text": " Minos la fila 2. Entonces, obtengo 0 menos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ¿Qué es esa ofresa?",
+        "start": 3964.36,
+        "end": 3974.36
+    },
+    {
+        "text": " Ok. Entonces, pueden ver que perdi un montón de tinta.",
+        "start": 3974.36,
+        "end": 3979.36
+    },
+    {
+        "text": " Escribiendo la última columna. Entonces, si quieren ser un poquito más inteligentes que show,",
+        "start": 3980.36,
+        "end": 3987.36
+    },
+    {
+        "text": " no tienen que escribir la última columna. No sirve para nada. Entienden la idea nunca sirve.",
+        "start": 3987.36,
+        "end": 3993.36
+    },
+    {
+        "text": " Siempre es nulla, entonces la pueden omitir.",
+        "start": 3993.36,
+        "end": 3997.36
+    },
+    {
+        "text": " Y yo quiero después hacer una forma reducida y no es difícil que ver la forma reducida esta siguiente.",
+        "start": 3997.36,
+        "end": 4006.36
+    },
+    {
+        "text": " Acá se reemplazó mi menos 1 por 1.",
+        "start": 4006.36,
+        "end": 4013.36
+    },
+    {
+        "text": " Ok. Camio de signo. Y acá sueno a la primera fila esta fila para matar a este menos 1.",
+        "start": 4013.36,
+        "end": 4024.36
+    },
+    {
+        "text": " Ok. Entonces, obtengo 0 acá. Y acá lo cambiaba. Ok.",
+        "start": 4024.36,
+        "end": 4032.36
+    },
+    {
+        "text": " Esto es la forma reducida.",
+        "start": 4032.36,
+        "end": 4035.36
+    },
+    {
+        "text": " Acá es una matriz esta reizada reducida. Entienden.",
+        "start": 4035.36,
+        "end": 4042.36
+    },
+    {
+        "text": " Acá y se dos superaciones.",
+        "start": 4042.36,
+        "end": 4050.36
+    },
+    {
+        "text": " Ok. Y ahora alguien concluir. Tenemos ese sistema.",
+        "start": 4050.36,
+        "end": 4056.36
+    },
+    {
+        "text": " Entonces, sabemos que el sistema inicial es equivalente a este sistema.",
+        "start": 4056.36,
+        "end": 4061.36
+    },
+    {
+        "text": " Que es x más y es igual a 0 y 7 es igual a 0.",
+        "start": 4061.36,
+        "end": 4074.36
+    },
+    {
+        "text": " Lo que yo escribo en esta forma.",
+        "start": 4074.36,
+        "end": 4080.36
+    },
+    {
+        "text": " Acá tenemos un sistema compatible determinado o indeterminado.",
+        "start": 4080.36,
+        "end": 4084.36
+    },
+    {
+        "text": " Acá es indeterminado. Entonces, hago el truco usual que consiste en mantener la primera columna cada vez,",
+        "start": 4085.36,
+        "end": 4093.36
+    },
+    {
+        "text": " que la escalón y pongo el y por la derecha.",
+        "start": 4093.36,
+        "end": 4098.360000000001
+    },
+    {
+        "text": " Y que pasa? Y es para meterlo ahora.",
+        "start": 4098.360000000001,
+        "end": 4102.360000000001
+    },
+    {
+        "text": " Ok. Tenemos acá rango grado de libertad.",
+        "start": 4102.360000000001,
+        "end": 4109.360000000001
+    },
+    {
+        "text": " Ok. Rango grado de libertad.",
+        "start": 4110.36,
+        "end": 4118.36
+    },
+    {
+        "text": " Entonces, yo puedo escribir al conjunto solucion y lo voy a escribir al fa,",
+        "start": 4118.36,
+        "end": 4124.36
+    },
+    {
+        "text": " solo para cambiar mis detrás.",
+        "start": 4124.36,
+        "end": 4127.36
+    },
+    {
+        "text": " El conjunto solucion es x es igual a menos al fa",
+        "start": 4127.36,
+        "end": 4138.36
+    },
+    {
+        "text": " y es alpha y 7a. Acá yo lo reescribo.",
+        "start": 4138.36,
+        "end": 4143.36
+    },
+    {
+        "text": " Y igual a 0 es 0.",
+        "start": 4143.36,
+        "end": 4147.36
+    },
+    {
+        "text": " Y acá depende de un parámetro.",
+        "start": 4147.36,
+        "end": 4152.36
+    },
+    {
+        "text": " Alpha es cualquier.",
+        "start": 4152.36,
+        "end": 4158.36
+    },
+    {
+        "text": " Ok.",
+        "start": 4158.36,
+        "end": 4160.36
+    },
+    {
+        "text": " Y esto me da el conjunto solucion que queremos.",
+        "start": 4160.36,
+        "end": 4164.36
+    },
+    {
+        "text": " Ahora podemos usar la forma vectorial, porque sabemos la forma vectorial.",
+        "start": 4165.36,
+        "end": 4173.36
+    },
+    {
+        "text": " Yo quiero descomponer esto en la parte que depende de alpha y la parte constante.",
+        "start": 4173.36,
+        "end": 4180.36
+    },
+    {
+        "text": " Ok. Entonces, la solucion general es de esta forma x y 7a, es de la forma.",
+        "start": 4180.36,
+        "end": 4193.36
+    },
+    {
+        "text": " ¿Cuál es la parte que depende de alpha?",
+        "start": 4193.36,
+        "end": 4196.36
+    },
+    {
+        "text": " Acá es menos 1, 1 y 0.",
+        "start": 4196.36,
+        "end": 4199.36
+    },
+    {
+        "text": " Ok. Partido que depende de alpha.",
+        "start": 4199.36,
+        "end": 4205.36
+    },
+    {
+        "text": " ¿Y cuál es la parte constante?",
+        "start": 4205.36,
+        "end": 4209.36
+    },
+    {
+        "text": " 0, 0, 0.",
+        "start": 4209.36,
+        "end": 4212.36
+    },
+    {
+        "text": " Y sabemos que tenemos la solucion particular 0, 0, que aparece naturalmente.",
+        "start": 4212.36,
+        "end": 4217.36
+    },
+    {
+        "text": " Porque no hay parte constante.",
+        "start": 4217.36,
+        "end": 4220.36
+    },
+    {
+        "text": " Ok. Se descubre que acá tenemos que este conjunto, que solo depende de un parámetro,",
+        "start": 4221.36,
+        "end": 4229.36
+    },
+    {
+        "text": " del show es una recta, es una recta en el espacio.",
+        "start": 4229.36,
+        "end": 4233.36
+    },
+    {
+        "text": " Acá estamos en un espacio de dimensión 3.",
+        "start": 4233.36,
+        "end": 4236.36
+    },
+    {
+        "text": " Tenemos suerte.",
+        "start": 4236.36,
+        "end": 4238.36
+    },
+    {
+        "text": " Acá tenemos un espacio de dimensión 3.",
+        "start": 4238.36,
+        "end": 4242.36
+    },
+    {
+        "text": " Y esto es una recta con vector y director, veremos todo esto después.",
+        "start": 4242.36,
+        "end": 4247.36
+    },
+    {
+        "text": " Solo es para anunciar los temas.",
+        "start": 4247.36,
+        "end": 4250.36
+    },
+    {
+        "text": " Es una recta de vector director, menos 1, 1, 0.",
+        "start": 4250.36,
+        "end": 4254.36
+    },
+    {
+        "text": " ¿Y qué pasa por el origen?",
+        "start": 4254.36,
+        "end": 4257.36
+    },
+    {
+        "text": " Y en general, todos los conjuntos soluciones de los sistemas homogéneos pasan por el origen,",
+        "start": 4257.36,
+        "end": 4264.36
+    },
+    {
+        "text": " el origen es la solucion nula.",
+        "start": 4264.36,
+        "end": 4267.36
+    },
+    {
+        "text": " Ok.",
+        "start": 4267.36,
+        "end": 4269.36
+    },
+    {
+        "text": " Y por el vera que acá no cambia nada el método de resolución.",
+        "start": 4269.36,
+        "end": 4272.36
+    },
+    {
+        "text": " Apliqué el método de resolución que se va aplicada para los ejemplos anteriores.",
+        "start": 4272.36,
+        "end": 4276.36
+    },
+    {
+        "text": " Y como acá tenía 0, 0, 0, 0, 0, obtuve una solucion donde no había parte constante.",
+        "start": 4276.36,
+        "end": 4286.36
+    },
+    {
+        "text": " Y cuando escribí en forma de combinación obtuve acá la parte constante de granula",
+        "start": 4286.36,
+        "end": 4294.36
+    },
+    {
+        "text": " y descubro de vuelta que ceró de ra una solucion.",
+        "start": 4294.36,
+        "end": 4298.36
+    },
+    {
+        "text": " Entonces hay un montón de argumentos que me decían que ceró de ra solucion.",
+        "start": 4299.36,
+        "end": 4303.36
+    },
+    {
+        "text": " Acá sistema homogéneo 0, 0, 0 es solucion.",
+        "start": 4303.36,
+        "end": 4308.36
+    },
+    {
+        "text": " Acá tomo alpha igual a 0, 0, 0 es solucion y acá aparece también como solucion particular.",
+        "start": 4308.36,
+        "end": 4315.36
+    },
+    {
+        "text": " Ok.",
+        "start": 4315.36,
+        "end": 4316.36
+    },
+    {
+        "text": " Y esto termina la parte de la resolución de los sistemas iniales.",
+        "start": 4316.36,
+        "end": 4321.36
+    },
+    {
+        "text": " Ahora me quedan 1,000 todos para concluir y lo que vamos a hacer la próxima vez.",
+        "start": 4321.36,
+        "end": 4329.36
+    },
+    {
+        "text": " A partir de la semana que viene entonces viernes tienen el primer cuestionario que viene que sale.",
+        "start": 4329.36,
+        "end": 4335.36
+    },
+    {
+        "text": " Y a partir de la semana que viene vamos a ver matrices.",
+        "start": 4335.36,
+        "end": 4338.36
+    },
+    {
+        "text": " Es el problema en matemática, es que ya empezamos a ver matrices, un poquito.",
+        "start": 4338.36,
+        "end": 4344.36
+    },
+    {
+        "text": " Usamos las matrices como una herramienta para resolver los sistemas.",
+        "start": 4344.36,
+        "end": 4349.36
+    },
+    {
+        "text": " Y saben que los matemáticos son gente viciosa cuando le das un dedo de comer el brazo.",
+        "start": 4349.36,
+        "end": 4358.36
+    },
+    {
+        "text": " Ok.",
+        "start": 4358.36,
+        "end": 4359.36
+    },
+    {
+        "text": " Y esto que vamos a hacer, pusimos el dedo adentro de las matrices y a partir de la lunes vamos a poner el brazo adentro.",
+        "start": 4359.36,
+        "end": 4367.36
+    },
+    {
+        "text": " Vamos a ver que las matrices son objetos matemáticos muy interesantes en sí.",
+        "start": 4367.36,
+        "end": 4373.36
+    },
+    {
+        "text": " Ok. Gracias. Nos vemos martes.",
+        "start": 4373.36,
+        "end": 4376.36
+    },
+    {
+        "text": " Gracias.",
+        "start": 4379.36,
+        "end": 4380.36
+    }
+]

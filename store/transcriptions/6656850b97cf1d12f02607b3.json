@@ -1,0 +1,2507 @@
+[
+    {
+        "text": " Ok, buenas noches, hoy vamos a seguir con el problema de la inversión de matriz.",
+        "start": 0.0,
+        "end": 28.0
+    },
+    {
+        "text": " Entonces, voy a recordar algunas cosas, es que recordatorio.",
+        "start": 28.0,
+        "end": 40.0
+    },
+    {
+        "text": " Una matriz cuadrada, eso que vimos, ¿sabes pasar?",
+        "start": 40.0,
+        "end": 52.0
+    },
+    {
+        "text": " A, es invertible.",
+        "start": 52.0,
+        "end": 64.0
+    },
+    {
+        "text": " Cuando existe una matriz de mismo tamaño,",
+        "start": 64.0,
+        "end": 76.0
+    },
+    {
+        "text": " tenemos dos cosas, a, b, es igual a la identidad de n,",
+        "start": 76.0,
+        "end": 86.0
+    },
+    {
+        "text": " porque estamos trabajando con la tristeza de tamaño n por n, y b también es igual a i.",
+        "start": 86.0,
+        "end": 96.0
+    },
+    {
+        "text": " Y vimos dos cosas, las observaciones, es que cuando b existe, es única y se escribe a la menos 1.",
+        "start": 96.0,
+        "end": 115.0
+    },
+    {
+        "text": " Y la segunda cosa que vimos, es que solo se necesita verificar una de ambas igualidades.",
+        "start": 115.0,
+        "end": 143.0
+    },
+    {
+        "text": " Pues, son equivalentes, es un lema, por un lema admitido.",
+        "start": 143.0,
+        "end": 163.0
+    },
+    {
+        "text": " Ahora, ¿cuál es el problema que queremos ver, cómo se puede invertir?",
+        "start": 163.0,
+        "end": 179.0
+    },
+    {
+        "text": " Aquí, la sensicia es decir, data una matriz, a, de tamaño n por n, queremos asar, si existe una matriz x.",
+        "start": 179.0,
+        "end": 207.0
+    },
+    {
+        "text": " X, de mismo tamaño, tal que, a por X, es igual a la identidad.",
+        "start": 209.0,
+        "end": 221.0
+    },
+    {
+        "text": " Es una igualdad entre dos matrices cuadradas de tamaño n por n, es lo que queremos.",
+        "start": 221.0,
+        "end": 228.0
+    },
+    {
+        "text": " Y la observación es que, si yo escribo, x por columnas, es decir, x1, primera columna,",
+        "start": 228.0,
+        "end": 239.0
+    },
+    {
+        "text": " x2, segunda columna, etcétera, xn, acá uso la convención que, cuando pongo un exponente, x a la, significa la js y mac columna.",
+        "start": 239.0,
+        "end": 254.0
+    },
+    {
+        "text": " Aquí es una discomposición de x, es x que queremos asar, asar una matriz cuadrada de n por n entradas, es lo mismo que, a, de n columnas de n entradas.",
+        "start": 254.0,
+        "end": 266.0
+    },
+    {
+        "text": " Entonces, se observa que, a x, es un lema que ya vimos anteriormente, es lo mismo que, a por la primera columna, y esto es una columna, después, a por la segunda columna, y esto es una segunda, otra columna, etcétera, hasta, a por la n e cima columna.",
+        "start": 267.0,
+        "end": 293.0
+    },
+    {
+        "text": " Entonces, resolver esta ecuación, ese equivalente a resolver cada sistema en cada columna.",
+        "start": 294.0,
+        "end": 305.0
+    },
+    {
+        "text": " Ok, es decir, acabo de escribir n e n, es decir, resolver a x igual a isu n, se reduce a resolver n sistemas lineales.",
+        "start": 305.0,
+        "end": 330.0
+    },
+    {
+        "text": " ¿Qué son?",
+        "start": 331.0,
+        "end": 335.0
+    },
+    {
+        "text": " Primera sistema a por la primera columna de x, es igual a primera columna de la identidad, entienden la primera columna de la identidad, la primera columna de la identidad es 1, 0, 0, 0, 0, 0, 0.",
+        "start": 336.0,
+        "end": 354.0
+    },
+    {
+        "text": " Según la columna de la identidad, será 0, 1, 0, 0, 0, 0, 0, 0, 0. Ok, tercera columna, 0, 0, 1, 0, 0, 0. Ok, acá hay que recordar que la identidad es la llego en la 1.",
+        "start": 355.0,
+        "end": 375.0
+    },
+    {
+        "text": " Entonces, esta yo la puedo cortar separar en n columnas. Entonces, etcétera, hasta el sistema a x n, igual a i n e cima, es decir, la n e cima columna, acá es esta columna.",
+        "start": 375.0,
+        "end": 393.0
+    },
+    {
+        "text": " Con todas las columnas internales, ok. Entonces, todo esto para decir que solo basta verificar cómo se pueden resolver estos n sistemas lineales.",
+        "start": 393.0,
+        "end": 415.0
+    },
+    {
+        "text": " Ok, entonces normalmente tendríamos n matrices ampliadas, es decir, la primera matrices ampliada es de esta forma.",
+        "start": 415.0,
+        "end": 424.0
+    },
+    {
+        "text": " Hasta la última matrices ampliada es de esta forma, y hay que resolver todos estos sistemas en paralelo.",
+        "start": 427.0,
+        "end": 438.0
+    },
+    {
+        "text": " Ok, pero para reducir la cantidad de trabajo se observa que para resolver estos sistemas hay que escadenrizar a la matrices, a, es un problema de escadenización.",
+        "start": 439.0,
+        "end": 451.0
+    },
+    {
+        "text": " Pero es claro que las operaciones que vamos a hacer acá, seran identicas en todos los otros problemas.",
+        "start": 452.0,
+        "end": 457.0
+    },
+    {
+        "text": " Porque esta misma matrices, a que vamos a escadenrizar, es decir, esta cosa solo no está involucrado en el proceso de reosolución, la segunda parte.",
+        "start": 458.0,
+        "end": 469.0
+    },
+    {
+        "text": " Ok, entonces en la práctica lo que vamos a hacer es resolver la idea es si cuando se resuelve,",
+        "start": 470.0,
+        "end": 479.0
+    },
+    {
+        "text": " es que vamos a obtener n sistemas, a primera columna de la identidad, a n e sima columna de la identidad, y vamos a resolver en paralelo.",
+        "start": 487.0,
+        "end": 511.0
+    },
+    {
+        "text": " Acá vamos a obtener una forma escadenrizada a, y una matriz columna que va a surgir de la resolución que será B1.",
+        "start": 512.0,
+        "end": 523.0
+    },
+    {
+        "text": " Y acá tendremos la misma matrices escadenizada, porque vamos a aplicar los mismos pasos de escadenización y vamos a obtener B sub-E.",
+        "start": 524.0,
+        "end": 535.0
+    },
+    {
+        "text": " Y al final, si la matrices E es en forma escadenizada con n escalones, sabremos que todos estos sistemas son compatibles determinados.",
+        "start": 536.0,
+        "end": 550.0
+    },
+    {
+        "text": " Entonces tendremos una solución para cada sistema, y además si esta matrices es escadenizada a la reducida, ¿qué pasa?",
+        "start": 551.0,
+        "end": 562.0
+    },
+    {
+        "text": " Y si tiene n escalones, una matriz cuadrada en forma escadenizada a la reducida que tiene n escalones.",
+        "start": 563.0,
+        "end": 573.0
+    },
+    {
+        "text": " Es una diagonal E1, es la identidad.",
+        "start": 574.0,
+        "end": 578.0
+    },
+    {
+        "text": " Entonces si además esta en forma de ser esa la reducida, acá tendremos la identidad y tendremos directamente las n soluciones que son n columnas acá.",
+        "start": 579.0,
+        "end": 592.0
+    },
+    {
+        "text": " Y después tendremos la solución, esa intuición.",
+        "start": 593.0,
+        "end": 598.0
+    },
+    {
+        "text": " En la práctica no se hace así, porque es muy pesado resolver n sistemas, lo que se hace es juntar todas las cuentas.",
+        "start": 599.0,
+        "end": 610.0
+    },
+    {
+        "text": " Entonces lo que vamos a hacer es lo siguiente.",
+        "start": 611.0,
+        "end": 615.0
+    },
+    {
+        "text": " Es que vamos a partir de A y vamos a juntar las n columnas de la identidad y poner acá la identidad.",
+        "start": 621.0,
+        "end": 630.0
+    },
+    {
+        "text": " Acá tenemos dos matrices cuadradas.",
+        "start": 630.0,
+        "end": 633.0
+    },
+    {
+        "text": " Y vamos a hacer la escaleralización como siempre.",
+        "start": 635.0,
+        "end": 639.0
+    },
+    {
+        "text": " La única cosa que cambia es que en lugar de tener una terminal de los términos independientes, tenemos una matriz cuadrada de términos independientes que serán n columnas de términos independientes.",
+        "start": 640.0,
+        "end": 654.0
+    },
+    {
+        "text": " Y vamos a alcanzar a una forma escadenizada porque ya sabemos que siempre existe.",
+        "start": 655.0,
+        "end": 661.0
+    },
+    {
+        "text": " Y la matriz B cuadrada acá tendrá primera columna esta, segunda columna esta, última columna esta.",
+        "start": 663.0,
+        "end": 670.0
+    },
+    {
+        "text": " Es como presentar el cálculo para simplificar las cosas.",
+        "start": 671.0,
+        "end": 674.0
+    },
+    {
+        "text": " Arremos una vez la escaleralización en lugar de hacerla n veces.",
+        "start": 675.0,
+        "end": 679.0
+    },
+    {
+        "text": " Entonces esto nos da el algoritmo, algoritmo de inversión de matriz.",
+        "start": 680.0,
+        "end": 687.0
+    },
+    {
+        "text": " Después vamos a ver cómo extraer la inversión de la escaleralización.",
+        "start": 705.0,
+        "end": 711.0
+    },
+    {
+        "text": " Ok, método de calculo de la matriz inversa.",
+        "start": 712.0,
+        "end": 715.0
+    },
+    {
+        "text": " De hecho es más que un método de calculo de inversión.",
+        "start": 724.0,
+        "end": 727.0
+    },
+    {
+        "text": " El método va también permitirnos verificar si es invertible o no.",
+        "start": 727.0,
+        "end": 733.0
+    },
+    {
+        "text": " Es decir, tendremos dos resultados posibles.",
+        "start": 734.0,
+        "end": 736.0
+    },
+    {
+        "text": " O viene el algoritmo nos va a les girar a disculpa esta matriz no es invertible.",
+        "start": 737.0,
+        "end": 741.0
+    },
+    {
+        "text": " Entonces, rerespo esta negativa.",
+        "start": 742.0,
+        "end": 744.0
+    },
+    {
+        "text": " O bien nos va a decir dicha matriz es invertible y aquí va la inversa. Esto que queremos.",
+        "start": 745.0,
+        "end": 751.0
+    },
+    {
+        "text": " Metodo de calculo de hal.",
+        "start": 752.0,
+        "end": 755.0
+    },
+    {
+        "text": " Entonces es dada una matriz cuadrada.",
+        "start": 756.0,
+        "end": 762.0
+    },
+    {
+        "text": " Yo recuerdo que la inversa solo tiene sentido para las matricias cuadradas.",
+        "start": 763.0,
+        "end": 767.0
+    },
+    {
+        "text": " Entonces si tienen una matriz 3x5 y que hablan de matriz inversa se va a morir un montón de estudiantes.",
+        "start": 768.0,
+        "end": 777.0
+    },
+    {
+        "text": " Ok, dada una matriz cuadrada.",
+        "start": 778.0,
+        "end": 782.0
+    },
+    {
+        "text": " Primera cosa es formar la matriz doble.",
+        "start": 783.0,
+        "end": 786.0
+    },
+    {
+        "text": " Lo que chamo es su matriz doble porque hay dos matricias adentro.",
+        "start": 789.0,
+        "end": 793.0
+    },
+    {
+        "text": " Y los términos sin independientes son exactamente la identidad.",
+        "start": 796.0,
+        "end": 800.0
+    },
+    {
+        "text": " Ok, y esta es una matriz super sencisa para escribir.",
+        "start": 801.0,
+        "end": 806.0
+    },
+    {
+        "text": " No hay que pensar. Es decir, se ha diagonal de un.",
+        "start": 807.0,
+        "end": 809.0
+    },
+    {
+        "text": " Ok, formar la dicha matriz y después aplicar el método de escalización.",
+        "start": 810.0,
+        "end": 824.0
+    },
+    {
+        "text": " Hasta que el método de escalización de buche por venios no es cualquier método de ese método que ya vimos.",
+        "start": 824.0,
+        "end": 841.0
+    },
+    {
+        "text": " A la matriz doble.",
+        "start": 842.0,
+        "end": 848.0
+    },
+    {
+        "text": " A y.",
+        "start": 852.0,
+        "end": 855.0
+    },
+    {
+        "text": " Hasta que la parte izquierda.",
+        "start": 856.0,
+        "end": 861.0
+    },
+    {
+        "text": " Este en forma es realizada.",
+        "start": 861.0,
+        "end": 876.0
+    },
+    {
+        "text": " Es decir, A y C es realizada sobre una forma es realizada.",
+        "start": 881.0,
+        "end": 889.0
+    },
+    {
+        "text": " Y aparece una nueva matriz que surgía de todas las operaciones que hicimos sobre identidad.",
+        "start": 890.0,
+        "end": 895.0
+    },
+    {
+        "text": " Acá aplicamos algunas operaciones elementales para transformar a en E y de modo en el mismo momento todas estas operaciones se aplican a la identidad que se transforma en una matriz B.",
+        "start": 896.0,
+        "end": 911.0
+    },
+    {
+        "text": " Y no sabemos nada sobre esta matriz B.",
+        "start": 912.0,
+        "end": 914.0
+    },
+    {
+        "text": " Y ahora hay dos conclusiones.",
+        "start": 916.0,
+        "end": 919.0
+    },
+    {
+        "text": " Si E tiene menos, si E tiene N escalones.",
+        "start": 920.0,
+        "end": 929.0
+    },
+    {
+        "text": " Entonces, A es invertible.",
+        "start": 929.0,
+        "end": 936.0
+    },
+    {
+        "text": " Primero la cosa. Además, si E es en forma es realizada.",
+        "start": 937.0,
+        "end": 952.0
+    },
+    {
+        "text": " Si E esta en forma es realizada. En forma reducida.",
+        "start": 953.0,
+        "end": 959.0
+    },
+    {
+        "text": " Tenemos dos cosas. Si acá tengo una matriz cuadrada en forma es realizada.",
+        "start": 964.0,
+        "end": 973.0
+    },
+    {
+        "text": " La matriz B es la inversión.",
+        "start": 974.0,
+        "end": 980.0
+    },
+    {
+        "text": " Es decir, es el resultado del sistema porque acá tenemos identidad.",
+        "start": 980.0,
+        "end": 985.0
+    },
+    {
+        "text": " Entonces, la primera columna es esta columna. E N es y y si yo junto todo obtengo la matriz inversa.",
+        "start": 986.0,
+        "end": 1008.0
+    },
+    {
+        "text": " Y si E tiene menos de N escalones.",
+        "start": 1009.0,
+        "end": 1015.0
+    },
+    {
+        "text": " Entonces, lo que yo puedo decir es a no es invertible.",
+        "start": 1024.0,
+        "end": 1031.0
+    },
+    {
+        "text": " Y por qué? Porque si E tiene N menos de N escalones.",
+        "start": 1032.0,
+        "end": 1039.0
+    },
+    {
+        "text": " Estos sistemas en general no serán compatibles o no serán compatibles indeterminados.",
+        "start": 1040.0,
+        "end": 1047.0
+    },
+    {
+        "text": " Entonces, no tendremos solución única. Y si la identidad existe, necesariamente hay solución única.",
+        "start": 1050.0,
+        "end": 1057.0
+    },
+    {
+        "text": " Si hay inversa existe.",
+        "start": 1058.0,
+        "end": 1064.0
+    },
+    {
+        "text": " Entonces, esto es el método de inversión de matriz. Ahora vamos a hacer un ejemplo.",
+        "start": 1064.0,
+        "end": 1073.0
+    },
+    {
+        "text": " Vamos a inversión de la matriz.",
+        "start": 1073.0,
+        "end": 1078.0
+    },
+    {
+        "text": " Entonces, pueden ver que es un algoritmo que ya conocemos. Solo estamos ampliando el algoritmo para que tenga N columnas de términos independientes.",
+        "start": 1078.0,
+        "end": 1088.0
+    },
+    {
+        "text": " Pero no cambia las cosas que vamos a hacer.",
+        "start": 1088.0,
+        "end": 1093.0
+    },
+    {
+        "text": " Ok, ejemplo.",
+        "start": 1093.0,
+        "end": 1100.0
+    },
+    {
+        "text": " ¿Ejemplo? ¿Quieres un nivel de la matriz?",
+        "start": 1101.0,
+        "end": 1107.0
+    },
+    {
+        "text": " A que es 1, 0, 2, 2, 1, 3, menos 1.",
+        "start": 1107.0,
+        "end": 1129.0
+    },
+    {
+        "text": " Ok, ahora se puede ver que esta matriz es inversible o no.",
+        "start": 1129.0,
+        "end": 1136.0
+    },
+    {
+        "text": " Son capaces de terminar si en inversible solo mirando la cara de matriz.",
+        "start": 1136.0,
+        "end": 1143.0
+    },
+    {
+        "text": " Ok, no son capaces. Yo tampoco.",
+        "start": 1143.0,
+        "end": 1147.0
+    },
+    {
+        "text": " Es decir, si me da una matriz, si nada particular, en general no puedo determinar nada.",
+        "start": 1147.0,
+        "end": 1154.0
+    },
+    {
+        "text": " Es decir, cuando yo veo esta matriz, mi respuesta es que nada.",
+        "start": 1155.0,
+        "end": 1161.0
+    },
+    {
+        "text": " Ok, entonces, si tuviera una columna nula, yo podría decir, no es inversible.",
+        "start": 1161.0,
+        "end": 1166.0
+    },
+    {
+        "text": " Si tuviera una fila nula, no es inversible.",
+        "start": 1166.0,
+        "end": 1172.0
+    },
+    {
+        "text": " Si tuviera dos filas iguales o dos columnas iguales, ya vimos que no sería inversible.",
+        "start": 1172.0,
+        "end": 1177.0
+    },
+    {
+        "text": " Pero acá como nada de esto se pasa, no podemos decir nada.",
+        "start": 1177.0,
+        "end": 1181.0
+    },
+    {
+        "text": " Quizás es inversible, quizá no lo hagas.",
+        "start": 1182.0,
+        "end": 1185.0
+    },
+    {
+        "text": " Vamos a ver. Ok, entonces, que hacemos aplicamos a la gorita.",
+        "start": 1185.0,
+        "end": 1190.0
+    },
+    {
+        "text": " 1, 0, 2, 2, 1, 3, menos 1, 1, menos 1 y parte ampliada la ilentilada.",
+        "start": 1190.0,
+        "end": 1201.0
+    },
+    {
+        "text": " Es decir, vamos a resolver así muy bien realmente en el sistema señal.",
+        "start": 1201.0,
+        "end": 1210.0
+    },
+    {
+        "text": " Ok, hacemos. ¿Qué vamos a hacer? Segunda fila. ¿Qué voy a hacer con la segunda fila?",
+        "start": 1210.0,
+        "end": 1223.0
+    },
+    {
+        "text": " ¿Peri groso dar clase es acá? Según la fila voy a restar dos veces esta primera fila.",
+        "start": 1223.0,
+        "end": 1237.0
+    },
+    {
+        "text": " Ok, 2 menos 2, 0, esto que quiero. 1 menos 0 por 2 este es 1, 3 menos 1, 0 menos 2, 1 menos 0, 1,",
+        "start": 1237.0,
+        "end": 1266.0
+    },
+    {
+        "text": " 0 menos 0, 0. Después, tercera fila que voy a hacer, voy a sumarle la fila 1,",
+        "start": 1266.0,
+        "end": 1277.0
+    },
+    {
+        "text": " menos 1, 1 más 1, 0, eso que quiero. 1 más 0 es 1, menos 1 más 2, 1, 0 más 1, 1, 0 más 0, 0, 1 más 0, 1, 1.",
+        "start": 1277.0,
+        "end": 1295.0
+    },
+    {
+        "text": " Ok, después, ¿qué quiero yo hacer? Yo quiero matar este 1, ok, voy a seguir.",
+        "start": 1295.0,
+        "end": 1309.0
+    },
+    {
+        "text": " Para matar este 1 que no me gusta, voy a usar la segunda fila, esta no va a cambiar, 0, 1 menos 1,",
+        "start": 1309.0,
+        "end": 1323.0
+    },
+    {
+        "text": " 1 menos 2, 1, 0. Y el tercer a fila que voy a hacer yo, voy a restar la segunda. Ok, 0 menos 0, 0, 1 menos 1, 0, eso que quiero. 1 menos 1, 2.",
+        "start": 1323.0,
+        "end": 1352.0
+    },
+    {
+        "text": " Después, 1, sí, eso que quiero, 1 menos 2, 3, 0 menos 1, 1 menos 1, 1 menos 0, 1. Ok, ¿qué se observa ahora?",
+        "start": 1352.0,
+        "end": 1370.0
+    },
+    {
+        "text": " Tengo que verificar que no me equivoqué y todavía no. ¿Qué pasa acá? ¿Está en forma escalizada? ¿Cuánto se escaló en este nemos?",
+        "start": 1370.0,
+        "end": 1388.0
+    },
+    {
+        "text": " 3, ¿qué podemos ya concluir? Es invertible. A partir de este punto, ya sabemos que a es invertible.",
+        "start": 1388.0,
+        "end": 1406.0
+    },
+    {
+        "text": " Porque es muy importante concluir a partir de acá, porque si no estuviera en forma, si no tuviera en escalones, no se necesita seguir el cálculo.",
+        "start": 1406.0,
+        "end": 1423.0
+    },
+    {
+        "text": " Ok, entonces ahora es la indicación. Ok, tengo dos noticias, una buena y una mala. La buena noticia es que la matriz es invertible.",
+        "start": 1423.0,
+        "end": 1436.0
+    },
+    {
+        "text": " La mala noticia es que tenemos que seguir calculando para obtener la inversa. ¿Qué tenemos que hacer? Tenemos que poner esta en forma relocida. Ok, ¿qué vamos a hacer?",
+        "start": 1436.0,
+        "end": 1449.0
+    },
+    {
+        "text": " La idea es que yo voy a restar la fila 3 a la fila 1 y yo voy a restar a añadir la mitad de la fila 3 a la fila 2 para matar este y después voy a dividir por 2 la fila 3.",
+        "start": 1449.0,
+        "end": 1464.0
+    },
+    {
+        "text": " Ok, quizá yo podría dividir por 2 antes. Ok, yo divido por 2 a fila 3.",
+        "start": 1464.0,
+        "end": 1471.0
+    },
+    {
+        "text": " Y fila 3 la divido por 2. Solo para hacer aparecer un 1 acá. 0, 0, 1 acá es 3 medios, menos 1 medio y 1 medio. Ok, ahora solo me queda a 1.",
+        "start": 1471.0,
+        "end": 1500.0
+    },
+    {
+        "text": " Solo me queda a buscar cosas para hacer. Ok, lo que me queda es la idea es que yo mantengo la fila 3a sin cambio, 3 medio, menos 1 medio y 1 medio.",
+        "start": 1500.0,
+        "end": 1529.0
+    },
+    {
+        "text": " Y acá lo que voy a hacer es que voy a añadir a la fila 2 voy a añadir la fila 3 porque es para matar esta cosa. Ok, entonces F2 más fila 3 obtengo 0, 0, 1 más 0, 1, 1,",
+        "start": 1529.0,
+        "end": 1555.0
+    },
+    {
+        "text": " 1, 1, 1, 1, 2 más 3 medio, 1 medio, 1 menos 1 medio, 1 medio, 0, 1, 1 teniendo 0, 1, 0, 1 menos, 1, 1, 1 medio, 1.",
+        "start": 1555.0,
+        "end": 1582.0
+    },
+    {
+        "text": " ¿Tabía?",
+        "start": 1582.0,
+        "end": 1586.0
+    },
+    {
+        "text": " Ok. Y después a la fila 1 le voy a restar 2 veces la fiatriz.",
+        "start": 1586.0,
+        "end": 1594.0
+    },
+    {
+        "text": " Ok. 1 más 0, 1 menos 2 veces por 0, 0 menos 2 veces 0, 0.",
+        "start": 1598.0,
+        "end": 1611.0
+    },
+    {
+        "text": " 2 menos 2 veces 1, 0. Ok. 1 menos 3 es menos 2.",
+        "start": 1611.0,
+        "end": 1624.0
+    },
+    {
+        "text": " 2, 0 menos 1 es más 1 y acá 0 menos 1 es menos 1.",
+        "start": 1624.0,
+        "end": 1639.0
+    },
+    {
+        "text": " ¿Y qué pasa?",
+        "start": 1639.0,
+        "end": 1642.0
+    },
+    {
+        "text": " Verifico que no me equivoqué pero me parece bien.",
+        "start": 1642.0,
+        "end": 1646.0
+    },
+    {
+        "text": " Ok. Ahora tenemos la identidad de tamaño 3. Luego sabemos que la inversa está acá.",
+        "start": 1646.0,
+        "end": 1657.0
+    },
+    {
+        "text": " Ya está. Tenemos la inversa. No sé si esa conclusión es conclusión a ese inverse libre y su inversa,",
+        "start": 1657.0,
+        "end": 1676.0
+    },
+    {
+        "text": " es igual a esta batería.",
+        "start": 1676.0,
+        "end": 1695.0
+    },
+    {
+        "text": " Ok. Y ya está. Puede ver que es el curso que sólo tiene un algoritmo. Se llama Ogefró Benius y te resuelve todo.",
+        "start": 1695.0,
+        "end": 1708.0
+    },
+    {
+        "text": " Ok. Es el mismo algoritmo que ahora usamos para invertir una matriz.",
+        "start": 1708.0,
+        "end": 1715.0
+    },
+    {
+        "text": " Después, ¿cómo se verifica que no nos equivocamos? Habría que verificarlo.",
+        "start": 1716.0,
+        "end": 1725.0
+    },
+    {
+        "text": " Hay que multiplicar a por a la menos 1 y verificar que esto me da la identidad.",
+        "start": 1725.0,
+        "end": 1731.0
+    },
+    {
+        "text": " Verificación no lo voy a hacer.",
+        "start": 1731.0,
+        "end": 1740.0
+    },
+    {
+        "text": " Verificación a por a la menos 1 igual y a menos 1 por a sólo para estar más seguro.",
+        "start": 1740.0,
+        "end": 1748.0
+    },
+    {
+        "text": " Hacer ambos productos o bien unos y estamos preciosos. Ok.",
+        "start": 1748.0,
+        "end": 1755.0
+    },
+    {
+        "text": " Esto es sólo el caso que nos equivocamos, además haciendo el producto.",
+        "start": 1755.0,
+        "end": 1760.0
+    },
+    {
+        "text": " Porque no somos máquinas y nos equivocamos mucho. Para ustedes, yo siempre.",
+        "start": 1760.0,
+        "end": 1769.0
+    },
+    {
+        "text": " Ok. Entonces es así que se verifican las cosas.",
+        "start": 1769.0,
+        "end": 1772.0
+    },
+    {
+        "text": " Entonces es cuando van a repasar la clase, hay que hacer los productos.",
+        "start": 1772.0,
+        "end": 1777.0
+    },
+    {
+        "text": " No para verificar que todo funciona. Ok. Ahora vamos a hablar de rango.",
+        "start": 1777.0,
+        "end": 1789.0
+    },
+    {
+        "text": " Porque hablamos mucho de rango cuando era invertible, pero hay que justificar porque este algoritmo funciona.",
+        "start": 1789.0,
+        "end": 1798.0
+    },
+    {
+        "text": " En particular, lo que no justifique es lo que pasa cuando en la matriz e, en forma de escribizada,",
+        "start": 1798.0,
+        "end": 1807.0
+    },
+    {
+        "text": " tiene un rango menor que n. No explique porque no tenía solución. Es un poquito complicado.",
+        "start": 1807.0,
+        "end": 1814.0
+    },
+    {
+        "text": " Entonces es lo que vamos a ver ahora. Recordatorio.",
+        "start": 1814.0,
+        "end": 1821.0
+    },
+    {
+        "text": " ¿No es una forma que la gente dice la única? Sí, de hecho, era más o menos la justificación.",
+        "start": 1822.0,
+        "end": 1828.0
+    },
+    {
+        "text": " Es decir, que cuando llegamos a una forma con menos de n escalones,",
+        "start": 1828.0,
+        "end": 1835.0
+    },
+    {
+        "text": " no teníamos un sistema compatible determinado. Es decir, o bien había ser solución,",
+        "start": 1835.0,
+        "end": 1843.0
+    },
+    {
+        "text": " o bien había varias soluciones. Y en ningún caso es posible,",
+        "start": 1843.0,
+        "end": 1848.0
+    },
+    {
+        "text": " porque la matriz universal con existencia es única. Ok.",
+        "start": 1848.0,
+        "end": 1855.0
+    },
+    {
+        "text": " No podríamos tener dos columnas posibles para una particular de inversa. Esto no es posible.",
+        "start": 1855.0,
+        "end": 1864.0
+    },
+    {
+        "text": " Pero lo voy a justificar con la noción de rango. Entonces, en rango de una matriz,",
+        "start": 1864.0,
+        "end": 1874.0
+    },
+    {
+        "text": " sabimos esta noción, es el número de escalones de cualquier forma de escaloizada.",
+        "start": 1874.0,
+        "end": 1884.0
+    },
+    {
+        "text": " Ok. Y vimos que este número no depende de la forma de escribizada.",
+        "start": 1904.0,
+        "end": 1919.0
+    },
+    {
+        "text": " Ok. Ahora tenemos que enunciar la siguiente proposición, que es muy importante,",
+        "start": 1935.0,
+        "end": 1946.0
+    },
+    {
+        "text": " es la que justifica todo. Es la proposición que dice que una matriz es invertible.",
+        "start": 1946.0,
+        "end": 1956.0
+    },
+    {
+        "text": " Si solo si, que pasa sobre su rango? Es maximo, es decir, que su valor n,",
+        "start": 1957.0,
+        "end": 1969.0
+    },
+    {
+        "text": " ok, proposición, una matriz cuadrada.",
+        "start": 1969.0,
+        "end": 1975.0
+    },
+    {
+        "text": " Detamagno n por n, es invertible si solo si su rango es igual a n.",
+        "start": 1975.0,
+        "end": 1987.0
+    },
+    {
+        "text": " Si solo si, rango de n es igual a n, punto.",
+        "start": 1987.0,
+        "end": 2015.0
+    },
+    {
+        "text": " Ok. Esto que yo quiero demostrar, y casi lo le mostré.",
+        "start": 2016.0,
+        "end": 2025.0
+    },
+    {
+        "text": " Solo hay que breficar esta cosa.",
+        "start": 2025.0,
+        "end": 2031.0
+    },
+    {
+        "text": " Supongamos que ha, supongamos que ha es invertible.",
+        "start": 2032.0,
+        "end": 2055.0
+    },
+    {
+        "text": " Todos los sistemas hechos a parche de A que se puede decir son compatibles determinados.",
+        "start": 2056.0,
+        "end": 2067.0
+    },
+    {
+        "text": " Entonces, para toda la columna B,",
+        "start": 2068.0,
+        "end": 2082.0
+    },
+    {
+        "text": " detamagno n por un o, el sistema A, X igual a B, es compatible determinado y ya lo vimos.",
+        "start": 2083.0,
+        "end": 2098.0
+    },
+    {
+        "text": " ¿Por qué? Porque ya sabemos que cuando tenemos una inversa, ¿por qué sabemos que AX igual a B es equivalente,",
+        "start": 2099.0,
+        "end": 2119.0
+    },
+    {
+        "text": " multiplicando por ambos lados por A menos 1, es equivalente a X es igual a A menos 1 por B.",
+        "start": 2119.0,
+        "end": 2126.0
+    },
+    {
+        "text": " Entonces, el conjunto solución es la matriz, la columna a menos 1 por B.",
+        "start": 2127.0,
+        "end": 2135.0
+    },
+    {
+        "text": " Porque ya sabemos que cuando la matriz es invertible, tenemos un método rápido para resolver todos los sistemas hechos a parche de D x a matriz.",
+        "start": 2135.0,
+        "end": 2144.0
+    },
+    {
+        "text": " Entonces, sabemos que todos los sistemas hechos a parche de A son compatibles determinados,",
+        "start": 2144.0,
+        "end": 2153.0
+    },
+    {
+        "text": " pero que implica sobre la forma de escarrizada si escarrizamos A, necesariamente tendremos N escalones.",
+        "start": 2154.0,
+        "end": 2163.0
+    },
+    {
+        "text": " Si yo tuviera menos N escalones, yo podría construir a parche de A un sistema que no sería compatible determinado.",
+        "start": 2163.0,
+        "end": 2173.0
+    },
+    {
+        "text": " Ok, esto implica por el teorema de Wushe forbenius, que el rango de A,",
+        "start": 2174.0,
+        "end": 2201.0
+    },
+    {
+        "text": " es igual a N, es decir, cualquier forma de escarrizala es igual a N.",
+        "start": 2202.0,
+        "end": 2208.0
+    },
+    {
+        "text": " Porque si yo tengo una forma de escarrizala que tiene menos N escalones, mis sistemas serán bien incompatibles y no es el caso acá.",
+        "start": 2208.0,
+        "end": 2220.0
+    },
+    {
+        "text": " Entonces, la única solución posible es que yo tenga exactamente N escalones.",
+        "start": 2221.0,
+        "end": 2227.0
+    },
+    {
+        "text": " Ok, ahora después hay mostrar que si tenemos rango de A igual a N,",
+        "start": 2227.0,
+        "end": 2237.0
+    },
+    {
+        "text": " entonces necesariamente es inversible.",
+        "start": 2237.0,
+        "end": 2244.0
+    },
+    {
+        "text": " Ok, demostración de la recépoca. Ahora supongamos Rango de A es igual a N.",
+        "start": 2245.0,
+        "end": 2268.0
+    },
+    {
+        "text": " ¿Qué significa si yo resuelvo un sistema hecho a parche de A?",
+        "start": 2269.0,
+        "end": 2274.0
+    },
+    {
+        "text": " Será necesariamente compatible determinado.",
+        "start": 2274.0,
+        "end": 2280.0
+    },
+    {
+        "text": " ¿No? Porque cuando voy a escarrizar un sistema que parte de la matriz A, voy a llegar a la identidad que esta única forma de escarrizala",
+        "start": 2280.0,
+        "end": 2291.0
+    },
+    {
+        "text": " a la reducida con N escalones y esto me dará una única solución por Rushe forbenius.",
+        "start": 2291.0,
+        "end": 2298.0
+    },
+    {
+        "text": " Esto significa que todos los sistemas",
+        "start": 2298.0,
+        "end": 2313.0
+    },
+    {
+        "text": " de la forma AX igual a B, donde B es una columna cualquiera determinado si independiente con B es una otra disculumna cualquiera.",
+        "start": 2313.0,
+        "end": 2338.0
+    },
+    {
+        "text": " Es compatible determinado.",
+        "start": 2339.0,
+        "end": 2345.0
+    },
+    {
+        "text": " Ok, es claro para ustedes porque si yo resuelvo un sistema así, acá B es una columna como el sistema",
+        "start": 2345.0,
+        "end": 2367.0
+    },
+    {
+        "text": " tiene rango N, cuando voy a llegar a la forma S a Rushe, la única forma S a Rushe de una matriz cuadrada es la identidad.",
+        "start": 2367.0,
+        "end": 2381.0
+    },
+    {
+        "text": " Y voy a llegar a esto con B prima. Esto me va a implicar que el sistema es compatible determinado y B prima es la solución y es única.",
+        "start": 2381.0,
+        "end": 2393.0
+    },
+    {
+        "text": " Ok, entonces ahora yo sé que todos estos sistemas son compatibles y determinados.",
+        "start": 2393.0,
+        "end": 2399.0
+    },
+    {
+        "text": " A partir de esto voy a calcular la inversa, voy a resolver en el sistema es geniales lo que hice, es decir, C-AX1, X2, XN las única soluciones.",
+        "start": 2399.0,
+        "end": 2419.0
+    },
+    {
+        "text": " De las únicas soluciones de los sistemas.",
+        "start": 2423.0,
+        "end": 2430.0
+    },
+    {
+        "text": " AX1 igual a primera columna de la identidad es decir esto.",
+        "start": 2430.0,
+        "end": 2445.0
+    },
+    {
+        "text": " AXN igual a la última columna de la identidad.",
+        "start": 2445.0,
+        "end": 2460.0
+    },
+    {
+        "text": " Eso resuelvo en para el hilo y yo sé que hay solución inúdica porque todos los sistemas hechos a partir de A son compatibles y determinados.",
+        "start": 2460.0,
+        "end": 2468.0
+    },
+    {
+        "text": " ¿Qué va a pasar y después?",
+        "start": 2468.0,
+        "end": 2471.0
+    },
+    {
+        "text": " C-AX la matriz cuadrada formada por estas en soluciones.",
+        "start": 2471.0,
+        "end": 2479.0
+    },
+    {
+        "text": " ¿Qué va a pasar? Por construcción tenemos que… tenemos que… y después hay que calcular aporéxis.",
+        "start": 2479.0,
+        "end": 2503.0
+    },
+    {
+        "text": " A por X, es decir, igual a A por X1 hasta A por XN pero A por X1 es la primera columna de la identidad.",
+        "start": 2503.0,
+        "end": 2524.0
+    },
+    {
+        "text": " Hasta esto AXN es la última columna de la identidad.",
+        "start": 2525.0,
+        "end": 2538.0
+    },
+    {
+        "text": " Es decir, es la identidad. Esto muestra que X está inversa y existe.",
+        "start": 2538.0,
+        "end": 2546.0
+    },
+    {
+        "text": " Y de hecho es el método que hice para calcular la inversa. Resolver en para el hilo en sistemas iníales.",
+        "start": 2546.0,
+        "end": 2553.0
+    },
+    {
+        "text": " Esto muestra la proposición. Ya sabemos que una matriz es invertible.",
+        "start": 2553.0,
+        "end": 2558.0
+    },
+    {
+        "text": " Si solo si tiene exactamente sus formas escarizadas, tienen exactamente n escalores.",
+        "start": 2558.0,
+        "end": 2571.0
+    },
+    {
+        "text": " Entonces ahora hay que llegar a empezar un nuevo tema.",
+        "start": 2572.0,
+        "end": 2578.0
+    },
+    {
+        "text": " Así, esa… esto me permite determinar el rango de una matriz.",
+        "start": 2578.0,
+        "end": 2584.0
+    },
+    {
+        "text": " O sea, ya lo vimos.",
+        "start": 2584.0,
+        "end": 2586.0
+    },
+    {
+        "text": " Este… si quizás o puedo estar en pequeño ejercicio determinar el rango de una matriz.",
+        "start": 2587.0,
+        "end": 2593.0
+    },
+    {
+        "text": " Ejemplo.",
+        "start": 2603.0,
+        "end": 2605.0
+    },
+    {
+        "text": " Ahora vamos a ver el métriz preferida.",
+        "start": 2616.0,
+        "end": 2621.0
+    },
+    {
+        "text": " Les voy a mostrar mi matriz preferida.",
+        "start": 2621.0,
+        "end": 2625.0
+    },
+    {
+        "text": " Ejemplo. O ejercicio.",
+        "start": 2625.0,
+        "end": 2629.0
+    },
+    {
+        "text": " De terminar.",
+        "start": 2630.0,
+        "end": 2633.0
+    },
+    {
+        "text": " El rango de la matriz a igual.",
+        "start": 2638.0,
+        "end": 2643.0
+    },
+    {
+        "text": " Matriz preferida. No tengo ninguna imaginación de la vida.",
+        "start": 2643.0,
+        "end": 2648.0
+    },
+    {
+        "text": " Entonces este matriz es más fácil para escribir.",
+        "start": 2648.0,
+        "end": 2651.0
+    },
+    {
+        "text": " No necesito mis apuntas.",
+        "start": 2651.0,
+        "end": 2654.0
+    },
+    {
+        "text": " La verdad que tiene entre las super complicadas.",
+        "start": 2654.0,
+        "end": 2657.0
+    },
+    {
+        "text": " Uno, dos, tres.",
+        "start": 2657.0,
+        "end": 2660.0
+    },
+    {
+        "text": " Que sigue.",
+        "start": 2660.0,
+        "end": 2662.0
+    },
+    {
+        "text": " Cuatro, cinco, seis, siete, ocho, nueve.",
+        "start": 2662.0,
+        "end": 2669.0
+    },
+    {
+        "text": " Muy complicada.",
+        "start": 2669.0,
+        "end": 2672.0
+    },
+    {
+        "text": " Es mi matriz preferida. Porque es muy interesante.",
+        "start": 2672.0,
+        "end": 2677.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2678.0,
+        "end": 2680.0
+    },
+    {
+        "text": " Esta.",
+        "start": 2680.0,
+        "end": 2682.0
+    },
+    {
+        "text": " ¿Cone columnas nulas?",
+        "start": 2682.0,
+        "end": 2685.0
+    },
+    {
+        "text": " No. ¿Cone filas nulas?",
+        "start": 2685.0,
+        "end": 2688.0
+    },
+    {
+        "text": " Tampoco. ¿Cone dos columnas iguales?",
+        "start": 2688.0,
+        "end": 2691.0
+    },
+    {
+        "text": " Tampoco. ¿Dos filas iguales?",
+        "start": 2691.0,
+        "end": 2694.0
+    },
+    {
+        "text": " No. Todo es positivo.",
+        "start": 2694.0,
+        "end": 2697.0
+    },
+    {
+        "text": " Ok. Está bien punto de partida para hacer una matriz invertible.",
+        "start": 2697.0,
+        "end": 2702.0
+    },
+    {
+        "text": " Vamos a calcular su rango.",
+        "start": 2702.0,
+        "end": 2705.0
+    },
+    {
+        "text": " ¿Cómo se calcula el rango de la matriz?",
+        "start": 2705.0,
+        "end": 2708.0
+    },
+    {
+        "text": " Exactamente.",
+        "start": 2708.0,
+        "end": 2709.0
+    },
+    {
+        "text": " Exactamente, haciendo la escaerrización.",
+        "start": 2709.0,
+        "end": 2712.0
+    },
+    {
+        "text": " Entonces vamos a escaerrizar.",
+        "start": 2712.0,
+        "end": 2715.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2715.0,
+        "end": 2716.0
+    },
+    {
+        "text": " Uno, dos, tres, cuatro, cinco, seis, siete, siete, siete, ocho, nueve.",
+        "start": 2716.0,
+        "end": 2725.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2725.0,
+        "end": 2728.0
+    },
+    {
+        "text": " Vamos a hacer acá.",
+        "start": 2728.0,
+        "end": 2730.0
+    },
+    {
+        "text": " Voy a restar a la segunda fila.",
+        "start": 2730.0,
+        "end": 2735.0
+    },
+    {
+        "text": " Voy a restar cuatro veces la primera fila, ¿no?",
+        "start": 2735.0,
+        "end": 2741.0
+    },
+    {
+        "text": " Ok. F2.",
+        "start": 2741.0,
+        "end": 2743.0
+    },
+    {
+        "text": " Recibe F2.",
+        "start": 2743.0,
+        "end": 2745.0
+    },
+    {
+        "text": " Menos cuatro veces la fila 1.",
+        "start": 2745.0,
+        "end": 2748.0
+    },
+    {
+        "text": " Cuatro, menos cuatro, cero.",
+        "start": 2748.0,
+        "end": 2751.0
+    },
+    {
+        "text": " Cinco, menos ocho, menos tres.",
+        "start": 2751.0,
+        "end": 2755.0
+    },
+    {
+        "text": " Seguimos, seis, menos dos, menos seis.",
+        "start": 2755.0,
+        "end": 2760.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2760.0,
+        "end": 2761.0
+    },
+    {
+        "text": " Y acá que voy a hacer, voy a restar siete veces la fila.",
+        "start": 2761.0,
+        "end": 2766.0
+    },
+    {
+        "text": " Siete, menos siete, cero.",
+        "start": 2772.0,
+        "end": 2776.0
+    },
+    {
+        "text": " Cuatro, menos catorce, menos seis.",
+        "start": 2776.0,
+        "end": 2780.0
+    },
+    {
+        "text": " Nueve, menos siete por tres.",
+        "start": 2780.0,
+        "end": 2784.0
+    },
+    {
+        "text": " Ouf.",
+        "start": 2784.0,
+        "end": 2786.0
+    },
+    {
+        "text": " 21, nueve, menos 21, 12.",
+        "start": 2786.0,
+        "end": 2792.0
+    },
+    {
+        "text": " Ok. Está bien.",
+        "start": 2795.0,
+        "end": 2799.0
+    },
+    {
+        "text": " Y qué voy a hacer después?",
+        "start": 2799.0,
+        "end": 2802.0
+    },
+    {
+        "text": " A la última fila voy a restar dos veces la segunda fila.",
+        "start": 2802.0,
+        "end": 2809.0
+    },
+    {
+        "text": " F3, recibe F3, menos dos veces la fila F3.",
+        "start": 2815.0,
+        "end": 2823.0
+    },
+    {
+        "text": " Menos seis, menos seis que obtengo el show, cero.",
+        "start": 2823.0,
+        "end": 2829.0
+    },
+    {
+        "text": " Acá por supuesto el cero, menos cero, cero.",
+        "start": 2829.0,
+        "end": 2832.0
+    },
+    {
+        "text": " Menos seis, menos seis, cero.",
+        "start": 2832.0,
+        "end": 2835.0
+    },
+    {
+        "text": " Menos dos, c, menos, menos dos, cero.",
+        "start": 2835.0,
+        "end": 2840.0
+    },
+    {
+        "text": " ¿Qué pasa?",
+        "start": 2840.0,
+        "end": 2843.0
+    },
+    {
+        "text": " Es una forma de escarizarla.",
+        "start": 2843.0,
+        "end": 2846.0
+    },
+    {
+        "text": " ¿Cuánto escarones tiene?",
+        "start": 2846.0,
+        "end": 2847.0
+    },
+    {
+        "text": " Dos.",
+        "start": 2847.0,
+        "end": 2848.0
+    },
+    {
+        "text": " Dos, entonces.",
+        "start": 2848.0,
+        "end": 2849.0
+    },
+    {
+        "text": " Conclusión.",
+        "start": 2849.0,
+        "end": 2852.0
+    },
+    {
+        "text": " Errango.",
+        "start": 2852.0,
+        "end": 2855.0
+    },
+    {
+        "text": " D-a.",
+        "start": 2855.0,
+        "end": 2857.0
+    },
+    {
+        "text": " Es igual a dos.",
+        "start": 2857.0,
+        "end": 2859.0
+    },
+    {
+        "text": " Es invertible o no?",
+        "start": 2859.0,
+        "end": 2861.0
+    },
+    {
+        "text": " No.",
+        "start": 2861.0,
+        "end": 2862.0
+    },
+    {
+        "text": " Esta matriz que parecía muy abable, muy agradable, no es invertible.",
+        "start": 2862.0,
+        "end": 2869.0
+    },
+    {
+        "text": " Es, en ejemplo, muy sencillo, porque se memoriza muy fácilmente,",
+        "start": 2871.0,
+        "end": 2875.0
+    },
+    {
+        "text": " 1, 2, 3, 4, 5, 6, 7, 8, 9.",
+        "start": 2875.0,
+        "end": 2878.0
+    },
+    {
+        "text": " Y después, ejercicio mostrar que esto funciona para cualquier reivensión.",
+        "start": 2878.0,
+        "end": 2883.0
+    },
+    {
+        "text": " Si hacen una matriz de tamaño n por n y que escriben todos los números de 1 hasta n cuadrado,",
+        "start": 2884.0,
+        "end": 2892.0
+    },
+    {
+        "text": " no será invertible.",
+        "start": 2892.0,
+        "end": 2895.0
+    },
+    {
+        "text": " Es un contraíxen por interesante.",
+        "start": 2895.0,
+        "end": 2898.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2898.0,
+        "end": 2900.0
+    },
+    {
+        "text": " Ahora, vamos a pasar a otro tema que es el tema de las matrices elementales.",
+        "start": 2900.0,
+        "end": 2909.0
+    },
+    {
+        "text": " Ok.",
+        "start": 2909.0,
+        "end": 2912.0
+    },
+    {
+        "text": " La madralla晚up.",
+        "start": 2912.0,
+        "end": 2915.0
+    },
+    {
+        "text": " Si.",
+        "start": 2915.0,
+        "end": 2917.0
+    },
+    {
+        "text": " Si.",
+        "start": 2917.0,
+        "end": 2919.0
+    },
+    {
+        "text": " Langu吗, guardado, severe.",
+        "start": 2919.0,
+        "end": 2921.0
+    },
+    {
+        "text": " Esta matriz en Bluetooth.",
+        "start": 2921.0,
+        "end": 2924.0
+    },
+    {
+        "text": " ¿ền?",
+        "start": 2924.0,
+        "end": 2927.0
+    },
+    {
+        "text": " Lavtura.",
+        "start": 2927.0,
+        "end": 2929.0
+    },
+    {
+        "text": " Una de mis señal mentales.",
+        "start": 2929.0,
+        "end": 2932.0
+    },
+    {
+        "text": " Esta банal.",
+        "start": 2934.0,
+        "end": 2937.0
+    },
+    {
+        "text": " Una de sus señales de laía.",
+        "start": 2937.0,
+        "end": 2939.0
+    },
+    {
+        "text": " Ahora, ya saben todo lo que hay que saber sobre la inversa y sobre la inversión de matriz.",
+        "start": 2939.0,
+        "end": 2950.32
+    },
+    {
+        "text": " Ya saben todo.",
+        "start": 2950.32,
+        "end": 2953.48
+    },
+    {
+        "text": " Ahora matrices e elementales.",
+        "start": 2953.48,
+        "end": 2961.4
+    },
+    {
+        "text": " La idea es que ahora el objetivo de esta parte es entender por el interior el método de",
+        "start": 2961.4,
+        "end": 2970.1600000000003
+    },
+    {
+        "text": " a Rusia Frobenius.",
+        "start": 2970.1600000000003,
+        "end": 2971.6800000000003
+    },
+    {
+        "text": " Porque vimos que el método de a Rusia Frobenius funcionó gracias a las transformaciones",
+        "start": 2971.6800000000003,
+        "end": 2977.8
+    },
+    {
+        "text": " elementales y el método de a Rusia Frobenius resuelve todos sus problemas, resuelve los sistemas",
+        "start": 2977.8,
+        "end": 2986.96
+    },
+    {
+        "text": " iníales, resuelve sus problemas de matrices inversas, resuelve los problemas de rango,",
+        "start": 2986.96,
+        "end": 2994.48
+    },
+    {
+        "text": " resuelve los problemas de plata, los problemas de amor después de a Rusia Frobenius se va a",
+        "start": 2994.48,
+        "end": 2999.28
+    },
+    {
+        "text": " volver a su ex-nobio, su ex-nobia sorrando, etcétera.",
+        "start": 2999.28,
+        "end": 3003.4
+    },
+    {
+        "text": " Resuelve todo.",
+        "start": 3003.4,
+        "end": 3004.4
+    },
+    {
+        "text": " Es la morreleja del curso de GAL1, a Rusia Frobenius, resuelve todo.",
+        "start": 3004.4,
+        "end": 3011.44
+    },
+    {
+        "text": " Y también hace el café y limpia la casa.",
+        "start": 3011.44,
+        "end": 3019.7200000000003
+    },
+    {
+        "text": " Pero hay ingenieros que programan este método y en contraparse de la gente les da plata,",
+        "start": 3019.7200000000003,
+        "end": 3025.7200000000003
+    },
+    {
+        "text": " entonces a lo menos puede resolver problemas de plata.",
+        "start": 3025.7200000000003,
+        "end": 3029.48
+    },
+    {
+        "text": " Ahora hay que entender por qué cuál es la magia adentro del método de a Rusia Frobenius.",
+        "start": 3029.48,
+        "end": 3038.96
+    },
+    {
+        "text": " Y todo esto está escondido en una cosa importante que esta nusión de transformación",
+        "start": 3038.96,
+        "end": 3043.7200000000003
+    },
+    {
+        "text": " elemental.",
+        "start": 3043.7200000000003,
+        "end": 3044.7200000000003
+    },
+    {
+        "text": " Ahora tenemos que analizar la nusión de transformación elemental y para eso hay que mostrar",
+        "start": 3044.7200000000003,
+        "end": 3051.64
+    },
+    {
+        "text": " que corresponden a matrices particulares.",
+        "start": 3051.64,
+        "end": 3055.44
+    },
+    {
+        "text": " Entonces el objetivo es mostrar que cada transformación elemental, cada transformación",
+        "start": 3055.44,
+        "end": 3079.88
+    },
+    {
+        "text": " elemental sobre una matriz A, deta a manio, M por N, se puede ver como una multiplicación",
+        "start": 3079.88,
+        "end": 3104.2000000000003
+    },
+    {
+        "text": " como un producto, como un producto por la izquierda, por cierta matriz",
+        "start": 3104.2,
+        "end": 3129.3199999999997
+    },
+    {
+        "text": " E, deta a manio, es una matriz cuadrada, M por M, M, acá es deta a manio M por N, y acá",
+        "start": 3129.32,
+        "end": 3141.7200000000003
+    },
+    {
+        "text": " es M por M.",
+        "start": 3141.7200000000003,
+        "end": 3145.4
+    },
+    {
+        "text": " Ok, es ver que esto viene de la forma de algunas matrices particulares.",
+        "start": 3145.4,
+        "end": 3153.2000000000003
+    },
+    {
+        "text": " Y esto, estas matrices que voy a chamar, esto por definición será una matriz elemental.",
+        "start": 3153.2,
+        "end": 3166.2
+    },
+    {
+        "text": " Se llama acá matriz elemental, pero en Francia también se llama matriz de Frobenius, porque",
+        "start": 3166.2,
+        "end": 3172.2799999999997
+    },
+    {
+        "text": " es Frobenius que hizo el trabajo.",
+        "start": 3172.2799999999997,
+        "end": 3173.52
+    },
+    {
+        "text": " O, Guchen o hizo nada, estaba demasiado cansado.",
+        "start": 3183.2,
+        "end": 3192.7999999999997
+    },
+    {
+        "text": " Ok, ahora, entonces hay que recordar los tres tipos de transformaciones elementales que",
+        "start": 3192.7999999999997,
+        "end": 3201.6
+    },
+    {
+        "text": " tenemos.",
+        "start": 3201.6,
+        "end": 3202.6
+    },
+    {
+        "text": " Ok, tres tipos, la primera transformación que tenemos es T su, lo que voy a escribir",
+        "start": 3202.6,
+        "end": 3220.44
+    },
+    {
+        "text": " Alpha E, que es multiplicar la fila E por Alpha Nululu, ok, como siempre queremos preservar",
+        "start": 3220.44,
+        "end": 3235.84
+    },
+    {
+        "text": " a los detitos.",
+        "start": 3235.84,
+        "end": 3236.84
+    },
+    {
+        "text": " Es el primer tipo de transformación elemental.",
+        "start": 3236.84,
+        "end": 3242.6
+    },
+    {
+        "text": " Un tipo de transformación elemental es T intercambiar los índices y híjota, es decir,",
+        "start": 3242.6,
+        "end": 3251.16
+    },
+    {
+        "text": " intercambiar, intercambiar las filas y híjota.",
+        "start": 3251.16,
+        "end": 3268.2
+    },
+    {
+        "text": " No, a nuestras forneas, no, no, eso no es una transformación elemental, esto es Ruse",
+        "start": 3268.2,
+        "end": 3274.96
+    },
+    {
+        "text": " Frobenius, las transformaciones que hicimos siempre, caso es intercambiar los filas.",
+        "start": 3274.96,
+        "end": 3282.3999999999996
+    },
+    {
+        "text": " Tercera transformación es T sub i más Alpha J, es decir, sumarle a la fila E.",
+        "start": 3282.3999999999996,
+        "end": 3295.4399999999996
+    },
+    {
+        "text": " Y la fila J distinta a la E, multiplicada por Alpha.",
+        "start": 3295.44,
+        "end": 3316.48
+    },
+    {
+        "text": " Aquí Alpha, puede ser Nululu, no, de hecho puede ser, porque ¿qué pasa si es Nululu?",
+        "start": 3316.48,
+        "end": 3335.28
+    },
+    {
+        "text": " Es no hacer nada y no hacer nada, no es peligroso, esto no nos va a cambiar el sistema, ok,",
+        "start": 3335.28,
+        "end": 3344.2
+    },
+    {
+        "text": " es decir, si yo pongo 0 acá, no cambiar la fila y no cambiar nada el resto de matriz.",
+        "start": 3344.2,
+        "end": 3351.7599999999998
+    },
+    {
+        "text": " Entonces acá Alpha puede ser igual a 0 pero no es cierre para dado.",
+        "start": 3351.7599999999998,
+        "end": 3358.24
+    },
+    {
+        "text": " Entonces acá tenemos nuestros quietitos vivos pero no es cierre para dado.",
+        "start": 3358.24,
+        "end": 3366.4399999999996
+    },
+    {
+        "text": " Ahora la proposición que vamos a demostrar es que para cada transformación elemental",
+        "start": 3366.4399999999996,
+        "end": 3372.3999999999996
+    },
+    {
+        "text": " existe un de matriz que acelmismo trabajo.",
+        "start": 3372.4,
+        "end": 3376.8
+    },
+    {
+        "text": " Ok, proposición.",
+        "start": 3407.8,
+        "end": 3413.8
+    },
+    {
+        "text": " Se han dos números, M y N son los tamaños de las dimensiones de matriz y yo consiero las transformaciones",
+        "start": 3413.8,
+        "end": 3427.48
+    },
+    {
+        "text": " elementales que manipulan matriz 6 y tamaño M por M.",
+        "start": 3427.48,
+        "end": 3432.0
+    },
+    {
+        "text": " De hecho estas transformaciones elementales dependen de M o no, sí porque acá usan mucho",
+        "start": 3433.0,
+        "end": 3441.2
+    },
+    {
+        "text": " los índices de fila, entonces la cantidad de filas que se puede usar depende de M y ahora",
+        "start": 3441.2,
+        "end": 3449.4
+    },
+    {
+        "text": " otra pregunta, depende de M o no, de hecho no, porque nunca hicimos ninguna referencia a",
+        "start": 3449.4,
+        "end": 3460.12
+    },
+    {
+        "text": " una columna. Es decir las operaciones elementales sobre las matrices 3 por 3 son las mismas",
+        "start": 3460.12,
+        "end": 3467.72
+    },
+    {
+        "text": " que sobre las matrices de tamaño 3 por 42.",
+        "start": 3467.72,
+        "end": 3472.52
+    },
+    {
+        "text": " Ok, entonces las transformaciones elementales vamos a ver que solo depende de la cantidad",
+        "start": 3472.52,
+        "end": 3478.12
+    },
+    {
+        "text": " de filas.",
+        "start": 3478.12,
+        "end": 3480.12
+    },
+    {
+        "text": " Ok, entonces para toda la transformación elemental de…",
+        "start": 3481.12,
+        "end": 3487.12
+    },
+    {
+        "text": " Sobre matrices con M e filas con M e filas, es decir la cantidad de columnas no me",
+        "start": 3487.12,
+        "end": 3515.52
+    },
+    {
+        "text": " interesa, yo voy a borrar el N porque no me sirve, pero las transformaciones solo miran",
+        "start": 3515.52,
+        "end": 3522.38
+    },
+    {
+        "text": " las columnas, las filas, ok, ok con M e filas y cualquier número de columnas.",
+        "start": 3522.38,
+        "end": 3534.92
+    },
+    {
+        "text": " Dos cosas, existe una matriz cuadrada que ha sido el mismo trabajo.",
+        "start": 3534.92,
+        "end": 3539.92
+    },
+    {
+        "text": " Que depende de T en la matriz cuadrada de tamaño M por M tal que aplicar la transformación",
+        "start": 3545.52,
+        "end": 3558.84
+    },
+    {
+        "text": " T a una matriz A es lo mismo que multiplicar A por E por la izquierda.",
+        "start": 3558.84,
+        "end": 3569.48
+    },
+    {
+        "text": " Para toda la matriz de tamaño M por N, ok, es decir acá pueden ver que esto funciona",
+        "start": 3569.48,
+        "end": 3586.16
+    },
+    {
+        "text": " porque esta tiene tamaño M por M, esta tiene tamaño M por N, entonces el producto tiene",
+        "start": 3586.16,
+        "end": 3595.32
+    },
+    {
+        "text": " tamaño M por N, misma dimensión, misma tamaño que A. Ok, es decir cada vez que hicimos",
+        "start": 3595.32,
+        "end": 3606.56
+    },
+    {
+        "text": " aplicamos una transformación elemental sin decir lo que hacíamos era hacer el producto",
+        "start": 3606.56,
+        "end": 3613.36
+    },
+    {
+        "text": " de A por alguna matriz.",
+        "start": 3613.36,
+        "end": 3616.36
+    },
+    {
+        "text": " Ahora, el problema es cómo se puede determinar tal matriz, la matriz A es asociada a la matriz",
+        "start": 3616.36,
+        "end": 3625.42
+    },
+    {
+        "text": " T, yo debería escribir S subté porque depende de T, además la matriz S subté asociada",
+        "start": 3625.42,
+        "end": 3643.44
+    },
+    {
+        "text": " a la transformación T, esta Lala por la transformación T a la matriz S subté como se calcula",
+        "start": 3643.44,
+        "end": 3666.2000000000003
+    },
+    {
+        "text": " en la práctica, hay que aplicar la transformación T a la matriz S y la entidad de tamaño M y",
+        "start": 3666.2,
+        "end": 3673.4199999999996
+    },
+    {
+        "text": " esta. Es decir, esto me da un algoritmo que transforma cualquier transformación elemental,",
+        "start": 3673.4199999999996,
+        "end": 3680.8399999999997
+    },
+    {
+        "text": " una transformación elemental es una función, me toma una matriz y me devuelve otra",
+        "start": 3680.8399999999997,
+        "end": 3685.8399999999997
+    },
+    {
+        "text": " matriz, ok, T es una función y lo que digo que esta función que es una transformación",
+        "start": 3685.8399999999997,
+        "end": 3693.3599999999997
+    },
+    {
+        "text": " elemental siempre se puede representar por una matriz, no es cualquier función, es el",
+        "start": 3693.36,
+        "end": 3699.92
+    },
+    {
+        "text": " producto por una matriz, es decir, aplicar la transformación A, esto mismo que multiplicar",
+        "start": 3699.92,
+        "end": 3706.4
+    },
+    {
+        "text": " A por la izquierda, por cierta matriz E y para obtener esta matriz es superfacil a quien",
+        "start": 3706.4,
+        "end": 3715.28
+    },
+    {
+        "text": " es decir, yo quiero obtener esta matriz, entonces reemplazo A por la identidad y T de la identidad",
+        "start": 3715.28,
+        "end": 3723.2400000000002
+    },
+    {
+        "text": " me va a dar es subté multiplicado por la identidad este es decir, es subté, es obvio, ¿no?",
+        "start": 3723.24,
+        "end": 3729.08
+    },
+    {
+        "text": " A la identidad y después me da una matriz y esta matriz representa toda la transformación,",
+        "start": 3729.08,
+        "end": 3740.8799999999997
+    },
+    {
+        "text": " ok, vamos a hacerlo para los tres tipos de transformaciones y esto se chaman, entonces es",
+        "start": 3740.8799999999997,
+        "end": 3750.3999999999996
+    },
+    {
+        "text": " subté, se llama una transformación, una matriz elemental, ok, no que vamos a hacer es muy",
+        "start": 3750.4,
+        "end": 3769.1600000000003
+    },
+    {
+        "text": " sencillo, vamos a tomar los tres tipos de transformaciones, vamos a aplicarlas a la",
+        "start": 3769.1600000000003,
+        "end": 3774.62
+    },
+    {
+        "text": " matriz identidad y después vamos a verificar que todo funciona bien, como se lo te demostra",
+        "start": 3774.62,
+        "end": 3780.8599999999997
+    },
+    {
+        "text": " estiposa que ser tres rosos de demostración y no voy a hacer todos los detalles, pero fue el",
+        "start": 3780.8599999999997,
+        "end": 3788.2999999999997
+    },
+    {
+        "text": " trabajo de Frobenius.",
+        "start": 3788.2999999999997,
+        "end": 3791.66
+    },
+    {
+        "text": " Ok, ahora tenemos tres tipos, tipo 1, voy a suponer que T es la transformación multiplicar",
+        "start": 3804.62,
+        "end": 3821.62
+    },
+    {
+        "text": " la fila y por alpha, ¿qué pasa si yo aplico esta transformación a la identidad?",
+        "start": 3821.62,
+        "end": 3829.8599999999997
+    },
+    {
+        "text": " Fácil y subí alpha, voy a usar la misma notación cuando tendré una transformación T subalgo,",
+        "start": 3829.86,
+        "end": 3836.86
+    },
+    {
+        "text": " usaré el mismo índice para designar la matriz elemental que corresponde, es decir, esta identidad",
+        "start": 3836.86,
+        "end": 3843.6200000000003
+    },
+    {
+        "text": " donde multipliqué la fila y por alpha, es decir, reemplaz el coeficiente 1 de la fila y por alpha, nada más,",
+        "start": 3843.6200000000003,
+        "end": 3851.86
+    },
+    {
+        "text": " entonces esto es 1, 1 y acá aparece un alpha y después sigue con 1 y acá es la fila y y todo",
+        "start": 3851.86,
+        "end": 3868.06
+    },
+    {
+        "text": " el resto son seros.",
+        "start": 3868.06,
+        "end": 3871.46
+    },
+    {
+        "text": " Acá, ah, disculpa, si está mejor ponerlo por la izquierda porque cuando hablamos de producto",
+        "start": 3872.46,
+        "end": 3880.46
+    },
+    {
+        "text": " es por un escalar, siempre lo hacemos por la izquierda. Ok, entienden, después esta matriz solo",
+        "start": 3880.46,
+        "end": 3890.46
+    },
+    {
+        "text": " hay que verificar, ¿qué funciona? Es decir, verificación, hay que verificar que si yo",
+        "start": 3890.46,
+        "end": 3902.46
+    },
+    {
+        "text": " multiplico esta matriz que está bien definida ahora, bueno ver, esta matriz bien definida,",
+        "start": 3902.46,
+        "end": 3909.46
+    },
+    {
+        "text": " si yo hago el producto de esta matriz por cualquier matriz a que se puede multiplicar, voy a obtener",
+        "start": 3909.46,
+        "end": 3917.46
+    },
+    {
+        "text": " lo mismo que te alpha y aplicado a a y por qué? Si yo aplico, hago el producto de esta matriz",
+        "start": 3917.46,
+        "end": 3930.46
+    },
+    {
+        "text": " por a, la primera fila será el producto de esta fila por a, es decir, la primera fila a la a.",
+        "start": 3930.46,
+        "end": 3939.46
+    },
+    {
+        "text": " La segunda fila será el producto de esta fila con la matriz, me va a dar la segunda fila a la a, pero la única excepción será la",
+        "start": 3940.46,
+        "end": 3949.46
+    },
+    {
+        "text": " I e x y y y y y y cuando voy a hacer el producto de esta fila que tiene un alpha imposición I por la matriz",
+        "start": 3949.46,
+        "end": 3958.46
+    },
+    {
+        "text": " a, voy a obtener alpha por la I e x y y de A, esto me va a multiplicar por alpha la fila, no voy a",
+        "start": 3958.46,
+        "end": 3970.46
+    },
+    {
+        "text": " hacer las cuentas, se podría escribir de modo formal, yo podría escribir dos pisarones de calcuros para",
+        "start": 3970.46,
+        "end": 3977.46
+    },
+    {
+        "text": " averificar que todo esto funciona, ejercicio para ustedes, tienen que convencerse por qué esto funciona,",
+        "start": 3977.46,
+        "end": 3989.46
+    },
+    {
+        "text": " entonces cuentas, ahora voy a escribir segundo caso, esto era mi primer caso, ¿se?",
+        "start": 3990.46,
+        "end": 3998.46
+    },
+    {
+        "text": " ¿de qué? ¿de nuevo?",
+        "start": 3999.46,
+        "end": 4003.46
+    },
+    {
+        "text": " ¿de nuevo? ¿ok? acá ya sabemos que para calcular las filas de E por A basta con multiplicar cada fila de E por la matriz A,",
+        "start": 4003.46,
+        "end": 4015.46
+    },
+    {
+        "text": " sabemos como se puede componer el calculo de matriz por filas, ¿no? ¿se va a hacer esto?",
+        "start": 4015.46,
+        "end": 4024.46
+    },
+    {
+        "text": " entonces para calcular las filas de esta matriz este producto, voy a ser primera fila de E por esta, según la fila de E por esta, etc.",
+        "start": 4025.46,
+        "end": 4037.46
+    },
+    {
+        "text": " si showado la primera fila de E por A tendré 1, 0, 0, 0, 0 por A, ¿qué voy a hacer?",
+        "start": 4038.46,
+        "end": 4051.46
+    },
+    {
+        "text": " Primero coeficiente acá, todo el resto 0, obtendré el primer coeficiente acá, acá, según la columna, esto por 1,",
+        "start": 4051.46,
+        "end": 4061.46
+    },
+    {
+        "text": " el resto 0, obtendré la primera fila, bueno, como pasa, si showado el producto de E esto que tiene M columnas, acá, M filas,",
+        "start": 4061.46,
+        "end": 4081.46
+    },
+    {
+        "text": " voy a obtener exactamente la primera fila, porque obtendré esto por 1 y el resto 0, esto por 1, el resto 0,",
+        "start": 4082.46,
+        "end": 4092.46
+    },
+    {
+        "text": " esto por 1, el resto 0, y al final lo único que voy a obtener es la primera fila acá, entienden la idea, si showo en plazo ahora,",
+        "start": 4092.46,
+        "end": 4103.46
+    },
+    {
+        "text": " yo pongo 0, 1, según la fila, acá, 0, no voy a contar este elemento, este va a contar, el segundo va a contar,",
+        "start": 4103.46,
+        "end": 4114.46
+    },
+    {
+        "text": " el resto no cuenta, obtendré la segunda entrada vertical, acá el primera entrada vertical lo cuenta, segunda cuenta las otras no cuentan,",
+        "start": 4114.46,
+        "end": 4123.46
+    },
+    {
+        "text": " entonces obtendré la segunda fila, acá, entonces todo lo mismo será identico, salvo para esta fila, ¿qué va a pasar?",
+        "start": 4124.46,
+        "end": 4136.46
+    },
+    {
+        "text": " acá, subtengo 1, alpha acá en posición I, todas las filas antes de I no van a contar, porque ahí 0 es acá,",
+        "start": 4136.46,
+        "end": 4146.46
+    },
+    {
+        "text": " la fila I va a ser multiplicada por alpha y las otras filas después de I no van a contar, obtendré acá alpha por la fila I,",
+        "start": 4147.46,
+        "end": 4158.46
+    },
+    {
+        "text": " poniendo todos juntos, obtengo que la matriz es su alpha I, analice todo lo que pasaba con todas sus filas, me va a dar la matriz A,",
+        "start": 4159.46,
+        "end": 4172.46
+    },
+    {
+        "text": " cucha fila I, ha sido multiplicada por alpha, el cierre transformación elemental correspondiente aplicada A,",
+        "start": 4172.46,
+        "end": 4180.46
+    },
+    {
+        "text": " entienden la idea, hay que verificar esto, hacer cuenta sobre pequeñas matrices para convencerse de que esto funciona.",
+        "start": 4181.46,
+        "end": 4191.46
+    },
+    {
+        "text": " no, porque sólo trata una o dos filas, porque tenemos pocas transformaciones elementales,",
+        "start": 4195.46,
+        "end": 4201.46
+    },
+    {
+        "text": " hay la misma cantidad de matrices elementales que hay de transformaciones elementales, y la buena cosa es que vamos a ver que sonas que nos van a permitir descomponer todos las matrices invertiles.",
+        "start": 4202.46,
+        "end": 4217.46
+    },
+    {
+        "text": " vamos a ver esto, ok, esto era el primer caso de matrices, vamos nos quedan dos casos más,",
+        "start": 4218.46,
+        "end": 4228.46
+    },
+    {
+        "text": " entonces tengo que calcular el segundo tipo, segundo tipo,",
+        "start": 4231.46,
+        "end": 4238.46
+    },
+    {
+        "text": " la matriz T ahora es añado a la fila I, no, voy a intercambiar, son intercambiar, no, el segundo tipo no me acuerdo en que orden puse las cosas, intercambiar, ok, vamos a hacer esto,",
+        "start": 4248.46,
+        "end": 4271.46
+    },
+    {
+        "text": " intercambiar los filas, entonces voy a calcular la transformación elemental correspondiente, voy a aplicar la transformación anomatricidentida,",
+        "start": 4272.46,
+        "end": 4284.46
+    },
+    {
+        "text": " es decir, tengo la matrizidentida, ahora escribo la matrizidentida, que va acá hasta I, acá es el indice I, hasta el nice A,",
+        "start": 4284.46,
+        "end": 4300.46
+    },
+    {
+        "text": " acá es punto I, acá es 1, y punto acá son la fila I, y la fila J, y como dibujo re mal esto deberían ser cuadrados, y no parece para nada como un cuadrado,",
+        "start": 4300.46,
+        "end": 4327.46
+    },
+    {
+        "text": " ok, acá es la identidad, y todo el resto es tuelo, ¿qué pasa si yo intercambió las filas I y J?",
+        "start": 4331.46,
+        "end": 4341.46
+    },
+    {
+        "text": " el 1 acá se va a ir a X, ok, y el 1 el 0 acá se va a ir a X, y acá intercambió de 1 y 0,",
+        "start": 4343.46,
+        "end": 4357.46
+    },
+    {
+        "text": " entienden lo que pasa, es intercambió de los filas, es decir, es una fila casi delonal, pero solo intercambie la fila I y la fila J, y todo restó esta identidad usual,",
+        "start": 4361.46,
+        "end": 4378.46
+    },
+    {
+        "text": " si al solo cambie estas dos filas, y las intercambien, y acá tengo un cuadrado raro acá entre los índices I y J, ¿entienden?",
+        "start": 4378.46,
+        "end": 4393.46
+    },
+    {
+        "text": " es intercambio y después hay que verificar verificación, misma cosa no lo voy a hacer,",
+        "start": 4394.46,
+        "end": 4402.46
+    },
+    {
+        "text": " hay que verificar que cada vez que show hago el producto de esta matriz, por cualquier matriz con M filas, lo que voy a obtener es exactamente el intercambio de las filas I y J,",
+        "start": 4405.46,
+        "end": 4420.46
+    },
+    {
+        "text": " usando un argumento similar a lo que hice acá, después veremos ejemplos para entender bien cómo funciona, para toda matriz y esto es un ejercicio,",
+        "start": 4420.46,
+        "end": 4443.46
+    },
+    {
+        "text": " y esto es fácil, porque para calcular este producto, choqueo calcular la caesima fila de esta matriz, será la caesima fila de esta por la matriz,",
+        "start": 4444.46,
+        "end": 4461.46
+    },
+    {
+        "text": " entonces si tengo un índice distinto de I y J, la caesima fila de esta matriz, esta identidad, multiplicada por la matriz no me va a cambiar nada, pero como intercambie las filas I y J,",
+        "start": 4462.46,
+        "end": 4478.46
+    },
+    {
+        "text": " acá se van a intercambiar las filas I y cuando voy a hacer las cuentas me va a intercambiar las filas I y J,",
+        "start": 4478.46,
+        "end": 4485.46
+    },
+    {
+        "text": " acá veremos ejemplos con matrizes particulares, pero puede hacerlo como ejercicio, sólo toma ejemplos de transformaciones elementales, calcular matrizes,",
+        "start": 4485.46,
+        "end": 4502.46
+    },
+    {
+        "text": " elementales correspondientes porque es fácil, hay que aplicar la transformación elemental a la identidad, entonces el algoritmo que transforma una transformación en la matriz es fácil y después verificar que la matriz elemental hace el trabajo deseado,",
+        "start": 4502.46,
+        "end": 4520.46
+    },
+    {
+        "text": " y nos falta el tercer tipo de matriz, el tercer tipo de matriz que es sumarle multiple de otra, no todo cero, sólo intercambiando las cosas, todo el resto de cero,",
+        "start": 4520.46,
+        "end": 4542.46
+    },
+    {
+        "text": " acá hay cero, acá hay unos, se quedan los unos por supuesto, y el resto acá todo es cero,",
+        "start": 4542.46,
+        "end": 4559.46
+    },
+    {
+        "text": " a sólo intercambie dos filas, todavía hay N1, pero ahora hay dos unos que se fueron del aliegonal, los otros unos se salen al aliegonal,",
+        "start": 4559.46,
+        "end": 4572.46
+    },
+    {
+        "text": " entienden lo que pasa es geométrico, y después lo que tenemos que hacer es calcular la matriz elemental asociada al último tipo de operación,",
+        "start": 4572.46,
+        "end": 4592.46
+    },
+    {
+        "text": " ok, tercer punto, tercer punto calculemos E de I más alpha j y voy a definirlo como la transformación elemental correspondiente,",
+        "start": 4592.46,
+        "end": 4617.46
+    },
+    {
+        "text": " aplicar a la identidad, ahora para todo la identidad, como siempre tengo un cuadrado y su Diego, todo el resto es cero,",
+        "start": 4617.46,
+        "end": 4634.46
+    },
+    {
+        "text": " ahora tengo dos filas partiduales y y j, supongamos que esta es la fila y, esta es la fila j, esta tiene un 1 acá, esta tiene un 1 acá,",
+        "start": 4635.46,
+        "end": 4655.46
+    },
+    {
+        "text": " que pasa si yo sumo a la fila y alpha m6 la fila j, acá este 1 se va a aparecer acá en la forma de un alpha, entienden,",
+        "start": 4655.46,
+        "end": 4671.46
+    },
+    {
+        "text": " entonces hay un alpha que aparece, nuevo, entonces es casi la identidad, pero en la posición de columna, acá no tengo que ir equivocarme,",
+        "start": 4672.46,
+        "end": 4685.46
+    },
+    {
+        "text": " de fila y de columna j pusimos un alpha, bueno ver lo que dice, esta columna j, ¿por qué? ¿cómo esta fila j y esta emocional?",
+        "start": 4685.46,
+        "end": 4697.46
+    },
+    {
+        "text": " también esta columna j, es un cuadrado, ¿ok? entonces en la fila y en la columna j añadimos un alpha que corresponde a esta fila,",
+        "start": 4697.46,
+        "end": 4712.46
+    },
+    {
+        "text": " que solo tiene un 1 acá y todo el resto es 0 y añadimos alpha bc esta fila acá, después hay que hacer la verificación,",
+        "start": 4712.46,
+        "end": 4721.46
+    },
+    {
+        "text": " y se me escutro como anteriormente, verificación no lo voy a hacer, hay que verificar que si yo multiplico esta matriz y más alpha j,",
+        "start": 4721.46,
+        "end": 4741.46
+    },
+    {
+        "text": " por cualquier matriz, voy a obtener la matriz de y más alpha j, aplicar a am.",
+        "start": 4741.46,
+        "end": 4753.46
+    },
+    {
+        "text": " entienden como se construyen, acá cuando repasan en la clase, es importante que hagan el trabajo de construirlas,",
+        "start": 4753.46,
+        "end": 4761.46
+    },
+    {
+        "text": " a mano para ver cómo funciona, porque estos son gráficos y no son muy precisos, hay que verificar con ejemplos, ¿ok?",
+        "start": 4761.46,
+        "end": 4773.46
+    },
+    {
+        "text": " por ejemplo voy a terminar con un ejemplito, ahora tenemos la demostración de la proposición bajo la hipotesis que ustedes hacen la verificación,",
+        "start": 4773.46,
+        "end": 4787.46
+    },
+    {
+        "text": " que verificen que esto siempre funciona, solo hay que hacer tres verificaciones pero son un poquito abstractas,",
+        "start": 4787.46,
+        "end": 4794.46
+    },
+    {
+        "text": " porque estamos manipulando matrices de tamaño cualquiera, y es así que la matimática se vuelve interesante, antes eran cuentas,",
+        "start": 4794.46,
+        "end": 4804.46
+    },
+    {
+        "text": " acá es geometría, las transformaciones elementales correspondían a ciertas formas de matrices, ¿ok?",
+        "start": 4804.46,
+        "end": 4813.46
+    },
+    {
+        "text": " y esto es un problema de geometría, ¿ok? ejemplo, vamos a hacer las cuentas, ¿ok?",
+        "start": 4813.46,
+        "end": 4835.46
+    },
+    {
+        "text": " yo quiero calcular la matriz ejemplo, sea, y la matriz elemental, ahora supongo que yo tengo tamaño tres filas,",
+        "start": 4835.46,
+        "end": 4851.46
+    },
+    {
+        "text": " su trabajo con tres filas, que es la matriz que correspondía la transformación, la fila tres, yo añado tres veces la fila uno,",
+        "start": 4851.46,
+        "end": 4866.46
+    },
+    {
+        "text": " yo quizá lo voy a escribir así, es decir transformación elemental, matriz disculpanos en la transformación de eso,",
+        "start": 4866.46,
+        "end": 4875.46
+    },
+    {
+        "text": " y la matriz elemental asociada a la operación que voy a escribir fila tres recibe la fila tres más tres veces o no cuatro veces la fila uno,",
+        "start": 4875.46,
+        "end": 4900.46
+    },
+    {
+        "text": " esto es una transformación elemental, este, ¿ok? es una matriz tres tres, solo supongo que tengo tres filas, ¿ok?",
+        "start": 4900.46,
+        "end": 4911.46
+    },
+    {
+        "text": " entonces, ¿eh? ¿cómo siempre soporto la identidad?",
+        "start": 4911.46,
+        "end": 4920.46
+    },
+    {
+        "text": " y aplicó mi transformación, F3 igual a F3 más 4F1, es decir, a la fila tres voy a leer cuatro veces la fila uno, lo que me ponen cuéficientemente 4A, ¿ok? esto es mi matriz,",
+        "start": 4921.46,
+        "end": 4938.46
+    },
+    {
+        "text": " ahora voy a aplicarla a otra matriz para ver cómo funciona, yo me doy una matriz cualquiera de esta manión tres por cuatro,",
+        "start": 4939.46,
+        "end": 4948.46
+    },
+    {
+        "text": " ahora sea la matriz siguiente uno, cero dos uno, dos menos uno tres seis, uno cuatro, cuatro cero,",
+        "start": 4948.46,
+        "end": 4967.46
+    },
+    {
+        "text": " y voy a multiplicar E4A para ver lo que paso, y van a ver lo que paso, E4A es igual a esta matriz que es un mamí matriz elemental,",
+        "start": 4968.46,
+        "end": 4979.46
+    },
+    {
+        "text": " ahi este 4 es el extranjero, es el que va a hacer la operación, y la voy a multiplicar por esta matriz que es 1, 0, 2, 1, 2 menos 1, 3, 6, 1, 4, 4, 0, ¿ok? hacemos las cuentas, 1 por 1,",
+        "start": 4980.46,
+        "end": 5008.46
+    },
+    {
+        "text": " 1, 1, 2 por 0, 0, 1 por 0, al final tengo 1, 1 por 1 más 0, más 0, 1, según la fila, 0 por 1, 1, 0 por 2, 0,",
+        "start": 5008.46,
+        "end": 5031.46
+    },
+    {
+        "text": " 0 por, no, disculpa, 1 por 0, 0, 0 por menos 1, 0, 0 por 4, 0, me queda 0, ahora esta por esta, 1 por 2, 2, 0 por 3, 0, 0 por 4, 0 por 4, 0, 0 por 4, 0, 0, 0, 0,",
+        "start": 5031.46,
+        "end": 5060.46
+    },
+    {
+        "text": " me queda 2, bueno, esta multiplicación me copiara fila 1, 1, y entonces tengo 1, 1 acá, pero esto ahora es 0, voy a ir a el cual este término,",
+        "start": 5060.46,
+        "end": 5075.46
+    },
+    {
+        "text": " ok, es decir, según la fila acá, por la primera columna, 0 por 1, ah, no cuenta, 1 por 2, 2, 0 por 1, no lo cuenta, me queda 2,",
+        "start": 5075.46,
+        "end": 5086.46
+    },
+    {
+        "text": " esto me copiara según la fila, pueden ver, acá misma cosa, segunda columna, 0 por 0 lo cuenta, 1 por",
+        "start": 5086.46,
+        "end": 5097.46
+    },
+    {
+        "text": " menos 1, obtengo menos 1, 0 por 4 lo cuenta, entonces estoy copiando la segunda fila, y después la cosa",
+        "start": 5097.46,
+        "end": 5109.46
+    },
+    {
+        "text": " interesante es este, 4 por 1, esto cuenta, 0 por 2, 1 por 1 cuenta, obtengo 5, ok, después 4 por 0,",
+        "start": 5109.46,
+        "end": 5129.46
+    },
+    {
+        "text": " esto desaparece, 0 por menos 1, desaparece, 1 por 4, obtengo 4, y acá, 4 por 2, 8, esto lo cuenta, 1 por 4, 4, 8",
+        "start": 5129.46,
+        "end": 5146.46
+    },
+    {
+        "text": " más 4, 12, y después 4 por 1, 4, esta cosa no cuenta, 1 por 0 lo cuenta, obtengo 4, y acá si miran obtienen la fila 3,",
+        "start": 5146.46,
+        "end": 5162.46
+    },
+    {
+        "text": " más 4 veces la fila 1, esto es F3, pueden ver, es magia blanca, vermos después magia negra,",
+        "start": 5162.46,
+        "end": 5181.46
+    },
+    {
+        "text": " esto todavía es magia blanca, ok, y esto es el ejemplo, y para convencerse, ejercicio,",
+        "start": 5181.46,
+        "end": 5191.46
+    },
+    {
+        "text": " tomar otras transformaciones elementales, y ese producto solo para verificar que esto funciona, gracias.",
+        "start": 5191.46,
+        "end": 5197.46
+    }
+]
