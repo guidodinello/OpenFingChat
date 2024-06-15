@@ -113,6 +113,7 @@ def transcript():
                 transcribe_audio_with_whisper(audio_file_path, transcription_file_path)
                 lesson_model.update(lesson['_id'], {"transcribed": True})
             except Exception as e:
+                lesson_model.update(lesson['_id'], {"transcribed": False})
                 logging.error(f"Failed to process lesson {lesson['_id']}: {e}")
             finally:
                 if os.path.exists(video_file_path):
