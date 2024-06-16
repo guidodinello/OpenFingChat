@@ -7,7 +7,6 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, FewShotChatMessagePromptTemplate
 from langchain_core.messages import HumanMessage
-from langchain_core.prompts import BasePromptTemplate
 from langchain_core.prompts import PromptTemplate
 from langsmith import traceable
 
@@ -18,8 +17,6 @@ sys.path.append(parent_dir)
 
 from RAG.prompt import PROMPT, EXAMPLES
 from RAG.contextualize_prompt import CONTEXTUALIZE_PROMPT
-from loader.vectorstore import VectorStore
-from store.data.models.lessons import LessonModel
 from loader.vectorstore import VectorStore
 
 load_dotenv(override=True)
@@ -118,16 +115,16 @@ def rag(query, chat_history):
 if __name__ == "__main__":
     chat_history = []
 
-    question = "Qué es la evolución natural?"
+    question = "Qué es la inducción completa?"
     ai_msg_1 = rag(question, chat_history)
     chat_history.extend([HumanMessage(content=question), ai_msg_1["answer"]])
     
     print('\nAnswer to first question: ', ai_msg_1["answer"])
     print('\nchat_history: ', chat_history)
 
-    second_question = "Cuál fue mi primera pregunta?"
-    ai_msg_2 = rag(second_question, chat_history)
-    chat_history.extend([HumanMessage(content=second_question), ai_msg_2["answer"]])
+    # second_question = "Cuál fue mi primera pregunta?"
+    # ai_msg_2 = rag(second_question, chat_history)
+    # chat_history.extend([HumanMessage(content=second_question), ai_msg_2["answer"]])
 
-    print('\nAnswer to second question: ', ai_msg_2["answer"])
-    print('\nchat_history: ', chat_history)
+    # print('\nAnswer to second question: ', ai_msg_2["answer"])
+    # print('\nchat_history: ', chat_history)
