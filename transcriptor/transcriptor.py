@@ -89,11 +89,11 @@ def transcript():
     subject_ids = [
         '66567efb97cf1d12f025fde5', # AGPI
         '66567f1097cf1d12f025fe07', # Algoritmos Evolutivos
-        '66567f8197cf1d12f025feb7', # Aplicaciones del Algebra Lineal
-        '665681ca97cf1d12f026025f', # Economía
-        '6656821b97cf1d12f02602e3', # El Negocio del Software,
-        '665683dc97cf1d12f02605c5', # Física 1
-        '665684ff97cf1d12f02607a3', # GAL 1
+        # '66567f8197cf1d12f025feb7', # Aplicaciones del Algebra Lineal
+        # '665681ca97cf1d12f026025f', # Economía
+        # '6656821b97cf1d12f02602e3', # El Negocio del Software,
+        # '665683dc97cf1d12f02605c5', # Física 1
+        # '665684ff97cf1d12f02607a3', # GAL 1
     ]
 
     lesson_model = LessonModel()    
