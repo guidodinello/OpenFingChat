@@ -1,0 +1,1887 @@
+[
+    {
+        "text": " Si ustedes se acuerdan, empezamos a tratar el tema de la descomposición en valores",
+        "start": 0.0,
+        "end": 23.16
+    },
+    {
+        "text": " singulares de una matriz que yo les había comentado lo que quería decir. Ahora en un",
+        "start": 23.16,
+        "end": 26.6
+    },
+    {
+        "text": " rato lo voy a escribir, pero habíamos visto resultados previos y vamos a retomar por",
+        "start": 26.6,
+        "end": 32.0
+    },
+    {
+        "text": " ahí la clase de hoy. Repasando esos resultados previos que habíamos probado. En definitivo",
+        "start": 32.0,
+        "end": 36.96
+    },
+    {
+        "text": " uno tiene una transformación lineal de VNWB, se acuerdan que VYWB son dos espacios vectoriales",
+        "start": 36.96,
+        "end": 48.040000000000006
+    },
+    {
+        "text": " con producto interno, acá tengo V con su correspondiente producto interno, acá tengo",
+        "start": 48.040000000000006,
+        "end": 55.32
+    },
+    {
+        "text": " V con su correspondiente producto interno, ambos espacios vectoriales son sobre el mismo",
+        "start": 55.32,
+        "end": 61.96
+    },
+    {
+        "text": " cuerpo acá. Bueno vamos a pensar que la dimensión de este N son los dos dimensiones finitas,",
+        "start": 61.96,
+        "end": 70.44
+    },
+    {
+        "text": " este tiene dimension N, este tiene dimension M. Bien y lo que tenemos es una transformación",
+        "start": 70.44,
+        "end": 79.24000000000001
+    },
+    {
+        "text": " lineal que va desde aquí por acá. Bien y vamos a suponer que el rango de esa transformación",
+        "start": 79.24,
+        "end": 87.16
+    },
+    {
+        "text": " lineal es un número R conocido, entonces tenemos que el rango, se acuerdan que el rango",
+        "start": 87.16,
+        "end": 97.39999999999999
+    },
+    {
+        "text": " no es otra cosa que la dimensión de la imagen. Bien entonces para seguir estes completando",
+        "start": 97.39999999999999,
+        "end": 105.6
+    },
+    {
+        "text": " el dibujo acá tenemos yo que es el núcleo de la transformación, acá tenemos la imagen",
+        "start": 105.6,
+        "end": 112.36
+    },
+    {
+        "text": " y la dimensión y el rango de la transformación justamente es, esto acá es el rango de la transformación",
+        "start": 112.36,
+        "end": 125.84
+    },
+    {
+        "text": " de la dimensión de la imagen. Bien hasta acá nada nuevo. Bueno el rango está entre la dimensión",
+        "start": 125.84,
+        "end": 138.44
+    },
+    {
+        "text": " de este espacio y es menor igual que la dimensión del espacio, y es menor igual que la dimensión",
+        "start": 138.44,
+        "end": 141.96
+    },
+    {
+        "text": " del espacio, ustedes lo saben a eso por el quebra uno, R menor igual que N, R menor igual que",
+        "start": 141.96,
+        "end": 151.32
+    },
+    {
+        "text": " M y qué relación hay entre el rango y la dimensión del núcleo acá. Nosotros sabemos por el",
+        "start": 151.32,
+        "end": 159.48
+    },
+    {
+        "text": " tolemmo las dimensiones que la dimensión de la imagen, más la dimensión del núcleo,",
+        "start": 159.48,
+        "end": 162.6
+    },
+    {
+        "text": " la dimensión de este espacio vectorial, o sea que la dimensión del núcleo es N, menos",
+        "start": 162.6,
+        "end": 167.2
+    },
+    {
+        "text": " la dimensión de la imagen que serre, o sea que lo que sabemos es que la dimensión del núcleo",
+        "start": 167.2,
+        "end": 171.12
+    },
+    {
+        "text": " de este es igual a N, menos el. En lo que voy a comentar ahora voy a suponer los casos",
+        "start": 171.12,
+        "end": 183.48000000000002
+    },
+    {
+        "text": " no triviales, voy a suponer que hay elementos en el núcleo, así que el núcleo no es el",
+        "start": 183.48000000000002,
+        "end": 189.88
+    },
+    {
+        "text": " elemento espacio vectorial trivial, el cero, y voy a suponer que hay elementos fuera del núcleo,",
+        "start": 189.88,
+        "end": 195.84
+    },
+    {
+        "text": " o sea que el núcleo tampoco es esto, y lo mismo con la imagen, vamos a suponer que la imagen",
+        "start": 195.84,
+        "end": 199.76
+    },
+    {
+        "text": " no es el espacio trivial y no es todo leve, porque vamos a elegir vectores acá dentro,",
+        "start": 199.76,
+        "end": 204.64
+    },
+    {
+        "text": " vectores acá fuera y vamos a elegir vectores acá dentro y vectores acá fuera. La adaptación",
+        "start": 204.64,
+        "end": 208.95999999999998
+    },
+    {
+        "text": " a esos casos triviales es directa, estábamos, es directa, si yo el caso particular que el",
+        "start": 208.95999999999998,
+        "end": 215.28
+    },
+    {
+        "text": " núcleo sea todo esto, todos los vectores van a estar en el núcleo y no van a ver nada",
+        "start": 215.28,
+        "end": 219.0
+    },
+    {
+        "text": " afuera y lo mismo ahí, pero vamos a para simplificar la cuestión, vamos a suponer que el",
+        "start": 219.0,
+        "end": 225.39999999999998
+    },
+    {
+        "text": " núcleo no es trivial y que la imagen tampoco, está claro, es solamente para simplificar el",
+        "start": 225.4,
+        "end": 232.16
+    },
+    {
+        "text": " argumento. Entonces, ahora sí, recordemos que la clase pasada consideramos el siguiente",
+        "start": 232.16,
+        "end": 238.20000000000002
+    },
+    {
+        "text": " operador. El operador que resultaba de componer T con T al junto, que es un operador que",
+        "start": 238.2,
+        "end": 257.06
+    },
+    {
+        "text": " va de WBNB como ustedes ya saben, que esto va univo que hamento definido. Entonces, consideramos",
+        "start": 257.06,
+        "end": 263.24
+    },
+    {
+        "text": " el operador que le llamamos CR, que este estrella conté, este es un operador que actúa",
+        "start": 263.24,
+        "end": 274.32
+    },
+    {
+        "text": " sobre vectores en este espacio y me da vectores en este espacio, o sea, realmente un operador,",
+        "start": 274.32,
+        "end": 279.52
+    },
+    {
+        "text": " WBNB. Y habíamos estudiado, habíamos demostrado ciertas características de ese operador, se acueran",
+        "start": 279.52,
+        "end": 286.24
+    },
+    {
+        "text": " cuáles eran, que ellos le dijen, recuerdan esto por la clase próxima. Las características son",
+        "start": 286.24,
+        "end": 292.32
+    },
+    {
+        "text": " asiguientes y acá termina el repaso lo que vimos la clase pasada. Primero, este R es",
+        "start": 292.32,
+        "end": 303.24
+    },
+    {
+        "text": " autoaljunto, ese operador R, la composición de T estrella conté, aplico T y después",
+        "start": 303.24,
+        "end": 309.04
+    },
+    {
+        "text": " de T estrella es autoaljunto. Que ese autoaljunto significa por el teoreme espectral que",
+        "start": 309.04,
+        "end": 324.56
+    },
+    {
+        "text": " lleva a Guinalizable en una base ortodormal de vectores propios, y que todos los valores",
+        "start": 324.56,
+        "end": 329.40000000000003
+    },
+    {
+        "text": " propios son reales, etcétera, es cosa que ya vimos. Entonces, esto es Guinalizable",
+        "start": 329.4,
+        "end": 342.67999999999995
+    },
+    {
+        "text": " en una base ortodormal de vectores propios. Otra cosa que vimos es que R es no negativo,",
+        "start": 342.67999999999995,
+        "end": 357.91999999999996
+    },
+    {
+        "text": " ya acuerdan lo que quería decir que R era no negativo. Que R es no negativo significa",
+        "start": 357.92,
+        "end": 365.08000000000004
+    },
+    {
+        "text": " que si yo hago esto, R mb, con B esto es siempre mayor y igual que 0, donde saben que los valores",
+        "start": 365.08000000000004,
+        "end": 372.48
+    },
+    {
+        "text": " propios R son siempre mayor y igual que 0. Entonces, R es no negativo, autoaljunto y",
+        "start": 372.48,
+        "end": 386.16
+    },
+    {
+        "text": " no negativo, por eso valores propios reales y no negativos. Esto significa que sus valores",
+        "start": 386.16,
+        "end": 400.76000000000005
+    },
+    {
+        "text": " propios son todos los valores iguales que 0, todos los valores propios cumplen lambda",
+        "start": 400.76,
+        "end": 416.32
+    },
+    {
+        "text": " mayor y lo que es 0. Y la última cosa que habíamos visto es que el rango de R es el",
+        "start": 416.32,
+        "end": 420.62
+    },
+    {
+        "text": " mismo que el rango de T. Si bien son dos operadores bien diferentes porque T va de vn, w,",
+        "start": 420.62,
+        "end": 427.32
+    },
+    {
+        "text": " y r va de vn, v, no confundir uno con el otro, lo que probamos es además que el rango de T es",
+        "start": 427.32,
+        "end": 435.76
+    },
+    {
+        "text": " el mismo que el rango de R. En particular probamos que los dos operadores tienen el mismo núcleo y",
+        "start": 435.76,
+        "end": 440.36
+    },
+    {
+        "text": " eso lo vamos a usar ahora. Entonces, la última cosa que probamos es que el rango de R es igual al",
+        "start": 440.36,
+        "end": 452.08
+    },
+    {
+        "text": " rango de T que le llamamos el reminúscula y además probamos, bueno esto lo probamos como consecuencia",
+        "start": 452.08,
+        "end": 461.64
+    },
+    {
+        "text": " de siguiente resultado, de que el núcleo de R es igual el núcleo de T. Bien, entonces,",
+        "start": 461.64,
+        "end": 468.15999999999997
+    },
+    {
+        "text": " resumiendo acá sobre T no tenemos ninguna condición, es un operador que va de acá acá, nada más,",
+        "start": 468.15999999999997,
+        "end": 475.12
+    },
+    {
+        "text": " bien generico. Y con T nos construimos uno operador r que es componer testres ya con T,",
+        "start": 475.68,
+        "end": 482.64
+    },
+    {
+        "text": " aplico T y aplico testres ya. Y sobre eso sacamos varios resultados, que era autónaco junto,",
+        "start": 482.64,
+        "end": 487.2
+    },
+    {
+        "text": " que es no negativo y que el rango de R coincide con esto y el núcleo es igual al núcleo de T. Y entonces con",
+        "start": 487.2,
+        "end": 496.72
+    },
+    {
+        "text": " eso podemos probar si ahora lo que es el teóreme espectral para las composiciones valores",
+        "start": 496.72,
+        "end": 506.0
+    },
+    {
+        "text": " singulares de una matriz. Antes vamos a probar un resultado previo, que se deduce de trabajar un",
+        "start": 506.0,
+        "end": 510.24
+    },
+    {
+        "text": " poquito estas cosas. Estamos, bueno vamos entonces a sacar conclusiones para lo que ya conocemos para",
+        "start": 510.24,
+        "end": 518.24
+    },
+    {
+        "text": " R y vamos a sacar esas conclusiones con conclusiones para T. En primer lugar, por el teóreme espectral para",
+        "start": 518.24,
+        "end": 526.2
+    },
+    {
+        "text": " autónaco junto, aplicado a R, que sabemos que existe, que me dice el teóreme espectral para autónaco junto",
+        "start": 526.2,
+        "end": 533.76
+    },
+    {
+        "text": " aplicaba R. Que existe una base autónoma formada por la autónaco de propios de R. Esos",
+        "start": 533.76,
+        "end": 543.48
+    },
+    {
+        "text": " aventores propios, voy a ir acá en donde actúa R, el operador R es un operador que actúa de B,",
+        "start": 543.48,
+        "end": 552.52
+    },
+    {
+        "text": " bien entonces, por el teóreme espectral para autónaco junto. Vamos a sacar información de acá,",
+        "start": 552.52,
+        "end": 563.8000000000001
+    },
+    {
+        "text": " por el teóreme espectral para autónaco junto.",
+        "start": 563.8,
+        "end": 565.6999999999999
+    },
+    {
+        "text": " Aplicado a R, al operador R, sabemos que existe una base autónoma de B,",
+        "start": 576.0,
+        "end": 584.5999999999999
+    },
+    {
+        "text": " bien, le vamos a llamar a esa base, existe una base A, B1, B2, lo vamos a llamar hacia los",
+        "start": 584.6,
+        "end": 600.46
+    },
+    {
+        "text": " aventores. Tengo N, V1, B2, voy a separar el BR, BR, BR1, donde R es justamente el rango,",
+        "start": 600.46,
+        "end": 612.22
+    },
+    {
+        "text": " hasta B, N y esto es una base autónoma del espacio vectorial. Esto es algo que ya sabemos,",
+        "start": 612.22,
+        "end": 624.5
+    },
+    {
+        "text": " lo que tenemos espectral para autónaco junto, aplicado a R. Existe una base autónoma formada por",
+        "start": 624.5,
+        "end": 631.66
+    },
+    {
+        "text": " vectores propios, o sea, cada uno de estos es un vector propio BR. O sea, tal que si yo le",
+        "start": 631.66,
+        "end": 640.26
+    },
+    {
+        "text": " aplico R al elemento B, obtengo un escalar, lambda y por el propio elemento B y esto es para todo",
+        "start": 640.26,
+        "end": 651.74
+    },
+    {
+        "text": " ir desde 1 hasta 1. Son todos los factores propios BR y los lambda y como el operador",
+        "start": 651.74,
+        "end": 661.98
+    },
+    {
+        "text": " es autoadjunto, todos estos valores propios son reales y además por ser R no negativo,",
+        "start": 661.98,
+        "end": 673.74
+    },
+    {
+        "text": " todos son todos mayores iguales que seros. Estamos entonces, uso el teórico espectral para aplicado",
+        "start": 673.74,
+        "end": 686.1
+    },
+    {
+        "text": " R para concluir eso. Ahora, no tenemos lo siguiente, me siguen atacando, no tenemos lo siguiente,",
+        "start": 686.1,
+        "end": 700.14
+    },
+    {
+        "text": " si el núcleo no es trivial, los elementos que están en el núcleo, que ocurre con los elementos",
+        "start": 700.58,
+        "end": 706.6
+    },
+    {
+        "text": " que están en el núcleo. Los elementos que están en el núcleo de T, que también el núcleo",
+        "start": 706.6,
+        "end": 710.58
+    },
+    {
+        "text": " R cumple que si le aplicó R a eso me da cero, o sea, todos los elementos del núcleo son",
+        "start": 710.58,
+        "end": 716.6
+    },
+    {
+        "text": " vectores propios BR asociados al lambda y igual a cero. Por eso, si suponemos que este núcleo",
+        "start": 716.6,
+        "end": 723.46
+    },
+    {
+        "text": " no es trivial, que es distinto del cero, estamos diciendo que lambda y igual a cero es valor",
+        "start": 723.46,
+        "end": 731.46
+    },
+    {
+        "text": " propio BR, porque hay vectores para los cuales si le aplico R me da cero, vectores diferentes",
+        "start": 731.46,
+        "end": 737.46
+    },
+    {
+        "text": " del cero. Y si esto fue ese trivial, estamos diciendo que cosa, que estamos diciendo que no hay",
+        "start": 737.46,
+        "end": 744.02
+    },
+    {
+        "text": " que el lambda y igual a cero no es valor propio BR, con lo cual estamos diciendo que R no",
+        "start": 744.02,
+        "end": 749.2800000000001
+    },
+    {
+        "text": " solamente que es no negativo sino que es más dispositivo, estamos, eso solamente lo que",
+        "start": 749.28,
+        "end": 754.0799999999999
+    },
+    {
+        "text": " hay que cambiar si esto fue ese trivial. Entonces, si el núcleo de T, por lo tanto si el núcleo",
+        "start": 754.0799999999999,
+        "end": 765.88
+    },
+    {
+        "text": " de T que es igual al núcleo de R, fuese un espacio no trivial, que llamamos ese cero, entonces",
+        "start": 765.88,
+        "end": 774.48
+    },
+    {
+        "text": " lambda y igual a cero es valor propio BR, estamos, entonces acá dentro están los vectores",
+        "start": 774.48,
+        "end": 792.32
+    },
+    {
+        "text": " que son valores propios BR, vectores propios BR asociados al lambda y igual a cero, también",
+        "start": 792.32,
+        "end": 798.8000000000001
+    },
+    {
+        "text": " es valor propio de R, es alto. Me siguen hasta acá, vamos a hacer una análisis cuidadoso",
+        "start": 798.8,
+        "end": 806.4
+    },
+    {
+        "text": " de esto y va a salir regalado la escomposición en valores singulares. Entonces tenemos el cero",
+        "start": 806.4,
+        "end": 815.3599999999999
+    },
+    {
+        "text": " que es valor propio en ese caso y todos los otros valores propios son estrictamente positivos",
+        "start": 815.3599999999999,
+        "end": 819.9599999999999
+    },
+    {
+        "text": " y los ordenamos de mayor a menor en el sentido de que este corresponde al lambda 1 más",
+        "start": 819.9599999999999,
+        "end": 825.92
+    },
+    {
+        "text": " grande, este al que sigue, este al que sigue y los últimos corresponden a valor propio",
+        "start": 825.92,
+        "end": 831.04
+    },
+    {
+        "text": " lambda y igual a cero. Estamos entonces, ordenamos los vectores,",
+        "start": 831.04,
+        "end": 837.04
+    },
+    {
+        "text": " entonces ordenamos los vectores de la base A de manera que este corresponde al valor",
+        "start": 837.04,
+        "end": 856.48
+    },
+    {
+        "text": " propio mayor de modo que lambda 1 sea mayor igual que lambda 2, sea mayor igual etcétera,",
+        "start": 856.48,
+        "end": 869.08
+    },
+    {
+        "text": " mayor igual que lambda R,",
+        "start": 869.08,
+        "end": 872.48
+    },
+    {
+        "text": " todos estos son vectores propios BR, los valores propios BR son mayores iguales que cero,",
+        "start": 902.48,
+        "end": 911.36
+    },
+    {
+        "text": " en el caso de que el núcleo BR no sea trivial, entonces 0 es valor propio y todos los otros",
+        "start": 911.36,
+        "end": 916.8000000000001
+    },
+    {
+        "text": " son estrictamente positivos. Entonces ordenamos los vectores acá de tal manera que este",
+        "start": 916.8000000000001,
+        "end": 923.96
+    },
+    {
+        "text": " es vector propio associado al lambda 1, este es vector propio associado al lambda 2 etcétera,",
+        "start": 923.96,
+        "end": 929.88
+    },
+    {
+        "text": " el R es vector propio associado al lambda R y todos los otros los que vienen de acá para",
+        "start": 929.88,
+        "end": 935.64
+    },
+    {
+        "text": " adelante son vectores propios associados al lambda igual a cero y justamente cuántos vectores",
+        "start": 935.64,
+        "end": 941.48
+    },
+    {
+        "text": " propios tengo acá, tengo tantos como N-R, acá tengo N-R, vectores que valen cero,",
+        "start": 941.48,
+        "end": 951.32
+    },
+    {
+        "text": " que justamente es la dimensión del núcleo, o sea que si la dimensión del núcleo es 5, tengo",
+        "start": 951.32,
+        "end": 957.84
+    },
+    {
+        "text": " 5 vectores acá dentro, entonces los últimos vectores en esta lista, los N-R vectores finales,",
+        "start": 957.84,
+        "end": 966.0400000000001
+    },
+    {
+        "text": " los ordenos de tal manera corresponden al lambda igual a cero, estamos, esto justamente es",
+        "start": 966.0400000000001,
+        "end": 971.6800000000001
+    },
+    {
+        "text": " la dimensión del núcleo. Y ojo una cosa, ¿por qué ponemos acá mayor igual y no mayor",
+        "start": 971.6800000000001,
+        "end": 979.32
+    },
+    {
+        "text": " estricto? Porque podría ser que V1 y V2 fueron vectores propios associados al mismo valor",
+        "start": 979.32,
+        "end": 986.4000000000001
+    },
+    {
+        "text": " propio, entonces en ese caso lambda 1 sería igual a lambda 2, no importa, las ordenos de esa",
+        "start": 986.4000000000001,
+        "end": 992.6800000000001
+    },
+    {
+        "text": " manera ni siquiera importa finalmente el ordenamiento en lo que voy a hacer, pero si ordenase",
+        "start": 992.6800000000001,
+        "end": 998.0
+    },
+    {
+        "text": " parar los primeros, sin puertos separar los primeros de los últimos que son los que corresponden",
+        "start": 998.0,
+        "end": 1002.0400000000001
+    },
+    {
+        "text": " al valor propio cero, entonces todos estos vectores estos corresponden a ver dónde puedo escribir",
+        "start": 1002.04,
+        "end": 1011.64
+    },
+    {
+        "text": " esta, porque habría que ver escribir, estos son los valores propios, los vectores propios,",
+        "start": 1011.64,
+        "end": 1017.7199999999999
+    },
+    {
+        "text": " perdón, propios de R, asociados a valores propios positivos, y estos son los vectores",
+        "start": 1017.72,
+        "end": 1047.28
+    },
+    {
+        "text": " propios de R, estoy haciendo esto para molestar a las cámaras, son los vectores propios",
+        "start": 1047.28,
+        "end": 1055.3
+    },
+    {
+        "text": " R, asociados al valor propio cero, y se toque este lío, simplemente una cuestión de",
+        "start": 1055.3,
+        "end": 1081.8999999999999
+    },
+    {
+        "text": " grupar las cosas para simplificar el análisis que viene, entonces si volvemos al dibujito",
+        "start": 1081.9,
+        "end": 1089.96
+    },
+    {
+        "text": " original, todos estos vectores V1, V2, V2, que son vectores propios de R están acá fuera",
+        "start": 1089.96,
+        "end": 1097.5
+    },
+    {
+        "text": " del núcleo, acá tengo el V1, acá tengo el V2, V3, etcétera, por acá tendré el VR, y todos",
+        "start": 1097.5,
+        "end": 1108.46
+    },
+    {
+        "text": " restantes el VR más 1 hasta el VN están en el núcleo, están acá dentro, o sea esto es",
+        "start": 1108.46,
+        "end": 1120.7
+    },
+    {
+        "text": " una base horto normal de vectores propios de R, a los que están fuera el núcleo le llamo",
+        "start": 1120.7,
+        "end": 1127.02
+    },
+    {
+        "text": " V1, V2 hasta VR ordenados con los valores propios de mayor a menor, y a los que están",
+        "start": 1127.02,
+        "end": 1132.28
+    },
+    {
+        "text": " dentro del núcleo le llamo VR más 1 en la parte, está entendido? Bueno entonces como construimos",
+        "start": 1132.28,
+        "end": 1139.36
+    },
+    {
+        "text": " los vectores que están acá, yo tengo los vectores propios acá y tengo sus correspondientes",
+        "start": 1139.36,
+        "end": 1143.96
+    },
+    {
+        "text": " valores propios, entonces hago lo siguiente, esta es la base horto normal de vectores propios",
+        "start": 1143.96,
+        "end": 1149.16
+    },
+    {
+        "text": " y todos eran vectores propios de R, entonces me hubiera construido vectores que están acá",
+        "start": 1149.16,
+        "end": 1157.84
+    },
+    {
+        "text": " en el espacio W, entonces para ahí igual desde 1 hasta R para los primeros revectores,",
+        "start": 1157.84,
+        "end": 1167.28
+    },
+    {
+        "text": " lo que voy a hacer es todo esta análisis que hicimos lo hicimos para el operador R,",
+        "start": 1167.28,
+        "end": 1175.72
+    },
+    {
+        "text": " ahora volvemos a T, a la transformación inalte, entonces para ahí igual desde 1 hasta",
+        "start": 1175.72,
+        "end": 1181.0
+    },
+    {
+        "text": " 3, definimos los siguientes vectores, el vector WI, van a ser vectores que viven acá,",
+        "start": 1181.0,
+        "end": 1196.48
+    },
+    {
+        "text": " viven en la imagen en realidad, el vector WI es el T aplicado al elemento VI, o sea el T",
+        "start": 1196.48,
+        "end": 1205.72
+    },
+    {
+        "text": " aplicado cada uno de estos elementos divididos por un escalar que tiene que ver con los valores",
+        "start": 1205.72,
+        "end": 1210.64
+    },
+    {
+        "text": " propios, a ese escalar le llamamos sigma i ya digo lo que es y esto es un elemento del espacio",
+        "start": 1210.64,
+        "end": 1219.3200000000002
+    },
+    {
+        "text": " de llegada, que es el escalar sigma i, lo elegimos de una manera propiada para las cuentas que",
+        "start": 1219.3200000000002,
+        "end": 1224.96
+    },
+    {
+        "text": " vienen un ratito, sigma i es la raíz cuadrada del operador lambda i correspondiente este vector",
+        "start": 1224.96,
+        "end": 1234.5200000000002
+    },
+    {
+        "text": " propio R, estamos entonces, recordemos lo que estoy haciendo es agarro líe si el vector",
+        "start": 1234.52,
+        "end": 1244.56
+    },
+    {
+        "text": " acá le aplicó T por lo tanto llevo al espacio este, estoy acá en la imagen y divido por un",
+        "start": 1244.56,
+        "end": 1252.12
+    },
+    {
+        "text": " numarito que sigma i que no es otra cosa que la raíz cuadrada del valor propio R que correspondía",
+        "start": 1252.12,
+        "end": 1258.6399999999999
+    },
+    {
+        "text": " a ese vector propio, lambda i son los vectores propios, los valores propios de R, entonces sigma",
+        "start": 1258.64,
+        "end": 1264.88
+    },
+    {
+        "text": " i es la raíz cuadrada de esto, donde estos numeritos, el valor propio R, los que vimos",
+        "start": 1264.88,
+        "end": 1278.48
+    },
+    {
+        "text": " en la raíz cuadrada, entonces a lo que voy es que aplicando a los elementos que no están en",
+        "start": 1278.48,
+        "end": 1287.64
+    },
+    {
+        "text": " el núcleo voy a parar acá la imagen porque todo lo que está acá va para el imagen a los",
+        "start": 1287.64,
+        "end": 1293.1200000000001
+    },
+    {
+        "text": " núcleos dejo aparte, los núcleos deje para el cero lo saco por ahora, pero entonces tendría",
+        "start": 1293.1200000000001,
+        "end": 1298.24
+    },
+    {
+        "text": " el W1 vivir acá dentro, el W2 vivir acá dentro hasta el WR que viviría acá dentro,",
+        "start": 1298.8,
+        "end": 1308.04
+    },
+    {
+        "text": " sí, que son cada uno de ellos es aplicarle T a este, T a B1 y dividir por la raíz cuadrada del",
+        "start": 1309.56,
+        "end": 1316.16
+    },
+    {
+        "text": " valor propio lambda 1, T a B2 y vivir por la raíz cuadrada de valor propio lambda 2 etcétera y",
+        "start": 1316.16,
+        "end": 1321.64
+    },
+    {
+        "text": " con esos tiempos estos vectores acá hasta el WR, bien entonces la observación que vamos a",
+        "start": 1321.64,
+        "end": 1329.1200000000001
+    },
+    {
+        "text": " hacer ahora que me dice por qué escribo estos, estos numeritos son los que seamos los valores",
+        "start": 1329.1200000000001,
+        "end": 1334.5600000000002
+    },
+    {
+        "text": " singulares, por qué escribo las cosas así, por qué fíjense estos vectores WI, esto se acá",
+        "start": 1334.5600000000002,
+        "end": 1341.8000000000002
+    },
+    {
+        "text": " me forme una base ortororma acá dentro, entonces no tao le mita, no se asusten que esto ya termina",
+        "start": 1341.8,
+        "end": 1357.9199999999998
+    },
+    {
+        "text": " y van a ver que resultados lindos saben de todo este análisis, ¿acú lo sé que partimos de esto",
+        "start": 1361.76,
+        "end": 1368.76
+    },
+    {
+        "text": " que era una base ortorormal del espacio de partida, ahora voy a construir como les decía una base",
+        "start": 1368.76,
+        "end": 1375.6
+    },
+    {
+        "text": " ortorormal del espacio llegada, la primera observación es que estos WI así construidos me forman",
+        "start": 1375.6,
+        "end": 1382.28
+    },
+    {
+        "text": " una base ortorormal de la imagen de T, o sea que estos vectores acá dentro son una base y son",
+        "start": 1382.28,
+        "end": 1391.08
+    },
+    {
+        "text": " ortorormales, son ortobanales 2 o 2 y de norma 1.",
+        "start": 1391.08,
+        "end": 1401.36
+    },
+    {
+        "text": " Pregunta que les hago, se acuerdan con tu vale la dimensión de la imagen de T, esta escrita",
+        "start": 1401.36,
+        "end": 1407.32
+    },
+    {
+        "text": " por ahí es R, no habíamos partido la base que la dimensión de la imagen de T, R y acá tengo",
+        "start": 1407.32,
+        "end": 1413.6399999999999
+    },
+    {
+        "text": " R vectores, entonces si yo veo que estos R vectores son el AI concluyo que son una base y si",
+        "start": 1413.6399999999999,
+        "end": 1420.6799999999998
+    },
+    {
+        "text": " veo demás que son un conjunto ortorormal concluyo que es una base ortorormal, entonces veamos eso",
+        "start": 1420.68,
+        "end": 1428.44
+    },
+    {
+        "text": " ¿más quería manipular el espacio de M?",
+        "start": 1435.16,
+        "end": 1438.8
+    },
+    {
+        "text": " Modulo, no lo vamos a ver que me da eso, no por que decís eso, no, espero un poquito",
+        "start": 1438.8,
+        "end": 1450.28
+    },
+    {
+        "text": " pero un poquito ya va a ver que estos vectores tienen norma 1 y que son ortobanales 2 o 2, entonces si son",
+        "start": 1451.68,
+        "end": 1461.52
+    },
+    {
+        "text": " ortobanales esto es un conjunto ortobanal por tanto el AI como son R son una base y además como son",
+        "start": 1461.52,
+        "end": 1466.92
+    },
+    {
+        "text": " los que son ortobanales 2 o 2 es una base ortorormal fíjense que ahora ya sale eso",
+        "start": 1467.92,
+        "end": 1474.28
+    },
+    {
+        "text": " no pues yo no estoy diciendo que T es un isometri, no estoy diciendo nada, T es algo que va desde",
+        "start": 1481.0800000000002,
+        "end": 1486.52
+    },
+    {
+        "text": " acá hasta acá, cualquiera, entonces vamos a probar ese resultado, yo voy a agarrar 2 vectores",
+        "start": 1486.52,
+        "end": 1496.4
+    },
+    {
+        "text": " y voy a agarrar cualquier otro, yo voy a agarrar un vector por ejemplo el WI con el WJ y voy a tomar",
+        "start": 1496.4,
+        "end": 1509.0800000000002
+    },
+    {
+        "text": " el producto interno de los ofectores acá en W, agarrar el WI con el WJ, miren que lindo como sale todo",
+        "start": 1509.0800000000002,
+        "end": 1518.3200000000002
+    },
+    {
+        "text": " eso por construcción a claración trivial, está claro que esto solamente lo puedo hacer para",
+        "start": 1519.32,
+        "end": 1528.52
+    },
+    {
+        "text": " los vectores que no están en el núcleo, porque lo que están en el núcleo corresponden la valor",
+        "start": 1528.52,
+        "end": 1531.72
+    },
+    {
+        "text": " propio 0 y no puede cada vivir por raíz de 0, entonces esta construcción le hago para estos",
+        "start": 1531.72,
+        "end": 1537.28
+    },
+    {
+        "text": " primeros vectores, entonces veamos que me da esto WI con WJ, por definición esto es",
+        "start": 1537.28,
+        "end": 1547.3999999999999
+    },
+    {
+        "text": " T envi sobre sigma y con T envi j sobre sigma j y este producto interno es en WB,",
+        "start": 1548.4399999999998,
+        "end": 1559.12
+    },
+    {
+        "text": " ahora tanto sigma y como sigma j son numeritos reales porque son los landa ir al reales",
+        "start": 1566.32,
+        "end": 1573.52
+    },
+    {
+        "text": " positivos, son numeritos reales y positivos, entonces los sigma y sigma j salen para fuera",
+        "start": 1573.52,
+        "end": 1579.52
+    },
+    {
+        "text": " esto es porque los sigma y son reales y acá me queda",
+        "start": 1586.4,
+        "end": 1592.28
+    },
+    {
+        "text": " T envi con T envi j",
+        "start": 1596.48,
+        "end": 1598.24
+    },
+    {
+        "text": " vamos yo no sé si te hizo metría ni nada, entonces eso quedé escrito así, lo que sí",
+        "start": 1604.52,
+        "end": 1611.52
+    },
+    {
+        "text": " puedo hacer y acá viene la clave de todo el análisis es que por definición de T estrella",
+        "start": 1611.52,
+        "end": 1618.8
+    },
+    {
+        "text": " el T que está acá en la primera entrada lo puedo pasar para la segunda como T estrella y ese",
+        "start": 1623.6,
+        "end": 1629.52
+    },
+    {
+        "text": " producto interno me va a quedar de la siguiente manera, me va a quedar uno sobre sigma y sigma j",
+        "start": 1629.52,
+        "end": 1634.6399999999999
+    },
+    {
+        "text": " B subí y el T pasa para el otro lado como T estrella aplicado a T de B j y ese producto",
+        "start": 1636.6399999999999,
+        "end": 1647.28
+    },
+    {
+        "text": " interno esto es definición del adjunto, este producto interno es en B porque estos",
+        "start": 1647.28,
+        "end": 1653.04
+    },
+    {
+        "text": " vectores viven en B, pero donde es que me escribió esto en lugar de que me escribió la composición",
+        "start": 1653.04,
+        "end": 1666.48
+    },
+    {
+        "text": " así, T estrella por T es la composición, el producto de T estrella con T y alguien reconoce algo ahí",
+        "start": 1666.48,
+        "end": 1677.52
+    },
+    {
+        "text": " que es que esta estrella conté R esto es R y que son los vejotas son vectores propios de R",
+        "start": 1677.52,
+        "end": 1690.32
+    },
+    {
+        "text": " entonces con esto me arme el R y ahora a posar que los ve son vectores propios de R",
+        "start": 1690.32,
+        "end": 1696.0
+    },
+    {
+        "text": " entonces fíjense esto me queda R y B j es, vengan que no me quiero perder esto es",
+        "start": 1696.96,
+        "end": 1705.36
+    },
+    {
+        "text": " uno sigma y sigma j veí y acá me queda R y B j, pero el B j es el vector propio de R",
+        "start": 1706.84,
+        "end": 1717.2
+    },
+    {
+        "text": " asociado con lambda j o sea que eso es lambda j por B subj y ahora el lambda j como somos",
+        "start": 1717.2,
+        "end": 1736.64
+    },
+    {
+        "text": " los lugares que se los son numeritos reales lo saco para afuera, la conjugación no me",
+        "start": 1736.64,
+        "end": 1742.98
+    },
+    {
+        "text": " afecta nada, me queda sigma y sigma j acá arriba me queda lambda j y acá me queda el producto interno",
+        "start": 1742.98,
+        "end": 1750.58
+    },
+    {
+        "text": " de B y con B j bien y ahora la B y sí era un abaso orto normal, la B y los B eran un abaso",
+        "start": 1750.58,
+        "end": 1770.18
+    },
+    {
+        "text": " orto normal de R o sea que veí con B j me da 0 si es y entonces j y uno si es y o la j o sea que",
+        "start": 1770.18,
+        "end": 1778.5
+    },
+    {
+        "text": " esto me queda, si es distinto de j esto me queda 0 y si es y es igual a j que me queda acá",
+        "start": 1778.5,
+        "end": 1802.98
+    },
+    {
+        "text": " arriba me queda bueno esto me da 1 si es y si es igual a j esto me da 1 y acá arriba me queda lambda",
+        "start": 1802.98,
+        "end": 1809.98
+    },
+    {
+        "text": " y arriba me queda lambda y dividido sigma y al cuadrado y lo borrea allá pero sigma y era la raíz",
+        "start": 1809.98,
+        "end": 1821.96
+    },
+    {
+        "text": " cuadrada de lambda y por eso lo leje así entonces esto me queda lambda y sobre lambda y que me da 1",
+        "start": 1821.96,
+        "end": 1828.74
+    },
+    {
+        "text": " por eso me justifica porque leje sigma y como le raíz cuadrada de lambda y entonces esto acá me da",
+        "start": 1829.6200000000001,
+        "end": 1835.94
+    },
+    {
+        "text": " 1 si es igual a j y 0 si es distinto de j por lo tanto en primer lugar esto son es un conjunto",
+        "start": 1835.94,
+        "end": 1847.14
+    },
+    {
+        "text": " ortogonal por lo tanto son el e y por lo tanto son una base de la imagen y en segundo lugar es",
+        "start": 1847.14,
+        "end": 1852.98
+    },
+    {
+        "text": " un conjunto ortogonal así que es una base ortogonal, entonces eso implica",
+        "start": 1852.98,
+        "end": 1860.98
+    },
+    {
+        "text": " ya cuando reunimos todo esto van a ver qué lindo que queda todo",
+        "start": 1870.82,
+        "end": 1874.34
+    },
+    {
+        "text": " con eso concluimos entonces dos cosas primero",
+        "start": 1874.34,
+        "end": 1886.22
+    },
+    {
+        "text": " ve prima es ortogonal y conjunto ve prima de formado por esos factores es ortogonal",
+        "start": 1888.82,
+        "end": 1893.98
+    },
+    {
+        "text": " y tiene el elemento por lo tanto ve prima es un s perdón esto es el e y tiene el elemento por lo tanto es",
+        "start": 1893.98,
+        "end": 1908.74
+    },
+    {
+        "text": " una base de la imagen de este y en segundo lugar ve prima es ortogonal es",
+        "start": 1908.74,
+        "end": 1923.34
+    },
+    {
+        "text": " están normalizados y son ortogonal es ortonormal lo cual me implica que ve prima es una base",
+        "start": 1923.34,
+        "end": 1932.9399999999998
+    },
+    {
+        "text": " ortogonal del imácter ánimo que ya falta poquito",
+        "start": 1932.94,
+        "end": 1946.8600000000001
+    },
+    {
+        "text": " y ahora qué voy a hacer para construir, o sea que tengo una base ortogonal acá dentro,",
+        "start": 1951.06,
+        "end": 1955.44
+    },
+    {
+        "text": " qué voy a hacer para construir una base ortogonal en el espacio afuera, bueno no voy a construir una base",
+        "start": 1955.44,
+        "end": 1962.1200000000001
+    },
+    {
+        "text": " ortogonal agregando vectores aquí está completando una base, se está en una base",
+        "start": 1962.12,
+        "end": 1967.34
+    },
+    {
+        "text": " ortogonal acá agrego vectores de manera ortogonal hasta completar una base en W, bien entonces el",
+        "start": 1967.34,
+        "end": 1973.1399999999999
+    },
+    {
+        "text": " paso final es que si denotamos si denotamos ese al conjunto imagen y consideramos ese",
+        "start": 1973.1399999999999,
+        "end": 1990.9799999999998
+    },
+    {
+        "text": " ortogonal y una base que la vamos a llamar VW tilde de ese ortogonal o sea tengo ese",
+        "start": 1990.98,
+        "end": 2006.56
+    },
+    {
+        "text": " ortogonal acá y me construy una base que cuántos elementos va a tener M menos R,",
+        "start": 2006.56,
+        "end": 2011.54
+    },
+    {
+        "text": " o sea va a tener los elementos que le vamos a denotar W, R, M, Z, etcétera hasta W, M,",
+        "start": 2011.54,
+        "end": 2022.58
+    },
+    {
+        "text": " esto es una base ortogonal de complemento ortogonal de ese entonces se tiene lo siguiente,",
+        "start": 2022.58,
+        "end": 2033.58
+    },
+    {
+        "text": " W es suma directa de ese más, ese ortogonal y me puedo formar una base ortogonal de W,",
+        "start": 2033.58,
+        "end": 2044.58
+    },
+    {
+        "text": " que usa una base ortogonal acá completada con una base ortogonal acá.",
+        "start": 2044.58,
+        "end": 2047.8999999999999
+    },
+    {
+        "text": " Resumiendo con todo esto, bueno el último paso es yo tengo una base ortogonal a la cadera",
+        "start": 2074.58,
+        "end": 2088.62
+    },
+    {
+        "text": " imagen la completo pegando vectores acá, W, R, M, Z, hasta W, M de manera que todos esos",
+        "start": 2088.62,
+        "end": 2098.58
+    },
+    {
+        "text": " vectores sean ortogonal entre sí y ortogonales a todos los que están acá dentro y me construy",
+        "start": 2098.58,
+        "end": 2104.14
+    },
+    {
+        "text": " una base ortogonal de W, entonces tengo la base de la imagen la base del complemento",
+        "start": 2104.14,
+        "end": 2113.02
+    },
+    {
+        "text": " ortogonal de la imagen y con esa la unión de esos dos me formo la base ortogonal de W,",
+        "start": 2113.02,
+        "end": 2118.3799999999997
+    },
+    {
+        "text": " ahora me dirán para que ya lo sirve todo esto, lo que hice hasta ahora es agarrar de manera",
+        "start": 2118.3799999999997,
+        "end": 2125.14
+    },
+    {
+        "text": " propiada una base ortogonal acá y construirme de manera propiada una base ortogonal",
+        "start": 2125.14,
+        "end": 2130.7
+    },
+    {
+        "text": " de W, el último paso es que yo me puedo formar acá, por la pregunta es ¿qué diya lo hago con",
+        "start": 2130.74,
+        "end": 2135.58
+    },
+    {
+        "text": " todo eso para que me sirve esa construcción? Bueno ahora que va a quedar claro con las",
+        "start": 2135.58,
+        "end": 2139.98
+    },
+    {
+        "text": " crivas, lo que viene.",
+        "start": 2139.98,
+        "end": 2142.98
+    },
+    {
+        "text": " En toda la demostración de este resultado, LRJ un papel de un operador artificial y que",
+        "start": 2153.46,
+        "end": 2159.46
+    },
+    {
+        "text": " no meten para la demostración, pero con todo lo que vimos tenemos la demostración de esto,",
+        "start": 2159.46,
+        "end": 2163.42
+    },
+    {
+        "text": " fíjense que es un teorema bien general, me dicen, V y W espacio vectorial es con",
+        "start": 2163.42,
+        "end": 2168.2200000000003
+    },
+    {
+        "text": " product interno sobre un cuerpo, vea lo complejo, está toda, dimensión finita, dimensión",
+        "start": 2168.2200000000003,
+        "end": 2172.42
+    },
+    {
+        "text": " de V, dimensión de W, igual a F, y tengo la transformación de N, cualquiera, de V",
+        "start": 2172.42,
+        "end": 2177.9
+    },
+    {
+        "text": " en W, bueno al rango de T se le llama R como siempre, entonces ¿qué me dice el teorema?",
+        "start": 2177.9,
+        "end": 2183.7400000000002
+    },
+    {
+        "text": " ¿Qué existe una base ortogonal de W acá? V1, V2 hasta V, y una base ortogonal de W acá,",
+        "start": 2183.7400000000002,
+        "end": 2189.42
+    },
+    {
+        "text": " W1, W2, WM y escalares reales, aun cuando uno esté trabajando en el caso complejo,",
+        "start": 2189.42,
+        "end": 2197.78
+    },
+    {
+        "text": " sigma 1 que los ordenos, sigma 1, sigma 2 hasta sigma R, se acuerdan que eran las raíces",
+        "start": 2197.78,
+        "end": 2202.7000000000003
+    },
+    {
+        "text": " cuadradas de los valores propios de los prenses R, tal es que los primeros R vectores acá,",
+        "start": 2202.7000000000003,
+        "end": 2210.9
+    },
+    {
+        "text": " T1, TbR, son sigma y por los primeros vectores acá, y te ha aplicado a sigma 1,",
+        "start": 2210.9,
+        "end": 2219.38
+    },
+    {
+        "text": " 3, me dan 0, fíjense, estos bichos acá se le llaman valores singulares, tienen el",
+        "start": 2219.38,
+        "end": 2233.3
+    },
+    {
+        "text": " olor de los valores propios, pero hay que tener cuidado porque acá el T va de un espacio",
+        "start": 2233.3,
+        "end": 2238.98
+    },
+    {
+        "text": " a otro, acá no hay vectores propios y valores propios, en principio, no? No sé que este",
+        "start": 2238.98,
+        "end": 2245.2200000000003
+    },
+    {
+        "text": " espacio sea el mismo que este, en cuyo caso se puede adaptar a las cosas, pero a esos",
+        "start": 2245.22,
+        "end": 2249.4199999999996
+    },
+    {
+        "text": " numeritos se le llaman valores singulares y todo lo que vimos hasta ahora se resumen",
+        "start": 2249.4199999999996,
+        "end": 2256.8599999999997
+    },
+    {
+        "text": " a esta resulta y vamos a ver entonces a nivel de matrices que sale de acá, que es la",
+        "start": 2256.8599999999997,
+        "end": 2263.98
+    },
+    {
+        "text": " descomposición en valores singulares de la matriz. Fíjense que yo podría definir para",
+        "start": 2263.98,
+        "end": 2272.7799999999997
+    },
+    {
+        "text": " R en adelante todos los que correspondían a todos los que estaban acá en el núcleo,",
+        "start": 2272.78,
+        "end": 2276.78
+    },
+    {
+        "text": " que eran los que correspondían a la onda ahí igual a 0, a los valores propios, igual a",
+        "start": 2276.78,
+        "end": 2281.02
+    },
+    {
+        "text": " 0, o sea sigma igual a 0, yo los podría pensar que T ha aplicado a esto, me da sigma",
+        "start": 2281.02,
+        "end": 2287.98
+    },
+    {
+        "text": " por 2, v, donde sigma vale 0, o sea que todo esto lo podrías escribir de manera compacta",
+        "start": 2287.98,
+        "end": 2292.34
+    },
+    {
+        "text": " así. Yo podría decir que T en vey me da siempre un escalar sigma y por 2, v, elemento",
+        "start": 2292.34,
+        "end": 2300.94
+    },
+    {
+        "text": " a base de la otra para todo hí desde 1 hasta m, pero no hasta n, donde a los sigma",
+        "start": 2300.94,
+        "end": 2310.66
+    },
+    {
+        "text": " sí, los sigma hizo mayores que 0, son mayores que 0 si es menor igual que R, son estos",
+        "start": 2310.66,
+        "end": 2322.88
+    },
+    {
+        "text": " acá, sigma 1, sigma 2 hasta sigma R y después los restantes son todos 0. Bien, entonces",
+        "start": 2322.88,
+        "end": 2346.44
+    },
+    {
+        "text": " este resultado que acabamos de probar en todo lo que hicimos hasta ahora, ha aplicado",
+        "start": 2346.44,
+        "end": 2350.56
+    },
+    {
+        "text": " el caso de matricios, o sea la representación matricial de transformaciones lineales, me da",
+        "start": 2350.56,
+        "end": 2355.44
+    },
+    {
+        "text": " lo que se llama la descomposición en valores singulares de una matriz, que es lo que",
+        "start": 2355.44,
+        "end": 2360.44
+    },
+    {
+        "text": " vamos a hacer ahora y que sale directo. T es composición.",
+        "start": 2360.44,
+        "end": 2384.92
+    },
+    {
+        "text": " Escribo el resultado y lo probamos. Esta es composición como yo les había comentado",
+        "start": 2384.92,
+        "end": 2393.6800000000003
+    },
+    {
+        "text": " la clase pasada, es sumamente útil en un montón de contextos diferentes aplicados y seguramente",
+        "start": 2393.6800000000003,
+        "end": 2401.58
+    },
+    {
+        "text": " las van a usar mucho en alonado su carrera. Entonces yo tengo una matriz ahora no voy a matricios,",
+        "start": 2401.58,
+        "end": 2408.04
+    },
+    {
+        "text": " tengo una matriz cualquiera m, no cuadrado una matriz de tamaño m por n, vamos a suponer",
+        "start": 2408.04,
+        "end": 2415.16
+    },
+    {
+        "text": " que los coefinites son reales para simplificar y vamos a pensar que el rango de la matriz",
+        "start": 2415.16,
+        "end": 2425.08
+    },
+    {
+        "text": " es el famosísimo resultado de la descomposición en valores singulares de una matriz, que es",
+        "start": 2545.08,
+        "end": 2553.96
+    },
+    {
+        "text": " consecuencia directa de este como veremos. Cáraga y donde puedo borrar.",
+        "start": 2553.96,
+        "end": 2561.12
+    },
+    {
+        "text": " Bien, ¿qué me dice la descomposición en valores singulares de la matriz? Me dice que",
+        "start": 2575.08,
+        "end": 2590.56
+    },
+    {
+        "text": " me da una matriz cualquiera m por n, cualquiera la que se les ocurra. Al rango de esa matriz",
+        "start": 2590.56,
+        "end": 2596.52
+    },
+    {
+        "text": " llamamos R. Entonces me dice que existen tres matrices, una matriz U tamaño m por m",
+        "start": 2596.52,
+        "end": 2603.96
+    },
+    {
+        "text": " cuadrada, una matriz B también cuadrada pero tamaño m por n, ambas matricios son matricios",
+        "start": 2604.0,
+        "end": 2610.4
+    },
+    {
+        "text": " ortobonales, se acuerdan cortobonales que es decir que son invertibles y que la inversa coincide",
+        "start": 2610.4,
+        "end": 2615.7200000000003
+    },
+    {
+        "text": " con la respuesta y existe una matriz S que tiene el mismo tamaño que esta m por n, que es",
+        "start": 2615.7200000000003,
+        "end": 2622.08
+    },
+    {
+        "text": " diagonal, eso significa que todo lo que está fuera, todos los que son los elementos S y H,",
+        "start": 2622.08,
+        "end": 2628.56
+    },
+    {
+        "text": " H, H, H, H, H, H son todos los zeros, el rango es el mismo rango que la matriz M, tal",
+        "start": 2628.56,
+        "end": 2635.32
+    },
+    {
+        "text": " es que vale esta descomposición, que justamente la descomposición en valores singulares.",
+        "start": 2635.32,
+        "end": 2639.44
+    },
+    {
+        "text": " A m lo podemos escribir así, como esa matriz diagonal multiplica de izquierda y a derecha",
+        "start": 2639.44,
+        "end": 2644.84
+    },
+    {
+        "text": " a izquierda por U, una matriz ortobonal y a derecha por B tras puesta, donde B, U y B son",
+        "start": 2644.84,
+        "end": 2651.64
+    },
+    {
+        "text": " matricios ortobonales, eso se los había comentado la clase pasada y no necesariamente son",
+        "start": 2651.64,
+        "end": 2657.96
+    },
+    {
+        "text": " una la inversa a la otra, por empezar U y B son matricios de distintos tamaños, porque",
+        "start": 2657.96,
+        "end": 2663.28
+    },
+    {
+        "text": " una M por M y la otra G, pero aun así cuando M y N es fuese iguales, no necesariamente",
+        "start": 2663.28,
+        "end": 2669.52
+    },
+    {
+        "text": " esta es la inversa de esta, no sé, no sé, realmente ves la inversa de U. Se acuerdan que",
+        "start": 2669.52,
+        "end": 2674.2400000000002
+    },
+    {
+        "text": " cuando hicimos el teorón espectral por auto adjunto, pusimos una matria auto adjunta acá,",
+        "start": 2674.2400000000002,
+        "end": 2679.04
+    },
+    {
+        "text": " la diagonal, acá una P, acá una P, la penoso uno, bueno, este es un caso, este es un caso",
+        "start": 2679.04,
+        "end": 2684.16
+    },
+    {
+        "text": " más general que es, que vale para cualquier M, solo que la matriz que pongo acá y la que",
+        "start": 2684.16,
+        "end": 2689.2799999999997
+    },
+    {
+        "text": " pongo acá no necesariamente son una de inversa a la otra, sí, estamos y cómo se prueba",
+        "start": 2689.2799999999997,
+        "end": 2698.12
+    },
+    {
+        "text": " eso, simplemente escribiendo el teorema que vimos hace un ratito en las bases canónicas",
+        "start": 2698.12,
+        "end": 2704.04
+    },
+    {
+        "text": " y en las bases A y B que me dio la construcción que quiseos un ratito, entonces fíjense,",
+        "start": 2704.04,
+        "end": 2710.16
+    },
+    {
+        "text": " la muestra, consideramos la siguiente transformación lineal, me dan la matriz ustedes, entonces",
+        "start": 2710.16,
+        "end": 2722.7999999999997
+    },
+    {
+        "text": " yo considero la siguiente transformación lineal T que va a D R N, a R N, estos espacios con",
+        "start": 2722.7999999999997,
+        "end": 2737.08
+    },
+    {
+        "text": " el producto interno usual en cada uno de ellos, perdón, producto interno usual, ya terminamos,",
+        "start": 2737.08,
+        "end": 2750.0
+    },
+    {
+        "text": " ya terminamos, concibamos usted definida la siguiente manera, tal que te ha aplicado a cualquier",
+        "start": 2750.0,
+        "end": 2762.3199999999997
+    },
+    {
+        "text": " vector de R N, a cualquier N upla, esta matriz M aplicada al vector, así la definición",
+        "start": 2762.32,
+        "end": 2769.32
+    },
+    {
+        "text": " de T, bien, esto es para todo vector N R N, me dan la matriz, me construyo esa transformación",
+        "start": 2769.32,
+        "end": 2783.56
+    },
+    {
+        "text": " lineal y ahora vamos a ver qué pasa con esa matriz, primero se cumple lo siguiente,",
+        "start": 2783.56,
+        "end": 2792.48
+    },
+    {
+        "text": " si yo las represento la base canónica, se cumple, si yo represento la matriz al operador",
+        "start": 2792.48,
+        "end": 2799.64
+    },
+    {
+        "text": " este en la base canónica, apoyando como base canónica del espacio de partida, la canónica",
+        "start": 2799.64,
+        "end": 2808.72
+    },
+    {
+        "text": " C N y del espacio de llegar a la canónica C N, estas son las bases canónicas, que como",
+        "start": 2808.72,
+        "end": 2815.04
+    },
+    {
+        "text": " ustedes saben son bases ortonomales con el producto interno usual, estas son las bases canónicas",
+        "start": 2815.04,
+        "end": 2826.2799999999997
+    },
+    {
+        "text": " R N y del R N, qué me da si yo represento a ese operador que acabo de definir en las bases",
+        "start": 2826.28,
+        "end": 2837.6400000000003
+    },
+    {
+        "text": " canónicas, esto ya lo saben, qué me da, T es el operador M por B, si yo lo represento",
+        "start": 2837.6400000000003,
+        "end": 2845.2400000000002
+    },
+    {
+        "text": " la base canónica, qué me da la matriz M, si, en efecto si yo le aplico T al elemento",
+        "start": 2845.24,
+        "end": 2857.68
+    },
+    {
+        "text": " primero la base canónica 1 0 0 0 0, me va a dar la primer columna de M, si le aplico",
+        "start": 2857.68,
+        "end": 2864.56
+    },
+    {
+        "text": " al segundo de la canónica, la segunda columna, etcétera, cuando cuelgo esas descomposiciones",
+        "start": 2864.56,
+        "end": 2869.9599999999996
+    },
+    {
+        "text": " que a la matriz M, bien y además obviamente si el rango la matriz SR el rango esta transformación",
+        "start": 2869.96,
+        "end": 2878.88
+    },
+    {
+        "text": " niña le sea.",
+        "start": 2878.88,
+        "end": 2892.28
+    },
+    {
+        "text": " Tamos, yo tengo, me definí una transformación que en las bases canónicas son bases ortonomales",
+        "start": 2892.28,
+        "end": 2901.1600000000003
+    },
+    {
+        "text": " las matrias o cidades de esta matriz M y ahora voy a representar ese mismo operador en",
+        "start": 2901.16,
+        "end": 2907.48
+    },
+    {
+        "text": " las bases que construimos con el teorema en la base A y en la base B y después vamos",
+        "start": 2907.48,
+        "end": 2912.0
+    },
+    {
+        "text": " a hacer el teorema del cambio de base para llegar a este resultado final, por el teorema",
+        "start": 2912.0,
+        "end": 2918.52
+    },
+    {
+        "text": " de Cámono de Borrar.",
+        "start": 2918.52,
+        "end": 2926.64
+    },
+    {
+        "text": " Me dice que existe una base ortonomalá aplicad este contexto, una base ortonomal del espacio",
+        "start": 2926.64,
+        "end": 2934.64
+    },
+    {
+        "text": " de partida que se reene.",
+        "start": 2934.64,
+        "end": 2941.64
+    },
+    {
+        "text": " A esta base le vamos a llamar V1, V2 hasta VN y existe además una base B, una base",
+        "start": 2941.64,
+        "end": 2951.72
+    },
+    {
+        "text": " ortonomal del espacio de llegada, RM, acuyos elementos le vamos a llamar V1, V2, VM",
+        "start": 2951.72,
+        "end": 2966.52
+    },
+    {
+        "text": " y escalar Sigma Y, tengo que desalta por la ventana, les hace burrioso y podré ir a dar",
+        "start": 2966.52,
+        "end": 2977.7599999999998
+    },
+    {
+        "text": " un poco clase, pero te termina. No me gusta el clase, me encanta pero tu y cansa.",
+        "start": 2977.76,
+        "end": 2984.76
+    },
+    {
+        "text": " El teorema que vimos recién me dice lo siguiente, existe una base ortonomal del reen el espacio",
+        "start": 2993.32,
+        "end": 2998.28
+    },
+    {
+        "text": " de partida y ve una base ortonomal del RM y escalar el Sigma Y tal es que te ha aplicado",
+        "start": 2998.28,
+        "end": 3003.6400000000003
+    },
+    {
+        "text": " cada uno de estos, me da Sigma Y aplicado a esto, lo que vimos hace un ratito, si con bueno",
+        "start": 3003.64,
+        "end": 3010.64
+    },
+    {
+        "text": " los Sigma Y ordenados alguna manera, Sigma 1, mayor igual que Sigma 2, etc., mayor",
+        "start": 3010.64,
+        "end": 3022.24
+    },
+    {
+        "text": " igual que Sigma R, todo es estrictamente positivo y los restantes Sigma Y igual a 0 para",
+        "start": 3022.24,
+        "end": 3029.16
+    },
+    {
+        "text": " 0 y mayor que R. Entonces lo que voy a hacer es representar la transformación T en esa",
+        "start": 3029.16,
+        "end": 3036.16
+    },
+    {
+        "text": " base. Fíjense, ¿qué me da? ¿qué me da? Si yo represento a la transformación T en la base",
+        "start": 3038.72,
+        "end": 3043.72
+    },
+    {
+        "text": " A como base de partida y en la base B como base llegada, donde A y B son las bases del",
+        "start": 3052.44,
+        "end": 3057.92
+    },
+    {
+        "text": " teorema. Esto es una base ortonomal del RM, esto es una base ortonomal del RM, te ha",
+        "start": 3057.92,
+        "end": 3063.52
+    },
+    {
+        "text": " aplicado cada uno de estos, me da Sigma Y por WI. ¿Ya? Parecido. T abe uno, me da Sigma",
+        "start": 3063.52,
+        "end": 3074.52
+    },
+    {
+        "text": " 1 por WI 1, por casi nos ordené. Entonces cuando lo descompongo me va a quedar, me va",
+        "start": 3074.52,
+        "end": 3080.48
+    },
+    {
+        "text": " a quedar, Sigma 1, 0, 0, 0, 0, si, singular. Cuando yo le aplico T abe 2 me va a quedar",
+        "start": 3080.48,
+        "end": 3093.32
+    },
+    {
+        "text": " si Sigma 2 por WI 2, como lo descompongo me va a quedar, 0, Sigma 2, etc., etc., y así",
+        "start": 3093.32,
+        "end": 3102.64
+    },
+    {
+        "text": " sigo hasta el T en Sigma R que me va a quedar, pero en T en B sub R que me va a quedar Sigma",
+        "start": 3102.64,
+        "end": 3109.64
+    },
+    {
+        "text": " R por WR y todos los demás, 0. Y de ahí en adelante a todos los vectores que siguen",
+        "start": 3109.64,
+        "end": 3122.96
+    },
+    {
+        "text": " cuando le aplique T me van a dar 0, pues son todos los que están en el núcleo, entonces",
+        "start": 3122.96,
+        "end": 3127.24
+    },
+    {
+        "text": " todo el resto va a dar 0, acá, el resto acaba de dar 0, un 0, acá en orme.",
+        "start": 3127.24,
+        "end": 3134.16
+    },
+    {
+        "text": " Entonces esta matrífigenza es una matriz que los elementos fuera de diagonal no necesariamente",
+        "start": 3140.04,
+        "end": 3148.8799999999997
+    },
+    {
+        "text": " una matriz cuadrada, entonces por eso la dibujé así, esto sigue para que podías seguir para",
+        "start": 3148.8799999999997,
+        "end": 3153.56
+    },
+    {
+        "text": " acá abajo. Pero lo que es importante que todo que está fuera de diagonal es 0 y lo que está",
+        "start": 3153.56,
+        "end": 3163.92
+    },
+    {
+        "text": " acá son Sigma 1, Sigma 2, Sigma R y el resto 0 que son justamente los valores singulares.",
+        "start": 3163.92,
+        "end": 3168.96
+    },
+    {
+        "text": " Que eso los calculamos a partir de T construyéndome la matriz R que este estrella contéis",
+        "start": 3173.56,
+        "end": 3181.6
+    },
+    {
+        "text": " sacando los valores propios. Entonces a esta matriz le vamos a llamar S, a esta matriz",
+        "start": 3181.6,
+        "end": 3189.2400000000002
+    },
+    {
+        "text": " le vamos a llamar S, entonces ya tengo una matriz S que es una matriz diagonal, S diagonal y",
+        "start": 3189.24,
+        "end": 3200.68
+    },
+    {
+        "text": " obviamente el rango S es SR, tengo justamente R columnas, nonulas y son el E, ahora me falta",
+        "start": 3200.68,
+        "end": 3214.9599999999996
+    },
+    {
+        "text": " construirme simplemente las matrices unitarias y verificar esta relación. Y ahora finalmente,",
+        "start": 3214.96,
+        "end": 3230.84
+    },
+    {
+        "text": " si yo escribo la relación que hay entre esta T que está representada en dos bases ortogonales,",
+        "start": 3230.84,
+        "end": 3240.12
+    },
+    {
+        "text": " pero es de RN y RM y esta T que está representada en otras dos bases ortogonales,",
+        "start": 3240.12,
+        "end": 3247.52
+    },
+    {
+        "text": " obtengo la relación que está buscando, se cumple por cambio de base.",
+        "start": 3247.52,
+        "end": 3252.28
+    },
+    {
+        "text": " Déjenme escribir esto ya casi estábamos.",
+        "start": 3252.28,
+        "end": 3275.5600000000004
+    },
+    {
+        "text": " Por el teonema de resultado cambio de bases, yo puedo escribir eso, T representadas en las bases",
+        "start": 3282.28,
+        "end": 3306.0
+    },
+    {
+        "text": " canónicas de los espacios de partida llegada y T en las bases Hay, B, ortogonales, las que",
+        "start": 3306.0,
+        "end": 3313.88
+    },
+    {
+        "text": " me da el teorema, estas son ortogonales y estas también son ortogonales por el teorema.",
+        "start": 3313.88,
+        "end": 3318.28
+    },
+    {
+        "text": " Y acá tengo que ponerle identidad de CNA y acá la identidad de B AC. Bien, ¿qué",
+        "start": 3318.28,
+        "end": 3342.6000000000004
+    },
+    {
+        "text": " es esta matriz? Esta matriz como dijimos es la matriz M, la matriz que ustedes me daban y yo",
+        "start": 3342.6,
+        "end": 3350.2799999999997
+    },
+    {
+        "text": " construyer la transformación T, esa es la matriz M, ¿qué es esta otra matriz? Es la matriz S,",
+        "start": 3350.2799999999997,
+        "end": 3357.3199999999997
+    },
+    {
+        "text": " esta es la diagonal. ¿Qué es esta matriz? Esta matriz me agarrará cada elemento de la base",
+        "start": 3357.3199999999997,
+        "end": 3371.16
+    },
+    {
+        "text": " ortogonal en el espacio de llegada, en el REM y me lo cambia a la CNA que también es",
+        "start": 3371.16,
+        "end": 3379.74
+    },
+    {
+        "text": " ortogonal en el REM. O sea que esta es la matriz cambio de base, una base ortogonal, la otra",
+        "start": 3379.74,
+        "end": 3388.08
+    },
+    {
+        "text": " base ortogonal. Entonces ¿qué es esa matriz? Es una matriz ortogonal, esto es una matriz",
+        "start": 3388.08,
+        "end": 3394.6
+    },
+    {
+        "text": " ortogonal, todas sus columnas forman una base ortogonal. Entonces esta es una matriz",
+        "start": 3395.12,
+        "end": 3400.88
+    },
+    {
+        "text": " uortogonal, ¿se entiende eso? Lo que tengo que hacer acá es agarrar cada vector de la base",
+        "start": 3400.88,
+        "end": 3412.56
+    },
+    {
+        "text": " V y colgarlo son las coordenadas en el REM y esos vectores como son una base ortogonal",
+        "start": 3412.56,
+        "end": 3421.5
+    },
+    {
+        "text": " si tomo productos calar de dos columnas cualquiera me da cero y eso tomo de una consigo",
+        "start": 3421.5,
+        "end": 3425.66
+    },
+    {
+        "text": " mismo me da uno, o sea que eso justamente es una matriz ortogonal. Y esta acá la vamos",
+        "start": 3425.66,
+        "end": 3430.06
+    },
+    {
+        "text": " a trabajar un poquito, esto es lo mismo que esta es, si yo cambio el oro en las bases,",
+        "start": 3430.06,
+        "end": 3438.74
+    },
+    {
+        "text": " acá me queda la cambio de base de A a CNA a la menos 1, ¿no? Es la inversa y la cambio",
+        "start": 3438.74,
+        "end": 3448.3
+    },
+    {
+        "text": " justamente de base de una base ortogonal, la A a CNA que también es ortogonal, me da",
+        "start": 3448.3,
+        "end": 3453.78
+    },
+    {
+        "text": " una matriz ortogonal que le llamamos B, o sea que esto me queda B a la menos 1, donde",
+        "start": 3453.78,
+        "end": 3462.3
+    },
+    {
+        "text": " esta B es ortogonal, ortogonal de tamaño N por N, esta ortogonal de tamaño N por N y",
+        "start": 3462.3,
+        "end": 3470.02
+    },
+    {
+        "text": " como es ortogonal justamente la inversa es la transporta, o sea que efectivamente me",
+        "start": 3470.02,
+        "end": 3478.02
+    },
+    {
+        "text": " queda que M es U por S por B transporta. En las notas hay ejemplos de cómo se calcula",
+        "start": 3478.02,
+        "end": 3487.66
+    },
+    {
+        "text": " eso de la misma manera que en el práctico y por lo que vi, había encalculado algún",
+        "start": 3487.66,
+        "end": 3492.18
+    },
+    {
+        "text": " ejemplo de esa representación.",
+        "start": 3492.18,
+        "end": 3495.7
+    }
+]

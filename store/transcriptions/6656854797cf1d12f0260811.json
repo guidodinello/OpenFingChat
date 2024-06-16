@@ -1,0 +1,2417 @@
+[
+    {
+        "text": " Entonces lo que vamos a terminar de dar hoy es descomposición en valores singulares de",
+        "start": 0.0,
+        "end": 19.88
+    },
+    {
+        "text": " gramatriz. Le voy a dar la descomposición polar que es algo que se desprende de esa descomposición",
+        "start": 19.88,
+        "end": 24.240000000000002
+    },
+    {
+        "text": " en valores singulares y después vamos a terminar con unas cuestiones y sometrías",
+        "start": 24.240000000000002,
+        "end": 28.04
+    },
+    {
+        "text": " niñas en R2 y algún comentario más. Estamos, se acuerdan como una descomposición en valores",
+        "start": 28.04,
+        "end": 33.64
+    },
+    {
+        "text": " singulares de gramatriz. Esto lo vimos en la clase pasada, esto se acuerdan que hay unas notas",
+        "start": 33.64,
+        "end": 39.2
+    },
+    {
+        "text": " que están colgadas en eva, en la página deva, unas notas en PDF. ¿Qué me dice esto?",
+        "start": 39.2,
+        "end": 46.4
+    },
+    {
+        "text": " ¿Queda dar una matriz cualquiera? Supongamos que la matriz sea real, una matriz m por",
+        "start": 46.4,
+        "end": 51.44
+    },
+    {
+        "text": " m con coeficientes reales. Existen dos matrices, no perdón tres matrices, existe una matriz",
+        "start": 51.44,
+        "end": 63.519999999999996
+    },
+    {
+        "text": " m por m, ve todos todas reales, no estamos pensando, ve una matriz cuadrada n por n y además",
+        "start": 63.52,
+        "end": 81.72
+    },
+    {
+        "text": " estas dos matrices son ambas ortogonales, si se acuerdan que ortogonales ya sabíamos lo",
+        "start": 81.72,
+        "end": 90.96000000000001
+    },
+    {
+        "text": " que quiere decir, corresponden a estas transformaciones ortogonales y una base ortogonal, lo que",
+        "start": 90.96,
+        "end": 98.63999999999999
+    },
+    {
+        "text": " lo mismo es decir que sus columnas forman una base ortogonal de R a la m o de R a la n en",
+        "start": 98.63999999999999,
+        "end": 104.6
+    },
+    {
+        "text": " otro caso, ambas ortogonales. Y una tercera matriz, esta sí tiene el mismo tamaño que",
+        "start": 104.6,
+        "end": 112.36
+    },
+    {
+        "text": " aquella, no necesariamente cuadrada pero es una matriz m por n y esta tiene la particularidad",
+        "start": 112.36,
+        "end": 119.88
+    },
+    {
+        "text": " que diagonal. Tal que tal es que m se escribe esta manera, m se escribe como el producto",
+        "start": 119.88,
+        "end": 138.44
+    },
+    {
+        "text": " de U por ese por de transporta, si estas matrices U y B son las dos ortogonales pero no son",
+        "start": 138.44,
+        "end": 148.12
+    },
+    {
+        "text": " necesariamente una la inversa a la otra en particular porque estamos en principio son",
+        "start": 148.12,
+        "end": 151.88
+    },
+    {
+        "text": " matrices de diferentes tamaños pero aun si fuese en espacios matrices cuadradas, estas no",
+        "start": 151.88,
+        "end": 158.6
+    },
+    {
+        "text": " necesariamente es una la inversa a la otra, hay casos particulares en que sí lo es, por ejemplo",
+        "start": 158.6,
+        "end": 163.28
+    },
+    {
+        "text": " con una matriz y una base ortogonal de vectores propios, pero esto es un resultado general,",
+        "start": 163.28,
+        "end": 169.48000000000002
+    },
+    {
+        "text": " estamos entonces y estas matrices no son únicas, U y B no son únicas de la misma manera",
+        "start": 169.48000000000002,
+        "end": 176.4
+    },
+    {
+        "text": " que las transformaciones, las matrices de cambio base no son únicas, las bases ortogonales",
+        "start": 176.4,
+        "end": 180.76000000000002
+    },
+    {
+        "text": " de vectores propios por ejemplo no son únicas, estamos y esta es una matriz diagonal como les",
+        "start": 180.76000000000002,
+        "end": 186.56
+    },
+    {
+        "text": " dije recién, cuyas detrás son los valores singulares que son positivos, mayores iguales",
+        "start": 186.56,
+        "end": 192.8
+    },
+    {
+        "text": " que 0 pueden ser positivos o 0 y ya vimos cómo se calculan, estamos incluso en los prácticos",
+        "start": 192.8,
+        "end": 199.08
+    },
+    {
+        "text": " han visto alguna cosa esta, claro eso, eso son las entradas que están acá en la diagonal",
+        "start": 199.08,
+        "end": 205.32
+    },
+    {
+        "text": " de esta zona que se llama los valores singulares, entonces de acá vamos a reducir ahora una nueva",
+        "start": 205.32,
+        "end": 211.0
+    },
+    {
+        "text": " descomposición, pregunto, saben cómo se calculan estos valores singulares, lo hemos visto",
+        "start": 211.0,
+        "end": 217.04
+    },
+    {
+        "text": " la clase pasada, está en las notas, veanlo, si les dije eso va, estamos, veanlo, lo",
+        "start": 217.04,
+        "end": 229.32
+    },
+    {
+        "text": " vimos la clase pasada además, ahora vamos a ver una descomposición que tiene que ver",
+        "start": 229.32,
+        "end": 234.24
+    },
+    {
+        "text": " con lo siguiente, se acuerdan ustedes que cuando yo tengo un número complejo, por ejemplo",
+        "start": 234.24,
+        "end": 239.48000000000002
+    },
+    {
+        "text": " un z complejo, yo a número z es, lo puedo representar en el plano complejo con las partes",
+        "start": 239.48000000000002,
+        "end": 250.76000000000002
+    },
+    {
+        "text": " reales y imaginarias, estamos puedo dar acá la parte real, la parte imaginaria hago esto",
+        "start": 250.76000000000002,
+        "end": 259.24
+    },
+    {
+        "text": " más y por esto y tengo un número complejo z, entonces lo importante que cuando z es",
+        "start": 259.24,
+        "end": 266.04
+    },
+    {
+        "text": " distinto de 0 hay una descomposición alternativa que es la descomposición polar de los números",
+        "start": 266.04,
+        "end": 271.04
+    },
+    {
+        "text": " complejos, ¿qué es eso? Uno agarra el número complejo z, esta distancia le llama R, a este",
+        "start": 271.04,
+        "end": 281.08
+    },
+    {
+        "text": " ángulo le llama tita, esta distancia justamente del módulo de z y uno escribe z como R",
+        "start": 281.08,
+        "end": 288.84000000000003
+    },
+    {
+        "text": " por e a la itita, vieron esas descomposición polar en los complejos, estamos, esta el ángulo",
+        "start": 288.84,
+        "end": 296.47999999999996
+    },
+    {
+        "text": " tita está entre 0 y 2p y R que es el módulo es un número estrictamente mayor que 0 porque",
+        "start": 296.47999999999996,
+        "end": 305.46
+    },
+    {
+        "text": " estamos pensando que z es distinto de 0, si z es igual a 0 acá tenemos problema con",
+        "start": 305.46,
+        "end": 309.41999999999996
+    },
+    {
+        "text": " el tita que no está univo que hamento definido, pero lo pronto cuando z es distinto de 0 tenemos",
+        "start": 309.41999999999996,
+        "end": 315.47999999999996
+    },
+    {
+        "text": " z es composición, el punto es que eso que se vemos la descomposición polar tiene un resultado",
+        "start": 315.48,
+        "end": 324.56
+    },
+    {
+        "text": " analo para operadores, z es distinto de 0 se traducen operador invertible, o sea el equivalente",
+        "start": 324.56,
+        "end": 334.32
+    },
+    {
+        "text": " a decir que z es distinto de 0 complejos, este rosa convierte en un operador positivo, se",
+        "start": 334.32,
+        "end": 342.96000000000004
+    },
+    {
+        "text": " cuano que definimos que es positivo en particular que sea positivo, significa que todos los valores",
+        "start": 342.96,
+        "end": 346.56
+    },
+    {
+        "text": " propios son estrictamente positivos y esto se transforma en un operador unitario, esto",
+        "start": 346.56,
+        "end": 352.44
+    },
+    {
+        "text": " acá tiene norma 1, módulo 1, en la descomposición esto se transforma en un operador unitario, entonces",
+        "start": 352.44,
+        "end": 360.96
+    },
+    {
+        "text": " la descomposición que vamos a ver que se deduce justamente de ahí es lo que se llama la",
+        "start": 360.96,
+        "end": 365.59999999999997
+    },
+    {
+        "text": " descomposición polar que es bien sencilla de probar, preguntas",
+        "start": 365.6,
+        "end": 371.40000000000003
+    },
+    {
+        "text": " ¿qué me dice la descomposición polar? entonces es bien, es bien, es bien directa de probar a partir de la",
+        "start": 371.4,
+        "end": 393.84
+    },
+    {
+        "text": " descomposición en valores singular y de hecho va a ser el último resultado que vamos a probar en el curso.",
+        "start": 393.84,
+        "end": 401.84
+    },
+    {
+        "text": " La descomposición polar me dice lo siguiente.",
+        "start": 401.84,
+        "end": 406.56
+    },
+    {
+        "text": " Vamos a considerar un espacio vectorial con producto interno sobre el cuerpo complejo, hay una adaptación",
+        "start": 423.84,
+        "end": 437.56
+    },
+    {
+        "text": " para el cuerpo real, pero vamos a trabajar con el cuerpo complejo, vamos a suponer que ese espacio",
+        "start": 437.56,
+        "end": 442.71999999999997
+    },
+    {
+        "text": " tiene dimensión finita, claro también una cuestión, de hecho está escrito en el parcial,",
+        "start": 442.71999999999997,
+        "end": 453.52
+    },
+    {
+        "text": " al principio, todos los espacios vectoriales que vamos a trabajar en el parcial tienen dimensión finita,",
+        "start": 453.52,
+        "end": 459.64
+    },
+    {
+        "text": " no hay ninguna cosa rara esas patologías que aparecen en dimensión infinita, es todo en dimensión",
+        "start": 459.64,
+        "end": 465.52
+    },
+    {
+        "text": " finita, entonces tenemos un operador invertible, la única condición que ponemos en vez es que sea",
+        "start": 465.52,
+        "end": 475.24
+    },
+    {
+        "text": " invertible, la descomposición polar me dice que existen, dos operadores, uno operador R y",
+        "start": 475.24,
+        "end": 491.8
+    },
+    {
+        "text": " uno operador R, lineales, donde es responsitivo, U es unitario,",
+        "start": 491.8,
+        "end": 509.04
+    },
+    {
+        "text": " tal es que el operador original T se escribe como la composición de R con U, que es justamente el",
+        "start": 509.04,
+        "end": 528.04
+    },
+    {
+        "text": " equivalente a lo que teníamos acá, como les decía recién que T se invertir es el equivalente a",
+        "start": 528.04,
+        "end": 550.56
+    },
+    {
+        "text": " este, se está distinto en cero, esta parte de cita es reemplazada por un operador positivo,",
+        "start": 550.56,
+        "end": 558.64
+    },
+    {
+        "text": " uno que todos los valores propios son estrictamente positivos, esa autoadjunta y positivo, es decir,",
+        "start": 558.64,
+        "end": 566.8
+    },
+    {
+        "text": " es diagonalizable, además todos los valores propios son estrictamente positivos, este se transforma",
+        "start": 566.8,
+        "end": 571.8
+    },
+    {
+        "text": " en un operador unitario, y la demostración de esto como les decía es bastante sencilla de la",
+        "start": 571.8,
+        "end": 579.2399999999999
+    },
+    {
+        "text": " descomposición en valores singulares, me va a llevar lo que tengo acá de pizarro, y con eso terminamos",
+        "start": 579.24,
+        "end": 583.64
+    },
+    {
+        "text": " todas las demostraciones, después les voy a comentar algunas cuestiones sobre somatías en R2 y",
+        "start": 583.64,
+        "end": 590.16
+    },
+    {
+        "text": " en R3 y terminamos, entonces la demostración vamos a usar la descomposición en valores singulares,",
+        "start": 590.16,
+        "end": 601.32
+    },
+    {
+        "text": " con el caso particular de que la matriz con la que estamos trabajando es el perón el operador,",
+        "start": 609.24,
+        "end": 621.0
+    },
+    {
+        "text": " es un operador invertible, y la vamos a usar la variante",
+        "start": 621.0,
+        "end": 635.32
+    },
+    {
+        "text": " en operadores, recién escribila la descomposición en valores singulares en la matriz, vamos a usar su variante en operadores,",
+        "start": 635.32,
+        "end": 644.88
+    },
+    {
+        "text": " entonces tenemos que test invertible, eso implica en particular que el núcleo de T es el trivial,",
+        "start": 644.88,
+        "end": 656.5600000000001
+    },
+    {
+        "text": " es el conjunto formado por el cero, y esto implica que el rango del operador T es N, o sea es un operador",
+        "start": 656.56,
+        "end": 670.1999999999999
+    },
+    {
+        "text": " de rango completo, N es la dimensión del espacio vectorial la que estamos trabajando, entonces",
+        "start": 670.1999999999999,
+        "end": 681.92
+    },
+    {
+        "text": " miren cómo sale esto, por empezar la variante, el resultado previo a la demostración de las",
+        "start": 682.7199999999999,
+        "end": 694.52
+    },
+    {
+        "text": " composiones espectrales en valores singulares en la matriz es lo que voy a escribir ahora,",
+        "start": 694.52,
+        "end": 699.16
+    },
+    {
+        "text": " que me decía ese resultado previo me decía, yo tengo un operador T que va de bember,",
+        "start": 699.16,
+        "end": 705.7199999999999
+    },
+    {
+        "text": " ese resultado previo me dice que existe acá una base ortonormal de este espacio,",
+        "start": 710.64,
+        "end": 716.12
+    },
+    {
+        "text": " una base ortonormal de b, de paso tu sirve para repasar los valores singulares para",
+        "start": 716.12,
+        "end": 731.72
+    },
+    {
+        "text": " operadores, existe una base ortonormal en ese espacio de partida y otra base ortonormal acá en el",
+        "start": 731.72,
+        "end": 738.28
+    },
+    {
+        "text": " espacio de llegada que es el mismo en este caso, tal es que esto es importante porque",
+        "start": 738.28,
+        "end": 766.36
+    },
+    {
+        "text": " recibe de paso para el resultado que nos llevaba a descomposión en valores singulares, se",
+        "start": 766.36,
+        "end": 774.04
+    },
+    {
+        "text": " acuerdan cuando vimos ese resultado, cómo se calculaba esta base ortonormal lo vimos la clase pasada,",
+        "start": 774.04,
+        "end": 780.6800000000001
+    },
+    {
+        "text": " se acuerdan que hacíamos para que el calculaba esta base ortonormal, todavía no escribí lo que",
+        "start": 783.52,
+        "end": 786.84
+    },
+    {
+        "text": " voy a escribir acá pero quiero ir repasando tal es que esa base los elementos de esa base si",
+        "start": 786.84,
+        "end": 796.52
+    },
+    {
+        "text": " la aplicaba P, T perdón obtenía cada uno de los elementos correspondientes de esta base multiplicados",
+        "start": 796.52,
+        "end": 804.4
+    },
+    {
+        "text": " por un sigma i que justamente eso eran los valores singulares y esos valores singulares lo ordenábamos",
+        "start": 804.4,
+        "end": 814.64
+    },
+    {
+        "text": " de mayor a menor, sigma 1, sigma 2 etcétera hasta sigma n, pregunta ahora si repito la pregunta,",
+        "start": 814.64,
+        "end": 828.88
+    },
+    {
+        "text": " cómo calculábamos esos veis, esos veis que teníamos acá, acá tenemos los veis, estos veis eran",
+        "start": 828.88,
+        "end": 839.56
+    },
+    {
+        "text": " eran valores propios, veis veis pero es una base ortonormal, de veis propios",
+        "start": 839.8,
+        "end": 851.52
+    },
+    {
+        "text": " del operador, no del operador T sino del operador T3 ya conté, se acuerdan de eso construíamos",
+        "start": 857.52,
+        "end": 865.1999999999999
+    },
+    {
+        "text": " el operador testre ya conté que era un operador autoaljunto, o sea sus valores propios eran",
+        "start": 865.2,
+        "end": 873.9200000000001
+    },
+    {
+        "text": " reales y era diagonalizable en un abaso autotomal de vectores propios, por lo tanto esto",
+        "start": 873.9200000000001,
+        "end": 878.4000000000001
+    },
+    {
+        "text": " está bien construido, pero además ese operador era positivo, pero no negativo en general,",
+        "start": 878.4000000000001,
+        "end": 885.96
+    },
+    {
+        "text": " o sea sus valores propios son mayores iguales que cero y además el rango de este operador",
+        "start": 885.96,
+        "end": 891.6
+    },
+    {
+        "text": " es el mismo que el rango de este, eso significa que como usted es invertible, esto es el",
+        "start": 891.6,
+        "end": 896.96
+    },
+    {
+        "text": " operador, usted tiene rango n, este operador también tiene rango n, y en particular significa",
+        "start": 896.96,
+        "end": 903.24
+    },
+    {
+        "text": " que ese núcleo de este es núcleo trivial, el núcleo de este estrella conté también",
+        "start": 903.24,
+        "end": 906.64
+    },
+    {
+        "text": " es núcleo trivial, por lo tanto significa que cero, así como cero, no puede ser vector",
+        "start": 906.64,
+        "end": 912.48
+    },
+    {
+        "text": " valor propio de esto, cero tampoco puede ser valor propio de esto, entonces todos los",
+        "start": 912.48,
+        "end": 919.1600000000001
+    },
+    {
+        "text": " valores propios, todos los valores propios que les habíamos denotado lambda 1, mayor",
+        "start": 919.16,
+        "end": 931.92
+    },
+    {
+        "text": " igual que lambda 2 etc, como yo digo el que lambda n, los valores propios de este operador,",
+        "start": 931.92,
+        "end": 939.88
+    },
+    {
+        "text": " esos son estrictamente positivos porque en general son mayores iguales que cero, pero",
+        "start": 939.88,
+        "end": 944.48
+    },
+    {
+        "text": " el cero queda descartado porque justamente el núcleo de este es núcleo trivial y el",
+        "start": 944.48,
+        "end": 951.12
+    },
+    {
+        "text": " resultado que vimos me provea que el rango de este es el rango de este, por lo tanto",
+        "start": 951.12,
+        "end": 955.84
+    },
+    {
+        "text": " este también tiene núcleo trivial, si este tiene núcleo trivial significa que el cero",
+        "start": 955.84,
+        "end": 960.44
+    },
+    {
+        "text": " no puede ser valor propio, entonces los valores propios de este operador son los que llamamos",
+        "start": 960.44,
+        "end": 966.84
+    },
+    {
+        "text": " lambda 1, lambda 2 hasta lambda n, que se pueden repetir, no importa y con esos valores",
+        "start": 966.84,
+        "end": 974.24
+    },
+    {
+        "text": " propios construimos estos numeritos que son los valores singulares, que son justamente",
+        "start": 974.24,
+        "end": 978.84
+    },
+    {
+        "text": " las raíces cuadradas de eso, que quede claro eso porque va a ir justamente, entonces todos",
+        "start": 978.84,
+        "end": 990.44
+    },
+    {
+        "text": " estos numeritos son estrictamente positivos porque te es invariante, pero un invertible",
+        "start": 990.44,
+        "end": 1000.5600000000001
+    },
+    {
+        "text": " que estoy diciendo y además los numeritos de eso son las raíces cuadradas de los lambda",
+        "start": 1000.5600000000001,
+        "end": 1007.84
+    },
+    {
+        "text": " y donde lambda y son los valores propios de este operador, te estrella con T, entonces",
+        "start": 1007.84,
+        "end": 1015.2800000000001
+    },
+    {
+        "text": " si uno quiere calcular eso sí más tiene que construir este operador, calcular los valores",
+        "start": 1015.28,
+        "end": 1021.12
+    },
+    {
+        "text": " propios de este operador y después tomar las raíes cuadradas de esos valores propios son",
+        "start": 1021.12,
+        "end": 1025.0
+    },
+    {
+        "text": " números estrictamente positivos porque este es invertible.",
+        "start": 1025.0,
+        "end": 1030.16
+    },
+    {
+        "text": " Y entonces lo que me decía el resultado que les estoy comentando es que yo me construía",
+        "start": 1030.16,
+        "end": 1043.3999999999999
+    },
+    {
+        "text": " acá una base ortonormal de factores propios, justamente quedan los factores propios de",
+        "start": 1043.4,
+        "end": 1047.24
+    },
+    {
+        "text": " este estrella con T, calculaba los valores propios correspondientes y definía los doble",
+        "start": 1047.24,
+        "end": 1054.92
+    },
+    {
+        "text": " veis de esta manera y eso me definía una base ortonormal acá en el espacio llegada y",
+        "start": 1054.92,
+        "end": 1061.0400000000002
+    },
+    {
+        "text": " ahora vamos a escribir las cosas de manera propiada para probar este resultado, estamos",
+        "start": 1061.0400000000002,
+        "end": 1067.64
+    },
+    {
+        "text": " aquí, sí. Bueno, hay casos particulares, bueno justamente en los casos particulares",
+        "start": 1067.64,
+        "end": 1085.0
+    },
+    {
+        "text": " en qué vale esto, no sé, cuando yo puedo escribir, acorrático, por ejemplo cuando una",
+        "start": 1085.0,
+        "end": 1089.0
+    },
+    {
+        "text": " matriz es autoarjunta, por ejemplo, cuando uno paraba autoarjunta trabajando en matriz",
+        "start": 1089.0,
+        "end": 1096.0800000000002
+    },
+    {
+        "text": " cuando se puede escribir así. Y estos son acá vienen los valores propios de este del",
+        "start": 1096.08,
+        "end": 1102.86
+    },
+    {
+        "text": " operador de lo operador que corresponde esta matriz, estamos en ese caso si vos haces",
+        "start": 1102.86,
+        "end": 1112.04
+    },
+    {
+        "text": " toda esta construcción lo que te van a salir acá sin lugar a trabajar con lo operador",
+        "start": 1112.04,
+        "end": 1116.8799999999999
+    },
+    {
+        "text": " T, trabajo con T estrella por T, que como es autoarjunta es lo mismo que T al cuadrado,",
+        "start": 1116.8799999999999,
+        "end": 1121.72
+    },
+    {
+        "text": " los valores propios que te van a salir acá son los cuadrados los valores propios de T,",
+        "start": 1121.72,
+        "end": 1126.2
+    },
+    {
+        "text": " entonces cuando tomo la raíz cuadrada me van a quedar los valores propios de T, entonces",
+        "start": 1126.2,
+        "end": 1130.6000000000001
+    },
+    {
+        "text": " en ese caso esta es la versión compatible con lo que estoy escribiendo ahora por el caso",
+        "start": 1130.6000000000001,
+        "end": 1139.8
+    },
+    {
+        "text": " de que el operador se haya analizado una base ortonormal de nuestro trabajo, se entiende?",
+        "start": 1139.8,
+        "end": 1145.5
+    },
+    {
+        "text": " Vamos, entonces vamos a trabajar un poquito esto para probar el resultado, la descomposición",
+        "start": 1145.5,
+        "end": 1151.72
+    },
+    {
+        "text": " polar acá, esta es esta interesante la pregunta, creo que claro yo la descomposición",
+        "start": 1151.72,
+        "end": 1156.58
+    },
+    {
+        "text": " en valores singulares es una generalización de esto, en el caso de operador de ortobonales",
+        "start": 1156.58,
+        "end": 1163.98
+    },
+    {
+        "text": " lo que queda en la matriz en lo que venia acá al medio, en la matriz diagonal justamente",
+        "start": 1163.98,
+        "end": 1170.66
+    },
+    {
+        "text": " son los valores propios de lo prooriginal, pero en general quedan las raíces cuadradas",
+        "start": 1170.66,
+        "end": 1176.22
+    },
+    {
+        "text": " de los valores propios de este operador, de estrella con T, bueno entonces no se asusten",
+        "start": 1176.22,
+        "end": 1187.3400000000001
+    },
+    {
+        "text": " que ya falta un poquito, primero vamos a definir, yo tengo T y tengo ese resultado,",
+        "start": 1187.3400000000001,
+        "end": 1193.0400000000002
+    },
+    {
+        "text": " entonces vamos a definir UR de manera propiedad y vamos a ver que se cumple esta condición,",
+        "start": 1193.0400000000002,
+        "end": 1198.74
+    },
+    {
+        "text": " en esta matriz de paso en el equivalente a la matriz diagonal que tengo la descomposición",
+        "start": 1198.74,
+        "end": 1204.44
+    },
+    {
+        "text": " se acuerna que hace un ratito escribos esto, m es igual a 1, ese por lo que transpuesta,",
+        "start": 1204.44,
+        "end": 1211.42
+    },
+    {
+        "text": " en los elementos de esta matriz diagonal justamente vienen los sigma y yo los ordeno de mayor",
+        "start": 1211.42,
+        "end": 1215.6200000000001
+    },
+    {
+        "text": " o menor, así ordenados esta es única, pero esta ni esta ni esta solúnica, vamos, entonces",
+        "start": 1215.6200000000001,
+        "end": 1224.42
+    },
+    {
+        "text": " vamos a definir un operador U y en un ratito les voy a seguir dando ayuda por el parcial,",
+        "start": 1224.42,
+        "end": 1236.5
+    },
+    {
+        "text": " vamos a definir un operador U de la siguiente manera, yo tengo las bases ortonomales acá,",
+        "start": 1236.5,
+        "end": 1252.66
+    },
+    {
+        "text": " yo por el resultado que vimos la clase pasada, me se construy esta base ortonomada y por",
+        "start": 1252.66,
+        "end": 1256.72
+    },
+    {
+        "text": " lo que les comento recién, entonces vamos a definir un operador, lineal que a este lo manda",
+        "start": 1256.72,
+        "end": 1261.42
+    },
+    {
+        "text": " este, a este lo manda este, a este lo manda este, entonces ese operador que me manda una",
+        "start": 1261.42,
+        "end": 1265.98
+    },
+    {
+        "text": " base en algo que está en el espacio llegada es único, está univocamiento definido,",
+        "start": 1265.98,
+        "end": 1270.66
+    },
+    {
+        "text": " entonces vamos a definir el operador U, tal que U aplicado acá el elemento de la base original",
+        "start": 1270.66,
+        "end": 1280.26
+    },
+    {
+        "text": " a la base inicial me da un elemento de la base final y esto para todo y desde uno hasta",
+        "start": 1280.26,
+        "end": 1288.74
+    },
+    {
+        "text": " él, insisto esto está definido, está bien definido univocamente porque estoy viendo cómo",
+        "start": 1288.74,
+        "end": 1297.86
+    },
+    {
+        "text": " se comporta U para para una base del espacio de partida, ahora yo con la siguiente afirmación",
+        "start": 1297.86,
+        "end": 1307.7
+    },
+    {
+        "text": " U es unitario, ¿por qué es unitario? Porque llega una base ortonomal en otra base",
+        "start": 1307.7,
+        "end": 1318.26
+    },
+    {
+        "text": " ortonomal, se acuerdan que vimos que decir que un operador se unitario lo mismo que decir",
+        "start": 1318.26,
+        "end": 1324.02
+    },
+    {
+        "text": " que transforma toda base ortonomal en una base ortonomal o que manda una base ortonomal",
+        "start": 1324.02,
+        "end": 1328.5
+    },
+    {
+        "text": " a una base ortonomal con una alcance, entonces como este está mandando una base ortonomal",
+        "start": 1328.5,
+        "end": 1333.18
+    },
+    {
+        "text": " en una base ortonomal es un operador unitario y ahora me voy a construir un segundo operador",
+        "start": 1333.18,
+        "end": 1347.5
+    },
+    {
+        "text": " R, Lineal, tal que R aplicado WI es sigma I por WI, donde los sigma I son los valores",
+        "start": 1347.5,
+        "end": 1366.98
+    },
+    {
+        "text": " singulares que tengo acá, para cada uno de estos V1, V2 hasta VN tengo lambda I, lambda",
+        "start": 1366.98,
+        "end": 1372.98
+    },
+    {
+        "text": " lambda N, tomo la raíz es cuadra y me da un sigma 1, sigma 2 hasta sigma N, entonces",
+        "start": 1372.98,
+        "end": 1379.14
+    },
+    {
+        "text": " decir un operador R tal que acá uno de estos que también es una base me da sigma I por",
+        "start": 1379.14,
+        "end": 1384.38
+    },
+    {
+        "text": " el WI correspondiente, que está bien definido porque lo estoy definiendo a partir de una base.",
+        "start": 1384.38,
+        "end": 1394.8600000000001
+    },
+    {
+        "text": " Entonces para este operador hago la siguiente afirmación, la siguiente dos afirmaciones,",
+        "start": 1394.8600000000001,
+        "end": 1399.34
+    },
+    {
+        "text": " primero, R es autoadjunto, ¿por qué es autoadjunto? Yo defino un operador Lineal, R no le",
+        "start": 1399.34,
+        "end": 1418.26
+    },
+    {
+        "text": " veí, igual así es maí por WI, ¿por qué su operador así definido es autoadjunto?",
+        "start": 1418.26,
+        "end": 1425.62
+    },
+    {
+        "text": " Exactamente, es autoadjunto porque diagonalizable era un abaseo arturónoma de vectores y además",
+        "start": 1425.62,
+        "end": 1437.4599999999998
+    },
+    {
+        "text": " los valores propios son reales, acá está, si yo escribo R como base de partida a la",
+        "start": 1437.4599999999998,
+        "end": 1445.26
+    },
+    {
+        "text": " B esta y como base de partida a esta misma me queda una matriz diagonal donde las entradas",
+        "start": 1445.26,
+        "end": 1451.82
+    },
+    {
+        "text": " diagonal son justamente sigma 1, sigma 2 hasta sigma N, que son reales, por lo tanto",
+        "start": 1451.82,
+        "end": 1456.34
+    },
+    {
+        "text": " este operador es autoadjunto, se diagonaliza en una base arturónoma de vectores propios y",
+        "start": 1456.34,
+        "end": 1479.02
+    },
+    {
+        "text": " los valores propios son reales, son dos cosas que hay que ver, pero hago una segunda afirmación",
+        "start": 1479.02,
+        "end": 1491.34
+    },
+    {
+        "text": " sobre R, además que R es positivo, ¿por qué R es positivo? Porque todos sus valores propios",
+        "start": 1491.34,
+        "end": 1511.5
+    },
+    {
+        "text": " son estrictamente positivos, que era lo que teníamos escrito acá, estos son los valores",
+        "start": 1511.5,
+        "end": 1516.98
+    },
+    {
+        "text": " propios ahora de R y son estrictamente positivos, entonces R es positivo, pues los valores",
+        "start": 1516.98,
+        "end": 1526.6200000000001
+    },
+    {
+        "text": " propios son positivos.",
+        "start": 1526.6200000000001,
+        "end": 1535.74
+    },
+    {
+        "text": " Estamos entonces me construidos operadores, un U definió de esta manera que es unitario",
+        "start": 1535.74,
+        "end": 1546.9
+    },
+    {
+        "text": " y un R definió de esta manera que es autoadjunto y positivo y los definía partida de las bases",
+        "start": 1546.9,
+        "end": 1552.7
+    },
+    {
+        "text": " estas que sé cómo construirlas, entonces veamos ahora que pasa si compongo R con U,",
+        "start": 1552.7,
+        "end": 1559.22
+    },
+    {
+        "text": " la composición de R con U me va a dar T, con esto, si yo hago R compuesto con U y veo",
+        "start": 1559.22,
+        "end": 1578.98
+    },
+    {
+        "text": " cómo actúa en cada uno de los elementos de la base, a que escribí allá, esto que es",
+        "start": 1578.98,
+        "end": 1592.02
+    },
+    {
+        "text": " R aplicado a U de VI, pero U de VI es WI, entonces R aplicado a DMI y que es R aplicado",
+        "start": 1592.02,
+        "end": 1608.62
+    },
+    {
+        "text": " a DMI, Sigma I por DMI y que es Sigma I por DMI, este aplicado a VI, entonces tengo que",
+        "start": 1608.62,
+        "end": 1636.34
+    },
+    {
+        "text": " para todo el elemento de la base A, te ha aplicado VI coincide con R compuesto con un aplicado",
+        "start": 1636.34,
+        "end": 1642.1799999999998
+    },
+    {
+        "text": " a VI en este orden, en este orden, entonces eso me implica que lo peraortes igual a lo pera",
+        "start": 1642.1799999999998,
+        "end": 1650.6599999999999
+    },
+    {
+        "text": " de R compuesto con U, esta es la última demostración del curso, un par de comentarios, esto también",
+        "start": 1650.6599999999999,
+        "end": 1658.76
+    },
+    {
+        "text": " es importante, hay una descomposición analoga para matrices que no lo vamos a ver, fíjense",
+        "start": 1658.76,
+        "end": 1665.54
+    },
+    {
+        "text": " en las notas, está demostrado, ¿qué es que si ha es una matriz invertible? Entonces",
+        "start": 1665.54,
+        "end": 1674.8999999999999
+    },
+    {
+        "text": " hace puedes escribir como R por U, donde ahora esta es una matriz positiva, todos los valores",
+        "start": 1674.8999999999999,
+        "end": 1681.54
+    },
+    {
+        "text": " propios, una atrictamente positiva y esta es una matriz unitaria, o sea la respuesta conjugada",
+        "start": 1681.54,
+        "end": 1693.5
+    },
+    {
+        "text": " era la inversa de la matriz, no se acuerdan lo que me define una matriz unitaria, eso se",
+        "start": 1693.5,
+        "end": 1706.1
+    },
+    {
+        "text": " lo voy a dejar para que lo ven en las notas, de la misma manera, ven en las notas, hay un",
+        "start": 1706.1,
+        "end": 1710.14
+    },
+    {
+        "text": " par de ejemplos, hay bien sencillo, bueno entonces ahora sí por lo esto, entonces le voy",
+        "start": 1710.14,
+        "end": 1720.58
+    },
+    {
+        "text": " a comentar rápidamente algunas cuestiones sobre isometrias en R2 y alguna cosa en R3 y eso",
+        "start": 1720.58,
+        "end": 1728.4199999999998
+    },
+    {
+        "text": " ya para terminar el curso, entonces isometrias lineales en R2, esto también acá hay mucha información",
+        "start": 1728.4199999999998,
+        "end": 1747.8999999999999
+    },
+    {
+        "text": " útil, digo para las cámaras para todos los que ven el curso, las isometrias lineales",
+        "start": 1747.9,
+        "end": 1754.18
+    },
+    {
+        "text": " son las transformaciones ortobanales, R2 en R2, espacio vectorial real, R2, espacio vectorial",
+        "start": 1754.18,
+        "end": 1763.14
+    },
+    {
+        "text": " real con el producto interno usual, y vamos a trabajar, vamos a suponer que C es la base",
+        "start": 1763.14,
+        "end": 1774.94
+    },
+    {
+        "text": " organica de R2 para pasar a matriz y simplificar el problema, base organica o una base",
+        "start": 1774.94,
+        "end": 1782.94
+    },
+    {
+        "text": " ortonormal en general de R2, esta es una base ortonormal con este producto interno, entonces",
+        "start": 1782.94,
+        "end": 1791.06
+    },
+    {
+        "text": " vamos a considerar T de R2 en R2, ortonormal, lo que obviamente significa que si yo reemplazo,",
+        "start": 1791.06,
+        "end": 1805.58
+    },
+    {
+        "text": " si yo represento T en la base canónica o en cualquier base ortonormal, esto me da una",
+        "start": 1805.58,
+        "end": 1811.5
+    },
+    {
+        "text": " matriz que es una matriz ortonormal, si una matriz que le vamos a representar así, A, B,",
+        "start": 1811.5,
+        "end": 1822.3
+    },
+    {
+        "text": " C, D, esto es una matriz ortonal, que sea una matriz ortonal, pregunto nuevos, ¿qué",
+        "start": 1822.3,
+        "end": 1837.7
+    },
+    {
+        "text": " significa? ¿qué es invertible? y que la inversa es igual a la respuesta de esto,",
+        "start": 1837.7,
+        "end": 1845.94
+    },
+    {
+        "text": " estamos trabajando con el caso real, si fuera el caso complejo sería la respuesta",
+        "start": 1845.94,
+        "end": 1849.3
+    },
+    {
+        "text": " conjugada, pero hay una forma más fácil de verificar que algo se llama trijortonal y es",
+        "start": 1849.3,
+        "end": 1854.9
+    },
+    {
+        "text": " que las columnas forman una base ortonormal de R2, entonces si yo yo que la matriz acá",
+        "start": 1854.9,
+        "end": 1864.98
+    },
+    {
+        "text": " es ortonal, es lo mismo que decir, ¿qué estas dos columnas forman una base ortonormal",
+        "start": 1864.98,
+        "end": 1871.06
+    },
+    {
+        "text": " de R2? entonces vamos a pedir la condición de que estos dos vetores forman una base",
+        "start": 1871.06,
+        "end": 1878.3600000000001
+    },
+    {
+        "text": " ortonormal de R2 y vamos a ver qué condición se ve en cumplimiento conficiente A, B, C, D,",
+        "start": 1878.3600000000001,
+        "end": 1882.8600000000001
+    },
+    {
+        "text": " para que esto se lo matriz ortonal, se vamos a ver el caso exhaustivo, entonces esta",
+        "start": 1882.8600000000001,
+        "end": 1893.82
+    },
+    {
+        "text": " parte es más entretenida y más I, E, este útil, entonces ¿qué condición tiene",
+        "start": 1893.82,
+        "end": 1906.06
+    },
+    {
+        "text": " que cumplir? esto es un marito para que esto se llama trijortonal, bueno en particular",
+        "start": 1906.06,
+        "end": 1912.34
+    },
+    {
+        "text": " primera que esto tenga norma 1, este vector esta columna tenga norma 1 trabajando con el",
+        "start": 1912.34,
+        "end": 1918.9399999999998
+    },
+    {
+        "text": " producto internacional, o sea que A cuadra más C cuadra más C cuadra más C igual a 1,",
+        "start": 1918.94,
+        "end": 1928.8200000000002
+    },
+    {
+        "text": " segunda condición, esta columna segunda también tiene que tener norma 1, B cuadrado más",
+        "start": 1928.8200000000002,
+        "end": 1934.1000000000001
+    },
+    {
+        "text": " de cuadrado igual a 1, tercera condición, esta columna y esta tienen que ser ortobonales,",
+        "start": 1934.1000000000001,
+        "end": 1945.3400000000001
+    },
+    {
+        "text": " el producto internacional de esta columna tiene que ser ortobonales y ahí está con",
+        "start": 1945.34,
+        "end": 1948.82
+    },
+    {
+        "text": " esas tres condiciones usted una va a ser ortonormal, o sea A, B más C por D tiene que ser igual",
+        "start": 1948.82,
+        "end": 1953.3
+    },
+    {
+        "text": " a 0, bien entonces para que esta matriz sea una matriz ortobonal se tiene que cumplir",
+        "start": 1953.3,
+        "end": 1963.34
+    },
+    {
+        "text": " necesariamente esas tres condiciones y ahora vamos a jugar un poco con esos numeritos,",
+        "start": 1963.34,
+        "end": 1968.8999999999999
+    },
+    {
+        "text": " ahora que van a ver que todas esos numeritos los puedes escribir, los puedo escribir de manera",
+        "start": 1968.9,
+        "end": 1976.8200000000002
+    },
+    {
+        "text": " compacta a partir de un parámetro, estamos entonces lo que vamos a usar para ver todas las",
+        "start": 1976.8200000000002,
+        "end": 1982.5
+    },
+    {
+        "text": " posibilidades es algo así como cambiar los parámetros a las coordenadas de redosa polares,",
+        "start": 1982.5,
+        "end": 1990.6200000000001
+    },
+    {
+        "text": " un poco parecido a los que les contaba al principio, en lugar de trabajar con EX ahí vamos",
+        "start": 1990.6200000000001,
+        "end": 1997.6200000000001
+    },
+    {
+        "text": " a trabajar con las coordenadas polares, el ángulo esto y la norma del vector, este primer",
+        "start": 1997.62,
+        "end": 2012.02
+    },
+    {
+        "text": " vector tiene coordenadas A y C, es como si la A fue es la coordena de EX y la C fue",
+        "start": 2012.02,
+        "end": 2018.1799999999998
+    },
+    {
+        "text": " es la coordena de A, esta condición me dice que tiene módulo 1 o sea que esta flechita",
+        "start": 2018.1799999999998,
+        "end": 2023.02
+    },
+    {
+        "text": " tiene módulo 1 y además tiene que cumplir el cuadro más de cuadrero a la 1 o sea que",
+        "start": 2023.02,
+        "end": 2029.06
+    },
+    {
+        "text": " salvo que esta acá sobre el circulito este de radio 1, entonces si esta sobre el circulito",
+        "start": 2029.06,
+        "end": 2036.7
+    },
+    {
+        "text": " radio 1 voy a usar la descomposición polar para representarlo, entonces vamos a escribir,",
+        "start": 2036.7,
+        "end": 2047.82
+    },
+    {
+        "text": " vamos a representar un polar, ahí estoy representando el primer vector, el A C y que tenía",
+        "start": 2047.82,
+        "end": 2059.54
+    },
+    {
+        "text": " acá, ah y que tenía acá, sí, entonces vamos a escribir las cosas así, este es un vector",
+        "start": 2059.54,
+        "end": 2066.94
+    },
+    {
+        "text": " normal 1 y con esta angulotita, ah lo escribimos como 1 coseno de tita, o sea coseno de tita",
+        "start": 2066.94,
+        "end": 2081.7200000000003
+    },
+    {
+        "text": " con lo cual me sale que sé cuando tiene que valer, para que se cumpe de igualdad cuadrada",
+        "start": 2081.7200000000003,
+        "end": 2085.14
+    },
+    {
+        "text": " más de cuadrado a la 1, se tiene que ser senotita que este pedacito acá, entonces ah igual",
+        "start": 2085.14,
+        "end": 2090.5
+    },
+    {
+        "text": " la coseno de tita y entonces C es igual al seno de tita, donde el angulotita es un ángulo",
+        "start": 2090.5,
+        "end": 2104.82
+    },
+    {
+        "text": " entre 0 y 2p, incluyo al 0 y no incluyo el 2p para que de unificamento definido, sí",
+        "start": 2104.82,
+        "end": 2115.06
+    },
+    {
+        "text": " y lo mismo hago con este otro vector que ahora tiene coordenadas B y D, que además tiene",
+        "start": 2115.06,
+        "end": 2121.1
+    },
+    {
+        "text": " que ser ortoborala a este, entonces si yo tengo un poquito de imaginación ahí, será",
+        "start": 2121.1,
+        "end": 2125.22
+    },
+    {
+        "text": " que ser un vector por acá, este es el que tiene coorden, este angulotita es un ángulo",
+        "start": 2125.22,
+        "end": 2130.46
+    },
+    {
+        "text": " recto, entonces para este un maceno de descomposición parecida, solo que le vamos a llamar",
+        "start": 2130.46,
+        "end": 2136.2999999999997
+    },
+    {
+        "text": " a la primera componente coseno de fí, otro ángulo y la segunda componente es seno de",
+        "start": 2136.2999999999997,
+        "end": 2141.2999999999997
+    },
+    {
+        "text": " fí, entonces a ver le vamos a llamar coseno de fí y en consecuencia D sale seno de fí,",
+        "start": 2141.3,
+        "end": 2155.0600000000004
+    },
+    {
+        "text": " donde fí está entre 0 y 2p, entonces esta manera de escribir los numeritos a B, se",
+        "start": 2155.0600000000004,
+        "end": 2163.02
+    },
+    {
+        "text": " idee sale de la descomposición polar, ahora tengo dos ángulos, tita y fí, pero me falta",
+        "start": 2163.02,
+        "end": 2169.6800000000003
+    },
+    {
+        "text": " esta condición ya la tengo, ya la tengo, me falta esta y esta condición justamente me",
+        "start": 2169.68,
+        "end": 2174.72
+    },
+    {
+        "text": " va a dar que relación exista entre tita y fí, como este vector tiene que ser ortoborala",
+        "start": 2174.72,
+        "end": 2183.96
+    },
+    {
+        "text": " a este, el ángulo este tiene que ser el ángulo fí y el ángulo tita tiene que diferenciarse",
+        "start": 2183.96,
+        "end": 2189.24
+    },
+    {
+        "text": " en piso bredos o en menos piso bredos, o sea que si yo fico este, el otro tiene que ser",
+        "start": 2189.24,
+        "end": 2196.2
+    },
+    {
+        "text": " este, que es este tita más piso bredos o este, que es tita menos piso bredos, vamos,",
+        "start": 2196.2,
+        "end": 2209.08
+    },
+    {
+        "text": " o sea si es crítico, si no le puedo dar toda la vuelta, entonces la tercera condición",
+        "start": 2209.08,
+        "end": 2215.3199999999997
+    },
+    {
+        "text": " y la vamos a escribir así, además van a ver que me da en cosas bien distintas, un caso",
+        "start": 2215.3199999999997,
+        "end": 2225.24
+    },
+    {
+        "text": " que el otro, además si yo reemplazo esto acá me queda, coseno de tita, coseno de fí,",
+        "start": 2225.24,
+        "end": 2234.24
+    },
+    {
+        "text": " más seno de tita, seno de fí, si hay que usar estas igualdad de estribonométricas, les",
+        "start": 2234.24,
+        "end": 2240.4399999999996
+    },
+    {
+        "text": " va a mandar una ayuda, las vamos a escribir, necesarios que se las memorisen, coseno de tita,",
+        "start": 2240.4399999999996,
+        "end": 2244.9199999999996
+    },
+    {
+        "text": " coseno de fí, más seno de tita, seno de fí, esto que tienen que ser igual a cero, se",
+        "start": 2244.9199999999996,
+        "end": 2250.16
+    },
+    {
+        "text": " escuaren cuanto va a como se escribe esto, coseno de tita, coseno de fí, más seno de tita,",
+        "start": 2250.16,
+        "end": 2255.08
+    },
+    {
+        "text": " seno de fí, es justamente coseno de tita menos fí, es una igualdad de estribonométrica",
+        "start": 2255.08,
+        "end": 2264.7599999999998
+    },
+    {
+        "text": " y por lo tanto sale los que le decía recién, tita menos fí tiene que ser, o piso bredos",
+        "start": 2264.7599999999998,
+        "end": 2269.48
+    },
+    {
+        "text": " o menos piso bredos, que es lo que le decía recién, dado tita el otro tiene que estar acá",
+        "start": 2269.48,
+        "end": 2275.2799999999997
+    },
+    {
+        "text": " o tiene que apuntar acá, entonces tita menos fí es igual a, vamos a poner primer caso",
+        "start": 2275.28,
+        "end": 2283.2000000000003
+    },
+    {
+        "text": " menos piso bredos o tita menos fí igual a piso bredos.",
+        "start": 2283.2000000000003,
+        "end": 2291.2000000000003
+    },
+    {
+        "text": " También, así es más fácil piso y esa es la representación, lo más fácil de la representación",
+        "start": 2291.2,
+        "end": 2310.68
+    },
+    {
+        "text": " viso a la acá, pero usando la de igualdad de estribonométrica y esa o el argumento que",
+        "start": 2310.68,
+        "end": 2314.72
+    },
+    {
+        "text": " así sale también, entonces fíjense, tome es que descrito en términos de tita y de fí,",
+        "start": 2314.72,
+        "end": 2322.8399999999997
+    },
+    {
+        "text": " pero además tita y fí tienen que estar relacionados entre así, de tal manera que tengo dos",
+        "start": 2322.8399999999997,
+        "end": 2327.3599999999997
+    },
+    {
+        "text": " situaciones posibles que me va a dar, la primera situación me va a dar una matriz",
+        "start": 2327.3599999999997,
+        "end": 2331.52
+    },
+    {
+        "text": " ortobonal y la otra situación me va a dar otra matriz ortobonal, entonces las dos dependen",
+        "start": 2331.52,
+        "end": 2336.9599999999996
+    },
+    {
+        "text": " de un parámetro, vamos a elegir tita como parámetro y vamos a ver, ahí todas las posibilidades",
+        "start": 2336.9599999999996,
+        "end": 2343.2799999999997
+    },
+    {
+        "text": " que tengo para isometrieles y nioles en R2, que son de dos tipos, las que corresponden",
+        "start": 2343.28,
+        "end": 2350.1200000000003
+    },
+    {
+        "text": " al primer caso, las que corresponden al segundo caso y que son cosas bien distintas, se entiende,",
+        "start": 2350.1200000000003,
+        "end": 2357.28
+    },
+    {
+        "text": " entonces caso uno, caso uno, no quiero borrar nada, caso uno, tita menos fí igual a menos",
+        "start": 2357.28,
+        "end": 2382.48
+    },
+    {
+        "text": " fí sobre dos, vamos a empezar con el caso que tiene el menos, atita le resto fí y tengo",
+        "start": 2382.48,
+        "end": 2395.08
+    },
+    {
+        "text": " menos fí sobre dos, o sea en realidad el caso uno es este, este es el caso uno, esto es",
+        "start": 2395.08,
+        "end": 2404.92
+    },
+    {
+        "text": " tita, esto es fí, atita le resto fí y que hay un menos fí sobre dos, estamos y el otro",
+        "start": 2404.92,
+        "end": 2413.36
+    },
+    {
+        "text": " caso sería el caso dos, el que vendría acá, eso me dice que yo puse artita como parámetro",
+        "start": 2413.36,
+        "end": 2424.6800000000003
+    },
+    {
+        "text": " y por lo tanto escribir fí como tita menos fí sobre dos, entonces a es coseno de tita,",
+        "start": 2424.68,
+        "end": 2438.3199999999997
+    },
+    {
+        "text": " se se no de tita y a ver los escriban términos de tita y a ver también, entonces me queda,",
+        "start": 2438.3199999999997,
+        "end": 2445.6
+    },
+    {
+        "text": " tienes toda razón, así, gracias, fí igual a tita más fí sobre dos, entonces acá tengo",
+        "start": 2445.6,
+        "end": 2455.2
+    },
+    {
+        "text": " a, acá tengo c, escrito en términos de tita, ahora ves coseno de fí, pero fí es tita más",
+        "start": 2455.2,
+        "end": 2466.04
+    },
+    {
+        "text": " fí sobre dos, cuáles es cuándo vale coseno de tita más fí sobre dos, cómo puedes escribir",
+        "start": 2466.04,
+        "end": 2483.64
+    },
+    {
+        "text": " coseno de tita más fí sobre dos, es coseno de tita, coseno de esto menos fí sobre dos,",
+        "start": 2483.64,
+        "end": 2490.16
+    },
+    {
+        "text": " revisen eso, insisto, si hay que usar relación trigonométricas, en el caso que hay que usarlas,",
+        "start": 2490.16,
+        "end": 2497.2
+    },
+    {
+        "text": " después me ha tirado una ayuda, estamos pero lo que sale es que coseno de tita más fí sobre dos",
+        "start": 2497.2,
+        "end": 2506.0
+    },
+    {
+        "text": " es lo mismo que menos fí sobre dos, es coseno de esto, coseno de fí sobre dos, menos fí sobre dos,",
+        "start": 2506.0,
+        "end": 2512.2
+    },
+    {
+        "text": " es un episodio de suro, o sea me queda menos fí sobre dos, y lo último que me queda representar",
+        "start": 2512.2,
+        "end": 2516.8399999999997
+    },
+    {
+        "text": " es el D, entonces hay que dar de igual a ceno de fí que es ceno de tita más fí sobre dos y",
+        "start": 2516.8399999999997,
+        "end": 2527.08
+    },
+    {
+        "text": " para el ceno la descomposición es, ceno de tita, coseno de fí sobre dos, que es cero más",
+        "start": 2527.08,
+        "end": 2534.3599999999997
+    },
+    {
+        "text": " coseno de tita, ceno de fí sobre dos, que es coseno de tita, que entonces primer caso,",
+        "start": 2534.36,
+        "end": 2550.44
+    },
+    {
+        "text": " para el caso uno queda, primera posibilidad para matrices ortogonales, no, a igual, esto",
+        "start": 2550.44,
+        "end": 2561.0
+    },
+    {
+        "text": " siempre es coseno de tita, ceno de tita, y acá tengo menos ceno de tita, coseno de tita,",
+        "start": 2561.0,
+        "end": 2568.76
+    },
+    {
+        "text": " esto es una primera situación, cabe preguntarse qué representa geométricamente eso, o sea una",
+        "start": 2575.76,
+        "end": 2584.56
+    },
+    {
+        "text": " matriz que acá tenga numeritos que se correspondan a coseno de tita, coseno de tita,",
+        "start": 2584.56,
+        "end": 2589.64
+    },
+    {
+        "text": " y acá se no de tita, sino de tita corresponde a una matriz ortogonal, tan mareados, no,",
+        "start": 2589.64,
+        "end": 2602.7999999999997
+    },
+    {
+        "text": " es un punto importante acá es que, ¿qué me pongo si le está matriz? Es, exactamente, una",
+        "start": 2602.7999999999997,
+        "end": 2612.64
+    },
+    {
+        "text": " cosa notar, importante fíjense que acá tengo un menos y acá tengo un ceno, o sea que acá",
+        "start": 2612.64,
+        "end": 2620.44
+    },
+    {
+        "text": " esto, los signos menos aparecen cruzados acá, esto no es una matriz simétrica, porque si",
+        "start": 2620.44,
+        "end": 2630.16
+    },
+    {
+        "text": " fue simétrica acá, acá tiene que tener lo mismo, si es una matriz ortogonal, pero puede ser",
+        "start": 2630.16,
+        "end": 2637.2799999999997
+    },
+    {
+        "text": " que no sea una matriz diagonalizable, las matricios ortogonales, a veces es un diagonalizable y a veces",
+        "start": 2637.28,
+        "end": 2643.5600000000004
+    },
+    {
+        "text": " no es un diagonalizable, pero qué corresponde eso, como me decía en Brasil, a un giro justamente",
+        "start": 2643.5600000000004,
+        "end": 2650.1200000000003
+    },
+    {
+        "text": " si usted se quiere convencer que es un giro, bueno convenzamos a ustedes bien, pero lo más fácil",
+        "start": 2650.12,
+        "end": 2671.04
+    },
+    {
+        "text": " para verificar que es un giro es ver qué pasa cuando yo le aplico esto a los elementos canónicos",
+        "start": 2671.04,
+        "end": 2678.44
+    },
+    {
+        "text": " de redos, o sea el vector 0, 1 y al 1, 0, por ejemplo si yo le aplico a al vector 1, 0,",
+        "start": 2678.44,
+        "end": 2687.6
+    },
+    {
+        "text": " puesto como columna, o sea el primer al 1, 0, a este acá, eso me da, qué me da,",
+        "start": 2690.08,
+        "end": 2701.7200000000003
+    },
+    {
+        "text": " coseno de tita, coseno de tita, justamente si yo le aplico a al primer elemento de la base canónica,",
+        "start": 2701.72,
+        "end": 2719.3199999999997
+    },
+    {
+        "text": " eso me lo manda a algo que está acá arriba, pero lo manda acá, entonces yo tiene una aglutita,",
+        "start": 2719.3199999999997,
+        "end": 2725.6
+    },
+    {
+        "text": " en efecto la primera coordenada es que esto tiene norma 1, es coseno de tita y la segunda coordenada es",
+        "start": 2726.16,
+        "end": 2731.7599999999998
+    },
+    {
+        "text": " seno de tita y por otra parte si yo le aplico a la segunda al vector de la base canónica, 0, 1,",
+        "start": 2731.7599999999998,
+        "end": 2740.0
+    },
+    {
+        "text": " qué me queda acá, Dios, estoy mareado, me queda menos seno de tita, coseno de tita,",
+        "start": 2741.12,
+        "end": 2748.44
+    },
+    {
+        "text": " claro que está ahora, pues en un caso es la primera columna y en otro caso es la segunda columna",
+        "start": 2748.44,
+        "end": 2757.8
+    },
+    {
+        "text": " y ahí si ustedes se fijan un poquito lo que estamos haciendo es a este vector lo estamos",
+        "start": 2757.8,
+        "end": 2765.04
+    },
+    {
+        "text": " mandando una aglutita para acá, en efecto la primera coordenada ahí es seno de tita negativa,",
+        "start": 2765.04,
+        "end": 2779.12
+    },
+    {
+        "text": " bueno en el caso que tita tiene el rango que tiene que lo estoy dibujando acá y la segunda coordenada",
+        "start": 2779.12,
+        "end": 2785.08
+    },
+    {
+        "text": " es coseno de tita, entonces esa transformación de este vector me lo gira a tita, a ese vector me lo",
+        "start": 2785.08,
+        "end": 2790.96
+    },
+    {
+        "text": " gira a tita para allá y eso es lo mismo con todos los vectores, es una transformación que me agarran",
+        "start": 2790.96,
+        "end": 2795.16
+    },
+    {
+        "text": " cualquier vector y me lo gira a una ángulo tita, esa es una transformación que preserva la norma,",
+        "start": 2795.16,
+        "end": 2800.48
+    },
+    {
+        "text": " preserva los productos internos, preserva los ángulos, preserva todo, lleguemos una primer tipo y",
+        "start": 2800.48,
+        "end": 2806.0
+    },
+    {
+        "text": " sometría en r2, o sea, t es una rotación en ese caso, t es una rotación, t cuya matria",
+        "start": 2806.0,
+        "end": 2819.04
+    },
+    {
+        "text": " y asociada es esta, es una rotación en agulotita, en sentido antiorario, antiorario y ahora viene la pregunta",
+        "start": 2819.04,
+        "end": 2840.52
+    },
+    {
+        "text": " cuando esa matriz o cuando esa t es diagonalizable, en general no es diagonalizable porque si tita,",
+        "start": 2840.52,
+        "end": 2853.12
+    },
+    {
+        "text": " pues que yo no tenga vectores propios, en efecto, llevar un tita por allá y la aplico t",
+        "start": 2853.12,
+        "end": 2857.28
+    },
+    {
+        "text": " y meda para allá, eso no tiene vectores propios, a no ser que tita es igual a cero o tita es igual a p,",
+        "start": 2857.28,
+        "end": 2863.8
+    },
+    {
+        "text": " tita es igual a cero y me dejo los vectores como está, tita es igual a p, me le cambia así,",
+        "start": 2863.8,
+        "end": 2868.1200000000003
+    },
+    {
+        "text": " o sea es, en un caso me queda la identidad y en otro caso me queda menos la identidad, o sea en",
+        "start": 2869.52,
+        "end": 2875.04
+    },
+    {
+        "text": " ese caso, t no es diagonalizable, no diagonalizable, excepto cuando tita es igual a cero o tita es",
+        "start": 2875.04,
+        "end": 2896.8
+    },
+    {
+        "text": " igual a p, recuerden que tita es entre cero y dos p, o sea, cualquier múltiples vea, cualquier",
+        "start": 2896.8,
+        "end": 2902.84
+    },
+    {
+        "text": " múltiples vea de p, me da, no diagonalizable, en todos los otros casos me da, no diagonalizable,",
+        "start": 2902.84,
+        "end": 2908.8
+    },
+    {
+        "text": " por favor diganle a todos los estudiantes que miran este vídeo, así después no me insulta",
+        "start": 2913.04,
+        "end": 2921.2000000000003
+    },
+    {
+        "text": " en el día del parcial, ¿qué pasa si yo aplico dos veces esta transformación lineal?",
+        "start": 2921.2000000000003,
+        "end": 2925.52
+    },
+    {
+        "text": " ¿qué pasa si yo aplico una vez y la volve a aplicar de nuevo?",
+        "start": 2925.52,
+        "end": 2931.56
+    },
+    {
+        "text": " Es como hacer la agulador, exactamente porque rototita y rototita, o sea que si aplico dos veces",
+        "start": 2931.56,
+        "end": 2939.24
+    },
+    {
+        "text": " es hacer una única rotación de agulador, tita, está claro, bueno, estoy demasiado bueno,",
+        "start": 2939.24,
+        "end": 2951.8
+    },
+    {
+        "text": " eso es porque termine el año y ya tengo ganas de salir disparando, pero falta todavía el",
+        "start": 2952.6000000000004,
+        "end": 2962.2400000000002
+    },
+    {
+        "text": " segundo caso, que es completamente distinto, vimos este caso y ahora vamos a ver este caso y van a",
+        "start": 2962.2400000000002,
+        "end": 2970.1200000000003
+    },
+    {
+        "text": " ver que salen cosas bien distintas, voy a escribir sobre esto mismo, así que voy a esperar que copien,",
+        "start": 2970.1200000000003,
+        "end": 2979.52
+    },
+    {
+        "text": " ¿eh? ya van a ver, me dicen cuando pueda borrar aquello, el caso dos, voy a ahorrar marcador y",
+        "start": 2981.8,
+        "end": 3000.92
+    },
+    {
+        "text": " vamos a escribir las cosas al camillo, podía borrar esto ¿no es cierto?",
+        "start": 3000.92,
+        "end": 3009.8
+    },
+    {
+        "text": " Bueno, el caso dos, tita, menos fíjeguala piso hredos, con lo cual fíjeguala tita menos fíjeguala",
+        "start": 3009.8,
+        "end": 3032.36
+    },
+    {
+        "text": " menos fíjeguala y ese signo menos me cambia cada un par de cosas importantes, ¿qué pasa con",
+        "start": 3032.36,
+        "end": 3043.6
+    },
+    {
+        "text": " B? ¿vera coseno de fíjeguala? salud, vera coseno de fíjeguala coseno de fíjeguala coseno de tita menos",
+        "start": 3043.6,
+        "end": 3054.6
+    },
+    {
+        "text": " fíjeguala piso hredos, ahora la forma en el coseno de fíjeguala, esto es coseno de tita,",
+        "start": 3055.22,
+        "end": 3060.68
+    },
+    {
+        "text": " coseno de menos fíjeguala que es cero fryingあぁ del adj 튀g...",
+        "start": 3060.68,
+        "end": 3071.14
+    },
+    {
+        "text": " o sea que acá viene un... no, que estoy diciendo. No, perdón, perdón.",
+        "start": 3071.14,
+        "end": 3081.7
+    },
+    {
+        "text": " ¿Cómo era esto?",
+        "start": 3088.1,
+        "end": 3091.1
+    },
+    {
+        "text": " Sí, qué...",
+        "start": 3092.9,
+        "end": 3095.7
+    },
+    {
+        "text": " Claro, es el equivalente a esto, ¿no?",
+        "start": 3095.7,
+        "end": 3102.18
+    },
+    {
+        "text": " Este coseno de... es el equivalente a esto. Coseno de... es coseno de uno, coseno del otro,",
+        "start": 3102.18,
+        "end": 3108.8599999999997
+    },
+    {
+        "text": " o sea coseno de tita, coseno de piso bredós, que cero, maseno de tita, seno de piso",
+        "start": 3108.8599999999997,
+        "end": 3114.7
+    },
+    {
+        "text": " bredós, que es uno. Perdón. Más... Sí, maseno de tita, seno de piso bredós, que es uno.",
+        "start": 3114.7,
+        "end": 3120.74
+    },
+    {
+        "text": " O sea, me queda más seno de tita. Este me queda más seno de tita. O sea, que ya los",
+        "start": 3120.74,
+        "end": 3125.02
+    },
+    {
+        "text": " que viene es un seno de tita. Antes tenía un menos, ahora tengo más. Y acá lo que viene",
+        "start": 3125.02,
+        "end": 3130.78
+    },
+    {
+        "text": " de es seno de fí, que es seno de tita, menos piso bredós, y acá viene seno de tita, coseno",
+        "start": 3130.78,
+        "end": 3146.74
+    },
+    {
+        "text": " de menos piso bredós, que es cero, más seno de tita, perdón, más coseno de tita,",
+        "start": 3146.74,
+        "end": 3157.3799999999997
+    },
+    {
+        "text": " menos seno de piso bredós, que es uno. O sea, acá viene menos coseno, me marie con",
+        "start": 3157.3799999999997,
+        "end": 3163.06
+    },
+    {
+        "text": " los signos, pero acá viene menos coseno. El seno de un asume es seno, coseno, más coseno",
+        "start": 3163.06,
+        "end": 3170.1
+    },
+    {
+        "text": " de tita, por seno, menos piso bredós, me da un menos uno. O sea, ahora el signo",
+        "start": 3170.1,
+        "end": 3178.98
+    },
+    {
+        "text": " me den, os viene acá. ¿Qué es esa segunda posibilidad? Sí. Y si viene un signo menos, antes",
+        "start": 3178.98,
+        "end": 3192.02
+    },
+    {
+        "text": " tenía un signo, antes tenía esta columna, y acá el seno coseno por signo menos estaba",
+        "start": 3192.02,
+        "end": 3196.66
+    },
+    {
+        "text": " acá. Ahora sí, no menos está acá. Y fíjense que eso es bien diferente, ¿por qué? Porque",
+        "start": 3196.74,
+        "end": 3208.18
+    },
+    {
+        "text": " ahora este elemento es igual a este, o sea esa matrices simétrica y hortobonal, si es",
+        "start": 3208.18,
+        "end": 3220.3399999999997
+    },
+    {
+        "text": " simétrica corresponde en la operada auto adjunto y siempre diagonalizable, este caso siempre",
+        "start": 3220.34,
+        "end": 3229.46
+    },
+    {
+        "text": " diagonalizable, porque la matrices simétrica y además es, no solamente que es simétrica,",
+        "start": 3229.46,
+        "end": 3236.78
+    },
+    {
+        "text": " sino que es hortobonal, no, esta matrices en este caso es asimétrica y hortobonal, en",
+        "start": 3236.78,
+        "end": 3245.54
+    },
+    {
+        "text": " este caso es asimétrica hortobonal, en particular esto significa que pasa ahí si yo hago",
+        "start": 3245.54,
+        "end": 3256.54
+    },
+    {
+        "text": " acuadrado, si le aplico dos veces. En el otro caso, aplica la dos veces hacer tita y correrme",
+        "start": 3256.54,
+        "end": 3263.94
+    },
+    {
+        "text": " dos tita. Ahora sí hago acuadrado, si le aplico dos veces, eso es, eso es a, pero es hortobonal,",
+        "start": 3263.94,
+        "end": 3273.7799999999997
+    },
+    {
+        "text": " es simétrica, perdón. Entonces, es lo mismo que ponerá por la transpuesta. Hacuadrado",
+        "start": 3274.34,
+        "end": 3280.82
+    },
+    {
+        "text": " es, H, por A, pero como es simétrica, la segunda o la como la transpuesta, pero es más como",
+        "start": 3280.82,
+        "end": 3285.86
+    },
+    {
+        "text": " hortobonal, la transpuesta es a la menos uno, o sea que esto lo mismo que ha, por a la menos",
+        "start": 3285.86,
+        "end": 3291.2200000000003
+    },
+    {
+        "text": " uno, que es la identidad. O sea que si esta, a esta operación la hago dos veces recupero",
+        "start": 3291.2200000000003,
+        "end": 3296.6200000000003
+    },
+    {
+        "text": " la identidad y basta conocer las cuentos y ver qué al cuadrado me da efectivamente la identidad.",
+        "start": 3296.6200000000003,
+        "end": 3302.9
+    },
+    {
+        "text": " Pero lo importante que como es simétrica, esta matria, diferencia del caso anterior, es diagonalizable",
+        "start": 3304.02,
+        "end": 3312.42
+    },
+    {
+        "text": " siempre.",
+        "start": 3314.42,
+        "end": 3314.92
+    },
+    {
+        "text": " Tiene una alizable siempre. Lo que me resta ver es que representa geométricamente.",
+        "start": 3322.9,
+        "end": 3328.82
+    },
+    {
+        "text": " Sentían de vieron que completamente diferente una situación de la otra. Para ver lo que significa",
+        "start": 3329.54,
+        "end": 3335.38
+    },
+    {
+        "text": " geométricamente vamos a hacer el mismo análisis que hicimos acá, notar que ahora,",
+        "start": 3335.38,
+        "end": 3339.38
+    },
+    {
+        "text": " ahora si yo le aplico a a uno cero, me da el primer elemento de la columna, me da esto que es",
+        "start": 3343.02,
+        "end": 3352.34
+    },
+    {
+        "text": " coseno de tita, seno de tita, que hasta acá lo mismo que antes, eso significa que al primer",
+        "start": 3352.34,
+        "end": 3363.26
+    },
+    {
+        "text": " elemento acá de la base canónica, al primer elemento de la base canónica acá lo rota una",
+        "start": 3363.26,
+        "end": 3372.94
+    },
+    {
+        "text": " angolotita para allá, hasta ahí todo lo mismo que antes. La sorpresa viene cuando uno le aplica",
+        "start": 3372.94,
+        "end": 3379.1800000000003
+    },
+    {
+        "text": " al otro elemento de la base canónica, al que bien diría acá. Bueno, ya hice un dibujo,",
+        "start": 3379.8999999999996,
+        "end": 3387.7
+    },
+    {
+        "text": " hace un rato que lo borre, yo le dije que el transformado de este tenía que ser ortobona",
+        "start": 3387.7,
+        "end": 3391.14
+    },
+    {
+        "text": " de este vector, que era el caso 1, pero podría ser ortobona al parecer lado, que era lo que",
+        "start": 3391.14,
+        "end": 3395.8199999999997
+    },
+    {
+        "text": " vimos recién, o podía ser ortobona al parecer el otro. Y lo que pasa ahí efectivamente es",
+        "start": 3395.8199999999997,
+        "end": 3401.54
+    },
+    {
+        "text": " que si yo le aplico a eso me viene un vector acá que es ortobona, pero que está por el",
+        "start": 3401.54,
+        "end": 3406.46
+    },
+    {
+        "text": " otro lado, ortobona la cual a este, este ángulo es 90 grados, se acuerna el dibujito que",
+        "start": 3406.46,
+        "end": 3415.44
+    },
+    {
+        "text": " sea el principio, yo tengo este lo transformo acá y a este lo tengo transformado en algo que se",
+        "start": 3415.44,
+        "end": 3421.9
+    },
+    {
+        "text": " ortobona la este para que se prohacerno los productos internos, entonces lo puede transformar en",
+        "start": 3421.9,
+        "end": 3426.38
+    },
+    {
+        "text": " este que va para allá o en este que viene para acá abajo. Bueno, lo que sale ahora es que este",
+        "start": 3426.38,
+        "end": 3431.5
+    },
+    {
+        "text": " viene para acá abajo, este viene para acá abajo. Y para convencer se hay que hacer aplicado",
+        "start": 3431.5,
+        "end": 3442.58
+    },
+    {
+        "text": " a 0 1 y eso me da la segunda columna que se no te tita, que es justamente lo que les dibujé",
+        "start": 3444.06,
+        "end": 3453.38
+    },
+    {
+        "text": " acá. Sí, tiene razón, se no te tita, coseno, copie más acá, se no tita menos coseno,",
+        "start": 3453.38,
+        "end": 3461.14
+    },
+    {
+        "text": " tita gracias. Y lo que pasa ahí es lo que les dibujé ahí recién.",
+        "start": 3461.14,
+        "end": 3464.58
+    },
+    {
+        "text": " Mira, en si yo hago, estoy agarrando, si yo agarrase el segundo vector y lo rota en un",
+        "start": 3479.14,
+        "end": 3489.5
+    },
+    {
+        "text": " ángulo tita vendría acá, pero lo estoy cambiando el signo, entonces fíjense, si vine",
+        "start": 3489.5,
+        "end": 3495.26
+    },
+    {
+        "text": " ese acá la primera entrada sería ceno de tita, porque está por este lado, pero ahora se la",
+        "start": 3495.26,
+        "end": 3504.9
+    },
+    {
+        "text": " cambio positivo, se me queda ceno de tita y la segunda entrada, que era esta que venía",
+        "start": 3504.9,
+        "end": 3511.7
+    },
+    {
+        "text": " cada coseno de tita, viene para acá abajo, que es menos coseno de tita. Bueno, definitiva,",
+        "start": 3511.7,
+        "end": 3516.22
+    },
+    {
+        "text": " este viene para que parece que viene ahí abajo. A ver, ¿qué representa eso? Fíjense,",
+        "start": 3516.22,
+        "end": 3525.58
+    },
+    {
+        "text": " ¿quíse lío o no? Esto no quedó tan claro, lo que estoy haciendo yo es, acá tengo el 1",
+        "start": 3529.8199999999997,
+        "end": 3537.08
+    },
+    {
+        "text": " o el 0, y acá tengo el 0, 1. A este lo estoy girando por allá tita y a este lo estoy",
+        "start": 3537.08,
+        "end": 3542.7599999999998
+    },
+    {
+        "text": " tirando por allá abajo. ¿Sí? ¿Qué es eso? Alguien se puede imaginar qué diablo es eso,",
+        "start": 3542.7599999999998,
+        "end": 3552.48
+    },
+    {
+        "text": " y además tiene la segunda, la siguiente propiedad, si lo aplico dos veces, volva la identidad,",
+        "start": 3552.48,
+        "end": 3557.56
+    },
+    {
+        "text": " o sea, que si aplico una vez, este viene acá y este viene acá y si lo aplico no hago,",
+        "start": 3557.56,
+        "end": 3562.4
+    },
+    {
+        "text": " si lo aplico tu viene acá y ese viene acá. Es una cimetría axial, la cimetría que me hace",
+        "start": 3562.4,
+        "end": 3568.76
+    },
+    {
+        "text": " esto, lo que me agarra. Ese vector me lo manda, este me lo manda para acá y este me lo manda",
+        "start": 3568.76,
+        "end": 3576.8
+    },
+    {
+        "text": " para acá, porque si lo aplico dos veces me da la identidad, o sea, es lo que me manda acá",
+        "start": 3576.8,
+        "end": 3581.56
+    },
+    {
+        "text": " y acá y este me lo manda para acá abajo y para acá abajo, no es algo que me agarra y",
+        "start": 3581.56,
+        "end": 3585.6600000000003
+    },
+    {
+        "text": " es algo así, si alrededor de un eje, es una cimetría axial respecto al ángulo tita",
+        "start": 3585.66,
+        "end": 3597.06
+    },
+    {
+        "text": " sobre dos, o sea, es como si yo estuviera haciendo una rotación alrededor de esto que tiene",
+        "start": 3597.06,
+        "end": 3603.2999999999997
+    },
+    {
+        "text": " ángulo tita sobre dos. Estoy haciendo una vuelta ahí, tengo el ángulo tita sobre dos",
+        "start": 3603.2999999999997,
+        "end": 3610.3799999999997
+    },
+    {
+        "text": " mil en ese ángulo y lo estoy haciendo es dando una vuelta ahí, se entiende?",
+        "start": 3610.38,
+        "end": 3614.9
+    },
+    {
+        "text": " Alguien ve eso, no se ve. O sea, que cualquier otro vector, por ejemplo, este que está por acá,",
+        "start": 3614.9,
+        "end": 3627.02
+    },
+    {
+        "text": " este vector acá, cuando yo le aplico, está, me lo manda acá, es la reflexión axial, me lo manda,",
+        "start": 3627.02,
+        "end": 3633.7400000000002
+    },
+    {
+        "text": " le da como si le diera una vuelta ahí sobre el eje, sobre el eje, estamos, esa es la otra",
+        "start": 3634.74,
+        "end": 3642.8199999999997
+    },
+    {
+        "text": " posibilidad, que es bien diferente de una rotación, eso es lo que sea una cimetría axial y eso",
+        "start": 3642.8199999999997,
+        "end": 3647.74
+    },
+    {
+        "text": " siempre es diábonalizable y tienes la propiedad que les escribiré si él. Esto es, es una cimetría axial,",
+        "start": 3647.74,
+        "end": 3656.8599999999997
+    },
+    {
+        "text": " es una cimetría axial, alrededor de el eje que pasa por el origen y tienen ángulo tita sobre dos,",
+        "start": 3656.86,
+        "end": 3672.6200000000003
+    },
+    {
+        "text": " tita sobre dos, alrededor del eje, alrededor del, perdón, es una cimetría axial,",
+        "start": 3672.62,
+        "end": 3690.5
+    },
+    {
+        "text": " alrededor de una eje de ángulo tita sobre dos, alrededor de una eje, tiene un eje que pasa por el",
+        "start": 3690.5,
+        "end": 3700.18
+    },
+    {
+        "text": " origen y tiene ángulo tita sobre dos y ese siempre es diábonalizable, siempre es diábonalizable,",
+        "start": 3700.18,
+        "end": 3724.66
+    },
+    {
+        "text": " vieron que comportamiento diferente tiene una situación de la otra, se entendió y no hay más en R2,",
+        "start": 3730.18,
+        "end": 3746.2999999999997
+    },
+    {
+        "text": " en R2 no hay más, ahora uno puede plantearse que esología de transformaciones ocurre si no",
+        "start": 3746.2999999999997,
+        "end": 3754.14
+    },
+    {
+        "text": " mira las ortobona, en R3 y ahí el universo es mucho más variado, eso está hecho, hay",
+        "start": 3754.14,
+        "end": 3760.74
+    },
+    {
+        "text": " errores de lo que se ha hecho en las notas rojas y en el libro en PDF, pues le voy a hacer un resumo",
+        "start": 3760.74,
+        "end": 3766.14
+    },
+    {
+        "text": " de las cosas que salen en R3, sin hacer ninguna cuenta, si uno trabaja en R3, las isometrías,",
+        "start": 3766.14,
+        "end": 3775.54
+    },
+    {
+        "text": " que como le digo tienen más variantes, preguntas, acuerdense de esto, acuerdense de esto.",
+        "start": 3775.54,
+        "end": 3796.66
+    },
+    {
+        "text": " Si, en el primero es lo que vimos el principio, no, en el caso para el perón, lo que pasa es que la",
+        "start": 3796.66,
+        "end": 3810.8199999999997
+    },
+    {
+        "text": " rotación, perdón, perdón, lo que pasa es que si la hace una rotación por este otro lado es lo",
+        "start": 3810.8199999999997,
+        "end": 3816.14
+    },
+    {
+        "text": " mismo hacerla toda la vuelta así, por eso estamos tomando ángulo entre es como tener una",
+        "start": 3816.14,
+        "end": 3820.66
+    },
+    {
+        "text": " rotita negativa, en definitivo, y en definitivo darle toda la vuelta por acá es exactamente lo mismo,",
+        "start": 3820.66,
+        "end": 3825.46
+    },
+    {
+        "text": " está bien se entiende? Exactamente, en el primer caso en todas las rotaciones, le llamamos",
+        "start": 3825.46,
+        "end": 3834.2999999999997
+    },
+    {
+        "text": " el sentido horario por la forma que se mide tita, lo mide por tietita y me doy toda la vuelta",
+        "start": 3834.2999999999997,
+        "end": 3839.42
+    },
+    {
+        "text": " a terceros dos p, pero obviamente si es una rotación por este lado o que ese ángulo se",
+        "start": 3839.42,
+        "end": 3843.7799999999997
+    },
+    {
+        "text": " da dos p menos eso, bien, así como cuando ofrece una reformación de reto, en R12, lo que pasa es que no es",
+        "start": 3843.78,
+        "end": 3872.02
+    },
+    {
+        "text": " cierto, no es cierto, eso no es cierto. Lo que dice es que en el caso que ese asymmetric",
+        "start": 3872.02,
+        "end": 3883.14
+    },
+    {
+        "text": " ortogonal se cumple que ha cuadrado o segue la identidad, lo que pregunta él si al cuadrado",
+        "start": 3883.14,
+        "end": 3887.02
+    },
+    {
+        "text": " hay igual identidad significa que es simetrica o ortogonal, no, si ha cuadrado igual identidad,",
+        "start": 3887.02,
+        "end": 3893.94
+    },
+    {
+        "text": " significa solamente que la inversa de A es la propiedad, pero no otra cosa, estamos?",
+        "start": 3893.94,
+        "end": 3900.78
+    },
+    {
+        "text": " En principio ni otra cosa, y al cuadrado es igual a A, si al cuadrado es igual a A, sí,",
+        "start": 3902.02,
+        "end": 3914.62
+    },
+    {
+        "text": " dejan empezar un poquito, no, para para un poco, no, se dejan, dejan, porque acá siempre",
+        "start": 3914.62,
+        "end": 3929.62
+    },
+    {
+        "text": " parece empatología, hay que pensar un poco antes de responder eso, estamos?",
+        "start": 3929.62,
+        "end": 3933.98
+    },
+    {
+        "text": " En principio diría que sí, pero quisiera pensar un poco más. Bueno, ¿qué pasa con la",
+        "start": 3933.98,
+        "end": 3951.5
+    },
+    {
+        "text": " zoología en R3? ¿Qué posibilidad es hay? En R3 las isometrías tienen más variantes,",
+        "start": 3951.5,
+        "end": 3966.26
+    },
+    {
+        "text": " las isometrías tienen más variantes, y son, hay que hacer un análisis sofisticado como",
+        "start": 3966.26,
+        "end": 3972.02
+    },
+    {
+        "text": " lo que hicimos recién, son rotaciones, agarrar un vector y rotarlo todos los retornos",
+        "start": 3972.02,
+        "end": 3980.18
+    },
+    {
+        "text": " los rotos en algún ángulo. Si metrías axiales con respecto a un eje, que fue lo que",
+        "start": 3980.18,
+        "end": 3985.34
+    },
+    {
+        "text": " vimos ahí, pero en tres dimensiones, si metrías, si metrías axiales, si son axiales",
+        "start": 3985.34,
+        "end": 3991.1
+    },
+    {
+        "text": " con respecto a un eje, o sea lo que les decía recién, fijar un eje en R3 que pase por",
+        "start": 3991.1,
+        "end": 3996.54
+    },
+    {
+        "text": " el origen y hacerle la vuelta de esa que les contaba recién. Agarró todo y luego a",
+        "start": 3996.54,
+        "end": 4001.66
+    },
+    {
+        "text": " todos los agarró del eje. Si metrías con respecto a un plano, este es toda la fauna,",
+        "start": 4001.66,
+        "end": 4016.7799999999997
+    },
+    {
+        "text": " estoy resumiendo. La si metría con respecto a un plano es lo que la imagen especular,",
+        "start": 4016.7799999999997,
+        "end": 4023.54
+    },
+    {
+        "text": " es decir, yo tengo un plano por acá, un plano que pase por el origen y a todo vector",
+        "start": 4023.54,
+        "end": 4032.34
+    },
+    {
+        "text": " lo mandamos a su imagen especular con respecto al plano. Eso es una transformación que preservan",
+        "start": 4032.34,
+        "end": 4038.62
+    },
+    {
+        "text": " hormas y por lo tanto es una isometría, de la misma manera que la si metría axial",
+        "start": 4038.62,
+        "end": 4043.7799999999997
+    },
+    {
+        "text": " para ser vanormas y es por lo tanto una isometría. Esto es, se entiende como esta es la",
+        "start": 4043.7799999999997,
+        "end": 4050.7
+    },
+    {
+        "text": " imagen especular con respecto a un plano. Y otra posibilidad es lo que se llama la",
+        "start": 4050.7,
+        "end": 4055.9399999999996
+    },
+    {
+        "text": " si metría central o cambio de signo, agarró uno por allá y lo mandó a su opuesto. Si metrías",
+        "start": 4055.9399999999996,
+        "end": 4061.22
+    },
+    {
+        "text": " central, ¿qué esto no es otra cosa que un cambio de signo? No, no, no, no, no, no, no,",
+        "start": 4061.22,
+        "end": 4087.9399999999996
+    },
+    {
+        "text": " no confundís si metrías centrales con rotaciones ni con ninguna esta. Bueno, claro, sí,",
+        "start": 4088.02,
+        "end": 4097.58
+    },
+    {
+        "text": " exactamente, es la situación más rica, a mí ya es con un aumento a la dimensión,",
+        "start": 4097.58,
+        "end": 4102.82
+    },
+    {
+        "text": " bueno, apareciendo cosa más rica, pero además una, la si metría central como decía recién",
+        "start": 4102.82,
+        "end": 4106.9800000000005
+    },
+    {
+        "text": " es, como mira, de la origen y da lo vuelta por allá, a todo lo que está acá lo de vuelta",
+        "start": 4106.9800000000005,
+        "end": 4110.9400000000005
+    },
+    {
+        "text": " por allá. Las otras son rotaciones, las otras son si metrías axiales, alrededor de un",
+        "start": 4110.94,
+        "end": 4117.5
+    },
+    {
+        "text": " eje, las otras son reflexiones especulares, pero también funciona, obviamente, componer",
+        "start": 4117.5,
+        "end": 4122.78
+    },
+    {
+        "text": " y sometrían, me da y sometrías, o sea, que composiciones de estas, también me da. Esto",
+        "start": 4122.78,
+        "end": 4132.259999999999
+    },
+    {
+        "text": " es ella, no cambian los productos internos y no cambian las normas. Sí? Terminamos. Yo",
+        "start": 4132.26,
+        "end": 4150.42
+    },
+    {
+        "text": " esperen un cachito, este es el fin del teórico, yo sé que este es un momento de inmensa alegría",
+        "start": 4150.42,
+        "end": 4158.18
+    },
+    {
+        "text": " para todo el mundo, para mí, incluido, les quiero leer un texto muy breve, muy breve",
+        "start": 4158.18,
+        "end": 4163.700000000001
+    },
+    {
+        "text": " de Kafka, está en la muralla china y que es muy apropiado, es muy apropiado y con eso terminamos.",
+        "start": 4163.700000000001,
+        "end": 4174.06
+    },
+    {
+        "text": " Esto está en la muralla china, dice, imagínense un criado, un tipo que viene en un castillo,",
+        "start": 4174.06,
+        "end": 4181.3
+    },
+    {
+        "text": " llamas suscríado, porque se quiere disparar y dice lo siguiente, por denle que fueran a buscar",
+        "start": 4181.3,
+        "end": 4186.3
+    },
+    {
+        "text": " mi caballo al establo, el criado no me comprendió, así que fui yo mismo en si ella el caballo",
+        "start": 4186.3,
+        "end": 4192.34
+    },
+    {
+        "text": " y lo monté, a lo lejos escuché el sonido de una trompeta y le pregunté al criado, ¿qué",
+        "start": 4192.34,
+        "end": 4197.34
+    },
+    {
+        "text": " significaba? Él no sabía nada, no había escuchado nada, en el portal me le tuvo y preguntó,",
+        "start": 4197.34,
+        "end": 4203.860000000001
+    },
+    {
+        "text": " ¿para dónde caba el gal señor? No lo sé, respondí, solo quiero irme de aquí, solamente",
+        "start": 4203.860000000001,
+        "end": 4209.26
+    },
+    {
+        "text": " irme de aquí, partir siempre salir de aquí, es la única manera en que puedo alcanzar",
+        "start": 4209.26,
+        "end": 4214.02
+    },
+    {
+        "text": " mi meta, así que conoce usted su meta, preguntó si respondí, lo he dicho ya, salir de",
+        "start": 4214.02,
+        "end": 4220.3
+    },
+    {
+        "text": " aquí, esa es mi meta, que todos salgan exitosos de Galdó, este, bueno, gracias, es tu",
+        "start": 4220.3,
+        "end": 4228.5
+    }
+]

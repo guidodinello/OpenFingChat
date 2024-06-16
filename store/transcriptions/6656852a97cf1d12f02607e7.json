@@ -1,0 +1,1677 @@
+[
+    {
+        "text": " Bueno vamos a comenzar la clase con un repaso de lo que vimos la semana pasada,",
+        "start": 0.0,
+        "end": 24.0
+    },
+    {
+        "text": " sobre todo que vimos al final vimos una condición necesaria y suficiente para que un operador sea diagonalizable",
+        "start": 24.0,
+        "end": 33.0
+    },
+    {
+        "text": " y hoy vamos a trabajar un poquito más sobre eso, vamos a dar otra condición para que más más sencilla de manipular para ver si un operador es diagonalizable o no.",
+        "start": 33.0,
+        "end": 45.0
+    },
+    {
+        "text": " Así que lo que teníamos es un espacio vectorial ve la dimensión de V, le llamamos N y lo que tenemos es un operador lineal de V, el teoremo que ha habíamos visto al final del curso, bueno, primero tenemos,",
+        "start": 45.0,
+        "end": 65.0
+    },
+    {
+        "text": " eso operador tiene lambda 1, lambda 2 hasta lambda R que son los valores propios y los correspondientes su espacio propio,",
+        "start": 65.0,
+        "end": 81.0
+    },
+    {
+        "text": " no, o sea, es el lambda 1, el su espacio propio suciado, este es el lambda 2, el su espacio propio suciado, etcétera, y el su espacio propio suciado aquel.",
+        "start": 81.0,
+        "end": 100.0
+    },
+    {
+        "text": " Entonces si uno hace un dibujito acá dibujo que ya habíamos hecho la clase pasada, imagínate que yo tengo el espacio vectorial ve y tengo acá los su espacio propio,",
+        "start": 101.0,
+        "end": 113.0
+    },
+    {
+        "text": " es el lambda 1, es el lambda 2, el dibujo quise la otra vez, es el lambda 3, una cosa que vimos es que la suma de su espacio es suma directa, eso es equivalente a decir que el único elemento tiene en común,",
+        "start": 113.0,
+        "end": 128.0
+    },
+    {
+        "text": " es que el espacio es el 0, el vector número, entonces lo que vimos es que T diagonalizable, si sólo si el espacio vectorial ve es suma directa de todos los su espacio propios,",
+        "start": 128.0,
+        "end": 153.0
+    },
+    {
+        "text": " bien o sea que sumándolo su espacio propio no me queda nada sin cubrir en vez y esto es lo mismo que decir, esto es si sólo si la dimensión de V que es N es igual a la suma de las dimensiones de su espacio propio,",
+        "start": 158.0,
+        "end": 180.0
+    },
+    {
+        "text": " si dimensión de Zn lambda 1 más dimensión de Zn lambda 1, o sea que ustedes agarran un operador calculan el polinomio característico usando cualquier base para representarlo,",
+        "start": 180.0,
+        "end": 204.0
+    },
+    {
+        "text": " resuelven en cuanto a las raíces, eso es en general sués ser un punto complicado, puede ser encontrar raíces en polinomio de orden N, si no es cual somos su espacio asociado, bien entonces si la dimensión de su espacio asociado suman N o si la suma de su espacio asociado es igual a V entonces T diagonalizable,",
+        "start": 204.0,
+        "end": 226.0
+    },
+    {
+        "text": " bien y hoy lo que vamos a ver es vamos a trabajar un poquito más esto y bueno vamos a obtener finalmente un nuevo resultado, una nueva condición necesaria y suficiente para que un T sea diagonalizable, que es una condición sumamente útil, que vamos a usar,",
+        "start": 226.0,
+        "end": 246.0
+    },
+    {
+        "text": " bien esto era lo último que habíamos visto, entonces para trabajar esto en más detalle vamos a considerar, vamos a retomar los dos ejemplos que habíamos visto en la clase pasada de un operador N3 que era diagonalizable y otro que no lo era para que nos sirva un poquito de guía,",
+        "start": 246.0,
+        "end": 266.0
+    },
+    {
+        "text": " entonces habíamos visto ejemplos, esto no voy a retomar las cuentas porque ya las hicimos, el primer ejemplo era voy a copiar exactamente el ejemplo que vimos, no es un operador N3 en N3, espacio vectorial real y estaba definido la siguiente manera,",
+        "start": 266.0,
+        "end": 290.0
+    },
+    {
+        "text": " TX y Z igual a 2X y menos Z menos Y más Z, bien habíamos visto que el polidomio característico de ese operador, esto lo habíamos hecho,",
+        "start": 290.0,
+        "end": 313.0
+    },
+    {
+        "text": " habíamos representado T en la base canón y que habíamos hecho Samatri, Menolanda por I de TX y Z, etcétera, habíamos visto que se podía factorizar así, 2 menos lambda al cuadrado por lambda,",
+        "start": 313.0,
+        "end": 328.0
+    },
+    {
+        "text": " o sea que acá tenemos 2 raíces, los factorizos, un factor por cada raíz, acá tenemos la raíz 2 y la raíz 0, entonces esas 2 raíces están en el cuerpo de los reales, o sea que son valores propios y ahí tenemos,",
+        "start": 329.0,
+        "end": 352.0
+    },
+    {
+        "text": " entonces lambda 1 que es el valor propio 2 y acá viene un detalle, esta es una raíz 2, le uno dice que la multiplicidad de esa raíz es 2 por este factor que es por ese exponente que aparece ahí, es como si aparecidas 2 veces el factor 2 menos lambda, bueno ese es eso,",
+        "start": 352.0,
+        "end": 371.0
+    },
+    {
+        "text": " entonces esto es lo que se llama una raíz 2, una raíz de multiplicidad 2 y después tenemos la raíz lambda 2 y igual a 0 que es una raíz simple, o sea es como si acá tengo el exponente 1 digamos,",
+        "start": 371.0,
+        "end": 390.0
+    },
+    {
+        "text": " es una raíz que tiene multiplicidad 1 y dejen más escribir aunque sea redundante 1, 1 puesto ahí, o sea la multiplicidad de la primera raíz es 2,",
+        "start": 390.0,
+        "end": 409.0
+    },
+    {
+        "text": " es este exponente, la multiplicidad de segunda es 1 que se esté exponente, y además vimos eso es lo que se refiere las multiplicidades de los valores propios,",
+        "start": 409.0,
+        "end": 417.0
+    },
+    {
+        "text": " cuando calculamos los subespacios propios, vimos además que no los voy a escribir de nuevo, los subespacios probimos que el subespacio asociado a 2, tiene dimensión 2 y vimos que el espacio asociado a 0 tiene dimensión 1,",
+        "start": 417.0,
+        "end": 440.0
+    },
+    {
+        "text": " justamente la suma de estas dimensiones es 3, la dimensión del espacio vectorial que estoy trabajando, o sea que efectivamente 3 diagonalizable y puedo construir una base de vectores propios,",
+        "start": 441.0,
+        "end": 453.0
+    },
+    {
+        "text": " eligiendo 2 vectores niñales independientes en ese 2 y un tercero en ese 0 y ahí tengo una base que me diagonaliza a t,",
+        "start": 453.0,
+        "end": 460.0
+    },
+    {
+        "text": " si, ese fue el primer ejemplo que habíamos visto, y el segundo ejemplo para que podamos comparar,",
+        "start": 460.0,
+        "end": 470.0
+    },
+    {
+        "text": " yo ya había comentado de esto la clase pasada, no sé si puedo borrar acá un poco, sí, puede borrar esto ya,",
+        "start": 470.0,
+        "end": 479.0
+    },
+    {
+        "text": " el segundo ejemplo era también un ejemplo NR3, lo voy a escribir al lado para que quede clara la comparación,",
+        "start": 480.0,
+        "end": 495.0
+    },
+    {
+        "text": " en este caso teníamos que t de quizeta, era si no me acuerdo, era 12xz, le sumábamos un z al primer entrada,",
+        "start": 496.0,
+        "end": 511.0
+    },
+    {
+        "text": " entre acá y las 2 quedaban iguales, y menos z y menos z y menos y más z, y ahí habíamos visto que el polinomio característico era exactamente el mismo,",
+        "start": 511.0,
+        "end": 530.0
+    },
+    {
+        "text": " todo menos lambda al cuadrado, lambda la 1, lo escriban que es intracendente y relevante, y por lo tanto los valores propios como allá",
+        "start": 530.0,
+        "end": 544.0
+    },
+    {
+        "text": " son el lambda igual a 2, multiplicidad 2 y el lambda igual a 0 multiplicidad 1, eres exactamente lo mismo que esto,",
+        "start": 544.0,
+        "end": 565.0
+    },
+    {
+        "text": " lo que sí cambiaban ese ejemplo eran los subespacios asociados, y en particular teníamos espacios con dimensión diferente, y teníamos entonces que",
+        "start": 565.0,
+        "end": 586.0
+    },
+    {
+        "text": " la dimensión de z2 en este caso es 1 y la dimensión de z0 en este caso, bueno, también es 1 y por lo tanto tenemos que sumando z2 más z0,",
+        "start": 587.0,
+        "end": 601.0
+    },
+    {
+        "text": " sumando los subespacios propios no podemos llegar a cubrir R3, por lo tanto ahí no es diagonalizada, no puedo construir una base de lectores propios,",
+        "start": 601.0,
+        "end": 612.0
+    },
+    {
+        "text": " estamos esto lo diemos visto la clase pasada, entonces el resumiendo tengo dos ejemplos muy parecidos, los dos tienen el mismo polinomio característico,",
+        "start": 617.0,
+        "end": 633.0
+    },
+    {
+        "text": " por lo tanto las mismas raíces con la misma multiplicidad, pero cambian acá las dimensiones de los subespacios asociados, y cuál es la clave, lo viéndese y pando lo que vamos a ver en la clase de hoy,",
+        "start": 633.0,
+        "end": 645.0
+    },
+    {
+        "text": " la clave es estudiar, este numerito, esta dimensión que es lo que se llama dimensión geométrica, es la dimensión de un espacio vectorial, y este numerito que es la multiplicidad, lo que se llama la multiplicidad geográfica de una raíz,",
+        "start": 646.0,
+        "end": 662.0
+    },
+    {
+        "text": " esto nos sugiere estudiar estas multiplicidades, son las mismas multiplicidades algebraicas de cada valor propio y estas dimensiones que son las multiplicidades geométricas de cada valor propio,",
+        "start": 663.0,
+        "end": 675.0
+    },
+    {
+        "text": " está claro, entonces lo que vamos a probar en la clase de hoy es que un operador es diagonalizable, sí solo sí, primero, toda su raíz está en el cuerpo,",
+        "start": 675.0,
+        "end": 687.0
+    },
+    {
+        "text": " es que si trabajan en espacios vectoriales reales y mesales reyes complejas, no va a ser una disable, y si además las multiplicidades algebraicas y geométricas de cada raíz coincide,",
+        "start": 687.0,
+        "end": 702.0
+    },
+    {
+        "text": " eso va a ser lo que vamos a probar en la clase de hoy, bueno, es un resultado lindo, mucho más lindo que los que vimos la clase pasada,",
+        "start": 702.0,
+        "end": 715.0
+    },
+    {
+        "text": " pero para eso vamos a empezar definiendo la definición de lo que es la multiplicidad algebraica y la multiplicidad geométrica de las raizas,",
+        "start": 715.0,
+        "end": 727.0
+    },
+    {
+        "text": " bueno, preguntas hasta acá, eso va a ser lo que vamos a probar en la clase de hoy,",
+        "start": 727.0,
+        "end": 737.0
+    },
+    {
+        "text": " que en principio no nos debería llevar mucho tiempo, así que si sobra tiempo lo vamos a usar para consulta,",
+        "start": 737.0,
+        "end": 745.0
+    },
+    {
+        "text": " bueno, entonces vamos a empezar con las definiciones,",
+        "start": 745.0,
+        "end": 764.0
+    },
+    {
+        "text": " como siempre tenemos, una operador ideal de V&B, la dimensión de BZ, en esto ya estoy cansado de escribirlo,",
+        "start": 776.0,
+        "end": 799.0
+    },
+    {
+        "text": " y lo que tengo es lambda un valor propio, es decir, una raíz característica de tener el cuerpo en el que estamos trabajando,",
+        "start": 800.0,
+        "end": 817.0
+    },
+    {
+        "text": " empezamos definiendo la multiplicidad geométrica de lambda,",
+        "start": 817.0,
+        "end": 842.0
+    },
+    {
+        "text": " la multiplicidad geométrica es el valor propio que es algo que vamos a notar, e, m, a, de lambda,",
+        "start": 843.0,
+        "end": 856.0
+    },
+    {
+        "text": " si ustedes saben que por el teorema fundamental de la A y que ahora lo que se llama,",
+        "start": 856.0,
+        "end": 885.0
+    },
+    {
+        "text": " lo que se llama es que tenemos fundamental de la A y que ahora con un no tiene un polinomio, de grado N,",
+        "start": 885.0,
+        "end": 890.0
+    },
+    {
+        "text": " ese polinomio, si yo cuento las raizes con su multiplicidad, tiene raizes, que pueden ser reales o complejas,",
+        "start": 890.0,
+        "end": 899.0
+    },
+    {
+        "text": " bueno, la multiplicidad de cada raíz es lo que se llama la multiplicidad geográfica del valor propio,",
+        "start": 899.0,
+        "end": 907.0
+    },
+    {
+        "text": " y por otra parte la multiplicidad geométrica de lambda,",
+        "start": 907.0,
+        "end": 919.0
+    },
+    {
+        "text": " que es lo que le vamos a llamar, m, g, el teorema de la multiplicidad geométrica de lambda,",
+        "start": 920.0,
+        "end": 929.0
+    },
+    {
+        "text": " es la dimensión de su espacio propio, suciedad de lambda,",
+        "start": 929.0,
+        "end": 935.0
+    },
+    {
+        "text": " si, acá en los ejemplos, bueno como dije recién esta raíz 2, este valor propio 2 tiene multiplicidad geográfica 2,",
+        "start": 935.0,
+        "end": 950.0
+    },
+    {
+        "text": " multiplicidad geométrica 1, este tiene el cero tiene 1 y 1, y acá el cero tiene 1 y 1,",
+        "start": 950.0,
+        "end": 957.0
+    },
+    {
+        "text": " y la raíz 2 tiene multiplicidad geográfica 2 y geométrica 2, en este caso coinciden la geométrica en este caso no,",
+        "start": 957.0,
+        "end": 968.0
+    },
+    {
+        "text": " entonces vamos a probar un primero, una, una es igualdad que se cumple entre estas multiplicidades y después",
+        "start": 968.0,
+        "end": 976.0
+    },
+    {
+        "text": " el resultado que las anuncias así, preguntas, bien, entonces vamos a la primera proposición que nos va a servir para probar el resultado final",
+        "start": 976.0,
+        "end": 998.0
+    },
+    {
+        "text": " y si yo consiguiera un valor propio, acá le voy a llamar lambda 0, porque para no confundir a veces a lambda se le llama a la raíz y a veces se le llama la variable,",
+        "start": 999.0,
+        "end": 1011.0
+    },
+    {
+        "text": " y ahora la variable el porino, bueno acá le voy a llamar lambda 0 para que me haya posibilidad de confusión,",
+        "start": 1011.0,
+        "end": 1016.0
+    },
+    {
+        "text": " si lambda 0 es valor propio de T, entonces T traben un espacio de inmensión N, entonces se cumple lo siguiente,",
+        "start": 1016.0,
+        "end": 1033.0
+    },
+    {
+        "text": " la multiplicidad geométrica de lambda 0 es mayor igual que 1, es menor igual que la multiplicidad geográfica y esto es menor igual que N,",
+        "start": 1033.0,
+        "end": 1049.0
+    },
+    {
+        "text": " si me da una es igualdad general entre este numerito y este, me dice que en general este es menor igual que este,",
+        "start": 1050.0,
+        "end": 1062.0
+    },
+    {
+        "text": " no puede ser más grande y bueno que esto está costado por 1 por abajo y que esto está costado por N por arriba que esos son cosas triviales,",
+        "start": 1062.0,
+        "end": 1071.0
+    },
+    {
+        "text": " bien entonces vamos a la demostración de esto, primero bueno es trivial probamos escribir, ¿por qué se cumple esto?",
+        "start": 1072.0,
+        "end": 1083.0
+    },
+    {
+        "text": " que la multiplicidad geométrica de lambda 0 es mayor igual que 1, claro, no, guarda que la geométrica, como es valor propio al menos hay un vector propio",
+        "start": 1083.0,
+        "end": 1097.0
+    },
+    {
+        "text": " y si al menos un vector propio, associate lambda 0 quiere decir que su espacio propio al menos tiene inmensión 1, porque hay uno distinto de 0 y por lo menos digamos si yo multiplico ese por cualquier escalar sigo teniendo vectores propios,",
+        "start": 1098.0,
+        "end": 1112.0
+    },
+    {
+        "text": " o sea que esta dimensión es mayor igual que 1, está claro, esto es obvio, la otra condición, ¿por qué la multiplicidad geográfica de lambda 0?",
+        "start": 1112.0,
+        "end": 1126.0
+    },
+    {
+        "text": " es menor igual que N, a ello me tengo que ir al polinomio característico, en el polinomio característico yo voy a tener entonces un lambda a menos lambda 0, lambda 0 a menos lambda a una potencia acá, pero este un polinomio de grado N,",
+        "start": 1126.0,
+        "end": 1141.0
+    },
+    {
+        "text": " por lo tanto esta potencia no puede ser mayor que N, estamos de acuerdo, porque tengo un polinomio justamente de grado N, entonces esto también es obvio,",
+        "start": 1141.0,
+        "end": 1152.0
+    },
+    {
+        "text": " lo que no es obvio bueno más o menos es esta, que es la que vamos a probar ahora, esta es entonces porque lambda 0 es valor propio y por lo tanto su su espacio propio tiene al menos dimensión 1 y esta es porque lambda 0 es raíz de un polinomio de grado N, por lo tanto su multiplicidad puede ser a lo su mujer,",
+        "start": 1152.0,
+        "end": 1180.0
+    },
+    {
+        "text": " y la del medio como la probamos, esta demostración es bastante linda, en el libro en el libro Rojo está tachado otra manera, como la vez hablaba es mucho más sencilla que lo que está hecho en el libro Rojo,",
+        "start": 1180.0,
+        "end": 1202.0
+    },
+    {
+        "text": " recuerden que estoy siguiendo las notas que están ahí en Eva, en el complemento de diagonalización.",
+        "start": 1202.0,
+        "end": 1209.0
+    },
+    {
+        "text": " Entonces veamos que siempre se cumple que la multiplicidad geometrica lambda 0 es menor igual que la multiplicidad algebraica lambda 0, esto tiene que ver repito con la raíz de un polinomio con el orden,",
+        "start": 1209.0,
+        "end": 1237.0
+    },
+    {
+        "text": " la multiplicidad y esto con la dimensión de su espacio propio y sociado, como hacemos vamos a notar para simplificar la notación, le vamos a llamar a la multiplicidad geometrica de esta,",
+        "start": 1237.0,
+        "end": 1254.0
+    },
+    {
+        "text": " la multiplicidad geometrica de lambda 0 que por definición justamente es la dimensión de su espacio propio y sociado de lambda 0.",
+        "start": 1254.0,
+        "end": 1268.0
+    },
+    {
+        "text": " Y vamos a considerar, entonces yo tengo la dimensión es en lambda 0, es en lambda 0, su espacio propio y sociado de lambda 0 tiene dimensión m, por lo tanto voy a considerar una base acá que tiene m elementos y todos ellos son vectores propios, asociados al lambda 0.",
+        "start": 1268.0,
+        "end": 1287.0
+    },
+    {
+        "text": " Entonces vamos a considerar, ve 1, ve 2 hasta ve m, una base de su espacio propio es el lambda 0.",
+        "start": 1287.0,
+        "end": 1306.0
+    },
+    {
+        "text": " Vamos, insí, repito es un espacio de dimensión m, por lo tanto va a una base y todos los elementos de la base por ser vectores propios,",
+        "start": 1306.0,
+        "end": 1323.0
+    },
+    {
+        "text": " bueno todos los elementos de la base van a ser vectores propios, porque es puertar acá, sí entonces fíjense que se cumple entonces,",
+        "start": 1323.0,
+        "end": 1332.0
+    },
+    {
+        "text": " que te he aplicado a cada uno de estos vectores de la base es lambda 0 por el correspondiente vector que estoy considerando,",
+        "start": 1333.0,
+        "end": 1342.0
+    },
+    {
+        "text": " esos porque todos son vectores propios, asociados al lambda 0, estamos y esto es para todo y desde 1 hasta n.",
+        "start": 1342.0,
+        "end": 1351.0
+    },
+    {
+        "text": " Entonces tengo el espacio vectorial ve y tengo un valor propio de lambda 0 y tengo el su espacio correspondiente,",
+        "start": 1351.0,
+        "end": 1372.0
+    },
+    {
+        "text": " bueno hay un caso tribiado en el cual es el lambda 0 coincide con ve en ese caso obviamente, bueno es fácil ver que la multiplicidad que hay que",
+        "start": 1373.0,
+        "end": 1384.5
+    },
+    {
+        "text": " lambda 0 tiene que ser n y que el de multiplicidad es comércio también es n, eso es un caso tribiado, pero vamos a suponer que no, que esto está contenido en ve pero que no llega a curir todo ve.",
+        "start": 1384.5,
+        "end": 1394.0
+    },
+    {
+        "text": " Entonces lo que voy a hacer es yo tengo una base acá y la voy a completar hasta tener una base de ve, estamos,",
+        "start": 1394.0,
+        "end": 1401.0
+    },
+    {
+        "text": " entonces completamos, completamos la base, completamos hasta obtener una base de ve,",
+        "start": 1401.0,
+        "end": 1413.0
+    },
+    {
+        "text": " entonces en ese caso hubiera tenido una base que la voy ordenando de la siguiente manera, los primeros sénme eventos van a hacer eso,",
+        "start": 1431.0,
+        "end": 1457.0
+    },
+    {
+        "text": " los van a hacer eso, los de la base de lambda 0, todos estos están en ese lambda 0 y los restantes, bueno los delijo para que me formen una base en el espacio de esta dimensionel,",
+        "start": 1457.0,
+        "end": 1475.0
+    },
+    {
+        "text": " si esto acá es una base del espacio vectorial ve, no importa esplicitamente cuál son esos factores que estoy arregando,",
+        "start": 1475.0,
+        "end": 1488.0
+    },
+    {
+        "text": " simplemente los agrego acá, arranco con una base acá y la completo poniendo una base acá hasta obtener una base de ve,",
+        "start": 1488.0,
+        "end": 1497.0
+    },
+    {
+        "text": " y ahora fíjense lo que pasa entonces yo voy a representar T en esa base y voy a ver qué forma tiene.",
+        "start": 1497.0,
+        "end": 1507.0
+    },
+    {
+        "text": " Voy a considerar entonces la martrisa sociedad T en esta base, que la obtengo arrancando con una base de su espacio propia de lambda 0 y completándola.",
+        "start": 1528.0,
+        "end": 1541.0
+    },
+    {
+        "text": " Entonces arranquemos acá representar, me están siguiendo, empecemos acá representar, cuando represento T en esta base tengo que aplicarle T al primer vector V1 y a ese resultado descomponerlo con combinación y señal de eso,",
+        "start": 1542.0,
+        "end": 1557.0
+    },
+    {
+        "text": " ahora T en V1 que me da, por ser V1 vector propia sociedad lambda 0 me da lambda 0 por V1, entonces si yo lo descompongo a T en V1 en esta base me va a quedar lambda 0 por este,",
+        "start": 1558.0,
+        "end": 1571.0
+    },
+    {
+        "text": " masero masero masero masero masero, si cuengo eso acá las coordenadas acá me va a quedar lambda 0 en el primero, 0, 0, 0 etc. hasta acá abajo,",
+        "start": 1571.0,
+        "end": 1582.0
+    },
+    {
+        "text": " estamos, si yo aplico ahora T en V2 y lo descompongo en esta base para colgar acá las coordenadas T aplico de V2 es lambda 0 por V2,",
+        "start": 1583.0,
+        "end": 1603.0
+    },
+    {
+        "text": " el mismo lambda 0, o sea que si lo descompongo va a ser 0 por V1 mas lambda 0 por V2 etc.",
+        "start": 1604.0,
+        "end": 1610.0
+    },
+    {
+        "text": " si cuengo las coordenadas va a ser 0 acá lambda 0 acá 0 0 0 0 0 hasta el 0 acá.",
+        "start": 1610.0,
+        "end": 1618.0
+    },
+    {
+        "text": " y así sigo hasta el último, T en V1 va a ser lambda 0 por V1 si cuengo las coordenadas cuando descompongo en esta base me va a quedar 0 0 0 0 hasta que el último,",
+        "start": 1619.0,
+        "end": 1633.0
+    },
+    {
+        "text": " digo el número M me va a quedar lambda 0 la coordenada M y el resto todo va a ser.",
+        "start": 1633.0,
+        "end": 1638.0
+    },
+    {
+        "text": " todo va a ser, todavía no termine, me falta aplicar de este a los otros, pero lo que forme hasta acá es acá arriba una matriz cuadrada de que está a maño,",
+        "start": 1638.0,
+        "end": 1654.0
+    },
+    {
+        "text": " M por M porque tengo las M primeras coordenadas acá y los M primeros vectores acá",
+        "start": 1654.0,
+        "end": 1661.0
+    },
+    {
+        "text": " y esa matriz es muy parecida la identidad, es una matriz diagonal donde todos los elementos de la zona son lambda 0 o sea es lambda 0 por la identidad",
+        "start": 1662.0,
+        "end": 1673.0
+    },
+    {
+        "text": " y lo que tengo después bueno otra voz punto importante que lo tengo acá para abajo es todo 0 y lo que tengo después,",
+        "start": 1673.0,
+        "end": 1683.0
+    },
+    {
+        "text": " bueno no sé esplicitamente cuanto vale porque no conozco esplicitamente que son estos vectores, pero le voy a llamar a lo que tengo estelado",
+        "start": 1683.0,
+        "end": 1690.0
+    },
+    {
+        "text": " a este pedazo le voy a llamar X una matriz y este pedazo le voy a llamar Y otra matriz",
+        "start": 1690.0,
+        "end": 1700.0
+    },
+    {
+        "text": " que dimensiones tienen esas matrices bueno esta será este tiene tamaño acá M menos N exactamente pero N menos N que estoy diciendo",
+        "start": 1701.0,
+        "end": 1716.0
+    },
+    {
+        "text": " N menos M lo que me falta agregar para completar M y acá tiene tamaño M esta matriz no va a jugar ningún papel y la que tengo acá es una matriz cuadrada",
+        "start": 1717.0,
+        "end": 1731.0
+    },
+    {
+        "text": " esta puede ser no ser cuadrada pues puede ser cualquier cosa pero la que tengo aquel mismo que esta no es realmente cuadrada y lo que tengo acá es una matriz cuadrada",
+        "start": 1731.0,
+        "end": 1740.0
+    },
+    {
+        "text": " de tamaño de nuevo el mismo me estoy confuñando las letras de tamaño N menos M por N menos N",
+        "start": 1747.0,
+        "end": 1759.0
+    },
+    {
+        "text": " N es la dimensión del espacio B y N es la dimensión del espacio",
+        "start": 1764.0,
+        "end": 1768.0
+    },
+    {
+        "text": " vamos a ponerle acá N menos M y N menos N",
+        "start": 1777.0,
+        "end": 1788.0
+    },
+    {
+        "text": " entonces a esta matriz la matriz sociedad T en la base B que estoy considerando le voy a llamar A",
+        "start": 1789.0,
+        "end": 1802.0
+    },
+    {
+        "text": " y si yo quiero calcular los valores propios DT tengo que hacer lo que hacemos siempre a menos lambda por I el determinante E",
+        "start": 1802.0,
+        "end": 1812.0
+    },
+    {
+        "text": " Pien por eso justamente le llame lambda 0 al valor propio para no confundir con lambda que es la variable del polínomo característico",
+        "start": 1813.0,
+        "end": 1828.0
+    },
+    {
+        "text": " si entonces lo que hacemos ahora es a menos lambda por I que me va a quedar",
+        "start": 1829.0,
+        "end": 1844.0
+    },
+    {
+        "text": " a ver en esta parte cuadrada voto que restarle lambda a todos los elementos de diagonal y el resto me queda como estaba",
+        "start": 1844.0,
+        "end": 1856.0
+    },
+    {
+        "text": " en la parte cuadrada al principio me va a quedar lambda 0 menos lambda lambda 0 menos lambda toda la diagonal lambda 0 menos lambda",
+        "start": 1856.0,
+        "end": 1868.0
+    },
+    {
+        "text": " estoy dibujando la el primer cuadradito que tengo ya arriba y en el resto todo 0",
+        "start": 1869.0,
+        "end": 1879.0
+    },
+    {
+        "text": " lambda 0 menos lambda el resto todo 0 acá abajo me queda todo 0 todos los elementos son 0",
+        "start": 1883.0,
+        "end": 1891.0
+    },
+    {
+        "text": " acá arriba me queda de X, una pregunta acá arriba me queda X porque ¿y como está fuera la diagonal?",
+        "start": 1891.0,
+        "end": 1897.0
+    },
+    {
+        "text": " no tengo nada los elementos de diagonal están acá y abajo sí tengo que poner en la matriz que me queda ahí que tengo que poner y menos lambda en todos los elementos de diagonal y eso lo vamos a escribir de manera compacta la siguiente manera",
+        "start": 1898.0,
+        "end": 1915.0
+    },
+    {
+        "text": " eso es la matriz C que es una matriz de tamaño N menos M cuadrada menos lambda y acá voy a poner la identidad pero ¿qué identidad? ¿de qué tamaño N menos 7?",
+        "start": 1915.0,
+        "end": 1927.0
+    },
+    {
+        "text": " estamos exactamente a esta parte así le tengo que restar acá el elemento le voy a dar una lambda y eso es como poner esta matriz C menos lambda por la matriz identidad de dimensión N menos L",
+        "start": 1927.0,
+        "end": 1940.0
+    },
+    {
+        "text": " al resto de la lambda yo los puse acá arriba",
+        "start": 1941.0,
+        "end": 1944.0
+    },
+    {
+        "text": " bueno y ahora ¿qué hacemos? ¿a qué vamos a acudir a un resultado que ustedes han visto en galuno? Seguramente estaban los prácticos de galuno",
+        "start": 1950.0,
+        "end": 1961.0
+    },
+    {
+        "text": " se acuerda de cuando uno tiene una matriz 2 por 2 una matriz de la forma que tenga esta forma A B C y acá un 0 obviamente es una tu piel lo que voy a decir",
+        "start": 1962.0,
+        "end": 1974.0
+    },
+    {
+        "text": " el determinante esta matriz es A por B este 0 me anula todo lo que tenga que ver con la estáh y arriba ¿no? Es una tu piel lo que voy a decir",
+        "start": 1974.0,
+        "end": 1985.0
+    },
+    {
+        "text": " pero cuando uno tiene una matriz no tiene una matriz que la puede vivir en parte donde acá hay una parte que le vamos a llamar",
+        "start": 1986.0,
+        "end": 1997.0
+    },
+    {
+        "text": " no le puedo llamar a minúsculo le vamos a llamar B y esta es una matriz cuadrada",
+        "start": 1997.0,
+        "end": 2005.0
+    },
+    {
+        "text": " por lo tanto acá tengo una matriz C que también es una matriz cuadrada",
+        "start": 2006.0,
+        "end": 2012.0
+    },
+    {
+        "text": " acá tengo D y acá tengo una matriz identicamente 0 hay una fórmula por el determinante que es entre comillas el equivalente a este",
+        "start": 2012.0,
+        "end": 2022.0
+    },
+    {
+        "text": " entre comillas digo porque estas matrices no se le da a meter su matriz cuadrada y por lo tanto no tiene un determinante",
+        "start": 2022.0,
+        "end": 2028.0
+    },
+    {
+        "text": " pero estas sí son cuadradas lo que te poniendo ¿qué es que compráis?",
+        "start": 2028.0,
+        "end": 2033.0
+    },
+    {
+        "text": " sí pero sí guarda pero no no no no eso no vale porque por empezar esta matriz puede no ser cuadrada",
+        "start": 2033.0,
+        "end": 2047.0
+    },
+    {
+        "text": " porque si esto por ejemplo acá si yo le agrego fíjense acá acá esto tiene tamaño M a lo mejor yo estoy agregando",
+        "start": 2047.0,
+        "end": 2055.0
+    },
+    {
+        "text": " dos vectores para completar la base entonces esto sería M y le estoy agregando 2 de estos sería la matriz de 5 por 2",
+        "start": 2055.0,
+        "end": 2062.0
+    },
+    {
+        "text": " esta cuadrada y esta cuadrada pero estas y estas no necesariamente lo que sí se sabe que esta es todo 0",
+        "start": 2063.0,
+        "end": 2069.0
+    },
+    {
+        "text": " es exacto eso lo vieron en ágeo 1 debe estar en un práctico a la egeo 1 cuando no tiene una matriz con esta forma",
+        "start": 2069.0,
+        "end": 2079.0
+    },
+    {
+        "text": " digamos el determinante de a igual esto solamente vale cuando yo tengo una matriz de esta forma",
+        "start": 2079.0,
+        "end": 2085.0
+    },
+    {
+        "text": " ese es el equivalente a esto el repito entre comillas es como hacer el determinante de esto por el determinante de esto",
+        "start": 2085.0,
+        "end": 2092.0
+    },
+    {
+        "text": " y esto no aporta nada esto se cumple el determinante de b por el determinante de c",
+        "start": 2092.0,
+        "end": 2098.0
+    },
+    {
+        "text": " esto lo hemos visto lo han visto en ágeo 1",
+        "start": 2098.0,
+        "end": 2104.0
+    },
+    {
+        "text": " se entendió ¿qué me preguntó por qué si es cuadrada o no se entendió que no es cuadrada esa ¿no?",
+        "start": 2105.0,
+        "end": 2112.0
+    },
+    {
+        "text": " en general esto no es cuadrada esta sí es cuadrada y esta sí es cuadrada lo importante que tengo",
+        "start": 2112.0,
+        "end": 2118.0
+    },
+    {
+        "text": " algo acá que es todo 0 entonces en este caso se cumple",
+        "start": 2118.0,
+        "end": 2127.0
+    },
+    {
+        "text": " entonces que si yo hago el polinomio característico de T donde la varió la hora es lambda eso sería el determinante de a menos lambda por I",
+        "start": 2131.0,
+        "end": 2140.0
+    },
+    {
+        "text": " que es y a ver pongamos el nombre acá esto leamos esta matriz cuadrada le voy a llamar ceta por un momento",
+        "start": 2140.0,
+        "end": 2153.0
+    },
+    {
+        "text": " esa matriz cuadrada le voy a llamar ceta entonces el determinante de esta matriz como es cuadrada y acá tengo 12",
+        "start": 2153.0,
+        "end": 2161.0
+    },
+    {
+        "text": " estos cuadrados y estos cuadrados ahí tengo determinante de ceta por determinante de I menos lambda por identidad N",
+        "start": 2161.0,
+        "end": 2174.0
+    },
+    {
+        "text": " y que es el determinante de ceta el determinante de ceta como ceta es una matriz diagonal y todos los elementos le aún hace repiten el determinante de esto es esto por esto por esto por esto",
+        "start": 2174.0,
+        "end": 2200.0
+    },
+    {
+        "text": " o sea lambda 0 menos lambda a la potencia M o sea que el primero es lambda 0 menos lambda a la potencia M donde M era la dimensión de su espacio lambda 0 y lo que tengo ahí abajo esto yo no sé lo que",
+        "start": 2200.0,
+        "end": 2224.0
+    },
+    {
+        "text": " pero sí sé que es un polinomio característico porque es un polinomio de la forma una matriz cuadrada menos lambda por identidad del determinante de esto esto es un polinomio característico",
+        "start": 2224.0,
+        "end": 2253.0
+    },
+    {
+        "text": " N menos M por N menos M que justamente el polinomio característico de esta matriz que tengo acá y eso es justamente entonces un polinomio de la función P de lambda que justamente un polinomio característico de una matriz tamaño N menos M por N menos M",
+        "start": 2254.0,
+        "end": 2283.0
+    },
+    {
+        "text": " ya terminamos se entendió hasta acá ahora la pregunta es fíjense lambda 0 esto es un polinomio característico de grado N menos M ahora lambda 0 podría ser raíz de ese polinomio",
+        "start": 2283.0,
+        "end": 2310.0
+    },
+    {
+        "text": " no podría ser lo no podría ser si lambda 0 no fue ese raíz de ese polinomio entonces la multiplicidad lambda 0 como raíz del polinomio característico original es M es lo que tengo acá y si lambda 0 es raíz del polinomio característico",
+        "start": 2310.0,
+        "end": 2330.0
+    },
+    {
+        "text": " este entonces acá me va a quedar M más algo o sea va a ser más grande todavía o sea que la multiplicidad que braica va a ser mayor igual que M",
+        "start": 2330.0,
+        "end": 2341.0
+    },
+    {
+        "text": " repito el polinomio característico del problema de operador en el cual estamos interesados factoriza así lambda 0 menos lambda la M",
+        "start": 2341.0,
+        "end": 2356.0
+    },
+    {
+        "text": " lambda 0 sabemos que es valor propio por el hecho sabemos que la dimensión es un espacio propios o sea los M por tanto sabemos que raíz y tengo lambda 0 menos lambda la M",
+        "start": 2356.0,
+        "end": 2365.0
+    },
+    {
+        "text": " y eso está multiplicado por otro polinomio ahí en lambda que es de orden N menos M ahora si yo estuyo por separado de ese otro polinomio",
+        "start": 2365.0,
+        "end": 2373.0
+    },
+    {
+        "text": " ese polinomio podría ser que lambda 0 fue ese raíz o que no lo fuera si lambda 0 no es raíz de esto yo lo facturizan sus productos",
+        "start": 2373.0,
+        "end": 2383.0
+    },
+    {
+        "text": " cada producto por su raíz correspondiente acá me quedaría lambda 0 como la utilidad M pero si acá lambda 0 fue ese raíz de esto",
+        "start": 2383.0,
+        "end": 2391.0
+    },
+    {
+        "text": " a ver acá me ha quedado un factor por lo menos lambda 0 menos lambda a la alguna potencia que si yo la sumo a esto me va a quedar entonces una utilidad que braica mayor igual que M",
+        "start": 2391.0,
+        "end": 2402.0
+    },
+    {
+        "text": " entonces más aún si ustedes recuerdan el ejemplo 2 que vimos se acuerdan que el ejemplo 2 tenía su espacio propio",
+        "start": 2403.0,
+        "end": 2417.0
+    },
+    {
+        "text": " social valor propio 2 tenía un solo vector propio dimensión 1 entonces es como si acá yo tuviera un único vector",
+        "start": 2417.0,
+        "end": 2426.0
+    },
+    {
+        "text": " propio y acá tendría un 2 menos lambda que me sale desde de ese de ese primera columna y pero esta acá también tiene un a raíz 2",
+        "start": 2426.0,
+        "end": 2437.0
+    },
+    {
+        "text": " pues si ustedes se se fijan la raíz 2 en los ejemplos estamos viendo el raíz 2 y sin embargo su espacio propio se dedote y a inmeció 1",
+        "start": 2437.0,
+        "end": 2447.0
+    },
+    {
+        "text": " o sea que con este razonamiento el factor 2 menos lambda parecería acá con 1 y también aparecería como raíz de esto",
+        "start": 2447.0,
+        "end": 2457.0
+    },
+    {
+        "text": " entonces lo que tenemos es que la multiplicidad de la raíz lambda 0 es M o más grande que M",
+        "start": 2457.0,
+        "end": 2472.0
+    },
+    {
+        "text": " a ver vamos a escribir esto por inomio en lambda en lambda de grado Nm no Cm",
+        "start": 2472.0,
+        "end": 2484.0
+    },
+    {
+        "text": " lambda 0 puede ser raíz y por inomio",
+        "start": 2484.0,
+        "end": 2491.0
+    },
+    {
+        "text": " entonces esto me implica que la multiplicidad algebraica de lambda 0 es o M o más grande que M",
+        "start": 2491.0,
+        "end": 2516.0
+    },
+    {
+        "text": " no no no porque digo solamente estoy considerando el valor propio lambda 0 que cure todo",
+        "start": 2516.0,
+        "end": 2531.0
+    },
+    {
+        "text": " ah en el caso estricto que cure todo si este lambda 0 cubriese todo ve entonces yo tengo una base de ve usando una base de ese lambda 0",
+        "start": 2531.0,
+        "end": 2541.0
+    },
+    {
+        "text": " no tengo que agregar nada entonces la matriz que me quedaría sería únicamente esto entonces lo que tendría es que esta parte no aparecería",
+        "start": 2541.0,
+        "end": 2551.0
+    },
+    {
+        "text": " entonces me quedaría de la lambda 0 menos lambda a la dimensión de este que sería M",
+        "start": 2551.0,
+        "end": 2558.0
+    },
+    {
+        "text": " entonces me quedaría que lambda 0 sería un polinomio de grado perdón que lambda 0 sea una raíz de multiplicidad N",
+        "start": 2558.0,
+        "end": 2565.0
+    },
+    {
+        "text": " y además coincide con la multiplicidad que también es ¿Se entendió? ¿Ese caso para curar? No sé si eres sobre lo que me preguntaba",
+        "start": 2565.0,
+        "end": 2574.0
+    },
+    {
+        "text": " no, pero yo tengo que preguntar si la multiplicidad se le da de la multiplicidad y no",
+        "start": 2574.0,
+        "end": 2581.0
+    },
+    {
+        "text": " que lo estoy haciendo con el nudo",
+        "start": 2581.0,
+        "end": 2585.0
+    },
+    {
+        "text": " ah ya vamos ahí ahí, ya vamos a ir a un resultado que se le prende de esto",
+        "start": 2585.0,
+        "end": 2589.0
+    },
+    {
+        "text": " o sea lo que tenemos por lo tanto es que la multiplicidad que braica de lambda 0 es más yo igual que este M",
+        "start": 2589.0,
+        "end": 2594.0
+    },
+    {
+        "text": " y este M lo habíamos definido justamente la denotación para la multiplicidad geométrica de lambda 0",
+        "start": 2594.0,
+        "end": 2601.0
+    },
+    {
+        "text": " o sea que siempre se cumple que la dimensión de su espacio asociado es menor igual que la multiplicidad del correspondiente de valor propio",
+        "start": 2601.0,
+        "end": 2612.0
+    },
+    {
+        "text": " y ahora con esto podemos probar en dos reglones el resultado que les había anunciado el principio",
+        "start": 2613.0,
+        "end": 2619.0
+    },
+    {
+        "text": " preguntas esto repasen lo siempre esté adiós o trabaja con el determinante yo de texto el determinante pero hay que reconocer que es sumamente útil",
+        "start": 2619.0,
+        "end": 2648.0
+    },
+    {
+        "text": " saber manipularlo y que es necesario además porque si es determinante uno no puede calcular las raíces, luego el polimo característico etc.",
+        "start": 2648.0,
+        "end": 2662.0
+    },
+    {
+        "text": " bueno entonces para terminar con la cuestión de esta diagonalización y con la clase vamos a probar el siguiente resultado",
+        "start": 2663.0,
+        "end": 2678.0
+    },
+    {
+        "text": " es más de tan sencillo que se desprende directamente todo lo que hemos escrito ahí así que le vamos a llamar coro alario",
+        "start": 2682.0,
+        "end": 2689.0
+    },
+    {
+        "text": " y este es un resultado muy lindo",
+        "start": 2723.0,
+        "end": 2749.0
+    },
+    {
+        "text": " y muy fácil de demostrar con todo lo que hicimos probamos antes",
+        "start": 2750.0,
+        "end": 2756.0
+    },
+    {
+        "text": " y en vez de una condición necesaria y suficiente para que un TCD una alizable una nueva equivalencia",
+        "start": 2756.0,
+        "end": 2765.0
+    },
+    {
+        "text": " ya habíamos visto una de las clases pasadas me dice que un operador TCD una alizable si solo si toda raíz del polinomocaracterístico está en el cuerpo",
+        "start": 2765.0,
+        "end": 2775.0
+    },
+    {
+        "text": " esto es si yo estoy trabajando en los reales me aparece una raíz característica que es compleja yo sé que el operador no es diagonalizado porque hay raíces que no están en el cuerpo",
+        "start": 2776.0,
+        "end": 2787.0
+    },
+    {
+        "text": " bien entonces si solo si toda raíz del polinomocaracterístico es valor propio que lo mio que es cierto y además todas las raíces cumple que la multiplicidad geóraica es igual a la multiplicidad geómetro",
+        "start": 2787.0,
+        "end": 2799.0
+    },
+    {
+        "text": " si en general yo tengo que esto está cootado por esto acá arriba bueno si se cumple que este igualdad y además se cumple que toda raíz está en el cuerpo del operador de la una alizable",
+        "start": 2799.0,
+        "end": 2811.0
+    },
+    {
+        "text": " y justamente en los ejemplos que habíamos visto en un caso se cumple este igualdad para toda la raíz y era diagonalizado y no se cumplea para una de las raíces y por los no era diagonalizado",
+        "start": 2811.0,
+        "end": 2824.0
+    },
+    {
+        "text": " bueno veamos la demostración la demostración ya con todo lo que lo cruzamos es es sencilla",
+        "start": 2825.0,
+        "end": 2832.0
+    },
+    {
+        "text": " hay que hacer la con cuidados eso sí",
+        "start": 2838.0,
+        "end": 2840.0
+    },
+    {
+        "text": " le vamos a llamar a la dimensión del espacio vectorial en el que estamos trabajando le vamos a llamar N",
+        "start": 2845.0,
+        "end": 2851.0
+    },
+    {
+        "text": " y además vamos a denotar como siempre lambda 1 lambda 2 hasta lambda r los valores propios",
+        "start": 2852.0,
+        "end": 2866.0
+    },
+    {
+        "text": " y como es el lambda 1, es el lambda 2 etc hasta es el lambda r los subespacios propios",
+        "start": 2866.0,
+        "end": 2887.0
+    },
+    {
+        "text": " y ahora voy a escribir una condición que se tiene que cumplir que es escribirla con cuidado",
+        "start": 2897.0,
+        "end": 2908.0
+    },
+    {
+        "text": " no somos sabemos que si yo voy al polinomio característico y veo las raíces yo sé que por el teoremos fundamental de la arghebra",
+        "start": 2908.0,
+        "end": 2916.0
+    },
+    {
+        "text": " polinomio característico y polinomio grado N por lo tanto si cuento la raíz de su multiplicidad tiene N raíces contadas con su multiplicidad",
+        "start": 2917.0,
+        "end": 2924.0
+    },
+    {
+        "text": " si una tiene multiplicidad 3 la cuento 3 veces pero esa raíz a veces puede estar los complejos y a veces pueden estar en los reales",
+        "start": 2925.0,
+        "end": 2932.0
+    },
+    {
+        "text": " o sea que a veces puede ser que estén en el cuerpo y a veces no",
+        "start": 2932.0,
+        "end": 2935.0
+    },
+    {
+        "text": " lo que sí se cumple lo siguiente que si uno mira",
+        "start": 2935.0,
+        "end": 2938.0
+    },
+    {
+        "text": " y uno mira el conjunto formado por los valores propios lambda 1 lambda 2 hasta lambda r todos estos valores propios son raíces del polinomio característico y están en el cuerpo",
+        "start": 2939.0,
+        "end": 2954.0
+    },
+    {
+        "text": " pero como dije recién puede haber raíces que no estén en el cuerpo o sea que no sean valores propios",
+        "start": 2955.0,
+        "end": 2962.0
+    },
+    {
+        "text": " o sea que este conjunto está contenido o es igual en el conjunto de los lambda tales que lambda es raíz del polinomio característico y subten",
+        "start": 2962.0,
+        "end": 2978.0
+    },
+    {
+        "text": " se entiende esto o sea yo considero el conjunto de raíces del polinomio característico",
+        "start": 2978.0,
+        "end": 2984.0
+    },
+    {
+        "text": " las que están en el cuerpo son valores propios por lo tanto están acá y las que no están en el cuerpo están acá porque son raíces pero no son valores propios no están acá",
+        "start": 2985.0,
+        "end": 2995.0
+    },
+    {
+        "text": " o sea que esos dos conjuntos pueden ser diferentes si uno está trabajando en el cuerpo los reales",
+        "start": 2995.0,
+        "end": 3003.0
+    },
+    {
+        "text": " si uno trabaja en el cuerpo los reales de los complejos son iguales porque todas raíces de este polinomio que sabemos que hay N raíces y la cuento con su multiplicidad es valor propio",
+        "start": 3003.0,
+        "end": 3013.0
+    },
+    {
+        "text": " sí entonces fíjense",
+        "start": 3014.0,
+        "end": 3021.0
+    },
+    {
+        "text": " voy a hacer la siguiente sub",
+        "start": 3026.0,
+        "end": 3032.0
+    },
+    {
+        "text": " es decir voy a sumar las dimensiones de los subespacios propios",
+        "start": 3033.0,
+        "end": 3039.0
+    },
+    {
+        "text": " para cada uno los valores propios voy a sumar la dimensión de esto más la dimensión de esto más la dimensión de esto",
+        "start": 3040.0,
+        "end": 3046.0
+    },
+    {
+        "text": " ya va a quedar claro porque hago eso",
+        "start": 3049.0,
+        "end": 3054.0
+    },
+    {
+        "text": " estas son justamente las multiplicidades geometricas de cábalos propios o sea que esto lo mismo que poner la suma",
+        "start": 3056.0,
+        "end": 3062.0
+    },
+    {
+        "text": " y desde uno hasta R de las multiplicidades geometricas de los valores propios de los valores propios de ahí",
+        "start": 3063.0,
+        "end": 3069.0
+    },
+    {
+        "text": " y por lo que probamos recién las multiplicidades geometricas son menos iguales que las multiplicidades algebraicas",
+        "start": 3071.0,
+        "end": 3076.0
+    },
+    {
+        "text": " o sea que esto es menor igual que las multiplicidades algebraicas de la onda ahí",
+        "start": 3076.0,
+        "end": 3086.0
+    },
+    {
+        "text": " estamos y ahora me falta otra desigualdad más",
+        "start": 3093.0,
+        "end": 3097.0
+    },
+    {
+        "text": " yo acá estoy sumando las multiplicidades",
+        "start": 3098.0,
+        "end": 3102.0
+    },
+    {
+        "text": " algebraicas las multiplicidades raíces que aparecen en el polinomio característico y que están en el cuerpo porque son valores propios",
+        "start": 3106.0,
+        "end": 3113.0
+    },
+    {
+        "text": " si yo sumo todas las que están en el cuerpo las que eventualmente no están en el cuerpo tendría un",
+        "start": 3113.0,
+        "end": 3118.0
+    },
+    {
+        "text": " menor igual o sea esto es menor igual que la suma sobre todas las raíces lambda",
+        "start": 3118.0,
+        "end": 3125.0
+    },
+    {
+        "text": " está el que lambda es raíz del polinomio característico de las multiplicidades algebraicas de lambda o sea",
+        "start": 3127.0,
+        "end": 3135.0
+    },
+    {
+        "text": " porque tengo esta desigualdad porque cuando yo sumo sobre todas las raíces acá aparecen raíces que están en el cuerpo",
+        "start": 3136.0,
+        "end": 3144.0
+    },
+    {
+        "text": " porque las estoy contando acá pero eventualmente podrían aparecer raíces que no están en el cuerpo que las cuento acá pero no las cuento acá",
+        "start": 3144.0,
+        "end": 3151.0
+    },
+    {
+        "text": " si entonces acá estoy poniendo la multiplicidad algebraica de cada una de las raíces del polinomio característico",
+        "start": 3151.0,
+        "end": 3160.0
+    },
+    {
+        "text": " estoy sumando cuándo me da eso",
+        "start": 3160.0,
+        "end": 3163.0
+    },
+    {
+        "text": " N como es un polinomio el polinomio característico es un polinomio de de grado N es decir el polinomio característico",
+        "start": 3163.0,
+        "end": 3172.0
+    },
+    {
+        "text": " por el teorema fundamentalidad que la repito tiene raíces y si las cuento como multiplicidad son N es raíces o sea el polinomio característico",
+        "start": 3175.0,
+        "end": 3183.0
+    },
+    {
+        "text": " yo lo puedo escribir como lambda 1 menos lambda a la multiplicidad de M1 lambda 2 menos lambda a la multiplicidad de M2 etc etc",
+        "start": 3183.0,
+        "end": 3191.0
+    },
+    {
+        "text": " y entonces si acá raíces yo la cuento con su respectiva multiplicidad la suma la multiplicidad me tiene que dar el orden del polinomio que es N",
+        "start": 3191.0,
+        "end": 3199.0
+    },
+    {
+        "text": " o sea que si acá yo cuento raíces reales complejas todas esto acá es igual a N",
+        "start": 3200.0,
+        "end": 3207.0
+    },
+    {
+        "text": " estamos",
+        "start": 3207.0,
+        "end": 3211.0
+    },
+    {
+        "text": " esto es por teorema fundamentalidad algebra",
+        "start": 3211.0,
+        "end": 3217.0
+    },
+    {
+        "text": " y ahora",
+        "start": 3230.0,
+        "end": 3236.0
+    },
+    {
+        "text": " ahora al principio de la clase",
+        "start": 3253.0,
+        "end": 3258.0
+    },
+    {
+        "text": " al principio de la clase vemos repasado un teorema que vimos la clase pasada que en una sus partes me decía que te diagonalizable",
+        "start": 3260.0,
+        "end": 3266.0
+    },
+    {
+        "text": " si solo si la suma de las dimensiones de los subesparios propios",
+        "start": 3271.0,
+        "end": 3279.0
+    },
+    {
+        "text": " tiene que ser igual a N",
+        "start": 3281.0,
+        "end": 3283.0
+    },
+    {
+        "text": " pero en el espacio de dimension N hay un visto que te diagonalizaba si solo si la suma de las dimensiones de los subesparios propios",
+        "start": 3284.0,
+        "end": 3292.0
+    },
+    {
+        "text": " o sea que fíjense",
+        "start": 3293.0,
+        "end": 3296.0
+    },
+    {
+        "text": " esto es",
+        "start": 3299.0,
+        "end": 3301.0
+    },
+    {
+        "text": " te diagonalizable",
+        "start": 3301.0,
+        "end": 3304.0
+    },
+    {
+        "text": " acá tengo justamente lo que está de este lado",
+        "start": 3311.0,
+        "end": 3316.0
+    },
+    {
+        "text": " la dimensión de la s lambda y",
+        "start": 3316.0,
+        "end": 3319.0
+    },
+    {
+        "text": " para todos los valores propios",
+        "start": 3320.0,
+        "end": 3322.0
+    },
+    {
+        "text": " o sea la condición que vimos la clase pasada es que unos paradores llevan alizables si esta suma es igual a N",
+        "start": 3322.0,
+        "end": 3329.0
+    },
+    {
+        "text": " eso que está de la izquierda es igual a esto está de la derecha",
+        "start": 3332.0,
+        "end": 3335.0
+    },
+    {
+        "text": " es decir si solo si",
+        "start": 3335.0,
+        "end": 3338.0
+    },
+    {
+        "text": " que pasa tengo igualdad acá",
+        "start": 3338.0,
+        "end": 3341.0
+    },
+    {
+        "text": " le voy a llamar a estarisco",
+        "start": 3341.0,
+        "end": 3344.0
+    },
+    {
+        "text": " y tengo igualdad acá que le voy a llamar doble a estarisco",
+        "start": 3344.0,
+        "end": 3347.0
+    },
+    {
+        "text": " y acá llevo tener una desigualdad en una de estas",
+        "start": 3347.0,
+        "end": 3350.0
+    },
+    {
+        "text": " entonces tengo que esta dimensión es menor estricto que N",
+        "start": 3350.0,
+        "end": 3353.0
+    },
+    {
+        "text": " y por lo tanto no es",
+        "start": 3353.0,
+        "end": 3356.0
+    },
+    {
+        "text": " o sea que te diagonalizable si solo si hay igualdad",
+        "start": 3356.0,
+        "end": 3359.0
+    },
+    {
+        "text": " en a estarisco y en doble a estarisco",
+        "start": 3367.0,
+        "end": 3370.0
+    },
+    {
+        "text": " empecemos por la doble a estarisco",
+        "start": 3378.0,
+        "end": 3381.0
+    },
+    {
+        "text": " cuando hay igualdad en doble a estarisco",
+        "start": 3389.0,
+        "end": 3392.0
+    },
+    {
+        "text": " cuando esta suma es igual a esta",
+        "start": 3392.0,
+        "end": 3395.0
+    },
+    {
+        "text": " cuando acá no es sumando",
+        "start": 3395.0,
+        "end": 3397.0
+    },
+    {
+        "text": " cuando acá no es sumando que no esté en acá",
+        "start": 3397.0,
+        "end": 3399.0
+    },
+    {
+        "text": " o sea cuando todos los sumando que tengo acá son igual a todos los sumando que tengo acá",
+        "start": 3399.0,
+        "end": 3402.0
+    },
+    {
+        "text": " o sea cuando este conjunto y este conjunto coinciden",
+        "start": 3403.0,
+        "end": 3407.0
+    },
+    {
+        "text": " es decir no hay cosas que tengo acá y que no esté en ahí",
+        "start": 3407.0,
+        "end": 3410.0
+    },
+    {
+        "text": " o sea cuando toda la raíz del polinismo característico",
+        "start": 3410.0,
+        "end": 3414.0
+    },
+    {
+        "text": " están en el cuerpo",
+        "start": 3414.0,
+        "end": 3417.0
+    },
+    {
+        "text": " se han tenido por acá esto son los valores propios",
+        "start": 3417.0,
+        "end": 3419.0
+    },
+    {
+        "text": " o sea como todas las raíces son valores propios",
+        "start": 3419.0,
+        "end": 3421.0
+    },
+    {
+        "text": " o sea cuando todas las raíces están en el cuerpo",
+        "start": 3421.0,
+        "end": 3424.0
+    },
+    {
+        "text": " y cuando hay igualdad",
+        "start": 3432.0,
+        "end": 3435.0
+    },
+    {
+        "text": " cuando se cumple igualdad acá",
+        "start": 3438.0,
+        "end": 3441.0
+    },
+    {
+        "text": " bueno cuando cada sumando acá",
+        "start": 3441.0,
+        "end": 3444.0
+    },
+    {
+        "text": " es igual a cada sumando acá",
+        "start": 3444.0,
+        "end": 3446.0
+    },
+    {
+        "text": " pues son todas las cosas positivas esto",
+        "start": 3446.0,
+        "end": 3449.0
+    },
+    {
+        "text": " o sea cuando cada uno de estos es igual a esto",
+        "start": 3449.0,
+        "end": 3454.0
+    },
+    {
+        "text": " o sea son todas las cosas positivas y además",
+        "start": 3454.0,
+        "end": 3456.0
+    },
+    {
+        "text": " cada sumando acá es el igual que cada sumando acá",
+        "start": 3456.0,
+        "end": 3459.0
+    },
+    {
+        "text": " es el igual que cada sumando acá",
+        "start": 3459.0,
+        "end": 3462.0
+    },
+    {
+        "text": " o sea que la única forma tiene igualdad es que",
+        "start": 3462.0,
+        "end": 3465.0
+    },
+    {
+        "text": " cada uno de estos se igualan correspondiente acá",
+        "start": 3465.0,
+        "end": 3468.0
+    },
+    {
+        "text": " o sea sí sólo sí",
+        "start": 3468.0,
+        "end": 3471.0
+    },
+    {
+        "text": " la multiplicidad geometrica y la multiplicidad geográfica",
+        "start": 3471.0,
+        "end": 3476.0
+    },
+    {
+        "text": " o sea con esto terminamos de probar el resultado",
+        "start": 3490.0,
+        "end": 3493.0
+    },
+    {
+        "text": " que me da una condición necesaria y suficiente fácil",
+        "start": 3493.0,
+        "end": 3496.0
+    },
+    {
+        "text": " de manipular para un operador que se ha llegado en la disable",
+        "start": 3496.0,
+        "end": 3499.0
+    },
+    {
+        "text": " me dice que es diagonalizable si sólo sí",
+        "start": 3499.0,
+        "end": 3502.0
+    },
+    {
+        "text": " todas las raíces están en el cuerpo",
+        "start": 3502.0,
+        "end": 3505.0
+    },
+    {
+        "text": " y si sólo sí las multiplicidades de geográfica",
+        "start": 3505.0,
+        "end": 3508.0
+    },
+    {
+        "text": " y las multiplicidades geometrias coinciden para cada valor propios",
+        "start": 3508.0,
+        "end": 3510.0
+    },
+    {
+        "text": " entonces ustedes le damos un parcial",
+        "start": 3510.0,
+        "end": 3513.0
+    },
+    {
+        "text": " un espacio mercurial real y hay raíces que son complejas",
+        "start": 3513.0,
+        "end": 3517.0
+    },
+    {
+        "text": " no es diagonalizable y si todas las raíces son",
+        "start": 3517.0,
+        "end": 3521.0
+    },
+    {
+        "text": " están en el cuerpo y que ver si se cumplen estas igualidades",
+        "start": 3521.0,
+        "end": 3524.0
+    },
+    {
+        "text": " para cada uno de ellos",
+        "start": 3524.0,
+        "end": 3525.0
+    },
+    {
+        "text": " ahora acá termina la parte de diagonalización",
+        "start": 3525.0,
+        "end": 3529.0
+    },
+    {
+        "text": " estoy hablando como Marcito a través de las palabras",
+        "start": 3529.0,
+        "end": 3533.0
+    },
+    {
+        "text": " estoy mirando muchos noticias últimamente",
+        "start": 3533.0,
+        "end": 3538.0
+    },
+    {
+        "text": " la siguiente pregunta es ¿cómo sigue el curso?",
+        "start": 3541.0,
+        "end": 3544.0
+    },
+    {
+        "text": " ya tenemos todo lo que queríamos saber sobre cosas diagonalizables",
+        "start": 3544.0,
+        "end": 3547.0
+    },
+    {
+        "text": " bueno ¿qué pasa si algo no es diagonalizable?",
+        "start": 3547.0,
+        "end": 3550.0
+    },
+    {
+        "text": " en particular no esta condición la vamos a dejar fuera del curso",
+        "start": 3550.0,
+        "end": 3556.0
+    },
+    {
+        "text": " pero ¿qué pasa si no se verifica esta condición?",
+        "start": 3556.0,
+        "end": 3559.0
+    },
+    {
+        "text": " o sea si no es diagonalizable porque no se cumpe a esta condición",
+        "start": 3559.0,
+        "end": 3563.0
+    },
+    {
+        "text": " para algún su espacio propio",
+        "start": 3563.0,
+        "end": 3565.0
+    },
+    {
+        "text": " bueno veremos que en ese caso los operadores se pueden llevar",
+        "start": 3565.0,
+        "end": 3568.0
+    },
+    {
+        "text": " a formas que son parecidas o una diagonal",
+        "start": 3568.0,
+        "end": 3570.0
+    },
+    {
+        "text": " pero no que no son diagonales",
+        "start": 3570.0,
+        "end": 3572.0
+    },
+    {
+        "text": " y son lo que se llama las formas de llorban",
+        "start": 3572.0,
+        "end": 3575.0
+    },
+    {
+        "text": " ¿cómo estamos con el tiempo?",
+        "start": 3575.0,
+        "end": 3578.0
+    },
+    {
+        "text": " eso lo vamos a ver la semana que viene empezamos con la forma de llorban",
+        "start": 3578.0,
+        "end": 3583.0
+    },
+    {
+        "text": " y lo que voy a hacer como queda en minuto lo que voy a hacer es dedicarles a las consultas",
+        "start": 3583.0,
+        "end": 3589.0
+    },
+    {
+        "text": " no sé si hay alguna pregunta",
+        "start": 3589.0,
+        "end": 3591.0
+    },
+    {
+        "text": " alguien no me acuerdo quién me preguntó un problema a nosotros",
+        "start": 3591.0,
+        "end": 3595.0
+    },
+    {
+        "text": " ¿me acuerdo quién? me acuerdo la cara pero no lo encuentro",
+        "start": 3595.0,
+        "end": 3598.0
+    },
+    {
+        "text": " me preguntó un problema de una de una 3x3",
+        "start": 3598.0,
+        "end": 3600.0
+    },
+    {
+        "text": " ¿no? no me preguntaste pero no era eso",
+        "start": 3600.0,
+        "end": 3604.0
+    },
+    {
+        "text": " un determinante una 3x3 que la diagonal tenía todas las a",
+        "start": 3604.0,
+        "end": 3607.0
+    },
+    {
+        "text": " ¿qué me pregunto eso?",
+        "start": 3607.0,
+        "end": 3610.0
+    },
+    {
+        "text": " bueno porque salen las cuentas fáciles dios",
+        "start": 3610.0,
+        "end": 3613.0
+    },
+    {
+        "text": " no?",
+        "start": 3613.0,
+        "end": 3615.0
+    },
+    {
+        "text": " terminó la clase",
+        "start": 3615.0,
+        "end": 3617.0
+    },
+    {
+        "text": " le regalo 20 minutos",
+        "start": 3617.0,
+        "end": 3619.0
+    }
+]
