@@ -1,0 +1,2582 @@
+[
+    {
+        "text": " Entonces, el primer tema que vamos a ver es la inducción completa o inducción matemática",
+        "start": 0.0,
+        "end": 26.64
+    },
+    {
+        "text": " que también se llama. La inducción completa es un método que se usa para demostrar propiedades",
+        "start": 26.64,
+        "end": 44.92
+    },
+    {
+        "text": " que se cumple para los números naturales. O sea, digamos que P es una propiedad que puede",
+        "start": 44.92,
+        "end": 59.08
+    },
+    {
+        "text": " cumplir los números naturales.",
+        "start": 59.08,
+        "end": 81.8
+    },
+    {
+        "text": " O sea, P puede ser por ejemplo la propiedad ser par o ser primo o ser mayor que 2.526.",
+        "start": 81.8,
+        "end": 92.2
+    },
+    {
+        "text": " Es una propiedad de este tipo. Entonces escribimos PDN para decir el número N tiene la propiedad P.",
+        "start": 92.2,
+        "end": 105.28
+    },
+    {
+        "text": " Por ejemplo el número N es par o es primo o es mayor que el 2.726.",
+        "start": 111.8,
+        "end": 137.88
+    },
+    {
+        "text": " Entonces, la inducción es un método que sirve para probar que la propiedad P es cierta para todo N.",
+        "start": 137.88,
+        "end": 149.56
+    },
+    {
+        "text": " Yo sé que ustedes han trabajado con pruebas por inducción completa sobre todo en algeura",
+        "start": 149.56,
+        "end": 156.64
+    },
+    {
+        "text": " línea 1 se hacen muchas pruebas por inducción completa, pero ahora vamos a estudiar con más",
+        "start": 156.64,
+        "end": 161.72
+    },
+    {
+        "text": " detenimiento este método. Vamos a trabajar con muchos ejercicios y muchos ejemplos.",
+        "start": 161.72,
+        "end": 166.72
+    },
+    {
+        "text": " Primero porque sabemos que de lo que han trabajado en el Cero o en cursos anteriores no siempre",
+        "start": 166.72,
+        "end": 173.72
+    },
+    {
+        "text": " quedó claro el funcionamiento del método y también porque es muy importante entender cómo funciona",
+        "start": 173.72,
+        "end": 180.72
+    },
+    {
+        "text": " para las aplicaciones específicas a computación y el método de inducción completa se generaliza",
+        "start": 180.72,
+        "end": 190.92
+    },
+    {
+        "text": " mucho para probar cosas no solo sobre los números naturales sino sobre otras estructuras que tienen",
+        "start": 190.92,
+        "end": 203.92
+    },
+    {
+        "text": " definiciones similares. O sea más adelante vamos a ver un poco qué quiere decir esto pero sirve",
+        "start": 203.92,
+        "end": 210.44
+    },
+    {
+        "text": " para probar cosas sobre árboles o en lógica van a ver qué sirven para probar fórmulas sobre",
+        "start": 210.44,
+        "end": 216.39999999999998
+    },
+    {
+        "text": " lenguajes lógicos sobre fórmulas y van a ver que también tiene muchas aplicaciones a la computación.",
+        "start": 216.4,
+        "end": 225.4
+    },
+    {
+        "text": " Entonces la inducción completa es el método para probar afirmaciones sobre los números naturales",
+        "start": 225.4,
+        "end": 233.4
+    },
+    {
+        "text": " que es la punta de una iceberg enorme que es la inducción y que van a ver aparecer reiteradas.",
+        "start": 233.4,
+        "end": 241.4
+    },
+    {
+        "text": " Entonces cómo funciona concretamente esto es el principio de inducción completa que lo vamos",
+        "start": 242.4,
+        "end": 250.4
+    },
+    {
+        "text": " enunciar para nosotros va a ser una acción o sea lo aceptamos lo usamos y dice así.",
+        "start": 250.4,
+        "end": 266.4
+    },
+    {
+        "text": " Vamos a suponer que se cumple la propiedad p para el número uno.",
+        "start": 271.4,
+        "end": 287.4
+    },
+    {
+        "text": " Eso es lo que quiere decir p1 y lo otro que vamos a suponer",
+        "start": 290.4,
+        "end": 299.4
+    },
+    {
+        "text": " es que si se cumple la propiedad p para un número n entonces se cumple para el número n más 1.",
+        "start": 299.4,
+        "end": 311.4
+    },
+    {
+        "text": " Si pasan estas dos cosas",
+        "start": 320.4,
+        "end": 323.4
+    },
+    {
+        "text": " se cumple la propiedad p para todo n natural.",
+        "start": 329.4,
+        "end": 337.4
+    },
+    {
+        "text": " Esto es el principio de inducción completa.",
+        "start": 348.4,
+        "end": 351.4
+    },
+    {
+        "text": " Entonces de este lado voy a escribir lo mismo pero en letras.",
+        "start": 352.4,
+        "end": 358.4
+    },
+    {
+        "text": " Supongamos que se cumple la propiedad p para el número uno.",
+        "start": 359.4,
+        "end": 365.4
+    },
+    {
+        "text": " Y que si se cumple para un número se cumple para el siguiente.",
+        "start": 365.4,
+        "end": 387.4
+    },
+    {
+        "text": " Entonces la propiedad p para el número natural.",
+        "start": 395.4,
+        "end": 422.4
+    },
+    {
+        "text": " Vamos a aplicar este principio de inducción completa para un ejemplo.",
+        "start": 425.4,
+        "end": 449.4
+    },
+    {
+        "text": " Para demostrar alguna propiedad de los nombres naturales.",
+        "start": 450.4,
+        "end": 463.4
+    },
+    {
+        "text": " Entonces nuestro primer ejemplo va a ser esto.",
+        "start": 464.4,
+        "end": 470.4
+    },
+    {
+        "text": " Vamos a probar la siguiente fórmula.",
+        "start": 470.4,
+        "end": 473.4
+    },
+    {
+        "text": " La fórmula que dice que si sumo los números 1 más 2 más 3 hasta n o sea la suma de los primeros n números",
+        "start": 473.4,
+        "end": 484.4
+    },
+    {
+        "text": " es n por n más 1 sobre 2.",
+        "start": 484.4,
+        "end": 491.4
+    },
+    {
+        "text": " Les recuerdo que esta parte que está acá se puede escribir más cortista con la notación de sumatoria.",
+        "start": 491.4,
+        "end": 502.4
+    },
+    {
+        "text": " Voy a cerrar hasta que se acabe el ruido o nos affiximos lo que suceda primero.",
+        "start": 502.4,
+        "end": 512.4
+    },
+    {
+        "text": " Con la notación de sumatoria esto se puede escribir como la sumatoria desde i igual 1 hasta n del.",
+        "start": 513.4,
+        "end": 524.4
+    },
+    {
+        "text": " Y vamos a probar esto, esta igualdad.",
+        "start": 524.4,
+        "end": 530.4
+    },
+    {
+        "text": " Entonces ¿cuál es la propiedad p que queremos que se cumpla para todos los números naturales?",
+        "start": 530.4,
+        "end": 539.4
+    },
+    {
+        "text": " La propiedad p en el número n es justamente esto que la suma de los primeros n números naturales es esto.",
+        "start": 540.4,
+        "end": 551.4
+    },
+    {
+        "text": " Entonces ¿qué tenemos que hacer si queremos probarla?",
+        "start": 552.4,
+        "end": 563.4
+    },
+    {
+        "text": " Para usar el principio de inducción completa si queremos probar que para todo n vale esta propiedad lo que tenemos que hacer es verificar esto que está arriba.",
+        "start": 563.4,
+        "end": 577.4
+    },
+    {
+        "text": " Porque el principio de inducción completa nos dice que si pasa todo lo que está en el rectángulo azul entonces la propiedad de esta p vale para todo n.",
+        "start": 577.4,
+        "end": 596.4
+    },
+    {
+        "text": " O sea si queremos probar que esta igualdad es cierta para todo n tenemos que verificar lo que está en el rectángulo azul.",
+        "start": 597.4,
+        "end": 608.4
+    },
+    {
+        "text": " Y hay dos condiciones en el rectángulo azul tienen un nombre.",
+        "start": 608.4,
+        "end": 614.4
+    },
+    {
+        "text": " La primera condición se llama paso básico o paso base y la segunda condición se llama paso inductivo.",
+        "start": 615.4,
+        "end": 631.4
+    },
+    {
+        "text": " Entonces probemos esto usando el principio de inducción.",
+        "start": 632.4,
+        "end": 643.4
+    },
+    {
+        "text": " El paso base en este caso es ver que esta igualdad vale cuando n es igual a 1.",
+        "start": 644.4,
+        "end": 660.4
+    },
+    {
+        "text": " Cuando n es igual a 1 esto nos dice que la suma del primer número natural con nada que es el 1 es igual a 1 por 1 más 1 sobre 2.",
+        "start": 661.4,
+        "end": 682.4
+    },
+    {
+        "text": " O sea ya haciendo esta cuenta a ojo veo que esto es verdad entonces lo que queremos probar es cierto para n igual a 1.",
+        "start": 683.4,
+        "end": 700.4
+    },
+    {
+        "text": " Ahora esto es el paso base verificado que la propiedad vale para n igual a 1. Ahora el paso inductivo.",
+        "start": 700.4,
+        "end": 708.4
+    },
+    {
+        "text": " Lo que tenemos que ver es que si la propiedad vale para un número n vale para el siguiente para n más 1.",
+        "start": 709.4,
+        "end": 722.4
+    },
+    {
+        "text": " Entonces el paso inductivo consiste en probar que si la igualdad está vale para un número vale para el siguiente.",
+        "start": 722.4,
+        "end": 736.4
+    },
+    {
+        "text": " Entonces lo que tenemos es esto que la suma de los primeros n números naturales es n por n más 1 entre 2.",
+        "start": 737.4,
+        "end": 754.4
+    },
+    {
+        "text": " Esto es la propiedad para n y lo que suponemos y a partir de esto queremos probar que la propiedad vale para n más 1.",
+        "start": 754.4,
+        "end": 768.4
+    },
+    {
+        "text": " O sea lo que queremos es que la suma de n igual a 1 hasta n más 1.",
+        "start": 768.4,
+        "end": 775.4
+    },
+    {
+        "text": " O sea lo que tenemos que probar esto y estas cosas de vuelta tienen nombre.",
+        "start": 775.4,
+        "end": 798.4
+    },
+    {
+        "text": " Esto se llama hipótesis inductiva o hipótesis de inducción y esto se llama tesis inductiva.",
+        "start": 799.4,
+        "end": 820.4
+    },
+    {
+        "text": " Si la propiedad vale para n vale para n más 1 quiere decir probar que el hipótesis inductiva implica la tesis inductiva.",
+        "start": 821.4,
+        "end": 830.4
+    },
+    {
+        "text": " O sea suponiendo esto probar esto.",
+        "start": 830.4,
+        "end": 833.4
+    },
+    {
+        "text": " Vamos a hacer. Yo quiero probar esto que esta acá.",
+        "start": 833.4,
+        "end": 840.4
+    },
+    {
+        "text": " Entonces la suma de n igual a 1 hasta n más 1.",
+        "start": 840.4,
+        "end": 850.4
+    },
+    {
+        "text": " O sea la suma de los primeros n más 1.",
+        "start": 851.4,
+        "end": 854.4
+    },
+    {
+        "text": " Yo la puedo escribir como la suma de los primeros n números más n más 1.",
+        "start": 854.4,
+        "end": 868.4
+    },
+    {
+        "text": " Ahora lo que estoy suponiendo que es la hipótesis inductiva.",
+        "start": 869.4,
+        "end": 879.4
+    },
+    {
+        "text": " Entonces acá voy a aplicar la hipótesis inductiva.",
+        "start": 879.4,
+        "end": 888.4
+    },
+    {
+        "text": " Me dice que esto que esta acá es igual a n por n más 1.",
+        "start": 889.4,
+        "end": 897.4
+    },
+    {
+        "text": " O sea aplicar la hipótesis inductiva es decir que este glóvito verde es igual a este glóvito verde.",
+        "start": 906.4,
+        "end": 915.4
+    },
+    {
+        "text": " Y bueno y ahora simplemente hago cuentas.",
+        "start": 916.4,
+        "end": 922.4
+    },
+    {
+        "text": " Esto me queda n por n más 1 más 2 n más 2.",
+        "start": 922.4,
+        "end": 944.4
+    },
+    {
+        "text": " Entre 2.",
+        "start": 946.4,
+        "end": 948.4
+    },
+    {
+        "text": " Ahí va. Eso que eso me encantó esta preciosa.",
+        "start": 948.4,
+        "end": 952.4
+    },
+    {
+        "text": " 2 por n más 1 entre 2.",
+        "start": 952.4,
+        "end": 957.4
+    },
+    {
+        "text": " Si ahí se denomina común.",
+        "start": 957.4,
+        "end": 959.4
+    },
+    {
+        "text": " Entonces ahora sacando n más 1 de factor común me queda n más 1 por n más 2 entre 2.",
+        "start": 959.4,
+        "end": 968.4
+    },
+    {
+        "text": " Entonces esto es lo que queríamos probar.",
+        "start": 969.4,
+        "end": 974.4
+    },
+    {
+        "text": " Efectivamente probamos que la suma de los n más 1, primero n n más 1 por n más 2 entre 2,",
+        "start": 974.4,
+        "end": 985.4
+    },
+    {
+        "text": " que es nuestra tesis inductiva.",
+        "start": 985.4,
+        "end": 988.4
+    },
+    {
+        "text": " Entonces usando la hipótesis inductiva probamos la tesis.",
+        "start": 988.4,
+        "end": 993.4
+    },
+    {
+        "text": " Entonces así es como aplicamos en este caso el principio de inducción completa.",
+        "start": 994.4,
+        "end": 1000.4
+    },
+    {
+        "text": " Probamos que si era tu apropiada vale para el número 1 y que si vale para un número vale para el siguiente y concluimos que vale para todos los n más.",
+        "start": 1000.4,
+        "end": 1009.4
+    },
+    {
+        "text": " Por qué funciona el principio de inducción?",
+        "start": 1010.4,
+        "end": 1020.4
+    },
+    {
+        "text": " Veamos muy linda las cuentitas que hice, no?",
+        "start": 1020.4,
+        "end": 1024.4
+    },
+    {
+        "text": " Probablemente este ejemplo ustedes lo conocieran.",
+        "start": 1024.4,
+        "end": 1027.4
+    },
+    {
+        "text": " ¿Por qué funciona?",
+        "start": 1027.4,
+        "end": 1029.4
+    },
+    {
+        "text": " Vamos a pensar un poco en este ejemplo mucho más prosaico.",
+        "start": 1029.4,
+        "end": 1032.4
+    },
+    {
+        "text": " Supongamos que acá en esto que es el parque de mi casa, que es infinito hacia acá.",
+        "start": 1040.4,
+        "end": 1048.4
+    },
+    {
+        "text": " Yo tengo un pasillo infinito y dispongo un montón de fichas de dominó para unas tras de otras.",
+        "start": 1048.4,
+        "end": 1056.4
+    },
+    {
+        "text": " Entonces la voy a dibujar de costado.",
+        "start": 1056.4,
+        "end": 1059.4
+    },
+    {
+        "text": " Esta es la primera ficha.",
+        "start": 1060.4,
+        "end": 1063.4
+    },
+    {
+        "text": " Esta es la segunda, la tercera.",
+        "start": 1065.4,
+        "end": 1069.4
+    },
+    {
+        "text": " Acá está la ficha número 23.",
+        "start": 1069.4,
+        "end": 1074.4
+    },
+    {
+        "text": " La 24.",
+        "start": 1074.4,
+        "end": 1077.4
+    },
+    {
+        "text": " No solo tengo un pasillo infinito sino detengo un juego de dominó con infinitas fichas.",
+        "start": 1080.4,
+        "end": 1086.4
+    },
+    {
+        "text": " Y las estoy mirando de perfil ¿sabé?",
+        "start": 1086.4,
+        "end": 1090.4
+    },
+    {
+        "text": " Bueno entonces si yo tiro la primera ficha",
+        "start": 1090.4,
+        "end": 1096.4
+    },
+    {
+        "text": " esta ficha golpea la segunda y entonces",
+        "start": 1101.4,
+        "end": 1106.4
+    },
+    {
+        "text": " tira la segunda que golpea la tercera etcétera.",
+        "start": 1106.4,
+        "end": 1110.4
+    },
+    {
+        "text": " Entonces cuando yo tiro la primera ficha",
+        "start": 1111.4,
+        "end": 1114.4
+    },
+    {
+        "text": " pica, hace caer la segunda, hace caer la tercera, hace caer la cuarta",
+        "start": 1114.4,
+        "end": 1120.4
+    },
+    {
+        "text": " y al final, bueno al final caen todas las fichas.",
+        "start": 1120.4,
+        "end": 1124.4
+    },
+    {
+        "text": " Cuando es el final y cuáles son todas las fichas, porque son infinitas.",
+        "start": 1128.4,
+        "end": 1131.4
+    },
+    {
+        "text": " Pero esto se puede formalizar así.",
+        "start": 1133.4,
+        "end": 1136.4
+    },
+    {
+        "text": " Vamos a decir que la propiedad PDN quiere decir cae la enésima ficha.",
+        "start": 1137.4,
+        "end": 1145.4
+    },
+    {
+        "text": " Entonces ¿qué no dice el principio de inducción completa en este caso?",
+        "start": 1159.4,
+        "end": 1164.4
+    },
+    {
+        "text": " Entonces dice sí, PDN1 que es cae la primera ficha ¿sabé?",
+        "start": 1166.4,
+        "end": 1187.4
+    },
+    {
+        "text": " Y ¿qué quiere decir?",
+        "start": 1197.4,
+        "end": 1202.4
+    },
+    {
+        "text": " PDN implica PDN1, esto es lo que quiere decir es si cae la enésima ficha",
+        "start": 1206.4,
+        "end": 1213.4
+    },
+    {
+        "text": " entonces también cae la siguiente.",
+        "start": 1213.4,
+        "end": 1216.4
+    },
+    {
+        "text": " Y esto en el dominó es claro porque si cae esta ficha",
+        "start": 1218.4,
+        "end": 1222.4
+    },
+    {
+        "text": " también va a tirar la siguiente y va a caer.",
+        "start": 1226.4,
+        "end": 1232.4
+    },
+    {
+        "text": " Entonces esto es lo que quiere decir es si cae la enésima ficha",
+        "start": 1233.4,
+        "end": 1241.4
+    },
+    {
+        "text": " cae la siguiente.",
+        "start": 1241.4,
+        "end": 1243.4
+    },
+    {
+        "text": " Entonces si cae la primera y si cada vez que cae una cae la siguiente",
+        "start": 1257.4,
+        "end": 1261.4
+    },
+    {
+        "text": " el principio de inducción completa lo que no dice es que caen todas.",
+        "start": 1261.4,
+        "end": 1267.4
+    },
+    {
+        "text": " O sea que cualquier ficha cae.",
+        "start": 1267.4,
+        "end": 1271.4
+    },
+    {
+        "text": " O sea esto quiere decir que para todo N la enésima ficha cae.",
+        "start": 1271.4,
+        "end": 1288.4
+    },
+    {
+        "text": " O sea que cualquier ficha cae la enésima ficha cae.",
+        "start": 1288.4,
+        "end": 1295.4
+    },
+    {
+        "text": " O sea que cualquier ficha cae la enésima ficha cae.",
+        "start": 1296.4,
+        "end": 1302.4
+    },
+    {
+        "text": " Entonces el principio de inducción completa si verificamos que cae la primera",
+        "start": 1317.4,
+        "end": 1322.4
+    },
+    {
+        "text": " o sea tiramos la primera y sabemos que cada vez que cae una cae la siguiente",
+        "start": 1322.4,
+        "end": 1327.4
+    },
+    {
+        "text": " nos dice que cualquier ficha acaba cayendo.",
+        "start": 1327.4,
+        "end": 1332.4
+    },
+    {
+        "text": " Muy bien.",
+        "start": 1337.4,
+        "end": 1339.4
+    },
+    {
+        "text": " Hasta acá todos parece muy contentos.",
+        "start": 1343.4,
+        "end": 1346.4
+    },
+    {
+        "text": " Bueno el principio de inducción completa se puede modificar un poco para que comience",
+        "start": 1347.4,
+        "end": 1352.4
+    },
+    {
+        "text": " en otro número que no sea el primero o sea si acá yo puse todas las fichas",
+        "start": 1352.4,
+        "end": 1358.4
+    },
+    {
+        "text": " de dominó y en vez de tirar la primera tiro la tercera ¿qué va a pasar?",
+        "start": 1358.4,
+        "end": 1365.4
+    },
+    {
+        "text": " Cae la tercera esa tira la cuarto tira la quinta tira la sexta etcétera.",
+        "start": 1365.4,
+        "end": 1370.4
+    },
+    {
+        "text": " Entonces cae en todas las tres en adelante pero la 1 y la 2 no necesariamente tiene que caer si yo le",
+        "start": 1371.4,
+        "end": 1381.4
+    },
+    {
+        "text": " le empujo a la ficha número 3.",
+        "start": 1381.4,
+        "end": 1384.4
+    },
+    {
+        "text": " Entonces en realidad el principio de inducción completa se podría modificar para probar",
+        "start": 1384.4,
+        "end": 1391.4
+    },
+    {
+        "text": " alguna propiedad que no necesariamente cumplan todos los números a partir de 1 pero que si cumplan",
+        "start": 1391.4,
+        "end": 1399.4
+    },
+    {
+        "text": " todos los números a partir del 28.",
+        "start": 1399.4,
+        "end": 1402.4
+    },
+    {
+        "text": " Entonces cómo lo escribiríamos en este caso?",
+        "start": 1402.4,
+        "end": 1405.4
+    },
+    {
+        "text": " En este caso diríamos supongamos que vale la propiedad P para un número en ese",
+        "start": 1405.4,
+        "end": 1414.4
+    },
+    {
+        "text": " ser, digamos 28 y que cada vez que vale para un número vale para el siguiente.",
+        "start": 1414.4,
+        "end": 1422.4
+    },
+    {
+        "text": " Entonces esto implica que para todos los números mayores iguales que en ese ser, vale la propiedad P.",
+        "start": 1423.4,
+        "end": 1431.4
+    },
+    {
+        "text": " Este es una pequeña modificación que puede ser útil en algunos casos vamos a hacer",
+        "start": 1437.4,
+        "end": 1443.4
+    },
+    {
+        "text": " un ejemplo de aplicación de esto.",
+        "start": 1443.4,
+        "end": 1446.4
+    },
+    {
+        "text": " Entonces vamos a probar que todo número mayor igual que 14 puede escribirse como suma de 3.",
+        "start": 1452.4,
+        "end": 1470.4
+    },
+    {
+        "text": " O sea de 3 del número 3 varias veces y entonces 8.",
+        "start": 1470.4,
+        "end": 1475.4
+    },
+    {
+        "text": " Todo número de natural mayor igual que 14 puede escribirse.",
+        "start": 1482.4,
+        "end": 1491.4
+    },
+    {
+        "text": " Como suma de 3 y 8.",
+        "start": 1491.4,
+        "end": 1514.4
+    },
+    {
+        "text": " Claro que no es lo mismo que 13 con C.",
+        "start": 1515.4,
+        "end": 1521.4
+    },
+    {
+        "text": " Entonces la propiedad que vamos a mirar es Pdn, es N,",
+        "start": 1521.4,
+        "end": 1535.4
+    },
+    {
+        "text": " C, N, se escribe como suma de 13 y 8.",
+        "start": 1535.4,
+        "end": 1542.4
+    },
+    {
+        "text": " Entonces como queremos probar algo para todos los números mayores iguales que 14,",
+        "start": 1557.4,
+        "end": 1562.4
+    },
+    {
+        "text": " tenemos que empezar el catorce, tenemos que dar que se cumple para el catorce y que si se cumple para un número se cumple para el siguiente y eso nos va a dar que se cumple para todos los números mayores iguales que 14.",
+        "start": 1563.4,
+        "end": 1576.4
+    },
+    {
+        "text": " Entonces el paso base es probar que lo que queremos se cumple para el número 14.",
+        "start": 1577.4,
+        "end": 1600.4
+    },
+    {
+        "text": " Y bueno para probar que el número 14 se escribe como suma de 13 y 8.",
+        "start": 1601.4,
+        "end": 1607.4
+    },
+    {
+        "text": " Lo que hay que hacer es escribirlo como sumas de 38.",
+        "start": 1607.4,
+        "end": 1612.4
+    },
+    {
+        "text": " Entonces a ver si me sale el 14 va a ser 8 más 6.",
+        "start": 1612.4,
+        "end": 1620.4
+    },
+    {
+        "text": " Ahí está.",
+        "start": 1621.4,
+        "end": 1627.4
+    },
+    {
+        "text": " Y ahora lo que tenemos que probar es el paso inductivo, o sea que cada vez que la propiedad se cumple para un número se cumple para el siguiente.",
+        "start": 1627.4,
+        "end": 1636.4
+    },
+    {
+        "text": " Entonces ahora la hipótesis inductiva es que la propiedad P se cumple para el número N, esta es la hipótesis inductiva.",
+        "start": 1637.4,
+        "end": 1664.4
+    },
+    {
+        "text": " O sea la hipótesis inductiva es que el número N se escribe como suma de 13 y 8.",
+        "start": 1665.4,
+        "end": 1676.4
+    },
+    {
+        "text": " Y la hipótesis inductiva es que el número N, se escribe como suma de 13 y 8.",
+        "start": 1676.4,
+        "end": 1699.4
+    },
+    {
+        "text": " Entonces el paso inductivo consiste en probar que si pasa esto pasa esto otro.",
+        "start": 1707.4,
+        "end": 1721.4
+    },
+    {
+        "text": " Usándole hipótesis inductiva a probar la tesis inductiva.",
+        "start": 1721.4,
+        "end": 1728.4
+    },
+    {
+        "text": " Entonces quiero probar que el número N más 1 se escribe como suma de 13 y 8.",
+        "start": 1729.4,
+        "end": 1735.4
+    },
+    {
+        "text": " Sabiendo siempre que estamos hablando de números mayores que 14.",
+        "start": 1735.4,
+        "end": 1743.4
+    },
+    {
+        "text": " Entonces vamos a tomar, vamos a tratar de ver qué pasa con el número N más 1.",
+        "start": 1744.4,
+        "end": 1755.4
+    },
+    {
+        "text": " Entonces sabemos que N se escribe como suma de 13 y 8 y queremos escribir N más 1.",
+        "start": 1755.4,
+        "end": 1764.4
+    },
+    {
+        "text": " Entonces tengo N y el razonamiento voy a hacer este.",
+        "start": 1765.4,
+        "end": 1768.4
+    },
+    {
+        "text": " Si hay algún 8 en la descomposición de N como suma de 13 y 8, ese 8 lo cambio por un 9 que es 3 más 3 más 3 y con eso escribié N más 1.",
+        "start": 1768.4,
+        "end": 1786.4
+    },
+    {
+        "text": " Entonces ese es mi primer caso. Si hay a escribir N como suma de 13 y 8.",
+        "start": 1787.4,
+        "end": 1805.4
+    },
+    {
+        "text": " Hay algún 8.",
+        "start": 1806.4,
+        "end": 1812.4
+    },
+    {
+        "text": " Sacándolo y cambiándolo por 3 más 3 más 3.",
+        "start": 1813.4,
+        "end": 1824.4
+    },
+    {
+        "text": " Escribimos N más 1.",
+        "start": 1830.4,
+        "end": 1835.4
+    },
+    {
+        "text": " Entonces en este caso sí se cumple que N más 1 es suma de 13 y 8.",
+        "start": 1836.4,
+        "end": 1842.4
+    },
+    {
+        "text": " Y nos queda considerar la posibilidad de que no haya ningún 8 en la descomposición de N.",
+        "start": 1842.4,
+        "end": 1857.4
+    },
+    {
+        "text": " ¿Se entiende lo que estoy haciendo?",
+        "start": 1858.4,
+        "end": 1862.4
+    },
+    {
+        "text": " Entonces si a escribir N como suma de 13 y 8 eso es lo que aparece acá.",
+        "start": 1862.4,
+        "end": 1874.4
+    },
+    {
+        "text": " No hay ningún 8.",
+        "start": 1874.4,
+        "end": 1879.4
+    },
+    {
+        "text": " Para empezar N tiene que ser mayor que 14 porque en la descomposición de 14 sí hay un 8.",
+        "start": 1888.4,
+        "end": 1897.4
+    },
+    {
+        "text": " No podemos escribir 14 sólo como suma de 13 porque no es múltiplo de 13.",
+        "start": 1897.4,
+        "end": 1904.4
+    },
+    {
+        "text": " Así que tiene que ser mayor que por lo menos 4 tiene que ser en realidad mayor igual que 15.",
+        "start": 1904.4,
+        "end": 1912.4
+    },
+    {
+        "text": " Entonces tiene que tener por lo menos 5.",
+        "start": 1912.4,
+        "end": 1919.4
+    },
+    {
+        "text": " Exactamente.",
+        "start": 1919.4,
+        "end": 1924.4
+    },
+    {
+        "text": " Por lo que hay al menos y entonces que se hace acá.",
+        "start": 1924.4,
+        "end": 1931.4
+    },
+    {
+        "text": " Si tengo así 5 13 esto es 15 como hago para agregar uno.",
+        "start": 1931.4,
+        "end": 1953.4
+    },
+    {
+        "text": " Estas son mis estrategias didácticas para ver si todos están atentos ya se seguirán familiarizando con ellas.",
+        "start": 1954.4,
+        "end": 1969.4
+    },
+    {
+        "text": " Entonces esto da 15 y quiero esto parece en la descomposición de número N y quiero cambiar por N más 1.",
+        "start": 1969.4,
+        "end": 1979.4
+    },
+    {
+        "text": " Quiero cambiar el 15 y pon 16.",
+        "start": 1980.4,
+        "end": 1986.4
+    },
+    {
+        "text": " Y un 16 es 8 más 8.",
+        "start": 1986.4,
+        "end": 1991.4
+    },
+    {
+        "text": " Entonces cambiando 5 de los 13 por 8 más 8 se escribe en emas 1.",
+        "start": 1991.4,
+        "end": 2002.4
+    },
+    {
+        "text": " Entonces recapitulando.",
+        "start": 2009.4,
+        "end": 2033.4
+    },
+    {
+        "text": " Queremos probar que todo número mayor igual que 14 se escribe como suma de 13 y 8.",
+        "start": 2034.4,
+        "end": 2040.4
+    },
+    {
+        "text": " Lo que hicimos fue probamos que el propio número 14 se escribe de este modo.",
+        "start": 2040.4,
+        "end": 2047.4
+    },
+    {
+        "text": " Eso es el paso base y después del paso inductivo consistí en probar que si un número se escribe como suma de 13 y 8 es el siguiente también.",
+        "start": 2047.4,
+        "end": 2056.4
+    },
+    {
+        "text": " Y esto lo probamos acá y para eso tuvimos que considerar dos posibilidades.",
+        "start": 2057.4,
+        "end": 2064.4
+    },
+    {
+        "text": " Que el número N se escribe era usando algún 8 y que el número N se escribe era usando solamente 13.",
+        "start": 2064.4,
+        "end": 2075.4
+    },
+    {
+        "text": " Pero en ambos casos logramos escribir el número N más 1 como suma de 13 y 8.",
+        "start": 2076.4,
+        "end": 2083.4
+    },
+    {
+        "text": " Partiendo de que ya podíamos escribir N de esa manera.",
+        "start": 2083.4,
+        "end": 2087.4
+    },
+    {
+        "text": " Entonces el principio de inducción completa nos asegura que todo número mayor igual que 14 se puede escribir como suma de 13 y 8.",
+        "start": 2087.4,
+        "end": 2097.4
+    },
+    {
+        "text": " Entonces el principio de inducción completa funciona aunque nuestro paso base no sea el 1.",
+        "start": 2098.4,
+        "end": 2104.4
+    },
+    {
+        "text": " Vamos a ver si uno puede usar el principio de inducción completa de una manera un poco más sofisticada.",
+        "start": 2104.4,
+        "end": 2107.4
+    },
+    {
+        "text": " Por ejemplo vamos a ver que pasa que la pared se escribe como suma de 13 y 8.",
+        "start": 2107.4,
+        "end": 2114.4
+    },
+    {
+        "text": " A veces uno puede usar el principio de inducción completa de una manera un poco más sofisticada.",
+        "start": 2115.4,
+        "end": 2124.4
+    },
+    {
+        "text": " Por ejemplo vamos a ver qué pasa acá.",
+        "start": 2124.4,
+        "end": 2128.4
+    },
+    {
+        "text": " Supongamos que yo quiero probar la siguiente afirmación para todos los par de números naturales N y M.",
+        "start": 2134.4,
+        "end": 2143.4
+    },
+    {
+        "text": " M mayores iguales que 2.",
+        "start": 2143.4,
+        "end": 2148.4
+    },
+    {
+        "text": " Se cumple lo siguiente.",
+        "start": 2153.4,
+        "end": 2155.4
+    },
+    {
+        "text": " N más 7 es menor igual que N por M.",
+        "start": 2163.4,
+        "end": 2168.4
+    },
+    {
+        "text": " Yo quiero probar que si tengo 2 números naturales, sobre su igual es que 2.",
+        "start": 2169.4,
+        "end": 2175.4
+    },
+    {
+        "text": " Entonces su suma es menor igual que su producto.",
+        "start": 2175.4,
+        "end": 2180.4
+    },
+    {
+        "text": " Una cosa inteligente que se pueda hacer acá es hacer una demostración directa que no utilice el método de inducción completa.",
+        "start": 2182.4,
+        "end": 2190.4
+    },
+    {
+        "text": " Justo en este ejemplo si ustedes piensan un poco les va a salir una prueba sencilla de esto.",
+        "start": 2191.4,
+        "end": 2197.4
+    },
+    {
+        "text": " Pero el objetivo de esta clase es ejemplificar el método de inducción completa.",
+        "start": 2197.4,
+        "end": 2202.4
+    },
+    {
+        "text": " Así que yo voy a probar esto usando inducción completa.",
+        "start": 2202.4,
+        "end": 2206.4
+    },
+    {
+        "text": " El problema es que acá no tengo un número natural N para el cual yo quiero probar algo.",
+        "start": 2208.4,
+        "end": 2215.4
+    },
+    {
+        "text": " Tengo N y tengo M.",
+        "start": 2215.4,
+        "end": 2218.4
+    },
+    {
+        "text": " Entonces, ¿qué podemos hacer?",
+        "start": 2220.4,
+        "end": 2223.4
+    },
+    {
+        "text": " Vamos a hacer lo siguiente.",
+        "start": 2225.4,
+        "end": 2228.4
+    },
+    {
+        "text": " Quiero probar esto para todo N y M mayores igual que 2.",
+        "start": 2228.4,
+        "end": 2231.4
+    },
+    {
+        "text": " Entonces voy a decir que la propiedad P, D N,",
+        "start": 2231.4,
+        "end": 2238.4
+    },
+    {
+        "text": " es lo siguiente.",
+        "start": 2239.4,
+        "end": 2242.4
+    },
+    {
+        "text": " Que el número N cumpla la propiedad P, va a ser lo siguiente,",
+        "start": 2242.4,
+        "end": 2249.4
+    },
+    {
+        "text": " que para todo N, M mayores igual que 2, N más M, va a ser menor igual que N por M.",
+        "start": 2249.4,
+        "end": 2260.4
+    },
+    {
+        "text": " O sea, el número N cumpla la propiedad P cuando cumpla esto para todo natural N,",
+        "start": 2261.4,
+        "end": 2272.4
+    },
+    {
+        "text": " M mayores igual que 2.",
+        "start": 2272.4,
+        "end": 2275.4
+    },
+    {
+        "text": " ¿Se entiende?",
+        "start": 2275.4,
+        "end": 2278.4
+    },
+    {
+        "text": " Entonces, lo que yo tengo que probar es que vale la propiedad P para todo natural N,",
+        "start": 2280.4,
+        "end": 2288.4
+    },
+    {
+        "text": " M mayores igual que 2.",
+        "start": 2288.4,
+        "end": 2291.4
+    },
+    {
+        "text": " Entonces, vamos a probar por inducción completa.",
+        "start": 2295.4,
+        "end": 2299.4
+    },
+    {
+        "text": " Que para todo N, mayor igual que 2, se cumpla la propiedad P.",
+        "start": 2299.4,
+        "end": 2321.4
+    },
+    {
+        "text": " Entonces, si yo quiero probar esto por inducción,",
+        "start": 2322.4,
+        "end": 2327.4
+    },
+    {
+        "text": " lo primero que tengo que hacer es el paso base.",
+        "start": 2327.4,
+        "end": 2338.4
+    },
+    {
+        "text": " ¿Cuál es el paso base en este caso?",
+        "start": 2341.4,
+        "end": 2345.4
+    },
+    {
+        "text": " N igual 2.",
+        "start": 2346.4,
+        "end": 2350.4
+    },
+    {
+        "text": " Exactamente, quiero probar que la propiedad P vale para el número 2, N igual 2.",
+        "start": 2350.4,
+        "end": 2359.4
+    },
+    {
+        "text": " Entonces, el paso base consiste en lo siguiente,",
+        "start": 2359.4,
+        "end": 2366.4
+    },
+    {
+        "text": " en probar que para todo N, mayor igual que 2, 2 más M es menor igual que 2, N.",
+        "start": 2366.4,
+        "end": 2380.4
+    },
+    {
+        "text": " ¿Pan?",
+        "start": 2381.4,
+        "end": 2384.4
+    },
+    {
+        "text": " probar el paso base, probar eso.",
+        "start": 2385.4,
+        "end": 2390.4
+    },
+    {
+        "text": " ¿Cómo hago eso?",
+        "start": 2390.4,
+        "end": 2394.4
+    },
+    {
+        "text": " Haciendo inducción de vuelta, exactamente.",
+        "start": 2394.4,
+        "end": 2397.4
+    },
+    {
+        "text": " Capas que hay otras maneras, pero en esta clase hoy hacemos inducción.",
+        "start": 2397.4,
+        "end": 2401.4
+    },
+    {
+        "text": " Entonces, ahora lo que voy a hacer para probar este paso base es hacer inducción N,",
+        "start": 2401.4,
+        "end": 2409.4
+    },
+    {
+        "text": " en azul.",
+        "start": 2410.4,
+        "end": 2413.4
+    },
+    {
+        "text": " Claro.",
+        "start": 2413.4,
+        "end": 2415.4
+    },
+    {
+        "text": " PDM, pero ahora no voy a usar la misma letra P, ¿sí?",
+        "start": 2415.4,
+        "end": 2418.4
+    },
+    {
+        "text": " QDM, ahí va.",
+        "start": 2418.4,
+        "end": 2420.4
+    },
+    {
+        "text": " La propiedad Q es 2 más M es menor igual que 12,",
+        "start": 2420.4,
+        "end": 2433.4
+    },
+    {
+        "text": " y ahora quiero probar esta propiedad para M.",
+        "start": 2434.4,
+        "end": 2439.4
+    },
+    {
+        "text": " Entonces, probamos, queremos probar que para todo M, mayor igual que 2, vale la propiedad Q",
+        "start": 2439.4,
+        "end": 2451.4
+    },
+    {
+        "text": " y lo hacemos por inducción N.",
+        "start": 2451.4,
+        "end": 2455.4
+    },
+    {
+        "text": " Entonces, cuál es el paso base M igual 2?",
+        "start": 2455.4,
+        "end": 2470.4
+    },
+    {
+        "text": " Entonces, cuando pongo M igual 2, ¿quién es que la propiedad Q para N,",
+        "start": 2470.4,
+        "end": 2480.4
+    },
+    {
+        "text": " quiere decir que 2 más 2 es menor igual que 2 por 2,",
+        "start": 2481.4,
+        "end": 2487.4
+    },
+    {
+        "text": " o sea, que 4 es menor igual que 4, y esto es cierto.",
+        "start": 2487.4,
+        "end": 2493.4
+    },
+    {
+        "text": " Entonces, la propiedad Q vale para M igual 2.",
+        "start": 2493.4,
+        "end": 2499.4
+    },
+    {
+        "text": " Y ahora el paso inductivo",
+        "start": 2499.4,
+        "end": 2503.4
+    },
+    {
+        "text": " es decir que si la propiedad Q vale para un número M vale para el número M más 1,",
+        "start": 2503.4,
+        "end": 2516.4
+    },
+    {
+        "text": " o sea, que si 2 más M es menor igual que 2 por M,",
+        "start": 2516.4,
+        "end": 2525.4
+    },
+    {
+        "text": " entonces 2 por M más 1, 2 más M más 1, perdón,",
+        "start": 2525.4,
+        "end": 2534.4
+    },
+    {
+        "text": " va a ser menor igual que 2 por M más 1.",
+        "start": 2534.4,
+        "end": 2537.4
+    },
+    {
+        "text": " Tengo que probar ese paso inductivo.",
+        "start": 2538.4,
+        "end": 2547.4
+    },
+    {
+        "text": " O sea, la hipótesis inductiva, lo que voy a usar,",
+        "start": 2556.4,
+        "end": 2561.4
+    },
+    {
+        "text": " es que 2 más M es menor igual que 2 por M,",
+        "start": 2561.4,
+        "end": 2572.4
+    },
+    {
+        "text": " sí, a 2 más M sí, sí, gracias, gracias, gracias.",
+        "start": 2572.4,
+        "end": 2578.4
+    },
+    {
+        "text": " Entonces, mi hipótesis inductiva es lo que está del lado izquierdo de desemplicación,",
+        "start": 2579.4,
+        "end": 2592.4
+    },
+    {
+        "text": " que 2 más M es menor igual que 2 por M, y mi tensis inductiva,",
+        "start": 2592.4,
+        "end": 2597.4
+    },
+    {
+        "text": " que es lo que tengo que usar, probando esto,",
+        "start": 2597.4,
+        "end": 2601.4
+    },
+    {
+        "text": " es que 2 más M más 1, el menor igual que 2 por M más 1.",
+        "start": 2601.4,
+        "end": 2611.4
+    },
+    {
+        "text": " Usando esto, probar esto.",
+        "start": 2614.4,
+        "end": 2616.4
+    },
+    {
+        "text": " Eso es lo mismo que está escrito ahí abajo.",
+        "start": 2616.4,
+        "end": 2620.4
+    },
+    {
+        "text": " Vamos a hacerlo.",
+        "start": 2620.4,
+        "end": 2623.4
+    },
+    {
+        "text": " Entonces, 2 más M más 1, ya sabemos por hipótesis inductiva,",
+        "start": 2624.4,
+        "end": 2634.4
+    },
+    {
+        "text": " que 2 más M es menor igual que 2 M, ¿no?",
+        "start": 2634.4,
+        "end": 2638.4
+    },
+    {
+        "text": " Entonces, esto es menor igual que 2 M más 1.",
+        "start": 2638.4,
+        "end": 2647.4
+    },
+    {
+        "text": " Y esto, a su vez, entonces acá estoy usando la hipótesis inductiva.",
+        "start": 2648.4,
+        "end": 2657.4
+    },
+    {
+        "text": " La hipótesis inductiva, la UC, cuando dije que esto era menor igual que 2 M.",
+        "start": 2657.4,
+        "end": 2668.4
+    },
+    {
+        "text": " Muy bien.",
+        "start": 2671.4,
+        "end": 2673.4
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 2674.4,
+        "end": 2676.4
+    },
+    {
+        "text": " Claro, pero hasta ahí usé el hipótesis inductivo.",
+        "start": 2676.4,
+        "end": 2681.4
+    },
+    {
+        "text": " Bueno, 2 M más 1, menor igual que 2 M más 2.",
+        "start": 2681.4,
+        "end": 2687.4
+    },
+    {
+        "text": " Estoy usando que sumar 1, me hace no me va a marcar.",
+        "start": 2690.4,
+        "end": 2694.4
+    },
+    {
+        "text": " Y esto es 2 por M más 1.",
+        "start": 2694.4,
+        "end": 2699.4
+    },
+    {
+        "text": " Entonces, usando el hipótesis inductiva, probamos la UC,",
+        "start": 2700.4,
+        "end": 2704.4
+    },
+    {
+        "text": " que 2 M más 1, menor igual que 2 por M más 1.",
+        "start": 2704.4,
+        "end": 2710.4
+    },
+    {
+        "text": " Entonces, hasta ahora hicimos que...",
+        "start": 2713.4,
+        "end": 2717.4
+    },
+    {
+        "text": " El paso base de lo que queríamos probar.",
+        "start": 2721.4,
+        "end": 2726.4
+    },
+    {
+        "text": " Quieríamos probar que el número 2 cumplía la propiedad P,",
+        "start": 2727.4,
+        "end": 2734.4
+    },
+    {
+        "text": " o sea que el número 2 cumplía que para todo...",
+        "start": 2734.4,
+        "end": 2738.4
+    },
+    {
+        "text": " que para todo el mejor igual que 2, 2 más M, era menor igual que 2 M.",
+        "start": 2738.4,
+        "end": 2742.4
+    },
+    {
+        "text": " Y lo que hicimos en azul fue probar esta afinomación por la inducción.",
+        "start": 2742.4,
+        "end": 2746.4
+    },
+    {
+        "text": " Entonces, les recuerdo que la propiedad P, que queríamos probar,",
+        "start": 2746.4,
+        "end": 2751.4
+    },
+    {
+        "text": " era P, D, N, quería decir para todo M,",
+        "start": 2752.4,
+        "end": 2756.4
+    },
+    {
+        "text": " mayor igual que 2, M más M, es menor que N por M.",
+        "start": 2756.4,
+        "end": 2761.4
+    },
+    {
+        "text": " Y hasta ahora lo que hicimos fue probar esa afinomación cuando N es igual a 2.",
+        "start": 2761.4,
+        "end": 2767.4
+    },
+    {
+        "text": " Eso hicimos en azul.",
+        "start": 2767.4,
+        "end": 2770.4
+    },
+    {
+        "text": " Bueno, y ahora tenemos el paso inductivo.",
+        "start": 2770.4,
+        "end": 2774.4
+    },
+    {
+        "text": " Que consiste en probar que si la propiedad P vale para N,",
+        "start": 2782.4,
+        "end": 2788.4
+    },
+    {
+        "text": " entonces vale para N más 1.",
+        "start": 2788.4,
+        "end": 2795.4
+    },
+    {
+        "text": " O sea, en esta ocasión nuestra hipótesis inductiva va a ser que para todo M,",
+        "start": 2796.4,
+        "end": 2805.4
+    },
+    {
+        "text": " mayor igual que 2, N más M es menor igual que N por M.",
+        "start": 2805.4,
+        "end": 2812.4
+    },
+    {
+        "text": " Y nuestra hipótesis inductiva va a ser que para todo M,",
+        "start": 2814.4,
+        "end": 2819.4
+    },
+    {
+        "text": " mayor igual que 2, N más 1, M, va a ser menor igual a N más 1 por M.",
+        "start": 2819.4,
+        "end": 2827.4
+    },
+    {
+        "text": " Eso es lo que tenemos que hacer ahora.",
+        "start": 2828.4,
+        "end": 2833.4
+    },
+    {
+        "text": " Probar esta tesis inductiva usando este potecesis inductiva.",
+        "start": 2834.4,
+        "end": 2839.4
+    },
+    {
+        "text": " Vamos a hacer.",
+        "start": 2858.4,
+        "end": 2864.4
+    },
+    {
+        "text": " Entonces, N más 1 más M, obviamente es N más 1 más M, ¿no?",
+        "start": 2866.4,
+        "end": 2879.4
+    },
+    {
+        "text": " Entonces, nuestra hipótesis inductiva es que esto que está acá es menor igual que N por M.",
+        "start": 2888.4,
+        "end": 2902.4
+    },
+    {
+        "text": " Entonces, aplicando la hipótesis inductiva,",
+        "start": 2906.4,
+        "end": 2912.4
+    },
+    {
+        "text": " sabemos que esto es menor que N por M más 1.",
+        "start": 2913.4,
+        "end": 2919.4
+    },
+    {
+        "text": " Ahora, este M es un número natural.",
+        "start": 2928.4,
+        "end": 2941.4
+    },
+    {
+        "text": " Entonces, de hecho, ese M es mayor igual que 2.",
+        "start": 2942.4,
+        "end": 2947.4
+    },
+    {
+        "text": " Entonces, ese es mayor igual que 1.",
+        "start": 2947.4,
+        "end": 2953.4
+    },
+    {
+        "text": " Entonces, esto es menor igual que N por M más M.",
+        "start": 2953.4,
+        "end": 2961.4
+    },
+    {
+        "text": " Lo que hice fue dejar igual, primero sumando y el 1 lo cambié por un M, que es más grande.",
+        "start": 2961.4,
+        "end": 2970.4
+    },
+    {
+        "text": " Y ahora esto sacando M de factor común es N más 1 por M.",
+        "start": 2971.4,
+        "end": 2978.4
+    },
+    {
+        "text": " Entonces, lo que probamos es que N más 1 más M es menor igual que N más 1 por M,",
+        "start": 2981.4,
+        "end": 2996.4
+    },
+    {
+        "text": " que es lo que queríamos probar si que es nuestra tesis inductiva.",
+        "start": 2997.4,
+        "end": 3006.4
+    },
+    {
+        "text": " Usándole hipótesis inductivos, probamos la tesis inductiva, o sea, hicimos el paso inductivo.",
+        "start": 3009.4,
+        "end": 3016.4
+    },
+    {
+        "text": " Entonces, recapitulando, tenemos la propiedad P para el número N que quería decir que la propiedad P",
+        "start": 3017.4,
+        "end": 3025.4
+    },
+    {
+        "text": " valiera para el número N quería decir que N está trifaciatista.",
+        "start": 3025.4,
+        "end": 3030.4
+    },
+    {
+        "text": " Que para todo M más y luego que 2 valiera esto, probamos que la primera cierta para el número 2",
+        "start": 3032.4,
+        "end": 3039.4
+    },
+    {
+        "text": " y que cierta para un número, era cierta para el siguiente.",
+        "start": 3039.4,
+        "end": 3044.4
+    },
+    {
+        "text": " Y entonces cierta para todos los N, mayores iguales que 2.",
+        "start": 3045.4,
+        "end": 3049.4
+    },
+    {
+        "text": " Entonces, para todo N más y luego que 2 es cierta para todo N más y luego que 2 vala esta desigualdad.",
+        "start": 3050.4,
+        "end": 3056.4
+    },
+    {
+        "text": " Entonces, esto es un ejemplo de cómo la inducción sirve para hacer demostraciones un poco más complicadas",
+        "start": 3061.4,
+        "end": 3067.4
+    },
+    {
+        "text": " en las que no necesariamente parece un solo número para el cual hay que probar algo.",
+        "start": 3067.4,
+        "end": 3071.4
+    },
+    {
+        "text": " Aquí lo decimos fue aplicar una vez el principio de inducción completa adentro del paso base del principio de inducción completa.",
+        "start": 3072.4,
+        "end": 3081.4
+    },
+    {
+        "text": " Está clarísimo, ¿verdad?",
+        "start": 3091.4,
+        "end": 3093.4
+    },
+    {
+        "text": " Como está clarísimo, vamos a hacer otra aplicación.",
+        "start": 3096.4,
+        "end": 3098.4
+    },
+    {
+        "text": " En que vamos a probar que todos los caballos son del mismo color.",
+        "start": 3101.4,
+        "end": 3105.4
+    },
+    {
+        "text": " Este es un ejemplo propuesto por un matemático que se llamaba polia.",
+        "start": 3108.4,
+        "end": 3113.4
+    },
+    {
+        "text": " Polia, ahora lo decimos.",
+        "start": 3118.4,
+        "end": 3120.4
+    },
+    {
+        "text": " Este es el distinguito matemático que probó el teore más fascinante que vamos a probar con di nocia, que es que todos los caballos son del mismo color.",
+        "start": 3121.4,
+        "end": 3127.4
+    },
+    {
+        "text": " Entonces este...",
+        "start": 3129.4,
+        "end": 3132.4
+    },
+    {
+        "text": " Vamos a probar que todos los caballos son del mismo color.",
+        "start": 3151.4,
+        "end": 3154.4
+    },
+    {
+        "text": " Vamos a hacer así...",
+        "start": 3174.4,
+        "end": 3176.4
+    },
+    {
+        "text": " PDN, lo que va a querer decir es lo siguiente.",
+        "start": 3181.4,
+        "end": 3184.4
+    },
+    {
+        "text": " Tiene que ser una propiedad del número N.",
+        "start": 3185.4,
+        "end": 3187.4
+    },
+    {
+        "text": " Entonces va a ser la siguiente propiedad.",
+        "start": 3188.4,
+        "end": 3190.4
+    },
+    {
+        "text": " En todo conjunto de N caballos hay un solo color.",
+        "start": 3191.4,
+        "end": 3195.4
+    },
+    {
+        "text": " Si o sea cada vez que yo tengo un conjunto de N caballos, los N son del mismo color.",
+        "start": 3197.4,
+        "end": 3203.4
+    },
+    {
+        "text": " Si o sea cada vez que yo tengo un nombre de N caballos, no podemos probar.",
+        "start": 3210.4,
+        "end": 3214.4
+    },
+    {
+        "text": " ¡Taclaros que esto es una propiedad del número N!",
+        "start": 3229.4,
+        "end": 3233.4
+    },
+    {
+        "text": " Por ejemplo,",
+        "start": 3234.4,
+        "end": 3236.4
+    },
+    {
+        "text": " la propiedad número N. Por ejemplo, que valga la propiedad para el número 5, lo que",
+        "start": 3236.4,
+        "end": 3244.04
+    },
+    {
+        "text": " quiere decir es que cada vez que yo tengo un conjunto de 5 caballos, mire los que corren",
+        "start": 3244.04,
+        "end": 3251.8
+    },
+    {
+        "text": " en el premio Ramírez en los primeros 5 carriles, eso son todos el mismo color. Vamos",
+        "start": 3251.8,
+        "end": 3257.56
+    },
+    {
+        "text": " a probar esta propiedad por inducción N. Entonces el paso base, el paso base consiste en",
+        "start": 3257.56,
+        "end": 3272.64
+    },
+    {
+        "text": " probar que la propiedad P vale para el número 1, o sea que cada vez que tengo un conjunto",
+        "start": 3272.64,
+        "end": 3281.08
+    },
+    {
+        "text": " de 1 caballo hay un solo color de caballo. Entonces está claro que si yo tengo un solo",
+        "start": 3281.08,
+        "end": 3300.36
+    },
+    {
+        "text": " caballo de que coloreste el color que es el caballo. Para un caballo la propiedad es cierta.",
+        "start": 3300.36,
+        "end": 3314.2400000000002
+    },
+    {
+        "text": " Y ahora vamos a probar el paso inductivo que consiste en probar que si la propiedad vale para",
+        "start": 3314.2400000000002,
+        "end": 3327.28
+    },
+    {
+        "text": " N caballos, entonces vale para N más 1 caballos. Supongo que si la propiedad vale para",
+        "start": 3327.28,
+        "end": 3338.8
+    },
+    {
+        "text": " conjunto de N caballos, vale para conjunto de N más 1 caballos. Entonces mi pote si es inductiva",
+        "start": 3338.8,
+        "end": 3346.5600000000004
+    },
+    {
+        "text": " es que cada vez que yo tengo N caballos son todos el mismo color. Y mi tesis inductiva es que",
+        "start": 3346.56,
+        "end": 3358.08
+    },
+    {
+        "text": " cada vez que yo tengo N más 1 caballos son todos el mismo color. Y usando el hipótesis inductiva",
+        "start": 3358.08,
+        "end": 3370.08
+    },
+    {
+        "text": " vamos a probar la tesis inductiva.",
+        "start": 3370.08,
+        "end": 3374.04
+    },
+    {
+        "text": " Entonces quiero probar la tesis inductiva que es que cada vez que yo tengo un conjunto de N",
+        "start": 3374.04,
+        "end": 3400.12
+    },
+    {
+        "text": " más 1 caballos son todos el mismo. Entonces tomemos un conjunto de N más 1 caballos.",
+        "start": 3400.12,
+        "end": 3407.4
+    },
+    {
+        "text": " ¿Qué va a ser el conjunto del caballo 1 hasta el caballo N más 1?",
+        "start": 3407.4,
+        "end": 3429.2400000000002
+    },
+    {
+        "text": " No es un conjunto de N más 1 caballos queremos ver que son todos el mismo color.",
+        "start": 3429.24,
+        "end": 3440.24
+    },
+    {
+        "text": " Entonces por hipótesis inductiva si yo tomo los N primeros caballos de este conjunto,",
+        "start": 3440.24,
+        "end": 3453.0
+    },
+    {
+        "text": " la hipótesis inductiva es que cada vez que yo tenía un conjunto de N caballos eran todos",
+        "start": 3459.08,
+        "end": 3463.8799999999997
+    },
+    {
+        "text": " el mismo color. Entonces en este conjunto de N caballos hay un solo color.",
+        "start": 3463.88,
+        "end": 3472.6400000000003
+    },
+    {
+        "text": " Y ahora si tomo en vez de los primeros N, los últimos N,",
+        "start": 3479.76,
+        "end": 3484.44
+    },
+    {
+        "text": " o sea los caballos segundo, tercero, cuarta está en N más 1, acá también hay un solo color.",
+        "start": 3484.44,
+        "end": 3495.0
+    },
+    {
+        "text": " Pero obviamente digamos si todos estos caballos son negros y todos estos caballos son negros,",
+        "start": 3502.12,
+        "end": 3510.28
+    },
+    {
+        "text": " los todos son negros. O sea, digamos acá este el segundo caballo, si todos estos son negros,",
+        "start": 3510.28,
+        "end": 3528.4
+    },
+    {
+        "text": " el segundo caballo negro. Y si todos estos caballos son del mismo color,",
+        "start": 3528.4,
+        "end": 3535.48
+    },
+    {
+        "text": " todos son del mismo color que el segundo caballo, de negro.",
+        "start": 3535.48,
+        "end": 3541.0
+    },
+    {
+        "text": " Entonces todos son negros.",
+        "start": 3542.52,
+        "end": 3545.2400000000002
+    },
+    {
+        "text": " Entonces acá hay un solo color.",
+        "start": 3558.2,
+        "end": 3560.56
+    },
+    {
+        "text": " Por ejemplo una manera de verlo,",
+        "start": 3566.48,
+        "end": 3569.04
+    },
+    {
+        "text": " es que todos son del color del segundo caballo.",
+        "start": 3573.04,
+        "end": 3575.48
+    },
+    {
+        "text": " Muy bien.",
+        "start": 3578.84,
+        "end": 3579.48
+    },
+    {
+        "text": " Acaso probé el paso hace, que era que si yo tenía un conjunto en caballo,",
+        "start": 3579.48,
+        "end": 3595.84
+    },
+    {
+        "text": " todos ahí han del mismo color y probé que si la propiedad se va al paralleno,",
+        "start": 3595.84,
+        "end": 3602.6
+    },
+    {
+        "text": " ¿y if no le va, ni paraí Sharkcost?",
+        "start": 3602.68,
+        "end": 3604.44
+    },
+    {
+        "text": " Dej guarantee,",
+        "start": 3606.4,
+        "end": 3607.7599999999998
+    },
+    {
+        "text": " o si les ha��ilOSio,",
+        "start": 3611.44,
+        "end": 3616.68
+    },
+    {
+        "text": " Tiene un gol, pero no es porque es el mismo que el que es el amor y el caballo.",
+        "start": 3616.68,
+        "end": 3630.0
+    },
+    {
+        "text": " ¿Entienden lo que hice los compañeros o no?",
+        "start": 3630.0,
+        "end": 3639.4199999999996
+    },
+    {
+        "text": " ¿No está diciendo eso?",
+        "start": 3639.42,
+        "end": 3641.42
+    },
+    {
+        "text": " No, no, no, no estoy diciendo eso.",
+        "start": 3641.42,
+        "end": 3643.42
+    },
+    {
+        "text": " Lo que ella y él están diciendo es lo siguiente,",
+        "start": 3643.42,
+        "end": 3646.42
+    },
+    {
+        "text": " que yo no demostré que todos los caballos tenen el mismo color.",
+        "start": 3646.42,
+        "end": 3649.42
+    },
+    {
+        "text": " Después uno va a la calle y obviamente todos los caballos que no ve por ahí son el mismo color.",
+        "start": 3649.42,
+        "end": 3653.42
+    },
+    {
+        "text": " Sí, es como el chiste del que ve lo veja a la un lado.",
+        "start": 3659.42,
+        "end": 3662.42
+    },
+    {
+        "text": " ¿Lo saben?",
+        "start": 3662.42,
+        "end": 3663.42
+    },
+    {
+        "text": " Aterriz llega al Uruguay, creo que es un físico y mira va por el campo,",
+        "start": 3664.42,
+        "end": 3672.42
+    },
+    {
+        "text": " se toma el ruta del sol y ve una beja blanca y se mira en este país las sovejas son blancas.",
+        "start": 3672.42,
+        "end": 3677.42
+    },
+    {
+        "text": " Y al lado va un matemático y si no, en este país hay una beja que blanca",
+        "start": 3677.42,
+        "end": 3681.42
+    },
+    {
+        "text": " y el lógico que está sentado lo otro le dice, no, en este país hay una beja que blanca de un lado.",
+        "start": 3681.42,
+        "end": 3687.42
+    },
+    {
+        "text": " No sé, en su experiencia, como sea los caballos",
+        "start": 3687.42,
+        "end": 3694.42
+    },
+    {
+        "text": " y si pueden afirmar que todos los caballos tenen el mismo color.",
+        "start": 3694.42,
+        "end": 3699.42
+    },
+    {
+        "text": " Los compañías dicen que yo no probé que mi demostración de que todos los caballos del mismo color son el mismo color de falsa.",
+        "start": 3699.42,
+        "end": 3706.42
+    },
+    {
+        "text": " ¿Qué dicen ellos?",
+        "start": 3706.42,
+        "end": 3708.42
+    },
+    {
+        "text": " Que yo probé es cierto la propiedad P para el número 1.",
+        "start": 3708.42,
+        "end": 3713.42
+    },
+    {
+        "text": " Pero que en mi demostración de que si se cumplía para un número se cumplía para el siguiente,",
+        "start": 3714.42,
+        "end": 3721.42
+    },
+    {
+        "text": " ¿quién se aparte está mal? ¿Por qué está mal?",
+        "start": 3721.42,
+        "end": 3724.42
+    },
+    {
+        "text": " ¿Por qué esta demostración no vale para pasar de 1 a 2?",
+        "start": 3724.42,
+        "end": 3731.42
+    },
+    {
+        "text": " ¿Veamos qué pasa con 3 caballos?",
+        "start": 3732.42,
+        "end": 3739.42
+    },
+    {
+        "text": " Cuando yo quiero pasar de 2 caballos a 3 caballos,",
+        "start": 3739.42,
+        "end": 3743.42
+    },
+    {
+        "text": " mi paso inductivo me funciona divino, ¿sí?",
+        "start": 3743.42,
+        "end": 3747.42
+    },
+    {
+        "text": " Porque yo tomo un conjunto, digamos, si yo quiero ver que si la propiedad vale para 2 caballos vale para 3,",
+        "start": 3747.42,
+        "end": 3755.42
+    },
+    {
+        "text": " el argumento que yo hice funciona divino porque yo tengo 3 caballos,",
+        "start": 3755.42,
+        "end": 3760.42
+    },
+    {
+        "text": " el primero, el segundo y el tercero, entonces digo como la propiedad vale para 2,",
+        "start": 3760.42,
+        "end": 3766.42
+    },
+    {
+        "text": " si yo miro estos 2 son del mismo color y si yo miro estos 2 son del mismo color.",
+        "start": 3766.42,
+        "end": 3777.42
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3777.42,
+        "end": 3778.42
+    },
+    {
+        "text": " Entonces ¿de qué color es este?",
+        "start": 3778.42,
+        "end": 3780.42
+    },
+    {
+        "text": " En negro.",
+        "start": 3780.42,
+        "end": 3782.42
+    },
+    {
+        "text": " Entonces este también es negro.",
+        "start": 3782.42,
+        "end": 3785.42
+    },
+    {
+        "text": " Pero como es terá negro, este negro.",
+        "start": 3785.42,
+        "end": 3789.42
+    },
+    {
+        "text": " Entonces los 3 son negros ¿Sí?",
+        "start": 3789.42,
+        "end": 3793.42
+    },
+    {
+        "text": " Entonces, mi paso inductivo está bárbaro para pasar de 2 a 3.",
+        "start": 3793.42,
+        "end": 3799.42
+    },
+    {
+        "text": " Pero lo que decían acá es los compañeros es que si yo quiero pasar de 1 a 2,",
+        "start": 3799.42,
+        "end": 3810.42
+    },
+    {
+        "text": " mi argumento no sirve.",
+        "start": 3810.42,
+        "end": 3813.42
+    },
+    {
+        "text": " Porque yo quiero probar que si tengo un conjunto de 2 caballos son del mismo color.",
+        "start": 3813.42,
+        "end": 3822.42
+    },
+    {
+        "text": " Entonces ¿cómo era el argumento?",
+        "start": 3822.42,
+        "end": 3826.42
+    },
+    {
+        "text": " ¿Saco el último?",
+        "start": 3826.42,
+        "end": 3828.42
+    },
+    {
+        "text": " Si yo miro esto,",
+        "start": 3828.42,
+        "end": 3832.42
+    },
+    {
+        "text": " mi pote si es inductivo me dice que ahí todos los caballos son del mismo color.",
+        "start": 3832.42,
+        "end": 3839.42
+    },
+    {
+        "text": " ¿Verdad?",
+        "start": 3839.42,
+        "end": 3842.42
+    },
+    {
+        "text": " Y acá todos los caballos son del mismo color ¿Verdad?",
+        "start": 3842.42,
+        "end": 3850.42
+    },
+    {
+        "text": " ¿Y después?",
+        "start": 3850.42,
+        "end": 3855.42
+    },
+    {
+        "text": " ¿No se tiene héroe?",
+        "start": 3855.42,
+        "end": 3860.42
+    },
+    {
+        "text": " Este es marrón y...",
+        "start": 3861.42,
+        "end": 3867.42
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3867.42,
+        "end": 3869.42
+    },
+    {
+        "text": " Y de acá digamos del hecho de que cada uno de esto sea del mismo color",
+        "start": 3869.42,
+        "end": 3874.42
+    },
+    {
+        "text": " no puede enferir que los 2 son del mismo color ¿Sí?",
+        "start": 3874.42,
+        "end": 3879.42
+    },
+    {
+        "text": " Porque acá en esta demostración",
+        "start": 3879.42,
+        "end": 3883.42
+    },
+    {
+        "text": " yo usé que cuando yo tomaba el conjunto de los CN primeros",
+        "start": 3883.42,
+        "end": 3887.42
+    },
+    {
+        "text": " y cuando tomaba el conjunto de los CN ultimos",
+        "start": 3887.42,
+        "end": 3891.42
+    },
+    {
+        "text": " estos 2 conjuntos tenían algún caballo en común.",
+        "start": 3891.42,
+        "end": 3896.42
+    },
+    {
+        "text": " Tienamos ese segundo.",
+        "start": 3896.42,
+        "end": 3899.42
+    },
+    {
+        "text": " Entonces,",
+        "start": 3906.42,
+        "end": 3909.42
+    },
+    {
+        "text": " este es la parte que no funciona,",
+        "start": 3909.42,
+        "end": 3913.42
+    },
+    {
+        "text": " entonces el paso inductivo está mal,",
+        "start": 3913.42,
+        "end": 3917.42
+    },
+    {
+        "text": " si no me permite ir del paso base hacia adelante",
+        "start": 3917.42,
+        "end": 3922.42
+    },
+    {
+        "text": " la prueba del paso inductivo falla.",
+        "start": 3922.42,
+        "end": 3925.42
+    },
+    {
+        "text": " Bueno, ¿qué lástima por nos quedamos sin saber como es el tema de los colores y los caballos?",
+        "start": 3925.42,
+        "end": 3932.42
+    },
+    {
+        "text": " Muy bien. ¿Se entiende o no?",
+        "start": 3938.42,
+        "end": 3942.42
+    },
+    {
+        "text": " O sea, como ven este ejemplo de qué pretende ser ejemplo.",
+        "start": 3942.42,
+        "end": 3951.42
+    },
+    {
+        "text": " Le tendes este ejemplo de que a veces la inducción es tramposa,",
+        "start": 3951.42,
+        "end": 3956.42
+    },
+    {
+        "text": " o sea de que a lo mejor el principio de inducción completa parece algo sencillo",
+        "start": 3956.42,
+        "end": 3961.42
+    },
+    {
+        "text": " el ejemplo del dominó parece algo sencillo",
+        "start": 3961.42,
+        "end": 3964.42
+    },
+    {
+        "text": " pero sin embargo empiezan a aparecer muchísimas sutilezas",
+        "start": 3964.42,
+        "end": 3968.42
+    },
+    {
+        "text": " y el método de inducción se pone cada vez más sofisticado,",
+        "start": 3968.42,
+        "end": 3972.42
+    },
+    {
+        "text": " permite probar cosas muy potentes,",
+        "start": 3972.42,
+        "end": 3974.42
+    },
+    {
+        "text": " permite probar cosas muy complejas,",
+        "start": 3974.42,
+        "end": 3976.42
+    },
+    {
+        "text": " pero también es fácil equivocar.",
+        "start": 3976.42,
+        "end": 3980.42
+    },
+    {
+        "text": " Bueno, finalmente la del estrio",
+        "start": 3980.42,
+        "end": 3986.42
+    },
+    {
+        "text": " es que hay una formulación alternativa del principio de inducción completa que es equivalente.",
+        "start": 3986.42,
+        "end": 3992.42
+    },
+    {
+        "text": " Que también la pueden usar.",
+        "start": 3999.42,
+        "end": 4002.42
+    },
+    {
+        "text": " Y que a veces es más útil para algunas cosas.",
+        "start": 4011.42,
+        "end": 4015.42
+    },
+    {
+        "text": " Entonces, esto dice así.",
+        "start": 4029.42,
+        "end": 4032.42
+    },
+    {
+        "text": " Vamos a suponer que la propiedad P vale para el número 1,",
+        "start": 4038.42,
+        "end": 4045.42
+    },
+    {
+        "text": " o sea el paso base es igual.",
+        "start": 4045.42,
+        "end": 4048.42
+    },
+    {
+        "text": " Y que si la propiedad P vale para todos los números,",
+        "start": 4049.42,
+        "end": 4057.42
+    },
+    {
+        "text": " menores iguales que N,",
+        "start": 4057.42,
+        "end": 4060.42
+    },
+    {
+        "text": " entonces vale para el número N.",
+        "start": 4062.42,
+        "end": 4065.42
+    },
+    {
+        "text": " Entonces, la propiedad vale para todos los números naturales.",
+        "start": 4076.42,
+        "end": 4083.42
+    },
+    {
+        "text": " Entonces, ¿cuál es la diferencia?",
+        "start": 4084.42,
+        "end": 4090.42
+    },
+    {
+        "text": " La diferencia es que acá lo que estamos pidiendo es que la propiedad vale para el primer número,",
+        "start": 4090.42,
+        "end": 4097.42
+    },
+    {
+        "text": " pero aquí estamos pidiendo un hipótesis de inducción aparentemente más restrictiva.",
+        "start": 4099.42,
+        "end": 4104.42
+    },
+    {
+        "text": " ¿Qué es?",
+        "start": 4104.42,
+        "end": 4105.42
+    },
+    {
+        "text": " Si la propiedad vale para todos los números hasta N,",
+        "start": 4105.42,
+        "end": 4110.42
+    },
+    {
+        "text": " entonces vale para el N más 1.",
+        "start": 4110.42,
+        "end": 4113.42
+    },
+    {
+        "text": " A P N más 1.",
+        "start": 4116.42,
+        "end": 4117.42
+    },
+    {
+        "text": " Sí, gracias, gracias.",
+        "start": 4117.42,
+        "end": 4119.42
+    },
+    {
+        "text": " Ya saben.",
+        "start": 4119.42,
+        "end": 4120.42
+    },
+    {
+        "text": " Es para ver si están atentos.",
+        "start": 4122.42,
+        "end": 4124.42
+    },
+    {
+        "text": " Bueno, ¿tá?",
+        "start": 4127.42,
+        "end": 4129.42
+    },
+    {
+        "text": " Entonces, si vale para todos los números menores iguales que N, vale para el siguiente.",
+        "start": 4129.42,
+        "end": 4133.42
+    },
+    {
+        "text": " Parece más fuerte que el otro, sin embargo, un ejercicio que pueden intentar hacer,",
+        "start": 4134.42,
+        "end": 4140.42
+    },
+    {
+        "text": " es ver como a partir de la principio de inducción completa que yo escribí el principio se puede demostrar esto.",
+        "start": 4142.42,
+        "end": 4148.42
+    },
+    {
+        "text": " En realidad es totalmente equivalente al otro.",
+        "start": 4148.42,
+        "end": 4151.42
+    },
+    {
+        "text": " Pero a veces esta formulación es más útil en algunos ejemplos como por ejemplo el siguiente.",
+        "start": 4151.42,
+        "end": 4157.42
+    },
+    {
+        "text": " Vamos a probar, bueno, y está la variante por supuesto en que el paso intuitivo cambia por N0,",
+        "start": 4164.42,
+        "end": 4183.42
+    },
+    {
+        "text": " o sea que no empezamos en 1 y entonces concluimos que a partir de que para todos los naturales,",
+        "start": 4184.42,
+        "end": 4192.42
+    },
+    {
+        "text": " a partir del natural en que empezamos vale la propiedad.",
+        "start": 4192.42,
+        "end": 4196.42
+    },
+    {
+        "text": " Entonces un ejemplo que vamos a hacer es el siguiente.",
+        "start": 4197.42,
+        "end": 4200.42
+    },
+    {
+        "text": " Vamos a probar que todo natural mayor igual que 2 es producto de primos.",
+        "start": 4202.42,
+        "end": 4210.42
+    },
+    {
+        "text": " Ya saben que el 1 no es primo por eso.",
+        "start": 4214.42,
+        "end": 4216.42
+    },
+    {
+        "text": " El 2 sí es primo.",
+        "start": 4225.42,
+        "end": 4227.42
+    },
+    {
+        "text": " Ah, bueno, pensamos que cuando es el mismo primo es producto de primos con un solo factor digamos.",
+        "start": 4229.42,
+        "end": 4236.42
+    },
+    {
+        "text": " No es que sea 2 por algo, no 1 no es primo, claro.",
+        "start": 4237.42,
+        "end": 4240.42
+    },
+    {
+        "text": " Acá producto de primos lo interpretamos como es primo o es producto de 2 o más primos.",
+        "start": 4241.42,
+        "end": 4247.42
+    },
+    {
+        "text": " Es simplemente la excepción de la palabra producto.",
+        "start": 4247.42,
+        "end": 4251.42
+    },
+    {
+        "text": " Claro, el 3 cualquier número primo no es que se escribe como producto de 2 primos.",
+        "start": 4252.42,
+        "end": 4257.42
+    },
+    {
+        "text": " Pensamos que se escribe como producto de un primo lo cual es algo un poco extraño pero está.",
+        "start": 4257.42,
+        "end": 4264.42
+    },
+    {
+        "text": " En ese sentido es que es producto de primos.",
+        "start": 4265.42,
+        "end": 4267.42
+    },
+    {
+        "text": " O sea, o sea, o es producto de 2 o más primos.",
+        "start": 4267.42,
+        "end": 4272.42
+    },
+    {
+        "text": " Entonces, el paso va a ser probar que 2 es producto de primos.",
+        "start": 4273.42,
+        "end": 4284.42
+    },
+    {
+        "text": " Vamos a poner así, es primo o producto de primos.",
+        "start": 4294.42,
+        "end": 4297.42
+    },
+    {
+        "text": " Bueno, esto sí es cierto, sí es número 12, es primo.",
+        "start": 4309.42,
+        "end": 4312.42
+    },
+    {
+        "text": " Y el paso inductivo consiste en probar lo siguiente.",
+        "start": 4315.42,
+        "end": 4319.42
+    },
+    {
+        "text": " La hipótesis inductiva consiste en asumir que para todo ca menor igual que n, cae es primo o producto de primos.",
+        "start": 4320.42,
+        "end": 4335.42
+    },
+    {
+        "text": " Entonces, esto es lo que vamos a asumir y usando esto lo que vamos a probar es la tesis inductiva que es que n más 1 es primo o producto de primos.",
+        "start": 4335.42,
+        "end": 4359.42
+    },
+    {
+        "text": " Entonces, vamos a poner así, 그러면 esta tesis la tesis.",
+        "start": 4366.42,
+        "end": 4369.42
+    },
+    {
+        "text": " Ease esta tesis la tesis.",
+        "start": 4383.42,
+        "end": 4385.42
+    },
+    {
+        "text": " Ahora, si электár ACTI David, un diante para hacer gr傷 en su piss start.",
+        "start": 4388.42,
+        "end": 4391.42
+    },
+    {
+        "text": " Entonces, usando esto vamos a probar esto. Entonces, sacarlo el número N1. N11 es primo.",
+        "start": 4391.42,
+        "end": 4402.42
+    },
+    {
+        "text": " Ya está. Si viene más o no el primo, satifase la tesis de inducción.",
+        "start": 4403.42,
+        "end": 4416.42
+    },
+    {
+        "text": " No hay nada que hacer con él. Y si no el primo es compuesto.",
+        "start": 4422.42,
+        "end": 4425.42
+    },
+    {
+        "text": " Que sea compuesto, quiere decir que se escribe como dos números, digamos, existen K y L.",
+        "start": 4433.42,
+        "end": 4450.42
+    },
+    {
+        "text": " Málloles iguales que dos de manera que N1 es K por L.",
+        "start": 4451.42,
+        "end": 4459.42
+    },
+    {
+        "text": " Entonces, cada uno de estos es menor igual que N. O sea, cada uno de estos es más chico que N1.",
+        "start": 4460.42,
+        "end": 4473.42
+    },
+    {
+        "text": " Entonces, ahora la hipótesis de inducción, lo que nos dice es que para todos los números,",
+        "start": 4474.42,
+        "end": 4483.42
+    },
+    {
+        "text": " más chicos que N1, que todos los más chicos que N1 son primos o productos de primos.",
+        "start": 4483.42,
+        "end": 4490.42
+    },
+    {
+        "text": " Entonces, la hipótesis de inducción, en este caso, nos dice que K es primo, producto de primos.",
+        "start": 4491.42,
+        "end": 4504.42
+    },
+    {
+        "text": " Y L también. Entonces, si este es soviéndolo, producto de primos, si este también, el producto de ambos es producto de primos.",
+        "start": 4504.42,
+        "end": 4519.42
+    },
+    {
+        "text": " En este caso, también se satifase la tesis de inducción.",
+        "start": 4535.42,
+        "end": 4540.42
+    },
+    {
+        "text": " Muy bien. En este caso, también se satifase la tesis de inducción.",
+        "start": 4541.42,
+        "end": 4547.42
+    },
+    {
+        "text": " Muy bien. Bueno, nos vemos el juez.",
+        "start": 4547.42,
+        "end": 4554.42
+    }
+]
