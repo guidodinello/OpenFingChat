@@ -34,9 +34,9 @@ class LessonModel:
             print(f"An error occurred while retrieving the lesson: {err}")
             return None
 
-    def getAll(self, **kwargs):
+    def getAll(self, projection=None, **kwargs):
         try:
-            lessons = self.collection.find(kwargs)
+            lessons = self.collection.find(kwargs, projection)
             return list(lessons)
         except errors.PyMongoError as err:
             print(f"An error occurred while retrieving all lessons: {err}")
