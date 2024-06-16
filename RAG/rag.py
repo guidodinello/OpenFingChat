@@ -87,16 +87,16 @@ def initialize_prompt():
 
     return prompt
 
-def format_docs(docs):
-    context = ""
-    for i, doc in enumerate(docs, start=1):
-        context += f"CHUNK NUMBER {i}: \n"
-        context += "Content: " + doc.page_content + "\n"
-        lessonId = doc.metadata['lesson_id']
-        lesson = LessonModel().get(lessonId, True)
-        context += "Subject: " + lesson["subject"]['name'] + "\n"
-        context += "Lesson: " + lesson['name'] + "\n\n"
-    return context
+# def format_docs(docs):
+#     context = ""
+#     for i, doc in enumerate(docs, start=1):
+#         context += f"CHUNK NUMBER {i}: \n"
+#         context += "Content: " + doc.page_content + "\n"
+#         lessonId = doc.metadata['lesson_id']
+#         lesson = LessonModel().get(lessonId, True)
+#         context += "Subject: " + lesson["subject"]['name'] + "\n"
+#         context += "Lesson: " + lesson['name'] + "\n\n"
+#     return context
 
 @traceable
 def rag(query, chat_history):
@@ -122,16 +122,16 @@ def rag(query, chat_history):
 if __name__ == "__main__":
     chat_history = []
 
-    question = "Qué es la evolución natural?"
+    question = "Qué es la inducción completa?"
     ai_msg_1 = rag(question, chat_history)
     chat_history.extend([HumanMessage(content=question), ai_msg_1["answer"]])
     
     print('\nAnswer to first question: ', ai_msg_1["answer"])
     print('\nchat_history: ', chat_history)
 
-    second_question = "Cuál fue mi primera pregunta?"
-    ai_msg_2 = rag(second_question, chat_history)
-    chat_history.extend([HumanMessage(content=second_question), ai_msg_2["answer"]])
+    # second_question = "Cuál fue mi primera pregunta?"
+    # ai_msg_2 = rag(second_question, chat_history)
+    # chat_history.extend([HumanMessage(content=second_question), ai_msg_2["answer"]])
 
-    print('\nAnswer to second question: ', ai_msg_2["answer"])
-    print('\nchat_history: ', chat_history)
+    # print('\nAnswer to second question: ', ai_msg_2["answer"])
+    # print('\nchat_history: ', chat_history)
