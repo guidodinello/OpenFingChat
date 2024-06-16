@@ -1,0 +1,2682 @@
+[
+    {
+        "text": " En las últimas clases, si ustedes recuerdan, empezamos a poner estructuras geométricas, los",
+        "start": 0.0,
+        "end": 22.44
+    },
+    {
+        "text": " espacios rectoriales, esa estructura la poníamos via productos internos y normas, en particular",
+        "start": 22.44,
+        "end": 29.0
+    },
+    {
+        "text": " consideramos la norma inducida por el producto interno y con el producto interno definimos la",
+        "start": 29.0,
+        "end": 35.4
+    },
+    {
+        "text": " noción de ortobonalidad de conjuntos ortobonales y de conjuntos ortonormales. Entonces, al final de la",
+        "start": 35.4,
+        "end": 41.8
+    },
+    {
+        "text": " clase pasada había quedado pendiendo un resultado que tenía que ver con la existencia de bases",
+        "start": 41.8,
+        "end": 46.8
+    },
+    {
+        "text": " ortonormales en cualquier espacio vectorial, es decir, una base ortonormales es una base,",
+        "start": 46.8,
+        "end": 52.32
+    },
+    {
+        "text": " cada par de vectores en esa base son ortobonales, es decir, el producto interno entre ellos es",
+        "start": 53.32,
+        "end": 58.480000000000004
+    },
+    {
+        "text": " cero y además están normalizados a uno, la norma es uno. Y les había escrito sin demostración el",
+        "start": 58.480000000000004,
+        "end": 66.12
+    },
+    {
+        "text": " método de ortonormalización de Grams-Mid, que me dice cómo partir una base construir una base",
+        "start": 66.12,
+        "end": 72.16
+    },
+    {
+        "text": " ortonormal. Bien, entonces vamos a comenzar escribiendo eso y dando la demostración de ese resultado.",
+        "start": 72.16,
+        "end": 79.11999999999999
+    },
+    {
+        "text": " Esto ya lo habíamos escrito al final de la clase pasada, ¿no? Entonces,",
+        "start": 81.64,
+        "end": 85.56
+    },
+    {
+        "text": " tenemos un espacio vectorial con producto interno,",
+        "start": 103.16,
+        "end": 107.44
+    },
+    {
+        "text": " este espacio tiene dimension N,",
+        "start": 120.03999999999999,
+        "end": 123.75999999999999
+    },
+    {
+        "text": " y lo que me dice el resultado que vamos a probar hoy y escribimos la clase pasada es que si yo",
+        "start": 123.76,
+        "end": 134.12
+    },
+    {
+        "text": " tengo una base, si yo considero una base de este espacio vectorial,",
+        "start": 134.12,
+        "end": 137.72
+    },
+    {
+        "text": " cuyos elementos son V1, V2 hasta VN, entonces a partir de esa base puedo construir una nueva base",
+        "start": 145.32,
+        "end": 151.76
+    },
+    {
+        "text": " de V1.",
+        "start": 153.76,
+        "end": 155.23999999999998
+    },
+    {
+        "text": " Al cuyos elementos, vamos a llamar I1 y I2, IN, esa base la denotamos V1,",
+        "start": 162.23999999999998,
+        "end": 168.76
+    },
+    {
+        "text": " esta base tiene la particularidad que es una base ortonormal del espacio vectorial.",
+        "start": 168.76,
+        "end": 174.0
+    },
+    {
+        "text": " Y a la com嗎cumple.",
+        "start": 183.88,
+        "end": 185.54
+    },
+    {
+        "text": " ÖF",
+        "start": 185.54,
+        "end": 209.04
+    },
+    {
+        "text": " Quiere más cumple esto.",
+        "start": 209.04,
+        "end": 216.04
+    },
+    {
+        "text": " Entonces, dado una base del espacio vectoria, el cuyo elemento es un V1, V1 hasta Vn, a partir",
+        "start": 216.04,
+        "end": 231.54
+    },
+    {
+        "text": " esa base el método de normalización de grámonos mid, que lo vamos a probar ahora, me",
+        "start": 231.54,
+        "end": 236.26
+    },
+    {
+        "text": " permite construir una nueva base que le llamo V1, cuyo elemento son I1 y II hasta In y eso",
+        "start": 236.26,
+        "end": 241.7
+    },
+    {
+        "text": " es una base horto normal del espacio vectorial que estamos considerando y además por la",
+        "start": 241.7,
+        "end": 247.14
+    },
+    {
+        "text": " construcción misma esa base se cumple lo siguiente. Si yo considero el espacio generado",
+        "start": 247.14,
+        "end": 252.29999999999998
+    },
+    {
+        "text": " acá por los primeros cabectores de esta base, esta es una base ordenada, ese espacio generado",
+        "start": 252.29999999999998,
+        "end": 257.78
+    },
+    {
+        "text": " por los primeros cabectores acá coincide con el espacio generado por los primeros cabectores",
+        "start": 257.78,
+        "end": 262.18
+    },
+    {
+        "text": " acá, el espacio generado por V1, el espacio generado por I1, el generado por V1, V2, el espacio",
+        "start": 262.18,
+        "end": 269.78000000000003
+    },
+    {
+        "text": " generado por I1 y II etc. Eso es por la propia construcción de la base y la demostración",
+        "start": 269.78000000000003,
+        "end": 278.18
+    },
+    {
+        "text": " es, bueno, es constructiva, a partir de esta base, voy construyendo cada uno de los elementos",
+        "start": 278.18,
+        "end": 285.3
+    },
+    {
+        "text": " de la que ella es manera apropiada. Bien, entonces lo que vamos a hacer es lo siguiente. Vamos",
+        "start": 285.3,
+        "end": 295.62
+    },
+    {
+        "text": " primero a construir, a partir de esta una base hortogonal, no necesariamente normalizada",
+        "start": 295.62,
+        "end": 302.62
+    },
+    {
+        "text": " y después obtenemos la base hortogonal normalizando los elementos de esa base hortogonal, es",
+        "start": 302.62,
+        "end": 307.82
+    },
+    {
+        "text": " decir, una vez que yo tengo una base hortogonal, lo único que me arrasta hacer es acá el",
+        "start": 307.82,
+        "end": 312.22
+    },
+    {
+        "text": " instrumento y vi lo por su norma y entonces tengo una base hortogonal y normalizada, esto",
+        "start": 312.22,
+        "end": 316.74
+    },
+    {
+        "text": " es una base hortogonal. Bien, entonces basta encontrar una base, una base hortogonal,",
+        "start": 316.74,
+        "end": 340.70000000000005
+    },
+    {
+        "text": " que cumpla la condición esa, que cumpla esta condición, este risco, le vamos a llamar",
+        "start": 340.7,
+        "end": 347.94
+    },
+    {
+        "text": " esto, que cumpla la condición esta y después normalizamos. A esta base le vamos a llamar",
+        "start": 347.94,
+        "end": 360.82
+    },
+    {
+        "text": " a los elementos de esta base hortogonal, le vamos a llamar V1, V2 hasta Vn. Sí, basta",
+        "start": 360.82,
+        "end": 368.59999999999997
+    },
+    {
+        "text": " encontrar una base hortogonal, V1, V2, V1, V2 hasta Vn, es que cumpla que yo, o sea que",
+        "start": 368.6,
+        "end": 375.36
+    },
+    {
+        "text": " el espacio generado por los V coincide con el espacio generado por los V y después normalizado",
+        "start": 375.36,
+        "end": 379.64000000000004
+    },
+    {
+        "text": " y así me construyo esta base. La construcción es bien sencilla, hasta que",
+        "start": 379.64000000000004,
+        "end": 397.46000000000004
+    },
+    {
+        "text": " se entiende lo que vamos a hacer, vamos a obtener la parte de la base inicial de manera",
+        "start": 397.46,
+        "end": 403.85999999999996
+    },
+    {
+        "text": " constructiva una base hortogonal y después la vamos a normalizar y vamos a tener un",
+        "start": 403.85999999999996,
+        "end": 410.52
+    },
+    {
+        "text": " base que cumpla esto y después normalizamos. Entonces empezamos con el primer vector de la",
+        "start": 410.52,
+        "end": 416.38
+    },
+    {
+        "text": " base hortogonal, vamos a, para el primer vector directamente lo elegimos como el primer",
+        "start": 416.38,
+        "end": 423.09999999999997
+    },
+    {
+        "text": " vector de la base inicial, este primer vector que tengo acá lo elegimos igual al primer",
+        "start": 423.1,
+        "end": 432.18
+    },
+    {
+        "text": " vector que tengo acá. Sí, obviamente ahí el espacio generado por este primer vector",
+        "start": 432.18,
+        "end": 441.84000000000003
+    },
+    {
+        "text": " y el espacio generado por aquí el primer vector coincide. Entonces obviamente se cumple",
+        "start": 441.84000000000003,
+        "end": 450.58000000000004
+    },
+    {
+        "text": " el espacio generado por V1, vamos poner así, el espacio generado por ese V1 nuevo coincide",
+        "start": 450.58,
+        "end": 456.7
+    },
+    {
+        "text": " con el espacio generado V1 que es la primera condición que tenemos aquí y además obviamente",
+        "start": 456.7,
+        "end": 466.58
+    },
+    {
+        "text": " ese vector V1 es distinto de 0 porque es igual al V1 que es un elemento de la base, o sea",
+        "start": 466.58,
+        "end": 472.74
+    },
+    {
+        "text": " que distinto de 0. Ese es el primer vector. Ahora pasamos al segundo vector, al segundo",
+        "start": 472.74,
+        "end": 479.46
+    },
+    {
+        "text": " vector de la lista ésta, al segundo vector que tengo acá lo voy a elegir como combinación",
+        "start": 479.46,
+        "end": 486.29999999999995
+    },
+    {
+        "text": " lineal apropiada de los dos primeros vectores que tengo acá y lo voy a elegir esa combinación",
+        "start": 486.29999999999995,
+        "end": 491.94
+    },
+    {
+        "text": " lineal de tal manera que me garantice que aquellos sean hortogonales.",
+        "start": 491.94,
+        "end": 496.82
+    },
+    {
+        "text": " Vamos entonces, para el vector V2 lo elegimos así, V2 lo elegimos. Lo vamos construyendo",
+        "start": 496.82,
+        "end": 517.22
+    },
+    {
+        "text": " de manera recurrente, de manera, no recurrente, de manera inductiva, si requiere o sea de manera",
+        "start": 517.22,
+        "end": 527.4200000000001
+    },
+    {
+        "text": " secuencial. Entonces, cómo me construyo el vector V2? Ahora ya tengo el V1, entonces agarró",
+        "start": 527.4200000000001,
+        "end": 540.46
+    },
+    {
+        "text": " el V2 que era el segundo elemento que teñeca y le restó el producto escalar, el producto",
+        "start": 540.46,
+        "end": 546.3000000000001
+    },
+    {
+        "text": " interno de V2 con V1 que ya lo tenía construido, V1, escalar V1, V1, por V1. Fíjense",
+        "start": 546.3,
+        "end": 558.14
+    },
+    {
+        "text": " lo siguiente, hay varias cosas para notar acá. En primer lugar como el V1 es distinto de 0,",
+        "start": 558.14,
+        "end": 564.5
+    },
+    {
+        "text": " esto es distinto de 0, entonces está bien dividir por eso, que es otra cosa que la norma",
+        "start": 564.5,
+        "end": 569.8599999999999
+    },
+    {
+        "text": " equadrado de V1. Si es V2 menos el V1 que es el primero que tengo por un escalar, ese",
+        "start": 569.86,
+        "end": 585.74
+    },
+    {
+        "text": " escalar es V2, escalar V1, dividido, V1, producto interno de V1. Ahora,",
+        "start": 585.74,
+        "end": 599.1800000000001
+    },
+    {
+        "text": " fíjense lo siguiente, si yo por default digo producto escalar pero es producto interno,",
+        "start": 599.6999999999999,
+        "end": 606.9
+    },
+    {
+        "text": " es el producto interno. Fíjense lo siguiente, el V1 lo elegimos igual al V1. Y este acá,",
+        "start": 606.9,
+        "end": 618.26
+    },
+    {
+        "text": " o sea, esta acá es combinación lineal de V1, es V1, en particular, y este acá es combinación",
+        "start": 622.3399999999999,
+        "end": 627.4599999999999
+    },
+    {
+        "text": " lineal de V2 y V1, o sea, fácil convencerse que el espacio generado por este y por este coincide",
+        "start": 627.46,
+        "end": 635.7
+    },
+    {
+        "text": " con el espacio generado por este y por este. Se entendió eso, o sea, al primero lo elegí",
+        "start": 635.7,
+        "end": 640.38
+    },
+    {
+        "text": " como V1 y al segundo lo elegí como una combinación lineal de esto, que depende de V1 y esto",
+        "start": 640.38,
+        "end": 646.94
+    },
+    {
+        "text": " que depende de V2, por lo tanto, el espacio, esto va a estar en el espacio generado por V1 y V2,",
+        "start": 646.94,
+        "end": 651.7
+    },
+    {
+        "text": " entonces el espacio generado de este y este coincide con el espacio generado de este y este. O sea,",
+        "start": 652.26,
+        "end": 656.62
+    },
+    {
+        "text": " se cumple el espacio generado, comenzanse ustedes mismos y tiene algún lado de esto, coincide con el",
+        "start": 656.62,
+        "end": 664.74
+    },
+    {
+        "text": " espacio generado de V1, V2, simplemente porque como una cierre ciencia esto acá es combinación",
+        "start": 664.74,
+        "end": 671.6600000000001
+    },
+    {
+        "text": " lineal de V1 y aquello tiene el V2 y además ese vector también es distinto de 0,",
+        "start": 671.78,
+        "end": 680.54
+    },
+    {
+        "text": " porque ¿por qué? ¿por qué distinto de 0? Porque si fuese igual a 0, si este vector lo le dedo,",
+        "start": 680.54,
+        "end": 690.42
+    },
+    {
+        "text": " fuese igual a 0, entonces tendría V2 igual a esto que es una combinación lineal de V1,",
+        "start": 690.42,
+        "end": 696.78
+    },
+    {
+        "text": " es decir tendría V2 como combinación lineal de V1, que no puede ser porque V1 y V2 están acá en",
+        "start": 696.78,
+        "end": 703.02
+    },
+    {
+        "text": " una base, ¿sólineame? Tiene pendiente, estamos entonces como V1 y V2 son llames",
+        "start": 703.02,
+        "end": 710.5
+    },
+    {
+        "text": " tiende pendientes, no puede ocurrir que este vector sea 0, no puede ocurrir que está combinando,",
+        "start": 710.5,
+        "end": 713.78
+    },
+    {
+        "text": " es como que estoy combinando un vector que está en esta dirección con algo que está en otra dirección,",
+        "start": 713.78,
+        "end": 719.4599999999999
+    },
+    {
+        "text": " entonces y es una combinación notrial, entonces esto no puede ser 0 y ahora lo que hay que",
+        "start": 719.46,
+        "end": 729.14
+    },
+    {
+        "text": " chequear es que este vector V2 es ortobanada la V1 y eso hay que hacer la cuenta,",
+        "start": 729.14,
+        "end": 735.74
+    },
+    {
+        "text": " estamos aquí, se cumple si yo hago el producto interno de V2 con el V1 de los dos",
+        "start": 735.74,
+        "end": 752.42
+    },
+    {
+        "text": " factores de esto que calculé fíjense lo que me queda, ahí tengo que usar simplemente propiedades",
+        "start": 752.42,
+        "end": 756.54
+    },
+    {
+        "text": " de linealidad del producto interno, me queda lo vamos a desarrollar directamente, me queda todo esto,",
+        "start": 756.54,
+        "end": 763.82
+    },
+    {
+        "text": " producto interno con V1, si esa roya me queda V2, producto interno con V1, que sería",
+        "start": 764.7,
+        "end": 774.74
+    },
+    {
+        "text": " esta parte escalar V1 y después menos todo esto es escalar V1, pero estos son escalares que",
+        "start": 774.74,
+        "end": 780.86
+    },
+    {
+        "text": " salen afuera el producto interno, porque están en la primera entrada, o sea me quedaría menos",
+        "start": 780.86,
+        "end": 786.1400000000001
+    },
+    {
+        "text": " el escalar que sale afuera que es V2 escalar V1 dividido V1 con V1 y el producto interno de esto",
+        "start": 786.14,
+        "end": 798.6999999999999
+    },
+    {
+        "text": " que tengo acá con V1, o sea V1 con V1, se ha entendido eso, estoy haciendo el producto interno",
+        "start": 798.6999999999999,
+        "end": 811.06
+    },
+    {
+        "text": " de todo esto en la primera entrada con V1, entonces en desarrollo son de linealidad del producto",
+        "start": 811.06,
+        "end": 818.26
+    },
+    {
+        "text": " interno con respecto a la primera entrada, me va a quedar V2 escalar V1 menos, estos escalares",
+        "start": 818.26,
+        "end": 825.5
+    },
+    {
+        "text": " salen afuera, V2 escalar V1 o V1, producto interno con V1 y finalmente me queda acá",
+        "start": 825.5,
+        "end": 831.3399999999999
+    },
+    {
+        "text": " V1 con V1, ahora esto acá se simplifica, esto es la norma V1 al cuadrado y fíjense lo que",
+        "start": 831.3399999999999,
+        "end": 840.26
+    },
+    {
+        "text": " me queda, V2 con V1 menos producto interno de V2 con V1, se cancela, o sea que ahí me queda",
+        "start": 840.26,
+        "end": 847.74
+    },
+    {
+        "text": " 0, o sea que en definitiva tenemos que V2 es ortogonal a V1, que lo denotamos así.",
+        "start": 847.74,
+        "end": 859.14
+    },
+    {
+        "text": " ¿Se entendió? Entonces ahora que vamos a construir el tercer, vamos a hacer un ejemplo más el",
+        "start": 859.14,
+        "end": 879.9
+    },
+    {
+        "text": " WB3, después vamos a escribir el caso genérico, el WB3 que vendría acá, lo vamos a construir a partir",
+        "start": 879.9,
+        "end": 886.1
+    },
+    {
+        "text": " de V1, V2 y V3 que tendría acá y vamos a probar que ese WB3 construido manera propiedad de",
+        "start": 886.1,
+        "end": 893.1800000000001
+    },
+    {
+        "text": " ortogonal a los otros a W1 y a W2 y así ya se van a dar cuenta enseguida cómo es el procedimiento para",
+        "start": 893.1800000000001,
+        "end": 901.26
+    },
+    {
+        "text": " construir acá el vector caesimo.",
+        "start": 901.26,
+        "end": 905.1
+    },
+    {
+        "text": " En un ratito veremos ya las ventajas que tiene trabajar en bases ortonomales, hay un montón de",
+        "start": 917.1,
+        "end": 924.66
+    },
+    {
+        "text": " resultados útiles en ese contexto, además base de ortonomales se usan muchísimo,",
+        "start": 924.66,
+        "end": 929.4200000000001
+    },
+    {
+        "text": " les van a usar muchísimo lo largo de toda la carrera, escribir las cosas, trabajar con base",
+        "start": 929.4200000000001,
+        "end": 936.94
+    },
+    {
+        "text": " de ortonomales simplificos en los cálculos, este, y ese esto, yo estoy calculando el producto",
+        "start": 936.94,
+        "end": 944.86
+    },
+    {
+        "text": " interno de W2 con W1, o sea estoy calculando el producto interno de todo esto con W1, la primera",
+        "start": 944.86,
+        "end": 951.7
+    },
+    {
+        "text": " entrada tengo esto y no sé una entrada de W1, ahora uso la linearidad del producto interno con respecto",
+        "start": 951.7,
+        "end": 956.1800000000001
+    },
+    {
+        "text": " a la primera componente, entonces por un lado tengo W2, producto interno con W1, que es lo que",
+        "start": 956.1800000000001,
+        "end": 962.0600000000001
+    },
+    {
+        "text": " tengo escrito acá y por otro lado tengo todo esto producto interno con W1, pero el menos",
+        "start": 962.0600000000001,
+        "end": 968.5
+    },
+    {
+        "text": " esto y esto son escalares y están en la primera entrada, o sea que los escalares en la primera",
+        "start": 968.5,
+        "end": 974.34
+    },
+    {
+        "text": " entrada salen para afuera, o sea que todo esto que tengo acá, todo eso que tengo acá sale para",
+        "start": 974.34,
+        "end": 981.1800000000001
+    },
+    {
+        "text": " afuera, es lo que puse acá y después me queda W1 escalar con producto interno con W1,",
+        "start": 981.1800000000001,
+        "end": 988.34
+    },
+    {
+        "text": " qué es lo que está acá, entonces esto tiene numerador y el denominador, se simplifica y me queda",
+        "start": 988.34,
+        "end": 995.7800000000001
+    },
+    {
+        "text": " V2, producto interno con W1, menos V2 producto interno con W1, que me da ser, y ahora van a",
+        "start": 995.7800000000001,
+        "end": 1003.7
+    },
+    {
+        "text": " ver que cuando escriba el W3 ya se van a dar cuenta como es la escritura del cae si",
+        "start": 1003.7,
+        "end": 1012.34
+    },
+    {
+        "text": " un elemento acá, como se construye, entonces hagamos el W3, el W3 lo vamos a escribir así,",
+        "start": 1012.34,
+        "end": 1022.74
+    },
+    {
+        "text": " agarro el tercer vector ahora de la lista original, de la base original y le re esto",
+        "start": 1024.74,
+        "end": 1031.54
+    },
+    {
+        "text": " un escalar por W1 y un escalar por W2, qué son esos escalares, miren,",
+        "start": 1033.7,
+        "end": 1039.54
+    },
+    {
+        "text": " vamos a escribir así,",
+        "start": 1044.74,
+        "end": 1045.78
+    },
+    {
+        "text": " fíjense lo que lo que hago con el tercer elemento acá de esta base ortobonal que estoy construyendo,",
+        "start": 1063.7,
+        "end": 1085.18
+    },
+    {
+        "text": " agarro el tercer elemento le va a serigir al que es V3 y le re esto, el producto interno",
+        "start": 1085.18,
+        "end": 1092.42
+    },
+    {
+        "text": " V3 con el W2 dividió W2 con W2, producto interno por W2, menos el producto interno",
+        "start": 1094.18,
+        "end": 1101.78
+    },
+    {
+        "text": " V3 con W1 dividió W1 con W1 por W1, sí, lo parece equivalente a lo que hice acá,",
+        "start": 1101.78,
+        "end": 1110.3
+    },
+    {
+        "text": " solo que ahora tengo el V3 y además tengo el equivalente sumando equivalente con W2, así lo",
+        "start": 1110.3,
+        "end": 1120.5800000000002
+    },
+    {
+        "text": " defino, entonces fíjense eso está bien definido por empezar porque W1 es distinto de 0, entonces",
+        "start": 1120.58,
+        "end": 1126.6999999999998
+    },
+    {
+        "text": " esto acá es distinto de 0 porque W2 es distinto de 0, entonces acá esto es distinto de 0,",
+        "start": 1126.6999999999998,
+        "end": 1131.98
+    },
+    {
+        "text": " está perfectamente definido y ahora el mismo argumento que usamos recién,",
+        "start": 1131.98,
+        "end": 1139.6999999999998
+    },
+    {
+        "text": " esta es combinación lineal del vector V1, del primer vector de la base original, en particular",
+        "start": 1139.6999999999998,
+        "end": 1147.5
+    },
+    {
+        "text": " es el vector de la base original, es lo que escribié acá, este otro es combinación",
+        "start": 1147.5,
+        "end": 1154.78
+    },
+    {
+        "text": " lineal de V1 y V2, del vector V2 y del esto que involucra el vector V1 y esto que tengo acá es",
+        "start": 1154.78,
+        "end": 1167.1
+    },
+    {
+        "text": " combinación lineal de V1, V2 y V3, sí se entiende, por lo tanto el espacio generado por",
+        "start": 1167.1,
+        "end": 1176.9
+    },
+    {
+        "text": " W1, W2 y W3 coincide con el espacio generado por V1, V2, V3, convenzanse eso mismo, tengo algo que",
+        "start": 1176.9,
+        "end": 1186.7800000000002
+    },
+    {
+        "text": " combinación lineal de V1, le sumo algo que combinación lineal de V1 y V2 y le sumo algo que es V3,",
+        "start": 1186.7800000000002,
+        "end": 1193.66
+    },
+    {
+        "text": " entonces este y este son lindamente independientes y me generan el mismo espacio que V1, V2 y V3,",
+        "start": 1193.66,
+        "end": 1206.5400000000002
+    },
+    {
+        "text": " entonces esto acá se cumple, se cumple el espacio generado por W1, W2, W3 coincide con el",
+        "start": 1206.54,
+        "end": 1223.94
+    },
+    {
+        "text": " espacio generado por W1, V2, V3, o sea que voy cumpliendo las condiciones que queríamos",
+        "start": 1223.94,
+        "end": 1233.3999999999999
+    },
+    {
+        "text": " cumplir en la base orto normal, el espacio generado por este coincide con el primero,",
+        "start": 1233.4,
+        "end": 1237.8200000000002
+    },
+    {
+        "text": " el de los primeros dos de acá coincide con el primero dos de la base original, el de los primeros",
+        "start": 1237.8200000000002,
+        "end": 1242.0800000000002
+    },
+    {
+        "text": " tres acá coincide con los primeros tres de la base original y así y además por el mismo argumento",
+        "start": 1242.0800000000002,
+        "end": 1249.6000000000001
+    },
+    {
+        "text": " que usamos recién, W3 tiene que ser distinto a 0, pues si W3 de nuevo, fue sigo a 0, tendría que",
+        "start": 1249.6000000000001,
+        "end": 1257.2
+    },
+    {
+        "text": " V3 los pasos del otro lado y es combinación lineal de V1 y V2, lo cual no puede ser, porque",
+        "start": 1257.2,
+        "end": 1263.96
+    },
+    {
+        "text": " V1, V2, V3 son lindamente una base, bien y ahora lo que tengo que chequear es que este",
+        "start": 1263.96,
+        "end": 1272.16
+    },
+    {
+        "text": " acá es orto gona al, al W2 y es orto gona al W1 y después vamos a escribir el caso general,",
+        "start": 1272.16,
+        "end": 1281.48
+    },
+    {
+        "text": " vamos con esto creo que ya los voy a convencer de cómo es el caso general, se cumple,",
+        "start": 1281.48,
+        "end": 1289.2
+    },
+    {
+        "text": " vamos a hacer las mismas cuentas que hicimos allá, se cumple, yo agarro y hago el producto",
+        "start": 1296.32,
+        "end": 1302.92
+    },
+    {
+        "text": " interno, W3 con W2, tengo que hacer la misma cuenta que hacía acá, es el producto interno,",
+        "start": 1302.92,
+        "end": 1315.44
+    },
+    {
+        "text": " todo esto con W2 y todo eso está en la primera entrada, uso aditividad, pero no uso lignalidad con",
+        "start": 1315.44,
+        "end": 1322.64
+    },
+    {
+        "text": " respecto a la primera entrada, o sea me va a quedar, V3 escalar W2, más todo esto escalar",
+        "start": 1322.64,
+        "end": 1334.6000000000001
+    },
+    {
+        "text": " W2 pero de nuevo como el menos 1 y esto y esto son escalales al impara fuera, me va a quedar menos",
+        "start": 1334.6000000000001,
+        "end": 1340.88
+    },
+    {
+        "text": " V3, W2 dividido, W2, encalar W2 por W2 escalar esto y más esto escalar W2, que esto como son escalales",
+        "start": 1340.88,
+        "end": 1360.72
+    },
+    {
+        "text": " al impara fuera lo mismo cuenta aquí allá y acá me va a quedar W1 escalar W2,",
+        "start": 1360.72,
+        "end": 1373.04
+    },
+    {
+        "text": " es la misma, exactamente lo mismo aquí, nada más que ya tengo un sumando más,",
+        "start": 1376.04,
+        "end": 1380.88
+    },
+    {
+        "text": " sí, como el orden acá, sí sí sí, no lo escribí así justamente para que sí para que salgan,",
+        "start": 1380.88,
+        "end": 1403.0400000000002
+    },
+    {
+        "text": " puse W3 en la primera entrada para que las constantes salgan sin el conjugado, en el caso que",
+        "start": 1403.04,
+        "end": 1411.48
+    },
+    {
+        "text": " estamos trabajando en el espacio completo, pero si vos probas que esto escalar esto igual a",
+        "start": 1411.48,
+        "end": 1417.2
+    },
+    {
+        "text": " 0 en el otro orden, realmente va a hacer, sí sí sí, a ver que me perdí, escalar W2, después,",
+        "start": 1417.2,
+        "end": 1428.8
+    },
+    {
+        "text": " esto escalar W2 que es V3, W2, W2 y esto escalar W2, menos V3, no está bien,",
+        "start": 1428.8,
+        "end": 1436.9199999999998
+    },
+    {
+        "text": " sí, esto es el propio interno todo esto cuando W2, entonces lo que estoy poniendo acá,",
+        "start": 1441.8,
+        "end": 1449.08
+    },
+    {
+        "text": " desarrollo todos, en la segunda entrada siempre va W, el W2 que tengo acá es lo que aparece acá,",
+        "start": 1449.08,
+        "end": 1455.68
+    },
+    {
+        "text": " en la segunda entrada, acá en la segunda entrada y acá en la segunda entrada y en la primera entrada",
+        "start": 1455.68,
+        "end": 1460.44
+    },
+    {
+        "text": " es eso, que lo descompúse, lo desarrollo y ahí sí, sí porque fíjense, antes ya vimos que",
+        "start": 1460.44,
+        "end": 1474.24
+    },
+    {
+        "text": " W1 y W2 son ortogonales, antes ya vimos eso, entonces acá este producto interno es 0,",
+        "start": 1474.8,
+        "end": 1485.6
+    },
+    {
+        "text": " lo vimos recién, y acá este otro se cancela, fíjense W2, producto interno cuando W2 se cancela",
+        "start": 1487.24,
+        "end": 1495.8
+    },
+    {
+        "text": " con este, entonces me queda V3, producto interno cuando W2, menos V3 con producto interno cuando",
+        "start": 1495.8,
+        "end": 1502.0
+    },
+    {
+        "text": " W2, se cancela esto con esto, sí, o sea que esto, y este me da 0, o sea que esto acá me queda 0,",
+        "start": 1502.0,
+        "end": 1512.8
+    },
+    {
+        "text": " o sea que efectivamente el W3 es perpendicular, es ortogonal a W1, se desentendió lo que hice ahí,",
+        "start": 1514.0,
+        "end": 1524.08
+    },
+    {
+        "text": " sí perdón, W2, W2, este tercer sumando se va porque W1 y W2 son ortogonales, lo que provamos en el",
+        "start": 1524.6799999999998,
+        "end": 1539.12
+    },
+    {
+        "text": " paso anterior, esto se va y después acá este se simplifica con este, entonces me queda V3,",
+        "start": 1539.12,
+        "end": 1546.24
+    },
+    {
+        "text": " producto interno cuando W2, menos V3, producto interno cuando W2, que se cancela, y de la misma manera",
+        "start": 1546.24,
+        "end": 1552.6399999999999
+    },
+    {
+        "text": " calculo W3 con W1, todo lo que tengo que hacer es acá donde había puesto W2, poner ahora W1,",
+        "start": 1554.08,
+        "end": 1560.3999999999999
+    },
+    {
+        "text": " entonces qué me va a quedar ahí, si yo hago W3 con W1 me va a quedar, V3 con W1, menos,",
+        "start": 1560.3999999999999,
+        "end": 1576.1599999999999
+    },
+    {
+        "text": " esto puede ser tedioso implementarlo en la práctica, puede ser un montón de cuentas en el camino,",
+        "start": 1584.08,
+        "end": 1603.9199999999998
+    },
+    {
+        "text": " pero la idea es, es sencilla, o sea cuando yo hago el producto interno,",
+        "start": 1603.9199999999998,
+        "end": 1609.72
+    },
+    {
+        "text": " W3 con W1 ahora, todo lo que tengo que hacer es acá donde había puesto W2 en la segunda entrada,",
+        "start": 1609.72,
+        "end": 1615.6000000000001
+    },
+    {
+        "text": " poner W1, entonces me va a quedar V3, producto interno cuando W1, esto me va a quedar acá,",
+        "start": 1615.6000000000001,
+        "end": 1622.56
+    },
+    {
+        "text": " como venía, y esto acá W2, producto interno cuando W1, y acá lo mismo, esto viene acá y acá me",
+        "start": 1622.56,
+        "end": 1630.24
+    },
+    {
+        "text": " queda W1, producto interno cuando W1.",
+        "start": 1630.24,
+        "end": 1635.72
+    },
+    {
+        "text": " Claro, sí, es ser claro, claro, sí, lo que pasa es que después tener que llevar regito",
+        "start": 1635.72,
+        "end": 1646.48
+    },
+    {
+        "text": " todos los productos interno, entonces vuelve medio tedioso con uno trabaja en dimensiones",
+        "start": 1646.48,
+        "end": 1651.0
+    },
+    {
+        "text": " altas, pero la idea es, además hay un par de ejemplos, fíjense en el libro Rojo,",
+        "start": 1651.0,
+        "end": 1656.64
+    },
+    {
+        "text": " ahí ejemplos de cómo se aplica este procedimiento para su espacio base 3, de dimensión 3, con funciones,",
+        "start": 1656.64,
+        "end": 1663.48
+    },
+    {
+        "text": " espacio de funciones continuos y en espacio en R3, creo, bien, bien, los ejemplos son,",
+        "start": 1663.48,
+        "end": 1668.3200000000002
+    },
+    {
+        "text": " no lo vamos a hacer nosotros, pero vean lo que en el libro Rojo hay, sí, ahí hay que repetir",
+        "start": 1668.3200000000002,
+        "end": 1672.8400000000001
+    },
+    {
+        "text": " a ser cálculo, producto interno, norma, etcétera, y puede ser tedioso, bien, ahora cuando yo hago esto,",
+        "start": 1672.8400000000001,
+        "end": 1679.96
+    },
+    {
+        "text": " el que se va ahora ese segundo sumando, porque acá tengo W2, producto interno cuando W1, esto es",
+        "start": 1680.68,
+        "end": 1686.52
+    },
+    {
+        "text": " 0, y acá se cancela, lo que está acá, W1 cuando W1, con lo que está acá W1 cuando",
+        "start": 1686.52,
+        "end": 1695.44
+    },
+    {
+        "text": " W1, entonces me queda, V3 cuando W1, menos V3 cuando W1 que también me da ser,",
+        "start": 1695.44,
+        "end": 1701.56
+    },
+    {
+        "text": " o sea que efectivamente el W3 también es ortobonal al W1, o sea, con este procedimiento tengo",
+        "start": 1701.56,
+        "end": 1712.2
+    },
+    {
+        "text": " W1, un W2 que es ortobonal a W1 y un W3 que es ortobonal a W1 y W2, bueno, la pregunta es",
+        "start": 1712.2,
+        "end": 1723.6799999999998
+    },
+    {
+        "text": " cómo me construyo en general el término KSIMO, a ver si hay que encañima arriesgar.",
+        "start": 1723.68,
+        "end": 1731.48
+    },
+    {
+        "text": " Y así voy sigo la lista, hasta llegar a lo que sería esto, entonces en general lo que tenemos",
+        "start": 1753.68,
+        "end": 1763.28
+    },
+    {
+        "text": " ya lo escribo en un ratito, en general, sí, sí, sí, tienes razón, gracias, por eso me",
+        "start": 1763.28,
+        "end": 1776.04
+    },
+    {
+        "text": " digo a ver si uno dice algo y escribo otra cosa, estamos probando que W3 es ortobonal a W1 y a W2,",
+        "start": 1776.04,
+        "end": 1782.0
+    },
+    {
+        "text": " gracias. Si yo procedo con este, con este algoritmo, digamos así, de manera recursiva,",
+        "start": 1782.0,
+        "end": 1791.44
+    },
+    {
+        "text": " voy a tener, en el paso KM1 digamos voy a tener que W1, W2, hasta WKM1,",
+        "start": 1799.88,
+        "end": 1811.56
+    },
+    {
+        "text": " es un conjunto ortobonal y en el paso KSIMO, en el paso KSIMO consideramos un vector",
+        "start": 1813.0,
+        "end": 1840.0
+    },
+    {
+        "text": " de la base original, o sea, el WK sería el primer término que vendría KSIMO,",
+        "start": 1840.0,
+        "end": 1856.0
+    },
+    {
+        "text": " al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2, al V2,",
+        "start": 1856.0,
+        "end": 1865.0
+    },
+    {
+        "text": " y después lo que vendría KSIMO, estoy restando, el equivalente lo que tengo ahí, le estoy",
+        "start": 1865.0,
+        "end": 1869.68
+    },
+    {
+        "text": " restando constantes multiplicadas por W1, por W2, hasta WKM1, los KM1, los vectores previos,",
+        "start": 1869.68,
+        "end": 1877.48
+    },
+    {
+        "text": " se entiende lo mismo que hacía acá, entonces acá que va a aparecer, bueno, este dioso es",
+        "start": 1877.48,
+        "end": 1884.84
+    },
+    {
+        "text": " escribir, lo que me hacía en recién, ahí va a aparecer, lo podríamos escribir como sumatoria,",
+        "start": 1884.84,
+        "end": 1892.0
+    },
+    {
+        "text": " es un ratito lo que vamos a escribir como sumatoria, pero dejenme lo escribir de manera",
+        "start": 1892.0,
+        "end": 1896.92
+    },
+    {
+        "text": " de estial para que quede claro y después lo pasamos a sumatoria.",
+        "start": 1896.92,
+        "end": 1900.16
+    },
+    {
+        "text": " El lindo toesto, bueno, pueden construir bases ortogonales, ortonomales en espacios de polinomios,",
+        "start": 1926.92,
+        "end": 1937.3600000000001
+    },
+    {
+        "text": " definidos de intervalos, etcétera, pueden jugar un rato con toesto.",
+        "start": 1937.3600000000001,
+        "end": 1942.8400000000001
+    },
+    {
+        "text": " Entonces, ahora sí copie bien todo esto.",
+        "start": 1956.92,
+        "end": 1971.44
+    },
+    {
+        "text": " En natural, esto no es natural como se construye KSIMO, fíjense que como decía recién,",
+        "start": 1986.92,
+        "end": 2005.5600000000002
+    },
+    {
+        "text": " una vez que yo construí los cámenos unos primeros vectores ortogonales, como construye",
+        "start": 2005.5600000000002,
+        "end": 2012.64
+    },
+    {
+        "text": " KSIMO, lo construyo agregando el elemento KSIMO de la base original que era el VK, así como",
+        "start": 2012.64,
+        "end": 2020.16
+    },
+    {
+        "text": " el K para el W3, la quemos el V3, para el W2, etcétera y después constantes que multiplican",
+        "start": 2020.16,
+        "end": 2027.8000000000002
+    },
+    {
+        "text": " estos a los primeros cámenos uno y las constantes son las equivalentes a lo que tenía ya,",
+        "start": 2027.8000000000002,
+        "end": 2032.3200000000002
+    },
+    {
+        "text": " tengo que tomar el próbto interno de V sub K con el K-1, dividir por la norma el cuadrado",
+        "start": 2032.3200000000002,
+        "end": 2040.0400000000002
+    },
+    {
+        "text": " de V1, entonces fíjense que el argumento lo puedo volver a aplicar aquí, todos estos,",
+        "start": 2040.08,
+        "end": 2064.04
+    },
+    {
+        "text": " todos estos que tengo acá, son combinación niña al de qué vectores la base original,",
+        "start": 2064.04,
+        "end": 2072.04
+    },
+    {
+        "text": " este es combinación niña al de V1, el que vendría acá sería combinación niña al de V1 y V2,",
+        "start": 2072.04,
+        "end": 2077.68
+    },
+    {
+        "text": " este sería de V1, V2 hasta VK-1, o sea que estos son combinaciones niñales de los primeros",
+        "start": 2077.68,
+        "end": 2082.84
+    },
+    {
+        "text": " cámenos uno, vectores que tengo ahí. Y le estamos agregando un primer sumando que tiene",
+        "start": 2082.84,
+        "end": 2091.64
+    },
+    {
+        "text": " el vector K-1, que le inalmente independiente de estos, entonces obviamente el mismo argumento",
+        "start": 2091.64,
+        "end": 2098.72
+    },
+    {
+        "text": " que recién el espacio generado por los primeros cávectores acá coincide con el espacio generado por los",
+        "start": 2098.72,
+        "end": 2103.56
+    },
+    {
+        "text": " primeros cávectores de la base original, sí entonces por construcción.",
+        "start": 2103.56,
+        "end": 2109.0
+    },
+    {
+        "text": " Se entiende eso, no? Es el mismo argumento que recién, esto es combinación niña al de V1,",
+        "start": 2122.64,
+        "end": 2127.24
+    },
+    {
+        "text": " lo que vina acá de V1 y V2, lo que vina acá de V1, V2, V3, etcétera, lo que vina acá de V1, V2 hasta VK,",
+        "start": 2127.24,
+        "end": 2134.0
+    },
+    {
+        "text": " y eso genera el mismo espacio que V1, V2, VK. Y además el VK es distintos de cero,",
+        "start": 2134.0,
+        "end": 2142.92
+    },
+    {
+        "text": " por el mismo argumento que recién, porque si fuese igual a cero tendría que ver su K sería",
+        "start": 2142.92,
+        "end": 2152.96
+    },
+    {
+        "text": " combinación niña al de V1, V2 hasta V2, a menos 1, lo cual no puede ser porque son una base.",
+        "start": 2152.96,
+        "end": 2159.36
+    },
+    {
+        "text": " Fájame, sí, es gracias, tengo miedo, dormido, ¿no? Lo he caído cero, gracias. Fájame,",
+        "start": 2160.88,
+        "end": 2168.12
+    },
+    {
+        "text": " yo te he escrito como cero, mi aseo. ¿Qué es su mes pasa por preparar la clase viendo",
+        "start": 2168.12,
+        "end": 2175.3199999999997
+    },
+    {
+        "text": " de las noticias? Y lo que tengo que ver ahora, el punto final de la construcción es ver que",
+        "start": 2175.3199999999997,
+        "end": 2188.68
+    },
+    {
+        "text": " efectivamente este es ortobona a cada uno de los anteriores. Bueno, ahí sí, lo vamos a escribir",
+        "start": 2188.68,
+        "end": 2195.4
+    },
+    {
+        "text": " de manera compacta a su matoria porque si no se nos va a terminar el marcador. Entonces, sí,",
+        "start": 2195.4,
+        "end": 2201.92
+    },
+    {
+        "text": " sí, probaste que todos los anteriores son ortobanales entre sí, pero acá estoy",
+        "start": 2205.92,
+        "end": 2209.8
+    },
+    {
+        "text": " de regando uno nuevo, pero tengo que probar que es ortobaná a cada uno de ellos,",
+        "start": 2209.8,
+        "end": 2213.2400000000002
+    },
+    {
+        "text": " no malcase que probar que es ortobaná la. No, no, porque",
+        "start": 2213.2400000000002,
+        "end": 2222.4
+    },
+    {
+        "text": " sí, exactamente, lo que es difícil imaginarse lo que se le on dimensión en",
+        "start": 2222.4,
+        "end": 2227.96
+    },
+    {
+        "text": " porque en dimensión es alta, pero mira, si yo tengo, si yo tengo NR3, este vector y",
+        "start": 2227.96,
+        "end": 2237.44
+    },
+    {
+        "text": " este que son ortobanales, y tengo otro que ortobaná la este, por ejemplo este, no me garantiza",
+        "start": 2237.44,
+        "end": 2244.8
+    },
+    {
+        "text": " que se ortobaná de que diga que para arriba, porque podría ser así. ¿Sentiende? Entonces,",
+        "start": 2244.8,
+        "end": 2251.12
+    },
+    {
+        "text": " este vector que me está marcando el marcador acá es ortobaná con el de abajo, pero no es",
+        "start": 2251.12,
+        "end": 2256.24
+    },
+    {
+        "text": " ortobaná con el de arriba, a pesar de que esto era ortobaná. Entonces, tengo que probar que",
+        "start": 2256.24,
+        "end": 2261.94
+    },
+    {
+        "text": " es ortobaná a cada uno de ellos. Sí. Y con eso, bueno, esa es la expresión general de la",
+        "start": 2261.94,
+        "end": 2276.08
+    },
+    {
+        "text": " construcción y voy construyendo hasta llegar al último vector que es el WBZN y se termina",
+        "start": 2276.08,
+        "end": 2282.4
+    },
+    {
+        "text": " el procedimiento Gramps-Mitt. Bueno, después hay que normalizar. Se cumple entonces y ahora",
+        "start": 2282.4,
+        "end": 2291.7599999999998
+    },
+    {
+        "text": " sigamos escribir eso de manera compacta. Se cumple para cualquier j, 1, 2 hasta",
+        "start": 2291.76,
+        "end": 2311.92
+    },
+    {
+        "text": " Cá-1. Es decir, voy a fijar uno de estos vectores, el WBZN y voy a ver que WBK es ortobaná",
+        "start": 2311.92,
+        "end": 2320.16
+    },
+    {
+        "text": " la WJ. En si la garra un vector cualquiera de los Cá-1, que tengo ahí primero, si voy a probar",
+        "start": 2320.16,
+        "end": 2336.16
+    },
+    {
+        "text": " que el WK es ortobaná la vez. Entonces, probo que es ortobaná a cada uno. Y ahora sí, por el",
+        "start": 2336.16,
+        "end": 2341.12
+    },
+    {
+        "text": " WK vamos a usar una manera compacta, escribirlo a través de una sumatoria. En VDWK vamos a escribir,",
+        "start": 2341.12,
+        "end": 2348.04
+    },
+    {
+        "text": " vamos a escribir lo que tenemos acá, que es, por un lado el VZN y por el otro lado vamos a escribir",
+        "start": 2348.04,
+        "end": 2358.68
+    },
+    {
+        "text": " esto como sumatoria. ¿Cómo lo escribimos a eso?",
+        "start": 2358.68,
+        "end": 2363.3599999999997
+    },
+    {
+        "text": " ¿Cómo escribimos esa sumatoria? Es la sumatoria con unirse I desde uno hasta Cá-1, entonces estamos",
+        "start": 2388.68,
+        "end": 2397.56
+    },
+    {
+        "text": " tomando el producto interno. Debe subca con el WI acá, divido por WI, producto interno",
+        "start": 2397.56,
+        "end": 2405.68
+    },
+    {
+        "text": " cuando WI y multiplicado por el WI. Estamos entonces, lo que teníamos acá es el escalar que",
+        "start": 2405.68,
+        "end": 2414.3199999999997
+    },
+    {
+        "text": " vamos multiplicando al sumando de corresponde ahí a Dolebey, lo escribimos atrás para adelante,",
+        "start": 2414.32,
+        "end": 2420.44
+    },
+    {
+        "text": " porque voy desde uno hasta Cá-1. El primer sumando ahí sería este, el segundo sería que viene acá,",
+        "start": 2420.44,
+        "end": 2428.0
+    },
+    {
+        "text": " el último sería este. Y tengo que tomar el producto interno de eso con el Dolebejota que está",
+        "start": 2428.0,
+        "end": 2433.2000000000003
+    },
+    {
+        "text": " fijo. Bien, y ahí es, en la entrada primero tengo una combinación lineal y uso linearidad",
+        "start": 2433.2000000000003,
+        "end": 2442.88
+    },
+    {
+        "text": " del producto interno con respecto a la primera componente, es decir que esto lo escribo.",
+        "start": 2442.88,
+        "end": 2447.36
+    },
+    {
+        "text": " ¿Cómo? V acá escalar Dolebejota y después tengo una sumatoria, la sumatoria sale para fuera",
+        "start": 2449.6800000000003,
+        "end": 2459.1600000000003
+    },
+    {
+        "text": " por additividad justamente y tengo esto sumando a Cá-1, estas son constantes, salen para",
+        "start": 2462.56,
+        "end": 2471.32
+    },
+    {
+        "text": " fuera, lo mismo que hacíamos recién, salen el menos, V subca, WI, WI escalar, WI,",
+        "start": 2471.32,
+        "end": 2485.28
+    },
+    {
+        "text": " estas constantes con el menos son estas constantes y después tengo finalmente producto interno",
+        "start": 2490.6000000000004,
+        "end": 2497.2400000000002
+    },
+    {
+        "text": " de Dolebejota. Sí, ahora fíjense acá lo que estamos tomando es el producto interno de",
+        "start": 2497.24,
+        "end": 2520.4399999999996
+    },
+    {
+        "text": " Dolebejota, donde Lí, el ínice ahí va entre 1 y Cá-1 y Cá-1 y Cá-1, o sea que estamos tomando",
+        "start": 2520.44,
+        "end": 2530.2000000000003
+    },
+    {
+        "text": " un producto interno entre dos vectores de este conjunto y este conjunto es un conjunto octobonal,",
+        "start": 2530.2000000000003,
+        "end": 2536.7200000000003
+    },
+    {
+        "text": " o sea que el producto interno entre dos cualquiera de estos vectores si los vectoros son distintos",
+        "start": 2536.7200000000003,
+        "end": 2542.04
+    },
+    {
+        "text": " de 0, se entiende? Ahí me la queda el producto interno de un WI, con ínice entre 1 y Cá-1,",
+        "start": 2542.04,
+        "end": 2549.96
+    },
+    {
+        "text": " que es uno de estos, que ya sé que son octobonales, con el WI, que J también es uno de estos,",
+        "start": 2549.96,
+        "end": 2556.56
+    },
+    {
+        "text": " está entre 1 y Cá-1, entonces tengo el producto interno de 2 acá dentro, como son octobonales,",
+        "start": 2556.56,
+        "end": 2561.64
+    },
+    {
+        "text": " si son distintos de 0, o sea que esto acá que tengo, esto que tengo acá es 0, si es distinto",
+        "start": 2561.64,
+        "end": 2569.08
+    },
+    {
+        "text": " de J, o sea que el único sumando que me queda ahí, cuando sumo desde I igual a 1 está acá",
+        "start": 2569.08,
+        "end": 2575.84
+    },
+    {
+        "text": " menos 1, es cuando I igual a J y el J está abajo, era el J que estoy poniendo acá, o sea de",
+        "start": 2575.84,
+        "end": 2582.04
+    },
+    {
+        "text": " todo eso sumando el único que queda es el J de déjimo y entonces ahí me queda, B sub C,",
+        "start": 2582.04,
+        "end": 2589.56
+    },
+    {
+        "text": " W y B J, que es lo que tengo acá en el primero y el sumando acá es que corresponde ahí",
+        "start": 2589.56,
+        "end": 2595.4
+    },
+    {
+        "text": " igual a J, que sería B C, por lo que interno cuando le ve J, abajo W J, cuando le ve J y arriba",
+        "start": 2595.4,
+        "end": 2608.36
+    },
+    {
+        "text": " W J con W J, el único que sobrevivio de todo sumando repito va a que corresponde ahí igual",
+        "start": 2608.36,
+        "end": 2617.28
+    },
+    {
+        "text": " a J y ahí que pasa, se anula todo porque justamente lo que está acá el denominador coincide",
+        "start": 2617.28,
+        "end": 2628.84
+    },
+    {
+        "text": " con esto, se simplifique, me queda B C, producto interno cuando le ve J, menos B C, producto",
+        "start": 2628.84,
+        "end": 2634.0400000000004
+    },
+    {
+        "text": " interno cuando le ve J, que es efectivamente 0, o sea que lo que estamos probando es que",
+        "start": 2634.0400000000004,
+        "end": 2641.7200000000003
+    },
+    {
+        "text": " W K es ortobona a la W J para todo J desde 1 hasta acá menos 1, o sea que el cae si",
+        "start": 2641.72,
+        "end": 2651.8799999999997
+    },
+    {
+        "text": " es un elemento que agregué es ortobona a todos los primeros, todos los que tenia antes,",
+        "start": 2651.8799999999997,
+        "end": 2657.12
+    },
+    {
+        "text": " hasta los que a menos 1 que tenia antes.",
+        "start": 2657.12,
+        "end": 2660.48
+    },
+    {
+        "text": " Sí, y eso me implica entonces, quedo W 1, W 2, hasta W K es un conjunto ortobona, o sea",
+        "start": 2660.48,
+        "end": 2683.4
+    },
+    {
+        "text": " que el elemento nuevo que agregué me sigue formando acá un conjunto ortobona que tiene ahora",
+        "start": 2683.4,
+        "end": 2688.64
+    },
+    {
+        "text": " un elemento más y de nuevo, el generado por estos cabectores, el generado por los primeros",
+        "start": 2688.64,
+        "end": 2701.2
+    },
+    {
+        "text": " cabectores de la base original, o sea que se va cumpliendo lo que había escrito a",
+        "start": 2701.2,
+        "end": 2706.24
+    },
+    {
+        "text": " principio el enunciado de Grams-Midt, entonces así sí o de manera recursiva hasta agotar",
+        "start": 2706.24,
+        "end": 2713.0
+    },
+    {
+        "text": " todos los vectores de la base, o sea que viene tener un conjunto W 1, W 2, hasta W N,",
+        "start": 2713.0,
+        "end": 2718.36
+    },
+    {
+        "text": " que es un conjunto ortobonal y además el espacio generado por eso coincide con el espacio",
+        "start": 2718.36,
+        "end": 2722.56
+    },
+    {
+        "text": " generado por los N vectores de la base que es el espacio original y ahí tengo una base",
+        "start": 2722.56,
+        "end": 2727.24
+    },
+    {
+        "text": " ortobonal del espacio original.",
+        "start": 2727.24,
+        "end": 2730.0
+    },
+    {
+        "text": " Así continuamos entonces, continuamos a obtener hasta obtener una base ortobonal.",
+        "start": 2730.0,
+        "end": 2747.08
+    },
+    {
+        "text": " Y esa base justamente es lo que le hemos llamado W 1, W 2, hasta W N. Entonces la",
+        "start": 2760.0,
+        "end": 2776.68
+    },
+    {
+        "text": " partida de la base original construimos ahora una base ortobonal y en cada paso cuando",
+        "start": 2776.68,
+        "end": 2781.84
+    },
+    {
+        "text": " yo considero los C, primeros vectores de su espacio generado por esa base coincide con",
+        "start": 2781.84,
+        "end": 2786.12
+    },
+    {
+        "text": " su espacio generado por los primeros vectores de la base original. Quiera lo que me decía",
+        "start": 2786.12,
+        "end": 2790.52
+    },
+    {
+        "text": " el resultado que les escribí a principio.",
+        "start": 2790.52,
+        "end": 2802.52
+    },
+    {
+        "text": " Todavía no termine de falta el último paso minúsculo que es el siguiente. El teorema",
+        "start": 2802.52,
+        "end": 2811.48
+    },
+    {
+        "text": " el metro Rasmil me dice como tener una base ortobonal y acá tengo una base ortobonal.",
+        "start": 2811.48,
+        "end": 2817.72
+    },
+    {
+        "text": " ¿Qué hago para tener una base ortobonal? Agarró a cada uno de estos que son distintos",
+        "start": 2817.72,
+        "end": 2822.44
+    },
+    {
+        "text": " de cero y los divido por su norma y ahí tengo una base ortobonal. Que además cumple",
+        "start": 2822.44,
+        "end": 2828.48
+    },
+    {
+        "text": " esta condición de esa nueva base como divido acá cada uno por la norma obviamente su espacio",
+        "start": 2828.48,
+        "end": 2833.96
+    },
+    {
+        "text": " generado por los C, primeros coincide con el que generado por los C, primeros la base original.",
+        "start": 2833.96,
+        "end": 2838.6
+    },
+    {
+        "text": " Entonces finalmente normalizamos por eso les digo esto es tedioso y a los ejemplos se",
+        "start": 2838.6,
+        "end": 2849.68
+    },
+    {
+        "text": " los dejo a ustedes. Hay que calcular la base ortobonal, tomar productos internos, un montón",
+        "start": 2849.68,
+        "end": 2853.68
+    },
+    {
+        "text": " de productos internos, después normalizar este dioso pero es útil. Finalmente normalizamos",
+        "start": 2853.68,
+        "end": 2864.2799999999997
+    },
+    {
+        "text": " y tenemos definimos un vector y subj que es el doblejota, vivió su norma con j, es",
+        "start": 2864.28,
+        "end": 2877.52
+    },
+    {
+        "text": " de 1, 2 hasta n y tenemos entonces la base que está buscando que era la verprima, la base",
+        "start": 2877.52,
+        "end": 2886.1600000000003
+    },
+    {
+        "text": " ortobonal. Lo vamos a escribir así, cuando escribimos en lugar escribimos base ortobonal",
+        "start": 2886.16,
+        "end": 2897.66
+    },
+    {
+        "text": " le voy a poner así, B o B, obviamente que es una base ortobonal del espacio B y esa base",
+        "start": 2897.66,
+        "end": 2904.98
+    },
+    {
+        "text": " ortobonal cumple las condiciones que le habíamos llamado asterisco que no era otra que decir",
+        "start": 2904.98,
+        "end": 2913.8799999999997
+    },
+    {
+        "text": " que los caprimeros vectores acá generan el mismo espacio que los caprimeros vectores",
+        "start": 2913.88,
+        "end": 2919.84
+    },
+    {
+        "text": " de la base ortobonal. Bueno, tedioso pero termino. Les digo como ejemplo que vean en",
+        "start": 2919.84,
+        "end": 2932.48
+    },
+    {
+        "text": " 9000 de ejemplo, agarren el libro rojo, agarren Wikipedia vean ejemplo, en el libro rojo",
+        "start": 2932.48,
+        "end": 2939.28
+    },
+    {
+        "text": " hay un par de ejemplos libres porque hay uno que trabaja con un espacio de funciones",
+        "start": 2939.28,
+        "end": 2943.7200000000003
+    },
+    {
+        "text": " continuas, un espacio de dimensión 3, entonces ahí está, es más interesante.",
+        "start": 2943.7200000000003,
+        "end": 2949.84
+    },
+    {
+        "text": " ¿A qué? Lo vi yo estoy buscando una base ortobonal, o sea vectores ortobonales que tengan",
+        "start": 2949.84,
+        "end": 2961.0
+    },
+    {
+        "text": " norma 1, con ese método lo que obtuve es una base ortobonal, quiero que tengan norma",
+        "start": 2961.0,
+        "end": 2966.82
+    },
+    {
+        "text": " 1 para que tengan norma 1 agarro cada vector y lo divido por su propia norma. Entonces",
+        "start": 2966.82,
+        "end": 2972.46
+    },
+    {
+        "text": " estos vectores que hablan de llamo I y subuno y subn que son estos divididos, sus correspondientes",
+        "start": 2972.46,
+        "end": 2979.26
+    },
+    {
+        "text": " normas es una base ortobonal y además cumple esta condición, los primeros, el espacio",
+        "start": 2979.26,
+        "end": 2987.6200000000003
+    },
+    {
+        "text": " generado por los primeros vectores I coincide con el espacio generado por los primeros vectores",
+        "start": 2987.6200000000003,
+        "end": 2992.38
+    },
+    {
+        "text": " simplemente porque acá no más estoy diviendo este por su norma. Estamos, entonces como",
+        "start": 2992.9,
+        "end": 2998.7000000000003
+    },
+    {
+        "text": " corolario todo esto se desprende que todo espacio vectorial o sub espacio vectorial de dimensión",
+        "start": 2998.7000000000003,
+        "end": 3005.2200000000003
+    },
+    {
+        "text": " finita, espacio con producto interno tiene una base ortobonal. Y ya veremos en un ratito",
+        "start": 3005.2200000000003,
+        "end": 3012.2200000000003
+    },
+    {
+        "text": " bueno y en todo lo que sigue prácticamente en la segunda parte del curso, ¿cuál es",
+        "start": 3012.2200000000003,
+        "end": 3018.82
+    },
+    {
+        "text": " la ventaja de trabajar con base de ortobonal? Bueno preguntas, hay una, al final de la clase",
+        "start": 3018.82,
+        "end": 3035.6200000000003
+    },
+    {
+        "text": " o posiblemente lo dejamos para la clase que viene, hay algo de una forma de escoponema",
+        "start": 3035.6200000000003,
+        "end": 3040.78
+    },
+    {
+        "text": " trices que se llama de escomposición QR que es muy útil pero la vamos a dejar para la",
+        "start": 3040.78,
+        "end": 3048.3
+    },
+    {
+        "text": " clase que viene, me parece lo que quiero ver ahora es que lo vamos a necesitar para esa",
+        "start": 3048.3,
+        "end": 3051.86
+    },
+    {
+        "text": " composición QR es escribir esplicitamente como es la matriz cambio de base de la base original",
+        "start": 3051.86,
+        "end": 3059.78
+    },
+    {
+        "text": " a la etapa. Escribimos eso, lo guardamos para la clase que viene y la clase que viene lo vamos",
+        "start": 3059.78,
+        "end": 3066.6600000000003
+    },
+    {
+        "text": " a usar, la clase no va a terminar ahí, voy a seguir dando otros resultados pero vamos a",
+        "start": 3066.6600000000003,
+        "end": 3073.42
+    },
+    {
+        "text": " ver entonces para terminar con esta construcción, ¿cuál es la matriz cambio de base? Entonces",
+        "start": 3073.42,
+        "end": 3082.7000000000003
+    },
+    {
+        "text": " veamos la matriz cambio de base, cambio de base que resulta justamente el proceso o del",
+        "start": 3082.7000000000003,
+        "end": 3098.78
+    },
+    {
+        "text": " método de ortodormalización normalización de gransmi. Bien o sea lo que quiero ver en definitiva,",
+        "start": 3098.78,
+        "end": 3124.0600000000004
+    },
+    {
+        "text": " ya ves cuál es la matriz que me pasa de esta base, la base original, a la base final que es la base",
+        "start": 3124.06,
+        "end": 3137.1
+    },
+    {
+        "text": " de ortodormal. Es piensa en sí, ¿cuál es la base? Un poco tedioso porque es escribir",
+        "start": 3137.1,
+        "end": 3164.46
+    },
+    {
+        "text": " lo que estamos haciendo ahora sí, para simplificar un poquito la notación a estas cosas que",
+        "start": 3164.46,
+        "end": 3172.62
+    },
+    {
+        "text": " aparecen acá, fíjense en el que cuando yo escribo el veca, perdón el doble veca, aparece el",
+        "start": 3172.62,
+        "end": 3183.18
+    },
+    {
+        "text": " veca y aparecen estas cosas, veca, escalar lo le veí, lo le veí, donde estas son los doble veí,",
+        "start": 3183.18,
+        "end": 3190.14
+    },
+    {
+        "text": " los cámenos unos que construí. O sea le vamos a poner el nombre esta porquería acá, le vamos a",
+        "start": 3190.14,
+        "end": 3196.2999999999997
+    },
+    {
+        "text": " llamar a esto escalar, le vamos a llamarse que hay, que es otra cosa que el Pruto Interno de veca con",
+        "start": 3196.2999999999997,
+        "end": 3204.9
+    },
+    {
+        "text": " doble veí y vió la norma de lo veí el cuadra donde hay es uno, cualquier de los lectores previos,",
+        "start": 3205.9,
+        "end": 3212.3799999999997
+    },
+    {
+        "text": " de uno hasta acá, menos uno. O sea la notación que vamos a usar, se caí va a ser el Pruto Interno de",
+        "start": 3212.38,
+        "end": 3227.42
+    },
+    {
+        "text": " veca con doble veí, dividido doble veí con doble veí, es un escalar eso y eso lo vamos a",
+        "start": 3227.42,
+        "end": 3237.1400000000003
+    },
+    {
+        "text": " usar para ahí iguales de uno, dos hasta acá, menos uno, que son justamente para cada acá los",
+        "start": 3237.14,
+        "end": 3243.74
+    },
+    {
+        "text": " coeficientes que aparecen acá, que son cámenos uno coeficientes, el uno, el dos hasta el cámenos",
+        "start": 3243.74,
+        "end": 3251.54
+    },
+    {
+        "text": " uno. Entonces si yo quiero construirme la matriz cambio de base que me pasa de acá, para acá",
+        "start": 3251.54,
+        "end": 3263.42
+    },
+    {
+        "text": " lo que tengo que hacer es agarrar cada vector de la base original y ver cómo se descompone como",
+        "start": 3263.42,
+        "end": 3270.02
+    },
+    {
+        "text": " combinación niñal de los vectores de base final. Bien, entonces hagamos eso. Vamos a empezar",
+        "start": 3270.02,
+        "end": 3281.54
+    },
+    {
+        "text": " construyendo los vectores de la base ortogonal escribiendo los vectores de base ortogonal y",
+        "start": 3281.54,
+        "end": 3286.1
+    },
+    {
+        "text": " esponormalizamos. Bueno, la base intermedia es, el primer elemento de la base intermedia era el",
+        "start": 3286.1,
+        "end": 3303.14
+    },
+    {
+        "text": " V1, el primero de la base original y el caésimo elemento de la base intermedia lo que habíamos",
+        "start": 3303.14,
+        "end": 3313.2599999999998
+    },
+    {
+        "text": " escrito acá, escrito con esa notación compacta, me queda V subca, menos la suma con",
+        "start": 3313.26,
+        "end": 3325.38
+    },
+    {
+        "text": " ídis de uno hasta acá, esto, suma allí de uno hasta acá, de ese caí do le veí, pero donde es de",
+        "start": 3325.38,
+        "end": 3336.5
+    },
+    {
+        "text": " uno hasta acá, menos uno, de ese caí do le veí, ese esto, V cámenos la suma allí de uno",
+        "start": 3336.5,
+        "end": 3345.98
+    },
+    {
+        "text": " hasta acá, menos uno, se caí do le veí y eso es, eso es la construcción de los vectores",
+        "start": 3345.98,
+        "end": 3355.24
+    },
+    {
+        "text": " intermedios, esto lo hacemos para acá igual a 2, 3, 4 hasta n, este es el V1, sí, no, no,",
+        "start": 3355.24,
+        "end": 3363.22
+    },
+    {
+        "text": " estoy criando el vector, el vector, esto es para acá igual a 2, 3 hasta n, o sea el primero,",
+        "start": 3363.22,
+        "end": 3371.8599999999997
+    },
+    {
+        "text": " ese este y los otros son el W2, va a ser el V2, menos el primer sumando que tengo acá, el V3,",
+        "start": 3371.8599999999997,
+        "end": 3378.1
+    },
+    {
+        "text": " etcétera, etcétera, hasta llegar al V al Wn y después finalmente lo que hacemos,",
+        "start": 3378.1,
+        "end": 3384.9399999999996
+    },
+    {
+        "text": " es lo que está escrito en el método y hacemos finalmente los W, W, J, lo tomamos, pero",
+        "start": 3384.94,
+        "end": 3394.26
+    },
+    {
+        "text": " ni J, lo tomamos con el W, J y vio su norma, esta la escritura compacta lo que hicimos",
+        "start": 3394.26,
+        "end": 3408.04
+    },
+    {
+        "text": " en el R100, esto son los W, que los construimos desde W1, todo el Vn y para acá uno de",
+        "start": 3408.04,
+        "end": 3416.54
+    },
+    {
+        "text": " todos los W, normalizamos y obteremos los sí, que son los vectores de la base final,",
+        "start": 3416.54,
+        "end": 3421.2799999999997
+    },
+    {
+        "text": " entonces escribamos de ahí, veamos cómo se despeja, cada uno de estos como combinación",
+        "start": 3421.2799999999997,
+        "end": 3425.74
+    },
+    {
+        "text": " niñal de estos que tengo ahí, a ver, despejamos los ve en función de los sí, el primero,",
+        "start": 3425.74,
+        "end": 3446.18
+    },
+    {
+        "text": " vamos a escribir los primeros, el primero, el V sub 1, cómo se escribe como función",
+        "start": 3446.18,
+        "end": 3450.12
+    },
+    {
+        "text": " de los sí, el V sub 1 es el W sub 1 y el W sub 1 como se relaciona con el I sub 1,",
+        "start": 3450.12,
+        "end": 3464.8399999999997
+    },
+    {
+        "text": " el W sub 1 es I sub 1 por la norma del V sub 1, V sub 1, igual a W1 y W1 es igual",
+        "start": 3464.8399999999997,
+        "end": 3474.38
+    },
+    {
+        "text": " a I sub 1 por la norma del V1, normal el V1 por I sub 1, entonces acá tenemos",
+        "start": 3474.38,
+        "end": 3485.32
+    },
+    {
+        "text": "plicitamente cómo se escribe el V1 como combinación niñada de los elementos de la base",
+        "start": 3485.32,
+        "end": 3489.86
+    },
+    {
+        "text": " y, esto por I, más 0 por I2, más 0 por I3, eso después lo vamos a usar para formarme",
+        "start": 3489.86,
+        "end": 3494.86
+    },
+    {
+        "text": " la matriz cambio base, ¿qué pasa con el 2 por ejemplo? Con el V sub 2, el V sub 2,",
+        "start": 3494.86,
+        "end": 3505.6600000000003
+    },
+    {
+        "text": " ahí tengo que usar ahora esto, lo que tengo acá, el V sub 2 es lo despejo acá, esto lo",
+        "start": 3505.6600000000003,
+        "end": 3516.58
+    },
+    {
+        "text": " pasa por el otro lado, el V sub 2 es W sub 2, más que, pasa esto por el otro lado,",
+        "start": 3516.58,
+        "end": 3526.8199999999997
+    },
+    {
+        "text": " y acá tengo la suma con I desde 1 hasta 1 de C1, W1, o sea más C1 por W1 y ahora esto",
+        "start": 3526.8199999999997,
+        "end": 3544.66
+    },
+    {
+        "text": " lo escríbo como función de los S, se entiende lo que estoy, pero, C1 no, C2 1, o sea cuando",
+        "start": 3544.66,
+        "end": 3556.62
+    },
+    {
+        "text": " pongo K igual a 2, me queda acá el V sub 2 igual a W sub 2, esto lo pasa por el otro",
+        "start": 3556.62,
+        "end": 3561.54
+    },
+    {
+        "text": " lado, me queda C2, uno es el único sumando por W1 y ahora el W2 es I2 por la norma",
+        "start": 3561.54,
+        "end": 3571.8199999999997
+    },
+    {
+        "text": " no, no es el V2 por I2 y el I1 no tengo ahí escrito arriba, y acá tengo escrito",
+        "start": 3571.82,
+        "end": 3592.1000000000004
+    },
+    {
+        "text": " el V2 como combinación ideal del I1 y 2 hasta I N, bueno como quedaría la porquería",
+        "start": 3592.1,
+        "end": 3603.06
+    },
+    {
+        "text": " esta con el KS, esta notación confunde, pero es en gorroso, pero es acá lo de ahí,",
+        "start": 3603.06,
+        "end": 3615.18
+    },
+    {
+        "text": " fíjense el KS y me voy a quedaría, si yo quiero calcular el KS y me sería, lo despejo",
+        "start": 3615.18,
+        "end": 3622.2599999999998
+    },
+    {
+        "text": " de acá, sería el WK más todo eso pasado por el otro lado, el WK más suma I desde 1 hasta",
+        "start": 3622.2599999999998,
+        "end": 3639.22
+    },
+    {
+        "text": " KS 1, CK y I2, el V sub K sería WK más esto que tengo aposta acá, y desde 1 hasta",
+        "start": 3639.22,
+        "end": 3660.8199999999997
+    },
+    {
+        "text": " KS 1 se caí WK y ahora W es la norma no, y por el I sub y esto sería la norma no,",
+        "start": 3660.82,
+        "end": 3673.42
+    },
+    {
+        "text": " WK por I sub K y esto sería la norma no, WK por I griego ahí, estamos, entonces esto",
+        "start": 3673.42,
+        "end": 3693.5
+    },
+    {
+        "text": " escribiendo cada vector de la base original como combinación lineal de los vectores de",
+        "start": 3693.5,
+        "end": 3698.9
+    },
+    {
+        "text": " base final, la base ortobra, fíjense ahí que se va armando como una forma de escalera,",
+        "start": 3698.9,
+        "end": 3704.14
+    },
+    {
+        "text": " porque el V1 solamente depende de I1, el V2 depende de I1 y I2, el KS y el V sub K depende",
+        "start": 3704.14,
+        "end": 3714.54
+    },
+    {
+        "text": " de IK y de todos los precios, de I hasta KS 1, o sea depende de IK, de KS 1 hasta I1, o sea",
+        "start": 3714.54,
+        "end": 3724.46
+    },
+    {
+        "text": " que si sigo así al final lo voy a tener, eso me va a dar una forma particular de la matriz",
+        "start": 3724.46,
+        "end": 3729.26
+    },
+    {
+        "text": " a mi base, si sigo hasta el final lo voy a tener que el V sub N, el último vector de la",
+        "start": 3729.26,
+        "end": 3734.66
+    },
+    {
+        "text": " lista sería el W sub N más sumatoria de I igual a I hasta KS 1, CN y por WK, o sea cuando",
+        "start": 3734.66,
+        "end": 3749.34
+    },
+    {
+        "text": " lo pongo acá, K igual a N me quedaría V sub N igual a WN, más sumatoria de I igual",
+        "start": 3749.34,
+        "end": 3756.6800000000003
+    },
+    {
+        "text": " a I hasta N-I, CN y por WK y ahí usó lo mismo, WN es norma WN por I sub N y el otro me queda",
+        "start": 3756.6800000000003,
+        "end": 3769.6200000000003
+    },
+    {
+        "text": " CN-I por la norma WB sub I por I sub I, el resumen acá tenemos esplicitamente escrito",
+        "start": 3769.62,
+        "end": 3784.94
+    },
+    {
+        "text": " los vectoros de la base original como combinación eñal de los vectoros de la base final, con",
+        "start": 3784.94,
+        "end": 3788.94
+    },
+    {
+        "text": " las particularidades que les comentaba recién, el V sub I depende de I sub I, el V sub I depende",
+        "start": 3788.94,
+        "end": 3794.6
+    },
+    {
+        "text": " de I sub I y sub II, el V sub III, de I sub I y sub II y sub III, etcétera, el V sub K del I sub I",
+        "start": 3794.6,
+        "end": 3801.18
+    },
+    {
+        "text": " sub II hasta I sub K, pero no de los que siguen hasta el último, el V N que depende de I, I",
+        "start": 3801.18,
+        "end": 3807.18
+    },
+    {
+        "text": " sub I, y N, entonces eso me va a dar una forma particular de la matriz cambio de base,",
+        "start": 3807.18,
+        "end": 3813.36
+    },
+    {
+        "text": " sí, ahora lo hacemos, con esto la matriz cambio de base queda así, la matriz cambio de base",
+        "start": 3813.36,
+        "end": 3836.2400000000002
+    },
+    {
+        "text": " queda, lo que tengo que hacer es construir mi esta matriz, que me pasa de la base original",
+        "start": 3836.24,
+        "end": 3849.7599999999998
+    },
+    {
+        "text": " la base final, entonces colgar al calimento la base original, fijarme cómo se descompone",
+        "start": 3849.7599999999998,
+        "end": 3858.12
+    },
+    {
+        "text": " la base final y colgar las componentes, los componentes de la combinación eñal, sí",
+        "start": 3858.12,
+        "end": 3865.24
+    },
+    {
+        "text": " entonces acá vendrían los componentes de la combinación eñal de cómo se compone V1,",
+        "start": 3865.24,
+        "end": 3872.3199999999997
+    },
+    {
+        "text": " las coordenadas, pero donde V2, etcétera, las coordenadas del K e Simo y la coordenada del último,",
+        "start": 3872.3199999999997,
+        "end": 3879.24
+    },
+    {
+        "text": " veamos cómo queda esto, las coordenadas del primero es esto por I, 1, más 0 por I2, más 0 por I3,",
+        "start": 3879.24,
+        "end": 3891.64
+    },
+    {
+        "text": " más 0, etcétera, se me va a quedar acá un normal de V1 y todo abajo 0, sí, la del segundo",
+        "start": 3891.64,
+        "end": 3910.04
+    },
+    {
+        "text": " me queda esto por I, más esto por I2, más 0 por todas que siguen, o sea que me va a quedar acá,",
+        "start": 3910.04,
+        "end": 3916.7599999999998
+    },
+    {
+        "text": " 0,1, perdón que estoy escribiendo chiquito pero escribimos mucho, 0,1 por esto más,",
+        "start": 3917.7200000000003,
+        "end": 3925.5200000000004
+    },
+    {
+        "text": " esto es la diagonal y el resto es todo 0, sí, el K e Simo como me quedaría, me quedaría",
+        "start": 3927.7200000000003,
+        "end": 3939.32
+    },
+    {
+        "text": " 0,1 por la norma de V1, por I1 que vendría acá 0,1 por la norma de V1, más 0,2 por la norma de V2,",
+        "start": 3939.6400000000003,
+        "end": 3954.92
+    },
+    {
+        "text": " etcétera, ¿qué es por qué haría esto? Hasta llegar al K e Simo que tiene la norma de Vk,",
+        "start": 3954.92,
+        "end": 3964.36
+    },
+    {
+        "text": " que sustaría acá en el elemento de la diagonal, entonces el fondo o sea que no la foto ya",
+        "start": 3964.36,
+        "end": 3971.6800000000003
+    },
+    {
+        "text": " gansúm por favor y así sigo hasta que el final el último, estoy descomponiendo esto",
+        "start": 3971.6800000000003,
+        "end": 3982.44
+    },
+    {
+        "text": " el elemento de la base como combinación lineal de la base final, al final me quedaría 0,1 por",
+        "start": 3982.44,
+        "end": 3991.44
+    },
+    {
+        "text": " V1, 0,2 por V2, etcétera hasta que el último elemento acá me quedaría este, el normal de V,",
+        "start": 3991.44,
+        "end": 4005.56
+    },
+    {
+        "text": " esa es la particularidad que tiene la matriz cambio de base que uno obtiene con el método de",
+        "start": 4012.44,
+        "end": 4017.96
+    },
+    {
+        "text": " ortodormarización de Grantsmith, en la diagonal me quedan las normas de los factores ortogonales",
+        "start": 4017.96,
+        "end": 4027.64
+    },
+    {
+        "text": " y fuera la diagonal me quedan en la parte de abajo todos cero y en la parte arriba me quedan cosas",
+        "start": 4029.2400000000002,
+        "end": 4036.4
+    },
+    {
+        "text": " no nulas en principio, cosas no nulas, entonces esto es una matriz triangular superior que la clase",
+        "start": 4036.4,
+        "end": 4044.32
+    },
+    {
+        "text": " del que viene la vamos a usar para comentarles un resultado que tiene que ver con la",
+        "start": 4044.32,
+        "end": 4059.44
+    },
+    {
+        "text": " descomposición de una descomposición útil de matrices, particular de matrices cuadras,",
+        "start": 4059.44,
+        "end": 4064.84
+    },
+    {
+        "text": " así que guarden esta matriz acá que le vamos a retomar la clase que viene y ahora les voy a",
+        "start": 4070.12,
+        "end": 4076.2400000000002
+    },
+    {
+        "text": " contar un par de resultados útiles y sencillos de probar que valen para base ortodormales,",
+        "start": 4076.2400000000002,
+        "end": 4084.6
+    },
+    {
+        "text": " preguntas, sé que esta parte es en gorrosa en particular la notación es en gorrosa,",
+        "start": 4084.6,
+        "end": 4095.72
+    },
+    {
+        "text": " bien entonces",
+        "start": 4114.6,
+        "end": 4124.360000000001
+    },
+    {
+        "text": " vamos a ver un par de resultados que los vamos a usar bastante que refieren a propiedades de bases",
+        "start": 4134.68,
+        "end": 4143.88
+    },
+    {
+        "text": " y cortodormales y con eso terminamos",
+        "start": 4143.88,
+        "end": 4149.24
+    },
+    {
+        "text": " Bien, entonces vamos a considerar un espacio vectorial con producto interno y una base",
+        "start": 4173.88,
+        "end": 4201.6
+    },
+    {
+        "text": " de orto normal es el producto interno, lo que sabemos que existen, lo que acabamos de ver.",
+        "start": 4201.6,
+        "end": 4204.96
+    },
+    {
+        "text": " Siempre que hablemos ahora de no más en el contexto de espacio vectorial con producto",
+        "start": 4204.96,
+        "end": 4209.5
+    },
+    {
+        "text": " interno, van a ser la norma inducida. Entonces, vamos a escribir los resultados y los probamos.",
+        "start": 4209.5,
+        "end": 4216.0
+    },
+    {
+        "text": " Las tres propiedades.",
+        "start": 4216.0,
+        "end": 4219.0
+    },
+    {
+        "text": " Las copias las tres y ya las probamos y las leemos.",
+        "start": 4246.0,
+        "end": 4256.0
+    },
+    {
+        "text": " En el caso de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de",
+        "start": 4276.0,
+        "end": 4306.0
+    },
+    {
+        "text": " la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte de la parte",
+        "start": 4306.0,
+        "end": 4336.0
+    },
+    {
+        "text": " me dicen estos resultados, estas propiedades que les escribí. La primera me dice, yo tengo",
+        "start": 4336.0,
+        "end": 4342.32
+    },
+    {
+        "text": " una base ortonormal, que yo hago un vector B y me fijo cómo se les compone a esa base",
+        "start": 4342.32,
+        "end": 4347.84
+    },
+    {
+        "text": " ortonormal, estas son las coordenadas al fa y por Vy sumados por I y me fijo otro vector",
+        "start": 4347.84,
+        "end": 4353.68
+    },
+    {
+        "text": " o Vc, cuyas coordenadas en esta base son las Vt ahí. Entonces el producto interno",
+        "start": 4353.68,
+        "end": 4358.56
+    },
+    {
+        "text": " V con Wb me da esto, me da, tengo que multiplicar la coordenada de esta por la conjugada de esta",
+        "start": 4358.56,
+        "end": 4365.2
+    },
+    {
+        "text": " y sumar sobre todo ahí. Es al fa y Vt ahí con jugado sumado sobre todo ahí. Eso vale cuando",
+        "start": 4365.2,
+        "end": 4371.24
+    },
+    {
+        "text": " las bases son autonormales, en general no vale. Es decir, me basta, trabajo con coordenadas",
+        "start": 4371.24,
+        "end": 4375.84
+    },
+    {
+        "text": " y fíquense que tengo que el producto interno se escribe de manera equivalente, como se",
+        "start": 4375.84,
+        "end": 4380.12
+    },
+    {
+        "text": " escribe el producto interno, usual, en RN o en C, pero con las coordenadas. El segundo",
+        "start": 4380.12,
+        "end": 4386.5199999999995
+    },
+    {
+        "text": " resultado me dice que cualquier vector, la descomposición, las coordenadas son muy",
+        "start": 4386.5199999999995,
+        "end": 4390.5199999999995
+    },
+    {
+        "text": " sencillas de calcular. La primera coordenada que viene acá es Vscalar V1, la que viene",
+        "start": 4390.52,
+        "end": 4395.360000000001
+    },
+    {
+        "text": " acá es Vscalar V2, la que viene acá es Vscalar Vn. Y la tercera me dice que la normal cuadrado",
+        "start": 4395.360000000001,
+        "end": 4401.52
+    },
+    {
+        "text": " de un vector es la suma de estas coordenadas al cuadrado, en Modulo, el Modulo de esto",
+        "start": 4401.52,
+        "end": 4407.280000000001
+    },
+    {
+        "text": " al cuadrado, el Modulo de esto al cuadrado, etcétera. O sea, Ve producto interno con V subi,",
+        "start": 4407.280000000001,
+        "end": 4411.84
+    },
+    {
+        "text": " cada uno de los vectorores de la base ortonormal, Modulo al cuadrado sumado. Esas igualdad",
+        "start": 4411.84,
+        "end": 4419.68
+    },
+    {
+        "text": " son muy útiles, la vamos a usar en las próximas clases y me trivializan de alguna manera",
+        "start": 4419.68,
+        "end": 4434.400000000001
+    },
+    {
+        "text": " el problema de descomponer un vector en esta base, porque fíquense que es todo lo que",
+        "start": 4434.400000000001,
+        "end": 4438.320000000001
+    },
+    {
+        "text": " tengo que hacer para conocer las coordenadas, es tomar el producto interno de ese vector",
+        "start": 4438.320000000001,
+        "end": 4441.92
+    },
+    {
+        "text": " con cada uno de los elementos de la base. Esas van a hacer las coordenadas que van a venir",
+        "start": 4441.92,
+        "end": 4445.240000000001
+    },
+    {
+        "text": " acá y esas coordenadas si las sumen el Modulo del cuadrado me dan la norma del vector.",
+        "start": 4445.24,
+        "end": 4452.24
+    },
+    {
+        "text": " Yo se los veía dejaría como ejercicio, pero sé que no lo van a hacer, así que es",
+        "start": 4452.24,
+        "end": 4464.0199999999995
+    },
+    {
+        "text": " bien sencillo esto. Fíjense el primero. Escribamos, desarrollamos el producto interno",
+        "start": 4464.02,
+        "end": 4482.820000000001
+    },
+    {
+        "text": " de Ve con doble Ve, tenemos que Ve se descompone como la sumatoria de una taena de alpha",
+        "start": 4482.820000000001,
+        "end": 4490.3
+    },
+    {
+        "text": " ahí por Ve subi y descompongo también el doble Ve, solo como voy a tener una nueva sumatoria",
+        "start": 4490.3,
+        "end": 4495.74
+    },
+    {
+        "text": " independiente de esta al índice le voy a llamar J, J desde una taena Ve sub J, Ve esta sub J",
+        "start": 4495.74,
+        "end": 4504.9800000000005
+    },
+    {
+        "text": " por Ve sub J.",
+        "start": 4504.9800000000005,
+        "end": 4506.74
+    },
+    {
+        "text": " Sí, las coordenadas, estas son las coordenadas, estas son las coordenadas del vector este en esta base",
+        "start": 4506.74,
+        "end": 4517.46
+    },
+    {
+        "text": " y estas son las coordenadas del vector este en esta base, estas acá son las coordenadas.",
+        "start": 4517.46,
+        "end": 4524.02
+    },
+    {
+        "text": " Yo tengo el vector que se descompone de esta manera y otro vector se compone de esta,",
+        "start": 4524.02,
+        "end": 4529.1
+    },
+    {
+        "text": " entonces el producto interno es esta coordenada por esta conjugada sumada.",
+        "start": 4529.1,
+        "end": 4534.22
+    },
+    {
+        "text": " Entonces acá como tengo, uso las propiedades de additividad con respecto a la primera y",
+        "start": 4534.22,
+        "end": 4539.34
+    },
+    {
+        "text": " la segunda entrada de tal manera que las sumatorias salen para afuera, bien y uso que las",
+        "start": 4539.34,
+        "end": 4550.38
+    },
+    {
+        "text": " constantes en la primera entrada salen para afuera o sea estas alpha y salrían para afuera",
+        "start": 4550.38,
+        "end": 4556.58
+    },
+    {
+        "text": " y en la segunda entrada salen para afuera pero conjugadas, o sea acá acá tendría beta j con",
+        "start": 4556.58,
+        "end": 4562.82
+    },
+    {
+        "text": " jugado, o sea que las sumatorias para afuera, o sea que la alpha y de acá y sea que los beta",
+        "start": 4562.82,
+        "end": 4568.360000000001
+    },
+    {
+        "text": " j con jugado, después me quedaría beta y producto interno con beta j.",
+        "start": 4568.36,
+        "end": 4571.92
+    },
+    {
+        "text": " Y ahora como es una base ortonormal, el producto interno de beta y con beta es 0,",
+        "start": 4578.92,
+        "end": 4584.98
+    },
+    {
+        "text": " si he dirigido de j y si es igual a j con tu vale, 1 porque es ortonormal, tío normal, 1,",
+        "start": 4584.98,
+        "end": 4591.639999999999
+    },
+    {
+        "text": " cuando he digo la j me queda normal de subir el cuadrado que es 1, o sea que esto acá es",
+        "start": 4591.639999999999,
+        "end": 4596.4
+    },
+    {
+        "text": " 0, si he dirigido de j, 1 si es igual a j, porque es una base ortonormal, entonces me va a quedar",
+        "start": 4596.4,
+        "end": 4608.879999999999
+    },
+    {
+        "text": " cuando sumo sobre y de todos los sumando que involucran acá sobre j, de todos los sumando",
+        "start": 4610.08,
+        "end": 4616.879999999999
+    },
+    {
+        "text": " sobre j solamente me va a quedar para cada y fico que hay que corresponde a j igual ahí,",
+        "start": 4616.879999999999,
+        "end": 4621.0
+    },
+    {
+        "text": " todos los otros se van a ir porque son cero, o sea acá para cada y fico en las sumas",
+        "start": 4621.0,
+        "end": 4627.22
+    },
+    {
+        "text": " sobre j solamente van a sobre y le sumando con j igual ahí, entonces me va a quedar alpha y beta",
+        "start": 4627.22,
+        "end": 4634.24
+    },
+    {
+        "text": " y con jugado y v subí con v subí que es 1, se entiende y eso me termina de probar este",
+        "start": 4634.24,
+        "end": 4645.28
+    },
+    {
+        "text": " primer resultado, repito, es una doble sumatoria, para cada y cuando sumo sobre j, todos los",
+        "start": 4645.28,
+        "end": 4653.5599999999995
+    },
+    {
+        "text": " humanos se van a ir excepto que corresponde a j igual ahí y el corresponde a j igual ahí me da",
+        "start": 4653.5599999999995,
+        "end": 4658.3
+    },
+    {
+        "text": " acá un beta subí con jugado y acá me da 1 porque un tenno de v subí consigo mismo que es 1",
+        "start": 4658.3,
+        "end": 4664.88
+    },
+    {
+        "text": " por ser una base ortonormal.",
+        "start": 4664.88,
+        "end": 4665.96
+    },
+    {
+        "text": " Un minuto, el segundo, segundo sale fácil también, dado un vector B, yo lo puedo",
+        "start": 4675.28,
+        "end": 4689.48
+    },
+    {
+        "text": " descomponer sus coordenadas que le voy a llamar a y esta son las coordenadas de B y quiero",
+        "start": 4689.48,
+        "end": 4708.04
+    },
+    {
+        "text": " ver de B, perdón, y quiero ver que las coordenadas coinciden justamente con estos productos",
+        "start": 4708.04,
+        "end": 4713.379999999999
+    },
+    {
+        "text": " interno. Entonces para cada j vamos a lo siguiente, para cada j de 1 hasta n hacemos lo siguiente,",
+        "start": 4713.38,
+        "end": 4727.76
+    },
+    {
+        "text": " calculo el producto interno de B con v subj, es decir calculo el producto interno de este vector B",
+        "start": 4727.76,
+        "end": 4734.18
+    },
+    {
+        "text": " que estoy considerando con el js y un elemento de la base. Entonces eso es, el producto",
+        "start": 4734.18,
+        "end": 4743.26
+    },
+    {
+        "text": " interno de la sumatoria, la descomposición de B con el v subj que es un vector fijo y js y",
+        "start": 4743.26,
+        "end": 4755.24
+    },
+    {
+        "text": " un vector de la base. Y ahí uso el nuevo, linealidad con respecto a la primera entrada, la suma sale",
+        "start": 4755.24,
+        "end": 4765.780000000001
+    },
+    {
+        "text": " para afuera, la constante alpha la primera entrada sale para afuera, perdón y la y acá",
+        "start": 4765.78,
+        "end": 4773.3
+    },
+    {
+        "text": " me queda B subí con B subj. ¿Qué usamos ahí de nuevo? Como es una base ortonormal, B subí",
+        "start": 4773.3,
+        "end": 4787.099999999999
+    },
+    {
+        "text": " con B subj vale 0, si es 1 de j y 1 si es igual a 1 de todas maneras, de tal manera que en",
+        "start": 4787.099999999999,
+        "end": 4792.82
+    },
+    {
+        "text": " esta sumatoria solamente sobrevive el sumando con i igual a j, j está fijo, o sea que acá me queda",
+        "start": 4792.82,
+        "end": 4799.299999999999
+    },
+    {
+        "text": " a subj por B subj con B subj que es 1. Entonces lo que estamos probando es que si yo tengo el",
+        "start": 4799.299999999999,
+        "end": 4807.48
+    },
+    {
+        "text": " producto interno de B con B subj eso me da la coordenada a j de la descomposición, o sea que la",
+        "start": 4807.48,
+        "end": 4814.799999999999
+    },
+    {
+        "text": " coordenada primera será B con B1, la segunda será B con B2, la js y más será B con B subj.",
+        "start": 4814.799999999999,
+        "end": 4820.7
+    },
+    {
+        "text": " Entonces en definitiva concluimos que B es a escribir como la sumatoria,",
+        "start": 4821.099999999999,
+        "end": 4829.7
+    },
+    {
+        "text": " de igual de de 1 hasta n, las coordenadas son B escalar B y con A y eso es justamente lo que tenemos,",
+        "start": 4833.16,
+        "end": 4840.98
+    },
+    {
+        "text": " B escalar B y con B y eso es justamente lo que tenemos escrito acá.",
+        "start": 4842.5,
+        "end": 4845.74
+    },
+    {
+        "text": " Y el último y terminamos, le juro que es una línea y terminamos ahí, esta es la prueba",
+        "start": 4850.7,
+        "end": 4862.0199999999995
+    },
+    {
+        "text": " de esta igualdad y la última, la última fíjense que lo que estamos escribiendo es que B es",
+        "start": 4862.0199999999995,
+        "end": 4869.86
+    },
+    {
+        "text": " cuando yo escribo esto la descomposición de B, acá estoy agarrando un vector de una base",
+        "start": 4880.94,
+        "end": 4896.0199999999995
+    },
+    {
+        "text": " ortomormal y estoy multiplicando por un escalar, ese escalar podría ser cero eventualmente,",
+        "start": 4896.0199999999995,
+        "end": 4899.9
+    },
+    {
+        "text": " pero de todas maneras estos vectores que yo tengo acá son 2 a 2 ortobonales, no sé,",
+        "start": 4899.9,
+        "end": 4906.9
+    },
+    {
+        "text": " tengo el Plutín, tengo una cualquiera de esto con el escalar, con una cualquiera de esto me va a dar cero,",
+        "start": 4906.9,
+        "end": 4911.94
+    },
+    {
+        "text": " y ese es que estos son vectores ortobonales, entre sí. Entonces ¿qué me dice el teóreme",
+        "start": 4911.94,
+        "end": 4921.7
+    },
+    {
+        "text": " pitagoras cuando yo tomo la norma el cuadrado, una suma de vectores ortobonales?",
+        "start": 4921.7,
+        "end": 4926.42
+    },
+    {
+        "text": " Como esto, el teóreme pitagoras me dice que esa norma el cuadrado, igual a la suma, la norma",
+        "start": 4926.42,
+        "end": 4948.3
+    },
+    {
+        "text": " el cuadrado los vectores que estoy sumando, o sea esto es la suma de la norma de a subí y",
+        "start": 4948.3,
+        "end": 4957.7
+    },
+    {
+        "text": " ve subí al cuadrado y esto es por pitagoras y porque son vectores ortobonales. Bien, una",
+        "start": 4957.7,
+        "end": 4971.26
+    },
+    {
+        "text": " cosita más termino ahí antes de que se termine el pizarro, ahora las normas de esto los",
+        "start": 4971.26,
+        "end": 4976.74
+    },
+    {
+        "text": " subízo en escalar, salen para afuera como módulos y los v subí tienen norma 1, o sea que esto",
+        "start": 4976.74,
+        "end": 4988.219999999999
+    },
+    {
+        "text": " acá vale 1, pero además vimos en 2 que a subí las coronadas de la descomposición,",
+        "start": 4988.219999999999,
+        "end": 5002.179999999999
+    },
+    {
+        "text": " son justamente el producto interno de ve con v subí, o sea que esto acá es lo mismo que su",
+        "start": 5002.18,
+        "end": 5007.62
+    },
+    {
+        "text": " matóre ahí desde 1 hasta n, de producto interno de ve con v subí al cuadrado, esto es por la propiedad 2",
+        "start": 5007.62,
+        "end": 5016.58
+    },
+    {
+        "text": " y eso es justamente lo que tenemos escrito acá. Esta propiedad de graven se la confuego en el",
+        "start": 5021.06,
+        "end": 5029.42
+    },
+    {
+        "text": " cerebro porque la vamos a usar mucho en las casas que vieron, son propiedades que valen para bases",
+        "start": 5029.42,
+        "end": 5035.26
+    },
+    {
+        "text": " ortodormales. Sí, ortobonales acá, ¿qué cuándo ya preguntó? No, son ortobonales porque estoy",
+        "start": 5035.26,
+        "end": 5049.9400000000005
+    },
+    {
+        "text": " incluyendo, los que son ortodormales son los v, pero como lo estoy multiplicando por escalares,",
+        "start": 5049.9400000000005,
+        "end": 5054.5
+    },
+    {
+        "text": " son ortobonales porque alguna constante podría ser cero por ejemplo y perdón cuando multiplico por",
+        "start": 5054.5,
+        "end": 5061.42
+    },
+    {
+        "text": " constante ya pierdo lo que sea norma 1, pueden ser cero, pueden tener cualquier norma. Bueno,",
+        "start": 5061.42,
+        "end": 5070.06
+    },
+    {
+        "text": " terminamos acá, estuvo un poco tedíosa la clase con esto, gransmith, adan ejemplos,",
+        "start": 5070.06,
+        "end": 5075.66
+    },
+    {
+        "text": " viendo en el ejemplo que están en el libro.",
+        "start": 5075.66,
+        "end": 5078.42
+    }
+]

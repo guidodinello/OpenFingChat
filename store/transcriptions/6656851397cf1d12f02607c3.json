@@ -1,0 +1,2117 @@
+[
+    {
+        "text": " ¡Buenas tardes! Hoy vamos a empezar con un nuevo capítulo sobre los espacios vectoriales.",
+        "start": 0.0,
+        "end": 26.0
+    },
+    {
+        "text": " Es decir, vamos a definir la noción más general de vector posible.",
+        "start": 26.0,
+        "end": 32.0
+    },
+    {
+        "text": " Trabajamos antes con muchas nociones de vectores, vimos vectores en geometría,",
+        "start": 32.0,
+        "end": 38.0
+    },
+    {
+        "text": " pero también manipulábamos NU-plas, vectores columnas, vectores filas, matrices que también se pueden ver como vectores.",
+        "start": 38.0,
+        "end": 47.0
+    },
+    {
+        "text": " Pero y todos estos son ejemplos de espacios vectoriales, pero antes de hablar de espacios vectoriales,",
+        "start": 47.0,
+        "end": 55.0
+    },
+    {
+        "text": " tengo que hablar de la noción de número y tengo que hablar de la noción de cuerpo.",
+        "start": 55.0,
+        "end": 61.0
+    },
+    {
+        "text": " ¿Qué es un cuerpo? Voy a empezar con ejemplos que ya conocemos, que son los ejemplos, son los racionales,",
+        "start": 62.0,
+        "end": 76.0
+    },
+    {
+        "text": " es el cuerpo más pequeño, que más sencillo que conocen R, los reales, esto es otro cuerpo,",
+        "start": 76.0,
+        "end": 84.0
+    },
+    {
+        "text": " y para los que conocen los complejos, los complejos también es un ejemplo de cuerpo.",
+        "start": 84.0,
+        "end": 90.0
+    },
+    {
+        "text": " ¿Qué es un cuerpo? Un cuerpo es un conjunto de números con las cuatro operaciones,",
+        "start": 90.0,
+        "end": 99.0
+    },
+    {
+        "text": " suma, resta, producto, división, con las cuales se pueden hacer restas, sumas, etcétera, con alegría,",
+        "start": 99.0,
+        "end": 109.0
+    },
+    {
+        "text": " donde todo pasa bien, ¿ok? Es la intuición, un cuerpo es un conjunto donde todo pasa bien con la adición,",
+        "start": 109.0,
+        "end": 119.0
+    },
+    {
+        "text": " la multiplicación, la resta y la división. Ahora tengo que definir formalmente lo que es un cuerpo,",
+        "start": 119.0,
+        "end": 128.0
+    },
+    {
+        "text": " un cuerpo, entonces en edificio, un cuerpo es un conjunto que he equipado con dos operaciones,",
+        "start": 128.0,
+        "end": 145.0
+    },
+    {
+        "text": " que se llama la suma y el producto tales que, y después hay una lista de propiedades que tienen",
+        "start": 146.0,
+        "end": 166.0
+    },
+    {
+        "text": " que satisfacer estas operaciones, entonces son las propiedades que se aconósen,",
+        "start": 166.0,
+        "end": 171.0
+    },
+    {
+        "text": " la primera propiedad es que la adición es asociativa y connotativa,",
+        "start": 171.0,
+        "end": 182.0
+    },
+    {
+        "text": " es decir, la propiedad de asociatividad es que acá como son números,",
+        "start": 185.0,
+        "end": 192.0
+    },
+    {
+        "text": " voy a usar letras riegas, vamos a ver por qué después, esa asociativa y es connotativa,",
+        "start": 192.0,
+        "end": 204.0
+    },
+    {
+        "text": " esto dice, no tengo problemas de paréntesis, no tengo problemas de orden,",
+        "start": 209.0,
+        "end": 215.0
+    },
+    {
+        "text": " después la suma tiene un elemento neutro, que se escribe sin su presa,",
+        "start": 215.0,
+        "end": 230.0
+    },
+    {
+        "text": " se escribe 0, es decir, es un número tal que alpha más 0 es igual a 0 más alpha,",
+        "start": 230.0,
+        "end": 237.0
+    },
+    {
+        "text": " no tengo que decir que también es igual a 0 más alpha, porque la adición es commutativa,",
+        "start": 237.0,
+        "end": 246.0
+    },
+    {
+        "text": " después cada elemento alpha en K tiene opuesto, que se escribe menos alpha y esto quiere",
+        "start": 247.0,
+        "end": 265.0
+    },
+    {
+        "text": " decir que alpha más su opuesto es igual a 0, el cerro del cuerpo y esto permite definir la resta,",
+        "start": 265.0,
+        "end": 280.0
+    },
+    {
+        "text": " y la resta se define como la resta de los números en mi cuerpo se define como alpha más el opuesto de beta,",
+        "start": 280.0,
+        "end": 303.0
+    },
+    {
+        "text": " cosa es que ya conocemos, ahora dir las propiedades de la suma, tengo que dar las propiedades del producto,",
+        "start": 303.0,
+        "end": 314.0
+    },
+    {
+        "text": " el producto es asociativo y connotativo, es decir, misma ecuación, como siempre cuando hago un producto en general no pongo símbolos,",
+        "start": 314.0,
+        "end": 339.0
+    },
+    {
+        "text": " es decir, por supuesto esto quiere decir alpha por beta y connotativo me olvide escribirlo alpha beta,",
+        "start": 339.0,
+        "end": 354.0
+    },
+    {
+        "text": " es igual a beta alpha y tiene el evento neutro distinto de 1 distinto de 0 y 1 también es un elemento de K,",
+        "start": 354.0,
+        "end": 379.0
+    },
+    {
+        "text": " y quiere decir que 1 por alpha es igual a alpha, además el producto existe distributivo respecto a la suma,",
+        "start": 379.0,
+        "end": 403.0
+    },
+    {
+        "text": " que quiere decir que alpha por beta más gama es igual a alpha beta más alpha gama, y el último acción que voy a poner acá,",
+        "start": 403.0,
+        "end": 424.0
+    },
+    {
+        "text": " último acción es que cada elemento distinto de 0 tiene inversa, o que inversa,",
+        "start": 424.0,
+        "end": 440.0
+    },
+    {
+        "text": " es decir existe su inversa se escribe alpha a la menos 1 que pertenece acá y por definición alpha por alpha a la menos 1 es igual a 1,",
+        "start": 440.0,
+        "end": 455.0
+    },
+    {
+        "text": " ¿cuál es el interés de esta cosa? cuando tengo un inverso puedo definir la livención y como se le fina livención esto permite definir la livención alpha sobre beta",
+        "start": 455.0,
+        "end": 480.0
+    },
+    {
+        "text": " y si beta no es 0, acá para preservar los gatitos como siempre, ¿ok?",
+        "start": 480.0,
+        "end": 500.0
+    },
+    {
+        "text": " entonces cada vez que tengo un conjunto que tiene dos operaciones que cumplen estas cosas, ya sé que es un cuerpo,",
+        "start": 501.0,
+        "end": 511.0
+    },
+    {
+        "text": " ahora ejemplo si contra ejemplos, por ejemplo N los enteros naturales, el conjunto de los enteros naturales con su suma usual y su producto usual",
+        "start": 511.0,
+        "end": 540.0
+    },
+    {
+        "text": " es un cuerpo o no es un cuerpo, si cumple todo esto como no hay opuesto salvo para la 0, es decir no es un cuerpo",
+        "start": 540.0,
+        "end": 565.0
+    },
+    {
+        "text": " uno no tiene opuesto no tiene opuesto NN por supuesto, es decir cuando trabajamos con el entero naturales podemos sumar con la alegría,",
+        "start": 565.0,
+        "end": 582.0
+    },
+    {
+        "text": " podemos multiplicar con la alegría pero no se puede restar con la alegría, yo tengo derecho a escribir 3 menos 2 pero no tengo derecho NN escribir 2 menos 3, esto no existe N,",
+        "start": 583.0,
+        "end": 598.0
+    },
+    {
+        "text": " entonces no es un cuerpo, es decir es un conjunto donde tenemos producto suma pero no tenemos opuesto y tenemos inverso o no N, de hecho solo uno tiene un universo pero 2 no tiene inverso",
+        "start": 598.0,
+        "end": 615.0
+    },
+    {
+        "text": " no se puede dividir por 2 en general 3 sobre 2 no existe NN, entonces tampoco se puede dividir con la alegría, ok, se ta, el conjunto de los enteros relativos, es un cuerpo o no es un cuerpo, si o no",
+        "start": 615.0,
+        "end": 643.0
+    },
+    {
+        "text": " exactamente tenemos un problema de inverso, es decir no es un cuerpo, pues en número 2 que pertenece a 7 no tiene inverso",
+        "start": 644.0,
+        "end": 670.0
+    },
+    {
+        "text": " entonces en 7 se puede restar o no en 7, si tenemos la resta porque tenemos números negativos no hay problemas, entonces podemos sumar restar y multiplicar con la alegría pero no podemos dividir con la alegría",
+        "start": 670.0,
+        "end": 690.0
+    },
+    {
+        "text": " la cosa interesante es que seta cumple este acción, este acción, este acción, este acción, este acción, este acción y el único que lo cumple es este, entonces es casi un cuerpo, se dice que seta es un cuerpo menos algo adentro, se llama un anicio",
+        "start": 690.0,
+        "end": 711.0
+    },
+    {
+        "text": " un anicio no tengo que poner la definición, se está acá, definición de anicio, esto, si esto, solo es para la cultura general, tenemos la clasificación de los conjuntos de números, ok, que piensan de cu, los racionales,",
+        "start": 720.0,
+        "end": 747.0
+    },
+    {
+        "text": " acá se puede sumar, se puede restar sin problema, se puede hacer productos y se puede dividir solo salvo para 0 pero en la definición de cuerpo 0 tiene derecho no estar invertible, ok, de hecho nunca se puede invertir 0,",
+        "start": 747.0,
+        "end": 768.0
+    },
+    {
+        "text": " entonces cu es un cuerpo y R es un cuerpo o no, también y C también es un cuerpo para los que conocen los complejos, son cuerpos,",
+        "start": 768.0,
+        "end": 789.0
+    },
+    {
+        "text": " ok, y hay una observación que me olvide hacer, que es que acá supongo que en cálculo diferencial e integral en una variable, vierran los acciones de R,",
+        "start": 789.0,
+        "end": 808.0
+    },
+    {
+        "text": " no, y son muy parecidos, porque los primeros acciones de R solo sirven para decir que R es un cuerpo, que tiene más R, que tiene más, después de la sumada resta del producto, etcétera, ¿qué, el que?",
+        "start": 808.0,
+        "end": 833.0
+    },
+    {
+        "text": " R a I es cuadrada, una operación pero antes de la R a I es cuadrada, potencia no antes, algo que siempre olviden que no es una operación, es una relación, es el orden, R viene con un orden,",
+        "start": 833.0,
+        "end": 853.0
+    },
+    {
+        "text": " se dice que es un conjunto, un cuerpo ordenado, no es el caso de todos los cuerpos, es decir un cuerpo puede no tener ningún orden y cuando se hace algebralinial no en general no los interesa comparar los números,",
+        "start": 853.0,
+        "end": 870.0
+    },
+    {
+        "text": " es decir, hay dos tareas de un algebrista, acercuentas, consumas restas, productos y divisiones y también otra tarea que es más de una analista que es comparar números, si se queda en cerca o no cerca,",
+        "start": 870.0,
+        "end": 889.0
+    },
+    {
+        "text": " acá no lo vamos a hacer, en un cuerpo no nos interesa en general la noción de orden, acá por ejemplo este tiene un orden, el orden usual sobre los raciudales, este también tiene un orden, pero este no tiene orden, no hay orden sobre los números complejos, entonces es un cuerpo no ordenado,",
+        "start": 889.0,
+        "end": 915.0
+    },
+    {
+        "text": " pero no es el, no son los únicos ejemplos, hay un montón de otros tipos de cuerpos, voy a dar un ejemplo para los informáticos, ¿cuál es lo común a todos esos conjuntos?",
+        "start": 915.0,
+        "end": 934.0
+    },
+    {
+        "text": " ¿Qué tienen en común? Son todos los infinitos, la pregunta natural si existe o no un cuerpo finito, una noción de número que sea una noción finita y por supuesto que sí, entonces el próximo ejemplo es el siguiente,",
+        "start": 934.0,
+        "end": 954.0
+    },
+    {
+        "text": " el conjunto que voy a escribir 7 sub 2, que conciende dos elementos que se llaman 0 y 1 y sólo me doy 12 números y ahora tengo que definir la tabla de adición y la tabla de multiplicación, voy a decir con tablas,",
+        "start": 954.0,
+        "end": 980.0
+    },
+    {
+        "text": " con la suma y el producto definidos por, ahora tengo que decir disculpa, volvemos a la primaria, hoy tabla de suma,",
+        "start": 981.0,
+        "end": 1005.0
+    },
+    {
+        "text": " tabla de producto, la cosa interesante es que son las tablas más sencillas del universo, porque sólo tengo dos números, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1,",
+        "start": 1006.0,
+        "end": 1029.0
+    },
+    {
+        "text": " 1, acá voy a respetar el orden, ¿ok? ¿Cómo se le tengo que decir yo 0 más 0?",
+        "start": 1029.0,
+        "end": 1039.0
+    },
+    {
+        "text": " acá no tengo otra posibilidad, 0 es el neutro, 0 más 0, tiene que ser igual a 0, 0 más 1, ¿qué va a hacer? ¿Cómo 0 es neutro, 0 más 1, ¿qué hay que ser igual a 1?",
+        "start": 1040.0,
+        "end": 1058.0
+    },
+    {
+        "text": " y por simetría 0, 1 más 0 también es igual a 0, ¿qué nos falta para definir? 1 más 1, ¿qué puede ser?",
+        "start": 1059.0,
+        "end": 1069.0
+    },
+    {
+        "text": " 2 no tenemos derecho porque sólo tenemos dos números, 0, 1, ¿tienes que ser 0 o 1?",
+        "start": 1072.0,
+        "end": 1077.0
+    },
+    {
+        "text": " entonces, o bien tomamos 0 más 1 más 1 igual a 0, o bien 1 más 1 igual a 1, ¿qué opción tenemos? ¿qué vamos a elegir?",
+        "start": 1078.0,
+        "end": 1086.0
+    },
+    {
+        "text": " 1 más 1 igual a que? 1, te voy a mostrar por qué no va a funcionar.",
+        "start": 1088.0,
+        "end": 1093.0
+    },
+    {
+        "text": " entonces tu propuesta es poner 1 más 1 igual a 1, ¿ok? pero esto quiere decir que 1 más 1 es igual a 1 más 0, ¿qué es 0 es neutro?",
+        "start": 1094.0,
+        "end": 1113.0
+    },
+    {
+        "text": " y como yo tengo 1 puesto, yo puedo simplificar y de lusco que 1 es igual a 0 y esto está mal porque tenemos que tener 1 distinto de 0, entonces tu propuesta no funciona, ¿viste?",
+        "start": 1114.0,
+        "end": 1135.0
+    },
+    {
+        "text": " es interesante hacer propuestas así, es decir intentar armar un nuevo conjunto de números, acá no tenía más, no tenía más otras opciones como 0 es el neutro para la suma, 0 más algo tiene que ser igual a algo, ¿ok?",
+        "start": 1136.0,
+        "end": 1153.0
+    },
+    {
+        "text": " 1 más 0 es igual a 0, 0 más 1 es igual a 1, 1 más 0 es igual a 1, ¿si está? lo único que los faltas 1 más 1 y lo que vimos acá es que no funcionas y decidimos que 1 más 1 es igual a 1, entonces lo que queda es 1 más 1 igual a 0.",
+        "start": 1153.0,
+        "end": 1173.0
+    },
+    {
+        "text": " ¿a qué les parece?",
+        "start": 1174.0,
+        "end": 1176.0
+    },
+    {
+        "text": " ¿a informática está sumar en los bits? es decir 1 más 1 igual a 0 y hay una cheva que desaparece, que nos olvidamos, que no contamos, ¿ok? Ahora tengo que definir el producto,",
+        "start": 1177.0,
+        "end": 1195.0
+    },
+    {
+        "text": " por 0 en su opinión que va a ser 0, 0 por 1 va a ser que 0 también, porque 0 por algo tiene que ser igual a 0, lo mismo acá 1 por 1 que va a ser 1, ¿por qué? 1 es neutro, ¿no?",
+        "start": 1196.0,
+        "end": 1218.0
+    },
+    {
+        "text": " ¿no es neutro para el producto? entonces tengo 1 suma, 1 producto y se puede verificar que completó los esos acciones, esto es un cuerpo",
+        "start": 1219.0,
+        "end": 1232.0
+    },
+    {
+        "text": " y de hecho es el cuerpo más pequeño de todo en un universo, ¿por qué? porque en un cuerpo tenemos al menos siempre al menos 2 elementos distintos que se llaman 0 y 1, entonces un cuerpo tiene al menos 2 elementos distintos,",
+        "start": 1232.0,
+        "end": 1253.0
+    },
+    {
+        "text": " este tiene 2 elementos exactamente, entonces es el más chico, este es un cuerpo y se llama Z sub 2, es el cuerpo de la informática, ahora hay que saber cómo se divide en este cuerpo,",
+        "start": 1253.0,
+        "end": 1270.0
+    },
+    {
+        "text": " menos 1 es igual a que, ¿cuál es el opuesto de 1? ¿facila? ¿Con quién tengo yo que sumar a 1 para obtener 0?",
+        "start": 1271.0,
+        "end": 1287.0
+    },
+    {
+        "text": " tengo que sumar 1 con 1 y obtengo 0, entonces lo opuesto de 1 es igual a 1, ¿ok? en este conjunto lo opuesto de 1 es igual a 1, es decir, en este conjunto no hay signos positivos ni negativos, no tienen sentido",
+        "start": 1288.0,
+        "end": 1310.0
+    },
+    {
+        "text": " ¿y cuál es el inverso de 1? es 1 por supuesto, ¿ok? entonces todos los números tienen opuesto porque menos 0 es igual a 0, menos 1 es igual a 1 y los números no nuros sólo hay 1 que se llama 1 y 1 es 1, y todo esto funciona",
+        "start": 1311.0,
+        "end": 1339.0
+    },
+    {
+        "text": " ¿cómo? sí porque 1 por 1 no es igual a 1, entonces a 0 no tiene ni narza, 0 nunca tiene ni narza y por una razón que vamos a ver que es en un cuerpo 0 multiplicado por cualquier cosa siempre valecero, entonces cuando tenés 0 que le multiplicas por alguien nunca te vas a obtener 1, luego 0 no tiene ni narzo",
+        "start": 1339.0,
+        "end": 1368.0
+    },
+    {
+        "text": " estarás un porque tenemos que destruir a 0 porque 0 nunca podrá tener un inverso, es la regla irrefregable de la matemática, cualquier tentativa para dar un inverso a 0 se termina con una maltancia general negatitos, ¿ok?",
+        "start": 1369.0,
+        "end": 1392.0
+    },
+    {
+        "text": " es la única regla que vale para toda la matemática, tenemos un montón de conjuntos de números pero la cosa que no se puede hacer es dividir por 0, dar un inverso a 0, ¿ok? esto es un cuerpo y es el cuerpo más chico del mundo y esto corresponde a la suma en base 2, cuando hacen una suma en base 2",
+        "start": 1393.0,
+        "end": 1421.0
+    },
+    {
+        "text": " ¿si ha hicieron una suma en base 2 en su vida? hay informáticos en la sala, si, no, ahora se esconden todos, ¿ok? vamos a hacer una suma en base 2",
+        "start": 1421.0,
+        "end": 1436.0
+    },
+    {
+        "text": " yo quiero, por ejemplo, sumar 5 y 7, ¿ok? 5 se escriben en base 2, 1, 0, 1",
+        "start": 1437.0,
+        "end": 1451.0
+    },
+    {
+        "text": " entienden, ¿por qué? porque este 1 vale 1, este 0 vale 2 veces y este 1 vale 4, entienden la idea, ¿saben cómo contaran en bases distintas de 10? ¿cuando se escribo esto?",
+        "start": 1452.0,
+        "end": 1474.0
+    },
+    {
+        "text": " este 7 vale para 7 por 1, este 4 no vale 4, vale 4 por 10 y este 2 vale 2 por 100, es decir hay potencias implicitas, es 7 por 10 potencias 0",
+        "start": 1475.0,
+        "end": 1496.0
+    },
+    {
+        "text": " acá es 4 por 10 potencia 1 y acá es 2 por 10 potencia 2, ¿ok? hay una potencia implicita que no se",
+        "start": 1497.0,
+        "end": 1509.48
+    },
+    {
+        "text": " escríben, pero está acá, ¿ok? cuando se lo escribo esto vale 2 por 10 a la 2, más 4 por 10 a la 1, más 7 por 10 a la 0, ¿qué es 1? esto es igual a 1, esto es igual a 10 y esto es igual a 100, ¿ok? en base 2 vamos a hacer lo mismo pero reemplazando 10 por 2, entonces este esta posición vale 1, esta posición vale 2 y esta posición vale 1, ¿ok?",
+        "start": 1509.48,
+        "end": 1538.48
+    },
+    {
+        "text": " ¿no sería 2 por 0? ¿cómo? sí 2 por 0, pero 5 es igual a 4 más 1 y acá tengo que poner un 0 para decir no hay nada para 2, ¿ok? nunca vieron esto en su vida es muy importante en la vida cambiar de base para contar, ¿ok?",
+        "start": 1539.48,
+        "end": 1567.48
+    },
+    {
+        "text": " lo que yo digo acá es que 5 es igual a 1 por 2 a la 2 más 0 por 2 a la 1 más 1 por 2 a la 0 y 7 es 1 1 1, ¿ok? vamos a hacer la suma en base 2 usando ese cuarto 1 más 1 es igual a que 0",
+        "start": 1568.48,
+        "end": 1596.48
+    },
+    {
+        "text": " pero hay una cheva 1 más 0 más 1 vale 0 pero hay otra cheva 1 más 1 más 1 me queda 1 porque 1 más 1 es 0 más 1 1 y hay una cheva que queda acá que lo pongo acá",
+        "start": 1596.48,
+        "end": 1622.48
+    },
+    {
+        "text": " ¿ok? y se las suma en base 2 usando la del riesgo usual ahora hay que decodificar este número, este vale 1, este vale 2, este vale 4, este vale para 8, entonces acá no hay nada, no hay nada, 4 más 8 igual a 12, funciona me calcula el mismo número al final,",
+        "start": 1623.48,
+        "end": 1648.48
+    },
+    {
+        "text": " en sus computadoras ahora quizás no lo saben pero las sumas están hechas así, adentro no están hechas así, están hechas así pero las computadoras no saben contar en base 10, saben contar en base 2, ¿ok?",
+        "start": 1649.48,
+        "end": 1668.48
+    },
+    {
+        "text": " pero como los informáticos saben que el usuario esperezoso no imprimen el resultado en esta forma, usan un pequeño programa de conversión que convierte el resultado en base 2, 10,",
+        "start": 1669.48,
+        "end": 1687.48
+    },
+    {
+        "text": " porque nosotros seres humanos estamos acostumbrados en la idea de calcular en base 10, ¿ok?",
+        "start": 1688.48,
+        "end": 1695.48
+    },
+    {
+        "text": " eso es una idea y la idea es que las operaciones fundamentales si se ognorran los problemas de cheva, las operaciones fundamentales que usan esta y esta",
+        "start": 1696.48,
+        "end": 1707.48
+    },
+    {
+        "text": " como se dice para calcular fracciones?",
+        "start": 1708.48,
+        "end": 1710.48
+    },
+    {
+        "text": " ah, mucho más complicado, en este cuerpo es fácil, en este cuerpo es fácil porque el único número que tengo que inversiera es 1,",
+        "start": 1710.48,
+        "end": 1719.48
+    },
+    {
+        "text": " acá no voy a hablar del problema de hacer fracciones con varios dígitos, sólo eran una ilustración del vínculo entre la informática y las operaciones fundamentales sobre los dígitos que están acá,",
+        "start": 1719.48,
+        "end": 1735.48
+    },
+    {
+        "text": " pero ojo estas operaciones acá no hablan de cheva, acá tuve que introducir la ilustración de cheva que es otra cosa,",
+        "start": 1736.48,
+        "end": 1744.48
+    },
+    {
+        "text": " ok, ahora la pregunta es si hay otros tipos de cuartos, vamos a ver otros ejemplos, ok, este cuerpo es el cuerpo más chico de todo en un universo,",
+        "start": 1744.48,
+        "end": 1764.48
+    },
+    {
+        "text": " vamos a ver otro ejemplo de cuerpo finito,",
+        "start": 1764.48,
+        "end": 1768.48
+    },
+    {
+        "text": " otro ejemplo, la idea es que ustedes sólo conocen cuando conocen esto y esto, sólo conocen una pequeña fracción de lo que nosotros matemáticos llamamos números,",
+        "start": 1795.48,
+        "end": 1812.48
+    },
+    {
+        "text": " estos son números perfectamente legales matemáticos, tienen las buenas propiedades, entonces son números, son números particulares donde 1 más 1 vale 0,",
+        "start": 1812.48,
+        "end": 1824.48
+    },
+    {
+        "text": " entonces ahora pueden explicar a su madre, a su abuela que no, no, 1 más 1 en F2 vale 0,",
+        "start": 1824.48,
+        "end": 1832.48
+    },
+    {
+        "text": " ok, otro ejemplo, el conjunto Z3, ahora voy a usar un conjunto con tres elementos, mucho más complicado,",
+        "start": 1832.48,
+        "end": 1849.48
+    },
+    {
+        "text": " si es 3 números que se llaman 0, 1 y 2, acá es el pequeño nuevo, es el principiante, ok, vamos a hacer la suma y la resta,",
+        "start": 1850.48,
+        "end": 1862.48
+    },
+    {
+        "text": " la suma y el producto disculpa,",
+        "start": 1873.48,
+        "end": 1874.48
+    },
+    {
+        "text": " tabla de la suma, tabla del producto, ok, 0 más 0, si 0 es el neutro necesariamente vale 0,",
+        "start": 1880.48,
+        "end": 1894.48
+    },
+    {
+        "text": " 0 más 1 si 0 es el neutro necesariamente vale 1, 0 más 2, misma razón 2 y acá de modo simétrico, es una operación computativa,",
+        "start": 1896.48,
+        "end": 1906.48
+    },
+    {
+        "text": " ok, 1 más 1, ¿qué vamos a hacer?",
+        "start": 1906.48,
+        "end": 1909.48
+    },
+    {
+        "text": " ahora tenemos 2, vamos a poner 2 y acá después 1 más 2, lo que nos gustaría hacer ya puede ser 3 pero no tenemos 3,",
+        "start": 1912.48,
+        "end": 1924.48
+    },
+    {
+        "text": " entonces vamos a poner 0, por simetría 1 más 2 vale 0 y después 2 más 2 que va a valer 1 y acá puede",
+        "start": 1925.48,
+        "end": 1940.48
+    },
+    {
+        "text": " tener que ir en un ciclo 0, 1, 2, 1, 2, 0, 2, 1, tabla del producto, 0 multiplicado por cualquier cosa siempre vale 0,",
+        "start": 1940.48,
+        "end": 1954.48
+    },
+    {
+        "text": " esa razón porque no se puede vivir por 0, entonces acá esto seguro solo hay 0, ok, pero 1 es el neutro del producto,",
+        "start": 1954.48,
+        "end": 1964.48
+    },
+    {
+        "text": " entonces 1 por cualquier cosa es la misma cosa, ok, lo que de falta es hacer 2 por 2, ¿qué vale?",
+        "start": 1964.48,
+        "end": 1979.48
+    },
+    {
+        "text": " no, 1 porque la idea es que en este cuerpo 3 vale 0, en el cuerpo anterior teníamos que 2",
+        "start": 1980.48,
+        "end": 1993.48
+    },
+    {
+        "text": " y ya 0, ahora es 3 vale 0, entonces como la respuesta normal sería 4 y que el 3 no existe más, entonces vale 1, esa intuición, ok, esto es un cuerpo con 3 elementos,",
+        "start": 1993.48,
+        "end": 2008.48
+    },
+    {
+        "text": " hay que ver quiénes son los opuestos y los universos, quiénes se lo opuesto de 0, esto es fácil, opuesto de 0, me equivoqué?",
+        "start": 2009.48,
+        "end": 2024.48
+    },
+    {
+        "text": " si, pero sabes que en nuestras naturalees 2 y 2 vale 4 y 2 por 2 vale 4 también, a veces ocurre, a veces la de suma y el producto te dan el mismo resultado, 0 más 0 es igual a 0, 0 por 0 también es igual a 0,",
+        "start": 2025.48,
+        "end": 2050.48
+    },
+    {
+        "text": " entonces cuál es el opuesto de 0, en la tabla, sube que mirar, 0, aquí corresponde que da 0, es 0, cuál es el opuesto de 1, 1, quien le transforma en 0 es 2, el opuesto de 1 es 2, cuál es el opuesto de 2?",
+        "start": 2051.48,
+        "end": 2078.48
+    },
+    {
+        "text": " 1 por simetría, acá el opuesto de 1, esto no hay el número inicial, esto no cambia, esta ría le cuenta lo cambia, ok, entonces todos tienen un opuesto,",
+        "start": 2079.48,
+        "end": 2094.48
+    },
+    {
+        "text": " ahora yo sé que seron nunca va a tener diverso, pero quizás los otros tienen diverso, el diverso de 1 es igual a que? esto no hay otra opción que 1,",
+        "start": 2094.48,
+        "end": 2109.48
+    },
+    {
+        "text": " y el nivel a solo 2 es igual a que? como 2 por 2 es igual a 1, solo el 2 es su propio universo,",
+        "start": 2110.48,
+        "end": 2122.48
+    },
+    {
+        "text": " y se puede verificar que todos esos acciones se cumple, esto es un par, y se puede hacer algebralinial con este conjunto, otro ejemplo de mismo tipo para ver por qué esto funciona,",
+        "start": 2123.48,
+        "end": 2142.48
+    },
+    {
+        "text": " ¿si?",
+        "start": 2143.48,
+        "end": 2144.48
+    },
+    {
+        "text": " ¿no tenemos nada en la vida usual? quizás sí pero no conozco, quizás sí, el día donde tendremos nuevo mecanismo, quizás tendremos nuevo mecanismo para construir computadoras biológicas por ejemplo, y quizás tendremos que trabajar en base 3, y ese caso vamos a usar este cuerpo,",
+        "start": 2144.48,
+        "end": 2173.48
+    },
+    {
+        "text": " ¿no entendí?",
+        "start": 2175.48,
+        "end": 2178.48
+    },
+    {
+        "text": " ¿a 2? porque yo observo que 2 por 2 es igual a 1, esto quiere decir que 2 es su propio universo, 2 por algo igual a 1, quiere decir que algo es el universo de 2,",
+        "start": 2179.48,
+        "end": 2193.48
+    },
+    {
+        "text": " ¿ok?",
+        "start": 2194.48,
+        "end": 2196.48
+    },
+    {
+        "text": " es decir, cuando yo quiero obtener opuesto, yo pongo 2, y yo miro en que columna obtengo el 0, y obtengo su opuesto, acá si yo quiero el universo,",
+        "start": 2197.48,
+        "end": 2211.48
+    },
+    {
+        "text": " y ver su par de 2, y yo quiero ver en que columna obtengo el 1 y es 2, es el lectura de una tabla de adición y su tracción, y este conjunto cumple todos esos acciones anteriores, es decir, cuando vamos a hacer cuentas, no vamos a usar reglas distintas de las que usamos,",
+        "start": 2211.48,
+        "end": 2233.48
+    },
+    {
+        "text": " la única cosa es que en ese conjunto 3 es igual a 0, ok vamos a hacer otro, solo para disfrutar un poquito, para ver si funciona, otro ejemplo,",
+        "start": 2233.48,
+        "end": 2253.48
+    },
+    {
+        "text": " voy a pasar directamente a 5 elementos, ahora hoy somos ricos, directo a 5 elementos,",
+        "start": 2253.48,
+        "end": 2263.48
+    },
+    {
+        "text": " mismo idea, en este conjunto 5 va a ser igual a 0, es decir, sumato todo lo que es múltiples de 5, ok vamos a hacer la tabla,",
+        "start": 2263.48,
+        "end": 2286.48
+    },
+    {
+        "text": " su va,",
+        "start": 2286.48,
+        "end": 2309.48
+    },
+    {
+        "text": " su va, producto, ok, 0 más 0, y como es neutro tengo que copiar, mis macoscha, acá por si metrilla,",
+        "start": 2309.48,
+        "end": 2338.48
+    },
+    {
+        "text": " ok, 1 más 1, 2, 1 más 2, 3, 1 más 3, 4, 1 más 4, 0, entienden, son siglos, 2, 3, 4, 0, 1, 3, 4, 0, 1, 2, 4, 0, 1, 2, 4, 0, 1, 2, 3,",
+        "start": 2338.48,
+        "end": 2367.48
+    },
+    {
+        "text": " tengo mis sumas, ahora acá 0 es absorbente, acá es neutro,",
+        "start": 2367.48,
+        "end": 2382.48
+    },
+    {
+        "text": " ya sé que esta parte está llenada, ok, me faltan muy becasillas, 2 por 2, 4, 2 por 3, 1,",
+        "start": 2382.48,
+        "end": 2397.48
+    },
+    {
+        "text": " 2 por 4, 2 por 4, 3, 5 va a ser, ok, 3 por 2, 3 por 2, acá yo lo hago por si metrilla,",
+        "start": 2397.48,
+        "end": 2416.48
+    },
+    {
+        "text": " porque es una operación simétrica, es con multativa, ok, 3 por 3, 9 es ser 4, 3 por 4, 12, 5 va a ser,",
+        "start": 2416.48,
+        "end": 2433.48
+    },
+    {
+        "text": " entonces 10 va a ser también, entonces me queda 2, esto es 2, 4 por 4, 16 no existe, 1, ok,",
+        "start": 2433.48,
+        "end": 2451.48
+    },
+    {
+        "text": " ahora vamos a verificar que es un cuerpo, cumple la suma es conutativa, porque es simétrica,",
+        "start": 2451.48,
+        "end": 2460.48
+    },
+    {
+        "text": " se puede verificar que esta es sociativa, misma cosa para el producto, se puede verificar que todo esto es distributivo,",
+        "start": 2460.48,
+        "end": 2467.48
+    },
+    {
+        "text": " ahora lo que le falta es verificar los opuestos y los inimerasos, en este cuerpo,",
+        "start": 2467.48,
+        "end": 2476.48
+    },
+    {
+        "text": " en este conjunto, todavía no sabemos si es un cuerpo, ¿cuál es el opuesto de 0?",
+        "start": 2476.48,
+        "end": 2487.48
+    },
+    {
+        "text": " ¿cuál es el opuesto de 1? 4, opuesto de 2, 3, opuesto de 3, 2 y esto es simétrico,",
+        "start": 2487.48,
+        "end": 2502.48
+    },
+    {
+        "text": " opuesto de 4, es 1, puede ver que van 2 por 2, como siempre, después inverso de 1, 1 esto lo cambia,",
+        "start": 2502.48,
+        "end": 2513.48
+    },
+    {
+        "text": " inverso de 2, inverso de 2 es fácil que tomar 2 donde obtengo 1 entre 3, 1 sobre 2 es igual a 3,",
+        "start": 2513.48,
+        "end": 2526.48
+    },
+    {
+        "text": " disculpa, en este conjunto de números 1 sobre 2 es igual a 3, inverso de 3 es igual a que es igual a 2,",
+        "start": 2526.48,
+        "end": 2535.48
+    },
+    {
+        "text": " por supuesto por simetría, inverso de 4 y acá si observo es 4, es su propio inverso,",
+        "start": 2535.48,
+        "end": 2546.48
+    },
+    {
+        "text": " entonces es un cuerpo, esto es un cuerpo, ahora esto es otro ejemplo de cuerpo finito y también se puede hacer al gemeralo con este cuerpo,",
+        "start": 2546.48,
+        "end": 2563.48
+    },
+    {
+        "text": " ahora que ejemplo falta, que ejemplo falta, el con 4 elementos, 7 4,",
+        "start": 2563.48,
+        "end": 2580.48
+    },
+    {
+        "text": " pase directamente de 7 a 3 a 7 a 5, ¿por qué me olvidé por la 7 a 4? Eje así si yo,",
+        "start": 2580.48,
+        "end": 2588.48
+    },
+    {
+        "text": " mostrar que 7 a 4 no es un cuerpo, porque 2 no tiene inverso,",
+        "start": 2588.48,
+        "end": 2595.48
+    },
+    {
+        "text": " en 7 a 4 2 no es divertible, entonces no es un cuerpo, ejesisio para ustedes,",
+        "start": 2595.48,
+        "end": 2608.48
+    },
+    {
+        "text": " ejesisio verificar que se hace la misma cosa con 4 elementos, ahora conocen el método para hacerlo,",
+        "start": 2608.48,
+        "end": 2616.48
+    },
+    {
+        "text": " si lo hacen con 4 elementos, vamos a tener adición conutativa, asociativa, multiplicación asociativa,",
+        "start": 2617.48,
+        "end": 2626.48
+    },
+    {
+        "text": " conutativa, vamos a obtener una operación distribuciiva, pero vamos a observar que existe un tonuno,",
+        "start": 2626.48,
+        "end": 2634.48
+    },
+    {
+        "text": " que no tiene inverso y será 2, entonces acá podemos observar que en cada columna nonula siempre hay un uno que aparece acá,",
+        "start": 2634.48,
+        "end": 2645.48
+    },
+    {
+        "text": " que dice que tiene inverso, solo 0, él no tiene inverso, pero si hacen a tabla para 4 elementos,",
+        "start": 2645.48,
+        "end": 2656.48
+    },
+    {
+        "text": " no va a funcionar, 2 no tendrá en la columna o la fila de 2, no habrá ninguno que va a aparecer,",
+        "start": 2656.48,
+        "end": 2665.48
+    },
+    {
+        "text": " el producto, entonces 2 no tendrá inverso, entonces 7 a 4 solo es un anillo y no es un cuerpo,",
+        "start": 2666.48,
+        "end": 2675.48
+    },
+    {
+        "text": " es un ejesisio para ustedes, después ahora la pregunta es este tipo de cosas que puede hacer con cualquier cantidad de números,",
+        "start": 2675.48,
+        "end": 2684.48
+    },
+    {
+        "text": " se puede definir 7 a n, cuerdes van a ser los que van a dar cuerpos, tenemos 2, 3, 4 lo funciona, 5,",
+        "start": 2685.48,
+        "end": 2698.48
+    },
+    {
+        "text": " quién va a aparecer después, 7, 11, 13, 17, 19, 23, esto solo funciona para los números primos,",
+        "start": 2698.48,
+        "end": 2713.48
+    },
+    {
+        "text": " es decir, obtenemos un cuerpo solo cuando el número de elementos es primo,",
+        "start": 2716.48,
+        "end": 2723.48
+    },
+    {
+        "text": " esto es cultura general, por suerte en el resto de las clases del curso,",
+        "start": 2724.48,
+        "end": 2733.48
+    },
+    {
+        "text": " solo voy, porque no quiero molestarles, solo vamos a trabajar en él a veces en él y quizá en algunos ejesisios",
+        "start": 2733.48,
+        "end": 2743.48
+    },
+    {
+        "text": " se va a trabajar en ZLOS, pero hay que entender que las reglas que permiten calcular son idénticas a las usuales,",
+        "start": 2744.48,
+        "end": 2755.48
+    },
+    {
+        "text": " solo dos cuentas con números con constantes va a cambiar, pero eso es fácil calcular con esto,",
+        "start": 2755.48,
+        "end": 2763.48
+    },
+    {
+        "text": " hay que saber que acá 5 vale 0 y es todo, desde cada vez que yo veo 5 yo puede sacar el 5,",
+        "start": 2763.48,
+        "end": 2770.48
+    },
+    {
+        "text": " entonces si yo veo 55 o qué esto es 0, o qué esto era una introducción a la noción de cuerpo,",
+        "start": 2771.48,
+        "end": 2782.48
+    },
+    {
+        "text": " que es la herramienta fundamental que vamos a usar para hacer espacios vectoriales,",
+        "start": 2782.48,
+        "end": 2787.48
+    },
+    {
+        "text": " o qué ahora yo puedo definir la noción de espacios vectorial, esto era para la cultura generada,",
+        "start": 2787.48,
+        "end": 2796.48
+    },
+    {
+        "text": " que ustedes sepan que nosotros matemáticos tenemos mucho más nociones de números que ustedes pueden pensar,",
+        "start": 2796.48,
+        "end": 2805.48
+    },
+    {
+        "text": " y que hay algunas que a veces son muy útiles, por ejemplo estos cuerpos de este tipo son muy útiles y muy usados en criptografía,",
+        "start": 2805.48,
+        "end": 2815.48
+    },
+    {
+        "text": " cuando usan software de criptografía adentro estos software trabajan en cuerpos de este tipo,",
+        "start": 2816.48,
+        "end": 2824.48
+    },
+    {
+        "text": " pero en general con 7 algo como un número con 1000 dígitos,",
+        "start": 2824.48,
+        "end": 2832.48
+    },
+    {
+        "text": " trabaja adentro de ese cuerpo,",
+        "start": 2834.48,
+        "end": 2837.48
+    },
+    {
+        "text": " si la tarjeta de criptografía todos los sistemas de criptografía muchos trabajan con cuerpos sinitos,",
+        "start": 2838.48,
+        "end": 2846.48
+    },
+    {
+        "text": " con carginal grande, y en general acá es algo como un número primo que tiene algo como 100 dígitos,",
+        "start": 2846.48,
+        "end": 2855.48
+    },
+    {
+        "text": " ok ahora podemos ver la noción de espacios vectorial,",
+        "start": 2855.48,
+        "end": 2862.48
+    },
+    {
+        "text": " pero yo insisto en estas cosas se pueden calcular por ilumio,",
+        "start": 2875.48,
+        "end": 2879.48
+    },
+    {
+        "text": " se pueden calcular expresiones algebraicas con las reglas su suales,",
+        "start": 2879.48,
+        "end": 2884.48
+    },
+    {
+        "text": " el diario se puede hacer de resolver ecuaciones de mismo modo,",
+        "start": 2884.48,
+        "end": 2888.48
+    },
+    {
+        "text": " los sistemas señales se vuelven exactamente de mismo modo,",
+        "start": 2888.48,
+        "end": 2893.48
+    },
+    {
+        "text": " lo único es que acá no se puede vivir por 5,",
+        "start": 2893.48,
+        "end": 2896.48
+    },
+    {
+        "text": " y por qué no se puede vivir por 5, porque 5 es igual a 0.",
+        "start": 2896.48,
+        "end": 2900.48
+    },
+    {
+        "text": " Ahora podemos ver de espacios vectoriales, definición,",
+        "start": 2914.48,
+        "end": 2922.48
+    },
+    {
+        "text": " ok definición,",
+        "start": 2922.48,
+        "end": 2929.48
+    },
+    {
+        "text": " ok definición,",
+        "start": 2935.48,
+        "end": 2939.48
+    },
+    {
+        "text": " un espacio vectorial,",
+        "start": 2940.48,
+        "end": 2947.48
+    },
+    {
+        "text": " es una cuadro dupla,",
+        "start": 2948.48,
+        "end": 2954.48
+    },
+    {
+        "text": " que es acá, b, más y el punto,",
+        "start": 2956.48,
+        "end": 2962.48
+    },
+    {
+        "text": " una cuadro dupla donde,",
+        "start": 2962.48,
+        "end": 2967.48
+    },
+    {
+        "text": " primera cosa, cae su cuerpo,",
+        "start": 2968.48,
+        "end": 2974.48
+    },
+    {
+        "text": " y ahora sabemos lo que es un cuerpo,",
+        "start": 2975.48,
+        "end": 2977.48
+    },
+    {
+        "text": " es decir, un conjunto de números donde se puede subar,",
+        "start": 2977.48,
+        "end": 2981.48
+    },
+    {
+        "text": " restar, multiplicar y vivir con alegría,",
+        "start": 2981.48,
+        "end": 2986.48
+    },
+    {
+        "text": " ok,",
+        "start": 2986.48,
+        "end": 2989.48
+    },
+    {
+        "text": " de hecho cae su cuerpo, lo puse en revés,",
+        "start": 2989.48,
+        "end": 2994.48
+    },
+    {
+        "text": " eso debería poner, no es importante,",
+        "start": 2994.48,
+        "end": 2998.48
+    },
+    {
+        "text": " no es importante el orden,",
+        "start": 2998.48,
+        "end": 3000.48
+    },
+    {
+        "text": " cae su cuerpo, cuyos elementos se llaman,",
+        "start": 3000.48,
+        "end": 3009.48
+    },
+    {
+        "text": " escadares,",
+        "start": 3012.48,
+        "end": 3015.48
+    },
+    {
+        "text": " ya vimos que los coeficientes de desmatrices,",
+        "start": 3015.48,
+        "end": 3018.48
+    },
+    {
+        "text": " muchas veces las llame escadares,",
+        "start": 3018.48,
+        "end": 3022.48
+    },
+    {
+        "text": " ahora para mí un escadar es cualquier elemento de un cuerpo,",
+        "start": 3022.48,
+        "end": 3027.48
+    },
+    {
+        "text": " es la noción generalizada de número,",
+        "start": 3027.48,
+        "end": 3031.48
+    },
+    {
+        "text": " ok,",
+        "start": 3031.48,
+        "end": 3034.48
+    },
+    {
+        "text": " b, es un conjunto no vacío,",
+        "start": 3034.48,
+        "end": 3041.48
+    },
+    {
+        "text": " cuyos elementos se llaman,",
+        "start": 3046.48,
+        "end": 3054.48
+    },
+    {
+        "text": " vectores,",
+        "start": 3058.48,
+        "end": 3063.48
+    },
+    {
+        "text": " es decir, cuando son manipulos vectores,",
+        "start": 3063.48,
+        "end": 3066.48
+    },
+    {
+        "text": " necesito una noción de número para hacer producto con un número,",
+        "start": 3066.48,
+        "end": 3070.48
+    },
+    {
+        "text": " y necesito una noción de vector,",
+        "start": 3070.48,
+        "end": 3073.48
+    },
+    {
+        "text": " entonces necesito dos conjuntos,",
+        "start": 3073.48,
+        "end": 3075.48
+    },
+    {
+        "text": " un conjunto de escadares o números y un conjunto de vectores,",
+        "start": 3075.48,
+        "end": 3080.48
+    },
+    {
+        "text": " y ahora hay dos operaciones,",
+        "start": 3080.48,
+        "end": 3085.48
+    },
+    {
+        "text": " una operación,",
+        "start": 3086.48,
+        "end": 3092.48
+    },
+    {
+        "text": " más que toma dos vectores y que devuelve un vector,",
+        "start": 3092.48,
+        "end": 3098.48
+    },
+    {
+        "text": " y se llama suma de vectores,",
+        "start": 3098.48,
+        "end": 3105.48
+    },
+    {
+        "text": " y necesito también una otra operación,",
+        "start": 3105.48,
+        "end": 3111.48
+    },
+    {
+        "text": " que es el punto que ahora toma un escadar,",
+        "start": 3111.48,
+        "end": 3121.48
+    },
+    {
+        "text": " un vector y que devuelve un vector,",
+        "start": 3121.48,
+        "end": 3125.48
+    },
+    {
+        "text": " que se llama producto de un número por un escadar,",
+        "start": 3125.48,
+        "end": 3130.48
+    },
+    {
+        "text": " y un vector por un escadar.",
+        "start": 3130.48,
+        "end": 3134.48
+    },
+    {
+        "text": " ¿Y...",
+        "start": 3142.48,
+        "end": 3147.48
+    },
+    {
+        "text": " ¿Y...",
+        "start": 3147.48,
+        "end": 3150.48
+    },
+    {
+        "text": " No, porque el producto de vector y al vimos que sólo existe con tres dimensiones,",
+        "start": 3150.48,
+        "end": 3155.48
+    },
+    {
+        "text": " acá en la teoría general no vamos a hablar de producto de vector y al,",
+        "start": 3155.48,
+        "end": 3159.48
+    },
+    {
+        "text": " pero la teoría general los espacios vectoriales tiene dos operaciones fundamentales,",
+        "start": 3159.48,
+        "end": 3164.48
+    },
+    {
+        "text": " suma de vectores y producto de un vector por un número,",
+        "start": 3164.48,
+        "end": 3168.48
+    },
+    {
+        "text": " algo que sabimos.",
+        "start": 3168.48,
+        "end": 3170.48
+    },
+    {
+        "text": " Ahora, vamos a ver la teoría en el marco general,",
+        "start": 3171.48,
+        "end": 3176.48
+    },
+    {
+        "text": " porque es importante desarrollar la teoría del marco general y no sólo en R,",
+        "start": 3176.48,
+        "end": 3181.48
+    },
+    {
+        "text": " porque cuando los informáticos necesitan hacer softwares de criptografía van a trabajar en este cuerpo,",
+        "start": 3181.48,
+        "end": 3189.48
+    },
+    {
+        "text": " y van a necesitar los mismos teoremas que nosotros tenemos.",
+        "start": 3189.48,
+        "end": 3193.48
+    },
+    {
+        "text": " Es razón porque es importante desarrollar los teoremas en el marco más general posible,",
+        "start": 3193.48,
+        "end": 3199.48
+    },
+    {
+        "text": " para ayudar a todas las aplicaciones posibles y vimos que hay aplicaciones que requieren trabajar en otros tipos de cuerpos.",
+        "start": 3200.48,
+        "end": 3207.48
+    },
+    {
+        "text": " Y los teoremas no van a cambiar, esta cosa impresionante,",
+        "start": 3209.48,
+        "end": 3213.48
+    },
+    {
+        "text": " nuestros teoremas no van a cambiar,",
+        "start": 3213.48,
+        "end": 3216.48
+    },
+    {
+        "text": " porque los resultados de álgebra lineal no dependen en general del cuerpo considerado.",
+        "start": 3216.48,
+        "end": 3223.48
+    },
+    {
+        "text": " Ahora, pero no es suficiente.",
+        "start": 3229.48,
+        "end": 3236.48
+    },
+    {
+        "text": " tienen que cumplir algunas propiedades, la suma y el producto. Entonces, voy a dar",
+        "start": 3259.48,
+        "end": 3265.96
+    },
+    {
+        "text": " los acciones que cumplen. Ok, además, la suma cumple los siguientes",
+        "start": 3265.96,
+        "end": 3279.32
+    },
+    {
+        "text": " acciones.",
+        "start": 3279.32,
+        "end": 3281.96
+    },
+    {
+        "text": " As, acción, S1.",
+        "start": 3288.1200000000003,
+        "end": 3291.8
+    },
+    {
+        "text": " Acción, S1 es la suma, es asociativa. Ah, no disculpa, ahora si no la suma",
+        "start": 3291.8,
+        "end": 3299.0800000000004
+    },
+    {
+        "text": " de lectores, que voy a escribir esto.",
+        "start": 3299.08,
+        "end": 3303.4
+    },
+    {
+        "text": " Y esto es para todos",
+        "start": 3308.7999999999997,
+        "end": 3313.04
+    },
+    {
+        "text": " vectores u, b, w, en el conjunto de vectores. Ok, ese primer acción",
+        "start": 3313.84,
+        "end": 3321.52
+    },
+    {
+        "text": " suma de la suma. Segundo acción, la suma tiene que ser conmutativa.",
+        "start": 3321.52,
+        "end": 3329.0
+    },
+    {
+        "text": " Y esto es para todos",
+        "start": 3333.7599999999998,
+        "end": 3337.28
+    },
+    {
+        "text": " u, b, en b. Ahora tenemos que precisar en qué conjunto estamos porque",
+        "start": 3339.28,
+        "end": 3345.7599999999998
+    },
+    {
+        "text": " necesitamos dos conjuntos. Voy a usar las letras u, b, corta, w, etc, para los",
+        "start": 3345.76,
+        "end": 3353.5600000000004
+    },
+    {
+        "text": " vectores y voy a usar las letras griegas para los escadales.",
+        "start": 3353.5600000000004,
+        "end": 3358.0
+    },
+    {
+        "text": " ¿Cómo lo hice anteriormente? S3.",
+        "start": 3359.48,
+        "end": 3363.2000000000003
+    },
+    {
+        "text": " S3, la suma tiene elemento neutro.",
+        "start": 3364.48,
+        "end": 3370.36
+    },
+    {
+        "text": " Que se llama el vector nulo?",
+        "start": 3370.36,
+        "end": 3377.36
+    },
+    {
+        "text": " Y se escribié con 0 con una flecha, el v. Es decir, u, más el vector nulo es igual,",
+        "start": 3377.36,
+        "end": 3385.36
+    },
+    {
+        "text": " el vector nulo más u y es igual.",
+        "start": 3385.36,
+        "end": 3387.76
+    },
+    {
+        "text": " Ok, y cada vector tiene un opuesto.",
+        "start": 3387.76,
+        "end": 3395.0
+    },
+    {
+        "text": " Que voy a escribir menos u en b y la regla es que u, más, menos u, es igual a menos",
+        "start": 3400.36,
+        "end": 3413.96
+    },
+    {
+        "text": " u, más u y esto me da el vector nulo. Estos son los acción más de la suma.",
+        "start": 3413.96,
+        "end": 3420.08
+    },
+    {
+        "text": " Ok, y ahora, y el producto tiene que cumplir sus propios acción más y hay cual otro",
+        "start": 3420.08,
+        "end": 3428.6
+    },
+    {
+        "text": " toque, el cleansing bien.",
+        "start": 3428.64,
+        "end": 3431.3199999999997
+    },
+    {
+        "text": " Ok, y el producto.",
+        "start": 3431.32,
+        "end": 3460.04
+    },
+    {
+        "text": " y el producto lo que voy a llamar al producto externo, cumple los siguientes acciones",
+        "start": 3460.04,
+        "end": 3489.92
+    },
+    {
+        "text": " también tengo cuatro acciones, P1, el primer acciona me dice es una forma de",
+        "start": 3489.92,
+        "end": 3497.96
+    },
+    {
+        "text": " associatividad pero associatividad entre dos tipos de productos, me dice que sí",
+        "start": 3497.96,
+        "end": 3503.98
+    },
+    {
+        "text": " yo hago el producto de alpha por beta por un vector, es lo mismo que hacer el",
+        "start": 3503.98,
+        "end": 3511.56
+    },
+    {
+        "text": " producto en k por el vector, ojo, acá de qué tipo de productos se trata, es el",
+        "start": 3511.56,
+        "end": 3523.08
+    },
+    {
+        "text": " producto externo entre un escalar y un vector, este es un vector y esto es un",
+        "start": 3523.08,
+        "end": 3530.84
+    },
+    {
+        "text": " producto de un vector por número, me da un vector, producto con número me da un",
+        "start": 3530.84,
+        "end": 3535.32
+    },
+    {
+        "text": " vector, acá es un producto de un vector por número pero este producto es un",
+        "start": 3535.32,
+        "end": 3540.36
+    },
+    {
+        "text": " producto del cuerpo, este es el producto de k,",
+        "start": 3540.36,
+        "end": 3546.6800000000003
+    },
+    {
+        "text": " dicho de otro modo esta regla me explica con esta interacción entre el producto",
+        "start": 3554.36,
+        "end": 3561.96
+    },
+    {
+        "text": " del espacio-b con el producto del cuerpo-k, tenemos dos productos ahora, el",
+        "start": 3561.96,
+        "end": 3573.64
+    },
+    {
+        "text": " producto de numeros que se productor el cuerpo-k que chavimos muchos",
+        "start": 3573.64,
+        "end": 3578.08
+    },
+    {
+        "text": " ejemplos y el producto de un vector por número, chavimos como hacer el",
+        "start": 3578.08,
+        "end": 3582.96
+    },
+    {
+        "text": " producto de una madrugas por número esta misma idea, ok la suma el producto",
+        "start": 3582.96,
+        "end": 3590.08
+    },
+    {
+        "text": " también cumple la siguiente regla, uno, acá es el uno del cuerpo, es mi número",
+        "start": 3590.08,
+        "end": 3598.36
+    },
+    {
+        "text": " uno, por un vector es igual a uno y me quedan los últimos dos acciones que son",
+        "start": 3598.36,
+        "end": 3608.16
+    },
+    {
+        "text": " dos acciones de distributividad, el primer acciones me dice lo siguiente, si yo hago",
+        "start": 3608.16,
+        "end": 3614.68
+    },
+    {
+        "text": " alpha por u más b, yo tengo alpha por u más alpha por v, ojo de qué tipo de sumas",
+        "start": 3614.68,
+        "end": 3628.72
+    },
+    {
+        "text": " de trataca, vectores, acá de qué tipo de producto es carácter, acá qué tipo de suma,",
+        "start": 3628.72,
+        "end": 3638.08
+    },
+    {
+        "text": " vectores también qué tipo de producto es carácter, es carácter, ok y pecuatro,",
+        "start": 3639.04,
+        "end": 3649.48
+    },
+    {
+        "text": " acá es el más subtil,",
+        "start": 3651.88,
+        "end": 3653.44
+    },
+    {
+        "text": " qué tipo de suma es acá, suma de vectores, acá es carácter, es carácter, qué tipo de suma",
+        "start": 3653.44,
+        "end": 3676.4
+    },
+    {
+        "text": " es acá, es asumale del cuerpo, entonces voy a poder una caca y una ve acá, no es una suma",
+        "start": 3676.4,
+        "end": 3687.44
+    },
+    {
+        "text": " de mijo conjunto, acá es una suma de números, que se transforma en una suma de vectores y esto para",
+        "start": 3687.44,
+        "end": 3695.64
+    },
+    {
+        "text": " todos, alpha beta escadiles y vectores u, b, w, no, no, w, w en el conjunto de vectores,",
+        "start": 3695.64,
+        "end": 3711.3199999999997
+    },
+    {
+        "text": " ok, esto es la definición de lo que es un espacio vectorial, muy bien y la terminología es",
+        "start": 3711.3199999999997,
+        "end": 3723.12
+    },
+    {
+        "text": " que un espacio vectorial, terminología, no, imposible, prohibido,",
+        "start": 3723.12,
+        "end": 3753.0
+    },
+    {
+        "text": " es decir, esta razón porque definimos muy limpiamente la nación del cuerpo para saber cómo se",
+        "start": 3753.12,
+        "end": 3762.12
+    },
+    {
+        "text": " puede hacer operaciones adentro, exactamente es porque es un producto entre dos cosas que no tienen",
+        "start": 3762.12,
+        "end": 3771.92
+    },
+    {
+        "text": " nada que ver, entre un número un vector, algo interno es entre un vector y un vector, esto es",
+        "start": 3771.92,
+        "end": 3782.84
+    },
+    {
+        "text": " una terminología que no existe acá, pero esa terminología que yo aprendí en Francia,",
+        "start": 3782.84,
+        "end": 3787.88
+    },
+    {
+        "text": " disculpa, de qué?",
+        "start": 3787.88,
+        "end": 3801.92
+    },
+    {
+        "text": " nunca, nunca, nunca, con los vectores tampoco, no, la suma de los vectores es un vector,",
+        "start": 3801.92,
+        "end": 3810.04
+    },
+    {
+        "text": " acá cuando dije esto, dije esto quiere decir, si yo ve doy dos vectores que les quiera,",
+        "start": 3810.04,
+        "end": 3817.8
+    },
+    {
+        "text": " la suma tiene que presidencer a ver, y si yo me doy un escar cualquiera y un vector cualquiera,",
+        "start": 3817.8,
+        "end": 3825.2799999999997
+    },
+    {
+        "text": " el producto de ambos tiene que estar en ve, no tiene que dar el choque salir, ok, la terminología es",
+        "start": 3825.2799999999997,
+        "end": 3834.44
+    },
+    {
+        "text": " que un cuerpo, ok, un terminología, una espacio vectorial, cuyo cuerpo es cadáres,",
+        "start": 3834.44,
+        "end": 3858.4
+    },
+    {
+        "text": " esca, se llama un espacio vectorial sobreca, o a veces, un caespacio vectorial,",
+        "start": 3864.44,
+        "end": 3884.92
+    },
+    {
+        "text": " es decir, podemos antes de la palabra espacio el cuerpo, ok, esta miología, y sabemos",
+        "start": 3884.92,
+        "end": 3903.2000000000003
+    },
+    {
+        "text": " mucho en los espacios vectoriales, ok, ahora quizá voy a, yo pienso que antes de ver las propiedades",
+        "start": 3903.2,
+        "end": 3917.16
+    },
+    {
+        "text": " generales, ya vimos bastantes acciones, antes de hacer cuentas al dentro de la estructura general,",
+        "start": 3917.16,
+        "end": 3924.6
+    },
+    {
+        "text": " vamos a ver ejemplos de espacios vectoriales, ok, ejemplos, ya vimos un montón de espacios vectoriales,",
+        "start": 3924.6,
+        "end": 3939.48
+    },
+    {
+        "text": " entonces, el primer ejemplo que vimos, el espacio de las NU plazo,",
+        "start": 3939.48,
+        "end": 3947.72
+    },
+    {
+        "text": " que se escribe R a la N, cuando el cuerpo es R, pero también se puede construir sobre un",
+        "start": 3958.84,
+        "end": 3966.44
+    },
+    {
+        "text": " cuerpo cualquiera, no, ahora podemos con un estudicerrar NU plazo de números en el conjunto",
+        "start": 3966.44,
+        "end": 3980.44
+    },
+    {
+        "text": " 75, hay que recordar cuál es la definición de la suma y del producto externo, entonces la suma",
+        "start": 3980.44,
+        "end": 3991.96
+    },
+    {
+        "text": " está definida así, si yo tengo alpha 1 alpha N más beta 1 beta N, es decir, esto es una NU",
+        "start": 3991.96,
+        "end": 4003.96
+    },
+    {
+        "text": " placolquiera, esto es otra NU placolquiera, cuál es la suma por definición, es alpha 1 más beta 1",
+        "start": 4003.96,
+        "end": 4012.2400000000002
+    },
+    {
+        "text": " etcétera, alpha N más beta N, esa definición la suma y si yo quiero hacer un producto por un escalar alpha",
+        "start": 4012.24,
+        "end": 4023.7599999999998
+    },
+    {
+        "text": " por beta 1 beta N, esto es mi U y esto es mi V y esto es mi escalar, es igual a alpha beta 1 alpha beta N",
+        "start": 4023.7599999999998,
+        "end": 4038.24
+    },
+    {
+        "text": " y esto es completo de los suacciones anteriores, es decir, acá hay que ver que acá mis vector en este ejemplo particular,",
+        "start": 4039.24,
+        "end": 4050.24
+    },
+    {
+        "text": " mi un vector es una sucesión de N números, entonces esto es mi U y esto es mi V,",
+        "start": 4050.24,
+        "end": 4058.24
+    },
+    {
+        "text": " acá estoy definiendo las sumas de dos vectores, acá en este ejemplo un vector es V, culpa,",
+        "start": 4059.24,
+        "end": 4070.24
+    },
+    {
+        "text": " R a la N, tengo que precisar que mi cuerpo K es R o cualquiera, le hecho podría ser un cuerpo",
+        "start": 4070.24,
+        "end": 4078.24
+    },
+    {
+        "text": " cualquiera y con un tuvector es R a la N o K a la N, ok, entonces ahora esto es una NU placol,",
+        "start": 4079.24,
+        "end": 4093.24
+    },
+    {
+        "text": " es decir sucesión de N números y lo que observo es que cuando tenemos dos sucesiones de N números,",
+        "start": 4093.24,
+        "end": 4101.24
+    },
+    {
+        "text": " ya sabemos sumarlas, sumando componente por componente y también sabemos hacer un producto de una NU",
+        "start": 4101.24,
+        "end": 4111.24
+    },
+    {
+        "text": " placol por un número único, entonces sabemos definir la suma y el producto por un escalar,",
+        "start": 4111.24,
+        "end": 4119.24
+    },
+    {
+        "text": " y después se puede verificar que cumplen los acciones S1, S2, S3, S4, P1, P2, P3, P4,",
+        "start": 4119.24,
+        "end": 4127.24
+    },
+    {
+        "text": " luego esto es una espacial vectorial, ese ejemplo más sencillo de espacial vectorial que existe,",
+        "start": 4127.24,
+        "end": 4135.24
+    },
+    {
+        "text": " ok, y la mayoría del tiempo vamos a trabajar en ese espacio vectorial, pero vimos otros ejemplos de espacial vectoriales,",
+        "start": 4135.24,
+        "end": 4149.24
+    },
+    {
+        "text": " ok, otros ejemplos, acá hay una cosa interesante,",
+        "start": 4157.24,
+        "end": 4172.24
+    },
+    {
+        "text": " sobre este ejemplo tengo que hacer una observación, es que acá cada vector en este ejemplo particular,",
+        "start": 4173.24,
+        "end": 4198.24
+    },
+    {
+        "text": " cada vector tiene exactamente N componentes, es decir intuïdivamente corresponde a una espacial de qué dimensión,",
+        "start": 4199.24,
+        "end": 4209.24
+    },
+    {
+        "text": " N, si se obtuviera tres coordenadas sería el espacio ambiente, pero ahora no sólo podemos hacer geometría con N dimensiones,",
+        "start": 4209.24,
+        "end": 4220.24
+    },
+    {
+        "text": " pero podemos cambiar el cuerpo, imagínense de una espacial de tres dimensiones pero en Z2,",
+        "start": 4220.24,
+        "end": 4229.24
+    },
+    {
+        "text": " imagínense geometría en Z2 con tres dimensiones, cuantos puntos tiene mi espacio,",
+        "start": 4229.24,
+        "end": 4237.24
+    },
+    {
+        "text": " 8, es una espacial un poquito pequeño para vivir adentro, pero se puede hacer geometría en este espacio,",
+        "start": 4238.24,
+        "end": 4247.24
+    },
+    {
+        "text": " que sólo tiene 8 puntos, ok, esto voy a decir que esta espacial tiene N dimensiones y todo el objetivo del curso es formalizar la noción de dimension,",
+        "start": 4247.24,
+        "end": 4260.24
+    },
+    {
+        "text": " que va a ser la noción central de todo el curso, como se define que una espacial es una espacial que tiene tal cantidad de dimensiones,",
+        "start": 4261.24,
+        "end": 4270.24
+    },
+    {
+        "text": " es todo el objetivo de lo que va a seguir, esto no tengo que hacer nada porque Z2 parece como si dicen francés Z2 parece en dimensiones como la nariz adentro de la cara,",
+        "start": 4270.24,
+        "end": 4288.24
+    },
+    {
+        "text": " ok, entonces se aparece en que hay N dimensiones, pero a veces tendremos otros espacios que tendrán diefiniciones mucho más complicadas y no se verán cuéles su dimensión,",
+        "start": 4289.24,
+        "end": 4301.24
+    },
+    {
+        "text": " entonces parce de nuestro trabajo, va a consistir en tomar espacios y analizar la cantidad de libertad de grados, de grados de libertad,",
+        "start": 4301.24,
+        "end": 4312.24
+    },
+    {
+        "text": " es decir, la dimensión, ok, ahora por supuesto vimos otro ejemplo, en espacio el conjunto de las patrises de tamaño N por N con elementos en un cuerpo caco,",
+        "start": 4312.24,
+        "end": 4340.24
+    },
+    {
+        "text": " ya vimos que podíamos hacer matrices con un cuerpo cualquiera, porque para hacer matrices lo único para trabajar con matrices lo único que tenemos que hacer es saber sumar, restar, multiplicar y vivir,",
+        "start": 4341.24,
+        "end": 4355.24
+    },
+    {
+        "text": " todo lo que vimos anteriormente sobre las patrices funciona en un cuerpo cualquiera, entonces no tengo que desarrollar otra vez la teoría,",
+        "start": 4355.24,
+        "end": 4365.24
+    },
+    {
+        "text": " ya la desarrollamos y ese conjunto de las patrises de tamaño N por N como se define la suma,",
+        "start": 4365.24,
+        "end": 4372.24
+    },
+    {
+        "text": " sabemos cómo se define las sumas de los patrises de mismo tamaño y también se puede decir el producto de una matriz por un número,",
+        "start": 4372.24,
+        "end": 4382.24
+    },
+    {
+        "text": " sabimos esto es una espacios vectorial, sobreca, es decir, ahora la definición que vamos a tomar, vamos a chamar vector a todo elemento que existe al entro de algún espacios vectorial,",
+        "start": 4382.24,
+        "end": 4411.24
+    },
+    {
+        "text": " entonces se pueden considerar matrices como vectores, ¿cuál es esa dimensión de este espacio, cuáles a cantidad de grados de libertad que tenemos, N, cuantos casichas tengo,",
+        "start": 4411.24,
+        "end": 4434.24
+    },
+    {
+        "text": " yo choque cenar para definir los matrices, N por N esa dimensión, N por N dimensiones, tengo N por N numeros que cenara dentro para definir mi matriz,",
+        "start": 4434.24,
+        "end": 4453.24
+    },
+    {
+        "text": " ok, el conjunto de matrices, vamos a ver otros ejemplos, el espacio de las sucesiones, no sé si vierran las sucesiones o no,",
+        "start": 4453.24,
+        "end": 4467.24
+    },
+    {
+        "text": " en calcular diferencia de interral en general no se ven las sucesiones, vierran este semestre o no las sucesiones, no, ok, voy a saltar este ejemplo,",
+        "start": 4467.24,
+        "end": 4480.24
+    },
+    {
+        "text": " ok, dado un intervalo y N,",
+        "start": 4480.24,
+        "end": 4493.24
+    },
+    {
+        "text": " yo voy a construir el espacio, el primer conjunto es ser conjunto que es escribir R a R, de todas las funciones de I and R,",
+        "start": 4493.24,
+        "end": 4512.24
+    },
+    {
+        "text": " se escribié R a R, porque para cada valor de I tengo que definir una componente, ok, ahora tengo, ahora es el conjunto de funciones,",
+        "start": 4523.24,
+        "end": 4542.24
+    },
+    {
+        "text": " ok, es decir R a R, es el conjunto de todas las funciones, de tipo que van de I a R, ok, y esto, que se puede decir, como se suman funciones, componentes por componente,",
+        "start": 4542.24,
+        "end": 4568.24
+    },
+    {
+        "text": " y se puede multiplicar una función por un número, esto es una espacio de vectoria, y hay que definir la suma, la suma de dos funciones,",
+        "start": 4568.24,
+        "end": 4587.24
+    },
+    {
+        "text": " cuando yo le aplico a un elemento me da que las suman los dos valores, esto es la definición de las suman de dos funciones, ok, para todo X en I,",
+        "start": 4587.24,
+        "end": 4604.24
+    },
+    {
+        "text": " y definición de producto de una función por un escalar, alpha por F, por definición, esa función que cuando yo le aplico a una variable X,",
+        "start": 4604.24,
+        "end": 4621.24
+    },
+    {
+        "text": " obtengo alpha por F, esto me define, acá define como sumar funciones, el resulta lo es una función, y acá define como multiplicar una función por un número, esto me define otra función,",
+        "start": 4621.24,
+        "end": 4641.24
+    },
+    {
+        "text": " entonces las funciones también son vectores, es decir, todos los resultados que vamos a demostrar, también se aplican las funciones, ok,",
+        "start": 4641.24,
+        "end": 4659.24
+    },
+    {
+        "text": " ahora es mucho más difícil obtener la cantidad de grados de libertad, cuáles son los grados de libertad para construir una función,",
+        "start": 4659.24,
+        "end": 4677.24
+    },
+    {
+        "text": " del hecho para cada X en I, se lo tengo un grados de libertad, entonces cuáles son dimensiones, infinita, es infinita, es su espacio de dimensiones infinitas,",
+        "start": 4677.24,
+        "end": 4694.24
+    },
+    {
+        "text": " vamos a ver que hay vectores con una cantidad infinita intuitivamente de componentes,",
+        "start": 4694.24,
+        "end": 4701.24
+    },
+    {
+        "text": " es el caso típico de los espacios de funciones, pero podemos hacer mucho más otros ejemplos, por ejemplo, esto es el primer ejemplo de espacio de funciones,",
+        "start": 4701.24,
+        "end": 4721.24
+    },
+    {
+        "text": " pero podemos resincirre el espacio,",
+        "start": 4721.24,
+        "end": 4738.24
+    },
+    {
+        "text": " en general, cuando están en cálculo 1, consideran todos los tipos posibles de funciones, o no solo consideran un tipo particular,",
+        "start": 4738.24,
+        "end": 4752.24
+    },
+    {
+        "text": " cuáles son las funciones que consideran en el cálculo 1, funciones cual es que era, en general hay un tipo de funciones que les interesa mucho más,",
+        "start": 4752.24,
+        "end": 4761.24
+    },
+    {
+        "text": " espero la palabra, funciones que continuas, cuando están haciendo análisis, hacen funciones continuas,",
+        "start": 4761.24,
+        "end": 4773.24
+    },
+    {
+        "text": " entonces ahora, yo puedo decir considerar el conjunto que se escribe así, c a la cero de I a R, por definición es el conjunto de las funciones continuas de I a R.",
+        "start": 4773.24,
+        "end": 4793.24
+    },
+    {
+        "text": " ¿Qué? ¿Aloj? No, son funciones continuas cual es que era.",
+        "start": 4793.24,
+        "end": 4811.24
+    },
+    {
+        "text": " Ok, tenemos una espacios de función, ¿qué pasa si yo sumo dos funciones continuas que voy a obtener a show?",
+        "start": 4811.24,
+        "end": 4823.24
+    },
+    {
+        "text": " Una función continua, ¿qué pasa si yo hago el producto de una función continua por una constante?",
+        "start": 4823.24,
+        "end": 4829.24
+    },
+    {
+        "text": " Voy a obtener otra función continua, entonces tiene sus sumas y tiene su producto por un escalar, esto también es una espacios vectorial.",
+        "start": 4829.24,
+        "end": 4839.24
+    },
+    {
+        "text": " Ok, es otro ejemplo, pero podemos considerar otras cosas, el conjunto de las funciones derivables.",
+        "start": 4839.24,
+        "end": 4868.24
+    },
+    {
+        "text": " ¿Qué pasa si yo sumo dos funciones derivables?",
+        "start": 4868.24,
+        "end": 4888.24
+    },
+    {
+        "text": " ¿O tengo una función derivable? Si yo multiplico una función derivable por una constante, obtengo otra función derivable, esto me dice que tengo otro nuevo espacios vectorial que es el espacio de las funciones derivable.",
+        "start": 4888.24,
+        "end": 4908.24
+    },
+    {
+        "text": " Y podemos hacer un montón de cosas similares, por ejemplo, el conjunto int de I a R,",
+        "start": 4908.24,
+        "end": 4933.24
+    },
+    {
+        "text": " que está definido con las funciones de I a R que son integrables.",
+        "start": 4933.24,
+        "end": 4944.24
+    },
+    {
+        "text": " En el sentido de Riemann, ya vieron la integral de Riemann, ¿qué pasa si yo ahora sumo de los funciones integrables?",
+        "start": 4944.24,
+        "end": 4954.24
+    },
+    {
+        "text": " ¿O tengo una función integrable? ¿Qué pasa cuando yo hago el producto de una función integrable por una constante?",
+        "start": 4954.24,
+        "end": 4962.24
+    },
+    {
+        "text": " ¿O tengo otra función integrable? Esto también es un espacio vectorial.",
+        "start": 4962.24,
+        "end": 4968.24
+    },
+    {
+        "text": " Ahora, cuando el gran secreto del primer semestre de primer año, es de que de hecho solo trabajan en espacios vectoriales, porque todos los cursos de matemática solo trabajan en espacios vectoriales.",
+        "start": 4984.24,
+        "end": 5002.24
+    },
+    {
+        "text": " En Algebra Lineal, nunca trabajamos en otro objeto que es un espacio vectorial, pero en calcuno diferencial e integral en una variable, todos los espacios en los cuales trabajan también son espacios vectoriales.",
+        "start": 5002.24,
+        "end": 5019.24
+    },
+    {
+        "text": " Lo que me permite decir que la nutión de espacio vectorial es la nutión fundamental del primer año de matemática.",
+        "start": 5019.24,
+        "end": 5028.24
+    },
+    {
+        "text": " Porque se encuentra en todos los partes. Esta estructura es el animal más común de la matemática.",
+        "start": 5029.24,
+        "end": 5039.24
+    },
+    {
+        "text": " Ya saben que en nuestra pleneta, el animal más común es el insecto, en la matemática el equivalente de la corratcha es el espacio vectorial.",
+        "start": 5039.24,
+        "end": 5050.24
+    },
+    {
+        "text": " No podemos hacer nada, siempre hay en todos los estados. Te corren en todos los caminos, en todas las habitaciones de tu castillo matemático, hay espacios vectoriales en todas estas partes.",
+        "start": 5051.24,
+        "end": 5062.24
+    },
+    {
+        "text": " Impossile para sacarlas. Esta estructura más frecuente, es superfacil para construir un espacio vectorial y todos los que se construyen que tienen un interés para el ingeniero en general tienen una estructura de espacio vectorial.",
+        "start": 5063.24,
+        "end": 5081.24
+    },
+    {
+        "text": " Esto es para dar, pero me olvino otro ejemplo.",
+        "start": 5082.24,
+        "end": 5087.24
+    },
+    {
+        "text": " El conjunto que se escribe R corchetex de los polinomios con coeficiente SNR.",
+        "start": 5087.24,
+        "end": 5104.24
+    },
+    {
+        "text": " Su male polinomios es un polinomio. Producto del polinomio por un número es otro polinomio. Esto es un espacio vectorial.",
+        "start": 5105.24,
+        "end": 5115.24
+    },
+    {
+        "text": " Ok. Entonces también los polinomios forman un espacio vectorial. Entonces tenemos un montón de ejemplos de espacios vectoriales.",
+        "start": 5116.24,
+        "end": 5137.24
+    },
+    {
+        "text": " ¿Se debe un ejemplo de un espacio vectorial?",
+        "start": 5138.24,
+        "end": 5144.24
+    },
+    {
+        "text": " Seta 4. Si es un espacio vectorial sobre disculpa, es un espacio vectorial sobre Z2. Eje así si no es R-4. Vimos que no es un cuerpo, pero Z2 es un cuerpo.",
+        "start": 5144.24,
+        "end": 5160.24
+    },
+    {
+        "text": " Se puede equipar Z4 con una suma que ya existe. Un producto por un escalar en Z2, de tal modo que obtengamos un espacio vectorial.",
+        "start": 5160.24,
+        "end": 5170.24
+    },
+    {
+        "text": " No hay que ir a estructuras muy exóticas que no son espacios vectoriales. Hay los módulos por ejemplo, pero no tengo ejemplo sencillos de cosas que no son espacios vectoriales.",
+        "start": 5171.24,
+        "end": 5183.24
+    },
+    {
+        "text": " Por ejemplo los polinomios con coeficientes enteros no forman un espacio vectorial, forman una generalización que se llama módulos.",
+        "start": 5183.24,
+        "end": 5195.24
+    },
+    {
+        "text": " Por ejemplo, si vos quisieros hacer un espacio vectorial de las matrices, pero en particular la que tienen determinantes ito de cero.",
+        "start": 5195.24,
+        "end": 5205.24
+    },
+    {
+        "text": " Esto no es un espacio vectorial, porque no podes hacer suma. Cuando haces suma de dos matrices con determinante nulo, a veces obtienes una matriz con determinante nulo.",
+        "start": 5205.24,
+        "end": 5217.24
+    },
+    {
+        "text": " Esto vamos a ver que no es un sub espacio vectorial. Entonces hay un montón también de cosas, pero los grandes espacios generales son espacios vectoriales en matemática.",
+        "start": 5217.24,
+        "end": 5228.24
+    },
+    {
+        "text": " Al menos para un ingeniero, yo trabajo el otro dominio y yo puedo decir que en mi habitación de lógico nunca había un espacio vectorial.",
+        "start": 5228.24,
+        "end": 5239.24
+    },
+    {
+        "text": " Entonces no tengo las cucarrachas de los matemáticos, los suales, pero por qué trabajo en un dominio especial?",
+        "start": 5239.24,
+        "end": 5246.24
+    },
+    {
+        "text": " Ok, yo no quiero insultar a las cucarrachas, insultándolas, tratándolas de espacios vectoriales, no quiero hacerlo.",
+        "start": 5246.24,
+        "end": 5259.24
+    },
+    {
+        "text": " Ok, ahora hay que ver así y los ejemplos de la vida cotidiana, vos se terminar con estos ejemplos, otros ejemplos.",
+        "start": 5259.24,
+        "end": 5273.24
+    },
+    {
+        "text": " En espacios de los píxeles, si su tengo un pixel, vivos a vez pasada que un pixel tiene tres componentes,",
+        "start": 5273.24,
+        "end": 5295.24
+    },
+    {
+        "text": " un pixel es una terna rojo verde, yo voy a escribir como el inglés y azul, esto es rojo verde y azul.",
+        "start": 5295.24,
+        "end": 5311.24
+    },
+    {
+        "text": " Ok, pero estas cosas pueden ser vistas como números reales, es la iluminación, sabemos que 0, 0, 0 es todo negro, 1, 1, 1 es blanco, pero para el matemático tenemos derecho, tenemos a aceptar componentes negativas,",
+        "start": 5311.24,
+        "end": 5334.24
+    },
+    {
+        "text": " vamos a invientar el color menos 1, menos 1, menos 1, ok, por qué vamos a hacer esto? Porque si yo me doy la permisión trabajar con componentes de tamaño cualquiera incluso componentes negativas, esto se transforma en un espacio vectorial,",
+        "start": 5334.24,
+        "end": 5351.24
+    },
+    {
+        "text": " y es muy cómodo ver cada color como un vector, podemos hacer sumas de colores, productoren un color por un escalar, es muy cómodo, eso que hace hace cuando la gente hace imágenes de sintesis, trabajan para mí cuando yo hago imágenes de sintesis para mí, existe una espacio vectorial de los colores,",
+        "start": 5351.24,
+        "end": 5373.24
+    },
+    {
+        "text": " ok, pero una pantalla, una imagen, que es una imagen, una imagen es una gran colección de píxeles, entonces una pantalla técnicamente es una función f, es una gran upla que pertenece, es una upla de un vector u, que pertenece a r y hay m,",
+        "start": 5373.24,
+        "end": 5402.24
+    },
+    {
+        "text": " la cantidad de filas de mi pantalla, la cantidad de columnas y por tres, porque hay tres componentes por color, por pixel, esto también es un espacio vectorial, es la espacio de los imágenes,",
+        "start": 5402.24,
+        "end": 5416.24
+    },
+    {
+        "text": " ok, entonces también cuando hacemos informática gráfica trabajamos a dentro de una espacio vectorial y aplicamos las cosas usuales, por ejemplo muchas transformaciones de imágenes se pueden describir mediante matrices, esto que vamos a ver,",
+        "start": 5416.24,
+        "end": 5436.24
+    },
+    {
+        "text": " la transformación, las matrices sirve al para definir transformaciones de vectores, ok, entonces también informática en las aplicaciones tenemos un nunto de espacios vectoriales, con una simplificación es que acá medí la autorización usar componentes con la izquierda,",
+        "start": 5436.24,
+        "end": 5457.24
+    },
+    {
+        "text": " porque sabemos que cuando obtenemos número que no está en tercero y uno siempre podemos cortarlo, si es también orjecero vamos a ponerlo a cero, si es a mayor que uno vamos a ponerlo a uno, esto solo justo antes de ponerlo en la pantalla real,",
+        "start": 5457.24,
+        "end": 5477.24
+    },
+    {
+        "text": " porque la pantalla real no con unos seculos más o que uno, componentes más o que uno, por suerte porque si no nosotros nos volvígamos ciegos, imagínense que pudiéramos poner el color del sol a dentro de una pantalla,",
+        "start": 5477.24,
+        "end": 5497.24
+    },
+    {
+        "text": " ya saben que no podemos mejorar el sol directamente, imagínense que tengamos, eso muestra que no tenemos cámaras reales, una cámara real, si yo tomo el sol, si humieron la imagen después me vuelvo ciego, las cámaras reales ponen un nivel máximo para preservar nuestros ojos,",
+        "start": 5497.24,
+        "end": 5523.24
+    },
+    {
+        "text": " normaliza las cosas, es decir, siempre cuando tenemos una señal, lo que se hace en la máquina es poner un máximo y lo que se ve es esto, clac,",
+        "start": 5523.24,
+        "end": 5535.24
+    },
+    {
+        "text": " ah me olvide las señales, un sonido, un sonido es una función del intervalo de tiempo, a R, esta vibración, esta onda, esto es un espacio vectorial,",
+        "start": 5535.24,
+        "end": 5555.24
+    },
+    {
+        "text": " también, existe un espacio vectorial en los sonidos y se usa mucho el álgebra alinial para describir las transformaciones y los filtros sobre los sonidos,",
+        "start": 5555.24,
+        "end": 5569.24
+    },
+    {
+        "text": " entonces si quieren hacer sintesis de imagen, si quieren entender cómo se filtra un sonido, si quieren entender, es decir, cualquier cosa matemática, tienen que conocer lo que es un espacio vectorial y conocer un poquito de la teoría,",
+        "start": 5569.24,
+        "end": 5587.24
+    },
+    {
+        "text": " y es lo que vamos a ver las próximas veces, chao, gracias.",
+        "start": 5587.24,
+        "end": 5591.24
+    }
+]
