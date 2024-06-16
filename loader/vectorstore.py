@@ -160,7 +160,7 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
             (
                 item["text"],
                 {
-                    "lesson_id": lesson_id,
+                    "lesson_id": str(lesson_meta["_id"]),
                     "start": item["start"],
                     "end": item["end"],
                     "subject": lesson_meta["subject"]["name"],
@@ -170,4 +170,5 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
             for item in concatenated_segments
         )
     )
+    print(metadatas)
     return texts, metadatas
