@@ -7,6 +7,8 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, FewShotChatMessagePromptTemplate
 from langchain_core.messages import HumanMessage
+from langchain_core.prompts import BasePromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langsmith import traceable
 
 # Add parent directory to the sys.path (list of directories where Python is going to search for modules when doing imports)
@@ -17,7 +19,6 @@ sys.path.append(parent_dir)
 from RAG.prompt import PROMPT, EXAMPLES
 from RAG.contextualize_prompt import CONTEXTUALIZE_PROMPT
 from loader.vectorstore import VectorStore
-from store.data.models.subjects import SubjectModel
 from store.data.models.lessons import LessonModel
 from loader.vectorstore import VectorStore
 
@@ -87,16 +88,8 @@ def initialize_prompt():
 
     return prompt
 
-def format_docs(docs):
-    context = ""
-    for i, doc in enumerate(docs, start=1):
-        context += f"CHUNK NUMBER {i}: \n"
-        context += "Content: " + doc.page_content + "\n"
-        lessonId = doc.metadata['lesson_id']
-        lesson = LessonModel().get(lessonId, True)
-        context += "Subject: " + lesson["subject"]['name'] + "\n"
-        context += "Lesson: " + lesson['name'] + "\n\n"
-    return context
+def initialize_document_prompt():
+    return PromptTemplate(input_variables=["page_content", "subject", "lesson"], template="Content: {page_content}\nSubject: {subject}\nLesson: {lesson}")
 
 @traceable
 def rag(query, chat_history):
@@ -106,10 +99,13 @@ def rag(query, chat_history):
 
     prompt = initialize_prompt()
 
-    question_answer_chain = create_stuff_documents_chain(llm, prompt)
+    document_prompt = initialize_document_prompt()
+
+    question_answer_chain = create_stuff_documents_chain(llm, prompt, document_prompt=document_prompt)
     # create_stuff_documents_chain: Creates a chain for passing a list of Documents (context) to a model.
     # It generates a question_answer_chain.
     # Input keys: context, chat_history, and input.
+    # question_answer_chain = custom_stuff_documents_chain(llm, prompt)
 
     rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
     # create_retrieval_chain: Creates retrieval chain that retrieves documents and then passes them on.
