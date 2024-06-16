@@ -1,0 +1,2452 @@
+[
+    {
+        "text": " Bueno, buen día. Como ustedes saben este del curso de GAL2, yo soy responsable. Mi nombre",
+        "start": 0.0,
+        "end": 28.0
+    },
+    {
+        "text": " es Gustavo Garberof. Vamos a estar en E, así que cualquier cosa escribe en ahí. De todas",
+        "start": 28.0,
+        "end": 46.84
+    },
+    {
+        "text": " maneras, el mail es GAL2, a roba finge doy. Bien, como les dije, yo soy responsable y",
+        "start": 46.84,
+        "end": 64.76
+    },
+    {
+        "text": " viven a gubitosi, otra ausente de teórico, es la coordinadora. El curso trata sobre transformaciones",
+        "start": 64.76,
+        "end": 72.72
+    },
+    {
+        "text": " lineales en particular transformaciones lineales de un espacio en el mismo espacio, y son los que se",
+        "start": 72.72,
+        "end": 77.72
+    },
+    {
+        "text": " llaman operadores lineales, y vamos a ver varias propiedades de descomposición de operadores lineales",
+        "start": 77.72,
+        "end": 83.36
+    },
+    {
+        "text": " que son útiles en un montón de contextos. Como todos los cursos, hay dos parciales, se",
+        "start": 83.36,
+        "end": 91.6
+    },
+    {
+        "text": " sonera con 60 puntos de 100, no es que eso es como siempre, el primer parcial del 40, el segundo",
+        "start": 91.6,
+        "end": 97.36
+    },
+    {
+        "text": " parcial de 60, el formato todavía no está definido, lo iremos definiendo más cerca de las fechas,",
+        "start": 97.36,
+        "end": 102.52
+    },
+    {
+        "text": " pero van a ser seguramente multiplopsión verdadero falso y eventualmente alguna cosita de desarrollo,",
+        "start": 102.52,
+        "end": 108.24
+    },
+    {
+        "text": " eso dependerá. Y el material que vamos a usar es el libro rojo, el libro rojo que es un libro",
+        "start": 108.24,
+        "end": 122.36
+    },
+    {
+        "text": " escrito por los 200 de ingeniería, de la institución matemática, casi ya bastante tiempo,",
+        "start": 122.36,
+        "end": 128.76
+    },
+    {
+        "text": " ese es el libro aquí. Esto está disponible en PDF, o también en la librería abajo, y hay materia",
+        "start": 128.76,
+        "end": 137.92
+    },
+    {
+        "text": " suplementario, que esto lo vamos a usar más adelante, hay temas que los vamos a dar de acá y",
+        "start": 137.92,
+        "end": 149.4
+    },
+    {
+        "text": " el libro rojo, estos material suplementario está colgado en la página EBA. Sí, así que si",
+        "start": 149.4,
+        "end": 154.96
+    },
+    {
+        "text": " entran ahí, cuando lo presicen, están los archivos PDF y pueden descargar todo el material.",
+        "start": 154.96,
+        "end": 161.8
+    },
+    {
+        "text": " ¿Qué otra cosa? Bueno, el curso, como ven aquí, va a ser un teórico, va a ser",
+        "start": 162.84,
+        "end": 168.0
+    },
+    {
+        "text": " desfilmado por los estudiantes de OpenFing, así que regularmente van a poner las clases disponibles",
+        "start": 168.0,
+        "end": 177.72
+    },
+    {
+        "text": " para todos los estudiantes. Estamos, no sé si alguna pregunta aquí en la serie, algún comentario,",
+        "start": 177.72,
+        "end": 184.44
+    },
+    {
+        "text": " cuestionarios, no vamos a poner tu ciudad, solamente trabajos prácticos y este es la parcial.",
+        "start": 188.76,
+        "end": 196.12
+    },
+    {
+        "text": " Y no es un curso complicado, así que no deberían tener más y tres problemas para seguirlo.",
+        "start": 198.0,
+        "end": 206.64
+    },
+    {
+        "text": " Es este sí, se presisa todo lo que han visto en Galu 1, además vamos a comenzar con un repaso",
+        "start": 206.64,
+        "end": 213.32
+    },
+    {
+        "text": " de cuestiones de Galu 1, de transformaciones lineales, un repaso muy rápido y todo el curso va",
+        "start": 213.32,
+        "end": 218.72
+    },
+    {
+        "text": " a ser sobre operadores niñas, y matrices, son su equivalentes. Bueno, alguna cosita, entonces",
+        "start": 218.72,
+        "end": 232.24
+    },
+    {
+        "text": " vamos a hacer una cosa, vamos a empezar con un rápido repaso, esto yo asumo que todo el mundo",
+        "start": 235.76,
+        "end": 242.68
+    },
+    {
+        "text": " está familiarizado con los conceptos de Galu 1, transformaciones lineales en particular que vamos a",
+        "start": 242.68,
+        "end": 250.6
+    },
+    {
+        "text": " empezar por ahí, así que vamos a hacer un repaso muy rápido de cuestiones que tienen que ver con",
+        "start": 250.6,
+        "end": 256.68
+    },
+    {
+        "text": " matrices asociadas a base, este cambio de base y ese tipo de cosas. Estamos, todo esto lo voy a",
+        "start": 256.68,
+        "end": 263.44
+    },
+    {
+        "text": " dar rápido porque se supone que ustedes ya lo maneja, entonces vamos a empezar,",
+        "start": 263.44,
+        "end": 269.16
+    },
+    {
+        "text": " se ve ahí el pizarro, no se está medio, se ve, se ve en los dibujos, no, pues está",
+        "start": 273.08,
+        "end": 279.68
+    },
+    {
+        "text": " en el pizarro, está medio sucio, tenemos entonces un espacio vectorial acá, ve, muy complicado,",
+        "start": 279.68,
+        "end": 288.56
+    },
+    {
+        "text": " un espacio vectorial, W y vamos a considerar una base de acá y una base de acá,",
+        "start": 288.56,
+        "end": 298.38
+    },
+    {
+        "text": " vamos a hacer un repaso sobre qué es la tras la matriz asociada a una transformación",
+        "start": 298.38,
+        "end": 303.88
+    },
+    {
+        "text": " lineal, dadas las bases, y entonces supongamos que yo tengo acá una base cuyos",
+        "start": 303.88,
+        "end": 312.24
+    },
+    {
+        "text": " de los vectors on, V1, V2 hasta Vn, esto es una base de V, vamos a trabajar casi siempre en",
+        "start": 312.24,
+        "end": 320.8
+    },
+    {
+        "text": " dimensión finita, por eso tengo un número finito de vectores en la base, eventualmente cuando",
+        "start": 320.8,
+        "end": 326.72
+    },
+    {
+        "text": " uno trabaja en dimensiones infinitas hay algunos problemas técnicos y hay resultados que valen",
+        "start": 326.72,
+        "end": 330.56
+    },
+    {
+        "text": " dimensión finita pero no en dimensión finita, hay que tener algún cuyado con eso, pero nosotros",
+        "start": 330.56,
+        "end": 335.44
+    },
+    {
+        "text": " a menos que se llega a lo contrario vamos a trabajar siempre en dimensión finita, entonces",
+        "start": 335.44,
+        "end": 340.72
+    },
+    {
+        "text": " tengo una base de acá, este espacio tiene dimensiones y tengo una base de acá que le llamo",
+        "start": 340.72,
+        "end": 346.44000000000005
+    },
+    {
+        "text": " W1, W2 hasta Wm y esto es una base del espacio W, entonces tengo esos dos espacios vectoriales",
+        "start": 346.44000000000005,
+        "end": 360.52000000000004
+    },
+    {
+        "text": " sobre el mismo cuerpo, reales o complejos, lo que fuera y tengo una transformación lineal",
+        "start": 360.52000000000004,
+        "end": 365.28000000000003
+    },
+    {
+        "text": " de VnW, transformación lineal ustedes saben lo que es, es una función de acá aca que opera",
+        "start": 366.28,
+        "end": 373.79999999999995
+    },
+    {
+        "text": " linealmente en las combinaciones lineales de vectora acá, te aplicado una combinación lineal",
+        "start": 373.79999999999995,
+        "end": 379.0
+    },
+    {
+        "text": " acá me da la combinación lineal de las P acá, entonces cuál es la matriz asociada a esa",
+        "start": 379.0,
+        "end": 386.08
+    },
+    {
+        "text": " transformación lineal en las bases hay V, eso lo han visto, se acuerdan como es eso, como se",
+        "start": 386.08,
+        "end": 391.0
+    },
+    {
+        "text": " construyer, yo quiero construir da la transformación lineal T y las bases hay V de los espacios",
+        "start": 391.0,
+        "end": 407.88
+    },
+    {
+        "text": " vectoriales quiero construir la matriz asociada a la transformación lineal T en las bases",
+        "start": 407.88,
+        "end": 421.32
+    },
+    {
+        "text": " hay V, base de la espacio de partida, base V del espacio de llegada, como se construye eso,",
+        "start": 421.32,
+        "end": 435.76
+    },
+    {
+        "text": " bueno la construcción es muy sencilla, yo tengo que aplicarle T a cada uno de los elementos",
+        "start": 435.76,
+        "end": 441.12
+    },
+    {
+        "text": " de esta base, están ordenados aquí los elementos y una vez que aplico T a V1 por ejemplo",
+        "start": 441.12,
+        "end": 447.92
+    },
+    {
+        "text": " lo descompongo como combinación lineal de estos elementos de la base, entonces lo que hago",
+        "start": 447.92,
+        "end": 452.48
+    },
+    {
+        "text": " lo siguiente, la matriz esta que se denota así, T, la matriz ya T usando base de partida",
+        "start": 452.48,
+        "end": 461.64
+    },
+    {
+        "text": " y base del espacio de llegada a V se construye así, primero considero el primer vector",
+        "start": 461.64,
+        "end": 466.59999999999997
+    },
+    {
+        "text": " acá el V1, esto ya lo han visto, ustedes por lo estoy repetiendo, le aplicamos T a V1,",
+        "start": 466.59999999999997,
+        "end": 475.15999999999997
+    },
+    {
+        "text": " esto es un elemento del espacio de llegada, entonces al ese elemento del espacio de llegada",
+        "start": 475.15999999999997,
+        "end": 480.12
+    },
+    {
+        "text": " lo descompongo como combinación lineal de los elementos de la base, eso me da una única",
+        "start": 480.12,
+        "end": 483.96
+    },
+    {
+        "text": " de composición lineal y puedo calcular las coordenadas, entonces a esas coordenadas las",
+        "start": 483.96,
+        "end": 488.08
+    },
+    {
+        "text": " cuelgo ahí como una columna, entonces lo que estoy poniendo acá son las coordenadas en la base",
+        "start": 488.2,
+        "end": 495.8
+    },
+    {
+        "text": " V del vector T en V1, bien y ese conjunto coordenada las cuelgo acá, y así sí, ahora voy a V2,",
+        "start": 495.8,
+        "end": 505.09999999999997
+    },
+    {
+        "text": " le aplico T a V2, ya he compono a las coordenadas y con eso me fabrico la segunda columna,",
+        "start": 505.09999999999997,
+        "end": 512.12
+    },
+    {
+        "text": " y así voy hasta llegar a T, en VN le aplico lo descompongo en la base V calculo las coordenadas",
+        "start": 512.12,
+        "end": 529.52
+    },
+    {
+        "text": " y las colgocas. Entonces esa es la matriz, la asociada T en las bases A y R, el repaso",
+        "start": 529.52,
+        "end": 535.44
+    },
+    {
+        "text": " de gálumen. ¿Qué tamaño tiene esta matriz? Fíjense que es una matriz donde los elementos",
+        "start": 535.44,
+        "end": 542.8800000000001
+    },
+    {
+        "text": " son escalares, el cuerpo en el que estamos trabajando, reales o complejos, dependiendo",
+        "start": 542.8800000000001,
+        "end": 549.6800000000001
+    },
+    {
+        "text": " el cuerpo de escalares acá y acá. ¿Cuál es el tamaño de esa matriz? Bueno tenemos",
+        "start": 549.6800000000001,
+        "end": 555.2
+    },
+    {
+        "text": " N columnas y acá cuantas filas tenemos, bueno tantas como coordenadas tenemos acá,",
+        "start": 555.2,
+        "end": 563.2
+    },
+    {
+        "text": " tenemos M filas y N columnas, esto es una matriz M por E, esta es la dimensión del espacio",
+        "start": 563.2,
+        "end": 573.0
+    },
+    {
+        "text": " llegada y esta es la dimensión del espacio de partida. Y un punto importante que ustedes",
+        "start": 573.0,
+        "end": 578.82
+    },
+    {
+        "text": " ya conocen es que si yo les doy esta matriz, ustedes pueden calcular, si yo les doy esta",
+        "start": 578.82,
+        "end": 583.48
+    },
+    {
+        "text": " matriz y las bases A y B, ustedes pueden calcular la transformación inalté, porque con las",
+        "start": 583.48,
+        "end": 590.88
+    },
+    {
+        "text": " coordenadas estas me fabrico T1, con estas T2, TnVN, conozco T en cada elemento de la base",
+        "start": 590.88,
+        "end": 598.36
+    },
+    {
+        "text": " y yo sé que hay una única transformación inalté que así inacada elemento de la base, un",
+        "start": 598.36,
+        "end": 602.64
+    },
+    {
+        "text": " vector acá. Vamos, ¿Qué esto acá caracteriza completamente",
+        "start": 602.64,
+        "end": 607.84
+    },
+    {
+        "text": " una transformación inalta? Acá viene el primer comentario, trabajamos en dimensión",
+        "start": 607.84,
+        "end": 612.36
+    },
+    {
+        "text": " finita para que estas matrices en matrices finitas, en dimensión infinita esto, ojalá",
+        "start": 612.36,
+        "end": 616.56
+    },
+    {
+        "text": " que se den alguna cuidad, no es usar las cosas así como así. Bueno, alguna pregunta",
+        "start": 616.56,
+        "end": 621.8399999999999
+    },
+    {
+        "text": " hasta acá, lo que la idea de esta primera clase repasar rápidamente algunas propiedades",
+        "start": 621.8399999999999,
+        "end": 629.42
+    },
+    {
+        "text": " de estas matrices de asociadas, porque vamos a usarlas todo el tiempo y después dar",
+        "start": 629.42,
+        "end": 634.5799999999999
+    },
+    {
+        "text": " alguna cuestión que algunos vieron y algunos no vieron en galuno que es matriz semescante.",
+        "start": 634.5799999999999,
+        "end": 643.3199999999999
+    },
+    {
+        "text": " La primera clase va a ser todo repaso de galuno, es para aceditar el ceder. Me pregunta",
+        "start": 643.32,
+        "end": 651.44
+    },
+    {
+        "text": " si hay alguna duda. Bueno, vamos a ver propiedades, repasar propiedades. Propiedades que vamos",
+        "start": 651.44,
+        "end": 665.6800000000001
+    },
+    {
+        "text": " a usar todo el tiempo. Primera propiedad, suponemos que yo agarré un vector, cualquiera",
+        "start": 665.68,
+        "end": 690.92
+    },
+    {
+        "text": " de la espacio de partida, recordemos que esto, este dibujito, lo vamos a usar siempre,",
+        "start": 690.92,
+        "end": 697.92
+    },
+    {
+        "text": " es una transformación innal de V, V, supongamos bueno, y una base como decía acá, una base",
+        "start": 697.92,
+        "end": 704.16
+    },
+    {
+        "text": " A y acá una base B. Entonces supongamos que yo agarré un vector cualquiera, en el espacio",
+        "start": 704.16,
+        "end": 720.56
+    },
+    {
+        "text": " de partida, un vector B, y le aplico T, con lo cual voy a parar al espacio llegada W,",
+        "start": 720.56,
+        "end": 729.4799999999999
+    },
+    {
+        "text": " entonces yo tengo acá por un lado T y por el otro lado tengo B. Vamos a hacer un espacio",
+        "start": 729.4799999999999,
+        "end": 739.04
+    },
+    {
+        "text": " ahí. Entonces la pregunta es, ¿qué relaciona entre las coordenadas de acá de T en B en esta base,",
+        "start": 739.04,
+        "end": 747.4399999999999
+    },
+    {
+        "text": " en la base del espacio llegada y las coordenadas de B en esta base? Vamos a hacer un lugar",
+        "start": 747.44,
+        "end": 762.24
+    },
+    {
+        "text": " así como acá, y las coordenadas de B en el espacio de partida, ¿qué relaciona",
+        "start": 762.24,
+        "end": 776.64
+    },
+    {
+        "text": " entre eso? ¿cómo tengo una partida de las otras? Exacto, está acá por las coordenadas,",
+        "start": 776.64,
+        "end": 795.6
+    },
+    {
+        "text": " exactamente. O sea, estas coordenadas, estos piensenlo como un vector, esto es un vector",
+        "start": 795.6,
+        "end": 802.24
+    },
+    {
+        "text": " que tiene M componentes y este es un vector que tiene N componentes. Lo pongo así como",
+        "start": 802.24,
+        "end": 808.84
+    },
+    {
+        "text": " columna, siempre gavlo de vectores, lo pongo como columna. Entonces, ¿cómo tengo este vector,",
+        "start": 808.84,
+        "end": 814.6
+    },
+    {
+        "text": " aparte este vector? Bueno, lo que tengo que hacer es multiplicar este vector columna a",
+        "start": 814.6,
+        "end": 819.48
+    },
+    {
+        "text": " la izquierda por la matriz cambio de base de A a B y eso justamente la matriz asociada",
+        "start": 819.48,
+        "end": 828.84
+    },
+    {
+        "text": " a T en A, no cambio de base, pero en la matriz asociada atén en las bases ahí. Es decir,",
+        "start": 828.84,
+        "end": 835.0400000000001
+    },
+    {
+        "text": " que una vez que yo tengo esta matriz, si yo quiero calcular las coordenadas de T en B en",
+        "start": 835.0400000000001,
+        "end": 839.88
+    },
+    {
+        "text": " esta base y conozco las coordenadas de B en esta, multiplico este vector columna por",
+        "start": 839.88,
+        "end": 845.2800000000001
+    },
+    {
+        "text": " esta matriz, yo tengo eso lo ambido. Esa es la primera propiedad, eso lo vamos a usar",
+        "start": 845.2800000000001,
+        "end": 851.52
+    },
+    {
+        "text": " todo el tiempo, hay que tener acá cuidado con el orden en que se ponen las bases,",
+        "start": 851.52,
+        "end": 855.88
+    },
+    {
+        "text": " como eso como siempre, acá es base del espacio de partida, acá es base del espacio de",
+        "start": 855.88,
+        "end": 859.72
+    },
+    {
+        "text": " llegar. Segunda propiedad, supongamos ahora que yo tengo en lugar de una transformación",
+        "start": 859.72,
+        "end": 873.4
+    },
+    {
+        "text": " lineal, como la que tengo ahí, dos transformaciones lineales, una que le llamo T y otra que le",
+        "start": 873.4,
+        "end": 879.8
+    },
+    {
+        "text": " llamo E. Esta propiedad son triviales de demostrar, están en el libro y las han visto,",
+        "start": 879.8,
+        "end": 888.4399999999999
+    },
+    {
+        "text": " por eso no las repito, no repito la demostrar. Entonces, si yo la tengo dos transformaciones",
+        "start": 888.4399999999999,
+        "end": 896.9599999999999
+    },
+    {
+        "text": " lineales, T y S, lo que se prueba es que si yo considero la transformación lineal,",
+        "start": 896.9599999999999,
+        "end": 904.0
+    },
+    {
+        "text": " las temas S, o sea la suma está a otras transformaciones lineales y me fijo, cuál es la",
+        "start": 904.0,
+        "end": 908.36
+    },
+    {
+        "text": " matria sociedad, temas S, base de partida y base de llegar a B, esta matriz es la suma",
+        "start": 908.36,
+        "end": 916.68
+    },
+    {
+        "text": " de dos matrices, una es la matria sociedad T, en las bases A y B y otra es la matria sociedad",
+        "start": 916.68,
+        "end": 925.12
+    },
+    {
+        "text": " S, en las bases A y B. Eso también es una propiedad muy sencilla de nota, o sea que",
+        "start": 925.12,
+        "end": 930.92
+    },
+    {
+        "text": " la matria sociedad a una suma de transformaciones lineales es la suma de las matrices. Una tercera",
+        "start": 930.92,
+        "end": 954.16
+    },
+    {
+        "text": " propiedad, también bien sencilla, es que yo ahora tengo un escalar y me fabrico alpha",
+        "start": 954.16,
+        "end": 964.12
+    },
+    {
+        "text": " por T donde alpha es un escalar, o sea, alpha está en el cuerpo de escalar, un número real",
+        "start": 964.12,
+        "end": 974.0
+    },
+    {
+        "text": " o un número complejo, son los escalar que nosotros vamos a usar en el curso. Entonces,",
+        "start": 974.0,
+        "end": 979.68
+    },
+    {
+        "text": " yo me puedo construir la transformación lineal alpha por T, esta transformación lineal",
+        "start": 979.68,
+        "end": 984.12
+    },
+    {
+        "text": " tiene matrias sociadas en A y B que es la matria sociedad T en A y B multiplicada por",
+        "start": 984.12,
+        "end": 993.52
+    },
+    {
+        "text": " el escalar alpha, esto quiere decir que esta matriz la multiplico por alpha en cada una",
+        "start": 993.52,
+        "end": 997.04
+    },
+    {
+        "text": " su entrada. Bien, y una última propiedad antes de ir a ver las, bueno antes de seguir con",
+        "start": 997.04,
+        "end": 1009.24
+    },
+    {
+        "text": " otras cuestiones, es la que tiene que ver con composición de funciones de transformaciones",
+        "start": 1009.24,
+        "end": 1015.16
+    },
+    {
+        "text": " lineales que esta sí la vamos a usar todo todo el tiempo, o por lo menos en esta primera",
+        "start": 1015.16,
+        "end": 1019.48
+    },
+    {
+        "text": " clas. Vamos entonces, esta suma de transformaciones",
+        "start": 1019.48,
+        "end": 1027.48
+    },
+    {
+        "text": " lineales, aquella multiplicación de transformaciones lineales por un escalar y la última tiene que",
+        "start": 1027.48,
+        "end": 1032.04
+    },
+    {
+        "text": " ver con esto.",
+        "start": 1032.04,
+        "end": 1035.04
+    },
+    {
+        "text": " Vamos a poner otro color.",
+        "start": 1041.52,
+        "end": 1044.52
+    },
+    {
+        "text": " Esta primera clase van a hacer un montón de dibujos y casi ninguna demostración. Entonces,",
+        "start": 1049.48,
+        "end": 1063.96
+    },
+    {
+        "text": " quiero componer transformaciones lineales, entonces ahora tengo tres espacios vectoriales,",
+        "start": 1063.96,
+        "end": 1070.08
+    },
+    {
+        "text": " lo que le llamo U, otro que le llamo B y otro que le llamo W, todos los espacios vectoriales",
+        "start": 1070.08,
+        "end": 1082.0
+    },
+    {
+        "text": " sobre el mismo cuerpo y después tengo una base acá que le vamos a llamar a, una base",
+        "start": 1082.0,
+        "end": 1091.9199999999998
+    },
+    {
+        "text": " acá que le vamos a llamar de la larga y una base acá que le vamos a llamarse. Entonces,",
+        "start": 1091.92,
+        "end": 1102.4
+    },
+    {
+        "text": " tengo tres espacios vectoriales con sus respectivas bases, tres espacios vectoriales de dimensión",
+        "start": 1102.4,
+        "end": 1107.8400000000001
+    },
+    {
+        "text": " finita y después tengo una transformación lineal de acá acá que le voy a llamar E, y una",
+        "start": 1107.8400000000001,
+        "end": 1116.1200000000001
+    },
+    {
+        "text": " transformación lineal de acá acá que le voy a llamar T. Entonces, con esas dos transformaciones",
+        "start": 1116.12,
+        "end": 1126.6
+    },
+    {
+        "text": " lineales yo me puedo fabricar una nueva transformación lineal que va del espacio a este, al espacio final",
+        "start": 1126.6,
+        "end": 1132.2399999999998
+    },
+    {
+        "text": " este, que es la composición de T con E, es decir primero aplicó E y después aplicó T, esa",
+        "start": 1132.2399999999998,
+        "end": 1137.84
+    },
+    {
+        "text": " nueva transformación lineal es esto y la transformación T compuesta con E, que va de este espacio a",
+        "start": 1137.84,
+        "end": 1146.1599999999999
+    },
+    {
+        "text": " este espacio y es una transformación lineal. Entonces, la propiedad que me interesa ahora me dice",
+        "start": 1146.1599999999999,
+        "end": 1159.12
+    },
+    {
+        "text": " lo siguiente, si yo me fijo la matria asociada ahora es la transformación T compuesta con E,",
+        "start": 1159.12,
+        "end": 1167.24
+    },
+    {
+        "text": " que es donde va del espacio U al espacio W, entonces uso como base del espacio partida y como base",
+        "start": 1167.32,
+        "end": 1174.4
+    },
+    {
+        "text": " el espacio llegada a C. Bueno, esa matriz tendrá un tamaño que tendrá que ver con la dimensión",
+        "start": 1174.4,
+        "end": 1185.64
+    },
+    {
+        "text": " de este espacio y de este espacio. Lo importante es que esa matriz la puedo obtener como producto de",
+        "start": 1185.64,
+        "end": 1191.1200000000001
+    },
+    {
+        "text": " dos matrices, como se obtiene esto, se acuerdan, tengo dos matrices, una sociedad T y otra sociedad S",
+        "start": 1191.12,
+        "end": 1202.76
+    },
+    {
+        "text": " en ese orden, el orden que está en acá, esta matria sociedad S, la S va de acá acá, entonces",
+        "start": 1202.76,
+        "end": 1210.3799999999999
+    },
+    {
+        "text": " uso como base del espacio de partida y como base el espacio llegada a B. Y esta matriz asociada T,",
+        "start": 1210.38,
+        "end": 1222.2600000000002
+    },
+    {
+        "text": " T va de acá hasta acá, uso como base de partida a B y como espacio llegase, estas matrices no necesariamente",
+        "start": 1222.2600000000002,
+        "end": 1229.9
+    },
+    {
+        "text": " son del mismo tamaño, pero son matrices que puedo multiplicar, como se llama esa matriz de",
+        "start": 1229.9,
+        "end": 1234.1000000000001
+    },
+    {
+        "text": " Sonca Macuero, conformables, conformables, bien, entonces multiplico esta matriz, por esta matriz",
+        "start": 1234.1,
+        "end": 1241.74
+    },
+    {
+        "text": " yo obtengo la matriz de la compuesta, de la transformación compuesta, estamos teniendo siempre",
+        "start": 1241.74,
+        "end": 1247.26
+    },
+    {
+        "text": " cuidado con el orden en que hago las cosas, bueno esta propia la vamos a usar bastante en esta primera clase,",
+        "start": 1247.26,
+        "end": 1255.34
+    },
+    {
+        "text": " bueno todo esto lo han visto, es simplemente para empezar a familiarizarnos con la notación y con las",
+        "start": 1256.34,
+        "end": 1265.8999999999999
+    },
+    {
+        "text": " cuestiones que vamos a estudiar en el curso, por lo menos en esta primera parte, bueno yo dije",
+        "start": 1265.8999999999999,
+        "end": 1272.34
+    },
+    {
+        "text": " que el curso va a tratar sobre mayoritariamente sobre operadores lineales, bueno que es un operador",
+        "start": 1272.34,
+        "end": 1279.6599999999999
+    },
+    {
+        "text": " lineal, que diferencia entre un operador lineal y una transformación lineal, no hay ninguna diferencia,",
+        "start": 1279.66,
+        "end": 1285.22
+    },
+    {
+        "text": " la única diferencia es que, bueno no hay ninguna, la única diferencia es que un operador",
+        "start": 1285.22,
+        "end": 1293.1000000000001
+    },
+    {
+        "text": " lineal tiene el mismo espacio de partida que el espacio es llegado, entonces definición,",
+        "start": 1293.1000000000001,
+        "end": 1298.18
+    },
+    {
+        "text": " cuando yo tengo una transformación lineal T, que va del espacio de partida B al mismo espacio",
+        "start": 1298.18,
+        "end": 1311.94
+    },
+    {
+        "text": " llegada, una transformación de B en B, obviamente esto transformación lineal,",
+        "start": 1311.94,
+        "end": 1321.22
+    },
+    {
+        "text": " esto se llama,",
+        "start": 1325.8200000000002,
+        "end": 1327.3
+    },
+    {
+        "text": " es un capricho, por eso simplemente para tener en cuenta que el espacio de partida y el espacio",
+        "start": 1334.74,
+        "end": 1340.5
+    },
+    {
+        "text": " llegada son los mismos, y en todo el curso vamos a trabajar con gran parte del curso casi todo",
+        "start": 1340.5,
+        "end": 1346.98
+    },
+    {
+        "text": " lo que siguen las próximas clases para hacer operadores lineales, transformaciones de un espacio",
+        "start": 1346.98,
+        "end": 1352.62
+    },
+    {
+        "text": " en sí mismo, con lo cual las matrices asociadas, si yo una base en el espacio B van a ser matrices",
+        "start": 1352.62,
+        "end": 1360.9
+    },
+    {
+        "text": " cuadradas, entonces al ver lo que casi todo el curso va a trabajar con operadores lineales y o con",
+        "start": 1360.9,
+        "end": 1367.54
+    },
+    {
+        "text": " esos correspondientes matrices asociadas, que son matrices cuadras, bueno hay un par de cositas que",
+        "start": 1367.54,
+        "end": 1377.94
+    },
+    {
+        "text": " quiero dar antes para completar la clase de hoy, que como dije va esto va a ser la clase 1, la",
+        "start": 1377.94,
+        "end": 1385.94
+    },
+    {
+        "text": " clase 1 se torre paso, salvo alguna cuestión que quizás algunos no vieron,",
+        "start": 1385.94,
+        "end": 1390.26
+    },
+    {
+        "text": " la primera cuestión tiene que ver con qué pasa cuando uno cambia las bases, es decir qué pasa si",
+        "start": 1397.54,
+        "end": 1407.26
+    },
+    {
+        "text": " yo en lugar de usar la base A, uso otra base acá y acá uso otra base, como cambia las matrices",
+        "start": 1407.26,
+        "end": 1414.18
+    },
+    {
+        "text": " asociadas cuando yo cambio la base, entonces esto también algunos lo vieron, algunos no lo vieron,",
+        "start": 1414.18,
+        "end": 1420.94
+    },
+    {
+        "text": " pero lo vamos a dar a modo de repaso,",
+        "start": 1420.94,
+        "end": 1425.26
+    },
+    {
+        "text": " muy bien, entonces lo que yo quiero ver es lo siguiente,",
+        "start": 1435.18,
+        "end": 1439.5
+    },
+    {
+        "text": " volvemos, nos olvidemos por un momento los operadores lineales y volvemos a las",
+        "start": 1442.8600000000001,
+        "end": 1448.3400000000001
+    },
+    {
+        "text": " transformaciones lineales, es decir un espacio B en un espacio W, cualquiera, supongamos que tengo",
+        "start": 1448.34,
+        "end": 1454.82
+    },
+    {
+        "text": " dos bases acá, una base que le vamos a llamar a, yo otra base que le vamos a llamar a",
+        "start": 1454.82,
+        "end": 1463.6599999999999
+    },
+    {
+        "text": " pil de guanyoki, tengo dos bases, y lo mismo acá tengo una base B,",
+        "start": 1463.66,
+        "end": 1474.78
+    },
+    {
+        "text": " y tengo una base B, tengo dos bases acá y dos bases acá, y tengo, como siempre una",
+        "start": 1479.98,
+        "end": 1491.7
+    },
+    {
+        "text": " transformación niña que va de acá, por acá,",
+        "start": 1491.7,
+        "end": 1495.98
+    },
+    {
+        "text": " entonces la pregunta natural es si yo tengo dos bases en el espacio de partida y dos bases en el",
+        "start": 1502.7,
+        "end": 1509.1000000000001
+    },
+    {
+        "text": " espacio llegada, que relaciona a brante la matriz associada T, usando acá como bases A y B,",
+        "start": 1509.1000000000001,
+        "end": 1516.3
+    },
+    {
+        "text": " con la matriz associada T usando como base A y B, estamos, que son dos matrices del mismo tamaño,",
+        "start": 1516.3,
+        "end": 1523.06
+    },
+    {
+        "text": " y acá hay un truquito que me permite construir esa matriz cambio de base, ese cambio de base de manera",
+        "start": 1526.54,
+        "end": 1531.58
+    },
+    {
+        "text": " muy sencilla, entonces la pregunta es qué relación",
+        "start": 1531.58,
+        "end": 1537.1399999999999
+    },
+    {
+        "text": " a entre la matriz associada T en las bases A y B, y la matriz associada T en las bases A y",
+        "start": 1537.14,
+        "end": 1552.66
+    },
+    {
+        "text": " guanyoki, sí perfecto, buena clasación, ella me acá me olvide poner esto, esto es doble,",
+        "start": 1552.66,
+        "end": 1564.42
+    },
+    {
+        "text": " perfecto, gracias, pero de espacio llegada, vamos,",
+        "start": 1564.42,
+        "end": 1568.94
+    },
+    {
+        "text": " entonces qué relación a entre esta matriz y esta matriz, que son matriz de el mismo tamaño,",
+        "start": 1574.1000000000001,
+        "end": 1579.42
+    },
+    {
+        "text": " solamente estoy cambiando las bases en el espacio de partida y en el espacio llegada, y ahí hay una",
+        "start": 1580.02,
+        "end": 1586.02
+    },
+    {
+        "text": " manera muy sencilla de construir la relación que es más fácil de deducirla que memorizarla,",
+        "start": 1586.02,
+        "end": 1595.9
+    },
+    {
+        "text": " todo lo que uno tiene que hacer es considerar los operadores y identidad, recuerden que el operador",
+        "start": 1595.9,
+        "end": 1602.18
+    },
+    {
+        "text": " y identidad es un operador que me agarra, es una transformación niñal de un espacio en sí mismo,",
+        "start": 1602.18,
+        "end": 1607.22
+    },
+    {
+        "text": " que a cada elemento B le da el mismo elemento, el operador, eso es el operador y identidad,",
+        "start": 1607.74,
+        "end": 1613.18
+    },
+    {
+        "text": " entonces por un lado vamos a considerar el operador y identidad acá en este espacio vectorial,",
+        "start": 1613.18,
+        "end": 1622.78
+    },
+    {
+        "text": " le voy a llamar así, es una transformación niñal que va de B en sí mismo,",
+        "start": 1622.78,
+        "end": 1627.38
+    },
+    {
+        "text": " este le vamos a llamar el operador y identidad en B, o las transformaciones y identidad,",
+        "start": 1628.18,
+        "end": 1638.38
+    },
+    {
+        "text": " esto es truquito muy lindo, transformaciones y identidad en los espacios B y no B,",
+        "start": 1638.38,
+        "end": 1660.2600000000002
+    },
+    {
+        "text": " que la transformación y identidad en el espacio vectorial B es aquella transformación niñal que",
+        "start": 1660.26,
+        "end": 1668.42
+    },
+    {
+        "text": " a cada vector de B le da el mismo vector, una cosa tan sencilla como eso, una transformación niñal",
+        "start": 1668.42,
+        "end": 1677.62
+    },
+    {
+        "text": " de este espacio en sí mismo que a cada vector de la misma vector y que la transformación y identidad",
+        "start": 1677.62,
+        "end": 1684.78
+    },
+    {
+        "text": " en WB lo mismo, pero acá en este espacio es la transformación niñal que a cada elemento de WB",
+        "start": 1684.78,
+        "end": 1695.58
+    },
+    {
+        "text": " le da el mismo elemento, vamos a fíjense que estas transformaciones son operadores niñales que",
+        "start": 1695.58,
+        "end": 1705.58
+    },
+    {
+        "text": " operan sobre diferentes espacios, esto operan sobre el espacio B, el espacio de partida y esto operan",
+        "start": 1705.58,
+        "end": 1711.26
+    },
+    {
+        "text": " sobre el espacio no le ve, por eso les pongo un subíndice acá que me dicen de",
+        "start": 1711.26,
+        "end": 1716.3799999999999
+    },
+    {
+        "text": " operando cuando le muy bien tienen general y que de claro en donde está fuera operando le vamos a",
+        "start": 1716.3799999999999,
+        "end": 1721.02
+    },
+    {
+        "text": " sacar esos subidos y ahora qué diablos hacemos",
+        "start": 1721.02,
+        "end": 1725.5
+    },
+    {
+        "text": " fíjense que se cumple lo siguiente",
+        "start": 1732.1,
+        "end": 1734.02
+    },
+    {
+        "text": " suponemos que yo garrro un vector acá",
+        "start": 1741.26,
+        "end": 1749.06
+    },
+    {
+        "text": " y primero le aplico la identidad en B, me sigue quedando en mi vector, o sea que si yo agarrro",
+        "start": 1753.06,
+        "end": 1760.22
+    },
+    {
+        "text": " la transformación y en B y le aplico igual que el vector de acá me queda en mi vector",
+        "start": 1765.9,
+        "end": 1770.58
+    },
+    {
+        "text": " después una vez que apliques la transformación le aplico T o sea estoy componiendo esto con T",
+        "start": 1771.26,
+        "end": 1777.82
+    },
+    {
+        "text": " la primera transformación agarrro de acá un vector me da el mismo vector, compongo con T",
+        "start": 1783.26,
+        "end": 1788.3799999999999
+    },
+    {
+        "text": " vengo a parar acá y una vez que vine a parar acá a ese vector le aplico esta y en WB entonces me",
+        "start": 1788.3799999999999,
+        "end": 1795.06
+    },
+    {
+        "text": " sigue dando el mismo vector aquí de acá entonces qué me da si hago esta triple composición",
+        "start": 1795.06,
+        "end": 1801.62
+    },
+    {
+        "text": " qué me da si hago esa triple composición es decir agarrro un vector acá le aplico la identidad",
+        "start": 1807.6599999999999,
+        "end": 1814.54
+    },
+    {
+        "text": " que es el mismo vector le aplico T llego acá y a ese resultado le aplico la identidad y me",
+        "start": 1814.54,
+        "end": 1819.06
+    },
+    {
+        "text": " quedan mismo vector qué me da si hago eso a donde va a parar cada vector B al que le aplico esta",
+        "start": 1819.06,
+        "end": 1828.86
+    },
+    {
+        "text": " esta composición se entiende es así agarramos un paréntesis acá agarremos un vector cualquiera yo",
+        "start": 1828.86,
+        "end": 1841.4199999999998
+    },
+    {
+        "text": " le aplico la identidad a ese vector B a ese resultado le estoy aplicando T y a ese resultado le",
+        "start": 1841.42,
+        "end": 1855.3000000000002
+    },
+    {
+        "text": " estoy aplicando la identidad en WB qué me da eso tembés porque fíjense de entienda en B me da",
+        "start": 1855.3000000000002,
+        "end": 1866.18
+    },
+    {
+        "text": " el mismo vector qué es B cuando le aplico T me da T aplicado B y a esto yo te aplico la identidad",
+        "start": 1866.18,
+        "end": 1878.5
+    },
+    {
+        "text": " le entiendo W he aplicado esto me da este en B se entiende yo o sea compone estas tres cosas en",
+        "start": 1878.5,
+        "end": 1886.78
+    },
+    {
+        "text": " definitiva me da lo mismo que aplicarte directamente o sea que esto no es otra cosa que T es decir",
+        "start": 1886.78,
+        "end": 1896.58
+    },
+    {
+        "text": " arrancar de acá aplicarle la identidad que es lo mismo que no aplicar nada aplicarle a T llegar",
+        "start": 1898.34,
+        "end": 1903.78
+    },
+    {
+        "text": " acá y a este aplicar la identidad acá que lo mismo que no aplicar nada me da lo mismo que",
+        "start": 1903.78,
+        "end": 1907.3
+    },
+    {
+        "text": " vamos entonces ahí sí puedo aplicar el resultado que V y R cien que pasa con la",
+        "start": 1908.02,
+        "end": 1915.1399999999999
+    },
+    {
+        "text": " matriz sociedad esto usando ahora una composición de transformación que me va a dar un producto de",
+        "start": 1915.1399999999999,
+        "end": 1921.3799999999999
+    },
+    {
+        "text": " matriz a la sociedad se entiende entonces qué queda ahí",
+        "start": 1921.3799999999999,
+        "end": 1927.6599999999999
+    },
+    {
+        "text": " esto lo vamos a tener que",
+        "start": 1931.58,
+        "end": 1932.94
+    },
+    {
+        "text": " quíjense lo que sale ahí",
+        "start": 1937.5,
+        "end": 1939.1399999999999
+    },
+    {
+        "text": " es más engorroso esto escribir lo que entenderos digo esto es compone en una transformación",
+        "start": 1942.1399999999999,
+        "end": 1949.06
+    },
+    {
+        "text": " lineal con transformaciones que no me hacen nada",
+        "start": 1949.06,
+        "end": 1951.62
+    },
+    {
+        "text": " aplico la identidad de los mismos que si no aplicar nada",
+        "start": 1953.62,
+        "end": 1956.1
+    },
+    {
+        "text": " entonces fíjense lo siguiente",
+        "start": 1960.3,
+        "end": 1962.02
+    },
+    {
+        "text": " voy a ver la matriz sociedad",
+        "start": 1967.3,
+        "end": 1980.5
+    },
+    {
+        "text": " usando como base de partida año aquí y como base llegada venido",
+        "start": 1980.5,
+        "end": 1988.5
+    },
+    {
+        "text": " y a T lo escribo como esta composición",
+        "start": 1997.3,
+        "end": 2002.8999999999999
+    },
+    {
+        "text": " estamos",
+        "start": 2009.8999999999999,
+        "end": 2010.58
+    },
+    {
+        "text": " me están siguiendo hasta acá entonces antes de escribir lo que vaya por esta natación de esto",
+        "start": 2012.3799999999999,
+        "end": 2018.46
+    },
+    {
+        "text": " para mí también escribir sobre esta misma expresión yo tengo T base de partida año aquí",
+        "start": 2019.46,
+        "end": 2027.54
+    },
+    {
+        "text": " base llegada año aquí entonces tengo acá base de partida año aquí y base llegada venido",
+        "start": 2027.54,
+        "end": 2036.6200000000001
+    },
+    {
+        "text": " aquí pero tengo una composición entonces la matriz sociedad una composición lo que vimos",
+        "start": 2036.6200000000001,
+        "end": 2041.98
+    },
+    {
+        "text": " recién es que es el producto de la matriz sociedad después se lo siguiente qué tal se hago",
+        "start": 2041.98,
+        "end": 2047.54
+    },
+    {
+        "text": " lo siguiente este producto esa matriz entonces va a ser el producto 3 matricias",
+        "start": 2047.54,
+        "end": 2052.7
+    },
+    {
+        "text": " sociedad esta sociedad esta en las bases que me convene a usar si entonces esto va a ser",
+        "start": 2052.7,
+        "end": 2059.34
+    },
+    {
+        "text": " una primera matriz asociada y la identidad ya escribo la base todavía vamos arriba así",
+        "start": 2059.34,
+        "end": 2067.9
+    },
+    {
+        "text": " esta es una primera matriz no porque me queda la matriz sociedad esta es el producto de",
+        "start": 2067.9,
+        "end": 2072.46
+    },
+    {
+        "text": " una matriz ciudad esto por una matriz ciudad de esto por la matriz ciudad de esto después tengo",
+        "start": 2072.46,
+        "end": 2076.66
+    },
+    {
+        "text": " una matriz sociedad y después tengo una matriz asociada de la identidad donde me falta escribir",
+        "start": 2076.66,
+        "end": 2088.06
+    },
+    {
+        "text": " las bases todavía lo único que es es que la base de partida es año aquí la base llegada es",
+        "start": 2088.06,
+        "end": 2096.14
+    },
+    {
+        "text": " venido aquí o sea que la que viene acá al principio es todo es año aquí y la que viene acá al",
+        "start": 2096.14,
+        "end": 2101.46
+    },
+    {
+        "text": " final de todos es venido y en el medio pusa las bases que se me dé la gana pusa la a la año",
+        "start": 2101.46,
+        "end": 2110.9
+    },
+    {
+        "text": " aquí la velo es siempre que las usas de manera consistente si uso acá como vas a llegar a",
+        "start": 2110.9,
+        "end": 2116.2200000000003
+    },
+    {
+        "text": " ve acá te voy a poner como vas a llegar a ve si uso venido aquí te voy a poner venido",
+        "start": 2116.2200000000003,
+        "end": 2120.26
+    },
+    {
+        "text": " entonces que me comiene poner acá como yo quiero dar la relación que hay entre esto y esto me",
+        "start": 2121.3,
+        "end": 2127.42
+    },
+    {
+        "text": " comiene poner las cosas de tal manera que acá en el medio me quede esta si",
+        "start": 2127.42,
+        "end": 2132.42
+    },
+    {
+        "text": " sí otro error más sí sí sí la pusa la verdad es esto es multiplicada en este orden si",
+        "start": 2141.42,
+        "end": 2148.7400000000002
+    },
+    {
+        "text": " córricamente porque una cosa hablar y escribir al mismo tiempo a veces uno dice una cosa y",
+        "start": 2148.7400000000002,
+        "end": 2154.2200000000003
+    },
+    {
+        "text": " escribir a otro esto está bien corregido esto es la identidad en W acá lo primero que aplico",
+        "start": 2154.22,
+        "end": 2162.7799999999997
+    },
+    {
+        "text": " la identidad en vez eso es perfecto gracias bien entonces como yo quiero tener el medio",
+        "start": 2162.7799999999997,
+        "end": 2174.1
+    },
+    {
+        "text": " la matriz social las bases ahí ve se acapongó acá tengo que poner a y se acapongó ve acá tengo que",
+        "start": 2174.1,
+        "end": 2185.46
+    },
+    {
+        "text": " poner de entonces sí que en serio que me queda se entendió eso usé usé la redita que vimos",
+        "start": 2185.46,
+        "end": 2196.1
+    },
+    {
+        "text": " recién que la matriz o sea una composición es el producto de las matrizas asociadas y en el",
+        "start": 2196.1,
+        "end": 2200.22
+    },
+    {
+        "text": " medio en las partes del medio puso las bases que se me dé la gana pero a usted usa de manera",
+        "start": 2200.22,
+        "end": 2203.74
+    },
+    {
+        "text": " consistente a muy entonces acá pongo a tilde como la base del espacio partir al comienzo todo y acá",
+        "start": 2203.74,
+        "end": 2213.1
+    },
+    {
+        "text": " como vestir de cómo la base del espacio llegada y acá uso como las bases que se me da la gana",
+        "start": 2213.1,
+        "end": 2217.3399999999997
+    },
+    {
+        "text": " le comiene poner a y a y acá ve y ve podría haber puesto acá a tilde y a tilde y acá ve y ve o",
+        "start": 2217.3399999999997,
+        "end": 2224.54
+    },
+    {
+        "text": " cualquier otro forma y por lo que nos conviene usar el sexto pues justamente yo quiero ver la",
+        "start": 2224.54,
+        "end": 2229.18
+    },
+    {
+        "text": " relación que hay entre esto y eso entonces esta relación es sumamente importante",
+        "start": 2229.18,
+        "end": 2244.66
+    },
+    {
+        "text": " y me dice explícitamente cómo es la relación entre la matriz social en las bases ahí ve y la",
+        "start": 2247.22,
+        "end": 2256.3399999999997
+    },
+    {
+        "text": " matriz se da a t en otro par de bases año aquí y ve y me dice que tengo que agarrar una",
+        "start": 2256.34,
+        "end": 2261.06
+    },
+    {
+        "text": " multiplicarla a la izquierda por una matriz que ya veremos que es a la derecha por otra y obtengo",
+        "start": 2262.26,
+        "end": 2269.06
+    },
+    {
+        "text": " esta matriz acá del medio",
+        "start": 2271.06,
+        "end": 2272.94
+    },
+    {
+        "text": " justamente estas acá eran las que quería obtener la relación entre estas y esta acá del medio",
+        "start": 2275.54,
+        "end": 2282.6200000000003
+    },
+    {
+        "text": " son las que se llaman matrices cambios de base fíjense que estas me agarran una base de",
+        "start": 2283.18,
+        "end": 2290.74
+    },
+    {
+        "text": " partir de una base de llegar en el mismo espacio porque el operador es tientidad va de b en b y esta",
+        "start": 2290.74,
+        "end": 2295.54
+    },
+    {
+        "text": " me agarran una base de partida en w y una base de la b en b porque el operador actúa sobre",
+        "start": 2295.54,
+        "end": 2302.66
+    },
+    {
+        "text": " entonces esta es una que se llaman las matrices cambios de base",
+        "start": 2303.3799999999997,
+        "end": 2305.54
+    },
+    {
+        "text": " creo que lo que sigue en el curso es más divertido que esto esto es puro casi que notación",
+        "start": 2318.02,
+        "end": 2325.06
+    },
+    {
+        "text": " digamos para manipular las cosas más rápidas entonces como les decía dos observaciones",
+        "start": 2325.06,
+        "end": 2332.82
+    },
+    {
+        "text": " primero observación vamos a hacer el dibujito nuevo este tengo el espacio ve la parte",
+        "start": 2332.82,
+        "end": 2359.1400000000003
+    },
+    {
+        "text": " de esa que tenía hace un rato y tengo dos bases acá a y año aquí y tengo acá la",
+        "start": 2359.14,
+        "end": 2370.3399999999997
+    },
+    {
+        "text": " transformación y identidad que va del espacio ven sin mismo que en lugar de dibujarla acá un espacio",
+        "start": 2370.3399999999997,
+        "end": 2375.46
+    },
+    {
+        "text": " ve la vamos a poner acá sobre si tengo la transformación y identidad y en b la que no hace nada y",
+        "start": 2375.46,
+        "end": 2382.42
+    },
+    {
+        "text": " en b es b para todo ven en el espacio entonces tengo esa transformación que no hace nada y tengo",
+        "start": 2382.42,
+        "end": 2390.02
+    },
+    {
+        "text": " dos bases la a y la tilde observémoslo siguiente le voy a sacar el subínic y se ve como es la identidad",
+        "start": 2390.02,
+        "end": 2399.02
+    },
+    {
+        "text": " estamos trabajando con la identidad pongámoslo así entonces esta claro que se cumple por",
+        "start": 2399.02,
+        "end": 2404.7400000000002
+    },
+    {
+        "text": " la identidad de finición de la identidad la identidad de b es b para todo ven en el espacio en el",
+        "start": 2404.74,
+        "end": 2412.1
+    },
+    {
+        "text": " que estoy trabajando entonces fíjense lo siguiente esto es un vector en b",
+        "start": 2412.1,
+        "end": 2433.7799999999997
+    },
+    {
+        "text": " esto es un vector y otro vector supongamos que yo quiero calcular las coordenadas de este vector en la",
+        "start": 2433.78,
+        "end": 2438.7000000000003
+    },
+    {
+        "text": " base a tilde entonces sabemos que las coordenadas en la base a tilde del vector y de b como y de b es b",
+        "start": 2438.7000000000003,
+        "end": 2452.34
+    },
+    {
+        "text": " van a hacer las coordenadas en la base a tilde del vector b",
+        "start": 2452.34,
+        "end": 2459.34
+    },
+    {
+        "text": " hasta ahí no dije nada simplemente usé la identidad que ya las coordenadas de este vector en la base a tilde son las",
+        "start": 2463.9,
+        "end": 2469.82
+    },
+    {
+        "text": " coordenadas de ese vector en la base a tilde ahora vean la primera propiedad que me dice cómo se relacionan las",
+        "start": 2469.82,
+        "end": 2477.1600000000003
+    },
+    {
+        "text": " coordenadas de una transformación aplicada a ver con las coordenadas de b en una base el espacio de",
+        "start": 2477.1600000000003,
+        "end": 2482.46
+    },
+    {
+        "text": " la base a tilde y la primera propiedad que escribimos de todas fíjense que yo ha de esto",
+        "start": 2482.46,
+        "end": 2489.98
+    },
+    {
+        "text": " lo podría pensar así lo podría pensar cómo la identidad usando cómo va a ser de",
+        "start": 2494.38,
+        "end": 2503.94
+    },
+    {
+        "text": " partida y cómo va a ser llegada a tilde esta matriz por las coordenadas de b en la base a se",
+        "start": 2503.94,
+        "end": 2514.42
+    },
+    {
+        "text": " acuerdan que el primer a propiedad todos las coordenadas de este de b son el a matriz t por las",
+        "start": 2514.42,
+        "end": 2521.7400000000002
+    },
+    {
+        "text": " coordenadas de b estoy usando la primera propiedad de todas entonces acá para estas coordenadas",
+        "start": 2521.7400000000002,
+        "end": 2527.94
+    },
+    {
+        "text": " puedo poner a y acá tengo que poner de a a tilde y esto me da lo mismo que esto esas son las",
+        "start": 2527.94,
+        "end": 2533.3
+    },
+    {
+        "text": " coordenadas en a tilde de esta transformación está bien se entendió eso ¿no? entonces fíjense que esta",
+        "start": 2533.3,
+        "end": 2541.9
+    },
+    {
+        "text": " relación esto me dice cómo se relaciona las coordenadas de un vector b en una base a tilde con las",
+        "start": 2541.9,
+        "end": 2548.78
+    },
+    {
+        "text": " coordenadas del mismo vector de una base a lo que tengo que hacer es agarrar las primeras multiplicar",
+        "start": 2548.78,
+        "end": 2553.26
+    },
+    {
+        "text": " las por esta matriz justamente que es la matriz que aparece por acá bueno agüe una orden",
+        "start": 2553.26,
+        "end": 2559.0600000000004
+    },
+    {
+        "text": " las bases y me da la matriz en la otra base por eso tiene sentido llamar esa matriz como matriz",
+        "start": 2559.0600000000004,
+        "end": 2564.98
+    },
+    {
+        "text": " cambio de base esto acá por eso se le llama matriz cambio de base porque me dice",
+        "start": 2564.98,
+        "end": 2570.6600000000003
+    },
+    {
+        "text": " ¿por qué me dice cómo pasa de las coordenadas de un vector en la base a las coordenadas de un vector b en otra base y",
+        "start": 2570.66,
+        "end": 2585.06
+    },
+    {
+        "text": " como estamos trabajando con el mismo espacio partida que de llegadas son matriz escuadradas o sea",
+        "start": 2585.06,
+        "end": 2590.02
+    },
+    {
+        "text": " agarrar un vector colubre le multiplico por esta matriz cuadrada y yo tengo este otro",
+        "start": 2590.02,
+        "end": 2593.72
+    },
+    {
+        "text": " vector colubre se entendió eso a ver este era esto que habíamos escrito al principio coordenadas en b",
+        "start": 2593.72,
+        "end": 2608.2799999999997
+    },
+    {
+        "text": " detende en la matriz associada en la base a b por las coordenadas de b en la base a solamente",
+        "start": 2608.2799999999997,
+        "end": 2620.72
+    },
+    {
+        "text": " que ahora estamos poniendo base a acá y la base a tilde acá que estamos trabajando el mismo espacio",
+        "start": 2620.72,
+        "end": 2627.56
+    },
+    {
+        "text": " de partida que de llegada y acá estamos poniendo la identidad entonces me queda las coordenadas de a tilde de tmb que ahora",
+        "start": 2627.56,
+        "end": 2634.24
+    },
+    {
+        "text": " les entiende es esto por las coordenadas en b de a ese es lo mismo lo que tricieron entonces como",
+        "start": 2634.24,
+        "end": 2642.3599999999997
+    },
+    {
+        "text": " construyo estas estas matrices es muy fácil de construirlas porque todo lo que tengo que hacer es agarrar",
+        "start": 2642.3599999999997,
+        "end": 2649.52
+    },
+    {
+        "text": " cada vector de la base a aplicar la identidad que es me da el mismo vector entonces tengo que",
+        "start": 2650.24,
+        "end": 2656.16
+    },
+    {
+        "text": " agarrar cada vector de la base a y ver cómo se descompone en términos de la base a tilde y eso lo",
+        "start": 2656.16,
+        "end": 2660.94
+    },
+    {
+        "text": " cuyo como columna y ahí tengo la matriz cambio de base se entendió lo que tengo que hacer entonces es",
+        "start": 2660.94,
+        "end": 2666.04
+    },
+    {
+        "text": " voy agarrando los sucesivos vectores de a y voy viendo cómo se descompone en términos de la tilde y con",
+        "start": 2666.04,
+        "end": 2673.16
+    },
+    {
+        "text": " eso me construyo esta cantidad y lo mismo eso me permite calcular esta matriz y esta matriz solo",
+        "start": 2673.16,
+        "end": 2681.3799999999997
+    },
+    {
+        "text": " que están trabajando en diferentes espacios acá agarró cada elemento de tilde veo cómo se descompone en la base a",
+        "start": 2681.3799999999997,
+        "end": 2687.12
+    },
+    {
+        "text": " y los cuelgos es una matriz cuadrada esta también es una matriz cuadrada agarró cada elemento de b y veo",
+        "start": 2687.12,
+        "end": 2692.52
+    },
+    {
+        "text": " cómo se descompone en términos de tilde y lo cuento y esas dos matrices si multiplico por un lado acá y",
+        "start": 2692.52,
+        "end": 2699.48
+    },
+    {
+        "text": " por otro acá me dicen cómo se relacionan las matricias sociales operadores en diferentes bases no voy a",
+        "start": 2699.48,
+        "end": 2705.44
+    },
+    {
+        "text": " hacer no voy a hacer más cuenta voy a ser una una una cuenta corpita y nada más y el resto se los voy a",
+        "start": 2705.44,
+        "end": 2714.0
+    },
+    {
+        "text": " dejar como como jardín para no aburrir",
+        "start": 2714.0,
+        "end": 2718.6
+    },
+    {
+        "text": " pregunta se está acá esta es la famosa matriz de cambio de base entonces y una segunda observación yo les",
+        "start": 2718.6,
+        "end": 2730.92
+    },
+    {
+        "text": " dije que eran dos observaciones la primera era esta que quedó acá escrita como una igualdad",
+        "start": 2730.92,
+        "end": 2738.72
+    },
+    {
+        "text": " que me dice cómo se relacionan las coronadas de un vector en una base con las coronadas el mismo vector",
+        "start": 2740.2799999999997,
+        "end": 2744.8399999999997
+    },
+    {
+        "text": " de otra base es una matriz cambio de base y la segunda propiedad tiene que ver con cómo cambia la",
+        "start": 2744.84,
+        "end": 2752.28
+    },
+    {
+        "text": " matriz de cambio de base si yo el cambio el oro donde los de las bases acá se usó base de",
+        "start": 2752.28,
+        "end": 2760.2000000000003
+    },
+    {
+        "text": " partida tilde y base llegada como son estoy trabajando en el mismo espacio puedo cambiar las",
+        "start": 2760.2000000000003,
+        "end": 2767.04
+    },
+    {
+        "text": " bases de partida y las bases llegan no tengo maiores problemas y quiero ver qué relaciona entre",
+        "start": 2767.04,
+        "end": 2771.56
+    },
+    {
+        "text": " esas dos matricias cambio de base cuando yo cambio cuando voy de a tilde cuando voy de a tilde",
+        "start": 2772.08,
+        "end": 2777.68
+    },
+    {
+        "text": " vamos a escribir bien esta esta cosa acá porque quedó medio",
+        "start": 2786.32,
+        "end": 2790.08
+    },
+    {
+        "text": " a",
+        "start": 2801.56,
+        "end": 2804.36
+    },
+    {
+        "text": " todas las cosas aquí acá en rojo dice si el rojo nos moda dice matriz cambio de base matriz",
+        "start": 2819.6,
+        "end": 2826.88
+    },
+    {
+        "text": " a base",
+        "start": 2827.2000000000003,
+        "end": 2829.2000000000003
+    },
+    {
+        "text": " todas estas cosas que vamos a ver ahora vale la pena aprender a usarlas porque las van a usar hasta el",
+        "start": 2829.96,
+        "end": 2837.02
+    },
+    {
+        "text": " día que se jubilen como ingeniero porque esto aparece si usa todo todo todo todo el tiempo todo el",
+        "start": 2837.02,
+        "end": 2842.76
+    },
+    {
+        "text": " tiempo las descomposiciones de operadores que veremos también susan todo el tiempo porque",
+        "start": 2842.76,
+        "end": 2848.44
+    },
+    {
+        "text": " permiten hacer cálculos en un montón de de contextos diferentes en fin propiedades que",
+        "start": 2848.44,
+        "end": 2854.12
+    },
+    {
+        "text": " queremos que viendos a lo largo del curso la segunda observación como les digo tiene que ver",
+        "start": 2854.12,
+        "end": 2861.7999999999997
+    },
+    {
+        "text": " con cómo cambia las matricias esta cuando cambio el oro donde las bases acá no quiero borrar",
+        "start": 2861.7999999999997,
+        "end": 2869.2799999999997
+    },
+    {
+        "text": " nada de que me escribí la",
+        "start": 2869.2799999999997,
+        "end": 2874.16
+    },
+    {
+        "text": " segunda observación",
+        "start": 2874.16,
+        "end": 2884.72
+    },
+    {
+        "text": " y acá de nuevo voy a trabajar el mismo contexto en que estamos trabajando acá",
+        "start": 2905.08,
+        "end": 2910.3199999999997
+    },
+    {
+        "text": " sí que vamos a partir de una de una observación trivial si yo compongo la identidad",
+        "start": 2913.2799999999997,
+        "end": 2920.24
+    },
+    {
+        "text": " con la identidad esto que me da la identidad",
+        "start": 2922.24,
+        "end": 2926.44
+    },
+    {
+        "text": " ovidar lo que estamos escribiendo ahí entonces",
+        "start": 2926.44,
+        "end": 2935.76
+    },
+    {
+        "text": " ahora vamos a usar este vamos a empezar a jugar un poquito con las bases no estamos trabajando acá en",
+        "start": 2939.2400000000002,
+        "end": 2943.68
+    },
+    {
+        "text": " este mismo contexto la identidad de nuestra estructura al ve y dos bases ahí atilde entonces si yo",
+        "start": 2943.68,
+        "end": 2950.12
+    },
+    {
+        "text": " de este lado",
+        "start": 2950.12,
+        "end": 2953.96
+    },
+    {
+        "text": " si yo de este lado uso como base de partida pero la matria asociada esto ha estado operado",
+        "start": 2968.04,
+        "end": 2974.4
+    },
+    {
+        "text": " usando como base de partida y como hace llegar a la misma eso me va a quedar un producto",
+        "start": 2974.4,
+        "end": 2979.44
+    },
+    {
+        "text": " dos matrices la matria asociada esta y la matria asociada esta de cuidado de la base en la que",
+        "start": 2979.44,
+        "end": 2985.36
+    },
+    {
+        "text": " estoy usando entonces acá como punto de partida puedo poner a acá tengo que poner a digo y acá",
+        "start": 2985.36,
+        "end": 2991.32
+    },
+    {
+        "text": " como hace llegar a final tengo que poner a y en el medio puedo poner lo que se me da",
+        "start": 2991.32,
+        "end": 2994.8
+    },
+    {
+        "text": " gana como les dije su rato por ejemplo puedo poner acá atilde y acá atilde entonces tengo",
+        "start": 2994.8,
+        "end": 3003.04
+    },
+    {
+        "text": " tengo esta relación la matria social identidad usando como hace partida y como hace llegar a",
+        "start": 3003.84,
+        "end": 3008.4
+    },
+    {
+        "text": " atilde la puedo tener como un producto de matrices cuadradas porque estamos trabajando en el mismo espacio",
+        "start": 3008.4,
+        "end": 3013.28
+    },
+    {
+        "text": " de partida y que le llegara la matria social de ahí partido de ahí llegando a atilde y la matria social de ahí",
+        "start": 3013.28,
+        "end": 3018.64
+    },
+    {
+        "text": " partido de atilde llegando a justamente lo que yo quiero ver es que relación existe entre",
+        "start": 3018.64,
+        "end": 3023.0
+    },
+    {
+        "text": " dos cosas cuando yo cambio el orden en que estoy usando el cambio de base",
+        "start": 3023.0,
+        "end": 3029.4
+    },
+    {
+        "text": " se entiende ahora qué es esto acá estas son todas matrices cuadradas porque el espacio",
+        "start": 3029.4,
+        "end": 3041.52
+    },
+    {
+        "text": " de partida le mismo que el espacio llegada entonces son matrices n por n y no son todas",
+        "start": 3041.52,
+        "end": 3046.28
+    },
+    {
+        "text": " matrices cuadradas ahora qué diablo es esto",
+        "start": 3046.28,
+        "end": 3050.4
+    },
+    {
+        "text": " qué diablo es eso como les decía recientos estas son matrices cuadradas n por n ahora fíjense",
+        "start": 3056.6800000000003,
+        "end": 3066.0400000000004
+    },
+    {
+        "text": " qué es esto yo hay lo que estoy haciendo es si el ocelemento de la base le llamamos",
+        "start": 3066.04,
+        "end": 3073.32
+    },
+    {
+        "text": " ve uno ve dos hasta vn",
+        "start": 3074.32,
+        "end": 3077.2799999999997
+    },
+    {
+        "text": " si",
+        "start": 3082.04,
+        "end": 3082.52
+    },
+    {
+        "text": " que estamos haciendo ahí",
+        "start": 3084.2,
+        "end": 3085.52
+    },
+    {
+        "text": " se acuerna como se construye la matria sociedad a un operador usando como hace partida en este caso",
+        "start": 3085.52,
+        "end": 3099.8
+    },
+    {
+        "text": " ahí tengo que agarrar el primer elemento de la base que es ve uno aplicar la identidad en ve uno",
+        "start": 3099.8,
+        "end": 3105.44
+    },
+    {
+        "text": " que obviamente es el mismo ve uno y a eso descomponerlo como combinación niña de los",
+        "start": 3105.44,
+        "end": 3111.92
+    },
+    {
+        "text": " lectores de la misma base entonces cómo queda ve uno descompuesto como combinación y al de",
+        "start": 3111.92,
+        "end": 3116.12
+    },
+    {
+        "text": " esto de la base es alto queda uno por ve uno más cero por ve dos más cero por ve tres et cetera",
+        "start": 3116.12,
+        "end": 3122.96
+    },
+    {
+        "text": " como queda acá cuando pongo hoy en ve dos tengo",
+        "start": 3124.08,
+        "end": 3128.0
+    },
+    {
+        "text": " bueno no tenerlo escribamos ya tengo que ver las coordenadas y en ve dos es ve dos",
+        "start": 3129.36,
+        "end": 3133.44
+    },
+    {
+        "text": " tengo que ver las coordenadas como los descompongo como combinación y al de esto me queda cero por ve uno",
+        "start": 3133.44,
+        "end": 3138.16
+    },
+    {
+        "text": " uno por ve dos et cetera hasta cero por ve uno y lo mismo hasta llegar al ve uno que me va a",
+        "start": 3138.16,
+        "end": 3144.72
+    },
+    {
+        "text": " quedar cero por ve uno más cero por ve dos hasta uno por ve uno se entendió pues es que yo",
+        "start": 3144.72,
+        "end": 3150.3999999999996
+    },
+    {
+        "text": " darle identidad y la representa usando el mismo la misma base de partida que de llegada eso",
+        "start": 3150.3999999999996,
+        "end": 3156.2
+    },
+    {
+        "text": " me da naturalmente la matriz identidad o sea que esto acá es exactamente lo que vamos a llamar",
+        "start": 3156.2,
+        "end": 3163.52
+    },
+    {
+        "text": " la sí la matriz identidad esto acá es la matriz identidad",
+        "start": 3163.52,
+        "end": 3168.32
+    },
+    {
+        "text": " se entiende usando usando este truquito la identidad es la identidad compuesta con",
+        "start": 3173.92,
+        "end": 3181.2
+    },
+    {
+        "text": " sigo misma entonces si yo veo de este lado veo la matriz asociada usando con base partida y la",
+        "start": 3181.2,
+        "end": 3187.0
+    },
+    {
+        "text": " misma base llegada esto lo puede escribir como un producto de matriz y donde acá pongo a atil de",
+        "start": 3187.0,
+        "end": 3192.0
+    },
+    {
+        "text": " y a son todas matrices cuadradas esta es la identidad y estas son las matrices cambios de base a",
+        "start": 3192.0,
+        "end": 3199.76
+    },
+    {
+        "text": " cabello como se descompone a cada vector de acá como combinación y ya de los atiles de y eso",
+        "start": 3199.76,
+        "end": 3204.04
+    },
+    {
+        "text": " las voy colgando como coluna y acá voy viendo cómo se descompone cada vector de atil de como",
+        "start": 3204.04,
+        "end": 3208.8
+    },
+    {
+        "text": " combinación y ya de los de a y los vamos colgando como coluna entonces son esta matriz por esta",
+        "start": 3208.8,
+        "end": 3214.32
+    },
+    {
+        "text": " matriz me da la matriz identidad entonces que relaciona ahí entre estas matrices cambios de base",
+        "start": 3214.32,
+        "end": 3220.56
+    },
+    {
+        "text": " si yo cambio el oro donde las bases que una es la inversa de la otra en primer lugar si",
+        "start": 3220.56,
+        "end": 3228.2799999999997
+    },
+    {
+        "text": " se propio esta dos matrices me da la identidad quiere decir que estas matrices son invertibles y que",
+        "start": 3228.2799999999997,
+        "end": 3233.08
+    },
+    {
+        "text": " una es la inversa de la otra bien entonces eso me implica finalmente la última el último",
+        "start": 3233.08,
+        "end": 3239.92
+    },
+    {
+        "text": " la última observación que quería ver",
+        "start": 3241.32,
+        "end": 3243.04
+    },
+    {
+        "text": " la relación que hay entre estas dos matrices cambios de base cuando yo cambio el orden así cuando",
+        "start": 3243.04,
+        "end": 3260.2
+    },
+    {
+        "text": " yo veo de atil de a o de a y atil de es que una es la inversa de la otra porque si les",
+        "start": 3260.2,
+        "end": 3265.04
+    },
+    {
+        "text": " multiplico me da la identidad o sea que por ejemplo esta acá es esta matriz a la menos",
+        "start": 3265.04,
+        "end": 3270.52
+    },
+    {
+        "text": " la propiedad que querida",
+        "start": 3275.44,
+        "end": 3276.88
+    },
+    {
+        "text": " preguntas",
+        "start": 3287.48,
+        "end": 3288.36
+    },
+    {
+        "text": " me dejan hacer algún último comentario para ya cerrar todo y cortamos porque no",
+        "start": 3288.36,
+        "end": 3299.96
+    },
+    {
+        "text": " no los quiero a bombar de tanta cuartía",
+        "start": 3301.36,
+        "end": 3305.1200000000003
+    },
+    {
+        "text": " entonces lo que vamos a hacer ahora es vamos a",
+        "start": 3308.6800000000003,
+        "end": 3311.6
+    },
+    {
+        "text": " usar esta este resultado que vimos para cualquier transformación lineal de un espacio",
+        "start": 3311.6,
+        "end": 3321.6
+    },
+    {
+        "text": " y partida a b un espacio llegada a w y esta vamos a estas dos cosas para ver qué resulta",
+        "start": 3321.6,
+        "end": 3329.36
+    },
+    {
+        "text": " como no tiene operadores lineales o sea transformaciones de un espacio",
+        "start": 3329.36,
+        "end": 3333.2
+    },
+    {
+        "text": " en particular vemos el caso particular",
+        "start": 3333.2,
+        "end": 3343.64
+    },
+    {
+        "text": " en que es un operador lineal o sea si te debe va del mismo espacio llegada al mismo espacio del",
+        "start": 3353.2799999999997,
+        "end": 3360.68
+    },
+    {
+        "text": " mismo espacio de partido llegada pues es si esto es un operador lineal",
+        "start": 3360.68,
+        "end": 3364.0
+    },
+    {
+        "text": " recordemos que la única particularidad que tiene operador lineal es que el espacio",
+        "start": 3370.3999999999996,
+        "end": 3374.8399999999997
+    },
+    {
+        "text": " partir de el mismo espacio llegada entonces ahí vamos a escribir lo mismo",
+        "start": 3374.84,
+        "end": 3382.84
+    },
+    {
+        "text": " donde ahora el espacio de partida llega a solo mismo y acá tengo una base a",
+        "start": 3391.04,
+        "end": 3395.4
+    },
+    {
+        "text": " y una base a tigre",
+        "start": 3397.4,
+        "end": 3398.6000000000004
+    },
+    {
+        "text": " y bien",
+        "start": 3404.84,
+        "end": 3410.44
+    },
+    {
+        "text": " puede haber hecho el dibujito así de t es una transformación del espacio en sí mismo y tengo dos bases",
+        "start": 3411.88,
+        "end": 3416.96
+    },
+    {
+        "text": " vamos a usar",
+        "start": 3424.8,
+        "end": 3425.84
+    },
+    {
+        "text": " a esta le vamos a llamar uno propiedad uno y a esta le vamos a llamar propiedad",
+        "start": 3428.84,
+        "end": 3433.4
+    },
+    {
+        "text": " y",
+        "start": 3434.84,
+        "end": 3436.84
+    },
+    {
+        "text": " entonces comentario que repito cuando uno trabaja con operadores lineales las matricios",
+        "start": 3454.84,
+        "end": 3460.6400000000003
+    },
+    {
+        "text": " asociadas son matrices cuadradas por el mismo espacio de partido que le llega a la dimensión",
+        "start": 3460.64,
+        "end": 3466.4
+    },
+    {
+        "text": " de las matricios gn por él estas son matrices cuadradas siempre y estas a veces son cuadradas y a veces no",
+        "start": 3467.4,
+        "end": 3473.24
+    },
+    {
+        "text": " dependiendo si el espacio llegada es el mismo tiene la misma dimensión que el partido si uno",
+        "start": 3473.24,
+        "end": 3477.44
+    },
+    {
+        "text": " para el lineal sí entonces que me queda esto",
+        "start": 3477.44,
+        "end": 3480.64
+    },
+    {
+        "text": " recribamos esto acá entonces solamente en el lugar de ahora a usar",
+        "start": 3480.64,
+        "end": 3488.7999999999997
+    },
+    {
+        "text": " este hay",
+        "start": 3488.7999999999997,
+        "end": 3491.0
+    },
+    {
+        "text": " a a tilde va y va y tilde voy a usar hay a tilde entonces fíjense la base lo que antes era la base",
+        "start": 3491.0,
+        "end": 3509.48
+    },
+    {
+        "text": " tilde ahora es la base a tilde por favor el mismo espacio te asociadas las bases a tilde y a tilde",
+        "start": 3509.48,
+        "end": 3518.0
+    },
+    {
+        "text": " eso por un lado de un lado me queda la identidad que no lo voy a poner su vez porque estamos en el mismo espacio",
+        "start": 3518.0,
+        "end": 3524.36
+    },
+    {
+        "text": " de a a tilde",
+        "start": 3527.16,
+        "end": 3528.64
+    },
+    {
+        "text": " acá tengo",
+        "start": 3530.0,
+        "end": 3531.12
+    },
+    {
+        "text": " la t de a",
+        "start": 3532.48,
+        "end": 3535.52
+    },
+    {
+        "text": " y acá tengo la identidad de a tilde",
+        "start": 3535.52,
+        "end": 3542.52
+    },
+    {
+        "text": " bien lo único que hecho es las bases fíjoles coinciden con hay a tilde las he puesto así porque tengo el mismo espacio",
+        "start": 3542.52,
+        "end": 3554.44
+    },
+    {
+        "text": " de partida que le llega entonces a tilde a tilde me queda la identidad en el espacio que tú trabajando a tilde",
+        "start": 3554.44,
+        "end": 3562.32
+    },
+    {
+        "text": " t en a y la identidad en a tilde",
+        "start": 3562.32,
+        "end": 3567.32
+    },
+    {
+        "text": " estamos ahora",
+        "start": 3571.32,
+        "end": 3572.32
+    },
+    {
+        "text": " todas son matrices cuadradas estas t asociadas una base de partida y la misma base de llegar",
+        "start": 3574.32,
+        "end": 3579.32
+    },
+    {
+        "text": " le aplico t acá el elemento de la base y veo cómo se descompone en términos de la base de la misma base",
+        "start": 3579.32,
+        "end": 3586.32
+    },
+    {
+        "text": " y estas son las matrices cambio de base que estuvimos viendo recién fíjense si yo esto le llamo si yo esta matriz le llamo p",
+        "start": 3587.32,
+        "end": 3595.32
+    },
+    {
+        "text": " que es una matriz cuadrada la matriz cambio de base de a tilde a esta que me da esta la matriz cambio de base de a tilde",
+        "start": 3595.32,
+        "end": 3605.32
+    },
+    {
+        "text": " que es esta la inversa esta otra",
+        "start": 3605.32,
+        "end": 3608.32
+    },
+    {
+        "text": " lo que acabamos de ver acá recién si yo cambio el orden la matriz cambio de base a la otra les cambio el orden una matriz",
+        "start": 3609.32,
+        "end": 3616.32
+    },
+    {
+        "text": " relaciona con la otra en términos de la inversa",
+        "start": 3616.32,
+        "end": 3619.32
+    },
+    {
+        "text": " es decir que esta matriz acá es la inversa que le llamamos p a la menor suba",
+        "start": 3619.32,
+        "end": 3627.32
+    },
+    {
+        "text": " entonces lo que se cumple es que cuando yo trabajo con operadores lineales",
+        "start": 3628.32,
+        "end": 3634.32
+    },
+    {
+        "text": " y hago un cambio de base de a tilde y veo",
+        "start": 3635.32,
+        "end": 3638.32
+    },
+    {
+        "text": " cuánto vale la matriz asociate en las bases a tilde y a tilde con respecto a cuánto vale este en las bases asociadas",
+        "start": 3642.32,
+        "end": 3650.32
+    },
+    {
+        "text": " allá ahí tengo que multiplicar la derecha por una matriz p y a la izquierda por una matriz p a la menor suba",
+        "start": 3650.32,
+        "end": 3656.32
+    },
+    {
+        "text": " esas matrices p y p a la menor suba las puedo calcular simplemente son las matrices cambio de base",
+        "start": 3657.32,
+        "end": 3663.32
+    },
+    {
+        "text": " entonces fíjense lo siguiente esto me lleva a la noción de semejanza de matrices",
+        "start": 3663.32,
+        "end": 3671.32
+    },
+    {
+        "text": " matrices cuadradas uno dice que dos matrices son semejantes",
+        "start": 3671.32,
+        "end": 3676.32
+    },
+    {
+        "text": " matrices cuadradas uno dice que dos matrices son semejantes",
+        "start": 3677.32,
+        "end": 3681.32
+    },
+    {
+        "text": " esta y esta si existe una tercera matriz p, tal que sí invertible",
+        "start": 3681.32,
+        "end": 3686.32
+    },
+    {
+        "text": " tal que si yo aún ahora multiplico por p a la derecha y por p a la menor suba de izquierda",
+        "start": 3686.32,
+        "end": 3691.32
+    },
+    {
+        "text": " obtengo la otra ¿sabes?",
+        "start": 3691.32,
+        "end": 3694.32
+    },
+    {
+        "text": " esto me dice como cambian las transformaciones las matrices asociadas a t operadores lineales",
+        "start": 3699.32,
+        "end": 3705.32
+    },
+    {
+        "text": " cuando cambio las bases estoy usando ahora acá base a de partida y llegada de acá a tina de partida y a tina",
+        "start": 3705.32,
+        "end": 3713.32
+    },
+    {
+        "text": " y a tina llegada ¿sí?",
+        "start": 3713.32,
+        "end": 3716.32
+    },
+    {
+        "text": " a ver este como despejarían de acá esta en términos de esta",
+        "start": 3718.32,
+        "end": 3725.32
+    },
+    {
+        "text": " si yo quisiera sacar t en las bases a y a con respecto a a partida y de esta t en la base a tina y a tina",
+        "start": 3725.32,
+        "end": 3733.32
+    },
+    {
+        "text": " exactamente, fíjense que si yo quisiera que se le llamó peor a que le llamó peor a la menor suba",
+        "start": 3736.32,
+        "end": 3747.32
+    },
+    {
+        "text": " pero fíjense lo importante es que una limpa a la otra si yo multiplico a esta por p de este lado y por p a la menor suba de este lado",
+        "start": 3747.32,
+        "end": 3755.32
+    },
+    {
+        "text": " esto se me va a ir y esto se me va a ir",
+        "start": 3755.32,
+        "end": 3757.32
+    },
+    {
+        "text": " o sea que esta la puedo escribir como una p acá por esta por p a la menor suba",
+        "start": 3757.32,
+        "end": 3761.32
+    },
+    {
+        "text": " simplemente que ahora tengo una matriz de este lado y la inversa de esta es lo mismo de esta",
+        "start": 3761.32,
+        "end": 3766.32
+    },
+    {
+        "text": " lo mismo, estamos solamente de todo que tengo cuidado con que matriz de este podiendo izquierda y derecha",
+        "start": 3766.32,
+        "end": 3771.32
+    },
+    {
+        "text": " pero la noción de semejanza es independiente si uso esta como referencia para multiplicar la uso esta como referencia para multiplicar",
+        "start": 3771.32,
+        "end": 3781.32
+    },
+    {
+        "text": " y entonces para terminar le voy a escribir la definición final de matriz de semejanza y la clase que viene",
+        "start": 3781.32,
+        "end": 3789.32
+    },
+    {
+        "text": " vamos a terminar de ver propiedades de matriz de semejantes que esto esto repito esto debería estar incluido en algebra 1",
+        "start": 3789.32,
+        "end": 3799.32
+    },
+    {
+        "text": " lo que pasa es como está al final final del curso en general nos llega a ver pero las matriz de semejantes juegan un rol fundamental a lo mismo que las matriz de cambio base en todo el curso",
+        "start": 3799.32,
+        "end": 3809.32
+    },
+    {
+        "text": " por eso es importante de esto tenlo bien asaitado porque vamos a estar usando todo todo todo todo el tiempo",
+        "start": 3809.32,
+        "end": 3816.32
+    },
+    {
+        "text": " entonces definición yo tengo dos matrices a y b le vamos a llamar así a las matrices en el por n",
+        "start": 3816.32,
+        "end": 3827.32
+    },
+    {
+        "text": " matrices cuadradas en el cuerpo que sea reales o complejos tanto",
+        "start": 3827.32,
+        "end": 3834.32
+    },
+    {
+        "text": " decidimos que hay besos semejantes",
+        "start": 3834.32,
+        "end": 3844.32
+    },
+    {
+        "text": " son semejantes si existe una tercera matriz p a acá estoy llamando a y b a matriz no confundir con a y b que antes le llamaba aso",
+        "start": 3844.32,
+        "end": 3863.32
+    },
+    {
+        "text": " es un son matrices ahora decimos que hay besos semejantes si existe una tercera matriz p también matriz cuadrada invertible",
+        "start": 3863.32,
+        "end": 3880.32
+    },
+    {
+        "text": " tal que la relación que hay entre b y a es esto",
+        "start": 3885.32,
+        "end": 3891.32
+    },
+    {
+        "text": " bien b la obtengo a partir de a multiplicando por p de un lado y por para menos uno a la otra",
+        "start": 3894.32,
+        "end": 3903.32
+    },
+    {
+        "text": " o lo que es lo mismo como dijimos recién si yo multiplico b por lado y por este para menos uno tengo a",
+        "start": 3906.32,
+        "end": 3917.32
+    },
+    {
+        "text": " píjense que si yo acá le llamo p de la menos uno le llamo cua a que hay cuico a la menos uno",
+        "start": 3917.32,
+        "end": 3924.32
+    },
+    {
+        "text": " es indistinto si escribo a como función de b o ve como función de a",
+        "start": 3924.32,
+        "end": 3929.32
+    },
+    {
+        "text": " bien esto tipo de matrices semejantes van a aparecer todo el tiempo y la idea es ver me voy a",
+        "start": 3929.32,
+        "end": 3937.32
+    },
+    {
+        "text": " esticipando lo que viene ver cuando no tiene una transformación lineal si es posible elegir una base",
+        "start": 3937.32,
+        "end": 3947.32
+    },
+    {
+        "text": " el espacio vectorial en el cual alguna esta matriz se escribe de manera sencilla y encontrar cuáles",
+        "start": 3947.32,
+        "end": 3954.32
+    },
+    {
+        "text": " son las matrices cambios de base entonces a partir de ahí uno empieza a manipular cosas que son",
+        "start": 3954.32,
+        "end": 3960.32
+    },
+    {
+        "text": " más sencillas de trabajar que otra bueno alguna pregunta entonces sobre esto la clase que viene",
+        "start": 3960.32,
+        "end": 3967.32
+    },
+    {
+        "text": " vamos a retomar a casa y mejansa le voy a dar un par de propiedades y arrancamos ya con valores",
+        "start": 3967.32,
+        "end": 3972.32
+    },
+    {
+        "text": " de los directores propios que es ya la parte de galdos propiamente dicho",
+        "start": 3972.32,
+        "end": 3979.32
+    }
+]

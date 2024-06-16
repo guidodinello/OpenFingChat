@@ -1,0 +1,2132 @@
+[
+    {
+        "text": " Bueno, arrancamos la clase, quiero hacer un comentario que me acaban de hacer recién.",
+        "start": 0.0,
+        "end": 25.48
+    },
+    {
+        "text": " En el final de la clase pasada pusimos un ejemplo de cómo se calculaba la base de Jordan,",
+        "start": 25.48,
+        "end": 32.08
+    },
+    {
+        "text": " de una transformación de R3 en R3.",
+        "start": 32.08,
+        "end": 34.120000000000005
+    },
+    {
+        "text": " Se acuerdan, entonces tomábamos dos vectores, que eran vectores propios y a un tercero lo",
+        "start": 34.120000000000005,
+        "end": 40.64
+    },
+    {
+        "text": " calculábamos a partir de una ecuación matricial.",
+        "start": 40.64,
+        "end": 44.96
+    },
+    {
+        "text": " Y la ecuación era, era esto, miren si van a las notas de la clase pasada, lo que hay",
+        "start": 44.96,
+        "end": 52.64
+    },
+    {
+        "text": " que resolver es esto, hay que resolver T menos lambda por I, aplicado a un vector que",
+        "start": 52.64,
+        "end": 61.1
+    },
+    {
+        "text": " le llamamos V2, esto es igual a V3, en el ejemplo que estamos considerando, en el ejemplo",
+        "start": 61.1,
+        "end": 66.84
+    },
+    {
+        "text": " que estamos considerando lambda era 2, si me lo recuerdo, y esto en la base canónica",
+        "start": 66.84,
+        "end": 75.44
+    },
+    {
+        "text": " quedaba 0, 0, 1, 0, menos 1, menos 1, menos 1, menos 1, si a las coordenadas de V2 que",
+        "start": 75.44,
+        "end": 86.28
+    },
+    {
+        "text": " son las que queremos calcularle, ya vamos a XZ, esta matriz aplicada a XZ me llegada a las",
+        "start": 86.28,
+        "end": 93.2
+    },
+    {
+        "text": " coordenadas de V3, y las coordenadas de V3 eran V3 era un vector propio, las coordenadas",
+        "start": 93.2,
+        "end": 98.24
+    },
+    {
+        "text": " habíamos aquí así, 1, 0, 0, lo que me hacen notar ahora es que yo en la clase pasada",
+        "start": 98.24,
+        "end": 106.72
+    },
+    {
+        "text": " que ha puesto un 0, puede ser, 1, 0, 0, así está 1, 0, y si está como el 0, esto",
+        "start": 106.72,
+        "end": 115.75999999999999
+    },
+    {
+        "text": " era un 1, digo, ¿por qué está la coordenada de V3? Por eso hay veces que uno dice una cosa",
+        "start": 115.75999999999999,
+        "end": 121.64
+    },
+    {
+        "text": " y copia otra, yo por ejemplo me suele pasar eso, así que haga me correcciones cuando hay",
+        "start": 121.64,
+        "end": 126.6
+    },
+    {
+        "text": " algo que quedó mal escrito, ¿había en ese comentario? Entonces estaba bien, estaba bien",
+        "start": 126.6,
+        "end": 134.04
+    },
+    {
+        "text": " o alguno copio mal, lo doy mal, o no importa, pero está bien, la pared en la aclaración,",
+        "start": 134.04,
+        "end": 139.92
+    },
+    {
+        "text": " ahí era un 1, es muy probable que yo lo haya escrito, porque en general me ha pasado",
+        "start": 139.92,
+        "end": 145.92
+    },
+    {
+        "text": " varias veces que voy escribiendo y copio mal, pero bien, gracias por el comentario, lo que",
+        "start": 145.92,
+        "end": 151.44
+    },
+    {
+        "text": " vamos a hacer en la clase de hoy, hasta ahora estábamos considerando operadores",
+        "start": 151.44,
+        "end": 158.28
+    },
+    {
+        "text": " lineales en espacios vectoriales genericos y lo que vamos a hacer ahora es empezar a meterle",
+        "start": 158.28,
+        "end": 165.6
+    },
+    {
+        "text": " estructuras geométricas o espacios vectoriales, es decir, definir la conceptos que son naturales",
+        "start": 165.6,
+        "end": 172.84
+    },
+    {
+        "text": " de la geometría que uno conoce en R3 o en los plazios de Clio R n, y en el resto del curso",
+        "start": 172.84,
+        "end": 180.64
+    },
+    {
+        "text": " vamos a trabajar con espacios vectoriales con esa estructura geométrica, ustedes han visto",
+        "start": 180.64,
+        "end": 186.83999999999997
+    },
+    {
+        "text": " la noción de producto escalar en R3, ¿no cierto? En R3, en Rn, bueno lo que vamos a empezar",
+        "start": 186.83999999999997,
+        "end": 192.39999999999998
+    },
+    {
+        "text": " definiendo es la noción de producto interno en un espacio vectorial en general y después",
+        "start": 192.39999999999998,
+        "end": 197.51999999999998
+    },
+    {
+        "text": " la noción de norma, y después vamos a empezar a trabajar con cierta clase de transformaciones",
+        "start": 197.51999999999998,
+        "end": 204.16
+    },
+    {
+        "text": " de operadores lineales en espacios con producto interno o en espacios con norma, en fin, bien,",
+        "start": 204.16,
+        "end": 213.0
+    },
+    {
+        "text": " pero entonces precisamos en esta clase y en un par de clases más meter esa estructura",
+        "start": 213.0,
+        "end": 217.92
+    },
+    {
+        "text": " generica, entonces lo que uno hace es trae esos conceptos naturales que vienen de R3 o",
+        "start": 217.92,
+        "end": 223.2
+    },
+    {
+        "text": " de Rn, producto interno norma y las definen un contexto bien general, donde ahora lo que",
+        "start": 223.2,
+        "end": 229.56
+    },
+    {
+        "text": " nos está tomando son un producto interno entre entidades que son pueden ser funciones, por",
+        "start": 229.56,
+        "end": 237.92000000000002
+    },
+    {
+        "text": " ejemplo o lo que fuera, y los elementos en el espacio vectorial. Entonces vamos a empezar",
+        "start": 237.92000000000002,
+        "end": 248.44
+    },
+    {
+        "text": " definiendo lo que es un producto interno, yo a veces como vengo de la física muchas",
+        "start": 248.44,
+        "end": 254.36
+    },
+    {
+        "text": " veces usan naturalmente productos calardigo, productos calardin, lugar y producto interno,",
+        "start": 254.36,
+        "end": 258.68
+    },
+    {
+        "text": " es producto interno, es lo mismo, rola, productos calard se le suele llamar en física, el",
+        "start": 258.68,
+        "end": 264.96
+    },
+    {
+        "text": " producto ese que uno tiene producto punto en R3. Vamos a empezar con la definición de producto",
+        "start": 264.96,
+        "end": 272.48
+    },
+    {
+        "text": " interno. Tenemos un espacio vectorial B sobre un cuerpo capo, ese cuerpo capo en ser",
+        "start": 272.48,
+        "end": 293.52000000000004
+    },
+    {
+        "text": " como siempre los reales o los complejos, los que vamos a trabajar en el curso y vamos",
+        "start": 293.52000000000004,
+        "end": 298.76
+    },
+    {
+        "text": " a definir lo que es una función, un producto interno, es una función que me agarran, dos",
+        "start": 298.76,
+        "end": 304.08
+    },
+    {
+        "text": " elementos del espacio vectorial, un paro de lectores ordenados y me da un escalar, me da",
+        "start": 304.08,
+        "end": 309.84
+    },
+    {
+        "text": " un elemento en ca, eso lo vamos a notar así, una función, lo vamos a notar de esta manera,",
+        "start": 309.84,
+        "end": 319.28
+    },
+    {
+        "text": " con los corchetes esto que no sé cómo se llama, una función que tiene dos argumentos,",
+        "start": 319.28,
+        "end": 328.59999999999997
+    },
+    {
+        "text": " eso no fue yo que tiene dos argumentos, tú que sí me agarras, dos vectores o se me agarran",
+        "start": 328.59999999999997,
+        "end": 334.23999999999995
+    },
+    {
+        "text": " un paro de lectores, un paro ordenado y me da como resultado un escalar y esa función si",
+        "start": 334.23999999999995,
+        "end": 346.59999999999997
+    },
+    {
+        "text": " cumple ciertas propiedades es lo que se llama un producto interno, se llama una función",
+        "start": 346.6,
+        "end": 350.44
+    },
+    {
+        "text": " de estas, es un producto interno, en el espacio vectorial que estamos considerando si cumple",
+        "start": 350.44,
+        "end": 365.08000000000004
+    },
+    {
+        "text": " la siguiente condición, esos puntitos quieren decir que acá en este lugar vienen dos",
+        "start": 365.08,
+        "end": 381.88
+    },
+    {
+        "text": " vectores, yo agarrro un vector acá, un vector acá y tengo como resultado un escalar,",
+        "start": 381.88,
+        "end": 388.03999999999996
+    },
+    {
+        "text": " y esta función de dos vectores cumple una serie de condiciones, las condiciones son",
+        "start": 388.04,
+        "end": 401.0
+    },
+    {
+        "text": " las condiciones que vienen naturalmente de R3, bueno con aún cuidado si no trabaja",
+        "start": 401.0,
+        "end": 408.68
+    },
+    {
+        "text": " con los complejos, primera condición, si yo agarrro y pongo la primera entrada, una suma",
+        "start": 408.68,
+        "end": 415.48
+    },
+    {
+        "text": " de dos vectores, 1b y en la segunda entrada un vector dobleb, acá te tomo un producto interno",
+        "start": 415.48,
+        "end": 423.8
+    },
+    {
+        "text": " de 1b con dobleb, suma de vectores acá, eso lo mismo que ese escalar es lo mismo que el producto",
+        "start": 423.8,
+        "end": 431.16
+    },
+    {
+        "text": " interno de 1 con dobleb, más el producto interno de b con dobleb y esto pedimos que vaya para",
+        "start": 431.16,
+        "end": 444.28000000000003
+    },
+    {
+        "text": " todos los vectores u, b y dobleb en el espacio vectorial, esto es una propiedad de aditividad",
+        "start": 444.28,
+        "end": 462.2
+    },
+    {
+        "text": " en la primera componente, es decir si pongo una suma de vectores, la primera componente,",
+        "start": 462.2,
+        "end": 466.52
+    },
+    {
+        "text": " el producto interno acá es la suma de este, el primer producto interno más el segundo,",
+        "start": 466.52,
+        "end": 471.88
+    },
+    {
+        "text": " u escalar dobleb, más vez escalar dobleb, esto es entonces aditividad con respecto a la primera entrada.",
+        "start": 471.88,
+        "end": 481.88
+    },
+    {
+        "text": " La segunda propiedad tiene que ver con qué pasas si yo agarrro a un vector en la primera",
+        "start": 481.88,
+        "end": 487.28
+    },
+    {
+        "text": " entrada y lo multiplico por un escalar y tomo producto interno con un segundo vector,",
+        "start": 487.28,
+        "end": 493.12
+    },
+    {
+        "text": " es, alpha por u, escalar b, alpha es un escalar, el escalar sale para afuera, es lo mismo que alpha,",
+        "start": 493.12,
+        "end": 503.76
+    },
+    {
+        "text": " u escalar b y esto vale para todos los vectores u y b en el espacio vectorial y para todo escalar",
+        "start": 503.76,
+        "end": 514.36
+    },
+    {
+        "text": " alpha en el cuerpo lo que estamos trabajando, sí o sea que los escalar es cuando yo lo multiplico",
+        "start": 514.36,
+        "end": 522.6
+    },
+    {
+        "text": " por un vector en la primera entrada sale para afuera y esto es lo que se llama homogeneidad con",
+        "start": 522.6,
+        "end": 529.24
+    },
+    {
+        "text": " respecto a la primera componente, insisto estoy creando las cosas con respecto a la primera componente,",
+        "start": 529.24,
+        "end": 543.6
+    },
+    {
+        "text": " esto es aditividad con respecto a la primera componente homogeneidad con respecto a la primera componente.",
+        "start": 543.6,
+        "end": 548.6
+    },
+    {
+        "text": " La tercera condición es que si uno cambia el orden de estos vectores o sea sin lugar de tomar u,",
+        "start": 548.6,
+        "end": 556.0
+    },
+    {
+        "text": " escalar b, uno toma el producto interno de b, escalar u, acá me da que este escalar es igual a este complejo con jugar.",
+        "start": 556.0,
+        "end": 569.6
+    },
+    {
+        "text": " para todo u y b en el espacio vectorial, si se acuerdan lo que es el complejo con jugado, de un número complejo,",
+        "start": 573.6,
+        "end": 580.6
+    },
+    {
+        "text": " si yo tengo un complejo z igual a x parte real, x más y por la parte imaginaria y el con jugado de esto es x menos y por y.",
+        "start": 580.6,
+        "end": 593.6
+    },
+    {
+        "text": " Entonces bueno esto que significa que si yo cambio el orden y estoy trabajando en el cuerpo de los complejos,",
+        "start": 594.6,
+        "end": 602.6
+    },
+    {
+        "text": " si ves un espacio vectorial sobre los complejos, ahí tengo que tener cuidado y poner el complejo con jugado.",
+        "start": 602.6,
+        "end": 607.6
+    },
+    {
+        "text": " Si estoy trabajando en el cuerpo de los reales y en el espacio vectorial real, este complejo con jugado acá es irrelevante,",
+        "start": 607.6,
+        "end": 614.6
+    },
+    {
+        "text": " esto es lo que tenemos que u escalar b es igual a b, escalar u, que es una propiedad de simetría, el producto interno si uno trabaja los reales.",
+        "start": 614.6,
+        "end": 621.6
+    },
+    {
+        "text": " Pero con los complejos hay que tener ese cuidado, yo cambio el orden, tengo que poner complejos con jugado.",
+        "start": 621.6,
+        "end": 628.6
+    },
+    {
+        "text": " Y la última propiedad que tiene que cumplir esta función para hacer un producto interno es que si yo tomo el producto interno,",
+        "start": 628.6,
+        "end": 637.6
+    },
+    {
+        "text": " tiene un vector consigo mismo, así esto trabajando en los reales o en los complejos, esto siempre es un número real,",
+        "start": 638.6,
+        "end": 647.6
+    },
+    {
+        "text": " o sea esto acá está en r y además cumple lo siguiente, cumple que es mayor igual que cero para todo vector en el espacio vectorial",
+        "start": 647.6,
+        "end": 665.6
+    },
+    {
+        "text": " y la única forma de que se cumple que el producto escalar de b consigo mismo sea cero es que yo estoy poniendo el elemento el nulo.",
+        "start": 665.6,
+        "end": 672.6
+    },
+    {
+        "text": " Entonces esto para todo b y además ve escalar b es igual a cero sí sólo sí, b es el vector nulo.",
+        "start": 673.6,
+        "end": 690.6
+    },
+    {
+        "text": " Son propiedades analo a las del producto escalar en r3, bueno, teniendo cuidado que en r3 uno no toma y es complejo con jugado porque eso es un espacio vectorial real.",
+        "start": 691.6,
+        "end": 704.6
+    },
+    {
+        "text": " Lo que estamos diciendo acá es un poco redundante digamos, si no está diciendo en definitiva que b es escalar b es mayor igual que cero con uno pone b es escalar b es mayor igual que cero naturalmente esta submesta.",
+        "start": 704.6,
+        "end": 719.6
+    },
+    {
+        "text": " Entonces el ve escalar b es mayor igual que cero y además si esto va a lecer o ve escalar b es igual a cero sí sólo sí el ve es el vector nulo.",
+        "start": 719.6,
+        "end": 734.6
+    },
+    {
+        "text": " Entonces tenemos aditividad con respecto a la primera entrada o primera componente o con respecto a la primera entrada,",
+        "start": 734.6,
+        "end": 742.6
+    },
+    {
+        "text": " este especie de casi cimetría digamos, que es cimetría en los reales pero los complejos es tomar el complejo con jugado y esta propiedad de tomar productos internos de b consigo mismo.",
+        "start": 742.6,
+        "end": 754.6
+    },
+    {
+        "text": " Entonces una función que cumple estas cuatro condiciones es una función que agarras dos vectores y me da un escalar y cumple esas cuatro condiciones,",
+        "start": 754.6,
+        "end": 762.6
+    },
+    {
+        "text": " y la condición se llama un producto interno sobre el espacio vectorial.",
+        "start": 762.6,
+        "end": 767.6
+    },
+    {
+        "text": " ¿Como de acuerdo? ¿Han visto esta propiedad de lo cierto en galuno?",
+        "start": 767.6,
+        "end": 772.6
+    },
+    {
+        "text": " Ya son cosas que ustedes ya bien conocen.",
+        "start": 772.6,
+        "end": 776.6
+    },
+    {
+        "text": " Una pregunta natural es ¿Qué pasa si uno estuye la aditividad y la homogeneidad con respecto a la segunda componente?",
+        "start": 776.6,
+        "end": 787.6
+    },
+    {
+        "text": " Ahí puedo sacar que se cumple en ese caso usando esta propiedad, dar las vueltas y usar las propiedad anteriores.",
+        "start": 787.6,
+        "end": 794.6
+    },
+    {
+        "text": " Vamos a ver lo que sale. Seguramente ya han visto estas cosas pero no vire mal recordarlas.",
+        "start": 794.6,
+        "end": 801.6
+    },
+    {
+        "text": " Observación.",
+        "start": 806.6,
+        "end": 808.6
+    },
+    {
+        "text": " Se cumple. Si yo la suma la tomo en la segunda entrada o sea hago u, escalar b más 2b, entonces ahí vale también la aditividad.",
+        "start": 809.6,
+        "end": 825.6
+    },
+    {
+        "text": " Eso es u, escalar b más u, escalar 2b.",
+        "start": 825.6,
+        "end": 834.6
+    },
+    {
+        "text": " Si o sea que también tengo la aditividad acá en la segunda entrada.",
+        "start": 838.6,
+        "end": 844.6
+    },
+    {
+        "text": " O escalar b más u, escalar b más u, escalar 2b.",
+        "start": 844.6,
+        "end": 849.6
+    },
+    {
+        "text": " Con la homogeneidad de que tener un poquito de cuidado cuando el escalar está en la segunda entrada,",
+        "start": 849.6,
+        "end": 857.6
+    },
+    {
+        "text": " porque si yo hago u, escalar a, a, por b, ese escalar ahí sale para afuera, es cierto pero sale con el complejo con jugado.",
+        "start": 858.6,
+        "end": 869.6
+    },
+    {
+        "text": " O sea u, escalar a, por b es, a, con jugado por u, escalar b.",
+        "start": 869.6,
+        "end": 876.6
+    },
+    {
+        "text": " O sea en los reales sale directamente a a, pero en los complejos que tienen cuidado poner ahí a, a, con jugado.",
+        "start": 876.6,
+        "end": 882.6
+    },
+    {
+        "text": " Cuando el alfa está en, está en la segunda entrada.",
+        "start": 883.6,
+        "end": 888.6
+    },
+    {
+        "text": " Si, y esto es, bueno como siempre para todo u y b, claro porque los reales no tenés la idea de, el con jugado es lo mismo.",
+        "start": 888.6,
+        "end": 900.6
+    },
+    {
+        "text": " Entonces para todo u y b, en el espacio vectorial y para todo alfa, en el cuerpo de escalares.",
+        "start": 900.6,
+        "end": 909.6
+    },
+    {
+        "text": " ¿A qué?",
+        "start": 913.6,
+        "end": 914.6
+    },
+    {
+        "text": " No, no, lo que yo estoy diciendo es que así usted está trabajando en, en los complejos, cuando vos tomás el producto interno de un vector con si vos mismo,",
+        "start": 914.6,
+        "end": 930.6
+    },
+    {
+        "text": " eso te da un número real. Y ese número real, o sea un número complejo que tiene parte imaginaria cero.",
+        "start": 930.6,
+        "end": 937.6
+    },
+    {
+        "text": " Y ese número real es mayor igual que cero.",
+        "start": 938.6,
+        "end": 942.6
+    },
+    {
+        "text": " Digo eso ya está entendido acá cuando yo pongo a ver escalar a b, mayor que cero estoy diciendo esto salgo, es un número, es mayor que cero.",
+        "start": 942.6,
+        "end": 948.6
+    },
+    {
+        "text": " No sé por qué está escrito así en el libro, bueno, pone un poco confusión.",
+        "start": 948.6,
+        "end": 952.6
+    },
+    {
+        "text": " Pero además esto vale cero, sí solo si ves igual a cero.",
+        "start": 952.6,
+        "end": 957.6
+    },
+    {
+        "text": " Y la última salación que sale es que si uno toma el producto interno de un vector con el cero, o sea si uno hace cero es calar b o hace b es calar cero, eso me da lo mismo y me da el escalar cero.",
+        "start": 957.6,
+        "end": 977.6
+    },
+    {
+        "text": " O sea tomar el producto interno del vector nulo con el que el vector me da el escalar, el cero, el cero de los escalares.",
+        "start": 977.6,
+        "end": 986.6
+    },
+    {
+        "text": " Para todo. Bueno, como siempre no confundir, esto ya lo se abre ustedes de ageura 1, no confundir los cero, cuando yo pongo acá cero es el cero vector, con yo pongo acá cero es calar.",
+        "start": 986.6,
+        "end": 1001.6
+    },
+    {
+        "text": " No está de más recordar eso, lo mismo acá, este es el cero escalar, este es el cero vector.",
+        "start": 1001.6,
+        "end": 1008.6
+    },
+    {
+        "text": " Esta propiedad son triviales de probar, así como son triviales las vamos a probar.",
+        "start": 1008.6,
+        "end": 1025.6
+    },
+    {
+        "text": " Bueno, preguntas, ya vamos a poner algunos ejemplos más allá de los que uno conoce de RN, de espacio de NUPLAT, en un ratito ponemos.",
+        "start": 1039.6,
+        "end": 1054.6
+    },
+    {
+        "text": " Vamos a ver esas demostraciones, bueno, todas salen de acá las propiedades esas que tenemos aquí, que teníamos escrita saca.",
+        "start": 1054.6,
+        "end": 1064.6
+    },
+    {
+        "text": " Es absolutamente trivial lo que voy a hacer acá, sí, pero vamos a hacer con cuidado. Vamos a escribir esto, primera propiedad.",
+        "start": 1068.6,
+        "end": 1091.6
+    },
+    {
+        "text": " U escalar B más W. En la definición del producto interior yo tengo la additividad con respecto a la primera entrada.",
+        "start": 1092.6,
+        "end": 1103.6
+    },
+    {
+        "text": " Entonces lo que voy a hacer es esto, usando, voy a cambiar el orden de este vector con este y voy a tomar complejo con jugado y ahí voy a estar trabajando con la additividad la primera entrada.",
+        "start": 1103.6,
+        "end": 1113.6
+    },
+    {
+        "text": " U escalar B más W es lo mismo que B más W B, escalar U complejo con jugado.",
+        "start": 1113.6,
+        "end": 1125.6
+    },
+    {
+        "text": " Y cómo sigue la cosa? Bueno, ahora sé que hay línea y la con respecto a la primera entrada. Entonces esto me quedará.",
+        "start": 1127.6,
+        "end": 1134.6
+    },
+    {
+        "text": " Esto me quedará B escalar U, B escalar U más W B, escalar U complejo con jugado, se asuma de escalares.",
+        "start": 1134.6,
+        "end": 1146.6
+    },
+    {
+        "text": " Esto obviamente es por la propiedad, esto es por uno, esto es por la propiedad 3.",
+        "start": 1146.6,
+        "end": 1154.6
+    },
+    {
+        "text": " Esto son este calar más este calar complejo con jugado. Y ahora que uso, el complejo con jugado, una suma, las sumas los complejos con jugados, eso es B escalar U complejo con jugado más W escalar U complejo con jugado.",
+        "start": 1154.6,
+        "end": 1177.6
+    },
+    {
+        "text": " Bueno, ya saben que hago al final. Doy vuelta a esto, B escalar U complejo con jugado, es lo mismo que B escalar B y doy vuelta a esto.",
+        "start": 1177.6,
+        "end": 1196.6
+    },
+    {
+        "text": " Esto le des escalar U complejo con jugado, es lo mismo que B escalar W. O sea que usando las propiedades que vimos sale, sale la línea lidar con respecto a la segunda entrada.",
+        "start": 1196.6,
+        "end": 1211.6
+    },
+    {
+        "text": " ¿Te entendíos? Me piensancillos.",
+        "start": 1211.6,
+        "end": 1216.6
+    },
+    {
+        "text": " Esta acá es igualmente sencillo, hay que dar la vuelta tomando complejo con jugado y ver lo que pasa, y usar las propiedades que definen el producto interno.",
+        "start": 1217.6,
+        "end": 1228.6
+    },
+    {
+        "text": " U escalar Alpha por B, por propiedad 3 es lo, perdón.",
+        "start": 1229.6,
+        "end": 1237.6
+    },
+    {
+        "text": " U escalar Alpha con B por propiedad 3 es lo mismo que Alpha por B escalar U complejo con jugado.",
+        "start": 1238.6,
+        "end": 1246.6
+    },
+    {
+        "text": " Por 3. Ahora, el Alpha está en la primera entrada, los Alpha para primera entrada sale para afuera, entonces esto me queda Alpha por B escalar U, todo complejo con jugado.",
+        "start": 1249.6,
+        "end": 1264.6
+    },
+    {
+        "text": " Esto es por la propiedad 2.",
+        "start": 1265.6,
+        "end": 1270.6
+    },
+    {
+        "text": " Claro, ahí está el Alpha, eso que está bajo complejo con jugado, el Alpha sale para afuera, pero el complejo con jugado está arriba a todo.",
+        "start": 1275.6,
+        "end": 1282.6
+    },
+    {
+        "text": " Ahora, el complejo con jugado, un producto, es el producto lo complejo con jugado, propiedad los complejos. O sea que esto lo mismo que Alpha complejo con jugado por B escalar U complejo con jugado.",
+        "start": 1282.6,
+        "end": 1293.6
+    },
+    {
+        "text": " Bueno, con el Alpha con jugado no tengo manera de lo quejar así, pero lo que puede hacer es cambiar el orden, a través de la C, a través de la C, complejo con jugado, lo mismo que U escalar B.",
+        "start": 1293.6,
+        "end": 1307.6
+    },
+    {
+        "text": " Y ahí tengo la propiedad 2, es decir que ojo con eso, los alfas de la segunda entrada salen como complejo con jugado.",
+        "start": 1307.6,
+        "end": 1315.6
+    },
+    {
+        "text": " O sea, con los reales y un trabajo con los reales, todos bien, sacan las contantes así como así, pero si trabajan con los complejos salen en la segunda entrada con jugados.",
+        "start": 1316.6,
+        "end": 1326.6
+    },
+    {
+        "text": " Bueno, son tan sencillas de esta propiedad, vamos a ver la última serie de escalar B, ¿cómo se les ocurre por probar la última?",
+        "start": 1332.6,
+        "end": 1344.6
+    },
+    {
+        "text": " Bueno, hay infinidad de manera de probarlo, pero una de ellas es pensar este cero, este cero acá como el producto del escalar cero por el vector B.",
+        "start": 1345.6,
+        "end": 1364.6
+    },
+    {
+        "text": " Por ejemplo, lo puede poner como B, menos B o lo que fuera, digo, hay mil forma de hacerlo. Ahora, este escalar cero, el cero es calar, esto sale para fuera por la propiedad 3, o sea que esto sería cero por B es calar B y eso es cero, esto propiedad 3 y acá tengo entonces cero por un escalar y eso es el cero.",
+        "start": 1365.6,
+        "end": 1390.6
+    },
+    {
+        "text": " Y ya no es logamente para la otra diota, sí, es más aún uno puede usar la propiedad de cambiar el orden, B es calar cero es cero es calar B, con jugado que es cero, con jugado que es cero.",
+        "start": 1390.6,
+        "end": 1405.6
+    },
+    {
+        "text": " Como sea B es calar cero, es lo mismo que cero es calar B, con un precio con jugado, cero es calar B acabamos de ver que es cero y con jugado el cero es cero.",
+        "start": 1405.6,
+        "end": 1420.6
+    },
+    {
+        "text": " Al final de la clase, esta parte es un poco burrida porque es dar las definiciones en propiedades básicas y algunos ejemplos, pero al final de la clase empiezan a salir las cosas interesantes que vamos a usar en el curso.",
+        "start": 1421.6,
+        "end": 1436.6
+    },
+    {
+        "text": " Es ejemplo, vamos a ver ejemplo de espacios vectoriales y de productos internos, el más común es uno que ustedes han visto, que es espacios vectoriales reen, es decir, espacios de gnv plus y después dado...",
+        "start": 1436.6,
+        "end": 1461.6
+    },
+    {
+        "text": " Si yo considero un vector B con entradas B1, B2 hasta Bn y un vector WB con entradas W1, W2, Wn, el producto escalar es esto, un producto internos es.",
+        "start": 1466.6,
+        "end": 1489.6
+    },
+    {
+        "text": " Primera coordena db por primera vez WB, más segundo WB, etcétera, o sea, la suma y desde 1 hasta n, db y por WB.",
+        "start": 1490.6,
+        "end": 1502.6
+    },
+    {
+        "text": " Este es el producto interno usual en Rn que ustedes han visto en galuro.",
+        "start": 1502.6,
+        "end": 1509.6
+    },
+    {
+        "text": " Vamos. Lo han visto, esto no es cierto en galuro, sí.",
+        "start": 1509.6,
+        "end": 1518.6
+    },
+    {
+        "text": " En un trabajo con... Si acá en lugar de vectores con entradas reales, pongo vectores con entradas complejas, lo que tengo ahí es el espacio vectorial, sea la n.",
+        "start": 1518.6,
+        "end": 1531.6
+    },
+    {
+        "text": " O sea, son los vectores donde ahora las entradas son reales, son complejas, por favor.",
+        "start": 1532.6,
+        "end": 1538.6
+    },
+    {
+        "text": " Entonces, si ahora tengo un vector B1, B2, Bn, donde ahora estos chirinbolos acá son complejos,",
+        "start": 1538.6,
+        "end": 1550.6
+    },
+    {
+        "text": " entonces el producto db con WB, producto natural en CN, es esto, es la primera componente de esta por la conjugada de esta,",
+        "start": 1550.6,
+        "end": 1567.6
+    },
+    {
+        "text": " más la segunda de esta por la conjugada de esta, etcétera. O sea, suma db y WB y complejo conjugado y desde 1 hasta n.",
+        "start": 1567.6,
+        "end": 1578.6
+    },
+    {
+        "text": " O sea, esta función que me agarró vectores CN y me da un complejo, un escalar, y esta función que me agarró vector de Rn y me da un escalar real, son verifican todas las propiedades que definen un producto interno.",
+        "start": 1578.6,
+        "end": 1597.6
+    },
+    {
+        "text": " O sea, esto es un producto interno y esto es un producto interno. Podría definir otros productos interno acá y acá, pero bueno, estos son ejemplos.",
+        "start": 1597.6,
+        "end": 1607.6
+    },
+    {
+        "text": " Si, guarda acá hay que poner complejo conjugado para que salga la propiedad de esa de que los escalares salen con el conjugado.",
+        "start": 1608.6,
+        "end": 1616.6
+    },
+    {
+        "text": " Bueno, la parecía la cimetría. Y un tercer ejemplo, esos son espacios de dimensión finita, vamos a poner un ejemplo de dimensión infinita.",
+        "start": 1616.6,
+        "end": 1631.6
+    },
+    {
+        "text": " Vamos a poner un ejemplo de un espacio de funciones. Vamos a considerar como espacio vectorial el conjunto de funciones continuos en 0,1 que lo vamos a notar así.",
+        "start": 1638.6,
+        "end": 1652.6
+    },
+    {
+        "text": " No sé si esto lo han visto también. Sí. Es el conjunto de funciones.",
+        "start": 1652.6,
+        "end": 1656.6
+    },
+    {
+        "text": " F de 0,1 en los reales, tal que F es continuo.",
+        "start": 1657.6,
+        "end": 1664.6
+    },
+    {
+        "text": " Sí, acá es importante que las funciones sean continuos.",
+        "start": 1672.6,
+        "end": 1675.6
+    },
+    {
+        "text": " Y entonces, lo que si uno define la siguiente función, que me agarrará dos funciones y me da un real, un escalar, definir la siguiente manera,",
+        "start": 1675.6,
+        "end": 1685.6
+    },
+    {
+        "text": " F es calar G, según la función que me agarrará dos elementos de acá, y me construye un escalar de la siguiente manera. Me interazan el producto, el funciona en todo el dominio entre 0 y 1.",
+        "start": 1685.6,
+        "end": 1704.6
+    },
+    {
+        "text": " Eso acá se puede prover que también compre las propiedades de un producto calar.",
+        "start": 1706.6,
+        "end": 1712.6
+    },
+    {
+        "text": " O sea, no las vamos a probar, verifiquen a ustedes si es que no lo han visto en el 1. Verifiquen que esto compre el producto interno, el producto escalado.",
+        "start": 1713.6,
+        "end": 1721.6
+    },
+    {
+        "text": " Dejete un producto interno, un producto interno, y esto también.",
+        "start": 1721.6,
+        "end": 1725.6
+    },
+    {
+        "text": " La única más complicada acá es la cuarta. Es ver que si yo tomo el producto escalado de F consigo mismo, mayor o mayor que 0, bueno, esa estribial.",
+        "start": 1725.6,
+        "end": 1733.6
+    },
+    {
+        "text": " Pero ver que solamente tengo 0, F es calar F es igual a 0, si el F es la nula.",
+        "start": 1734.6,
+        "end": 1739.6
+    },
+    {
+        "text": " Y eso por qué se cumple? No, miren. Veamos por ejemplo en la propiedad, la última propiedad acá, la cuarta.",
+        "start": 1741.6,
+        "end": 1749.6
+    },
+    {
+        "text": " Eso se lo voy a hacer como ejercicio, ¿no? ejercicio, eso obvio, era un poquito. ejercicio, verifiquen las propiedades del producto interno.",
+        "start": 1750.6,
+        "end": 1762.6
+    },
+    {
+        "text": " Por ejemplo, lo que les decía recién, ejemplo en la última, lo que decía recién, si uno agarra el producto interno de F consigo mismo,",
+        "start": 1763.6,
+        "end": 1792.6
+    },
+    {
+        "text": " eso es interno entre 0 y 1 de F de T al cuadrado de T, eso obviamente es mayor o al que sea. Ahora lo que yo le preguntaba es ¿por qué sí F es calar F es igual a 0?",
+        "start": 1792.6,
+        "end": 1809.6
+    },
+    {
+        "text": " Entonces necesariamente F tiene que ser igual a 0, que ha funcionado identicamente 0.",
+        "start": 1810.6,
+        "end": 1815.6
+    },
+    {
+        "text": " O sea, está claro que si F es la funcionidad identicamente 0, el producto interno de F consigo mismo es 0, la fletcha que va a este lado por este es fácil.",
+        "start": 1817.6,
+        "end": 1829.6
+    },
+    {
+        "text": " Pero ¿por qué esto implica esto?",
+        "start": 1829.6,
+        "end": 1832.6
+    },
+    {
+        "text": " Exactamente, exactamente, pero eso es, ahí es fundamental que la F se ha continuado, exactamente, ¿no? Entendido lo que lo quise, yo tengo la función F cuadrado.",
+        "start": 1843.6,
+        "end": 1854.6
+    },
+    {
+        "text": " F cuadrado de T, el integrando que estoy poniendo ahí, esa función está definida entre 0 y 1.",
+        "start": 1855.6,
+        "end": 1861.6
+    },
+    {
+        "text": " Si hubiera, esta función es mayor o al que 0, si hubiera un punto acá, un T0, en donde fuese estrictamente positiva, entonces por continuidad debería ser positiva en un entornito ahí, por continuidad.",
+        "start": 1862.6,
+        "end": 1875.6
+    },
+    {
+        "text": " Entonces ahí ya tendría una contribución al área total que sería estrictamente mayor que 0, entonces no podría ser 0 y ese producto interno.",
+        "start": 1876.6,
+        "end": 1884.6
+    },
+    {
+        "text": " Pero es importante que F se ha continuado, porque si no es continuo eso no es cierto, por ejemplo si no tomo la función que vale acá 0 en todos lados, excepto en un punto, esa función no es la función identicamente en una hora y sin embargo la integral de F es con si lo mismo me da a 0.",
+        "start": 1885.6,
+        "end": 1900.6
+    },
+    {
+        "text": " Por eso ya lo lo sabían, pero no venía mal recordar.",
+        "start": 1901.6,
+        "end": 1904.6
+    },
+    {
+        "text": " Siguiente herramienta geómetria que vamos a definir, la norma sobre un espacio vectoria, que también viene de traer las ideas de norma de vectores en R3 o en Rn.",
+        "start": 1908.6,
+        "end": 1919.6
+    },
+    {
+        "text": " Y de nuevo una norma, bueno ahora es una función, que me agarra vectores, me da un número real siempre, o sea, aun cuando usted trabajando un cuerpo complejo, me da un número real que cumple una serie de condiciones.",
+        "start": 1920.6,
+        "end": 1931.6
+    },
+    {
+        "text": " Ve un espacio vectoria a suerca,",
+        "start": 1939.6,
+        "end": 1941.6
+    },
+    {
+        "text": " entonces una función, que agarra vector y me da un real ahora que le vamos a notar así, una función,",
+        "start": 1950.6,
+        "end": 1958.6
+    },
+    {
+        "text": " que me da un vector acá, lo pongo acá y me da un numerito real, eso es una norma,",
+        "start": 1961.6,
+        "end": 1967.6
+    },
+    {
+        "text": " y en el espacio vectorial, si cumple la siguiente otra propiedad.",
+        "start": 1967.6,
+        "end": 1981.6
+    },
+    {
+        "text": " Repito, el espacio vectorial puede estar definido sobre los complejos, pero una norma es una función que me da a Rn, un vector y siempre me da un real.",
+        "start": 1982.6,
+        "end": 1993.6
+    },
+    {
+        "text": " Y que cumple la siguiente condición, primero, la norma siempre es mayor igual que 0,",
+        "start": 1993.6,
+        "end": 2002.6
+    },
+    {
+        "text": " y además es igual a 0, si solo si el vector B, del cual estoy tomando la norma, es el vector nubro,",
+        "start": 2002.6,
+        "end": 2016.6
+    },
+    {
+        "text": " norma B, mayor que 0 para todo B y norma B igual a 0 si solo si, es el vector nubro.",
+        "start": 2017.6,
+        "end": 2022.6
+    },
+    {
+        "text": " Segunda condición, la norma de un escalar por un vector, bueno el escalar sale para afuera, pero sale con el módulo,",
+        "start": 2022.6,
+        "end": 2037.6
+    },
+    {
+        "text": " o sea, si son escalar reales, el valor absoluto y si son complejos es el módulo, la raiz cuadrada de el número por su conjugaro.",
+        "start": 2038.6,
+        "end": 2046.6
+    },
+    {
+        "text": " O sea esto lo mismo, que el módulo de alpha por la norma de B, para todo B, vector y por a todo alpha escalar,",
+        "start": 2046.6,
+        "end": 2063.6
+    },
+    {
+        "text": " y la tercera propiedad es lo que se llama la desigualdad del triángulo, que me dice que la norma de una suma de vectores es menor igual que la suma de las normas.",
+        "start": 2063.6,
+        "end": 2075.6
+    },
+    {
+        "text": " Norma de B, más norma de 2d.",
+        "start": 2076.6,
+        "end": 2081.6
+    },
+    {
+        "text": " Esto también ya lo han visto, la suma de norma, una suma de una suma de las normas y esto lo que se llama la desigualdad triángulo.",
+        "start": 2085.6,
+        "end": 2095.6
+    },
+    {
+        "text": " O sea que toda función, una función que agarras vectores, pero es lo que es real, que cumple estas tres condiciones, definía positiva, igual a 0 si se lo sirve, igual a 0, que los escalar sale para afuera con el módulo y que la cumple la desigualdad triángulo es una norma.",
+        "start": 2106.6,
+        "end": 2127.6
+    },
+    {
+        "text": " Estamos, esto ya lo han visto, también, estamos repasando galuno, ya que estamos acá, ¿quién me da otro producto interno acá en el espacio de funciones?",
+        "start": 2128.6,
+        "end": 2144.6
+    },
+    {
+        "text": " Ahí tenemos un producto interno, porque el producto interno que uno define y con el cual uno trabaje depende del tipo problema que uno esté estudiando, a veces se come a usar un producto interno, a veces se come a otro, en fin.",
+        "start": 2145.6,
+        "end": 2161.6
+    },
+    {
+        "text": " Pero fíjense que si yo acá, por ejemplo pusiera, ¿qué pasa si yo agarrara una función cualquiera continua en 0 y 1, una función acá? Una p, ya me molé.",
+        "start": 2162.6,
+        "end": 2173.6
+    },
+    {
+        "text": " Y consíro el producto interno, consíro esto, de F escalar G es de chanto acá p, p, t, f, t, y esto está siempre fijo.",
+        "start": 2175.6,
+        "end": 2184.6
+    },
+    {
+        "text": " Eso también, con que las propiedades de un producto interno.",
+        "start": 2185.6,
+        "end": 2189.6
+    },
+    {
+        "text": " Con p, fijo. Agarrara le pongo ahí un p, f, p, y hago p, f, t, f, t, es como si pusiera una ponderación ahí a los puntos de t.",
+        "start": 2191.6,
+        "end": 2201.6
+    },
+    {
+        "text": " A lo que voy es que es que el producto interno, al igual que la no, el macuno considera, es algo apropio al problema, depende de las cosas que uno quiere estudiar.",
+        "start": 2202.6,
+        "end": 2220.6
+    },
+    {
+        "text": " Este tipo de, de producto interno, parece mucho en, en probabilidad estadística.",
+        "start": 2220.6,
+        "end": 2227.6
+    },
+    {
+        "text": " Estos son densidades de probabilidad a cosas por la t.",
+        "start": 2228.6,
+        "end": 2231.6
+    },
+    {
+        "text": " Bueno, y esto porque se llama de si vuelve a trengular, esto se llama de si vuelve a trengular, porque si yo agarrro el vector B y le sumo el vector W y en consecuencia tengo acá B más W,",
+        "start": 2232.6,
+        "end": 2245.6
+    },
+    {
+        "text": " El largo de este lado, el largo de cualquier lado un triángulo es menor igual que el sumo al otro lado, el largo de esto es menor que esto y esto.",
+        "start": 2246.6,
+        "end": 2255.6
+    },
+    {
+        "text": " El camino este, acá es el camino más corto, en lo que tu que esto más esto.",
+        "start": 2256.6,
+        "end": 2262.6
+    },
+    {
+        "text": " Y ahora sí vamos a ver ejemplo, si seguramente acá hay ejemplos que ustedes no han visto en galu uno.",
+        "start": 2265.6,
+        "end": 2272.6
+    },
+    {
+        "text": " Bueno, vamos a empezar poniendo ejemplo en RDN donde un vector general y que ahí es una NU.",
+        "start": 2276.6,
+        "end": 2293.6
+    },
+    {
+        "text": " Un primer ejemplo de normas a que ustedes conocen, no el módulo de un vector NRN, que es que es esto.",
+        "start": 2293.6,
+        "end": 2305.6
+    },
+    {
+        "text": " En la suma de las componentes al cuadrado, R2, esa es la norma común y corriente que uno usa NR3 o en los espacios.",
+        "start": 2310.6,
+        "end": 2322.6
+    },
+    {
+        "text": " El clívio, ¿no? NRN.",
+        "start": 2324.6,
+        "end": 2326.6
+    },
+    {
+        "text": " Pero hay muchas otras normas, por ejemplo, esta acá, agarrro y sumo los valores absolutos de las componentes de subi, eso también complica una norma.",
+        "start": 2328.6,
+        "end": 2348.6
+    },
+    {
+        "text": " O más aún, puede hacerlo siguiente, puedo agarrar este...",
+        "start": 2354.6,
+        "end": 2360.6
+    },
+    {
+        "text": " Fíjense que acá estoy agarrando las componentes del módulo elevando las a la potencia 1, acá es como si estuviera agarrando y elevando las a la potencia 2 a los módulos.",
+        "start": 2361.6,
+        "end": 2370.6
+    },
+    {
+        "text": " Yo puedo agarrar las componentes del módulo elevando las a la potencia P, un DPS1, 2, 3, lo que fuera, sumar esto y tomar la raíz cuadrada P, esto sea elevarlo a uno sobre P.",
+        "start": 2371.6,
+        "end": 2387.6
+    },
+    {
+        "text": " Eso es lo que se llama y eso lo puede hacer para P igual a 1, 2, 3, etcétera, lo que fuera.",
+        "start": 2388.6,
+        "end": 2399.6
+    },
+    {
+        "text": " Y eso es lo que llaman las normas P, acá se le suele poner un subindice abajo, esta es la norma P y eso son casos particulares de esta.",
+        "start": 2401.6,
+        "end": 2412.6
+    },
+    {
+        "text": " Esto sería la norma 1 con P igual a 1 y esto sería la norma 2 con P igual a 2.",
+        "start": 2412.6,
+        "end": 2419.6
+    },
+    {
+        "text": " Y también hay otra norma que se le llama la norma infinita, esta la vieron también.",
+        "start": 2419.6,
+        "end": 2426.6
+    },
+    {
+        "text": " Han visto todo la norma infinita, ese considera el máximo de los valores absolutos las entradas ahí.",
+        "start": 2426.6,
+        "end": 2440.6
+    },
+    {
+        "text": " Todas estas cosas, todas estas funciones cumplen con la definición de norma.",
+        "start": 2441.6,
+        "end": 2447.6
+    },
+    {
+        "text": " Se lo dejo que lo verifique. Ahí está dicho en el libro guarda que la desigualdad triangular acasale relativamente fácil pero en esos casos es un poco más complicado.",
+        "start": 2447.6,
+        "end": 2459.6
+    },
+    {
+        "text": " Es un poco más complicado porque son desigualdades que quizás ustedes no conozcan pero se verifique.",
+        "start": 2459.6,
+        "end": 2466.6
+    },
+    {
+        "text": " Bueno muy bien, ya vamos a la parte interesante, esto se está poniendo a burridísimo pero ya vamos a la parte interesante.",
+        "start": 2471.6,
+        "end": 2492.6
+    },
+    {
+        "text": " Bueno y en un par de ejemplos más en la dimensión infinita, por ejemplo funciones continuas.",
+        "start": 2493.6,
+        "end": 2499.6
+    },
+    {
+        "text": " Un par de ejemplos más en la dimensión infinita, por ejemplo funciones continuas.",
+        "start": 2500.6,
+        "end": 2506.6
+    },
+    {
+        "text": " Yo ya no empiezan a aparecer cosas raras, ya está acá está todo bien masticado pero ahora viene la parte más interesante.",
+        "start": 2506.6,
+        "end": 2528.6
+    },
+    {
+        "text": " Ejemplos en dimensión infinita, por ejemplo yo puedo considerar la funciones continuas en A, B como en espacio vectorial lo que les consideramos racían.",
+        "start": 2529.6,
+        "end": 2547.6
+    },
+    {
+        "text": " Y ahí tenemos el equivalente a este producto, a esta norma.",
+        "start": 2548.6,
+        "end": 2557.6
+    },
+    {
+        "text": " La norma de F, una norma es por ejemplo esto, es agarrar, efente considera el valor absoluto a la potencia P, integrar esto entre A y B y después tomar la raíz pezima.",
+        "start": 2558.6,
+        "end": 2580.6
+    },
+    {
+        "text": " Y esto es lo que se llama la norma LP.",
+        "start": 2580.6,
+        "end": 2587.6
+    },
+    {
+        "text": " Si es donde P puede ser 1, 2, 3, lo que fue.",
+        "start": 2587.6,
+        "end": 2593.6
+    },
+    {
+        "text": " Y eso es lo que se llama las normas LP, la norma, la elevina por leve, por la integral leve, pero son generalización de la norma cuadrática usual.",
+        "start": 2593.6,
+        "end": 2605.6
+    },
+    {
+        "text": " Y el equivalente a la última, a la norma infinito acá es, la norma de F infinito es el máximo valor de la norma de F infinito.",
+        "start": 2608.6,
+        "end": 2621.6
+    },
+    {
+        "text": " El máximo valor del modo de F de X para X entre A y B, o sea el máximo valor que toma esta función, ese es otro ejemplo de la norma.",
+        "start": 2621.6,
+        "end": 2644.6
+    },
+    {
+        "text": " Y verificen que complementó esta las condiciones de norma.",
+        "start": 2644.6,
+        "end": 2654.6
+    },
+    {
+        "text": " Preguntas.",
+        "start": 2654.6,
+        "end": 2661.6
+    },
+    {
+        "text": " Bueno, lo que sigue ahora es ver, tenemos la definición de producto interno, lo que vamos a ver ahora es que dado un espacio de total con producto interno, se define de manera natural, una norma e inducida por ese producto interno.",
+        "start": 2661.6,
+        "end": 2686.6
+    },
+    {
+        "text": " Si yo tengo un espacio, si yo tengo un espacio con un producto interno, un espacio de tutorial v, donde acá tengo una operación de producto interno, entonces puedo definir acá una norma que esta asociada ese producto interno, que la norma inducida por ese producto interno.",
+        "start": 2686.6,
+        "end": 2703.6
+    },
+    {
+        "text": " Convertir a esto lo que se llama un espacio de tutorial normal.",
+        "start": 2703.6,
+        "end": 2707.6
+    },
+    {
+        "text": " Y la manera de hacerlo es bien sencilla y bien natural que consiste en tomar el producto escalar de un vector consigo mismo y tomar la raíz cuadrada de eso.",
+        "start": 2707.6,
+        "end": 2726.6
+    },
+    {
+        "text": " Entonces, dado un espacio vectorial, con producto interno,",
+        "start": 2726.6,
+        "end": 2748.6
+    },
+    {
+        "text": " esa función que agarras dos rectores, me dan escalar y que cumpe las propiedades que vimos al principio, se define.",
+        "start": 2756.6,
+        "end": 2766.6
+    },
+    {
+        "text": " Se puede definir una norma, que es lo que se llama la norma inducida por el producto interno.",
+        "start": 2766.6,
+        "end": 2775.6
+    },
+    {
+        "text": " De acuerdo, dado un espacio de tutorial v, con producto interno, se define la norma inducida por el producto interno como la función que me agarras un vector v y la asina, el producto interno de v consigo mismo.",
+        "start": 2797.6,
+        "end": 2822.6
+    },
+    {
+        "text": " Quiso sabemos que es un real mayor o el que cero, la raíz cuadrada de eso, para cada v en el espacio de tutorial.",
+        "start": 2823.6,
+        "end": 2834.6
+    },
+    {
+        "text": " Esa es la norma inducida por el producto interno, es decir, tengo definido un producto interno, defino una función.",
+        "start": 2834.6,
+        "end": 2842.6
+    },
+    {
+        "text": " De esta manera, a cada v, así, no la raíz cuadrada, pero la raíz cuadrada, así, el producto interno de v consigo mismo y esa función cumple las tres propiedades que definen una norma.",
+        "start": 2843.6,
+        "end": 2853.6
+    },
+    {
+        "text": " Y esto es justamente la norma asociada o inducida por el producto interno.",
+        "start": 2853.6,
+        "end": 2858.6
+    },
+    {
+        "text": " Entonces, habría que ver, por ejemplo, el lugar que esto es una norma, que esto cumple con las propiedades de una norma.",
+        "start": 2873.6,
+        "end": 2882.6
+    },
+    {
+        "text": " Díganme que no lo vieron en galuno, pues, ¿y no lo vieron en galuno? ¿No? ¿No? ¿Es que no?",
+        "start": 2883.6,
+        "end": 2891.6
+    },
+    {
+        "text": " Lo hacemos, lo hacemos en un ratito se termine a todo esto, este repaso de galuno, si es que ya lo vieron en galuno.",
+        "start": 2891.6,
+        "end": 2906.6
+    },
+    {
+        "text": " Pero vamos a hacerlo, este, yo quiero verificar que esto es una norma, recuerden lo que tengo un producto interno y te fina una función así y quiero verificar que esto es una norma.",
+        "start": 2907.6,
+        "end": 2915.6
+    },
+    {
+        "text": " Lo que llama la norma inducida por el producto interno.",
+        "start": 2915.6,
+        "end": 2918.6
+    },
+    {
+        "text": " Entonces, para verificar que es una norma y que verificar que cumple las tres propiedades que definen una norma sabiendo que esto acá es un producto interno.",
+        "start": 2919.6,
+        "end": 2934.6
+    },
+    {
+        "text": " Si entonces, la primera propiedad es que esto es un numerito mayor o mayor o el que cero, lo cual es obvio por la definición de producto interno.",
+        "start": 2935.6,
+        "end": 2951.6
+    },
+    {
+        "text": " El producto interno un ve consigo mismo, es un real mayor o el que cero, o sea esto es siempre un número mayor o el que cero, por lo tanto, la red cuadrada es el número mayor o el que cero, siempre mayor o el que cero.",
+        "start": 2951.6,
+        "end": 2962.6
+    },
+    {
+        "text": " Y además, cuando tengo cero ahí, tengo cero ahí sí solo sí, tengo cero acá, la red cuadrada de ve consigo mismo, el producto interno de ve consigo mismo es cero.",
+        "start": 2964.6,
+        "end": 2981.6
+    },
+    {
+        "text": " Pero por propiedad el producto interno, la única forma de tener que el producto interno de ve consigo mismo es cero, es tener ve el cero.",
+        "start": 2981.6,
+        "end": 2991.6
+    },
+    {
+        "text": " Estamos, o sea esto lo mismo que debe escalar ve igual a cero y esto es sí solo sí ve igual a cero. Esto es por propiedades del producto interno, la propiedad 4 por 20.",
+        "start": 2992.6,
+        "end": 3006.6
+    },
+    {
+        "text": " La norma esta función para todo ve mayor o igual que cero y además si vale cero sí solo sí el producto interno de ve consigo mismo cero, o sea sí solo sí ve igual a cero.",
+        "start": 3007.6,
+        "end": 3027.6
+    },
+    {
+        "text": " Esa es la primera propiedad de la norma. La segunda propiedad es ver que pasaba con los escalares, si yo pongo norma de alfa por ve, eso por definición es la red cuadrada de alfa con ve, escalara alfa con ve.",
+        "start": 3027.6,
+        "end": 3048.6
+    },
+    {
+        "text": " ¿Y qué diablos hago ahí? Guarda, cuarda como se cuarda, no cuarda, no cuarda, el alfa de la primera entraza sale como alfa y de la segunda sale como alfa con jugado.",
+        "start": 3048.6,
+        "end": 3071.6
+    },
+    {
+        "text": " Por eso no era un capricho tomar el conjugado, de la primera entraza sale como alfa y de la segunda sale como alfa con jugado y ahí me queda ve escalar ve.",
+        "start": 3072.6,
+        "end": 3082.6
+    },
+    {
+        "text": " Ahora alfa por alfa con jugado, exactamente es el módulo del alfa al cuadrado, el módulo del escalara alfa al cuadrado.",
+        "start": 3082.6,
+        "end": 3093.6
+    },
+    {
+        "text": " Entonces ahora sí tengo raíz cuadrada de módulo del alfa al cuadrado, eso sale afuera la raíz como módulo de alfa por raíz cuadrada de ve escalar ve.",
+        "start": 3093.6,
+        "end": 3105.6
+    },
+    {
+        "text": " Y esto acá era exactamente la norma de ve.",
+        "start": 3105.6,
+        "end": 3110.6
+    },
+    {
+        "text": " Por eso se sacan como jugados en la segunda entraza, justamente para que esas cosas que en definidas positivas acá dentro.",
+        "start": 3111.6,
+        "end": 3119.6
+    },
+    {
+        "text": " Y la tercera es la condición cual es la de si vuela triangular.",
+        "start": 3119.6,
+        "end": 3124.6
+    },
+    {
+        "text": " Bueno, esta es la más complicada y esta la vamos a ver la próxima clase.",
+        "start": 3128.6,
+        "end": 3133.6
+    },
+    {
+        "text": " Porque involucra a una desigualdad que vamos a ver en un ratito.",
+        "start": 3134.6,
+        "end": 3140.6
+    },
+    {
+        "text": " Sí, entonces efectivamente esto es una norma. Es decir, tengo un producto interno, puedo definir una norma enducida por el producto interno.",
+        "start": 3145.6,
+        "end": 3153.6
+    },
+    {
+        "text": " La pregunta natural es si dada una norma dada cualquier norma, puedo construir un producto interno, tal que es la norma enducida del producto interno.",
+        "start": 3153.6,
+        "end": 3161.6
+    },
+    {
+        "text": " Y la respuesta es que no.",
+        "start": 3162.6,
+        "end": 3164.6
+    },
+    {
+        "text": " No, cuártelo.",
+        "start": 3167.6,
+        "end": 3168.6
+    },
+    {
+        "text": " Se entiende a lo que estamos haciendo acá. Acá partimos un producto interno y con un producto interno definimos una norma.",
+        "start": 3169.6,
+        "end": 3175.6
+    },
+    {
+        "text": " Que es la norma enducida por el producto interno.",
+        "start": 3175.6,
+        "end": 3178.6
+    },
+    {
+        "text": " La pregunta que estoy haciendo será si yo garro una norma cualquiera, puedo encontrar un producto interno, tal que esta norma es la norma enducida por ese producto interno.",
+        "start": 3178.6,
+        "end": 3189.6
+    },
+    {
+        "text": " Bueno, esa es la pregunta, en principio, complicada de ver, pero la respuesta es no y sale de un par de razonamientos muy ingeniosos que ya les comento.",
+        "start": 3190.6,
+        "end": 3200.6
+    },
+    {
+        "text": " De una idea muy sencilla que es la siguiente. Es un resultado muy sencilla que se cumple para normas e inducidas por un producto interno.",
+        "start": 3200.6,
+        "end": 3211.6
+    },
+    {
+        "text": " Quiero que se llama la regla del paradelor amo. No me va a dar tiempo para comentarle la desigualdad de cosilloars, que era la desigualdad más importante la clase de hoy, pero bueno, por lo menos me queda estas cosas bien claras.",
+        "start": 3212.6,
+        "end": 3224.6
+    },
+    {
+        "text": " A ver, el lema que les quiero probar, he hecho en uno de los prácticos de hecho.",
+        "start": 3227.6,
+        "end": 3235.6
+    },
+    {
+        "text": " Me dice que si yo tengo una norma, inducida por un producto interno, o sea, definida de que ya maneda, a partir un producto interno.",
+        "start": 3235.6,
+        "end": 3255.6
+    },
+    {
+        "text": " Entonces, se cumple una igualdad.",
+        "start": 3266.6,
+        "end": 3269.6
+    },
+    {
+        "text": " Bueno, la verdad es que si se llama la regla del paradelor amo.",
+        "start": 3269.6,
+        "end": 3279.6
+    },
+    {
+        "text": " Dice el lema este, que si yo tengo una norma, que es una norma inducida por un producto interno, o sea, una norma definida a partir un producto interno de esta manera.",
+        "start": 3300.6,
+        "end": 3311.6
+    },
+    {
+        "text": " Entonces, se cumple la siguiente igualdad. La norma de be más doble ve al cuadrado, más la norma de be menos doble ve al cuadrado, eso dos veces la norma de be al cuadrado, más dos veces la norma doble ve al cuadrado.",
+        "start": 3313.6,
+        "end": 3324.6
+    },
+    {
+        "text": " Y se llama la regla del paradelor amo por lo siguiente, que esto se llama regla del paradelor amo.",
+        "start": 3325.6,
+        "end": 3331.6
+    },
+    {
+        "text": " Por una propiedad muy conocida de la geometría plana que me dice lo siguiente.",
+        "start": 3332.6,
+        "end": 3343.6
+    },
+    {
+        "text": " Si yo tengo un vector ve y yo tengo un vector doble ve, me puedo construir un paradelor amo que tenga, bueno así, me puedo construir un paradelor amo, de esta manera esto va a ser tener algo doble ve, no es un maldave, no es un maldave.",
+        "start": 3344.6,
+        "end": 3363.6
+    },
+    {
+        "text": " Ahora, be más doble ve es ese, entonces el vector que va de aquí acá, esta diagonal, esto es be más doble ve.",
+        "start": 3364.6,
+        "end": 3374.6
+    },
+    {
+        "text": " Y be menos doble ve o doble ve, menos ve es el vector que va de acá acá.",
+        "start": 3376.6,
+        "end": 3382.6
+    },
+    {
+        "text": " Y la regla de la geometría plana, la regla del paradelor amo, bueno propiedad los paradelor amo, me dice que esta lleguena al cuadrado, la longitud está lleguena al cuadrado, más la longitud está lleguena al cuadrado, es la suma de los cuadrados de los lados del paradelor amo.",
+        "start": 3383.6,
+        "end": 3404.6
+    },
+    {
+        "text": " O sea, es dos veces la longitud al cuadrado de este, más dos veces la longitud al cuadrado de este, esa es una propiedad conocida de los paradelor amo.",
+        "start": 3405.6,
+        "end": 3414.6
+    },
+    {
+        "text": " Y ahí lo que estamos escribiendo es exactamente esto, nada más que en un contexto genérico, ¿sí?",
+        "start": 3414.6,
+        "end": 3420.6
+    },
+    {
+        "text": " Y cómo se pruebas a esa propiedad, bueno la tenemos que probar a partir de la definición esta, no me ducía por un producto interno.",
+        "start": 3421.6,
+        "end": 3429.6
+    },
+    {
+        "text": " Esta es linda para tomar el en un parcial o un exámen de desarrollo, porque simplemente escribir las cosas y desarrollar una cosa que se le piensa en silla. Fíjense.",
+        "start": 3429.6,
+        "end": 3440.6
+    },
+    {
+        "text": " Y ya vamos a ver que conclusión importante se deduce de ahí. Demostración.",
+        "start": 3444.6,
+        "end": 3449.6
+    },
+    {
+        "text": " Bueno, escribamos lo que es esto, lo que es esto y desarrollamos lo. Vemos W cuadrado.",
+        "start": 3450.6,
+        "end": 3458.6
+    },
+    {
+        "text": " Vemos W cuadrado que es como la norma, esa es una nomba inducida por un producto interno, yo tengo un producto interno. Esto es el producto interno, de Vemos W con sigo mismo.",
+        "start": 3458.6,
+        "end": 3487.6
+    },
+    {
+        "text": " Aquí tengo el cuadrado, entonces no tengo que poner ahí la red cuadrada. Es el producto interno de Vemos W consigo mismo.",
+        "start": 3489.6,
+        "end": 3494.6
+    },
+    {
+        "text": " Y ahí uso la propiedad de additividad con respecto a la primera y a la segunda componente. O sea esto va a ser el producto interno de Vemos con V,",
+        "start": 3494.6,
+        "end": 3503.6
+    },
+    {
+        "text": " más el producto interno de V con W, estoy obviando pasos al medio para ser más fácil, más el producto interno de Vemos con V y los guarda con el orden en que tomamos los productos internos ahí,",
+        "start": 3503.6,
+        "end": 3516.6
+    },
+    {
+        "text": " más el producto interno de V con W, he usado additividad con respecto a la primera y la segunda componente. Esto es V con esto, más W con esto y si os arrolla,",
+        "start": 3517.6,
+        "end": 3529.6
+    },
+    {
+        "text": " entonces me queda V con V, más V con W, más W con V, más W con W, y de la misma manera si yo escribo norma de V, menos W, al cuadrado, eso es el producto interno de V, menos W, ahora consigo mismo.",
+        "start": 3529.6,
+        "end": 3545.6
+    },
+    {
+        "text": " Estoy escribiendo ahora esto. Y ahí es nuevo desarrollo por additividad y ahí me va a quedar V escalar V, V que el producto interno con V, V con menos W, pero ahí menos sale para fuera, V escalar W, menos W escalar V,",
+        "start": 3545.6,
+        "end": 3566.6
+    },
+    {
+        "text": " escalar V, el menos sale para fuera y menos con menos más W escalar W, W, producto interno con W, sí, el menos sale a fuera en los dos lados porque sacar en menos 1, ahí tomar el compreso con jugado, si están hace una entrada, me da menos 1.",
+        "start": 3566.6,
+        "end": 3588.6
+    },
+    {
+        "text": " Ahora esto acá y esto acá es la norma de V al cuadrado, la norma inducida de V al cuadrado y de la misma manera esto acá y esto acá es la norma inducida de V al cuadrado.",
+        "start": 3588.6,
+        "end": 3605.6
+    },
+    {
+        "text": " Y ¿qué pasa si sumo? Estas dos cosas, si sumo estas dos cosas, este V escalar W, si me va a conecte y este W escalar V se me va a conecte.",
+        "start": 3605.6,
+        "end": 3613.6
+    },
+    {
+        "text": " O sea que sumando, sumando se obtiene la de la igualdad del parero de gramoc, si obtiene esto acá, esto.",
+        "start": 3613.6,
+        "end": 3633.6
+    },
+    {
+        "text": " Sí, estaba como ejemplo del práctico junto con otra más. Ahora aquí viene el punto importante, el les me amedice que si algo es una norma inducida por un producto interno entonces se cumple esto.",
+        "start": 3635.6,
+        "end": 3654.6
+    },
+    {
+        "text": " Ahora les propongo un juego para que dan en sus casas, este agarren por ejemplo la norma infinito, la norma que me agarren vector, se acuerren con la norma infinita, me agarren un vector y me considera la componente de modo de lo máximo y vean que con esa norma es fácil construir ejemplos que no verifican esta igualdad.",
+        "start": 3654.6,
+        "end": 3673.6
+    },
+    {
+        "text": " Se lo es como ejercicio eso, agarren por ejemplo la norma infinito y pongan adedua ojo, vectores V y W para los cuales no se cumple esta igualdad. ¿Qué me está diciendo eso entonces?",
+        "start": 3673.6,
+        "end": 3687.6
+    },
+    {
+        "text": " Que si la norma infinito no cumple esta igualdad para todos los vectores V y W quiere decir que la norma infinito no es una norma inducida por un producto interno, porque si fuera una norma inducida por un producto interno cumpliría esta igualdad.",
+        "start": 3687.6,
+        "end": 3703.6
+    },
+    {
+        "text": " Se entiende o sea verifican como ejemplo en la norma infinito por así da algo en RN que esta igualdad no se cumple, por lo tanto la norma infinito no puede ser una norma inducida por un producto interno, no existe un producto interno, tal que la norma inducida por ese producto interno coincide con la norma infinito.",
+        "start": 3703.6,
+        "end": 3722.6
+    },
+    {
+        "text": " Sí, en más se puede probar que de todas las normas que escribimos la única de cumple esta condición es la norma cuadrática, la norma común y corriente de los vectores en RN que escribimos, la sola no lo cumple.",
+        "start": 3722.6,
+        "end": 3737.6
+    },
+    {
+        "text": " Es decir, ¿a qué voy? ¿A qué existen normas que no son normas inducidas por un producto interno? La pregunta que les había hecho al principio.",
+        "start": 3738.6,
+        "end": 3746.6
+    },
+    {
+        "text": " Es más se puede probar que algo es una norma inducida por un producto interno, sí solo sí se cumple esto.",
+        "start": 3746.6,
+        "end": 3751.6
+    },
+    {
+        "text": " De ahí la importancia de esta realita del paradelora.",
+        "start": 3753.6,
+        "end": 3757.6
+    },
+    {
+        "text": " Pero juegan con eso porque es interesante ver que construir contra ejemplo y que con la norma infinito esto no se cumple, con la norma 1 o tampoco se cumple, con la norma 2 sí se cumple.",
+        "start": 3758.6,
+        "end": 3769.6
+    },
+    {
+        "text": " Con esa es la raíz cuadrada de las sumas las componentes del cuadrado, pero es con la única que se cumple las que vivimos.",
+        "start": 3769.6,
+        "end": 3776.6
+    },
+    {
+        "text": " Y por el final tenía la famosísima es igual de cosi-uars que la vamos a usar un montón, se usa muchísimo en un montón de contextos bien diferentes.",
+        "start": 3777.6,
+        "end": 3790.6
+    },
+    {
+        "text": " Que por lo menos este, ¿cómo estamos aquí?",
+        "start": 3790.6,
+        "end": 3798.6
+    },
+    {
+        "text": " Es cortita la demostración, la hemos hecho en 10 minutos y terminamos, 5 minutos.",
+        "start": 3803.6,
+        "end": 3808.6
+    },
+    {
+        "text": " La desigualdad de cosi-uars me dice lo siguiente.",
+        "start": 3809.6,
+        "end": 3815.6
+    },
+    {
+        "text": " Preguntas acá.",
+        "start": 3816.6,
+        "end": 3818.6
+    },
+    {
+        "text": " Es una desigualdad bien generica que vale para normas inducidas por productos interno y se usa un montón de contextos bien diferentes.",
+        "start": 3828.6,
+        "end": 3837.6
+    },
+    {
+        "text": " O sí, juegan.",
+        "start": 3846.6,
+        "end": 3850.6
+    },
+    {
+        "text": " Yo tengo entonces una espacial territorial ve, comprojo que tu interno.",
+        "start": 3857.6,
+        "end": 3864.6
+    },
+    {
+        "text": " Y tengo la norma inducida por el producto interno.",
+        "start": 3875.6,
+        "end": 3880.6
+    },
+    {
+        "text": " Entonces, tengo un espacio de utilidad con producto interno y tengo una norma que no es cualquier norma sino que es la norma inducida por ese producto interno.",
+        "start": 3881.6,
+        "end": 3890.6
+    },
+    {
+        "text": " Entonces, tengo un espacio de utilidad con producto interno y tengo una norma que no es cualquier norma sino que es la norma inducida por ese producto interno.",
+        "start": 3891.6,
+        "end": 3906.6
+    },
+    {
+        "text": " Entonces lo que se cumple lo siguiente.",
+        "start": 3906.6,
+        "end": 3910.6
+    },
+    {
+        "text": " Ya lo leeremos.",
+        "start": 3920.6,
+        "end": 3924.6
+    },
+    {
+        "text": " Entonces, la desigualdad me dice que si yo darro el producto interno de vez con doble vez, que eso es un escalar.",
+        "start": 3951.6,
+        "end": 3979.6
+    },
+    {
+        "text": " Y yo diré el módulo de ese producto interno, eso es menor igual que el producto de la norma dv por la norma dv, donde esta la norma inducida por el producto interno.",
+        "start": 3980.6,
+        "end": 3986.6
+    },
+    {
+        "text": " Y además me dice que tengo igualdad ahí si solo si, con junto v, doble vez, liámate dependiente.",
+        "start": 3986.6,
+        "end": 3994.6
+    },
+    {
+        "text": " Es decir, si solo si un vector es un múltiplo de otro.",
+        "start": 3994.6,
+        "end": 3999.6
+    },
+    {
+        "text": " Y esa desigualdad es muy útil, como le dije, en un montón de contextos diferentes.",
+        "start": 4000.6,
+        "end": 4005.6
+    },
+    {
+        "text": " Y la demostración, hay un montón de demostración.",
+        "start": 4005.6,
+        "end": 4008.6
+    },
+    {
+        "text": " Yo voy a usar la demostración que se aparta de la demostración del libro rojo. Me parece que es más sencilla esta que la libro rojo.",
+        "start": 4008.6,
+        "end": 4021.6
+    },
+    {
+        "text": " O que son todas variantes de lo mismo.",
+        "start": 4021.6,
+        "end": 4026.6
+    },
+    {
+        "text": " Y con eso terminamos la clase. No es una demostración complicada, es muy ingeniosa.",
+        "start": 4027.6,
+        "end": 4033.6
+    },
+    {
+        "text": " Pero una vez que uno ya sabe cómo se hace, no es nada complicada.",
+        "start": 4033.6,
+        "end": 4037.6
+    },
+    {
+        "text": " Entonces, vamos a empezar considerando, en primer lugar, el caso en el cual doble vez sea el vector nulo.",
+        "start": 4037.6,
+        "end": 4048.6
+    },
+    {
+        "text": " Si doble vez es el vector nulo, ¿qué pasa ahí?",
+        "start": 4048.6,
+        "end": 4055.6
+    },
+    {
+        "text": " Si doble vez es el vector nulo, ve escararse o me da el cero.",
+        "start": 4056.6,
+        "end": 4061.6
+    },
+    {
+        "text": " Y acá tengo la norma de cero, que cero. O sea, la desigualdad se cumple trivialmente como un igualdad.",
+        "start": 4061.6,
+        "end": 4067.6
+    },
+    {
+        "text": " Se cumple como un igualdad.",
+        "start": 4075.6,
+        "end": 4078.6
+    },
+    {
+        "text": " Y obviamente el doble vez es un múltiplo de vez porque doble vez es cero por vez.",
+        "start": 4078.6,
+        "end": 4086.6
+    },
+    {
+        "text": " Estamos osea que efectivamente esto es un conjunto V doble vez es el ligamento de pendiente, este es el cero.",
+        "start": 4086.6,
+        "end": 4093.6
+    },
+    {
+        "text": " Ahora, si doble vez es distinto es cero, vamos a hacer un truquito ahí que no va a permitir obtener esa desigualdad.",
+        "start": 4093.6,
+        "end": 4100.6
+    },
+    {
+        "text": " Y entonces vamos a suponer doble vez distinto es cero.",
+        "start": 4101.6,
+        "end": 4109.6
+    },
+    {
+        "text": " Entonces, para cualquier alpha escalar, se cumple.",
+        "start": 4109.6,
+        "end": 4123.6
+    },
+    {
+        "text": " El juro que sale fácil esto.",
+        "start": 4131.6,
+        "end": 4135.6
+    },
+    {
+        "text": " Si doble de igual a cero, la desigualdad se cumple como igualdad y si doble vez es un vector nulo y se cumple.",
+        "start": 4135.6,
+        "end": 4150.6
+    },
+    {
+        "text": " Para cualquier alpha escalar, se cumple.",
+        "start": 4151.6,
+        "end": 4153.6
+    },
+    {
+        "text": " Si doble vez es un vector nulo y se cumple, si doble vez es un vector nulo, ve escala.",
+        "start": 4153.6,
+        "end": 4158.6
+    },
+    {
+        "text": " se cumpe, si yo hago B menos alpha por WB y eso toma la norma el cuadrado, eso es más",
+        "start": 4158.6,
+        "end": 4163.04
+    },
+    {
+        "text": " yo igual que 0. Ahora, uso que esta norma es la norma inducida por el producto interno,",
+        "start": 4163.04,
+        "end": 4168.84
+    },
+    {
+        "text": " o sea que esto acá escribo lo mismo que escribir recién, esto acá es lo mismo que B menos",
+        "start": 4168.84,
+        "end": 4175.160000000001
+    },
+    {
+        "text": " alpha por WB, alpha es un escalar cualquiera hasta ahora, B menos alpha con WB, consigo",
+        "start": 4175.160000000001,
+        "end": 4181.200000000001
+    },
+    {
+        "text": " con WB y ahí desarrollo, entonces me quedaría B escalar B después, después cuando",
+        "start": 4181.2,
+        "end": 4194.92
+    },
+    {
+        "text": " va B con alpha con WB ahí es un menos que sale, pero el alpha como esta en segunda entrada",
+        "start": 4194.92,
+        "end": 4199.72
+    },
+    {
+        "text": " sale como con jugado, o sea que cuando hago B con alpha con WB sale y una alpha con jugado",
+        "start": 4199.72,
+        "end": 4204.08
+    },
+    {
+        "text": " acá B y me queda B con WB, después acá en la primera entrada queda un menos alpha",
+        "start": 4204.08,
+        "end": 4213.48
+    },
+    {
+        "text": " que sale para afuera, W es calar B y finalmente tengo menos alpha WB es calar menos alpha",
+        "start": 4213.48,
+        "end": 4224.24
+    },
+    {
+        "text": " WB, o sea que acá sale un menos y un menos, me do más, una alpha en la primera entrada",
+        "start": 4224.24,
+        "end": 4228.92
+    },
+    {
+        "text": " sale como alpha, la segunda sale como alpha con jugado, o sea módulo del al cuadrado, W es calar",
+        "start": 4228.92,
+        "end": 4239.28
+    },
+    {
+        "text": " WB, si se entendió lo que hice, esa roleto de eso, entonces me queda B escalar B, cuando",
+        "start": 4239.28,
+        "end": 4249.68
+    },
+    {
+        "text": " hago B con esto me da alpha sale para afuera como con jugado, entonces me queda B menos alpha",
+        "start": 4249.68,
+        "end": 4254.96
+    },
+    {
+        "text": " con jugado, o sea que cuando hago esto con esto el alpha sale para afuera así como esta,",
+        "start": 4254.96,
+        "end": 4261.28
+    },
+    {
+        "text": " menos alpha W es calar B y cuando hago este último con este hay una alpha que sale para afuera",
+        "start": 4261.28,
+        "end": 4266.12
+    },
+    {
+        "text": " y una alpha con jugado que sale para afuera, eso me da módulo del al cuadrado, W con WB,",
+        "start": 4266.12,
+        "end": 4271.84
+    },
+    {
+        "text": " eso vale para todo alpha en general y ahora elegimos una alpha en particular, elegiendo",
+        "start": 4271.84,
+        "end": 4277.72
+    },
+    {
+        "text": " alpha, B es calar W sobre norma de WB al cuadrado, lo cual lo podemos hacer porque",
+        "start": 4277.72,
+        "end": 4307.280000000001
+    },
+    {
+        "text": " W es cinto de cero, esto lo podemos hacer porque W es cero, entonces lo que yo agarro es,",
+        "start": 4307.28,
+        "end": 4317.28
+    },
+    {
+        "text": " usted me da B W y yo me agarro en un marito, alpha que es el producto interno de B con WB",
+        "start": 4317.28,
+        "end": 4322.599999999999
+    },
+    {
+        "text": " divido normal cuadrado, lo pongo acá y veamos que lo que me da, fíjense que es lo que me da,",
+        "start": 4322.599999999999,
+        "end": 4328.32
+    },
+    {
+        "text": " elegiendo eso queda, de un lado queda cero, menor igual y vamos a escribir todo lo que va",
+        "start": 4328.32,
+        "end": 4343.759999999999
+    },
+    {
+        "text": " apareciendo, normal de B consigo mismo, el producto interno de B consigo mismo que es norma",
+        "start": 4343.759999999999,
+        "end": 4350.5599999999995
+    },
+    {
+        "text": " del cuadrado, después tengo, menos alpha con jugado veis calar WB, o sea que me queda",
+        "start": 4350.56,
+        "end": 4360.160000000001
+    },
+    {
+        "text": " acá menos, cuando tomo con jugado de este que pasa es el con jugado de arriba y veo el con",
+        "start": 4360.160000000001,
+        "end": 4366.84
+    },
+    {
+        "text": " jugado de abajo, pero esto es número real, o sea que me queda con jugado de arriba, o sea,",
+        "start": 4366.84,
+        "end": 4372.8
+    },
+    {
+        "text": " WB exactamente, WB es calar norma W al cuadrado, este es el alpha con jugado y eso es multiplicado",
+        "start": 4372.8,
+        "end": 4383.16
+    },
+    {
+        "text": " por WB, un segundo, después eso ya está, ahora acá tengo alpha por WB es calar B,",
+        "start": 4383.16,
+        "end": 4401.96
+    },
+    {
+        "text": " menos alpha por WB es calar B, bien y finalmente acá la última de todos, de todos tengo",
+        "start": 4401.96,
+        "end": 4418.04
+    },
+    {
+        "text": " módulo del alpha al cuadrado, o sea módulo, debe es calar WB al cuadrado, dividido esto ahora",
+        "start": 4418.04,
+        "end": 4432.08
+    },
+    {
+        "text": " viene la potencia 4, esto tomando módulo del cuadrado, entonces me queda, módulo W al cuadrado",
+        "start": 4432.08,
+        "end": 4437.12
+    },
+    {
+        "text": " sobre norma W a la cuarta por W es calar W es que es norma W al cuadrado, si, acá queda",
+        "start": 4437.12,
+        "end": 4458.36
+    },
+    {
+        "text": " norma W al cuadrado arriba, norma W al cuadrado abajo, esto se simplifica con esto y acá",
+        "start": 4458.36,
+        "end": 4463.8
+    },
+    {
+        "text": " me queda un 2, entonces fíjense, queda el último renglón, fíjense, esto tengo B es calar",
+        "start": 4463.8,
+        "end": 4477.68
+    },
+    {
+        "text": " W y W es calar B, que justamente si lo doy vuelta es B es calar W al cuadrado, B es calar",
+        "start": 4477.68,
+        "end": 4483.2
+    },
+    {
+        "text": " W con jugado y acá lo mismo tengo B es calar W con lo que es calar B que si lo doy vuelta",
+        "start": 4483.2,
+        "end": 4489.08
+    },
+    {
+        "text": " me queda B es calar W con jugado, entonces esto por esto es módulo debe es calar W al cuadrado,",
+        "start": 4489.08,
+        "end": 4499.44
+    },
+    {
+        "text": " lo mismo que esto es módulo debe es calar W al cuadrado, que es justamente lo que tengo acá",
+        "start": 4499.44,
+        "end": 4504.08
+    },
+    {
+        "text": " dividido W al cuadrado y dividido W al cuadrado y dividido W al cuadrado, o sea que este número,",
+        "start": 4505.44,
+        "end": 4510.84
+    },
+    {
+        "text": " este número y este número son los mismos, lo estoy sumando una vez y lo estoy retando 2 veces,",
+        "start": 4510.84,
+        "end": 4516.92
+    },
+    {
+        "text": " o sea lo estoy retando una vez, entonces me queda el primer número que tengo acá B es",
+        "start": 4516.92,
+        "end": 4523.08
+    },
+    {
+        "text": " cuadrado menos este número restado una vez, menos B es calar W al cuadrado dividido W al cuadrado,",
+        "start": 4523.08,
+        "end": 4534.6
+    },
+    {
+        "text": " se simplifica todo, justamente usando que esto acá nos otra cosa que esto acá B es calar W",
+        "start": 4534.6,
+        "end": 4541.84
+    },
+    {
+        "text": " al cuadrado, lo mismo que esto, sí, entonces ¿qué me queda hacer pasar esto por el otro lado?",
+        "start": 4541.84,
+        "end": 4550.76
+    },
+    {
+        "text": " pasar esto por el otro lado, entonces me va a quedar B es calar W al cuadrado, sobre W al cuadrado",
+        "start": 4553.400000000001,
+        "end": 4562.08
+    },
+    {
+        "text": " de un lado, menos igual que B es cuadrado del otro y lo último que tengo que hacer es pasar",
+        "start": 4562.08,
+        "end": 4572.92
+    },
+    {
+        "text": " este W al cuadrado por la carriba y tenemos la desigualdad de cosijuars para W y cinto 0,",
+        "start": 4572.92,
+        "end": 4580.84
+    },
+    {
+        "text": " o sea el truquito es dado W y B elegir una alfa que ha propiado para que salgan las cosas",
+        "start": 4580.84,
+        "end": 4591.96
+    },
+    {
+        "text": " de la que queríamos ver y cuando tenemos igualdad en todo esto y ahí sí terminamos,",
+        "start": 4591.96,
+        "end": 4596.56
+    },
+    {
+        "text": " como tenemos igualdad, ahí igualdad, ahí igualdad tenemos que venir para atrás y ver en que el",
+        "start": 4596.56,
+        "end": 4615.16
+    },
+    {
+        "text": " lugar está ni de desigualdad, bueno acá tengo igualdad, desarrollé esto, ahí tengo igualdad,",
+        "start": 4615.16,
+        "end": 4619.0
+    },
+    {
+        "text": " el único lugar no tengo una desigualdad es acá y cuando tengo igualdad acá, cuando esto es",
+        "start": 4619.0,
+        "end": 4626.56
+    },
+    {
+        "text": " 0, ahí igualdad, ahí igualdad, en toda esta cadena es igualdad es sí solo sí,",
+        "start": 4626.56,
+        "end": 4635.72
+    },
+    {
+        "text": " ahí igualdad en acerisco, o sea sí solo sí, B es igual a alfa por W, o sea quiero decir sí",
+        "start": 4637.96,
+        "end": 4652.0
+    },
+    {
+        "text": " solo sí, este vector que tengo acá dentro es 0, el vector 1, o sea sí solo sí, B es igual",
+        "start": 4652.0,
+        "end": 4657.96
+    },
+    {
+        "text": " a alfa por W, o sea sí solo sí, B es un múltiplo W, o sea sí solo sí, B W es ligadamente",
+        "start": 4657.96,
+        "end": 4668.04
+    },
+    {
+        "text": " pendiente, este es igualdad, la vamos a usar muchísimo, no solo en el curso sino en toda la carrera",
+        "start": 4668.04,
+        "end": 4674.16
+    },
+    {
+        "text": " y es la famosa desigualdad de Cochizuars, estamos, esta es esta demostración es diferente",
+        "start": 4675.16,
+        "end": 4683.04
+    },
+    {
+        "text": " de la del libro, pero es mucho más clara es, partir de esto y el desarrollar y elegir un valor de",
+        "start": 4683.04,
+        "end": 4688.8
+    },
+    {
+        "text": " alfa, usted me dan B, W, el y Junalfa y se cumple entonces, bueno nos vemos entonces el martes",
+        "start": 4688.8,
+        "end": 4699.16
+    }
+]

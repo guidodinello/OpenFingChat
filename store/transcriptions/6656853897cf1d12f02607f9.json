@@ -1,0 +1,2407 @@
+[
+    {
+        "text": " Bueno, arrancamos entonces. En lo que vamos a ver en la clase de hoy es una aplicación",
+        "start": 0.0,
+        "end": 25.52
+    },
+    {
+        "text": " de lo que vimos en las últimas clases de proyección ortogonal que es lo que se llama",
+        "start": 25.52,
+        "end": 29.64
+    },
+    {
+        "text": " mínimos cuadrados o aproximación de mínimos cuadrados. Vamos a ver esto con cuidado, es",
+        "start": 29.64,
+        "end": 36.76
+    },
+    {
+        "text": " una herramienta muy útil. Lo que uno hace, lo que uno tiene es un problema en el cual se",
+        "start": 36.76,
+        "end": 46.9
+    },
+    {
+        "text": " observan en este m datos experimentales que son pares, o sea tengo una variable, quiso",
+        "start": 46.9,
+        "end": 53.78
+    },
+    {
+        "text": " una variable de respuesta ahí y lo que uno observa son los siguientes datos de la forma",
+        "start": 53.78,
+        "end": 60.66
+    },
+    {
+        "text": " x1 y 1, x2 y 2 hasta xm y m. Bien, o sea, son datos reales, son observaciones y esto lo que",
+        "start": 60.66,
+        "end": 77.3
+    },
+    {
+        "text": " se llama la variable independiente, la primera y la segunda variable lo que se llama la",
+        "start": 77.3,
+        "end": 90.53999999999999
+    },
+    {
+        "text": " variable de respuesta, digamos. Se ve ahí, bien, entonces, pensemos que estoy midiendo,",
+        "start": 90.54,
+        "end": 101.06
+    },
+    {
+        "text": " haga rumido una variable x y después mido la variable y de respuesta, eso me da un par,",
+        "start": 101.06,
+        "end": 105.82000000000001
+    },
+    {
+        "text": " x1 y 1, después tengo otro par, etcétera, etcétera. Eso, esos puntos representan observaciones",
+        "start": 105.82000000000001,
+        "end": 114.10000000000001
+    },
+    {
+        "text": " de una ley física y pensamos que por detrás de esas observaciones es una ley física",
+        "start": 114.10000000000001,
+        "end": 119.18
+    },
+    {
+        "text": " lineal que me relaciona la variable y con x, o sea, pensamos que por detrás de todo hay un",
+        "start": 119.18,
+        "end": 124.22000000000001
+    },
+    {
+        "text": " modelo de la forma y igual a alpha por xmf, donde alpha y beta son parámetros, alpha y beta",
+        "start": 124.22000000000001,
+        "end": 140.38
+    },
+    {
+        "text": " son parámetros, o sea que tengo una relación lineal entre una variable y la otra, nada la variable",
+        "start": 140.38,
+        "end": 148.5
+    },
+    {
+        "text": " independiente, a igual, favor, aquí me habete y tengo la variable de respuesta. El tema es que",
+        "start": 148.5,
+        "end": 155.26
+    },
+    {
+        "text": " estamos suponiendo un problema en el cual los parámetros alpha y beta no se conoce, entonces lo que",
+        "start": 155.26,
+        "end": 161.06
+    },
+    {
+        "text": " uno tiene son los datos experimentales, esto aquí y a partir de esos datos quiere estimar de una",
+        "start": 161.06,
+        "end": 167.38
+    },
+    {
+        "text": " forma los parámetros alpha y beta. Se entiende el problema, entonces la cuestión fundamental",
+        "start": 167.38,
+        "end": 176.98
+    },
+    {
+        "text": " aquí es que por más que hay una relación bien definida entre las variables y a x, hay temas que",
+        "start": 176.98,
+        "end": 182.1
+    },
+    {
+        "text": " tienen que ver con el error experimental, entonces necesariamente no necesariamente los valores de",
+        "start": 182.1,
+        "end": 187.22
+    },
+    {
+        "text": " y de y para que cae exactamente sobre una red, entonces típicamente lo que uno tiene son cosas",
+        "start": 187.22,
+        "end": 192.22
+    },
+    {
+        "text": " como estas, suponamos que ha cambiado la variable x y la variable y y los que tengo son puntos que",
+        "start": 192.22,
+        "end": 199.85999999999999
+    },
+    {
+        "text": " no caen exactamente sobre una red, pero me dan una cosa como esta, pongamos por caso.",
+        "start": 199.86,
+        "end": 204.14000000000001
+    },
+    {
+        "text": " Estamos, esto sería x1 y1, esto sería x2 y2, etcétera. Hasta el último punto, supongo que los",
+        "start": 211.10000000000002,
+        "end": 224.74
+    },
+    {
+        "text": " tengo ordenados por una encendente, ¿eh? ¿Equí? Vamos a pensar que este punto acá es el último",
+        "start": 224.74,
+        "end": 230.74
+    },
+    {
+        "text": " y mx.",
+        "start": 234.38,
+        "end": 236.02
+    },
+    {
+        "text": " Entonces, si bien los datos que uno observa ustedes seguramente han hecho experimentos de física donde",
+        "start": 238.34,
+        "end": 243.9
+    },
+    {
+        "text": " tratan de verificar una ley de esta forma, si bien los datos hay un modelo por detrás de los datos",
+        "start": 243.9,
+        "end": 250.26000000000002
+    },
+    {
+        "text": " que suponen la respuesta de la variable y de esta forma no necesariamente canso una recta por",
+        "start": 250.26,
+        "end": 256.09999999999997
+    },
+    {
+        "text": " cuestiones de errores por inventar o por algunas otras cuestiones, pueden ser valores, esto",
+        "start": 256.09999999999997,
+        "end": 263.98
+    },
+    {
+        "text": " puede ser valores modelos para los promedios, por ejemplo. Pero entonces lo que uno necesita",
+        "start": 263.98,
+        "end": 269.34
+    },
+    {
+        "text": " es calcular cuál es la, obtener cuál es la mejor recta acá de la forma y alpha por x más",
+        "start": 269.34,
+        "end": 274.86
+    },
+    {
+        "text": " beta que mejor ajusta esos datos en un sentido que vamos a precisar en un ratito. Eso es el problema de",
+        "start": 275.82,
+        "end": 282.18
+    },
+    {
+        "text": " mínimos cuadrados. ¿Qué como queremos al final de la clase se puede adaptar también para encontrar",
+        "start": 282.18,
+        "end": 288.14
+    },
+    {
+        "text": " el mejor polinomio que ajustan a seriedadatos? Por ejemplo el mejor polinomio de grado menor y",
+        "start": 288.14,
+        "end": 292.82
+    },
+    {
+        "text": " igual que 3 que ajustan a seriedadatos o de grado que fuera. Es siempre la misma metodología.",
+        "start": 292.82,
+        "end": 298.7
+    },
+    {
+        "text": " Entonces el problema no va a cridar acá.",
+        "start": 299.7,
+        "end": 304.5
+    },
+    {
+        "text": " Que mejor ajusta a las observaciones.",
+        "start": 321.7,
+        "end": 324.86
+    },
+    {
+        "text": " Pongo mejor porque ya voy a explicar que quiere decir, pongo entre comillas, voy a explicar",
+        "start": 325.86,
+        "end": 329.7
+    },
+    {
+        "text": " que quiere decir eso. Que mejor ajusta a las observaciones.",
+        "start": 329.7,
+        "end": 332.42
+    },
+    {
+        "text": " ¿Cómo digo? Este tipo de ajustes puede verse a errores experimentales. ¿Qué leí conocen?",
+        "start": 341.66,
+        "end": 348.02000000000004
+    },
+    {
+        "text": " Por ejemplo que se pueda medir que tiene una respuesta lineal de esa forma. Alguna ley física.",
+        "start": 348.02,
+        "end": 354.18
+    },
+    {
+        "text": " ¿La ley o un por ejemplo? Exactamente. La ley ju, que exactamente es la de resorte, la de la",
+        "start": 354.18,
+        "end": 362.9
+    },
+    {
+        "text": " fuerza con la distancia, con la extranción de resorte. Esas leyes ajustan así, pero también",
+        "start": 362.9,
+        "end": 368.97999999999996
+    },
+    {
+        "text": " podría ser un problema en el cual no tiene variables que no guardan estrictamente una relación",
+        "start": 368.97999999999996,
+        "end": 373.38
+    },
+    {
+        "text": " de ese tipo. Por ejemplo, varios lepesos alturas. Esto es algo que se usa mucho en estadística.",
+        "start": 373.38,
+        "end": 378.86
+    },
+    {
+        "text": " Por ejemplo si uno mide a dar las personas y le mide el peso y la altura y acá pone los pesos",
+        "start": 378.86,
+        "end": 384.42
+    },
+    {
+        "text": " y acá pone las alturas, no es que haya rigurosamente una relación de este tipo. Pero si es cierto",
+        "start": 384.42,
+        "end": 389.7
+    },
+    {
+        "text": " que las personas que mide el menos en general pesan menos y la que mide más altas pesan más.",
+        "start": 389.7,
+        "end": 394.42
+    },
+    {
+        "text": " O sea que si uno le hiciera un, era fijar acá muchas personas con pesos y alturas, uno tendría",
+        "start": 394.42,
+        "end": 400.54
+    },
+    {
+        "text": " una mancha como este tipo. No quiero así que haya personas, peticas que pesen mucho y personas",
+        "start": 400.54,
+        "end": 406.90000000000003
+    },
+    {
+        "text": " altas que pesen poco, eso ocurre. Pero en general lo tiene una mancha distribuida así. Lo que uno",
+        "start": 406.90000000000003,
+        "end": 412.3
+    },
+    {
+        "text": " quiere encontrar es una ley lineal que representa alguna manera los promedios. O sea que eso también",
+        "start": 412.3,
+        "end": 417.5
+    },
+    {
+        "text": " se aplica en este contexto. Entonces lo que queremos hacer es encontrar la recta que mejora",
+        "start": 417.5,
+        "end": 424.70000000000005
+    },
+    {
+        "text": " ajusta a esos datos observados, lo que queremos hacer es encontrar estos parámetros que mejor",
+        "start": 424.70000000000005,
+        "end": 428.42
+    },
+    {
+        "text": " representan los datos que yo tengo. Eso es todo. Entonces da una recta como esta, vamos a definir el error.",
+        "start": 428.42,
+        "end": 437.78000000000003
+    },
+    {
+        "text": " Definimos el error de la siguiente manera. Vamos a definir algo que le vamos a llamar Epsilon",
+        "start": 458.42,
+        "end": 469.82
+    },
+    {
+        "text": " al cuadrado. Voy a definir el error al cuadrado en realidad. Y lo que vamos a hacer es para cada",
+        "start": 469.82,
+        "end": 480.98
+    },
+    {
+        "text": " observación vamos a tomar el dato la variable y que observamos. Yo doy una recta fija, ¿no?",
+        "start": 480.98,
+        "end": 486.98
+    },
+    {
+        "text": " Entonces voy a calcular qué diferencia entre la variable y que realmente observamos y la variable",
+        "start": 487.58000000000004,
+        "end": 492.94
+    },
+    {
+        "text": " que deberíamos haber observado si realmente estuvieramos sobre esta recta. Esto sería que el error",
+        "start": 492.94,
+        "end": 497.34000000000003
+    },
+    {
+        "text": " Epsilon 1. Es la diferencia entre la variable y una observada y la variable que deberíamos haber",
+        "start": 497.34000000000003,
+        "end": 504.22
+    },
+    {
+        "text": " observado si tuviera una relación de esta forma. O sea el dato alpha por x1 más beta, que es lo que",
+        "start": 504.22,
+        "end": 509.58000000000004
+    },
+    {
+        "text": " está acá sobre la recta. Lo mismo para esta, esta sería el error Epsilon 2. La diferencia entre",
+        "start": 509.58,
+        "end": 517.26
+    },
+    {
+        "text": " lo observado y lo que deberíamos observar si estuvieramos sobre la recta, etcétera. O sea que tengo",
+        "start": 517.26,
+        "end": 522.22
+    },
+    {
+        "text": " los errores para cada ahí tengo una error acá que me mide esa distancia, hasta que el último",
+        "start": 522.22,
+        "end": 528.9399999999999
+    },
+    {
+        "text": " hace el error. O sea los errores que tenemos son una soma de errores Epsilon e que los voy",
+        "start": 528.94,
+        "end": 538.9000000000001
+    },
+    {
+        "text": " a elevar al cuadrado justamente para no tener problemas con los signos porque a veces los errores",
+        "start": 538.9000000000001,
+        "end": 544.1
+    },
+    {
+        "text": " son positivos y a veces son negativos, porque yo quiero positivos negativos todos son errores,",
+        "start": 544.1,
+        "end": 548.98
+    },
+    {
+        "text": " los quiero considerar positivamente. Entonces Epsilon e Epsilon e es lo que observamos, estoy",
+        "start": 548.98,
+        "end": 560.5600000000001
+    },
+    {
+        "text": " considerando la medición e esima. Entonces acá tengo el xy por ejemplo y acá tengo el valor",
+        "start": 560.5600000000001,
+        "end": 569.0600000000001
+    },
+    {
+        "text": " observado y subí. Entonces lo que estamos haciendo es la diferencia entre lo que observamos",
+        "start": 569.0600000000001,
+        "end": 574.22
+    },
+    {
+        "text": " que es I subí menos lo que deberíamos haber observado si tuvieras exactamente una respuesta",
+        "start": 574.78,
+        "end": 581.22
+    },
+    {
+        "text": " linea de esa forma. O sea menos alpha por xy más beta. El error Y es y mués y subí menos alpha",
+        "start": 581.22,
+        "end": 590.22
+    },
+    {
+        "text": " por xy más beta. Insisto a los parámetros al faibeta no los conocemos pero yo me dan un",
+        "start": 590.22,
+        "end": 595.6600000000001
+    },
+    {
+        "text": " juez parámetros, construyo la recta y construyo los errores. Sí. Entonces esto sería el valor",
+        "start": 595.66,
+        "end": 606.2199999999999
+    },
+    {
+        "text": " observado y éximo y éste es el valor que deberíamos obtener si tuvieramos sobre la recta,",
+        "start": 606.2199999999999,
+        "end": 613.98
+    },
+    {
+        "text": " este es el valor sobre la recta. Bien. Entonces lo que hacemos es para cada medición tomamos",
+        "start": 613.98,
+        "end": 627.46
+    },
+    {
+        "text": " esos errores, los elevamos al cuadrado para tener siempre cosas positivas y los sumamos.",
+        "start": 627.46,
+        "end": 632.02
+    },
+    {
+        "text": " O sea tengo la suma de los cuadrados de estos errores y ese es el error cuadratico total",
+        "start": 632.02,
+        "end": 638.94
+    },
+    {
+        "text": " de los datos con respecto a la recta. Sí o sea el error total sería la suma con ir desde 1",
+        "start": 639.5,
+        "end": 648.82
+    },
+    {
+        "text": " hasta m de esos errores individuales que están puesto acá. Los elevamos al cuadrado para que",
+        "start": 648.82,
+        "end": 658.98
+    },
+    {
+        "text": " meden todas cantidades positivas y esto se elevará al cuadrado o sea el error en realidad sería",
+        "start": 658.98,
+        "end": 663.1800000000001
+    },
+    {
+        "text": " la raíz cuadrada de todo esto. Probamos trabajar con el error del cuadrado. Sí. Se podría usar,",
+        "start": 663.18,
+        "end": 670.0999999999999
+    },
+    {
+        "text": " se podría usar es otro criterio, podría usar la norma con los valores absolutos, se podría usar.",
+        "start": 670.0999999999999,
+        "end": 675.8199999999999
+    },
+    {
+        "text": " Si usan, ¿sabes por qué si usan este tipo de cosas porque no más cuadráticas porque",
+        "start": 677.3399999999999,
+        "end": 683.54
+    },
+    {
+        "text": " son fáciles de manipular? Por ejemplo estas funciones derivables y la otra con módulos no.",
+        "start": 683.54,
+        "end": 688.6999999999999
+    },
+    {
+        "text": " Entonces eso meten algún problema pero solamente una cuestión de gustos y hemos",
+        "start": 689.26,
+        "end": 696.86
+    },
+    {
+        "text": " trabajado con funciones más que se comportan mejor. Entonces el criterio de ajustes el",
+        "start": 696.86,
+        "end": 702.5400000000001
+    },
+    {
+        "text": " siguiente encontrar la recta es decir encontrar los parámetros al fe y beta que minimizan ese error.",
+        "start": 702.5400000000001,
+        "end": 709.6600000000001
+    },
+    {
+        "text": " Yo pongo una recta acá tengo tal error cuadratico, pongo una recta por acá tengo tal error,",
+        "start": 709.6600000000001,
+        "end": 714.7800000000001
+    },
+    {
+        "text": " etcétera. Bueno yo quiero encontrar que ya recta que minimiza eso que hace más chiquita",
+        "start": 714.78,
+        "end": 719.1
+    },
+    {
+        "text": " las sumas o error al cuadrado y esa es el criterio cuando uno dice la recta que mejor ajusta",
+        "start": 719.1,
+        "end": 724.78
+    },
+    {
+        "text": " los datos observados. Sí entonces el criterio es criterio de ajustes.",
+        "start": 724.78,
+        "end": 729.98
+    },
+    {
+        "text": " El criterio de ajustes calcula la alfa y beta o sea obtener la recta",
+        "start": 729.98,
+        "end": 744.3000000000001
+    },
+    {
+        "text": " que minimizan el error cuadratico.",
+        "start": 748.78,
+        "end": 750.94
+    },
+    {
+        "text": " Notarlo siguiente estos errores los calculos para cada recta o sea fijo alfa y beta tengo",
+        "start": 759.98,
+        "end": 774.78
+    },
+    {
+        "text": " los errores. O sea que estas son funciones de alfa y beta esta acá también es función",
+        "start": 774.78,
+        "end": 779.24
+    },
+    {
+        "text": " de alfa y beta. Entonces queremos calcular alfa y beta tal es que minimizan esta cantidad",
+        "start": 779.24,
+        "end": 785.34
+    },
+    {
+        "text": " al cuadrado. De allí viene el nombre justamente de mínimos cuadrados queremos minimizar el error",
+        "start": 785.34,
+        "end": 792.6600000000001
+    },
+    {
+        "text": " cuadratico y eso es todo. Entonces ahora lo que tenemos que hacer es calcular el fe y beta",
+        "start": 792.6600000000001,
+        "end": 799.94
+    },
+    {
+        "text": " que minimizan el error y punto. Sí se entiende esa es la idea, esta idea se usa siempre en un montón",
+        "start": 799.94,
+        "end": 808.0600000000001
+    },
+    {
+        "text": " de contextos diferentes. Bueno y en todo este análisis lo que uno tiene fijo son estos,",
+        "start": 808.06,
+        "end": 815.26
+    },
+    {
+        "text": " son las observaciones. Eso es uno, eso está fijo. Yo la observación atengo, eso no",
+        "start": 815.26,
+        "end": 819.3399999999999
+    },
+    {
+        "text": " les puedo tocar. Lo que tengo es que ajustar los parámetros. Entonces acá hay dos",
+        "start": 819.3399999999999,
+        "end": 826.7399999999999
+    },
+    {
+        "text": " enfocas diferentes. Vamos a escribir este lado, el dibujo lo voy a dejar ahí.",
+        "start": 826.74,
+        "end": 837.34
+    },
+    {
+        "text": " Acá hay dos enfocas bien diferentes. Un primer enfoque es un enfoque analítico. Enfoca",
+        "start": 837.34,
+        "end": 852.5
+    },
+    {
+        "text": " analítico me refiero a que se refiere, se resuelve ese problema usando herramientas",
+        "start": 852.5,
+        "end": 860.02
+    },
+    {
+        "text": " de la análisis del cálculo, cálculo 2. Que es el siguiente, yo tengo que el error cuadratico",
+        "start": 860.02,
+        "end": 867.86
+    },
+    {
+        "text": " es una función de alfa y beta y además acá viene lo que preguntaba a vos y además es una",
+        "start": 870.26,
+        "end": 877.86
+    },
+    {
+        "text": " función bien comportada como función de alfa y beta. Es derivable tantas veces como no",
+        "start": 877.86,
+        "end": 883.54
+    },
+    {
+        "text": " quiera etcétera. Entonces acá es un problema de calcular cuáles son los mínimos, cuáles son",
+        "start": 883.54,
+        "end": 890.1800000000001
+    },
+    {
+        "text": " los valores alfa y beta que minimizan eso. Entonces yo lo puedo plantear como un problema del cálculo.",
+        "start": 890.1800000000001,
+        "end": 894.5
+    },
+    {
+        "text": " Calcuo uno los mínimos de eso, pues que ustedes ya saben hacer. Resolvemos la derivada del",
+        "start": 895.78,
+        "end": 901.02
+    },
+    {
+        "text": " sínlo cuadrado con respecto alfa igualamos a 0. Resolvemos la derivada del sínlo cuadrado con",
+        "start": 901.02,
+        "end": 910.5799999999999
+    },
+    {
+        "text": " respecto a beta igualamos a 0, de ahí obtenemos las soluciones de esto y después vemos que sean los",
+        "start": 910.5799999999999,
+        "end": 920.22
+    },
+    {
+        "text": " mínimos. O sea que sean mínimos y no que sean máximos, cosa que ustedes saben hacer. O sea de acá",
+        "start": 920.22,
+        "end": 925.38
+    },
+    {
+        "text": " obtenemos valores alfa y beta que minimizan. No por eso nos pasa por bueno todas maneras se puede",
+        "start": 925.38,
+        "end": 937.46
+    },
+    {
+        "text": " saber. Eso nos pasa por la forma de los errores. La forma está cuadrática te va a dar,",
+        "start": 937.46,
+        "end": 945.86
+    },
+    {
+        "text": " es exactamente eso, eso te asuma de cosas al cuadrado y te va a dar siempre un mínimo.",
+        "start": 945.86,
+        "end": 951.94
+    },
+    {
+        "text": " Eso se puede hacer y eso se los voy a dejar como ejercicio para si no lo hicieron nunca,",
+        "start": 952.94,
+        "end": 959.0600000000001
+    },
+    {
+        "text": " que hagan y que me va a dar lo mismo que lo que vamos a hacer ahora con otro enfoque. La ventaja",
+        "start": 959.0600000000001,
+        "end": 965.46
+    },
+    {
+        "text": " que tiene un usar el enfoque que les voy a comentar ahora, el enfoque geométrico es que se puede",
+        "start": 965.46,
+        "end": 970.5
+    },
+    {
+        "text": " generar y ser fácilmente a contextos mucho más generales que este. Y además que tiene por",
+        "start": 970.5,
+        "end": 976.34
+    },
+    {
+        "text": " detrás una idea geométrica que es fácil de visualizar ahora que ya hemos visto por el",
+        "start": 976.34,
+        "end": 983.38
+    },
+    {
+        "text": " excepción ortogonal. Entonces lo que viene ahora es el enfoque geométrico.",
+        "start": 983.38,
+        "end": 1000.9
+    },
+    {
+        "text": " Así vi las cosas, yo cuando hice física 1, la física es por imentar 1 cuando la estudiante,",
+        "start": 1000.9,
+        "end": 1014.1
+    },
+    {
+        "text": " supongo que ustedes han visto este tipo de cosas también, pero la vamos a dejar ahí, la vamos a dejar",
+        "start": 1014.1,
+        "end": 1018.1
+    },
+    {
+        "text": " el pendiente, vamos a cortar y vamos a ver el otro enfoque. El enfoque geométrico entonces",
+        "start": 1018.1,
+        "end": 1027.22
+    },
+    {
+        "text": " nada la recta y la hacemos observaciones, vamos a construir una matriz y un par de vectores y",
+        "start": 1028.18,
+        "end": 1036.22
+    },
+    {
+        "text": " vamos a plantear el problema con un problema de proyección ortogonal, cosa que hemos visto la última",
+        "start": 1036.22,
+        "end": 1041.1000000000001
+    },
+    {
+        "text": " clase, la última del último teor. Entonces",
+        "start": 1041.1000000000001,
+        "end": 1044.1000000000001
+    },
+    {
+        "text": " da una recta fija, fijo los parámetros al feriveta y la hacemos observaciones, los pares",
+        "start": 1087.78,
+        "end": 1103.06
+    },
+    {
+        "text": " observaciones de X, Y subí, construimos la siguiente es matriz y vectores y después vamos a",
+        "start": 1103.06,
+        "end": 1110.7
+    },
+    {
+        "text": " dejar acá escrito y vamos a ver cómo se escribe el error en términos de esas cantidades.",
+        "start": 1111.7,
+        "end": 1119.06
+    },
+    {
+        "text": " Esto lo vamos a dejar acá. Entonces construimos el siguiente vector y es un vector que depende",
+        "start": 1123.3,
+        "end": 1132.38
+    },
+    {
+        "text": " de los datos y que lo que estoy poniendo acá solamente los datos de la segunda variable, o sea",
+        "start": 1132.38,
+        "end": 1138.18
+    },
+    {
+        "text": " y sub 1 y sub 2 y sub m. Nunca olvidar que estos son datos, lo que se llama datos pareados en",
+        "start": 1138.18,
+        "end": 1148.02
+    },
+    {
+        "text": " el sentido de que no olvidar que para X1 corresponde Y1, para X2 corresponde Y2, para X3 corresponde",
+        "start": 1148.02,
+        "end": 1154.78
+    },
+    {
+        "text": " y 3, etc. Pero para construir el vector y solamente me fico en esta parte. Después,",
+        "start": 1154.78,
+        "end": 1160.1000000000001
+    },
+    {
+        "text": " entonces esto es un vector, si tengo que ver observaciones, esto es un vector en RLAM, en RL.",
+        "start": 1160.1,
+        "end": 1165.3799999999999
+    },
+    {
+        "text": " Después construyo una matriz que la construyo parte de los datos C, de X y que ya va a quedar claro",
+        "start": 1165.3799999999999,
+        "end": 1174.1799999999998
+    },
+    {
+        "text": " porque la construyo así. Pongo en la primer columna X1, X2 hasta XM y en la segunda columna pongo",
+        "start": 1174.1799999999998,
+        "end": 1184.62
+    },
+    {
+        "text": " todos sus datos. Ya va a quedar claro porque esto es así. Esto evidentemente es una matriz",
+        "start": 1184.62,
+        "end": 1195.6599999999999
+    },
+    {
+        "text": " con M fillas y 2 columnas. Entonces tengo por un lado las observaciones que están acá condensadas",
+        "start": 1195.6599999999999,
+        "end": 1210.6599999999999
+    },
+    {
+        "text": " en esta matriz en el vector y tengo por otro lado un vector que me voy a construir con los",
+        "start": 1210.66,
+        "end": 1215.42
+    },
+    {
+        "text": " parámetros, que son las variables del problema. O sea ese vector parámetros le vamos a llamar",
+        "start": 1215.42,
+        "end": 1221.3400000000001
+    },
+    {
+        "text": " Z, que es un vector con los parámetros al Fibeta y esto está en RLAM. Estos son los parámetros",
+        "start": 1221.3400000000001,
+        "end": 1233.1000000000001
+    },
+    {
+        "text": " de la juste. Estas son las variables, digamos así. Todos los otros están fijo, son cosas que uno",
+        "start": 1233.1,
+        "end": 1242.5
+    },
+    {
+        "text": " construya a partir de las observaciones. Entonces fíjense con esto. Fíjense con esto, el error",
+        "start": 1242.5,
+        "end": 1259.34
+    },
+    {
+        "text": " cuadrático lo puede escribir así. El error lo puede escribir así. Si yo ahora me construyo el",
+        "start": 1259.34,
+        "end": 1279.4199999999998
+    },
+    {
+        "text": " vector Epsilon, que es el vector de los errores. Es el vector que tiene en la primera entrada",
+        "start": 1279.4199999999998,
+        "end": 1285.58
+    },
+    {
+        "text": " el error de la variable I subí y subí uno con respecto al valor de la recta, la segunda el",
+        "start": 1285.58,
+        "end": 1291.46
+    },
+    {
+        "text": " Epsilon 2 etcétera y el último el Epsilon M. Estos son los M errores, los dibujos nos",
+        "start": 1291.46,
+        "end": 1302.54
+    },
+    {
+        "text": " va a acabar de borrar. Las deviaciones de los I con respecto a los valores que deberían tener",
+        "start": 1302.54,
+        "end": 1306.9399999999998
+    },
+    {
+        "text": " en la recta. Entonces esos errores son los que tengo puesto acá y esos sí dependen de los",
+        "start": 1306.9399999999998,
+        "end": 1314.22
+    },
+    {
+        "text": " parámetros que uno ponga. Pues yo pongo la recta y construyendo los errores. Entonces esto acá es",
+        "start": 1314.22,
+        "end": 1319.38
+    },
+    {
+        "text": " y uno menos alpha por X1 más beta y dos menos alpha por X2 más beta etcétera.",
+        "start": 1322.38,
+        "end": 1332.26
+    },
+    {
+        "text": " Este es el vector de errores, que fíjense una cosa, este vector de errores lo podemos",
+        "start": 1332.26,
+        "end": 1346.74
+    },
+    {
+        "text": " escribir una manera muy sencilla separando el vector I que es lo que está puesto acá.",
+        "start": 1346.74,
+        "end": 1352.62
+    },
+    {
+        "text": " Menos este otro vector alpha X1 más beta, alpha X2 más beta hasta alpha X1 más beta, que",
+        "start": 1362.26,
+        "end": 1369.8
+    },
+    {
+        "text": " fíjense que no es otra cosa que multiplicar esta matriz por este vector. En efecto la primera",
+        "start": 1369.8,
+        "end": 1378.14
+    },
+    {
+        "text": " entrada yo multiplico esta matriz por este vector la primera entrada es X1 por alpha más beta",
+        "start": 1378.14,
+        "end": 1384.18
+    },
+    {
+        "text": " por eso pongo uno ahí justamente la segunda entrada es X2 por alpha más beta etcétera.",
+        "start": 1384.18,
+        "end": 1389.3
+    },
+    {
+        "text": " La última entrada es X1 por alpha más beta o sea que es I menos la matriz por el vector",
+        "start": 1389.3,
+        "end": 1398.86
+    },
+    {
+        "text": " Z. Así se escriben los errores usando esos factores de tengo ahí. Estamos de acuerdo.",
+        "start": 1398.86,
+        "end": 1405.8999999999999
+    },
+    {
+        "text": " Sí. No no no no este, este lo pongo con un vector como vector columna.",
+        "start": 1405.9,
+        "end": 1416.98
+    },
+    {
+        "text": " No porque este, la primera entrada sería...",
+        "start": 1416.98,
+        "end": 1424.74
+    },
+    {
+        "text": " No no no no no no este 2 por 1 no no por 1, este por este más este por este, este",
+        "start": 1424.74,
+        "end": 1435.74
+    },
+    {
+        "text": " por este, este por este no queda perfectamente está. Fíjense la observación que hace",
+        "start": 1435.74,
+        "end": 1441.78
+    },
+    {
+        "text": " él. Si uno quisiera ser un ajuste en lugar de una recta a una parábola o a un polinomegrado",
+        "start": 1441.78,
+        "end": 1452.06
+    },
+    {
+        "text": " en el arbitrario, fíjense lo siguiente. Los errores serían y subí menos los valores",
+        "start": 1452.06,
+        "end": 1457.98
+    },
+    {
+        "text": " que tendríamos si tuvieramos en la parábola o sea que serían cosas de la forma alpha por",
+        "start": 1457.98,
+        "end": 1462.98
+    },
+    {
+        "text": " X2 y al cuadrado más beta por XC más gama tendríamos tres parámetros y eso lo único",
+        "start": 1462.98,
+        "end": 1471.74
+    },
+    {
+        "text": " que cambia es que ahora el vector Z tendría tres parámetros alpha, beta y gama y esto acá",
+        "start": 1471.74,
+        "end": 1478.1
+    },
+    {
+        "text": " serían, vendrían las variables. X1 al cuadrado, X1 y 1 o sea que la matriz que tendría",
+        "start": 1478.1,
+        "end": 1484.26
+    },
+    {
+        "text": " por el acá sería X1 al cuadrado tendría que dar una columna más que fuese X1 al cuadrado,",
+        "start": 1484.26,
+        "end": 1489.46
+    },
+    {
+        "text": " X2 al cuadrado, XM al cuadrado. Pero el rasonamiento es exactamente el mismo y si tuviera",
+        "start": 1489.46,
+        "end": 1495.46
+    },
+    {
+        "text": " acá un polinomegrado menor o el que M tendría que agregarle tantas columnas como misieran",
+        "start": 1495.46,
+        "end": 1501.18
+    },
+    {
+        "text": " falta, menor o el que un polinomegrado menor o el que K tendría que tener acá K columna",
+        "start": 1501.18,
+        "end": 1507.02
+    },
+    {
+        "text": " más, K más 1 columna, donde la última columna son todos uno y un vector acá de K más",
+        "start": 1507.02,
+        "end": 1511.9
+    },
+    {
+        "text": " 1 parámetros. Pero el rasonamiento es exactamente el mismo, o sea que este método este enfoque",
+        "start": 1511.9,
+        "end": 1519.06
+    },
+    {
+        "text": " se puede adaptar de manera natural a problemas más donde la justicia de otras funciones,",
+        "start": 1519.06,
+        "end": 1528.62
+    },
+    {
+        "text": " la función que se lo ocurra parámetros o lo que fuera. El digo polinomio o lo que fuera.",
+        "start": 1528.62,
+        "end": 1535.62
+    },
+    {
+        "text": " Bueno entonces formulado así el problema, se acuerdan que el error que habíamos escrito",
+        "start": 1535.62,
+        "end": 1544.4199999999998
+    },
+    {
+        "text": " al principio, se acuerdan que el error al cuadrado, el error cuadratico era la suma de",
+        "start": 1544.42,
+        "end": 1559.94
+    },
+    {
+        "text": " los errores es epsiloní y ese es el error que yo quiero minimizar. Entonces fíjense",
+        "start": 1559.94,
+        "end": 1566.14
+    },
+    {
+        "text": " una cosa, con esto queda lo siguiente, que es el siguiente problema. Calcular, se está",
+        "start": 1566.14,
+        "end": 1577.6200000000001
+    },
+    {
+        "text": " el vector de parámetros, que minimiza justamente el error el esto, el error del cuadrado, pero",
+        "start": 1577.6200000000001,
+        "end": 1590.94
+    },
+    {
+        "text": " esto no es otra cosa que la norma de este vector al cuadrado, donde estamos usando",
+        "start": 1590.94,
+        "end": 1597.8600000000001
+    },
+    {
+        "text": " la norma usual en Rm, es decir la norma inducida por el producto usual en Rm. La norma",
+        "start": 1597.8600000000001,
+        "end": 1604.26
+    },
+    {
+        "text": " de esto al cuadrado es esta que han quedado al cuadrado, no esta contenedado al cuadrado,",
+        "start": 1604.26,
+        "end": 1607.78
+    },
+    {
+        "text": " no está contenedado al cuadrado, etc. La norma de Epsil no al cuadrado, que es justamente",
+        "start": 1607.78,
+        "end": 1619.9
+    },
+    {
+        "text": " el error que tenía ahí. Este error que antes era un número real que lo llamamos así,",
+        "start": 1619.9,
+        "end": 1626.3000000000002
+    },
+    {
+        "text": " nos otra cosa que el anormo del cuadrado de este vector de errores. Estamos entonces,",
+        "start": 1626.3000000000002,
+        "end": 1634.0600000000002
+    },
+    {
+        "text": " queremos calcular, z que minimiza esto, esto es z que minimiza y ahora sí, en lugar",
+        "start": 1634.06,
+        "end": 1650.78
+    },
+    {
+        "text": " del error escribimos esto, el vector error es i menos a por z, o sea queremos calcular,",
+        "start": 1650.78,
+        "end": 1657.22
+    },
+    {
+        "text": " z el vector de parámetros que minimiza y menos a por z, o esto al cuadrado siquiera,",
+        "start": 1657.22,
+        "end": 1671.46
+    },
+    {
+        "text": " como esta es una función positiva, minimizar el argumento, minimizar el cuadrado,",
+        "start": 1671.46,
+        "end": 1676.22
+    },
+    {
+        "text": " exactamente lo mismo. Entonces lo que tenemos que hacer, visto en este enfoque geometrico",
+        "start": 1676.22,
+        "end": 1683.8600000000001
+    },
+    {
+        "text": " pues, ustedes me dan los datos pareados, x, y yo me construyo esta matriz con los x,",
+        "start": 1683.86,
+        "end": 1690.78
+    },
+    {
+        "text": " este vector con los y y este es el vector de parámetros, entonces tengo que encontrar,",
+        "start": 1690.78,
+        "end": 1696.02
+    },
+    {
+        "text": " el vector de parámetros z que minimiza esta cantidad, ¿sí? ¿Dónde están las cosas?",
+        "start": 1696.02,
+        "end": 1706.86
+    },
+    {
+        "text": " Esto está en el Rm, obviamente esto es un vector en el Rm, fijo y esto también está",
+        "start": 1706.86,
+        "end": 1717.4599999999998
+    },
+    {
+        "text": " en el Rm, pero es una forma particular, porque no son los vectores de la forma a por z,",
+        "start": 1717.4599999999998,
+        "end": 1724.2199999999998
+    },
+    {
+        "text": " donde hace una matriz, m por 2 y z es una matriz 2 por 1, o sea esto efectivamente es un",
+        "start": 1724.2199999999998,
+        "end": 1734.3799999999999
+    },
+    {
+        "text": " vector en el Rm, pero es un vector muy particular, es un vector de la forma a por z,",
+        "start": 1734.38,
+        "end": 1740.14
+    },
+    {
+        "text": " entonces lo que queremos encontrar es el z que minimiza esto y eso encaja ahora perfectamente",
+        "start": 1740.14,
+        "end": 1748.0200000000002
+    },
+    {
+        "text": " con la proyección autobonal, píquense, me voy anticipando, ¿dónde vive a por z, vive",
+        "start": 1748.0200000000002,
+        "end": 1758.18
+    },
+    {
+        "text": " en un sub espacio vectorial que son todos los vectores de esta forma, seamos a ver que",
+        "start": 1758.18,
+        "end": 1762.3400000000001
+    },
+    {
+        "text": " todos los vectores de esta forma son los vectores que son combinación lineal de las columnas",
+        "start": 1762.34,
+        "end": 1767.02
+    },
+    {
+        "text": " de A, o sea eso es un sub espacio y esto es un vector fijo, entonces queremos encontrar",
+        "start": 1767.02,
+        "end": 1772.58
+    },
+    {
+        "text": " en ese sub espacio el vector que más se parece ahí, o sea que esto va a ser la proyección",
+        "start": 1772.58,
+        "end": 1777.98
+    },
+    {
+        "text": " autobonal de I sobre ese sub espacio que estamos trabajando, vamos, eso lo vemos en un",
+        "start": 1777.98,
+        "end": 1784.34
+    },
+    {
+        "text": " rato, y acá es donde entra perfectamente, lo de caja perfectamente, lo de proyección autobonal.",
+        "start": 1784.34,
+        "end": 1806.1
+    },
+    {
+        "text": " Alguna pregunta, se entendió entonces esto, yo me construyó, el vector y la matriz",
+        "start": 1806.1,
+        "end": 1810.54
+    },
+    {
+        "text": " de la con los datos, tengo el vector de parámetros, yo quiero calcular, el vector de parámetros",
+        "start": 1810.54,
+        "end": 1815.82
+    },
+    {
+        "text": " que minimiza esto, entonces vamos a desarrollar un poquito más esto y vamos a usar las herramientas",
+        "start": 1815.82,
+        "end": 1824.8999999999999
+    },
+    {
+        "text": " que vimos en la última clase, fíjense lo siguiente, cuando uno hace a por z y pone lo que",
+        "start": 1824.8999999999999,
+        "end": 1837.74
+    },
+    {
+        "text": " es a y lo que se está acá, estamos duplicando esa matriz por ese vector, fíjense que lo que",
+        "start": 1837.74,
+        "end": 1863.1
+    },
+    {
+        "text": " me queda ahí es un vector de las entras de la forma alpha por x1 más beta, alpha por",
+        "start": 1863.1,
+        "end": 1875.1399999999999
+    },
+    {
+        "text": " x2 más beta justamente los errores y eso lo podemos escribir como alpha por la primera",
+        "start": 1875.1399999999999,
+        "end": 1880.82
+    },
+    {
+        "text": " columna más beta por la segunda columna, sí, es un comentario tonto pero que vale la pena",
+        "start": 1880.82,
+        "end": 1899.82
+    },
+    {
+        "text": " hacerlo, el producto está matriz por este vector, me da un vector en rla m que justamente",
+        "start": 1899.82,
+        "end": 1908.9399999999998
+    },
+    {
+        "text": " alpha por la primera columna más beta por la segunda columna, esto le vamos a llamar",
+        "start": 1908.94,
+        "end": 1914.06
+    },
+    {
+        "text": " esto, bueno esto es la columna 1dA y esto es la columna 2dA, ahora la matriz de esta",
+        "start": 1914.06,
+        "end": 1924.46
+    },
+    {
+        "text": " fija depende de los datos, entonces las columnas 1 y 2 están fija, lo que estamos haciendo",
+        "start": 1924.46,
+        "end": 1930.8600000000001
+    },
+    {
+        "text": " es considerar todas las posibles combinaciones de la columna 1dA y la columna 2dA y ahí",
+        "start": 1930.8600000000001,
+        "end": 1937.22
+    },
+    {
+        "text": " solo lo consigo variando los parámetros al fíbetas, entonces en definitiva lo que estamos",
+        "start": 1937.22,
+        "end": 1941.42
+    },
+    {
+        "text": " haciendo con yo variado sobre el espacio todos los parámetros es trabajar en el subespacio",
+        "start": 1941.42,
+        "end": 1946.66
+    },
+    {
+        "text": " de las combinaciones lineales de la columna y la segunda columna, o sea esto acá vive",
+        "start": 1946.66,
+        "end": 1953.5
+    },
+    {
+        "text": " en el subespacio generado por las columnas de A, porque son, esto acá es un vector de",
+        "start": 1953.5,
+        "end": 1960.46
+    },
+    {
+        "text": " la forma alpha por la primera columna más beta por la segunda columna, entonces esto",
+        "start": 1960.46,
+        "end": 1967.98
+    },
+    {
+        "text": " acá, la porceta está en el subespacio vectorial de rla m generado por las columnas de A,",
+        "start": 1967.98,
+        "end": 1983.5
+    },
+    {
+        "text": " porque yo variado alpha y beta, números reales y tengo, me muevo siempre en el subespacio,",
+        "start": 1983.5,
+        "end": 1989.02
+    },
+    {
+        "text": " entonces alpha a porceta pertenece a ese que es el subespacio de rla m generado por",
+        "start": 1989.02,
+        "end": 2003.6
+    },
+    {
+        "text": " las columnas de A, bien que obviamente ese es un espacio de dimensión 2, porque una",
+        "start": 2003.6,
+        "end": 2021.12
+    },
+    {
+        "text": " es la columna todo 1 y otra es la columna de datos x y estos datos no son todos iguales,",
+        "start": 2021.12,
+        "end": 2028.1999999999998
+    },
+    {
+        "text": " estamos, entonces esto es un subespacio de dimensión 2, entonces me estoy moviendo en un subespacio",
+        "start": 2028.1999999999998,
+        "end": 2032.28
+    },
+    {
+        "text": " de dimensión 2, que estén en rla m, tengo un vector fijo en rla m y quiero ver cuál es",
+        "start": 2032.28,
+        "end": 2038.3999999999999
+    },
+    {
+        "text": " el vector de ese subespacio o ese, que más se parece a este otro, o sea que minimiza",
+        "start": 2038.3999999999999,
+        "end": 2044.16
+    },
+    {
+        "text": " esta distancia, que más se parece con esta idea de distancia y eso justamente la proyección",
+        "start": 2044.16,
+        "end": 2049.0
+    },
+    {
+        "text": " de toda, sí entonces, dado el vector y en rla m queremos encontrar un vector de parámetro,",
+        "start": 2049.0,
+        "end": 2077.68
+    },
+    {
+        "text": " porque la vamos a llamar z sol de z solucion tal que y menos A por z sol al cuadrado se",
+        "start": 2077.68,
+        "end": 2094.44
+    },
+    {
+        "text": " aminimo, es decir, el menor va a dar el posible y como les decía recién, yo tengo, estoy",
+        "start": 2094.44,
+        "end": 2107.12
+    },
+    {
+        "text": " trabajando de rla m, tengo un subespacio de ese de rla m, del subespacio generado por estas",
+        "start": 2107.12,
+        "end": 2115.68
+    },
+    {
+        "text": " columnas y tengo un vector y en rla m que es el espacio generado por los datos, sí, entonces",
+        "start": 2115.68,
+        "end": 2123.9199999999996
+    },
+    {
+        "text": " lo que yo quiero ver es moviendo en este subespacio, tomando valores en este subespacio,",
+        "start": 2123.9199999999996,
+        "end": 2129.7599999999998
+    },
+    {
+        "text": " cuál es el vector que más se parece a este, o sea cuál es el vector acá dentro, que",
+        "start": 2129.7599999999998,
+        "end": 2135.2
+    },
+    {
+        "text": " minimiza la distancia del subespector y algo que está acabado y eso es justamente la proyección",
+        "start": 2135.2,
+        "end": 2141.24
+    },
+    {
+        "text": " autobonal. Entonces, el A z sol es justamente la proyección autobonal de I sobre ese subespacio,",
+        "start": 2141.24,
+        "end": 2151.12
+    },
+    {
+        "text": " estamos, lo que vimos en proyección autobonal la última clase el teórico, así queremos",
+        "start": 2151.12,
+        "end": 2159.16
+    },
+    {
+        "text": " encontrar en ese, el vector que más se parece a ello, o sea el que minimiza la distancia",
+        "start": 2159.16,
+        "end": 2163.12
+    },
+    {
+        "text": " cuadrado. Entonces, este acá es la proyección autobonal de I sobre ese subespacio. Es decir, el vector",
+        "start": 2163.12,
+        "end": 2188.7999999999997
+    },
+    {
+        "text": " de parámetros está el que A por ese vector de parámetros es la proyección autobonal de I sobre",
+        "start": 2188.8,
+        "end": 2194.04
+    },
+    {
+        "text": " su subespacio es y eso es todo. Ahora que quisieramos encontrar una forma más fácil de manipular,",
+        "start": 2194.04,
+        "end": 2201.48
+    },
+    {
+        "text": " pero eso es toda la idea, quieren encontrar este vector que es justamente la proyección autobonal",
+        "start": 2201.48,
+        "end": 2207.2000000000003
+    },
+    {
+        "text": " de I sobre el espacio en el que vive este vector, que es ese. Las combinaciones, el espacio",
+        "start": 2207.2000000000003,
+        "end": 2213.2400000000002
+    },
+    {
+        "text": " generado por las columnas de A. Bien y la solución es única porque la proyección autobonal",
+        "start": 2213.24,
+        "end": 2220.7999999999997
+    },
+    {
+        "text": " sabemos que es única. Estamos, ¿acuerdo? No sé si hay alguna pregunta. Entonces, ¿lo que",
+        "start": 2220.7999999999997,
+        "end": 2229.4399999999996
+    },
+    {
+        "text": " resta? Sí. No hay a lo que se va a preguntar. No es enorme, no es por lo que se va a preguntar.",
+        "start": 2229.4399999999996,
+        "end": 2236.8799999999997
+    },
+    {
+        "text": " Esto ahí ya se complica la cosa porque ahí ya no tenés producto inteo, exactamente. Exactamente.",
+        "start": 2236.8799999999997,
+        "end": 2241.9599999999996
+    },
+    {
+        "text": " Lo vimos problemas que tenés, ya sé, calculo analítico porque no tenés la noción de",
+        "start": 2241.96,
+        "end": 2247.52
+    },
+    {
+        "text": " diferenciabilidad. Es una norma problemática, la de la de la de dos es una norma más natural.",
+        "start": 2247.52,
+        "end": 2252.52
+    },
+    {
+        "text": " Estamos. Entonces, lo que vamos a hacer a partir de ahora y en lo que resta de clases es trabajar",
+        "start": 2252.52,
+        "end": 2261.2400000000002
+    },
+    {
+        "text": " un poquito más esto para encontrar una expresión más fácil de manipular del vector de soluciones.",
+        "start": 2261.2400000000002,
+        "end": 2268.52
+    },
+    {
+        "text": " Y eso es todo.",
+        "start": 2269.24,
+        "end": 2270.08
+    },
+    {
+        "text": " Vieron que no vamos a hacer el caso de los polinomios, lo dejo como ejercicio, pero vieron que",
+        "start": 2272.32,
+        "end": 2276.92
+    },
+    {
+        "text": " yo tuviera ahí la aproximación con cuadráticas exactamente lo mismo. Nada más que A, sería una",
+        "start": 2276.92,
+        "end": 2282.16
+    },
+    {
+        "text": " matriz que tiene una columna más acá, pero el razonamiento es exactamente el mismo. Es,",
+        "start": 2282.16,
+        "end": 2287.16
+    },
+    {
+        "text": " trabajo con el subespacio generado por las columnas de A y esto será la proyección autobonal",
+        "start": 2287.16,
+        "end": 2295.16
+    },
+    {
+        "text": " de A y sobre ese subespacio, pero las cuentas son exactamente las mismas. Eso se lo dejo",
+        "start": 2295.16,
+        "end": 2300.7599999999998
+    },
+    {
+        "text": " como ejercicio está hecho, ahí al final en el libro Rojo. Bueno, vamos a ver un par de",
+        "start": 2300.7599999999998,
+        "end": 2309.72
+    },
+    {
+        "text": " resultados para manipular eso. El primer resultado es algo que le vamos a llamarle,",
+        "start": 2309.72,
+        "end": 2313.92
+    },
+    {
+        "text": " por resultado bien sencillo, que me dice lo siguiente, lo escribo y ya lo probamos.",
+        "start": 2315.92,
+        "end": 2322.04
+    },
+    {
+        "text": " Este es el resultado que vamos a probar en un ratito.",
+        "start": 2385.16,
+        "end": 2406.04
+    },
+    {
+        "text": " El resultado es muy sencillo. Estamos trabajando en el RME con el producto intérno",
+        "start": 2415.16,
+        "end": 2442.3999999999996
+    },
+    {
+        "text": " usual. Si usted es un matriz M por N, o sea las columnas de esa matriz viven en RME.",
+        "start": 2442.4,
+        "end": 2451.64
+    },
+    {
+        "text": " Entonces, es una matriz tamaño M por N y consideramos ese subespacio generado por las columnas",
+        "start": 2451.64,
+        "end": 2458.08
+    },
+    {
+        "text": " de A, es decir, ese es un subespacio RME. Bueno, y consideramos además RME con el producto",
+        "start": 2458.08,
+        "end": 2466.8
+    },
+    {
+        "text": " intérno usual. Así estamos trabajando en RME y tenemos el subespacio S. Lo que me dice",
+        "start": 2466.8,
+        "end": 2472.36
+    },
+    {
+        "text": " es el resultado es que el complemento autobonal de S son aquellos vectores en RME,",
+        "start": 2472.36,
+        "end": 2478.92
+    },
+    {
+        "text": " tal es que cumple de esta condición. La respuesta de A multiplicada por aquí me da ser. Fíjense",
+        "start": 2478.92,
+        "end": 2485.36
+    },
+    {
+        "text": " que eso está bien definido porque la matriz A tras puesta es una matriz N por N, esto es",
+        "start": 2485.36,
+        "end": 2496.2400000000002
+    },
+    {
+        "text": " un vector M por 1 y el resultado me da el 0, el vector 0 que es el vector N por 1.",
+        "start": 2496.24,
+        "end": 2508.08
+    },
+    {
+        "text": " O sea que eso está bien definido. Es decir, que para ver en este contexto cuáles son los",
+        "start": 2508.08,
+        "end": 2514.12
+    },
+    {
+        "text": " equis que están en el complemento autobonal de subespacio generado por las columnas de A,",
+        "start": 2514.12,
+        "end": 2519.52
+    },
+    {
+        "text": " tengo que hacer, resolver la respuesta por X y igual a 0 y ahí lo sea. Bien, las",
+        "start": 2519.52,
+        "end": 2527.46
+    },
+    {
+        "text": " demostraciones bien, bien sencilla. ¿Qué quiere decir que X ya tiene complemento autobonal",
+        "start": 2527.46,
+        "end": 2533.84
+    },
+    {
+        "text": " de S? ¿Donde S es ese subespacio generado por las columnas de A? Sí, sí, pero además",
+        "start": 2533.84,
+        "end": 2544.0
+    },
+    {
+        "text": " quiere decir que ese subspacio autobonal a todas las columnas de A. Sí, más fácil",
+        "start": 2544.0,
+        "end": 2553.42
+    },
+    {
+        "text": " todavía. X, X está en ese subspacio autobonal y quiere decir que ese subspacio autobonal",
+        "start": 2553.42,
+        "end": 2557.06
+    },
+    {
+        "text": " a todas las columnas de A. Pero ¿no? X, ¿qué es ese subspacio autobonal? A todas las",
+        "start": 2557.06,
+        "end": 2568.42
+    },
+    {
+        "text": " columnas de A. Las columnas de A son justamente las filas de A transpuesta. O sea que es decir",
+        "start": 2568.42,
+        "end": 2583.14
+    },
+    {
+        "text": " que X ortobonal a todas las columnas de A es lo mismo que es decir que X es ortobonal",
+        "start": 2583.14,
+        "end": 2589.3
+    },
+    {
+        "text": " a todas las filas de A transpuesta. Estamos. Ahora, yo tengo A transpuesta por acá y me",
+        "start": 2589.3,
+        "end": 2615.7200000000003
+    },
+    {
+        "text": " estoy fijando en las filas. Y si yo se lo multiplico por el vector de X, lo pongo así.",
+        "start": 2615.72,
+        "end": 2641.9399999999996
+    },
+    {
+        "text": " Lo que me da, el primer elemento que eso me da un vector, el primer elemento se vector",
+        "start": 2641.94,
+        "end": 2650.82
+    },
+    {
+        "text": " es agarrar la primera fila a C y la columna de X. Es primer elemento acá por primera a C,",
+        "start": 2650.82,
+        "end": 2656.94
+    },
+    {
+        "text": " segunda a C, por segunda a C, etcétera, en M, en M, acá por M, acá. O sea es el producto",
+        "start": 2656.94,
+        "end": 2661.48
+    },
+    {
+        "text": " interno habitual de esta fila con esto, que es el producto interno habitual de X con la",
+        "start": 2661.48,
+        "end": 2668.44
+    },
+    {
+        "text": " primera columna de A. Y como X ortobonal a todas las columnas de A esto me da C. Esto es",
+        "start": 2668.44,
+        "end": 2675.6
+    },
+    {
+        "text": " el producto interno de X con la segunda columna de A que me da C, etcétera. O sea que efectivamente",
+        "start": 2675.6,
+        "end": 2680.88
+    },
+    {
+        "text": " y esto es el producto interno de X con la última columna de A que también es C. O sea que",
+        "start": 2680.88,
+        "end": 2685.92
+    },
+    {
+        "text": " efectivamente esto acá es lo mismo que es decir que a transpuesta por X es igual a C. Es decir,",
+        "start": 2685.92,
+        "end": 2697.68
+    },
+    {
+        "text": " para obtener todos los X que están en el complemento ortobonal de ese donde ese en su",
+        "start": 2697.68,
+        "end": 2703.14
+    },
+    {
+        "text": " espacio generado por las columnas de A, lo que tengo que hacer es resolver esto a transpuesta",
+        "start": 2703.14,
+        "end": 2708.12
+    },
+    {
+        "text": " por X y igual a C. Sí. Y con eso ya podemos obtener una expresión más linda para",
+        "start": 2708.12,
+        "end": 2720.2799999999997
+    },
+    {
+        "text": " calcular la seta, el esto. Porque recuerdan que si uno quiere calcular por fuerza bruta, la",
+        "start": 2720.28,
+        "end": 2728.48
+    },
+    {
+        "text": " protección ortobonal tiene que obtener una base ortobonal de E, E y eso puede ser sumamente",
+        "start": 2728.48,
+        "end": 2733.4
+    },
+    {
+        "text": " tedioso. Entonces justamente la idea es trabajar esto un poquito para obtener una expresión",
+        "start": 2733.4,
+        "end": 2739.1200000000003
+    },
+    {
+        "text": " más linda de manipular para el conjunto de solución. Eso es todo.",
+        "start": 2739.12,
+        "end": 2744.6
+    },
+    {
+        "text": " Entonces volvamos acá y trabajemos un poquito esto. Y van a ver cómo ahora por",
+        "start": 2744.6,
+        "end": 2761.9
+    },
+    {
+        "text": " hablar arte de majes que a todo escrito una manera bien compacta. Entonces la solución,",
+        "start": 2761.9,
+        "end": 2776.9
+    },
+    {
+        "text": " la tenemos escrita ahí, la solución del problema original que hay de los planteados, de",
+        "start": 2776.9,
+        "end": 2780.82
+    },
+    {
+        "text": " mínimos cuadrados. Ah, por el vector de parámetros es la protección ortobonal. Sobre ese",
+        "start": 2780.82,
+        "end": 2787.78
+    },
+    {
+        "text": " que era el espacio generado por las columnas de A del vector E y ya, dependiendo de los datos,",
+        "start": 2787.78,
+        "end": 2796.42
+    },
+    {
+        "text": " seta el conjunto de parámetros. Ahora la protección ortobonal, ustedes saben que",
+        "start": 2796.42,
+        "end": 2805.1800000000003
+    },
+    {
+        "text": " Y se escribe como la suma la protección ortobonal sobre ese, más la protección ortobonal sobre",
+        "start": 2805.1800000000003,
+        "end": 2809.5
+    },
+    {
+        "text": " su complemento ortobonal. O sea que esto acá lo podemos escribir como E, menos la protección",
+        "start": 2809.5,
+        "end": 2816.3
+    },
+    {
+        "text": " de E y sobre el complemento ortobonal. Y ahora lo que vamos a hacer ahí es le vamos a",
+        "start": 2816.3,
+        "end": 2826.98
+    },
+    {
+        "text": " aplicar a transpuestas ambos lados. Que es fácil de ver que eso, esa operación se puede",
+        "start": 2826.98,
+        "end": 2833.54
+    },
+    {
+        "text": " hacer, que son compatibles las matrices que aparecen ahí. Entonces yo multiplico por",
+        "start": 2833.54,
+        "end": 2838.7400000000002
+    },
+    {
+        "text": " la transpuesta en un lado y me va a quedar. De un lado a transpuestas, por acá que la",
+        "start": 2838.74,
+        "end": 2843.4599999999996
+    },
+    {
+        "text": " pueda grupar así, por seta solución. De el otro lado me va a quedar a transpuesta aplicada",
+        "start": 2843.4599999999996,
+        "end": 2852.18
+    },
+    {
+        "text": " ahí, menos a transpuesta aplicado a ese vector que es la protección ortobonal, la protección",
+        "start": 2852.18,
+        "end": 2865.1
+    },
+    {
+        "text": " ortobonal del vector y sobre complemento ortobonal de ese. Esto lo grupo así por el",
+        "start": 2865.1,
+        "end": 2880.7799999999997
+    },
+    {
+        "text": " producto de matrices es asociativo. Ahora fíjense, esto está en ese ortobonal, ese es el",
+        "start": 2880.7799999999997,
+        "end": 2892.22
+    },
+    {
+        "text": " espacio generado por las columnas de A. O sea que esto está jugando el papel de E,",
+        "start": 2892.22,
+        "end": 2900.8599999999997
+    },
+    {
+        "text": " que ya acá, EX está en el complemento ortobonal de ese, que es el espacio generado por las columnas",
+        "start": 2900.8599999999997,
+        "end": 2906.7
+    },
+    {
+        "text": " de A. Por lo tanto se cumple que a transpuesta por ese vector me da cero. Entonces por el",
+        "start": 2906.7,
+        "end": 2911.8599999999997
+    },
+    {
+        "text": " lema esto acá es igual a cero. ¿Cómo? No, no, no, no, porque esta es la transpuesta de A,",
+        "start": 2911.86,
+        "end": 2933.1
+    },
+    {
+        "text": " que está, a ni siquiera es una matriz cuadrada. Digo, puede ser que queda ilentida pero no",
+        "start": 2933.1,
+        "end": 2942.7799999999997
+    },
+    {
+        "text": " tiene que no estamos hablando de inversa de A, ¿no? Eso porque anos una matriz cuadrada.",
+        "start": 2942.7799999999997,
+        "end": 2946.66
+    },
+    {
+        "text": " Entonces lo que tenemos en definitiva y además de que el lema me garantiza esto es",
+        "start": 2946.66,
+        "end": 2952.7
+    },
+    {
+        "text": " el lema es más general todavía, porque la matriz A puede tener más columnas que 2,",
+        "start": 2952.7,
+        "end": 2959.46
+    },
+    {
+        "text": " justamente cuando yo resolvo con polinovomios me quedo una matriz con más columnas pero esto",
+        "start": 2959.46,
+        "end": 2963.7400000000002
+    },
+    {
+        "text": " sigue siendo válido. Estamos, porque estoy trabajando con E, ese es el espacio generado por",
+        "start": 2963.7400000000002,
+        "end": 2968.58
+    },
+    {
+        "text": " las columnas de A. O sea que en E acá me da que esto es igual a cero y si estuviera trabajando",
+        "start": 2968.58,
+        "end": 2973.58
+    },
+    {
+        "text": " con polinovomios de grabo 2 también me daría la matriz A transpuesta por ese igual a cero.",
+        "start": 2973.58,
+        "end": 2978.46
+    },
+    {
+        "text": " Entonces en definitiva lo que tenemos es que el conjunto solución cumple que a transpuesta",
+        "start": 2978.46,
+        "end": 2988.2200000000003
+    },
+    {
+        "text": " por ceta solución es igual a transpuesta por E. Y eso son los que se llaman las situaciones",
+        "start": 2988.22,
+        "end": 2998.7799999999997
+    },
+    {
+        "text": " normales de mínimos cuadrados que me permiten resolver el ceta solución. Ya vamos a hacer",
+        "start": 2998.7799999999997,
+        "end": 3005.06
+    },
+    {
+        "text": " un ejemplo. Estamos, fíjense que tanto el vector y como el vectorálogo construyo los datos,",
+        "start": 3005.06,
+        "end": 3022.42
+    },
+    {
+        "text": " tengo por un lado esto, tengo por otro lado esto, despejo acá ceta solución y tengo",
+        "start": 3022.42,
+        "end": 3026.38
+    },
+    {
+        "text": " el vector de parámetros que minimiza que me resule el problema de mínimos cuadrados.",
+        "start": 3026.38,
+        "end": 3034.62
+    },
+    {
+        "text": " Ahora un comentario que les quiero hacer, a no es una matriz cuadrada pero otra respuesta",
+        "start": 3034.62,
+        "end": 3042.9
+    },
+    {
+        "text": " por así es una matriz cuadrada. Si esta matriz A que tenía dos columnas tiene rango 2",
+        "start": 3042.9,
+        "end": 3049.3
+    },
+    {
+        "text": " como efectivamente pasa acá entonces esta matriz es invertida. O sea lo que se puede",
+        "start": 3049.3,
+        "end": 3054.38
+    },
+    {
+        "text": " ver es que si ya tiene rango máximo, esto lo van a usar también en aquellos que hagan",
+        "start": 3054.38,
+        "end": 3069.46
+    },
+    {
+        "text": " metos numéricos. Si ya tiene rango máximo o sea recordemos que es una matriz con dos",
+        "start": 3069.46,
+        "end": 3075.58
+    },
+    {
+        "text": " columnas, lo que estamos haciendo que el rango de A es igual a 2, es el rango máximo,",
+        "start": 3075.58,
+        "end": 3080.26
+    },
+    {
+        "text": " pero cual acá es evidente porque tengo acá todos unos y acá tengo los datos, aquí",
+        "start": 3080.26,
+        "end": 3084.78
+    },
+    {
+        "text": " es uno aquí, pero también ese evidente yo trabajar con las, también se cumple y",
+        "start": 3084.78,
+        "end": 3092.26
+    },
+    {
+        "text": " yo trabajar, la agregar a camas columnas en el caso de aproximación de polinotas. O sea",
+        "start": 3092.26,
+        "end": 3096.98
+    },
+    {
+        "text": " si ya tiene rango máximo se cumple que a transpuesta por A que esto sí es una matriz",
+        "start": 3096.98,
+        "end": 3105.5
+    },
+    {
+        "text": " cuadrada es invertible. Y en ese caso obviamente el z solución no es otra cosa que la inversa",
+        "start": 3105.5,
+        "end": 3125.62
+    },
+    {
+        "text": " da transpuesta por A, las pasas multiplicando por el que el lado por la transpuesta por A.",
+        "start": 3125.62,
+        "end": 3132.62
+    },
+    {
+        "text": " Y ahí está, resuelto el problema. Esto que está acá, recordemos que la matriz",
+        "start": 3132.62,
+        "end": 3141.98
+    },
+    {
+        "text": " depende de las variables S, aquí si esto acá depende de las variables de los datos de los",
+        "start": 3141.98,
+        "end": 3147.3399999999997
+    },
+    {
+        "text": " y aquí si esto depende de los S y sumis y acá está toda la información de los datos,",
+        "start": 3147.34,
+        "end": 3158.6600000000003
+    },
+    {
+        "text": " hago este producto matricial y tengo la solución de los parados.",
+        "start": 3158.6600000000003,
+        "end": 3164.34
+    },
+    {
+        "text": " ¿Está listo? Vamos a hacer un ejemplo para que vean cómo que sale todo esto. Bueno,",
+        "start": 3164.34,
+        "end": 3170.78
+    },
+    {
+        "text": " preguntas. O sea tengo una expresión geométrica o una interpretación geométrica, el problema",
+        "start": 3170.78,
+        "end": 3180.98
+    },
+    {
+        "text": " que es esta y manipulando esta interpretación geométrica, llego esta expresión, estas",
+        "start": 3180.98,
+        "end": 3186.46
+    },
+    {
+        "text": " ecuaciones para calcular los parámetros que minimizan el problema original. ¿Qué",
+        "start": 3186.46,
+        "end": 3194.5
+    },
+    {
+        "text": " ha caído? Bueno, me voy a agregar un poco de polino, me he dado cada vez más alto",
+        "start": 3194.5,
+        "end": 3209.18
+    },
+    {
+        "text": " para agregar con una y hay que verificar que esto tenga rango máximo, así que no pasen",
+        "start": 3209.18,
+        "end": 3213.02
+    },
+    {
+        "text": " cosas patológicas. Bueno, entonces no temo lo siguiente, a ver. Ya terminamos con esto",
+        "start": 3213.02,
+        "end": 3222.06
+    },
+    {
+        "text": " y enseguida vamos a un ejemplo. Nota lo siguiente, en primer lugar, ¿qué es la",
+        "start": 3222.06,
+        "end": 3231.7799999999997
+    },
+    {
+        "text": " transpuesta por ahora? Recorremos que la matriz A tenía X1, X2 hasta Xm y 1, 1, 1, 1,",
+        "start": 3231.7799999999997,
+        "end": 3240.94
+    },
+    {
+        "text": " 1, o sea que la transpuesta es X1, X2 hasta Xm, 1, 1, 1 y acá viene la. El producto",
+        "start": 3240.94,
+        "end": 3261.46
+    },
+    {
+        "text": " es a 2, matríseme, no matrís 2 por 2. La primera entrada que viene acá es X1 al cuadrado,",
+        "start": 3261.46,
+        "end": 3268.3
+    },
+    {
+        "text": " más X2 al cuadrado, más Xm al cuadrado, o sea la suma de los Xs al cuadrado. ¿Qué viene",
+        "start": 3268.3,
+        "end": 3280.54
+    },
+    {
+        "text": " acá? X1 por 1, más X2 por 1, la suma atoria de los Xs, que también viene acá abajo. ¿Y",
+        "start": 3280.54,
+        "end": 3297.42
+    },
+    {
+        "text": " que viene acá? 1, más 1, más 1, más 1, más 1, MBS, tanto como datos tenga, o sea",
+        "start": 3297.42,
+        "end": 3302.1
+    },
+    {
+        "text": " que acá viene M. Esta es la matriz A transpuesta por A, la construyo por los datos X. Sí, pero",
+        "start": 3302.1,
+        "end": 3318.9
+    },
+    {
+        "text": " rango máximo me refiero que coincide con el máximo posible, que es boca, tienes muchas",
+        "start": 3318.9,
+        "end": 3326.3
+    },
+    {
+        "text": " filas y pocas columbras, el máximo posible es la cantidad columbra. Está bien, es exactamente.",
+        "start": 3326.3,
+        "end": 3335.5800000000004
+    },
+    {
+        "text": " Entonces, esto es a transpuesta por A, ahora ¿qué me da a transpuesta por I? Lo que tengo",
+        "start": 3335.5800000000004,
+        "end": 3341.1000000000004
+    },
+    {
+        "text": " acá de este lado, a transpuesta por el vector I. Este es un vector con dos entradas, la primera",
+        "start": 3341.1,
+        "end": 3364.88
+    },
+    {
+        "text": " es X1 y 1, aquí 2 y 2, etcétera. O sea, la primera entrada que tengo acá son las sumas",
+        "start": 3364.88,
+        "end": 3370.2599999999998
+    },
+    {
+        "text": " de los productos de la forma X y por I subí, con I es 1 está en, o el producto interno de estos",
+        "start": 3370.26,
+        "end": 3376.2200000000003
+    },
+    {
+        "text": " datos con estos datos. Recoremos que están ordenados, este es que corresponde a E, este,",
+        "start": 3376.2200000000003,
+        "end": 3381.0600000000004
+    },
+    {
+        "text": " corresponde a E, etcétera. Y lo que tengo acá abajo es la suma de los X subí.",
+        "start": 3381.0600000000004,
+        "end": 3385.82
+    },
+    {
+        "text": " Entonces, con esto me queda y esto lo que vamos a hacer es un ratito, con esto queda",
+        "start": 3385.82,
+        "end": 3413.3
+    },
+    {
+        "text": " el vector, el vector de parámetros es igual a la inversa de la matrix a transpuesta por A, o sea,",
+        "start": 3413.3,
+        "end": 3431.5
+    },
+    {
+        "text": " la inversa de esto, bueno acá parece la complicación de que hay que calcular la inversa,",
+        "start": 3431.5,
+        "end": 3438.74
+    },
+    {
+        "text": " que no es difícil hacer porque una matrix por 2, la inversa de esto por el vector I.",
+        "start": 3438.74,
+        "end": 3458.9799999999996
+    },
+    {
+        "text": " Aquí tengo la inversión final, que no es fácil acordarse la, pero si lo que es fácil acordarse es",
+        "start": 3468.74,
+        "end": 3484.7
+    },
+    {
+        "text": " de donde sale esa solución planteando bien las cosas, cómo es la matrices y acorándose y manipulando",
+        "start": 3484.7,
+        "end": 3492.3799999999997
+    },
+    {
+        "text": " bien eso. Sí, entonces lo vamos a dejar escrito así, ya vamos a hacer un ejemplo, esta es la",
+        "start": 3492.38,
+        "end": 3502.26
+    },
+    {
+        "text": " solución, este producto me da un vector, la primera entrada del componente alpha, la parte que",
+        "start": 3502.26,
+        "end": 3507.5
+    },
+    {
+        "text": " voy multiplicando a X, la parte lineal y esta de duvetas es la parte constante y ahí tengo los",
+        "start": 3507.5,
+        "end": 3513.5
+    },
+    {
+        "text": " alfa y beta, óptimos que me dan la recta óptima que me ajusta los datos, estamos, le dejo como",
+        "start": 3513.5,
+        "end": 3523.06
+    },
+    {
+        "text": " ejercicio verificar que le enfoque analítico que le dejé picando el comienzo, coincide con esto,",
+        "start": 3523.06,
+        "end": 3532.1
+    },
+    {
+        "text": " que obviamente coincide, si uno enfoca el problema calculando las derivadas, viendo las con respecto",
+        "start": 3532.1,
+        "end": 3538.82
+    },
+    {
+        "text": " alfa y beta, viendo que son los alfa y beta que minimiza la roca agratico, manipulando eso me sale",
+        "start": 3538.82,
+        "end": 3543.6200000000003
+    },
+    {
+        "text": " exactamente esto, pero esto insiste otro fácil de generalizar a contexto más amplio. Bien,",
+        "start": 3543.6200000000003,
+        "end": 3552.1800000000003
+    },
+    {
+        "text": " vamos a hacer un ejemplo y terminamos la clase, les dejo también que piensen el problema de",
+        "start": 3552.1800000000003,
+        "end": 3562.7000000000003
+    },
+    {
+        "text": " aproximación por polinomios, que es lo que les comentaba antes, hay que ver a los más columnos",
+        "start": 3562.7000000000003,
+        "end": 3566.98
+    },
+    {
+        "text": " a la A, pero a la matriz A, pero el resultado es exactamente el mismo, haganlo a eso porque nos",
+        "start": 3567.7,
+        "end": 3574.3
+    },
+    {
+        "text": " prácticos a ver cosas, piensen esto, o sea siempre estamos encontrando una combinación",
+        "start": 3574.3,
+        "end": 3583.3
+    },
+    {
+        "text": " lineal óptima de parámetros que ajusta a un problema, acá yo estoy encontrando funciones de la",
+        "start": 3583.3,
+        "end": 3591.02
+    },
+    {
+        "text": " forma alpha por x más beta que ajusta a un problema, pues yo tranquilamente les podría decir",
+        "start": 3591.02,
+        "end": 3597.22
+    },
+    {
+        "text": " calculen menos parámetros alfa y beta, donde la función que estoy usando es de la forma alpha",
+        "start": 3597.22,
+        "end": 3602.98
+    },
+    {
+        "text": " por e a la x cuadrado más beta por seno de x, yo podría hacer eso, les podría decir calculen",
+        "start": 3602.98,
+        "end": 3613.18
+    },
+    {
+        "text": " que es la mejor función de esta forma que me aproxima a los datos, lo que necesitamos son funciones",
+        "start": 3613.18,
+        "end": 3619.78
+    },
+    {
+        "text": " que sean lineales en los parámetros, entonces tú a veces que tenga combinaciones lineales de",
+        "start": 3619.78,
+        "end": 3625.7400000000002
+    },
+    {
+        "text": " parámetros, puso exactamente este método, es bien general esto, esto es un caso particular en que",
+        "start": 3625.7400000000002,
+        "end": 3633.0600000000004
+    },
+    {
+        "text": " una de la función de este vaca es x y la otra que tengo ahí es la constante, pero podría ser",
+        "start": 3635.0600000000004,
+        "end": 3638.6600000000003
+    },
+    {
+        "text": " exactamente, de hecho hay un problema del práctico, una combinación lineal es por ansial,",
+        "start": 3638.6600000000003,
+        "end": 3643.3
+    },
+    {
+        "text": " pero si necesitamos ser lineal en los parámetros.",
+        "start": 3644.82,
+        "end": 3647.86
+    },
+    {
+        "text": " Derribable, no, porque...",
+        "start": 3650.34,
+        "end": 3652.6200000000003
+    },
+    {
+        "text": " ¿No rompería el departado de su número de parámetros?",
+        "start": 3652.6200000000003,
+        "end": 3654.82
+    },
+    {
+        "text": " No, lo que precisas es que es que es un función de los parámetros se había incomportada.",
+        "start": 3654.82,
+        "end": 3658.78
+    },
+    {
+        "text": " Sí, sí porque las derivadas que hacen es hacer con respecto a los parámetros, exactamente eso.",
+        "start": 3658.78,
+        "end": 3665.98
+    },
+    {
+        "text": " Mudo de ejemplo vamos a hacer lo siguiente.",
+        "start": 3669.46,
+        "end": 3671.5400000000004
+    },
+    {
+        "text": " Bueno, este es un odio hacer este tipo de cuentas y encontré internet un ejemplo que",
+        "start": 3671.54,
+        "end": 3682.46
+    },
+    {
+        "text": " llevan a ver que simplifican las cuentas arregonditas, que es esto.",
+        "start": 3682.46,
+        "end": 3688.54
+    },
+    {
+        "text": " Tengo los siguientes datos apareados.",
+        "start": 3688.54,
+        "end": 3690.9
+    },
+    {
+        "text": " Es importante eso que los datos están apareados, o sea que este le corresponde a este,",
+        "start": 3690.9,
+        "end": 3703.2200000000003
+    },
+    {
+        "text": " que este le corresponde a este, porque después en algún momento tenemos que hacer el producto",
+        "start": 3703.2200000000003,
+        "end": 3706.7400000000002
+    },
+    {
+        "text": " interno a dos cosas y ahí importa justamente que sean datos apareados. No hay cualquier",
+        "start": 3706.7400000000002,
+        "end": 3713.2200000000003
+    },
+    {
+        "text": " orden entre los hay kilos y este corresponde primero, este corresponde al segundo, etcétera.",
+        "start": 3713.2200000000003,
+        "end": 3717.54
+    },
+    {
+        "text": " Entonces tengo eso, cuando esto vale menos 1, cuando esto vale menos 2 o 1, 1, 7, 6,",
+        "start": 3718.54,
+        "end": 3724.54
+    },
+    {
+        "text": " si uno hace esto el dibujito no se parece demasiado una recta que digamos,",
+        "start": 3724.54,
+        "end": 3728.54
+    },
+    {
+        "text": " vamos a tratar de hacer eso medio escala, esto es algo, cuando vale menos 6, vale menos 1,",
+        "start": 3728.54,
+        "end": 3739.54
+    },
+    {
+        "text": " estamos acá, esto sería menos 1, cuando vale menos 2, vale 2, pongamos que el 2 está",
+        "start": 3739.54,
+        "end": 3752.7799999999997
+    },
+    {
+        "text": " por acá arriba, cuando vale 1, el otro también vale 1 y cuando este vale 7 lo",
+        "start": 3752.78,
+        "end": 3773.6800000000003
+    },
+    {
+        "text": " otro vale 6, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3.",
+        "start": 3773.68,
+        "end": 3787.68
+    },
+    {
+        "text": " Esos son los datos que tenemos, el que vea una recta ahí tiene mucha imaginación, pero",
+        "start": 3787.68,
+        "end": 3793.68
+    },
+    {
+        "text": " bueno no importa, yo quiero ver cuál es la mejor recta que representa esos datos, esos datos",
+        "start": 3793.68,
+        "end": 3800.68
+    },
+    {
+        "text": " son este, este, este y este. Es decir que yo quiero calcular cuál es la recta que pongo",
+        "start": 3800.68,
+        "end": 3812.68
+    },
+    {
+        "text": " acá, que minimice el error cuadrático, eso es todo y acá tengo la solución, acá tengo",
+        "start": 3812.68,
+        "end": 3823.68
+    },
+    {
+        "text": " la solución, el alpha y el beta está andado por eso, recuerden que acaba, esta es la inversa,",
+        "start": 3824.68,
+        "end": 3832.68
+    },
+    {
+        "text": " es una materia de dos por dos, fácil de invertir, entonces esto lo que hay que hacer es agarrar",
+        "start": 3832.68,
+        "end": 3839.68
+    },
+    {
+        "text": " la calculadora o hacerlo a mano, mira en cuanto me da, yo me siento idiota haciendo esto,",
+        "start": 3839.68,
+        "end": 3849.68
+    },
+    {
+        "text": " bueno, me siento idiota también en otras situaciones menos trascendentes, tengo que",
+        "start": 3849.68,
+        "end": 3865.68
+    },
+    {
+        "text": " aprender a hablar para las cámaras en las situaciones, siempre estoy mirando el pinso,",
+        "start": 3865.68,
+        "end": 3871.68
+    },
+    {
+        "text": " mirando lo lejos, por eso es porque no veo de lejos simplemente por eso, tígame con",
+        "start": 3871.68,
+        "end": 3874.68
+    },
+    {
+        "text": " todo esto, no me conteme de estas cosas al cuadrado, no, no, no, al cuadrado, 90, exactamente, 90,",
+        "start": 3874.68,
+        "end": 3885.68
+    },
+    {
+        "text": " después todas las cantidades que tengo ahí, la suma los xi, esa sí me da cero,",
+        "start": 3888.68,
+        "end": 3894.68
+    },
+    {
+        "text": " ahora la suma todo me da cero, m es la cantidad de tos que tengo, justamente es 4,",
+        "start": 3894.68,
+        "end": 3904.68
+    },
+    {
+        "text": " 4 apareados, 4 pares, la suma de los xi, 8 y esto la suma, el producto interno los xi con los",
+        "start": 3904.68,
+        "end": 3919.68
+    },
+    {
+        "text": " yi, 45, repito por enésima vez, tienen que ser datos apareados, no los puedo poner a que en cualquier",
+        "start": 3919.68,
+        "end": 3928.68
+    },
+    {
+        "text": " modo todo va a poder tener este con esto, entonces fíjense lo que me queda la ecuación",
+        "start": 3928.68,
+        "end": 3935.68
+    },
+    {
+        "text": " que tenemos que resolveros, la solución, los parámetros que solucionan el problema es, la matriz",
+        "start": 3935.68,
+        "end": 3953.68
+    },
+    {
+        "text": " esta, la menos 1, esa matriz y la entrada 90, 0, 4, bueno la vivada es poner acá 0 porque la inversa",
+        "start": 3953.68,
+        "end": 3964.68
+    },
+    {
+        "text": " sea bien fácil de calcular, acá viene 45 y acá viene 8 y listo, la inversa de esto es",
+        "start": 3964.68,
+        "end": 3982.68
+    },
+    {
+        "text": " obviamente la inversa, los elementos la diagonal, es una matriz trivial de calcular la inversa",
+        "start": 3982.68,
+        "end": 3989.68
+    },
+    {
+        "text": " porque está el cero ahí justamente y lo que me queda entonces es, 1, 90 por 45,",
+        "start": 3989.68,
+        "end": 4007.68
+    },
+    {
+        "text": " 0, o sea 45 y vió 90 que es 1 medio y acá abajo me queda 0 por esto más 8 y 4 que es 2, o sea que",
+        "start": 4007.68,
+        "end": 4018.68
+    },
+    {
+        "text": " en definitiva alpha es igual a 1 medio el parámetro lineal y el parámetro independiente es 2,",
+        "start": 4018.68,
+        "end": 4028.68
+    },
+    {
+        "text": " en definitiva la recta que mejor ajusta los datos es i igual a 1 medio por x más 2, la recta acá que tiene",
+        "start": 4028.68,
+        "end": 4043.68
+    },
+    {
+        "text": " el menor error cuadrático, bueno preguntas, les dejo, si no tengo que hacerlo esto, pero les dejo",
+        "start": 4043.68,
+        "end": 4061.68
+    },
+    {
+        "text": " el siguiente ejercicio y con eso terminamos la clase.",
+        "start": 4061.68,
+        "end": 4068.68
+    },
+    {
+        "text": " Verificar que el método puede adaptarse para ajustes a polinomios, donde de cualquier grado",
+        "start": 4091.68,
+        "end": 4105.68
+    },
+    {
+        "text": " pensemos que yo tengo un polinomio de grado, menos igual que cabo, es decir tengo 0 más 1 por x",
+        "start": 4105.68,
+        "end": 4115.68
+    },
+    {
+        "text": " más 2 por x al cuadrado, etcétera, más acá por x el acá, supongamos que este es el,",
+        "start": 4116.68,
+        "end": 4124.68
+    },
+    {
+        "text": " en lugar de tener una recta tenemos una función polinomica donde ahora los parámetros son al",
+        "start": 4124.68,
+        "end": 4131.68
+    },
+    {
+        "text": " 0 a 1, pero no a 0 a 1 a 2, hasta acá tengo kamazón parámetros y pensemos que yo tengo las observaciones",
+        "start": 4132.68,
+        "end": 4142.68
+    },
+    {
+        "text": " pareadas x 1 y 1, x 2 y 2, etcétera hasta x m y m, es decir tengo m observaciones y tengo un",
+        "start": 4142.68,
+        "end": 4159.68
+    },
+    {
+        "text": " polinomio de ahora donde tengo caba variable, es capazón parámetros, entonces lo que les digo es ver que la idea",
+        "start": 4159.68,
+        "end": 4173.68
+    },
+    {
+        "text": " que les contrarre si es puede adaptarse perfectamente a esta situación, donde ahora la matriz, donde ahora",
+        "start": 4173.68,
+        "end": 4181.68
+    },
+    {
+        "text": " y es como antes el vector de las mediciones si, es un vector, es una matriz, perdón que tiene",
+        "start": 4182.68,
+        "end": 4196.68
+    },
+    {
+        "text": " ahora más columnaje antes, lo que tengo que poner acá es x 1, la potencia acá, x 2 a la potencia",
+        "start": 4196.68,
+        "end": 4205.68
+    },
+    {
+        "text": " acá son polinomorados mejor que acá, x m a la potencia acá, acá x 1 la potencia acá menos 1,",
+        "start": 4205.68,
+        "end": 4212.68
+    },
+    {
+        "text": " etcétera, o sea hasta llegar acá x 1 al cuadrado, x 2 al cuadrado, x m al cuadrado, x 1, x 2,",
+        "start": 4212.68,
+        "end": 4222.68
+    },
+    {
+        "text": " x m y la última acá son todos 1, o sea en el caso del lineal tenemos estas dos columnas, ahora",
+        "start": 4222.68,
+        "end": 4232.68
+    },
+    {
+        "text": " tenemos que agregar más columna, que son esta el cuadrado, esta el cubo, esa la potencia acá,",
+        "start": 4232.68,
+        "end": 4238.68
+    },
+    {
+        "text": " estos son las mediciones x 1, aquí 2 a la tx m y con esto lo que bueno el vector de parámetros es lo",
+        "start": 4238.68,
+        "end": 4248.68
+    },
+    {
+        "text": " escribo así ordenado esta manera, los ordenos atrás para adelante acá hasta a 2 a 1 y el último que es el a 0,",
+        "start": 4248.68,
+        "end": 4259.68
+    },
+    {
+        "text": " tengo acá más unos parámetros, pero no me quiero confundir con esto. Bueno y pueden que con esto",
+        "start": 4259.68,
+        "end": 4277.68
+    },
+    {
+        "text": " justamente se puede adaptar el problema este nuevo contexto, o sea prueben que Z solución,",
+        "start": 4277.68,
+        "end": 4283.68
+    },
+    {
+        "text": " verificen esto, es el mismo exactamente para ahora por palabras el mismo argumento, me",
+        "start": 4283.68,
+        "end": 4289.68
+    },
+    {
+        "text": " es que si esta solución es a transpuesta por a, a la menos 1 por a transpuesta por I, es exactamente",
+        "start": 4289.68,
+        "end": 4297.68
+    },
+    {
+        "text": " lo mismo, lo único que ahora cambia es que la matriz a es más grande y el vector de parámetros",
+        "start": 4297.68,
+        "end": 4304.68
+    },
+    {
+        "text": " es más grande, pero eso todo, es exactamente el mismo argumento, revisen eso y convenzan",
+        "start": 4304.68,
+        "end": 4311.68
+    },
+    {
+        "text": " eso y terminamos la clase.",
+        "start": 4311.68,
+        "end": 4318.68
+    }
+]

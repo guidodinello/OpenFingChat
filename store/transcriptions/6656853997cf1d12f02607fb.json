@@ -1,0 +1,2892 @@
+[
+    {
+        "text": " En las clases pasadas estuvimos viendo espacios vectoriales con estructura, con producto",
+        "start": 0.0,
+        "end": 25.16
+    },
+    {
+        "text": " interno en particular y en estas clases vamos a empezar a trabajar con transformaciones",
+        "start": 25.16,
+        "end": 29.88
+    },
+    {
+        "text": " lineales definidas sobre espacios con producto interno. Si os lo que vamos a ver en estas clases",
+        "start": 29.88,
+        "end": 34.519999999999996
+    },
+    {
+        "text": " es transformaciones lineales en espacios con producto interno.",
+        "start": 34.519999999999996,
+        "end": 46.879999999999995
+    },
+    {
+        "text": " Acabamos a seguir unas notas que están en Eva. Quiero ser ya que se llama exactamente",
+        "start": 46.88,
+        "end": 63.400000000000006
+    },
+    {
+        "text": " así, transformaciones lineales en espacios con producto interno. Si no es esto es algo",
+        "start": 63.400000000000006,
+        "end": 67.04
+    },
+    {
+        "text": " parecido. Vamos a seguir casi al pie de la letra las notas están en el Eva. Porque en",
+        "start": 67.04,
+        "end": 75.76
+    },
+    {
+        "text": " el libro rojo esto está también, pero está escrito de manera muy muy compacta, en dos páginas",
+        "start": 75.76,
+        "end": 79.96000000000001
+    },
+    {
+        "text": " está escrito lo que vamos a dar posiblemente en dos clases. Así que comiene verlo de allí,",
+        "start": 79.96000000000001,
+        "end": 85.24000000000001
+    },
+    {
+        "text": " de archivo PDF. Entonces, vamos a empezar con las transformaciones más sencillas de todas,",
+        "start": 85.24000000000001,
+        "end": 92.24000000000001
+    },
+    {
+        "text": " que son las transformaciones que van de un espacio vectorial al cuerpo de escalares. Esas son las",
+        "start": 92.24000000000001,
+        "end": 97.24000000000001
+    },
+    {
+        "text": " que se llaman funcionales lineales. Entonces vamos a comenzar con esto. Si uno como siempre",
+        "start": 97.24,
+        "end": 112.39999999999999
+    },
+    {
+        "text": " tiene un espacio vectorial sobre el cuerpo K, le vamos a llamar B. Y vamos a pensar que",
+        "start": 112.4,
+        "end": 128.24
+    },
+    {
+        "text": " sobre ese espacio hay definido un producto interno. Así que tenemos un producto interno.",
+        "start": 128.24,
+        "end": 138.64000000000001
+    },
+    {
+        "text": " El producto interno no entra en la definición propiamente ita, lo que es un funcional",
+        "start": 138.64,
+        "end": 143.44
+    },
+    {
+        "text": " lineal pero sí en las cosas que vienen a continuación. Entonces, una funcional lineal es una",
+        "start": 143.44,
+        "end": 149.07999999999998
+    },
+    {
+        "text": " transformación T que va de que el espacio vectorial al cuerpo los escalares. Es decir, es algo que me",
+        "start": 149.07999999999998,
+        "end": 158.35999999999999
+    },
+    {
+        "text": " van a dar un vector y me da un escalar y que se comporta de manera lineal en el espacio vectorial.",
+        "start": 158.36,
+        "end": 164.12
+    },
+    {
+        "text": " Estamos. Entonces, en la clase de hoy va a parecer mucho este concepto de lo que es un",
+        "start": 179.12,
+        "end": 183.64000000000001
+    },
+    {
+        "text": " funcional lineal que es una transformación lineal del espacio vectorial en el que estamos trabajando",
+        "start": 183.64,
+        "end": 188.95999999999998
+    },
+    {
+        "text": " al cuerpo de escalares en el cuerpo de escalares. El cuerpo de escalares de el espacio vectorial.",
+        "start": 188.95999999999998,
+        "end": 197.04
+    },
+    {
+        "text": " Un ejemplo bien sencillo y que lo vamos a retomar a lo largo de toda la clase. Pienso en que yo tengo",
+        "start": 199.27999999999997,
+        "end": 210.6
+    },
+    {
+        "text": " aquí el espacio vectorial B y que agarra un vector acá fijo, un W en ese espacio vectorial.",
+        "start": 214.6,
+        "end": 223.2
+    },
+    {
+        "text": " Entonces, vamos a definir de ahorro otra transformación lineal que va desde acá a los escalares de la",
+        "start": 223.2,
+        "end": 227.6
+    },
+    {
+        "text": " siguiente manera.",
+        "start": 227.6,
+        "end": 228.16
+    },
+    {
+        "text": " Entonces, dado un vector W minúscula en el espacio vectorial, vamos a construir la siguiente",
+        "start": 228.16,
+        "end": 245.68
+    },
+    {
+        "text": " siguiente funcional lineal. Leamos a llamar F sub W, es un funcional lineal que está asociado",
+        "start": 245.68,
+        "end": 256.76
+    },
+    {
+        "text": " al W este que tomamos como fijo y esto me agarra cualquier ventora en el espacio vectorial que estamos",
+        "start": 256.76,
+        "end": 261.32
+    },
+    {
+        "text": " trabajando y que me da a medar el producto interno de B con W o sea, en este espacio B,",
+        "start": 261.32,
+        "end": 268.28000000000003
+    },
+    {
+        "text": " este es un espacio vectorial B con producto interno. Entonces, agarramos un W y lo mantenemos",
+        "start": 268.28,
+        "end": 282.28
+    },
+    {
+        "text": " fijo, este W lo pongo acá y lo dejo fijo y la transformación, el funcional que vamos a estar,",
+        "start": 282.28,
+        "end": 287.44
+    },
+    {
+        "text": " bueno, este sería, le llamamos T pero sería el funcional de F sub W, el funcional lineal que",
+        "start": 287.44,
+        "end": 292.71999999999997
+    },
+    {
+        "text": " estamos definiendo es aquel que me agarra un vector acá y me da el producto interno de ese vector",
+        "start": 292.72,
+        "end": 298.08000000000004
+    },
+    {
+        "text": " con el que tengo acá fijo, con el W que tengo fijo y está claro por la propiedad del producto",
+        "start": 298.08000000000004,
+        "end": 303.12
+    },
+    {
+        "text": " interno que esto es una transformación lineal con respecto a la variable que estoy poniendo acá.",
+        "start": 303.12,
+        "end": 308.88000000000005
+    },
+    {
+        "text": " Vamos y yo pongo acá una suma, queda una suma de productos calares y pongo un escalar por un",
+        "start": 308.88000000000005,
+        "end": 313.72
+    },
+    {
+        "text": " vector, me queda el escalar por el producto escalar, por el producto interno.",
+        "start": 313.72,
+        "end": 319.08000000000004
+    },
+    {
+        "text": " Estamos, esa funciona lineal va a aparecer a lo largo toda la clase y ya vamos a ver en un",
+        "start": 319.56,
+        "end": 327.15999999999997
+    },
+    {
+        "text": " ratito que esencialmente que toda transformación, toda funcional lineal es de esta forma, es el producto",
+        "start": 327.15999999999997,
+        "end": 332.59999999999997
+    },
+    {
+        "text": " interno con un vector mantenido fijo. Sí, se entiende esto.",
+        "start": 332.59999999999997,
+        "end": 337.47999999999996
+    },
+    {
+        "text": " Ahí sí estamos usando explícidamente el producto interno.",
+        "start": 343.28,
+        "end": 346.15999999999997
+    },
+    {
+        "text": " Entonces, esto tiene que dar claro porque vamos a ver todo el tiempo en la clase de hoy",
+        "start": 349.56,
+        "end": 355.64
+    },
+    {
+        "text": " este tipo de funcionales. Fijo un vector acá y tomo el producto interno de cualquier vector con",
+        "start": 355.64,
+        "end": 362.96
+    },
+    {
+        "text": " este que está fijo y ese es si varios del vector B eso me define una funcional lineal.",
+        "start": 362.96,
+        "end": 368.0
+    },
+    {
+        "text": " Vamos a ver un primer lema que también vamos a usar en el resto de la clase,",
+        "start": 370.0,
+        "end": 375.12
+    },
+    {
+        "text": " que es muy sencillo.",
+        "start": 376.12,
+        "end": 377.88
+    },
+    {
+        "text": " Qué dice lo siguiente?",
+        "start": 387.72,
+        "end": 388.96
+    },
+    {
+        "text": " Tenemos como siempre, bueno ahora vamos a tener que escribir acá como un cello, con un cello,",
+        "start": 393.48,
+        "end": 397.2
+    },
+    {
+        "text": " siempre ve espacio vectorial con producto interno.",
+        "start": 397.2,
+        "end": 400.28000000000003
+    },
+    {
+        "text": " Suponemos que se cumple a lo siguiente, se cumple que yo tengo el producto interno de un vector",
+        "start": 405.12,
+        "end": 420.96
+    },
+    {
+        "text": " con un WB que está fijo y tomo el producto interno de B con otro vector lo que está fijo.",
+        "start": 420.96,
+        "end": 431.88
+    },
+    {
+        "text": " Suponamos que esas dos cosas me dan lo mismo para todo el vector B en el espacio vectorial.",
+        "start": 432.88,
+        "end": 439.84
+    },
+    {
+        "text": " Sí, se entiende, estoy diciendo, tengo un espacio en el total de comproauto interno,",
+        "start": 439.84,
+        "end": 443.96
+    },
+    {
+        "text": " supongamos que yo tengo un vector WB acá y un WB tilde acá y se cumple que para todo vector B",
+        "start": 443.96,
+        "end": 453.2
+    },
+    {
+        "text": " que yo agarre el producto interno de B con WB me da lo mismo que el producto interno de B con",
+        "start": 453.2,
+        "end": 457.2
+    },
+    {
+        "text": " WB tilde. Entonces si esto se cumple para todo B necesariamente WB tiene que ser igual a WB tilde,",
+        "start": 457.2,
+        "end": 463.96
+    },
+    {
+        "text": " ese es el primer lema que vamos a probar, si esto se cumple para todo B entonces",
+        "start": 463.96,
+        "end": 468.8
+    },
+    {
+        "text": " se entiende esto, acá el WB y el WB tilde están fijos y yo estoy variando este vector que está",
+        "start": 468.8,
+        "end": 488.52
+    },
+    {
+        "text": " poniendo en la primera entrada. Si se cumple que este producto interno me da lo mismo que este",
+        "start": 488.52,
+        "end": 492.72
+    },
+    {
+        "text": " producto interno para cualquier vez que yo pongo acá en la primera entrada entonces necesariamente",
+        "start": 492.72,
+        "end": 498.32000000000005
+    },
+    {
+        "text": " este vector que va en la segunda entrada tiene que ser igual a este vector que va a la segunda entrada.",
+        "start": 498.32000000000005,
+        "end": 502.84000000000003
+    },
+    {
+        "text": " Y la definición es trivial y sale de las propiedades del producto interno. Fíjense, es bien, es bien",
+        "start": 502.84000000000003,
+        "end": 513.2
+    },
+    {
+        "text": " sencillo esto. Estas dos cosas son dos escalares, entonces supongamos que esto es igual a esto,",
+        "start": 513.2,
+        "end": 527.2
+    },
+    {
+        "text": " lo que estamos suponiendo ahí. Entonces este escalario lo paso por el otro lado",
+        "start": 527.2,
+        "end": 530.48
+    },
+    {
+        "text": " y la resta esos dos escalares me tiene que dar el escalar cero. Y ahora voy a ser propiedades del",
+        "start": 530.48,
+        "end": 546.76
+    },
+    {
+        "text": " producto interno, esto acá me da lo mismo que lo siguiente. A grupo las cosas que están en la",
+        "start": 546.76,
+        "end": 558.9200000000001
+    },
+    {
+        "text": " segunda entrada y eso me queda así. Decide esto, lo mismo que decim que producto interno",
+        "start": 560.84,
+        "end": 567.0
+    },
+    {
+        "text": " de V con la diferencia WB menos WB tilde me da cero. Y esto se tiene que cumplir para todo",
+        "start": 567.0,
+        "end": 575.96
+    },
+    {
+        "text": " vector que yo pongo en la primera entrada. En particular se tiene que cumplir para el vector",
+        "start": 575.96,
+        "end": 584.44
+    },
+    {
+        "text": " si yo pongo acá en la entrada WB menos WB tilde, porque WB y WB tilde son vectores en el espacio",
+        "start": 584.44,
+        "end": 589.6800000000001
+    },
+    {
+        "text": " de vectorial. Entonces en particular si yo pongo acá WB menos WB tilde también se tiene que cumplir esto.",
+        "start": 589.68,
+        "end": 595.5999999999999
+    },
+    {
+        "text": " Entonces en particular",
+        "start": 597.76,
+        "end": 599.56
+    },
+    {
+        "text": " tomando V igual a WB menos WB tilde se debe cumplir lo siguiente, se debe cumplir que WB menos",
+        "start": 606.9599999999999,
+        "end": 616.92
+    },
+    {
+        "text": " WB tilde, porque interno cuando WB menos WB tilde tiene que ser igual a cero.",
+        "start": 617.04,
+        "end": 622.1999999999999
+    },
+    {
+        "text": " Repito, esto se cumple WB y WB tilde están fijos, esto se cumple para todo V que yo pongo acá en la",
+        "start": 625.4799999999999,
+        "end": 633.16
+    },
+    {
+        "text": " entrada, para todo V en el espacio vectorial. En particular se cumple si yo pongo como entrada",
+        "start": 633.16,
+        "end": 637.52
+    },
+    {
+        "text": " acá WB menos WB tilde. Entonces tengo que WB menos WB tilde, porque lo mismo tiene que dar cero.",
+        "start": 637.52,
+        "end": 643.68
+    },
+    {
+        "text": " Y la única forma que pase esto es que este vector sea el nulo, que eso define la propiedad del",
+        "start": 644.1999999999999,
+        "end": 650.9599999999999
+    },
+    {
+        "text": " producto interno, es una de la propiedad del producto interno. Esto implica entonces que WB menos",
+        "start": 650.9599999999999,
+        "end": 655.8
+    },
+    {
+        "text": " WB tilde es el vector nulo y en consecuencia WB es igual a WB tilde.",
+        "start": 655.8,
+        "end": 662.1999999999999
+    },
+    {
+        "text": " Cámosla, es decir que si esto se cumple para todo vector acá en la primera entrada necesariamente",
+        "start": 665.1999999999999,
+        "end": 670.04
+    },
+    {
+        "text": " este vector tiene que ser igual a ese vector.",
+        "start": 670.04,
+        "end": 672.12
+    },
+    {
+        "text": " Bueno este resultado lo vamos a usar un par de veces en la clase de hoy.",
+        "start": 680.88,
+        "end": 684.48
+    },
+    {
+        "text": " En particular lo vamos a probar, lo vamos a usar ahora donde vamos a probar que en un espacio",
+        "start": 690.04,
+        "end": 696.3199999999999
+    },
+    {
+        "text": " de dimensión finita todos los funcionales lineales son de esta forma.",
+        "start": 696.32,
+        "end": 699.7600000000001
+    },
+    {
+        "text": " Solo el producto interno con un vector fijo y que acá funciona el nial,",
+        "start": 699.7600000000001,
+        "end": 709.32
+    },
+    {
+        "text": " existe para acá funciona el nial, existe un único vector fijo acá,",
+        "start": 709.32,
+        "end": 712.6800000000001
+    },
+    {
+        "text": " tal que esa es la funcional se escribe de esta manera.",
+        "start": 712.6800000000001,
+        "end": 714.48
+    },
+    {
+        "text": " Bueno preguntas, todo esto es preparación a lo que va a venir a la parte pesada de la clase",
+        "start": 716.48,
+        "end": 725.6400000000001
+    },
+    {
+        "text": " que ya va a venir en un ratito, que es la parte importante.",
+        "start": 725.64,
+        "end": 729.1999999999999
+    },
+    {
+        "text": " El primer resultado que vamos a ver me dice es lo que ya me teorema representación de",
+        "start": 729.1999999999999,
+        "end": 734.04
+    },
+    {
+        "text": " risques, me dice justamente esto, que en un espacio de dimensión finita todos los funcionales",
+        "start": 734.04,
+        "end": 739.6
+    },
+    {
+        "text": " lineales son de esta forma. Bien y eso lo vamos a probar ahora.",
+        "start": 739.6,
+        "end": 747.04
+    },
+    {
+        "text": " Pucha, me quede sin espacio.",
+        "start": 748.04,
+        "end": 750.76
+    },
+    {
+        "text": " Estoy empastillado por la leerge esta de la primavera y me estoy sintiendo que me retumba",
+        "start": 752.76,
+        "end": 760.1999999999999
+    },
+    {
+        "text": " el cerebro cuando hablo, si mezcló las cosas me dicen, porque ya veo que la clase",
+        "start": 760.1999999999999,
+        "end": 765.8399999999999
+    },
+    {
+        "text": " empezó con oindo letras que no van acá y en fin.",
+        "start": 765.8399999999999,
+        "end": 769.68
+    },
+    {
+        "text": " Por otra parte, venir a la clase empastillado es una experiencia hermosa.",
+        "start": 777.04,
+        "end": 791.04
+    },
+    {
+        "text": " Teorema representación de riso.",
+        "start": 791.04,
+        "end": 796.52
+    },
+    {
+        "text": " Lo anunciamos y lo probamos.",
+        "start": 807.04,
+        "end": 812.04
+    },
+    {
+        "text": " Lo anunciamos y lo probamos.",
+        "start": 837.04,
+        "end": 842.04
+    },
+    {
+        "text": " Bien, ese es el primer resultado fuerte que vamos a probar en la clase de orro.",
+        "start": 867.04,
+        "end": 890.04
+    },
+    {
+        "text": " Me dice el teorema de representación de risques, que si yo tengo un espacio vetorial",
+        "start": 891.04,
+        "end": 897.7199999999999
+    },
+    {
+        "text": " con producto interno, tengo acá un espacio vetorial con producto interno.",
+        "start": 897.7199999999999,
+        "end": 904.64
+    },
+    {
+        "text": " Dimensión finita, este punto es importante porque en dimensión infinita el resultado no",
+        "start": 904.64,
+        "end": 910.1999999999999
+    },
+    {
+        "text": " necesariamente es cierto. Hay que en dimensión infinita que tener cuidado porque hay que",
+        "start": 910.1999999999999,
+        "end": 915.28
+    },
+    {
+        "text": " poner más condiciones para que un resultado como este vaya. O sea, además de tener un espacio",
+        "start": 915.28,
+        "end": 920.4399999999999
+    },
+    {
+        "text": " vetorial, de tener un producto interno, hay que poner condiciones con respecto a la",
+        "start": 920.4399999999999,
+        "end": 924.72
+    },
+    {
+        "text": " convergencia de sucesiones de cosas y usando la norma inducida por el producto interno,",
+        "start": 924.72,
+        "end": 930.8
+    },
+    {
+        "text": " que es una cuestión técnica que nosotros vamos a obviar en el curso. En las notas que",
+        "start": 930.8,
+        "end": 935.12
+    },
+    {
+        "text": " están en Eva hay un ejemplo donde esto para dimensión infinita no vale, lo vamos a",
+        "start": 935.12,
+        "end": 939.88
+    },
+    {
+        "text": " ver la clase que viene, pero vayan viendo lo ahí que es un ejemplo interesante.",
+        "start": 939.88,
+        "end": 944.28
+    },
+    {
+        "text": " Por lo pronto si yo tengo un espacio vetorial con dimensión finita, sí vale. Y me dice",
+        "start": 944.28,
+        "end": 949.12
+    },
+    {
+        "text": " que si yo tengo una funcional que va del espacio vetorial al cuerpo en el que estoy trabajando,",
+        "start": 949.12,
+        "end": 957.12
+    },
+    {
+        "text": " ese funcional le llamamos T, entonces existe un único vector aquí adentro W, fijo, tal",
+        "start": 957.12,
+        "end": 968.4399999999999
+    },
+    {
+        "text": " que ese funcional aplicado a B es el producto interno de W. O sea, me está diciendo que",
+        "start": 968.4399999999999,
+        "end": 973.0799999999999
+    },
+    {
+        "text": " todos los funcionales niñales son como los que puse en el ejemplo, son esas formas,",
+        "start": 973.08,
+        "end": 977.4000000000001
+    },
+    {
+        "text": " son el producto interno con un vector que uno tiene fijo. Y este vector que uno pone aquí",
+        "start": 977.4000000000001,
+        "end": 982.2
+    },
+    {
+        "text": " obviamente depende del funcional que estoy usando, si usa un funcional acá, tener un vector,",
+        "start": 982.2,
+        "end": 986.6
+    },
+    {
+        "text": " uso otro funcional, tendré otro vector. Y esto es lo que se llama el representante de",
+        "start": 986.6,
+        "end": 991.0400000000001
+    },
+    {
+        "text": " R, de este funcionario. Esto es el representante de R, que fue que provo este teoría y",
+        "start": 991.04,
+        "end": 1006.04
+    },
+    {
+        "text": " me ha representado el R, representado el R, del funcionario acá. Defuncional, pero",
+        "start": 1006.04,
+        "end": 1017.0799999999999
+    },
+    {
+        "text": " no, bien o que ya estoy mezclando las cosas.",
+        "start": 1017.08,
+        "end": 1026.08
+    },
+    {
+        "text": " Estamos entonces, este es un resultado que tiene que ver con la existencia y con la",
+        "start": 1026.08,
+        "end": 1031.16
+    },
+    {
+        "text": " unicidad. Me dice que para acá a Funcional yo puedo encontrar existe un único vector",
+        "start": 1031.16,
+        "end": 1036.8
+    },
+    {
+        "text": " a cata y que se cumple que es funcional de esta forma. Eso es lo que vamos a probar, entonces",
+        "start": 1036.8,
+        "end": 1042.64
+    },
+    {
+        "text": " tenemos que probar las dos cosas, existencia y unicidad. Y vamos a empezar probando la",
+        "start": 1042.64,
+        "end": 1046.64
+    },
+    {
+        "text": " unicidad y después la existencia. Bien, preguntas.",
+        "start": 1046.64,
+        "end": 1059.16
+    },
+    {
+        "text": " Insisto, guarda con la dimensión infinita que esto si uno no pone más estructura no es",
+        "start": 1059.16,
+        "end": 1063.44
+    },
+    {
+        "text": " cierto. Ya vamos a ver un ejemplo en la clase que viene. Bueno, en dimensión finita por",
+        "start": 1063.44,
+        "end": 1068.44
+    },
+    {
+        "text": " suerte todo esto vale y vamos a ver la demostración en primer lugar como decía vamos a probar la",
+        "start": 1068.44,
+        "end": 1077.44
+    },
+    {
+        "text": " unicidad. Es decir que el representante de R y se es único, me dan un funcional y existe",
+        "start": 1077.44,
+        "end": 1084.3200000000002
+    },
+    {
+        "text": " un único WB, tal que funciona de la manera. Y le da las demostraciones bien sencilla, supongamos",
+        "start": 1084.3200000000002,
+        "end": 1089.76
+    },
+    {
+        "text": " que existen dos vectores, WB y WB tilde y concluyamos que necesariamente WB, WB tilde.",
+        "start": 1089.76,
+        "end": 1096.44
+    },
+    {
+        "text": " Entonces, supongamos que existen.",
+        "start": 1096.44,
+        "end": 1100.44
+    },
+    {
+        "text": " WB y WB tilde en el espacio virtualidad en el que estamos trabajando, tal es que",
+        "start": 1108.44,
+        "end": 1115.44
+    },
+    {
+        "text": " la transformación niña se escribe por un lado como el producto interno, debe con WB y por otro",
+        "start": 1127.44,
+        "end": 1137.44
+    },
+    {
+        "text": " lado como el producto interno debe con WB tilde para cada vez que yo ponga ahí como el",
+        "start": 1137.44,
+        "end": 1141.44
+    },
+    {
+        "text": " trajo. Entonces supongamos que existen dos vectores, tal es que el funcional se",
+        "start": 1141.44,
+        "end": 1146.0
+    },
+    {
+        "text": " escribe esta forma y de esta forma y esto obviamente para todo vector ahí en la primera",
+        "start": 1146.0,
+        "end": 1155.0
+    },
+    {
+        "text": " entrada que esté en el espacio virtualidad. Entonces fíjense lo que estamos diciendo,",
+        "start": 1155.0,
+        "end": 1162.0
+    },
+    {
+        "text": " estamos diciendo justamente que este producto interno tiene que ser igual a que el producto",
+        "start": 1162.0,
+        "end": 1167.0
+    },
+    {
+        "text": " interno para todo vector que yo ponga en la primera entrada y por el lema que acabamos",
+        "start": 1168.0,
+        "end": 1179.0
+    },
+    {
+        "text": " de probar justamente esto me dice que necesariamente este vector tiene que ser igual a este.",
+        "start": 1179.0,
+        "end": 1185.0
+    },
+    {
+        "text": " Esto es por el lema y eso prueba la unicidad. Suponemos que existen dos representantes y terminamos",
+        "start": 1185.0,
+        "end": 1203.0
+    },
+    {
+        "text": " concluyendo que necesariamente tienen que ser iguales. Y ahora lo que resta probar es justamente",
+        "start": 1203.0,
+        "end": 1216.0
+    },
+    {
+        "text": " la existencia, es ver cómo yo puedo construir, a partir de un funcional T un vector como este",
+        "start": 1216.0,
+        "end": 1223.0
+    },
+    {
+        "text": " tal que te se escribe de esta manera y ese vector que voy a construir obviamente va a depender",
+        "start": 1223.0,
+        "end": 1228.0
+    },
+    {
+        "text": " del funcional que yo estoy usando. Estamos, esta es la trateca que se usa siempre para unicidad, supongamos que",
+        "start": 1228.0,
+        "end": 1237.0
+    },
+    {
+        "text": " se escribe dos maneras y concluimos que es la única. Bien, en dimensión infinita también se prueba que si existe un representante",
+        "start": 1237.0,
+        "end": 1245.0
+    },
+    {
+        "text": " de Riz entonces es único, el problema está en probar la existencia, que a veces existe y a veces no, hay que poner más",
+        "start": 1245.0,
+        "end": 1250.0
+    },
+    {
+        "text": " condiciones como ya dije. Entonces, veamos la existencia, un punto que no hay que olvidar es que acá siempre",
+        "start": 1250.0,
+        "end": 1264.0
+    },
+    {
+        "text": " estamos trabajando con transformaciones donde el espacio llegada son los escalares, si en un rato",
+        "start": 1264.0,
+        "end": 1270.0
+    },
+    {
+        "text": " ya vamos a trabajar con transformaciones que van en el espacio vectorial es otro, pero esta resultado no hace falta.",
+        "start": 1270.0,
+        "end": 1277.0
+    },
+    {
+        "text": " Entonces, yo les he dicho que tenemos un espacio vectorial de dimensión N y para probar la existencia vamos a trabajar",
+        "start": 1284.0,
+        "end": 1295.0
+    },
+    {
+        "text": " con una base horto normal en ese espacio vectorial. Entonces, existencia, vamos a consigue una base horto normal,",
+        "start": 1295.0,
+        "end": 1310.0
+    },
+    {
+        "text": " vamos a llamar este B, una base horto normal del espacio en cuestión, eso le construimos,",
+        "start": 1310.0,
+        "end": 1328.0
+    },
+    {
+        "text": " ya saben cómo se construye una base horto normal. Entonces, si me dan cualquier vector en el espacio vectorial,",
+        "start": 1328.0,
+        "end": 1346.0
+    },
+    {
+        "text": " lo puedo descomponer como combinación de n y n de los elementos de la base y ya vimos en el teórico",
+        "start": 1346.0,
+        "end": 1353.0
+    },
+    {
+        "text": " de manera en que esto se descompone, como se descompone un vector B si yo tengo una base horto normal, si descompone la siguiente manera,",
+        "start": 1353.0,
+        "end": 1360.0
+    },
+    {
+        "text": " B es el producto interno de B con el primer elemento de la base por el primer elemento de la base más B con el segundo, etc.",
+        "start": 1360.0,
+        "end": 1371.0
+    },
+    {
+        "text": " Esto lo vimos cuando vimos propiedades las bases hortos normales, esto vale si la base es horto normal, si no en general no.",
+        "start": 1371.0,
+        "end": 1381.0
+    },
+    {
+        "text": " Por ser ve una base horto normal.",
+        "start": 1391.0,
+        "end": 1393.0
+    },
+    {
+        "text": " Bien, vamos a escribir esto de manera un poquito más compacta, esto es la suma con híres de unos tan n,",
+        "start": 1393.0,
+        "end": 1404.0
+    },
+    {
+        "text": " debe escalar de subir con la suba. No sé, subís tan fijo, son los elementos de una base horto normal que fijo ahí.",
+        "start": 1404.0,
+        "end": 1412.0
+    },
+    {
+        "text": " Entonces fíquense ahora.",
+        "start": 1412.0,
+        "end": 1419.0
+    },
+    {
+        "text": " Si yo le aplico T, el funcionar lineal a este vector, a este vector de combinación de n y n de los elementos de la base,",
+        "start": 1426.0,
+        "end": 1434.0
+    },
+    {
+        "text": " obviamente por linealidad me va a quedar la combinación de n y n de los te aplicados de los elementos de la base,",
+        "start": 1434.0,
+        "end": 1440.0
+    },
+    {
+        "text": " o sea que esto me va a quedar la sumatoria con híres de unos tan n, los escalares salen para afuera",
+        "start": 1440.0,
+        "end": 1447.0
+    },
+    {
+        "text": " y acá me quedan te aplicados a los elementos de la base hortos normal.",
+        "start": 1456.0,
+        "end": 1460.0
+    },
+    {
+        "text": " Si, eso es una otra cosa que este linealidad.",
+        "start": 1461.0,
+        "end": 1466.0
+    },
+    {
+        "text": " Bien, y como justamente los funcionales van del espacio vectorial a los escalares, esto es una cosa que un elemento del cuerpo de escalares.",
+        "start": 1469.0,
+        "end": 1478.0
+    },
+    {
+        "text": " Entonces, como es un elemento del cuerpo de escalares, lo puedo pasar para dentro del producto interno, particular lo voy a pasar para la segunda entrada.",
+        "start": 1479.0,
+        "end": 1494.0
+    },
+    {
+        "text": " Si lo paso para dentro de la segunda entrada, lo tengo que pasar como conjugado.",
+        "start": 1494.0,
+        "end": 1498.0
+    },
+    {
+        "text": " Si, o sea que esto acá lo podemos escribir como la sumatoria y desde uno hasta n, debe, pero vamos a poner así.",
+        "start": 1499.0,
+        "end": 1510.0
+    },
+    {
+        "text": " El conjugado este T de y que es el escalar conjugado por e.",
+        "start": 1511.0,
+        "end": 1516.0
+    },
+    {
+        "text": " Si es un escalar, lo pasé para dentro, tiene que ir conjugado.",
+        "start": 1518.0,
+        "end": 1521.0
+    },
+    {
+        "text": " Y ahora la sumatoria le paso para acá dentro.",
+        "start": 1522.0,
+        "end": 1524.0
+    },
+    {
+        "text": " Y fíjense que acá que tengo estos son escalares, son los tel aplicados, los elementos de la base hortos normal, con jugados son escalares,",
+        "start": 1541.0,
+        "end": 1550.0
+    },
+    {
+        "text": " multiplicados por el elemento de la base hortos normal. Esto acá, donde vive, es un vector del espacio vectorial. Esto acá es un elemento del espacio vectorial.",
+        "start": 1550.0,
+        "end": 1563.0
+    },
+    {
+        "text": " Y es un vector que está fijo que no depende de B, justamente depende cuál es la base que yo le gí, elegir una base, algo elemento de la base por los transformados, aplicamos la base con jugados sumas.",
+        "start": 1563.0,
+        "end": 1575.0
+    },
+    {
+        "text": " Si es un vector fico que no depende de lo que estoy poniendo acá. O sea que a esto le llamo, si a esto le llamo o doble B, tengo que justamente la transformación y al� aplicado a B, se escribe de la forma B con doble B, para todo B en el espacio vectorial.",
+        "start": 1576.0,
+        "end": 1598.0
+    },
+    {
+        "text": " ¿Se entendió? Es una manera, es una prueba constructiva, me dice, construyo este vector, construyo este vector, dado una base hortos normal, construyo esto.",
+        "start": 1599.0,
+        "end": 1611.0
+    },
+    {
+        "text": " Te aplicado el elemento de base hortos normal, con jugados que son escalar por multiplicados por esto y sumado. Este vector cumple lo siguiente, yo agarro cualquier vector B que ponga acá y B produciendo con este, me da temb.",
+        "start": 1611.0,
+        "end": 1625.0
+    },
+    {
+        "text": " O sea que esta acá justamente es el representante de RIS, existe un vector, este, tal que la transformación el funcionaría al temb escribe con un producto interno de B con este vector, esto nos prueba la existencia.",
+        "start": 1625.0,
+        "end": 1638.0
+    },
+    {
+        "text": " Bien, obviamente el teorema se llama representación de RIS por esta pavada, RIS lo probó en un contexto más complicado que este lo probó trabajando en espacios de dimensión infinita con cierta estructura necesaria para que esto vaya.",
+        "start": 1639.0,
+        "end": 1655.0
+    },
+    {
+        "text": " La dimensión finita esto es fíjense en sí. ¿Cómo es este de I? ¿Está definiendo T con el doble?",
+        "start": 1655.0,
+        "end": 1664.0
+    },
+    {
+        "text": " No, no, no, no, bústene la T, bústene la T, bústene la T, yo lo que quiero hacer es dar la T, dar la T, dar la T, el funcionar al iniel, encontrar el W, bústene la T, yo agarro una base hortos normal cualquiera, le aplico T a cada uno de los elementos de esta base, lo multiplico por ahí, toma con jugado, lo multiplico por los elementos de la base y sumo.",
+        "start": 1664.0,
+        "end": 1684.0
+    },
+    {
+        "text": " Eso es un vector que no depende de nada, solamente depende de esta base con normal y de T, depende de T.",
+        "start": 1685.0,
+        "end": 1691.0
+    },
+    {
+        "text": " Entonces ese vector fijo que justamente depende de T es el representante RIS de T, cumple que el funcionar T aplicado a b es b por el que esté reconecto.",
+        "start": 1691.0,
+        "end": 1703.0
+    },
+    {
+        "text": " Para todo el vector que yo ponga acá, por lo tanto existe uno, acá está, y ya promo unicidad.",
+        "start": 1703.0,
+        "end": 1709.0
+    },
+    {
+        "text": " Y promo unir en una transformación un poco directamente.",
+        "start": 1710.0,
+        "end": 1713.0
+    },
+    {
+        "text": " Y promo unir en una transformación un poco directamente.",
+        "start": 1713.0,
+        "end": 1715.0
+    },
+    {
+        "text": " Sí, la importancia de esto ya va a venir en un ratito.",
+        "start": 1715.0,
+        "end": 1718.0
+    },
+    {
+        "text": " Con un fondo un poco la, con uno de esto por primera vez, porque ya en un ratito vamos a pasar a trabajar con espacio, con transformaciones,",
+        "start": 1720.0,
+        "end": 1728.0
+    },
+    {
+        "text": " a espacio factoriales y vamos a usar esto, pero tengan en cuenta que cuando yo hablo de funcionales estoy hablando de transformaciones que van al cuerpo escalares, como en este caso.",
+        "start": 1728.0,
+        "end": 1737.0
+    },
+    {
+        "text": " Ahora ya vamos a trabajar con cosas más generales.",
+        "start": 1737.0,
+        "end": 1740.0
+    },
+    {
+        "text": " Entonces, ¿cómo termina esto?",
+        "start": 1748.0,
+        "end": 1751.0
+    },
+    {
+        "text": " Como termina esto tomando.",
+        "start": 1751.0,
+        "end": 1758.0
+    },
+    {
+        "text": " El vector W como la sumatoria, RIS 1 hasta N.",
+        "start": 1774.0,
+        "end": 1779.0
+    },
+    {
+        "text": " De los té aplicados a la base, ortonoma, al conjugando, multiplicando por ahí, se obtiene...",
+        "start": 1782.0,
+        "end": 1787.0
+    },
+    {
+        "text": " ...que T en B es el Provinter 9V con W.",
+        "start": 1791.0,
+        "end": 1796.0
+    },
+    {
+        "text": " Y esto justamente es lo que llamamos el representante de RIS.",
+        "start": 1798.0,
+        "end": 1802.0
+    },
+    {
+        "text": " T RIS de la transformación T.",
+        "start": 1811.0,
+        "end": 1814.0
+    },
+    {
+        "text": " Vamos.",
+        "start": 1814.0,
+        "end": 1817.0
+    },
+    {
+        "text": " Claro, lo que pasa es que como yo estoy trabajando con base, o ortonoma, a cualquier vector W lo puedes componer de esta manera.",
+        "start": 1825.0,
+        "end": 1831.0
+    },
+    {
+        "text": " Si, vos me das cualquier vector W lo puedes escribir de esta manera.",
+        "start": 1832.0,
+        "end": 1836.0
+    },
+    {
+        "text": " Este es el punto fuerte.",
+        "start": 1836.0,
+        "end": 1838.0
+    },
+    {
+        "text": " Ahora fíjense una pregunta que yo lo hago.",
+        "start": 1838.0,
+        "end": 1843.0
+    },
+    {
+        "text": " Acá se llama representante de RIS de T. ¿Qué pasa si yo usas de otra base ortonoma?",
+        "start": 1843.0,
+        "end": 1847.0
+    },
+    {
+        "text": " Al vengo, yo uso otra base ortonoma y hago la misma cuenta y acá tendría esto con otra base ortonoma.",
+        "start": 1847.0,
+        "end": 1854.0
+    },
+    {
+        "text": " Me puede dar, me tiene que dar lo mismo, por justamente probamos anteriormente que el representante de RIS es único.",
+        "start": 1855.0,
+        "end": 1862.0
+    },
+    {
+        "text": " O sea, ¿qué esto acá? Esto no depende de la base con una delija.",
+        "start": 1862.0,
+        "end": 1866.0
+    },
+    {
+        "text": " También porque como la suma de la proyección y la proyección de la obrisa.",
+        "start": 1866.0,
+        "end": 1870.0
+    },
+    {
+        "text": " Ahí es acto.",
+        "start": 1870.0,
+        "end": 1872.0
+    },
+    {
+        "text": " Y justamente, esta es una demostración constructiva porque uno construye precisamente esto.",
+        "start": 1872.0,
+        "end": 1880.0
+    },
+    {
+        "text": " Lo que vamos a ver ahora es que es importante verlo a esto porque es una demostración alternativa que usa justamente proyecciones.",
+        "start": 1881.0,
+        "end": 1888.0
+    },
+    {
+        "text": " Que no es ortonoma, no es ortonoma, sino ortonoma, no lo puedes componer así.",
+        "start": 1894.0,
+        "end": 1899.0
+    },
+    {
+        "text": " No, no es que no tenga representante de RIS, es que no lo puedes calcular así.",
+        "start": 1901.0,
+        "end": 1904.0
+    },
+    {
+        "text": " Rebramos de RIS siempre tenés para cualquier funcionar.",
+        "start": 1905.0,
+        "end": 1908.0
+    },
+    {
+        "text": " Para calcularlo, usa una base ortonoma normal, cualquiera y hago esto.",
+        "start": 1908.0,
+        "end": 1913.0
+    },
+    {
+        "text": " Pero, cierto, siempre tengo repetidas preguntas porque no se escucha.",
+        "start": 1915.0,
+        "end": 1920.0
+    },
+    {
+        "text": " Pero hay que ver que quedó claro, no me preguntaron.",
+        "start": 1920.0,
+        "end": 1923.0
+    },
+    {
+        "text": " Bueno, se entiende la asunto de siguiente.",
+        "start": 1924.0,
+        "end": 1933.0
+    },
+    {
+        "text": " Vienes la respuesta y deducan la proyección.",
+        "start": 1933.0,
+        "end": 1936.0
+    },
+    {
+        "text": " Vamos a ver una demostración alternativa.",
+        "start": 1940.0,
+        "end": 1942.0
+    },
+    {
+        "text": " Ya que estamos hablando de proyecciones que hemos visto, vamos a ver la demostración alternativa que tiene que ver con lo que está en el libro Rojo.",
+        "start": 1954.0,
+        "end": 1960.0
+    },
+    {
+        "text": " Es una demostración mucho más elegante que esta, pero justamente una demostración que se puede extender después a la inmensión infinita,",
+        "start": 1960.0,
+        "end": 1975.0
+    },
+    {
+        "text": " poniendo ciertas otras condiciones.",
+        "start": 1976.0,
+        "end": 1979.0
+    },
+    {
+        "text": " Entonces, demostración alternativa que es mucho más linda que esta de la fuerza bruta.",
+        "start": 1979.0,
+        "end": 1987.0
+    },
+    {
+        "text": " Depostación alternativa de la existencia.",
+        "start": 1995.0,
+        "end": 1998.0
+    },
+    {
+        "text": " ¿Este es el que quieras?",
+        "start": 2006.0,
+        "end": 2010.0
+    },
+    {
+        "text": " ¿Este es el que quieras?",
+        "start": 2010.0,
+        "end": 2013.0
+    },
+    {
+        "text": " Este tipo de cosas se suelen preguntar a veces en los exámenes cuando hay desarrollo.",
+        "start": 2013.0,
+        "end": 2017.0
+    },
+    {
+        "text": " Yo todavía no sabemos cómo hacer el exámen, pero ustedes hagan la en la que quieras.",
+        "start": 2017.0,
+        "end": 2021.0
+    },
+    {
+        "text": " Pero hagan una que esté bien.",
+        "start": 2021.0,
+        "end": 2023.0
+    },
+    {
+        "text": " En el exámenes, al mejor algún pedacito, no sé, todavía.",
+        "start": 2028.0,
+        "end": 2031.0
+    },
+    {
+        "text": " Los parcieles, creo que no, no.",
+        "start": 2031.0,
+        "end": 2035.0
+    },
+    {
+        "text": " Bueno, muy bien.",
+        "start": 2052.0,
+        "end": 2054.0
+    },
+    {
+        "text": " Ahora estamos trabajando, fíjense esta demostración alternativa, como estamos trabajando con funcionales,",
+        "start": 2055.0,
+        "end": 2062.0
+    },
+    {
+        "text": " que van del espacio vectorial, al cuerpo de escalares, entonces cuando yo considero la imagen de este espacio vectorial,",
+        "start": 2064.0,
+        "end": 2074.0
+    },
+    {
+        "text": " de esta transformación, ¿qué pasa con la dimensión de la imagen?",
+        "start": 2074.0,
+        "end": 2081.0
+    },
+    {
+        "text": " Cada visto como espacio vectorial que dimensión tiene, uno.",
+        "start": 2084.0,
+        "end": 2088.0
+    },
+    {
+        "text": " Entonces, la imagen de T que está acá dentro tiene que tener dimensión a lo sumo uno,",
+        "start": 2088.0,
+        "end": 2094.0
+    },
+    {
+        "text": " o sea que la dimensión de la imagen puede ser o cero o uno.",
+        "start": 2094.0,
+        "end": 2097.0
+    },
+    {
+        "text": " Vamos, separemos esos dos casos con cuidado.",
+        "start": 2097.0,
+        "end": 2102.0
+    },
+    {
+        "text": " Entonces, la imagen tiene una transformación lineal de este funcionario lineal,",
+        "start": 2102.0,
+        "end": 2106.0
+    },
+    {
+        "text": " como está contenido en el cuerpo de escalares,",
+        "start": 2106.0,
+        "end": 2109.0
+    },
+    {
+        "text": " y esto es un subespacio vectorial,",
+        "start": 2110.0,
+        "end": 2113.0
+    },
+    {
+        "text": " entonces necesariamente la dimensión de la imagen de T",
+        "start": 2121.0,
+        "end": 2126.0
+    },
+    {
+        "text": " es menor igual que uro,",
+        "start": 2128.0,
+        "end": 2130.0
+    },
+    {
+        "text": " porque esto es un subespacio de un espacio vectorial de dimensión uno.",
+        "start": 2130.0,
+        "end": 2135.0
+    },
+    {
+        "text": " Entonces, separemos los dos casos.",
+        "start": 2140.0,
+        "end": 2144.0
+    },
+    {
+        "text": " La dimensión de la imagen de T",
+        "start": 2150.0,
+        "end": 2154.0
+    },
+    {
+        "text": " como decía recién, esto puede ser o cero o uno.",
+        "start": 2156.0,
+        "end": 2161.0
+    },
+    {
+        "text": " Veamos primero el caso más sencillo, que es el caso en el cual la dimensión es cero.",
+        "start": 2162.0,
+        "end": 2168.0
+    },
+    {
+        "text": " La dimensión de la imagen de T",
+        "start": 2169.0,
+        "end": 2171.0
+    },
+    {
+        "text": " No se imaginan las cosas que hay que corregir con uno toma de desarrollo.",
+        "start": 2178.0,
+        "end": 2183.0
+    },
+    {
+        "text": " Me acuerdo que una vez, yo da clase en química, en coro,",
+        "start": 2183.0,
+        "end": 2194.0
+    },
+    {
+        "text": " y tenía que hacer en cálculo integral,",
+        "start": 2194.0,
+        "end": 2198.0
+    },
+    {
+        "text": " y uno me hizo por sustitución, o sea, así.",
+        "start": 2199.0,
+        "end": 2202.0
+    },
+    {
+        "text": " Y uno me hizo el cambio variable, sustitución, el cambio de cambio variable.",
+        "start": 2202.0,
+        "end": 2206.0
+    },
+    {
+        "text": " Me hizo el cambio variable, este.",
+        "start": 2206.0,
+        "end": 2208.0
+    },
+    {
+        "text": " Piero que general uno agarré y pone, agarrre con x y pone ud,",
+        "start": 2208.0,
+        "end": 2214.0
+    },
+    {
+        "text": " quizás es lo barismo, el coseníperbólico de x y empiezan a hacer cuenta y terminan.",
+        "start": 2214.0,
+        "end": 2219.0
+    },
+    {
+        "text": " Vérgane, voy a integrar así, y me voy a integrar la rastalla.",
+        "start": 2219.0,
+        "end": 2222.0
+    },
+    {
+        "text": " Pero este me puso el cambio variable, y el cambio variable es el siguiente.",
+        "start": 2222.0,
+        "end": 2225.0
+    },
+    {
+        "text": " Fue el mejor cambio variable que vi en mi vida.",
+        "start": 2225.0,
+        "end": 2227.0
+    },
+    {
+        "text": " Muy igual a x y lo resolvió.",
+        "start": 2227.0,
+        "end": 2230.0
+    },
+    {
+        "text": " Y lo resolvió de lo resolvió bien, me acuerdo.",
+        "start": 2231.0,
+        "end": 2234.0
+    },
+    {
+        "text": " Pero no es una excepción.",
+        "start": 2236.0,
+        "end": 2238.0
+    },
+    {
+        "text": " Bueno, dimensión de la imagen de T es igual a cero.",
+        "start": 2240.0,
+        "end": 2242.0
+    },
+    {
+        "text": " Eso que implica, si la dimensión de la imagen de T es igual a cero,",
+        "start": 2242.0,
+        "end": 2246.0
+    },
+    {
+        "text": " significa que este espacio vectorial tiene un único elemento que el neutro.",
+        "start": 2246.0,
+        "end": 2251.0
+    },
+    {
+        "text": " El neutro en donde el neutro, el espacio vectorial desllegada, que son los escalarios,",
+        "start": 2252.0,
+        "end": 2257.0
+    },
+    {
+        "text": " o sea, el escalar cero.",
+        "start": 2257.0,
+        "end": 2259.0
+    },
+    {
+        "text": " Esto significa que la imagen de T es el escalar cero.",
+        "start": 2259.0,
+        "end": 2266.0
+    },
+    {
+        "text": " Y esto significa entonces que T ha aplicado cualquier bien el espacio vectorial,",
+        "start": 2269.0,
+        "end": 2274.0
+    },
+    {
+        "text": " me da el escalar cero.",
+        "start": 2274.0,
+        "end": 2276.0
+    },
+    {
+        "text": " Si tengo que la dimensión de la imagen es cero, significa que T la transformación nula, obviamente.",
+        "start": 2276.0,
+        "end": 2287.0
+    },
+    {
+        "text": " Entonces, hay que poder usar como representante.",
+        "start": 2287.0,
+        "end": 2291.0
+    },
+    {
+        "text": " Podemos escribir como.",
+        "start": 2291.0,
+        "end": 2294.0
+    },
+    {
+        "text": " Podemos escribir lo siguiente, Tdmb, ese producto interno debe con cero.",
+        "start": 2297.0,
+        "end": 2301.0
+    },
+    {
+        "text": " O sea, en ese caso podemos tomar como representante de Riz el cero.",
+        "start": 2301.0,
+        "end": 2307.0
+    },
+    {
+        "text": " Si tiene la transformación nula, el representante de Riz es el vector nulo.",
+        "start": 2308.0,
+        "end": 2312.0
+    },
+    {
+        "text": " Ahora, ¿qué pasa si la dimensión de la imagen es uno?",
+        "start": 2313.0,
+        "end": 2316.0
+    },
+    {
+        "text": " En ese caso, la imagen es todo el cuerpo de escalares.",
+        "start": 2316.0,
+        "end": 2320.0
+    },
+    {
+        "text": " Si la dimensión de la imagen es uno, ¿qué pasa con el núcleo?",
+        "start": 2331.0,
+        "end": 2351.0
+    },
+    {
+        "text": " Con la dimensión del núcleo.",
+        "start": 2351.0,
+        "end": 2355.0
+    },
+    {
+        "text": " La dimensión del núcleo es la dimensión del espacio vectorial, sobre la que pica que la pica a usted, menos uno.",
+        "start": 2356.0,
+        "end": 2365.0
+    },
+    {
+        "text": " Por el teoremos las dimensiones. O sea, la dimensión del núcleo es la dimensión del espacio B menos uno.",
+        "start": 2365.0,
+        "end": 2374.0
+    },
+    {
+        "text": " Y otra pregunta que les hago.",
+        "start": 2375.0,
+        "end": 2379.0
+    },
+    {
+        "text": " Ves un espacio vectorial con producto interno.",
+        "start": 2379.0,
+        "end": 2382.0
+    },
+    {
+        "text": " Si yo acá tengo B, es un espacio vectorial con producto interno y tengo acá el núcleo de T,",
+        "start": 2382.0,
+        "end": 2389.0
+    },
+    {
+        "text": " que tiene la dimensión del espacio vectorial menos uno.",
+        "start": 2389.0,
+        "end": 2394.0
+    },
+    {
+        "text": " Así me queda una dimensión libre acá.",
+        "start": 2394.0,
+        "end": 2396.0
+    },
+    {
+        "text": " Bueno, ¿cuál es la dimensión del complemento ortogonal del núcleo?",
+        "start": 2396.0,
+        "end": 2401.0
+    },
+    {
+        "text": " Uno, estamos, el complemento ortogonal del núcleo tiene la dimensión uno, para que suma la dimensión del núcleo, me da la dimensión del espacio total.",
+        "start": 2402.0,
+        "end": 2409.0
+    },
+    {
+        "text": " O sea, que yo acá pongo el complemento ortogonal del núcleo. Eso tiene la dimensión uno.",
+        "start": 2409.0,
+        "end": 2417.0
+    },
+    {
+        "text": " Y ahora la viva es que en la base ortogonal yo puedo tomar una base ortogonal que tenga parte esa base en el núcleo y parte de la base en el complemento ortogonal del núcleo.",
+        "start": 2418.0,
+        "end": 2440.0
+    },
+    {
+        "text": " Como esto tiene dimensión uno, tengo que tomar un vector acá y el resto los dene menos uno vectores acá dentro.",
+        "start": 2440.0,
+        "end": 2446.0
+    },
+    {
+        "text": " Y con eso tengo, si esto es una base ortogonal más acá y le agrego esto que tiene norma uno, eso será una base ortogonal en el espacio B.",
+        "start": 2446.0,
+        "end": 2455.0
+    },
+    {
+        "text": " Bien, entonces, dado un vector ahora cualquiera.",
+        "start": 2455.0,
+        "end": 2460.0
+    },
+    {
+        "text": " A ese V lo podemos componer como la parte que está la proyección sobre el núcleo, como es la proyección sobre el complemento ortogonal del núcleo.",
+        "start": 2460.0,
+        "end": 2474.0
+    },
+    {
+        "text": " O sea, ¿qué esto lo podemos escribir como la proyección sobre el núcleo? ¿Qué es un espacio vectorial de B?",
+        "start": 2474.0,
+        "end": 2481.0
+    },
+    {
+        "text": " Más la proyección sobre el complemento ortogonal del núcleo.",
+        "start": 2481.0,
+        "end": 2486.0
+    },
+    {
+        "text": " De verdad, estos son dos vectores. Este vector está en el núcleo de B y este vector está en el complemento ortogonal del núcleo.",
+        "start": 2486.0,
+        "end": 2501.0
+    },
+    {
+        "text": " Y la biva justamente de esta interpretación geométrica es que cuando yo la aplico T a esto, esta parte se va porque está en el núcleo y solamente me queda T aplicado a esto.",
+        "start": 2501.0,
+        "end": 2513.0
+    },
+    {
+        "text": " Y entonces me queda T aplicado a una espasa, un subespacio tiene dimensión uno. Entonces ahí las cuantas las puedo hacer.",
+        "start": 2513.0,
+        "end": 2520.0
+    },
+    {
+        "text": " Mucho más sencilla como que las quise antes. Entonces fíjense. Si yo aplico T ahí,",
+        "start": 2520.0,
+        "end": 2527.0
+    },
+    {
+        "text": " será T a la primera parte del primer vector,",
+        "start": 2533.0,
+        "end": 2536.0
+    },
+    {
+        "text": " más T a la segunda parte del segundo vector, de la descomposición.",
+        "start": 2541.0,
+        "end": 2548.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2551.0,
+        "end": 2553.0
+    },
+    {
+        "text": " Y como les decía recién, esta parte se está en el núcleo, cuando le aplico T esto me da cero.",
+        "start": 2557.0,
+        "end": 2564.0
+    },
+    {
+        "text": " O sea que me queda T aplicado a esa parte de la estomposición.",
+        "start": 2564.0,
+        "end": 2569.0
+    },
+    {
+        "text": " Para cada vector B que uno ponga.",
+        "start": 2569.0,
+        "end": 2574.0
+    },
+    {
+        "text": " Entonces.",
+        "start": 2576.0,
+        "end": 2579.0
+    },
+    {
+        "text": " Para calcular esta parte de esta parte se acuerdan como se calculan las proyecciones ortogonales.",
+        "start": 2586.0,
+        "end": 2593.0
+    },
+    {
+        "text": " Si yo estoy proyectando un subespacio, tengo que agarrar una base ortogonal para ese subespacio y agarrar a hacer el producto interno del vector B que estoy proyectando o cada uno de los elementos de base ortogonal.",
+        "start": 2594.0,
+        "end": 2605.0
+    },
+    {
+        "text": " Y multiplicarlo por el elemento de la base y sumar. Como acá estoy en un espacio y menciono uno, esta proyección es muy fácil de calcular la base ortogonal para tener un elemento.",
+        "start": 2605.0,
+        "end": 2613.0
+    },
+    {
+        "text": " Entonces, un elemento que le vamos a llamar que la siguiente manera.",
+        "start": 2613.0,
+        "end": 2620.0
+    },
+    {
+        "text": " Consigueremos un vector E que esté en el complemento ortogonal del núcleo y que tenga norma 1.",
+        "start": 2621.0,
+        "end": 2634.0
+    },
+    {
+        "text": " Un E que esté en el complemento ortogonal del núcleo que tiene dimension 1, este espacio y ese vector lo elegimos con norma 1.",
+        "start": 2637.0,
+        "end": 2645.0
+    },
+    {
+        "text": " Entonces, obviamente ese vector es una base ortogonal del complemento ortogonal del núcleo.",
+        "start": 2646.0,
+        "end": 2659.0
+    },
+    {
+        "text": " O sea, es una base ortogonal de este.",
+        "start": 2659.0,
+        "end": 2662.0
+    },
+    {
+        "text": " El E es un vector que está acá en un espacio y menciono uno con norma 1, es un espacio ortogonal de ese subespacio.",
+        "start": 2662.0,
+        "end": 2671.0
+    },
+    {
+        "text": " Entonces, yo quiero calcular la proyección ortogonal de B sobre ese subespacio que es lo que tengo en esta parte, para después aplicar el E, eso como lo escribo.",
+        "start": 2672.0,
+        "end": 2680.0
+    },
+    {
+        "text": " ¿Cómo será la proyección ortogonal?",
+        "start": 2689.0,
+        "end": 2691.0
+    },
+    {
+        "text": " O sea, hay tantas símbolos aquí acá que ya me estoy mareando. ¿Cómo será esto? ¿Cómo calculo esto?",
+        "start": 2692.0,
+        "end": 2699.0
+    },
+    {
+        "text": " Tengo una base ortogonal de este espacio, hago el producto interno de B con el elemento de esa base ortogonal, que es uno solo y multiplico por E.",
+        "start": 2699.0,
+        "end": 2711.0
+    },
+    {
+        "text": " El mismo razonamiento que hice recién, solo que el lugar de elegir una base ortogonal de todo el espacio, agarro una base ortogonal de todo el núcleo, porque todo lo que tiene el núcleo es pues se me va.",
+        "start": 2712.0,
+        "end": 2722.0
+    },
+    {
+        "text": " Sí, cuando le aplico T. Entonces, así se calcula. Entonces fíjense con esto que lo que queda.",
+        "start": 2723.0,
+        "end": 2730.0
+    },
+    {
+        "text": " Finalmente, con esto queda, si le aplico T al vector B, que era lo que tenía acá, este aplicado esta parte.",
+        "start": 2742.0,
+        "end": 2755.0
+    },
+    {
+        "text": " Este aplicado esta parte acá no tengo, este aplicado esto, como es liñal, me va a quedar este escalar por este aplicado ahí.",
+        "start": 2756.0,
+        "end": 2763.0
+    },
+    {
+        "text": " ¿Dónde esto acá está en el cuerpo de escalares?",
+        "start": 2764.0,
+        "end": 2773.0
+    },
+    {
+        "text": " Lo meto para dentro como interresión y esto me va a quedar B, T, con jugado por E.",
+        "start": 2775.0,
+        "end": 2783.0
+    },
+    {
+        "text": " Y este acá justamente, ese representante de RIS, lo llamó WB. Entonces fíjense, que hemos obtenido un vector WB, tal que T aplico B es el producto interno de B con WB.",
+        "start": 2784.0,
+        "end": 2803.0
+    },
+    {
+        "text": " Y esto es para todo, ven en el espacio territorial. O sea, que este es el representante de RIS. Es lo mismo que tenemos antes, lo que pasa que se compacta más la demostración, porque justamente estamos siendo inteligentes de elegir.",
+        "start": 2804.0,
+        "end": 2821.0
+    },
+    {
+        "text": " Una base automómal que tiene parte del núcleo, tantos elementos del núcleo como la dimensión de B menos 1 y parte del complemento del organario del núcleo.",
+        "start": 2822.0,
+        "end": 2830.0
+    },
+    {
+        "text": " Todo lo que está acá en el núcleo se me va cuando le aplico T, y esto tiene dimensión 1. O sea que el representante de RIS lo puede escribir así.",
+        "start": 2830.0,
+        "end": 2838.0
+    },
+    {
+        "text": " Está perfecto, agarramos un N en el complemento ortona del núcleo, calculamos que tenga norma 1 y hacemos esto.",
+        "start": 2839.0,
+        "end": 2852.0
+    },
+    {
+        "text": " Bueno, y ahora sí viene la parte más interesante y más linda del curso. ¿Qué es lo que tiene que ver?",
+        "start": 2853.0,
+        "end": 2864.0
+    },
+    {
+        "text": " Para mí es la parte más linda, por ti hay un millón de aplicaciones en particular a la física, que es la idea de adjunta a nuestra formación diñala.",
+        "start": 2866.0,
+        "end": 2875.0
+    },
+    {
+        "text": " A mí me da una transformación diñala, ahora es un espacio B en un W y yo voy a calcular una transformación asociada que le llamo la Junta, que va del espacio de llegar a la B al departida y que ya hoy vamos a explicarles cómo se construye, cómo se define.",
+        "start": 2876.0,
+        "end": 2891.0
+    },
+    {
+        "text": " Y las clases siguientes vamos a ver que resultados útiles se desprenden de esa construcción.",
+        "start": 2891.0,
+        "end": 2896.0
+    },
+    {
+        "text": " Al Junta, una transformación diñada. Esto la primera vez, a simple vista, cuando lo veamos ahora, la primera vez que no lo ve esto como que queda medio confundido para que sirve esto, como se calcula, pero vamos a ver que esto sirve para muchas cosas y se calcula de manera sencilla, a la hora de hacer los prácticos.",
+        "start": 2897.0,
+        "end": 2922.0
+    },
+    {
+        "text": " Entonces lo que tenemos ahora es, son dos espacios vectoriales, B y W, vamos a pedir que esos espacios vectoriales, en estos espacios vectoriales trabajan sobre el mismo cuerpo de escalares.",
+        "start": 2922.0,
+        "end": 2940.0
+    },
+    {
+        "text": " Vamos entonces B y W son espacios vectoriales, sobre el mismo cuerpo, reales o complejos.",
+        "start": 2940.0,
+        "end": 2961.0
+    },
+    {
+        "text": " Y vamos a suponer que tengo un producto interno acá y tengo un producto interno acá.",
+        "start": 2961.0,
+        "end": 2969.0
+    },
+    {
+        "text": " El producto interno definió de espacios llegada y el producto interno definió de este producto interno en este espacio de partida.",
+        "start": 2969.0,
+        "end": 2976.0
+    },
+    {
+        "text": " Y tengo un producto interno en el espacio de partida que lo vamos a anotar así, que vamos a poner acá un B para esta referencia que ese producto interno está definido acá.",
+        "start": 2976.0,
+        "end": 2988.0
+    },
+    {
+        "text": " Y vamos a considerar un producto interno con el sub índice W, que es un producto interno definido acá.",
+        "start": 2988.0,
+        "end": 3003.0
+    },
+    {
+        "text": " Esto es un producto interno en W. Y vamos a considerar una transformación lineal T que va de V, W.",
+        "start": 3003.0,
+        "end": 3020.0
+    },
+    {
+        "text": " Si, son transformaciones lineales comunes y corrientes, solamente que ahora los espacios, lo que estamos trabajando, tengo productos interno.",
+        "start": 3033.0,
+        "end": 3048.0
+    },
+    {
+        "text": " Entonces, vamos a dar la definición primero de la Junta, vamos a decir y ya la vamos a comentar.",
+        "start": 3048.0,
+        "end": 3063.0
+    },
+    {
+        "text": " Bueno, entonces retoma no antes de dar la termina con la definición.",
+        "start": 3078.0,
+        "end": 3107.0
+    },
+    {
+        "text": " Yo tengo espacios vectoriales sobre el mismo cuerpo, tengo un producto interno acá y un producto interno acá.",
+        "start": 3107.0,
+        "end": 3112.0
+    },
+    {
+        "text": " Tengo una transformación lineal. Decimos que esa transformación lineal tiene a Junta si existe una función T estrella que es justamente la Junta que va de W.",
+        "start": 3112.0,
+        "end": 3123.0
+    },
+    {
+        "text": " La T estrella va de W a V y que cumple la siguiente condición.",
+        "start": 3123.0,
+        "end": 3133.0
+    },
+    {
+        "text": " Lo voy a explicar acá primero, después la vamos a escribir.",
+        "start": 3133.0,
+        "end": 3139.0
+    },
+    {
+        "text": " Mire, supongamos que yo agarrro acá un vector cualquiera V y que yo agarrro acá un vector cualquiera W.",
+        "start": 3139.0,
+        "end": 3148.0
+    },
+    {
+        "text": " Si yo este vector le aplico V, le aplico T, vengo a parar acá y esto será el vector TDV.",
+        "start": 3148.0,
+        "end": 3157.0
+    },
+    {
+        "text": " Y si yo este vector W le aplico T estrella vengo a parar acá y este vector le llamaré T estrella aplicado W.",
+        "start": 3157.0,
+        "end": 3166.0
+    },
+    {
+        "text": " Entonces, esta función es la Junta de esta si se cumple que el producto es todos los vectorios.",
+        "start": 3166.0,
+        "end": 3174.0
+    },
+    {
+        "text": " En este espacio vectorial, el producto interno es lo mismo que el producto interno todos los vectorios en este espacio vectorial y eso para todo V acá y para todo W acá.",
+        "start": 3174.0,
+        "end": 3184.0
+    },
+    {
+        "text": " Vamos, entonces, si usted tiene una Junta si existe una función T estrella que va del espacio de llegar a T, al espacio de partida a T,",
+        "start": 3184.0,
+        "end": 3193.0
+    },
+    {
+        "text": " tal que Tmb, con W, es igual al producto interno de V con T estrella W.",
+        "start": 3193.0,
+        "end": 3211.0
+    },
+    {
+        "text": " Falta acá, todavía algo. Deciden que espacio estoy trabajando. Fíjense acá como le decía recién, agarren un V acá y un W acá.",
+        "start": 3214.0,
+        "end": 3224.0
+    },
+    {
+        "text": " Tmb vive en el espacio llegada al A, entonces este producto interno que está al primer al principio de Tmb con W, eso está en un producto interno acá en W.",
+        "start": 3224.0,
+        "end": 3233.0
+    },
+    {
+        "text": " O sea que acá tengo que usar para calcularlo el producto interno que está definido en W.",
+        "start": 3233.0,
+        "end": 3238.0
+    },
+    {
+        "text": " Y esto acá, el V está en el espacio de partida de la T y el T estrella W está acá también.",
+        "start": 3239.0,
+        "end": 3245.0
+    },
+    {
+        "text": " Acá el producto interno es el producto interno en V. O sea que T tiene una Junta si pueden encontrar si existe una función T estrella que cumple esta condición.",
+        "start": 3245.0,
+        "end": 3256.0
+    },
+    {
+        "text": " Aplicar el T y tomar producto interno en el espacio de llegada al A, el T es lo mismo que aplicar el T estrella a la segunda entrada y tomar producto interno en el espacio de partida.",
+        "start": 3257.0,
+        "end": 3265.0
+    },
+    {
+        "text": " Y esto para todo V en el espacio V y para todo W en el espacio de O.",
+        "start": 3265.0,
+        "end": 3273.0
+    },
+    {
+        "text": " Y insisto, la primera vez que uno lo vea esto no se imagina para que puede ir a servir ni queta nutilez ni queta complicado calcularlo, es la definición.",
+        "start": 3274.0,
+        "end": 3287.0
+    },
+    {
+        "text": " Si da una T, si yo encuentro una T estrella, hasta que cumpla aquella condición, entonces digo que esta es la Junta de esa.",
+        "start": 3287.0,
+        "end": 3296.0
+    },
+    {
+        "text": " En principio que la definición no estamos pidiendo que la T estrella sea lineal, estamos diciendo que sea una función.",
+        "start": 3297.0,
+        "end": 3305.0
+    },
+    {
+        "text": " Lo que vamos a poner un ratito es que esta función es lineal y vamos a probar que en dimensión finita toda T tiene una Junta.",
+        "start": 3305.0,
+        "end": 3318.0
+    },
+    {
+        "text": " Y si vamos a probar que en dimensión finita cada T transformación lineal tiene una única T estrella y esa T estrella es una transformación lineal.",
+        "start": 3319.0,
+        "end": 3330.0
+    },
+    {
+        "text": " Eso lo que vamos a probar.",
+        "start": 3330.0,
+        "end": 3332.0
+    },
+    {
+        "text": " Y en las clases que viene vamos a ver cómo se calcula esto, que es bien fácil, la asusta esto al principio, pero lo aseguro que es bien fácil calcular y bien lindo y bien entretenido.",
+        "start": 3332.0,
+        "end": 3343.0
+    },
+    {
+        "text": " Si hay algo lindo y entretenido, hay curso.",
+        "start": 3349.0,
+        "end": 3352.0
+    },
+    {
+        "text": " Preguntas, por un seaario, la mecánica cuántica, por ejemplo, no existiría si no existiera la noción de Junta.",
+        "start": 3352.0,
+        "end": 3364.0
+    },
+    {
+        "text": " Porque me caigo cuántico trabaja con operadores diñales que son autoadjuntos.",
+        "start": 3364.0,
+        "end": 3371.0
+    },
+    {
+        "text": " Tengo un nuevo espacio para ir a mi nueva llegada y esto coincide con esto.",
+        "start": 3371.0,
+        "end": 3376.0
+    },
+    {
+        "text": " Todas las cantidades físicas son corresponde nada, operadores autoadjuntos.",
+        "start": 3376.0,
+        "end": 3380.0
+    },
+    {
+        "text": " No me voy a meter por ahí solamente digo que sin esto no existiría en un montón de herramientas que uno usa en su vida académica y en su vida tecnológica.",
+        "start": 3380.0,
+        "end": 3393.0
+    },
+    {
+        "text": " Bueno, quedo claro esto.",
+        "start": 3396.0,
+        "end": 3398.0
+    },
+    {
+        "text": " Entonces lo que vamos a hacer ahora es que vamos a probar que en dimensión finita toda la transformación de un niño tiene una única Junta, existe una, es única y además es una transformación de un niño.",
+        "start": 3401.0,
+        "end": 3415.0
+    },
+    {
+        "text": " Y en la caso que viene vamos a ver cómo se calcula.",
+        "start": 3415.0,
+        "end": 3418.0
+    },
+    {
+        "text": " En dimensión infinita no siempre es cierto, pues ya vamos a ver que vamos a apelar a la construcción de Riz para encontrar esa Junta.",
+        "start": 3418.0,
+        "end": 3427.0
+    },
+    {
+        "text": " Pero por lo pronto en dimensión finita todo funciona bien.",
+        "start": 3428.0,
+        "end": 3432.0
+    },
+    {
+        "text": " Bien, vamos a escribir acá las cosas.",
+        "start": 3432.0,
+        "end": 3435.0
+    },
+    {
+        "text": " Y con eso terminamos la clase de hoy.",
+        "start": 3435.0,
+        "end": 3438.0
+    },
+    {
+        "text": " Por supuesto que veremos la infinidad de propiedad importante que tienen estas construcciones en próximas clas.",
+        "start": 3445.0,
+        "end": 3454.0
+    },
+    {
+        "text": " Teorelo.",
+        "start": 3457.0,
+        "end": 3460.0
+    },
+    {
+        "text": " No sé por qué borre esto.",
+        "start": 3517.0,
+        "end": 3520.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3548.0,
+        "end": 3551.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3551.0,
+        "end": 3554.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3554.0,
+        "end": 3557.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3557.0,
+        "end": 3560.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3560.0,
+        "end": 3563.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3563.0,
+        "end": 3566.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3566.0,
+        "end": 3569.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3569.0,
+        "end": 3572.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3572.0,
+        "end": 3575.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3576.0,
+        "end": 3578.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3578.0,
+        "end": 3581.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3581.0,
+        "end": 3584.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3584.0,
+        "end": 3587.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3587.0,
+        "end": 3589.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3589.0,
+        "end": 3592.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3592.0,
+        "end": 3594.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3594.0,
+        "end": 3596.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3596.0,
+        "end": 3598.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3598.0,
+        "end": 3600.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3600.0,
+        "end": 3602.0
+    },
+    {
+        "text": " Y ahora vamos a ver que es una uniría.",
+        "start": 3602.0,
+        "end": 3604.0
+    },
+    {
+        "text": " ¿L對不對?",
+        "start": 3604.0,
+        "end": 3607.0
+    },
+    {
+        "text": " ¿L where there is so corner?",
+        "start": 3613.0,
+        "end": 3616.0
+    },
+    {
+        "text": " ¿L where there is tremendo?",
+        "start": 3624.0,
+        "end": 3627.0
+    },
+    {
+        "text": " ¿L where there is tremendo?",
+        "start": 3627.0,
+        "end": 3629.0
+    },
+    {
+        "text": " ¿No?",
+        "start": 3629.0,
+        "end": 3630.0
+    },
+    {
+        "text": " ¿No?",
+        "start": 3630.0,
+        "end": 3631.0
+    },
+    {
+        "text": " ¿No?",
+        "start": 3631.0,
+        "end": 3633.0
+    },
+    {
+        "text": " la transformación T, yo te calculo una de juntas con los productos internos que estoy usando.",
+        "start": 3633.0,
+        "end": 3637.32
+    },
+    {
+        "text": " Obviamente, si cae el producto internos va a cambiar la de juntas o sí. Entonces, tenemos",
+        "start": 3637.32,
+        "end": 3645.88
+    },
+    {
+        "text": " dos espacios vectoriales sobre el mismo cuerpo, eso es importante que estén definidos sobre",
+        "start": 3645.88,
+        "end": 3649.92
+    },
+    {
+        "text": " mi cuerpo y además es importante también que sean de dimensión finita. Tenemos dos",
+        "start": 3649.92,
+        "end": 3654.92
+    },
+    {
+        "text": " productos internos, uno definido sobre V y el otro sobre DoV, entonces lo que se cumple",
+        "start": 3654.92,
+        "end": 3659.72
+    },
+    {
+        "text": " es que mi seteorema es que toda transformación lineal de V, DoV tiene una única transformación",
+        "start": 3659.72,
+        "end": 3665.2
+    },
+    {
+        "text": " lineal a Junta, de DoV en V. Acá estamos diciendo tres cosas, que para cada transformación",
+        "start": 3665.2,
+        "end": 3673.04
+    },
+    {
+        "text": " lineal existe la Junta que es única y que es una transformación lineal. Esas son las",
+        "start": 3673.04,
+        "end": 3681.6
+    },
+    {
+        "text": " tres cosas que vamos a probar, existencia, unicidad y linealidad. Bueno, en dimensión",
+        "start": 3681.6,
+        "end": 3689.4399999999996
+    },
+    {
+        "text": " finita, hay ejemplos de las notas que veremos la clase que viene, esto no es cierto,",
+        "start": 3689.44,
+        "end": 3695.56
+    },
+    {
+        "text": " ponen misión finita así, no es cierto el tema de la existencia. Bueno, hay que poner",
+        "start": 3695.56,
+        "end": 3704.56
+    },
+    {
+        "text": " como así al principio más condiciones para que vaga resultado equivalentes a esto en",
+        "start": 3704.56,
+        "end": 3708.68
+    },
+    {
+        "text": " dimensión infinita. Unicidad, vamos a empezar por la parte más fácil.",
+        "start": 3708.68,
+        "end": 3717.68
+    },
+    {
+        "text": " Unicidad, vamos a suponer que existe más de una transformación al Junta y vamos a",
+        "start": 3718.68,
+        "end": 3724.16
+    },
+    {
+        "text": " ver que son las mismas. Entonces pensamos que existen dos al juntas, a una que le llamamos",
+        "start": 3724.16,
+        "end": 3733.3999999999996
+    },
+    {
+        "text": " T1 estrella y el otro llamamos T2 estrella, tales que cumplen la igualdad que definen",
+        "start": 3733.4,
+        "end": 3747.5
+    },
+    {
+        "text": " las al juntas tales que, cuál es la, vamos a poner que para una transformación T existen",
+        "start": 3747.5,
+        "end": 3758.32
+    },
+    {
+        "text": " dos transformaciones al juntas. La condición que define las al juntas es que si yo agarró",
+        "start": 3758.32,
+        "end": 3763.7200000000003
+    },
+    {
+        "text": " Tnb y tomó el próximo tréculo con W, en el espacio llegada del AT, esto me da lo",
+        "start": 3763.7200000000003,
+        "end": 3769.04
+    },
+    {
+        "text": " mismo que V con T1 estrella en W, en el espacio de partida y lo mismo para el AT2.",
+        "start": 3769.04,
+        "end": 3780.2
+    },
+    {
+        "text": " Bien estamos suponiendo que dado una transformación y el T, existen T1 estrella y todos",
+        "start": 3780.2,
+        "end": 3799.6
+    },
+    {
+        "text": " estrellas que cumplen la propia la Junta. Tnb con W, me da lo mismo que V con T1 estrella",
+        "start": 3799.6,
+        "end": 3806.3599999999997
+    },
+    {
+        "text": " y lo mismo para T2 estrella. Entonces como estas dos cosas, esas dos cosas",
+        "start": 3806.36,
+        "end": 3824.56
+    },
+    {
+        "text": " son iguales, lo que se deduce aquí es que V, T1 estrella en W, esto acá tiene que ser",
+        "start": 3824.56,
+        "end": 3833.56
+    },
+    {
+        "text": " igualadesto. Bien, esta igualdad que puse ahí, este proclínterno acá tiene que ser igual",
+        "start": 3833.56,
+        "end": 3847.7
+    },
+    {
+        "text": " a este proclínterno acá y eso se tiene que cumplir para todo V en el espacio V y para",
+        "start": 3847.7,
+        "end": 3854.06
+    },
+    {
+        "text": " todo W en el espacio de V.",
+        "start": 3854.06,
+        "end": 3866.1
+    },
+    {
+        "text": " Entonces recorremos el tema que habíamos probado al principio, si yo acá tengo un vector y",
+        "start": 3866.1,
+        "end": 3871.58
+    },
+    {
+        "text": " acá tengo otro vector y tengo que el producto entero con V de esto, es lo mío que el producto",
+        "start": 3871.58,
+        "end": 3875.8599999999997
+    },
+    {
+        "text": " entero con V de esto para todo V, entonces necesariamente esto tiene que ser igual a esto.",
+        "start": 3875.86,
+        "end": 3880.1400000000003
+    },
+    {
+        "text": " Entonces por el tema del principio, por el tema del principio concluimos que T1 estrella",
+        "start": 3880.1400000000003,
+        "end": 3891.1800000000003
+    },
+    {
+        "text": " en W tiene que ser igual a T2 estrella en W y esto obviamente para cada para cada W es decir,",
+        "start": 3891.1800000000003,
+        "end": 3903.1
+    },
+    {
+        "text": " ustedes me agarran un W, lo ponen acá como esto se cumple para todo V, entonces necesariamente",
+        "start": 3903.1,
+        "end": 3908.06
+    },
+    {
+        "text": " esto tiene que ser igual a esto y eso tiene que ser cierto para cada W, o sea que T1 estrella",
+        "start": 3908.06,
+        "end": 3913.3399999999997
+    },
+    {
+        "text": " en W es lo mismo que T2 entrella en W para cada W, entonces necesariamente las transformaciones",
+        "start": 3913.3399999999997,
+        "end": 3920.2999999999997
+    },
+    {
+        "text": " T1 estrella y T2 estrella son la misma cosa. O sea que si existemos de una concluimos que son iguales",
+        "start": 3920.2999999999997,
+        "end": 3929.46
+    },
+    {
+        "text": " por lo tanto el tema de la unicidad ya está resuelto, resta el tema de la existencia y la",
+        "start": 3929.46,
+        "end": 3935.9
+    },
+    {
+        "text": " línea lidada. Existencia, mira la construcción, vamos a agarrar un vector cualquiera acá, un vector",
+        "start": 3935.9,
+        "end": 3947.94
+    },
+    {
+        "text": " W, fijamos esto y para eso se vamos a construir un funcional, definido sobre el espacio V.",
+        "start": 3947.94,
+        "end": 3963.42
+    },
+    {
+        "text": " T1, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2",
+        "start": 3977.94,
+        "end": 4007.94
+    },
+    {
+        "text": " T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T3, T2, T2, T2, T2, T3, T2, T2, infinity, T2, T3, T3, T2, T2, T2, T2, T2, T2, T1, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T2, T1, T2, T2, T2, T2, T2, T2, hurts, I can't handle it, I don't know what happens… Mini",
+        "start": 4007.94,
+        "end": 4012.7200000000003
+    },
+    {
+        "text": " A ver, esto es un poquito sutil, pero fíjense, me dan un vector cualquier acá, fijo.",
+        "start": 4012.72,
+        "end": 4032.48
+    },
+    {
+        "text": " Entonces con eso, yo voy a definir un funcional lineal que va de acá los escalares, los",
+        "start": 4032.48,
+        "end": 4037.7599999999998
+    },
+    {
+        "text": " funcionales lineales van siempre a los escalares.",
+        "start": 4037.7599999999998,
+        "end": 4040.24
+    },
+    {
+        "text": " Estamos, entonces vamos a construir un funcional lineal fw, porque está asociado este",
+        "start": 4040.24,
+        "end": 4045.52
+    },
+    {
+        "text": " www que tomamos aquí, que va los escalares.",
+        "start": 4045.52,
+        "end": 4050.68
+    },
+    {
+        "text": " ¿Cómo construimos ese funcional lineal?",
+        "start": 4050.68,
+        "end": 4052.8399999999997
+    },
+    {
+        "text": " Así, agarra un vector acá cualquiera, lo mapeo para acá, entonces voy a parar acá",
+        "start": 4052.8399999999997,
+        "end": 4058.4799999999996
+    },
+    {
+        "text": " a tdb, ¿sí?",
+        "start": 4058.4799999999996,
+        "end": 4061.56
+    },
+    {
+        "text": " Y toco el producto interno de este www que ese producto interno lo toma acá, el espacio",
+        "start": 4061.56,
+        "end": 4067.04
+    },
+    {
+        "text": " este y eso nos va a dar obviamente un escalar, o sea cuando esa construcción eso nos va a dar",
+        "start": 4067.04,
+        "end": 4074.8
+    },
+    {
+        "text": " un escalar acá.",
+        "start": 4074.8,
+        "end": 4076.6
+    },
+    {
+        "text": " Estamos, o sea que es la composición de dos cosas, de t para acá y después de un",
+        "start": 4076.6,
+        "end": 4081.24
+    },
+    {
+        "text": " producto interno, por ahí llegar acá.",
+        "start": 4081.24,
+        "end": 4085.6
+    },
+    {
+        "text": " Entonces la función del funcional es www fijo fmegarreunvectorb en este espacio y",
+        "start": 4085.6,
+        "end": 4091.6
+    },
+    {
+        "text": " mese lo siguiente, considera temb y toma el propio interno con www, esto es un escalar",
+        "start": 4091.6,
+        "end": 4097.08
+    },
+    {
+        "text": " y esto si lo ahora al variob, esto fíjense que es una función lineal, ¿por qué es",
+        "start": 4097.08,
+        "end": 4100.72
+    },
+    {
+        "text": " lineal?",
+        "start": 4100.72,
+        "end": 4101.72
+    },
+    {
+        "text": " Porque la t es lineal y porque el producto interno en la primera entrada es lineal.",
+        "start": 4101.72,
+        "end": 4107.16
+    },
+    {
+        "text": " Vamos, pues eso yo acá aplico a b1 más b2, la t es lineal y después aplico la linearidad",
+        "start": 4107.16,
+        "end": 4114.08
+    },
+    {
+        "text": " el propio interno con respecto a la primera entrada y llego a la linearidad de esto.",
+        "start": 4114.08,
+        "end": 4118.24
+    },
+    {
+        "text": " Está, está bien.",
+        "start": 4118.24,
+        "end": 4120.32
+    },
+    {
+        "text": " Ahora, son funcional, lineal.",
+        "start": 4120.32,
+        "end": 4125.32
+    },
+    {
+        "text": " Ahora, ¿qué me dice el teorema de ris?",
+        "start": 4125.32,
+        "end": 4132.84
+    },
+    {
+        "text": " ¿Qué me dice el teorema de ris?",
+        "start": 4132.84,
+        "end": 4135.12
+    },
+    {
+        "text": " Que todo funciona el lineal, es de la forma y producto interno de b con un vector fijo.",
+        "start": 4135.12,
+        "end": 4142.36
+    },
+    {
+        "text": " Entonces, el teorema de ris me dice que para este funcional lineal en particular yo tendré",
+        "start": 4142.36,
+        "end": 4149.4
+    },
+    {
+        "text": " acá un vector ahora acá en este espacio, en este espacio, un vector tal que este funcional",
+        "start": 4149.4,
+        "end": 4158.36
+    },
+    {
+        "text": " es el protein interno de b con este vector.",
+        "start": 4158.36,
+        "end": 4162.0
+    },
+    {
+        "text": " Como la lf depende de www, a este vector le vamos a llamar, va a depender de www también",
+        "start": 4162.0,
+        "end": 4168.24
+    },
+    {
+        "text": " porque la funcional y el depender de www.",
+        "start": 4168.24,
+        "end": 4170.799999999999
+    },
+    {
+        "text": " Entonces le vamos a llamar T3 de www. Al representante de ris, de esta funcional le vamos",
+        "start": 4170.799999999999,
+        "end": 4177.2
+    },
+    {
+        "text": " a llamar T3 de www. Bien, vamos a ver de por qué eso la junta obviamente.",
+        "start": 4177.2,
+        "end": 4184.2
+    },
+    {
+        "text": " Entonces, por el teorema de ris.",
+        "start": 4184.2,
+        "end": 4189.2
+    },
+    {
+        "text": " Por el teorema de ris existe un único, un único elemento que le vamos a llamar T3 de www",
+        "start": 4189.2,
+        "end": 4209.2
+    },
+    {
+        "text": " en el espacio b así lo denotamos tal que me decía RIS, tal que el funcional es el",
+        "start": 4209.2,
+        "end": 4220.72
+    },
+    {
+        "text": " producto interno, cuando la aplicó un vector b es el protein 19 vector con el representante",
+        "start": 4220.72,
+        "end": 4226.2
+    },
+    {
+        "text": " de RIS.",
+        "start": 4226.2,
+        "end": 4227.2
+    },
+    {
+        "text": " Y este producto interno no está definido, el cual el protein interno ve que está definido",
+        "start": 4227.2,
+        "end": 4232.5199999999995
+    },
+    {
+        "text": " acá porque f es un funcional que va de acá al cuerpo, o sea que es el protein interno",
+        "start": 4232.52,
+        "end": 4239.96
+    },
+    {
+        "text": " en b.",
+        "start": 4239.96,
+        "end": 4243.4400000000005
+    },
+    {
+        "text": " Vamos y esta acá es el representante de RIS, de esta funcional, que depende de www por",
+        "start": 4243.4400000000005,
+        "end": 4249.56
+    },
+    {
+        "text": " eso lo denoto así.",
+        "start": 4249.56,
+        "end": 4250.56
+    },
+    {
+        "text": " Entonces, en definitiva ahora la construcción es así, ustedes agarran un www",
+        "start": 4263.52,
+        "end": 4271.52
+    },
+    {
+        "text": " acá, me construyó este funcional, y por el teorema de RIS tengo un representante de",
+        "start": 4271.52,
+        "end": 4277.240000000001
+    },
+    {
+        "text": " la funcional acá que ya hemos estrellado www. Ahora si voy variando www, voy variando",
+        "start": 4277.240000000001,
+        "end": 4281.76
+    },
+    {
+        "text": " acá, estamos, entonces para acá www tengo un único acá que es representante, voy a decir",
+        "start": 4281.76,
+        "end": 4288.88
+    },
+    {
+        "text": " nuestra construcción para todos los www, entonces fíjense para acá para cada, para cada",
+        "start": 4288.88,
+        "end": 4303.12
+    },
+    {
+        "text": " vector sisto en www tenemos un vector testrella www que está en ve que está un único",
+        "start": 4303.12,
+        "end": 4318.52
+    },
+    {
+        "text": " incremento definido que está bien definido, tal que fwmb es igual a b, puja, escribí lo",
+        "start": 4318.52,
+        "end": 4341.160000000001
+    },
+    {
+        "text": " mismo arriba, por el teorema R existe un único estrellado www, tal que es completo, y ahora",
+        "start": 4341.160000000001,
+        "end": 4346.88
+    },
+    {
+        "text": " uso espícitamente con un tabález de funcional, entonces para cada www tengo un testrella",
+        "start": 4346.88,
+        "end": 4352.68
+    },
+    {
+        "text": " www en el espacio b, tal que es el funcionario lo mismo, ahora qué es el funcionario, era esto",
+        "start": 4352.68,
+        "end": 4357.04
+    },
+    {
+        "text": " otro, era esto que tengo acá, o sea que eso acá es igual al producto interno de temb",
+        "start": 4357.04,
+        "end": 4367.2
+    },
+    {
+        "text": " www, es decir que para cada para cada vez tengo algo para cada vez voy a gastar construcción",
+        "start": 4367.2,
+        "end": 4378.0
+    },
+    {
+        "text": " y tengo esta igualdad, y esto acá vale para todo ve, conclusión para cualquier ve que",
+        "start": 4378.0,
+        "end": 4396.0599999999995
+    },
+    {
+        "text": " me den y para cualquier www que me den, uno del espacio partida, otro del espacio llegada,",
+        "start": 4396.06,
+        "end": 4401.54
+    },
+    {
+        "text": " me puedo calcular este testrella www, tal que se cumple que tembe con www lo mismo que",
+        "start": 4401.54,
+        "end": 4405.9800000000005
+    },
+    {
+        "text": " ve con testrella www, este producto interno está en www y este producto interno también,",
+        "start": 4405.9800000000005,
+        "end": 4411.06
+    },
+    {
+        "text": " y eso justamente la definición del aljunto de t, o sea acá estoy construyendo esplicitamente",
+        "start": 4411.06,
+        "end": 4418.46
+    },
+    {
+        "text": " el aljunto de t, bien, entonces por lo tanto testrella así construida, vista ahora como",
+        "start": 4418.46,
+        "end": 4436.94
+    },
+    {
+        "text": " función de www en vez, es una aljunta de t que va de vendo www, bueno estamos entrando",
+        "start": 4436.94,
+        "end": 4456.099999999999
+    },
+    {
+        "text": " es la con así funciona la construcción, para cada doble que yo toma acá eso es capaz de",
+        "start": 4456.099999999999,
+        "end": 4460.78
+    },
+    {
+        "text": " construir un testrella www, tal que la funciona del que por un lado se define así también",
+        "start": 4460.78,
+        "end": 4468.139999999999
+    },
+    {
+        "text": " es una transformación de tipo por ris, por lo tanto se cumple este igualdad, entonces",
+        "start": 4468.139999999999,
+        "end": 4472.08
+    },
+    {
+        "text": " lo que estamos diciendo es que soy capaz de construir una aljunta, soy capaz de construir",
+        "start": 4472.08,
+        "end": 4476.58
+    },
+    {
+        "text": " una testrella, tal que se verifique este igualdad que define la aljunta, no entonces por lo",
+        "start": 4476.58,
+        "end": 4482.0599999999995
+    },
+    {
+        "text": " tanto existe una aljunta es única y ahora veamos que es una transformación ideal y la clase",
+        "start": 4482.0599999999995,
+        "end": 4487.9
+    },
+    {
+        "text": " que viene veamos como se calcula, que por más que parezca que asuste todo esto en una",
+        "start": 4487.9,
+        "end": 4492.86
+    },
+    {
+        "text": " primera impresión, la manera en que se calcula es absolutamente tribir, tenemos existencia,",
+        "start": 4492.86,
+        "end": 4503.259999999999
+    },
+    {
+        "text": " unidad y ahora vamos a ver linealidad y con eso terminamos la clase, linealidad,",
+        "start": 4503.259999999999,
+        "end": 4517.759999999999
+    },
+    {
+        "text": " linealidad de la testrella construida como lo hicimos recién, consideremos dos vectores",
+        "start": 4517.76,
+        "end": 4532.6
+    },
+    {
+        "text": " para ver linealidad, consideremos dos vectores en el espacio doble ve y consideremos un escalar,",
+        "start": 4532.6,
+        "end": 4546.04
+    },
+    {
+        "text": " entonces lo que tengo, se cumple para todo vector en el espacio y veces cumple lo siguiente,",
+        "start": 4546.04,
+        "end": 4561.8
+    },
+    {
+        "text": " por un lado voy a poner acá el vector B, acá voy a poner la ajunta testrella aplicada",
+        "start": 4561.8,
+        "end": 4567.5199999999995
+    },
+    {
+        "text": " a una combinación niña de todos los vectores, a la combinación alpha por doble ve uno",
+        "start": 4567.5199999999995,
+        "end": 4572.2
+    },
+    {
+        "text": " más doble ve dos, lo que yo quiero ver es que testrella aplicada o alpha por doble ve uno",
+        "start": 4572.2,
+        "end": 4579.88
+    },
+    {
+        "text": " más doble ve dos es alpha por tres de la aplicada doble ve uno más tres de la aplicada doble ve dos,",
+        "start": 4579.88,
+        "end": 4585.04
+    },
+    {
+        "text": " eso es la linealidad, este producto interno está en B, sí pero es lo mismo poner uno,",
+        "start": 4585.04,
+        "end": 4598.8
+    },
+    {
+        "text": " ponemos dos, ponemos vector bien para que esperemos un segundo que esto no quiero que suena",
+        "start": 4598.8,
+        "end": 4606.360000000001
+    },
+    {
+        "text": " de nuevo, ya estábamos, es bien así, vamos a hacer lo que hice, vamos a poner alpha y beta,",
+        "start": 4606.360000000001,
+        "end": 4613.16
+    },
+    {
+        "text": " es más lindo, sí eso que puede lograr, alpha y beta, acá sería alpha en doble ve uno más",
+        "start": 4613.16,
+        "end": 4618.6
+    },
+    {
+        "text": " V en doble ve dos, sí entonces por definición de la ajunta que me da este producto interno,",
+        "start": 4618.6,
+        "end": 4626.68
+    },
+    {
+        "text": " debe de contestrella acá, me da lo mismo que te aplica a B con esto, me da lo mismo entonces,",
+        "start": 4626.68,
+        "end": 4632.8
+    },
+    {
+        "text": " que te aplica a B, alpha doble ve uno más beta doble ve dos, con el cuidado ahora de que",
+        "start": 4632.8,
+        "end": 4640.96
+    },
+    {
+        "text": " este producto interno es en el espacio doble ve, tengo que tener cuidado en donde está los",
+        "start": 4640.96,
+        "end": 4645.88
+    },
+    {
+        "text": " productos interno, bien esa condición que define la ajunta la que estamos usando,",
+        "start": 4645.88,
+        "end": 4658.36
+    },
+    {
+        "text": " que en definitiva es que este producto interno salvando la distancia que este está tomado",
+        "start": 4660.52,
+        "end": 4669.12
+    },
+    {
+        "text": " un producto en el espacio, este en otro es que este estrella se pasa acá como la T, la T la",
+        "start": 4669.12,
+        "end": 4674.36
+    },
+    {
+        "text": " puedo pasar a una entrada como la T estrella y tomó los productos interno en el espacio y por",
+        "start": 4674.36,
+        "end": 4678.0
+    },
+    {
+        "text": " la respuesta, ahora el producto interno lineal, o sea que esto lo mismo que TnB, pero en",
+        "start": 4678.0,
+        "end": 4686.759999999999
+    },
+    {
+        "text": " escácil lineal de la segunda entrada las constantes salen para fuera conjugadas,",
+        "start": 4686.759999999999,
+        "end": 4690.08
+    },
+    {
+        "text": " es alpha estrell, alpha conjugado, TnB con doble ve uno más beta conjugado, TnB con doble ve dos,",
+        "start": 4690.08,
+        "end": 4699.24
+    },
+    {
+        "text": " y ahora que día hablo os hago, estos productos interno están en doble ve y en doble ve,",
+        "start": 4699.24,
+        "end": 4711.8
+    },
+    {
+        "text": " ahora que día hablo os hago, uso la ajunta acá y acá, recordemos que la ajunta quiere decir que",
+        "start": 4712.8,
+        "end": 4720.28
+    },
+    {
+        "text": " este telopuco pasar acá como la T estrella,",
+        "start": 4720.28,
+        "end": 4722.28
+    },
+    {
+        "text": " y este telopuco pasar acá como T estrella, con el cuidado como digo recién que camin los",
+        "start": 4729.76,
+        "end": 4740.5599999999995
+    },
+    {
+        "text": " los espacios, no estoy tomando productos interno, o sea camin los productos interno, este",
+        "start": 4740.5599999999995,
+        "end": 4744.719999999999
+    },
+    {
+        "text": " producto interno es NB y este producto interno es NB,",
+        "start": 4744.719999999999,
+        "end": 4747.12
+    },
+    {
+        "text": " que hago ahora chanto este alpha conjugado para dentro acá que es conjugado con jugado me",
+        "start": 4751.12,
+        "end": 4756.8
+    },
+    {
+        "text": " queda el alpha y este lo mismo para acá dentro, o sea que esto me queda lo mismo y después sumo,",
+        "start": 4756.8,
+        "end": 4761.6
+    },
+    {
+        "text": " o sea que esto me queda lo mismo que V, alpha T estrella en doble ve uno más beta por T estrella",
+        "start": 4761.6,
+        "end": 4770.08
+    },
+    {
+        "text": " en doble ve dos,",
+        "start": 4770.08,
+        "end": 4771.8
+    },
+    {
+        "text": " entonces tengo que para todo V en el espacio este se cumple que el producto interno de T con esto",
+        "start": 4776.320000000001,
+        "end": 4785.76
+    },
+    {
+        "text": " es lo mismo que el producto interno debe con esto y eso para todo entrada que yo pongo acá",
+        "start": 4787.76,
+        "end": 4796.360000000001
+    },
+    {
+        "text": " dentro, ¿qué me dice el lema que vimos en la primera parte de la clase?",
+        "start": 4796.360000000001,
+        "end": 4801.8
+    },
+    {
+        "text": " que necesariamente este vector que estoy poniendo la segunda entrada tiene que coincidir,",
+        "start": 4801.8,
+        "end": 4805.8
+    },
+    {
+        "text": " que coincidir con este vector que estamos poniendo en la segunda entrada acá, entonces por lema",
+        "start": 4805.8,
+        "end": 4811.64
+    },
+    {
+        "text": " T estrella en alpha doble ve uno más beta doble ve dos, esa alpha por T estrella doble ve uno más beta",
+        "start": 4817.8,
+        "end": 4829.72
+    },
+    {
+        "text": " por T estrella doble ve dos, o sea que probamos que para toda T existe una junta que vaya acá",
+        "start": 4829.72,
+        "end": 4840.360000000001
+    },
+    {
+        "text": " y cumple los productos interno acá me lo mismo que hay de los transformados que es única y que",
+        "start": 4840.36,
+        "end": 4847.08
+    },
+    {
+        "text": " además es una transformación niñada, el martes veremos cómo se calcula que propiedad estiene y para que",
+        "start": 4847.08,
+        "end": 4853.759999999999
+    },
+    {
+        "text": " dia hablo sirve.",
+        "start": 4853.759999999999,
+        "end": 4854.36
+    }
+]

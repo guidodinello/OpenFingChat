@@ -1,0 +1,2112 @@
+[
+    {
+        "text": " Bien, arrancamos entonces con la clase.",
+        "start": 0.0,
+        "end": 20.48
+    },
+    {
+        "text": " Vamos a empezar con un repaso lo que vimos en la clase pasada, el concepto de operadores",
+        "start": 20.48,
+        "end": 27.04
+    },
+    {
+        "text": " y matricias diagonalizables y vamos a ver criterios que garantizan que algo sea diagonalizable.",
+        "start": 27.04,
+        "end": 35.68
+    },
+    {
+        "text": " Resultados que garantizan eso. Vamos a empezar con un repaso rápido entonces se acuerra",
+        "start": 35.68,
+        "end": 42.04
+    },
+    {
+        "text": " de ustedes que tenemos operadores líneas de BMW, estamos trabajando en dimensión finita,",
+        "start": 42.04,
+        "end": 52.0
+    },
+    {
+        "text": " vamos a trabajar principalmente con bases acá y uno dice que esté diagonalizable, esto es",
+        "start": 52.0,
+        "end": 62.32
+    },
+    {
+        "text": " todo repaso, uno dice que esté diagonalizable si existe una base en el espacio vectorial",
+        "start": 62.32,
+        "end": 68.96000000000001
+    },
+    {
+        "text": " tal que la materia de sociedad tiene esa base diagonal, si entonces esté diagonalizable",
+        "start": 68.96000000000001,
+        "end": 73.72
+    },
+    {
+        "text": " si existe una base, una base del espacio vectorial tal que la materia de sociedad es diagonal.",
+        "start": 73.72,
+        "end": 86.8
+    },
+    {
+        "text": " Bien, recordemos que las matricias diagonales son las más fáciles de manipular algebraicamente,",
+        "start": 86.8,
+        "end": 95.98
+    },
+    {
+        "text": " por eso conviene siempre llevar, ver si se puede llevar al operador de la forma diagonal",
+        "start": 95.98,
+        "end": 100.12
+    },
+    {
+        "text": " lo más parecido a posible una diagonal para que sea fácil de manipular.",
+        "start": 100.12,
+        "end": 105.12
+    },
+    {
+        "text": " Bien y después habíamos visto un resultado que me decía que esté diagonalizable si solo",
+        "start": 105.12,
+        "end": 111.2
+    },
+    {
+        "text": " si existe una base de vectores propios, entonces diagonalizar algo es equivalente si es que",
+        "start": 111.2,
+        "end": 118.96000000000001
+    },
+    {
+        "text": " es posible encontrar una base de vectores propios de T si es que es posible. Bien, entonces",
+        "start": 118.96000000000001,
+        "end": 127.32000000000001
+    },
+    {
+        "text": " los escribimos a eso, T es diagonalizable, si solo si existe una base de V,",
+        "start": 127.32,
+        "end": 147.44
+    },
+    {
+        "text": " y la base de vectores propios, y después finalmente lo voy a escribir acá, habíamos",
+        "start": 147.44,
+        "end": 177.3
+    },
+    {
+        "text": " visto esto sí, al final de la clase pasada, habíamos visto que pasaba si yo tenía",
+        "start": 177.3,
+        "end": 184.3
+    },
+    {
+        "text": " vectores propios, asociados a valores propios diferentes, y ahí habíamos visto que tomar",
+        "start": 184.3,
+        "end": 189.22
+    },
+    {
+        "text": " un vector propio, asociado un valor propio, otro vector propio, asociado a otro, etcétera,",
+        "start": 189.22,
+        "end": 194.06
+    },
+    {
+        "text": " eso me da un conjunto lineal meti independiente siempre. Entonces lo que habíamos probado",
+        "start": 194.06,
+        "end": 198.5
+    },
+    {
+        "text": " hacia el final de la clase, era esto, si yo tengo un operador y lambda 1, lambda 2 hasta",
+        "start": 198.5,
+        "end": 207.58
+    },
+    {
+        "text": " lambda k son valores propios, bien, 2 a 2 distintos, eso ya sabe lo que quiere decir, son",
+        "start": 207.58,
+        "end": 217.14
+    },
+    {
+        "text": " todos distintos, lambda 1, lambda 2 hasta lambda k valores propios distintos, y tengo los",
+        "start": 217.14,
+        "end": 223.38
+    },
+    {
+        "text": " V sub 1, V sub 2 hasta V sub k, vectores propios correspondientes, esto quiere decir que el",
+        "start": 223.38,
+        "end": 240.2
+    },
+    {
+        "text": " vector V sub 1 está asociado al valor propio lambda 1, el vector propio, el vector V sub 2",
+        "start": 240.2,
+        "end": 245.1
+    },
+    {
+        "text": " está asociado al valor propio lambda 2, etcétera, este está asociado a eso. Bien, si",
+        "start": 245.1,
+        "end": 250.2
+    },
+    {
+        "text": " yo tiene para cada valor propio un vector propio, uno le dije en vector propio, este",
+        "start": 250.2,
+        "end": 255.23999999999998
+    },
+    {
+        "text": " conjunto es un conjunto leí, eso lo habíamos probado la clase pasada, se acuerdan. Entonces,",
+        "start": 255.23999999999998,
+        "end": 270.84
+    },
+    {
+        "text": " entonces toda vez que uno le hija un vector propio, vectores propios asociados, a valores",
+        "start": 270.84,
+        "end": 276.84
+    },
+    {
+        "text": " propios distintos, uno por cada valor propio obtiene conjuntos, leñamente independiente.",
+        "start": 276.84,
+        "end": 281.88
+    },
+    {
+        "text": " Y al final de todo, bueno esto podemos hacer un dibujito acá para aclarar la cosa, uno",
+        "start": 281.88,
+        "end": 290.67999999999995
+    },
+    {
+        "text": " tiene lo que están diciendo es que uno tiene un espacio vectorial y considera los subespacios",
+        "start": 290.67999999999995,
+        "end": 297.44
+    },
+    {
+        "text": " propios, por ejemplo asociados al valor propio lambda 1, otro asociado al valor propio",
+        "start": 297.44,
+        "end": 303.32
+    },
+    {
+        "text": " lambda 2, por poner aio y otro asociado al valor propio lambda 3. Bien, estos conjuntos",
+        "start": 303.32,
+        "end": 311.68
+    },
+    {
+        "text": " intersecan obviamente en el elemento 0, que están todos ellos, pero el 0 no es vector propio,",
+        "start": 311.68,
+        "end": 316.28
+    },
+    {
+        "text": " de ninguno, no por definición de vector propio. Entonces lo que a mí yo te he resultado",
+        "start": 316.28,
+        "end": 319.71999999999997
+    },
+    {
+        "text": " que si uno le dije un vector acá, un vector propio acá y un vector propio acá, siempre",
+        "start": 319.71999999999997,
+        "end": 325.28
+    },
+    {
+        "text": " tengo conjuntos leñamente independientes. Vamos, se han tendido eso, este tipo de cosas",
+        "start": 325.28,
+        "end": 331.48
+    },
+    {
+        "text": " son el A y habíamos sacado finalmente un corolario de todo eso, que es que si uno está",
+        "start": 331.48,
+        "end": 342.8
+    },
+    {
+        "text": " trabajando en un espacio de dimensión N y uno tiene N valores propios distintos, o sea",
+        "start": 342.8,
+        "end": 351.20000000000005
+    },
+    {
+        "text": " uno se construye el polinomio característico, o sea un operador y ve que tiene N raíces",
+        "start": 351.20000000000005,
+        "end": 358.6
+    },
+    {
+        "text": " distintas todas en el cuerpo, o sea tiene N valores propios distintos, en ese caso el",
+        "start": 358.6,
+        "end": 364.28000000000003
+    },
+    {
+        "text": " vectoría unalizable, entonces si T tiene N valores propios distintos, entonces T",
+        "start": 364.28,
+        "end": 390.67999999999995
+    },
+    {
+        "text": " tiene unalizable. Estamos todos esto, lo habíamos visto, la clase pasa de esto hacia el final",
+        "start": 390.68,
+        "end": 403.96000000000004
+    },
+    {
+        "text": " de la clase. Acá lo que estamos diciendo es que si yo trabajo en un espacio de dimensión",
+        "start": 403.96000000000004,
+        "end": 408.24
+    },
+    {
+        "text": " N y tengo N valores propios distintos, o sea tengo N raíces del polinomio característico",
+        "start": 408.24,
+        "end": 418.88
+    },
+    {
+        "text": " y todas están en el cuerpo, entonces el operador es diagonalizable. Y eso porque se da,",
+        "start": 418.88,
+        "end": 424.48
+    },
+    {
+        "text": " si uno tiene N valores propios distintos uno puede elegir un vector propio social primero,",
+        "start": 424.48,
+        "end": 432.52
+    },
+    {
+        "text": " un vector propio social segundo, etcétera, un vector propio social de la elección y ese",
+        "start": 432.52,
+        "end": 436.64
+    },
+    {
+        "text": " conjunto de N vectores es LEI y como estamos en un espacio de dimensión N es una base,",
+        "start": 436.64,
+        "end": 442.76
+    },
+    {
+        "text": " entonces tengo una base de vectores propios y si tengo una base de vectores propios,",
+        "start": 442.76,
+        "end": 447.56
+    },
+    {
+        "text": " es diagonalizable, esa es la idea. Y con eso terminamos la clase pasada, entonces ¿qué",
+        "start": 447.56,
+        "end": 456.84
+    },
+    {
+        "text": " es lo que viene ahora? Viene la pregunta natural ¿qué pasa si no hay N valores propios",
+        "start": 456.84,
+        "end": 462.96
+    },
+    {
+        "text": " distintos? Entonces en esta situación no tiene un polinomio característico asociado",
+        "start": 462.96,
+        "end": 473.96
+    },
+    {
+        "text": " al operador T que es de la forma digamos lambda 1 menos lambda, lambda 2 menos lambda hasta",
+        "start": 473.96,
+        "end": 482.2
+    },
+    {
+        "text": " lambda N menos lambda, donde todas estas son raíces distintas. Entonces lo que decimos es si",
+        "start": 482.2,
+        "end": 488.47999999999996
+    },
+    {
+        "text": " pasa eso si tengo N raíces distintas que están en el cuerpo, entonces este es diagonalizable.",
+        "start": 488.47999999999996,
+        "end": 493.24
+    },
+    {
+        "text": " Ahora la pregunta es ¿qué pasa si yo por ejemplo tengo algo de la siguiente forma? ¿Qué",
+        "start": 497.88,
+        "end": 502.47999999999996
+    },
+    {
+        "text": " pasa si tengo un operador calculo el polinomio característico y me da, no sé, pongamos 2 menos",
+        "start": 502.48,
+        "end": 510.84000000000003
+    },
+    {
+        "text": " lambda a la cuarta, 7 menos lambda al cubo. ¿Qué pasa ahí? Ahí tenemos raíces múltiples",
+        "start": 510.84000000000003,
+        "end": 523.88
+    },
+    {
+        "text": " que son 2 y 7. ¿Qué dimensión tiene el espacio en el que estamos trabajando?",
+        "start": 523.88,
+        "end": 531.56
+    },
+    {
+        "text": " No, el espacio auditorial en el que estamos trabajando si el polinomio característico es esto.",
+        "start": 531.56,
+        "end": 536.96
+    },
+    {
+        "text": " 7, 7, ¿no? Porque justamente esta potencia más esta potencia tiene que sumar N,",
+        "start": 538.96,
+        "end": 548.12
+    },
+    {
+        "text": " la dimensión del espacio auditorial en el que estamos trabajando. Entonces ¿qué pasa si yo",
+        "start": 548.68,
+        "end": 553.6
+    },
+    {
+        "text": " tengo una raíces de orden 4 y una raíces de orden 3? Tengo raíces múltiples. Bueno hay que",
+        "start": 553.6,
+        "end": 559.76
+    },
+    {
+        "text": " pasas, será diagonalizable o no será diagonalizable. Pueden encontrar una base vectores propios o no",
+        "start": 559.76,
+        "end": 565.0
+    },
+    {
+        "text": " pueden encontrar una base de vectores propios. Bueno, la respuesta sería así si asociada este",
+        "start": 565.0,
+        "end": 571.5600000000001
+    },
+    {
+        "text": " vector propio no puede encontrar un número suficiente, directores propios asociados y asociado",
+        "start": 571.5600000000001,
+        "end": 576.4
+    },
+    {
+        "text": " este también un número suficiente de vectores propios asociados. O sea lo que hay que estudiar en los",
+        "start": 576.4,
+        "end": 580.36
+    },
+    {
+        "text": " subespacios propios asociados a esto. Y ver si esa suma, bueno ver si eso me permite",
+        "start": 580.36,
+        "end": 587.04
+    },
+    {
+        "text": " si sumando su subespacio puede ocurrir todo el espacio. Quiero decir si pasan cosas como estas",
+        "start": 590.72,
+        "end": 596.12
+    },
+    {
+        "text": " es lo que vamos a ver en la clase de hoy a veces esté diagonalizable y a veces no dependiendo de",
+        "start": 596.12,
+        "end": 600.56
+    },
+    {
+        "text": " cuál sean las dimensiones de los subespacios propios asociados a la raíces. Estamos eso lo que",
+        "start": 600.56,
+        "end": 606.28
+    },
+    {
+        "text": " vamos a ver. A ver. Entonces si tengo esto ¿qué pasa con T? Es diagonalizable o no. Entonces yo",
+        "start": 606.28,
+        "end": 621.64
+    },
+    {
+        "text": " voy a mostrar un par de ejemplos para que vean que a veces cuando tengo raíces múltiples es",
+        "start": 621.64,
+        "end": 627.84
+    },
+    {
+        "text": " este es diagonalizable y otro ejemplo en cual a veces no es diagonalizable. Y después vamos a",
+        "start": 627.84,
+        "end": 634.52
+    },
+    {
+        "text": " ver condiciones necesarias y suficientes para que sea diagonalizable y eso va a ser la clase de",
+        "start": 634.52,
+        "end": 640.36
+    },
+    {
+        "text": " hoy y la clase que viene. Pero me voy anticipando lo que viene. La clave está en estudiar para cada",
+        "start": 640.36,
+        "end": 648.3199999999999
+    },
+    {
+        "text": " valor propio. Estos numeritos que se harían la multiplicidad a la raíces, lo que llama la multiplicidad",
+        "start": 648.32,
+        "end": 655.6400000000001
+    },
+    {
+        "text": " geográfica y la dimensión de los subespacios propios asociados. O sea la dimensión de C2 y la dimensión",
+        "start": 655.6400000000001,
+        "end": 664.6
+    },
+    {
+        "text": " de C7. Quiero ver. Tengo que ver cuántos vectores propios o sea cuáles la dimensión de subespacios",
+        "start": 664.6,
+        "end": 673.0
+    },
+    {
+        "text": " propios asociados. O sea, ¿de este cuántos vectores le llaman meting dependientes? ¿Puedo elegir",
+        "start": 673.0,
+        "end": 676.12
+    },
+    {
+        "text": " asociados a este? ¿Y cuántos vectores le llaman meting dependientes pueden elegir asociados",
+        "start": 676.12,
+        "end": 680.08
+    },
+    {
+        "text": " a eso? Si tengo n vectores propiedades meting dependientes entonces tengo una base de",
+        "start": 680.08,
+        "end": 686.88
+    },
+    {
+        "text": " vectores propios. Si no, no. ¿Se entendió? Bueno.",
+        "start": 686.88,
+        "end": 691.4399999999999
+    },
+    {
+        "text": " Ejemplos. Nunca había hecho ejemplos. Creo que la semana pasada no había hecho. Ejemplos",
+        "start": 706.32,
+        "end": 711.68
+    },
+    {
+        "text": " ahora voy a hacer un par. Bien sencillos. El primero es una transformación lineal de R3 en R3,",
+        "start": 711.68,
+        "end": 725.3599999999999
+    },
+    {
+        "text": " o sea una transformación lineal real. Ahí como trabajo, un R3 puso la base canónica, que es",
+        "start": 725.3599999999999,
+        "end": 731.3199999999999
+    },
+    {
+        "text": " más sencillo, y la transformación está definida la siguiente manera. T de X7 es 2x y",
+        "start": 731.32,
+        "end": 748.5600000000001
+    },
+    {
+        "text": " menos eta, menos y más eta. Ahí creo que esta le habíamos visto hace un par de clas.",
+        "start": 748.5600000000001,
+        "end": 754.5600000000001
+    },
+    {
+        "text": " Una transformación lineal bien sencilla. Entonces si uno representa esa transformación en la",
+        "start": 755.52,
+        "end": 761.8
+    },
+    {
+        "text": " matriz en la base canónica, en la base canónica ¿qué me queda ahí?",
+        "start": 761.8,
+        "end": 771.8399999999999
+    },
+    {
+        "text": " Recorremos que la base canónica coordenadas y vectores son la misma cosa, o sea puedo trabajar,",
+        "start": 776.0,
+        "end": 781.8
+    },
+    {
+        "text": " no me hace pasar, puedo trabajar con las coordenadas directamente. ¿Cuál es la matriz",
+        "start": 781.8,
+        "end": 787.3599999999999
+    },
+    {
+        "text": " asociada esto en la canónica? Bueno, tengo que aplicar el T1 0 0 y descomponerlo acá. T1 0 0",
+        "start": 787.3599999999999,
+        "end": 793.68
+    },
+    {
+        "text": " es 2 0 0, T al 0 1 0 es 0 1, es tan familiarizado ya con esto supongo, ¿no? Y T ha aplicado",
+        "start": 793.68,
+        "end": 807.0
+    },
+    {
+        "text": " al 0 0 1 es 0 menos 1 1, esa es la matriz asociada y esa matriz justamente si se fijan, creo que",
+        "start": 807.0,
+        "end": 817.24
+    },
+    {
+        "text": " hace 2 clases atrás la habíamos considerado, le había calculado los valores y vectores propios.",
+        "start": 817.24,
+        "end": 822.48
+    },
+    {
+        "text": " ¿Se acuerdan sí? Entonces ¿qué me da el polivismo característico ahí? El polivismo",
+        "start": 822.48,
+        "end": 829.72
+    },
+    {
+        "text": " característico no voy a hacer la cuenta pero es bien sencillo justamente porque como hay en la",
+        "start": 829.72,
+        "end": 839.0
+    },
+    {
+        "text": " primera columna tengo todos 0 menos la primera, se arroyo por esto, se acuerdan que polivismo",
+        "start": 839.0,
+        "end": 842.88
+    },
+    {
+        "text": " característico es restarle acá a la anda y calcular determinante. Entonces el desarrollo",
+        "start": 842.88,
+        "end": 847.4
+    },
+    {
+        "text": " por la primera es solamente me queda un factor que es 2 menos lambda por el determinante de lo",
+        "start": 847.4,
+        "end": 853.32
+    },
+    {
+        "text": " que me queda acá, que eso lo desarrolla, esto lo hice, la clase pasada es una pavada pero queda",
+        "start": 853.32,
+        "end": 858.72
+    },
+    {
+        "text": " algo que es exactamente esto, lambda menos 2. Eso lo habíamos visto en clases anteriores,",
+        "start": 858.8000000000001,
+        "end": 869.5600000000001
+    },
+    {
+        "text": " hemos incalculado bien sencillo y ahí lo que pasa entonces es que el 2 es una raíz doble y la otra",
+        "start": 869.5600000000001,
+        "end": 876.48
+    },
+    {
+        "text": " raíz es el 0. Entonces estamos en esta situación tengo una raíz múltiples, eso es lambda",
+        "start": 876.48,
+        "end": 884.48
+    },
+    {
+        "text": " menos 2 la potencia 2 por un factor por un menos ahí, entonces ahí tengo las raíces",
+        "start": 884.48,
+        "end": 891.48
+    },
+    {
+        "text": " que son estar en R y son por lo tanto los valores propios, lambda 1 igual a 2, el primero",
+        "start": 891.48,
+        "end": 903.5600000000001
+    },
+    {
+        "text": " al ol propio y lambda 2 igual a 0, uno dice que esto tiene multiplicidad 2 y esto es",
+        "start": 903.5600000000001,
+        "end": 908.36
+    },
+    {
+        "text": " una raíz simple, esto tiene multiplicidad 2 y esto es una raíz simple. Anticipándome",
+        "start": 908.36,
+        "end": 920.32
+    },
+    {
+        "text": " lo que viene, lo que se llama la multiplicidad geográfica de un valor propio es la cantidad",
+        "start": 920.32,
+        "end": 927.04
+    },
+    {
+        "text": " de factores en los que aparece, quiero decir es la potencia en la que aparece lambda",
+        "start": 927.04,
+        "end": 933.52
+    },
+    {
+        "text": " y la y menos lambda, acá la multiplicidad de 2 es 4, acá la multiplicidad de 7 es 3,",
+        "start": 933.52,
+        "end": 939.4
+    },
+    {
+        "text": " eso es lo que se llama la multiplicidad algebraica, ya lo vamos a definir más adelante. Y",
+        "start": 939.4,
+        "end": 945.1999999999999
+    },
+    {
+        "text": " también habíamos calculado los subespacios propios que no voy a repetir las cuentas en",
+        "start": 945.1999999999999,
+        "end": 948.56
+    },
+    {
+        "text": " este caso, pero habíamos calculado el subespacio propio y el subespacio propio y el subespacio",
+        "start": 948.56,
+        "end": 952.4
+    },
+    {
+        "text": " propio es el en términos de las coordenadas, este ejemplo lo habíamos visto en clases",
+        "start": 952.4,
+        "end": 957.26
+    },
+    {
+        "text": " así que no repito las cuentas que son bien sencillas y ahí me quedan, entonces",
+        "start": 957.26,
+        "end": 970.26
+    },
+    {
+        "text": " trabajando la base canónica que coinciden coronados con vectores, lo que me queda es",
+        "start": 970.26,
+        "end": 978.5
+    },
+    {
+        "text": " esto, sirve en el equivoco, el subespacio asociado con la raíz 2 es el conjunto, el conjunto",
+        "start": 978.5,
+        "end": 998.82
+    },
+    {
+        "text": " de vectores de la siguiente forma, se acuerdan de que esto lo vimos, o sea si yo pongo algo",
+        "start": 998.82,
+        "end": 1006.94
+    },
+    {
+        "text": " de la forma alpha, la primera componente, beta, la segunda y la tercera es menos la segunda,",
+        "start": 1006.94,
+        "end": 1013.0600000000001
+    },
+    {
+        "text": " todos los vectores de esta forma son vectores propios de la raíz 2, si se acuerdan de",
+        "start": 1013.0600000000001,
+        "end": 1023.3800000000001
+    },
+    {
+        "text": " eso lo vimos, lo habíamos visto, y después con el cero y si no lo vimos, se lo dejo como",
+        "start": 1023.3800000000001,
+        "end": 1033.66
+    },
+    {
+        "text": " ejercicio y después con el cero los vectores propios son de la forma 0, gamma, gamma,",
+        "start": 1033.66,
+        "end": 1050.18
+    },
+    {
+        "text": " con gamma, o sea la primera coordenada es 0 y la segunda coincide con la tercera, sí,",
+        "start": 1050.18,
+        "end": 1059.74
+    },
+    {
+        "text": " y acá está la clave de ver si esto es de aunalizable o no, porque fíjense cuál es la dimensión",
+        "start": 1059.74,
+        "end": 1065.06
+    },
+    {
+        "text": " de C2, no, no es 2, es 2 justamente porque tengo 2 parámetros, y la dimensión de C0",
+        "start": 1065.06,
+        "end": 1077.78
+    },
+    {
+        "text": " sí es 1, entonces, acá es C2 para 1, entonces ¿qué pasa? La dimensión del espacio de",
+        "start": 1077.78,
+        "end": 1087.42
+    },
+    {
+        "text": " 1, la subesparcio, más la dimensión del otro subesparcio, me da 3 que la dimensión",
+        "start": 1087.42,
+        "end": 1091.66
+    },
+    {
+        "text": " del espacio vectorial en la que estoy trabajando y entonces puedo elegir ahí 3 vectores 2",
+        "start": 1091.66,
+        "end": 1097.9
+    },
+    {
+        "text": " vectores acá, y ya me tiene pendientes y un tercero acá que es la dimensión de la",
+        "start": 1097.9,
+        "end": 1102.02
+    },
+    {
+        "text": " independiente de los otros que me forman una base, entonces tengo una base vectoria",
+        "start": 1102.02,
+        "end": 1104.8200000000002
+    },
+    {
+        "text": " propios, entonces me voy anticipando que la clave se estudiar, la dimensión de este espacio",
+        "start": 1104.8200000000002,
+        "end": 1112.7
+    },
+    {
+        "text": " y la multiplicidad de las raíces, esto tiene multiplicidad 2 y el subesparcio de la",
+        "start": 1112.7,
+        "end": 1120.06
+    },
+    {
+        "text": " dimensión tiene 2 y en este caso es diagonalizado, fíjense una base de vectores propios es una base",
+        "start": 1120.06,
+        "end": 1139.5
+    },
+    {
+        "text": " de vectores propios sería poner, yo que se acá alfe igual a 1 y vete igual a 0 con el",
+        "start": 1139.5,
+        "end": 1149.54
+    },
+    {
+        "text": " cual me queda 1 0 0, eso sería el primero, el segundo poner alfe igual a 0 y vete igual",
+        "start": 1149.54,
+        "end": 1155.1599999999999
+    },
+    {
+        "text": " a 1 con lo cual me quedaría 0 1 o menos 1 y el tercero lo le dijo acá, el 0 1 1 por",
+        "start": 1155.1599999999999,
+        "end": 1162.98
+    },
+    {
+        "text": " ejemplo, esto es una base de vectores propios y por lo tanto te da una lista.",
+        "start": 1162.98,
+        "end": 1172.22
+    },
+    {
+        "text": " ¿Se entendió eso? Y cómo en la matriz te asocian esta base? ¿Cómo en la matriz? Sí,",
+        "start": 1179.54,
+        "end": 1203.06
+    },
+    {
+        "text": " pero ¿cuáles son los valores que tengo que poner la diagonal? No, fíjate, si yo le",
+        "start": 1203.06,
+        "end": 1213.1799999999998
+    },
+    {
+        "text": " aplico T1 0 0 que me da, acá hice bien las cosas o no. Ahí va, sí, sí, sí, perdón, si",
+        "start": 1213.18,
+        "end": 1234.26
+    },
+    {
+        "text": " yo le aplico a ver, hagamos esa cuenta tonta, si yo le aplico T al primer elemento de la base,",
+        "start": 1234.26,
+        "end": 1240.66
+    },
+    {
+        "text": " le voy a hacer por única vez, no más, si yo le aplico T1 0 0 que me queda, me queda 2 0 0,",
+        "start": 1240.66,
+        "end": 1247.38
+    },
+    {
+        "text": " lo que tengo acá y eso es justamente 2 por 1 0 0, bien, o sea que te ha aplicado el",
+        "start": 1247.38,
+        "end": 1255.38
+    },
+    {
+        "text": " primer vector, me da justamente, es un vector propio, es o sea 2, o sea me da 2 por el",
+        "start": 1255.38,
+        "end": 1261.42
+    },
+    {
+        "text": " primer vector más 0, más 0, estoy escribiendo estupidez, es que quede claro en la filmación,",
+        "start": 1261.42,
+        "end": 1268.9
+    },
+    {
+        "text": " te ha aplicado a 0 1, menos 1 que me da, bueno, me queda, hay que hacer la cuenta, pero es",
+        "start": 1269.18,
+        "end": 1280.5400000000002
+    },
+    {
+        "text": " obviamente es un vector propio, me va a quedar 2 por te ha aplicado a 0 1, menos 1, me queda,",
+        "start": 1280.5400000000002,
+        "end": 1287.7800000000002
+    },
+    {
+        "text": " le queda, me queda, para un poco, 0 2, 0 2 y menos 2, que eso es justamente 2 por 0 1",
+        "start": 1287.78,
+        "end": 1304.94
+    },
+    {
+        "text": " menos 1, justamente, es un vector propio, entonces acá cuando lo descompongo me queda",
+        "start": 1304.94,
+        "end": 1310.26
+    },
+    {
+        "text": " 2 por este y 0 por este, y finalmente la última te ha aplicado a 0 1 1, me queda 0 0 0",
+        "start": 1310.98,
+        "end": 1324.82
+    },
+    {
+        "text": " que justamente es 0 por 0 1, o sea que no queda a 0 0 0, quiero decir, este es una cuenta",
+        "start": 1324.82,
+        "end": 1337.02
+    },
+    {
+        "text": " que es necesario, pero si yo tengo este vector propio y este asociado alvaro propio 2 y",
+        "start": 1337.02,
+        "end": 1343.62
+    },
+    {
+        "text": " este asociado alvaro propio 0, entonces acá en la diagonal me van a quedar, el 2 no ha quedado",
+        "start": 1343.62,
+        "end": 1348.5
+    },
+    {
+        "text": " asociado a este y a este y el 0 asociado a este, estamos, insisto, esta cuenta es absolutamente",
+        "start": 1348.5,
+        "end": 1358.26
+    },
+    {
+        "text": " innecesaria, la hice porque me levanté con el pizquier, entonces este es diagonalizable y ahora",
+        "start": 1358.26,
+        "end": 1369.78
+    },
+    {
+        "text": " veamos otro ejemplo en el que pasa otra cosa diferente, preguntas acá, bueno de hecho el ejemplo es",
+        "start": 1369.78,
+        "end": 1380.02
+    },
+    {
+        "text": " muy muy parecido a este, tengo una transformación lineal de R3 en R3, lo voy a definir de una manera ligeramente",
+        "start": 1380.02,
+        "end": 1395.26
+    },
+    {
+        "text": " diferente, voy a cambiar la primera componente solamente, esto me va a quedar",
+        "start": 1395.26,
+        "end": 1404.58
+    },
+    {
+        "text": " 12 quimbaseta y menos 7, menos y más 7, bien, cambié solamente la primera componente, le",
+        "start": 1404.58,
+        "end": 1419.06
+    },
+    {
+        "text": " le sumé ahí, 7, entonces en la base candónica como queda la matriz asociada, queda también muy",
+        "start": 1419.06,
+        "end": 1426.8
+    },
+    {
+        "text": " parecida a la que teníamos, bien en la base candónica tengo, te ha aplicado al 1, 0, 0 me queda como",
+        "start": 1426.8,
+        "end": 1440.94
+    },
+    {
+        "text": " antes, 2, 0, 0, al 0, 1, 0 me queda 0, 1, menos 1 y al 0, 0, 1 que me queda, me queda en la primera",
+        "start": 1440.94,
+        "end": 1452.24
+    },
+    {
+        "text": " entrada acá, me queda 1, es la única diferencia que tengo con respecto a la materia anterior, porque me sale",
+        "start": 1452.24,
+        "end": 1457.92
+    },
+    {
+        "text": " 1 de acá, 1 menos 1 de acá y 1 de ahí, entonces ¿qué pasa ahí con el polinomio característico?",
+        "start": 1457.92,
+        "end": 1466.72
+    },
+    {
+        "text": " Es exactamente el mismo que antes, porque cuando yo le resto acá lambda, acá lambda y veo el determinante de eso",
+        "start": 1466.72,
+        "end": 1475.96
+    },
+    {
+        "text": " desarrolló por la primera columna y me queda 2 menos lambda por el mismo determinante que tenía antes, que era",
+        "start": 1475.96,
+        "end": 1481.24
+    },
+    {
+        "text": " 1 menos lambda, puesto acá, 1 menos lambda, puesto ahí y determinante de esto y el 1 es, no me aparece para nada, o sea el",
+        "start": 1481.24,
+        "end": 1488.1200000000001
+    },
+    {
+        "text": " determinante es exactamente el mismo, se entiende y por lo tanto los valores propios son lambda igual a 2",
+        "start": 1488.1200000000001,
+        "end": 1494.96
+    },
+    {
+        "text": " con multiplicidad 2 y lambda igual a 0 como multiplicidad 1, es una raíz simple y ahora lo que quiero ver es que",
+        "start": 1494.96,
+        "end": 1501.28
+    },
+    {
+        "text": " estructura tiene su espacio propio, es o sea 2 y el su espacio propio es o sea 0 y ver si este espacio tiene las dimensiones",
+        "start": 1501.28,
+        "end": 1507.68
+    },
+    {
+        "text": " suficientes como para permitirme elegir una base, se entiende? entonces vamos a hacer las cuentas,",
+        "start": 1507.68,
+        "end": 1513.84
+    },
+    {
+        "text": " veamos los su espacio propios",
+        "start": 1519.92,
+        "end": 1521.76
+    },
+    {
+        "text": " arranqué vos por el más fácil, que es lambda igual a 0, el valor propio lambda igual a 0",
+        "start": 1532.28,
+        "end": 1540.16
+    },
+    {
+        "text": " entonces si esta matriz le llamamos, le llamamos a para simplificar la cosa, lo que tengo que resolver para las",
+        "start": 1542.96,
+        "end": 1552.08
+    },
+    {
+        "text": " coordenadas es a, ahí sería menos lambda por y pero lambda vale 0, no lo ponemos acá, a menos 0",
+        "start": 1552.08,
+        "end": 1561.6799999999998
+    },
+    {
+        "text": " multiplicada las coordenadas de la x y z, eso igual a 0, esa es la ecuación que deben cumplir las",
+        "start": 1561.6799999999998,
+        "end": 1570.78
+    },
+    {
+        "text": " coordenadas para los elementos que están en su espacio propio 0 y ahí que me queda,",
+        "start": 1570.78,
+        "end": 1578.3799999999999
+    },
+    {
+        "text": " que me queda, tengo que aplicar esta a por x y z, o sea la primera me queda 12x",
+        "start": 1581.62,
+        "end": 1590.74
+    },
+    {
+        "text": " y la 0 es más z igual a 0, a ver, dicteme esto si no voy para allá, 2x más z igual a 0, la segunda que me queda",
+        "start": 1590.74,
+        "end": 1598.26
+    },
+    {
+        "text": " y menos z igual a 0 y menos y más z igual a 0, es exacto y entonces",
+        "start": 1600.1,
+        "end": 1608.18
+    },
+    {
+        "text": " bueno, ahí el su espacio es 0, me lo puedo escribir en infinitas maneras, lo que puedo hacer por",
+        "start": 1612.14,
+        "end": 1617.78
+    },
+    {
+        "text": " ejemplo es elegir x como un parámetro, alpha de acá despejar z y de acá despejar y, o sea por",
+        "start": 1617.78,
+        "end": 1626.42
+    },
+    {
+        "text": " ejemplo si x vale lo lo dijo como el parámetro alpha, acá me va a quedar, alpha en la primera entrada",
+        "start": 1626.42,
+        "end": 1636.7
+    },
+    {
+        "text": " entonces z igual a menos 2 alpha, sí, no tengo que multiplicar esto por x y z y me va a quedar",
+        "start": 1637.26,
+        "end": 1650.46
+    },
+    {
+        "text": " 0 por x, menos z, esa sería, entonces el disco x igual a alpha, z vale menos 2 alpha,",
+        "start": 1650.46,
+        "end": 1659.3
+    },
+    {
+        "text": " e igual a z, o sea que su espacio propio es esto acá, bien un avase obviamente, una base",
+        "start": 1659.3,
+        "end": 1678.78
+    },
+    {
+        "text": " es su espacio propio, es 1, menos 2, menos 2, esto es una base es su espacio propio, pero ahora viene",
+        "start": 1678.78,
+        "end": 1686.02
+    },
+    {
+        "text": " el punto crucial, ¿qué pasa con el otro con la que tenía multiplicidad 2?, ¿qué pasa cuando",
+        "start": 1686.02,
+        "end": 1692.62
+    },
+    {
+        "text": " pongo lambda igual a 2? esto era lambda 1, está, lambda igual a 2, ¿qué pasa ahí? ahí lo que",
+        "start": 1692.62,
+        "end": 1702.1
+    },
+    {
+        "text": " tenemos que resolver ahora es, a, a, menos 2 por y aplicado x y z igual a 0, 0, 0, 0,",
+        "start": 1702.1,
+        "end": 1712.02
+    },
+    {
+        "text": " y ahí que me da, cuando resto acá, le tengo que restar 2, ¿no? A los elementos de",
+        "start": 1716.02,
+        "end": 1726.4
+    },
+    {
+        "text": " diagonal acá me queda 2, menos 2 igual a 0, disculpe que escribas sobre esto mismo, 1,",
+        "start": 1726.4,
+        "end": 1730.9
+    },
+    {
+        "text": " menos 2 igual a menos 1, 1, menos 2 igual a menos 1 y eso aplicar será la x y z, ¿qué me",
+        "start": 1730.9,
+        "end": 1736.04
+    },
+    {
+        "text": " queda? La primera ecuación como bien dicen sería z igual a 0 y las otras, la segunda me",
+        "start": 1736.04,
+        "end": 1745.82
+    },
+    {
+        "text": " quedaría, ¿qué cosa? esto aplicado es x y z, ¿no? Lo que estoy haciendo, la segunda me",
+        "start": 1745.82,
+        "end": 1754.3
+    },
+    {
+        "text": " quedaría, menos y menos 7 igual a 0 y la última también menos y menos 7 igual a 0.",
+        "start": 1754.3,
+        "end": 1763.4199999999998
+    },
+    {
+        "text": " Bien, entonces ¿qué pasa ahí con el con el sub espacio s, aplicar su sub espacio s",
+        "start": 1763.42,
+        "end": 1775.3000000000002
+    },
+    {
+        "text": " asociado a 2? ¿qué pasa? La tercera coordenada debe valer 0, lo llevo acá, la segunda también",
+        "start": 1775.3000000000002,
+        "end": 1783.5800000000002
+    },
+    {
+        "text": " debe valer 0, o sea que tengo que son los factores de la forma, la primera la x puede",
+        "start": 1783.5800000000002,
+        "end": 1789.7
+    },
+    {
+        "text": " valer cualquier cosa, son los factores de la forma, beta 0, 0, con beta real, o sea que el",
+        "start": 1789.7,
+        "end": 1800.38
+    },
+    {
+        "text": " sub espacio asociado ahora al valor propio que tiene multiplicidad 2, ¿qué dimensión",
+        "start": 1800.38,
+        "end": 1807.46
+    },
+    {
+        "text": " tiene? 1, tiene dimensión 1, a diferencia del ejemplo anterior no tenía dimensión 2,",
+        "start": 1807.46,
+        "end": 1815.18
+    },
+    {
+        "text": " entonces acá una base de este sub espacio obviamente es 1, 0, 0, esto es una base de c2, entonces",
+        "start": 1815.18,
+        "end": 1828.38
+    },
+    {
+        "text": " lo que tenemos es, tenemos que dimensión de su sub espacio propio asociado a 0 es 1 y",
+        "start": 1828.38,
+        "end": 1848.14
+    },
+    {
+        "text": " que dimensión de su sub espacio propio asociado 2 es 1 y no tenemos más vectores propios,",
+        "start": 1848.14,
+        "end": 1854.7800000000002
+    },
+    {
+        "text": " hay tantos los que están asociados a 1 y los que están asociados a otro, entonces existe",
+        "start": 1854.78,
+        "end": 1860.1
+    },
+    {
+        "text": " o no existe una base de vectores propios, ¿eh? pues sí, en que no la base de vectores propios",
+        "start": 1860.1,
+        "end": 1863.1
+    },
+    {
+        "text": " no, no, porque alosumo puede elegir 1 de acá y 1 de acá y se terminaron los subespacios",
+        "start": 1863.1,
+        "end": 1868.3
+    },
+    {
+        "text": " propios, entonces no es diagonalizable, no existe una base de vectores propios, se entendió,",
+        "start": 1868.3,
+        "end": 1875.42
+    },
+    {
+        "text": " entonces en este caso no existe una base de vectores propios, ¿no? porque esta la dimensión",
+        "start": 1875.42,
+        "end": 1880.62
+    },
+    {
+        "text": " de esta es 1, la de esta es 1 y la dimensión del espacio en el que estamos trabajando",
+        "start": 1880.62,
+        "end": 1884.4199999999998
+    },
+    {
+        "text": " es 3, cosa es imposible obtener 3 vectores propios que llenan metí independientes, entonces",
+        "start": 1884.4199999999998,
+        "end": 1890.6999999999998
+    },
+    {
+        "text": " no existe una base de vectores propios y ahí lo que pasa es que no es diagonalizable.",
+        "start": 1890.6999999999998,
+        "end": 1907.7399999999998
+    },
+    {
+        "text": " Bien, entonces tenemos dos ejemplos muy parecidos, fíjese que el único que le cambia va a ir",
+        "start": 1907.74,
+        "end": 1915.7
+    },
+    {
+        "text": " una cosa en la primera entrada, tienen la misma, el mismo polinismo característico,",
+        "start": 1915.7,
+        "end": 1923.32
+    },
+    {
+        "text": " los mismos valores propios y sin embargo uno es diagonalizable y el otro no y fíjense",
+        "start": 1923.32,
+        "end": 1928.18
+    },
+    {
+        "text": " que el punto crucial es como dije recién comparar la multiplicidad de los valores propios",
+        "start": 1928.18,
+        "end": 1935.86
+    },
+    {
+        "text": " con los subespacios propios asociados, la clave es, me voy anticipando lo que van en las clases",
+        "start": 1935.86,
+        "end": 1940.74
+    },
+    {
+        "text": " que viene, la clave es que la multiplicidad de los valores propios acá como raíz es,",
+        "start": 1940.74,
+        "end": 1945.3799999999999
+    },
+    {
+        "text": " que es lo que se llama la multiplicidad algebraica, coincida con las dimensiones de los subespacios",
+        "start": 1945.3799999999999,
+        "end": 1951.6599999999999
+    },
+    {
+        "text": " propios asociados que son los que se llama las multiplicidades geométricas, esa es la clave,",
+        "start": 1951.6599999999999,
+        "end": 1957.06
+    },
+    {
+        "text": " para saber si algo diagonalizable o no, pero eso lo vamos a ver en las próximas clases,",
+        "start": 1957.06,
+        "end": 1963.1399999999999
+    },
+    {
+        "text": " me voy anticipando lo que vendrá, bueno preguntas, entonces lo que quiero dar ahora apuntando",
+        "start": 1963.14,
+        "end": 1971.26
+    },
+    {
+        "text": " ese problema es dar condiciones necesarias y suficientes que me garanticen cuando un",
+        "start": 1971.26,
+        "end": 1977.7
+    },
+    {
+        "text": " operador en general es diagonalizable cuando sus raíces por ejemplo se pueden repetir,",
+        "start": 1977.7,
+        "end": 1983.38
+    },
+    {
+        "text": " tiene multiplicidad mayor que euro, con sus raíces son múltiples, lo que vamos, el material",
+        "start": 1983.38,
+        "end": 1994.3000000000002
+    },
+    {
+        "text": " que vamos a usar por esta parte nos vamos a perder por un ratito del líboo rojo y el",
+        "start": 1994.3000000000002,
+        "end": 1999.22
+    },
+    {
+        "text": " material que vamos a usar esta en Eva y se llama complemento de diagonalización, son tres",
+        "start": 1999.22,
+        "end": 2021.14
+    },
+    {
+        "text": " páginas y es el material que vamos a seguir en lo que resta de clase y por lo menos el comienzo",
+        "start": 2021.14,
+        "end": 2028.6200000000001
+    },
+    {
+        "text": " de la clase que viene y justamente le ideas de dar condiciones necesarias y suficientes para",
+        "start": 2028.62,
+        "end": 2035.3799999999999
+    },
+    {
+        "text": " que una transformación sea diagonalizable, ya tenemos condiciones suficientes, por ejemplo si",
+        "start": 2035.3799999999999,
+        "end": 2041.1
+    },
+    {
+        "text": " todos los valores propios son distintos, si hay enevalor el propio distinto estamos en",
+        "start": 2041.1,
+        "end": 2043.9799999999998
+    },
+    {
+        "text": " una exposición ene, es diagonalizable, bueno queremos condiciones necesarias también,",
+        "start": 2043.9799999999998,
+        "end": 2048.94
+    },
+    {
+        "text": " condiciones para terminar de cerrar la cuestión, entonces ingredientes que vamos a precisar para",
+        "start": 2048.94,
+        "end": 2060.58
+    },
+    {
+        "text": " los resultados que vienen, tenemos un espacio de dimension N, tenemos un espacio de dimension N",
+        "start": 2060.58,
+        "end": 2074.26
+    },
+    {
+        "text": " y una transformación lineal de Benbe, uno perao lineal, estos son los ingredientes que tenemos,",
+        "start": 2075.26,
+        "end": 2080.86
+    },
+    {
+        "text": " consideramos valores propios de T,",
+        "start": 2080.86,
+        "end": 2083.34
+    },
+    {
+        "text": " de T y los subespacios asociados, es el AMDA1, es el AMDA2 como hicimos recién,",
+        "start": 2083.34,
+        "end": 2102.1000000000004
+    },
+    {
+        "text": " ya se darán cuenta con los años, el sistema científico apeta,",
+        "start": 2113.34,
+        "end": 2140.06
+    },
+    {
+        "text": " entonces tengo espacio de tutorial de dimension N, transformación lineal, valores propios o",
+        "start": 2143.34,
+        "end": 2154.42
+    },
+    {
+        "text": " espacios propios, estoy considerando obviamente que tengo valores propios, que tengo raíz que",
+        "start": 2154.42,
+        "end": 2158.6600000000003
+    },
+    {
+        "text": " están en el cuerpo, bien que es la situación que me interesa, entonces se acuerdan el dibujito",
+        "start": 2158.6600000000003,
+        "end": 2167.1400000000003
+    },
+    {
+        "text": " que había hecho hace un rato acá, yo había hecho un dibujito que tengo acá el espacio B y tengo",
+        "start": 2167.14,
+        "end": 2173.42
+    },
+    {
+        "text": " su espacio propio, es el AMDA1, es su espacio propio, es el AMDA2, es su espacio propio, es el AMDA3",
+        "start": 2173.42,
+        "end": 2182.02
+    },
+    {
+        "text": " por ejemplo, y yo sé que agarrar un vector acá, un vector acá, un vector acá, me da un conjunto",
+        "start": 2182.02,
+        "end": 2188.66
+    },
+    {
+        "text": " linealmente independiente, bueno ahora voy a hacer un poco más preciso todavía y vamos a",
+        "start": 2188.66,
+        "end": 2195.18
+    },
+    {
+        "text": " ver que la suma de su espacio propio es suma directa, es decir, se acuerdan de decir que algo sea",
+        "start": 2195.18,
+        "end": 2203.98
+    },
+    {
+        "text": " suma directa, yo agarro 2 subespacios, el subespacio suma es el conjunto de todos los vectores que son de la",
+        "start": 2203.98,
+        "end": 2210.46
+    },
+    {
+        "text": " forma, un elemento en uno, más un elemento en otro, y cuando la suma directa, cuando la descomposición,",
+        "start": 2210.46,
+        "end": 2217.06
+    },
+    {
+        "text": " bueno, con intercepciones del cero, o que van así cuando la descomposición es suma, o sea que",
+        "start": 2217.06,
+        "end": 2223.54
+    },
+    {
+        "text": " vamos a ver que esto subespacios propio, primer resultado es si yo lo subimos, son suma directa,",
+        "start": 2223.54,
+        "end": 2229.94
+    },
+    {
+        "text": " dicho, otra manera, el único elemento tiene en común es el cero, que eso es bastante natural,",
+        "start": 2229.94,
+        "end": 2236.5
+    },
+    {
+        "text": " pero lo vamos a probar con cuidado, bastante obvio, yo, entonces leema, primer leema,",
+        "start": 2236.5,
+        "end": 2242.82
+    },
+    {
+        "text": " la suma de su espacio propio,",
+        "start": 2248.02,
+        "end": 2250.5
+    },
+    {
+        "text": " asociados, bueno esto siempre asociado, se valores propios distintos,",
+        "start": 2260.86,
+        "end": 2265.82
+    },
+    {
+        "text": " es suma directa,",
+        "start": 2277.18,
+        "end": 2278.98
+    },
+    {
+        "text": " que es algo como digo, bastante obvio, digamos, bastante obvio, pero hay que probarlo con las herramientas que tenemos,",
+        "start": 2290.2599999999998,
+        "end": 2297.2999999999997
+    },
+    {
+        "text": " entonces lo que vamos a hacer es, vamos a considerar una suma, estoy sumando, yo tengo acá",
+        "start": 2297.3,
+        "end": 2309.7400000000002
+    },
+    {
+        "text": " los subespacios propio, agarro la suma de un número cualquiera de ellos, por ejemplo, sumo el",
+        "start": 2309.7400000000002,
+        "end": 2313.82
+    },
+    {
+        "text": " primer o más el tercero, más el quinto, eso suma directa, entonces, consideremos,",
+        "start": 2313.82,
+        "end": 2320.1000000000004
+    },
+    {
+        "text": " consideremos por ejemplo, es el amd1, más es el amd2, más es el amdr, la suma de su espacio",
+        "start": 2320.8199999999997,
+        "end": 2332.5
+    },
+    {
+        "text": " propia, asociado, amd1, amd2 y amdr, o sea, estos son todos los vectores que se escriben como",
+        "start": 2332.5,
+        "end": 2340.2599999999998
+    },
+    {
+        "text": " suma de algo acá, más algo acá, más o acá, queremos ver que es suma directa, lo que estamos",
+        "start": 2340.2599999999998,
+        "end": 2346.18
+    },
+    {
+        "text": " diciendo es que hay una única manera de escoponer a cada vector, como algo acá, más algo acá,",
+        "start": 2346.18,
+        "end": 2351.3399999999997
+    },
+    {
+        "text": " más algo acá, entonces tenemos una suma y consideramos un elemento de esa suma,",
+        "start": 2351.3399999999997,
+        "end": 2356.66
+    },
+    {
+        "text": " que le llamamos fe,",
+        "start": 2359.62,
+        "end": 2360.74
+    },
+    {
+        "text": " y queremos ver que la descomposición es única,",
+        "start": 2369.18,
+        "end": 2371.66
+    },
+    {
+        "text": " la descomposición de b, o sea, de cada vector lo descompongo de manera única,",
+        "start": 2376.18,
+        "end": 2395.1
+    },
+    {
+        "text": " así que como probamos que una descomposición es única, bueno, suponemos que se",
+        "start": 2397.58,
+        "end": 2402.3399999999997
+    },
+    {
+        "text": " escríbe de dos maneras distintas y llegamos a una contradicción, entonces vamos a suponernos que",
+        "start": 2402.34,
+        "end": 2407.78
+    },
+    {
+        "text": " supongamos que a b lo puedes escribir de dos maneras distintas, una manera que es b1,",
+        "start": 2413.06,
+        "end": 2418.7000000000003
+    },
+    {
+        "text": " más b2, más br y otra manera que es b1, b1, b1, b2, más b1, b1, b1, b1, b1,",
+        "start": 2418.7,
+        "end": 2435.14
+    },
+    {
+        "text": " tenemos una descomposición de b de dos maneras distintas, donde la primera componente acá está en",
+        "start": 2437.62,
+        "end": 2446.18
+    },
+    {
+        "text": " lambda 1 lo mismo que está, la segunda está en lambda 2, lo mismo que está, esto es pesado,",
+        "start": 2446.18,
+        "end": 2458.94
+    },
+    {
+        "text": " pero bueno, hay que hacerlo, la última está en lambda r lo mismo que esta,",
+        "start": 2458.94,
+        "end": 2463.7
+    },
+    {
+        "text": " bueno, qué diablo hacemos, qué hacemos ahí, bueno, lo que hacemos es muy sencillo,",
+        "start": 2463.7,
+        "end": 2482.46
+    },
+    {
+        "text": " restamos, cada su mundo acá lo paso restando y lo agrupo, el primero la grupo con este,",
+        "start": 2484.46,
+        "end": 2491.06
+    },
+    {
+        "text": " segundo el grupo con este, etcétera, tengo este, menos este, más este, menos este,",
+        "start": 2491.06,
+        "end": 2495.46
+    },
+    {
+        "text": " menos este, y igual a cero, pase cada restando cada su mundo hacia el lado, entonces eso",
+        "start": 2495.46,
+        "end": 2500.5
+    },
+    {
+        "text": " me da que b1, menos b1 tilde, los agrupos juntos, más b2, menos b2 tilde, más etcétera,",
+        "start": 2500.5,
+        "end": 2513.66
+    },
+    {
+        "text": " más b, menos b, menos b, y igual al vector mulo, se entendió, es una pavada, pasé cada uno",
+        "start": 2513.66,
+        "end": 2522.22
+    },
+    {
+        "text": " de estos para acá y del otro lado me quedó hace, y los agrupes así para que quede claro que esta",
+        "start": 2522.22,
+        "end": 2530.1
+    },
+    {
+        "text": " primera entrada como los dos vectores están en ese lambda 1 y ese lambda 1 en su espacio vectorial,",
+        "start": 2530.1,
+        "end": 2535.66
+    },
+    {
+        "text": " esto está en ese lambda 1, lo mismo acá, estos los dos están en ese lambda 2, o sea que la",
+        "start": 2535.66,
+        "end": 2543.2599999999998
+    },
+    {
+        "text": " resta está en ese lambda 2 y lo mismo esto, la resta está en ese lambda R, y acá viene la conclusión",
+        "start": 2543.26,
+        "end": 2554.5400000000004
+    },
+    {
+        "text": " final que las notas están mal escritas, no está en esta escrita de la manera correcta, porque hay que",
+        "start": 2554.5400000000004,
+        "end": 2564.3
+    },
+    {
+        "text": " tener un poquito de cuidado con una escrita de estas cosas, ¿qué esto tiene en ese lambda 1?",
+        "start": 2564.3,
+        "end": 2569.1400000000003
+    },
+    {
+        "text": " No, no significa guarda con lo que voy a decir, que algo esté en ese lambda 1 no significa que",
+        "start": 2569.14,
+        "end": 2578.8199999999997
+    },
+    {
+        "text": " sea un vector propio social lambda 1, ¿por qué? ¿Por qué? Persona disparatado lo que estoy diciendo,",
+        "start": 2578.8199999999997,
+        "end": 2586.74
+    },
+    {
+        "text": " ese lambda 1 tiene todos los vectores propios y el cero, no se olviden nunca a eso, el cero",
+        "start": 2587.74,
+        "end": 2595.02
+    },
+    {
+        "text": " no es nunca un vector propio, o sea este tiene todos los vectores propios social lambda 1 y el cero,",
+        "start": 2595.02,
+        "end": 2600.62
+    },
+    {
+        "text": " este tiene todos los vectores propios y el cero, o sea que esto podría ser un vector propio o",
+        "start": 2600.62,
+        "end": 2605.66
+    },
+    {
+        "text": " podría ser el cero, lo mismo esto, lo mismo esto y lo mismo esto, bien, entonces ¿qué tenemos acá?",
+        "start": 2605.66,
+        "end": 2612.38
+    },
+    {
+        "text": " que el primer término es igual a cero o es vector propio,",
+        "start": 2612.38,
+        "end": 2618.82
+    },
+    {
+        "text": " propio asociado a lambda 1, lo segundo es cero o es vector propio, etcétera, etcétera,",
+        "start": 2623.94,
+        "end": 2635.5
+    },
+    {
+        "text": " asociado a lambda 2 y lo último lo mismo, es cero o es vector propio,",
+        "start": 2635.5,
+        "end": 2647.62
+    },
+    {
+        "text": " tengo eso, también lo descompuse al cero como sumas esas cosas donde esto está en lambda 1,",
+        "start": 2666.38,
+        "end": 2672.14
+    },
+    {
+        "text": " esto está en lambda 2 y esto es en lambda r, bien, ahora fíjense, supongamos que estos",
+        "start": 2672.14,
+        "end": 2679.74
+    },
+    {
+        "text": " no fueran todos cero, es decir que acá hubiera algún sumando que es distinto de cero, un sumando",
+        "start": 2681.34,
+        "end": 2686.02
+    },
+    {
+        "text": " distinto de cero y un sumando distinto de cero, ¿qué estaría diciendo yo entonces? ¿qué tengo?",
+        "start": 2686.02,
+        "end": 2691.58
+    },
+    {
+        "text": " por ejemplo tres vectores propios asociados a sus espacios distintos, a sus valores propios distintos,",
+        "start": 2692.2999999999997,
+        "end": 2700.94
+    },
+    {
+        "text": " tal es que la suma me da cero y eso es posible, no porque son el ahí, está perfecto entonces,",
+        "start": 2700.94,
+        "end": 2709.58
+    },
+    {
+        "text": " si uno de estos sumandos o varios de estos sumandos fueran distintos de cero, entonces yo tendría una",
+        "start": 2709.58,
+        "end": 2715.46
+    },
+    {
+        "text": " suma de varios vectores propios o de un vector propio, pero vectores propios asociados a sus",
+        "start": 2715.46,
+        "end": 2722.58
+    },
+    {
+        "text": " espacios propios distintos, o sea valores propios distintos, tal es que me dan cero y yo no puedo",
+        "start": 2722.58,
+        "end": 2726.58
+    },
+    {
+        "text": " sumar tres vectores el ahí por ejemplo y que la suma me de cero, no lo puedo hacer a eso,",
+        "start": 2726.58,
+        "end": 2733.46
+    },
+    {
+        "text": " entonces necesariamente cada uno de estos sumandos debe dar cero, se entiende, entonces por",
+        "start": 2733.46,
+        "end": 2740.86
+    },
+    {
+        "text": " independencia lineal, por independencia lineal, por independencia lineal entonces",
+        "start": 2740.86,
+        "end": 2756.2200000000003
+    },
+    {
+        "text": " porque son o son cero, son vectores propios asociados a valores propios distintos, por independencia",
+        "start": 2758.78,
+        "end": 2767.82
+    },
+    {
+        "text": " lineal, cada sumando cero y eso me implica que la descomposición es única, eso me implica que",
+        "start": 2767.82,
+        "end": 2785.5
+    },
+    {
+        "text": " ve uno, es igual a ve uno tilde, ve dos, es igual a ve dos tilde, etcétera, ve resigual a ve",
+        "start": 2785.5,
+        "end": 2793.06
+    },
+    {
+        "text": " retilde con lo cual la descomposición es única y la suma es directa,",
+        "start": 2793.06,
+        "end": 2796.82
+    },
+    {
+        "text": " mío, eso es una cosa obvia como yo les decía pero todavía que probarla con algún cuidado igual",
+        "start": 2815.62,
+        "end": 2820.94
+    },
+    {
+        "text": " la prueba es una estupidez pero bueno lo que estamos diciendo en otras palabras es que cuando yo",
+        "start": 2820.94,
+        "end": 2825.66
+    },
+    {
+        "text": " tengo superpacios propios asociados a valores propios distintos, el único elemento en común que tiene",
+        "start": 2825.66,
+        "end": 2830.46
+    },
+    {
+        "text": " en ese centro, entonces la suma suma directa y ahora les hago la pregunta ¿qué condiciones se les",
+        "start": 2830.46,
+        "end": 2844.1
+    },
+    {
+        "text": " ocurren que deberían cumplir los superpacios propios para que un operador t sea diagonalizado?",
+        "start": 2844.1,
+        "end": 2849.7000000000003
+    },
+    {
+        "text": " Es acto, esa es la conción lo que es cumplir, decir que si yo sumo esto más esto, más esto no",
+        "start": 2851.94,
+        "end": 2859.78
+    },
+    {
+        "text": " quiere parte sin cubrir, entonces el resultado que vamos a probar ahora es justamente lo que dice",
+        "start": 2859.78,
+        "end": 2866.86
+    },
+    {
+        "text": " ella que la suma directa o la suma de tu subespacios, que suma directa, mirar el espacio total,",
+        "start": 2866.86,
+        "end": 2873.62
+    },
+    {
+        "text": " este, que estoy considerando, cosa que se ve bien el ejemplo uno, yo sumo, yo tengo un espacio",
+        "start": 2873.62,
+        "end": 2879.46
+    },
+    {
+        "text": " de mención 2 y tengo un espacio de mención 1, todo adentro un espacio de mención 3, obviamente",
+        "start": 2879.46,
+        "end": 2885.18
+    },
+    {
+        "text": " la suma de 1 más el otro me da el espacio total y ahí era diagonalizado, entonces justamente el",
+        "start": 2885.18,
+        "end": 2891.98
+    },
+    {
+        "text": " resultado que vamos a ver ahora que no sé si me da tiempo probarlo pero al menos lo vamos a escribir,",
+        "start": 2891.98,
+        "end": 2897.18
+    },
+    {
+        "text": " así va a dar por lo menos una parte, refiere al criterio para terminar cuando un t es diagonalizado",
+        "start": 2897.18,
+        "end": 2909.42
+    },
+    {
+        "text": " y esta demostración es, son en gorrosa porque es difícil, es más fácil de hablarlas que",
+        "start": 2909.42,
+        "end": 2926.94
+    },
+    {
+        "text": " escribirlas, digo no son sencillas, son bien sencillas pero gastan tinta, lo mismo con lo que",
+        "start": 2926.94,
+        "end": 2935.86
+    },
+    {
+        "text": " vamos a ver ahora, son demostraciones realmente muy sencillas pero tediosas de escribir, entonces",
+        "start": 2935.86,
+        "end": 2943.42
+    },
+    {
+        "text": " el propié posicion…",
+        "start": 2943.42,
+        "end": 2966.7400000000002
+    },
+    {
+        "text": " Bueno, la escribo, la leemos y la probamos, ¿no?",
+        "start": 2973.42,
+        "end": 2985.42
+    },
+    {
+        "text": " Entonces...",
+        "start": 2985.42,
+        "end": 2987.42
+    },
+    {
+        "text": " Bien, entonces, la proposición que vamos a probar ahora es que yo tengo un operador",
+        "start": 3045.42,
+        "end": 3074.62
+    },
+    {
+        "text": " de la idea, es una espacio de mención n y tengo los valores propios que le llamo lambda 1, lambda 2, lambda r que tendrán sus correspondientes multiplicidades.",
+        "start": 3074.62,
+        "end": 3083.62
+    },
+    {
+        "text": " Lo que me dice el teórico es que las siguientes afirmaciones son equivalentes.",
+        "start": 3083.62,
+        "end": 3088.62
+    },
+    {
+        "text": " Uno, T, diagonalizable, dos, lo que decíamos recién.",
+        "start": 3088.62,
+        "end": 3092.62
+    },
+    {
+        "text": " B, se escribe como la suma directa de los subespacios asociados a los valores propios, a todos los valores propios.",
+        "start": 3092.62,
+        "end": 3099.62
+    },
+    {
+        "text": " Y tercer, la condición, la dimensión de estos subespacios propios, si yo la sumo, me da la dimensión del espacio total en el que estoy trabajando.",
+        "start": 3099.62,
+        "end": 3108.62
+    },
+    {
+        "text": " Eso se cumplía en el ejemplo 1, trae uno de la dimensión 2 y uno de la dimensión 1, en un espacio y en el 3, pero no se cumplían en el ejemplo 2.",
+        "start": 3108.62,
+        "end": 3116.62
+    },
+    {
+        "text": " Por eso, un ejemplo de diagonalizable y otro no.",
+        "start": 3116.62,
+        "end": 3119.62
+    },
+    {
+        "text": " Entonces, este es un primer criterio por la termina como te es diagonalizable y la clase que viene ya veremos otros resultados en esta misma dirección.",
+        "start": 3120.62,
+        "end": 3131.62
+    },
+    {
+        "text": " Lo que vamos a hacer es probar que 1 implicado, si 2 implicado, 1 y 2 implicado, 3 implicado.",
+        "start": 3131.62,
+        "end": 3139.62
+    },
+    {
+        "text": " Entonces, ahí llegamos a que las 3 condiciones son equivalentes.",
+        "start": 3139.62,
+        "end": 3144.62
+    },
+    {
+        "text": " Hay unas que son obvias, pero yo la vamos a probar.",
+        "start": 3144.62,
+        "end": 3151.62
+    },
+    {
+        "text": " Bueno, vamos a empezar con la primera que es que 1 implica la condición 2.",
+        "start": 3151.62,
+        "end": 3165.62
+    },
+    {
+        "text": " Son todas insistentes, son todas muy sencillas por lo que escribimos las bien.",
+        "start": 3169.62,
+        "end": 3179.62
+    },
+    {
+        "text": " Entonces, vamos a suponer que te diagonalizable.",
+        "start": 3179.62,
+        "end": 3189.62
+    },
+    {
+        "text": " Si te llegue una disable, sabemos que existe una base de vectores propios.",
+        "start": 3189.62,
+        "end": 3196.62
+    },
+    {
+        "text": " Ahora, tengo varios valores propios, tengo valor propio, lambda 1, tengo valor propio, lambda 2, tengo valor propio, lambda R.",
+        "start": 3196.62,
+        "end": 3221.62
+    },
+    {
+        "text": " Entonces, los ordenos en esa base de tal manera que los primeros estén asociados a este valor propio, los que siguen a este valor propio, etcétera, los que siguen a este valor propio.",
+        "start": 3221.62,
+        "end": 3232.62
+    },
+    {
+        "text": " Ah, pues eso simplemente por comodidad, porque me place, como dirían los gallegos.",
+        "start": 3232.62,
+        "end": 3238.62
+    },
+    {
+        "text": " Entonces, a la base está la escribimos así.",
+        "start": 3238.62,
+        "end": 3243.62
+    },
+    {
+        "text": " Ahora, n1 vectores, ve 1, ve 2 hasta n1.",
+        "start": 3243.62,
+        "end": 3249.62
+    },
+    {
+        "text": " Estos son vectores propios, estos son n1 vectores propios asociados a lambda 1, ¿no?",
+        "start": 3249.62,
+        "end": 3265.62
+    },
+    {
+        "text": " Podría ser 1, por ejemplo, pero al menos 1 hay asociado a cada vector propio.",
+        "start": 3265.62,
+        "end": 3270.62
+    },
+    {
+        "text": " Después los que siguen serán n2 vectores propios, n2 vectores propios, vamos a simplificar la escritura asociados a lambda 2, y así seguimos hasta que los últimos de todos son nR,",
+        "start": 3270.62,
+        "end": 3299.62
+    },
+    {
+        "text": " valores propios asociados a lambda R.",
+        "start": 3299.62,
+        "end": 3306.62
+    },
+    {
+        "text": " O sea simplemente por comodidad, la grupo para, como ya, para poder hacer las cuentas que siguen, a grupo n1, los primeros n1 vectores propios, si la lambda 1, los segundo n2 asociados a esto, etcétera.",
+        "start": 3306.62,
+        "end": 3325.62
+    },
+    {
+        "text": " Ni hubiera hecho falta hacerlo, pero bueno. Ahora, ¿qué podemos decir?",
+        "start": 3325.62,
+        "end": 3332.62
+    },
+    {
+        "text": " Si yo sumo los n1, n1, tengo n1 vectores acá, más n2, tengo n2 acá, más nR, obviamente eso me tiene que dar la dimensión del espacio en el que estoy trabajando, porque esto es una base.",
+        "start": 3332.62,
+        "end": 3360.62
+    },
+    {
+        "text": " Entonces observación n1, más la cantidad de vectores asociados a lambda 2 más, la cantidad de vectores propios en la base asociados a lambda R es o tiene ser n.",
+        "start": 3360.62,
+        "end": 3373.62
+    },
+    {
+        "text": " Estamos. Y la otra cosa que podemos decir es que para acá su espacio propio, por ejemplo, para el primero tenemos al menos n1 vectores niñámentes independientes, o sea que en principio la dimensión de ese lambda 1 es mayor igual que n1, la dimensión de ese lambda 2 es mayor igual que esto, etcétera.",
+        "start": 3373.62,
+        "end": 3399.62
+    },
+    {
+        "text": " O sea, en principio como para cada su espacio propio tenemos un número n de vectores propios en la base, niñámentes independientes, entonces en principio dimensión de ese lambda y será mayor igual que el n1 correspondiente.",
+        "start": 3399.62,
+        "end": 3417.62
+    },
+    {
+        "text": " Bueno, ya vamos a ver en un ratito que esto realidad es una igualdad, es decir, la dimensión de caso de espacio es cuántos n en la base estoy poniendo ahí, eso es claro.",
+        "start": 3417.62,
+        "end": 3431.62
+    },
+    {
+        "text": " Pero en principio yo tengo al menos n1 vectores propios, o sea, con ese lambda 1 podría haber alguna otra más que me tiene independiente, entonces tengo esta desigualdad.",
+        "start": 3431.62,
+        "end": 3442.62
+    },
+    {
+        "text": " Se entiende?",
+        "start": 3442.62,
+        "end": 3445.62
+    },
+    {
+        "text": " Entonces finalmente lo que tenemos, se cumple lo siguiente.",
+        "start": 3448.62,
+        "end": 3453.62
+    },
+    {
+        "text": " Esta es la más trayosa de probar, las otras son directas.",
+        "start": 3460.62,
+        "end": 3463.62
+    },
+    {
+        "text": " Se cumple, vamos a escribir una serie de desigualdades.",
+        "start": 3463.62,
+        "end": 3467.62
+    },
+    {
+        "text": " Me sigue hasta acá, se cumple lo siguiente. Si yo sumo los subespacios propios, ese lambda 1 más, ese lambda 2 más, ese lambda R, tengo un subespacio de V, del espacio que estoy trabajando.",
+        "start": 3472.62,
+        "end": 3493.62
+    },
+    {
+        "text": " Y tanto la dimensión de ese subespacio será menor igual que n, ya vamos a probar que es igual, pero justamente hay que agotar esto por aquel lado por n.",
+        "start": 3493.62,
+        "end": 3504.62
+    },
+    {
+        "text": " Ahora, acabamos de probar que la sume suma directa, o sea que esto lo mismo que poner dimensión de ese lambda 1 más, ese lambda 2 más, ese lambda R, suma directa.",
+        "start": 3504.62,
+        "end": 3521.62
+    },
+    {
+        "text": " Y qué pasa con la dimensión de una suma directa?",
+        "start": 3524.62,
+        "end": 3529.62
+    },
+    {
+        "text": " ¿Qué es la dimensión de una suma directa? Es la suma de dimensión, exacto. La dimensión de una suma directa es...",
+        "start": 3532.62,
+        "end": 3541.62
+    },
+    {
+        "text": " La dimensión de ese lambda 1 más la dimensión de ese lambda 2 más la dimensión de ese lambda R.",
+        "start": 3541.62,
+        "end": 3558.62
+    },
+    {
+        "text": " Ya termine esto. Y ahora la dimensión de cada ese lambda 1 es mayor igual que el n y correspondiente, o sea que esto es mayor igual que n1 más, n2 más, nR.",
+        "start": 3558.62,
+        "end": 3586.62
+    },
+    {
+        "text": " Estamos. Chotamente igual en su pira, así que no se dan problemas. Esto es mayor igual que n1 más, n2 más, nR, que justamente es la dimensión del espacio en el que estamos trabajando.",
+        "start": 3587.62,
+        "end": 3604.62
+    },
+    {
+        "text": " Entonces, lo que tenemos es una cadena de igualdad, donde lo que está de este lado derecho coincide con lo del lado izquierdo, por lo tanto todas estas son en realidad igualdad. O sea, esto acá es un igualdad y acá también es un igualdad para cada lambda.",
+        "start": 3604.62,
+        "end": 3621.62
+    },
+    {
+        "text": " Y así que la dimensión de cada espacio es igual a la cantidad de victores de nm dependientes, asociados en su espacio que pusimos en la base.",
+        "start": 3621.62,
+        "end": 3630.62
+    },
+    {
+        "text": " Entonces, calma que ya termina. ¿Cómo termina la cosa de esta? ¿Cómo todas estas son igualdad en particular esto tiene que ser igual a esto?",
+        "start": 3631.62,
+        "end": 3642.62
+    },
+    {
+        "text": " La dimensión de la suma directa tiene que ser igual a n, que es justamente la dimensión de b, de la espacio en el que estamos trabajando.",
+        "start": 3643.62,
+        "end": 3666.62
+    },
+    {
+        "text": " Como son todas igualdad, esto acá tiene que ser igual a n. Y entonces lo que tenemos es un subespacio en b, que tiene la dimensión que veo, o sea, la única posibilidad es que su subespacio coincida.",
+        "start": 3667.62,
+        "end": 3681.62
+    },
+    {
+        "text": " Entonces, esto implica que este subespacio es igual a este subespacio. Entonces, b es igual a la suma directa de los subespacios propios.",
+        "start": 3682.62,
+        "end": 3701.62
+    },
+    {
+        "text": " Es decir, que si uno perador es diagonalizable, entonces, el espacio en el que estamos trabajando es suma directa de todos los subespacios propios asociados los valores propios de texto.",
+        "start": 3702.62,
+        "end": 3716.62
+    },
+    {
+        "text": " Bien, esa es la parte más tedíosa, las otras son absolutamente triviales, a ver.",
+        "start": 3716.62,
+        "end": 3725.62
+    },
+    {
+        "text": " Preguntas lo que vamos a hacer ahora, entonces esto me va a llevar dos minutos, es probar que dos implica uno y que dos implica tres que son cosas bien bien sencilla.",
+        "start": 3726.62,
+        "end": 3743.62
+    },
+    {
+        "text": " Estamos, pero es importante que la té un criterio para saber calculando los subespacios propios y un operador es diagonalizable, no?",
+        "start": 3744.62,
+        "end": 3752.62
+    },
+    {
+        "text": " En base a sus dimensiones, por ejemplo, y ya veremos otro criterio que me relaciona estas dimensiones con las multiplicidades de los valores propios, eso lo dejaremos para la clase que viene.",
+        "start": 3752.62,
+        "end": 3767.62
+    },
+    {
+        "text": " Entonces, esta demostración de que uno implica dos, veamos que dos implica uno, lo vamos a escribir acá.",
+        "start": 3768.62,
+        "end": 3778.62
+    },
+    {
+        "text": " Entonces, implica uno, estamos suponiendo que veis suma directa de todos estos subespacios.",
+        "start": 3779.62,
+        "end": 3797.62
+    },
+    {
+        "text": " Bien, entonces queremos ver que este diagonalizable, es decir, que existe una base de sus vectores propios, pero fíjense eso directo porque basta con considerar.",
+        "start": 3798.62,
+        "end": 3817.62
+    },
+    {
+        "text": " Consideramos una base de acá, una base de acá y una base de acá, consideramos ve uno, una base del primer subespacio propio, ve dos, una base del segundo subespacio propio, etcétera, vere una base del último subespacio propio.",
+        "start": 3817.62,
+        "end": 3843.62
+    },
+    {
+        "text": " Entonces, obviamente todos los vectores estoy poniendo acá, ve uno, ve dos y en vere, son todos los vectores propios, ¿no?",
+        "start": 3848.62,
+        "end": 3858.62
+    },
+    {
+        "text": " Bases de vectores propios, unos asociados a uno, otros asociados a otra, etcétera.",
+        "start": 3858.62,
+        "end": 3867.62
+    },
+    {
+        "text": " Ahora, ¿qué pasa con yo tengo que un espacio se escribir como suma directa de otros y tengo una base de este, una base de este y una base de este?",
+        "start": 3867.62,
+        "end": 3876.62
+    },
+    {
+        "text": " ¿Qué pasa ahí? ¿Cómo puedo construir una base del espacio en el que estoy trabajando?",
+        "start": 3877.62,
+        "end": 3884.62
+    },
+    {
+        "text": " La unión de las bases exactamente, cuando suma directa, si tengo una base de acá, una base de acá y una base de acá, me formo una base de este tomándolo unión, eso vale cuando suma directa.",
+        "start": 3884.62,
+        "end": 3894.62
+    },
+    {
+        "text": " Entonces, entonces, tomo la unión de todos ellos, ve el conjunto unión, ve uno, unión, ve dos, unión, etcétera, hasta vere, esto es una base del espacio vectorial ve y es una base de vectores propios.",
+        "start": 3894.62,
+        "end": 3914.62
+    },
+    {
+        "text": " Esto es una base, la base unión, una base de ve y es una base de vectores propios.",
+        "start": 3914.62,
+        "end": 3926.62
+    },
+    {
+        "text": " Por lo tanto, si tengo una base de vectores propios, te es diagonalizable.",
+        "start": 3926.62,
+        "end": 3936.62
+    },
+    {
+        "text": " Son estupideses enormes, esta estoy escribiendo, es más fácil decirlas como la decía, la ciencia de la ciencia es un cosa sóbia, pero mejor dejarlas por escrito.",
+        "start": 3936.62,
+        "end": 3951.62
+    },
+    {
+        "text": " Y lo que me ha restado por la terminal del problema, la demostración tranquiliza en ser que esto es verdaderamente trivial, lo que falta.",
+        "start": 3956.62,
+        "end": 3968.62
+    },
+    {
+        "text": " Cuando digo tranquiliza en ser, quiero decir que me tranquilice yo a mí mismo, lo que vamos a ver es que 2 implica 3 y que 3 implica 2.",
+        "start": 3968.62,
+        "end": 3980.62
+    },
+    {
+        "text": " 2 implica 3, miren lo que me dice, 2 me dice que v es suma de cilanda 1, cilanda 2, hasta cilanda r, entonces, ¿qué pasa?",
+        "start": 3980.62,
+        "end": 3997.62
+    },
+    {
+        "text": " ¿Qué pasa? La dimensión de ve naturalmente es la suma de las dimensiones que le tenemos escrito ahí abajo.",
+        "start": 3997.62,
+        "end": 4003.62
+    },
+    {
+        "text": " Entonces 2 implica 3, obvio, ¿sabes?",
+        "start": 4003.62,
+        "end": 4009.62
+    },
+    {
+        "text": " 3 implica 2, 3 implica 2, lo que estamos diciendo es que...",
+        "start": 4009.62,
+        "end": 4026.62
+    },
+    {
+        "text": " Fíjense por suma directa, por suma directa, la dimensión de las sumas todas esas cosas es las sumas las dimensiones.",
+        "start": 4039.62,
+        "end": 4061.62
+    },
+    {
+        "text": " Bien, eso es lo que calculamos la dimensión de suma directa y me la suma las dimensiones.",
+        "start": 4061.62,
+        "end": 4071.62
+    },
+    {
+        "text": " Y como estamos suponiendo que vale 3, la suma de las dimensiones me da N y N es justamente la dimensión del espacio en lo que estamos trabajando.",
+        "start": 4071.62,
+        "end": 4083.62
+    },
+    {
+        "text": " Entonces, tengo un sub espacio del espacio en el que estoy trabajando y ese sub espacio tiene dimensión N, coincide con la dimensión del espacio.",
+        "start": 4083.62,
+        "end": 4092.62
+    },
+    {
+        "text": " Por lo tanto, esas dos cosas, esos dos subespacios tienen que ser igual.",
+        "start": 4092.62,
+        "end": 4096.62
+    },
+    {
+        "text": " Es el lambda 1, más es el lambda 2, más etcétera, más es el lambda 3, es el lambda r, tiene que ser igual a B.",
+        "start": 4096.62,
+        "end": 4106.62
+    },
+    {
+        "text": " Y eso es justamente la firmación 2.",
+        "start": 4107.62,
+        "end": 4111.62
+    },
+    {
+        "text": " Entonces, este lema sencillo proposición nos da una condición necesaria y suficientes para chequear que algo sea diagonalizable.",
+        "start": 4112.62,
+        "end": 4126.62
+    },
+    {
+        "text": " Hay que estudiar las dimensiones en los subespacios propios asociados y ver si las sumas las dimensiones me da la dimensión del espacio total.",
+        "start": 4126.62,
+        "end": 4134.62
+    },
+    {
+        "text": " Y en la clase que viene veremos justamente otros criterios fáciles de terminar.",
+        "start": 4135.62,
+        "end": 4141.62
+    },
+    {
+        "text": " No sé si alguna pregunta, bueno, nos vemos en el jueves entonces.",
+        "start": 4141.62,
+        "end": 4148.62
+    }
+]

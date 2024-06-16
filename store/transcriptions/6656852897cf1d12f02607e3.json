@@ -1,0 +1,1927 @@
+[
+    {
+        "text": " Vamos a empezar entonces con la clase con un rápido repaso lo que vimos al final de la clase pasada.",
+        "start": 0.0,
+        "end": 24.0
+    },
+    {
+        "text": " Entonces uno tiene una matriz N por N, una matriz cuadrada que la podemos pensar como la representación de un operador",
+        "start": 25.0,
+        "end": 37.0
+    },
+    {
+        "text": " lineal en una cierta base en un espacio de dimensión N y uno quiere calcular los vectores propios de ese operador o bien los vectores propios y valores propios de la matriz A y en de su representación.",
+        "start": 37.0,
+        "end": 52.0
+    },
+    {
+        "text": " Entonces lo que hay que hacer es primero calculamos esto, el determinante de A menos lambda por I, eso es un polinomio en lambda, si la matriz de tamaño N por N,",
+        "start": 52.0,
+        "end": 71.0
+    },
+    {
+        "text": " eso es un polinomio de grado N, decir ahí un termino de más alto orden es lambda la N y esto lo que se llama el polinomio característico de la matriz A como función de lambda, esto lo que se llama el polinomio característico.",
+        "start": 71.0,
+        "end": 95.0
+    },
+    {
+        "text": " Y si uno quiere calcular los valores propios asociados a lambda o al operador lineal que esto representa lo que hay que resolver entonces es la ecuación si suave lambda igual a 0, es decir el determinante de A menos lambda por I igual a 0.",
+        "start": 95.0,
+        "end": 115.0
+    },
+    {
+        "text": " Y eso es lo que se llama la ecuación característica y la raíz de esa ecuación es un polinomio de orden N en lambda, la raíz es que en general son raíces complejas, digamos si estamos trabajando en el cuerpo real tenemos que tener cuidado de considerar valores propios, las raíces reales de esto.",
+        "start": 115.0,
+        "end": 144.0
+    },
+    {
+        "text": " Pero todas maneras las raíces en esta ecuación son lo que se llaman las raíces características, bien los lambda que solucionen esto son lo que se llama las raíces características.",
+        "start": 144.0,
+        "end": 154.0
+    },
+    {
+        "text": " ¿Qué? En el caso de estar en el cuerpo en el que estamos trabajando son los valores propios de A o los valores propios del operador lineal que representa la matriz A en una base de A.",
+        "start": 154.0,
+        "end": 172.0
+    },
+    {
+        "text": " Estamos, es decir que a los sumos como esto es un polinomio de grado N, a los sumos hay N raíces características, ¿Está bien?",
+        "start": 172.0,
+        "end": 184.0
+    },
+    {
+        "text": " Pueden repetirse algunas, así puede haber menos N raíces porque algunas tienen multiplicidad más alta, es decir cuando yo factorizo ese polinomio me puede quedar una cosa como esta, por ejemplo yo que se puede decir algo.",
+        "start": 184.0,
+        "end": 201.0
+    },
+    {
+        "text": " Me puede quedar 3 menos lambda al cuadrado, 2 menos lambda al cubo por ejemplo, esto significa esto es un polinomio de grado 5 en lambda, porque la potencia más alta en lambda es un 5 y estas son las raíces 3 y 2, cuando lambda es igual a 3 o cuando lambda es igual a 2, esto me da 0.",
+        "start": 201.0,
+        "end": 225.0
+    },
+    {
+        "text": " Entonces esta raíz 3 que multiplicidad tiene, multiplicidad 2, esa es la que se llama la multiplicidad de G y de una raíz y esta raíz 2 que multiplicidad tiene 3 o sea que en este caso tenemos estamos trabajando en dimensión 5 pero tenemos una raíz como multiplicidad 2 y otra raíz como multiplicidad 3, obviamente si yo sumo las raíces con sus respectivas multiplicidades, así si etan las sumo 2 veces y etan sumo 3 tengo 5 raíces.",
+        "start": 225.0,
+        "end": 254.0
+    },
+    {
+        "text": " Se entiende o sea en general un polinomio de grado 5 tiene sin en raíces si uno les cuenta con sus correspondientes multiplicidades, lo que puede pasar es que uno se trabaja en los reales y que algunas de estas raíces se en compleja, entonces esas raíces complejas no van a ser valores propios.",
+        "start": 254.0,
+        "end": 271.0
+    },
+    {
+        "text": " Vamos y una vez que uno tiene los valores propios lo que hay que resolver para cada lambda resolviendo para cada lambda, para cada lambda valor propio es decir raíz que está en el cuerpo, hay que resolver a menos lambda por I,",
+        "start": 271.0,
+        "end": 300.0
+    },
+    {
+        "text": " se acuerdan como era esto aplicado un vector columna que le vamos a llamar a X igual a 0 y estas son las coordenadas de los vectores propios, bien esto es lo que hemos visto, ya hemos visto un ejemplo, estas son las coordenadas de los vectores propios, propios asociados al lambda,",
+        "start": 300.0,
+        "end": 326.0
+    },
+    {
+        "text": " estamos entonces siempre se procede de esta manera, se calcula el polinomio característico, se lo igual a 0, se obtienen las raíces, esas raíces me quedo con aquella que están en el cuerpo, en el que estoy trabajando, que esos son los valores propios y después para cada valor propio resolvemos a menos lambda por I igual a un vector de coronad, por un vector de coronad igual a 0, estas son las coordenadas que me permiten construir el su espacio propio, eso se ha dado cada valor propio.",
+        "start": 326.0,
+        "end": 355.0
+    },
+    {
+        "text": " Hay algunas preguntas hasta acá, ¿si?",
+        "start": 355.0,
+        "end": 359.0
+    },
+    {
+        "text": " Eso va a jugar un papel importante cuando veamos condiciones para diagonalizar un operador que lo vamos a ver en las próximas clases, pero este polinomio me pensé que este polinomio yo lo escribiera así, 3 menos lambda por 3 menos lambda por 2 menos lambda por 2 menos lambda por 2 menos lambda,",
+        "start": 365.0,
+        "end": 381.0
+    },
+    {
+        "text": " si yo cuento cada uno de esas raíces con su multiplicidad como si tuviera 5 raíces, ya tengo 2, una como multiplicidad 2 y otra como multiplicidad 3.",
+        "start": 381.0,
+        "end": 388.0
+    },
+    {
+        "text": " Bien, hay una observación importante con la que vamos a comenzar la clase de hoy, que es bien sencilla de probar, que le vamos a escribir como un leema.",
+        "start": 391.0,
+        "end": 401.0
+    },
+    {
+        "text": " Aquí os ruido, que hay ahora, no sé qué pasa afuera, el leema es el siguiente, si uno tiene cociremos 2 matrisas semejantes, N por N.",
+        "start": 411.0,
+        "end": 427.0
+    },
+    {
+        "text": " El leema me dice que si yo tengo 2 matrisas semejantes, entonces los polinomios características asociados a una y a la otra coinciden, si tienen el mismo polinomio característico,",
+        "start": 442.0,
+        "end": 460.0
+    },
+    {
+        "text": " si, en particular si tienen el mismo polinomio característico tendrán las mismas raíces, es decir que tendrán los mismos valores propios.",
+        "start": 460.0,
+        "end": 470.0
+    },
+    {
+        "text": " Vamos, el leema me dice que matrisa semejantes, el mismo polinomio característico y entonces por lo tanto tienen las mismas los mismos valores propios, de los factores propios no puedes ir nada, pero sí sé que tienen los mismos valores propios.",
+        "start": 491.0,
+        "end": 506.0
+    },
+    {
+        "text": " La demostración es bien sencilla, recordemos que quiere decir que hay veces semejantes, ¿se acuerdan eso?",
+        "start": 506.0,
+        "end": 515.0
+    },
+    {
+        "text": " Si, por la forma de que se mejantes quiere decir que existe una matriz P cuadrada invertible,",
+        "start": 516.0,
+        "end": 539.0
+    },
+    {
+        "text": " tal que por ejemplo V la puedes escribir como ha multiplicado la derecha por P y a la izquierda por P a la menos 1, eso quiere decir que sean matrisas semejantes.",
+        "start": 539.0,
+        "end": 558.0
+    },
+    {
+        "text": " La matriz, sí hay que tener cuidado la matriz, es la matriz cambio de base, que te pasa de la base original, no, perdón, perdón, no necesariamente, es cualquier matriz.",
+        "start": 559.0,
+        "end": 576.0
+    },
+    {
+        "text": " Si esta me estoy adelantando lo que viene, ojo con ese comentario, es la matriz vector escopropios cuando esta es una forma diagonal con los valores propios, pero en general es una matriz invertible, tal que en definitiva si esto representa un operador en una base y es todo el mismo operador en otra base, esta es la matriz cambio de base.",
+        "start": 576.0,
+        "end": 600.0
+    },
+    {
+        "text": " Entonces para construir el poliviumio característico asociado a B, teo calcular B menos lambda por I, pero observémoslo siguiente.",
+        "start": 600.0,
+        "end": 612.0
+    },
+    {
+        "text": " lambda por I, lambda por la matriz identidad N por N, yo lo puedes escribir así, lo puedes escribir P a la menos 1, lambda por I por P.",
+        "start": 613.0,
+        "end": 632.0
+    },
+    {
+        "text": " Y por qué puedo hacer eso? Este es un caso particular P es la misma que usé acá, ¿no? Y esto se cumple por lo siguiente, ¿cómo esta es la matriz identidad?",
+        "start": 633.0,
+        "end": 644.0
+    },
+    {
+        "text": " La identidad por P me da lo mismo que P, y como el lambda lo puedo sacar afuera esto me quedaría lambda por P a la menos 1 por P, se entiende?",
+        "start": 644.0,
+        "end": 653.0
+    },
+    {
+        "text": " Esto acá sería lo mismo, esto acá es lo mismo que el lambda lo saco afuera porque es un escalar, lambda por P a la menos 1 y la identidad por P me da P, y entonces fíjense que acá me queda lambda por P a la menos 1 por P, que es justamente lambda por I, lo que tengo aquí en la lado.",
+        "start": 654.0,
+        "end": 669.0
+    },
+    {
+        "text": " Estamos entonces, a esta matriz yo la puedo multiplicar por P a la menos 1 a C, por P me queda la misma matriz porque es la identidad multiplicada por un escalar.",
+        "start": 670.0,
+        "end": 681.0
+    },
+    {
+        "text": " Estamos entonces, si ahora yo juntos a dos cosas, se entendió eso no cierto, si yo juntos a dos cosas y calculo V menos lambda por I, digimos que V es P a la menos 1 por A por P, porque V es me janteada y lambda por I los escribo así, menos lambda, perdón, menos P a la menos 1,",
+        "start": 681.0,
+        "end": 710.0
+    },
+    {
+        "text": " lambda por I por P, si, esto que tengo acá, y ahora que hago saco P a la menos 1 la matriz como factor como una izquierda y P como factor como una derecha, o sea que esto es lo mismo que P a la menos 1 a menos lambda por I por P, y esto es...",
+        "start": 710.0,
+        "end": 736.0
+    },
+    {
+        "text": " Si uno distribuye esto me queda lo mismo que esto, al que ahora matricial. Entonces fíjense lo que tenemos ahí, lo que tenemos es que si A y B son semejantes, entonces también son semejantes, esta matriz y esta, porque en efecto esta matriz se escribe como esta por una P a la derecha y P a la menos 1 a la izquierda, o sea son semejantes con la misma matriz P, o sea lo que estamos diciendo que esta matriz acá y esta acá son matricias semejantes.",
+        "start": 736.0,
+        "end": 765.0
+    },
+    {
+        "text": " Entonces, si A y B son semejantes concluimos que esas dos matricias son semejantes y ya habíamos visto en la segunda clase que matricias semejantes tienen al mismo determinante.",
+        "start": 766.0,
+        "end": 783.0
+    },
+    {
+        "text": " ¿Cómo habías escrito acá Gía de Lambda?",
+        "start": 784.0,
+        "end": 792.0
+    },
+    {
+        "text": " Sonamente para chequear si lo vies. Sí.",
+        "start": 793.0,
+        "end": 797.0
+    },
+    {
+        "text": " Gía es el determinante que ha menos lambda por I, entonces no porque me quedo una duda porque por ahí sólo escribir, decir una cosa y escribir otra.",
+        "start": 803.0,
+        "end": 812.0
+    },
+    {
+        "text": " Entonces si estas dos son matricias semejantes, hay una propiedad que me dice que tiene el mismo determinante, lo cual significa que el determinante de B menos lambda por I es igual al determinante de A menos lambda por I.",
+        "start": 813.0,
+        "end": 830.0
+    },
+    {
+        "text": " Y esto que es, esto es justamente el polinomio característico, asociado a B como función de lambda y esto es justamente el polinomio característico, asociado a como función de lambda, o sea que efectivamente los polinomio característicos son iguales.",
+        "start": 831.0,
+        "end": 852.0
+    },
+    {
+        "text": " ¿Se entendió eso? ¿Por qué es importante esto? Esto es importante por lo siguiente.",
+        "start": 853.0,
+        "end": 864.0
+    },
+    {
+        "text": " Vamos a escribir un comentario de observación.",
+        "start": 870.0,
+        "end": 874.0
+    },
+    {
+        "text": " Supongamos que yo tengo un operador lineal de un espacio territorial B en B donde la dimensión de B es N.",
+        "start": 875.0,
+        "end": 886.0
+    },
+    {
+        "text": " Bien, un operador lineal es un espacio de dimensión N. Entonces si yo uso dos bases,",
+        "start": 891.0,
+        "end": 899.0
+    },
+    {
+        "text": " si ves una base del espacio territorial en cuestión y vestilde, es otra base del espacio territorial en cuestión, yo sé que si este operador lo representa en esta base y este operador lo representa en esta otra base, esas dos matricias que obtengo son matricias semejantes.",
+        "start": 900.0,
+        "end": 919.0
+    },
+    {
+        "text": " Entonces lo que sabemos es lo habíamos probado a muy repaso, creo que fue la primera clase. Si yo tengo un operador y dos bases de un espacio de dimensión N entonces lo que uno sabe es que esta matricia que es la representación matricial del operador T en la base B y la matricia Tilde, que es la representación matricial del operador T en la base B Tilde, esta sabemos que son semejantes.",
+        "start": 919.0,
+        "end": 948.0
+    },
+    {
+        "text": " Si, y si son matricias semejantes, ¿qué significa? ¿Qué tiene el mismo polinomio característico?",
+        "start": 949.0,
+        "end": 961.0
+    },
+    {
+        "text": " Si, ¿y esto qué significa? ¿Por qué es importante esto? Porque lo que me muestra es que si un operador yo lo represento en dos bases distintas las matricias correspondientes seran diferentes, pero son semejantes y por lo tanto tienen el mismo polinomio característico.",
+        "start": 961.0,
+        "end": 990.0
+    },
+    {
+        "text": " Si tienen el mismo polinomio característico tienen las mismas raíces, ¿vien? Entonces lo que significa es que a la hora de calcular los valores propios de un operador T no importa cuál sea la base que yo estoy usando para representarlo, siempre las raíces características van a ser las mismas, usando cualquier base.",
+        "start": 990.0,
+        "end": 1007.0
+    },
+    {
+        "text": " Está claro, eso me permite hablar del polinomio característico de un operador T, porque cualquier base que yo use para representarlo me da el mismo polinomio característico.",
+        "start": 1007.0,
+        "end": 1017.0
+    },
+    {
+        "text": " Está claro eso, entonces en un parcial a ustedes le damos un operador escrito de forma explícita y ustedes quieren que calculan los valores propios, agarren una base la que se les ocurre del espacio en el que están trabajando, calculan la matria social en esa base y trabajan con esa matriz.",
+        "start": 1017.0,
+        "end": 1034.0
+    },
+    {
+        "text": " Calculan primero las raíces y después las coordenadas de las asociadas a cada uno de los factores propios de cada raíz y con eso vuelven para atrás volviendo la base que han usado ustedes y tienen los factores propios del operador T.",
+        "start": 1034.0,
+        "end": 1050.0
+    },
+    {
+        "text": " Está claro, entonces esto me dice que el polinomio característico no depende de la base elegida y por lo tanto las raíces están aportando la base.",
+        "start": 1050.0,
+        "end": 1063.0
+    },
+    {
+        "text": " Pero tanto las raíces tampoco dependerá la base elegida, entonces uno, uno habla del polinomio característico asociado a T, en cualquier base que uno uso para representarlo.",
+        "start": 1063.0,
+        "end": 1080.0
+    },
+    {
+        "text": " ¿Qué es el polinomio de la observación esta? Esto es el polinomio característico de T, la ecuación, hité del ámbito y lo que se llama la ecuación característica.",
+        "start": 1080.0,
+        "end": 1103.0
+    },
+    {
+        "text": " Y sacando las raíces de ahí sacamos los landa, que son las raíces características de T y sacando las raíces tenemos las raíces características.",
+        "start": 1111.0,
+        "end": 1121.0
+    },
+    {
+        "text": " ¿Qué es el polinomio de la observación?",
+        "start": 1122.0,
+        "end": 1124.0
+    },
+    {
+        "text": " Es decir, siempre sea cual sea el operador, siempre nos representamos en una base, en cualquiera que sea y trabajamos con las matrizas sociales a base.",
+        "start": 1127.0,
+        "end": 1135.0
+    },
+    {
+        "text": " Estamos, se entendió, entonces cómo funciona la cosa.",
+        "start": 1136.0,
+        "end": 1139.0
+    },
+    {
+        "text": " Bueno, les hago un comentario.",
+        "start": 1140.0,
+        "end": 1144.0
+    },
+    {
+        "text": " Yo no le dije que en el parcial va a haber múltiples opciones, algunas preguntas de verdadero falsos, etc.",
+        "start": 1145.0,
+        "end": 1151.0
+    },
+    {
+        "text": " Y hay que tener cuidado siempre cuando uno estuye esas cuestiones, está bien, porque a veces uno son cosas tontas pero suman o bajan puntos a lo loco.",
+        "start": 1152.0,
+        "end": 1163.0
+    },
+    {
+        "text": " Entonces, lo que están diciendo acá es que si hay besos semejantes, suponinamos características son iguales, pero ojo la ré con la réc implica, la réc implica no es cierta.",
+        "start": 1164.0,
+        "end": 1177.0
+    },
+    {
+        "text": " Es decir, que tengan el mismo polinomio característico dos matrices, no significa que las matrices semejantes.",
+        "start": 1178.0,
+        "end": 1184.0
+    },
+    {
+        "text": " Y hay ejemplos muy sencillos que muestran eso y que van a quedar más claro cuando en las próximas clases cuando veamos el tema de diagonalización, forma de llor, etc., etc., pero me voy anticipando.",
+        "start": 1185.0,
+        "end": 1196.0
+    },
+    {
+        "text": " Esto lo ponemos de nota. El recíproco del lema no es cierto.",
+        "start": 1197.0,
+        "end": 1209.0
+    },
+    {
+        "text": " Esto significa que hay matrices que son que tienen miedo polinomio característico, pero no son semejantes.",
+        "start": 1210.0,
+        "end": 1218.0
+    },
+    {
+        "text": " Un ejemplo muy sencillo es el siguiente. Este ejemplo de hecho lo habíamos visto en la segunda clase, la primera o segunda clase, ya no me acuerdo.",
+        "start": 1219.0,
+        "end": 1226.0
+    },
+    {
+        "text": " Ponemos como matriz a la matriz identidad y como matriz B algo bastante parecido, pero es la identidad a la cual le agregué abajo la diagonal un número de cero.",
+        "start": 1227.0,
+        "end": 1243.0
+    },
+    {
+        "text": " Se acuerdan que habíamos visto que esas matrices no son semejantes, lo cual es fácil de verificar por si hubiera una P invertible, tal que A por P por P menos 1, ¿fue esa de esta?",
+        "start": 1244.0,
+        "end": 1256.0
+    },
+    {
+        "text": " Fíjense que esta como es la identidad, si las multiplico por P me queda P y si las multiplico por P menos 1 me queda P menos 1 por P que es la identidad.",
+        "start": 1257.0,
+        "end": 1264.0
+    },
+    {
+        "text": " O sea que si uno hace P, menos 1 por A por P me da la identidad, que no es lo mismo que V.",
+        "start": 1265.0,
+        "end": 1269.0
+    },
+    {
+        "text": " Entonces, esta dos matrices no son semejantes, pero cumple lo siguiente, cumple lo siguiente. Si yo me fijo el polinomio característico asociado a la matriz, recordemos que tengo que restarle lambda a los elementos de la diagonal y calcular el determinante de eso.",
+        "start": 1269.0,
+        "end": 1298.0
+    },
+    {
+        "text": " O sea esto es el determinante de 1 menos lambda 0, 0, 1 menos lambda.",
+        "start": 1299.0,
+        "end": 1306.0
+    },
+    {
+        "text": " Si, y eso es lo mismo obviamente que si, eso es 1 menos lambda al cuadrado, menos 0. Y eso obviamente es lo mismo que le termina entre esto, 1 menos lambda 0, 1, 1 menos lambda.",
+        "start": 1307.0,
+        "end": 1325.0
+    },
+    {
+        "text": " Porque acá me queda 1 menos lambda, por 1 menos lambda, menos 0, es exactamente lo mismo. Y esto acá es justamente el polinomio característico de V.",
+        "start": 1326.0,
+        "end": 1335.0
+    },
+    {
+        "text": " Entonces, guarda con eso, guarda con para que lado se cumple las proposiciones.",
+        "start": 1337.0,
+        "end": 1344.0
+    },
+    {
+        "text": " ¿Cuándo podemos usar prividades y guarda de V? ¿Sabe la revisión de la verdad que es el invertible? ¿Cómo es así P?",
+        "start": 1345.0,
+        "end": 1353.0
+    },
+    {
+        "text": " ¿Hay ahora cosa igual a V en pariza?",
+        "start": 1353.0,
+        "end": 1357.0
+    },
+    {
+        "text": " Bueno, es lo mismo, si motivas por P a un lado, así que son semejantes, si P por B es igual a por P.",
+        "start": 1357.0,
+        "end": 1366.0
+    },
+    {
+        "text": " No, no, no, que sea invertible, ojo, ojo, si P es invertible, sí. Claro, que es lo mismo que escribir esto acá.",
+        "start": 1367.0,
+        "end": 1375.0
+    },
+    {
+        "text": " Exactamente. Ya va a quedar más claro por que esta no son semejante, la particularidad que tiene es que una tiene la forma diagonal y la otra es la diagonal principal con cosas por debajo de la diagonal.",
+        "start": 1375.0,
+        "end": 1390.0
+    },
+    {
+        "text": " Ya va a quedar claro que esas cosas son cosas bien diferentes. Bueno, entonces veamos ahora en la clase en lo que sigue, ¿qué relación guardan estos conceptos de valores y vectores propios?",
+        "start": 1391.0,
+        "end": 1408.0
+    },
+    {
+        "text": " Con la idea que yo le había planteado inicialmente de tratar de diagonalizar un operador, si es que se puede, es decir, encontrar una base, tal que el operador en esa base tiene la forma diagonal, hay que la forma más sencilla manipulara que oraycamente.",
+        "start": 1409.0,
+        "end": 1423.0
+    },
+    {
+        "text": " Eso a veces se puede, a veces no. Pero empecemos definiendo qué significa que un operador sea diagonalizable y después caracterizando la propiedad de diagonalización y después estuviando bajo qué casos se cumple.",
+        "start": 1423.0,
+        "end": 1437.0
+    },
+    {
+        "text": " Esa esa condición de diagonalización y bajo qué casos no y qué se hace en los casos en que no se cumple. Eso es más o menos el anticipo de dos semanas de clase, ver todo eso.",
+        "start": 1437.0,
+        "end": 1453.0
+    },
+    {
+        "text": " Muy bien.",
+        "start": 1455.0,
+        "end": 1456.0
+    },
+    {
+        "text": " Entonces, vayamos en primer lugar a la definición de qué significa que un operador sea diagonalizable o qué significa que una matricia diagonalizada.",
+        "start": 1457.0,
+        "end": 1469.0
+    },
+    {
+        "text": " Empezamos con la definición de operador diagonalizable.",
+        "start": 1469.0,
+        "end": 1475.0
+    },
+    {
+        "text": " Entonces uno tiene un operador en un espacio vectorial y uno dice que T es diagonalizable.",
+        "start": 1476.0,
+        "end": 1484.0
+    },
+    {
+        "text": " Cuando te haya una serie de sí, existe una base, una base del espacio vectorial, para la cual la matria social en esa base es una matricia diagonal.",
+        "start": 1484.0,
+        "end": 1512.0
+    },
+    {
+        "text": " Bien, o sea lo que estamos diciendo es que un operador es diagonalizable. Si podemos encontrar una base, esta y qué esto se lleva a la forma más sencilla posible que es la forma diagonal.",
+        "start": 1512.0,
+        "end": 1536.0
+    },
+    {
+        "text": " Podemos qué es una matricia diagonal, es una matricia que fuera de la diagonal y la diagonal puede tener cualquier cosa, incluso cero, lo número que fuera, pero lo importante que fuera de diagonal todos los elementos son cero.",
+        "start": 1536.0,
+        "end": 1551.0
+    },
+    {
+        "text": " Bien, eso es una matricia diagonal. Entonces esas matricias son las matricias más fáciles de manipular al georajicamente, son las matricias en las cuales calcular potencias, estribiar, porque tengo que elevar las potencias de los elementos de diagonal, etcétera, etcétera.",
+        "start": 1552.0,
+        "end": 1568.0
+    },
+    {
+        "text": " Y esa fue la idea que nos guiaba al principio a estudiar el problema que estamos estudiando ahora.",
+        "start": 1568.0,
+        "end": 1575.0
+    },
+    {
+        "text": " Ahora, ¿cómo es tiende uno ese concepto a matricias diagonales? A diagonalizable. Fíjense, si un operador lo que estoy diciendo que consideramos un operador diagonalizable, significa que hay una base en la cual esto tiene la forma diagonal.",
+        "start": 1576.0,
+        "end": 1593.0
+    },
+    {
+        "text": " Pensemos que en esta base la forma fue ese diagonal y en esta otra base no fue ese diagonal, fue ese cualquier otra cosa. ¿Qué relaciona entre estas dos matricias?",
+        "start": 1593.0,
+        "end": 1605.0
+    },
+    {
+        "text": " ¿Qué son semejantes? Entonces, podemos extender esa definición, no podemos adaptar esa definición a matricias diciendo que una matricia diagonalizable si es semejante y una matricia diagonal.",
+        "start": 1606.0,
+        "end": 1620.0
+    },
+    {
+        "text": " Esa es la definición para matricias, porque cuando yo les doy una matricia así pelada, ahí no estoy hablando de base, no estoy hablando de nada, y yo le digo trabaje esta matricia diagonal y dicen, ¿dad?",
+        "start": 1620.0,
+        "end": 1632.0
+    },
+    {
+        "text": " Lo que estoy diciendo, ahí no tengo base, no tengo espacio de tonel, no tengo nada, en principio. Entonces, tengo que definir qué significa que algo sea diagonalizable, bueno, significa que semejante a una matricia diagonal y la guía de esa definición viene justamente lo que puse ahí.",
+        "start": 1633.0,
+        "end": 1647.0
+    },
+    {
+        "text": " Si un operador en una base es diagonalizable y en otra base será cualquier otra cosa, pero si era una matricia mejante a esta, es una diagonal.",
+        "start": 1647.0,
+        "end": 1655.0
+    },
+    {
+        "text": " Entonces, la definición para matricias es que una matricia, es diagonalizable.",
+        "start": 1656.0,
+        "end": 1667.0
+    },
+    {
+        "text": " Si es semejante a la matricia diagonal.",
+        "start": 1667.0,
+        "end": 1679.0
+    },
+    {
+        "text": " Está bien.",
+        "start": 1679.0,
+        "end": 1699.0
+    },
+    {
+        "text": " Entonces, en lo que sigue el teórico y en cosas que vamos a ver en las siguientes clases lo que vamos a hacer es lo siguiente.",
+        "start": 1699.0,
+        "end": 1710.0
+    },
+    {
+        "text": " Caractrizar cuando un operador es diagonalizable, estudiar bajo qué condiciones esas condiciones equivalentes se cumplen, bajo qué condiciones no se cumplen y en caso que no se cumplen, como se lleva este un operador de una forma que sea lo más fácil de manipular a que braicamente, lo más parecido a una diagonal.",
+        "start": 1710.0,
+        "end": 1732.0
+    },
+    {
+        "text": " Está claro, eso es lo que vamos a hacer entonces en el resto de las clases y en las clases que viene.",
+        "start": 1732.0,
+        "end": 1739.0
+    },
+    {
+        "text": " Y ahí van a ver va a quedar en claro por qué nos metimos en la cuestión de valores y vectores propios, es más va a quedar claro ya mismo con el resultado que les voy a probar.",
+        "start": 1740.0,
+        "end": 1751.0
+    },
+    {
+        "text": " El teórico me voy a escribir ahora me caracteriza cuando un operador es diagonalizable.",
+        "start": 1751.0,
+        "end": 1761.0
+    },
+    {
+        "text": " Bien, me dice que un operador es diagonalizable si sólo si existe una base del espacio vectorial formada por vectores propios de té.",
+        "start": 1781.0,
+        "end": 1810.0
+    },
+    {
+        "text": " Asociados a los valores propios que corresponde.",
+        "start": 1812.0,
+        "end": 1815.0
+    },
+    {
+        "text": " Y justamente la matriz asociada en esa base de vectores propios es la matriz diagonal.",
+        "start": 1815.0,
+        "end": 1826.0
+    },
+    {
+        "text": " Bien, así que si yo trabajo en el espacio vectorial en el cual tengo, pueden encontrar una base formada por vectores propios de té y represento té en esa base obtengo una forma de diagonal.",
+        "start": 1846.0,
+        "end": 1863.0
+    },
+    {
+        "text": " Por lo tanto, té diagonalizable es un síso lo sí, sí sólo sí, si existe una base formada por vectores propios de té.",
+        "start": 1863.0,
+        "end": 1869.0
+    },
+    {
+        "text": " La prueba es bien, bien sencilla.",
+        "start": 1870.0,
+        "end": 1872.0
+    },
+    {
+        "text": " Notarán ustedes que el pulto siguiente es estudiar bajo qué condiciones entonces existe una base de ve forma de proyectores propios y ahí sigue el camino del curso.",
+        "start": 1880.0,
+        "end": 1892.0
+    },
+    {
+        "text": " Bien, entonces como un síso lo sí, la demostración tiene los partes, vamos a probar primero esto, vamos a considerar un ted diagonalizable.",
+        "start": 1893.0,
+        "end": 1904.0
+    },
+    {
+        "text": " Y acá siempre que haremos de base, vamos a estar suponiendo lo que estamos trabajando en espacios de dimensión finita.",
+        "start": 1911.0,
+        "end": 1916.0
+    },
+    {
+        "text": " Si no hay cuestiones técnicas que merecen más cuidados. Entonces lo que estamos diciendo es que té diagonalizable y lo que acabamos de ver qué significa que té diagonalizable, significa que existe una base de ve, donde ve toma la forma diagonal.",
+        "start": 1917.0,
+        "end": 1933.0
+    },
+    {
+        "text": " Bien, entonces esto significa que existe una base de vectores de 1, de 2 hasta v, esto es una base del espacio vectorial, tal que si yo considero la matria social de esa base, esa matriz tiene la forma diagonal.",
+        "start": 1934.0,
+        "end": 1957.0
+    },
+    {
+        "text": " Y a los elementos de la diagonal le vamos a llamar, esto parece no es nada caprichoso, le vamos a llamar lambda 1, lambda 2 hasta lambda n.",
+        "start": 1957.0,
+        "end": 1967.0
+    },
+    {
+        "text": " Y el resto tengo todos cero.",
+        "start": 1969.0,
+        "end": 1971.0
+    },
+    {
+        "text": " No importa, no pasa nada, no pasa absolutamente nada, yo digo, lo estoy llevando porque acorrate, bueno ahí va a entrar en juego en las clases que viene el tema de la multiplicidad, los valores propios y la dimensión en los subespacios asociados.",
+        "start": 1972.0,
+        "end": 1991.0
+    },
+    {
+        "text": " Pero tranquilamente esta la forma diagonal podría ser 1, 1, 0, 0, 0, la matriz, por ejemplo, ahí va, la matriz nula, exacto.",
+        "start": 1992.0,
+        "end": 2002.0
+    },
+    {
+        "text": " Sí, pero no nos adelantemos. Entonces lo que yo sé que si es diagonalizable existe una base del espacio vectorial tal que ve en esa base, que tiene la forma diagonal.",
+        "start": 2005.0,
+        "end": 2016.0
+    },
+    {
+        "text": " Ahora, ¿qué relación tiene esto con valores y vectores propios? Observemos que lo que tenemos acá, leamos bien esto, ¿qué es la primera columna que tenemos acá?",
+        "start": 2017.0,
+        "end": 2030.0
+    },
+    {
+        "text": " ¿Qué es la primera columna? Claro, este aplicado a V1 por construcción de la matriz asociada las coordenadas de eso en la base V.",
+        "start": 2031.0,
+        "end": 2044.0
+    },
+    {
+        "text": " O sea que esto que tenemos acá es T en V1 las coordenadas de eso en la base V. Esto sería la primera columna.",
+        "start": 2045.0,
+        "end": 2058.0
+    },
+    {
+        "text": " La segunda columna sería lo mismo, es realmente que con T aplicado a V2, esto serían las coordenadas en la base V de T en V2.",
+        "start": 2060.0,
+        "end": 2071.0
+    },
+    {
+        "text": " Y finalmente la última sería las coordenadas en la base V de T en V.",
+        "start": 2072.0,
+        "end": 2082.0
+    },
+    {
+        "text": " Sí, y ahora leamos esto, las coordenadas de T en V1, ese está a esta columna. Esto que que me quiere decir que T en V1 es lambda 1 por V1, masero por V2, masero por V3, etcétera masero por Vn.",
+        "start": 2083.0,
+        "end": 2103.0
+    },
+    {
+        "text": " El otro palabra quiere decir que T aplicado a V1 es lambda 1 por V1. O sea esto acá es lo mismo que decir que T en V1 es lambda 1 por V1.",
+        "start": 2104.0,
+        "end": 2118.0
+    },
+    {
+        "text": " Se han tendido eso, repito, estas son las coordenadas. Si yo quiero pasar ahora a los vectores tengo que hacer lo siguiente.",
+        "start": 2120.0,
+        "end": 2129.0
+    },
+    {
+        "text": " La segunda columna sería lambda 1 por el primer vecto de la base, por V1, masero por el segundo, etcétera, lambda 1 por V1.",
+        "start": 2130.0,
+        "end": 2138.0
+    },
+    {
+        "text": " Y lo mismo si me fijó acá, significa que T en V2 sería 0 por V1, mas lambda 2 por V2 y el resto todo 0.",
+        "start": 2138.0,
+        "end": 2147.0
+    },
+    {
+        "text": " O sea esto sería lo mismo que decir que T en V2 es lambda 2 por V2.",
+        "start": 2147.0,
+        "end": 2154.0
+    },
+    {
+        "text": " Y acá lo mismo, esto sería lo mismo que decir que T en Vn es 0 por V1, masero por V2, etcétera mas lambda n por Vn.",
+        "start": 2155.0,
+        "end": 2163.0
+    },
+    {
+        "text": " Estamos pasamos de las coordenadas a los vectores.",
+        "start": 2168.0,
+        "end": 2171.0
+    },
+    {
+        "text": " Entonces lo que estamos diciendo, fíjense lo que estamos diciendo que si en la base V tiene esta forma, significa que T aplicado al primer vecto es lambda 1 por V1, lambda 1 es el primer elemento diagonal,",
+        "start": 2172.0,
+        "end": 2188.0
+    },
+    {
+        "text": " te ha aplicado V2, el lambda 2 por V2, el segundo elemento, etcétera, T en Vn es lambda n por Vn, se cumple eso y además todos estos vectores son distintos de 0 por justamente son vectores de una base.",
+        "start": 2188.0,
+        "end": 2204.0
+    },
+    {
+        "text": " Y además V1 es de tinto de 0, V2 es de tinto de 0, etcétera hasta el Vn es de tinto de 0.",
+        "start": 2205.0,
+        "end": 2214.0
+    },
+    {
+        "text": " Entonces qué significa esto que tengo? El vector V1 cumple, T en V1 es lambda 1 por V1 y es de tinto de 0, entonces es un vector propio de T.",
+        "start": 2214.0,
+        "end": 2223.0
+    },
+    {
+        "text": " T en V2 es lambda 2 por V2 y V2 es de tinto de 0, un vector propio de T, etcétera y T en Vn por el mismo argumento es también un vector propio de T, es decir que todos estos vectores son vectores propios.",
+        "start": 2224.0,
+        "end": 2238.0
+    },
+    {
+        "text": " Los vectores justamente que me diagonalizan son vectores propios, entonces eso significa que V es una base de vectores propios.",
+        "start": 2239.0,
+        "end": 2247.0
+    },
+    {
+        "text": " Es una base de forma de vectores propios de T, asociados a los elementos de la diagonal que justamente son valores propios y que puede repetirse o no tanto da.",
+        "start": 2247.0,
+        "end": 2271.0
+    },
+    {
+        "text": " Por lo tanto hemos probado que si usted es diagonalizable la base en la cual se llega a una base de vectores propios y más aún los elementos de la diagonal son los valores propios correspondientes.",
+        "start": 2277.0,
+        "end": 2290.0
+    },
+    {
+        "text": " Bien, fíjense que además como habíamos visto al principio como los valores propios son raíces características, no pueden haber más que n valores propios.",
+        "start": 2291.0,
+        "end": 2312.0
+    },
+    {
+        "text": " O sea que acá están metidos todos los valores propios, si es que pueda hacer esto, ¿no?",
+        "start": 2313.0,
+        "end": 2319.0
+    },
+    {
+        "text": " Podría ser que no hubiera valores propios, entonces obviamente no pudo llevarlo a una forma de diagonal.",
+        "start": 2322.0,
+        "end": 2326.0
+    },
+    {
+        "text": " La vuelta esto había más sencilla, pero siempre hay que escribir las cosas con cuidado, vamos a suponer que existe una base de forma de vectores propios y veamos que es diagonalizable.",
+        "start": 2328.0,
+        "end": 2339.0
+    },
+    {
+        "text": " Entonces, si ve, es una base de forma de vectores propios, entonces esto implica que cada uno de los vectores es un vector propio asociado a algún valor propio, ¿qué es?",
+        "start": 2340.0,
+        "end": 2367.0
+    },
+    {
+        "text": " Entonces, significa que tembe 1 será 1 escalar lambda 1 por 1, tembe 2 será 1 escalar lambda 2 por 2, etc. y tembe n será 1 escalar lambda n por b n.",
+        "start": 2368.0,
+        "end": 2384.0
+    },
+    {
+        "text": " Si tiene una base de vectores propios, cada todo esto vectores cumplen estas situaciones. Por lo tanto, si representa a T en esa base de vectores propios, acá tengo que colgar las coordenadas.",
+        "start": 2385.0,
+        "end": 2406.0
+    },
+    {
+        "text": " Las coordenadas de T en ve 1 es lambda 1 por ve 1 más cero, más cero, más cero, más cero, o sea las coordenadas acá serían lambda 1, 0, etc., etc., etc., etc.",
+        "start": 2407.0,
+        "end": 2421.0
+    },
+    {
+        "text": " Las coordenadas de T en ve 2, que es lambda 2 por ve 2, en esta base sería 0 por ve 1 más lambda 2 por ve 2, más cero, 0, 0, etc., etc., o sea sería 0, lambda 2.",
+        "start": 2422.0,
+        "end": 2433.0
+    },
+    {
+        "text": " Y así las coordenadas de T en ve 1 sería 0 por ve 1 más cero por ve 2 más lambda n por ve 1, o sea sería 0, 0, lambda n.",
+        "start": 2434.0,
+        "end": 2444.0
+    },
+    {
+        "text": " O sea que efectivamente en esa base T tiene la forma diagonal y esto acaso justamente los valores propios.",
+        "start": 2445.0,
+        "end": 2454.0
+    },
+    {
+        "text": " Estamos.",
+        "start": 2455.0,
+        "end": 2459.0
+    },
+    {
+        "text": " Pregunta.",
+        "start": 2459.0,
+        "end": 2466.0
+    },
+    {
+        "text": " Pregunta.",
+        "start": 2467.0,
+        "end": 2473.0
+    },
+    {
+        "text": " Si.",
+        "start": 2473.0,
+        "end": 2474.0
+    },
+    {
+        "text": " Si, bueno, si, eso es lo que queremos ver, eso es lo que estamos diciendo, que si hay una base de vectores propios, entonces los vectores propios cubren todo hay una base, digamos.",
+        "start": 2474.0,
+        "end": 2492.0
+    },
+    {
+        "text": " El su despacio forma por los vectores propios me coincide con el despacio total, entonces ahí me queda la forma diagonal, exactamente lo que estamos viendo ahí.",
+        "start": 2493.0,
+        "end": 2502.0
+    },
+    {
+        "text": " Yo me puedo hacer la pregunta natural, de si, de si esa forma diagonal es única o no, fíjense lo siguiente.",
+        "start": 2504.0,
+        "end": 2512.0
+    },
+    {
+        "text": " Fíjense lo siguiente.",
+        "start": 2523.0,
+        "end": 2527.0
+    },
+    {
+        "text": " Como.",
+        "start": 2527.0,
+        "end": 2530.0
+    },
+    {
+        "text": " Es propios.",
+        "start": 2530.0,
+        "end": 2533.0
+    },
+    {
+        "text": " Son raíces de la ecuación característica que es un polinón me degrado n, lo que les decía hace un rato.",
+        "start": 2533.0,
+        "end": 2539.0
+    },
+    {
+        "text": " No puedo tener más de n valores propios.",
+        "start": 2539.0,
+        "end": 2545.0
+    },
+    {
+        "text": " Si es en el caso que sea diagonalizable, estamos diciendo que si yo cuento los valores propios con su multiplicidad, la multiplicidad que braica que le comento al principio, entonces tengo n valores propios.",
+        "start": 2546.0,
+        "end": 2559.0
+    },
+    {
+        "text": " Se entiende lo que es ejemplo que le ponía al principio.",
+        "start": 2559.0,
+        "end": 2562.0
+    },
+    {
+        "text": " Si yo tengo que la raíz característica es el ponimiento característico, 2 menos lambda al cuadrado, no me acorda exactamente que puse, pero si es algo como esto,",
+        "start": 2562.0,
+        "end": 2571.0
+    },
+    {
+        "text": " entonces estoy diciendo que el am de igual a 2 es valor propio con multiplicidad 2 y que el am de igual a 3, valor propio con multiplicidad 5.",
+        "start": 2572.0,
+        "end": 2583.0
+    },
+    {
+        "text": " La potencia máxima es lambda al aceptivo, entonces esto es un ponimiento de un grados 7, lo cual significa que estamos trabajando en dimensión 7 por 7.",
+        "start": 2583.0,
+        "end": 2591.0
+    },
+    {
+        "text": " Pero entonces si yo cuento no puedo tener más de 7 raíces de esto, no puedo poniendo en el grados 7.",
+        "start": 2592.0,
+        "end": 2598.0
+    },
+    {
+        "text": " Entonces si yo cuento a cada raíz con su multiplicidad correspondiente tengo 7, 7 valores propios contando la multiplicidad, si el valor propio 2 aparece 2 veces lo cuento 2 veces.",
+        "start": 2598.0,
+        "end": 2613.0
+    },
+    {
+        "text": " Esto significa que acá todos los elementos que estoy poniendo la diagonal estoy poniendo al 2 veces y al 3 5 veces.",
+        "start": 2614.0,
+        "end": 2622.0
+    },
+    {
+        "text": " ¿Te entiende?",
+        "start": 2622.0,
+        "end": 2624.0
+    },
+    {
+        "text": " Entonces claramente acá las cosas podrían aparecer alternadas porque podría parecer 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 1, etc., o es claro, eso depende del orden en que uno elija los vectores propios.",
+        "start": 2624.0,
+        "end": 2641.0
+    },
+    {
+        "text": " O sea la forma diagonal es única excepto a menos del orden en que uno pone los valores propios.",
+        "start": 2642.0,
+        "end": 2650.0
+    },
+    {
+        "text": " Está claro, pero siempre van a aparecer los mismos elementos en la diagonal, que van a ser justamente las raíces, el ponimiento característico con sus respectivas multiplicidades.",
+        "start": 2650.0,
+        "end": 2664.0
+    },
+    {
+        "text": " O sea la observación, la forma diagonal es única.",
+        "start": 2665.0,
+        "end": 2668.0
+    },
+    {
+        "text": " Uno dice que es única a menos del orden de los valores propios.",
+        "start": 2677.0,
+        "end": 2682.0
+    },
+    {
+        "text": " Landa 1, lambda 2, hasta lambda n.",
+        "start": 2695.0,
+        "end": 2699.0
+    },
+    {
+        "text": " Y eso puede pasar de una forma a la otra cambiando el orden de los elementos de la base.",
+        "start": 2701.0,
+        "end": 2708.0
+    },
+    {
+        "text": " Eso es lo que refiere a la forma diagonal, lo que obviamente no es único es la base, porque ahí en la base tengo infinidad de bases.",
+        "start": 2708.0,
+        "end": 2721.0
+    },
+    {
+        "text": " Fíjense que yo podría agarrar a cualquier vector propio multiplicarlo por un escalar.",
+        "start": 2721.0,
+        "end": 2727.0
+    },
+    {
+        "text": " Y se seguiría teniendo otro vector propio.",
+        "start": 2727.0,
+        "end": 2730.0
+    },
+    {
+        "text": " Las bases tengo infinidad de bases.",
+        "start": 2730.0,
+        "end": 2733.0
+    },
+    {
+        "text": " Los valores propios, si es diagonalizable, los valores propios tengo un conjunto ahí que lo puedo cambiar de ahora.",
+        "start": 2733.0,
+        "end": 2739.0
+    },
+    {
+        "text": " Bueno, tenía un par de ejemplos para hacer, capaz que los dejo para el final de la clase.",
+        "start": 2740.0,
+        "end": 2751.0
+    },
+    {
+        "text": " Ejemplos bien sencillos de un operador que es diagonalizable y de otro que no lo es.",
+        "start": 2751.0,
+        "end": 2757.0
+    },
+    {
+        "text": " En el práctico todas maneras van a ver estas cosas.",
+        "start": 2758.0,
+        "end": 2763.0
+    },
+    {
+        "text": " Pero me quiero adelantar a otro teorema para ir redondeando la clase de hoy.",
+        "start": 2763.0,
+        "end": 2769.0
+    },
+    {
+        "text": " Se acuerdan que la clase pasada, yo les había hecho un ejemplo de un operador 3x3 que tenía dos valores propios.",
+        "start": 2776.0,
+        "end": 2784.0
+    },
+    {
+        "text": " Uno que tenía un subespacio socio-dimension 2 y otro que tenía un subespacio socio-dimension 1.",
+        "start": 2785.0,
+        "end": 2791.0
+    },
+    {
+        "text": " Se acuerdan, entonces no me acuerdo cual eran los valores propios, pero que tiene dimensión 1,",
+        "start": 2791.0,
+        "end": 2797.0
+    },
+    {
+        "text": " yo puedo decir como elemento de la base, puedo decir cualquier múltiplo de un vector propio.",
+        "start": 2797.0,
+        "end": 2801.0
+    },
+    {
+        "text": " Y en el que tiene dimensión 2 tengo además el juego que puede elegir cualquier base ahí adentro.",
+        "start": 2801.0,
+        "end": 2806.0
+    },
+    {
+        "text": " Entonces tengo infinidad de bases que me dan una forma de diagonal.",
+        "start": 2807.0,
+        "end": 2813.0
+    },
+    {
+        "text": " Eso es ese resultado importante, me sirve para caracterizar los diagonalizables.",
+        "start": 2821.0,
+        "end": 2825.0
+    },
+    {
+        "text": " Es diagonalizable si solo si existe una base de lectores propios.",
+        "start": 2825.0,
+        "end": 2829.0
+    },
+    {
+        "text": " Bueno ahora la pregunta es bueno cuando es que existe una base de lectores propios y cuando no.",
+        "start": 2830.0,
+        "end": 2835.0
+    },
+    {
+        "text": " La base?",
+        "start": 2842.0,
+        "end": 2843.0
+    },
+    {
+        "text": " No, la base de lectores propios son infinitas.",
+        "start": 2845.0,
+        "end": 2848.0
+    },
+    {
+        "text": " Porque fíjate que es lo que yo te decía, si usted tiene un subespacio propio asociado este que tiene dimensión 2,",
+        "start": 2848.0,
+        "end": 2854.0
+    },
+    {
+        "text": " yo puedo elegir todo el subespacio propio y dimensión 2 o sea que hay por elegir cualquier par de vectores",
+        "start": 2855.0,
+        "end": 2861.0
+    },
+    {
+        "text": " ni ni ni ni ni ni independientes y ahí va a ser una base del subespacio asociado y todos esos vectores van a ser vectores propios.",
+        "start": 2861.0,
+        "end": 2868.0
+    },
+    {
+        "text": " O sea tengo infinidad de bases de vectores propios asociadas.",
+        "start": 2869.0,
+        "end": 2875.0
+    },
+    {
+        "text": " La forma diagonal, si le puedo cambiar el orden acá pero los números que pongo la diagonal son los mismos.",
+        "start": 2875.0,
+        "end": 2882.0
+    },
+    {
+        "text": " Está bien y en balo que le decía recién. Imagínate que usted tiene un vector propio y lo multiplica por un escalar.",
+        "start": 2883.0,
+        "end": 2890.0
+    },
+    {
+        "text": " Dicintos, o sea que si en lugar de esta base yo pongo 3 por V1, 5 por V2 o 7 por Vn, eso también va a ser una base de vectores propios.",
+        "start": 2890.0,
+        "end": 2902.0
+    },
+    {
+        "text": " Esta resultado que voy a escribir ahora me sirve para, es un resultado importante en lo que refiere a vectores propios asociados a valores propios distintos.",
+        "start": 2903.0,
+        "end": 2914.0
+    },
+    {
+        "text": " Y es un resultado importante.",
+        "start": 2916.0,
+        "end": 2919.0
+    },
+    {
+        "text": " Bien, vamos a copiar el teorema, lo leemos y lo demostramos.",
+        "start": 2921.0,
+        "end": 2926.0
+    },
+    {
+        "text": " Y ahora vamos a ver si lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo lo",
+        "start": 2992.0,
+        "end": 2993.0
+    },
+    {
+        "text": " ese resultado ya vamos a ver que ese resultado es muy importante y cuando papel importante EN immune sick",
+        "start": 3022.0,
+        "end": 3045.58
+    },
+    {
+        "text": " Si eso ya lo comento, ahora lo leemos. Lo que tenemos entonces es un operador",
+        "start": 3045.58,
+        "end": 3056.42
+    },
+    {
+        "text": " lineal y tenemos un conjunto de escalares, lambda 1, lambda 2 hasta lambda",
+        "start": 3056.42,
+        "end": 3063.54
+    },
+    {
+        "text": " K, valores propios, dos a dos distintos, que sean dos a dos distintos que acá no",
+        "start": 3063.54,
+        "end": 3068.54
+    },
+    {
+        "text": " hay dos que coincidan, que lambda 1 y tinto de lambda 2, lambda 1 y tinto de",
+        "start": 3068.54,
+        "end": 3072.58
+    },
+    {
+        "text": " lambda 3, lambda 2 y tinto de lambda 3, etcétera, son todos distintos entre sí, eso",
+        "start": 3072.58,
+        "end": 3077.06
+    },
+    {
+        "text": " quiere decir. Y además tenemos este, bueno, V1, V2 y VK, que son",
+        "start": 3077.06,
+        "end": 3084.34
+    },
+    {
+        "text": " vectores propios correspondientes a cada valor propio. Lo que estamos diciendo",
+        "start": 3084.34,
+        "end": 3088.2999999999997
+    },
+    {
+        "text": " obviamente es que V1 es un vector propios de lambda 1, V2 es un vector propios de lambda",
+        "start": 3088.2999999999997,
+        "end": 3095.1
+    },
+    {
+        "text": " 2, VK es un vector propio asociado a lambda K. Lo que me dice el teorema es que ese",
+        "start": 3095.1,
+        "end": 3100.8199999999997
+    },
+    {
+        "text": " conjunto de vectores propios es un conjunto linealmente independiente. Es decir,",
+        "start": 3100.82,
+        "end": 3105.82
+    },
+    {
+        "text": " si yo dar un vector propio de corresponde a un valor propio, que está en el subespacio",
+        "start": 3105.82,
+        "end": 3113.42
+    },
+    {
+        "text": " propio de un valor propio, y otro que está en un subespacio propio de otro valor propio,",
+        "start": 3113.42,
+        "end": 3118.6200000000003
+    },
+    {
+        "text": " ese conjunto linealmente independiente, esos dos vectores son linealmente independientes",
+        "start": 3118.6200000000003,
+        "end": 3122.3
+    },
+    {
+        "text": " y si agarró 3 de tres vectores propios distintos, ese conjunto linealmente independiente, etcétera.",
+        "start": 3122.3,
+        "end": 3127.5800000000004
+    },
+    {
+        "text": " O sea que siempre quedar vectores propios de subespacios propios asociados a valores propios",
+        "start": 3127.58,
+        "end": 3133.74
+    },
+    {
+        "text": " distintos, tengo llegar a 1 de caso de espacio, tengo un conjunto leí. Bien, y la demostración",
+        "start": 3133.74,
+        "end": 3143.42
+    },
+    {
+        "text": " es bien sencilla y es por inducción en el domarito K, en la cantidad de valores propios",
+        "start": 3143.42,
+        "end": 3149.7799999999997
+    },
+    {
+        "text": " que estoy considerando. Lo que vamos a probar es que si tengo un solo valor propio y",
+        "start": 3149.7799999999997,
+        "end": 3156.1
+    },
+    {
+        "text": " el vector propio correspondiente se conjuntó de la ley y suponiendo que se cumple la",
+        "start": 3156.1,
+        "end": 3160.42
+    },
+    {
+        "text": " firmación para acá, la voy a probar para acá más 1. Con eso pruebo que se cumple para",
+        "start": 3160.42,
+        "end": 3165.66
+    },
+    {
+        "text": " 1, que se cumple para 2 valores propios de los vectores propios distintos para 3 valores",
+        "start": 3165.66,
+        "end": 3172.1
+    },
+    {
+        "text": " propios distintos, etcétera.",
+        "start": 3172.1,
+        "end": 3174.5
+    },
+    {
+        "text": " De demostración entonces, inducción en K. Bueno, como ustedes saben uno tiene que probar",
+        "start": 3174.5,
+        "end": 3192.06
+    },
+    {
+        "text": " el paso inicial y el paso inductivo. El paso inicial es cuando K es igual a 1, más",
+        "start": 3192.06,
+        "end": 3197.5
+    },
+    {
+        "text": " decir cuando tengo, estoy considerando un único valor propio y un vector propio",
+        "start": 3197.5,
+        "end": 3203.06
+    },
+    {
+        "text": " y el socio se valore propio. Es decir, tengo V1 que es un vector propio asociado al",
+        "start": 3203.06,
+        "end": 3215.7799999999997
+    },
+    {
+        "text": " amda 1. Es decir, tengo solamente un valor propio acá y su correspondiente vector propio",
+        "start": 3215.7799999999997,
+        "end": 3225.2999999999997
+    },
+    {
+        "text": " asociado. Entonces, por ser vector propio, V1 de",
+        "start": 3225.2999999999997,
+        "end": 3231.58
+    },
+    {
+        "text": " distintos de 0, el distinto del vector nulo. Eso me implica entonces que el conjunto",
+        "start": 3231.58,
+        "end": 3240.22
+    },
+    {
+        "text": " cuyo único elemento es V1 es un conjunto lillamento independiente. Vamos, se acuerdan que un",
+        "start": 3240.22,
+        "end": 3246.86
+    },
+    {
+        "text": " vector, el sitio del nulo entra la definición de conjunto lillamento independiente. Esto es",
+        "start": 3246.86,
+        "end": 3252.7
+    },
+    {
+        "text": " un conjunto y ahora lo que vamos a ver entonces el paso inductivo. Vamos a suponer que se",
+        "start": 3252.7,
+        "end": 3264.04
+    },
+    {
+        "text": " cumple para K valores propios, su correspondiente vector propio y veamos para K1. Entonces sean",
+        "start": 3264.04,
+        "end": 3275.4199999999996
+    },
+    {
+        "text": " la V1, la V2 hasta la V1. Valores propios, dos a los distintos. Distintos, hablando mal",
+        "start": 3275.42,
+        "end": 3293.94
+    },
+    {
+        "text": " y pronto. Y se ha... El conjunto formado por V1, V2, V1 que son vectores propios asociados",
+        "start": 3293.94,
+        "end": 3310.2200000000003
+    },
+    {
+        "text": " a esos vectores, al valor propio y que puse arriba.",
+        "start": 3310.2200000000003,
+        "end": 3313.5
+    },
+    {
+        "text": " Y ahora lo que vamos a ver, es que el conjunto formado por V1, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2, V2",
+        "start": 3323.94,
+        "end": 3353.94
+    },
+    {
+        "text": " 1, 2, 3, 4,",
+        "start": 3353.94,
+        "end": 3383.94
+    },
+    {
+        "text": " el número acá j es y por ser vectores propios, bien digo, cada uno de sus vectores es",
+        "start": 3383.94,
+        "end": 3391.2200000000003
+    },
+    {
+        "text": " distintos de cero y eso para todo j e igual a 1 a 2 hasta acá más 1. Lo que estamos diciendo",
+        "start": 3391.2200000000003,
+        "end": 3398.26
+    },
+    {
+        "text": " que este vector propio de este, este vector propio de este, este vector propio de este.",
+        "start": 3398.26,
+        "end": 3402.98
+    },
+    {
+        "text": " Y ahora lo que queremos ver es que este conjunto es el diamet independiente, asumiendo que",
+        "start": 3402.98,
+        "end": 3408.54
+    },
+    {
+        "text": " si yo tuviera acá esos siloes, esa lipotos inductiva. Se entiende esto?",
+        "start": 3408.54,
+        "end": 3417.66
+    },
+    {
+        "text": " Quiero mover que es un conjunto lleno en tiene pendiente.",
+        "start": 3417.66,
+        "end": 3438.5
+    },
+    {
+        "text": " ¿Qué hago para ver si un conjunto llenamiento independiente? A una combinación",
+        "start": 3447.66,
+        "end": 3454.98
+    },
+    {
+        "text": " lineal le igual a cero y tengo que ver que la única forma de obtener esa combinación",
+        "start": 3454.98,
+        "end": 3458.8599999999997
+    },
+    {
+        "text": " lineal igual a cero es poniendo todos los escalares igual a cero. Entonces agarremos",
+        "start": 3458.8599999999997,
+        "end": 3463.74
+    },
+    {
+        "text": " una combinación lineal de todos estos vectores e igualemos la cero. Entonces, consideremos",
+        "start": 3463.74,
+        "end": 3477.2999999999997
+    },
+    {
+        "text": " una combinación lineal de todos esos vectores, alfa 1, ve 1, más alfa 2, ve 2, etcétera,",
+        "start": 3477.3,
+        "end": 3484.3
+    },
+    {
+        "text": " más alfa acá veca, vamos a escribir el término que es y más el camas 1, alfa acá más",
+        "start": 3484.3,
+        "end": 3490.82
+    },
+    {
+        "text": " 1 veca más 1. La igual a cero y lo que quiero ver que la única posible obtener eso con",
+        "start": 3490.82,
+        "end": 3497.1400000000003
+    },
+    {
+        "text": " todos los escalares igual a cero. Y esa primera ecuación que ya le vamos a precisar",
+        "start": 3497.14,
+        "end": 3507.9
+    },
+    {
+        "text": " en un ratito le vamos a llamar 1, la ecuación 1. ¿Qué diablos hacemos ahí?",
+        "start": 3507.9,
+        "end": 3523.14
+    },
+    {
+        "text": "plicamos, ahí todavía el ténolo es en ningún lado, la transformación te, bueno le aplico",
+        "start": 3523.14,
+        "end": 3530.42
+    },
+    {
+        "text": " t ambos lados. Entonces me va a quedar, bueno yo uso lineal de t, voy a obviar un paso,",
+        "start": 3530.42,
+        "end": 3549.7
+    },
+    {
+        "text": " te ha aplicado todo esto, igual a t aplico va a cero, t aplico va a cero siempre es cero.",
+        "start": 3549.7,
+        "end": 3554.8999999999996
+    },
+    {
+        "text": " Y te ha aplicado esto usando linealidad, me queda alfa 1 por t aplico de ve 1, más alfa 2",
+        "start": 3554.8999999999996,
+        "end": 3563.02
+    },
+    {
+        "text": " por t aplico de ve 2, etcétera, más alfa acá por t aplico de veca, más alfa acá más",
+        "start": 3563.02,
+        "end": 3573.02
+    },
+    {
+        "text": " 1 por t aplico a veca más 1, igual a t aplico va a cero y como bien dijimos eso es cero.",
+        "start": 3573.02,
+        "end": 3588.38
+    },
+    {
+        "text": " Tamos a agarre una combinación lineal, le igual a cero y a esa combinación lineal le",
+        "start": 3588.38,
+        "end": 3593.22
+    },
+    {
+        "text": " apliquete ambos lados y usé linealidad de t, yo lo que quiero ver es que estos coeficientes",
+        "start": 3593.22,
+        "end": 3597.66
+    },
+    {
+        "text": " son cero. Entonces ahora uso que los ve, estos son vectores propios de t, entonces te",
+        "start": 3597.66,
+        "end": 3607.46
+    },
+    {
+        "text": " aplicado ve 1, que será, será lambda 1 por ve 1, te ha aplicado ve 2 será lambda 2 por",
+        "start": 3607.46,
+        "end": 3616.06
+    },
+    {
+        "text": " ve 2, etcétera, te ha aplicado veca será lambda acá por veca y te ha aplicado veca más",
+        "start": 3616.06,
+        "end": 3624.54
+    },
+    {
+        "text": " 1 será lambda acá más 1 por veca más 1 y esa ecuación que me queda le vamos a llamar la",
+        "start": 3624.66,
+        "end": 3633.06
+    },
+    {
+        "text": " ecuación 2. Alfa 1, lambda 1 por ve 1, alfa 2, lambda 2 por ve 2, etcétera, igual a cero.",
+        "start": 3633.06,
+        "end": 3646.58
+    },
+    {
+        "text": " ¿Qué hacemos ahora? Fíjense que yo quisiera usar la hipótesa inductiva, esto es yo",
+        "start": 3646.58,
+        "end": 3661.92
+    },
+    {
+        "text": " quisiera usar, quisiera reducir una ecuación en la capa reza en cama 1 términos a una ecuación",
+        "start": 3661.92,
+        "end": 3670.9
+    },
+    {
+        "text": " en la capa reza en cá términos combinados lillamente igualados a cero y como obtengo eso",
+        "start": 3670.9,
+        "end": 3677.14
+    },
+    {
+        "text": " una manera muy sencilla, oseremos que este sumando acá, en qué se diferencia este último sumando",
+        "start": 3677.14,
+        "end": 3686.5
+    },
+    {
+        "text": " acá, se diferencia solamente en el factor lambda cama 1, entonces lo que voy a hacer es multiplicar",
+        "start": 3686.5,
+        "end": 3693.5
+    },
+    {
+        "text": " esto, todo esto por lambda cama 1 y restárselo a esto, con lo cual este el factor correspondiente",
+        "start": 3693.5,
+        "end": 3700.86
+    },
+    {
+        "text": " acá se me va ahí con el factor correspondiente acá y me van a quedar, me va a quedar un sumando",
+        "start": 3700.86,
+        "end": 3704.6200000000003
+    },
+    {
+        "text": " menos, y ahí voy a poder usar la hipótesa inductiva, entonces lo que vamos a hacer es multiplicamos 1,",
+        "start": 3704.6200000000003,
+        "end": 3711.42
+    },
+    {
+        "text": " multiplicamos 1 por el valor propio lambda cama 1 en todos los términos",
+        "start": 3715.6600000000003,
+        "end": 3728.46
+    },
+    {
+        "text": " y eso lo restamos a 2, lo restamos a 2 y ahí me van a decir que es lo que queda,",
+        "start": 3728.46,
+        "end": 3743.42
+    },
+    {
+        "text": " me están siguiendo, entonces imagínegra esto es multiplicando en todos lados por lambda",
+        "start": 3750.5,
+        "end": 3754.98
+    },
+    {
+        "text": " cama 1 y estoy haciendo esto menos esto, entonces qué queda entre esto y esto, como ya le",
+        "start": 3754.98,
+        "end": 3761.5
+    },
+    {
+        "text": " dije este último sumando se va a ir, lambda cama 1, alpha cama 1, ve cama 1, aparece acá y",
+        "start": 3761.5,
+        "end": 3766.7
+    },
+    {
+        "text": " aparece acá, si los restos se va, de este lado me va a quedar cero menos cero, eso no va a",
+        "start": 3766.7,
+        "end": 3770.54
+    },
+    {
+        "text": " quedar cero y ahora esto sumando que me van a quedar, acá me va a quedar alpha 1, lambda 1",
+        "start": 3770.54,
+        "end": 3776.14
+    },
+    {
+        "text": " ve 1 y acá me va a quedar alpha 1, lambda cama 1 por ve 1, si cuando lo resto me va a quedar",
+        "start": 3776.14,
+        "end": 3781.2999999999997
+    },
+    {
+        "text": " alpha 1, lambda 1 menos lambda cama 1 por ve 1, estamos de acuerdo, estoy haciendo esto,",
+        "start": 3781.2999999999997,
+        "end": 3795.3399999999997
+    },
+    {
+        "text": " este primer sumando menos este por lambda cama 1, entonces me va a quedar alpha 1 factor",
+        "start": 3795.3399999999997,
+        "end": 3800.3399999999997
+    },
+    {
+        "text": " común, ve 1 también factor común y después me va a quedar lambda 1 menos lambda cama 1, si",
+        "start": 3800.34,
+        "end": 3807.46
+    },
+    {
+        "text": " agrupo este con este me va a quedar alpha 2 por ve 2 factor común de lambda 2 menos lambda cama 1,",
+        "start": 3807.46,
+        "end": 3815.42
+    },
+    {
+        "text": " porque acá multiplie todos por lambda cama 1, entonces me va a quedar más, alpha 2 por lambda 2 menos",
+        "start": 3815.42,
+        "end": 3824.98
+    },
+    {
+        "text": " lambda cama 1 por ve 2, etcétera sigo, el caésimo va a quedar alpha acá, ve acá factor común",
+        "start": 3824.98,
+        "end": 3836.98
+    },
+    {
+        "text": " de lambda cama menos lambda cama 1, y esto por ve acá, el cama 1 como ya les dije, se va,",
+        "start": 3836.98,
+        "end": 3850.7400000000002
+    },
+    {
+        "text": " esto se va con este y acá me queda 0 menos 0 que igual a 0, entonces fíjense que ahí conseguí",
+        "start": 3851.5,
+        "end": 3857.62
+    },
+    {
+        "text": " reducir la combinación niña que involucrada cama 1 términos a una combinación niña que involucra",
+        "start": 3857.62,
+        "end": 3863.74
+    },
+    {
+        "text": " cá términos, cá vectores propios con estos escalares, ahora como sigue la cosa, por hipotas",
+        "start": 3863.74,
+        "end": 3876.9799999999996
+    },
+    {
+        "text": " inductiva, estamos suponiendo que si yo tuviese acá cá valores propios y su correspondiente",
+        "start": 3876.98,
+        "end": 3882.7400000000002
+    },
+    {
+        "text": " cá vectores propios, eso es el A, entonces por hipotas inductiva, por hipotas inductiva, el",
+        "start": 3882.7400000000002,
+        "end": 3896.5
+    },
+    {
+        "text": " conjunto ve 1, ve 2, hasta ve acá, es el A, entonces que me implica y que tengo una combinación",
+        "start": 3896.5,
+        "end": 3906.06
+    },
+    {
+        "text": " niña de todos ellos que me den igual a 0, entonces significa que la única manera de obtener",
+        "start": 3906.1,
+        "end": 3911.7
+    },
+    {
+        "text": " eso es que este primer escalar sea 0, este segundo escalar sea 0, etcétera, este escalar",
+        "start": 3911.7,
+        "end": 3918.06
+    },
+    {
+        "text": " cáésimo sea 0, o sea lo que preciso es que cada uno de esos escalares es igual a 0, está",
+        "start": 3918.06,
+        "end": 3923.22
+    },
+    {
+        "text": " claro, por hipotas inductiva justamente, por que tengo una combinación niña de cá vectores",
+        "start": 3923.22,
+        "end": 3928.5
+    },
+    {
+        "text": " propios, bien entonces por hipotas inductiva ve 1 es el A, lo que me implica que alpha 1 lambda",
+        "start": 3928.5,
+        "end": 3947.74
+    },
+    {
+        "text": " 1 menos lambda cá más 1, igual a 0, alpha 2, lambda 2 menos lambda cá más 1, igual a 0, etcétera,",
+        "start": 3947.74,
+        "end": 3958.3399999999997
+    },
+    {
+        "text": " alpha cá, lambda cá menos lambda cá más 1, igual a 0, cada uno de los escalares que aparece",
+        "start": 3959.9399999999996,
+        "end": 3969.66
+    },
+    {
+        "text": " ahí tiene que ser igual a 0, sí, el menos no lo que yo hice es este, esto lo multiplique",
+        "start": 3969.66,
+        "end": 3980.7
+    },
+    {
+        "text": " por lambda cá más 1 y lo quises esto menos esto, y esto menos esto, podría haber hecho",
+        "start": 3980.7,
+        "end": 3989.98
+    },
+    {
+        "text": " esto menos esto, que ahí me quedaría al revesto exacto, sí, sí, sí, sí, sí, lo mismo, y ahora",
+        "start": 3989.98,
+        "end": 4000.46
+    },
+    {
+        "text": " recordemos que lo que yo quiero probar es que si esta combinación niña de me da 0 la única",
+        "start": 4000.46,
+        "end": 4007.62
+    },
+    {
+        "text": " manera de obtenerla es que cada uno de estos coeficiente es igual a 0, alpha 1 igual a 0 hasta",
+        "start": 4007.62,
+        "end": 4012.62
+    },
+    {
+        "text": " alpha cá más 1 igual a 0, ¿qué me dice la primera ecuación? alpha 1 por lambda 1 menos",
+        "start": 4012.62,
+        "end": 4024.54
+    },
+    {
+        "text": " lambda cá más 1, ¿cómo los valores propios son dos ados distintos? esto es distinto de 0",
+        "start": 4024.54,
+        "end": 4029.74
+    },
+    {
+        "text": " porque lambda 1 es distinto de lambda cá más 1, por lo tanto alpha 1 debe ser 0, entonces la",
+        "start": 4031.1,
+        "end": 4036.42
+    },
+    {
+        "text": " primera ecuación me dice que alpha 1 igual a 0, sí, lo mismo, la segunda ecuación como son",
+        "start": 4036.42,
+        "end": 4043.66
+    },
+    {
+        "text": " dos ados distintos, lambda 2 es distinto de lambda cá más 1, o sea que esto es distinto de 0,",
+        "start": 4043.66,
+        "end": 4048.1800000000003
+    },
+    {
+        "text": " por lo tanto alpha 2 tiene que ser igual a 0, etcétera, así hasta que la última me dice que alpha",
+        "start": 4048.1800000000003,
+        "end": 4054.34
+    },
+    {
+        "text": " cá tiene que ser igual a 0, ¿por qué este acá es distinto de 0? lambda cá distinto de lambda",
+        "start": 4054.34,
+        "end": 4062.1800000000003
+    },
+    {
+        "text": " cá más 1, o sea que con eso concluyo que todos estos escalares hasta el cae de cimo son igual",
+        "start": 4062.18,
+        "end": 4069.74
+    },
+    {
+        "text": " es a 0, o sea toda esta parte cita es igual a 0, entonces lo que me implica entonces llevando a 1",
+        "start": 4069.74,
+        "end": 4084.2999999999997
+    },
+    {
+        "text": " tengo todos estos me dan 0 y me queda alpha cá más 1 por veca más 1",
+        "start": 4090.14,
+        "end": 4095.7
+    },
+    {
+        "text": " igual a 0, eso es un vector igualado al vector 1 y ¿qué pasa ahí?",
+        "start": 4100.099999999999,
+        "end": 4109.54
+    },
+    {
+        "text": " porque, porque este distinto de 0 porque es un vector propio, entonces como veca más 1 esto es un",
+        "start": 4116.0599999999995,
+        "end": 4122.9
+    },
+    {
+        "text": " vector propio como veca más 1 es distinto de 0 por ser vector propio,",
+        "start": 4122.9,
+        "end": 4131.0599999999995
+    },
+    {
+        "text": " entonces esto me implica que el último alpha cá más 1 también es igual a 0,",
+        "start": 4137.259999999999,
+        "end": 4142.94
+    },
+    {
+        "text": " o sea lo que terminó probando es que la única manera de combinar los vectores de 1,",
+        "start": 4144.7,
+        "end": 4150.179999999999
+    },
+    {
+        "text": " no ve 2 hasta veca más 1 y que me der el 0 es el pueno de todos estos caes calares iguales a 0,",
+        "start": 4150.18,
+        "end": 4155.820000000001
+    },
+    {
+        "text": " por lo tanto el conjunto de esos cá más 1 vectores es el de ahí, por lo tanto entonces",
+        "start": 4155.820000000001,
+        "end": 4164.18
+    },
+    {
+        "text": " termina el cara de mostración por lo tanto a ese leí ya pago el celular a ese leí es decir",
+        "start": 4164.18,
+        "end": 4185.66
+    },
+    {
+        "text": " por evolo y pongo el paso inductivo y por lo tanto terminamos de probar el teorema.",
+        "start": 4185.66,
+        "end": 4191.5
+    },
+    {
+        "text": " Sí, sí, déjenme hacer un, en los ejemplos quedaran para la clase que viven esos ejemplos",
+        "start": 4196.099999999999,
+        "end": 4204.22
+    },
+    {
+        "text": " tontos iguales pero lo vamos a hacer, lo que les quiero comentar ahora para terminar la clase es un",
+        "start": 4204.22,
+        "end": 4208.62
+    },
+    {
+        "text": " corolar y que se le sorprende de esto, que ya me da un indicio de para que la adopa la cosa para",
+        "start": 4208.62,
+        "end": 4214.22
+    },
+    {
+        "text": " estudiar el problema de la de la diagonalización, un cololario que lo probamos en 2 minutos,",
+        "start": 4214.22,
+        "end": 4218.9800000000005
+    },
+    {
+        "text": " si preguntas atacar, graben esto con fuego en el cerebro si son vectores propios asociados valores",
+        "start": 4218.9800000000005,
+        "end": 4230.66
+    },
+    {
+        "text": " propios distintos son es un conjunto de leí para terminar entonces este cololario importante.",
+        "start": 4230.66,
+        "end": 4239.5
+    },
+    {
+        "text": " Algo que se desprende de manera directa del teorema acabamos de anunciar y que está en el libro.",
+        "start": 4244.22,
+        "end": 4253.22
+    },
+    {
+        "text": " Esto parece una tontela pero hay que probarlo con cuidado, lo que me hice este cololario del teorema",
+        "start": 4304.22,
+        "end": 4312.62
+    },
+    {
+        "text": " de camuete probar es que si estoy trabajando en un espacio y mencioné ene y tengo un operador",
+        "start": 4312.62,
+        "end": 4318.860000000001
+    },
+    {
+        "text": " lineal que tiene ene valores propios todos distintos, ene raíces características en el cuerpo",
+        "start": 4318.860000000001,
+        "end": 4325.780000000001
+    },
+    {
+        "text": " en el que estoy trabajando y todas las raíces distintas, todas como unificidad uno entonces",
+        "start": 4325.780000000001,
+        "end": 4330.820000000001
+    },
+    {
+        "text": " necesariamente té diagonalizable, pues sé que ya sé que si el polinomocaracterístico de",
+        "start": 4330.82,
+        "end": 4337.219999999999
+    },
+    {
+        "text": " grado ene, pueden encontrarle ene raíces distintas en el cuerpo entonces ya sé que el operador",
+        "start": 4337.219999999999,
+        "end": 4346.099999999999
+    },
+    {
+        "text": " es diagonalizable y cómo se prueba eso? ¿Cómo se prueba eso? Estamos trabajando en dimensiones",
+        "start": 4346.099999999999,
+        "end": 4355.38
+    },
+    {
+        "text": " ene. Entonces si yo tengo ene valores propios, todo distinto consideramos los vectores propios,",
+        "start": 4355.38,
+        "end": 4362.9400000000005
+    },
+    {
+        "text": " vectores propios asociados a cada uno de sus valores propios. Entonces consideramos",
+        "start": 4362.9400000000005,
+        "end": 4367.9400000000005
+    },
+    {
+        "text": " bien entonces lo que hacemos es yo tengo ene valores propios todos distintos entonces",
+        "start": 4385.38,
+        "end": 4414.46
+    },
+    {
+        "text": " consideramos ve uno ve dos hasta ve ene vectores propios asociados correspondientes a los valores",
+        "start": 4414.46,
+        "end": 4421.86
+    },
+    {
+        "text": " propios distintos que tengo, lambda uno, lambda dos, lambda ene. O sea para cada valor propio",
+        "start": 4421.86,
+        "end": 4426.74
+    },
+    {
+        "text": " le dije un vector propio. Entonces ¿qué acabamos de probar? Por el teorema que",
+        "start": 4426.74,
+        "end": 4437.06
+    },
+    {
+        "text": " vimos recién el conjunto ve uno ve dos hasta ve ene de esos vectores propios el lleno",
+        "start": 4437.06,
+        "end": 4447.34
+    },
+    {
+        "text": " tiene pendiente porque cada uno de ellos es un vector propio asociado en valor propio",
+        "start": 4447.34,
+        "end": 4451.660000000001
+    },
+    {
+        "text": " distinto. Estamos de acuerdo. Entonces considera un vector propio asociado a cada uno de",
+        "start": 4451.660000000001,
+        "end": 4465.740000000001
+    },
+    {
+        "text": " los valores propios por ser los valores propios distintos este conjunto vectores un conjunto",
+        "start": 4465.74,
+        "end": 4474.62
+    },
+    {
+        "text": " de ley. Entonces tengo en dimensione ene un conjunto de ene vectores leí por lo tanto",
+        "start": 4474.62,
+        "end": 4481.62
+    },
+    {
+        "text": " que se inicia que esto tiene que ser una base como dimensión de ve igual a ene. Entonces",
+        "start": 4481.62,
+        "end": 4492.58
+    },
+    {
+        "text": " implica que ve uno ve dos hasta ve ene es una base del espacio vectorial ve y es una base",
+        "start": 4492.58,
+        "end": 4506.0199999999995
+    },
+    {
+        "text": " de que de vectores propios. Entonces lo que estoy diciendo que tengo una base donde cada uno",
+        "start": 4506.0199999999995,
+        "end": 4512.0199999999995
+    },
+    {
+        "text": " de estos es un vector propio. Entonces tengo una base de vectores propios por lo tanto",
+        "start": 4512.0199999999995,
+        "end": 4521.14
+    },
+    {
+        "text": " estoy en una base de vectores propios t e diau analizable. Se entendió entonces resumiendo",
+        "start": 4521.9400000000005,
+        "end": 4531.860000000001
+    },
+    {
+        "text": " en el caso de que yo tenga n e raíz a distintas que están en el cuerpo, decir n valores propios",
+        "start": 4531.860000000001,
+        "end": 4538.1
+    },
+    {
+        "text": " distintos en un espacio de dimension n yo sé que es diagonalizable. Ahora la pregunta de",
+        "start": 4538.1,
+        "end": 4544.780000000001
+    },
+    {
+        "text": " es qué pasa si se repite, es decir qué pasa si un valor propio e raíz con una multiplicidad",
+        "start": 4544.780000000001,
+        "end": 4551.1
+    },
+    {
+        "text": " mayor que uno. Bueno, a veces es dia una lisable y a veces no lo es. Entonces, hay que ver",
+        "start": 4551.1,
+        "end": 4555.9400000000005
+    },
+    {
+        "text": " bajo qué condiciones es dia una lisable, bajo qué condiciones no lo es y eso va a ser el",
+        "start": 4555.9400000000005,
+        "end": 4559.9800000000005
+    },
+    {
+        "text": " tema de las próximas clases. ¿Se entendió? Bueno, cortamos acá entonces, bueno, en fin",
+        "start": 4559.9800000000005,
+        "end": 4567.64
+    },
+    {
+        "text": " de semana.",
+        "start": 4567.64,
+        "end": 4569.04
+    }
+]
