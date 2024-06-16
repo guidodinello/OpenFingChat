@@ -102,7 +102,7 @@ def transcript():
 
     for subject_id in subject_ids:
         filters = {"subjectId": ObjectId(subject_id), "transcribed": False}
-        lessons = lesson_model.getAll(**filters)
+        lessons = lesson_model.getAll(projection=None, **filters)
         for lesson in lessons:
             video_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp4")
             audio_file_path = os.path.join(BASE_PATH, f"{lesson['_id']}.mp3")

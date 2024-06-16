@@ -1,0 +1,2647 @@
+[
+    {
+        "text": " ¿Qué tal? ¿Qué hice ese conjunto?",
+        "start": 0.0,
+        "end": 12.0
+    },
+    {
+        "text": " Ahora sí entendemos. Perdón, perdón.",
+        "start": 12.0,
+        "end": 32.0
+    },
+    {
+        "text": " ¿Qué son los elementos de ese conjunto? Muy bien.",
+        "start": 42.0,
+        "end": 52.0
+    },
+    {
+        "text": " Tanforlán, suares, cabanis, cáceres, palito, pereira, seborreras, rodrides, ruso, perez, muslera, abre.",
+        "start": 52.0,
+        "end": 63.0
+    },
+    {
+        "text": " No hay jugadores de la selección orgullosa. ¿Qué hice este conjunto?",
+        "start": 63.0,
+        "end": 88.0
+    },
+    {
+        "text": " Como todos sabemos, este es un conjunto de 13 escuelas de acá de Ponto Carreras.",
+        "start": 89.0,
+        "end": 97.0
+    },
+    {
+        "text": " La escuela Brasil, la escuela Grecia y la escuela Francia.",
+        "start": 97.0,
+        "end": 100.0
+    },
+    {
+        "text": " Y por el día del libro, los caballeros del conjunto A, cada caballero del conjunto A,",
+        "start": 100.0,
+        "end": 111.0
+    },
+    {
+        "text": " va a ir algunas de estas escuelas a leerle un cuento a los chiquilines.",
+        "start": 111.0,
+        "end": 118.0
+    },
+    {
+        "text": " Entonces, cada futbolista de A va a leerle un cuento a una escuela del conjunto B.",
+        "start": 118.0,
+        "end": 140.0
+    },
+    {
+        "text": " Y acá de escuela va a ir al menos uno de ellos. O sea, no es que todos van a ir a la Brasil y la Grecia y nadie va a ver a la Francia.",
+        "start": 140.0,
+        "end": 159.0
+    },
+    {
+        "text": " Entonces, cada uno va a ir a una escuela, o sea, no es que Forlán va a ir a las 13 escuelas, ¿no?",
+        "start": 171.0,
+        "end": 182.0
+    },
+    {
+        "text": " Forlán va a ir a una, suare, peira una, cabanis, peira una, cáceres, peira una, etc.",
+        "start": 182.0,
+        "end": 187.0
+    },
+    {
+        "text": " Pero a todas esas escuelas va a ir a algún futbolista de leerle un cuento a los chiquilines.",
+        "start": 187.0,
+        "end": 192.0
+    },
+    {
+        "text": " Entonces, la pregunta es de cuántas maneras podemos elegir qué futbolista va a la escuela.",
+        "start": 192.0,
+        "end": 221.0
+    },
+    {
+        "text": " O sea, la Comisión Uruguay del Libro en conjunto con la inspección de primaria va a decidir quién va a dónde, de cuántas maneras pueden hacer eso.",
+        "start": 221.0,
+        "end": 240.0
+    },
+    {
+        "text": " Muy bien, ese es el problema que vamos a pensar en la primera parte de esta clase.",
+        "start": 241.0,
+        "end": 252.0
+    },
+    {
+        "text": " Entonces, o serven, este problema lo podemos abordar de la siguiente manera, asignar un futbolista a cada una de estas 13 escuelas.",
+        "start": 253.0,
+        "end": 272.0
+    },
+    {
+        "text": " Es lo mismo que dar una función F del conjunto A en el conjunto B, ¿sí?",
+        "start": 273.0,
+        "end": 284.0
+    },
+    {
+        "text": " De manera que si F de Fulanito es la escuela tal, acá con el escudo, la escuela.",
+        "start": 284.0,
+        "end": 299.0
+    },
+    {
+        "text": " Eso quiere decir que Fulanito va a ir a leer a la escuela tal.",
+        "start": 300.0,
+        "end": 317.0
+    },
+    {
+        "text": " O sea, esta funciona asina, a cada futbolista la escuela, al cual el futbolista va a ir a leer cuentos. ¿Tan de acuerdo?",
+        "start": 318.0,
+        "end": 329.0
+    },
+    {
+        "text": " Bueno, entonces preguntar de cuántas maneras podemos elegir qué futbolista va a la escuela. Es lo mismo que preguntar cuántas funciones A y B, excepto por una condición.",
+        "start": 330.0,
+        "end": 349.0
+    },
+    {
+        "text": " Porque sabemos que acá escuela va a ir al menos uno de ellos. Entonces, por ejemplo, la función que manda a todo el mundo a la escuela Francia no es una respuesta posible.",
+        "start": 350.0,
+        "end": 367.0
+    },
+    {
+        "text": " Entonces, el problema consiste en contar cuántas funciones hay del conjunto de estos 9 futbolistas, el conjunto B de escuelas, de manera que alguien vaya a la escuela Brasil, que condición es esa sobre la función.",
+        "start": 368.0,
+        "end": 390.0
+    },
+    {
+        "text": " ¿Qué sea sobreyectiva? ¿Sí? Entonces, el problema consiste en contar cuántas funciones sobreyectivas hay de A y B.",
+        "start": 390.0,
+        "end": 404.0
+    },
+    {
+        "text": " Muy bien. Entonces, ¿Ustedes saben que acá en la universidad hacemos trabajo de extensión?",
+        "start": 420.0,
+        "end": 449.0
+    },
+    {
+        "text": " O sea, a veces hacemos trabajos de relacionamiento con la sociedad. Entonces, cuando vinieron de la cámara del libro y de la inspección de primaria a preguntar nos cuántas maneras tenían de hacer esto, yo fui a mi oficina, trate a hacerlo y me pareció difícil.",
+        "start": 451.0,
+        "end": 466.0
+    },
+    {
+        "text": " Entonces, vamos a tratar de resolver este problema, pero empezando por un problema más fácil y viendo si tenemos algunas ideas.",
+        "start": 467.0,
+        "end": 476.0
+    },
+    {
+        "text": " Entonces, acá tenemos este conjunto de 9 elementos y acá tenemos este conjunto de 3 elementos, esa es el problema real. Vamos a empezar por algo más modesto.",
+        "start": 477.0,
+        "end": 491.0
+    },
+    {
+        "text": " ¿Qué es esto?",
+        "start": 491.0,
+        "end": 498.0
+    },
+    {
+        "text": " En el primer ejemplo, voy a tomar un conjunto A con 3 elementos y quisicita y un conjunto B con 2 elementos, 1 y 2.",
+        "start": 499.0,
+        "end": 511.0
+    },
+    {
+        "text": " ¿Cuántas funciones sobreyectivas hay de A y B?",
+        "start": 514.0,
+        "end": 519.0
+    },
+    {
+        "text": " Entonces, ¿Una estrategia posible contar todas las funciones? Eso sabíamos hacer. ¿Se acuerdan?",
+        "start": 521.0,
+        "end": 550.0
+    },
+    {
+        "text": " ¿Vamos a hacer todas las funciones de A y B? Entonces, vamos a hacer lo siguiente. La función es sobre, van a hacer todas las funciones, menos las que no son sobreyectativas.",
+        "start": 551.0,
+        "end": 574.0
+    },
+    {
+        "text": " Muy bien, esa es mi contribución al problema. Entonces, ¿cuántas serán todas las funciones de A y B? ¿Cómo contamos todas las funciones de A y B?",
+        "start": 582.0,
+        "end": 599.0
+    },
+    {
+        "text": " ¿Cuántas serán todas las funciones de A y B?",
+        "start": 600.0,
+        "end": 606.0
+    },
+    {
+        "text": " ¿Cómo era? Ya me olvidé.",
+        "start": 607.0,
+        "end": 614.0
+    },
+    {
+        "text": " ¿Pero por qué no? Yo no sé ni me acuerdo cuál es el número.",
+        "start": 615.0,
+        "end": 624.0
+    },
+    {
+        "text": " ¿Pero tiene todo para el 1 o 2?",
+        "start": 624.0,
+        "end": 627.0
+    },
+    {
+        "text": " ¿Sí? Para el primer, primero tenemos que elegir a dónde va A y X. Para elegir a dónde va A y X tenemos 2 opciones, el 1 o el 2.",
+        "start": 628.0,
+        "end": 639.0
+    },
+    {
+        "text": " Entonces, tenemos 2 opciones para contar este pedazo. Tenemos 2 opciones para A y X. Una vez que vimos a dónde va A y X tenemos 2 opciones para A y una vez que vimos a dónde va A y tenemos 2 opciones para A y ¿Qué pasa?",
+        "start": 639.0,
+        "end": 656.0
+    },
+    {
+        "text": " Entonces, esto es 2 al cubo son todas las funciones. Las permutaciones contaban las funciones inyectivas, ¿no? ¿Qué inyectivas de A y B acá no vamos a tener?",
+        "start": 657.0,
+        "end": 674.0
+    },
+    {
+        "text": " Pero por ejemplo, si buscaramos funciones de B y N, la funciones inyectivas, sí serían las permutaciones de 3 de tamaño 2. Porque sería elegir 2 de estos con 1 orden.",
+        "start": 675.0,
+        "end": 688.0
+    },
+    {
+        "text": " Pero las inyectivas, pero acá simplemente dar una funciones de si a dónde va A y X, para lo cual hay 2 opciones, a dónde va A y para lo cual hay 2 opciones, para donde va A y para lo cual hay 2 opciones.",
+        "start": 688.0,
+        "end": 701.0
+    },
+    {
+        "text": " Por la regla del producto, eso da 2 al cubo. ¿Se acuerdan de eso?",
+        "start": 702.0,
+        "end": 708.0
+    },
+    {
+        "text": " Tienen que estar de acuerdo en cada paso, porque tenemos que llegar a este problema. ¿Vien? ¿Cuáles son las que no son sobreyectivas? ¿Qué funciones ahí de A y B que no sean sobreyectivas?",
+        "start": 708.0,
+        "end": 726.0
+    },
+    {
+        "text": " Hay 2, la que manda todo al 1 y la que manda todo al 2. ¿Sí? Porque como acá hay solamente 2 valores, la única manera de que no sean sobreyectivas es si no tome el 1, porque manda todo al 2 y si no tome el 2 es porque manda todo al 1.",
+        "start": 732.0,
+        "end": 751.0
+    },
+    {
+        "text": " Entonces las que no son sobreyectivas son las constantes. Entonces hay 2 funciones que no son sobreyectivas. Entonces esto me quedó la funciones sobreyectivas de A y B son 2 al cubo, menos 2 son 6.",
+        "start": 751.0,
+        "end": 777.0
+    },
+    {
+        "text": " Muy bien. Basta bien.",
+        "start": 782.0,
+        "end": 792.0
+    },
+    {
+        "text": " Ahora vamos a pensar un segundo problema. Digamos que A tiene M elementos y B sigue teniendo 2.",
+        "start": 793.0,
+        "end": 816.0
+    },
+    {
+        "text": " Y la pregunta es la misma ¿cuántas funciones sobreyectivas hay de A y B?",
+        "start": 816.0,
+        "end": 828.0
+    },
+    {
+        "text": " Entonces de vuelta la funciones sobreyectivas son todas las funciones, menos las que no son sobreyectivas.",
+        "start": 828.0,
+        "end": 857.0
+    },
+    {
+        "text": " الذan ready.",
+        "start": 859.0,
+        "end": 864.0
+    },
+    {
+        "text": " Ahora sí, sabemos contar todas las funciones que hay de A m b. Lo mismo sí, 12 a la A m, porque",
+        "start": 864.0,
+        "end": 890.12
+    },
+    {
+        "text": " para, digamos que decir a dónde mandamos X 1, a dónde mandamos X 2, hasta a dónde mandamos",
+        "start": 890.12,
+        "end": 896.08
+    },
+    {
+        "text": " X m. Entonces, para mandar X 1 tenemos dos opciones, X 2, para mandar X 2 tenemos dos",
+        "start": 896.08,
+        "end": 906.68
+    },
+    {
+        "text": " opciones, opciones, si hay si hasta X m, entonces por la regla del producto tenemos 2 a la",
+        "start": 906.68,
+        "end": 915.6800000000001
+    },
+    {
+        "text": " A m funciones de A m b. Y cuánta funciones tenemos que no son sobrejectivas? 12 nuevo,",
+        "start": 915.68,
+        "end": 928.28
+    },
+    {
+        "text": " si, tenemos las únicas funciones que no son sobrejectivas, es la que manda todo el mundo",
+        "start": 928.28,
+        "end": 935.2399999999999
+    },
+    {
+        "text": " a 1 y la que manda todo el mundo a 2. Entonces, la cantidad de funciones sobrejectivas es",
+        "start": 935.24,
+        "end": 952.62
+    },
+    {
+        "text": " 2 a la A m menos 2. Entonces, esto resolvería nuestro problema si tuvieramos solo 12 escuelas.",
+        "start": 952.62,
+        "end": 974.3
+    },
+    {
+        "text": " Si nos preguntáramos, cuántas funciones hay del conjunto de los sobrejectivas, del conjunto",
+        "start": 974.3,
+        "end": 986.18
+    },
+    {
+        "text": " de nueve futbolistas en el conjunto de las escuelas, Francia y Grecia, esos sí los vamos a resolver.",
+        "start": 986.18,
+        "end": 994.06
+    },
+    {
+        "text": " El problema es que tenemos 13 escuelas. Entonces, vamos a tratar de pasar algún ejemplo",
+        "start": 994.06,
+        "end": 1004.6999999999999
+    },
+    {
+        "text": " en el cual el codomínio tenga 13 elementos. Entonces, el conjunto ahora va a ser W X y Z y el",
+        "start": 1008.9399999999999,
+        "end": 1018.6199999999999
+    },
+    {
+        "text": " conjunto B va a ser 1, 2, 3. Y la pregunta es la misma cuánto funciones sobrejectivas hay de A m b.",
+        "start": 1018.62,
+        "end": 1028.42
+    },
+    {
+        "text": " Algo así o sea. Pero ahí se va a empezar a complicar exactamente. Entonces,",
+        "start": 1028.42,
+        "end": 1056.0600000000002
+    },
+    {
+        "text": " de vuelta todas las funciones sobrejectivas van a ser todas las funciones menos las que no son",
+        "start": 1056.06,
+        "end": 1065.78
+    },
+    {
+        "text": " sobrejectivas. Lo que pasa es que contar las que no son sobrejectivas va a ser un poquito más complicado.",
+        "start": 1065.78,
+        "end": 1073.26
+    },
+    {
+        "text": " Entonces, ¿cuáles son todas las funciones?",
+        "start": 1073.82,
+        "end": 1078.82
+    },
+    {
+        "text": " ¿Cuántas funciones de A m b a y en total?",
+        "start": 1078.82,
+        "end": 1100.78
+    },
+    {
+        "text": " Ahí estamos acá.",
+        "start": 1100.78,
+        "end": 1108.78
+    },
+    {
+        "text": " 3 a la 4, ¿sí? Es elegir uno de estos 3. El elegir a donde va W, hay 3 posibilidades,",
+        "start": 1108.78,
+        "end": 1118.8999999999999
+    },
+    {
+        "text": " a donde va A y quizá hay 3 posibilidades y así sucesivamente. Entonces, todas las funciones son",
+        "start": 1118.8999999999999,
+        "end": 1124.78
+    },
+    {
+        "text": " pero es a la 4 funciones. Ahora, vamos a contar las que no son sobrejectivas.",
+        "start": 1124.78,
+        "end": 1133.18
+    },
+    {
+        "text": " Entonces, una función, por ejemplo, puede no ser sobrejectiva porque no tome el valor 3,",
+        "start": 1133.18,
+        "end": 1158.3400000000001
+    },
+    {
+        "text": " o sea, 3 no es F de nadie. Entonces, por ejemplo, vamos a contar todas las funciones,",
+        "start": 1158.34,
+        "end": 1174.1
+    },
+    {
+        "text": " las funciones que no tomen el valor 3. Eso es lo que quiere decir, es que son funciones del",
+        "start": 1174.1,
+        "end": 1195.62
+    },
+    {
+        "text": " conjunto A en el conjunto que tiene solo el 1 y el 2. Si quiere pasar y sentate, lo",
+        "start": 1195.62,
+        "end": 1207.86
+    },
+    {
+        "text": " peor que te puede pasar es que te pregunte.",
+        "start": 1207.86,
+        "end": 1212.62
+    },
+    {
+        "text": " Bien, esta se quejada que tenía gente del pasillo y ahora resulta que yo también cojente",
+        "start": 1212.62,
+        "end": 1220.62
+    },
+    {
+        "text": " el pasillo en el turno de la tarde. Vamos a contar las que no tomen el valor 3. Entonces,",
+        "start": 1220.62,
+        "end": 1231.62
+    },
+    {
+        "text": " si no tomen el valor 3, eso quiere decir que 3 no es F de nadie. Si 3 no es F de nadie,",
+        "start": 1231.62,
+        "end": 1238.1799999999998
+    },
+    {
+        "text": " lo mismo es decir que la función va de A en el conjunto 1, 2. Y bueno, y la funciones",
+        "start": 1238.18,
+        "end": 1250.26
+    },
+    {
+        "text": " de A en el conjunto 1, 2 ya las teníamos dominadas, las funciones de A en el conjunto 1, 2 son",
+        "start": 1250.26,
+        "end": 1260.6200000000001
+    },
+    {
+        "text": " a 4 funciones. O sea, para dar una función de A en el conjunto 1, 2 tenemos que decir a",
+        "start": 1260.62,
+        "end": 1282.0
+    },
+    {
+        "text": " donde va W para el cual tenemos 4... Eso era las funciones sobrejectivas de A en el",
+        "start": 1282.0,
+        "end": 1292.02
+    },
+    {
+        "text": " conjunto 1, 2. Pero entonces, como nuestra estrategia siempre es contar todas las funciones",
+        "start": 1292.02,
+        "end": 1299.4
+    },
+    {
+        "text": " y sacar las que no son sobrejectivas, acá contamos todas las funciones y acá sacamos",
+        "start": 1299.4,
+        "end": 1305.96
+    },
+    {
+        "text": " las que no son sobrejectivas. Entonces, en realidad no estamos buscando las que son",
+        "start": 1305.96,
+        "end": 1315.16
+    },
+    {
+        "text": " sobrejectivas de A en el conjunto 1, 2, sino que queremos contar todas las funciones",
+        "start": 1315.16,
+        "end": 1322.08
+    },
+    {
+        "text": " que no tomen el valor 3. Entonces, ya no son sobrejectivas, entonces ya no nos importa si",
+        "start": 1322.08,
+        "end": 1327.24
+    },
+    {
+        "text": " toman tanto el valor 1 como el 2 o si no. Igual hay que sacarlas. Te amo todas las que",
+        "start": 1327.24,
+        "end": 1333.0
+    },
+    {
+        "text": " no toman el valor 3 hay que sacarlas. Todas las que no toman el valor 3 son esta cantidad.",
+        "start": 1333.0,
+        "end": 1340.0
+    },
+    {
+        "text": " ¿No? ¿Que no toman el valor 3? ¿Quiere decir?",
+        "start": 1340.0,
+        "end": 1348.0
+    },
+    {
+        "text": " Claro, decir las que no toman el valor 3 es lo mismo que decir. El número 3 no es F de",
+        "start": 1348.0,
+        "end": 1360.64
+    },
+    {
+        "text": " nadie. Por ejemplo, si uno, dos y tres fueran las escuelas Brasil, Grecia y Francia,",
+        "start": 1360.64,
+        "end": 1379.16
+    },
+    {
+        "text": " aquí está diamos contando las funciones en las que nadie va a la escuelas Francia.",
+        "start": 1379.16,
+        "end": 1386.16
+    },
+    {
+        "text": " ¿No tenemos más sobrejectivas con el 3 o cuando? ¿Cuáles estamos a promulares? ¿Cuándo",
+        "start": 1386.16,
+        "end": 1390.8400000000001
+    },
+    {
+        "text": " dos vas a montar dos veces en el 3 o que?",
+        "start": 1390.8400000000001,
+        "end": 1393.16
+    },
+    {
+        "text": " Está bien. Entiendo lo que decís, entiendo que tengas razón, pero lo estoy haciendo",
+        "start": 1393.16,
+        "end": 1401.8000000000002
+    },
+    {
+        "text": " así para que me quede una fórmula que va a tener cierta pinta, que luego va a ser la",
+        "start": 1401.8000000000002,
+        "end": 1407.72
+    },
+    {
+        "text": " pinta de una fórmula general que vamos a dar. Entonces, veamos si es verdad que hay cosas",
+        "start": 1407.72,
+        "end": 1413.96
+    },
+    {
+        "text": " que estoy contando varias veces y ahora cuando lleguemos al punto en que haya que sacarla,",
+        "start": 1413.96,
+        "end": 1418.44
+    },
+    {
+        "text": " pues me vas a contar lo que son. Muy bien. Entonces, una función puede ser sobrejectiva,",
+        "start": 1418.44,
+        "end": 1429.48
+    },
+    {
+        "text": " digamos, ¿a qué están las que sí son todas? Estamos contando las que no son sobrejectivas.",
+        "start": 1429.48,
+        "end": 1435.08
+    },
+    {
+        "text": " Es una función puede no ser sobrejectiva porque es no ese fe nadie, pero también puede",
+        "start": 1435.08,
+        "end": 1440.96
+    },
+    {
+        "text": " ser sobrejectiva porque por ejemplo, dos no es ese fe nadie. Entonces, esas las tenemos",
+        "start": 1440.96,
+        "end": 1447.48
+    },
+    {
+        "text": " que contar también. Entonces, estamos contando las que no son sobre, ya contamos las",
+        "start": 1447.48,
+        "end": 1458.1999999999998
+    },
+    {
+        "text": " que no toman el valor 3 del mismo modo las que no toman el valor 2 también van a ser",
+        "start": 1458.2,
+        "end": 1467.4
+    },
+    {
+        "text": " las 2 a las 4 funciones. Sí? O sea, hay 2 a las 4 funciones que no toman el valor 3",
+        "start": 1467.4,
+        "end": 1490.3200000000002
+    },
+    {
+        "text": " y el mismo modo hay 2 a las 4 funciones que no toman el valor 2. Sí? Que son funciones",
+        "start": 1490.32,
+        "end": 1497.32
+    },
+    {
+        "text": " de A en el conjunto 1, 3 y se cuentan igual. Sí? Y del mismo modo hay 2 a las 4 funciones",
+        "start": 1497.32,
+        "end": 1511.72
+    },
+    {
+        "text": " que no toman el valor 1. Entonces, estas son las funciones del conjunto A en el conjunto",
+        "start": 1511.72,
+        "end": 1527.08
+    },
+    {
+        "text": " 2, 3. Entonces, será será será será será será será será que las funciones que",
+        "start": 1527.08,
+        "end": 1550.28
+    },
+    {
+        "text": " no son sobrejectivas son las que no toman el valor 1 más las que no toman el valor 2 más",
+        "start": 1550.28,
+        "end": 1569.72
+    },
+    {
+        "text": " las que no toman el valor 3 o sea 3 por 2 a la 4. Exacto. Hay cosas que estoy contando",
+        "start": 1569.72,
+        "end": 1586.2
+    },
+    {
+        "text": " dos veces, que es lo que decía el compañero y dicen acá, que estoy contando dos veces por",
+        "start": 1586.2,
+        "end": 1591.2
+    },
+    {
+        "text": " ejemplo la función que toma solamente el valor 1, porque la función que solamente tome",
+        "start": 1591.2,
+        "end": 1599.76
+    },
+    {
+        "text": " el valor 1 la conté entre las que no toman el valor 2 y las que no toman el valor 3.",
+        "start": 1599.76,
+        "end": 1607.64
+    },
+    {
+        "text": " Se se asuncia la con 2 veces igualmente la función que solo tome el valor 2 la con 2 veces",
+        "start": 1607.64,
+        "end": 1616.0
+    },
+    {
+        "text": " y la función que solo tome el valor 3 las con 2 veces. Entonces, en esta cuenta que",
+        "start": 1616.0,
+        "end": 1624.08
+    },
+    {
+        "text": " está mal, la respuesta de esto es no, porque acá contamos dos veces las funciones constantes,",
+        "start": 1624.08,
+        "end": 1643.3999999999999
+    },
+    {
+        "text": " o sea, las funciones que toman solo los valores 1, 2 y 3. Cuánto funciones constantes",
+        "start": 1643.4,
+        "end": 1656.96
+    },
+    {
+        "text": " hay, hay tres. Entonces, si hay tres funciones que las contamos dos veces lo que hacemos es",
+        "start": 1656.96,
+        "end": 1668.1200000000001
+    },
+    {
+        "text": " a este número le restamos tres y ahí las tres funciones que hemos contado dos veces las",
+        "start": 1668.12,
+        "end": 1676.7199999999998
+    },
+    {
+        "text": " contamos una vez. Entonces, lo que sí está bien es decir que las funciones que no son",
+        "start": 1676.7199999999998,
+        "end": 1683.6
+    },
+    {
+        "text": " sobrejectivas, entonces, las funciones que no son sobrejectivas son las que no toman",
+        "start": 1683.6,
+        "end": 1710.8799999999999
+    },
+    {
+        "text": " el valor 1, las que no toman el valor 2 y las que no toman el valor 3 sumadas menos las",
+        "start": 1710.88,
+        "end": 1720.6000000000001
+    },
+    {
+        "text": " funciones que habíamos contado dos veces. Si se ve o más o menos.",
+        "start": 1720.6,
+        "end": 1727.6
+    },
+    {
+        "text": " Y entonces, las funciones sobrejectivas de vuelta son todas las funciones.",
+        "start": 1750.6,
+        "end": 1778.6
+    },
+    {
+        "text": " Minos las que no son sobrejectivas. Entonces, todas las funciones eran 3 a la 4, este era la primera",
+        "start": 1778.6,
+        "end": 1807.52
+    },
+    {
+        "text": " cuenta que habíamos hecho allá arriba y las que no son sobrejectivas eran 3 por 2 a la 4",
+        "start": 1807.52,
+        "end": 1819.72
+    },
+    {
+        "text": " menos 3. Entonces, la cantidad total de funciones sobrejectivas es 3 a la 4 menos 3 por",
+        "start": 1819.72,
+        "end": 1837.48
+    },
+    {
+        "text": " 2 a la 4 más 3. Y esa es la cantidad de funciones sobrejectivas de un conjunto de 4 elementos",
+        "start": 1837.48,
+        "end": 1849.04
+    },
+    {
+        "text": " en un conjunto de 3. Senumedito es correcto. Tiene un aspecto un poco pedístre y como esta",
+        "start": 1849.04,
+        "end": 1860.84
+    },
+    {
+        "text": " javier acá me avergüen un poco que piense que yo no enseño cosas suficientemente sofisticadas, que",
+        "start": 1860.84,
+        "end": 1867.6799999999998
+    },
+    {
+        "text": " después vaya al instituto y día que yo enseño puras bobas. Entonces, vamos a maquillar ese número para",
+        "start": 1867.6799999999998,
+        "end": 1872.84
+    },
+    {
+        "text": " darle un aspecto como más conchito. Entonces, el 3 a la 4 es un 3 a la 4, no hay mucho que hacer.",
+        "start": 1872.84,
+        "end": 1891.24
+    },
+    {
+        "text": " De dónde vino ese 3? De algo al cocomino. Este 3 viene de estos 3 casos. De acá salió un 2 a la 4,",
+        "start": 1891.24,
+        "end": 1906.72
+    },
+    {
+        "text": " de acá salió otro 2 a la 4 y de acá salió otro 2 a la 4. Entonces, este 3 es la cantidad de",
+        "start": 1906.72,
+        "end": 1924.32
+    },
+    {
+        "text": " conjuntos de subconjunto de dos elementos que tenía el cocomino. El cocomino tenía 3 elementos y ese 3 es",
+        "start": 1924.32,
+        "end": 1941.1599999999999
+    },
+    {
+        "text": " la cantidad de subconjunto de dos elementos. Entonces, el nombre artístico de este 3 es combinaciones de 3",
+        "start": 1941.1599999999999,
+        "end": 1949.24
+    },
+    {
+        "text": " tomadas de 2, porque el cocomino tenía 3 elementos, la cantidad de subconjunto de dos elementos.",
+        "start": 1949.24,
+        "end": 1956.52
+    },
+    {
+        "text": " Y entonces, después acá hay un número 1 y acá hay otro número 1 que estamos duplicando y el número",
+        "start": 1956.52,
+        "end": 1977.56
+    },
+    {
+        "text": " 1 tiene un nombre precioso que es combinaciones de 3 tomadas de 3. Acá tenemos este 3, que es combinaciones de 3 tomadas de 2 y",
+        "start": 1977.56,
+        "end": 1997.28
+    },
+    {
+        "text": " hay otro 3, este 3 que está acá vino de los siguientes. Este 3 era las funciones que habíamos contado dos",
+        "start": 1997.28,
+        "end": 2014.24
+    },
+    {
+        "text": " veces, o sea las funciones constantes, son tantas como subconjunto de un elemento TNB. Entonces, este 3 es",
+        "start": 2014.24,
+        "end": 2025.16
+    },
+    {
+        "text": " combinaciones de 3 tomadas de 1. Entonces, la cantidad de funciones subrejectivas me quedó escrito así.",
+        "start": 2025.16,
+        "end": 2036.52
+    },
+    {
+        "text": " Muy bien, está mucho más coqueta. Muy bien, vamos a... estamos casi ahí, nuestro problema original era que",
+        "start": 2036.52,
+        "end": 2055.08
+    },
+    {
+        "text": " teníamos 9 futbolistas que iban a leer cuentos a 13 escuelas y queríamos saber de cuántas maneras",
+        "start": 2055.08,
+        "end": 2063.32
+    },
+    {
+        "text": " podemos mandarlo de manera que todo el mundo fuera de alguna escuela. Entonces, tenemos que contar funciones no de un",
+        "start": 2063.32,
+        "end": 2070.28
+    },
+    {
+        "text": " conjunto de 4 elementos en un conjunto de 3 elementos, sino de un conjunto de 9 elementos en un conjunto de 3",
+        "start": 2070.28,
+        "end": 2078.28
+    },
+    {
+        "text": " elementos. El conjunto de los 9 futbolistas en las 13 escuelas. Entonces, el último ejemplo que es el que va a resolver",
+        "start": 2078.28,
+        "end": 2086.28
+    },
+    {
+        "text": " nuestro problema es tengo el conjunto A de M elementos, el conjunto B de 3 elementos. Y la misma pregunta, cuántas funciones sobre",
+        "start": 2086.28,
+        "end": 2106.48
+    },
+    {
+        "text": " los efectivas hay de A y B. Entonces, todas las funciones de A y B son... Todas las funciones de A y B son...",
+        "start": 2106.48,
+        "end": 2131.4
+    },
+    {
+        "text": " ¿Cuántas son? Teresa la M, ¿sí?",
+        "start": 2131.4,
+        "end": 2138.4
+    },
+    {
+        "text": " Igual ya antes. Entonces, ahora tenemos que contar las que no son los efectivas.",
+        "start": 2138.4,
+        "end": 2160.4
+    },
+    {
+        "text": " ¿Por qué acá no puse C3 en 3? Sí, sí. No, al final en la fórmula lo voy a poner, claro que sí. Lo puedo poner porque igual es el número 1, ¿verdad?",
+        "start": 2160.4,
+        "end": 2182.4
+    },
+    {
+        "text": " Al final de la fórmula sí lo voy a poner. Entonces, acá hay un 1, que es combinación de 3 tomadas de 3.",
+        "start": 2182.4,
+        "end": 2193.4
+    },
+    {
+        "text": " Y ese es el número 1. Ahora, las que no son sobrelectivas, entonces lo que tenemos que contar es para cada subconjunto de 12 elementos de B.",
+        "start": 2193.4,
+        "end": 2206.4
+    },
+    {
+        "text": " Vamos, para acá subconjunto B prima contenido en B de 12 elementos.",
+        "start": 2224.4,
+        "end": 2232.4
+    },
+    {
+        "text": " Hay... Funciones de A en B prima.",
+        "start": 2233.4,
+        "end": 2242.4
+    },
+    {
+        "text": " Entonces, por ejemplo cuando B prima es el conjunto que tiene solo al 1 y el 2, hay 2 a la M funciones de A en el conjunto que tiene al 1 y el X y así con todos.",
+        "start": 2243.4,
+        "end": 2260.4
+    },
+    {
+        "text": " Y entonces, después, acá las que no son sobrelectivas no es simplemente sumar todos estos 2 a la M porque si hacíamos eso hay funciones que estamos contando 2 veces.",
+        "start": 2261.4,
+        "end": 2278.4
+    },
+    {
+        "text": " Entonces, las funciones constantes son las que contamos 2 veces. Entonces, hay 3 funciones constantes.",
+        "start": 2279.4,
+        "end": 2296.4
+    },
+    {
+        "text": " Y este 3 son las famosas combinaciones de 3 tomadas de 1 y después cuando hablamos de cada subconjunto B contenido en B prima de 12 elementos, cuantas de estos hay.",
+        "start": 2296.4,
+        "end": 2323.4
+    },
+    {
+        "text": " B tiene 3 elementos. Hay combinaciones de 3 tomadas de 2 maneras de elegir conjunto de 2 elementos.",
+        "start": 2327.4,
+        "end": 2342.4
+    },
+    {
+        "text": " Entonces, la cantidad de funciones sobrelectivas de A en B va a ser.",
+        "start": 2343.4,
+        "end": 2360.4
+    },
+    {
+        "text": " La cantidad total de funciones que estresa la M decorado con este 1 delante menos combinaciones de 3 tomadas de A2 por 2 a la M.",
+        "start": 2361.4,
+        "end": 2389.4
+    },
+    {
+        "text": "",
+        "start": 2389.4,
+        "end": 2390.4
+    },
+    {
+        "text": "",
+        "start": 2419.4,
+        "end": 2420.4
+    },
+    {
+        "text": " Entonces, la pregunta es de cuántas maneras podemos mandar a estos caballeros a estas escuelas a leerles libros a los chiquilines de manera que a todas las escuelas vaya al menos un futbolista del conjunto A.",
+        "start": 2449.4,
+        "end": 2477.4
+    },
+    {
+        "text": " La respuesta es esto con E. Igual 9.",
+        "start": 2477.4,
+        "end": 2484.4
+    },
+    {
+        "text": " O sea, hay combinaciones de 3 tomadas de A3.",
+        "start": 2485.4,
+        "end": 2489.4
+    },
+    {
+        "text": " Deres a la 9 menos combinaciones de 3 tomadas de 2 a la 9 más combinaciones de 3 tomadas de 1 maneras de mandar los futbolistas de A a las escuelas de B.",
+        "start": 2489.4,
+        "end": 2513.4
+    },
+    {
+        "text": " De modo que a todas las escuelas vaya al menos un poco.",
+        "start": 2519.4,
+        "end": 2526.4
+    },
+    {
+        "text": " De modo que a todas las escuelas van a ser más combinaciones de 3 tomadas de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1 maneras de 1",
+        "start": 2549.4,
+        "end": 2579.4
+    },
+    {
+        "text": " siempre que haya algo que esté mal y que yo me descuento",
+        "start": 2579.4,
+        "end": 2609.4
+    },
+    {
+        "text": " y de sumas eso.",
+        "start": 2609.4,
+        "end": 2614.4
+    },
+    {
+        "text": " sumar no, entonces hoy vamos a explicar porque lo estás haciendo como por en etapas.",
+        "start": 2614.4,
+        "end": 2619.4
+    },
+    {
+        "text": " acá la compañía de hice algo que es lo siguiente. Tenemos el conjunto a con los 9 jugadores",
+        "start": 2619.4,
+        "end": 2627.4
+    },
+    {
+        "text": " y el conjunto ve y con las 13 escuelas.",
+        "start": 2627.4,
+        "end": 2631.4
+    },
+    {
+        "text": " entonces ya dice vamos a contar la respuesta este problema de otra manera.",
+        "start": 2631.4,
+        "end": 2637.4
+    },
+    {
+        "text": " entonces la primera etapa es decir vamos a mandar uno,",
+        "start": 2637.4,
+        "end": 2641.4
+    },
+    {
+        "text": " ve, se acuerdan que es, vamos a ponerles un orden, es Brasil, Greicy y Francia.",
+        "start": 2641.4,
+        "end": 2649.4
+    },
+    {
+        "text": " entonces ya dice vamos a mandar uno a la escuela Brasil.",
+        "start": 2649.4,
+        "end": 2654.4
+    },
+    {
+        "text": " entonces para quién va la escuela Brasil para mandar uno a la escuela Brasil tenemos 9 posibilidades.",
+        "start": 2655.4,
+        "end": 2661.4
+    },
+    {
+        "text": " después tenemos que mandar uno a la escuela Grecia.",
+        "start": 2661.4,
+        "end": 2669.4
+    },
+    {
+        "text": " entonces digamos como ya mandamos a Forland por decir algo a la escuela Brasil,",
+        "start": 2669.4,
+        "end": 2674.4
+    },
+    {
+        "text": " no quedan 8 posibilidades para mandarles a la escuela Grecia.",
+        "start": 2674.4,
+        "end": 2679.4
+    },
+    {
+        "text": " y después como ya mandamos a Forland a la Brasil y a Suárez a la Grecia nos quedan 7 posibilidades para la escuela Francia.",
+        "start": 2680.4,
+        "end": 2690.4
+    },
+    {
+        "text": " entonces digamos que ya mandamos a Forland acá suérez a cada cabaneca.",
+        "start": 2692.4,
+        "end": 2696.4
+    },
+    {
+        "text": " y después simplemente nos quedan 6 jugadores, 6 futbolistas, a los cuales podemos mandar de cualquier manera.",
+        "start": 2696.4,
+        "end": 2707.4
+    },
+    {
+        "text": " entonces ahí simplemente tenemos que decir a donde va Cásteres, hay 3 posibilidades.",
+        "start": 2708.4,
+        "end": 2714.4
+    },
+    {
+        "text": " a donde va el rusopeares, hay 3 posibilidades etc.",
+        "start": 2714.4,
+        "end": 2717.4
+    },
+    {
+        "text": " entonces para cada uno de los 6 futbolistas que quedan tenemos 3 posibilidades.",
+        "start": 2717.4,
+        "end": 2723.4
+    },
+    {
+        "text": " entonces después para cada uno de los 6 que quedan simplemente tenemos que ver a donde van.",
+        "start": 2723.4,
+        "end": 2732.4
+    },
+    {
+        "text": " o sea esto sería 9 por 8 por 7 por 3 a 6.",
+        "start": 2737.4,
+        "end": 2744.4
+    },
+    {
+        "text": " eso es lo que vos decías.",
+        "start": 2744.4,
+        "end": 2746.4
+    },
+    {
+        "text": " esto no va a dar lo mismo que lo otro.",
+        "start": 2748.4,
+        "end": 2751.4
+    },
+    {
+        "text": " ¿Qué pasó acá?",
+        "start": 2751.4,
+        "end": 2753.4
+    },
+    {
+        "text": " El radi irgendwo fue el notable, al cual se domigió, por un lado por un lado,",
+        "start": 2753.4,
+        "end": 2758.64
+    },
+    {
+        "text": " caigo, por un lado por un lado.",
+        "start": 2758.64,
+        "end": 2760.1600000000003
+    },
+    {
+        "text": " Pues ustedes, hoy en general, pero ustedes…",
+        "start": 2761.14,
+        "end": 2766.4
+    },
+    {
+        "text": " A ver inadmecida chunky,",
+        "start": 2767.4,
+        "end": 2771.92
+    },
+    {
+        "text": " nadie les haiane regulator a la escuela y тобой noσει nada,",
+        "start": 2772.9,
+        "end": 2777.54
+    },
+    {
+        "text": " porque se muestra tener la cantidadideras,",
+        "start": 2777.54,
+        "end": 2781.9
+    },
+    {
+        "text": " Pero lo importante es decir simplemente al final de cuántas maneras",
+        "start": 2781.9,
+        "end": 2785.98
+    },
+    {
+        "text": " puedo mandar yo...",
+        "start": 2787.1800000000003,
+        "end": 2788.78
+    },
+    {
+        "text": " ¿Puedo que le daí contacto en la diferentes forma de girar?",
+        "start": 2788.78,
+        "end": 2792.28
+    },
+    {
+        "text": " ¿Tenías contacto en la otra?",
+        "start": 2792.28,
+        "end": 2793.78
+    },
+    {
+        "text": " ¿A qué?",
+        "start": 2793.78,
+        "end": 2794.78
+    },
+    {
+        "text": " ¿La es diferente?",
+        "start": 2794.78,
+        "end": 2795.78
+    },
+    {
+        "text": " A ver lo que...",
+        "start": 2795.78,
+        "end": 2796.98
+    },
+    {
+        "text": " ¿La diferente forma?",
+        "start": 2796.98,
+        "end": 2798.1800000000003
+    },
+    {
+        "text": " ¿La es diferente de los que me equivoen los poderes?",
+        "start": 2798.1800000000003,
+        "end": 2800.38
+    },
+    {
+        "text": " Claro, claro.",
+        "start": 2800.38,
+        "end": 2801.9
+    },
+    {
+        "text": " Creo que entiendo lo que es eso.",
+        "start": 2801.9,
+        "end": 2803.38
+    },
+    {
+        "text": " A ver, porque...",
+        "start": 2804.7400000000002,
+        "end": 2806.06
+    },
+    {
+        "text": " ¿A qué hay dos objesiones?",
+        "start": 2806.06,
+        "end": 2807.7400000000002
+    },
+    {
+        "text": " Dehamos...",
+        "start": 2807.7400000000002,
+        "end": 2808.34
+    },
+    {
+        "text": " Hay una que primero contamos por escuelas y después por jugadores.",
+        "start": 2808.34,
+        "end": 2811.1800000000003
+    },
+    {
+        "text": " Pero en realidad de su objeción,",
+        "start": 2811.2599999999998,
+        "end": 2813.5
+    },
+    {
+        "text": " ¿Acuál es lo que dice la regla del producto?",
+        "start": 2813.5,
+        "end": 2815.8999999999996
+    },
+    {
+        "text": " La regla del producto dice,",
+        "start": 2815.8999999999996,
+        "end": 2817.7
+    },
+    {
+        "text": " si un procedimiento se puede hacer en varias etapas.",
+        "start": 2817.7,
+        "end": 2822.3799999999997
+    },
+    {
+        "text": " Primera de etapas, según de etapa, tercer etapa, etc.",
+        "start": 2822.3799999999997,
+        "end": 2824.98
+    },
+    {
+        "text": " Y hay tantas maneras de hacer la primera, tantas de hacer la segunda, tantas de hacer la tercera.",
+        "start": 2824.98,
+        "end": 2831.22
+    },
+    {
+        "text": " Las maneras de llevar a cabo el total del procedimiento es multiplicar todas esas etapas.",
+        "start": 2831.22,
+        "end": 2838.8999999999996
+    },
+    {
+        "text": " Entonces, esa que ella dice, bueno,",
+        "start": 2838.8999999999996,
+        "end": 2840.66
+    },
+    {
+        "text": " el procedimiento es mandar acá a jugador una escuela.",
+        "start": 2840.66,
+        "end": 2844.66
+    },
+    {
+        "text": " De manera que a las tres escuelas vayan alguien.",
+        "start": 2844.66,
+        "end": 2847.14
+    },
+    {
+        "text": " Entonces ella dice, bueno, lo primero que hago es decidir quién va a la primera escuela,",
+        "start": 2847.14,
+        "end": 2852.5
+    },
+    {
+        "text": " lo segundo que hago es decidir alguien que vaya a la segunda y lo tercero es decidir alguien que vaya a la tercera.",
+        "start": 2852.5,
+        "end": 2857.54
+    },
+    {
+        "text": " Y después me quedan ahí seis tipos en una bolsa y veo de cuántas maneras los puedo mandar a las escuelas.",
+        "start": 2857.54,
+        "end": 2865.2599999999998
+    },
+    {
+        "text": " Entonces...",
+        "start": 2865.2599999999998,
+        "end": 2866.2999999999997
+    },
+    {
+        "text": " ¿A qué no me hizo?",
+        "start": 2866.2999999999997,
+        "end": 2868.06
+    },
+    {
+        "text": " Suena bien.",
+        "start": 2868.06,
+        "end": 2869.2999999999997
+    },
+    {
+        "text": " Ah.",
+        "start": 2869.2999999999997,
+        "end": 2870.82
+    },
+    {
+        "text": " O sea, te quedan seis para mandar a tres escuelas.",
+        "start": 2870.82,
+        "end": 2874.82
+    },
+    {
+        "text": " Convinaciones convenciones que siempre es.",
+        "start": 2874.82,
+        "end": 2877.14
+    },
+    {
+        "text": " Convenaciones, ¿voces 6?",
+        "start": 2877.14,
+        "end": 2882.34
+    },
+    {
+        "text": " Para mandar... ¿voces 6 que está parte?",
+        "start": 2882.34,
+        "end": 2884.34
+    },
+    {
+        "text": " Como mandar seis personas a tres escuelas.",
+        "start": 2884.34,
+        "end": 2888.06
+    },
+    {
+        "text": " Es combinaciones con repetición de seis en tres.",
+        "start": 2888.06,
+        "end": 2892.02
+    },
+    {
+        "text": " Pero si vos fueras un niño en la escuela, a vos te daría lo mismo.",
+        "start": 2892.02,
+        "end": 2896.3
+    },
+    {
+        "text": " Que fuera forlan.",
+        "start": 2896.3,
+        "end": 2897.94
+    },
+    {
+        "text": " Que fuera breu, digamos, si vos fueras un niño de peñarol.",
+        "start": 2897.94,
+        "end": 2901.74
+    },
+    {
+        "text": " A ver, no, no seas malo.",
+        "start": 2908.14,
+        "end": 2910.42
+    },
+    {
+        "text": " ¿Cuántos acas saben que forlan es manja?",
+        "start": 2910.42,
+        "end": 2913.74
+    },
+    {
+        "text": " ¿Cuántos acas saben que abreu es bolso?",
+        "start": 2913.74,
+        "end": 2916.34
+    },
+    {
+        "text": " ¿Veamos?",
+        "start": 2916.34,
+        "end": 2917.18
+    },
+    {
+        "text": " No.",
+        "start": 2917.18,
+        "end": 2918.14
+    },
+    {
+        "text": " Víamos a ver, aunque no fueras de peñarol, a vos te dar lo mismo.",
+        "start": 2918.14,
+        "end": 2921.94
+    },
+    {
+        "text": " Todos, a vos te dar lo mismo que venga suares, que venga a los leeras,",
+        "start": 2921.94,
+        "end": 2925.7799999999997
+    },
+    {
+        "text": " que venga a forlanos.",
+        "start": 2925.7799999999997,
+        "end": 2927.46
+    },
+    {
+        "text": " Convinaciones con repetición simplemente mide lo siguiente.",
+        "start": 2927.46,
+        "end": 2931.3399999999997
+    },
+    {
+        "text": " Convinaciones con repetición, lo que cuenta es la manera de mandar",
+        "start": 2931.3399999999997,
+        "end": 2935.74
+    },
+    {
+        "text": " de estos seis jugadores, dos a la escuela Brasil,",
+        "start": 2935.74,
+        "end": 2939.3799999999997
+    },
+    {
+        "text": " tres a la escuela Grecia y uno a la escuela Francia.",
+        "start": 2939.3799999999997,
+        "end": 2943.62
+    },
+    {
+        "text": " Pero yo te juro que a los niños de la escuela Francia no les da lo mismo",
+        "start": 2943.62,
+        "end": 2946.5
+    },
+    {
+        "text": " con el jugador va.",
+        "start": 2946.5,
+        "end": 2948.34
+    },
+    {
+        "text": " Todo tiene su preélecto, ¿sí?",
+        "start": 2948.34,
+        "end": 2951.82
+    },
+    {
+        "text": " Entendé mi punto.",
+        "start": 2951.82,
+        "end": 2953.58
+    },
+    {
+        "text": " ¿Tenemos que estar repetido por ejemplo?",
+        "start": 2953.58,
+        "end": 2955.14
+    },
+    {
+        "text": " Ah, iba.",
+        "start": 2955.14,
+        "end": 2955.98
+    },
+    {
+        "text": " Acá encontraron uno que está repetido en esta cuenta.",
+        "start": 2955.98,
+        "end": 2958.3
+    },
+    {
+        "text": " A ver, ¿cuál está repetido?",
+        "start": 2958.3,
+        "end": 2960.22
+    },
+    {
+        "text": " En el 2 del primero es el 3.",
+        "start": 2960.22,
+        "end": 2961.58
+    },
+    {
+        "text": " No sé, 3.",
+        "start": 2961.58,
+        "end": 2962.58
+    },
+    {
+        "text": " En que quiera.",
+        "start": 2962.58,
+        "end": 2963.66
+    },
+    {
+        "text": " Entonces, hay uno que es forlanba a la primera escuela, suares baladas,",
+        "start": 2963.66,
+        "end": 2967.54
+    },
+    {
+        "text": " según de escuela y cabáñima a la 3.",
+        "start": 2967.54,
+        "end": 2970.7
+    },
+    {
+        "text": " Entonces, acá forlan fue a la escuela Brasil, suares fue a la escuela Grecia",
+        "start": 2970.7,
+        "end": 2975.66
+    },
+    {
+        "text": " y cabáñima a la escuela Francia.",
+        "start": 2975.66,
+        "end": 2978.1
+    },
+    {
+        "text": " Y después...",
+        "start": 2978.1,
+        "end": 2979.1
+    },
+    {
+        "text": " ¿Cuál es el cual dice que está diamente por ejemplo?",
+        "start": 2979.1,
+        "end": 2980.74
+    },
+    {
+        "text": " 3.",
+        "start": 2980.74,
+        "end": 2981.54
+    },
+    {
+        "text": " Y el resto reparto equitativamente, entonces, 3 a Brasil, 3 a Grecia y 3 a Francia.",
+        "start": 2981.54,
+        "end": 2994.58
+    },
+    {
+        "text": " ¿A qué es importante entender justamente por esto de las combinaciones con repetición",
+        "start": 2994.58,
+        "end": 3000.02
+    },
+    {
+        "text": " que no es simplemente decir ban 3.",
+        "start": 3000.02,
+        "end": 3002.3399999999997
+    },
+    {
+        "text": " Ah, dos o dos.",
+        "start": 3002.3399999999997,
+        "end": 3004.22
+    },
+    {
+        "text": " Yo soy tu resmias en caer loco.",
+        "start": 3004.22,
+        "end": 3011.22
+    },
+    {
+        "text": " Entonces, ahí va.",
+        "start": 3011.22,
+        "end": 3013.22
+    },
+    {
+        "text": " Acá queda claro que no solamente importa decir bandú, o sea, esta o sea, este o sea,",
+        "start": 3013.22,
+        "end": 3024.22
+    },
+    {
+        "text": " sino importa decir quiénes son los dos que van.",
+        "start": 3024.22,
+        "end": 3027.22
+    },
+    {
+        "text": " Bien, pero digamos que lo jugamos de alguna manera.",
+        "start": 3027.22,
+        "end": 3030.22
+    },
+    {
+        "text": " Y esto es lo mismo que...",
+        "start": 3030.22,
+        "end": 3032.22
+    },
+    {
+        "text": " Y ahora en los 3 primeros, elegís, un elegíter después, el mismo, veje, fredio...",
+        "start": 3032.22,
+        "end": 3039.22
+    },
+    {
+        "text": " Claro, esto sería así, digamos, acaban el ruso y otro a la escuela Brasil.",
+        "start": 3039.22,
+        "end": 3048.22
+    },
+    {
+        "text": " Acaban a Breu y otro a la escuela Grecia y acaban murler a la escuela Francia.",
+        "start": 3048.22,
+        "end": 3059.22
+    },
+    {
+        "text": " Esto está contado acá, como una posibilidad de acá fue elegir a Forland,",
+        "start": 3059.22,
+        "end": 3070.22
+    },
+    {
+        "text": " otras suares, otra cabane y después lo que queda.",
+        "start": 3070.22,
+        "end": 3074.22
+    },
+    {
+        "text": " Y lo que él dice es que esto fue contado de vuelta cuando dijimos,",
+        "start": 3074.22,
+        "end": 3079.22
+    },
+    {
+        "text": " bueno, en vez de elegir acá la posibilidad de que vaya a Forland,",
+        "start": 3079.22,
+        "end": 3083.22
+    },
+    {
+        "text": " vamos a elegir que vaya el ruso a la escuela Brasil, vamos a elegir que vaya a Breu a la escuela Grecia",
+        "start": 3083.22,
+        "end": 3093.22
+    },
+    {
+        "text": " y que vaya a musler a la escuela Francia.",
+        "start": 3093.22,
+        "end": 3097.22
+    },
+    {
+        "text": " Y después, cuando agarramos los otros 6 y decidimos a donde van, decidimos que Forland",
+        "start": 3097.22,
+        "end": 3108.22
+    },
+    {
+        "text": " y el otro, mismo otro que ahí van a la Brasil, suares,",
+        "start": 3108.22,
+        "end": 3116.22
+    },
+    {
+        "text": " va a la Grecia y el otro que también va a la Grecia y musler a y el otro que va a la...",
+        "start": 3116.22,
+        "end": 3123.22
+    },
+    {
+        "text": " Perdón, y cabane van a la Francia.",
+        "start": 3123.22,
+        "end": 3130.22
+    },
+    {
+        "text": " Entonces, estas son dos cosas que son la misma, no sé si se ve.",
+        "start": 3130.22,
+        "end": 3138.22
+    },
+    {
+        "text": " Sin embargo, están contadas ahí arriba como cosas distintas.",
+        "start": 3138.22,
+        "end": 3147.22
+    },
+    {
+        "text": " Entonces, este es un problema similar al problema de las cartas.",
+        "start": 3147.22,
+        "end": 3151.22
+    },
+    {
+        "text": " Se acuerdan que contamos una vez cuantas manos posibles había descartas,",
+        "start": 3151.22,
+        "end": 3157.22
+    },
+    {
+        "text": " una mano son cinco cartas, de una baraja de 52 cartas,",
+        "start": 3157.22,
+        "end": 3166.22
+    },
+    {
+        "text": " claro, cuatro palos de 13 cartas cada uno, contamos cuantas manos tenían al menos un trebol.",
+        "start": 3166.22,
+        "end": 3173.22
+    },
+    {
+        "text": " Y entonces había una manera en que decíamos elegimos el primer trebol y después las otras cuatro, lo que fuera.",
+        "start": 3173.22,
+        "end": 3180.22
+    },
+    {
+        "text": " Y eso estaba mal porque había manos distintas que les estamos contando dos veces.",
+        "start": 3181.22,
+        "end": 3186.22
+    },
+    {
+        "text": " Y esto es lo mismo que lo de los trebols.",
+        "start": 3186.22,
+        "end": 3189.22
+    },
+    {
+        "text": " Contar los casos repetidos y vivir, capaz que es una posibilidad, pero me parece que sería complicado.",
+        "start": 3197.22,
+        "end": 3202.22
+    },
+    {
+        "text": " Igual hay una cosa que pasa con la función sobrejectiva, es que contar la función sobrejectiva se es complicado.",
+        "start": 3202.22,
+        "end": 3207.22
+    },
+    {
+        "text": " O sea, no hay una manera fácil.",
+        "start": 3208.22,
+        "end": 3210.22
+    },
+    {
+        "text": " Y la manera de ver que no hay una manera fácil es que la fórmula que te cuenta la función sobrejectiva es difícil.",
+        "start": 3210.22,
+        "end": 3217.22
+    },
+    {
+        "text": " Entonces, buena.",
+        "start": 3222.22,
+        "end": 3224.22
+    },
+    {
+        "text": " Vamos a mirar un poco aquella fórmula y vamos a ver si nos dice algo.",
+        "start": 3227.22,
+        "end": 3231.22
+    },
+    {
+        "text": " Entonces, si tiene elementos.",
+        "start": 3238.22,
+        "end": 3242.22
+    },
+    {
+        "text": " Tenemos dos conjuntos.",
+        "start": 3249.22,
+        "end": 3251.22
+    },
+    {
+        "text": " A tiene em elementos.",
+        "start": 3254.22,
+        "end": 3257.22
+    },
+    {
+        "text": " B tiene em elementos.",
+        "start": 3259.22,
+        "end": 3261.22
+    },
+    {
+        "text": " Y si vamos a contar funciones sobrejectivas de A y B, más vale que haya alguna.",
+        "start": 3262.22,
+        "end": 3268.22
+    },
+    {
+        "text": " Entonces, como tiene que ser emellene,",
+        "start": 3268.22,
+        "end": 3272.22
+    },
+    {
+        "text": " N menor igual que N perfecto.",
+        "start": 3278.22,
+        "end": 3280.22
+    },
+    {
+        "text": " Eso es para que haya alguna función sobrejectiva de A y B.",
+        "start": 3280.22,
+        "end": 3284.22
+    },
+    {
+        "text": " Entonces, la cantidad de funciones sobrejectivas de A y B.",
+        "start": 3285.22,
+        "end": 3290.22
+    },
+    {
+        "text": " Y este número al que le vamos a poner un nombre subimini y va a ser.",
+        "start": 3291.22,
+        "end": 3314.22
+    },
+    {
+        "text": " Y va a ser. Entonces, vamos a mirar aquella fórmula de A y.",
+        "start": 3315.22,
+        "end": 3318.22
+    },
+    {
+        "text": " Esta fórmula acá N sería 3.",
+        "start": 3319.22,
+        "end": 3325.22
+    },
+    {
+        "text": " Entonces, esto va a ser combinaciones de N, tu madre de A N por N a la N.",
+        "start": 3329.22,
+        "end": 3338.22
+    },
+    {
+        "text": " Esto va a contar todas las funciones.",
+        "start": 3339.22,
+        "end": 3342.22
+    },
+    {
+        "text": " Ahora le vamos a restar todas las que toman valores en conjuntos de N menos 1 elementos.",
+        "start": 3345.22,
+        "end": 3356.22
+    },
+    {
+        "text": " O sea, vamos a ver, tenemos combinaciones de N tomadas de N menos 1,",
+        "start": 3356.22,
+        "end": 3365.22
+    },
+    {
+        "text": " subconjunto de B de N menos 1 elementos.",
+        "start": 3368.22,
+        "end": 3371.22
+    },
+    {
+        "text": " Y para cada uno de ellos vamos a tener N menos 1 a la N funciones.",
+        "start": 3372.22,
+        "end": 3378.22
+    },
+    {
+        "text": " Y acá va a ver una montaña de cosas que contamos repetido.",
+        "start": 3385.22,
+        "end": 3389.22
+    },
+    {
+        "text": " Entonces, todo lo que restamos más de una vez lo vamos a tener que sumar",
+        "start": 3392.22,
+        "end": 3396.22
+    },
+    {
+        "text": " y nos va a quedar combinaciones de N tomadas de N menos 2, N menos 2 a la N.",
+        "start": 3397.22,
+        "end": 3404.22
+    },
+    {
+        "text": " Esto tiene que ver con que contamos repetidos,",
+        "start": 3406.22,
+        "end": 3408.22
+    },
+    {
+        "text": " las funciones que en realidad tomaban menos de N menos 1 valores.",
+        "start": 3410.22,
+        "end": 3414.22
+    },
+    {
+        "text": " Voy a escribir la fórmula y después vemos que pasa.",
+        "start": 3417.22,
+        "end": 3419.22
+    },
+    {
+        "text": " Y al final, por ahí va a ver un término que va a corresponder a las funciones constantes.",
+        "start": 3420.22,
+        "end": 3426.22
+    },
+    {
+        "text": " Y va a hacer así.",
+        "start": 3427.22,
+        "end": 3431.22
+    },
+    {
+        "text": " Entonces,",
+        "start": 3434.22,
+        "end": 3436.22
+    },
+    {
+        "text": " esto va a ser la suma de caigo al cero hasta N menos 1 de menos 1 a la K,",
+        "start": 3457.22,
+        "end": 3470.22
+    },
+    {
+        "text": " combinaciones de N tomadas de N menos K por N menos K a la N.",
+        "start": 3471.22,
+        "end": 3484.22
+    },
+    {
+        "text": " Bueno,",
+        "start": 3487.22,
+        "end": 3490.22
+    },
+    {
+        "text": " si esta fórmula no es muy linda,",
+        "start": 3491.22,
+        "end": 3493.22
+    },
+    {
+        "text": " pero traten de mirarla y traten de imaginarse de dónde viene cada término.",
+        "start": 3493.22,
+        "end": 3500.22
+    },
+    {
+        "text": " Y la demostración la vamos a hacer más adelante",
+        "start": 3501.22,
+        "end": 3504.22
+    },
+    {
+        "text": " porque usa algo que todavía no hemos visto que es el principio de inclusión, exclusión.",
+        "start": 3505.22,
+        "end": 3511.22
+    },
+    {
+        "text": " Entonces, cuando llegue la demostración esta fórmula va a quedar más clara.",
+        "start": 3512.22,
+        "end": 3516.22
+    },
+    {
+        "text": " Falta como 2 clases para esta demostración.",
+        "start": 3531.22,
+        "end": 3533.22
+    },
+    {
+        "text": " Ahora vamos a pasar a otro tema que es muy divertido.",
+        "start": 3541.22,
+        "end": 3548.22
+    },
+    {
+        "text": " Entonces,",
+        "start": 3572.22,
+        "end": 3575.22
+    },
+    {
+        "text": " vamos a pasar a hablar de algo que se llama principio el palomar.",
+        "start": 3575.22,
+        "end": 3580.22
+    },
+    {
+        "text": " Que es un principio una verdadera vez que se llama principio.",
+        "start": 3580.22,
+        "end": 3586.22
+    },
+    {
+        "text": " Y si no,",
+        "start": 3586.22,
+        "end": 3589.22
+    },
+    {
+        "text": " si no,",
+        "start": 3589.22,
+        "end": 3592.22
+    },
+    {
+        "text": " si no,",
+        "start": 3592.22,
+        "end": 3595.22
+    },
+    {
+        "text": " si no,",
+        "start": 3595.22,
+        "end": 3598.22
+    },
+    {
+        "text": " que es un principio una verdadera vez que se llama principio una verdadera vez que se llama principio.",
+        "start": 3598.22,
+        "end": 3605.22
+    },
+    {
+        "text": " Pero que tiene aplicaciones muy ricas.",
+        "start": 3605.22,
+        "end": 3608.22
+    },
+    {
+        "text": " Entonces, el principio de palomar dice así.",
+        "start": 3608.22,
+        "end": 3612.22
+    },
+    {
+        "text": " Dice si hay M palomas.",
+        "start": 3620.22,
+        "end": 3624.22
+    },
+    {
+        "text": " M palumares.",
+        "start": 3629.22,
+        "end": 3633.22
+    },
+    {
+        "text": " Bueno, si querés, claro, puede ser M depende de si son muy amantes de la naturaleza en estado salvaje.",
+        "start": 3638.22,
+        "end": 3647.22
+    },
+    {
+        "text": " Puede ser N enmidos.",
+        "start": 3647.22,
+        "end": 3652.22
+    },
+    {
+        "text": " Y los palomares son cosas que a veces se construyen,",
+        "start": 3653.22,
+        "end": 3656.22
+    },
+    {
+        "text": " porque a las palomas nunca viste unas construcciones,",
+        "start": 3656.22,
+        "end": 3659.22
+    },
+    {
+        "text": " que son como las que hay en mi complejo habitacional",
+        "start": 3659.22,
+        "end": 3664.22
+    },
+    {
+        "text": " que construyeron palomares para que las palomas no se pareen en las ventanas.",
+        "start": 3664.22,
+        "end": 3667.22
+    },
+    {
+        "text": " Son unas cosas así, tienen acá como portitas y adentro les pone semillitas.",
+        "start": 3667.22,
+        "end": 3675.22
+    },
+    {
+        "text": " Y la lógica es que si vos pones semillitas ahí las palomas van a ir a comer ladinos,",
+        "start": 3675.22,
+        "end": 3679.22
+    },
+    {
+        "text": " se te van a parar en tu ventana.",
+        "start": 3679.22,
+        "end": 3681.22
+    },
+    {
+        "text": " Las ponen en un poste así y después arriba les hacen como casitas y bueno.",
+        "start": 3683.22,
+        "end": 3689.22
+    },
+    {
+        "text": " Entonces, si hay M palomas en el palomar y la cantidad de palomas es mayor igual que la cantidad de palomares.",
+        "start": 3696.22,
+        "end": 3707.22
+    },
+    {
+        "text": " Entonces, hay, al menos un palomar con más de una paloma.",
+        "start": 3708.22,
+        "end": 3714.22
+    },
+    {
+        "text": " Si o sea, en algún palomar hay más de una paloma.",
+        "start": 3715.22,
+        "end": 3720.22
+    },
+    {
+        "text": " ¿Tan?",
+        "start": 3720.22,
+        "end": 3721.22
+    },
+    {
+        "text": " Son las casas, el palomar como la casita de la paloma.",
+        "start": 3721.22,
+        "end": 3726.22
+    },
+    {
+        "text": " ¿Mas de una paloma?",
+        "start": 3745.22,
+        "end": 3747.22
+    },
+    {
+        "text": " Mayor que en Etenesto es la razón del mundo, gracias.",
+        "start": 3747.22,
+        "end": 3750.22
+    },
+    {
+        "text": " Esto es lo mismo que decir.",
+        "start": 3750.22,
+        "end": 3753.22
+    },
+    {
+        "text": " Si en mi núcleo familiar somos M personas y tenemos N dormitorios.",
+        "start": 3753.22,
+        "end": 3761.22
+    },
+    {
+        "text": " Y M es mayor que N.",
+        "start": 3763.22,
+        "end": 3765.22
+    },
+    {
+        "text": " Bueno, hay algún dormitorio en que dormimos al menos dos.",
+        "start": 3765.22,
+        "end": 3769.22
+    },
+    {
+        "text": " Eso es así.",
+        "start": 3770.22,
+        "end": 3774.22
+    },
+    {
+        "text": " Son las casas con las palomas, es como mucho más.",
+        "start": 3774.22,
+        "end": 3778.22
+    },
+    {
+        "text": " ¿Tamos de acuerdo en que el principio del palomar es cierto?",
+        "start": 3781.22,
+        "end": 3785.22
+    },
+    {
+        "text": " No es la verdad de la naturaleza de la sología que vamos a tomar con la acción.",
+        "start": 3785.22,
+        "end": 3791.22
+    },
+    {
+        "text": " Entonces, el principio del palomar parece sencillo pero tiene muchas aplicaciones que no lo son.",
+        "start": 3791.22,
+        "end": 3798.22
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 3799.22,
+        "end": 3800.22
+    },
+    {
+        "text": " No, no sé de momento.",
+        "start": 3800.22,
+        "end": 3802.22
+    },
+    {
+        "text": " Es un acciónado en acto de fe.",
+        "start": 3802.22,
+        "end": 3805.22
+    },
+    {
+        "text": " Entonces, vamos a empezar con ejemplos sencillos de aplicaciones del principio del palomar.",
+        "start": 3805.22,
+        "end": 3812.22
+    },
+    {
+        "text": " El primer ejemplo es en esta clase,",
+        "start": 3812.22,
+        "end": 3819.22
+    },
+    {
+        "text": " hay dos estudiantes que son del mismo signo de sodíaco.",
+        "start": 3822.22,
+        "end": 3827.22
+    },
+    {
+        "text": " ¿Por qué es esto cierto?",
+        "start": 3828.22,
+        "end": 3832.22
+    },
+    {
+        "text": " Bueno, las palomas acá, en este caso,",
+        "start": 3832.22,
+        "end": 3838.22
+    },
+    {
+        "text": " son los estudiantes de esta clase.",
+        "start": 3839.22,
+        "end": 3843.22
+    },
+    {
+        "text": " ¿Y los palomares son los signos del sodíaco?",
+        "start": 3844.22,
+        "end": 3850.22
+    },
+    {
+        "text": " ¿Por qué es esto cierto?",
+        "start": 3850.22,
+        "end": 3852.22
+    },
+    {
+        "text": " Bueno, las palomas acá, en este caso,",
+        "start": 3852.22,
+        "end": 3856.22
+    },
+    {
+        "text": " son los estudiantes de esta clase.",
+        "start": 3857.22,
+        "end": 3861.22
+    },
+    {
+        "text": " ¿Y los palomares?",
+        "start": 3861.22,
+        "end": 3865.22
+    },
+    {
+        "text": " Son los signos del sodíaco.",
+        "start": 3866.22,
+        "end": 3869.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3873.22,
+        "end": 3874.22
+    },
+    {
+        "text": " Entonces, no sé, acá hay como sesentes estudiantes,",
+        "start": 3876.22,
+        "end": 3883.22
+    },
+    {
+        "text": " en dos sesinos, bueno, algún signo corresponde más de un estudiante. ¿Sí?",
+        "start": 3883.22,
+        "end": 3889.22
+    },
+    {
+        "text": " Otro ejemplo,",
+        "start": 3895.22,
+        "end": 3898.22
+    },
+    {
+        "text": " yo tengo el cajón de las medias y no las pongo a aparelas, tengo todas revoltas,",
+        "start": 3901.22,
+        "end": 3905.22
+    },
+    {
+        "text": " yo tengo dos separes de media distintos,",
+        "start": 3905.22,
+        "end": 3909.22
+    },
+    {
+        "text": " tengo un revoltijo en el cajón y de mañana lo que hago antes de venir",
+        "start": 3917.22,
+        "end": 3922.22
+    },
+    {
+        "text": " y se empiezo a manotear y empieza a sacar medias de a una hasta que encuentro un par.",
+        "start": 3922.22,
+        "end": 3927.22
+    },
+    {
+        "text": " ¿Cuántas medias tengo que sacar para estar segura de que salí un par?",
+        "start": 3928.22,
+        "end": 3934.22
+    },
+    {
+        "text": " 12, si saco 12, ya estoy segura que salí un par.",
+        "start": 3940.22,
+        "end": 3943.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3943.22,
+        "end": 3944.22
+    },
+    {
+        "text": " 7, 13, ¿Sí? Si manoteo, 13 veces.",
+        "start": 3944.22,
+        "end": 3950.22
+    },
+    {
+        "text": " Ya saqué al menos un par, entonces.",
+        "start": 3952.22,
+        "end": 3955.22
+    },
+    {
+        "text": " No porque podría secar, contámalas suerte que justo manoteo y 12 veces",
+        "start": 3957.22,
+        "end": 3962.22
+    },
+    {
+        "text": " y saqué una media de capar.",
+        "start": 3962.22,
+        "end": 3964.22
+    },
+    {
+        "text": " Si hay 12 pares, no, no, no, hay 12 pares en el cajón.",
+        "start": 3966.22,
+        "end": 3970.22
+    },
+    {
+        "text": " No están hechos pelotitas, están sueltas.",
+        "start": 3971.22,
+        "end": 3974.22
+    },
+    {
+        "text": " Entonces, yo de mañana, pero el cajón empieza a manotear así.",
+        "start": 3974.22,
+        "end": 3978.22
+    },
+    {
+        "text": " Hoy de mañana me pasó que manoteo y 12 veces contámalas suerte,",
+        "start": 3978.22,
+        "end": 3981.22
+    },
+    {
+        "text": " que saqué justo una media de capar.",
+        "start": 3981.22,
+        "end": 3983.22
+    },
+    {
+        "text": " Pero si manoteo, 13 veces ya está.",
+        "start": 3984.22,
+        "end": 3986.22
+    },
+    {
+        "text": " Entonces, para sacar un par, alcanza con sacar 13 medias.",
+        "start": 3989.22,
+        "end": 3997.22
+    },
+    {
+        "text": " Entonces, ¿quiénes son las palomas en este ejemplo?",
+        "start": 3997.22,
+        "end": 4012.22
+    },
+    {
+        "text": " 24 medias.",
+        "start": 4012.22,
+        "end": 4014.22
+    },
+    {
+        "text": " Y los palomas son los 12 pares.",
+        "start": 4033.22,
+        "end": 4040.22
+    },
+    {
+        "text": " Le damos que yo tengo los 12 pares, yo sé que tengo un par de medias azul,",
+        "start": 4043.22,
+        "end": 4047.22
+    },
+    {
+        "text": " son par de medias amarillas, etcétera.",
+        "start": 4047.22,
+        "end": 4049.22
+    },
+    {
+        "text": " Tengo un par de cada color.",
+        "start": 4050.22,
+        "end": 4052.22
+    },
+    {
+        "text": " Son 12.",
+        "start": 4053.22,
+        "end": 4054.22
+    },
+    {
+        "text": " Cuando yo saco una media, pienso que esa paloma va al palomar correspondiente.",
+        "start": 4056.22,
+        "end": 4060.22
+    },
+    {
+        "text": " Cuando saqué 13 medias, ya hay 13 palomas ubicadas en sus respectivos palomares.",
+        "start": 4062.22,
+        "end": 4068.22
+    },
+    {
+        "text": " Entonces, ya hay al menos un palomar con dos palomas.",
+        "start": 4069.22,
+        "end": 4075.22
+    },
+    {
+        "text": " ¿Se ve?",
+        "start": 4078.22,
+        "end": 4079.22
+    },
+    {
+        "text": " Tercer ejemplo, hay al menos dos personas en Uruguay con la misma cantidad de pelos en la cabeza.",
+        "start": 4087.22,
+        "end": 4094.22
+    },
+    {
+        "text": " ¿ ص experta?",
+        "start": 4098.22,
+        "end": 4100.22
+    },
+    {
+        "text": " clauses.",
+        "start": 4112.22,
+        "end": 4114.22
+    },
+    {
+        "text": " ¿Están?",
+        "start": 4120.22,
+        "end": 4122.22
+    },
+    {
+        "text": " La demostración de esto es que mis dos abuelos son calvos, tienen cero pelo caón.",
+        "start": 4122.22,
+        "end": 4129.22
+    },
+    {
+        "text": " A ver, ¿por qué es esto cierto?",
+        "start": 4129.22,
+        "end": 4135.740000000001
+    },
+    {
+        "text": " Una persona tiene más o menos, miren mi conocimiento, unos 150 mil pelos.",
+        "start": 4135.740000000001,
+        "end": 4141.22
+    },
+    {
+        "text": " Una cabeza normal tiene unos 150 mil pelos, pero nadie tiene un millón de pelos.",
+        "start": 4141.22,
+        "end": 4155.22
+    },
+    {
+        "text": " Todos tenemos menos de un millón de pelos.",
+        "start": 4156.22,
+        "end": 4165.22
+    },
+    {
+        "text": " Entonces, ¿cómo hay casi cuatro millones de personas en Uruguay?",
+        "start": 4165.22,
+        "end": 4179.22
+    },
+    {
+        "text": " Si pensamos que las palomas son los habitantes de Uruguay.",
+        "start": 4180.22,
+        "end": 4188.22
+    },
+    {
+        "text": " Y los palomares son los números cero, que es tener cero pelo, un pelo, dos pelos,",
+        "start": 4188.22,
+        "end": 4206.22
+    },
+    {
+        "text": " y los tres pelos hasta 9999,999 pelos.",
+        "start": 4206.22,
+        "end": 4217.22
+    },
+    {
+        "text": " Hay al menos dos palomas en un palomar, si entonces hay al menos dos personas que tienen la misma cantidad de pelos.",
+        "start": 4217.22,
+        "end": 4226.22
+    },
+    {
+        "text": " Entonces, estos son, bien, ejemplos sencillos de aplicación del principio del palomar.",
+        "start": 4227.22,
+        "end": 4236.22
+    },
+    {
+        "text": " Vamos a hacer algunos ejemplos un poquito más sofisticados.",
+        "start": 4236.22,
+        "end": 4242.22
+    },
+    {
+        "text": " Ejemplos versión 2.0.",
+        "start": 4242.22,
+        "end": 4250.22
+    },
+    {
+        "text": " Voy a tomar el conjunto S, que tiene los números naturales de 1 al 200.",
+        "start": 4250.22,
+        "end": 4265.22
+    },
+    {
+        "text": " Entonces, lo que voy a probar es que si tomamos 101 elementos de S,",
+        "start": 4265.22,
+        "end": 4284.22
+    },
+    {
+        "text": " siempre tenemos dos números de modo que uno es múltiplo del otro.",
+        "start": 4284.22,
+        "end": 4313.22
+    },
+    {
+        "text": " El conjunto S es el conjunto que tiene los números de 1 al 200.",
+        "start": 4313.22,
+        "end": 4320.22
+    },
+    {
+        "text": " 1, 2, 3, 4 hasta 200.",
+        "start": 4320.22,
+        "end": 4323.22
+    },
+    {
+        "text": " Y si yo agarró 101 de esos números, cualquiera, entre eso 101, siempre hay dos que son uno múltiplo del otro.",
+        "start": 4323.22,
+        "end": 4347.22
+    },
+    {
+        "text": " Y eso no es lo más sorprendente, lo más sorprendente es que vamos a probar eso usando el principio del palomar.",
+        "start": 4347.22,
+        "end": 4368.22
+    },
+    {
+        "text": " Entonces, vamos a observar primero lo siguiente, que si yo tomo un número natural cualquiera,",
+        "start": 4368.22,
+        "end": 4388.22
+    },
+    {
+        "text": " podemos escribir i o si quieren x, perdón, es un número natural cualquiera,",
+        "start": 4388.22,
+        "end": 4400.22
+    },
+    {
+        "text": " podemos escribir x como, entonces si x es impar, le llamamos i al propio x.",
+        "start": 4400.22,
+        "end": 4417.22
+    },
+    {
+        "text": " Si x es impar, lo escribimos como 2 por algo.",
+        "start": 4417.22,
+        "end": 4424.22
+    },
+    {
+        "text": " Entonces, vamos a suponer que x les voy a mostrar lo que va a pasar.",
+        "start": 4424.22,
+        "end": 4429.22
+    },
+    {
+        "text": " Supon vamos que yo tomo como x el número 2,058.",
+        "start": 4429.22,
+        "end": 4444.22
+    },
+    {
+        "text": " Entonces, este número es para cuando lo divido entre 2, esto me queda a 1,029, no, que fue el número de gins.",
+        "start": 4445.22,
+        "end": 4462.22
+    },
+    {
+        "text": " Entonces, 2,060 para que el número no me quede tan fácil, ¿qué?",
+        "start": 4462.22,
+        "end": 4467.22
+    },
+    {
+        "text": " Entonces, a 1,048 me quedaba, no, por eso, digamos que yo tomo el número 2,060.",
+        "start": 4467.22,
+        "end": 4475.22
+    },
+    {
+        "text": " Entonces, esto es 2 por 1,030, ¿sí?",
+        "start": 4475.22,
+        "end": 4482.22
+    },
+    {
+        "text": " El 1,030 sigue siendo par, entonces esto lo voy a pedir como 2 por 2 por 515.",
+        "start": 4482.22,
+        "end": 4496.22
+    },
+    {
+        "text": " Entonces, lo escribimos como 2 al cuadrado por 515.",
+        "start": 4497.22,
+        "end": 4503.22
+    },
+    {
+        "text": " Entonces, esto es 2 al algo por 1,030.",
+        "start": 4503.22,
+        "end": 4510.22
+    },
+    {
+        "text": " Y cuando yo agarro un número x cualquiera, siempre puedo hacer esto.",
+        "start": 4510.22,
+        "end": 4515.22
+    },
+    {
+        "text": " Lo divido entre 2, si lo que me quedes par, lo divido entre 2, si lo que me quedes par, lo divido entre 2.",
+        "start": 4515.22,
+        "end": 4521.22
+    },
+    {
+        "text": " Y al final, siempre lo puedo escribir como una potencia de 2 por un número en par.",
+        "start": 4522.22,
+        "end": 4528.22
+    },
+    {
+        "text": " Eso lo puedo hacer para cualquier número natural.",
+        "start": 4541.22,
+        "end": 4544.22
+    },
+    {
+        "text": " Tanto acuerdo hasta ahí, ¿no?",
+        "start": 4545.22,
+        "end": 4548.22
+    },
+    {
+        "text": " Entonces, fíjense que si mi número natural no es cualquiera, sino que es menor igual que 200,",
+        "start": 4548.22,
+        "end": 4559.22
+    },
+    {
+        "text": " este número en par tampoco es cualquiera, no puede ser 500 y algo.",
+        "start": 4559.22,
+        "end": 4568.22
+    },
+    {
+        "text": " Y tiene que ser un número en par también menor igual que 200, entonces tiene que ser 1, 3, 5, 7, etc., hasta 199.",
+        "start": 4569.22,
+        "end": 4580.22
+    },
+    {
+        "text": " Porque si x es menor igual que 200 y también.",
+        "start": 4588.22,
+        "end": 4592.22
+    },
+    {
+        "text": " Entonces, este conjunto cuantos elementos tienen.",
+        "start": 4593.22,
+        "end": 4601.22
+    },
+    {
+        "text": " Este conjunto tiene 100 elementos.",
+        "start": 4615.22,
+        "end": 4618.22
+    },
+    {
+        "text": " Entonces, volvamos al problema original.",
+        "start": 4623.22,
+        "end": 4627.22
+    },
+    {
+        "text": " Yo elijo 101 elementos del conjunto S.",
+        "start": 4627.22,
+        "end": 4636.22
+    },
+    {
+        "text": " Entonces, voy a pensar que las palomas son los 101 elementos del conjunto S.",
+        "start": 4636.22,
+        "end": 4651.22
+    },
+    {
+        "text": " Y los palomares son los posibles valores de I.",
+        "start": 4667.22,
+        "end": 4678.22
+    },
+    {
+        "text": " Cuando a cada número que tomamos, le hacemos esta cosa.",
+        "start": 4680.22,
+        "end": 4684.22
+    },
+    {
+        "text": " Los palomares son los números 1, 3, 5 hasta 199.",
+        "start": 4685.22,
+        "end": 4697.22
+    },
+    {
+        "text": " O sea, hay 100 palomares.",
+        "start": 4697.22,
+        "end": 4703.22
+    },
+    {
+        "text": " Entonces, una paloma.",
+        "start": 4705.22,
+        "end": 4709.22
+    },
+    {
+        "text": " Que es 2 a la capurí.",
+        "start": 4710.22,
+        "end": 4715.22
+    },
+    {
+        "text": " Val palumar y.",
+        "start": 4719.22,
+        "end": 4721.22
+    },
+    {
+        "text": " Sí o más o menos.",
+        "start": 4732.22,
+        "end": 4734.22
+    },
+    {
+        "text": " Entonces, como tenemos, siento un paloma.",
+        "start": 4735.22,
+        "end": 4741.22
+    },
+    {
+        "text": " Si 100 palomares.",
+        "start": 4741.22,
+        "end": 4744.22
+    },
+    {
+        "text": " Por principio el paloma.",
+        "start": 4744.22,
+        "end": 4746.22
+    },
+    {
+        "text": " Hay dos palomas que van al mismo palomar.",
+        "start": 4746.22,
+        "end": 4751.22
+    },
+    {
+        "text": " Esto quiere decir que entre los 101 números elegidos.",
+        "start": 4764.22,
+        "end": 4771.22
+    },
+    {
+        "text": " Hay dos números que son de esta forma.",
+        "start": 4795.22,
+        "end": 4801.22
+    },
+    {
+        "text": " Entonces, uno de ellos es 2 elevado una cierta potencia por el número I.",
+        "start": 4807.22,
+        "end": 4813.22
+    },
+    {
+        "text": " Y el otro es de la forma 2 elevado a otra potencia.",
+        "start": 4813.22,
+        "end": 4819.22
+    },
+    {
+        "text": " Pero por el mismo número I.",
+        "start": 4820.22,
+        "end": 4825.22
+    },
+    {
+        "text": " Esto quiere decir que están en el mismo palomar.",
+        "start": 4825.22,
+        "end": 4831.22
+    },
+    {
+        "text": " Estas sí son iguales.",
+        "start": 4834.22,
+        "end": 4837.22
+    },
+    {
+        "text": " Por ejemplo, si el palomar en el que hay dos palomas es el número 27,",
+        "start": 4850.22,
+        "end": 4859.22
+    },
+    {
+        "text": " puede pasar, por ejemplo, que uno de los números que elegimos sea 2 al cuadrado por 27 y otro.",
+        "start": 4863.22,
+        "end": 4873.22
+    },
+    {
+        "text": " Y otro que se quisprima sea de la forma 2 al 1 por 27.",
+        "start": 4874.22,
+        "end": 4880.22
+    },
+    {
+        "text": " Pero entonces, estos son dos números que uno es múltiplo de la otra.",
+        "start": 4881.22,
+        "end": 4886.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 4890.22,
+        "end": 4892.22
+    },
+    {
+        "text": " ¿Cuál es múltiplo de la otra potencia?",
+        "start": 4894.22,
+        "end": 4898.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 4898.22,
+        "end": 4900.22
+    },
+    {
+        "text": " ¿Cuál es múltiplo de la otra potencia?",
+        "start": 4900.22,
+        "end": 4903.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 4904.22,
+        "end": 4906.22
+    },
+    {
+        "text": " ¿Cuál es múltiplo de la otra potencia?",
+        "start": 4909.22,
+        "end": 4911.22
+    },
+    {
+        "text": " El que tiene más factor es 2 es múltiplo de la otra.",
+        "start": 4911.22,
+        "end": 4915.22
+    },
+    {
+        "text": " En este caso, este es el doble de este.",
+        "start": 4915.22,
+        "end": 4919.22
+    },
+    {
+        "text": " Entonces, si caes mayor que el es 2 a la x que es 2 a la caporí, es múltiplo de x prima.",
+        "start": 4919.22,
+        "end": 4932.22
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 4934.22,
+        "end": 4937.22
+    },
+    {
+        "text": " Y si caes menor que el es x prima es múltiplo de x.",
+        "start": 4937.22,
+        "end": 4944.22
+    },
+    {
+        "text": " Pero en cualquier caso encontramos dos números, elegimos 101 números de este conjunto y encontramos 2 de manera que unos múltiplo de 2.",
+        "start": 4944.22,
+        "end": 4956.22
+    },
+    {
+        "text": " Entonces, la próxima reto vamos acá y vamos a dar más ejemplos de aplicación del principio.",
+        "start": 4956.22,
+        "end": 4968.22
+    },
+    {
+        "text": " Y si no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no",
+        "start": 4986.22,
+        "end": 4987.22
+    }
+]
