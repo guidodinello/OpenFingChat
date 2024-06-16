@@ -68,6 +68,7 @@ class VectorStore:
             logging.error("No transcribed lessons returned from the database!")
             # si no hay lessons marcadas como transcriptas, para testear se puede usar el mock
             from .mock import MONGO_CLIENT
+
             lessons_id = MONGO_CLIENT["database"]["classes"].find(
                 {"transcribed": True},
                 projection={"_id": 1},
@@ -102,7 +103,6 @@ class VectorStore:
         (self.path / "index.pkl").unlink(missing_ok=True)
 
 
-
 def concatenate_segments(segments, max_length):
     concatenated_segments = []
     current_segment = None
@@ -111,7 +111,12 @@ def concatenate_segments(segments, max_length):
         if current_segment is None:
             current_segment = segment
         else:
-            new_length = current_segment["end"] - current_segment["start"] + segment["end"] - segment["start"]
+            new_length = (
+                current_segment["end"]
+                - current_segment["start"]
+                + segment["end"]
+                - segment["start"]
+            )
             if new_length <= max_length:
                 current_segment["text"] += " " + segment["text"]
                 current_segment["end"] = segment["end"]
@@ -129,7 +134,9 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
     class_transcript = Path(f"{data_folder}/{lesson_id}.json")
 
     if not class_transcript.exists():
-        logging.error(f"Lesson is marked as transcribed but file {class_transcript} not found!")
+        logging.error(
+            f"Lesson is marked as transcribed but file {class_transcript} not found!"
+        )
         return None
 
     # TODO: asumi que los archivos segmentados estan guardados localmente
@@ -137,19 +144,28 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
         content = json.load(f)
 
     if not isinstance(content, list):
-        logging.error(f"Invalid structure in file {class_transcript}. Expected a list of segments.")
+        logging.error(
+            f"Invalid structure in file {class_transcript}. Expected a list of segments."
+        )
         return None
 
-     # Concatenate segments before processing
+    # Concatenate segments before processing
     max_length = 120  # Set an appropriate max length for concatenation
     concatenated_segments = concatenate_segments(content, max_length)
-    print(concatenated_segments)
-    
+
+    lesson_meta = LessonModel().get(lesson_id, True)
+
     texts, metadatas = zip(
         *(
             (
                 item["text"],
-                {"lesson_id": lesson_id, "start": item["start"], "end": item["end"]},
+                {
+                    "lesson_id": lesson_id,
+                    "start": item["start"],
+                    "end": item["end"],
+                    "subject": lesson_meta["subject"]["name"],
+                    "lesson": lesson_meta["name"],
+                },
             )
             for item in concatenated_segments
         )
