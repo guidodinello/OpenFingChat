@@ -60,14 +60,15 @@ class VectorStore:
             return self
         logging.info(f"Seeding vectorstore with data from {data_path}")
 
-        lessons_id = LessonModel().getAll(
-            filters={"transcribed": True},
-            projection={"_id": 1},
-        )
+        filters = {"transcribed": True}
+        projection = {"_id": 1}
+        lessons_id = LessonModel().getAll(projection=projection, **filters)
+
         if not lessons_id:
             logging.error("No transcribed lessons returned from the database!")
             # si no hay lessons marcadas como transcriptas, para testear se puede usar el mock
             from .mock import MONGO_CLIENT
+
             lessons_id = MONGO_CLIENT["database"]["classes"].find(
                 {"transcribed": True},
                 projection={"_id": 1},
@@ -76,7 +77,7 @@ class VectorStore:
 
         job = functools.partial(process_transcript, data_path)
         with futures.ThreadPoolExecutor() as executor:
-            results = [executor.submit(job, id) for id in lessons_id]
+            results = [executor.submit(job, id["_id"]) for id in lessons_id]
 
             for res in futures.as_completed(results):
                 result = res.result()
@@ -102,8 +103,36 @@ class VectorStore:
         (self.path / "index.pkl").unlink(missing_ok=True)
 
 
+def concatenate_segments(segments, max_length):
+    concatenated_segments = []
+    current_segment = None
+
+    for segment in segments:
+        if current_segment is None:
+            current_segment = segment
+        else:
+            new_length = (
+                current_segment["end"]
+                - current_segment["start"]
+                + segment["end"]
+                - segment["start"]
+            )
+            if new_length <= max_length:
+                current_segment["text"] += " " + segment["text"]
+                current_segment["end"] = segment["end"]
+            else:
+                concatenated_segments.append(current_segment)
+                current_segment = segment
+
+    if current_segment is not None:
+        concatenated_segments.append(current_segment)
+
+    return concatenated_segments
+
+
 def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]:
     class_transcript = Path(f"{data_folder}/{lesson_id}.json")
+
     if not class_transcript.exists():
         logging.error(
             f"Lesson is marked as transcribed but file {class_transcript} not found!"
@@ -114,13 +143,31 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
     with open(class_transcript, "r", encoding="utf-8") as f:
         content = json.load(f)
 
+    if not isinstance(content, list):
+        logging.error(
+            f"Invalid structure in file {class_transcript}. Expected a list of segments."
+        )
+        return None
+
+    # Concatenate segments before processing
+    max_length = 120  # Set an appropriate max length for concatenation
+    concatenated_segments = concatenate_segments(content, max_length)
+
+    lesson_meta = LessonModel().get(lesson_id, True)
+
     texts, metadatas = zip(
         *(
             (
                 item["text"],
-                {"lesson_id": lesson_id, "start": item["start"], "end": item["end"]},
+                {
+                    "lesson_id": lesson_id,
+                    "start": item["start"],
+                    "end": item["end"],
+                    "subject": lesson_meta["subject"]["name"],
+                    "lesson": lesson_meta["name"],
+                },
             )
-            for item in content["segments"]
+            for item in concatenated_segments
         )
     )
     return texts, metadatas
