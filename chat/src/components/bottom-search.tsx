@@ -26,8 +26,7 @@ const BottomSearch = () => {
   const onSend = () => {
     if (query.query?.length === 0) return;
 
-    sendMessage(query, dispatchChat);
-    dispatchQuery(setQueryParams({ query: "" }));
+    sendMessage(query, dispatchChat, dispatchQuery);
   };
 
   const onReset = () => {
