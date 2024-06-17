@@ -1,0 +1,4467 @@
+[
+    {
+        "text": " Vamos a comenzar entonces un tema nuevo, que es la recursión, también no sé si han visto",
+        "start": 0.0,
+        "end": 10.32
+    },
+    {
+        "text": " ya en lógica recursión, poquito, entonces quizás se encuentra en una conexión con esto,",
+        "start": 10.32,
+        "end": 15.88
+    },
+    {
+        "text": " espero que sí, la vamos a ver acá desde el punto de vista más computacional, igual como",
+        "start": 15.88,
+        "end": 20.12
+    },
+    {
+        "text": " es en paralelo del curso, no vamos a suponer que es previo lógica esto, pero bueno, siempre",
+        "start": 20.12,
+        "end": 26.32
+    },
+    {
+        "text": " ayuda a haber visto por lo menos algo de inducción y de recursión porque van a ver que tiene",
+        "start": 26.32,
+        "end": 30.16
+    },
+    {
+        "text": " conexión con esto. ¿Qué es la recursión? Bueno, hay muchas definiciones, está bien, pero",
+        "start": 30.16,
+        "end": 36.32
+    },
+    {
+        "text": " van a ver que es algo alternativo a la iteración, a la idea de usar un form, un while, un repeat",
+        "start": 36.32,
+        "end": 42.879999999999995
+    },
+    {
+        "text": " en un lenguaje de programación. Uno puede encontrar los libros definiciones como estas,",
+        "start": 42.879999999999995,
+        "end": 47.8
+    },
+    {
+        "text": " no? Un programa que sin boca a sí mismo o se llama a sí mismo se dice que es un programa",
+        "start": 47.8,
+        "end": 53.92
+    },
+    {
+        "text": " recursivo, define un programa con un nombre y en el cuerpo de la definición se invoca a sí mismo,",
+        "start": 53.92,
+        "end": 60.32
+    },
+    {
+        "text": " o sea un programa definido en términos de sí mismo se dice que es un programa recursivo, si no",
+        "start": 60.32,
+        "end": 65.8
+    },
+    {
+        "text": " se queda con esa definición meyabaga, uno diría a ver si tiene sentido o si me alcanza de eso",
+        "start": 65.8,
+        "end": 70.76
+    },
+    {
+        "text": " para programar de alguna manera de esta forma, ¿no? Entonces uno podría escribir este programita",
+        "start": 70.76,
+        "end": 76.92
+    },
+    {
+        "text": " en C o C más más, muy simple, un procedimiento P, que lo único que hace es invocarse a sí mismo,",
+        "start": 76.92,
+        "end": 83.68
+    },
+    {
+        "text": " no tiene ni siquiera parámetros, ¿ Está bien? Uno del art de correr desde un main y da el mensaje",
+        "start": 83.68,
+        "end": 89.72000000000001
+    },
+    {
+        "text": " Stack Overflow, o sea me está diciendo que hay una pila que se está desbordando, hay un error,",
+        "start": 89.72000000000001,
+        "end": 96.72000000000001
+    },
+    {
+        "text": " ni si por qué, ¿qué está pasando? Entonces para entender primero, ¿cómo? ¿Por qué",
+        "start": 96.72000000000001,
+        "end": 103.0
+    },
+    {
+        "text": " es una error? Vamos a ver algo más general, ¿qué es lo más general? Vamos a ver cómo",
+        "start": 103.0,
+        "end": 106.24000000000001
+    },
+    {
+        "text": " simplemente la invocación a procedimientos o a funciones en un lenguaje cualquiera, puede ser",
+        "start": 106.24000000000001,
+        "end": 111.84
+    },
+    {
+        "text": " más más java, si ya el mecanismo es el mismo, es decir, cuando un programa, por ejemplo, P,",
+        "start": 111.84,
+        "end": 118.88000000000001
+    },
+    {
+        "text": " llama a una auxiliar cusu 1 y este llama a otra función o procedimiento cusu 2, cusu 3 y así,",
+        "start": 118.88000000000001,
+        "end": 124.52000000000001
+    },
+    {
+        "text": " sean invocaciones, ¿cómo se las arregla el sistema para instrumentar eso? Bueno, van a ver que",
+        "start": 124.52000000000001,
+        "end": 130.36
+    },
+    {
+        "text": " de alguna manera va a usar así como en la memoria de cualquier sistema, uno tiene guarda las instrucciones",
+        "start": 130.36,
+        "end": 136.8
+    },
+    {
+        "text": " y los datos, va a tener que guardar cualquier sistema que implemente llamada con invocaciones,",
+        "start": 136.8,
+        "end": 142.72
+    },
+    {
+        "text": " a método, funciones o procedimiento de auxiliar, una estructura auxiliar, se suele llamar",
+        "start": 142.72,
+        "end": 147.64000000000001
+    },
+    {
+        "text": " una estructura de ejecuciones o stack de ejecuciones, o sea justamente para guardar la información",
+        "start": 147.64000000000001,
+        "end": 155.56
+    },
+    {
+        "text": " que hace a la invocación, para que lo vean, como les dije las transparencias tienen más",
+        "start": 155.56,
+        "end": 160.96
+    },
+    {
+        "text": " material de que voy a ver acá, entonces me voy a ir saltiando y me voy a focalizar en lo",
+        "start": 160.96,
+        "end": 164.68
+    },
+    {
+        "text": " esencial y hay cosas que ustedes la van a poder leer y que sobre todo explican esto,",
+        "start": 164.68,
+        "end": 168.52
+    },
+    {
+        "text": " supongan que tengo este esquema de código, un procedimiento principal P que tiene cierto código,",
+        "start": 168.52,
+        "end": 175.96
+    },
+    {
+        "text": " le llamó código 1, puede ser un bloque largo de código, pero en algún momento llama a un",
+        "start": 175.96,
+        "end": 181.88
+    },
+    {
+        "text": " procedimiento una función auxiliar cusu 1, eso es el call de cusu 1, pero abajo de este",
+        "start": 181.88,
+        "end": 188.56
+    },
+    {
+        "text": " llamado puede haber más código dentro de P, lo llamo código 2, también lo mismo para el código",
+        "start": 188.56,
+        "end": 195.0
+    },
+    {
+        "text": " 1, fíjense que hay un código 3 antes de un llamado y un código 4, el llamado es a cusu 2,",
+        "start": 195.0,
+        "end": 200.48
+    },
+    {
+        "text": " que tiene de nuevo un código antes del llamado y un código después y supongan que este cusu 3,",
+        "start": 200.48,
+        "end": 205.96
+    },
+    {
+        "text": " que es el que llama cusu 2, no invoca más a nadie, eso es como auto contenido y código,",
+        "start": 205.96,
+        "end": 211.88
+    },
+    {
+        "text": " se la pregunta es cómo hace el entorno de ejecución para ejecutar esto, si yo desde el main",
+        "start": 211.88,
+        "end": 217.2
+    },
+    {
+        "text": " chamo a P, ¿qué como cómo se hace el sistema para no perderse? ¿Qué tengo que ejecutar después",
+        "start": 217.2,
+        "end": 221.39999999999998
+    },
+    {
+        "text": " de qué? Está claro, creo que para ustedes y para mí también que cuando yo chamo a P se ejecutaran",
+        "start": 221.39999999999998,
+        "end": 229.0
+    },
+    {
+        "text": " todas las líneas de código, del código 1, una de secuencias siguiendo a lo que se le llama el",
+        "start": 229.0,
+        "end": 234.67999999999998
+    },
+    {
+        "text": " pro-encounter, esta la próxima, esta la próxima, la próxima, la pregunta es qué pasa cuando llega acá",
+        "start": 234.67999999999998,
+        "end": 239.72
+    },
+    {
+        "text": " a esta invocación, porque abajo del call va a haber una instrucción, seguramente, pero le",
+        "start": 239.72,
+        "end": 245.88
+    },
+    {
+        "text": " estoy dando la directiva de no, andaje ejecutarse el cusu 1 y cuando termines cusu 1, eso es lo que",
+        "start": 245.88,
+        "end": 251.35999999999999
+    },
+    {
+        "text": " estoy pensando, seguir ejecutando en este punto, es decir que va a ser un suspenso, una interrupción en P",
+        "start": 251.35999999999999,
+        "end": 259.56
+    },
+    {
+        "text": " diciendo me voy a ejecutar el cusu 1, cuando termines cusu 1 vuelvo acá, pero el vuelvo acá lo tiene",
+        "start": 259.56,
+        "end": 264.64
+    },
+    {
+        "text": " que guardar en algún lado, sino como sabe el sistema donde tiene que volver, ahí solo voy a",
+        "start": 264.64,
+        "end": 268.88
+    },
+    {
+        "text": " llamar p su cero o el punto de retorno en el código p donde tiene que ejecutar después que termine",
+        "start": 268.88,
+        "end": 277.15999999999997
+    },
+    {
+        "text": " el llamado cusu 1, es decir me lo guardo y donde supon ser que la memoria me guardo un p su cero,",
+        "start": 277.15999999999997,
+        "end": 281.88
+    },
+    {
+        "text": " una esa dirección del lugar, ok, en piezo ejecutar entonces este código y en algún momento llama",
+        "start": 281.88,
+        "end": 290.44
+    },
+    {
+        "text": " a cusu 2, ¿no? Tamos de acuerdo, entonces empieza a ejecutar este código ejecuta toda la línea del",
+        "start": 290.44,
+        "end": 296.15999999999997
+    },
+    {
+        "text": " código 3 y en algún momento llama a cusu 2 y se vuelve a presentar la misma situación, pues",
+        "start": 296.16,
+        "end": 301.36
+    },
+    {
+        "text": " me está diciendo que va a ejecutar cusu 2 pero acá hay código pendiente, entonces guardad",
+        "start": 301.36,
+        "end": 307.56
+    },
+    {
+        "text": " de otro punto de retorno, lo llamó p su 1, guardad en algún lugar en una estructura, por",
+        "start": 307.56,
+        "end": 313.92
+    },
+    {
+        "text": " ahora lo tengo acá, lo llamé stack, pero vamos a ver por qué es un stack, por qué es una pila,",
+        "start": 313.92,
+        "end": 318.16
+    },
+    {
+        "text": " entonces le dice, anda ejecutar cusu 2 y cuando termines seguís ejecutando el código 4, pero",
+        "start": 319.12,
+        "end": 324.72
+    },
+    {
+        "text": " hasta que no termines no, entonces viene acá y empieza a ejecutar cusu 2, ejecuta todo el código 5",
+        "start": 324.72,
+        "end": 329.84000000000003
+    },
+    {
+        "text": " y cuando llega el llamado cusu 3 lo mismo, al grega 1 iría otro punto de retorno que le",
+        "start": 331.12,
+        "end": 336.44000000000005
+    },
+    {
+        "text": " llamó p 2, o sea hasta ahora tengo 3 puntos de retorno que el sistema tiene que acordarse,",
+        "start": 336.44000000000005,
+        "end": 340.8
+    },
+    {
+        "text": " ¿vale? pues son tres cosas pendientes, cuando viene ejecutar acá ejecuta todo el código 7, que puede",
+        "start": 340.8,
+        "end": 347.56
+    },
+    {
+        "text": " ser un bloque muy largo de código, pero como un info que a más a nadie, cuando llegue al final",
+        "start": 347.56,
+        "end": 351.6
+    },
+    {
+        "text": " dice termine, entonces el sistema de cusu 3 se termine, bueno fíjate si no te quedan cosas pendientes,",
+        "start": 351.6,
+        "end": 358.68
+    },
+    {
+        "text": " qué es lo pendiente, y uno diría estos tres, cuál debería ser primero, el p 2, ¿por qué?",
+        "start": 358.68,
+        "end": 366.48
+    },
+    {
+        "text": " porque está esperando que yo termine ejecutar todo este código para seguir acá, es decir,",
+        "start": 366.48,
+        "end": 372.56
+    },
+    {
+        "text": " quién va a tomar de todos estos puntos de retorno que yo almacené en alguna estructura,",
+        "start": 372.56,
+        "end": 376.12
+    },
+    {
+        "text": " el último que puse, el que está más arriba, si yo los voy poniendo arriba, los saco de arriba,",
+        "start": 376.12,
+        "end": 381.56
+    },
+    {
+        "text": " y eso es un stack, eso es una pila, el último que ingresa es el primero que sale,",
+        "start": 381.56,
+        "end": 386.6
+    },
+    {
+        "text": " o en inglés, lifo, las in, first out, ¿no? entonces uno diría bueno, saquemos el p 2,",
+        "start": 386.6,
+        "end": 393.88
+    },
+    {
+        "text": " entonces ahora ejecuto todo el código 6, perdón, todo el ejecuto todo el código 6, saco el",
+        "start": 393.88,
+        "end": 401.12
+    },
+    {
+        "text": " p 2 y ejecuto todo el código 6, y ya, fíjense que no aparece acá más como pendiente,",
+        "start": 401.12,
+        "end": 407.92
+    },
+    {
+        "text": " porque yo está, se sale ejecuté y se te queda algo más pendiente, sí, estos dos,",
+        "start": 407.92,
+        "end": 412.6
+    },
+    {
+        "text": " peú, y p 0, ¿cuál tengo que hacer primero? el que está arriba, el p 1, el último que puse",
+        "start": 412.6,
+        "end": 419.0
+    },
+    {
+        "text": " de los dos, entonces saca el p 1 y dice dónde me tenía que venir, y me tenía que venir acá,",
+        "start": 419.0,
+        "end": 424.0
+    },
+    {
+        "text": " ejecuto todo el código 4, y cuando llega el final dice, saquemos lo pendiente, pues ya no está",
+        "start": 424.0,
+        "end": 430.16
+    },
+    {
+        "text": " pendiente, te queda algo más pendiente, sí, p 0, vuelve acá, ejecuta todo el código 2,",
+        "start": 430.16,
+        "end": 436.92
+    },
+    {
+        "text": " no le queda más pendiente, entonces dice ahora sí termine la ejecución y se produce",
+        "start": 437.92,
+        "end": 443.04
+    },
+    {
+        "text": " la ejecución del código que uno esperaría, entonces para que se produzca esa ejecución,",
+        "start": 443.04,
+        "end": 447.16
+    },
+    {
+        "text": " tuve que usar una estructura auxiliar, estos puntos de retorno que se comportan como una pila,",
+        "start": 447.16,
+        "end": 454.40000000000003
+    },
+    {
+        "text": " entonces volviendo al ejemplo, aquel que hayamos visto, el p que llama el p me dice esa pila",
+        "start": 454.40000000000003,
+        "end": 461.44
+    },
+    {
+        "text": " se desbordó, ¿por qué esa pila se desbordó? ¿cuándo crecía el stack? que vimos recién y",
+        "start": 461.44,
+        "end": 466.8
+    },
+    {
+        "text": " cuando decresía, cuando yo le hacía cada vez que llamaba, agregaba un pesuí al stack,",
+        "start": 466.8,
+        "end": 475.52000000000004
+    },
+    {
+        "text": " ¿no? pesu 0, pesu 1, pesu 2, cuando terminó esta ejecutar, ¿qué pasó con el stack?",
+        "start": 475.52000000000004,
+        "end": 480.56
+    },
+    {
+        "text": " Empiezo sacar, terminó lo pendiente, saca lo, terminó lo pendiente, saca lo, se entiendan,",
+        "start": 480.56,
+        "end": 486.08000000000004
+    },
+    {
+        "text": " entonces cuando saco, cuando terminó, cuando pongo cada vez que invoco, el p que llama el p",
+        "start": 486.08000000000004,
+        "end": 492.32
+    },
+    {
+        "text": " ¿qué pasa? invoco a p, así mismo, es como si fuera otro, pero es el mismo, entonces en el stack",
+        "start": 492.4,
+        "end": 497.64
+    },
+    {
+        "text": " agregaigo, pese vuelve a llamar a p, en el stack agregaigo, pese llama p en el stack agregaigo,",
+        "start": 497.64,
+        "end": 502.8
+    },
+    {
+        "text": " y bueno, la memoria finita en algún momento se stack, que está en la memoria se desborda,",
+        "start": 502.8,
+        "end": 508.12
+    },
+    {
+        "text": " llega la capacidad máxima, entonces me da un mensaje de error, está bien, porque este es un ejecución",
+        "start": 508.12,
+        "end": 513.8
+    },
+    {
+        "text": " infinita, ¿no? P que llama p no termina nunca, no diría no tiene sentido, pero un lenguaje de",
+        "start": 513.8,
+        "end": 518.84
+    },
+    {
+        "text": " programación hasta ahora con un guay, lo con un forzo, podía hacer con una idea de ejecución",
+        "start": 518.84,
+        "end": 524.12
+    },
+    {
+        "text": " infinita, ¿cómo la podéis escribir con un guay? ¿Uai qué? Con una condición exacto, ella dice con una",
+        "start": 524.12,
+        "end": 532.0
+    },
+    {
+        "text": " condición que sea true, que siempre sea true, pues huay true, no importa lo que pongas adentro,",
+        "start": 532.0,
+        "end": 536.96
+    },
+    {
+        "text": " eso ejecuta, pero el comportamiento es distinto, no sé si lo probaron, no da un mensaje de error,",
+        "start": 536.96,
+        "end": 542.08
+    },
+    {
+        "text": " queda con un programa consumiendo tiempo de ejecución de sistemas hasta que uno lo matí,",
+        "start": 542.08,
+        "end": 546.48
+    },
+    {
+        "text": " tiene que cortar la ejecución de programa, no da un mensaje de error, ¿por qué? Pues no use un stack,",
+        "start": 546.8000000000001,
+        "end": 550.44
+    },
+    {
+        "text": " eso son dos modelos, uniría de forma de procesar incorrectas, porque son como ejecución",
+        "start": 551.12,
+        "end": 556.9200000000001
+    },
+    {
+        "text": " infinitas inútiles, pero esta sí de error y el anterior que el guay true no, fíjense este otro",
+        "start": 556.9200000000001,
+        "end": 564.5600000000001
+    },
+    {
+        "text": " ejemplo, parece un poquito más útil y también cumplen la definición de que dijimos recursivos y",
+        "start": 564.5600000000001,
+        "end": 570.76
+    },
+    {
+        "text": " un procedimiento se llama a sí mismo, se van a ver que se llama a sí mismo, ¿te quieses este",
+        "start": 571.3199999999999,
+        "end": 575.6
+    },
+    {
+        "text": " procedimiento p que de nuevo no tiene argumentos? recibe un entero desde la consola, desde la entrada,",
+        "start": 575.6,
+        "end": 581.48
+    },
+    {
+        "text": " acá le puse seín pero escaneje, puede ser, supongase que esto analiza así, ese x es primo, no,",
+        "start": 581.48,
+        "end": 589.04
+    },
+    {
+        "text": " y en función de eso, por ejemplo, en primer mensaje u otro, es primo, no es primo, pero después",
+        "start": 589.04,
+        "end": 594.88
+    },
+    {
+        "text": " se vuelve invocar a p, o sea, lo puedo ver de nuevo como ahora lo puedo ver como un premio",
+        "start": 594.88,
+        "end": 602.64
+    },
+    {
+        "text": " interactivo, porque me va a pedir que ingresa un número, sale un etiqueta, es primo,",
+        "start": 602.64,
+        "end": 606.16
+    },
+    {
+        "text": " no es primo, ingresa otro número, es primo, no, como se vuelve invocar me pide, pero tiene el",
+        "start": 606.16,
+        "end": 611.92
+    },
+    {
+        "text": " mismo defecto que el anterior, no, porque no tiene salida, esta no termina, en algún momento es más,",
+        "start": 611.92,
+        "end": 617.64
+    },
+    {
+        "text": " si yo pongo un contador de cuántas veces por pase por es primo, me va a decir la capacidad que",
+        "start": 617.64,
+        "end": 622.88
+    },
+    {
+        "text": " tiene el stack, porque cuando llega al máximo y me diga stack overflow hasta ahí llegó,",
+        "start": 622.88,
+        "end": 626.56
+    },
+    {
+        "text": " está bien, entonces parece que este programa de nuevo que se llama a sí mismo, o que está definido en",
+        "start": 628.48,
+        "end": 634.04
+    },
+    {
+        "text": " términos sí mismo, no es útil, depende de la computadora, define el sistema operativo,",
+        "start": 634.04,
+        "end": 643.68
+    },
+    {
+        "text": " desde los programas, desde el lenguaje, seis y se más más bopodes de alguna manera modificar el",
+        "start": 643.68,
+        "end": 650.0
+    },
+    {
+        "text": " tamaño del stack, no es lo que hacen los programadores habituales, poder, o sea,",
+        "start": 650.0,
+        "end": 655.56
+    },
+    {
+        "text": " poder tener un stack más grande, pero por defecto no, tenés el mismo tamaño del stack para todos",
+        "start": 655.56,
+        "end": 660.2
+    },
+    {
+        "text": " los programas que vos ejecutas en un lenguaje, ¿por qué? porque es el riesgo, si yo le pido un stack",
+        "start": 660.2,
+        "end": 664.04
+    },
+    {
+        "text": " exageradamente grande, puede ser que cuando se desbordes, si cae el sistema operativo, por ejemplo,",
+        "start": 664.04,
+        "end": 668.6
+    },
+    {
+        "text": " o sea, le saco memoria a recursos críticos que después, entonces puedes hacer un ataque de",
+        "start": 668.6,
+        "end": 673.28
+    },
+    {
+        "text": " seguridad que yo te hago un programa, sin sector esto en un código, te hago caer el sistema y después",
+        "start": 673.28,
+        "end": 678.68
+    },
+    {
+        "text": " no funciona nada, entonces más fuerte, por eso puedes tomar compartir con recursos de la memoria,",
+        "start": 678.68,
+        "end": 689.4799999999999
+    },
+    {
+        "text": " por ejemplo, del sistema operativo, entonces yo hago caer el sistema operativo, se cae todo el",
+        "start": 689.4799999999999,
+        "end": 693.3599999999999
+    },
+    {
+        "text": " funcionamiento del sistema, todos los programas que están corriendo en esa máquina, en ese sistema operativo",
+        "start": 693.3599999999999,
+        "end": 697.0
+    },
+    {
+        "text": " dejan de funcionar, entonces no me deja que yo define un stack infinito, o infinito, o mientras",
+        "start": 697.0,
+        "end": 702.68
+    },
+    {
+        "text": " haya memoria, porque me da la memoria, después nada más puede funcionar salvo esto, por eso",
+        "start": 702.68,
+        "end": 707.68
+    },
+    {
+        "text": " siempre finito, siempre una cota y por eso el lenguaje de un mensaje stack, oberflue cuando",
+        "start": 707.68,
+        "end": 712.1999999999999
+    },
+    {
+        "text": " llevo esa cota, miren este otro ejemplo, vieron el factorial matemática en algún lado,",
+        "start": 712.1999999999999,
+        "end": 719.2399999999999
+    },
+    {
+        "text": " qué es el factorial de un número, claro, el factorial de 5 es 5 x 4 x 3 x 2 x 1, estamos",
+        "start": 719.2399999999999,
+        "end": 729.16
+    },
+    {
+        "text": " acuerdos, es la productoria de los primeros números naturales sin incluir el cero, porque",
+        "start": 729.16,
+        "end": 733.8
+    },
+    {
+        "text": " el producto con cero es cero y el factorial de cero por definiciones 1, está bien? o sea",
+        "start": 733.8,
+        "end": 739.8399999999999
+    },
+    {
+        "text": " matemáticamente a que le podría decir esa definición, qué tiene factoriales n por n-1 por n-2 por",
+        "start": 739.8399999999999,
+        "end": 745.36
+    },
+    {
+        "text": " 1, bueno miren este código en c++ o en c que implementa esa idea, qué está diciendo este código,",
+        "start": 745.36,
+        "end": 753.76
+    },
+    {
+        "text": " está diciendo mira si el n-2 parámetro este entero natural, ya me molé así, más",
+        "start": 753.76,
+        "end": 759.76
+    },
+    {
+        "text": " uir igual que cero, es mayor que 1, lo podemos calcular el factorial de c número como el producto",
+        "start": 759.76,
+        "end": 765.96
+    },
+    {
+        "text": " de c número por y llamo regorciamente el factorial de quien del anterior, o sea factorial de 5,",
+        "start": 765.96,
+        "end": 773.8
+    },
+    {
+        "text": " supongo que en el 5 dice 5 x llamo el factorial de 4 y le digo la máquina, anda calcular",
+        "start": 773.8,
+        "end": 780.0
+    },
+    {
+        "text": " el factorial de 4, está bien? y si el n no es mayor que 1 o sea es menor igual que 1, 0 o 1,",
+        "start": 780.0,
+        "end": 788.76
+    },
+    {
+        "text": " digo por definiciones factoriales 1, factorial de cero, factorial de 1 es 1,",
+        "start": 788.76,
+        "end": 794.0
+    },
+    {
+        "text": " claro, la diferencia cuál es la diferencia entre este y los dos que vimos recién, el n-2",
+        "start": 798.4,
+        "end": 802.64
+    },
+    {
+        "text": " es finita, entonces acá hay algo que una empieza a ver por ahora intuitivamente, que hay un caso al",
+        "start": 802.64,
+        "end": 808.72
+    },
+    {
+        "text": " menos que sexte, en el cual no se invoca a si mismo, o sea parece que hay para, en el p que",
+        "start": 808.72,
+        "end": 814.84
+    },
+    {
+        "text": " llamaba el p no para van nunca, y fíjense que tampoco hay una circularidad inútil, no es que p",
+        "start": 814.84,
+        "end": 821.0400000000001
+    },
+    {
+        "text": " llama p y no cambia nada, sino que factor n no está definido en términos de factor n,",
+        "start": 821.0400000000001,
+        "end": 827.64
+    },
+    {
+        "text": " sino en términos de factor n-1 el parámetro cambio, entonces cuál es la idea? y la idea es está bien",
+        "start": 827.64,
+        "end": 836.52
+    },
+    {
+        "text": " que sinbo que así mismo, pero hay algo que tiene que ir cambiando un parámetro,",
+        "start": 836.52,
+        "end": 840.3199999999999
+    },
+    {
+        "text": " una idea que converja a un punto de parada, como si fuera un guay, quitéere, pero a",
+        "start": 840.3199999999999,
+        "end": 845.8
+    },
+    {
+        "text": " muchos algas, porque si no eso no me sirve, cuando la idea de la recurción es esa, que sinbo",
+        "start": 845.8,
+        "end": 851.28
+    },
+    {
+        "text": " que hace mismo, pero algo cambio en el parámetro, uno diría que se converja a lo que se suele",
+        "start": 851.28,
+        "end": 855.16
+    },
+    {
+        "text": " damar un caso base, un caso de parada, al menos 1 puede haber más de un caso de parada, pero tiene",
+        "start": 855.16,
+        "end": 861.84
+    },
+    {
+        "text": " que al menos 1, pues sino son paras, tu intuitivamente uno diría, si llamó al factor n-5, parece que",
+        "start": 861.84,
+        "end": 867.76
+    },
+    {
+        "text": " vas a amar a, vas a una cuentit y vas a amar a quien? al factor n-4, y factor n-4, vas a una",
+        "start": 867.76,
+        "end": 872.6
+    },
+    {
+        "text": " cuentit y vas a amar a quien? al factor n-3, lo voy acercando a quien? al 1, y sé que cuando llega al",
+        "start": 872.6,
+        "end": 878.9200000000001
+    },
+    {
+        "text": " 1 no se llama a si mismo, entonces parece que esto termina, se entiende? bueno eso le da un poco más",
+        "start": 878.9200000000001,
+        "end": 885.96
+    },
+    {
+        "text": " de sentido a la recurción, comparémoslo con este, este otro factor, grandes diferencias rápido,",
+        "start": 885.96,
+        "end": 894.9200000000001
+    },
+    {
+        "text": " visuales, ¿cuáles son? es alto, usun for, o sea, es citerativo, no hay recurción, fíjense que la",
+        "start": 894.9200000000001,
+        "end": 904.88
+    },
+    {
+        "text": " palabra fact no aparece en el medio, no hay una invocación a sí mismo, una iría, calcula lo mismo,",
+        "start": 904.88,
+        "end": 911.6
+    },
+    {
+        "text": " bueno fijemos no que sí, tengo dos variables auxilares, f que es el acumulador que después",
+        "start": 911.6,
+        "end": 918.2
+    },
+    {
+        "text": " retornos en f va a estar el factorial y uní que es un contador que lo voy incrementando hasta que",
+        "start": 918.2,
+        "end": 923.9200000000001
+    },
+    {
+        "text": " llega a ln haciendo que a f le asino f por y, o sea que va haciendo la acumulación de la",
+        "start": 923.9200000000001,
+        "end": 929.72
+    },
+    {
+        "text": " productoria en f, cuando no entra al for que alguien podría pensar que pasa si es menor igual",
+        "start": 929.72,
+        "end": 936.64
+    },
+    {
+        "text": " que uno, no entra, bueno ya sabe que el factorial de 0 y 1 es 1, o sea que está bien que si no entra",
+        "start": 936.64,
+        "end": 941.92
+    },
+    {
+        "text": " el retorno 1, lo puede mirar un ratito, dice sí, efectivamente calcula lo mismo, es más si yo",
+        "start": 941.92,
+        "end": 948.28
+    },
+    {
+        "text": " un usuario le doy el iterativo del recurso y el solo mira el resultado no va a distinguir la",
+        "start": 948.28,
+        "end": 954.28
+    },
+    {
+        "text": " diferencia entre uno y otro, solo mismo el resultado de factorial de 5 me da 120 este y me da 120 este,",
+        "start": 954.28,
+        "end": 960.64
+    },
+    {
+        "text": " sí, lo hace como al revés, o sea le cuenta fíjense típicamente el recursivo va a arrancar, quiero que",
+        "start": 961.36,
+        "end": 970.64
+    },
+    {
+        "text": " hay cualquier factorial de 5 va a decir voy a hacer una cuentita pero llamo al factorial de 4 y el",
+        "start": 970.64,
+        "end": 974.88
+    },
+    {
+        "text": " último paso que hace es el factorial de 1, o sea como que va de lo que quiere calcular hasta la base,",
+        "start": 974.88,
+        "end": 980.56
+    },
+    {
+        "text": " cuando uno lo hace iterativo a veces y tera al revés, va haciendo desde el machiquito hasta llegar",
+        "start": 980.56,
+        "end": 985.84
+    },
+    {
+        "text": " al ene, sea un wild, un for y ahí retorno, entonces el proceso suele ser inverse, ¿qué otra",
+        "start": 985.84,
+        "end": 993.6
+    },
+    {
+        "text": " diferencia no podría notar? y bueno podría decir cueles más claro legible y ahí es muy",
+        "start": 993.6,
+        "end": 1000.72
+    },
+    {
+        "text": " subjetivo porque si ustedes están aprendiendo de recursión ahora usted me ha decidido esto,",
+        "start": 1000.72,
+        "end": 1004.6800000000001
+    },
+    {
+        "text": " porque nunca habí la recursión, entonces por más que me muestre, o sea, por más que me muestre",
+        "start": 1004.6800000000001,
+        "end": 1013.76
+    },
+    {
+        "text": " este, yo prefiero el otro porque esto todavía no lo entiendo pero créame eso que es subjetivo,",
+        "start": 1013.76,
+        "end": 1019.4399999999999
+    },
+    {
+        "text": " va a terminar siendo cuando conozcan van a elegir este, bien eso es otra observación fíjense que si a",
+        "start": 1019.4399999999999,
+        "end": 1026.24
+    },
+    {
+        "text": " mí me define matemáticamente el factorial, este es la traducción casi literal matemática el",
+        "start": 1026.24,
+        "end": 1031.2
+    },
+    {
+        "text": " factorial, no uso ninguna variable extra salvo el parámetro N, o sea no generé nada de ruido,",
+        "start": 1031.2,
+        "end": 1036.8799999999999
+    },
+    {
+        "text": " digamos extra, en cambio la versión iterativa tuvo que pensar en dos variables auxiliares, FI y ver",
+        "start": 1036.8799999999999,
+        "end": 1042.8799999999999
+    },
+    {
+        "text": " cómo las hauso una como contador, otra como acumulador, capaz que no lo resulta difícil pero esa",
+        "start": 1042.88,
+        "end": 1048.72
+    },
+    {
+        "text": " tiene una extra, sí, esto es un for que para el for es como el equivalente al llamado en sí,",
+        "start": 1048.72,
+        "end": 1062.64
+    },
+    {
+        "text": " al llamado recursía, pero sí voy haciendo un producto entre el acumulador y el contador que no es",
+        "start": 1062.64,
+        "end": 1066.16
+    },
+    {
+        "text": " trivial que hay en se cuenta que estoy haciendo ahí, los dos pueden dar el mensaje int oberfló,",
+        "start": 1066.16,
+        "end": 1075.2
+    },
+    {
+        "text": " int oberfló quiere decir cuando uno va multiplicando enteros puede sobrepasar la capacidad del entero más",
+        "start": 1076.0800000000002,
+        "end": 1081.52
+    },
+    {
+        "text": " grande, eso no tiene a nivel con esta coberfló, si puede pasar que el recurso si tuviera un",
+        "start": 1081.52,
+        "end": 1086.64
+    },
+    {
+        "text": " stack muy chiquito y yo quiero calcular el factorial de uno muy grande, desborde el stack ante a salvo,",
+        "start": 1086.64,
+        "end": 1092.5600000000002
+    },
+    {
+        "text": " con los stack habitual el lenguaje no te va a pasarte, va a saltar otra error antes que te salte ese,",
+        "start": 1092.72,
+        "end": 1096.96
+    },
+    {
+        "text": " en memoria no le voy a preguntar en tiempo de ejecución, pues lo vamos a dejar para más adelante,",
+        "start": 1098.96,
+        "end": 1102.6399999999999
+    },
+    {
+        "text": " cuál es la eficiencia de los algoritmos recursos, vamos a dejarlo para dos semanas más adelante,",
+        "start": 1102.6399999999999,
+        "end": 1107.76
+    },
+    {
+        "text": " pero en memoria ¿cuál les parece que es más eficiente en el uso de la memoria?",
+        "start": 1109.28,
+        "end": 1112.8
+    },
+    {
+        "text": " es más si yo digujara, el recurso es más eficiente en el uso de la memoria, ¿tán de acuerdo?",
+        "start": 1112.8,
+        "end": 1120.6399999999999
+    },
+    {
+        "text": " no, bien que no tende acuerdo, ¿por qué?",
+        "start": 1122.72,
+        "end": 1124.72
+    },
+    {
+        "text": " ¿cómo?",
+        "start": 1124.72,
+        "end": 1127.2
+    },
+    {
+        "text": " ¿qué cosa?",
+        "start": 1127.2,
+        "end": 1132.56
+    },
+    {
+        "text": " ¿de el espacio?",
+        "start": 1132.56,
+        "end": 1135.44
+    },
+    {
+        "text": " ¿qué es lo que va creciendo en el uso cada vez que llamo el stack?",
+        "start": 1135.44,
+        "end": 1140.48
+    },
+    {
+        "text": " o sea el recurso, cada vez que llamo el stack recuerda que el stack crecía, agregaba algo,",
+        "start": 1140.48,
+        "end": 1146.0
+    },
+    {
+        "text": " entonces en el factorial recurso, si yo llamo con una integrante, la cantidad es proporcional el",
+        "start": 1146.0,
+        "end": 1152.28
+    },
+    {
+        "text": " stack a la cantidad de llamados, en cambio el iterativo a medida que voy llamando con el",
+        "start": 1152.28,
+        "end": 1158.92
+    },
+    {
+        "text": " enemagrandes, ¿cuánta memoria usa? para ejecutarse, siempre lo mismo ¿no? FI y N, pero no va",
+        "start": 1158.92,
+        "end": 1168.12
+    },
+    {
+        "text": " cambiando los valores de FD y pero como lugar de memoria son esos dos, no usa el stack, no hay",
+        "start": 1168.12,
+        "end": 1172.8
+    },
+    {
+        "text": " nada que va creciendo, o sea que el espacio del masonamiento que usa el iteración es constante,",
+        "start": 1172.8,
+        "end": 1178.44
+    },
+    {
+        "text": " a medida que el N creice no pide más tamaño, se entiende en cambio el recurso, sí, porque",
+        "start": 1178.44,
+        "end": 1184.8
+    },
+    {
+        "text": " un enemagrande es un llamado más, entonces el stack crece uno más, mientras más grande el N",
+        "start": 1184.8,
+        "end": 1190.56
+    },
+    {
+        "text": " más grande el stack, entonces en memoria entonces me venía a vender la recurción y no se",
+        "start": 1190.56,
+        "end": 1197.28
+    },
+    {
+        "text": " la estoy vendiendo bien, pues decir no es mejor el iterativo que el recurso y en general sí,",
+        "start": 1197.28,
+        "end": 1202.16
+    },
+    {
+        "text": " en eficiencia sí, la pregunta entonces cuando me conviene la recurso, vamos a tratar de",
+        "start": 1202.16,
+        "end": 1207.0
+    },
+    {
+        "text": " ver cuando me conviene la recurción, ¿ok? y van a ver que vamos a encontrar casos donde la",
+        "start": 1207.0,
+        "end": 1212.88
+    },
+    {
+        "text": " recurción me conviene, pero para ver si entendimos, ¿ok? y van a tener 20 segundos para",
+        "start": 1212.88,
+        "end": 1220.84
+    },
+    {
+        "text": " hablar con su compañero, compañero al lado, este pseudo código, este procedimiento x dice",
+        "start": 1220.84,
+        "end": 1226.68
+    },
+    {
+        "text": " si x es 0, imprimi x y si x no es 0, imprimi el valor de x, llama a p con x menos 1 y después",
+        "start": 1226.68,
+        "end": 1236.92
+    },
+    {
+        "text": " imprimi menos 1 por x, o sea menos x, si la pregunta sería ¿qué va a imprimir esto cuando",
+        "start": 1236.92,
+        "end": 1242.64
+    },
+    {
+        "text": " yo invoco el compé de 3? 20 segundos, nadie diga alguien en voz alta, 20 segundos va a",
+        "start": 1242.64,
+        "end": 1248.8400000000001
+    },
+    {
+        "text": " charlar con incea, a ver qué imprime, ah no te lo dan el papel a imprimen varios números,",
+        "start": 1248.8400000000001,
+        "end": 1252.88
+    },
+    {
+        "text": " qué números imprime y en qué orden, esa es la pregunta, levante la mano quien cree",
+        "start": 1252.88,
+        "end": 1259.68
+    },
+    {
+        "text": " tener una respuesta ya, ¿qué levanta tímido es porque no estoy seguro? ¿no?",
+        "start": 1259.68,
+        "end": 1267.96
+    },
+    {
+        "text": " levanta la mano, ¿eh? bien, a ver, alguien que no ha hablado hasta ahora, levanta la",
+        "start": 1267.96,
+        "end": 1275.18
+    },
+    {
+        "text": " mano ahora de los que dijeron que sí sabían o creían saber, qué retoma, ¿quimprime?",
+        "start": 1275.18,
+        "end": 1282.96
+    },
+    {
+        "text": " 321, 321, por ahí también levantó el bíquia y levanta la mano, ¿qué números?",
+        "start": 1282.96,
+        "end": 1289.5600000000002
+    },
+    {
+        "text": " 321, 321, menos 1 menos 2 menos 3, ¿vaganando esa? ¿Hay una otra distinta?",
+        "start": 1289.56,
+        "end": 1301.9199999999998
+    },
+    {
+        "text": " Sí, muchos cero, o sea o terminen cero, hay muchos cero o estrés 221, menos 1 menos 2 menos",
+        "start": 1301.9199999999998,
+        "end": 1311.72
+    },
+    {
+        "text": " 3, ¿sí? vamos a ver, vamos a ver con la explicación que yo les di antes, no vamos a inventar",
+        "start": 1311.72,
+        "end": 1318.64
+    },
+    {
+        "text": " nada nuevo, bueno más o menos no voy a inventar nada nuevo, le voy a explicar algo complementario",
+        "start": 1318.64,
+        "end": 1323.8
+    },
+    {
+        "text": " a es, para que funcione la respuesta correcta que dieron ustedes, una de las respuestas correctas,",
+        "start": 1323.8,
+        "end": 1330.88
+    },
+    {
+        "text": " ejecutemos este código, ya vamos a p3, ¿no? acá, equivale 3, entonces empieza a ejecutarse,",
+        "start": 1330.88,
+        "end": 1338.96
+    },
+    {
+        "text": " es cero no, entonces imprime 3, acá ya ven el 3 impreso, y llama a quien a p2, por eso acá parece",
+        "start": 1339.8400000000001,
+        "end": 1347.68
+    },
+    {
+        "text": " flechita p2, pero deja pendiente esta línea roja, ya me voy a ejecutar p2, pero me tengo que acordar",
+        "start": 1347.68,
+        "end": 1354.8400000000001
+    },
+    {
+        "text": " que cuando termine p2, tengo que ejecutar, imprime 1 por x y cuánto vale x acá, 3, eso lo",
+        "start": 1354.8400000000001,
+        "end": 1362.88
+    },
+    {
+        "text": " pongo en el stack, imprime 1 por x, pero sé que x vale 3, es como que les hago una fotito,",
+        "start": 1362.88,
+        "end": 1369.0
+    },
+    {
+        "text": " no solo la instrucción que me falta, sino cuánto vale la variable en ese momento, y van a",
+        "start": 1369.0,
+        "end": 1375.5200000000002
+    },
+    {
+        "text": " ver que es importante sacarle una foto a la variable, ¿ok? entonces dice bueno, ya guardaste",
+        "start": 1375.5200000000002,
+        "end": 1382.8000000000002
+    },
+    {
+        "text": " lo pendiente, bueno anda a ejecutar p2, p2 que va a entrar, va a decir, es cero no, entonces que",
+        "start": 1382.8000000000002,
+        "end": 1389.24
+    },
+    {
+        "text": " va a imprimir, 2, imprime el 2 y llama a quien a p1, acá, y deja pendiente que cosa, imprime",
+        "start": 1389.24,
+        "end": 1399.52
+    },
+    {
+        "text": " menos 1 por x cuando x vale, 2, donde lo pone el stack dijimos, arriba, entonces aparece acá arriba,",
+        "start": 1399.52,
+        "end": 1407.08
+    },
+    {
+        "text": " abajo x igual 3, arriba a la misma instrucción, pero x igual 2, porque la misma dirección,",
+        "start": 1408.68,
+        "end": 1415.1200000000001
+    },
+    {
+        "text": " pero en otro contexto uno diría con otra foto, ¿no? x vale 2, bueno se va a ejecutar,",
+        "start": 1415.12,
+        "end": 1421.9599999999998
+    },
+    {
+        "text": " entonces ahora p1, porque ya dejó lo pendiente, pero dice, p1, como un cero imprime 1, acá,",
+        "start": 1421.9599999999998,
+        "end": 1429.84
+    },
+    {
+        "text": " y llama a quien a p0, acá, en azul, y deja pendiente imprime menos 1 por x cuando x vale 1,",
+        "start": 1430.8799999999999,
+        "end": 1437.6799999999998
+    },
+    {
+        "text": " o sea agrega algo más en el stack, 3 cosas en el stack, 3 fotitos, ¿fabien?",
+        "start": 1437.68,
+        "end": 1444.44
+    },
+    {
+        "text": " ahora entro en p0 por suerte y p0 dice en esta instancia x es 0, entonces imprime que cosa,",
+        "start": 1445.64,
+        "end": 1452.5600000000002
+    },
+    {
+        "text": " 0, ahí ven el cero, hasta ahí creo que nadie dudó, todas las respuestas que me dieron hasta ahí",
+        "start": 1452.5600000000002,
+        "end": 1459.2
+    },
+    {
+        "text": " van bien y van a ver que hasta ahí uno diría es la parte fácil, porque ahora dice terminaste,",
+        "start": 1459.2,
+        "end": 1466.24
+    },
+    {
+        "text": " porque cuando imprime el cero no hace el cino, entonces terminó, pero dice, anda a buscar",
+        "start": 1466.24,
+        "end": 1471.56
+    },
+    {
+        "text": " lo pendiente, viene a esto pendiente que es esta línea, pero sabiendo que x vale 1, entonces imprime",
+        "start": 1471.56,
+        "end": 1478.32
+    },
+    {
+        "text": " que cosa, el menos 1, y deja de estar pendiente, entonces saco la fotito con x igual 1,",
+        "start": 1478.32,
+        "end": 1483.92
+    },
+    {
+        "text": " te quedo más pendiente si, imprime el menos 1 por x cuando la fotito de x vale 2,",
+        "start": 1483.92,
+        "end": 1489.32
+    },
+    {
+        "text": " entonces quiero que pasa imprime el menos 2, acá, y saca la fotito de acá, ahora que dice,",
+        "start": 1490.12,
+        "end": 1498.6399999999999
+    },
+    {
+        "text": " te quedo más pendiente si me queda un pendiente, imprime el menos 1 por x, un y si x lo que guarda,",
+        "start": 1498.6399999999999,
+        "end": 1504.3999999999999
+    },
+    {
+        "text": " la dirección de la memoria donde está la instrucción, y guarda en algún lugar cuanto vale",
+        "start": 1504.3999999999999,
+        "end": 1509.04
+    },
+    {
+        "text": " esa variable, la tiene que guardar, entonces que lo que pasa imprime el menos 3, el stack queda más",
+        "start": 1509.04,
+        "end": 1516.36
+    },
+    {
+        "text": " cio y dice, ahora sí terminó la ejecución, o sea lo que dijeron esa secuencia era la correcta,",
+        "start": 1516.36,
+        "end": 1520.9599999999998
+    },
+    {
+        "text": " si yo le dijeré a tachin una instrucción de este código, las que más le complicó la vida,",
+        "start": 1520.9599999999998,
+        "end": 1525.8799999999999
+    },
+    {
+        "text": " pero no me taché el llamado recurcido, porque si no se acaba la clase, o sea, la azul no la",
+        "start": 1525.8799999999999,
+        "end": 1530.6799999999998
+    },
+    {
+        "text": " pueden tachar, porque si no, no tiene sentido, cueltacharían como complicado,",
+        "start": 1530.6799999999998,
+        "end": 1534.6399999999999
+    },
+    {
+        "text": " la cual?",
+        "start": 1538.24,
+        "end": 1539.9199999999998
+    },
+    {
+        "text": " La que está en rojo, parece que la misma complicado entender cuando sea eso y en qué orden es la",
+        "start": 1540.92,
+        "end": 1549.24
+    },
+    {
+        "text": " roja, bueno vamos a ver que la roja es lo que le da sentido la recursión, porque si no capaz",
+        "start": 1549.24,
+        "end": 1554.5600000000002
+    },
+    {
+        "text": " que pueda hacer todo como hice con el factorial, hacerlo con un forco, entonces en taníos al ejemplo,",
+        "start": 1554.5600000000002,
+        "end": 1562.6000000000001
+    },
+    {
+        "text": " bueno vamos generalizarlo, tomamos ahora genericamente un procedimiento pdx, en vez de analizar si",
+        "start": 1563.32,
+        "end": 1572.04
+    },
+    {
+        "text": " x de cero digo una condición, la llamamos caso base de x, truefolls, caso base de x, si se",
+        "start": 1572.04,
+        "end": 1578.84
+    },
+    {
+        "text": " cumple voy a hacer una acción base para x, puede ser un código así de largo, en importa,",
+        "start": 1578.84,
+        "end": 1583.9599999999998
+    },
+    {
+        "text": " acción base, ¿vale? en nuestro caso era imprimir cero, pero podría ser todo un código largo y",
+        "start": 1583.9599999999998,
+        "end": 1590.6799999999998
+    },
+    {
+        "text": " si no voy a partir el código en tres bloques, las acciones antes del llamado recursivo,",
+        "start": 1590.68,
+        "end": 1596.3600000000001
+    },
+    {
+        "text": " le llamamos accionantes de x, el llamado recursivo, o sea p, con una transformación del x, en",
+        "start": 1596.3600000000001,
+        "end": 1601.88
+    },
+    {
+        "text": " nuestro ejemplo la transformación que lo que era x pasa a ser quien, x menos 1, pero en",
+        "start": 1601.88,
+        "end": 1607.04
+    },
+    {
+        "text": " otro ejemplo puede ser x y 2 puede ser otra cosa y después venía todo un código después,",
+        "start": 1607.04,
+        "end": 1612.8400000000001
+    },
+    {
+        "text": " llamado recursivo a la línea roja, digamos, que es el bloque de código, le llamamos acción después",
+        "start": 1612.8400000000001,
+        "end": 1618.44
+    },
+    {
+        "text": " y como dije lo que es el que complicaba la vida, en el ejemplo la atacho y si tacho es acción",
+        "start": 1618.44,
+        "end": 1625.28
+    },
+    {
+        "text": " después lo que queda escrito ahí se llama una recursión de cola, hotel recurso, que es una",
+        "start": 1625.28,
+        "end": 1632.0
+    },
+    {
+        "text": " recursión de cola es un programa donde la última sentencia es el llamado a sí mismo, se",
+        "start": 1632.0,
+        "end": 1636.66
+    },
+    {
+        "text": " la es llamado recursivo, no queda cosas pendientes abajo, se le pregunta es si eso tuviera este código",
+        "start": 1636.66,
+        "end": 1642.1200000000001
+    },
+    {
+        "text": " recursivo, se les ocurre como hacer uno iterativo con un wild que haga lo mismo el mismo efecto que este,",
+        "start": 1642.1200000000001,
+        "end": 1647.48
+    },
+    {
+        "text": " sin la última línea, ¿cómo sería?",
+        "start": 1648.04,
+        "end": 1649.92
+    },
+    {
+        "text": " más fuerte un wild,",
+        "start": 1653.04,
+        "end": 1654.2
+    },
+    {
+        "text": " cuéla condición de wild, mientras que?",
+        "start": 1655.88,
+        "end": 1659.08
+    },
+    {
+        "text": " en esa jerga de ese texto, mientras no se cumpla quién,",
+        "start": 1663.32,
+        "end": 1668.52
+    },
+    {
+        "text": " mientras no se cumple caso base que lo que hace es dentro de guay",
+        "start": 1670.04,
+        "end": 1673.3600000000001
+    },
+    {
+        "text": " no hago primero esto, la acción antes y después que lo que hago tengo que cambiar el x,",
+        "start": 1678.3600000000001,
+        "end": 1685.48
+    },
+    {
+        "text": " una iría transforma el x y eso ahora con el wild cuando sale el wild que se cumplió",
+        "start": 1685.48,
+        "end": 1691.16
+    },
+    {
+        "text": " el caso base entonces cuando sale el wild que hago la acción base, o sea que podría ser",
+        "start": 1692.84,
+        "end": 1698.0
+    },
+    {
+        "text": " más o menos este código, usa un x prima en vez del x, porque depende del pasaje si es por",
+        "start": 1698.8,
+        "end": 1704.08
+    },
+    {
+        "text": " copia por referencia y yo uso asignaciones puede que se cambien, entonces pues no es que es",
+        "start": 1704.08,
+        "end": 1708.6
+    },
+    {
+        "text": " ruido, x prima le voy a asignar x y voy a trabajar todo con x prima,",
+        "start": 1708.6,
+        "end": 1713.52
+    },
+    {
+        "text": " es que hago acá, mientras no sea el caso base, hago la acción antes con x prima y acá le",
+        "start": 1713.52,
+        "end": 1719.36
+    },
+    {
+        "text": " asigno a x prima la transformación de x prima, nuestro ejemplo de recine era a x le asignaba",
+        "start": 1719.36,
+        "end": 1724.1599999999999
+    },
+    {
+        "text": " a x y menos 1 y cuando termino este wild o este mientras hago la acción base con x prima,",
+        "start": 1724.16,
+        "end": 1733.52
+    },
+    {
+        "text": " ¿tanto? ¿cuándo? Se uniría una recursión es una iteración disfrazada en este caso,",
+        "start": 1733.52,
+        "end": 1738.72
+    },
+    {
+        "text": " porque hacer esto tiene el mismo efecto dice en usted que hacer el otro con una ventaja en este",
+        "start": 1738.72,
+        "end": 1743.68
+    },
+    {
+        "text": " caso ¿cuál es? uso menos memoría porque no uso el ataque de ejecución, entonces en estos casos",
+        "start": 1743.68,
+        "end": 1750.0400000000002
+    },
+    {
+        "text": " vale la pena recursión, no, los compiladores optimizantes cuando tienen recursiones de",
+        "start": 1750.04,
+        "end": 1755.56
+    },
+    {
+        "text": " cola lo transforma en una iteración, jascel por ejemplo un lenguaje que van a ver en",
+        "start": 1755.56,
+        "end": 1759.8
+    },
+    {
+        "text": " la premasión funcional, hace eso, ¿por qué? porque entonces consume menos memoría,",
+        "start": 1759.8,
+        "end": 1764.24
+    },
+    {
+        "text": " entonces una iría hasta acá la recursión, no me está portando nada interesante,",
+        "start": 1764.24,
+        "end": 1770.52
+    },
+    {
+        "text": " miremos de vuelta y código pero ahora lo que taché recién lo pongo en rojo, o sea no solo",
+        "start": 1770.52,
+        "end": 1777.8
+    },
+    {
+        "text": " está sino que se los marco para que lo noten y si código acción después que puede ser largo,",
+        "start": 1777.8,
+        "end": 1782.6
+    },
+    {
+        "text": " ahora está, si ahora está, ¿cómo es el código iterativo que hace lo mismo? Sí, bien,",
+        "start": 1782.6,
+        "end": 1793.32
+    },
+    {
+        "text": " bien, a ver, es lo que dice ángulo mismo que antes, porque si piensa el ejemplo del 3210,",
+        "start": 1793.32,
+        "end": 1809.6399999999999
+    },
+    {
+        "text": " el 3210 lo tengo que seguir haciendo, que era todo lo que estaba, no la línea roja digamos,",
+        "start": 1809.6399999999999,
+        "end": 1815.24
+    },
+    {
+        "text": " eso lo tengo que seguir haciendo, o sea ese pedazo de código va a tener que estar,",
+        "start": 1815.24,
+        "end": 1818.36
+    },
+    {
+        "text": " ahora la pregunta es que se agrega, es lo que dice si yo te lo generalizo ahora donde no tengo",
+        "start": 1819.08,
+        "end": 1824.84
+    },
+    {
+        "text": " x y x y y menos 1, sino que tengo un código medio genérico, ¿qué es lo que hacía el",
+        "start": 1824.84,
+        "end": 1829.1599999999999
+    },
+    {
+        "text": " estágres que usan? y yo aguardo las fotitos de lo que le queda pendiente, entonces yo debería",
+        "start": 1829.1599999999999,
+        "end": 1833.7199999999998
+    },
+    {
+        "text": " para simular eso, hacerlo a mano, tener una rey, un estác, ir cargándolo, como termine y siendo",
+        "start": 1833.7199999999998,
+        "end": 1841.3999999999999
+    },
+    {
+        "text": " recorroso estác sacándolo pendiente o no, o sea tendría que simular eso porque salvo que sea",
+        "start": 1841.3999999999999,
+        "end": 1847.4799999999998
+    },
+    {
+        "text": " x y x y menos 1, entonces lo pero sin inversa, ahí es más fácil, pero si bueno conoce la acción,",
+        "start": 1847.48,
+        "end": 1852.1200000000001
+    },
+    {
+        "text": " porque se llama acción después y todo un bloque, ¿cómo es la acción inversa? entonces yo más",
+        "start": 1852.1200000000001,
+        "end": 1857.32
+    },
+    {
+        "text": " vale, le saco fotito al aguardo y después la uso, sí, eso es lo que, sí,",
+        "start": 1857.32,
+        "end": 1869.08
+    },
+    {
+        "text": " eso de nuevo, lo mismo creo que la misma idea que dijo él, eso sí conoces la acción específica,",
+        "start": 1869.08,
+        "end": 1881.32
+    },
+    {
+        "text": " entonces más 1, menos 1 las inversas, yo te pongo una acción después genérica, se hace",
+        "start": 1881.32,
+        "end": 1885.56
+    },
+    {
+        "text": " te rompe que es la acción inversa eso, ¿tabes? entonces si lo pienso más genéricamente por eso,",
+        "start": 1885.56,
+        "end": 1891.48
+    },
+    {
+        "text": " lo saque de ejemplo y ahora se lo generalice para que no buscaran, digamos, para no buscar una solución",
+        "start": 1891.48,
+        "end": 1898.1999999999998
+    },
+    {
+        "text": " jarcodiada a ese ejemplo, sino que sirviera para todos los ejemplos, no depende la,",
+        "start": 1898.2,
+        "end": 1906.2
+    },
+    {
+        "text": " depende la transformación, pero depende la acción después también, déficitense,",
+        "start": 1906.2,
+        "end": 1910.52
+    },
+    {
+        "text": " lo negro sigue estando, vamos a primar lo negro, x prima la sin o x mientras no sea el caso base,",
+        "start": 1910.52,
+        "end": 1918.2
+    },
+    {
+        "text": " hace la acción antes, transforma el x, termina el guay, hace la acción base, o sea eso sigue estando,",
+        "start": 1918.2,
+        "end": 1924.6000000000001
+    },
+    {
+        "text": " que se agrega lo rojo, que es lo rojo, bueno me genero una estructura para las fotitos, lo llamamos",
+        "start": 1925.3999999999999,
+        "end": 1932.76
+    },
+    {
+        "text": " una pila ese vacía, podrás hacer una regla en el importe, cuando empiezo a cargar las cosas,",
+        "start": 1932.76,
+        "end": 1939.1999999999998
+    },
+    {
+        "text": " ustedes me dijeron cada vez que invocas, entonces bueno hago la acción y antes de transformar el x",
+        "start": 1939.1999999999998,
+        "end": 1947.7199999999998
+    },
+    {
+        "text": " de pasar al siguiente a pilo x prima en ese, esa fotito se va a lo lugar del stack, pues después lo",
+        "start": 1947.72,
+        "end": 1953.32
+    },
+    {
+        "text": " voy a usar, entonces mientras ejecuta este mientras va guardando cosas en el stack, cuando sale",
+        "start": 1953.32,
+        "end": 1961.32
+    },
+    {
+        "text": " este guay hace la acción base, pero de un dice terminó, no, que tenía que ir a ver,",
+        "start": 1961.32,
+        "end": 1966.2
+    },
+    {
+        "text": " la pila de cosas pendientes y ver qué cosas estaban pendientes y en qué orden la sacaba,",
+        "start": 1967.8,
+        "end": 1972.92
+    },
+    {
+        "text": " del último que ingreso es el primero que sale, entonces dice mientras la pila no sea vacía,",
+        "start": 1972.92,
+        "end": 1979.0800000000002
+    },
+    {
+        "text": " hace la acción después que sea con lo que esté en el tope del stack, el último que pusiste y después",
+        "start": 1979.0800000000002,
+        "end": 1986.72
+    },
+    {
+        "text": " como hicimos nosotros sacarlo del stack porque se ya está, ya no está pendiente, lo hace hasta que",
+        "start": 1986.72,
+        "end": 1992.24
+    },
+    {
+        "text": " no le quede pendiente o sea que la pila queda vacía, esto simularía y sí cuando tengo un",
+        "start": 1992.24,
+        "end": 1999.3200000000002
+    },
+    {
+        "text": " llamado recursivo, si les pongo dos llamos recursivos, lo que sea, al bien se, la pregunta es",
+        "start": 1999.32,
+        "end": 2004.48
+    },
+    {
+        "text": " tiene sentido que yo haga esto, que me hago un stack a mano, que le esté cargando, pueden",
+        "start": 2004.48,
+        "end": 2010.0
+    },
+    {
+        "text": " errores, pueden no ser tan eficiente la memoria que yo es en el stack o hago esto y si hago esto es",
+        "start": 2010.0,
+        "end": 2018.76
+    },
+    {
+        "text": " defino el código acá y que la máquina con suestar que ejecución es que no comete errores y que",
+        "start": 2018.76,
+        "end": 2024.12
+    },
+    {
+        "text": " debe estar súper optimizado, pero yo programo mucho más legible este código que el que vieron",
+        "start": 2024.12,
+        "end": 2029.2399999999998
+    },
+    {
+        "text": " ustedes porque lo tengo que hacer mucho más, entonces empezamos a ver ahí si la recursión empieza",
+        "start": 2029.2399999999998,
+        "end": 2033.6
+    },
+    {
+        "text": " por tar valor y le estoy poniendo un ejemplo de un llamado recursivo, si tengo más de uno van a",
+        "start": 2033.6,
+        "end": 2037.8
+    },
+    {
+        "text": " ver que el efecto es mayor, ok? Bueno, primeras conclusiones de esta introducción porque estén",
+        "start": 2037.8,
+        "end": 2045.4799999999998
+    },
+    {
+        "text": " entrando en calor, estamos entrando en calor, tiene sentido la recursión, un programa que se",
+        "start": 2045.4799999999998,
+        "end": 2051.8199999999997
+    },
+    {
+        "text": " da a mí a sí mismo cuando opera sobre nuevos datos tengo que tener un parámetro y ese parámetro",
+        "start": 2051.82,
+        "end": 2056.6200000000003
+    },
+    {
+        "text": " va cambiando, si no no tiene sentido, eso no termina, es una recursión infinita. El ejemplo que",
+        "start": 2056.6200000000003,
+        "end": 2063.2400000000002
+    },
+    {
+        "text": " vimos ahora que funcionaba más o menos bien o funcionaba bien es el factorial porque el factorial",
+        "start": 2063.2400000000002,
+        "end": 2067.7400000000002
+    },
+    {
+        "text": " de un n está definido directamente si el n es 0,1 porque no simboca más y cuando simboca",
+        "start": 2067.7400000000002,
+        "end": 2075.78
+    },
+    {
+        "text": " sí mismo porque es mayor que 1 no simboca circularmente sino que el factorial de n llama",
+        "start": 2075.78,
+        "end": 2080.54
+    },
+    {
+        "text": " a fac pero con n-1, hay algo que cambió, me alcanza eso que cambió y no porque pasé",
+        "start": 2081.1,
+        "end": 2089.14
+    },
+    {
+        "text": " decir el factorial en vez de ser n-1 fuera n-1, no? Perdón, volve para atrás, si fuera n-1",
+        "start": 2089.14,
+        "end": 2100.34
+    },
+    {
+        "text": " acá, esa es la que pongo n-1, no diría, pero este caso va a terminar, no hay cansa con eso,",
+        "start": 2100.34,
+        "end": 2114.5
+    },
+    {
+        "text": " hay cansa si el jamón recursivo lo obliga a llegar ahí, si yo le pongo n-1 acá claramente no",
+        "start": 2114.5,
+        "end": 2123.9
+    },
+    {
+        "text": " va a terminar, pues yo digo fac de 3, aquí va a jamar, va a ser una cuentita de aquí en jamar,",
+        "start": 2123.9,
+        "end": 2127.86
+    },
+    {
+        "text": " a fac de 3 más 1 o sea de 4, fac de 4 aquí más jamar, hace una cuentita y jamás fac de 5, fac de 6,",
+        "start": 2128.82,
+        "end": 2135.78
+    },
+    {
+        "text": " fac de 7, no se está acercando a 1, o al 0, entonces eso no termina como se sienta acá en un",
+        "start": 2135.78,
+        "end": 2143.54
+    },
+    {
+        "text": " punto de bordaje el stack porque va a llegar al límite y te va a dar un error.",
+        "start": 2143.54,
+        "end": 2148.6600000000003
+    },
+    {
+        "text": " Bueno, depende de lo que quiere hacer, pero sí podría sal, y vuelve usted y no se preocupen",
+        "start": 2158.86,
+        "end": 2164.7000000000003
+    },
+    {
+        "text": " con el tamaño del stack, si programan bien no van a tener problema de stack orfrio, el tema es",
+        "start": 2164.7000000000003,
+        "end": 2168.94
+    },
+    {
+        "text": " si programan mal, por ejemplo si ponen un n-1 es porque la lógica está y gorimos",
+        "start": 2168.94,
+        "end": 2173.58
+    },
+    {
+        "text": " está mal pensada, porque con más que vuelves un stack muy grande, siempre vas a llegar a ese tamaño",
+        "start": 2173.58,
+        "end": 2178.94
+    },
+    {
+        "text": " porque va creciendo en un capara, entienden porque no para, porque si fac de n, llama fac de n-1,",
+        "start": 2178.94,
+        "end": 2186.1400000000003
+    },
+    {
+        "text": " siempre va aumentando el número y no se está acercando, la recurción es simple en",
+        "start": 2186.14,
+        "end": 2191.7799999999997
+    },
+    {
+        "text": " qué sentido, es como un iteración, estoy parado acá, entonces si mi piso, el caso base está",
+        "start": 2191.7799999999997,
+        "end": 2197.2599999999998
+    },
+    {
+        "text": " ahí abajo, no importa cómo, yo lo tengo que ir obligando, andá acercándote al piso,",
+        "start": 2197.2599999999998,
+        "end": 2201.8599999999997
+    },
+    {
+        "text": " entonces ahí terminás, sino lo que lo logró eso no funciona, es como un guay, el guay y",
+        "start": 2201.8599999999997,
+        "end": 2207.1
+    },
+    {
+        "text": " terato lo que sea, pero andá acercándote a la condición de salida, porque si no lo vas a terminar,",
+        "start": 2207.1,
+        "end": 2210.9
+    },
+    {
+        "text": " el lógica vio en esto de alguna manera de recurción, tan bien, tan bien esto, bueno,",
+        "start": 2210.9,
+        "end": 2219.6600000000003
+    },
+    {
+        "text": " entonces vamos a adelantarnos lógica, me parece, bien, comentarios nada más, en el factorial",
+        "start": 2219.6600000000003,
+        "end": 2230.7400000000002
+    },
+    {
+        "text": " vimos un ejemplo estos comentarios porque lo van a ver en promoción funcional, lo van a",
+        "start": 2230.7400000000002,
+        "end": 2234.7000000000003
+    },
+    {
+        "text": " ver en promoción lógica, tiene media lectiva en cada obligatoria, una herida, vimos que el",
+        "start": 2234.7000000000003,
+        "end": 2239.58
+    },
+    {
+        "text": " factorial tiene una versión iterativo y una versión recurcibo, lo vimos recién, y",
+        "start": 2239.58,
+        "end": 2243.72
+    },
+    {
+        "text": " giraron ustedes, se convencian que calculaba lo mismo, más o menos, la pregunta más género,",
+        "start": 2243.72,
+        "end": 2250.2999999999997
+    },
+    {
+        "text": " si da que todo problema que lo puedo hacer iterativo, resolver con un guay, lo puedo resolver",
+        "start": 2250.2999999999997,
+        "end": 2255.22
+    },
+    {
+        "text": " de recurso y al revés, si lo puedo resolver recurso, lo poder resolver iterativo, cualquier",
+        "start": 2255.22,
+        "end": 2260.74
+    },
+    {
+        "text": " problema, bien complicada esa pregunta, teoría de la computación, se ve más adelante en la carrera,",
+        "start": 2260.74,
+        "end": 2268.2599999999998
+    },
+    {
+        "text": " límite la programación se ve más adelante en la carrera, pero el anticipo la respuesta,",
+        "start": 2268.26,
+        "end": 2272.34
+    },
+    {
+        "text": " que es intuition, sí, por eso hay lenguajes que no usa en iteración, haz que el prólogo,",
+        "start": 2272.34,
+        "end": 2282.5800000000004
+    },
+    {
+        "text": " el prólogo se usa para GeneXus, por ejemplo va a ser todo de GeneXus, usa el prólogo,",
+        "start": 2282.5800000000004,
+        "end": 2288.26
+    },
+    {
+        "text": " no tiene en Guay, no tiene en For, no tiene asignación, como asenalgo sin todo eso, lo hacen",
+        "start": 2288.26,
+        "end": 2294.0600000000004
+    },
+    {
+        "text": " todo el recurso, porque tiene la misma potencia que Java, que Sillar, que se más más, pero",
+        "start": 2294.06,
+        "end": 2299.38
+    },
+    {
+        "text": " todo lo tengo que programar de cierta forma, está bien, ahora vamos a lenguajes más utilitarios",
+        "start": 2299.38,
+        "end": 2306.58
+    },
+    {
+        "text": " y modernos, Java, Sillar, C++, C, está en el top 10 de los lenguajes más usados al día",
+        "start": 2306.58,
+        "end": 2311.46
+    },
+    {
+        "text": " de hoy, tienen recurción y tienen iteración, miría, hay una redundancia, si te alcanza",
+        "start": 2311.46,
+        "end": 2317.5
+    },
+    {
+        "text": " con uno de los dos y está demostrado que es así, por qué tener los dos, qué opinan,",
+        "start": 2317.5,
+        "end": 2323.9
+    },
+    {
+        "text": " qué la redundancia puede ser algo útil, exact, se me ocurre para este problema, pensar",
+        "start": 2323.9,
+        "end": 2332.82
+    },
+    {
+        "text": " lo recurso, es más simple, una vez que domine la recurción o iterativo, más simple,",
+        "start": 2332.82,
+        "end": 2337.58
+    },
+    {
+        "text": " y otra razón puede ser no las empresas, sino la eficiencia, en tiempo, en espacio, el",
+        "start": 2337.58,
+        "end": 2345.06
+    },
+    {
+        "text": " macenamiento, se tener más alternativas, me da más caminos, no quiere decir que voy",
+        "start": 2345.06,
+        "end": 2349.46
+    },
+    {
+        "text": " a poder hacer algo que de otra forma no podría, sí, podría, pero capaz de cuesta más,",
+        "start": 2349.46,
+        "end": 2353.42
+    },
+    {
+        "text": " la página es ineficiente, lo lenguaje tiene mucha redundancia, por ejemplo, por qué",
+        "start": 2353.42,
+        "end": 2358.2200000000003
+    },
+    {
+        "text": " tiene un 40 y tiene un wild, no puedes escribir cualquier for con un wild, inicializo a",
+        "start": 2358.2200000000003,
+        "end": 2365.1800000000003
+    },
+    {
+        "text": " la variable afuera, no, con la condición, al final le guay incremento o hago la crecea",
+        "start": 2365.1800000000003,
+        "end": 2370.42
+    },
+    {
+        "text": " y el mismo efecto que el for lo con un wild, porque por estilo de programación hay gente",
+        "start": 2370.42,
+        "end": 2374.1800000000003
+    },
+    {
+        "text": " que prefiere el for para ciertas cosas, el wild para ciertas otras, pero más que no",
+        "start": 2374.1800000000003,
+        "end": 2377.9
+    },
+    {
+        "text": " voy a poder resolver el mismo problema, lo lenguaje tiene mucha redundancia porque",
+        "start": 2377.9,
+        "end": 2383.06
+    },
+    {
+        "text": " pueden caminos alternativos por estilo, por eficiencia, por legitimidad, por practicidad,",
+        "start": 2383.06,
+        "end": 2388.98
+    },
+    {
+        "text": " también las biblioteca, librería, lo lenguaje dan forma de hacer código más rápido,",
+        "start": 2388.98,
+        "end": 2393.74
+    },
+    {
+        "text": " sin que yo lo tenia que hacer, pues yo podía atachar todas las librerías y sin programar",
+        "start": 2393.74,
+        "end": 2396.7799999999997
+    },
+    {
+        "text": " las gobo, pero es más tiempo de desarrollo, entonces dame más herramientas, dame más",
+        "start": 2396.7799999999997,
+        "end": 2401.34
+    },
+    {
+        "text": " redundancia, más alternativa y yo voy a hacer más productivo, voy a hacer la cosa más",
+        "start": 2401.34,
+        "end": 2405.1
+    },
+    {
+        "text": " rápido, o más eficientes, entiende? ¿Dónde van a ver esto si quieren ver un poquito",
+        "start": 2405.1,
+        "end": 2410.7
+    },
+    {
+        "text": " de lenguaje funcional, que yo dije, de lenguajes donde solo usan recursión, programación",
+        "start": 2410.7,
+        "end": 2415.7
+    },
+    {
+        "text": " funcional y programación lógica? Un año están haciendo eso, o menos, no sé, pero la",
+        "start": 2415.7,
+        "end": 2421.3799999999997
+    },
+    {
+        "text": " pregunta que nos hace más ahora es, termino la introducción, la pregunta es, ¿cómo",
+        "start": 2421.3799999999997,
+        "end": 2427.22
+    },
+    {
+        "text": " puedo programar recursivamente sobre distintos tipos de datos, pero metodológicamente,",
+        "start": 2427.22,
+        "end": 2432.2799999999997
+    },
+    {
+        "text": " sistema de que no sea tan artesanal pensar la solución? Si yo tengo una lista, tengo",
+        "start": 2432.2799999999997,
+        "end": 2438.02
+    },
+    {
+        "text": " natural y quiero hacer recursión, que me descomo un template de código, dame algo",
+        "start": 2438.02,
+        "end": 2442.78
+    },
+    {
+        "text": " que me guie en la programación, se entiende? Y ahí me voy a acercar a lógica, ¿tabién?",
+        "start": 2442.78,
+        "end": 2448.9
+    },
+    {
+        "text": " Porque hay una conexión entre, ustedes sí ya habrán visto algunos, sino levanten",
+        "start": 2448.9,
+        "end": 2454.34
+    },
+    {
+        "text": " la mano el que no, ¿cómo se define los conjuntos? Inductivamente, sí o no? O en el liceo,",
+        "start": 2454.34,
+        "end": 2462.1
+    },
+    {
+        "text": " ¿cómo se definían los conjuntos en el liceo? ¿Qué tipo de fines se conocían? Por, se",
+        "start": 2462.1,
+        "end": 2466.72
+    },
+    {
+        "text": " deman por, por extensión, por ejemplo, 10 de semana, digo, abro ya vesita, digo, el lunes,",
+        "start": 2466.72,
+        "end": 2472.64
+    },
+    {
+        "text": " el martes, el miércoles, hasta el domingo, si el roya vesita, es un mecanismo para definir",
+        "start": 2472.64,
+        "end": 2477.5
+    },
+    {
+        "text": " tipo de datos en el lenguaje, ¿pero no es eso? Sí, se llama en un, en seis y demás, tipos",
+        "start": 2477.5,
+        "end": 2481.12
+    },
+    {
+        "text": " enumerados, pero me permite definir conjuntos chiquitas, porque tengo que enumerar uno por",
+        "start": 2481.12,
+        "end": 2487.04
+    },
+    {
+        "text": " uno los elementos, están en lenguaje sí, primera observación, no sé si le vieron",
+        "start": 2487.04,
+        "end": 2491.68
+    },
+    {
+        "text": " en lógica, pero ¿por qué estoy haciendo una similitud entre forma de definir conjuntos",
+        "start": 2491.68,
+        "end": 2497.08
+    },
+    {
+        "text": " y tipo de datos que lo que lo interesa nosotros, estructuras de datos y algoritmos, se llama",
+        "start": 2497.08,
+        "end": 2500.24
+    },
+    {
+        "text": " el curso básicamente, ¿no? Un conjunto que lo que es, una bolsita de elementos, una bolsita",
+        "start": 2500.24,
+        "end": 2505.8399999999997
+    },
+    {
+        "text": " de valores, ¿no? En los naturales terceros, el uno, el dos, ¿no? Un tipo de datos que",
+        "start": 2505.8399999999997,
+        "end": 2511.2
+    },
+    {
+        "text": " lo que es, ¿y si eso? Cuando yo defre una variable x de tipo int, la variable x va a tomar",
+        "start": 2511.2,
+        "end": 2516.48
+    },
+    {
+        "text": " algún valor de todos los posibles enteros, entonces digo, ¿habibemos no? Usemos lo mecanismo",
+        "start": 2516.48,
+        "end": 2522.2400000000002
+    },
+    {
+        "text": " que la matemática usa para definir conjuntos y aplicémoslo a la forma de definir tipo",
+        "start": 2522.2400000000002,
+        "end": 2526.48
+    },
+    {
+        "text": " de datos en lenguaje de programación, por extensión se llama en un, hay otra definición",
+        "start": 2526.48,
+        "end": 2533.32
+    },
+    {
+        "text": " forma de definir conjuntos en matemática que se llama por comprensión, por ejemplo digo,",
+        "start": 2533.32,
+        "end": 2537.84
+    },
+    {
+        "text": " que a los naturales son todos los enteros que cumplen cierta condición, ¿cuál es",
+        "start": 2537.84,
+        "end": 2544.32
+    },
+    {
+        "text": " la condición? Que sea mayor y igual es que sea, ¿está me acuerdo? Entonces una define",
+        "start": 2544.32,
+        "end": 2551.04
+    },
+    {
+        "text": " conjuntos a partir de una propiedad, se usa para definir nuevos tipos de datos y no tanto,",
+        "start": 2551.04,
+        "end": 2558.08
+    },
+    {
+        "text": " ¿por qué? Porque selecciona, es un mecanismo de selección, acá estoy seleccionando de los",
+        "start": 2558.08,
+        "end": 2562.2000000000003
+    },
+    {
+        "text": " enteros aquellos que cumplen una condición, yo podría seleccionar de todo su usted",
+        "start": 2562.2000000000003,
+        "end": 2566.96
+    },
+    {
+        "text": " o de toda la generación de usted, aquello que están haciendo a la vez un inscripto",
+        "start": 2566.96,
+        "end": 2571.52
+    },
+    {
+        "text": " sen programación 2 y lógica, esa es la condición, entonces ¿dónde se usa más eso en",
+        "start": 2571.52,
+        "end": 2577.2
+    },
+    {
+        "text": " base datos? ¿Hacer un query, una selección de datos de la bailella para sacar cierta información?",
+        "start": 2577.2,
+        "end": 2583.6
+    },
+    {
+        "text": " Pero no para definir nuevas cosas más grandes, porque si vas a seleccionar nunca vas a tener",
+        "start": 2583.6,
+        "end": 2586.76
+    },
+    {
+        "text": " algo más grande de lo que partiste, entonces ahí viene otro mecanismo más potente y se",
+        "start": 2586.76,
+        "end": 2591.52
+    },
+    {
+        "text": " llama conjuntos por ya una extensión, comprensión, sino, inducción. Y acá me serviría un",
+        "start": 2591.52,
+        "end": 2601.04
+    },
+    {
+        "text": " poquito que se han visto algo de lógica pero bueno, supongamos que no, ¿qué son los conjuntos",
+        "start": 2601.04,
+        "end": 2608.12
+    },
+    {
+        "text": " por inducción? Estamos definidos de otra forma a los naturales, ¿tá? Porque no los puedo definir",
+        "start": 2608.12,
+        "end": 2614.72
+    },
+    {
+        "text": " por extensión, porque son infinitos, 0, 1, 2, no termino nunca, pero podría definirlo",
+        "start": 2614.72,
+        "end": 2620.24
+    },
+    {
+        "text": " que a través de reglas de esta forma, ¿no? Una regla 1 dijera 0 es un natural y se suele",
+        "start": 2620.24,
+        "end": 2625.6
+    },
+    {
+        "text": " llamar una regla base, solo me genera esa regla o me construye o me define el 0, la bolcita",
+        "start": 2625.6,
+        "end": 2631.4799999999996
+    },
+    {
+        "text": " n de los naturales metí el 0 con la regla 1, pero la regla 2 es mucho más poderosa,",
+        "start": 2631.4799999999996,
+        "end": 2637.4799999999996
+    },
+    {
+        "text": " se suele llamar regla inductivo recursiva, ¿por qué está diciendo la regla 2? Si",
+        "start": 2637.4799999999996,
+        "end": 2642.04
+    },
+    {
+        "text": " vas a tener un n chiquito que es un natural, entonces si le sumas 1 o sea el sucesor de n,",
+        "start": 2642.04,
+        "end": 2648.72
+    },
+    {
+        "text": " sumarle 1, también va a ser un natural, a veces se suele escribir así esto, yo digo 0 es",
+        "start": 2648.72,
+        "end": 2655.48
+    },
+    {
+        "text": " un natural, regla 1, por ejemplo, y la otra regla le escribo así, si tengo un natural y",
+        "start": 2655.48,
+        "end": 2661.9199999999996
+    },
+    {
+        "text": " le sumo 1 sucesor, lo puedo escribir así, n más 1, también es un natural regla 2, entonces",
+        "start": 2661.9199999999996,
+        "end": 2670.56
+    },
+    {
+        "text": " si yo pienso los naturales, la regla 1 que me permita decir que el 0 va a estar acá,",
+        "start": 2670.56,
+        "end": 2677.12
+    },
+    {
+        "text": " porque el único que genera la regla 1 es el 0, pero digo si ya tengo un natural, puedo",
+        "start": 2677.12,
+        "end": 2681.52
+    },
+    {
+        "text": " aplicar la regla 2, tomando como n chiquita el 0, y quién genero, 0 más 1, el 1, pero si",
+        "start": 2681.52,
+        "end": 2689.88
+    },
+    {
+        "text": " el 1 ahora está en el conjunto, vuelvo a aplicar la regla 2, como n chiquita es que",
+        "start": 2689.88,
+        "end": 2694.7599999999998
+    },
+    {
+        "text": " genero el 2, y así cualquier número natural n que vos me des, yo te lo genero, puedo generar",
+        "start": 2694.7599999999998,
+        "end": 2703.0
+    },
+    {
+        "text": " infinitos números naturales con esas 2 reglas, como probarían ustedes, un argumento lógico",
+        "start": 2703.0,
+        "end": 2709.32
+    },
+    {
+        "text": " para decir que hay infinitos elementos en esta bolsa n con esas 2 reglas.",
+        "start": 2709.32,
+        "end": 2712.68
+    },
+    {
+        "text": " Sí, pero eso lo tengo que usar en cierto contexto, conocenles las pruebas por el absurdo,",
+        "start": 2726.56,
+        "end": 2730.96
+    },
+    {
+        "text": " vamos a hacer contrera, quiero ver que son infinitos, supongamos que no son infinitos, si no son",
+        "start": 2731.52,
+        "end": 2736.96
+    },
+    {
+        "text": " infinitos hay uno, uno que es el máximo, si son finitos hay uno que es más grande y que hago,",
+        "start": 2736.96,
+        "end": 2744.08
+    },
+    {
+        "text": " claro, si ese es el más grande y le sumo 1, esto me está diciendo que tiene que estar, pero es más",
+        "start": 2746.64,
+        "end": 2751.2400000000002
+    },
+    {
+        "text": " grande, entonces yo digo una contradicción, si ese es el más grande y sumándole 1, me dice que",
+        "start": 2751.2400000000002,
+        "end": 2755.8
+    },
+    {
+        "text": " tiene que estar, quiere decir que hay otro más grande que el más grande, no puede ser, entonces",
+        "start": 2755.88,
+        "end": 2760.1200000000003
+    },
+    {
+        "text": " este mecanismo, ya me está asegurando con esa razonamiento que hicimos por arriba, no se preocupen,",
+        "start": 2760.1200000000003,
+        "end": 2764.96
+    },
+    {
+        "text": " pero no voy a dar lógicas, dis lógicas en algún momento, este mecanismo ya permite generar",
+        "start": 2764.96,
+        "end": 2772.2000000000003
+    },
+    {
+        "text": " infinitos elementos, miren si es más potente que la definición por extensión, solo os",
+        "start": 2772.2000000000003,
+        "end": 2776.8
+    },
+    {
+        "text": " puede tener finitos, es más, si solo tuviera reglas como esta, reglas base, varias reglas",
+        "start": 2776.8,
+        "end": 2782.44
+    },
+    {
+        "text": " de esta, ¿qué conjunto definiría? y cómo se da maria en ese tipo de finición,",
+        "start": 2782.56,
+        "end": 2788.48
+    },
+    {
+        "text": " le dijimos, digo 0 es un natural, quien te falta, 1 es un natural, otra regla, 2 es un natural,",
+        "start": 2788.48,
+        "end": 2794.92
+    },
+    {
+        "text": " este con muchas reglas base solo puede definir conjunto por extensión, o sea que esto generaliza",
+        "start": 2794.92,
+        "end": 2800.6
+    },
+    {
+        "text": " los conjuntos por extensión, con qué con estas reglas, son las poderosas, la que me permite",
+        "start": 2800.6,
+        "end": 2805.8
+    },
+    {
+        "text": " ciclar y ir generando todo lo que yo quieras, entiende ahí que no voy a lógica, le vente la mano,",
+        "start": 2805.8,
+        "end": 2812.5600000000004
+    },
+    {
+        "text": " va entrando, cuando vaya en el ojo, me va dando volando, ok, bien, luego bueno me dice por qué",
+        "start": 2813.76,
+        "end": 2823.5600000000004
+    },
+    {
+        "text": " te metiste ahí, porque cuando uno define un conjunto, puede asimilarle un tipo de datos y",
+        "start": 2823.5600000000004,
+        "end": 2830.4
+    },
+    {
+        "text": " cuál es la buena noticia, que la mayoría de los tipos de datos, listas, árboles, grazos,",
+        "start": 2830.4,
+        "end": 2835.36
+    },
+    {
+        "text": " los puedo definir inductivamente, no dice, ¿y qué ventaja tiene definir inductivamente? vas a tener",
+        "start": 2835.36,
+        "end": 2840.64
+    },
+    {
+        "text": " dos regalos, en lógica los ven, y yo acabé a hacer uso de uno de los dos regalos, ¿cuál es el",
+        "start": 2840.64,
+        "end": 2846.76
+    },
+    {
+        "text": " regalo? que cuando yo definí acá los naturales con estas dos reglas, siempre pongo una última",
+        "start": 2846.76,
+        "end": 2856.8
+    },
+    {
+        "text": " regla que se llama la clausura, diciendo, ¿sara? o acá no, ¿sara? estos son todas las formas de",
+        "start": 2856.8,
+        "end": 2862.84
+    },
+    {
+        "text": " fin naturales, no hay nada que no se defina a parte de eso, es decir, si yo compilo y no",
+        "start": 2862.84,
+        "end": 2867.32
+    },
+    {
+        "text": " aplico la regla unidos, no compila, digamos lo así, ¿no? le como diciendo, mágicamente no va a",
+        "start": 2867.32,
+        "end": 2872.28
+    },
+    {
+        "text": " entrar nadie si no se generó con la regla unidos, y van a ver que esa clausura la voy a usar ahora en",
+        "start": 2872.28,
+        "end": 2877.6400000000003
+    },
+    {
+        "text": " los dos regalitos, ¿cuáles son los regalos? supongan que alguien le dice, vamos a demostrar y lo",
+        "start": 2877.6400000000003,
+        "end": 2883.32
+    },
+    {
+        "text": " vieron en el liceo, que todos los naturales tienen una propiedad, les suena eso, en el liceo ha hecho",
+        "start": 2883.32,
+        "end": 2889.32
+    },
+    {
+        "text": " alguna pregas y no les hicieron acá todavía, una pregas de más por inducción, ¿sí? ¿no hay",
+        "start": 2889.32,
+        "end": 2894.6400000000003
+    },
+    {
+        "text": " cómo hago para probar que todos los elementos de acá tienen una propiedad y son infinitos? no voy a",
+        "start": 2894.6400000000003,
+        "end": 2900.96
+    },
+    {
+        "text": " terminar nunca, uno que viene de la programación, porque hace más un test y vamos a ver si el 0, si el",
+        "start": 2900.96,
+        "end": 2906.84
+    },
+    {
+        "text": " 5, el 8 y se comenta a la tatuja, no eso no sirven son infinitos, pero se construcen sólo de",
+        "start": 2906.94,
+        "end": 2915.7000000000003
+    },
+    {
+        "text": " dos formas, digo, ah me habido, en vez de probar uno por uno, voy a ver que la forma de construcción",
+        "start": 2915.7000000000003,
+        "end": 2920.36
+    },
+    {
+        "text": " de esos infinitos preserba la propiedad, porque la clausura me está diciendo que no hay otra forma,",
+        "start": 2920.36,
+        "end": 2925.76
+    },
+    {
+        "text": " entonces sé, veo que la dos formas de construcción preserba la propiedad, que quiero probar,",
+        "start": 2925.76,
+        "end": 2930.44
+    },
+    {
+        "text": " todo lo van a tener, es como los juez y todo el fichita dominó, vieron eso que los",
+        "start": 2930.44,
+        "end": 2934.6
+    },
+    {
+        "text": " ponen inilerita, que tengo que lograr para que se caigan todo, y una idea, bueno, que",
+        "start": 2934.6,
+        "end": 2941.7200000000003
+    },
+    {
+        "text": " tiene alguien que tiene la primera, pues si no cae la primera no va a caer toda, el caso",
+        "start": 2941.7200000000003,
+        "end": 2946.84
+    },
+    {
+        "text": " va a ser, y después que tengo que asegurar que cualquiera que caiga, tira la que está",
+        "start": 2946.84,
+        "end": 2951.64
+    },
+    {
+        "text": " al lado, entonces las tengo que poner a distancia tal que si cae una cae de la que está",
+        "start": 2951.64,
+        "end": 2954.48
+    },
+    {
+        "text": " al lado, si yo logro eso con que ha fichita y tira la primera cae en todas, vemos la",
+        "start": 2954.48,
+        "end": 2958.68
+    },
+    {
+        "text": " primera y media, intuitivamente la misma idea, entonces mirando a la regla 1, ¿qué quiere",
+        "start": 2958.68,
+        "end": 2966.2
+    },
+    {
+        "text": " decir que preserva la propiedad? y si yo expuro a la propiedad, si hay que ir a demostrar",
+        "start": 2966.2,
+        "end": 2969.44
+    },
+    {
+        "text": " para el cero, se suele llamar el caso base de la prueba, bueno, por lo menos viste que",
+        "start": 2969.44,
+        "end": 2974.24
+    },
+    {
+        "text": " la regla 1 tiene la propiedad, y para la regla 2 como es, bueno, la es más complicada,",
+        "start": 2974.24,
+        "end": 2980.9199999999996
+    },
+    {
+        "text": " pero si vos sumis que cualquier ene que esta cae tiene la propiedad y probás que el que",
+        "start": 2980.9199999999996,
+        "end": 2986.0
+    },
+    {
+        "text": " está acá abajo, que es que construida a partir del ene, preserva la propiedad, ya está,",
+        "start": 2986.0,
+        "end": 2991.2
+    },
+    {
+        "text": " si suele llamar la propiedad tiene el ene y potecis inductiva, asumir, no es demostrar,",
+        "start": 2991.2,
+        "end": 2998.36
+    },
+    {
+        "text": " asumir que un ene arbitrario tiene la propiedad y probar en base a eso que el ene más 1 tiene",
+        "start": 2998.36,
+        "end": 3005.24
+    },
+    {
+        "text": " la propiedad, la tesis inductiva, ¿no? y esto lo van a practicar en el curso de lógico,",
+        "start": 3005.24,
+        "end": 3010.32
+    },
+    {
+        "text": " lo van a practicar en lyseos, si no prueba el caso base y la tesis usando el hipótesis",
+        "start": 3010.32,
+        "end": 3014.84
+    },
+    {
+        "text": " puede afirmar sin hacer testin que todo lo natural va a tener la propiedad, imposible",
+        "start": 3014.84,
+        "end": 3019.88
+    },
+    {
+        "text": " que no la tenga, ¿tanto de acuerdo? no voy a hacer pruebas con inducción, pero van a",
+        "start": 3019.88,
+        "end": 3026.36
+    },
+    {
+        "text": " ver que ahora el segundo esquema, que es el segundo regalo, que sirve para programar",
+        "start": 3026.36,
+        "end": 3030.8
+    },
+    {
+        "text": " recorciadamente, se parece mucho a este, ¿cuál es el segundo regalo? el esquema de",
+        "start": 3030.8,
+        "end": 3037.6400000000003
+    },
+    {
+        "text": " recorción, ¿qué pasa ahora cuando quiero definir un programa una F, una función que",
+        "start": 3037.64,
+        "end": 3044.3599999999997
+    },
+    {
+        "text": " recibe como input un elemento de este conjunto que acaba de definir, de este tipo de datos?",
+        "start": 3044.3599999999997,
+        "end": 3051.0
+    },
+    {
+        "text": " como defino un programa que recibe como input un natural, una herida de nuevo es como la",
+        "start": 3051.0,
+        "end": 3055.18
+    },
+    {
+        "text": " misma analogía ¿no? para que son infinitos, ¿cómo o para definir una función para infinitos",
+        "start": 3055.18,
+        "end": 3059.48
+    },
+    {
+        "text": " casos? nada, no la va a definir uno por uno, pero te podés a viva ardeno, ¿de qué",
+        "start": 3059.48,
+        "end": 3064.08
+    },
+    {
+        "text": " es decir? porque lo definís de acuerdo a la forma de construcción de esos infinitos,",
+        "start": 3064.08,
+        "end": 3068.08
+    },
+    {
+        "text": " que son solo dos reglas, ¿qué quiere decir? definir la función para el cero, igual a algo,",
+        "start": 3068.08,
+        "end": 3075.48
+    },
+    {
+        "text": " como si fuera el caso base en la prueba, y definir la función para N más 1 o sucesor",
+        "start": 3075.48,
+        "end": 3081.7599999999998
+    },
+    {
+        "text": " de N, asumiendo como input es inductiva sería que vale F de N.",
+        "start": 3081.7599999999998,
+        "end": 3086.4
+    },
+    {
+        "text": " Y la misma estructura que está ahí arriba, pero no para probar sino para programar? el mismo,",
+        "start": 3086.4,
+        "end": 3095.32
+    },
+    {
+        "text": " por eso hay gente que dice probar y programar, no son muy diferentes y por eso hay herramientas,",
+        "start": 3095.32,
+        "end": 3101.12
+    },
+    {
+        "text": " asistente de pruebas que permiten verificar formalmente programas, ayudar a hacer pruebas",
+        "start": 3101.12,
+        "end": 3105.48
+    },
+    {
+        "text": " sobre sistemas críticos para ver sin test, inscriburosamente que el problema es correcto,",
+        "start": 3105.48,
+        "end": 3110.56
+    },
+    {
+        "text": " yo doy una lectiva de eso, capaz que nadie de la quieren hacer construcción formal de programas",
+        "start": 3110.56,
+        "end": 3114.04
+    },
+    {
+        "text": " de teoría de tipos, ¿cómo rellenarían esta función para que sea el factorial? ¿qué",
+        "start": 3114.04,
+        "end": 3123.06
+    },
+    {
+        "text": " pondría? ¿factorial de N que me da como tipo de datos? Un N, un natural, ¿qué es el",
+        "start": 3123.06,
+        "end": 3128.16
+    },
+    {
+        "text": " factorial de cero? punto sucesivo retorno a uno, y como leo esto y así tienen que empezar a",
+        "start": 3128.16,
+        "end": 3134.4
+    },
+    {
+        "text": " leer ustedes, quiero calcular el factorial de N más 1, pero esto me está diciendo con el",
+        "start": 3134.4,
+        "end": 3141.7599999999998
+    },
+    {
+        "text": " punto sucesivo que la máquina ya sabe calcular el factorial de N, si yo le digo invocalo la",
+        "start": 3141.76,
+        "end": 3148.92
+    },
+    {
+        "text": " máquina con su estado de ejecución es vaca elcular el f de N, entonces digo a, tengo que pensar",
+        "start": 3148.92,
+        "end": 3154.5200000000004
+    },
+    {
+        "text": " cuánto es el factorial de N más 1 sabiendo el factorial de N, como un rompecabé se ha diciendo,",
+        "start": 3154.5200000000004,
+        "end": 3159.28
+    },
+    {
+        "text": " ¿no? quiero calcular el factorial de 5, pero la máquina me está diciendo que sabe que",
+        "start": 3159.28,
+        "end": 3163.96
+    },
+    {
+        "text": " voy al factorial de 4, ¿qué le falta el factorial de 4 para transformarse el factorial de 5?",
+        "start": 3163.96,
+        "end": 3168.7200000000003
+    },
+    {
+        "text": " multiplicarlo por ese número que es N más 1, entonces tengo el factorial, que se ha lo",
+        "start": 3168.7200000000003,
+        "end": 3178.18
+    },
+    {
+        "text": " debo esto antes ¿no? y efectivamente fíjense que si una dicen no me convence, hagamos una",
+        "start": 3178.18,
+        "end": 3182.98
+    },
+    {
+        "text": " corrida, bueno, espero que en algún momento uno no necesite las corridas, porque cuando",
+        "start": 3182.98,
+        "end": 3188.0
+    },
+    {
+        "text": " nada de las corridas y interpreta bien el esquema quiere decir que entendía la recorcea, si",
+        "start": 3188.0,
+        "end": 3193.4
+    },
+    {
+        "text": " está precisando hacer corrida es porque todavía no le entendiera, por todavía no le creen",
+        "start": 3193.4,
+        "end": 3198.12
+    },
+    {
+        "text": " la recorcea, ¿también? pero en este caso digo mira, ¿qué pasaría esta función si la invoco",
+        "start": 3198.12,
+        "end": 3204.1600000000003
+    },
+    {
+        "text": " con factorial de 3? ¿qué va a ser? y bueno, va a decir es, de acuerdo a la segunda regla",
+        "start": 3204.1600000000003,
+        "end": 3209.1600000000003
+    },
+    {
+        "text": " es 3 por el factorial de anterior que 2, ¿y qué lo que es el factorial de 2? vuelve a entrar",
+        "start": 3209.1600000000003,
+        "end": 3214.56
+    },
+    {
+        "text": " por esta regla, ¿qué es lo que es? 2 por factorial de 1, ¿y qué es el factorial de 1? 1 por",
+        "start": 3214.56,
+        "end": 3219.28
+    },
+    {
+        "text": " factorial de 0 y por suerte factorial de 0 ya no invoca más a fact y retornado 1, es decir",
+        "start": 3219.28,
+        "end": 3224.8
+    },
+    {
+        "text": " que me queda 3 por 2 por 1 por 1, 6, lo largo de la máquina lo sabe hacer, ¿cómo",
+        "start": 3224.8,
+        "end": 3232.5
+    },
+    {
+        "text": " eso lo traduco hace más más? una vez que uno dice programa como ese pseudo código, en",
+        "start": 3232.5,
+        "end": 3236.6400000000003
+    },
+    {
+        "text": " jazgel o lenguaje para un funcionario, el código ya se escribe directamente así, pero",
+        "start": 3236.6400000000003,
+        "end": 3241.1200000000003
+    },
+    {
+        "text": " el lenguaje es como j, o dice más más, tengo que escribirlo en un formato similar a esto,",
+        "start": 3241.1200000000003,
+        "end": 3245.1600000000003
+    },
+    {
+        "text": " así tengo varias ecuaciones, varios casos va a hacer, varios casos de recursos, como los",
+        "start": 3245.16,
+        "end": 3249.52
+    },
+    {
+        "text": " junto con if, if está y cosa, el if, el si, el si, hasta que si me me quedan las ecuaciones,",
+        "start": 3249.52,
+        "end": 3256.04
+    },
+    {
+        "text": " en este caso como tengo 2 digo mira, if, el primer caso que es que el argumento sea",
+        "start": 3256.04,
+        "end": 3261.64
+    },
+    {
+        "text": " 0, retornado 1, bueno, se arriba, y si no, ¿qué lo que hace? el producto del número",
+        "start": 3261.64,
+        "end": 3267.12
+    },
+    {
+        "text": " que está acá por el factorial del anterior, bueno, n por el factorial de n-2, lo largo",
+        "start": 3267.12,
+        "end": 3272.8399999999997
+    },
+    {
+        "text": " a correr y la máquina con esta de ecuaciones, estoy convencido que me va a calcular",
+        "start": 3272.84,
+        "end": 3276.7200000000003
+    },
+    {
+        "text": " el factorial, sí, sí, pero eso lo puedo, en general uno primero por el caso base y después",
+        "start": 3276.7200000000003,
+        "end": 3286.6800000000003
+    },
+    {
+        "text": " los casos, puedo tener varios casos base sí, varios casos recursivos también, acá le",
+        "start": 3286.6800000000003,
+        "end": 3292.0
+    },
+    {
+        "text": " pose un ejemplo para arrancar un caso base y un caso recursivo, pero puedo tener varios,",
+        "start": 3292.0,
+        "end": 3297.1600000000003
+    },
+    {
+        "text": " además, la anticipo, Java, C, YAR, se más más, en los manuales que explican el lenguaje",
+        "start": 3297.16,
+        "end": 3304.3599999999997
+    },
+    {
+        "text": " tiene el final, lo que se llama la vnf del lenguaje, ¿a quién sabe lo que dice vnf un lenguaje?",
+        "start": 3304.3599999999997,
+        "end": 3310.56
+    },
+    {
+        "text": " No lo vio, no les escuchó nada, es como el estructura, la sintaxis y formal de cómo",
+        "start": 3310.56,
+        "end": 3315.24
+    },
+    {
+        "text": " se escribe el if, el guay, la asignación, ¿no? pero más rigurosos, no en palabras,",
+        "start": 3315.24,
+        "end": 3320.3199999999997
+    },
+    {
+        "text": " y es más, son directivas para que un compilador siga ese estructuro para decir este programa",
+        "start": 3320.3199999999997,
+        "end": 3324.48
+    },
+    {
+        "text": " lo acepto, no lo acepto, compila, no compila, y esa vnf es un conjunto inductivo, que",
+        "start": 3324.48,
+        "end": 3330.2400000000002
+    },
+    {
+        "text": " define todo el lenguaje, obviamente tiene muchas reglas, una, capaz de dos paraliz, una",
+        "start": 3330.2400000000002,
+        "end": 3337.4
+    },
+    {
+        "text": " paracinación, o sea que un conjunto inductivo, un lenguaje para más, es un conjunto",
+        "start": 3337.4,
+        "end": 3342.4
+    },
+    {
+        "text": " inductivo grandote, muy grande, pero no difícil porque tiene algunas son reglas base y van",
+        "start": 3342.4,
+        "end": 3348.16
+    },
+    {
+        "text": " a hacer lo que vimos acá, y algunas son reglas inductivas y van a hacer lo que vimos acá",
+        "start": 3348.16,
+        "end": 3351.52
+    },
+    {
+        "text": " en esta OTAT, no es difícil, pero tengo mucho de lo mismo, por eso que no es tan difícil",
+        "start": 3351.52,
+        "end": 3357.56
+    },
+    {
+        "text": " escribir un compilador en lenguaje funcional, por ejemplo, ¿ah?",
+        "start": 3357.56,
+        "end": 3360.88
+    },
+    {
+        "text": " Bien, hoy se va a ser un poquito larga, la clase, pero otro ejemplo, si en vez de fíjense",
+        "start": 3360.88,
+        "end": 3371.84
+    },
+    {
+        "text": " acá, quisiera que acuerdan a su matoye, los primeros números naturales en vez del",
+        "start": 3371.84,
+        "end": 3375.4
+    },
+    {
+        "text": " factorial, o sea, sería una función muy similar al anterior, solo que rellenada el templo",
+        "start": 3375.4,
+        "end": 3381.44
+    },
+    {
+        "text": " de otra forma, diciendo mira la sumatoria, hasta el cero, es cero, y la sumatoria hasta",
+        "start": 3381.44,
+        "end": 3386.96
+    },
+    {
+        "text": " un NM1, si el sistema ya sabe que hay que curar la sumatoria esta el N, uniría hasta",
+        "start": 3386.96,
+        "end": 3392.4
+    },
+    {
+        "text": " la sumatoria esta el N, ¿qué le falta para hacer la sumatoria en NM1 o sumarle el último",
+        "start": 3392.4,
+        "end": 3396.26
+    },
+    {
+        "text": " NM1? Fíjense que el esquema es similar a que está",
+        "start": 3396.26,
+        "end": 3399.4
+    },
+    {
+        "text": " arriba, solo que en vez de ir multiplicando, hoy sumando y el caso base en vez de ser el",
+        "start": 3399.4,
+        "end": 3404.36
+    },
+    {
+        "text": " uno de arriba es el cero, o sea el esquema para el factorial y la sumatoria es el mismo,",
+        "start": 3404.36,
+        "end": 3409.96
+    },
+    {
+        "text": " solo que uno va multiplicando, el otro va sumando y cambia el caso base, pero los dos siguen",
+        "start": 3409.96,
+        "end": 3414.4
+    },
+    {
+        "text": " el mismo template de ejecución, la misma forma de cálculo, ¿eh? Lo mismo, y esto me",
+        "start": 3414.4,
+        "end": 3420.88
+    },
+    {
+        "text": " lo voy a saltiar, porque lo pueden mirar solo, si tengo una función que tiene varios",
+        "start": 3420.88,
+        "end": 3424.4
+    },
+    {
+        "text": " argumentos, dos por ejemplo, la suma, pueden, tres, lo que conviene es elegir un argumento",
+        "start": 3424.4,
+        "end": 3431.8
+    },
+    {
+        "text": " si voy a hacer recursión en ese argumento, no hace falta salón todos, acá por ejemplo",
+        "start": 3431.8,
+        "end": 3435.64
+    },
+    {
+        "text": " en la suma digo elegí como hacer recursión en el segundo, el que está pintando en",
+        "start": 3435.64,
+        "end": 3439.6
+    },
+    {
+        "text": " rojo, yo digo vamos a empezar el caso base cuando el segundo es cero, cuando el segundo",
+        "start": 3439.6,
+        "end": 3444.48
+    },
+    {
+        "text": " es sucesor de N, asumiendo que la función ya se sabe que hay que curar cuando vale N,",
+        "start": 3444.48,
+        "end": 3450.08
+    },
+    {
+        "text": " y es pe completo, digo que lo que es un M arbitrario, masero, M, que lo que es M más",
+        "start": 3450.08,
+        "end": 3456.48
+    },
+    {
+        "text": " de sus ordenes y yo supiera ya es cuando es M mas N y bueno suma a la 1, ya está,",
+        "start": 3456.48,
+        "end": 3461.24
+    },
+    {
+        "text": " la haro a correr y tengo la suma recursión, para que lo vas a enviéndome y lo que quiero",
+        "start": 3461.24,
+        "end": 3467.92
+    },
+    {
+        "text": " que usted va a entender, cuando uno define un tipo de datos, ahora vamos a definir otro,",
+        "start": 3467.92,
+        "end": 3473.6
+    },
+    {
+        "text": " cuando ya tienes este empli de código, cuando quiero definir una función sobre ese",
+        "start": 3473.6,
+        "end": 3479.68
+    },
+    {
+        "text": " natural, pudo basarme en esto y rellenar lo que le hace falta, y eso me simplifica la programación,",
+        "start": 3479.68,
+        "end": 3487.8399999999997
+    },
+    {
+        "text": " ok, ejemplo, y acá les voy a romper la cabeza, si lo voy a dejar para el práctil, porque",
+        "start": 3487.8399999999997,
+        "end": 3499.3199999999997
+    },
+    {
+        "text": " parece el práctil, ahora sí, son si entendieron y aceptan eso de que la máquina para N y",
+        "start": 3499.32,
+        "end": 3505.0
+    },
+    {
+        "text": " menos 1 ya lo sabe calcular, vamos a la prueba, torrejano y recuerda que yo lo mencioné en una clase,",
+        "start": 3505.0,
+        "end": 3510.84
+    },
+    {
+        "text": " vamos a jugar a torrejano, N discos de distinto tamaño, todos en un primer poste, el más grande",
+        "start": 3510.84,
+        "end": 3519.6400000000003
+    },
+    {
+        "text": " abajo, el machiquito arriba, el objetivo del juego, pasar todos los discos de origen adestino,",
+        "start": 3519.6400000000003,
+        "end": 3525.2400000000002
+    },
+    {
+        "text": " usando un poste auxilia, pero con dos reglas, solo podemos mover un disco a la vez de un poste",
+        "start": 3525.8799999999997,
+        "end": 3531.9599999999996
+    },
+    {
+        "text": " a otro y nunca en un poste puedo poner un disco más grande arriba en un machiquito, sí o no,",
+        "start": 3531.9599999999996,
+        "end": 3537.3199999999997
+    },
+    {
+        "text": " bueno, recuerdenme como juego, acá con esto 3 disco, vuelvo primero, a donde?",
+        "start": 3539.56,
+        "end": 3551.8799999999997
+    },
+    {
+        "text": " los muevos adestinos dicen ahí, bueno, ahora qué hago?",
+        "start": 3552.52,
+        "end": 3561.4
+    },
+    {
+        "text": " bueno, estamos jugando con 3 todavía, no me complica la bien,",
+        "start": 3566.04,
+        "end": 3569.0
+    },
+    {
+        "text": " el azul a donde?",
+        "start": 3570.28,
+        "end": 3571.2400000000002
+    },
+    {
+        "text": " bien, ahora?",
+        "start": 3572.44,
+        "end": 3573.7200000000003
+    },
+    {
+        "text": " de estina auxiliar, hasta ahí también, tú respetando las reglas, sí, el rojo adestino,",
+        "start": 3573.72,
+        "end": 3583.3999999999996
+    },
+    {
+        "text": " verde origen, y el último acá, estamos a acuerdo y aplausos, lograron a proteger,",
+        "start": 3585.3999999999996,
+        "end": 3594.3599999999997
+    },
+    {
+        "text": " ok, bien, ahí está, ahí está, bien, cómo esto lo puedo transformar en un primer recursivo con",
+        "start": 3595.1600000000003,
+        "end": 3617.56
+    },
+    {
+        "text": " un ene natural, porque ahora le expliqué la inducción en naturales, la recursión naturales,",
+        "start": 3617.56,
+        "end": 3622.1200000000003
+    },
+    {
+        "text": " qué es el natural que va cambiando acá, qué podría ser?",
+        "start": 3622.7599999999998,
+        "end": 3625.3199999999997
+    },
+    {
+        "text": " el tamaño no, la cantidad de discos, si voy a tener voy a jugar con 3 disco con 4 don ene disco,",
+        "start": 3629.3199999999997,
+        "end": 3636.92
+    },
+    {
+        "text": " recuerda que si hay ene 60, ni la máquina ni usted en toda su vida no puede jugar con 60 disco,",
+        "start": 3636.92,
+        "end": 3643.3199999999997
+    },
+    {
+        "text": " o sea el input recursivo, el ene natural podría ser la cantidad de discos, supongo que",
+        "start": 3644.28,
+        "end": 3651.32
+    },
+    {
+        "text": " si quiera hacer una función de mejanoi, qué va sin primiendo los movimientos o que hicimos manuales,",
+        "start": 3651.32,
+        "end": 3656.52
+    },
+    {
+        "text": " nosotros, mover tal disco, detalata al mover tal disco, detalata al, lo que dije a ustedes,",
+        "start": 3656.52,
+        "end": 3661.1600000000003
+    },
+    {
+        "text": " que lo hago un programa con ene discos, entonces recibo un parámetro un ene natural y 3 postes,",
+        "start": 3661.1600000000003,
+        "end": 3669.2400000000002
+    },
+    {
+        "text": " ya me muelo ABC, origen de estina auxiliar como quiera, sí, me creen que para ene menos 1 la máquina",
+        "start": 3670.12,
+        "end": 3679.52
+    },
+    {
+        "text": " ya lo sabe resolver, sí, ya está, ¿sabe cuál la solución general para esto? ¿Qué pasa si tomo los",
+        "start": 3679.52,
+        "end": 3688.0
+    },
+    {
+        "text": " ene menos 1 que está acá? supongo que si hay ese procedimiento le llamo janoi, ene menos 1 acá,",
+        "start": 3688.0,
+        "end": 3693.52
+    },
+    {
+        "text": " llamo janoi recurciamente pero diciéndole auxiliar, lo sabes hacer, bueno hacer, lo hace mil",
+        "start": 3693.52,
+        "end": 3702.2
+    },
+    {
+        "text": " pasos pero hacerlo, ahora el disco que está acá lo muevo acá, un solo disco y lo se ene menos 1",
+        "start": 3702.2,
+        "end": 3709.48
+    },
+    {
+        "text": " que estaban acá, donde van ahora, arriba de este que les quiero más grande abajo,",
+        "start": 3709.48,
+        "end": 3714.6
+    },
+    {
+        "text": " ya está, y después le digo anda a jugar, o sea este código, janoi con ene con 3 postes",
+        "start": 3715.6,
+        "end": 3727.2
+    },
+    {
+        "text": " de origen de estina auxiliar, 100 es mayor que 0 que lo que hace, llama de nuevo janoi pero con",
+        "start": 3727.2,
+        "end": 3732.92
+    },
+    {
+        "text": " ene menos 1 disco, llevarlo de origen auxiliar con el tercer poste ahora va a quedar destino,",
+        "start": 3732.92,
+        "end": 3740.2799999999997
+    },
+    {
+        "text": " después me voy a mano con printf el disco de origen a destino, hace un print, ahí salen preso",
+        "start": 3740.88,
+        "end": 3748.5600000000004
+    },
+    {
+        "text": " y movimiento y después llamada de nuevo janoi como quedaron los ene menos 1 en auxiliar,",
+        "start": 3748.5600000000004,
+        "end": 3753.6400000000003
+    },
+    {
+        "text": " me voy janoi ene menos 1 auxiliar de destino con tercer poste origen, esas 3 líneas, si el",
+        "start": 3753.6400000000003,
+        "end": 3760.6000000000004
+    },
+    {
+        "text": " rolleave le disto se acabó, a un main le digo ingresame un n, pongo el n acá a jugar y va salir",
+        "start": 3760.6000000000004,
+        "end": 3769.6000000000004
+    },
+    {
+        "text": " empezar a salir impreso, con esa línea verde los movimientos, por ejemplo si el n fuera 3 que",
+        "start": 3769.6,
+        "end": 3775.92
+    },
+    {
+        "text": " fue lo que hicimos recién y lo ejecuto, porque soy incrédulo todavía de la recursión,",
+        "start": 3775.92,
+        "end": 3781.52
+    },
+    {
+        "text": " disí no me convence, la empiece ejecutar y veo que los movimientos que salen ahí, mover de AC,",
+        "start": 3781.52,
+        "end": 3788.96
+    },
+    {
+        "text": " de BAC, de AC son exactamente los 7 movimientos que hicimos, está bien, y si le pongo 4 lo va a",
+        "start": 3788.96,
+        "end": 3797.8399999999997
+    },
+    {
+        "text": " hacer, ya después empieza a transpirar un poco, porque es 2 al n menos un movimiento, piensenlo,",
+        "start": 3797.84,
+        "end": 3804.0
+    },
+    {
+        "text": " veanlo, no es, o sea, estribial el código chiquito, pero no estribial entenderlo, entonces esto",
+        "start": 3804.0,
+        "end": 3809.56
+    },
+    {
+        "text": " requiere ir madurándolo de a poquito, lo tienen como el ejercicio tal cual en el práctico, así que",
+        "start": 3809.56,
+        "end": 3814.4
+    },
+    {
+        "text": " van a tener tiempo de masticarlo y preguntar todavía lo que no entendieron ahí, pero si uno cree que",
+        "start": 3814.4,
+        "end": 3820.8
+    },
+    {
+        "text": " janoi con n menos 1, ya máquina con su está que ya lo sabe resolver, esto resuelve el problema,",
+        "start": 3820.8,
+        "end": 3825.1200000000003
+    },
+    {
+        "text": " pasa que se tienen que hacer, yo digo creyentes de la recursión, diciendo esto yo sé que mueve n menos",
+        "start": 3825.12,
+        "end": 3833.68
+    },
+    {
+        "text": " 1 disco de origen auxiliar de alguna forma, lo hacer a máquina con el stack, esto mueve n menos 1",
+        "start": 3833.68,
+        "end": 3839.7599999999998
+    },
+    {
+        "text": " de auxiliar de destino, lo hace la máquina, entonces si eso lo hace la máquina que me falta,",
+        "start": 3839.7599999999998,
+        "end": 3844.72
+    },
+    {
+        "text": " mover el más disco más grande en un lado del otro y el resto lo da la máquina, lo lo hago correr",
+        "start": 3844.72,
+        "end": 3849.12
+    },
+    {
+        "text": " y veo que la secuencia de movimiento que imprime es efectivamente la máquina lo sabe hacer,",
+        "start": 3849.12,
+        "end": 3852.96
+    },
+    {
+        "text": " boom, aquí lo tengo terminado, sí, tímega,",
+        "start": 3852.96,
+        "end": 3859.68
+    },
+    {
+        "text": " cambiamos el discurso, ni se, está, pero los naturales entero son numeritos, entonces vamos,",
+        "start": 3861.68,
+        "end": 3866.64
+    },
+    {
+        "text": " vamos ahora a pensar cómo definen un tipo de datos que sean strings, listas, secuencias del",
+        "start": 3866.64,
+        "end": 3875.04
+    },
+    {
+        "text": " largo variable, secuencias de naturales, por ejemplo, digo, cómo definen todas las secuencias de",
+        "start": 3875.04,
+        "end": 3881.48
+    },
+    {
+        "text": " naturales de cualquier largo, y bueno, a ver qué similar a definir los naturales,",
+        "start": 3881.48,
+        "end": 3885.88
+    },
+    {
+        "text": " vio, vamos a definir inductivamente, en vez de definir el natural más pequeño, que era el cero,",
+        "start": 3885.88,
+        "end": 3890.72
+    },
+    {
+        "text": " digo, la secuencia más chiquita, ¿cuál es? Lo llamamos la lista vacía, corchete y corchete,",
+        "start": 3890.72,
+        "end": 3896.44
+    },
+    {
+        "text": " no, siendo, no tiene elemento en el medio, es la lista, la voy a llamar lista vacía,",
+        "start": 3896.44,
+        "end": 3900.08
+    },
+    {
+        "text": " ¿no? En el lógico que lo son en llamar un lambda, el que vivió la lógica, o epsil,",
+        "start": 3900.08,
+        "end": 3907.04
+    },
+    {
+        "text": " bien, en algunos lenguajes le ponen lambda, no importa, ahora si la lista no es vacía,",
+        "start": 3907.7599999999998,
+        "end": 3913.88
+    },
+    {
+        "text": " ¿cómo vamos a inspirarnos en el natural, cómo era la regla inductiva, ¿dad?",
+        "start": 3913.88,
+        "end": 3917.8
+    },
+    {
+        "text": " un natural que hacía esta regla, me da un natural un poquito más grande, sumándole uno,",
+        "start": 3917.8,
+        "end": 3922.6
+    },
+    {
+        "text": " entonces la pregunta está una lista, ¿cómo la voy a crecer un poquito más grande?",
+        "start": 3922.6,
+        "end": 3926.48
+    },
+    {
+        "text": " Uniría agregándole un elemento, ¿dónde se lo puede agregar? Opciones, al comienzo, al final,",
+        "start": 3926.48,
+        "end": 3933.44
+    },
+    {
+        "text": " ordenadamente, vamos a elegir una, digo, voy a elegir la forma que lo agrega al comienzo,",
+        "start": 3934.0,
+        "end": 3939.2400000000002
+    },
+    {
+        "text": " eso lo que está diciendo esta, si tengo un elemento, un natural y ya tengo una lista,",
+        "start": 3939.2400000000002,
+        "end": 3943.84
+    },
+    {
+        "text": " ese, ya me voy a la n punto ese, no es un producto, sino n, seguido ese, es una nueva lista,",
+        "start": 3943.84,
+        "end": 3950.7200000000003
+    },
+    {
+        "text": " como la lista es, que tiene un elemento nuevo al comienzo y se llama n, o sea,",
+        "start": 3950.7200000000003,
+        "end": 3954.36
+    },
+    {
+        "text": " le agregué un elemento del comienzo n, ¿tá? De tal manera que por ejemplo la lista vacía",
+        "start": 3954.36,
+        "end": 3961.36
+    },
+    {
+        "text": " la genero con la regla 1, la lista 1 punto de lista vacía, que sería lista unitaria,",
+        "start": 3961.36,
+        "end": 3965.76
+    },
+    {
+        "text": " la genero con la lista vacía y después agrego el 1, la lista 3x1, bueno, a esa lista agregale",
+        "start": 3965.76,
+        "end": 3971.6
+    },
+    {
+        "text": " el 3 al comienzo, entonces tiene 3.1 punto de lista vacía, si cualquier sequencia de elementos",
+        "start": 3971.6,
+        "end": 3978.88
+    },
+    {
+        "text": " aplico la regla 1 y muchas veces la regla 2 con el elemento que yo quiero voy a generar esa",
+        "start": 3978.88,
+        "end": 3983.6800000000003
+    },
+    {
+        "text": " sequencia, se entiende? Si o no, cualquier sequencia que se me ocurre, la podéis generando, no,",
+        "start": 3983.68,
+        "end": 3991.68
+    },
+    {
+        "text": " bien, ¿qué tengo de regala si estas son todas las posibles listas? Un principio de inducción,",
+        "start": 3993.12,
+        "end": 4000.3199999999997
+    },
+    {
+        "text": " que le importa lógica, y se lo voy a dejar para que practican el lógica, y un principio de",
+        "start": 4000.3199999999997,
+        "end": 4004.7599999999998
+    },
+    {
+        "text": " la recursión, como definí programas recursivos correctos con ayuda con un template.",
+        "start": 4004.76,
+        "end": 4009.1600000000003
+    },
+    {
+        "text": " Pensemos en todo ese en el template para la lista, ¿qué diría? similar a como vi una naturale,",
+        "start": 4014.0400000000004,
+        "end": 4019.88
+    },
+    {
+        "text": " definí cuando quiera definir un programa recursivo, ¿soy listas que hace? definí tu programa para",
+        "start": 4019.88,
+        "end": 4025.5200000000004
+    },
+    {
+        "text": " la lista vacía y definí tu programa para una lista que no es vacía porque tiene al menos un",
+        "start": 4025.5200000000004,
+        "end": 4032.1200000000003
+    },
+    {
+        "text": " elemento x y después de la resta de la lista se llama s, pero x ya es un elemento, ¿cómo se",
+        "start": 4032.12,
+        "end": 4038.04
+    },
+    {
+        "text": " que x es un elemento? ¿dónde diría mirar si x es un elemento? ¿qué es x y qué es ese?",
+        "start": 4038.04,
+        "end": 4042.68
+    },
+    {
+        "text": " ¿dónde diría mirar que es x y qué es s?",
+        "start": 4046.68,
+        "end": 4048.92
+    },
+    {
+        "text": " ¿qué es el mismo? acá, acá en las reglas, cuando digo que tengo la duda que es n.s,",
+        "start": 4048.92,
+        "end": 4057.44
+    },
+    {
+        "text": " mirar n es un elemento, un natural y s es una lista, ¿sabien? Entonces cuando vengo acá",
+        "start": 4057.44,
+        "end": 4066.4
+    },
+    {
+        "text": " dio, mira, tengo que definir esta función con la lista vacía después con una lista no vacía,",
+        "start": 4066.4,
+        "end": 4071.6
+    },
+    {
+        "text": " si quieren la piensa así, donde tengo x y después s, podrá ser vacío, ¿no? la lista s",
+        "start": 4071.6,
+        "end": 4078.84
+    },
+    {
+        "text": " pero x punto s y la leo así y bueno ese es el template de código, pero c o la máquina",
+        "start": 4078.84,
+        "end": 4085.84
+    },
+    {
+        "text": " va a saber calcular f de s del más chiquito, ya lo sabe calcular, yo le digo bueno, una",
+        "start": 4085.84,
+        "end": 4092.88
+    },
+    {
+        "text": " un ejemplo podría ser la función como acá el largo, ¿no? ¿cuántos elementos tiene la lista?",
+        "start": 4092.88,
+        "end": 4096.92
+    },
+    {
+        "text": " ¿sí? ¿y no diría bueno? ¿cuál es el largo de una lista? bueno como tipo de retorno,",
+        "start": 4099.12,
+        "end": 4103.68
+    },
+    {
+        "text": " un natural ¿no? ¿no? ¿te me acuerdo? después ¿cuál es el largo de la lista vacía? ¿cuántos",
+        "start": 4103.68,
+        "end": 4108.0
+    },
+    {
+        "text": " elementos tiene y ninguno? ¿sero? ¿y cómo leo acá? ¿cuál es el largo de la lista x s si la",
+        "start": 4108.0,
+        "end": 4114.96
+    },
+    {
+        "text": " máquina se sabe calcular el largo de s, una ella quiero el largo de toda esta lista y la máquina",
+        "start": 4114.96,
+        "end": 4120.56
+    },
+    {
+        "text": " se sabe calcular el largo de toda esta lista, la pregunta es ¿qué le agrega x a esta lista?",
+        "start": 4120.56,
+        "end": 4125.16
+    },
+    {
+        "text": " ¿y si es un elemento uno? ¿en la cuenta uno? entonces uno más el largo de s, la largo",
+        "start": 4125.16,
+        "end": 4131.2
+    },
+    {
+        "text": " calcular con una lista de cualquier largo y me va a dar cuántos elementos tiene un string por",
+        "start": 4131.2,
+        "end": 4135.4
+    },
+    {
+        "text": " ejemplo si lo pienso en string de cemas más es como si el corchet de corchet de fuera comilla",
+        "start": 4135.4,
+        "end": 4141.48
+    },
+    {
+        "text": " comilla pero si no es fácil en el medio ese string vacío ¿vale? y después puedo aplicar esto a",
+        "start": 4141.48,
+        "end": 4149.2
+    },
+    {
+        "text": " cualquier string. Otro ejemplo, pertenece el pertenece que quiero saber si un elemento está en",
+        "start": 4149.2,
+        "end": 4157.12
+    },
+    {
+        "text": " una lista, se define que esta función tiene dos argumentos ¿no? el elemento y la lista pero",
+        "start": 4157.12,
+        "end": 4163.36
+    },
+    {
+        "text": " lo voy a hacer recursión en quien? en la lista, lo que quiero arrecorrir la lista para",
+        "start": 4163.36,
+        "end": 4168.16
+    },
+    {
+        "text": " ver, podría hacerlo con un while pero vamos a lo recursivo, digo mira el esquema cuál es",
+        "start": 4168.16,
+        "end": 4173.24
+    },
+    {
+        "text": " pertenece un elemento n en una lista l o una lista te va a un buliano, trugo false, está",
+        "start": 4173.24,
+        "end": 4181.0
+    },
+    {
+        "text": " o no está, el esquema que te dice bueno fíjate define el caso si pertenece un elemento",
+        "start": 4181.0,
+        "end": 4186.4
+    },
+    {
+        "text": " en una lista vacía, ahora vamos a ver qué pone ahí y después tenés que ver el caso si",
+        "start": 4186.4,
+        "end": 4191.719999999999
+    },
+    {
+        "text": " pertenece un elemento en una lista x punto s así ¿no? x punto s es x es un elemento y",
+        "start": 4191.72,
+        "end": 4198.56
+    },
+    {
+        "text": " s es el resto de la lista, piensanlo así pero la máquina si te sirve ya sabe calcular",
+        "start": 4198.56,
+        "end": 4204.16
+    },
+    {
+        "text": " el pertenece de y con s como completo esto para que sea el pertenece un elemento en una lista",
+        "start": 4204.16,
+        "end": 4212.360000000001
+    },
+    {
+        "text": " acá que ponen ahí false ¿no? pertenece un elemento una lista que no tiene elementos no false",
+        "start": 4212.360000000001,
+        "end": 4220.280000000001
+    },
+    {
+        "text": " y acá un if podría ser si x es si que retornarían trug y si no y si no tiene que",
+        "start": 4220.28,
+        "end": 4235.5599999999995
+    },
+    {
+        "text": " retornar lo que me de esto pues así aquí no es y llamo al pertenece de y con s pero",
+        "start": 4235.5599999999995,
+        "end": 4241.08
+    },
+    {
+        "text": " la máquina ya la se hace o puedo hacerlo con or o es x es igual a o pertenece a s si o",
+        "start": 4241.08,
+        "end": 4255.64
+    },
+    {
+        "text": " no por allá le van toda la mano creo bien fíjense eso no usé la versión acá del or",
+        "start": 4255.64,
+        "end": 4264.36
+    },
+    {
+        "text": " menos malcribí en la del or si me voy a hablar y mira tiene que cambiar y código tan",
+        "start": 4264.36,
+        "end": 4269.5599999999995
+    },
+    {
+        "text": " de acuerdo que esto sigue el esquema tan de acuerdo que el esquema me ayudó a pensar o no",
+        "start": 4269.56,
+        "end": 4274.280000000001
+    },
+    {
+        "text": " pues yo dice como defino pertenece esto si ya más que ni de hacer que alcuna del pertenece",
+        "start": 4274.280000000001,
+        "end": 4278.120000000001
+    },
+    {
+        "text": " a esto y es que le falta no a chequear e con x o con un if o con igual igual y acá",
+        "start": 4278.120000000001,
+        "end": 4284.4400000000005
+    },
+    {
+        "text": " pong un or para que si esto le da truya no cheque esto si le da false que cheque esto lo",
+        "start": 4284.4400000000005,
+        "end": 4290.240000000001
+    },
+    {
+        "text": " no va a correr y pruebenlo con un estrín y se me va más y esto me da trubo false en los casos",
+        "start": 4290.240000000001,
+        "end": 4294.360000000001
+    },
+    {
+        "text": " correcto muy así produce el está que ejecución pero para empezar practicar bien se le",
+        "start": 4294.360000000001,
+        "end": 4299.080000000001
+    },
+    {
+        "text": " eficiencia y largo en la corra fíjense esta pequeña variante es una generalización del",
+        "start": 4299.08,
+        "end": 4306.96
+    },
+    {
+        "text": " pertenece porque el pertenece me dice está o no está el cantidad de veces que ocurre el",
+        "start": 4306.96,
+        "end": 4312.24
+    },
+    {
+        "text": " elemento es más general porque me dice cuántas veces el elemento entonces si es cero es como",
+        "start": 4312.24,
+        "end": 4316.28
+    },
+    {
+        "text": " si no estuviera pero si está que me diga cuánta vez está hasta tres veces dos veces una",
+        "start": 4316.28,
+        "end": 4321.04
+    },
+    {
+        "text": " vez ven que es más general es una generalización entonces ahora el cantidad siguiendo el esquema",
+        "start": 4321.04,
+        "end": 4327.96
+    },
+    {
+        "text": " da un natural en vez de un buliano la cantidad de veces que ocurre en la delista vacía en vez",
+        "start": 4328.44,
+        "end": 4335.24
+    },
+    {
+        "text": " de ser false es cero cero veces y en el otro caso acá los vivir como un if digo mira esto se",
+        "start": 4335.24,
+        "end": 4342.84
+    },
+    {
+        "text": " lo código no no vale la necesidad de estar igual y en cemamapo no funciona por más que a veces",
+        "start": 4342.84,
+        "end": 4348.04
+    },
+    {
+        "text": " se me escapa el cemamapo y acá puse if e igual igual x eso está eso si compila si es igual",
+        "start": 4348.04,
+        "end": 4356.4
+    },
+    {
+        "text": " a x digo es uno más la cantidad de veces que ocurre en ese están de acuerdo porque si el",
+        "start": 4356.4,
+        "end": 4361.799999999999
+    },
+    {
+        "text": " primero es el que quiero contar es uno más todo lo que estén a da y si el primero no es",
+        "start": 4361.799999999999,
+        "end": 4366.879999999999
+    },
+    {
+        "text": " salte o este y esto lo que estén acá entonces en el es simplemente es la cantidad de veces que está",
+        "start": 4368.0,
+        "end": 4372.679999999999
+    },
+    {
+        "text": " en ese de acuerdo no si es la duro esto no para tener mucha prairie a esto lo voy a",
+        "start": 4372.679999999999,
+        "end": 4381.08
+    },
+    {
+        "text": " un usuario bastante así que lo vamos a ir también desarrollando de apocito cuando",
+        "start": 4381.08,
+        "end": 4384.48
+    },
+    {
+        "text": " veamos listas la semana bien y después árboles lo vamos a seguir profundizando la primera vez que me",
+        "start": 4384.48,
+        "end": 4391.4
+    },
+    {
+        "text": " recursión creo la mayoría entonces crea el mes de tema no es fácil pero vayan haciendo el",
+        "start": 4391.4,
+        "end": 4397.4
+    },
+    {
+        "text": " proyecto porque le dar mucha más alternativa al uso de la iteración van a ver que entre los",
+        "start": 4397.4,
+        "end": 4402.679999999999
+    },
+    {
+        "text": " dos después van a ser van a poder resolver mucho más problemas que antes",
+        "start": 4402.679999999999,
+        "end": 4406.12
+    },
+    {
+        "text": " y",
+        "start": 4406.84,
+        "end": 4408.04
+    },
+    {
+        "text": " pensemos compliquemos un poquito dos dos tres funciones más creo que dos y no vamos ins",
+        "start": 4411.72,
+        "end": 4417.5599999999995
+    },
+    {
+        "text": " or de pero le voy a empezar a poner condiciones entonces hay funciones que tienen precondiciones",
+        "start": 4417.5599999999995,
+        "end": 4423.96
+    },
+    {
+        "text": " entonces le voy a poner como precondición para ejecutar el ins or que la lista que venga como",
+        "start": 4423.96,
+        "end": 4429.72
+    },
+    {
+        "text": " parámetro ya está ordenada de menor a mayor y yo que quiero hacer con el insor agregarle un",
+        "start": 4429.72,
+        "end": 4436.68
+    },
+    {
+        "text": " elemento n a una lista ordenada en el lugar que le corresponde de tal manera que siga",
+        "start": 4436.68,
+        "end": 4441.8
+    },
+    {
+        "text": " estando ordenada se entiende por ejemplo el insor agregar el elemento tres en la lista uno",
+        "start": 4441.8,
+        "end": 4450.8
+    },
+    {
+        "text": " dos cuatro lista vacía debería ser la lista que tenga uno dos después el tres después el",
+        "start": 4450.8,
+        "end": 4458.400000000001
+    },
+    {
+        "text": " cuatro después la lista vacía esa es la sequencia está en acuerdo si o no bueno pensemos igual que",
+        "start": 4458.4,
+        "end": 4466.759999999999
+    },
+    {
+        "text": " recién cuál es el seducódioc que me da el esquema me va a decir bueno pensate el caso que es",
+        "start": 4466.759999999999,
+        "end": 4471.799999999999
+    },
+    {
+        "text": " insertar ordenadamente e en una lista vacía pensate que lo que es el insertar el elemento e en",
+        "start": 4471.799999999999,
+        "end": 4479.5599999999995
+    },
+    {
+        "text": " una lista xs asumiendo que la máquina ya sabría ordenar e dentro de ese con ahora la información",
+        "start": 4479.56,
+        "end": 4490.360000000001
+    },
+    {
+        "text": " extra si quieren así de que esta lista ya está ordenada o sea que cada elemento es menor igual que",
+        "start": 4490.360000000001,
+        "end": 4495.04
+    },
+    {
+        "text": " que le sigue se entiende y yo quiero acá agregar el elemento e ahí adentro se entiende vamos al",
+        "start": 4495.04,
+        "end": 4504.200000000001
+    },
+    {
+        "text": " primer caso que es insertar el elemento e en la lista vacía que lista va a ser una lista que",
+        "start": 4504.2,
+        "end": 4514.24
+    },
+    {
+        "text": " sólo tenga el elemento s o sea va a ser e punto lista vacía o sea un elemento una lista",
+        "start": 4514.24,
+        "end": 4519.92
+    },
+    {
+        "text": " unitaria e después seguido de la lista vacía una lista unitaria ese fácil que es insertar el",
+        "start": 4519.92,
+        "end": 4527.12
+    },
+    {
+        "text": " elemento e en una lista xs este elemento e lo quiero meter ahí adentro que puede pasar capa que",
+        "start": 4527.12,
+        "end": 4535.24
+    },
+    {
+        "text": " unif de nuevo no cuál sería una condición para llevar si le bueno vamos por el caso más simple",
+        "start": 4535.24,
+        "end": 4546.64
+    },
+    {
+        "text": " cuando hay el comienzo y como tiene que ser para que vaya primero de todo si le es menor igual que",
+        "start": 4546.64,
+        "end": 4553.88
+    },
+    {
+        "text": " x va primero porque si es menor igual que x y x es menor igual que todo esto para que",
+        "start": 4553.88,
+        "end": 4560.0
+    },
+    {
+        "text": " he ordenado ponguele acá si es menor igual que x me va a que ha ordenado si es menor igual que x",
+        "start": 4560.0,
+        "end": 4566.96
+    },
+    {
+        "text": " estamos de acuerdo que va primero y no ya hemos recurciamente pues lo agrego y termino",
+        "start": 4566.96,
+        "end": 4571.92
+    },
+    {
+        "text": " si o no ahora le muestro el código si sí como sí no no en este caso que voy a hacer",
+        "start": 4572.92,
+        "end": 4590.16
+    },
+    {
+        "text": " yo tengo xs entonces de agregar e al comienzo es el puntito x punto o sea a la lista que ya",
+        "start": 4590.16,
+        "end": 4597.84
+    },
+    {
+        "text": " tenía agrega le e al comienzo con el constructor que hayan visto de cómo definir la lista es",
+        "start": 4597.84,
+        "end": 4603.6
+    },
+    {
+        "text": " el puntito quiere decir agregar el comienzo el elemento de la lista está bien pero primero",
+        "start": 4603.6,
+        "end": 4610.96
+    },
+    {
+        "text": " este sería el caso de que es menor igual que x ahora vamos a lo puesto que pasa si es mayor que x",
+        "start": 4610.96,
+        "end": 4617.68
+    },
+    {
+        "text": " quien seguro va a ser el primero de la lista resultado si es más grande que el x ya no va a ser",
+        "start": 4618.52,
+        "end": 4624.400000000001
+    },
+    {
+        "text": " o sea va a ser el x si es mayor que x el x va a quedar primero yo que voy a tener que",
+        "start": 4625.36,
+        "end": 4633.2
+    },
+    {
+        "text": " insertar ahora el e dentro de ese pero eso es lo que sabe hacer la función insor y dentro de ese",
+        "start": 4633.2,
+        "end": 4640.96
+    },
+    {
+        "text": " entonces ya hemos recurciamente y se acabó es decir este código no insertar el elemento en la lista",
+        "start": 4640.96,
+        "end": 4651.12
+    },
+    {
+        "text": " vacía es la lista unitaria de seguido de la lista vacía, sea una lista unitaria",
+        "start": 4651.12,
+        "end": 4655.88
+    },
+    {
+        "text": " insertar el elemento e en la lista de xs si es menor igual que x lo agrega el comienzo es seguido de la",
+        "start": 4657.28,
+        "end": 4666.2
+    },
+    {
+        "text": " lista que tenía que es x punto es y no ya hemos recurcido ahí porque ya está lo que hayamos",
+        "start": 4666.2,
+        "end": 4672.12
+    },
+    {
+        "text": "ito primero ahora si le es mayor que el x el que tiene que dar primero quienes el x",
+        "start": 4672.12,
+        "end": 4678.08
+    },
+    {
+        "text": " x punto o sea x queda primero la lista resultado pero quien va después la lista resultado la lista que",
+        "start": 4678.8,
+        "end": 4685.64
+    },
+    {
+        "text": " corresponda e insertar e dentro de ese no sé dónde va a ir capa que va a ser el tercero cuarto al final",
+        "start": 4685.64,
+        "end": 4691.08
+    },
+    {
+        "text": " pero eso ya lo sabía hasta la máquina la largo correr hace lo vos",
+        "start": 4691.08,
+        "end": 4695.32
+    },
+    {
+        "text": " largo corre esto dado en el lista ordenado un estrino ordenado y le doy un carácter nuevo y lo meten",
+        "start": 4698.5199999999995,
+        "end": 4703.76
+    },
+    {
+        "text": " el lugar que le corresponde si o no sí está bien es tan practicado no sí el puntito este",
+        "start": 4703.76,
+        "end": 4720.92
+    },
+    {
+        "text": " si el puntito después se va a traducir en una flechita un puntero o algo cuando la semana que",
+        "start": 4720.92,
+        "end": 4727.2
+    },
+    {
+        "text": " viene trabajemos con memoria dinámica lista por ahora pensarlo es agregar el comienzo en el",
+        "start": 4727.2,
+        "end": 4733.2
+    },
+    {
+        "text": " lista la semana que viene se va a transformar si la lista son punteros una flechita pero lo dejamos",
+        "start": 4733.2,
+        "end": 4739.4
+    },
+    {
+        "text": " para la semana que viene la semana que viene la semana que viene porque para eso necesito cómo",
+        "start": 4739.4,
+        "end": 4750.639999999999
+    },
+    {
+        "text": " codifico la lista en temas más y la semana que viene le voy a mostrar cómo codificar las",
+        "start": 4750.639999999999,
+        "end": 4755.08
+    },
+    {
+        "text": " lista usando punteros y lista de memoria dinámica como vieron en programación uno pero extendiendo",
+        "start": 4755.08,
+        "end": 4759.92
+    },
+    {
+        "text": " lo que vieron en programación uno usando el lista doble encadenada punteros de comienzo punteros",
+        "start": 4759.92,
+        "end": 4763.96
+    },
+    {
+        "text": " el final cómo sin sarta recursido cómo sin sarta iterativo entonces lo va a la semana que viene",
+        "start": 4763.96,
+        "end": 4769.2
+    },
+    {
+        "text": " creo que es el último pero sino estamos muy cerca creo que es el último supongan que ahora",
+        "start": 4770.96,
+        "end": 4776.76
+    },
+    {
+        "text": " quiero ordenar una lista para desordenada",
+        "start": 4776.76,
+        "end": 4779.2
+    },
+    {
+        "text": " ok y se me da una lista desordenada roja y quiera el lista ordenada azul digo pero lo quiero",
+        "start": 4780.2,
+        "end": 4789.88
+    },
+    {
+        "text": " hacer recursivo como arranco a pensar donde no piensa recursivo hay una parte de no pienso diciendo",
+        "start": 4789.88,
+        "end": 4797.5599999999995
+    },
+    {
+        "text": " aplico la esquema y después me pongo a pensar entonces no puede ser que si yo le tengo un parcial me",
+        "start": 4797.5599999999995,
+        "end": 4803.12
+    },
+    {
+        "text": " le entregan en blanco en el hallo de recursión por lo menos la parte mecánica la tienen que escribir",
+        "start": 4803.12,
+        "end": 4806.679999999999
+    },
+    {
+        "text": " que es el template porque se calca de la definición del conjunto entonces qué es la parte mecánica",
+        "start": 4806.68,
+        "end": 4812.4400000000005
+    },
+    {
+        "text": " de decir que si la lista había dos constructores decir a qué es ordenar una lista vacía punto",
+        "start": 4812.4400000000005,
+        "end": 4817.04
+    },
+    {
+        "text": " suspensivo vamos a ver qué lo que es y qué es ordenar una lista no vacía que tiene un elemento",
+        "start": 4817.04,
+        "end": 4823.8
+    },
+    {
+        "text": " x y el resto de la lista puede no ser vacías se llama ese pero es dos ya sabría o la máquina",
+        "start": 4823.8,
+        "end": 4829.320000000001
+    },
+    {
+        "text": " ya sabe ordenar ese y eso es automático eso es lo que la máquina sabe hacer si yo le relleno los",
+        "start": 4829.320000000001,
+        "end": 4836.16
+    },
+    {
+        "text": " huecos ya está ahora viene la parte del pienso la que puede ser un poco complicada el primer",
+        "start": 4836.16,
+        "end": 4842.92
+    },
+    {
+        "text": " caso es muy fácil que es ordenar una lista vacía la lista vacía pues ya está ordenada",
+        "start": 4842.92,
+        "end": 4849.72
+    },
+    {
+        "text": " voy a dejarla así o sea retorno ahí corchete corchete lean acá lean acá no se pongo no uso el",
+        "start": 4849.72,
+        "end": 4860.599999999999
+    },
+    {
+        "text": " puntero mejor no no este no es el puntero este qué me está diciendo esto vamos a leerlo bien me",
+        "start": 4860.6,
+        "end": 4871.400000000001
+    },
+    {
+        "text": " está diciendo mira quién ordenar xcc supone que ese tiene 100 elementos no se la lista tiene 101",
+        "start": 4871.400000000001,
+        "end": 4880.400000000001
+    },
+    {
+        "text": " elementos x más ese pero ya tengo esto ese ya está todo ordenado orde ese es la lista ese todo",
+        "start": 4880.400000000001,
+        "end": 4888.68
+    },
+    {
+        "text": " ordenado los 100 elementos ya están ordenados yo tengo que crear uno más la pregunta es dónde va",
+        "start": 4888.68,
+        "end": 4894.4400000000005
+    },
+    {
+        "text": " lo podría poner al comienzo acá x punto o ese cuando eso sería correcto si aquí fuera más",
+        "start": 4898.12,
+        "end": 4906.8
+    },
+    {
+        "text": " chiquito que todos los otros entonces lo pongo primero está pero capaz que no es más capaz que",
+        "start": 4906.8,
+        "end": 4911.56
+    },
+    {
+        "text": " va en el medio o capaz que va al final se entiende capaz que el x no es el machiguille todo es un",
+        "start": 4911.56,
+        "end": 4918.4800000000005
+    },
+    {
+        "text": " intermedio o el más grande todo el peor caso sería no pero ordenar recibe como parámetro",
+        "start": 4918.4800000000005,
+        "end": 4927.320000000001
+    },
+    {
+        "text": " una lista no puedo decir recibe un número o recibe una lista recibe lo que me conviene no recibe",
+        "start": 4927.320000000001,
+        "end": 4932.96
+    },
+    {
+        "text": " una lista ahora vuelvan a leer interpretar lo que digo yo quiero ordenar xcc pero ya tengo ese",
+        "start": 4932.96,
+        "end": 4941.240000000001
+    },
+    {
+        "text": " ordenado orde ese es toda la lista ordenada ese donde va el x cuál es el problema que tengo ahora",
+        "start": 4941.24,
+        "end": 4948.32
+    },
+    {
+        "text": " orde ese ya está ordenado y quiero agregar el elemento x cual",
+        "start": 4948.32,
+        "end": 4957.96
+    },
+    {
+        "text": " es acto la recibe que hacía esta función ins orde decía mira si vos me das una lista que ya",
+        "start": 4960.44,
+        "end": 4968.92
+    },
+    {
+        "text": " precondiciona esta ordenada y me das un elemento yo lo agrego en el lugar que corresponde para que",
+        "start": 4968.92,
+        "end": 4974.96
+    },
+    {
+        "text": " esté ordenada justo digo es lo que preciso en el otro problema yo acá me está diciendo que orde",
+        "start": 4974.96,
+        "end": 4981.2
+    },
+    {
+        "text": " ese es la lista ese todo ordenada y tengo el x que no sea de va pero esta es la ordenada entonces",
+        "start": 4981.2,
+        "end": 4986.6
+    },
+    {
+        "text": " puedo llamar a la insorzo y digo llamo a insor el x en la lista ordenada ese esta algoritmo no",
+        "start": 4986.6,
+        "end": 4996.92
+    },
+    {
+        "text": " sé si lo vieron en programación se llama insorcioso o insertor que es ordenar por instaciones",
+        "start": 4996.92,
+        "end": 5002.68
+    },
+    {
+        "text": " repetitivas no típicamente estamos en un parcial en algún momento va a llegar pero yo estoy acá",
+        "start": 5002.68,
+        "end": 5009.64
+    },
+    {
+        "text": " sentado y empiezan a entregar entrega él y o no y nada lo pongo primero entrega él y yo",
+        "start": 5009.64,
+        "end": 5015.52
+    },
+    {
+        "text": " empiezo a mí de la pecido va adelante o atrás no voy instartando cada uno en el lugar que le",
+        "start": 5015.52,
+        "end": 5020.4800000000005
+    },
+    {
+        "text": " corresponde pero cuando él entregó y tengo dos ordenados viene él tercero veo lo inserto",
+        "start": 5020.4800000000005,
+        "end": 5026.04
+    },
+    {
+        "text": " ordenadamente entre los dos viene ella no voy haciendo insarciones ordenadas hasta que consuma",
+        "start": 5026.04,
+        "end": 5030.88
+    },
+    {
+        "text": " todos los parciales cuando termina a darle pire me voy cuando me complica cuando entregan todo",
+        "start": 5030.88,
+        "end": 5035.72
+    },
+    {
+        "text": " junto bueno me da el tiempo ese es el algoritmo insertión sor de a uno va insertando ordenadamente",
+        "start": 5035.72,
+        "end": 5043.04
+    },
+    {
+        "text": " hasta que consumo toda la cadena entonces termina fíjense que siguiendo el esquema capa que una",
+        "start": 5043.04,
+        "end": 5051.0
+    },
+    {
+        "text": " dice a acá me di cuenta porque tenía esta función insorso pero supongo que no lo hubiera",
+        "start": 5051.0,
+        "end": 5055.08
+    },
+    {
+        "text": " tenido hay tenía algo más y tenía algo más y no está bien puede irse como por demanda",
+        "start": 5055.08,
+        "end": 5062.48
+    },
+    {
+        "text": " porque a mí no se me dio cuenta se le expuse a ver como una ayuda definir insor ante que esta",
+        "start": 5062.48,
+        "end": 5067.72
+    },
+    {
+        "text": " pero unirse qué pasa si no hubiera sido así si uno le es que más se da cuenta qué es lo que",
+        "start": 5067.72,
+        "end": 5073.8
+    },
+    {
+        "text": " precisa porque acá me está diciendo mira orde ese ya está ordenado y quiero agregar x en",
+        "start": 5073.8,
+        "end": 5081.92
+    },
+    {
+        "text": " una lista ordenada lo que corresponde si me estribuye al que hago una función auxiliar que lo haga",
+        "start": 5081.92,
+        "end": 5087.2
+    },
+    {
+        "text": " si estribuye al lo escriba y mismo entonces eso también me permite ver cuando necesito",
+        "start": 5087.2,
+        "end": 5093.76
+    },
+    {
+        "text": " mobilizar a esto necesito hacer esto porque el esquema precisa esto si no lo puedo resolver",
+        "start": 5093.76,
+        "end": 5099.16
+    },
+    {
+        "text": " rápido a una función auxiliar que haga eso el insor para terminar un poquito pues faltaba",
+        "start": 5099.16,
+        "end": 5108.76
+    },
+    {
+        "text": " una cosita pero la voy a comentar no la vamos a usar prácticamente en este curso pero",
+        "start": 5108.76,
+        "end": 5114.16
+    },
+    {
+        "text": " cuando vean lógica van a ver esto todos los programas recursos los puedo definir con este",
+        "start": 5114.16,
+        "end": 5122.5199999999995
+    },
+    {
+        "text": " esquema son los que equivalen a los iterativos o sea esta un poderoso el esquema que cae con la",
+        "start": 5122.5199999999995,
+        "end": 5127.4
+    },
+    {
+        "text": " definición de las reglas con un template y eso me va a permitir hacer todos los programas sobre",
+        "start": 5127.4,
+        "end": 5132.4
+    },
+    {
+        "text": " esa estructura y eso es lo equivalente al iterativo la respuesta es no es lo que más se usa",
+        "start": 5132.4,
+        "end": 5141.799999999999
+    },
+    {
+        "text": " está bien y por eso que creo que no nos va a hacer nada falta más que eso para hacer todos los",
+        "start": 5142.799999999999,
+        "end": 5147.5599999999995
+    },
+    {
+        "text": " programas en programación dos preáquenos que se escapan a eso está bien entonces aparece",
+        "start": 5147.5599999999995,
+        "end": 5153.5599999999995
+    },
+    {
+        "text": " el llamado recurción no primitiva a las tribunas sino se llama recurción general lo vean un",
+        "start": 5153.56,
+        "end": 5158.0
+    },
+    {
+        "text": " poquito en lógica que es la recurción general y bueno es ser un poco más flexible en el esquema",
+        "start": 5158.0,
+        "end": 5163.4400000000005
+    },
+    {
+        "text": " reconoce la función de Fibonacci bien me alegro Fibonacci ahora han visto el código de",
+        "start": 5163.4400000000005,
+        "end": 5170.92
+    },
+    {
+        "text": " avín chica baso no es una secuencia que empieza con dos unos a prepo los dos primeras",
+        "start": 5170.92,
+        "end": 5178.120000000001
+    },
+    {
+        "text": " secuencias y después los siguientes se obtienen sumando los dos anteriores entonces uno más",
+        "start": 5178.12,
+        "end": 5182.76
+    },
+    {
+        "text": " uno es dos más uno es tres tres más dos cinco cinco más tres ocho ocho más cinco tres",
+        "start": 5182.76,
+        "end": 5189.64
+    },
+    {
+        "text": " tres más ocho veintiuno y así voy sumando a los dos anteriores y se oquiera se una función que",
+        "start": 5189.64,
+        "end": 5195.04
+    },
+    {
+        "text": " le doy un número y me dé el número de Fibonacci en ese lugar como si fuera una posición en",
+        "start": 5195.04,
+        "end": 5200.08
+    },
+    {
+        "text": " esta secuencia se entiende mi no este código los dos que son a prepo que yo dópose acá primero",
+        "start": 5200.08,
+        "end": 5206.8
+    },
+    {
+        "text": " diría bueno si te dan como posición el cero decir que el Fibonacci es uno caso hace si te dan",
+        "start": 5206.8,
+        "end": 5212.96
+    },
+    {
+        "text": " como parámetro el uno decir que también es uno los dos primeros los puse como caso hace y si te",
+        "start": 5212.96,
+        "end": 5220.360000000001
+    },
+    {
+        "text": " dan un n cualquiera sabiendo que es mayor igual que dos o sea que no es ser un n1 como lo calcula",
+        "start": 5220.360000000001,
+        "end": 5226.68
+    },
+    {
+        "text": " hasta recién haciendo el asumas de los Fibonacci los dos anteriores y el n y el n-1 bueno entonces",
+        "start": 5226.68,
+        "end": 5232.24
+    },
+    {
+        "text": " Fibonacci de un n es lo que de Fibonacci de n-2 más Fibonacci de n-1 lo lo hago a correr y me calcula",
+        "start": 5232.96,
+        "end": 5241.24
+    },
+    {
+        "text": " para cualquier estos valores el Fibonacci de cuadro pero lo borre acá pero los naturales vienen",
+        "start": 5241.24,
+        "end": 5247.599999999999
+    },
+    {
+        "text": " que se definían cuando reglas que era el cero y da un n suma a la y una suma natural",
+        "start": 5247.599999999999,
+        "end": 5251.5599999999995
+    },
+    {
+        "text": " me salí de este esquema y por qué me doy cuenta porque acá tengo tres reglas de dos ya me",
+        "start": 5252.599999999999,
+        "end": 5258.4
+    },
+    {
+        "text": " salí de les que me alando ahora tengo tres tengo dos casos base recién tenía uno solo y en",
+        "start": 5258.4,
+        "end": 5264.679999999999
+    },
+    {
+        "text": " el caso recursivo hace dos recursiones y recién F el sucesor de un n y ya me salí de que",
+        "start": 5264.679999999999,
+        "end": 5273.04
+    },
+    {
+        "text": " me la pregunta si esta cosa Fib es un programa recursivo correcto quiere decir correcto cuando me",
+        "start": 5273.04,
+        "end": 5281.879999999999
+    },
+    {
+        "text": " salgo el esquema no quiere decir que esté mal pero tengo que ver tres condiciones para decir",
+        "start": 5281.879999999999,
+        "end": 5286.839999999999
+    },
+    {
+        "text": " que esta función recursiva es correctamente está correctamente bien definida lo van a ver",
+        "start": 5286.84,
+        "end": 5292.96
+    },
+    {
+        "text": " en lógica se llama las condiciones exaustividad exclusión y terminación que quiere decir intuitivamente",
+        "start": 5292.96,
+        "end": 5300.52
+    },
+    {
+        "text": " exaustividad quiere decir si te saliste de la esquema garantizame que cualquier natural porque",
+        "start": 5301.6,
+        "end": 5307.2
+    },
+    {
+        "text": " tu input es un natural entra por al menos una regla o sea que tu definición es exaustiva",
+        "start": 5307.2,
+        "end": 5311.8
+    },
+    {
+        "text": " si mira por la primera entre el cero por la segunda entre el uno y por la társela que",
+        "start": 5312.52,
+        "end": 5317.52
+    },
+    {
+        "text": " entran los mayores iguales quedó se te escapó a algún natural no se va a cabir a puesto",
+        "start": 5317.52,
+        "end": 5323.64
+    },
+    {
+        "text": " en y mayor igual que tres una idea no está definida para dos no es exaustiva",
+        "start": 5323.64,
+        "end": 5328.28
+    },
+    {
+        "text": " segunda condición si te saliste del esquema probame que la función es una función que no te",
+        "start": 5330.28,
+        "end": 5337.320000000001
+    },
+    {
+        "text": " da un doble resultado que no puede seguir de día fip de 5 y depende como lo calcula y me da 8 o",
+        "start": 5337.32,
+        "end": 5343.88
+    },
+    {
+        "text": " me da 13 está mal entonces como logro eso viendo que las reglas que di son excluyentes no se",
+        "start": 5343.88,
+        "end": 5351.799999999999
+    },
+    {
+        "text": " superponen que el cero sólo entra por la primera que el uno sólo entra por la segunda y que",
+        "start": 5351.799999999999,
+        "end": 5358.92
+    },
+    {
+        "text": " acá si esto es en el mayor igual que dos sólo entran los números más o igual que dos o sea no hay un",
+        "start": 5358.92,
+        "end": 5365.48
+    },
+    {
+        "text": " número que puede entrar por dos reglas a la vez no pudo haber dos formas de calcular distintas",
+        "start": 5365.48,
+        "end": 5370.2
+    },
+    {
+        "text": " si yo acá era puesto en y mayor igual que uno hace esto entonces ahí tendría un conflicto porque",
+        "start": 5370.919999999999,
+        "end": 5377.36
+    },
+    {
+        "text": " cuando es uno podría entrar o por esta o por esto la exclusión no es tanto problema porque hace",
+        "start": 5377.36,
+        "end": 5384.24
+    },
+    {
+        "text": " los lenguajes de primación cuando tienen varios casos evaluan de arriba hacia abajo el primero que",
+        "start": 5384.24,
+        "end": 5388.599999999999
+    },
+    {
+        "text": " cumple hace ese y los otros ni los mira pero hay lenguaje que no tiene ese orden de ejecución de",
+        "start": 5388.6,
+        "end": 5395.240000000001
+    },
+    {
+        "text": " arriba hacia abajo entonces eso me asegura y la tercera condición cuál es porque que me da las 2",
+        "start": 5395.240000000001,
+        "end": 5400.04
+    },
+    {
+        "text": " primeras exaustividad me dice de saliste del esquema bueno mira tu programa fíjame una cajita que te",
+        "start": 5400.04,
+        "end": 5405.320000000001
+    },
+    {
+        "text": " da la exaustividad que cualquier input es válido eso es exaustivo que no te olvidaste ningún input que te",
+        "start": 5405.320000000001,
+        "end": 5411.72
+    },
+    {
+        "text": " da la segunda que la exclusión que si sale un valor de la cajita es único como lo logro que cualquier",
+        "start": 5411.72,
+        "end": 5420.64
+    },
+    {
+        "text": " input tenga una sola forma de cálculo entonces nunca vas a poder elegir si nunca puedes elegir el",
+        "start": 5420.64,
+        "end": 5424.4400000000005
+    },
+    {
+        "text": " resultado es único es como que lo gato de mano diciendo no puedes calcular dos formas distintas",
+        "start": 5424.4400000000005,
+        "end": 5429.64
+    },
+    {
+        "text": " entonces hace cuentas pero cada vez calculas de una sola forma el resultado tiene ser único y la",
+        "start": 5429.64,
+        "end": 5435.360000000001
+    },
+    {
+        "text": " tercera cuál es yo dije que todo se entra en la cajita si sale sale uno pero quien me garantiza que",
+        "start": 5435.36,
+        "end": 5441.759999999999
+    },
+    {
+        "text": " sale la cajita si llama recursión como garantizo que termina la condición de salida es la terminación",
+        "start": 5441.759999999999,
+        "end": 5450.44
+    },
+    {
+        "text": " la terminación unice cómo lo chequeó acá y que dijimos un rato tengo que garantizar que si yo",
+        "start": 5450.44,
+        "end": 5456.04
+    },
+    {
+        "text": " llamó recursiamente se va acercando a un piso lo tengo obligado a me chequere eso entonces acá",
+        "start": 5456.04,
+        "end": 5462.2
+    },
+    {
+        "text": " digo cómo miro esto qué es lo que se va chicando qué es lo que va cambiando la tercera regla",
+        "start": 5462.2,
+        "end": 5466.8
+    },
+    {
+        "text": " yo digo tengo que chequear que n menos 2 y n menos 1 son más chiquitos que lene",
+        "start": 5468.32,
+        "end": 5472.76
+    },
+    {
+        "text": " efectivamente lo son y además tengo un piso que es el 0 y el 1 se va chicando y lo obligo cuando",
+        "start": 5474.04,
+        "end": 5481.22
+    },
+    {
+        "text": " llega a 0 1 para eso me hace me obliga la convergencia entonces yo se salió del esquema",
+        "start": 5481.22,
+        "end": 5487.639999999999
+    },
+    {
+        "text": " pero esta función con esas tres condiciones que las tengo que ahora siche que armándualmente el",
+        "start": 5487.64,
+        "end": 5493.08
+    },
+    {
+        "text": " lógica lo van a hacer también es una función recursiva más general que las otras puede ser más",
+        "start": 5493.08,
+        "end": 5498.400000000001
+    },
+    {
+        "text": " recursión general todo lo que uno puede definir con recursión general es tan potente como lo que",
+        "start": 5498.400000000001,
+        "end": 5505.12
+    },
+    {
+        "text": " puede escribir un formal en cualquier lenguaje de primación la recursión primitiva estructural",
+        "start": 5505.12,
+        "end": 5510.68
+    },
+    {
+        "text": " definen mucho pero no le haganza para eso necesito esta como un complemento esas condiciones son",
+        "start": 5510.68,
+        "end": 5518.4400000000005
+    },
+    {
+        "text": " las que son las que les puse acá pero yo se las explique las van a tener colegadas o sea las",
+        "start": 5518.4400000000005,
+        "end": 5524.4400000000005
+    },
+    {
+        "text": " tienen colegadas en el Eva o sea que les pueden leer después tranquila un comentario así muy",
+        "start": 5524.4400000000005,
+        "end": 5533.240000000001
+    },
+    {
+        "text": " de lógico matemático para decir que le interesa decir bien el que yo hice muchas relaciones",
+        "start": 5533.240000000001,
+        "end": 5537.200000000001
+    },
+    {
+        "text": " entre la matemática o la lógica y la computación bueno hay mucha relación la recursión que vimos",
+        "start": 5537.2,
+        "end": 5544.28
+    },
+    {
+        "text": " primero que se dice que tiene estructura un template sea una recursión primitiva estructural se",
+        "start": 5544.28,
+        "end": 5548.44
+    },
+    {
+        "text": " caica de la inducción primitiva o estructural la misma que ustedes hacen en lógica unice esta",
+        "start": 5548.44,
+        "end": 5554.2
+    },
+    {
+        "text": " recursión general la que me permite llamar a otros valores no necesariamente más chiquitos tiene",
+        "start": 5554.2,
+        "end": 5560.24
+    },
+    {
+        "text": " un fundamento matemático si es lo que se llama capacar el deseo inducción completa dice no es lo",
+        "start": 5560.24,
+        "end": 5566.16
+    },
+    {
+        "text": " mismo no no es lo mismo la inducción completa aquí lo que uno hace prueba para un valor asumiendo",
+        "start": 5566.16,
+        "end": 5572.2
+    },
+    {
+        "text": " que vale no solo para el integros sino para todos los machiquitos que el todos los machiquitos",
+        "start": 5572.2,
+        "end": 5577.5199999999995
+    },
+    {
+        "text": " que el más poderosa porque asume mucho más para probar un siguiente entonces la recursión general",
+        "start": 5577.5199999999995,
+        "end": 5584.72
+    },
+    {
+        "text": " matemáticamente se justifica con la de más inducción completa o sea justamente encontrá",
+        "start": 5584.72,
+        "end": 5589.68
+    },
+    {
+        "text": " que un orden bien fundado que tiene un mínimo elemento así se llama matemática eso para que lo",
+        "start": 5589.68,
+        "end": 5594.96
+    },
+    {
+        "text": " sepa la eje y queda haciendo un ruito acá no es porque lo vamos a ver en programación pero para",
+        "start": 5594.96,
+        "end": 5599.88
+    },
+    {
+        "text": " que vean que todo lo que tiene en programación estamos usando tiene un correlato un correspondiente",
+        "start": 5599.88,
+        "end": 5605.24
+    },
+    {
+        "text": " en la lógica y en la matemática ¿Ve bien? bueno esta en las conclusiones fin ahora sí nos vemos",
+        "start": 5605.24,
+        "end": 5614.8
+    }
+]

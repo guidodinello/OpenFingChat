@@ -1,0 +1,4407 @@
+[
+    {
+        "text": " Vamos a ir adelante con el curso y nos toca empezar a hablar de subprogrammas.",
+        "start": 0.0,
+        "end": 22.96
+    },
+    {
+        "text": " Concretamente vamos a ver que pueden ser funciones o pueden ser procedimientos.",
+        "start": 22.96,
+        "end": 31.96
+    },
+    {
+        "text": " Hasta el momento, cuál era la estructura genérica de nuestros programas?",
+        "start": 31.96,
+        "end": 37.96
+    },
+    {
+        "text": " Nosotros el programa empezaba diciendo que empezaba diciendo la palabra reservada program a continuación que se ponía.",
+        "start": 37.96,
+        "end": 49.96
+    },
+    {
+        "text": " ¿Cómo? El nombre del programa. Y luego le podíamos poner input, output, sólo una de las dos, o nada.",
+        "start": 49.96,
+        "end": 64.96000000000001
+    },
+    {
+        "text": " Está bien? Y terminábamos con un punto y costa. ¿Qué venía luego?",
+        "start": 64.96,
+        "end": 71.96
+    },
+    {
+        "text": " Luego venían las constantes, declarábamos una sección para constantes, que era una constante.",
+        "start": 71.96,
+        "end": 84.96
+    },
+    {
+        "text": " No es una variable, porque no varía. Es un valor que tiene asociado un nombre, no necesariamente un carácter.",
+        "start": 84.96,
+        "end": 96.96
+    },
+    {
+        "text": " Es un valor que se le asocia un nombre simbólico y luego se puede utilizar mediante ese nombre simbólico en diferentes lugares durante el programa.",
+        "start": 96.96,
+        "end": 107.96
+    },
+    {
+        "text": " Pero justamente no es una variable, porque no tiene la propiedad de que su valor pueda variar.",
+        "start": 107.96,
+        "end": 114.96
+    },
+    {
+        "text": " Y podíamos definir varias constantes. Se indicaba expresamente el tipo de datos de la constante.",
+        "start": 114.96,
+        "end": 122.96
+    },
+    {
+        "text": " No, el tipo de datos lo infería Pascal en función del valor concreto que le poníamos acá a constante.",
+        "start": 122.96,
+        "end": 130.95999999999998
+    },
+    {
+        "text": " ¿Qué venían después de las constantes? Venían los tipos de datos.",
+        "start": 130.96,
+        "end": 137.96
+    },
+    {
+        "text": " Los tipos de datos definidos por nosotros. Vimos que podíamos inventarnos nuestros propios tipos de datos para usar en el programa.",
+        "start": 137.96,
+        "end": 150.96
+    },
+    {
+        "text": " Concretamente hasta ahora hemos visto dos categorías de tipos que podemos definir, ¿cuáles son?",
+        "start": 150.96,
+        "end": 155.96
+    },
+    {
+        "text": " Los arreglos y los subrangos. Más adelante dijimos que vamos a ver otras más. Vamos a ver lo que son los record, los registros.",
+        "start": 155.96,
+        "end": 164.96
+    },
+    {
+        "text": " Vamos a ver lo que son los punteros, que nos van a servir para definir unas cosas que son las listas. Vamos a seguir viendo tipos de datos.",
+        "start": 164.96,
+        "end": 173.96
+    },
+    {
+        "text": " Después de esto que venían, las variables y después de las variables que venían.",
+        "start": 174.96,
+        "end": 180.96
+    },
+    {
+        "text": " Lo que era el cuerpo del programa, el bloque Big In End, dentro del cual colocábamos las instrucciones del programa. ¿Sabía?",
+        "start": 180.96,
+        "end": 191.96
+    },
+    {
+        "text": " Ahora bien, ¿qué es lo que nos ha estado pasando a medida que hemos ido avanzando?",
+        "start": 191.96,
+        "end": 197.96
+    },
+    {
+        "text": " Que la cantidad de instrucciones que ponemos dentro del programa está aumentando cada vez más.",
+        "start": 198.96,
+        "end": 204.96
+    },
+    {
+        "text": " Nuestro programa se está haciendo cada vez más grande, está teniendo cada vez más líneas de código.",
+        "start": 204.96,
+        "end": 211.96
+    },
+    {
+        "text": " Ya no más ver lo que pasó con la primera tarea, si bien, no era demasiado grande, tenía una cantidad interesante de líneas de código.",
+        "start": 211.96,
+        "end": 220.96
+    },
+    {
+        "text": " La idea es que cuando un programa se vuelve demasiado largo, es más difícil de mantener.",
+        "start": 221.96,
+        "end": 228.96
+    },
+    {
+        "text": " Es más difícil de buscar errores. Es más difícil de lo que se llama depurarlo.",
+        "start": 228.96,
+        "end": 235.96
+    },
+    {
+        "text": " Entonces lo que vamos a hacer va a ser algo así como tomar una tijera, empezar a dar unos cuantos tijeretasos",
+        "start": 235.96,
+        "end": 243.96
+    },
+    {
+        "text": " y, en vez de hacer un programa enorme, vamos a hacer varios programas más pequeños.",
+        "start": 244.96,
+        "end": 249.96
+    },
+    {
+        "text": " Y esos programas más pequeños los vamos a llamar subprogramas.",
+        "start": 250.96,
+        "end": 255.96
+    },
+    {
+        "text": " Y vamos a ver que hay dos clases posibles de subprogramas. Están las funciones y están los procedimientos que en un rato vamos a hablar de cada uno de ellos.",
+        "start": 255.96,
+        "end": 264.96000000000004
+    },
+    {
+        "text": " Entonces, cuál es la idea? Nuestro programa, en vez de ser un único gran bloque de código, va a estar formado por una serie de subprogramas más pequeños, que van a ser procedimientos sus funciones.",
+        "start": 265.96,
+        "end": 278.96
+    },
+    {
+        "text": " Eso lo vamos a ver. Y después más abajo vamos a tener lo que hasta ahora era nuestro único bloque de programa, el lo que Viggin N, que a partir de ahora lo vamos a llamar el programa principal.",
+        "start": 278.96,
+        "end": 291.96
+    },
+    {
+        "text": " O sea que nuestro programa deja de ser un un cobloque de código para convertirse en una serie de algoritmos más pequeños, que vamos a ver que se pueden comunicar entre sí.",
+        "start": 292.96,
+        "end": 305.96
+    },
+    {
+        "text": " Eso va a ser que el programa sea más mantenible, va a ser que sea más legible, va a ser que sea más fácil de depurar y de encontrar errores.",
+        "start": 305.96,
+        "end": 314.96
+    },
+    {
+        "text": " Va a tener un montón de ventajas que a medida que los vayamos usando van a quedar en evidencia.",
+        "start": 314.96,
+        "end": 321.96
+    },
+    {
+        "text": " Entonces los subprogramas los vamos a poner acá entre los tipos y las variables.",
+        "start": 321.96,
+        "end": 329.96
+    },
+    {
+        "text": " Vamos a ver que yo me puedo definir una función, vamos a ver que la palabra reservada va a ser Funcion, Funcion, bien pronunciado.",
+        "start": 329.96,
+        "end": 341.96
+    },
+    {
+        "text": " Vamos a ver que la función va a tener un encabezado, vamos a ver que tienen unas cosas que son los parámetros, que vamos a hablar de todo ello en un ratito.",
+        "start": 341.96,
+        "end": 351.96
+    },
+    {
+        "text": " Y dentro de la función lo que vamos a colocar va a ser lo mismo que colocaríamos en un programa más grande.",
+        "start": 351.96,
+        "end": 359.96
+    },
+    {
+        "text": " O sea, vos dentro de una función te puedes definir constantes que sean locales a la función, te puedes definir variables que sean locales a esa función.",
+        "start": 359.96,
+        "end": 370.96
+    },
+    {
+        "text": " En definitiva un subprograma es como si fuera un mini programa.",
+        "start": 370.96,
+        "end": 375.96
+    },
+    {
+        "text": " Entonces dentro de la función vamos a poner una serie de cosas, que vamos a ver que van a initar la misma estructura, el mismo esqueleto que tendría todo el programa.",
+        "start": 375.96,
+        "end": 387.96
+    },
+    {
+        "text": " Pero va a estar encerrado en una suerte de caja negra.",
+        "start": 387.96,
+        "end": 394.96
+    },
+    {
+        "text": " Vamos a ver después cuál es la diferencia entre Funcion y procedimiento, lo que no tiene que arclar en este momento es que son subprogramas.",
+        "start": 394.96,
+        "end": 404.96
+    },
+    {
+        "text": " Luego podemos poner tantos subprogramas como nosotros queramos. Podemos poner varias funciones, podemos poner varios procedimientos, podemos alternar función con procedimiento, dependiendo de lo que queramos hacer.",
+        "start": 405.96,
+        "end": 419.96
+    },
+    {
+        "text": " Yo por ejemplo podría poner luego de esta función un procedimiento, voy a repetir la diferencia entre funciones y procedimiento, lo vamos a ver después, que es otro subprograma diferente.",
+        "start": 420.96,
+        "end": 435.96
+    },
+    {
+        "text": " Que vamos a ver que también tiene sus parámetros, también va a tener sus propias variables, etc.",
+        "start": 436.96,
+        "end": 442.96
+    },
+    {
+        "text": " Si. Y vamos a ver que dentro de una función o dentro de un procedimiento, tú puedes anidar otras funciones o otros procedimientos.",
+        "start": 442.96,
+        "end": 454.96
+    },
+    {
+        "text": " El concepto acá chiquilínes es el subprograma es como si fuera un programa en chiquito, dentro de él vos puedes tener todo lo mismo que podrías tener en un programa común.",
+        "start": 454.96,
+        "end": 465.96
+    },
+    {
+        "text": " Bueno, el procedimiento, vamos a ver que también va a tener sus parámetros y sus elementos internos y recién después de que colocamos tantas funciones y o procedimientos como necesitemos.",
+        "start": 466.96,
+        "end": 486.96
+    },
+    {
+        "text": " Recién ahí es que va a venir el bloque principal, es decir, la secuencia de instrucciones encerradas en Viguin End.",
+        "start": 487.96,
+        "end": 500.96
+    },
+    {
+        "text": " Y entre medio de los procedimientos y funciones y el programa principal, es verdad, me faltó eso, vamos a definir también las variables, o sea que por acá es que iría la sección de variables.",
+        "start": 501.96,
+        "end": 518.96
+    },
+    {
+        "text": " Si.",
+        "start": 518.96,
+        "end": 525.96
+    },
+    {
+        "text": " Si tienes una variabilidad que nos estábamos en la función de procedimiento, la tiene que ir dentro de esos ponte.",
+        "start": 525.96,
+        "end": 530.96
+    },
+    {
+        "text": " La clase que viene, vamos a ver algo que se llama alcance, que tiene que ver con lo que son las variables locales y globales, esos son programas.",
+        "start": 530.96,
+        "end": 538.96
+    },
+    {
+        "text": " Vamos a ver que hay variables que son globales, que se pueden usar en cualquier lado, vamos a ver que hay variables que son locales, que son propias internas digamos a un subprogram.",
+        "start": 539.96,
+        "end": 550.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 550.96,
+        "end": 552.96
+    },
+    {
+        "text": " Entonces, ¿cuál va a ser la idea? Nosotros antes todo este código donde estaba, estaba todo dentro del bloque principal.",
+        "start": 552.96,
+        "end": 562.96
+    },
+    {
+        "text": " Y muchas veces teníamos código repetido. Imagínense, por ejemplo, si ustedes querían mostrar por pantalla una reglo y tenían que mostrar tres veces por pantalla una reglo.",
+        "start": 562.96,
+        "end": 574.96
+    },
+    {
+        "text": " Hasta el momento que teníamos que hacer.",
+        "start": 574.96,
+        "end": 577.96
+    },
+    {
+        "text": " Escribir tres veces el forque recorría y mostraba. Ahora que vamos a hacer, vamos a hacer un procedimiento que adentro va a contener las instrucciones para mostrar el arriloponpataya.",
+        "start": 577.96,
+        "end": 591.96
+    },
+    {
+        "text": " Y a la reglo vamos a ver que se lo vamos a pasar como parámetro. Y después yo lo puedo llamar tres veces desde el programa principal.",
+        "start": 591.96,
+        "end": 600.96
+    },
+    {
+        "text": " Aparece también la noción de código reutilizable, un mismo procedimiento o una misma función, se puede llamar varias veces desde el programa así.",
+        "start": 600.96,
+        "end": 611.96
+    },
+    {
+        "text": " ¿Déces de recorrido?",
+        "start": 611.96,
+        "end": 613.96
+    },
+    {
+        "text": " Bueno, de hecho la programación orientada objetos renombrá a método lo que nosotros llamamos procedimientos y funciones.",
+        "start": 613.96,
+        "end": 621.96
+    },
+    {
+        "text": " El concepto de método, en realidad, sigue siendo el mismo concepto de su programa.",
+        "start": 621.96,
+        "end": 625.96
+    },
+    {
+        "text": " Sólo que en la terminología orientada objetos se le dice método en vez de llamarle su programa, pero es la misma cosa.",
+        "start": 625.96,
+        "end": 632.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 632.96,
+        "end": 635.96
+    },
+    {
+        "text": " Entonces, ¿cuál es la idea? Yo desde acá puedo llamar al procedimiento, puedo llamar a la función una, dos, tres, las veces que sea.",
+        "start": 635.96,
+        "end": 649.96
+    },
+    {
+        "text": " Y no solamente eso, los subprogramas vamos a ver que también se pueden llamar entre sí.",
+        "start": 649.96,
+        "end": 656.96
+    },
+    {
+        "text": " Todo de qué depende. Bueno, del problema concreto que necesitemos resolver.",
+        "start": 657.96,
+        "end": 662.96
+    },
+    {
+        "text": " Yo desde el procedimiento podría también llamar a esta función.",
+        "start": 662.96,
+        "end": 669.96
+    },
+    {
+        "text": " O sea que los diferentes subprogramas se pueden comunicar entre sí, se pueden llamar, se pueden lo que vamos a llamar invocar unos autos.",
+        "start": 669.96,
+        "end": 680.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 681.96,
+        "end": 686.96
+    },
+    {
+        "text": " Bueno, vamos a empezar a formalizar algunas cosas.",
+        "start": 686.96,
+        "end": 693.96
+    },
+    {
+        "text": " Dice ahí, un subprograma es un fragmento de código que se comporta de manera independiente dentro de un programa.",
+        "start": 693.96,
+        "end": 706.96
+    },
+    {
+        "text": " La función es algo así como un universo en sí misma. Es como un mini programa independiente de los demás.",
+        "start": 706.96,
+        "end": 715.96
+    },
+    {
+        "text": " Lo mismo pasa con el procedimiento.",
+        "start": 715.96,
+        "end": 718.96
+    },
+    {
+        "text": " Por eso dice que se comporta de manera independiente dentro de un programa.",
+        "start": 718.96,
+        "end": 723.96
+    },
+    {
+        "text": " La idea es que cada subprograma es algo así como una caja negra, que yo le voy a pasar parámetros, los parámetros van a ser los datos de entrada,",
+        "start": 723.96,
+        "end": 733.96
+    },
+    {
+        "text": " y en forma interna el subprograma va a trabajar con esos datos de entrada.",
+        "start": 734.96,
+        "end": 739.96
+    },
+    {
+        "text": " Que podemos saber cómo es la sintaxis para todo eso.",
+        "start": 740.96,
+        "end": 743.96
+    },
+    {
+        "text": " Los subprogramas pueden ser invocados varias veces desde otras partes del programa, lo que dijimos.",
+        "start": 745.96,
+        "end": 751.96
+    },
+    {
+        "text": " Yo desde el bloque principal, que ahora vamos a llamar el programa principal,",
+        "start": 751.96,
+        "end": 757.96
+    },
+    {
+        "text": " yo puedo llamar varias veces a una misma función, varias veces a un mismo procedimiento.",
+        "start": 758.96,
+        "end": 763.96
+    },
+    {
+        "text": " Desde este procedimiento yo también puedo llamar varias veces a la función.",
+        "start": 763.96,
+        "end": 768.96
+    },
+    {
+        "text": " Así la llamar a una vez sola igual está bueno hacer procedimientos y funciones.",
+        "start": 768.96,
+        "end": 775.96
+    },
+    {
+        "text": " La reutilización de código es una de las muchas ventajas que tiene esta manera de trabajar.",
+        "start": 775.96,
+        "end": 782.96
+    },
+    {
+        "text": " Si, se comunican mediante el pasaje de parámetros.",
+        "start": 783.96,
+        "end": 788.96
+    },
+    {
+        "text": " Esto lo estuvimos medio diciendo ahora y que lo vamos a formalizar en un rato.",
+        "start": 788.96,
+        "end": 793.96
+    },
+    {
+        "text": " La manera que yo voy a tener de acá llamar este procedimiento es pasarle datos para que el procedimiento pueda trabajar.",
+        "start": 793.96,
+        "end": 802.96
+    },
+    {
+        "text": " Esos datos van a hacerlo parámetros.",
+        "start": 803.96,
+        "end": 807.96
+    },
+    {
+        "text": " Cada subprograma tiene su propio espacio de nombres, sus propios identificadores locales.",
+        "start": 808.96,
+        "end": 816.96
+    },
+    {
+        "text": " El subprograma es un programa en sí mismo.",
+        "start": 816.96,
+        "end": 821.96
+    },
+    {
+        "text": " Por lo tanto dentro del subprograma yo puedo tener constantes, puedo tener tipos, puedo tener variables,",
+        "start": 821.96,
+        "end": 828.96
+    },
+    {
+        "text": " que vamos a decir que son locales a ese subprograma.",
+        "start": 828.96,
+        "end": 834.96
+    },
+    {
+        "text": " Algunos identificadores pueden ser compartidos entre sus programas y el programa principal, lo que me preguntaba al compañero.",
+        "start": 834.96,
+        "end": 843.96
+    },
+    {
+        "text": " Puedo tener una misma variable que sea visible desde varios subprogramas.",
+        "start": 843.96,
+        "end": 849.96
+    },
+    {
+        "text": " La respuesta sí, vamos a ver que eso se define a través de lo que son los identificadores globales.",
+        "start": 849.96,
+        "end": 854.96
+    },
+    {
+        "text": " Vamos a ver que también están los identificadores locales, que son los internos a cada subprograma.",
+        "start": 854.96,
+        "end": 861.96
+    },
+    {
+        "text": " Los subprogramas son una herramienta de modularización. Conforme los programas se van haciendo cada vez más extensos,",
+        "start": 865.96,
+        "end": 873.96
+    },
+    {
+        "text": " las ideas que sean modulares, las ideas dividirlos en fragmentos de código más pequeños,",
+        "start": 873.96,
+        "end": 880.96
+    },
+    {
+        "text": " que sean independientes unos de otros y que puedan ser reutilizables varias veces.",
+        "start": 880.96,
+        "end": 885.96
+    },
+    {
+        "text": " Eso son justamente los procedimientos y funciones.",
+        "start": 885.96,
+        "end": 889.96
+    },
+    {
+        "text": " Dentro de esta sección tú puedes poner indistintamente procedimientos o funciones.",
+        "start": 897.96,
+        "end": 901.96
+    },
+    {
+        "text": " Puede ir la funcionante si el procedimiento después o al revés depende de lo que quieras hacer.",
+        "start": 902.96,
+        "end": 907.96
+    },
+    {
+        "text": " Eso va a tener que ver con las reglas del cáncer. Vamos a ver que vos podemos llamar a un subprograma que esté definido en forma previa.",
+        "start": 911.96,
+        "end": 918.96
+    },
+    {
+        "text": " También puede llamar a subprogramas internos, pero eso lo vamos a ver cuando manejemos el tema del cáncer.",
+        "start": 919.96,
+        "end": 924.96
+    },
+    {
+        "text": " Pero por ahora la idea intuitiva es yo puedo llamar a otro subprograma si lo tengo más arriba.",
+        "start": 925.96,
+        "end": 929.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 932.96,
+        "end": 935.96
+    },
+    {
+        "text": " Bueno, vamos a seguir un poco.",
+        "start": 937.96,
+        "end": 940.96
+    },
+    {
+        "text": " Bueno, tanto una función como un procedimiento, lo mismo que lo que teníamos hasta ahora como el único programa,",
+        "start": 943.96,
+        "end": 952.96
+    },
+    {
+        "text": " es lo que vamos a llamar un bloque.",
+        "start": 952.96,
+        "end": 955.96
+    },
+    {
+        "text": " Un bloque dice allí que es una denominación generica para la siguiente estructura sintáctica.",
+        "start": 956.96,
+        "end": 961.96
+    },
+    {
+        "text": " Vos dentro de un bloque, dentro de una función, dentro de un procedimiento, puedes tener tus propias constantes sin darlas a ese bloque,",
+        "start": 961.96,
+        "end": 970.96
+    },
+    {
+        "text": " tus propios tipos, tus propias variables y la sección de instrucciones propias de ese bloque.",
+        "start": 970.96,
+        "end": 976.96
+    },
+    {
+        "text": " Todo esto puede ir adentro de aquella función o adentro de aquel procedimiento.",
+        "start": 976.96,
+        "end": 982.96
+    },
+    {
+        "text": " Vamos a ver que, en general, y esto es un tema si se quiere más bien de costumbre que otra cosa,",
+        "start": 983.96,
+        "end": 990.96
+    },
+    {
+        "text": " no va a ser tan común que definamos constantes y tipos locales a un subprograma.",
+        "start": 990.96,
+        "end": 996.96
+    },
+    {
+        "text": " Generalmente, cuando nosotros, por ejemplo, definimos una constante, la vamos a definir de manera global a todo el programa,",
+        "start": 997.96,
+        "end": 1003.96
+    },
+    {
+        "text": " y en general eso es una buena práctica porque es altamente probable que vos la misma constante la quieras usar en muchos subprogramas.",
+        "start": 1003.96,
+        "end": 1011.96
+    },
+    {
+        "text": " Hay tener un ejemplo de un identificador que es visible a todos los subprogramas, las constantes que ponen sacado arriba, por ejemplo.",
+        "start": 1012.96,
+        "end": 1019.96
+    },
+    {
+        "text": " Lo mismo pasa con los tipos de datos. Cuando vos definís, por ejemplo, un arreglo, es altamente probable que en varios de los subprogramas,",
+        "start": 1020.96,
+        "end": 1028.96
+    },
+    {
+        "text": " vos quieras trabajar con ese arreglo.",
+        "start": 1028.96,
+        "end": 1030.96
+    },
+    {
+        "text": " Entonces, constantes y tipos, vamos a ver que, en general, es más natural definirlos de manera global a todo el programa.",
+        "start": 1031.96,
+        "end": 1038.96
+    },
+    {
+        "text": " Y dentro de cada función o de cada procedimiento, lo más frecuente va a ser que definamos variables locales.",
+        "start": 1039.96,
+        "end": 1045.96
+    },
+    {
+        "text": " En general, vamos a querer que cada subprograma manipule sus propias variables.",
+        "start": 1045.96,
+        "end": 1049.96
+    },
+    {
+        "text": " Lo que no significa que esté prohibido que dentro del subprograma vos tengas tu propia constante si tu propios tipos de datos, pero no es lo más frecuente.",
+        "start": 1050.96,
+        "end": 1058.96
+    },
+    {
+        "text": " Entonces, el concepto que nos tiene que quedar es que el bloque es un programita en sí mismo, tanto la función como el procedimiento.",
+        "start": 1059.96,
+        "end": 1069.96
+    },
+    {
+        "text": " ¿De acuerdo?",
+        "start": 1071.96,
+        "end": 1072.96
+    },
+    {
+        "text": " Se va entendiendo como siempre cualquier cosa pregunta.",
+        "start": 1073.96,
+        "end": 1077.96
+    },
+    {
+        "text": " Bueno, ¿qué más?",
+        "start": 1079.96,
+        "end": 1081.96
+    },
+    {
+        "text": " Todo bloque viene precedido de un encabezado.",
+        "start": 1081.96,
+        "end": 1088.96
+    },
+    {
+        "text": " Si el bloque es todo el programa, si el encabezado es tanto precedido por la palabra program, todo esto es un bloque que comienza con la palabra program.",
+        "start": 1088.96,
+        "end": 1101.96
+    },
+    {
+        "text": " Dentro de todo el programa tenemos constantes tipos, subprogramas variables y instrucciones.",
+        "start": 1101.96,
+        "end": 1107.96
+    },
+    {
+        "text": " Si el bloque es un procedimiento va a estar antecedido de la palabra reservada, pero sí diur esta de acá.",
+        "start": 1108.96,
+        "end": 1118.96
+    },
+    {
+        "text": " Y acá, ¿qué vamos a tener?",
+        "start": 1118.96,
+        "end": 1121.96
+    },
+    {
+        "text": " Bueno, vamos a tener constantes tipos variables, todo lo que puede haber dentro de un programa.",
+        "start": 1121.96,
+        "end": 1128.96
+    },
+    {
+        "text": " Y lo mismo cuando el bloque corresponde a una función, ahí la palabra reservada va a ser function.",
+        "start": 1128.96,
+        "end": 1135.96
+    },
+    {
+        "text": " Vamos a ver que a cada su programa le vamos a dar un nombre, va a tener un identificador así como el programa tenía un nombre que estaba dado por un identificador.",
+        "start": 1136.96,
+        "end": 1145.96
+    },
+    {
+        "text": " La función y el procedimiento también se van a identificarme de un nombre.",
+        "start": 1145.96,
+        "end": 1152.96
+    },
+    {
+        "text": " O sea, es el mismo concepto si se quiere a nivel macro y a nivel micro.",
+        "start": 1153.96,
+        "end": 1158.96
+    },
+    {
+        "text": " Ok? Bien.",
+        "start": 1159.96,
+        "end": 1163.96
+    },
+    {
+        "text": " Y vamos a hablar ahora específicamente de funciones.",
+        "start": 1165.96,
+        "end": 1168.96
+    },
+    {
+        "text": " Dentro un rato vemos los procedimientos. Ahora solo nos vamos a concentrar en las funciones. Bien?",
+        "start": 1169.96,
+        "end": 1176.96
+    },
+    {
+        "text": " Una función es un subprograma que retorna un valor simple.",
+        "start": 1178.96,
+        "end": 1185.96
+    },
+    {
+        "text": " Vamos a mirar esta restricción. Un valor simple.",
+        "start": 1188.96,
+        "end": 1193.96
+    },
+    {
+        "text": " Quiere decir que lo que vamos a devolver como resultado de la función no puede pertenecer a un tipo de datos estructurado.",
+        "start": 1193.96,
+        "end": 1201.96
+    },
+    {
+        "text": " Quiero un tipo de datos estructurado.",
+        "start": 1201.96,
+        "end": 1206.96
+    },
+    {
+        "text": " Por ejemplo, los arreglos son un tipo de datos estructurado.",
+        "start": 1206.96,
+        "end": 1211.96
+    },
+    {
+        "text": " Vamos a ver más adelante que los registros, los record, también son otro tipo de datos estructurado.",
+        "start": 1212.96,
+        "end": 1217.96
+    },
+    {
+        "text": " Le decíamos estructurado porque internamente al más senado una serie de valores puestos todos juntos.",
+        "start": 1218.96,
+        "end": 1226.96
+    },
+    {
+        "text": " Bueno, las funciones, por lo menos en Pascal, esto no es necesariamente se asiento de los lenguajes, van a retornar un resultado y ese resultado tiene que ser de tipo simple.",
+        "start": 1227.96,
+        "end": 1239.96
+    },
+    {
+        "text": " Por ejemplo, los tipos de datos primitivos, el char, el bullion, el integer, el real.",
+        "start": 1240.96,
+        "end": 1246.96
+    },
+    {
+        "text": " Por ejemplo, los enumerados que los vamos a ver más adelante, por ejemplo un subrango.",
+        "start": 1246.96,
+        "end": 1253.96
+    },
+    {
+        "text": " Todos esos son ejemplos de valores simples.",
+        "start": 1253.96,
+        "end": 1257.96
+    },
+    {
+        "text": " Y las ideas que la función viene a representar dentro del lenguaje de programación el mismo concepto que una función matemática.",
+        "start": 1258.96,
+        "end": 1268.96
+    },
+    {
+        "text": " ¿Vos en matemática? ¿Sí? ¿Cuáles son los dos grandes conjuntos que te definen una función?",
+        "start": 1269.96,
+        "end": 1275.96
+    },
+    {
+        "text": " Domínio y codominio. O sea, la función parte de un dominio y llega a un codominio.",
+        "start": 1277.96,
+        "end": 1284.96
+    },
+    {
+        "text": " ¿Sí? Por cada valor del dominio, la función cuantos valores del codominio produce como resultado.",
+        "start": 1285.96,
+        "end": 1293.96
+    },
+    {
+        "text": " Uno solo, si produce más de uno, decimos que no ha función. ¿No es cierto?",
+        "start": 1293.96,
+        "end": 1299.96
+    },
+    {
+        "text": " La misma idea es lo que pasa en los lenguajes de programación.",
+        "start": 1299.96,
+        "end": 1302.96
+    },
+    {
+        "text": " O sea, una función dentro de un lenguaje de programación es algo así como una función matemática implementada sobre una máquina.",
+        "start": 1302.96,
+        "end": 1313.96
+    },
+    {
+        "text": " Pero sigue teniendo el mismo concepto. Recibe una serie de datos de entrada, realiza una serie de cálculos con esos datos de entrada y produce un resultado.",
+        "start": 1314.96,
+        "end": 1325.96
+    },
+    {
+        "text": " El resultado producido debe ser único.",
+        "start": 1326.96,
+        "end": 1328.96
+    },
+    {
+        "text": " Esa propiedad que tienen las funciones en el mundo matemático también la van a tener dentro del lenguaje de programación.",
+        "start": 1329.96,
+        "end": 1337.96
+    },
+    {
+        "text": " Y vamos a ver después que la función la vamos a definir así con sus propios elementos locales.",
+        "start": 1338.96,
+        "end": 1346.96
+    },
+    {
+        "text": " Ahora bien, dejamos eso para después y vamos acá. Yo acá que voy a hacer con la función.",
+        "start": 1349.96,
+        "end": 1354.96
+    },
+    {
+        "text": " La voy a llamar, la voy a usar, la voy a invocar.",
+        "start": 1355.96,
+        "end": 1361.96
+    },
+    {
+        "text": " Invocar suena como invocar un espíritu no, estamos llamando a una función.",
+        "start": 1362.96,
+        "end": 1367.96
+    },
+    {
+        "text": " Es algo que la función sea una especie de espíritu, pero...",
+        "start": 1367.96,
+        "end": 1370.96
+    },
+    {
+        "text": " Las funciones se invocan dentro de una expresión y nosotros ya hemos estado invocando funciones.",
+        "start": 1372.96,
+        "end": 1379.96
+    },
+    {
+        "text": " Todas las funciones estándar de pascal, nosotros ya la hacemos estado llamando.",
+        "start": 1381.96,
+        "end": 1387.96
+    },
+    {
+        "text": " Orsuk, pred, scuerruth, chartrun, todas las funciones predefinidas que vimos son funciones que nosotros las llamábamos desde una expresión.",
+        "start": 1388.96,
+        "end": 1399.96
+    },
+    {
+        "text": " Por ejemplo, nosotros muchas veces hemos hecho esto.",
+        "start": 1400.96,
+        "end": 1404.96
+    },
+    {
+        "text": " Ahí le asignamos scuerruth de x.",
+        "start": 1405.96,
+        "end": 1412.96
+    },
+    {
+        "text": " ¿Qué estamos haciendo acá?",
+        "start": 1413.96,
+        "end": 1417.96
+    },
+    {
+        "text": " Jamando a la función scuerruth, invocando a la función, le estamos pasando x como parámetro,",
+        "start": 1417.96,
+        "end": 1425.96
+    },
+    {
+        "text": " internamente calcula la raíz cuadrada y el resultado me lo devuelvení.",
+        "start": 1425.96,
+        "end": 1430.96
+    },
+    {
+        "text": " Esto mismo vamos a hacer, pero en vez de confunciones predefinidas con las funciones que vamos a definir nosotros.",
+        "start": 1432.96,
+        "end": 1439.96
+    },
+    {
+        "text": " También hacíamos esto otro.",
+        "start": 1440.96,
+        "end": 1444.96
+    },
+    {
+        "text": " Por ejemplo, a la variable z le podíamos asignar el cuadrado de 25 más la raíz cuadrada de 17.",
+        "start": 1445.96,
+        "end": 1458.96
+    },
+    {
+        "text": " Lo que está a la derecha de lo que ahora es asignación todo esto es una expresión.",
+        "start": 1460.96,
+        "end": 1468.96
+    },
+    {
+        "text": " Y que tiene un operador principal que es el más, que tiene dos operandos y dentro de cada operando que estamos haciendo, estamos llamando una función.",
+        "start": 1469.96,
+        "end": 1479.96
+    },
+    {
+        "text": " Tanto acá como acá.",
+        "start": 1479.96,
+        "end": 1481.96
+    },
+    {
+        "text": " Estas dos son funciones predefinidas, pero con las funciones nuestras las que vamos a escribir nosotros también las podemos llamar desde dentro de una expresión.",
+        "start": 1481.96,
+        "end": 1491.96
+    },
+    {
+        "text": " Por eso es que dice que las funciones se invocan dentro de una expresión.",
+        "start": 1492.96,
+        "end": 1496.96
+    },
+    {
+        "text": " ¿Qué va claro eso?",
+        "start": 1497.96,
+        "end": 1499.96
+    },
+    {
+        "text": " Funciones definidas por el programador se declaran en el programa luego de la declaración de variables.",
+        "start": 1501.96,
+        "end": 1508.96
+    },
+    {
+        "text": " Bueno, acá tenemos un error.",
+        "start": 1508.96,
+        "end": 1509.96
+    },
+    {
+        "text": " Las variables no se colocan acá, sino que se colocan acá arriba.",
+        "start": 1509.96,
+        "end": 1514.96
+    },
+    {
+        "text": " O sea que corregimos ahí.",
+        "start": 1514.96,
+        "end": 1516.96
+    },
+    {
+        "text": " Y en Pascal, primero van las variables y luego van los procedimientos y funciones.",
+        "start": 1517.96,
+        "end": 1529.96
+    },
+    {
+        "text": " Hay otros lenguajes donde el orden no es así.",
+        "start": 1529.96,
+        "end": 1531.96
+    },
+    {
+        "text": " Estaba pensando en el lenguaje C cuando dije esto.",
+        "start": 1531.96,
+        "end": 1535.96
+    },
+    {
+        "text": " En Pascal, primero las variables y luego van las, por ahora solo las funciones, luego vendan también los procedimientos.",
+        "start": 1535.96,
+        "end": 1542.96
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 1542.96,
+        "end": 1543.96
+    },
+    {
+        "text": " ¿Hasta acá?",
+        "start": 1543.96,
+        "end": 1545.96
+    },
+    {
+        "text": " Cualquier cosa me detiene, porque miren que todo esto tiene mucho concepto que tenemos que digerir bastante.",
+        "start": 1546.96,
+        "end": 1553.96
+    },
+    {
+        "text": " Sí.",
+        "start": 1554.96,
+        "end": 1555.96
+    },
+    {
+        "text": " Luego.",
+        "start": 1557.96,
+        "end": 1558.96
+    },
+    {
+        "text": " Aquí tenemos la sintaxis génerica de una función que no debería sorprendernos nada de lo que encontramos acá.",
+        "start": 1559.96,
+        "end": 1568.96
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 1568.96,
+        "end": 1569.96
+    },
+    {
+        "text": " Porque es como un programa en miniatura.",
+        "start": 1569.96,
+        "end": 1572.96
+    },
+    {
+        "text": " Lo único nuevo es que en el encabezado viene la palabra función.",
+        "start": 1572.96,
+        "end": 1576.96
+    },
+    {
+        "text": " A continuación se le pone un nombre.",
+        "start": 1576.96,
+        "end": 1579.96
+    },
+    {
+        "text": " Luego viene una lista de parámetros que vamos a ver en breve que se declaren muy parecido a las variables.",
+        "start": 1579.96,
+        "end": 1586.96
+    },
+    {
+        "text": " Y acá tenemos algo nuevo.",
+        "start": 1587.96,
+        "end": 1589.96
+    },
+    {
+        "text": " Se pone dos puntos y a continuación se pone un tipo que dijimos tenía que ser un tipo como.",
+        "start": 1589.96,
+        "end": 1598.96
+    },
+    {
+        "text": " Un tipo simple, el tipo del resultado de vuelto por la función.",
+        "start": 1598.96,
+        "end": 1604.96
+    },
+    {
+        "text": " Por ejemplo, mi función va a devolver un entero.",
+        "start": 1604.96,
+        "end": 1607.96
+    },
+    {
+        "text": " Entonces, acabamos a poner dos puntos sin t-shirt o mi función va a devolver un real.",
+        "start": 1607.96,
+        "end": 1612.96
+    },
+    {
+        "text": " Entonces, vamos a poner dos puntos real.",
+        "start": 1613.96,
+        "end": 1615.96
+    },
+    {
+        "text": " Por ejemplo, la función square y la función square root ambas son funciones que devuelven algo de que tipo.",
+        "start": 1617.96,
+        "end": 1624.96
+    },
+    {
+        "text": " De tipo real.",
+        "start": 1624.96,
+        "end": 1626.96
+    },
+    {
+        "text": " Seguramente, si yo fuera a las librerías predefinidas de Pascal y encontrar el encabezado de square,",
+        "start": 1626.96,
+        "end": 1634.96
+    },
+    {
+        "text": " seguramente el final va a decir dos puntos real y va a empezar con función y donde dice nombre que va a decir.",
+        "start": 1634.96,
+        "end": 1640.96
+    },
+    {
+        "text": " Va a decir square.",
+        "start": 1641.96,
+        "end": 1643.96
+    },
+    {
+        "text": " Esto indica que la función produce un resultado de este tipo.",
+        "start": 1645.96,
+        "end": 1652.96
+    },
+    {
+        "text": " Con lo cual, cuando yo llamo la función acá, le paso como dato de entrada un 25, le paso el 25 como parámetro",
+        "start": 1654.96,
+        "end": 1661.96
+    },
+    {
+        "text": " internamente hace un cálculo y lo que me devolvió este tipo real.",
+        "start": 1661.96,
+        "end": 1668.96
+    },
+    {
+        "text": " Lo mismo pasa con aquella.",
+        "start": 1670.96,
+        "end": 1672.96
+    },
+    {
+        "text": " Luego estamos sumando dos reales.",
+        "start": 1672.96,
+        "end": 1675.96
+    },
+    {
+        "text": " Es una expresión perfectamente vale y había encontrurido.",
+        "start": 1676.96,
+        "end": 1679.96
+    },
+    {
+        "text": " Y dentro de la función podemos tener constantes, tipos variables.",
+        "start": 1681.96,
+        "end": 1687.96
+    },
+    {
+        "text": " Podríamos incluso definirnos otros subprogramas locales a la función.",
+        "start": 1687.96,
+        "end": 1692.96
+    },
+    {
+        "text": " Después vamos a ver algún ejemplo de eso y por último las instrucciones.",
+        "start": 1692.96,
+        "end": 1697.96
+    },
+    {
+        "text": " Vamos a ver que las instrucciones que coloquemos el propósito final de ellas cual tiene que ser.",
+        "start": 1700.96,
+        "end": 1707.96
+    },
+    {
+        "text": " Calcular un resultado para devolver y a quien se lo voy a devolver.",
+        "start": 1710.96,
+        "end": 1716.96
+    },
+    {
+        "text": " A la expresión desde donde yo hacía llamado la función.",
+        "start": 1718.96,
+        "end": 1721.96
+    },
+    {
+        "text": " Que suavemos a ver un ratito como es que se hace.",
+        "start": 1723.96,
+        "end": 1725.96
+    },
+    {
+        "text": " Si.",
+        "start": 1725.96,
+        "end": 1726.96
+    },
+    {
+        "text": " Te va a dar un error de compilación de la misma manera que te ha un error de compilación cuando vos querés hacer una asignación entre tipos incompatibles.",
+        "start": 1731.96,
+        "end": 1738.96
+    },
+    {
+        "text": " Funcione exactamente igual.",
+        "start": 1739.96,
+        "end": 1740.96
+    },
+    {
+        "text": " Si.",
+        "start": 1743.96,
+        "end": 1744.96
+    },
+    {
+        "text": " Los parámetros vamos a ver que pueden ser de diferentes tipos.",
+        "start": 1746.96,
+        "end": 1749.96
+    },
+    {
+        "text": " Si, vamos a ver ejemplo de eso.",
+        "start": 1749.96,
+        "end": 1751.96
+    },
+    {
+        "text": " Si.",
+        "start": 1751.96,
+        "end": 1752.96
+    },
+    {
+        "text": " La función termina n y buena pregunta.",
+        "start": 1753.96,
+        "end": 1756.96
+    },
+    {
+        "text": " Que dice acá?",
+        "start": 1757.96,
+        "end": 1758.96
+    },
+    {
+        "text": " Punto y coma. Es decir.",
+        "start": 1759.96,
+        "end": 1761.96
+    },
+    {
+        "text": " Dentro de esta función yo voy a poner en punto y coma.",
+        "start": 1762.96,
+        "end": 1766.96
+    },
+    {
+        "text": " Al final del procedimiento lo vamos a ver que ponemos en y punto y coma.",
+        "start": 1767.96,
+        "end": 1771.96
+    },
+    {
+        "text": " El único n que lleva a punto sigue siendo el n del programa principal.",
+        "start": 1772.96,
+        "end": 1776.96
+    },
+    {
+        "text": " Está bien?",
+        "start": 1777.96,
+        "end": 1779.96
+    },
+    {
+        "text": " Si.",
+        "start": 1780.96,
+        "end": 1781.96
+    },
+    {
+        "text": " Día.",
+        "start": 1784.96,
+        "end": 1785.96
+    },
+    {
+        "text": " Y vamos a ver nuestra primera función no predefinida.",
+        "start": 1789.96,
+        "end": 1794.96
+    },
+    {
+        "text": " Es decir, una función que podríamos escribir nosotros dentro del programa.",
+        "start": 1796.96,
+        "end": 1801.96
+    },
+    {
+        "text": " Primero vamos a ver que esto cumple con la sintaxis generica de una función.",
+        "start": 1802.96,
+        "end": 1809.96
+    },
+    {
+        "text": " Funcione y el nombre es decir el identificador en este caso es potencia.",
+        "start": 1810.96,
+        "end": 1816.96
+    },
+    {
+        "text": " O sea que cuando yo invoque a la función voy a ser algo parecido a esto sólo que acabo y a poner potencia.",
+        "start": 1818.96,
+        "end": 1826.96
+    },
+    {
+        "text": " Si.",
+        "start": 1827.96,
+        "end": 1828.96
+    },
+    {
+        "text": " Y cuántos parámetros recibe esta función?",
+        "start": 1831.96,
+        "end": 1835.96
+    },
+    {
+        "text": " Dos.",
+        "start": 1836.96,
+        "end": 1837.96
+    },
+    {
+        "text": " El primero se llama base y es de tipo real la declaración de un parámetro es muy parecida a la declaración de una variable.",
+        "start": 1838.96,
+        "end": 1847.96
+    },
+    {
+        "text": " Se pone el nombre del parámetro, dos puntos y de qué tipo es.",
+        "start": 1847.96,
+        "end": 1851.96
+    },
+    {
+        "text": " Separados con comas si hubieran varios del mismo tipo, separados con punto y coma si son de tipos diferentes.",
+        "start": 1852.96,
+        "end": 1860.96
+    },
+    {
+        "text": " O sea la misma mecánica que operan la declaración de variables.",
+        "start": 1860.96,
+        "end": 1863.96
+    },
+    {
+        "text": " Lo que vamos a preguntar es puede ser de tipos diferentes, acá tenemos dos parámetros de tipos diferentes.",
+        "start": 1866.96,
+        "end": 1871.96
+    },
+    {
+        "text": " ¿A ver?",
+        "start": 1871.96,
+        "end": 1874.96
+    },
+    {
+        "text": " ¿Esto crea la parámetro?",
+        "start": 1875.96,
+        "end": 1878.96
+    },
+    {
+        "text": " No, vas a ponerle directamente el parámetro como dice acá por ejemplo a la camira.",
+        "start": 1879.96,
+        "end": 1884.96
+    },
+    {
+        "text": " Le pasas directamente el 25.",
+        "start": 1885.96,
+        "end": 1887.96
+    },
+    {
+        "text": " 25 coma y el otro.",
+        "start": 1888.96,
+        "end": 1890.96
+    },
+    {
+        "text": " O sea vamos a ver que cada parámetro que vos le pasas tiene que ser de un tipo compatible del parámetro que está en el encabezado.",
+        "start": 1892.96,
+        "end": 1898.96
+    },
+    {
+        "text": " Que eso ha venido de un ratito.",
+        "start": 1899.96,
+        "end": 1900.96
+    },
+    {
+        "text": " Punto y coma quiere decir que a continuación viene otro parámetro que va a ser el exponente.",
+        "start": 1901.96,
+        "end": 1907.96
+    },
+    {
+        "text": " Si, que el exponente es de tipo intéyer.",
+        "start": 1909.96,
+        "end": 1912.96
+    },
+    {
+        "text": " Y esta función devuelve algo de tipo real.",
+        "start": 1913.96,
+        "end": 1918.96
+    },
+    {
+        "text": " Yo podría desde el programa principal hacer esto.",
+        "start": 1918.96,
+        "end": 1922.96
+    },
+    {
+        "text": " Imagínense que tenemos declarado una variable llamada pot de tipo real.",
+        "start": 1923.96,
+        "end": 1928.96
+    },
+    {
+        "text": " A pot yo le voy a asignar el resultado de potencia.",
+        "start": 1929.96,
+        "end": 1934.96
+    },
+    {
+        "text": " Y le tengo que pasar en primer lugar algo de tipo real.",
+        "start": 1935.96,
+        "end": 1940.96
+    },
+    {
+        "text": " Por ejemplo 2.5 coma y el segundo parámetro tiene que ser de tipo intéyer.",
+        "start": 1941.96,
+        "end": 1949.96
+    },
+    {
+        "text": " Por ejemplo 3.",
+        "start": 1950.96,
+        "end": 1952.96
+    },
+    {
+        "text": " Punto y coma.",
+        "start": 1953.96,
+        "end": 1954.96
+    },
+    {
+        "text": " Esto es una invocación que nosotros podemos hacer a nuestra función desde el programa principal.",
+        "start": 1955.96,
+        "end": 1959.96
+    },
+    {
+        "text": " Si hay error de tipos te lo va a detectar la compilación de la misma manera que cuando es una asignación entre cosas que son de tipo incompatible.",
+        "start": 1962.96,
+        "end": 1970.96
+    },
+    {
+        "text": " Por ejemplo 2.5 el chequeo del compilador va a ser.",
+        "start": 1971.96,
+        "end": 1974.96
+    },
+    {
+        "text": " Esto tiene que ser compatible con el tipo real y efectivamente es de tipo real.",
+        "start": 1975.96,
+        "end": 1978.96
+    },
+    {
+        "text": " El segundo parámetro que es un 3 tiene que ser compatible con algo de tipo intéyer.",
+        "start": 1979.96,
+        "end": 1986.96
+    },
+    {
+        "text": " Y bueno el 3 es un valor de tipo intéyer.",
+        "start": 1986.96,
+        "end": 1988.96
+    },
+    {
+        "text": " Esas variables tienen que ser de tipos compatibles con los parámetros.",
+        "start": 1992.96,
+        "end": 1996.96
+    },
+    {
+        "text": " En realidad te lo voy a detectar la compilación.",
+        "start": 1999.96,
+        "end": 2001.96
+    },
+    {
+        "text": " Tengo ahí y tengo acá por ejemplo si yo a cante desde 3 le hubiera puesto el carácter A entre comillas simples.",
+        "start": 2002.96,
+        "end": 2008.96
+    },
+    {
+        "text": " Si yo en vez de esto, acá pongo esto otro.",
+        "start": 2012.96,
+        "end": 2015.96
+    },
+    {
+        "text": " ¿De qué tipo es esto?",
+        "start": 2016.96,
+        "end": 2017.96
+    },
+    {
+        "text": " Char.",
+        "start": 2018.96,
+        "end": 2019.96
+    },
+    {
+        "text": " La función espera como segundo parámetro algo de tipo intéyer.",
+        "start": 2020.96,
+        "end": 2023.96
+    },
+    {
+        "text": " Existe cohesión entre Char e intéyer?",
+        "start": 2024.96,
+        "end": 2026.96
+    },
+    {
+        "text": " No, te va a dar error de compilación.",
+        "start": 2027.96,
+        "end": 2028.96
+    },
+    {
+        "text": " De compilación.",
+        "start": 2029.96,
+        "end": 2031.96
+    },
+    {
+        "text": " El mismo problema que tenía cuando asinabas y había incompatibilidad de tipo,",
+        "start": 2032.96,
+        "end": 2037.96
+    },
+    {
+        "text": " este lo detectaba la compilación lo mismo pasa acá.",
+        "start": 2038.96,
+        "end": 2040.96
+    },
+    {
+        "text": " Pod es una variable del programa principal que está declarada acá y yo está llamada,",
+        "start": 2045.96,
+        "end": 2050.96
+    },
+    {
+        "text": " lo estoy haciendo desde acá.",
+        "start": 2050.96,
+        "end": 2051.96
+    },
+    {
+        "text": " No está dentro, no. La variable pot es una variable del programa principal.",
+        "start": 2052.96,
+        "end": 2058.96
+    },
+    {
+        "text": " Vamos a ver ahora que vos podes tener en bloques diferentes variables con el mismo nombre.",
+        "start": 2063.96,
+        "end": 2068.96
+    },
+    {
+        "text": " Esto tampoco le dije que pensemos en la función como una caja negra,",
+        "start": 2071.96,
+        "end": 2074.96
+    },
+    {
+        "text": " yo desde afuera no veo lo que pasa dentro de la función.",
+        "start": 2075.96,
+        "end": 2077.96
+    },
+    {
+        "text": " Los nombres internos que tengan las variables de la función al programa principal no le van a importar.",
+        "start": 2078.96,
+        "end": 2083.96
+    },
+    {
+        "text": " Es más, quizás dentro de la función escu...",
+        "start": 2086.96,
+        "end": 2089.96
+    },
+    {
+        "text": " Pero definida por Pascal, capaz que hay una variable llamada A.",
+        "start": 2090.96,
+        "end": 2093.96
+    },
+    {
+        "text": " Nosotros no tenemos manera de saberlo.",
+        "start": 2094.96,
+        "end": 2096.96
+    },
+    {
+        "text": " ¿Por qué? Porque la función opera como una caja negra.",
+        "start": 2096.96,
+        "end": 2098.96
+    },
+    {
+        "text": " Entonces, cuando yo desde el programa principal haga esta llamada, lo que va a ser Pascal va a ser 2,5,",
+        "start": 2100.96,
+        "end": 2104.96
+    },
+    {
+        "text": " se va a fijar, primer parámetro, allá lo va a llamar base.",
+        "start": 2104.96,
+        "end": 2109.96
+    },
+    {
+        "text": " O sea que haya base que valor va a tomar.",
+        "start": 2110.96,
+        "end": 2112.96
+    },
+    {
+        "text": " 2,5, el tipo este es compatible con aquello, sí.",
+        "start": 2113.96,
+        "end": 2116.96
+    },
+    {
+        "text": " Le estoy pasando un crescent segundo lugar, lo va a almacenar acá en exponente, que es de tipo int,",
+        "start": 2118.96,
+        "end": 2125.96
+    },
+    {
+        "text": " o sea que eso va a pasar la compilación y ponéndose va a ejecutar.",
+        "start": 2126.96,
+        "end": 2129.96
+    },
+    {
+        "text": " Eso en lo que se refiere a cómo invoco a la función desde el programa principal.",
+        "start": 2130.96,
+        "end": 2135.96
+    },
+    {
+        "text": " Ahora vamos a meternos dentro de la función.",
+        "start": 2139.96,
+        "end": 2141.96
+    },
+    {
+        "text": " Una cosa que vamos a ver es que los datos de entrada de una función,",
+        "start": 2144.96,
+        "end": 2148.96
+    },
+    {
+        "text": " nosotros siempre vamos a suponer que ya vienen cargados.",
+        "start": 2149.96,
+        "end": 2153.96
+    },
+    {
+        "text": " Vamos a ver después que se considera una mala práctica de programación",
+        "start": 2154.96,
+        "end": 2158.96
+    },
+    {
+        "text": " que la función lea por teclado los valores de la entrada.",
+        "start": 2159.96,
+        "end": 2162.96
+    },
+    {
+        "text": " Si bien el compilador lo va a permitir, yo podría dentro hacer un read on readline",
+        "start": 2164.96,
+        "end": 2169.96
+    },
+    {
+        "text": " y eso va a compilar, vamos a ver que no se considera una buena práctica en una función,",
+        "start": 2170.96,
+        "end": 2175.96
+    },
+    {
+        "text": " pedirle al usuario los valores de los datos de entrada.",
+        "start": 2176.96,
+        "end": 2178.96
+    },
+    {
+        "text": " Los valores de los datos de entrada ya vienen cargados y van a ser cargados cuando,",
+        "start": 2179.96,
+        "end": 2186.96
+    },
+    {
+        "text": " cuando luego se haga la invocación a la función.",
+        "start": 2187.96,
+        "end": 2190.96
+    },
+    {
+        "text": " Así que si se sienten tentados de leer por teclado dentro de una función,",
+        "start": 2192.96,
+        "end": 2197.96
+    },
+    {
+        "text": " evitenlo.",
+        "start": 2198.96,
+        "end": 2199.96
+    },
+    {
+        "text": " Va a compilar pero no es una buena práctica.",
+        "start": 2200.96,
+        "end": 2202.96
+    },
+    {
+        "text": " Siempre ustedes se tienen que imaginar que los parámetros de entrada ya vinieron cargados.",
+        "start": 2203.96,
+        "end": 2209.96
+    },
+    {
+        "text": " Hasta acá?",
+        "start": 2210.96,
+        "end": 2211.96
+    },
+    {
+        "text": " Sí.",
+        "start": 2212.96,
+        "end": 2213.96
+    },
+    {
+        "text": " Si, siempre tienen que poner, si que no se ha ido llamados,",
+        "start": 2215.96,
+        "end": 2218.96
+    },
+    {
+        "text": " si, si, con este, y te pusimos todos los...",
+        "start": 2219.96,
+        "end": 2221.96
+    },
+    {
+        "text": " Claro, la cantidad de parámetros que vos le pasás,",
+        "start": 2222.96,
+        "end": 2224.96
+    },
+    {
+        "text": " allá en la invocación, debe coincidir con la cantidad de parámetros del encabezado",
+        "start": 2225.96,
+        "end": 2229.96
+    },
+    {
+        "text": " y no se la mente coincidir, sino que sus tipos tienen que ser compatibles.",
+        "start": 2229.96,
+        "end": 2232.96
+    },
+    {
+        "text": " Si estas espera, primero un real y después un íntese,",
+        "start": 2234.96,
+        "end": 2236.96
+    },
+    {
+        "text": " cuando vos la invocas le pasás, primero un real y después un íntese.",
+        "start": 2237.96,
+        "end": 2239.96
+    },
+    {
+        "text": " Si pasadas un entero en primer lugar, ahí funciona bien también,",
+        "start": 2240.96,
+        "end": 2243.96
+    },
+    {
+        "text": " porque, porque de entero, a real había acorsión.",
+        "start": 2244.96,
+        "end": 2246.96
+    },
+    {
+        "text": " Sí?",
+        "start": 2248.96,
+        "end": 2249.96
+    },
+    {
+        "text": " Sí.",
+        "start": 2249.96,
+        "end": 2250.96
+    },
+    {
+        "text": " Por ejemplo, acá?",
+        "start": 2254.96,
+        "end": 2255.96
+    },
+    {
+        "text": " La variable x ya trae a un valor, le pasás la variable x que lo único que tiene que cumplir",
+        "start": 2256.96,
+        "end": 2262.96
+    },
+    {
+        "text": " es que tiene que ser el tipo compatible con él del cabezal.",
+        "start": 2263.96,
+        "end": 2264.96
+    },
+    {
+        "text": " En este caso suponemos que x es el tipo real.",
+        "start": 2265.96,
+        "end": 2266.96
+    },
+    {
+        "text": " O sea, cuando vos invocas a la función le puedes pasar un valor constante,",
+        "start": 2267.96,
+        "end": 2271.96
+    },
+    {
+        "text": " o le puedes pasar una variable.",
+        "start": 2272.96,
+        "end": 2273.96
+    },
+    {
+        "text": " Lo que el compilador se fijas que los tipos sean compatibles entre lo que están en el cabezal",
+        "start": 2274.96,
+        "end": 2277.96
+    },
+    {
+        "text": " y lo que estás pasando en la invocación.",
+        "start": 2278.96,
+        "end": 2279.96
+    },
+    {
+        "text": " ¿Lo van armando? ¿Se va construyendo la idea?",
+        "start": 2280.96,
+        "end": 2285.96
+    },
+    {
+        "text": " Bueno, nos metemos dentro del subprogram.",
+        "start": 2287.96,
+        "end": 2290.96
+    },
+    {
+        "text": " Precondición.",
+        "start": 2293.96,
+        "end": 2294.96
+    },
+    {
+        "text": " Me voy a detener ahí.",
+        "start": 2296.96,
+        "end": 2297.96
+    },
+    {
+        "text": " Eso que está en verde y qué cosa es.",
+        "start": 2298.96,
+        "end": 2300.96
+    },
+    {
+        "text": " Un comentario.",
+        "start": 2301.96,
+        "end": 2302.96
+    },
+    {
+        "text": " Resulta que existen funciones que no se pueden hacer.",
+        "start": 2304.96,
+        "end": 2308.96
+    },
+    {
+        "text": " Es que si se puede aplicar a cualquier dato de entrada posible.",
+        "start": 2309.96,
+        "end": 2312.96
+    },
+    {
+        "text": " Por ejemplo, miremos las funciones que arrúd.",
+        "start": 2313.96,
+        "end": 2315.96
+    },
+    {
+        "text": " Yo para calcular la raíz cuadrada de un número real, que tiene que cumplir el número real.",
+        "start": 2316.96,
+        "end": 2320.96
+    },
+    {
+        "text": " Tiene que ser mayor igual que cero.",
+        "start": 2321.96,
+        "end": 2323.96
+    },
+    {
+        "text": " Yo no le puedo pasar un valor negativo a la hacer la invocación de escuerrut.",
+        "start": 2324.96,
+        "end": 2328.96
+    },
+    {
+        "text": " Si yo le pasar a un valor negativo a escuerrut cuando le estoy invocando,",
+        "start": 2329.96,
+        "end": 2333.96
+    },
+    {
+        "text": " el problema salta en la compilación en la ejecución,",
+        "start": 2334.96,
+        "end": 2337.96
+    },
+    {
+        "text": " el programa se rompe en tiempo de ejecución.",
+        "start": 2338.96,
+        "end": 2340.96
+    },
+    {
+        "text": " Entonces, existen funciones a las que tú no les podés pasar cualquier valor de entrada,",
+        "start": 2343.96,
+        "end": 2348.96
+    },
+    {
+        "text": " porque si lo haces durante la ejecución,",
+        "start": 2349.96,
+        "end": 2352.96
+    },
+    {
+        "text": " vas a tener un comportamiento inesperado que puede significar que el programa se te rompió abruptamente",
+        "start": 2353.96,
+        "end": 2358.96
+    },
+    {
+        "text": " o puede significar que no se te rompió, pero que el resultado te dio papafritas.",
+        "start": 2359.96,
+        "end": 2363.96
+    },
+    {
+        "text": " Para nosotros cualquiera de esas dos cosas son igual de malas.",
+        "start": 2364.96,
+        "end": 2367.96
+    },
+    {
+        "text": " Por ejemplo, la función escuerrut dijimos antes de llamarla,",
+        "start": 2370.96,
+        "end": 2374.96
+    },
+    {
+        "text": " yo me tengo que asegurar de que lo que estoy pasando como x sea,",
+        "start": 2375.96,
+        "end": 2379.96
+    },
+    {
+        "text": " mayor igual que cero.",
+        "start": 2380.96,
+        "end": 2381.96
+    },
+    {
+        "text": " La función escuerrut tiene como precondición que antes de llamarla,",
+        "start": 2382.96,
+        "end": 2386.96
+    },
+    {
+        "text": " verifiquemos que el valor sea mayor igual que cero.",
+        "start": 2387.96,
+        "end": 2391.96
+    },
+    {
+        "text": " No quiere decir que todas las funciones tengan como precondición que sea mayor igual que cero,",
+        "start": 2393.96,
+        "end": 2397.96
+    },
+    {
+        "text": " depende de cada función, en esta función la precondición es que sea mayor igual que cero.",
+        "start": 2398.96,
+        "end": 2402.96
+    },
+    {
+        "text": " Decimos que escuerrut es lo que vamos a llamar una función parcial,",
+        "start": 2404.96,
+        "end": 2407.96
+    },
+    {
+        "text": " una función que no es aplicable a cualquier valor de entrada.",
+        "start": 2408.96,
+        "end": 2411.96
+    },
+    {
+        "text": " ¿Qué pasa con escuer?",
+        "start": 2412.96,
+        "end": 2413.96
+    },
+    {
+        "text": " Funciona para positivos, para cero, para negativos,",
+        "start": 2416.96,
+        "end": 2420.96
+    },
+    {
+        "text": " para negativos,",
+        "start": 2420.96,
+        "end": 2421.96
+    },
+    {
+        "text": " escuer es una función que no tiene precondición,",
+        "start": 2422.96,
+        "end": 2424.96
+    },
+    {
+        "text": " admite cualquier valor válido del dominio.",
+        "start": 2425.96,
+        "end": 2427.96
+    },
+    {
+        "text": " Entonces, toda función que sea aplicable a cualquier valor del dominio,",
+        "start": 2430.96,
+        "end": 2434.96
+    },
+    {
+        "text": " decimos que es una función total.",
+        "start": 2435.96,
+        "end": 2436.96
+    },
+    {
+        "text": " Esa función no tiene precondición,",
+        "start": 2438.96,
+        "end": 2440.96
+    },
+    {
+        "text": " cualquier valor que le pases la función es capaz de procesarlo.",
+        "start": 2441.96,
+        "end": 2444.96
+    },
+    {
+        "text": " Ahora, si la función es parcial,",
+        "start": 2445.96,
+        "end": 2447.96
+    },
+    {
+        "text": " vamos a ver que junto al cabezal le vamos a escribir,",
+        "start": 2447.96,
+        "end": 2452.96
+    },
+    {
+        "text": " cuando la encuentre de vuelta, ahí, junto al encabezado,",
+        "start": 2454.96,
+        "end": 2458.96
+    },
+    {
+        "text": " le vamos a poner un comentario aclarando lo que se debe controlar en forma previa",
+        "start": 2459.96,
+        "end": 2465.96
+    },
+    {
+        "text": " a invocar a la función.",
+        "start": 2466.96,
+        "end": 2467.96
+    },
+    {
+        "text": " Este comentario está dirigido aquí en lo.",
+        "start": 2472.96,
+        "end": 2474.96
+    },
+    {
+        "text": " El propio programador, para que cuando haga la invocación se acuerde de qué,",
+        "start": 2475.96,
+        "end": 2479.96
+    },
+    {
+        "text": " de chequear la precondición antes de llamar a la función,",
+        "start": 2480.96,
+        "end": 2483.96
+    },
+    {
+        "text": " la función no se hace responsable.",
+        "start": 2484.96,
+        "end": 2485.96
+    },
+    {
+        "text": " Una precondición es algo así como la letra chica de un contrato.",
+        "start": 2486.96,
+        "end": 2489.96
+    },
+    {
+        "text": " ¿Qué pasa con la letra chica de un contrato?",
+        "start": 2490.96,
+        "end": 2491.96
+    },
+    {
+        "text": " Yo te dice, mira, usted tiene que traer las c,",
+        "start": 2492.96,
+        "end": 2494.96
+    },
+    {
+        "text": " le tiene que traer dos copias autentificadas de su partida y nacimiento.",
+        "start": 2495.96,
+        "end": 2497.96
+    },
+    {
+        "text": " Y si no lo trae, yo el trámite no se lo pueda hacer,",
+        "start": 2498.96,
+        "end": 2500.96
+    },
+    {
+        "text": " o puede salir cualquier cosa, el trámite.",
+        "start": 2501.96,
+        "end": 2502.96
+    },
+    {
+        "text": " Bueno, acá pasa lo mismo.",
+        "start": 2503.96,
+        "end": 2504.96
+    },
+    {
+        "text": " Aca la precondición me está avisando que antes de llamar a la función,",
+        "start": 2505.96,
+        "end": 2508.96
+    },
+    {
+        "text": " yo tengo que asegurarme de haber chequeado esto.",
+        "start": 2509.96,
+        "end": 2511.96
+    },
+    {
+        "text": " Y si no lo hago, la función no se hace responsable del resultado.",
+        "start": 2512.96,
+        "end": 2516.96
+    },
+    {
+        "text": " Dicho de otra manera, ¿qué es lo que va a suponer la función potencia?",
+        "start": 2517.96,
+        "end": 2521.96
+    },
+    {
+        "text": " ¿Qué tanto la base como el exponente antes de llamar a la función,",
+        "start": 2522.96,
+        "end": 2527.96
+    },
+    {
+        "text": " fueron debidamente verificados?",
+        "start": 2528.96,
+        "end": 2529.96
+    },
+    {
+        "text": " Concretamente en esta función que se pide como precondición,",
+        "start": 2530.96,
+        "end": 2533.96
+    },
+    {
+        "text": " que la base sea distinto de cero,",
+        "start": 2534.96,
+        "end": 2536.96
+    },
+    {
+        "text": " o bien que el exponente sea distinto de cero,",
+        "start": 2537.96,
+        "end": 2539.96
+    },
+    {
+        "text": " o sea que uno de los dos, o mejor yo no pueden ser cero ambos,",
+        "start": 2540.96,
+        "end": 2543.96
+    },
+    {
+        "text": " porque el problema está en el cero al acero.",
+        "start": 2544.96,
+        "end": 2546.96
+    },
+    {
+        "text": " Sí.",
+        "start": 2547.96,
+        "end": 2548.96
+    },
+    {
+        "text": " Si yo,",
+        "start": 2552.96,
+        "end": 2553.96
+    },
+    {
+        "text": " no es una buena práctica.",
+        "start": 2555.96,
+        "end": 2556.96
+    },
+    {
+        "text": " ¿Por qué que pasas? Si vos lo chequeas adentro,",
+        "start": 2556.96,
+        "end": 2559.96
+    },
+    {
+        "text": " probablemente le tendrías que mandar un mensaje al usuario.",
+        "start": 2560.96,
+        "end": 2562.96
+    },
+    {
+        "text": " Y cuál dijimos que era la filosofía de la función que opere como una,",
+        "start": 2563.96,
+        "end": 2567.96
+    },
+    {
+        "text": " caja negra.",
+        "start": 2568.96,
+        "end": 2569.96
+    },
+    {
+        "text": " La idea vamos a ver es que las funciones no tengan ningún tipo de interacción con los usuarios.",
+        "start": 2570.96,
+        "end": 2574.96
+    },
+    {
+        "text": " Es decir, el compilador me va a permitir instrucciones como RID y RIDE dentro del código de la función.",
+        "start": 2576.96,
+        "end": 2582.96
+    },
+    {
+        "text": " Sí. No es una buena práctica de programación.",
+        "start": 2582.96,
+        "end": 2586.96
+    },
+    {
+        "text": " Por eso es la precondición.",
+        "start": 2587.96,
+        "end": 2588.96
+    },
+    {
+        "text": " Y ya habrán visto que de las cuestiones de estilo y de uso de cuadras estructuras nos preocupamos bastante.",
+        "start": 2590.96,
+        "end": 2595.96
+    },
+    {
+        "text": " Tenías preguntas? No?",
+        "start": 2596.96,
+        "end": 2598.96
+    },
+    {
+        "text": " ¿Acas? Sí.",
+        "start": 2599.96,
+        "end": 2600.96
+    },
+    {
+        "text": " Antes de llamar a la función. Por ejemplo, en el programa principal,",
+        "start": 2606.96,
+        "end": 2608.96
+    },
+    {
+        "text": " primero verificas que los valores de entrada cumplan con la precondición,",
+        "start": 2608.96,
+        "end": 2612.96
+    },
+    {
+        "text": " en caso de no cumplir le mandas un mensaje de error y si no, por ejemplo, le pondrás un L y en LLs,",
+        "start": 2613.96,
+        "end": 2618.96
+    },
+    {
+        "text": " ahora es la llamada de la función.",
+        "start": 2619.96,
+        "end": 2620.96
+    },
+    {
+        "text": " Seguimos.",
+        "start": 2624.96,
+        "end": 2625.96
+    },
+    {
+        "text": " Bueno, ya hablamos de la precondición que es responsabilidad del propio programador,",
+        "start": 2627.96,
+        "end": 2632.96
+    },
+    {
+        "text": " chequearla, por ejemplo, en el programa principal, o donde sea que se vaya a llamar a la función antes de efectivamente hacer la invocación.",
+        "start": 2632.96,
+        "end": 2640.96
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2641.96,
+        "end": 2642.96
+    },
+    {
+        "text": " Variables. Y estas variables viven únicamente donde, dentro de la función.",
+        "start": 2644.96,
+        "end": 2652.96
+    },
+    {
+        "text": " Vamos a ver que son variables lo que vamos a llamar variables locales a la función.",
+        "start": 2653.96,
+        "end": 2657.96
+    },
+    {
+        "text": " Si dentro de otra función separada o dentro de otro procedimiento,",
+        "start": 2658.96,
+        "end": 2663.96
+    },
+    {
+        "text": " hay variables con el mismo nombre, no nos va a importar.",
+        "start": 2664.96,
+        "end": 2666.96
+    },
+    {
+        "text": " O sea, los nombres de las variables locales a un subprograma son de S, subprograma,",
+        "start": 2667.96,
+        "end": 2672.96
+    },
+    {
+        "text": " y son totalmente independientes de las variables de otros subprogramas por más que se llaman igual.",
+        "start": 2673.96,
+        "end": 2677.96
+    },
+    {
+        "text": " ¿Tú puedes escribir los variables en lo cual dentro?",
+        "start": 2678.96,
+        "end": 2680.96
+    },
+    {
+        "text": " Sí, y vamos a ver la clase que viene cuando veamos al canse que pasa con eso.",
+        "start": 2681.96,
+        "end": 2684.96
+    },
+    {
+        "text": " En realidad te va a tomar la más cercana.",
+        "start": 2685.96,
+        "end": 2687.96
+    },
+    {
+        "text": " En general, por un tema declaridad no, pero si lo manejas bien, puede llegar a andar bien.",
+        "start": 2690.96,
+        "end": 2695.96
+    },
+    {
+        "text": " De momento, dentro de la función potencia tenemos tres variables.",
+        "start": 2697.96,
+        "end": 2701.96
+    },
+    {
+        "text": " Una variable pot que le hago de usar internamente para ir acumulando el resultado, un contador que lo vamos a usar como variable de control de un four,",
+        "start": 2702.96,
+        "end": 2710.96
+    },
+    {
+        "text": " y una variable buliana para darle vuelta al signo en caso de que venga negativo.",
+        "start": 2711.96,
+        "end": 2716.96
+    },
+    {
+        "text": " Obsarven que desde el begin hasta el end, qué tipo de instrucción no está presente.",
+        "start": 2720.96,
+        "end": 2725.96
+    },
+    {
+        "text": " No hay nada de read ni readline y nada de write ni writeline.",
+        "start": 2726.96,
+        "end": 2730.96
+    },
+    {
+        "text": " No es una buena práctica incluir instrucciones de entrada salida dentro de una función.",
+        "start": 2731.96,
+        "end": 2736.96
+    },
+    {
+        "text": " Compila, pero elegimos no hacerlo.",
+        "start": 2737.96,
+        "end": 2739.96
+    },
+    {
+        "text": " Bueno, fuera de eso cualquier instrucción, ya sea una instrucción simple o una instrucción compuesta,",
+        "start": 2742.96,
+        "end": 2751.96
+    },
+    {
+        "text": " es admisible dentro del bloque de la función.",
+        "start": 2752.96,
+        "end": 2755.96
+    },
+    {
+        "text": " Por ejemplo, empezamos haciendo esto en la variable negativo, le asignamos el resultado de esta expresión con pila, esta asignación,",
+        "start": 2758.96,
+        "end": 2765.96
+    },
+    {
+        "text": " la variable negativa es de tipo buliana, o sea que a una variable de tipo buliana yo le debería poder asignar una expresión de tipo buliana.",
+        "start": 2767.96,
+        "end": 2778.96
+    },
+    {
+        "text": " Y esto que está acá que pasa, es una expresión de tipo buliana, porque tiene un operador relacional,",
+        "start": 2780.96,
+        "end": 2786.96
+    },
+    {
+        "text": " si el valor del exponente efectivamente es menor que cero, el resultado de esta comparación que va a dar.",
+        "start": 2787.96,
+        "end": 2793.96
+    },
+    {
+        "text": " Trú y se va a guardar trú en negativo, bueno, en otro caso, folos.",
+        "start": 2794.96,
+        "end": 2798.96
+    },
+    {
+        "text": " Entonces, como la variable es de tipo buliana y tenemos una expresión que da como resultado un valor de tipo buliana,",
+        "start": 2799.96,
+        "end": 2805.96
+    },
+    {
+        "text": " esa asignación compilas sin problemas.",
+        "start": 2806.96,
+        "end": 2808.96
+    },
+    {
+        "text": " Bien, en la siguiente asignación que estamos haciendo, ¿qué era esto?",
+        "start": 2811.96,
+        "end": 2816.96
+    },
+    {
+        "text": " Estamos llamando a una función predefinida, la función que calcula el valor absoluto de quien del exponente, porque el exponente podría ser negativo también.",
+        "start": 2816.96,
+        "end": 2826.96
+    },
+    {
+        "text": " Y el resultado lo guarda en la variable exponente.",
+        "start": 2828.96,
+        "end": 2830.96
+    },
+    {
+        "text": " Bueno, y acá estamos prontos para empezar con el cálculo de la potencia.",
+        "start": 2835.96,
+        "end": 2839.96
+    },
+    {
+        "text": " Si yo quiero hacer dos al a cinco, por ejemplo, quiero hacer dos por dos por dos por dos cinco veces,",
+        "start": 2840.96,
+        "end": 2845.96
+    },
+    {
+        "text": " se donde empiezo, se donde termino, bueno, la estructura que corresponde es el for, esta altura, creo que eso es lo tenemos bastante claro.",
+        "start": 2846.96,
+        "end": 2854.96
+    },
+    {
+        "text": " Nuestra vieja quería instrucción de acumulación, como me doy cuenta que es una instrucción de acumulación,",
+        "start": 2856.96,
+        "end": 2861.96
+    },
+    {
+        "text": " la misma variable está al izquierdo y la derecha.",
+        "start": 2863.96,
+        "end": 2865.96
+    },
+    {
+        "text": " Entonces, estamos calculando el resultado porque el propósito de la función de nuevo cual es,",
+        "start": 2866.96,
+        "end": 2873.96
+    },
+    {
+        "text": " producir un resultado que luego debe salir de la función y usarse desde donde se haya llamado la función.",
+        "start": 2875.96,
+        "end": 2884.96
+    },
+    {
+        "text": " El valor que la función produzca va a terminar guardado en donde, en la variable pot del programa principal.",
+        "start": 2885.96,
+        "end": 2893.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2896.96,
+        "end": 2898.96
+    },
+    {
+        "text": " Bueno, ¿y qué hacemos al final?",
+        "start": 2900.96,
+        "end": 2901.96
+    },
+    {
+        "text": " Bueno, resolvamos el temita del signo si es negativo, por ejemplo, estamos queriendo hacer 3 al a menos 2,",
+        "start": 2904.96,
+        "end": 2911.96
+    },
+    {
+        "text": " 3 al a menos 2 es lo mismo que hacer 1 dividido 3 al a 2.",
+        "start": 2912.96,
+        "end": 2916.96
+    },
+    {
+        "text": " Bueno, hacemos 1 dividido pot y, si no, directamente pot es el resultado.",
+        "start": 2918.96,
+        "end": 2923.96
+    },
+    {
+        "text": " Hasta ahí.",
+        "start": 2926.96,
+        "end": 2927.96
+    },
+    {
+        "text": " Bueno, y una cosa muy importante, ¿cómo hace la función para devolver el resultado hacia el programa que la invoco?",
+        "start": 2928.96,
+        "end": 2938.96
+    },
+    {
+        "text": " Se hace de la siguiente manera, presten mucha atención. ¿Cómo se llama la función?",
+        "start": 2939.96,
+        "end": 2944.96
+    },
+    {
+        "text": " Potencia. Potencia es una función, no es una variable.",
+        "start": 2946.96,
+        "end": 2952.96
+    },
+    {
+        "text": " Tenemos que tener claro que potencia es una función.",
+        "start": 2953.96,
+        "end": 2956.96
+    },
+    {
+        "text": " Sin embargo, si andamos medio de extraídos y miramos esta asignación o esta asignación,",
+        "start": 2957.96,
+        "end": 2962.96
+    },
+    {
+        "text": " lo primero que pensamos que es, que es una variable, no.",
+        "start": 2963.96,
+        "end": 2966.96
+    },
+    {
+        "text": " Potencia no es una variable, potencia es una función.",
+        "start": 2967.96,
+        "end": 2971.96
+    },
+    {
+        "text": " Esta asignación está diciendo, el resultado final que debe devolver la función,",
+        "start": 2971.96,
+        "end": 2979.96
+    },
+    {
+        "text": " es el que está dado por esta expresión de acá.",
+        "start": 2980.96,
+        "end": 2983.96
+    },
+    {
+        "text": " Parece una asignación, pero este no es el nombre de una variable.",
+        "start": 2985.96,
+        "end": 2989.96
+    },
+    {
+        "text": " Mucho ojo con eso.",
+        "start": 2990.96,
+        "end": 2991.96
+    },
+    {
+        "text": " Esta instrucción en la cual usamos el nombre de la función como si fuera el nombre de una variable,",
+        "start": 2993.96,
+        "end": 2999.96
+    },
+    {
+        "text": " debemos hacerlo al final de la función con qué propósito.",
+        "start": 2999.96,
+        "end": 3004.96
+    },
+    {
+        "text": " Devolver el resultado hacia quien haya hecho la invocación.",
+        "start": 3006.96,
+        "end": 3011.96
+    },
+    {
+        "text": " Cuando yo hago esto, lo que va a pasar es que se va a calcular uno dividido pot",
+        "start": 3012.96,
+        "end": 3017.96
+    },
+    {
+        "text": " y el resultado de esta expresión no se va a guardar en la variable potencia.",
+        "start": 3018.96,
+        "end": 3022.96
+    },
+    {
+        "text": " Porque potencia no es una variable, sino que a la serie está suerte de asignación,",
+        "start": 3023.96,
+        "end": 3029.96
+    },
+    {
+        "text": " el resultado es como que sale volando y va a venir a parar a donde.",
+        "start": 3030.96,
+        "end": 3033.96
+    },
+    {
+        "text": " Acá, a la variable del programa principal, donde estamos guardando el resultado de la invocación.",
+        "start": 3034.96,
+        "end": 3039.96
+    },
+    {
+        "text": " Tanto si es negativo como si es positivo, acá es uno sobre pot, acá es directamente pot,",
+        "start": 3042.96,
+        "end": 3047.96
+    },
+    {
+        "text": " pero en cualquiera de las dos, esa instrucción sirve para que el resultado calculado por la función",
+        "start": 3047.96,
+        "end": 3054.96
+    },
+    {
+        "text": " sea de alguna manera expulsado, salga volando y termine siendo utilizado",
+        "start": 3055.96,
+        "end": 3063.96
+    },
+    {
+        "text": " en la expresión desde donde se llamó a la función.",
+        "start": 3064.96,
+        "end": 3067.96
+    },
+    {
+        "text": " ¿Se entendió eso?",
+        "start": 3069.96,
+        "end": 3070.96
+    },
+    {
+        "text": " Claro, no.",
+        "start": 3071.96,
+        "end": 3074.96
+    },
+    {
+        "text": " O sea, el nombre de la función para que no perdí, vamos abajo, acá.",
+        "start": 3074.96,
+        "end": 3081.96
+    },
+    {
+        "text": " El nombre de la función pues lo va a usar al final de la función para devolver el resultado",
+        "start": 3082.96,
+        "end": 3089.96
+    },
+    {
+        "text": " hacia el mundo exterior, digamos.",
+        "start": 3090.96,
+        "end": 3091.96
+    },
+    {
+        "text": " ¿Dónde el mundo exterior es el lugar desde donde la función fue invocada?",
+        "start": 3092.96,
+        "end": 3096.96
+    },
+    {
+        "text": " Una vez que un recibo agregó la función terminó de ejecutarse y la ejecución con dinuaca.",
+        "start": 3097.96,
+        "end": 3103.96
+    },
+    {
+        "text": " Vos imaginate que tenés este programa.",
+        "start": 3104.96,
+        "end": 3106.96
+    },
+    {
+        "text": " La ejecución de todo el programa donde va a empezar, va a empezar acá,",
+        "start": 3107.96,
+        "end": 3111.96
+    },
+    {
+        "text": " en el viguín del programa principal, voy a empezar línea a línea.",
+        "start": 3112.96,
+        "end": 3115.96
+    },
+    {
+        "text": " Cuando llego acá, la ejecución pega un salto, viene a la función,",
+        "start": 3116.96,
+        "end": 3121.96
+    },
+    {
+        "text": " se ejecuta el cuerpo de la función y cuando vos devolves al resultado,",
+        "start": 3121.96,
+        "end": 3126.96
+    },
+    {
+        "text": " es como que la ejecución pega otro salto y vuelve al programa principal a la misma línea",
+        "start": 3127.96,
+        "end": 3132.96
+    },
+    {
+        "text": " desde donde habías hecho la llamada.",
+        "start": 3133.96,
+        "end": 3134.96
+    },
+    {
+        "text": " Una vez que la función termina, la función finalizó su propósito y la ejecución se retoma",
+        "start": 3137.96,
+        "end": 3142.96
+    },
+    {
+        "text": " en el programa principal. O sea, pues empezás en el programa principal, 1, 2, 3, 4 instrucciones.",
+        "start": 3143.96,
+        "end": 3146.96
+    },
+    {
+        "text": " Bien en la llamada de la función, es como que el programa principal queda en espera,",
+        "start": 3147.96,
+        "end": 3150.96
+    },
+    {
+        "text": " la ejecución base a la función se ejecuta en las instrucciones de la función y cuando la función",
+        "start": 3151.96,
+        "end": 3156.96
+    },
+    {
+        "text": " produce el resultado termina, finalizó su función, vuelve al programa principal y se retoma a partir de ahí.",
+        "start": 3157.96,
+        "end": 3163.96
+    },
+    {
+        "text": " Está bien? ¿Se va entendiendo?",
+        "start": 3166.96,
+        "end": 3169.96
+    },
+    {
+        "text": " Entonces, cuidado con eso, estas últimas 2 instrucciones no son las ignaciones porque potencia no es una variable,",
+        "start": 3170.96,
+        "end": 3178.96
+    },
+    {
+        "text": " sino que son instrucciones que sirven para que la función devuelva el resultado que calculó hacia el programa que la haya invocado.",
+        "start": 3179.96,
+        "end": 3189.96
+    },
+    {
+        "text": " Si? ¿Se va entendiendo?",
+        "start": 3190.96,
+        "end": 3191.96
+    },
+    {
+        "text": " Bueno, vamos a formalizar un poco todo esto. Vamos a hablar de parámetros nominales y parámetros efectivos.",
+        "start": 3197.96,
+        "end": 3213.96
+    },
+    {
+        "text": " Los parámetros nominales son los nombres que aparecen en el engabesado de la función.",
+        "start": 3214.96,
+        "end": 3222.96
+    },
+    {
+        "text": " Base decimos que es un parámetro nominal, exponente decimos que es otro parámetro nominal.",
+        "start": 3223.96,
+        "end": 3230.96
+    },
+    {
+        "text": " En los parámetros nominales, es donde van a quedar cargados los valores de entrada que reciba la función y dentro de la función,",
+        "start": 3231.96,
+        "end": 3241.96
+    },
+    {
+        "text": " se los va a conocer bajo el nombre base y el nombre exponente. Fíjense que en el código de la función que tenemos acá,",
+        "start": 3241.96,
+        "end": 3249.96
+    },
+    {
+        "text": " en todo momento yo hablo de exponente y hablo de base.",
+        "start": 3250.96,
+        "end": 3253.96
+    },
+    {
+        "text": " En ningún momento yo hice mención a los valores concretos de exponente y de base, porque qué dijimos que asunimos que tanto la base como el exponente que les pasaba.",
+        "start": 3254.96,
+        "end": 3264.96
+    },
+    {
+        "text": " Ya venían cargados con valores. Por eso se llaman parámetros nominales.",
+        "start": 3264.96,
+        "end": 3270.96
+    },
+    {
+        "text": " Los parámetros efectivos son las expresiones que aparecen en la invocación de la función. Volvamos acá este ejemplo.",
+        "start": 3276.96,
+        "end": 3283.96
+    },
+    {
+        "text": " Dos coma cinco y tres son los parámetros efectivos. Son los parámetros concretos que se le pasan a la función al momento de llamarla.",
+        "start": 3283.96,
+        "end": 3294.96
+    },
+    {
+        "text": " Estos dos valores luego son cargados en los parámetros nominales.",
+        "start": 3296.96,
+        "end": 3302.96
+    },
+    {
+        "text": " O sea que en esencia los nominales son los que están en el cabezal en la declaración.",
+        "start": 3303.96,
+        "end": 3308.96
+    },
+    {
+        "text": " Los efectivos son los parámetros concretos que yo le paso en la invocación.",
+        "start": 3308.96,
+        "end": 3313.96
+    },
+    {
+        "text": " Que pueden ser valores constantes, pueden ser variables o incluso vamos a ver que pueden ser expresiones.",
+        "start": 3314.96,
+        "end": 3321.96
+    },
+    {
+        "text": " Lo que el compilador a verificar es que sean de tipos compatibles con los que aparecen en el encabezado.",
+        "start": 3322.96,
+        "end": 3328.96
+    },
+    {
+        "text": " Y que además sean la misma cantidad de la función potencia esperados para metros, uno de los tipos real y otro de tipos inteller.",
+        "start": 3329.96,
+        "end": 3334.96
+    },
+    {
+        "text": " Entonces cuando yo le haga la invocación aquella, le tengo que pasar algo que sea compatible con real y algo que sea compatible con inteller.",
+        "start": 3335.96,
+        "end": 3341.96
+    },
+    {
+        "text": " Yo puedo hacer aquella invocación pero también puedo hacer esta. Imaginemos que P es una variable que tiene el valor de P.",
+        "start": 3346.96,
+        "end": 3353.96
+    },
+    {
+        "text": " Bueno, esto es una variable de que tipo real coincide con el primer parámetro que es de tipo real.",
+        "start": 3354.96,
+        "end": 3363.96
+    },
+    {
+        "text": " El valor literal 23 es un valor constante de tipo inteller coincide con el segundo parámetro.",
+        "start": 3364.96,
+        "end": 3370.96
+    },
+    {
+        "text": " En aquel ejemplo los dos valores eran constantes.",
+        "start": 3371.96,
+        "end": 3374.96
+    },
+    {
+        "text": " Acá le pasamos primero una variable después otra constante pero pascala en miite ambas invocaciones porque los tipos son compatibles tanto allá como acá.",
+        "start": 3375.96,
+        "end": 3384.96
+    },
+    {
+        "text": " Bien, yo puedo hacer incluso esto otro. Vamos a razonarlo.",
+        "start": 3388.96,
+        "end": 3392.96
+    },
+    {
+        "text": " Antes de la coma viene el primer parámetro efectivo. Debería ser algo de tipo real.",
+        "start": 3394.96,
+        "end": 3401.96
+    },
+    {
+        "text": " Analicemos esto que está acá dos por P por escuer de radio. ¿Qué pasa con el resultado de esta expresión?",
+        "start": 3402.96,
+        "end": 3409.96
+    },
+    {
+        "text": " Es real. Supongamos que P y radio son de tipo real. Suponiendo que P y radio son de tipo real, el resultado de esta expresión me da un real.",
+        "start": 3411.96,
+        "end": 3419.96
+    },
+    {
+        "text": " El resultado de esta expresión es cargado en donde? En base.",
+        "start": 3421.96,
+        "end": 3425.96
+    },
+    {
+        "text": " O sea que acá estamos pasandole una expresión de tipo real como primer parámetro efectivo.",
+        "start": 3426.96,
+        "end": 3432.96
+    },
+    {
+        "text": " N más 2. Vamos a suponar que N es de tipo inteller. N más 2 es una expresión de tipo inteller.",
+        "start": 3434.96,
+        "end": 3443.96
+    },
+    {
+        "text": " El resultado de esa expresión va a ser cargado en donde? En exponente.",
+        "start": 3444.96,
+        "end": 3447.96
+    },
+    {
+        "text": " O sea que para resumir los parámetros nominales son los que se declaran en el encabezado y vimos que la declaración se parece mucho a la declaración de las variables.",
+        "start": 3448.96,
+        "end": 3459.96
+    },
+    {
+        "text": " Se le llama parámetros, no se le llama variables. O sea llamamos variables a aquellos identificadores que están declarados bajo que sección.",
+        "start": 3460.96,
+        "end": 3468.96
+    },
+    {
+        "text": " Bajo la sección va a aquellos identificadores que están declarados dentro de los parámetros y de la función el nombre que se le da es parámetros nominales.",
+        "start": 3469.96,
+        "end": 3478.96
+    },
+    {
+        "text": " Los parámetros efectivos son los parámetros concretos que se le pasan a la función al momento de invocarla. ¿Qué pueden ser valores constantes? ¿Pueden ser variables?",
+        "start": 3481.96,
+        "end": 3494.96
+    },
+    {
+        "text": " ¿O pueden ser expresiones siempre y cuando pase que cosa?",
+        "start": 3495.96,
+        "end": 3500.96
+    },
+    {
+        "text": " Se han de tipo compatible con el del cabezal. Ya sea del mismo tipo o viendo un tipo que pueda haber correcido en inclícita.",
+        "start": 3502.96,
+        "end": 3508.96
+    },
+    {
+        "text": " ¿Se van tendiendo? Para cada parámetro el tipo del parámetro nominal y el tipo del parámetro efectivo deben ser compatibles.",
+        "start": 3512.96,
+        "end": 3521.96
+    },
+    {
+        "text": " De hecho, es el mismo tipo de chequeo que pascalase entre asignación o sea en una asignación. Verifica que lo que está a la derecha de la operadora asignación sea compatible con lo que está en la izquierda.",
+        "start": 3522.96,
+        "end": 3535.96
+    },
+    {
+        "text": " Bueno, acaba de verificar que toda esta expresión sea de tipo compatible con real y que toda esta sea de tipo compatible con instellar.",
+        "start": 3536.96,
+        "end": 3543.96
+    },
+    {
+        "text": " ¿A bien? ¿Más preguntas esto?",
+        "start": 3544.96,
+        "end": 3550.96
+    },
+    {
+        "text": " ¿Esta es la primera potencia de un número?",
+        "start": 3551.96,
+        "end": 3554.96
+    },
+    {
+        "text": " Bueno, imagínense que acá en la sección vigínena del programa principal, yo quiero desplegar las 10 primeras potencias de un número.",
+        "start": 3557.96,
+        "end": 3569.96
+    },
+    {
+        "text": " Me piden haga un programa que despliegue las primeras 10 potencias de un valor ingresado por el usuario.",
+        "start": 3570.96,
+        "end": 3580.96
+    },
+    {
+        "text": " Leemos el valor, hacemos un forque va desde 1 hasta 10 y le mostramos en un formato agradable para la vista del usuario que cosa.",
+        "start": 3581.96,
+        "end": 3592.96
+    },
+    {
+        "text": " La base con precisión 6.2, el chiringbolito que representaría el elevado A, el exponente con 2 cifras de precisión, el igual y acá que estamos haciendo.",
+        "start": 3593.96,
+        "end": 3608.96
+    },
+    {
+        "text": " Jamando a la función potencia, pasándole la base y el valor de í como exponente y lo que devuelve como resultado que dijimos este tipo real con 10 cifras en total y 2 de precisión decimal.",
+        "start": 3609.96,
+        "end": 3627.96
+    },
+    {
+        "text": " Entonces, la primera vez que entro al for, vamos a imaginarnos que base vale no sé 3.",
+        "start": 3628.96,
+        "end": 3634.96
+    },
+    {
+        "text": " Bueno, esto va a mostrar 3 elevado a la 1.",
+        "start": 3634.96,
+        "end": 3639.96
+    },
+    {
+        "text": " Luego cuando entremos de vuelta con i valiendo 2, esto va a mostrar 13 elevado a la 2.",
+        "start": 3639.96,
+        "end": 3646.96
+    },
+    {
+        "text": " Luego cuando entremos de vuelta con i valiendo 3, esto va a mostrar 13 elevado a la 3.",
+        "start": 3646.96,
+        "end": 3651.96
+    },
+    {
+        "text": " Tenemos acá un ejemplo de código que perfectamente podría acá dentro que está llamando 10 veces a la función.",
+        "start": 3651.96,
+        "end": 3660.96
+    },
+    {
+        "text": " La función fue reutilizada 10 veces dentro del programa principal.",
+        "start": 3660.96,
+        "end": 3665.96
+    },
+    {
+        "text": " Entonces, cabemos en acción lo que son las ventajas de las funciones.",
+        "start": 3665.96,
+        "end": 3671.96
+    },
+    {
+        "text": " No solamente de las funciones, los procedimientos también tienen la ventaja de la reutilización.",
+        "start": 3671.96,
+        "end": 3676.96
+    },
+    {
+        "text": " ¿Va quedando?",
+        "start": 3677.96,
+        "end": 3679.96
+    },
+    {
+        "text": " Y cuidado con el nombre de la función. No es una, no es una variable.",
+        "start": 3685.96,
+        "end": 3691.96
+    },
+    {
+        "text": " Se utiliza únicamente para especificar el valor que retorna la función a la vista parece una variable a la cual le estamos asignando un valor.",
+        "start": 3691.96,
+        "end": 3703.96
+    },
+    {
+        "text": " No es una variable, sino que el resultado que entre comillas le estamos asignando, donde va a parar.",
+        "start": 3703.96,
+        "end": 3710.96
+    },
+    {
+        "text": " A la expresión desde donde se invocó la función.",
+        "start": 3710.96,
+        "end": 3716.96
+    },
+    {
+        "text": " Por ejemplo, allá, a la variable pot.",
+        "start": 3716.96,
+        "end": 3720.96
+    },
+    {
+        "text": " Entonces, cuando hacemos una instrucción de este estilo, si ponemos el nombre de la función y el operador de asignación,",
+        "start": 3720.96,
+        "end": 3730.96
+    },
+    {
+        "text": " el valor que vamos a retornar o el resultado de la expresión que pongamos acá no se almacena en una variable llamada potencia.",
+        "start": 3730.96,
+        "end": 3740.96
+    },
+    {
+        "text": " Si no que es algo así como que sale catapultado y va a parar allá al lugar desde donde se hizo la invocación a la función.",
+        "start": 3740.96,
+        "end": 3750.96
+    },
+    {
+        "text": " Es un error muy común confundirse y usar repetidamente el nombre de la función como se fueron variable. No, ojo con eso.",
+        "start": 3751.96,
+        "end": 3761.96
+    },
+    {
+        "text": " El nombre de la función únicamente para devolver el resultado y preferentemente en que parte de la función.",
+        "start": 3761.96,
+        "end": 3770.96
+    },
+    {
+        "text": " Al final, es más, acá hay puntos suspensivos, pero en realidad cuál sería la idea que después de esta línea que haya, nada.",
+        "start": 3770.96,
+        "end": 3779.96
+    },
+    {
+        "text": " Lo último que debería ser la función es retornar el resultado.",
+        "start": 3779.96,
+        "end": 3784.96
+    },
+    {
+        "text": " En siquiera tendría sentido meter código acá, porque al momento de la ejecución pascala se lo siguiente, cuando se encontró con esta instrucción que hizo, cortó y se fue, devolvió el resultado y se lo sentó salió volando.",
+        "start": 3784.96,
+        "end": 3797.96
+    },
+    {
+        "text": " Y lo que había después, no se llevó a ejecutar por suerte, si no recuerdo mal, frípas calte y lo avisa como guarly.",
+        "start": 3797.96,
+        "end": 3805.96
+    },
+    {
+        "text": " O incluso algún convilar sofisticado te lo podería como un error, te voy a decir, no mirá. No puedes poner código después de que la función devolvió su valor.",
+        "start": 3805.96,
+        "end": 3813.96
+    },
+    {
+        "text": " Subo resultado.",
+        "start": 3813.96,
+        "end": 3816.96
+    },
+    {
+        "text": " Esto es incorrecto.",
+        "start": 3817.96,
+        "end": 3821.96
+    },
+    {
+        "text": " Acá podríamos saber que rey usar potencia para ir haciendo la acumulación, pero esto no funciona ni siquiera compila de hecho, porque potencia no es una variable.",
+        "start": 3821.96,
+        "end": 3835.96
+    },
+    {
+        "text": " Así que si ustedes quieren definir una variable para ir preparando el resultado está buenísimo y de hecho haganlo.",
+        "start": 3835.96,
+        "end": 3845.96
+    },
+    {
+        "text": " Pero que no sea el nombre de la función, el nombre de la función no es una variable, nosotros acá, en el ejemplo anterior, ¿qué variable definimos para ir acumulando el resultado?",
+        "start": 3846.96,
+        "end": 3856.96
+    },
+    {
+        "text": " Pot. Y al final usamos pot para devolver el resultado final.",
+        "start": 3856.96,
+        "end": 3863.96
+    },
+    {
+        "text": " O sea que es una buena práctica definirte una variable en la cual tú vas a preparando el resultado que quieres devolver.",
+        "start": 3863.96,
+        "end": 3871.96
+    },
+    {
+        "text": " Al final usar el nombre de esa variable a la derecha del operador de asignación cuando el izquierda lo que aparece sea el nombre de la función.",
+        "start": 3871.96,
+        "end": 3882.96
+    },
+    {
+        "text": " Sí.",
+        "start": 3882.96,
+        "end": 3885.96
+    },
+    {
+        "text": " ¿Vos dice si podés llamar a otra función?",
+        "start": 3891.96,
+        "end": 3894.96
+    },
+    {
+        "text": " No hay el nombre del programa, no.",
+        "start": 3895.96,
+        "end": 3899.96
+    },
+    {
+        "text": " El nombre del programa de hecho creo recordar que no hay ninguna situación donde hagamos referencia al nombre del programa dentro del código.",
+        "start": 3899.96,
+        "end": 3908.96
+    },
+    {
+        "text": " Si podés llamar a otra función, de hecho nosotros acá lo hacemos dentro de la función potencia estamos llamando a la función abs, que es predefinida, pero es una función al final.",
+        "start": 3908.96,
+        "end": 3918.96
+    },
+    {
+        "text": " ¿Predefinida o no?",
+        "start": 3919.96,
+        "end": 3921.96
+    },
+    {
+        "text": " Predefinida o nuestra siempre que esté arriba.",
+        "start": 3921.96,
+        "end": 3925.96
+    },
+    {
+        "text": " ¿Se entendió funciones?",
+        "start": 3925.96,
+        "end": 3930.96
+    },
+    {
+        "text": " Imagínense todo el juego que le podemos sacar a esto, tiene un poder imponente la función y vamos a ver que el procedimiento también.",
+        "start": 3930.96,
+        "end": 3939.96
+    },
+    {
+        "text": " Bueno, más ejemplos de funciones.",
+        "start": 3939.96,
+        "end": 3945.96
+    },
+    {
+        "text": " Por ejemplo, esta.",
+        "start": 3946.96,
+        "end": 3948.96
+    },
+    {
+        "text": " Digimos que lo que devuelve una función debe ser de un tipo que sea simple.",
+        "start": 3948.96,
+        "end": 3956.96
+    },
+    {
+        "text": " Por ejemplo, William.",
+        "start": 3956.96,
+        "end": 3959.96
+    },
+    {
+        "text": " William es un tipo simple.",
+        "start": 3959.96,
+        "end": 3961.96
+    },
+    {
+        "text": " Yo perfectamente puedo querer hacer una función que devuelva como resultado otro folso.",
+        "start": 3961.96,
+        "end": 3968.96
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3968.96,
+        "end": 3971.96
+    },
+    {
+        "text": " Así como yo puedo hacer una función que devuelva como resultado real, como potencia o un int-ser.",
+        "start": 3971.96,
+        "end": 3978.96
+    },
+    {
+        "text": " Yo puedo querer devolver un valor de tipo William.",
+        "start": 3978.96,
+        "end": 3982.96
+    },
+    {
+        "text": " Por ejemplo acá.",
+        "start": 3982.96,
+        "end": 3985.96
+    },
+    {
+        "text": " La función le puse de nombre pertenece.",
+        "start": 3985.96,
+        "end": 3988.96
+    },
+    {
+        "text": " ¿Cuántos parámetros está recibiendo?",
+        "start": 3988.96,
+        "end": 3992.96
+    },
+    {
+        "text": " 2. X de tipo int-ser, punto y coma y ha de tipo arreglo.",
+        "start": 3992.96,
+        "end": 3999.96
+    },
+    {
+        "text": " Estamos suponiendo que arreglo tiene esa declaración de tipo.",
+        "start": 3999.96,
+        "end": 4003.96
+    },
+    {
+        "text": " O sea, ¿qué recibe la función?",
+        "start": 4003.96,
+        "end": 4005.96
+    },
+    {
+        "text": " Un entero y un arreglo entero.",
+        "start": 4005.96,
+        "end": 4010.96
+    },
+    {
+        "text": " Y esta función va a devolver true si el entero efectivamente pertenece el arreglo y false si no pertenece el arreglo.",
+        "start": 4010.96,
+        "end": 4019.96
+    },
+    {
+        "text": " Y es el clásico problema de búsqueda en arreglos que vimos cuando vimos arreglos.",
+        "start": 4019.96,
+        "end": 4025.96
+    },
+    {
+        "text": " Fíjense que acá no tiene precondición que quiere decir esto.",
+        "start": 4025.96,
+        "end": 4030.96
+    },
+    {
+        "text": " ¿Qué voz le puedes pasar?",
+        "start": 4030.96,
+        "end": 4031.96
+    },
+    {
+        "text": " Cualquiera arreglo y cualquier X, cualquier int-ser.",
+        "start": 4031.96,
+        "end": 4036.96
+    },
+    {
+        "text": " Retornatú si X pertenece el arreglo y false en caso contrario.",
+        "start": 4036.96,
+        "end": 4043.96
+    },
+    {
+        "text": " Y bueno, dentro de la función que tenemos sus propias variables y el bloque viginen no tener algo.",
+        "start": 4043.96,
+        "end": 4051.96
+    },
+    {
+        "text": " La definición del tipo donde estaba definida.",
+        "start": 4051.96,
+        "end": 4055.96
+    },
+    {
+        "text": " Arriba de manera global que dijimos hace un rato que en general que pasa con las constantes y los tipos.",
+        "start": 4055.96,
+        "end": 4061.96
+    },
+    {
+        "text": " Son globales a todo el programa y lo que suele definirse de manera local a la función que son.",
+        "start": 4061.96,
+        "end": 4066.96
+    },
+    {
+        "text": " Las variables de la función.",
+        "start": 4066.96,
+        "end": 4069.96
+    },
+    {
+        "text": " Sí.",
+        "start": 4069.96,
+        "end": 4070.96
+    },
+    {
+        "text": " Ya definí algún tipo en el diseño programo.",
+        "start": 4070.96,
+        "end": 4072.96
+    },
+    {
+        "text": " Sí.",
+        "start": 4072.96,
+        "end": 4073.96
+    },
+    {
+        "text": " Después puedo definir una variable que sea un arreglo.",
+        "start": 4073.96,
+        "end": 4076.96
+    },
+    {
+        "text": " Tú te puedes definir una variable local de un tipo global perfectamente.",
+        "start": 4076.96,
+        "end": 4080.96
+    },
+    {
+        "text": " Sí, sí, sí.",
+        "start": 4080.96,
+        "end": 4081.96
+    },
+    {
+        "text": " Y eso está bien y es valido.",
+        "start": 4081.96,
+        "end": 4083.96
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 4083.96,
+        "end": 4084.96
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 4084.96,
+        "end": 4086.96
+    },
+    {
+        "text": " ¿Qué asumimos de X y de A que ya vienen?",
+        "start": 4086.96,
+        "end": 4090.96
+    },
+    {
+        "text": " Precargados.",
+        "start": 4090.96,
+        "end": 4093.96
+    },
+    {
+        "text": " No debemos nunca hacer que dentro de la función.",
+        "start": 4093.96,
+        "end": 4096.96
+    },
+    {
+        "text": " Leer de teclado los valores para los datos centradas.",
+        "start": 4096.96,
+        "end": 4099.96
+    },
+    {
+        "text": " Se asume que los parámetros ya vinieron cargados en la función.",
+        "start": 4099.96,
+        "end": 4103.96
+    },
+    {
+        "text": " ¿Ah? ¿Cómo?",
+        "start": 4103.96,
+        "end": 4105.96
+    },
+    {
+        "text": " No.",
+        "start": 4105.96,
+        "end": 4106.96
+    },
+    {
+        "text": " No es el error de compilación.",
+        "start": 4106.96,
+        "end": 4108.96
+    },
+    {
+        "text": " Es lo que se llama un error de estilo de programación.",
+        "start": 4108.96,
+        "end": 4110.96
+    },
+    {
+        "text": " Es una mala práctica.",
+        "start": 4110.96,
+        "end": 4112.96
+    },
+    {
+        "text": " De compila, pero no se considera una manera correcta de programar.",
+        "start": 4112.96,
+        "end": 4119.96
+    },
+    {
+        "text": " Lo mismo que, por ejemplo, modificar la variable de control del form.",
+        "start": 4119.96,
+        "end": 4125.96
+    },
+    {
+        "text": " Las variables que yo me declaro son internas a la función y me ayudan",
+        "start": 4125.96,
+        "end": 4131.96
+    },
+    {
+        "text": " para dentro de la función producir el resultado.",
+        "start": 4131.96,
+        "end": 4134.96
+    },
+    {
+        "text": " Una rol común es querer pasarle, por ejemplo, el contador del form como un parámetro más.",
+        "start": 4134.96,
+        "end": 4140.96
+    },
+    {
+        "text": " No, vos pasales de afuera únicamente lo que la función necesite para poder trabajar.",
+        "start": 4140.96,
+        "end": 4145.96
+    },
+    {
+        "text": " Cualquier variable adicional la declara a dentro.",
+        "start": 4145.96,
+        "end": 4149.96
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 4149.96,
+        "end": 4150.96
+    },
+    {
+        "text": " A vos te dan un valor X de tipo Intéser y A de tipo Arreglo.",
+        "start": 4150.96,
+        "end": 4154.96
+    },
+    {
+        "text": " Aca nos declaramos la variable de control del form y este código ya es conocido,",
+        "start": 4154.96,
+        "end": 4160.96
+    },
+    {
+        "text": " que estamos haciendo acá.",
+        "start": 4160.96,
+        "end": 4162.96
+    },
+    {
+        "text": " Nuestra clásica búsqueda por el cuito corto.",
+        "start": 4162.96,
+        "end": 4166.96
+    },
+    {
+        "text": " ¿Cabien?",
+        "start": 4166.96,
+        "end": 4168.96
+    },
+    {
+        "text": " Si salgo por esta condición, ¿qué quiere decir?",
+        "start": 4168.96,
+        "end": 4172.96
+    },
+    {
+        "text": " No, no, no, no.",
+        "start": 4172.96,
+        "end": 4174.96
+    },
+    {
+        "text": " Que no va a hablar la segunda y que el elemento buscado que le pasaba.",
+        "start": 4174.96,
+        "end": 4178.96
+    },
+    {
+        "text": " No se encontró.",
+        "start": 4178.96,
+        "end": 4180.96
+    },
+    {
+        "text": " Si salgo por esta condición, ¿qué quería decir?",
+        "start": 4180.96,
+        "end": 4184.96
+    },
+    {
+        "text": " Que en algún momento el valor en la celda I fue igual a X y se encontró.",
+        "start": 4184.96,
+        "end": 4189.96
+    },
+    {
+        "text": " Se las fuimos discutiendo ampliamente como funcione la búsqueda en el arreglo.",
+        "start": 4189.96,
+        "end": 4193.96
+    },
+    {
+        "text": " Y miren lo que pasa acá.",
+        "start": 4193.96,
+        "end": 4195.96
+    },
+    {
+        "text": " Pertenece, ¿eh?",
+        "start": 4195.96,
+        "end": 4197.96
+    },
+    {
+        "text": " Es una variable.",
+        "start": 4197.96,
+        "end": 4199.96
+    },
+    {
+        "text": " Es el nombre de la función.",
+        "start": 4199.96,
+        "end": 4201.96
+    },
+    {
+        "text": " Quiere decir que en esta instrucción que estamos haciendo,",
+        "start": 4201.96,
+        "end": 4204.96
+    },
+    {
+        "text": " devolviendo el resultado,",
+        "start": 4205.96,
+        "end": 4208.96
+    },
+    {
+        "text": " que va estardado por el resultado de esta expresión que su inaspreción de tipo,",
+        "start": 4208.96,
+        "end": 4214.96
+    },
+    {
+        "text": " Búlia.",
+        "start": 4214.96,
+        "end": 4215.96
+    },
+    {
+        "text": " Si la I efectivamente es menor igual que N, esto cuantodad.",
+        "start": 4215.96,
+        "end": 4220.96
+    },
+    {
+        "text": " True.",
+        "start": 4220.96,
+        "end": 4221.96
+    },
+    {
+        "text": " Y eso significa que del igual la habíamos salido por qué condición.",
+        "start": 4221.96,
+        "end": 4225.96
+    },
+    {
+        "text": " Por la segunda.",
+        "start": 4225.96,
+        "end": 4227.96
+    },
+    {
+        "text": " Es decir, encontramos el valor antes.",
+        "start": 4227.96,
+        "end": 4229.96
+    },
+    {
+        "text": " No llegamos a barrar todo el arreglo.",
+        "start": 4229.96,
+        "end": 4232.96
+    },
+    {
+        "text": " Ahora, si no es cierto que I es menor igual que N es decir,",
+        "start": 4233.96,
+        "end": 4236.96
+    },
+    {
+        "text": " si se pasó de N, ¿qué quiere decir?",
+        "start": 4236.96,
+        "end": 4239.96
+    },
+    {
+        "text": " Que tuviste que moverte a lo largo de todas las celdas,",
+        "start": 4239.96,
+        "end": 4242.96
+    },
+    {
+        "text": " llegaste al final y el valor no estaba.",
+        "start": 4242.96,
+        "end": 4244.96
+    },
+    {
+        "text": " Saliste por esta.",
+        "start": 4244.96,
+        "end": 4246.96
+    },
+    {
+        "text": " Entonces, el resultado de esta condición, en este caso, va a ser false.",
+        "start": 4246.96,
+        "end": 4250.96
+    },
+    {
+        "text": " O sea que el valor que va a salir volando va a ser true o va a ser false.",
+        "start": 4250.96,
+        "end": 4258.96
+    },
+    {
+        "text": " Yo desde el programa principal, ¿eh?",
+        "start": 4258.96,
+        "end": 4261.96
+    },
+    {
+        "text": " Por ejemplo, podría ser esto.",
+        "start": 4261.96,
+        "end": 4265.96
+    },
+    {
+        "text": " Y...",
+        "start": 4268.96,
+        "end": 4270.96
+    },
+    {
+        "text": " Pertenece y le paso.",
+        "start": 4272.96,
+        "end": 4276.96
+    },
+    {
+        "text": " Un valor, por ejemplo, el 27 y vamos a imaginarnos que declaramos una variable que se llamaba arreg.",
+        "start": 4276.96,
+        "end": 4284.96
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 4284.96,
+        "end": 4285.96
+    },
+    {
+        "text": " Y acá ponemos el D.",
+        "start": 4285.96,
+        "end": 4288.96
+    },
+    {
+        "text": " Y acá lo que queramos hacer en caso de que...",
+        "start": 4288.96,
+        "end": 4292.96
+    },
+    {
+        "text": " De que efectivamente el 27 pertenezca al arreglo.",
+        "start": 4292.96,
+        "end": 4297.96
+    },
+    {
+        "text": " Yo puedo hacer la llamada de la función adentro de la condición de un is,",
+        "start": 4297.96,
+        "end": 4302.96
+    },
+    {
+        "text": " porque... ¿por qué es una función que devuelve?",
+        "start": 4302.96,
+        "end": 4305.96
+    },
+    {
+        "text": " Búlean.",
+        "start": 4305.96,
+        "end": 4306.96
+    },
+    {
+        "text": " Como devuelve, búlean.",
+        "start": 4306.96,
+        "end": 4309.96
+    },
+    {
+        "text": " Yo le puedo llamar en cualquier lugar donde se admita una expresión de tipo búlean.",
+        "start": 4309.96,
+        "end": 4315.96
+    },
+    {
+        "text": " Por ejemplo, acá.",
+        "start": 4315.96,
+        "end": 4317.96
+    },
+    {
+        "text": " Podría también guardarme el resultado en una variable de tipo búlean,",
+        "start": 4317.96,
+        "end": 4321.96
+    },
+    {
+        "text": " depende de lo que yo quiero hacer.",
+        "start": 4321.96,
+        "end": 4323.96
+    },
+    {
+        "text": " Miremos acá el 27 es el parámetro efectivo que se guarda en donde, en X.",
+        "start": 4323.96,
+        "end": 4332.96
+    },
+    {
+        "text": " Y arreg es el arreglo que nosotros en el programa principal habíamos cargado,",
+        "start": 4332.96,
+        "end": 4338.96
+    },
+    {
+        "text": " que se guarda acá, ¿eh?",
+        "start": 4338.96,
+        "end": 4340.96
+    },
+    {
+        "text": " Dentro de la función se los conoce como X y como A.",
+        "start": 4340.96,
+        "end": 4345.96
+    },
+    {
+        "text": " En el programa principal son 27 y arreg.",
+        "start": 4346.96,
+        "end": 4350.96
+    },
+    {
+        "text": " Sí.",
+        "start": 4350.96,
+        "end": 4351.96
+    },
+    {
+        "text": " Modificar el X como.",
+        "start": 4355.96,
+        "end": 4357.96
+    },
+    {
+        "text": " No, porque vos de entre una condición lo puedes poner a asignación.",
+        "start": 4357.96,
+        "end": 4361.96
+    },
+    {
+        "text": " Sí.",
+        "start": 4361.96,
+        "end": 4362.96
+    },
+    {
+        "text": " ¿Tú le ha sido posidas con y...",
+        "start": 4362.96,
+        "end": 4364.96
+    },
+    {
+        "text": " O sea, acá podrían vez de un ismen y un y, tranquilamente.",
+        "start": 4364.96,
+        "end": 4368.96
+    },
+    {
+        "text": " Vos también podrías hacer esto, por ejemplo.",
+        "start": 4368.96,
+        "end": 4371.96
+    },
+    {
+        "text": " Te declaras la variable X y a X le asignaba 27.",
+        "start": 4371.96,
+        "end": 4375.96
+    },
+    {
+        "text": " Y, acorda, no hay problema en que esta se llama X y aquella también.",
+        "start": 4375.96,
+        "end": 4380.96
+    },
+    {
+        "text": " Y acá en vez de 27 podrías poner directamente a X. Esto también anda.",
+        "start": 4380.96,
+        "end": 4385.96
+    },
+    {
+        "text": " ¿Y ahí voy a ficar esta de manera?",
+        "start": 4385.96,
+        "end": 4387.96
+    },
+    {
+        "text": " No, porque son X diferentes.",
+        "start": 4387.96,
+        "end": 4389.96
+    },
+    {
+        "text": " No, no, no, no, no es esta de manera.",
+        "start": 4389.96,
+        "end": 4391.96
+    },
+    {
+        "text": " Esta X, yo le asigné el valor 27.",
+        "start": 4391.96,
+        "end": 4394.96
+    },
+    {
+        "text": " Este 27 entró a la caja negra, lo mismo que el arreglo.",
+        "start": 4394.96,
+        "end": 4398.96
+    },
+    {
+        "text": " Lo que pase allá no va a afectar esta X.",
+        "start": 4398.96,
+        "end": 4402.96
+    },
+    {
+        "text": " Vamos a ver, después que si vos querés modificar dentro de un subprograma,",
+        "start": 4404.96,
+        "end": 4408.96
+    },
+    {
+        "text": " está el pasaje por referencia.",
+        "start": 4408.96,
+        "end": 4410.96
+    },
+    {
+        "text": " ¿Cómo perdón?",
+        "start": 4413.96,
+        "end": 4414.96
+    },
+    {
+        "text": " ¿Voces ahí?",
+        "start": 4416.96,
+        "end": 4417.96
+    },
+    {
+        "text": " Y no, porque vos lo que pone son...",
+        "start": 4418.96,
+        "end": 4420.96
+    },
+    {
+        "text": " Pasa que vos lo que tiene es acaso en expresiones y las expresiones nunca te modifican variables.",
+        "start": 4422.96,
+        "end": 4426.96
+    },
+    {
+        "text": " Las expresiones, por ejemplo, acala variable y la expresión de tipobulia nunca te lo vamos a modificar,",
+        "start": 4427.96,
+        "end": 4431.96
+    },
+    {
+        "text": " porque la expresión único que hace es consultar el valor.",
+        "start": 4431.96,
+        "end": 4434.96
+    },
+    {
+        "text": " Pero eso lo harías dentro del Y.",
+        "start": 4442.96,
+        "end": 4444.96
+    },
+    {
+        "text": " Dentro del Vignan de eso sí, pero eso no pasa, o sea la modificación no se da dentro de la condición.",
+        "start": 4444.96,
+        "end": 4451.96
+    },
+    {
+        "text": " Se da dentro del cuerpo.",
+        "start": 4451.96,
+        "end": 4453.96
+    },
+    {
+        "text": " Sí, eso podría.",
+        "start": 4453.96,
+        "end": 4455.96
+    },
+    {
+        "text": " Por ejemplo, hacer algo del estilo que a can vez de unif tengas un wild y que acá dentro del Vignan le vaya a se incrementando.",
+        "start": 4456.96,
+        "end": 4463.96
+    },
+    {
+        "text": " Eso sí, pero no es la condición la que te va a estar modificando el valor.",
+        "start": 4463.96,
+        "end": 4468.96
+    },
+    {
+        "text": " O sea que no se asusten si algún ejercicio les pide hacer una función que devuelva truofolz.",
+        "start": 4470.96,
+        "end": 4475.96
+    },
+    {
+        "text": " Truofolz son valores tan válidos como cualquier otro para ser resultados de funciones.",
+        "start": 4476.96,
+        "end": 4481.96
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 4484.96,
+        "end": 4486.96
+    },
+    {
+        "text": " Bien.",
+        "start": 4487.96,
+        "end": 4488.96
+    },
+    {
+        "text": " Bueno, y me voy a ir un segundo acá a las recomendaciones de estilo para las funciones.",
+        "start": 4493.96,
+        "end": 4501.96
+    },
+    {
+        "text": " Buenas prácticas de programación a la hora de trabajar con funciones.",
+        "start": 4504.96,
+        "end": 4510.96
+    },
+    {
+        "text": " La primera no utilizar pasaje por referencia.",
+        "start": 4513.96,
+        "end": 4516.96
+    },
+    {
+        "text": " El pasaje por referencia vamos a hablar después.",
+        "start": 4516.96,
+        "end": 4519.96
+    },
+    {
+        "text": " Y vamos a ver por qué no está bueno utilizar pasaje por referencia.",
+        "start": 4519.96,
+        "end": 4523.96
+    },
+    {
+        "text": " Me quiero quedar con la segunda.",
+        "start": 4523.96,
+        "end": 4525.96
+    },
+    {
+        "text": " No hacer entrada y salida dentro de funciones.",
+        "start": 4525.96,
+        "end": 4529.96
+    },
+    {
+        "text": " Nada de RID ni RIDLINE, nada de RIDLINE.",
+        "start": 4529.96,
+        "end": 4534.96
+    },
+    {
+        "text": " Si bien el compilador permite que vos desde adentro de la función interactúe con el usuario nosotros no lo hacemos.",
+        "start": 4534.96,
+        "end": 4540.96
+    },
+    {
+        "text": " No utilizar variables globales, es decir variables declaradas en el programa principal dentro de su programa.",
+        "start": 4543.96,
+        "end": 4550.96
+    },
+    {
+        "text": " La idea es que la función trabaje únicamente con qué variables.",
+        "start": 4550.96,
+        "end": 4554.96
+    },
+    {
+        "text": " Con sus variables, con sus propias variables locales y alosumbo con los parámetros de entrada.",
+        "start": 4554.96,
+        "end": 4560.96
+    },
+    {
+        "text": " Pero que la variable no axe que la función perdón nunca accede a variables globales que hayan decidido definidas a nivel del programa.",
+        "start": 4560.96,
+        "end": 4569.96
+    },
+    {
+        "text": " Ahí eso exactamente.",
+        "start": 4570.96,
+        "end": 4573.96
+    },
+    {
+        "text": " Asignar una sola vez y al final el valor de la función, la instrucción que usa el nombre de la función para devolver el resultado que vaya donde.",
+        "start": 4575.96,
+        "end": 4585.96
+    },
+    {
+        "text": " Al final del podo y que se haga una vez sola.",
+        "start": 4585.96,
+        "end": 4589.96
+    },
+    {
+        "text": " ¿Por qué que pasasivos en varios lugares devolver resultado?",
+        "start": 4589.96,
+        "end": 4594.96
+    },
+    {
+        "text": " Correza un peligro importante, ¿qué es cuál?",
+        "start": 4594.96,
+        "end": 4597.96
+    },
+    {
+        "text": " Que en algún escenario de ejecución justo no llegues a ningún lugar donde se devuelve un valor.",
+        "start": 4599.96,
+        "end": 4605.96
+    },
+    {
+        "text": " Imagínate que vos metiste la instrucción que devuelve el resultado adentro de unif o adentro de una iteración y no le pusiste él.",
+        "start": 4605.96,
+        "end": 4613.96
+    },
+    {
+        "text": " Hay que peligro correr, que la función llega un punto muerto.",
+        "start": 4613.96,
+        "end": 4618.96
+    },
+    {
+        "text": " En cambio, si vos te organizas bien para poner abajo del todo, la instrucción que devuelve el resultado que tranquilidad tenés.",
+        "start": 4618.96,
+        "end": 4627.96
+    },
+    {
+        "text": " Que la función en algún momento va a llegar al final y va a devolver.",
+        "start": 4628.96,
+        "end": 4631.96
+    },
+    {
+        "text": " Y siempre te puedes declarar una variable local para ir guardando el resultado y después lo que devuelve ese es el contenido desavariable.",
+        "start": 4631.96,
+        "end": 4639.96
+    },
+    {
+        "text": " Definir funciones para todo cálculo intermedio que sea independiente.",
+        "start": 4643.96,
+        "end": 4648.96
+    },
+    {
+        "text": " Quiero calcular la potencia de una base elevado en exponente.",
+        "start": 4648.96,
+        "end": 4652.96
+    },
+    {
+        "text": " Ahí tenemos un subprograma con sentido propio. Queremos calcular una potencia.",
+        "start": 4652.96,
+        "end": 4658.96
+    },
+    {
+        "text": " Una función que reciba una reglo y un entero y determine si ese reglo contiene o no es entero.",
+        "start": 4658.96,
+        "end": 4666.96
+    },
+    {
+        "text": " O sea que cada función no sea una simple suma de instrucciones que no tienen nada que dar, que tenga un propósito, que tenga un sentido propio, que tenga una semántica clara.",
+        "start": 4666.96,
+        "end": 4678.96
+    },
+    {
+        "text": " Es decir, que quede claro cuál es el problema que queremos resolver con la función.",
+        "start": 4678.96,
+        "end": 4684.96
+    },
+    {
+        "text": " ¿Ara acá? Bueno, vamos a hacer ahora sí, prácticamente.",
+        "start": 4687.96,
+        "end": 4691.96
+    },
+    {
+        "text": " Vamos a mirar un poquito el ejercicio 13.",
+        "start": 4691.96,
+        "end": 4693.96
+    },
+    {
+        "text": " Por enésima vez vamos a determinar si un natural es primono.",
+        "start": 4699.96,
+        "end": 4703.96
+    },
+    {
+        "text": " Yo creo que hasta el altura de ustedes se van a dormir y ya sueñan con el algoritmo que determina si un entero es primono.",
+        "start": 4704.96,
+        "end": 4712.96
+    },
+    {
+        "text": " Y sueñan con que vamos hasta la raíz cuadrada truncada.",
+        "start": 4712.96,
+        "end": 4718.96
+    },
+    {
+        "text": " Eso que antes sabíamos escrito como código suelto dentro del programa principal, ahora lo vamos a poner dentro de una función.",
+        "start": 4721.96,
+        "end": 4730.96
+    },
+    {
+        "text": " O sea, el guay que va hasta la raíz cuadrada, habiéndole hecho primero el trunc lo vamos a hacer dentro de la función.",
+        "start": 4731.96,
+        "end": 4738.96
+    },
+    {
+        "text": " A partir de ahora, tanto en los prácticos como en los parciales, en el segundo parcial, no les vamos a pedir que escriban siempre todo el programa.",
+        "start": 4740.96,
+        "end": 4748.96
+    },
+    {
+        "text": " A veces un ejercicio puede ser, escriba solamente la función.",
+        "start": 4748.96,
+        "end": 4752.96
+    },
+    {
+        "text": " Voy a suponer que después esta función de la van a llamar desde el programa principal, pero el ejercicio es que hagas la función.",
+        "start": 4753.96,
+        "end": 4759.96
+    },
+    {
+        "text": " Entonces, reescriba el programa del ejercicio 10 del práctico 6, que es ese, el que va hasta la raíz cuadrada truncada, pero dentro de una función,",
+        "start": 4762.96,
+        "end": 4773.96
+    },
+    {
+        "text": " se va a hacer una función que se va a llamar exprimo, que va a recibir el valor de tipo integer y va a devolver truvo false.",
+        "start": 4773.96,
+        "end": 4783.96
+    },
+    {
+        "text": " Trus y exprimo false si no lo es.",
+        "start": 4783.96,
+        "end": 4787.96
+    },
+    {
+        "text": " Entonces, la idea es que dentro de esta función se declaren la o las variables que sean necesarias,",
+        "start": 4788.96,
+        "end": 4793.96
+    },
+    {
+        "text": " hagan el vendito y que va hasta la raíz cuadrada truncada y después retornen obviamente una expresión de tipo Vuelta.",
+        "start": 4793.96,
+        "end": 4801.96
+    },
+    {
+        "text": " Bueno, si, diez minutos ya, hasta altura creo que se los saben de memoria, lo escriben y me llaman.",
+        "start": 4804.96,
+        "end": 4809.96
+    },
+    {
+        "text": " Bueno, vamos a comentar un poquito.",
+        "start": 4809.96,
+        "end": 4812.96
+    },
+    {
+        "text": " La función que verifica si un número es primo.",
+        "start": 4821.96,
+        "end": 4824.96
+    },
+    {
+        "text": " Más que programación 1, esta materia se tendría que llamar primalidad 1 o divisibilidad 1,",
+        "start": 4825.96,
+        "end": 4831.96
+    },
+    {
+        "text": " porque la cantidad de veces que hemos determinado si un número es primo ya hemos perdido la cuenta.",
+        "start": 4831.96,
+        "end": 4836.96
+    },
+    {
+        "text": " Pero bueno, es que es un buen ejemplo.",
+        "start": 4836.96,
+        "end": 4838.96
+    },
+    {
+        "text": " La función por si sola es un micro programa.",
+        "start": 4841.96,
+        "end": 4845.96
+    },
+    {
+        "text": " El encabezado, el parámetro que ahí se llama número, creo que en la letra del práctico se llamaba valor,",
+        "start": 4846.96,
+        "end": 4854.96
+    },
+    {
+        "text": " no importa el nombre del parámetro, lo que importa es que sea de tipo integer.",
+        "start": 4854.96,
+        "end": 4859.96
+    },
+    {
+        "text": " Y la función de Vuelta como resultado truvo false.",
+        "start": 4859.96,
+        "end": 4862.96
+    },
+    {
+        "text": " Lo que quiere decir que yo si quisiera en el programa principal la podría llamar por ejemplo en la condición de un I.",
+        "start": 4862.96,
+        "end": 4869.96
+    },
+    {
+        "text": " O de un Y o de un repito.",
+        "start": 4870.96,
+        "end": 4873.96
+    },
+    {
+        "text": " Y esta implementación que tenemos acá muestra algo que lo habíamos comentado pero no lo habíamos visto.",
+        "start": 4878.96,
+        "end": 4885.96
+    },
+    {
+        "text": " Que es una función que adentro tiene que cosa.",
+        "start": 4885.96,
+        "end": 4890.96
+    },
+    {
+        "text": " Otra función local a ella.",
+        "start": 4890.96,
+        "end": 4893.96
+    },
+    {
+        "text": " Recordemos, la función es un subprograma y todo subprograma puede contener los mismos elementos que un programa.",
+        "start": 4894.96,
+        "end": 4903.96
+    },
+    {
+        "text": " Puede tener sus propias constantes, sus propias variables y también puede tener sus propios subprogramas.",
+        "start": 4903.96,
+        "end": 4911.96
+    },
+    {
+        "text": " Entonces, ¿qué tenemos acá?",
+        "start": 4915.96,
+        "end": 4918.96
+    },
+    {
+        "text": " Las variables i y tope. Me salteo esto y venimos al bien.",
+        "start": 4918.96,
+        "end": 4923.96
+    },
+    {
+        "text": " Y este algoritmo se le algoritmo que ya conocíamos.",
+        "start": 4923.96,
+        "end": 4927.96
+    },
+    {
+        "text": " Empezamos en dos y vamos a ir como mucho hasta donde.",
+        "start": 4927.96,
+        "end": 4932.96
+    },
+    {
+        "text": " Hasta la raíz cuadrada del número truncada.",
+        "start": 4932.96,
+        "end": 4936.96
+    },
+    {
+        "text": " Si antes de llegar ahí encontramos algún divisor que quiere decir que no exprimon.",
+        "start": 4936.96,
+        "end": 4943.96
+    },
+    {
+        "text": " Y si tuvimos que llegar hasta la raíz cuadrada truncada, que significa que si exprimon.",
+        "start": 4943.96,
+        "end": 4950.96
+    },
+    {
+        "text": " Lo que hace esta implementación es ilustrar el uso de una función dentro de otra función.",
+        "start": 4950.96,
+        "end": 4958.96
+    },
+    {
+        "text": " Fíjense que acá que estamos haciendo.",
+        "start": 4958.96,
+        "end": 4961.96
+    },
+    {
+        "text": " Jamando a la función divide.",
+        "start": 4961.96,
+        "end": 4965.96
+    },
+    {
+        "text": " Que es una función que se define de manera local a la función exprimo.",
+        "start": 4965.96,
+        "end": 4971.96
+    },
+    {
+        "text": " Y aquí ya entramos en un debate filosófico.",
+        "start": 4971.96,
+        "end": 4974.96
+    },
+    {
+        "text": " Si la función va a tener una única instrucción, vale la pena que sea función o no vale la pena que sea función.",
+        "start": 4974.96,
+        "end": 4982.96
+    },
+    {
+        "text": " Bueno, algunos podrán decir que ni algunos podrán decir que no.",
+        "start": 4982.96,
+        "end": 4986.96
+    },
+    {
+        "text": " En este ejemplo perfectamente yo, esta expresión que podría haber hecho.",
+        "start": 4986.96,
+        "end": 4991.96
+    },
+    {
+        "text": " Podría haberla puesto directamente acá y me ahorraras esta función y estaba bien.",
+        "start": 4991.96,
+        "end": 4994.96
+    },
+    {
+        "text": " Y de hecho lo que ustedes estuvieron mostrándolo hacía así.",
+        "start": 4994.96,
+        "end": 4998.96
+    },
+    {
+        "text": " Moden realidad su un operador arismético.",
+        "start": 4999.96,
+        "end": 5003.96
+    },
+    {
+        "text": " No sé, no es propiamente una función.",
+        "start": 5003.96,
+        "end": 5007.96
+    },
+    {
+        "text": " Igual tanto las funciones que devuelven un int-shirt como una expresión en la que participe mod que también te devolven un int-shirt.",
+        "start": 5007.96,
+        "end": 5016.96
+    },
+    {
+        "text": " Cualquiera de esas dos cosas puede estar en bebida en una expresión de tipo int-shirt.",
+        "start": 5016.96,
+        "end": 5020.96
+    },
+    {
+        "text": " De ahí que a veces los operadores parezcan funciones.",
+        "start": 5020.96,
+        "end": 5024.96
+    },
+    {
+        "text": " Pellas más una cuestión semántica, eso filosófica.",
+        "start": 5025.96,
+        "end": 5028.96
+    },
+    {
+        "text": " Vamos a mirar lo que pretende ilustrar esto es como una función puede tener a su vez otra función.",
+        "start": 5028.96,
+        "end": 5035.96
+    },
+    {
+        "text": " Lo que no quiere decir que sea obligatorio hacer esta función.",
+        "start": 5035.96,
+        "end": 5038.96
+    },
+    {
+        "text": " Ustedes perfectamente podrían haber preguntado por el mod, ahí como me lo estuvieron mostrando y está perfecto.",
+        "start": 5038.96,
+        "end": 5044.96
+    },
+    {
+        "text": " Esta a su vez que es otra función cita.",
+        "start": 5044.96,
+        "end": 5049.96
+    },
+    {
+        "text": " Que ni siquiera tiene que.",
+        "start": 5050.96,
+        "end": 5053.96
+    },
+    {
+        "text": " Ni siquiera tiene variables, porque es tan chiquita que lo único que hace que es.",
+        "start": 5053.96,
+        "end": 5056.96
+    },
+    {
+        "text": " El resto de dividir M entre N y fijarse si es odio 0.",
+        "start": 5056.96,
+        "end": 5061.96
+    },
+    {
+        "text": " Y si es odio 0, la función divide que va a devolver.",
+        "start": 5061.96,
+        "end": 5065.96
+    },
+    {
+        "text": " True. Y en otro caso va a devolver false.",
+        "start": 5065.96,
+        "end": 5068.96
+    },
+    {
+        "text": " Divide no es una variable.",
+        "start": 5068.96,
+        "end": 5071.96
+    },
+    {
+        "text": " Divide es el nombre de esta función y esta función a su vez es local a la función es primo.",
+        "start": 5071.96,
+        "end": 5078.96
+    },
+    {
+        "text": " A este ejemplo si es así para ilustrar para que ustedes vean que dentro de una función te puedes definir otra función si querés.",
+        "start": 5079.96,
+        "end": 5086.96
+    },
+    {
+        "text": " Pero la función es primo donde empieza su ejecución.",
+        "start": 5086.96,
+        "end": 5091.96
+    },
+    {
+        "text": " Acá.",
+        "start": 5091.96,
+        "end": 5093.96
+    },
+    {
+        "text": " Y arrancando. Calculo en la raíz cuadrada truncada y bueno el doble y el igual.",
+        "start": 5093.96,
+        "end": 5098.96
+    },
+    {
+        "text": " Mejor hecho el igual con la doble condición.",
+        "start": 5098.96,
+        "end": 5101.96
+    },
+    {
+        "text": " Mientras que i no haya llegado al top y mientras que i no divide al número.",
+        "start": 5101.96,
+        "end": 5106.96
+    },
+    {
+        "text": " Bueno, avanza.",
+        "start": 5106.96,
+        "end": 5109.96
+    },
+    {
+        "text": " Si en algún momento me encuentro con que i divide al número encontré un divisor y salgo por esta condición.",
+        "start": 5109.96,
+        "end": 5116.96
+    },
+    {
+        "text": " Si en el camino lo encontré en un divisor salgo por esta otra y si salgo por esta que significa.",
+        "start": 5116.96,
+        "end": 5123.96
+    },
+    {
+        "text": " Que el número es primo y si salgo por esta otra que el número no es primo. ¿Qué me vas a preguntar?",
+        "start": 5123.96,
+        "end": 5130.96
+    },
+    {
+        "text": " ¿Qué te divide en un grupo de las variables locales?",
+        "start": 5130.96,
+        "end": 5133.96
+    },
+    {
+        "text": " No, esta función divide es local a la función es primo.",
+        "start": 5133.96,
+        "end": 5137.96
+    },
+    {
+        "text": " Lo que pregunta el compañero es desde el programa principal yo podría llamar a la función divide y respuesta no.",
+        "start": 5137.96,
+        "end": 5143.96
+    },
+    {
+        "text": " Desde el programa principal yo puedo llamar a las funciones primos.",
+        "start": 5143.96,
+        "end": 5147.96
+    },
+    {
+        "text": " Pero la función divide decimos que es una función local a la función es primo.",
+        "start": 5147.96,
+        "end": 5153.96
+    },
+    {
+        "text": " Es el mismo concepto que con las variables locales.",
+        "start": 5153.96,
+        "end": 5156.96
+    },
+    {
+        "text": " Si voces en una función, tenés una variable local por ser local a la función donde la puedes usar únicamente dentro de esa función.",
+        "start": 5156.96,
+        "end": 5164.96
+    },
+    {
+        "text": " Bueno, si esa funciona subes, tiene otra función local a ella.",
+        "start": 5164.96,
+        "end": 5168.96
+    },
+    {
+        "text": " Lo mismo, solo puede ser usada dentro del alcance de esa función.",
+        "start": 5168.96,
+        "end": 5171.96
+    },
+    {
+        "text": " Y estas cuestiones de hecho tienen que ver con el tema alcance que lo pegamos a hablar del viernes.",
+        "start": 5171.96,
+        "end": 5176.96
+    },
+    {
+        "text": " La función divide es una función auxiliar definida únicamente con el propósito de ayudar a la función principal.",
+        "start": 5176.96,
+        "end": 5185.96
+    },
+    {
+        "text": " Que es la función es primo.",
+        "start": 5185.96,
+        "end": 5187.96
+    },
+    {
+        "text": " Que vuelvo a repetir. En este caso podemos entrar en el debate filosófico de si valía la pena hacer una función o no porque tiene una línea sola.",
+        "start": 5187.96,
+        "end": 5195.96
+    },
+    {
+        "text": " Esto pretende ser más un ejemplo ilustrativo que algo obligatorio, digamos.",
+        "start": 5195.96,
+        "end": 5200.96
+    },
+    {
+        "text": " Pero las soluciones que ustedes me estuvieron mostrando en vez de hacer esto preguntan por el módulo acá.",
+        "start": 5200.96,
+        "end": 5206.96
+    },
+    {
+        "text": " Y más o menos alguna diferencia es el mismo algoritmo que seamos visto dos millones de veces que basta la raíz cuadrada truncada del número.",
+        "start": 5206.96,
+        "end": 5214.96
+    },
+    {
+        "text": " ¿Ok? ¿Se entendió funciones?",
+        "start": 5214.96,
+        "end": 5218.96
+    },
+    {
+        "text": " Bueno, el viernes prefarece para una clase intensa porque vamos a ver procedimientos.",
+        "start": 5218.96,
+        "end": 5223.96
+    },
+    {
+        "text": " Yo quería empezarlo hoy pero no nos dio y vamos a ver también alcance.",
+        "start": 5223.96,
+        "end": 5227.96
+    },
+    {
+        "text": " O sea que el viernes va a ser una clase fuerte.",
+        "start": 5227.96,
+        "end": 5230.96
+    },
+    {
+        "text": " Nos vemos.",
+        "start": 5230.96,
+        "end": 5232.96
+    },
+    {
+        "text": " Que anden bien.",
+        "start": 5232.96,
+        "end": 5234.96
+    }
+]

@@ -1,0 +1,2667 @@
+[
+    {
+        "text": " Toca hoy empezar a ver lo que vamos a llamar las estructuras de control en",
+        "start": 0.0,
+        "end": 21.76
+    },
+    {
+        "text": " pascales. Vamos a ver primero qué significa estructura del control. Después",
+        "start": 21.76,
+        "end": 28.240000000000002
+    },
+    {
+        "text": " vamos a ver qué hay varias estructuras de control posibles y vamos a empezar por",
+        "start": 28.24,
+        "end": 32.6
+    },
+    {
+        "text": " las primeras dos que son la secuencia y la selección. Y la clase que viene",
+        "start": 32.6,
+        "end": 38.36
+    },
+    {
+        "text": " ya vamos a empezar con algo de iteración que es otra estructura de control.",
+        "start": 38.36,
+        "end": 45.480000000000004
+    },
+    {
+        "text": " Bien.",
+        "start": 45.480000000000004,
+        "end": 48.480000000000004
+    },
+    {
+        "text": " ¿Cómo? Creo que son los capítulos 5 y 6, en la guía que están en el Eva,",
+        "start": 50.480000000000004,
+        "end": 57.239999999999995
+    },
+    {
+        "text": " está dicho eso. Lo de hoy va a ser práctico 3 y lo del viernes va a ser práctico 4.",
+        "start": 57.24,
+        "end": 64.52
+    },
+    {
+        "text": " A ver, ese es un poquito el plan para esta semana. Bueno, nosotros hasta ahora hemos",
+        "start": 64.52,
+        "end": 73.8
+    },
+    {
+        "text": " escrito programas en los cuales hacíamos uso únicamente de instrucciones simples.",
+        "start": 73.8,
+        "end": 79.76
+    },
+    {
+        "text": " Llámamos instrucciones simples a lo que son las asignaciones y lo que son las llamadas",
+        "start": 79.76,
+        "end": 88.72
+    },
+    {
+        "text": " a procedimiento. Que de momento los únicos procedimientos que nosotros conocemos son los",
+        "start": 88.72,
+        "end": 94.84
+    },
+    {
+        "text": " que nos permiten hacer que recibir y mandar, recibir de dónde y mandar a dónde.",
+        "start": 94.84,
+        "end": 104.48
+    },
+    {
+        "text": " recibir por teclado lo que llamamos operación de lectura y mandar a pantalla lo que llamamos",
+        "start": 104.48,
+        "end": 112.72
+    },
+    {
+        "text": " operación de escritura o de salida. Entonces los procedimientos que tenemos disponible para",
+        "start": 112.72,
+        "end": 119.88000000000001
+    },
+    {
+        "text": " lectura de datos cuales son. RID y RIDLINE y los que tenemos disponibles para salida son el",
+        "start": 119.88000000000001,
+        "end": 129.64000000000001
+    },
+    {
+        "text": " RIDLINE y el RIDLINE. Que estuvimos hablando en detalle de ellos el viernes pasado. Entonces",
+        "start": 129.64,
+        "end": 136.83999999999997
+    },
+    {
+        "text": " hasta ahora toda instrucción que habíamos incluido en nuestros programas caían algunas de",
+        "start": 136.83999999999997,
+        "end": 143.2
+    },
+    {
+        "text": " esas dos categorías. Hoy vamos a empezar a ver lo que vamos a llamar instrucciones compuestas,",
+        "start": 143.2,
+        "end": 149.83999999999997
+    },
+    {
+        "text": " también llamadas estructuras de control. Vamos a ver que una instrucción compuesta es un tipo de",
+        "start": 150.56,
+        "end": 161.0
+    },
+    {
+        "text": " instrucción que se forma a partir de otras instrucciones contenidas en ellas. Es un poquito la idea",
+        "start": 161.0,
+        "end": 169.16
+    },
+    {
+        "text": " fundamental. La primera de ellas va a ser la secuencia que le vamos a echarla ahora, luego va a",
+        "start": 169.16,
+        "end": 176.64000000000001
+    },
+    {
+        "text": " venir la selección que hay dos tipos posibles de selección que son el IF y el case y en la clase",
+        "start": 176.64,
+        "end": 183.92
+    },
+    {
+        "text": " del viernes vamos a empezar a hablar de las estructuras de repetición, también llamadas estructuras",
+        "start": 183.92,
+        "end": 188.88
+    },
+    {
+        "text": " de iteración que son tres pero vamos a empezar con esta, con el form y la semana que viene es que",
+        "start": 188.88,
+        "end": 195.72
+    },
+    {
+        "text": " vamos a hablar de las otras dos. El uso de instrucciones compuestas es lo que nos va a permitir a",
+        "start": 195.72,
+        "end": 202.51999999999998
+    },
+    {
+        "text": " nosotros empezar a escribir programas que realizarías más complejas. Entonces vamos a empezar por",
+        "start": 202.52,
+        "end": 214.24
+    },
+    {
+        "text": " la secuencia que en realidad ya la conocemos. Una secuencia es una instrucción que se forma colocando",
+        "start": 214.24,
+        "end": 224.36
+    },
+    {
+        "text": " Big In al principio, en al final y un montón de instrucciones separadas con punto y coma. De hecho,",
+        "start": 224.36,
+        "end": 234.44000000000003
+    },
+    {
+        "text": " los programas que estuvimos escribiendo en los prácticos 1 y 2 hacían uso de la secuencia,",
+        "start": 234.44000000000003,
+        "end": 240.32000000000002
+    },
+    {
+        "text": " porque si ustedes recuerdan el cuerpo principal del programa que tenía, tenía bien, tenía Endal",
+        "start": 240.32000000000002,
+        "end": 246.68
+    },
+    {
+        "text": " final y luego las instrucciones separadas con punto y coma. Bueno, a toda esa secuencia le",
+        "start": 246.68,
+        "end": 255.04000000000002
+    },
+    {
+        "text": " llamamos, decimos que es una instrucción compleja, o sea que está en definitiva ya la conocemos y",
+        "start": 255.04000000000002,
+        "end": 262.04
+    },
+    {
+        "text": " ya la estuvimos usando. Las que van a ser esencialmente nuevas son las estructuras de selección y como",
+        "start": 262.04,
+        "end": 272.48
+    },
+    {
+        "text": " su nombre nos dice, nos van a permitir seleccionar, es algo así como elegir un curso de acción a",
+        "start": 272.48,
+        "end": 281.04
+    },
+    {
+        "text": " seguir, de entre varios posibles. Nos va a pasar que en nuestros programas muchas veces se debe",
+        "start": 281.04,
+        "end": 288.14000000000004
+    },
+    {
+        "text": " tomar algún tipo de decisión y en función de la decisión que se tome es por cuál rumbo de",
+        "start": 288.14000000000004,
+        "end": 294.72
+    },
+    {
+        "text": " ejecución se va a continuar. Eso es lo que nos van a permitir las dos estructuras de selección.",
+        "start": 294.72,
+        "end": 300.28000000000003
+    },
+    {
+        "text": " Entonces, vamos a empezar con la instrucción idnL. Lo que tenemos acá es un programa en Pascal,",
+        "start": 302.8,
+        "end": 315.84000000000003
+    },
+    {
+        "text": " tiene un encabezado de programa tal y como lo conocemos, declara una variable de la manera que",
+        "start": 315.84000000000003,
+        "end": 324.32
+    },
+    {
+        "text": " conocemos, la variable de tipo int, y fíjense el comportamiento. Tenemos Viggin y tenemos",
+        "start": 324.32,
+        "end": 333.08
+    },
+    {
+        "text": " en, hasta ahí es como siempre. La primera instrucción que tenemos en este programa es una",
+        "start": 333.08,
+        "end": 340.15999999999997
+    },
+    {
+        "text": " instrucción write que solicita el ingreso de un número. Esa es una instrucción simple. Luego",
+        "start": 340.15999999999997,
+        "end": 347.4
+    },
+    {
+        "text": " tenemos otra instrucción simple que es la lectura mediante rirlay. Separadas con punto y coma,",
+        "start": 347.4,
+        "end": 353.52
+    },
+    {
+        "text": " hasta acá es lo que ya conocemos. Y acá viene la instrucción nueva, la estructura de selección.",
+        "start": 353.52,
+        "end": 362.64
+    },
+    {
+        "text": " Se utiliza la palabra reservada if. Se coloca lo que vamos a llamar una condición y una",
+        "start": 362.64,
+        "end": 374.59999999999997
+    },
+    {
+        "text": " condición vamos a ver que es una expresión de tipo Boolean. Es decir, una expresión cuyos",
+        "start": 374.6,
+        "end": 380.48
+    },
+    {
+        "text": " resultados posibles, cuales son. Trouve false. Luego viene la palabra reservada dN y acá lo que",
+        "start": 380.48,
+        "end": 390.56
+    },
+    {
+        "text": " hacemos en caso de que la condición del id de coma, verdadera. Si la condición del id es verdadera,",
+        "start": 390.56,
+        "end": 400.72
+    },
+    {
+        "text": " se va a ejecutar esta instrucción. Y si la condición del id es falsa, la ejecución viene a",
+        "start": 400.72,
+        "end": 409.96000000000004
+    },
+    {
+        "text": " este L, que en español sería sino y se ejecuta esta otra. Entonces, este programa que hace le solicita",
+        "start": 409.96000000000004,
+        "end": 420.24
+    },
+    {
+        "text": " un número al usuario, el usuario ingresa un número y se hace un chequeo en relación a ese número.",
+        "start": 420.24,
+        "end": 427.72
+    },
+    {
+        "text": " Concretamente pregunta si el número mod 2 es igual a 0. Esto lo estuvimos charlando,",
+        "start": 428.6,
+        "end": 435.92
+    },
+    {
+        "text": " que era mod. El resto de qué división? De la división entera entre 2. Si el resto de dividir",
+        "start": 435.92,
+        "end": 445.44000000000005
+    },
+    {
+        "text": " el número entre 2 me da 0, eso significa que se trata de un número par. Entonces lo que está",
+        "start": 445.44000000000005,
+        "end": 452.72
+    },
+    {
+        "text": " haciendo este programa es mostrar un mensaje de salida, indicando que el número ingresado es par.",
+        "start": 452.72,
+        "end": 457.36
+    },
+    {
+        "text": " En otro caso, muestra un mensaje indicando que el número ingresado es impar. ¿Se van a mostrar",
+        "start": 459.36,
+        "end": 465.84000000000003
+    },
+    {
+        "text": " los dos mensajes? No. Según cuál sea el número, se va a mostrar uno o se va a mostrar otro,",
+        "start": 465.84000000000003,
+        "end": 472.48
+    },
+    {
+        "text": " pero no vamos. El programa tomó una decisión en función de lo que pasó con esta condición.",
+        "start": 472.48,
+        "end": 480.48
+    },
+    {
+        "text": " Y así es como funcional. Todo el IF es una instrucción compleja, compuesta. Si miramos este programa,",
+        "start": 483.28000000000003,
+        "end": 494.84000000000003
+    },
+    {
+        "text": " podríamos decir que tiene una primera instrucción de salida, una segunda instrucción de entrada y una",
+        "start": 494.84000000000003,
+        "end": 502.8
+    },
+    {
+        "text": " tercera instrucción que es compuesta. En este caso es una estructura de selección. Ya sube",
+        "start": 502.8,
+        "end": 510.24
+    },
+    {
+        "text": " es dentro de esa estructura de selección, tenemos una salida o otra salida dependiendo de lo que",
+        "start": 510.24,
+        "end": 517.0
+    },
+    {
+        "text": " pase con la condición. ¿Se entendió este programa? Sí, preguntas. Bueno, vamos a empezar a formalizar un",
+        "start": 517.0,
+        "end": 530.84
+    },
+    {
+        "text": " poco como es la semántica del IF, es decir, como es el comportamiento a nivel general. Entonces,",
+        "start": 530.84,
+        "end": 539.28
+    },
+    {
+        "text": " lo que tenemos aquí es el diagrama de sintaxis. Palabra reservada IF se valúa la expresión que",
+        "start": 540.5600000000001,
+        "end": 550.24
+    },
+    {
+        "text": " tiene que ser de qué tipo. Buleana, si le pongo una expresión que no es de tipo Bulean, el",
+        "start": 550.24,
+        "end": 556.36
+    },
+    {
+        "text": " convilador me va a dar un error y después viene la palabra reservada D. A continuación se",
+        "start": 556.36,
+        "end": 564.24
+    },
+    {
+        "text": " escribe una instrucción, luego viene la palabra reservada L y a continuación se escribe otra instrucción.",
+        "start": 564.24,
+        "end": 571.48
+    },
+    {
+        "text": " Esto está describiendo las sintaxis. Si se va a ejecutar aquella o se va a ejecutar esta de qué",
+        "start": 574.08,
+        "end": 580.8
+    },
+    {
+        "text": " depende de qué pase con esta expresión. Vamos a ver después que esa instrucción, la que ponemos",
+        "start": 580.8,
+        "end": 589.6
+    },
+    {
+        "text": " tanto luego del DEN como luego del L, puede a su vez ser otra instrucción compuesta. En el ejemplo",
+        "start": 589.6,
+        "end": 597.9200000000001
+    },
+    {
+        "text": " que acabamos de ver tanto la instrucción del DEN como la instrucción del L era instrucciones",
+        "start": 597.9200000000001,
+        "end": 603.32
+    },
+    {
+        "text": " simples. Pero a su vez yo puedo poner toda una instrucción compuesta tanto en el DEN como en",
+        "start": 603.32,
+        "end": 609.48
+    },
+    {
+        "text": " LL que van a venir, ejemplo luego. Fíjense que este diagrama de sintaxis da la opción de venir a",
+        "start": 609.48,
+        "end": 617.24
+    },
+    {
+        "text": " LL o de seguir del largo. ¿Qué les parece que quiere decir eso? Exactamente, vos podés poner",
+        "start": 617.24,
+        "end": 627.36
+    },
+    {
+        "text": " IF, expresión, si da tru, hacer la instrucción que está ya y no ponerle L. En cuyo caso el comportamiento",
+        "start": 627.36,
+        "end": 636.6
+    },
+    {
+        "text": " va a ser si la condición no se cumple salgo, no hago nada. Ahora bien, cuando poner L, cuando no",
+        "start": 636.6,
+        "end": 645.58
+    },
+    {
+        "text": " poner L, bueno ahí la respuesta es depende del comportamiento que queramos que haga el programa.",
+        "start": 645.58,
+        "end": 651.46
+    },
+    {
+        "text": " Van a haber situaciones en las cuales a mí me va a interesar contar con UNELS y van a haber",
+        "start": 651.46,
+        "end": 657.1
+    },
+    {
+        "text": " programas en los cuales a mí no me va a interesar hacer nada si no se cumple la condición. Eso ya",
+        "start": 657.1,
+        "end": 662.34
+    },
+    {
+        "text": " depende de que del problema que se pretenda resolver. Bien, bien, bien, acá lo tenemos escrito",
+        "start": 662.34,
+        "end": 677.4200000000001
+    },
+    {
+        "text": " nuevamente y lo que está aquí es el comportamiento que ya estuvimos describiendo. Se valúa primero la",
+        "start": 677.4200000000001,
+        "end": 684.24
+    },
+    {
+        "text": " expresión que tiene que ser buleana, cidad verdadera, se ejecuta la instrucción 1 y cidad falso, se ejecuta",
+        "start": 684.24,
+        "end": 691.34
+    },
+    {
+        "text": " la instrucción 2 y recordemos que la parte del L con la instrucción 2 es opcional, o sea, si",
+        "start": 691.34,
+        "end": 699.0600000000001
+    },
+    {
+        "text": " quiero no ponerla puedo no colocarla. Y acá tenemos justamente esta situación, se colocó IF, se colocó",
+        "start": 699.0600000000001,
+        "end": 714.5
+    },
+    {
+        "text": " DEN y no se colocó L. En este caso es lo que dijimos, si la expresión da verdadero se ejecuta",
+        "start": 714.5,
+        "end": 721.9
+    },
+    {
+        "text": " esta y si la expresión da falso sale y no hace nada más. Nuevamente dependiendo de que es lo que",
+        "start": 721.9,
+        "end": 731.18
+    },
+    {
+        "text": " queramos resolver, veremos en cada caso si corresponde y colocaron no L.",
+        "start": 731.18,
+        "end": 735.26
+    },
+    {
+        "text": " Si, bueno, en ese caso si las opciones son más de 2, ahí va a venir la otra estructura de",
+        "start": 735.26,
+        "end": 748.8199999999999
+    },
+    {
+        "text": " selección que es el case. El IF se reserva cuando vos tenés que decidir entre 2 caminos de ejecución",
+        "start": 748.8199999999999,
+        "end": 755.42
+    },
+    {
+        "text": " o como mucho 2, si son más de 2, vamos a ver que la que corresponde usar es el case.",
+        "start": 755.42,
+        "end": 762.02
+    },
+    {
+        "text": " Al resto, bueno, acá tenemos un ejemplo donde tanto la estructura que colocamos a continuación",
+        "start": 762.02,
+        "end": 780.54
+    },
+    {
+        "text": " del DEN, como la que colocamos a continuación del L son compuestas, son secuencias y como todas",
+        "start": 780.54,
+        "end": 789.54
+    },
+    {
+        "text": " las secuencias debe estar encerrada entre que y que, entre vinien. Resulta que en este caso si",
+        "start": 789.54,
+        "end": 799.3399999999999
+    },
+    {
+        "text": " efectivamente se cumple que i es mayor que 0, yo quiero ejecutar 2 instrucciones, no una sola.",
+        "start": 799.3399999999999,
+        "end": 806.02
+    },
+    {
+        "text": " Entonces esas 2 instrucciones la ciencia en una instrucción compuesta que es una secuencia encerrada",
+        "start": 806.02,
+        "end": 813.86
+    },
+    {
+        "text": " por vinien. Lo que voy a hacer si es mayor que 0 va a ser entrar al vin, ejecutar esta",
+        "start": 813.86,
+        "end": 823.54
+    },
+    {
+        "text": " asignación y ejecutar este mensaje. Fíjense que si yo me concentro en lo que está dentro de vinien,",
+        "start": 823.54,
+        "end": 830.82
+    },
+    {
+        "text": " esto cumple con la sintaxis de la secuencia y es el mecanismo del que yo dispongo para entre comillas",
+        "start": 830.82,
+        "end": 838.82
+    },
+    {
+        "text": " poder hacer más de una cosa cuando se cumple la condición. Sí. Es necesario poner este vinien",
+        "start": 839.3000000000001,
+        "end": 853.38
+    },
+    {
+        "text": " y este en por el hecho de que lo que tiene que ir luego del DEN tiene que ser una instrucción.",
+        "start": 853.38,
+        "end": 859.7
+    },
+    {
+        "text": " Si es una instrucción simple la pones directo. Si es una instrucción compuesta, en este caso en este",
+        "start": 860.5,
+        "end": 868.46
+    },
+    {
+        "text": " ejemplo puntual es una secuencia y de acuerdo a la sintaxis de la secuencia que vimos antes,",
+        "start": 868.46,
+        "end": 873.3000000000001
+    },
+    {
+        "text": " toda secuencia se encierra entre vinien. Todo esto ponele que están cerrado en el vinien de",
+        "start": 873.3000000000001,
+        "end": 885.7
+    },
+    {
+        "text": " todo el programa. Está bien? O sea no es necesario un vin antes del IF y otro en nuevo de DEN, no.",
+        "start": 885.7,
+        "end": 892.82
+    },
+    {
+        "text": " No es necesario excepto por el vinien en propios de todo el programa. Y va por ahí.",
+        "start": 892.82,
+        "end": 900.58
+    },
+    {
+        "text": " El y otra vez vinen con dos instrucciones adentro. En este ejemplo puntual quisimos hacer dos",
+        "start": 900.58,
+        "end": 913.1800000000001
+    },
+    {
+        "text": " instrucciones si se cumple la condición y otras dos instrucciones si no se cumple la condición.",
+        "start": 913.1800000000001,
+        "end": 919.22
+    },
+    {
+        "text": " Se va entendiendo? O sea que hasta el momento si yo quiero hacer más de una cosa tanto a",
+        "start": 919.22,
+        "end": 929.7
+    },
+    {
+        "text": " continuación del DEN como a continuación del ELS, debo poner una secuencia con vinien y las",
+        "start": 929.7,
+        "end": 936.58
+    },
+    {
+        "text": " instrucciones que haya dentro. Si es una sola instrucción simple se puede colocar directamente.",
+        "start": 936.58,
+        "end": 944.1800000000001
+    },
+    {
+        "text": " Como vimos en el ejemplo de SPAR. Queda claro esto? Bien, o sea que acá tenemos una estructura",
+        "start": 944.18,
+        "end": 958.4599999999999
+    },
+    {
+        "text": " de selección simple que está anidando estructuras de secuencia. Van a ver que a medida que avancemos",
+        "start": 958.4599999999999,
+        "end": 968.66
+    },
+    {
+        "text": " las diferentes estructuras se pueden anidar. Anidar quiere decir colocar unas en bebidas dentro",
+        "start": 968.66,
+        "end": 976.86
+    },
+    {
+        "text": " de otras. Y acá donde empieza un poco entre comillas el arte de la programación. Uno tiene",
+        "start": 976.86,
+        "end": 983.74
+    },
+    {
+        "text": " que dar con esas combinaciones adecuadas para lograr el comportamiento esperado en el programa.",
+        "start": 983.74,
+        "end": 989.62
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 992.66,
+        "end": 993.3
+    },
+    {
+        "text": " Hasta acá. Luego. Es importante por temas sobre todo de claridad, sobre todo de lo que vamos a",
+        "start": 993.3,
+        "end": 1007.66
+    },
+    {
+        "text": " llamar estilo de programación. No así por una cuestión de compilación utilizar una indentación",
+        "start": 1007.66,
+        "end": 1017.02
+    },
+    {
+        "text": " adecuada. Sabe lo que quiere decir intentar? ¿Cómo? Empezar una línea más adelante, dejar un espacio,",
+        "start": 1017.02,
+        "end": 1029.5
+    },
+    {
+        "text": " dejar lo que muchas veces se le hice una sangrilla. Está bien. La indentación que va de la mano con una",
+        "start": 1029.5,
+        "end": 1038.34
+    },
+    {
+        "text": " buena alineación del código, es importante por temas de claridad, por temas de estilo, por temas",
+        "start": 1038.34,
+        "end": 1047.58
+    },
+    {
+        "text": " de proligidad. Al compilador no le importa si la indentación es prolíja o es una chanchada.",
+        "start": 1047.58,
+        "end": 1055.4599999999998
+    },
+    {
+        "text": " Compilador, lo que va a chequear es que si tienes un vigín tenga talent en el lugar que corresponde.",
+        "start": 1055.4599999999998,
+        "end": 1061.02
+    },
+    {
+        "text": " Ahora si los pusiste alineados o no, al compilador no le va a importar. Pero a otros programadores,",
+        "start": 1061.02,
+        "end": 1068.3
+    },
+    {
+        "text": " que lean tu código, les va a facilitar que voce los desinventados de manera razonable.",
+        "start": 1068.3,
+        "end": 1074.4199999999998
+    },
+    {
+        "text": " Entonces, lo que tenemos acá son algunos ejemplos de estilo de indentación. Ustedes pueden optar",
+        "start": 1076.58,
+        "end": 1085.1399999999999
+    },
+    {
+        "text": " por el que prefieran y de nuevo no va a afectar a lo que es la combinación del programa. Lo que",
+        "start": 1085.1399999999999,
+        "end": 1092.3799999999999
+    },
+    {
+        "text": " nosotros les pedimos es que si ustedes adoptan un estilo de indentación sean consecuentes y",
+        "start": 1092.38,
+        "end": 1098.7
+    },
+    {
+        "text": " usen siempre el mismo estilo de indentación. Porque si no, porque quieren intentar, si mezclamos",
+        "start": 1098.7,
+        "end": 1104.7
+    },
+    {
+        "text": " estilos de indentación al final la proligidad deja de ser tal. Acá hay diferentes gustos.",
+        "start": 1104.7,
+        "end": 1112.3000000000002
+    },
+    {
+        "text": " Está lo que se conoce como el estilo Weir, que es el que nosotros vimos en el ejemplo anterior.",
+        "start": 1112.3000000000002,
+        "end": 1117.94
+    },
+    {
+        "text": " Fíjense, vigín y en a la misma altura del lisp y luego vigín en a la misma altura del en y",
+        "start": 1117.94,
+        "end": 1127.3
+    },
+    {
+        "text": " enseguirita el lisp. Esa es un estilo de indentación posible. Otro estilo de indentación posible es",
+        "start": 1127.3,
+        "end": 1134.74
+    },
+    {
+        "text": " lo que si conoce como carne y ganirrichi. En vez de poner vigín acá se pone a continuación de",
+        "start": 1134.74,
+        "end": 1141.26
+    },
+    {
+        "text": " la palabra D. El vigín, en vez de ponerlo en la línea siguiente al lisp, se pone al lado del lisp.",
+        "start": 1141.26,
+        "end": 1147.18
+    },
+    {
+        "text": " Esta es otra indentación posible. Va a funcionar exactamente igual si hago aquella o hago esta.",
+        "start": 1147.18,
+        "end": 1153.9
+    },
+    {
+        "text": " Otra, el estilo con valina, poner vigín y en a la derecha del den y no abajo. Es otro estilo de",
+        "start": 1156.88,
+        "end": 1166.7
+    },
+    {
+        "text": " indentación posible. Entonces, ustedes pueden adoptar el que prefieran. A efectos de la",
+        "start": 1166.7,
+        "end": 1173.14
+    },
+    {
+        "text": " compilación va a ser lo mismo. Tratarde que una vez que eligen uno sean consecuentes y apliquen el",
+        "start": 1173.14,
+        "end": 1179.7
+    },
+    {
+        "text": " mismo que elijan siempre. Y a la pregunta de si estas cosas restan puntos en los parciales, la respuesta",
+        "start": 1179.7,
+        "end": 1187.0600000000002
+    },
+    {
+        "text": " es normalmente no salvo que justo se haya mandado un código tan pero tan entreberado que la",
+        "start": 1187.0600000000002,
+        "end": 1193.64
+    },
+    {
+        "text": " indentación afecta negativamente. Esto, si lo van aplicando en los prácticos y lo van",
+        "start": 1193.64,
+        "end": 1201.42
+    },
+    {
+        "text": " aplicando en las tareas, va a llevar un punto que lo van a tomar como algo natural.",
+        "start": 1201.42,
+        "end": 1204.18
+    },
+    {
+        "text": " Pero, bueno, insistir, no importa cómo se indente que pasa con la ejecución en los tres casos.",
+        "start": 1206.18,
+        "end": 1211.1000000000001
+    },
+    {
+        "text": " Bien. Bueno, y como dice la frase, el cielo es el límite. Yo puedo, así como puedo,",
+        "start": 1216.1000000000001,
+        "end": 1225.66
+    },
+    {
+        "text": " anidar secuencias dentro de una selección. Yo puedo anidar selecciones a dentro de otras",
+        "start": 1225.66,
+        "end": 1234.0600000000002
+    },
+    {
+        "text": " selecciones. Y vamos a ver más adelante luego de que veamos las estructuras de repetición,",
+        "start": 1234.0600000000002,
+        "end": 1240.74
+    },
+    {
+        "text": " que ahí explota el número de combinaciones que puedes hacer. Podes, puedes anidar repeticiones",
+        "start": 1240.74,
+        "end": 1247.98
+    },
+    {
+        "text": " dentro de selecciones o selecciones dentro de repeticiones o repeticiones a dentro de otras",
+        "start": 1247.98,
+        "end": 1253.6200000000001
+    },
+    {
+        "text": " repeticiones. ¿Cómo vas a elegir anidar las diferentes estructuras de qué depende?",
+        "start": 1253.62,
+        "end": 1260.7399999999998
+    },
+    {
+        "text": " De lo que te enconvenga hacer para que, para resolver el problema, uno tiene que elegir las",
+        "start": 1263.08,
+        "end": 1270.5
+    },
+    {
+        "text": " estructuras adecuadas y combinarlas adecuadamente para lograr el comportamiento esperado. Y esa es la",
+        "start": 1270.5,
+        "end": 1277.5
+    },
+    {
+        "text": " parte entre comillas creativa del programa. Fíjense que acá tengo toda esta instrucción if",
+        "start": 1277.5,
+        "end": 1285.5
+    },
+    {
+        "text": " metida a continuación del den en el if de afuera. Y luego en el el, tengo toda esta otra",
+        "start": 1285.5,
+        "end": 1294.7
+    },
+    {
+        "text": " instrucción if a continuación del el. Pero después la lógica sigue siendo la misma. Se va a",
+        "start": 1294.7,
+        "end": 1302.3
+    },
+    {
+        "text": " evaluar primero esta condición y pongamos que esta condición me da falsa, ¿qué va a pasar?",
+        "start": 1302.3,
+        "end": 1307.22
+    },
+    {
+        "text": " Va a venir a este el y dentro de este el se va a encontrar con otro if y qué es lo que va a pasar",
+        "start": 1307.22,
+        "end": 1314.62
+    },
+    {
+        "text": " ahí. Va a evaluar esta condición y pongamos que le da verdadera, ¿qué va a hacer?",
+        "start": 1314.62,
+        "end": 1319.1599999999999
+    },
+    {
+        "text": " Instrés. O sea, el comportamiento sigue siendo el mismo. Primero a nivel macro, si se quiere,",
+        "start": 1320.18,
+        "end": 1328.3
+    },
+    {
+        "text": " luego a nivel micro en la estructura que tenemos adentro. Entonces conforme empiezan a aumentar las",
+        "start": 1328.3,
+        "end": 1336.1399999999999
+    },
+    {
+        "text": " estructuras, empiezan a aumentar las maneras posibles que yo tengo de combinarlas y de añadirlas.",
+        "start": 1336.1399999999999,
+        "end": 1343.02
+    },
+    {
+        "text": " Más ejemplos, si, si se cumple la condición uno dentro del den, tengo todo esto que está acá,",
+        "start": 1343.02,
+        "end": 1359.78
+    },
+    {
+        "text": " si, y acá yo les pregunto a ustedes. Este es a cual de los dos if pertenece.",
+        "start": 1359.78,
+        "end": 1370.58
+    },
+    {
+        "text": " Acá estamos siendo víctimas de la indentación.",
+        "start": 1373.78,
+        "end": 1376.58
+    },
+    {
+        "text": " Si yo me he ido por la indentación que parecería ser,",
+        "start": 1381.66,
+        "end": 1385.02
+    },
+    {
+        "text": " parecería ser que este el corresponde a este if.",
+        "start": 1386.02,
+        "end": 1389.58
+    },
+    {
+        "text": " Pero en realidad corresponde al if más cercano a él.",
+        "start": 1393.58,
+        "end": 1398.1
+    },
+    {
+        "text": " Acá somos víctimas de una indentación poco feliz, la instrucción anterior se interpreta de",
+        "start": 1399.3,
+        "end": 1407.32
+    },
+    {
+        "text": " esta manera. O sea, si lo habíamos escrito así tendríamos el mismo comportamiento que aquello.",
+        "start": 1407.32,
+        "end": 1413.6399999999999
+    },
+    {
+        "text": " Si quisieras que el segundo if no tuviera él, tendrías que meter un vigín acá y un enda acá.",
+        "start": 1418.4399999999998,
+        "end": 1423.6
+    },
+    {
+        "text": " Cosade obligar a que eso quede bajo el alcance del primer den.",
+        "start": 1425.28,
+        "end": 1430.3999999999999
+    },
+    {
+        "text": " Entonces, ¿cuál es la moral de esto? No seguí en solo por la indentación.",
+        "start": 1431.4,
+        "end": 1437.68
+    },
+    {
+        "text": " Si justo estamos en presencia de un programa que tiene una indentación que por ahí es un poquito confusa,",
+        "start": 1437.68,
+        "end": 1443.68
+    },
+    {
+        "text": " podemos pensar al leer el código que el comportamiento va a ser uno cuando en realidad el comportamiento",
+        "start": 1443.68,
+        "end": 1450.3200000000002
+    },
+    {
+        "text": " va a ser otro. Este es, por más que a la vista parezca alineado con el if de arriba,",
+        "start": 1450.3200000000002,
+        "end": 1456.44
+    },
+    {
+        "text": " en realidad corresponde al segundo if y el primer if tiene él no, el primero es un if sin él.",
+        "start": 1457.0,
+        "end": 1466.24
+    },
+    {
+        "text": " Porque de nuevo él corresponde a alif más cercano que tiene él.",
+        "start": 1467.52,
+        "end": 1472.2
+    },
+    {
+        "text": " Creo que acá queda más claro.",
+        "start": 1473.96,
+        "end": 1475.64
+    },
+    {
+        "text": " E incluso poniendo vigín en, dejamos aún más claro el hecho de que el if de la condición 1 tiene",
+        "start": 1476.64,
+        "end": 1486.44
+    },
+    {
+        "text": " esto y que no tiene él. Se va entendiendo. Así que ustedes tienen que hacer un uso adecuado,",
+        "start": 1486.44,
+        "end": 1495.3200000000002
+    },
+    {
+        "text": " no solamente de la indentación, sino además colocar vigín en donde corresponda para asegurarse que",
+        "start": 1495.3200000000002,
+        "end": 1504.72
+    },
+    {
+        "text": " la anidación de las estructuras se produzca como nosotros queremos y no como nos engañe la vista.",
+        "start": 1504.72,
+        "end": 1511.32
+    },
+    {
+        "text": " Bueno, acá lo tenemos un poquito más claro.",
+        "start": 1518.32,
+        "end": 1526.08
+    },
+    {
+        "text": " Específicamente pusimos vigín en cerrando esto, que es lo que me había preguntado el compañero.",
+        "start": 1526.08,
+        "end": 1532.88
+    },
+    {
+        "text": " ¿Cómo logro que él es que de asociado el primer if y no al segundo?",
+        "start": 1533.4,
+        "end": 1538.16
+    },
+    {
+        "text": " Respuesta, ponemos vigín en acá. Entonces estamos generando que lo que empieza acá y termina acá",
+        "start": 1538.16,
+        "end": 1546.8000000000002
+    },
+    {
+        "text": " es lo que corresponde al primer den. Por lo tanto este él va a quedar asociado al primer if y no al",
+        "start": 1546.8000000000002,
+        "end": 1554.24
+    },
+    {
+        "text": " segundo. Queda claro. Bueno acá tenemos otra manera de verlo y ¿cómo perdón?",
+        "start": 1554.24,
+        "end": 1566.6
+    },
+    {
+        "text": " Estamos en el de arriba o en el de abajo? En el de arriba. Si se cumple la condición 1 que va a pasar",
+        "start": 1570.1,
+        "end": 1575.8
+    },
+    {
+        "text": " dentro al vigín y ahí va a preguntar si se cumple la condición 2 y si se cumple que va a pasar,",
+        "start": 1576.76,
+        "end": 1583.72
+    },
+    {
+        "text": " va a ser la instrucción 1. Ahora si esta no se cumple va a venir hasta él, no se terminó ahí.",
+        "start": 1583.72,
+        "end": 1592.76
+    },
+    {
+        "text": " Fíjense que lo que va a pasar en la práctica es que va a llegar acá cuando pase que cosa,",
+        "start": 1592.76,
+        "end": 1599.32
+    },
+    {
+        "text": " cuando se cumplan las dos condiciones a la vez y acá tenemos otra manera de expresar lo mismo,",
+        "start": 1600.32,
+        "end": 1609.56
+    },
+    {
+        "text": " utilizando el operador Andra. La clase pasada yo les dije que vamos a hablar del And, del Ori",
+        "start": 1609.56,
+        "end": 1616.76
+    },
+    {
+        "text": " del Not, hoy vamos a empezar a hablar de ellos. Sí. Es más elegante porque es más",
+        "start": 1616.76,
+        "end": 1629.2
+    },
+    {
+        "text": " compacta, en términos de eficiencia va a ser igual si consideramos que la evaluación del",
+        "start": 1629.2,
+        "end": 1637.64
+    },
+    {
+        "text": " áncer realiza de cierta manera que vamos a ver en un ratito. Está bien. Ante dos codios que",
+        "start": 1637.64,
+        "end": 1643.0800000000002
+    },
+    {
+        "text": " son igualmente eficientes, se considera más elegante el más compacto. Dime.",
+        "start": 1643.0800000000002,
+        "end": 1648.48
+    },
+    {
+        "text": " ¿Cómo perdón? Y donde, donde se punto y coma. O sea, en Pascal tenemos punto y coma pero como",
+        "start": 1648.48,
+        "end": 1669.52
+    },
+    {
+        "text": " separador de instrucciones solamente. Fíjense que acá estamos diciendo si se cumple la condición 1 y",
+        "start": 1669.52,
+        "end": 1676.28
+    },
+    {
+        "text": " se cumple la condición 2, vamos a ejecutar la instrucción 1. Que lo mismo que pasa ahí si yo",
+        "start": 1676.28,
+        "end": 1681.56
+    },
+    {
+        "text": " logré superar ambas condiciones. Ahora bien, acá yo en el L tengo que agregar una segunda pregunta que",
+        "start": 1681.56,
+        "end": 1689.72
+    },
+    {
+        "text": " arriba no era necesaria, que es yo voy a llegar en la instrucción 2 únicamente si no se cumple la",
+        "start": 1689.72,
+        "end": 1697.16
+    },
+    {
+        "text": " condición 1. ¿Qué es lo que pasaba arriba? ¿Qué pasaba si la condición 1 me daba falso? Venía a",
+        "start": 1697.16,
+        "end": 1703.6399999999999
+    },
+    {
+        "text": " leer si ejecutaba la instrucción 2. O sea que uno tiene diferentes maneras de lograr el mismo",
+        "start": 1703.64,
+        "end": 1710.72
+    },
+    {
+        "text": " comportamiento. ¿Ah? Y ahí va a pasar que si esas maneras diferentes son igualmente eficientes en",
+        "start": 1710.72,
+        "end": 1721.0
+    },
+    {
+        "text": " principio da lo mismo una que la otra. Ahí nos vamos a fijar en las cuestiones de estilo. Vamos a",
+        "start": 1721.0,
+        "end": 1727.48
+    },
+    {
+        "text": " elegirla que sea más compacta por un tema declarida y de ahorrar los líneas de código. Ahora si yo",
+        "start": 1727.48,
+        "end": 1733.5200000000002
+    },
+    {
+        "text": " tengo dos alternativas para hacerlo mismo y una es más eficiente que la otra si o si voy a optar por",
+        "start": 1733.52,
+        "end": 1740.92
+    },
+    {
+        "text": " cual. Por la más eficiente que quiere decir más eficiente y que quiere decir más rápida.",
+        "start": 1740.92,
+        "end": 1748.6399999999999
+    },
+    {
+        "text": " Que consume menos instrucciones menos pasos, ojo con la frase menos código porque puede ser",
+        "start": 1751.2,
+        "end": 1759.08
+    },
+    {
+        "text": " amigo, a ese, se necesitan menos instrucciones para resolverlo. Sí.",
+        "start": 1759.08,
+        "end": 1764.48
+    },
+    {
+        "text": " Sí por la siguiente razón. Imaginate que se cumple la condición 1 y no se cumple la condición 2 en",
+        "start": 1769.08,
+        "end": 1776.32
+    },
+    {
+        "text": " este de acá arriba. ¿Vas a llegar a hacer la instrucción 2? En este? En este no. Si se cumple la",
+        "start": 1776.32,
+        "end": 1785.6999999999998
+    },
+    {
+        "text": " condición 1, entra al bien. Preguntos si se cumple la condición 2 y si me da que no que pasa, termine ahí,",
+        "start": 1785.7,
+        "end": 1792.3
+    },
+    {
+        "text": " no hice la instrucción 2. Entonces si yo no le pongo esta segunda pregunta acá y la primera",
+        "start": 1792.3,
+        "end": 1799.26
+    },
+    {
+        "text": " condición ya me da falsa va a venir acá y va a hacer esta si o si. Mientras que arriba no pasaba",
+        "start": 1799.26,
+        "end": 1806.5
+    },
+    {
+        "text": " lo mismo. Por eso es que es necesario esa segunda pregunta. Se va entendiendo bien. Bueno,",
+        "start": 1806.5,
+        "end": 1820.78
+    },
+    {
+        "text": " vamos a ver un ejemplo que utiliza anidación de secuencia de sentencia SIF, perdón, para",
+        "start": 1820.78,
+        "end": 1828.02
+    },
+    {
+        "text": " determinar si un año es visito. Vamos a usar la siguiente definición de año visito. Decimos que",
+        "start": 1828.02,
+        "end": 1839.78
+    },
+    {
+        "text": " un año es visito si cumple alguna de las siguientes condiciones. Tiene que ser múltiplo de 4 sin ser",
+        "start": 1839.78,
+        "end": 1850.42
+    },
+    {
+        "text": " múltiplo de 100. Obiene tiene que ser múltiplo de 400. Si cumple esta o cumple esta otra ya alcanza para",
+        "start": 1850.42,
+        "end": 1861.5800000000002
+    },
+    {
+        "text": " decir que el año es visito. Por ejemplo, 1999, 2003 no son años visiestos. Sin embargo, estos",
+        "start": 1861.5800000000002,
+        "end": 1876.46
+    },
+    {
+        "text": " que están acá sí son años visiestos. Y los que son años visiestos es porque cumple. Obien todo esto o",
+        "start": 1876.46,
+        "end": 1884.42
+    },
+    {
+        "text": " bien esto o otro. Bueno, esto lo podemos programar utilizando IF. Bien. Empezamos. Programa",
+        "start": 1884.42,
+        "end": 1908.52
+    },
+    {
+        "text": " visiesto. Declaramos el año de tipo INTEYER. Y le pedimos al usuario que ingrese un año. Lo leemos.",
+        "start": 1908.52,
+        "end": 1919.8
+    },
+    {
+        "text": " Y a continuación empezamos a ver qué es lo que pasa. Digan un año. 2002. Vamos a ver qué pasa en el",
+        "start": 1921.48,
+        "end": 1932.8
+    },
+    {
+        "text": " caso concreto que ejecutamos este programa con 2002. Solo para fijar ideas. La idea es que el",
+        "start": 1932.8,
+        "end": 1938.72
+    },
+    {
+        "text": " programa funcione bien. No importa el año que le ingresemos. Si el año es negativo entonces le",
+        "start": 1938.72,
+        "end": 1948.08
+    },
+    {
+        "text": " vamos a mostrar este mensaje al usuario. El año debe ser un número positivo. Vamos a considerar",
+        "start": 1948.08,
+        "end": 1954.04
+    },
+    {
+        "text": " desde el año 0 en adelante. Si llegan a pasar que me ingresar un negativo se va a mostrar este",
+        "start": 1954.04,
+        "end": 1961.8
+    },
+    {
+        "text": " mensaje y qué va a pasar con esto. Ya está. Se descarta todo lo que venga a continuación del ELS y qué es",
+        "start": 1961.8,
+        "end": 1969.36
+    },
+    {
+        "text": " todo lo que viene a continuación del ELS? Todo esto otro. Pero no es nuestro caso porque nosotros",
+        "start": 1969.36,
+        "end": 1977.48
+    },
+    {
+        "text": " dijimos que año 2002. O sea que no es negativo. Por lo tanto la ejecución va a ir a donde. A este ELS.",
+        "start": 1977.48,
+        "end": 1986.9199999999998
+    },
+    {
+        "text": " ¿Está bien? Bueno vamos a preguntar si 2002 módulo 400 es igual a 0. O sea vamos a preguntar si es",
+        "start": 1987.88,
+        "end": 1999.04
+    },
+    {
+        "text": " múltiplo de 400. 2002 no es múltiplo de 400. Si lo fuera ya me alcanza para qué. Para mostrar",
+        "start": 1999.04,
+        "end": 2010.4
+    },
+    {
+        "text": " este cartel y decir que es ficiesto. Pero resulta que no. Que no es múltiplo de 400. Entonces",
+        "start": 2010.4,
+        "end": 2015.48
+    },
+    {
+        "text": " que hacemos. Pasamos para este ELS. Vamos a preguntar si es múltiplo de 100. Si 2002 es múltiplo de 100.",
+        "start": 2015.48,
+        "end": 2027.4
+    },
+    {
+        "text": " No. Entonces que va a pasar con este mensaje. No lo vamos a hacer. Vamos a ir a donde? Vamos a ir a",
+        "start": 2027.4,
+        "end": 2035.3600000000001
+    },
+    {
+        "text": " este otro ELS. Y acabamos a preguntar si 2002 es múltiplo de quién. Es múltiplo de 4. 2002 es múltiplo",
+        "start": 2035.36,
+        "end": 2043.6399999999999
+    },
+    {
+        "text": " de 4? Si o no. ¿No? ¿Cómo hacemos para saber si es múltiplo de 4? Lo dividimos entre 4 y nos fijamos",
+        "start": 2043.6399999999999,
+        "end": 2052.92
+    },
+    {
+        "text": " qué cosa. Bien. ¿Y dar restos 0 si divido 2002 entre 4? ¿Cuánto da? ¿Dar resto 2? Yo no",
+        "start": 2052.92,
+        "end": 2065.04
+    },
+    {
+        "text": " pregunté eso. Yo pregunté si al resto me da basero. El resto no da 0. Entonces que hacemos.",
+        "start": 2065.04,
+        "end": 2071.48
+    },
+    {
+        "text": " Venimos a este ELS y acá es que llevamos a que no es múltiplo de 100. Pero usan ven que durante el",
+        "start": 2073.48,
+        "end": 2079.26
+    },
+    {
+        "text": " camino nosotros contemplamos todas las posibles situaciones que se podían presentar. Lo que?",
+        "start": 2079.26,
+        "end": 2086.7000000000003
+    },
+    {
+        "text": " ¿Y si no contempló todas, me puede pasar que haya algún caso en el cual no le mostró nada del",
+        "start": 2086.7000000000003,
+        "end": 2094.1400000000003
+    },
+    {
+        "text": " usuario. A mí que me pidieron, ¿cuál fue la consigna? Determinarse un año es visiesto. Yo",
+        "start": 2094.1400000000003,
+        "end": 2101.7400000000002
+    },
+    {
+        "text": " necesito que dar una respuesta no importa qué año me den. Y el caso que sea múltiplo de 400,",
+        "start": 2101.74,
+        "end": 2114.4599999999996
+    },
+    {
+        "text": " quedó contemplado en este código. Entonces está bien, este contemplado. Pero si a mí me hubiera",
+        "start": 2114.4599999999996,
+        "end": 2124.74
+    },
+    {
+        "text": " dado que el año era múltiplo de 400 se otraminaba acá. Pero a ELS fui por las dudas que no lo fuera.",
+        "start": 2124.74,
+        "end": 2130.8999999999996
+    },
+    {
+        "text": " Una rormuy común es no contemplar todas las posibles situaciones. Capas que el programa te compila.",
+        "start": 2134.74,
+        "end": 2141.62
+    },
+    {
+        "text": " Pero no se ejecuta bien. ¿Y qué no se ejecute bien? Necesariamente quiere decir que se rompe durante",
+        "start": 2141.62,
+        "end": 2149.8999999999996
+    },
+    {
+        "text": " la ejecución. No, que no se ejecute bien puede ser que se rompa porque tiene un bug o que por",
+        "start": 2149.9,
+        "end": 2157.46
+    },
+    {
+        "text": " alguna razón no dé el comportamiento esperado. Por ejemplo que se espere que produzca una salida y que",
+        "start": 2157.46,
+        "end": 2164.7400000000002
+    },
+    {
+        "text": " yo me vaya por un laberín total de instrucciones que no llevo a mostrar ningún mensaje. Y eso es lo que uno",
+        "start": 2164.7400000000002,
+        "end": 2171.7400000000002
+    },
+    {
+        "text": " va adquiriendo con práctica. Mucha práctica. Hasta acá. No entendí.",
+        "start": 2171.74,
+        "end": 2183.74
+    },
+    {
+        "text": " No, es va a quedar esperando. O sea ingrese un año y va a quedar ahí titilando. A que el usuario venga y",
+        "start": 2187.74,
+        "end": 2195.06
+    },
+    {
+        "text": " escriba algo. Baja el usuario y va a quedar esperando en la próxima línea. Pero en el momento en que tú",
+        "start": 2195.06,
+        "end": 2202.2599999999998
+    },
+    {
+        "text": " le ingrese un número, ahí va lo valer y va a proceder ejecutarlo que viene después. Acuérdense",
+        "start": 2202.2599999999998,
+        "end": 2208.62
+    },
+    {
+        "text": " en programación uno estamos teniendo un supuesto. Que es que si le pido un entero, ingresa un entero.",
+        "start": 2208.62,
+        "end": 2215.58
+    },
+    {
+        "text": " No va a encajar una letra ni un número real. Esa es un supuesto que salvo que digamos otra cosa para",
+        "start": 2217.18,
+        "end": 2224.14
+    },
+    {
+        "text": " algún ejercicio puntual vale para todo el curso de programación uno. Hasta acá. Bien. Bueno, vamos a",
+        "start": 2224.14,
+        "end": 2237.58
+    },
+    {
+        "text": " empezar a ver un poco qué tipo de operadores pueden participar de las diferentes condiciones de las",
+        "start": 2237.58,
+        "end": 2245.66
+    },
+    {
+        "text": " expresiones huleales. Por ejemplo tenemos los operadores relacionales que sirven para comparar",
+        "start": 2245.66,
+        "end": 2252.8199999999997
+    },
+    {
+        "text": " valores de tipo simples. Yo puedo comparar enteros entre sí, o puedo comparar caracteres entre sí,",
+        "start": 2252.82,
+        "end": 2259.3
+    },
+    {
+        "text": " o puedo comparar reales entre sí. Entonces yo puedo preguntar a ver si dos operandos son iguales,",
+        "start": 2259.3,
+        "end": 2268.86
+    },
+    {
+        "text": " es decir, si tienen el mismo valor, o si son distintos, este menor con un mayor pegadito en",
+        "start": 2268.86,
+        "end": 2275.94
+    },
+    {
+        "text": " Pascal significa distinto, o sea si tienen distinto valor, o si el primero es menor que el segundo,",
+        "start": 2275.94,
+        "end": 2281.6200000000003
+    },
+    {
+        "text": " o mayor o menor igual o mayor igual. Cualquier adestos se conocen como operadores relacionales.",
+        "start": 2281.62,
+        "end": 2288.2999999999997
+    },
+    {
+        "text": " Que de hecho ya estuvimos haciendo uso de ellos en los ejemplos que estuvimos pasando.",
+        "start": 2290.62,
+        "end": 2294.9
+    },
+    {
+        "text": " Pero también aparecen los operadores lógicos, el an, el or y el not. Y en esta tablita estamos",
+        "start": 2296.2999999999997,
+        "end": 2308.38
+    },
+    {
+        "text": " resumiendo como es lo que se llama la semántica de esos operadores o sea cómo se comportan.",
+        "start": 2308.38,
+        "end": 2314.6600000000003
+    },
+    {
+        "text": " Entonces imaginemos que a vale tru y que ve vale tru.",
+        "start": 2317.38,
+        "end": 2323.1
+    },
+    {
+        "text": " And aplicado a a y a ve también me va a dar tru. Es decir si ambas condiciones son verdaderas,",
+        "start": 2325.38,
+        "end": 2334.26
+    },
+    {
+        "text": " el an también es verdadero. Y de hecho es el único caso en el cual el an es verdadero,",
+        "start": 2334.26,
+        "end": 2341.5
+    },
+    {
+        "text": " para que sea verdadero un an tiene que pasar que ambas partes sean verdaderas, donde cualquiera",
+        "start": 2341.5,
+        "end": 2348.78
+    },
+    {
+        "text": " de ellas o ambas sean falsas el resultado del an es false. La manera fácil de acordarse lo es",
+        "start": 2348.78,
+        "end": 2359.38
+    },
+    {
+        "text": " únicamente da tru cuando ambos son tru. ¿Ve bien? El or lo podemos pensar de alguna manera un",
+        "start": 2359.38,
+        "end": 2370.26
+    },
+    {
+        "text": " poco complementaria en algún sentido. El único caso en que da false es cuando ambas partes son falsas.",
+        "start": 2370.26,
+        "end": 2377.6600000000003
+    },
+    {
+        "text": " Al or le alcanza con que una de las dos partes sea verdadera o que ambas partes sean verdaderas.",
+        "start": 2378.86,
+        "end": 2385.1400000000003
+    },
+    {
+        "text": " En cualquiera de esos casos da tru. Fíjense que en estos tres acá ambos son tru, acá solo a,",
+        "start": 2385.7,
+        "end": 2393.1
+    },
+    {
+        "text": " acá solo ve sin embargo en los tres al resultado fue tru. O sea que la manera de acordarse del",
+        "start": 2393.1,
+        "end": 2399.7
+    },
+    {
+        "text": " or es da falso únicamente cuando ambas partes son falsas. Y por último tenemos not a la negación",
+        "start": 2399.7,
+        "end": 2411.18
+    },
+    {
+        "text": " de una expresión buliana lo que hace es invierte su valor. O sea si es tru y la niego me queda false y si es",
+        "start": 2412.14,
+        "end": 2420.54
+    },
+    {
+        "text": " false y la niego me queda tru. O cualquiera de los tres operadores lógicos se pueden utilizar también",
+        "start": 2420.54,
+        "end": 2427.54
+    },
+    {
+        "text": " a la hora de construir expresiones bulanas. ¿Ah? ¿Qué van claros estos? Vamos a ver después que",
+        "start": 2427.54,
+        "end": 2436.18
+    },
+    {
+        "text": " esto van a aparecer no solamente en las condiciones de los ifs sino también en las condiciones de las",
+        "start": 2436.18,
+        "end": 2442.06
+    },
+    {
+        "text": " estructuras repetitivas, wile y rippie. Bueno esto que acabamos de ver explica cómo es que",
+        "start": 2442.06,
+        "end": 2459.8199999999997
+    },
+    {
+        "text": " se valúa tanto el an como el or como el nombre. Y acá vamos a hacer una distinción entre lo que se",
+        "start": 2459.82,
+        "end": 2469.1000000000004
+    },
+    {
+        "text": " conoce como el Pascal estándar y el frí Pascal. Pascal estándar se refiere al Pascal que está",
+        "start": 2469.1000000000004,
+        "end": 2477.5800000000004
+    },
+    {
+        "text": " explicado en el libro del curso. Ahora bien existen diversos compiladores posibles para el mismo",
+        "start": 2477.5800000000004,
+        "end": 2486.38
+    },
+    {
+        "text": " lenguaje. Nosotros en programación uno cual estamos usando. Frí Pascal que es un compilador",
+        "start": 2486.38,
+        "end": 2493.3
+    },
+    {
+        "text": " concreto para Pascal y puede suceder que algunos compiladores tengan alguna diferencia con el lenguaje",
+        "start": 2493.3,
+        "end": 2501.7400000000002
+    },
+    {
+        "text": " estándar. Bueno resulta que frí Pascal tiene algunas diferencias con el Pascal estándar en",
+        "start": 2501.7400000000002,
+        "end": 2509.7400000000002
+    },
+    {
+        "text": " cuanto a la evaluación de los operadores lógicos. Nosotros en este curso para eso nos vamos a",
+        "start": 2509.74,
+        "end": 2517.72
+    },
+    {
+        "text": " guiar por el frí Pascal. O sea en todos los ejercicios en la tarea en los parciales salvo que",
+        "start": 2517.72,
+        "end": 2527.02
+    },
+    {
+        "text": " se indique otra cosa ustedes asuman el comportamiento del frí Pascal. ¿Qué va claro eso? Sí. ¿Es lo mismo para el",
+        "start": 2527.02,
+        "end": 2538.74
+    },
+    {
+        "text": " inoxopravujos? Entonces por ejemplo que hace el Pascal estándar con el ando. El Pascal estándar",
+        "start": 2538.74,
+        "end": 2549.3799999999997
+    },
+    {
+        "text": " con el ando se fijan la expresión 1 y calcula su valor. Luego se fijan la expresión 2 y calcula su",
+        "start": 2549.3799999999997,
+        "end": 2558.5
+    },
+    {
+        "text": " valor y recién después calcula el resultado del ando. O sea el Pascal del libro necesariamente",
+        "start": 2558.5,
+        "end": 2568.58
+    },
+    {
+        "text": " calcula el resultado de cada parte del ando para calcular el resultado. Ahora vamos a mirar de nuevo la",
+        "start": 2568.58,
+        "end": 2575.62
+    },
+    {
+        "text": " semántica del ando. Es necesario hacer eso siempre. Miremos acá. ¿Qué pasa por ejemplo si yo veo",
+        "start": 2575.62,
+        "end": 2585.86
+    },
+    {
+        "text": " que a medio false? Yo ya sé que el resultado va a ser false. No me importa qué pasa con B tanto si",
+        "start": 2585.86,
+        "end": 2595.74
+    },
+    {
+        "text": " V vale true como si V vale false como la parte de la izquierda ya me dio falso. A mí me alcanza para",
+        "start": 2595.74,
+        "end": 2603.8999999999996
+    },
+    {
+        "text": " saber que el resultado final de falso no tiene sentido ir y evaluar la segunda. Bueno frí Pascal hace",
+        "start": 2603.8999999999996,
+        "end": 2610.2999999999997
+    },
+    {
+        "text": " eso. Si la primera ya le dio false ni se gasta en ver qué pasa con B y eso es más eficiente porque",
+        "start": 2610.2999999999997,
+        "end": 2618.62
+    },
+    {
+        "text": " demora menos se ahorra evaluar la segunda condición que además no tiene sentido evaluarla porque",
+        "start": 2619.62,
+        "end": 2625.7799999999997
+    },
+    {
+        "text": " ya sabemos que el resultado final igual va a ser false. ¿Ve bien? Bueno algo parecido vamos a ver",
+        "start": 2625.7799999999997,
+        "end": 2635.58
+    },
+    {
+        "text": " después que ocurre con el or. Fri Pascal evalua lo que se llama usando circuito corto.",
+        "start": 2635.58,
+        "end": 2642.3399999999997
+    },
+    {
+        "text": " Circuito corto significa me fijó en la primera de la dos y si con eso ya me alcanza para el",
+        "start": 2642.34,
+        "end": 2648.7400000000002
+    },
+    {
+        "text": " resultado total directamente de hoy el resultado total sin evaluar la parte derecha. Así lo hace",
+        "start": 2648.7400000000002,
+        "end": 2656.1000000000004
+    },
+    {
+        "text": " frí Pascal y así lo vamos a hacer en todo el curso. Queda claro eso. Entonces para evaluar el",
+        "start": 2656.1000000000004,
+        "end": 2665.38
+    },
+    {
+        "text": " antiguo, si no se le dios false, frí Pascal no evalua la segunda expresión y ya da false como el",
+        "start": 2666.34,
+        "end": 2676.1800000000003
+    },
+    {
+        "text": " resultado de todo. Esto se llama evaluación por circuito corto. Si la primera parte del antiguo",
+        "start": 2676.1800000000003,
+        "end": 2683.94
+    },
+    {
+        "text": " false listo el resultado de todo false. Ahora si di otro, bueno ahí si no tiene más remedio que ver",
+        "start": 2683.94,
+        "end": 2691.06
+    },
+    {
+        "text": " qué pasa con el valor de ellos. ¿Se entendió esto de circuito corto? Es más eficiente. Evalúa la",
+        "start": 2691.06,
+        "end": 2701.62
+    },
+    {
+        "text": " segunda condición únicamente si es estrictamente necesario hacerlo. Pasa exactamente lo mismo con el",
+        "start": 2701.62,
+        "end": 2708.1
+    },
+    {
+        "text": " or. En el or como va a ser, si la primera da qué va a ser qué cosa. Si la primera da true ya",
+        "start": 2708.1,
+        "end": 2716.06
+    },
+    {
+        "text": " alcanza para saber qué el or es true, no importa qué pase con la segunda. Ahora si la primera",
+        "start": 2716.06,
+        "end": 2721.86
+    },
+    {
+        "text": " falsa ahí al or no le queda más remedio que evaluar la segunda. Ahí también decimos que hay",
+        "start": 2721.86,
+        "end": 2727.7
+    },
+    {
+        "text": " evaluación por circuito corto. ¿Se entendió esto? Bueno, entonces ya vimos que pueden aparecer toda",
+        "start": 2727.7,
+        "end": 2741.86
+    },
+    {
+        "text": " una batería de operadores diferentes en nuestras expresiones. Por ejemplo, lo podemos tener",
+        "start": 2741.86,
+        "end": 2752.1
+    },
+    {
+        "text": " operadores armitméticos como el por, el dividido, el div de la división entera, el más y el menos.",
+        "start": 2752.1,
+        "end": 2757.38
+    },
+    {
+        "text": " Podemos tener también operadores relacionales. Hay un operador más que se link, más adelante en el",
+        "start": 2758.2200000000003,
+        "end": 2764.1400000000003
+    },
+    {
+        "text": " curso va a aparecer. Podemos tener los operadores lógicos, el note, el an, el or. Existen diferentes",
+        "start": 2764.14,
+        "end": 2774.22
+    },
+    {
+        "text": " clases de operadores que pueden participar de nuestras expresiones. Y de lo que vamos a hablar",
+        "start": 2774.22,
+        "end": 2781.5
+    },
+    {
+        "text": " acá es de la presidencia. Nosotros un poquito ya estuvimos hablando de presidencia al principio.",
+        "start": 2781.5,
+        "end": 2789.9
+    },
+    {
+        "text": " Decimos que la presidencia de un operador es mayor cuando ese operador es más fuerte y más fuerte",
+        "start": 2790.46,
+        "end": 2797.54
+    },
+    {
+        "text": " que quiere decir. ¿Qué quiere decir más importante? Que se aplica primero y los operadores más",
+        "start": 2797.54,
+        "end": 2807.34
+    },
+    {
+        "text": " débiles son los que tienen menos presidencia que son los que se aplican después. Chao.",
+        "start": 2807.34,
+        "end": 2812.94
+    },
+    {
+        "text": " Por ejemplo, en las expresiones armitméticas, como nos decía la maestra en la escuela, ¿quién",
+        "start": 2812.94,
+        "end": 2821.42
+    },
+    {
+        "text": " es separant términos? Más y menos y por ende, ¿quién es no separant términos? El por y el",
+        "start": 2821.42,
+        "end": 2828.62
+    },
+    {
+        "text": " dividido. Bien, ¿cuáles tienen mayor presidencia? Por y dividido tienen más presidencia que",
+        "start": 2828.62,
+        "end": 2836.18
+    },
+    {
+        "text": " más y menos, o sea, los que se paran términos en los que tienen menos presidencia. Ahora,",
+        "start": 2836.18,
+        "end": 2842.74
+    },
+    {
+        "text": " bien, entre el por y el dividido, la presidencia es igual, están a la misma altura, tienen la misma",
+        "start": 2842.74,
+        "end": 2849.46
+    },
+    {
+        "text": " fuerza. En cuyo caso, si te aparecen dos consecutivos, se aplican en orden de lectura.",
+        "start": 2849.46,
+        "end": 2855.14
+    },
+    {
+        "text": " ¿A bien? Y luego de eso es que se van aplicando los de menor presidencia.",
+        "start": 2856.66,
+        "end": 2860.74
+    },
+    {
+        "text": " Entonces, el por y el dividido estaban en un nivel de presidencia superior que el más y",
+        "start": 2861.7,
+        "end": 2868.2999999999997
+    },
+    {
+        "text": " el menos. Bueno, esto que tenemos acá es una generalización de eso a todos los operadores.",
+        "start": 2868.2999999999997,
+        "end": 2876.1
+    },
+    {
+        "text": " Esto se le perdón de la siguiente manera. Los más fuertes de todos, es decir, ponéle que a",
+        "start": 2876.1,
+        "end": 2884.8999999999996
+    },
+    {
+        "text": " vos te dan una expresión que no tiene ningún paréntesis. Vos ahí te vas a guiar por las presidencias.",
+        "start": 2884.9,
+        "end": 2890.7400000000002
+    },
+    {
+        "text": " Los más fuertes de todos son el lot, el más y el menos, lo que se conocen como operadores",
+        "start": 2890.7400000000002,
+        "end": 2896.7400000000002
+    },
+    {
+        "text": " unarios. Luego, los siguientes en fuerza son los que se conocen como los multiplicativos por",
+        "start": 2896.7400000000002,
+        "end": 2905.86
+    },
+    {
+        "text": " dividido, de mod y el and. En un tercer nivel de fuerza están los aditivos, el más, el menos y el",
+        "start": 2905.86,
+        "end": 2915.06
+    },
+    {
+        "text": " and. Dependiendo de si el más lo pone es entre medio de dos operandos o adelante de uno sola.",
+        "start": 2915.06,
+        "end": 2924.6600000000003
+    },
+    {
+        "text": " Con eso se queda claro. Y los últimos orijones del tarro son los relacionados, son los más",
+        "start": 2924.6600000000003,
+        "end": 2932.1800000000003
+    },
+    {
+        "text": " de bilis de todos. Bien, vamos a ver. Sí. Por ejemplo, vengo para acá. Si yo te pongo esto,",
+        "start": 2932.18,
+        "end": 2952.8999999999996
+    },
+    {
+        "text": " este menos es la resta binario, porque está entre medio de dos operandos. Ahora, si yo escribo",
+        "start": 2952.9,
+        "end": 2963.1
+    },
+    {
+        "text": " directamente, menos uno, lo estoy aplicando adelante de un un cooperando, es el unario. Tan simple",
+        "start": 2963.1,
+        "end": 2970.98
+    },
+    {
+        "text": " como eso. Es igual que en la aritmética habitual. Cuando ustedes trabajaban con los números",
+        "start": 2970.98,
+        "end": 2975.86
+    },
+    {
+        "text": " en teros y le ponés menos un número, se entiende que es el operador que te marca, que te queda un",
+        "start": 2975.86,
+        "end": 2980.38
+    },
+    {
+        "text": " número negativo. Y si se lo ponés entre dos, es el operador de resta. Funciona exactamente igual en",
+        "start": 2980.38,
+        "end": 2986.6600000000003
+    },
+    {
+        "text": " páscalo. Bien. Bueno, vamos a ver un poquito estos operadores en acción.",
+        "start": 2986.6600000000003,
+        "end": 2993.26
+    },
+    {
+        "text": " Ahora, mirando acá. Quiero que me digan cuál sería el que se aplica primero. El note es el",
+        "start": 2996.54,
+        "end": 3007.34
+    },
+    {
+        "text": " más fuerte de todo. O sea que si yo le pusiera paréntesis a esto, donde irían. Not P entre paréntesis",
+        "start": 3007.34,
+        "end": 3015.02
+    },
+    {
+        "text": " es lo primero que se valúa. Tengo todo esto. Luego viene or Q&R de estos dos,",
+        "start": 3015.02,
+        "end": 3024.58
+    },
+    {
+        "text": " ¿cuál es el que le sigue en presidencia? El AND es más fuerte que el OR. O sea que la segunda",
+        "start": 3024.58,
+        "end": 3032.54
+    },
+    {
+        "text": " subespresión va a ser Q&R, todo esto. Y recién al final es que se va a evaluar el OR con todo esto y todo esto.",
+        "start": 3032.54,
+        "end": 3042.14
+    },
+    {
+        "text": " Yo siempre digo si ustedes tienen duda pongan paréntesis, porque con el paréntesis y voz estás",
+        "start": 3045.38,
+        "end": 3051.74
+    },
+    {
+        "text": " indicando cómo crees la presidencia. Ahora si voz no le pone paréntesis, la evaluación se va a ser",
+        "start": 3051.74,
+        "end": 3059.34
+    },
+    {
+        "text": " aplicando las reglas de presidencia. Y es lo que teníamos ahí. Primero el note, luego el AND y después el OR.",
+        "start": 3059.34,
+        "end": 3068.6600000000003
+    },
+    {
+        "text": " ¿A bien? ¿Se entendió? ¿Qué pasa con esta? Primero not P y después OR Q. Es lo que pasó allí.",
+        "start": 3070.06,
+        "end": 3083.1000000000004
+    },
+    {
+        "text": " ¿Qué pasa con esta?",
+        "start": 3085.94,
+        "end": 3087.06
+    },
+    {
+        "text": " Primero el AND, Q&R, todo esto y luego el OR. Así es como se valúa. ¿Qué pasa acá?",
+        "start": 3090.2200000000003,
+        "end": 3103.42
+    },
+    {
+        "text": " Primero not P, después, después not R. Acá lo dan, el note es el más fuerte de todos. O sea que tengo todo esto, todo esto.",
+        "start": 3106.02,
+        "end": 3117.42
+    },
+    {
+        "text": " Después que viene.",
+        "start": 3118.3,
+        "end": 3119.06
+    },
+    {
+        "text": " Bien el AND, o sea que va a ser todo esto, AND, Q, todo esto, OR todo esto otro.",
+        "start": 3121.9,
+        "end": 3128.34
+    },
+    {
+        "text": " Y fue lo que pasó. Primero not P, allá no R, luego el AND y por último el OR.",
+        "start": 3132.2200000000003,
+        "end": 3137.42
+    },
+    {
+        "text": " ¿Qué pasa con esta?",
+        "start": 3141.7000000000003,
+        "end": 3142.58
+    },
+    {
+        "text": " ¿Cuál es más fuerte?",
+        "start": 3143.58,
+        "end": 3147.34
+    },
+    {
+        "text": " Entonces, ¿qué va a tratar de hacer?",
+        "start": 3147.34,
+        "end": 3149.9
+    },
+    {
+        "text": " Va a tratar de hacer not 4. ¿Y qué va a pasar con not 4?",
+        "start": 3154.9,
+        "end": 3159.1
+    },
+    {
+        "text": " No tiene sentido.",
+        "start": 3159.1,
+        "end": 3163.22
+    },
+    {
+        "text": " Not es un operador lógico que se puede aplicar únicamente algo de tipo.",
+        "start": 3163.22,
+        "end": 3169.54
+    },
+    {
+        "text": " ¿Bullian?",
+        "start": 3170.54,
+        "end": 3171.54
+    },
+    {
+        "text": " Pero acá se está queriendo aplicar a un 4. Hay un problema de tipos.",
+        "start": 3171.54,
+        "end": 3176.54
+    },
+    {
+        "text": " El problema de tipos lo detecta la compilación o la ejecución. La compilación.",
+        "start": 3176.54,
+        "end": 3182.54
+    },
+    {
+        "text": " Esto va a producir error y va a ser error de compilación.",
+        "start": 3182.54,
+        "end": 3186.54
+    },
+    {
+        "text": " Sí, exacto. Si yo quisiera, tendría que poner paréntesis acá.",
+        "start": 3189.54,
+        "end": 3193.54
+    },
+    {
+        "text": " Not 4, mayor que 5, sea esfuerzo que primero se evalua el mayor entre 4 y 5 y el resultado eso va a ser albulliano.",
+        "start": 3194.54,
+        "end": 3202.54
+    },
+    {
+        "text": " Y eso sí se le puede aplicar el not.",
+        "start": 3202.54,
+        "end": 3205.54
+    },
+    {
+        "text": " ¿Qué pasa acá?",
+        "start": 3208.54,
+        "end": 3209.54
+    },
+    {
+        "text": " ¿Cuál es más fuerte?",
+        "start": 3211.54,
+        "end": 3213.54
+    },
+    {
+        "text": " Tengo menor, tengo AND y tengo menor de vuelta.",
+        "start": 3213.54,
+        "end": 3216.54
+    },
+    {
+        "text": " El AND es más fuerte, o sea que va a tratar de aplicarlo a quienes.",
+        "start": 3217.54,
+        "end": 3222.54
+    },
+    {
+        "text": " Anum y anum, pero ¿qué pasa con num?",
+        "start": 3224.54,
+        "end": 3227.54
+    },
+    {
+        "text": " ¿De qué tipos num? O a jugar por el nombre de qué tipo parecería ser num.",
+        "start": 3231.54,
+        "end": 3236.54
+    },
+    {
+        "text": " Y es intesero real, ¿no?",
+        "start": 3236.54,
+        "end": 3240.54
+    },
+    {
+        "text": " Entonces queremos hacer un número a otro número. ¿Qué pasa con eso?",
+        "start": 3240.54,
+        "end": 3245.54
+    },
+    {
+        "text": " Nuevamente error de tipos.",
+        "start": 3246.54,
+        "end": 3249.54
+    },
+    {
+        "text": " Lo que yo tendría que hacer es poner paréntesis como.",
+        "start": 3250.54,
+        "end": 3253.54
+    },
+    {
+        "text": " Acá y acá.",
+        "start": 3253.54,
+        "end": 3256.54
+    },
+    {
+        "text": " Cosa de forzar que primero se evaluó esto, se evaluó esto y recién después se evaluó el AND.",
+        "start": 3256.54,
+        "end": 3263.54
+    },
+    {
+        "text": " ¿Se van tendiendo?",
+        "start": 3266.54,
+        "end": 3268.54
+    },
+    {
+        "text": " Bueno, y lo que tenemos acá es otra versión del programita VC, ¿qué les queda ustedes para analizar?",
+        "start": 3270.54,
+        "end": 3278.54
+    },
+    {
+        "text": " Después, y ver que efectivamente es equivalente, ya estoy contigo.",
+        "start": 3279.54,
+        "end": 3284.54
+    },
+    {
+        "text": " Y otro ejemplo y tomás que lo que hace es obtiene una calificación a partir de un puntaje según la siguiente escadela.",
+        "start": 3284.54,
+        "end": 3292.54
+    },
+    {
+        "text": " Estos les quedan para analizar a ustedes para probarlos, para corrarlos con diferentes valores,",
+        "start": 3294.54,
+        "end": 3299.54
+    },
+    {
+        "text": " pero son más de lo mismo que estuvimos charlando.",
+        "start": 3299.54,
+        "end": 3302.54
+    },
+    {
+        "text": " ¿Qué me vas a preguntar?",
+        "start": 3305.54,
+        "end": 3307.54
+    },
+    {
+        "text": " Bueno, ¿está acá?",
+        "start": 3308.54,
+        "end": 3310.54
+    },
+    {
+        "text": " Sí.",
+        "start": 3310.54,
+        "end": 3311.54
+    },
+    {
+        "text": " Buenísimo.",
+        "start": 3311.54,
+        "end": 3313.54
+    },
+    {
+        "text": " Bueno, vamos a mirar un poquito el práctico 3.",
+        "start": 3315.54,
+        "end": 3318.54
+    },
+    {
+        "text": " Les voy a pedir que se tomen 5 minutitos para hacer el A y el B del ejercicio 1,",
+        "start": 3319.54,
+        "end": 3326.54
+    },
+    {
+        "text": " y también para hacer el ejercicio 2.",
+        "start": 3326.54,
+        "end": 3331.54
+    },
+    {
+        "text": " ¿Sí? 5, 10 minutitos para las partes A y B del 1 y para el ejercicio 2. ¿De acuerdo?",
+        "start": 3332.54,
+        "end": 3341.54
+    },
+    {
+        "text": " Luego lo discutimos y pasamos a otro ejercicio.",
+        "start": 3341.54,
+        "end": 3344.54
+    },
+    {
+        "text": " Bueno, vamos a mirar un poquito el A y el B.",
+        "start": 3346.54,
+        "end": 3349.54
+    },
+    {
+        "text": " Indicar cuales de las siguientes expresiones bulanas son verdaderas. ¿Qué pasa con esta?",
+        "start": 3351.54,
+        "end": 3356.54
+    },
+    {
+        "text": " 12, menor que 4 en el mundo de los centeros. ¿Qué pasa con esta otra?",
+        "start": 3357.54,
+        "end": 3363.54
+    },
+    {
+        "text": " También es verdadera, menos 12, menor que 0 en el mundo de los centeros. ¿Qué pasa con esta?",
+        "start": 3363.54,
+        "end": 3369.54
+    },
+    {
+        "text": " Falsa, 0 es mayor que 1. ¿Qué pasa con esta?",
+        "start": 3369.54,
+        "end": 3373.54
+    },
+    {
+        "text": " El carácter 5 es alfabéticamente menor que el carácter 6.",
+        "start": 3373.54,
+        "end": 3379.54
+    },
+    {
+        "text": " En realidad, según el código interno, por ejemplo el código A.",
+        "start": 3379.54,
+        "end": 3383.54
+    },
+    {
+        "text": " Si vos quisieras saber cuál es el código interno numérico, usa la función NO.",
+        "start": 3384.54,
+        "end": 3391.54
+    },
+    {
+        "text": " Carácter a menor que carácter Z. ¿Y qué pasa con esto?",
+        "start": 3393.54,
+        "end": 3398.54
+    },
+    {
+        "text": " En realidad, Falsa es menor porque Falsa internamente se asocia que número al 0 y el truce social 1.",
+        "start": 3400.54,
+        "end": 3408.54
+    },
+    {
+        "text": " Entonces ahí nos quedó todo bien. ¿Te va? No, la comparación te va a dar falsa. ¿Errornos?",
+        "start": 3409.54,
+        "end": 3420.54
+    },
+    {
+        "text": " De la misma manera que la de arriba te va a dar falsa. ¿Lo qué?",
+        "start": 3420.54,
+        "end": 3426.54
+    },
+    {
+        "text": " Si el signo estuviera al revés sería tu, exactamente. ¿Qué hago claro?",
+        "start": 3426.54,
+        "end": 3432.54
+    },
+    {
+        "text": " Bueno, el B.",
+        "start": 3432.54,
+        "end": 3434.54
+    },
+    {
+        "text": " B es menor que D en el mundo de los carácteres. La parte izquierda dio TRU. ¿Está?",
+        "start": 3434.54,
+        "end": 3445.54
+    },
+    {
+        "text": " Es necesario evaluar la parte derecha. 0 es menor que 1. ¿Cuál es el resultado de todo esto?",
+        "start": 3445.54,
+        "end": 3452.54
+    },
+    {
+        "text": " TRU, o sea que vamos a tildearla. 5 es menor que 1.",
+        "start": 3452.54,
+        "end": 3457.54
+    },
+    {
+        "text": " No, en el mundo de los enteros ¿no? ¿Qué dio la parte izquierda? ¿Es necesario evaluar la parte derecha?",
+        "start": 3458.54,
+        "end": 3466.54
+    },
+    {
+        "text": " Si, 0 es menor a menos 1. O sea que lo de la derecha queda. Por lo tanto el or, la TRU. Lo tilde.",
+        "start": 3466.54,
+        "end": 3476.54
+    },
+    {
+        "text": " Lo tilde. ¿El carácter C es mayor igual a F? No. Si alfabeticamente está antes es menor.",
+        "start": 3476.54,
+        "end": 3488.54
+    },
+    {
+        "text": " Así que no, esto dio false. ¿Es necesario evaluar el otro? Si. ¿El carácter C es menor igual que si mismo?",
+        "start": 3488.54,
+        "end": 3496.54
+    },
+    {
+        "text": " Si. Por lo tanto la parte derecha cuánto da. Por lo tanto todo esto da TRU.",
+        "start": 3496.54,
+        "end": 3502.54
+    },
+    {
+        "text": " Acá, el no se aplica esto. ¿Es cierto que 12 es igual a 2? Si lo niego ¿qué pasa?",
+        "start": 3503.54,
+        "end": 3511.54
+    },
+    {
+        "text": " Entonces la parte izquierda del AND quedó en FOLS. ¿Qué pasa con el AND?",
+        "start": 3511.54,
+        "end": 3517.54
+    },
+    {
+        "text": " FOLS. Ya es FOLS. C circuito corto. Ni me gasto en ver qué pasa con la parte derecha.",
+        "start": 3517.54,
+        "end": 3522.54
+    },
+    {
+        "text": " Si la parte izquierda me dio false, ya está. O sea que todo esto es todo false. O debería.",
+        "start": 3522.54,
+        "end": 3529.54
+    },
+    {
+        "text": " Y efectivamente es así. ¿Vabien? Vamos a desficar algunas de ejercicios 2.",
+        "start": 3530.54,
+        "end": 3537.54
+    },
+    {
+        "text": " Indicar el valor de las siguientes expresiones suponiendo que x vale 0 según el tipo de evaluación utilizada.",
+        "start": 3540.54,
+        "end": 3548.54
+    },
+    {
+        "text": " O sea, si hacemos como hace fripascal, que es con circuito corto, o si hacemos como hace Pascal Standard que es con circuito completo.",
+        "start": 3548.54,
+        "end": 3555.54
+    },
+    {
+        "text": " Evaluando siempre las 2 partes. Los resultados posibles pueden ser TRU, FOLS o ERROR.",
+        "start": 3556.54,
+        "end": 3562.54
+    },
+    {
+        "text": " Entonces, vamos a ver qué pasa con la primera suponiendo circuito corto. ¿Sí? ¿Se cumple que x es distinto de 0?",
+        "start": 3564.54,
+        "end": 3574.54
+    },
+    {
+        "text": " No, no se cumple. ¿Entonces qué pasa con esto? Ya dio FOLS. Y en la evaluación por circuito corto,",
+        "start": 3575.54,
+        "end": 3583.54
+    },
+    {
+        "text": " si la parte izquierda dio false que pasa. Directamente la anda false. Ni siquiera se evalua la parte derecha.",
+        "start": 3583.54,
+        "end": 3590.54
+    },
+    {
+        "text": " O sea, que en evaluación por circuito corto es todo false. ¿Qué pasa en evaluación por circuito completo?",
+        "start": 3591.54,
+        "end": 3600.54
+    },
+    {
+        "text": " Si bien ya sabemos que esto dio FOLS va a querer evaluar la parte derecha. Ahora, ¿qué pasa concretamente acá?",
+        "start": 3602.54,
+        "end": 3610.54
+    },
+    {
+        "text": " A mí me dicen que la x vale 0, o sea que se va a intentar hacer una división entre 0 y eso que es error de que tipo.",
+        "start": 3613.54,
+        "end": 3622.54
+    },
+    {
+        "text": " Error en tiempo de ejecución, que no es lo mismo que un error de tipos. El error de tipo se en qué momento ocurre en la combinación.",
+        "start": 3624.54,
+        "end": 3632.54
+    },
+    {
+        "text": " Esto es un error de ejecución. Sintácticamente está correcto el programa se rompe al ejecutarlo. ¿Ah?",
+        "start": 3632.54,
+        "end": 3639.54
+    },
+    {
+        "text": " O sea que en este caso el resultado debería ser error. ¿Ve bien? Vamos a ver la segunda. ¿Qué pasa acá?",
+        "start": 3640.54,
+        "end": 3646.54
+    },
+    {
+        "text": " La primera verdadero, ¿Ah? Con lo cual, en circuito corto es necesario seguir evaluando?",
+        "start": 3649.54,
+        "end": 3656.54
+    },
+    {
+        "text": " Sí, no hay más remedio. Y en circuito completo también va a evaluar del lado derecho. ¿Y qué va a pasar de vuelta?",
+        "start": 3657.54,
+        "end": 3664.54
+    },
+    {
+        "text": " Y bueno, como x vale 0, nuevamente va a estar dividiendo entre 0. Entonces acá ambas evaluaciones, tanto por circuito corto como por circuito completo que le va a pasar las 2.",
+        "start": 3665.54,
+        "end": 3676.54
+    },
+    {
+        "text": " Las 2 van a producir error en tiempo de ejecución. ¿Ah? Hasta acá. La tercera.",
+        "start": 3677.54,
+        "end": 3686.54
+    },
+    {
+        "text": " Evaluamos primero esta y la x vale 0. ¿Qué va a pasar? Ya se rompe al evaluar la expresión izquierda.",
+        "start": 3687.54,
+        "end": 3700.54
+    },
+    {
+        "text": " No importa si luego intentase evaluar la expresión derecha o no, el error en tiempo de ejecución ya se va a ocurrir durante la evaluación de la primera de ellas.",
+        "start": 3701.54,
+        "end": 3710.54
+    },
+    {
+        "text": " Porque a mí me dicen que la x vale 0 y ahí está dividiendo entre 0. O sea que acá en ambos casos se produce error. ¿A bien? ¿Qué pasa con esta? ¿X es distinto de 0?",
+        "start": 3711.54,
+        "end": 3727.54
+    },
+    {
+        "text": " ¿Polus? ¿Por qué x es igual a 0? ¿Cómo dios false la parte izquierda de lor? ¿Va a tratar de hacer la parte derecha? ¿Sí? Y nuevamente ¿Qué pasa?",
+        "start": 3728.54,
+        "end": 3739.54
+    },
+    {
+        "text": " ¿División entre 0 es toadar error en la evaluación por circuito corto y por circuito completo? ¿También? ¿En las 2 igual? ¿Ah? ¿X es igual a 0? O sea que esto ya dió tru. Tru. ¿True en un or que pasa en la evaluación por circuito corto? ¿No va a hacer la segunda es toadar tru? ¿Por circuito completo que pasa?",
+        "start": 3740.54,
+        "end": 3768.54
+    },
+    {
+        "text": " ¿Error? ¿Por qué nuevamente va a querer dividir entre 0? ¿Recuerdan que la letra me dice que la x vale 0? O sea que acá tenemos error. ¿Y bueno, ¿y qué pasa acá?",
+        "start": 3768.54,
+        "end": 3780.54
+    },
+    {
+        "text": " ¿Pasa lo mismo que pasaba en esta de acá arriba? ¿Estamos dividiendo entre 0 en la expresión del izquierda? ¿Colo cual? ¿Esto ya produce un error tanto en la evaluación por circuito corto como por circuito completo?",
+        "start": 3782.54,
+        "end": 3797.54
+    },
+    {
+        "text": " ¿OK? ¿Efri pascales aplican esta de la evaluación por circuito corto? ¿El penúltimo enfri pascale no se rompe? ¿No, no, no? ¿Podes aprovecharte de las bondades de la evaluación por circuito corto? ¿No? ¿No? ¿Por qué nos alineamos a lo que hace fripascales? ¿Sí?",
+        "start": 3798.54,
+        "end": 3822.54
+    },
+    {
+        "text": " ¿El principal pone cualquier cosa de duda del lado derecho y el único? ¿En este caso sí? ¿Sí? ¿Ah? ¿OK? ¿Se van tendiendo esto? ¿Sí? ¿El bit de acáctubre el circuito corto? ¿Sí?",
+        "start": 3822.54,
+        "end": 3847.54
+    },
+    {
+        "text": " ¿En los casos que solamente mirando la la expresión del izquierda lo que le dice? ¿Sí? ¿El combinador chequeó mira que lo que está... ¿Por qué este que el adelor siempre trabaja cumplir con el poniño?",
+        "start": 3847.54,
+        "end": 3863.54
+    },
+    {
+        "text": " Lo que hace el combinador es si el operador es un ad se va a fijárselo de la izquierda le dio false y si ya le dio false corta no evalua la derecha.",
+        "start": 3863.54,
+        "end": 3872.54
+    },
+    {
+        "text": " Si el operador es or se va a fijárselo de la izquierda le dio otro y si le dio otro ya corta no evaluarlo de la derecha.",
+        "start": 3872.54,
+        "end": 3879.54
+    },
+    {
+        "text": " ¿A la sintaxis a la hora de compilar si va a checar que esté bien escrito? ¿Pero fijate que todo asesta? ¿Por ejemplo esta que te da error de ejecución acá? ¿Sí?",
+        "start": 3879.54,
+        "end": 3894.54
+    },
+    {
+        "text": " Sintácticamente está bien escrita. Es recién durante la ejecución que se intenta dividir entre cero.",
+        "start": 3894.54,
+        "end": 3901.54
+    },
+    {
+        "text": " Ponen el que el valor de xt lo ingresó el usuario por teclado. Al momento de la compilación el combinador no sabe que en tiempo de ejecución la x va a valercer el compilador va a checar que la expresión esté sintácticamente bien construida. ¿Sí?",
+        "start": 3901.54,
+        "end": 3915.54
+    },
+    {
+        "text": " O sea lo de la evaluación por circuito y largo por circuito corto es un tema de tiempo de ejecución. No de tiempo de compilación.",
+        "start": 3915.54,
+        "end": 3922.54
+    },
+    {
+        "text": " Ahora te entendí. Está bien? Hasta acá. Buen. Bien. Vamos a volver rápido al teórico. Vamos a mirar un poquitito como es la selección múltiple y después vamos a dejar un ejercicio de programación para hacer hasta el final de la clase.",
+        "start": 3922.54,
+        "end": 3942.54
+    },
+    {
+        "text": " Bueno, selección generalizada.",
+        "start": 3942.54,
+        "end": 3968.54
+    },
+    {
+        "text": " Nosotros vimos la selección simple que se utiliza para definir un rumbo de ejecución de entre cuántos rumbo posibles.",
+        "start": 3969.54,
+        "end": 3979.54
+    },
+    {
+        "text": " Dos o como mucho dos. La selección generalizada yo la voy a utilizar cuando quiera definir entre tres o más rumbo de ejecución posibles.",
+        "start": 3979.54,
+        "end": 3994.54
+    },
+    {
+        "text": " Vamos a ver que la selección generalizada que la palabra va a ser case también sirve para el caso puntual de dos alternativas.",
+        "start": 3995.54,
+        "end": 4005.54
+    },
+    {
+        "text": " Y ahí ya entramos nuevamente en cuestiones de estilo y proligidad de programación. Si yo tengo que definir entre dos posibles rumbo de ejecución,",
+        "start": 4005.54,
+        "end": 4014.54
+    },
+    {
+        "text": " lo voy a poder hacer tanto con IF como con case sin embargo que es lo más elegante. El IF, el case reservarlo únicamente para que para tres o más alternativas.",
+        "start": 4014.54,
+        "end": 4027.54
+    },
+    {
+        "text": " Acúrdense no solamente el programa debe compilar y debe ejecutar, sino que además están las cuestiones de estilo, están las cuestiones de indentación, están las buenas prácticas, las cuestiones de proligidad que también es importante tener en cuenta.",
+        "start": 4027.54,
+        "end": 4042.54
+    },
+    {
+        "text": " Si ustedes susan case para decidir entre dos alternativas va a compilar, van a dar y va a funcionar perfecto. No es lo más elegante.",
+        "start": 4043.54,
+        "end": 4052.54
+    },
+    {
+        "text": " En la diferencia entre el IF y el case no es tan grave. Vamos a ver después que en las estructuras repetitivas la cosa sí es más grave, pero eso viene después.",
+        "start": 4055.54,
+        "end": 4064.54
+    },
+    {
+        "text": " Bueno, acá tenemos un ejemplo de cómo funciona la instrucción case. Case se coloca aquí un número que en este ejemplo lo estamos leyendo por teclado y después se pone la palabra reservada OF.",
+        "start": 4065.54,
+        "end": 4084.54
+    },
+    {
+        "text": " Y el case funciona de la siguiente manera. Se fija ver si el número ingresado es el primero y si es el primero va a ser lo que puse la derecha.",
+        "start": 4085.54,
+        "end": 4096.54
+    },
+    {
+        "text": " Ahora si no llega a ser el primero, ahí va a bajar al segundo número y si es un uno va a hacer lo que está en la derecha y si no es un uno va a probar con el siguiente.",
+        "start": 4097.54,
+        "end": 4108.54
+    },
+    {
+        "text": " Te puedo imaginar que tenés muchas puertas. Entonces, ¿viste fijas? A ver, abro en la primera puerta, acá está el valor que me pasaron, sí me quedo acá. No, cierro y pruebo con la segunda puerta. Abro acá y me fijo a ver si ese es el valor.",
+        "start": 4108.54,
+        "end": 4122.54
+    },
+    {
+        "text": " Sí, me quedo acá, no. Y así continúa.",
+        "start": 4122.54,
+        "end": 4126.54
+    },
+    {
+        "text": " Está bien. Es lo que se conoce como un análisis de casos. Cuando llego al caso que corresponde al número que a mí me dieron, si el usuario ingresó 3 voy a entrar acá y voy a mostrar 3 en letras.",
+        "start": 4127.54,
+        "end": 4139.54
+    },
+    {
+        "text": " Sí.",
+        "start": 4140.54,
+        "end": 4141.54
+    },
+    {
+        "text": " Vamos a ver que puede ser con no solamente con números también puede ser con caracteres. Puede ser con lo que más adelante vamos a llamar cualquier tipo ordinal de momento, caracteres, bouleanos y enteros.",
+        "start": 4142.54,
+        "end": 4156.54
+    },
+    {
+        "text": " ¿Por qué el bouleano es ordinal? ¿Qué es lo más proelijo entre dos opciones? Elif, pero el que esté anra. ¿Se entendió cómo funciona esto?",
+        "start": 4156.54,
+        "end": 4172.54
+    },
+    {
+        "text": " Bueno, esto lo podemos hacer más compacto. Vos podéis agrupar familias de casos iguales. Entonces, ponéle que a vos te ingresan un mes.",
+        "start": 4173.54,
+        "end": 4186.54
+    },
+    {
+        "text": " ¿Entonces? En realidad, a este ejemplo para estar completo, que le faltó entre la declaración de la variable y el que hay.",
+        "start": 4186.54,
+        "end": 4193.54
+    },
+    {
+        "text": " Faltó el Vignen y faltó asignarle un valor válido a la variable mes. Ya sea porque se lo asigné, mediante una estrucción de asignación o porque lo leí por teclado.",
+        "start": 4194.54,
+        "end": 4204.54
+    },
+    {
+        "text": " Esto es un fragmento de programa. Entonces, acá se evaluó al mes y si el mes que viene es cualquiera de todos estos. ¿Sí? ¿Qué meses son estos?",
+        "start": 4204.54,
+        "end": 4220.54
+    },
+    {
+        "text": " El mes 1, cual es. Enero, mar, somayo, este cual es. Julio, agosto, octubre y diciembre. Si es cualquiera de ellos, entonces el mensaje que mostró en pantalla es mes de 31 días.",
+        "start": 4220.54,
+        "end": 4235.54
+    },
+    {
+        "text": " O cualquiera de esos son los meses de 31. Fíjense que no fue necesario escribir el mismo mensaje en cada uno de estos valores. Vos podéis agrupar valores de una misma familia juntos, separados con coma.",
+        "start": 4235.54,
+        "end": 4250.54
+    },
+    {
+        "text": " Y cuando el valor que a vos te viene es cualquiera de estos, entra ahí. Si no es ninguno de estos, entonces se va a fijar en el segundo grupo, en la segunda familia.",
+        "start": 4250.54,
+        "end": 4262.54
+    },
+    {
+        "text": " Bueno, si es abril, junio, septiembre o noviembre, va a decir mes de 30 días. Y si no, si es febrero, va a decir mes de 28 días. ¿Sí? ¿Puedes dar presión de ese mayor acero?",
+        "start": 4263.54,
+        "end": 4280.54
+    },
+    {
+        "text": " No, podés poner una expresión acá, pero acá tiene que ir una enumeración de valores. Si precisas hacer alguna condición del estilo mayor que cero, hacerlo con IF. Puedes anidar IF, EL, EL, etc.",
+        "start": 4280.54,
+        "end": 4293.54
+    },
+    {
+        "text": " Y es más, no tenés más remedio que hacerlo de esa manera. ¿Ah? ¿Hasta acá? ¿Qué pasa si el mes que viene no es ninguno de estos? ¿Qué creen que va a suceder?",
+        "start": 4293.54,
+        "end": 4305.54
+    },
+    {
+        "text": " Se va a romper o va a salir sin hacer nada. ¿A acá me dicen va a salir sin hacer nada? ¿Por allá?",
+        "start": 4305.54,
+        "end": 4318.54
+    },
+    {
+        "text": " O sea, este N es cierre al caís, no corresponde un BI, perdón, eso no lo dije. Este N es el caís, cierre con UNN. ¿Está parte del caso? ¿Está parte del ASC, es parte del ASC?",
+        "start": 4318.54,
+        "end": 4337.54
+    },
+    {
+        "text": " Me dicen, por acá me dijeron, va a terminar sin hacer nada, el resto que piensa. ¿Bueno? ¿Ustedes piensan como fripascal?",
+        "start": 4338.54,
+        "end": 4348.54
+    },
+    {
+        "text": " Yo también pienso como fripascal y está buenísimo que pensemos como fripascal, ¿por qué? ¿Por qué? ¿Por qué?",
+        "start": 4348.54,
+        "end": 4355.54
+    },
+    {
+        "text": " Porque lo que vamos a usar en este curso fripascal. Les cuento que Pascal estándar te va a dar el raro en tiempo de ejecución. O sea, Pascal estándar, tú no le podés dejar afuera ningún valor.",
+        "start": 4355.54,
+        "end": 4366.54
+    },
+    {
+        "text": " O sea, si el valor que entró no entra ninguno, Pascal estándar te va a dar un error en tiempo de ejecución.",
+        "start": 4366.54,
+        "end": 4373.54
+    },
+    {
+        "text": " El fripascal que es el que vamos a usar nosotros no directamente va a ser lo que ustedes les dijo un poco la intuición. ¿Vas a salir sin ejecutar nada?",
+        "start": 4373.54,
+        "end": 4383.54
+    },
+    {
+        "text": " ¿A bien? ¿A bien? ¿A pregunta por allá?",
+        "start": 4383.54,
+        "end": 4386.54
+    },
+    {
+        "text": " ¿Viene ahora? ¿Va a ver un L? ¿Tiene L también? Ahora bien. ¿Sí? ¿Pera eso? ¿Hasta acá?",
+        "start": 4387.54,
+        "end": 4396.54
+    },
+    {
+        "text": " Sí. ¿El L es incorporación del fripascal también?",
+        "start": 4396.54,
+        "end": 4402.54
+    },
+    {
+        "text": " No. ¿Y por qué Pascal estándar es muy jeringa de que todo tiene que estar contemplado?",
+        "start": 4402.54,
+        "end": 4409.54
+    },
+    {
+        "text": " ¿Está en este caso? ¿Eso es? ¿Eso es? Igual en estos casos, ciclines, le hacemos casos fripascal y nos saliníamos con fripascal y pueden tomarlo como lo hace fripascal para todo el curso.",
+        "start": 4409.54,
+        "end": 4422.54
+    },
+    {
+        "text": " ¿Sí? ¿No haces para tomar? Se supone que tú hiciste un análisis previo del problema y determinaste que nunca podría vender ningún otro valor que no sea esto para un mes.",
+        "start": 4422.54,
+        "end": 4435.54
+    },
+    {
+        "text": " ¿Por qué no necesariamente viene que llegue a ese lugar? Claro. ¿Hay ya factores externos si queréis de lo que es la concepción del problema?",
+        "start": 4436.54,
+        "end": 4446.54
+    },
+    {
+        "text": " Bueno, todo esto que está acá es el diagrama de sintaxis del case. ¿Qué?",
+        "start": 4447.54,
+        "end": 4458.54
+    },
+    {
+        "text": " Tiene como muchas cidas y vueltas pero funciona como lo estamos viendo acá. ¿Se pone? Valor o grupo de valores, dos puntos y una instrucción, que puede ser simple o compuesta.",
+        "start": 4458.54,
+        "end": 4472.54
+    },
+    {
+        "text": " ¿Y si es compuesta? Por ejemplo, si es una secuencia, la voy a encerrar entre qué. Vig in muchas cosas en. O sea, se aplican los mismos criterios de anidación que veníamos viendo.",
+        "start": 4472.54,
+        "end": 4484.54
+    },
+    {
+        "text": " Bueno, acá tenemos la semántica, es decir, cómo se comporta la instrucción que es en el Pascal Standard. Y es lo que dijimos, si el valor que a mí me dan, que es el resultado de la expresión E, no es ninguno de todos estos, se produce una error.",
+        "start": 4485.54,
+        "end": 4508.54
+    },
+    {
+        "text": " Pero, por suerte para nosotros, fripascal, no da ninguna error, lo que haces directamente se va. Entonces, acá muestra también que yo al case le puedo poner un L, es decir, a mí me dan una expresión, esa expresión tiene un valor.",
+        "start": 4509.54,
+        "end": 4532.54
+    },
+    {
+        "text": " Puede ser directamente una variable, o puede ser, por ejemplo, X más 1, o sea, se evalua el resultado de X más 1 y después empieza a mirar puerta por puerta.",
+        "start": 4533.54,
+        "end": 4544.54
+    },
+    {
+        "text": " Si el valor aparece en alguna de las constantes que están enumeradas, freno, me meto esa puerta y ejecuta la instrucción que esté ahí.",
+        "start": 4545.54,
+        "end": 4553.54
+    },
+    {
+        "text": " Ahora, si el valor resulta que no es ninguno de estos, al ponerle el saca, estamos diciendo si no es ninguno de los anteriores hace esto, o sea que en fripascal el case admite el.",
+        "start": 4554.54,
+        "end": 4568.54
+    },
+    {
+        "text": " Lo que va a pasar ahí es que ahí sí cualquier caso va a quedar contemplado, porque si no es ninguno de los anteriores, sí o si va a ejecutar la instrucción alternativa.",
+        "start": 4570.54,
+        "end": 4577.54
+    },
+    {
+        "text": " Pero si yo no le pusiera el L, ahí va a ser lo que dice acá, no se ejecuta nada y no hay error.",
+        "start": 4578.54,
+        "end": 4586.54
+    },
+    {
+        "text": " El N, perdón? No, el único N que lleva punto es el N de todo el programa, los distintos bloques Vigin N, que son secuencias,",
+        "start": 4596.54,
+        "end": 4605.54
+    },
+    {
+        "text": " no llevan punto al final. Vieron que ahora podemos tener varias veces Vigin N dentro del programa, pero porque ponerle que era toda una instrucción que a continuación venía otra.",
+        "start": 4605.54,
+        "end": 4619.54
+    },
+    {
+        "text": " O sea si se puso punto y coma y es porque seguramente después venía otra más.",
+        "start": 4619.54,
+        "end": 4623.54
+    },
+    {
+        "text": " El último N de todo el programa, el que te cierra el programa lleva a punto.",
+        "start": 4627.54,
+        "end": 4631.54
+    },
+    {
+        "text": " Si vos le ponés un punto a un N intermedio te va a dar error de sintaxis, o sea el único N que puede llevar punto es el último, el que cierra todo el programa.",
+        "start": 4636.54,
+        "end": 4647.54
+    },
+    {
+        "text": " Por él que yo tengo toda esta instrucción y luego quiero poner otra, ahí se aplica punto y coma como separadora virtual de instrucciones.",
+        "start": 4651.54,
+        "end": 4660.54
+    },
+    {
+        "text": " Bien, listo.",
+        "start": 4661.54,
+        "end": 4665.54
+    },
+    {
+        "text": " Bueno, y esto último muestra la equivalencia entre leaf y un caiz de dos opciones. Esto compila? Sí, esto anda?",
+        "start": 4669.54,
+        "end": 4680.54
+    },
+    {
+        "text": " Sí, esto es lo más elegante? No, nada más que decir.",
+        "start": 4680.54,
+        "end": 4685.54
+    },
+    {
+        "text": " Bueno, vamos atrás a darnos al ejercicio 22. No, perdón, al ejercicio 12. Ay, va. No al 22 era el del práctico pasado.",
+        "start": 4686.54,
+        "end": 4699.54
+    },
+    {
+        "text": " Bueno, vamos a estinar el último rato para que ustedes trabajen en este ejercicio, lo van haciendo, voy pasando por los bancos y me lo van mostrando.",
+        "start": 4701.54,
+        "end": 4711.54
+    }
+]

@@ -1,0 +1,4932 @@
+[
+    {
+        "text": " Bueno, les comentaba que la clase pasaba y había habido una duda, este hablando de estos",
+        "start": 0.0,
+        "end": 13.96
+    },
+    {
+        "text": " grafos bipartitos sobre el final de la clase, porque tenemos el algoritmo este que vimos",
+        "start": 13.96,
+        "end": 20.96
+    },
+    {
+        "text": " para detectar su grafos de bipartito o no, y alguien preguntó si bueno, ¿qué pasa si",
+        "start": 20.96,
+        "end": 28.48
+    },
+    {
+        "text": " nos mutamos por tripartito o por más partes? Si se conoce algún algoritmo de este tipo para",
+        "start": 28.48,
+        "end": 37.96
+    },
+    {
+        "text": " resolverlo y las recuestas que no tenía pinta, pero la verdad que nunca me había puesto mirarlo,",
+        "start": 37.96,
+        "end": 46.24
+    },
+    {
+        "text": " y ese tipo de problemas es lo que sabe un problema de NPE completo y que es un tema que vamos",
+        "start": 46.24,
+        "end": 56.56
+    },
+    {
+        "text": " a ver sobre el final del curso, las últimas semanas, o aquí vemos complejidad de problemas",
+        "start": 56.56,
+        "end": 63.32
+    },
+    {
+        "text": " de este clase de complejidad, vamos a ver que hay una clase de problemas que no sabemos resolver en",
+        "start": 64.84,
+        "end": 71.8
+    },
+    {
+        "text": " tiempo polinomial, y este que preguntaba el juez pasado, acá en esa categoría, entonces tampoco",
+        "start": 71.8,
+        "end": 79.88
+    },
+    {
+        "text": " hay una prueba de que no exista tal gorismo, lo que se sabe es que hace años que se está buscando",
+        "start": 79.88,
+        "end": 87.56
+    },
+    {
+        "text": " algún algoritmo para resolver algunos de esos problemas, lo cual automáticamente resolvería",
+        "start": 87.56,
+        "end": 94.39999999999999
+    },
+    {
+        "text": " todos los problemas simultáneamente, para ninguno de ellos se ha encontrado un algoritmo que lo",
+        "start": 94.39999999999999,
+        "end": 103.64
+    },
+    {
+        "text": " es en tiempo polinomial, y tampoco se ha demostrado que no se pueda, simplemente no lo sabemos, y eso,",
+        "start": 103.64,
+        "end": 111.16
+    },
+    {
+        "text": " de hecho, es una de las preguntas abiertas más grandes en la ciencia de la computación.",
+        "start": 111.16,
+        "end": 115.96000000000001
+    },
+    {
+        "text": " Bueno, está eso comentario con respecto a una duda de la clase pasada.",
+        "start": 120.24000000000001,
+        "end": 127.56
+    },
+    {
+        "text": " Bueno, vamos como les decía, mi idea hoy era trabajar sobre un ejercicio, para ver un poco",
+        "start": 127.56,
+        "end": 137.08
+    },
+    {
+        "text": " cómo aplicar estas cosas que estuvo viendo.",
+        "start": 139.64000000000001,
+        "end": 142.2
+    },
+    {
+        "text": " Un segundo que va como...",
+        "start": 157.56,
+        "end": 160.28
+    },
+    {
+        "text": " Entonces, la letra del ejercicio la tiene en EGA, sí, sí, en el principio, mirarla por ahí,",
+        "start": 171.0,
+        "end": 177.16
+    },
+    {
+        "text": " pero se las estoy compartiendo acá, es un ejercicio sobre precisamente una imagen, es un poco",
+        "start": 177.16,
+        "end": 188.16
+    },
+    {
+        "text": " simplificado, pero bastante realista. Entonces, antes de ir a los detalles de la letra les quiero",
+        "start": 188.16,
+        "end": 200.16
+    },
+    {
+        "text": " mostrar qué es lo que estamos hablando. Esto se trata de semitración de imágenes y decir de encontrar",
+        "start": 200.16,
+        "end": 205.76
+    },
+    {
+        "text": " regiones, aparte es dentro de una imagen que puedan ser interesantes por sí.",
+        "start": 205.76,
+        "end": 214.48
+    },
+    {
+        "text": " Una situación nos podríamos que le aplicar algo, esto sería, por ejemplo, esto es una imagen",
+        "start": 216.48,
+        "end": 220.56
+    },
+    {
+        "text": " médica, tan corte de transversal, ven acá a la altura de los pulmones, esto es lo que vería",
+        "start": 220.56,
+        "end": 229.8
+    },
+    {
+        "text": " un médico con este estudio médico, y acá se pueden distinguir diferentes órganos, supongo o",
+        "start": 229.8,
+        "end": 246.28
+    },
+    {
+        "text": " un médico se habrá interpretado bien que es cada cosa, pero bueno acá podríamos buscar regiones",
+        "start": 247.28,
+        "end": 254.52
+    },
+    {
+        "text": " dentro de esta imagen, que sean, por ejemplo, todas de él mismo color, entonces encontrar las regiones",
+        "start": 254.52,
+        "end": 260.08
+    },
+    {
+        "text": " negras, capaz de ser muy tipo de significado, son los pulmones, pero el capaz nos interesa más las",
+        "start": 262.28,
+        "end": 269.28
+    },
+    {
+        "text": " manchitas más chicas que aparecen allí o bueno el resto del cuerpo que tienen diferentes, espero",
+        "start": 269.84,
+        "end": 277.79999999999995
+    },
+    {
+        "text": " que les lleguen a ver diferentes tonalidades. Bueno, en fin, a través del color entre comillas,",
+        "start": 277.79999999999995,
+        "end": 286.91999999999996
+    },
+    {
+        "text": " no esta es una imagen de tonos de grises, no sé lo que tiene son la intensidad de lúgamas,",
+        "start": 286.91999999999996,
+        "end": 292.44
+    },
+    {
+        "text": " el black and green, entonces bueno, ese es el tipo de situación donde podíamos buscar esto,",
+        "start": 292.44,
+        "end": 302.68
+    },
+    {
+        "text": " tengo por acá además otro dibujito que muestra cómo se representa una imagen de estas,",
+        "start": 305.16,
+        "end": 311.64
+    },
+    {
+        "text": " usualmente en memoria, dais como una matriz, donde si ustedes hacen un zoom de un pedacito de",
+        "start": 311.64,
+        "end": 320.76
+    },
+    {
+        "text": " un imagen, no sé, habrá en ellos una vez zoom hasta que aparecen todo bien pixelados como cuerdas,",
+        "start": 320.76,
+        "end": 328.24
+    },
+    {
+        "text": " bueno cada uno de esos cuadraditos es lo que llama un pixel y lo que tienen realidad eso es un",
+        "start": 328.24,
+        "end": 332.64
+    },
+    {
+        "text": " valor numérico, en este caso por lo que puedo ver si será entre 0 y 255, desarbaites, y cada",
+        "start": 332.64,
+        "end": 340.64
+    },
+    {
+        "text": " numérico representa una intensidad de luz, por ejemplo el negro es 0, pero en acá en este",
+        "start": 340.64,
+        "end": 347.28
+    },
+    {
+        "text": " esquino hay un 0 y el pixel en negro, y por acá había un 238 acá en el medio que es este que es",
+        "start": 347.28,
+        "end": 355.88
+    },
+    {
+        "text": " casi blanco, hay un 255 acá que no lo he visto que es bien blanco, entonces así la representación",
+        "start": 355.88,
+        "end": 364.36
+    },
+    {
+        "text": " de las imágenes típicamente en memoria es una matriz con un maristos que arraplacentan los",
+        "start": 364.96000000000004,
+        "end": 371.8
+    },
+    {
+        "text": " valores de los pixels, usualmente en imagen como esta si uno realmente segmenta quedando",
+        "start": 371.8,
+        "end": 379.28000000000003
+    },
+    {
+        "text": " según regiones que sean todas exactamente el mismo color, no se va a quedar con prácticamente",
+        "start": 379.28000000000003,
+        "end": 382.92
+    },
+    {
+        "text": " nada porque aunque uno no lo vea, simplemente hay diferencias sutiles entre pixels a la gente,",
+        "start": 382.92,
+        "end": 391.64
+    },
+    {
+        "text": " entonces por ejemplo todo este fondo que parece negro por los costados, en realidad si uno lo",
+        "start": 391.64,
+        "end": 396.03999999999996
+    },
+    {
+        "text": " mira de cerca probablemente no sea todo negro, como altibajos ahí, pero bueno podríamos por",
+        "start": 396.03999999999996,
+        "end": 401.4
+    },
+    {
+        "text": " ejemplo hacer una primera pasada por la imagen y un realizar el sector de más gruesos de manera",
+        "start": 401.4,
+        "end": 407.12
+    },
+    {
+        "text": " de hacerlo más con los altos más gruesos y que las regiones uniformes sean con más grandes,",
+        "start": 407.12,
+        "end": 418.03999999999996
+    },
+    {
+        "text": " pero bueno como simplificación del problema digamos que lo que nos interesa es encontrar las",
+        "start": 418.92,
+        "end": 423.88
+    },
+    {
+        "text": " imágenes que se decimos ese pre-prosensamiento, lo que nos interesa es buscar las regiones de la imagen,",
+        "start": 423.88,
+        "end": 430.36
+    },
+    {
+        "text": " la parches que sean todas el mismo color, cuando todo el fondo negro o toda la parte negra que",
+        "start": 430.36,
+        "end": 437.6
+    },
+    {
+        "text": " aparecen los pulmones sacando las manchitas del medio, algo en ese tipo, se entiende",
+        "start": 437.6,
+        "end": 445.92
+    },
+    {
+        "text": " el problema que es lo que queremos hacer, entonces en el esquema que habíamos siguiendo y mirando en el libro,",
+        "start": 448.04,
+        "end": 455.56
+    },
+    {
+        "text": " esto que les acabo de contar sería una especie de descripción del problema, una después normalmente lo que",
+        "start": 455.56,
+        "end": 462.40000000000003
+    },
+    {
+        "text": " haces, que lo habrán visto, y en el libro también una formalización del problema, es decir,",
+        "start": 462.40000000000003,
+        "end": 470.8
+    },
+    {
+        "text": " abstraere esos términos matemáticos plantearlo como un problema algoritmico más abstracto y después",
+        "start": 470.8,
+        "end": 477.16
+    },
+    {
+        "text": " empezar a diseñar un algoritmo y finalmente analizar esa, la canaleta del ejercicio es aparte como de",
+        "start": 477.16,
+        "end": 483.48
+    },
+    {
+        "text": " formalizar el problema, ya está hecha, entonces directamente nos dice que bueno, estas imágenes",
+        "start": 483.48,
+        "end": 494.84000000000003
+    },
+    {
+        "text": " digitales están formadas por M por M píxeles, son esos puntitos del imagen, esos parches, esos",
+        "start": 494.84000000000003,
+        "end": 504.48
+    },
+    {
+        "text": " cuadraditos, les mostro en recién, cada uno con un valor, cada uno de estos píxeles representa la",
+        "start": 504.48,
+        "end": 510.52000000000004
+    },
+    {
+        "text": " intensidad luminica, el algún punto del imagen, y cada pixel p tiene, vamos a llamar una posición,",
+        "start": 510.52000000000004,
+        "end": 515.96
+    },
+    {
+        "text": " en la imagen que va a ser un par de coordenadas, px y pí, que el par px y pí es un par del conjunto",
+        "start": 516.6,
+        "end": 525.52
+    },
+    {
+        "text": " 1, 2 hasta M al cuadrado, es decir, el producto cartesiano de los naturales de 1 M por esos mismos,",
+        "start": 525.52,
+        "end": 534.16
+    },
+    {
+        "text": " básicamente son los índices dentro de esta matriz que les mostrava recién que representa",
+        "start": 534.16,
+        "end": 541.72
+    },
+    {
+        "text": " al imagen, son todas las posiciones posiciones de los pixels, además cada pixel tiene un valor que es el",
+        "start": 541.72,
+        "end": 547.0
+    },
+    {
+        "text": " numerito que les mostrava recién que representa la intensidad del uso así, entonces la",
+        "start": 547.0,
+        "end": 554.64
+    },
+    {
+        "text": " nuestra representación, como les decía hoy de esa imagen, va a ser una matriz y de M por M enteros,",
+        "start": 554.64,
+        "end": 562.36
+    },
+    {
+        "text": " en general son enteros restringidos a un cierto rango, de ejemplo 0 o 155,",
+        "start": 563.48,
+        "end": 571.2
+    },
+    {
+        "text": " es decir, son los pixels son bytes, entonces en esa matriz lo que tengo es en la posición",
+        "start": 571.72,
+        "end": 579.6
+    },
+    {
+        "text": " xt, tiene el valor del pixel que está en esa posición en la posición xt,",
+        "start": 579.6,
+        "end": 583.76
+    },
+    {
+        "text": " hasta ya vamos bien, si surja de una duda de cómo estamos formalizando el problema, me paran y me dice,",
+        "start": 586.9200000000001,
+        "end": 593.4000000000001
+    },
+    {
+        "text": " alguien pregunta acá en el foro en el chat, perdón si no hubo ejercicio al resultado en la semana 3,",
+        "start": 593.92,
+        "end": 603.84
+    },
+    {
+        "text": " no, este ejercicio que estamos resolviendo ahora es los temas que dimon la semana 3, pero bueno,",
+        "start": 603.84,
+        "end": 608.4399999999999
+    },
+    {
+        "text": " como vamos alternando ejercicios y la parte más teórica lo vamos a regular sobre la mano,",
+        "start": 608.4399999999999,
+        "end": 617.48
+    },
+    {
+        "text": " bueno, entonces hasta ahí como representamos las imágenes, vamos a tratar de formalizar que es",
+        "start": 617.48,
+        "end": 630.6
+    },
+    {
+        "text": " esto de los parches de imágenes a regiones que son todas los mismos colores de comisas,",
+        "start": 630.6,
+        "end": 636.32
+    },
+    {
+        "text": " el mismo tono de gris, entonces vamos a decir que dos pixels y p prinas son contibos, si están en la misma",
+        "start": 636.32,
+        "end": 647.5200000000001
+    },
+    {
+        "text": " si están pegaditos en la imágenes, si están en la misma columna y la fila de fíjela en",
+        "start": 649.7600000000001,
+        "end": 655.1600000000001
+    },
+    {
+        "text": " nomás de uno o al revés, así que a veces más mucho más fácil de ver como un dibujo,",
+        "start": 655.1600000000001,
+        "end": 659.4000000000001
+    },
+    {
+        "text": " lo que estamos diciendo es que sería",
+        "start": 659.4,
+        "end": 666.9599999999999
+    },
+    {
+        "text": " si yo tengo un pixel p por acá,",
+        "start": 677.6,
+        "end": 679.9599999999999
+    },
+    {
+        "text": " ahora estamos diciendo que los pixels que son contibos a p",
+        "start": 689.6,
+        "end": 695.52
+    },
+    {
+        "text": " son estos que están sombrados acá, se estoy exclusivando los de la diagonal, pero podría incluir",
+        "start": 701.52,
+        "end": 707.9599999999999
+    },
+    {
+        "text": " los prefiriedas de formalizar así el problema y no cambia nada con respecto a lo que vamos a ver,",
+        "start": 707.9599999999999,
+        "end": 715.88
+    },
+    {
+        "text": " entonces decimos que esos los pixels son contibos,",
+        "start": 715.88,
+        "end": 722.64
+    },
+    {
+        "text": " la forma de formalizar eso es que la diferencia en valor absoluto entre las",
+        "start": 729.32,
+        "end": 735.24
+    },
+    {
+        "text": " codenadas x y las codenadas y las sumas de eso sea uno, o difieren o en la x o en la y y en nomas de uno,",
+        "start": 735.24,
+        "end": 741.52
+    },
+    {
+        "text": " y ahora vamos a decir que una región que va a capturar este idea de parche de la imagen que es",
+        "start": 741.52,
+        "end": 755.8
+    },
+    {
+        "text": " todo el mismo tono de gris, o sea que una región r es un conjunto de pixels que tienen todos",
+        "start": 755.8,
+        "end": 764.84
+    },
+    {
+        "text": " el mismo valores y son todos, tienen todos el mismo tono de gris y que además vamos a ver que",
+        "start": 764.84,
+        "end": 770.52
+    },
+    {
+        "text": " satifagan estas condiciones de acá, acá estamos como les decía formalizando el troleco,",
+        "start": 770.52,
+        "end": 775.96
+    },
+    {
+        "text": " o sea todos los pixels de r están conectados en 3c a través de pixels contibos de r, o sea,",
+        "start": 777.16,
+        "end": 785.04
+    },
+    {
+        "text": " lo que estamos diciendo es que la región de la imagen se arra en el meto un parche que está todo",
+        "start": 785.04,
+        "end": 790.84
+    },
+    {
+        "text": " pegado, si agarramos dos pixels p e prima que están en esa región, entonces",
+        "start": 790.84,
+        "end": 799.3199999999999
+    },
+    {
+        "text": " existen p 1 p 2 p 1 hasta p 2 c que están todos en R en la misma región y que son contibos uno",
+        "start": 799.8000000000001,
+        "end": 807.12
+    },
+    {
+        "text": " de los otros, así que yo se puede formar un caminito en la imagen,",
+        "start": 807.12,
+        "end": 811.0400000000001
+    },
+    {
+        "text": " o sea si fuera acá, por ejemplo acá hay una zona que es toda negra digamos y entonces si yo me",
+        "start": 813.9200000000001,
+        "end": 821.58
+    },
+    {
+        "text": " muevo de un pixel por acá. Capaz que el cursón no se se agrar bien.",
+        "start": 821.58,
+        "end": 830.22
+    },
+    {
+        "text": " Bueno, la imagen está el punto negro del medio, un pixel que está por acá y",
+        "start": 832.98,
+        "end": 841.6600000000001
+    },
+    {
+        "text": " otros pisos que está por acá, bueno imagínense que esto fuera un embaldosa o de",
+        "start": 841.6600000000001,
+        "end": 844.94
+    },
+    {
+        "text": " pisa si se volcaminando por las baldosas, bueno que quiere decir que poder saltando",
+        "start": 844.94,
+        "end": 848.26
+    },
+    {
+        "text": " de baldosa en baldosa con píxer que son todos dentro de la región y llegar desde",
+        "start": 848.26,
+        "end": 854.78
+    },
+    {
+        "text": " uno a esta hora para cualquiera de ellos. Entonces eso es lo que con esa",
+        "start": 854.78,
+        "end": 859.14
+    },
+    {
+        "text": " definición lo que está diciendo es que bueno que esto que está acá, porque la",
+        "start": 859.14,
+        "end": 862.42
+    },
+    {
+        "text": " manchita negro en el medio es diferente que la manchita negro, las manchas",
+        "start": 862.42,
+        "end": 868.1
+    },
+    {
+        "text": " negras más grandes que están a sus costados, que son los pulmones pero que no",
+        "start": 868.1,
+        "end": 872.98
+    },
+    {
+        "text": " están conectados, no puedo ir de baldosa en baldosa y pasar de uno a lo que",
+        "start": 872.98,
+        "end": 878.9
+    },
+    {
+        "text": " más se como separar las regiones que son del mismo color pero que no están",
+        "start": 878.9,
+        "end": 883.46
+    },
+    {
+        "text": " pegadas entre ellos. Entonces ahí viene esa requisita y lo otro vamos a pedir",
+        "start": 883.46,
+        "end": 893.02
+    },
+    {
+        "text": " es que la región sea máxima, el sentido de que tiene todo lo que puede llegar a",
+        "start": 893.02,
+        "end": 898.14
+    },
+    {
+        "text": " tener es decir que si hay un píxel, peprima, acá este para este debe de",
+        "start": 898.14,
+        "end": 907.5
+    },
+    {
+        "text": " decir peprima, si hay un píxel peprima que es contiguo a un píxel p de la región",
+        "start": 907.5,
+        "end": 914.9
+    },
+    {
+        "text": " y tiene el mismo color lo tendría que incluir también la región. Entonces si tengo",
+        "start": 914.9,
+        "end": 919.66
+    },
+    {
+        "text": " dos píxes contiguos y uno está dentro y otra está fuera de la región, eso que",
+        "start": 919.66,
+        "end": 923.14
+    },
+    {
+        "text": " es decir que tienen valores distintos entre sí, es decir que estoy en la frontera",
+        "start": 923.14,
+        "end": 927.54
+    },
+    {
+        "text": " de esta región.",
+        "start": 927.54,
+        "end": 928.54
+    },
+    {
+        "text": " Bueno, alguien pregunta acá cómo formalizaría las esquinas, las esquinas,",
+        "start": 939.54,
+        "end": 946.66
+    },
+    {
+        "text": " no se vean que se refiere, es decir la esquina de una región o la esquina de la imagen,",
+        "start": 951.14,
+        "end": 955.3399999999999
+    },
+    {
+        "text": " la esquina, o sea una región podría llegar a hacer hasta un punto suelto.",
+        "start": 955.34,
+        "end": 963.86
+    },
+    {
+        "text": " Hola, Prón, me refería cuando dijiste lo de contiguos, ¿sí?",
+        "start": 965.38,
+        "end": 970.58
+    },
+    {
+        "text": " ¿Diste que dijiste que podía estar la diagonal? No, no, sí, dije que que nuestra",
+        "start": 970.58,
+        "end": 976.34
+    },
+    {
+        "text": " definición de contiguos eventualmente podría incluirle de Abral, que ahora estamos optando",
+        "start": 976.34,
+        "end": 981.4200000000001
+    },
+    {
+        "text": " por no hacerlo así. Claro, pero si quisieras, aumenta la diagonal, ¿cómo lo escribirías?",
+        "start": 981.42,
+        "end": 989.26
+    },
+    {
+        "text": " Así, en una ecuación algo como...",
+        "start": 989.26,
+        "end": 991.26
+    },
+    {
+        "text": " Y bueno, diría que esta diferencia sea menor y un aberno, hay que...",
+        "start": 991.26,
+        "end": 1003.66
+    },
+    {
+        "text": " Bueno, ahí capaz que tenás que ir, decir que esto es menor igual a uno y esto es menor",
+        "start": 1003.66,
+        "end": 1010.1
+    },
+    {
+        "text": " igual a uno. O sea, ponad la dos condiciones, ya o claro. Y entonces, ya emitís que los dos",
+        "start": 1010.1,
+        "end": 1018.74
+    },
+    {
+        "text": " difieran en uno y metes a las esquinas y tendría que despedir también que los pixels sean diferentes.",
+        "start": 1018.74,
+        "end": 1024.1399999999999
+    },
+    {
+        "text": " Tiene ahora dos pices, pepe, prima, diferentes entre sí son contiguos.",
+        "start": 1024.1399999999999,
+        "end": 1027.42
+    },
+    {
+        "text": " Sí, esto es menor igual a uno y esto es menor igual a uno.",
+        "start": 1028.22,
+        "end": 1033.26
+    },
+    {
+        "text": " Lo que hay en trajados.",
+        "start": 1033.26,
+        "end": 1036.0600000000002
+    },
+    {
+        "text": " Ahí, cada pixel p podría llegar a tener hasta 8 pixels contiguos y con la formalización",
+        "start": 1036.0600000000002,
+        "end": 1042.6200000000001
+    },
+    {
+        "text": " que estamos haciendo ahora, puede llegar a tener hasta...",
+        "start": 1042.6200000000001,
+        "end": 1048.38
+    },
+    {
+        "text": " Y solo hasta 4.",
+        "start": 1048.94,
+        "end": 1050.5400000000002
+    },
+    {
+        "text": " Pero es más bien eso, la definición de cómo modelar lo que tiene que dar más como que",
+        "start": 1053.9,
+        "end": 1060.5
+    },
+    {
+        "text": " tipo de estructura estoy buscando el imagen que con lo que vamos a hacer ahora.",
+        "start": 1060.5,
+        "end": 1065.3400000000001
+    },
+    {
+        "text": " Una pregunta.",
+        "start": 1065.3400000000001,
+        "end": 1066.7800000000002
+    },
+    {
+        "text": " Sí.",
+        "start": 1066.7800000000002,
+        "end": 1067.7800000000002
+    },
+    {
+        "text": " No se introducen ningún tipo de valor de yo que sea una tolerancia porque si no, muchas",
+        "start": 1067.7800000000002,
+        "end": 1076.22
+    },
+    {
+        "text": " de este tipo de imágenes pasa que debí en más regiones de las que en realidad queremos.",
+        "start": 1076.22,
+        "end": 1081.66
+    },
+    {
+        "text": " Sí, es lo que les decía hoy en más temprano que en la práctica si uno ve un imagen como",
+        "start": 1081.66,
+        "end": 1087.9
+    },
+    {
+        "text": " está, su maravillaje corregí, si se hace lo que referís.",
+        "start": 1087.9,
+        "end": 1091.46
+    },
+    {
+        "text": " Acá, eso es el fondo, este que parece todo negro, en realidad tiene un montón de matices,",
+        "start": 1091.46,
+        "end": 1098.22
+    },
+    {
+        "text": " sus variaciones, sus tiles de negro, se no son todo acero, que para que hay cero hay una y cinco,",
+        "start": 1098.22,
+        "end": 1103.74
+    },
+    {
+        "text": " y vuelvo a esto como negro.",
+        "start": 1103.74,
+        "end": 1106.02
+    },
+    {
+        "text": " A que eso es ruido de cuando se captura la imagen todo.",
+        "start": 1106.02,
+        "end": 1111.3
+    },
+    {
+        "text": " Entonces, una cosa me aburda que podés hacer es antes hacer un preposicimiento y",
+        "start": 1111.3,
+        "end": 1118.46
+    },
+    {
+        "text": " umbranizar todos los valores de los pices, y bueno, todos los que son menores que 16 son",
+        "start": 1118.46,
+        "end": 1125.3
+    },
+    {
+        "text": " cero, 16 al 32 son uno en el momento de ver.",
+        "start": 1125.3,
+        "end": 1130.58
+    },
+    {
+        "text": " Y entonces así eliminas un poco de ruido, hay otra técnica mucho mejor para reducir ruido,",
+        "start": 1130.58,
+        "end": 1140.78
+    },
+    {
+        "text": " y porque podría jorrer después de umbranizar.",
+        "start": 1140.78,
+        "end": 1144.06
+    },
+    {
+        "text": " Es nada de cosas mucho más sofisticadas que se pueden hacer.",
+        "start": 1144.06,
+        "end": 1148.46
+    },
+    {
+        "text": " Incluso el problema de segmentación en sí, hay técnicas mucho más sofisticadas que",
+        "start": 1148.46,
+        "end": 1153.98
+    },
+    {
+        "text": " esto que estamos viendo ahora, pero esto les ilustra una aplicación bastante real.",
+        "start": 1153.98,
+        "end": 1163.54
+    },
+    {
+        "text": " No es nada loco.",
+        "start": 1163.54,
+        "end": 1167.7
+    },
+    {
+        "text": " Sin propiso de que hay esas cosas más sofisticadas que se puedan hacer.",
+        "start": 1167.7,
+        "end": 1173.9
+    },
+    {
+        "text": " No sé si iba por ahí, la pregunta era eso.",
+        "start": 1173.9,
+        "end": 1177.54
+    },
+    {
+        "text": " Eso asumamos que esa un realización se corrió ese preposicimiento y el imagen se hizo",
+        "start": 1177.54,
+        "end": 1185.98
+    },
+    {
+        "text": " antes.",
+        "start": 1185.98,
+        "end": 1186.98
+    },
+    {
+        "text": " La imagen que tenemos en tuve manos tiene sentido segmentar la imagen de esta manera.",
+        "start": 1186.98,
+        "end": 1194.5
+    },
+    {
+        "text": " Otro tipo de imágenes en el sentido de segmentar así como estoy diciendo es que en imágenes",
+        "start": 1194.5,
+        "end": 1198.26
+    },
+    {
+        "text": " sintéticas, en imágenes que son producidas por computadora, esos sintéticas.",
+        "start": 1198.26,
+        "end": 1206.54
+    },
+    {
+        "text": " Bueno, ahí no tenés el problema del ruido de fom.",
+        "start": 1207.54,
+        "end": 1212.3799999999999
+    },
+    {
+        "text": " Y ahí vas a tener, yo es un mico, no de una computadora que fuera,",
+        "start": 1217.74,
+        "end": 1221.8999999999999
+    },
+    {
+        "text": " vas a tener regiones que son realmente perfectamente planas.",
+        "start": 1221.8999999999999,
+        "end": 1226.22
+    },
+    {
+        "text": " Podés tener otros problemas.",
+        "start": 1229.22,
+        "end": 1230.46
+    },
+    {
+        "text": " Por ejemplo, en el caso de AD de todo nos gris en una superficie de estas dos,",
+        "start": 1230.46,
+        "end": 1235.6599999999999
+    },
+    {
+        "text": " de representar como que está inclinado o que la luz le da inclinado,",
+        "start": 1235.66,
+        "end": 1239.1000000000001
+    },
+    {
+        "text": " ahí quisiera identificar eso como un parche.",
+        "start": 1239.1000000000001,
+        "end": 1243.22
+    },
+    {
+        "text": " Y sin embargo, el tono de gris o variando porque la luz la en la intensidad de el ruso",
+        "start": 1243.22,
+        "end": 1250.46
+    },
+    {
+        "text": " a cambiamos.",
+        "start": 1250.46,
+        "end": 1251.46
+    },
+    {
+        "text": " Pero bueno, en imágenes como esta médica que les mostrará si no tenés ese problema",
+        "start": 1251.46,
+        "end": 1255.6200000000001
+    },
+    {
+        "text": " de las diferencias de combinación en principio, no sé capaz que sí.",
+        "start": 1255.6200000000001,
+        "end": 1259.3000000000002
+    },
+    {
+        "text": " Pero como le decía esto, es una especie de simplificación de un problema que puede",
+        "start": 1259.3000000000002,
+        "end": 1264.7
+    },
+    {
+        "text": " tener un montón de aristas y lo van a ver.",
+        "start": 1264.7,
+        "end": 1269.7
+    },
+    {
+        "text": " Este real, y ahora que ver en cada tipo de imágenes que es tipo y cada tipo de objetos",
+        "start": 1269.7,
+        "end": 1275.06
+    },
+    {
+        "text": " que uno quiere cementar, a ver qué cosa combina ser y qué no.",
+        "start": 1275.06,
+        "end": 1278.7
+    },
+    {
+        "text": " Después, en realidad, hay otro aspecto que tiene que ver con una realización que esta relacionaba",
+        "start": 1280.7,
+        "end": 1287.7
+    },
+    {
+        "text": " con esto, que es cuando vamos a buscar las regiones que nos interesan,",
+        "start": 1287.7,
+        "end": 1292.3
+    },
+    {
+        "text": " lo que pide el ejercicio final es que demos un algoritmo para encontrar las regiones",
+        "start": 1292.3,
+        "end": 1300.3
+    },
+    {
+        "text": " que tienen un tamaño al menos T para un cierto un gran T.",
+        "start": 1300.3,
+        "end": 1303.46
+    },
+    {
+        "text": " Entonces yo te puedo decir yo médico, bueno, miemén,",
+        "start": 1303.46,
+        "end": 1307.82
+    },
+    {
+        "text": " mostrame todas las regiones que tienen la semana de 150 píxas.",
+        "start": 1307.82,
+        "end": 1316.82
+    },
+    {
+        "text": " Entonces de esa manera, descarto todos los puntitos chiquititos que tienen que ver con",
+        "start": 1316.86,
+        "end": 1322.86
+    },
+    {
+        "text": " con cosas que capaz que no interesa.",
+        "start": 1325.86,
+        "end": 1327.46
+    },
+    {
+        "text": " Bueno, ya que capaz que sí que lo que me interesa son las partes más chiquititas",
+        "start": 1327.46,
+        "end": 1332.1399999999999
+    },
+    {
+        "text": " y con un tono de gris que esté cercano al cero.",
+        "start": 1332.1399999999999,
+        "end": 1337.3
+    },
+    {
+        "text": " Y entonces me quiero quedar con todas estas cositas que se ven acá dentro.",
+        "start": 1337.3,
+        "end": 1341.3
+    },
+    {
+        "text": " Y en realidad desde el punto de esto de lo que vamos a hacer ahora,",
+        "start": 1342.3,
+        "end": 1347.3
+    },
+    {
+        "text": " nos cambia, nos responde de esta el horínio que no cambian,",
+        "start": 1347.3,
+        "end": 1350.3
+    },
+    {
+        "text": " vamos a resolver cualquiera de esas cosas usando, haciendo básicamente lo mismo que vamos a hacer ahora.",
+        "start": 1350.3,
+        "end": 1355.3
+    },
+    {
+        "text": " No sé si iba por ahí la pregunta o nada.",
+        "start": 1359.3,
+        "end": 1362.3
+    },
+    {
+        "text": " Bueno, entonces esta es nuestra formalización de que es una región,",
+        "start": 1363.3,
+        "end": 1373.3
+    },
+    {
+        "text": " de que es una imagen y de que es una región.",
+        "start": 1373.3,
+        "end": 1376.3
+    },
+    {
+        "text": " Daba este problema expresado en términos generales,",
+        "start": 1376.3,
+        "end": 1382.3
+    },
+    {
+        "text": " ecoloquiales más informal, tratamos de bajar a tierra una formulación más precisa",
+        "start": 1382.3,
+        "end": 1388.3
+    },
+    {
+        "text": " de qué es lo que queremos hacer.",
+        "start": 1388.3,
+        "end": 1390.3
+    },
+    {
+        "text": " Entonces después qué es lo que buscamos, como le decía,",
+        "start": 1393.3,
+        "end": 1396.3
+    },
+    {
+        "text": " es una logaritmo que da un imagen y ha ido un braal T,",
+        "start": 1396.3,
+        "end": 1403.3
+    },
+    {
+        "text": " nos devuelva el conjunto de todas las regiones del imagen que tiene tamaño al menos T.",
+        "start": 1403.3,
+        "end": 1411.3
+    },
+    {
+        "text": " Y nos pide que nuestro algoritmo tiene que tener,",
+        "start": 1415.3,
+        "end": 1420.3
+    },
+    {
+        "text": " tiene que al mentir una implementación cuyo tiempo de distribución sea O de E.",
+        "start": 1420.3,
+        "end": 1425.3
+    },
+    {
+        "text": " Me cuadra, es decir, que sea lineal en el tamaño del imagen.",
+        "start": 1425.3,
+        "end": 1428.3
+    },
+    {
+        "text": " El imagen tiene E. Me cuadra dos pixels y queremos que nuestro algoritmo",
+        "start": 1428.3,
+        "end": 1433.3
+    },
+    {
+        "text": " que veis identificar todas las regiones de un cierto tamaño",
+        "start": 1433.3,
+        "end": 1438.3
+    },
+    {
+        "text": " no sebe asintóticamente más tiempo y simplemente le da el todo el imagen.",
+        "start": 1440.3,
+        "end": 1444.3
+    },
+    {
+        "text": " Después nos pide que mostremos la corrección de nuestro algoritmo,",
+        "start": 1444.3,
+        "end": 1451.3
+    },
+    {
+        "text": " así mostremos que nuestro algoritmo funciona correctamente.",
+        "start": 1451.3,
+        "end": 1456.3
+    },
+    {
+        "text": " Y finalmente que mostremos, que cumplimos con lo que nos piden en la parte A,",
+        "start": 1456.3,
+        "end": 1462.3
+    },
+    {
+        "text": " es decir, nuestro algoritmo admite una implementación con tiempo de ejecución",
+        "start": 1462.3,
+        "end": 1469.3
+    },
+    {
+        "text": " que es O de E. Me cuadrado.",
+        "start": 1469.3,
+        "end": 1472.3
+    },
+    {
+        "text": " Esta es una estructura de ejercicio típica que van a encontrar en varios de los ejercicios de práctico.",
+        "start": 1474.3,
+        "end": 1483.3
+    },
+    {
+        "text": " Nos lo hacen encontrar con algunos de ellos, parciales, examenes,",
+        "start": 1483.3,
+        "end": 1489.3
+    },
+    {
+        "text": " donde se piden estas tres cosas o alguna combinación de estas cosas.",
+        "start": 1490.3,
+        "end": 1497.3
+    },
+    {
+        "text": " Y por qué, bueno, porque esto tiene mucho que ver con los objetivos",
+        "start": 1498.3,
+        "end": 1504.3
+    },
+    {
+        "text": " que tenemos de aprendizaje en el curso.",
+        "start": 1504.3,
+        "end": 1507.3
+    },
+    {
+        "text": " Nosotros queremos aprender a conocer algoritmos clásicos,",
+        "start": 1507.3,
+        "end": 1513.3
+    },
+    {
+        "text": " por ejemplo, algoritmos sobre grafos y queremos poder aplicarlos en problemas con caretos",
+        "start": 1513.3,
+        "end": 1519.3
+    },
+    {
+        "text": " como éste que se les que le estamos presentando acá.",
+        "start": 1519.3,
+        "end": 1522.3
+    },
+    {
+        "text": " Se le pasa de diseñar algoritmos nuevos en términos de usando las herramientas alberizmos",
+        "start": 1523.3,
+        "end": 1529.3
+    },
+    {
+        "text": " que hemos aprendido y queremos hacer capaces de analizar rigorosamente nuestros algoritmos.",
+        "start": 1529.3,
+        "end": 1537.3
+    },
+    {
+        "text": " Por eso están estas partes B y estas partes analizarlo tanto el punto de vista de que hacen lo que tienen que hacer",
+        "start": 1537.3,
+        "end": 1544.3
+    },
+    {
+        "text": " como desde el punto de vista de qué tan eficientes son asintóticamente.",
+        "start": 1544.3,
+        "end": 1550.3
+    },
+    {
+        "text": " Esto es de demostrar la corrección del algoritmo, quiero hacer notar,",
+        "start": 1553.3,
+        "end": 1559.3
+    },
+    {
+        "text": " porque a veces hay una confusión que es diferente a la corrección de una implementación concreta.",
+        "start": 1559.3,
+        "end": 1566.3
+    },
+    {
+        "text": " Esto no quiere decir que haya una de bugs, bugs del punto de vista de programación.",
+        "start": 1566.3,
+        "end": 1572.3
+    },
+    {
+        "text": " Es decir que el algoritmo de su formulación abstracta es correcto al sentido de que resuelve el primero que tiene que resolver.",
+        "start": 1572.3,
+        "end": 1581.3
+    },
+    {
+        "text": " Entonces esto es el algoritmo que como gran vista de más los pesamos en vuelta o nivel,",
+        "start": 1581.3,
+        "end": 1587.3
+    },
+    {
+        "text": " cuando uno lo va a implementar puede cometer errores de programación.",
+        "start": 1587.3,
+        "end": 1592.3
+    },
+    {
+        "text": " Es otro tipo de cosa que no es lo que estamos hablando.",
+        "start": 1592.3,
+        "end": 1596.3
+    },
+    {
+        "text": " Son errores de naturaleza diferente.",
+        "start": 1596.3,
+        "end": 1600.3
+    },
+    {
+        "text": " La cosa es diseñar mal un algoritmo, que aunque el programa es bien, no resuelve el problema,",
+        "start": 1600.3,
+        "end": 1605.3
+    },
+    {
+        "text": " la cosa es programar mal un algoritmo que está bien diseñado.",
+        "start": 1605.3,
+        "end": 1614.3
+    },
+    {
+        "text": " Entonces, este es el problema que tenemos entre manos.",
+        "start": 1614.3,
+        "end": 1619.3
+    },
+    {
+        "text": " Entonces si les parece empezar a trabajar sobre la parte...",
+        "start": 1635.3,
+        "end": 1658.3
+    },
+    {
+        "text": " sobre la parte... ¿cómo diseñar el algoritmo?",
+        "start": 1659.3,
+        "end": 1666.3
+    },
+    {
+        "text": " ¿Cómo arranca bien esto? ¿Pero no es este problema?",
+        "start": 1667.3,
+        "end": 1689.3
+    },
+    {
+        "text": " No sé si está bien, pero podrías pensar el problema como buscar componentes con exas en un grafo,",
+        "start": 1689.3,
+        "end": 1696.3
+    },
+    {
+        "text": " donde tenés un... tú no serían los píxeles y tendrías un vértices y son ascentes y el mismo color,",
+        "start": 1696.3,
+        "end": 1707.3
+    },
+    {
+        "text": " de la misma número de la materia.",
+        "start": 1707.3,
+        "end": 1712.3
+    },
+    {
+        "text": " Si fuera un parista, si fuera un parista.",
+        "start": 1713.3,
+        "end": 1718.3
+    },
+    {
+        "text": " Sí, yo creo que se...",
+        "start": 1718.3,
+        "end": 1721.3
+    },
+    {
+        "text": " Hoy es un buen camino, es decir, pensar esto.",
+        "start": 1721.3,
+        "end": 1724.3
+    },
+    {
+        "text": " De hecho por eso se nos traje a pensar esto en términos de grafos.",
+        "start": 1724.3,
+        "end": 1729.3
+    },
+    {
+        "text": " Entonces, bueno, en principio tenemos un problema sobre imágenes,",
+        "start": 1729.3,
+        "end": 1735.3
+    },
+    {
+        "text": " matrices, partes en esas imágenes que son del mismo tono de gris.",
+        "start": 1736.3,
+        "end": 1745.3
+    },
+    {
+        "text": " En principio hay no hay ningún grafo.",
+        "start": 1745.3,
+        "end": 1749.3
+    },
+    {
+        "text": " La habilidad que uno espera de desarrollar, me da que trabaja con estas cosas,",
+        "start": 1749.3,
+        "end": 1753.3
+    },
+    {
+        "text": " que vamos avanzando suelos, pues bueno, cuando nos presentamos las situaciones así,",
+        "start": 1753.3,
+        "end": 1758.3
+    },
+    {
+        "text": " pero a ver acá, esto de píxeles que son contigo es el preciso,",
+        "start": 1759.3,
+        "end": 1765.3
+    },
+    {
+        "text": " así que me suena como componente con exas en un grafo,",
+        "start": 1765.3,
+        "end": 1768.3
+    },
+    {
+        "text": " entonces los podríamos modelar de esa manera,",
+        "start": 1768.3,
+        "end": 1772.3
+    },
+    {
+        "text": " que es lo que estás planteando vos.",
+        "start": 1772.3,
+        "end": 1775.3
+    },
+    {
+        "text": " Y una vez que lo tengo modelado en términos de grafos,",
+        "start": 1775.3,
+        "end": 1778.3
+    },
+    {
+        "text": " puedo recurrir a las herramientas alurínticas que conozco para trabajar con eso,",
+        "start": 1778.3,
+        "end": 1785.3
+    },
+    {
+        "text": " en particular se cómo encontrar componentes con exas dentro de un grafo",
+        "start": 1785.3,
+        "end": 1791.3
+    },
+    {
+        "text": " porque lo tengo viendo los jueves.",
+        "start": 1791.3,
+        "end": 1795.3
+    },
+    {
+        "text": " Entonces sí, sería un camino.",
+        "start": 1795.3,
+        "end": 1798.3
+    },
+    {
+        "text": " Claro que acá esa conexión se nos simplifica porque una,",
+        "start": 1798.3,
+        "end": 1804.3
+    },
+    {
+        "text": " porque están justamente estudiando grasos y otra,",
+        "start": 1804.3,
+        "end": 1809.3
+    },
+    {
+        "text": " porque la formalización del problema se está mismo en la letra de la carcicia.",
+        "start": 1809.3,
+        "end": 1814.3
+    },
+    {
+        "text": " Entonces, a mí es la formalización, un poco nos guía también a pesar eso está.",
+        "start": 1814.3,
+        "end": 1820.3
+    },
+    {
+        "text": " Pero está, es perfectamente eso donde quería juntar,",
+        "start": 1820.3,
+        "end": 1823.3
+    },
+    {
+        "text": " a que una forma de resolver el problema es modelarlo en términos de grafos.",
+        "start": 1823.3,
+        "end": 1829.3
+    },
+    {
+        "text": " Entonces, como el algoritmo, entonces cómo sería?",
+        "start": 1829.3,
+        "end": 1835.3
+    },
+    {
+        "text": " ¿Qué sería el primer paso?",
+        "start": 1835.3,
+        "end": 1839.3
+    },
+    {
+        "text": " ¿Parmar el grafo?",
+        "start": 1840.3,
+        "end": 1843.3
+    },
+    {
+        "text": " Armar el grafo. ¿Está bien?",
+        "start": 1843.3,
+        "end": 1847.3
+    },
+    {
+        "text": " Entonces, nuestro algoritmo tendría.",
+        "start": 1851.3,
+        "end": 1855.3
+    },
+    {
+        "text": " Paso una, sería construir este grafo, o sea, no me lo dije.",
+        "start": 1855.3,
+        "end": 1862.3
+    },
+    {
+        "text": " Bueno, te va a decir, ¿quién es que cuál es ese conjunto de vértices y cuál es ese conjunto de aristas?",
+        "start": 1869.3,
+        "end": 1883.3
+    },
+    {
+        "text": " No caracíenlo un poco lo dijimos.",
+        "start": 1883.3,
+        "end": 1887.3
+    },
+    {
+        "text": " Sería V, sería el conjunto 1M, acuadrado.",
+        "start": 1888.3,
+        "end": 1904.3
+    },
+    {
+        "text": " Estro conjunto de vértices son todas las posiciones posiciones de píxeles.",
+        "start": 1905.3,
+        "end": 1919.3
+    },
+    {
+        "text": " Eso son los vértices de nuestro grafos y el conjunto de aristas P.",
+        "start": 1920.3,
+        "end": 1925.3
+    },
+    {
+        "text": " Sería.",
+        "start": 1935.3,
+        "end": 1938.3
+    },
+    {
+        "text": " Con un conjunto de pares de vértices V,",
+        "start": 1939.3,
+        "end": 1946.3
+    },
+    {
+        "text": " o sea, esto va a ser falta mi log.",
+        "start": 1946.3,
+        "end": 1953.3
+    },
+    {
+        "text": " V y son, donde V y Son pares de vértices, sabemos leer V,",
+        "start": 1953.3,
+        "end": 1966.3
+    },
+    {
+        "text": " los vértices en este caso son pares, ¿verdad?",
+        "start": 1967.3,
+        "end": 1969.3
+    },
+    {
+        "text": " Entonces podríamos amarle, bueno, V igual a U sub x, U sub y V igual a V sub x, V sub y,",
+        "start": 1969.3,
+        "end": 1990.3
+    },
+    {
+        "text": " ¿y qué tiene que cumplir?",
+        "start": 1990.3,
+        "end": 1993.3
+    },
+    {
+        "text": " Digimos que fuera, va a haber una arista solo entre píxeles contigo, ¿verdad?",
+        "start": 1993.3,
+        "end": 1999.3
+    },
+    {
+        "text": " O sea, lo que tiene que pasar acá es que U sub x menos V sub x,",
+        "start": 1999.3,
+        "end": 2013.3
+    },
+    {
+        "text": " más U sub y menos V sub y, sí igual a una y ¿qué más?",
+        "start": 2014.3,
+        "end": 2025.3
+    },
+    {
+        "text": " Que la matriz en la entrada U x suit tenga el mismo valor que la matriz en la entrada de x, ¿verdad?",
+        "start": 2033.3,
+        "end": 2041.3
+    },
+    {
+        "text": " Claro, que los píxeles tengan el mismo, la misma intensidad lúminica, el mismo tono de gris,",
+        "start": 2041.3,
+        "end": 2047.3
+    },
+    {
+        "text": " o sea, que tenemos que pedir además es que la matriz que la hemos llamado I en U sub x, U sub y,",
+        "start": 2047.3,
+        "end": 2057.3
+    },
+    {
+        "text": " sí igual.",
+        "start": 2057.3,
+        "end": 2061.3
+    },
+    {
+        "text": " Bien, esto es nuestro grafo, perfecto, ese es el paso I de nuestro algoritmo.",
+        "start": 2062.3,
+        "end": 2084.3
+    },
+    {
+        "text": " Fíjense que yo podría, en realidad, decir, bueno, voy a, voy a modelar el problema en términos de grafos,",
+        "start": 2085.3,
+        "end": 2094.3
+    },
+    {
+        "text": " y el grafos podría construirlo de otra manera, por ejemplo, simplemente podría ser un tejido de ¿qué píxeles son contigo entre sí?",
+        "start": 2094.3,
+        "end": 2104.3
+    },
+    {
+        "text": " Si no haber pedido esta condición de acá abajo para formar parte de una rista, si las aristas son simplemente entre píxeles contigo,",
+        "start": 2104.3,
+        "end": 2116.3
+    },
+    {
+        "text": " y después esta condición de bueno que sean de la misma región o se manejarla dentro de los algoritmos que vas a,",
+        "start": 2116.3,
+        "end": 2123.3
+    },
+    {
+        "text": " o sea, en definitiva, con el mismo problema uno se puede ocurrir, sí, modelarlo en términos de grafos,",
+        "start": 2124.3,
+        "end": 2130.3
+    },
+    {
+        "text": " pero, no, potencialmente, porque saben de maneras diferentes.",
+        "start": 2130.3,
+        "end": 2135.3
+    },
+    {
+        "text": " Pero bueno, este fue una de las ideas que la idea que salió recién y parece razonable porque la intuición que había trace,",
+        "start": 2135.3,
+        "end": 2145.3
+    },
+    {
+        "text": " que bueno, que ahora con esta definición de este grafos, o sea, con esta forma de modelar el problema en términos de grafos,",
+        "start": 2145.3,
+        "end": 2151.3
+    },
+    {
+        "text": " las regiones de la imagen se corresponden con componentes con hexas dentro de este grafos.",
+        "start": 2151.3,
+        "end": 2158.3
+    },
+    {
+        "text": " Yo que sería el segundo paso de nuestro algoritmo.",
+        "start": 2158.3,
+        "end": 2163.3
+    },
+    {
+        "text": " Primero paso, construimos el grafos, ¿verdad?",
+        "start": 2167.3,
+        "end": 2171.3
+    },
+    {
+        "text": " ¿Continúa la componencia de la cantidad de artises?",
+        "start": 2171.3,
+        "end": 2176.3
+    },
+    {
+        "text": " ¿Continúa la componencia de la cantidad de artises?",
+        "start": 2176.3,
+        "end": 2181.3
+    },
+    {
+        "text": " ¿No? ¿Qué?",
+        "start": 2181.3,
+        "end": 2185.3
+    },
+    {
+        "text": " Paso dos.",
+        "start": 2185.3,
+        "end": 2188.3
+    },
+    {
+        "text": " O tener todas.",
+        "start": 2193.3,
+        "end": 2198.3
+    },
+    {
+        "text": " Las componentes con hexas.",
+        "start": 2202.3,
+        "end": 2208.3
+    },
+    {
+        "text": " Deje y voy a proponer acá, contar además cuántos elementos tiene cada componente.",
+        "start": 2208.3,
+        "end": 2218.3
+    },
+    {
+        "text": " Sí.",
+        "start": 2218.3,
+        "end": 2224.3
+    },
+    {
+        "text": " O sea, cuando metes un vertice diamos en el BFS o en el DFS, lo dependiendo de lo que uses, ya lo puedes contando.",
+        "start": 2224.3,
+        "end": 2232.3
+    },
+    {
+        "text": " Puede ser.",
+        "start": 2232.3,
+        "end": 2235.3
+    },
+    {
+        "text": " Bien.",
+        "start": 2235.3,
+        "end": 2242.3
+    },
+    {
+        "text": " Perfecto.",
+        "start": 2243.3,
+        "end": 2248.3
+    },
+    {
+        "text": " Y ahora, va a estar.",
+        "start": 2248.3,
+        "end": 2255.3
+    },
+    {
+        "text": " El paso tres.",
+        "start": 2255.3,
+        "end": 2260.3
+    },
+    {
+        "text": " ¿Qué sería?",
+        "start": 2260.3,
+        "end": 2265.3
+    },
+    {
+        "text": " Es que me quedé con el que me interesa.",
+        "start": 2265.3,
+        "end": 2270.3
+    },
+    {
+        "text": " ¿Qué fíjense?",
+        "start": 2270.3,
+        "end": 2273.3
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 2273.3,
+        "end": 2275.3
+    },
+    {
+        "text": " Tadé que ir dejando las componentes con ese que no cumple con el delante.",
+        "start": 2275.3,
+        "end": 2279.3
+    },
+    {
+        "text": " Exacto.",
+        "start": 2279.3,
+        "end": 2282.3
+    },
+    {
+        "text": " Me tengo que quedarme con los solos las que me interesa.",
+        "start": 2282.3,
+        "end": 2286.3
+    },
+    {
+        "text": " Fíjense, por eso, yo le decía que en este paso tres, cuando digamos, bueno, ahora vamos a recorrer las componentes con hexas.",
+        "start": 2286.3,
+        "end": 2291.3
+    },
+    {
+        "text": " Y quedarme solo con las que me interesa.",
+        "start": 2291.3,
+        "end": 2294.3
+    },
+    {
+        "text": " El solo que me interesa, no puede ser nada, porque con ellos, que el valor de los pixels, entre tanto y tanto,",
+        "start": 2294.3,
+        "end": 2301.3
+    },
+    {
+        "text": " y que la región, el tamaño de la región, o sea, le puedo aplicar los filtros que se me ocurra.",
+        "start": 2301.3,
+        "end": 2307.3
+    },
+    {
+        "text": " El punto de vista de lorínco no nos cambia nada.",
+        "start": 2307.3,
+        "end": 2311.3
+    },
+    {
+        "text": " El punto clave es una darse cuenta de moderar esto en términos de grafos.",
+        "start": 2311.3,
+        "end": 2318.3
+    },
+    {
+        "text": " Y también, una vez que tenemos hecha la otra acción del problema, puede parecer bastante natural.",
+        "start": 2318.3,
+        "end": 2324.3
+    },
+    {
+        "text": " Al principio, cuando uno simplemente vea, bueno, tiene una imagen acá y quiere encontrar las partes, que es el mismo color.",
+        "start": 2324.3,
+        "end": 2331.3
+    },
+    {
+        "text": " No es tan obvio que una representación en términos de una modela o en términos de lajos.",
+        "start": 2331.3,
+        "end": 2337.3
+    },
+    {
+        "text": " ¿Se lo que hay que usar?",
+        "start": 2337.3,
+        "end": 2340.3
+    },
+    {
+        "text": " Pero una vez que está hecha esa forma de modelar y que tenemos una forma de brímica de obtener todas las componentes con hexas,",
+        "start": 2340.3,
+        "end": 2348.3
+    },
+    {
+        "text": " bueno, ya está el trabajo hecho.",
+        "start": 2348.3,
+        "end": 2351.3
+    },
+    {
+        "text": " Después es aplicar los filtros que hay que hacer.",
+        "start": 2351.3,
+        "end": 2354.3
+    },
+    {
+        "text": " El punto clave es sobre todo el 1 y el 2.",
+        "start": 2354.3,
+        "end": 2357.3
+    },
+    {
+        "text": " El 1, que es un trabajo de modelado, rasevice modelizar, pero no solo decimos modelar.",
+        "start": 2357.3,
+        "end": 2364.3
+    },
+    {
+        "text": " El trabajo de modelar este problema y conocer algoritmos para trabajar,",
+        "start": 2364.3,
+        "end": 2373.3
+    },
+    {
+        "text": " efectivamente, adaptándolos como esto que decimos ahora, de contar, además, con el tamaño de cada componente con hexa, para resolver el problema que tenemos.",
+        "start": 2373.3,
+        "end": 2383.3
+    },
+    {
+        "text": " Entonces el paso 3 sería sencillo, sería devolver,",
+        "start": 2383.3,
+        "end": 2390.3
+    },
+    {
+        "text": " y verlo, vamos a verlo.",
+        "start": 2390.3,
+        "end": 2397.3
+    },
+    {
+        "text": " Ahora vamos a verlo, obtener todas las componentes de g, con hexas de g, déjeme poner los nombres a esto.",
+        "start": 2397.3,
+        "end": 2412.3
+    },
+    {
+        "text": " Vamos a obtener todas las componentes de g, y determinar el tamaño de cada una.",
+        "start": 2413.3,
+        "end": 2421.3
+    },
+    {
+        "text": " Y acá lo vamos a hacer es devolver, entonces, que es un conjunto de s, o sea, el conjunto de los regiones que pertenecen a s,",
+        "start": 2421.3,
+        "end": 2430.3
+    },
+    {
+        "text": " o de los componentes con hexas, que pertenecen a s, tal que el tamaño de esta componente con hexa es mayor igual que t,",
+        "start": 2430.3,
+        "end": 2438.3
+    },
+    {
+        "text": " o de generar que satisfaga las condiciones que quiera, en este caso, es de tener por lo menos ese tamaño.",
+        "start": 2439.3,
+        "end": 2450.3
+    },
+    {
+        "text": " Para todo el mundo le quedó claro lo que hicimos, y a todo el mundo le parece que funciona.",
+        "start": 2450.3,
+        "end": 2465.3
+    },
+    {
+        "text": " Bien.",
+        "start": 2466.3,
+        "end": 2473.3
+    },
+    {
+        "text": " ¿Quién nos quedaría?",
+        "start": 2473.3,
+        "end": 2476.3
+    },
+    {
+        "text": " No preguntan. ¿Qué estamos en el moderado que nos estamos en el orden?",
+        "start": 2476.3,
+        "end": 2482.3
+    },
+    {
+        "text": " Pero sí, recibimos que venin un orden o algo, tenemos que ver más sin el punto o no.",
+        "start": 2482.3,
+        "end": 2491.3
+    },
+    {
+        "text": " Bueno, de hecho, vamos a hablar, cuando hablamos de cuando decís, hablar de orden, decís hablar de la complejidad de tiempo, hablar del ejecución.",
+        "start": 2492.3,
+        "end": 2500.3
+    },
+    {
+        "text": " Eso lo vamos a tener que analizar.",
+        "start": 2500.3,
+        "end": 2503.3
+    },
+    {
+        "text": " Así como está esto que pusimos acá, es un algodismo que está bien definido.",
+        "start": 2503.3,
+        "end": 2508.3
+    },
+    {
+        "text": " Discibamos con tu y, construí este grafo que está acá.",
+        "start": 2509.3,
+        "end": 2514.3
+    },
+    {
+        "text": " No hay mucho margen de duda para qué es lo que es ese grafo.",
+        "start": 2514.3,
+        "end": 2519.3
+    },
+    {
+        "text": " Otenen las componentes con hexa de G.",
+        "start": 2519.3,
+        "end": 2523.3
+    },
+    {
+        "text": " Y paso 3, quedate con un subconjunto de esas componentes con hexas.",
+        "start": 2523.3,
+        "end": 2530.3
+    },
+    {
+        "text": " Ahora, claro, si vos ves este algodismo expresado de esta manera, no está en un formato de pseudo código, donde uno vas a ir al fino, como de hecho, como se construye ese grafo.",
+        "start": 2531.3,
+        "end": 2545.3
+    },
+    {
+        "text": " Podría haberlo hecho, podría haber acá, en vez de decir, construí este grafo G y expresar matemáticamente que ese grafo G podría haber escrito un pseudo código que construye ese grafo.",
+        "start": 2545.3,
+        "end": 2558.3
+    },
+    {
+        "text": " No es mal, simplemente estás expresando el algodismo con un poco más detallado, expresamente como lo construirías.",
+        "start": 2558.3,
+        "end": 2568.3
+    },
+    {
+        "text": " Acá optamos por hacerlo de esta manera lo que vamos a tener que hacer es que cuando basamos a analizar el tiempo de institución, que de hecho el ejercicio lo pide,",
+        "start": 2568.3,
+        "end": 2577.3
+    },
+    {
+        "text": " ahí vamos a decir, bueno, este paso, acá en este laborismo tiene 3 pasos, queremos que el tiempo total del algodismo sea nomás de O de M cuadrado,",
+        "start": 2578.3,
+        "end": 2589.3
+    },
+    {
+        "text": " entonces ninguno de estos pasos puede excederse de tiempo O de M cuadrado.",
+        "start": 2589.3,
+        "end": 2593.3
+    },
+    {
+        "text": " El paso uno se puede ejecutar, se puede implementar de forma que el tiempo de ejecución se agode M cuadrado, tenemos que decir cómo lo hacemos.",
+        "start": 2593.3,
+        "end": 2604.3
+    },
+    {
+        "text": " Entonces, en definitivamente cuando analiza el tiempo de ejecución del algodismo, ahí vas a decir, bueno, este grafo que está definido en el paso uno, lo puedo construir así, y eso no va a llevar tiempo O de M cuadrado.",
+        "start": 2605.3,
+        "end": 2620.3
+    },
+    {
+        "text": " Eventualmente, para algunos de estos pasos, podrías tener que argumentar, como hicimos, no sé, cuando vimos el laborismo de Gayle Zaple, por ejemplo,",
+        "start": 2621.3,
+        "end": 2631.3
+    },
+    {
+        "text": " para estos pasos, venacitar, tal y cual estructura de datos, y eso no va a permitir el tiempo de ejecución sea O de M cuadrado.",
+        "start": 2631.3,
+        "end": 2640.3
+    },
+    {
+        "text": " Hay siempre un margen de libertad para elegir este, bueno, hasta qué punto nos esplacamos más en detalle de cómo se hace el laborismo y hasta qué punto.",
+        "start": 2642.3,
+        "end": 2659.3
+    },
+    {
+        "text": " Damos más explicaciones en cómo se implementa cuando analizamos el tiempo de ejecución.",
+        "start": 2661.3,
+        "end": 2668.3
+    },
+    {
+        "text": " No hay una única forma de hacerlo y está bien. En general lo que les vamos a pedir es que hagan más cosas.",
+        "start": 2668.3,
+        "end": 2678.3
+    },
+    {
+        "text": " Si a cómo sea, en a un lado lo van a tener que resolver. Está claro.",
+        "start": 2679.3,
+        "end": 2688.3
+    },
+    {
+        "text": " Acá alguien pregunta, ¿no podrías borrar aristas cuyos píxeles difieren en valor mayor que el umbral?",
+        "start": 2689.3,
+        "end": 2706.3
+    },
+    {
+        "text": " ¿Sería otra forma de modilar el problema? Con otro tipo de grafos, supongo, pucacalas, las nuestras aristas, están sólo uniendo posiciones de píxeles que comparten exactamente el mismo tono de gris, que decidieran más o menos en el umbral.",
+        "start": 2706.3,
+        "end": 2732.3
+    },
+    {
+        "text": " Pero bueno, es como les decía hoy, ¿no? Uno está el problema, está la formalización del problema, lo modelamos en grafos, a través de un grafo, parece ni idea razonable, acá lo estamos modelando de determinada manera, pero puede haber otras.",
+        "start": 2737.3,
+        "end": 2752.3
+    },
+    {
+        "text": " Y si los modelas de una manera diferente, los algoritmos, probablemente este paso 2 no sea obtener las componentes con exas, sea hacer alguna otra cosa.",
+        "start": 2753.3,
+        "end": 2765.3
+    },
+    {
+        "text": " Hay que ver en cada caso cómo combinar.",
+        "start": 2766.3,
+        "end": 2772.3
+    },
+    {
+        "text": " En principio este parece que tenemos un problema resuelto, quiero volar igual un poquito al tema este de el paso 2.",
+        "start": 2774.3,
+        "end": 2793.3
+    },
+    {
+        "text": " El paso 2 dice, bueno, obtener todas las componentes con exas de g, ese, y determinar el tamaño de cada una.",
+        "start": 2794.3,
+        "end": 2805.3
+    },
+    {
+        "text": " Por consistencia con lo que les voy a mostrar ahora, voy a hacer, sin disculpa, otro cambio más.",
+        "start": 2806.3,
+        "end": 2812.3
+    },
+    {
+        "text": " Vamos a esa mala esto, así se caligrafica.",
+        "start": 2813.3,
+        "end": 2824.3
+    },
+    {
+        "text": " Porque el algoritmo que el juez estuimos viendo, algoritmos, que exploraban todas las componentes con exas, vimos haciendo algo con BFD y en este caso, podremos ver cualquiera de esas con definitiva las diferencias que hay los árboles de recorrida que generan BFD y BFD,",
+        "start": 2825.3,
+        "end": 2850.3
+    },
+    {
+        "text": " en este caso nos interesa para nada, de alguna cosa nos interesa que hablan con los componentes con exas y eso, a eso podremos usar BFD y BFD, o incluso la versión incorrecta de BFD y también, cualquier cosa crecer una componente con exas funciona.",
+        "start": 2851.3,
+        "end": 2868.3
+    },
+    {
+        "text": " Cuando el algoritmo, cuando se presenta aquí, esto no construíamos explícitamente un conjunto R con los versiones que forman cada una de las componentes con exas, pero bueno, pues lo hacemos fácilmente, no?",
+        "start": 2869.3,
+        "end": 2883.3
+    },
+    {
+        "text": " Acá marqué en rojo las cosas que habría que agregarle aquí el algoritmo usando BFD en este caso, para explícitamente construir una colección C de componentes con exas,",
+        "start": 2883.3,
+        "end": 2897.3
+    },
+    {
+        "text": " que es lo que pide el nuestro paso 2 del algoritmo. Antes de poner el algoritmo principal, primero creamos un conjunto vací, una colección vacía C para ir metiendo ahí las componentes con exas,",
+        "start": 2897.3,
+        "end": 2911.3
+    },
+    {
+        "text": " después empiezo a recorrer los vértices, como siempre, cuando encuentro algo que no fue descubierto, entonces ahora voy a hacer que BFD explore la componente con exas D, que me lo devuelva en un cierto conjunto R.",
+        "start": 2912.3,
+        "end": 2927.3
+    },
+    {
+        "text": " Y cuando termina voy a agregar R a C, en la que al final, después de haber iterado sobre todos los vértices, lo que voy a tener en C es un conjunto de componentes con exas R.",
+        "start": 2928.3,
+        "end": 2943.3
+    },
+    {
+        "text": " Y del lado de BFD se, bueno, lo mismo, cuando arranco ejecutar, primero creo lo que va a hacer la componente con exas con un conjunto vacío, y después cada vez que se explora un vértice, lo agrego a R.",
+        "start": 2944.3,
+        "end": 2963.3
+    },
+    {
+        "text": " Y como yo les decía la vez pasada que acá en este punto de Acas Explora U, con DFD se también me encontré un lugar donde dicen acá estoy explorando el vértice,",
+        "start": 2964.3,
+        "end": 2978.3
+    },
+    {
+        "text": " dependiendo de cada situación, de cada algoritmo que, de cada problema que estén resolviendo con una gobierno de este tipo, pero la exploración de un vértice va a representar algo concreto.",
+        "start": 2978.3,
+        "end": 2992.3
+    },
+    {
+        "text": " En este caso es agregarlo a un conjunto R. Bueno, si estos conjuntos R y C los representan, no sé por ejemplo, con listas, nada, crear un conjunto vacío y llevarlo de uno, agregar un elemento a un conjunto a una lista, se va también o de uno,",
+        "start": 2993.3,
+        "end": 3014.3
+    },
+    {
+        "text": " agregamos el principio, por ejemplo, entonces nada, nada de esto agregó más que esta insaccion en otra lista, también ya o de uno, o sea que nada de esto agregó más tiempo que o de uno por vértice explorado.",
+        "start": 3015.3,
+        "end": 3034.3
+    },
+    {
+        "text": " O por ver, o por región, por componente con esa nada acá, de manera que el hecho de que esta algoritmo lleve tiempo o de M más N no cambia,",
+        "start": 3035.3,
+        "end": 3050.3
+    },
+    {
+        "text": " simplemente como cada vértice se explora nomás de una vez y me lleva estas cosas en rojo, me llaman a los sumo o de uno tiempo por vértice explorado, entonces está muy bien.",
+        "start": 3051.3,
+        "end": 3062.3
+    },
+    {
+        "text": " Recién en realidad, en la solución que proponíamos, dijimos, bueno, no sólo vamos a determinar cual son todas las componentes con exas, quiero saber de más cuál es el tamaño, de esas componentes con exas.",
+        "start": 3064.3,
+        "end": 3079.3
+    },
+    {
+        "text": " Y para eso que VFS, salvo de volver a que creo por cuando hablamos de esto bien sugirió mismo cómo salvo que dijo cuando lo agregó sale incrementando en uno el contador, bueno, entonces acá podría iniciar.",
+        "start": 3080.3,
+        "end": 3096.3
+    },
+    {
+        "text": " Y además de crear un conjunto vacío R, podría iniciar un contador del tamaño en cero y acá agregó el elemento a R y incremento en uno el contador y después de vuelvo un par, acá de vuelvo un par R como contador, entonces vuelvo el mismo tiempo, no sólo la componente con exas y nada más su tamaño.",
+        "start": 3096.3,
+        "end": 3123.3
+    },
+    {
+        "text": " Y tampoco va a dejar de ser o de mi más en el tiempo de ejecución.",
+        "start": 3123.3,
+        "end": 3129.3
+    },
+    {
+        "text": " ¿Se entiende que lo estoy diciendo?",
+        "start": 3129.3,
+        "end": 3132.3
+    },
+    {
+        "text": " Otra posibilidad es que cuando después de que devolví acá, nada, contar los elementos, recorrer R y contar los elementos, eso me va a llevar tiempo proporcional del tamaño de la componente con exas.",
+        "start": 3135.3,
+        "end": 3151.3
+    },
+    {
+        "text": " Y después como todas las componentes con exas son disjuntas, nada recorrer una vez cada una sigue siendo todo tiempo.",
+        "start": 3151.3,
+        "end": 3157.3
+    },
+    {
+        "text": " Está bien.",
+        "start": 3163.3,
+        "end": 3165.3
+    },
+    {
+        "text": " ¿Alguna duda?",
+        "start": 3165.3,
+        "end": 3168.3
+    },
+    {
+        "text": " Sí, no le podré a vos ingresar, no le feése, solamente oquea mucho en ju, incluir que no le feése, perdón?",
+        "start": 3168.3,
+        "end": 3189.3
+    },
+    {
+        "text": " El criterio para solamente, tipo, retornar, alejar así, la región que cumple con la posición.",
+        "start": 3189.3,
+        "end": 3201.3
+    },
+    {
+        "text": " Puedes ser, puede ser, eso es lo que está planteando, no, no, no, me parece, podría ser lo que está planteando ahí, es que nuestro paso dos que tenemos acá,",
+        "start": 3201.3,
+        "end": 3214.3
+    },
+    {
+        "text": " sería otro paso, sería, en vez de obtener todas las componentes con exas, de G y también al tamaño de cada uno, sería obtener todas las componentes de G, de tamaño al menos T.",
+        "start": 3215.3,
+        "end": 3229.3
+    },
+    {
+        "text": " Y el paso tres, y es simplemente devolver lo que acaba de construir.",
+        "start": 3232.3,
+        "end": 3237.3
+    },
+    {
+        "text": " Sí, sí, perfectamente posible. Pues, ven que realidad, a partir del problema, una tiene muchas formas de primero de modelarlo, y cada uno de los modelos que por mí usamos va a derivar en algoritmos seguramente diferentes, y mismo con el mismo modelo, no puede arrancar.",
+        "start": 3237.3,
+        "end": 3266.3
+    },
+    {
+        "text": " Para diseñar algoritmos de formas diferentes, es en general hay varias soluciones posibles, esa que dijiste también es una posibilidad.",
+        "start": 3266.3,
+        "end": 3278.3
+    },
+    {
+        "text": " Una otra duda.",
+        "start": 3279.3,
+        "end": 3280.3
+    },
+    {
+        "text": " Vamos a ver qué más tenemos que hacer.",
+        "start": 3290.3,
+        "end": 3296.3
+    },
+    {
+        "text": " La parte A, en principio, la tenemos, aparentemente, después vamos a analizar bien, pero somos capaces de cumplir con el tiempo de ejecución que se pide.",
+        "start": 3297.3,
+        "end": 3310.3
+    },
+    {
+        "text": " Lo que lo siguiente es la parte B es demostrar la corrección del algoritmo, eso es lo que se van a encontrar, como les decía muchas veces, y que por mi experiencia de otros años a veces genera dudas, incluso hasta aquí.",
+        "start": 3310.3,
+        "end": 3323.3
+    },
+    {
+        "text": " Aquí es lo que tengo que hacer, que significa la corrección del algoritmo.",
+        "start": 3323.3,
+        "end": 3328.3
+    },
+    {
+        "text": " Por eso en este caso, la corrección parece bastante clara, pero la pena hacer el ejercicio sobre el cop para ver, para que vean de qué estamos hablando cuando aprendimos este tipo de cosas.",
+        "start": 3328.3,
+        "end": 3344.3
+    },
+    {
+        "text": " ¿Qué les parece que consistiría en este caso?",
+        "start": 3345.3,
+        "end": 3349.3
+    },
+    {
+        "text": " Con este algoritmo que nos definimos, analizar la corrección del algoritmo o demostrar la corrección del algoritmo, ¿qué lo que habría que demostrar en definitivo?",
+        "start": 3349.3,
+        "end": 3360.3
+    },
+    {
+        "text": " Lo que volvemos en las regiones, que volvemos en el tema colombral, no es que lo guarden.",
+        "start": 3361.3,
+        "end": 3374.3
+    },
+    {
+        "text": " Claro, sí, ahora, para mí, se que va a estar pensando que este paso 3, no sé si lo expresamos bien, porque lo que estamos devolviendo acá son, con juntos de bértices.",
+        "start": 3376.3,
+        "end": 3387.3
+    },
+    {
+        "text": " Bueno, sí, esto sería, en realidad, lo que queremos si lo que nos pide esto, y esto más bien sería devolver.",
+        "start": 3387.3,
+        "end": 3398.3
+    },
+    {
+        "text": " Bueno, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí",
+        "start": 3447.3,
+        "end": 3477.3
+    },
+    {
+        "text": " son píxiles y otras cosas son bárdices del graf.",
+        "start": 3477.3,
+        "end": 3483.3
+    },
+    {
+        "text": " Bueno, parte B, no pregunta, ¿qué fue lo que hiciste?",
+        "start": 3489.3,
+        "end": 3494.3
+    },
+    {
+        "text": " O sea, porque cambiaste ese son el paso 3, ¿cuál es?",
+        "start": 3494.3,
+        "end": 3500.3
+    },
+    {
+        "text": " No la hagas mucho caso, pero simplemente para hacer notar la diferencia",
+        "start": 3500.3,
+        "end": 3505.3
+    },
+    {
+        "text": " que nosotros definimos la región R como un conjunto de píxiles.",
+        "start": 3505.3,
+        "end": 3513.3
+    },
+    {
+        "text": " Y en realidad dijimos, hay una distinción entre los píxiles y las posiciones de los píxiles.",
+        "start": 3516.3,
+        "end": 3520.3
+    },
+    {
+        "text": " En todo caso, los bártices, uno de los puedo hacer posiciones de los píxiles.",
+        "start": 3520.3,
+        "end": 3525.3
+    },
+    {
+        "text": " Y entonces, como estaba expresado lo que hacíamos era devolver,",
+        "start": 3530.3,
+        "end": 3534.3
+    },
+    {
+        "text": " en definitiva, un conjunto de componentes con exas que son conjuntos de bártices.",
+        "start": 3534.3,
+        "end": 3538.3
+    },
+    {
+        "text": " Los bártices son pares de enteros que son las posiciones de los píxiles.",
+        "start": 3538.3,
+        "end": 3542.3
+    },
+    {
+        "text": " Es un tema más de cómo está escrito que del hecho concreto de qué lo estamos volviendo.",
+        "start": 3542.3,
+        "end": 3549.3
+    },
+    {
+        "text": " No es que tuviera marante, parece que es una sutil de salomas.",
+        "start": 3549.3,
+        "end": 3554.3
+    },
+    {
+        "text": " Pero sería como desarmar el graf odiabos y volver a la...",
+        "start": 3554.3,
+        "end": 3559.3
+    },
+    {
+        "text": " Sí, sí. Es un tema más de cómo lo expresamos en Castellano",
+        "start": 3559.3,
+        "end": 3563.3
+    },
+    {
+        "text": " y que me queda una frase consistente como cómo está redactada la letra de Texas.",
+        "start": 3563.3,
+        "end": 3568.3
+    },
+    {
+        "text": " Pero parece que está claro que estamos haciendo...",
+        "start": 3569.3,
+        "end": 3571.3
+    },
+    {
+        "text": " El grupo de los píxiles con las posiciones determinadas por los bártices que están en esas componentes con exas.",
+        "start": 3571.3,
+        "end": 3582.3
+    },
+    {
+        "text": " Pero quería un poco resaltar...",
+        "start": 3582.3,
+        "end": 3585.3
+    },
+    {
+        "text": " Tenemos objetos matemáticos de diferentes naturales,",
+        "start": 3587.3,
+        "end": 3591.3
+    },
+    {
+        "text": " que se confunde por eso casi lo mismo, pero que una cosa es un grafo con su conjunto de bártices.",
+        "start": 3591.3,
+        "end": 3596.3
+    },
+    {
+        "text": " Y otra cosa es una imagen que tiene píxiles, que los píxiles son...",
+        "start": 3597.3,
+        "end": 3600.3
+    },
+    {
+        "text": " Bueno, tienen un par de coordenadas que le dicen donde están y pedan más que un valor de intensidad lumínica,",
+        "start": 3600.3,
+        "end": 3608.3
+    },
+    {
+        "text": " que son como objetos a fracto un poco diferente.",
+        "start": 3608.3,
+        "end": 3611.3
+    },
+    {
+        "text": " Ahí no puede hablar del píxil que está en la posición tal, pero la posición en sí no es el píxil.",
+        "start": 3611.3,
+        "end": 3617.3
+    },
+    {
+        "text": " Por lo menos de la forma como escribimos la letra de Texas,",
+        "start": 3617.3,
+        "end": 3620.3
+    },
+    {
+        "text": " acá que no es la única forma de hablar de imágenes digitales.",
+        "start": 3620.3,
+        "end": 3624.3
+    },
+    {
+        "text": " Pero para ser consistente con eso, que dije, bueno, ¿tás? No, lo que devolvamos no es el conjunto de bártices,",
+        "start": 3626.3,
+        "end": 3631.3
+    },
+    {
+        "text": " sino que devolvamos un conjunto de píxiles, con junto de los píxiles que están en estas posiciones.",
+        "start": 3631.3,
+        "end": 3636.3
+    },
+    {
+        "text": " En realidad, en una implementación con rita van a ser esos pártices, esos pártas de coordenadas.",
+        "start": 3637.3,
+        "end": 3643.3
+    },
+    {
+        "text": " Es más un tema de su dileza de cómo está escrito el lenguaje natural,",
+        "start": 3645.3,
+        "end": 3654.3
+    },
+    {
+        "text": " que forma que formar.",
+        "start": 3654.3,
+        "end": 3659.3
+    },
+    {
+        "text": " Y ahora, ¿cuánto se es que es lo que hay que hacer con la demostrar la corrección del lo mismo? ¿Qué es lo que tenemos que mostrar?",
+        "start": 3659.3,
+        "end": 3684.3
+    },
+    {
+        "text": " Yo mismo asumiendo que el algoritmo para construir componentes con exas,",
+        "start": 3684.3,
+        "end": 3694.3
+    },
+    {
+        "text": " digamos, vemos lo por bueno como qué es correcto.",
+        "start": 3694.3,
+        "end": 3698.3
+    },
+    {
+        "text": " Una ejercicio concreta a veces se les puede pedir que si usan resultados de típicamente la ciudad de la exámenes,",
+        "start": 3698.3,
+        "end": 3708.3
+    },
+    {
+        "text": " si usan resultados que que sabieron en el curso,",
+        "start": 3708.3,
+        "end": 3713.3
+    },
+    {
+        "text": " bueno, reescriban los atendientes como que volver a mostrar esos.",
+        "start": 3713.3,
+        "end": 3718.3
+    },
+    {
+        "text": " Pero acá los efectos de lo que estamos haciendo acá supongamos que damos por bueno el lo mismo que construye componentes con exas duro,",
+        "start": 3718.3,
+        "end": 3724.3
+    },
+    {
+        "text": " digamos, que eso es correcto.",
+        "start": 3724.3,
+        "end": 3728.3
+    },
+    {
+        "text": " No sé qué es lo que nos queda probar.",
+        "start": 3728.3,
+        "end": 3734.3
+    },
+    {
+        "text": " Porque en definitiva le dice, bueno, ¿tanto eso es total que tenemos que hacer a eso?",
+        "start": 3734.3,
+        "end": 3740.3
+    },
+    {
+        "text": " El orden lo que es que probar ahora es que lo que todo el correcismo devuelve son todas las componentes con exas y que cumplen la condición dado.",
+        "start": 3740.3,
+        "end": 3753.3
+    },
+    {
+        "text": " Bueno, sí, pero digamos que el paso dos como le decía hoy funciona bien,",
+        "start": 3753.3,
+        "end": 3760.3
+    },
+    {
+        "text": " o sea que el algoritmo para obtener las componentes con exas funciona, eso es correcto.",
+        "start": 3760.3,
+        "end": 3765.3
+    },
+    {
+        "text": " El paso dos me devuelve todas las componentes con exas grajo.",
+        "start": 3765.3,
+        "end": 3770.3
+    },
+    {
+        "text": " Y bueno, y el paso tres, nada por directamente con la definición de vuelve las que me interesan,",
+        "start": 3770.3,
+        "end": 3781.3
+    },
+    {
+        "text": " y lo estoy postulando ahí son las regiones que tienen tamaño más igual a T.",
+        "start": 3781.3,
+        "end": 3787.3
+    },
+    {
+        "text": " Esa es lo que queda por qué lo que quedaría por probar.",
+        "start": 3787.3,
+        "end": 3793.3
+    },
+    {
+        "text": " ¿No tienes que probar que el paso uno no puede ser en orden de me cuadrado?",
+        "start": 3800.3,
+        "end": 3805.3
+    },
+    {
+        "text": " Bueno, eso para analizar el tiempo de ejecución. Sí, ahora lo vamos a ver.",
+        "start": 3805.3,
+        "end": 3810.3
+    },
+    {
+        "text": " Pero olvidándonos de cuánto tiempo demora, que nos piden la parte vez de mostrar que lo que devuelve es correcto.",
+        "start": 3810.3,
+        "end": 3817.3
+    },
+    {
+        "text": " El que nada cuando uno me le piden, demuestra analizar y mostrar que la corrección de la abril más o cual mostraque termina,",
+        "start": 3823.3,
+        "end": 3829.3
+    },
+    {
+        "text": " que en este caso es bastante obvio porque son tres pasos, no hay ningún ciclo en ningún lado.",
+        "start": 3829.3,
+        "end": 3835.3
+    },
+    {
+        "text": " Después cada paso independientemente sí podrá implementar así como un ciclo, pero si damos por bueno,",
+        "start": 3835.3,
+        "end": 3843.3
+    },
+    {
+        "text": " el algoritmo para obtener componentes con exas digamos que eso queremos esto termine, son tres pasos, una cada diótrome.",
+        "start": 3843.3,
+        "end": 3850.3
+    },
+    {
+        "text": " Lo que nos queda por probar es que lo que devuelve es lo que tiene que volar.",
+        "start": 3851.3,
+        "end": 3856.3
+    },
+    {
+        "text": " Pero ahora lo que yo les digo bueno, si dijimos que obtener las componentes con exas es esta bien.",
+        "start": 3856.3,
+        "end": 3863.3
+    },
+    {
+        "text": " O sea, el obtener las componentes con exasumrafo funciona y el paso tres es bastante trivial que es correcto porque es simplemente devolveme lo que quiero devolvar.",
+        "start": 3863.3,
+        "end": 3878.3
+    },
+    {
+        "text": " Volve las todas esas que tienen tamaño más o igual a te que es lo que pide la letra.",
+        "start": 3879.3,
+        "end": 3884.3
+    },
+    {
+        "text": " Lo que es lo que uno podría decir me interesaría analizar y va al que está bien hecho.",
+        "start": 3884.3,
+        "end": 3891.3
+    },
+    {
+        "text": " Lo que podríamos probar es que esas regiones que devuelvemos son lo que las pide.",
+        "start": 3891.3,
+        "end": 3899.3
+    },
+    {
+        "text": " Exacto.",
+        "start": 3899.3,
+        "end": 3901.3
+    },
+    {
+        "text": " Exacto.",
+        "start": 3901.3,
+        "end": 3903.3
+    },
+    {
+        "text": " ¿Por qué no podrían no ser?",
+        "start": 3904.3,
+        "end": 3907.3
+    },
+    {
+        "text": " ¿Y capaz porque lo modelamos malo?",
+        "start": 3910.3,
+        "end": 3913.3
+    },
+    {
+        "text": " Exactamente. Exactamente.",
+        "start": 3913.3,
+        "end": 3915.3
+    },
+    {
+        "text": " En definitiva lo que queremos probar, lo que tenemos que argumentar que en este caso me les decía bastante directo,",
+        "start": 3915.3,
+        "end": 3923.3
+    },
+    {
+        "text": " pero me parece que está bien acablejarcillo para problemas de este tipo.",
+        "start": 3923.3,
+        "end": 3927.3
+    },
+    {
+        "text": " Para que vean de qué estamos hablando, es que el modelado que hicimos en el paso 1 tiene sentido.",
+        "start": 3928.3,
+        "end": 3934.3
+    },
+    {
+        "text": " Imagínense que yo acá hubiera puesto alguna, sí, definido un grajo pero nada de una forma distinta de esta.",
+        "start": 3936.3,
+        "end": 3949.3
+    },
+    {
+        "text": " Y bueno, sí, después voy a obtener las componentes con exas de un grajo.",
+        "start": 3949.3,
+        "end": 3954.3
+    },
+    {
+        "text": " Sí, para ese grajo voy a tener correctamente sus componentes con exas.",
+        "start": 3954.3,
+        "end": 3957.3
+    },
+    {
+        "text": " Lo que no significa que esa componente con eso tengan algo que ver con las regiones del imagen que yo estoy buscando.",
+        "start": 3957.3,
+        "end": 3965.3
+    },
+    {
+        "text": " Por ejemplo, si yo no hubiera puesto esta parte que está subrasada acá.",
+        "start": 3965.3,
+        "end": 3976.3
+    },
+    {
+        "text": " Que es una forma de modelar el problema.",
+        "start": 3977.3,
+        "end": 3981.3
+    },
+    {
+        "text": " Bueno, primero, me contus un grajo con que me modela quienes contigo de quién.",
+        "start": 3981.3,
+        "end": 3988.3
+    },
+    {
+        "text": " El tema de quiénes son del mismo color que quiénes, lo voy a ver a parte en el barrio.",
+        "start": 3988.3,
+        "end": 3993.3
+    },
+    {
+        "text": " Bueno, bueno, entonces mi algoritmo, las partes del 2 y 3 te negan hacer otra cosa.",
+        "start": 3993.3,
+        "end": 3998.3
+    },
+    {
+        "text": " Si yo hubiera puesto los mismos pasos 2 y 3 que están acá con este modelado diferente del problema, el resultado sí va a ser componente con exas de un grajo.",
+        "start": 3999.3,
+        "end": 4010.3
+    },
+    {
+        "text": " Pero no significa nada, no son las regiones de la simánica que te buscan.",
+        "start": 4010.3,
+        "end": 4016.3
+    },
+    {
+        "text": " Entonces, en definitiva, en una solución de este tipo, un duro modelo, un problema en este caso en términos de grafos.",
+        "start": 4016.3,
+        "end": 4025.3
+    },
+    {
+        "text": " Es una extracción. Y dice, bueno, entonces ahora lo que me hace buscar las componentes con ese bueno, porque las componentes con exas del grajo son lo mismo que las regiones del imagen que estoy buscando.",
+        "start": 4025.3,
+        "end": 4038.3
+    },
+    {
+        "text": " O sea, el modelado que hice está bien.",
+        "start": 4038.3,
+        "end": 4041.3
+    },
+    {
+        "text": " Eso es lo que estamos viendo.",
+        "start": 4041.3,
+        "end": 4043.3
+    },
+    {
+        "text": " ¿Tienes que ver esa cosa que el primer ejercicio que resolvimos que el de los barcos aquel?",
+        "start": 4045.3,
+        "end": 4052.3
+    },
+    {
+        "text": " Que se traté de hacer en capié en...",
+        "start": 4055.3,
+        "end": 4058.3
+    },
+    {
+        "text": " En qué bueno, que había primero traduciamos un instancia en un problema en un instancia de otros problemas.",
+        "start": 4059.3,
+        "end": 4065.3
+    },
+    {
+        "text": " Bueno, eso es el problema que queríamos resolver y después volvíamos a convertir y volvimos a convertir la solución de ese problema en la solución del problema original.",
+        "start": 4065.3,
+        "end": 4075.3
+    },
+    {
+        "text": " Entonces, como que de alguna manera mapeaba, traduciamos, modelábamos, una instancia de un problema en ese caso en unos barcos a un tema de parejamiento está.",
+        "start": 4075.3,
+        "end": 4086.3
+    },
+    {
+        "text": " Resolvemos el problema de parejamiento estable y después corturimos la solución de nuestro problema original.",
+        "start": 4086.3,
+        "end": 4095.3
+    },
+    {
+        "text": " Y en definitiva, sí, claro, en aquí un momento también se los explicaba.",
+        "start": 4095.3,
+        "end": 4103.3
+    },
+    {
+        "text": " Bueno, el órbito de GaleSaple es correcto para resolver, para construir un parejamiento estable.",
+        "start": 4103.3,
+        "end": 4108.3
+    },
+    {
+        "text": " Lo que no sé si es correcto es si ese parejamiento estable tiene algo que ver con el problema de los barcos que yo tenía originalmente entre manos.",
+        "start": 4108.3,
+        "end": 4116.3
+    },
+    {
+        "text": " Aquí es algo una situación parecida. Yo tengo un problema de funger a términos de imágenes y de píxeles y de regiones, no sé qué.",
+        "start": 4116.3,
+        "end": 4123.3
+    },
+    {
+        "text": " Perfecto. Entonces, si es que la verdad no tengo ni idea que me estás hablando de lo que sí se trabaja con grafos.",
+        "start": 4124.3,
+        "end": 4130.3
+    },
+    {
+        "text": " Y esto se parece mucho componente con ese duro grafos.",
+        "start": 4130.3,
+        "end": 4133.3
+    },
+    {
+        "text": " Entonces yo traduzco en este paso uno que está acá, esas entidades y esos objetos que forman parte de ese problema sobre imágenes y en términos de grafos.",
+        "start": 4133.3,
+        "end": 4146.3
+    },
+    {
+        "text": " Y traduzco mi problema original para las imágenes en términos de grafos y ahora resuelvo ese problema en términos de grafos que sí se como encontrar las componentes con esa.",
+        "start": 4147.3,
+        "end": 4158.3
+    },
+    {
+        "text": " Entonces, lo que tenemos que ver es que ese paso de atracción que hicimos de traducir un problema en imágenes, traducir un problema en grafos o de barcos, en parcamentes estables.",
+        "start": 4158.3,
+        "end": 4172.3
+    },
+    {
+        "text": " Lo que fuera es que ese mapeo tiene sentido correcto.",
+        "start": 4173.3,
+        "end": 4178.3
+    },
+    {
+        "text": " Si una situación bien parecida.",
+        "start": 4179.3,
+        "end": 4181.3
+    },
+    {
+        "text": " Entonces, en la parte B,",
+        "start": 4195.3,
+        "end": 4199.3
+    },
+    {
+        "text": " lo que tenemos que ver es que",
+        "start": 4203.3,
+        "end": 4208.3
+    },
+    {
+        "text": " que las componentes con exas, vamos a ver así, pues es más fácil de G.",
+        "start": 4222.3,
+        "end": 4229.3
+    },
+    {
+        "text": " Y vamos a poner coinciden con reacciones en I.",
+        "start": 4233.3,
+        "end": 4239.3
+    },
+    {
+        "text": " Con reacciones en I.",
+        "start": 4240.3,
+        "end": 4246.3
+    },
+    {
+        "text": " Ahora vamos a formalizar un poco qué significa coincide.",
+        "start": 4253.3,
+        "end": 4259.3
+    },
+    {
+        "text": " Pero primero que hay una correspondencia, que medio que se confunde entre qué son los vértices del pixel y qué son los vértices del grafos y los píxeles de las imágenes.",
+        "start": 4260.3,
+        "end": 4275.3
+    },
+    {
+        "text": " Entonces, podríamos arrancar para facilitarlo la forma de expresar eso con forma de realizar eso y definir.",
+        "start": 4275.3,
+        "end": 4284.3
+    },
+    {
+        "text": " Por ejemplo,",
+        "start": 4284.3,
+        "end": 4288.3
+    },
+    {
+        "text": " esto nos permitear nada a lo largo como facilidad deJimmyedereen y arte,",
+        "start": 4315.3,
+        "end": 4319.3
+    },
+    {
+        "text": " en el crecimiento.",
+        "start": 4319.3,
+        "end": 4322.3
+    },
+    {
+        "text": " Y esto nos permite hablar con más facilidad que y sin caer en falta de precisión entre nada",
+        "start": 4322.3,
+        "end": 4349.3
+    },
+    {
+        "text": " que entrecen conexión que hay entre los píxeres del imagen que tiene una posición y un valor y los vértices del grafo que en definitiva",
+        "start": 4349.3,
+        "end": 4358.38
+    },
+    {
+        "text": " definen una posición del piso. Cada píxel está en una posición le corresponde un único píxel ahí un más pido de tres cosas.",
+        "start": 4358.38,
+        "end": 4366.860000000001
+    },
+    {
+        "text": " Formalmente lo que tenéis que ver es que vamos a ver que dos píxeles",
+        "start": 4379.3,
+        "end": 4398.3
+    },
+    {
+        "text": " para tenerse en una misma región R sí sólo sí",
+        "start": 4409.3,
+        "end": 4425.3
+    },
+    {
+        "text": " los vértices correspondientes",
+        "start": 4425.3,
+        "end": 4450.3
+    },
+    {
+        "text": " en la misma componente con exng",
+        "start": 4450.3,
+        "end": 4452.3
+    },
+    {
+        "text": " eso es el definitivo lo que tenemos que ver en este caso bastante claro pero vamos a hacer el ejercicio de escribirlo",
+        "start": 4452.3,
+        "end": 4469.3
+    },
+    {
+        "text": " el tema de mostrar que eso lo corresponde que esto que definimos la correspondencia es efectivamente un mapeo o una bisectión",
+        "start": 4469.3,
+        "end": 4483.3
+    },
+    {
+        "text": " hay que probarlo",
+        "start": 4483.3,
+        "end": 4486.3
+    },
+    {
+        "text": " de hecho incluso ahora que lo decís en la letra le creo que esta en la letra no está de la letra tendría que decir",
+        "start": 4486.3,
+        "end": 4498.3
+    },
+    {
+        "text": " en cada posición sólo un píxel",
+        "start": 4498.3,
+        "end": 4500.3
+    },
+    {
+        "text": " creo que la representación matricial está lo implica pero no está dicho",
+        "start": 4500.3,
+        "end": 4507.3
+    },
+    {
+        "text": " en cada posición hay un píxel y nosotros definimos posiciones y definimos el conjunto de vértices como todas las posiciones",
+        "start": 4507.3,
+        "end": 4521.3
+    },
+    {
+        "text": " entonces es perfectivamente esa es el mapeo hay existe, digamos que decir hay para cada posición de un píxel hay un barrique que representes a posición como definimos",
+        "start": 4521.3,
+        "end": 4535.3
+    },
+    {
+        "text": " tu era esa, si, si era eso, gracias",
+        "start": 4535.3,
+        "end": 4548.3
+    },
+    {
+        "text": " entonces vamos para allá",
+        "start": 4549.3,
+        "end": 4551.3
+    },
+    {
+        "text": " supongamos que dos píxeles píxel prima pertenecen a una misma región r en la imagen y",
+        "start": 4556.3,
+        "end": 4570.3
+    },
+    {
+        "text": " eso que significa",
+        "start": 4570.3,
+        "end": 4575.3
+    },
+    {
+        "text": " bueno para empezar se tiene que cumplir esto acá no tienen que existir píxeles p1 pk tales que p1 es igual a p pk es igual a p prima y en el medio",
+        "start": 4579.3,
+        "end": 4599.3
+    },
+    {
+        "text": " voy pasando por todos píxeles contiguos que son de r",
+        "start": 4599.3,
+        "end": 4606.3
+    },
+    {
+        "text": " entonces vamos a decir como sólo sumo que p p p prima pertenecen a una misma región",
+        "start": 4609.3,
+        "end": 4617.3
+    },
+    {
+        "text": " entonces existen",
+        "start": 4622.3,
+        "end": 4626.3
+    },
+    {
+        "text": " p1 pk",
+        "start": 4630.3,
+        "end": 4632.3
+    },
+    {
+        "text": " hola hola",
+        "start": 4633.3,
+        "end": 4635.3
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 4635.3,
+        "end": 4636.3
+    },
+    {
+        "text": " tengo una pregunta porque",
+        "start": 4636.3,
+        "end": 4639.3
+    },
+    {
+        "text": " es muy intuitivo la solución y no se me parece que ya como garrallas lo trivial",
+        "start": 4639.3,
+        "end": 4647.3
+    },
+    {
+        "text": " ¿Qué tan específico tenemos que hacer?",
+        "start": 4648.3,
+        "end": 4652.3
+    },
+    {
+        "text": " ya cuando defino que dos píxeles están relacionados y son contiguos no te alcanza para",
+        "start": 4652.3,
+        "end": 4659.3
+    },
+    {
+        "text": " pasar toda la maquinaria que tiene de grafos a este problema",
+        "start": 4659.3,
+        "end": 4663.3
+    },
+    {
+        "text": " yo te de acuerdo que en este caso es bastante trivial",
+        "start": 4663.3,
+        "end": 4669.3
+    },
+    {
+        "text": " simplemente quiero, pero en otros casos no va a ser tan así",
+        "start": 4669.3,
+        "end": 4674.3
+    },
+    {
+        "text": " y siempre quiero y esto a veces genera confusión de no distinguir entre el problema",
+        "start": 4674.3,
+        "end": 4687.3
+    },
+    {
+        "text": " la herramienta algoritmic acusamos sobre una actuación que hicimos nosotros y sobre un modelo que hicimos nosotros y la corrección del modelo",
+        "start": 4687.3,
+        "end": 4695.3
+    },
+    {
+        "text": " de acuerdo que en este caso es casi autológico es casi parece un juego de palabras",
+        "start": 4696.3,
+        "end": 4705.3
+    },
+    {
+        "text": " simplemente quiero enfatizar un poco la distinción entre las herramientas que tenemos nosotros sobre modelos",
+        "start": 4705.3,
+        "end": 4713.3
+    },
+    {
+        "text": " abstractos, en este caso grafos y los problemas concretos que a veces tenemos en algún",
+        "start": 4714.3,
+        "end": 4725.3
+    },
+    {
+        "text": " ejercicio, una situación real concreta",
+        "start": 4725.3,
+        "end": 4729.3
+    },
+    {
+        "text": " este caso sí, todo el juego que es casi es casi es raza lo trivial como les digo porque además en parte",
+        "start": 4729.3,
+        "end": 4739.3
+    },
+    {
+        "text": " ya está hecho en la letra de ejercicio toda esta actuación",
+        "start": 4739.3,
+        "end": 4748.3
+    },
+    {
+        "text": " pero va a haber otras situaciones donde la parte de modelado no es tan",
+        "start": 4748.3,
+        "end": 4759.3
+    },
+    {
+        "text": " tan obvia de hecho a veces uno se equivocas siendo ese modelado y cuando va a tratar de hacer esta demostración",
+        "start": 4759.3,
+        "end": 4765.3
+    },
+    {
+        "text": " ya cuente que fasa",
+        "start": 4765.3,
+        "end": 4767.3
+    },
+    {
+        "text": " en este caso usted va a ver que es bien trivial",
+        "start": 4767.3,
+        "end": 4771.3
+    },
+    {
+        "text": " si es, si tiene a veces que escribirlo para",
+        "start": 4771.3,
+        "end": 4774.3
+    },
+    {
+        "text": " o explicarle para hacer la diferencia entre los los dos",
+        "start": 4774.3,
+        "end": 4779.3
+    },
+    {
+        "text": " las dos dimensiones del asunto, los dos niveles de abstraction",
+        "start": 4784.3,
+        "end": 4788.3
+    },
+    {
+        "text": " cuantas está",
+        "start": 4788.3,
+        "end": 4790.3
+    },
+    {
+        "text": " una pregunta corregita, ¿cuál es el momento que si tiene esta prueba y no se te ocurra de en",
+        "start": 4790.3,
+        "end": 4799.3
+    },
+    {
+        "text": " de mano como reserva y estás dando primero la corrección, si te ocurra el egoorismo",
+        "start": 4799.3,
+        "end": 4809.3
+    },
+    {
+        "text": " o es casi imposible",
+        "start": 4809.3,
+        "end": 4812.3
+    },
+    {
+        "text": " no se es medio rarero porque en la corrección justamente la vamos a tratar de demostrar para un algoritmo concreto",
+        "start": 4812.3,
+        "end": 4819.3
+    },
+    {
+        "text": " entonces...",
+        "start": 4819.3,
+        "end": 4821.3
+    },
+    {
+        "text": " y me deje de algoritmo entre manos, lo que sí no es raro que pase es que cae con algoritmo que te parece que",
+        "start": 4821.3,
+        "end": 4829.3
+    },
+    {
+        "text": " que es correcto y cuando vas a dar de demostrar que es correcto, usted da cuenta que fase en algo",
+        "start": 4831.3,
+        "end": 4837.3
+    },
+    {
+        "text": " y hay algo que no puede demostrar",
+        "start": 4838.3,
+        "end": 4842.3
+    },
+    {
+        "text": " y eso mismo te da la pista de qué es lo que está mal de algoritmo y de cómo arreglar",
+        "start": 4842.3,
+        "end": 4848.3
+    },
+    {
+        "text": " eso no es raro que pase",
+        "start": 4848.3,
+        "end": 4851.3
+    },
+    {
+        "text": " yo tengo la dos intámenes con esto",
+        "start": 4854.3,
+        "end": 4857.3
+    },
+    {
+        "text": " si vésimos, se ha representado el grazfo distinto, o sea, sin evaluar",
+        "start": 4857.3,
+        "end": 4864.3
+    },
+    {
+        "text": " y la grazfo armamos ya armando con por el terrorismo, va a ser el valor de ti",
+        "start": 4864.3,
+        "end": 4869.3
+    },
+    {
+        "text": " ahí, capaz que pase lo que se sigue acompañando recién y capaz que ya representas",
+        "start": 4869.3,
+        "end": 4874.3
+    },
+    {
+        "text": " de una forma ves que lo mismo suportabas desde funciones pero cuando veniste a este punto",
+        "start": 4874.3,
+        "end": 4880.3
+    },
+    {
+        "text": " de encontrar con que no podés demostrar",
+        "start": 4881.3,
+        "end": 4886.3
+    },
+    {
+        "text": " que sí, y ahí tienes que ver todo vuelta",
+        "start": 4886.3,
+        "end": 4891.3
+    },
+    {
+        "text": " si, eso es así, esa dinámica puede pasar efectivamente",
+        "start": 4891.3,
+        "end": 4895.3
+    },
+    {
+        "text": " claro, cuando uno termina con modelados que son casi obvio",
+        "start": 4895.3,
+        "end": 4905.3
+    },
+    {
+        "text": " como puede ser este, está, al final dice que vamos a interpretar, porque estamos haciendo esto parece un juego de espalado",
+        "start": 4905.3,
+        "end": 4910.3
+    },
+    {
+        "text": " igual, igual déjeme",
+        "start": 4910.3,
+        "end": 4916.3
+    },
+    {
+        "text": " recomendarles, desconfiar de las obvidades, más de una obvidad ha terminado siendo falsa",
+        "start": 4916.3,
+        "end": 4928.3
+    },
+    {
+        "text": " entonces capaz que esto se vuelve medio como enmorroso escribir y como les decía",
+        "start": 4928.3,
+        "end": 4935.3
+    },
+    {
+        "text": " no sabemos mucho ni qué estamos haciendo pero más de una vez cuando uno diseñe en el aire",
+        "start": 4935.3,
+        "end": 4940.3
+    },
+    {
+        "text": " alguna algoritmo parece que sobe o que funciona cuando lo vas a escribir",
+        "start": 4940.3,
+        "end": 4944.3
+    },
+    {
+        "text": " de las cuentas de algo que está mal",
+        "start": 4944.3,
+        "end": 4950.3
+    },
+    {
+        "text": " y otra cosa que puede pasar, que también puede saltar con uno trata de formalizar una demostración",
+        "start": 4950.3,
+        "end": 4958.3
+    },
+    {
+        "text": " es que este malesto que acá está dado en la letra",
+        "start": 4958.3,
+        "end": 4966.3
+    },
+    {
+        "text": " pero también puede estar mal, ya ves, es uno tratando de mostrar, se da cuenta que tiene la cabeza",
+        "start": 4967.3,
+        "end": 4975.3
+    },
+    {
+        "text": " algo que una atracción que no es lo que realmente tiene escrito como atracción",
+        "start": 4975.3,
+        "end": 4980.3
+    },
+    {
+        "text": " y cuando lo vas a saltar de razonar, rigurosamente sobre esto, te da cuenta que en realidad algo pasa",
+        "start": 4980.3,
+        "end": 4985.3
+    },
+    {
+        "text": " pero un poco que pasa la atracción que existe",
+        "start": 4985.3,
+        "end": 4990.3
+    },
+    {
+        "text": " bueno, bueno, escribimos esto medio rápido como para que pasarlo en lipe",
+        "start": 4997.3,
+        "end": 5005.3
+    },
+    {
+        "text": " dijimos como son estos p y p prima pertenece la misma región",
+        "start": 5005.3,
+        "end": 5011.3
+    },
+    {
+        "text": " existen estos p1, pk que parte en de p y llegan a p prima",
+        "start": 5011.3,
+        "end": 5024.3
+    },
+    {
+        "text": " y entonces podemos decir, bueno sean",
+        "start": 5025.3,
+        "end": 5029.3
+    },
+    {
+        "text": " v1 hasta vk los vértices correspondientes",
+        "start": 5031.3,
+        "end": 5036.3
+    },
+    {
+        "text": " entonces como p y menos uno, p y son contivos por la definición",
+        "start": 5037.3,
+        "end": 5058.3
+    },
+    {
+        "text": " y aquí faltó la condición de que p y menos uno es contivo con p y",
+        "start": 5059.3,
+        "end": 5070.3
+    },
+    {
+        "text": " uno menos uno menos que y menos igual",
+        "start": 5070.3,
+        "end": 5082.3
+    },
+    {
+        "text": " entonces como p y menos uno y p y son contivos",
+        "start": 5083.3,
+        "end": 5105.3
+    },
+    {
+        "text": " digamos que",
+        "start": 5106.3,
+        "end": 5112.3
+    },
+    {
+        "text": " vesuví menos uno",
+        "start": 5112.3,
+        "end": 5119.3
+    },
+    {
+        "text": " vesuví menos uno x menos v sub y x",
+        "start": 5125.3,
+        "end": 5130.3
+    },
+    {
+        "text": " estos son las cobenadas del vértice",
+        "start": 5131.3,
+        "end": 5137.3
+    },
+    {
+        "text": " más vesuví menos uno y y esto es igual a uno",
+        "start": 5137.3,
+        "end": 5152.3
+    },
+    {
+        "text": " y como p y menos uno",
+        "start": 5152.3,
+        "end": 5159.3
+    },
+    {
+        "text": " p y pertenecen ambos a la misma región r",
+        "start": 5159.3,
+        "end": 5167.3
+    },
+    {
+        "text": " entonces y de ví menos uno x",
+        "start": 5167.3,
+        "end": 5182.3
+    },
+    {
+        "text": " es igual",
+        "start": 5183.3,
+        "end": 5189.3
+    },
+    {
+        "text": " v sub y x v sub y",
+        "start": 5189.3,
+        "end": 5197.3
+    },
+    {
+        "text": " entonces la ar y en v sub y menos uno",
+        "start": 5197.3,
+        "end": 5204.3
+    },
+    {
+        "text": " y el que está en vía",
+        "start": 5205.3,
+        "end": 5211.3
+    },
+    {
+        "text": " entonces lo dijimos es porque justamente definimos nuestro conjunto de aristas como las aristas",
+        "start": 5211.3,
+        "end": 5223.3
+    },
+    {
+        "text": " y se cumple esto que está acá",
+        "start": 5223.3,
+        "end": 5228.3
+    },
+    {
+        "text": " realmente implica de basta efectivamente",
+        "start": 5228.3,
+        "end": 5231.3
+    },
+    {
+        "text": " hay una ristente sobre vértices por como los modernes",
+        "start": 5231.3,
+        "end": 5234.3
+    },
+    {
+        "text": " por lo tanto",
+        "start": 5234.3,
+        "end": 5240.3
+    },
+    {
+        "text": " entonces v1 a vk es un camino de v de a v prima",
+        "start": 5240.3,
+        "end": 5257.3
+    },
+    {
+        "text": " y entonces pertenecen la misma componente con x",
+        "start": 5257.3,
+        "end": 5264.3
+    },
+    {
+        "text": " al revés si quieren no lo hacemos pues casi es un razonamiento calcado de esto",
+        "start": 5264.3,
+        "end": 5271.3
+    },
+    {
+        "text": " si tengo dos vértices que están en la misma componente con x",
+        "start": 5271.3,
+        "end": 5278.3
+    },
+    {
+        "text": " bueno entonces que están unidos por un camino de vértices con aristas",
+        "start": 5278.3,
+        "end": 5288.3
+    },
+    {
+        "text": " que implican que los píxeles aristas por aristas",
+        "start": 5288.3,
+        "end": 5292.3
+    },
+    {
+        "text": " todas tienen el mismo valor entre sí por lo tanto todos tienen el mismo valor",
+        "start": 5292.3,
+        "end": 5297.3
+    },
+    {
+        "text": " y además son píxeles contigo como me permiten ir pasando de uno a otro",
+        "start": 5297.3,
+        "end": 5302.3
+    },
+    {
+        "text": " y que efectivamente es un cisol",
+        "start": 5302.3,
+        "end": 5309.3
+    },
+    {
+        "text": " es un poco capaz de más de tasado para como decínes bastante directo",
+        "start": 5309.3,
+        "end": 5316.3
+    },
+    {
+        "text": " pero más que en la demostración es si concreta querían fatizar la existencia de esas dos dimensiones",
+        "start": 5316.3,
+        "end": 5325.3
+    },
+    {
+        "text": " el problema tal cual nos lo dan planteado y los algoritmos que trabajan sobre un modelo",
+        "start": 5325.3,
+        "end": 5334.3
+    },
+    {
+        "text": " que nosotros construimos y la corrección del modelo en sí misma tiene que estar bajo cuestionamiento",
+        "start": 5334.3,
+        "end": 5342.3
+    },
+    {
+        "text": " no solo los algoritmos que funcionan sobre el modelo",
+        "start": 5342.3,
+        "end": 5347.3
+    },
+    {
+        "text": " no solo pues en mismo algunas veces los algoritmos que nos vamos a hacer",
+        "start": 5347.3,
+        "end": 5352.3
+    },
+    {
+        "text": " traer un problema en términos de grafos y después vamos a diseñar un algoritmo sobre el grafo",
+        "start": 5352.3,
+        "end": 5361.3
+    },
+    {
+        "text": " y capaz que el algoritmo no es directamente como en este caso encontrar las componentes con x",
+        "start": 5361.3,
+        "end": 5366.3
+    },
+    {
+        "text": " que es algo bastante",
+        "start": 5366.3,
+        "end": 5371.3
+    },
+    {
+        "text": " digamos que salo vimos directamente en el teoria",
+        "start": 5371.3,
+        "end": 5374.3
+    },
+    {
+        "text": " elaborar un algoritmo distinto propio, capaz que ha inspirado en alguno de esto pero no es exactamente lo mismo",
+        "start": 5374.3,
+        "end": 5381.3
+    },
+    {
+        "text": " entonces nada vamos a hacer una análisis en el algoritmo para mostrar que cumple algo con respecto a nuestro modelo",
+        "start": 5381.3,
+        "end": 5390.3
+    },
+    {
+        "text": " pero tiene que estar más bajo tela de juicio si el modelo es correcto para el problema tal cual nos lo veis",
+        "start": 5390.3,
+        "end": 5395.3
+    },
+    {
+        "text": " en este caso tu te acuerdo que es bastante directo pero no siempre están directos",
+        "start": 5395.3,
+        "end": 5399.3
+    },
+    {
+        "text": " hay que ir enfaquizando esa distancia",
+        "start": 5400.3,
+        "end": 5403.3
+    },
+    {
+        "text": " ¿Pero fue una consulta?",
+        "start": 5405.3,
+        "end": 5406.3
+    },
+    {
+        "text": " Sí",
+        "start": 5406.3,
+        "end": 5407.3
+    },
+    {
+        "text": " Viste que al principio no sabías mostrado el pfbfs que tenía cosas en rojo que era lo que había que agregarle",
+        "start": 5408.3,
+        "end": 5417.3
+    },
+    {
+        "text": " para que el algoritmo haga por ejemplo tal esto lo que queremos",
+        "start": 5417.3,
+        "end": 5423.3
+    },
+    {
+        "text": " en nuestra solución esa modificación es que tienen que aparecer",
+        "start": 5424.3,
+        "end": 5428.3
+    },
+    {
+        "text": " muchas veces les pedimos que en realidad reescriben los algoritmos que vas a usar",
+        "start": 5430.3,
+        "end": 5437.3
+    },
+    {
+        "text": " no sé capaz que en algún caso se les puede decir bueno lo pasa que es difícil tratar de explicarles la aire",
+        "start": 5440.3,
+        "end": 5445.3
+    },
+    {
+        "text": " y que cambias la herida de un algoritmo sin tener el algoritmo",
+        "start": 5445.3,
+        "end": 5448.3
+    },
+    {
+        "text": " está por eso entonces lo explicamos",
+        "start": 5449.3,
+        "end": 5452.3
+    },
+    {
+        "text": " la vez es la vez es la vez que se les da más un algoritmo larga",
+        "start": 5454.3,
+        "end": 5458.3
+    },
+    {
+        "text": " tampoco con las incorporando a ir las cosas que necesites para suilición",
+        "start": 5458.3,
+        "end": 5469.3
+    },
+    {
+        "text": " el problema concreto que tiene es entre manos",
+        "start": 5469.3,
+        "end": 5472.3
+    },
+    {
+        "text": " lo que sí que a veces decimos bueno que no es necesario que reescribas todos los razonamientos con respecto a",
+        "start": 5473.3,
+        "end": 5481.3
+    },
+    {
+        "text": " si hiciste tu algoritmo inspirado en bfs muchas veces",
+        "start": 5481.3,
+        "end": 5485.3
+    },
+    {
+        "text": " eso me que bfs funciona correctamente y explica en realidad y que sepa el tiempo que sepa",
+        "start": 5487.3,
+        "end": 5494.3
+    },
+    {
+        "text": " y explica en realidad porque los cambios que volvíciste no afectan el tiempo de ejecución",
+        "start": 5495.3,
+        "end": 5500.3
+    },
+    {
+        "text": " y la corrección",
+        "start": 5503.3,
+        "end": 5506.3
+    },
+    {
+        "text": " ¿guaias gracias?",
+        "start": 5509.3,
+        "end": 5511.3
+    },
+    {
+        "text": " bueno",
+        "start": 5522.3,
+        "end": 5523.3
+    },
+    {
+        "text": " la parte c",
+        "start": 5524.3,
+        "end": 5526.3
+    },
+    {
+        "text": " está que es lo que nos faltaría por ver",
+        "start": 5529.3,
+        "end": 5532.3
+    },
+    {
+        "text": " y si bueno mostrar que efectivamente el tiempo de ejecución de este algoritmo",
+        "start": 5533.3,
+        "end": 5536.3
+    },
+    {
+        "text": " o mejor hecho que este algoritmo admite una implementación cuyo tiempo de ejecución es o de m4",
+        "start": 5554.3,
+        "end": 5559.3
+    },
+    {
+        "text": " así le niña en el tamaño del imagen",
+        "start": 5559.3,
+        "end": 5561.3
+    },
+    {
+        "text": " entonces parece lo que tenemos que hacer es",
+        "start": 5563.3,
+        "end": 5566.3
+    },
+    {
+        "text": " analizar los tiempos de ejecución de cada uno de estos pasos",
+        "start": 5569.3,
+        "end": 5573.3
+    },
+    {
+        "text": " la construcción del grafo",
+        "start": 5575.3,
+        "end": 5577.3
+    },
+    {
+        "text": " el obtener todas las componentes con exas y después de volver algunas veces",
+        "start": 5579.3,
+        "end": 5585.3
+    },
+    {
+        "text": " entonces lo primero vamos a hacer es ver que",
+        "start": 5593.3,
+        "end": 5598.3
+    },
+    {
+        "text": " lo vamos a hacer el paso uno requiere tiempo o de m4",
+        "start": 5614.3,
+        "end": 5618.3
+    },
+    {
+        "text": " ¿por qué regiere tiempo o de m4?",
+        "start": 5619.3,
+        "end": 5623.3
+    },
+    {
+        "text": " ¿cómo lo harían para que se le tiempo de m4?",
+        "start": 5628.3,
+        "end": 5631.3
+    },
+    {
+        "text": " si estás usando la representación esta lista de yasencia",
+        "start": 5634.3,
+        "end": 5639.3
+    },
+    {
+        "text": " recorrar todo la matriz",
+        "start": 5639.3,
+        "end": 5642.3
+    },
+    {
+        "text": " cuando",
+        "start": 5643.3,
+        "end": 5644.3
+    },
+    {
+        "text": " no sé estoy parado en un punto de la matriz me fijo en el que está arriba",
+        "start": 5646.3,
+        "end": 5651.3
+    },
+    {
+        "text": " digamos lo que está abajo la derecha y la izquierda",
+        "start": 5651.3,
+        "end": 5654.3
+    },
+    {
+        "text": " si me pude arranco",
+        "start": 5654.3,
+        "end": 5656.3
+    },
+    {
+        "text": " si tiene el mismo color lo agrego a la lista de yasencia al principio",
+        "start": 5656.3,
+        "end": 5661.3
+    },
+    {
+        "text": " y eso como son",
+        "start": 5663.3,
+        "end": 5665.3
+    },
+    {
+        "text": " no más de 4 vertices asentes que está considerando en cada caso",
+        "start": 5666.3,
+        "end": 5670.3
+    },
+    {
+        "text": " te lleva o de uno por vertices",
+        "start": 5670.3,
+        "end": 5674.3
+    },
+    {
+        "text": " entonces en total como tenés m4 vértices todo el tiempo total de eso te lleva o de m4",
+        "start": 5678.3,
+        "end": 5685.3
+    },
+    {
+        "text": " y eso",
+        "start": 5686.3,
+        "end": 5687.3
+    },
+    {
+        "text": " esto sería primero hay que crear",
+        "start": 5693.3,
+        "end": 5695.3
+    },
+    {
+        "text": " y vamos a crear la semi cuadrado de lista",
+        "start": 5716.3,
+        "end": 5719.3
+    },
+    {
+        "text": " o sea primero hay que crear la estructura de grafo con v cuadrado",
+        "start": 5721.3,
+        "end": 5725.3
+    },
+    {
+        "text": " con el cuadrado vértices",
+        "start": 5727.3,
+        "end": 5730.3
+    },
+    {
+        "text": " hay una lista vacía por cada uno de ellos",
+        "start": 5730.3,
+        "end": 5735.3
+    },
+    {
+        "text": " acá estoy describiendo cómo implementaría eso",
+        "start": 5736.3,
+        "end": 5739.3
+    },
+    {
+        "text": " y después eso por un lado después para cada vértice",
+        "start": 5739.3,
+        "end": 5746.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5770.3,
+        "end": 5773.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5773.3,
+        "end": 5778.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5778.3,
+        "end": 5782.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5782.3,
+        "end": 5787.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5787.3,
+        "end": 5791.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5791.3,
+        "end": 5796.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5796.3,
+        "end": 5799.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5799.3,
+        "end": 5802.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5802.3,
+        "end": 5805.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5805.3,
+        "end": 5808.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5808.3,
+        "end": 5811.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5811.3,
+        "end": 5814.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5814.3,
+        "end": 5817.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5817.3,
+        "end": 5820.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5820.3,
+        "end": 5823.3
+    },
+    {
+        "text": " y ahora vamos a hacer un poco de la parte que está haciendo",
+        "start": 5823.3,
+        "end": 5825.3
+    },
+    {
+        "text": " Para cada vértice, como decimos, tenemos que evaluar sus nomas",
+        "start": 5826.3,
+        "end": 5836.3
+    },
+    {
+        "text": " de cuatro posiciones contigo, acentivamente, pueden ser menos",
+        "start": 5836.3,
+        "end": 5839.3
+    },
+    {
+        "text": " y estamos en los bordes de imagen para determinar sus aristas",
+        "start": 5839.3,
+        "end": 5844.3
+    },
+    {
+        "text": " adacentes, eso es lo hacemos en tiempo o de uno por vértice",
+        "start": 5844.3,
+        "end": 5850.3
+    },
+    {
+        "text": " Entonces, en total, necesitamos tiempo o en mi cuadrado para construir.",
+        "start": 5850.3,
+        "end": 5867.3
+    },
+    {
+        "text": " Entonces, otra más importante que a veces uno se se se olvida.",
+        "start": 5867.3,
+        "end": 5879.3
+    },
+    {
+        "text": " Nada, modelo, problema en términos de grafos.",
+        "start": 5879.3,
+        "end": 5883.3
+    },
+    {
+        "text": " Después empiezo a estudiar el tiempo de distribución de los diferentes algoritmos que propuse para trabajar con esos grafos.",
+        "start": 5883.3,
+        "end": 5891.3
+    },
+    {
+        "text": " Y no olvido de que construir los grafos en sí mismo lleva tiempo.",
+        "start": 5892.3,
+        "end": 5897.3
+    },
+    {
+        "text": " Y dependiendo de cuál sea el modelo que dice eso, incluso puede ser el puesto botell.",
+        "start": 5897.3,
+        "end": 5905.3
+    },
+    {
+        "text": " Así que eso, por un lado, ¿qué pasa con el paso 2?",
+        "start": 5905.3,
+        "end": 5911.3
+    },
+    {
+        "text": " El paso 2 era obtener todas las componentes con hexa. ¿No? ¿Cuánto tiempo me lleva eso?",
+        "start": 5911.3,
+        "end": 5917.3
+    },
+    {
+        "text": " Poder emacen.",
+        "start": 5918.3,
+        "end": 5922.3
+    },
+    {
+        "text": " Claro, esto, el paso 2 requiere tiempo o remacen. ¿No?",
+        "start": 5922.3,
+        "end": 5946.3
+    },
+    {
+        "text": " ¿Y por qué eso es o de M cuadrado?",
+        "start": 5947.3,
+        "end": 5953.3
+    },
+    {
+        "text": " ¿Vamos?",
+        "start": 5953.3,
+        "end": 5959.3
+    },
+    {
+        "text": " ¿Puedes saber por qué tenés M cuadrado vértices y la cantidad de artistas va a ser como sumo 8 veces la cantidad de vértices?",
+        "start": 5959.3,
+        "end": 5979.3
+    },
+    {
+        "text": " 4, una verdad.",
+        "start": 5979.3,
+        "end": 5981.9800000000005
+    },
+    {
+        "text": " Es decir, cada vértice no tiene más de 4 ascentes.",
+        "start": 5981.9800000000005,
+        "end": 5993.62
+    },
+    {
+        "text": " La cantidad de aristas en total es, me envíbala 4 veces la cantidad de vértices.",
+        "start": 5993.62,
+        "end": 6003.46
+    },
+    {
+        "text": " Es decir, como E es menor igual a 4, ¿eh?",
+        "start": 6003.46,
+        "end": 6028.42
+    },
+    {
+        "text": " El tiempo, el paso 2, es simplemente o db, que es lo mismo que o db,",
+        "start": 6028.42,
+        "end": 6044.3
+    },
+    {
+        "text": " cuadrado porque la cantidad de vértices es m cuadrado.",
+        "start": 6044.3,
+        "end": 6049.46
+    },
+    {
+        "text": " Como dijimos hoy, los pasos adicionales, esos que pusimos en el paso 2, no arrequían más",
+        "start": 6049.46,
+        "end": 6053.62
+    },
+    {
+        "text": " de tiempo o de 1 por vértices, así que no me van a cambiar el.",
+        "start": 6053.62,
+        "end": 6057.9400000000005
+    },
+    {
+        "text": " El tiempo de ejecución de lo mismo total.",
+        "start": 6057.94,
+        "end": 6061.5
+    },
+    {
+        "text": " Ven como acá, es una discusión que tuvimos el otro día.",
+        "start": 6061.5,
+        "end": 6065.5
+    },
+    {
+        "text": " Ven como acá, es bien relevante el hecho de haber expresado el tiempo de ejecución",
+        "start": 6065.5,
+        "end": 6072.74
+    },
+    {
+        "text": " de nuestros algoritmos, no?",
+        "start": 6072.74,
+        "end": 6073.74
+    },
+    {
+        "text": " En términos de n cuadrado, como podríamos haber hecho, bueno, un grafón, peor de los",
+        "start": 6073.74,
+        "end": 6077.5
+    },
+    {
+        "text": " casos tiene de n cuadrado, aristas, así que bueno, analicemos solo, los tiempos de",
+        "start": 6077.5,
+        "end": 6086.5
+    },
+    {
+        "text": " ejecución en términos de n y digamos, bueno, la cantidad de aristas es cuadrado, en",
+        "start": 6086.5,
+        "end": 6089.78
+    },
+    {
+        "text": " peor de los casos es cuadráticos en el.",
+        "start": 6089.78,
+        "end": 6091.3
+    },
+    {
+        "text": " Bueno, sí, pero a ver, dependiendo de cómo cien los grafos, hay situaciones como esta",
+        "start": 6091.3,
+        "end": 6095.3
+    },
+    {
+        "text": " donde la cantidad de aristas, pues es mucho menor que en cuadrado.",
+        "start": 6095.3,
+        "end": 6097.78
+    },
+    {
+        "text": " En este caso, la cantidad de aristas es lineal con la cantidad de vértices.",
+        "start": 6097.78,
+        "end": 6103.58
+    },
+    {
+        "text": " Entonces acá, nos resultó bien útil tener expresado el tiempo de ejecución para los",
+        "start": 6103.58,
+        "end": 6108.22
+    },
+    {
+        "text": " alumnos en grafos, en términos de vértices de caqueda de vértices y de aristas por separado.",
+        "start": 6108.22,
+        "end": 6114.1
+    },
+    {
+        "text": " ¿Vale?",
+        "start": 6114.1,
+        "end": 6115.1
+    },
+    {
+        "text": " Bien, bueno, y el paso 3, el paso 3, ¿cómo?",
+        "start": 6115.1,
+        "end": 6138.740000000001
+    },
+    {
+        "text": " El paso 3 sería en orden 1, ¿no?",
+        "start": 6138.740000000001,
+        "end": 6140.9800000000005
+    },
+    {
+        "text": " Porque ya lo va a cien de el algoritmo.",
+        "start": 6140.9800000000005,
+        "end": 6142.620000000001
+    },
+    {
+        "text": " Bueno, no es exactamente orden 1, porque a ver, recordamos bien, como el paso 3, el",
+        "start": 6142.62,
+        "end": 6150.4
+    },
+    {
+        "text": " paso 3 se devuelve el conjunto de regiones, con píxiles en las posiciones, de lo",
+        "start": 6150.4,
+        "end": 6155.3
+    },
+    {
+        "text": " ser, o sea, tengo que devolver todas las regiones que tengan tamaño y no ser igual a",
+        "start": 6155.3,
+        "end": 6159.66
+    },
+    {
+        "text": " tiempo.",
+        "start": 6159.66,
+        "end": 6160.66
+    },
+    {
+        "text": " Entonces, tengo que recorrer las regiones.",
+        "start": 6160.66,
+        "end": 6161.66
+    },
+    {
+        "text": " Ah, sí, sí, sí.",
+        "start": 6161.66,
+        "end": 6165.66
+    },
+    {
+        "text": " Y pero está bien, pero cuántas regiones hay?",
+        "start": 6165.66,
+        "end": 6169.94
+    },
+    {
+        "text": " Ahí el peor caso no sería orden M cuadrado también, porque sería ponerle que un esplote",
+        "start": 6170.66,
+        "end": 6175.98
+    },
+    {
+        "text": " es 1, por ejemplo.",
+        "start": 6175.98,
+        "end": 6177.219999999999
+    },
+    {
+        "text": " Sí.",
+        "start": 6177.219999999999,
+        "end": 6178.219999999999
+    },
+    {
+        "text": " ¿Puedo hacer?",
+        "start": 6178.219999999999,
+        "end": 6179.219999999999
+    },
+    {
+        "text": " ¿No?",
+        "start": 6179.219999999999,
+        "end": 6180.219999999999
+    },
+    {
+        "text": " Y ponerle que todos los píxiles con respecto a sus píxiles contiguos son distintos.",
+        "start": 6180.219999999999,
+        "end": 6188.46
+    },
+    {
+        "text": " Sí.",
+        "start": 6188.46,
+        "end": 6189.46
+    },
+    {
+        "text": " Entonces ahí tendríamos M cuadrado regiones.",
+        "start": 6189.46,
+        "end": 6193.259999999999
+    },
+    {
+        "text": " Sí.",
+        "start": 6193.259999999999,
+        "end": 6194.259999999999
+    },
+    {
+        "text": " ¿No?",
+        "start": 6194.259999999999,
+        "end": 6195.259999999999
+    },
+    {
+        "text": " ¿Puedes salir para, o sea, capaz de para devolverlos si es orden 1, pero para recorrer todos,",
+        "start": 6195.26,
+        "end": 6200.900000000001
+    },
+    {
+        "text": " tenemos orden M cuadrado.",
+        "start": 6200.900000000001,
+        "end": 6202.7
+    },
+    {
+        "text": " Entonces sería orden 1 M cuadrado o veces.",
+        "start": 6202.7,
+        "end": 6205.9800000000005
+    },
+    {
+        "text": " Claro.",
+        "start": 6205.9800000000005,
+        "end": 6206.9800000000005
+    },
+    {
+        "text": " Claro.",
+        "start": 6206.9800000000005,
+        "end": 6207.9800000000005
+    },
+    {
+        "text": " O sea, sería, el racionamento sería este, como…",
+        "start": 6207.9800000000005,
+        "end": 6214.58
+    },
+    {
+        "text": " ¿Cómo no hay más que M cuadrado componentes con hexas?",
+        "start": 6214.58,
+        "end": 6228.42
+    },
+    {
+        "text": " ¿En G?",
+        "start": 6228.42,
+        "end": 6229.42
+    },
+    {
+        "text": " O sea, no puede dar más componentes con hexas que vértices.",
+        "start": 6229.42,
+        "end": 6233.62
+    },
+    {
+        "text": " Entonces el paso 3 requiere tiempo o de M cuadrado",
+        "start": 6233.62,
+        "end": 6261.42
+    },
+    {
+        "text": " para recorrer nomás de M cuadrado componentes con hexas usando tiempo o de 1 en cada 1.",
+        "start": 6261.42,
+        "end": 6283.3
+    },
+    {
+        "text": " ¿No?",
+        "start": 6283.3,
+        "end": 6284.3
+    },
+    {
+        "text": " ¿Sería eso lo que dijimos?",
+        "start": 6284.3,
+        "end": 6287.9800000000005
+    },
+    {
+        "text": " ¿No?",
+        "start": 6287.9800000000005,
+        "end": 6288.9800000000005
+    },
+    {
+        "text": " ¿No?",
+        "start": 6288.9800000000005,
+        "end": 6289.9800000000005
+    },
+    {
+        "text": " Entonces ahí tendríamos de mostrar que el tiempo de ejecución de estrobarismo es",
+        "start": 6289.98,
+        "end": 6295.379999999999
+    },
+    {
+        "text": " efectivamente es o de M cuadrado, lineal en el tamaño de la imagen como decir.",
+        "start": 6295.379999999999,
+        "end": 6302.459999999999
+    },
+    {
+        "text": " Efige eso.",
+        "start": 6302.459999999999,
+        "end": 6303.459999999999
+    },
+    {
+        "text": " Querían factizar que recuerdan que usamos… analizamos tanto el tiempo de los algoritmos",
+        "start": 6303.459999999999,
+        "end": 6310.82
+    },
+    {
+        "text": " en sí que trabajan sobre el modelo de grafopicius, sino además, no solo eso, sino",
+        "start": 6310.82,
+        "end": 6317.099999999999
+    },
+    {
+        "text": " además, también el tiempo de la construcción de la grafosini.",
+        "start": 6317.1,
+        "end": 6322.34
+    },
+    {
+        "text": " Antes de terminar, déjenme mostrarles otra forma totalmente distinta que podemos haber",
+        "start": 6322.34,
+        "end": 6328.780000000001
+    },
+    {
+        "text": " hecho esto.",
+        "start": 6328.780000000001,
+        "end": 6329.780000000001
+    },
+    {
+        "text": " Bueno, no sé si totalmente distinta, pero distinta.",
+        "start": 6329.780000000001,
+        "end": 6338.3
+    },
+    {
+        "text": " Incluso, probablemente como uno lo haría en la práctica si fuera a implementar una",
+        "start": 6338.3,
+        "end": 6345.9400000000005
+    },
+    {
+        "text": " cosa así.",
+        "start": 6345.94,
+        "end": 6346.94
+    },
+    {
+        "text": " La parte uno puede hacer ese modelo en términos de grafos en su cabeza, pero no esplicitamente",
+        "start": 6346.94,
+        "end": 6362.139999999999
+    },
+    {
+        "text": " necesariamente construir el grafón un paso de lo mismo, es construir un grafón con",
+        "start": 6362.139999999999,
+        "end": 6365.98
+    },
+    {
+        "text": " su lista de ascencias y tres centros de entra para después correr este BFS ahí.",
+        "start": 6365.98,
+        "end": 6371.179999999999
+    },
+    {
+        "text": " Por lo menos, el grafón está implícitamente definido por la matriz que representa la imagen",
+        "start": 6371.18,
+        "end": 6377.780000000001
+    },
+    {
+        "text": " y recorro la matriz.",
+        "start": 6377.780000000001,
+        "end": 6379.820000000001
+    },
+    {
+        "text": " Entonces, yo se puede haber escrito un algoritmo como esto que aparece acá.",
+        "start": 6379.820000000001,
+        "end": 6384.58
+    },
+    {
+        "text": " Recorro, voy a construir las regiones del imagen BFS.",
+        "start": 6384.58,
+        "end": 6388.9400000000005
+    },
+    {
+        "text": " Y lo voy a hacer es escribir un algoritmo que está así inspirado en BFS en este caso,",
+        "start": 6388.9400000000005,
+        "end": 6393.1
+    },
+    {
+        "text": " ponense a los BFS y como que les guste.",
+        "start": 6393.1,
+        "end": 6397.14
+    },
+    {
+        "text": " Pero que trabaje directamente sobre la imagen.",
+        "start": 6397.14,
+        "end": 6399.18
+    },
+    {
+        "text": " Yo le estoy escribir este algoritmo porque en mi cabeza hay un grafón, pero nunca lo",
+        "start": 6399.18,
+        "end": 6404.06
+    },
+    {
+        "text": " lo explicito en términos de nunca lo construyó explícitamente en el algoritmo.",
+        "start": 6404.06,
+        "end": 6411.58
+    },
+    {
+        "text": " Entonces lo que hagas es primero recorro toda la imagen, todos los píxiles del imagen.",
+        "start": 6411.58,
+        "end": 6418.46
+    },
+    {
+        "text": " Y voy a tener una matriz como paralela de imagen de los píxiles que se ha descubrido,",
+        "start": 6418.46,
+        "end": 6424.5
+    },
+    {
+        "text": " los píxiles que no.",
+        "start": 6424.5,
+        "end": 6425.5
+    },
+    {
+        "text": " Entonces, bueno, pero si no está descubierto el píxile de la posición XI, entonces voy",
+        "start": 6426.34,
+        "end": 6431.1
+    },
+    {
+        "text": " a correr el BFS, lo que le paso por parámetro del BFS es la coronada de un píxile.",
+        "start": 6431.1,
+        "end": 6437.58
+    },
+    {
+        "text": " Y de vuelta voy a construir una región R, todo igual que hasta ahora.",
+        "start": 6437.58,
+        "end": 6441.38
+    },
+    {
+        "text": " Y BFS que es lo que hace.",
+        "start": 6441.38,
+        "end": 6443.26
+    },
+    {
+        "text": " Bueno, crea el conjunto de este vacío R, marca, descubierto, en true.",
+        "start": 6443.26,
+        "end": 6449.42
+    },
+    {
+        "text": " Inicializa la cola como siempre, después mientras la cola no esté vacía,",
+        "start": 6449.42,
+        "end": 6452.54
+    },
+    {
+        "text": " la retira, lo que retira es un par y j, que son las coronadas de un píxile.",
+        "start": 6452.54,
+        "end": 6456.22
+    },
+    {
+        "text": " Lo agrego a la región R, y después recorro las posiciones vecinas en la imagen,",
+        "start": 6459.1,
+        "end": 6470.78
+    },
+    {
+        "text": " el Y menos 1 j, el Y menos 1, el Y menos 1, el Y menos 1, tal es que no me salga",
+        "start": 6470.78,
+        "end": 6477.86
+    },
+    {
+        "text": " del imagen porque podría ser un muero del imagen y algunas estas cosas podrían quedar",
+        "start": 6477.86,
+        "end": 6481.14
+    },
+    {
+        "text": " afuera y para cada una de esas nomas de cuatro posiciones alternativas me fijó si son",
+        "start": 6481.14,
+        "end": 6487.1
+    },
+    {
+        "text": " del mismo color y todavía no nos descubrí, lo agrego.",
+        "start": 6487.1,
+        "end": 6491.700000000001
+    },
+    {
+        "text": " Entonces, básicamente el mismo algoritmo, estoy trabajando directamente sobre la imagen",
+        "start": 6491.700000000001,
+        "end": 6504.900000000001
+    },
+    {
+        "text": " 5, estuve expresamente un grafo.",
+        "start": 6504.9,
+        "end": 6513.54
+    },
+    {
+        "text": " El grafo está implícitamente representado por la imagen y no hago un paso explícito de",
+        "start": 6513.54,
+        "end": 6520.219999999999
+    },
+    {
+        "text": " traducción de esa matriz en una representación de grafo, evidente, listas de esas sensaciones.",
+        "start": 6520.219999999999,
+        "end": 6527.58
+    },
+    {
+        "text": " En realidad no lo necesito.",
+        "start": 6527.58,
+        "end": 6529.5
+    },
+    {
+        "text": " Y si analizo el tiempo de ejecución de esto, lo que voy a decir es, bueno, cada par",
+        "start": 6529.5,
+        "end": 6534.179999999999
+    },
+    {
+        "text": " y j, de los cuales tengo en mi cuadrado se visitan nomas de 9 y este forich de acá",
+        "start": 6534.18,
+        "end": 6540.14
+    },
+    {
+        "text": " en realidad no se repite más de 4 veces, así que es una cantidad constante, así que",
+        "start": 6540.14,
+        "end": 6544.900000000001
+    },
+    {
+        "text": " hasta el anérsito de tiempo, hasta como más sencillo, si quieren que lo visimos con",
+        "start": 6544.900000000001,
+        "end": 6550.06
+    },
+    {
+        "text": " BFES, pues en BFES sea más complejo porque bueno, era un grafo genérico, la cantidad",
+        "start": 6550.06,
+        "end": 6555.34
+    },
+    {
+        "text": " de aristas salientes de cada barrio, si puede ser cualquier cosa, acá vemos explícitamente",
+        "start": 6555.34,
+        "end": 6560.700000000001
+    },
+    {
+        "text": " en el algoritmo que escribimos en el seguro código, que este forno se repite más de",
+        "start": 6560.7,
+        "end": 6566.86
+    },
+    {
+        "text": " una cantidad constante de veces.",
+        "start": 6566.86,
+        "end": 6569.5
+    },
+    {
+        "text": " Entonces esto va a ser como en la cola solo entra una vez cada coordenada de pixel, esto",
+        "start": 6569.5,
+        "end": 6576.4
+    },
+    {
+        "text": " va a ser proporcional o tiempo acotado por OD, de M4D, que es la cantidad de coordenada",
+        "start": 6576.4,
+        "end": 6581.98
+    },
+    {
+        "text": " distinta.",
+        "start": 6581.98,
+        "end": 6582.98
+    },
+    {
+        "text": " Esa es otra forma de encarar el problema, esencialmente la misma, pero está expresada en una forma",
+        "start": 6582.98,
+        "end": 6589.34
+    },
+    {
+        "text": " totalmente distinta.",
+        "start": 6589.34,
+        "end": 6590.34
+    },
+    {
+        "text": " Y de hecho, si fuera implementar esto, lo haría de esta manera y no construyendo un",
+        "start": 6590.34,
+        "end": 6598.74
+    },
+    {
+        "text": " grafo con listas de esas ascencias.",
+        "start": 6598.74,
+        "end": 6603.66
+    },
+    {
+        "text": " Bueno, alguna pregunta, algo, algún comentario más?",
+        "start": 6603.66,
+        "end": 6610.26
+    },
+    {
+        "text": " Una pregunta de esto último.",
+        "start": 6611.26,
+        "end": 6616.38
+    },
+    {
+        "text": " Para probar que ese algoritmo funciona bien, podemos usar lo que la demostración de ahora",
+        "start": 6616.38,
+        "end": 6623.5
+    },
+    {
+        "text": " que acabamos de hacer en un clase, o tenemos que hacer otra parte.",
+        "start": 6623.5,
+        "end": 6627.38
+    },
+    {
+        "text": " Bueno, si escribís directamente este algoritmo, va a escribir una demostración similada,",
+        "start": 6627.38,
+        "end": 6633.46
+    },
+    {
+        "text": " aseguramente con los mismos ingredientes que trabajamos recién, pero he expresado en",
+        "start": 6633.46,
+        "end": 6636.66
+    },
+    {
+        "text": " que tenemos que hacer una cosa que está en acá.",
+        "start": 6636.66,
+        "end": 6639.9
+    },
+    {
+        "text": " Capaz que ahí no va a ser todo el simapero entre los vertices y los pixels de todo ese",
+        "start": 6639.9,
+        "end": 6647.58
+    },
+    {
+        "text": " dinema, porque en definitivas, está trabajando directamente sobre el imagen.",
+        "start": 6647.58,
+        "end": 6651.54
+    },
+    {
+        "text": " Entonces, hasta que apague esa demostración, más directa.",
+        "start": 6651.54,
+        "end": 6659.66
+    },
+    {
+        "text": " Pero tenés que armar otra, digamos.",
+        "start": 6659.66,
+        "end": 6662.38
+    },
+    {
+        "text": " Va a ser diferente, para empezar acá no hay expresamente ningún grafo.",
+        "start": 6663.1,
+        "end": 6669.14
+    },
+    {
+        "text": " Es que es decir, hablar de vertices que se corresponde en composiciones, y no sé qué.",
+        "start": 6669.14,
+        "end": 6672.900000000001
+    },
+    {
+        "text": " Básicamente, el mismo razonamiento para ver que este efectivamente en un grafo, crece",
+        "start": 6672.900000000001,
+        "end": 6677.900000000001
+    },
+    {
+        "text": " una componente con esa, lo vas a usar para aumentar que acá en la imagen de estas asciendas,",
+        "start": 6677.900000000001,
+        "end": 6683.42
+    },
+    {
+        "text": " como expandir una región de pixel que es que es que pertenecen la misma región.",
+        "start": 6683.42,
+        "end": 6690.9400000000005
+    },
+    {
+        "text": " Yo tengo una duda, pero es sobre la clase anterior así, capaz que si hay que más",
+        "start": 6690.94,
+        "end": 6701.5
+    },
+    {
+        "text": " tiene una duda.",
+        "start": 6701.5,
+        "end": 6702.5
+    },
+    {
+        "text": " No lo agradecí.",
+        "start": 6706.5,
+        "end": 6707.5
+    },
+    {
+        "text": " ¿Te acordás cuando expusiste un error común en el DFC?",
+        "start": 6710.299999999999,
+        "end": 6715.5
+    },
+    {
+        "text": " El DFC.",
+        "start": 6716.0599999999995,
+        "end": 6717.0599999999995
+    },
+    {
+        "text": " DFC.",
+        "start": 6717.82,
+        "end": 6718.82
+    },
+    {
+        "text": " DFC.",
+        "start": 6719.219999999999,
+        "end": 6720.0199999999995
+    },
+    {
+        "text": " DFC.",
+        "start": 6721.099999999999,
+        "end": 6721.7
+    },
+    {
+        "text": " Eh, bueno, como ven, no entendí muy bien cuál hacía el error, no sé si lo tenés,",
+        "start": 6721.7,
+        "end": 6728.139999999999
+    },
+    {
+        "text": " a mano, capaz que es.",
+        "start": 6728.139999999999,
+        "end": 6729.7
+    },
+    {
+        "text": " Este.",
+        "start": 6730.219999999999,
+        "end": 6730.7
+    },
+    {
+        "text": " Sí, ahí va.",
+        "start": 6732.78,
+        "end": 6733.82
+    },
+    {
+        "text": " El, o sea, esto hace crecemos una componente, por ejemplo, para el problema que de las",
+        "start": 6737.9,
+        "end": 6743.86
+    },
+    {
+        "text": " imágenes que vimos recién, esto lo puede usar y funciona.",
+        "start": 6743.86,
+        "end": 6746.82
+    },
+    {
+        "text": " Lo que no es cierto es que sea DFC.",
+        "start": 6747.78,
+        "end": 6750.86
+    },
+    {
+        "text": " No sé si vos armas acá y larbul de recorrida DFC.",
+        "start": 6751.5,
+        "end": 6756.38
+    },
+    {
+        "text": " Lo que te va, lo va a cumplir con las propiedades que,",
+        "start": 6759.98,
+        "end": 6762.62
+    },
+    {
+        "text": " que vimos que cumplen las aristas de un, de un árbol de recorrida DFC.",
+        "start": 6764.299999999999,
+        "end": 6769.099999999999
+    },
+    {
+        "text": " Si no va a ser una recorrida en profundidad, ¿vale? Yo creo que les había mostrado un ejemplo.",
+        "start": 6769.099999999999,
+        "end": 6773.219999999999
+    },
+    {
+        "text": " Que lo borrén, no lo pongo más, pero creo que era algo así.",
+        "start": 6777.82,
+        "end": 6781.0199999999995
+    },
+    {
+        "text": " Creo que el ejemplo era un graso.",
+        "start": 6784.78,
+        "end": 6786.78
+    },
+    {
+        "text": " Un segundo.",
+        "start": 6799.46,
+        "end": 6800.46
+    },
+    {
+        "text": " No.",
+        "start": 6806.82,
+        "end": 6807.82
+    },
+    {
+        "text": " Claro, pero cuando retira de la pila, como que no, no está específica el criterio, ¿no?",
+        "start": 6826.099999999999,
+        "end": 6832.78
+    },
+    {
+        "text": " No, pero la pila ya de por sí, sin poner un criterio.",
+        "start": 6833.78,
+        "end": 6835.78
+    },
+    {
+        "text": " La pila está acá lo último que pilaste.",
+        "start": 6838.78,
+        "end": 6840.78
+    },
+    {
+        "text": " Bien. Claro, bien. Sí.",
+        "start": 6841.78,
+        "end": 6844.78
+    },
+    {
+        "text": " Ahí no hay su especificación, donde sí hay su especificación.",
+        "start": 6845.78,
+        "end": 6849.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6849.78,
+        "end": 6850.78
+    },
+    {
+        "text": " No, no, no.",
+        "start": 6850.78,
+        "end": 6851.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6851.78,
+        "end": 6852.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6852.78,
+        "end": 6853.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6853.78,
+        "end": 6854.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6854.78,
+        "end": 6855.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6855.78,
+        "end": 6856.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6856.78,
+        "end": 6857.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6857.78,
+        "end": 6858.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6858.78,
+        "end": 6859.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 6859.78,
+        "end": 6860.78
+    },
+    {
+        "text": " ¿F bisschen me voir que hay, ¿no?",
+        "start": 6860.78,
+        "end": 6862.78
+    },
+    {
+        "text": " ¿V spiritึa que estoy haciendo Flyeribo?",
+        "start": 6862.78,
+        "end": 6864.78
+    },
+    {
+        "text": " ¿Entrada vez así?",
+        "start": 6864.78,
+        "end": 6866.78
+    },
+    {
+        "text": " ¿Vuestro lo va a explicar?",
+        "start": 6868.78,
+        "end": 6869.78
+    },
+    {
+        "text": " ¿Vbeliev broken?",
+        "start": 6872.78,
+        "end": 6874.78
+    },
+    {
+        "text": " ¿Lo está viendo?",
+        "start": 6874.78,
+        "end": 6875.78
+    },
+    {
+        "text": " ¿Lo Someone Diname?",
+        "start": 6877.78,
+        "end": 6880.0199999999995
+    },
+    {
+        "text": " ¿No?",
+        "start": 6883.78,
+        "end": 6884.78
+    },
+    {
+        "text": " Si, creo que podríaector Oribios, el primerhma se hace por nombre,",
+        "start": 6884.78,
+        "end": 6887.5199999999995
+    },
+    {
+        "text": " una recorrida difícil acá sería por ejemplo arrancas por acá bien",
+        "start": 6887.52,
+        "end": 6897.72
+    },
+    {
+        "text": " acá exploras por acá y después exploras por acá y ahí bueno",
+        "start": 6898.280000000001,
+        "end": 6908.6
+    },
+    {
+        "text": " sí otra posibilidad sería",
+        "start": 6908.6,
+        "end": 6912.64
+    },
+    {
+        "text": " dejarlo arrabar esto",
+        "start": 6916.160000000001,
+        "end": 6917.4800000000005
+    },
+    {
+        "text": " otra posibilidad es de como justamente como no está como está su",
+        "start": 6921.320000000001,
+        "end": 6925.280000000001
+    },
+    {
+        "text": " especificado en esta dicho en qué orden voy a recorrer los asesentes podría",
+        "start": 6925.280000000001,
+        "end": 6928.56
+    },
+    {
+        "text": " ir primero para este y después para este y después para este y esa también es un",
+        "start": 6929.56,
+        "end": 6934.22
+    },
+    {
+        "text": " árbol de fs bien ahora vamos a ver qué pasa con el algoritmo este",
+        "start": 6934.22,
+        "end": 6940.740000000001
+    },
+    {
+        "text": " esta algoritmo",
+        "start": 6947.66,
+        "end": 6948.740000000001
+    },
+    {
+        "text": " parte del vértice s",
+        "start": 6951.66,
+        "end": 6954.06
+    },
+    {
+        "text": " dice iniciar esa la pila conteniendo sólo a s",
+        "start": 6958.900000000001,
+        "end": 6962.780000000001
+    },
+    {
+        "text": " así que acá cuando entre al cual lo primero que va a retirar es ese de la pila",
+        "start": 6965.22,
+        "end": 6972.38
+    },
+    {
+        "text": " y después va a ser para cada vez y si al sacente a u",
+        "start": 6974.780000000001,
+        "end": 6978.7
+    },
+    {
+        "text": " y si nos fijamos acá en el gráfico los vértices al sacente s a s",
+        "start": 6981.900000000001,
+        "end": 6986.780000000001
+    },
+    {
+        "text": " y quién son los vértices ya no le 1 2 y 3",
+        "start": 6987.5,
+        "end": 6990.9
+    },
+    {
+        "text": " así los va a recorrer a todos",
+        "start": 6992.219999999999,
+        "end": 6994.139999999999
+    },
+    {
+        "text": " y para cada uno de esos que va a ser va a preguntar si está explorado",
+        "start": 6998.219999999999,
+        "end": 7003.9
+    },
+    {
+        "text": " ninguno de esos es explorado",
+        "start": 7005.099999999999,
+        "end": 7006.62
+    },
+    {
+        "text": " bien así que para todos ellos van a entrar acá",
+        "start": 7007.82,
+        "end": 7010.3
+    },
+    {
+        "text": " los va a marcar como explorados y los va a agregar la pila",
+        "start": 7011.82,
+        "end": 7016.259999999999
+    },
+    {
+        "text": " y va a poner el padre de v igual a s para todos ellos",
+        "start": 7017.5,
+        "end": 7026.54
+    },
+    {
+        "text": " haciendo de vuelta el dibujo lo va a estar que la recorrida en este caso nos quedó así de ese partimos para cada para acá para acá",
+        "start": 7030.54,
+        "end": 7042.34
+    },
+    {
+        "text": " bien bueno y fíjate que ese es el padre de todos esos el 1 el 2 y el 3 lo que después durante ese forich se",
+        "start": 7042.900000000001,
+        "end": 7053.7
+    },
+    {
+        "text": " agregaron a la pila los vértices 1 2 y 3 en algún orden",
+        "start": 7053.7,
+        "end": 7058.42
+    },
+    {
+        "text": " y lo siguiente que ocurre es que acá termina si ahora va a retirar de la pila un vértice de estos tipo el",
+        "start": 7062.18,
+        "end": 7069.62
+    },
+    {
+        "text": " 1 por ejemplo va a recorrer los azoces y va a preguntar si está explorado y siempre va a",
+        "start": 7069.62,
+        "end": 7080.5
+    },
+    {
+        "text": " que explorados dentro de los todos así que saca los 3 vértices de la pila",
+        "start": 7080.5,
+        "end": 7087.26
+    },
+    {
+        "text": " y en este if nos hace nada",
+        "start": 7088.78,
+        "end": 7090.82
+    },
+    {
+        "text": " entonces efectivamente lo que nos quedó es este árbol de recorrida entre el comiso de fs que no es un árbol de recorrida fs",
+        "start": 7091.82,
+        "end": 7103.82
+    },
+    {
+        "text": " la recorrida fue desde s y si te a uno a dos y a tres y uno dos y tres son hojas de fs",
+        "start": 7103.82,
+        "end": 7110.7
+    },
+    {
+        "text": " y ahora si vuestes fijas",
+        "start": 7111.7,
+        "end": 7113.98
+    },
+    {
+        "text": " está lista por ejemplo de qué conecta dos nuevos que son hermanos en este árbol de recorrido",
+        "start": 7116.86,
+        "end": 7126.34
+    },
+    {
+        "text": " eso no es una recorrida de fs",
+        "start": 7128.34,
+        "end": 7130.38
+    },
+    {
+        "text": " entiendo que no sea de fs pero una pregunta nosotros lo sabrimos de fs y de fs",
+        "start": 7133.0199999999995,
+        "end": 7140.58
+    },
+    {
+        "text": " los vemos como especiales y no bueno esta algoritmo no es tan especial como los otros dos me imagino es",
+        "start": 7141.14,
+        "end": 7149.34
+    },
+    {
+        "text": " justamente por esas propiedades que mantienen el árbol de recorrida",
+        "start": 7149.34,
+        "end": 7153.42
+    },
+    {
+        "text": " porque efectivamente funciona y eso es lo que claro no logran tener donde es que no funcionaba",
+        "start": 7156.58,
+        "end": 7163.5
+    },
+    {
+        "text": " pero está justamente esa propiedad de los del árbol de recorrida que la se interesa",
+        "start": 7164.02,
+        "end": 7169.1
+    },
+    {
+        "text": " funciona depende para qué funciona si vuelve que querés hacer crecer una componente con exa",
+        "start": 7169.1,
+        "end": 7177.34
+    },
+    {
+        "text": " porque es otro caso tanto como es otro caso particular de aquel algoritmo genérico que",
+        "start": 7180.54,
+        "end": 7186.42
+    },
+    {
+        "text": " vivimos para hacer crecer una componente con exa de los cuales ve que es y de fs son casos",
+        "start": 7186.42,
+        "end": 7192.18
+    },
+    {
+        "text": " particulares ahora ve fs y de fs son casos particulares que tienen propiedades bien interesante y",
+        "start": 7192.18,
+        "end": 7196.9
+    },
+    {
+        "text": " específicas que las que están estudiadas en el libro que la vemos lo habéis pasado a ve fs",
+        "start": 7196.9,
+        "end": 7202.22
+    },
+    {
+        "text": " que se pone bien el ejercicio para encontrar distancia de fs y tiene una propiedad entre",
+        "start": 7202.22,
+        "end": 7206.78
+    },
+    {
+        "text": " ancestros y diseñantes que me sirve con analizos ciclos con otros tipos de algoritmo",
+        "start": 7206.78,
+        "end": 7211.5
+    },
+    {
+        "text": " este otro algoritmo es otro caso particular de el algoritmo casi crecer la componente con exa",
+        "start": 7212.5,
+        "end": 7219.26
+    },
+    {
+        "text": " pero que no tienen ninguna de esas propiedades que tienen los otros",
+        "start": 7220.58,
+        "end": 7223.46
+    },
+    {
+        "text": " y entonces si vos usas ese algoritmo para el institucional problema de segmentación de imagen",
+        "start": 7225.94,
+        "end": 7232.98
+    },
+    {
+        "text": " que vivimos recién está perfecto y el tiempo de ejecución va a ser lo que tiene que ser y",
+        "start": 7232.98,
+        "end": 7240.0199999999995
+    },
+    {
+        "text": " ahora sí no es ejercicio y se bueno a modificar que lo habemos desde ese para hacer tal igual",
+        "start": 7242.179999999999,
+        "end": 7250.459999999999
+    },
+    {
+        "text": " cosa los partidos de ese punto para que seguramente termines a algo que no es de fs y además",
+        "start": 7250.459999999999,
+        "end": 7258.62
+    },
+    {
+        "text": " que muchas de las propiedades que vos capaz que en la cabeza pensas que tienen una recorrida de fs",
+        "start": 7258.62,
+        "end": 7262.9
+    },
+    {
+        "text": " algoritmo no le pien",
+        "start": 7262.9,
+        "end": 7263.9
+    },
+    {
+        "text": " gracias",
+        "start": 7268.9,
+        "end": 7269.9
+    },
+    {
+        "text": " alguna otra",
+        "start": 7271.9,
+        "end": 7272.9
+    },
+    {
+        "text": " bueno está dejamos por acá entonces nos vemos el juego echado",
+        "start": 7280.9,
+        "end": 7285.9
+    }
+]

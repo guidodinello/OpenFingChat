@@ -1,0 +1,4587 @@
+[
+    {
+        "text": " Seguimos avanzando y vamos a empezar a hablar de arreglos y subracus.",
+        "start": 0.0,
+        "end": 23.0
+    },
+    {
+        "text": " Y tanto los arreglos como los subrangos constituyen lo que vamos a llamar tipos de datos definidos por el programador.",
+        "start": 23.0,
+        "end": 39.0
+    },
+    {
+        "text": " Nosotros hasta ahora vimos que en nuestros programas utilizábamos tipos de datos predefinidos. ¿Cuáles eran?",
+        "start": 39.0,
+        "end": 49.0
+    },
+    {
+        "text": " Las palabras claves no son tipos de datos. Los tipos de datos cuales eran.",
+        "start": 50.0,
+        "end": 56.0
+    },
+    {
+        "text": " Integer, Real, Bullyán y Char.",
+        "start": 56.0,
+        "end": 61.0
+    },
+    {
+        "text": " Eso son los cuatro tipos de datos que habíamos manejado hasta el momento que ya vienen incorporados en el lenguaje.",
+        "start": 61.0,
+        "end": 68.0
+    },
+    {
+        "text": " Bueno, vamos a ver ahora que nosotros podemos crear nuevos tipos de datos dentro de nuestros programas.",
+        "start": 68.0,
+        "end": 76.0
+    },
+    {
+        "text": " Entre ellos vamos a ver que están los arreglos y los subrangos.",
+        "start": 76.0,
+        "end": 83.0
+    },
+    {
+        "text": " Entonces, para definir un nuevo tipo de datos en un programa se va a utilizar una palabra reservada nueva que es la palabra Type.",
+        "start": 83.0,
+        "end": 93.0
+    },
+    {
+        "text": " Vamos a ver que la sección de Type se pone arriba a continuación de las constantes y antes de las variables.",
+        "start": 93.0,
+        "end": 102.0
+    },
+    {
+        "text": " Entre medio es que nosotros podemos definir nuestros tipos de datos.",
+        "start": 102.0,
+        "end": 110.0
+    },
+    {
+        "text": " Existen diferentes categorías de tipos de datos que uno puede definir.",
+        "start": 110.0,
+        "end": 116.0
+    },
+    {
+        "text": " Por ejemplo, están los subrangos que los vamos a ver hoy.",
+        "start": 116.0,
+        "end": 120.0
+    },
+    {
+        "text": " Por ejemplo, están los enumerados que los vamos a ver más adelante.",
+        "start": 120.0,
+        "end": 124.0
+    },
+    {
+        "text": " Y también hay otro grupo que son los estructurados.",
+        "start": 124.0,
+        "end": 128.0
+    },
+    {
+        "text": " Y vamos a ver que dentro de los estructurados a su vez hay varias clasificaciones.",
+        "start": 128.0,
+        "end": 134.0
+    },
+    {
+        "text": " Dentro de los tipos estructurados los que vamos a ver hoy son los arreglos.",
+        "start": 134.0,
+        "end": 140.0
+    },
+    {
+        "text": " O sea que tanto los subrangos como los arreglos son dos de los posibles nuevos tipos de datos que nosotros podemos definir.",
+        "start": 140.0,
+        "end": 149.0
+    },
+    {
+        "text": " Y lo vamos a hacer con esa palabra que es Type.",
+        "start": 149.0,
+        "end": 155.0
+    },
+    {
+        "text": " Vamos a empezar por hablar de los subrangos.",
+        "start": 155.0,
+        "end": 160.0
+    },
+    {
+        "text": " Por ejemplo, podemos definir subrangos de los números enteros.",
+        "start": 160.0,
+        "end": 167.0
+    },
+    {
+        "text": " Se puede restringir el tipo de los enteros de forma de acotar los valores en un rango específico.",
+        "start": 167.0,
+        "end": 175.0
+    },
+    {
+        "text": " A veces nosotros no queremos trabajar con todos los enteros.",
+        "start": 175.0,
+        "end": 179.0
+    },
+    {
+        "text": " Capas que de repente queremos trabajar solamente con los naturales,",
+        "start": 179.0,
+        "end": 183.0
+    },
+    {
+        "text": " es decir, con los enteros positivos.",
+        "start": 183.0,
+        "end": 187.0
+    },
+    {
+        "text": " Entonces, nos podemos definir un nuevo tipo de datos llamado Natural",
+        "start": 187.0,
+        "end": 193.0
+    },
+    {
+        "text": " y el conjunto de valores que puede tomar el tipo natural van el rango de 0 a max.",
+        "start": 193.0,
+        "end": 201.0
+    },
+    {
+        "text": " Es más restringido que todo el conjunto de los enteros.",
+        "start": 201.0,
+        "end": 207.0
+    },
+    {
+        "text": " Vamos a imaginarnos por ejemplo que nosotros declaramos las siguientes variables.",
+        "start": 207.0,
+        "end": 213.0
+    },
+    {
+        "text": " Tenemos la sección de variables de nuestro programa y declaramos x de tipo int.",
+        "start": 213.0,
+        "end": 223.0
+    },
+    {
+        "text": " Que valores puede tomar la variable x?",
+        "start": 223.0,
+        "end": 228.0
+    },
+    {
+        "text": " Cualquier entero, positivo, cero o negativo, obviamente entre menos max y max.",
+        "start": 228.0,
+        "end": 236.0
+    },
+    {
+        "text": " Ahora, si yo me defino la variable y de tipo natural,",
+        "start": 236.0,
+        "end": 246.0
+    },
+    {
+        "text": " que valores puede tomar la variable y?",
+        "start": 246.0,
+        "end": 250.0
+    },
+    {
+        "text": " Unicamente valores en el rango de 0 a max.",
+        "start": 250.0,
+        "end": 256.0
+    },
+    {
+        "text": " Si yo le asigno un valor que no está en este rango,",
+        "start": 256.0,
+        "end": 260.0
+    },
+    {
+        "text": " el combiador me va a dar una roma.",
+        "start": 260.0,
+        "end": 264.0
+    },
+    {
+        "text": " Sí, porque está definido específicamente dijimos de 0 a max.",
+        "start": 264.0,
+        "end": 270.0
+    },
+    {
+        "text": " Cuando uno trabaja con una variable que pertenece un tipo subrango,",
+        "start": 270.0,
+        "end": 274.0
+    },
+    {
+        "text": " tiene que tener cuidado de no asignarle nunca un valor que esté fuera de ese subrango.",
+        "start": 274.0,
+        "end": 282.0
+    },
+    {
+        "text": " Obsármen que natural es un nuevo tipo de datos.",
+        "start": 282.0,
+        "end": 286.0
+    },
+    {
+        "text": " Lo acabamos de definirnos otros con lo cual luego podemos declarar variables de tipo natural,",
+        "start": 286.0,
+        "end": 293.0
+    },
+    {
+        "text": " así como antes declarábamos variables de tipo int.",
+        "start": 293.0,
+        "end": 296.0
+    },
+    {
+        "text": " Natural es el nombre, es el identificador que nosotros le dimos a nuestro nuevo tipo de datos.",
+        "start": 296.0,
+        "end": 306.0
+    },
+    {
+        "text": " Sí, los tipos de venir arriba en el programa entre las constantes y las variables.",
+        "start": 307.0,
+        "end": 312.0
+    },
+    {
+        "text": " Bien, y en este ejemplo hemos definido cinco nuevos tipos de datos.",
+        "start": 315.0,
+        "end": 321.0
+    },
+    {
+        "text": " Todos ellos representan subrango diferentes de los enteos.",
+        "start": 321.0,
+        "end": 327.0
+    },
+    {
+        "text": " Por ejemplo, el tipo decimal es el subrango que va de 0 a 9 inclusive.",
+        "start": 327.0,
+        "end": 334.0
+    },
+    {
+        "text": " O sea que si yo me declaro una variable de tipo decimal,",
+        "start": 335.0,
+        "end": 338.0
+    },
+    {
+        "text": " solo le puedo asignar valores en el rango de 0 a 9.",
+        "start": 338.0,
+        "end": 342.0
+    },
+    {
+        "text": " Los subrango me pueden servir cuando yo quiero trabajar con un conjunto más acotado de valores",
+        "start": 343.0,
+        "end": 348.0
+    },
+    {
+        "text": " y no me interesa trabajar con todos los enteos.",
+        "start": 348.0,
+        "end": 352.0
+    },
+    {
+        "text": " Bueno, no solamente se pueden definir subrango de enteeros,",
+        "start": 355.0,
+        "end": 358.0
+    },
+    {
+        "text": " también se pueden definir subrango de caracteres.",
+        "start": 358.0,
+        "end": 362.0
+    },
+    {
+        "text": " Y la idea es la misma, en vez de trabajar con todo el conjunto de los caracteres",
+        "start": 363.0,
+        "end": 366.0
+    },
+    {
+        "text": " trabajamos con un subrango específico.",
+        "start": 366.0,
+        "end": 369.0
+    },
+    {
+        "text": " Por ejemplo, yo me puedo definir el tipo de datos letra como el subrango que va del carácter A al carácter Z.",
+        "start": 369.0,
+        "end": 377.0
+    },
+    {
+        "text": " Si yo le asigno a una variable de tipo letra, un carácter que no esté en ese rango,",
+        "start": 378.0,
+        "end": 384.0
+    },
+    {
+        "text": " normalmente voy a tener un error.",
+        "start": 384.0,
+        "end": 386.0
+    },
+    {
+        "text": " Lo mismo con el tipo dígito, lo mismo con el tipo decimal.",
+        "start": 387.0,
+        "end": 391.0
+    },
+    {
+        "text": " Cuidado que decimal no es un subrango de los caracteres,",
+        "start": 391.0,
+        "end": 397.0
+    },
+    {
+        "text": " es un subrango de los enteeros.",
+        "start": 397.0,
+        "end": 401.0
+    },
+    {
+        "text": " De hecho, es el mismo tipo decimal que habíamos definido antes.",
+        "start": 401.0,
+        "end": 404.0
+    },
+    {
+        "text": " Estos valores son numericos.",
+        "start": 405.0,
+        "end": 407.0
+    },
+    {
+        "text": " Estos valores son de tipo char.",
+        "start": 408.0,
+        "end": 410.0
+    },
+    {
+        "text": " Recuerden que un dígito puesto entre comillas,",
+        "start": 411.0,
+        "end": 413.0
+    },
+    {
+        "text": " esto es tomado como un carácter y no como un valor numérico.",
+        "start": 413.0,
+        "end": 417.0
+    },
+    {
+        "text": " Bien, los subrango de caracteres se basan en el orden predefinido en el tipo char que enfripas",
+        "start": 418.0,
+        "end": 427.0
+    },
+    {
+        "text": " algo responde a la tabla.",
+        "start": 427.0,
+        "end": 429.0
+    },
+    {
+        "text": " Queda claro como definir un subrango, el cuidado que no debemos tener es irnos fuera de rango.",
+        "start": 431.0,
+        "end": 438.0
+    },
+    {
+        "text": " Es decir, asignar algún valor que no esté dentro del rango.",
+        "start": 439.0,
+        "end": 443.0
+    },
+    {
+        "text": " Se pone el primer elemento, dos puntitos último elemento.",
+        "start": 444.0,
+        "end": 449.0
+    },
+    {
+        "text": " Y con eso te queda definido un subrango.",
+        "start": 450.0,
+        "end": 452.0
+    },
+    {
+        "text": " No lo puedes hacer con subrango.",
+        "start": 454.0,
+        "end": 456.0
+    },
+    {
+        "text": " Habría que buscar otra manera.",
+        "start": 457.0,
+        "end": 458.0
+    },
+    {
+        "text": " Lo de la izquierda debe ser menor o igual que lo de la derecha.",
+        "start": 460.0,
+        "end": 465.0
+    },
+    {
+        "text": " Si no lo tiene sentido, te quedaría un tipo de datos que tomaría un conjunto vacío de valores.",
+        "start": 467.0,
+        "end": 472.0
+    },
+    {
+        "text": " No haría ningún valor que le podrías asesinar.",
+        "start": 473.0,
+        "end": 475.0
+    },
+    {
+        "text": " O sea, cualquier cosa que le asigna este de ariarro.",
+        "start": 475.0,
+        "end": 477.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 479.0,
+        "end": 480.0
+    },
+    {
+        "text": " No, solamente se pueden hacer subrango de lo que se llaman los tipos ordinales.",
+        "start": 480.0,
+        "end": 485.0
+    },
+    {
+        "text": " Los reales dijimos no son un tipo ordinal, los centeros y los caracteres siloso.",
+        "start": 486.0,
+        "end": 492.0
+    },
+    {
+        "text": " Bulean también, podrías, no tiene mucho sentido.",
+        "start": 494.0,
+        "end": 497.0
+    },
+    {
+        "text": " Pero podrías definir un subrango que va desde falsa hasta tru,",
+        "start": 498.0,
+        "end": 500.0
+    },
+    {
+        "text": " o desde tru hasta tru o desde falsa hasta falsa.",
+        "start": 501.0,
+        "end": 503.0
+    },
+    {
+        "text": " Y bueno, tendría mucha gracia, pero en teoría bulean también es un tipo ordinal.",
+        "start": 503.0,
+        "end": 507.0
+    },
+    {
+        "text": " Un único valor posible que podría tomar cualquier variable de ese tipo.",
+        "start": 512.0,
+        "end": 516.0
+    },
+    {
+        "text": " Exactamente, no tiene mucha gracia tampoco.",
+        "start": 516.0,
+        "end": 518.0
+    },
+    {
+        "text": " ¿Qué hago claro esto?",
+        "start": 521.0,
+        "end": 522.0
+    },
+    {
+        "text": " Bien.",
+        "start": 523.0,
+        "end": 524.0
+    },
+    {
+        "text": " Luego, las operaciones que uno puede realizar con las variables de un tipo subrango,",
+        "start": 525.0,
+        "end": 530.0
+    },
+    {
+        "text": " son las mismas operaciones que uno ya podía realizar con las variables de el tipo original que dio origen al subrango.",
+        "start": 530.0,
+        "end": 538.0
+    },
+    {
+        "text": " Hay que tener ojo ahí de que el resultado de esas operaciones no te dio un valor fuera de rango.",
+        "start": 539.0,
+        "end": 544.0
+    },
+    {
+        "text": " ¿Mien?",
+        "start": 545.0,
+        "end": 546.0
+    },
+    {
+        "text": " ¿Hasta acá?",
+        "start": 547.0,
+        "end": 548.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 550.0,
+        "end": 551.0
+    },
+    {
+        "text": " Constantes expresiones variables de un tipo subrango se comportan como el tipo base que lo contiene.",
+        "start": 552.0,
+        "end": 559.0
+    },
+    {
+        "text": " Lo que acabamos de decir de todo manijo que hagamos de los valores de ese tipo,",
+        "start": 560.0,
+        "end": 564.0
+    },
+    {
+        "text": " hereda las propiedades del tipo más grande entre comillas que le dio origen al subrango.",
+        "start": 565.0,
+        "end": 570.0
+    },
+    {
+        "text": " Si una variable toma un valor fuera del rango específicado,",
+        "start": 572.0,
+        "end": 575.0
+    },
+    {
+        "text": " se produce un error en tiempo de ejecución.",
+        "start": 575.0,
+        "end": 578.0
+    },
+    {
+        "text": " Si, sintácticamente no es que haya problema, el problema te salta durante la ejecución.",
+        "start": 579.0,
+        "end": 585.0
+    },
+    {
+        "text": " El compilador fripascal requiere ser configurado para que se haga la verificación de rango.",
+        "start": 588.0,
+        "end": 594.0
+    },
+    {
+        "text": " Hay una serie de banderitas que uno le pone al momento de compilar para que efectivamente te haga verificación de rango.",
+        "start": 595.0,
+        "end": 602.0
+    },
+    {
+        "text": " No las recuerdo ahora, después las miramos y se las digo.",
+        "start": 603.0,
+        "end": 605.0
+    },
+    {
+        "text": " Puede dar un error de compilación si de alguna manera el compilador se da cuenta de que te está yendo de rango.",
+        "start": 606.0,
+        "end": 613.0
+    },
+    {
+        "text": " Pero si no se da cuenta durante la compilación, seguro vas a saltar durante la ejecución.",
+        "start": 615.0,
+        "end": 619.0
+    },
+    {
+        "text": " En cualquier caso, siempre es muy importante programar con el debido cuidado para evitar irnos más allá de rango.",
+        "start": 620.0,
+        "end": 626.0
+    },
+    {
+        "text": " Bien.",
+        "start": 630.0,
+        "end": 631.0
+    },
+    {
+        "text": " Forma generica para definir un subrango, se pone la palabra reservada type.",
+        "start": 632.0,
+        "end": 637.0
+    },
+    {
+        "text": " El identificador es decir el nombre que le vamos a dar a nuestro nuevo tipo de datos.",
+        "start": 638.0,
+        "end": 643.0
+    },
+    {
+        "text": " Y después se ponen constantes que tienen que ser las dos del mismo tipo ordinal.",
+        "start": 644.0,
+        "end": 650.0
+    },
+    {
+        "text": " Hola, dosintesher, o las doschar, las dos del mismo tipo siempre que sea un tipo ordinal.",
+        "start": 651.0,
+        "end": 657.0
+    },
+    {
+        "text": " Intesa echar bullian y más adelante vamos a ver los enumerados, son lo que se conocen como tipos ordinales que el libro le dice también tipos escalares.",
+        "start": 658.0,
+        "end": 669.0
+    },
+    {
+        "text": " Se manejan como sinónimos.",
+        "start": 671.0,
+        "end": 673.0
+    },
+    {
+        "text": " Bien. Y recordemos esto que estamos definiendo es un tipo de datos.",
+        "start": 674.0,
+        "end": 679.0
+    },
+    {
+        "text": " Define un conjunto de posibles valores que puede llegar a tomar una variable de ese tipo.",
+        "start": 680.0,
+        "end": 686.0
+    },
+    {
+        "text": " Es un error muy común confundir el nombre del tipo de datos con el nombre de la variable.",
+        "start": 687.0,
+        "end": 693.0
+    },
+    {
+        "text": " Ojo con eso. La variable se llama i y el tipo de datos se llama natural.",
+        "start": 694.0,
+        "end": 700.0
+    },
+    {
+        "text": " Si yo quiero usar natural en el programa como si fuera el nombre de una variable me va a dar el error de combinación.",
+        "start": 701.0,
+        "end": 706.0
+    },
+    {
+        "text": " Bien.",
+        "start": 710.0,
+        "end": 711.0
+    },
+    {
+        "text": " Y vamos a pasar ahora a lo que nos importa realmente este capítulo que son los arreglos.",
+        "start": 712.0,
+        "end": 717.0
+    },
+    {
+        "text": " Los arreglos constituyen el primero de tres tipos posibles que se llaman estructurados.",
+        "start": 722.0,
+        "end": 729.0
+    },
+    {
+        "text": " Digimos, tenemos por un lado los subrangos, por otro lado los enumerados y por otro lado los estructurados.",
+        "start": 730.0,
+        "end": 738.0
+    },
+    {
+        "text": " Cuando nosotros definimos un tipo de datos va a partencer algunas de esas tres categorías.",
+        "start": 738.0,
+        "end": 743.0
+    },
+    {
+        "text": " La categoría de los estructurados a su vez se subdivide en otras tres subcategorías.",
+        "start": 744.0,
+        "end": 750.0
+    },
+    {
+        "text": " Que son los arreglos, los registros y los conjuntos con sus palabras en inglés.",
+        "start": 751.0,
+        "end": 756.0
+    },
+    {
+        "text": " Hoy nos vamos a concentrar en estos más adelante vamos a ver estos otros dos.",
+        "start": 757.0,
+        "end": 761.0
+    },
+    {
+        "text": " Entonces, cuando yo defino un arreglo también estoy definiendo un nuevo tipo de datos.",
+        "start": 762.0,
+        "end": 769.0
+    },
+    {
+        "text": " Que vamos a ver qué peculiaridad tiene ese tipo de datos.",
+        "start": 770.0,
+        "end": 774.0
+    },
+    {
+        "text": " Por ser un nuevo tipo de datos vamos a ver también que lo vamos a definir con la palabra type.",
+        "start": 776.0,
+        "end": 780.0
+    },
+    {
+        "text": " Y vamos a ver qué características tiene esto.",
+        "start": 781.0,
+        "end": 784.0
+    },
+    {
+        "text": " Bien, hasta ahora cuántos valores caben en una variable.",
+        "start": 784.0,
+        "end": 790.0
+    },
+    {
+        "text": " Uno y solamente uno. Si yo le quiero asignar un segundo valor a la variable que pasa, se pierde el anterior.",
+        "start": 792.0,
+        "end": 798.0
+    },
+    {
+        "text": " A mí me gustaría poder almacenar muchos valores juntos dentro de una misma variable.",
+        "start": 800.0,
+        "end": 805.0
+    },
+    {
+        "text": " Bueno eso justamente es lo que va a permitir un arreglo.",
+        "start": 806.0,
+        "end": 809.0
+    },
+    {
+        "text": " Un arreglo va a ser un tipo especial que va a permitir almacenar una cierta cantidad de valores juntos siempre y cuando sean todos del mismo tiempo.",
+        "start": 810.0,
+        "end": 820.0
+    },
+    {
+        "text": " Todos esos valores van a quedar almacenados dentro de la misma variable.",
+        "start": 821.0,
+        "end": 825.0
+    },
+    {
+        "text": " Ahora bien, ¿cómo hago yo para distinguir cuáles son los valores que tengo asignados dentro de la reglo?",
+        "start": 829.0,
+        "end": 834.0
+    },
+    {
+        "text": " Le vamos a asignar un índice a cada uno de los valores.",
+        "start": 835.0,
+        "end": 839.0
+    },
+    {
+        "text": " O sea que para acceder a un valor concreto vamos a poner el nombre de la reglo y el índice al cual estamos queriendo acceder.",
+        "start": 840.0,
+        "end": 848.0
+    },
+    {
+        "text": " Los arreglos surgen de la notación habitual en matemáticas para secuencias finitas.",
+        "start": 850.0,
+        "end": 855.0
+    },
+    {
+        "text": " Una secuencia de valores que va desde a uno hasta a él.",
+        "start": 856.0,
+        "end": 861.0
+    },
+    {
+        "text": " Los arreglos tienen tamaño fijo. Una vez que yo defino que un arreglo va a tener, por ejemplo, 10 posiciones,",
+        "start": 862.0,
+        "end": 870.0
+    },
+    {
+        "text": " yo le puedo almacenar solamente 10 valores. No le puedo seguir agregando más valores a continuación.",
+        "start": 871.0,
+        "end": 877.0
+    },
+    {
+        "text": " Entonces, me resuelven lo que nos estaba faltando que es poder asignar varios valores a una misma variable, pero esa cantidad es acotada.",
+        "start": 878.0,
+        "end": 888.0
+    },
+    {
+        "text": " Más adelante en el curso vamos a ver las listas que nos van a permitir continuar agregando valores tantos como nosotros queramos.",
+        "start": 889.0,
+        "end": 897.0
+    },
+    {
+        "text": " Pero eso va a venir después.",
+        "start": 899.0,
+        "end": 900.0
+    },
+    {
+        "text": " Entonces, yo le voy a poner un nombre a la reglo y después voy a especificar a qué posición de cebo acceder y de esa manera voy a estar tocando el valor que está almacenado en esa posición.",
+        "start": 901.0,
+        "end": 914.0
+    },
+    {
+        "text": " Esa es un poquito la idea de la reglo.",
+        "start": 915.0,
+        "end": 917.0
+    },
+    {
+        "text": " Bueno, ¿cómo se define un arreglo de la siguiente manera?",
+        "start": 921.0,
+        "end": 925.0
+    },
+    {
+        "text": " Se pone la palabra type para indicar que lo que estamos definiendo es un nuevo tipo de datos.",
+        "start": 926.0,
+        "end": 931.0
+    },
+    {
+        "text": " Le vamos a dar un nombre a ese tipo de datos, lo cual luego me va a permitir declarar variables de ese tipo.",
+        "start": 932.0,
+        "end": 940.0
+    },
+    {
+        "text": " Y de esta manera estamos diciendo que lo que estamos definiendo va a ser un arreglo.",
+        "start": 941.0,
+        "end": 948.0
+    },
+    {
+        "text": " Se pone la palabra reservada a Rai. Entre corchetes se pone de qué tipo van a hacer los índices.",
+        "start": 949.0,
+        "end": 956.0
+    },
+    {
+        "text": " Vamos a ver que los índices son a su vez un subrango.",
+        "start": 957.0,
+        "end": 960.0
+    },
+    {
+        "text": " Por ejemplo, yo quiero tener 10 posiciones y las quiero numerar de 1 a 10.",
+        "start": 961.0,
+        "end": 966.0
+    },
+    {
+        "text": " Entonces voy a especificar, en tipo índice, el subrango que va de 1 a 10.",
+        "start": 967.0,
+        "end": 971.0
+    },
+    {
+        "text": " Hola, puedo quedar numerar de 11 a 20.",
+        "start": 972.0,
+        "end": 975.0
+    },
+    {
+        "text": " Bueno, voy a poner el subrango que va de 11 a 20.",
+        "start": 976.0,
+        "end": 979.0
+    },
+    {
+        "text": " Entonces, todas las posiciones van a ser siempre consecutivas dentro del subrango que yo le haya especificado.",
+        "start": 980.0,
+        "end": 988.0
+    },
+    {
+        "text": " Su subrango, como los que acabamos de definir, hace un rotito.",
+        "start": 988.0,
+        "end": 991.0
+    },
+    {
+        "text": " Entonces, yo voy a tener tantas celdas, tantas posiciones en el arreglo, como valores tenga el subrango que así colocamos.",
+        "start": 994.0,
+        "end": 1004.0
+    },
+    {
+        "text": " Después ponemos la palabra reservada of y a continuación vamos a poner otro tipo de datos.",
+        "start": 1006.0,
+        "end": 1012.0
+    },
+    {
+        "text": " Que puede ser, o bien un tipo de datos predefinido, o bien otro tipo de datos que hayamos definido los otros también en el programa.",
+        "start": 1013.0,
+        "end": 1021.0
+    },
+    {
+        "text": " Lo que importa acá es que en todas las posiciones del arreglo, todos los valores que se van a almacenar tienen que ser todos siempre del mismo tipo.",
+        "start": 1022.0,
+        "end": 1031.0
+    },
+    {
+        "text": " Si no podemos almacenar en un arreglo valores de tipos diferentes, podemos almacenar muchos, pero tienen que ser todos del mismo tipo.",
+        "start": 1032.0,
+        "end": 1040.0
+    },
+    {
+        "text": " ¿Cuál el que le pongamos allá?",
+        "start": 1040.0,
+        "end": 1042.0
+    },
+    {
+        "text": " Bien, generalmente tipo índice es un subrango de los enteros, vamos a ver también que puede usar subrango de cualquier tipo ordinal.",
+        "start": 1045.0,
+        "end": 1054.0
+    },
+    {
+        "text": " Por ejemplo podría querer utilizar caracteres como índices, no están frecuentes, pero se puede hacer.",
+        "start": 1055.0,
+        "end": 1062.0
+    },
+    {
+        "text": " La gran mayoría de las veces los índices los vamos a representar mediante enteros, o mediante un subrango de los enteros propiamente dicho.",
+        "start": 1063.0,
+        "end": 1071.0
+    },
+    {
+        "text": " Y tipo va a ser cualquier tipo, ya sea predefinido o definido por nosotros.",
+        "start": 1072.0,
+        "end": 1078.0
+    },
+    {
+        "text": " Inclusive los reales, o sea el contenido de las posiciones, el contenido de las celdas no está restringido a los tipos ordinales, puede ser cualquier tipo de pasca.",
+        "start": 1079.0,
+        "end": 1092.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1092.0,
+        "end": 1094.0
+    },
+    {
+        "text": " Dentro de la misma sección type, puedes definir todos los tipos que quieras, sean subrango, sean reglos, sean récord lo que sean.",
+        "start": 1097.0,
+        "end": 1105.0
+    },
+    {
+        "text": " Bien. Y de hecho es lo que pasa acá.",
+        "start": 1109.0,
+        "end": 1113.0
+    },
+    {
+        "text": " Acá tenemos un ejemplo donde estamos definiendo seis tipos de datos nuevos.",
+        "start": 1113.0,
+        "end": 1120.0
+    },
+    {
+        "text": " Uno de ellos es un subrango, los demás son todos arreglos.",
+        "start": 1120.0,
+        "end": 1127.0
+    },
+    {
+        "text": " Volvo a repetir, estos son tipos de datos, no son variables.",
+        "start": 1128.0,
+        "end": 1134.0
+    },
+    {
+        "text": " Yo luego me voy a poder declarar una variable de este tipo de datos que tengo acá.",
+        "start": 1135.0,
+        "end": 1141.0
+    },
+    {
+        "text": " Por ejemplo, si R1 es un tipo de datos, yo puedo declararme una variable A de tipo R1.",
+        "start": 1141.0,
+        "end": 1152.0
+    },
+    {
+        "text": " ¿Qué estoy diciendo que esta variable pertenece a este tipo de datos?",
+        "start": 1153.0,
+        "end": 1158.0
+    },
+    {
+        "text": " O sea que esta variable va a cumplir con las características que se define allí.",
+        "start": 1159.0,
+        "end": 1164.0
+    },
+    {
+        "text": " Por ejemplo, el primero quizás no es el más frecuente, pero se puede hacer.",
+        "start": 1166.0,
+        "end": 1172.0
+    },
+    {
+        "text": " ¿Qué estamos usando como índices?",
+        "start": 1172.0,
+        "end": 1175.0
+    },
+    {
+        "text": " Todo el tipo char.",
+        "start": 1176.0,
+        "end": 1178.0
+    },
+    {
+        "text": " En Pascal el tipo char tiene 256 valores.",
+        "start": 1178.0,
+        "end": 1183.0
+    },
+    {
+        "text": " ¿Qué van desde el primer carácter ASKI hasta el último carácter ASKI?",
+        "start": 1183.0,
+        "end": 1188.0
+    },
+    {
+        "text": " O sea que si yo me declaro una variable de tipo R1 como aquella que está allá,",
+        "start": 1188.0,
+        "end": 1193.0
+    },
+    {
+        "text": " esa variable va a tener 256 celdas.",
+        "start": 1193.0,
+        "end": 1198.0
+    },
+    {
+        "text": " El índice que te va a permitir acceder a cada una de esas celdas va a ser de tipo char.",
+        "start": 1198.0,
+        "end": 1204.0
+    },
+    {
+        "text": " ¿Qué me da esa pregunta?",
+        "start": 1206.0,
+        "end": 1208.0
+    },
+    {
+        "text": " Exactamente, esto es el tipo de los índices.",
+        "start": 1215.0,
+        "end": 1219.0
+    },
+    {
+        "text": " El tipo de lo que vamos a colocar dentro de las celdas cual es.",
+        "start": 1219.0,
+        "end": 1223.0
+    },
+    {
+        "text": " Intensión.",
+        "start": 1223.0,
+        "end": 1225.0
+    },
+    {
+        "text": " Entonces, si yo me declaro una variable de ese tipo, estoy definiendo una espacio en memoria",
+        "start": 1225.0,
+        "end": 1230.0
+    },
+    {
+        "text": " que va a tener 256 lugares, cada uno de ellos se va a identificar mediante un carácter",
+        "start": 1230.0,
+        "end": 1237.0
+    },
+    {
+        "text": " y adentro del lugar lo que vamos a almacenar es un entero.",
+        "start": 1237.0,
+        "end": 1242.0
+    },
+    {
+        "text": " De nuevo, quizás no sea lo más frecuente, pero se puede hacer.",
+        "start": 1244.0,
+        "end": 1249.0
+    },
+    {
+        "text": " El tipo R2, estamos definiendo una reglo que va a tener índices",
+        "start": 1250.0,
+        "end": 1258.0
+    },
+    {
+        "text": " que van a ser un subrango de los enteros.",
+        "start": 1258.0,
+        "end": 1261.0
+    },
+    {
+        "text": " La primer celda va a ser la que tiene el índice 33 y la última celda va a ser la que tiene el índice 90",
+        "start": 1261.0,
+        "end": 1272.0
+    },
+    {
+        "text": " y lo que vamos a colocar en cada una de esas celdas que es un número real.",
+        "start": 1272.0,
+        "end": 1279.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1279.0,
+        "end": 1280.0
+    },
+    {
+        "text": " Ah, eso va a venir en breve.",
+        "start": 1285.0,
+        "end": 1288.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1288.0,
+        "end": 1289.0
+    },
+    {
+        "text": " ¿Tienes que poner un rango?",
+        "start": 1289.0,
+        "end": 1297.0
+    },
+    {
+        "text": " En Pascal hay que poner un rango.",
+        "start": 1297.0,
+        "end": 1300.0
+    },
+    {
+        "text": " Por ejemplo, yo tengo una variable A de tipo R1.",
+        "start": 1301.0,
+        "end": 1308.0
+    },
+    {
+        "text": " Si yo dibujo la variable A, la variable A va a ser una cosa bien larga.",
+        "start": 1309.0,
+        "end": 1318.0
+    },
+    {
+        "text": " Todo esto va a ser la variable A.",
+        "start": 1318.0,
+        "end": 1327.0
+    },
+    {
+        "text": " Esa variable va a estar dividida en secciones.",
+        "start": 1327.0,
+        "end": 1333.0
+    },
+    {
+        "text": " Cada una de esas secciones es una celda. ¿Cuántas celdas dijimos que van a ver?",
+        "start": 1333.0,
+        "end": 1339.0
+    },
+    {
+        "text": " 256.",
+        "start": 1339.0,
+        "end": 1342.0
+    },
+    {
+        "text": " Los índices que identifican a cada uno de los elementos que vamos a poner van a ser de tipo Jar.",
+        "start": 1344.0,
+        "end": 1354.0
+    },
+    {
+        "text": " La primer celda va a estar identificada por el menor Jar posible de la tabla A.",
+        "start": 1354.0,
+        "end": 1360.0
+    },
+    {
+        "text": " Si, que yo ahora no recuerdo exactamente cuál es.",
+        "start": 1361.0,
+        "end": 1364.0
+    },
+    {
+        "text": " Vamos a imaginarnos por un instante que es el cero, pero el cero de tipo Jar no es el cero de tipo Integer.",
+        "start": 1366.0,
+        "end": 1374.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1374.0,
+        "end": 1376.0
+    },
+    {
+        "text": " La siguiente será la celda identificada por el carácter 1.",
+        "start": 1377.0,
+        "end": 1383.0
+    },
+    {
+        "text": " Esto suponiendo por un instante que los Jar empiezan en este, que creo que no empiezan en este.",
+        "start": 1383.0,
+        "end": 1388.0
+    },
+    {
+        "text": " En el que sea que empiezan, cada una de estas posiciones va a estar identificada mediante un carácter.",
+        "start": 1389.0,
+        "end": 1396.0
+    },
+    {
+        "text": " Y lo que vamos a guardar dentro de esas posiciones es un entero.",
+        "start": 1397.0,
+        "end": 1402.0
+    },
+    {
+        "text": " O usarven que los valores que ponemos acá no tienen por que tener un orden prestablecido.",
+        "start": 1403.0,
+        "end": 1408.0
+    },
+    {
+        "text": " Puede ser cualquier valor siempre que sea de tipo Integer.",
+        "start": 1408.0,
+        "end": 1412.0
+    },
+    {
+        "text": " Por ejemplo, puedo poner acá un 27, puedo poner acá un 11, lo que sea.",
+        "start": 1413.0,
+        "end": 1419.0
+    },
+    {
+        "text": " Entonces, mi variable A va a lucir así en memoria.",
+        "start": 1421.0,
+        "end": 1425.0
+    },
+    {
+        "text": " Vamos a suponer que declaramos una variable B de tipo R2.",
+        "start": 1428.0,
+        "end": 1434.0
+    },
+    {
+        "text": " O sea que la variable B va a tener celdas que se van a identificar desde la 33 hasta la 9.",
+        "start": 1435.0,
+        "end": 1444.0
+    },
+    {
+        "text": " O sea que si dibujamos la variable B, la variable B va a ser todo esto.",
+        "start": 1445.0,
+        "end": 1454.0
+    },
+    {
+        "text": " Y va a estar también dividida en celdas.",
+        "start": 1455.0,
+        "end": 1463.0
+    },
+    {
+        "text": " La primer celda va a tener índice 33.",
+        "start": 1467.0,
+        "end": 1472.0
+    },
+    {
+        "text": " La siguiente va a tener índice 34, la siguiente va a tener índice 35.",
+        "start": 1474.0,
+        "end": 1479.0
+    },
+    {
+        "text": " Y así seguimos hasta que la última va a tener índice 90.",
+        "start": 1480.0,
+        "end": 1485.0
+    },
+    {
+        "text": " Dentro de cada una de esas celdas vamos a almacenar algo de tipo Real.",
+        "start": 1487.0,
+        "end": 1492.0
+    },
+    {
+        "text": " Entonces, por ejemplo, acá podría ir el valor 3.7.",
+        "start": 1496.0,
+        "end": 1500.0
+    },
+    {
+        "text": " Acá podría ir el valor 11.2.",
+        "start": 1501.0,
+        "end": 1505.0
+    },
+    {
+        "text": " Acá podría ir el valor 9.5.",
+        "start": 1505.0,
+        "end": 1508.0
+    },
+    {
+        "text": " Cualquier valor de tipo Real es admisible para ser almacenado dentro de la celda.",
+        "start": 1509.0,
+        "end": 1514.0
+    },
+    {
+        "text": " Entonces, si yo lo quiero acceder al tercer valor del arreglo,",
+        "start": 1516.0,
+        "end": 1519.0
+    },
+    {
+        "text": " vamos a ver bien cómo es la notación en breve, vamos a usar el nombre de la variable.",
+        "start": 1519.0,
+        "end": 1523.0
+    },
+    {
+        "text": " Vamos a indicar que estamos accediendo a la posición 35.",
+        "start": 1524.0,
+        "end": 1527.0
+    },
+    {
+        "text": " Y ahí nos vamos a estar metiendo dentro de la celda.",
+        "start": 1528.0,
+        "end": 1532.0
+    },
+    {
+        "text": " Bueno, más ejemplos. Esto...",
+        "start": 1535.0,
+        "end": 1538.0
+    },
+    {
+        "text": " El compilador lo suporta, pero es un despropósito.",
+        "start": 1538.0,
+        "end": 1542.0
+    },
+    {
+        "text": " Porque les parece que es un despropósito.",
+        "start": 1543.0,
+        "end": 1545.0
+    },
+    {
+        "text": " Estoy usando cómo índice todo el rango de los enteros.",
+        "start": 1547.0,
+        "end": 1551.0
+    },
+    {
+        "text": " Desde el más pequeño de todos, desde el más negativo, digamos, hasta Maxime.",
+        "start": 1552.0,
+        "end": 1557.0
+    },
+    {
+        "text": " ¿Por qué estamos diciendo 256?",
+        "start": 1566.0,
+        "end": 1569.0
+    },
+    {
+        "text": " Ah, por supuesto que voy a tener caracteres repetidos, claro que sí.",
+        "start": 1576.0,
+        "end": 1580.0
+    },
+    {
+        "text": " Tengo más celdas que valores posibles.",
+        "start": 1580.0,
+        "end": 1583.0
+    },
+    {
+        "text": " Eso no hay problema de los valores, se pueden repetir.",
+        "start": 1583.0,
+        "end": 1586.0
+    },
+    {
+        "text": " Ahora bien, vamos a tener el entorno de 60 y pico de 1000 celdas.",
+        "start": 1587.0,
+        "end": 1592.0
+    },
+    {
+        "text": " Imagínense el gasto de memoria.",
+        "start": 1592.0,
+        "end": 1595.0
+    },
+    {
+        "text": " Salvo que sea un programa que por sus características necesariamente requieron la regla tan grande,",
+        "start": 1596.0,
+        "end": 1602.0
+    },
+    {
+        "text": " evitar este tipo de declaraciones.",
+        "start": 1602.0,
+        "end": 1605.0
+    },
+    {
+        "text": " Y generalmente, para lo que vamos a hacer en el curso nunca,",
+        "start": 1606.0,
+        "end": 1609.0
+    },
+    {
+        "text": " vamos a necesitar un arreglo que tenga tantas celdas con buenteros existan en todo el rango.",
+        "start": 1609.0,
+        "end": 1615.0
+    },
+    {
+        "text": " El compilador, al momento de compilar el programa, ya sabe que en tiempo de ejecución,",
+        "start": 1617.0,
+        "end": 1623.0
+    },
+    {
+        "text": " las variables van a tener que tener la cantidad de celdas que dice allí.",
+        "start": 1623.0,
+        "end": 1626.0
+    },
+    {
+        "text": " No es a medida que vas necesitar.",
+        "start": 1628.0,
+        "end": 1630.0
+    },
+    {
+        "text": " ¿Qué o cual puede ser un problema?",
+        "start": 1631.0,
+        "end": 1633.0
+    },
+    {
+        "text": " Bien.",
+        "start": 1633.0,
+        "end": 1634.0
+    },
+    {
+        "text": " Bueno, esto que está acá, fíjense que pasa lo siguiente.",
+        "start": 1636.0,
+        "end": 1641.0
+    },
+    {
+        "text": " Tenemos un arreglo que va a tener cuántas celdas? 10.",
+        "start": 1642.0,
+        "end": 1646.0
+    },
+    {
+        "text": " Cada una de esas celdas se va a identificar mediante un índice de tipo,",
+        "start": 1647.0,
+        "end": 1652.0
+    },
+    {
+        "text": " char, concretamente los caracteres que van en el subrango,",
+        "start": 1653.0,
+        "end": 1656.0
+    },
+    {
+        "text": " del carácter cero al carácter 9.",
+        "start": 1656.0,
+        "end": 1658.0
+    },
+    {
+        "text": " Y lo que estamos poniendo dentro de cada una de las celdas va a ser de tipo R3.",
+        "start": 1659.0,
+        "end": 1666.0
+    },
+    {
+        "text": " ¿Y a su vez? ¿Cómo?",
+        "start": 1667.0,
+        "end": 1669.0
+    },
+    {
+        "text": " No entendí. R3 es este que está acá.",
+        "start": 1670.0,
+        "end": 1674.0
+    },
+    {
+        "text": " Y R3 a su vez que es.",
+        "start": 1675.0,
+        "end": 1676.0
+    },
+    {
+        "text": " Una reglo de caracteres.",
+        "start": 1677.0,
+        "end": 1679.0
+    },
+    {
+        "text": " O sea que lo que nos está definiendo R4 es una reglo",
+        "start": 1680.0,
+        "end": 1684.0
+    },
+    {
+        "text": " que en cada una de sus celdas contiene otro arreglo de caracteres.",
+        "start": 1684.0,
+        "end": 1689.0
+    },
+    {
+        "text": " Una reglo de caracteres que además tenía un tamaño enorme.",
+        "start": 1691.0,
+        "end": 1695.0
+    },
+    {
+        "text": " Ahora vamos a tener 10 de esos enormes.",
+        "start": 1696.0,
+        "end": 1698.0
+    },
+    {
+        "text": " Si este era un desprepósito, este es un desprepósito, un mayor.",
+        "start": 1699.0,
+        "end": 1703.0
+    },
+    {
+        "text": " ¿Por qué van a ser 10 veces algo así como 60 y pico de mil celdas?",
+        "start": 1704.0,
+        "end": 1710.0
+    },
+    {
+        "text": " Es más probablemente cuando lo ejecutes ni siquiera te da la memoria,",
+        "start": 1711.0,
+        "end": 1714.0
+    },
+    {
+        "text": " ella te destaca un flow ni viene el problema empieza a corrar.",
+        "start": 1714.0,
+        "end": 1717.0
+    },
+    {
+        "text": " Bueno, esto cuando tenemos una reglo que en sus celdas a su vez al mazena o otro arreglo",
+        "start": 1721.0,
+        "end": 1727.0
+    },
+    {
+        "text": " es un tipo especial de arreglo que se llama Matriz que lo vamos a discutir sobre el final del capítulo.",
+        "start": 1728.0,
+        "end": 1732.0
+    },
+    {
+        "text": " Bien, y acá me estoy definiendo otro arreglo y fíjense que para los índices",
+        "start": 1733.0,
+        "end": 1743.0
+    },
+    {
+        "text": " estamos utilizando rango que esa subes el tipo que definimos arriba.",
+        "start": 1743.0,
+        "end": 1747.0
+    },
+    {
+        "text": " O sea que las celdas de un arreglo de este tipo también van a ir desde la 33 hasta la 90",
+        "start": 1748.0,
+        "end": 1754.0
+    },
+    {
+        "text": " y en cada una de ellas que vamos a guardar un valor de tipo bull.",
+        "start": 1756.0,
+        "end": 1760.0
+    },
+    {
+        "text": " Entonces si yo por ejemplo me declaro la variable C de tipo R5 y luego dibujamos esa variable.",
+        "start": 1761.0,
+        "end": 1772.0
+    },
+    {
+        "text": " Bueno, todo esto va a ser la variable C que también va a estar dividida en celdas.",
+        "start": 1775.0,
+        "end": 1784.0
+    },
+    {
+        "text": " Cada una de esas celdas se va a identificar por un entero que también empieza a 33",
+        "start": 1785.0,
+        "end": 1792.0
+    },
+    {
+        "text": " así hasta llegar a la 90 pero dentro de cada celda lo que va a ir va a ser un valor de tipo bull.",
+        "start": 1796.0,
+        "end": 1803.0
+    },
+    {
+        "text": " Acá puedo tener true, acá puedo tener otra vez true, acá puedo tener false.",
+        "start": 1804.0,
+        "end": 1809.0
+    },
+    {
+        "text": " En todas las celdas lo que hay va a ser un valor de tipo bull.",
+        "start": 1810.0,
+        "end": 1814.0
+    },
+    {
+        "text": " Eso es lo que se llama un arreglo de bull yanos con índices enteros.",
+        "start": 1816.0,
+        "end": 1820.0
+    },
+    {
+        "text": " Entonces es importante no confundir el tipo de los índices con el tipo de lo que se va a almacenar.",
+        "start": 1822.0,
+        "end": 1829.0
+    },
+    {
+        "text": " El tipo de los índices es para identificar a cada una de las posiciones y el tipo que se pone luego de la palabrita OF",
+        "start": 1830.0,
+        "end": 1838.0
+    },
+    {
+        "text": " es el tipo de lo que se va a almacenar dentro de cada una de las celdas.",
+        "start": 1839.0,
+        "end": 1843.0
+    },
+    {
+        "text": " Los índices necesariamente tienen que ser un tipo ordinal, el contenido de las celdas puede ser cualquier cosa, ordinal o no.",
+        "start": 1845.0,
+        "end": 1854.0
+    },
+    {
+        "text": " Puede ser intaller, puede ser real, puede ser char o incluso podría ser otro arreglo.",
+        "start": 1855.0,
+        "end": 1859.0
+    },
+    {
+        "text": " No hay restricción para el contenido de las celdas.",
+        "start": 1861.0,
+        "end": 1865.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 1866.0,
+        "end": 1868.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1869.0,
+        "end": 1870.0
+    },
+    {
+        "text": " Sí, pero no son estos.",
+        "start": 1875.0,
+        "end": 1877.0
+    },
+    {
+        "text": " Y en este curso eso no los vamos a ver, lo que vamos a ver son las listas.",
+        "start": 1878.0,
+        "end": 1882.0
+    },
+    {
+        "text": " En el lenguaje C es que puedes trabajar más fácilmente con arreglos dinaricos.",
+        "start": 1883.0,
+        "end": 1888.0
+    },
+    {
+        "text": " Entonces ¿qué me van a permitir los arreglos? Poder almacenar muchos valores del mismo tipo todos juntos bajo una misma variable.",
+        "start": 1888.0,
+        "end": 1900.0
+    },
+    {
+        "text": " Nosotros hasta ahora si queríamos tener varios valores en una misma variable no lo podíamos hacer.",
+        "start": 1901.0,
+        "end": 1905.0
+    },
+    {
+        "text": " Imagínense que queremos tener, no sé, almacenadas todas las cédulas de todos nosotros.",
+        "start": 1906.0,
+        "end": 1912.0
+    },
+    {
+        "text": " Hasta ahora si no reglos que necesitábamos para eso.",
+        "start": 1913.0,
+        "end": 1915.0
+    },
+    {
+        "text": " Una variable para cada estudiante.",
+        "start": 1916.0,
+        "end": 1919.0
+    },
+    {
+        "text": " Sí, entonces teníamos 50 estudiantes sabía que declarar 50 variables.",
+        "start": 1920.0,
+        "end": 1924.0
+    },
+    {
+        "text": " Imagínense un programa con 50 variables.",
+        "start": 1925.0,
+        "end": 1927.0
+    },
+    {
+        "text": " Ahora cuántas variables vamos a declarar.",
+        "start": 1928.0,
+        "end": 1930.0
+    },
+    {
+        "text": " Una sola.",
+        "start": 1931.0,
+        "end": 1932.0
+    },
+    {
+        "text": " Le vamos a poner un rango de valores que determina que va a tener 50 celdas.",
+        "start": 1933.0,
+        "end": 1937.0
+    },
+    {
+        "text": " Y en cada celda vamos a guardar una celda.",
+        "start": 1938.0,
+        "end": 1940.0
+    },
+    {
+        "text": " Ese tipo de cosas son las que nos van a permitir los arreglos.",
+        "start": 1941.0,
+        "end": 1945.0
+    },
+    {
+        "text": " Recordemos, tienen tamaño fijo, no puedo ir agregando los nuevos elementos sobre la marja.",
+        "start": 1946.0,
+        "end": 1953.0
+    },
+    {
+        "text": " Eso es la hora de la última vez y van a llamarse las listas.",
+        "start": 1954.0,
+        "end": 1957.0
+    },
+    {
+        "text": " ¿Más preguntas hasta acá?",
+        "start": 1960.0,
+        "end": 1961.0
+    },
+    {
+        "text": " Bien.",
+        "start": 1964.0,
+        "end": 1965.0
+    },
+    {
+        "text": " ¿Existen también lo que se llaman tipos anónimos?",
+        "start": 1966.0,
+        "end": 1970.0
+    },
+    {
+        "text": " Nosotros hasta ahora todos los tipos de datos que estuvimos definiendo les pusimos un nombre de nuevo.",
+        "start": 1971.0,
+        "end": 1977.0
+    },
+    {
+        "text": " Si yo uso la palabra TIE, estoy diciendo que arreglo es el nombre de un tipo de datos.",
+        "start": 1978.0,
+        "end": 1985.0
+    },
+    {
+        "text": " Que en ese ejemplo que está ahí todas las variables de este tipo cuantas celdas van a tener.",
+        "start": 1987.0,
+        "end": 1993.0
+    },
+    {
+        "text": " 10 y en cada una de ellas que se va a almacenar.",
+        "start": 1994.0,
+        "end": 1997.0
+    },
+    {
+        "text": " Un real arreglo es el nombre de un tipo de datos.",
+        "start": 1998.0,
+        "end": 2002.0
+    },
+    {
+        "text": " Yo luego me puedo declarar una variable de tipo arreglo.",
+        "start": 2004.0,
+        "end": 2008.0
+    },
+    {
+        "text": " Cuando yo haga esta declaración la variable de va a tener cuántas celdas.",
+        "start": 2009.0,
+        "end": 2014.0
+    },
+    {
+        "text": " Va a tener 10 celdas y en cada una de ellas se va a almacenar un real.",
+        "start": 2015.0,
+        "end": 2020.0
+    },
+    {
+        "text": " Le hemos dado un nombre al tipo de datos que es arreglo.",
+        "start": 2020.0,
+        "end": 2025.0
+    },
+    {
+        "text": " Así como antes le dimos todos esos nombres a esos tipos de datos.",
+        "start": 2025.0,
+        "end": 2029.0
+    },
+    {
+        "text": " Y eso es lo que vamos a hacer la gran mayoría de la veces.",
+        "start": 2033.0,
+        "end": 2037.0
+    },
+    {
+        "text": " ¿Cómo perdón?",
+        "start": 2040.0,
+        "end": 2041.0
+    },
+    {
+        "text": " Porque no le dimos un nombre este subrango.",
+        "start": 2044.0,
+        "end": 2047.0
+    },
+    {
+        "text": " Yo no definí arriba un nombre parece subrango, se lo puse directamente ahí.",
+        "start": 2048.0,
+        "end": 2053.0
+    },
+    {
+        "text": " Eso igual lo vamos a hacer bastante.",
+        "start": 2054.0,
+        "end": 2056.0
+    },
+    {
+        "text": " Lo que vamos a hacer muy poco es esto otro.",
+        "start": 2057.0,
+        "end": 2059.0
+    },
+    {
+        "text": " Esto es lo que se llama un arreglo definido de manera anónima.",
+        "start": 2061.0,
+        "end": 2065.0
+    },
+    {
+        "text": " Es decir, yo no le dí un nombre al tipo de datos.",
+        "start": 2066.0,
+        "end": 2069.0
+    },
+    {
+        "text": " Directamente me declaré a y por estar dentro de la sección bar,",
+        "start": 2070.0,
+        "end": 2075.0
+    },
+    {
+        "text": " es una variable.",
+        "start": 2076.0,
+        "end": 2078.0
+    },
+    {
+        "text": " Y aquí mismo estoy diciendo que va a ser un arreglo que va a tener tantas celdas como caracteres a la de este rango.",
+        "start": 2079.0,
+        "end": 2089.0
+    },
+    {
+        "text": " Y en cada una de ellas voy a almacenar un valor de tipo, bullyan.",
+        "start": 2090.0,
+        "end": 2094.0
+    },
+    {
+        "text": " Pero no le dí un nombre a todo este tipo de datos.",
+        "start": 2095.0,
+        "end": 2099.0
+    },
+    {
+        "text": " En la propia declaración de la variable puse lo que sería la descripción del tipo.",
+        "start": 2100.0,
+        "end": 2105.0
+    },
+    {
+        "text": " Lo vamos a hacer poco.",
+        "start": 2108.0,
+        "end": 2110.0
+    },
+    {
+        "text": " Vamos a optar siempre o la gran mayoría de las veces por darle un nombre al tipo de datos.",
+        "start": 2111.0,
+        "end": 2117.0
+    },
+    {
+        "text": " Esto se utiliza únicamente cuando a ese tipo de datos lo va a usar solamente ahí y nada más.",
+        "start": 2118.0,
+        "end": 2126.0
+    },
+    {
+        "text": " Pero aun cuando lo vayas a usar solamente ahí y nada más nunca está mandarlo un nombre.",
+        "start": 2127.0,
+        "end": 2133.0
+    },
+    {
+        "text": " Si vas a usar más de una variable de este tipo, de cajonte conviene darle un nombre al tipo de datos.",
+        "start": 2135.0,
+        "end": 2143.0
+    },
+    {
+        "text": " Esto preferentemente evitarlo y si se utiliza que sea únicamente porque estás trabajando con esta variable.",
+        "start": 2144.0,
+        "end": 2151.0
+    },
+    {
+        "text": " Si voy a tuviera dos variables que querés que sean iguales, bueno, prena,",
+        "start": 2152.0,
+        "end": 2158.0
+    },
+    {
+        "text": " dale un nombre al tipo de datos arriba y después declarate las dos variables como que pertenecen a ese tipo.",
+        "start": 2159.0,
+        "end": 2165.0
+    },
+    {
+        "text": " Ok?",
+        "start": 2166.0,
+        "end": 2167.0
+    },
+    {
+        "text": " Y igual de dos variables, ¿cómo va a ver? ¿Arae?",
+        "start": 2167.0,
+        "end": 2172.0
+    },
+    {
+        "text": " Como poder se podría, no es la mejor práctica.",
+        "start": 2172.0,
+        "end": 2176.0
+    },
+    {
+        "text": " Si.",
+        "start": 2177.0,
+        "end": 2178.0
+    },
+    {
+        "text": " Después el arreglo lo vas a trabajar como cualquiera arreglo.",
+        "start": 2180.0,
+        "end": 2184.0
+    },
+    {
+        "text": " Vas a poner el nombre, vas a indicar el índice, vas a acceder a la celda y vas a colocar allí un valor.",
+        "start": 2184.0,
+        "end": 2189.0
+    },
+    {
+        "text": " Pero repito, en lo posible tratar de evitar esto.",
+        "start": 2190.0,
+        "end": 2196.0
+    },
+    {
+        "text": " Siempre que se pueda darle un nombre a todo tipo de datos que vayamos a utilizar.",
+        "start": 2197.0,
+        "end": 2202.0
+    },
+    {
+        "text": " ¿Ve bien?",
+        "start": 2204.0,
+        "end": 2205.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 2207.0,
+        "end": 2208.0
+    },
+    {
+        "text": " Una reglo ocupa tantas celdas en memoria como el cardinal de su tipo índice.",
+        "start": 2208.0,
+        "end": 2220.0
+    },
+    {
+        "text": " Veamos acá, una buena práctica es definir una constante para marcar el tamaño que va a tener el arreglo.",
+        "start": 2222.0,
+        "end": 2232.0
+    },
+    {
+        "text": " Sobre todo si vos al arreglo lo vas a usar muchísimas veces dentro del programa.",
+        "start": 2233.0,
+        "end": 2237.0
+    },
+    {
+        "text": " Vamos a ver después que uno va a hacer recorridas sobre el arreglo.",
+        "start": 2238.0,
+        "end": 2242.0
+    },
+    {
+        "text": " Se considera una buena práctica de programación definir previamente una constante que especifica el tamaño.",
+        "start": 2243.0,
+        "end": 2248.0
+    },
+    {
+        "text": " Entonces acá me definí una constante que se llama max arreglo con el valor 9.",
+        "start": 2250.0,
+        "end": 2255.0
+    },
+    {
+        "text": " Luego estoy definiendo dos tipos de datos.",
+        "start": 2256.0,
+        "end": 2259.0
+    },
+    {
+        "text": " El primero de ellos se llama rango arreglo y es un subrango que va desde uno hasta cuando hasta el valor que tenga max arreglo que en este caso es 9.",
+        "start": 2260.0,
+        "end": 2271.0
+    },
+    {
+        "text": " A continuación estamos definiendo otro tipo de datos llamado arreglo 1 que es un arreglo que va a tener tantas celdas como elementos de fina el tipo anterior.",
+        "start": 2274.0,
+        "end": 2288.0
+    },
+    {
+        "text": " Y el tipo anterior define cuántos valores 9 desde uno hasta 9.",
+        "start": 2289.0,
+        "end": 2295.0
+    },
+    {
+        "text": " O sea que este arreglo va a tener 9 celdas y los índices van a ir desde lindice 1 hasta el lindice 9.",
+        "start": 2296.0,
+        "end": 2305.0
+    },
+    {
+        "text": " ¿Qué vamos a colocar en cada una de esas celdas? Un índice.",
+        "start": 2307.0,
+        "end": 2312.0
+    },
+    {
+        "text": " Estos dos son los nombres, los identificadores que le acabamos de dar a dos tipos de datos definidos por nosotros. ¿Qué estoy definiendo acá?",
+        "start": 2313.0,
+        "end": 2324.0
+    },
+    {
+        "text": " Una variable A, como todas aquellas que estaban allá. A es una variable de tipo arreglo 1 o sea la variable A va a ser todo eso.",
+        "start": 2325.0,
+        "end": 2334.0
+    },
+    {
+        "text": " Es una reglo que ocupa 9 celdas y los índices van desde uno hasta el valor de la constante, o sea desde uno hasta 9.",
+        "start": 2335.0,
+        "end": 2346.0
+    },
+    {
+        "text": " Indice 1, indice 2, indice 3 y así hasta indice 9.",
+        "start": 2347.0,
+        "end": 2351.0
+    },
+    {
+        "text": " Y dentro de cada celda estamos colocando un valor de tipo 8.",
+        "start": 2352.0,
+        "end": 2356.0
+    },
+    {
+        "text": " Esto es exactamente lo mismo que estuvimos viendo allá.",
+        "start": 2357.0,
+        "end": 2359.0
+    },
+    {
+        "text": " Así que es una buena práctica definir una constante para indicar el tamaño que va a tener el arreglo.",
+        "start": 2360.0,
+        "end": 2371.0
+    },
+    {
+        "text": " ¿Cuál es lo que es? ¿Más preguntas de esto?",
+        "start": 2373.0,
+        "end": 2376.0
+    },
+    {
+        "text": " Bueno, en el de a poquito vamos a empezar a ver cómo manipulamos una regla.",
+        "start": 2377.0,
+        "end": 2383.0
+    },
+    {
+        "text": " Me habían preguntado un ratito cómo me meto a una celda y le colocó un valor.",
+        "start": 2384.0,
+        "end": 2388.0
+    },
+    {
+        "text": " Así.",
+        "start": 2389.0,
+        "end": 2390.0
+    },
+    {
+        "text": " Mediante nuestra vieja y querida instrucción de asignación.",
+        "start": 2390.0,
+        "end": 2393.0
+    },
+    {
+        "text": " Miremos acá. ¿Qué quiere decir esta notación?",
+        "start": 2396.0,
+        "end": 2399.0
+    },
+    {
+        "text": " Quiere decir, voy a la reglo, me meto dentro del índice 1 y en esa celda guardo un 12.",
+        "start": 2400.0,
+        "end": 2409.0
+    },
+    {
+        "text": " Voy a la reglo, me meto al índice 10 y dentro de esa celda guardo el 90.",
+        "start": 2413.0,
+        "end": 2419.0
+    },
+    {
+        "text": " O sea que para acceder a una posición dentro de una regla se pone el nombre de la variable entre colchetas rectos el índice y con eso te estás metiendo dentro de la celda.",
+        "start": 2420.0,
+        "end": 2434.0
+    },
+    {
+        "text": " Y el valor que estás guardando dentro de la celda es el que está a la derecha de la asignación.",
+        "start": 2435.0,
+        "end": 2439.0
+    },
+    {
+        "text": " ¿Se entendió eso?",
+        "start": 2441.0,
+        "end": 2442.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2442.0,
+        "end": 2443.0
+    },
+    {
+        "text": " Lo vamos a ver después.",
+        "start": 2444.0,
+        "end": 2446.0
+    },
+    {
+        "text": " Se pone dos veces separados con colchetas.",
+        "start": 2447.0,
+        "end": 2450.0
+    },
+    {
+        "text": " Bueno, el índice no necesariamente tiene que estar dado por un valor constante.",
+        "start": 2454.0,
+        "end": 2460.0
+    },
+    {
+        "text": " El índice puede estar dado por una variable.",
+        "start": 2461.0,
+        "end": 2464.0
+    },
+    {
+        "text": " Siempre y cuando esa variable sea del mismo tipo que el tipo de los índices.",
+        "start": 2465.0,
+        "end": 2470.0
+    },
+    {
+        "text": " Por ejemplo, vamos a imaginarnos que la variable y vale 4.",
+        "start": 2471.0,
+        "end": 2475.0
+    },
+    {
+        "text": " Al poner a en la posición y estoy accediendo a la posición 4.",
+        "start": 2476.0,
+        "end": 2481.0
+    },
+    {
+        "text": " Porque el valor que tiene la variable y es 4, entonces que hace pascal.",
+        "start": 2482.0,
+        "end": 2487.0
+    },
+    {
+        "text": " Toma el valor que tiene la variable y usa eso como el índice.",
+        "start": 2487.0,
+        "end": 2491.0
+    },
+    {
+        "text": " Entonces estoy entrando a la posición 4 de la reglo.",
+        "start": 2492.0,
+        "end": 2496.0
+    },
+    {
+        "text": " Y así que estoy guardando.",
+        "start": 2497.0,
+        "end": 2499.0
+    },
+    {
+        "text": " 5.",
+        "start": 2499.0,
+        "end": 2500.0
+    },
+    {
+        "text": " Estoy guardando un valor más que el que tiene la variable y.",
+        "start": 2501.0,
+        "end": 2504.0
+    },
+    {
+        "text": " Fíjense que siguen valiendo las reglas usuales de la asignación.",
+        "start": 2506.0,
+        "end": 2510.0
+    },
+    {
+        "text": " Lo que está a la derecha de la asignación puede ser una constante, puede ser una variable o puede ser una expresión.",
+        "start": 2510.0,
+        "end": 2517.0
+    },
+    {
+        "text": " Tiene que ser del mismo tipo que el tipo de lo que van cada celda.",
+        "start": 2518.0,
+        "end": 2523.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2527.0,
+        "end": 2528.0
+    },
+    {
+        "text": " También se pueden regresar con un rit.",
+        "start": 2529.0,
+        "end": 2531.0
+    },
+    {
+        "text": " Sí, señor.",
+        "start": 2531.0,
+        "end": 2532.0
+    },
+    {
+        "text": " Después le vamos a mover.",
+        "start": 2532.0,
+        "end": 2533.0
+    },
+    {
+        "text": " Otro ejemplo, vamos a imaginarnos que la variable y sigue valiendo 4.",
+        "start": 2534.0,
+        "end": 2538.0
+    },
+    {
+        "text": " Al poner y más 4, a qué posición estoy accediendo?",
+        "start": 2540.0,
+        "end": 2543.0
+    },
+    {
+        "text": " A la posición 8.",
+        "start": 2543.0,
+        "end": 2545.0
+    },
+    {
+        "text": " Que hace pascal?",
+        "start": 2546.0,
+        "end": 2547.0
+    },
+    {
+        "text": " Toma el valor de y que es un 4.",
+        "start": 2547.0,
+        "end": 2549.0
+    },
+    {
+        "text": " Les suma otro 4 el resultado de esa expresión da 8.",
+        "start": 2550.0,
+        "end": 2554.0
+    },
+    {
+        "text": " Entonces me estoy metiendo a la celda 8 de la reglo.",
+        "start": 2554.0,
+        "end": 2558.0
+    },
+    {
+        "text": " Y dentro de esa celda estamos colocando un valor.",
+        "start": 2559.0,
+        "end": 2563.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2565.0,
+        "end": 2566.0
+    },
+    {
+        "text": " ¿Acución de si abramos el 5.7?",
+        "start": 2567.0,
+        "end": 2570.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2570.0,
+        "end": 2571.0
+    },
+    {
+        "text": " Explota el planeta tierra.",
+        "start": 2573.0,
+        "end": 2575.0
+    },
+    {
+        "text": " Error en tiempo de ejecución.",
+        "start": 2576.0,
+        "end": 2578.0
+    },
+    {
+        "text": " El programa se rompe.",
+        "start": 2580.0,
+        "end": 2582.0
+    },
+    {
+        "text": " ¿Dónde se rompe significa error de ejecución que te corta la ejecución del programa?",
+        "start": 2582.0,
+        "end": 2588.0
+    },
+    {
+        "text": " Catástrofe.",
+        "start": 2588.0,
+        "end": 2589.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2591.0,
+        "end": 2592.0
+    },
+    {
+        "text": " Ustedes nunca deben salirse de rango.",
+        "start": 2592.0,
+        "end": 2595.0
+    },
+    {
+        "text": " Es más.",
+        "start": 2595.0,
+        "end": 2596.0
+    },
+    {
+        "text": " No solamente en la vida uno no debe salirse de rango,",
+        "start": 2596.0,
+        "end": 2599.0
+    },
+    {
+        "text": " sino que en los parciales de programación 1 es un error gravísimo salirse de rango en un arreglo.",
+        "start": 2599.0,
+        "end": 2606.0
+    },
+    {
+        "text": " Así que mucho cuidado con eso.",
+        "start": 2606.0,
+        "end": 2608.0
+    },
+    {
+        "text": " Por ejemplo acá, acá me estoy saliendo fuera de rango,",
+        "start": 2612.0,
+        "end": 2616.0
+    },
+    {
+        "text": " porque en este ejemplo estamos suponiendo que van desde la 1 hasta la 10.",
+        "start": 2616.0,
+        "end": 2620.0
+    },
+    {
+        "text": " Y acá estoy queriendo acceder a la celda 200.",
+        "start": 2621.0,
+        "end": 2624.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2626.0,
+        "end": 2627.0
+    },
+    {
+        "text": " Algo un compilador mejorado capaz que ya me lo detectan la compilación y me avisa.",
+        "start": 2627.0,
+        "end": 2632.0
+    },
+    {
+        "text": " Pero puede haber otro compilador que no se de cuenta de esto.",
+        "start": 2633.0,
+        "end": 2637.0
+    },
+    {
+        "text": " Y que sintácticamente esto pase la compilación.",
+        "start": 2638.0,
+        "end": 2642.0
+    },
+    {
+        "text": " En cuyo caso el problema cuando lo voy a tener dijimos en tiempo de ejecución,",
+        "start": 2642.0,
+        "end": 2647.0
+    },
+    {
+        "text": " voy a estar queriendo acceder a una celda fuera de rango.",
+        "start": 2647.0,
+        "end": 2651.0
+    },
+    {
+        "text": " No existe la celda 200.",
+        "start": 2651.0,
+        "end": 2654.0
+    },
+    {
+        "text": " En tiempo de ejecución cuando intento acceder a la celda que no existe,",
+        "start": 2655.0,
+        "end": 2660.0
+    },
+    {
+        "text": " ahí es que se produce el error gravísimo en tiempo de ejecución.",
+        "start": 2660.0,
+        "end": 2664.0
+    },
+    {
+        "text": " El programa se rompe, vos lo estás corriendo y te aparecen mensajes del sistema operativo",
+        "start": 2665.0,
+        "end": 2669.0
+    },
+    {
+        "text": " que te mando para fuera porque quisiste acceder a memoria inválida.",
+        "start": 2669.0,
+        "end": 2673.0
+    },
+    {
+        "text": " Entonces capas que esto compila, pero en cualquier caso vas a tener un problema en tiempo de ejecución.",
+        "start": 2675.0,
+        "end": 2681.0
+    },
+    {
+        "text": " Así que mucho ojo con salir de cerrar.",
+        "start": 2682.0,
+        "end": 2686.0
+    },
+    {
+        "text": " Este es el cañiziquiera compila.",
+        "start": 2688.0,
+        "end": 2690.0
+    },
+    {
+        "text": " ¿Por qué no compila?",
+        "start": 2691.0,
+        "end": 2693.0
+    },
+    {
+        "text": " Son de tipos diferentes.",
+        "start": 2694.0,
+        "end": 2696.0
+    },
+    {
+        "text": " Ni siquiera hay coerción posible aplicables de caso.",
+        "start": 2696.0,
+        "end": 2699.0
+    },
+    {
+        "text": " Ais de tipo, ais un arreglo.",
+        "start": 2699.0,
+        "end": 2703.0
+    },
+    {
+        "text": " Y cero es un entero.",
+        "start": 2703.0,
+        "end": 2705.0
+    },
+    {
+        "text": " Yo no puedo asignarle a una variable de tipo arreglo un entero.",
+        "start": 2706.0,
+        "end": 2709.0
+    },
+    {
+        "text": " Esto lo lo puedo hacer.",
+        "start": 2709.0,
+        "end": 2711.0
+    },
+    {
+        "text": " Puedo hacer esto.",
+        "start": 2711.0,
+        "end": 2712.0
+    },
+    {
+        "text": " Indico la posición y dentro de esa posición en esa casilla concreta,",
+        "start": 2713.0,
+        "end": 2718.0
+    },
+    {
+        "text": " ahí es un entero.",
+        "start": 2718.0,
+        "end": 2720.0
+    },
+    {
+        "text": " Si yo le quiero poner un cero a todas las celdas de la reglo que tendría que hacer.",
+        "start": 2721.0,
+        "end": 2725.0
+    },
+    {
+        "text": " Tendría que ser un for que vaya a posición a posición,",
+        "start": 2727.0,
+        "end": 2730.0
+    },
+    {
+        "text": " ¿verdad?",
+        "start": 2730.0,
+        "end": 2732.0
+    },
+    {
+        "text": " Colocando un cero en cada una de ellas.",
+        "start": 2732.0,
+        "end": 2734.0
+    },
+    {
+        "text": " Si a mí me interesa la inicializar en cero,",
+        "start": 2734.0,
+        "end": 2737.0
+    },
+    {
+        "text": " todas las celdas de la regla.",
+        "start": 2737.0,
+        "end": 2740.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2742.0,
+        "end": 2743.0
+    },
+    {
+        "text": " Si.",
+        "start": 2749.0,
+        "end": 2751.0
+    },
+    {
+        "text": " Ahí serían del mismo tipo.",
+        "start": 2757.0,
+        "end": 2759.0
+    },
+    {
+        "text": " Ahí te va a compilar.",
+        "start": 2760.0,
+        "end": 2762.0
+    },
+    {
+        "text": " Si, puede pasar que haya alguna versión del compilador",
+        "start": 2765.0,
+        "end": 2768.0
+    },
+    {
+        "text": " que esto no te lo permita hacer en tiempo de ejecución.",
+        "start": 2768.0,
+        "end": 2771.0
+    },
+    {
+        "text": " Pero pueden haber otras versiones que sí.",
+        "start": 2771.0,
+        "end": 2774.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2774.0,
+        "end": 2775.0
+    },
+    {
+        "text": " Afecto, práctico supone que sí.",
+        "start": 2775.0,
+        "end": 2777.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2779.0,
+        "end": 2780.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2783.0,
+        "end": 2784.0
+    },
+    {
+        "text": " Ya acá tenemos algunos ejemplos para inicializar una regla.",
+        "start": 2786.0,
+        "end": 2791.0
+    },
+    {
+        "text": " Para inicializar una regla es necesario asignar cada celda por separado.",
+        "start": 2793.0,
+        "end": 2799.0
+    },
+    {
+        "text": " Siempre que yo quiera inicializar todas las celdas de una reglo,",
+        "start": 2800.0,
+        "end": 2805.0
+    },
+    {
+        "text": " la estructura repetitiva ideal para hacerlo es el for por qué razón.",
+        "start": 2805.0,
+        "end": 2810.0
+    },
+    {
+        "text": " Sabemos dónde empieza y sabemos dónde termina.",
+        "start": 2810.0,
+        "end": 2813.0
+    },
+    {
+        "text": " Estamos dentro de las condiciones para utilizar un for.",
+        "start": 2813.0,
+        "end": 2817.0
+    },
+    {
+        "text": " Entonces, por ejemplo, cuando se ejecuta este código que está acá,",
+        "start": 2819.0,
+        "end": 2823.0
+    },
+    {
+        "text": " que es lo que hace este código.",
+        "start": 2823.0,
+        "end": 2826.0
+    },
+    {
+        "text": " Pueden ser todos los que se vean.",
+        "start": 2827.0,
+        "end": 2829.0
+    },
+    {
+        "text": " Váir desde la celda 1 hasta la celda 10",
+        "start": 2829.0,
+        "end": 2833.0
+    },
+    {
+        "text": " y cada celda le va a asignar el valor cero.",
+        "start": 2833.0,
+        "end": 2837.0
+    },
+    {
+        "text": " Estamos violando las reglas del for al poner y acá.",
+        "start": 2839.0,
+        "end": 2842.0
+    },
+    {
+        "text": " No, porque qué es lo que no estamos haciendo con él.",
+        "start": 2843.0,
+        "end": 2846.0
+    },
+    {
+        "text": " No le estamos modificando, lo estamos consultando.",
+        "start": 2846.0,
+        "end": 2849.0
+    },
+    {
+        "text": " Consultar el valor de la variable de control dentro del for",
+        "start": 2849.0,
+        "end": 2854.0
+    },
+    {
+        "text": " estaba permitido.",
+        "start": 2855.0,
+        "end": 2857.0
+    },
+    {
+        "text": " Entonces, ¿cómo se va a comportar este for?",
+        "start": 2858.0,
+        "end": 2860.0
+    },
+    {
+        "text": " La primera vez que entra la iba a valer 1.",
+        "start": 2860.0,
+        "end": 2863.0
+    },
+    {
+        "text": " Entonces, en la posición 1 de la reglo va a cargar un cero.",
+        "start": 2864.0,
+        "end": 2868.0
+    },
+    {
+        "text": " La siguiente vez que entra automáticamente y crece va a valer 2.",
+        "start": 2869.0,
+        "end": 2875.0
+    },
+    {
+        "text": " Entonces, cuando venga acá y va a valer 2",
+        "start": 2876.0,
+        "end": 2880.0
+    },
+    {
+        "text": " y en la posición 2 va a poner un cero.",
+        "start": 2880.0,
+        "end": 2882.0
+    },
+    {
+        "text": " Y la próxima vez que entra en la posición 3 va a poner un cero.",
+        "start": 2883.0,
+        "end": 2887.0
+    },
+    {
+        "text": " Y así se va a ejecutar 10 veces.",
+        "start": 2888.0,
+        "end": 2890.0
+    },
+    {
+        "text": " El resultado de la ejecución de ese for va a ser que las 10 celdas",
+        "start": 2891.0,
+        "end": 2895.0
+    },
+    {
+        "text": " quedan todas cargadas con cero.",
+        "start": 2895.0,
+        "end": 2897.0
+    },
+    {
+        "text": " Eso si me interesa que queden con cero,",
+        "start": 2898.0,
+        "end": 2900.0
+    },
+    {
+        "text": " es el bobo en el valor que quiera.",
+        "start": 2900.0,
+        "end": 2902.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2902.0,
+        "end": 2903.0
+    },
+    {
+        "text": " Yo vi la contar, no sé si es importante que el iniciar",
+        "start": 2904.0,
+        "end": 2908.0
+    },
+    {
+        "text": " la variabilidad se saca a la acentación de que el iniciar",
+        "start": 2908.0,
+        "end": 2910.0
+    },
+    {
+        "text": " también para los variables.",
+        "start": 2910.0,
+        "end": 2911.0
+    },
+    {
+        "text": " Exactamente.",
+        "start": 2911.0,
+        "end": 2912.0
+    },
+    {
+        "text": " Para los arreglos rigen las mismas reglas de inicialización",
+        "start": 2914.0,
+        "end": 2917.0
+    },
+    {
+        "text": " que para cualquier variable.",
+        "start": 2917.0,
+        "end": 2918.0
+    },
+    {
+        "text": " Antes de utilizarla, se tiene que haber inicializado",
+        "start": 2918.0,
+        "end": 2921.0
+    },
+    {
+        "text": " con algún valor valido que no tiene por qué ser el cero.",
+        "start": 2921.0,
+        "end": 2924.0
+    },
+    {
+        "text": " Esto depende del problema de resolver.",
+        "start": 2924.0,
+        "end": 2926.0
+    },
+    {
+        "text": " Me salteo el segundo.",
+        "start": 2928.0,
+        "end": 2929.0
+    },
+    {
+        "text": " Otro ejemplo es pedirle al usuario valores.",
+        "start": 2930.0,
+        "end": 2933.0
+    },
+    {
+        "text": " Cargar cada una de las celdas de la reglo con un valor",
+        "start": 2934.0,
+        "end": 2938.0
+    },
+    {
+        "text": " si elegido por el usuario.",
+        "start": 2938.0,
+        "end": 2940.0
+    },
+    {
+        "text": " Acá en vez de colocar nosotros un cero mediante asignación,",
+        "start": 2942.0,
+        "end": 2946.0
+    },
+    {
+        "text": " la primera vez que yo entro iba a le 1.",
+        "start": 2947.0,
+        "end": 2950.0
+    },
+    {
+        "text": " Entonces estoy en la posición 1 de la reglo",
+        "start": 2951.0,
+        "end": 2954.0
+    },
+    {
+        "text": " y que voy a cargar allí.",
+        "start": 2954.0,
+        "end": 2955.0
+    },
+    {
+        "text": " Un baño del usuario va a ingresar.",
+        "start": 2956.0,
+        "end": 2957.0
+    },
+    {
+        "text": " Luego cuando iba al gado 2, ¿sí?",
+        "start": 2958.0,
+        "end": 2962.0
+    },
+    {
+        "text": " ¿Qué vamos a estar cargando allí?",
+        "start": 2962.0,
+        "end": 2964.0
+    },
+    {
+        "text": " En la posición 2 otro valor que el usuario va a ingresar.",
+        "start": 2964.0,
+        "end": 2967.0
+    },
+    {
+        "text": " Entonces, este fragmento de código,",
+        "start": 2968.0,
+        "end": 2970.0
+    },
+    {
+        "text": " lo que hace es inicializar la reglo no con cero,",
+        "start": 2970.0,
+        "end": 2974.0
+    },
+    {
+        "text": " sino con valores teclados por el usuario.",
+        "start": 2974.0,
+        "end": 2977.0
+    },
+    {
+        "text": " No tiene por qué ser siempre con cero,",
+        "start": 2983.0,
+        "end": 2985.0
+    },
+    {
+        "text": " no tiene por qué ser siempre con valores ingresados por el usuario.",
+        "start": 2985.0,
+        "end": 2988.0
+    },
+    {
+        "text": " Puede ser con resultados de expresiones que yo hago.",
+        "start": 2988.0,
+        "end": 2991.0
+    },
+    {
+        "text": " Por ejemplo, acá.",
+        "start": 2993.0,
+        "end": 2994.0
+    },
+    {
+        "text": " Este for, sí, me va a inicializar el arreglo con los valores que dicen aquí.",
+        "start": 2995.0,
+        "end": 3000.0
+    },
+    {
+        "text": " Cuando la iba a le 1, voy a estar entrando el acel da 1",
+        "start": 3003.0,
+        "end": 3007.0
+    },
+    {
+        "text": " y voy a estar colocando que valor.",
+        "start": 3007.0,
+        "end": 3009.0
+    },
+    {
+        "text": " 2 por 1, 2.",
+        "start": 3010.0,
+        "end": 3011.0
+    },
+    {
+        "text": " O sea que el acel da 1 me va a quedar un 2.",
+        "start": 3012.0,
+        "end": 3014.0
+    },
+    {
+        "text": " Cuando vuelvo a entrar al forla, iba a le 2.",
+        "start": 3015.0,
+        "end": 3018.0
+    },
+    {
+        "text": " Entonces, dentro de la acel da 2, que voy a estar poniendo.",
+        "start": 3018.0,
+        "end": 3021.0
+    },
+    {
+        "text": " 4.",
+        "start": 3022.0,
+        "end": 3023.0
+    },
+    {
+        "text": " Volvo a entrar al forco y iba aliendo 3.",
+        "start": 3024.0,
+        "end": 3026.0
+    },
+    {
+        "text": " En la posición 3, voy a estar guardando un 6.",
+        "start": 3026.0,
+        "end": 3029.0
+    },
+    {
+        "text": " O sea que ese fragmento me está inicializando el arreglo",
+        "start": 3030.0,
+        "end": 3034.0
+    },
+    {
+        "text": " con todos los naturales pares que van desde el 2 hasta el 20.",
+        "start": 3034.0,
+        "end": 3038.0
+    },
+    {
+        "text": " Ustedes lo inicializan todo con cero,",
+        "start": 3040.0,
+        "end": 3042.0
+    },
+    {
+        "text": " lo inicializan con valores pares,",
+        "start": 3042.0,
+        "end": 3044.0
+    },
+    {
+        "text": " lo inicializan con valores que ingresó el usuario,",
+        "start": 3044.0,
+        "end": 3047.0
+    },
+    {
+        "text": " no importa con qué, pero lo inicializan.",
+        "start": 3047.0,
+        "end": 3049.0
+    },
+    {
+        "text": " Si yo no inicializo una variable que pasaba con la variable,",
+        "start": 3050.0,
+        "end": 3054.0
+    },
+    {
+        "text": " contiene basura, contiene un valor indefinido,",
+        "start": 3055.0,
+        "end": 3057.0
+    },
+    {
+        "text": " lo mismo se aplica a las celdas de un arreglo.",
+        "start": 3057.0,
+        "end": 3060.0
+    },
+    {
+        "text": " Si yo no las inicializo contiene valores indefinidos.",
+        "start": 3061.0,
+        "end": 3063.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3064.0,
+        "end": 3065.0
+    },
+    {
+        "text": " No necesariamente, si el salto de las celdas,",
+        "start": 3065.0,
+        "end": 3068.0
+    },
+    {
+        "text": " antes de usar un arreglo.",
+        "start": 3068.0,
+        "end": 3070.0
+    },
+    {
+        "text": " Depende del problema, pero la gran mayoría de las veces sí es necesario.",
+        "start": 3071.0,
+        "end": 3075.0
+    },
+    {
+        "text": " Depende del problema.",
+        "start": 3076.0,
+        "end": 3078.0
+    },
+    {
+        "text": " Pero inicializar una porción de la regla y dejar otra porción con basura es raro.",
+        "start": 3079.0,
+        "end": 3083.0
+    },
+    {
+        "text": " Más que poco óptimos, es un disparate.",
+        "start": 3091.0,
+        "end": 3093.0
+    },
+    {
+        "text": " Y bueno, tendrías que tener 60 y pico de mil celdas,",
+        "start": 3094.0,
+        "end": 3097.0
+    },
+    {
+        "text": " todas con algún valor inicial válido.",
+        "start": 3098.0,
+        "end": 3101.0
+    },
+    {
+        "text": " Además del tiempo que le va a llevar al programa ejecutar eso.",
+        "start": 3103.0,
+        "end": 3106.0
+    },
+    {
+        "text": " Pero si no estamos manejando tamaños disparatados de reglo,",
+        "start": 3109.0,
+        "end": 3112.0
+    },
+    {
+        "text": " asegurarse de que siempre cuando sea necesario consultar el valor de una celda,",
+        "start": 3113.0,
+        "end": 3118.0
+    },
+    {
+        "text": " previamente esa celda haya sido inicializada con algún valor.",
+        "start": 3119.0,
+        "end": 3123.0
+    },
+    {
+        "text": " Se van teniendo.",
+        "start": 3126.0,
+        "end": 3127.0
+    },
+    {
+        "text": " Bueno, vamos a ser un poquito de práctico.",
+        "start": 3130.0,
+        "end": 3132.0
+    },
+    {
+        "text": " Bueno, vamos a ser el ejercicio 3 parte 1.",
+        "start": 3132.0,
+        "end": 3134.0
+    },
+    {
+        "text": " Dadas las siguientes declaraciones.",
+        "start": 3135.0,
+        "end": 3137.0
+    },
+    {
+        "text": " Tenemos una constante N, ¿sí?",
+        "start": 3138.0,
+        "end": 3140.0
+    },
+    {
+        "text": " De tipo entero, va a ser la constante que tiene un cierto valor.",
+        "start": 3141.0,
+        "end": 3145.0
+    },
+    {
+        "text": " No importa si es un valor,",
+        "start": 3145.0,
+        "end": 3147.0
+    },
+    {
+        "text": " pero si es un valor,",
+        "start": 3147.0,
+        "end": 3149.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3149.0,
+        "end": 3151.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3151.0,
+        "end": 3152.0
+    },
+    {
+        "text": " pero si es un valor,",
+        "start": 3152.0,
+        "end": 3153.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3153.0,
+        "end": 3154.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3154.0,
+        "end": 3155.0
+    },
+    {
+        "text": " pero si es un valor,",
+        "start": 3155.0,
+        "end": 3156.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3156.0,
+        "end": 3157.0
+    },
+    {
+        "text": " pero si es un valor,",
+        "start": 3157.0,
+        "end": 3158.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3158.0,
+        "end": 3159.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3159.0,
+        "end": 3160.0
+    },
+    {
+        "text": " no es un valor,",
+        "start": 3160.0,
+        "end": 3162.0
+    },
+    {
+        "text": " no importa cuál.",
+        "start": 3162.0,
+        "end": 3163.0
+    },
+    {
+        "text": " Después cuando yo vaya a combinar el programa le pondré un valor concreto.",
+        "start": 3163.0,
+        "end": 3166.0
+    },
+    {
+        "text": " Ese valor va a definir el tamaño que va a tener el arden.",
+        "start": 3167.0,
+        "end": 3171.0
+    },
+    {
+        "text": " Por ejemplo, si N vale 20,",
+        "start": 3171.0,
+        "end": 3173.0
+    },
+    {
+        "text": " entonces el arreglo va a tener 20 celdas.",
+        "start": 3173.0,
+        "end": 3175.0
+    },
+    {
+        "text": " Si N vale 50,",
+        "start": 3175.0,
+        "end": 3177.0
+    },
+    {
+        "text": " el arreglo va a tener 50 celdas.",
+        "start": 3177.0,
+        "end": 3179.0
+    },
+    {
+        "text": " Y después estamos definiendo un tipo llamado rango N,",
+        "start": 3182.0,
+        "end": 3186.0
+    },
+    {
+        "text": " que es el subrango que va desde 1 hasta N.",
+        "start": 3186.0,
+        "end": 3189.0
+    },
+    {
+        "text": " Y los valores de ese subrango yo los voy a utilizar como índices de el arreglo.",
+        "start": 3191.0,
+        "end": 3197.0
+    },
+    {
+        "text": " Y estamos definiendo un nuevo tipo de datos que le pusimos de nombre tabla.",
+        "start": 3197.0,
+        "end": 3203.0
+    },
+    {
+        "text": " Yo le puedo poner el nombre que yo quiera,",
+        "start": 3203.0,
+        "end": 3206.0
+    },
+    {
+        "text": " siempre que sea un identificador.",
+        "start": 3206.0,
+        "end": 3208.0
+    },
+    {
+        "text": " También es de llamarle a R1, R2, R5 o arreglo.",
+        "start": 3208.0,
+        "end": 3211.0
+    },
+    {
+        "text": " Acá le estamos llamando tabla.",
+        "start": 3211.0,
+        "end": 3213.0
+    },
+    {
+        "text": " Pero por más que se llama tabla esto sigue siendo un arreglo.",
+        "start": 3213.0,
+        "end": 3217.0
+    },
+    {
+        "text": " Estos dos son tipos de datos.",
+        "start": 3218.0,
+        "end": 3221.0
+    },
+    {
+        "text": " No son...",
+        "start": 3221.0,
+        "end": 3222.0
+    },
+    {
+        "text": " Entonces estamos definiendo un arreglo que va a tener tantas celdas como se especifica en el rango,",
+        "start": 3227.0,
+        "end": 3232.0
+    },
+    {
+        "text": " que va a sués de tamaño N,",
+        "start": 3232.0,
+        "end": 3236.0
+    },
+    {
+        "text": " y lo que estamos guardando dentro de cada celda va a ser un índice.",
+        "start": 3236.0,
+        "end": 3240.0
+    },
+    {
+        "text": " Entonces por ejemplo, si N vale 20,",
+        "start": 3241.0,
+        "end": 3245.0
+    },
+    {
+        "text": " estamos definiendo un arreglo de 20 posiciones numeradas de 1 a 20",
+        "start": 3245.0,
+        "end": 3252.0
+    },
+    {
+        "text": " y dentro de cada una de ellas vamos a guardar un índice.",
+        "start": 3252.0,
+        "end": 3256.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3256.0,
+        "end": 3258.0
+    },
+    {
+        "text": " Bien, escriba un programa, contar mayores,",
+        "start": 3259.0,
+        "end": 3263.0
+    },
+    {
+        "text": " ese es el nombre que le vamos a dar al programa,",
+        "start": 3263.0,
+        "end": 3266.0
+    },
+    {
+        "text": " que dado un entero ingresado por el usuario,",
+        "start": 3267.0,
+        "end": 3271.0
+    },
+    {
+        "text": " cuente e imprima la cantidad de valores almacenados en el arreglo que son mayores que el entero ingresado.",
+        "start": 3271.0,
+        "end": 3279.0
+    },
+    {
+        "text": " Me voy hasta el final porque hay una nota al pie.",
+        "start": 3280.0,
+        "end": 3283.0
+    },
+    {
+        "text": " En los tres programas que se piden en este ejercicio tanto en este como en los dos que van a venir después,",
+        "start": 3284.0,
+        "end": 3289.0
+    },
+    {
+        "text": " se deben obtener los valores del arreglo desde la entrada estatal.",
+        "start": 3289.0,
+        "end": 3294.0
+    },
+    {
+        "text": " O sea, nos están diciendo cómo lo vamos a inicializar el arreglo,",
+        "start": 3295.0,
+        "end": 3299.0
+    },
+    {
+        "text": " le vamos a pedir al usuario que nos ingrese valores.",
+        "start": 3299.0,
+        "end": 3303.0
+    },
+    {
+        "text": " En forma previa a la resolución del problema, del problema perdón solicitado.",
+        "start": 3304.0,
+        "end": 3310.0
+    },
+    {
+        "text": " Entonces, el programa nuestro es lo que va a tener que hacer,",
+        "start": 3310.0,
+        "end": 3314.0
+    },
+    {
+        "text": " lo primero va a ser pedirle al usuario que cosa,",
+        "start": 3314.0,
+        "end": 3317.0
+    },
+    {
+        "text": " que ingrese un valor no, que ingrese en el valores.",
+        "start": 3317.0,
+        "end": 3322.0
+    },
+    {
+        "text": " Luego vamos a proceder a la lectura de valores para todas las celdas del arreglo.",
+        "start": 3323.0,
+        "end": 3328.0
+    },
+    {
+        "text": " Una vez que tenemos el arreglo cargado con todas las celdas, luego de eso que le vamos a pedir al usuario.",
+        "start": 3330.0,
+        "end": 3336.0
+    },
+    {
+        "text": " Que ingrese otro valor más, pero ese otro valor no lo vamos a guardar en el arreglo,",
+        "start": 3337.0,
+        "end": 3342.0
+    },
+    {
+        "text": " no vamos a guardar en otra variable.",
+        "start": 3342.0,
+        "end": 3345.0
+    },
+    {
+        "text": " Una vez que el usuario me ingresó ese valor, luego de eso vamos a tener que contar",
+        "start": 3345.0,
+        "end": 3351.0
+    },
+    {
+        "text": " cuántos de los valores que están en el arreglo son mayores que ese valor que me ingresó el usuario.",
+        "start": 3352.0,
+        "end": 3357.0
+    },
+    {
+        "text": " ¿Cómo les parece que podremos resolver eso?",
+        "start": 3359.0,
+        "end": 3361.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3361.0,
+        "end": 3362.0
+    },
+    {
+        "text": " ¿No?",
+        "start": 3363.0,
+        "end": 3364.0
+    },
+    {
+        "text": " Sí, primero de esta, y esta, con que estas el arreglo con los valores.",
+        "start": 3364.0,
+        "end": 3370.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3370.0,
+        "end": 3371.0
+    },
+    {
+        "text": " Después el usuario va a tener que leer a su propio.",
+        "start": 3371.0,
+        "end": 3373.0
+    },
+    {
+        "text": " Le pedimos otro.",
+        "start": 3373.0,
+        "end": 3374.0
+    },
+    {
+        "text": " Y después.",
+        "start": 3374.0,
+        "end": 3376.0
+    },
+    {
+        "text": " Bueno, vamos a precisar un segundo for luego para volverlo a recorrer y que tenemos que hacer en cada celda.",
+        "start": 3377.0,
+        "end": 3384.0
+    },
+    {
+        "text": " ¿Cómo comparamos?",
+        "start": 3385.0,
+        "end": 3386.0
+    },
+    {
+        "text": " ¿Coniz?",
+        "start": 3386.0,
+        "end": 3388.0
+    },
+    {
+        "text": " Vamos a comparar utilizando IF.",
+        "start": 3390.0,
+        "end": 3392.0
+    },
+    {
+        "text": " Intrimirnos que pide.",
+        "start": 3394.0,
+        "end": 3395.0
+    },
+    {
+        "text": " Que contemos.",
+        "start": 3396.0,
+        "end": 3397.0
+    },
+    {
+        "text": " O sea que vamos a tener que llevar una cuenta.",
+        "start": 3398.0,
+        "end": 3400.0
+    },
+    {
+        "text": " O sea que vamos a tener que usar el contador.",
+        "start": 3401.0,
+        "end": 3403.0
+    },
+    {
+        "text": " O sea que vamos a tener alguna instrucción de acumulación.",
+        "start": 3403.0,
+        "end": 3406.0
+    },
+    {
+        "text": " ¿Qué tenían de especial las asignaciones que eran acumulaciones?",
+        "start": 3406.0,
+        "end": 3409.0
+    },
+    {
+        "text": " La misma variable aparece en la izquierda y a la derecha del operador de asignación.",
+        "start": 3410.0,
+        "end": 3414.0
+    },
+    {
+        "text": " Luego de finalizado ese segundo for que vamos a hacer.",
+        "start": 3415.0,
+        "end": 3418.0
+    },
+    {
+        "text": " Mostrarle el usuario el resultado.",
+        "start": 3420.0,
+        "end": 3422.0
+    },
+    {
+        "text": " Quedo claro.",
+        "start": 3423.0,
+        "end": 3424.0
+    },
+    {
+        "text": " Bueno, tomense 10 minutitos, los escriben y los discutimos.",
+        "start": 3425.0,
+        "end": 3428.0
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 3429.0,
+        "end": 3430.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3434.0,
+        "end": 3435.0
+    },
+    {
+        "text": " La sección para la constante ya la tenemos, la sección para los tipos de datos ya la tenemos,",
+        "start": 3436.0,
+        "end": 3440.0
+    },
+    {
+        "text": " vamos a empezar a partir de la sección para las variables.",
+        "start": 3441.0,
+        "end": 3444.0
+    },
+    {
+        "text": " Entonces, ponemos.",
+        "start": 3446.0,
+        "end": 3447.0
+    },
+    {
+        "text": " La sección para las variables y qué variables vamos a tener.",
+        "start": 3451.0,
+        "end": 3454.0
+    },
+    {
+        "text": " Contador.",
+        "start": 3455.0,
+        "end": 3456.0
+    },
+    {
+        "text": " ¿Qué va a ser de tipo?",
+        "start": 3459.0,
+        "end": 3460.0
+    },
+    {
+        "text": " De tipo intallar.",
+        "start": 3461.0,
+        "end": 3463.0
+    },
+    {
+        "text": " ¿Qué más?",
+        "start": 3465.0,
+        "end": 3466.0
+    },
+    {
+        "text": " La variable y qué va a ser para?",
+        "start": 3467.0,
+        "end": 3469.0
+    },
+    {
+        "text": " Bien. ¿Y de qué tipo me conviene que sea ahí?",
+        "start": 3471.0,
+        "end": 3475.0
+    },
+    {
+        "text": " No.",
+        "start": 3478.0,
+        "end": 3479.0
+    },
+    {
+        "text": " Los índices van a ir necesariamente entre que y qué.",
+        "start": 3479.0,
+        "end": 3482.0
+    },
+    {
+        "text": " Entre uno y en él.",
+        "start": 3483.0,
+        "end": 3484.0
+    },
+    {
+        "text": " Entonces, vamos a aprovechar que tenemos un subrango específico",
+        "start": 3485.0,
+        "end": 3488.0
+    },
+    {
+        "text": " y declararemos la variable y de tipo rango m.",
+        "start": 3488.0,
+        "end": 3494.0
+    },
+    {
+        "text": " Al decir esto,",
+        "start": 3495.0,
+        "end": 3496.0
+    },
+    {
+        "text": " estamos diciendo que la variable y únicamente puede tomar valores entre uno y en él.",
+        "start": 3498.0,
+        "end": 3503.0
+    },
+    {
+        "text": " ¿Qué más?",
+        "start": 3505.0,
+        "end": 3506.0
+    },
+    {
+        "text": " El número que va a ingresar el usuario que va a ser de tipo",
+        "start": 3507.0,
+        "end": 3510.0
+    },
+    {
+        "text": " intallar porque la regla es enterosa.",
+        "start": 3512.0,
+        "end": 3514.0
+    },
+    {
+        "text": " Voy a aprovechar y se la voy a agregar ahí.",
+        "start": 3515.0,
+        "end": 3517.0
+    },
+    {
+        "text": " ¿Y qué más?",
+        "start": 3519.0,
+        "end": 3521.0
+    },
+    {
+        "text": " Y el arreglo.",
+        "start": 3524.0,
+        "end": 3525.0
+    },
+    {
+        "text": " ¿Qué nombre le ponemos?",
+        "start": 3527.0,
+        "end": 3528.0
+    },
+    {
+        "text": " Por ejemplo, ¿T?",
+        "start": 3530.0,
+        "end": 3531.0
+    },
+    {
+        "text": " ¿Y T va a ser de tipo?",
+        "start": 3532.0,
+        "end": 3534.0
+    },
+    {
+        "text": " Tabla.",
+        "start": 3536.0,
+        "end": 3537.0
+    },
+    {
+        "text": " El tipo de datos que está definido se llama tabla.",
+        "start": 3538.0,
+        "end": 3542.0
+    },
+    {
+        "text": " Y estamos declarando una variable T de tipo tabla.",
+        "start": 3543.0,
+        "end": 3547.0
+    },
+    {
+        "text": " El arreglo va a ser T.",
+        "start": 3548.0,
+        "end": 3550.0
+    },
+    {
+        "text": " ¿Sí? ¿Qué va a tener cuántas celdas?",
+        "start": 3551.0,
+        "end": 3554.0
+    },
+    {
+        "text": " N celdas numeradas desde uno hasta N.",
+        "start": 3557.0,
+        "end": 3559.0
+    },
+    {
+        "text": " Si N vale 10, serán 10, si N vale 50, serán 50,",
+        "start": 3560.0,
+        "end": 3563.0
+    },
+    {
+        "text": " la ventaja de suar una constante es que dentro del programa",
+        "start": 3564.0,
+        "end": 3568.0
+    },
+    {
+        "text": " yo me independizo del tamaño concreto del arreglo.",
+        "start": 3569.0,
+        "end": 3571.0
+    },
+    {
+        "text": " Si yo mañana quiero cambiar el tamaño, modifico el valor de la constante",
+        "start": 3573.0,
+        "end": 3577.0
+    },
+    {
+        "text": " y no tengo que tocar nada más dentro del código.",
+        "start": 3578.0,
+        "end": 3580.0
+    },
+    {
+        "text": " Por eso es que es una buena práctica definir el tamaño del arreglo mediante una constante.",
+        "start": 3581.0,
+        "end": 3585.0
+    },
+    {
+        "text": " ¿Ve bien?",
+        "start": 3586.0,
+        "end": 3587.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3589.0,
+        "end": 3590.0
+    },
+    {
+        "text": " Bueno, empezamos.",
+        "start": 3592.0,
+        "end": 3593.0
+    },
+    {
+        "text": " Lo primero que tenemos que hacer es cargarlo con valores ingresados por T.",
+        "start": 3594.0,
+        "end": 3599.0
+    },
+    {
+        "text": " ¿Clar? ¿Cómo hacemos eso?",
+        "start": 3600.0,
+        "end": 3602.0
+    },
+    {
+        "text": " El for.",
+        "start": 3604.0,
+        "end": 3605.0
+    },
+    {
+        "text": " ¿Qué va?",
+        "start": 3607.0,
+        "end": 3608.0
+    },
+    {
+        "text": " Coni empezando en uno y terminando en N.",
+        "start": 3609.0,
+        "end": 3613.0
+    },
+    {
+        "text": " Píjense que la I va a variar desde uno hasta N o sea dentro del rango N.",
+        "start": 3614.0,
+        "end": 3619.0
+    },
+    {
+        "text": " Si quieren, le pueden poner un cartelito previo el usuario,",
+        "start": 3624.0,
+        "end": 3626.0
+    },
+    {
+        "text": " pidiendo que por favor ingrese valores.",
+        "start": 3627.0,
+        "end": 3629.0
+    },
+    {
+        "text": " ¿O no? ¿Eso como prefieren?",
+        "start": 3630.0,
+        "end": 3631.0
+    },
+    {
+        "text": " Bueno, y ahora...",
+        "start": 3632.0,
+        "end": 3633.0
+    },
+    {
+        "text": " ...le podríamos poner el cartel antes...",
+        "start": 3637.0,
+        "end": 3639.0
+    },
+    {
+        "text": " ...o le podríamos poner un cartelito acá dentro.",
+        "start": 3640.0,
+        "end": 3642.0
+    },
+    {
+        "text": " ¿Quién tiene que ponerle un cartel?",
+        "start": 3643.0,
+        "end": 3644.0
+    },
+    {
+        "text": " El cartel tendría que decir que ingresse cuántos.",
+        "start": 3647.0,
+        "end": 3649.0
+    },
+    {
+        "text": " Bueno, pero si le pongo un cartel adentro que diga ingres en enúmeros, cuantas veces va a decir ingres en enúmeros.",
+        "start": 3650.0,
+        "end": 3656.0
+    },
+    {
+        "text": " ¿En ev veces?",
+        "start": 3657.0,
+        "end": 3658.0
+    },
+    {
+        "text": " No, cada vez que entro cuántos números.",
+        "start": 3659.0,
+        "end": 3660.0
+    },
+    {
+        "text": " En la posición, ¿de gusto?",
+        "start": 3668.0,
+        "end": 3670.0
+    },
+    {
+        "text": " ¿Por qué le pongo bien?",
+        "start": 3671.0,
+        "end": 3672.0
+    },
+    {
+        "text": " ¿Por qué le pongo el cartelito?",
+        "start": 3673.0,
+        "end": 3674.0
+    },
+    {
+        "text": " Porque voy a tener dos instrucciones, el cartelito y la lectura.",
+        "start": 3675.0,
+        "end": 3678.0
+    },
+    {
+        "text": " Bien, ¿cómo le pongo el cartelito?",
+        "start": 3680.0,
+        "end": 3681.0
+    },
+    {
+        "text": " Rhyth, Rhythlen, si quieren el entar.",
+        "start": 3683.0,
+        "end": 3686.0
+    },
+    {
+        "text": " Ingresse número o valor para el índice y acá,",
+        "start": 3689.0,
+        "end": 3699.0
+    },
+    {
+        "text": " cerramos, coma y coma, abrimos y por qué pongo esto.",
+        "start": 3700.0,
+        "end": 3709.0
+    },
+    {
+        "text": " Para que el usuario ve un cartel que diga, ingresse valor para el índice uno, dos puntos.",
+        "start": 3713.0,
+        "end": 3717.0
+    },
+    {
+        "text": " ¿Qué sepa que después de los dos puntos tiene que poner el valor?",
+        "start": 3718.0,
+        "end": 3720.0
+    },
+    {
+        "text": " Por ejemplo.",
+        "start": 3721.0,
+        "end": 3722.0
+    },
+    {
+        "text": " Bueno, y ahora para leer...",
+        "start": 3725.0,
+        "end": 3726.0
+    },
+    {
+        "text": " Y queremos leer el valor para la celda í de la reglo.",
+        "start": 3730.0,
+        "end": 3738.0
+    },
+    {
+        "text": " El arreglo, como se llama,",
+        "start": 3739.0,
+        "end": 3740.0
+    },
+    {
+        "text": " T,",
+        "start": 3741.0,
+        "end": 3742.0
+    },
+    {
+        "text": " T y entre paréntesis rectos,",
+        "start": 3743.0,
+        "end": 3746.0
+    },
+    {
+        "text": " I.",
+        "start": 3747.0,
+        "end": 3748.0
+    },
+    {
+        "text": " Esto significa, dentro de la reglo, me meto a la celda í,",
+        "start": 3750.0,
+        "end": 3756.0
+    },
+    {
+        "text": " y el valor que el usuario ingresa va a quedar cargado dentro de esa celda.",
+        "start": 3756.0,
+        "end": 3760.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3767.0,
+        "end": 3768.0
+    },
+    {
+        "text": " La primera vez carga la celda uno, la siguiente vez la celda dos, la siguiente vez la celda tres y así.",
+        "start": 3770.0,
+        "end": 3775.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3776.0,
+        "end": 3777.0
+    },
+    {
+        "text": " ¿Qué te digo en primeros dos puntos, el que tiene que ser el número de tenés?",
+        "start": 3777.0,
+        "end": 3780.0
+    },
+    {
+        "text": " Eso si quiero darle ese cartel previo, así como está que va a pasar.",
+        "start": 3782.0,
+        "end": 3786.0
+    },
+    {
+        "text": " Lo primero que va a ver el usuario que va a ser, un cartel que dice, ingresse valor para el índice uno,",
+        "start": 3787.0,
+        "end": 3792.0
+    },
+    {
+        "text": " el usuario va a ingresar y va a dar enter.",
+        "start": 3793.0,
+        "end": 3795.0
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 3797.0,
+        "end": 3798.0
+    },
+    {
+        "text": " Y va a ir hasta n.",
+        "start": 3799.0,
+        "end": 3800.0
+    },
+    {
+        "text": " El valor de n es el valor que tenga la constante ya arriba.",
+        "start": 3801.0,
+        "end": 3804.0
+    },
+    {
+        "text": " No, no, no, para la constante tú no le pedís un valor al usuario,",
+        "start": 3805.0,
+        "end": 3809.0
+    },
+    {
+        "text": " las constantes se fijan de antemano en el código del programa.",
+        "start": 3810.0,
+        "end": 3813.0
+    },
+    {
+        "text": " O sea antes de compilarlo tú le disto un valor al acortante.",
+        "start": 3814.0,
+        "end": 3816.0
+    },
+    {
+        "text": " El valor de n no es una variable,",
+        "start": 3817.0,
+        "end": 3819.0
+    },
+    {
+        "text": " n es una constante y las constantes no las pueden ingresar el usuario.",
+        "start": 3820.0,
+        "end": 3823.0
+    },
+    {
+        "text": " Con esto ya quedó inicializado el arreglo con valores cargados por teclado.",
+        "start": 3825.0,
+        "end": 3830.0
+    },
+    {
+        "text": " Ahora que viene.",
+        "start": 3831.0,
+        "end": 3832.0
+    },
+    {
+        "text": " ¿Ahora tiene que ingresar el valor?",
+        "start": 3837.0,
+        "end": 3838.0
+    },
+    {
+        "text": " Pedirle que ingrese otro valor.",
+        "start": 3839.0,
+        "end": 3840.0
+    },
+    {
+        "text": " Les ponemos a un cartelito del estilo, ingrese otro valor.",
+        "start": 3844.0,
+        "end": 3848.0
+    },
+    {
+        "text": " Ahora este valor no va a ir a parar a las celdas del arreglo.",
+        "start": 3849.0,
+        "end": 3854.0
+    },
+    {
+        "text": " ¿Va a ir a parar a dónde?",
+        "start": 3855.0,
+        "end": 3856.0
+    },
+    {
+        "text": " ¿A qué variable?",
+        "start": 3858.0,
+        "end": 3859.0
+    },
+    {
+        "text": " A la variable nú.",
+        "start": 3860.0,
+        "end": 3861.0
+    },
+    {
+        "text": " Entonces, acá que hacemos.",
+        "start": 3862.0,
+        "end": 3863.0
+    },
+    {
+        "text": " Leemos directamente nú.",
+        "start": 3865.0,
+        "end": 3868.0
+    },
+    {
+        "text": " Con este form me quedó todo el arreglo con sus celdas cargadas.",
+        "start": 3871.0,
+        "end": 3875.0
+    },
+    {
+        "text": " Ahora le estamos pidiendo que ingrese otro valor.",
+        "start": 3876.0,
+        "end": 3878.0
+    },
+    {
+        "text": " Lo que vamos a hacer después va a ser contar cuantas de las celdas del arreglo",
+        "start": 3880.0,
+        "end": 3885.0
+    },
+    {
+        "text": " son mayores que lo que me ingresó nú.",
+        "start": 3886.0,
+        "end": 3888.0
+    },
+    {
+        "text": " Está bien?",
+        "start": 3891.0,
+        "end": 3892.0
+    },
+    {
+        "text": " Bueno, y eso como le hacemos. Vengo acá.",
+        "start": 3893.0,
+        "end": 3895.0
+    },
+    {
+        "text": " No faltó inicializar el contador.",
+        "start": 3897.0,
+        "end": 3899.0
+    },
+    {
+        "text": " ¿Qué valor le damos?",
+        "start": 3900.0,
+        "end": 3901.0
+    },
+    {
+        "text": " Valón inicial cero.",
+        "start": 3903.0,
+        "end": 3905.0
+    },
+    {
+        "text": " Y ahora que viene.",
+        "start": 3907.0,
+        "end": 3908.0
+    },
+    {
+        "text": " Otra vez for.",
+        "start": 3910.0,
+        "end": 3911.0
+    },
+    {
+        "text": " Y de nuevo, este for de dónde?",
+        "start": 3912.0,
+        "end": 3913.0
+    },
+    {
+        "text": " Nuevamente de uno hasta n. Cuidado con algo.",
+        "start": 3915.0,
+        "end": 3919.0
+    },
+    {
+        "text": " Nuevamente desde uno hasta n.",
+        "start": 3920.0,
+        "end": 3923.0
+    },
+    {
+        "text": " Estuve viendo por ahí que aquí en vez de poner uno, ponía nt de uno.",
+        "start": 3924.0,
+        "end": 3929.0
+    },
+    {
+        "text": " Y aquí en vez de poner n, ponía nt de n. No.",
+        "start": 3930.0,
+        "end": 3934.0
+    },
+    {
+        "text": " Porque si yo pongo n, estoy queriendo hacer que cosa.",
+        "start": 3935.0,
+        "end": 3939.0
+    },
+    {
+        "text": " Me termed dentro de la celda y eso no tiene mi pieza en cabeza.",
+        "start": 3940.0,
+        "end": 3943.0
+    },
+    {
+        "text": " Lo que yo establezco en el for que es desde que indice y hasta que indice voy.",
+        "start": 3944.0,
+        "end": 3949.0
+    },
+    {
+        "text": " Y la acceso a la celda donde lo voy a hacer, lo voy a hacer dentro del for.",
+        "start": 3950.0,
+        "end": 3955.0
+    },
+    {
+        "text": " No en los bordes del for.",
+        "start": 3956.0,
+        "end": 3958.0
+    },
+    {
+        "text": " Ojo con eso, es un arreglo muy común, confundir el índice con el contenido de las celdas.",
+        "start": 3959.0,
+        "end": 3964.0
+    },
+    {
+        "text": " Bueno, cada vez que entro que queremos hacer ahora.",
+        "start": 3967.0,
+        "end": 3970.0
+    },
+    {
+        "text": " Comparar qué cosa.",
+        "start": 3972.0,
+        "end": 3974.0
+    },
+    {
+        "text": " Núm con el valor que está en la celda.",
+        "start": 3976.0,
+        "end": 3978.0
+    },
+    {
+        "text": " Y ese se lís que me habían dicho más temprano.",
+        "start": 3978.0,
+        "end": 3981.0
+    },
+    {
+        "text": " ¿Qué ponemos en dos es?",
+        "start": 3982.0,
+        "end": 3984.0
+    },
+    {
+        "text": " ¿Y precizo vinenda acá?",
+        "start": 3985.0,
+        "end": 3987.0
+    },
+    {
+        "text": " Si o no.",
+        "start": 3989.0,
+        "end": 3990.0
+    },
+    {
+        "text": " Y ese contador donde va a ir.",
+        "start": 3993.0,
+        "end": 3995.0
+    },
+    {
+        "text": " ¿Encontadores del hígico?",
+        "start": 3996.0,
+        "end": 3998.0
+    },
+    {
+        "text": " Esa es mi pregunta. ¿Nes sito se vin arriba del hígico?",
+        "start": 4003.0,
+        "end": 4006.0
+    },
+    {
+        "text": " Yo digo que no, porque no.",
+        "start": 4009.0,
+        "end": 4011.0
+    },
+    {
+        "text": " Porque todo el hígico es una instrucción compuesta.",
+        "start": 4012.0,
+        "end": 4016.0
+    },
+    {
+        "text": " Recuerden, si tengo una sola instrucción no precisa villinar.",
+        "start": 4018.0,
+        "end": 4022.0
+    },
+    {
+        "text": " Todo el hígico es considerado, de hecho, es una sola instrucción.",
+        "start": 4023.0,
+        "end": 4028.0
+    },
+    {
+        "text": " Lo que pasa es que es una instrucción compuesta.",
+        "start": 4029.0,
+        "end": 4031.0
+    },
+    {
+        "text": " Anteladuda está mal ponerle villinén, mal no está y te quedas tranquilo.",
+        "start": 4032.0,
+        "end": 4036.0
+    },
+    {
+        "text": " De que efectivamente definiste voz, que es lo que querés que quede dentro del alcance del for.",
+        "start": 4037.0,
+        "end": 4041.0
+    },
+    {
+        "text": " O sea, que ante el aduas se lo puedes poner y error no es.",
+        "start": 4042.0,
+        "end": 4044.0
+    },
+    {
+        "text": " Es innecesario, pero no es un error.",
+        "start": 4045.0,
+        "end": 4047.0
+    },
+    {
+        "text": " ¿Qué pregunto acá?",
+        "start": 4049.0,
+        "end": 4050.0
+    },
+    {
+        "text": " Y TDI es decir, si lo que está almacenado en la celda y dete.",
+        "start": 4053.0,
+        "end": 4061.0
+    },
+    {
+        "text": " Es mayor que quieren.",
+        "start": 4064.0,
+        "end": 4066.0
+    },
+    {
+        "text": " Que NUM es decir, si lo que está guardado dentro de la celda y.",
+        "start": 4067.0,
+        "end": 4071.0
+    },
+    {
+        "text": " Es más grande que lo que está en NUM.",
+        "start": 4072.0,
+        "end": 4075.0
+    },
+    {
+        "text": " Entonces, ¿qué hay que hacer?",
+        "start": 4076.0,
+        "end": 4078.0
+    },
+    {
+        "text": " ¿Qué hay que hacer?",
+        "start": 4078.0,
+        "end": 4079.0
+    },
+    {
+        "text": " ¿Contar?",
+        "start": 4080.0,
+        "end": 4081.0
+    },
+    {
+        "text": " ¿A contador?",
+        "start": 4083.0,
+        "end": 4084.0
+    },
+    {
+        "text": " ¿Le asignamos que...",
+        "start": 4085.0,
+        "end": 4087.0
+    },
+    {
+        "text": " Nuevamente nuestra vieja y querida instrucción de acumulación?",
+        "start": 4090.0,
+        "end": 4094.0
+    },
+    {
+        "text": " ¿Sabían?",
+        "start": 4096.0,
+        "end": 4097.0
+    },
+    {
+        "text": " Va a entrar acá únicamente si lo que está en la celda efectivamente es mayor en NUM.",
+        "start": 4098.0,
+        "end": 4103.0
+    },
+    {
+        "text": " Y si no, pasa la próxima celda.",
+        "start": 4104.0,
+        "end": 4106.0
+    },
+    {
+        "text": " Entonces, todo el IF con la instrucción de acumulación es una sola instrucción alcanzada por el for.",
+        "start": 4107.0,
+        "end": 4114.0
+    },
+    {
+        "text": " Finalizado el for que falta.",
+        "start": 4117.0,
+        "end": 4119.0
+    },
+    {
+        "text": " Escribir al resultado.",
+        "start": 4121.0,
+        "end": 4122.0
+    },
+    {
+        "text": " Y bueno, le podemos poner algo del estilo.",
+        "start": 4125.0,
+        "end": 4127.0
+    },
+    {
+        "text": " Hay que cosa.",
+        "start": 4128.0,
+        "end": 4129.0
+    },
+    {
+        "text": " Tengo que cerrar acá, coma.",
+        "start": 4131.0,
+        "end": 4133.0
+    },
+    {
+        "text": " Se llama contador.",
+        "start": 4134.0,
+        "end": 4135.0
+    },
+    {
+        "text": " Entonces acá me va a mostrar el contenido de la variable contador, coma.",
+        "start": 4137.0,
+        "end": 4142.0
+    },
+    {
+        "text": " Números.",
+        "start": 4143.0,
+        "end": 4144.0
+    },
+    {
+        "text": " Mayores.",
+        "start": 4147.0,
+        "end": 4148.0
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 4150.0,
+        "end": 4151.0
+    },
+    {
+        "text": " Me estoy porca, ¿ver?",
+        "start": 4152.0,
+        "end": 4153.0
+    },
+    {
+        "text": " ¿Cierra acá?",
+        "start": 4154.0,
+        "end": 4155.0
+    },
+    {
+        "text": " NUM.",
+        "start": 4156.0,
+        "end": 4157.0
+    },
+    {
+        "text": " ¿Cierra?",
+        "start": 4158.0,
+        "end": 4159.0
+    },
+    {
+        "text": " Y después vendría el end de todo el programa.",
+        "start": 4160.0,
+        "end": 4161.0
+    },
+    {
+        "text": " ¿Qué?",
+        "start": 4164.0,
+        "end": 4165.0
+    },
+    {
+        "text": " ¿Lo que pasa es que el segundo for le puse vin?",
+        "start": 4169.0,
+        "end": 4172.0
+    },
+    {
+        "text": " Exactamente.",
+        "start": 4175.0,
+        "end": 4176.0
+    },
+    {
+        "text": " En va únicamente si hay un vin antes.",
+        "start": 4176.0,
+        "end": 4178.0
+    },
+    {
+        "text": " Si yo hubiera puesto vin acá, tengo que poner end acá.",
+        "start": 4179.0,
+        "end": 4182.0
+    },
+    {
+        "text": " En este caso, me lo pude saltear porque todo el IF es una sola instrucción.",
+        "start": 4183.0,
+        "end": 4187.0
+    },
+    {
+        "text": " Acá si o si fueron necesarias las dos, ¿por qué?",
+        "start": 4188.0,
+        "end": 4191.0
+    },
+    {
+        "text": " Porque específicamente yo tenía dos instrucciones que quería que quedas en abarcadas por el for.",
+        "start": 4193.0,
+        "end": 4198.0
+    },
+    {
+        "text": " El programa entiende que todo esto es una sola exactamente.",
+        "start": 4201.0,
+        "end": 4205.0
+    },
+    {
+        "text": " No, no, este Rhype quedó seguro fuera del for.",
+        "start": 4208.0,
+        "end": 4211.0
+    },
+    {
+        "text": " Si tú no le pones vin end,",
+        "start": 4213.0,
+        "end": 4215.0
+    },
+    {
+        "text": " el for por defecto toma una sola instrucción.",
+        "start": 4215.0,
+        "end": 4218.0
+    },
+    {
+        "text": " En este caso justo hay un IF.",
+        "start": 4219.0,
+        "end": 4221.0
+    },
+    {
+        "text": " Y el IF es una sola instrucción que es una instrucción compuesta.",
+        "start": 4222.0,
+        "end": 4224.0
+    },
+    {
+        "text": " Entonces, este for te tomó todo esto como lo único que está haciendo al cansado por el for.",
+        "start": 4225.0,
+        "end": 4230.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4232.0,
+        "end": 4233.0
+    },
+    {
+        "text": " Si se instuvieron él, también sería una sola instrucción.",
+        "start": 4234.0,
+        "end": 4237.0
+    },
+    {
+        "text": " Exactamente.",
+        "start": 4238.0,
+        "end": 4239.0
+    },
+    {
+        "text": " Ahora sí, después del IF, además de esto, vos quisieras hacer otra cosa más que también querés que quede al cansado.",
+        "start": 4240.0,
+        "end": 4244.0
+    },
+    {
+        "text": " Ahora por el for, precisar viler.",
+        "start": 4245.0,
+        "end": 4246.0
+    },
+    {
+        "text": " ¿El resto?",
+        "start": 4249.0,
+        "end": 4250.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4253.0,
+        "end": 4254.0
+    },
+    {
+        "text": " Bueno, acá tenemos un ejemplo bien representativo de lo que es una recorrida completa de la regla.",
+        "start": 4255.0,
+        "end": 4260.0
+    },
+    {
+        "text": " Concretamente hicimos dos recorridas completas.",
+        "start": 4261.0,
+        "end": 4263.0
+    },
+    {
+        "text": " Una para cargarlo y otra para ir contando cuantos elementos mayores que no habían.",
+        "start": 4264.0,
+        "end": 4272.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4273.0,
+        "end": 4274.0
+    },
+    {
+        "text": " ¿Más preguntas de este ejercicio?",
+        "start": 4275.0,
+        "end": 4276.0
+    },
+    {
+        "text": " Bien, vamos a retomar entonces el teobrico.",
+        "start": 4278.0,
+        "end": 4281.0
+    },
+    {
+        "text": " Recorridas de arreglos.",
+        "start": 4288.0,
+        "end": 4290.0
+    },
+    {
+        "text": " La estructura de control for es la adecuada para recorrer completamente una regla.",
+        "start": 4292.0,
+        "end": 4299.0
+    },
+    {
+        "text": " Si yo necesito ir desde la primera celda hasta la última celda, lo hago con forma.",
+        "start": 4300.0,
+        "end": 4308.0
+    },
+    {
+        "text": " ¿Por qué no hay forma de que nunca sepa cuántas celda son? ¿Por qué?",
+        "start": 4310.0,
+        "end": 4313.0
+    },
+    {
+        "text": " Porque en la propia definición de la regla ya está dicho cuántas celda son.",
+        "start": 4314.0,
+        "end": 4317.0
+    },
+    {
+        "text": " Es más, está dicho desde dónde está donde van.",
+        "start": 4318.0,
+        "end": 4319.0
+    },
+    {
+        "text": " Entonces, siempre que sea necesario recorrer una regla en su totalidad, ya sea para cargarlo,",
+        "start": 4320.0,
+        "end": 4327.0
+    },
+    {
+        "text": " ya sea para inicializarlo conceros, ya sea para contar cuantos valores cumplen para lo que sea, lo hago con forma.",
+        "start": 4327.0,
+        "end": 4335.0
+    },
+    {
+        "text": " ¿Qué do claro eso?",
+        "start": 4336.0,
+        "end": 4337.0
+    },
+    {
+        "text": " Y acá tenemos más ejemplos de recorridas completas del arreglo.",
+        "start": 4339.0,
+        "end": 4343.0
+    },
+    {
+        "text": " Por ejemplo, imagínense que queremos hallar la suma de todos los elementos.",
+        "start": 4344.0,
+        "end": 4349.0
+    },
+    {
+        "text": " Podríamos querer sumar todos los valores que están almacenados en el arreglo.",
+        "start": 4350.0,
+        "end": 4355.0
+    },
+    {
+        "text": " Bueno, hacemos un for, previamente tenemos una variable suma, que la vamos a inicializar en cero, como teníamos hacia el contador,",
+        "start": 4357.0,
+        "end": 4365.0
+    },
+    {
+        "text": " y después recorremos desde la celda 1 hasta la celda M, vamos a suponer que M es la constante que me define el tamaño,",
+        "start": 4366.0,
+        "end": 4374.0
+    },
+    {
+        "text": " y nuevamente que aparece acá dentro.",
+        "start": 4374.0,
+        "end": 4377.0
+    },
+    {
+        "text": " Una instrucción de acumulación, toma el valor de suma, le sumo lo que está guardado en la celda I y el resultado lo guardo en suma.",
+        "start": 4379.0,
+        "end": 4388.0
+    },
+    {
+        "text": " O sea, en que ya estábamos contando por eso le sumamos uno, acá estamos sumando el contenido de la celda, por eso es que acá puse ADI.",
+        "start": 4390.0,
+        "end": 4399.0
+    },
+    {
+        "text": " Entonces, el resultado de ejecutar ese for es que en la variable suma va a quedar cargado la suma de todos los valores de la regla.",
+        "start": 4400.0,
+        "end": 4410.0
+    },
+    {
+        "text": " Así tenemos un ejemplo de un problema que requiere una recorrida completa de la regla.",
+        "start": 4411.0,
+        "end": 4416.0
+    },
+    {
+        "text": " Otro, queremos hallar el valor máximo de una regla.",
+        "start": 4420.0,
+        "end": 4424.0
+    },
+    {
+        "text": " Y vamos a dibujarnos un arrelito ahí para ejecutarlo.",
+        "start": 4425.0,
+        "end": 4429.0
+    },
+    {
+        "text": " Vamos a suponer que M vale 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, bien.",
+        "start": 4430.0,
+        "end": 4450.0
+    },
+    {
+        "text": " Entonces, vamos a suponer que M vale 6, todo el arreglo como se llama, todo el arreglo se llama A, y los índices van desde 1 hasta 6.",
+        "start": 4451.0,
+        "end": 4469.0
+    },
+    {
+        "text": " Está bien? Vamos a imaginarnos que tenemos cargados los siguientes valores.",
+        "start": 4470.0,
+        "end": 4476.0
+    },
+    {
+        "text": " Entonces, nos proponemos hallar el valor máximo del arreglo. A ojo, ya nos vamos a cuenta cuáles.",
+        "start": 4477.0,
+        "end": 4497.0
+    },
+    {
+        "text": " 37, vamos a ver si esto efectivamente encuentra el 37.",
+        "start": 4498.0,
+        "end": 4503.0
+    },
+    {
+        "text": " Pero obsaden que nuevamente es un ejemplo de un problema que requiere recorrer el arreglo en su totalidad, porque yo no sé si más adelante podría venir otro más grande.",
+        "start": 4504.0,
+        "end": 4515.0
+    },
+    {
+        "text": " Hasta que yo no haya barrido la totalidad del arreglo, no voy a estar seguro de si encontré el más grande.",
+        "start": 4515.0,
+        "end": 4521.0
+    },
+    {
+        "text": " Utiliza una variable auxiliar llamada max, que la vamos a dibujar por acá.",
+        "start": 4522.0,
+        "end": 4527.0
+    },
+    {
+        "text": " Acá está la variable max.",
+        "start": 4528.0,
+        "end": 4531.0
+    },
+    {
+        "text": " Con qué valor se inicializa la variable max, con lo que está guardado en la celdab 1, es decir, con 12.",
+        "start": 4533.0,
+        "end": 4543.0
+    },
+    {
+        "text": " Este valor es el valor a partir del cual vamos a empezar a comparar, siempre que vos quieras buscar un máximo,",
+        "start": 4544.0,
+        "end": 4552.0
+    },
+    {
+        "text": " tomase el primer valor de la secuencia, como bueno, el máximo hasta el momento es este.",
+        "start": 4552.0,
+        "end": 4558.0
+    },
+    {
+        "text": " Después vamos a ir avanzando y cada vez que encontremos uno más grande que hacemos, lo reemplazamos.",
+        "start": 4559.0,
+        "end": 4565.0
+    },
+    {
+        "text": " Por eso es que el for arranca directamente en la celdados porque el 12 ya lo tengo, o sea que el for va a comenzar acá, en la 2.",
+        "start": 4566.0,
+        "end": 4573.0
+    },
+    {
+        "text": " Entonces, entramos al for con i valiendo 2, a de i quiere decir a en la posición 2, que valor es 8.",
+        "start": 4576.0,
+        "end": 4585.0
+    },
+    {
+        "text": " 8 es mayor que max, no porque acá hay un 8 y max que tiene, entonces este no me sirve, no es más grande que max.",
+        "start": 4586.0,
+        "end": 4596.0
+    },
+    {
+        "text": " Ago la sección que está dentro del i, volvemos al for con i valiendo 3, ahora ahí vale 3.",
+        "start": 4597.0,
+        "end": 4605.0
+    },
+    {
+        "text": " Vamos alif, a de 3 es decir, 21, es mayor a max, si acabo de encontrar uno que es más grande que max, entonces que hago, me lo guardo en max, o sea que max deja de valer 12 y pasa a valer 21.",
+        "start": 4606.0,
+        "end": 4629.0
+    },
+    {
+        "text": " O sea que hasta el momento el más grande es el 21.",
+        "start": 4630.0,
+        "end": 4636.0
+    },
+    {
+        "text": " Volvemos al for con i valiendo 4, estamos acá, a de i, o sea hay en la posición 4 es decir, 15 es mayor a max, no, max vale 21, acá tenemos un 15, este no me sirve.",
+        "start": 4639.0,
+        "end": 4656.0
+    },
+    {
+        "text": " Volve al for con i valiendo 5, vamos alif, a de i es decir, a en la posición 5 y allí que hay, 37 es mayor a max, si, entonces que hago, me desago del 21 y me quedo con el 37.",
+        "start": 4657.0,
+        "end": 4676.0
+    },
+    {
+        "text": " Nos queda una más, volvemos al for con i valiendo 6, que es m, a de 6, 26, preguntamos en el i, es mayor a max, no, que hacemos, nada dejamos max como estamos y esta fue la última entrada que hicimos al for.",
+        "start": 4677.0,
+        "end": 4696.0
+    },
+    {
+        "text": " Al finalizar este código max quedó cargado con el máximo valor de todo el arreglo, se entendió cómo funciona eso.",
+        "start": 4697.0,
+        "end": 4708.0
+    },
+    {
+        "text": " Bueno, puedo querer recorrer para muchas razones, allá recorrimos primero para cargar por teclado, luego recorrimos para contar cuántos son mayores que han determinado el número, acá recorrimos para calcular la suma de todos los valores,",
+        "start": 4709.0,
+        "end": 4725.0
+    },
+    {
+        "text": " acá recorrimos para allá el máximo, bueno, también puedo querer recorrer para que para ir mostrando por pantalla, lo que está guardado en cada una de las celdas, con este for estamos desplegando un valor por línea, porque estamos usando raíz, y con este otro for que estamos haciendo.",
+        "start": 4725.0,
+        "end": 4747.0
+    },
+    {
+        "text": " Los estamos desplegando, todos en la misma línea separados con con más.",
+        "start": 4748.0,
+        "end": 4754.0
+    },
+    {
+        "text": " Entonces, la moralija de estos chiquilines es que no importa para qué vos quieras hacer una recorrida completa, vos puedes tener montones de razones por las cuales necesitar recorrer completamente el arreglo, porque lo quieres cargar, por lo que lo querés inicializar todo conceros, porque quieres contar cuántos son mayores a un valor dado, porque quieres sumar, porque quieres allá un máximo, y no,",
+        "start": 4756.0,
+        "end": 4776.0
+    },
+    {
+        "text": " lo que sea, ahora si tu problema necesariamente requiere una recorrida completa del arreglo, lo vamos a hacer con un for que va desde la primera cenda hasta la última. ¿Se entendió?",
+        "start": 4777.0,
+        "end": 4790.0
+    },
+    {
+        "text": " Es obligatorio siempre recorrer en forma ascendente los índices, podría haber algún problema en el cual a mí me sirviera empezar por la última e ir bajando?",
+        "start": 4791.0,
+        "end": 4802.0
+    },
+    {
+        "text": " Sí, en cualquier caso sigue siendo una recorrida completa, ahí en vez de hacerlo con tu lo haríamos con que, con down.",
+        "start": 4803.0,
+        "end": 4812.0
+    },
+    {
+        "text": " Entonces, según el problema uno puede decidir si lo recorren en forma ascendente al rango de índices o lo recorren en forma descendente, ahora si la propia naturaleza del problema exige recorrarlo en su totalidad, la estructura para hacerlo es for.",
+        "start": 4813.0,
+        "end": 4830.0
+    },
+    {
+        "text": " Quedó claro eso.",
+        "start": 4831.0,
+        "end": 4832.0
+    },
+    {
+        "text": " Bueno, la clase que viene, el viernes, vamos a discutir qué pasa cuando no queremos recorrer en la reglo en su totalidad.",
+        "start": 4833.0,
+        "end": 4840.0
+    },
+    {
+        "text": " Ahí vamos a utilizar repetición con disión. ¿Sabía? Bueno, vayan haciendo en el práctico más o menos hasta el ejercicio 4 o 5, ya se puede hacer, vayan trabajando en eso, en la clase del viernes vamos a ver lo que nos queda de reglos y con eso se va a aportar minato del práctico.",
+        "start": 4842.0,
+        "end": 4861.0
+    },
+    {
+        "text": " Ah, igual pueden enleciéndol libro y seguir avanzando, eso siempre. Hasta luego.",
+        "start": 4862.0,
+        "end": 4866.0
+    }
+]

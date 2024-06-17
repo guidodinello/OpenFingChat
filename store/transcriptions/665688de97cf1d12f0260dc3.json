@@ -1,0 +1,3442 @@
+[
+    {
+        "text": " Bueno buenas noches, si alguno no vino a la clase del viernes mi nombre",
+        "start": 0.0,
+        "end": 22.56
+    },
+    {
+        "text": " Federico y soy que estar a cargo de este grupo del programación. Tenemos a los",
+        "start": 22.56,
+        "end": 28.12
+    },
+    {
+        "text": " compañeros de Upand Fin que van a estar filmando el curso este semestre así que",
+        "start": 28.12,
+        "end": 32.96
+    },
+    {
+        "text": " son rían para la cámara igual la cámara me fue caminoso de que definitivo ustedes tranquilos.",
+        "start": 32.96,
+        "end": 37.72
+    },
+    {
+        "text": " Buen esta semana vamos a trabajar en la parte de componentes básicos que es algo así como el ABC",
+        "start": 38.92,
+        "end": 48.040000000000006
+    },
+    {
+        "text": " los primeros pasos necesarios para poder empezar a escribir programas. Hoy vamos a trabajar",
+        "start": 48.040000000000006,
+        "end": 55.08
+    },
+    {
+        "text": " cuestiones de cómo se estructura un programa en Pascal vamos a ver las cuestiones más básicas",
+        "start": 55.08,
+        "end": 60.68
+    },
+    {
+        "text": " de syntaxis para empezar a dar nuestros primeros pasos y la clase que viene vamos a trabajar un",
+        "start": 60.68,
+        "end": 67.08
+    },
+    {
+        "text": " poquito la parte de entrada y salida o sea la parte en la cual el usuario le ingresa datos",
+        "start": 67.08,
+        "end": 72.8
+    },
+    {
+        "text": " al programa y la parte en la cual el programa le despliega resultados al usuario.",
+        "start": 72.8,
+        "end": 78.12
+    },
+    {
+        "text": " Ya están publicados los materiales de esta semana vamos a trabajar en los prácticos 1 y 2.",
+        "start": 78.12,
+        "end": 85.48
+    },
+    {
+        "text": " No sé si ya han estado mirando los prácticos van a ver que los prácticos tienen muchísimos",
+        "start": 85.48,
+        "end": 92.52000000000001
+    },
+    {
+        "text": " ejercicios un montón. El promedio es entre 1 y 2 prácticos por semana dependiendo del tema.",
+        "start": 92.52000000000001,
+        "end": 101.12
+    },
+    {
+        "text": " Como yo les había mencionado nosotros en clase vamos a trabajar con unos poquitos ejercicios pero",
+        "start": 102.12,
+        "end": 108.2
+    },
+    {
+        "text": " estaría de ustedes hacer mucho práctico fuera de clase. Recordamos lo que dijimos la vez pasada a",
+        "start": 108.2,
+        "end": 115.4
+    },
+    {
+        "text": " programar se aprende haciendo. Bueno vamos a dedicarnos ahora un poquito a la parte de componentes básicos",
+        "start": 115.4,
+        "end": 124.56
+    },
+    {
+        "text": " y vamos a empezar por lo siguiente. Lo que tenemos acá es nuestra visión de lo que es un computador.",
+        "start": 124.56,
+        "end": 136.84
+    },
+    {
+        "text": " A esta altura de decir computador parece una palabra poco menos que precolombina pero la",
+        "start": 136.84,
+        "end": 143.6
+    },
+    {
+        "text": " inocion sigue siendo acertada. Es una máquina que computa hace computos, hace cálculos.",
+        "start": 143.6,
+        "end": 151.07999999999998
+    },
+    {
+        "text": " Recibe datos de la entrada el computador procesa esos datos. Ahí es donde nosotros vamos a",
+        "start": 153.07999999999998,
+        "end": 162.64
+    },
+    {
+        "text": " meterla cuchara porque vamos a hacernos otros los que escribamos los programas que procesan esos datos",
+        "start": 162.64,
+        "end": 168.6
+    },
+    {
+        "text": " y escupen producen expulsan un resultado, una salida. O sea que en nivel conceptual eso es lo que hace",
+        "start": 168.6,
+        "end": 179.51999999999998
+    },
+    {
+        "text": " un computador. Vamos a ver que existen distintos dispositivos de entrada posibles. No me",
+        "start": 179.51999999999998,
+        "end": 190.28
+    },
+    {
+        "text": " tiene dispositivos de entrada. El teclado, el mouse, el micrófono, la pantalla ahora que está",
+        "start": 190.28,
+        "end": 199.76
+    },
+    {
+        "text": " de moda todo el otáctil, verdad, tenemos una batería de dispositivos disponibles para ingresar",
+        "start": 199.76,
+        "end": 207.28
+    },
+    {
+        "text": " datos de entrada a un computador. Nosotros dijimos que en programación uno nos vamos a concentrar",
+        "start": 207.28,
+        "end": 213.28
+    },
+    {
+        "text": " únicamente en cuál de ellos el teclado, el único dispositivo por el cual en programación uno",
+        "start": 213.28,
+        "end": 220.74
+    },
+    {
+        "text": " ingresamos datos de entrada es el teclado. ¿Tabien? Bueno nuestro computador va a procesar esos",
+        "start": 220.74,
+        "end": 228.52
+    },
+    {
+        "text": " datos de entrada y va a producir una salida a través de algún dispositivo de salida, dispositivos de",
+        "start": 228.52,
+        "end": 236.16
+    },
+    {
+        "text": " salida que conozca. La impresora, la pantalla, como los parlantes, ¿Tabien? De toda esa batería de",
+        "start": 236.16,
+        "end": 248.32
+    },
+    {
+        "text": " dispositivos de salida nosotros nos concentramos en la pantalla pero hablando de pantalla en el sentido",
+        "start": 248.32,
+        "end": 255.24
+    },
+    {
+        "text": " de que lo que desplegamos es texto, nada todavía de cuestiones visuales. Pero lo que ustedes les",
+        "start": 255.24,
+        "end": 263.32
+    },
+    {
+        "text": " tiene que quedar chiquilinas y chiquilinas es la noción de que a través de algún dispositivo de",
+        "start": 263.32,
+        "end": 269.44
+    },
+    {
+        "text": " entrada yo le ingreso datos de entrada al programa, el programa los procesa y produce una salida que se va a",
+        "start": 269.44,
+        "end": 275.92
+    },
+    {
+        "text": " emitir en algún dispositivo. En este curso elegimos el teclado y elegimos la pantalla, pero esas nociones a medida que",
+        "start": 275.92,
+        "end": 285.15999999999997
+    },
+    {
+        "text": " ustedes avancen en la carrera se pueden generalizar a otros dispositivos de entrada y salida. Hasta acá",
+        "start": 285.16,
+        "end": 292.24
+    },
+    {
+        "text": " bien voy a ir a venir por qué con esto de que me dejaron el teclado acá. Bueno, allí tenemos",
+        "start": 293.64000000000004,
+        "end": 300.64000000000004
+    },
+    {
+        "text": " diferentes dispositivos de entrada y salida que ya estuvimos nombrando y el computador también",
+        "start": 300.64000000000004,
+        "end": 306.76000000000005
+    },
+    {
+        "text": " está integrado por estas dos cosas, la memoria y la unidad central de proceso. Vamos a ver que hay",
+        "start": 306.76000000000005,
+        "end": 314.88
+    },
+    {
+        "text": " dos tipos de memoria, están las memorias internas, están las memorias externas, hay efectos de",
+        "start": 314.88,
+        "end": 320.24
+    },
+    {
+        "text": " programación uno, esa distinción no nos importa demasiado. Simplemente vamos a tener una memoria y la",
+        "start": 320.24,
+        "end": 327.2
+    },
+    {
+        "text": " memoria va a ser el lugar en el cual van a vivir las variables de nuestro programa, que era una",
+        "start": 327.2,
+        "end": 332.92
+    },
+    {
+        "text": " variable medio que lo dijimos por arriba la vez pasada. Un espacio reservado de memoria cuya",
+        "start": 332.92,
+        "end": 339.6
+    },
+    {
+        "text": " función es cuál. Guardar cuánta información, cuántos valores podíamos guardar en una variable.",
+        "start": 339.6,
+        "end": 348.72
+    },
+    {
+        "text": " Digimos que uno solo, más adelante vamos a ver unas variables especiales que permiten almacenar",
+        "start": 348.72,
+        "end": 354.8
+    },
+    {
+        "text": " varios valores juntos, pero de momento cada variable soporta un único valor. Vamos a volver",
+        "start": 354.8,
+        "end": 361.88
+    },
+    {
+        "text": " hoy mismo a la noción de variable. Bueno, las variables que manejan nuestro programa van a vivir",
+        "start": 361.88,
+        "end": 368.24
+    },
+    {
+        "text": " en la memoria y quien se encarga de ejecutar las instrucciones de nuestro programa va a ser la",
+        "start": 368.24,
+        "end": 377.28000000000003
+    },
+    {
+        "text": " usp o como está popularizado en Uruguay la CPU. Estas son las nociones de computador que tenemos que",
+        "start": 377.28000000000003,
+        "end": 385.92
+    },
+    {
+        "text": " tener claras. Bien, que más? Bueno, acá explica un poquito lo que sería los componentes que",
+        "start": 385.92,
+        "end": 399.04
+    },
+    {
+        "text": " integran la CPU, tiene una parte que se llama unidad de control, que es la que se encarga de ir",
+        "start": 399.04,
+        "end": 404.40000000000003
+    },
+    {
+        "text": " cargando una a una a las instrucciones del programa y ejecutándolas. Vamos a ver que dentro de esas",
+        "start": 404.40000000000003,
+        "end": 412.12
+    },
+    {
+        "text": " instrucciones nosotros vamos a realizar operaciones aritméticas y lógicas. La parte que realiza el",
+        "start": 412.12,
+        "end": 417.68
+    },
+    {
+        "text": " cálculo de esas operaciones es otra parte de la CPU que es la unidad aritmética y lógica que",
+        "start": 417.68,
+        "end": 424.04
+    },
+    {
+        "text": " no nos interesa mucho profundizar en estos temas. De hecho, ustedes van a tener cursos de arquitectura",
+        "start": 424.04,
+        "end": 430.16
+    },
+    {
+        "text": " de computadores donde se van a entretener de lo lindo con estas cuestiones. Simplemente sabr que hay",
+        "start": 430.16,
+        "end": 435.28000000000003
+    },
+    {
+        "text": " una CPU que la CPU tiene diferentes partes y que es la responsable de ir ejecutando las",
+        "start": 435.28000000000003,
+        "end": 441.52
+    },
+    {
+        "text": " diferentes instrucciones, las diferentes operaciones de los programas que nosotros escribamos. Lo",
+        "start": 441.52,
+        "end": 447.56
+    },
+    {
+        "text": " que nos interesa en programación 1 es escribir los programas. Luego, aparece un elemento sumamente",
+        "start": 447.56,
+        "end": 460.03999999999996
+    },
+    {
+        "text": " importante, el compilador. El compilador va a ser nuestro traductor entre el programa que escribimos",
+        "start": 460.03999999999996,
+        "end": 470.84
+    },
+    {
+        "text": " nosotros y lo que el computador es capaz de ejecutar. Lo que vamos a llamar el programa ejecutar.",
+        "start": 470.84,
+        "end": 480.08
+    },
+    {
+        "text": " Nosotros en la clase pasada estuvimos hablando de algoritmos y estuvimos hablando de programas,",
+        "start": 480.08,
+        "end": 487.03999999999996
+    },
+    {
+        "text": " que era un algoritmo. Una serie de pasos para resolver un problema.",
+        "start": 487.03999999999996,
+        "end": 494.88
+    },
+    {
+        "text": " Que exactamente es una serie de pasos que en un tiempo finito me resuelven el problema. Bien,",
+        "start": 495.84,
+        "end": 503.64
+    },
+    {
+        "text": " si yo a ese algoritmo lo escribo utilizando un lenguaje de programación, entonces ese algoritmo",
+        "start": 503.64,
+        "end": 511.12
+    },
+    {
+        "text": " pasa a llamarse programa y el programa se escribe usando lo que se conoce como un lenguaje de",
+        "start": 511.12,
+        "end": 518.32
+    },
+    {
+        "text": " programación de alto nivel. Pascal, así como otros lenguajes de programación, se dice que es",
+        "start": 518.32,
+        "end": 524.9200000000001
+    },
+    {
+        "text": " de alto nivel. ¿Qué significa que sea de alto nivel? Que las instrucciones que nosotros escribimos,",
+        "start": 524.9200000000001,
+        "end": 532.44
+    },
+    {
+        "text": " se parecen más a la manera en la cual las personas piensan. Pero el computador no piensan",
+        "start": 533.4000000000001,
+        "end": 543.32
+    },
+    {
+        "text": " entre comillas en esos términos. El computador piensa en términos de lo que son instrucciones de",
+        "start": 543.32,
+        "end": 548.96
+    },
+    {
+        "text": " bajo nivel, en términos de 0 y 1 codivobinario. Entonces es necesario traducir el texto del programa",
+        "start": 548.96,
+        "end": 559.6400000000001
+    },
+    {
+        "text": " que nosotros escribimos en pascal en un programa ejecutable que es el codivobinario. Y de eso se encarga",
+        "start": 559.6400000000001,
+        "end": 568.32
+    },
+    {
+        "text": " el computador. Más adelante en la carrera van a ver que hay lenguajes compilados, hay lenguajes",
+        "start": 568.32,
+        "end": 575.44
+    },
+    {
+        "text": " interpretados que no es exactamente lo mismo, hay algunos lenguajes que son una mezcla entre",
+        "start": 575.44,
+        "end": 580.6400000000001
+    },
+    {
+        "text": " compilado interpretado, no nos interesa demasiado profundizar en eso todavía. Lo que nos interesa",
+        "start": 580.6400000000001,
+        "end": 585.96
+    },
+    {
+        "text": " ahora es que el lenguaje que vamos a usar nosotros es un lenguaje que se compila. El compilador es",
+        "start": 585.96,
+        "end": 592.72
+    },
+    {
+        "text": " otro programa bastante complejo de elaborar por cierto, que se encarga de tomar el texto de",
+        "start": 592.72,
+        "end": 600.4
+    },
+    {
+        "text": " mi programa escrito en pascal y traducir eso a un codigo ejecutable que el CPU sea capaz de",
+        "start": 600.4,
+        "end": 608.8000000000001
+    },
+    {
+        "text": " comprender. Un compilador de hecho tiene muchas etapas. Una de ellas es chequear la sintaxis del",
+        "start": 608.8000000000001,
+        "end": 618.36
+    },
+    {
+        "text": " programa. ¿Qué quiere decir que el programa tenga un error de sintaxis? ¿Cómo? El baguaje es en",
+        "start": 618.36,
+        "end": 629.24
+    },
+    {
+        "text": " tiempo de ejecución. Un error de sintaxis es lo mismo que un error en tiempo de ejecución. No,",
+        "start": 629.24,
+        "end": 636.24
+    },
+    {
+        "text": " el error de sintaxis que significa que hay algo mal escrito, hay algo sintácticamente",
+        "start": 636.24,
+        "end": 644.08
+    },
+    {
+        "text": " invalido, entonces el compilador lo detecta y lo reporta como un error. Es su aparte, pero si tiene",
+        "start": 644.08,
+        "end": 654.76
+    },
+    {
+        "text": " un error de sintaxis, la compilación me la detecta. En ese caso se llega a producir el ejecutable.",
+        "start": 654.76,
+        "end": 660.96
+    },
+    {
+        "text": " No, que tengo que hacer. Corregir el error de sintaxis, y probablemente después de 1, 2, 3",
+        "start": 660.96,
+        "end": 669.4000000000001
+    },
+    {
+        "text": " pasadas del compilador, ese programa no tenga errores de sintaxis. Ahí que es lo que va a suceder.",
+        "start": 669.4,
+        "end": 676.0
+    },
+    {
+        "text": " Va a compilar y se va a generar un ejecutable y eso me da garantías de que se ejecute correctamente.",
+        "start": 676.0,
+        "end": 684.24
+    },
+    {
+        "text": " Puede tener un baguaje, un error en tiempo de ejecución. ¿Qué vas a preguntar?",
+        "start": 684.24,
+        "end": 688.24
+    },
+    {
+        "text": " O sea, arreglando los errores de sintaxis, lo que garantizamos es que pasa la etapa de compilación,",
+        "start": 700.4,
+        "end": 707.28
+    },
+    {
+        "text": " pero eso no me da garantías de que se ejecute correctamente. Ahí luego van a aparecer otros conceptos",
+        "start": 707.28,
+        "end": 714.24
+    },
+    {
+        "text": " que van a ver el lado de la carrera, la noción de testing, la noción de verificación formal de",
+        "start": 714.24,
+        "end": 719.64
+    },
+    {
+        "text": " programas, si hay diferentes mecanismos para tratar de determinar si en tiempo de ejecución el",
+        "start": 719.64,
+        "end": 725.56
+    },
+    {
+        "text": " programa hace lo que se espera que haga. Pero el compilador va a ser por un lado nuestro",
+        "start": 725.56,
+        "end": 732.5999999999999
+    },
+    {
+        "text": " primer aliado y por otro lado el primero que nos va a dar un montón de dolores de cabeza,",
+        "start": 732.5999999999999,
+        "end": 737.3199999999999
+    },
+    {
+        "text": " una vez es que tiene que leer bien los errores de compilación que te da y tratar de entender bueno",
+        "start": 737.3199999999999,
+        "end": 744.4
+    },
+    {
+        "text": " ¿qué te está diciendo? En qué línea saltó el error, tratar de entender la causa por la cual ocurrió",
+        "start": 744.4,
+        "end": 750.9599999999999
+    },
+    {
+        "text": " ese error de sintaxis. Es que no me acuerdo si enfri pascal la opción SF8, nosotros vamos a subir",
+        "start": 750.96,
+        "end": 760.9200000000001
+    },
+    {
+        "text": " un manualcito que explica cómo se compila enfri pascal, pero cada editor, cada entorno tendrá sus",
+        "start": 760.9200000000001,
+        "end": 767.52
+    },
+    {
+        "text": " propias opciones para compilar ejecutar, etcétera. Pero quédemos con esa idea, el compilador toma el",
+        "start": 767.52,
+        "end": 775.48
+    },
+    {
+        "text": " texto de mi programa, realiza todos los chequeos de sintaxis y si no hubo problema con la sintaxis,",
+        "start": 775.48,
+        "end": 782.12
+    },
+    {
+        "text": " hace una magia interna que termina produciendo un programa ejecutable ¿ok? Hasta acá. Bien, después",
+        "start": 782.12,
+        "end": 791.72
+    },
+    {
+        "text": " y este es un momento muy emocionante, nuestro primer programa completo en Pascal.",
+        "start": 791.72,
+        "end": 803.84
+    },
+    {
+        "text": " Este programa es chiquito pero es muy representativo porque contiene muchas de las cuestiones de",
+        "start": 806.74,
+        "end": 814.76
+    },
+    {
+        "text": " sintaxis que deben respetar los programas que escribamos en Pascal. Vamos a ir leyéndolo y vamos a ir",
+        "start": 814.76,
+        "end": 825.56
+    },
+    {
+        "text": " desmenuzándolo. Primero que nada, el programa empieza con una primera línea que dice program y",
+        "start": 825.56,
+        "end": 835.76
+    },
+    {
+        "text": " la continuación triángulo y un punto icón. ¿Qué les parece a ustedes que significa esa primera línea?",
+        "start": 835.76,
+        "end": 843.0
+    },
+    {
+        "text": " El nombre del programa, el programa tiene un nombre. La palabra program es lo que se llama una",
+        "start": 845.0,
+        "end": 854.12
+    },
+    {
+        "text": " palabra reservada. Vamos a ver que en Pascal y de hecho pasan todos los lenguajes de programación,",
+        "start": 854.12,
+        "end": 860.48
+    },
+    {
+        "text": " hay ciertas palabras especiales que tienen un uso preestablecido y que se denominan palabras",
+        "start": 860.48,
+        "end": 867.12
+    },
+    {
+        "text": " reservadas. Bueno, no sé si es aprendiendo, vamos a aprender un poquito, ¿gapas?",
+        "start": 867.12,
+        "end": 873.52
+    },
+    {
+        "text": " Ahí va. Igual ahora cualquier cosa, pagamos de vuelta. O sea que en un programa vamos a tener palabras",
+        "start": 875.6800000000001,
+        "end": 886.88
+    },
+    {
+        "text": " reservadas. Palabras que tienen un propósito preestablecido. La palabra program se utiliza para",
+        "start": 886.88,
+        "end": 896.24
+    },
+    {
+        "text": " indicar cuál va a ser el nombre del programa. A continuación triángulo, es el nombre concreto que",
+        "start": 896.24,
+        "end": 905.4399999999999
+    },
+    {
+        "text": " le estamos dando a este programa. Triángulo no es una palabra reservada. Triángulo es un nombre que",
+        "start": 905.4399999999999,
+        "end": 913.52
+    },
+    {
+        "text": " nosotros inventamos para el programa. Nosotros vamos a ver que al programa le damos un nombre,",
+        "start": 913.52,
+        "end": 920.0
+    },
+    {
+        "text": " vamos a ver que a cada variable también le vamos a dar un nombre más adelante cuando veamos",
+        "start": 920.0,
+        "end": 926.0799999999999
+    },
+    {
+        "text": " procedimientos y funciones, los procedimientos y funciones también les vamos a dar un nombre.",
+        "start": 926.0799999999999,
+        "end": 930.48
+    },
+    {
+        "text": " Esos nombres que utilizamos se van a llamar identificadores. O sea que en la primera línea tenemos",
+        "start": 930.48,
+        "end": 942.84
+    },
+    {
+        "text": " una palabra reservada y un identificador. ¿Se entendió la primera línea? Sí. Bien.",
+        "start": 942.84,
+        "end": 952.4
+    },
+    {
+        "text": " Apado otro poquito.",
+        "start": 953.5600000000001,
+        "end": 954.72
+    },
+    {
+        "text": " No, atributo es otra cosa y es una terminología que viene del mundo orientado.",
+        "start": 958.6,
+        "end": 962.88
+    },
+    {
+        "text": " Eso falta todavía.",
+        "start": 964.24,
+        "end": 965.84
+    },
+    {
+        "text": " VAR es otra palabra reservada. ¿Cuál les parece que será su propósito?",
+        "start": 965.84,
+        "end": 973.76
+    },
+    {
+        "text": " Declarar variables. Yo utilizo la palabra VAR para decir cuál es van a hacer las variables que",
+        "start": 973.76,
+        "end": 984.12
+    },
+    {
+        "text": " va a tener mi programa. Este programa va a manejar tres variables. La variable altura, la variable",
+        "start": 984.12,
+        "end": 992.32
+    },
+    {
+        "text": " base y la variable área. Son tres espacios de memoria y los nombres de las variables son a su vez",
+        "start": 992.32,
+        "end": 1004.6400000000001
+    },
+    {
+        "text": " identificadores. Sí. La variable no se puede llamar igual que el nombre del programa. Hay que usar",
+        "start": 1004.6400000000001,
+        "end": 1017.96
+    },
+    {
+        "text": " identificadores diferentes. Por regla general siempre conviene que todo identificador sea único.",
+        "start": 1017.96,
+        "end": 1025.4
+    },
+    {
+        "text": " Así no el riesgo de equivocarse más adelante cuando veamos la parte de alcance. Vamos a ver que en",
+        "start": 1025.4,
+        "end": 1031.1200000000001
+    },
+    {
+        "text": " ciertos lugares diferentes de un programa tú puedes repetir el mismo identificador sin que eso",
+        "start": 1031.1200000000001,
+        "end": 1036.8
+    },
+    {
+        "text": " ocasiona problemas. Pero eso viene después. Bien, entonces aparece en escena el concepto de variable",
+        "start": 1036.8,
+        "end": 1048.2
+    },
+    {
+        "text": " que medio lo estuvimos charlando en la clase pasada. Las variables se declaran a continuación de la",
+        "start": 1048.2,
+        "end": 1055.56
+    },
+    {
+        "text": " palabra reservada VAR, dos puntos real punto y coma. ¿Qué será eso? El tipo de datos de esas tres",
+        "start": 1055.56,
+        "end": 1064.28
+    },
+    {
+        "text": " variables. En este programa tenemos tres espacios de memoria de tipo real. ¿Qué significa eso? Que cada",
+        "start": 1064.28,
+        "end": 1074.56
+    },
+    {
+        "text": " una de esas tres va a almacenar un número real. Vamos a ver después que hay diferentes tipos de datos en un programa.",
+        "start": 1074.56,
+        "end": 1082.68
+    },
+    {
+        "text": " O sea que tenemos variables y apareció también la noción de tipo de datos. Que en este ejemplo el",
+        "start": 1084.68,
+        "end": 1093.92
+    },
+    {
+        "text": " único tipo de datos que está presente es el tipo de datos real. La declaración de las variables lo que",
+        "start": 1093.92,
+        "end": 1102.2
+    },
+    {
+        "text": " está haciendo es indicarle al programa que se van a usar esos tres espacios de memoria para almacenar",
+        "start": 1102.2,
+        "end": 1110.1200000000001
+    },
+    {
+        "text": " algo del tipo correspondiente la variable que en este caso es real. La declaración de las variables",
+        "start": 1110.1200000000001,
+        "end": 1116.4
+    },
+    {
+        "text": " no asigna todavía ningún valor. Eso viene después. Hasta acá. Luego aparece una palabra reservada más. La",
+        "start": 1116.4,
+        "end": 1127.88
+    },
+    {
+        "text": " palabra VIN. VIN marca el comienzo de la parte del programa donde yo voy a escribir las diferentes",
+        "start": 1127.88,
+        "end": 1138.44
+    },
+    {
+        "text": " instrucciones. Las diferentes son las que la máquina va a tener que ejecutar. Empiezo con VIN y",
+        "start": 1138.44,
+        "end": 1148.72
+    },
+    {
+        "text": " abajo del todo termina con N y un punto. Todo lo que está entre el VIN y el N es una secuencia de",
+        "start": 1148.72,
+        "end": 1157.8400000000001
+    },
+    {
+        "text": " instrucciones. ¿Qué puede ser de diferente tipo? O sea que aparece también la noción de instrucción.",
+        "start": 1157.8400000000001,
+        "end": 1166.8200000000002
+    },
+    {
+        "text": " Nuestro programa tiene instrucciones. ¿Hasta acá? Bien, yo podría, en el renglón siguiente",
+        "start": 1168.76,
+        "end": 1184.72
+    },
+    {
+        "text": " VIN ya poner la primera instrucción o puedo dar un ente y dejar todo una línea blanco no es relevante.",
+        "start": 1184.72,
+        "end": 1190.8400000000001
+    },
+    {
+        "text": " Vos podés entre diferentes instrucciones poner todos los espacios en blanco que quieras. El",
+        "start": 1191.36,
+        "end": 1197.48
+    },
+    {
+        "text": " delimitador de instrucciones va a ser esto, el punto y coma. El punto y coma es el separador de",
+        "start": 1197.48,
+        "end": 1206.28
+    },
+    {
+        "text": " instrucciones. Se pone VIN, una instrucción, punto y coma, otra instrucción, punto y coma,",
+        "start": 1206.28,
+        "end": 1213.72
+    },
+    {
+        "text": " otra instrucción y así hasta terminar con N. La función del punto y coma es separar",
+        "start": 1213.72,
+        "end": 1220.8
+    },
+    {
+        "text": " instrucciones dentro del bloque VIN.",
+        "start": 1220.8,
+        "end": 1223.08
+    },
+    {
+        "text": " Este no se suele poner porque luego de esto no hay ninguna instrucción. Lo que hay es un N que",
+        "start": 1223.08,
+        "end": 1244.96
+    },
+    {
+        "text": " te marca el fin del programa. El punto y coma su función es separar dos instrucciones.",
+        "start": 1244.96,
+        "end": 1252.56
+    },
+    {
+        "text": " Después de la última instrucción no te va a compilar igual pero no te aportan nada a poner",
+        "start": 1252.56,
+        "end": 1260.64
+    },
+    {
+        "text": " este punto y coma porque ya el propio ente indica que ahí terminó el programa.",
+        "start": 1260.64,
+        "end": 1264.04
+    },
+    {
+        "text": " Cosa usted se tiene que quedar es que el punto y coma es un separador de instrucciones.",
+        "start": 1264.04,
+        "end": 1269.56
+    },
+    {
+        "text": " En punto, las sintaxis de pascales que se pone un punto luego delen. Del programa principal,",
+        "start": 1269.56,
+        "end": 1277.6799999999998
+    },
+    {
+        "text": " después van a venir los procedimientos y funciones que también tienen VIN y ahí no hay.",
+        "start": 1277.6799999999998,
+        "end": 1281.3999999999999
+    },
+    {
+        "text": " Pero por ahora termina con punto. Sí.",
+        "start": 1281.3999999999999,
+        "end": 1285.6399999999999
+    },
+    {
+        "text": " Exactamente yo podría usar un mismo renglón para poner todas las instrucciones separando con",
+        "start": 1285.6399999999999,
+        "end": 1297.76
+    },
+    {
+        "text": " punto y coma pero eso no es legible eso compila pero no es claro.",
+        "start": 1297.76,
+        "end": 1303.44
+    },
+    {
+        "text": " La razón más entrega es ese tipo de las que ya no es una mirada.",
+        "start": 1303.44,
+        "end": 1306.4
+    },
+    {
+        "text": " Ayuda pero no es determinante. Bueno, ahora vienen los comentarios.",
+        "start": 1306.4,
+        "end": 1317.04
+    },
+    {
+        "text": " Este texto que está entre llaves es lo que se conoce como un comentario. En este programa",
+        "start": 1317.04,
+        "end": 1326.56
+    },
+    {
+        "text": " aparecen comentarios. Los comentarios corresponden a texto que nosotros incluimos como parte",
+        "start": 1326.56,
+        "end": 1336.56
+    },
+    {
+        "text": " simplemente como aclaración, como comentario, como un auto recordatorio pero son ignorados",
+        "start": 1336.56,
+        "end": 1347.3999999999999
+    },
+    {
+        "text": " por el compilador. O sea que el compilador no toma en cuenta lo que yo pongo entre llaves.",
+        "start": 1347.3999999999999,
+        "end": 1353.0
+    },
+    {
+        "text": " El comentario va más dirigido al propio programador que a la máquina.",
+        "start": 1354.0,
+        "end": 1359.8
+    },
+    {
+        "text": " Se pueden poner con llaves o también se pueden poner de esta manera un",
+        "start": 1359.8,
+        "end": 1367.92
+    },
+    {
+        "text": " paréntesis asterisco para abrir y un asterisco paréntesis para cerrar.",
+        "start": 1367.92,
+        "end": 1373.24
+    },
+    {
+        "text": " Cualquiera de las dos son equivalentes. Sobre los comentarios no hay una regla universal.",
+        "start": 1373.24,
+        "end": 1379.76
+    },
+    {
+        "text": " No está bueno no poner ninguno, tampoco está bueno que esté demasiado cargado de comentarios.",
+        "start": 1380.76,
+        "end": 1386.08
+    },
+    {
+        "text": " Hay que usarlos en su justa medida y con la práctica uno va aprendiendo a dosificar los comentarios.",
+        "start": 1386.08,
+        "end": 1393.4
+    },
+    {
+        "text": " Pero lo importante es que los comentarios no son instrucciones, sino que no hay señal.",
+        "start": 1393.4,
+        "end": 1401.52
+    },
+    {
+        "text": " Sinó que representan texto que se pone con fines aclaratorios si se quiere.",
+        "start": 1410.76,
+        "end": 1416.76
+    },
+    {
+        "text": " Bien, luego viene esta instrucción que la vamos a ver más en detalle la clase que viene,",
+        "start": 1419.76,
+        "end": 1426.76
+    },
+    {
+        "text": " pero a grandes rasgos qué es lo que creen que hace.",
+        "start": 1426.76,
+        "end": 1429.76
+    },
+    {
+        "text": " Le lo que el usuario ingresó por donde? Por el teclado.",
+        "start": 1430.76,
+        "end": 1436.76
+    },
+    {
+        "text": " Y le ficha todo lo demás o sea, así que la gente no se importa mucho y lo vamos a ver después.",
+        "start": 1436.76,
+        "end": 1447.76
+    },
+    {
+        "text": " Lo que nos importa es que el usuario por el teclado va a ingresar dos números reales.",
+        "start": 1447.76,
+        "end": 1455.76
+    },
+    {
+        "text": " Y esos dos números reales van a quedar almacenados respectivamente en la variable altura y en la variable base.",
+        "start": 1456.76,
+        "end": 1465.76
+    },
+    {
+        "text": " Si yo pongo este programa ejecutar, me va a aparecer lo que vamos a llamarla con sola y va a quedar ahí el cursor titilando.",
+        "start": 1465.76,
+        "end": 1475.76
+    },
+    {
+        "text": " Entonces yo voy a escribir un número, un espacio, otro número y voy a dar Enter.",
+        "start": 1476.76,
+        "end": 1482.76
+    },
+    {
+        "text": " En el momento en que yo doy el Enter se va a ejecutar esta instrucción.",
+        "start": 1482.76,
+        "end": 1489.76
+    },
+    {
+        "text": " Va a tomar el primer número y lo va a almacenar en la variable altura.",
+        "start": 1489.76,
+        "end": 1495.76
+    },
+    {
+        "text": " Va a tomar el segundo número y lo va a almacenar en la variable base.",
+        "start": 1495.76,
+        "end": 1500.76
+    },
+    {
+        "text": " Quede claro lo que hace la instrucción Ridline. Vamos a armarse adelante que Ridline es en realidad un procedimiento.",
+        "start": 1501.76,
+        "end": 1508.76
+    },
+    {
+        "text": " Pero por ahora vamos a llamarlo instrucción. Una cosa que vamos a suponer durante todo este curso es lo siguiente.",
+        "start": 1508.76,
+        "end": 1517.76
+    },
+    {
+        "text": " Si yo le pido al usuario que ingrese un número real, voy a suponer que me va a ingresar un número real.",
+        "start": 1517.76,
+        "end": 1526.76
+    },
+    {
+        "text": " Si yo le pido al usuario que me ingrese una cadena de texto, voy a suponer que me va a ingresar una cadena de texto.",
+        "start": 1527.76,
+        "end": 1534.76
+    },
+    {
+        "text": " Si yo le pido que me ingrese un número entero, voy a suponer que me va a ingresar un número entero.",
+        "start": 1534.76,
+        "end": 1540.76
+    },
+    {
+        "text": " Durante esta materia no nos vamos a preocupar por esos controles.",
+        "start": 1540.76,
+        "end": 1544.76
+    },
+    {
+        "text": " Vamos a suponer que lo que el usuario ingresa es del tipo de datos correcto.",
+        "start": 1544.76,
+        "end": 1550.76
+    },
+    {
+        "text": " Más adelante en la carrera van a tener para entretenerse con unas cuestiones que se llaman parcin-parseo.",
+        "start": 1551.76,
+        "end": 1557.76
+    },
+    {
+        "text": " No nos preocupan programación uno.",
+        "start": 1557.76,
+        "end": 1559.76
+    },
+    {
+        "text": " Lo que importa acá es que tras ejecutarse esta línea las dos variables, altura y base, van a quedar cargadas cada una con un número real.",
+        "start": 1560.76,
+        "end": 1571.76
+    },
+    {
+        "text": " ¿Se entendió eso?",
+        "start": 1572.76,
+        "end": 1574.76
+    },
+    {
+        "text": " Punto y coma indica que acaba de ocurrir una instrucción y ahora viene otra instrucción.",
+        "start": 1574.76,
+        "end": 1581.76
+    },
+    {
+        "text": " En el medio hay un comentario pero que hace el compilador con el comentario?",
+        "start": 1581.76,
+        "end": 1586.76
+    },
+    {
+        "text": " No, lo pasa por alto.",
+        "start": 1586.76,
+        "end": 1589.76
+    },
+    {
+        "text": " Me interesa la siguiente instrucción y a esta instrucción nosotros la nombramos la clase pasada.",
+        "start": 1589.76,
+        "end": 1595.76
+    },
+    {
+        "text": " Es una instrucción muy especial. ¿Qué instrucciones?",
+        "start": 1596.76,
+        "end": 1598.76
+    },
+    {
+        "text": " La asignación.",
+        "start": 1598.76,
+        "end": 1601.76
+    },
+    {
+        "text": " La asignación es una instrucción muy especial cuyo propósito es cuál.",
+        "start": 1603.76,
+        "end": 1610.76
+    },
+    {
+        "text": " Asignarle un valor a quien? A una variable.",
+        "start": 1613.76,
+        "end": 1617.76
+    },
+    {
+        "text": " Celé y se ejecuta de derecha izquierda.",
+        "start": 1618.76,
+        "end": 1622.76
+    },
+    {
+        "text": " Este símbolo 2 puntos igual se llama como operador de asignación.",
+        "start": 1623.76,
+        "end": 1630.76
+    },
+    {
+        "text": " Del lado izquierdo que se coloca.",
+        "start": 1630.76,
+        "end": 1633.76
+    },
+    {
+        "text": " La variable destino, la variable la cual se va a almacenar un valor.",
+        "start": 1633.76,
+        "end": 1639.76
+    },
+    {
+        "text": " Y lo que tenemos del lado derecho es una que es esto.",
+        "start": 1639.76,
+        "end": 1646.76
+    },
+    {
+        "text": " Empieza con E.",
+        "start": 1646.76,
+        "end": 1649.76
+    },
+    {
+        "text": " Una. Una expresión.",
+        "start": 1649.76,
+        "end": 1652.76
+    },
+    {
+        "text": " O sea que aparece también la noción de expresión.",
+        "start": 1652.76,
+        "end": 1657.76
+    },
+    {
+        "text": " Del lado derecho del operador de asignación tenemos una expresión.",
+        "start": 1657.76,
+        "end": 1663.76
+    },
+    {
+        "text": " Una expresión es una combinación de operadores y operandos que expresan como se calcula un valor.",
+        "start": 1663.76,
+        "end": 1673.76
+    },
+    {
+        "text": " En este caso puntual es una expresión aritmética porque la variable destino de que tipo es.",
+        "start": 1674.76,
+        "end": 1682.76
+    },
+    {
+        "text": " Es de tipo real.",
+        "start": 1682.76,
+        "end": 1685.76
+    },
+    {
+        "text": " Entonces tiene sentido y además es necesario para que compile que la expresión que está del lado derecho.",
+        "start": 1685.76,
+        "end": 1692.76
+    },
+    {
+        "text": " ¿Verdad? Produzca un resultado cuyo tipo se pueda almacenar en una variable de tipo real.",
+        "start": 1692.76,
+        "end": 1698.76
+    },
+    {
+        "text": " Y eso la combinación lo detecta.",
+        "start": 1699.76,
+        "end": 1702.76
+    },
+    {
+        "text": " Lo vamos a ver después.",
+        "start": 1702.76,
+        "end": 1705.76
+    },
+    {
+        "text": " Sí.",
+        "start": 1705.76,
+        "end": 1706.76
+    },
+    {
+        "text": " ¿Cuándo compilas siempre tiene que impulsar?",
+        "start": 1706.76,
+        "end": 1711.76
+    },
+    {
+        "text": " No entendí, perdón.",
+        "start": 1711.76,
+        "end": 1713.76
+    },
+    {
+        "text": " ¿Cuándo compilas?",
+        "start": 1713.76,
+        "end": 1715.76
+    },
+    {
+        "text": " Sí.",
+        "start": 1715.76,
+        "end": 1718.76
+    },
+    {
+        "text": " ¿Hay como que no tiene la tensión de una serie de escaleras de tirarlo para que les decirles hacerlo?",
+        "start": 1718.76,
+        "end": 1724.76
+    },
+    {
+        "text": " Hay dos momentos diferentes. Uno es la compilación y otro es la ejecución.",
+        "start": 1724.76,
+        "end": 1729.76
+    },
+    {
+        "text": " A ver, tú primero lo compilas.",
+        "start": 1729.76,
+        "end": 1731.76
+    },
+    {
+        "text": " Si tiene alguna error de sintaxis te va a avisar y no va a producir el ejecutador.",
+        "start": 1731.76,
+        "end": 1736.76
+    },
+    {
+        "text": " ¿Cuándo lo compilas? ¿Estas puder?",
+        "start": 1736.76,
+        "end": 1737.76
+    },
+    {
+        "text": " No. Si pasó la compilación tú luego lo podes ejecutar.",
+        "start": 1737.76,
+        "end": 1742.76
+    },
+    {
+        "text": " Hay algunos entornos, hay algunos compiladores, hay algunos editores",
+        "start": 1742.76,
+        "end": 1747.76
+    },
+    {
+        "text": " que te ponen una opción que te hace las dos cosas, una continuación de la otra.",
+        "start": 1747.76,
+        "end": 1751.76
+    },
+    {
+        "text": " Esto ya depende del entorno que utilices para compilar y ejecutar.",
+        "start": 1751.76,
+        "end": 1756.76
+    },
+    {
+        "text": " Vamos a mirar lo que está del lado derecho.",
+        "start": 1756.76,
+        "end": 1759.76
+    },
+    {
+        "text": " Base y este esterisco que es por multiplicación base por altura y esto es dividido 2.",
+        "start": 1759.76,
+        "end": 1767.76
+    },
+    {
+        "text": " Esto es una expresionaritmética.",
+        "start": 1767.76,
+        "end": 1770.76
+    },
+    {
+        "text": " Lo que va a hacer es tomar el valor que se almacenó en base, que fue leído por teclado.",
+        "start": 1770.76,
+        "end": 1774.76
+    },
+    {
+        "text": " Tomar el valor que se almacenó en altura, que también fue leído por teclado.",
+        "start": 1774.76,
+        "end": 1778.76
+    },
+    {
+        "text": " Base esta operaciónaritmética y el resultado de esto va a ser un número como.",
+        "start": 1778.76,
+        "end": 1784.76
+    },
+    {
+        "text": " ¿Qué va a ser almacenado en la variable área?",
+        "start": 1784.76,
+        "end": 1787.76
+    },
+    {
+        "text": " ¿Se entendió cómo funciona la asignación?",
+        "start": 1787.76,
+        "end": 1792.76
+    },
+    {
+        "text": " Del lado izquierdo de la asignación siempre va una y del lado derecho que va.",
+        "start": 1792.76,
+        "end": 1798.76
+    },
+    {
+        "text": " Una expresión. Sí.",
+        "start": 1798.76,
+        "end": 1801.76
+    },
+    {
+        "text": " Se lee de derecha izquierda porque primero tomo la expresión",
+        "start": 1801.76,
+        "end": 1807.76
+    },
+    {
+        "text": " Evaluó esta expresión y el resultado se almacenó en la variable área del lado izquierdo.",
+        "start": 1807.76,
+        "end": 1813.76
+    },
+    {
+        "text": " Se ejecuta de derecha izquierda. ¿A bien?",
+        "start": 1813.76,
+        "end": 1817.76
+    },
+    {
+        "text": " Todos se entendieron esta línea.",
+        "start": 1817.76,
+        "end": 1820.76
+    },
+    {
+        "text": " Sí. Bueno, y lo que tenemos después es otro comentario que el compilador lo ignora",
+        "start": 1820.76,
+        "end": 1826.76
+    },
+    {
+        "text": " y por último tenemos una última instrucción que no necesita llevar punto y coma después",
+        "start": 1826.76,
+        "end": 1832.76
+    },
+    {
+        "text": " que viene que el ente. Acuérdense que el punto y coma su separador de instrucciones.",
+        "start": 1832.76,
+        "end": 1839.76
+    },
+    {
+        "text": " ¿Ride line? Lo que hace es tomar el valor que está en la variable área y lo muestran la pantalla.",
+        "start": 1839.76,
+        "end": 1848.76
+    },
+    {
+        "text": " Vamos a ver después que además de mostrarlo ya da un ente y deja el cursor pronto en la próxima línea.",
+        "start": 1848.76,
+        "end": 1855.76
+    },
+    {
+        "text": " Entonces, acá tenemos muy en chiquito un ejemplo de lo que hace todo programa.",
+        "start": 1855.76,
+        "end": 1860.76
+    },
+    {
+        "text": " Tiene una parte de entrada.",
+        "start": 1860.76,
+        "end": 1863.76
+    },
+    {
+        "text": " Tiene una parte de procesamiento de los datos de entrada y tiene una parte de salida.",
+        "start": 1863.76,
+        "end": 1870.76
+    },
+    {
+        "text": " Los primeros programas que vamos a escribir van a seguir un esquema similar a este.",
+        "start": 1870.76,
+        "end": 1875.76
+    },
+    {
+        "text": " ¿A bien? ¿Preguntas hasta acá?",
+        "start": 1875.76,
+        "end": 1879.76
+    },
+    {
+        "text": " Bueno, entonces recapeitulando un poco.",
+        "start": 1880.76,
+        "end": 1884.76
+    },
+    {
+        "text": " En este programa vimos que hay palabras reservadas, por ejemplo, ¿cuál es?",
+        "start": 1888.76,
+        "end": 1892.76
+    },
+    {
+        "text": " ¿Progran? Bar, bien, en, sí.",
+        "start": 1892.76,
+        "end": 1897.76
+    },
+    {
+        "text": " Sí. ¿A lo que sabemos hasta ahora tendrías que obvien hacer correr 5 veces el programa o manejar 5 variables para cada una de las cosas?",
+        "start": 1897.76,
+        "end": 1913.76
+    },
+    {
+        "text": " Más adelante, cuando veamos procedimientos y funciones, te vas a poder definir un procedimiento o una función.",
+        "start": 1913.76,
+        "end": 1920.76
+    },
+    {
+        "text": " Cuando lo que quieras hacer que te calculis lo vas a poder llamar varias veces.",
+        "start": 1920.76,
+        "end": 1923.76
+    },
+    {
+        "text": " Pero eso luego, vamos de a poco.",
+        "start": 1923.76,
+        "end": 1927.76
+    },
+    {
+        "text": " Bien, los identificadores que cosas serán.",
+        "start": 1927.76,
+        "end": 1933.76
+    },
+    {
+        "text": " Los nombres que nosotros le damos a cosas como el programa o como las variables.",
+        "start": 1933.76,
+        "end": 1942.76
+    },
+    {
+        "text": " Las variables dijimos son que cosa.",
+        "start": 1943.76,
+        "end": 1947.76
+    },
+    {
+        "text": " Espacios de memoria que permiten almacenar cuantos valores y toda variable tiene un que, un tipo de datos.",
+        "start": 1947.76,
+        "end": 1958.76
+    },
+    {
+        "text": " Vamos a ver que cada variable cuando yo la declaro tengo que decir cuáles su tipo de datos.",
+        "start": 1958.76,
+        "end": 1965.76
+    },
+    {
+        "text": " Y eso va a significar que en ella solo puedo almacenar un valor que sea de ese tipo.",
+        "start": 1966.76,
+        "end": 1972.76
+    },
+    {
+        "text": " Sí.",
+        "start": 1972.76,
+        "end": 1973.76
+    },
+    {
+        "text": " Los tipos de datos como real son tipos de datos que ya vienen predefinidos por el lenguaje.",
+        "start": 1976.76,
+        "end": 1983.76
+    },
+    {
+        "text": " En los hechos no serían palabras reservadas, pero en la práctica podés tomarlos como si lo fueran,",
+        "start": 1983.76,
+        "end": 1988.76
+    },
+    {
+        "text": " porque tú no te puedes declarar una variable llamada real.",
+        "start": 1988.76,
+        "end": 1992.76
+    },
+    {
+        "text": " Porque ya ese nombre está utilizado para un tipo de datos predefinidos.",
+        "start": 1993.76,
+        "end": 1999.76
+    },
+    {
+        "text": " No es exactamente una palabra reservada, pero en la práctica lo podés considerar como si lo fuera.",
+        "start": 1999.76,
+        "end": 2006.76
+    },
+    {
+        "text": " Los nombres de los tipos de datos en realidad son identificadores,",
+        "start": 2006.76,
+        "end": 2011.76
+    },
+    {
+        "text": " o sea que técnicamente real es un identificador.",
+        "start": 2011.76,
+        "end": 2014.76
+    },
+    {
+        "text": " Solo que es un identificador que ya viene con Pascal.",
+        "start": 2015.76,
+        "end": 2019.76
+    },
+    {
+        "text": " Bien, después vimos que habían diferentes tipos de instrucciones y una instrucción en particular cual era.",
+        "start": 2028.76,
+        "end": 2035.76
+    },
+    {
+        "text": " Ridline para leer por teclado, write para mostrar con batalla y la asignación para asignar un valor a una variable.",
+        "start": 2036.76,
+        "end": 2043.76
+    },
+    {
+        "text": " Podemos poner comentarios, esos ligatorios, no, si los pongo que hace el compilador con ellos, los ignora.",
+        "start": 2044.76,
+        "end": 2052.76
+    },
+    {
+        "text": " Y del lado derecho de una asignación colocamos una expresión, que la expresión expresa la manera de calcular un que.",
+        "start": 2052.76,
+        "end": 2062.76
+    },
+    {
+        "text": " No, de calcular una variable no de calcular un valor y ese valor,",
+        "start": 2066.76,
+        "end": 2071.76
+    },
+    {
+        "text": " yo lo tengo que asignar a una variable y que tiene que pasar con su tipo.",
+        "start": 2071.76,
+        "end": 2075.76
+    },
+    {
+        "text": " Tienen que ser del mismo tipo.",
+        "start": 2075.76,
+        "end": 2078.76
+    },
+    {
+        "text": " Bien, o sea que en este programa ya hemos visto varios conceptos fundamentales importantes.",
+        "start": 2081.76,
+        "end": 2087.76
+    },
+    {
+        "text": " Bueno, apaga un poquito.",
+        "start": 2088.76,
+        "end": 2091.76
+    },
+    {
+        "text": " Estas diapositivas las voy a pasar un poco rápido, porque la noción es bastante sencilla, perdón.",
+        "start": 2096.76,
+        "end": 2102.76
+    },
+    {
+        "text": " Este diagramista lo que muestra es las reglas que yo debo seguir a la hora de construir un identificador.",
+        "start": 2104.76,
+        "end": 2112.76
+    },
+    {
+        "text": " Vamos a traducir esto al español.",
+        "start": 2113.76,
+        "end": 2114.76
+    },
+    {
+        "text": " Todo el identificador debe empezar con una letra, una letra de la besedario que puede ser más fúscula o minúscula.",
+        "start": 2114.76,
+        "end": 2122.76
+    },
+    {
+        "text": " Y a continuación le puedo poner muchos que, letras o dígitos.",
+        "start": 2123.76,
+        "end": 2129.76
+    },
+    {
+        "text": " Por ejemplo, la variable base empieza con la letra B y después es como que hace este viaje.",
+        "start": 2131.76,
+        "end": 2138.76
+    },
+    {
+        "text": " Pasa por la A, por la E, por la E y termina con, bueno, con una letra.",
+        "start": 2138.76,
+        "end": 2145.76
+    },
+    {
+        "text": " Todo el identificador debe empezar con una letra y luego puede estar seguido por letras o dígitos.",
+        "start": 2146.76,
+        "end": 2152.76
+    },
+    {
+        "text": " Por ejemplo, que símbolo no puede usar para un identificador.",
+        "start": 2154.76,
+        "end": 2157.76
+    },
+    {
+        "text": " Una esterístico no lo puede usar.",
+        "start": 2158.76,
+        "end": 2160.76
+    },
+    {
+        "text": " Una roba no lo puede usar.",
+        "start": 2161.76,
+        "end": 2162.76
+    },
+    {
+        "text": " Un peso tampoco, un espacio en blanco tampoco.",
+        "start": 2162.76,
+        "end": 2164.76
+    },
+    {
+        "text": " Todo el identificador que yo utilice no importa si es el nombre del programa o si es el nombre de una variable, debe seguir estar reta.",
+        "start": 2165.76,
+        "end": 2171.76
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 2172.76,
+        "end": 2173.76
+    },
+    {
+        "text": " Después, lo que tenemos es el mismo dicho de otra manera.",
+        "start": 2174.76,
+        "end": 2180.76
+    },
+    {
+        "text": " El identificador empieza con una letra y a continuación eso que esta entre llaves significa poder tener cualquier cantidad de letras o dígitos.",
+        "start": 2181.76,
+        "end": 2191.76
+    },
+    {
+        "text": " ¿Sí? ¿Qué es lo mismo que está dicho abajo en español, en lenguaje natural?",
+        "start": 2192.76,
+        "end": 2196.76
+    },
+    {
+        "text": " ¿Qué da claro las reglas que tiene que cumplir un identificador?",
+        "start": 2196.76,
+        "end": 2200.76
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2201.76,
+        "end": 2202.76
+    },
+    {
+        "text": " Bueno, las variables se declaran a continuación de la palabra reservada bar.",
+        "start": 2203.76,
+        "end": 2210.76
+    },
+    {
+        "text": " Yo pongo una declaración de variable, un punto y coma, otra declaración de variable, un punto y coma, tantas declaraciones de variables como yo quiera, todas ellas terminadas con punto y coma.",
+        "start": 2211.76,
+        "end": 2223.76
+    },
+    {
+        "text": " ¿Sí? Ahora bien, cada declaración de variable a su vez va a tener esta forma.",
+        "start": 2224.76,
+        "end": 2229.76
+    },
+    {
+        "text": " Voy a poner un identificador que va a ser que cosa de la variable.",
+        "start": 2230.76,
+        "end": 2234.76
+    },
+    {
+        "text": " El nombre y luego con coma yo puedo declarar tantas variables como yo quiera y después los dos puntos y lican que luego viene que.",
+        "start": 2235.76,
+        "end": 2246.76
+    },
+    {
+        "text": " El tipo de la variable en nuestro programa decía bar y después decía base coma altura, dos puntos real, es decir que base y altura eran dos variables de tipo real.",
+        "start": 2247.76,
+        "end": 2259.76
+    },
+    {
+        "text": " ¿Es cierto? ¿Vos puedes declarar varias variables del mismo tipo en una misma declaración?",
+        "start": 2261.76,
+        "end": 2266.76
+    },
+    {
+        "text": " punto y coma y luego viene otra declaración donde nuevamente podrás declarar varias variables por ejemplo de tipo int, ya que es el tipo de los enteros.",
+        "start": 2267.76,
+        "end": 2276.76
+    },
+    {
+        "text": " ¿Todas van a continuación de la palabra reservada bar?",
+        "start": 2277.76,
+        "end": 2281.76
+    },
+    {
+        "text": " Bien, y después el cuerpo del programa lo que dijimos, empieza con la palabra vigín, no le de en pelotas ascomillas, termina con la palabra en un punto y entre el vigín y el en que ponemos, una instrucción y después podemos poner tantas instrucciones como nosotros queramos.",
+        "start": 2282.76,
+        "end": 2308.76
+    },
+    {
+        "text": " punto y coma y una nueva instrucción, punto y coma y una nueva instrucción, punto y coma y una nueva instrucción y después de la última instrucción que va.",
+        "start": 2309.76,
+        "end": 2317.76
+    },
+    {
+        "text": " Y hay diferentes tipos de instrucciones, nosotros ya vimos tres, ¿cuál es?",
+        "start": 2318.76,
+        "end": 2323.76
+    },
+    {
+        "text": " Ridline para leer, ¿qué más?",
+        "start": 2325.76,
+        "end": 2327.76
+    },
+    {
+        "text": " Ridline para mostrar y la asignación, ¿sí? No importa qué tipo de instrucciones se separan con punto y coma.",
+        "start": 2328.76,
+        "end": 2335.76
+    },
+    {
+        "text": " Y acá, claro, que el punto y coma es un separador, sí, y no un finalizador de instrucciones. Por eso es que la última no le ponemos punto y coma.",
+        "start": 2336.76,
+        "end": 2347.76
+    },
+    {
+        "text": " Si se lo ponemos igual el compilador te lo va a aceptar, pero no aportan nada.",
+        "start": 2347.76,
+        "end": 2352.76
+    },
+    {
+        "text": " Y acá tenemos las reglas fundamentales de sintaxis de un programa en Pascal.",
+        "start": 2354.76,
+        "end": 2358.76
+    },
+    {
+        "text": " Ok? Bueno, ahí están los tres tipos de instrucciones que habíamos visto, la lectura, la asignación y la salida y después tenemos acá la sintaxis gemérica de la asignación.",
+        "start": 2359.76,
+        "end": 2375.76
+    },
+    {
+        "text": " Me voy a detener acá y vamos a hacer un poquito de práctico. ¿Preguntas hasta acá?",
+        "start": 2378.76,
+        "end": 2383.76
+    },
+    {
+        "text": " Bueno, es bueno.",
+        "start": 2384.76,
+        "end": 2387.76
+    },
+    {
+        "text": " Este es el que está publicado bajo esta semana, el de semana 1 creo que es. ¿Ah?",
+        "start": 2391.76,
+        "end": 2397.76
+    },
+    {
+        "text": " Bueno, hasta acá, más preguntas. Bueno, les voy a dar diez minutitos, más o menos, cinco, diez.",
+        "start": 2399.76,
+        "end": 2408.76
+    },
+    {
+        "text": " Ahora, si esto lo podemos agrandar un poco.",
+        "start": 2409.76,
+        "end": 2413.76
+    },
+    {
+        "text": " Bueno, le voy a tener que dejar chico porque...",
+        "start": 2425.76,
+        "end": 2428.76
+    },
+    {
+        "text": " Bueno, yo les recomiendo que siempre tratan de venir a clase con el práctico ya se ha impreso o bajado en el celular o en la no-dúgue lo que sea.",
+        "start": 2429.76,
+        "end": 2444.76
+    },
+    {
+        "text": " Toma un ratito unos minutos para pensar los ejercicios 1 y 2.",
+        "start": 2445.76,
+        "end": 2451.76
+    },
+    {
+        "text": " El ejercicio 1 trabaja sobre identificadores, palabras reservadas y esas cuestiones.",
+        "start": 2452.76,
+        "end": 2458.76
+    },
+    {
+        "text": " Ustedes tienen que determinar cuáles de los identificadores son válidos.",
+        "start": 2458.76,
+        "end": 2464.76
+    },
+    {
+        "text": " La idea es que vayan mirando identificador por identificador y razones a ver si está bien construido, no está bien construido, etc.",
+        "start": 2466.76,
+        "end": 2474.76
+    },
+    {
+        "text": " Similar pasa con la parte B y la parte C.",
+        "start": 2475.76,
+        "end": 2479.76
+    },
+    {
+        "text": " La parte C habla de unas cosas que son las constantes, que las constantes aparecen en el libro, que lo que permiten es definir valores que quedan fijos.",
+        "start": 2479.76,
+        "end": 2492.76
+    },
+    {
+        "text": " O sea, no son variables. Tuve una constante, le da su valor y le asocia su nombre y luego te puedo referir a ella utilizando ese nombre.",
+        "start": 2493.76,
+        "end": 2502.76
+    },
+    {
+        "text": " Bien, y después el ejercicio 2, juega un poquito con declaraciones de variables y constantes de tipo entero.",
+        "start": 2505.76,
+        "end": 2518.76
+    },
+    {
+        "text": " Bueno, a ver, vamos a mirar un poquito el ejercicio 1 parte A.",
+        "start": 2518.76,
+        "end": 2524.76
+    },
+    {
+        "text": " Determinar cuáles de los siguientes identificadores son válidos.",
+        "start": 2525.76,
+        "end": 2531.76
+    },
+    {
+        "text": " O sea, cuáles de ellos cumple con la regla de sintaxis de los identificadores.",
+        "start": 2531.76,
+        "end": 2538.76
+    },
+    {
+        "text": " ¿Qué pasa con promedio? ¿Comple? ¿Por qué?",
+        "start": 2538.76,
+        "end": 2544.76
+    },
+    {
+        "text": " Arranca con una letra y luego es una secuencia de letras.",
+        "start": 2544.76,
+        "end": 2551.76
+    },
+    {
+        "text": " Y además no es una palabra reservada, o sea, que promedio debería andar bien.",
+        "start": 2552.76,
+        "end": 2557.76
+    },
+    {
+        "text": " ¿Qué pasa con A1, A2, A3, A4?",
+        "start": 2557.76,
+        "end": 2560.76
+    },
+    {
+        "text": " También cumple con la misma regla. Empieza con letra y después son todos dígitos, pero eso lo admite.",
+        "start": 2560.76,
+        "end": 2567.76
+    },
+    {
+        "text": " Capas que no es el identificador más lindo, pero cumple con las reglas de sintaxis de los identificadores.",
+        "start": 2567.76,
+        "end": 2574.76
+    },
+    {
+        "text": " Así que se va a motildarlo también. ¿Qué pasa con 1, 2, 3, 4, A? ¿Por qué no cumple?",
+        "start": 2575.76,
+        "end": 2583.76
+    },
+    {
+        "text": " Porque no está con letra, listo.",
+        "start": 2583.76,
+        "end": 2586.76
+    },
+    {
+        "text": " Ya me alcanza para saber que ese identificador y el compilador no me lo va a dejar pasar.",
+        "start": 2586.76,
+        "end": 2592.76
+    },
+    {
+        "text": " ¿Qué pasa con cancan con un espacio en el medio?",
+        "start": 2592.76,
+        "end": 2597.76
+    },
+    {
+        "text": " No puede tener espacio en blanco, así que ese identificador no es válido.",
+        "start": 2597.76,
+        "end": 2603.76
+    },
+    {
+        "text": " ¿Qué pasa con program?",
+        "start": 2604.76,
+        "end": 2606.76
+    },
+    {
+        "text": " Cumple la regla de los identificadores, pero es palabra reservada, o sea, no es elegible para ser usada.",
+        "start": 2607.76,
+        "end": 2613.76
+    },
+    {
+        "text": " Peso se quisiceta. No arrastra con letra, no cumple con las reglas de los identificadores.",
+        "start": 2614.76,
+        "end": 2620.76
+    },
+    {
+        "text": " A, terisco B.",
+        "start": 2621.76,
+        "end": 2623.76
+    },
+    {
+        "text": " El asterisco, ¿qué pasa?",
+        "start": 2625.76,
+        "end": 2627.76
+    },
+    {
+        "text": " No es una letra en un dígito, listo, no cumple con la regla.",
+        "start": 2628.76,
+        "end": 2632.76
+    },
+    {
+        "text": " Jorge, ese lo vamos a tillar. Es una secuencia de letras.",
+        "start": 2632.76,
+        "end": 2638.76
+    },
+    {
+        "text": " Esta cosa rara que está acá, tiene doble problema.",
+        "start": 2640.76,
+        "end": 2646.76
+    },
+    {
+        "text": " En realidad ya con mirar el comienzo me alcanza para saber que nos sirve, ¿por qué?",
+        "start": 2646.76,
+        "end": 2651.76
+    },
+    {
+        "text": " ¿Por qué no empieza con letra?",
+        "start": 2651.76,
+        "end": 2653.76
+    },
+    {
+        "text": " Pero si igual, por curiosidad quiero seguir mirando con qué me encuentro en el medio, con guiones que no son caracteres válidos para un identificador.",
+        "start": 2653.76,
+        "end": 2661.76
+    },
+    {
+        "text": " 4 espacio X2.",
+        "start": 2662.76,
+        "end": 2664.76
+    },
+    {
+        "text": " ¿Hay problema con la X?",
+        "start": 2667.76,
+        "end": 2669.76
+    },
+    {
+        "text": " No, porque la X que pasa es una letra, ojo que la multiplicación en pascal como es, el asterisco, el problema que cuál es.",
+        "start": 2669.76,
+        "end": 2678.76
+    },
+    {
+        "text": " El espacio en blanco y en realidad el principal problema es que no arranca con letra.",
+        "start": 2679.76,
+        "end": 2683.76
+    },
+    {
+        "text": " Ya con eso me alcanza y además tiene el problema de la espacio en blanco.",
+        "start": 2684.76,
+        "end": 2687.76
+    },
+    {
+        "text": " Bien, todo bien. Qué bueno. Bueno, voy a echar un poquito el 2.",
+        "start": 2688.76,
+        "end": 2695.76
+    },
+    {
+        "text": " Acá tenemos unas cuantas declaraciones de variables, esto lo voy a chicar.",
+        "start": 2695.76,
+        "end": 2699.76
+    },
+    {
+        "text": " Determine cuáles de las siguientes declaraciones de variables son válidas.",
+        "start": 2701.76,
+        "end": 2706.76
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 2707.76,
+        "end": 2708.76
+    },
+    {
+        "text": " Bar, num, uno, coma, num, dos puntos real, punto y coma, ¿qué pasa con etapa?",
+        "start": 2709.76,
+        "end": 2714.76
+    },
+    {
+        "text": " Inpecable, cumple a la perfección las sintaxis de declaración de variables. ¿Cuántas variables estamos declarando?",
+        "start": 2715.76,
+        "end": 2721.76
+    },
+    {
+        "text": " 2, esas variables cumple con las reglas de identificadores y las dos variables de que tipo son real.",
+        "start": 2722.76,
+        "end": 2729.76
+    },
+    {
+        "text": " O sea que no habría problema.",
+        "start": 2730.76,
+        "end": 2732.76
+    },
+    {
+        "text": " Esa declaración de variables debería ser válida.",
+        "start": 2733.76,
+        "end": 2736.76
+    },
+    {
+        "text": " La de la derecha, bar, num, uno, punto y coma, num, dos puntos sin tacher.",
+        "start": 2740.76,
+        "end": 2745.76
+    },
+    {
+        "text": " No corresponde, ¿por qué? ¿Por qué? ¿Por qué?",
+        "start": 2746.76,
+        "end": 2749.76
+    },
+    {
+        "text": " Cuando yo declaro varias variables del mismo tipo las tengo que separar con que.",
+        "start": 2749.76,
+        "end": 2753.76
+    },
+    {
+        "text": " Con coma, no con punte y coma.",
+        "start": 2754.76,
+        "end": 2755.76
+    },
+    {
+        "text": " ¿Cómo haría dos tipos de datos?",
+        "start": 2755.76,
+        "end": 2757.76
+    },
+    {
+        "text": " Ahí serían dos declaraciones diferentes.",
+        "start": 2758.76,
+        "end": 2760.76
+    },
+    {
+        "text": " Pero así como está, acá que tendría que haber.",
+        "start": 2761.76,
+        "end": 2763.76
+    },
+    {
+        "text": " Así que no marcha.",
+        "start": 2764.76,
+        "end": 2765.76
+    },
+    {
+        "text": " Por eso serían dos declaraciones diferentes.",
+        "start": 2768.76,
+        "end": 2770.76
+    },
+    {
+        "text": " Pero así como está, claramente no anda, ¿qué pasa acá?",
+        "start": 2772.76,
+        "end": 2774.76
+    },
+    {
+        "text": " Hay dos tipos de datos para las mismas variables. Toda variable tiene cuántos tipos de datos.",
+        "start": 2778.76,
+        "end": 2784.76
+    },
+    {
+        "text": " No solo, yo no puedo decir por ejemplo que la variable cuenta sea de tipo intacher y real a la vez.",
+        "start": 2785.76,
+        "end": 2790.76
+    },
+    {
+        "text": " Toda variable tiene un solo tipo de datos. Nunca puede tener dos.",
+        "start": 2791.76,
+        "end": 2794.76
+    },
+    {
+        "text": " O sea que acá el problema es que estoy queriendo darle más de un tipo de datos a las mismas variables.",
+        "start": 2796.76,
+        "end": 2802.76
+    },
+    {
+        "text": " Bien. Bar y de estudiante coma, num, seg, social, dos puntos sin tacher.",
+        "start": 2805.76,
+        "end": 2811.76
+    },
+    {
+        "text": " Al final, esperemos que haya un punto y coma ponerlo podemos ver.",
+        "start": 2812.76,
+        "end": 2815.76
+    },
+    {
+        "text": " Ahí está. Estas validas.",
+        "start": 2816.76,
+        "end": 2818.76
+    },
+    {
+        "text": " Entonces vamos a tildarla.",
+        "start": 2818.76,
+        "end": 2819.76
+    },
+    {
+        "text": " Si me deja tildar, me dejo tildar.",
+        "start": 2823.76,
+        "end": 2824.76
+    },
+    {
+        "text": " ¿Qué pasa con esta? Bar num uno coma en un dos puntos real.",
+        "start": 2826.76,
+        "end": 2829.76
+    },
+    {
+        "text": " Entre la palabra reservada y el primer identificador no hay espacio en blanco.",
+        "start": 2831.76,
+        "end": 2835.76
+    },
+    {
+        "text": " ¿Pascal no va a poder esto ni asociarlo con la palabra reservada ni con el primer identificador.",
+        "start": 2836.76,
+        "end": 2843.76
+    },
+    {
+        "text": " Así que este no corre. Y el último, bar num uno coma espacio en un dos puntos intacher.",
+        "start": 2844.76,
+        "end": 2850.76
+    },
+    {
+        "text": " Primero, bar en minúsculas da problemas.",
+        "start": 2859.76,
+        "end": 2861.76
+    },
+    {
+        "text": " Pascal es un lenguaje que decimos que no es que hay sensitive.",
+        "start": 2862.76,
+        "end": 2866.76
+    },
+    {
+        "text": " Te admite las palabras reservadas tanto en minúsculas con los mayúsculas.",
+        "start": 2867.76,
+        "end": 2870.76
+    },
+    {
+        "text": " ¿Qué espacio en blanco les preocupaba?",
+        "start": 2872.76,
+        "end": 2873.76
+    },
+    {
+        "text": " Este espacio en blanco no afecta.",
+        "start": 2875.76,
+        "end": 2877.76
+    },
+    {
+        "text": " Acórense que vos entre una coma y un identificador puede exponer el espacio en blanco que no hay problema.",
+        "start": 2877.76,
+        "end": 2881.76
+    },
+    {
+        "text": " Estamos declarando dos variables de tipo intacher.",
+        "start": 2883.76,
+        "end": 2885.76
+    },
+    {
+        "text": " Esta declaración tendría que andar bien.",
+        "start": 2886.76,
+        "end": 2888.76
+    },
+    {
+        "text": " Si vamos a colocar acá, verificamos y efectivamente quedó bien.",
+        "start": 2890.76,
+        "end": 2894.76
+    },
+    {
+        "text": " Más o menos le van agarrándole a mano.",
+        "start": 2896.76,
+        "end": 2898.76
+    },
+    {
+        "text": " Les quedan todos los demás ejercicios de este tipo para hacer a ustedes.",
+        "start": 2899.76,
+        "end": 2902.76
+    },
+    {
+        "text": " Volvo a repetir lo que dije en la clase pasada y que repito ahora.",
+        "start": 2904.76,
+        "end": 2906.76
+    },
+    {
+        "text": " Hay que ser mucho prático.",
+        "start": 2907.76,
+        "end": 2908.76
+    },
+    {
+        "text": " Y vamos a hablar ahora de asignación.",
+        "start": 2910.76,
+        "end": 2912.76
+    },
+    {
+        "text": " En realidad, ya dijimos lo que es, pero bueno está acá.",
+        "start": 2915.76,
+        "end": 2918.76
+    },
+    {
+        "text": " Es una instrucción que permite modificar el contenido de una variable.",
+        "start": 2919.76,
+        "end": 2922.76
+    },
+    {
+        "text": " O sea, lo en que dice modificar.",
+        "start": 2924.76,
+        "end": 2927.76
+    },
+    {
+        "text": " Esa frase que presupone de la variable.",
+        "start": 2929.76,
+        "end": 2932.76
+    },
+    {
+        "text": " ¿Qué antes ya tenía un valor?",
+        "start": 2932.76,
+        "end": 2935.76
+    },
+    {
+        "text": " Ahora qué pasa si es la primera vez que le estamos asignando un valor? ¿Por qué dice modificar?",
+        "start": 2937.76,
+        "end": 2941.76
+    },
+    {
+        "text": " ¿Alien sabe?",
+        "start": 2942.76,
+        "end": 2943.76
+    },
+    {
+        "text": " Por defecto pascal y lo hacen muchos lenguados.",
+        "start": 2945.76,
+        "end": 2947.76
+    },
+    {
+        "text": " Esa frase que supone que lo que es, es que lo que es, es que lo que es, es que lo que es.",
+        "start": 2948.76,
+        "end": 2952.76
+    },
+    {
+        "text": " ¿Por qué no es?",
+        "start": 2953.76,
+        "end": 2954.76
+    },
+    {
+        "text": " ¿Por qué no es?",
+        "start": 2955.76,
+        "end": 2956.76
+    },
+    {
+        "text": " ¿Por defecto pascal y lo hacen muchos lenguados?",
+        "start": 2957.76,
+        "end": 2959.76
+    },
+    {
+        "text": " ¿Por defecto pascal y lo hacen muchos lenguajes de programación?",
+        "start": 2959.76,
+        "end": 2962.76
+    },
+    {
+        "text": " ¿Cuándo tú declaras una variable le pone un valor indefinido?",
+        "start": 2963.76,
+        "end": 2967.76
+    },
+    {
+        "text": " ¿Algún lenguaje te pondrá cero? ¿Algún lenguaje te pondrá un valor generado al azar?",
+        "start": 2969.76,
+        "end": 2974.76
+    },
+    {
+        "text": " ¿Algún lenguaje te pondrá lo que en términos coloquiales se llama basura?",
+        "start": 2976.76,
+        "end": 2979.76
+    },
+    {
+        "text": " ¿Dónde viven las variables dijimos?",
+        "start": 2981.76,
+        "end": 2982.76
+    },
+    {
+        "text": " En la memoria, la memoria de una máquina nunca estaba silla.",
+        "start": 2984.76,
+        "end": 2986.76
+    },
+    {
+        "text": " Una memoria vos tenés algo.",
+        "start": 2987.76,
+        "end": 2989.76
+    },
+    {
+        "text": " ¿Vos cuando declaras una variable le estás diciendo al lenguaje reserva a este espacio?",
+        "start": 2990.76,
+        "end": 2994.76
+    },
+    {
+        "text": " Y bueno, en ese espacio que pasque había algo.",
+        "start": 2995.76,
+        "end": 2996.76
+    },
+    {
+        "text": " Ese algo es el valor inicial que toma esa variable que no podemos saber de antemano si va a ser cero, si va a ser un número positivo, no sabemos qué va a ser.",
+        "start": 2997.76,
+        "end": 3006.76
+    },
+    {
+        "text": " Decimos que tiene un valor indefinido.",
+        "start": 3007.76,
+        "end": 3010.76
+    },
+    {
+        "text": " Que una variable tenga un valor indefinido quiere decir que aún no se le dio un valor inicial valido.",
+        "start": 3011.76,
+        "end": 3019.76
+    },
+    {
+        "text": " A la acción de darle un primer valor a la variable que sea valido, le vamos a decir que es inicializar la variable.",
+        "start": 3022.76,
+        "end": 3030.76
+    },
+    {
+        "text": " Inicializar es una castellanización fea. Es una palabra que en realidad no existe.",
+        "start": 3032.76,
+        "end": 3036.76
+    },
+    {
+        "text": " Pero en la práctica la usamos para decir el momento en el cual se le asigna la variable el primer valor valido.",
+        "start": 3037.76,
+        "end": 3045.76
+    },
+    {
+        "text": " Entonces si es la primera vez, lo que está modificando es la basura que tenía la variable por el primer valor que vos le das.",
+        "start": 3047.76,
+        "end": 3053.76
+    },
+    {
+        "text": " Por eso es que dice modificar.",
+        "start": 3055.76,
+        "end": 3056.76
+    },
+    {
+        "text": " Y funciona de derecha a izquierda.",
+        "start": 3059.76,
+        "end": 3062.76
+    },
+    {
+        "text": " Acaba una expresión, esa expresión tendrá valores y operadores, se valúa esa expresión y el resultado de esa expresión es almacenado en la variable cuyenteificador se pone a la izquierda.",
+        "start": 3063.76,
+        "end": 3079.76
+    },
+    {
+        "text": " Como ya vimos que funciona la asignación.",
+        "start": 3080.76,
+        "end": 3081.76
+    },
+    {
+        "text": " Quiero claro esto.",
+        "start": 3084.76,
+        "end": 3085.76
+    },
+    {
+        "text": " En los trabajos espera que toda variable en todo momento tenga un valor valido.",
+        "start": 3086.76,
+        "end": 3094.76
+    },
+    {
+        "text": " Ya sea porque le asignaste a mano un valor inicial si es lo que corresponde o porque se lo pediste al usuario por teclado.",
+        "start": 3096.76,
+        "end": 3102.76
+    },
+    {
+        "text": " Son dos maneras válidas de otorgarle un valor inicial a la variable.",
+        "start": 3103.76,
+        "end": 3106.76
+    },
+    {
+        "text": " Importante es no trabajar nunca con basura, es decir, con valores indefinidos.",
+        "start": 3107.76,
+        "end": 3111.76
+    },
+    {
+        "text": " De hecho cuando empiezan a hacer práctico y empiezan a probar en máquina les van a dar muchos dolores de cabeza las variables que quedaron sin inicializar.",
+        "start": 3114.76,
+        "end": 3121.76
+    },
+    {
+        "text": " ¿Se entendió la asignación?",
+        "start": 3124.76,
+        "end": 3125.76
+    },
+    {
+        "text": " ¿Qué tiene que pasar con el tipo de datos de la expresión y el tipo de datos del identificador?",
+        "start": 3127.76,
+        "end": 3130.76
+    },
+    {
+        "text": " Tienen que ser iguales o por lo menos compatibles que después vamos a ver que son compatibles, pero por ahora que vemos con la idea de iguales.",
+        "start": 3131.76,
+        "end": 3139.76
+    },
+    {
+        "text": " Bien la asignación?",
+        "start": 3141.76,
+        "end": 3142.76
+    },
+    {
+        "text": " Sí, seguimos un poquito más.",
+        "start": 3144.76,
+        "end": 3145.76
+    },
+    {
+        "text": " Bueno, ahora vienen los tipos de datos.",
+        "start": 3150.76,
+        "end": 3152.76
+    },
+    {
+        "text": " Que el título está ahí el concepto de tipo.",
+        "start": 3153.76,
+        "end": 3157.76
+    },
+    {
+        "text": " Yo no sé, el que hizo esto para mí que quiso hacer una broma de muy maluento.",
+        "start": 3160.76,
+        "end": 3164.76
+    },
+    {
+        "text": " Porque la verdad es como muy llamativo, ¿no?",
+        "start": 3166.76,
+        "end": 3168.76
+    },
+    {
+        "text": " Pero bueno, es lo que hay valor como dice el dicho.",
+        "start": 3169.76,
+        "end": 3171.76
+    },
+    {
+        "text": " Los tipos de datos permiten indicar la característica de los valores manipulados de un programa.",
+        "start": 3174.76,
+        "end": 3179.76
+    },
+    {
+        "text": " Un tipo de datos te representa una familia de valores que tienen las mismas propiedades.",
+        "start": 3180.76,
+        "end": 3186.76
+    },
+    {
+        "text": " Por ejemplo, los números reales tienen todos en común el hecho de que son reales.",
+        "start": 3188.76,
+        "end": 3193.76
+    },
+    {
+        "text": " El hecho de que pueden tener una coma y pueden tener algo después de la coma.",
+        "start": 3195.76,
+        "end": 3198.76
+    },
+    {
+        "text": " Ahora bien, los enteros son otro tipo de datos que tienen en común el hecho justamente de que son enteros.",
+        "start": 3200.76,
+        "end": 3207.76
+    },
+    {
+        "text": " O sea, representan valores que no tienen parte fraccionaria. Son enteros.",
+        "start": 3209.76,
+        "end": 3214.76
+    },
+    {
+        "text": " Los enteros que conocemos de toda la vida.",
+        "start": 3214.76,
+        "end": 3216.76
+    },
+    {
+        "text": " Toda variable o constante tiene asociado un tipo, uno solo.",
+        "start": 3219.76,
+        "end": 3224.76
+    },
+    {
+        "text": " Ya vimos que una variable no puede tener dos tipos de datos diferentes y una constante tampoco puede tener dos tipos de datos diferentes.",
+        "start": 3225.76,
+        "end": 3231.76
+    },
+    {
+        "text": " Esto ocurre también con los operadores, las funciones standard y las definidas por el usuario y de funciones vamos a hablar más adelante.",
+        "start": 3232.76,
+        "end": 3240.76
+    },
+    {
+        "text": " La cuestión es que un valor solito tiene un tipo de datos asociado.",
+        "start": 3243.76,
+        "end": 3246.76
+    },
+    {
+        "text": " Una variable tiene un tipo de datos asociado.",
+        "start": 3247.76,
+        "end": 3249.76
+    },
+    {
+        "text": " Una expresión que involucra diferentes operandos tiene que tener un operador o varios operadores que sean adecuados para esos valores que están en común.",
+        "start": 3250.76,
+        "end": 3260.76
+    },
+    {
+        "text": " Los valores tienen tipos de datos, las variables tienen tipos de datos, las asignaciones tienen tipos de datos y cada uno de ellos tiene cuántos tipos de datos.",
+        "start": 3261.76,
+        "end": 3273.76
+    },
+    {
+        "text": " Poser tipos permite detectar ciertos errores de construcción del código, el chequeo de tipos y en Pascal se hace en la compilación.",
+        "start": 3277.76,
+        "end": 3287.76
+    },
+    {
+        "text": " Hay otros lenguajes que no necesariamente en la compilación te dan error de tipos, por suerte Pascal sí y eso está muy bueno porque antes de ejecutar si tiene algún problema la expresión ya te lo dice el combinador.",
+        "start": 3288.76,
+        "end": 3301.76
+    },
+    {
+        "text": " Entonces por lo menos si el programa pasó de la compilación sabes que las expresiones por lo menos son del tipo correcto.",
+        "start": 3302.76,
+        "end": 3308.76
+    },
+    {
+        "text": " Capaz que después el valor que te dio es que te importa, pero por lo menos es el tipo correcto.",
+        "start": 3308.76,
+        "end": 3314.76
+    },
+    {
+        "text": " Fruta como fruta.",
+        "start": 3315.76,
+        "end": 3317.76
+    },
+    {
+        "text": " Miremos acá estas dos expresiones. Esta expresión es una expresión que tiene tipo correcto y de hecho es sintacher, intacher que era entero.",
+        "start": 3318.76,
+        "end": 3327.76
+    },
+    {
+        "text": " ¿Por qué? Los dos operandos de qué tipo son, de tipo entero y se le aplica un operador que es compatible para los enteros.",
+        "start": 3327.76,
+        "end": 3336.76
+    },
+    {
+        "text": " Esta expresión tiene tipo y compila. Ahora qué pasa con esta otra expresión? ¿Por qué tiene error de tipo?",
+        "start": 3337.76,
+        "end": 3344.76
+    },
+    {
+        "text": " Porque el operador más no se puede aplicar a esto, ¿qué es esto? Esto es un char, un carácter que es otro tipo de datos y la suma no está definida para carácteres.",
+        "start": 3345.76,
+        "end": 3358.76
+    },
+    {
+        "text": " Entonces vos cuando construís una expresión te tienes que asegurar que los operandos que utiliza y los operadores sean compatibles.",
+        "start": 3359.76,
+        "end": 3367.76
+    },
+    {
+        "text": " ¿Se van teniendo la noción de tipo de datos? Bien.",
+        "start": 3368.76,
+        "end": 3371.76
+    },
+    {
+        "text": " Después.",
+        "start": 3372.76,
+        "end": 3374.76
+    },
+    {
+        "text": " Vamos a ver que existen dos clasificaciones posibles para los tipos de datos.",
+        "start": 3377.76,
+        "end": 3384.76
+    },
+    {
+        "text": " Por un lado están los tipos de datos elementales que son los primeros que vamos a ver y que medio algunos ya estuvimos diciendo que eran guales.",
+        "start": 3385.76,
+        "end": 3393.76
+    },
+    {
+        "text": " Los reales son un tipo de datos elemental, los enteros, los carácteres, después vamos a ver que están los buleanos también.",
+        "start": 3394.76,
+        "end": 3402.76
+    },
+    {
+        "text": " Esos se le llaman tipos de datos elementales. Cada valor es simple e indivisible. O sea es un valor chiquito que no se puede descomponer en nada más.",
+        "start": 3403.76,
+        "end": 3415.76
+    },
+    {
+        "text": " Vamos a ver más adelante que también existen los tipos de datos estructurados donde cada valor está compuesto por varios valores.",
+        "start": 3416.76,
+        "end": 3426.76
+    },
+    {
+        "text": " Por ejemplo, más adelante en el curso vamos a ver una cosa que son los record.",
+        "start": 3427.76,
+        "end": 3431.76
+    },
+    {
+        "text": " Un record es como un gran registro que tiene muchos, muchos espacios y en cada espacio a su vez puedes guardar un valor.",
+        "start": 3432.76,
+        "end": 3441.76
+    },
+    {
+        "text": " Una variable de ese tipo vamos a decir que es de tipo estructurado, porque todo el objeto a su vez está compuesto de otros valores más chiquitos.",
+        "start": 3442.76,
+        "end": 3452.76
+    },
+    {
+        "text": " Pero por ahora nos vamos a manejar con los tipos de datos elementales.",
+        "start": 3453.76,
+        "end": 3456.76
+    },
+    {
+        "text": " Otra clasificación posible está entre los que ya vienen con el lenguaje y los que nos podemos inventar nosotros.",
+        "start": 3459.76,
+        "end": 3467.76
+    },
+    {
+        "text": " Más adelante en el curso vamos a ver que nosotros podemos crear nuestros propios tipos de datos.",
+        "start": 3467.76,
+        "end": 3473.76
+    },
+    {
+        "text": " Entonces, los tipos de datos estándar o predefinidos son los que ya vienen con el lenguaje de programación.",
+        "start": 3475.76,
+        "end": 3482.76
+    },
+    {
+        "text": " Por ejemplo, los cuatro tipos elementales que nombramos son tipos predefinidos de Pascal, porque ya vienen con el lenguaje. No voy y los invento yo.",
+        "start": 3483.76,
+        "end": 3491.76
+    },
+    {
+        "text": " Yo me voy a poder inventar mis propios tipos de datos, pero eso viene después.",
+        "start": 3492.76,
+        "end": 3501.76
+    },
+    {
+        "text": " Lo que nos importa por ahora es esto. Tenemos estos cuatro tipos de datos que son tipos de datos elementales y que ya vienen predefinidos con Pascal.",
+        "start": 3502.76,
+        "end": 3514.76
+    },
+    {
+        "text": " Y durante varias semanas nos va a alcanzar con estos cuatro.",
+        "start": 3515.76,
+        "end": 3518.76
+    },
+    {
+        "text": " Los números enteros, el tipo Intel, los números reales, el tipo real, me salteo el tercero y los caracteres, el conjunto de los caracteres que está formado por letras, dígitos y símbolos, se agrupan bajo el tipo de datos chat.",
+        "start": 3519.76,
+        "end": 3535.76
+    },
+    {
+        "text": " Y cuando se escriben se escriben entre comillas simples.",
+        "start": 3536.76,
+        "end": 3539.76
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 3540.76,
+        "end": 3542.76
+    },
+    {
+        "text": " Vos ten una variable de tipo charba se puede guardar un valor de tipo char, una letra, un dígito, un símbolo.",
+        "start": 3544.76,
+        "end": 3550.76
+    },
+    {
+        "text": " Y siempre conillas simples.",
+        "start": 3551.76,
+        "end": 3553.76
+    },
+    {
+        "text": " Y después está este conjunto muy especial que es el tipo Boolean que representa los valores lógicos, el true y el false, el verdadero y el falso.",
+        "start": 3554.76,
+        "end": 3565.76
+    },
+    {
+        "text": " Las variables de tipo Boolean no son enteros, no son reales y tampoco son caracteres, que son.",
+        "start": 3566.76,
+        "end": 3573.76
+    },
+    {
+        "text": " Boolean es un nuevo tipo de datos que tiene cuántos valores posibles, dos, true y false.",
+        "start": 3575.76,
+        "end": 3582.76
+    },
+    {
+        "text": " El tipo Boolean nos va a servir más adelante entre otras cosas para evaluar lo que van a hacer con diciones.",
+        "start": 3584.76,
+        "end": 3590.76
+    },
+    {
+        "text": " Si por ahora nos manejamos con esos cuatro tipos de datos básicos.",
+        "start": 3591.76,
+        "end": 3596.76
+    },
+    {
+        "text": " Bien.",
+        "start": 3601.76,
+        "end": 3603.76
+    },
+    {
+        "text": " Vamos a ver rapidito algunos ejemplos de valores de los diferentes tipos.",
+        "start": 3605.76,
+        "end": 3610.76
+    },
+    {
+        "text": " Tipo Integer que está ahí arriba representa los números enteros, ¿conos sin signo?",
+        "start": 3611.76,
+        "end": 3619.76
+    },
+    {
+        "text": " El 32 negativo, el 0, el 123 positivo y el 77, que aunque no le ponga más, también lo toma como positivo.",
+        "start": 3620.76,
+        "end": 3629.76
+    },
+    {
+        "text": " Tenemos allí cuatro valores de tipo Integer.",
+        "start": 3630.76,
+        "end": 3633.76
+    },
+    {
+        "text": " En el maravilloso mundo de la matemática cuántos enteros existen.",
+        "start": 3634.76,
+        "end": 3639.76
+    },
+    {
+        "text": " Infinitos, lamentablemente la capacidad de memoria de una máquina como un incorriente es como.",
+        "start": 3640.76,
+        "end": 3645.76
+    },
+    {
+        "text": " Acotada, finito, o sea que infinitos enteros no podemos representar.",
+        "start": 3646.76,
+        "end": 3650.76
+    },
+    {
+        "text": " Hay un máximo posible.",
+        "start": 3651.76,
+        "end": 3652.76
+    },
+    {
+        "text": " En Pascal, el valor máximo que yo puedo representar se llama Maxint.",
+        "start": 3653.76,
+        "end": 3659.76
+    },
+    {
+        "text": " Maxint es una constante predefinida que tiene un determinado valor.",
+        "start": 3660.76,
+        "end": 3665.76
+    },
+    {
+        "text": " El valor concreto depende de qué compilador para Pascal esté mostrano.",
+        "start": 3667.76,
+        "end": 3672.76
+    },
+    {
+        "text": " Por ejemplo, el compilador PP de Pascal te puede decir que Maxint es 32 milipico.",
+        "start": 3673.76,
+        "end": 3679.76
+    },
+    {
+        "text": " Ahora el compilador todo de Pascal te puede decir que Maxint es 64 milipico.",
+        "start": 3680.76,
+        "end": 3685.76
+    },
+    {
+        "text": " En portavoz en el compilador que esté Maxint va a tener un determinado valor y tú vas a poder representar enteros hasta como mucho ese valor.",
+        "start": 3686.76,
+        "end": 3695.76
+    },
+    {
+        "text": " Que en la práctica no me importa tanto saber cuál es, lo que me importa es saber que hay un tope.",
+        "start": 3696.76,
+        "end": 3701.76
+    },
+    {
+        "text": " Enteros mayores de Maxint no se pueden representar.",
+        "start": 3702.76,
+        "end": 3705.76
+    },
+    {
+        "text": " Si queremos entrar en número 2, el íbose que demasiado trae la diferencia.",
+        "start": 3705.76,
+        "end": 3710.76
+    },
+    {
+        "text": " Y lamentablemente con el tipo 20 ya no lo podemos hacer.",
+        "start": 3711.76,
+        "end": 3714.76
+    },
+    {
+        "text": " O sea, es una restricción del lenguaje de programación.",
+        "start": 3716.76,
+        "end": 3719.76
+    },
+    {
+        "text": " Yo puedo representar enteros solamente hasta Maxint.",
+        "start": 3720.76,
+        "end": 3722.76
+    },
+    {
+        "text": " Si quiero representar enteros más grandes, me las tengo que ingeniar.",
+        "start": 3723.76,
+        "end": 3726.76
+    },
+    {
+        "text": " Una manera de hacerlo y la cuento por arriba, nosotros en el curso vamos a ver algo que son las listas.",
+        "start": 3728.76,
+        "end": 3732.76
+    },
+    {
+        "text": " Y las listas pueden tener cualquier cantidad de elementos.",
+        "start": 3733.76,
+        "end": 3736.76
+    },
+    {
+        "text": " Entonces tú te podrías definir un tipo estructurado, que es una lista y poner en cada posición de la lista un dijito.",
+        "start": 3737.76,
+        "end": 3743.76
+    },
+    {
+        "text": " Y lo puedes hacer tan grande como quieras y después te puedes definir operaciones.",
+        "start": 3744.76,
+        "end": 3747.76
+    },
+    {
+        "text": " Y ahí puedes representar enteros tan grandes como quieras.",
+        "start": 3748.76,
+        "end": 3751.76
+    },
+    {
+        "text": " O sea que se le puede buscar la vuelta.",
+        "start": 3752.76,
+        "end": 3753.76
+    },
+    {
+        "text": " Igual para lo que vamos a hacer en programación 1, valores de 0 a Maxint nos alcanzan.",
+        "start": 3754.76,
+        "end": 3758.76
+    },
+    {
+        "text": " Bueno, después para los enteros nosotros podemos definir expresiones.",
+        "start": 3759.76,
+        "end": 3769.76
+    },
+    {
+        "text": " En una expresión pueden haber constantes variables, operadores y funciones.",
+        "start": 3770.76,
+        "end": 3775.76
+    },
+    {
+        "text": " La función las vamos a ver después.",
+        "start": 3776.76,
+        "end": 3777.76
+    },
+    {
+        "text": " Y acá tenemos los operadores que son aplicables a valores de tipo 20 ya.",
+        "start": 3778.76,
+        "end": 3783.76
+    },
+    {
+        "text": " Tenemos la suma, la resta, la multiplicación y acá tenemos un operador que se llama Div que es la división entera.",
+        "start": 3784.76,
+        "end": 3794.76
+    },
+    {
+        "text": " ¿Cuál es la diferencia entre división entera y división real?",
+        "start": 3795.76,
+        "end": 3798.76
+    },
+    {
+        "text": " Esas la manera de escribirlo, pero a nivel matemático que diferencia entre división entera y división real.",
+        "start": 3801.76,
+        "end": 3806.76
+    },
+    {
+        "text": " No necesariamente.",
+        "start": 3809.76,
+        "end": 3810.76
+    },
+    {
+        "text": " La división entera te descarta todo lo que está después de la coma porque trabaja con aritmética entera.",
+        "start": 3813.76,
+        "end": 3820.76
+    },
+    {
+        "text": " Te deja un cociente y te deja un resto.",
+        "start": 3822.76,
+        "end": 3825.76
+    },
+    {
+        "text": " O sea la noción de número con coma no existe en los enteros.",
+        "start": 3826.76,
+        "end": 3828.76
+    },
+    {
+        "text": " Sí existe en donde?",
+        "start": 3830.76,
+        "end": 3831.76
+    },
+    {
+        "text": " En los reales.",
+        "start": 3832.76,
+        "end": 3833.76
+    },
+    {
+        "text": " Y mod es el módulo que es que cosa de la división.",
+        "start": 3834.76,
+        "end": 3837.76
+    },
+    {
+        "text": " El resto de la división.",
+        "start": 3839.76,
+        "end": 3840.76
+    },
+    {
+        "text": " Entonces por ejemplo, prendo un poquito de la luz.",
+        "start": 3843.76,
+        "end": 3846.76
+    },
+    {
+        "text": " Vamos a imaginarnos que obtenemos una variable en un,",
+        "start": 3846.76,
+        "end": 3852.76
+    },
+    {
+        "text": " y los vine",
+        "start": 3854.76,
+        "end": 3866.1800000000003
+    },
+    {
+        "text": " vamos a imaginarnos que tenemos una variable num que es de tipo indejar",
+        "start": 3866.18,
+        "end": 3878.74
+    },
+    {
+        "text": " y vamos a suponer que num le asignamos el valor 17 eso que tenemos allí es una",
+        "start": 3878.74,
+        "end": 3891.18
+    },
+    {
+        "text": " expresión válida de tipo indejar",
+        "start": 3891.18,
+        "end": 3895.3799999999997
+    },
+    {
+        "text": " tenemos paréntesis por lo tanto resolvimos primero lo que están",
+        "start": 3896.8199999999997,
+        "end": 3901.14
+    },
+    {
+        "text": " reparentes, num v3 que estamos haciendo?",
+        "start": 3901.14,
+        "end": 3907.74
+    },
+    {
+        "text": " división entera entre el valor que está num que es 17 y 3, ¿cuánto da la",
+        "start": 3907.74,
+        "end": 3915.8599999999997
+    },
+    {
+        "text": " división entera de 17 entre 3? 5, a ver, hagamos como en la escuela 17 dividido",
+        "start": 3915.86,
+        "end": 3925.58
+    },
+    {
+        "text": " 3, cociente, 5 por 3, 15 me sobran, 2, o sea que el resultado de esta expresión",
+        "start": 3925.58,
+        "end": 3935.38
+    },
+    {
+        "text": " es un 5, no es 5 comanada, es 5, cociente, hay este 5 que fue el resultado de esta",
+        "start": 3935.38,
+        "end": 3948.7400000000002
+    },
+    {
+        "text": " subexpresión le hacemos al resto de su división entre 2 y eso da 1, ¿verdad? si hacemos 5",
+        "start": 3948.7400000000002,
+        "end": 3957.76
+    },
+    {
+        "text": " dividido 2, ¿qué cociente nos da? 2 por 2, 4 y resto 1, o sea que el resultado de todo esto",
+        "start": 3957.76,
+        "end": 3967.48
+    },
+    {
+        "text": " es 1, todo eso es una expresión de tipo indejar",
+        "start": 3967.48,
+        "end": 3978.32
+    },
+    {
+        "text": " quedo claro, div y mod son operadores válidos que pueden participar de expresiones de tipo indejar",
+        "start": 3980.0,
+        "end": 3987.5200000000004
+    },
+    {
+        "text": " ¿se entendió eso?",
+        "start": 3988.08,
+        "end": 3992.68
+    },
+    {
+        "text": " bien, números reales, el tipo de datos real que está ahí arriba contra los tubos luces, con los",
+        "start": 3992.68,
+        "end": 4009.0
+    },
+    {
+        "text": " reales pasa lo mismo que con los enteros, no se pueden representar con exactitud, alguien me",
+        "start": 4009.0,
+        "end": 4015.36
+    },
+    {
+        "text": " sabe decir que es un número irracional mediante más que una función, mediante el cociente",
+        "start": 4015.36,
+        "end": 4027.1200000000003
+    },
+    {
+        "text": " de 2, enteros podemos ponerlo negativo también, por ejemplo raíz de 2 es un número irracional",
+        "start": 4027.1200000000003,
+        "end": 4034.76
+    },
+    {
+        "text": " porque no se puede expresar como el cociente de 2 enteros, píes otro número irracional por",
+        "start": 4034.76,
+        "end": 4040.6400000000003
+    },
+    {
+        "text": " la misma razón y cuántas cifras tienen después de la coma, infinitas, puedo yo en una memoria",
+        "start": 4040.64,
+        "end": 4047.72
+    },
+    {
+        "text": " finita representar un número con infinitas cifras, no, vos lo que representas son una aproximación",
+        "start": 4047.72,
+        "end": 4054.08
+    },
+    {
+        "text": " en los reales no existe la noción de maxint, o sea dependiendo del compilador que usas tendrás",
+        "start": 4054.08,
+        "end": 4059.48
+    },
+    {
+        "text": " determinada precisión que te bancará después de la coma, pero siempre lo que representa",
+        "start": 4059.48,
+        "end": 4064.3599999999997
+    },
+    {
+        "text": " son aproximaciones, por eso es que hice reales entre comillas, ¿vale? De hecho, a ver incluso",
+        "start": 4064.36,
+        "end": 4071.82
+    },
+    {
+        "text": " las viejas si querías calculadoras o la calculadora del celular, por más táctil que sea el",
+        "start": 4071.82,
+        "end": 4077.56
+    },
+    {
+        "text": " teléfono celular, lo que te va a estar representando como resultado de una operación con reales",
+        "start": 4077.56,
+        "end": 4082.0
+    },
+    {
+        "text": " va a ser cimbra una aproximación, ¿sí? y eso por más táctil o avanzado tecnológicamente",
+        "start": 4082.0,
+        "end": 4088.6
+    },
+    {
+        "text": " que sea el dispositivo, sí es el número de problemas, ¿ok? Pero bueno, los números reales",
+        "start": 4088.6,
+        "end": 4095.7
+    },
+    {
+        "text": " dentro de Pascal tienen, se pueden representar en notación decimal con un punto el punto",
+        "start": 4095.7,
+        "end": 4100.66
+    },
+    {
+        "text": " viene a ser la coma, 358,3, 0,23 o en notación exponencial, esto es 2,3 por 10 a la",
+        "start": 4100.66,
+        "end": 4111.16
+    },
+    {
+        "text": " menos 1, ¿sí? Se acuerdan de la notación de potencias de 10, de física, etcétera,",
+        "start": 4111.16,
+        "end": 4117.12
+    },
+    {
+        "text": " no se puede representar en Pascal, sí, la E pueden mayor escuelado, mi núscula de",
+        "start": 4117.12,
+        "end": 4121.7
+    },
+    {
+        "text": " hecho arriba está en mayor escuelado, ¿ok? O sea que tenemos inteser, tenemos real y bueno,",
+        "start": 4121.7,
+        "end": 4130.18
+    },
+    {
+        "text": " miren los operadores armiticos para las expresiones de tipo real, la suma y la resta aparecen de",
+        "start": 4130.18,
+        "end": 4137.12
+    },
+    {
+        "text": " vuelta, se aplican a inteser pero también se aplican a reales, ¿eh? La multiplicación también",
+        "start": 4137.12,
+        "end": 4144.34
+    },
+    {
+        "text": " está a los que no están, son estos dos div y mod, porque div y mod son operadores de tipo",
+        "start": 4144.34,
+        "end": 4152.64
+    },
+    {
+        "text": " inteser, esto que está acá está barritas la división entre reales y el resultado es un número",
+        "start": 4152.64,
+        "end": 4162.22
+    },
+    {
+        "text": " real, dicho en criollo, este sigue después de la coma, ¿ok? No es lo mismo hacer, la",
+        "start": 4162.22,
+        "end": 4171.24
+    },
+    {
+        "text": " división entera prendo de vuelta, no es lo mismo hacer, esta división 5,2 que hacer esta",
+        "start": 4171.24,
+        "end": 4185.5599999999995
+    },
+    {
+        "text": " otra división, se entiende, acá es división entera, acá es división real, esta me va a dar",
+        "start": 4185.5599999999995,
+        "end": 4195.96
+    },
+    {
+        "text": " 2,5, queda clara la diferencia, bien, fíjense que acá tenemos lo que se llama sobrecarga",
+        "start": 4195.96,
+        "end": 4214.56
+    },
+    {
+        "text": " de operadores, perdón, sí, porque es división real, exactamente, sí, eso es lo que se llama",
+        "start": 4214.56,
+        "end": 4228.92
+    },
+    {
+        "text": " conversión de tipos que viene un ratito, ¿eh? Y que un poquito mira, empieza con esto que tenemos",
+        "start": 4228.92,
+        "end": 4235.52
+    },
+    {
+        "text": " acá, ahí en el tuboluz dice sobrecarga, sobrecarga significa que los mismos operadores se",
+        "start": 4235.52,
+        "end": 4244.280000000001
+    },
+    {
+        "text": " pueden utilizar tanto para los centeros como para los reales, o sea el mismo operador",
+        "start": 4244.28,
+        "end": 4250.679999999999
+    },
+    {
+        "text": " es aplicable a tipos de datos diferentes, ¿eh? El mismo el símbolo se usa para denotar operaciones",
+        "start": 4250.679999999999,
+        "end": 4260.0
+    },
+    {
+        "text": " sobre tipos diferentes, más, menos y por son operadores que se dice que están sobrecargados,",
+        "start": 4260.0,
+        "end": 4266.759999999999
+    },
+    {
+        "text": " porque funcionan tanto para los centeros como para los reales, sin embargo div y mod no están",
+        "start": 4266.759999999999,
+        "end": 4273.44
+    },
+    {
+        "text": " sobrecargados, porque razón, solo se usan para valores de tipo integer, no se usan para los reales,",
+        "start": 4273.44,
+        "end": 4281.08
+    },
+    {
+        "text": " bien, y acá es lo que yo les hablaba recién de conversión que el nombre formal es eso que dice",
+        "start": 4284.679999999999,
+        "end": 4291.5199999999995
+    },
+    {
+        "text": " ahí en el tuboluz, coerción, argumentos es decir operandos que no son del tipo requerido por",
+        "start": 4291.5199999999995,
+        "end": 4301.799999999999
+    },
+    {
+        "text": " una función operador, son convertidos al tipo correcto, Pascal, maneja coerción, maneja",
+        "start": 4301.8,
+        "end": 4310.16
+    },
+    {
+        "text": " conversión automática, si se quiere, cuando lo necesita entre enteros y reales, ¿eh? Por",
+        "start": 4310.16,
+        "end": 4317.96
+    },
+    {
+        "text": " ejemplo acá se purden mezclar operandos de tipo interior y de tipo real y la conversión,",
+        "start": 4317.96,
+        "end": 4324.8
+    },
+    {
+        "text": " la coerción como dice por ahí es autónica, caminemos esta expresión, 3 más 2.5 el operando",
+        "start": 4324.8,
+        "end": 4333.52
+    },
+    {
+        "text": " de la izquierda de qué tipo es y el de la derecha de tipo real, técnicamente tenemos operandos",
+        "start": 4333.52,
+        "end": 4341.76
+    },
+    {
+        "text": " de tipos diferentes, Pascal hace una conversión interna automática, el 3 que es entero lo convierte",
+        "start": 4341.76,
+        "end": 4350.12
+    },
+    {
+        "text": " real, entonces lo que hace Pascal cuando vos le ponese esta expresión es internamente te la",
+        "start": 4351.08,
+        "end": 4356.2
+    },
+    {
+        "text": " convierte a este y te calcula esta y el resultado de esta expresión va a ser de qué tipo, por lo tanto",
+        "start": 4356.2,
+        "end": 4362.24
+    },
+    {
+        "text": " toda esta expresión es una expresión de tipo real, porque Pascal de ser necesario te hace",
+        "start": 4362.24,
+        "end": 4369.4
+    },
+    {
+        "text": " conversión automática de intesiera real, al revés no funciona, no existe, de real a intesiera",
+        "start": 4369.4,
+        "end": 4374.68
+    },
+    {
+        "text": " no hay conversión, pero de intesiera real sí, eso se apoya un poco en la vieja idea de la",
+        "start": 4374.68,
+        "end": 4381.72
+    },
+    {
+        "text": " matemática tradicional de que todos los enteros subes son reales, pero no al revés, un poquito",
+        "start": 4381.72,
+        "end": 4388.8
+    },
+    {
+        "text": " de esa idea, se entendió eso, en estos ejemplos pasa exactamente lo mismo, bien, y acá esto la coerción",
+        "start": 4388.8,
+        "end": 4404.400000000001
+    },
+    {
+        "text": " a su vez se propaga hacia las asignaciones como dice el título de vuelta en el tubulus, cuando yo",
+        "start": 4405.4800000000005,
+        "end": 4412.4800000000005
+    },
+    {
+        "text": " tengo esta asignación nosotros habíamos dicho que en la asignación que pasaba con el tipo de la",
+        "start": 4412.4800000000005,
+        "end": 4418.8
+    },
+    {
+        "text": " expresión a la derecha y el de la variable a la izquierda, tenían que ser iguales y yo medio por ahí",
+        "start": 4418.8,
+        "end": 4426.0
+    },
+    {
+        "text": " tiene la palabra compatibles después, en realidad no no tienen que ser exactamente iguales, sino que el",
+        "start": 4426.0,
+        "end": 4432.68
+    },
+    {
+        "text": " tipo de la derecha se tiene que poder convertir automáticamente al de la izquierda, vamos a dar",
+        "start": 4432.68,
+        "end": 4439.360000000001
+    },
+    {
+        "text": " lo con un ejemplo bien sencillo prendo la luz de vuelta, imagínense borro esto,",
+        "start": 4439.360000000001,
+        "end": 4448.3
+    },
+    {
+        "text": " bueno, ya es, de tipo real exactamente, imagínemos que tenemos esta declaración,",
+        "start": 4448.3,
+        "end": 4462.900000000001
+    },
+    {
+        "text": " qué hice en esta declaración, declaré una variable x que es de tipo real, imaginemos que más",
+        "start": 4462.9,
+        "end": 4479.099999999999
+    },
+    {
+        "text": " abajo en el programa dentro del bikinen yo hago esto, bien sencillo esta asignación,",
+        "start": 4479.099999999999,
+        "end": 4486.379999999999
+    },
+    {
+        "text": " la constante 2 de qué tipo es, de tipo integer pero la variable x de qué tipo es,",
+        "start": 4487.38,
+        "end": 4495.900000000001
+    },
+    {
+        "text": " formalmente son del mismo tipo pero que hace pascal con este 2, lo convierte real y el 2 real es",
+        "start": 4495.900000000001,
+        "end": 4505.9400000000005
+    },
+    {
+        "text": " el que me queda guardado en la x, dicho en crioso lo que me queda guardado es 2.0 en realidad,",
+        "start": 4505.9400000000005,
+        "end": 4512.02
+    },
+    {
+        "text": " o sea entre comillas el 2 de los reales y pasa tanto si ponéis directamente un valor acá como si",
+        "start": 4512.580000000001,
+        "end": 4521.5
+    },
+    {
+        "text": " ponéis toda una expresión que te dé como resultado un int, al momento de hacer la asignación pascante",
+        "start": 4521.5,
+        "end": 4526.820000000001
+    },
+    {
+        "text": " va a aplicar la acuerción y el entero te lo va a convertir en real antes de almacenarlo ahí y después",
+        "start": 4526.820000000001,
+        "end": 4531.06
+    },
+    {
+        "text": " si no no esto es valido, o sea si la acuerción es un mecanismo valido y os salvo a un ejercicio muy",
+        "start": 4532.06,
+        "end": 4545.900000000001
+    },
+    {
+        "text": " puntual que la letra te aclarará esto es valido, la otra pregunta que tenían por acá,",
+        "start": 4545.900000000001,
+        "end": 4549.820000000001
+    },
+    {
+        "text": " la acuerción te convierte un tipo A en un tipo B, en el caso concreto que nosotros le estamos viendo es",
+        "start": 4549.82,
+        "end": 4561.7
+    },
+    {
+        "text": " conversión entre int y real, bueno ver así como está esto compilaba bien verdad pero",
+        "start": 4561.7,
+        "end": 4575.0199999999995
+    },
+    {
+        "text": " voy a ver este otro caso tengo la variable n de tipo int eyer y más abajo adentro del",
+        "start": 4575.02,
+        "end": 4585.660000000001
+    },
+    {
+        "text": " Viguin n tengo esto otro, ¿qué pasa con esta asignación?",
+        "start": 4585.660000000001,
+        "end": 4594.540000000001
+    },
+    {
+        "text": " esta habíamos dicho que funciona bien porque hace conversión implica de entero real ahora",
+        "start": 4596.38,
+        "end": 4602.1
+    },
+    {
+        "text": " terminemos acá la variable n es de tipo int eyer y el valor que pusimos a la derecha es de tipo",
+        "start": 4602.1,
+        "end": 4607.9800000000005
+    },
+    {
+        "text": " pero Pascal no tiene conversión de real entero así que esta no funca no compila el compilador te",
+        "start": 4607.9800000000005,
+        "end": 4615.740000000001
+    },
+    {
+        "text": " la va a tirar como un error como no tenden ni perdón no hay otros lenguajes que te pueden hacer eso",
+        "start": 4615.740000000001,
+        "end": 4623.820000000001
+    },
+    {
+        "text": " te pueden hacer un truncamiento Pascal te hace conversión de entero real pero no al revés",
+        "start": 4623.820000000001,
+        "end": 4628.9800000000005
+    },
+    {
+        "text": " tampoco porque el problema es de tipo no es un problema de tiempo de ejecución esto",
+        "start": 4632.1,
+        "end": 4636.780000000001
+    },
+    {
+        "text": " acuerense que los tipos son chicaos durante la compilación",
+        "start": 4636.780000000001,
+        "end": 4640.18
+    },
+    {
+        "text": " se entendió, bueno quiero poner un poquito más a ver si podemos hacer un poco más de práctico",
+        "start": 4642.820000000001,
+        "end": 4648.860000000001
+    },
+    {
+        "text": " me está último a media hora que nos queda o 20 minutos bueno y lo último que vamos a charlar",
+        "start": 4648.86,
+        "end": 4664.0599999999995
+    },
+    {
+        "text": " es un poco de la presidencia de operadores no sólo se estuvimos viendo distintas expresiones",
+        "start": 4664.0599999999995,
+        "end": 4671.38
+    },
+    {
+        "text": " aritméticas que podían ser expresiones de tipo int eyer o expresiones de tipo real a la hora de",
+        "start": 4671.38,
+        "end": 4681.42
+    },
+    {
+        "text": " evaluar una expresión aritmética Pascal va a seguir este orden que está acá primero si tengo",
+        "start": 4681.42,
+        "end": 4689.74
+    },
+    {
+        "text": " alguna expresión alguna subexpresión entre paréntesis se valúa primero lo que está",
+        "start": 4689.74,
+        "end": 4694.54
+    },
+    {
+        "text": " entre paréntesis que fue lo que hicimos en esta",
+        "start": 4694.54,
+        "end": 4696.7
+    },
+    {
+        "text": " vieron que sovine y dije vamos a ser primero lo que están en paréntesis luego aplicar",
+        "start": 4697.7,
+        "end": 4705.78
+    },
+    {
+        "text": " operaciones de multiplicación y división que pueden ser el por la división real",
+        "start": 4705.78,
+        "end": 4712.22
+    },
+    {
+        "text": " div y modo todas estas se consideran operaciones de multiplicación y división algunas",
+        "start": 4712.22,
+        "end": 4719.0599999999995
+    },
+    {
+        "text": " enteras y otras reales y recién después de esto aplicar las operaciones de suma y resta yo",
+        "start": 4719.06,
+        "end": 4728.4800000000005
+    },
+    {
+        "text": " cuando iba a la escuela a la maestra me decía una frase más y menos se paran términos o sea más",
+        "start": 4728.4800000000005,
+        "end": 4735.9800000000005
+    },
+    {
+        "text": " y menos eran más débiles que quienes que la multiplicación y la división bueno esa regla",
+        "start": 4735.9800000000005,
+        "end": 4742.84
+    },
+    {
+        "text": " es la misma regla que se aplican Pascal los más débiles se dice que tienen menos presidencia",
+        "start": 4742.84,
+        "end": 4750.16
+    },
+    {
+        "text": " los más fuertes se dice que tienen más presidencia y si tienen la misma presidencia como es la evaluación",
+        "start": 4750.16,
+        "end": 4756.96
+    },
+    {
+        "text": " de izquierda de derecha como aparece por ejemplo si vos tenés tres más dos menos uno el más y el",
+        "start": 4757.92,
+        "end": 4764.8
+    },
+    {
+        "text": " menos tienen la misma presidencia bueno en esa expresión se hace tres más dos y al resultado se le hace",
+        "start": 4764.8,
+        "end": 4769.8
+    },
+    {
+        "text": " menos uno sí tienen la misma presencia primero te hará la cohesión automática que corresponda",
+        "start": 4769.8,
+        "end": 4789.16
+    },
+    {
+        "text": " que su acorate que pasa automático y después te va a aplicar sequencialmente porque tienen la misma",
+        "start": 4790.12,
+        "end": 4795.68
+    },
+    {
+        "text": " presidencia si es que la expresión no tiene un error de tipos o sea primero chequea los tipos",
+        "start": 4795.68,
+        "end": 4801.68
+    },
+    {
+        "text": " si hay algo con los tipos de acervido te va a error si los tipos no le hacen ruido entonces como",
+        "start": 4801.68,
+        "end": 4808.400000000001
+    },
+    {
+        "text": " tienen la misma presidencia te los va a aplicarse sequencial fue lo que pasó acá por ejemplo acá teníamos",
+        "start": 4808.400000000001,
+        "end": 4813.4400000000005
+    },
+    {
+        "text": " db mod que eran dos operadores de división y no había problemas de tipos con la presión bueno",
+        "start": 4813.4400000000005,
+        "end": 4819.64
+    },
+    {
+        "text": " en el ejercicio si me proponen algunas declaraciones de variables y hay algunas instrucciones de",
+        "start": 4820.64,
+        "end": 4827.4800000000005
+    },
+    {
+        "text": " asignación ustedes tienen que determinar cuál es de esas instrucciones de asignación son válidas",
+        "start": 4827.4800000000005,
+        "end": 4833.64
+    },
+    {
+        "text": " aplicando todo lo que vimos de tipo escorsión etc. después en el ejercicio 7 si",
+        "start": 4833.64,
+        "end": 4843.400000000001
+    },
+    {
+        "text": " me dan una serie de expresiones y ustedes tienen que determinar dos cosas primero de qué tipo son",
+        "start": 4844.08,
+        "end": 4853.679999999999
+    },
+    {
+        "text": " y segundo cuál es el valor al cual evaluan esas expresiones a bien fíjense bien en los operandos",
+        "start": 4853.679999999999,
+        "end": 4862.679999999999
+    },
+    {
+        "text": " que tienen fíjense bien en los operadores y después el ejercicio 8 es un poco como el ejercicio",
+        "start": 4862.679999999999,
+        "end": 4870.36
+    },
+    {
+        "text": " 6 me da una serie de declaraciones de variables y me propone unas series de asignaciones hay que",
+        "start": 4870.36,
+        "end": 4877.639999999999
+    },
+    {
+        "text": " determinar cuáles son válidas y cuáles ok bueno el diórico lo cortamos acá",
+        "start": 4877.639999999999,
+        "end": 4883.96
+    }
+]

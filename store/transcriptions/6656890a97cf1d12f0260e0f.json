@@ -1,0 +1,6087 @@
+[
+    {
+        "text": " Bueno, entonces, el capítulo tres del libro que estamos siguiendo trata sobre grafos,",
+        "start": 0.0,
+        "end": 11.68
+    },
+    {
+        "text": " sobre algoritmos para grafos.",
+        "start": 11.68,
+        "end": 14.0
+    },
+    {
+        "text": " A que es un tema súper importante y la razón por la cual es súper importante, cuando",
+        "start": 14.0,
+        "end": 22.88
+    },
+    {
+        "text": " hay un montón de teoría, tanto matemática, abstracta como de algodrínia, sobre grafos",
+        "start": 22.88,
+        "end": 32.239999999999995
+    },
+    {
+        "text": " y la razón es que lo grafos, como bien dice el libro algún pasaje por ahí aparece por",
+        "start": 32.239999999999995,
+        "end": 38.78
+    },
+    {
+        "text": " todos lados.",
+        "start": 38.78,
+        "end": 39.78
+    },
+    {
+        "text": " Una vez que uno se acostumbra a modelar cosas en términos de grafos, y ustedes creo",
+        "start": 39.78,
+        "end": 44.2
+    },
+    {
+        "text": " que esa tiene cierta práctica con eso, los grafos y pisan aparecería aparecería aparecer.",
+        "start": 44.2,
+        "end": 49.28
+    },
+    {
+        "text": " Es una herramienta súper barzátil para modelar cosas.",
+        "start": 49.28,
+        "end": 55.480000000000004
+    },
+    {
+        "text": " Entonces, claro, son modelos que aparecen en montón de aplicaciones, a desitación",
+        "start": 55.480000000000004,
+        "end": 61.88
+    },
+    {
+        "text": " de problemas que uno quiere resolver, y al mismo tiempo, y justamente por eso mismo también",
+        "start": 61.88,
+        "end": 69.4
+    },
+    {
+        "text": " es que hay una artisería grande de herramientas, tanto matemáticas como algoritmica para",
+        "start": 69.4,
+        "end": 74.94
+    },
+    {
+        "text": " lidiar para eso.",
+        "start": 74.94,
+        "end": 75.94
+    },
+    {
+        "text": " Entonces, es un combo ideal.",
+        "start": 75.94,
+        "end": 78.46
+    },
+    {
+        "text": " Son cosas que aparecen en la práctica y sobre la cual tenemos desarrollado un montón",
+        "start": 78.46,
+        "end": 81.53999999999999
+    },
+    {
+        "text": " de teoría para trabajar.",
+        "start": 81.53999999999999,
+        "end": 83.53999999999999
+    },
+    {
+        "text": " Lo que vamos a hacer ahora es, bueno, en estas par de semanas es avanzar un poco en el estudio",
+        "start": 83.53999999999999,
+        "end": 89.7
+    },
+    {
+        "text": " de algodrínia.",
+        "start": 89.7,
+        "end": 93.3
+    },
+    {
+        "text": " Si ustedes, el libro arranca con un repaso sobre este grefos, por eso, bueno, voy a sumar",
+        "start": 93.3,
+        "end": 102.22
+    },
+    {
+        "text": " que ustedes lo manejan de discreta.",
+        "start": 102.22,
+        "end": 104.22
+    },
+    {
+        "text": " Si les aconsejo que lean con la atención esa parte del libro, sobre todo, para estar",
+        "start": 104.22,
+        "end": 109.94
+    },
+    {
+        "text": " seguros de que todos manejamos la misma notación y la mezclatura, porque si bien los grafos son",
+        "start": 109.94,
+        "end": 117.38
+    },
+    {
+        "text": " la teore de grafos, es algo súper muy adiusado.",
+        "start": 117.38,
+        "end": 120.94
+    },
+    {
+        "text": " No es raro que hace la discrepancia entre cómo se le llama una cosa o la otra.",
+        "start": 120.94,
+        "end": 127.7
+    },
+    {
+        "text": " Entonces, bueno, va a ver la pena que todos se inteo y hicimos el mismo lenguaje.",
+        "start": 127.7,
+        "end": 134.7
+    },
+    {
+        "text": " Si ustedes ver el capítulo de los tres que es sobre grafos, no parece tan extenso.",
+        "start": 134.7,
+        "end": 148.74
+    },
+    {
+        "text": " Yo le estoy diciendo que aparece mucho y que se usa mucho y que hay mucha teorea de",
+        "start": 148.74,
+        "end": 159.06
+    },
+    {
+        "text": " desarrollo.",
+        "start": 159.06,
+        "end": 160.06
+    },
+    {
+        "text": " Lo que pasa es que van a ver que en futuros capítulos de libro, me decamos en el curso,",
+        "start": 160.06,
+        "end": 165.98000000000002
+    },
+    {
+        "text": " vamos a estar tratando otros temas o con el rótulo de otros temas, pero vamos a seguir",
+        "start": 165.98000000000002,
+        "end": 172.82000000000002
+    },
+    {
+        "text": " viendo otros al horismo sobre grafos.",
+        "start": 172.82000000000002,
+        "end": 175.02
+    },
+    {
+        "text": " Entonces, a cualen sé que uno de nuestros objetivos es que manejen algoritmos clásicos,",
+        "start": 175.02,
+        "end": 182.02
+    },
+    {
+        "text": " entre ellos, algoritmos para tratar con grafos y también quedó bien en técnicas de diseño",
+        "start": 182.02,
+        "end": 192.26000000000002
+    },
+    {
+        "text": " de algoritmos.",
+        "start": 192.26000000000002,
+        "end": 193.26000000000002
+    },
+    {
+        "text": " Por ejemplo, entonces hay buenas técnicas de diseño, hábidos que es lo que vamos a sacar",
+        "start": 193.26000000000002,
+        "end": 198.74
+    },
+    {
+        "text": " después en el siguiente capítulo, o gríe y inglés, herramientas de programación dinámica,",
+        "start": 198.74,
+        "end": 207.3
+    },
+    {
+        "text": " técnicas de vida y vencerás.",
+        "start": 207.3,
+        "end": 210.34
+    },
+    {
+        "text": " Entonces van a ver que mientras estudiamos estrategias para diseñar algoritmos, también",
+        "start": 210.34,
+        "end": 216.06
+    },
+    {
+        "text": " nos vamos a encontrar muchas veces con ejemplos de algoritmos sobre grafos que son a su",
+        "start": 216.06,
+        "end": 225.08
+    },
+    {
+        "text": " ejemplo de esas técnicas de diseño de algoritmos.",
+        "start": 225.08,
+        "end": 227.68
+    },
+    {
+        "text": " Entonces van a ver algoritmos para grafos que son ejemplas de algoritmos gríde, que son",
+        "start": 227.68,
+        "end": 231.32000000000002
+    },
+    {
+        "text": " ejemplas de algoritmos de programación dinámica, etcétera, etcétera.",
+        "start": 231.32000000000002,
+        "end": 234.96
+    },
+    {
+        "text": " Entonces, piensen en esto una primera aproximación de algoritmos de grafos y vamos a ver",
+        "start": 234.96,
+        "end": 240.54000000000002
+    },
+    {
+        "text": " muchos otros como ejemplos de técnicas de diseño de algoritmos.",
+        "start": 240.54000000000002,
+        "end": 249.48000000000002
+    },
+    {
+        "text": " Esto que está viendo acá, espero que lo está viendo, compartiendo pantalla, es un grafo,",
+        "start": 249.48,
+        "end": 261.03999999999996
+    },
+    {
+        "text": " un ejemplo de un grafo, un ejemplo de una aplicación donde de tener un problema se",
+        "start": 261.03999999999996,
+        "end": 267.59999999999997
+    },
+    {
+        "text": " modela con grafos, por nombrarles algo interesante y relativamente reciente.",
+        "start": 267.59999999999997,
+        "end": 273.64
+    },
+    {
+        "text": " Esto es una imagen de una parte de un tipo de grafo que se usó para estudiar toda la",
+        "start": 273.64,
+        "end": 282.28
+    },
+    {
+        "text": " rey de la corrupción con los panas map papers.",
+        "start": 282.28,
+        "end": 284.91999999999996
+    },
+    {
+        "text": " Entonces un montón de, pues, apareció toda esa información, apareció definitiva",
+        "start": 284.91999999999996,
+        "end": 291.97999999999996
+    },
+    {
+        "text": " una tejida, una maraña de datos que se conectan uno con otros, que es imposible,",
+        "start": 291.97999999999996,
+        "end": 299.88
+    },
+    {
+        "text": " bueno, tremendamente difícil de estudiar a mano, lo que sí hizo modelar todo eso con",
+        "start": 299.88,
+        "end": 304.86
+    },
+    {
+        "text": " grafos, las maristas modelas de la relación, las partes de nosotros, para caer algunas",
+        "start": 304.86,
+        "end": 311.48
+    },
+    {
+        "text": " legendas que se lleguen a cada cosa.",
+        "start": 311.48,
+        "end": 315.92
+    },
+    {
+        "text": " Y a partir de ahí una vez que tiene la información modelada como un grafo, bueno, uno",
+        "start": 315.92,
+        "end": 320.36
+    },
+    {
+        "text": " puede empezar a explorar y encontrar vínculos en esas cosas, ¿no?",
+        "start": 320.36,
+        "end": 324.68
+    },
+    {
+        "text": " Y para eso lo que hay que hacer es correr un montón de algoritmos que nos permitan",
+        "start": 324.68,
+        "end": 332.16
+    },
+    {
+        "text": " en definitiva navegar, explorar y encontrar patrones adentro de esos grafos que son",
+        "start": 332.16,
+        "end": 338.32
+    },
+    {
+        "text": " descomunalmente grandes.",
+        "start": 338.32,
+        "end": 340.04
+    },
+    {
+        "text": " Estaban encontrar eso, por ejemplo, también en la aplicación de la de bienformática,",
+        "start": 340.04,
+        "end": 345.48
+    },
+    {
+        "text": " que los volúmenes de datos ahí son descomunales y de vuelta hay muchas aplicaciones en",
+        "start": 345.48,
+        "end": 351.92
+    },
+    {
+        "text": " grafos y hay que correr los algoritmos que vamos a estudiar para lidiar con ellos.",
+        "start": 351.92,
+        "end": 361.28000000000003
+    },
+    {
+        "text": " En todos estos ejemplos además el volúmen de datos es suele ser mostruoso y la eficiencia",
+        "start": 361.28000000000003,
+        "end": 368.96000000000004
+    },
+    {
+        "text": " de los algoritmos es fundamental.",
+        "start": 368.96000000000004,
+        "end": 372.44
+    },
+    {
+        "text": " Y eso es algo a lo cual tal, vamos a prestar atención a nosotros el nuevo dato del curso,",
+        "start": 372.44,
+        "end": 376.48
+    },
+    {
+        "text": " no solo cuando vimos en grafos, sino en general.",
+        "start": 376.48,
+        "end": 378.8
+    },
+    {
+        "text": " Ahora me he visto que es parte central de lo que estudiamos.",
+        "start": 378.8,
+        "end": 383.8
+    },
+    {
+        "text": " Y por hecho en muchas problemas reales es un desafío real, realmente lo que a nosotros",
+        "start": 383.8,
+        "end": 391.36
+    },
+    {
+        "text": " nos ocupa como ingenieros en computaciones, lograr hoy implementar algoritmos eficientes",
+        "start": 391.36,
+        "end": 398.52000000000004
+    },
+    {
+        "text": " para lidiar como volúmenes muy grandes datos.",
+        "start": 398.52000000000004,
+        "end": 400.36
+    },
+    {
+        "text": " Acá alguien está preguntando por la representación de los grafos, ahora después vamos a llegar",
+        "start": 406.48,
+        "end": 417.56
+    },
+    {
+        "text": " a eso un poco más adelante.",
+        "start": 417.56,
+        "end": 421.92
+    },
+    {
+        "text": " Los grafos tienen algo que ver con GPS.",
+        "start": 421.92,
+        "end": 431.96000000000004
+    },
+    {
+        "text": " Los grafos tienen que ver con todo, por ejemplo si pueden modular información geográfica",
+        "start": 431.96,
+        "end": 439.2
+    },
+    {
+        "text": " y van a ver en el libro también de vuelta.",
+        "start": 439.2,
+        "end": 446.44
+    },
+    {
+        "text": " Otros ejemplos se aman de esto que le estoy mencionando porque hay que preson eso.",
+        "start": 446.44,
+        "end": 450.35999999999996
+    },
+    {
+        "text": " Simplemente unos pocos ejemplos de un universo enorme de aplicación de la teoria de grafos.",
+        "start": 450.35999999999996,
+        "end": 458.71999999999997
+    },
+    {
+        "text": " Así como está esto de los paramape, pero acá en Uruguay se está haciendo algo parecido",
+        "start": 458.72,
+        "end": 463.16
+    },
+    {
+        "text": " con los archivos que han encontrado sobre la dictadura.",
+        "start": 463.16,
+        "end": 466.28000000000003
+    },
+    {
+        "text": " Entonces hay montón de información que vincula personas, se ve ánimo de personas, fechas,",
+        "start": 466.28000000000003,
+        "end": 475.08000000000004
+    },
+    {
+        "text": " lugares.",
+        "start": 475.08000000000004,
+        "end": 476.08000000000004
+    },
+    {
+        "text": " Allí todo eso es una montaña, una pila gigante de información que analizarla es una",
+        "start": 476.08000000000004,
+        "end": 484.36
+    },
+    {
+        "text": " paría artitánica y para eso se puede hacerle que se está haciendo con los grafos y analizar",
+        "start": 484.36,
+        "end": 488.88
+    },
+    {
+        "text": " esos grafos usando el tipo de logaritmo como se estudiar ahora.",
+        "start": 488.88,
+        "end": 498.56
+    },
+    {
+        "text": " Entonces eso es simplemente como para ilustrarles un par de ejemplos más que se suman a los",
+        "start": 498.56,
+        "end": 506.92
+    },
+    {
+        "text": " libros y que aún así son una fracción chiquitita de las misiones de aplicaciones que",
+        "start": 506.92,
+        "end": 513.96
+    },
+    {
+        "text": " tienen este tipo de herramientas.",
+        "start": 513.96,
+        "end": 518.36
+    },
+    {
+        "text": " Bien.",
+        "start": 518.36,
+        "end": 520.36
+    },
+    {
+        "text": " Entonces, lo que voy a hacer ahora es comentarles un poco como hemos hecho otras veces.",
+        "start": 526.36,
+        "end": 536.44
+    },
+    {
+        "text": " Esta infunción de lo que están en libro, en partida de las notas que sus compañeros",
+        "start": 536.44,
+        "end": 543.44
+    },
+    {
+        "text": " han introducido a Castellano, me anote una serie de correcciones a la traducción, que",
+        "start": 543.44,
+        "end": 553.96
+    },
+    {
+        "text": " se las voy a mandar en el foro de novedades, así no tenemos que estar mirándolas ahora",
+        "start": 553.96,
+        "end": 559.24
+    },
+    {
+        "text": " una porura.",
+        "start": 559.24,
+        "end": 561.5600000000001
+    },
+    {
+        "text": " Estas observaciones sobre la traducción, yo me limito hacerlas sobre las cosas que entiendo",
+        "start": 561.56,
+        "end": 569.0799999999999
+    },
+    {
+        "text": " que pueden para educar el entendimiento, así que pueden llevar a confusión.",
+        "start": 569.0799999999999,
+        "end": 575.88
+    },
+    {
+        "text": " Después, por supuesto, de montar de aperezas de traducción que creo que nos afectan",
+        "start": 575.88,
+        "end": 583.64
+    },
+    {
+        "text": " el entendimiento profundo de las cosas.",
+        "start": 583.64,
+        "end": 586.0799999999999
+    },
+    {
+        "text": " Es supuesto que el que tiene habilidad para leer en inglés, debien venir y siempre",
+        "start": 586.08,
+        "end": 590.24
+    },
+    {
+        "text": " gastar mucho más por el libro original que las notas.",
+        "start": 590.24,
+        "end": 595.0
+    },
+    {
+        "text": " Pero bueno, para aquellos que se sienten mucho más cómodos en Castellano, que en inglés,",
+        "start": 595.0,
+        "end": 602.36
+    },
+    {
+        "text": " tenemos esta otra posibilidad.",
+        "start": 602.36,
+        "end": 606.12
+    },
+    {
+        "text": " Entonces, como les decía, el libro arranca con una serie de repasos sobre grafos, que",
+        "start": 606.12,
+        "end": 623.88
+    },
+    {
+        "text": " no lo voy a hacer acá, pero les saco el cejo que lo lean, sobre todo como les decía,",
+        "start": 623.88,
+        "end": 630.32
+    },
+    {
+        "text": " para estar seguro que estamos todos en cintanía con el mismo tipo de notación y definiciones,",
+        "start": 630.32,
+        "end": 638.1600000000001
+    },
+    {
+        "text": " etcétera.",
+        "start": 638.1600000000001,
+        "end": 639.1600000000001
+    },
+    {
+        "text": " Por ejemplo, se las definiciones del camino, de camino simple, de ciclo, de grafos dirigidos",
+        "start": 639.1600000000001,
+        "end": 645.12
+    },
+    {
+        "text": " o no dirigidos.",
+        "start": 645.12,
+        "end": 646.12
+    },
+    {
+        "text": " Todas esas cosas, a veces difieren, entre una bibliografía y otra, el libro y otro.",
+        "start": 646.12,
+        "end": 654.36
+    },
+    {
+        "text": " El mismo podría pasar incluso entre un curso y otro dentro de la comunidad.",
+        "start": 654.36,
+        "end": 658.5600000000001
+    },
+    {
+        "text": " Entonces, más vale tener el principio un check que estamos todos alineados.",
+        "start": 658.5600000000001,
+        "end": 664.08
+    },
+    {
+        "text": " ¿Claro?",
+        "start": 664.08,
+        "end": 666.28
+    },
+    {
+        "text": " El primer, en qué vamos a trabajar con cuando se habla de grafos asecas, vamos a estar",
+        "start": 666.28,
+        "end": 676.16
+    },
+    {
+        "text": " hablando de grafos no dirigidos.",
+        "start": 676.16,
+        "end": 680.44
+    },
+    {
+        "text": " Uno de los primeros problemas que nos plantemos estudiar es este de la conectividad,",
+        "start": 680.44,
+        "end": 687.6
+    },
+    {
+        "text": " ST de un grafos.",
+        "start": 687.6,
+        "end": 690.0
+    },
+    {
+        "text": " Es decir, dados 2, verdes y ojos no dos, ST en un grafos.",
+        "start": 690.0,
+        "end": 696.8800000000001
+    },
+    {
+        "text": " Imagínense en el grafo de los panamapapas que veíamos recién, dados 2, más personas,",
+        "start": 696.8800000000001,
+        "end": 707.0400000000001
+    },
+    {
+        "text": " dos, no, representan personas, que vamos a ver si hay algún camino que los conecten",
+        "start": 707.04,
+        "end": 711.92
+    },
+    {
+        "text": " ese grafos, que de alguna manera nos vincularía entre eso.",
+        "start": 711.92,
+        "end": 716.5999999999999
+    },
+    {
+        "text": " O sea, si es una persona con determinado banco.",
+        "start": 716.5999999999999,
+        "end": 720.4399999999999
+    },
+    {
+        "text": " Por decir, vamos a hacer tener cosas mucho más complejas, como no sé, cuantos caminos, de",
+        "start": 720.4399999999999,
+        "end": 731.36
+    },
+    {
+        "text": " un largo menor que tanto tienen.",
+        "start": 731.36,
+        "end": 733.56
+    },
+    {
+        "text": " Es todo ese tipo de cosas que pueden ser interesantes para explorar grafos como el ejemplo",
+        "start": 733.56,
+        "end": 737.88
+    },
+    {
+        "text": " S, vamos a ver algo en los para esas cosas.",
+        "start": 737.88,
+        "end": 740.52
+    },
+    {
+        "text": " La primera más básica de todos, es decir, bueno, tengo dos nojos, están conectados o no.",
+        "start": 740.52,
+        "end": 747.4
+    },
+    {
+        "text": " Si, básicamente, partenésemos en la misma componente con X, o no.",
+        "start": 747.4,
+        "end": 751.4799999999999
+    },
+    {
+        "text": " Y bueno, a ver que en realidad, de hecho, lo que vamos a terminar haciendo es resolver",
+        "start": 751.4799999999999,
+        "end": 758.16
+    },
+    {
+        "text": " este problema, resolviendo uno más general que es directamente construir la componente,",
+        "start": 758.16,
+        "end": 762.56
+    },
+    {
+        "text": " las componentes con X, de un grafos, vamos a ver cómo hacer eso, eficientemente.",
+        "start": 762.56,
+        "end": 769.56
+    },
+    {
+        "text": " Entonces, la forma de hacer eso va a ser explorando el grafos, es decir, recorriendo los",
+        "start": 769.56,
+        "end": 782.56
+    },
+    {
+        "text": " górites y ir, como haciendo crecer, la componente con X, de un determinado górites y encontrando",
+        "start": 782.56,
+        "end": 790.56
+    },
+    {
+        "text": " todos los górites que están conectados a él.",
+        "start": 790.56,
+        "end": 798.3599999999999
+    },
+    {
+        "text": " Vamos a ver un par de algoritmos que son bien clásicos, de recorrida de grafos, que se",
+        "start": 798.3599999999999,
+        "end": 805.9599999999999
+    },
+    {
+        "text": " se llama BFS, con la Sina del inglés, de First Search, que la reducción sería así como",
+        "start": 805.96,
+        "end": 812.72
+    },
+    {
+        "text": " buquea en amplitude.",
+        "start": 812.72,
+        "end": 814.72
+    },
+    {
+        "text": " Y otro hoy, vamos a ver un poquito más adelante, se llama DFS, con D, dedo, que es DFS",
+        "start": 814.72,
+        "end": 824.36
+    },
+    {
+        "text": " Search, que es este que está acá, que es buquea en profundidad.",
+        "start": 824.36,
+        "end": 829.24
+    },
+    {
+        "text": " En realidad ambos son casos particulares de una algoritmo más general para ir expandiendo",
+        "start": 829.24,
+        "end": 842.44
+    },
+    {
+        "text": " de poco una componente con X y encontrar la todo definición.",
+        "start": 842.44,
+        "end": 847.04
+    },
+    {
+        "text": " Pero son casos particulares muy usados, pues más, el orden que recorre los verdes,",
+        "start": 847.04,
+        "end": 852.24
+    },
+    {
+        "text": " tiene propiedades interesantes que no van a servir muchas veces.",
+        "start": 852.24,
+        "end": 858.24
+    },
+    {
+        "text": " Entonces vamos a arrancar con BFS, este buquea de primer nivel acá debería ser un BFS",
+        "start": 858.24,
+        "end": 865.24
+    },
+    {
+        "text": " o un buquea en amplitude.",
+        "start": 865.24,
+        "end": 872.04
+    },
+    {
+        "text": " Con el nombre Sugire, lo que hacemos en esta forma de recorrer el grafos, es ir diciendo",
+        "start": 872.04,
+        "end": 881.92
+    },
+    {
+        "text": " por niveles, partimos de un punto de partida, un cierto BFS y vamos avanzando por niveles,",
+        "start": 881.92,
+        "end": 891.7199999999999
+    },
+    {
+        "text": " es decir, todos los nodos que están a distancia uno, o sea, los que puedo hacer directamente",
+        "start": 891.7199999999999,
+        "end": 898.12
+    },
+    {
+        "text": " del ES, después todos los que puedo hacer desde allí, etcétera, etcétera.",
+        "start": 898.12,
+        "end": 903.52
+    },
+    {
+        "text": " Entonces vamos a ir construciendo capas, el E1, el E2 y el E3, donde el E1 son todos los nodos",
+        "start": 903.52,
+        "end": 914.52
+    },
+    {
+        "text": " en los que puedo hacer desde ese, y el E2 son todos los que puedo acceder a partir de nodos",
+        "start": 914.52,
+        "end": 923.52
+    },
+    {
+        "text": " de E1, el E3, los que puedo acceder a partir de ahí, etcétera.",
+        "start": 923.52,
+        "end": 930.52
+    },
+    {
+        "text": " Vamos a dar un ejemplo para ver lo que estamos diciendo, imagínense que este es el grafón.",
+        "start": 930.52,
+        "end": 940.52
+    },
+    {
+        "text": " Este grafón, como ven, tiene tres componentes con exas, claramente visible,",
+        "start": 940.52,
+        "end": 957.52
+    },
+    {
+        "text": " digamos que partimos desde el nodo 1, desde este grafón.",
+        "start": 957.52,
+        "end": 967.52
+    },
+    {
+        "text": " Entonces este sería nuestro nodo SN, y a veces por conveniencia de notación,",
+        "start": 969.52,
+        "end": 979.52
+    },
+    {
+        "text": " esto le vamos a samar al conjunto que tiene solo ese bar desinicial, el E0, la capa es de nivel 0.",
+        "start": 979.52,
+        "end": 993.52
+    },
+    {
+        "text": " Y a partir de ahí, bueno, empezamos a ver, bueno, ¿a dónde siguiendo aristas que me conectan con ese? ¿a dónde puedo llegar?",
+        "start": 999.52,
+        "end": 1005.52
+    },
+    {
+        "text": " Bueno, este puedo llegar hasta 2, hasta el B3 y puede llegar hasta el B3.",
+        "start": 1005.52,
+        "end": 1011.52
+    },
+    {
+        "text": " Entonces, esto es B1, sería el nivel 1, y pisezelo todos los B3, que están a distancia 1 de ese,",
+        "start": 1013.52,
+        "end": 1025.52
+    },
+    {
+        "text": " pues son todos los que a los que puedo acceder directamente en un solo paso desde ese.",
+        "start": 1025.52,
+        "end": 1031.52
+    },
+    {
+        "text": " Ahora, una vez que agregué esos dos nodos, en una partida, ahí puedo acceder a otros nodos siguiendo arista,",
+        "start": 1031.52,
+        "end": 1041.52
+    },
+    {
+        "text": " por ejemplo, desde 2, puedo acceder a 4 y a 5, a 5 también puedo acceder a 3,",
+        "start": 1041.52,
+        "end": 1045.52
+    },
+    {
+        "text": " pues también acceder a 8 y a 7 y haciendo desde 3, o sea que, acá hay todo otro conjunto de nodos o bértices,",
+        "start": 1045.52,
+        "end": 1058.52
+    },
+    {
+        "text": " que conforman otra capa más otro nivel, que sería el E2, de nodos que están a distancia 2,",
+        "start": 1061.52,
+        "end": 1070.52
+    },
+    {
+        "text": " todos esos puedo llegar en 2 pasos como a través de la capa 1.",
+        "start": 1071.52,
+        "end": 1076.52
+    },
+    {
+        "text": " Y bueno, a ver que estoy ahí, puedo llegar una 3ª capa,",
+        "start": 1081.52,
+        "end": 1085.52
+    },
+    {
+        "text": " el E3, que solo tiene el albergic 6 en este caso,",
+        "start": 1091.52,
+        "end": 1096.52
+    },
+    {
+        "text": " y acá, aunque quisiera seguir ya no puedo salir,",
+        "start": 1097.52,
+        "end": 1100.52
+    },
+    {
+        "text": " está no en ninguna arista que me conecte estos bértices del E3, el E1, el E2, el E3 con algo más.",
+        "start": 1100.52,
+        "end": 1107.52
+    },
+    {
+        "text": " Y ven que el definitivo lo que terminé construyendo es la componente conencia de S, del B1.",
+        "start": 1108.52,
+        "end": 1115.52
+    },
+    {
+        "text": " Construyen definitiva el conjunto de todos los bértices a los que puedo acceder desde S,",
+        "start": 1119.52,
+        "end": 1123.52
+    },
+    {
+        "text": " como cuando primero agredir los que están los que puedo acceder en un paso, después nos puedo acceder en 2 pasos,",
+        "start": 1123.52,
+        "end": 1128.52
+    },
+    {
+        "text": " después los que puedo acceder en 3 pasos, y ahí ya no puedo acceder a más nada,",
+        "start": 1128.52,
+        "end": 1132.52
+    },
+    {
+        "text": " así que esa es toda la componente con S.",
+        "start": 1132.52,
+        "end": 1134.52
+    },
+    {
+        "text": " Con S.",
+        "start": 1134.52,
+        "end": 1135.52
+    },
+    {
+        "text": " Esto es especialmente el Vivo VFS, bien sencillo.",
+        "start": 1148.52,
+        "end": 1156.52
+    },
+    {
+        "text": " Una observación, es que la capa era su jota, por el nivel, a veces nos amamos producida por VFS,",
+        "start": 1157.52,
+        "end": 1167.52
+    },
+    {
+        "text": " tiene todos los nodos de la distancia jota de VFS, no, no, no es bastante evidente por lo que les comentaba gracias.",
+        "start": 1167.52,
+        "end": 1173.52
+    },
+    {
+        "text": " Está yo en un camino de S.T. y solo sí, te aparecen algunas capas también por los argumentos que usamos gracias.",
+        "start": 1174.52,
+        "end": 1181.52
+    },
+    {
+        "text": " Así es definitiva, terminé construyendo la componente con S.",
+        "start": 1181.52,
+        "end": 1189.52
+    },
+    {
+        "text": " Ahora, otra propiedad que me interesa resaltar de VFS, y vamos a ver, para VFS, es que construye un Arbol T con raíz S,",
+        "start": 1193.52,
+        "end": 1205.52
+    },
+    {
+        "text": " y vamos a llamar Arbol VFS, Arbol de Recorrida VFS, y lo mismo vamos a hacer con VFS.",
+        "start": 1205.52,
+        "end": 1213.52
+    },
+    {
+        "text": " Y estos Arbol tienen propiedades bien interesantes que vamos a estudiar.",
+        "start": 1213.52,
+        "end": 1218.52
+    },
+    {
+        "text": " ¿Cómo se construye ese Arbol?",
+        "start": 1221.52,
+        "end": 1223.52
+    },
+    {
+        "text": " Y bueno, son las aristas del Arbol, me van marcando desde que nodos,",
+        "start": 1223.52,
+        "end": 1232.52
+    },
+    {
+        "text": " y no se pudo acceder a otro nodo para formar un camino que me conecta con S.T.",
+        "start": 1232.52,
+        "end": 1237.52
+    },
+    {
+        "text": " Y la verdad que voy descubriendo los nuevos en los diferentes niveles,",
+        "start": 1237.52,
+        "end": 1241.52
+    },
+    {
+        "text": " voy acordándome, voy registrando la arista a través de la cual accedí por primera vez a ese barrio.",
+        "start": 1241.52,
+        "end": 1249.52
+    },
+    {
+        "text": " Entonces, ¿cómo se derían en el ejemplo que vimos recién?",
+        "start": 1251.52,
+        "end": 1257.52
+    },
+    {
+        "text": " Le vayamos a transportar unas personas por la derecha que engravisamos para avanzar.",
+        "start": 1262.52,
+        "end": 1269.52
+    },
+    {
+        "text": " Derra mater parte.",
+        "start": 1269.52,
+        "end": 1270.52
+    },
+    {
+        "text": " Ahora vamos a ver el hola.",
+        "start": 1270.52,
+        "end": 1271.52
+    },
+    {
+        "text": " Este combate ha sido Makeshot, Nuevo G Sixt 때.",
+        "start": 1271.52,
+        "end": 1275.52
+    },
+    {
+        "text": " ¿Qué haces?",
+        "start": 1275.52,
+        "end": 1276.52
+    },
+    {
+        "text": " Que tota él lo ha subierto bien?",
+        "start": 1276.52,
+        "end": 1280.52
+    },
+    {
+        "text": " Es mejor, ¿COMRERIE?",
+        "start": 1280.52,
+        "end": 1283.52
+    },
+    {
+        "text": " opponent...",
+        "start": 1283.52,
+        "end": 1286.52
+    },
+    {
+        "text": " Fue看一下.",
+        "start": 1286.52,
+        "end": 1291.52
+    },
+    {
+        "text": " Entonces, ¿cómo en el ejemplo de este version 5, como sería el arroque, sería el arrole de BFS?",
+        "start": 1291.52,
+        "end": 1297.52
+    },
+    {
+        "text": " Bueno, además, más de un posible arro, ¿está? Pero...",
+        "start": 1297.52,
+        "end": 1303.52
+    },
+    {
+        "text": " Una posibilidad de ser así. Yo aparto desde uno, desde el orque según,",
+        "start": 1311.52,
+        "end": 1317.52
+    },
+    {
+        "text": " ¿qué bueno? ¿A quiénes puedo acceder desde acá?",
+        "start": 1317.52,
+        "end": 1321.52
+    },
+    {
+        "text": " Y bueno, con esta arista, por ejemplo, si sigo esta arista,",
+        "start": 1321.52,
+        "end": 1325.52
+    },
+    {
+        "text": " llevo a ver el nodo 2 y lo agrego y tengo otra arista para ver qué se está.",
+        "start": 1325.52,
+        "end": 1331.52
+    },
+    {
+        "text": " Y ahí veo, por primera vez, descubro el lugar 13.",
+        "start": 1334.52,
+        "end": 1341.52
+    },
+    {
+        "text": " Entonces esas aristas se agregan al arro. Y ahí construye el nivel 11.",
+        "start": 1341.52,
+        "end": 1347.52
+    },
+    {
+        "text": " Ahora, empezó a explorar estos nodos que se ha descubierto, acá acabo de descubrir,",
+        "start": 1347.52,
+        "end": 1353.52
+    },
+    {
+        "text": " están en el nivel 11. Bueno, en el 1, aquí en este no tengo la 2 y la tengo la ranco por 2.",
+        "start": 1353.52,
+        "end": 1359.52
+    },
+    {
+        "text": " Entonces, en 2 que aristas tengo... Bueno, en 2 tengo una arista que me conecta con 1.",
+        "start": 1359.52,
+        "end": 1367.52
+    },
+    {
+        "text": " Pero uno ya lo había descubierto así que ese no me agrego nada.",
+        "start": 1368.52,
+        "end": 1374.52
+    },
+    {
+        "text": " Por el hecho, esa arista estaba. También tengo una arista que me conecta con 3.",
+        "start": 1374.52,
+        "end": 1379.52
+    },
+    {
+        "text": " Pero al Vartis E3 ya lo había descubierto, ya está en el 1.",
+        "start": 1381.52,
+        "end": 1385.52
+    },
+    {
+        "text": " Así que esta esa arista no la agrego al arro porque no estoy descubriendo por primera vez un Vartis así.",
+        "start": 1385.52,
+        "end": 1391.52
+    },
+    {
+        "text": " También tengo una arista que me conecta con 4 y 4 sí, todavía no lo había visto.",
+        "start": 1392.52,
+        "end": 1397.52
+    },
+    {
+        "text": " Entonces estoy descubriendo en este momento el nodo 4.",
+        "start": 1397.52,
+        "end": 1400.52
+    },
+    {
+        "text": " Y agrego esta arista al árbol.",
+        "start": 1402.52,
+        "end": 1405.52
+    },
+    {
+        "text": " Y en ese momento además voy agregando 4 al nivel 2.",
+        "start": 1407.52,
+        "end": 1412.52
+    },
+    {
+        "text": " ¿Pero fue una consulta?",
+        "start": 1413.52,
+        "end": 1414.52
+    },
+    {
+        "text": " La decisión de empezar a expandirte por 2 que por 3 es completamente arbitraria.",
+        "start": 1415.52,
+        "end": 1421.52
+    },
+    {
+        "text": " Es completamente arbitraria, eso es una buena observación y por eso como les decía recién, el árbol no tiene por qué ser único.",
+        "start": 1421.52,
+        "end": 1428.52
+    },
+    {
+        "text": " Yo podría haber arrancado en vez de por 2.",
+        "start": 1430.52,
+        "end": 1432.52
+    },
+    {
+        "text": " O sea, una vez que descubrí todos los Vartis E3 que están en el nivel 1, que en este caso son 2 y 3.",
+        "start": 1432.52,
+        "end": 1438.52
+    },
+    {
+        "text": " Entonces, vamos a empezar a recorrerlos a explorarlos para seguir descubriendo otros Vartis que están en capas sus siguientes y podrían empezar por 2 como estoy haciendo ahora o podrían haber empezado por 3.",
+        "start": 1439.52,
+        "end": 1452.52
+    },
+    {
+        "text": " Y eso es arbitrario y te puedes llegar a dar árboles diferentes todos con el mismo derecho a samar a sear un VFs.",
+        "start": 1453.52,
+        "end": 1463.52
+    },
+    {
+        "text": " Por favor, agradece una buena observación y de hecho creo que lo tengo notado por ahí para comentárselos que devuelta igual que como pasado al horismo de gays-sapple.",
+        "start": 1464.52,
+        "end": 1475.52
+    },
+    {
+        "text": " Tenemos un horismo que está subespecificado.",
+        "start": 1479.52,
+        "end": 1482.52
+    },
+    {
+        "text": " Si nos dice claramente qué hacer, vamos a ver que nada en esas decisiones que están libradas un poco la arbitrariedad de cada uno, podemos terminar con resultados diferentes, pero que todos son equivalentes del punto de vista de que todos terminan construyendo la componente con exa y van a terminar construyendo un árbol VFs con las propiedades que vamos a dar.",
+        "start": 1483.52,
+        "end": 1502.52
+    },
+    {
+        "text": " Podrán ser distintos entre sí, pero cualquiera de ellos me sirve.",
+        "start": 1502.52,
+        "end": 1506.52
+    },
+    {
+        "text": " Entonces eso es algo que decía, que van a ver que pase y pasa que los sabemos de están subespecificadas.",
+        "start": 1506.52,
+        "end": 1513.52
+    },
+    {
+        "text": " O sea, hay margen de para resolver al uno de los pasos de forma un poco arbitraria, porque sabemos que cualquiera de las cosas que hagas está bien.",
+        "start": 1513.52,
+        "end": 1525.52
+    },
+    {
+        "text": " Va a terminar con un resultado correcto.",
+        "start": 1525.52,
+        "end": 1527.52
+    },
+    {
+        "text": " Bueno, yo creo que el chat se mueve bastante, o sea, si el chat, digamos, queda agrideros ustedes, pero si hay mucho diálogo, yo después vas a imposir que miren las preguntas.",
+        "start": 1533.52,
+        "end": 1550.52
+    },
+    {
+        "text": " Se va a generar un hilo muy largo de conversación entre ustedes y yo no voy a pasar que nos quede preguntas perdidas y que son las cuáles comas, pero bueno, definitivamente es un resuelto de ustedes.",
+        "start": 1551.52,
+        "end": 1566.52
+    },
+    {
+        "text": " Prof.",
+        "start": 1566.52,
+        "end": 1568.52
+    },
+    {
+        "text": " La pregunta que estamos viendo del chat si el algoritmo puede arrancar por cualquiera si por ejemplo el ese tiene que ser el uno, por ejemplo, podría ser el 13 les.",
+        "start": 1568.52,
+        "end": 1577.52
+    },
+    {
+        "text": " Si, puede ser arrancándose de cualquiera podría ser el 9 el ese y ahí lo va a ser terminado construciendo es otra componente con exa.",
+        "start": 1578.52,
+        "end": 1586.52
+    },
+    {
+        "text": " Entonces el ese definitivamente es como la se inicia el punto de partida, a partir de lo que vas a hacer empezar a hacer crecer tu componente con exa y va a seguir construciendo esa estructura de niveles.",
+        "start": 1586.52,
+        "end": 1601.52
+    },
+    {
+        "text": " Si para vos es si para vos es indistinto, si si cualquier parte se te da lo mismo, por ejemplo si tienes que encontrar todas las componentes con exa de un bravo, que es algo que vamos a ver, o sea, el ese puede ser cualquiera.",
+        "start": 1602.52,
+        "end": 1616.52
+    },
+    {
+        "text": " Muchas veces la determinada pasando es que vos tenés un interés particular en un en un verde se terminaba, imagínate en el ejemplo este de los panama paper si vos tenés una determinada ese de representar una determinada institución o en los archivos de la habitadura ese representa una fecha.",
+        "start": 1616.52,
+        "end": 1636.52
+    },
+    {
+        "text": " Voy a ver cosas que han pasado en esa fecha. Entonces, vas a ver el ese no es arbitrario porque es algo que en tu problema en particular que estás atacando a este interesa particularmente.",
+        "start": 1637.52,
+        "end": 1649.52
+    },
+    {
+        "text": " Entonces, vos querés para un es específico que para vos tenés un significado encontrar todos los vértices que están conectados a ese vértices de ese y en este caso no solo eso sino además, ¿a qué distancia están?",
+        "start": 1650.52,
+        "end": 1666.52
+    },
+    {
+        "text": " Pero sí, puede ser encargue de cualquier.",
+        "start": 1667.52,
+        "end": 1672.52
+    },
+    {
+        "text": " Bueno, siguiendo con el ejemplo este de construcción del árbol, ahí estamos explorando el vértice 4, entonces ahí dijimos, a ver, no me preocupa, estamos explorando el vértice 2.",
+        "start": 1675.52,
+        "end": 1687.52
+    },
+    {
+        "text": " Cuando exploramos el vértice 2 dijimos, bueno, exploramos la lista con 1, el 1 ya estaba descubierto, exploramos la lista con 3, el 3 ya estaba descubierto, exploramos la lista con 4, es así, los descubrimos y lo agregamos al nivel el 2.",
+        "start": 1688.52,
+        "end": 1701.52
+    },
+    {
+        "text": " Ahora, exploramos la lista con 5 y de vuelta, 5 no estaba descubierto, es la primera vez que lo estén mirando, entonces lo agrego al nivel el 2.",
+        "start": 1705.52,
+        "end": 1716.52
+    },
+    {
+        "text": " Y ahí sí me acabaron las, las aristas de 2 del vértice 2, así que lo terminé de explorar y sigo, lo siguiente es todo, es bueno, explorar, todavía me queda en 2 sin explorar de la capa del 1 en particular el vértice 3, así empieza a explorar el vértice 3.",
+        "start": 1718.52,
+        "end": 1738.52
+    },
+    {
+        "text": " Entonces arranco con el vértice 3, así que bueno, a ver que hay aristas tiene, tiene una lista que me conecta con 1, pero bueno, ya la voy descubierto, tengo una lista que me conecta con 2, pero vamos a la voy descubierto, tengo una lista que me conecta con 5, pero 5, hace un ratito, la como descubre él, así que ese tampoco me genera nada nuevo, tengo una lista que me conecta con 7 y ese sí, no lo había visto.",
+        "start": 1739.52,
+        "end": 1761.52
+    },
+    {
+        "text": " Entonces esto lo agrego al árbol, tengo también una lista que me conecta con 8, que ese tampoco lo había descubierto ahora, así que esta lista la agrego al árbol.",
+        "start": 1762.52,
+        "end": 1774.52
+    },
+    {
+        "text": " Y ahí terminé de explorar todos los vértices que estaban en el nivel el 1, entonces paso el nivel el 2 y empieza a explorar sus vértices.",
+        "start": 1776.52,
+        "end": 1787.52
+    },
+    {
+        "text": " Arranco eso que sepa el vértice 4, mire sus aristas, me conecta con 2 y con 5, que se estaban descubiertos, mire el vértice 5, exploro el vértice 5, que me conecta con los vértices 2, 3 y 4, que eso se estaban descubiertos, pero también me conecta con 6, que ese todavía no lo había visto.",
+        "start": 1792.52,
+        "end": 1815.52
+    },
+    {
+        "text": " Así que esta lista sí se agrega al árbol, porque es usando esta lista que yo vi por primera vez al vértice 6.",
+        "start": 1816.52,
+        "end": 1824.52
+    },
+    {
+        "text": " Y no más, después exploro también los vértices 7 y 8, pero ahí devuelta todas las aristas que tienen que conectan con vértices que se han descubierto en particular con 3.",
+        "start": 1827.52,
+        "end": 1836.52
+    },
+    {
+        "text": " Entonces eso que quedó marcado ahí en verde lo que estamos ahora volviendo a árbol de Fs.",
+        "start": 1837.52,
+        "end": 1846.52
+    },
+    {
+        "text": " ¿Pues lo sortió una pregunta? ¿Qué tan difícil puede ser algo ritmo? Porque cada vez que hace una nueva capa de que raízas la nueva capa de conectividad,",
+        "start": 1851.52,
+        "end": 1865.52
+    },
+    {
+        "text": " tienes que revisar todas las aristas para ver si ya agregaste ese nodo o no.",
+        "start": 1865.52,
+        "end": 1869.52
+    },
+    {
+        "text": " Bueno, tienes que revisar todas las aristas que te conectan con ese nodo.",
+        "start": 1870.52,
+        "end": 1874.52
+    },
+    {
+        "text": " Por ejemplo, cuando exploras el vértice 3, tienes que explorar el definitivo de todas las aristas que parten de 3.",
+        "start": 1876.52,
+        "end": 1886.52
+    },
+    {
+        "text": " ¿No? Sí. Pero a su vez tengo que realizar los nodos que pueda agregar con 3, si no lo agregue con el 2 por ejemplo, o si lo es el caso del 5.",
+        "start": 1887.52,
+        "end": 1900.52
+    },
+    {
+        "text": " Entonces, bueno sí claro, mi buga quedaba solo entre el nodo, que se me si nos decimos a 3.",
+        "start": 1901.52,
+        "end": 1909.52
+    },
+    {
+        "text": " Sí, es cierto lo que decís. Y ahora dentro de un rato vamos a ver cómo implementar eficientemente esto.",
+        "start": 1909.52,
+        "end": 1916.52
+    },
+    {
+        "text": " Pero se que surgió tu inquietud.",
+        "start": 1916.52,
+        "end": 1918.52
+    },
+    {
+        "text": " Hay aristas que se rapiden también, ¿no? Porque cuando vas de uno a cuando preactres, rompente pilarista que ya había analizado, ¿no?",
+        "start": 1920.52,
+        "end": 1928.52
+    },
+    {
+        "text": " Bueno, esta también es una buena observación, pero una determinada arista.",
+        "start": 1929.52,
+        "end": 1933.52
+    },
+    {
+        "text": " Por ejemplo, mire la arista que me conecta 2 con 3.",
+        "start": 1933.52,
+        "end": 1938.52
+    },
+    {
+        "text": " Ah, si lo puedo marcar acá. La arista está que mar 1 y 2 con 3. ¿Cuántas veces la tengo que recorrer o explorar?",
+        "start": 1938.52,
+        "end": 1950.52
+    },
+    {
+        "text": " ¿Dónde es una protáverte?",
+        "start": 1953.52,
+        "end": 1955.52
+    },
+    {
+        "text": " Ustedes, una vez cuando exploré 2 y una vez cuando exploré 3.",
+        "start": 1955.52,
+        "end": 1960.52
+    },
+    {
+        "text": " Y así con el resto de las aristas.",
+        "start": 1961.52,
+        "end": 1963.52
+    },
+    {
+        "text": " Entonces, si bien les voy a dar la impresión ahora de que, ¿pás?",
+        "start": 1966.52,
+        "end": 1969.52
+    },
+    {
+        "text": " Sí, hay muchas aristas que le estoy. Porque uno la semana esto es medio votador.",
+        "start": 1969.52,
+        "end": 1974.52
+    },
+    {
+        "text": " Ya pasé por acá y te da la sensación de que estás como repitiendo trabajo.",
+        "start": 1975.52,
+        "end": 1980.52
+    },
+    {
+        "text": " No está bien, pero si lo piensan cada arista, no la voy a visitar más de 2 veces.",
+        "start": 1981.52,
+        "end": 1985.52
+    },
+    {
+        "text": " Y en definitiva, ustedes saben que 2 veces la cantidad de aristas es de orden de la cantidad de aristas.",
+        "start": 1988.52,
+        "end": 1995.52
+    },
+    {
+        "text": " Así que no parece un trabajo proporcional al tamaño de gráfica.",
+        "start": 1996.52,
+        "end": 2001.52
+    },
+    {
+        "text": " Y con respecto a esto de chequear si 5, si ya lo había descubierto o no,",
+        "start": 2002.52,
+        "end": 2010.52
+    },
+    {
+        "text": " porque entonces ahí tengo que ver si lo agrego a la edad.",
+        "start": 2010.52,
+        "end": 2013.52
+    },
+    {
+        "text": " Bueno, eso también lo puedo resolver, eficientemente, teniendo asociado a cada bértice,",
+        "start": 2013.52,
+        "end": 2018.52
+    },
+    {
+        "text": " un flag que me diga si ya lo descubrió, ¿no?",
+        "start": 2018.52,
+        "end": 2022.52
+    },
+    {
+        "text": " Y eso me llevaba 1.",
+        "start": 2023.52,
+        "end": 2024.52
+    },
+    {
+        "text": " Entonces, siendo la pregunta concreta y dando una respuesta concreta,",
+        "start": 2025.52,
+        "end": 2031.52
+    },
+    {
+        "text": " vamos a ver que esto se puede hacer de forma súper difícil.",
+        "start": 2031.52,
+        "end": 2035.52
+    },
+    {
+        "text": " En tiempo lineal que se llama tiempo proporcional tamaño de gráfica.",
+        "start": 2035.52,
+        "end": 2040.52
+    },
+    {
+        "text": " Que todas esas cosas más tenemos que ver bien como las trabajamos.",
+        "start": 2040.52,
+        "end": 2043.52
+    },
+    {
+        "text": " Porque los gráficos tienen dos parámetros que definen su tamaño,",
+        "start": 2043.52,
+        "end": 2050.52
+    },
+    {
+        "text": " que es la cantidad de bértices y la cantidad de aristas.",
+        "start": 2051.52,
+        "end": 2054.52
+    },
+    {
+        "text": " Entonces, la diferencia de otros casos donde hay un parámetro natural N,",
+        "start": 2054.52,
+        "end": 2058.52
+    },
+    {
+        "text": " que define todo acá, vamos a expresar nuestros tiempos de ficución,",
+        "start": 2058.52,
+        "end": 2062.52
+    },
+    {
+        "text": " nuestro consumo de mori, entre una de la cantidad de bértices N y la cantidad de aristas N.",
+        "start": 2062.52,
+        "end": 2067.52
+    },
+    {
+        "text": " Ahora vamos a ir.",
+        "start": 2068.52,
+        "end": 2070.52
+    },
+    {
+        "text": " Me estoy adelantando un poco a cosas que vamos a ver por aquí.",
+        "start": 2070.52,
+        "end": 2073.52
+    },
+    {
+        "text": " Bueno, quedó más o menos claro.",
+        "start": 2081.52,
+        "end": 2084.52
+    },
+    {
+        "text": " Sí, gracias por favor.",
+        "start": 2086.52,
+        "end": 2087.52
+    },
+    {
+        "text": " Bueno, entonces ese fue nuestro árbol BFS.",
+        "start": 2094.52,
+        "end": 2098.52
+    },
+    {
+        "text": " Acá está este mismo árbol BFS.",
+        "start": 2098.52,
+        "end": 2100.52
+    },
+    {
+        "text": " Que está redibujado de forma distinta.",
+        "start": 2101.52,
+        "end": 2103.52
+    },
+    {
+        "text": " Si puse la raíz que es el punto de partida arriba,",
+        "start": 2103.52,
+        "end": 2107.52
+    },
+    {
+        "text": " y después tenemos los bértices que están organizados por niveles.",
+        "start": 2107.52,
+        "end": 2112.52
+    },
+    {
+        "text": " Está el 2 y el 3, son el del nivel 1, el 4, el 5, el 7 y el 8 son el del nivel 2.",
+        "start": 2112.52,
+        "end": 2117.52
+    },
+    {
+        "text": " Y el 6 es el del nivel 3.",
+        "start": 2117.52,
+        "end": 2119.52
+    },
+    {
+        "text": " O sea, es el mismo gráfico que está en el 3.",
+        "start": 2119.52,
+        "end": 2121.52
+    },
+    {
+        "text": " Y ahora vamos a ver que el 3 es el mismo gráfico.",
+        "start": 2121.52,
+        "end": 2123.52
+    },
+    {
+        "text": " Y ahora vamos a ver que está el 3.",
+        "start": 2123.52,
+        "end": 2125.52
+    },
+    {
+        "text": " Y ahora vamos a ver que está el 3.",
+        "start": 2125.52,
+        "end": 2127.52
+    },
+    {
+        "text": " Y el 6 es el nivel 3.",
+        "start": 2127.52,
+        "end": 2129.52
+    },
+    {
+        "text": " O sea, es el mismo gráfico que está dibujado distinto.",
+        "start": 2129.52,
+        "end": 2131.52
+    },
+    {
+        "text": " Y en negro, sólido, quedaron las aristas que forman parte del árbol",
+        "start": 2131.52,
+        "end": 2138.52
+    },
+    {
+        "text": " y punteadas están las aristas que son parte de gráfico,",
+        "start": 2138.52,
+        "end": 2143.52
+    },
+    {
+        "text": " pero que no quedaron en el árbol.",
+        "start": 2143.52,
+        "end": 2145.52
+    },
+    {
+        "text": " Es decir, las que están sólidas son las que yo dibujé en barra de sombratica.",
+        "start": 2145.52,
+        "end": 2148.52
+    },
+    {
+        "text": " Entonces, como el ejemplo que hicimos es este mismo que se va a encontrar después",
+        "start": 2148.52,
+        "end": 2159.52
+    },
+    {
+        "text": " o que ya habrán visto en las notas y en el mismo.",
+        "start": 2159.52,
+        "end": 2164.52
+    },
+    {
+        "text": " Como les decía, el mismo BFES y el DFSes,",
+        "start": 2164.52,
+        "end": 2171.52
+    },
+    {
+        "text": " estos sabemos que vamos a ver que son bien clásicos,",
+        "start": 2171.52,
+        "end": 2173.52
+    },
+    {
+        "text": " son casos particulares que el árbol que construcen porque DFS también",
+        "start": 2173.52,
+        "end": 2177.52
+    },
+    {
+        "text": " porque DFS también encontré una árbol de recorrida,",
+        "start": 2177.52,
+        "end": 2181.2
+    },
+    {
+        "text": " este tiene propiedades interesantes particulares que nos van a empezar.",
+        "start": 2181.2,
+        "end": 2184.4
+    },
+    {
+        "text": " Bueno, ya hay algo interesante que es que la recorrida de DFS",
+        "start": 2184.4,
+        "end": 2189.32
+    },
+    {
+        "text": " me está dando información, no solo de cuál es la componente ponencia,",
+        "start": 2189.32,
+        "end": 2192.12
+    },
+    {
+        "text": " sino de distancia, aquí están si están en el punto de parte.",
+        "start": 2192.12,
+        "end": 2195.7599999999998
+    },
+    {
+        "text": " Y vamos a decir, la árbol BFS que se construye tiene esta propiedad interesante,",
+        "start": 2195.7599999999998,
+        "end": 2203.84
+    },
+    {
+        "text": " que es que se garraz dos nodos X, Y, que están en T,",
+        "start": 2203.84,
+        "end": 2208.6000000000004
+    },
+    {
+        "text": " así que terminan la misma componente con EXA,",
+        "start": 2208.6000000000004,
+        "end": 2213.2400000000002
+    },
+    {
+        "text": " y que parten escena dos capas, L, Y, L, J.",
+        "start": 2213.2400000000002,
+        "end": 2218.7200000000003
+    },
+    {
+        "text": " Entonces, digamos que estos X, Y forman una lista en G.",
+        "start": 2218.7200000000003,
+        "end": 2224.7200000000003
+    },
+    {
+        "text": " Es decir, no necesariamente una lista de que quedó en el árbol,",
+        "start": 2224.7200000000003,
+        "end": 2230.4
+    },
+    {
+        "text": " una lista de grafos.",
+        "start": 2230.4,
+        "end": 2233.2000000000003
+    },
+    {
+        "text": " En el finalista de grafos, en definitivamente,",
+        "start": 2233.2,
+        "end": 2235.04
+    },
+    {
+        "text": " hay que conectar dos nodos que están en el árbol,",
+        "start": 2235.04,
+        "end": 2237.04
+    },
+    {
+        "text": " la misma componente con EXA, pero se puede asumir así.",
+        "start": 2237.04,
+        "end": 2240.08
+    },
+    {
+        "text": " Es una lista de G que conecta dos vértices que están en la misma componente con EXA",
+        "start": 2240.08,
+        "end": 2245.68
+    },
+    {
+        "text": " que acabo de explotar, y quedaron en niveles L, Y y L,",
+        "start": 2245.68,
+        "end": 2249.7999999999997
+    },
+    {
+        "text": " entonces lo que dice esta propiedad es que Y y J difieren a lo sumo en uno,",
+        "start": 2249.7999999999997,
+        "end": 2255.08
+    },
+    {
+        "text": " en nomas de uno.",
+        "start": 2255.08,
+        "end": 2256.2799999999997
+    },
+    {
+        "text": " Es una propiedad bien interesante,",
+        "start": 2259.2799999999997,
+        "end": 2261.52
+    },
+    {
+        "text": " en este grafo que estamos viendo acá,",
+        "start": 2262.4,
+        "end": 2264.7599999999998
+    },
+    {
+        "text": " todas las aristas, o sea, las puntias,",
+        "start": 2270.08,
+        "end": 2272.84
+    },
+    {
+        "text": " las no puntias, conectan niveles que son,",
+        "start": 2272.84,
+        "end": 2279.04
+    },
+    {
+        "text": " igual mismo nivel o niveles a esa set,",
+        "start": 2279.04,
+        "end": 2280.96
+    },
+    {
+        "text": " son uno más o uno menos.",
+        "start": 2280.96,
+        "end": 2282.7599999999998
+    },
+    {
+        "text": " Vean que en este dibujo se cumple.",
+        "start": 2282.7599999999998,
+        "end": 2285.84
+    },
+    {
+        "text": " Ahí es una propiedad que se cumple en general y por qué se cumple.",
+        "start": 2285.84,
+        "end": 2289.04
+    },
+    {
+        "text": " No, vamos a pensar, ustedes, ¿cuándo miren la demostración?",
+        "start": 2289.04,
+        "end": 2293.6
+    },
+    {
+        "text": " Por la construcción en gapas, por la recorri en gapas que haces.",
+        "start": 2293.6,
+        "end": 2300.48
+    },
+    {
+        "text": " Claro, definitiva así, tiene que ver con definitiva la definición de lo mismo así.",
+        "start": 2300.48,
+        "end": 2307.36
+    },
+    {
+        "text": " La pregunta es, ¿podría...",
+        "start": 2307.36,
+        "end": 2310.0
+    },
+    {
+        "text": " ¿podría haber, por ejemplo, una arista acá?",
+        "start": 2310.0,
+        "end": 2317.88
+    },
+    {
+        "text": " ¿Qué violaría la propiedad de esta?",
+        "start": 2317.88,
+        "end": 2323.64
+    },
+    {
+        "text": " ¿Por qué no quedó?",
+        "start": 2323.64,
+        "end": 2327.8
+    },
+    {
+        "text": " Sí, entonces, una arista de uno a cuatro,",
+        "start": 2327.8,
+        "end": 2331.32
+    },
+    {
+        "text": " cuatro no estarían otra nivel anterior porque lo descubriría antes.",
+        "start": 2331.32,
+        "end": 2336.12
+    },
+    {
+        "text": " Exactamente, esa es la razón.",
+        "start": 2336.12,
+        "end": 2338.24
+    },
+    {
+        "text": " Si hubiera una arista que me conecta dos niveles más separados de que un escalón,",
+        "start": 2338.24,
+        "end": 2348.4799999999996
+    },
+    {
+        "text": " entonces ese verde y ese verde se cuatican en este ejemplo,",
+        "start": 2348.4799999999996,
+        "end": 2351.2
+    },
+    {
+        "text": " lo hubiera agregado antes y estaría en vez de estar en nivel...",
+        "start": 2351.2,
+        "end": 2355.9199999999996
+    },
+    {
+        "text": " En vez de estar en nivel el edad, como está acá estaría en nivel el 1,",
+        "start": 2355.9199999999996,
+        "end": 2360.3199999999997
+    },
+    {
+        "text": " porque lo hubiera descubierto en el momento que está el 1.",
+        "start": 2360.3199999999997,
+        "end": 2363.7599999999998
+    },
+    {
+        "text": " ¿Está en ese sencillo?",
+        "start": 2363.84,
+        "end": 2365.2000000000003
+    },
+    {
+        "text": " Como es la razón por la cual todas las aristas en definitiva terminan conectando niveles asasantes.",
+        "start": 2365.2000000000003,
+        "end": 2373.44
+    },
+    {
+        "text": " Porque esa propia arista hace que no pueda pasar un paso más",
+        "start": 2373.44,
+        "end": 2379.48
+    },
+    {
+        "text": " hasta que yo descubre el nodo de ese que está conectado.",
+        "start": 2379.48,
+        "end": 2382.92
+    },
+    {
+        "text": " Al algún momento, voy a descubrir el 1 de ellos, en este caso el 1.",
+        "start": 2382.92,
+        "end": 2388.0800000000004
+    },
+    {
+        "text": " Y en ese instante, la arista está que estoy considerando,",
+        "start": 2388.16,
+        "end": 2391.2799999999997
+    },
+    {
+        "text": " ya hace que el siguiente...",
+        "start": 2391.2799999999997,
+        "end": 2393.64
+    },
+    {
+        "text": " El verde, en este caso el 4 que estoy conectando,",
+        "start": 2393.64,
+        "end": 2397.4
+    },
+    {
+        "text": " o ya ha sido descubierto en ese nivel o...",
+        "start": 2397.4,
+        "end": 2400.64
+    },
+    {
+        "text": " No, perdón, ha estado sumiendo que uno fue el 1°",
+        "start": 2400.64,
+        "end": 2402.2999999999997
+    },
+    {
+        "text": " de Curi.",
+        "start": 2402.2999999999997,
+        "end": 2403.6
+    },
+    {
+        "text": " Entonces en ese momento voy a 4 bastante en el siguiente.",
+        "start": 2403.6,
+        "end": 2407.92
+    },
+    {
+        "text": " Y ya está.",
+        "start": 2407.92,
+        "end": 2409.92
+    },
+    {
+        "text": " Entonces esa es la razón, ustedes lo van a encontrar en el libro escrito.",
+        "start": 2409.92,
+        "end": 2418.16
+    },
+    {
+        "text": " ¿Pues porque los árboles, estos B, B, F, S son como de todos los árboles en los que",
+        "start": 2418.16,
+        "end": 2431.02
+    },
+    {
+        "text": " puedes ir descubriendo el grafo, los que tienen menos altura, siempre, los que queden más",
+        "start": 2431.02,
+        "end": 2436.64
+    },
+    {
+        "text": " atchotados.",
+        "start": 2436.64,
+        "end": 2437.64
+    },
+    {
+        "text": " Y bueno, y sí, porque si vos el árboles construís con la definidad de también construciendo",
+        "start": 2437.64,
+        "end": 2446.56
+    },
+    {
+        "text": " caminos de un vértice a otro y en este grafo, en la recorridad B, F, S, como está",
+        "start": 2446.56,
+        "end": 2452.6
+    },
+    {
+        "text": " construyendo los niveles justamente por distancia, lo que tenía pasando que todos los",
+        "start": 2452.6,
+        "end": 2458.3199999999997
+    },
+    {
+        "text": " vértices tienen la menor distancia posible a la raíz en el árbol que construiste.",
+        "start": 2458.3199999999997,
+        "end": 2464.68
+    },
+    {
+        "text": " Vamos a ver ahora en un ratito otro algoritmo, D, F, S, que no, eso tiene que construir",
+        "start": 2464.68,
+        "end": 2470.48
+    },
+    {
+        "text": " árboles mucho más como estirados porque avanzan todo lo que pueden, veis por niveles",
+        "start": 2470.48,
+        "end": 2476.3599999999997
+    },
+    {
+        "text": " van como en profundidad.",
+        "start": 2476.3599999999997,
+        "end": 2477.3599999999997
+    },
+    {
+        "text": " También para que es una buena solución.",
+        "start": 2477.3599999999997,
+        "end": 2481.8399999999997
+    },
+    {
+        "text": " Bueno.",
+        "start": 2481.8399999999997,
+        "end": 2482.8399999999997
+    },
+    {
+        "text": " Entonces esto, por supuesto, lo que voy a hacer en que nadie es comentarles un poco",
+        "start": 2482.84,
+        "end": 2495.2000000000003
+    },
+    {
+        "text": " la intuición de por qué las cosas se cumplen, después ustedes lean la demostración más",
+        "start": 2495.2000000000003,
+        "end": 2505.36
+    },
+    {
+        "text": " formal.",
+        "start": 2505.36,
+        "end": 2512.6400000000003
+    },
+    {
+        "text": " Como siempre, si tienen duda las trañas.",
+        "start": 2512.6400000000003,
+        "end": 2515.8
+    },
+    {
+        "text": " Como les decía, el este algoritmo en definitiva B, F, S y el D, F, S, como saber, pues son",
+        "start": 2515.8,
+        "end": 2521.76
+    },
+    {
+        "text": " en realidad casos particulares de un algoritmo general para construir la componente con",
+        "start": 2521.76,
+        "end": 2528.76
+    },
+    {
+        "text": " X, Alumbar y Seol, no, siguiendo algún orden, el algoritmo general es este capa de S",
+        "start": 2528.76,
+        "end": 2537.96
+    },
+    {
+        "text": " acá.",
+        "start": 2537.96,
+        "end": 2538.96
+    },
+    {
+        "text": " Tenemos un punto de partida S y queremos construir la componente con X, R, que es la",
+        "start": 2538.96,
+        "end": 2548.44
+    },
+    {
+        "text": " componente con X, D, S, que vamos a samar R, acá dice R, tendré que si le arre consistirá",
+        "start": 2548.44,
+        "end": 2554.96
+    },
+    {
+        "text": " todos los nodos que tienen un camino a S, esa tendré a ser esta frase.",
+        "start": 2554.96,
+        "end": 2563.36
+    },
+    {
+        "text": " En definitiva, la componente con X, D, S, ¿vale?",
+        "start": 2563.36,
+        "end": 2567.76
+    },
+    {
+        "text": " Entonces el algoritmo está sencillo como estos partimos de R igual del B, D, S y después",
+        "start": 2567.76,
+        "end": 2575.56
+    },
+    {
+        "text": " mientras existe alguna de R, U, tal que U está en R y B no está en R, si una de R tiene",
+        "start": 2575.56,
+        "end": 2584.88
+    },
+    {
+        "text": " una pata dentro y una pata fuera de R, entonces agregamos B, acá vamos a descubrir ese",
+        "start": 2584.88,
+        "end": 2591.7599999999998
+    },
+    {
+        "text": " B al cual puedo llegar a través de U, ¿vale?",
+        "start": 2591.7599999999998,
+        "end": 2595.08
+    },
+    {
+        "text": " Y así de a poco va creciendo R, hasta que en algún momento no tengo más de R, que tiene",
+        "start": 2595.08,
+        "end": 2605.0
+    },
+    {
+        "text": " una pata dentro y una pata fuera, ¿vale?",
+        "start": 2605.0,
+        "end": 2607.16
+    },
+    {
+        "text": " Eso como el grafo finito en algún momento pasa porque en todos los pasos del cual siempre",
+        "start": 2607.16,
+        "end": 2611.22
+    },
+    {
+        "text": " agrego un nuevo Gartis, si que no está en R y ahora pasa a ser, ahora pasa esta de",
+        "start": 2611.22,
+        "end": 2619.72
+    },
+    {
+        "text": " R, así que lo sumo en interacciones y en la cantidad de Gartis, esto es lo Saturn.",
+        "start": 2619.72,
+        "end": 2628.52
+    },
+    {
+        "text": " Esto termino que decir que no hay más, no puedo descubrir ningún Gartis y se más a",
+        "start": 2628.52,
+        "end": 2634.12
+    },
+    {
+        "text": " partir de Verdes y quizás está en R, entonces el R no se puede expandir más, lo que acabo",
+        "start": 2634.12,
+        "end": 2640.92
+    },
+    {
+        "text": " de encontrar es la componente con R.",
+        "start": 2640.92,
+        "end": 2643.52
+    },
+    {
+        "text": " Entonces este conjunto R es la componente con X, D y si ustedes lo piensan el BF,",
+        "start": 2643.52,
+        "end": 2650.12
+    },
+    {
+        "text": " F, S que vimos recién, es simplemente un caso particular de esto, simplemente este",
+        "start": 2650.12,
+        "end": 2655.7
+    },
+    {
+        "text": " lo mismo está subespecificado, aún más si quieren, si cabe el término, aún más que",
+        "start": 2655.7,
+        "end": 2665.24
+    },
+    {
+        "text": " BF, ¿eh?",
+        "start": 2665.24,
+        "end": 2666.6
+    },
+    {
+        "text": " Acá hay más libertad todavía, simplemente agrego una rista vital y que esté con una",
+        "start": 2666.6,
+        "end": 2670.8399999999997
+    },
+    {
+        "text": " pata dentro y una pata fuera, en el caso de BF y lo que así es, bueno, el EG por niveles,",
+        "start": 2670.8399999999997,
+        "end": 2677.2
+    },
+    {
+        "text": " ¿eh?",
+        "start": 2677.2,
+        "end": 2678.2
+    },
+    {
+        "text": " Es, es, en definitiva un caso particular de cómo y dirigiendo, de cómo especificando un",
+        "start": 2678.2,
+        "end": 2683.7
+    },
+    {
+        "text": " poco más, refinijiendo un poco más en qué orden el hijo, estas aristas que me conectan",
+        "start": 2683.7,
+        "end": 2691.2999999999997
+    },
+    {
+        "text": " un, un nudo descubierto, con lo que todavía no descubrí, ¿eh?",
+        "start": 2691.2999999999997,
+        "end": 2699.9399999999996
+    },
+    {
+        "text": " Y quería reparar un poco de esto, si bien después en general lo que vamos a, a terminar",
+        "start": 2699.9399999999996,
+        "end": 2707.58
+    },
+    {
+        "text": " usando son OBS y OBS, porque como les decía hoy tienen, tienen propiedades interesantes",
+        "start": 2707.58,
+        "end": 2713.7
+    },
+    {
+        "text": " que los vuelven útiles para atacar problemas más grandes, ¿no?",
+        "start": 2713.7,
+        "end": 2718.84
+    },
+    {
+        "text": " Pero este patrón de algoritmo, ¿eh?",
+        "start": 2718.84,
+        "end": 2722.68
+    },
+    {
+        "text": " De ir haciendo crecer un conjunto R y agregando aristas que, que me conectan con algo,",
+        "start": 2722.68,
+        "end": 2729.8199999999997
+    },
+    {
+        "text": " está dentro o algo está fuera, y es algo que lo vamos a, es algo que lo vamos a usar",
+        "start": 2729.8199999999997,
+        "end": 2735.24
+    },
+    {
+        "text": " varias veces, ¿eh?",
+        "start": 2735.24,
+        "end": 2737.16
+    },
+    {
+        "text": " Para BFs y DFs que son casos particulares y más adelante para otros algoritmos también",
+        "start": 2737.16,
+        "end": 2742.08
+    },
+    {
+        "text": " cuando vamos a ser algoritmos de distra en definitiva, así es el mismo tipo de patrón,",
+        "start": 2742.08,
+        "end": 2747.08
+    },
+    {
+        "text": " este, y, para, hay otros ejemplos, este para árable de cubimiento también, este,",
+        "start": 2747.08,
+        "end": 2756.0
+    },
+    {
+        "text": " en el mes que hay adelantando temas que vamos a ver después, que como les decía, no es",
+        "start": 2756.0,
+        "end": 2759.6
+    },
+    {
+        "text": " también todo este capítulo de capítulo de grafos, pero que en definitiva son algoritmos",
+        "start": 2759.6,
+        "end": 2762.7599999999998
+    },
+    {
+        "text": " o grafos, y todos esos en definitiva son variantes de este tipo de estrategia,",
+        "start": 2762.76,
+        "end": 2770.0
+    },
+    {
+        "text": " elejiendo aristas en algún orden, con algún criterio que me sirven para, que me",
+        "start": 2770.0,
+        "end": 2780.44
+    },
+    {
+        "text": " sirven para un problema concreto que tenga bastante más.",
+        "start": 2780.44,
+        "end": 2785.5200000000004
+    },
+    {
+        "text": " Bueno, una, una, tal, algo, una propiedad clave, o por qué es interesante esto, bueno,",
+        "start": 2785.52,
+        "end": 2796.92
+    },
+    {
+        "text": " por esta propiedad que está resaltada acá, ¿no?",
+        "start": 2796.92,
+        "end": 2798.56
+    },
+    {
+        "text": " Que como les decía hoy, el conjunto este R es la, es precisamente la componente con",
+        "start": 2798.56,
+        "end": 2804.4
+    },
+    {
+        "text": " X a X acá, no ve leer todas las demostraciones, una, una, una, una por una, pues, o sea,",
+        "start": 2804.4,
+        "end": 2813.64
+    },
+    {
+        "text": " que ha sido lo que a uno con, con cuidado detenidamente, sí me interesaba reparar acá",
+        "start": 2813.64,
+        "end": 2818.8799999999997
+    },
+    {
+        "text": " en, en un argumento, ¿no? Porque es algo que ya hemos visto.",
+        "start": 2818.8799999999997,
+        "end": 2822.2799999999997
+    },
+    {
+        "text": " Y se, en la demostración, este, y se, bueno, ya hemos argumentado, solo si tú",
+        "start": 2825.24,
+        "end": 2830.72
+    },
+    {
+        "text": " estuve comentando recién también, que para cualquier nuevo V que pertenece a R, entonces,",
+        "start": 2830.72,
+        "end": 2836.7599999999998
+    },
+    {
+        "text": " bueno, es, hay un camino que va desde ese A, que justamente la, siguiendo las",
+        "start": 2837.4,
+        "end": 2844.96
+    },
+    {
+        "text": " aristas, a través de las cuales fue descubriendo los sucesivos nodos, hasta que en un momento",
+        "start": 2844.96,
+        "end": 2853.28
+    },
+    {
+        "text": " se llegue a B, o sea, se llegue a B es porque hay un camino que van a estar ese A, ¿no?",
+        "start": 2853.28,
+        "end": 2857.4
+    },
+    {
+        "text": " Lo que trata de demostrar a R para mostrar que efectivamente lo que terminó utilizando es la",
+        "start": 2857.4,
+        "end": 2861.2400000000002
+    },
+    {
+        "text": " componente con ex, no, no un conjunto y más chico y más grande, lo que hemos tenido la",
+        "start": 2861.24,
+        "end": 2869.3999999999996
+    },
+    {
+        "text": " inclusión hacia el lado en la lado, entonces, ahora dice, vamos, supongamos que, entonces, para ver",
+        "start": 2869.3999999999996,
+        "end": 2874.2799999999997
+    },
+    {
+        "text": " que no, que no me faltó nada, consideramos un nodo W, que no está en R, y suponamos que",
+        "start": 2874.2799999999997,
+        "end": 2880.9599999999996
+    },
+    {
+        "text": " tendría que estar, es decir, eso, vamos por el asurdo, que hay un camino de ese A, W, y no",
+        "start": 2880.9599999999996,
+        "end": 2887.9199999999996
+    },
+    {
+        "text": " lo encontré, entonces, si siguen el, el razonamiento para el asurdo, lo dice, bueno, dado que,",
+        "start": 2887.92,
+        "end": 2894.6800000000003
+    },
+    {
+        "text": " ese, que es el punto de partida para tener ese A, por la disimisión, porque lo van a",
+        "start": 2894.6800000000003,
+        "end": 2898.7200000000003
+    },
+    {
+        "text": " ver con el, a su inicial, inicialmente, R, es igual a ese, al conjunto que tiene ese, pero",
+        "start": 2898.7200000000003,
+        "end": 2908.06
+    },
+    {
+        "text": " W estamos viendo que no, a pertenece A, ¿no? Y sin embargo, hay un, estamos postulando,",
+        "start": 2908.06,
+        "end": 2913.8
+    },
+    {
+        "text": " también existe un camino, P, que va de ese A, W, entonces como parte de lo que está",
+        "start": 2913.8,
+        "end": 2921.1200000000003
+    },
+    {
+        "text": " dentro y si hay algo que está afuera, debe haber un primer nodo, B, en P, que no",
+        "start": 2921.1200000000003,
+        "end": 2926.6800000000003
+    },
+    {
+        "text": " pertenece a dar, es decir, el dibujito, lo que estamos diciendo es que tenemos el conjunto,",
+        "start": 2926.68,
+        "end": 2946.3999999999996
+    },
+    {
+        "text": " el Vartice Dc por acá, tenemos nuestro conjunto R por acá, y estamos diciendo, opa, hay",
+        "start": 2946.3999999999996,
+        "end": 2956.0
+    },
+    {
+        "text": " un Dole B, que quedó por acá afuera, y que en el red tendré este adentro, porque hay un",
+        "start": 2956.0,
+        "end": 2963.6
+    },
+    {
+        "text": " camino que va de ese A, W, y entonces bueno, cual, si parco de algo está afuera, entonces",
+        "start": 2963.6,
+        "end": 2977.72
+    },
+    {
+        "text": " necesariamente hay algún punto en el cual cruzo de un lado a otro, entonces, a ver,",
+        "start": 2977.72,
+        "end": 2986.48
+    },
+    {
+        "text": " siguiendo la una mecratura acá, hay un nodo U, y ahora, y este nodo B no es igual a ese,",
+        "start": 2986.48,
+        "end": 2997.4399999999996
+    },
+    {
+        "text": " hay un primer nodo B en P, que no pertenece a dar, entonces lo que dice es, hay un nodo B",
+        "start": 2997.4399999999996,
+        "end": 3003.04
+    },
+    {
+        "text": " por acá, y hay un nodo U por acá, y este es un adentro de P, que en definitiva es la primera",
+        "start": 3003.04,
+        "end": 3013.84
+    },
+    {
+        "text": " vez que cuando recorriendo el camino salgo, digo, llego algo que está afuera de R, entonces",
+        "start": 3013.84,
+        "end": 3025.4
+    },
+    {
+        "text": " lo que quiero aceptar acá es ese argumento, la primera vez que algo pasa, que fue el que",
+        "start": 3025.4,
+        "end": 3030.48
+    },
+    {
+        "text": " lo hemos usado también con estudiamos el aburrimo de Gale Summit, que es una estrategia",
+        "start": 3030.48,
+        "end": 3035.52
+    },
+    {
+        "text": " de demostración, que es un, al menos creo que no les mostré como estaba dibujando acá,",
+        "start": 3035.52,
+        "end": 3041.88
+    },
+    {
+        "text": " la situación es esta, tenemos un nodo U, y un nodo B, uno está del lado de adentro",
+        "start": 3041.88,
+        "end": 3047.88
+    },
+    {
+        "text": " de R, y lo que está del lado adentro, el lado de afuera de R, y el argumento ahí va a",
+        "start": 3047.88,
+        "end": 3052.08
+    },
+    {
+        "text": " ser más, entonces cuando visité W, que lo habría de R, tenía esa aristía, le tendría que",
+        "start": 3052.08,
+        "end": 3056.0
+    },
+    {
+        "text": " haber explorado, le tendría que haber agregado, y ahí llego una contradicción, ¿no?",
+        "start": 3056.0,
+        "end": 3060.56
+    },
+    {
+        "text": " Ahora, ¿cuál es un error en una demostración de este tipo que uno, muchas veces, es B?",
+        "start": 3060.56,
+        "end": 3068.06
+    },
+    {
+        "text": " Y ya, bueno, como 2D, suponamos que el camino P, la demostración puede ser, bueno,",
+        "start": 3068.06,
+        "end": 3077.84
+    },
+    {
+        "text": " P, si igual a S, B su uno, hasta B su Muchos, B su J, y B su J, más uno, que es B su",
+        "start": 3077.84,
+        "end": 3093.8
+    },
+    {
+        "text": " igual a doble ver, tenemos este camino, W está fuera, cuando una error tipe y una demostración",
+        "start": 3093.8,
+        "end": 3101.56
+    },
+    {
+        "text": " de este tipo sería bueno, bueno, pero entonces cuando visité B su J, tendría que haber",
+        "start": 3101.56,
+        "end": 3106.8
+    },
+    {
+        "text": " explorado B su J, más uno, ahí es un absurdo, papá, papá, no, B su J, campa que tampoco",
+        "start": 3106.8,
+        "end": 3113.84
+    },
+    {
+        "text": " está en R, ¿no? Entonces, lo que uno hace es igual, está bien, donde me paron definitivamente",
+        "start": 3113.84,
+        "end": 3122.2400000000002
+    },
+    {
+        "text": " para encontrar el absurdo, bueno, entonces agarremos de la primera vez, en que eso es",
+        "start": 3122.2400000000002,
+        "end": 3126.1600000000003
+    },
+    {
+        "text": " algo, parte de algo que termino con una pata adentro y una pata afuera, entonces ahí sí,",
+        "start": 3126.1600000000003,
+        "end": 3134.2400000000002
+    },
+    {
+        "text": " estoy parado firmemente en una, en una arista que me va a llevar a un absurdo, simplemente",
+        "start": 3134.24,
+        "end": 3143.72
+    },
+    {
+        "text": " por eso remarqué esto acá para ver, para que vean que una vez más estamos recorrendo",
+        "start": 3143.72,
+        "end": 3147.7599999999998
+    },
+    {
+        "text": " ese tipo de estrategias de algo, no hubo más que tener cada una primera vez que eso",
+        "start": 3147.7599999999998,
+        "end": 3152.9599999999996
+    },
+    {
+        "text": " ocurre y eso es definitivamente a un lugar firme de donde agarraron.",
+        "start": 3152.9599999999996,
+        "end": 3158.2799999999997
+    },
+    {
+        "text": " Sí, siguiendo la idea de la primera vez que salgo de arde, no puedo considerar que",
+        "start": 3158.28,
+        "end": 3166.6400000000003
+    },
+    {
+        "text": " W sea esa primera vez sin perder generalidad. Bueno, no, porque no perdéis, porque",
+        "start": 3166.6400000000003,
+        "end": 3176.0
+    },
+    {
+        "text": " voy a fijar, ¿cómo arranca la demostración? La primera vez que salgo con esto con un",
+        "start": 3176.0,
+        "end": 3181.52
+    },
+    {
+        "text": " todo, pero la primera vez que está bien, pero la primera vez que salís de donde en",
+        "start": 3181.52,
+        "end": 3189.08
+    },
+    {
+        "text": " qué camino? La primera vez que llegas a W, de P a W o de W, no sé, no me acuerdo, no estoy",
+        "start": 3189.08,
+        "end": 3198.0
+    },
+    {
+        "text": " viendo el dibujo, pero yo lo que digo es, tenemos que ver el dibujo. Utilizándolo de que corta",
+        "start": 3198.0,
+        "end": 3207.52
+    },
+    {
+        "text": " es, es la primera vez que yo salgo de arde. Sí, en vez de que corta puedo usar W como",
+        "start": 3207.52,
+        "end": 3215.2
+    },
+    {
+        "text": " la primera vez que salí de arde. Está bien, ahora, pero fíjate como arranca la demostración,",
+        "start": 3215.2,
+        "end": 3221.52
+    },
+    {
+        "text": " o sea, eso lo puedes hacer, si, partís del camino, pero hicimos al revés, fíjate como arranca",
+        "start": 3221.52,
+        "end": 3232.56
+    },
+    {
+        "text": " la, cómo arranca nuestro razonamiento, decimos, para llegar una obscurre decimos consideramos",
+        "start": 3233.56,
+        "end": 3240.48
+    },
+    {
+        "text": " un OW que no pertenece a R, pero que está conectado, que existe un camino. Ahí todavía no hay camino,",
+        "start": 3240.48,
+        "end": 3250.4
+    },
+    {
+        "text": " el W es el que es, es un arbitrario, ¿no? Entonces, ¿cómo podrías limitar ahí que el W",
+        "start": 3252.9,
+        "end": 3261.4
+    },
+    {
+        "text": " es el primero que sale de la zona con X a R? Entonces, ¿cómo harías el hilo de razonamiento",
+        "start": 3261.4,
+        "end": 3274.08
+    },
+    {
+        "text": " para la demostración ahí? ¿Cómo definirías el W en ese caso? ¿No podías? Y cómo defino el",
+        "start": 3274.08,
+        "end": 3283.1600000000003
+    },
+    {
+        "text": " nube el de corta? Bueno, el de corta lo decino a partir del W, si yo agaro digo, me tome un",
+        "start": 3283.16,
+        "end": 3292.16
+    },
+    {
+        "text": " W que no pertenece a R y que hay un camino de ese W, fíjate que el W ahí no lo restringí",
+        "start": 3292.16,
+        "end": 3302.6
+    },
+    {
+        "text": " de ninguna manera, esa arbitrario es cualquiera. Una vez que yo me di eso W y porque yo le que existe",
+        "start": 3302.6,
+        "end": 3316.6
+    },
+    {
+        "text": " un camino que va a haber ese W, ¿cómo?",
+        "start": 3316.6,
+        "end": 3322.3199999999997
+    },
+    {
+        "text": " Como el camino parte de S que por definición está dentro y llegó el W que por hipótesis de",
+        "start": 3329.4,
+        "end": 3335.2
+    },
+    {
+        "text": " Absurro está fuera en algún momento sale y entonces puedo pararme en el lugar donde sale y ahí me",
+        "start": 3335.2,
+        "end": 3341.52
+    },
+    {
+        "text": " defino B. Pero yo no puedo agarrar y tomar B de entrada porque ¿Por qué? ¿Por qué? ¿Quién es",
+        "start": 3341.52,
+        "end": 3353.84
+    },
+    {
+        "text": " este B? Depende, bueno, ¿Quién hacía el W que yo sin ningún tipo de restricción? ¿Por tu",
+        "start": 3353.84,
+        "end": 3359.0
+    },
+    {
+        "text": " le existía? Lo que pasa es que como creamos W que es un camino de ese W, en vez de decir que exista",
+        "start": 3359.0,
+        "end": 3375.28
+    },
+    {
+        "text": " un camino puede decir que existe una lista, pero ahí pierdo generalidad. Bueno, ahí va, ¿cómo funciona",
+        "start": 3375.28,
+        "end": 3383.56
+    },
+    {
+        "text": " demostración por Absurro? Yo quiero demostrar algo. Pero en vez de el Absurro de decir que",
+        "start": 3383.56,
+        "end": 3391.92
+    },
+    {
+        "text": " dole, por tenerse un camino, puedo decir que dole, sino una lista con erbe. Pero ahí",
+        "start": 3391.92,
+        "end": 3398.4
+    },
+    {
+        "text": " para de generalidad, ¿por qué lo tienes que hacer para demostrar un Absurro es negar la tesis que",
+        "start": 3398.4,
+        "end": 3403.4
+    },
+    {
+        "text": " quieres probar? Sí, sí, sí. Bueno, lo que quieres probar es que todo W que está conectado a ese",
+        "start": 3403.4,
+        "end": 3416.0
+    },
+    {
+        "text": " pertenece a dar, que no te parece ningún, eso lo que quieres demostrar. Entonces, nada",
+        "start": 3416.0,
+        "end": 3423.04
+    },
+    {
+        "text": " de mostrar un Pro Absurro, pues negase esa tesis, ¿cómo ha podido negación de eso? Es decir,",
+        "start": 3423.04,
+        "end": 3427.28
+    },
+    {
+        "text": " que existe algún W que está conectado, pero no quedó en erbe. Y ese W es lo que sea",
+        "start": 3427.28,
+        "end": 3434.36
+    },
+    {
+        "text": " de servitar, no puedes imponer una condición extra, ¿no? Tiene que parecer de la negación de la",
+        "start": 3434.36,
+        "end": 3439.36
+    },
+    {
+        "text": " tesis. ¿Vale? ¿Está bien? Gracias. Bueno, justamente por este tipo de discusión o duda",
+        "start": 3439.36,
+        "end": 3456.5600000000004
+    },
+    {
+        "text": " que yo la veo, que aparece en acá y allá, es que quería reparar un poquito en esto para que",
+        "start": 3456.56,
+        "end": 3464.68
+    },
+    {
+        "text": " piensen un poco cómo se formaliza en este tipo de argumento.",
+        "start": 3464.68,
+        "end": 3467.64
+    },
+    {
+        "text": " Bueno, una vez que sea como sea el algoritmo este, en definitiva, solo termino construyendo",
+        "start": 3467.64,
+        "end": 3493.16
+    },
+    {
+        "text": " la componente con exas, sino que a más se tengo un poquito de cuidado y no voy acordando,",
+        "start": 3493.16,
+        "end": 3496.96
+    },
+    {
+        "text": " a partir de quién fue que descubría cada uno de los ve, entonces también construyendo un árbol",
+        "start": 3496.96,
+        "end": 3504.0
+    },
+    {
+        "text": " de recorrida, así como hice el árbol BFS, para otro orden de recorrida también construyendo",
+        "start": 3504.0,
+        "end": 3514.64
+    },
+    {
+        "text": " un árbol y las aristas de ese árbol terminan definiendo también un camino desde cada uno",
+        "start": 3514.64,
+        "end": 3520.96
+    },
+    {
+        "text": " de los elementos de la componente con exas hasta el punto de partida es. Bien.",
+        "start": 3520.96,
+        "end": 3530.2400000000002
+    },
+    {
+        "text": " Bueno, esta es la misma recién como el ejemplo más general del cual BFS es un caso particular y",
+        "start": 3530.24,
+        "end": 3558.68
+    },
+    {
+        "text": " hay otro que también tiene propiedad es interesante que DFS, DFS, search, acá, después de pasar bien",
+        "start": 3558.68,
+        "end": 3569.24
+    },
+    {
+        "text": " todo la detalle de tradición que encontré pero DFS es una implementación particular no de BFS,",
+        "start": 3569.24,
+        "end": 3574.16
+    },
+    {
+        "text": " esto está mal, es una implementación particular del algoritmo este más general que vimos recién,",
+        "start": 3574.16,
+        "end": 3579.24
+    },
+    {
+        "text": " donde devuelta el hijo, el orden de recorrida, las aristas y en un orden en particular, en este",
+        "start": 3579.24,
+        "end": 3592.9199999999996
+    },
+    {
+        "text": " caso es lo que el árbol BFS es como más impulsivo, es decir, en cuanto encuentra una arista que me",
+        "start": 3592.9199999999996,
+        "end": 3601.04
+    },
+    {
+        "text": " conecta con algo que todavía no descubrí, entonces yo seame mando para ir y no explora.",
+        "start": 3601.04,
+        "end": 3605.08
+    },
+    {
+        "text": " Esta es una, esto que me en acá es una forma de escribir el algoritmo DFS recursivamente, a diferencia",
+        "start": 3605.08,
+        "end": 3618.04
+    },
+    {
+        "text": " de la recién que era de BFS y lo presentamos en el formo integrativa, este está presentado de forma",
+        "start": 3618.04,
+        "end": 3625.88
+    },
+    {
+        "text": " recursiva, después vamos a ver una implementación interactiva, eso lo que hacemos es bueno cuando",
+        "start": 3625.88,
+        "end": 3632.04
+    },
+    {
+        "text": " en parto un nodo U y a U lo marco como explorado, estoy explora, de agrego U a la componente con",
+        "start": 3632.04,
+        "end": 3644.7200000000003
+    },
+    {
+        "text": " X a X R, entonces ahora bueno recomciéndole que exploro, desde una parte se empieza a explorar a sus",
+        "start": 3644.7200000000003,
+        "end": 3652.76
+    },
+    {
+        "text": " aristas, está para cada arista U B, que es incidente a U, es que parte de U, entonces me fijó si",
+        "start": 3652.76,
+        "end": 3663.0
+    },
+    {
+        "text": " vea sido marcados, si vea se ha explorado ahora y en cuanto descubro lo que no fue explorado, o sea si",
+        "start": 3663.0,
+        "end": 3669.48
+    },
+    {
+        "text": " ve, no hace explorado, entonces ahí no más, estamos recuciadamente a DFS y con V lo cual va a",
+        "start": 3669.48,
+        "end": 3674.6400000000003
+    },
+    {
+        "text": " desincadenar la exploración de B y a partir de B en cuanto encuentre a otro que tampoco ha sido",
+        "start": 3674.6400000000003,
+        "end": 3681.32
+    },
+    {
+        "text": " explorado, o sea me mando para ahí y sigo explorando de forma completamente impulsiva, por eso",
+        "start": 3681.32,
+        "end": 3688.6000000000004
+    },
+    {
+        "text": " es el profundidad, en cuanto encuentro un camino que todavía nos plare, va derecho para ahí,",
+        "start": 3688.6000000000004,
+        "end": 3694.32
+    },
+    {
+        "text": " llega al momento que llega a un punto donde se ha podido seguir avanzando, tiene que empezar como a",
+        "start": 3694.32,
+        "end": 3699.2000000000003
+    },
+    {
+        "text": " retroceder, ahora vamos a hacer un ejemplo, un ejemplo de ejecución,",
+        "start": 3699.2000000000003,
+        "end": 3708.6000000000004
+    },
+    {
+        "text": " vamos a lo cual el mismo grafo que DFS,",
+        "start": 3711.32,
+        "end": 3715.32
+    },
+    {
+        "text": " este es el mismo grafo que hicimos recién para BFS, vamos a ver qué es lo que pasa cuando",
+        "start": 3730.32,
+        "end": 3738.48
+    },
+    {
+        "text": " es el mes de BFS y ejecuptamos DFS, entonces acá partimos de S que de vuelta, digamos que es este",
+        "start": 3738.48,
+        "end": 3752.32
+    },
+    {
+        "text": " acá, entonces lo exploramos, es decir, empezamos a recorrer sus aristas, vemos que tiene una arista que",
+        "start": 3752.32,
+        "end": 3761.04
+    },
+    {
+        "text": " conecta con dos y a dos todavía no les ploré, entonces",
+        "start": 3761.04,
+        "end": 3766.64
+    },
+    {
+        "text": " me mando derecho para acá y instantáneamente empiezo a explorar dos, entonces ahora empiezo a recorrer",
+        "start": 3770.92,
+        "end": 3781.84
+    },
+    {
+        "text": " las aristas de dos, a explorar las aristas de dos, y veo que dos me conecta con uno, pero uno",
+        "start": 3783.48,
+        "end": 3790.96
+    },
+    {
+        "text": " me llaman los plores, así que para ahí no voy, también me conecta con tres y ese sí todavía no les ploré",
+        "start": 3790.96,
+        "end": 3800.52
+    },
+    {
+        "text": " entonces me mando para acá, fíjese que diferencia de BFS donde a tres los descubrí a partir de uno, ahora estoy",
+        "start": 3806.68,
+        "end": 3813.12
+    },
+    {
+        "text": " descubriendo a partir de dos, es decir, voy de una, dos y después de dos a tres, ¿vale? Hay una arista en BFS",
+        "start": 3813.12,
+        "end": 3820.0
+    },
+    {
+        "text": " eso descubría tres directamente de uno, porque hay una arista que me conecta, pero en DFS en seguida que",
+        "start": 3820.0,
+        "end": 3825.44
+    },
+    {
+        "text": " descubriré y dos me mandé para ahí, entonces el tren lo estoy descubriendo desde dos, y voy siguiendo un",
+        "start": 3825.44,
+        "end": 3830.0
+    },
+    {
+        "text": " camina por lo primero que voy a encontrar, así que me mando para tres, tres tiene aristas que me",
+        "start": 3830.0,
+        "end": 3837.2
+    },
+    {
+        "text": " conectan con uno, pero si aún no se está explorado me conecta con dos, pero dos también se está explorado, no",
+        "start": 3837.2,
+        "end": 3842.3199999999997
+    },
+    {
+        "text": " nada, también tiene uno que me conecta con cinco y allá voy, y es ploro cinco, todavía me quedan",
+        "start": 3842.32,
+        "end": 3852.76
+    },
+    {
+        "text": " aristas por explorar, porque el 7, la conecta con el 7 y con 8 todavía no les mire, pero está no",
+        "start": 3852.76,
+        "end": 3857.8
+    },
+    {
+        "text": " importa, después quedaran para después, por ahora me mando derecho para el 5, ¿sí profe de?",
+        "start": 3857.8,
+        "end": 3863.1600000000003
+    },
+    {
+        "text": " Sí, ahí por ejemplo elegir el 5 o el 8, ¿qué ha pesado el traño para que está aplicando el",
+        "start": 3863.1600000000003,
+        "end": 3870.1200000000003
+    },
+    {
+        "text": " algoritmo o no lo especifica, cómo es? Arbitradio, de vuelta está subespecificado, igual que",
+        "start": 3870.12,
+        "end": 3877.8599999999997
+    },
+    {
+        "text": " pasaba con BFS en que yo, bueno, dentro de las aristas en definitiva de cada uno de los vértices,",
+        "start": 3877.8599999999997,
+        "end": 3884.0
+    },
+    {
+        "text": " el orden en que las recorro, esa arbitradio, después terminado dando árboles de recorrida",
+        "start": 3884.0,
+        "end": 3890.12
+    },
+    {
+        "text": " diferentes, pero todos son árboles de BFS, diferentes entre sí, pero todos con las mismas",
+        "start": 3890.12,
+        "end": 3898.4
+    },
+    {
+        "text": " propiedades que vamos a estudiar, entonces de vuelta, si no lo vemos estar subespecificado,",
+        "start": 3898.4,
+        "end": 3904.96
+    },
+    {
+        "text": " así lo que más te gusten, en cualquier de los casos se debe un resultado equivalente en",
+        "start": 3904.96,
+        "end": 3910.1
+    },
+    {
+        "text": " el sentido de que cumplen las mismas propiedades que vamos a estudiar. Una vez que se",
+        "start": 3910.1,
+        "end": 3915.6800000000003
+    },
+    {
+        "text": " lleva 5, bueno, 5 tiene aristas con 2, pero la 2 se lo plore, con 3, pero 3 se lo plore, tiene",
+        "start": 3915.68,
+        "end": 3922.8799999999997
+    },
+    {
+        "text": " con 4, 4, lo bien lo plore, así me mando para. Sí, yo estoy recorriendo las aristas en orden",
+        "start": 3922.8799999999997,
+        "end": 3936.8799999999997
+    },
+    {
+        "text": " de las etiquetas de los vértices, por nada, para mantener un norte de recorrida, para",
+        "start": 3936.88,
+        "end": 3950.1600000000003
+    },
+    {
+        "text": " mantener un criterio, pero por ella seguir otro y me da árboles distintas, este además",
+        "start": 3950.1600000000003,
+        "end": 3954.84
+    },
+    {
+        "text": " va a haber el mismo árbol que van a ver en el libro, por eso mantengo ese orden porque",
+        "start": 3954.84,
+        "end": 3960.2200000000003
+    },
+    {
+        "text": " quiero que me dedo a mí, pero podemos hacer otra recorrida y le da otro árbol con propiedades",
+        "start": 3960.22,
+        "end": 3967.66
+    },
+    {
+        "text": " un poco con las mismas propiedades que vas a hacer. Ahora cuando sigo a 4, empiezo a explorar",
+        "start": 3967.66,
+        "end": 3974.8999999999996
+    },
+    {
+        "text": " las aristas de 4, y bueno, tiene aristas con 2, pero 2 solo hay por ahí, tiene aristas con 5,",
+        "start": 3974.8999999999996,
+        "end": 3983.2599999999998
+    },
+    {
+        "text": " pero 5 se lo plore, no tengo más para dónde seguir. Fíjense como fue la cosa, a partir",
+        "start": 3983.2599999999998,
+        "end": 3989.4199999999996
+    },
+    {
+        "text": " de 1, de 1, 2, de 2 a 3, de 3 a 5, de 5 a 4, siempre por el primer, la primera",
+        "start": 3989.42,
+        "end": 3996.34
+    },
+    {
+        "text": " había no explorada que encuentro, me mandé fico construyendo ese camino, está, y acá",
+        "start": 3996.34,
+        "end": 4001.42
+    },
+    {
+        "text": " se iba un punto muerto porque no tengo más para dónde seguir. Entonces ahí vuelvo un paso",
+        "start": 4001.42,
+        "end": 4007.7000000000003
+    },
+    {
+        "text": " para atrás y bueno, volvemos entonces retomamos donde estaba el 5, el 5 había explorado,",
+        "start": 4007.7000000000003,
+        "end": 4014.46
+    },
+    {
+        "text": " había explorado con 2, con 3, con 4, que la acaba de terminar, tengo más aristas para explorar,",
+        "start": 4014.46,
+        "end": 4024.02
+    },
+    {
+        "text": " si tengo una que me conecta con 6. Ahora exploro las aristas de 6, 6 tiene una arista con 5,",
+        "start": 4024.02,
+        "end": 4037.98
+    },
+    {
+        "text": " pero está explorado, así que no hago nada, de vuelta, se llega otro punto ciego, así que vuelvo",
+        "start": 4037.98,
+        "end": 4044.46
+    },
+    {
+        "text": " para atrás, a 5 de estado parado en recién. Ahora en 5 tengo más aristas para explorar y no,",
+        "start": 4044.46,
+        "end": 4053.46
+    },
+    {
+        "text": " por ejemplo, el lado es la 3, la 4 y la 6, y una arista que me conecta con esos artices,",
+        "start": 4053.46,
+        "end": 4059.62
+    },
+    {
+        "text": " ya no tengo más para dónde seguir, no se vuelvo otro paso para más, más para atrás.",
+        "start": 4060.82,
+        "end": 4064.86
+    },
+    {
+        "text": " Se llega hasta 4 y según punto muerto se vuelve para atrás a 5, de 5 retomé la que",
+        "start": 4064.86,
+        "end": 4071.78
+    },
+    {
+        "text": " buscione, ahora explore 6, de 6, no puedo de vuelta a 5, otro punto ciego y vuelve a 5, en 5",
+        "start": 4071.78,
+        "end": 4081.6600000000003
+    },
+    {
+        "text": " ahora ya que de a correr lado, o sea no tengo más para dónde seguir, entonces vuelvo al lugar de donde",
+        "start": 4081.6600000000003,
+        "end": 4087.9
+    },
+    {
+        "text": " partíes, decir a 3, o sea, fíjense en azules, están marcar las aristas cuando llegué y vuelvo por ahí,",
+        "start": 4087.9,
+        "end": 4096.06
+    },
+    {
+        "text": " esto en la implementación de lo del barismo que hemos recién, estas flechas en azule",
+        "start": 4096.06,
+        "end": 4102.06
+    },
+    {
+        "text": " definitivas son las llamadas recusivas, y las vueltas esas de cuando ya estoy a corralado que no",
+        "start": 4102.06,
+        "end": 4109.34
+    },
+    {
+        "text": " puedo seguir son los retornos de las llamadas recusivas, y cuando termine de recorrer todas las",
+        "start": 4109.34,
+        "end": 4114.18
+    },
+    {
+        "text": " aristas, ustedes ven la definición del albóritmo, y se para cada arista uve, me fijó si no",
+        "start": 4114.18,
+        "end": 4121.6
+    },
+    {
+        "text": " esté explodado, si ya está explodado o no, si no está explodado, se hamos recusivamente, en el",
+        "start": 4121.6,
+        "end": 4126.14
+    },
+    {
+        "text": " momento toda esta cadena, este loop de recorrer todas las aristas se termina, y ahí vuelvo",
+        "start": 4126.14,
+        "end": 4134.38
+    },
+    {
+        "text": " en la cadena de esa más recusiva vuelvo a la invocación llamadora, esa de regreso a la invocación",
+        "start": 4134.38,
+        "end": 4143.9400000000005
+    },
+    {
+        "text": " padre, el que me amó recusivamente, en definitiva es lo que está marcado acá con estas flechas en azules,",
+        "start": 4144.78,
+        "end": 4151.66
+    },
+    {
+        "text": " cuando vuelvo a tres, yo en tres había estado recorriendo las aristas hacia uno, hacia dos,",
+        "start": 4153.0199999999995,
+        "end": 4159.78
+    },
+    {
+        "text": " que no había decidido una explorada porque ya había sido exploradas, hacia cinco, me había mandado",
+        "start": 4159.78,
+        "end": 4164.94
+    },
+    {
+        "text": " para ahí, terminé de procesar todo el cinco, volvi, y ahora sigo, y bueno, veo que tengo una",
+        "start": 4164.94,
+        "end": 4171.5
+    },
+    {
+        "text": " arista con siete, así que me mando para ahí, porque al siete todavía no les plore.",
+        "start": 4171.5,
+        "end": 4177.1
+    },
+    {
+        "text": " Y sigo, ahora recorro las aristas de siete, siete tiene una arista con tres, pero tienes",
+        "start": 4180.7,
+        "end": 4185.7
+    },
+    {
+        "text": " la explorada y tienes una arista con ocho, ocho todavía no les plore, así que me mando para",
+        "start": 4185.7,
+        "end": 4189.18
+    },
+    {
+        "text": " cuando sigo a ocho, explorte una arista con tres, pero sea las flores, tiene una arista con siete,",
+        "start": 4191.5,
+        "end": 4195.74
+    },
+    {
+        "text": " por ser las flores, así que vuelvo a siete, en siete me quedan todavía más aristas para seguir",
+        "start": 4195.74,
+        "end": 4202.139999999999
+    },
+    {
+        "text": " explorando, no, ya exploré todo lo que tenía para explorar, así que vuelvo a donde me llamaron,",
+        "start": 4202.139999999999,
+        "end": 4207.86
+    },
+    {
+        "text": " que es al tres, en tres terminé de explorar todas las aristas que tenía para explorar, no,",
+        "start": 4207.86,
+        "end": 4215.86
+    },
+    {
+        "text": " en realidad todavía no exploré la arista que me lleva con ocho, pero cuando voy a explorar la",
+        "start": 4215.86,
+        "end": 4219.7
+    },
+    {
+        "text": " arista con ocho, veo que recién fue explorada, fue explorada por siete, cuando hice la",
+        "start": 4219.7,
+        "end": 4227.26
+    },
+    {
+        "text": " samada recién, entonces para ocho no voy y se me agotaron las, ahora sí se me agotaron las",
+        "start": 4227.26,
+        "end": 4232.98
+    },
+    {
+        "text": " posibilidades, así que vuelvo a dos, en dos tengo más aristas para seguir explorando, bueno,",
+        "start": 4232.98,
+        "end": 4242.38
+    },
+    {
+        "text": " la última que había explorado fue la arista con tres, que fue para donde me mandé en la samada",
+        "start": 4242.38,
+        "end": 4248.7
+    },
+    {
+        "text": " recurse, tengo que seguir explorando la arista con cuatro y la arista con cinco, pero todas esas",
+        "start": 4248.7,
+        "end": 4255.3
+    },
+    {
+        "text": " fueron, esos vértices fueron explorados en las samadas recurcidas que yo mismo generé,",
+        "start": 4255.3,
+        "end": 4262.179999999999
+    },
+    {
+        "text": " entonces ahora cuando le sigo el turno, cuando me sigo el turno a mí y de probar si puede para",
+        "start": 4262.179999999999,
+        "end": 4268.62
+    },
+    {
+        "text": " ahí, en realidad se han explorado, así que no voy para ahí, no tengo más para donde seguir,",
+        "start": 4268.62,
+        "end": 4272.7
+    },
+    {
+        "text": " así que vuelvo a uno, esto no es lo que quería hacer, ahora sí vuelvo a uno,",
+        "start": 4272.7,
+        "end": 4286.78
+    },
+    {
+        "text": " en uno de las dos aristas que tiene se habían explorado una de ellas, todavía tengo para probar",
+        "start": 4289.099999999999,
+        "end": 4296.0199999999995
+    },
+    {
+        "text": " la otra, pero cuando voy a ver qué pasa con la arista con tres, en realidad veo que tres se",
+        "start": 4296.0199999999995,
+        "end": 4301.179999999999
+    },
+    {
+        "text": " ha explorado, así que no repito una exploración por ahí, tres fue explorado en algún lugar de la",
+        "start": 4301.18,
+        "end": 4308.740000000001
+    },
+    {
+        "text": " cadena de samada recurse, que yo mismo generé cuando me mandé con la arista que me conecta con dos,",
+        "start": 4308.740000000001,
+        "end": 4313.66
+    },
+    {
+        "text": " entonces a mí me faltó acá, esto creo que lo voy a arrear a su prato, es esto sí,",
+        "start": 4316.900000000001,
+        "end": 4323.18
+    },
+    {
+        "text": " si tenés en el grafo un partiste que se conecta con sí mismo, alguno de los algoritmos cambian o",
+        "start": 4323.18,
+        "end": 4335.1
+    },
+    {
+        "text": " igual los puedes aplicar, igual los puedes aplicar, en general los arrancas marcando el partiste como",
+        "start": 4335.1,
+        "end": 4343.22
+    },
+    {
+        "text": " explorado, si tienes una vista que te conecta con vos mismo, nada, cuando sigues esa arista,",
+        "start": 4343.22,
+        "end": 4352.26
+    },
+    {
+        "text": " vos vas a estar macado con explorado y no pasamos, sino quedaría como un loop ahí, pero no te da",
+        "start": 4352.26,
+        "end": 4359.5
+    },
+    {
+        "text": " camión, gracias, bien,",
+        "start": 4359.5,
+        "end": 4365.34
+    },
+    {
+        "text": " bueno, esto fue una ejemplo de una ejecución del algoritmo de FSS,",
+        "start": 4370.9800000000005,
+        "end": 4380.1
+    },
+    {
+        "text": " lo que está marcado en azul, son las harices de forma del árbol de recorrida de FSS,",
+        "start": 4381.1,
+        "end": 4386.9800000000005
+    },
+    {
+        "text": " que de vuelta, justamente porque es un caso particular de este algoritmo más general que",
+        "start": 4386.9800000000005,
+        "end": 4393.820000000001
+    },
+    {
+        "text": " dimores, lo que termine marcando son todos los vértices que están en la componente con x,",
+        "start": 4393.820000000001,
+        "end": 4401.18
+    },
+    {
+        "text": " si termine marcando toda la componente con x, y me quedaron afuera el 9 del 10 y el 11 del",
+        "start": 4401.18,
+        "end": 4407.780000000001
+    },
+    {
+        "text": " 12 del 13 y que pertenecen las otras componentes con x, y el árbol de FSS que terminé construyendo,",
+        "start": 4407.78,
+        "end": 4422.5
+    },
+    {
+        "text": " esto que está en azul, lo van a encontrar en el libro dibujado de esta otra manera,",
+        "start": 4422.5,
+        "end": 4427.54
+    },
+    {
+        "text": " es el mismo árbol, si se acuerdan pasamos de 1 a 2 de 2 a 3, de 3 a 5, 4,",
+        "start": 4427.98,
+        "end": 4437.26
+    },
+    {
+        "text": " lo volví de 5 a 6, después de 3 retomé con 7 y de 8, y lo que están de vuelta, en",
+        "start": 4437.26,
+        "end": 4443.3
+    },
+    {
+        "text": " punteado son aristas que son parte de grafo, pero no quedaron formando parte de el árbol,",
+        "start": 4443.3,
+        "end": 4449.3
+    },
+    {
+        "text": " ¿no? Bueno, ¿qué propiedad tiene ese árbol, el árbol de FSS en este caso?",
+        "start": 4450.3,
+        "end": 4456.54
+    },
+    {
+        "text": " Bueno, sobre el árbol de FSS en este caso podemos decirlo siguiente, si te hizo un árbol de",
+        "start": 4466.14,
+        "end": 4473.02
+    },
+    {
+        "text": " buge de profundidad, de si un árbol de FSS, y tenemos X, E, Son, nodos de T, es decir, Son,",
+        "start": 4473.02,
+        "end": 4482.660000000001
+    },
+    {
+        "text": " nodos que están en la misma componente con x, y X, E es una arista de G cualquiera, si no",
+        "start": 4482.660000000001,
+        "end": 4490.9400000000005
+    },
+    {
+        "text": " necesariamente el árbol, puede salir de las puntiadas o de las sólidas, ¿no? En más acá el enunciado,",
+        "start": 4490.9400000000005,
+        "end": 4497.9800000000005
+    },
+    {
+        "text": " como está en el libro dice, sí, una arista que está en G, pero no está en T, en realidad no hace",
+        "start": 4497.98,
+        "end": 4506.98
+    },
+    {
+        "text": " falta a pedir que no esté en T, se cumple también a cómo se va a hacer, la T, si es que entonces,",
+        "start": 4506.98,
+        "end": 4513.219999999999
+    },
+    {
+        "text": " sí, X, Y están conectados, o sea, sí, y sí están conectados con una arista de G, y está en",
+        "start": 4513.219999999999,
+        "end": 4522.0599999999995
+    },
+    {
+        "text": " la misma componente con X, ¿no? Entonces, uno es un ancestro del otro, en el árbol de FSS,",
+        "start": 4522.06,
+        "end": 4530.620000000001
+    },
+    {
+        "text": " ¿no? Si ustedes miran, si ustedes miran el dibujito de mi moración, si miran las",
+        "start": 4530.620000000001,
+        "end": 4545.02
+    },
+    {
+        "text": " aristas puntiadas, así como está presentado el árbol ahora que está colgando desde la raíz y con",
+        "start": 4545.02,
+        "end": 4552.700000000001
+    },
+    {
+        "text": " la descendencia hacia abajo, es claro que todas estas aristas puntiadas, las aristas puntiadas,",
+        "start": 4552.700000000001,
+        "end": 4558.22
+    },
+    {
+        "text": " que son las de G que no están entiendo, conectan nodos que son uno ancestro del otro, es decir,",
+        "start": 4558.22,
+        "end": 4565.860000000001
+    },
+    {
+        "text": " lo que no puede pasar, me está diciendo este resultado, lo que está diciendo es que por ejemplo,",
+        "start": 4565.860000000001,
+        "end": 4574.34
+    },
+    {
+        "text": " no puedo encontrar, eso es una arista acá,",
+        "start": 4575.02,
+        "end": 4583.3
+    },
+    {
+        "text": " está diciendo no, en G no puedo haber una arista que se ha decidido decir, porque en 7 y 4",
+        "start": 4588.02,
+        "end": 4593.14
+    },
+    {
+        "text": " no son uno ancestro del otro, ¿no? Y por qué no puede pasar eso?",
+        "start": 4593.14,
+        "end": 4598.02
+    },
+    {
+        "text": " Porque les parece que no, pensando en cómo es la recorrida de FSS.",
+        "start": 4598.02,
+        "end": 4607.9400000000005
+    },
+    {
+        "text": " No sería porque si no, el 7 tiene que estar abajo del 4 como la misma línea. Y claro,",
+        "start": 4607.9400000000005,
+        "end": 4617.26
+    },
+    {
+        "text": " no puede pasar por eso, porque si estuviera estarista en azul, en el momento que visito a 4,",
+        "start": 4617.26,
+        "end": 4626.22
+    },
+    {
+        "text": " automáticamente hubiera visitado 7 como descendentes de 4, y si en vez de 4, que visito primero",
+        "start": 4626.22,
+        "end": 4632.900000000001
+    },
+    {
+        "text": " es el 7, hubiera visitado el 4 como descendentes de 7, pero el hecho del 6 una arista se implica que",
+        "start": 4632.900000000001,
+        "end": 4638.46
+    },
+    {
+        "text": " me voy a mandar por ahí y no puede pasar que queden como niveles paralelas, una estructura como esta",
+        "start": 4638.46,
+        "end": 4647.740000000001
+    },
+    {
+        "text": " que está dibujada acá implicaría que cuando llegué a 4, tenía una arista y no le seguí o que",
+        "start": 4647.740000000001,
+        "end": 4654.14
+    },
+    {
+        "text": " cuando llegué a 7 tenía una arista y no le seguí y eso es como está definido de la recorrida.",
+        "start": 4654.14,
+        "end": 4657.9400000000005
+    },
+    {
+        "text": " Entonces de vuelta, nada va a encontrar ahí una explicación textual y revoluoso de por qué",
+        "start": 4657.9400000000005,
+        "end": 4666.46
+    },
+    {
+        "text": " esto es así, pero la intuición me parece que es bastante clara y es esta que les acabo de dibujar acá.",
+        "start": 4666.46,
+        "end": 4671.5
+    },
+    {
+        "text": " Bueno, esto quedó claro, alguna duda, que se de vuelta y ven que hay propiedades interesantes para",
+        "start": 4671.5,
+        "end": 4696.94
+    },
+    {
+        "text": " decir sobre cómo la estructura del arco que terminamos tuviéndose, no solo tanto en BFS como en DFS,",
+        "start": 4696.94,
+        "end": 4704.139999999999
+    },
+    {
+        "text": " no solo que encuentro una componente con exa, sino que además puedo construir un árbol de",
+        "start": 4706.54,
+        "end": 4713.379999999999
+    },
+    {
+        "text": " recorrida que tiene propiedades interesantes. Ahí es un patrón de análisis que me ha estado",
+        "start": 4713.379999999999,
+        "end": 4722.219999999999
+    },
+    {
+        "text": " siguiendo desde el principio, no solo analizamos el algoritmo desde el punto de vista de la",
+        "start": 4722.22,
+        "end": 4730.3
+    },
+    {
+        "text": " corrección y desde el tiempo de ejecución, de lo que también vamos a hacer, sino que",
+        "start": 4730.3,
+        "end": 4736.860000000001
+    },
+    {
+        "text": " sino que además estudiamos propiedades de los resultados que genera y el estudio de esas propiedades",
+        "start": 4741.26,
+        "end": 4747.42
+    },
+    {
+        "text": " sobre qué tipo de estructura genera los algoritmos, el lo que nos permite después aplicar,",
+        "start": 4747.42,
+        "end": 4755.5
+    },
+    {
+        "text": " bueno, es parte de las cosas nos permite después aplicar este algoritmo para resolver otros problemas",
+        "start": 4755.5,
+        "end": 4761.38
+    },
+    {
+        "text": " más generales y sabiendo que estas propiedades se cumplen, analizar la corrección de nuestros",
+        "start": 4762.9800000000005,
+        "end": 4771.86
+    },
+    {
+        "text": " algoritmos para otro tipo de problemas en los cuales usamos BFS como herramientas.",
+        "start": 4771.86,
+        "end": 4777.62
+    },
+    {
+        "text": " Vamos a después que con esto solo lo mismo, no solo podemos encontrar la componente con exa",
+        "start": 4788.62,
+        "end": 4798.7
+    },
+    {
+        "text": " de un verticinio que también de forma eficiente podemos encontrar todas las componentes con exa.",
+        "start": 4798.7,
+        "end": 4804.0199999999995
+    },
+    {
+        "text": " Eso es porque van a definitivamente la relación de partencer a una misma componente con exa,",
+        "start": 4804.0199999999995,
+        "end": 4808.099999999999
+    },
+    {
+        "text": " es una relación de equivalencia, es decir, las componentes con exa es una partición del grafo y",
+        "start": 4808.099999999999,
+        "end": 4817.46
+    },
+    {
+        "text": " una, en lo que puedo hacer es bueno, encuentro una componente con exa, si me quedo algo afuera,",
+        "start": 4817.46,
+        "end": 4822.099999999999
+    },
+    {
+        "text": " bueno hago crecer otra componente con exa más, si me sigue quedando algo afuera, hago crecer otra más,",
+        "start": 4822.099999999999,
+        "end": 4827.62
+    },
+    {
+        "text": " y así puedo hacer todas las componentes con exa de un grafo, eso a priori puede parecer como algo",
+        "start": 4828.7,
+        "end": 4835.34
+    },
+    {
+        "text": " más complejo, podemos juntar muchas veces, definícselo, definícselo, y tengo que encontrar",
+        "start": 4835.34,
+        "end": 4842.74
+    },
+    {
+        "text": " demasiado alguien que me quedo afuera, pero de hecho es van a haber que de forma de implementar esto",
+        "start": 4842.74,
+        "end": 4847.099999999999
+    },
+    {
+        "text": " de forma muy, muy eficiente. Y hablando de eficiencia, vamos a ir a eso también.",
+        "start": 4847.1,
+        "end": 4861.06
+    },
+    {
+        "text": " De vuelta, siguiendo más o menos el mismo tipo de estrategia que venimos,",
+        "start": 4863.900000000001,
+        "end": 4869.06
+    },
+    {
+        "text": " usando hasta ahora, hicimos una presentación de los algoritmos a un alto nivel,",
+        "start": 4869.06,
+        "end": 4875.18
+    },
+    {
+        "text": " para analizar el tiempo de escribucción de los algoritmos, bueno tenemos que hablar de bueno",
+        "start": 4875.18,
+        "end": 4880.580000000001
+    },
+    {
+        "text": " de qué es que el altura de la data vamos a usar y cómo vamos específicamente, los pasas",
+        "start": 4880.580000000001,
+        "end": 4885.14
+    },
+    {
+        "text": " que aparecen ahí, cómo lo vamos a intentar.",
+        "start": 4885.14,
+        "end": 4887.1
+    },
+    {
+        "text": " Entonces, acá se van a encontrar otra sección que habla de cómo implementar estas recorridas",
+        "start": 4887.1,
+        "end": 4893.620000000001
+    },
+    {
+        "text": " grafas usando colas y pilas, y acá van a encontrar también una discusión sobre cómo se",
+        "start": 4893.62,
+        "end": 4900.22
+    },
+    {
+        "text": " representan los grafas, a mi memoria que estructuras de datos usamos para representar, si van",
+        "start": 4900.22,
+        "end": 4905.099999999999
+    },
+    {
+        "text": " a ver que hay varias alternativas, una es como matriz de desascencia, que básicamente",
+        "start": 4905.099999999999,
+        "end": 4914.66
+    },
+    {
+        "text": " si tengo de nevar, dice que no va a tener de neporia, que me dice quién es tan conectado",
+        "start": 4914.66,
+        "end": 4919.0199999999995
+    },
+    {
+        "text": " a con quién, con un flag, por ejemplo, ese es un tipo de representación, otro tipo",
+        "start": 4919.02,
+        "end": 4928.5
+    },
+    {
+        "text": " de representación que es en general la que más vamos a usar nosotros, es la representación",
+        "start": 4928.5,
+        "end": 4937.22
+    },
+    {
+        "text": " de lista de desascencia, que la representación de lista de desascencia, representación de",
+        "start": 4937.22,
+        "end": 4958.04
+    },
+    {
+        "text": " lista de desascencia, es algo así, es una para grafos no dirigidos.",
+        "start": 4958.04,
+        "end": 4979.28
+    },
+    {
+        "text": " Tengo en evart, dice que es una rey de uno a n, donde cada Zelda,",
+        "start": 4979.28,
+        "end": 4989.28
+    },
+    {
+        "text": " que tiene la batería, hacerla lo que tiene es una lista, con los vértices que son",
+        "start": 4989.28,
+        "end": 5011.0
+    },
+    {
+        "text": " adecuados, que son los vértices de un grafos, pueden ser conjuntos arbitrarios de cosas,",
+        "start": 5011.0,
+        "end": 5021.0
+    },
+    {
+        "text": " pero van a hacer un número de lunes a lunes y son para mi que indexar, por ejemplo,",
+        "start": 5021.0,
+        "end": 5028.0
+    },
+    {
+        "text": " de uno voy a tener una lista en la sala, con los vértices que son asesentes a uno, por ejemplo,",
+        "start": 5028.0,
+        "end": 5046.0
+    },
+    {
+        "text": " que vamos a tener el grafos, tenemos que tener una cosa así, tanto, el uno está conectado",
+        "start": 5046.0,
+        "end": 5073.0
+    },
+    {
+        "text": " con el 3 y el 5, entonces acá tendría que estar conectado acá con el 4 y con nada más,",
+        "start": 5073.0,
+        "end": 5092.0
+    },
+    {
+        "text": " por acá no había hasta el 3, que el 3 está conectado con el 1 y con el 5,",
+        "start": 5092.0,
+        "end": 5104.0
+    },
+    {
+        "text": " este es un tipo de representación, que es muy natural para algoritmos como esto,",
+        "start": 5104.0,
+        "end": 5116.0
+    },
+    {
+        "text": " que estemos viendo de recorrido, en sentido de que algoritmos donde me parem en un vértice",
+        "start": 5116.0,
+        "end": 5123.0
+    },
+    {
+        "text": " y a partir de ahí empieza a explorar todos sus vecinos, estas listas en la sala me permite",
+        "start": 5123.0,
+        "end": 5130.0
+    },
+    {
+        "text": " que recorrerlos de forma eficiente, y en general este tipo de verinos son los que más vamos",
+        "start": 5130.0,
+        "end": 5148.0
+    },
+    {
+        "text": " a estar estudiando y este tipo de representaciones, la que mejor nos va a venir, salvo que diómoslo",
+        "start": 5148.0,
+        "end": 5156.0
+    },
+    {
+        "text": " contra el general, vamos a subir esta representación, esta representación, cuando la cantidad de aristas,",
+        "start": 5156.0,
+        "end": 5165.0
+    },
+    {
+        "text": " la cantidad de aristas en principio puede ser el dolor de N cuadra, si tanto es con todo, si es bien su grafo,",
+        "start": 5165.0,
+        "end": 5172.0
+    },
+    {
+        "text": " pero para grafos donde la cantidad de aristas es bastante menor que N cuadra, entonces esto tiene una ventaja",
+        "start": 5172.0,
+        "end": 5179.0
+    },
+    {
+        "text": " desde el punto de vista de consumo de memoria y también de eficiencia de cálculo,",
+        "start": 5179.0,
+        "end": 5189.0
+    },
+    {
+        "text": " una situación de que tenemos que cerrar sobre los vecinos donde terminamos a vértice,",
+        "start": 5189.0,
+        "end": 5194.0
+    },
+    {
+        "text": " por ejemplo, aquí imagínense que quiero recorrer los asascentes a 1, al vértice 1,",
+        "start": 5194.0,
+        "end": 5202.0
+    },
+    {
+        "text": " bueno, este es una vista que tiene dos elementos, 3 y 5, si tuviera un grafo con 1 millón de vértices,",
+        "start": 5202.0,
+        "end": 5211.0
+    },
+    {
+        "text": " también es una representación de matriz de desascencia, que es la representación de matriz de desascencia,",
+        "start": 5211.0,
+        "end": 5222.0
+    },
+    {
+        "text": " entonces la matriz de desascencia es una matriz cuadrada,",
+        "start": 5222.0,
+        "end": 5237.0
+    },
+    {
+        "text": " entonces el vértice 1, si mire la fila del vértice 1,",
+        "start": 5237.0,
+        "end": 5242.0
+    },
+    {
+        "text": " bueno, tendría un, tendría marcado el 3, tendría marcado el 5,",
+        "start": 5242.0,
+        "end": 5251.0
+    },
+    {
+        "text": " pues esto podría ser una matriz enorme, que sí, así allá,",
+        "start": 5251.0,
+        "end": 5257.0
+    },
+    {
+        "text": " para que este dibujo me quedó muy feo,",
+        "start": 5257.0,
+        "end": 5262.0
+    },
+    {
+        "text": " pues acá está el 3, el 5, pues esto sigue hasta el DNA que puede ser muy grande,",
+        "start": 5263.0,
+        "end": 5271.0
+    },
+    {
+        "text": " entonces si yo quiero ver, quienes son los asascentes a 1 en este tipo de representación,",
+        "start": 5271.0,
+        "end": 5276.0
+    },
+    {
+        "text": " bueno, tengo que recorrer toda la fila esa y ver dónde hay unos y dónde hay ceros,",
+        "start": 5276.0,
+        "end": 5283.0
+    },
+    {
+        "text": " pues en la matriz buliana de unos ceros, que me dicen dónde es ascenso y dónde no,",
+        "start": 5283.0,
+        "end": 5289.0
+    },
+    {
+        "text": " entonces eso independiente de que la cantidad de desascentes y casos sea solo 2,",
+        "start": 5290.0,
+        "end": 5294.0
+    },
+    {
+        "text": " me obliga a recorrer los n vértices distintos a ver quién es esta ni quién es,",
+        "start": 5294.0,
+        "end": 5299.0
+    },
+    {
+        "text": " entonces para el tipo de algoritmo que vamos a estudiar,",
+        "start": 5299.0,
+        "end": 5302.0
+    },
+    {
+        "text": " en general nos va a convenir una representación de vista de desascencia.",
+        "start": 5302.0,
+        "end": 5305.0
+    },
+    {
+        "text": " Alguien se va a estudiar, ¿sabes?",
+        "start": 5320.0,
+        "end": 5324.0
+    },
+    {
+        "text": " ¿Sobrí cómo es que vamos a representar en memoria los grafos?",
+        "start": 5324.0,
+        "end": 5329.0
+    },
+    {
+        "text": " Y una comentario bien relevante acá es que como les comentaba su rato,",
+        "start": 5329.0,
+        "end": 5339.0
+    },
+    {
+        "text": " cuando hacemos expresar los tiempos de ejecución de para algoritmos que trabajan sobre grafos,",
+        "start": 5339.0,
+        "end": 5345.0
+    },
+    {
+        "text": " acá no hay tanto la cantidad de bárbices como la cantidad de vista son medidas razonables",
+        "start": 5346.0,
+        "end": 5352.0
+    },
+    {
+        "text": " a partir de la cual es el tipo de ejecución.",
+        "start": 5352.0,
+        "end": 5355.0
+    },
+    {
+        "text": " Entonces y a veces no queda claro que es mejor que que hasta que bueno,",
+        "start": 5355.0,
+        "end": 5360.0
+    },
+    {
+        "text": " nos sepamos un poco más que que características tienen los grafos,",
+        "start": 5360.0,
+        "end": 5363.0
+    },
+    {
+        "text": " por ejemplo si emis la cantidad de aristas y emis la cantidad de bárbices,",
+        "start": 5363.0,
+        "end": 5369.0
+    },
+    {
+        "text": " bueno es mejor emis al cuadrado o es mejor emis al cubo,",
+        "start": 5370.0,
+        "end": 5376.0
+    },
+    {
+        "text": " como tiempo de ejecución.",
+        "start": 5376.0,
+        "end": 5379.0
+    },
+    {
+        "text": " Y bueno uno diría, bueno emis que la cantidad de aristas puede ser el orden de emis cuadrado,",
+        "start": 5379.0,
+        "end": 5385.0
+    },
+    {
+        "text": " entonces emis cuadrado podría ser como venia la cuarta,",
+        "start": 5385.0,
+        "end": 5388.0
+    },
+    {
+        "text": " entonces esto puede ser el peor.",
+        "start": 5388.0,
+        "end": 5391.0
+    },
+    {
+        "text": " Sí pero si el grafos es súper esparso,",
+        "start": 5391.0,
+        "end": 5395.0
+    },
+    {
+        "text": " te pede a capaz que emis cuadrado,",
+        "start": 5395.0,
+        "end": 5398.0
+    },
+    {
+        "text": " es mejor que emis cubo,",
+        "start": 5398.0,
+        "end": 5401.0
+    },
+    {
+        "text": " porque emis puede ser chico,",
+        "start": 5401.0,
+        "end": 5404.0
+    },
+    {
+        "text": " puede ser mucho más chico que emis cuadrados.",
+        "start": 5405.0,
+        "end": 5410.0
+    },
+    {
+        "text": " Entonces en definitivo lo que vamos a terminar haciendo es escribir,",
+        "start": 5410.0,
+        "end": 5415.0
+    },
+    {
+        "text": " en general los tiempos de ejecución, con su menudo, etcétera,",
+        "start": 5415.0,
+        "end": 5419.0
+    },
+    {
+        "text": " en términos de ambos.",
+        "start": 5419.0,
+        "end": 5422.0
+    },
+    {
+        "text": " Y vamos a ver que todos estos algoritmos que estuimos viendo son de orden",
+        "start": 5422.0,
+        "end": 5428.0
+    },
+    {
+        "text": " emmazn, que en definitiva es lineal en el tamaño del grajo,",
+        "start": 5428.0,
+        "end": 5434.0
+    },
+    {
+        "text": " es decir,",
+        "start": 5434.0,
+        "end": 5436.0
+    },
+    {
+        "text": " esto es el lineal en la cantidad de bárbices y cantidad de aristas,",
+        "start": 5436.0,
+        "end": 5440.0
+    },
+    {
+        "text": " es mejor que eso difícilmente podemos hacer,",
+        "start": 5440.0,
+        "end": 5443.0
+    },
+    {
+        "text": " por ejemplo, solo leer el grafos,",
+        "start": 5443.0,
+        "end": 5446.0
+    },
+    {
+        "text": " por lo menos,",
+        "start": 5446.0,
+        "end": 5447.0
+    },
+    {
+        "text": " debes llevar esa quizás cantidad de tiempo.",
+        "start": 5447.0,
+        "end": 5450.0
+    },
+    {
+        "text": " Uno de esas cosas que va a ver la pena ser,",
+        "start": 5454.0,
+        "end": 5456.0
+    },
+    {
+        "text": " porque además muchas veces nos observamos,",
+        "start": 5456.0,
+        "end": 5458.0
+    },
+    {
+        "text": " en contra de la situación,",
+        "start": 5458.0,
+        "end": 5460.0
+    },
+    {
+        "text": " cuando los grafos son conexos,",
+        "start": 5460.0,
+        "end": 5463.0
+    },
+    {
+        "text": " y cuando tenemos expresiones del estilo orden de emmazn,",
+        "start": 5466.0,
+        "end": 5471.0
+    },
+    {
+        "text": " eso es lo mismo en definitivo decir, o de emm.",
+        "start": 5472.0,
+        "end": 5475.0
+    },
+    {
+        "text": " Cuando el grafos es conexo,",
+        "start": 5477.0,
+        "end": 5479.0
+    },
+    {
+        "text": " ¿Por qué? Porque algún grafo sea conexo,",
+        "start": 5481.0,
+        "end": 5485.0
+    },
+    {
+        "text": " em tiene que ser mayor igual a n y menos 1,",
+        "start": 5485.0,
+        "end": 5488.0
+    },
+    {
+        "text": " es la cantidad de aristas que tienen un árbol que es lo más chico que pongan",
+        "start": 5488.0,
+        "end": 5492.0
+    },
+    {
+        "text": " que sea conexo.",
+        "start": 5492.0,
+        "end": 5494.0
+    },
+    {
+        "text": " Entonces está claro que em es menor igual que emmazn,",
+        "start": 5495.0,
+        "end": 5499.0
+    },
+    {
+        "text": " pero su bsm es mayor igual que n y menos 1,",
+        "start": 5500.0,
+        "end": 5503.0
+    },
+    {
+        "text": " es al que algo proporcional hay n.",
+        "start": 5503.0,
+        "end": 5505.0
+    },
+    {
+        "text": " Entonces está tan toda decir, o de emmazn,",
+        "start": 5505.0,
+        "end": 5508.0
+    },
+    {
+        "text": " como decir, o de em.",
+        "start": 5508.0,
+        "end": 5510.0
+    },
+    {
+        "text": " Entonces en ese caso podemos presidir de n",
+        "start": 5510.0,
+        "end": 5513.0
+    },
+    {
+        "text": " en las expresiones para el tiempo de dificución.",
+        "start": 5513.0,
+        "end": 5515.0
+    },
+    {
+        "text": " Sí sabemos que el grafos conexo.",
+        "start": 5520.0,
+        "end": 5522.0
+    },
+    {
+        "text": " Se entendía algo, ¿Una duama?",
+        "start": 5525.0,
+        "end": 5527.0
+    },
+    {
+        "text": " ¿Esto es lo que estamos viendo acá,",
+        "start": 5528.0,
+        "end": 5530.0
+    },
+    {
+        "text": " si el marco en el cual vamos a hacer la análisis",
+        "start": 5530.0,
+        "end": 5533.0
+    },
+    {
+        "text": " de tiempo de dificución de saludos que trabajan con grafos?",
+        "start": 5533.0,
+        "end": 5536.0
+    },
+    {
+        "text": " ¿Puedes volver a repetir eso de o emmazn?",
+        "start": 5538.0,
+        "end": 5541.0
+    },
+    {
+        "text": " ¿Por qué es la suma?",
+        "start": 5541.0,
+        "end": 5543.0
+    },
+    {
+        "text": " Claro, esto es cuando el grafos es conexo.",
+        "start": 5544.0,
+        "end": 5548.0
+    },
+    {
+        "text": " Imagínate que tenemos, por ejemplo,",
+        "start": 5549.0,
+        "end": 5551.0
+    },
+    {
+        "text": " vamos a ver que lo mismo es fs o fs,",
+        "start": 5551.0,
+        "end": 5553.0
+    },
+    {
+        "text": " y cualquier vez lo lo hace puede ayudar en tiempo o de emmazn.",
+        "start": 5553.0,
+        "end": 5556.0
+    },
+    {
+        "text": " Lo que yo digo es que si yo sé que el grafos conexo,",
+        "start": 5558.0,
+        "end": 5563.0
+    },
+    {
+        "text": " entonces simplemente puede ser que el algoritmo",
+        "start": 5563.0,
+        "end": 5566.0
+    },
+    {
+        "text": " tiene un tiempo de dificución que es o de emm.",
+        "start": 5566.0,
+        "end": 5568.0
+    },
+    {
+        "text": " Al res es claro, si es o de emm,",
+        "start": 5573.0,
+        "end": 5576.0
+    },
+    {
+        "text": " obviamente también es o de emmazn.",
+        "start": 5576.0,
+        "end": 5578.0
+    },
+    {
+        "text": " Porque emm, más chico que emm.",
+        "start": 5579.0,
+        "end": 5582.0
+    },
+    {
+        "text": " Ahora, si el grafos no es conexo,",
+        "start": 5583.0,
+        "end": 5586.0
+    },
+    {
+        "text": " decir que fs o que fs tienen orden em,",
+        "start": 5587.0,
+        "end": 5592.0
+    },
+    {
+        "text": " eso no es correcto.",
+        "start": 5592.0,
+        "end": 5594.0
+    },
+    {
+        "text": " Porque el grafos podría tener un misión de nodos",
+        "start": 5595.0,
+        "end": 5598.0
+    },
+    {
+        "text": " y dos aristas.",
+        "start": 5598.0,
+        "end": 5600.0
+    },
+    {
+        "text": " Por ser lo más es eso es un loco concreto",
+        "start": 5603.0,
+        "end": 5607.0
+    },
+    {
+        "text": " y no sirve para afirmar nada con respecto a un análisis asintótico,",
+        "start": 5607.0,
+        "end": 5611.0
+    },
+    {
+        "text": " pero quiere decir el tipo de situaciones.",
+        "start": 5612.0,
+        "end": 5614.0
+    },
+    {
+        "text": " Imagínese que em es siempre dos.",
+        "start": 5614.0,
+        "end": 5620.0
+    },
+    {
+        "text": " Estoy diciendo que un grafos que tienen dos aristas.",
+        "start": 5620.0,
+        "end": 5623.0
+    },
+    {
+        "text": " Y em puede crecer indefinidamente.",
+        "start": 5624.0,
+        "end": 5626.0
+    },
+    {
+        "text": " Entonces decir que algo es o de emm,",
+        "start": 5626.0,
+        "end": 5629.0
+    },
+    {
+        "text": " en este caso, como decir que es o de uno es constante",
+        "start": 5629.0,
+        "end": 5635.0
+    },
+    {
+        "text": " y para ver si es y me mase en emm,",
+        "start": 5635.0,
+        "end": 5637.0
+    },
+    {
+        "text": " porque emm va creciendo.",
+        "start": 5637.0,
+        "end": 5638.0
+    },
+    {
+        "text": " Entonces, voy a poner en grafos donde la cantidad de aristas,",
+        "start": 5639.0,
+        "end": 5643.0
+    },
+    {
+        "text": " en grafos muy esparsos donde la cantidad de aristas es más chica que emm,",
+        "start": 5643.0,
+        "end": 5647.0
+    },
+    {
+        "text": " no es correcto decir que si llega hasta la comulación de pulver barismo",
+        "start": 5647.0,
+        "end": 5650.0
+    },
+    {
+        "text": " tiene tiempo de distribución o de emm,",
+        "start": 5650.0,
+        "end": 5652.0
+    },
+    {
+        "text": " más emm, no puede decir a la ligera o de em,",
+        "start": 5652.0,
+        "end": 5657.0
+    },
+    {
+        "text": " porque emm más grande, no.",
+        "start": 5657.0,
+        "end": 5659.0
+    },
+    {
+        "text": " No depende del tipo de grafos.",
+        "start": 5659.0,
+        "end": 5660.0
+    },
+    {
+        "text": " Ahora, si vos sabes y hay muchas situaciones donde eso es así,",
+        "start": 5660.0,
+        "end": 5663.0
+    },
+    {
+        "text": " que los grafos con los cuales están trabajando son conexos,",
+        "start": 5663.0,
+        "end": 5666.0
+    },
+    {
+        "text": " también.",
+        "start": 5667.0,
+        "end": 5668.0
+    },
+    {
+        "text": " Entonces, ¿sabe que esa situación,",
+        "start": 5668.0,
+        "end": 5670.0
+    },
+    {
+        "text": " que describir haciendo un de emm es muy chico en comparación con n,",
+        "start": 5670.0,
+        "end": 5676.0
+    },
+    {
+        "text": " no se puede dar, porque em es por lo menos en emas 1,",
+        "start": 5676.0,
+        "end": 5679.0
+    },
+    {
+        "text": " o sea que crece por lo menos igual que n.",
+        "start": 5679.0,
+        "end": 5683.0
+    },
+    {
+        "text": " Entonces, en ese caso algoritmo como vfs o vfs,",
+        "start": 5687.0,
+        "end": 5690.0
+    },
+    {
+        "text": " que son de tiempo de su primer o de emm más n,",
+        "start": 5690.0,
+        "end": 5692.0
+    },
+    {
+        "text": " podemos simplificar nuestra fección,",
+        "start": 5692.0,
+        "end": 5694.0
+    },
+    {
+        "text": " decir que simplemente o de emm,",
+        "start": 5694.0,
+        "end": 5696.0
+    },
+    {
+        "text": " donde em es la cantidad de aristas,",
+        "start": 5696.0,
+        "end": 5697.0
+    },
+    {
+        "text": " porque en definitiva la cantidad de aristas",
+        "start": 5697.0,
+        "end": 5699.0
+    },
+    {
+        "text": " ya me está diciendo también por los menos cuartos, ¿no?",
+        "start": 5699.0,
+        "end": 5702.0
+    },
+    {
+        "text": " ¿Tiene?",
+        "start": 5702.0,
+        "end": 5703.0
+    },
+    {
+        "text": " ¿Ah, por lo menos?",
+        "start": 5704.0,
+        "end": 5705.0
+    },
+    {
+        "text": " No, no.",
+        "start": 5705.0,
+        "end": 5706.0
+    },
+    {
+        "text": " Gracias.",
+        "start": 5708.0,
+        "end": 5709.0
+    },
+    {
+        "text": " Gracias.",
+        "start": 5709.0,
+        "end": 5710.0
+    },
+    {
+        "text": " Gracias.",
+        "start": 5710.0,
+        "end": 5711.0
+    },
+    {
+        "text": " Esta primera vez, vamos a usar mucho.",
+        "start": 5725.0,
+        "end": 5727.0
+    },
+    {
+        "text": " En su V denota la cantidad,",
+        "start": 5727.0,
+        "end": 5730.0
+    },
+    {
+        "text": " el grado de un vértice,",
+        "start": 5730.0,
+        "end": 5732.0
+    },
+    {
+        "text": " es decir, la cantidad de aristas,",
+        "start": 5732.0,
+        "end": 5733.0
+    },
+    {
+        "text": " si se hace en su vértice V,",
+        "start": 5733.0,
+        "end": 5735.0
+    },
+    {
+        "text": " y esta propiedad dice que las sumas sobre todos los vértices,",
+        "start": 5735.0,
+        "end": 5742.0
+    },
+    {
+        "text": " del grado de un vértice,",
+        "start": 5742.0,
+        "end": 5744.0
+    },
+    {
+        "text": " es decir,",
+        "start": 5744.0,
+        "end": 5745.0
+    },
+    {
+        "text": " la cantidad de aristas,",
+        "start": 5745.0,
+        "end": 5746.0
+    },
+    {
+        "text": " es decir,",
+        "start": 5746.0,
+        "end": 5747.0
+    },
+    {
+        "text": " la cantidad de aristas,",
+        "start": 5747.0,
+        "end": 5749.0
+    },
+    {
+        "text": " es decir,",
+        "start": 5749.0,
+        "end": 5750.0
+    },
+    {
+        "text": " la suma sobre todos los vértices del grado de un vértice,",
+        "start": 5750.0,
+        "end": 5753.0
+    },
+    {
+        "text": " eso si igual a dos veces la cantidad de aristas.",
+        "start": 5753.0,
+        "end": 5755.0
+    },
+    {
+        "text": " Vamos a usar consistentemente",
+        "start": 5755.0,
+        "end": 5757.0
+    },
+    {
+        "text": " cuando lo abaquemos con grafos,",
+        "start": 5757.0,
+        "end": 5759.0
+    },
+    {
+        "text": " vamos a usar n para la cantidad de vértices",
+        "start": 5759.0,
+        "end": 5761.0
+    },
+    {
+        "text": " y n para la cantidad de aristas.",
+        "start": 5761.0,
+        "end": 5763.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 5763.0,
+        "end": 5764.0
+    },
+    {
+        "text": " la suma de los grados es el doble de la cantidad de aristas.",
+        "start": 5764.0,
+        "end": 5768.0
+    },
+    {
+        "text": " Y eso es por qué como discutíamos hace un ratito con el ejemplo de una de las recorrejas de grafos,",
+        "start": 5768.0,
+        "end": 5773.0
+    },
+    {
+        "text": " no más correo cual,",
+        "start": 5773.0,
+        "end": 5774.0
+    },
+    {
+        "text": " cada arista definitiva está conectada a dos vértices,",
+        "start": 5774.0,
+        "end": 5779.0
+    },
+    {
+        "text": " es decir, suma dos veces a esta suma de los grados.",
+        "start": 5779.0,
+        "end": 5782.0
+    },
+    {
+        "text": " Si una arista conecta un vértice U con un vértice V,",
+        "start": 5782.0,
+        "end": 5786.0
+    },
+    {
+        "text": " entonces en esta expresión,",
+        "start": 5786.0,
+        "end": 5788.0
+    },
+    {
+        "text": " cuando en la suma teore esta pase por U,",
+        "start": 5788.0,
+        "end": 5791.0
+    },
+    {
+        "text": " voy a sumar un unidad,",
+        "start": 5791.0,
+        "end": 5793.0
+    },
+    {
+        "text": " porque esa arista y cuando pase por V,",
+        "start": 5793.0,
+        "end": 5795.0
+    },
+    {
+        "text": " voy a sumar otro unidad para esa misma arista.",
+        "start": 5795.0,
+        "end": 5797.0
+    },
+    {
+        "text": " Y son las dos veces que suma.",
+        "start": 5797.0,
+        "end": 5799.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 5799.0,
+        "end": 5800.0
+    },
+    {
+        "text": " la suma esta de los grados de los vértices es dos veces la cantidad de aristas.",
+        "start": 5800.0,
+        "end": 5804.0
+    },
+    {
+        "text": " Eso me permite conectar",
+        "start": 5804.0,
+        "end": 5806.0
+    },
+    {
+        "text": " o analizar algoritmos que iteran sobre las aristas,",
+        "start": 5806.0,
+        "end": 5815.0
+    },
+    {
+        "text": " como estos servimos que estuvo recendo, como estuvo viendo recién.",
+        "start": 5815.0,
+        "end": 5819.0
+    },
+    {
+        "text": " Y conectarlos con el total de aristas en el graf.",
+        "start": 5819.0,
+        "end": 5826.0
+    },
+    {
+        "text": " Como les decía hoy,",
+        "start": 5826.0,
+        "end": 5828.0
+    },
+    {
+        "text": " cuando alguien preguntó sobre la eficiencia del algoritmo V,",
+        "start": 5828.0,
+        "end": 5832.0
+    },
+    {
+        "text": " que no había que ver,",
+        "start": 5832.0,
+        "end": 5834.0
+    },
+    {
+        "text": " eso no había que ver.",
+        "start": 5834.0,
+        "end": 5836.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 5836.0,
+        "end": 5837.0
+    },
+    {
+        "text": " esto es lo que me dijo,",
+        "start": 5837.0,
+        "end": 5838.0
+    },
+    {
+        "text": " bueno, sí está bien visita cada arista más de una vez,",
+        "start": 5838.0,
+        "end": 5841.0
+    },
+    {
+        "text": " pero no más de dos veces.",
+        "start": 5841.0,
+        "end": 5842.0
+    },
+    {
+        "text": " Entonces, en definitivo,",
+        "start": 5842.0,
+        "end": 5843.0
+    },
+    {
+        "text": " todo se luda y explorando todas las aristas,",
+        "start": 5843.0,
+        "end": 5845.0
+    },
+    {
+        "text": " no me va a saber más que del orden de dos M,",
+        "start": 5845.0,
+        "end": 5848.0
+    },
+    {
+        "text": " visitas de aristas, recorridas de aristas.",
+        "start": 5848.0,
+        "end": 5850.0
+    },
+    {
+        "text": " Y eso es genial en la mano de la arista.",
+        "start": 5850.0,
+        "end": 5853.0
+    },
+    {
+        "text": " Entonces, esa expresión,",
+        "start": 5853.0,
+        "end": 5855.0
+    },
+    {
+        "text": " está donde tener la presente,",
+        "start": 5855.0,
+        "end": 5857.0
+    },
+    {
+        "text": " y entender la venda donde viene,",
+        "start": 5857.0,
+        "end": 5859.0
+    },
+    {
+        "text": " y eso es lo que vamos a usar seguido.",
+        "start": 5859.0,
+        "end": 5862.0
+    },
+    {
+        "text": " Como me contó una discusión sobre cual así pilas,",
+        "start": 5862.0,
+        "end": 5865.0
+    },
+    {
+        "text": " eso es su modo que en programación 2 habrá tenido bastante de eso.",
+        "start": 5865.0,
+        "end": 5868.0
+    },
+    {
+        "text": " Y después pasamos a ver cómo implementar V,",
+        "start": 5868.0,
+        "end": 5877.0
+    },
+    {
+        "text": " F, S, U,",
+        "start": 5877.0,
+        "end": 5878.0
+    },
+    {
+        "text": " usando este tipo de estructuras de datos,",
+        "start": 5878.0,
+        "end": 5881.0
+    },
+    {
+        "text": " implementaciones eficientes de estos algoritmos.",
+        "start": 5881.0,
+        "end": 5884.0
+    },
+    {
+        "text": " Y para eso,",
+        "start": 5884.0,
+        "end": 5887.0
+    },
+    {
+        "text": " lo que hicimos el problema del SAP,",
+        "start": 5887.0,
+        "end": 5889.0
+    },
+    {
+        "text": " igual que vamos a hacer la caja en más,",
+        "start": 5889.0,
+        "end": 5891.0
+    },
+    {
+        "text": " lo que tenemos que decir, bueno,",
+        "start": 5891.0,
+        "end": 5893.0
+    },
+    {
+        "text": " qué estructuras de datos vamos a usar",
+        "start": 5893.0,
+        "end": 5895.0
+    },
+    {
+        "text": " para implementar eficientemente cada uno de los pasos.",
+        "start": 5895.0,
+        "end": 5898.0
+    },
+    {
+        "text": " Y esto, ya se lo sabía adelantado cuando alguien me preguntó",
+        "start": 5898.0,
+        "end": 5901.0
+    },
+    {
+        "text": " justamente sobre eso,",
+        "start": 5901.0,
+        "end": 5903.0
+    },
+    {
+        "text": " bueno, lo que podemos hacer es,",
+        "start": 5903.0,
+        "end": 5905.0
+    },
+    {
+        "text": " por un lado, manté una matriz que acá se le llama Discover,",
+        "start": 5905.0,
+        "end": 5908.0
+    },
+    {
+        "text": " de cubierto,",
+        "start": 5908.0,
+        "end": 5910.0
+    },
+    {
+        "text": " que me con un buriano,",
+        "start": 5910.0,
+        "end": 5914.0
+    },
+    {
+        "text": " donde voy marcando qué vértices se ha fueron descubiertos",
+        "start": 5915.0,
+        "end": 5917.0
+    },
+    {
+        "text": " y qué vértices no.",
+        "start": 5917.0,
+        "end": 5919.0
+    },
+    {
+        "text": " Eso me permite en tiempo o de uno saber si alguien se está",
+        "start": 5919.0,
+        "end": 5924.0
+    },
+    {
+        "text": " o no está en la componente para que se le hubiera escute.",
+        "start": 5924.0,
+        "end": 5928.0
+    },
+    {
+        "text": " Para construir las capas, el E1, el E2,",
+        "start": 5932.0,
+        "end": 5935.0
+    },
+    {
+        "text": " en el A3, el BFS y las capas y esas posmiveles,",
+        "start": 5935.0,
+        "end": 5938.0
+    },
+    {
+        "text": " lo que podemos usar,",
+        "start": 5938.0,
+        "end": 5940.0
+    },
+    {
+        "text": " son listas de datos ascense,",
+        "start": 5940.0,
+        "end": 5943.0
+    },
+    {
+        "text": " para que eso me permitiera agregando ahí",
+        "start": 5943.0,
+        "end": 5946.0
+    },
+    {
+        "text": " en tiempo o de uno,",
+        "start": 5946.0,
+        "end": 5948.0
+    },
+    {
+        "text": " después recorre esas listas,",
+        "start": 5948.0,
+        "end": 5950.0
+    },
+    {
+        "text": " también iterando sobre ese tiempo o de uno por diave.",
+        "start": 5950.0,
+        "end": 5954.0
+    },
+    {
+        "text": " Entonces, lo que tenemos es un arreglo,",
+        "start": 5954.0,
+        "end": 5957.0
+    },
+    {
+        "text": " de igual ser uno, dos,",
+        "start": 5957.0,
+        "end": 5958.0
+    },
+    {
+        "text": " a todos los posibles niveles,",
+        "start": 5958.0,
+        "end": 5960.0
+    },
+    {
+        "text": " los posibles niveles,",
+        "start": 5960.0,
+        "end": 5961.0
+    },
+    {
+        "text": " puede ser más de N,",
+        "start": 5961.0,
+        "end": 5963.0
+    },
+    {
+        "text": " o ahí en el BFS.",
+        "start": 5963.0,
+        "end": 5965.0
+    },
+    {
+        "text": " Y para cada I,",
+        "start": 5965.0,
+        "end": 5966.0
+    },
+    {
+        "text": " el E subí es una lista con todos los vértices que aparecen",
+        "start": 5966.0,
+        "end": 5971.0
+    },
+    {
+        "text": " en ese nivel.",
+        "start": 5972.0,
+        "end": 5973.0
+    },
+    {
+        "text": " Entonces, igual que como lo describimos hace un prato",
+        "start": 5973.0,
+        "end": 5976.0
+    },
+    {
+        "text": " en super alto nivel,",
+        "start": 5976.0,
+        "end": 5979.0
+    },
+    {
+        "text": " algo rindo,",
+        "start": 5979.0,
+        "end": 5981.0
+    },
+    {
+        "text": " eso me loco de que está presentado,",
+        "start": 5981.0,
+        "end": 5982.0
+    },
+    {
+        "text": " que a lo que haces con estivesas listas",
+        "start": 5982.0,
+        "end": 5984.0
+    },
+    {
+        "text": " con los niveles uno por uno.",
+        "start": 5984.0,
+        "end": 5988.0
+    },
+    {
+        "text": " Arrancamos marcando,",
+        "start": 5988.0,
+        "end": 5990.0
+    },
+    {
+        "text": " descubierto de E1,",
+        "start": 5990.0,
+        "end": 5993.0
+    },
+    {
+        "text": " la verdadero y descubierto de E1,",
+        "start": 5993.0,
+        "end": 5995.0
+    },
+    {
+        "text": " la falso para todos los otros vértices.",
+        "start": 5995.0,
+        "end": 5997.0
+    },
+    {
+        "text": " Entonces, fíjense,",
+        "start": 5997.0,
+        "end": 5998.0
+    },
+    {
+        "text": " algo que ha insistido otra vez.",
+        "start": 5998.0,
+        "end": 6000.0
+    },
+    {
+        "text": " Yo digo,",
+        "start": 6000.0,
+        "end": 6001.0
+    },
+    {
+        "text": " bueno, voy a usar esta estructura de Discover,",
+        "start": 6001.0,
+        "end": 6003.0
+    },
+    {
+        "text": " este arreglo que me permite en ODE1 saber si alguien",
+        "start": 6003.0,
+        "end": 6008.0
+    },
+    {
+        "text": " está incluido o no esté incluido.",
+        "start": 6008.0,
+        "end": 6011.0
+    },
+    {
+        "text": " Bueno, pero te voy a tener cuidado.",
+        "start": 6011.0,
+        "end": 6013.0
+    },
+    {
+        "text": " Eso va a requerir una inicinización",
+        "start": 6013.0,
+        "end": 6015.0
+    },
+    {
+        "text": " y tengo que ver cuánto tiempo no va a ser la licitización.",
+        "start": 6015.0,
+        "end": 6018.0
+    },
+    {
+        "text": " Este caso va a ser ODEN,",
+        "start": 6018.0,
+        "end": 6020.0
+    },
+    {
+        "text": " estamos bien.",
+        "start": 6020.0,
+        "end": 6021.0
+    },
+    {
+        "text": " Y después tengo que ver cómo se actualiza.",
+        "start": 6021.0,
+        "end": 6024.0
+    },
+    {
+        "text": " En este caso, las actualizaciones,",
+        "start": 6025.0,
+        "end": 6028.0
+    },
+    {
+        "text": " es bueno, cada vez que descubro un vértice,",
+        "start": 6028.0,
+        "end": 6031.0
+    },
+    {
+        "text": " lo tengo que marcar como verdadero y eso,",
+        "start": 6031.0,
+        "end": 6034.0
+    },
+    {
+        "text": " también se hace deficientemente.",
+        "start": 6034.0,
+        "end": 6036.0
+    },
+    {
+        "text": " Así que esta estructura de descubierto",
+        "start": 6036.0,
+        "end": 6038.0
+    },
+    {
+        "text": " también permite resolver,",
+        "start": 6038.0,
+        "end": 6040.0
+    },
+    {
+        "text": " eficientemente, este paso,",
+        "start": 6040.0,
+        "end": 6041.0
+    },
+    {
+        "text": " de siempre preguntar si alguien fue descubierto o no,",
+        "start": 6041.0,
+        "end": 6044.0
+    },
+    {
+        "text": " y mantener la estructura,",
+        "start": 6044.0,
+        "end": 6046.0
+    },
+    {
+        "text": " de decir, actualizarla,",
+        "start": 6046.0,
+        "end": 6047.0
+    },
+    {
+        "text": " e inicializarla,",
+        "start": 6047.0,
+        "end": 6049.0
+    },
+    {
+        "text": " también lo puedo resolver,",
+        "start": 6049.0,
+        "end": 6051.0
+    },
+    {
+        "text": " y los paran, por el tiempo,",
+        "start": 6051.0,
+        "end": 6053.0
+    },
+    {
+        "text": " que estoy queriendo llegar,",
+        "start": 6053.0,
+        "end": 6055.0
+    },
+    {
+        "text": " que es ODEN más tiene como les hagan un salido de su impacto.",
+        "start": 6055.0,
+        "end": 6058.0
+    },
+    {
+        "text": " Entonces, bueno, la construcción",
+        "start": 6063.0,
+        "end": 6064.0
+    },
+    {
+        "text": " es inicializo el nivel 0,",
+        "start": 6064.0,
+        "end": 6066.0
+    },
+    {
+        "text": " para que tenga solo al elemento S,",
+        "start": 6066.0,
+        "end": 6070.0
+    },
+    {
+        "text": " que es el vértice,",
+        "start": 6070.0,
+        "end": 6072.0
+    },
+    {
+        "text": " y no estoy partiendo de la recorrida.",
+        "start": 6072.0,
+        "end": 6074.0
+    },
+    {
+        "text": " Voy a ir llevando un contador",
+        "start": 6076.0,
+        "end": 6077.0
+    },
+    {
+        "text": " y con el nivel donde estoy,",
+        "start": 6077.0,
+        "end": 6079.0
+    },
+    {
+        "text": " el nivel estoy construyendo,",
+        "start": 6079.0,
+        "end": 6081.0
+    },
+    {
+        "text": " o que estoy explorando mejor vicho,",
+        "start": 6081.0,
+        "end": 6084.0
+    },
+    {
+        "text": " y inicialmente el árbol BFS no tiene nada,",
+        "start": 6084.0,
+        "end": 6089.0
+    },
+    {
+        "text": " y el árbol al ver presentar como un conjunto de aristas,",
+        "start": 6091.0,
+        "end": 6096.0
+    },
+    {
+        "text": " si, me lo recuerdo.",
+        "start": 6096.0,
+        "end": 6098.0
+    },
+    {
+        "text": " Ahora simplemente implemento lo que tal cual,",
+        "start": 6098.0,
+        "end": 6102.0
+    },
+    {
+        "text": " el algoritmo del ton nivel que hay más dicho,",
+        "start": 6102.0,
+        "end": 6105.0
+    },
+    {
+        "text": " mientras M, Su, I,",
+        "start": 6105.0,
+        "end": 6109.0
+    },
+    {
+        "text": " no está vacío,",
+        "start": 6109.0,
+        "end": 6111.0
+    },
+    {
+        "text": " la lista que tiene los dos,",
+        "start": 6111.0,
+        "end": 6114.0
+    },
+    {
+        "text": " los dos de nivel I,",
+        "start": 6116.0,
+        "end": 6118.0
+    },
+    {
+        "text": " aparto de igual a 0,",
+        "start": 6118.0,
+        "end": 6119.0
+    },
+    {
+        "text": " el nivel 0 solo tiene al elemento S,",
+        "start": 6119.0,
+        "end": 6122.0
+    },
+    {
+        "text": " y eso ya lo construí.",
+        "start": 6122.0,
+        "end": 6123.0
+    },
+    {
+        "text": " Ahora una vez que construí ese nivel,",
+        "start": 6123.0,
+        "end": 6125.0
+    },
+    {
+        "text": " me fijo,",
+        "start": 6125.0,
+        "end": 6126.0
+    },
+    {
+        "text": " bueno, si no es vacío,",
+        "start": 6126.0,
+        "end": 6127.0
+    },
+    {
+        "text": " lo tengo que explorar.",
+        "start": 6127.0,
+        "end": 6128.0
+    },
+    {
+        "text": " Entonces, mientras este nivel no sea vacío,",
+        "start": 6128.0,
+        "end": 6130.0
+    },
+    {
+        "text": " voy a explorar este nivel,",
+        "start": 6130.0,
+        "end": 6132.0
+    },
+    {
+        "text": " explobrás este nivel que significa,",
+        "start": 6132.0,
+        "end": 6134.0
+    },
+    {
+        "text": " construir el siguiente nivel,",
+        "start": 6134.0,
+        "end": 6136.0
+    },
+    {
+        "text": " pues, es initializo una lista vacía de su I más Uro,",
+        "start": 6136.0,
+        "end": 6140.0
+    },
+    {
+        "text": " y empiezo a recorrer los que están en el nivel I,",
+        "start": 6140.0,
+        "end": 6144.0
+    },
+    {
+        "text": " que eso lo es haciendo en orden 1 por cada elemento.",
+        "start": 6144.0,
+        "end": 6148.0
+    },
+    {
+        "text": " Miro cada uno de las aristas que salen de U y que sean 9,",
+        "start": 6148.0,
+        "end": 6154.0
+    },
+    {
+        "text": " pregunto si se ve ya ha sido descubierto,",
+        "start": 6154.0,
+        "end": 6157.0
+    },
+    {
+        "text": " eso lo puedo hacer con mi estructura en tiempo o de 1,",
+        "start": 6157.0,
+        "end": 6160.0
+    },
+    {
+        "text": " si no fue descubierto,",
+        "start": 6160.0,
+        "end": 6162.0
+    },
+    {
+        "text": " entonces lo tengo que,",
+        "start": 6162.0,
+        "end": 6164.0
+    },
+    {
+        "text": " lo mato como descubierto, como decimos hoy,",
+        "start": 6164.0,
+        "end": 6166.0
+    },
+    {
+        "text": " y lo agregamos,",
+        "start": 6166.0,
+        "end": 6168.0
+    },
+    {
+        "text": " agregamos esa lista al árbol de recorreyes,",
+        "start": 6168.0,
+        "end": 6171.0
+    },
+    {
+        "text": " porque yo estoy descubriendo en este momento V,",
+        "start": 6171.0,
+        "end": 6173.0
+    },
+    {
+        "text": " apartío de 1,",
+        "start": 6173.0,
+        "end": 6174.0
+    },
+    {
+        "text": " así que, es decir,",
+        "start": 6174.0,
+        "end": 6175.0
+    },
+    {
+        "text": " este cubema pertenecerá la,",
+        "start": 6175.0,
+        "end": 6177.0
+    },
+    {
+        "text": " y agrego V al nivel I más U,",
+        "start": 6177.0,
+        "end": 6180.0
+    },
+    {
+        "text": " no había sido descubierto hasta ahora,",
+        "start": 6180.0,
+        "end": 6182.0
+    },
+    {
+        "text": " lo estoy descubriendo desde un nivel I,",
+        "start": 6182.0,
+        "end": 6184.0
+    },
+    {
+        "text": " quiere decir que está distancia I más U,",
+        "start": 6184.0,
+        "end": 6186.0
+    },
+    {
+        "text": " a yo llegar a este,",
+        "start": 6186.0,
+        "end": 6188.0
+    },
+    {
+        "text": " a este vértice V lo puedo hacer,",
+        "start": 6188.0,
+        "end": 6190.0
+    },
+    {
+        "text": " agregando un paso más a un camino que me lleva a la piso,",
+        "start": 6190.0,
+        "end": 6194.0
+    },
+    {
+        "text": " y así construye el subimás U,",
+        "start": 6194.0,
+        "end": 6196.0
+    },
+    {
+        "text": " en algún momento,",
+        "start": 6196.0,
+        "end": 6199.0
+    },
+    {
+        "text": " cuando ya no pueda seguir más,",
+        "start": 6199.0,
+        "end": 6201.0
+    },
+    {
+        "text": " cuando yo se descubierto todo,",
+        "start": 6201.0,
+        "end": 6203.0
+    },
+    {
+        "text": " lo que va a pasar es que esta lista",
+        "start": 6203.0,
+        "end": 6205.0
+    },
+    {
+        "text": " el subimás I va a quedar vacía,",
+        "start": 6205.0,
+        "end": 6207.0
+    },
+    {
+        "text": " voy a recorreter el nivel,",
+        "start": 6207.0,
+        "end": 6208.0
+    },
+    {
+        "text": " no voy descubrir nada nuevo,",
+        "start": 6208.0,
+        "end": 6209.0
+    },
+    {
+        "text": " no voy a llegar nada nuevo,",
+        "start": 6209.0,
+        "end": 6210.0
+    },
+    {
+        "text": " esté el subimás I,",
+        "start": 6210.0,
+        "end": 6212.0
+    },
+    {
+        "text": " entonces no queda nada por explorar.",
+        "start": 6212.0,
+        "end": 6214.0
+    },
+    {
+        "text": " En ese momento, esta condición va a dejar de cumplir,",
+        "start": 6214.0,
+        "end": 6217.0
+    },
+    {
+        "text": " se voy a salir del cual y terminé,",
+        "start": 6217.0,
+        "end": 6220.0
+    },
+    {
+        "text": " y terminé mi ejecución de VFs.",
+        "start": 6220.0,
+        "end": 6225.0
+    },
+    {
+        "text": " Ya es el mismo algoritmo,",
+        "start": 6225.0,
+        "end": 6228.0
+    },
+    {
+        "text": " ahora he presentado,",
+        "start": 6228.0,
+        "end": 6231.0
+    },
+    {
+        "text": " es una forma más tipo,",
+        "start": 6231.0,
+        "end": 6234.0
+    },
+    {
+        "text": " seguro código,",
+        "start": 6234.0,
+        "end": 6235.0
+    },
+    {
+        "text": " de vuelta, como un montón de cosas,",
+        "start": 6235.0,
+        "end": 6237.0
+    },
+    {
+        "text": " este subespecificada, como,",
+        "start": 6237.0,
+        "end": 6239.0
+    },
+    {
+        "text": " estamos acostumbrados ya,",
+        "start": 6239.0,
+        "end": 6242.0
+    },
+    {
+        "text": " este de preses,",
+        "start": 6242.0,
+        "end": 6245.0
+    },
+    {
+        "text": " es el mismo algoritmo,",
+        "start": 6245.0,
+        "end": 6246.0
+    },
+    {
+        "text": " ya dejando más de forma más espícita,",
+        "start": 6246.0,
+        "end": 6248.0
+    },
+    {
+        "text": " por eso una estructura que estamos usando,",
+        "start": 6248.0,
+        "end": 6250.0
+    },
+    {
+        "text": " y los cual nos permite hacer un análisis,",
+        "start": 6250.0,
+        "end": 6253.0
+    },
+    {
+        "text": " el tiempo de ejecución de esto.",
+        "start": 6253.0,
+        "end": 6255.0
+    },
+    {
+        "text": " Y el resultado que ven acá,",
+        "start": 6255.0,
+        "end": 6257.0
+    },
+    {
+        "text": " es que la implementación,",
+        "start": 6257.0,
+        "end": 6259.0
+    },
+    {
+        "text": " este implementación del VFs,",
+        "start": 6259.0,
+        "end": 6261.0
+    },
+    {
+        "text": " se puede ejecutar en tiempo que es ODE M más L,",
+        "start": 6261.0,
+        "end": 6265.0
+    },
+    {
+        "text": " a veces es el lineal,",
+        "start": 6265.0,
+        "end": 6267.0
+    },
+    {
+        "text": " el tamaño de lenta.",
+        "start": 6267.0,
+        "end": 6269.0
+    },
+    {
+        "text": " Si el grafo está representado,",
+        "start": 6269.0,
+        "end": 6272.0
+    },
+    {
+        "text": " esto es muchas veces ni siquiera lo vamos a hacer,",
+        "start": 6272.0,
+        "end": 6274.0
+    },
+    {
+        "text": " vamos a explicitar,",
+        "start": 6274.0,
+        "end": 6276.0
+    },
+    {
+        "text": " estar representado como una lista de ansacencia.",
+        "start": 6276.0,
+        "end": 6280.0
+    },
+    {
+        "text": " Ahora quiero comentarles,",
+        "start": 6280.0,
+        "end": 6283.0
+    },
+    {
+        "text": " nada, esto, mire, lo que usted después compiedao,",
+        "start": 6283.0,
+        "end": 6285.0
+    },
+    {
+        "text": " todo esto que está marcado en un celeste acá,",
+        "start": 6285.0,
+        "end": 6288.0
+    },
+    {
+        "text": " es con fines didácticos,",
+        "start": 6288.0,
+        "end": 6292.0
+    },
+    {
+        "text": " lo que está haciendo acá,",
+        "start": 6292.0,
+        "end": 6294.0
+    },
+    {
+        "text": " es mostrando como una análisis,",
+        "start": 6294.0,
+        "end": 6296.0
+    },
+    {
+        "text": " un poco más superficial del tiempo de ejecución de esto,",
+        "start": 6296.0,
+        "end": 6299.0
+    },
+    {
+        "text": " no se varía a un tiempo de ejecución,",
+        "start": 6299.0,
+        "end": 6302.0
+    },
+    {
+        "text": " ODE N cuadrado,",
+        "start": 6302.0,
+        "end": 6305.0
+    },
+    {
+        "text": " que es el resultado,",
+        "start": 6305.0,
+        "end": 6307.0
+    },
+    {
+        "text": " si es correcto,",
+        "start": 6307.0,
+        "end": 6309.0
+    },
+    {
+        "text": " pero es más de bin,",
+        "start": 6309.0,
+        "end": 6311.0
+    },
+    {
+        "text": " es el principio de decir que es ODE M más L,",
+        "start": 6311.0,
+        "end": 6314.0
+    },
+    {
+        "text": " este es una cuarta,",
+        "start": 6316.0,
+        "end": 6318.0
+    },
+    {
+        "text": " ODE N cuadrado es una cuarta superior,",
+        "start": 6318.0,
+        "end": 6321.0
+    },
+    {
+        "text": " que es correcta,",
+        "start": 6321.0,
+        "end": 6323.0
+    },
+    {
+        "text": " pero puede ser obligada,",
+        "start": 6323.0,
+        "end": 6325.0
+    },
+    {
+        "text": " si M es más,",
+        "start": 6325.0,
+        "end": 6326.0
+    },
+    {
+        "text": " por ejemplo, el lineal de N,",
+        "start": 6326.0,
+        "end": 6329.0
+    },
+    {
+        "text": " lo que está marcado en un celeste acá,",
+        "start": 6330.0,
+        "end": 6332.0
+    },
+    {
+        "text": " es un tipo de análisis más parecido al que,",
+        "start": 6332.0,
+        "end": 6335.0
+    },
+    {
+        "text": " al que usted se está acostumbrado,",
+        "start": 6335.0,
+        "end": 6338.0
+    },
+    {
+        "text": " o sea, bueno,",
+        "start": 6338.0,
+        "end": 6339.0
+    },
+    {
+        "text": " como podría proceder a su manera de análisis,",
+        "start": 6339.0,
+        "end": 6342.0
+    },
+    {
+        "text": " bueno, tengo este,",
+        "start": 6342.0,
+        "end": 6344.0
+    },
+    {
+        "text": " tengo acá dos loops de unidad,",
+        "start": 6347.0,
+        "end": 6349.0
+    },
+    {
+        "text": " mientras él subí, no estaba así,",
+        "start": 6349.0,
+        "end": 6352.0
+    },
+    {
+        "text": " o sea, voy pasando un nivel a otro",
+        "start": 6352.0,
+        "end": 6356.0
+    },
+    {
+        "text": " y puede haber como mucho en niveles,",
+        "start": 6356.0,
+        "end": 6358.0
+    },
+    {
+        "text": " está bien,",
+        "start": 6359.0,
+        "end": 6361.0
+    },
+    {
+        "text": " después voy a recorrer en definitiva cada uno de estos nodos U,",
+        "start": 6362.0,
+        "end": 6366.0
+    },
+    {
+        "text": " en el suy,",
+        "start": 6367.0,
+        "end": 6369.0
+    },
+    {
+        "text": " y como cada U está en un único,",
+        "start": 6369.0,
+        "end": 6371.0
+    },
+    {
+        "text": " él es suy, bueno, definitiva entre este mientras,",
+        "start": 6371.0,
+        "end": 6375.0
+    },
+    {
+        "text": " y este para cada nodo en U,",
+        "start": 6375.0,
+        "end": 6377.0
+    },
+    {
+        "text": " lo que usted ha recorrado todos los nodos,",
+        "start": 6377.0,
+        "end": 6379.0
+    },
+    {
+        "text": " y una vez cada nodo,",
+        "start": 6379.0,
+        "end": 6380.0
+    },
+    {
+        "text": " y ahora, considero,",
+        "start": 6381.0,
+        "end": 6383.0
+    },
+    {
+        "text": " todo el asalista que salen de U,",
+        "start": 6385.0,
+        "end": 6387.0
+    },
+    {
+        "text": " bueno, cuantas salistas pueden llegar a salir de U,",
+        "start": 6389.0,
+        "end": 6391.0
+    },
+    {
+        "text": " y no más de N, a Ristas,",
+        "start": 6391.0,
+        "end": 6393.0
+    },
+    {
+        "text": " entonces, este, considere cada Ristas,",
+        "start": 6394.0,
+        "end": 6396.0
+    },
+    {
+        "text": " definitiva es una forma de decir que hay otro loop ahí, ¿no?",
+        "start": 6396.0,
+        "end": 6398.0
+    },
+    {
+        "text": " ese loop va a recorrerse enomas de N veces,",
+        "start": 6398.0,
+        "end": 6401.0
+    },
+    {
+        "text": " por cada uno de los N posibles nodos,",
+        "start": 6401.0,
+        "end": 6403.0
+    },
+    {
+        "text": " así que no hay algo que hacer del orden de N cuadrado,",
+        "start": 6403.0,
+        "end": 6406.0
+    },
+    {
+        "text": " eso es correcto, pero es grueso,",
+        "start": 6406.0,
+        "end": 6408.0
+    },
+    {
+        "text": " porque si N,",
+        "start": 6409.0,
+        "end": 6412.0
+    },
+    {
+        "text": " porque lo que es grueso es esta forma de acotar",
+        "start": 6412.0,
+        "end": 6417.0
+    },
+    {
+        "text": " el considere cada Rista de U,",
+        "start": 6419.0,
+        "end": 6421.0
+    },
+    {
+        "text": " ahí estoy, con esta razón,",
+        "start": 6422.0,
+        "end": 6424.0
+    },
+    {
+        "text": " a veces estoy acotando por N,",
+        "start": 6424.0,
+        "end": 6426.0
+    },
+    {
+        "text": " que es una cota gruesa para cuantos nodos,",
+        "start": 6426.0,
+        "end": 6429.0
+    },
+    {
+        "text": " así que estimo cada uno de los nodos,",
+        "start": 6429.0,
+        "end": 6431.0
+    },
+    {
+        "text": " y eventualmente pueden ser mucho menos.",
+        "start": 6431.0,
+        "end": 6433.0
+    },
+    {
+        "text": " Lo que se va a encontrar después,",
+        "start": 6434.0,
+        "end": 6436.0
+    },
+    {
+        "text": " o sea, todo esto, en azul,",
+        "start": 6436.0,
+        "end": 6438.0
+    },
+    {
+        "text": " y vamos desde el punto de vista de ID Áctico,",
+        "start": 6438.0,
+        "end": 6440.0
+    },
+    {
+        "text": " esto es lo que el tipo de análisis grueso",
+        "start": 6440.0,
+        "end": 6442.0
+    },
+    {
+        "text": " que no queremos hacer,",
+        "start": 6442.0,
+        "end": 6443.0
+    },
+    {
+        "text": " queremos hacer análisis más finos,",
+        "start": 6443.0,
+        "end": 6446.0
+    },
+    {
+        "text": " como este otro trabajo,",
+        "start": 6446.0,
+        "end": 6447.0
+    },
+    {
+        "text": " que es el definitivo la demostración,",
+        "start": 6447.0,
+        "end": 6448.0
+    },
+    {
+        "text": " que sí tendría que formar parte de un resultado,",
+        "start": 6448.0,
+        "end": 6451.0
+    },
+    {
+        "text": " si tuviera expresado de forma concisa.",
+        "start": 6451.0,
+        "end": 6454.0
+    },
+    {
+        "text": " Y el punto clave acá es acotar la cantidad de iteraciones",
+        "start": 6457.0,
+        "end": 6461.0
+    },
+    {
+        "text": " sobre los ascentes,",
+        "start": 6461.0,
+        "end": 6463.0
+    },
+    {
+        "text": " no, no por no, individualmente,",
+        "start": 6463.0,
+        "end": 6465.0
+    },
+    {
+        "text": " que estaría en cada uno,",
+        "start": 6465.0,
+        "end": 6466.0
+    },
+    {
+        "text": " puede llegar a ser hasta N,",
+        "start": 6466.0,
+        "end": 6467.0
+    },
+    {
+        "text": " sino todos juntos en su totalidad.",
+        "start": 6467.0,
+        "end": 6470.0
+    },
+    {
+        "text": " Y parece lo que hacemos es ver que la suma",
+        "start": 6470.0,
+        "end": 6474.0
+    },
+    {
+        "text": " de todas las iteraciones sobre las aristas,",
+        "start": 6474.0,
+        "end": 6476.0
+    },
+    {
+        "text": " que el ascentes de la cámara no,",
+        "start": 6476.0,
+        "end": 6478.0
+    },
+    {
+        "text": " es la suma sobre todos los bértices",
+        "start": 6478.0,
+        "end": 6480.0
+    },
+    {
+        "text": " del grado de cada uno de los bértices.",
+        "start": 6480.0,
+        "end": 6482.0
+    },
+    {
+        "text": " Y eso dijimos a su rato que era como 2m.",
+        "start": 6482.0,
+        "end": 6485.0
+    },
+    {
+        "text": " Entonces, la ejecución de todos esos pasos",
+        "start": 6486.0,
+        "end": 6489.0
+    },
+    {
+        "text": " acumulados sobre todas las iteraciones",
+        "start": 6489.0,
+        "end": 6491.0
+    },
+    {
+        "text": " me da algo que es del orden de N.",
+        "start": 6491.0,
+        "end": 6493.0
+    },
+    {
+        "text": " Y a su vez, si derar sobre todos los bértices",
+        "start": 6494.0,
+        "end": 6497.0
+    },
+    {
+        "text": " y los agregando los niveles,",
+        "start": 6497.0,
+        "end": 6499.0
+    },
+    {
+        "text": " me da algo que es de orden N.",
+        "start": 6499.0,
+        "end": 6501.0
+    },
+    {
+        "text": " Entonces, ese análisis un poco más fino,",
+        "start": 6502.0,
+        "end": 6505.0
+    },
+    {
+        "text": " es lo que me termino se mando algo",
+        "start": 6505.0,
+        "end": 6507.0
+    },
+    {
+        "text": " que es de orden N más N.",
+        "start": 6509.0,
+        "end": 6511.0
+    },
+    {
+        "text": " Y pasa por analizar no cada iteración independiente,",
+        "start": 6511.0,
+        "end": 6515.0
+    },
+    {
+        "text": " sino la acumulación del tiempo de ejecución entre",
+        "start": 6515.0,
+        "end": 6518.0
+    },
+    {
+        "text": " todas las iteraciones.",
+        "start": 6518.0,
+        "end": 6519.0
+    },
+    {
+        "text": " Eso es algo que probablemente ustedes no estén acostumbrados",
+        "start": 6519.0,
+        "end": 6523.0
+    },
+    {
+        "text": " a hacer y que vamos a usar seguido.",
+        "start": 6523.0,
+        "end": 6528.0
+    },
+    {
+        "text": " Bueno, estamos quedando sin tiempo,",
+        "start": 6529.0,
+        "end": 6532.0
+    },
+    {
+        "text": " me gustaría dejar algún minutito para hacer",
+        "start": 6532.0,
+        "end": 6535.0
+    },
+    {
+        "text": " y tener alguna duda hasta ahora.",
+        "start": 6535.0,
+        "end": 6537.0
+    },
+    {
+        "text": " Esto es importante, reícenlo con cuidado.",
+        "start": 6541.0,
+        "end": 6544.0
+    },
+    {
+        "text": " Si usted está ramenada intr Конечно.",
+        "start": 6559.0,
+        "end": 6564.0
+    },
+    {
+        "text": " después,",
+        "start": 6566.0,
+        "end": 6579.46
+    },
+    {
+        "text": " de aumentar DFS, va a no ver implementar DFS y compila, me vamos implementando a MFS y una",
+        "start": 6579.46,
+        "end": 6585.84
+    },
+    {
+        "text": " cola, y algo que no es nada trivial o que me siento un poco sutil, es como usar esto,",
+        "start": 6585.84,
+        "end": 6594.26
+    },
+    {
+        "text": " sabemos para construir todas las componentes con hexadum grafo sin pasarnos de tiempo o de",
+        "start": 6594.26,
+        "end": 6601.5
+    },
+    {
+        "text": " M más N, de si construir todas las componentes con hexas en tiempo de distribución o de M",
+        "start": 6601.5,
+        "end": 6606.9
+    },
+    {
+        "text": " M más N, eso de vuelta implica un análisis un poco más sutil del estilo de esto que le está",
+        "start": 6606.9,
+        "end": 6613.46
+    },
+    {
+        "text": " ilustrando ahora, porque como dijimos que vamos a construir todas las componentes con el",
+        "start": 6613.46,
+        "end": 6617.66
+    },
+    {
+        "text": " que se van a ver descubriendo primero una, después otra, después otra, en principio se implica",
+        "start": 6617.66,
+        "end": 6623.179999999999
+    },
+    {
+        "text": " varias llamadas a BFS y a DFS, si yo hiciera un análisis grueso del estilo de esto que está en",
+        "start": 6623.179999999999,
+        "end": 6630.42
+    },
+    {
+        "text": " azul, que es probablemente el estilo que ustedes están más acostumbrados, yo diría bueno, cada",
+        "start": 6630.42,
+        "end": 6634.48
+    },
+    {
+        "text": " invocación a BFS me lleva a orden de M más N, cuantas componentes lo voy a salvar muchas",
+        "start": 6634.48,
+        "end": 6640.04
+    },
+    {
+        "text": " veces, cuantas y bueno, nomás de N y B, si hay que tener N componentes con hexadum grafo,",
+        "start": 6640.04,
+        "end": 6643.799999999999
+    },
+    {
+        "text": " eso me daría algo de orden N por M más N me quedaría cuadrático en N, el análisis es",
+        "start": 6643.799999999999,
+        "end": 6650.639999999999
+    },
+    {
+        "text": " grueso, vamos a ver mirando globalmente el tiempo entre todas las amadas a BFS que el tiempo total",
+        "start": 6650.639999999999,
+        "end": 6658.679999999999
+    },
+    {
+        "text": " de ejecución es O de M más N, incluso si lo que quieras obtener, no hubo una sino toda la",
+        "start": 6658.68,
+        "end": 6663.04
+    },
+    {
+        "text": " componente, ¿no? Para eso es importante que entiendan bien el tipo de arrasalamiento que",
+        "start": 6663.04,
+        "end": 6671.240000000001
+    },
+    {
+        "text": " surzan acá, que lo tengan bien claro.",
+        "start": 6671.24,
+        "end": 6683.8
+    },
+    {
+        "text": " Esta primera parte me esplasivo bastante en ilustrar bien cómo funcionan los sabadinos,",
+        "start": 6683.8,
+        "end": 6693.5599999999995
+    },
+    {
+        "text": " porque creo que es importante que lo tengan todo bien claro, por más que están en libro,",
+        "start": 6693.56,
+        "end": 6704.120000000001
+    },
+    {
+        "text": " a veces genera dudas y que hayan factizar unas cosas, capaz que más adelante algunas cosas",
+        "start": 6704.120000000001,
+        "end": 6709.56
+    },
+    {
+        "text": " más se las dejo para lectura a ustedes y nos dedicamos en puntos más particulares que",
+        "start": 6709.56,
+        "end": 6720.400000000001
+    },
+    {
+        "text": " necesitan un poco más atención. Le digo para que no piensen que vamos a ir siguiendo",
+        "start": 6720.4,
+        "end": 6726.639999999999
+    },
+    {
+        "text": " absolutamente todo lo que ustedes tendrían que dar del libro acá en la clase paso por paso,",
+        "start": 6726.639999999999,
+        "end": 6732.4
+    },
+    {
+        "text": " este como es como la presentación, un tema que es importante quería dedicarle un poco",
+        "start": 6732.4,
+        "end": 6735.719999999999
+    },
+    {
+        "text": " de tiempo a tratar de asegurarme de que todos estuvimos sentimientos bien.",
+        "start": 6735.719999999999,
+        "end": 6741.799999999999
+    },
+    {
+        "text": " Bueno, alguna pregunta más ¿no? Una sobre lo último que habló de las componentes con hexadum",
+        "start": 6741.799999999999,
+        "end": 6750.2
+    },
+    {
+        "text": " sí, en DFS, en DFS, como lo que te entra, manejan los lados y yo te hagas algún tratamiento",
+        "start": 6750.2,
+        "end": 6759.28
+    },
+    {
+        "text": " sobre el gráfico, en DFS, en todo el manejo de DFS, general, donde por encima de aplicar",
+        "start": 6759.28,
+        "end": 6772.24
+    },
+    {
+        "text": " DFS o DFS, porque DFS y DFS tiene como da entrada uno de particular.",
+        "start": 6772.24,
+        "end": 6782.44
+    },
+    {
+        "text": " Sí, cuando yo quieras trabajar sobre el gráfico, propiamente he dicho,",
+        "start": 6782.44,
+        "end": 6789.12
+    },
+    {
+        "text": " sí, tengo que manejarlo a un nivel más arriba.",
+        "start": 6789.12,
+        "end": 6793.96
+    },
+    {
+        "text": " Sí, vas a tener que iterar sobre los nuevos.",
+        "start": 6793.96,
+        "end": 6797.719999999999
+    },
+    {
+        "text": " Claro, pero la información del gráfico, si no se la paso a DFS, lo uso como una herramienta",
+        "start": 6798.280000000001,
+        "end": 6805.2
+    },
+    {
+        "text": " para aplicar los gráficos.",
+        "start": 6805.2,
+        "end": 6807.92
+    },
+    {
+        "text": " Sí, sí, es el algoritmo, tanto uno como lo lo que te hagas que son un gráfico y",
+        "start": 6808.92,
+        "end": 6813.4400000000005
+    },
+    {
+        "text": " decirle como entrada, además de gráfico, un vértice particular.",
+        "start": 6813.4400000000005,
+        "end": 6817.56
+    },
+    {
+        "text": " Ata esa era mi duda, porque el libro no es en ningún momento así como que la entrada también",
+        "start": 6817.56,
+        "end": 6823.4400000000005
+    },
+    {
+        "text": " es en el gráfico.",
+        "start": 6823.44,
+        "end": 6824.44
+    },
+    {
+        "text": " No, es el caso.",
+        "start": 6824.44,
+        "end": 6826.44
+    },
+    {
+        "text": " Veis que estén plícitos, sumimos que nada, subirlas, senten todo esto, hay un gráfico",
+        "start": 6826.44,
+        "end": 6830.839999999999
+    },
+    {
+        "text": " que es el dato de entrada del problema.",
+        "start": 6830.839999999999,
+        "end": 6833.32
+    },
+    {
+        "text": " Ata esa era mi duda, porque...",
+        "start": 6833.32,
+        "end": 6835.32
+    },
+    {
+        "text": " Esto de vuelta tiene que ver con esta forma de despezar los algoritmos.",
+        "start": 6835.32,
+        "end": 6841.48
+    },
+    {
+        "text": " De una forma no tan cercana a lo que uno haría en una implementación en máquina,",
+        "start": 6841.48,
+        "end": 6849.719999999999
+    },
+    {
+        "text": " un lenguaje de alto nivel.",
+        "start": 6849.72,
+        "end": 6851.72
+    },
+    {
+        "text": " Si fuera de implementar una función rutina, en algún lenguaje de alto nivel que implementa,",
+        "start": 6851.72,
+        "end": 6859.96
+    },
+    {
+        "text": " veis que se me ha tenido que comparar el entro de gráfico a un lado, salvo que sea",
+        "start": 6859.96,
+        "end": 6863.240000000001
+    },
+    {
+        "text": " una variable o lo va a dar un lado, que es que, sin más de te interese eso, una aplicación",
+        "start": 6863.240000000001,
+        "end": 6868.360000000001
+    },
+    {
+        "text": " concreta, la cosa de ver cómo entra es el gráfico y un vértice.",
+        "start": 6868.360000000001,
+        "end": 6874.72
+    },
+    {
+        "text": " Cuando estudiamos, lo sabemos acá, nada, sumimos, el gráfico es el dato de entrada principal",
+        "start": 6874.72,
+        "end": 6880.320000000001
+    },
+    {
+        "text": " del problema y no esplicitamos que es un parámetro, está ahí, está sus acentos y no lo",
+        "start": 6880.320000000001,
+        "end": 6887.12
+    },
+    {
+        "text": " esplicitamos.",
+        "start": 6887.12,
+        "end": 6888.12
+    },
+    {
+        "text": " Pero es un entrada del problema.",
+        "start": 6888.12,
+        "end": 6891.88
+    },
+    {
+        "text": " ¿No sé si no?",
+        "start": 6891.88,
+        "end": 6896.12
+    },
+    {
+        "text": " ¿Vale?",
+        "start": 6896.12,
+        "end": 6898.12
+    },
+    {
+        "text": " ¿Alguna más?",
+        "start": 6898.12,
+        "end": 6901.12
+    },
+    {
+        "text": " Bueno, cerramos acá entonces y dentro de un rato le paso las plasitas y sensas de traducción",
+        "start": 6902.12,
+        "end": 6909.0
+    },
+    {
+        "text": " que encontré.",
+        "start": 6909.0,
+        "end": 6910.0
+    },
+    {
+        "text": " Nos vemos, chao.",
+        "start": 6910.0,
+        "end": 6911.0
+    },
+    {
+        "text": " Nos vemos, gracias.",
+        "start": 6914.0,
+        "end": 6916.0
+    },
+    {
+        "text": " Nos vemos, salió.",
+        "start": 6919.0,
+        "end": 6921.0
+    },
+    {
+        "text": " Chau, chao.",
+        "start": 6922.8,
+        "end": 6923.8
+    }
+]
