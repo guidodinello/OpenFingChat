@@ -1,14 +1,14 @@
 import {
   Box,
-  Card,
   Link,
   Paper,
-  Stack,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
 import Avatar from "./avatar";
+import { Fragment } from "react";
+import ChatMessage from "./chat-message";
 
 const Message = ({
   message,
@@ -19,7 +19,6 @@ const Message = ({
 }) => {
   const { breakpoints, palette } = useTheme();
   const isSmall = useMediaQuery(breakpoints.down("sm"));
-  console.log(message.error);
 
   return (
     <Box
@@ -55,7 +54,7 @@ const Message = ({
               color={message.error ? "error.dark" : "text.secondary"}
               textAlign={from == "user" ? "right" : "left"}
             >
-              {message.message}
+              <ChatMessage>{message.message}</ChatMessage>
             </Typography>
           </Paper>
 
@@ -63,12 +62,12 @@ const Message = ({
             <Typography variant="caption">
               Referencias:{" "}
               {message.sources.map((s, index, array) => (
-                <>
+                <Fragment key={index}>
                   <Link href={`${s.url}?t=${s.start}`} target="_blank">
                     {s.lessonName}
                   </Link>
                   {index === array.length - 1 ? "." : ", "}
-                </>
+                </Fragment>
               ))}
             </Typography>
           )}
