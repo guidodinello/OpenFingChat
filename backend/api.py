@@ -1,11 +1,7 @@
-from pathlib import Path
-from typing import List, Tuple
-
-import pydantic_core
-from bson import ObjectId
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from RAG.rag import rag
 from store.data.models.lessons import LessonModel
 
 from .models import ChatResponse, Source, UserQuery
@@ -14,7 +10,6 @@ TEST = True
 
 app = FastAPI()
 
-# https://fastapi.tiangolo.com/tutorial/cors/
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "https://chat-mu-lemon.vercel.app/"],
@@ -25,52 +20,31 @@ app.add_middleware(
 
 @app.post("/query")
 def query(query: UserQuery) -> ChatResponse:
-    if TEST:
-        with open(Path(__file__).parent / "mock_response.json", "r") as f:
-            return ChatResponse(**pydantic_core.from_json(f.read()))
+    print(query)
+    input = query.query # user query input
+    conversation_id = query.conversation_id # to keep track of conversation (return it)
 
-    # asumo answer_metadata es una lista de tuplas (lesson_id, lista de timestamps)
-    answer_metadata: List[Tuple[str, List[float]]]
-    llm_answer, answer_metadata = (
-        "stub",
-        [("11f", [0.0, 1.0])],
-    )  # rag(query.query, query.metadata)
+    # hay que manejar la memoria con el conversation_id
+    chat_history = []
+    answer = rag(input, chat_history)
+    # print("context", answer["context"])
+    
+    # CAMBIA TODO LO QUE QUIERAS DE ESTA PARTE
 
-    if not answer_metadata:
-        return {"llm_response": llm_answer, "sources": []}
-
-    # Si el retriever devolvio varios chunks de la misma clase los agrupo
-    lesson_timestamps = {}
-    for lesson_id, timestamps in answer_metadata:
-        if lesson_id in lesson_timestamps:
-            lesson_timestamps[lesson_id].extend(timestamps)
-        else:
-            lesson_timestamps[lesson_id] = timestamps
-
-    lessons_id = [ObjectId(id) for id in lesson_timestamps.keys()]
-    pipeline = [
-        {"$match": {"_id": {"$in": lessons_id}}},  # para las lessons
-        {  # hacer un join con subjects
-            "$lookup": {
-                "from": "subjects",
-                "localField": "subjectId",
-                "foreignField": "_id",
-                "as": "subject",
-            }
-        },
-        {"$unwind": "$subject"},
-        # quedarse solo con los campos que interesan
-        {"$project": {"_id": 1, "name": 1, "url": 1, "subject_name": "$subject.name"}},
-    ]
-
-    sources = [
-        Source(
+    lessons = LessonModel()
+    sources = []
+    for doc in answer["context"]:
+        metadata = doc.metadata
+        lesson = lessons.get(metadata["lesson_id"],True)
+        sources.append(Source(
             lesson_name=lesson["name"],
-            subject_name=lesson["subject_name"],
+            subject_name=lesson["subject"]["name"],
             url=lesson["url"],
-            timestamps=lesson_timestamps[lesson["_id"]],
-        )
-        for lesson in LessonModel().collection.aggregate(pipeline)
-    ]
+            timestamps=[metadata["start"], metadata["end"]]
+        ))
 
-    return {"llm_response": llm_answer, "sources": sources}
+    return {
+        "llm_response": answer["answer"], 
+        "sources": sources,
+        "conversation_id": conversation_id
+    }

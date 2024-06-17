@@ -1,10 +1,16 @@
 import API from "@/services/api";
 
 class ChatAPI {
-  send(query: IQuery): Promise<{ ok: boolean; data: IMessage }> {
-    return API.post("/query", { query: query.query })
+  send(
+    query: IQuery
+  ): Promise<{ ok: boolean; data: IMessage; conversationId?: string }> {
+    return API.post("/query", {
+      query: query.query,
+      conversation_id: query.conversationId || "",
+    })
       .then((response) => ({
         ok: true,
+        conversationId: response.data.conversation_id,
         data: {
           message: response.data.llm_response,
           sources: response.data.sources.map((s: any) => ({
