@@ -17,8 +17,9 @@ const Message = ({
   message: IMessage;
   from?: "chat" | "user";
 }) => {
-  const { breakpoints } = useTheme();
+  const { breakpoints, palette } = useTheme();
   const isSmall = useMediaQuery(breakpoints.down("sm"));
+  console.log(message.error);
 
   return (
     <Box
@@ -39,9 +40,19 @@ const Message = ({
       >
         <Avatar type={from} />
         <Box gap={1} display="flex" flexDirection={"column"}>
-          <Paper sx={{ py: 1, px: 2, minWidth: 200 }} elevation={2}>
+          <Paper
+            sx={{
+              py: 1,
+              px: 2,
+              minWidth: 200,
+              bgcolor: message.error
+                ? palette.error.light
+                : palette.background.paper,
+            }}
+            elevation={2}
+          >
             <Typography
-              color="text.secondary"
+              color={message.error ? "error.dark" : "text.secondary"}
               textAlign={from == "user" ? "right" : "left"}
             >
               {message.message}

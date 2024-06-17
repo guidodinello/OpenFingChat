@@ -6,6 +6,8 @@ import {
   RESET_CHAT,
 } from "./action-types";
 import ChatAPI from "./api";
+import { IQueryActions } from "../query/action-types";
+import { setQueryParams } from "../query/actions";
 
 export const addChatMessage = (message: IMessage): IChatActions => ({
   type: ADD_CHAT_MESSAGE,
@@ -23,15 +25,17 @@ export const resetChat = (): IChatActions => ({
 
 export const sendMessage = (
   query: IQuery,
-  dispatch: Dispatch<IChatActions>
+  dispatch: Dispatch<IChatActions>,
+  dispatchQuery: Dispatch<IQueryActions>
 ) => {
   dispatch(setChatLoading(true));
+  dispatchQuery(setQueryParams({ query: "" }));
   dispatch(addChatMessage({ message: query.query || "", sources: [] }));
 
   return ChatAPI.send(query).then((response) => {
     dispatch(setChatLoading(false));
     dispatch(addChatMessage(response.data));
-
+    dispatchQuery(setQueryParams({ conversationId: response.conversationId }));
     return response;
   });
 };
