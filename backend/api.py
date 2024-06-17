@@ -1,12 +1,20 @@
+import logging
+
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from langchain_core.messages import HumanMessage
 
 from RAG.rag import rag
 from store.data.models.lessons import LessonModel
 
 from .models import ChatResponse, Source, UserQuery
 
-TEST = True
+TEST = False
+
+logging.basicConfig(
+    level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 app = FastAPI()
 
@@ -17,34 +25,46 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+chats = {}
+
+
+def generate_id():
+    return str(len(chats) + 1)
+
 
 @app.post("/query")
 def query(query: UserQuery) -> ChatResponse:
-    print(query)
-    input = query.query # user query input
-    conversation_id = query.conversation_id # to keep track of conversation (return it)
+    logging.debug(query)
+    input = query.query
+    conversation_id = query.conversation_id
 
-    # hay que manejar la memoria con el conversation_id
-    chat_history = []
+    # TODO: segun lo poco que mire el front, el conversation_id es un string vacio la primera vez
+    if conversation_id == "":
+        conversation_id = generate_id()
+
+    if conversation_id not in chats:
+        chats[conversation_id] = []
+    chat_history = chats[conversation_id]
+
     answer = rag(input, chat_history)
-    # print("context", answer["context"])
-    
-    # CAMBIA TODO LO QUE QUIERAS DE ESTA PARTE
+    chat_history.extend([HumanMessage(content=input), answer["answer"]])
 
     lessons = LessonModel()
     sources = []
     for doc in answer["context"]:
         metadata = doc.metadata
-        lesson = lessons.get(metadata["lesson_id"],True)
-        sources.append(Source(
-            lesson_name=lesson["name"],
-            subject_name=lesson["subject"]["name"],
-            url=lesson["url"],
-            timestamps=[metadata["start"], metadata["end"]]
-        ))
+        lesson = lessons.get(metadata["lesson_id"], True)
+        sources.append(
+            Source(
+                lesson_name=lesson["name"],
+                subject_name=lesson["subject"]["name"],
+                url=lesson["url"],
+                timestamps=[metadata["start"], metadata["end"]],
+            )
+        )
 
     return {
-        "llm_response": answer["answer"], 
+        "llm_response": answer["answer"],
         "sources": sources,
-        "conversation_id": conversation_id
+        "conversation_id": conversation_id,
     }
