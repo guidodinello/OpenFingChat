@@ -1,0 +1,6632 @@
+[
+    {
+        "text": " Bueno, memoria de enámica y punteros es el último tema y es el que vamos a empezar ahora.",
+        "start": 0.0,
+        "end": 24.0
+    },
+    {
+        "text": " Empezamos por ver que es una estructura dinámica y lo vamos a hacer en contraste con las estructuras de datos que estuvimos viendo hasta ahora que eran no dinámicas.",
+        "start": 25.0,
+        "end": 38.0
+    },
+    {
+        "text": " Cuando veamos que es dinámico, un poquito vamos a entender por qué las enteriores eran no dinámicas.",
+        "start": 38.0,
+        "end": 45.0
+    },
+    {
+        "text": " Se dice que una estructura de datos es dinámica si su tamaño cambia en tiempo de ejecución del programa.",
+        "start": 46.0,
+        "end": 57.0
+    },
+    {
+        "text": " Y un poco las tres estructuras de datos que vimos y pues estructurados lo sabíamos llamado también.",
+        "start": 58.0,
+        "end": 66.0
+    },
+    {
+        "text": " El récord en su variante con case o sin case, el arreglo y el set justamente esas no son estructuras estáticas.",
+        "start": 67.0,
+        "end": 78.0
+    },
+    {
+        "text": " Perdón, no son estructuras dinámicas, justamente son estáticas.",
+        "start": 79.0,
+        "end": 83.0
+    },
+    {
+        "text": " ¿Por qué no lo son? ¿Qué pasa por ejemplo con el tamaño del arreglo? Es pico. A un arreglo yo no le puedo agregar o quitar celdas durante la ejecución.",
+        "start": 84.0,
+        "end": 98.0
+    },
+    {
+        "text": " Tiene una cantidad fija de celdas que está dada por un subrango cuando yo escribo la definición del tipo y una vez que yo declaro una variable de ese tipo su tamaño no puede cambiar.",
+        "start": 98.0,
+        "end": 112.0
+    },
+    {
+        "text": " Lo mismo le pasa un récord. El récord tiene una cantidad fija de campos. Yo no le puedo agregar nuevos campos o quitar campos en tiempo de ejecución.",
+        "start": 114.0,
+        "end": 127.0
+    },
+    {
+        "text": " Por eso decimos que estas estructuras no son dinámicas. ¿Por qué? Porque su tamaño no puede modificarse en tiempo de ejecución.",
+        "start": 128.0,
+        "end": 138.0
+    },
+    {
+        "text": " Dice así que el espacio de memoria se reserva cuando comienza la ejecución del bloque donde están declaradas.",
+        "start": 139.0,
+        "end": 150.0
+    },
+    {
+        "text": " Si yo, por ejemplo, declaro un arreglo dentro de un procedimiento al momento de empezar a ejecutarse el procedimiento es que se reserva la memoria y durante toda la ejecución del procedimiento la memoria parece arreglo permanece reservada pero yo no le puedo ir cambiando el tamaño durante la ejecución.",
+        "start": 151.0,
+        "end": 174.0
+    },
+    {
+        "text": " Por eso dice que este espacio no varía en toda la ejecución del bloque.",
+        "start": 175.0,
+        "end": 182.0
+    },
+    {
+        "text": " Luego en el curso vimos una variante a la raí como un que era la raí con tope donde manejábamos un campo numérico que me servía para indicar cuantas celdas llevábamos cargadas hasta el momento.",
+        "start": 185.0,
+        "end": 201.0
+    },
+    {
+        "text": " Sin embargo, la raí con tope tampoco es una estructura dinámica porque el tamaño real de la reglo sigue siendo una cantidad fija de celdas.",
+        "start": 202.0,
+        "end": 213.0
+    },
+    {
+        "text": " O sea, lo que varía es cuántas de esas celdas yo voy a cargar durante la ejecución pero cambiarle el tamaño de la reglo por más que sea con tope es algo que ya no puedo hacer.",
+        "start": 214.0,
+        "end": 225.0
+    },
+    {
+        "text": " Se entiende? Con el récord case pasa algo parecido. Si bien puede pasar que en la parte variante dependiendo del tipo del elemento yo tenga algún campo más o algún campo menos, lo cierto es que durante la ejecución yo no puedo venir a inventar nuevos campos.",
+        "start": 226.0,
+        "end": 246.0
+    },
+    {
+        "text": " Recorqueis tampoco es una estructura dinámica y el set que representa un conjunto tenía un tamaño máximo posible que en Pascal habíamos visto eran 256 elementos.",
+        "start": 247.0,
+        "end": 261.0
+    },
+    {
+        "text": " O sea que más allá de 256 elementos yo no le puedo poner.",
+        "start": 262.0,
+        "end": 267.0
+    },
+    {
+        "text": " Entonces, ninguna de las estructuras de datos vistas, ninguno de los tipos estructurados vistas son dinámicos.",
+        "start": 268.0,
+        "end": 279.0
+    },
+    {
+        "text": " Justamente el concepto de estructura de datos dinámica es el que vamos a introducir entre hoy y la clase del viernes.",
+        "start": 280.0,
+        "end": 287.0
+    },
+    {
+        "text": " Y se va a tratar un poco de eso. A mí me gustaría poder ir algo así como creando nuevas celdas en tiempo de ejecución para ir agregando más valores.",
+        "start": 288.0,
+        "end": 301.0
+    },
+    {
+        "text": " Y si dentro de media hora me aparece otro valor más poder decir agua aparecer una nueva celda y lo agrego.",
+        "start": 302.0,
+        "end": 309.0
+    },
+    {
+        "text": " Y si media hora más después quiero agregar tres elementos más, voy agua aparecer tres nuevas celdas y lo agrego.",
+        "start": 310.0,
+        "end": 317.0
+    },
+    {
+        "text": " O sea que no esté prefijado de antemano el tamaño de la estructura de datos.",
+        "start": 318.0,
+        "end": 323.0
+    },
+    {
+        "text": " Y para lograr eso, justamente necesitamos manejar memoria dinámica.",
+        "start": 325.0,
+        "end": 329.0
+    },
+    {
+        "text": " Es un poquito el porqué de ver este tema.",
+        "start": 330.0,
+        "end": 333.0
+    },
+    {
+        "text": " Y para poder manejar memoria en forma dinámica, es decir memoria nueva que se pide en tiempo de ejecución, necesitamos manejar un puntero.",
+        "start": 334.0,
+        "end": 349.0
+    },
+    {
+        "text": " Es decir que no podemos hablar de memoria dinámica sin hablar de qué es un puntero.",
+        "start": 350.0,
+        "end": 355.0
+    },
+    {
+        "text": " Y un puntero es una variable. O sea que como tal, va a almacenar cuántos valores, un valor solo.",
+        "start": 356.0,
+        "end": 367.0
+    },
+    {
+        "text": " Lo que pasa es que el valor que almacena un puntero es un valor muy especial.",
+        "start": 368.0,
+        "end": 374.0
+    },
+    {
+        "text": " Es la dirección de memoria de otro espacio de memoria.",
+        "start": 375.0,
+        "end": 381.0
+    },
+    {
+        "text": " A ver, una variable de tipo integer, almacena elementos de tipo entero.",
+        "start": 382.0,
+        "end": 387.0
+    },
+    {
+        "text": " Una variable de tipo char, almacena elementos de tipo carácter.",
+        "start": 389.0,
+        "end": 393.0
+    },
+    {
+        "text": " Una variable de tipo ría, almacena un número real.",
+        "start": 394.0,
+        "end": 398.0
+    },
+    {
+        "text": " Bueno puntero vendría ser un nuevo tipo de datos.",
+        "start": 400.0,
+        "end": 403.0
+    },
+    {
+        "text": " Una variable de tipo puntero, lo que almacena es la dirección de otro espacio.",
+        "start": 404.0,
+        "end": 410.0
+    },
+    {
+        "text": " Y por qué digo la dirección, nosotros estamos acostumbrados que las variables se identifican mediante qué.",
+        "start": 411.0,
+        "end": 419.0
+    },
+    {
+        "text": " Mediante un identificador, mediante un nombre, si yo me declaro una variable num de tipo integer, luego uso el nombre de la variable para acceder a su contenido.",
+        "start": 423.0,
+        "end": 434.0
+    },
+    {
+        "text": " Bueno, eso es lo que hacemos nosotros a nivel del código, a nivel del programa.",
+        "start": 435.0,
+        "end": 441.0
+    },
+    {
+        "text": " Pero por detrás, una vez que el programa se compilo y está en tiempo de ejecución, más abajo nivel, a nivel de lo que sería la memoria de la máquina,",
+        "start": 442.0,
+        "end": 452.0
+    },
+    {
+        "text": " las variables ocupan un determinado lugar de la memoria. Y cada lugar de la memoria se identifica a abajo nivel mediante una dirección.",
+        "start": 453.0,
+        "end": 463.0
+    },
+    {
+        "text": " Entonces por eso es que hablamos de direcciones de memoria.",
+        "start": 465.0,
+        "end": 470.0
+    },
+    {
+        "text": " Ahora vamos a ver ejemplos de primero cómo se declaran, segundo cómo se manipulan y qué rol juega ahí la dirección de memoria.",
+        "start": 471.0,
+        "end": 481.0
+    },
+    {
+        "text": " Pero un puntero va a ser algo así como la puerta para solicitar memoria en forma dinámica.",
+        "start": 484.0,
+        "end": 492.0
+    },
+    {
+        "text": " O sea nuevos espacios de memoria en tiempo de ejecución.",
+        "start": 493.0,
+        "end": 498.0
+    },
+    {
+        "text": " Vamos a ver que desde el puntero, yo le voy a poder decir al programa, quiero crear entre comillas un nuevo espacio de memoria que es como que se materializa ahora en tiempo de ejecución.",
+        "start": 499.0,
+        "end": 512.0
+    },
+    {
+        "text": " Entonces eso lo vamos a hacer mediante una instrucción que se llama nu y lo que va a ser nu va a ser aparecer un nuevo espacio de memoria en tiempo de ejecución y la variable puntero que va a almacenar la dirección de ese nuevo espacio.",
+        "start": 513.0,
+        "end": 530.0
+    },
+    {
+        "text": " La manera que nosotros vamos a tener de acceder a ese nuevo espacio va a ser a través de la dirección guardada en el puntero.",
+        "start": 531.0,
+        "end": 538.0
+    },
+    {
+        "text": " Y para acceder vamos a usar un operador que se llama el operador de desreferenciación que no los asusten el nombre cuando lo usamos a la ver que no está complicado, que es yo le llamo a sento circumflejo, es un techito.",
+        "start": 539.0,
+        "end": 556.0
+    },
+    {
+        "text": " Entonces desde el puntero a través del operador de desreferenciación yo voy a poder acceder al espacio de memoria que está siendo referenciado desde el puntero.",
+        "start": 557.0,
+        "end": 571.0
+    },
+    {
+        "text": " Y vamos a ver que la memoria que yo pido en forma dinámica en algún momento la tengo lo que se llama que liberarlo, la tengo que devolver y eso se va a ser mediante otra instrucción que se llama dispós.",
+        "start": 572.0,
+        "end": 589.0
+    },
+    {
+        "text": " Entonces, a grandes rasgos para manipular un puntero tenemos que tener claro la instrucción nú, el operador de desreferenciación y la instrucción dispós.",
+        "start": 590.0,
+        "end": 600.0
+    },
+    {
+        "text": " Ahora vamos a ver ejemplos de cómo se utiliza.",
+        "start": 600.0,
+        "end": 604.0
+    },
+    {
+        "text": " Entonces cualquier espacio de memoria que se solicita en forma dinámica se va a poder acceder desde un puntero.",
+        "start": 605.0,
+        "end": 614.0
+    },
+    {
+        "text": " Por eso yo decía recién que para poder manipular memoria de manera dinámica es fundamental entender la noción de puntero.",
+        "start": 614.0,
+        "end": 623.0
+    },
+    {
+        "text": " Y un puntero es eso, es una variable cuyo contenido es la dirección de memoria de otro espacio y ese otro espacio vamos a ver que se piden tiempo de ejecución.",
+        "start": 624.0,
+        "end": 635.0
+    },
+    {
+        "text": " No estaba previsto tenerlo al momento de compilar el programa.",
+        "start": 635.0,
+        "end": 640.0
+    },
+    {
+        "text": " ¿Pata acá?",
+        "start": 641.0,
+        "end": 643.0
+    },
+    {
+        "text": " Bien, y acá tenemos ejemplos de declaraciones.",
+        "start": 646.0,
+        "end": 652.0
+    },
+    {
+        "text": " Lo primero que nos tiene que quedar claro es que estamos en la sección type del programa.",
+        "start": 652.0,
+        "end": 658.0
+    },
+    {
+        "text": " Esto significa que estamos definiendo que cosa, tipos de datos,",
+        "start": 658.0,
+        "end": 663.0
+    },
+    {
+        "text": " da la casualidad que estos tipos de datos van a ser punteros.",
+        "start": 664.0,
+        "end": 669.0
+    },
+    {
+        "text": " O sea que cuando yo me declare una variable de cualquiera de estos tipos de datos lo que yo voy a almacenar luego en esas variables van a ser direcciones de memoria.",
+        "start": 669.0,
+        "end": 680.0
+    },
+    {
+        "text": " Entonces, Peter R. Inth es un nuevo tipo de datos que es un puntero a algo de tipo Inth.",
+        "start": 681.0,
+        "end": 692.0
+    },
+    {
+        "text": " Peter Rebull es otro tipo de datos que es un puntero a algo de tipo Bullyan.",
+        "start": 692.0,
+        "end": 701.0
+    },
+    {
+        "text": " Si nosotros luego en la sección de variables del programa escribimos las siguientes declaraciones.",
+        "start": 702.0,
+        "end": 710.0
+    },
+    {
+        "text": " Peter Rebull de tipos Peter Rehind y Peter Rebull de tipos Peter Rebull, aquellos son tipos de datos y estas dos son variables.",
+        "start": 711.0,
+        "end": 736.0
+    },
+    {
+        "text": " Dentro de Peter Rebull no vamos a almacenar un entero.",
+        "start": 736.0,
+        "end": 741.0
+    },
+    {
+        "text": " Si no que vamos a almacenar la dirección de otro espacio de memoria y en ese otro espacio de memoria que va a ver.",
+        "start": 741.0,
+        "end": 751.0
+    },
+    {
+        "text": " Peter Rebull va a almacenar una dirección de memoria correspondiente a otro lugar de la memoria donde va a ver algo de tipo Bullyan.",
+        "start": 751.0,
+        "end": 764.0
+    },
+    {
+        "text": " Otro tipo de datos llamado Zelda. Zelda es un registro tal y como lo conocemos.",
+        "start": 767.0,
+        "end": 775.0
+    },
+    {
+        "text": " Que adentro tendrá una serie de campos. Optionalmente puede ser un registro variante que tenga un case.",
+        "start": 775.0,
+        "end": 782.0
+    },
+    {
+        "text": " Y yo luego me defino un nuevo tipo de datos llamado Peter Rezelda que representa un puntero a Zelda.",
+        "start": 782.0,
+        "end": 792.0
+    },
+    {
+        "text": " Entonces si yo me declaro Peter Rez, de tipo Peter Rezelda, ¿qué va a contener esta variable?",
+        "start": 793.0,
+        "end": 805.0
+    },
+    {
+        "text": " Una dirección de algún lugar en la memoria donde va a ver una Zelda algo de tipo Zelda.",
+        "start": 807.0,
+        "end": 815.0
+    },
+    {
+        "text": " Entonces lo que tiene que dejar claro es que estos punteros contienen direcciones de otros espacios de memoria donde va a estar almacenado algo del tipo indicado en la declaración.",
+        "start": 816.0,
+        "end": 829.0
+    },
+    {
+        "text": " Allá estamos definiendo tipos de datos para punteros. Acá estamos declarando variables de esos tipos de datos.",
+        "start": 830.0,
+        "end": 843.0
+    },
+    {
+        "text": " Por ser punteros estas variables van a contener direcciones de otros espacios de memoria y esos espacios de memoria se van a crear con nú y se van a acceder con el operador de referenciación.",
+        "start": 843.0,
+        "end": 858.0
+    },
+    {
+        "text": " Y lo tiene que aguardar el primer elemento que tiene el primer elemento que va a ser. Porque todos se apuntan a 100 dirigas y a 100 referencia.",
+        "start": 860.0,
+        "end": 874.0
+    },
+    {
+        "text": " Peter Rez uno va a contener la dirección de otro espacio donde va a ver un int.",
+        "start": 874.0,
+        "end": 879.0
+    },
+    {
+        "text": " Acá yo voy a tener la dirección de otro lugar donde va a ver un int.",
+        "start": 880.0,
+        "end": 886.0
+    },
+    {
+        "text": " Y ahí se termina la historia. Luego van a venir las listas. Luego estamos viendo punteros.",
+        "start": 886.0,
+        "end": 894.0
+    },
+    {
+        "text": " Porque si usted la palabra siguiente ya me dio a entender que estaba la noción de lista dentro de un rato.",
+        "start": 894.0,
+        "end": 899.0
+    },
+    {
+        "text": " De a poco. Bien.",
+        "start": 899.0,
+        "end": 903.0
+    },
+    {
+        "text": " Bueno hasta acá estamos definiendo tipos de datos que pertenecen si se quiere una nueva categoría y declarando variables de esos tipos.",
+        "start": 904.0,
+        "end": 913.0
+    },
+    {
+        "text": " Bien.",
+        "start": 913.0,
+        "end": 918.0
+    },
+    {
+        "text": " Y allí tenemos la sintaxis genérica para definir un tipo de datos puntero.",
+        "start": 918.0,
+        "end": 927.0
+    },
+    {
+        "text": " Es un tipo de datos por lo tanto van la sección type. Se le pone un nombre, se le da un identificador ese tipo de datos.",
+        "start": 928.0,
+        "end": 937.0
+    },
+    {
+        "text": " Y la manera de decir que ese tipo que se está definiendo es un puntero es mediante el operador de referenciación.",
+        "start": 937.0,
+        "end": 944.0
+    },
+    {
+        "text": " Que es el mismo que después vamos a ver utilizamos para acceder al espacio de memoria referenciado desde el puntero.",
+        "start": 944.0,
+        "end": 952.0
+    },
+    {
+        "text": " Bueno una cosa más yo puedo declararme punteros a cualquier tipo de datos.",
+        "start": 958.0,
+        "end": 963.0
+    },
+    {
+        "text": " Puede ser un tipo de datos simple. Como por ejemplo Integero William. Puede ser un tipo de datos estructurado como por ejemplo un record.",
+        "start": 963.0,
+        "end": 972.0
+    },
+    {
+        "text": " Puede ser un tipo de datos predefinido o definido por el programador. No hay restricción.",
+        "start": 972.0,
+        "end": 978.0
+    },
+    {
+        "text": " Yo puedo declararme punteros a cualquier tipo de datos.",
+        "start": 978.0,
+        "end": 982.0
+    },
+    {
+        "text": " Esto es un tipo de datos. Eso que esta casa refiere a tipos como estos. Esto no es una variable.",
+        "start": 982.0,
+        "end": 994.0
+    },
+    {
+        "text": " Como ya.",
+        "start": 994.0,
+        "end": 998.0
+    },
+    {
+        "text": " El valor que va a tener es una dirección de memoria.",
+        "start": 998.0,
+        "end": 1006.0
+    },
+    {
+        "text": " El valor es una dirección. Recordemos. Los valores que yo puedo almacenar en una variable de tipo Integer son números enteros.",
+        "start": 1007.0,
+        "end": 1015.0
+    },
+    {
+        "text": " Los valores que yo puedo almacenar en una variable de tipo real son números reales.",
+        "start": 1015.0,
+        "end": 1022.0
+    },
+    {
+        "text": " Ahora los valores que yo almaceno en un puntero son direcciones de memoria.",
+        "start": 1022.0,
+        "end": 1027.0
+    },
+    {
+        "text": " En una variable de tipo puntero el contenido que tu almacenas ahí va a ser la dirección de memoria de alguien más.",
+        "start": 1027.0,
+        "end": 1033.0
+    },
+    {
+        "text": " Y ese alguien más va a tener un valor del tipo que haya puesto en la declaración.",
+        "start": 1033.0,
+        "end": 1040.0
+    },
+    {
+        "text": " ¿Qué dios?",
+        "start": 1040.0,
+        "end": 1042.0
+    },
+    {
+        "text": " Sí. Allá y ahí.",
+        "start": 1042.0,
+        "end": 1045.0
+    },
+    {
+        "text": " No hay una variable.",
+        "start": 1045.0,
+        "end": 1049.0
+    },
+    {
+        "text": " La dirección de memoria mostraron la pantalla no. Lo que vas a poder hacer es acceder a través de la dirección al espacio de memoria apuntado y mostrar el valor que esté guardado ahí.",
+        "start": 1049.0,
+        "end": 1060.0
+    },
+    {
+        "text": " O sea las direcciones van a seguir quedando de alguna manera oculta al programado.",
+        "start": 1060.0,
+        "end": 1067.0
+    },
+    {
+        "text": " De momento esto por ahí no tendría demasiado docente.",
+        "start": 1067.0,
+        "end": 1082.0
+    },
+    {
+        "text": " Va a cobrar importancia cuando después veamos las listas.",
+        "start": 1082.0,
+        "end": 1087.0
+    },
+    {
+        "text": " Por que vos en una lista lo que vas a hacer es pedir lugar de memoria para un valor y desde ese lugar de memoria vas a pedir otro para otro valor y así tantas veces como quieras.",
+        "start": 1087.0,
+        "end": 1098.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1098.0,
+        "end": 1100.0
+    },
+    {
+        "text": " O sea, así.",
+        "start": 1100.0,
+        "end": 1102.0
+    },
+    {
+        "text": " ¿Por qué tenés que ser un primer tipo de memoria?",
+        "start": 1102.0,
+        "end": 1105.0
+    },
+    {
+        "text": " Porque vos guardás la dirección de memoria de otro lugar donde tiene que ver algo de este tipo.",
+        "start": 1105.0,
+        "end": 1111.0
+    },
+    {
+        "text": " Si vos desde el puntero accedés al espacio de memoria apuntado, ponéis de que estamos con esta variable en PT-R1.",
+        "start": 1111.0,
+        "end": 1118.0
+    },
+    {
+        "text": " Y ahí quieres guardar un char, el continuo te va a decir no, ¿no? ¿Por qué? Porque el puntero fue declarado como puntero a algo de tipo impensar.",
+        "start": 1118.0,
+        "end": 1128.0
+    },
+    {
+        "text": " ¿Y ahora voy a dar un buen lugar de un puntero?",
+        "start": 1128.0,
+        "end": 1134.0
+    },
+    {
+        "text": " ¿Vos en el puntero vas a guardar la dirección de otro lugar donde va a haber algo de tipo impensar?",
+        "start": 1135.0,
+        "end": 1142.0
+    },
+    {
+        "text": " En un artista bien les sentáis que capaz de algarlo en instrucciones que va a más claro.",
+        "start": 1142.0,
+        "end": 1147.0
+    },
+    {
+        "text": " ¿Cómo les tiene que ver estos tipos de impunidos? ¿Por qué no? ¿Por qué no? ¿Por qué no? ¿Por qué no tiene que ser las para guardar este?",
+        "start": 1147.0,
+        "end": 1160.0
+    },
+    {
+        "text": " Hay demasiadas cosas mezcladas en esa pregunta. Primero, no es un capricho de Pascal, es algo que tiene muchos lenguajes de programación.",
+        "start": 1161.0,
+        "end": 1169.0
+    },
+    {
+        "text": " El disco duro es lo que se llama almacenamiento secundario, acá estamos hablando de memoria.",
+        "start": 1169.0,
+        "end": 1175.0
+    },
+    {
+        "text": " Muchos lenguajes manipulan punteros no solamente Pascal.",
+        "start": 1175.0,
+        "end": 1180.0
+    },
+    {
+        "text": " ¿Pero todos usan la misma idea de guardar la dirección de otro lugar? Sí, correcto.",
+        "start": 1180.0,
+        "end": 1186.0
+    },
+    {
+        "text": " De un tipo específico correcto.",
+        "start": 1187.0,
+        "end": 1189.0
+    },
+    {
+        "text": " Por ejemplo me preguntaba recién el compañero si yo puedo consultar y mostrar en pantalla una dirección de memoria.",
+        "start": 1193.0,
+        "end": 1199.0
+    },
+    {
+        "text": " Vamos a ver que en Pascal no, pero en sea es posible.",
+        "start": 1199.0,
+        "end": 1203.0
+    },
+    {
+        "text": " O sea, tenés diferentes grados, digamos, de qué tan abajo puedes bajar en el manejo de los punteros.",
+        "start": 1203.0,
+        "end": 1209.0
+    },
+    {
+        "text": " Pero el concepto sigue siendo el mismo. Una variable que contiene la dirección de otro lugar.",
+        "start": 1209.0,
+        "end": 1214.0
+    },
+    {
+        "text": " Allá.",
+        "start": 1215.0,
+        "end": 1216.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1219.0,
+        "end": 1220.0
+    },
+    {
+        "text": " También podrías declarar un puntero a otro puntero, sí señor.",
+        "start": 1221.0,
+        "end": 1225.0
+    },
+    {
+        "text": " En la práctica no es algo que nos vaya a resultar de gran utilidad, pero es la sintáxida del lenguaje lo permite.",
+        "start": 1225.0,
+        "end": 1231.0
+    },
+    {
+        "text": " ¿Pas preguntas? Bueno, veo que están causando revuelos los punteros.",
+        "start": 1234.0,
+        "end": 1238.0
+    },
+    {
+        "text": " Está bueno.",
+        "start": 1238.0,
+        "end": 1239.0
+    },
+    {
+        "text": " Bien, entonces.",
+        "start": 1240.0,
+        "end": 1241.0
+    },
+    {
+        "text": " La sintáxida enérica para definir un tipo puntero, ya la acabamos de charlar.",
+        "start": 1242.0,
+        "end": 1247.0
+    },
+    {
+        "text": " Y algunas cosas a tener en cuenta sobre los punteros.",
+        "start": 1250.0,
+        "end": 1254.0
+    },
+    {
+        "text": " De nuevo, un puntero es una variable que almacena una dirección de memoria.",
+        "start": 1254.0,
+        "end": 1260.0
+    },
+    {
+        "text": " Todo tipo de datos tiene definido una serie de operaciones que se pueden realizar sobre ese tipo de datos.",
+        "start": 1262.0,
+        "end": 1269.0
+    },
+    {
+        "text": " Y los punteros no son la excepción.",
+        "start": 1269.0,
+        "end": 1272.0
+    },
+    {
+        "text": " Tienen una serie de operaciones que se pueden realizar sobre ese tipo de datos.",
+        "start": 1272.0,
+        "end": 1278.0
+    },
+    {
+        "text": " ¿Primero que nada?",
+        "start": 1278.0,
+        "end": 1281.0
+    },
+    {
+        "text": " Cuando yo declaro una variable de tipo puntero, su valor inicial es indefinido como en cualquier variable.",
+        "start": 1281.0,
+        "end": 1288.0
+    },
+    {
+        "text": " En criollo como le decíamos al valor indefinido.",
+        "start": 1288.0,
+        "end": 1292.0
+    },
+    {
+        "text": " Vazura, cuando yo declaro estas tres, que contienen vazura.",
+        "start": 1293.0,
+        "end": 1298.0
+    },
+    {
+        "text": " Y al igual que cualquier otra variable antes de trabajar con ella que debo hacer.",
+        "start": 1299.0,
+        "end": 1303.0
+    },
+    {
+        "text": " Inicializarla con un valor valido.",
+        "start": 1303.0,
+        "end": 1306.0
+    },
+    {
+        "text": " Que vamos a ver después cómo es para inicializar un puntero.",
+        "start": 1306.0,
+        "end": 1309.0
+    },
+    {
+        "text": " El valor guardado en una variable puntero es una dirección de memoria.",
+        "start": 1312.0,
+        "end": 1318.0
+    },
+    {
+        "text": " Por lo tanto depende del arquitectura del computador.",
+        "start": 1319.0,
+        "end": 1323.0
+    },
+    {
+        "text": " Por detrás de mi programa va a ver una máquina sobre la cual va a estar corriendo el programa.",
+        "start": 1323.0,
+        "end": 1328.0
+    },
+    {
+        "text": " Puede ser una máquina Windows o puede ser una máquina Linux.",
+        "start": 1328.0,
+        "end": 1332.0
+    },
+    {
+        "text": " Y a su vez tanto dentro de Windows como dentro de Linux puedo tener distintas versiones posibles del sistema operativo.",
+        "start": 1332.0,
+        "end": 1339.0
+    },
+    {
+        "text": " Cada una de esas máquinas va a tener su propio mecanismo de manejo de direcciones de memoria.",
+        "start": 1339.0,
+        "end": 1347.0
+    },
+    {
+        "text": " Una dirección de memoria en Ubuntu probablemente no va a ser igual a una dirección de memoria en Windows 7.",
+        "start": 1347.0,
+        "end": 1354.0
+    },
+    {
+        "text": " Eso ya escapa al control del programador.",
+        "start": 1354.0,
+        "end": 1358.0
+    },
+    {
+        "text": " El programador lo único que sabe es que dentro del puntero hay una dirección de memoria.",
+        "start": 1358.0,
+        "end": 1363.0
+    },
+    {
+        "text": " Ahora que forma tendrás esa dirección ya tiene que ver con la máquina sobre la cual está corriendo el programa.",
+        "start": 1363.0,
+        "end": 1370.0
+    },
+    {
+        "text": " Y el programador no va a tener control sobre eso.",
+        "start": 1370.0,
+        "end": 1373.0
+    },
+    {
+        "text": " Y tampoco va a ser necesario saber que forma tiene las direcciones de memoria.",
+        "start": 1374.0,
+        "end": 1379.0
+    },
+    {
+        "text": " Nos va a alcanzar con saber que empete reuno esta guardada de la dirección de algún otro sitio en la memoria donde hay algo de tipo de impellar.",
+        "start": 1379.0,
+        "end": 1386.0
+    },
+    {
+        "text": " Y eso es lo que nos alcanza.",
+        "start": 1386.0,
+        "end": 1389.0
+    },
+    {
+        "text": " Un documento como.",
+        "start": 1397.0,
+        "end": 1399.0
+    },
+    {
+        "text": " Si.",
+        "start": 1400.0,
+        "end": 1402.0
+    },
+    {
+        "text": " El mismo programa en Pascal tú lo vas a compilar en Windows y te va a generar un ejecutable de Windows.",
+        "start": 1406.0,
+        "end": 1413.0
+    },
+    {
+        "text": " Te vas a llevar el mismo código fuente, lo vas a compilar en Ubuntu y te va a generar un ejecutable para Ubuntu.",
+        "start": 1413.0,
+        "end": 1420.0
+    },
+    {
+        "text": " O sea, el mismo ejecutable no. No te lo podéis llevar de una máquina otra por lo menos, no en Pascal.",
+        "start": 1420.0,
+        "end": 1426.0
+    },
+    {
+        "text": " Hay otros lenguajes que en algún sentido, por ejemplo, Java te dejan hacer eso, pero ya es una otra discusión esa.",
+        "start": 1426.0,
+        "end": 1434.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 1437.0,
+        "end": 1439.0
+    },
+    {
+        "text": " La pregunta del compañero. No, no es posible leer o escribir con riri-right valores de tipo puntero.",
+        "start": 1439.0,
+        "end": 1446.0
+    },
+    {
+        "text": " John puntero no lo puedo leer por teclado.",
+        "start": 1446.0,
+        "end": 1449.0
+    },
+    {
+        "text": " Es más, sin tento aplicarme riri, Pascal me va a decir lo siento, no se puede.",
+        "start": 1449.0,
+        "end": 1454.0
+    },
+    {
+        "text": " No está definida la operación RID para variables de tipo puntero.",
+        "start": 1455.0,
+        "end": 1460.0
+    },
+    {
+        "text": " Faya el compilador.",
+        "start": 1461.0,
+        "end": 1463.0
+    },
+    {
+        "text": " El propio compilador no nos va a permitir.",
+        "start": 1463.0,
+        "end": 1466.0
+    },
+    {
+        "text": " Pongamos por un segundo que nos lo permite. Imagínense el desay. Yo pongo a mi madre como usuaria del programa.",
+        "start": 1466.0,
+        "end": 1473.0
+    },
+    {
+        "text": " Y mi madre ingresa una dirección de memoria.",
+        "start": 1473.0,
+        "end": 1476.0
+    },
+    {
+        "text": " Vaya a uno saber qué lugar de la memoria está queriendo colocar en la variada.",
+        "start": 1477.0,
+        "end": 1481.0
+    },
+    {
+        "text": " Por una cuestión de integridad del sistema, el usuario no puede digitar ingresar una dirección de memoria.",
+        "start": 1482.0,
+        "end": 1490.0
+    },
+    {
+        "text": " Tampoco la podemos mostrar.",
+        "start": 1492.0,
+        "end": 1495.0
+    },
+    {
+        "text": " Con RID.",
+        "start": 1496.0,
+        "end": 1498.0
+    },
+    {
+        "text": " Comenzamos que mostrarla por ahí no sería tan peligroso en algún sentido para la integridad del sistema, pero Pascal tampoco lo permite.",
+        "start": 1498.0,
+        "end": 1504.0
+    },
+    {
+        "text": " Pero por ejemplo, ese sí se puede mostrar por pantalla de direcciones de memoria.",
+        "start": 1505.0,
+        "end": 1509.0
+    },
+    {
+        "text": " Y la única comparación permitida es la comparación por igualdad.",
+        "start": 1511.0,
+        "end": 1516.0
+    },
+    {
+        "text": " Los demás operadores relacionales, menor, menor o igual, distinto, mayor, todos esos no son aplicables a variables de tipo puntero.",
+        "start": 1517.0,
+        "end": 1527.0
+    },
+    {
+        "text": " Exacto y lo vamos a ver en un rato.",
+        "start": 1529.0,
+        "end": 1531.0
+    },
+    {
+        "text": " No tampoco.",
+        "start": 1532.0,
+        "end": 1533.0
+    },
+    {
+        "text": " No se pueden sumar direcciones de memoria.",
+        "start": 1534.0,
+        "end": 1536.0
+    },
+    {
+        "text": " Ver si un puntero es igual a otro.",
+        "start": 1537.0,
+        "end": 1541.0
+    },
+    {
+        "text": " O sea, si los dos punteros contienen la misma dirección y es todo lo que se puede hacer.",
+        "start": 1541.0,
+        "end": 1545.0
+    },
+    {
+        "text": " Las direcciones de memoria.",
+        "start": 1550.0,
+        "end": 1552.0
+    },
+    {
+        "text": " Y lo vamos a ver en un rato.",
+        "start": 1552.0,
+        "end": 1553.0
+    },
+    {
+        "text": " Los contenidos, por ejemplo, si son dos variables de tipo PTR-IN, vos puedes acceder a los contenidos y sumarlo sí.",
+        "start": 1556.0,
+        "end": 1563.0
+    },
+    {
+        "text": " Los enteros en los lugares de memoria apuntados desde los punteros se pueden sumar.",
+        "start": 1564.0,
+        "end": 1569.0
+    },
+    {
+        "text": " Los punteros en sí, las direcciones de memoria no.",
+        "start": 1570.0,
+        "end": 1573.0
+    },
+    {
+        "text": " Podemos saber si tenemos dos punteros que están referenciando al mismo lugar con la comparación por igualdad.",
+        "start": 1576.0,
+        "end": 1581.0
+    },
+    {
+        "text": " Por allá y por allá.",
+        "start": 1581.0,
+        "end": 1582.0
+    },
+    {
+        "text": " ¿Era eso?",
+        "start": 1582.0,
+        "end": 1583.0
+    },
+    {
+        "text": " Dos punteros pueden apuntar al mismo lugar de memoria y lo vamos a ver en un rato.",
+        "start": 1584.0,
+        "end": 1588.0
+    },
+    {
+        "text": " ¿Para qué es el sitio de la definición de memoria?",
+        "start": 1589.0,
+        "end": 1592.0
+    },
+    {
+        "text": " En realidad no es de utilidad y de hecho por eso pascan, no lo permite.",
+        "start": 1593.0,
+        "end": 1597.0
+    },
+    {
+        "text": " Por curiosidad.",
+        "start": 1600.0,
+        "end": 1601.0
+    },
+    {
+        "text": " Porque querés ver cómo maneja las direcciones por detrás.",
+        "start": 1601.0,
+        "end": 1605.0
+    },
+    {
+        "text": " Pero para el tipo de cosas que nos va a interesar a hacer con memoria dinámica, consultar y mostrar en pantalla una dirección de memoria no.",
+        "start": 1605.0,
+        "end": 1612.0
+    },
+    {
+        "text": " Si a ni siquiera nos va a hacer de utilidad a eso.",
+        "start": 1613.0,
+        "end": 1615.0
+    },
+    {
+        "text": " Bien.",
+        "start": 1616.0,
+        "end": 1617.0
+    },
+    {
+        "text": " ¿Pas preguntas?",
+        "start": 1618.0,
+        "end": 1619.0
+    },
+    {
+        "text": " Para manejar surgiendo.",
+        "start": 1620.0,
+        "end": 1622.0
+    },
+    {
+        "text": " Bueno, acá.",
+        "start": 1623.0,
+        "end": 1625.0
+    },
+    {
+        "text": " Núen en realidad es un procedimiento.",
+        "start": 1628.0,
+        "end": 1630.0
+    },
+    {
+        "text": " Al igual que Rihruide es un procedimiento predefinido.",
+        "start": 1631.0,
+        "end": 1634.0
+    },
+    {
+        "text": " Yo muchas veces les digo instrucciones pero formalmente hablando son procedimientos.",
+        "start": 1635.0,
+        "end": 1639.0
+    },
+    {
+        "text": " Entonces, cuando yo llamo a Nú, le paso como parámetro un puntero.",
+        "start": 1640.0,
+        "end": 1648.0
+    },
+    {
+        "text": " PTR tiene que ser una variable de tipo puntero a alguna cosa.",
+        "start": 1650.0,
+        "end": 1655.0
+    },
+    {
+        "text": " O sea, Nú se aplica únicamente a variables de tipo puntero.",
+        "start": 1656.0,
+        "end": 1661.0
+    },
+    {
+        "text": " El efecto de Nú es el siguiente.",
+        "start": 1663.0,
+        "end": 1666.0
+    },
+    {
+        "text": " Se crea un nuevo espacio de memoria para guardar algo de tipo T.",
+        "start": 1667.0,
+        "end": 1672.0
+    },
+    {
+        "text": " Pazcal sabe que si es un integer, necesitará reservar tantos bytes en memoria para un integer.",
+        "start": 1674.0,
+        "end": 1680.0
+    },
+    {
+        "text": " Pazcal sabe que si es un real, necesitará almacenar, reservar perdón tanto, espacio en memoria como va falta para un real.",
+        "start": 1681.0,
+        "end": 1689.0
+    },
+    {
+        "text": " De eso se encarga año.",
+        "start": 1690.0,
+        "end": 1691.0
+    },
+    {
+        "text": " Y lo que se guarda en el puntero es la dirección de memoria del espacio que acaba de hacer en algún sentido.",
+        "start": 1692.0,
+        "end": 1701.0
+    },
+    {
+        "text": " Imaginemos que dentro de algún procedimiento, alguna función o el programa principal, yo hago lo siguiente.",
+        "start": 1703.0,
+        "end": 1710.0
+    },
+    {
+        "text": " Nú PTR1.",
+        "start": 1715.0,
+        "end": 1717.0
+    },
+    {
+        "text": " Es más, vamos a imaginarnos que esta franja que tenemos acá representa la memoria de la máquina.",
+        "start": 1718.0,
+        "end": 1727.0
+    },
+    {
+        "text": " Por lo menos una opción de la memoria de mi programa.",
+        "start": 1728.0,
+        "end": 1731.0
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 1732.0,
+        "end": 1733.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1736.0,
+        "end": 1737.0
+    },
+    {
+        "text": " Mi memoria es una franja larga donde se van ubicando las distintas variables y las pasiones de memoria de libro.",
+        "start": 1738.0,
+        "end": 1745.0
+    },
+    {
+        "text": " Y por detrás se maneja algunas esquemas de direcciones de memoria.",
+        "start": 1747.0,
+        "end": 1750.0
+    },
+    {
+        "text": " Entonces, la memoria viene desde algún lugar y continúa",
+        "start": 1753.0,
+        "end": 1760.0
+    },
+    {
+        "text": " hacia algún otro lugar.",
+        "start": 1761.0,
+        "end": 1763.0
+    },
+    {
+        "text": " Cuando mi programa se puso a ejecutar, se dijo bueno, este sector de direcciones de memoria se va a utilizar para este programa que está en ejecución.",
+        "start": 1765.0,
+        "end": 1772.0
+    },
+    {
+        "text": " Ahí se entran en cuestión en escena, cuestiones del diálogo entre el programa y el sistema operativo.",
+        "start": 1773.0,
+        "end": 1779.0
+    },
+    {
+        "text": " Yo declaro PTR1.",
+        "start": 1783.0,
+        "end": 1784.0
+    },
+    {
+        "text": " PTR1 es una variable, entonces PTR1 va a ocupar algún lugar de la memoria y tiene nombre en la variante.",
+        "start": 1785.0,
+        "end": 1795.0
+    },
+    {
+        "text": " Se llama PTR1.",
+        "start": 1796.0,
+        "end": 1798.0
+    },
+    {
+        "text": " Al momento de declararla acá está, ¿qué contiene?",
+        "start": 1800.0,
+        "end": 1803.0
+    },
+    {
+        "text": " Por ahora contiene basura.",
+        "start": 1805.0,
+        "end": 1807.0
+    },
+    {
+        "text": " O sea, al momento de la declaración contiene un valor indefinito.",
+        "start": 1810.0,
+        "end": 1813.0
+    },
+    {
+        "text": " Y acá se ejecuta la instrucción nío y lo que ocurre en este momento es lo siguiente.",
+        "start": 1814.0,
+        "end": 1821.0
+    },
+    {
+        "text": " Mediante alguna política de memoria que está por detrás y es debajo nivel, se destina este espacio de memoria para guardar algo de tipo intayar.",
+        "start": 1823.0,
+        "end": 1839.0
+    },
+    {
+        "text": " ¿Por qué? ¿Por qué PTR1 se había declarado como puntero a intayar?",
+        "start": 1840.0,
+        "end": 1844.0
+    },
+    {
+        "text": " Este sector de memoria está en un lugar de la memoria que ya direcciones voy a inventar 12A.",
+        "start": 1846.0,
+        "end": 1853.0
+    },
+    {
+        "text": " Esto es una dirección de memoria.",
+        "start": 1857.0,
+        "end": 1859.0
+    },
+    {
+        "text": " Yo no sé si tienen números o tienen letras, no me importa. Estoy imaginando que estoy arriba de una máquina donde una dirección de memoria es esto.",
+        "start": 1860.0,
+        "end": 1866.0
+    },
+    {
+        "text": " ¿Por qué se asignó este espacio de memoria y no otro? No lo sincumbe.",
+        "start": 1867.0,
+        "end": 1872.0
+    },
+    {
+        "text": " Eso es parte del diálogo entre el programa y el sistema operativo. Se manejan entre ellos.",
+        "start": 1873.0,
+        "end": 1877.0
+    },
+    {
+        "text": " Los hierbas que a mí me acaban de dar un espacio de memoria de tipo intayar.",
+        "start": 1878.0,
+        "end": 1882.0
+    },
+    {
+        "text": " Y al ejecutar señú pasan dos cosas. Apareció este espacio y lo que quedó almacenado acá que es.",
+        "start": 1884.0,
+        "end": 1891.0
+    },
+    {
+        "text": " Vasúra no, al ejecutar señú quedó almacenado el valor 12A.",
+        "start": 1892.0,
+        "end": 1897.0
+    },
+    {
+        "text": " Es decir, el contenido de la variable PTR1 es la dirección de este otro espacio de memoria.",
+        "start": 1898.0,
+        "end": 1905.0
+    },
+    {
+        "text": " Y adentro de este otro espacio de memoria luego va a ir algo de tipo intayar.",
+        "start": 1907.0,
+        "end": 1912.0
+    },
+    {
+        "text": " ¿Cas está acá? Enseída.",
+        "start": 1914.0,
+        "end": 1916.0
+    },
+    {
+        "text": " Podrías pensar que un puntero es un papelito donde vos tenés sanotada la dirección de una puerta.",
+        "start": 1917.0,
+        "end": 1924.0
+    },
+    {
+        "text": " Esa puerta contiene algo de un determinado tipo de datos.",
+        "start": 1925.0,
+        "end": 1930.0
+    },
+    {
+        "text": " El puntero es un papel donde está notada la dirección de esa puerta.",
+        "start": 1931.0,
+        "end": 1936.0
+    },
+    {
+        "text": " ¿Qué me vas a preguntar?",
+        "start": 1938.0,
+        "end": 1939.0
+    },
+    {
+        "text": " Este espacio de memoria va a ser de tipo intayar.",
+        "start": 1939.0,
+        "end": 1944.0
+    },
+    {
+        "text": " Es lo mismo hecho con otras palabras.",
+        "start": 1947.0,
+        "end": 1951.0
+    },
+    {
+        "text": " Es lo mismo con otras palabras.",
+        "start": 1952.0,
+        "end": 1954.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1955.0,
+        "end": 1956.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1957.0,
+        "end": 1959.0
+    },
+    {
+        "text": " Claro, es que el puntero en sí es una variable.",
+        "start": 1963.0,
+        "end": 1968.0
+    },
+    {
+        "text": " El puntero también ocupa en la memoria.",
+        "start": 1969.0,
+        "end": 1972.0
+    },
+    {
+        "text": " Solo que su contenido es la dirección de este otro lugar.",
+        "start": 1973.0,
+        "end": 1976.0
+    },
+    {
+        "text": " En este momento tenemos dos lugares ocupados en memoria. La variable PTR1 y este espacio que acaba de aparecer.",
+        "start": 1978.0,
+        "end": 1985.0
+    },
+    {
+        "text": " Este espacio es de tipo... no.",
+        "start": 1989.0,
+        "end": 1993.0
+    },
+    {
+        "text": " Es de tipo... intayar.",
+        "start": 1995.0,
+        "end": 1998.0
+    },
+    {
+        "text": " PTR1 es una variable de tipo puntero.",
+        "start": 1999.0,
+        "end": 2003.0
+    },
+    {
+        "text": " Contiene la dirección de otro lugar de tipo intayar.",
+        "start": 2004.0,
+        "end": 2007.0
+    },
+    {
+        "text": " ¿A bien?",
+        "start": 2010.0,
+        "end": 2011.0
+    },
+    {
+        "text": " Vamos a estinarle el tiempo que ha faltado esto porque es fundamental para entender el concepto de puntero.",
+        "start": 2013.0,
+        "end": 2017.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2018.0,
+        "end": 2019.0
+    },
+    {
+        "text": " No. Cuando yo declaré la variable PTR1, se reservó este.",
+        "start": 2020.0,
+        "end": 2026.0
+    },
+    {
+        "text": " Como se reserva cuando tú declaras cualquier variable, este es un espacio de memoria no diámico.",
+        "start": 2026.0,
+        "end": 2033.0
+    },
+    {
+        "text": " Es una variable común, incorriente, tiene un nombre.",
+        "start": 2034.0,
+        "end": 2037.0
+    },
+    {
+        "text": " Este espacio ya se sabía que iba a estar cuando el programa se compiló.",
+        "start": 2038.0,
+        "end": 2043.0
+    },
+    {
+        "text": " Ahora, este otro es el que apareció durante la ejecución.",
+        "start": 2044.0,
+        "end": 2049.0
+    },
+    {
+        "text": " En tiempo de ejecución se ejecutó esta instrucción que hizo dos cosas.",
+        "start": 2050.0,
+        "end": 2054.0
+    },
+    {
+        "text": " Generó este espacio de memoria, el programa dialogó con el sistema operativo y dijeron,",
+        "start": 2054.0,
+        "end": 2060.0
+    },
+    {
+        "text": " te doy este lugar nuevo en la memoria, lugar dinámico.",
+        "start": 2061.0,
+        "end": 2065.0
+    },
+    {
+        "text": " Y la dirección de este espacio se almacenó en el puntero.",
+        "start": 2066.0,
+        "end": 2070.0
+    },
+    {
+        "text": " Si entienden esto, entienden lo que es un puntero.",
+        "start": 2073.0,
+        "end": 2075.0
+    },
+    {
+        "text": " Hay dos espacios de memoria, el puntero que es una variable común y el espacio que fue creado en forma dinámica.",
+        "start": 2076.0,
+        "end": 2082.0
+    },
+    {
+        "text": " ¿A bien? Sí.",
+        "start": 2085.0,
+        "end": 2086.0
+    },
+    {
+        "text": " Ejecución impredecible, se te rompe, esta cover flow, se te satura la memoria, se prende fuego el mundo.",
+        "start": 2096.0,
+        "end": 2102.0
+    },
+    {
+        "text": " Exacto, el sistema operativo en algún momento puede decir para este proceso está consumiendo demasiado recursos, lo mato.",
+        "start": 2108.0,
+        "end": 2113.0
+    },
+    {
+        "text": " Probablemente no lo permite.",
+        "start": 2115.0,
+        "end": 2117.0
+    },
+    {
+        "text": " Probablemente no lo permite. Depende también de qué tan robusto se el sistema operativo.",
+        "start": 2118.0,
+        "end": 2122.0
+    },
+    {
+        "text": " Hasta acá. Bien.",
+        "start": 2125.0,
+        "end": 2127.0
+    },
+    {
+        "text": " Se acaba de asignar, de colocar mejor dicho porque no fue una asignación, lo que hicimos una dirección de memoria.",
+        "start": 2129.0,
+        "end": 2135.0
+    },
+    {
+        "text": " Y acá hay que ir.",
+        "start": 2136.0,
+        "end": 2137.0
+    },
+    {
+        "text": " Acá hay basura de tipo ingreyer.",
+        "start": 2138.0,
+        "end": 2140.0
+    },
+    {
+        "text": " Esto está indefinido, el puntero no, ahora el puntero quedó referenciando a este lugar, pero en este lugar todavía no hemos colocado nada.",
+        "start": 2141.0,
+        "end": 2147.0
+    },
+    {
+        "text": " Eso va a venir con el operador de referenciación.",
+        "start": 2148.0,
+        "end": 2150.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2152.0,
+        "end": 2153.0
+    },
+    {
+        "text": " ¿Por el tipo de la variable?",
+        "start": 2156.0,
+        "end": 2158.0
+    },
+    {
+        "text": " Acá, por el tipo de la variable, es un puntero algo de tipo ingreyer.",
+        "start": 2159.0,
+        "end": 2164.0
+    },
+    {
+        "text": " O sea, es un valor indefinido.",
+        "start": 2165.0,
+        "end": 2167.0
+    },
+    {
+        "text": " Que el espacio de memoria sea de tipo íntegia, me está diciendo que cuando yo coloco el valor tiene que ser un íntegia.",
+        "start": 2168.0,
+        "end": 2174.0
+    },
+    {
+        "text": " Mientras tanto tiene basura como cualquier variable que puede tener basura.",
+        "start": 2175.0,
+        "end": 2178.0
+    },
+    {
+        "text": " Lo decir basura de tipo íntegia es una manera de decir. Es basura. Es indefinido punto.",
+        "start": 2179.0,
+        "end": 2185.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2187.0,
+        "end": 2188.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2189.0,
+        "end": 2190.0
+    },
+    {
+        "text": " Ahora bien, en esta representación gráfica que sí.",
+        "start": 2191.0,
+        "end": 2194.0
+    },
+    {
+        "text": " Cuando vos asesnú Peter R1, sí, el programa dialoga con el sistema operativo, se otorga este espacio de memoria que tiene esta dirección y esta dirección es guardada en el puntero.",
+        "start": 2197.0,
+        "end": 2208.0
+    },
+    {
+        "text": " Todo esto ocurre cuando se ejecuta.",
+        "start": 2209.0,
+        "end": 2210.0
+    },
+    {
+        "text": " Error de compilación. Si asesnú de algo que no está declarador, or de compilación.",
+        "start": 2215.0,
+        "end": 2219.0
+    },
+    {
+        "text": " ¿Y de cual es la? Sí.",
+        "start": 2221.0,
+        "end": 2222.0
+    },
+    {
+        "text": " Esa luego.",
+        "start": 2224.0,
+        "end": 2225.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2227.0,
+        "end": 2228.0
+    },
+    {
+        "text": " New es un procedimiento predefinido como es RID or RIDE.",
+        "start": 2230.0,
+        "end": 2233.0
+    },
+    {
+        "text": " Es el nombre de un procedimiento predefinido.",
+        "start": 2237.0,
+        "end": 2240.0
+    },
+    {
+        "text": " No.",
+        "start": 2242.0,
+        "end": 2243.0
+    },
+    {
+        "text": " No puedes crear una variable llamada New de la misma manera que no podías crear una variable llamada RID.",
+        "start": 2244.0,
+        "end": 2248.0
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 2251.0,
+        "end": 2252.0
+    },
+    {
+        "text": " Son nombres de procedimientos predefinidos, ya están utilizados esos nombres, no se puedan utilizar.",
+        "start": 2253.0,
+        "end": 2259.0
+    },
+    {
+        "text": " Ahora en seguida vamos a inicializar este.",
+        "start": 2264.0,
+        "end": 2267.0
+    },
+    {
+        "text": " Este ya quedó inicializado. Me falté inicializar este otro.",
+        "start": 2268.0,
+        "end": 2271.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2272.0,
+        "end": 2273.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2275.0,
+        "end": 2276.0
+    },
+    {
+        "text": " Este tipo de tipo de...",
+        "start": 2276.0,
+        "end": 2278.0
+    },
+    {
+        "text": " Este tipo intesar del tipo que aparecía en la declaración del puntero.",
+        "start": 2279.0,
+        "end": 2282.0
+    },
+    {
+        "text": " El programa dialoga con el sistema operativo y sabe cuánto espacio tiene que reservar para que quepa un intesar.",
+        "start": 2285.0,
+        "end": 2290.0
+    },
+    {
+        "text": " Esto se puede colocar en cualquier lugar de Pascal donde puede ser una destrucción.",
+        "start": 2297.0,
+        "end": 2300.0
+    },
+    {
+        "text": " En el programa principal o dentro de un procedimiento o donde sea.",
+        "start": 2302.0,
+        "end": 2304.0
+    },
+    {
+        "text": " ¿Pero el espacio no puede ser más o menos?",
+        "start": 2306.0,
+        "end": 2308.0
+    },
+    {
+        "text": " No.",
+        "start": 2308.0,
+        "end": 2309.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2312.0,
+        "end": 2313.0
+    },
+    {
+        "text": " En Pascal vos llamás a New.",
+        "start": 2313.0,
+        "end": 2315.0
+    },
+    {
+        "text": " Sí, el programa establece una comunicación con el sistema operativo, resuelve en darte esto y te colocaron la cala de dirección.",
+        "start": 2315.0,
+        "end": 2323.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2324.0,
+        "end": 2325.0
+    },
+    {
+        "text": " Esta dirección la puedo mostrar en pantalla.",
+        "start": 2326.0,
+        "end": 2328.0
+    },
+    {
+        "text": " Yo como programador en realidad nunca voy a saber por lo menos en Pascal en otros lenguajes, sí.",
+        "start": 2329.0,
+        "end": 2335.0
+    },
+    {
+        "text": " Nunca voy a saber cuál es la dirección real que está más en la acá.",
+        "start": 2335.0,
+        "end": 2338.0
+    },
+    {
+        "text": " Y la buena noticia es que tampoco me interesa conocerla.",
+        "start": 2340.0,
+        "end": 2342.0
+    },
+    {
+        "text": " A mí lo único que me alcanza es saber que dentro del puntero está en la dirección de este otro espacio.",
+        "start": 2344.0,
+        "end": 2349.0
+    },
+    {
+        "text": " Que el puntero me va a permitir el acceso a ese otro espacio.",
+        "start": 2350.0,
+        "end": 2353.0
+    },
+    {
+        "text": " Por estas razones que no vamos a representar los punteros de esta manera si no de esta otra.",
+        "start": 2356.0,
+        "end": 2362.0
+    },
+    {
+        "text": " Esta es la representación gráfica que vamos a utilizar.",
+        "start": 2365.0,
+        "end": 2368.0
+    },
+    {
+        "text": " Yo voy a declarar el puntero.",
+        "start": 2369.0,
+        "end": 2371.0
+    },
+    {
+        "text": " Cuando se ejecuta a New va a aparecer un espacio de memoria de tipo Integer, que mejor dicho va a servir para almacenar algo de tipo Integer.",
+        "start": 2373.0,
+        "end": 2384.0
+    },
+    {
+        "text": " Y lo que se guarda en el puntero dijimos es la dirección de este espacio.",
+        "start": 2385.0,
+        "end": 2389.0
+    },
+    {
+        "text": " Pero yo la dirección real de nuevo yo no la conozco desde el programa, no la conozco y tampoco me interesa.",
+        "start": 2390.0,
+        "end": 2396.0
+    },
+    {
+        "text": " Entonces la manera de representar gráficamente eso va a ser la siguiente.",
+        "start": 2397.0,
+        "end": 2401.0
+    },
+    {
+        "text": " Una lecha.",
+        "start": 2402.0,
+        "end": 2403.0
+    },
+    {
+        "text": " Esta flecha significa que lo que está almacenado acá es la dirección de memoria de este otro lugar.",
+        "start": 2405.0,
+        "end": 2413.0
+    },
+    {
+        "text": " El puntero me permite el acceso a ese espacio dinámico de memoria.",
+        "start": 2414.0,
+        "end": 2419.0
+    },
+    {
+        "text": " Y un poco tiene que ver con el nombre porque se le llama puntero, porque el puntero es una variable que en algún sentido te apunta a otro espacio de memoria.",
+        "start": 2421.0,
+        "end": 2429.0
+    },
+    {
+        "text": " Representarlo así o representarlo así es totalmente equivalente.",
+        "start": 2430.0,
+        "end": 2435.0
+    },
+    {
+        "text": " Ahora esta representación es más abstracta que la de arriba, porque...",
+        "start": 2436.0,
+        "end": 2439.0
+    },
+    {
+        "text": " Porque no depende del valor concreto que sea la dirección de memoria.",
+        "start": 2440.0,
+        "end": 2445.0
+    },
+    {
+        "text": " Entonces dibujarlo así o dibujarlo así es exactamente la misma cosa.",
+        "start": 2448.0,
+        "end": 2453.0
+    },
+    {
+        "text": " Solo que de esta manera que estoy diciendo dentro del puntero está la dirección de este otro lugar.",
+        "start": 2454.0,
+        "end": 2461.0
+    },
+    {
+        "text": " Este puntero me permite el acceso a este otro lugar y es todo lo que necesitamos saber.",
+        "start": 2462.0,
+        "end": 2466.0
+    },
+    {
+        "text": " O sea nunca vamos a conocer el valor real de la dirección guardada acá y tampoco lo necesitamos.",
+        "start": 2467.0,
+        "end": 2474.0
+    },
+    {
+        "text": " Vamos a ver después que utilizando el puntero y el operador de de representación yo voy a poder venir acá dentro.",
+        "start": 2477.0,
+        "end": 2483.0
+    },
+    {
+        "text": " Hasta acá?",
+        "start": 2485.0,
+        "end": 2486.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2486.0,
+        "end": 2487.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2487.0,
+        "end": 2488.0
+    },
+    {
+        "text": " Medial de asignación y lo vamos a ver en un ranto.",
+        "start": 2491.0,
+        "end": 2494.0
+    },
+    {
+        "text": " Vos podrías declararte.",
+        "start": 2494.0,
+        "end": 2496.0
+    },
+    {
+        "text": " PTR2 y hacer.",
+        "start": 2496.0,
+        "end": 2497.0
+    },
+    {
+        "text": " A PTR2 le asigno PTR1.",
+        "start": 2497.0,
+        "end": 2499.0
+    },
+    {
+        "text": " Entonces lo que está guardado en PTR1 lo vas a colocar dentro del PTR2.",
+        "start": 2500.0,
+        "end": 2505.0
+    },
+    {
+        "text": " El efecto es que los van a tener la dirección de misma pasión.",
+        "start": 2506.0,
+        "end": 2508.0
+    },
+    {
+        "text": " Pero lo mismo puedo mi tercamillano.",
+        "start": 2513.0,
+        "end": 2515.0
+    },
+    {
+        "text": " Por supuesto.",
+        "start": 2515.0,
+        "end": 2516.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2516.0,
+        "end": 2517.0
+    },
+    {
+        "text": " Viene ahora un ratito.",
+        "start": 2517.0,
+        "end": 2518.0
+    },
+    {
+        "text": " ¿Más preguntas de esto?",
+        "start": 2520.0,
+        "end": 2521.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 2523.0,
+        "end": 2524.0
+    },
+    {
+        "text": " Entonces.",
+        "start": 2525.0,
+        "end": 2526.0
+    },
+    {
+        "text": " Se crea un espacio nuevo para una variable del tipo en cuestión y la dirección de ese espacio se guarda en el puntero y de nuevo.",
+        "start": 2530.0,
+        "end": 2538.0
+    },
+    {
+        "text": " Esta es la representación gráfica que vamos a usar a partir de ahora.",
+        "start": 2538.0,
+        "end": 2542.0
+    },
+    {
+        "text": " Este puntito con esta flechita se acá significa lo que está guardado acá es la dirección de este otro espacio.",
+        "start": 2543.0,
+        "end": 2551.0
+    },
+    {
+        "text": " Y este signo de interrogación que quiere decir que en ese otro espacio hay un valor indefinido.",
+        "start": 2551.0,
+        "end": 2559.0
+    },
+    {
+        "text": " Que es lo mismo que tenemos allá.",
+        "start": 2563.0,
+        "end": 2565.0
+    },
+    {
+        "text": " Solo que ya no le puse el signo de interrogación.",
+        "start": 2565.0,
+        "end": 2567.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2568.0,
+        "end": 2569.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 2570.0,
+        "end": 2571.0
+    },
+    {
+        "text": " Hemos pedido memoria en tiempo de ejecución.",
+        "start": 2572.0,
+        "end": 2575.0
+    },
+    {
+        "text": " En forma dinámica.",
+        "start": 2575.0,
+        "end": 2577.0
+    },
+    {
+        "text": " Vamos a ver ahora en breve cómo podemos acceder desde el puntero a ese lugar.",
+        "start": 2580.0,
+        "end": 2584.0
+    },
+    {
+        "text": " El proceso ejecutado por News de Nomina justamente a asignación dinámica de memoria.",
+        "start": 2586.0,
+        "end": 2592.0
+    },
+    {
+        "text": " Estas acciones se realizan en tiempo de ejecución.",
+        "start": 2593.0,
+        "end": 2596.0
+    },
+    {
+        "text": " En tiempo de ejecución es que aquel espacio que está en rojo fue reservado.",
+        "start": 2596.0,
+        "end": 2601.0
+    },
+    {
+        "text": " No estaba previsto al momento de compilar el programa.",
+        "start": 2602.0,
+        "end": 2605.0
+    },
+    {
+        "text": " Si estaba prevista aquí en el momento de compilar el programa.",
+        "start": 2606.0,
+        "end": 2609.0
+    },
+    {
+        "text": " PTR1.",
+        "start": 2610.0,
+        "end": 2611.0
+    },
+    {
+        "text": " O sea, esta ya se sabía al momento de compilar que se iba a tener.",
+        "start": 2613.0,
+        "end": 2617.0
+    },
+    {
+        "text": " Esta apareció en tiempo de ejecución.",
+        "start": 2617.0,
+        "end": 2619.0
+    },
+    {
+        "text": " La variable creada de tipo 3 queda con un valor inicial indefinido.",
+        "start": 2623.0,
+        "end": 2627.0
+    },
+    {
+        "text": " Acá o acá, donde lo quieran ver, de momento hay basura.",
+        "start": 2627.0,
+        "end": 2632.0
+    },
+    {
+        "text": " Y la variable creada es una variable en algún sentido muy especial porque no tiene nombre.",
+        "start": 2635.0,
+        "end": 2640.0
+    },
+    {
+        "text": " La única manera que yo tengo de acceder a este lugar es desde el puntero.",
+        "start": 2642.0,
+        "end": 2646.0
+    },
+    {
+        "text": " El puntero sí tiene nombre.",
+        "start": 2647.0,
+        "end": 2649.0
+    },
+    {
+        "text": " Pero el espacio dinámico que se acaba de crear no tiene nombre, no tiene identificador.",
+        "start": 2649.0,
+        "end": 2654.0
+    },
+    {
+        "text": " Eso es lo que caracteriza a los espacios de memoria dinámicos.",
+        "start": 2654.0,
+        "end": 2658.0
+    },
+    {
+        "text": " No tiene nombre.",
+        "start": 2658.0,
+        "end": 2659.0
+    },
+    {
+        "text": " Sólo se puede acceder a ellos desde un puntero.",
+        "start": 2660.0,
+        "end": 2663.0
+    },
+    {
+        "text": " No se puede, solamente se comparan por igualdad.",
+        "start": 2668.0,
+        "end": 2671.0
+    },
+    {
+        "text": " Las unidas operaciones definidas son News, vamos a después el Dispose y la comparación por igualdad y la asignación también.",
+        "start": 2671.0,
+        "end": 2678.0
+    },
+    {
+        "text": " Bueno, ¿qué pasa si yo ejecuto News 2 veces sobre dos punteros diferentes?",
+        "start": 2680.0,
+        "end": 2688.0
+    },
+    {
+        "text": " ¿Se van a crear 2 espacios de memoria diferentes?",
+        "start": 2688.0,
+        "end": 2692.0
+    },
+    {
+        "text": " ¿Se parados?",
+        "start": 2692.0,
+        "end": 2694.0
+    },
+    {
+        "text": " PTR1 va a quedar con la dirección del primero de ellos y PTR2 va a quedar con la dirección del segundo.",
+        "start": 2694.0,
+        "end": 2701.0
+    },
+    {
+        "text": " ¿Y para poder acceder a lugar de memoria?",
+        "start": 2701.0,
+        "end": 2708.0
+    },
+    {
+        "text": " ¿Se va a usar el operador de desreferenciación?",
+        "start": 2708.0,
+        "end": 2712.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2712.0,
+        "end": 2713.0
+    },
+    {
+        "text": " Algo feo que lo vamos a charlar después.",
+        "start": 2715.0,
+        "end": 2717.0
+    },
+    {
+        "text": " Memoria que queda inaccesible y no lo vamos a hacer nunca.",
+        "start": 2717.0,
+        "end": 2722.0
+    },
+    {
+        "text": " Jamás.",
+        "start": 2724.0,
+        "end": 2725.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2728.0,
+        "end": 2729.0
+    },
+    {
+        "text": " Bien.",
+        "start": 2730.0,
+        "end": 2731.0
+    },
+    {
+        "text": " Vamos a suponer que a continuación de esta instrucción,",
+        "start": 2732.0,
+        "end": 2735.0
+    },
+    {
+        "text": " nosotros yo lo voy a poner a calado por un tema de espacio normalmente iría abajo.",
+        "start": 2735.0,
+        "end": 2740.0
+    },
+    {
+        "text": " Pongo el puntero pegadito el operador de desreferenciación, el techito de ahora más.",
+        "start": 2744.0,
+        "end": 2752.0
+    },
+    {
+        "text": " Y este lugar se refiere a esto y esto de qué tipo es.",
+        "start": 2754.0,
+        "end": 2758.0
+    },
+    {
+        "text": " Interial.",
+        "start": 2758.0,
+        "end": 2760.0
+    },
+    {
+        "text": " Así, así no un valor de tipo impesano.",
+        "start": 2760.0,
+        "end": 2765.0
+    },
+    {
+        "text": " Desde el puntero, desde el puntero, accedo al lugar de memoria apuntado y allí guardo un 39.",
+        "start": 2767.0,
+        "end": 2777.0
+    },
+    {
+        "text": " O sea, que acá me queda un 39.",
+        "start": 2778.0,
+        "end": 2781.0
+    },
+    {
+        "text": " O, en esta otra representación, acá me queda un 39.",
+        "start": 2782.0,
+        "end": 2787.0
+    },
+    {
+        "text": " Bueno, así.",
+        "start": 2787.0,
+        "end": 2788.0
+    },
+    {
+        "text": " Aquí tiene esta entidad de utilizar el post para eliminar, o sea, para eliminar el salvo de esa parte.",
+        "start": 2790.0,
+        "end": 2797.0
+    },
+    {
+        "text": " Cuando tengas espacios de memoria que no quiere seguir utilizando y no necesitas tenerlos reservados,",
+        "start": 2798.0,
+        "end": 2803.0
+    },
+    {
+        "text": " se lo va a saber de volver a, no sé, el sistema operativo.",
+        "start": 2803.0,
+        "end": 2807.0
+    },
+    {
+        "text": " Aquí en sea que él lo haya prestado por detrás.",
+        "start": 2808.0,
+        "end": 2810.0
+    },
+    {
+        "text": " Entonces, se coloca el puntero, se coloca el techito y eso se refiere a este lugar de memoria.",
+        "start": 2810.0,
+        "end": 2821.0
+    },
+    {
+        "text": " El lugar de memoria que está haciendo apuntado desde el puntero y allí colocó un valor.",
+        "start": 2822.0,
+        "end": 2827.0
+    },
+    {
+        "text": " Esto, por tratarse de este lugar, es de tipo intesiano.",
+        "start": 2828.0,
+        "end": 2833.0
+    },
+    {
+        "text": " Y esto también es de tipo intesiano.",
+        "start": 2834.0,
+        "end": 2836.0
+    },
+    {
+        "text": " Y ahí puedo usar cualquier operador que se puede aplicar sobre algo de tipo intesiano.",
+        "start": 2836.0,
+        "end": 2841.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2847.0,
+        "end": 2848.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2849.0,
+        "end": 2850.0
+    },
+    {
+        "text": " Y esto es de tipo intesiano y aplicarle menor a otra cosa de tipo intesiano, sí.",
+        "start": 2856.0,
+        "end": 2861.0
+    },
+    {
+        "text": " ¿Cómo es intesiano?",
+        "start": 2862.0,
+        "end": 2863.0
+    },
+    {
+        "text": " Es como que tuverás dentro de un récord con un campo de tipo intesiano,",
+        "start": 2864.0,
+        "end": 2868.0
+    },
+    {
+        "text": " ponés al récord punto y el campo accedido de tipo intesiano.",
+        "start": 2868.0,
+        "end": 2871.0
+    },
+    {
+        "text": " O sea, el lugar de memoria referenciado es de tipo intesiano y como tal puede participar en cualquier lugar del programa donde sea ni si lo usará lo de tipo intesiano.",
+        "start": 2872.0,
+        "end": 2881.0
+    },
+    {
+        "text": " Bueno, tanto si es una como si son dos o las que sea.",
+        "start": 2881.0,
+        "end": 2889.0
+    },
+    {
+        "text": " Y es justamente lo que acabamos de decir.",
+        "start": 2896.0,
+        "end": 2898.0
+    },
+    {
+        "text": " La expresión, ptr1 techo, puede ser usada en cualquier parte donde pascal admita una variable del tipo correspondiente.",
+        "start": 2899.0,
+        "end": 2908.0
+    },
+    {
+        "text": " O sea, aquello salgo de tipo intesiano.",
+        "start": 2909.0,
+        "end": 2911.0
+    },
+    {
+        "text": " Se puede usar en cualquier lugar donde pascal admita utilizar algo de tipo intesiano.",
+        "start": 2913.0,
+        "end": 2917.0
+    },
+    {
+        "text": " Por ejemplo, tanto al izquierda como la derecha de una asignación.",
+        "start": 2917.0,
+        "end": 2921.0
+    },
+    {
+        "text": " Fíjense que acá yo del lado izquierdo de una asignación, o sea, esto, que se está refiriendo a este lugar de memoria.",
+        "start": 2922.0,
+        "end": 2929.0
+    },
+    {
+        "text": " Ahora, yo lo podría utilizar del lado derecho también.",
+        "start": 2932.0,
+        "end": 2936.0
+    },
+    {
+        "text": " Vamos a imaginarnos que yo tengo una variable llamada anum de tipo intesiano.",
+        "start": 2938.0,
+        "end": 2945.0
+    },
+    {
+        "text": " Anum es una variable común y corriente.",
+        "start": 2948.0,
+        "end": 2950.0
+    },
+    {
+        "text": " Yo podría hacer esto.",
+        "start": 2951.0,
+        "end": 2953.0
+    },
+    {
+        "text": " Anum le asigno lo que está guardado en ptr1 techo.",
+        "start": 2954.0,
+        "end": 2961.0
+    },
+    {
+        "text": " Aparece a la izquierda del operador de asignación y también a la derecha.",
+        "start": 2962.0,
+        "end": 2965.0
+    },
+    {
+        "text": " Esto que genera que el valor almacinado acá dentro, que es 39, se guarden la variable anum.",
+        "start": 2966.0,
+        "end": 2972.0
+    },
+    {
+        "text": " Y acá está la izquierda.",
+        "start": 2980.0,
+        "end": 2982.0
+    },
+    {
+        "text": " Acazpa la derecha.",
+        "start": 2987.0,
+        "end": 2988.0
+    },
+    {
+        "text": " A la izquierda o la derecha del operador de asignación.",
+        "start": 2990.0,
+        "end": 2992.0
+    },
+    {
+        "text": " Sí, y voy allá.",
+        "start": 2993.0,
+        "end": 2994.0
+    },
+    {
+        "text": " No, ni la pregunta.",
+        "start": 3003.0,
+        "end": 3004.0
+    },
+    {
+        "text": " No, ptr1 vale una dirección de memoria.",
+        "start": 3007.0,
+        "end": 3010.0
+    },
+    {
+        "text": " El lugar apuntado por ptr1 vale 39.",
+        "start": 3011.0,
+        "end": 3014.0
+    },
+    {
+        "text": " Si yo abajo de esto vuelvo a escribir ptr1 techo y le asigno otra cosa sobre escribo.",
+        "start": 3015.0,
+        "end": 3020.0
+    },
+    {
+        "text": " Como pasa siempre.",
+        "start": 3027.0,
+        "end": 3028.0
+    },
+    {
+        "text": " Este espacio se pidió en tiempo de ejecución, no es lo mismo.",
+        "start": 3032.0,
+        "end": 3035.0
+    },
+    {
+        "text": " Este espacio o la variable anum son espacios de memoria no dinámicos.",
+        "start": 3037.0,
+        "end": 3041.0
+    },
+    {
+        "text": " Esto es algo nuevo.",
+        "start": 3042.0,
+        "end": 3044.0
+    },
+    {
+        "text": " Que vamos a ver que tiene uso cuando lleguemos a la parte de listas.",
+        "start": 3045.0,
+        "end": 3048.0
+    },
+    {
+        "text": " ¿Dónde acaba acá?",
+        "start": 3057.0,
+        "end": 3058.0
+    },
+    {
+        "text": " ¿Aca?",
+        "start": 3060.0,
+        "end": 3061.0
+    },
+    {
+        "text": " Ptr1 es una variable que contiene una dirección.",
+        "start": 3062.0,
+        "end": 3065.0
+    },
+    {
+        "text": " Que es la dirección de este otro lugar.",
+        "start": 3067.0,
+        "end": 3068.0
+    },
+    {
+        "text": " Que también es otro espacio de memoria.",
+        "start": 3069.0,
+        "end": 3071.0
+    },
+    {
+        "text": " Sólo que este contiene un intaller.",
+        "start": 3072.0,
+        "end": 3073.0
+    },
+    {
+        "text": " Son de tipos diferentes.",
+        "start": 3074.0,
+        "end": 3075.0
+    },
+    {
+        "text": " Num la variable num ocupará otro lugar de la memoria.",
+        "start": 3079.0,
+        "end": 3082.0
+    },
+    {
+        "text": " Sí, no sé, vamos a ponerlo por acá.",
+        "start": 3084.0,
+        "end": 3086.0
+    },
+    {
+        "text": " Claro, num es una variable más que también vive en memoria.",
+        "start": 3089.0,
+        "end": 3092.0
+    },
+    {
+        "text": " ¿Tá?",
+        "start": 3093.0,
+        "end": 3094.0
+    },
+    {
+        "text": " Num es de tipo intaller.",
+        "start": 3096.0,
+        "end": 3098.0
+    },
+    {
+        "text": " Y yo anum le acabo de asignar esto de acá. ¿Qué es esto de acá?",
+        "start": 3099.0,
+        "end": 3104.0
+    },
+    {
+        "text": " Es esto que está acá.",
+        "start": 3105.0,
+        "end": 3107.0
+    },
+    {
+        "text": " Es un 39 y ese 39 lo acabo de copiar a la variable num.",
+        "start": 3108.0,
+        "end": 3111.0
+    },
+    {
+        "text": " O sea que la variable num me va a quedar también con un 39.",
+        "start": 3112.0,
+        "end": 3115.0
+    },
+    {
+        "text": " A la ser esta asignación tenemos el valor que estaba guardado acá.",
+        "start": 3123.0,
+        "end": 3128.0
+    },
+    {
+        "text": " Lo copié para acá. Tengo acá un 39 y acá también.",
+        "start": 3129.0,
+        "end": 3131.0
+    },
+    {
+        "text": " Dos lugares que tienen un 39.",
+        "start": 3133.0,
+        "end": 3134.0
+    },
+    {
+        "text": " Pero a ver, ¿qué pasa cuando vamos a ir más a lo genérico?",
+        "start": 3142.0,
+        "end": 3146.0
+    },
+    {
+        "text": " ¿Cómo funciona la asignación?",
+        "start": 3148.0,
+        "end": 3149.0
+    },
+    {
+        "text": " Lo que está en vez sea lo que sea, se copie nada.",
+        "start": 3150.0,
+        "end": 3153.0
+    },
+    {
+        "text": " Es lo que acabamos a hacer.",
+        "start": 3154.0,
+        "end": 3155.0
+    },
+    {
+        "text": " No importa si lo de la derecha es un espacio dinámico o no.",
+        "start": 3158.0,
+        "end": 3161.0
+    },
+    {
+        "text": " La asignación funciona como siempre funciona la asignación.",
+        "start": 3162.0,
+        "end": 3165.0
+    },
+    {
+        "text": " Y o por ahí o no.",
+        "start": 3167.0,
+        "end": 3168.0
+    },
+    {
+        "text": " ¿Cuál es el cosa?",
+        "start": 3172.0,
+        "end": 3173.0
+    },
+    {
+        "text": " Alguien más me va a preguntar algo, sí.",
+        "start": 3174.0,
+        "end": 3175.0
+    },
+    {
+        "text": " Copiar valor.",
+        "start": 3176.0,
+        "end": 3177.0
+    },
+    {
+        "text": " Si yo a continuación, bueno, esa fue la primera, esta fue la segunda, esta fue la tercera.",
+        "start": 3180.0,
+        "end": 3186.0
+    },
+    {
+        "text": " Ponéleca, continuación hago esto.",
+        "start": 3187.0,
+        "end": 3188.0
+    },
+    {
+        "text": " Después de que copián un, si acá pongo 40, el que va a cambiar quién va a ser.",
+        "start": 3189.0,
+        "end": 3197.0
+    },
+    {
+        "text": " Este de acá va a dejar de valor 39 y va a pasar a valor 40.",
+        "start": 3200.0,
+        "end": 3205.0
+    },
+    {
+        "text": " Lo mismo acá.",
+        "start": 3207.0,
+        "end": 3208.0
+    },
+    {
+        "text": " Núm, sí, de valiendo el valor que tenía en la asignación anterior.",
+        "start": 3209.0,
+        "end": 3214.0
+    },
+    {
+        "text": " Es más, si yo dibujo acá la variable Núm, la variable Núm va a conservar el valor que se les signó ahí.",
+        "start": 3215.0,
+        "end": 3222.0
+    },
+    {
+        "text": " Para cambiarlo de asignación otra cosa, Núm.",
+        "start": 3228.0,
+        "end": 3230.0
+    },
+    {
+        "text": " Pero no lo es.",
+        "start": 3235.0,
+        "end": 3236.0
+    },
+    {
+        "text": " Si, pero no lo es.",
+        "start": 3237.0,
+        "end": 3239.0
+    },
+    {
+        "text": " Así que no, porque no lo es.",
+        "start": 3240.0,
+        "end": 3242.0
+    },
+    {
+        "text": " No lo es.",
+        "start": 3243.0,
+        "end": 3244.0
+    },
+    {
+        "text": " No sea adelante.",
+        "start": 3245.0,
+        "end": 3246.0
+    },
+    {
+        "text": " Tan pensando en lista, ya, la lista viene luego.",
+        "start": 3247.0,
+        "end": 3249.0
+    },
+    {
+        "text": " Por ella trasmigo la puntalo otra cosa.",
+        "start": 3251.0,
+        "end": 3252.0
+    },
+    {
+        "text": " Lo que ustedes les tiene que carcar, claro, es que esto es de tipo",
+        "start": 3255.0,
+        "end": 3259.0
+    },
+    {
+        "text": " y aplican las reglas usuales de los sintes, ya.",
+        "start": 3261.0,
+        "end": 3264.0
+    },
+    {
+        "text": " Nada más.",
+        "start": 3264.0,
+        "end": 3265.0
+    },
+    {
+        "text": " Que ese espacio haya nacido en tiempo de ejecución,",
+        "start": 3266.0,
+        "end": 3269.0
+    },
+    {
+        "text": " en vez de haber sido declarado como variable, es si se quiera enectótico.",
+        "start": 3270.0,
+        "end": 3273.0
+    },
+    {
+        "text": " Al ser de tipo intesher, aplican sobre él todas las reglas de tipo intesher.",
+        "start": 3275.0,
+        "end": 3280.0
+    },
+    {
+        "text": " Nunca jamás había generado tanto reguelo los pompos de la comunidad.",
+        "start": 3284.0,
+        "end": 3287.0
+    },
+    {
+        "text": " Nunca.",
+        "start": 3288.0,
+        "end": 3289.0
+    },
+    {
+        "text": " Bueno, lo se leo.",
+        "start": 3290.0,
+        "end": 3291.0
+    },
+    {
+        "text": " Entonces, el espacio de memoria apuntado desde el puntero",
+        "start": 3292.0,
+        "end": 3297.0
+    },
+    {
+        "text": " se puede usar tanto a la izquierda como la ha derecho a una asignación como vimos allá.",
+        "start": 3298.0,
+        "end": 3301.0
+    },
+    {
+        "text": " Se puede utilizar también en cualquier expresión.",
+        "start": 3304.0,
+        "end": 3307.0
+    },
+    {
+        "text": " Yo podría hacerlo siguiente.",
+        "start": 3308.0,
+        "end": 3310.0
+    },
+    {
+        "text": " A la variable Núm,",
+        "start": 3313.0,
+        "end": 3314.0
+    },
+    {
+        "text": " yo le puedo asignar",
+        "start": 3316.0,
+        "end": 3318.0
+    },
+    {
+        "text": " lo apuntado por el puntero más dos.",
+        "start": 3318.0,
+        "end": 3324.0
+    },
+    {
+        "text": " ¿Qué es esto?",
+        "start": 3326.0,
+        "end": 3327.0
+    },
+    {
+        "text": " ¿Qué es esto?",
+        "start": 3329.0,
+        "end": 3330.0
+    },
+    {
+        "text": " Una.",
+        "start": 3332.0,
+        "end": 3333.0
+    },
+    {
+        "text": " Una expresión.",
+        "start": 3335.0,
+        "end": 3336.0
+    },
+    {
+        "text": " Esto es una expresión de tipo intesher, donde el primero operando es de tipo intesher,",
+        "start": 3337.0,
+        "end": 3342.0
+    },
+    {
+        "text": " el segundo operando también es de tipo intesher y el resultado de la suma también es de",
+        "start": 3343.0,
+        "end": 3346.0
+    },
+    {
+        "text": " tipo intesher, que se guarda el nun que también es de tipo intesher.",
+        "start": 3346.0,
+        "end": 3351.0
+    },
+    {
+        "text": " O sea, ¿ven que esto está siendo usado dentro de una expresión?",
+        "start": 3352.0,
+        "end": 3357.0
+    },
+    {
+        "text": " ¿Cuánto vale en este momento esto?",
+        "start": 3358.0,
+        "end": 3360.0
+    },
+    {
+        "text": " 40.",
+        "start": 3361.0,
+        "end": 3362.0
+    },
+    {
+        "text": " Le sumo dos.",
+        "start": 3363.0,
+        "end": 3364.0
+    },
+    {
+        "text": " 42.",
+        "start": 3366.0,
+        "end": 3367.0
+    },
+    {
+        "text": " Y el resultado donde lo guardo.",
+        "start": 3368.0,
+        "end": 3369.0
+    },
+    {
+        "text": " En la variable Núm.",
+        "start": 3370.0,
+        "end": 3371.0
+    },
+    {
+        "text": " O sea, ¿qué acá?",
+        "start": 3372.0,
+        "end": 3373.0
+    },
+    {
+        "text": " La variable Núm deja de valer esto y ahora pasa valer esto otro.",
+        "start": 3374.0,
+        "end": 3378.0
+    },
+    {
+        "text": " ¿Por qué se puede usar en la parte izquierda de una asignación?",
+        "start": 3385.0,
+        "end": 3387.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3388.0,
+        "end": 3389.0
+    },
+    {
+        "text": " Puede aparecer en expresiones del tipo de cuadro, en este caso tipo intesher.",
+        "start": 3392.0,
+        "end": 3396.0
+    },
+    {
+        "text": " No, no se puede mostrar en pantalla.",
+        "start": 3399.0,
+        "end": 3401.0
+    },
+    {
+        "text": " Los punteros no se pueden mostrar en pantalla.",
+        "start": 3402.0,
+        "end": 3404.0
+    },
+    {
+        "text": " No se pueden mostrar en pantalla.",
+        "start": 3407.0,
+        "end": 3409.0
+    },
+    {
+        "text": " Los punteros no se pueden mostrar en pantalla.",
+        "start": 3411.0,
+        "end": 3413.0
+    },
+    {
+        "text": " Lo que podemos mostrar en pantalla es esto, el 40 que está apuntado desde acá.",
+        "start": 3414.0,
+        "end": 3419.0
+    },
+    {
+        "text": " Pero la dirección guardada acá que en este dibujo era 12 a b,",
+        "start": 3420.0,
+        "end": 3424.0
+    },
+    {
+        "text": " no se puede mostrar en pantalla.",
+        "start": 3425.0,
+        "end": 3426.0
+    },
+    {
+        "text": " El contenido de un puntero no se puede mostrar en pantalla.",
+        "start": 3427.0,
+        "end": 3431.0
+    },
+    {
+        "text": " Sí, del 40 así.",
+        "start": 3434.0,
+        "end": 3436.0
+    },
+    {
+        "text": " Pero eso no es el puntero, es el contenido del lugar apuntado por el puntero.",
+        "start": 3437.0,
+        "end": 3442.0
+    },
+    {
+        "text": " ¿Qué es el en el chico?",
+        "start": 3443.0,
+        "end": 3445.0
+    },
+    {
+        "text": " Esa sí tiene que tener techito, exacto.",
+        "start": 3445.0,
+        "end": 3447.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3448.0,
+        "end": 3449.0
+    },
+    {
+        "text": " Sí, sí, está bien.",
+        "start": 3452.0,
+        "end": 3453.0
+    },
+    {
+        "text": " En este ejemplo era peta 1, exacto.",
+        "start": 3453.0,
+        "end": 3456.0
+    },
+    {
+        "text": " La variable espeta es 1.",
+        "start": 3456.0,
+        "end": 3458.0
+    },
+    {
+        "text": " ¿Más preguntas?",
+        "start": 3460.0,
+        "end": 3461.0
+    },
+    {
+        "text": " Dios.",
+        "start": 3463.0,
+        "end": 3464.0
+    },
+    {
+        "text": " Se pueden pasar como parámetros tanto por valor como por referencia.",
+        "start": 3466.0,
+        "end": 3470.0
+    },
+    {
+        "text": " Si yo tengo un procedimiento que recibe algo de tipo intesher,",
+        "start": 3472.0,
+        "end": 3475.0
+    },
+    {
+        "text": " no importa si es por valor o es por referencia,",
+        "start": 3476.0,
+        "end": 3478.0
+    },
+    {
+        "text": " yo le puedo pasar al invocarlo esto.",
+        "start": 3479.0,
+        "end": 3481.0
+    },
+    {
+        "text": " Por ejemplo, imaginemos que yo hice un procedimiento que se llama Mi PROC.",
+        "start": 3483.0,
+        "end": 3488.0
+    },
+    {
+        "text": " Y a mi PROC, en el encabezado del procedimiento,",
+        "start": 3489.0,
+        "end": 3493.0
+    },
+    {
+        "text": " yo le puse un parámetro nominal de tipo intesher.",
+        "start": 3493.0,
+        "end": 3496.0
+    },
+    {
+        "text": " Bueno, yo le puedo pasar esto en la invocación.",
+        "start": 3498.0,
+        "end": 3501.0
+    },
+    {
+        "text": " ¿Por qué esto de qué tipo es?",
+        "start": 3504.0,
+        "end": 3505.0
+    },
+    {
+        "text": " De tipo intesher.",
+        "start": 3507.0,
+        "end": 3508.0
+    },
+    {
+        "text": " Seguramente, en el encabezado,",
+        "start": 3509.0,
+        "end": 3513.0
+    },
+    {
+        "text": " mi procedimiento sea una cosa así.",
+        "start": 3514.0,
+        "end": 3516.0
+    },
+    {
+        "text": " Recibe como parámetro num de tipo intesher o el nombre que queramos.",
+        "start": 3522.0,
+        "end": 3527.0
+    },
+    {
+        "text": " Esto es el parámetro nominal que es de tipo intesher.",
+        "start": 3530.0,
+        "end": 3533.0
+    },
+    {
+        "text": " Al momento de la ejecución que le estoy pasando,",
+        "start": 3534.0,
+        "end": 3536.0
+    },
+    {
+        "text": " un parámetro efectivo que es de tipo intesher.",
+        "start": 3537.0,
+        "end": 3541.0
+    },
+    {
+        "text": " ¿Por qué me recordemos?",
+        "start": 3542.0,
+        "end": 3543.0
+    },
+    {
+        "text": " Esto es un puntero.",
+        "start": 3544.0,
+        "end": 3547.0
+    },
+    {
+        "text": " Ahora, todo esto que es,",
+        "start": 3548.0,
+        "end": 3551.0
+    },
+    {
+        "text": " es lo que está guardado en la dirección apuntada desde el puntero y de qué tipo es.",
+        "start": 3553.0,
+        "end": 3558.0
+    },
+    {
+        "text": " De tipo intesher, que es del mismo tipo que lo que está en el encabezado.",
+        "start": 3559.0,
+        "end": 3564.0
+    },
+    {
+        "text": " Tanto si es por valor,",
+        "start": 3566.0,
+        "end": 3568.0
+    },
+    {
+        "text": " ¿cómo si es por referencia?",
+        "start": 3569.0,
+        "end": 3571.0
+    },
+    {
+        "text": " Si es por referencia, yo voy a poder dentro del procedimiento modificar esto",
+        "start": 3573.0,
+        "end": 3579.0
+    },
+    {
+        "text": " y si es por valor estaré generando una copia.",
+        "start": 3581.0,
+        "end": 3583.0
+    },
+    {
+        "text": " No, esto es cuando lo pasas en la invocación.",
+        "start": 3588.0,
+        "end": 3591.0
+    },
+    {
+        "text": " En el encabezado, un procedimiento tú te seguís declarando los parámetros de manera normal.",
+        "start": 3591.0,
+        "end": 3596.0
+    },
+    {
+        "text": " Por valor o por referencia, así.",
+        "start": 3598.0,
+        "end": 3600.0
+    },
+    {
+        "text": " No te voy a combinar.",
+        "start": 3604.0,
+        "end": 3605.0
+    },
+    {
+        "text": " ¿Vas preguntas?",
+        "start": 3610.0,
+        "end": 3611.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3611.0,
+        "end": 3612.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3612.0,
+        "end": 3613.0
+    },
+    {
+        "text": " En el procedimiento tú no le podías este sitio de eso.",
+        "start": 3613.0,
+        "end": 3617.0
+    },
+    {
+        "text": " Si acá en el encabezado del procedimiento puedo poner el pechito, respuesta no compida.",
+        "start": 3618.0,
+        "end": 3623.0
+    },
+    {
+        "text": " Y poder poner en el encabezado de un procedimiento a ver que un peor no era lugar donde estaba.",
+        "start": 3624.0,
+        "end": 3635.0
+    },
+    {
+        "text": " ¿Cuál es la pregunta?",
+        "start": 3636.0,
+        "end": 3639.0
+    },
+    {
+        "text": " ¿La pregunta es, ¿puedes ser que a mí son un misterio o un ciencetito?",
+        "start": 3639.0,
+        "end": 3643.0
+    },
+    {
+        "text": " En ese caso, el parámetro tendría que ser de tipo Pterreín.",
+        "start": 3644.0,
+        "end": 3647.0
+    },
+    {
+        "text": " Sí, pero te pueden.",
+        "start": 3648.0,
+        "end": 3649.0
+    },
+    {
+        "text": " Siempre que tú hagas una invocación en procedimiento, lo que tú pasas tiene que ser un tipo compatible con el del encabezado.",
+        "start": 3650.0,
+        "end": 3655.0
+    },
+    {
+        "text": " A la pregunta de puedo tener parámetros de tipo puntero, sí.",
+        "start": 3656.0,
+        "end": 3659.0
+    },
+    {
+        "text": " Pero se declaran como acá, algo con un identificador de tipo Pterreín.",
+        "start": 3660.0,
+        "end": 3665.0
+    },
+    {
+        "text": " Luego en la invocación le podrás pasar Pterreón.",
+        "start": 3666.0,
+        "end": 3669.0
+    },
+    {
+        "text": " Sí.",
+        "start": 3669.0,
+        "end": 3670.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3670.0,
+        "end": 3671.0
+    },
+    {
+        "text": " ¿Alguna más?",
+        "start": 3672.0,
+        "end": 3673.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3679.0,
+        "end": 3680.0
+    },
+    {
+        "text": " La expresión Pterre techo produce un error si Pterre no fue inicializado.",
+        "start": 3683.0,
+        "end": 3690.0
+    },
+    {
+        "text": " Es decir, si yo no hice niú, que es lo que no ocurrió, no se creó el espacio dinámico de memoria,",
+        "start": 3691.0,
+        "end": 3702.0
+    },
+    {
+        "text": " y si no lo creé y luego vengo y quiero hacer esta asignación, error de que tipo de ejecución,",
+        "start": 3703.0,
+        "end": 3712.0
+    },
+    {
+        "text": " porque sintácticamente esta asignación no tiene ningún problema.",
+        "start": 3713.0,
+        "end": 3716.0
+    },
+    {
+        "text": " El problema es que el espacio de memoria, el cual estoy queriendo acceder, no fue debidamente reservado.",
+        "start": 3716.0,
+        "end": 3722.0
+    },
+    {
+        "text": " El programa se torna impredecible, lo que caniñosamente decimos, ser rompente en poda ejecución.",
+        "start": 3723.0,
+        "end": 3729.0
+    },
+    {
+        "text": " Por eso es fundamental, siempre es fundamental inicializar adecuadamente una variable, y si es un puntero también.",
+        "start": 3733.0,
+        "end": 3741.0
+    },
+    {
+        "text": " Una variable puntero se puede inicializar, ya sea usando niú, como hicimos ahí, o mediante asignación como vamos a ver en un ratito.",
+        "start": 3746.0,
+        "end": 3757.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3761.0,
+        "end": 3762.0
+    },
+    {
+        "text": " Bien.",
+        "start": 3764.0,
+        "end": 3765.0
+    },
+    {
+        "text": " Bueno, tenemos estas declaraciones, vamos a ejecutar este fragmento de programa.",
+        "start": 3765.0,
+        "end": 3778.0
+    },
+    {
+        "text": " Voy a borrar estas declaraciones acá.",
+        "start": 3780.0,
+        "end": 3782.0
+    },
+    {
+        "text": " Bueno, definimos un tipo llamado PTRNUM, que es puntero a impeyer.",
+        "start": 3782.0,
+        "end": 3803.0
+    },
+    {
+        "text": " Declaramos dos variables de tipo PTRNUM, y yo a partir de ahora no voy a usar más esta representación sino esta, la de flechas.",
+        "start": 3803.0,
+        "end": 3816.0
+    },
+    {
+        "text": " Entonces, declaro las dos variables.",
+        "start": 3818.0,
+        "end": 3821.0
+    },
+    {
+        "text": " PTRNUM y PTRN2. Al momento de su declaración que contienen, basura valorinde finido.",
+        "start": 3821.0,
+        "end": 3836.0
+    },
+    {
+        "text": " Las siguientes instrucciones son vayas, o sea, compila ni ejecuta también.",
+        "start": 3836.0,
+        "end": 3845.0
+    },
+    {
+        "text": " NUPTR1, ¿qué va a ocurrir?",
+        "start": 3845.0,
+        "end": 3848.0
+    },
+    {
+        "text": " Aparece, se crea, se materializa, se reserva, surge en tiempo de ejecución, un espacio de memoria dinámico.",
+        "start": 3850.0,
+        "end": 3862.0
+    },
+    {
+        "text": " ¿Y qué queda guardado acá?",
+        "start": 3863.0,
+        "end": 3865.0
+    },
+    {
+        "text": " La dirección de ese espacio, o sea, el puntero me apunta ese espacio.",
+        "start": 3865.0,
+        "end": 3871.0
+    },
+    {
+        "text": " Este en este momento tras ejecutarse el Nu que contiene, basura.",
+        "start": 3871.0,
+        "end": 3877.0
+    },
+    {
+        "text": " Hacemos aparte NUPTR2, ¿qué va a pasar?",
+        "start": 3877.0,
+        "end": 3882.0
+    },
+    {
+        "text": " Se va a generar otro espacio diferente y PTR2 va a quedar con la dirección de ese otro espacio.",
+        "start": 3882.0,
+        "end": 3890.0
+    },
+    {
+        "text": " Y este también contiene basura, los dos están invenidos.",
+        "start": 3890.0,
+        "end": 3896.0
+    },
+    {
+        "text": " Hasta acá, desde el puntero PTR1 accedemos mediante techo a este lugar.",
+        "start": 3896.0,
+        "end": 3907.0
+    },
+    {
+        "text": " Y ahí colocamos 12.",
+        "start": 3907.0,
+        "end": 3912.0
+    },
+    {
+        "text": " Está bien.",
+        "start": 3913.0,
+        "end": 3916.0
+    },
+    {
+        "text": " Ahora esta otra asignación, como siempre de derecha izquierda.",
+        "start": 3917.0,
+        "end": 3922.0
+    },
+    {
+        "text": " El lugar de memoria apuntado por PTR1, es decir, esto, vale 12.",
+        "start": 3922.0,
+        "end": 3929.0
+    },
+    {
+        "text": " A ese 12 le sumamos 4, nos da 16.",
+        "start": 3929.0,
+        "end": 3934.0
+    },
+    {
+        "text": " Y ese 16, donde lo vamos a guardar.",
+        "start": 3934.0,
+        "end": 3938.0
+    },
+    {
+        "text": " En el lugar de memoria apuntado de este PTR2, o sea que desde PTR2 seguimos la flecha, eso es el techo.",
+        "start": 3939.0,
+        "end": 3948.0
+    },
+    {
+        "text": " Y acá colocamos el resultado.",
+        "start": 3948.0,
+        "end": 3952.0
+    },
+    {
+        "text": " 16.",
+        "start": 3952.0,
+        "end": 3955.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3957.0,
+        "end": 3960.0
+    },
+    {
+        "text": " Veamos esta rideline.",
+        "start": 3962.0,
+        "end": 3964.0
+    },
+    {
+        "text": " Esto sí compila y ejecuta.",
+        "start": 3965.0,
+        "end": 3967.0
+    },
+    {
+        "text": " Lo que no compilaría sería no ponerle el techo, porque si no le pongo el techo que estaría queriendo leer.",
+        "start": 3967.0,
+        "end": 3974.0
+    },
+    {
+        "text": " Una dirección.",
+        "start": 3974.0,
+        "end": 3977.0
+    },
+    {
+        "text": " Pero al ponerle el techo, estoy queriendo leer algo para almacenar en el lugar de memoria apuntado por PTR1, que es el que en este momento tiene 12.",
+        "start": 3977.0,
+        "end": 3988.0
+    },
+    {
+        "text": " Entonces para ese lugar de memoria ahora le vemos un 3.",
+        "start": 3989.0,
+        "end": 3994.0
+    },
+    {
+        "text": " Dice ahí supongo que se ingresa un 3. O sea que acá, porque si esto es PTR1, esto es PTR1 techo.",
+        "start": 3994.0,
+        "end": 4004.0
+    },
+    {
+        "text": " Si esto es PTR2, esto es PTR2 techo.",
+        "start": 4004.0,
+        "end": 4010.0
+    },
+    {
+        "text": " Acá dentro se acaba de leer por teclado un 3.",
+        "start": 4010.0,
+        "end": 4017.0
+    },
+    {
+        "text": " ¿Se entendía esa rideline?",
+        "start": 4022.0,
+        "end": 4025.0
+    },
+    {
+        "text": " Y bueno, Rydeline y esto es una expresión de qué tipo.",
+        "start": 4025.0,
+        "end": 4033.0
+    },
+    {
+        "text": " Pinte ya.",
+        "start": 4033.0,
+        "end": 4035.0
+    },
+    {
+        "text": " Lo ha apuntado por PTR2, ¿cuánto vale?",
+        "start": 4035.0,
+        "end": 4040.0
+    },
+    {
+        "text": " 16. Lo ha apuntado por PTR1, ¿cuánto vale?",
+        "start": 4040.0,
+        "end": 4045.0
+    },
+    {
+        "text": " 3, 16 por 3, esto despliega.",
+        "start": 4045.0,
+        "end": 4049.0
+    },
+    {
+        "text": " 48.",
+        "start": 4049.0,
+        "end": 4052.0
+    },
+    {
+        "text": " O sea que el valor despliega en pantalla es 48.",
+        "start": 4052.0,
+        "end": 4058.0
+    },
+    {
+        "text": " Si.",
+        "start": 4058.0,
+        "end": 4060.0
+    },
+    {
+        "text": " ¿Te apoco?",
+        "start": 4065.0,
+        "end": 4067.0
+    },
+    {
+        "text": " Manejo de punteros y en memoria de enami que sale un muy delicado.",
+        "start": 4067.0,
+        "end": 4073.0
+    },
+    {
+        "text": " Si, en principio cuesta dar las primeras pedaladas después como todo uno le va arrando la madre.",
+        "start": 4073.0,
+        "end": 4080.0
+    },
+    {
+        "text": " ¿Más preguntas de este?",
+        "start": 4080.0,
+        "end": 4084.0
+    },
+    {
+        "text": " Si.",
+        "start": 4084.0,
+        "end": 4086.0
+    },
+    {
+        "text": " ¿Por qué estamos aprendiendo cómo funcionan los punteros y la memoria dinámica?",
+        "start": 4086.0,
+        "end": 4090.0
+    },
+    {
+        "text": " El gran uso que le vamos a dar a esto va a ser cuando venga las listas.",
+        "start": 4090.0,
+        "end": 4096.0
+    },
+    {
+        "text": " Bien.",
+        "start": 4096.0,
+        "end": 4100.0
+    },
+    {
+        "text": " Vamos a ver que son los alias de variables.",
+        "start": 4104.0,
+        "end": 4107.0
+    },
+    {
+        "text": " Y lo vamos a ver ejecutando estas instrucciones.",
+        "start": 4107.0,
+        "end": 4113.0
+    },
+    {
+        "text": " Borramos acá, esto.",
+        "start": 4113.0,
+        "end": 4116.0
+    },
+    {
+        "text": " Bueno, habíamos dicho hace un rato que para inicializar un puntero usábamos Nu.",
+        "start": 4128.0,
+        "end": 4135.0
+    },
+    {
+        "text": " Hay otra manera de inicializar un puntero y es mediante asignación a raíz de otro puntero.",
+        "start": 4135.0,
+        "end": 4142.0
+    },
+    {
+        "text": " Esto genera que diferentes punteros pueden apuntar a la misma dirección.",
+        "start": 4144.0,
+        "end": 4152.0
+    },
+    {
+        "text": " Yo, por ejemplo, podría tener un segundo puntero acá que también me apunte a este mismo lugar.",
+        "start": 4152.0,
+        "end": 4159.0
+    },
+    {
+        "text": " Cuando eso pasa decimos que este puntero y este puntero generan alias, es decir, apuntan al mismo lugar.",
+        "start": 4159.0,
+        "end": 4166.0
+    },
+    {
+        "text": " Alias significa que hay expresiones diferentes que representan a la misma variable.",
+        "start": 4171.0,
+        "end": 4176.0
+    },
+    {
+        "text": " Dos punteros diferentes que están apuntando referenciando al mismo espacio de memoria.",
+        "start": 4176.0,
+        "end": 4183.0
+    },
+    {
+        "text": " Cuando eso pasa decimos que hay alias.",
+        "start": 4185.0,
+        "end": 4188.0
+    },
+    {
+        "text": " Vamos a ejecutar ahí. Nu pt1.",
+        "start": 4189.0,
+        "end": 4194.0
+    },
+    {
+        "text": " Tenemos pt1 y al asigno que sucede aparece un nuevo espacio de memoria y acá que queda.",
+        "start": 4194.0,
+        "end": 4205.0
+    },
+    {
+        "text": " La dirección de ese espacio, el puntero queda apuntando ahí.",
+        "start": 4205.0,
+        "end": 4210.0
+    },
+    {
+        "text": " Recuerden que por debajo esta representación tiene una dirección real de memoria.",
+        "start": 4210.0,
+        "end": 4216.0
+    },
+    {
+        "text": " Algo apuntado por pt1 les signamos un 6.",
+        "start": 4216.0,
+        "end": 4222.0
+    },
+    {
+        "text": " O sea, acá colocamos un 6.",
+        "start": 4222.0,
+        "end": 4226.0
+    },
+    {
+        "text": " pt1 seguimos la flecha y ahí vamos a 6.",
+        "start": 4226.0,
+        "end": 4229.0
+    },
+    {
+        "text": " Y miremos lo que pasa acá.",
+        "start": 4232.0,
+        "end": 4234.0
+    },
+    {
+        "text": " Aparece en escena aquí en lo.",
+        "start": 4236.0,
+        "end": 4239.0
+    },
+    {
+        "text": " Pt2. Fíjense que nosotros a pt2 no le hicimos nu.",
+        "start": 4239.0,
+        "end": 4244.0
+    },
+    {
+        "text": " No estamos creando un nuevo espacio.",
+        "start": 4246.0,
+        "end": 4249.0
+    },
+    {
+        "text": " Si no que estamos colocando dentro de pt2 lo que ya están pt1 y miremos que es lo que hay dentro de pt1.",
+        "start": 4249.0,
+        "end": 4259.0
+    },
+    {
+        "text": " La dirección de este lugar.",
+        "start": 4259.0,
+        "end": 4262.0
+    },
+    {
+        "text": " A la hacer la asignación esta dirección de este lugar se va a copiar a donde.",
+        "start": 4263.0,
+        "end": 4268.0
+    },
+    {
+        "text": " Y por lo tanto pt2 va a tener guardado que cosa.",
+        "start": 4269.0,
+        "end": 4273.0
+    },
+    {
+        "text": " La no, la dirección de este mismo lugar.",
+        "start": 4273.0,
+        "end": 4280.0
+    },
+    {
+        "text": " Por ejemplo si esta dirección era 12 a b este 12 a b se copió para acá.",
+        "start": 4281.0,
+        "end": 4287.0
+    },
+    {
+        "text": " Entonces esta instrucción chiquilina es una asignación entre punteros.",
+        "start": 4288.0,
+        "end": 4294.0
+    },
+    {
+        "text": " Tiene como efecto que los dos punteros quedan en alias.",
+        "start": 4294.0,
+        "end": 4301.0
+    },
+    {
+        "text": " Quedan apuntando al mismo lugar.",
+        "start": 4302.0,
+        "end": 4304.0
+    },
+    {
+        "text": " Siempre que yo haga una asignación entre punteros el efecto es que los dos punteros",
+        "start": 4305.0,
+        "end": 4311.0
+    },
+    {
+        "text": " las dos lechistas van a quedar apuntando al mismo sitio.",
+        "start": 4311.0,
+        "end": 4315.0
+    },
+    {
+        "text": " No hay dos espacios dinámicos de memoria acá.",
+        "start": 4316.0,
+        "end": 4319.0
+    },
+    {
+        "text": " Hay uno solo.",
+        "start": 4319.0,
+        "end": 4320.0
+    },
+    {
+        "text": " El que se pidió con new para pt1 luego yo tomé esta dirección y la copié para acá.",
+        "start": 4321.0,
+        "end": 4325.0
+    },
+    {
+        "text": " Mediante la asignación.",
+        "start": 4325.0,
+        "end": 4327.0
+    },
+    {
+        "text": " El efecto es que las dos quedaron apuntando.",
+        "start": 4327.0,
+        "end": 4330.0
+    },
+    {
+        "text": " Esto es lo que se llama generar alias entre punteros.",
+        "start": 4332.0,
+        "end": 4336.0
+    },
+    {
+        "text": " Ahora bien, queremos mostrar en pantalla",
+        "start": 4340.0,
+        "end": 4344.0
+    },
+    {
+        "text": " lo que está guardado en el lugar apuntado desde ptr2.",
+        "start": 4345.0,
+        "end": 4349.0
+    },
+    {
+        "text": " Bueno desde ptr2 que hago, accedó al lugar y que muestro.",
+        "start": 4351.0,
+        "end": 4355.0
+    },
+    {
+        "text": " 6.",
+        "start": 4355.0,
+        "end": 4356.0
+    },
+    {
+        "text": " ¿Por qué? Porque ptr2 está apuntando al mismo lugar que ptr1.",
+        "start": 4357.0,
+        "end": 4361.0
+    },
+    {
+        "text": " ¿Entiendes eso?",
+        "start": 4363.0,
+        "end": 4364.0
+    },
+    {
+        "text": " Siguiente.",
+        "start": 4367.0,
+        "end": 4368.0
+    },
+    {
+        "text": " Asignación.",
+        "start": 4369.0,
+        "end": 4370.0
+    },
+    {
+        "text": " Lo ha apuntado por ptr1. ¿Cuánto vale?",
+        "start": 4371.0,
+        "end": 4374.0
+    },
+    {
+        "text": " Me paro en ptr1 si volpenderó 6.",
+        "start": 4375.0,
+        "end": 4377.0
+    },
+    {
+        "text": " 6 más 2. ¿Cuánto da?",
+        "start": 4380.0,
+        "end": 4381.0
+    },
+    {
+        "text": " 8.",
+        "start": 4382.0,
+        "end": 4383.0
+    },
+    {
+        "text": " Y ese 8 donde lo voy a guardar.",
+        "start": 4384.0,
+        "end": 4386.0
+    },
+    {
+        "text": " En el lugar apuntado por ptr2.",
+        "start": 4387.0,
+        "end": 4390.0
+    },
+    {
+        "text": " Bueno, vengo a ptr2.",
+        "start": 4391.0,
+        "end": 4392.0
+    },
+    {
+        "text": " Accedo al lugar apuntado y dale a que se olía que se esté.",
+        "start": 4393.0,
+        "end": 4397.0
+    },
+    {
+        "text": " Y ahí que colocó.",
+        "start": 4398.0,
+        "end": 4399.0
+    },
+    {
+        "text": " 8. ¿Por qué pasa?",
+        "start": 4400.0,
+        "end": 4403.0
+    },
+    {
+        "text": " Lo ha apuntado por ptr1 y lo ha apuntado por ptr2 son el mismo lugar.",
+        "start": 4407.0,
+        "end": 4412.0
+    },
+    {
+        "text": " Entonces entrando tanto desde un puntero como desde el otro,",
+        "start": 4414.0,
+        "end": 4417.0
+    },
+    {
+        "text": " estamos excediendo al mismo espacio de memoria.",
+        "start": 4418.0,
+        "end": 4420.0
+    },
+    {
+        "text": " Si hacedemos por ptr2 o ptr1.",
+        "start": 4421.0,
+        "end": 4423.0
+    },
+    {
+        "text": " Si yo, por ejemplo, muestro en pantalla ptr1 techo,",
+        "start": 4424.0,
+        "end": 4427.0
+    },
+    {
+        "text": " ptr2 techo, me vamos a ver esto.",
+        "start": 4428.0,
+        "end": 4430.0
+    },
+    {
+        "text": " Desde el punto de vista sintáctico no porque en principio son diferentes.",
+        "start": 4437.0,
+        "end": 4441.0
+    },
+    {
+        "text": " En tiempo de ejecución sí.",
+        "start": 4442.0,
+        "end": 4444.0
+    },
+    {
+        "text": " Está bien, pero no es que en la propia sintáxia te des cuenta que es una acumulación.",
+        "start": 4445.0,
+        "end": 4450.0
+    },
+    {
+        "text": " Es un efecto derivado de la alias.",
+        "start": 4451.0,
+        "end": 4453.0
+    },
+    {
+        "text": " Miren acá, cuando yo muestro en pantalla lo ha apuntado por el puntero 2",
+        "start": 4456.0,
+        "end": 4461.0
+    },
+    {
+        "text": " y lo ha apuntado por el puntero 1 en ambos casos que me va a mostrar.",
+        "start": 4462.0,
+        "end": 4464.0
+    },
+    {
+        "text": " 8. ¿Por qué los dos apuntan al humoro?",
+        "start": 4465.0,
+        "end": 4466.0
+    },
+    {
+        "text": " Cuando dos punteros apuntan referencia al mismo lugar de memoria se dice que hay alias.",
+        "start": 4467.0,
+        "end": 4471.0
+    },
+    {
+        "text": " ¿Entonces no lo preguntemos?",
+        "start": 4472.0,
+        "end": 4474.0
+    },
+    {
+        "text": " Se va a romper seguramente, luego sí quiere ser final.",
+        "start": 4477.0,
+        "end": 4478.0
+    },
+    {
+        "text": " ¿Hasta acá?",
+        "start": 4483.0,
+        "end": 4485.0
+    },
+    {
+        "text": " Una macia hacemos un poco de práctico que hace horas que quiero hacer el práctico.",
+        "start": 4486.0,
+        "end": 4491.0
+    },
+    {
+        "text": " Pero bueno, esto es importante.",
+        "start": 4492.0,
+        "end": 4494.0
+    },
+    {
+        "text": " Bueno, hace un ratito estaban preocupados por qué pasa si paso punteros como parámetro.",
+        "start": 4495.0,
+        "end": 4502.0
+    },
+    {
+        "text": " Bueno, acá está.",
+        "start": 4503.0,
+        "end": 4504.0
+    },
+    {
+        "text": " Aquí tenemos un procedimiento que se llama Pepe, que recibe Q1 y Q2 que son de tipo...",
+        "start": 4505.0,
+        "end": 4512.0
+    },
+    {
+        "text": " No.",
+        "start": 4514.0,
+        "end": 4515.0
+    },
+    {
+        "text": " Son de tipo P1 y P1 que es puntero a íntegro, o sea que Q1 y Q2 que contienen.",
+        "start": 4516.0,
+        "end": 4521.0
+    },
+    {
+        "text": " Direcciones de memoria.",
+        "start": 4522.0,
+        "end": 4524.0
+    },
+    {
+        "text": " Bien.",
+        "start": 4529.0,
+        "end": 4530.0
+    },
+    {
+        "text": " Q1 y Q2 son punteros.",
+        "start": 4531.0,
+        "end": 4533.0
+    },
+    {
+        "text": " Dentro del procedimiento hago determinadas cosas con esos punteros.",
+        "start": 4535.0,
+        "end": 4539.0
+    },
+    {
+        "text": " Y acá tenemos el programa principal donde tenemos estas instrucciones.",
+        "start": 4540.0,
+        "end": 4544.0
+    },
+    {
+        "text": " Vamos a ejecutarlo y ver qué sucede.",
+        "start": 4546.0,
+        "end": 4548.0
+    },
+    {
+        "text": " Vamos a verlo acá.",
+        "start": 4551.0,
+        "end": 4552.0
+    },
+    {
+        "text": " Bien.",
+        "start": 4558.0,
+        "end": 4559.0
+    },
+    {
+        "text": " La ejecución empieza acá en el programa principal.",
+        "start": 4560.0,
+        "end": 4562.0
+    },
+    {
+        "text": " QP.",
+        "start": 4563.0,
+        "end": 4564.0
+    },
+    {
+        "text": " Pepe es una variable de tipo P1.",
+        "start": 4564.0,
+        "end": 4566.0
+    },
+    {
+        "text": " O sea que acá tengo P.",
+        "start": 4567.0,
+        "end": 4568.0
+    },
+    {
+        "text": " Cuando le aplico Q, sucede lo que pasa siempre que se aplica Q.",
+        "start": 4570.0,
+        "end": 4573.0
+    },
+    {
+        "text": " Se cree un espacio de memoria en forma dinámica, se reserva.",
+        "start": 4574.0,
+        "end": 4578.0
+    },
+    {
+        "text": " Y el puntero queda con la dirección de ese espacio.",
+        "start": 4578.0,
+        "end": 4581.0
+    },
+    {
+        "text": " Eso es lo que pasa con el yo.",
+        "start": 4582.0,
+        "end": 4584.0
+    },
+    {
+        "text": " P te he hecho leas 5, 4.",
+        "start": 4586.0,
+        "end": 4588.0
+    },
+    {
+        "text": " O sea, vengo al puntero, accedo al lugar apuntado y ahí coloco Q1, 4.",
+        "start": 4589.0,
+        "end": 4595.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4597.0,
+        "end": 4598.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 4599.0,
+        "end": 4600.0
+    },
+    {
+        "text": " Ya vamos a PPE y le pasamos PIP.",
+        "start": 4601.0,
+        "end": 4604.0
+    },
+    {
+        "text": " Dos veces P.",
+        "start": 4605.0,
+        "end": 4606.0
+    },
+    {
+        "text": " PPPPP.",
+        "start": 4607.0,
+        "end": 4608.0
+    },
+    {
+        "text": " Pasaje como por valor o por referencia.",
+        "start": 4610.0,
+        "end": 4613.0
+    },
+    {
+        "text": " Por valor.",
+        "start": 4614.0,
+        "end": 4615.0
+    },
+    {
+        "text": " Olvínense de los punteros.",
+        "start": 4616.0,
+        "end": 4618.0
+    },
+    {
+        "text": " Cuando yo paso algo por valor que se genera.",
+        "start": 4618.0,
+        "end": 4620.0
+    },
+    {
+        "text": " Una copia de lo que yo pasé como parámetro verdadero.",
+        "start": 4621.0,
+        "end": 4624.0
+    },
+    {
+        "text": " Y se copia en el parámetro nominal.",
+        "start": 4625.0,
+        "end": 4627.0
+    },
+    {
+        "text": " Aparece en memoria un nuevo espacio cuyo nombre es el del parámetro formal.",
+        "start": 4628.0,
+        "end": 4635.0
+    },
+    {
+        "text": " Cuando yo hago la invocación a PEP, la ejecución pega un salto, viene a carriba y como el pasaje es por valor.",
+        "start": 4637.0,
+        "end": 4645.0
+    },
+    {
+        "text": " Se crean dos nuevos espacios de memoria, llamados como.",
+        "start": 4646.0,
+        "end": 4649.0
+    },
+    {
+        "text": " Q1 y Q2.",
+        "start": 4651.0,
+        "end": 4652.0
+    },
+    {
+        "text": " Y esto es así porque así es el pasaje por valor.",
+        "start": 4653.0,
+        "end": 4657.0
+    },
+    {
+        "text": " Que el tipo sea puntero es anécdótico.",
+        "start": 4661.0,
+        "end": 4665.0
+    },
+    {
+        "text": " Siempre que yo paso algo por valor se crea una copia.",
+        "start": 4666.0,
+        "end": 4670.0
+    },
+    {
+        "text": " En este caso dos porque son dos los parámetros.",
+        "start": 4671.0,
+        "end": 4673.0
+    },
+    {
+        "text": " Y en ellos se copia lo que está dentro de P.",
+        "start": 4674.0,
+        "end": 4677.0
+    },
+    {
+        "text": " Y qué es lo que está dentro de P.",
+        "start": 4678.0,
+        "end": 4679.0
+    },
+    {
+        "text": " La dirección de este lugar, o sea que Q1 con qué valor queda.",
+        "start": 4680.0,
+        "end": 4684.0
+    },
+    {
+        "text": " Con la dirección de este lugar pasa lo mismo que pasaba en la asignación, que dan alias.",
+        "start": 4685.0,
+        "end": 4690.0
+    },
+    {
+        "text": " ¿Qué pasa con cuudos?",
+        "start": 4691.0,
+        "end": 4693.0
+    },
+    {
+        "text": " Lo mismo, también queda con la dirección de este mismo espacio.",
+        "start": 4694.0,
+        "end": 4697.0
+    },
+    {
+        "text": " Se hizo una copia pero de qué?",
+        "start": 4698.0,
+        "end": 4700.0
+    },
+    {
+        "text": " De la dirección de memoria guardada en P.",
+        "start": 4701.0,
+        "end": 4703.0
+    },
+    {
+        "text": " Lo que se copió fue la dirección.",
+        "start": 4704.0,
+        "end": 4706.0
+    },
+    {
+        "text": " No el lugar de memoria apuntado.",
+        "start": 4706.0,
+        "end": 4709.0
+    },
+    {
+        "text": " Si hubiera estado la palabra bar, ¿qué habría pasado?",
+        "start": 4718.0,
+        "end": 4722.0
+    },
+    {
+        "text": " No se habrían creado estos dos y se estaría refiriendo esta mi movida.",
+        "start": 4723.0,
+        "end": 4726.0
+    },
+    {
+        "text": " Bien.",
+        "start": 4730.0,
+        "end": 4731.0
+    },
+    {
+        "text": " Fíjense, siempre que yo paso algo por valor,",
+        "start": 4732.0,
+        "end": 4737.0
+    },
+    {
+        "text": " eso que paso no se va a modificar dentro del procedimiento.",
+        "start": 4738.0,
+        "end": 4742.0
+    },
+    {
+        "text": " Y está pasando porque Q1 y Q2 yo no nos estoy modificando.",
+        "start": 4743.0,
+        "end": 4747.0
+    },
+    {
+        "text": " Los punteros no están cambiando.",
+        "start": 4748.0,
+        "end": 4750.0
+    },
+    {
+        "text": " Los dos punteros se están apuntando aquello y quedan apuntando aquello.",
+        "start": 4751.0,
+        "end": 4754.0
+    },
+    {
+        "text": " Lo que estoy cambiando que es.",
+        "start": 4755.0,
+        "end": 4756.0
+    },
+    {
+        "text": " El valor guardado en el lugar de memoria apuntado.",
+        "start": 4756.0,
+        "end": 4761.0
+    },
+    {
+        "text": " Q2 techo por dos.",
+        "start": 4762.0,
+        "end": 4764.0
+    },
+    {
+        "text": " Me paro en Q2.",
+        "start": 4765.0,
+        "end": 4767.0
+    },
+    {
+        "text": " Q2 techo cuánto vale?",
+        "start": 4768.0,
+        "end": 4769.0
+    },
+    {
+        "text": " Cuatro. Lo multiplico por dos.",
+        "start": 4770.0,
+        "end": 4772.0
+    },
+    {
+        "text": " Me da ocho. Recordemos el ocho.",
+        "start": 4773.0,
+        "end": 4775.0
+    },
+    {
+        "text": " Lo guardo en el lugar de memoria apuntado por Q1, que oca suelida, cuál es.",
+        "start": 4776.0,
+        "end": 4779.0
+    },
+    {
+        "text": " El mismo. O sea que acá se va al cuatro.",
+        "start": 4780.0,
+        "end": 4783.0
+    },
+    {
+        "text": " Se va al cuatro y queda un ocho.",
+        "start": 4783.0,
+        "end": 4786.0
+    },
+    {
+        "text": " ¿Qué contiene P?",
+        "start": 4792.0,
+        "end": 4793.0
+    },
+    {
+        "text": " No.",
+        "start": 4795.0,
+        "end": 4796.0
+    },
+    {
+        "text": " La dirección.",
+        "start": 4796.0,
+        "end": 4797.0
+    },
+    {
+        "text": " La dirección está cuando tú haces pasaje por valor.",
+        "start": 4798.0,
+        "end": 4801.0
+    },
+    {
+        "text": " Lo que contiene el parámetro verdadero se copie en el parámetro formal.",
+        "start": 4802.0,
+        "end": 4805.0
+    },
+    {
+        "text": " Lo que se copió fue la dirección.",
+        "start": 4807.0,
+        "end": 4809.0
+    },
+    {
+        "text": " Porque el tipo del parámetro que es P.",
+        "start": 4810.0,
+        "end": 4813.0
+    },
+    {
+        "text": " Bueno, ese ocho quedó guardado.",
+        "start": 4818.0,
+        "end": 4820.0
+    },
+    {
+        "text": " Vamos a la siguiente asignación.",
+        "start": 4822.0,
+        "end": 4824.0
+    },
+    {
+        "text": " Q1 techo cuánto vale ahora.",
+        "start": 4825.0,
+        "end": 4826.0
+    },
+    {
+        "text": " 8 más 2.",
+        "start": 4827.0,
+        "end": 4828.0
+    },
+    {
+        "text": " 10.",
+        "start": 4829.0,
+        "end": 4830.0
+    },
+    {
+        "text": " Ese 10 lo voy a guardar en Q2 techo.",
+        "start": 4831.0,
+        "end": 4834.0
+    },
+    {
+        "text": " Q2 techo, cuál es?",
+        "start": 4835.0,
+        "end": 4836.0
+    },
+    {
+        "text": " Este mismo.",
+        "start": 4836.0,
+        "end": 4838.0
+    },
+    {
+        "text": " O sea que acá ponemos 10.",
+        "start": 4839.0,
+        "end": 4841.0
+    },
+    {
+        "text": " Termina el procedimiento.",
+        "start": 4843.0,
+        "end": 4845.0
+    },
+    {
+        "text": " Los punteros, Q1 y Q2 se modificaron.",
+        "start": 4846.0,
+        "end": 4850.0
+    },
+    {
+        "text": " No, los punteros en todo momento estuvieron apuntando este lugar.",
+        "start": 4851.0,
+        "end": 4854.0
+    },
+    {
+        "text": " Lo que sí se modificó que fue.",
+        "start": 4855.0,
+        "end": 4857.0
+    },
+    {
+        "text": " El valor apuntado.",
+        "start": 4858.0,
+        "end": 4859.0
+    },
+    {
+        "text": " Entonces, cuidado con esto.",
+        "start": 4860.0,
+        "end": 4862.0
+    },
+    {
+        "text": " Porque cuando yo muestre en pantalla, P.",
+        "start": 4863.0,
+        "end": 4865.0
+    },
+    {
+        "text": " techo que va a mostrar.",
+        "start": 4865.0,
+        "end": 4866.0
+    },
+    {
+        "text": " 10.",
+        "start": 4867.0,
+        "end": 4868.0
+    },
+    {
+        "text": " Uno muchas veces, inconscientemente, piensa que cuando pasas una copia del puntero,",
+        "start": 4869.0,
+        "end": 4873.0
+    },
+    {
+        "text": " cuando pasas el puntero por valor, se te hace una copia del valor apuntado.",
+        "start": 4874.0,
+        "end": 4877.0
+    },
+    {
+        "text": " Uno muchas veces podría pensar que se te hace una copia del valor apuntado.",
+        "start": 4879.0,
+        "end": 4883.0
+    },
+    {
+        "text": " Pero eso no sucede.",
+        "start": 4884.0,
+        "end": 4885.0
+    },
+    {
+        "text": " Lo que se copió fue la dirección.",
+        "start": 4886.0,
+        "end": 4888.0
+    },
+    {
+        "text": " Este espacio de memoria no fue copiado.",
+        "start": 4889.0,
+        "end": 4892.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4893.0,
+        "end": 4894.0
+    },
+    {
+        "text": " No es que sea una mala práctica porque no viola ninguna de las buenas prácticas.",
+        "start": 4897.0,
+        "end": 4902.0
+    },
+    {
+        "text": " Tener cuidado cuando se hace.",
+        "start": 4904.0,
+        "end": 4906.0
+    },
+    {
+        "text": " O sea, si se hace ser consciente de lo que está pasando.",
+        "start": 4907.0,
+        "end": 4911.0
+    },
+    {
+        "text": " El resultado puede no ser esperado, pero no es que sea una mala práctica.",
+        "start": 4912.0,
+        "end": 4915.0
+    },
+    {
+        "text": " O sea, muchas veces nosotros vamos a pasar punteros por valor.",
+        "start": 4916.0,
+        "end": 4919.0
+    },
+    {
+        "text": " Está bien, y no va a ser considerado una mala práctica.",
+        "start": 4920.0,
+        "end": 4922.0
+    },
+    {
+        "text": " Lo que digo es, si vos pasas un puntero por valor,",
+        "start": 4923.0,
+        "end": 4925.0
+    },
+    {
+        "text": " bueno, ojo, porque si tú modificas lo apuntado,",
+        "start": 4926.0,
+        "end": 4929.0
+    },
+    {
+        "text": " esa modificación luego se va a haber reflejada de afuera.",
+        "start": 4930.0,
+        "end": 4933.0
+    },
+    {
+        "text": " En este ejemplo se pasaron por valor, porque este ejemplo está armado así.",
+        "start": 4938.0,
+        "end": 4942.0
+    },
+    {
+        "text": " Entonces, siempre que vos pasas algo por valor, se aparece una copia.",
+        "start": 4945.0,
+        "end": 4949.0
+    },
+    {
+        "text": " En este caso coincidió que es una copia de un puntero.",
+        "start": 4950.0,
+        "end": 4952.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4953.0,
+        "end": 4954.0
+    },
+    {
+        "text": " Claro, cuando empieza a ejecutarse el procedimiento, aparecen cubuno y cudos.",
+        "start": 4957.0,
+        "end": 4961.0
+    },
+    {
+        "text": " En el momento en que el procedimiento termina, automáticamente que pasa con cubuno y cudos.",
+        "start": 4962.0,
+        "end": 4966.0
+    },
+    {
+        "text": " Solitos desaparecen.",
+        "start": 4967.0,
+        "end": 4968.0
+    },
+    {
+        "text": " O sea, todo para metro, pasado por valor,",
+        "start": 4970.0,
+        "end": 4973.0
+    },
+    {
+        "text": " nada si cuando empieza a ejecutarse el procedimiento y desaparece cuando termina.",
+        "start": 4973.0,
+        "end": 4977.0
+    },
+    {
+        "text": " Sí.",
+        "start": 4980.0,
+        "end": 4981.0
+    },
+    {
+        "text": " No iba a compilar, porque esto es lo de tipo int.",
+        "start": 4987.0,
+        "end": 4989.0
+    },
+    {
+        "text": " Tendría que tener dos parámetros de tipo int, allá.",
+        "start": 4991.0,
+        "end": 4993.0
+    },
+    {
+        "text": " Pero hay tenés dos parámetros de tipo puntero.",
+        "start": 4996.0,
+        "end": 4998.0
+    },
+    {
+        "text": " La moral es, se puede pasar un puntero por valor, sí, se puede.",
+        "start": 4999.0,
+        "end": 5004.0
+    },
+    {
+        "text": " Pero tengamos claro que lo que se está copiando, porque siempre que vos pasa algo por valor,",
+        "start": 5006.0,
+        "end": 5010.0
+    },
+    {
+        "text": " se hace una copia, es la dirección de memoria, lo que se está copiando.",
+        "start": 5011.0,
+        "end": 5015.0
+    },
+    {
+        "text": " Pero el lugar apuntado sigue siendo el mismo.",
+        "start": 5016.0,
+        "end": 5018.0
+    },
+    {
+        "text": " Entonces, tener cuidado que si se modifica el valor guardado en el lugar apuntado,",
+        "start": 5019.0,
+        "end": 5024.0
+    },
+    {
+        "text": " esa modificación va a permanecer una vez que finalice el procedimiento.",
+        "start": 5024.0,
+        "end": 5029.0
+    },
+    {
+        "text": " No es que esté mal, simplemente tener ojo con eso y saber lo que está pasando en caso de que se haga.",
+        "start": 5030.0,
+        "end": 5036.0
+    },
+    {
+        "text": " Bien.",
+        "start": 5039.0,
+        "end": 5040.0
+    },
+    {
+        "text": " ¿Alguna pregunta más?",
+        "start": 5043.0,
+        "end": 5044.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 5046.0,
+        "end": 5047.0
+    },
+    {
+        "text": " Nú generaba que se reserva en tiempo de ejecución un nuevo espacio de memoria.",
+        "start": 5055.0,
+        "end": 5061.0
+    },
+    {
+        "text": " Ahora, cuidado con algo.",
+        "start": 5064.0,
+        "end": 5065.0
+    },
+    {
+        "text": " Un espacio de memoria que yo pido prestado en tiempo de ejecución con Nú,",
+        "start": 5066.0,
+        "end": 5071.0
+    },
+    {
+        "text": " yo en algún momento lo tengo que devolver.",
+        "start": 5072.0,
+        "end": 5074.0
+    },
+    {
+        "text": " Cuando yo declare una variable, no hay problema, porque se empieza a ejecutar el procedimiento,",
+        "start": 5077.0,
+        "end": 5081.0
+    },
+    {
+        "text": " donde yo declare esa variable, la variable solita nace,",
+        "start": 5082.0,
+        "end": 5085.0
+    },
+    {
+        "text": " se ejecuta el procedimiento y cuando termina la variable solita muere.",
+        "start": 5086.0,
+        "end": 5090.0
+    },
+    {
+        "text": " Pero eso es porque es memoria no dinámica.",
+        "start": 5092.0,
+        "end": 5094.0
+    },
+    {
+        "text": " Ahora, un espacio de memoria que yo pido dinámicamente con Nú,",
+        "start": 5095.0,
+        "end": 5098.0
+    },
+    {
+        "text": " este no se va a ir por sí solo.",
+        "start": 5099.0,
+        "end": 5102.0
+    },
+    {
+        "text": " Cuando yo no lo necesito más, lo tengo que liberar, lo tengo que devolver.",
+        "start": 5103.0,
+        "end": 5108.0
+    },
+    {
+        "text": " Y eso se hace con la instrucción Dispose.",
+        "start": 5109.0,
+        "end": 5112.0
+    },
+    {
+        "text": " Dispose le indica el sistema que una celda de memoria ya no será más utilizada.",
+        "start": 5115.0,
+        "end": 5121.0
+    },
+    {
+        "text": " El sistema recupera ese espacio, le devolvimos esa porción de memoria,",
+        "start": 5122.0,
+        "end": 5127.0
+    },
+    {
+        "text": " y luego el sistema lo podrá reutilizar si quiere.",
+        "start": 5128.0,
+        "end": 5130.0
+    },
+    {
+        "text": " Se invoca de la siguiente manera.",
+        "start": 5132.0,
+        "end": 5134.0
+    },
+    {
+        "text": " En vez de Nú se pone Dispose y se pone entre paréntesis el puntero.",
+        "start": 5135.0,
+        "end": 5139.0
+    },
+    {
+        "text": " Lo que hace Dispose es le devuelve al sistema de ese espacio de memoria",
+        "start": 5141.0,
+        "end": 5145.0
+    },
+    {
+        "text": " y a partir de ahí el puntero quedó indefinido,",
+        "start": 5146.0,
+        "end": 5151.0
+    },
+    {
+        "text": " o sea automáticamente se convirtió en basura.",
+        "start": 5153.0,
+        "end": 5156.0
+    },
+    {
+        "text": " Se utiliza cuando se borra en elementos de una estructura dinámica.",
+        "start": 5157.0,
+        "end": 5162.0
+    },
+    {
+        "text": " Cuando yo quiero borrar un espacio de memoria que pidi de manera dinámica.",
+        "start": 5164.0,
+        "end": 5169.0
+    },
+    {
+        "text": " Entonces, ¿cómo?",
+        "start": 5171.0,
+        "end": 5173.0
+    },
+    {
+        "text": " Vamos a ver acá, hago el ejemplo y lo vemos.",
+        "start": 5176.0,
+        "end": 5180.0
+    },
+    {
+        "text": " Entonces vamos a suponer que tenemos las siguientes instrucciones.",
+        "start": 5181.0,
+        "end": 5185.0
+    },
+    {
+        "text": " Tenemos un puntero llamado PTR.",
+        "start": 5188.0,
+        "end": 5191.0
+    },
+    {
+        "text": " Vamos a mirar lo que pasa acá.",
+        "start": 5211.0,
+        "end": 5214.0
+    },
+    {
+        "text": " Es más, vamos a ir dibujando la memoria Lineal Lineal.",
+        "start": 5234.0,
+        "end": 5238.0
+    },
+    {
+        "text": " Se vamos a hacer cuatro dibujos de memoria.",
+        "start": 5241.0,
+        "end": 5244.0
+    },
+    {
+        "text": " Para ir viendo cómo va variando el estado de la memoria durante la ejecución.",
+        "start": 5245.0,
+        "end": 5250.0
+    },
+    {
+        "text": " Primero, hay ronos de compilación en algún lugar.",
+        "start": 5253.0,
+        "end": 5257.0
+    },
+    {
+        "text": " No, de compilación no, ahí estas compilan bien.",
+        "start": 5257.0,
+        "end": 5260.0
+    },
+    {
+        "text": " Nú PTR1.",
+        "start": 5263.0,
+        "end": 5264.0
+    },
+    {
+        "text": " Tenemos PTR1.",
+        "start": 5266.0,
+        "end": 5267.0
+    },
+    {
+        "text": " Se crea dinámicamente un espacio de memoria.",
+        "start": 5268.0,
+        "end": 5272.0
+    },
+    {
+        "text": " Y el puntero queda con la dirección de ese espacio.",
+        "start": 5273.0,
+        "end": 5276.0
+    },
+    {
+        "text": " Acá que hay.",
+        "start": 5276.0,
+        "end": 5277.0
+    },
+    {
+        "text": " Pasura.",
+        "start": 5278.0,
+        "end": 5279.0
+    },
+    {
+        "text": " Valor indefinido.",
+        "start": 5280.0,
+        "end": 5281.0
+    },
+    {
+        "text": " Pasamos ejecutar la instrucción 2.",
+        "start": 5282.0,
+        "end": 5284.0
+    },
+    {
+        "text": " Así que voy a copiar la memoria abajo.",
+        "start": 5284.0,
+        "end": 5287.0
+    },
+    {
+        "text": " O sea, llegamos a la instrucción 2 con este estado de la memoria.",
+        "start": 5288.0,
+        "end": 5292.0
+    },
+    {
+        "text": " PTR1, gracias.",
+        "start": 5299.0,
+        "end": 5300.0
+    },
+    {
+        "text": " ¿Qué hacemos?",
+        "start": 5301.0,
+        "end": 5302.0
+    },
+    {
+        "text": " Accedemos desde el puntero acá y allí colocamos un 39.",
+        "start": 5303.0,
+        "end": 5308.0
+    },
+    {
+        "text": " Fue válido acceder desde acá porque, porque previamente se pidió devido a la memoria.",
+        "start": 5311.0,
+        "end": 5316.0
+    },
+    {
+        "text": " Accedemos de la memoria con nú.",
+        "start": 5317.0,
+        "end": 5319.0
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 5322.0,
+        "end": 5323.0
+    },
+    {
+        "text": " Bien, copio la memoria hacia la instrucción siguiendo.",
+        "start": 5324.0,
+        "end": 5328.0
+    },
+    {
+        "text": " De momento lo que tenemos es esto.",
+        "start": 5334.0,
+        "end": 5336.0
+    },
+    {
+        "text": " Dispos del puntero. ¿Qué ocurre en este momento?",
+        "start": 5340.0,
+        "end": 5344.0
+    },
+    {
+        "text": " Este espacio deja de pertenecerle a nuestro programa.",
+        "start": 5345.0,
+        "end": 5350.0
+    },
+    {
+        "text": " Es de vuelto al sistema.",
+        "start": 5353.0,
+        "end": 5355.0
+    },
+    {
+        "text": " Y a partir de ahora esto para nosotros es como que hubiera dejado existir.",
+        "start": 5357.0,
+        "end": 5362.0
+    },
+    {
+        "text": " Ojo que este tachado no quiere decir que físicamente la memoria desapareció.",
+        "start": 5362.0,
+        "end": 5366.0
+    },
+    {
+        "text": " O sea, el lugar de memoria que había sido reservado sigue existiendo.",
+        "start": 5367.0,
+        "end": 5370.0
+    },
+    {
+        "text": " Lo que pasa es que ya no nos pertenece más.",
+        "start": 5370.0,
+        "end": 5373.0
+    },
+    {
+        "text": " Paso a ser indefinido tanto esto como el puntero.",
+        "start": 5375.0,
+        "end": 5379.0
+    },
+    {
+        "text": " O sea, a partir de ahora esto ya no le pertenece más a mi programa.",
+        "start": 5382.0,
+        "end": 5388.0
+    },
+    {
+        "text": " Y por ende el puntero automáticamente pasó a ser indefinido, basura.",
+        "start": 5389.0,
+        "end": 5394.0
+    },
+    {
+        "text": " Entonces la línea 4 va a dar error de ejecución.",
+        "start": 5396.0,
+        "end": 5401.0
+    },
+    {
+        "text": " ¿Por qué va a querer hacer la línea 4?",
+        "start": 5402.0,
+        "end": 5404.0
+    },
+    {
+        "text": " Va a querer desde el puntero acceder a lo apuntado.",
+        "start": 5405.0,
+        "end": 5408.0
+    },
+    {
+        "text": " Este ruay tabría esta goviendo todo donde.",
+        "start": 5409.0,
+        "end": 5411.0
+    },
+    {
+        "text": " Acarriba entre estas dos antes del dispós.",
+        "start": 5412.0,
+        "end": 5415.0
+    },
+    {
+        "text": " Luego del dispós, si bien eso compila, esto produce un error en tiempo de ejecución.",
+        "start": 5416.0,
+        "end": 5422.0
+    },
+    {
+        "text": " ¿Dónde error en tiempo de ejecución significa interesible?",
+        "start": 5422.0,
+        "end": 5426.0
+    },
+    {
+        "text": " Se pueda romper el programa, te puede mostrar basura en pantalla, no se sabe.",
+        "start": 5427.0,
+        "end": 5433.0
+    },
+    {
+        "text": " Una vez que el espacio de memoria fue liberado con dispós, queda prohibido el acceso a ese espacio.",
+        "start": 5435.0,
+        "end": 5443.0
+    },
+    {
+        "text": " Al ejecutarse el dispós, esto fue liberado y el puntero que no ha indefinido.",
+        "start": 5448.0,
+        "end": 5453.0
+    },
+    {
+        "text": " Indecinido, basura, no sabes.",
+        "start": 5454.0,
+        "end": 5457.0
+    },
+    {
+        "text": " Claro, no es que físicamente fue hice con una picana, se rompió la memoria, no.",
+        "start": 5461.0,
+        "end": 5465.0
+    },
+    {
+        "text": " Lo pasas que no sos boce el que define, va a ser el sistema, capaz que te vuelve a dar el mismo lugar o te volar, no sabemos.",
+        "start": 5468.0,
+        "end": 5474.0
+    },
+    {
+        "text": " Lo único que sabemos tras el dispós es que este lugar físico de la memoria, en memoria como lugar físico, sigue existiendo,",
+        "start": 5475.0,
+        "end": 5480.0
+    },
+    {
+        "text": " pero ya no le pertenece más a mi programa.",
+        "start": 5481.0,
+        "end": 5484.0
+    },
+    {
+        "text": " ¿Por qué vos podés necesitar pedir nuevos espacios en tiempo de ejecución? ¿Por qué no te alcanza con las variables que yo tenés?",
+        "start": 5489.0,
+        "end": 5495.0
+    },
+    {
+        "text": " De nuevo, esto va a cobrar más sentido cuando veamos listas.",
+        "start": 5497.0,
+        "end": 5500.0
+    },
+    {
+        "text": " Vos querés seguir agregando elementos a una secuencia de elementos.",
+        "start": 5500.0,
+        "end": 5504.0
+    },
+    {
+        "text": " Tantos como quieras durante la ejecución, ahí es que te sirve la memoria dinámica.",
+        "start": 5505.0,
+        "end": 5509.0
+    },
+    {
+        "text": " Sí.",
+        "start": 5509.0,
+        "end": 5510.0
+    },
+    {
+        "text": " Sí, me va a asignar otro espacio diferente y el puntero va a quedar apuntando de ese otro espacio diferente.",
+        "start": 5513.0,
+        "end": 5519.0
+    },
+    {
+        "text": " No lo sabemos.",
+        "start": 5520.0,
+        "end": 5521.0
+    },
+    {
+        "text": " A los efectos prácticos es un espacio nuevo.",
+        "start": 5521.0,
+        "end": 5524.0
+    },
+    {
+        "text": " Si justo coincide con la misma porción de memoria no, no tenemos como saberlo y no los interesa.",
+        "start": 5524.0,
+        "end": 5529.0
+    },
+    {
+        "text": " Alí más teniendo la pregunta por ahí.",
+        "start": 5530.0,
+        "end": 5532.0
+    },
+    {
+        "text": " Yo escucho cantos, ¿usted es también?",
+        "start": 5539.0,
+        "end": 5541.0
+    },
+    {
+        "text": " Bueno, vamos a aprovechar estos 15 minutos para hacer aunque sea un ejercicio de práctico.",
+        "start": 5543.0,
+        "end": 5547.0
+    },
+    {
+        "text": " Creo que no. O si hay probablemente sea de ejercicios de parciales.",
+        "start": 5557.0,
+        "end": 5562.0
+    },
+    {
+        "text": " Eso cuando lo tengamos definidos se los digo.",
+        "start": 5562.0,
+        "end": 5564.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 5570.0,
+        "end": 5571.0
+    },
+    {
+        "text": " Bueno, vamos a aprovechar un poquito.",
+        "start": 5579.0,
+        "end": 5581.0
+    },
+    {
+        "text": " Hay el ejercicio 2 parte 1.",
+        "start": 5583.0,
+        "end": 5586.0
+    },
+    {
+        "text": " Borro este espacio y lo vamos haciendo.",
+        "start": 5592.0,
+        "end": 5595.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 5600.0,
+        "end": 5601.0
+    },
+    {
+        "text": " Dice, considere las declaraciones del ejercicio 1 que las tenemos acá.",
+        "start": 5617.0,
+        "end": 5621.0
+    },
+    {
+        "text": " Tenemos un tipo llamado apuntadorin que es puntero ainteshar y apuntador char que es un puntero a char.",
+        "start": 5623.0,
+        "end": 5628.0
+    },
+    {
+        "text": " Apuntadorin, apuntadorin.",
+        "start": 5630.0,
+        "end": 5634.0
+    },
+    {
+        "text": " Apuntadorin y apuntador char son apuntador char, apuntador char.",
+        "start": 5639.0,
+        "end": 5643.0
+    },
+    {
+        "text": " Así que recorremos.",
+        "start": 5646.0,
+        "end": 5648.0
+    },
+    {
+        "text": " Apuntadore y apuntador.",
+        "start": 5650.0,
+        "end": 5652.0
+    },
+    {
+        "text": " Apuntador de tipo integer.",
+        "start": 5653.0,
+        "end": 5655.0
+    },
+    {
+        "text": " Apuntador de tipo char.",
+        "start": 5655.0,
+        "end": 5656.0
+    },
+    {
+        "text": " tomando en cuenta eso vamos acá",
+        "start": 5659.0,
+        "end": 5663.0
+    },
+    {
+        "text": " vamos línea línea",
+        "start": 5664.6,
+        "end": 5667.6
+    },
+    {
+        "text": " a punto uno ustedes me van diciendo cómo queda, ni un a punto uno que ocurre",
+        "start": 5670.5,
+        "end": 5677.36
+    },
+    {
+        "text": " se crea un nuevo espacio y el puntero queda apuntando ahí y lo de acaba hacer de",
+        "start": 5677.36,
+        "end": 5682.92
+    },
+    {
+        "text": " que tipo",
+        "start": 5682.92,
+        "end": 5684.92
+    },
+    {
+        "text": " valor indefinido de tipo",
+        "start": 5685.92,
+        "end": 5687.92
+    },
+    {
+        "text": " intesar a punto uno apuntaba algo de tipo intesar o sea que acá luego se",
+        "start": 5688.92,
+        "end": 5694.12
+    },
+    {
+        "text": " podrá colocar algo de tipo intesar",
+        "start": 5694.12,
+        "end": 5696.92
+    },
+    {
+        "text": " bien lo mismo con nu a punto dos y nu a punto tres o sea tenemos a punto dos",
+        "start": 5698.42,
+        "end": 5705.32
+    },
+    {
+        "text": " no por qué que dice allá",
+        "start": 5713.92,
+        "end": 5717.92
+    },
+    {
+        "text": " un nuevo espacio",
+        "start": 5717.92,
+        "end": 5721.92
+    },
+    {
+        "text": " nu pero a punto dos es igual a",
+        "start": 5721.92,
+        "end": 5726.92
+    },
+    {
+        "text": " pero no llegué ahí todavía",
+        "start": 5726.92,
+        "end": 5729.92
+    },
+    {
+        "text": " porque estoy en la segunda destrucción tu estás en la cuarta",
+        "start": 5729.92,
+        "end": 5733.92
+    },
+    {
+        "text": " vamos en orden",
+        "start": 5733.92,
+        "end": 5736.92
+    },
+    {
+        "text": " vía nu a punto dos",
+        "start": 5736.92,
+        "end": 5739.92
+    },
+    {
+        "text": " qué pasa con nu a punto dos",
+        "start": 5739.92,
+        "end": 5742.92
+    },
+    {
+        "text": " nuevo",
+        "start": 5743.92,
+        "end": 5745.92
+    },
+    {
+        "text": " bien",
+        "start": 5747.92,
+        "end": 5749.92
+    },
+    {
+        "text": " lo mismo con a punto tres",
+        "start": 5749.92,
+        "end": 5751.92
+    },
+    {
+        "text": " estos dos dijimos que eran de que tipo intesar y el de a punto tres va a ser de",
+        "start": 5751.92,
+        "end": 5756.92
+    },
+    {
+        "text": " tipo char",
+        "start": 5756.92,
+        "end": 5759.92
+    },
+    {
+        "text": " a punto tres",
+        "start": 5762.92,
+        "end": 5764.92
+    },
+    {
+        "text": " se pide dinámicamente un nuevo espacio",
+        "start": 5764.92,
+        "end": 5767.92
+    },
+    {
+        "text": " y a punto tres queda apuntando a ese espacio",
+        "start": 5767.92,
+        "end": 5771.92
+    },
+    {
+        "text": " por los treneos",
+        "start": 5771.92,
+        "end": 5774.92
+    },
+    {
+        "text": " hasta acá",
+        "start": 5774.92,
+        "end": 5777.92
+    },
+    {
+        "text": " miremos ahora si lo que pasa acá",
+        "start": 5777.92,
+        "end": 5781.92
+    },
+    {
+        "text": " asignación entre punteros",
+        "start": 5781.92,
+        "end": 5784.92
+    },
+    {
+        "text": " qué efecto tenía una asignación entre punteros",
+        "start": 5784.92,
+        "end": 5789.92
+    },
+    {
+        "text": " hayas los dos punteros quedan apuntando al mismo lugar",
+        "start": 5790.92,
+        "end": 5795.92
+    },
+    {
+        "text": " en este caso a donde apunta a punto uno a punto uno",
+        "start": 5795.92,
+        "end": 5800.92
+    },
+    {
+        "text": " contiene la dirección de este espacio",
+        "start": 5800.92,
+        "end": 5804.92
+    },
+    {
+        "text": " esto que está acá es la dirección de este espacio hasta ahí",
+        "start": 5804.92,
+        "end": 5807.92
+    },
+    {
+        "text": " esa dirección la guardo en donde",
+        "start": 5807.92,
+        "end": 5810.92
+    },
+    {
+        "text": " en a punto dos",
+        "start": 5810.92,
+        "end": 5812.92
+    },
+    {
+        "text": " y acá pasa algo espantoso",
+        "start": 5812.92,
+        "end": 5816.92
+    },
+    {
+        "text": " a punto dos ya estaba apuntando a este lugar",
+        "start": 5819.92,
+        "end": 5823.92
+    },
+    {
+        "text": " pero ahora va a dejar de apuntar acá para pasar a puntar a donde",
+        "start": 5823.92,
+        "end": 5828.92
+    },
+    {
+        "text": " puno o sea",
+        "start": 5828.92,
+        "end": 5830.92
+    },
+    {
+        "text": " vieja de apuntar acá",
+        "start": 5830.92,
+        "end": 5834.92
+    },
+    {
+        "text": " y ahora tenemos alias",
+        "start": 5834.92,
+        "end": 5837.92
+    },
+    {
+        "text": " y este lugar de memoria que pasó",
+        "start": 5837.92,
+        "end": 5842.92
+    },
+    {
+        "text": " inaccesible",
+        "start": 5842.92,
+        "end": 5846.92
+    },
+    {
+        "text": " se perdió",
+        "start": 5846.92,
+        "end": 5848.92
+    },
+    {
+        "text": " nadie lo está referenciando",
+        "start": 5848.92,
+        "end": 5850.92
+    },
+    {
+        "text": " y como se pidió de manera dinámica",
+        "start": 5850.92,
+        "end": 5853.92
+    },
+    {
+        "text": " no se va y se solo queda ahí",
+        "start": 5853.92,
+        "end": 5855.92
+    },
+    {
+        "text": " bollando",
+        "start": 5855.92,
+        "end": 5856.92
+    },
+    {
+        "text": " os imaginate",
+        "start": 5856.92,
+        "end": 5858.92
+    },
+    {
+        "text": " que el espacio de memoria apuntado es una balza",
+        "start": 5858.92,
+        "end": 5861.92
+    },
+    {
+        "text": " y que el punteros es una cuerda",
+        "start": 5861.92,
+        "end": 5863.92
+    },
+    {
+        "text": " y que esto es el muelle",
+        "start": 5863.92,
+        "end": 5865.92
+    },
+    {
+        "text": " hacer esto significa venir con un hacha",
+        "start": 5865.92,
+        "end": 5868.92
+    },
+    {
+        "text": " cortar la cuerda y la balza que pasa",
+        "start": 5868.92,
+        "end": 5872.92
+    },
+    {
+        "text": " quedó flotando a la deriva se perdió",
+        "start": 5872.92,
+        "end": 5875.92
+    },
+    {
+        "text": " sigue existiendo o culpa a un lugar",
+        "start": 5875.92,
+        "end": 5877.92
+    },
+    {
+        "text": " pero es inaccesible",
+        "start": 5877.92,
+        "end": 5879.92
+    },
+    {
+        "text": " y eso es espantoso",
+        "start": 5879.92,
+        "end": 5881.92
+    },
+    {
+        "text": " habría que haber hecho algo",
+        "start": 5881.92,
+        "end": 5883.92
+    },
+    {
+        "text": " probablemente dispose",
+        "start": 5883.92,
+        "end": 5885.92
+    },
+    {
+        "text": " este lugar antes de asignar el puntero",
+        "start": 5885.92,
+        "end": 5887.92
+    },
+    {
+        "text": " pero esto que está acá",
+        "start": 5887.92,
+        "end": 5889.92
+    },
+    {
+        "text": " es memoria que quedó inaccesible",
+        "start": 5889.92,
+        "end": 5893.92
+    },
+    {
+        "text": " chiquilines",
+        "start": 5893.92,
+        "end": 5896.92
+    },
+    {
+        "text": " esto ni siquiera es error en tiempo",
+        "start": 5896.92,
+        "end": 5899.92
+    },
+    {
+        "text": " de ejecución en el sentido de que el programa se vaya a romper",
+        "start": 5899.92,
+        "end": 5902.92
+    },
+    {
+        "text": " se perdió un espacio de memoria",
+        "start": 5902.92,
+        "end": 5905.92
+    },
+    {
+        "text": " se perdió",
+        "start": 5905.92,
+        "end": 5908.92
+    },
+    {
+        "text": " en lo inmediato no va a generar graves problemas",
+        "start": 5908.92,
+        "end": 5912.92
+    },
+    {
+        "text": " pero os imaginate que tenés un programa",
+        "start": 5912.92,
+        "end": 5914.92
+    },
+    {
+        "text": " que se ejecuta durante mucho tiempo",
+        "start": 5914.92,
+        "end": 5916.92
+    },
+    {
+        "text": " y que va pidiendo memoria",
+        "start": 5916.92,
+        "end": 5918.92
+    },
+    {
+        "text": " y esa memoria la vamos dejando inaccesible",
+        "start": 5918.92,
+        "end": 5921.92
+    },
+    {
+        "text": " en algún momento",
+        "start": 5921.92,
+        "end": 5923.92
+    },
+    {
+        "text": " quien se puede hartar",
+        "start": 5923.92,
+        "end": 5925.92
+    },
+    {
+        "text": " de darnos espacio y que no se los devolvamos",
+        "start": 5925.92,
+        "end": 5928.92
+    },
+    {
+        "text": " el sistema",
+        "start": 5928.92,
+        "end": 5930.92
+    },
+    {
+        "text": " en algún momento el sistema puede decir",
+        "start": 5931.92,
+        "end": 5933.92
+    },
+    {
+        "text": " que no te doy más",
+        "start": 5933.92,
+        "end": 5934.92
+    },
+    {
+        "text": " y cuando vas a pedirle un espacio de memoria",
+        "start": 5934.92,
+        "end": 5937.92
+    },
+    {
+        "text": " te dice no",
+        "start": 5937.92,
+        "end": 5938.92
+    },
+    {
+        "text": " y se te cortó de golpe de ejecución",
+        "start": 5938.92,
+        "end": 5940.92
+    },
+    {
+        "text": " entonces nunca dejar memoria inaccesible",
+        "start": 5940.92,
+        "end": 5943.92
+    },
+    {
+        "text": " esto compila",
+        "start": 5943.92,
+        "end": 5945.92
+    },
+    {
+        "text": " esto se ejecuta y no produce error",
+        "start": 5945.92,
+        "end": 5948.92
+    },
+    {
+        "text": " pero perdimos un espacio de memoria",
+        "start": 5948.92,
+        "end": 5951.92
+    },
+    {
+        "text": " lo perdimos",
+        "start": 5951.92,
+        "end": 5953.92
+    },
+    {
+        "text": " por supuesto",
+        "start": 5953.92,
+        "end": 5955.92
+    },
+    {
+        "text": " después que vos termina el programa",
+        "start": 5955.92,
+        "end": 5957.92
+    },
+    {
+        "text": " toda memoria",
+        "start": 5957.92,
+        "end": 5958.92
+    },
+    {
+        "text": " se llama operativa y la toma de vuelta",
+        "start": 5958.92,
+        "end": 5960.92
+    },
+    {
+        "text": " si tengo si hago dos veces",
+        "start": 5962.92,
+        "end": 5964.92
+    },
+    {
+        "text": " a un momento me pasa lo mismo",
+        "start": 5964.92,
+        "end": 5966.92
+    },
+    {
+        "text": " pedí un espacio de memoria que enseguida perdí",
+        "start": 5966.92,
+        "end": 5968.92
+    },
+    {
+        "text": " también ha ido mediando la opción",
+        "start": 5968.92,
+        "end": 5970.92
+    },
+    {
+        "text": " exacto",
+        "start": 5970.92,
+        "end": 5972.92
+    },
+    {
+        "text": " o sea que esto",
+        "start": 5972.92,
+        "end": 5974.92
+    },
+    {
+        "text": " la asignación generó alias",
+        "start": 5974.92,
+        "end": 5976.92
+    },
+    {
+        "text": " y dejó inaccesible esto",
+        "start": 5976.92,
+        "end": 5978.92
+    },
+    {
+        "text": " si",
+        "start": 5978.92,
+        "end": 5980.92
+    },
+    {
+        "text": " y es malo",
+        "start": 5980.92,
+        "end": 5982.92
+    },
+    {
+        "text": " si ya se tiene una talera",
+        "start": 5982.92,
+        "end": 5986.92
+    },
+    {
+        "text": " no entendí",
+        "start": 5987.92,
+        "end": 5989.92
+    },
+    {
+        "text": " es un error grave",
+        "start": 5989.92,
+        "end": 5991.92
+    },
+    {
+        "text": " es tan grave esta como modificar la variólica de contrenuvor",
+        "start": 5991.92,
+        "end": 5996.92
+    },
+    {
+        "text": " oírte de un arreglo",
+        "start": 5996.92,
+        "end": 5997.92
+    },
+    {
+        "text": " es así de grave",
+        "start": 5997.92,
+        "end": 5999.92
+    },
+    {
+        "text": " a punguno techo le asignó dos",
+        "start": 6002.92,
+        "end": 6005.92
+    },
+    {
+        "text": " miremos en el dibujo",
+        "start": 6005.92,
+        "end": 6007.92
+    },
+    {
+        "text": " a punguno techo quienes",
+        "start": 6007.92,
+        "end": 6009.92
+    },
+    {
+        "text": " acá",
+        "start": 6009.92,
+        "end": 6011.92
+    },
+    {
+        "text": " ahí asignamos un dos",
+        "start": 6011.92,
+        "end": 6013.92
+    },
+    {
+        "text": " a punguno techo le asignamos un tres",
+        "start": 6014.92,
+        "end": 6017.92
+    },
+    {
+        "text": " y uno al principio ingenuamente que podría pensar",
+        "start": 6017.92,
+        "end": 6020.92
+    },
+    {
+        "text": " que es otro lugar",
+        "start": 6020.92,
+        "end": 6022.92
+    },
+    {
+        "text": " pero que pasa con a punguno y a punguno",
+        "start": 6022.92,
+        "end": 6025.92
+    },
+    {
+        "text": " tenemos alias",
+        "start": 6025.92,
+        "end": 6027.92
+    },
+    {
+        "text": " o sea que ese tres",
+        "start": 6027.92,
+        "end": 6029.92
+    },
+    {
+        "text": " donde se va a poner en realidad",
+        "start": 6029.92,
+        "end": 6031.92
+    },
+    {
+        "text": " en el mismo lugar donde estaba el dos",
+        "start": 6031.92,
+        "end": 6033.92
+    },
+    {
+        "text": " acá porque a este que le pasó",
+        "start": 6035.92,
+        "end": 6037.92
+    },
+    {
+        "text": " lo perdimos",
+        "start": 6037.92,
+        "end": 6039.92
+    },
+    {
+        "text": " no os pregúo",
+        "start": 6039.92,
+        "end": 6041.92
+    },
+    {
+        "text": " quedó perdido en el medio de los sieros pacíficos",
+        "start": 6041.92,
+        "end": 6045.92
+    },
+    {
+        "text": " a pung tres techo le asignó a",
+        "start": 6049.92,
+        "end": 6051.92
+    },
+    {
+        "text": " a pung tres techo",
+        "start": 6051.92,
+        "end": 6053.92
+    },
+    {
+        "text": " y esto era de tipo char",
+        "start": 6053.92,
+        "end": 6055.92
+    },
+    {
+        "text": " o sea que esta bien asignarle",
+        "start": 6055.92,
+        "end": 6057.92
+    },
+    {
+        "text": " el carácter a",
+        "start": 6057.92,
+        "end": 6059.92
+    },
+    {
+        "text": " y luego queremos mostrar la montalla de nuevo",
+        "start": 6061.92,
+        "end": 6065.92
+    },
+    {
+        "text": " no estamos mostrando los punteros",
+        "start": 6065.92,
+        "end": 6067.92
+    },
+    {
+        "text": " y esta bien que no mostremos los punteros",
+        "start": 6067.92,
+        "end": 6070.92
+    },
+    {
+        "text": " estamos mostrando el contenido del lugar apuntado por cada puntero",
+        "start": 6070.92,
+        "end": 6075.92
+    },
+    {
+        "text": " a pung uno techo es",
+        "start": 6075.92,
+        "end": 6078.92
+    },
+    {
+        "text": " tres",
+        "start": 6078.92,
+        "end": 6079.92
+    },
+    {
+        "text": " a pung dos techo",
+        "start": 6079.92,
+        "end": 6081.92
+    },
+    {
+        "text": " también es tres por el alias",
+        "start": 6081.92,
+        "end": 6083.92
+    },
+    {
+        "text": " y a pung tres techo es",
+        "start": 6083.92,
+        "end": 6084.92
+    },
+    {
+        "text": " a o sea que en pantalla",
+        "start": 6084.92,
+        "end": 6086.92
+    },
+    {
+        "text": " si nosotros dibujamos la pantalla",
+        "start": 6086.92,
+        "end": 6089.92
+    },
+    {
+        "text": " lo que vamos a ver que es",
+        "start": 6089.92,
+        "end": 6091.92
+    },
+    {
+        "text": " vamos a ver un tres",
+        "start": 6091.92,
+        "end": 6094.92
+    },
+    {
+        "text": " otro tres",
+        "start": 6094.92,
+        "end": 6096.92
+    },
+    {
+        "text": " y una",
+        "start": 6096.92,
+        "end": 6097.92
+    },
+    {
+        "text": " cinco millas",
+        "start": 6097.92,
+        "end": 6098.92
+    },
+    {
+        "text": " porque al usuario no se le muestran las comillas",
+        "start": 6098.92,
+        "end": 6101.92
+    },
+    {
+        "text": " se entendió esto",
+        "start": 6107.92,
+        "end": 6109.92
+    },
+    {
+        "text": " vamos a ser un poquito del cuatro",
+        "start": 6110.92,
+        "end": 6112.92
+    },
+    {
+        "text": " hasta el ejercicio cinco",
+        "start": 6114.92,
+        "end": 6116.92
+    },
+    {
+        "text": " ya lo pueden ir haciendo",
+        "start": 6118.92,
+        "end": 6120.92
+    },
+    {
+        "text": " si",
+        "start": 6120.92,
+        "end": 6122.92
+    },
+    {
+        "text": " vamos a ser un poquito del cuatro y con eso vamos a terminar",
+        "start": 6123.92,
+        "end": 6126.92
+    },
+    {
+        "text": " si",
+        "start": 6126.92,
+        "end": 6127.92
+    },
+    {
+        "text": " si como a pung uno y a pung dos",
+        "start": 6130.92,
+        "end": 6133.92
+    },
+    {
+        "text": " si",
+        "start": 6133.92,
+        "end": 6134.92
+    },
+    {
+        "text": " claro si vos haces dispós de uno de ellos",
+        "start": 6134.92,
+        "end": 6137.92
+    },
+    {
+        "text": " liberaste este espacio",
+        "start": 6137.92,
+        "end": 6139.92
+    },
+    {
+        "text": " y derrebote y el otro te quedo indefinido",
+        "start": 6139.92,
+        "end": 6142.92
+    },
+    {
+        "text": " ojo con los alias",
+        "start": 6142.92,
+        "end": 6144.92
+    },
+    {
+        "text": " lo que pregunta el compañero es",
+        "start": 6144.92,
+        "end": 6145.92
+    },
+    {
+        "text": " si yo le hago dispós a este",
+        "start": 6145.92,
+        "end": 6147.92
+    },
+    {
+        "text": " esto se liberó",
+        "start": 6148.92,
+        "end": 6149.92
+    },
+    {
+        "text": " pero este derrebote también te quedo indefinido",
+        "start": 6149.92,
+        "end": 6152.92
+    },
+    {
+        "text": " es con dispós",
+        "start": 6160.92,
+        "end": 6161.92
+    },
+    {
+        "text": " no por que hay quito",
+        "start": 6161.92,
+        "end": 6162.92
+    },
+    {
+        "text": " no no",
+        "start": 6162.92,
+        "end": 6163.92
+    },
+    {
+        "text": " no que hay que yo yo",
+        "start": 6163.92,
+        "end": 6164.92
+    },
+    {
+        "text": " tu pregunta es si es con dispós la única forma",
+        "start": 6164.92,
+        "end": 6166.92
+    },
+    {
+        "text": " no si es que",
+        "start": 6166.92,
+        "end": 6168.92
+    },
+    {
+        "text": " así me lo apunta a tu",
+        "start": 6168.92,
+        "end": 6169.92
+    },
+    {
+        "text": " haciendo lo que a punto de otro lado",
+        "start": 6170.92,
+        "end": 6172.92
+    },
+    {
+        "text": " o asignando el en mil",
+        "start": 6172.92,
+        "end": 6173.92
+    },
+    {
+        "text": " que es el valor nulo de todos los punteros",
+        "start": 6173.92,
+        "end": 6176.92
+    },
+    {
+        "text": " que es con lo que vamos a empezar después",
+        "start": 6176.92,
+        "end": 6177.92
+    },
+    {
+        "text": " todavía no vimos nulo",
+        "start": 6177.92,
+        "end": 6179.92
+    },
+    {
+        "text": " hay un valor especial nulo como una cualquier puntero que se llama nulo",
+        "start": 6179.92,
+        "end": 6183.92
+    },
+    {
+        "text": " no no no por suerte vamos a tener nulo",
+        "start": 6183.92,
+        "end": 6185.92
+    },
+    {
+        "text": " no no miran un poquito el cuatro",
+        "start": 6187.92,
+        "end": 6189.92
+    },
+    {
+        "text": " ¿por qué quiero ver el cuatro para que veamos puntero a algo que es estructurado?",
+        "start": 6195.92,
+        "end": 6200.92
+    },
+    {
+        "text": " algo que es estructurado",
+        "start": 6200.92,
+        "end": 6203.92
+    },
+    {
+        "text": " tipo vehículo es un tipo como",
+        "start": 6204.92,
+        "end": 6207.92
+    },
+    {
+        "text": " en un marado que tiene dos valores posibles barco y camión",
+        "start": 6208.92,
+        "end": 6212.92
+    },
+    {
+        "text": " ¿eh? transporte es un record con variante",
+        "start": 6212.92,
+        "end": 6217.92
+    },
+    {
+        "text": " todo transporte tiene una capacidad",
+        "start": 6218.92,
+        "end": 6221.92
+    },
+    {
+        "text": " y el transporte puede ser barco o camión",
+        "start": 6221.92,
+        "end": 6225.92
+    },
+    {
+        "text": " si es barco que vamos a registrar",
+        "start": 6226.92,
+        "end": 6228.92
+    },
+    {
+        "text": " su cantidad de habitaciones",
+        "start": 6228.92,
+        "end": 6230.92
+    },
+    {
+        "text": " y si es camión que vamos a registrar",
+        "start": 6231.92,
+        "end": 6233.92
+    },
+    {
+        "text": " nada más",
+        "start": 6233.92,
+        "end": 6234.92
+    },
+    {
+        "text": " a, b y c son punteros a transporte",
+        "start": 6239.92,
+        "end": 6245.92
+    },
+    {
+        "text": " ¿eh?",
+        "start": 6248.92,
+        "end": 6249.92
+    },
+    {
+        "text": " y vamos a hacerlo acá",
+        "start": 6251.92,
+        "end": 6252.92
+    },
+    {
+        "text": " bueno, hay un puntero",
+        "start": 6260.92,
+        "end": 6267.92
+    },
+    {
+        "text": " le hacemos nulo",
+        "start": 6271.92,
+        "end": 6273.92
+    },
+    {
+        "text": " ¿qué pasa cuando hacemos nulo?",
+        "start": 6273.92,
+        "end": 6275.92
+    },
+    {
+        "text": " aparece dinámicamente en memoria",
+        "start": 6276.92,
+        "end": 6279.92
+    },
+    {
+        "text": " algo que en este caso de qué tipo va a ser",
+        "start": 6279.92,
+        "end": 6282.92
+    },
+    {
+        "text": " de tipo transporte",
+        "start": 6283.92,
+        "end": 6285.92
+    },
+    {
+        "text": " y esto me va a quedar referenciando",
+        "start": 6285.92,
+        "end": 6288.92
+    },
+    {
+        "text": " a esto que va a ser un record",
+        "start": 6288.92,
+        "end": 6291.92
+    },
+    {
+        "text": " fíjense lo que dice ahí",
+        "start": 6296.92,
+        "end": 6298.92
+    },
+    {
+        "text": " a techo punto capacidad",
+        "start": 6299.92,
+        "end": 6302.92
+    },
+    {
+        "text": " ¿a qué es?",
+        "start": 6303.92,
+        "end": 6304.92
+    },
+    {
+        "text": " ahi es el puntero",
+        "start": 6306.92,
+        "end": 6307.92
+    },
+    {
+        "text": " techo que es",
+        "start": 6307.92,
+        "end": 6308.92
+    },
+    {
+        "text": " el espacio de memoria apuntado",
+        "start": 6308.92,
+        "end": 6311.92
+    },
+    {
+        "text": " que es de tipo",
+        "start": 6311.92,
+        "end": 6312.92
+    },
+    {
+        "text": " transporte que es un record",
+        "start": 6314.92,
+        "end": 6316.92
+    },
+    {
+        "text": " y de ese record a qué campo accedo",
+        "start": 6317.92,
+        "end": 6319.92
+    },
+    {
+        "text": " al que en primer campo que es capacidad",
+        "start": 6320.92,
+        "end": 6322.92
+    },
+    {
+        "text": " o sea, el primer campo",
+        "start": 6323.92,
+        "end": 6325.92
+    },
+    {
+        "text": " que se llama capacidad",
+        "start": 6326.92,
+        "end": 6328.92
+    },
+    {
+        "text": " a si que estamos guardando",
+        "start": 6331.92,
+        "end": 6333.92
+    },
+    {
+        "text": " crey",
+        "start": 6333.92,
+        "end": 6334.92
+    },
+    {
+        "text": " si, no llegue",
+        "start": 6339.92,
+        "end": 6342.92
+    },
+    {
+        "text": " ya llego",
+        "start": 6343.92,
+        "end": 6344.92
+    },
+    {
+        "text": " quedo clara esta",
+        "start": 6345.92,
+        "end": 6347.92
+    },
+    {
+        "text": " si",
+        "start": 6347.92,
+        "end": 6348.92
+    },
+    {
+        "text": " a techo punto vehículo",
+        "start": 6349.92,
+        "end": 6351.92
+    },
+    {
+        "text": " veamos acá esto es un record que hay",
+        "start": 6351.92,
+        "end": 6353.92
+    },
+    {
+        "text": " es un registro variante",
+        "start": 6353.92,
+        "end": 6355.92
+    },
+    {
+        "text": " vehículo es un campo del record",
+        "start": 6356.92,
+        "end": 6359.92
+    },
+    {
+        "text": " que era un campo muy especial",
+        "start": 6359.92,
+        "end": 6360.92
+    },
+    {
+        "text": " que se llamaba el tiscriminante",
+        "start": 6360.92,
+        "end": 6362.92
+    },
+    {
+        "text": " estamos mirando acá",
+        "start": 6367.92,
+        "end": 6368.92
+    },
+    {
+        "text": " en la declaración vehículo",
+        "start": 6368.92,
+        "end": 6369.92
+    },
+    {
+        "text": " es de tipo numerado",
+        "start": 6369.92,
+        "end": 6370.92
+    },
+    {
+        "text": " tipo vehículo hasta ahí",
+        "start": 6370.92,
+        "end": 6372.92
+    },
+    {
+        "text": " venimos acá",
+        "start": 6373.92,
+        "end": 6374.92
+    },
+    {
+        "text": " ahi es un puntero",
+        "start": 6375.92,
+        "end": 6376.92
+    },
+    {
+        "text": " a techo es un record",
+        "start": 6377.92,
+        "end": 6379.92
+    },
+    {
+        "text": " y dentro de ese record a qué campo estamos accediendo",
+        "start": 6380.92,
+        "end": 6383.92
+    },
+    {
+        "text": " al campo vehículo",
+        "start": 6384.92,
+        "end": 6385.92
+    },
+    {
+        "text": " al segundo campo del record",
+        "start": 6386.92,
+        "end": 6388.92
+    },
+    {
+        "text": " que está acá",
+        "start": 6390.92,
+        "end": 6391.92
+    },
+    {
+        "text": " que se llama ese campo",
+        "start": 6392.92,
+        "end": 6394.92
+    },
+    {
+        "text": " vehículo",
+        "start": 6395.92,
+        "end": 6396.92
+    },
+    {
+        "text": " y que es de tipo",
+        "start": 6397.92,
+        "end": 6399.92
+    },
+    {
+        "text": " tipo vehículo que es un enumerado",
+        "start": 6400.92,
+        "end": 6401.92
+    },
+    {
+        "text": " y que lo estamos haciendo",
+        "start": 6401.92,
+        "end": 6403.92
+    },
+    {
+        "text": " parco",
+        "start": 6403.92,
+        "end": 6404.92
+    },
+    {
+        "text": " o sea que acá",
+        "start": 6405.92,
+        "end": 6407.92
+    },
+    {
+        "text": " queda barco",
+        "start": 6408.92,
+        "end": 6409.92
+    },
+    {
+        "text": " iba por ahí o no",
+        "start": 6414.92,
+        "end": 6415.92
+    },
+    {
+        "text": " no, porque ya dijo",
+        "start": 6415.92,
+        "end": 6416.92
+    },
+    {
+        "text": " porque si es un enumerado",
+        "start": 6416.92,
+        "end": 6418.92
+    },
+    {
+        "text": " porque esto",
+        "start": 6419.92,
+        "end": 6421.92
+    },
+    {
+        "text": " vehículo es un campo de tipo enumerado",
+        "start": 6422.92,
+        "end": 6425.92
+    },
+    {
+        "text": " y cuáles son los posibles valores para leer enumerado",
+        "start": 6425.92,
+        "end": 6427.92
+    },
+    {
+        "text": " claro que es mi amor",
+        "start": 6428.92,
+        "end": 6429.92
+    },
+    {
+        "text": " acá",
+        "start": 6430.92,
+        "end": 6431.92
+    },
+    {
+        "text": " bien",
+        "start": 6432.92,
+        "end": 6433.92
+    },
+    {
+        "text": " como le asigné barco",
+        "start": 6434.92,
+        "end": 6436.92
+    },
+    {
+        "text": " entonces el próximo campo con el que vamos a trabajar",
+        "start": 6437.92,
+        "end": 6439.92
+    },
+    {
+        "text": " de acuerdo con el record que haces habitaciones",
+        "start": 6439.92,
+        "end": 6441.92
+    },
+    {
+        "text": " dijimos la clase pasada",
+        "start": 6442.92,
+        "end": 6444.92
+    },
+    {
+        "text": " yo programador",
+        "start": 6444.92,
+        "end": 6445.92
+    },
+    {
+        "text": " debo ser cuarenta entre el valor que doy el discriminante",
+        "start": 6445.92,
+        "end": 6448.92
+    },
+    {
+        "text": " y a cual de los campos variantes accedo",
+        "start": 6449.92,
+        "end": 6451.92
+    },
+    {
+        "text": " acá lo estamos manipulando bien",
+        "start": 6452.92,
+        "end": 6453.92
+    },
+    {
+        "text": " porque como asignamos barco",
+        "start": 6454.92,
+        "end": 6455.92
+    },
+    {
+        "text": " vamos a asignar a la alteración",
+        "start": 6455.92,
+        "end": 6456.92
+    },
+    {
+        "text": " y habitaciones",
+        "start": 6456.92,
+        "end": 6458.92
+    },
+    {
+        "text": " y habitaciones que es el tercer campo",
+        "start": 6459.92,
+        "end": 6460.92
+    },
+    {
+        "text": " y ahí que colocamos",
+        "start": 6463.92,
+        "end": 6464.92
+    },
+    {
+        "text": " un 4 de tipo intesión",
+        "start": 6466.92,
+        "end": 6467.92
+    },
+    {
+        "text": " entonces el puntero apunta a todo esto",
+        "start": 6469.92,
+        "end": 6472.92
+    },
+    {
+        "text": " y todo esto es un record",
+        "start": 6473.92,
+        "end": 6475.92
+    },
+    {
+        "text": " a",
+        "start": 6480.92,
+        "end": 6481.92
+    },
+    {
+        "text": " es un puntero",
+        "start": 6482.92,
+        "end": 6483.92
+    },
+    {
+        "text": " ahora",
+        "start": 6484.92,
+        "end": 6486.92
+    },
+    {
+        "text": " a",
+        "start": 6487.92,
+        "end": 6488.92
+    },
+    {
+        "text": " techo",
+        "start": 6488.92,
+        "end": 6489.92
+    },
+    {
+        "text": " de qué tipo es",
+        "start": 6489.92,
+        "end": 6490.92
+    },
+    {
+        "text": " de tipo record",
+        "start": 6491.92,
+        "end": 6492.92
+    },
+    {
+        "text": " y concretamente este record como se llama",
+        "start": 6493.92,
+        "end": 6495.92
+    },
+    {
+        "text": " transporte",
+        "start": 6496.92,
+        "end": 6497.92
+    },
+    {
+        "text": " quiero que notemos la diferencia",
+        "start": 6499.92,
+        "end": 6501.92
+    },
+    {
+        "text": " en los tipos de las distintas expresiones",
+        "start": 6501.92,
+        "end": 6503.92
+    },
+    {
+        "text": " a por si solo es un puntero",
+        "start": 6503.92,
+        "end": 6505.92
+    },
+    {
+        "text": " está",
+        "start": 6507.92,
+        "end": 6508.92
+    },
+    {
+        "text": " puntero transporte",
+        "start": 6508.92,
+        "end": 6509.92
+    },
+    {
+        "text": " a techo es",
+        "start": 6510.92,
+        "end": 6511.92
+    },
+    {
+        "text": " el lugar de memoria apuntado desde aquí",
+        "start": 6511.92,
+        "end": 6513.92
+    },
+    {
+        "text": " es todo esto y todo esto que es un record",
+        "start": 6513.92,
+        "end": 6515.92
+    },
+    {
+        "text": " y dentro del record como hago para entrar",
+        "start": 6517.92,
+        "end": 6519.92
+    },
+    {
+        "text": " a los campos dentro del record",
+        "start": 6519.92,
+        "end": 6521.92
+    },
+    {
+        "text": " esto dijimos es un record",
+        "start": 6522.92,
+        "end": 6524.92
+    },
+    {
+        "text": " punto",
+        "start": 6525.92,
+        "end": 6526.92
+    },
+    {
+        "text": " por ejemplo capacidad",
+        "start": 6527.92,
+        "end": 6528.92
+    },
+    {
+        "text": " esto es",
+        "start": 6533.92,
+        "end": 6534.92
+    },
+    {
+        "text": " en el puntero",
+        "start": 6534.92,
+        "end": 6535.92
+    },
+    {
+        "text": " techo",
+        "start": 6535.92,
+        "end": 6536.92
+    },
+    {
+        "text": " sigo la flecha",
+        "start": 6536.92,
+        "end": 6537.92
+    },
+    {
+        "text": " esto es un record",
+        "start": 6538.92,
+        "end": 6539.92
+    },
+    {
+        "text": " y de ese record me meto en el campo capacidad",
+        "start": 6539.92,
+        "end": 6542.92
+    },
+    {
+        "text": " y esto",
+        "start": 6543.92,
+        "end": 6544.92
+    },
+    {
+        "text": " es de tipo intesión",
+        "start": 6544.92,
+        "end": 6546.92
+    },
+    {
+        "text": " así como esto otro",
+        "start": 6550.92,
+        "end": 6552.92
+    },
+    {
+        "text": " a techo punto vehículo",
+        "start": 6553.92,
+        "end": 6555.92
+    },
+    {
+        "text": " esto de qué tipo es",
+        "start": 6556.92,
+        "end": 6558.92
+    },
+    {
+        "text": " el campo vehículo",
+        "start": 6562.92,
+        "end": 6563.92
+    },
+    {
+        "text": " este de acá de qué tipo es",
+        "start": 6563.92,
+        "end": 6564.92
+    },
+    {
+        "text": " tipo vehículo",
+        "start": 6565.92,
+        "end": 6566.92
+    },
+    {
+        "text": " y tipo vehículo es un enumerado",
+        "start": 6567.92,
+        "end": 6569.92
+    },
+    {
+        "text": " le pondría corchetes y te meterías en la celda",
+        "start": 6569.92,
+        "end": 6572.92
+    },
+    {
+        "text": " habría que ver como está declarado y de qué tipo es",
+        "start": 6575.92,
+        "end": 6577.92
+    },
+    {
+        "text": " sí",
+        "start": 6577.92,
+        "end": 6578.92
+    },
+    {
+        "text": " está bien",
+        "start": 6581.92,
+        "end": 6582.92
+    },
+    {
+        "text": " ah es un puntero",
+        "start": 6583.92,
+        "end": 6585.92
+    },
+    {
+        "text": " a techo es un record a techo punto",
+        "start": 6585.92,
+        "end": 6587.92
+    },
+    {
+        "text": " y el campo el que quieras acceder",
+        "start": 6588.92,
+        "end": 6590.92
+    },
+    {
+        "text": " del tipo que corresponde al campo",
+        "start": 6590.92,
+        "end": 6591.92
+    },
+    {
+        "text": " que vas a acceder",
+        "start": 6591.92,
+        "end": 6592.92
+    },
+    {
+        "text": " vos podrías escribir cosas como esta",
+        "start": 6593.92,
+        "end": 6595.92
+    },
+    {
+        "text": " wizz a techo",
+        "start": 6598.92,
+        "end": 6600.92
+    },
+    {
+        "text": " du, tranquilamente",
+        "start": 6601.92,
+        "end": 6603.92
+    },
+    {
+        "text": " porque esto es un record",
+        "start": 6605.92,
+        "end": 6607.92
+    },
+    {
+        "text": " de acuerdo",
+        "start": 6610.92,
+        "end": 6611.92
+    },
+    {
+        "text": " bueno, me he versido la clase más intensa que tuve de programación",
+        "start": 6612.92,
+        "end": 6616.92
+    },
+    {
+        "text": " en años",
+        "start": 6616.92,
+        "end": 6617.92
+    },
+    {
+        "text": " y miren que hace años que estoy dando esto",
+        "start": 6617.92,
+        "end": 6619.92
+    },
+    {
+        "text": " bueno hasta el ejercicio 5",
+        "start": 6620.92,
+        "end": 6622.92
+    },
+    {
+        "text": " es más",
+        "start": 6622.92,
+        "end": 6623.92
+    },
+    {
+        "text": " creo que hasta más allá del 5",
+        "start": 6624.92,
+        "end": 6626.92
+    },
+    {
+        "text": " no, hasta el 4",
+        "start": 6630.92,
+        "end": 6632.92
+    },
+    {
+        "text": " el 5 ya es de listas",
+        "start": 6632.92,
+        "end": 6634.92
+    },
+    {
+        "text": " y lo vamos a empezar la clase que veis",
+        "start": 6634.92,
+        "end": 6636.92
+    },
+    {
+        "text": " pero hasta el 4",
+        "start": 6636.92,
+        "end": 6638.92
+    },
+    {
+        "text": " son rápidos de hacer",
+        "start": 6638.92,
+        "end": 6639.92
+    },
+    {
+        "text": " porque son todos de dibujar la memoria",
+        "start": 6639.92,
+        "end": 6641.92
+    },
+    {
+        "text": " y de razonar si las asignaciones son válidas",
+        "start": 6642.92,
+        "end": 6645.92
+    },
+    {
+        "text": " y de razonar si las asignaciones son válidas",
+        "start": 6645.92,
+        "end": 6648.92
+    },
+    {
+        "text": " solo",
+        "start": 6648.92,
+        "end": 6649.92
+    },
+    {
+        "text": " bueno el viernes vamos a ver listas",
+        "start": 6650.92,
+        "end": 6652.92
+    },
+    {
+        "text": " y va a ser una clase intensa",
+        "start": 6653.92,
+        "end": 6655.92
+    }
+]

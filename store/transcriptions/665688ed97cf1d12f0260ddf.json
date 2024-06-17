@@ -1,0 +1,2812 @@
+[
+    {
+        "text": " Bueno, buenas tardes. La clase pasada estuvimos viendo una estructura conocida como",
+        "start": 0.0,
+        "end": 26.12
+    },
+    {
+        "text": " arreglo con tope. V varias cosas a destacar en relación a la reglo con tope. La primera es una",
+        "start": 26.12,
+        "end": 41.84
+    },
+    {
+        "text": " estructura de datos que no requiere ningún elemento nuevo desde el punto de vista sintáctico",
+        "start": 41.84,
+        "end": 50.480000000000004
+    },
+    {
+        "text": " para su construcción. Es decir que para armar una reglo con tope lo que hacíamos era",
+        "start": 50.48,
+        "end": 57.12
+    },
+    {
+        "text": " combinar dos estructuras que ya conocíamos que eran cuales. Una reglo con un, con un récord.",
+        "start": 57.12,
+        "end": 66.08
+    },
+    {
+        "text": " De esa manera emparejábamos el arreglo con otro campo de qué tipo. Podría ser de tipo su rango,",
+        "start": 66.08,
+        "end": 76.72
+    },
+    {
+        "text": " un rango de los enteros que servía para indicar qué cosa. El tope de la reglo y ese tope que valor",
+        "start": 76.72,
+        "end": 84.56
+    },
+    {
+        "text": " contenía. El índice del último valor que del último casillero lleno del último valor cargado en",
+        "start": 84.56,
+        "end": 96.12
+    },
+    {
+        "text": " el arreglo. Dicho de otra manera, la cantidad de elementos que teníamos cargados. Entonces cuando",
+        "start": 96.12,
+        "end": 105.68
+    },
+    {
+        "text": " nosotros definimos una reglo con tope es una estructura de datos definida mediante un récord que",
+        "start": 105.68,
+        "end": 115.60000000000001
+    },
+    {
+        "text": " tiene dos campos. El primero es una reglo que tendrá una cierta cantidad de celdas numeradas",
+        "start": 115.60000000000001,
+        "end": 126.84
+    },
+    {
+        "text": " según algún subrango de índices. Normalmente vamos desde uno hasta el valor de una constante y el",
+        "start": 126.84,
+        "end": 137.64000000000001
+    },
+    {
+        "text": " segundo campo es el que llamamos tope y que sirve para dijimos indicar qué cosa. El índice de la",
+        "start": 137.64000000000001,
+        "end": 147.96
+    },
+    {
+        "text": " última celda cargada. Si yo por ejemplo cargue las primeras tres celdas, entonces el valor del tope",
+        "start": 147.96,
+        "end": 159.04000000000002
+    },
+    {
+        "text": " es tres. Nosotros tenemos un campo que es un arreglo y el segundo campo que es un tope. Esta estructura",
+        "start": 159.04000000000002,
+        "end": 170.28
+    },
+    {
+        "text": " se define mediante un récord de pascal. El primero de los dos campos de ese récord es un arreglo y el",
+        "start": 170.28,
+        "end": 178.8
+    },
+    {
+        "text": " segundo es el tope. Y lo que tiene de interesante esta estructura es que nos permite una manipulación en",
+        "start": 178.8,
+        "end": 186.6
+    },
+    {
+        "text": " algún sentido más flexible que en el arreglo común. Porque en el arreglo común y corriente antes de",
+        "start": 186.6,
+        "end": 192.6
+    },
+    {
+        "text": " incorporar la noción de tope que estábamos obligados a hacer. Cargarlo en su totalidad, llenar todas",
+        "start": 192.6,
+        "end": 199.44
+    },
+    {
+        "text": " sus celdas. Esto me permite cargar las necesarias y el criterio que adoptamos con esta estructura de datos es",
+        "start": 199.44,
+        "end": 207.96
+    },
+    {
+        "text": " que las cargamos contra el izquierda. Eso es un criterio. Se nos podría haber ocurrido por ejemplo cargarlas",
+        "start": 207.96,
+        "end": 214.44
+    },
+    {
+        "text": " contra la derecha. Entonces esto nos permite resolver problemas en los cuales la cantidad de",
+        "start": 214.44,
+        "end": 223.52
+    },
+    {
+        "text": " elementos que vamos al macenar en el arreglo puede llegar a variar. Entonces toda esta estructura es",
+        "start": 223.52,
+        "end": 232.88
+    },
+    {
+        "text": " lo que nosotros va a utilizar como un arreglo con tope. ¿Sí? ¿Había alguna restricción para el",
+        "start": 232.88,
+        "end": 240.64000000000001
+    },
+    {
+        "text": " tipo de los elementos del arreglo ninguna? Podían ser de cualquier tipo ya fuera predefinido o definido por el",
+        "start": 240.64000000000001,
+        "end": 248.92000000000002
+    },
+    {
+        "text": " programa. ¿Sí? Cosas importantes a tener en cuenta en el arreglo con tope cada vez que inserto un nuevo",
+        "start": 248.92,
+        "end": 256.36
+    },
+    {
+        "text": " elemento que debajo hacer. Sumarle uno al tope cada vez que elimino un elemento restarle uno al tope.",
+        "start": 256.36,
+        "end": 264.56
+    },
+    {
+        "text": " Podían haber a su vez distintas estrategias de inserción y distintas estrategias de eliminación. Yo",
+        "start": 264.56,
+        "end": 272.52
+    },
+    {
+        "text": " puedo querer eliminar manteniendo el orden de los elementos. O puedo querer eliminar sin que me",
+        "start": 272.52,
+        "end": 278.4
+    },
+    {
+        "text": " importe mantener el orden de los elementos. O cualquiera sea la estrategia de inserción o de borrado,",
+        "start": 278.4,
+        "end": 285.84
+    },
+    {
+        "text": " debo asegurarme de actualizar a propiedadamente el tope. Porque además el tope no se actualiza solo. Es",
+        "start": 285.84,
+        "end": 293.47999999999996
+    },
+    {
+        "text": " uno quien debe llevar el control de lo valor que tiene el tope. ¿Más preguntas de arreglo con tope?",
+        "start": 293.47999999999996,
+        "end": 301.56
+    },
+    {
+        "text": " Bueno, vamos a terminar el ejercicio 11. ¿Sí?",
+        "start": 302.56,
+        "end": 306.24
+    },
+    {
+        "text": " Y me va a quedar información inconsistente. Por ejemplo, si vos cargaste 3 y el tope te quedó en 2,",
+        "start": 313.24,
+        "end": 320.12
+    },
+    {
+        "text": " el tercero es como si no lo hubieras cargado. Porque cuando lo hago a las operaciones de arregorrida sobre",
+        "start": 320.12,
+        "end": 326.88
+    },
+    {
+        "text": " el arreglo, vos vas a ir hasta el tope. Entonces, solamente vas a procesar las celdas 1 y 2. O sea, no",
+        "start": 326.88,
+        "end": 334.8
+    },
+    {
+        "text": " vas a estar haciendo una manipulación si querés coerente de la información almacenada.",
+        "start": 334.8,
+        "end": 339.68
+    },
+    {
+        "text": " Esa es un problema posible. Otro problema que te puede llegar a pasar es quedar dependentes al",
+        "start": 339.68,
+        "end": 345.76
+    },
+    {
+        "text": " agarrango. O sea, las situaciones pueden ser múltiples. En algunos casos te puede dar expresamente",
+        "start": 345.76,
+        "end": 352.04
+    },
+    {
+        "text": " un error de ejecución en el sentido que el programa se rompe. En otros casos,",
+        "start": 352.04,
+        "end": 356.76000000000005
+    },
+    {
+        "text": " pueden no romperse, pero que la ejecución de repente se comporta de manera extraña.",
+        "start": 356.76000000000005,
+        "end": 362.36
+    },
+    {
+        "text": " Por eso la importancia de llevar un control adecuado entre los valores del arreglo y el valor del",
+        "start": 364.04,
+        "end": 369.36
+    },
+    {
+        "text": " roo. Bien, bueno, ahora sí, vamos a terminar del práctico 11.",
+        "start": 369.36,
+        "end": 376.92
+    },
+    {
+        "text": " Habíamos empezado a trabajar en el ejercicio 3, que era el de la sociedad genialógica,",
+        "start": 376.92,
+        "end": 387.84000000000003
+    },
+    {
+        "text": " que mediante una reglo con tope, guardaba información de que de personas y una operación nos",
+        "start": 387.84000000000003,
+        "end": 398.62
+    },
+    {
+        "text": " pedían encontrar los ancestros de una persona adada. Habíamos visto que había una serie de",
+        "start": 398.62,
+        "end": 405.38
+    },
+    {
+        "text": " tipos de datos. En particular, la letra del ejercicio definía dos constantes. Una se llamaba",
+        "start": 405.38,
+        "end": 417.1
+    },
+    {
+        "text": " Max Cád, que creo que valía 20, y la otra se llamaba si no recuerdo mal Max Personas,",
+        "start": 417.1,
+        "end": 424.86
+    },
+    {
+        "text": " que valía mil. Donde 20 era el tamaño máximo posible que podía tener una cadena, una cadena",
+        "start": 424.86,
+        "end": 437.78000000000003
+    },
+    {
+        "text": " de carácteres. Y la cadena de carácteres la usábamos para almacenar qué cosa de la persona,",
+        "start": 437.78000000000003,
+        "end": 443.98
+    },
+    {
+        "text": " el nombre de la persona. Luego podíamos tener como mucho mil personas registradas en lo que va a",
+        "start": 443.98,
+        "end": 454.98
+    },
+    {
+        "text": " ser el arreglo con tope de personas. La estructura de una persona era más o menos la siguiente.",
+        "start": 454.98,
+        "end": 462.3
+    },
+    {
+        "text": " Primero que nada, almacenábamos su nombre, y su nombre era una reglo con tope de carácteres,",
+        "start": 463.26,
+        "end": 474.22
+    },
+    {
+        "text": " el cual le habíamos puesto de nombre cadena. Una cadena tenía un campo que era el arreglo de",
+        "start": 474.22,
+        "end": 484.94
+    },
+    {
+        "text": " carácteres y otro campo que era el tope es decir la cantidad de carácteres cargados en la cadena.",
+        "start": 484.94,
+        "end": 489.98
+    },
+    {
+        "text": " Entonces por ejemplo, yo podía tener este nombre en las primeras cinco posiciones de la cadena y el",
+        "start": 489.98,
+        "end": 505.1
+    },
+    {
+        "text": " valor que le colocabamos al tope era cinco. A todo esto era el primer campo de una persona",
+        "start": 505.1,
+        "end": 516.38
+    },
+    {
+        "text": " llamado nombre. O sea una persona era un record que tenía varios campos, el primero se llamaba",
+        "start": 516.78,
+        "end": 523.22
+    },
+    {
+        "text": " nombre y era de tipo cadena, donde cadena sube, era un arreglo con tope de carácteres.",
+        "start": 523.22,
+        "end": 528.86
+    },
+    {
+        "text": " Después del nombre se almacenaba la fecha de nacimiento. La fecha de nacimiento a sube",
+        "start": 531.14,
+        "end": 539.9399999999999
+    },
+    {
+        "text": " era otro record formado por tres centeros, día, mes y año. Y si no recuerdo mal el nombre de",
+        "start": 540.0200000000001,
+        "end": 550.86
+    },
+    {
+        "text": " este campo era Fechnak. Y acá teníamos los valores correspondientes a la fecha de nacimiento",
+        "start": 550.86,
+        "end": 560.74
+    },
+    {
+        "text": " de la persona. Y después venían dos campos más que eran los índices de la reglo de personas",
+        "start": 560.74,
+        "end": 573.9
+    },
+    {
+        "text": " que vamos a ver ahora después, donde estaban almacenados los datos de quienes, de los padres,",
+        "start": 573.9,
+        "end": 580.46
+    },
+    {
+        "text": " de los ancestros, de la madre y del padre. Este se llamaba Inmadre, si no recuerdo mal, y",
+        "start": 580.46,
+        "end": 590.7800000000001
+    },
+    {
+        "text": " este era InPadre. En caso de que se contara con la información de la madre y el padre de la",
+        "start": 590.7800000000001,
+        "end": 597.7800000000001
+    },
+    {
+        "text": " persona, lo que iban acá eran los índices de ese otro arreglo donde ocurría. Y si no se",
+        "start": 597.7800000000001,
+        "end": 605.1800000000001
+    },
+    {
+        "text": " contaba con la información se ponía cero. Vamos a suponer que para el caso de Juana los datos",
+        "start": 605.18,
+        "end": 612.4599999999999
+    },
+    {
+        "text": " de su madre estaban en el índice dos y los datos de su padre en el índice cinco. Entonces todo esto",
+        "start": 612.4599999999999,
+        "end": 618.9799999999999
+    },
+    {
+        "text": " era un record llamado una persona. Estamos repasando los tipos de datos de este ejercicio. Y luego venía",
+        "start": 618.98,
+        "end": 638.26
+    },
+    {
+        "text": " el otro arreglo con Topes que se llamaba Familia, que almacenaba elementos de tipo una persona.",
+        "start": 638.26,
+        "end": 646.34
+    },
+    {
+        "text": " Entonces por ejemplo, nosotros podíamos tenerlo así y teníamos celdas en las cuales se almacenaban",
+        "start": 646.34,
+        "end": 669.5
+    },
+    {
+        "text": " elementos de tipo una persona. Y después estaba el Topes de este arreglo. A todos este arreglo lo habíamos",
+        "start": 669.5,
+        "end": 678.58
+    },
+    {
+        "text": " llamado Familia. Y los nombres de los campos eran Pers y Topes. Pers era un arreglo de elementos de",
+        "start": 678.58,
+        "end": 692.54
+    },
+    {
+        "text": " tipo una persona y Topes, la cantidad de personas almacenadas. Entonces por ejemplo,",
+        "start": 692.54,
+        "end": 700.5
+    },
+    {
+        "text": " vamos a suponer que teníamos seis personas almacenadas de como mucho mil personas.",
+        "start": 703.5,
+        "end": 711.02
+    },
+    {
+        "text": " El valor del Topes debería ser un seis. Y por ejemplo, acá en la Zelda 3, si hacíamos un zoom,",
+        "start": 711.02,
+        "end": 726.14
+    },
+    {
+        "text": " teníamos los datos de Juana. Y en las otras celdas teníamos datos de otras personas.",
+        "start": 726.14,
+        "end": 737.42
+    },
+    {
+        "text": " Concretamente en la Zelda 2, que estaban los datos de la madre de Juana y en la Zelda 5 los datos",
+        "start": 740.22,
+        "end": 747.9
+    },
+    {
+        "text": " del padre. ¿Estás bien? Sí. Es él, el ejercicio 2 en vez del ejercicio 3. Gracias.",
+        "start": 747.9,
+        "end": 758.38
+    },
+    {
+        "text": " Bueno, igual ubican que ejercicio hablamos, ¿no? Bien. Bueno, y este ejercicio pedí implementar una",
+        "start": 758.38,
+        "end": 767.4599999999999
+    },
+    {
+        "text": " serie de subprogramas. Punto almente, voy a borrar acá. La parte da pedía una función que",
+        "start": 767.46,
+        "end": 780.82
+    },
+    {
+        "text": " verificaba si dos cadenas eran iguales. Y cuyo encabezado era el siguiente.",
+        "start": 780.82,
+        "end": 789.7800000000001
+    },
+    {
+        "text": " Teníamos la palabra función, el nombre de la función y recibía dos parámetros de tipo cadena.",
+        "start": 789.78,
+        "end": 804.74
+    },
+    {
+        "text": " Y lo que hacía era determinar si estas dos cadenas eran o no iguales.",
+        "start": 810.26,
+        "end": 816.78
+    },
+    {
+        "text": " O sea, dos destas. Que luego, más adelante en el ejercicio usábamos esa función para que",
+        "start": 819.78,
+        "end": 827.4599999999999
+    },
+    {
+        "text": " para comparar qué cosa de dos personas. Si eran iguales qué cosa de las personas, los nombres.",
+        "start": 831.4599999999999,
+        "end": 838.26
+    },
+    {
+        "text": " Estas dos cadenas están pasadas de qué forma. Por valor, eso significa que no se van a modificar",
+        "start": 838.74,
+        "end": 850.26
+    },
+    {
+        "text": " dentro de la función. De hecho, en una función dijimos, nunca es recomendable usar el otro",
+        "start": 850.26,
+        "end": 856.3
+    },
+    {
+        "text": " pasaje de parámetros. O sea, nunca es recomendable que en una función se pasen nada por referencia.",
+        "start": 856.3,
+        "end": 860.98
+    },
+    {
+        "text": " Bueno, en la parte de pedía implementar un procedimiento que se encargaba de desplegar una cadena por",
+        "start": 861.54,
+        "end": 873.22
+    },
+    {
+        "text": " pantalla. El cual lo llevamos a usar en su momento para desplegar el nombre de una persona.",
+        "start": 873.22,
+        "end": 882.1
+    },
+    {
+        "text": " Le pasábamos una cadena también por valor. Porque lo único que queríamos hacer era recorrer y mostrarla,",
+        "start": 883.1,
+        "end": 895.0600000000001
+    },
+    {
+        "text": " pero no modificarla. Llegamos a hacer estos dos. Y nos había quedado el de la parte C que lo vimos",
+        "start": 895.0600000000001,
+        "end": 904.9
+    },
+    {
+        "text": " medio por arriba y que ahora lo vamos a terminar. Bueno, en la parte C pedía implementar un procedimiento",
+        "start": 904.9,
+        "end": 919.98
+    },
+    {
+        "text": " que se llamaba Antepasados que recibía dos parámetros. Una cadena, el nombre del parámetro era",
+        "start": 919.98,
+        "end": 934.82
+    },
+    {
+        "text": " usted que representaba el nombre de una persona y recibía como segundo parámetro una familia.",
+        "start": 934.82,
+        "end": 946.54
+    },
+    {
+        "text": " Y el nombre del parámetro era historia. Y lo que decía era representaba esto. Me pasan una",
+        "start": 947.54,
+        "end": 956.8
+    },
+    {
+        "text": " reglo con tope de personas y me pasaban el nombre de una persona. Lo que pedía hacer este ejercicio que era.",
+        "start": 956.8,
+        "end": 964.02
+    },
+    {
+        "text": " Primero con el nombre de la persona que cosa. Encontrar a la persona si existía porque",
+        "start": 966.26,
+        "end": 974.78
+    },
+    {
+        "text": " podía no estar. Está bien. Y en caso de existir que debíamos hacer. Fijarnos en los índices de su",
+        "start": 974.78,
+        "end": 987.38
+    },
+    {
+        "text": " madre y su padre si estaban cargados. Y en caso de estarlo desplegar por pantalla, pedía nombre y fecha",
+        "start": 987.38,
+        "end": 995.78
+    },
+    {
+        "text": " de nacimiento si no recuerdo mal. Bueno, entonces eso es lo que vamos a hacer. Vamos a declarar una",
+        "start": 995.78,
+        "end": 1006.18
+    },
+    {
+        "text": " sección para variables y vamos colocando las variables que necesitemos y comienza el cuerpo del procedimiento.",
+        "start": 1006.18,
+        "end": 1016.62
+    },
+    {
+        "text": " Y habíamos llegado a discutir la idea pero lo habíamos dejado medio en el aire. Lo primero era",
+        "start": 1017.62,
+        "end": 1024.62
+    },
+    {
+        "text": " hacer la búsqueda de la persona cuyo nombre fuera usted. ¿Cómo hacíamos esa búsqueda? ¿Cómo hacemos",
+        "start": 1024.62,
+        "end": 1034.82
+    },
+    {
+        "text": " cualquier búsqueda? Con guay. De hecho tenemos un esquema de búsqueda que consiste en un guay con",
+        "start": 1034.82,
+        "end": 1042.18
+    },
+    {
+        "text": " dos condiciones. Se para mediante antes. La primera es para controlar que. Y no irnos de rango y la",
+        "start": 1042.18,
+        "end": 1050.8200000000002
+    },
+    {
+        "text": " segunda es para controlar que cosa. Si el elemento en el que estamos cumple la condición, ¿sí?",
+        "start": 1050.8200000000002,
+        "end": 1058.98
+    },
+    {
+        "text": " Que estamos queriendo verificar. En este caso cualice esa condición. Que sean la misma cadena de",
+        "start": 1058.98,
+        "end": 1067.74
+    },
+    {
+        "text": " caracteres que sean mismos nombres. ¿Está bien? Bueno, ¿cómo hacemos ese guay? ¿Qué necesitamos?",
+        "start": 1067.74,
+        "end": 1076.5
+    },
+    {
+        "text": " Primero para ir recorriendo. No, a mí me están pasando toda una cadena. Nosotros hicimos una",
+        "start": 1076.5,
+        "end": 1087.42
+    },
+    {
+        "text": " función que si le pasamos dos cadenas me comparas y son iguales e internamente a esa función",
+        "start": 1087.42,
+        "end": 1093.34
+    },
+    {
+        "text": " teníamos un índice. Vamos a hacer una variable y. ¿Qué vaya desde uno hasta más personas?",
+        "start": 1093.34,
+        "end": 1103.22
+    },
+    {
+        "text": " Eso tenía un problema. ¿Qué pasaba si llegábamos al final? Nos íbamos de rango. ¿Está bien?",
+        "start": 1103.22,
+        "end": 1109.4599999999998
+    },
+    {
+        "text": " Entonces puede ser. O bien la cantidad de personas más uno o más genérico. Intellar.",
+        "start": 1109.4599999999998,
+        "end": 1114.8999999999999
+    },
+    {
+        "text": " ¿Sí? Cualquier de las dos es válida. Bueno. Y ahora empezamos la búsqueda en que Zelda.",
+        "start": 1114.9,
+        "end": 1125.22
+    },
+    {
+        "text": " En la uno. Entonces empezamos en la posición uno. Y ahora planteábamos el esquema de búsqueda,",
+        "start": 1125.22,
+        "end": 1136.14
+    },
+    {
+        "text": " que era el guay. Bueno, nos estamos parando acá en la posición uno de la historia. ¿Sí?",
+        "start": 1136.14,
+        "end": 1147.22
+    },
+    {
+        "text": " ¿Cuál es la primera condición? Mientras que í sea menor o igual a historia punto top. Un error",
+        "start": 1147.22,
+        "end": 1157.1000000000001
+    },
+    {
+        "text": " común cuando se manipula un arreglo con top es, en vez de poner esto, poner que cosa. La constante.",
+        "start": 1157.1000000000001,
+        "end": 1164.7
+    },
+    {
+        "text": " Sería la constante si fuese un arreglo común. Una arreglo cuya Zelda se carga en su totalidad.",
+        "start": 1165.26,
+        "end": 1171.78
+    },
+    {
+        "text": " Pero considerando que es un arreglo con top, no vamos a ir hasta el final del todo, sino como mucho",
+        "start": 1172.78,
+        "end": 1178.8600000000001
+    },
+    {
+        "text": " hasta el top. ¿Está bien? Bien. Si no llegamos al final debemos comparar el nombre de esta persona",
+        "start": 1178.8600000000001,
+        "end": 1190.7
+    },
+    {
+        "text": " con usted. Y esta es la parte en la cual hacíamos uso de la función de la parte A. Mientras que cosa,",
+        "start": 1191.26,
+        "end": 1202.22
+    },
+    {
+        "text": " tú de escribí abajo. Mientras no se cumpla y llamábamos a cadenas iguales,",
+        "start": 1202.22,
+        "end": 1212.94
+    },
+    {
+        "text": " recordemos, yo desde un subprograma puedo llamar a otro subprograma que haya sido definido antes",
+        "start": 1212.94,
+        "end": 1223.5
+    },
+    {
+        "text": " en el programa. Y le tengo que pasar dos cadenas. Una es usted. Y la otra tiene la tupo. Y la otra tiene",
+        "start": 1223.5,
+        "end": 1236.26
+    },
+    {
+        "text": " que ser el nombre de la persona que tenemos dentro de esa Zelda. Toda la estructura de tipo",
+        "start": 1236.26,
+        "end": 1242.9
+    },
+    {
+        "text": " familia se llama historia. Entonces, lo primero que colocamos es historia. Historia por ser un",
+        "start": 1242.9,
+        "end": 1253.74
+    },
+    {
+        "text": " arreglo con top es un récord. Entonces me voy a meter al primer campo y para meterme el primer campo,",
+        "start": 1253.74,
+        "end": 1260.66
+    },
+    {
+        "text": " que ponemos, punto perso. Con esto hemos accedido al arreglo dentro de la historia. Ahora que ya estamos",
+        "start": 1260.66,
+        "end": 1270.94
+    },
+    {
+        "text": " parado sobre el arreglo, nos tenemos que meter en la Zelda. Indice I. Me metí acá dentro de la Zelda y",
+        "start": 1270.94,
+        "end": 1283.6200000000001
+    },
+    {
+        "text": " hacía una persona. Y dentro de esa persona nos metemos al campo nombre. O sea, punto nombre y todo esto",
+        "start": 1283.62,
+        "end": 1293.54
+    },
+    {
+        "text": " de qué tipo es. De tipo cadena. O sea que usted es de tipo cadena y todo esto también es de",
+        "start": 1294.34,
+        "end": 1304.26
+    },
+    {
+        "text": " tipo cadena. Estos parámetros efectivos son compatibles con los parámetros nominales del",
+        "start": 1304.26,
+        "end": 1310.1799999999998
+    },
+    {
+        "text": " encabezado. De hecho son del mismo tipo. Entonces acá estamos llamando a la función cadena",
+        "start": 1310.18,
+        "end": 1320.14
+    },
+    {
+        "text": " iguales que internamente se va a encargar de qué. De hacer la recorrida para ver si las cadenas",
+        "start": 1320.14,
+        "end": 1326.38
+    },
+    {
+        "text": " efectivamente son idénticas. Y qué me va a devolvar. Truevo false. ¿Ve bien? Bien. Entonces, mientras no",
+        "start": 1326.38,
+        "end": 1337.66
+    },
+    {
+        "text": " llegué al final y las cadenas no son iguales que hacemos, avanzamos como en cualquier búsqueda.",
+        "start": 1337.66,
+        "end": 1345.5
+    },
+    {
+        "text": " Lo que hacíamos era pasada a la siguiente Zelda. Entonces el resultado de esta búsqueda",
+        "start": 1348.0,
+        "end": 1359.74
+    },
+    {
+        "text": " podía hacer que llegábamos al final del todo en cuyo caso nos íbamos por la primera condición o que",
+        "start": 1359.74,
+        "end": 1367.86
+    },
+    {
+        "text": " durante la recorrida encontrabamos a la persona buscada en cuyo caso nos íbamos por la segunda condición.",
+        "start": 1367.86,
+        "end": 1373.9
+    },
+    {
+        "text": " Si no encontramos a la persona que hay que hacer, no hay que hacer nada. Préseimiento pedía en",
+        "start": 1375.3,
+        "end": 1383.7
+    },
+    {
+        "text": " caso de encontrarla, mostrarla si si no nos mostrán nada. Si encontramos a la persona ya es",
+        "start": 1383.7,
+        "end": 1389.7
+    },
+    {
+        "text": " garantía de que vamos a mostrar algo. No, tenemos que fijarnos en los índices del padre y la madre.",
+        "start": 1389.7,
+        "end": 1396.22
+    },
+    {
+        "text": " Está porque si los dos son cero entonces que sucede tampoco se vamos a mostrar nada.",
+        "start": 1397.46,
+        "end": 1403.18
+    },
+    {
+        "text": " Hasta acá con esto nos solimos la búsqueda. En caso de que yo encuentre la persona donde va a quedarí.",
+        "start": 1405.18,
+        "end": 1411.06
+    },
+    {
+        "text": " Apuntando a la posición donde está la persona buscada en el ejemplo Juana.",
+        "start": 1414.26,
+        "end": 1420.02
+    },
+    {
+        "text": " Bien, vamos a controlar eso de aquel lado.",
+        "start": 1423.46,
+        "end": 1426.54
+    },
+    {
+        "text": " Bueno, borra esta parte de acá.",
+        "start": 1432.14,
+        "end": 1434.18
+    },
+    {
+        "text": " Bueno, en cómo preguntamos si encontramos a la persona.",
+        "start": 1443.7,
+        "end": 1452.3400000000001
+    },
+    {
+        "text": " Y FI perfecto menor o igual a historia punto tope.",
+        "start": 1452.3400000000001,
+        "end": 1461.6200000000001
+    },
+    {
+        "text": " Si pasa esto quiere decir que salimos antes de llegar al tope y eso significa que encontramos",
+        "start": 1461.6200000000001,
+        "end": 1471.9
+    },
+    {
+        "text": " a la persona. Bueno, si encontramos a la persona debemos meternos dentro de la celda correspondiente",
+        "start": 1471.9,
+        "end": 1483.5400000000002
+    },
+    {
+        "text": " a esa persona. Y tenemos que fijarnos si el índice de la madre es distinto de cero.",
+        "start": 1483.5400000000002,
+        "end": 1491.7
+    },
+    {
+        "text": " Yo voy a declare acá dos variables auxiliares más que van a ser in-m-in-p.",
+        "start": 1492.66,
+        "end": 1499.98
+    },
+    {
+        "text": " Que me van a servir para guardarme los índices respectivos de madre y padre y acceder a las",
+        "start": 1503.46,
+        "end": 1510.18
+    },
+    {
+        "text": " celdas correspondientes si es que las hay. Vamos a hacerlo primero para el caso de la madre.",
+        "start": 1510.18,
+        "end": 1516.78
+    },
+    {
+        "text": " En índice que me voy a guardar.",
+        "start": 1522.38,
+        "end": 1525.6200000000001
+    },
+    {
+        "text": " Me voy a guardar.",
+        "start": 1528.78,
+        "end": 1529.8600000000001
+    },
+    {
+        "text": " Historia punto pers en la posición I que es la posición donde yo encontré la persona.",
+        "start": 1529.86,
+        "end": 1541.82
+    },
+    {
+        "text": " O sea, historia punto pers de I es esto, que es una persona.",
+        "start": 1541.82,
+        "end": 1547.9399999999998
+    },
+    {
+        "text": " El campo es un madre.",
+        "start": 1547.9399999999998,
+        "end": 1551.58
+    },
+    {
+        "text": " Y luego más abajo hacemos lo mismo con el padre. Bueno, ahora que chequeo hacemos.",
+        "start": 1551.58,
+        "end": 1562.34
+    },
+    {
+        "text": " Si es distinto de cero, nosotros estamos asumiendo en todo momento que la información que vino",
+        "start": 1564.74,
+        "end": 1570.82
+    },
+    {
+        "text": " cargada en la familia es consistente. No está mal, que si allí hay un valor distinto de cero",
+        "start": 1570.82,
+        "end": 1577.6599999999999
+    },
+    {
+        "text": " efectivamente corresponde a un índice válido del arreglo. Entonces la pregunta ahora era si",
+        "start": 1577.66,
+        "end": 1585.9
+    },
+    {
+        "text": " ese valor el índice de la madre era distinto de cero. Si es distinto de cero que significa",
+        "start": 1589.5,
+        "end": 1597.3000000000002
+    },
+    {
+        "text": " que disponemos de los datos de la madre de Juana en el índice 2. Por ejemplo,",
+        "start": 1599.9,
+        "end": 1604.3400000000001
+    },
+    {
+        "text": " entonces nos tenemos que meter a ese índice y usando desplegar cadena, desplegamos el nombre.",
+        "start": 1605.34,
+        "end": 1613.54
+    },
+    {
+        "text": " ¿A bien? ¿Cómo hacemos eso?",
+        "start": 1613.54,
+        "end": 1616.8999999999999
+    },
+    {
+        "text": " Ya vamos a desplegar cadena",
+        "start": 1620.8999999999999,
+        "end": 1622.62
+    },
+    {
+        "text": " y le tenemos que pasar algo de tipo cadena, concretamente el nombre de la madre de la persona",
+        "start": 1622.62,
+        "end": 1637.6999999999998
+    },
+    {
+        "text": " encontrada. Entonces esto es historia punto pers con eso accedimos al arreglo pero acá en",
+        "start": 1637.6999999999998,
+        "end": 1650.7399999999998
+    },
+    {
+        "text": " qué posición? En la posición inm. Ahí tenemos una persona que es distinta de Juana, es la madre",
+        "start": 1650.74,
+        "end": 1662.94
+    },
+    {
+        "text": " de Juana y de la madre de Juana punto nombre. Y después vamos a hacerlo mismo con el padre.",
+        "start": 1662.94,
+        "end": 1675.22
+    },
+    {
+        "text": " Exactamente. Bueno, no me dieron un procedimiento para desplegar una fecha, o sea que vamos a desplegar a",
+        "start": 1676.02,
+        "end": 1688.42
+    },
+    {
+        "text": " camismos los valores de la fecha. Por eso puse el Vim, porque vamos a hacer otra instrucción a",
+        "start": 1688.42,
+        "end": 1694.6200000000001
+    },
+    {
+        "text": " continuación. Si no subieran dado un procedimiento auxiliar, hacemos lo mismo que con desplegar cadena,",
+        "start": 1694.6200000000001,
+        "end": 1703.22
+    },
+    {
+        "text": " lo llamamos. Y si no me dieron un procedimiento auxiliar, me lo puedo hacer yo.",
+        "start": 1703.22,
+        "end": 1708.58
+    },
+    {
+        "text": " Siempre es una buena estrategia definir sus programas auxiliares que te resuelvan parte del trabajo.",
+        "start": 1710.58,
+        "end": 1717.22
+    },
+    {
+        "text": " Es más, vamos a suponer que tenemos un procedimiento desplegar fecha y vamos a llamarlo.",
+        "start": 1719.22,
+        "end": 1725.38
+    },
+    {
+        "text": " ¿Cómo haríamos la llamada? Pondríamos desplegar fecha y le tenemos que pasar algo de tipo fecha.",
+        "start": 1726.1000000000001,
+        "end": 1737.6200000000001
+    },
+    {
+        "text": " Sí, concretamente, que sería historia punto, perz, indeme hasta casi igual, sólo que el campo",
+        "start": 1737.62,
+        "end": 1751.3
+    },
+    {
+        "text": " al que accedemos ahora es fecha. ¿Están lo leano precisa? No, es un récord, con día a mes año.",
+        "start": 1751.3,
+        "end": 1768.4199999999998
+    },
+    {
+        "text": " Bueno, con esto es que hemos controlado si la persona encontrada está el que disponemos de los",
+        "start": 1768.42,
+        "end": 1782.54
+    },
+    {
+        "text": " datos de su madre y si disponemos de ellos, los mostramos. A continuación que habría que hacer otro",
+        "start": 1782.54,
+        "end": 1790.02
+    },
+    {
+        "text": " is igual esto, pero para el padre. O sea, trabajando en vez de con indeme con imp.",
+        "start": 1790.02,
+        "end": 1796.06
+    },
+    {
+        "text": " Yo lo voy a dejar acá como punto suspensivos, pero es lo que iría a continuación.",
+        "start": 1797.58,
+        "end": 1802.58
+    },
+    {
+        "text": " Otro is como este, pero con imp, que se le indice del padre. Y luego es que cerramos",
+        "start": 1803.58,
+        "end": 1811.74
+    },
+    {
+        "text": " elifgramme. A bien, y con eso es que finaliza el procedimiento. ¿De acuerdo?",
+        "start": 1812.02,
+        "end": 1825.66
+    },
+    {
+        "text": " Este tipo de ejercicios son los que ustedes van a ver en la segunda tarea que en el correr de",
+        "start": 1828.7,
+        "end": 1836.7
+    },
+    {
+        "text": " la semana que viene ya se va a publicar y también en el segundo parcial. O sea, que vayan",
+        "start": 1836.7,
+        "end": 1844.18
+    },
+    {
+        "text": " se preparando a manipular estructuras complejas de este estilo. ¿Está bien? Bueno, más preguntas",
+        "start": 1844.18,
+        "end": 1854.02
+    },
+    {
+        "text": " de este ejercicio. Historia era de tipo familia y familia era una reglo con topes en cuyas",
+        "start": 1854.02,
+        "end": 1863.22
+    },
+    {
+        "text": " elas tendrías registros de estos. Sí. Se supone que yo ahí se un supuesto que tengo otro",
+        "start": 1863.22,
+        "end": 1878.1000000000001
+    },
+    {
+        "text": " procedimiento de desplegar fecha que recibe algo de tipo fecha como parámetro. La misma idea que",
+        "start": 1878.1000000000001,
+        "end": 1883.02
+    },
+    {
+        "text": " la cadena. Y dentro de ese procedimiento con el punto acceder al campo día lo mostras,",
+        "start": 1883.02,
+        "end": 1890.46
+    },
+    {
+        "text": " al campo mes lo mostras y el campo año lo mostras.",
+        "start": 1890.46,
+        "end": 1892.7
+    },
+    {
+        "text": " ¿Más preguntas de esto? Bueno, ahora sí, oficialmente damos por cerrado a reglo con topes.",
+        "start": 1898.18,
+        "end": 1904.9
+    },
+    {
+        "text": " Y vamos a ver otra cosa más que son los registros con variante.",
+        "start": 1906.9,
+        "end": 1911.22
+    },
+    {
+        "text": " Damos unos segundos y quieren copiar eso y pasamos a dar registros con variante.",
+        "start": 1911.94,
+        "end": 1916.7
+    },
+    {
+        "text": " Bueno, registros variantes. Vamos a ver que valga la redundancia en la palabra es una variante",
+        "start": 1927.9,
+        "end": 1936.82
+    },
+    {
+        "text": " al registro común y corriente. Un registro común y corriente se definía en Pascal mediante",
+        "start": 1936.82,
+        "end": 1943.98
+    },
+    {
+        "text": " qué palabra. En la palabra récord. Record era una clase de tipo de datos que nosotros podíamos definir,",
+        "start": 1943.98,
+        "end": 1955.82
+    },
+    {
+        "text": " era un tipo de datos estructurado. Se definían dentro de la sección de tipos del programa con la",
+        "start": 1955.82,
+        "end": 1963.26
+    },
+    {
+        "text": " palabra tie. Y al registro le poníamos campos. Cada uno de esos campos tenía un nombre,",
+        "start": 1963.26,
+        "end": 1971.62
+    },
+    {
+        "text": " un identificador, y tenía también asociado un tipo. Y lo que tenía de especial al récord era",
+        "start": 1971.62,
+        "end": 1980.02
+    },
+    {
+        "text": " que no necesariamente todos los campos tenían porque se le del mismo tipo, podrían ser incluso todos",
+        "start": 1980.02,
+        "end": 1985.1
+    },
+    {
+        "text": " de diferentes. Hasta acá un record como lo conocemos. Vamos a ver ahora una variante que puede",
+        "start": 1985.1,
+        "end": 1996.1
+    },
+    {
+        "text": " llegar a tener un record. Y esto a diferencia de la reglo con topes, se implica una cuestión de",
+        "start": 1996.1,
+        "end": 2003.6599999999999
+    },
+    {
+        "text": " sintaxis. Se define sintácticamente una manera especial que la vamos a ver ahora. Se quiere",
+        "start": 2003.6599999999999,
+        "end": 2012.58
+    },
+    {
+        "text": " representar una entidad que puede pertenecer a diferentes categorías. Por ejemplo, yo puedo tener",
+        "start": 2012.58,
+        "end": 2020.98
+    },
+    {
+        "text": " que representar a un empleado, de una empresa, y puedo tener varios tipos de empleados.",
+        "start": 2020.98,
+        "end": 2028.1399999999999
+    },
+    {
+        "text": " Puedo tener el empleado fijo, el empleado jornalero y el empleado safral. Entonces, según la",
+        "start": 2028.1399999999999,
+        "end": 2036.1399999999999
+    },
+    {
+        "text": " categoría hay diferentes datos, pero existen ciertos datos que son comunes a todas las categorías.",
+        "start": 2036.14,
+        "end": 2043.7
+    },
+    {
+        "text": " Por ejemplo, de todos los empleados yo puedo querer registrar, sé de una nombre y apellido.",
+        "start": 2044.7,
+        "end": 2049.38
+    },
+    {
+        "text": " Ahora, si el empleado es fijo, de repente puedo querer registrar su horario de trabajo.",
+        "start": 2049.38,
+        "end": 2055.02
+    },
+    {
+        "text": " Si el empleado es jornalero, no sé, de repente quiero registrar el valor ahora, y si el empleado",
+        "start": 2055.02,
+        "end": 2062.02
+    },
+    {
+        "text": " es afral en que fecha empieza y en que fecha termina. O sea, una parte de los datos son comunes",
+        "start": 2062.02,
+        "end": 2068.66
+    },
+    {
+        "text": " a todos los empleados, pero hay otra parte que son variantes. Que según el tipo concreto",
+        "start": 2068.66,
+        "end": 2076.46
+    },
+    {
+        "text": " de empleado es ¿cuáles son esos datos específicos que vamos a representar? Y eso se modelan",
+        "start": 2076.46,
+        "end": 2083.66
+    },
+    {
+        "text": " Pascal mediante un registro con variante. Otro ejemplo, queremos representar estudiantes",
+        "start": 2083.66,
+        "end": 2094.18
+    },
+    {
+        "text": " o mejor dicho personas universitarias. ¿Sí? Donde un universitario puede ser un estudiante,",
+        "start": 2094.18,
+        "end": 2102.58
+    },
+    {
+        "text": " un docente o un egresado. Tenemos tres tipos posibles de universitario. De todos los universitarios,",
+        "start": 2102.58,
+        "end": 2112.1
+    },
+    {
+        "text": " vamos a querer registrar cédula y credencial cívica. Eso van a ser los datos comunes a todos",
+        "start": 2112.1,
+        "end": 2118.94
+    },
+    {
+        "text": " ellos. Los datos en algún sentido no variantes. Ahora bien, si el universitario es un estudiante,",
+        "start": 2118.94,
+        "end": 2129.22
+    },
+    {
+        "text": " además de cédula y credencial cívica, yo voy a querer representar año de ingreso y cantidad",
+        "start": 2129.22,
+        "end": 2133.7799999999997
+    },
+    {
+        "text": " de materias. Si es un docente, además de cédula y credencial cívica, carga horaria y",
+        "start": 2133.78,
+        "end": 2140.5
+    },
+    {
+        "text": " cual es su grado. Y si es un egresado, además de cédula y credencial, año de agreso y título.",
+        "start": 2140.5,
+        "end": 2147.1000000000004
+    },
+    {
+        "text": " O sea, hay dos datos que cualquier universitario sí o sí va a tener. Los demás datos van a depender",
+        "start": 2147.1000000000004,
+        "end": 2154.82
+    },
+    {
+        "text": " del tipo concreto de universitario que se tenga. Una situación como esta o como la del empleado que",
+        "start": 2154.82,
+        "end": 2164.54
+    },
+    {
+        "text": " dijimos recién se modela mediante lo que en Pascal se llama un registro variante.",
+        "start": 2164.54,
+        "end": 2169.6600000000003
+    },
+    {
+        "text": " Que es una variante del registro usual. Es un tipo especial de récord que se define de la",
+        "start": 2172.38,
+        "end": 2183.38
+    },
+    {
+        "text": " siguiente manera. Vamos a definir un récord, o sea que el comienzo de la definición es como la de un",
+        "start": 2183.38,
+        "end": 2192.38
+    },
+    {
+        "text": " registro común y lo primero que se pone son aquellos campos que son comunes a cualquier universitario.",
+        "start": 2192.38,
+        "end": 2202.46
+    },
+    {
+        "text": " Puede llegar a pasar incluso que no haya ningún dato común. En este ejemplo sí lo hay. De todo",
+        "start": 2203.6600000000003,
+        "end": 2209.46
+    },
+    {
+        "text": " universitario quiero tener cédula y tener credencial. Pero podría tener alguna otra realidad donde no",
+        "start": 2209.46,
+        "end": 2215.3
+    },
+    {
+        "text": " haya ningún dato que sea común a todos. En cuyo caso toda la información se va a definir dentro",
+        "start": 2215.3,
+        "end": 2220.98
+    },
+    {
+        "text": " de lo que vamos a ver ahora que es la parte variante. Pero en el caso del universitario todo",
+        "start": 2220.98,
+        "end": 2228.3
+    },
+    {
+        "text": " universitario tiene una cédula y una credencial. Vamos a suponer que tenemos definido más arriba",
+        "start": 2228.3,
+        "end": 2235.02
+    },
+    {
+        "text": " un tipo de datos para la cédula y otro tipo de datos para la credencial. Entonces cualquier",
+        "start": 2235.02,
+        "end": 2243.74
+    },
+    {
+        "text": " universitario sus primeros dos campos van a ser cédula y credencial. Hasta acá pregunta.",
+        "start": 2243.74,
+        "end": 2251.02
+    },
+    {
+        "text": " Estos son lo que se llaman los campos no variantes. Los campos en algún sentido entre comillas",
+        "start": 2253.38,
+        "end": 2258.66
+    },
+    {
+        "text": " fijos. Bueno no son constantes porque el valor concreto puede variar. Lo que es constante es que",
+        "start": 2258.66,
+        "end": 2266.7799999999997
+    },
+    {
+        "text": " cualquier universitario los tiene. ¿Sabien? Ataca. Sí. No, no, no, campos. No nunca dije difusos.",
+        "start": 2266.7799999999997,
+        "end": 2278.3399999999997
+    },
+    {
+        "text": " No campos no variantes o a los humanos campos fijos. No dije difusos, ¿no? Bien, no hay nada difuso.",
+        "start": 2278.3399999999997,
+        "end": 2288.2999999999997
+    },
+    {
+        "text": " Bueno, luego va a venir un tercer campo que es un campo muy especial que vamos a llamarlo el",
+        "start": 2289.3,
+        "end": 2297.34
+    },
+    {
+        "text": " discriminante. Es el que me va a permitir a mí decidir o mejor dicho indicar con cuál tipo",
+        "start": 2297.34,
+        "end": 2304.7400000000002
+    },
+    {
+        "text": " concreto universitario estoy. Me detengo un segundo y te me voy más arriba. Esto que definí acá es",
+        "start": 2304.7400000000002,
+        "end": 2310.6200000000003
+    },
+    {
+        "text": " un tipo como enumerado. Y los valores que le coloque a este tipo enumerado son los posibles",
+        "start": 2310.62,
+        "end": 2319.18
+    },
+    {
+        "text": " tipos de universitario que puedo tener estudiante docento o egresado. Mejor dicho docento estudiante",
+        "start": 2319.18,
+        "end": 2325.7799999999997
+    },
+    {
+        "text": " o egresado. Entonces fíjense dónde está definido el siguiente campo. Dentro de una estructura",
+        "start": 2325.7799999999997,
+        "end": 2333.18
+    },
+    {
+        "text": " case, cuidado con esta estructura case. Se parece a la estructura de control case, pero no es una",
+        "start": 2333.18,
+        "end": 2341.66
+    },
+    {
+        "text": " estructura de control. Es parte de la definición de un tipo. Este case acá indica que los datos que",
+        "start": 2341.66,
+        "end": 2351.7
+    },
+    {
+        "text": " voy a registrar a continuación van a depender del tipo de universitario que se tenga. Fíjense",
+        "start": 2351.7,
+        "end": 2361.22
+    },
+    {
+        "text": " acá dentro del case es que se declara este campo especial que dijimos que vamos a llamar el",
+        "start": 2361.22,
+        "end": 2367.66
+    },
+    {
+        "text": " discriminante. Es un campo más. En este ejemplo se llama orden y es de tipo te orden donde te orden",
+        "start": 2367.66,
+        "end": 2379.18
+    },
+    {
+        "text": " es el enumerado anterior. O sea que los valores posibles que yo puedo guardar acá, cuáles son",
+        "start": 2379.18,
+        "end": 2384.7799999999997
+    },
+    {
+        "text": " docentes estudiante o egresados. Lo que se indica a continuación y hasta el final del record,",
+        "start": 2385.5,
+        "end": 2394.1400000000003
+    },
+    {
+        "text": " la parte variante siempre tiene que ser lo último que se defina en Pascal, depende del valor que",
+        "start": 2394.1400000000003,
+        "end": 2401.46
+    },
+    {
+        "text": " yo cargue acá. O sea de nuevo todos los universitarios no van a tener exactamente los mismos campos.",
+        "start": 2401.46,
+        "end": 2408.5400000000004
+    },
+    {
+        "text": " Los únicos campos que van a ser comunes a todos ellos son estos, se debo la ecrancial. Los",
+        "start": 2408.5400000000004,
+        "end": 2413.7000000000003
+    },
+    {
+        "text": " demás van a estar sujetos al valor del discriminante. Entonces si en orden yo cargue el valor",
+        "start": 2413.7,
+        "end": 2423.4199999999996
+    },
+    {
+        "text": " docentes, los siguientes datos que se van a cargar del universitario van a ser estos dos, su",
+        "start": 2423.4199999999996,
+        "end": 2430.98
+    },
+    {
+        "text": " grado y su cargabraria. Se definen entre paréntesis a continuación de el mismo valor del enumerado",
+        "start": 2430.98,
+        "end": 2440.2599999999998
+    },
+    {
+        "text": " que estaba reñabando. Dicho de otra manera, si lo que yo cargo es un docentes en total cuantos",
+        "start": 2440.26,
+        "end": 2449.78
+    },
+    {
+        "text": " campos va a tener. Cinco, una cédula, una credencial, el discriminante en el cual vamos a cargar el",
+        "start": 2449.78,
+        "end": 2459.86
+    },
+    {
+        "text": " valor docentes un grado y una carga. Esos van a ser los cinco campos que van a existir, que van a",
+        "start": 2459.86,
+        "end": 2468.26
+    },
+    {
+        "text": " estar cargados en caso de que se traté de un docentes. Ahora si no es un docentes y es un estudiante,",
+        "start": 2468.26,
+        "end": 2476.1800000000003
+    },
+    {
+        "text": " se pone punto y coma y a continuación se indica el valor estudiante y de nuevo entre paréntesis,",
+        "start": 2476.1800000000003,
+        "end": 2482.5800000000004
+    },
+    {
+        "text": " los datos que voy a tener si estoy en el caso de un estudiante van a ser el semestre y la cantidad",
+        "start": 2482.5800000000004,
+        "end": 2492.7400000000002
+    },
+    {
+        "text": " de materias que tiene. O sea que si lo que yo cargue es un estudiante, los campos concretos que",
+        "start": 2492.74,
+        "end": 2501.2999999999997
+    },
+    {
+        "text": " voy a tener cargados cuáles van a ser. Cédula, credencial, orden, cuyo valor va a ser estudiante se",
+        "start": 2501.2999999999997,
+        "end": 2508.2599999999998
+    },
+    {
+        "text": " maestri materias. Dala casualidad que acá fueron dos y acá fueron dos, no quiere decir que en todos los",
+        "start": 2508.2599999999998,
+        "end": 2515.7
+    },
+    {
+        "text": " casos tenga que ser la misma cantidad. El o los campos que corresponda definir para cada valor",
+        "start": 2515.7,
+        "end": 2523.3799999999997
+    },
+    {
+        "text": " concreto los pongo entre paréntesis sean uno, dos o cinco en importa. Lo que sea. Por último, si lo que",
+        "start": 2523.3799999999997,
+        "end": 2532.8199999999997
+    },
+    {
+        "text": " yo cargue acá es el valor egresado, entonces los campos concretos que voy a tener van a ser egreso y",
+        "start": 2532.8199999999997,
+        "end": 2538.8999999999996
+    },
+    {
+        "text": " estar es mi universitario necesariamente va a ser uno de estos. Si pudiera compartir más de uno,",
+        "start": 2545.7799999999997,
+        "end": 2553.7
+    },
+    {
+        "text": " tengo que buscar otra vuelta para definir. Sí. Sí. No, tendrían que ser nombres diferentes. Puede ser del mismo tipo,",
+        "start": 2553.7,
+        "end": 2572.3399999999997
+    },
+    {
+        "text": " pero le pones nombres diferentes. Sí. Como en cualquier récord. Sí.",
+        "start": 2572.34,
+        "end": 2577.3
+    },
+    {
+        "text": " Si, por ejemplo, estudiante, no se puede necesitar de la preparación.",
+        "start": 2577.3,
+        "end": 2582.3
+    },
+    {
+        "text": " Ahí probablemente tendrías que definir otro récord aparte con variante y usarlo dentro de este.",
+        "start": 2582.3,
+        "end": 2589.1400000000003
+    },
+    {
+        "text": " De nuevo, se pueden empezar a combinar diferentes tipos de récord.",
+        "start": 2589.1400000000003,
+        "end": 2593.38
+    },
+    {
+        "text": " O sea, otro récord lo que es la gente de la carrera, que no debe dar una forma de la carrera.",
+        "start": 2593.38,
+        "end": 2598.62
+    },
+    {
+        "text": " Exactamente. Y después usar ese récord adentro de este. Sí. Hasta acá. Ustedes van a ver más adelante",
+        "start": 2598.62,
+        "end": 2609.26
+    },
+    {
+        "text": " en la carrera cuando vean concretamente la programación orientada objetos que este mecanismo",
+        "start": 2609.26,
+        "end": 2615.06
+    },
+    {
+        "text": " de registro con variante se reemplaza por algo que se llama herencia, que es algo que tiene los",
+        "start": 2615.06,
+        "end": 2621.54
+    },
+    {
+        "text": " lenguajes de programación orientados, objetos y que tiene un número de ventajas respecto a esto,",
+        "start": 2621.54,
+        "end": 2627.66
+    },
+    {
+        "text": " que supongo que en su momento les van a discutir. Sí. Por el momento lo que tenemos es esto, el registro",
+        "start": 2627.66,
+        "end": 2634.06
+    },
+    {
+        "text": " variante. Entonces, vamos a imaginarnos que nosotros nos declaramos dos variables ambas de tipo",
+        "start": 2634.06,
+        "end": 2645.2599999999998
+    },
+    {
+        "text": " de universitario. Sí. Tanto 1 como 2 corresponden a ese tipo de datos que está definido.",
+        "start": 2645.26,
+        "end": 2660.1400000000003
+    },
+    {
+        "text": " Vamos a suponer que en 1 yo quiero cargar un docente y que en 2 yo quiero cargar un estudiante.",
+        "start": 2660.1400000000003,
+        "end": 2668.46
+    },
+    {
+        "text": " Vamos a dibujar como quedaría. Concretamente 1, 1 el primer campo que va a tener va a ser",
+        "start": 2669.42,
+        "end": 2677.36
+    },
+    {
+        "text": " cédula. Porque de hecho es uno de los campos que está definido antes de la parte variante. Y en",
+        "start": 2677.36,
+        "end": 2687.34
+    },
+    {
+        "text": " cédula le voy a cargar un valor de tipo cédula. Por ejemplo esto. Luego el segundo campo que voy a",
+        "start": 2687.34,
+        "end": 2700.2200000000003
+    },
+    {
+        "text": " cargar le va a ser la credencial. Entonces acá estará cargada una credencial.",
+        "start": 2700.2200000000003,
+        "end": 2710.1800000000003
+    },
+    {
+        "text": " Sí. Y el tercer campo que le voy a cargar cual va a ser. Orden el discriminarte. Yo le voy a cargar el",
+        "start": 2710.18,
+        "end": 2725.7999999999997
+    },
+    {
+        "text": " campo orden con qué valor. 2 centes que es uno de los valores posibles que puede tomar ese campo",
+        "start": 2725.7999999999997,
+        "end": 2733.62
+    },
+    {
+        "text": " porque es un enumerado. Y los que voy a cargar a continuación cuáles van a ser. Grado y carga.",
+        "start": 2733.62,
+        "end": 2745.08
+    },
+    {
+        "text": " Los otros no existen para 1. Lo que le voy a cargar va a ser grado y carga.",
+        "start": 2745.08,
+        "end": 2752.8599999999997
+    },
+    {
+        "text": " Por ejemplo no sé, grado 2, 40 horas. Todo esto va a ser lo que tenga cargada la variable 1 en",
+        "start": 2752.86,
+        "end": 2770.5
+    },
+    {
+        "text": " tiempo de ejecución. Sí. Está bien que no lleven esta estructura, la estructura de registro",
+        "start": 2770.5,
+        "end": 2781.7400000000002
+    },
+    {
+        "text": " variante, la estructura de record case se define. Empezando el record normalmente, definiendo los",
+        "start": 2781.74,
+        "end": 2788.18
+    },
+    {
+        "text": " campos fijos normalmente, luego se pone case el discriminante, luego los campos variantes y un solo",
+        "start": 2788.18,
+        "end": 2795.7
+    },
+    {
+        "text": " enda al final. Esas sí las syntaxes. Aún no pensaría que deberían ir 2 en 1 por el case y otro",
+        "start": 2795.7,
+        "end": 2802.2599999999998
+    },
+    {
+        "text": " por el record pero no. Pascale está definido para que sea uno solo. El end que te sierra todo el",
+        "start": 2802.2599999999998,
+        "end": 2809.4199999999996
+    },
+    {
+        "text": " tipo de datos. Puedes pensar que te está cerrando el record. El case tanto el case como el",
+        "start": 2809.42,
+        "end": 2818.3
+    },
+    {
+        "text": " record está encerrado, ambos con este. Si, lo inventaron así. Hasta acá vamos a ver después en un",
+        "start": 2818.3,
+        "end": 2829.5
+    },
+    {
+        "text": " ratito que es responsabilidad del programador ser coerente entre el valor que cargue en el",
+        "start": 2829.5,
+        "end": 2839.74
+    },
+    {
+        "text": " discriminante y cuáles de los campos variantes cargue. No lo va a chequear el compilador. Es decir,",
+        "start": 2839.74,
+        "end": 2847.98
+    },
+    {
+        "text": " si yo en orden cargo el valor docente, es luego mi responsabilidad cargar grado y cargar carga. Si yo",
+        "start": 2847.98,
+        "end": 2857.46
+    },
+    {
+        "text": " quiero cargar semestre y materias, el compilador no me lo va a impedir. Pero voy a ver papafritas donde",
+        "start": 2857.46,
+        "end": 2865.14
+    },
+    {
+        "text": " en tiempo de ejecución. Vamos a ver que así como en el arreglo con tope era responsabilidad del",
+        "start": 2865.14,
+        "end": 2873.2200000000003
+    },
+    {
+        "text": " programador. Mantener una coherencia entre la cantidad de valores del arreglo y el valor del tope",
+        "start": 2873.2200000000003,
+        "end": 2878.34
+    },
+    {
+        "text": " en el registro variante es responsabilidad del programador mantener una coherencia entre el",
+        "start": 2878.34,
+        "end": 2885.86
+    },
+    {
+        "text": " valor cargado en el discriminante y los campos variantes efectivamente almacenados.",
+        "start": 2885.86,
+        "end": 2890.1800000000003
+    },
+    {
+        "text": " Enseguitamos ovar la sintaxis. Si.",
+        "start": 2892.2200000000003,
+        "end": 2893.9
+    },
+    {
+        "text": " Lo cual ocurre en tiempo de ejecución. Si fueran tres datos distintos para el docente yo",
+        "start": 2902.42,
+        "end": 2912.86
+    },
+    {
+        "text": " tendría que tener definidos tres datos entre estos paréntesis. O sea, la cantidad de datos concretos para",
+        "start": 2912.86,
+        "end": 2919.38
+    },
+    {
+        "text": " cada uno de los valores posibles del discriminante no tiene por qué ser la misma. Lo que el compilador no te va a",
+        "start": 2919.38,
+        "end": 2925.34
+    },
+    {
+        "text": " impedir es si en orden cargaste docente y venís y pone semestre, el compilador te lo va a dejar pasar.",
+        "start": 2925.34,
+        "end": 2931.42
+    },
+    {
+        "text": " Vas a ver fruta en la ejecución.",
+        "start": 2931.42,
+        "end": 2933.1800000000003
+    },
+    {
+        "text": " A que el programa va a ser impredecible en tiempo de ejecución no va a tener un comportamiento correcto.",
+        "start": 2939.02,
+        "end": 2944.82
+    },
+    {
+        "text": " Si vos en orden cargaste docente, es desperarse que tu cargue es grado y carga con valores que son",
+        "start": 2951.02,
+        "end": 2959.02
+    },
+    {
+        "text": " de este tipo. Ahora si vos cargaste por ejemplo semestre o materias que no son del mismo tipo,",
+        "start": 2959.02,
+        "end": 2965.2599999999998
+    },
+    {
+        "text": " en tiempo de ejecución si tú queres acceder a semestre, en el espacio de memoria que está",
+        "start": 2965.2599999999998,
+        "end": 2974.06
+    },
+    {
+        "text": " siendo ocupado de la variable se suponen que ahí está cargado. Entonces cuando vos muestres",
+        "start": 2974.06,
+        "end": 2979.02
+    },
+    {
+        "text": " semestre, te podemos mostrar fruta. Cualquier valor basura no queda claro. Es algo parecido",
+        "start": 2979.02,
+        "end": 2986.7
+    },
+    {
+        "text": " lo que pasaba en el arreglo con top. Si vos tenías en el top el valor 3 pero en tiempo de",
+        "start": 2986.7,
+        "end": 2991.8199999999997
+    },
+    {
+        "text": " ejecución accedés a la celda 5 el compilador te frena. No, pero en la celda 5 probablemente tenga",
+        "start": 2991.8199999999997,
+        "end": 2998.22
+    },
+    {
+        "text": " basura. O sea la ejecución es impredecible no quiere decir que el programa se te vaya a romper,",
+        "start": 2998.22,
+        "end": 3003.4199999999996
+    },
+    {
+        "text": " pero quiere decir que el programa no va a funcionar bien en tiempo de ejecución. Capaz que se rompe,",
+        "start": 3003.4199999999996,
+        "end": 3008.22
+    },
+    {
+        "text": " capaz que no se rompe y te muestra cualquier cosa, capaz que queda acolgado no se sabe lo que puede",
+        "start": 3008.22,
+        "end": 3014.7
+    },
+    {
+        "text": " pasar. Bueno la variable U2 vamos a suponer que es un estudiante. Entonces U2 va a ser otro record diferente.",
+        "start": 3014.7,
+        "end": 3026.7
+    },
+    {
+        "text": " Cuyos primeros dos campos van a ser nuevamente cédula y credencial. Con los valores concreto que yo le",
+        "start": 3030.06,
+        "end": 3039.8199999999997
+    },
+    {
+        "text": " ponga a el segundo estudiante. Luego en el campo orden que es el discriminante vamos a",
+        "start": 3039.82,
+        "end": 3055.34
+    },
+    {
+        "text": " suponer que cargamos el segundo valor estudiante. Entonces al cargar aquí un estudiante,",
+        "start": 3055.34,
+        "end": 3064.2200000000003
+    },
+    {
+        "text": " los siguientes datos que debo cargar cuáles son, semestre y materias y de nuevo es responsabilidad",
+        "start": 3065.18,
+        "end": 3074.4599999999996
+    },
+    {
+        "text": " del programador cargar esos valores, esos campos perdón y no los demás. No se chequean la",
+        "start": 3074.4599999999996,
+        "end": 3085.62
+    },
+    {
+        "text": " compilación, te puede dar peras en tiempo de ejecución. Bueno no sé semestre 3 y no sé,",
+        "start": 3085.62,
+        "end": 3094.54
+    },
+    {
+        "text": " 10 materias cursadas hasta el momento. Y esto sería una segunda variable de tipo un",
+        "start": 3094.54,
+        "end": 3110.2799999999997
+    },
+    {
+        "text": " universitario. Los primeros tres campos son comunes a los dos, los últimos campos son los",
+        "start": 3110.28,
+        "end": 3120.5600000000004
+    },
+    {
+        "text": " campos variantes. Se cargan en función de lo que yo haya cargado en el tercer campo que es el",
+        "start": 3120.5600000000004,
+        "end": 3127.76
+    },
+    {
+        "text": " discriminante. ¿Entendió? Bien, vamos a ver otro ejemplo. Queremos representar una figura",
+        "start": 3127.76,
+        "end": 3144.88
+    },
+    {
+        "text": " geométrica. Acá tenemos figura. Es un registro con variante. Record un campo como una cualquier",
+        "start": 3144.88,
+        "end": 3158.04
+    },
+    {
+        "text": " figura que va a ser el color, cuyo tipo está definido más arriba, luego viene el discriminante.",
+        "start": 3158.04,
+        "end": 3165.52
+    },
+    {
+        "text": " La figura, el tipo de figura lo voy a guardar en el campo clase que va a ser de tipo",
+        "start": 3166.48,
+        "end": 3173.8
+    },
+    {
+        "text": " tipo figura. Y tipo figura nuevamente que es un enumerado. Y acá tengo los valores",
+        "start": 3173.8,
+        "end": 3184.0
+    },
+    {
+        "text": " posibles que puede tomar ese tipo enumerado. La figura puede ser un círculo, un cuadrado o un",
+        "start": 3184.0,
+        "end": 3190.52
+    },
+    {
+        "text": " rectángulo. Entonces, si lo que yo coloco aquí es círculo, estos van a ser los campos que",
+        "start": 3190.52,
+        "end": 3199.36
+    },
+    {
+        "text": " voy a cargar. Si lo que coloco allí es cuadrado van a ser estos y si el rectángulo van a ser",
+        "start": 3199.36,
+        "end": 3205.04
+    },
+    {
+        "text": " estos otros. Entonces, por ejemplo, si la figura que yo cargo es un rectángulo, los campos",
+        "start": 3205.04,
+        "end": 3217.48
+    },
+    {
+        "text": " concretos que me van a quedar cargados en la variable en tiempo de ejecución van a ser color,",
+        "start": 3217.48,
+        "end": 3221.92
+    },
+    {
+        "text": " clase con qué valor, rectángulo y después base altura y vértice inferior izquierdo. Voy a tener",
+        "start": 3221.92,
+        "end": 3231.4
+    },
+    {
+        "text": " cinco campos cargados en caso de que sea un rectángulo. Ahora sí es un círculo y yo me declaro",
+        "start": 3231.4,
+        "end": 3241.28
+    },
+    {
+        "text": " una variable de tipo figura en tiempo de ejecución voy a cargarle color, clase con el valor",
+        "start": 3241.28,
+        "end": 3247.1600000000003
+    },
+    {
+        "text": " círculo, radio y centro. Ahí van a ser cuatro. Lo que me preguntaba en el más temprano, tenemos",
+        "start": 3247.1600000000003,
+        "end": 3252.28
+    },
+    {
+        "text": " cantidades diferentes de campos variantes. Hasta acá. Bueno, color esa subes de tipo RGB color,",
+        "start": 3252.28,
+        "end": 3267.0800000000004
+    },
+    {
+        "text": " que se define más arriba como otro record que adentro tiene la proporción de verde y de azul.",
+        "start": 3267.08,
+        "end": 3274.0
+    },
+    {
+        "text": " Sí, como la paleta de los pintores, un poquito de verde, otra proporción de azul y con eso",
+        "start": 3275.68,
+        "end": 3280.56
+    },
+    {
+        "text": " construyendo los colores. No sé por qué no está el rojo, pero bueno. Y esto es un registro variante.",
+        "start": 3280.56,
+        "end": 3292.0
+    },
+    {
+        "text": " Cosa se a tomar en cuenta. Primero se definen que campos, los entre comillas fijo,",
+        "start": 3292.92,
+        "end": 3299.6
+    },
+    {
+        "text": " los que son comunes a cualquier variable que yo vaya a declarar. Luego se pone en case y el",
+        "start": 3299.6,
+        "end": 3306.64
+    },
+    {
+        "text": " discriminante. Y después del off se colocan los posibles valores que puede tomar el discriminante",
+        "start": 3306.64,
+        "end": 3314.24
+    },
+    {
+        "text": " y entre paréntesis se declaran los campos que van a ser cargados en caso de que el discriminante",
+        "start": 3314.9599999999996,
+        "end": 3322.4799999999996
+    },
+    {
+        "text": " tome el valor indicado allí. Y esa es la sintaxis. Y es responsabilidad del programador ser",
+        "start": 3322.4799999999996,
+        "end": 3331.4399999999996
+    },
+    {
+        "text": " consistente entre el valor que cargan el discriminante y los valores concretos a los que accede dentro",
+        "start": 3331.4399999999996,
+        "end": 3339.08
+    },
+    {
+        "text": " de la parte variante. No te lo va a detectar la compilación, si vas a tener ensaladas en tiempo de",
+        "start": 3339.08,
+        "end": 3348.24
+    },
+    {
+        "text": " ejecución. Sí. O sea que en el círculo en vez de tener radiícentro, tengas una tercera,",
+        "start": 3348.24,
+        "end": 3362.08
+    },
+    {
+        "text": " tendrías que primero definir la can en el tipo de datos y después cuando declare es una variable",
+        "start": 3362.08,
+        "end": 3368.6
+    },
+    {
+        "text": " de tipo figura en las cargas. ¿Era eso? Bueno, ¿cómo se la acceso a los campos igual que en un",
+        "start": 3368.6,
+        "end": 3383.3199999999997
+    },
+    {
+        "text": " récord común? Igualito. Con la notación del punto. O podemos usar el width también. Imaginemos que",
+        "start": 3383.3199999999997,
+        "end": 3392.2799999999997
+    },
+    {
+        "text": " R es una variable de tipo figura y yo quiero cargar de enarre los datos de un rectángulo. Primero,",
+        "start": 3392.28,
+        "end": 3398.48
+    },
+    {
+        "text": " vamos a cargar el color. Fíjense que acadice R punto color punto grín y R punto color punto",
+        "start": 3398.48,
+        "end": 3403.5600000000004
+    },
+    {
+        "text": " blu, porque a su vez color que era, a su vez color era otro récord, que tenía campo grín y campo",
+        "start": 3403.5600000000004,
+        "end": 3410.36
+    },
+    {
+        "text": " blu. Entonces a través de R yo me meto dentro de color y dentro de color con el punto me meto a su vez",
+        "start": 3410.36,
+        "end": 3418.6000000000004
+    },
+    {
+        "text": " a los campos grín y blu. Y les cargó a sido valores. A continuación que campo estoy cargando,",
+        "start": 3418.68,
+        "end": 3429.6
+    },
+    {
+        "text": " el discriminante que en este caso concreto se llama clase. En R punto clase estoy cargando el",
+        "start": 3429.6,
+        "end": 3436.52
+    },
+    {
+        "text": " valor rectángulo. Luego es mi responsabilidad, responsabilidad del programador que los campos que",
+        "start": 3436.52,
+        "end": 3444.7599999999998
+    },
+    {
+        "text": " yo cargue a continuación sean los que corresponden al rectángulo, que si miren la definición,",
+        "start": 3444.76,
+        "end": 3451.0800000000004
+    },
+    {
+        "text": " son base altura y el vértice inferior izquierdo que a su vez es un punto que tiene a su vez dos campos",
+        "start": 3451.0800000000004,
+        "end": 3461.2000000000003
+    },
+    {
+        "text": " X y X. O sea, vamos a cargar base altura y las coordenadas del vértice inferior izquierdo.",
+        "start": 3461.2000000000003,
+        "end": 3469.6400000000003
+    },
+    {
+        "text": " Bueno, fíjense que por más que estos campos sean variantes se acceden con la misma notación,",
+        "start": 3470.52,
+        "end": 3476.12
+    },
+    {
+        "text": " el récord punto el campo el cual estamos accediendo. Fíjense que desde un punto de vista sintáctico",
+        "start": 3476.12,
+        "end": 3482.72
+    },
+    {
+        "text": " no hay diferencia entre cómo accedo a uno de los campos no variantes y cómo accedo a uno de los",
+        "start": 3482.72,
+        "end": 3488.8599999999997
+    },
+    {
+        "text": " campos que sí son variantes. Después de haber definido esto, yo los campos que voy a cargar van a",
+        "start": 3488.8599999999997,
+        "end": 3498.64
+    },
+    {
+        "text": " hacer los que corresponden a un rectángulo. En tiempo de ejecución esto me va a mostrar en pantalla",
+        "start": 3498.64,
+        "end": 3503.48
+    },
+    {
+        "text": " valores coherentes porque yo estoy haciendo una manipulación adecuada. Si yo me hubiera equivocado,",
+        "start": 3503.48,
+        "end": 3510.44
+    },
+    {
+        "text": " hubiera cargado alguno de los otros, vería uvas en tiempo de ejecución.",
+        "start": 3510.44,
+        "end": 3514.72
+    },
+    {
+        "text": " 8 horisos, morcillas. Bueno, un valor para base, un valor para altura y cuando me meto dentro",
+        "start": 3514.72,
+        "end": 3528.6
+    },
+    {
+        "text": " del campo vértice inferior izquierdo como ESE a su veces otro récord punto X y punto Y para",
+        "start": 3528.6,
+        "end": 3535.52
+    },
+    {
+        "text": " acceder a las coordenadas. Y con eso me quedo cargado una variable de tipo figura correspondiente",
+        "start": 3535.52,
+        "end": 3543.7599999999998
+    },
+    {
+        "text": " a un rectángulo. Está bien?",
+        "start": 3543.76,
+        "end": 3549.76
+    },
+    {
+        "text": " Más preguntas de esto. Bueno, cuando implementemos sus programas, ya sean procedimientos o funciones,",
+        "start": 3549.76,
+        "end": 3560.76
+    },
+    {
+        "text": " es importante también mantener la coherencia entre el valor que le cargamos al discriminante y",
+        "start": 3560.76,
+        "end": 3567.2000000000003
+    },
+    {
+        "text": " a cuáles de los campos variantes es que vamos a acceder. Como por ejemplo, en la función que",
+        "start": 3567.2,
+        "end": 3573.96
+    },
+    {
+        "text": " calcula el área de la figura, me dan fig de tipo figura como parámetro. Voy a devolver un",
+        "start": 3573.96,
+        "end": 3584.3599999999997
+    },
+    {
+        "text": " número real que corresponde al área de la figura. Ahora, la manera en la cual se calcula el",
+        "start": 3584.3599999999997,
+        "end": 3590.72
+    },
+    {
+        "text": " área depende del tipo de figura que se trata. Entonces, en este ejemplo lo estamos haciendo con",
+        "start": 3590.72,
+        "end": 3599.56
+    },
+    {
+        "text": " width, me meto dentro de la figura. El uso de width me liberaba de qué cosa? De usar el punto.",
+        "start": 3599.56,
+        "end": 3607.0
+    },
+    {
+        "text": " Son equivalentes. Lo pueden hacer poniendo al récord con el punto o poniendo width como más",
+        "start": 3607.8999999999996,
+        "end": 3612.64
+    },
+    {
+        "text": " de justi. Podrías dentro hacer un width para el otro récord que tenés más adentro si querés.",
+        "start": 3612.64,
+        "end": 3622.8399999999997
+    },
+    {
+        "text": " No, no con ando. No porque esto no es una condición de una estructura de control.",
+        "start": 3622.8399999999997,
+        "end": 3629.2
+    },
+    {
+        "text": " Entonces, dentro de fig, nos metemos a ver el campo discriminante que es clase y clase era un enumerado",
+        "start": 3632.0,
+        "end": 3641.92
+    },
+    {
+        "text": " que podía valer círculo rectángulo cuadrado. Y observen que este case no es el case de la declaración",
+        "start": 3641.92,
+        "end": 3650.12
+    },
+    {
+        "text": " del récord. Es la vieja y querida estructura de control case. Estamos consultando el valor que está",
+        "start": 3650.12,
+        "end": 3657.48
+    },
+    {
+        "text": " guardado en el campo discriminante. Y hacemos lo de siempre. Si es círculo, dos puntos y lo que quiero",
+        "start": 3657.48,
+        "end": 3665.4
+    },
+    {
+        "text": " ejecutar en caso de que sea círculo. Lo mismo con rectángulo, lo mismo con cuadrado.",
+        "start": 3665.4,
+        "end": 3671.04
+    },
+    {
+        "text": " Bueno, si es un círculo, el área de la figura se calculará como la constante p por radio al cuadrado,",
+        "start": 3671.92,
+        "end": 3680.48
+    },
+    {
+        "text": " donde radio era uno de los campos variantes que correspondían al tipo de figura círculo.",
+        "start": 3680.48,
+        "end": 3687.36
+    },
+    {
+        "text": " No se le puso el punto porque estamos dentro del width.",
+        "start": 3688.88,
+        "end": 3691.12
+    },
+    {
+        "text": " Entiende? Bueno, si es un rectángulo, el área se va calcular haciendo la multiplicación de base",
+        "start": 3693.16,
+        "end": 3700.6
+    },
+    {
+        "text": " por altura. Estos dos son los campos variantes que corresponden al valor rectángulo.",
+        "start": 3700.6,
+        "end": 3706.72
+    },
+    {
+        "text": " Y si es un cuadrado, el lado al cuadrado.",
+        "start": 3708.16,
+        "end": 3711.08
+    },
+    {
+        "text": " Estamos haciendo una manipulación coherente entre el valor guardado discriminante y a cual o",
+        "start": 3714.6,
+        "end": 3722.52
+    },
+    {
+        "text": " cual es campos variantes que estamos accediendo. Y esto es record case, registro variante.",
+        "start": 3722.52,
+        "end": 3733.16
+    },
+    {
+        "text": " ¿Más preguntas? FIG era la variable de tipo figura. FIG es una variable de este tipo,",
+        "start": 3735.52,
+        "end": 3748.4
+    },
+    {
+        "text": " record contra esto. Más preguntas? Practico.",
+        "start": 3748.4,
+        "end": 3758.32
+    },
+    {
+        "text": " Bueno.",
+        "start": 3766.1600000000003,
+        "end": 3766.8
+    },
+    {
+        "text": " Bien, ejercicio 5. No, tan grande. No, un poquito.",
+        "start": 3766.8,
+        "end": 3781.32
+    },
+    {
+        "text": " Es no, es el mismo práctico práctico 11. Ahora es el ejercicio 5. Bueno, se considera el",
+        "start": 3781.32,
+        "end": 3795.88
+    },
+    {
+        "text": " tipo de datos ner, que no es lo mismo que ner, ¿qué es la unión de los números naturales con el",
+        "start": 3795.88,
+        "end": 3807.84
+    },
+    {
+        "text": " conjunto R? O sea que tenemos el tipo NER y el tipo R. R se define como DBR, RECER y ARGAR. O sea que R es un",
+        "start": 3807.84,
+        "end": 3825.36
+    },
+    {
+        "text": " tipo numerado. ¿A bien? Cuyos, los valores posibles son DBR, RECER y ARGAR. Donde DBR es",
+        "start": 3825.36,
+        "end": 3837.8
+    },
+    {
+        "text": " el error de la división por Cero, es decir, si yo cargo este valor, estoy queriendo decir",
+        "start": 3837.8,
+        "end": 3844.96
+    },
+    {
+        "text": " hubo un error de división entre Cero. Si yo cargo el valor RECER, es el error de la resta con",
+        "start": 3844.96,
+        "end": 3854.6800000000003
+    },
+    {
+        "text": " resultado negativo, porque si estamos en el universo de los naturales, y el valor del esquiada en",
+        "start": 3854.6800000000003,
+        "end": 3862.1600000000003
+    },
+    {
+        "text": " la resta es menor al valor de la derecha, el resultado se me iría de rango, no sería natural. Y",
+        "start": 3862.16,
+        "end": 3868.2799999999997
+    },
+    {
+        "text": " ARGAR es el error de cualquier operación donde alguno de sus argumentos, donde alguno de sus",
+        "start": 3868.2799999999997,
+        "end": 3874.92
+    },
+    {
+        "text": " parámetros no sea de tipo natural. Entonces, en este ejercicio vamos a implementar una serie de",
+        "start": 3874.92,
+        "end": 3883.96
+    },
+    {
+        "text": " operaciones sobre elementos del tipo NER. La división, la resta, la suma y más abajo está la",
+        "start": 3883.96,
+        "end": 3895.2
+    },
+    {
+        "text": " multiplicación. La división va a recibir dos valores de tipo NER y va a devolver otro valor",
+        "start": 3895.2,
+        "end": 3905.04
+    },
+    {
+        "text": " de tipo NER. Cada valor de tipo NER, como les parece que lo vamos a definir. Mediante un record",
+        "start": 3905.04,
+        "end": 3913.7200000000003
+    },
+    {
+        "text": " con variante, que parte del ejercicio pide hacer justamente la definición del tipo.",
+        "start": 3913.72,
+        "end": 3921.52
+    },
+    {
+        "text": " Entonces, vamos a suponer que el primero se llama A y que el segundo se llama B. Lo que nos están",
+        "start": 3921.52,
+        "end": 3931.52
+    },
+    {
+        "text": " describiendo acá es cómo funciona la división para este tipo de datos. Si a pertenece a los",
+        "start": 3931.52,
+        "end": 3941.2
+    },
+    {
+        "text": " naturales es decir, si a bien e bien y bien es sin error, y B, pertenece a los naturales menos",
+        "start": 3941.2,
+        "end": 3950.3599999999997
+    },
+    {
+        "text": " el cero, entonces el resultado de la división va a ser el resultado de aplicar DIVO. O sea,",
+        "start": 3950.3599999999997,
+        "end": 3958.2799999999997
+    },
+    {
+        "text": " medieron un natural que puede ser mayor igual que cero, sin error, medieron otro natural que es",
+        "start": 3958.2799999999997,
+        "end": 3967.2
+    },
+    {
+        "text": " estrictamente mayor que cero. En ese caso estoy en condiciones de hacer la división. Bueno,",
+        "start": 3967.2,
+        "end": 3972.68
+    },
+    {
+        "text": " lo que yo tengo que devolver como resultado es el resultado de la división entera.",
+        "start": 3972.68,
+        "end": 3976.8799999999997
+    },
+    {
+        "text": " Ese es el primer caso a considerar.",
+        "start": 3978.8799999999997,
+        "end": 3980.72
+    },
+    {
+        "text": " Segundo caso, si el primer elemento es un natural valido y el segundo es un natural",
+        "start": 3983.3999999999996,
+        "end": 3992.16
+    },
+    {
+        "text": " valido, pero vale cero el resultado va a ser un error, un error de tipo DIVO.",
+        "start": 3992.16,
+        "end": 4000.52
+    },
+    {
+        "text": " O sea, no voy a poder calcular la división. Lo que yo voy a tener que devolver como resultado",
+        "start": 4003.8799999999997,
+        "end": 4009.3599999999997
+    },
+    {
+        "text": " va a ser un error, el error de ese tipo. Y el tercer caso que podría pasar es que algunos de",
+        "start": 4009.3599999999997,
+        "end": 4017.3599999999997
+    },
+    {
+        "text": " los dos que me pasaron como dato de entrada ya contenga algún tipo de error. Si ya contiene algún",
+        "start": 4017.36,
+        "end": 4024.8
+    },
+    {
+        "text": " tipo de error directamente no vamos a poder operar. Entonces el resultado va a ser otro error de",
+        "start": 4024.8,
+        "end": 4031.76
+    },
+    {
+        "text": " tipo ARGAR. Cuando lo empiezan a definir van a ver que asusta más de lo que es en realidad.",
+        "start": 4031.76,
+        "end": 4042.0
+    },
+    {
+        "text": " Bueno, similar pasa con la resta, la suma y el producto, pero por ahora vamos a concentrarnos en",
+        "start": 4043.0,
+        "end": 4052.24
+    },
+    {
+        "text": " la división. Primero, tomense un ratito para definir en pascalel tipo R que va a ser un tipo",
+        "start": 4052.24,
+        "end": 4064.16
+    },
+    {
+        "text": " como dijimos enumerado. Luego definan en pascalel tipo NER que va a ser un tipo como registro",
+        "start": 4064.16,
+        "end": 4074.92
+    },
+    {
+        "text": " variante, va a ser un record case. Y la parte 3 implementen los siguientes procedimientos que",
+        "start": 4074.92,
+        "end": 4083.08
+    },
+    {
+        "text": " resuelven las cuatro operaciones. Vamos a ser solo la división, el primero después",
+        "start": 4083.08,
+        "end": 4091.0
+    },
+    {
+        "text": " ustedes hacen los demás. Y me dan los cabezales. Procedimiento de división recibe dos parámetros",
+        "start": 4091.0,
+        "end": 4099.88
+    },
+    {
+        "text": " de tipo NER que vienen como pasados de qué manera, por valor y devuelvo por referencia como resultado",
+        "start": 4099.88,
+        "end": 4110.36
+    },
+    {
+        "text": " otro elemento de tipo NER. Estos dos son parámetros de entrada, este es un parámetro de salida.",
+        "start": 4110.92,
+        "end": 4119.96
+    },
+    {
+        "text": " Estos procedimientos, esto lo vimos cuando discutimos funciones y procedimientos, son procedimientos",
+        "start": 4121.16,
+        "end": 4127.4
+    },
+    {
+        "text": " que no emiten salida a pantalla. Son lo que se callan procedimientos internos, había",
+        "start": 4127.4,
+        "end": 4132.719999999999
+    },
+    {
+        "text": " tres clases de procedimiento. Los de entrada, los de salida al usuario y los internos, los que",
+        "start": 4132.719999999999,
+        "end": 4137.92
+    },
+    {
+        "text": " modificaban datos, este es uno de ellos y lo mismo con estos tres. Entonces, ¿qué es lo que hay que",
+        "start": 4137.92,
+        "end": 4143.92
+    },
+    {
+        "text": " hacer dentro del procedimiento de división? Bueno, mirar cómo vinieron en NER 1 y NER 2, mirar si",
+        "start": 4143.92,
+        "end": 4150.4400000000005
+    },
+    {
+        "text": " vinieron bien los dos y si vinieron bien los dos, mirar si el segundo vino con 0 y si el segundo",
+        "start": 4150.4400000000005,
+        "end": 4158.24
+    },
+    {
+        "text": " no vino con 0 que hacemos, la división normal, si el segundo vino con 0 que hacemos, devuelvemos",
+        "start": 4158.24,
+        "end": 4166.24
+    },
+    {
+        "text": " Diver y si alguno de los dos vino mal que devolvemos, argar, o sea, cargado dentro de N3,",
+        "start": 4166.24,
+        "end": 4175.719999999999
+    },
+    {
+        "text": " que va a ser de tipo NER que va a ser un record con case.",
+        "start": 4177.36,
+        "end": 4181.32
+    },
+    {
+        "text": " ¿Está? No, el error va a ser un valor del enumerado,",
+        "start": 4183.679999999999,
+        "end": 4188.8
+    },
+    {
+        "text": " vos luego desde el programa principal, desde el vin en debajo del todo, vas a llamar a división y",
+        "start": 4189.6,
+        "end": 4196.04
+    },
+    {
+        "text": " te va a salir por acá algo de tipo NER. Vos te vas a fijar dentro de ese record a ver qué es",
+        "start": 4196.04,
+        "end": 4203.08
+    },
+    {
+        "text": " lo que vino cargado y en función de lo que haya venido cargado le vas a mostrar el usuario el",
+        "start": 4203.08,
+        "end": 4208.12
+    },
+    {
+        "text": " mensaje de error. O sea, el enumerado va a ser algo así como un código interno que vos vas a usar",
+        "start": 4208.12,
+        "end": 4213.4800000000005
+    },
+    {
+        "text": " para luego saber qué mensaje de error le tienes que dar el usuario.",
+        "start": 4213.839999999999,
+        "end": 4217.24
+    },
+    {
+        "text": " Si no hay error entonces vas a acceder a los campos que correspondan al resultado vale y se los",
+        "start": 4219.959999999999,
+        "end": 4225.16
+    },
+    {
+        "text": " vas a mostrar. Está bien? Sí, es más, incluso podemos hacer un procedimiento que muestre en",
+        "start": 4225.16,
+        "end": 4232.719999999999
+    },
+    {
+        "text": " pantalla uno de estos. Está? Sentendió la cocina. Bueno, son 8 menos 10, 20 minutos,",
+        "start": 4232.719999999999,
+        "end": 4243.44
+    },
+    {
+        "text": " hasta 8 y 10, ahora subimos, lo hacen y lo discutimos.",
+        "start": 4243.44,
+        "end": 4248.24
+    },
+    {
+        "text": " Bueno, vamos a definir los tipos.",
+        "start": 4252.0,
+        "end": 4255.4
+    },
+    {
+        "text": " El primero",
+        "start": 4260.24,
+        "end": 4261.16
+    },
+    {
+        "text": " era el tipo de datos R que se definía como un enumerado que representaba los posibles tipos",
+        "start": 4265.32,
+        "end": 4271.759999999999
+    },
+    {
+        "text": " de error. Se ponemos R como un enumerado con aquellos tres valores, Viver, Reser o Arguer.",
+        "start": 4271.76,
+        "end": 4286.320000000001
+    },
+    {
+        "text": " En caso de que el valor que yo tenga con Tenga error va a ser alguno de estos tres.",
+        "start": 4292.72,
+        "end": 4300.64
+    },
+    {
+        "text": " Luego dijimos vamos a definir un segundo enumerado que representa si el valor está bien o está",
+        "start": 4302.76,
+        "end": 4311.8
+    },
+    {
+        "text": " mal porque si está bien que vamos a guardar un número de diponatural y si está mal vamos a",
+        "start": 4311.8,
+        "end": 4320.4800000000005
+    },
+    {
+        "text": " guardar uno de estos tres. A veces entre medio de enumerado si otros enumerados la cosa parece",
+        "start": 4320.4800000000005,
+        "end": 4327.64
+    },
+    {
+        "text": " en mariar un poco, vamos a ver que no está compleja. A ese segundo enumerado vamos a ponerle",
+        "start": 4327.64,
+        "end": 4334.92
+    },
+    {
+        "text": " por ejemplo estado. Cuyos valores posibles dijimos pueden ser bien o mal. De hecho este enumerado",
+        "start": 4334.92,
+        "end": 4348.200000000001
+    },
+    {
+        "text": " va a ser el que vamos a usar para el discriminante. Y ahora viene el tipo de datos Ner que este va a ser el",
+        "start": 4348.32,
+        "end": 4361.84
+    },
+    {
+        "text": " que vamos a definir mediante un récord. Durante las consultas se dieron cuenta y me dijeron que",
+        "start": 4361.84,
+        "end": 4372.08
+    },
+    {
+        "text": " no hay datos fijo en recomillas. O sea no hay datos que sean comunes. No lo único que tenemos dentro",
+        "start": 4372.64,
+        "end": 4380.32
+    },
+    {
+        "text": " de esta récord es la parte variante. Te puede pasar que en algún récord que hay tengas datos que",
+        "start": 4380.32,
+        "end": 4387.16
+    },
+    {
+        "text": " no son variantes, pero te puede pasar en otros que los únicos datos que tengas sean variantes. En",
+        "start": 4387.16,
+        "end": 4393.48
+    },
+    {
+        "text": " cuyo caso directamente lo primero que va dentro del récord que es el que hay es con el discriminante.",
+        "start": 4393.48,
+        "end": 4399.6
+    },
+    {
+        "text": " Que en este caso el discriminante dijimos va a ser de que tipo de tipo estado. Entonces vamos a",
+        "start": 4402.08,
+        "end": 4411.68
+    },
+    {
+        "text": " poner que es de tipo estado, se pone la pala ahorita OF y a continuación se enumeran los",
+        "start": 4411.68,
+        "end": 4425.22
+    },
+    {
+        "text": " posibles valores que puede tomar el discriminante. Lo pasa es que pasca el note permite definir un tipo",
+        "start": 4425.22,
+        "end": 4437.5
+    },
+    {
+        "text": " adentro de otro tipo. Podés declararte un campo de un tipo definido arriba así, pero hacer la",
+        "start": 4437.5,
+        "end": 4444.3
+    },
+    {
+        "text": " propia definición en bebida dentro del récord no. Bueno los posibles estados pueden ser bien o",
+        "start": 4444.3,
+        "end": 4452.9800000000005
+    },
+    {
+        "text": " mal. Bueno si es bien que es lo que voy a cargar. Un natural que podemos definir unos por ejemplo el",
+        "start": 4452.98,
+        "end": 4464.299999999999
+    },
+    {
+        "text": " tipo nat como un subrango que vaya de 0 a donde. A maxin. O sea que si está bien entre paréntesis",
+        "start": 4464.299999999999,
+        "end": 4476.299999999999
+    },
+    {
+        "text": " que voy a definir. Por ejemplo N de tipo nat. Y si en el estado cargo mal.",
+        "start": 4476.3,
+        "end": 4492.7
+    },
+    {
+        "text": " Que es lo que voy a definir algo de tipo de tipo R. Voy a definir por ejemplo E de tipo R.",
+        "start": 4495.7,
+        "end": 4502.7
+    },
+    {
+        "text": " Ahora le untamos la pantalla y con esto cerramos el récord.",
+        "start": 4502.7,
+        "end": 4514.98
+    },
+    {
+        "text": " Entonces si a mí me dan uno de estos puede pasar que acá venga cargado bien o venga cargado",
+        "start": 4523.0199999999995,
+        "end": 4531.0599999999995
+    },
+    {
+        "text": " mal. Si lo que viene cargado es bien entonces va a venir cargado un natural. Ahora si lo que viene",
+        "start": 4531.9400000000005,
+        "end": 4538.740000000001
+    },
+    {
+        "text": " cargado es mal entonces va a venir cargado uno de los tres posibles errores.",
+        "start": 4538.740000000001,
+        "end": 4543.54
+    },
+    {
+        "text": " Dependiendo de la opción que justamente lo que vamos a ver ahora.",
+        "start": 4546.9400000000005,
+        "end": 4549.54
+    },
+    {
+        "text": " Entonces",
+        "start": 4553.660000000001,
+        "end": 4554.620000000001
+    },
+    {
+        "text": " el procedimiento para la división.",
+        "start": 4562.06,
+        "end": 4565.1
+    },
+    {
+        "text": " Resivimos dos de estos que van a venir cargados de alguna manera. La letra lo llamaba N1 o N2",
+        "start": 4575.5,
+        "end": 4585.780000000001
+    },
+    {
+        "text": " más arriba en la explicación le llamaba N2. Pueden llamarlos como quieran. N1 y N2 o A2. Lo que importa es que ambos son de tipo N2.",
+        "start": 4586.78,
+        "end": 4597.86
+    },
+    {
+        "text": " Y por referencia",
+        "start": 4603.86,
+        "end": 4605.34
+    },
+    {
+        "text": " devolvíamos el resultado de la operación de división también de tipo N2.",
+        "start": 4607.099999999999,
+        "end": 4614.099999999999
+    },
+    {
+        "text": " Entonces estos dos vienen cargados y según cómo es que ven cargados es cómo nosotros vamos a cargar el resultado.",
+        "start": 4616.78,
+        "end": 4626.0599999999995
+    },
+    {
+        "text": " Bien. Bueno y ahora tenemos que empezar con nuestro análisis de casos que coincide con el",
+        "start": 4626.06,
+        "end": 4650.42
+    },
+    {
+        "text": " análisis de casos que decía la letra. Lo primero que hay que mirar de N1 y N2 que cosa es el estado.",
+        "start": 4650.42,
+        "end": 4658.54
+    },
+    {
+        "text": " ¿Qué puede pasar? Que se ha bien o mal. Puede pasar que los dos vengan bien o que algunos ya ven",
+        "start": 4660.06,
+        "end": 4667.34
+    },
+    {
+        "text": " mal. Si algunos ya ven mal que ocurre directamente en N3 que voy a devolver mal y voy a cargar",
+        "start": 4667.34,
+        "end": 4676.14
+    },
+    {
+        "text": " cuál de los tres errores es. O sea que el caso importante realmente cuál es en cuando los dos vienen bien",
+        "start": 4676.14,
+        "end": 4688.06
+    },
+    {
+        "text": " y eso es lo que vamos a empezar a preguntar. ¿Cómo pregunto si los dos vienen bien?",
+        "start": 4688.06,
+        "end": 4697.780000000001
+    },
+    {
+        "text": " Exactamente. Y N1.S. Es igual a bien y demás. Y N2.S. también es igual a bien.",
+        "start": 4698.78,
+        "end": 4716.58
+    },
+    {
+        "text": " Si los dos vinieron bien, entonces tenemos que seguir analizando.",
+        "start": 4716.58,
+        "end": 4730.74
+    },
+    {
+        "text": " Bueno en realidad el que me importa que sea mayor estricto que 0 cuál es. N2. Si el primero, si en",
+        "start": 4733.9,
+        "end": 4742.22
+    },
+    {
+        "text": " una división el dividendo va a lecer una problema. O sea que si yo entro a este if significa que los",
+        "start": 4742.22,
+        "end": 4752.5
+    },
+    {
+        "text": " dos vinieron bien. O sea como los dos vinieron bien, ¿qué trajeron cargado? El N. Recuerden, se supone que el",
+        "start": 4752.5,
+        "end": 4767.14
+    },
+    {
+        "text": " valor que está cargado en el discriminante es coherente con el campo variante que se ha sido cargado.",
+        "start": 4767.14,
+        "end": 4772.740000000001
+    },
+    {
+        "text": " Bueno, entonces que preguntamos ahora. Y N2.N es igual a 0.",
+        "start": 4776.5,
+        "end": 4789.3
+    },
+    {
+        "text": " Exactamente. Fíjense que estamos suponiendo y está bien que lo supongamos que el que vino cargado es N.",
+        "start": 4790.3,
+        "end": 4801.38
+    },
+    {
+        "text": " Recuerden, en todo momento asumimos un manejo coherente entre el valor de discriminante y cuál de los",
+        "start": 4803.22,
+        "end": 4809.860000000001
+    },
+    {
+        "text": " campos variantes es el que está cargado. N2 es un dato de entrada. Como todo dato de entrada se",
+        "start": 4809.860000000001,
+        "end": 4816.860000000001
+    },
+    {
+        "text": " asume que vino cargado y que vino bien cargado. Nonde bien cargado significa con coherencia entre lo",
+        "start": 4816.86,
+        "end": 4823.62
+    },
+    {
+        "text": " que dice el discriminante y cuál campo variante vino cargado. Bueno si eseero me dijeron que tengo que",
+        "start": 4823.62,
+        "end": 4833.78
+    },
+    {
+        "text": " devolver qué cosa. Hay en el 3.L tengo que cargar divar pero antes de cargar ¿cuál tengo que cargar?",
+        "start": 4833.78,
+        "end": 4844.099999999999
+    },
+    {
+        "text": " Entonces N3.Est que le vamos a cargar. Le vamos a cargar mal y como al discriminante le estamos",
+        "start": 4847.139999999999,
+        "end": 4861.54
+    },
+    {
+        "text": " cargando mal el valor que vamos a cargar ahora es el campo variante correspondiente a mal porque de",
+        "start": 4861.54,
+        "end": 4870.58
+    },
+    {
+        "text": " nuevo yo programador soy quien debo manejar adecuadamente la relación entre el discriminante y el",
+        "start": 4870.58,
+        "end": 4878.82
+    },
+    {
+        "text": " campo variante que se carga. ¿Qué se pone ahora? N3.E y bueno este tipo R y R puede ser",
+        "start": 4878.82,
+        "end": 4894.74
+    },
+    {
+        "text": " alguno de aquellos 3 en este caso que tipo de errores. Diver porque es error de división.",
+        "start": 4894.74,
+        "end": 4900.5
+    },
+    {
+        "text": " Sí sí. En pascar si yo pasa que vivo pensando en el lenguaje seto del tiempo.",
+        "start": 4903.5,
+        "end": 4908.219999999999
+    },
+    {
+        "text": " Bien.",
+        "start": 4913.7,
+        "end": 4914.3
+    },
+    {
+        "text": " Si vengo a este el que significa que en E2 vino bien y que no trajo un 0.",
+        "start": 4914.3,
+        "end": 4929.38
+    },
+    {
+        "text": " Trajo algo de tipo NAD que no es 0 o sea que necesariamente va a ser un valor entre un y",
+        "start": 4932.900000000001,
+        "end": 4938.38
+    },
+    {
+        "text": " Maxine o sea un valor estrictamente positivo o sea en E1 podría ser 0 negativo nunca porque son de",
+        "start": 4938.38,
+        "end": 4951.900000000001
+    },
+    {
+        "text": " tipo NAD resultado se puede ser la división y como se puede hacer la división lo que voy a cargar en",
+        "start": 4951.900000000001,
+        "end": 4960.22
+    },
+    {
+        "text": " E3 que va a ser. Vamos a cargar bien en el discriminante y dado que cargamos bien el siguiente campo",
+        "start": 4960.22,
+        "end": 4973.22
+    },
+    {
+        "text": " cargar va a ser N que lo accedemos de la misma manera N3.N y ahí hacemos la división es igual a N1",
+        "start": 4973.22,
+        "end": 4988.1
+    },
+    {
+        "text": " en E1 solo. N1.N y sabemos que es N el que está cargado porque porque vino bien. N1.N",
+        "start": 4988.1,
+        "end": 5000.46
+    },
+    {
+        "text": " VIV N2.N con estos cerramos el L. Me faltó vin acá y tiene que ir un VIV. Entonces todo este",
+        "start": 5000.46,
+        "end": 5022.7
+    },
+    {
+        "text": " VIV es lo que ocurre si los dos vinieron bien. Ahora vamos a ponerle un L a este VIV si vengo hasta",
+        "start": 5022.7,
+        "end": 5031.0599999999995
+    },
+    {
+        "text": " L porque es porque alguno de los dos no vino bien lo cual ya me alcanza para que para devolver",
+        "start": 5031.0599999999995,
+        "end": 5041.98
+    },
+    {
+        "text": " N3 con error con cual de los tres errores. En E3.K. punto es que le voy a cargar",
+        "start": 5041.98,
+        "end": 5059.0599999999995
+    },
+    {
+        "text": " le voy a cargar mal y como le cargo mal le voy a cargar un error que en este caso el error va a",
+        "start": 5059.06,
+        "end": 5070.42
+    },
+    {
+        "text": " ser ARGAR que significa alguno de los dos parámetros de entrada binomal. N3.E. Le asignamos ARGAR.",
+        "start": 5070.42,
+        "end": 5084.9400000000005
+    },
+    {
+        "text": " Acabendría el N que me cierra el L y luego vendría el N de todo el procedimiento. Entonces cuando salga",
+        "start": 5084.94,
+        "end": 5096.219999999999
+    },
+    {
+        "text": " N3 puede salir de tres formas posibles. Puede salir cargado con mal y error de división,",
+        "start": 5096.219999999999,
+        "end": 5105.099999999999
+    },
+    {
+        "text": " puede salir cargado con bien y el resultado de la división o puede salir cargado con mal y error",
+        "start": 5106.299999999999,
+        "end": 5113.62
+    },
+    {
+        "text": " de argumento. Luego en el programa principal o de repente en otro procedimiento yo me fijaré",
+        "start": 5113.62,
+        "end": 5123.66
+    },
+    {
+        "text": " cómo es que fue cargado en E3 y en función de eso mostraremos en pantalla ya sea el resultado de la",
+        "start": 5123.66,
+        "end": 5131.66
+    },
+    {
+        "text": " división o el tipo de error. Bueno terminamos por acá la semana que viene toca punteros y listas que",
+        "start": 5131.66,
+        "end": 5141.74
+    },
+    {
+        "text": " va a ser el último tema del curso. Luego viene la segunda tarea que nos va a tomar unas 2-3 semanas y después de",
+        "start": 5141.74,
+        "end": 5149.0199999999995
+    },
+    {
+        "text": " solo 2-3 dients.",
+        "start": 5149.02,
+        "end": 5155.540000000001
+    }
+]

@@ -1,0 +1,4432 @@
+[
+    {
+        "text": " Bueno, buenas tardes, vamos a arrancar entonces el teórico, el últimoante de turismo,",
+        "start": 0.0,
+        "end": 9.36
+    },
+    {
+        "text": " también, y el penúltimo antes de los primeros parciales, wow, ya se vienen los primeros,",
+        "start": 9.36,
+        "end": 15.16
+    },
+    {
+        "text": " por ejemplo, 26 de abril, creo que es un jueves, alguien preguntó, creo que lo he reo preliminar",
+        "start": 15.16,
+        "end": 22.080000000000002
+    },
+    {
+        "text": " estrésse horas, pero chequenlo por si hay un cambio, entonces vamos a estar viendo hoy en el",
+        "start": 22.080000000000002,
+        "end": 27.92
+    },
+    {
+        "text": " teórico, la parte de estructuras arboresentes, la primera parte, la segunda parte, la vamos a",
+        "start": 27.92,
+        "end": 34.480000000000004
+    },
+    {
+        "text": " ver después de turismo un pedacito, y vamos a ver el análisis de algoritmos, pero para algoritmos",
+        "start": 34.480000000000004,
+        "end": 39.800000000000004
+    },
+    {
+        "text": " recursos también ahí en esa clase, o sea, son las dos clases que nos están faltando,",
+        "start": 39.800000000000004,
+        "end": 43.08
+    },
+    {
+        "text": " pero hoy antes de arrancar con esto, voy a retomar un poquito la parte de listas que vimos",
+        "start": 43.08,
+        "end": 49.56
+    },
+    {
+        "text": " la clase anterior, para comentarles unas pequeñas variantes, sin particular una, que creo que va a",
+        "start": 49.56,
+        "end": 55.120000000000005
+    },
+    {
+        "text": " estar la que van a usar más, no solo en el práctico, sino en el laboratorio, lo estaría dos,",
+        "start": 55.12,
+        "end": 58.839999999999996
+    },
+    {
+        "text": " entonces que voy a dedicar 10 minutitos a eso, ok? listas de memoria dinámica hay muchas,",
+        "start": 58.839999999999996,
+        "end": 67.84
+    },
+    {
+        "text": " por ejemplo, la que más utilizamos es esta, es la lista simplemente en cadenada o en la sada,",
+        "start": 67.84,
+        "end": 73.47999999999999
+    },
+    {
+        "text": " donde cada nodo tiene la información del dato, que quiero guardar, que puede ser lo que yo quiera,",
+        "start": 73.47999999999999,
+        "end": 79.2
+    },
+    {
+        "text": " y conoce la dirección del próximo nodo, y eventualmente el último tiene nul, diciendo no hay un",
+        "start": 79.92,
+        "end": 86.72
+    },
+    {
+        "text": " próximo nodo, este tipo de listas una dice tomar la lista que te doy la dirección del primero,",
+        "start": 86.72,
+        "end": 91.88
+    },
+    {
+        "text": " por más que la lista se da el largo variable, en cantidad de nodos, alcanza para el sistema que se",
+        "start": 91.88,
+        "end": 98.08
+    },
+    {
+        "text": " hago de tamaño fijo, una dirección, un punter, lo impor de tiene 100 nodos, 20 nodos, 2 nodos, 1000 nodos,",
+        "start": 98.08,
+        "end": 104.56
+    },
+    {
+        "text": " es una dirección, ¿por qué? porque cada nodo guarda esa información, el dato y la dirección del",
+        "start": 104.56,
+        "end": 109.84
+    },
+    {
+        "text": " próximo, ¿qué variante hay? hay muchas variantes que no podría inventar, por ejemplo, esta que está",
+        "start": 109.84,
+        "end": 116.8
+    },
+    {
+        "text": " acá empieza a aparecer noditos de distinto color amarillo como tenía recién de simplemente en",
+        "start": 116.8,
+        "end": 123.64
+    },
+    {
+        "text": " cadenados, pero parece un nodito verde, podemos llamar un nodo cabecera o centinela, que tiene",
+        "start": 123.64,
+        "end": 129.12
+    },
+    {
+        "text": " o guarda en este dibujo la dirección del primero y del último, como que está apuntando los extremos",
+        "start": 129.12,
+        "end": 134.12
+    },
+    {
+        "text": " de la lista, ¿ok? entonces el estructe del nodo verde y el estructe del nodo amarillo es un",
+        "start": 134.12,
+        "end": 140.76
+    },
+    {
+        "text": " distinto, porque de hecho el nodo amarillo va a tener un dato y el nodo verde 2 direcciones, 2",
+        "start": 140.76,
+        "end": 145.36
+    },
+    {
+        "text": " punteros, ¿ok? entonces son dos estructes separados, ¿por qué puede ser útil las variantes le",
+        "start": 145.36,
+        "end": 151.54000000000002
+    },
+    {
+        "text": " pongo un ejemplo, si no la cola de la impresora, ¿sabien? todos hablamos de la cola de la impresora,",
+        "start": 151.54000000000002,
+        "end": 159.16
+    },
+    {
+        "text": " que es un repositorio donde se almacenan los archivos que le lleguen sin prime, como la velocidad",
+        "start": 159.16,
+        "end": 164.48
+    },
+    {
+        "text": " impresora no es tan rápida y puede suceder algo que se corte la lugo que se acaba el papel, los",
+        "start": 164.48,
+        "end": 168.4
+    },
+    {
+        "text": " tiene que almacenar, ¿ok? porque le pueden llegar pedidos de varios lados, no tiene la suficiente",
+        "start": 168.4,
+        "end": 172.84
+    },
+    {
+        "text": " velocidad, ¿cómo la almacena y no orden de llegada? por eso es la macola, cola de espera,",
+        "start": 172.84,
+        "end": 177.12
+    },
+    {
+        "text": " como una cola del supermercado, una cola del banco, que si no hay privilegios, uno hace la cola",
+        "start": 177.12,
+        "end": 181.44
+    },
+    {
+        "text": " hasta que lo atiende, ¿ok? yo podría haber a esta cola como este dibujito, si yo ingreso por acá",
+        "start": 181.44,
+        "end": 187.32
+    },
+    {
+        "text": " y el momento de un día el primero que se atiende es el ulti, que está acá, el final de la cola,",
+        "start": 188.32,
+        "end": 193.79999999999998
+    },
+    {
+        "text": " el primero que llegó hace la cola y sale por el otro lado, entonces yo diría quizás si los",
+        "start": 193.79999999999998,
+        "end": 199.4
+    },
+    {
+        "text": " ingresos a esta fila o esta cola la hago por este extremo inicial el egreso, cuando voy a atender",
+        "start": 199.4,
+        "end": 206.9
+    },
+    {
+        "text": " tiene que ser por el otro extremo, para respetar el orden de llegada, pues si la hago por el mismo",
+        "start": 206.9,
+        "end": 210.44
+    },
+    {
+        "text": " extremo que sería, más que una cola que sería una pila, ¿ok? entonces uno diría y no la pudo",
+        "start": 210.44,
+        "end": 216.6
+    },
+    {
+        "text": " hacer con la lista de arriba, sí claro, pero tenés que recorrer cada vez para hacer al final,",
+        "start": 216.6,
+        "end": 221.35999999999999
+    },
+    {
+        "text": " ordené y no diría en enodos, en cambio si me voy almacenando o llevo pre procesado de la",
+        "start": 221.35999999999999,
+        "end": 228.16
+    },
+    {
+        "text": " dirección del último en tiempo constante accedo a este extremo, entonces una razón simplemente",
+        "start": 228.16,
+        "end": 233.44
+    },
+    {
+        "text": " de eficiencia, ¿si?",
+        "start": 233.44,
+        "end": 234.56
+    },
+    {
+        "text": " No, esta es el último, pero que tienen el estado del largo de…",
+        "start": 234.56,
+        "end": 245.2
+    },
+    {
+        "text": " Bien, ahora vamos a otras variantes, la compañía me está perdonando, vimos otra, hay muchas",
+        "start": 245.2,
+        "end": 249.72
+    },
+    {
+        "text": " otras, debemos mostrar un par y después uno puede agregar como escarsicio otras variantes,",
+        "start": 249.72,
+        "end": 254.92000000000002
+    },
+    {
+        "text": " ¿sabes? esta otra lista y la que se llama una lista doblemente encadenada o enlazada,",
+        "start": 254.92000000000002,
+        "end": 261.68
+    },
+    {
+        "text": " de hecho aparece en el projectio y se fijan creo que aparece en la tarea, ¿ok?",
+        "start": 261.68,
+        "end": 265.52
+    },
+    {
+        "text": " ¿Cuál es la diferencia con el anterior que cada nodo conoce, es como si fuera una",
+        "start": 265.52,
+        "end": 269.52
+    },
+    {
+        "text": " calle de doble mano, ¿no? conoce como seguir para adelante el siguiente pero sabe cómo ir para",
+        "start": 269.52,
+        "end": 274.2
+    },
+    {
+        "text": " el anterior, un ejemplo, usted habrá visto capaz que en un fallcista en un sistema operativo,",
+        "start": 274.2,
+        "end": 279.64
+    },
+    {
+        "text": " cuando uno quiere hacer algo en la carpeta actual o el directorio actual donde está parado y",
+        "start": 279.64,
+        "end": 284.36
+    },
+    {
+        "text": " se puede ir al directorio padre o el directorio hijo, ¿no? entonces uno diría, muchas veces uno hace",
+        "start": 284.36,
+        "end": 289.04
+    },
+    {
+        "text": " algo donde está parado, por ejemplo un nodo, el tema que si yo quiero ir para adelante",
+        "start": 289.04,
+        "end": 292.96000000000004
+    },
+    {
+        "text": " todo bien pero si quiero ir para atrás y estoy en esta variante tengo que recorrer hasta",
+        "start": 292.96000000000004,
+        "end": 298.76000000000005
+    },
+    {
+        "text": " llegar al anterior, de nuevo es una razón de eficiencia, si tengo un puntero que me vuelve",
+        "start": 298.76000000000005,
+        "end": 303.8
+    },
+    {
+        "text": " directo al anterior, puedo ir hacia el anterior en orden uno, de nuevo la razón es eficiencia,",
+        "start": 303.8,
+        "end": 310.20000000000005
+    },
+    {
+        "text": " la tarea es la cuarta, está bien y la que me voy a centrar un poquito más ahora, el puntero",
+        "start": 310.20000000000005,
+        "end": 318.96000000000004
+    },
+    {
+        "text": " no parece acá, tengo un cabezal, tengo la dirección del primero y la dirección del último en el",
+        "start": 318.96,
+        "end": 325.64
+    },
+    {
+        "text": " cabezal verde y cada no dito no solo tiene el dato sino conoce la dirección del siguiente del",
+        "start": 325.64,
+        "end": 330.71999999999997
+    },
+    {
+        "text": " anterior, pero antes de focalizar un poquito de eso unices son las únicas variantes, no me",
+        "start": 330.71999999999997,
+        "end": 335.67999999999995
+    },
+    {
+        "text": " pueden ocurrir muchas otras y tiene aplicaciones prácticas, ¿no? por ejemplo esta que dice",
+        "start": 335.67999999999995,
+        "end": 340.56
+    },
+    {
+        "text": " lista simplemente en cadenada, pero en vez de llevar la dirección del último, llevo una dirección",
+        "start": 340.56,
+        "end": 344.88
+    },
+    {
+        "text": " a algo que llamo el nodo actual y tengo operaciones que permiten mover cuál es la carapeta actual o si",
+        "start": 344.88,
+        "end": 353.12
+    },
+    {
+        "text": " fue un editor de texto cuál es la línea actual del archivo, entonces la acción que haga es ahí,",
+        "start": 353.12,
+        "end": 358.08
+    },
+    {
+        "text": " entonces en tiempo constante puedo hacer la acción, se suele hablar entonces no necesariamente lo que",
+        "start": 358.08,
+        "end": 362.88
+    },
+    {
+        "text": " extremo si no a veces es del punto actual, ¿unice? ¿Aparece esa la tarea? no, pero va a aparecer más",
+        "start": 362.88,
+        "end": 367.24
+    },
+    {
+        "text": " el andre del curso sí, entonces ya lo voy presentando, ¿el diferente de las otras? no, es un ejercicio,",
+        "start": 367.24,
+        "end": 372.88
+    },
+    {
+        "text": " ya está altura, si uno sabe trabajar con puntero sino lo mismo, pero hay variante, esta sería la",
+        "start": 372.88,
+        "end": 378.64
+    },
+    {
+        "text": " misma variante de arriba pero con una lista, acá doble en cadenada, tengo como un puntero un nodo",
+        "start": 378.64,
+        "end": 385.71999999999997
+    },
+    {
+        "text": " actual, supongo que sea que este es el actual y cada nodo conoce el anterior del siguiente,",
+        "start": 385.71999999999997,
+        "end": 390.12
+    },
+    {
+        "text": " acá hay una variante, estas son las que se llama en lista circulares, hay un ejercicio del",
+        "start": 393.12,
+        "end": 397.28
+    },
+    {
+        "text": " proyecto que está de los sugeridos, de los prioritarios, porque el año pasado si estaba en la",
+        "start": 397.28,
+        "end": 402.44
+    },
+    {
+        "text": " tarea una lista circulares al último le sigue el primero, ¿sabes? como si fuera un círculo,",
+        "start": 402.44,
+        "end": 408.0
+    },
+    {
+        "text": " en vez de tener el último, el siguiente el último dice el siguiente el último es el primero,",
+        "start": 408.0,
+        "end": 412.0
+    },
+    {
+        "text": " ¿sabes? como un circulador, de nuevo hay aplicaciones no muy detener en todos los ejemplos para",
+        "start": 412.0,
+        "end": 416.4
+    },
+    {
+        "text": " ver, y hay listas como esta que guardan por ejemplo podría guardar una dirección y podría",
+        "start": 416.4,
+        "end": 423.2
+    },
+    {
+        "text": " éste numerar lo que quiere decir es guardar la cantidad de elementos, entonces también si yo quisiera",
+        "start": 423.2,
+        "end": 427.84
+    },
+    {
+        "text": " conocer rápidamente cuántos elementos tiene la lista lo tendría guardado en un campo de esta",
+        "start": 427.84,
+        "end": 433.28
+    },
+    {
+        "text": " estructura verde, entonces cada vez que ingreso uno a ese nodo o ese campo le sumo uno y cada vez",
+        "start": 433.28,
+        "end": 439.96
+    },
+    {
+        "text": " que borro le resto uno, de nuevo porque está no lo pudo hacer una lista simple en cadáver así,",
+        "start": 439.96,
+        "end": 444.36
+    },
+    {
+        "text": " recorrele con tantos nodos, pero es orden N, si la tengo ahí es orden uno, entonces son sólo",
+        "start": 444.36,
+        "end": 451.03999999999996
+    },
+    {
+        "text": " razones de eficiencia y hay más variante, quiero ver en la segunda parte del curso después del",
+        "start": 451.04,
+        "end": 456.6
+    },
+    {
+        "text": " parcial cuando veamos tipos de estructura datos, vamos a ver que muchas veces para implementar",
+        "start": 456.6,
+        "end": 460.8
+    },
+    {
+        "text": " eficientemente esos módulos voy a elegir alguna de estas variantes como jarsicio, pero voy a volver",
+        "start": 460.8,
+        "end": 467.04
+    },
+    {
+        "text": " entonces a un ratito ésta, que es la variante que ustedes dijeron que es la que está más en el",
+        "start": 467.04,
+        "end": 475.04
+    },
+    {
+        "text": " práctil, ¿no? para que vien que es un ejercicio y que no tiene nada novedoso del punto",
+        "start": 475.04,
+        "end": 480.32
+    },
+    {
+        "text": " histórico sino que más bien práctico, ¿cómo podría hacer la definición de este dibujito?",
+        "start": 480.32,
+        "end": 486.36
+    },
+    {
+        "text": " Y bueno, esta transparencia no estaba en las listas si se lo vieron antes pero ahora se las",
+        "start": 486.36,
+        "end": 492.0
+    },
+    {
+        "text": " resubí y estamos modificadas, ¿tienes este nodito verde que tiene puntero del comienzo y final?",
+        "start": 492.0,
+        "end": 496.76
+    },
+    {
+        "text": " Bueno este nodo cabezal que lo también hagas a algún nombre tiene dos punteros inici final a",
+        "start": 496.76,
+        "end": 502.28000000000003
+    },
+    {
+        "text": " puntar a esto que llamó no doble, ¿qué es el nodo doble? bueno este azul que tiene un dato,",
+        "start": 502.28,
+        "end": 509.76
+    },
+    {
+        "text": " lo que se me antoge un tipo T, no sé qué lo que será y dos punteros que lo estamos siguiendo",
+        "start": 509.76,
+        "end": 514.9599999999999
+    },
+    {
+        "text": " y anterior, si y ant que son punteros no doble, es decir, ahí veo la diferencia, ¿no? en una lista",
+        "start": 514.9599999999999,
+        "end": 522.28
+    },
+    {
+        "text": " voy a tener muchos de los esos azules y uno solo verde, ¿vale? ¿cómo trabajar con eso?",
+        "start": 522.28,
+        "end": 528.76
+    },
+    {
+        "text": " Bueno le voy a mostrar un ejemplo de cómo trabajar un poquito con eso y creo que acá puede haber",
+        "start": 528.76,
+        "end": 533.92
+    },
+    {
+        "text": " una duda, por ejemplo ¿qué es la lista vacía en ese dibujito? puede haber dos interpretaciones",
+        "start": 533.92,
+        "end": 538.4
+    },
+    {
+        "text": " como mínimo razonables, una también es que yo diga mi lista es un puntero al al",
+        "start": 538.4,
+        "end": 545.68
+    },
+    {
+        "text": " al nodo cabezal, o sea que siempre toda lista tiene que tener un nodo cabezal, aunque sea vacía",
+        "start": 545.68,
+        "end": 552.4
+    },
+    {
+        "text": " el nodo va a debastar, entonces dice que es la lista vacía entonces la lista vacía que",
+        "start": 553.4399999999999,
+        "end": 558.74
+    },
+    {
+        "text": " tiene el cabezal pero el inicio del final son null, sea una lista vacía que no tiene ningún",
+        "start": 558.74,
+        "end": 565.3
+    },
+    {
+        "text": " nodo azul por eso es vacía pero tiene el nodo verde igual que es el cabezal, entonces cuando ya",
+        "start": 565.3,
+        "end": 569.34
+    },
+    {
+        "text": " se crea vacía se crea con ese nodo, se entiende? otra interpretación podría ser no, ¿sabes",
+        "start": 569.34,
+        "end": 574.54
+    },
+    {
+        "text": " que yo para mi lista vacía de este dibujito podría ser que este puntero que está acá directamente",
+        "start": 574.54,
+        "end": 580.14
+    },
+    {
+        "text": " hacia el puntero hacia el verde? no, no, no, no, yo soy yo, es el aparatito, este puntero sea",
+        "start": 580.14,
+        "end": 588.78
+    },
+    {
+        "text": " null que no existe el verde, entonces la primera vez que voy a insertar yo pregunte, si ese puntero",
+        "start": 588.78,
+        "end": 593.54
+    },
+    {
+        "text": " el null crea el nodo cabezera y después inserto sería más raro porque entonces tendría que ver",
+        "start": 593.54,
+        "end": 598.98
+    },
+    {
+        "text": " algunas insártiones crean dos nodos porque necesita el cabezal y el nodo y otras nodos, entonces",
+        "start": 598.98,
+        "end": 603.74
+    },
+    {
+        "text": " vamos a tomar esta y creo que en el práctil en la tarea van a trabajar con esa representación",
+        "start": 603.74,
+        "end": 607.74
+    },
+    {
+        "text": " de lista vacía, miremos una lista no vacía un ejemplo para que vean que no es una",
+        "start": 607.74,
+        "end": 612.5
+    },
+    {
+        "text": " complicada, hay que tener cuidado pero no es nada complicado trabajar con esto, supongo",
+        "start": 612.5,
+        "end": 617.46
+    },
+    {
+        "text": " que se que tuviera esta lista doble encadenada y yo estoy parado en este nodo actual, por ejemplo",
+        "start": 617.46,
+        "end": 622.86
+    },
+    {
+        "text": " quiero borrarlo, ¿qué sería borrar este nodo? bueno asumiendo que estos dos azules existen,",
+        "start": 622.86,
+        "end": 629.14
+    },
+    {
+        "text": " el previo y el anterior a ese nodo podría ser que desde el punto de esta lógico no físico,",
+        "start": 629.14,
+        "end": 635.42
+    },
+    {
+        "text": " ¿también? porque no estoy liberando memoria acá, estas dos asignaciones permitieran estas dos",
+        "start": 635.42,
+        "end": 643.02
+    },
+    {
+        "text": " flechas gordas que están acá, ¿qué quiere decir la uno? bueno estoy diciendo que este azul",
+        "start": 643.02,
+        "end": 649.74
+    },
+    {
+        "text": " tiene que apuntar a este azul, ¿cómo lo logró eso? bueno lo que dice es del actual, el anterior",
+        "start": 649.74,
+        "end": 657.2199999999999
+    },
+    {
+        "text": " flecha siguiente tiene que apuntar a este, ¿quién es este del actual es siguiente?",
+        "start": 657.2199999999999,
+        "end": 662.78
+    },
+    {
+        "text": " ¿también? entonces tengo como dos acceso, entonces hay que tener más cuidado de no perderse, yo",
+        "start": 662.78,
+        "end": 670.6999999999999
+    },
+    {
+        "text": " recomiendo hacer dibujitos para programar, recomiendo hacer dibujitos, para no cometer errores porque",
+        "start": 670.6999999999999,
+        "end": 675.54
+    },
+    {
+        "text": " abstractamente pensar un código a veces uno comete muchos errores y el otro puntero que es el",
+        "start": 675.54,
+        "end": 681.8199999999999
+    },
+    {
+        "text": " dos uno diría que quiero que el azul esté apunté a este otro azul, entonces que digo bueno del",
+        "start": 681.8199999999999,
+        "end": 687.54
+    },
+    {
+        "text": " actual, ¿también? siguiente este flecha anterior, o sea acá voy a grabar que flecha la que sale hacia",
+        "start": 687.54,
+        "end": 697.4599999999999
+    },
+    {
+        "text": " este azul, ¿quién tiene la flecha que sale esta de este azul? y la amarillo en actual flecha anterior",
+        "start": 697.4599999999999,
+        "end": 702.9
+    },
+    {
+        "text": " y ahí lógicamente quedaría desconectado el nodo amarillo, ¿también? no libera la memoria o no",
+        "start": 704.18,
+        "end": 711.02
+    },
+    {
+        "text": " diría, entonces para hacer eso debería haber asignado antes de hacer esto al nodo actual a un",
+        "start": 711.02,
+        "end": 717.2199999999999
+    },
+    {
+        "text": " puntero borrar y hacer abajo el dilita borrar, no quise cargar tanto la de apostatía para que se",
+        "start": 717.22,
+        "end": 721.74
+    },
+    {
+        "text": " mira el enganche lógico, lo otro es igual que la que ya habíamos visto, ¿entendió?",
+        "start": 721.74,
+        "end": 726.58
+    },
+    {
+        "text": " Obviamente casos de borre de una diría porque si no hay un nodo acá azul, donde va falla del código, si este",
+        "start": 727.78,
+        "end": 735.0600000000001
+    },
+    {
+        "text": " nodo no existiera, ¿en la línea 1 falla o no? acá falla o no, no falla, la línea 1 no falla, si este",
+        "start": 735.06,
+        "end": 752.06
+    },
+    {
+        "text": " azul no existe, ¿en null? ¿por qué? porque acá está diciendo, mira, actual anterior siguiente, o sea",
+        "start": 752.06,
+        "end": 758.3399999999999
+    },
+    {
+        "text": " actual anterior flecha siguiente, o sea en este campo voy a guardar qué cosa, actual siguiente, si no",
+        "start": 758.34,
+        "end": 765.14
+    },
+    {
+        "text": " hay un actual siguiente acá está guardando en ul, no le darro, ¿dónde va fallar en la siguiente línea?",
+        "start": 765.14,
+        "end": 771.58
+    },
+    {
+        "text": " acá en la línea 2 cuando diga actual siguiente flecha anterior, bueno si acá en ul, no existe en ul",
+        "start": 771.58,
+        "end": 779.7
+    },
+    {
+        "text": " anterior, ahí falla, lo mismo si este nodo azul no existiera va fallar la línea 1 y no la línea 2,",
+        "start": 779.7,
+        "end": 786.3000000000001
+    },
+    {
+        "text": " entonces cuando uno programa esto tiene que ver los casos de borre, como cualquier lista, si",
+        "start": 786.3,
+        "end": 791.78
+    },
+    {
+        "text": " hay un caso de borre, un caso general, lo único que le digo es que hay que tener un detalle más,",
+        "start": 791.78,
+        "end": 796.5
+    },
+    {
+        "text": " porque ahora no son un enganches, sino son dos enganches y es doble en cadenada, ¿ok? se acabó,",
+        "start": 796.5,
+        "end": 802.66
+    },
+    {
+        "text": " ahora sí, el puntero verde, no, si este salvo que este, algunos de estos fueron el último,",
+        "start": 802.66,
+        "end": 813.9
+    },
+    {
+        "text": " yo acá estoy suponiendo para mostrarles este simple código que hay al menos otro después con",
+        "start": 814.4599999999999,
+        "end": 818.98
+    },
+    {
+        "text": " lo cual el puntero verde al inicio, el puntero verde al último no cambia, en los casos de",
+        "start": 818.98,
+        "end": 823.8199999999999
+    },
+    {
+        "text": " borre sigo tendrías que ver si justamente el que borraste es el primero o el último deberías",
+        "start": 823.8199999999999,
+        "end": 828.6999999999999
+    },
+    {
+        "text": " actualizarlo, o sea no, para mostrar un ejemplo no puse casos de borre, en el proyecto si va a",
+        "start": 828.6999999999999,
+        "end": 835.86
+    },
+    {
+        "text": " tener que hacer un algodismo insertar de borrar considerando todos los casos posible, entonces",
+        "start": 835.86,
+        "end": 839.9
+    },
+    {
+        "text": " va a aparecer los casos típicos el caso de borre, la primera vez o al final que ha paquete distinto",
+        "start": 839.9,
+        "end": 844.4599999999999
+    },
+    {
+        "text": " de si es en el medio, ¿sí entendió? Bueno, esto actualice las días positivas de listas y ya lo",
+        "start": 844.4599999999999,
+        "end": 855.22
+    },
+    {
+        "text": " tienen incluido ahí si se lo bajan ahora de nuevo el PDF le agregué eso para que lo tuviera,",
+        "start": 855.22,
+        "end": 859.54
+    },
+    {
+        "text": " vamos a arrancar ahora sí, con la parte de árboles, entonces no hay un solo tipo de árboles,",
+        "start": 861.14,
+        "end": 869.22
+    },
+    {
+        "text": " el libro es escrito como un ton de variantes de árboles que tiene aplicaciones distintas, pero",
+        "start": 869.22,
+        "end": 872.94
+    },
+    {
+        "text": " hay algunos que son más conocidos tienen más aplicaciones, vamos a ver tres, hoy de esos tres",
+        "start": 872.94,
+        "end": 878.1800000000001
+    },
+    {
+        "text": " voy a comentar uno y vamos a ver más bien dos y el que voy a comentar y lo voy a dejar para",
+        "start": 878.1800000000001,
+        "end": 884.62
+    },
+    {
+        "text": " la clase que viene es este primero que voy a arrancar acá el que voy a comentar, que es el",
+        "start": 884.62,
+        "end": 888.0600000000001
+    },
+    {
+        "text": " árbol más general por el tema árbol general o también llamado finitario, ¿qué es un árbol general o",
+        "start": 888.0600000000001,
+        "end": 894.6600000000001
+    },
+    {
+        "text": " finizario? Bueno, van a ver que también como las listas las voy a definir inductivamente porque la",
+        "start": 894.66,
+        "end": 899.3
+    },
+    {
+        "text": " definición va a ser recursiva, fíjense donde se da cuenta que es recursiva, en la clase se le dice",
+        "start": 899.3,
+        "end": 903.74
+    },
+    {
+        "text": " uno dice o bien un árbol general final es vacío y una dice igual que la lista, podría ser vacía,",
+        "start": 903.74,
+        "end": 909.3
+    },
+    {
+        "text": " o bien es un elemento de un tipo T y ahí igual que las listas, pero en el caso de la lista",
+        "start": 910.3,
+        "end": 916.14
+    },
+    {
+        "text": " decías junto con un resto de la lista, ahora dice junto con un número finito de estructuras",
+        "start": 916.14,
+        "end": 922.66
+    },
+    {
+        "text": " de árbol del mismo tipo T, disjuntas entre sí y llamadas su árbol, se compligo, o sea que el",
+        "start": 922.66,
+        "end": 929.5799999999999
+    },
+    {
+        "text": " junto con viene cargadito, ¿no? un árbol es un odito con un conjunto finito de árboles,",
+        "start": 929.5799999999999,
+        "end": 936.38
+    },
+    {
+        "text": " disjuntos entre ellos, como lo puedo ver esográficamente, bueno, en los libros a veces se grafica así,",
+        "start": 936.38,
+        "end": 941.9
+    },
+    {
+        "text": " un triángulo es un árbol general o un árbol en general se lo dibuja como un triángulo,",
+        "start": 941.9,
+        "end": 948.06
+    },
+    {
+        "text": " ¿por qué como un triángulo? porque es un odito que en general se relaciona con muchos, con dos o",
+        "start": 948.06,
+        "end": 953.8199999999999
+    },
+    {
+        "text": " más, entonces ahí menos arriba que abajo, entonces el dibujo típico es un triángulo, fíjense,",
+        "start": 953.8199999999999,
+        "end": 959.3399999999999
+    },
+    {
+        "text": " acá tengo el caso de árbol no vacío, este lo estoy llamando el odito, que de hecho lo voy a",
+        "start": 959.3399999999999,
+        "end": 965.9799999999999
+    },
+    {
+        "text": " llamar no do raíz y van a ver que se usa mucha terminología como lo sábol e genialógico, lo sábol",
+        "start": 965.9799999999999,
+        "end": 971.3399999999999
+    },
+    {
+        "text": " de la naturaleza, también raíz y esto serían en el caso que no se va a hacer los sub árboles,",
+        "start": 971.34,
+        "end": 977.46
+    },
+    {
+        "text": " un conjunto finito de triángulo, cada uno de esto vuelve a ser o bien vacío o bien un odito con",
+        "start": 977.46,
+        "end": 984.1
+    },
+    {
+        "text": " un conjunto de árboles y cada uno de ellos o bien vacío o bien un odito un conjunto de árbol,",
+        "start": 984.1,
+        "end": 988.7800000000001
+    },
+    {
+        "text": " o sea hasta que seguía el vacío, igual que las listas, sólo que voy armando en estructura que es",
+        "start": 988.7800000000001,
+        "end": 994.46
+    },
+    {
+        "text": " no secuencial sino se suele decir arbolescente, por ejemplo el file system o la carpeta de",
+        "start": 995.4200000000001,
+        "end": 1002.62
+    },
+    {
+        "text": " la estructura de carpetas o directorios del sistema operativo, Linux Windows y Unix o cualquiera",
+        "start": 1002.62,
+        "end": 1009.34
+    },
+    {
+        "text": " que sea, uno diría tengo una carpeta raíz y me puedo crear su carpeta, por ejemplo,",
+        "start": 1009.34,
+        "end": 1015.26
+    },
+    {
+        "text": " para cada curso que esté haciendo este semestre me puedo llevar un triángulo de esto sería una carpeta,",
+        "start": 1015.26,
+        "end": 1021.5
+    },
+    {
+        "text": " por ejemplo acá podría ser la carpeta programación 2, esta la carpeta de lógica y todas las",
+        "start": 1022.5,
+        "end": 1027.54
+    },
+    {
+        "text": " cosas que quiera y dentro de esta carpeta su vez podría tener un odito que diga tengo los",
+        "start": 1027.54,
+        "end": 1031.98
+    },
+    {
+        "text": " teóricos, tengo los prácticos, taría 1, taría 2, entonces voy guardando los archivos organizadamente",
+        "start": 1031.98,
+        "end": 1036.58
+    },
+    {
+        "text": " una diría, para que no se me mezcle todo, entonces uno puede armar una estructura de esta forma,",
+        "start": 1036.58,
+        "end": 1041.06
+    },
+    {
+        "text": " que sean disjuntos lo que quiere decir es que los triángulos no comparten elementos, no quiere",
+        "start": 1041.06,
+        "end": 1047.78
+    },
+    {
+        "text": " decir que no pueda estar repetido, pero si estar repetido es como no dito son dos no dito distintos",
+        "start": 1047.78,
+        "end": 1052.58
+    },
+    {
+        "text": " con el mismo dato, pero no hay una flecha, por ejemplo si estas son flechitas, no hay una flecha que",
+        "start": 1052.58,
+        "end": 1057.7
+    },
+    {
+        "text": " vincule uno de acá con uno de acá, saben cómo se llama la estructura que sí permite eso o vincular",
+        "start": 1057.7,
+        "end": 1062.94
+    },
+    {
+        "text": " como no ditos entre hermanos, grafos muy bien y grafos lo van a estudiar en p3, o sea que las listas",
+        "start": 1062.94,
+        "end": 1071.82
+    },
+    {
+        "text": " son un caso particular de los árboles, porque cuando yo tomo número finito siempre tomo uno,",
+        "start": 1071.82,
+        "end": 1077.54
+    },
+    {
+        "text": " digo uno dito con número finito uno, uno dito con número finito uno, entonces me queda una",
+        "start": 1078.06,
+        "end": 1083.18
+    },
+    {
+        "text": " estructura secuencial, esto generaliza eso y los grafos generaliza los árboles porque le quitan la",
+        "start": 1083.18,
+        "end": 1089.7
+    },
+    {
+        "text": " restricción de que sean disjuntos, lo comento pero no vamos a entrar en grafos en este curso, bien se suele",
+        "start": 1089.7,
+        "end": 1097.3
+    },
+    {
+        "text": " damar la raíz del árbol, se suele damar incluso si hay nodos acá hijos de aquel como si",
+        "start": 1097.3,
+        "end": 1102.18
+    },
+    {
+        "text": " fue un arboginialógico su árboles se le suele decir a estos, hay variantes, por ejemplo yo",
+        "start": 1102.18,
+        "end": 1109.8600000000001
+    },
+    {
+        "text": " podría decir que cuando hablo de número finito lo restringo, una variante sería restringirlo",
+        "start": 1109.8600000000001,
+        "end": 1115.8600000000001
+    },
+    {
+        "text": " decir exactamente N, cuando no es vacío es un nodito con exactamente N, fijo N, 10, el número",
+        "start": 1115.8600000000001,
+        "end": 1123.14
+    },
+    {
+        "text": " y quieran, un N, también se llaman árboles enearios y un caso particular es cuando fijo el N",
+        "start": 1123.14,
+        "end": 1129.14
+    },
+    {
+        "text": " en dos, se llaman árbol dos ario o binarios, vamos a ver ahora por qué los binarios y en realidad",
+        "start": 1129.14,
+        "end": 1137.3000000000002
+    },
+    {
+        "text": " lo vamos a terminar de ver después de turismo son tan importantes, yo lo voy a anticipar a la",
+        "start": 1137.3000000000002,
+        "end": 1142.66
+    },
+    {
+        "text": " película, porque si yo te hice trabajar con eso que se llaman binario que son los más simples porque",
+        "start": 1142.66,
+        "end": 1147.7
+    },
+    {
+        "text": " no dito con dos va a ver una semántica que me va a permitir interpretar un binario como uno",
+        "start": 1147.7,
+        "end": 1152.7800000000002
+    },
+    {
+        "text": " general, entonces voy a trabajar con los generales a través de un binario, entonces hoy lo que vamos a",
+        "start": 1152.7800000000002,
+        "end": 1158.5
+    },
+    {
+        "text": " hacer es ver cómo trabajar con los binarios y después vamos a ver la clase que viene, cuál es esa",
+        "start": 1158.5,
+        "end": 1163.14
+    },
+    {
+        "text": " semántica que me permite ver un binario como un general, pero primero adquiriendo práctica de",
+        "start": 1163.14,
+        "end": 1168.58
+    },
+    {
+        "text": " los binarios, entonces esto sería por ejemplo un árbol binario, un dibujito un árbol binario y",
+        "start": 1168.58,
+        "end": 1176.42
+    },
+    {
+        "text": " les puse como ejemplo sin visualizar acá esto sería como una expresión arinmética binaria con",
+        "start": 1176.42,
+        "end": 1182.14
+    },
+    {
+        "text": " operadores binarios, tengo chen serio que el puntera namalé, el por de esta subespresión y",
+        "start": 1182.74,
+        "end": 1191.8600000000001
+    },
+    {
+        "text": " esta subespresión que tengo el más dividido, son binarios porque los operadores son binarios,",
+        "start": 1191.8600000000001,
+        "end": 1197.0600000000002
+    },
+    {
+        "text": " cómo lo represento con un árbol, con un dibujito, el por lo pongo como raíz del árbol y la subespresión",
+        "start": 1197.0600000000002,
+        "end": 1204.22
+    },
+    {
+        "text": " izquierda que sería esta como árbol izquierdo y la derecha como árbol derecho, si mira el izquierda",
+        "start": 1204.22,
+        "end": 1209.3400000000001
+    },
+    {
+        "text": " cuál es el operador principal, el más lo pongo como raíz de este sub árbol, de izquierda pongo",
+        "start": 1209.34,
+        "end": 1215.4599999999998
+    },
+    {
+        "text": " la subespresión izquierda que es la y del lado derecho la subespresión B divido C, se pongo el",
+        "start": 1215.4599999999998,
+        "end": 1221.22
+    },
+    {
+        "text": " dividido, subespresión izquierda B y C, se entiende como de acá abajo paso arriba al dibujito y",
+        "start": 1221.22,
+        "end": 1229.06
+    },
+    {
+        "text": " ni si el que sentido tiene, que el que ventaja puede tener, esto es lo que se suele llamar las",
+        "start": 1229.06,
+        "end": 1234.54
+    },
+    {
+        "text": " sintaxis concreta o lineal de algo, un string que tenga la expresión escrita como string, cuando",
+        "start": 1234.54,
+        "end": 1240.98
+    },
+    {
+        "text": " una escriba un programa en C, se más más pasca algo, cualquier lenguaje y lo que escribes es un string",
+        "start": 1240.98,
+        "end": 1244.98
+    },
+    {
+        "text": " grandeote, capaz de contabulador, pero es una secuencia de caracteres, que hace un compilador,",
+        "start": 1244.98,
+        "end": 1251.78
+    },
+    {
+        "text": " trata de ver si es string, cumple las reglas de ese lenguaje, compila no diría y para hacer eso",
+        "start": 1251.78,
+        "end": 1257.98
+    },
+    {
+        "text": " no sé si han escuchado la palabra, se llama un árbol de parsin, el árbol de parsin es",
+        "start": 1257.98,
+        "end": 1262.1399999999999
+    },
+    {
+        "text": " armonestructura, arborecente que es recursiva de acuerdo a la definición de la gramática,",
+        "start": 1262.14,
+        "end": 1266.42
+    },
+    {
+        "text": " la vene F del lenguaje y armales, vemos un árbol que representa ese string, y dice una",
+        "start": 1266.42,
+        "end": 1272.5600000000002
+    },
+    {
+        "text": " ventaja que tiene eso, es que suponga C y lo vamos a ver ahora en un ratito, no más, si yo quisiera",
+        "start": 1272.5600000000002,
+        "end": 1278.22
+    },
+    {
+        "text": " evaluar y ya sé recursión y asumo que algo sea de la recursión, evaluar una expresión",
+        "start": 1278.22,
+        "end": 1284.0200000000002
+    },
+    {
+        "text": " representada con un árbolito de esto, recursivamente son tres niñas de código, porque porque le diría",
+        "start": 1284.0200000000002,
+        "end": 1290.66
+    },
+    {
+        "text": " evaluar la subespresión izquierda y confío que la recursión ya lo sabe hacer, evaluar la subespresión",
+        "start": 1290.66,
+        "end": 1296.0600000000002
+    },
+    {
+        "text": " derecha y la recursión lo sabe hacer, con el valor que te digo cada una hace un producto,",
+        "start": 1296.0600000000002,
+        "end": 1300.02
+    },
+    {
+        "text": " entonces el evaluar cada subespresión y hacer el operador que está en la raíz, lo largo",
+        "start": 1301.38,
+        "end": 1305.42
+    },
+    {
+        "text": " evaluar y ya está, tres, cuatro niñas de código, a salvo iterativos más complicado sobre esto,",
+        "start": 1305.42,
+        "end": 1310.98
+    },
+    {
+        "text": " o sobre la secuencia, la síntesis concrita, porque cada vez tendría que estar buscando quírense",
+        "start": 1310.98,
+        "end": 1315.0600000000002
+    },
+    {
+        "text": " el operador principal, hay asociatividad, cómo es la presidencia, eso es una sola vez cuando",
+        "start": 1315.06,
+        "end": 1321.7
+    },
+    {
+        "text": " compil o una diría cuando paso a la síntaxis concrita a esta síntaxis abstracta y ya después",
+        "start": 1321.7,
+        "end": 1327.46
+    },
+    {
+        "text": " trabajo con eso porque es más eficiente para el sistema trabajar con la estructura de arriba,",
+        "start": 1327.46,
+        "end": 1332.06
+    },
+    {
+        "text": " y ojo unirse, eso la hace con una expresión aritmética, no, eso lo hace con todo un programa,",
+        "start": 1332.06,
+        "end": 1336.58
+    },
+    {
+        "text": " el árbol de parcin es del árbol del programa, unif, un guay, todo es parte de una estructura",
+        "start": 1336.58,
+        "end": 1341.26
+    },
+    {
+        "text": " arbol es sente que representa el programa, pero por ahora nos vamos a considerar en los binarios",
+        "start": 1341.26,
+        "end": 1347.66
+    },
+    {
+        "text": " y gimos, porque un guay, todo, pues no binario, un poquito de una mezclatura muy simple, intuitiva,",
+        "start": 1347.66,
+        "end": 1355.98
+    },
+    {
+        "text": " si habla así como yo hablé de la raíz del árbol, que es el nodito que está arriba,",
+        "start": 1355.98,
+        "end": 1360.42
+    },
+    {
+        "text": " también se hablan de las hojas del árbol pensando como los árbol de la naturaleza,",
+        "start": 1360.42,
+        "end": 1364.82
+    },
+    {
+        "text": " que son las hojas los nodos terminales, que es un nodo terminal el que no deja crezar más nada,",
+        "start": 1364.82,
+        "end": 1370.7
+    },
+    {
+        "text": " es lo terminal en el árbol, entonces como es la definición nodito cuyos ambos su árboles",
+        "start": 1371.5,
+        "end": 1377.18
+    },
+    {
+        "text": " son vacíos, este y este, este no es, bueno este, este, este, este, este, no son nodos terminales",
+        "start": 1377.18,
+        "end": 1387.78
+    },
+    {
+        "text": " porque incluso este tiene un vacío pero el otro no, todo y el árbol por ese lado puede crezar",
+        "start": 1387.78,
+        "end": 1393.3400000000001
+    },
+    {
+        "text": " por lado izquierdo, se entiende? Si yo miro esta expresión heritmética, quiénes son los",
+        "start": 1393.34,
+        "end": 1401.34
+    },
+    {
+        "text": " nodos hojas? En palabras que representan de la expresión heritmética, los números, los operandos",
+        "start": 1401.34,
+        "end": 1412.1799999999998
+    },
+    {
+        "text": " uno diría, que en este caso son letras y qué son los nodos que no son hojas, se suelen llamar",
+        "start": 1412.1799999999998,
+        "end": 1417.34
+    },
+    {
+        "text": " las hojas también se suelen el nombre de nodos externos y las nodos nodos nojas nodos internos,",
+        "start": 1417.34,
+        "end": 1423.8999999999999
+    },
+    {
+        "text": " qué son los nodos internos en ese dibujo? Los nodos internos son los operadores,",
+        "start": 1423.8999999999999,
+        "end": 1430.02
+    },
+    {
+        "text": " entonces simplemente con esa definición podría saber si en una estructura esto es un operador,",
+        "start": 1430.02,
+        "end": 1435.4599999999998
+    },
+    {
+        "text": " un operando, está bien? Simplemente sabiendo si tienen o no tiene hijos,",
+        "start": 1435.4599999999998,
+        "end": 1441.74
+    },
+    {
+        "text": " siguiente definición, bastante intuitiva también, niveles, qué son los niveles de un árbol y",
+        "start": 1441.74,
+        "end": 1450.38
+    },
+    {
+        "text": " bueno, empiezo a contar desde que empieza hasta que se acabe, la raíz primer nivel, los hijos si",
+        "start": 1450.38,
+        "end": 1455.7
+    },
+    {
+        "text": " tiene están en el segundo nivel, los nietos si tienen tarzar nivel y así hasta que se acabe,",
+        "start": 1455.7,
+        "end": 1460.86
+    },
+    {
+        "text": " qué se define como la altura de un árbol, la cantidad de niveles que tiene, o dicho otra",
+        "start": 1463.18,
+        "end": 1471.6200000000001
+    },
+    {
+        "text": " manera, la cantidad de nodos en el camino más largo que hay de la raíz a una hoja, es lo",
+        "start": 1471.62,
+        "end": 1476.5
+    },
+    {
+        "text": " mismo, cantidad niveles o el camino más largo, fíjemo no, en este árbolito, cuál es la altura",
+        "start": 1476.5,
+        "end": 1483.4599999999998
+    },
+    {
+        "text": " de ese árbol? 4, uno diría, el primer nivel de la raíz, los hijos segundo, los nietos tarceros,",
+        "start": 1483.4599999999998,
+        "end": 1491.6599999999999
+    },
+    {
+        "text": " los biznietos, 4, camino más largo decía bueno, cuántos caminos hay de la raíz a una hoja,",
+        "start": 1491.6599999999999,
+        "end": 1497.2199999999998
+    },
+    {
+        "text": " este es uno de largo 3 y este es otro camino de largo 4, el camino más largo tiene 4,",
+        "start": 1497.22,
+        "end": 1503.6200000000001
+    },
+    {
+        "text": " es lo mismo, fíjense que cuando digo camino a que me estoy refiriendo del árbol, qué es un camino",
+        "start": 1503.6200000000001,
+        "end": 1510.5
+    },
+    {
+        "text": " del árbol? ¿conse? Una rama, hay una rama que es de las estructuras que sabimos, una lista,",
+        "start": 1510.5,
+        "end": 1517.22
+    },
+    {
+        "text": " o sea que un árbol lo puedo ver como muchas listas, y de hecho a veces lo voy a procesar así,",
+        "start": 1517.22,
+        "end": 1522.82
+    },
+    {
+        "text": " ¿ok? ¿cómo calcularía la altura de un árbol? Bueno, no, porque no represento esto de manera",
+        "start": 1522.82,
+        "end": 1533.86
+    },
+    {
+        "text": " inductiva si uso la recurción en el esquema y una diría aplico esto, ¿qué es esto? Y bueno,",
+        "start": 1533.86,
+        "end": 1540.6599999999999
+    },
+    {
+        "text": " si el árbol no es vacío y es binario, va a ser un dibujito de esta forma, tengo un nodito con",
+        "start": 1540.6599999999999,
+        "end": 1545.54
+    },
+    {
+        "text": " dos u árboles, dos triángulos, pero la recurción te diría que vos sabes calcular,",
+        "start": 1545.54,
+        "end": 1550.58
+    },
+    {
+        "text": " recurseamente la altura de este izquierdo y la altura del derecho, por ejemplo este te dio 5 y",
+        "start": 1551.1399999999999,
+        "end": 1555.78
+    },
+    {
+        "text": " este te dio 8, de los dos sabiendo que uno es 5 y uno es 8, ¿cuál es la altura del",
+        "start": 1555.78,
+        "end": 1561.74
+    },
+    {
+        "text": " searbol? Entonces, 9, porque uniría de 5 y 8 me quedo con el más largo, el 8 y por qué le",
+        "start": 1561.74,
+        "end": 1567.3799999999999
+    },
+    {
+        "text": " sumaron uno? Porque la raíz está uno arriba de cualquiera de estos dos, entonces uniría a, es",
+        "start": 1567.3799999999999,
+        "end": 1574.02
+    },
+    {
+        "text": " 1 más el máximo de las dos alturas, ¿cómo hago eso formalmente? Bueno, primero definamos inductivamente",
+        "start": 1574.02,
+        "end": 1580.46
+    },
+    {
+        "text": " los árboles binarios, con dos reglas me alcanza igual que las listas, ¿no? O bien es vacío el árbol",
+        "start": 1580.46,
+        "end": 1586.54
+    },
+    {
+        "text": " y acá lo puse como, ve, por el corche, te corche, te cuantala lista, le puse paréntesis paréntesis y",
+        "start": 1586.54,
+        "end": 1591.74
+    },
+    {
+        "text": " cuando lo dibujo a veces gráficamente le hago una racita, un guión, ese es el árbol vacío y cuando",
+        "start": 1591.74,
+        "end": 1597.22
+    },
+    {
+        "text": " el árbol no es vacío lo puedo dibujar así, ¿no? Si tengo un árbol izquierdo, un nodo y un árbol",
+        "start": 1597.22,
+        "end": 1603.58
+    },
+    {
+        "text": " derecho, la terna de esos tres componentes es un árbol binario, o sea que para conformar un árbol",
+        "start": 1603.58,
+        "end": 1609.94
+    },
+    {
+        "text": " binario no vacío que necesito un elemento y dos árboles, lo puedo poner como terna o lo puedo",
+        "start": 1609.94,
+        "end": 1617.26
+    },
+    {
+        "text": " dibujar muchas veces así, van a ver que las transparencias aparecen como el nodito y los dos",
+        "start": 1617.26,
+        "end": 1622.3
+    },
+    {
+        "text": " árboles puesto al izquierdo de la derecha, ¿cómo? Los tres serían, ¿por qué listas?",
+        "start": 1622.3,
+        "end": 1630.38
+    },
+    {
+        "text": " Isk y Der son árboles, pues dice de tipo arbín y T es de tipo datos, ya malo así, entonces tengo un",
+        "start": 1630.38,
+        "end": 1640.8600000000001
+    },
+    {
+        "text": " dato y dos árboles, cada uno de esos árboles rojo que veis ahí a su vez puede volver a hacer un nodito con",
+        "start": 1640.8600000000001,
+        "end": 1646.9
+    },
+    {
+        "text": " dos árboles hasta que momento diga vacío, ¿ok?",
+        "start": 1646.9,
+        "end": 1650.8600000000001
+    },
+    {
+        "text": " Para calcular decir vos, no necesariamente que llegue a los dos vacíos, no lo piensen así.",
+        "start": 1660.38,
+        "end": 1674.5400000000002
+    },
+    {
+        "text": " El esquema, ¿no si un ese que te pierde más?",
+        "start": 1674.5400000000002,
+        "end": 1679.94
+    },
+    {
+        "text": " A ver, miremos a ver si los hago creyentes de la recursión, ¿no? Porque si son creyentes",
+        "start": 1679.94,
+        "end": 1688.1000000000001
+    },
+    {
+        "text": " de la recursión van a ver que el programa ha recursido es bastante fácil, es más fácil quitará, de hecho.",
+        "start": 1688.1,
+        "end": 1692.26
+    },
+    {
+        "text": " ¿Cuál es el esquema para definir funciones sobre este conjunto? Y una idea, voy a definir la",
+        "start": 1692.26,
+        "end": 1698.4599999999998
+    },
+    {
+        "text": " función altura, pero podría ser cualquier función, definíme la para el árbol vacío tan rojo acá, ¿no?",
+        "start": 1698.4599999999998,
+        "end": 1703.74
+    },
+    {
+        "text": " Maldito puntero. Acá igual a algo, bueno, por definición yo dije que el altura",
+        "start": 1703.74,
+        "end": 1710.02
+    },
+    {
+        "text": " arbol vacío era cero y después cuando voy a definir la altura de un árbol no vacío, lo llamamos Isk Ader,",
+        "start": 1710.02,
+        "end": 1715.6599999999999
+    },
+    {
+        "text": " ¿qué puedo asumir por el esquema recursido? ¿Qué me decía el esquema recursido? ¿Qué para los",
+        "start": 1715.66,
+        "end": 1720.6200000000001
+    },
+    {
+        "text": " dos que ya son árboles, la función ya lo debería saber calcular. Con la estágria de ejecución",
+        "start": 1720.6200000000001,
+        "end": 1725.74
+    },
+    {
+        "text": " puede tener cientos y no lo va a estar la máquina solita creyentes de la recursión. O sea,",
+        "start": 1725.74,
+        "end": 1731.14
+    },
+    {
+        "text": " cuando yo acá escribo, altura de izquierdo, altura Isk y altura de Ar, será 5 y 8, pero yo está",
+        "start": 1731.14,
+        "end": 1739.46
+    },
+    {
+        "text": " calculado, olvídense, la pregunta es ¿qué hago con ese 5 y 8 para hacer la altura de este? Sí.",
+        "start": 1739.46,
+        "end": 1746.7
+    },
+    {
+        "text": " Y depende del tamaño del árbol, puede me pregunta si puedo romper el estág, y es muy raro,",
+        "start": 1752.7,
+        "end": 1757.78
+    },
+    {
+        "text": " debe ser una árbol, o sea, demasiado grande la memoria y tener por el llamado Ocetía de un",
+        "start": 1757.78,
+        "end": 1762.58
+    },
+    {
+        "text": " estág en el sistema operativo muy chiquito, no les va a pasar ustedes, no hay que estar controlando",
+        "start": 1762.58,
+        "end": 1767.54
+    },
+    {
+        "text": " el estág. Entonces si es la altura del izquierdo y sea altura del derecho, por ejemplo, piensenlo así,",
+        "start": 1767.54,
+        "end": 1773.62
+    },
+    {
+        "text": " este medio 5 y este medio 8, ¿qué hago con los dos eso? Y usted me dijeron que quedó con el máximo,",
+        "start": 1773.62,
+        "end": 1778.34
+    },
+    {
+        "text": " el máximo es el máximo entre dos números, es unif, entre 5 y 8 dice el más grande y a eso le sumo",
+        "start": 1778.34,
+        "end": 1786.7
+    },
+    {
+        "text": " uno, y eso me va a dar el 9, estoy en una la piensa así generico. Lo largo de correr y ya",
+        "start": 1786.7,
+        "end": 1792.7
+    },
+    {
+        "text": " empreve lo traduzco a punteros, y eso que hay con el alto de un árbol, no se pongan a,",
+        "start": 1792.7,
+        "end": 1797.3400000000001
+    },
+    {
+        "text": " ¿cómo lo va a recorrer? Dejen lo que lo va a la máquina. Usted cuando piensen,",
+        "start": 1797.3400000000001,
+        "end": 1801.3400000000001
+    },
+    {
+        "text": " altura de esco, altura de archa está hecho, digamos, con eso que está hecho como árbol,",
+        "start": 1801.3400000000001,
+        "end": 1805.66
+    },
+    {
+        "text": " la altura de este árbol, esa es la única pregunta, la recursión es yo tengo un paso generico",
+        "start": 1805.66,
+        "end": 1810.54
+    },
+    {
+        "text": " y luego la máquina, sigue haciendo lo que sabes hacer y te digo que pasa cuando termines,",
+        "start": 1812.14,
+        "end": 1816.38
+    },
+    {
+        "text": " caso va a ser, ¿si está? Eso es la recursión, ¿tabía? Vamos a ver eso, algo de lo que puedo hacer,",
+        "start": 1816.38,
+        "end": 1827.42
+    },
+    {
+        "text": " digamos, de las operaciones de árbol para ver, para ir incluso un poquito de la recursión,",
+        "start": 1827.42,
+        "end": 1831.66
+    },
+    {
+        "text": " es la recorrido de árbol, muchas veces uno quiere recorrer la estructura con el cientos de nodos,",
+        "start": 1831.66,
+        "end": 1836.46
+    },
+    {
+        "text": " para imprimir, por ejemplo, ¿tabía? ¿Cuántas formas alternativas hay de imprimir una lista? Y",
+        "start": 1836.46,
+        "end": 1843.42
+    },
+    {
+        "text": " no hay muchas, ya delante para atrás, la trapadelante si me acabó la idea a mí, o sea,",
+        "start": 1843.42,
+        "end": 1848.14
+    },
+    {
+        "text": " también, pero un árbol, como tiene más componente, tiene un nodo de dos árboles y puede",
+        "start": 1848.14,
+        "end": 1853.66
+    },
+    {
+        "text": " haber más variantes, de hecho acá les pongo tres y no son las unicas tres, por ejemplo, lo que",
+        "start": 1853.66,
+        "end": 1859.3400000000001
+    },
+    {
+        "text": " llamó preorder, también es, primero imprime la raíz, o sea, el té y luego los dos árboles",
+        "start": 1859.3400000000001,
+        "end": 1868.14
+    },
+    {
+        "text": " iskider, inorder, primero el izquierdo, en el medio la raíz de y después el derecho,",
+        "start": 1868.14,
+        "end": 1877.5800000000002
+    },
+    {
+        "text": " y post-order, primero los dos árboles y al final la raíz, o sea, ¿qué le da el nombre pre in y",
+        "start": 1877.5800000000002,
+        "end": 1884.22
+    },
+    {
+        "text": " post, donde va la raíz, el amarillo? Pre al comienzo in, en el medio post al final, de los recorridos",
+        "start": 1884.22,
+        "end": 1892.46
+    },
+    {
+        "text": " en los árboles, ¿qué es lo recorrido en los árboles? Esa mejor recursión, que ya lo sabía hacer,",
+        "start": 1892.46,
+        "end": 1897.5800000000002
+    },
+    {
+        "text": " vamos a ver si lo sabía hacer. Veamos, preorder dijimos, yo tengo un árbol genérico, primero",
+        "start": 1898.7,
+        "end": 1907.14
+    },
+    {
+        "text": " va a ser la raíz, después todo el subarbol izquierdo, y cuando termine todo el sol o el derecho.",
+        "start": 1907.14,
+        "end": 1911.46
+    },
+    {
+        "text": " ¿Está más acuerdo? Sí, sí o no, pero antes de ir acá, mirando esto, recuerdan cuando yo les",
+        "start": 1911.46,
+        "end": 1920.98
+    },
+    {
+        "text": " dije, obimos juntos que la recursión tenía más sentido y no era un iteración difrasada,",
+        "start": 1920.98,
+        "end": 1928.1000000000001
+    },
+    {
+        "text": " cuando no es una recursión de cola, cuando ya salgo de una estructura lineal y me paso,",
+        "start": 1928.86,
+        "end": 1935.98
+    },
+    {
+        "text": " incluso una binaria chiquita, porque binaria puede tener muchos hijos, pero ya con dos ya se me",
+        "start": 1935.98,
+        "end": 1940.1799999999998
+    },
+    {
+        "text": " complica, ¿por qué? Porque tengo dos llamados recursos, cualquiera que me vas a atender,",
+        "start": 1940.1799999999998,
+        "end": 1945.82
+    },
+    {
+        "text": " el otro que es pendiente, o sea, ya tengo el código después de ese llamado, porque por más que",
+        "start": 1945.82,
+        "end": 1950.26
+    },
+    {
+        "text": " va a atender a uno, el otro que es pendiente, entonces ya no hay recursión de cola,",
+        "start": 1950.26,
+        "end": 1953.8999999999999
+    },
+    {
+        "text": " entonces acá la recursión pasa a ser como la forma de programar, de hecho recorrer un árbol y",
+        "start": 1954.9,
+        "end": 1959.74
+    },
+    {
+        "text": " contarlos no, recorrer un árbol y imprimir, se la regalo, el que lo quiere hacer con un guay,",
+        "start": 1959.74,
+        "end": 1965.18
+    },
+    {
+        "text": " porque va a tener que recordar un montón de cosas, un código va a ser indrecifrabble, complejo,",
+        "start": 1965.18,
+        "end": 1970.26
+    },
+    {
+        "text": " seguramente con errores, en cambio, recursivamente son tres niña de código.",
+        "start": 1970.26,
+        "end": 1973.3400000000001
+    },
+    {
+        "text": " ¿Cosas auxiliares para que no se pierda, pero uso la recursión para eso?",
+        "start": 1973.3400000000001,
+        "end": 1980.66
+    },
+    {
+        "text": " Ya, ya, caigo en el esquema donde la recursión pasa a ser la herramienta preferida para programar",
+        "start": 1980.66,
+        "end": 1986.94
+    },
+    {
+        "text": " la estructura, entonces miremos el preorda, si usted mira por ejemplo este árbolito y quiero",
+        "start": 1986.94,
+        "end": 1995.5800000000002
+    },
+    {
+        "text": " recorrer este en preorda aplicando esta definición de preorda, ¿sabien?",
+        "start": 1995.5800000000002,
+        "end": 2000.0600000000002
+    },
+    {
+        "text": " ¿Uniría preorda que lo que es primero la raíz? Fíjense que ya sale primero el 1,",
+        "start": 2000.0600000000002,
+        "end": 2004.5
+    },
+    {
+        "text": " ¿sabien? Después dice, me voy a recorrer todo el árbol izquierdo y dejo pendiente",
+        "start": 2005.5,
+        "end": 2010.84
+    },
+    {
+        "text": " y el árbol derecho, o sea hasta que no termine con todo el árbol izquierdo, que empieza con raíz",
+        "start": 2010.84,
+        "end": 2015.26
+    },
+    {
+        "text": " dos, no va a ser el árbol derecho, ¿tamos a acordar? Cuando viene el árbol izquierdo, dice",
+        "start": 2015.26,
+        "end": 2020.26
+    },
+    {
+        "text": " aplicar la definición de nuevo, como no es vacío, preorda, primero el 2, fíjense que después",
+        "start": 2020.26,
+        "end": 2024.7
+    },
+    {
+        "text": " del 1 sale el 2 y después que dice, me voy al izquierdo y dejo pendiente este 5 derecho para",
+        "start": 2024.7,
+        "end": 2031.66
+    },
+    {
+        "text": " después, ya hay dos pendientes, ¿no? el stack, porque estaba todo pendiente el árbol con la",
+        "start": 2031.66,
+        "end": 2036.7
+    },
+    {
+        "text": " raíz 3 acá y ahora dejo pendiente este y se viene entonces al árbol izquierdo que es este,",
+        "start": 2036.7,
+        "end": 2043.26
+    },
+    {
+        "text": " imprime la raíz, sale el 4 y se va al árbol izquierdo y deja pendiente el derecho que tiene el 9,",
+        "start": 2043.26,
+        "end": 2050.9
+    },
+    {
+        "text": " tres pendientes en el stack, se viene el árbol izquierdo, es vacío, pero primero imprime la raíz",
+        "start": 2050.9,
+        "end": 2058.7000000000003
+    },
+    {
+        "text": " que es el 8 y izquierdo vacío, derecho vacío termina y cuando termino acá que le había que",
+        "start": 2058.7,
+        "end": 2063.66
+    },
+    {
+        "text": " pendiente el lado derecho de este, imprime el 9, fíjense ahí y después cuando termino entonces",
+        "start": 2063.66,
+        "end": 2071.02
+    },
+    {
+        "text": " contó este árbol que le había que pendiente el lado derecho del 2 que es el 5 sale el 5,",
+        "start": 2071.02,
+        "end": 2075.9399999999996
+    },
+    {
+        "text": " termina con todo este árbol izquierdo con el 2 todo esto entonces qué le falta todo el árbol",
+        "start": 2075.9399999999996,
+        "end": 2081.1
+    },
+    {
+        "text": " derecho, preorda el primero imprime el 3, después se viene el árbol izquierdo y deja pendiente el",
+        "start": 2081.1,
+        "end": 2087.98
+    },
+    {
+        "text": " derecho y después el derecho y sale esta secuencia, o sea estoy linealizando una forma recorrer el árbol",
+        "start": 2087.98,
+        "end": 2093.78
+    },
+    {
+        "text": " en ese formato, no se olvido de ningún nodo, ningún nodo de lo imprimido dos veces,",
+        "start": 2094.9,
+        "end": 2099.58
+    },
+    {
+        "text": " si yo puedo implementar eso con tres líneas de código que ya las voy a ver en cemás más,",
+        "start": 2099.58,
+        "end": 2105.22
+    },
+    {
+        "text": " si, siguiente, inorder, primero el árbol izquierdo, en el medio la raíz y después",
+        "start": 2106.22,
+        "end": 2117.14
+    },
+    {
+        "text": " el árbol derecho, o sea que decir in es la raíz en el medio, ¿ok?",
+        "start": 2117.14,
+        "end": 2120.22
+    },
+    {
+        "text": " ¿Quién es el primero que imprime de ese árbol?",
+        "start": 2122.3399999999997,
+        "end": 2124.3799999999997
+    },
+    {
+        "text": " ¿eh?",
+        "start": 2125.38,
+        "end": 2127.38
+    },
+    {
+        "text": " Muy bien, el 8, tanto de acuerdo, ¿hay que no estar acuerdo que es el 8?",
+        "start": 2127.38,
+        "end": 2132.1800000000003
+    },
+    {
+        "text": " No, no, no, no, no, ¿por qué? ¿Por qué el 8? Fíjense que este inorder va a ir dejando mucha",
+        "start": 2132.1800000000003,
+        "end": 2139.38
+    },
+    {
+        "text": " cosa pendiente hasta que haga algo, ¿vale? ¿Qué es lo que dice? ¿Opa? ¿Qué es lo que dice acá?",
+        "start": 2139.38,
+        "end": 2147.86
+    },
+    {
+        "text": " dice el árbol es vacío y se primero andate al izquierdo y deja pendiente la raíz el árbol derecho,",
+        "start": 2148.58,
+        "end": 2155.46
+    },
+    {
+        "text": " dos pendientes y ni sonada, viene acá el 2 y se primero andate el árbol izquierdo deja pendiente",
+        "start": 2155.46,
+        "end": 2161.02
+    },
+    {
+        "text": " la raíz y el árbol derecho, cuatro pendientes y todavía no hizo nada. Viene al lado izquierdo y se",
+        "start": 2161.02,
+        "end": 2167.52
+    },
+    {
+        "text": " todavía no es vacío, me voy al lado izquierdo, desco pendiente la raíz cuatro y el árbol derecho,",
+        "start": 2167.52,
+        "end": 2171.58
+    },
+    {
+        "text": " seis pendientes y todavía no hizo nada. Viene acá al árbol izquierdo del 8, es vacío, termina,",
+        "start": 2171.58,
+        "end": 2178.38
+    },
+    {
+        "text": " entonces que le falta, la raíz, el 8 y después el árbol derecho y después del 8 quien viene,",
+        "start": 2178.38,
+        "end": 2183.98
+    },
+    {
+        "text": " la raíz y después el árbol derecho, terminó, entonces con esto quien viene después,",
+        "start": 2185.18,
+        "end": 2191.18
+    },
+    {
+        "text": " la raíz y después el árbol derecho, termino con todo este árbol, quien viene ahora, la raíz y después",
+        "start": 2191.18,
+        "end": 2200.66
+    },
+    {
+        "text": " el seis, el árbol izquierdo después la raíz y el árbol derecho, o sea eso que está ahí.",
+        "start": 2201.58,
+        "end": 2208.7799999999997
+    },
+    {
+        "text": " Eso estamos jugando a ser el estáqueda de la máquina, nosotros no quiero que juega eso,",
+        "start": 2211.52,
+        "end": 2215.66
+    },
+    {
+        "text": " usted tiene que convencer que yo programamos a Estrelina, llamar, llamar,",
+        "start": 2215.66,
+        "end": 2219.94
+    },
+    {
+        "text": " pongo el llamar donde quiero y eso funcione, está bien, creyentes de la recursión y si no,",
+        "start": 2219.94,
+        "end": 2226.46
+    },
+    {
+        "text": " los voy a ser creciendo en la recursión. Miren el este árbolito, ¿qué recorrido de esos tres?",
+        "start": 2226.46,
+        "end": 2235.1
+    },
+    {
+        "text": " Le parece que se hace meja más a que del árbolito que está arriba, yo puedo tener casi la",
+        "start": 2235.1,
+        "end": 2243.26
+    },
+    {
+        "text": " expresión de acá abajo, salvo los paréntesis. ¿Qué recorrido es? Y en orden. ¿Por qué? Porque los",
+        "start": 2243.26,
+        "end": 2252.7
+    },
+    {
+        "text": " operadores que están en el medio están entre las dos super expresiones. Entonces cuando uno habla",
+        "start": 2252.7,
+        "end": 2259.54
+    },
+    {
+        "text": " de notación infija es un recorrido de la expresión arborecente que tiene representada inorder,",
+        "start": 2259.54,
+        "end": 2264.9399999999996
+    },
+    {
+        "text": " ¿no? Preorder es cuando el operador está al comienzo, por ejemplo, los metos de la función y",
+        "start": 2264.9399999999996,
+        "end": 2270.46
+    },
+    {
+        "text": " procedimiento tiene el nombre, la función procedimiento y después los argumentos. Entonces es como",
+        "start": 2270.46,
+        "end": 2274.8599999999997
+    },
+    {
+        "text": " vienen después, ¿no? Bien, vamos bien. Momento de... Ah, no, momento nada de nada. Acá el",
+        "start": 2274.86,
+        "end": 2287.94
+    },
+    {
+        "text": " mismo en orden, ahora en momento de meternos en el lenguaje, dije, ¿no? El mismo, el en orden,",
+        "start": 2287.94,
+        "end": 2293.1
+    },
+    {
+        "text": " en vez de imprimir, puedo generar una lista, por ejemplo, la recorrido en orden, fíjense",
+        "start": 2293.1,
+        "end": 2298.38
+    },
+    {
+        "text": " lo que está haciendo acá, dice, en orden del árbol vacío, generalista vacía, y en orden de",
+        "start": 2298.38,
+        "end": 2304.58
+    },
+    {
+        "text": " un árbol no vacío Isk, a ver qué lo que hago. Bueno, si yo voy a hacer el recorrido en orden del",
+        "start": 2304.58,
+        "end": 2310.34
+    },
+    {
+        "text": " izquierdo, ¿qué me va a dar? En palabras, y en orden de Isk, ¿qué me... Yo soy creyente la",
+        "start": 2310.34,
+        "end": 2316.98
+    },
+    {
+        "text": " recursión, ¿qué es en orden de Isk? La lista de todos los que están en el izquierdo, y en orden",
+        "start": 2316.98,
+        "end": 2324.06
+    },
+    {
+        "text": " del derecho, que me da la lista de todos los que están en la derecha, entonces qué es este más más?",
+        "start": 2324.06,
+        "end": 2327.22
+    },
+    {
+        "text": " Concatenar. Esto está concatenando lista, porque esto es una lista, esto es una lista, entonces podría",
+        "start": 2328.8199999999997,
+        "end": 2333.74
+    },
+    {
+        "text": " decir, bueno, concateno al medio, la lista unitaria, la lista que solo tiene raíz, o la raíz, la",
+        "start": 2333.74,
+        "end": 2340.5
+    },
+    {
+        "text": " inserto del comienzo de esta lista, y esa sí la concateno con aquello. ¿No? Sería una forma en",
+        "start": 2340.5,
+        "end": 2347.14
+    },
+    {
+        "text": " vez de imprimir armando una segunda estructura, que es una lista. No, no, me me debía olvidar",
+        "start": 2347.14,
+        "end": 2355.2599999999998
+    },
+    {
+        "text": " que estaba esta. Ahora sí me metemos en lenguaje, ¿no? A ver, ahora no metemos en lenguaje. Vamos a ver cómo",
+        "start": 2355.2599999999998,
+        "end": 2361.58
+    },
+    {
+        "text": " representar lo que dijimos ahora asuelto así como en Seducodio en Códio, y van a ver que viniendo",
+        "start": 2361.58,
+        "end": 2367.18
+    },
+    {
+        "text": " el experiencia de lista no debería ser tan complicado. Defino, al igual que la lista, ahora la estructura",
+        "start": 2367.18,
+        "end": 2374.54
+    },
+    {
+        "text": " nodo, o nodo A, de arborbinario, que tiene ahora tres campos, un item, o dato, como quieran",
+        "start": 2374.54,
+        "end": 2381.42
+    },
+    {
+        "text": " llamarlo de tipo T, y dos punteros, left y right, que son de tipo A, y el tipo A es puntero a",
+        "start": 2381.42,
+        "end": 2387.8199999999997
+    },
+    {
+        "text": " no lo A, ¿no? Es lo mismo que una lista, pero en vez de tener un siguiente en el nodo tengo dos,",
+        "start": 2387.82,
+        "end": 2393.6200000000003
+    },
+    {
+        "text": " uno que lo llamamos left y uno que lo llamamos right, o isc y de ar, como quieran verlo.",
+        "start": 2393.6200000000003,
+        "end": 2399.1000000000004
+    },
+    {
+        "text": " Es decir que un árbol gráficamente en la memoria, yo lo podría haber como esto, que van a ser",
+        "start": 2400.6200000000003,
+        "end": 2405.7400000000002
+    },
+    {
+        "text": " componentes, estructuras de tres campos, también en la sada en la memoria, por ejemplo diciendo",
+        "start": 2405.7400000000002,
+        "end": 2413.6600000000003
+    },
+    {
+        "text": " este nodo, si el izquierdo dice que es este, va a tener una flechita hacia este lugar de memoria",
+        "start": 2413.66,
+        "end": 2419.7
+    },
+    {
+        "text": " donde están estos campos y este también, y cuando tenga acá con dos nul, ¿qué lo que es esto?",
+        "start": 2419.7,
+        "end": 2424.2999999999997
+    },
+    {
+        "text": " Una hoja, ¿no? Y qué lo que es el árbol, toma el árbol, te lo paso como parámetro,",
+        "start": 2425.66,
+        "end": 2431.74
+    },
+    {
+        "text": " ¿qué te doy? El puntero a la raíz, así como la lista es el puntero al primero, acá el árbol,",
+        "start": 2431.74,
+        "end": 2438.14
+    },
+    {
+        "text": " por más que sean muchos nodos, va a ser siempre el puntero a la raíz. ¿Por qué? Porque cada nodo",
+        "start": 2438.14,
+        "end": 2443.74
+    },
+    {
+        "text": " después me permite moverme por izquierdo derecho y recorrer toda la estructura hasta que ya está llegado",
+        "start": 2443.74,
+        "end": 2447.98
+    },
+    {
+        "text": " los nul, que es el final de la estructura, ¿sabes? En eso es muy similar a la lista, solo que ahora es",
+        "start": 2447.98,
+        "end": 2453.2999999999997
+    },
+    {
+        "text": " como que tengo dos siguientes. ¿Ok? Sí. ¿Qué ya pensando a la raíz que es el momento? De nuevo.",
+        "start": 2453.2999999999997,
+        "end": 2463.94
+    },
+    {
+        "text": " No te entendí, disculpa. Sí. La flecha apunta todo el nodo, a todo este nodo alítem, sino a todo",
+        "start": 2469.14,
+        "end": 2476.8199999999997
+    },
+    {
+        "text": " el nodo que tiene tres campos. ¿No? Es como la lista, pues tienes un puntero un nodo, no un puntero",
+        "start": 2476.8199999999997,
+        "end": 2482.58
+    },
+    {
+        "text": " al dato del nodo, tienes un puntero al nodo, pasa que el nodo tiene un campo dato y un campo",
+        "start": 2482.58,
+        "end": 2487.18
+    },
+    {
+        "text": " siguiente. Acá lo que pasa que el nodo es triple, nada más, pero es lo mismo, es puntero al nodo.",
+        "start": 2487.18,
+        "end": 2493.2599999999998
+    },
+    {
+        "text": " Fíjate que como me di cuenta, porque lo defino acá, ¿no? Left y Reich son del tipo A, B, y A",
+        "start": 2493.26,
+        "end": 2500.98
+    },
+    {
+        "text": " B está definido acá arriba como horrible esto. A B es como tipo asterisco no, ¿no? Es un puntero",
+        "start": 2500.98,
+        "end": 2509.5400000000004
+    },
+    {
+        "text": " al nodo. Bueno, volvamos a los recorridos, ¿cómo lo puedes escribir? En cemas más y bueno,",
+        "start": 2509.5400000000004,
+        "end": 2517.1000000000004
+    },
+    {
+        "text": " por ejemplo, miren este procedimiento preorder, preorder de que lo que hace, bueno, lo pido eso como un",
+        "start": 2517.1000000000004,
+        "end": 2522.9
+    },
+    {
+        "text": " procedimiento, voy, recibo un árbol por copia, un árbol T, o sea, la puntero al arraíz y dice,",
+        "start": 2522.9,
+        "end": 2528.94
+    },
+    {
+        "text": " si el árbol no es vacío, porque si es vacío no tengo nada que imprimir, por ejemplo, que hago,",
+        "start": 2528.94,
+        "end": 2533.94
+    },
+    {
+        "text": " piensa que el procedimiento PG este generico podría ser un print F, ¿no? imprimir el T item, el",
+        "start": 2533.94,
+        "end": 2540.02
+    },
+    {
+        "text": " dato. Y después que le digo, andá a recorrer todo el árbol izquierdo y después andá a recorrer",
+        "start": 2540.02,
+        "end": 2545.34
+    },
+    {
+        "text": " todo el árbol derecho, listo, o sea, gavó. O sea, la acción que yo quiero hacer sobre cada nodo",
+        "start": 2545.34,
+        "end": 2551.98
+    },
+    {
+        "text": " cuando lo visite es esta P, imprimir o lo que sea. Y esto que va a ser recorrer todo el",
+        "start": 2551.98,
+        "end": 2557.46
+    },
+    {
+        "text": " árbol como lo hicimos recién a mano y si quieren codificar el árbol de hace un ratito,",
+        "start": 2557.46,
+        "end": 2563.5
+    },
+    {
+        "text": " corren este código y van a ver que con el dibujito salen exactamente los mismos valores en el mismo orden.",
+        "start": 2563.5,
+        "end": 2568.42
+    },
+    {
+        "text": " ¿Cómo obtengo el inorder?",
+        "start": 2568.42,
+        "end": 2570.7400000000002
+    },
+    {
+        "text": " ¿Cuándo le dijeron que se vaya por el pierdo primero?",
+        "start": 2570.74,
+        "end": 2574.58
+    },
+    {
+        "text": " ¿Dónde qué cambia el inorder? ¿Qué este?",
+        "start": 2574.58,
+        "end": 2577.14
+    },
+    {
+        "text": " Claro, que la acción estaba entre medio y lo doy llamado recursivo, ¿no? Entonces, está ahí.",
+        "start": 2577.14,
+        "end": 2585.62
+    },
+    {
+        "text": " El resto del código igual y el posorder, la acción va al final y lo que yo les llamaba la notación",
+        "start": 2585.62,
+        "end": 2591.8599999999997
+    },
+    {
+        "text": " posfija o polea que inversa, no sé, que tenía una escalculadora, es el pos horda.",
+        "start": 2591.8599999999997,
+        "end": 2596.18
+    },
+    {
+        "text": " Ya está. O sea, ven que la estructura por más que es una, pero yo puedo correr la 13 algoritmos",
+        "start": 2596.8999999999996,
+        "end": 2604.02
+    },
+    {
+        "text": " distintos y me la vamos a mostrar distintos empresas. No es que la tengo que modificar la estructura,",
+        "start": 2604.02,
+        "end": 2608.98
+    },
+    {
+        "text": " es la recorro de forma distinta para obtener la por ejemplo la notación. Prefija y infija o posfija.",
+        "start": 2608.98,
+        "end": 2614.02
+    },
+    {
+        "text": " A la misma expresión en el inmérica, por ejemplo.",
+        "start": 2614.02,
+        "end": 2616.5
+    },
+    {
+        "text": " Sí, acá lo decía en la transparencia, pasa que me lo saltea medio genérico, decía P, es un",
+        "start": 2618.8999999999996,
+        "end": 2624.74
+    },
+    {
+        "text": " procedimiento que denotará una operación hacer aplicada sobre elementos del ar. Yo le puse con el",
+        "start": 2624.74,
+        "end": 2629.62
+    },
+    {
+        "text": " ejemplo un printf, imprimir para propós ser cualquier cosa que yo quiero hacer sobre ese item.",
+        "start": 2629.62,
+        "end": 2635.7
+    },
+    {
+        "text": " Visita a los nodos haciendo sobre cada item un P, lo que yo quiera, elijan los ustedes.",
+        "start": 2635.7,
+        "end": 2641.8599999999997
+    },
+    {
+        "text": " Bueno, miren esto para ver cómo traducir ese código a código. El CAN nodos, uno diría en la",
+        "start": 2643.8599999999997,
+        "end": 2650.2999999999997
+    },
+    {
+        "text": " notación esa de tipo inútil, pero ese CAN nodos del árbol vacío era cero y CAN nodos de un árbol",
+        "start": 2650.3,
+        "end": 2655.46
+    },
+    {
+        "text": " no vacío, ISC, ADER. Yo puedo asumir por el esquema que la máquina debería saber calcular CAN nodos",
+        "start": 2655.46,
+        "end": 2662.2200000000003
+    },
+    {
+        "text": " de ISC y CAN nodos DEER. Entonces, qué hago? Si quiero saberles nuevos totales del árbol, sumo y",
+        "start": 2662.2200000000003,
+        "end": 2669.7400000000002
+    },
+    {
+        "text": " por qué le sumo uno también acá? Porque la raíz también es un nodo. O sea, todo lo que tenga el",
+        "start": 2669.7400000000002,
+        "end": 2674.5
+    },
+    {
+        "text": " árbol izquierdo, 27, todo lo que había hecho, 84 más uno. La raíz de ellos dos. Eso",
+        "start": 2674.5,
+        "end": 2681.42
+    },
+    {
+        "text": " traducido hace más más para que vean, no es que es automático, pero que no es complicado, es un",
+        "start": 2681.42,
+        "end": 2686.82
+    },
+    {
+        "text": " poquito de cuidado, es esto, la firma es recibir un árbol por copia, de vuelvo ahora si no",
+        "start": 2686.82,
+        "end": 2692.42
+    },
+    {
+        "text": " un bois y no un entero, si el árbol es vacío quiere decir que T es null, no hay nodos, retona cero y",
+        "start": 2692.42,
+        "end": 2698.62
+    },
+    {
+        "text": " sino lo que dice arriba, retona uno más CAN nodos aplicado al árbol izquierdo, quién es la",
+        "start": 2698.62,
+        "end": 2704.66
+    },
+    {
+        "text": " izquierda? Lo que apunta T en el campo LEFT, más el llamado recurso y con el árbol derecho,",
+        "start": 2704.66,
+        "end": 2710.2999999999997
+    },
+    {
+        "text": " lo que apunta T en el campo REFT. Recuerden que cuando el árbol no vacío está apuntando",
+        "start": 2710.2999999999997,
+        "end": 2713.8599999999997
+    },
+    {
+        "text": " una terna que tiene UNITEM, UN LEFT en REFT. Ya está. ¿En acuerdo? Siguiente ejemplo, veamos",
+        "start": 2713.8599999999997,
+        "end": 2723.18
+    },
+    {
+        "text": " ahora cómo una función de un árbol me da otro árbol, porque este era el dado un árbol me da un",
+        "start": 2723.18,
+        "end": 2727.3399999999997
+    },
+    {
+        "text": " entero. Supon que quiero hacer que da un árbol me da el árbol espejado, como si fue una copia",
+        "start": 2727.34,
+        "end": 2733.6200000000003
+    },
+    {
+        "text": " espejada, ¿qué quiere decir un espejo? Bueno, que invierte todos los izquierdos por derecho.",
+        "start": 2733.6200000000003,
+        "end": 2739.1800000000003
+    },
+    {
+        "text": " Por ejemplo, en este árbolito que está arriba, uno, dos, tres, cuatro dice bueno, invierto el",
+        "start": 2739.1800000000003,
+        "end": 2746.1000000000004
+    },
+    {
+        "text": " 2 con el 3, acá y para el 3 que tiene un hijo, los inviertos todos, el vacío pasa al lado",
+        "start": 2746.1000000000004,
+        "end": 2752.7000000000003
+    },
+    {
+        "text": " izquierdo y el 4 que estaba en el lado izquierdo pasa al lado derecho. ¿Sí? ¿De acuerdo?",
+        "start": 2752.7,
+        "end": 2759.7799999999997
+    },
+    {
+        "text": " Los convences este código que el espejo de árbol vacío, o sea, lo código, por ahora no es esto,",
+        "start": 2761.54,
+        "end": 2766.8999999999996
+    },
+    {
+        "text": " no es más más, ahora vemos cómo pasa el tema. El espejo de árbol vacío, quién es? El árbol vacío.",
+        "start": 2766.8999999999996,
+        "end": 2770.9399999999996
+    },
+    {
+        "text": " Y el espejo de un árbol no vacío, ISC ADER, de nuevo, digo, me habí, digo, ya creo en la",
+        "start": 2771.9399999999996,
+        "end": 2777.8999999999996
+    },
+    {
+        "text": " recurción, puedo aplicar espejo de ISC y espejo de AR, y va a espejar los dos árboles, ¿no?",
+        "start": 2777.9,
+        "end": 2784.46
+    },
+    {
+        "text": " Y tengo que ver cómo armo el árbol, miría, la raíz es la misma, entonces el árbol pongo en el",
+        "start": 2784.46,
+        "end": 2790.34
+    },
+    {
+        "text": " medio, esto va a dar un árbol que tiene como raíz en el medio, la misma, pero cómo arbol",
+        "start": 2790.34,
+        "end": 2796.26
+    },
+    {
+        "text": " izquierdo quien pongo el espejo del derecho, y cómo arbol derecho quien pongo el espejo del",
+        "start": 2796.26,
+        "end": 2801.7400000000002
+    },
+    {
+        "text": " izquierdo. ¿Se entiende? Bueno, si no lo entiende, veamos lo en cemas más, o en serio, que es lo mismo",
+        "start": 2801.74,
+        "end": 2814.22
+    },
+    {
+        "text": " que está arriba, ¿no? Pero se empieza a complicar porque antes una línea de código, ahora una",
+        "start": 2814.22,
+        "end": 2818.62
+    },
+    {
+        "text": " línea de código, ahora una línea de código, que es un cuatro, línea de código en cemas más.",
+        "start": 2818.62,
+        "end": 2820.62
+    },
+    {
+        "text": " Pero ¿por qué les muestro esto? Porque a veces es útil hacerse un cedo código para pensar",
+        "start": 2820.62,
+        "end": 2826.4199999999996
+    },
+    {
+        "text": " la solución del problema lógicamente y después el siguiente paso que es de los punteros lo",
+        "start": 2826.46,
+        "end": 2832.54
+    },
+    {
+        "text": " hago una segunda etapa, entonces no mezcló toda la vez la recurción con el punteros, si me",
+        "start": 2832.54,
+        "end": 2837.06
+    },
+    {
+        "text": " complica, si usted ya la resulta fácil programa de este nivel, todo bien, nadie le va a pedirlo de arriba.",
+        "start": 2837.06,
+        "end": 2842.98
+    },
+    {
+        "text": " Si el árbol es vacío, dice retornar el árbol vacío, es la primera, y si no, entre la segunda me hago",
+        "start": 2844.02,
+        "end": 2850.7000000000003
+    },
+    {
+        "text": " un nuevo nodo, que no compartan, me mobríamos bien, copio el item en ese parece nuevo nodo, Rt item",
+        "start": 2850.7,
+        "end": 2860.58
+    },
+    {
+        "text": " es igual a t item y después que digo, para esa Rt de resultado de t, o algo así, en el lado",
+        "start": 2860.58,
+        "end": 2868.2599999999998
+    },
+    {
+        "text": " izquierdo quien dejo el espejo de lo que me deje el llamado recurso con el árbol derecho, para que me invierta.",
+        "start": 2868.2599999999998,
+        "end": 2875.74
+    },
+    {
+        "text": " Y como árbol derecho, quien dejo de Rt el espejo del llamado recurso con el árbol izquierdo,",
+        "start": 2876.62,
+        "end": 2883.3399999999997
+    },
+    {
+        "text": " retornar a Rt, yo le dije cómo formar un nodo y le dije, ya, se ibo, se ibo, ese espejo de izquierdo,",
+        "start": 2883.3399999999997,
+        "end": 2891.74
+    },
+    {
+        "text": " se lo vos, espejo de derecho, se lo vos, está bien, recurso yamente te dio qué pasa cuando",
+        "start": 2891.74,
+        "end": 2896.8999999999996
+    },
+    {
+        "text": " si es al caso base, y ya está, no hay algo gigante y me lo vas a espejar todo, sí o no, se",
+        "start": 2896.9,
+        "end": 2906.98
+    },
+    {
+        "text": " entiende, creo que les di para lista un ejemplo de generar una función copia, un clone, dado una lista,",
+        "start": 2906.98,
+        "end": 2914.78
+    },
+    {
+        "text": " me da otra idéntica pero no comparte memoria, no do fresco, digamos, pero los mismos datos,",
+        "start": 2914.78,
+        "end": 2920.5
+    },
+    {
+        "text": " qué cambio en este código para que me de una copia idéntica del árbol,",
+        "start": 2920.82,
+        "end": 2925.06
+    },
+    {
+        "text": " supongan que no le escucha él, a ver algo, porque capa que nadie le escucho de atrás,",
+        "start": 2929.06,
+        "end": 2934.1
+    },
+    {
+        "text": " qué cambio en ese código para que sea idéntico el árbol, me agotan poco, allá lo esté mucho,",
+        "start": 2935.3,
+        "end": 2942.1
+    },
+    {
+        "text": " pero acá, más atrás, anímense, dale el árbol, levantaste la mano, allá dale,",
+        "start": 2942.1,
+        "end": 2951.02
+    },
+    {
+        "text": " qué pasa, entonces qué que hay que decir que tengo que cambiar acá,",
+        "start": 2953.02,
+        "end": 2961.46
+    },
+    {
+        "text": " lef, cambio de algo en esta línea, RT lef, igual a qué,",
+        "start": 2962.46,
+        "end": 2969.38
+    },
+    {
+        "text": " espejo de quién, no espejo del espejo, no, está bien esa propiedad que si espejo dos veces me va a dar",
+        "start": 2978.62,
+        "end": 2985.7
+    },
+    {
+        "text": " pues con una propiedad lógica esa, como código que digo el RT, olvidense la palabra espejo,",
+        "start": 2985.7,
+        "end": 2992.1
+    },
+    {
+        "text": " qué va, RT lef que le asino el llamado recursivo de quién, de Teflichita lef y el",
+        "start": 2992.1,
+        "end": 3000.46
+    },
+    {
+        "text": " reté derecho le asino el llamado recursivo con Teflichita, o sea, mantengo, si mantengo me va",
+        "start": 3000.46,
+        "end": 3006.8999999999996
+    },
+    {
+        "text": " llegando a los noditos copia de los datos de todo el árbol y me lo va a dejar idéntico, pero qué,",
+        "start": 3006.8999999999996,
+        "end": 3010.8999999999996
+    },
+    {
+        "text": " me moría nuevo, qué ventaja tiene que yo después borrar todo este árbol, toquetearlo para hacer",
+        "start": 3010.9,
+        "end": 3016.54
+    },
+    {
+        "text": " algo auxiliar y el árbol original este intacto, es una copia, un clon, pero no un copia el puntero",
+        "start": 3016.54,
+        "end": 3022.46
+    },
+    {
+        "text": " a la raíz, sino una copia todo el árbol, ¿sí entiende? Bien, siguiente ejemplo, ahora da un árbol,",
+        "start": 3022.46,
+        "end": 3029.3
+    },
+    {
+        "text": " una lista, el parámetro, espejar el árbol parámetro,",
+        "start": 3029.3,
+        "end": 3038.06
+    },
+    {
+        "text": " el mismo árbol parámetro, ¿no que te retorno un árbol? Sí, se puede hacer, sí, es una variante",
+        "start": 3040.9,
+        "end": 3049.34
+    },
+    {
+        "text": " procedimiento, pero ahí sí vas a modificar el árbol parámetro, no, ahí no, y de hecho no vas a",
+        "start": 3049.34,
+        "end": 3057.26
+    },
+    {
+        "text": " retornar nada, porque es un boye y el árbol va a ser por referencia, las líneas se van a",
+        "start": 3057.26,
+        "end": 3064.58
+    },
+    {
+        "text": " mantener, no vas a hacer un nupo que está el nodo es el mismo, entonces fijate cómo cambias los",
+        "start": 3064.58,
+        "end": 3069.42
+    },
+    {
+        "text": " dos punteros ahí, lo puedes pasar, va a ser más cortito, un poquito más cortito, es un boye,",
+        "start": 3069.42,
+        "end": 3075.9
+    },
+    {
+        "text": " una persona en la firma, no hace ser nupo y tienes que ver cómo se cambian las asignaciones ahí,",
+        "start": 3075.9,
+        "end": 3081.42
+    },
+    {
+        "text": " dado un árbol, retornar la lista de las hojas, por ejemplo, dado una expresional idmética,",
+        "start": 3083.42,
+        "end": 3091.38
+    },
+    {
+        "text": " dame la lista de los operandos, dijimos que eran las hojas, ahora si esto funciona, hojas del árbol",
+        "start": 3091.38,
+        "end": 3099.06
+    },
+    {
+        "text": " vacío es la lista vacía, no hay ninguna hoja, ¿vamos a acuerdo? Y hojas de un árbol no vacío,",
+        "start": 3099.06,
+        "end": 3105.58
+    },
+    {
+        "text": " Isk Ader, yo digo, el esquema dice que yo sé calcular toda las hojas del árbol izquierdo y toda",
+        "start": 3105.58,
+        "end": 3112.06
+    },
+    {
+        "text": " las hojas del árbol derecho, van a ser dos listas, entonces las uno con catenándolas,",
+        "start": 3112.06,
+        "end": 3116.94
+    },
+    {
+        "text": " en este árbol quisiera que las hojas fueran, la lista fueran algo que tuviera estos dos los",
+        "start": 3118.42,
+        "end": 3125.2599999999998
+    },
+    {
+        "text": " datos de los dos rojos, funciona no, funciona, no me ha preguntado, yo hice una pregunta,",
+        "start": 3125.26,
+        "end": 3137.1800000000003
+    },
+    {
+        "text": " de mal educación preguntar, funciona no, dice que no, sí o no, dado cualquier árbol,",
+        "start": 3137.1800000000003,
+        "end": 3148.5400000000004
+    },
+    {
+        "text": " ¿qué me retona siempre esto? Me importa si tienes 100, 2, 2, 2, 20, 2 es vacío,",
+        "start": 3148.5400000000004,
+        "end": 3152.98
+    },
+    {
+        "text": " ¿qué me devole siempre esto? ¿qué me devole siempre esto? No, cantidano, da una lista,",
+        "start": 3152.98,
+        "end": 3163.22
+    },
+    {
+        "text": " no, la lista vacía, no importa que árbol le pase esto, me da una linda y grande lista vacía,",
+        "start": 3163.22,
+        "end": 3174.78
+    },
+    {
+        "text": " pero lista vacía, ¿por qué lo veo? Porque en el caso del base fácil y en el caso que nos base",
+        "start": 3174.78,
+        "end": 3180.78
+    },
+    {
+        "text": " lo que dice llamar recursivamente el izquierdo y el derecho y con catenalo, pero nunca agrega",
+        "start": 3180.78,
+        "end": 3186.42
+    },
+    {
+        "text": " elementos, si nunca agrega elementos, va a llegar a los casos base y se van a con catenar vacíos,",
+        "start": 3186.42,
+        "end": 3190.86
+    },
+    {
+        "text": " con vacíos como vacíos como vacíos, pero con catenar listas vacíos, un listas vacíos, ¿qué",
+        "start": 3190.86,
+        "end": 3195.42
+    },
+    {
+        "text": " no estoy distinguiendo en esta solución? ¿quién habló? ¿qué no estoy distinguiendo acá en",
+        "start": 3195.42,
+        "end": 3204.5400000000004
+    },
+    {
+        "text": " este ecuación? ¿por qué falla? esto lo voy a hacer en un caso, me falta el otro caso, cuál es el",
+        "start": 3204.5400000000004,
+        "end": 3209.2200000000003
+    },
+    {
+        "text": " caso en el cual esto es correcto, sí, sí que, sí que hago esto y está bien, ¿eh? Es",
+        "start": 3209.22,
+        "end": 3216.74
+    },
+    {
+        "text": " alto, o sea, sí, isc o der, alguno de los dos no es vacío, ya sé que ha en nuestro ojo,",
+        "start": 3216.74,
+        "end": 3224.2999999999997
+    },
+    {
+        "text": " ¿tamos de acuerdo? Porque para que se loja tenia que ser ambos vacíos, entonces si",
+        "start": 3224.2999999999997,
+        "end": 3228.4599999999996
+    },
+    {
+        "text": " alguno de los dos no fuera vacío, está bien esto, andara a calcular la soja del izquierdo,",
+        "start": 3228.4599999999996,
+        "end": 3232.8599999999997
+    },
+    {
+        "text": " la soja del derecho y con catenarlas, por ejemplo, cuando estoy parado en este nodo, en la raíz,",
+        "start": 3232.8599999999997,
+        "end": 3236.2999999999997
+    },
+    {
+        "text": " como el izquierdo del derecho son distintos vacíos, ya el nodo verde no va a formar parte de la soja,",
+        "start": 3237.3,
+        "end": 3242.42
+    },
+    {
+        "text": " entonces está bien que no aparezca acá, se entiende? pero cuando esté parado en un rojo, yo quiero",
+        "start": 3242.42,
+        "end": 3249.3
+    },
+    {
+        "text": " que sí aparezca, entonces te voy a decir que pasen el otro caso cuando el izquierdo del derecho",
+        "start": 3249.3,
+        "end": 3253.1000000000004
+    },
+    {
+        "text": " sí son vacíos, ¿eh? entonces capaz el código es este, el pseudo código, yo distingo o separo el",
+        "start": 3253.1000000000004,
+        "end": 3262.26
+    },
+    {
+        "text": " caso de no vacío en estos dos, cuando ambos su árboles son vacíos, ahí es una oja, la lista y cuando",
+        "start": 3262.26,
+        "end": 3269.94
+    },
+    {
+        "text": " alguno de los dos no es vacío, escoder, no es vacío, ahí sí está bien con catenar el izquierdo",
+        "start": 3269.94,
+        "end": 3276.1800000000003
+    },
+    {
+        "text": " del derecho, pues ya sé que no, no puede ser parte de las hojas, ¿ok? Bueno, traducido esto",
+        "start": 3276.1800000000003,
+        "end": 3284.8
+    },
+    {
+        "text": " en cemas más, un poquito más largo ahora, ¿no? pero fíjense, la firma que dice, dado un árbol,",
+        "start": 3284.8,
+        "end": 3290.46
+    },
+    {
+        "text": " retorno una lista, ¿cabien? si el árbol es vacío retorno que cosa, la lista vacía, nul y nul, ¿sí?",
+        "start": 3290.46,
+        "end": 3299.98
+    },
+    {
+        "text": " sino que lo que hago y vamos a distinguir el caso primero si eres una oja, si el izquierdo del derecho",
+        "start": 3299.98,
+        "end": 3305.66
+    },
+    {
+        "text": " son vacíos, con un pregunto eso, si teléf, es nul y terráis, es nul, es una oja,",
+        "start": 3305.66,
+        "end": 3311.62
+    },
+    {
+        "text": " queda en el caso de una oja la lista unitaria de la, ¿cómo armó esa lista unitaria acá? diciendo",
+        "start": 3311.62,
+        "end": 3319.7
+    },
+    {
+        "text": " acá, me ha un nuevo nodo de lista, copio el dato, como es una lista unitaria, el siguiente",
+        "start": 3319.7,
+        "end": 3332.14
+    },
+    {
+        "text": " nul y retorno esa lista, la lista unitaria del dato es, y si no, quiere decir que el nodo",
+        "start": 3332.14,
+        "end": 3339.74
+    },
+    {
+        "text": " no es oja, entonces digo, llamado ojas del izquierdo, recorciamente ojas del derecho, te va a dar",
+        "start": 3339.74,
+        "end": 3343.74
+    },
+    {
+        "text": " dos listas y usar con cat que vimos la clase anterior, quedadas dos listas, retorno una lista,",
+        "start": 3343.74,
+        "end": 3348.54
+    },
+    {
+        "text": " ¿cabien?",
+        "start": 3350.2999999999997,
+        "end": 3350.8199999999997
+    },
+    {
+        "text": " Si, es un paso donde no sigue la recursión, yo me llamaría caso base, y fíjate que acá eso",
+        "start": 3350.8199999999997,
+        "end": 3362.5
+    },
+    {
+        "text": " obviamente aparece en, en se más más, ¿no? acá no se llama, acá tampoco se llama y sólo se llama",
+        "start": 3362.5,
+        "end": 3368.58
+    },
+    {
+        "text": " recursivamente en este tercer caso, ¿ok? bien, les comenté un árbol que es general, que dije,",
+        "start": 3368.58,
+        "end": 3379.5
+    },
+    {
+        "text": " lo vamos a ver la clase que viene, pero lo presenté ya, vimos un tipo de árbol que, si lo quería ver,",
+        "start": 3379.5,
+        "end": 3385.14
+    },
+    {
+        "text": " que es el arbol binario, y ahora vamos a ver el segundo tipo de árbol que es un caso particular",
+        "start": 3385.14,
+        "end": 3388.5
+    },
+    {
+        "text": " del anterior, pero tiene más usos que el anterior, es decir, más arbol binario de búsqueda, ¿qué es un",
+        "start": 3388.5,
+        "end": 3394.22
+    },
+    {
+        "text": " árbol binario de búsqueda? es un árbol binario, estructuralmente es binario, pero agrega una propiedad de",
+        "start": 3394.22,
+        "end": 3400.9399999999996
+    },
+    {
+        "text": " orden sobre los elementos, no puede ser cualquier elemento, pues esa propiedad de orden que los nodos,",
+        "start": 3400.9399999999996,
+        "end": 3407.62
+    },
+    {
+        "text": " para cada nodo de este árbol binario, lo que está en la lisquiera, tiene que ser todos menores,",
+        "start": 3407.62,
+        "end": 3412.74
+    },
+    {
+        "text": " que es senodo, y todo lo que está en la derecha tiene que ser mayores que es senodo, y eso para",
+        "start": 3412.74,
+        "end": 3418.1
+    },
+    {
+        "text": " cada nodo, si tomo el 8 también, todo lo que está en la lisquiera, tiene que ser menores, y todo lo",
+        "start": 3418.1,
+        "end": 3422.22
+    },
+    {
+        "text": " que está en la derecha de él tiene que ser mayores, se entiende, fíjense que el 11, acá tiene que ser",
+        "start": 3422.22,
+        "end": 3429.4199999999996
+    },
+    {
+        "text": " mayor que el 8, pero a su vez menor que quién, que el 12, porque está a lisquiera el 12, entonces",
+        "start": 3429.4199999999996,
+        "end": 3436.06
+    },
+    {
+        "text": " empiezan a hacer como subrango, no tiene que ser menor que, pero mayor que, ¿tabía? ¿De dónde surge",
+        "start": 3436.06,
+        "end": 3443.8199999999997
+    },
+    {
+        "text": " esta idea? bueno, yo creo que ya la comenté, pero no sé si la habieron otro lado o lo recuerdan de...",
+        "start": 3443.8199999999997,
+        "end": 3449.14
+    },
+    {
+        "text": " el 17 cambiar de lugar con el 11, no, por el 17 podría estar acá, sí, porque no, tampoco,",
+        "start": 3449.14,
+        "end": 3462.8199999999997
+    },
+    {
+        "text": " porque tendría que ser menor que el 12, y tampoco puede estar el 11 acá, porque tendría que ser,",
+        "start": 3462.8199999999997,
+        "end": 3468.3799999999997
+    },
+    {
+        "text": " si bien es menor que el 18, no es mayor que el 12, ¿tabá? ¿De dónde surge la idea? rápido,",
+        "start": 3468.3799999999997,
+        "end": 3476.8599999999997
+    },
+    {
+        "text": " la búsqueda binaria, la comentemos, ¿sí? ¿corta el medio? ¿sí o no? ¿a qué simple me",
+        "start": 3476.86,
+        "end": 3487.42
+    },
+    {
+        "text": " hacen la cara como no se nada? ¿comió la vierona? ¿no? ¿sí la comenté cuando vimos?",
+        "start": 3487.42,
+        "end": 3492.1400000000003
+    },
+    {
+        "text": " pero no te ocurso, lo vieron, ¿no? ¿que sea? literativamente, sí, ok, resumiendo rápido,",
+        "start": 3492.1400000000003,
+        "end": 3498.46
+    },
+    {
+        "text": " supongase, ¿eh? ok, bien, si yo quiero recorrer este arreglo que está dibujado abajo,",
+        "start": 3498.46,
+        "end": 3507.1
+    },
+    {
+        "text": " el algoritmo más simple para recorrer la regla es un 4, un y, que si lo encuentre,",
+        "start": 3507.1,
+        "end": 3513.1
+    },
+    {
+        "text": " retornatru y si llega al final, no contó el retornatfual, orden, el tiempo de ejecución",
+        "start": 3513.1,
+        "end": 3517.7
+    },
+    {
+        "text": " el per caso, en, ¿no? porque el per caso tiene que ir ya hasta el final, si la regla está ordenado,",
+        "start": 3517.7,
+        "end": 3523.18
+    },
+    {
+        "text": " yo puedo seguir haciendo mi forma y guay, testarudamente, o puedo implementar una estrategia más",
+        "start": 3523.18,
+        "end": 3532.58
+    },
+    {
+        "text": " eficiente que ir a ir al medio, hacer una cuenta, no es recorrer nada, y decir, si es menor que el",
+        "start": 3532.58,
+        "end": 3540.1
+    },
+    {
+        "text": " dos el que estoy buscando, solo tiene sentido buscar si está de lado izquierdo y si es mayor",
+        "start": 3540.1,
+        "end": 3545.74
+    },
+    {
+        "text": " de lado derecho y seguir haciendo lo mismo en el lado izquierdo, no la lo derecho, ¿está me acuerdo?",
+        "start": 3545.74,
+        "end": 3550.94
+    },
+    {
+        "text": " bueno fíjense acá, si estoy parando el 12 y es menor solo tiene sentido que esté acá y si es",
+        "start": 3551.5,
+        "end": 3559.94
+    },
+    {
+        "text": " mayor solo tiene sentido que esté acá, o sea estoy copiando la idea de la búsqueda binaria",
+        "start": 3559.94,
+        "end": 3564.9
+    },
+    {
+        "text": " en un árbol y dice por qué no lo copias en una lista, no era más fácil en una lista y no,",
+        "start": 3566.1,
+        "end": 3572.1
+    },
+    {
+        "text": " porque en una lista ir al medio ya no es orden 1, tengo que recorrer los nodos contándole el",
+        "start": 3572.86,
+        "end": 3578.98
+    },
+    {
+        "text": " nodo hasta llegar a la mitad, no tengo acceso directo, no es como un arreglo y después ir a la mitad",
+        "start": 3578.98,
+        "end": 3584.22
+    },
+    {
+        "text": " de la mitad no puedo, como no puedo hacer una lista, alguien se lo ocurrió con una estructura binaria,",
+        "start": 3584.22,
+        "end": 3589.06
+    },
+    {
+        "text": " si lo podía hacer, porque puedo decir, si es menor, anda a payas, si es mayor anda a payas,",
+        "start": 3589.06,
+        "end": 3593.5
+    },
+    {
+        "text": " esos son dos decisiones, es binario y ahí está la idea del largo binario, yo les dije que el",
+        "start": 3593.5,
+        "end": 3602.7400000000002
+    },
+    {
+        "text": " abuso de la búsqueda binaria era el hogarismo, lo vamos a calcular la semana después de turismo,",
+        "start": 3602.74,
+        "end": 3608.02
+    },
+    {
+        "text": " pero les parece, aunque no se olvida una elogarismo, porque esto sale de la intuición,",
+        "start": 3610.74,
+        "end": 3615.62
+    },
+    {
+        "text": " la eficiencia, les parece que va a ser la misma buscar un elemento acá de rápido que",
+        "start": 3616.8999999999996,
+        "end": 3621.8999999999996
+    },
+    {
+        "text": " buscarlo acá, en este árbol, o sea esto simula exactamente lo que hago acá abajo,",
+        "start": 3621.8999999999996,
+        "end": 3626.02
+    },
+    {
+        "text": " el de entre menor y mayor lo simula exacto, porque dice si busco acá y digo es menor que el 12,",
+        "start": 3626.02,
+        "end": 3637.18
+    },
+    {
+        "text": " uno día donde tienes que ir, si está atrás de la izquierda, si busco el 11, por ejemplo es",
+        "start": 3637.18,
+        "end": 3643.18
+    },
+    {
+        "text": " mayor que el 8 si está atrás de lado del hecho, no es como que voy subrango, pero cuál es la",
+        "start": 3643.18,
+        "end": 3648.34
+    },
+    {
+        "text": " diferencia entre el dibujito de arriba y el dibujito de abajo, o sea esto acá, siempre tengo mitades",
+        "start": 3648.34,
+        "end": 3653.62
+    },
+    {
+        "text": " y acá arriba puedo tener un peor caso que por ejemplo el árbol sea esa lista y todos estos",
+        "start": 3654.58,
+        "end": 3661.42
+    },
+    {
+        "text": " sean vacíos, por ejemplo, que sea una lista, tenga 12, 8, 5, 4, 2 como si fue una lista,",
+        "start": 3661.42,
+        "end": 3668.14
+    },
+    {
+        "text": " un árbol degenerado se llama, entonces ahí sí buscar cualquier elemento, por ejemplo uno muy",
+        "start": 3668.14,
+        "end": 3672.94
+    },
+    {
+        "text": " chiquito siempre tiene que pasar por los enennos, el peor caso es igual que una lista, pero en el caso",
+        "start": 3672.94,
+        "end": 3678.5
+    },
+    {
+        "text": " promedio vamos a ver después, qué es mejor, qué tanto mejor logarito, entonces dice,",
+        "start": 3678.5,
+        "end": 3683.54
+    },
+    {
+        "text": " si tiene un millón de datos, logarimos de un millón 20, ahí lo compro, por eso viene esta idea,",
+        "start": 3683.54,
+        "end": 3691.14
+    },
+    {
+        "text": " hay una información contextual del árbol, ¿no? ¿dónde está el mínimo, dónde está el máximo",
+        "start": 3693.38,
+        "end": 3698.3
+    },
+    {
+        "text": " en estos árboles? ¿Cómo encontrar bien el mínimo y el máximo?",
+        "start": 3698.3,
+        "end": 3701.82
+    },
+    {
+        "text": " Claro, el mínimo si pienso en este dibujito, es que está más al izquierda porque siempre si hay",
+        "start": 3701.82,
+        "end": 3710.54
+    },
+    {
+        "text": " alguien más al izquierdo, hay más chiquito que él, entonces quién es, el novito que no tiene",
+        "start": 3710.54,
+        "end": 3714.32
+    },
+    {
+        "text": " nadie más al izquierda, el dos, y el máximo quién es, tienen que sernos hojas el mínimo y el máximo,",
+        "start": 3714.32,
+        "end": 3723.2200000000003
+    },
+    {
+        "text": " no, por ejemplo, fíjense acá, el máximo de este árbol es el 18, porque no tiene nadie la derecha",
+        "start": 3723.2200000000003,
+        "end": 3730.5
+    },
+    {
+        "text": " del 18, pero sí tiene alguien en el lado izquierdo, pero es menor, entonces recorriendo o viene",
+        "start": 3730.5,
+        "end": 3735.5
+    },
+    {
+        "text": " el camino más al izquierda, encuentro el mínimo, o bien más a la derecha, encuentro el más yo,",
+        "start": 3735.5,
+        "end": 3739.42
+    },
+    {
+        "text": " pero no tiene por qué ser novos hojas, no, por ejemplo yo podría tener, por ejemplo, en este",
+        "start": 3739.42,
+        "end": 3747.9
+    },
+    {
+        "text": " árbol acá, quién podría tener la derecha del dos, el tres, porque es menor que el cuatro y",
+        "start": 3747.9,
+        "end": 3755.1
+    },
+    {
+        "text": " mayor que el dos, el tres podría estar acá y el dos seguiría haciendo el mínimo y no sería",
+        "start": 3755.1,
+        "end": 3760.5
+    },
+    {
+        "text": " una hoja, ¿sabes? ¿Qué recorrido de los que vimos me da algo interesante de una reunión de",
+        "start": 3760.5,
+        "end": 3768.1
+    },
+    {
+        "text": " buscad, cuando lo imprimo, por ejemplo, o cuando tengo la lista de los elementos y en order,",
+        "start": 3768.1,
+        "end": 3774.94
+    },
+    {
+        "text": " de los daordenados de menor a mayor, y por qué, porque digo cómo era el inorder, primero recorrer",
+        "start": 3778.94,
+        "end": 3785.08
+    },
+    {
+        "text": " el árbol izquierdo, que son todos los más chiquitos, después el nodo, el intermedio y después",
+        "start": 3785.08,
+        "end": 3790.34
+    },
+    {
+        "text": " el árbol derecho, todos los más grandes, entonces yo lo recorro inorder y ya cumple la",
+        "start": 3790.34,
+        "end": 3795.56
+    },
+    {
+        "text": " propia vino de buscad, me va a imprimir toda la estructura ordenada, entonces yo puedo tener",
+        "start": 3795.56,
+        "end": 3801.04
+    },
+    {
+        "text": " las claves en una base de datos, por ejemplo, en el guardo datos, organizada así es más rápido",
+        "start": 3801.04,
+        "end": 3805.68
+    },
+    {
+        "text": " la buscad, además cuando la quiero mostrar recorriendo en inodos, en en ordenin, te puedo mostrar",
+        "start": 3805.68,
+        "end": 3811.4
+    },
+    {
+        "text": " todos los datos por clave ordenado, ¿sabes? Bien, ¿cómo se representa esto en la memoria?",
+        "start": 3812.28,
+        "end": 3819.2400000000002
+    },
+    {
+        "text": " ¿Y cuál que el otro? Es binario, sólo que una distinción práctica, yo diría, donde puede",
+        "start": 3819.2400000000002,
+        "end": 3825.2400000000002
+    },
+    {
+        "text": " haber una pequeña diferencia práctica en lo que hasta ahora llamamos el dato,",
+        "start": 3825.2400000000002,
+        "end": 3828.88
+    },
+    {
+        "text": " el dato, muchas veces se suele distinguir, aunque en el práctico a veces lo tomamos como sinónimo,",
+        "start": 3830.14,
+        "end": 3834.92
+    },
+    {
+        "text": " el dato a veces lo sabemos partir como en dos campos, la key o la clave, cuando digo menor y",
+        "start": 3835.48,
+        "end": 3842.08
+    },
+    {
+        "text": " mayor me refiero a la clave, algo que identifica de manera única, por ejemplo, su número de estudiantes",
+        "start": 3842.08,
+        "end": 3848.32
+    },
+    {
+        "text": " en la base de la base de la base de la base de la base de la clave, la key. Y qué sería el info,",
+        "start": 3848.32,
+        "end": 3856.6800000000003
+    },
+    {
+        "text": " el resto de información, por ejemplo, en el caso de volviendo el ejemplo de la",
+        "start": 3856.6800000000003,
+        "end": 3861.56
+    },
+    {
+        "text": " Bélia, sería para cada uno de ustedes la información de contacto, las materias que tiene aprobada,",
+        "start": 3862.12,
+        "end": 3867.04
+    },
+    {
+        "text": " todo lo que quiera guardar, pero aquí es, cuando digo menor y mayor, para buscar un estudiante es,",
+        "start": 3867.04,
+        "end": 3871.7599999999998
+    },
+    {
+        "text": " hay un que lo identifique de manera única, cédula número de estudiantes, por ejemplo.",
+        "start": 3871.7599999999998,
+        "end": 3875.6
+    },
+    {
+        "text": " En el práctico, muchas veces la key y la info es lo mismo, puede decir, considero",
+        "start": 3877.6,
+        "end": 3882.08
+    },
+    {
+        "text": " en arbominarios enteros, bueno, el entero es la clave y el dato, para simplificar, ¿no? Pero podría",
+        "start": 3882.08,
+        "end": 3886.72
+    },
+    {
+        "text": " ser en un sos práctico que uno se parece, entonces cada vez que ve un dibujito con menor y",
+        "start": 3886.72,
+        "end": 3893.0
+    },
+    {
+        "text": " mayor, me estoy refiendo de aquí, es como que el info no le digo, ¡hola!, pero va a estar dentro",
+        "start": 3893.0,
+        "end": 3897.3599999999997
+    },
+    {
+        "text": " del nodo, ¿sabién? Yo cuando busco un nodo, voy a la Bélia, le digo número de estudiantes,",
+        "start": 3897.3599999999997,
+        "end": 3901.9599999999996
+    },
+    {
+        "text": " encontro, bueno, ahora sí, dame los datos de ese nodo, porque es lo que yo quería, más que el nodo",
+        "start": 3901.9599999999996,
+        "end": 3906.3199999999997
+    },
+    {
+        "text": " en sí. Acá estamos en vez de AB, lo llamamos ABB, arbol binaria de buca, más tierno, ¿no?",
+        "start": 3906.3199999999997,
+        "end": 3914.08
+    },
+    {
+        "text": " Bueno, left y right, bueno, un código, vamos a ver a alguno, ¿no? Lo que nos da el tiempo,",
+        "start": 3916.72,
+        "end": 3923.2799999999997
+    },
+    {
+        "text": " no, también estamos bien. Lo llamamos buscar iterativo, y no dice cómo iterativo, no dijiste",
+        "start": 3923.2799999999997,
+        "end": 3929.04
+    },
+    {
+        "text": " que es recursivo, bueno, cuando uno tiene arbol binaria de buca y quiero buscar algo, no hace falta",
+        "start": 3929.04,
+        "end": 3935.12
+    },
+    {
+        "text": " que recorra todo el árbol, ¿por qué? ¿Por qué? ¿Por qué te va a estar con un nodo para",
+        "start": 3935.12,
+        "end": 3939.56
+    },
+    {
+        "text": " claro, pues cuando estoy en el nodo, ¿qué pasa? ¿Uy ese sil dato que estás buscando? ¿O? ¿Ok?",
+        "start": 3940.12,
+        "end": 3946.2799999999997
+    },
+    {
+        "text": " Ué, es menor o mayor, pero no voy a ir por los dos lados, voy a ir por un lado, como voy a",
+        "start": 3948.2799999999997,
+        "end": 3952.68
+    },
+    {
+        "text": " recorrer un solo lado es como record una lista, una lista puede hacer un y por ejemplo,",
+        "start": 3952.68,
+        "end": 3957.56
+    },
+    {
+        "text": " este, ¿qué dice este código? Bueno, recibe una clave que la que estoy buscando recibe un árbol",
+        "start": 3957.56,
+        "end": 3964.6
+    },
+    {
+        "text": " por copia porque no lo voy a modificar y fíjense que retorno, en vez de retornar un buliano,",
+        "start": 3964.68,
+        "end": 3969.24
+    },
+    {
+        "text": " que sería el lógico en una búsqueda, voy a retornar una bebé, o sea un puntero un nodo,",
+        "start": 3969.24,
+        "end": 3974.44
+    },
+    {
+        "text": " que es algo más útil que un buliano, que es una generalización de un buliano, ¿por qué?",
+        "start": 3974.44,
+        "end": 3981.72
+    },
+    {
+        "text": " Porque si me da nul, es como el false, ¿no está? Pero si me da distinto de nul, no solo sé que",
+        "start": 3981.72,
+        "end": 3987.64
+    },
+    {
+        "text": " estaba, sino nada más que sé, me da el puntero el nodo, entonces yo fui a la bebé, yo digo,",
+        "start": 3987.64,
+        "end": 3992.7599999999998
+    },
+    {
+        "text": " este nodo, dame el resto de información del nodo, o sea, datos de contacto, materias, aprobados,",
+        "start": 3992.76,
+        "end": 3997.7200000000003
+    },
+    {
+        "text": " una vez que huir que el nodo se lo tengo, ¿no? Entonces es más rico que un buliano, entonces",
+        "start": 3997.7200000000003,
+        "end": 4003.1600000000003
+    },
+    {
+        "text": " ¿qué hace este código? Dice mientras, T no sea nul y recuerden que este I es leic, ¿no?",
+        "start": 4003.1600000000003,
+        "end": 4010.88
+    },
+    {
+        "text": " Solo va a evaluar lo que voy a chequear ahora si lo anterior le dio false, no le dio true,",
+        "start": 4010.88,
+        "end": 4014.92
+    },
+    {
+        "text": " o sea si T es distinto de nul dice y la T flechita aquí es distinto de X, entonces ahí",
+        "start": 4014.92,
+        "end": 4022.7200000000003
+    },
+    {
+        "text": " dos posibilidades, porque si no es vacío y no es el dato o es menor o mayor, digo, si mirá,",
+        "start": 4022.72,
+        "end": 4028.64
+    },
+    {
+        "text": " el X que está buscando, ¿tabién? Es menor que el T flechita aquí, o T flechita aquí es mayor que",
+        "start": 4028.64,
+        "end": 4036.12
+    },
+    {
+        "text": " X si está hasta el lado izquierdo, entonces a T lea si no te flechita, ¿les? Y si no, a T lea si no",
+        "start": 4036.12,
+        "end": 4042.2799999999997
+    },
+    {
+        "text": " te flechita, ¿vale? Es decir, por ejemplo, estoy parado acá, este es mi T y tú y buscando el 11,",
+        "start": 4042.2799999999997,
+        "end": 4046.2799999999997
+    },
+    {
+        "text": " dice es menor, andadelo izquierdo, es mayor, andadelo derecho, ese es este nodo retornate,",
+        "start": 4046.28,
+        "end": 4053.36
+    },
+    {
+        "text": " cuando sale de acá dos escenarios posibles, ¿cuáles son? Cuando sale de igual,",
+        "start": 4053.36,
+        "end": 4059.0400000000004
+    },
+    {
+        "text": " T nul que me está diciendo en palabras, que no le encontró y no hace falta el",
+        "start": 4062.32,
+        "end": 4067.76
+    },
+    {
+        "text": " obo que por el lado no está, o salió por la condición la segunda que T flechita aquí es igual a X",
+        "start": 4067.76,
+        "end": 4073.76
+    },
+    {
+        "text": " y también retornate, o sea, ya sea me retornate, ya sea nul o el nodo que estoy buscando,",
+        "start": 4074.0400000000004,
+        "end": 4080.1600000000003
+    },
+    {
+        "text": " pero cuando yo después analice el resultado de la función, te voy a preguntar primero si me",
+        "start": 4080.1600000000003,
+        "end": 4084.28
+    },
+    {
+        "text": " dio nul o distinto de nul, si no encontró, no lo encontró, se entiende y no necesito",
+        "start": 4084.28,
+        "end": 4089.44
+    },
+    {
+        "text": " recurse, acá tengo un algoritmo recurso que hace lo mismo, obviamente lo usarían o no, y yo diría que",
+        "start": 4089.44,
+        "end": 4100.6
+    },
+    {
+        "text": " no, porque no hay necesidad, porque es una recurción de cola y chata,",
+        "start": 4100.6,
+        "end": 4104.64
+    },
+    {
+        "text": " solo lo puse para que me dijeran no, pero mira este cía el gorismo recurso, le",
+        "start": 4104.64,
+        "end": 4111.52
+    },
+    {
+        "text": " llamo miembro a esta función y la hice buliana, ¿sabes? recibe largo y como parámetro T,",
+        "start": 4111.52,
+        "end": 4120.52
+    },
+    {
+        "text": " la clave y fíjense cuéles diferencios del anterior, a ver qué no tan acá, además de que retorno",
+        "start": 4120.52,
+        "end": 4125.8
+    },
+    {
+        "text": " un buliano, ¿qué está haciendo? lo hace bien, no lo hace bien lo que esté haciendo, ¿no?",
+        "start": 4125.8,
+        "end": 4133.72
+    },
+    {
+        "text": " está chequeando correctamente el pertenece de un elemento en el árbol o no, ahora como buliano,",
+        "start": 4138.52,
+        "end": 4144.92
+    },
+    {
+        "text": " no te estoy entendiendo con las, se recorre todo el árbol, las tengo andarlo,",
+        "start": 4144.92,
+        "end": 4157.2
+    },
+    {
+        "text": " pero a ver lógicamente funciona, aquí quiere decir, me da truble los casos correctos y me da",
+        "start": 4157.2,
+        "end": 4163.38
+    },
+    {
+        "text": " false en los casos correctos, ¿no? sí, sí, sí, sí, ¿unidad? ¿cómo lo veo eso? diciendo,",
+        "start": 4163.38,
+        "end": 4170.68
+    },
+    {
+        "text": " mira, acá cuando el árbol es vacío te dice que no está, bien, una hierra sonable, después",
+        "start": 4170.68,
+        "end": 4176.360000000001
+    },
+    {
+        "text": " pregunto si es igual a la raíz, si es igual está y si no es la raíz entra acá, le quedan",
+        "start": 4176.360000000001,
+        "end": 4184.240000000001
+    },
+    {
+        "text": " dos chances para que esté, o está en la obisquiero, está en la obisquiero, ¿qué hace? lo",
+        "start": 4184.240000000001,
+        "end": 4187.64
+    },
+    {
+        "text": " busca en la obisquiero, le daré un buliano, lo busca en la obisquiero, le daré un buliano",
+        "start": 4187.64,
+        "end": 4191.76
+    },
+    {
+        "text": " y hace un or, le hagan saco uno de los dos, lógicamente es correcto, hay un perro,",
+        "start": 4191.76,
+        "end": 4198.68
+    },
+    {
+        "text": " ¿cuál es el perro? que recorre todo el árbol, si es un árbol de buque aquí no estoy usando,",
+        "start": 4198.68,
+        "end": 4206.56
+    },
+    {
+        "text": " no estoy usando la información que distingue una albinario de buque, que sé que los menores",
+        "start": 4209.08,
+        "end": 4212.88
+    },
+    {
+        "text": " están en el lado, están buscando asierras, andando a buscar en el lado del lado y después el",
+        "start": 4212.88,
+        "end": 4217.700000000001
+    },
+    {
+        "text": " or, lógicamente es correcto, ¿cuándo usarían si o si este código para buscar un elemento?",
+        "start": 4217.700000000001,
+        "end": 4223.52
+    },
+    {
+        "text": " Exacto, cuando se un árbol binario es común y corriente, no está ordenado, ahí sí no me",
+        "start": 4224.320000000001,
+        "end": 4229.8
+    },
+    {
+        "text": " puedo conformar con un suarol y decir, ya está, busco en los dos y en este caso algún or",
+        "start": 4229.8,
+        "end": 4236.280000000001
+    },
+    {
+        "text": " para juntar el resultado del ojí de las dos partes, pero si es binario de buquea no tendría sentido,",
+        "start": 4236.280000000001,
+        "end": 4240.8
+    },
+    {
+        "text": " vamos a ver un algoritmo que modifique el árbol, también una inserción, uno diría que",
+        "start": 4243.120000000001,
+        "end": 4251.6
+    },
+    {
+        "text": " quien garantiza en cualquier ojo que vamos a ver varias estructuras de esta, después el largo del curso,",
+        "start": 4252.160000000001,
+        "end": 4257.0
+    },
+    {
+        "text": " ¿no? cuando no solo tiene una estructura binaria, sino además tiene una propiedad de la estructura,",
+        "start": 4257.0,
+        "end": 4262.0
+    },
+    {
+        "text": " o sea la propiedad menores de un lado, mayores del otro, eso es una propiedad, quien garantiza",
+        "start": 4262.0,
+        "end": 4266.76
+    },
+    {
+        "text": " que la propiedad se mantenga, se entiende, como confío que eso se mantenga, y una idea,",
+        "start": 4266.76,
+        "end": 4272.400000000001
+    },
+    {
+        "text": " cuando arrancó en el vacío se cumple y después ¿quién la tiene que mantener? ¿Qué operaciones",
+        "start": 4272.400000000001,
+        "end": 4278.280000000001
+    },
+    {
+        "text": " que tienen que mantener? la inserción, las que agregan y las que elimina, o sea las que",
+        "start": 4278.28,
+        "end": 4285.36
+    },
+    {
+        "text": " modifican el árbol la consina es, si yo asumo como precondición que te doy un binario de buquea",
+        "start": 4285.36,
+        "end": 4290.759999999999
+    },
+    {
+        "text": " y hubo cuando borras o insartas, me da un binario de buquea y son las únicas que modifican,",
+        "start": 4290.759999999999,
+        "end": 4295.04
+    },
+    {
+        "text": " se va a mantener invariante esta condición, ¿entiendes? y eso va a hacer algo que vamos a usar",
+        "start": 4295.04,
+        "end": 4300.719999999999
+    },
+    {
+        "text": " generalmente, cuando yo quiero imponer una condición en la estructura, es ver que se mantiene",
+        "start": 4300.719999999999,
+        "end": 4305.44
+    },
+    {
+        "text": " invariante con las operaciones que lo modifican, ¿todos cada operación que ahora inserte",
+        "start": 4305.44,
+        "end": 4309.879999999999
+    },
+    {
+        "text": " o borre, y tengo que decir, yo te doy un binario de buquea como parámetro, garantízame que",
+        "start": 4309.879999999999,
+        "end": 4313.679999999999
+    },
+    {
+        "text": " hubo insartas te borraste pero dejando un binario de buquea, si rompiste la propiedad, mal,",
+        "start": 4313.679999999999,
+        "end": 4318.96
+    },
+    {
+        "text": " se entiende, ¿sí? entonces por ejemplo se acabó y agrega el 6, fíjense que la elógica",
+        "start": 4318.96,
+        "end": 4326.0
+    },
+    {
+        "text": " es parecida a la búsqueda y por qué tiene que ser parecida a la búsqueda, porque yo cuando",
+        "start": 4326.0,
+        "end": 4330.0
+    },
+    {
+        "text": " voy a meter el 6 en el árbol después lo tengo que poder encontrar, entonces no puede ser muy",
+        "start": 4330.0,
+        "end": 4333.4
+    },
+    {
+        "text": " distinto a buscarlo, yo voy a meter el 6 y me da raíz 12, si lo método donde lo método,",
+        "start": 4333.4,
+        "end": 4339.96
+    },
+    {
+        "text": " de la búsqueda, en cuanto al 8, si lo método donde lo método, y me frena un ratito porque",
+        "start": 4341.96,
+        "end": 4348.0
+    },
+    {
+        "text": " estoy diciendo si lo método, ¿es esto? ¿Qué característica tiene lo jaro de un binario de buquea",
+        "start": 4348.0,
+        "end": 4354.799999999999
+    },
+    {
+        "text": " que la saltee? no repite, no repite, menores y mayores, en general la definición la puede",
+        "start": 4354.799999999999,
+        "end": 4361.639999999999
+    },
+    {
+        "text": " modificar, pero la definición es no repiten y por qué? porque se basan en que cada dato es unico,",
+        "start": 4361.64,
+        "end": 4366.4400000000005
+    },
+    {
+        "text": " por eso hablo de aquí, la clave que lo distingue, se usa mucho para implementar colecciones",
+        "start": 4366.4400000000005,
+        "end": 4372.08
+    },
+    {
+        "text": " conjuntos, conjuntos de estudiantes donde cada estudiantes es unico, eso es una base datos,",
+        "start": 4372.08,
+        "end": 4376.88
+    },
+    {
+        "text": " una base datos, una colección de datos donde cada dato es unico, ¿sabien?",
+        "start": 4377.88,
+        "end": 4382.84
+    },
+    {
+        "text": " bueno, después vamos a ver que yo puedo repetir cosas más multisit, multicon junto,",
+        "start": 4382.84,
+        "end": 4393.92
+    },
+    {
+        "text": " pero después el parcia, así que ahora no se puede, listo, el 6 es menor que el 8,",
+        "start": 4393.92,
+        "end": 4400.52
+    },
+    {
+        "text": " voy del lado izquierdo, el 6 mayor que el 5, voy del lado derecho, el 6 es menor que el 7,",
+        "start": 4400.52,
+        "end": 4406.28
+    },
+    {
+        "text": " me encuentro con null, supongan que esto no estaba, donde va acá, el 6 tiene que ir acá,",
+        "start": 4406.28,
+        "end": 4411.88
+    },
+    {
+        "text": " toma, ¿cordó? que sería la misma estrategia, si ahora voy a buscar el 6 que voy a decir,",
+        "start": 4411.88,
+        "end": 4416.12
+    },
+    {
+        "text": " es menor, mayor y lo encuentro, ¿sí? entonces uno lo debería enganchar acá, del lado izquierdo",
+        "start": 4416.12,
+        "end": 4424.28
+    },
+    {
+        "text": " del 7, será que siempre sin sartos, sin sartas como una hoja, o puede ser que no sin, con ese",
+        "start": 4424.28,
+        "end": 4433.68
+    },
+    {
+        "text": " algoritmo que estoy diciendo, el mismo algoritmo de la búsqueda, porque si no después lo",
+        "start": 4433.68,
+        "end": 4438.36
+    },
+    {
+        "text": " encontrar no lo puedo poner en cualquier lado, pues va a romper la propiedad, se da",
+        "start": 4438.36,
+        "end": 4445.599999999999
+    },
+    {
+        "text": " algún caso donde yo a este arbolito, el inserte algo y no quede como una hoja, el 9, si quiero",
+        "start": 4445.599999999999,
+        "end": 4454.799999999999
+    },
+    {
+        "text": " poner el 9, veamos, el 9 es menor que el 12, ¿dónde voy? izquierda, el 9 mayor que el 8,",
+        "start": 4454.799999999999,
+        "end": 4463.44
+    },
+    {
+        "text": " ¿dónde voy? derecha, el 9 es menor que el 11, ¿dónde voy? izquierda, o sea, viene al izquierdo",
+        "start": 4463.44,
+        "end": 4469.719999999999
+    },
+    {
+        "text": " del 11, va a ser una hoja, no me está caminando el arbol, no me da trampa, última y",
+        "start": 4469.719999999999,
+        "end": 4485.96
+    },
+    {
+        "text": " va a haber que no, el 3, menor que el 12, menor que el 8, menor que el 5, menor que el 4,",
+        "start": 4485.96,
+        "end": 4494.24
+    },
+    {
+        "text": " mayor que el 2, ¿dónde va? del lado izquierdo del 2, la hoja 3 va a estar al lado derecha del 2,",
+        "start": 4494.24,
+        "end": 4500.8
+    },
+    {
+        "text": " si sin sartas, sin sartas como una hoja, ¿cómo la podría probar? usted que está en el lógica y",
+        "start": 4503.64,
+        "end": 4509.0
+    },
+    {
+        "text": " saben ya hacer pruebas por inducción, ¿no? bueno a ver, en voz alta, ¿no? si el arbol es vacío,",
+        "start": 4509.0,
+        "end": 4515.64
+    },
+    {
+        "text": " inserto, me va a quedar una hoja, ¿también? ¿cuándo puede pasas hacer un arbol vacío o un",
+        "start": 4515.64,
+        "end": 4519.92
+    },
+    {
+        "text": " arbolitario? ¿se cumple la propiedad? ¿no? caso base, propiedad probada, vamos ahora al caso del",
+        "start": 4519.92,
+        "end": 4525.68
+    },
+    {
+        "text": " arbol no vacío, ¿qué asumo en una prueba por inducción? los delógica y potes deductiva la",
+        "start": 4525.68,
+        "end": 4531.36
+    },
+    {
+        "text": " propiedad vale para el arbol izquierdo y para el arbol derecho, ¿sí o no? la propiedad vale para",
+        "start": 4531.36,
+        "end": 4535.56
+    },
+    {
+        "text": " la 2 suvaro, le vamos a ver si vale para el arbol principal, ¿qué puede pasar con el arbol principal?",
+        "start": 4535.56,
+        "end": 4539.120000000001
+    },
+    {
+        "text": " ¿qué sea el dato de la raíz? ¿qué hace este algoritmo cuando quiero insertar algo que es raíz?",
+        "start": 4540.200000000001,
+        "end": 4545.320000000001
+    },
+    {
+        "text": " Digimos, no lo modifica, se va, entonces si la propiedad vale antes y no lo modifica, si lo vale",
+        "start": 4546.84,
+        "end": 4552.04
+    },
+    {
+        "text": "endo, sino en la raíz, ¿qué dijimos? si es menor andad al lado izquierdo, pero dijimos por",
+        "start": 4552.04,
+        "end": 4559.18
+    },
+    {
+        "text": " hipótesis inductiva para la desquiatura o al lado derecha y si es más o al lado derecha,",
+        "start": 4559.18,
+        "end": 4562.400000000001
+    },
+    {
+        "text": " dijimos que el arbol derecho va a la propiedad, ya está, no busquen más siempre sin ser tan como una",
+        "start": 4562.4,
+        "end": 4566.879999999999
+    },
+    {
+        "text": " hoja, ¿eh? el algoritmo, sí, sí, lo peor que le puede pasar a ver si se encuentra, lo peor que le",
+        "start": 4566.879999999999,
+        "end": 4581.679999999999
+    },
+    {
+        "text": " puede pasar en al horrobinario de busquea, si yo quiero insertar elementos en el arbol con esa",
+        "start": 4581.679999999999,
+        "end": 4587.839999999999
+    },
+    {
+        "text": " lógica, ¿qué es lo peor que le puede pasar? ¿qué es lo que inserten en qué orden?",
+        "start": 4587.84,
+        "end": 4591.12
+    },
+    {
+        "text": " muy bien, ¿que yo lo he inserto ordenado? supone seguir de inserto el uno y ahora inserto el dos",
+        "start": 4593.6,
+        "end": 4602.400000000001
+    },
+    {
+        "text": " ¿dónde va? a la derecha, inserto el tres ¿dónde va? a la derecha ¿no? inserto el cinco ¿dónde va? a la derecha ¿no?",
+        "start": 4602.400000000001,
+        "end": 4611.52
+    },
+    {
+        "text": " entonces voy armando una lista el árbol degenerado de su situación, lo peor en una bibliobuquea que los",
+        "start": 4612.080000000001,
+        "end": 4618.400000000001
+    },
+    {
+        "text": " datos inserten ordenadamente porque transforman rápidamente en una lista, si las insarciones son aliatorias,",
+        "start": 4618.400000000001,
+        "end": 4623.84
+    },
+    {
+        "text": " no hay un patrón, ese árbol no se va genera, entonces lo peor en una base datos es cargarla en orden,",
+        "start": 4623.84,
+        "end": 4630.56
+    },
+    {
+        "text": " no tomar la sequencia de ordenada, si no a veces uno dice aliatorizarla la entrada y después cargarla,",
+        "start": 4630.56,
+        "end": 4637.92
+    },
+    {
+        "text": " o entonces se reparten los elementos, muy bien, bueno veamos un cachito de código, ahora sí fíjense,",
+        "start": 4637.92,
+        "end": 4646.8
+    },
+    {
+        "text": " tiene sentido que este insertar a bebé sea un procedimiento, un boy pero que modifica ahora sí el",
+        "start": 4646.8,
+        "end": 4655.64
+    },
+    {
+        "text": " árbol parámetro, por eso el T lo paso por referencia, ¿por qué? porque quiero insertar sobre el árbol y en",
+        "start": 4655.64,
+        "end": 4663.04
+    },
+    {
+        "text": " particular si el árbol es fuera vacío y el árbol pasa hacer una arboloja, entonces tiene que",
+        "start": 4663.04,
+        "end": 4666.88
+    },
+    {
+        "text": " cambiarte, ¿para insertar recibo la clave dijimos del dato y el dato en sí, recuerda que yo lo partía como",
+        "start": 4666.88,
+        "end": 4674.84
+    },
+    {
+        "text": " en dos campos, entonces el caso base cuál es si T es null, si T es null, ahora T se va a transformar",
+        "start": 4674.84,
+        "end": 4682.2
+    },
+    {
+        "text": " en arboloja, entonces pido memoria, parece nodo, le cargo de aquí, le cargo el info y como va a",
+        "start": 4682.2,
+        "end": 4688.72
+    },
+    {
+        "text": " hacer una hoja, let y write son null, ¿ok? y termina en ese caso, sino fíjese que pregunta si la",
+        "start": 4688.72,
+        "end": 4699.6
+    },
+    {
+        "text": " clave es menor, la que quiero insertar es menor, la del nodo, por ejemplo estoy parando el 12 y",
+        "start": 4699.6,
+        "end": 4705.320000000001
+    },
+    {
+        "text": " o quiero insertar el 6, entonces que le digo andá a insertar la clave del dato en el árbol izquierdo,",
+        "start": 4705.320000000001,
+        "end": 4710.76
+    },
+    {
+        "text": " y si es mayor de manera dual le digo al lado derecho y si es igual que haces este código,",
+        "start": 4711.72,
+        "end": 4717.92
+    },
+    {
+        "text": " nada, ¿por qué? porque no entra en ningún caso se va, entonces te quedo igual, o sea el caso final",
+        "start": 4720.4800000000005,
+        "end": 4727.72
+    },
+    {
+        "text": " no entra a poner un caso se va y ya está, quedo igual el árbol, se entendió, entonces te va a",
+        "start": 4727.72,
+        "end": 4735.4400000000005
+    },
+    {
+        "text": " recorrer la lista, recursi o por referencia, vengan a enchar el nodito en lugar que le corra",
+        "start": 4735.4400000000005,
+        "end": 4740.0
+    },
+    {
+        "text": " a poner, no es complicado, le voy a comentar pero no voy a entrar en detalle esto porque quiero ver una",
+        "start": 4740.0,
+        "end": 4746.92
+    },
+    {
+        "text": " cosita más antes de ir, ¿no? después, ¿cómo es el eliminación? dijimos que los algoritmos que",
+        "start": 4746.92,
+        "end": 4752.48
+    },
+    {
+        "text": " modifican tienen que mantener la propiedad, entonces yo voy a eliminar un elemento de la árbol,",
+        "start": 4752.48,
+        "end": 4757.08
+    },
+    {
+        "text": " ¿cómo garantizo saco ese elemento y me queda un binario de búsqueda? ¿Van a?",
+        "start": 4757.08,
+        "end": 4762.0
+    },
+    {
+        "text": " a ver, caso fáciles, vamos primero, bueno las hojas serían muy fácil, 17 los sacos y",
+        "start": 4762.0,
+        "end": 4771.88
+    },
+    {
+        "text": " está, supongan que algo no tan fácil pero es parecido, si quiero sacar el 18, ¿por qué digo el 18?",
+        "start": 4771.88,
+        "end": 4779.36
+    },
+    {
+        "text": " Porque yo sé que el árbol derecho es null, voy a conformar con que tenga un null, ni siquiera",
+        "start": 4779.36,
+        "end": 4785.64
+    },
+    {
+        "text": " voy a pedir los dos null, si este fuera null, ¿cómo podría borrar el 18 manteniendo la condición",
+        "start": 4785.64,
+        "end": 4791.72
+    },
+    {
+        "text": " de binaria de búsqueda? aunque acá hubiera muchos elementos, el 12 cambia el puntero de acá a",
+        "start": 4791.72,
+        "end": 4801.320000000001
+    },
+    {
+        "text": " 17, por más que acá abajo hubieran monton de datos lo señala 17 y se sigue cumpliendo, ¿por qué",
+        "start": 4801.320000000001,
+        "end": 4807.240000000001
+    },
+    {
+        "text": " de la biccieta sigue cumpliendo? porque yo lo cumplí antes y por qué se cumplió el",
+        "start": 4807.240000000001,
+        "end": 4810.88
+    },
+    {
+        "text": " lado derecho? y por el lado derecho del 18 no hay nadie y el 17 es mayor que el 12, entonces",
+        "start": 4810.88,
+        "end": 4816.12
+    },
+    {
+        "text": " le enganchado lo este con este ya está, también se daría el caso que acá no hay un dibujito",
+        "start": 4816.12,
+        "end": 4822.68
+    },
+    {
+        "text": " baneso, sin ver ser el derecho en un, fuera el izquierdo en un, porque la misma lógica, la pregunta",
+        "start": 4822.68,
+        "end": 4828.36
+    },
+    {
+        "text": " lo complicado es que pasa cuando son dos distintos en un, por ejemplo quiero borrar, no sé,",
+        "start": 4828.36,
+        "end": 4833.36
+    },
+    {
+        "text": " por ejemplo quiero borrar el 5, quiero borrar el 8, por ejemplo, o el 12, entonces ya cualquiera",
+        "start": 4833.36,
+        "end": 4844.4
+    },
+    {
+        "text": " esos que el eje como ejemplo tienen dos árboles no vacíos, bien, capa que este fue fácil porque acá",
+        "start": 4844.4,
+        "end": 4855.5599999999995
+    },
+    {
+        "text": " tienes uno solo, pues si pongo el 11 acá ya está, ¿vale? vamos entonces al 12 por ejemplo,",
+        "start": 4855.5599999999995,
+        "end": 4863.799999999999
+    },
+    {
+        "text": " para que vean más de un elemento, ¿no? entonces le da una pregunta así, algo que no conviene es",
+        "start": 4863.799999999999,
+        "end": 4872.16
+    },
+    {
+        "text": " desarmar todo el árboles, entonces quiero borrar el 12, supongo hace, ¿no? yo, pero no lo voy a",
+        "start": 4872.16,
+        "end": 4877.48
+    },
+    {
+        "text": " mantener, pero el 12 quiero que se basa, entonces la pregunta es quién puede venir en lugar del 12,",
+        "start": 4877.48,
+        "end": 4883.08
+    },
+    {
+        "text": " de mirando por ejemplo el árbol izquierdo, ¿quién podría ser candidato venir en lugar del 12?",
+        "start": 4883.08,
+        "end": 4887.68
+    },
+    {
+        "text": " No, el 11, o sea que miraron entre los más chiquitos del 12, el más grande, si yo es más grande lo",
+        "start": 4890.599999999999,
+        "end": 4899.44
+    },
+    {
+        "text": " pongo acá el 11, el dato, los copio acá y ahora me voy a borrar este nodo, es más fácil porque",
+        "start": 4899.44,
+        "end": 4907.5599999999995
+    },
+    {
+        "text": " al ser el máximo yo le hace que el del lado derecho no tiene nadie y puede hacer uno de los casos fáciles",
+        "start": 4907.5599999999995,
+        "end": 4912.04
+    },
+    {
+        "text": " que hemos raciéndole, también podría haber hecho porque no tomaste en vez de mirar el árbol izquierdo",
+        "start": 4912.04,
+        "end": 4917.28
+    },
+    {
+        "text": " lo he hecho, sería dual, pero quién tomaría el árbol derecho para poner el lugar del 12? el más",
+        "start": 4917.28,
+        "end": 4923.04
+    },
+    {
+        "text": " chico, pondría el 17 acá y miría borrar el mínimo de este árbol, ¿sí? les parece que se",
+        "start": 4923.04,
+        "end": 4932.5199999999995
+    },
+    {
+        "text": " funciona, bueno acá un bosquejo de código, no código, pues si no, la gente del precio pues me pega,",
+        "start": 4932.5199999999995,
+        "end": 4939.5199999999995
+    },
+    {
+        "text": " a ver déjeme, sí, pero hay bastante código, no se pueden quejar, es un algoritmo de los que",
+        "start": 4940.72,
+        "end": 4947.66
+    },
+    {
+        "text": " vimos ahora yo diría el menos trivial de todos, se debe sentir una complejidad, fíjense",
+        "start": 4947.66,
+        "end": 4954.5
+    },
+    {
+        "text": " este eliminar recibe la clave y el árbol de nuevos por referencia porque vamos a modificar el árbol",
+        "start": 4954.5,
+        "end": 4959.18
+    },
+    {
+        "text": " y empezo los casos, ¿no? si T es null, que hace el código acá, se va y no se nada, está bien,",
+        "start": 4959.18,
+        "end": 4966.46
+    },
+    {
+        "text": " entonces pregunta si T es distinto de null va a ser algo, si no se va, si T es distinto de null,",
+        "start": 4966.46,
+        "end": 4971.82
+    },
+    {
+        "text": " vamos a los casos más fácil, ¿no? si la clave es menor a donde estoy parado, una diría,",
+        "start": 4972.7,
+        "end": 4978.82
+    },
+    {
+        "text": " anda eliminar recorciamente de él, la de izquierdo, si es mayor, anda eliminar de lado derecho y en",
+        "start": 4978.82,
+        "end": 4989.299999999999
+    },
+    {
+        "text": " este él me paro en el punto interesante, ¿no? es igual, o sea yo sé acá que la clave es igual a",
+        "start": 4989.299999999999,
+        "end": 4996.58
+    },
+    {
+        "text": " donde estoy parado, te flechita aquí, entonces lo primero que voy a ver si tuvió en un caso fácil de",
+        "start": 4996.58,
+        "end": 5001.34
+    },
+    {
+        "text": " lo que me hará haciendo un caso difícil, ¿cuál era un caso fácil? por ejemplo este cuando el",
+        "start": 5001.34,
+        "end": 5005.82
+    },
+    {
+        "text": " puntero derecho de él es null, quiero eliminar el seno y yo sé que su derecho es null, entonces por",
+        "start": 5005.82,
+        "end": 5013.26
+    },
+    {
+        "text": " ejemplo el 18, para eliminar este 18 con su derecho es null y yo estoy parado en este T que tengo que",
+        "start": 5013.26,
+        "end": 5019.34
+    },
+    {
+        "text": " hacer bueno, define este puntero a borrar igual acá, igual a T, ¿cómo hago que esta flechita roja",
+        "start": 5019.34,
+        "end": 5026.54
+    },
+    {
+        "text": " apunte a lo que tiene el lado acá haciendo T igual a T flechita left y libero la memoria de",
+        "start": 5026.54,
+        "end": 5033.98
+    },
+    {
+        "text": " borrar, entonces logramos que se va a dar esto y este 12 que va apuntando el 17 y ya está,",
+        "start": 5033.98,
+        "end": 5039.94
+    },
+    {
+        "text": " esas tres líneas, recuerdan que yo sé que acá el 18 no tiene nadie a la derecha porque es la",
+        "start": 5041.94,
+        "end": 5048.18
+    },
+    {
+        "text": " condición que puse acá, es así, yo quiero borrar ese nodo y el del lado derecho no tiene",
+        "start": 5048.18,
+        "end": 5053.18
+    },
+    {
+        "text": " este puntero lo lo llevo por lo izquierdo, punto y para ser prolijo, pongo un puntero auxiliar y",
+        "start": 5054.18,
+        "end": 5060.860000000001
+    },
+    {
+        "text": " algún delí, pero desde el puntero y tal lógico me hubiera alcanzado simplemente con T igual a T",
+        "start": 5060.860000000001,
+        "end": 5067.62
+    },
+    {
+        "text": " left, eso alcanzaría tirando la memoria, no regalando la memoria y después no pasa en los casos",
+        "start": 5067.62,
+        "end": 5073.700000000001
+    },
+    {
+        "text": " de prega, en el el el que tengo el dual, si el left es null, se lo dejo pero es muy parecido,",
+        "start": 5073.700000000001,
+        "end": 5082.58
+    },
+    {
+        "text": " del caso interesante cuál es, el caso interesante es cuando ahora se iguale el, qué este el,",
+        "start": 5083.18,
+        "end": 5089.3
+    },
+    {
+        "text": " estoy parado en el nodo que quiero borrar y el izquierdo del derecho no son vacíos,",
+        "start": 5089.3,
+        "end": 5093.62
+    },
+    {
+        "text": " tú tengo que tomar una decisión, por ejemplo la decisión que tome acá que lo que es,",
+        "start": 5094.5,
+        "end": 5098.26
+    },
+    {
+        "text": " mire el árbol derecho, que es este, y voy a buscar el más chiquito del árbol derecho,",
+        "start": 5098.26,
+        "end": 5105.1
+    },
+    {
+        "text": " me hago una función a buciriar mínimo, que del árbol derecho me dé el puntero a ese nodo,",
+        "start": 5105.1,
+        "end": 5110.700000000001
+    },
+    {
+        "text": " este rojo que está acá, lo puse el izquierdo porque el mínimo se que está más aligiada,",
+        "start": 5111.26,
+        "end": 5115.94
+    },
+    {
+        "text": " y una vez que tenga eso que tengo que hacer, bueno sobre escribir T flechita aquí con qué,",
+        "start": 5117.54,
+        "end": 5122.7
+    },
+    {
+        "text": " con minte dar flechita aquí, T flechita info con quién, con minte dar flechita info y después",
+        "start": 5125.5,
+        "end": 5134.62
+    },
+    {
+        "text": " por qué esta es la línea, ya me voy a ver con esto, qué estoy haciendo ahí,",
+        "start": 5134.62,
+        "end": 5141.7
+    },
+    {
+        "text": " porque qué dice la información del rojo donde pasó ahora, sobre escribió quién,",
+        "start": 5144.22,
+        "end": 5149.46
+    },
+    {
+        "text": " la información del X, o sea lógicamente el X no está más, está acá, pero este nodo sigue",
+        "start": 5151.46,
+        "end": 5156.98
+    },
+    {
+        "text": " estando, entonces qué tengo que hacer ahora sacarlo porque ya si no va a estar como repetido y mal,",
+        "start": 5156.98,
+        "end": 5160.58
+    },
+    {
+        "text": " entonces qué digo, andaba a borrar esa clave del árbol derecho, pero como este sarbolito es más",
+        "start": 5161.0599999999995,
+        "end": 5166.7
+    },
+    {
+        "text": " chiquito que la va a la recorción, su vida, hice demasiado, creyente de la recorción que la",
+        "start": 5166.7,
+        "end": 5172.26
+    },
+    {
+        "text": " va a la recorción, ya es un subarbol lo tiene que hacer solo.",
+        "start": 5172.26,
+        "end": 5174.62
+    },
+    {
+        "text": " Bueno, yo diría que no, en general no, porque cuál hubiera sido otra alternativa,",
+        "start": 5180.0599999999995,
+        "end": 5184.58
+    },
+    {
+        "text": " a ver si funciona, en el quiero borrar el 12, que nadie me la dijo pero podría hacer,",
+        "start": 5184.58,
+        "end": 5191.7
+    },
+    {
+        "text": " que yo diga, sabéis qué agarré todo este árbol que esté a la derecha aunque tenga cientos de",
+        "start": 5191.7,
+        "end": 5195.78
+    },
+    {
+        "text": " nodos y donde lo pondrían allá, sacando el 12 inclusive, se va el 12, entonces voy a conservar",
+        "start": 5195.78,
+        "end": 5202.46
+    },
+    {
+        "text": " todo este árbol pero tengo que engancharle a todo este árbol, este cachito que está acá la",
+        "start": 5202.46,
+        "end": 5206.38
+    },
+    {
+        "text": " derecha, donde pondrían este árbol que está acá, lo más a la derecha posible,",
+        "start": 5206.38,
+        "end": 5211.7
+    },
+    {
+        "text": " esa estrategia sí tiene a llevar el árbol como una lista, porque va enganchando",
+        "start": 5212.7,
+        "end": 5218.7
+    },
+    {
+        "text": " árboles más al izquierdo abajo, en cambio el otro que va manteniendo el nodo en el lugar donde está",
+        "start": 5218.7,
+        "end": 5224.179999999999
+    },
+    {
+        "text": " y saca uno de los que está abajo mantiene mejor la estructura, todo intuición, estamos hablando",
+        "start": 5224.179999999999,
+        "end": 5230.98
+    },
+    {
+        "text": " de intuición, bueno para terminar hoy, a ver, aquí está la función mínimo, cómo era la función",
+        "start": 5230.98,
+        "end": 5240.62
+    },
+    {
+        "text": " mínimo, que me da el puntero el nodo mínimo, como encuentro el mínimo a me he dicho, siendo",
+        "start": 5240.62,
+        "end": 5245.099999999999
+    },
+    {
+        "text": " un árbol al izquierdo y como detecto la condición este es el mínimo, cuando ese nodo,",
+        "start": 5245.099999999999,
+        "end": 5255.62
+    },
+    {
+        "text": " cuando el izquierdo es vacía, entonces diga que ese es el cuello que dice acá, la función",
+        "start": 5255.62,
+        "end": 5261.46
+    },
+    {
+        "text": " mínimo da un árbol, me da el puntero el nodo mínimo, si tiene el nodo, bueno no hay mínimo y si no",
+        "start": 5261.46,
+        "end": 5267.099999999999
+    },
+    {
+        "text": " dice mientras T left sea null, muvete por lado izquierda y cuando salgas T left es null, entonces",
+        "start": 5267.1,
+        "end": 5273.14
+    },
+    {
+        "text": " S T es tu mínimo, es bien simple y ya con eso tenemos casi el cuello del borrar,",
+        "start": 5273.14,
+        "end": 5283.14
+    },
+    {
+        "text": " sobre el orden, bueno esto lo vamos a ver después de tu mismo pero el per caso muchas veces en",
+        "start": 5286.14,
+        "end": 5293.9400000000005
+    },
+    {
+        "text": " esto árbol es ordené mi igual que una lista, alguna esperaría no llegar ese peor caso y que en el",
+        "start": 5293.94,
+        "end": 5298.0199999999995
+    },
+    {
+        "text": " promedio, cuando el árbol está medianamente balanceado, o sea que la cantidad no se llama árbol",
+        "start": 5298.0199999999995,
+        "end": 5307.98
+    },
+    {
+        "text": " equilibrados, árboles a, b, l como este es desequilibrado, este es el peor, entonces lo vamos a ver",
+        "start": 5307.98,
+        "end": 5314.259999999999
+    },
+    {
+        "text": " después de los parciales, ni siquiera después tuvimos, después de los parciales, no, lo vamos a ver",
+        "start": 5314.259999999999,
+        "end": 5318.66
+    },
+    {
+        "text": " cuando vamos con la ección, en esos el orden y en el promedio de estos es lo harí, entonces ahí se",
+        "start": 5318.66,
+        "end": 5324.42
+    },
+    {
+        "text": " hacen muy eficiente o mejor que las listas, un último ejemplo que creo que aparece un idea similar",
+        "start": 5324.42,
+        "end": 5332.34
+    },
+    {
+        "text": " en laboratorio por eso la quería comentar o algo parecido que tienen que dar un árbol a planarlo",
+        "start": 5332.34,
+        "end": 5338.139999999999
+    },
+    {
+        "text": " en una lista, transformarlo en una lista, el código que vimos un rato serviría el que hacía los",
+        "start": 5338.139999999999,
+        "end": 5344.66
+    },
+    {
+        "text": " concatos, ya más recorcibamente lo ves que he habido el lado derecho y los concatinos, pero el",
+        "start": 5344.66,
+        "end": 5350.7
+    },
+    {
+        "text": " concato si no lo piensa en eficiencia cada vez que al concato que debería hacer, salvo que sea",
+        "start": 5350.7,
+        "end": 5356.18
+    },
+    {
+        "text": " me llueve el punter al primero y último en una lista, va a tener que recorrer la lista y engancharle",
+        "start": 5356.18,
+        "end": 5360.94
+    },
+    {
+        "text": " al final, entonces cada vez que hagas un concato tiene un orden ene y eso lo voy a hacer eneveses",
+        "start": 5360.94,
+        "end": 5366.98
+    },
+    {
+        "text": " por cada nodo, me va a quedar enecuadrado, entonces como podría hacer eficientemente una planar de",
+        "start": 5366.98,
+        "end": 5374.0199999999995
+    },
+    {
+        "text": " orden ene en vez de enecuadrado, está bien y supongan que tengo una bebé, o sea que estamos",
+        "start": 5374.02,
+        "end": 5382.46
+    },
+    {
+        "text": " binario de búsqueda con ordenado y quiero general la lista planada de menor a mayor,",
+        "start": 5382.46,
+        "end": 5388.780000000001
+    },
+    {
+        "text": " entonces una sugaredes diciendo mira y esto es una estrategia que se usa bastante, es decir,",
+        "start": 5390.9800000000005,
+        "end": 5396.02
+    },
+    {
+        "text": " me defino, este es la planar que vos querés, dado un árbol, te de una lista, bueno,",
+        "start": 5396.02,
+        "end": 5400.9800000000005
+    },
+    {
+        "text": " voy a hacer un metoducida que lo voy a llamar a planar en lista que tenga un argumento más, el árbol y una lista,",
+        "start": 5401.78,
+        "end": 5407.74
+    },
+    {
+        "text": " la lista que voy a ir aramando originalmente vacía, o sea arrancó un procedimiento auxiliar,",
+        "start": 5407.74,
+        "end": 5414.0599999999995
+    },
+    {
+        "text": " donde voy ir cargando en esa lista los elementos que voy a ir aramando la planar para no concatenarlos",
+        "start": 5415.459999999999,
+        "end": 5421.98
+    },
+    {
+        "text": " porque es muy lento el concatenar, donde es muy eficiente agregar elementos en lista,",
+        "start": 5421.98,
+        "end": 5425.82
+    },
+    {
+        "text": " al comienzo, esto es como hago para insertar los al comienzo, que los más rápido, bueno,",
+        "start": 5426.82,
+        "end": 5433.54
+    },
+    {
+        "text": " tiene que recorrer, entonces voy a ver cómo la planar de lista se las ingenia para insertando el comienzo,",
+        "start": 5433.54,
+        "end": 5438.299999999999
+    },
+    {
+        "text": " si es por referencia, la lista tiene que ir agregando, una bebé, tengo el X,",
+        "start": 5438.299999999999,
+        "end": 5446.54
+    },
+    {
+        "text": " menores que X, mayores que X, cómo recorre este árbol agregando al comienzo, que es lo más rápido",
+        "start": 5446.54,
+        "end": 5459.06
+    },
+    {
+        "text": " para agregar una lista, para que me quede inordenado de mayor a menor.",
+        "start": 5459.06,
+        "end": 5462.46
+    },
+    {
+        "text": " Le pongo numeritos, los quiero que me dio una lista de menor a mayor,",
+        "start": 5462.46,
+        "end": 5478.26
+    },
+    {
+        "text": " es inorder, pero en inorder no hay que vimos, cómo en el inorden que vimos, primero que,",
+        "start": 5478.26,
+        "end": 5500.780000000001
+    },
+    {
+        "text": " el árbol izquierdo, después el nodo y después el árbol derecho, si yo los inserto así,",
+        "start": 5501.78,
+        "end": 5508.54
+    },
+    {
+        "text": " primero inserto esto en la lista, al comienzo de la lista, después inserto este al comienzo de la lista,",
+        "start": 5508.54,
+        "end": 5514.94
+    },
+    {
+        "text": " y después inserto esto al comienzo de la lista, cómo hago la lista, si esto lo voy",
+        "start": 5514.94,
+        "end": 5519.099999999999
+    },
+    {
+        "text": " insertando al comienzo, van a caer lo más grande primero, tengo que gastar, un inorder al revés,",
+        "start": 5519.099999999999,
+        "end": 5526.34
+    },
+    {
+        "text": " primer de los mayores en el medio la raíz sigue sin de inorder, porque es la raíz en el medio y",
+        "start": 5526.34,
+        "end": 5531.9400000000005
+    },
+    {
+        "text": " después al final los machiquitos, porque entonces los machiquitos van a quedar ahí comienzo cuando",
+        "start": 5531.9400000000005,
+        "end": 5535.14
+    },
+    {
+        "text": " los inserto haran. Entonces ahí tengo este aplanar en lista, que dice si el árbol no es vacío,",
+        "start": 5535.14,
+        "end": 5543.26
+    },
+    {
+        "text": " primero insertato el árbol derecho en la lista, después insertar al comienzo el dato, el ins comienzo",
+        "start": 5543.26,
+        "end": 5549.9400000000005
+    },
+    {
+        "text": " que vimos en la depositiva tierna, y son cuatro asignaciones, orden 1, y después insertar",
+        "start": 5549.94,
+        "end": 5555.58
+    },
+    {
+        "text": " los mayores, pardon, los menores en él, o sea recorrer el árbizquial y insertando, entonces me va a quedar",
+        "start": 5555.58,
+        "end": 5561.299999999999
+    },
+    {
+        "text": " primero los machiquitos en el medio el elemento y después los mayores, como esto recorre una sola",
+        "start": 5561.299999999999,
+        "end": 5567.259999999999
+    },
+    {
+        "text": " vez cada nodo y el ins comienzo tiene orden 1, esto me va a quedar orden en él y si los quisiera",
+        "start": 5567.259999999999,
+        "end": 5573.5
+    },
+    {
+        "text": " ordenar de mayor a menor que cambio ahí, exacto, acá pongo el heft y acá pongo raíz y ahí me van a",
+        "start": 5573.5,
+        "end": 5582.5
+    },
+    {
+        "text": " quedar ordenados de mayor a menor, pero no es posorder, tiene que ser inorder para que se mantenga el",
+        "start": 5582.5,
+        "end": 5589.96
+    },
+    {
+        "text": " orden, después si lo quiero menor a mayor lo que cambia es cuál de los dos árboles de recorro",
+        "start": 5589.96,
+        "end": 5595.54
+    },
+    {
+        "text": " primero, se sigue llamando inorder si, porque la condición de inorder es que la raíz en el medio",
+        "start": 5595.54,
+        "end": 5600.86
+    },
+    {
+        "text": " es una convención de que el primer de la rolicierra del derecho puede ser al revés y sigue llamando",
+        "start": 5601.42,
+        "end": 5605.82
+    },
+    {
+        "text": " ser inorder, por eso digo hay variantes de recorrer el árbol, cada una de las tres que vimos",
+        "start": 5605.82,
+        "end": 5610.94
+    },
+    {
+        "text": " inorder, el prior de hiposore tiene dos variantes, porque el prior de que lo que es primero la raíz,",
+        "start": 5610.94,
+        "end": 5616.54
+    },
+    {
+        "text": " pero después podrías hacer los dos variantes que el izquierdo primero es el derecho después o el",
+        "start": 5616.54,
+        "end": 5620.7
+    },
+    {
+        "text": " derecho primero y el izquierdo después, inorder también tiene dos variantes y hiposore tiene dos",
+        "start": 5620.7,
+        "end": 5624.679999999999
+    },
+    {
+        "text": " variantes, yo tengo seis ahí y acá dejamos, vemos los árboles generales o finitarios,",
+        "start": 5624.8,
+        "end": 5634.68
+    },
+    {
+        "text": " porque para dar lo opurado me parece que no va a ir la pena, simplemente como yo le decía un",
+        "start": 5634.68,
+        "end": 5640.64
+    },
+    {
+        "text": " dibujito, un árbol general o finitario, que creo que no aparece en la tarea y va a aparecer en el",
+        "start": 5640.64,
+        "end": 5648.8
+    },
+    {
+        "text": " práctico, pero en el práctico primero van a trabajar y ya lo vimos con la gente de",
+        "start": 5648.8,
+        "end": 5652.34
+    },
+    {
+        "text": " el práctico primero es los binarios y binarios de busque, o sea que cuando veamos los árboles",
+        "start": 5652.34,
+        "end": 5656.66
+    },
+    {
+        "text": " generales después de turismo y análisis del corrimo recurso, vamos a estar bien en tiempos.",
+        "start": 5656.66,
+        "end": 5662.66
+    },
+    {
+        "text": " Buena semana.",
+        "start": 5662.66,
+        "end": 5666.14
+    }
+]

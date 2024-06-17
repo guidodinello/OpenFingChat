@@ -1,0 +1,4587 @@
+[
+    {
+        "text": " Bueno, muy bien. Hoy vamos a tratar el tema entonces de complejidad computacional.",
+        "start": 0.0,
+        "end": 7.0
+    },
+    {
+        "text": " Como hemos visto hasta ahora, los problemas que hemos tratado durante el curso tienen cierto",
+        "start": 7.0,
+        "end": 17.68
+    },
+    {
+        "text": " grado dificultad de resolución, cada uno de ellos. Bueno, hay unas de las características",
+        "start": 17.68,
+        "end": 24.68
+    },
+    {
+        "text": " que tienen los problemas es que la dificultad es intríncica al problema en sí mismo. No depende",
+        "start": 24.68,
+        "end": 30.96
+    },
+    {
+        "text": " de las formulaciones que se dan del problema ni de los algoritmos que se utilizan para",
+        "start": 30.96,
+        "end": 38.08
+    },
+    {
+        "text": " resolverlo. En sí nosotros nos encontramos mucho en la algoritmia para resolverla, pero",
+        "start": 38.08,
+        "end": 47.4
+    },
+    {
+        "text": " estos nos permiten, son comunicadores del grado dificultad de ellos. En sí mismo, o uno",
+        "start": 47.4,
+        "end": 56.2
+    },
+    {
+        "text": " a veces es asocia, lo que ocurre muchas veces ocurre, es un problema, es heredas las dificultades",
+        "start": 56.2,
+        "end": 63.599999999999994
+    },
+    {
+        "text": " del algoritmo y no, es arrevesa. La complejidad la tiene el problema y el algoritmo lo que hace es",
+        "start": 63.599999999999994,
+        "end": 68.96
+    },
+    {
+        "text": " sensar esa dificultad. Por ejemplo, el tromecanismo, deberes saber que dificultad, ellos pueden",
+        "start": 68.96,
+        "end": 82.36
+    },
+    {
+        "text": " ser, por ejemplo, en las formulaciones de chebraycas, como lo vieron en el problema de flujo máximo,",
+        "start": 82.36,
+        "end": 88.8
+    },
+    {
+        "text": " que representa el problema a partir de una red de flujo, en el cual hay variables de",
+        "start": 88.8,
+        "end": 96.66
+    },
+    {
+        "text": " chebraycas que representan el flujo, es un no fuente, un no sumidero, hay ecuaciones que mantienen",
+        "start": 96.66,
+        "end": 104.42
+    },
+    {
+        "text": " el balance del flujo para cada uno de esos no dos obertices y además hay capacidades, dichas",
+        "start": 104.42,
+        "end": 112.78
+    },
+    {
+        "text": " formulaciones, habilitan a muchísimas más soluciones y bueno, en ellas se encuentran dos propiedades,",
+        "start": 112.78,
+        "end": 120.82
+    },
+    {
+        "text": " nosotros no le vamos a ver en el corredor de tache, porque son fundamentales también, que",
+        "start": 120.82,
+        "end": 125.74
+    },
+    {
+        "text": " una de ellas es la convexidad, es que si hay infinitas soluciones, hay esos problemas, pero lo que",
+        "start": 125.74,
+        "end": 134.38
+    },
+    {
+        "text": " ocurre que esa solución tiene una propiedad de la convexidad, que si solo se trabaja sobre las",
+        "start": 134.38,
+        "end": 143.14
+    },
+    {
+        "text": " soluciones extremas, las soluciones óptimas, puede estar representadas solamente por las soluciones",
+        "start": 143.14,
+        "end": 149.9
+    },
+    {
+        "text": " y lo que vimos hasta ahora en el curso, por ejemplo, el caso del problema de flujo máximo,",
+        "start": 150.46,
+        "end": 157.22
+    },
+    {
+        "text": " el arcorismo de forfulques es lo que hace eso, está detectando soluciones extremales, soluciones",
+        "start": 160.22,
+        "end": 166.46
+    },
+    {
+        "text": " de obertes, o hay o no hay flujo, o el flujo es cero, o el flujo es la capacidad máxima, y con respecto",
+        "start": 166.46,
+        "end": 175.58
+    },
+    {
+        "text": " a la propiedad de dualidad, bueno, no le hemos visto en detalle, pero en sí está de cierta forma",
+        "start": 175.58,
+        "end": 185.54000000000002
+    },
+    {
+        "text": " implícinta, en ese mismo problema, en el tema del corte de capacidad mírido, porque en una",
+        "start": 185.54000000000002,
+        "end": 194.82000000000002
+    },
+    {
+        "text": " si, nosotros sabemos que el arcorismo, la condición de óptimo del arcorismo, bueno, la detectamos",
+        "start": 194.82000000000002,
+        "end": 202.3
+    },
+    {
+        "text": " una porque el arcorismo termina, este de forfulques de cierta termina, asumiendo que las",
+        "start": 202.3,
+        "end": 209.42000000000002
+    },
+    {
+        "text": " capacidades son, por ejemplo, enteras, igual como enviamos flujos, que lo vamos consumiendo,",
+        "start": 209.42000000000002,
+        "end": 216.62
+    },
+    {
+        "text": " bueno, el momento que va a terminar, y detectamos el óptimo porque a través de que la forma es",
+        "start": 216.62,
+        "end": 222.78
+    },
+    {
+        "text": " si igual no podemos enviar más flujo, una forma más elaborada de determinar ese que existe el óptimo",
+        "start": 222.78,
+        "end": 230.3
+    },
+    {
+        "text": " y que lo vamos a encontrar, es el teorema del corte de capacidad mínima, o en ese corte que",
+        "start": 230.34,
+        "end": 238.94
+    },
+    {
+        "text": " la capacidad mínima en sí está representando esa noción que se llama de dualidad, he dado un problema,",
+        "start": 238.94,
+        "end": 243.5
+    },
+    {
+        "text": " existe un problema de jebrado y coci este otro problema, que bueno, que si cumplen ciertas propiedades",
+        "start": 243.5,
+        "end": 248.86
+    },
+    {
+        "text": " de dualidad, bueno, el problema de tener resolución eficiente, bueno, eso es como un mecanismo, un mundo",
+        "start": 248.86,
+        "end": 253.9
+    },
+    {
+        "text": " para el hilo al mundo de la algoritmia, en el hecho de que exista el gólico eficiente, implica",
+        "start": 253.9,
+        "end": 259.3
+    },
+    {
+        "text": " que va a haber propiedad de dualidad en particular, el problema va a ser tener propiedades de",
+        "start": 259.3,
+        "end": 263.86
+    },
+    {
+        "text": " complexidad para figuras, esto para destacar en sí que la complejidad depende de si el problema y",
+        "start": 263.86,
+        "end": 271.94
+    },
+    {
+        "text": " no del... para más que las problemas son computacionales y no de los hay gorinmas,",
+        "start": 271.94,
+        "end": 276.5
+    },
+    {
+        "text": " bueno, entonces, todo la teoría que se desarrolla en torno a la complejidad",
+        "start": 280.90000000000003,
+        "end": 289.22
+    },
+    {
+        "text": " computacional, lo que se trata de hacer es bueno clasificar a los problemas en según tengan",
+        "start": 289.22,
+        "end": 295.14000000000004
+    },
+    {
+        "text": " honor resolución eficiente, este es el gran junto del corte aquí, o sea, hasta ahora todos los",
+        "start": 295.14000000000004,
+        "end": 302.74
+    },
+    {
+        "text": " problemas que nosotros que hemos visto en el curso, todos tienen resolución eficiente, ¿qué queremos",
+        "start": 302.74,
+        "end": 309.38000000000005
+    },
+    {
+        "text": " decir por resolución eficiente? Bueno, la resolución se dice que es eficiente, si el tiempo empleado",
+        "start": 309.38000000000005,
+        "end": 318.98
+    },
+    {
+        "text": " en la resolución del algoritmo, en la ejecución de un algoritmo espolinomial en el tamaño de",
+        "start": 319.22,
+        "end": 325.5
+    },
+    {
+        "text": " la entancia, recuerde que esa noción del tiempo se específico a partir de la cantidad de",
+        "start": 325.5,
+        "end": 337.22
+    },
+    {
+        "text": " instrucciones, o sea, lo que realmente estamos midiendo es la cantidad de instrucciones,",
+        "start": 337.22,
+        "end": 342.54
+    },
+    {
+        "text": " bueno, a partir de la cantidad de instrucciones de punto de vista algoritmico, decimos que van a",
+        "start": 342.54,
+        "end": 350.22
+    },
+    {
+        "text": " llevar un esfuerzo temporal y la estamos midiendo en un concepto de tiempo, y bueno, esa noción del",
+        "start": 350.22,
+        "end": 360.90000000000003
+    },
+    {
+        "text": " tiempo va a ser una función del tamaño de la entancia, entonces bueno, cuando hay resoluciones",
+        "start": 360.90000000000003,
+        "end": 365.98
+    },
+    {
+        "text": " eficiente, vamos hablando de que esa función está acotada polinomialmente, asintóticamente,",
+        "start": 365.98,
+        "end": 371.90000000000003
+    },
+    {
+        "text": " por el tamaño de instancia de problemas, si hay alguna de las entidades del problema,",
+        "start": 371.90000000000003,
+        "end": 375.1
+    },
+    {
+        "text": " podemos medir parametricamente y establecemos una cota asintótica sobre eso.",
+        "start": 375.1,
+        "end": 381.34000000000003
+    },
+    {
+        "text": " Bueno, ¿qué ocurre? Hay muchísimos problemas que se han podido resolver",
+        "start": 385.66,
+        "end": 393.1
+    },
+    {
+        "text": " eficientemente, digo, la mayoría de los problemas reales y se trabajan,",
+        "start": 393.1,
+        "end": 399.26000000000005
+    },
+    {
+        "text": " tiene esta característica, no se han podido resolver eficientemente, pero tampoco se han",
+        "start": 400.78000000000003,
+        "end": 407.98
+    },
+    {
+        "text": " podido mostrar que no se pueden resolver eficientemente. Bueno, esto se detectó,",
+        "start": 407.98,
+        "end": 414.06
+    },
+    {
+        "text": " se detectó desde el final de los sesenta y fortemente comienzos de los sesenta, desde ahí se",
+        "start": 414.06,
+        "end": 422.78000000000003
+    },
+    {
+        "text": " trabaja en formalizar todo esto, y bueno, y se han ido acumulando muchísimo esfuerzo,",
+        "start": 422.78,
+        "end": 430.85999999999996
+    },
+    {
+        "text": " muchísimo trabajo en ver cómo se puede demostrar que no se pueden resolver eficientemente.",
+        "start": 430.85999999999996,
+        "end": 436.94
+    },
+    {
+        "text": " Hay miles de problemas, escenas de miles de problemas, miles de problemas por año,",
+        "start": 439.65999999999997,
+        "end": 445.9
+    },
+    {
+        "text": " ese momento se han detectado y se van acumulando. A modo de ejemplo, podemos ver un problema",
+        "start": 446.38,
+        "end": 457.02
+    },
+    {
+        "text": " de ese tipo que no se ha podido resolver eficientemente, que abarca a dos problemas que nosotros",
+        "start": 459.34,
+        "end": 463.02
+    },
+    {
+        "text": " hemos visto y es el problema del árbol de extensa. El problema está, pero a base de un gráfono dirigido,",
+        "start": 463.02,
+        "end": 474.46
+    },
+    {
+        "text": " con exo, la hubo un conjunto de vértices B y un conjunto de listas B, entonces lo que además se",
+        "start": 475.74,
+        "end": 485.65999999999997
+    },
+    {
+        "text": " tiene un conjunto particular de vértices, se denomina terminales, aquí lo denotamos con tema",
+        "start": 485.65999999999997,
+        "end": 491.97999999999996
+    },
+    {
+        "text": " y su escula, entonces se denomina árbol de Steiner, el sub-grafo, así que es un árbol,",
+        "start": 491.98,
+        "end": 503.5
+    },
+    {
+        "text": " y que lo vamos a tener en el arquitecto de sub-t, que conecta los vértices de T,",
+        "start": 504.22,
+        "end": 507.90000000000003
+    },
+    {
+        "text": " posiblemente conteniendo vértices de B, menos que quedaron afuera, pero no conecta todo el",
+        "start": 509.98,
+        "end": 515.02
+    },
+    {
+        "text": " valor de la vértices. El requerimiento es que solo conecte esos artes, vamos a hacer un ejemplo,",
+        "start": 515.98,
+        "end": 520.46
+    },
+    {
+        "text": " que esta 320 de datos",
+        "start": 520.46,
+        "end": 544.5400000000001
+    },
+    {
+        "text": " Desde la hunter y esa Assistantidad de la DNR scarcity.",
+        "start": 580.46,
+        "end": 588.6600000000001
+    },
+    {
+        "text": " ¿De lo que heℓen?",
+        "start": 591.1800000000001,
+        "end": 593.86
+    },
+    {
+        "text": " ¿Ejâte grand είναι kapado sustento a la mamá?",
+        "start": 593.86,
+        "end": 598.6600000000001
+    },
+    {
+        "text": " ¿Es que esta lonely la nietila de N geçida que a la jefe no se",
+        "start": 600.6600000000001,
+        "end": 600.82
+    },
+    {
+        "text": " quentea la magia hoy después?",
+        "start": 600.82,
+        "end": 603.02
+    },
+    {
+        "text": " Para que tenemos a G y además te supongo en que es 2, los voy a artisan 2, 3, 5 y 6.",
+        "start": 633.02,
+        "end": 650.02
+    },
+    {
+        "text": " Vamos a ponerle esta instruestion.",
+        "start": 651.02,
+        "end": 657.02
+    },
+    {
+        "text": " Entonces, le dirías construir el ingreso de la gente.",
+        "start": 657.02,
+        "end": 664.02
+    },
+    {
+        "text": " Entonces, le dirías construir el suarbol de esta inicio.",
+        "start": 664.02,
+        "end": 689.02
+    },
+    {
+        "text": " Como acá se quieren quédete.",
+        "start": 689.02,
+        "end": 696.02
+    },
+    {
+        "text": " Bueno, como sea, claramente van a tener que estar a los pobres 16, 2, 3, 5 y 6.",
+        "start": 702.02,
+        "end": 714.02
+    },
+    {
+        "text": " Entonces, esas tienen que si o si ya estar.",
+        "start": 714.02,
+        "end": 721.02
+    },
+    {
+        "text": " Y bueno.",
+        "start": 721.02,
+        "end": 724.02
+    },
+    {
+        "text": " Y profundamente no hay problema.",
+        "start": 724.02,
+        "end": 727.02
+    },
+    {
+        "text": " Bueno, vamos arriba de nuevo.",
+        "start": 727.02,
+        "end": 730.02
+    },
+    {
+        "text": " Tenemos un grafo dirigido.",
+        "start": 730.02,
+        "end": 733.02
+    },
+    {
+        "text": " Con eso.",
+        "start": 733.02,
+        "end": 734.02
+    },
+    {
+        "text": " Perdón, no dirigido.",
+        "start": 734.02,
+        "end": 737.02
+    },
+    {
+        "text": " Con vértices.",
+        "start": 737.02,
+        "end": 738.02
+    },
+    {
+        "text": " Ve y un subconjunto particular de vértices que le denominamos vértices terminales.",
+        "start": 738.02,
+        "end": 745.02
+    },
+    {
+        "text": " Te maltucpieron.",
+        "start": 745.02,
+        "end": 748.02
+    },
+    {
+        "text": " Entonces, vamos a denominar subarbol de este iner a un sub grafo asi clico de g, o sea, narbol,",
+        "start": 748.02,
+        "end": 759.02
+    },
+    {
+        "text": " que conecta los vértices de té.",
+        "start": 759.02,
+        "end": 761.02
+    },
+    {
+        "text": " Esa es la condición.",
+        "start": 761.02,
+        "end": 763.02
+    },
+    {
+        "text": " Quien es que conectar.",
+        "start": 763.02,
+        "end": 764.02
+    },
+    {
+        "text": " ¿Qué es que es que pasa por vértices genosos en esos?",
+        "start": 764.02,
+        "end": 768.02
+    },
+    {
+        "text": " Exactamente.",
+        "start": 768.02,
+        "end": 769.02
+    },
+    {
+        "text": " Es lo que dice ahí.",
+        "start": 769.02,
+        "end": 770.02
+    },
+    {
+        "text": " Posible que contenga vértices de vértices.",
+        "start": 770.02,
+        "end": 774.02
+    },
+    {
+        "text": " Ah, bien.",
+        "start": 774.02,
+        "end": 775.02
+    },
+    {
+        "text": " Tiene que conectar a todos.",
+        "start": 775.02,
+        "end": 777.02
+    },
+    {
+        "text": " Es un, es un, es un, es un sub grafo dirigido que cubre a té.",
+        "start": 777.02,
+        "end": 783.02
+    },
+    {
+        "text": " Esa es la gara que hay en el matrón.",
+        "start": 783.02,
+        "end": 785.02
+    },
+    {
+        "text": " ¿Entienden la idea?",
+        "start": 785.02,
+        "end": 786.02
+    },
+    {
+        "text": " No.",
+        "start": 786.02,
+        "end": 788.02
+    },
+    {
+        "text": " Nosotros mismos, ustedes vienen el problema.",
+        "start": 788.02,
+        "end": 790.02
+    },
+    {
+        "text": " Esa es la idea de que cubrir el problema similar, o narwa de cubrimiento, de costo mínimo.",
+        "start": 790.02,
+        "end": 795.02
+    },
+    {
+        "text": " Que cubría todos los verdes.",
+        "start": 795.02,
+        "end": 797.02
+    },
+    {
+        "text": " Este es solo que cubrir está obligado a cubrir los de té.",
+        "start": 797.02,
+        "end": 800.02
+    },
+    {
+        "text": " Pero tiene que ser un narwa.",
+        "start": 800.02,
+        "end": 803.02
+    },
+    {
+        "text": " O sea, que está inducido en lo demás.",
+        "start": 803.02,
+        "end": 806.02
+    },
+    {
+        "text": " Que hay una andenía, si no podías pasar por los, por otros vértices,",
+        "start": 806.02,
+        "end": 810.02
+    },
+    {
+        "text": " simplemente los sacas y hace mínimo spanning tree.",
+        "start": 810.02,
+        "end": 814.02
+    },
+    {
+        "text": " Y ya están.",
+        "start": 814.02,
+        "end": 815.02
+    },
+    {
+        "text": " Por eso que no me se arraba.",
+        "start": 815.02,
+        "end": 817.02
+    },
+    {
+        "text": " Claro, no.",
+        "start": 817.02,
+        "end": 818.02
+    },
+    {
+        "text": " Tiene que ser un narwa.",
+        "start": 819.02,
+        "end": 821.02
+    },
+    {
+        "text": " Porque acá tenemos un, si elegimos solo 2, 3, 5 y 6, que haya de conexo.",
+        "start": 821.02,
+        "end": 827.02
+    },
+    {
+        "text": " No.",
+        "start": 827.02,
+        "end": 828.02
+    },
+    {
+        "text": " Tiene que ser, además, una verdad.",
+        "start": 828.02,
+        "end": 832.02
+    },
+    {
+        "text": " Esto sería un boc, así como está.",
+        "start": 832.02,
+        "end": 834.02
+    },
+    {
+        "text": " Puede ir al solución.",
+        "start": 834.02,
+        "end": 838.02
+    },
+    {
+        "text": " Bueno, les pongo color para mantenerlo a la elección, ahí que teníamos.",
+        "start": 838.02,
+        "end": 844.02
+    },
+    {
+        "text": " Esto sigue siendo los los de no.",
+        "start": 845.02,
+        "end": 849.02
+    },
+    {
+        "text": " Bueno, la única solución posible y único arrobo el posible acá.",
+        "start": 859.02,
+        "end": 864.02
+    },
+    {
+        "text": " Perdón, hay más de uno.",
+        "start": 864.02,
+        "end": 866.02
+    },
+    {
+        "text": " Este es una.",
+        "start": 867.02,
+        "end": 868.02
+    },
+    {
+        "text": " Sí.",
+        "start": 868.02,
+        "end": 869.02
+    },
+    {
+        "text": " Otro por día ser.",
+        "start": 883.02,
+        "end": 885.02
+    },
+    {
+        "text": " Sí.",
+        "start": 897.02,
+        "end": 898.02
+    },
+    {
+        "text": " El día es construir árboles aquí.",
+        "start": 898.02,
+        "end": 901.02
+    },
+    {
+        "text": " Además.",
+        "start": 901.02,
+        "end": 902.02
+    },
+    {
+        "text": " Perdón, el endofasú, el endofasú, el endofasú.",
+        "start": 902.02,
+        "end": 905.02
+    },
+    {
+        "text": " Hay muchísimas soluciones posibles de árbol.",
+        "start": 905.02,
+        "end": 908.02
+    },
+    {
+        "text": " Tiene.",
+        "start": 908.02,
+        "end": 910.02
+    },
+    {
+        "text": " Perdón, el endofasú, el endofasú.",
+        "start": 911.02,
+        "end": 913.02
+    },
+    {
+        "text": " Hay muchísimas soluciones posibles de árbol.",
+        "start": 919.02,
+        "end": 922.02
+    },
+    {
+        "text": " Tiene.",
+        "start": 922.02,
+        "end": 923.02
+    },
+    {
+        "text": " Duvas hasta ahí.",
+        "start": 926.02,
+        "end": 928.02
+    },
+    {
+        "text": " Bueno, hasta acá, este es el problema del árbol.",
+        "start": 933.02,
+        "end": 937.02
+    },
+    {
+        "text": " El, perdón, el.",
+        "start": 938.02,
+        "end": 940.02
+    },
+    {
+        "text": " El concepto de árbol.",
+        "start": 940.02,
+        "end": 942.02
+    },
+    {
+        "text": " El problema tiene lo mismo que tenía el problema.",
+        "start": 942.02,
+        "end": 947.02
+    },
+    {
+        "text": " El.",
+        "start": 947.02,
+        "end": 949.02
+    },
+    {
+        "text": " El árbol de cubrimiento, el costo mínimo.",
+        "start": 949.02,
+        "end": 952.02
+    },
+    {
+        "text": " Los, los, las haristas acá están ponderadas también.",
+        "start": 952.02,
+        "end": 957.02
+    },
+    {
+        "text": " Se van a tener ciertos costos cada una de las haristas.",
+        "start": 957.02,
+        "end": 960.02
+    },
+    {
+        "text": " Potencialmente tengan ciertos costos cada una de estas haristas.",
+        "start": 960.02,
+        "end": 965.02
+    },
+    {
+        "text": " Va a haber un costo aquí.",
+        "start": 966.02,
+        "end": 968.02
+    },
+    {
+        "text": " Todos tienen costos.",
+        "start": 968.02,
+        "end": 971.02
+    },
+    {
+        "text": " O sea, que realmente tenemos un árbol que tiene costos de ponderación de las haristas.",
+        "start": 971.02,
+        "end": 977.02
+    },
+    {
+        "text": " Entonces, el problema en sí consiste en elegir de todos esos posibles árboles.",
+        "start": 977.02,
+        "end": 984.02
+    },
+    {
+        "text": " El que tenga el costo mínimo.",
+        "start": 984.02,
+        "end": 987.02
+    },
+    {
+        "text": " El.",
+        "start": 988.02,
+        "end": 990.02
+    },
+    {
+        "text": " Las haristas están valoradas en un costo.",
+        "start": 993.02,
+        "end": 996.02
+    },
+    {
+        "text": " Entonces, se denomina el problema del árbol de este en el.",
+        "start": 996.02,
+        "end": 1000.02
+    },
+    {
+        "text": " Al terminar el árbol con menor.",
+        "start": 1000.02,
+        "end": 1002.02
+    },
+    {
+        "text": " Barro total de sus haristas.",
+        "start": 1002.02,
+        "end": 1005.02
+    },
+    {
+        "text": " Este es el, el problema se termina en, o sea, hasta el que teníamos hasta antes de anárboles.",
+        "start": 1005.02,
+        "end": 1012.02
+    },
+    {
+        "text": " Todo lo árbol es que puede haber en el gráfico, al buen en este en el.",
+        "start": 1013.02,
+        "end": 1016.02
+    },
+    {
+        "text": " Y bueno, el problema consiste en determinado el cual es el menor costo.",
+        "start": 1016.02,
+        "end": 1019.02
+    },
+    {
+        "text": " Bueno, ahí este problema no se le conoce un algoritmo que lo pueda resolver el.",
+        "start": 1025.02,
+        "end": 1031.02
+    },
+    {
+        "text": " Y si no se no se le conoce, no se le conoce, no se le conoce, no se le conoce, no se conoce.",
+        "start": 1031.02,
+        "end": 1038.02
+    },
+    {
+        "text": " Una algoritmo que en tiempo polinomial en entrada de barricerialistas.",
+        "start": 1038.02,
+        "end": 1044.02
+    },
+    {
+        "text": " No puede resolver, se resuelve.",
+        "start": 1044.02,
+        "end": 1047.02
+    },
+    {
+        "text": " No obstante eso.",
+        "start": 1050.02,
+        "end": 1052.02
+    },
+    {
+        "text": " Si te den lo piden, se han.",
+        "start": 1052.02,
+        "end": 1054.02
+    },
+    {
+        "text": " Por ya lo hemos mencionado.",
+        "start": 1054.02,
+        "end": 1056.02
+    },
+    {
+        "text": " El problema este es un problema más general que su problema que abarca al problema de.",
+        "start": 1056.02,
+        "end": 1062.02
+    },
+    {
+        "text": " De encumulimiento de.",
+        "start": 1063.02,
+        "end": 1066.02
+    },
+    {
+        "text": " Ya largo el de encumulimiento y costo mínimo.",
+        "start": 1066.02,
+        "end": 1068.02
+    },
+    {
+        "text": " El problema de MST es un caso especial de este problema en el que el conjunto de bértices terminales coincide con el conjunto de artes.",
+        "start": 1068.02,
+        "end": 1081.02
+    },
+    {
+        "text": " Si no era usted los vértices terminales son la misma, pero vértices ve estamos en el problema.",
+        "start": 1081.02,
+        "end": 1088.02
+    },
+    {
+        "text": " De encumulimiento de costo mínimo, problema de largo el de encumulimiento costo mínimo.",
+        "start": 1089.02,
+        "end": 1094.02
+    },
+    {
+        "text": " Cubrimos todos los vértices.",
+        "start": 1094.02,
+        "end": 1100.02
+    },
+    {
+        "text": " Te.",
+        "start": 1100.02,
+        "end": 1102.02
+    },
+    {
+        "text": " Con costo.",
+        "start": 1102.02,
+        "end": 1104.02
+    },
+    {
+        "text": " Y además, incluye para el otro caso, límite, que es el caso minimal.",
+        "start": 1104.02,
+        "end": 1110.02
+    },
+    {
+        "text": " Que es cuando el conjunto de bértices terminales tiene solo dos elementos.",
+        "start": 1110.02,
+        "end": 1117.02
+    },
+    {
+        "text": " Si.",
+        "start": 1118.02,
+        "end": 1120.02
+    },
+    {
+        "text": " El problema determina un árbol que va a ser un árbol elemental que va a ser realmente un camino entre esos dos partes.",
+        "start": 1120.02,
+        "end": 1131.02
+    },
+    {
+        "text": " Si hay solo dos vértices, un árbol en un gráfico inducido.",
+        "start": 1131.02,
+        "end": 1136.02
+    },
+    {
+        "text": " Si de solo dos vértices va a determinar un camino.",
+        "start": 1136.02,
+        "end": 1139.02
+    },
+    {
+        "text": " Como ese árbol, le impusimos que fuera costo mínimo, el camino va a ser de costo mínimo.",
+        "start": 1139.02,
+        "end": 1145.02
+    },
+    {
+        "text": " Si hay que estar en el caso de cardinidad de T igual 2, el que está resolviendo es el problema de determinar el costo mínimo entre esos dos partes.",
+        "start": 1145.02,
+        "end": 1159.02
+    },
+    {
+        "text": " Algo que ustedes ya vieron, que hace por ejemplo el el gorimo de distra.",
+        "start": 1159.02,
+        "end": 1165.02
+    },
+    {
+        "text": " Cuando los costos son todos positivos, tenemos esa.",
+        "start": 1165.02,
+        "end": 1171.02
+    },
+    {
+        "text": " Bueno, listos para mostrarles un poco un ejemplo de problema.",
+        "start": 1171.02,
+        "end": 1177.02
+    },
+    {
+        "text": " Que no tiene la solución eficiente, que genera que también te abarca a dos problemas, o sea que tiene como caso especial edor problemas, que sí tienen la solución eficiente.",
+        "start": 1178.02,
+        "end": 1193.02
+    },
+    {
+        "text": " Y esto pasa muchísimo, o sea, en general nosotros vamos a ver más adelante problemas que son.",
+        "start": 1194.02,
+        "end": 1202.02
+    },
+    {
+        "text": " El punto de vista complejada computacional, problemas que tienen, que son cabez más generales, a veces son cabez más simples o una de los como como más simple.",
+        "start": 1202.02,
+        "end": 1214.02
+    },
+    {
+        "text": " Que hacen como una composición combinatorial de su conjunto, que se llama.",
+        "start": 1215.02,
+        "end": 1222.02
+    },
+    {
+        "text": " Hace en estructuras combinatoriales sobre entidades, bueno, ese es que ma de estructuras combinatoriales sobre entidades como el caso este.",
+        "start": 1222.02,
+        "end": 1231.02
+    },
+    {
+        "text": " T es su conjunto de vez, permite generar problemas, permite generar estructuras que abarca en otras estructuras más de mentales, que son como en ese caso, límites de eso.",
+        "start": 1231.02,
+        "end": 1243.02
+    },
+    {
+        "text": " Y todo eso problemas que son mucho más generales, no tienen solución eficiente y como dice nos permiten establecer como una, una gerar aquí en una taxonomía de problemas.",
+        "start": 1243.02,
+        "end": 1256.02
+    },
+    {
+        "text": " ¿Dúg notas preguntas hasta aquí?",
+        "start": 1256.02,
+        "end": 1258.02
+    },
+    {
+        "text": " Bueno, bueno, vamos a seguir.",
+        "start": 1273.02,
+        "end": 1277.02
+    },
+    {
+        "text": " Bueno, vamos a seguir con más definición.",
+        "start": 1278.02,
+        "end": 1283.02
+    },
+    {
+        "text": " ¿Qué vamos a hacer ahora es empezar dentro?",
+        "start": 1283.02,
+        "end": 1294.02
+    },
+    {
+        "text": " Hace una pequeña introducción, alguna categorización de esos problemas que no se ha podido de determinad que tenga para seleccionar eficiente.",
+        "start": 1295.02,
+        "end": 1306.02
+    },
+    {
+        "text": " Todos esos problemas, como el caso de este largo de este, que no se ha podido encontrar que tienen solución eficiente, se lo categorizan una clase.",
+        "start": 1306.02,
+        "end": 1316.02
+    },
+    {
+        "text": " Se llama NpComplete, podemos saber en detalle, porque el hombre donde viva el camisato, lo que es, no los podemos resolver a todos, no podemos determinar si tienen resolución eficiente, pero lo que sí lo que nos lo hago, se da, se está haciendo, se lo he logrado hacer, es bueno, empezar a crear caracterizado.",
+        "start": 1317.02,
+        "end": 1345.02
+    },
+    {
+        "text": " Envistas a futuro, bueno, de poder decidir que no tiene la solución eficiente o que la tiene.",
+        "start": 1346.02,
+        "end": 1353.02
+    },
+    {
+        "text": " Bueno, en esa, busque, en ese proceso, como dice tenemos dos, esas dos alias, si se lograra resolver eficiente a uno de ellos, como lo estamos tocando, categorizando en una clase de equivalencia.",
+        "start": 1357.02,
+        "end": 1370.02
+    },
+    {
+        "text": " Entonces, lo veríamos resolverlo a todos, esas una de las posibles soluciones que tiene esta desafío.",
+        "start": 1371.02,
+        "end": 1379.02
+    },
+    {
+        "text": " La otra es que si se lograra, por el contrario, si se lograra demostrar que alguno de ellos, alguno de esos problemas, no tiene la solución eficiente, entonces ninguno la tendría.",
+        "start": 1380.02,
+        "end": 1391.02
+    },
+    {
+        "text": " Bueno, en la actualidad se trabaja como esta última condición, como la congelatura, que posiblemente sea la verdadera.",
+        "start": 1392.02,
+        "end": 1401.02
+    },
+    {
+        "text": " Sería realmente sorprendente, que fuera el anterior, que se lograra resolver eficiente a uno de ellos.",
+        "start": 1403.02,
+        "end": 1411.02
+    },
+    {
+        "text": " Sería realmente sorprendente, esto se estaba haciendo desde 1960 y la evidencia acumulada desde ese momento hasta ahora, lo que lleva es, a que bueno, cada vez se tenga más este problema más vía que así, como dice empírico, de esperanza,",
+        "start": 1412.02,
+        "end": 1439.02
+    },
+    {
+        "text": " de que la congelatura va a ser que se logre demostrar que no tiene la solución eficiente.",
+        "start": 1440.02,
+        "end": 1445.02
+    },
+    {
+        "text": " Bueno, lo que es lograr demostrar eso es que las resultados son muy difíciles, en algunos de los problemas abiertos que tiene la teoría computacional.",
+        "start": 1446.02,
+        "end": 1453.02
+    },
+    {
+        "text": " Lo que se está haciendo ahora es categorizando los, que está logrando, por ejemplo, decir, bueno, el problema del árbol de Steiner no tiene la solución eficiente, pertenece a uno de ellos.",
+        "start": 1457.02,
+        "end": 1468.02
+    },
+    {
+        "text": " Y si no está, es que la clase NP completo y si no está, o sea, clasificando de esa forma.",
+        "start": 1469.02,
+        "end": 1475.02
+    },
+    {
+        "text": " Bueno, cualquier problema que se hace para el cual se hace lo mismo, o usted trabaja y hagan lo mismo, lo que va a hacer es que nos va a disuadir, de buscar un algoritmo eficiente para él.",
+        "start": 1477.02,
+        "end": 1490.02
+    },
+    {
+        "text": " Y nosotros ya sabemos que parten esa clase, entonces es una clase de problemas que son intratables del punto de vista de tiempo por lino mial.",
+        "start": 1490.02,
+        "end": 1499.02
+    },
+    {
+        "text": " Entonces nos va a disuadir a la busca de un algoritmo eficiente.",
+        "start": 1501.02,
+        "end": 1504.02
+    },
+    {
+        "text": " No obstante, obviamente esos problemas se intentan resolver, se usan muchísimo este mecanismo de aproximación que se deriva en la partir de algoritmo eficiente, de bullísticas,",
+        "start": 1505.02,
+        "end": 1517.02
+    },
+    {
+        "text": " de buques, de subcutivas, de buques, de subcutivas con esquemas de poda, de conseguir cotas.",
+        "start": 1517.02,
+        "end": 1527.02
+    },
+    {
+        "text": " Si consigo una solución que es con algún grado de bontad, lo ideal es tener, bueno, conseguir soluciones de los problemas y sabemos que no son la solución óptima, pero sabemos que está a cierto margen de la solución.",
+        "start": 1528.02,
+        "end": 1546.02
+    },
+    {
+        "text": " Que no va a ser tan nivel de confianza, no va a ser peor que lo esté.",
+        "start": 1547.02,
+        "end": 1552.02
+    },
+    {
+        "text": " Entonces esto ha entado un desarrollo de mecanismos, del que terminan algoritmos de aproximación, los cuales uno puede conseguir esas cotas.",
+        "start": 1553.02,
+        "end": 1563.02
+    },
+    {
+        "text": " Eso está buenísimo, pues sabemos que se consigue una solución que tiene cierto margen, no hay mejor más allá de eso.",
+        "start": 1564.02,
+        "end": 1573.02
+    },
+    {
+        "text": " Bueno, cuando aún la prueba son aún más difícil, este bueno, lo que se termina siendo son eurísticas o de tipo de metabritas, que hay muchísimas,",
+        "start": 1574.02,
+        "end": 1583.02
+    },
+    {
+        "text": " en los cuales uno consigue una solución, pero mayoritariamente no tiene un grado de validez, de bueno, decir esto está tan maligado del óptimo.",
+        "start": 1584.02,
+        "end": 1593.02
+    },
+    {
+        "text": " Bueno, todo depende costo, beneficio de la práctica, cuanto tiempo uno le lleve conseguido la solución para que se iba a hacer solución, si ya una solución,",
+        "start": 1594.02,
+        "end": 1604.02
+    },
+    {
+        "text": " tener al menos una solución en problemas importantes en la vida práctica a veces de más renaval.",
+        "start": 1605.02,
+        "end": 1610.02
+    },
+    {
+        "text": " Bueno, profe, sí.",
+        "start": 1613.02,
+        "end": 1615.02
+    },
+    {
+        "text": " Bueno, en la parte del gorismo ordenamiento vimos que no había mejor algoritmo que el tiempo en el ovene, o sea no había una algoritmo mejor que ese tiempo.",
+        "start": 1616.02,
+        "end": 1628.02
+    },
+    {
+        "text": " No se podría, o sea, no existe, aunque sea, vaga una cota para algunos de estos problemas o no podemos decir, por ejemplo, yo estoy seguro que tal problema no se puede resolver,",
+        "start": 1630.02,
+        "end": 1643.02
+    },
+    {
+        "text": " en menos de tal tiempo, porque por la naturaleza de problema.",
+        "start": 1644.02,
+        "end": 1649.02
+    },
+    {
+        "text": " Sí, vaja, lo que ocurre, estamos hablando del problema y la identancia, eso acorda de ese siempre.",
+        "start": 1657.02,
+        "end": 1660.02
+    },
+    {
+        "text": " Hay cota así, lo que les decía, se puede, hay esquemas de aproximación,",
+        "start": 1661.02,
+        "end": 1665.02
+    },
+    {
+        "text": " que el curso esté normal para tratar en los cuales ustedes tienen ese tipo de cosas.",
+        "start": 1666.02,
+        "end": 1673.02
+    },
+    {
+        "text": " Si yo lograra acotar por algo exponencial, ya estaría como resolviendo, entre comillas, ese gran problema de que si ya estoy diciendo que no lo vas a resolver en tiempo por el noviembre.",
+        "start": 1676.02,
+        "end": 1689.02
+    },
+    {
+        "text": " Pero lo que tenéis es una cota, pero no tenéis este, a ver, cuando uno dice resuelvo el problema lo resuelvo a optimalidad, no tenéis esa garantía.",
+        "start": 1690.02,
+        "end": 1703.02
+    },
+    {
+        "text": " Cuando conseguís la cota, la conseguís en un nivel que no exponencian, pero solo conseguiste la cota.",
+        "start": 1705.02,
+        "end": 1712.02
+    },
+    {
+        "text": " Yo decía resuelvo el problema en el P, o sea, si yo logro acotar por una exponencial, ya me aseguro que no ha ningún polinomio.",
+        "start": 1713.02,
+        "end": 1724.02
+    },
+    {
+        "text": " Pero les queda más que el esquema estar malo para que vos conseguís la solución, vos obtener la solución.",
+        "start": 1726.02,
+        "end": 1735.02
+    },
+    {
+        "text": " No está pensado para la cota, todo es sobre la solución del problema, toda la teoría está armada, bueno, esto tiene la solución suficiente, ¿no?",
+        "start": 1736.02,
+        "end": 1749.02
+    },
+    {
+        "text": " Cuando símos tiene la solución suficiente, que se resolvió el problema a optimalidad.",
+        "start": 1749.02,
+        "end": 1754.02
+    },
+    {
+        "text": " No aproximadamente, esa es la idea.",
+        "start": 1756.02,
+        "end": 1758.02
+    },
+    {
+        "text": " Bien, un detalle con lo de la biólogo de comparación de mencionantes.",
+        "start": 1759.02,
+        "end": 1766.02
+    },
+    {
+        "text": " La cota que mencionaste es válida para los biólogos de comparación, los biólogos de ordenamiento que hacen comparación.",
+        "start": 1766.02,
+        "end": 1775.02
+    },
+    {
+        "text": " Porque hay otros biólogos de ordenamiento, cuando uno trabaja sobre un dominio tiene cierto acotamiento, la cota es mucho menor.",
+        "start": 1776.02,
+        "end": 1786.02
+    },
+    {
+        "text": " No sé si llegaron a ver ordenamiento por cubetas o por...",
+        "start": 1786.02,
+        "end": 1791.02
+    },
+    {
+        "text": " Sí, Baguette Sort.",
+        "start": 1791.02,
+        "end": 1793.02
+    },
+    {
+        "text": " Y el Rodic Sort, no.",
+        "start": 1793.02,
+        "end": 1795.02
+    },
+    {
+        "text": " Ah, ese no me acuerdo.",
+        "start": 1795.02,
+        "end": 1797.02
+    },
+    {
+        "text": " En teresa tema, busca Rodic Sort que es realmente sorprendente también. Baguette Sort está bueno, pero Rodic Sort es más interesante el Torre.",
+        "start": 1798.02,
+        "end": 1807.02
+    },
+    {
+        "text": " Cuando se divide una entidad, uno la puede cortar en el psicográficamente, número, que se las da una palabra, o sea, porque un objeto que uno lo puede manejar en el psicográficamente con orden del psicográfico y lo puede segmentar en las dimensiones de este orden.",
+        "start": 1807.02,
+        "end": 1825.02
+    },
+    {
+        "text": " Y bueno, hay una forma ordenarlo también que es proporcional de recantidad de elementos.",
+        "start": 1826.02,
+        "end": 1832.02
+    },
+    {
+        "text": " Está muy interesante el Rodic Sort de realmente está bueno.",
+        "start": 1832.02,
+        "end": 1837.02
+    },
+    {
+        "text": " Llegos, gracias.",
+        "start": 1837.02,
+        "end": 1839.02
+    },
+    {
+        "text": " Bueno, seguimos con esto.",
+        "start": 1839.02,
+        "end": 1841.02
+    },
+    {
+        "text": " La herramienta fundamental para categorizar esto, para categorizar los problemas en esta clase Np completo, el problema es difícil, es lo que se denomina reducción en tiempo con el nominal.",
+        "start": 1841.02,
+        "end": 1854.02
+    },
+    {
+        "text": " Bueno, vamos a ver un poquito que es.",
+        "start": 1854.02,
+        "end": 1856.02
+    },
+    {
+        "text": " Lo que se hace es comparar los problemas en el grado dificultad.",
+        "start": 1856.02,
+        "end": 1860.02
+    },
+    {
+        "text": " Vamos a ir desde una presentación, informar hasta que vamos a empezar a formalizarla aquí.",
+        "start": 1860.02,
+        "end": 1866.02
+    },
+    {
+        "text": " Para simplicar los problemas, entonces, según el grado dificultad, utilizamos un decorismo de comparación que es tan simple como esto.",
+        "start": 1866.02,
+        "end": 1873.02
+    },
+    {
+        "text": " Tenemos dos problemas y decimos, el problema X es al menos tan difícil como el problema Y.",
+        "start": 1873.02,
+        "end": 1880.02
+    },
+    {
+        "text": " Es como que.",
+        "start": 1880.02,
+        "end": 1882.02
+    },
+    {
+        "text": " En una forma, los tenemos acotados en dificultad.",
+        "start": 1882.02,
+        "end": 1889.02
+    },
+    {
+        "text": " Bueno, la noción de reducción es una noción de como dice de comparación, no es exactamente la.",
+        "start": 1889.02,
+        "end": 1899.02
+    },
+    {
+        "text": " Es similar a la de transformación que vimos, pero la vamos, está un poco más especializada.",
+        "start": 1899.02,
+        "end": 1904.02
+    },
+    {
+        "text": " Decimos que un problema X es al menos tan difícil como otro problema Y es la definición que tenemos antes.",
+        "start": 1904.02,
+        "end": 1912.02
+    },
+    {
+        "text": " Lo es esa definición, la vamos a argumentar diciendo que si se dispone de una caja negra para resolver X, entonces se puede resolver Y.",
+        "start": 1912.02,
+        "end": 1924.02
+    },
+    {
+        "text": " El problema que es que no solo el grado dificultad, sino que dado que disponemos de una herramienta para resolver el problema que es al menos tan difícil de forma de romántica, cerrada, lo único que los intereses es su interfaz de entrada y de salida.",
+        "start": 1924.02,
+        "end": 1941.02
+    },
+    {
+        "text": " Entonces, vamos a poder resolver el problema Y.",
+        "start": 1941.02,
+        "end": 1945.02
+    },
+    {
+        "text": " El problema que es que no se toca ajaní gracias es un concepto que se visa muchísimo en ingeniería, en esquemas de.",
+        "start": 1945.02,
+        "end": 1951.02
+    },
+    {
+        "text": " En sistemas y es como un dispositivo en el que uno no ni.",
+        "start": 1951.02,
+        "end": 1957.02
+    },
+    {
+        "text": " Sabes que hay que resolver algo, no lo interesa en joditación y como se hacen, pero sí lo que le interesa es cómo se representan la entrada y la salida.",
+        "start": 1957.02,
+        "end": 1967.02
+    },
+    {
+        "text": " Y bueno, este es el mecanismo, es uno del mecanismo fundamental de esto, más adelante vamos a abrir el otro.",
+        "start": 1967.02,
+        "end": 1974.02
+    },
+    {
+        "text": " Que lo que nos interesa que ese proceso sea además en tiempo polinomial, que es que es el mecanismo de reducción de transformación de un problema de otro,",
+        "start": 1974.02,
+        "end": 1987.02
+    },
+    {
+        "text": " utilizar y conocimiento de cómo se retornan el problema para la razón del otro, que se pueda hacer en tiempo polinomial.",
+        "start": 1987.02,
+        "end": 1993.02
+    },
+    {
+        "text": " Entonces, para ello tenemos una categorización de este esquema que lo vamos a condicionar a que eso ocurra en tiempo polinomial.",
+        "start": 1993.02,
+        "end": 2003.02
+    },
+    {
+        "text": " Entonces decimos si cualquier instancia del problema Y puede ser resuelta, realizando una cantidad polinomial de pasos,",
+        "start": 2003.02,
+        "end": 2013.02
+    },
+    {
+        "text": " más lo que hacemos con eso es ajustarle su representación para que lo podamos resolver como un problema en la caja negra de X.",
+        "start": 2013.02,
+        "end": 2029.02
+    },
+    {
+        "text": " Pero ahora la cantidad de invocaciones de la caja negra no tiene porque ser una puede ser hasta un número de polinomial de eso.",
+        "start": 2029.02,
+        "end": 2037.02
+    },
+    {
+        "text": " Como una edifición que no se lo acota, el tiempo polinomial pero en la transformación de lo que es el problema Y, en el problema X, en el entrada del problema X,",
+        "start": 2037.02,
+        "end": 2050.02
+    },
+    {
+        "text": " pero que si no además habilitas, aquella halla un número de polinomial de invocaciones a la caja negra que resolva.",
+        "start": 2050.02,
+        "end": 2061.02
+    },
+    {
+        "text": " Y este es el momento de las herramientas fundamentales aquí.",
+        "start": 2061.02,
+        "end": 2066.02
+    },
+    {
+        "text": " Y vamos a decir que eso ocurre con un siguiente frase, decimos que Y, que el problema Y es reducible en tiempo polinomial,",
+        "start": 2066.02,
+        "end": 2076.02
+    },
+    {
+        "text": " al problema X, se ocurre todo eso y tenemos una notación averviada que le vamos a usar de orden adelante, que es Y,",
+        "start": 2076.02,
+        "end": 2085.02
+    },
+    {
+        "text": " menor igual, P-machúscula subindicen X, ¿cuál es lo que estamos diciendo? Y es reducible en tiempo polinomial AX.",
+        "start": 2085.02,
+        "end": 2097.02
+    },
+    {
+        "text": " Sabemos que el problema X es al menos tan difícil como el problema Y, tenemos el mecanismo de resolución del problema X, transformamos la entrada de alguna forma,",
+        "start": 2098.02,
+        "end": 2110.02
+    },
+    {
+        "text": " y representamos con un costo polinomial los datos del problema Y para que sea una entrada del problema X, invocamos a los sumos,",
+        "start": 2111.02,
+        "end": 2122.02
+    },
+    {
+        "text": " polinomialmente la caja negra que resolva de X y con eso conseguimos resolver y no, es que...",
+        "start": 2122.02,
+        "end": 2130.02
+    },
+    {
+        "text": " Pero acá nosotros no lo que nos importa es la comparación, es que bueno saber que Y es reducible ponía realmente en X, es lo relevante para nosotros.",
+        "start": 2131.02,
+        "end": 2142.02
+    },
+    {
+        "text": " Duras preguntas hasta acá.",
+        "start": 2142.02,
+        "end": 2147.02
+    },
+    {
+        "text": " Bueno, entonces tenemos una primera propiedad que supongan que tenemos dos problemas, el problema Y sabemos que es reducible ponía realmente en el problema X,",
+        "start": 2149.02,
+        "end": 2159.02
+    },
+    {
+        "text": " entonces si el problema X se puede resolver ponía normalmente, sabemos que se puede resolver en tiempo polinomial, entonces el problema Y se puede resolver en tiempo polinomial.",
+        "start": 2159.02,
+        "end": 2171.02
+    },
+    {
+        "text": " Y esto es debido directamente a la edifición, ¿no? La reducción polinomial podemos ver este.",
+        "start": 2171.02,
+        "end": 2182.02
+    },
+    {
+        "text": " La base de la demostración está en base que bueno la definición de la reducción polinomial del X contiene, bueno, si ya, X se puede resolver polinomialmente todo es polinomial, ¿no?",
+        "start": 2190.02,
+        "end": 2202.02
+    },
+    {
+        "text": " Y va a resolver el simple polinomial.",
+        "start": 2202.02,
+        "end": 2206.02
+    },
+    {
+        "text": " La transformación de cuándo tiene la polinomial, invocábamos un número de ese polinomial, la caja Y, pero como ahora sabemos que el X se puede resolver polinomialmente, entonces y se va a resolver polinomialmente.",
+        "start": 2207.02,
+        "end": 2222.02
+    },
+    {
+        "text": " Bueno, como un ejemplo básico de este es el problema que vimos en la clase interior, es el problema de parejamiento y partid.",
+        "start": 2223.02,
+        "end": 2233.02
+    },
+    {
+        "text": " ¿Cómo se puede aplicar esta definición a ese problema?",
+        "start": 2234.02,
+        "end": 2238.02
+    },
+    {
+        "text": " Esta proposición.",
+        "start": 2247.02,
+        "end": 2250.02
+    },
+    {
+        "text": " Lo que hicimos que fue una reducción polinomial, el problema del máximo flujo.",
+        "start": 2264.02,
+        "end": 2273.02
+    },
+    {
+        "text": " Ahí está. Nosotros hicimos, ahí va. En los hechos hicimos esa.",
+        "start": 2273.02,
+        "end": 2279.02
+    },
+    {
+        "text": " Ahora vamos el problema de parejamiento y partito, transformamos su definición de distancia como una entrada del problema de flujo máximo y invocamos un único vez el mecanismo de resolución del problema flujo máximo.",
+        "start": 2279.02,
+        "end": 2296.02
+    },
+    {
+        "text": " Entonces tenemos una primera transformación que el polinomial, vean que le estamos aplicando a problemas que sabemos que tienen resolución eficiente.",
+        "start": 2297.02,
+        "end": 2308.02
+    },
+    {
+        "text": " O sea, la propiedad, el esquema de reducción polinomial, lo estamos aplicando ahí, no.",
+        "start": 2309.02,
+        "end": 2319.02
+    },
+    {
+        "text": " Para esta proposición existe su contra-resí, pero que es bueno, da las mismas condiciones.",
+        "start": 2320.02,
+        "end": 2331.02
+    },
+    {
+        "text": " Sabemos, conocemos un problema ahí que se puede resolver polinomialmente en un problema X.",
+        "start": 2331.02,
+        "end": 2336.02
+    },
+    {
+        "text": " Entonces decimos que si y no se puede resolver en tiempo polinomial, entonces X no se puede resolver en tiempo polinomial.",
+        "start": 2336.02,
+        "end": 2345.02
+    },
+    {
+        "text": " Bueno, es el mismo esquema de resolución, pero ahora, el plantearlo así, lo disponemos para categorizar a los problemas que no tienen resolución eficiente.",
+        "start": 2346.02,
+        "end": 2365.02
+    },
+    {
+        "text": " O sea, decimos que un problema, por ejemplo, es difícil de resolver aquel que tiene resolución eficiente.",
+        "start": 2366.02,
+        "end": 2375.02
+    },
+    {
+        "text": " Entonces, si tenemos un problema ahí que sabemos que es difícil y logramos demostrar que ese problema y se resume, se reduce por el tiempo polinomial al problema X, entonces X debe ser difícil.",
+        "start": 2375.02,
+        "end": 2393.02
+    },
+    {
+        "text": " O sea, el mismo mecanismo nos permite reducir de alguna forma, comparar problemas que sabemos que tienen resolución eficiente y también categorizar el problema que sabemos que no tienen resolución eficiente.",
+        "start": 2394.02,
+        "end": 2409.02
+    },
+    {
+        "text": " Mucho es, o la tiene, o la tiene, que se resolvio en tiempo polinomial o no se resolvio.",
+        "start": 2410.02,
+        "end": 2417.02
+    },
+    {
+        "text": " Si.",
+        "start": 2418.02,
+        "end": 2419.02
+    },
+    {
+        "text": " Si.",
+        "start": 2420.02,
+        "end": 2421.02
+    },
+    {
+        "text": " Duos hasta acá.",
+        "start": 2435.02,
+        "end": 2437.02
+    },
+    {
+        "text": " Entonces, vamos a ver un ejemplo de uno de esos problemas que no tienen resolución eficiente con cuál vamos a poder, cómo usar la propiedad de forma de categorizar entre ellos.",
+        "start": 2438.02,
+        "end": 2453.02
+    },
+    {
+        "text": " El primer problema que vamos a ver se denomina problema de conjunto independiente.",
+        "start": 2453.02,
+        "end": 2457.02
+    },
+    {
+        "text": " Le vamos a llamar independencia, no lo vamos a traducir porque en general no les hemos traducido en la mayoría del material que hay en el curso en los ejercicios, tenemos mantenido en nombre de inglés por eso, se lo mantenemos aquí.",
+        "start": 2458.02,
+        "end": 2473.02
+    },
+    {
+        "text": " Bueno, el problema independencia es un problema de optimización, este estado sobre un grafo que partices E y el Istaje se dice que un subconjunto de los guardes del grafo denominado B.",
+        "start": 2474.02,
+        "end": 2489.02
+    },
+    {
+        "text": " Es independiente, sin ningún par de verdes D.S. comparten a R.",
+        "start": 2489.02,
+        "end": 2495.02
+    },
+    {
+        "text": " Entonces, lo que requiere el problema es encontrar el conjunto independiente más gran.",
+        "start": 2495.02,
+        "end": 2502.02
+    },
+    {
+        "text": " Bueno, vamos a hacer un pequeño ejemplo y tenemos.",
+        "start": 2503.02,
+        "end": 2512.02
+    },
+    {
+        "text": " Un grafo de siete verdes.",
+        "start": 2527.02,
+        "end": 2530.02
+    },
+    {
+        "text": " Bueno, en los objetivos de determinar verdes es que no comparten a listas y determinar el conjunto más grande de ellos.",
+        "start": 2534.02,
+        "end": 2548.02
+    },
+    {
+        "text": " Bueno, le dejas que el criterio usara.",
+        "start": 2549.02,
+        "end": 2554.02
+    },
+    {
+        "text": " Aquí ya te pienso un poco el problema.",
+        "start": 2554.02,
+        "end": 2559.02
+    },
+    {
+        "text": " No me va a dar fácil este problema visualizarlo como encontrar clics en el grafo complementario.",
+        "start": 2559.02,
+        "end": 2579.02
+    },
+    {
+        "text": " También, bueno, lo vamos a ver visualmente digo para como uno encontrar porque me va a ser más visual para un pequeño grafo completo que un independencia.",
+        "start": 2579.02,
+        "end": 2597.02
+    },
+    {
+        "text": " Sí, sí, sí.",
+        "start": 2597.02,
+        "end": 2605.02
+    },
+    {
+        "text": " Pero le dejas, vamos a ver el.",
+        "start": 2605.02,
+        "end": 2610.02
+    },
+    {
+        "text": " Además, un problema muy vinculado.",
+        "start": 2610.02,
+        "end": 2620.02
+    },
+    {
+        "text": " Bueno, sobre él, si ustedes miran rápidamente este grafo, uno, por ejemplo, una cosa que se puede hacer.",
+        "start": 2621.02,
+        "end": 2633.02
+    },
+    {
+        "text": " Bueno, este verde y seis lados podría ser uno, un elemento, el cuatro y el seis podrían ser otros elementos.",
+        "start": 2633.02,
+        "end": 2645.02
+    },
+    {
+        "text": " Están más ahí lados.",
+        "start": 2645.02,
+        "end": 2648.02
+    },
+    {
+        "text": " Si elegimos esos tres, el bártice uno podría ser otro elemento.",
+        "start": 2648.02,
+        "end": 2659.02
+    },
+    {
+        "text": " Pero no hay una forma de no hay un criterio de ordenado o de construir el de mecanismo de los mecanismos que hemos visto previamente.",
+        "start": 2659.02,
+        "end": 2668.02
+    },
+    {
+        "text": " Bueno, cómo dividir el problema, cómo encararlo como sus problemas.",
+        "start": 2668.02,
+        "end": 2675.02
+    },
+    {
+        "text": " Una de las técnicas anteriores funciona sobre este problema.",
+        "start": 2675.02,
+        "end": 2680.02
+    },
+    {
+        "text": " Entonces, un conjunto, un independencia, por ejemplo, puede abarcar el bártice uno que va a cubrir como él, el va a cubrir esta lista.",
+        "start": 2680.02,
+        "end": 2701.02
+    },
+    {
+        "text": " Y esta.",
+        "start": 2701.02,
+        "end": 2704.02
+    },
+    {
+        "text": " Entonces, si te ponemos acá el deshieste disco, uno, uno, otro podría hacer el bártice uno que va a cubrir esta lista.",
+        "start": 2704.02,
+        "end": 2715.02
+    },
+    {
+        "text": " Nos van quedando pocos si ponemos el siete cub restas.",
+        "start": 2715.02,
+        "end": 2722.02
+    },
+    {
+        "text": " Y tenemos un independencia de tamaño tres, no.",
+        "start": 2722.02,
+        "end": 2725.02
+    },
+    {
+        "text": " Ahí ya.",
+        "start": 2725.02,
+        "end": 2727.02
+    },
+    {
+        "text": " El treya no pueden ser, el cuatro no pueden ser, o están cubiertas las otras.",
+        "start": 2727.02,
+        "end": 2733.02
+    },
+    {
+        "text": " Entonces, uno más grande va a cubrir.",
+        "start": 2733.02,
+        "end": 2738.02
+    },
+    {
+        "text": " Si podemos ir cuatro acá, cubre esas aristas.",
+        "start": 2738.02,
+        "end": 2744.02
+    },
+    {
+        "text": " Y el otro que queda, posiblemente que cubra todas estas aristas.",
+        "start": 2744.02,
+        "end": 2750.02
+    },
+    {
+        "text": " Seguimos seis.",
+        "start": 2750.02,
+        "end": 2753.02
+    },
+    {
+        "text": " Y bueno.",
+        "start": 2761.02,
+        "end": 2764.02
+    },
+    {
+        "text": " No habría otro más grande, no? Y cuatro.",
+        "start": 2767.02,
+        "end": 2771.02
+    },
+    {
+        "text": " Bueno, como vimos en la clase pasada, toda la teoría está, toda la teoría se desarrolla.",
+        "start": 2771.02,
+        "end": 2786.02
+    },
+    {
+        "text": " No para problemas de optimización o de factibilidad, sino que para problemas de reconocimiento decisión.",
+        "start": 2786.02,
+        "end": 2795.02
+    },
+    {
+        "text": " Entonces, lo que hay que hacer es ajustar este problema para compartirlo en uno de reconocimiento a decisión.",
+        "start": 2795.02,
+        "end": 2806.02
+    },
+    {
+        "text": " Y bueno, el problema, la formulación del problema con un problema de reconocimiento, lo que va a ser,",
+        "start": 2806.02,
+        "end": 2815.02
+    },
+    {
+        "text": " empezamos un dato más, que es un número.",
+        "start": 2815.02,
+        "end": 2821.02
+    },
+    {
+        "text": " Va a ser una medida en la cardinidad del conjunto S.",
+        "start": 2821.02,
+        "end": 2826.02
+    },
+    {
+        "text": " Entonces, el problema lo podemos plantear como he dado este grafo, la grafo G y un número K.",
+        "start": 2826.02,
+        "end": 2835.02
+    },
+    {
+        "text": " Nos preguntamos si el grafo contiene un conjunto independiente de tamaño al menos K.",
+        "start": 2835.02,
+        "end": 2843.02
+    },
+    {
+        "text": " O la costa.",
+        "start": 2843.02,
+        "end": 2847.02
+    },
+    {
+        "text": " Bueno, si tenemos una respuesta así, estamos resolviendo el problema de reconocimiento.",
+        "start": 2848.02,
+        "end": 2856.02
+    },
+    {
+        "text": " Como una duda, pregunta hasta acá.",
+        "start": 2865.02,
+        "end": 2877.02
+    },
+    {
+        "text": " Bueno, muy parecido a este problema.",
+        "start": 2877.02,
+        "end": 2882.02
+    },
+    {
+        "text": " Si este otro problema.",
+        "start": 2882.02,
+        "end": 2886.02
+    },
+    {
+        "text": " Que se denomina.",
+        "start": 2886.02,
+        "end": 2894.02
+    },
+    {
+        "text": " De cobertura de Bartis.",
+        "start": 2894.02,
+        "end": 2900.02
+    },
+    {
+        "text": " Cobertura por Bartis.",
+        "start": 2900.02,
+        "end": 2903.02
+    },
+    {
+        "text": " También lo vamos a llamar en inglés el problema es Bartis Cobra y como problema optimización, está dado un grafo G.",
+        "start": 2903.02,
+        "end": 2912.02
+    },
+    {
+        "text": " Con un conjunto de Bartis B, Aristas E, se dice que un subconjunto de los Bartis Derminado S es una cobertura.",
+        "start": 2912.02,
+        "end": 2923.02
+    },
+    {
+        "text": " Al menos de las Aristas, pero por Bartis S, si cada Aristas tiene al menos un Bartis N.",
+        "start": 2923.02,
+        "end": 2937.02
+    },
+    {
+        "text": " Si cada Aristas tiene al menos un Bartis N.",
+        "start": 2937.02,
+        "end": 2941.02
+    },
+    {
+        "text": " Bueno, sí, el problema, lo que requiere es encontrar el conjunto S de mayor cardinal, perdón, más pequeño, el conjunto de cobertura más pequena.",
+        "start": 2941.02,
+        "end": 2950.02
+    },
+    {
+        "text": " Bueno, si estamos de nuevo en mismo ejemplo anterior.",
+        "start": 2950.02,
+        "end": 2968.02
+    },
+    {
+        "text": " Bueno, ahora pasamos a un problema, quiero que tenemos que cubrir, elegir Bartis de forma de cubrir.",
+        "start": 2998.02,
+        "end": 3018.02
+    },
+    {
+        "text": " Aristas, pero con el conjunto más pequeño de Bartis S que hagan esto.",
+        "start": 3019.02,
+        "end": 3035.02
+    },
+    {
+        "text": " Pues arra el 3, el 5 y después pues arra cualquiera entre el 4, 6, 7.",
+        "start": 3036.02,
+        "end": 3044.02
+    },
+    {
+        "text": " ¿Por qué agarraríamos entre el 5? ¿Pueden tener mayor grado de incidencia?",
+        "start": 3044.02,
+        "end": 3053.02
+    },
+    {
+        "text": " Es un buen criterio, ¿no? ¿Qué les piden los demás?",
+        "start": 3054.02,
+        "end": 3060.02
+    },
+    {
+        "text": " Si nosotros vamos, los Bartis que tengan mayor grado para cubrir más Aristas, es una purística, como dice que podíamos intentar.",
+        "start": 3060.02,
+        "end": 3076.02
+    },
+    {
+        "text": " Bueno, en este caso va a funcionar.",
+        "start": 3076.02,
+        "end": 3083.02
+    },
+    {
+        "text": " Por ejemplo, tomamos el Bartis C3 que tiene grado 3 y son cubres estas 3 Aristas.",
+        "start": 3083.02,
+        "end": 3094.02
+    },
+    {
+        "text": " Ahora vamos a cubrir el 4, 7 y 6, 7 para cubrir uno más.",
+        "start": 3094.02,
+        "end": 3120.02
+    },
+    {
+        "text": " Y se puede demostrar por ejemplo como una cota.",
+        "start": 3125.02,
+        "end": 3131.02
+    },
+    {
+        "text": " Yo me fijo en los Bartis, si ve el que tiene mayor incidencia, entonces sé que por lo menos la mejor solución va a ser la edición entera.",
+        "start": 3132.02,
+        "end": 3145.02
+    },
+    {
+        "text": " Si, por ejemplo, yo tengo 1, 2, 3, 4, 5, 6, 7, 8 Aristas y el grado máximo de incidencia 3.",
+        "start": 3146.02,
+        "end": 3157.02
+    },
+    {
+        "text": " Entonces ya sabes que tu mejor solución va a tener 3 por lo menos.",
+        "start": 3157.02,
+        "end": 3162.02
+    },
+    {
+        "text": " Si, se puede hacer con el carismo de aproximación así, pero vamos a ir más despacio por el que más hay que compadridos y no lo van a decir.",
+        "start": 3162.02,
+        "end": 3174.02
+    },
+    {
+        "text": " Bueno, aquí la alternativa que nos queda directa es si ponemos el 7, entra.",
+        "start": 3175.02,
+        "end": 3183.02
+    },
+    {
+        "text": " Cubrimos todo.",
+        "start": 3183.02,
+        "end": 3184.02
+    },
+    {
+        "text": " Ahí que nos falta, cubrir estas 2.",
+        "start": 3184.02,
+        "end": 3187.02
+    },
+    {
+        "text": " Y este sería el más pequeño.",
+        "start": 3195.02,
+        "end": 3197.02
+    },
+    {
+        "text": " Podríamos haberse podido elegir el 4, estamos obligados a elegir el 6 y además tendría que arreglar el 4.",
+        "start": 3197.02,
+        "end": 3206.02
+    },
+    {
+        "text": " Bueno, nuevamente, muy similar al problema anterior.",
+        "start": 3207.02,
+        "end": 3220.02
+    },
+    {
+        "text": " Nosotros lo que vamos a usar es una urística, si bueno me quedo con los grados mayores, pero eso no va a funcionar.",
+        "start": 3221.02,
+        "end": 3231.02
+    },
+    {
+        "text": " No es un algoritmo habido que vaya a resolver el problema.",
+        "start": 3231.02,
+        "end": 3242.02
+    },
+    {
+        "text": " Si lo estamos usando en forma como de urística o que si bueno, aproximadamente intentamos resolver el problema así.",
+        "start": 3243.02,
+        "end": 3250.02
+    },
+    {
+        "text": " Este nuevamente, este problema tampoco tiene la solución eficiente.",
+        "start": 3250.02,
+        "end": 3260.02
+    },
+    {
+        "text": " Y bueno, para manejarlo dentro del esquema, de reducción en tiempo polinomía y que vamos a usar, también hay que convertirlo en problemas de reconocimiento de decisión.",
+        "start": 3260.02,
+        "end": 3274.02
+    },
+    {
+        "text": " Y muy similar a lo que hicimos con independencia en sets, lo que vamos a dar es un número K, de que mide la cantidad de elementos que tiene el conjunto S, contra el problema que queremos comparar.",
+        "start": 3275.02,
+        "end": 3293.02
+    },
+    {
+        "text": " Entonces, la pregunta que no, el problema se va a plantear es como la pregunta, contiene el grafogé una cobertura por verdices de tamaño a lo sumo K.",
+        "start": 3294.02,
+        "end": 3303.02
+    },
+    {
+        "text": " Bueno, ese es el problema de reconocimiento que nos planteamos realmente en la tercera.",
+        "start": 3304.02,
+        "end": 3313.02
+    },
+    {
+        "text": " Bueno, tú las preguntas del problema este.",
+        "start": 3313.02,
+        "end": 3317.02
+    },
+    {
+        "text": " Una, una basueta.",
+        "start": 3318.02,
+        "end": 3328.02
+    },
+    {
+        "text": " Sí, voy a tener una solución por un código suficiente.",
+        "start": 3328.02,
+        "end": 3334.02
+    },
+    {
+        "text": " Entonces, nos limitamos a preguntarse de una solución, con este caso una cobertura para un determinado tamaño, además.",
+        "start": 3334.02,
+        "end": 3343.02
+    },
+    {
+        "text": " Eso es lo que sería nuestra solución a esto.",
+        "start": 3344.02,
+        "end": 3346.02
+    },
+    {
+        "text": " El problema es este, conseguir la cobertura de aristas por verdices.",
+        "start": 3346.02,
+        "end": 3354.02
+    },
+    {
+        "text": " Yo lo hago en fase así porque el nombre del problema yo he ido muy corto y dice cobertura, lo que estamos realmente cubriendo son las aristas.",
+        "start": 3354.02,
+        "end": 3362.02
+    },
+    {
+        "text": " Porque tenemos que alcanzar a todas.",
+        "start": 3362.02,
+        "end": 3367.02
+    },
+    {
+        "text": " Sí, sí, sí.",
+        "start": 3368.02,
+        "end": 3369.02
+    },
+    {
+        "text": " El problema es un entendido.",
+        "start": 3369.02,
+        "end": 3370.02
+    },
+    {
+        "text": " Preguntos.",
+        "start": 3370.02,
+        "end": 3371.02
+    },
+    {
+        "text": " Sí.",
+        "start": 3371.02,
+        "end": 3372.02
+    },
+    {
+        "text": " No hacer, en la tercera, el algoritmo es ficiente.",
+        "start": 3372.02,
+        "end": 3376.02
+    },
+    {
+        "text": " Les limitamos a tratar de contestar si existe una solución con lo sumo K.",
+        "start": 3376.02,
+        "end": 3382.02
+    },
+    {
+        "text": " Elimentos.",
+        "start": 3382.02,
+        "end": 3383.02
+    },
+    {
+        "text": " Cáberte.",
+        "start": 3383.02,
+        "end": 3384.02
+    },
+    {
+        "text": " Son dos formas de ver el problema.",
+        "start": 3384.02,
+        "end": 3385.02
+    },
+    {
+        "text": " Recuerdan la que nos anterior vimos.",
+        "start": 3385.02,
+        "end": 3387.02
+    },
+    {
+        "text": " El problema es como ver el problema de optimización.",
+        "start": 3387.02,
+        "end": 3390.02
+    },
+    {
+        "text": " ¿Qué pasa?",
+        "start": 3391.02,
+        "end": 3392.02
+    },
+    {
+        "text": " Toda la teoría de complejidad computacional fue desarrollada a partir de problemas de decisión o recorresimiento.",
+        "start": 3392.02,
+        "end": 3400.02
+    },
+    {
+        "text": " Entonces, lo vemos a ver la clase que viene.",
+        "start": 3400.02,
+        "end": 3404.02
+    },
+    {
+        "text": " Pregunamos un mecanismo que nos certifica las soluciones y todo eso está armado solo para problemas de decisión.",
+        "start": 3404.02,
+        "end": 3416.02
+    },
+    {
+        "text": " Estamos en artificial.",
+        "start": 3417.02,
+        "end": 3419.02
+    },
+    {
+        "text": " El de la edificio de una transformación más.",
+        "start": 3419.02,
+        "end": 3423.02
+    },
+    {
+        "text": " Los problemas estos que fueron definidos como problemas son una naturaleza es un problema de optimización.",
+        "start": 3423.02,
+        "end": 3430.02
+    },
+    {
+        "text": " Los transformamos en un problema de reconocimiento que tiene dificultad equivalente.",
+        "start": 3430.02,
+        "end": 3435.02
+    },
+    {
+        "text": " Es nada más que eso.",
+        "start": 3435.02,
+        "end": 3436.02
+    },
+    {
+        "text": " Son los mismos problemas.",
+        "start": 3436.02,
+        "end": 3438.02
+    },
+    {
+        "text": " Unir unísimo es una transformación para llevarlos a poder tener el mecanismo de comparación.",
+        "start": 3438.02,
+        "end": 3445.02
+    },
+    {
+        "text": " Tiene que nos exigen la teoría.",
+        "start": 3446.02,
+        "end": 3448.02
+    },
+    {
+        "text": " Como medio forzado, si querés, desde el punto de vista.",
+        "start": 3448.02,
+        "end": 3451.02
+    },
+    {
+        "text": " Toda la teoría se armó en base a problemas de reconocimiento.",
+        "start": 3451.02,
+        "end": 3454.02
+    },
+    {
+        "text": " Esa pregunta.",
+        "start": 3454.02,
+        "end": 3457.02
+    },
+    {
+        "text": " Sí, es que sí.",
+        "start": 3457.02,
+        "end": 3459.02
+    },
+    {
+        "text": " Son el mismo problema del punto de vista de la equivalencia de dificultad de la soluciones.",
+        "start": 3459.02,
+        "end": 3465.02
+    },
+    {
+        "text": " Poder hacer elegir una cota.",
+        "start": 3465.02,
+        "end": 3468.02
+    },
+    {
+        "text": " Poder hacer el problema de comparación.",
+        "start": 3468.02,
+        "end": 3471.02
+    },
+    {
+        "text": " Tiene el punto de vista del grado de dificultad que nos interesa a nosotros.",
+        "start": 3471.02,
+        "end": 3474.02
+    },
+    {
+        "text": " Teórico.",
+        "start": 3474.02,
+        "end": 3475.02
+    },
+    {
+        "text": " La misma.",
+        "start": 3475.02,
+        "end": 3476.02
+    },
+    {
+        "text": " Es el mismo concept.",
+        "start": 3476.02,
+        "end": 3477.02
+    },
+    {
+        "text": " Bien.",
+        "start": 3477.02,
+        "end": 3480.02
+    },
+    {
+        "text": " Gracias.",
+        "start": 3480.02,
+        "end": 3482.02
+    },
+    {
+        "text": " Bueno, ¿qué ocurre?",
+        "start": 3482.02,
+        "end": 3487.02
+    },
+    {
+        "text": " Estos dos problemas.",
+        "start": 3487.02,
+        "end": 3489.02
+    },
+    {
+        "text": " Bueno, este tampoco se conoce que tenga tiempo con ilumida.",
+        "start": 3489.02,
+        "end": 3495.02
+    },
+    {
+        "text": " Están vinculados fortemente.",
+        "start": 3495.02,
+        "end": 3497.02
+    },
+    {
+        "text": " Y parte de lo que había planteado el compañero antes, que podemos después partir de ello.",
+        "start": 3497.02,
+        "end": 3501.02
+    },
+    {
+        "text": " Acer más desarrollo.",
+        "start": 3501.02,
+        "end": 3504.02
+    },
+    {
+        "text": " Dado un graf.",
+        "start": 3504.02,
+        "end": 3507.02
+    },
+    {
+        "text": " Y ese es un conjunto independiente.",
+        "start": 3507.02,
+        "end": 3513.02
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3513.02,
+        "end": 3514.02
+    },
+    {
+        "text": " ¿Cómo lo definimos para el problema de independencia en set?",
+        "start": 3514.02,
+        "end": 3518.02
+    },
+    {
+        "text": " Sí, sólo sí.",
+        "start": 3518.02,
+        "end": 3520.02
+    },
+    {
+        "text": " Su complemento.",
+        "start": 3520.02,
+        "end": 3522.02
+    },
+    {
+        "text": " Bien, menos ese.",
+        "start": 3523.02,
+        "end": 3525.02
+    },
+    {
+        "text": " En términos de barteses.",
+        "start": 3525.02,
+        "end": 3527.02
+    },
+    {
+        "text": " Conjunto, bien, estacamos todos los barteses.",
+        "start": 3527.02,
+        "end": 3529.02
+    },
+    {
+        "text": " Es.",
+        "start": 3529.02,
+        "end": 3531.02
+    },
+    {
+        "text": " Una cobertura de barteses.",
+        "start": 3531.02,
+        "end": 3533.02
+    },
+    {
+        "text": " Definida para partir del problema de.",
+        "start": 3533.02,
+        "end": 3536.02
+    },
+    {
+        "text": " Bartes cobert.",
+        "start": 3536.02,
+        "end": 3538.02
+    },
+    {
+        "text": " Dos dos están fortemente vinculadas.",
+        "start": 3538.02,
+        "end": 3543.02
+    },
+    {
+        "text": " Sí.",
+        "start": 3543.02,
+        "end": 3544.02
+    },
+    {
+        "text": " Por eso se puede ver.",
+        "start": 3544.02,
+        "end": 3545.02
+    },
+    {
+        "text": " La prueba esto se puede ver.",
+        "start": 3545.02,
+        "end": 3546.02
+    },
+    {
+        "text": " Asumiendo.",
+        "start": 3546.02,
+        "end": 3547.02
+    },
+    {
+        "text": " Bueno, supongo así que tenemos.",
+        "start": 3547.02,
+        "end": 3548.02
+    },
+    {
+        "text": " Vamos para el izquierdo de la derecha.",
+        "start": 3548.02,
+        "end": 3550.02
+    },
+    {
+        "text": " Tenemos ese.",
+        "start": 3550.02,
+        "end": 3551.02
+    },
+    {
+        "text": " Es.",
+        "start": 3551.02,
+        "end": 3552.02
+    },
+    {
+        "text": " Esta.",
+        "start": 3552.02,
+        "end": 3554.02
+    },
+    {
+        "text": " Este.",
+        "start": 3554.02,
+        "end": 3556.02
+    },
+    {
+        "text": " El conjunto ese fue tenido a través de.",
+        "start": 3556.02,
+        "end": 3559.02
+    },
+    {
+        "text": " Es un conjunto independiente.",
+        "start": 3559.02,
+        "end": 3561.02
+    },
+    {
+        "text": " Entonces, si consideran una lista.",
+        "start": 3561.02,
+        "end": 3564.02
+    },
+    {
+        "text": " B.",
+        "start": 3564.02,
+        "end": 3565.02
+    },
+    {
+        "text": " W.",
+        "start": 3565.02,
+        "end": 3566.02
+    },
+    {
+        "text": " No.",
+        "start": 3566.02,
+        "end": 3567.02
+    },
+    {
+        "text": " Dado que el conjunto ese.",
+        "start": 3567.02,
+        "end": 3569.02
+    },
+    {
+        "text": " Independiente.",
+        "start": 3569.02,
+        "end": 3570.02
+    },
+    {
+        "text": " Este.",
+        "start": 3570.02,
+        "end": 3573.02
+    },
+    {
+        "text": " Ambojistremos de la lista.",
+        "start": 3573.02,
+        "end": 3575.02
+    },
+    {
+        "text": " B.",
+        "start": 3575.02,
+        "end": 3576.02
+    },
+    {
+        "text": " No pueden estar en eso.",
+        "start": 3576.02,
+        "end": 3578.02
+    },
+    {
+        "text": " Por definiciones, un conjunto independiente.",
+        "start": 3578.02,
+        "end": 3581.02
+    },
+    {
+        "text": " Sí.",
+        "start": 3581.02,
+        "end": 3584.02
+    },
+    {
+        "text": " Y más, uno debe estar en.",
+        "start": 3584.02,
+        "end": 3588.02
+    },
+    {
+        "text": " B menos es.",
+        "start": 3588.02,
+        "end": 3590.02
+    },
+    {
+        "text": " Sí.",
+        "start": 3590.02,
+        "end": 3592.02
+    },
+    {
+        "text": " Bueno, eso hace que.",
+        "start": 3592.02,
+        "end": 3594.02
+    },
+    {
+        "text": " Si uno está en uno de otro de otro.",
+        "start": 3594.02,
+        "end": 3596.02
+    },
+    {
+        "text": " Es una cobertura.",
+        "start": 3596.02,
+        "end": 3598.02
+    },
+    {
+        "text": " Dearistas por bartes.",
+        "start": 3598.02,
+        "end": 3600.02
+    },
+    {
+        "text": " Y bueno, y la.",
+        "start": 3600.02,
+        "end": 3602.02
+    },
+    {
+        "text": " La otra es.",
+        "start": 3602.02,
+        "end": 3604.02
+    },
+    {
+        "text": " Es.",
+        "start": 3604.02,
+        "end": 3605.02
+    },
+    {
+        "text": " Y que los.",
+        "start": 3605.02,
+        "end": 3608.02
+    },
+    {
+        "text": " Y bueno, es.",
+        "start": 3608.02,
+        "end": 3609.02
+    },
+    {
+        "text": " Es.",
+        "start": 3609.02,
+        "end": 3611.02
+    },
+    {
+        "text": " Simple como esa no hacer el camino puesto.",
+        "start": 3611.02,
+        "end": 3614.02
+    },
+    {
+        "text": " Partir de la cobertura y bueno como uno del complemento del otro.",
+        "start": 3614.02,
+        "end": 3616.02
+    },
+    {
+        "text": " Lo, lo tienen.",
+        "start": 3616.02,
+        "end": 3617.02
+    },
+    {
+        "text": " Por ahí.",
+        "start": 3617.02,
+        "end": 3619.02
+    },
+    {
+        "text": " Si miran el ejemplo.",
+        "start": 3619.02,
+        "end": 3620.02
+    },
+    {
+        "text": " Este.",
+        "start": 3620.02,
+        "end": 3621.02
+    },
+    {
+        "text": " En nuestro caso.",
+        "start": 3621.02,
+        "end": 3623.02
+    },
+    {
+        "text": " Nos quedaba este en.",
+        "start": 3623.02,
+        "end": 3624.02
+    },
+    {
+        "text": " En la instancia.",
+        "start": 3624.02,
+        "end": 3626.02
+    },
+    {
+        "text": " En las haristas.",
+        "start": 3626.02,
+        "end": 3628.02
+    },
+    {
+        "text": " En conjunto de heristas que eran.",
+        "start": 3628.02,
+        "end": 3630.02
+    },
+    {
+        "text": " y el 7 de uno era el complemento de dos, no?",
+        "start": 3630.02,
+        "end": 3633.66
+    },
+    {
+        "text": " Había quedado un dos, un dos cuatro seis y tres cinco siete,",
+        "start": 3633.66,
+        "end": 3641.7
+    },
+    {
+        "text": " un dos cuatro seis como vamos a poner el dependiente y tres cinco siete como",
+        "start": 3641.7,
+        "end": 3649.66
+    },
+    {
+        "text": " la cobertura de por Marx.",
+        "start": 3649.66,
+        "end": 3654.58
+    },
+    {
+        "text": " Bueno, entonces, dejé el chat de un foto que es un ejemplo bastante visual de",
+        "start": 3654.58,
+        "end": 3661.8199999999997
+    },
+    {
+        "text": " esa, de ese guiolencia estamos trabajando.",
+        "start": 3661.8199999999997,
+        "end": 3665.46
+    },
+    {
+        "text": " Claro, muchas gracias.",
+        "start": 3665.46,
+        "end": 3666.98
+    },
+    {
+        "text": " Vale, muchas gracias.",
+        "start": 3666.98,
+        "end": 3671.06
+    },
+    {
+        "text": " Bueno, miramos.",
+        "start": 3671.06,
+        "end": 3676.2999999999997
+    },
+    {
+        "text": " Como si, primera propiedad de, de aplicación,",
+        "start": 3676.2999999999997,
+        "end": 3681.46
+    },
+    {
+        "text": " el mecanismo de reducción polinomial, tenemos que el independencia se puede reducir,",
+        "start": 3681.46,
+        "end": 3689.38
+    },
+    {
+        "text": " es reducible en tiempo, polinomial, a ver, te escoga.",
+        "start": 3689.38,
+        "end": 3695.5
+    },
+    {
+        "text": " Esta es nuestra primera transformación y bueno, la demostración se basa en la",
+        "start": 3695.5,
+        "end": 3702.5
+    },
+    {
+        "text": " proposición anterior, dado que uno es el complemento del otro, a través de",
+        "start": 3702.5,
+        "end": 3707.9
+    },
+    {
+        "text": " verdises, entonces se supongan, tenemos una caja negra que resuelve,",
+        "start": 3707.9,
+        "end": 3713.9
+    },
+    {
+        "text": " parte es cobert, entonces se puede decidir sije tiene un conjunto independiente de",
+        "start": 3713.9,
+        "end": 3721.26
+    },
+    {
+        "text": " tamaño al menos ca, consultando a la caja negra esa, por sije tiene una cobertura,",
+        "start": 3721.26,
+        "end": 3726.9
+    },
+    {
+        "text": " por Marx y se le tamaño al osumo, tiene menos ca, siendo en esa cantidad de",
+        "start": 3726.9,
+        "end": 3731.9
+    },
+    {
+        "text": " verdises en el caso, o sea, como uno es complemento del otro, como usar el",
+        "start": 3731.9,
+        "end": 3736.98
+    },
+    {
+        "text": " mecanismo de complementos para ajustar el límite, usar el mecanismo de",
+        "start": 3736.98,
+        "end": 3743.38
+    },
+    {
+        "text": " transformación.",
+        "start": 3743.38,
+        "end": 3746.54
+    },
+    {
+        "text": " Y bueno, debido a esto y cubro el complemento del otro, se cumple la",
+        "start": 3746.54,
+        "end": 3753.54
+    },
+    {
+        "text": " reducción polinomial, así, pero acá, que verdes cobertes es reducible en tiempo",
+        "start": 3753.54,
+        "end": 3761.94
+    },
+    {
+        "text": " polinomial, independencia, o sea, que tenemos las dos, un y la otra, bueno, y",
+        "start": 3761.94,
+        "end": 3771.66
+    },
+    {
+        "text": " esta es una de las características de estos problemas, o sea, los problemas que",
+        "start": 3771.66,
+        "end": 3777.38
+    },
+    {
+        "text": " de los cuales no se conoce, detenga resolución eficiente en general, sea este",
+        "start": 3777.38,
+        "end": 3785.3
+    },
+    {
+        "text": " ciclo de, o sea, se pueden transformar unos de otros y viceversos.",
+        "start": 3785.3,
+        "end": 3792.0600000000004
+    },
+    {
+        "text": " Es lo que termina, es otra forma de ver, caracterizar su clase de complejidad, esa clase",
+        "start": 3792.0600000000004,
+        "end": 3802.02
+    },
+    {
+        "text": " que denominamos en el PSC, la podemos visualizar de esa forma, de visualizar las, bueno,",
+        "start": 3802.02,
+        "end": 3809.9
+    },
+    {
+        "text": " los que se pueden reducir de uno de otros, mi viceversa, bueno, esos pasan a hacer la",
+        "start": 3809.9,
+        "end": 3816.98
+    },
+    {
+        "text": " categoría de NPE completo.",
+        "start": 3816.98,
+        "end": 3820.46
+    },
+    {
+        "text": " Bueno, estos dos problemas que vienen de la naturaleza de los grafos, los podemos, tiene",
+        "start": 3820.46,
+        "end": 3831.98
+    },
+    {
+        "text": " una jerarquía mayor de problemas que sacarlos del mundo de los grafos y representarlos",
+        "start": 3831.98,
+        "end": 3837.7000000000003
+    },
+    {
+        "text": " del mundo de los conjuntos y las relaciones interesos.",
+        "start": 3837.7,
+        "end": 3840.8999999999996
+    },
+    {
+        "text": " Hay algo similar que hicimos en parejamiento y partito, se acuerdan en la clase interior,",
+        "start": 3840.8999999999996,
+        "end": 3846.3399999999997
+    },
+    {
+        "text": " que cuando lo quisimos generar, generalizar en parejamiento multipartito, nos independizamos",
+        "start": 3846.3399999999997,
+        "end": 3852.2999999999997
+    },
+    {
+        "text": " del grafo y trabajamos directamente con conjuntos y relaciones interesos, bueno, para",
+        "start": 3852.2999999999997,
+        "end": 3857.66
+    },
+    {
+        "text": " ellos pueden ocurrir lo mismo, se puede hacerlo mismo, no tiene por qué estar vinculado",
+        "start": 3857.66,
+        "end": 3863.7799999999997
+    },
+    {
+        "text": " en el grafo y se generalizan el problema.",
+        "start": 3863.78,
+        "end": 3867.7400000000002
+    },
+    {
+        "text": " Entonces, como previo a ellos, vamos a ver ese relacionamiento que define, que generalizan",
+        "start": 3867.7400000000002,
+        "end": 3877.5800000000004
+    },
+    {
+        "text": " las coberturas a entidades más grandes.",
+        "start": 3877.5800000000004,
+        "end": 3882.78
+    },
+    {
+        "text": " Entonces, lo que vamos a ver es lo que se denomina cobertura y empaque de conjunto.",
+        "start": 3882.78,
+        "end": 3892.82
+    },
+    {
+        "text": " ¿Cómo dan 100 que tenemos dos conjuntos?",
+        "start": 3892.82,
+        "end": 3895.5800000000004
+    },
+    {
+        "text": " A un conjunto M, que tiene M elementos, lo intentamos de 1M y un conjunto N con el elemento.",
+        "start": 3895.5800000000004,
+        "end": 3902.94
+    },
+    {
+        "text": " Entonces, lo que vamos a construir, nos interesa trabajar sobre los todos los conjuntos",
+        "start": 3902.94,
+        "end": 3909.52
+    },
+    {
+        "text": " posibles del conjunto M.",
+        "start": 3909.52,
+        "end": 3912.34
+    },
+    {
+        "text": " Todo sobre cómo, sobre, perdón, sobre sus conjuntos del conjunto N, que están indicados",
+        "start": 3912.34,
+        "end": 3920.5
+    },
+    {
+        "text": " en el conjunto M, o sea, no tiene por qué ser todo, no tiene por ser el conjunto",
+        "start": 3920.5,
+        "end": 3923.82
+    },
+    {
+        "text": " de potencia, pero nos interesa algunos de ellos.",
+        "start": 3923.82,
+        "end": 3931.38
+    },
+    {
+        "text": " Entonces, vamos a decir que un subconjunto de N de acá es una cobertura si la unión",
+        "start": 3931.38,
+        "end": 3947.02
+    },
+    {
+        "text": " de todos esos subconjunto M suí elegidos de N, cubre todo el conjunto M.",
+        "start": 3947.02,
+        "end": 3960.62
+    },
+    {
+        "text": " Por otro lado, vamos a decir que un subconjunto elegido sobre los índices de N de acá, un",
+        "start": 3960.62,
+        "end": 3967.98
+    },
+    {
+        "text": " sublemento de este, es un empaque del conjunto M si para todo, para posible, de eso es",
+        "start": 3967.98,
+        "end": 3976.9
+    },
+    {
+        "text": " un conjunto, todo para posible, de esos conjuntos no tiene intersección.",
+        "start": 3976.9,
+        "end": 3983.9
+    },
+    {
+        "text": " Quiere, lo vamos a hacer un esquemite, un dibujo, vamos a ver, pongan sí que tenemos el",
+        "start": 3983.9,
+        "end": 3995.46
+    },
+    {
+        "text": " conjunto M, M estábamos por puntos, va a ser acá una matriz.",
+        "start": 3995.46,
+        "end": 4002.46
+    },
+    {
+        "text": " Tiene nueve elementes, perdón, ocho, dos elements, son eso, ¿no?",
+        "start": 4002.46,
+        "end": 4024.46
+    },
+    {
+        "text": " Para hacer un esquema visual. Entonces podemos tener distintos subconjunto de M suí,",
+        "start": 4024.46,
+        "end": 4038.86
+    },
+    {
+        "text": " por ejemplo M su 1, que abarque solo, por ejemplo, estos tres.",
+        "start": 4038.86,
+        "end": 4047.86
+    },
+    {
+        "text": " Sí, por ejemplo ahí, M su 2, va a ser algo así,",
+        "start": 4048.86,
+        "end": 4064.86
+    },
+    {
+        "text": " a un otro parado de Cameda.",
+        "start": 4065.86,
+        "end": 4076.86
+    },
+    {
+        "text": " Sula curo.",
+        "start": 4076.86,
+        "end": 4085.86
+    },
+    {
+        "text": " Vamos pra va.",
+        "start": 4085.86,
+        "end": 4107.56
+    },
+    {
+        "text": " Promo camilan.",
+        "start": 4107.56,
+        "end": 4114.9800000000005
+    },
+    {
+        "text": " Bueno, vamos a introducir las definiciones aquí.",
+        "start": 4114.98,
+        "end": 4138.98
+    },
+    {
+        "text": " Entonces, yo creo que así que tenemos una cobertura de m.",
+        "start": 4138.98,
+        "end": 4144.98
+    },
+    {
+        "text": " Va a ser, por ejemplo, la unión de distintos subconjunts que cubran a todo m.",
+        "start": 4144.98,
+        "end": 4152.98
+    },
+    {
+        "text": " Por ejemplo, una cobertura de m. En este caso, estaría integrada por m su 1, m su 2 y m su 3.",
+        "start": 4152.98,
+        "end": 4165.98
+    },
+    {
+        "text": " Obviamente, hay intercesión en alguno de ellos, pero lo que nos interesa es cubrir los a todos.",
+        "start": 4165.98,
+        "end": 4171.98
+    },
+    {
+        "text": " Un empaque de m. Por ejemplo, ahí es m su 1 y m su 4, que se ha utilizado el fuse.",
+        "start": 4171.98,
+        "end": 4183.98
+    },
+    {
+        "text": " Serial, o sea, es una selección de sus conjuntos tales que interesos no hay intercesión.",
+        "start": 4183.98,
+        "end": 4192.98
+    },
+    {
+        "text": " Hay muchos son distintos. Bueno, ustedes ya saben, este es lo que es claramente una partición que se cumple como el caso límite entre los 2.",
+        "start": 4192.98,
+        "end": 4205.98
+    },
+    {
+        "text": " Podríamos armar a otro para tener una partición.",
+        "start": 4205.98,
+        "end": 4219.98
+    },
+    {
+        "text": " Vamos a ver el lugar de escudo.",
+        "start": 4219.98,
+        "end": 4231.98
+    },
+    {
+        "text": " Entonces, particiones podrías serían en otro mas acá.",
+        "start": 4231.98,
+        "end": 4241.98
+    },
+    {
+        "text": " Bueno, como con la altura, tenemos m1, m2, m3 como empaque.",
+        "start": 4242.98,
+        "end": 4267.98
+    },
+    {
+        "text": " Tenemos como ejemplo m1, m3, o también podría ser m1 m5,",
+        "start": 4268.98,
+        "end": 4291.98
+    },
+    {
+        "text": " como partición m1, m4 y m5.",
+        "start": 4291.98,
+        "end": 4308.98
+    },
+    {
+        "text": " Una pregunta, m1 m3 no es empaque, no?",
+        "start": 4309.98,
+        "end": 4315.98
+    },
+    {
+        "text": " M1 m4 sería.",
+        "start": 4315.98,
+        "end": 4323.98
+    },
+    {
+        "text": " Si, corro el me parece.",
+        "start": 4324.98,
+        "end": 4333.98
+    },
+    {
+        "text": " Por eso es la idea central.",
+        "start": 4333.98,
+        "end": 4335.98
+    },
+    {
+        "text": " Estos son cobertura en pake y particiones.",
+        "start": 4335.98,
+        "end": 4338.98
+    },
+    {
+        "text": " Bueno, ¿qué es lo que nos interesa?",
+        "start": 4338.98,
+        "end": 4341.98
+    },
+    {
+        "text": " Es el punto vista de optimización para el caso de las coberturas y el caso de los empakes y el caso extremal.",
+        "start": 4341.98,
+        "end": 4351.98
+    },
+    {
+        "text": " Cuando buscamos cobertura, lo que vamos a buscar es la cobertura que tenga la menor cantidad por ejemplo de elementos.",
+        "start": 4352.98,
+        "end": 4363.98
+    },
+    {
+        "text": " La caradena de la idea de ese sea la más chica posible.",
+        "start": 4363.98,
+        "end": 4367.98
+    },
+    {
+        "text": " Cubrimos, pero con los más chicos posible.",
+        "start": 4367.98,
+        "end": 4370.98
+    },
+    {
+        "text": " Cuando queremos buscar empakes, lo que queremos es empacar de la forma más grande posible.",
+        "start": 4370.98,
+        "end": 4377.98
+    },
+    {
+        "text": " A mayor cantidad empaque es posible.",
+        "start": 4378.98,
+        "end": 4380.98
+    },
+    {
+        "text": " Y en caso de partición, no tenemos un criterio de busque de optimal,",
+        "start": 4380.98,
+        "end": 4387.98
+    },
+    {
+        "text": " podemos poder ver mucho por eso.",
+        "start": 4387.98,
+        "end": 4389.98
+    },
+    {
+        "text": " Conseguir alguna de esas fronteras por ahí.",
+        "start": 4389.98,
+        "end": 4395.98
+    },
+    {
+        "text": " Dúgala, se entiende la idea del esquema.",
+        "start": 4395.98,
+        "end": 4399.98
+    },
+    {
+        "text": " El caso de partición, seguramente le manejaron mucho.",
+        "start": 4399.98,
+        "end": 4402.98
+    },
+    {
+        "text": " No sé si ha habido visto el caso de empaque.",
+        "start": 4402.98,
+        "end": 4405.98
+    },
+    {
+        "text": " O...",
+        "start": 4405.98,
+        "end": 4407.98
+    },
+    {
+        "text": " Lo hago para esto.",
+        "start": 4413.98,
+        "end": 4415.98
+    },
+    {
+        "text": " Me voy a recordar para hacer esto.",
+        "start": 4415.98,
+        "end": 4417.98
+    },
+    {
+        "text": " Bueno, y ese es el caso de cobertura.",
+        "start": 4422.98,
+        "end": 4425.98
+    },
+    {
+        "text": " Conseguir la de menor tamaño.",
+        "start": 4425.98,
+        "end": 4427.98
+    },
+    {
+        "text": " El caso de empaque, buscar el de mayor tamaño.",
+        "start": 4427.98,
+        "end": 4430.98
+    },
+    {
+        "text": " Eso es el término de caradena de conjunto.",
+        "start": 4433.98,
+        "end": 4436.98
+    },
+    {
+        "text": " Pero más aún, podría haber...",
+        "start": 4436.98,
+        "end": 4439.98
+    },
+    {
+        "text": " Porque esto se puede generalizar más.",
+        "start": 4439.98,
+        "end": 4441.98
+    },
+    {
+        "text": " Cada uno de esos subconjuntos tiene un atributo de valor.",
+        "start": 4441.98,
+        "end": 4445.98
+    },
+    {
+        "text": " Y decir que un subconjuto está valorado.",
+        "start": 4445.98,
+        "end": 4450.98
+    },
+    {
+        "text": " Tiene un cierto valor, una métrica, un escalar.",
+        "start": 4450.98,
+        "end": 4454.98
+    },
+    {
+        "text": " Y lo que buscamos es, por ejemplo, la cobertura que tenga la suma de los valores,",
+        "start": 4454.98,
+        "end": 4461.98
+    },
+    {
+        "text": " de los subconjuntos, de la menor posible.",
+        "start": 4461.98,
+        "end": 4464.98
+    },
+    {
+        "text": " O el empaque de los subconjuntos que sea el mayor posible.",
+        "start": 4464.98,
+        "end": 4469.98
+    },
+    {
+        "text": " ¿No? ¿Cómo que?",
+        "start": 4469.98,
+        "end": 4472.98
+    },
+    {
+        "text": " Vamos a representar además el esquema que ya hemos visto en la optimización.",
+        "start": 4472.98,
+        "end": 4477.98
+    },
+    {
+        "text": " Una cosa es buscar el árbol, que tenga la menor cantidad de artistas",
+        "start": 4477.98,
+        "end": 4483.98
+    },
+    {
+        "text": " y otra cosa es buscar...",
+        "start": 4483.98,
+        "end": 4485.98
+    },
+    {
+        "text": " Perdón, un árbol cualquiera o un carálogo de función de la cantidad de artistas.",
+        "start": 4485.98,
+        "end": 4491.98
+    },
+    {
+        "text": " En tidades que tiene y otra cosa es cuando las entidades están ponderadas.",
+        "start": 4491.98,
+        "end": 4495.98
+    },
+    {
+        "text": " Focar aquellas que la suma de sus penderaciones y las menor no son mucho.",
+        "start": 4495.98,
+        "end": 4500.98
+    },
+    {
+        "text": " ¿Cómo que nos vamos más en el esquema de optimización?",
+        "start": 4500.98,
+        "end": 4505.98
+    },
+    {
+        "text": " Bueno, esta definición, así, permite generalizar",
+        "start": 4505.98,
+        "end": 4512.98
+    },
+    {
+        "text": " los dos ejemplos que vimos antes, desde el punto de vista extemporal.",
+        "start": 4513.98,
+        "end": 4518.98
+    },
+    {
+        "text": " Si ustedes piensan, vamos para atrás.",
+        "start": 4518.98,
+        "end": 4521.98
+    },
+    {
+        "text": " El problema de Vertes Cover, sí, perdón, vamos antes al interior,",
+        "start": 4524.98,
+        "end": 4532.98
+    },
+    {
+        "text": " independe de enset, era un problema que se estaba empaquetando costes,",
+        "start": 4532.98,
+        "end": 4538.98
+    },
+    {
+        "text": " ¿ven? ¿Qué es tu altura? ¿Centuras empaquetas? ¿Centuras empaquetas?",
+        "start": 4538.98,
+        "end": 4543.98
+    },
+    {
+        "text": " ¿Se ve bien o no se ve?",
+        "start": 4569.98,
+        "end": 4573.98
+    },
+    {
+        "text": " ¿En qué asociaron? Se requieren encontrar los puntos más de anuncio.",
+        "start": 4577.98,
+        "end": 4582.98
+    },
+    {
+        "text": " Ahí está, pero desde el punto de vista de los que el esquema que vimos recién entre con puntos y sus con puntos y acá,",
+        "start": 4582.98,
+        "end": 4590.98
+    },
+    {
+        "text": " las entidades que se manejan parte y se dianista. ¿Quién cumple que roll?",
+        "start": 4590.98,
+        "end": 4594.98
+    },
+    {
+        "text": " El esquema que le ron.",
+        "start": 4595.98,
+        "end": 4600.98
+    },
+    {
+        "text": " Al elegir, un vértice independe de enset, estamos elegiendo todas las haristas que son las yacentes a ver.",
+        "start": 4612.98,
+        "end": 4621.98
+    },
+    {
+        "text": " Entonces, de alguna forma, estamos creando el canseño.",
+        "start": 4622.98,
+        "end": 4627.98
+    },
+    {
+        "text": " Ah, profedejo, traimagen que ese dibujo vale la pena para hacer este pasaje de un problema al otro,",
+        "start": 4629.98,
+        "end": 4638.98
+    },
+    {
+        "text": " porque se le hora visualizar esos conjuntos en el grafo de vértices. No se me parece que...",
+        "start": 4638.98,
+        "end": 4644.98
+    },
+    {
+        "text": " Está muy bueno.",
+        "start": 4644.98,
+        "end": 4647.98
+    },
+    {
+        "text": " Gracias. Pero ahí es, a partir de esto, esa generalización, uno puede asociar la cobertura aquí,",
+        "start": 4648.98,
+        "end": 4660.98
+    },
+    {
+        "text": " los empaquetas con el hecho de, bueno, todas estas haristas tan muculadas con este vértice.",
+        "start": 4660.98,
+        "end": 4667.98
+    },
+    {
+        "text": " Y bueno, lo que requiere es buscar el conjunto mayor de empaquetamientos de haristas que dan definidas a partir de ese vértice.",
+        "start": 4667.98,
+        "end": 4676.98
+    },
+    {
+        "text": " Bueno, de forma similar, el problema de vértice es que es cubriendo a la vista a partir de los vértices que de la vincula.",
+        "start": 4678.98,
+        "end": 4689.98
+    },
+    {
+        "text": " Entonces, hay una asociación directa estructural entre los problemas definidos sobre los grafos, como son independentes de la idea de vértice.",
+        "start": 4689.98,
+        "end": 4700.98
+    },
+    {
+        "text": " El problema de vértice es que los problemas definidos sobre los conjuntos como vimos acá.",
+        "start": 4701.98,
+        "end": 4710.98
+    },
+    {
+        "text": " Bueno, esa asociación estructural nos permite afirmar estas dos proposiciones que están acá, las son las proposiciones 67.",
+        "start": 4710.98,
+        "end": 4721.98
+    },
+    {
+        "text": " Si las tiene reforma estructural a partir de ella.",
+        "start": 4722.98,
+        "end": 4730.98
+    },
+    {
+        "text": " Si hay que ser cobert y ser packing son problemas aún más generales, bueno, las problemas vértices cobertes,",
+        "start": 4731.98,
+        "end": 4740.98
+    },
+    {
+        "text": " independencia se puede reducir en tiempo poniendo en ellos haciendo cambios de estructuras,",
+        "start": 4740.98,
+        "end": 4747.98
+    },
+    {
+        "text": " si trabajando con ser cobert y ser packing como cajas negas.",
+        "start": 4747.98,
+        "end": 4754.98
+    },
+    {
+        "text": " El problema de vértices es que cuando vimos en el caso de independencia, independencia,",
+        "start": 4755.98,
+        "end": 4779.98
+    },
+    {
+        "text": " que vimos vértices y esa forma, el cual estamos a listas.",
+        "start": 4780.98,
+        "end": 4786.98
+    },
+    {
+        "text": " Exactamente.",
+        "start": 4786.98,
+        "end": 4791.98
+    },
+    {
+        "text": " Lo que estamos en el caso de cortura de vértices es similar, ¿se adigimos los vértices?",
+        "start": 4796.98,
+        "end": 4805.98
+    },
+    {
+        "text": " El compañero dice que mandó algo en ejemplo que mis son hay muchos.",
+        "start": 4806.98,
+        "end": 4812.98
+    },
+    {
+        "text": " Mire, el loan, ahora no tenemos tiempo, no nos da ni con las mandó, una esquema dice que,",
+        "start": 4812.98,
+        "end": 4827.98
+    },
+    {
+        "text": " le chandona, seguramente tengo, bueno, hay muchísimo desarrollo visoaco en cosas,",
+        "start": 4828.98,
+        "end": 4834.98
+    },
+    {
+        "text": " la fuga de visualizar.",
+        "start": 4834.98,
+        "end": 4839.98
+    },
+    {
+        "text": " Bueno, seguimos, ¿seguimos?",
+        "start": 4839.98,
+        "end": 4844.98
+    },
+    {
+        "text": " Ahora trabajar en sí, vamos a trabajar sobre un problema que usan a tu realista,",
+        "start": 4844.98,
+        "end": 4856.98
+    },
+    {
+        "text": " es bien de problema de decisión, el reconocimiento, particularmente de decisión,",
+        "start": 4856.98,
+        "end": 4863.98
+    },
+    {
+        "text": " y que fue fundamental el otro asentente en el desarrollo de toda esta teoría.",
+        "start": 4863.98,
+        "end": 4868.98
+    },
+    {
+        "text": " Fue uno de los temas bases con lo que se armó todo el desarrollo de las analis",
+        "start": 4868.98,
+        "end": 4876.98
+    },
+    {
+        "text": " y de complejidad, temporáel de los problemas.",
+        "start": 4876.98,
+        "end": 4883.98
+    },
+    {
+        "text": " El problema se llama el problema de satis facilidad, es un problema que está basado en adj de Brabuliana,",
+        "start": 4884.98,
+        "end": 4895.98
+    },
+    {
+        "text": " es un problema de reconocimiento de variables bulianas que tienen la estructura en particular.",
+        "start": 4895.98,
+        "end": 4905.98
+    },
+    {
+        "text": " Primero tenemos, se tiene como elemento de base un conjunto de variables bulianas,",
+        "start": 4906.98,
+        "end": 4913.98
+    },
+    {
+        "text": " X de n variable bulianas, esas variables, bueno, son bulianas pueden valer 0, 1 o falso,",
+        "start": 4913.98,
+        "end": 4922.98
+    },
+    {
+        "text": " va a haber manejen el esquema que quieren.",
+        "start": 4922.98,
+        "end": 4925.98
+    },
+    {
+        "text": " Entonces, a partir de ellas se construyen expresiones, la expresión más básica que tenemos es lo que se",
+        "start": 4925.98,
+        "end": 4934.98
+    },
+    {
+        "text": " denomina término, es que cada una de esas variables puede estar en forma directa,",
+        "start": 4934.98,
+        "end": 4941.98
+    },
+    {
+        "text": " como está definida, o en forma negada, negada loficamente, o sea, si una variable es 0,",
+        "start": 4941.98,
+        "end": 4948.98
+    },
+    {
+        "text": " su variable va a ser 1 y se agarza.",
+        "start": 4948.98,
+        "end": 4951.98
+    },
+    {
+        "text": " Entonces, bueno, dado el conjunto X de todas las variables bulianas posibles,",
+        "start": 4951.98,
+        "end": 4957.98
+    },
+    {
+        "text": " los términos posibles son ese conjunto, unión, todas las negaciones",
+        "start": 4957.98,
+        "end": 4963.98
+    },
+    {
+        "text": " de todas las variables, esos son los elementos donde se puede construir el tárbol.",
+        "start": 4963.98,
+        "end": 4970.98
+    },
+    {
+        "text": " Bueno, entonces lo que plantea primero es, sigue constructivamente, a partir de los términos,",
+        "start": 4970.98,
+        "end": 4984.98
+    },
+    {
+        "text": " estos se construyen lo que se llaman cláusulas, que son disjunciones de los tárbol,",
+        "start": 4984.98,
+        "end": 4992.98
+    },
+    {
+        "text": " o sea, que lo que tenemos es, dado una cláusula va a ser un subconjunto de los términos,",
+        "start": 4992.98,
+        "end": 5005.98
+    },
+    {
+        "text": " va a ser la cadeta maño L, el cual es lo vincula con una expresión de disjunución,",
+        "start": 5005.98,
+        "end": 5014.98
+    },
+    {
+        "text": " o sea, son horras, un orbital lógico, es, o sea, el término 1 o el término 2,",
+        "start": 5014.98,
+        "end": 5021.98
+    },
+    {
+        "text": " así, sucesivamente, hasta el término L.",
+        "start": 5021.98,
+        "end": 5025.98
+    },
+    {
+        "text": " Eso, del punto vista de las variables, que había representado como un ejemplo,",
+        "start": 5025.98,
+        "end": 5034.98
+    },
+    {
+        "text": " en un partito en pantalla, en un modelo nuevo, tenía notar,",
+        "start": 5034.98,
+        "end": 5039.98
+    },
+    {
+        "text": " una cláusula, por ejemplo, la usula 1, le va a ser,",
+        "start": 5039.98,
+        "end": 5049.98
+    },
+    {
+        "text": " en X1 o la negación de X3 o lo que se le ocurre,",
+        "start": 5049.98,
+        "end": 5058.98
+    },
+    {
+        "text": " sin sucesivamente, o sea, tener muchas cláusulas,",
+        "start": 5058.98,
+        "end": 5065.98
+    },
+    {
+        "text": " estos son ejemplo recláusulas,",
+        "start": 5072.98,
+        "end": 5073.98
+    },
+    {
+        "text": " si, ¿dua hasta acá?",
+        "start": 5074.98,
+        "end": 5082.98
+    },
+    {
+        "text": " Bueno, seguimos lo que buscamos, lo que vamos a tener es muchas cláusulas,",
+        "start": 5087.98,
+        "end": 5095.98
+    },
+    {
+        "text": " y lo que buscas resolver este problema es amplifacar la conclusión de todas ellas,",
+        "start": 5095.98,
+        "end": 5102.98
+    },
+    {
+        "text": " o a ver, diferentes cláusulas, y lo que queremos que todas ellas se amplifagan simultáneamente,",
+        "start": 5103.98,
+        "end": 5109.98
+    },
+    {
+        "text": " o sea, nos pongan, tenemos cada cláusulas y queremos que todas ellas se satifagan,",
+        "start": 5109.98,
+        "end": 5116.98
+    },
+    {
+        "text": " entonces bueno, lo que planteamos es la conjunción de ellas,",
+        "start": 5116.98,
+        "end": 5121.98
+    },
+    {
+        "text": " entonces, el tema es, el problema éste es lo que plantea es la busquea de asignación,",
+        "start": 5121.98,
+        "end": 5128.98
+    },
+    {
+        "text": " de disafariable juniana, dado a que tenemos definidas termino,",
+        "start": 5128.98,
+        "end": 5133.98
+    },
+    {
+        "text": " porque cláusulas para un instancia de forma tall,",
+        "start": 5133.98,
+        "end": 5136.98
+    },
+    {
+        "text": " que de 1 o para darles,",
+        "start": 5136.98,
+        "end": 5141.98
+    },
+    {
+        "text": " instancia del problema que ha definido a partir del conjunto X,",
+        "start": 5141.98,
+        "end": 5146.98
+    },
+    {
+        "text": " del conjunto C, del cláus, de todas las cláusulas posibles,",
+        "start": 5146.98,
+        "end": 5152.98
+    },
+    {
+        "text": " y lo que buscamos es eso,",
+        "start": 5152.98,
+        "end": 5155.98
+    },
+    {
+        "text": " eso que está puesto planteado,",
+        "start": 5161.98,
+        "end": 5163.98
+    },
+    {
+        "text": " o sea, el problema se identifica como SAT con el problema de inglés en SAT y facilidad,",
+        "start": 5163.98,
+        "end": 5170.98
+    },
+    {
+        "text": " y dice, dado un conjunto de cláusulas sobre un conjunto de variables,",
+        "start": 5170.98,
+        "end": 5175.98
+    },
+    {
+        "text": " existe una asignación de la variable que se atifase todas las cláusulas,",
+        "start": 5175.98,
+        "end": 5179.98
+    },
+    {
+        "text": " y este es el problema,",
+        "start": 5182.98,
+        "end": 5191.98
+    },
+    {
+        "text": " ¿cómo se le ocurre que lo podríamos resolver?",
+        "start": 5191.98,
+        "end": 5197.98
+    },
+    {
+        "text": " ¿Cómo se podría intentar hacer el instituto?",
+        "start": 5197.98,
+        "end": 5200.98
+    },
+    {
+        "text": " No intentáis hacer un Taoist ungefady de ky夠hold pepper options,",
+        "start": 5200.98,
+        "end": 5204.98
+    },
+    {
+        "text": " y de translucent crea olmasas así.",
+        "start": 5204.98,
+        "end": 5209.98
+    },
+    {
+        "text": " ¿Int 절� الاos condicente?",
+        "start": 5219.98,
+        "end": 5224.0599999999995
+    },
+    {
+        "text": " ¿No ha dicho nada sensors?",
+        "start": 5224.0599999999995,
+        "end": 5226.98
+    },
+    {
+        "text": " una tabla de verdad lógica",
+        "start": 5226.98,
+        "end": 5230.94
+    },
+    {
+        "text": " en",
+        "start": 5231.28,
+        "end": 5252.299999999999
+    },
+    {
+        "text": " Series al resolves",
+        "start": 5254.799999999999,
+        "end": 5257.4
+    },
+    {
+        "text": " implica ahí. Una búsqueda se autiva que implica la cual que lo vamos a empezar a ver.",
+        "start": 5257.4,
+        "end": 5262.2
+    },
+    {
+        "text": " No sé si eso es lo que es el compañero que dijo el de la tabla.",
+        "start": 5267.0,
+        "end": 5270.24
+    },
+    {
+        "text": " Sí, que es exponencial es dos a la n.",
+        "start": 5271.24,
+        "end": 5273.639999999999
+    },
+    {
+        "text": " Porque voy a tener cada variable dos opciones.",
+        "start": 5274.28,
+        "end": 5277.5599999999995
+    },
+    {
+        "text": " Muy bien, eso es la que sería. Si lo quisieramos resolver en forma de ese autiva,",
+        "start": 5278.92,
+        "end": 5282.599999999999
+    },
+    {
+        "text": " empezamos una búsqueda de todas las posibilidades.",
+        "start": 5282.599999999999,
+        "end": 5285.96
+    },
+    {
+        "text": " Y experimentamos y probamos.",
+        "start": 5286.52,
+        "end": 5291.32
+    },
+    {
+        "text": " Qué otra cosa podríamos hacer?",
+        "start": 5293.56,
+        "end": 5295.08
+    },
+    {
+        "text": " Vean que todas las cláudulas tienen que cumplir, ¿no?",
+        "start": 5301.0,
+        "end": 5303.56
+    },
+    {
+        "text": " La condición esta.",
+        "start": 5303.56,
+        "end": 5304.84
+    },
+    {
+        "text": " Es que todas las cláudulas tienen cumplir.",
+        "start": 5307.4800000000005,
+        "end": 5309.6
+    },
+    {
+        "text": " Todas tienen que ser uno o van a haberas.",
+        "start": 5309.6,
+        "end": 5313.24
+    },
+    {
+        "text": " Eso es cómo impacta sobre los términos.",
+        "start": 5314.2,
+        "end": 5316.599999999999
+    },
+    {
+        "text": " Una impacta sobre la estructura de las cláudulas en las informes individuales.",
+        "start": 5316.599999999999,
+        "end": 5321.88
+    },
+    {
+        "text": " Si ahora nos vamos para dar cada una de esas cláudulas tiene que tener al menos un término",
+        "start": 5321.88,
+        "end": 5328.36
+    },
+    {
+        "text": " que sea de lo que no es por la de lo.",
+        "start": 5328.36,
+        "end": 5331.719999999999
+    },
+    {
+        "text": " No, no.",
+        "start": 5331.719999999999,
+        "end": 5332.719999999999
+    },
+    {
+        "text": " No, no, no.",
+        "start": 5332.719999999999,
+        "end": 5333.719999999999
+    },
+    {
+        "text": " No, no, no.",
+        "start": 5338.719999999999,
+        "end": 5339.719999999999
+    },
+    {
+        "text": " Yo le pongo a el hijo de la piso del termino,",
+        "start": 5339.72,
+        "end": 5344.360000000001
+    },
+    {
+        "text": " y le pongo valores de verdad para que uno sea verdadero.",
+        "start": 5344.360000000001,
+        "end": 5349.96
+    },
+    {
+        "text": " Pero qué ocurre?",
+        "start": 5349.96,
+        "end": 5350.76
+    },
+    {
+        "text": " Es el término, tiene variables que potencialmente pueden estar en otro término.",
+        "start": 5352.68,
+        "end": 5357.16
+    },
+    {
+        "text": " Y es el otro término en otro lugar.",
+        "start": 5358.2,
+        "end": 5361.16
+    },
+    {
+        "text": " La condición.",
+        "start": 5363.240000000001,
+        "end": 5364.76
+    },
+    {
+        "text": " Exactamente aparece la negación.",
+        "start": 5364.76,
+        "end": 5367.400000000001
+    },
+    {
+        "text": " Que nos domine otra cláudula y haga que otra cláudula se nos vuelva a todo.",
+        "start": 5367.4,
+        "end": 5372.28
+    },
+    {
+        "text": " Cero.",
+        "start": 5372.28,
+        "end": 5373.28
+    },
+    {
+        "text": " Sí.",
+        "start": 5373.28,
+        "end": 5374.28
+    },
+    {
+        "text": " Sé que está todo vincules máximo acá, lo ven en esto.",
+        "start": 5376.44,
+        "end": 5380.44
+    },
+    {
+        "text": " Todo.",
+        "start": 5380.44,
+        "end": 5382.44
+    },
+    {
+        "text": " El término.",
+        "start": 5382.44,
+        "end": 5383.2
+    },
+    {
+        "text": " El problema es de un nivel de vinculación.",
+        "start": 5383.2,
+        "end": 5387.24
+    },
+    {
+        "text": " Uno mueve una cosa por el lado y se le impacta terriblemente en otro lugar.",
+        "start": 5390.12,
+        "end": 5394.36
+    },
+    {
+        "text": " Sí.",
+        "start": 5397.719999999999,
+        "end": 5398.719999999999
+    },
+    {
+        "text": " Bueno, y esa es la característica de te pronuncia.",
+        "start": 5401.799999999999,
+        "end": 5404.36
+    },
+    {
+        "text": " Y es interesante porque es como un esquema súper básico.",
+        "start": 5404.36,
+        "end": 5408.36
+    },
+    {
+        "text": " Vean que no tiene casi vinculas con una principio.",
+        "start": 5410.599999999999,
+        "end": 5416.08
+    },
+    {
+        "text": " Lo veis.",
+        "start": 5416.08,
+        "end": 5416.879999999999
+    },
+    {
+        "text": " Es el problema que es veraico.",
+        "start": 5416.879999999999,
+        "end": 5418.639999999999
+    },
+    {
+        "text": " Podemos haber más adelante con grafos ni con nada de las entidades que hemos visto anteriormente.",
+        "start": 5418.639999999999,
+        "end": 5425.96
+    },
+    {
+        "text": " Bueno, con conjunto, sí, tiene estructuras, pero es un problema.",
+        "start": 5426.96,
+        "end": 5431.64
+    },
+    {
+        "text": " Este es un lealjabra buleana que define un problema realmente difícil, como naturalmente difícil.",
+        "start": 5431.64,
+        "end": 5440.28
+    },
+    {
+        "text": " Bueno, para este problema que aquí está definido en términos generales,",
+        "start": 5442.28,
+        "end": 5447.68
+    },
+    {
+        "text": " en tamaño de los informa paramétricas en el N, N, N, N, N, N, N y N,",
+        "start": 5448.68,
+        "end": 5454.200000000001
+    },
+    {
+        "text": " N, N y N, acá.",
+        "start": 5454.200000000001,
+        "end": 5455.4400000000005
+    },
+    {
+        "text": " Hay un problema que captura es de grado dificultad en forma minimal,",
+        "start": 5455.4400000000005,
+        "end": 5459.360000000001
+    },
+    {
+        "text": " que sigue siendo difícil,",
+        "start": 5459.360000000001,
+        "end": 5462.400000000001
+    },
+    {
+        "text": " pero en un límite hasta a partir de cual no lo podemos achicar más en esas entidades",
+        "start": 5462.400000000001,
+        "end": 5468.64
+    },
+    {
+        "text": " y deja de ser un problema difícil.",
+        "start": 5468.64,
+        "end": 5471.280000000001
+    },
+    {
+        "text": " Bueno, ese es uno en particular que me interesa destacar.",
+        "start": 5471.280000000001,
+        "end": 5476.72
+    },
+    {
+        "text": " Que es el caso en que cada uno de los términos cada cláusula tenga tres términos,",
+        "start": 5477.72,
+        "end": 5488.88
+    },
+    {
+        "text": " o sea que L sea tres.",
+        "start": 5488.88,
+        "end": 5492.240000000001
+    },
+    {
+        "text": " Es una tréficencia.",
+        "start": 5492.240000000001,
+        "end": 5494.08
+    },
+    {
+        "text": " Y ese es un caso de problema mínimo, y tendrás esta carta y se denomina tres SATs.",
+        "start": 5494.08,
+        "end": 5502.08
+    },
+    {
+        "text": " El problema tres SAT, entonces es un problema dado que en mi conjunto de cláusula cada uno de ellas tiene tres SATs,",
+        "start": 5503.08,
+        "end": 5510.08
+    },
+    {
+        "text": " y sólo tres.",
+        "start": 5510.08,
+        "end": 5511.68
+    },
+    {
+        "text": " Así, ¿sabes?",
+        "start": 5511.68,
+        "end": 5512.68
+    },
+    {
+        "text": " ¿Y qué me conéja?",
+        "start": 5512.68,
+        "end": 5513.68
+    },
+    {
+        "text": " Y bueno, es el mismo problema.",
+        "start": 5515.88,
+        "end": 5517.68
+    },
+    {
+        "text": " Esista en una asignación de las variables que satisfacen todas las cláusulas.",
+        "start": 5517.68,
+        "end": 5521.08
+    },
+    {
+        "text": " Es el mismo.",
+        "start": 5522.08,
+        "end": 5523.48
+    },
+    {
+        "text": " Y aún mantiene las condiciones de dificultad que tiene el problema anterior.",
+        "start": 5524.48,
+        "end": 5533.48
+    },
+    {
+        "text": " Bueno, se podrá imaginar que con esto que el problema de dos SATs no tiene esa carta.",
+        "start": 5534.48,
+        "end": 5553.48
+    },
+    {
+        "text": " El problema de dos SATs ya estamos viendo con que curamos que no las tiene.",
+        "start": 5554.48,
+        "end": 5565.48
+    },
+    {
+        "text": " El problema de dos SATs tiene la resolución eficiente.",
+        "start": 5565.48,
+        "end": 5568.48
+    },
+    {
+        "text": " Es casi no es lo mismo, pero es intuitivamente algo parecido a ese problema de emparejamiento y partito y de emparejamiento tripartito.",
+        "start": 5568.48,
+        "end": 5579.48
+    },
+    {
+        "text": " Es ese es el límite. Estamos ahí en el borde.",
+        "start": 5580.48,
+        "end": 5582.48
+    },
+    {
+        "text": " El dos SAT tiene la resolución eficiente entre SATs no.",
+        "start": 5582.48,
+        "end": 5586.48
+    },
+    {
+        "text": " El problema de emparejamiento y partito tiene la resolución eficiente.",
+        "start": 5586.48,
+        "end": 5590.48
+    },
+    {
+        "text": " El parejamiento multipartito de tres o mayor no tiene la resolución eficiente.",
+        "start": 5590.48,
+        "end": 5595.48
+    },
+    {
+        "text": " Esa es lo que corre más o menos, no es exactamente igual, pero corre más o menos por el mismo canal.",
+        "start": 5595.48,
+        "end": 5600.48
+    },
+    {
+        "text": " Bueno, y lo que la firmación que tenemos es la siguiente que es la exista.",
+        "start": 5601.48,
+        "end": 5614.48
+    },
+    {
+        "text": " El problema de tres SATs se puede reducir en tiempo, por lo manual, al problema independencia que nosotros ya conocemos.",
+        "start": 5614.48,
+        "end": 5624.48
+    },
+    {
+        "text": " Si, o sea, nosotros ya sabemos, desde hace unos años es uno que es un problema difícil.",
+        "start": 5625.48,
+        "end": 5634.48
+    },
+    {
+        "text": " Bueno, el tres SAT es un problema que es también difícil.",
+        "start": 5634.48,
+        "end": 5639.48
+    },
+    {
+        "text": " Bueno, vamos a vincular los dos problemas.",
+        "start": 5639.48,
+        "end": 5644.48
+    },
+    {
+        "text": " Es interesante ver la prueba en detalle porque vincula los dos mundos.",
+        "start": 5644.48,
+        "end": 5651.48
+    },
+    {
+        "text": " El mundo de los brazos, con el mundo de las relaciones bolanas y todo lo, el mecanismo, los artilus,",
+        "start": 5652.48,
+        "end": 5659.48
+    },
+    {
+        "text": " que hay que hacer para conformar uno a uno de los otros y cómo se pueden ser.",
+        "start": 5659.48,
+        "end": 5664.48
+    },
+    {
+        "text": " Bueno, entonces la idea es que bueno, ya nosotros sabemos por la definición de reducción en tiempo con lino mía,",
+        "start": 5664.48,
+        "end": 5670.48
+    },
+    {
+        "text": " que contamos con una caja negra para resolver el problema de independencia.",
+        "start": 5670.48,
+        "end": 5676.48
+    },
+    {
+        "text": " Y requerimos resolver tres SAT. Bueno, el tres SAT este tiene ene variables bulianas, tiene CACT, cláusulas, cada una de ellas tiene tres términos.",
+        "start": 5677.48,
+        "end": 5692.48
+    },
+    {
+        "text": " Bueno, una técnica para resolver tres SAT es elegir un término que cada cláusula y tratar de que sea verdad.",
+        "start": 5692.48,
+        "end": 5702.48
+    },
+    {
+        "text": " Entonces para la selección se puede buscar que cada par del términos no contenga uno de ellos no contigo una variable y el otro la negación de la variable.",
+        "start": 5703.48,
+        "end": 5715.48
+    },
+    {
+        "text": " Es una relación detectada de eso es como intentar un conflicto entre los dos tardes.",
+        "start": 5715.48,
+        "end": 5722.48
+    },
+    {
+        "text": " Entonces para la conversión lo que se va a hacer es se construye un grafo, grafo que tiene un conjunto de verdes y que tiene la siguiente estructura.",
+        "start": 5723.48,
+        "end": 5741.48
+    },
+    {
+        "text": " Tiene por cada cláusula tiene tres por caver, perdón, tiene tres cavertes, el grafo total tiene tres cavertes.",
+        "start": 5742.48,
+        "end": 5755.48
+    },
+    {
+        "text": " Agrupados de acá triángulo, social que va a ver un triángulo por cada cláusula.",
+        "start": 5755.48,
+        "end": 5761.48
+    },
+    {
+        "text": " Tenemos tres verdes con el estado entre sí y eso le venemos un triángulo.",
+        "start": 5761.48,
+        "end": 5767.48
+    },
+    {
+        "text": " Confirmos uno por cada cláuf, entonces asociamos un vértice del grafo a cada una de las variables del problema de la cl delta.",
+        "start": 5768.48,
+        "end": 5786.48
+    },
+    {
+        "text": " Entonces tenemos que cada término del grafo, el ticada término de por donde del problema",
+        "start": 5786.48,
+        "end": 5795.36
+    },
+    {
+        "text": " es satisfacilidad, equivale a un triángulo en el grafo G.",
+        "start": 5795.36,
+        "end": 5798.879999999999
+    },
+    {
+        "text": " Luego lo utilizó ahí en esa.",
+        "start": 5798.879999999999,
+        "end": 5801.28
+    },
+    {
+        "text": " Pero nos vamos con un triángulo G3, por cada uno de ellos, con triángulo G3.",
+        "start": 5801.28,
+        "end": 5807.5199999999995
+    },
+    {
+        "text": " Nos conectamos con las haristas.",
+        "start": 5807.5199999999995,
+        "end": 5812.5599999999995
+    },
+    {
+        "text": " Bueno, desde el punto de esa tifasibilidad, solo podemos seleccionar un bértice de cada uno de esos triángulos,",
+        "start": 5813.280000000001,
+        "end": 5823.6
+    },
+    {
+        "text": " aunque corresponde a seleccionar un término con valor 1 en cada clause.",
+        "start": 5823.6,
+        "end": 5828.56
+    },
+    {
+        "text": " Entonces la equivalencia.",
+        "start": 5828.56,
+        "end": 5831.72
+    },
+    {
+        "text": " Luego tenemos que ver de cómo representamos los conflictos entre los tárpilas.",
+        "start": 5831.72,
+        "end": 5837.400000000001
+    },
+    {
+        "text": " Entonces para ello, agregamos el capítulo que podemos hacer un rícoco de cada dos.",
+        "start": 5837.4,
+        "end": 5843.32
+    },
+    {
+        "text": " Vamos a seleccionar la misación.",
+        "start": 5843.32,
+        "end": 5847.639999999999
+    },
+    {
+        "text": " Es como que tenemos.",
+        "start": 5847.639999999999,
+        "end": 5851.839999999999
+    },
+    {
+        "text": " Para acá termino esta estructura.",
+        "start": 5851.839999999999,
+        "end": 5860.5199999999995
+    },
+    {
+        "text": " Es ninguno acá.",
+        "start": 5860.5199999999995,
+        "end": 5862.719999999999
+    },
+    {
+        "text": " Tos son los bértices.",
+        "start": 5862.72,
+        "end": 5863.72
+    },
+    {
+        "text": " O sea, acá hay una de las cláusulas.",
+        "start": 5863.72,
+        "end": 5866.56
+    },
+    {
+        "text": " Bueno, cuando hay variables dentro del la termino de las cláusulas que están en conflictos,",
+        "start": 5866.56,
+        "end": 5875.16
+    },
+    {
+        "text": " entonces le agregamos una lista.",
+        "start": 5875.16,
+        "end": 5877.12
+    },
+    {
+        "text": " Si este es tan conflicto con esta, porque una es el complemento de la otra,",
+        "start": 5877.12,
+        "end": 5886.320000000001
+    },
+    {
+        "text": " lo restamos con esto.",
+        "start": 5886.320000000001,
+        "end": 5888.6
+    },
+    {
+        "text": " Entonces la vista es cuando una es la negación de la otra, ¿verdad?",
+        "start": 5889.6,
+        "end": 5896.160000000001
+    },
+    {
+        "text": " Entonces es una instancia.",
+        "start": 5896.160000000001,
+        "end": 5898.160000000001
+    },
+    {
+        "text": " Con esto tenemos la estructura de la transformación de uno en el otro.",
+        "start": 5898.160000000001,
+        "end": 5905.160000000001
+    },
+    {
+        "text": " De una instancia, de tres ad, en términos de la gentidad de un grafo,",
+        "start": 5905.160000000001,
+        "end": 5910.92
+    },
+    {
+        "text": " con los cuales estamos apuntando todo para detectar conjuntos independientes.",
+        "start": 5910.92,
+        "end": 5915.160000000001
+    },
+    {
+        "text": " Esa es la idea.",
+        "start": 5915.160000000001,
+        "end": 5916.160000000001
+    },
+    {
+        "text": " O sea, una instancia de tres ad, se satisface, solo sí.",
+        "start": 5916.16,
+        "end": 5920.12
+    },
+    {
+        "text": " Sí, solo sí.",
+        "start": 5920.12,
+        "end": 5921.12
+    },
+    {
+        "text": " El grafo G tiene un conjunto independiente de tamaño al menos K.",
+        "start": 5921.12,
+        "end": 5926.72
+    },
+    {
+        "text": " De la cantidad de esa.",
+        "start": 5926.72,
+        "end": 5928.5599999999995
+    },
+    {
+        "text": " K, como condicionador.",
+        "start": 5928.5599999999995,
+        "end": 5930.5599999999995
+    },
+    {
+        "text": " Y bueno, ese es el proceso de transformación.",
+        "start": 5930.5599999999995,
+        "end": 5932.599999999999
+    },
+    {
+        "text": " Con esto tenemos representado en la estructura y bueno, lo que ahora es que,",
+        "start": 5932.6,
+        "end": 5949.6
+    },
+    {
+        "text": " a partir de esa estructura, probarle que valencia esa que está ahí.",
+        "start": 5949.6,
+        "end": 5955.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 5955.0,
+        "end": 5959.0
+    },
+    {
+        "text": " Por una parte, si tenemos la instancia, si vamos de tres ad,",
+        "start": 5959.4,
+        "end": 5966.52
+    },
+    {
+        "text": " a la independencia, si la instancia de tres ad, se satisface,",
+        "start": 5966.52,
+        "end": 5971.0
+    },
+    {
+        "text": " entonces cada uno de los triángulos, o sea, las variables,",
+        "start": 5971.0,
+        "end": 5976.08
+    },
+    {
+        "text": " las innaciones van a ser tal que cada uno de los triángulos",
+        "start": 5976.08,
+        "end": 5978.92
+    },
+    {
+        "text": " contiene algún, al menos un participo que vale uno.",
+        "start": 5978.92,
+        "end": 5982.4
+    },
+    {
+        "text": " Entonces, sea ese.",
+        "start": 5983.4,
+        "end": 5985.4
+    },
+    {
+        "text": " Un conjunto compuesto por los vertes, escuyas variables vale uno.",
+        "start": 5985.4,
+        "end": 5988.799999999999
+    },
+    {
+        "text": " Ahora lo miramos del punto de distancia independiente.",
+        "start": 5988.799999999999,
+        "end": 5991.4
+    },
+    {
+        "text": " El conjunto es, es independiente, algo que si hubiera una lista,",
+        "start": 5991.4,
+        "end": 5996.4
+    },
+    {
+        "text": " entre un par de verdes, se hubiera una lista, entre un par de verdes,",
+        "start": 5996.4,
+        "end": 6000.799999999999
+    },
+    {
+        "text": " se des.",
+        "start": 6000.799999999999,
+        "end": 6003.799999999999
+    },
+    {
+        "text": " Las variables representan que las variables están en conflicto,",
+        "start": 6003.799999999999,
+        "end": 6006.4
+    },
+    {
+        "text": " porque están vinculadas con la lista que dijimos.",
+        "start": 6006.4,
+        "end": 6011.4
+    },
+    {
+        "text": " Lo cual no se va a dar.",
+        "start": 6012.4,
+        "end": 6014.4
+    },
+    {
+        "text": " Y bueno, por el contrario, se asume que G contiene un conjunto",
+        "start": 6014.4,
+        "end": 6019.4
+    },
+    {
+        "text": " independiente, es, desde al menos K, desde al menos de tamaño al menos K.",
+        "start": 6019.4,
+        "end": 6023.4
+    },
+    {
+        "text": " Entonces, el tamaño en ese exactamente K, y bueno, y consiste,",
+        "start": 6023.4,
+        "end": 6028.4
+    },
+    {
+        "text": " aunque va a elegir un barrio de cerca de uno de esos triángulos,",
+        "start": 6028.4,
+        "end": 6032.4
+    },
+    {
+        "text": " con lo cual se está seleccionando.",
+        "start": 6032.4,
+        "end": 6035.4
+    },
+    {
+        "text": " Las variables representan en las cláudulas que hacen que el problema",
+        "start": 6036.4,
+        "end": 6043.4
+    },
+    {
+        "text": " es de SAT se verifique.",
+        "start": 6043.4,
+        "end": 6046.4
+    },
+    {
+        "text": " Y bueno, esto es un resumen rápido del esquema de la prueba.",
+        "start": 6048.4,
+        "end": 6054.4
+    },
+    {
+        "text": " Y bueno, las pruebas, si estas se basan en eso,",
+        "start": 6060.4,
+        "end": 6062.4
+    },
+    {
+        "text": " hay que armar una esquema de transformación de uno de uno de uno",
+        "start": 6063.4,
+        "end": 6067.4
+    },
+    {
+        "text": " y demostrar la equivalencia entre los dos.",
+        "start": 6067.4,
+        "end": 6071.4
+    },
+    {
+        "text": " Y bueno, este es el resto de la parte contrari,",
+        "start": 6071.4,
+        "end": 6078.4
+    },
+    {
+        "text": " este es el resto de desarrollo.",
+        "start": 6078.4,
+        "end": 6081.4
+    },
+    {
+        "text": " Voy a pasar, se lo demás, lo pueden mirar en detalle.",
+        "start": 6081.4,
+        "end": 6086.4
+    },
+    {
+        "text": " Y bueno, finalmente, una propiedad clave de la reducción en tiempo",
+        "start": 6087.4,
+        "end": 6098.4
+    },
+    {
+        "text": " con lino miave es que es una relación transitiva.",
+        "start": 6098.4,
+        "end": 6102.4
+    },
+    {
+        "text": " Si nosotros tenemos pares de reducciones de tiempo con lino miave",
+        "start": 6102.4,
+        "end": 6109.4
+    },
+    {
+        "text": " que están encadenadas en los problemas en los cuales se define,",
+        "start": 6109.4,
+        "end": 6115.4
+    },
+    {
+        "text": " entonces podemos establecer la transitividad,",
+        "start": 6116.4,
+        "end": 6121.4
+    },
+    {
+        "text": " bueno, en este caso, por ejemplo, mira, si SAT se puede reducir en tiempo con lino miave,",
+        "start": 6121.4,
+        "end": 6127.4
+    },
+    {
+        "text": " ahí, y se puede reducir en tiempo en la AX,",
+        "start": 6127.4,
+        "end": 6132.4
+    },
+    {
+        "text": " entonces se cumple que SAT se puede reducir en tiempo con lino miave.",
+        "start": 6132.4,
+        "end": 6137.4
+    },
+    {
+        "text": " La prueba de esto se basan las definición de reducción en tiempo con lino miave,",
+        "start": 6137.4,
+        "end": 6142.4
+    },
+    {
+        "text": " es como una, hay que componer las dos reducciones entre SAT y EX,",
+        "start": 6143.4,
+        "end": 6151.4
+    },
+    {
+        "text": " y como todo es polinomial se va propagando,",
+        "start": 6151.4,
+        "end": 6155.4
+    },
+    {
+        "text": " la polilla iniminialidad de la resolución.",
+        "start": 6155.4,
+        "end": 6159.4
+    },
+    {
+        "text": " Para el primer caso, tenemos los algoritmos asociados",
+        "start": 6159.4,
+        "end": 6167.4
+    },
+    {
+        "text": " para las cajas negras de EX,",
+        "start": 6167.4,
+        "end": 6171.4
+    },
+    {
+        "text": " el formato hay que concluir que usamos la caja negra de EX para resolverse.",
+        "start": 6171.4,
+        "end": 6181.4
+    },
+    {
+        "text": " Esta es la esquema.",
+        "start": 6181.4,
+        "end": 6188.4
+    },
+    {
+        "text": " Bueno, esto termina cerrando todo el proceso,",
+        "start": 6188.4,
+        "end": 6196.4
+    },
+    {
+        "text": " el proceso de vincula entre todos los problemas de esto,",
+        "start": 6196.4,
+        "end": 6202.4
+    },
+    {
+        "text": " que no tiene nada solucionificiente,",
+        "start": 6202.4,
+        "end": 6205.4
+    },
+    {
+        "text": " que no hay las cosas que nos interesa para categorizarlos en una clase.",
+        "start": 6205.4,
+        "end": 6208.4
+    },
+    {
+        "text": " Bueno, nosotros ya vimos, por ejemplo, algunas reducciones de que se cumple,",
+        "start": 6208.4,
+        "end": 6213.4
+    },
+    {
+        "text": " sabemos que el Tresat se puede reducir en tiempo con lino miave independentes,",
+        "start": 6213.4,
+        "end": 6217.4
+    },
+    {
+        "text": " que independes, se puede reducir en parte escober,",
+        "start": 6217.4,
+        "end": 6222.4
+    },
+    {
+        "text": " que va a descober, se puede reducir en tiempo con lino miave de la SAT,",
+        "start": 6222.4,
+        "end": 6226.4
+    },
+    {
+        "text": " bueno, entonces podemos concluir de estas tres reducciones,",
+        "start": 6226.4,
+        "end": 6231.4
+    },
+    {
+        "text": " que Tresat se puede reducir en tiempo con lino miave de SAT,",
+        "start": 6231.4,
+        "end": 6237.4
+    },
+    {
+        "text": " y se puede trabajar fuertemente para establecer el vincula entre todos los problemas.",
+        "start": 6237.4,
+        "end": 6244.4
+    },
+    {
+        "text": " Hasta el punto de que todos los problemas de NNP completo a la larga a través de este mecanismo,",
+        "start": 6244.4,
+        "end": 6253.4
+    },
+    {
+        "text": " también han reduciendo 1 entre 8.",
+        "start": 6253.4,
+        "end": 6259.4
+    },
+    {
+        "text": " Bueno, hasta acá vimos que la herramienta fundamental de todo el esquema de comparación de problemas,",
+        "start": 6260.4,
+        "end": 6277.4
+    },
+    {
+        "text": " para categorizar los inclases de dificultad,",
+        "start": 6277.4,
+        "end": 6281.4
+    },
+    {
+        "text": " no hay resta a ver otra que nos vamos a ver en la clase que viene,",
+        "start": 6281.4,
+        "end": 6285.4
+    },
+    {
+        "text": " de la clase que viene, de termina de cerrar todo el esquema,",
+        "start": 6285.4,
+        "end": 6290.4
+    },
+    {
+        "text": " para definir el conjunto de los problemas en NP,",
+        "start": 6290.4,
+        "end": 6299.4
+    },
+    {
+        "text": " y ver que Roy cumple en estas clases,",
+        "start": 6299.4,
+        "end": 6303.4
+    },
+    {
+        "text": " y sobre todo, plantear el desafío ese de que aún no se ha podido probar",
+        "start": 6303.4,
+        "end": 6309.4
+    },
+    {
+        "text": " que los problemas de los cuales se desconocen,",
+        "start": 6309.4,
+        "end": 6312.4
+    },
+    {
+        "text": " que tengan resolución polinomial,",
+        "start": 6312.4,
+        "end": 6315.4
+    },
+    {
+        "text": " realmente no la tenga.",
+        "start": 6315.4,
+        "end": 6319.4
+    },
+    {
+        "text": " Bueno, se tiene alguna duda, pregunta.",
+        "start": 6319.4,
+        "end": 6323.4
+    },
+    {
+        "text": " Bueno, si no.",
+        "start": 6339.4,
+        "end": 6341.4
+    }
+]

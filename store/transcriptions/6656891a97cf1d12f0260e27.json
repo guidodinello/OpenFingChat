@@ -1,0 +1,3047 @@
+[
+    {
+        "text": " Bien.",
+        "start": 0.0,
+        "end": 7.0
+    },
+    {
+        "text": " Viendo más, así que, haciendo un poquito más complicado, pero no vamos a ver.",
+        "start": 7.0,
+        "end": 29.0
+    },
+    {
+        "text": " Bueno, hasta ahora vimos una serie de estrategias en el curso.",
+        "start": 29.0,
+        "end": 45.0
+    },
+    {
+        "text": " La más evidente fue la de los agorimos habidos o gridi.",
+        "start": 45.0,
+        "end": 55.0
+    },
+    {
+        "text": " Y ustedes vieron que en general era bastante intuitiva, pero que no siempre resuelve lo que queremos saber.",
+        "start": 56.0,
+        "end": 65.0
+    },
+    {
+        "text": " Hay un montón de problemas que nos pueden enfrentar con la estrategia grí.",
+        "start": 65.0,
+        "end": 70.0
+    },
+    {
+        "text": " Y ahí vimos, verán confanando, raticias de vivar en concar, de dividir y contaras.",
+        "start": 70.0,
+        "end": 81.0
+    },
+    {
+        "text": " Pero básicamente, en la estrategia de vivir y instalar a veces, no siguen para los tiempos de vivir función, pero los casos que hemos visto son, típicamente, polinómicos de arranques.",
+        "start": 82.0,
+        "end": 101.0
+    },
+    {
+        "text": " Lo que hacemos es bajar, pero la producción para no subar.",
+        "start": 101.0,
+        "end": 106.0
+    },
+    {
+        "text": " Vamos a ver ahora una cosa que se llama, la programación dinámica y que tiene un nombre raro y que, a medida que vayan viendo, de qué se trata, le va a parecer más raro.",
+        "start": 106.0,
+        "end": 124.0
+    },
+    {
+        "text": " El nombre raro es porque esto se lo inventó un tal rechazo, el man en dos cuarenta cincuentas.",
+        "start": 125.0,
+        "end": 135.0
+    },
+    {
+        "text": " Y este hombre trabajaba para una empresa que trabajaba para el Ministerio de Defensa Estonia, y parece ser que el ministro defensa, secretario de Defensa,",
+        "start": 135.0,
+        "end": 152.0
+    },
+    {
+        "text": " y el Ministerio de Defensa Estonia, no le gustaba nada la investigación en general, le parecía algo de que había pesado la investigación y la matemática y la investigación en matemática le cayó mucho más pesada.",
+        "start": 153.0,
+        "end": 166.0
+    },
+    {
+        "text": " Y este hombre rechadre el man de la matemática.",
+        "start": 166.0,
+        "end": 170.0
+    },
+    {
+        "text": " Después, no sé si ya hicieron redes de computadoras, creo que no van a cruzarse con él.",
+        "start": 170.0,
+        "end": 176.0
+    },
+    {
+        "text": " Es uno de los tipos que inventó uno de los agroedinamos más importantes atrás de cómo enviar para que estés a través de internet.",
+        "start": 176.0,
+        "end": 187.0
+    },
+    {
+        "text": " Este hombre se le había ocurrido esta estrategia que vamos a presentar en esta semana.",
+        "start": 187.0,
+        "end": 196.0
+    },
+    {
+        "text": " Pero no quería llamarle como debería llamarse, que era algo así como optimización por capas o alguna por cosas por el estilo, para no asustar a este hombre que financiaba su investigación y se le ocurrió que buscar palabras que liban a ser una leyenda, el ministro de Defensa,",
+        "start": 197.0,
+        "end": 225.0
+    },
+    {
+        "text": " y se le ocurrió que programación estaba bien vista en esos años, así que alabra que programación estaba bien, y después se le ocurrió que dinámico era un adjetivo que en ningún momento se le ocurre a nada negativo para acerca de dinámico, así que le puso a programación dinámica.",
+        "start": 225.0,
+        "end": 247.0
+    },
+    {
+        "text": " Simplemente porque le pareció un buen nombre para que no le cortaran su investigación.",
+        "start": 247.0,
+        "end": 254.0
+    },
+    {
+        "text": " De ahí es que vayan a ver que el nombre no tiene mucho que ver con la piada.",
+        "start": 254.0,
+        "end": 259.0
+    },
+    {
+        "text": " ¿Qué consiste en la sumtodos? Vamos a retomar el problema de la programación de intervalos que vieron anteriormente en el curso.",
+        "start": 260.0,
+        "end": 279.0
+    },
+    {
+        "text": " La idea de que tenemos unos intervalos, en un segundo que tengo, no tener más me convict.",
+        "start": 279.0,
+        "end": 292.0
+    },
+    {
+        "text": " ¿Se acuerdan el caso de la promoción de intervalos? Teníamos distintos tareas o reservos de recursos que duraban distintos intervalos y que estaban potenciacamente una superpuesta sobre otras.",
+        "start": 310.0,
+        "end": 335.0
+    },
+    {
+        "text": " Y lo que queríamos era definir cómo hacer una después de la otra de forma que no se superpreciera, no de forma posible.",
+        "start": 336.0,
+        "end": 347.0
+    },
+    {
+        "text": " En este caso vamos a extender la idea.",
+        "start": 347.0,
+        "end": 359.0
+    },
+    {
+        "text": " Vamos a extender la idea y vamos a tener un intervalo de tiempo, una serie de tareas, la tarea 1, la tarea 2, la tarea 3 o reservas o de solicitudes.",
+        "start": 360.0,
+        "end": 377.0
+    },
+    {
+        "text": " Y no solo van a tener una duración en el tiempo, algo así, con una hora de comienzo y una hora de sim, sino que además van a tener un valor.",
+        "start": 378.0,
+        "end": 402.0
+    },
+    {
+        "text": " Este es un valor de la tarea 1, el valor de la tarea 2, el que se puede número, el valor de la tarea 3.",
+        "start": 403.0,
+        "end": 424.0
+    },
+    {
+        "text": " Entonces, no solo queremos encontrar una forma de realizar esta tarea posible, es decir, acá podríamos hacer una tarea 1, la tarea 3, pero si no, que además queremos maximizar la suma de los valores de la tarea 1.",
+        "start": 425.0,
+        "end": 449.0
+    },
+    {
+        "text": " Y si estas tareas no reportaran una ganancia, hay un trabajo que ustedes tienen que hacer y cada tipo de trabajo tiene una ganancia de determinada y nosotros queremos ordenar la forma que nos maximices a ganancia.",
+        "start": 450.0,
+        "end": 463.0
+    },
+    {
+        "text": " En este caso, ¿qué pasa de la idea?",
+        "start": 463.0,
+        "end": 466.0
+    },
+    {
+        "text": " Claro, uno podría pensar, bueno, lo mejor es hacer la tarea 1, la tarea 3, pero una idea, con esas 2, ganó 2 unidades de lo que sea dos pesos.",
+        "start": 466.0,
+        "end": 476.0
+    },
+    {
+        "text": " Sin embargo, si cierra la tarea 2, solo no hicieron ni la 1 y la 3, ganaría 3.",
+        "start": 477.0,
+        "end": 485.0
+    },
+    {
+        "text": " En definitiva lo que queremos es elegir de estas tareas, y como un estúl como tu tarea, que era contible, además, y que además las maximise el valor.",
+        "start": 485.0,
+        "end": 502.0
+    },
+    {
+        "text": " Eso se entiende?",
+        "start": 503.0,
+        "end": 505.0
+    },
+    {
+        "text": " Sí, sí.",
+        "start": 509.0,
+        "end": 510.0
+    },
+    {
+        "text": " Entonces, vamos a ver que estas tareas tienen un problema con la ubicación de la cosa.",
+        "start": 514.0,
+        "end": 529.0
+    },
+    {
+        "text": " Esta tarea tiene un... tenemos en las tareas.",
+        "start": 533.0,
+        "end": 556.0
+    },
+    {
+        "text": " Y cada tarea tiene un comienzo y un final.",
+        "start": 557.0,
+        "end": 562.0
+    },
+    {
+        "text": " Tienen una hora de comienzo y una hora de final.",
+        "start": 562.0,
+        "end": 571.0
+    },
+    {
+        "text": " Y después tienen una serie de valores asociados.",
+        "start": 577.0,
+        "end": 583.0
+    },
+    {
+        "text": " Y en 1, el.",
+        "start": 586.0,
+        "end": 592.0
+    },
+    {
+        "text": " Lo que queremos es maximizar el elegir un su conjunto de tareas, ese incluido en los índices 1, el.",
+        "start": 599.0,
+        "end": 612.0
+    },
+    {
+        "text": " Tal que la suma de las tareas que pertenecen a ese, en las tareas que pertenecen a ese, de todos los valores, es máxima.",
+        "start": 613.0,
+        "end": 632.0
+    },
+    {
+        "text": " Y vamos a arrancar para poder trabajar más tranquilos con la idea de que cuando no llegan estas tareas ya están ordenadas por hora de finalización.",
+        "start": 633.0,
+        "end": 655.0
+    },
+    {
+        "text": " Es decir, la tarea 1 viene hora de final.",
+        "start": 655.0,
+        "end": 659.0
+    },
+    {
+        "text": " Y una hora de finalización que es menor igual que la tarea 2, que es menor igual que la finalización de la tarea 3 y así hasta tarea n.",
+        "start": 663.0,
+        "end": 684.0
+    },
+    {
+        "text": " Eso simplemente nos ayuda a visualizar el conjunto de tareas como lo tenemos aquí.",
+        "start": 685.0,
+        "end": 693.0
+    },
+    {
+        "text": " Están ordenadas aquí de arriba abajo donde cada una tiene una hora de finalización, esta es la hora de finalización de 1, esta es la hora de finalización de 2 y esta es la hora de finalización de 3.",
+        "start": 693.0,
+        "end": 707.0
+    },
+    {
+        "text": " Simplemente no nos cambian nada, nosotros ya sabemos cómo ordenar este tipo de cosas, así que podemos arrancar asumiendo que tenemos una cosa de así.",
+        "start": 714.0,
+        "end": 722.0
+    },
+    {
+        "text": " Ahora bien, cómo hacemos esto, ¿cuál es, cómo se les ocurre que podemos empezar a elegir tareas de forma consistente?",
+        "start": 725.0,
+        "end": 741.0
+    },
+    {
+        "text": " Vamos a empezar, creemos que tener alguna idea de que es una tarea consistente, por ejemplo, la tarea esta tarea 3 acá.",
+        "start": 741.0,
+        "end": 753.0
+    },
+    {
+        "text": " ¿Cuál es la tarea anterior que puedo realizar sin superponerse conmita?",
+        "start": 753.0,
+        "end": 763.0
+    },
+    {
+        "text": " Esta dragá no es la 2, no es, pero la 3 sí.",
+        "start": 763.0,
+        "end": 767.0
+    },
+    {
+        "text": " Entonces nos inventamos un concepto que es la tarea j y tenemos la idea de p de j.",
+        "start": 767.0,
+        "end": 779.0
+    },
+    {
+        "text": " P de j es el índice o es el mayor índice, posible de una tarea",
+        "start": 779.0,
+        "end": 802.0
+    },
+    {
+        "text": " que no se superpone con j.",
+        "start": 810.0,
+        "end": 821.0
+    },
+    {
+        "text": " ¿Eso se entiende?",
+        "start": 823.0,
+        "end": 825.0
+    },
+    {
+        "text": " En este caso, P de 3 es igual a 1, ¿porque? Porque el mayor índice posible de una tarea que no se superpone con la tarea 3 es 1.",
+        "start": 826.0,
+        "end": 848.0
+    },
+    {
+        "text": " No es el menor índice en todo caso, entonces, ¿pará?",
+        "start": 849.0,
+        "end": 853.0
+    },
+    {
+        "text": " Si no sería el menor índice.",
+        "start": 853.0,
+        "end": 855.0
+    },
+    {
+        "text": " No, pongamos que tenemos otra, vamos a poner un ejemplo más completo.",
+        "start": 855.0,
+        "end": 865.0
+    },
+    {
+        "text": " De hecho, lo mejor es que lo complie acá.",
+        "start": 868.0,
+        "end": 871.0
+    },
+    {
+        "text": " En este ejemplo, estoy sacando del libro.",
+        "start": 878.0,
+        "end": 882.0
+    },
+    {
+        "text": " Estas tareas también se dan cuenta que si bien empiezan las tareas 4, por ejemplo, empiezan antes que las 3, pero termina después de las 3.",
+        "start": 909.0,
+        "end": 919.0
+    },
+    {
+        "text": " Entonces, está en ordenada por hora de finalización.",
+        "start": 919.0,
+        "end": 922.0
+    },
+    {
+        "text": " En este caso, el P de 6, que la tarea está aquí, es la última tarea, o sea, la tarea más que termina más tarde,",
+        "start": 922.0,
+        "end": 936.0
+    },
+    {
+        "text": " pero que no se superpone con la tarea sales.",
+        "start": 937.0,
+        "end": 940.0
+    },
+    {
+        "text": " Entonces, si se fijan las 5 se superpone, la 4 se superpone, la 3 no.",
+        "start": 940.0,
+        "end": 948.0
+    },
+    {
+        "text": " Entonces, P de 6 es 3.",
+        "start": 948.0,
+        "end": 951.0
+    },
+    {
+        "text": " Ahora sí, si se fijan, el menor sería 1, pero no, lo que estamos quedando, no se estamos cuidando con la U,",
+        "start": 954.0,
+        "end": 963.0
+    },
+    {
+        "text": " pero es la última tarea que no se superpone con la que estamos mirando.",
+        "start": 963.0,
+        "end": 969.0
+    },
+    {
+        "text": " No pregunta. ¿Y por qué P de 3 es 1 y no 6?",
+        "start": 969.0,
+        "end": 976.0
+    },
+    {
+        "text": " A ver de nuevo.",
+        "start": 976.0,
+        "end": 978.0
+    },
+    {
+        "text": " ¿Por qué P de 3 es 1 y no 6?",
+        "start": 978.0,
+        "end": 983.0
+    },
+    {
+        "text": " ¿Cuál es? Vamos a ir para el peor. ¿Cuál es el P de 5?",
+        "start": 984.0,
+        "end": 989.0
+    },
+    {
+        "text": " ¿Cuál es la última tarea que no se superpone con 5?",
+        "start": 989.0,
+        "end": 995.0
+    },
+    {
+        "text": " 4 se superpone, pero no se superpone, así que P de 5 también 3.",
+        "start": 996.0,
+        "end": 1000.0
+    },
+    {
+        "text": " ¿Qué es tu nueva para atrás para considerar las tareas?",
+        "start": 1000.0,
+        "end": 1004.0
+    },
+    {
+        "text": " Va para atrás, exactamente.",
+        "start": 1004.0,
+        "end": 1006.0
+    },
+    {
+        "text": " Entonces, P de 4, si se fijan, no tiene ninguna tarea que no se superponga hacia atrás.",
+        "start": 1006.0,
+        "end": 1013.0
+    },
+    {
+        "text": " Entonces, eso que acabas de decir es importante.",
+        "start": 1018.0,
+        "end": 1023.0
+    },
+    {
+        "text": " P de j, tienen 3, menor que j.",
+        "start": 1023.0,
+        "end": 1029.0
+    },
+    {
+        "text": " Bien, va a ser.",
+        "start": 1030.0,
+        "end": 1033.0
+    },
+    {
+        "text": " Pero en el caso de P de 4 no tiene ninguna tarea menor que no se superponga,",
+        "start": 1033.0,
+        "end": 1039.0
+    },
+    {
+        "text": " así que por la disinición S, eso es 0.",
+        "start": 1039.0,
+        "end": 1043.0
+    },
+    {
+        "text": " O sea, cuando no hay ninguna, P de j es 0.",
+        "start": 1043.0,
+        "end": 1048.0
+    },
+    {
+        "text": " Lo que estamos definiendo acá, en definitiva,",
+        "start": 1052.0,
+        "end": 1055.0
+    },
+    {
+        "text": " ¿Cuál es la última tarea que no se superpone con 5?",
+        "start": 1055.0,
+        "end": 1060.0
+    },
+    {
+        "text": " ¿Por qué es importante esto?",
+        "start": 1060.0,
+        "end": 1063.0
+    },
+    {
+        "text": " Porque lo justamente lo que queremos es seleccionar un conjunto de tareas que no se superponen y que maximiza el valor.",
+        "start": 1063.0,
+        "end": 1070.0
+    },
+    {
+        "text": " Entonces, a pesar de que agarrancar, ¿cuál es esta tarea?",
+        "start": 1070.0,
+        "end": 1075.0
+    },
+    {
+        "text": " ¿Cuál es la última que no se superpone?",
+        "start": 1075.0,
+        "end": 1078.0
+    },
+    {
+        "text": " No podría ser menor igual que un uso de que ninguna se superponga.",
+        "start": 1079.0,
+        "end": 1084.0
+    },
+    {
+        "text": " No, cuando si no hay ninguna que cumpla con esa condición, S.",
+        "start": 1084.0,
+        "end": 1093.0
+    },
+    {
+        "text": " Y acorate que los índices son todos distintos.",
+        "start": 1093.0,
+        "end": 1098.0
+    },
+    {
+        "text": " Yo estoy numerando las tareas de 1 a n y son todos distintos.",
+        "start": 1098.0,
+        "end": 1103.0
+    },
+    {
+        "text": " Entonces, P de j es otra tarea y si es otra es o más o menos.",
+        "start": 1103.0,
+        "end": 1109.0
+    },
+    {
+        "text": " Entonces, esto es importante, por ahora no se entiende muy bien para dónde vamos,",
+        "start": 1114.0,
+        "end": 1119.0
+    },
+    {
+        "text": " pero es importante para la siguiente, porque es para empezar a definir el problema o la solución del problema.",
+        "start": 1119.0,
+        "end": 1130.0
+    },
+    {
+        "text": " Entonces, vamos a lo que queremos es encontrar ese subconjunto de tareas que no se superponen y que me maximiza el valor.",
+        "start": 1131.0,
+        "end": 1145.0
+    },
+    {
+        "text": " Todavía nos sabemos cómo encontrarlo.",
+        "start": 1145.0,
+        "end": 1148.0
+    },
+    {
+        "text": " Vamos a sumir que la conocemos.",
+        "start": 1148.0,
+        "end": 1150.0
+    },
+    {
+        "text": " Tenemos una solución, la esprodeva, que es ó, ó de óptimo o con un setado.",
+        "start": 1150.0,
+        "end": 1159.0
+    },
+    {
+        "text": " O con un sequícito ahí.",
+        "start": 1159.0,
+        "end": 1162.0
+    },
+    {
+        "text": " Que no sabemos cuál es, pero lo asumimos que la conocemos.",
+        "start": 1162.0,
+        "end": 1165.0
+    },
+    {
+        "text": " Es la mejor.",
+        "start": 1165.0,
+        "end": 1167.0
+    },
+    {
+        "text": " Vamos a arrancar por la tarea o la última tarea.",
+        "start": 1167.0,
+        "end": 1172.0
+    },
+    {
+        "text": " Tenemos el problema, contareas de 1 a n.",
+        "start": 1172.0,
+        "end": 1176.0
+    },
+    {
+        "text": " La última tarea. ¿Qué podemos decir de ella?",
+        "start": 1179.0,
+        "end": 1183.0
+    },
+    {
+        "text": " ¿Pertenece o no pertenece a la solución?",
+        "start": 1184.0,
+        "end": 1188.0
+    },
+    {
+        "text": " Está bien. ¿Qué estoy diciendo?",
+        "start": 1188.0,
+        "end": 1192.0
+    },
+    {
+        "text": " Entonces, esto o es la solución del problema?",
+        "start": 1192.0,
+        "end": 1197.0
+    },
+    {
+        "text": " Ahora, n, hasta la tarea, n, o n, n, pertenece a la solución.",
+        "start": 1197.0,
+        "end": 1223.0
+    },
+    {
+        "text": " O bien, n, no pertenece a la solución.",
+        "start": 1223.0,
+        "end": 1231.0
+    },
+    {
+        "text": " Es bastante evidente, ¿no?",
+        "start": 1231.0,
+        "end": 1235.0
+    },
+    {
+        "text": " ¿Qué dice? No podemos decir que si pn es igual a n minus 1 pertenece seguro.",
+        "start": 1235.0,
+        "end": 1243.0
+    },
+    {
+        "text": " Vamos a meterlos en esa línea de resonamiento.",
+        "start": 1243.0,
+        "end": 1248.0
+    },
+    {
+        "text": " ¿Qué pasa?",
+        "start": 1248.0,
+        "end": 1250.0
+    },
+    {
+        "text": " Si n pertenece a la solución.",
+        "start": 1250.0,
+        "end": 1254.0
+    },
+    {
+        "text": " Neste caso.",
+        "start": 1254.0,
+        "end": 1257.0
+    },
+    {
+        "text": " Por ejemplo, vamos al dibujo que tenemos acá.",
+        "start": 1259.0,
+        "end": 1263.0
+    },
+    {
+        "text": " N6.",
+        "start": 1263.0,
+        "end": 1266.0
+    },
+    {
+        "text": " N minus 1.",
+        "start": 1266.0,
+        "end": 1268.0
+    },
+    {
+        "text": " En este caso no está apropiéndose. ¿Cuál es el último que el primero que puede pertenecer siendo hacia atrás?",
+        "start": 1268.0,
+        "end": 1279.0
+    },
+    {
+        "text": " 3.",
+        "start": 1279.0,
+        "end": 1281.0
+    },
+    {
+        "text": " 3.",
+        "start": 1281.0,
+        "end": 1282.0
+    },
+    {
+        "text": " Es 3. Es para un 3.",
+        "start": 1282.0,
+        "end": 1285.0
+    },
+    {
+        "text": " Pd6.",
+        "start": 1285.0,
+        "end": 1288.0
+    },
+    {
+        "text": " Entonces, si n pertenece a la solución,",
+        "start": 1288.0,
+        "end": 1293.0
+    },
+    {
+        "text": " el otro que puede pertenecer a la solución es pn.",
+        "start": 1293.0,
+        "end": 1302.0
+    },
+    {
+        "text": " Puede, no es seguro.",
+        "start": 1302.0,
+        "end": 1307.0
+    },
+    {
+        "text": " No.",
+        "start": 1307.0,
+        "end": 1314.0
+    },
+    {
+        "text": " Se dan cuenta también porque estoy afirmando que puede pertenecer.",
+        "start": 1314.0,
+        "end": 1319.0
+    },
+    {
+        "text": " Porque, de repente, no es la que me maximizas, no quiero ver dónde viste,",
+        "start": 1319.0,
+        "end": 1323.0
+    },
+    {
+        "text": " que estoy tratando de maximizar el beneficio de elegir estas tareas.",
+        "start": 1323.0,
+        "end": 1328.0
+    },
+    {
+        "text": " Entonces, de repente,",
+        "start": 1328.0,
+        "end": 1330.0
+    },
+    {
+        "text": " 3.",
+        "start": 1330.0,
+        "end": 1334.0
+    },
+    {
+        "text": " Puede ponernos, pero me convenía más poner 2.",
+        "start": 1334.0,
+        "end": 1339.0
+    },
+    {
+        "text": " Por ejemplo, si está superponiendo con...",
+        "start": 1339.0,
+        "end": 1342.0
+    },
+    {
+        "text": " En este caso, las 2 valen lo mismo, pero podría ser que me conviviera no poner la tarea que...",
+        "start": 1342.0,
+        "end": 1352.0
+    },
+    {
+        "text": " Y ahora, ¿qué pasa si n pertenece?",
+        "start": 1352.0,
+        "end": 1361.0
+    },
+    {
+        "text": " Estas pasando todo, y si me acaban las baterías, me lo hablan.",
+        "start": 1361.0,
+        "end": 1368.0
+    },
+    {
+        "text": " Verma?",
+        "start": 1368.0,
+        "end": 1375.0
+    },
+    {
+        "text": " Singing.",
+        "start": 1375.0,
+        "end": 1381.0
+    },
+    {
+        "text": " Pero tengan otra una de las cosas, les promete que vamos.",
+        "start": 1387.0,
+        "end": 1392.0
+    },
+    {
+        "text": " ¿Qué pasa si n pertenece el sistema sonente de otro caso acá? n no pertenece a la solución.",
+        "start": 1392.0,
+        "end": 1415.5
+    },
+    {
+        "text": " Si n no pertenece a la solución, entonces la tarea n-1 puede pertenecer la solución.",
+        "start": 1415.5,
+        "end": 1425.78
+    },
+    {
+        "text": " No. Ya entiende eso. En este caso, en el caso de que tenemos de la figura acá, 16 no pertenece la solución.",
+        "start": 1425.78,
+        "end": 1451.28
+    },
+    {
+        "text": " Entonces, 5 podría pertenecer la solución. ¿Eh?",
+        "start": 1451.28,
+        "end": 1458.28
+    },
+    {
+        "text": " Entonces, ¿cómo vamos? ¿Cómo salimos razonando?",
+        "start": 1461.28,
+        "end": 1466.28
+    },
+    {
+        "text": " Poma de decir que si n en el no está perteneciendo por ejemplo en este caso, si sal no pertenece la solución.",
+        "start": 1466.28,
+        "end": 1479.28
+    },
+    {
+        "text": " Entonces, resolver este problema y acá es el punto clave de la promoción dinámica. Resolver el problema de tamaño 6, ya que sé que sal no pertenece, es igual que resolver el problema tamaño 5.",
+        "start": 1479.28,
+        "end": 1495.28
+    },
+    {
+        "text": " Entiende?",
+        "start": 1495.28,
+        "end": 1500.28
+    },
+    {
+        "text": " Sí. Esta parte es importante. Entonces, si no se entiende, diganme que le damos alguna vuelta.",
+        "start": 1500.28,
+        "end": 1515.28
+    },
+    {
+        "text": " Resolver, en este caso, la solución del problema de tamaño n es igual a la solución del problema tamaño N-1.",
+        "start": 1516.28,
+        "end": 1530.28
+    },
+    {
+        "text": " ¿Por qué? Porque yo ya decidí que sal no está, así que es lo mismo que la solución del problema con esta acá arriba.",
+        "start": 1530.28,
+        "end": 1541.28
+    },
+    {
+        "text": " ¿Eh?",
+        "start": 1542.28,
+        "end": 1545.28
+    },
+    {
+        "text": " Y lo mismo hago parecido en el caso de que n pertenece la solución por predecieron 2.",
+        "start": 1545.28,
+        "end": 1556.28
+    },
+    {
+        "text": " Si 6 pertenece, entonces, estos 2, todos lo que están entre p6 y 6, o sea, en este caso 4 y 5, no pueden pertenecer a la solución.",
+        "start": 1556.28,
+        "end": 1574.28
+    },
+    {
+        "text": " ¿Por qué? Porque 6 pertenece. Y 4 y 5 se superponen con 6. Así que, estos 2 no pueden pertenecer.",
+        "start": 1574.28,
+        "end": 1583.28
+    },
+    {
+        "text": " Si estos 2 no pertenecen, entonces, la solución a mi problema es, o sea, es que ya dijimos que estaba en la solución.",
+        "start": 1584.28,
+        "end": 1593.28
+    },
+    {
+        "text": " Y el resultado de resolver el problema de p6 para atrás.",
+        "start": 1593.28,
+        "end": 1603.28
+    },
+    {
+        "text": " ¿Eso parte?",
+        "start": 1604.28,
+        "end": 1607.28
+    },
+    {
+        "text": " Ahí va.",
+        "start": 1613.28,
+        "end": 1616.28
+    },
+    {
+        "text": " Imaginen que yo no sé la solución. Es ese sabor que no sabemos que tiene adentro.",
+        "start": 1619.28,
+        "end": 1626.28
+    },
+    {
+        "text": " La solución nos recuerden que es un subconjunto de taría.",
+        "start": 1626.28,
+        "end": 1631.28
+    },
+    {
+        "text": " Yo no sé cuál es, pero lo que sea es que la taría 6 puede estar o puede notar.",
+        "start": 1632.28,
+        "end": 1639.28
+    },
+    {
+        "text": " Entonces, ahora, asumimos que está. Assumamos que la taría 6 está.",
+        "start": 1639.28,
+        "end": 1647.28
+    },
+    {
+        "text": " Para ver cuáles son los mundos que se nos abre a mí.",
+        "start": 1647.28,
+        "end": 1651.28
+    },
+    {
+        "text": " Si la taría 6 está, está aquí.",
+        "start": 1651.28,
+        "end": 1656.28
+    },
+    {
+        "text": " Entonces, todas las que se superponen con 6 no pueden estar.",
+        "start": 1657.28,
+        "end": 1665.28
+    },
+    {
+        "text": " La primera que puede estar es p6, que es esta cara 3.",
+        "start": 1668.28,
+        "end": 1674.28
+    },
+    {
+        "text": " Y podrían estar esta también. Porque no se superponen.",
+        "start": 1674.28,
+        "end": 1680.28
+    },
+    {
+        "text": " Todo lo que está para acá, todo lo que termina antes de comienzo de sales, puede estar.",
+        "start": 1681.28,
+        "end": 1689.28
+    },
+    {
+        "text": " En la solución puesta, no sé si está.",
+        "start": 1689.28,
+        "end": 1693.28
+    },
+    {
+        "text": " Entonces, estamos recuerden que estamos en la realidad.",
+        "start": 1693.28,
+        "end": 1698.28
+    },
+    {
+        "text": " Estamos dividimos la realidad en 2.",
+        "start": 1698.28,
+        "end": 1701.28
+    },
+    {
+        "text": " En 1, 6 estaba en la solución, en otra, 6 no estaba en la solución.",
+        "start": 1701.28,
+        "end": 1706.28
+    },
+    {
+        "text": " Y ahora estamos explorando el mundo en el que se dice está en la solución.",
+        "start": 1706.28,
+        "end": 1711.28
+    },
+    {
+        "text": " Si se dice está en la solución, bueno, está.",
+        "start": 1711.28,
+        "end": 1714.28
+    },
+    {
+        "text": " Entonces, en este caso, se dice nuestro jgenéridco.",
+        "start": 1714.28,
+        "end": 1723.28
+    },
+    {
+        "text": " Entonces, si j pertenece a la solución,",
+        "start": 1728.28,
+        "end": 1732.28
+    },
+    {
+        "text": " entonces, p de j puede parecer a la solución.",
+        "start": 1733.28,
+        "end": 1740.28
+    },
+    {
+        "text": " No quiero poner parten, no sé por qué, no es parten, es pueno.",
+        "start": 1743.28,
+        "end": 1748.28
+    },
+    {
+        "text": " Para denecer.",
+        "start": 1754.28,
+        "end": 1756.28
+    },
+    {
+        "text": " Y no solo pede jota, todos los y menores, oye, todos los y menores iguales que pede jota, pueden pertenecer la solución.",
+        "start": 1757.28,
+        "end": 1780.28
+    },
+    {
+        "text": " Hasta yo vamos bien.",
+        "start": 1781.28,
+        "end": 1783.28
+    },
+    {
+        "text": " Sí.",
+        "start": 1787.28,
+        "end": 1789.28
+    },
+    {
+        "text": " Sí. Pero no solo puede pertenecer.",
+        "start": 1789.28,
+        "end": 1792.28
+    },
+    {
+        "text": " A ver, que hacía una chata ahí.",
+        "start": 1792.28,
+        "end": 1795.28
+    },
+    {
+        "text": " Sí.",
+        "start": 1795.28,
+        "end": 1796.28
+    },
+    {
+        "text": " No solo puede pertenecer, sino que miren acá.",
+        "start": 1796.28,
+        "end": 1800.28
+    },
+    {
+        "text": " Si yo resolvo de prena al línea roja para allá.",
+        "start": 1800.28,
+        "end": 1803.28
+    },
+    {
+        "text": " Es decir, mátil, el valor de la rea, el estilo, de la rea roja para allá, y le agregó.",
+        "start": 1804.28,
+        "end": 1812.28
+    },
+    {
+        "text": " 6.",
+        "start": 1812.28,
+        "end": 1814.28
+    },
+    {
+        "text": " Estoy resolviendo el problema también.",
+        "start": 1814.28,
+        "end": 1817.28
+    },
+    {
+        "text": " Eso se entiende.",
+        "start": 1817.28,
+        "end": 1819.28
+    },
+    {
+        "text": " Sí.",
+        "start": 1824.28,
+        "end": 1825.28
+    },
+    {
+        "text": " Sí.",
+        "start": 1825.28,
+        "end": 1826.28
+    },
+    {
+        "text": " A alguien dice, puede repetirlo.",
+        "start": 1827.28,
+        "end": 1830.28
+    },
+    {
+        "text": " Si él elegir el su conjunto de tareas, comando todo, de 1 a 6, que maximiza el valor, es igual, asumiendo que está 6, es igual a poner 6 y resolver el problema para las anteriores.",
+        "start": 1833.28,
+        "end": 1852.28
+    },
+    {
+        "text": " Me olvido de esta parte y resuelvo el problema acá.",
+        "start": 1853.28,
+        "end": 1861.28
+    },
+    {
+        "text": " Y después le agregó 6.",
+        "start": 1861.28,
+        "end": 1864.28
+    },
+    {
+        "text": " Eso también lo sobre el problema.",
+        "start": 1864.28,
+        "end": 1866.28
+    },
+    {
+        "text": " Pues considera alguna que no puede ir con 6.",
+        "start": 1883.28,
+        "end": 1886.28
+    },
+    {
+        "text": " Sí, pero ahora vamos a ver si la avanza ha sido así, y le quedamos clar.",
+        "start": 1886.28,
+        "end": 1891.28
+    },
+    {
+        "text": " Supongamos que habíamos explorado el mundo en que 6 estaba la solución. Vamos a suponer que ahora 6 no está la solución.",
+        "start": 1892.28,
+        "end": 1913.28
+    },
+    {
+        "text": " ¿Cuál puede estar? Y bueno, puede estar cualquiera de estas.",
+        "start": 1914.28,
+        "end": 1920.28
+    },
+    {
+        "text": " Y ahora más de conjuntos hasta que puedas incluir hacer.",
+        "start": 1926.28,
+        "end": 1929.28
+    },
+    {
+        "text": " A ver, momento.",
+        "start": 1929.28,
+        "end": 1931.28
+    },
+    {
+        "text": " Si 6 no está, vamos a asumir.",
+        "start": 1931.28,
+        "end": 1934.28
+    },
+    {
+        "text": " No sabemos cuál es la solución.",
+        "start": 1934.28,
+        "end": 1936.28
+    },
+    {
+        "text": " Estamos imaginando dos puntos posibles.",
+        "start": 1936.28,
+        "end": 1938.28
+    },
+    {
+        "text": " En 1 a 6 está y en el otro 6 no está.",
+        "start": 1938.28,
+        "end": 1941.28
+    },
+    {
+        "text": " Ahora vamos a ver el mundo posible en el que 6 no está la solución.",
+        "start": 1942.28,
+        "end": 1946.28
+    },
+    {
+        "text": " Si 6 no está la solución, resolver mi problema.",
+        "start": 1946.28,
+        "end": 1951.28
+    },
+    {
+        "text": " Ahí va.",
+        "start": 1951.28,
+        "end": 1954.28
+    },
+    {
+        "text": " Resuelve mi problema, es igual que si 6 no está, es igual que resolverlo de acá para atrás.",
+        "start": 1954.28,
+        "end": 1961.28
+    },
+    {
+        "text": " No.",
+        "start": 1962.28,
+        "end": 1964.28
+    },
+    {
+        "text": " 6 no está.",
+        "start": 1964.28,
+        "end": 1966.28
+    },
+    {
+        "text": " Así que mi problema es igual que en el caso de que mi no está, mi problema es este, es igual a el caso de 6.",
+        "start": 1966.28,
+        "end": 1980.28
+    },
+    {
+        "text": " Eso le entiende, entonces dividimos el mundo en dos partes.",
+        "start": 1980.28,
+        "end": 1985.28
+    },
+    {
+        "text": " En 1 la tarea 6 está en la solución y en el otro la tarea 6 no está en la solución.",
+        "start": 1986.28,
+        "end": 1993.28
+    },
+    {
+        "text": " Y en el caso en el que la tarea 6 está en la solución,",
+        "start": 1993.28,
+        "end": 1999.28
+    },
+    {
+        "text": " mi solución es la tarea 6,",
+        "start": 1999.28,
+        "end": 2002.28
+    },
+    {
+        "text": " más lo que resulte de resolver el problema de colastarias de 1 a p6.",
+        "start": 2002.28,
+        "end": 2012.28
+    },
+    {
+        "text": " Si la tarea 6 no está en la solución,",
+        "start": 2013.28,
+        "end": 2016.28
+    },
+    {
+        "text": " entonces la solución en mi problema es igual a la solución del problema de la tarea 1 a 5.",
+        "start": 2016.28,
+        "end": 2025.28
+    },
+    {
+        "text": " Había una pregunta por acá.",
+        "start": 2025.28,
+        "end": 2030.28
+    },
+    {
+        "text": " Dice pero cuando 6 está, es sumar B6,",
+        "start": 2031.28,
+        "end": 2044.28
+    },
+    {
+        "text": " más la solución del problema de P6, no, más la solución del problema,",
+        "start": 2044.28,
+        "end": 2049.2799999999997
+    },
+    {
+        "text": " a pronto, pero estoy mirando, exactamente.",
+        "start": 2049.2799999999997,
+        "end": 2052.2799999999997
+    },
+    {
+        "text": " Entonces, sí, o más, en la razón.",
+        "start": 2052.2799999999997,
+        "end": 2057.2799999999997
+    },
+    {
+        "text": " Entonces,",
+        "start": 2061.28,
+        "end": 2064.28
+    },
+    {
+        "text": " vamos a ir bajando a esto que acaba de decir, o más.",
+        "start": 2067.28,
+        "end": 2072.28
+    },
+    {
+        "text": " Si P6 está en la solución,",
+        "start": 2072.28,
+        "end": 2075.28
+    },
+    {
+        "text": " en el caso de,",
+        "start": 2075.28,
+        "end": 2079.28
+    },
+    {
+        "text": " vamos a empezar a hablar un poco generico, generico, jota,",
+        "start": 2079.28,
+        "end": 2084.28
+    },
+    {
+        "text": " pertenece para la solución.",
+        "start": 2084.28,
+        "end": 2088.28
+    },
+    {
+        "text": " Entonces,",
+        "start": 2089.28,
+        "end": 2092.28
+    },
+    {
+        "text": " vamos a agregar otra idea, la idea de óptimo,",
+        "start": 2092.28,
+        "end": 2098.28
+    },
+    {
+        "text": " el óptimo",
+        "start": 2098.28,
+        "end": 2101.28
+    },
+    {
+        "text": " de el resolver el problema",
+        "start": 2101.28,
+        "end": 2105.28
+    },
+    {
+        "text": " hasta jota.",
+        "start": 2105.28,
+        "end": 2108.28
+    },
+    {
+        "text": " Eso es la suma de los valores de todas las tareas que el hijo,",
+        "start": 2108.28,
+        "end": 2113.28
+    },
+    {
+        "text": " es un número, ya no es un su conjunto,",
+        "start": 2113.28,
+        "end": 2116.28
+    },
+    {
+        "text": " aquí es igual,",
+        "start": 2116.28,
+        "end": 2118.28
+    },
+    {
+        "text": " es igual al valor de jota,",
+        "start": 2118.28,
+        "end": 2122.28
+    },
+    {
+        "text": " esto que acaba de decir o más, no,",
+        "start": 2122.28,
+        "end": 2125.28
+    },
+    {
+        "text": " es igual al valor de j,",
+        "start": 2125.28,
+        "end": 2127.28
+    },
+    {
+        "text": " más el óptimo",
+        "start": 2127.28,
+        "end": 2131.28
+    },
+    {
+        "text": " de pede jota.",
+        "start": 2131.28,
+        "end": 2136.28
+    },
+    {
+        "text": " Hasta ahí, eso se entendió.",
+        "start": 2138.28,
+        "end": 2142.28
+    },
+    {
+        "text": " Nos sabemos.",
+        "start": 2147.28,
+        "end": 2149.28
+    },
+    {
+        "text": " Si jota,",
+        "start": 2149.28,
+        "end": 2152.28
+    },
+    {
+        "text": " otro caso, ¿no?",
+        "start": 2152.28,
+        "end": 2155.28
+    },
+    {
+        "text": " No pertenece a la solución,",
+        "start": 2158.28,
+        "end": 2161.28
+    },
+    {
+        "text": " entonces, el óptimo de j",
+        "start": 2161.28,
+        "end": 2166.28
+    },
+    {
+        "text": " es igual a el óptimo de jota menos uno.",
+        "start": 2166.28,
+        "end": 2173.28
+    },
+    {
+        "text": " Bueno,",
+        "start": 2176.28,
+        "end": 2179.28
+    },
+    {
+        "text": " sí, es un poco,",
+        "start": 2179.28,
+        "end": 2182.28
+    },
+    {
+        "text": " dice acá que si no es liba de enconquer,",
+        "start": 2182.28,
+        "end": 2185.28
+    },
+    {
+        "text": " es un poco liba de enconquer,",
+        "start": 2185.28,
+        "end": 2188.28
+    },
+    {
+        "text": " pero ahora vamos a ir hacia otro lado y bueno,",
+        "start": 2188.28,
+        "end": 2191.28
+    },
+    {
+        "text": " vamos.",
+        "start": 2191.28,
+        "end": 2194.28
+    },
+    {
+        "text": " Cuando queremos maximizar,",
+        "start": 2194.28,
+        "end": 2196.28
+    },
+    {
+        "text": " cuando lo queremos maximizar,",
+        "start": 2196.28,
+        "end": 2199.28
+    },
+    {
+        "text": " ahí donde entra,",
+        "start": 2199.28,
+        "end": 2201.28
+    },
+    {
+        "text": " si no,",
+        "start": 2201.28,
+        "end": 2203.28
+    },
+    {
+        "text": " cuando lo queremos maximizar,",
+        "start": 2203.28,
+        "end": 2205.28
+    },
+    {
+        "text": " ahí donde entra.",
+        "start": 2205.28,
+        "end": 2207.28
+    },
+    {
+        "text": " Pero entonces,",
+        "start": 2207.28,
+        "end": 2209.28
+    },
+    {
+        "text": " acá estuéramos los dos mundos,",
+        "start": 2209.28,
+        "end": 2212.28
+    },
+    {
+        "text": " los dos mundos posibles,",
+        "start": 2212.28,
+        "end": 2214.28
+    },
+    {
+        "text": " con cuál de los dedos creamos,",
+        "start": 2214.28,
+        "end": 2216.28
+    },
+    {
+        "text": " ahora tenemos que empezar a decidir si jota está o no está.",
+        "start": 2216.28,
+        "end": 2220.28
+    },
+    {
+        "text": " ¿No?",
+        "start": 2220.28,
+        "end": 2223.28
+    },
+    {
+        "text": " ¿Y cuál es el valor que maximiza estas dos?",
+        "start": 2223.28,
+        "end": 2227.28
+    },
+    {
+        "text": " Y bueno,",
+        "start": 2227.28,
+        "end": 2229.28
+    },
+    {
+        "text": " es en realidad",
+        "start": 2229.28,
+        "end": 2232.28
+    },
+    {
+        "text": " y en el caso genérico,",
+        "start": 2232.28,
+        "end": 2235.28
+    },
+    {
+        "text": " ahí.",
+        "start": 2235.28,
+        "end": 2238.28
+    },
+    {
+        "text": " En el caso genérico,",
+        "start": 2238.28,
+        "end": 2241.28
+    },
+    {
+        "text": " el óptimo de jota,",
+        "start": 2241.28,
+        "end": 2244.28
+    },
+    {
+        "text": " que ahora se nos decía si estaba o no estaba,",
+        "start": 2244.28,
+        "end": 2247.28
+    },
+    {
+        "text": " es igual al máximo",
+        "start": 2247.28,
+        "end": 2249.28
+    },
+    {
+        "text": " de estas dos cosas.",
+        "start": 2249.28,
+        "end": 2252.28
+    },
+    {
+        "text": " Me estoy haciendo el falsi,",
+        "start": 2262.28,
+        "end": 2269.28
+    },
+    {
+        "text": " no lo hago más,",
+        "start": 2269.28,
+        "end": 2272.28
+    },
+    {
+        "text": " se le jura.",
+        "start": 2272.28,
+        "end": 2282.28
+    },
+    {
+        "text": " ¿No?",
+        "start": 2282.28,
+        "end": 2287.28
+    },
+    {
+        "text": " El óptimo,",
+        "start": 2287.28,
+        "end": 2289.28
+    },
+    {
+        "text": " que maximiza el valor de la selección de testarías,",
+        "start": 2289.28,
+        "end": 2295.28
+    },
+    {
+        "text": " es el máximo de estos valores.",
+        "start": 2295.28,
+        "end": 2300.28
+    },
+    {
+        "text": " ¿Qué no dice a la pregunta?",
+        "start": 2300.28,
+        "end": 2302.28
+    },
+    {
+        "text": " ¿Qué le dicen si es para que sea programación dinámica?",
+        "start": 2302.28,
+        "end": 2305.28
+    },
+    {
+        "text": " Ahí no diga nada.",
+        "start": 2305.28,
+        "end": 2307.28
+    },
+    {
+        "text": " Esto se entendió,",
+        "start": 2307.28,
+        "end": 2309.28
+    },
+    {
+        "text": " porque el óptimo de jota va a ver eso.",
+        "start": 2309.28,
+        "end": 2312.28
+    },
+    {
+        "text": " Hasta ahí bien.",
+        "start": 2312.28,
+        "end": 2315.28
+    },
+    {
+        "text": " ¿Y cuál no sé si jota pertenece o no a la selección?",
+        "start": 2320.28,
+        "end": 2328.28
+    },
+    {
+        "text": " Jota pertenece a la selección.",
+        "start": 2328.28,
+        "end": 2331.28
+    },
+    {
+        "text": " Sí.",
+        "start": 2331.28,
+        "end": 2333.28
+    },
+    {
+        "text": " Me quedé con esta parte del,",
+        "start": 2333.28,
+        "end": 2336.28
+    },
+    {
+        "text": " si el máximo es igual a esta parte.",
+        "start": 2336.28,
+        "end": 2339.28
+    },
+    {
+        "text": " Entonces, jota pertenece a la selección.",
+        "start": 2339.28,
+        "end": 2344.28
+    },
+    {
+        "text": " Sí.",
+        "start": 2344.28,
+        "end": 2346.28
+    },
+    {
+        "text": " Jota más el óptimo de pertenece a la selección.",
+        "start": 2346.28,
+        "end": 2353.28
+    },
+    {
+        "text": " Es mayor igual que el óptimo de jota menucho.",
+        "start": 2353.28,
+        "end": 2366.28
+    },
+    {
+        "text": " ¿Y entonces ahí decidí si jota estaba o no estaba en la selección?",
+        "start": 2366.28,
+        "end": 2373.28
+    },
+    {
+        "text": " Hasta ahora veríamos diciendo estará o no estará.",
+        "start": 2373.28,
+        "end": 2377.28
+    },
+    {
+        "text": " Si no está, si está, si está, si.",
+        "start": 2377.28,
+        "end": 2379.28
+    },
+    {
+        "text": " Y ahora acabo de decidir si jota estaba o no estaba.",
+        "start": 2379.28,
+        "end": 2383.28
+    },
+    {
+        "text": " ¿Cómo calculando?",
+        "start": 2383.28,
+        "end": 2387.28
+    },
+    {
+        "text": " En forma recursiva, si se dan cuenta,",
+        "start": 2387.28,
+        "end": 2391.28
+    },
+    {
+        "text": " el valor del óptimo,",
+        "start": 2391.28,
+        "end": 2395.28
+    },
+    {
+        "text": " lo estoy desarmando,",
+        "start": 2395.28,
+        "end": 2397.28
+    },
+    {
+        "text": " lo calculo para jota,",
+        "start": 2397.28,
+        "end": 2400.28
+    },
+    {
+        "text": " es el valor de jota más el óptimo del pertenece a la selección.",
+        "start": 2400.28,
+        "end": 2405.28
+    },
+    {
+        "text": " Y si no está a jota, es el óptimo del pertenece a la selección.",
+        "start": 2405.28,
+        "end": 2408.28
+    },
+    {
+        "text": " Y entonces acá se atengo una idea de cómo resolver el problema.",
+        "start": 2408.28,
+        "end": 2416.28
+    },
+    {
+        "text": " Me genero un algoritmo que recursivo,",
+        "start": 2416.28,
+        "end": 2422.28
+    },
+    {
+        "text": " del llama un mute.",
+        "start": 2422.28,
+        "end": 2425.28
+    },
+    {
+        "text": " Opt.",
+        "start": 2426.28,
+        "end": 2428.28
+    },
+    {
+        "text": " De jota es la cantidad de tareas,",
+        "start": 2428.28,
+        "end": 2433.28
+    },
+    {
+        "text": " que dicen, bueno,",
+        "start": 2433.28,
+        "end": 2435.28
+    },
+    {
+        "text": " tiene un paso base, que si j, si igual a 0,",
+        "start": 2435.28,
+        "end": 2440.28
+    },
+    {
+        "text": " entonces de vuelvo 0,",
+        "start": 2440.28,
+        "end": 2447.28
+    },
+    {
+        "text": " y si jota no es igual a 0,",
+        "start": 2447.28,
+        "end": 2450.28
+    },
+    {
+        "text": " que de vuelvo.",
+        "start": 2450.28,
+        "end": 2452.28
+    },
+    {
+        "text": " Y de vuelvo de esto.",
+        "start": 2452.28,
+        "end": 2456.28
+    },
+    {
+        "text": " De vuelvo este máximo acá.",
+        "start": 2456.28,
+        "end": 2460.28
+    },
+    {
+        "text": " Voy a saber,",
+        "start": 2466.28,
+        "end": 2467.28
+    },
+    {
+        "text": " dejo de momento que me iba a hacer esto,",
+        "start": 2467.28,
+        "end": 2469.28
+    },
+    {
+        "text": " pero lo voy a dar.",
+        "start": 2469.28,
+        "end": 2471.28
+    },
+    {
+        "text": " No, no voy.",
+        "start": 2471.28,
+        "end": 2473.28
+    },
+    {
+        "text": " De vuelvo el máximo de el valor de jota",
+        "start": 2473.28,
+        "end": 2479.28
+    },
+    {
+        "text": " más y acá seamos recorciadamente al mi agorismo.",
+        "start": 2479.28,
+        "end": 2485.28
+    },
+    {
+        "text": " De jota.",
+        "start": 2493.28,
+        "end": 2497.28
+    },
+    {
+        "text": " El máximo de esto o de la llamada mi agorismo.",
+        "start": 2500.28,
+        "end": 2506.28
+    },
+    {
+        "text": " De jota menos.",
+        "start": 2510.28,
+        "end": 2514.28
+    },
+    {
+        "text": " Y ya está, nos vamos.",
+        "start": 2520.28,
+        "end": 2525.28
+    },
+    {
+        "text": " Y acá me gustan de esto,",
+        "start": 2525.28,
+        "end": 2527.28
+    },
+    {
+        "text": " ¿qué tiene de diferente?",
+        "start": 2527.28,
+        "end": 2529.28
+    },
+    {
+        "text": " Conozca.",
+        "start": 2529.28,
+        "end": 2531.28
+    },
+    {
+        "text": " Para empezar.",
+        "start": 2535.28,
+        "end": 2538.28
+    },
+    {
+        "text": " ¿Es correcto esta agorismo?",
+        "start": 2539.28,
+        "end": 2543.28
+    },
+    {
+        "text": " Resuelve nuestro problema.",
+        "start": 2544.28,
+        "end": 2548.28
+    },
+    {
+        "text": " Bueno, lo probamos por inducción.",
+        "start": 2555.28,
+        "end": 2559.28
+    },
+    {
+        "text": " Ahí, pero.",
+        "start": 2562.28,
+        "end": 2565.28
+    },
+    {
+        "text": " Por inducción en la cantidad de áreas.",
+        "start": 2569.28,
+        "end": 2574.28
+    },
+    {
+        "text": " Para la tarea si tengo una cantidad 0,",
+        "start": 2575.28,
+        "end": 2580.28
+    },
+    {
+        "text": " talías.",
+        "start": 2580.28,
+        "end": 2583.28
+    },
+    {
+        "text": " Se que va.",
+        "start": 2583.28,
+        "end": 2585.28
+    },
+    {
+        "text": " No es igual.",
+        "start": 2585.28,
+        "end": 2588.28
+    },
+    {
+        "text": " Es igual que.",
+        "start": 2588.28,
+        "end": 2594.28
+    },
+    {
+        "text": " Por inducción en la cantidad de tareas.",
+        "start": 2594.28,
+        "end": 2597.28
+    },
+    {
+        "text": " Para la tarea si tengo una cantidad 0,",
+        "start": 2597.28,
+        "end": 2600.28
+    },
+    {
+        "text": " 0 de tareas, se va a hacer este guillante que la favorimos a su problema, porque el valor",
+        "start": 2600.28,
+        "end": 2611.6400000000003
+    },
+    {
+        "text": " que obtengo de elegir un su conjunto de 0 tareas es 0. Y después asumo que para todas",
+        "start": 2611.6400000000003,
+        "end": 2619.98
+    },
+    {
+        "text": " las tareas tengo un j y para todo y menor que j se cumple este de paso en el paso interruptivo,",
+        "start": 2619.98,
+        "end": 2633.4
+    },
+    {
+        "text": " estoy asumiendo que para todo y menor que j el valorismo es correcto,",
+        "start": 2633.4,
+        "end": 2638.6800000000003
+    },
+    {
+        "text": " es que es correcto, que el resultado de computer es igual al óptimo de diga y entonces después simplemente",
+        "start": 2638.68,
+        "end": 2663.18
+    },
+    {
+        "text": " esta igualdad acá me sirve para demostrar el paso interruptivo, porque si so simplemente copie esa",
+        "start": 2663.18,
+        "end": 2677.7999999999997
+    },
+    {
+        "text": " igualdad en el perino y estoy diciendo esto es menor que j, esto es menor que j por mi hipotecili de",
+        "start": 2677.7999999999997,
+        "end": 2688.94
+    },
+    {
+        "text": " paso interruptivo, esto es verdad que es el óptimo de j menos 1, esto es verdad, es menos que es el",
+        "start": 2688.94,
+        "end": 2703.0
+    },
+    {
+        "text": " óptimo del pedejota, así que por esta igualdad acá esto es igual al óptimo de copie, ya que",
+        "start": 2703.0,
+        "end": 2720.72
+    },
+    {
+        "text": " la probada acá la corrupitud de este corrupismo, ahora ¿qué pasa? ¿Qué tiene? ¿Qué pasó acá? ¿Qué hay de malo?",
+        "start": 2720.72,
+        "end": 2734.7999999999997
+    },
+    {
+        "text": " ¿Qué pasa si yo cuando ejecuto este corrupismo? Vamos a ejecutarlo",
+        "start": 2739.64,
+        "end": 2748.3599999999997
+    },
+    {
+        "text": " en el caso perino le voy a赫era y puedo ir representationado, popping coveredly",
+        "start": 2748.36,
+        "end": 2761.08
+    },
+    {
+        "text": " q Dragonsque y puede me lo voy a cherch آپ",
+        "start": 2761.08,
+        "end": 2768.92
+    },
+    {
+        "text": " Vamos a que hay dificultad de la iglesia.",
+        "start": 2768.92,
+        "end": 2794.4
+    },
+    {
+        "text": " Vamos a que hay dificultad de la iglesia.",
+        "start": 2794.4,
+        "end": 2804.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2805.4,
+        "end": 2807.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2807.4,
+        "end": 2810.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2837.4,
+        "end": 2840.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2868.4,
+        "end": 2870.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2870.4,
+        "end": 2873.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2873.4,
+        "end": 2876.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2876.4,
+        "end": 2879.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2879.4,
+        "end": 2881.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2881.4,
+        "end": 2884.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2884.4,
+        "end": 2886.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2886.4,
+        "end": 2887.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2887.4,
+        "end": 2890.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2890.4,
+        "end": 2891.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2891.4,
+        "end": 2893.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2893.4,
+        "end": 2894.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2894.4,
+        "end": 2895.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2895.4,
+        "end": 2896.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2897.4,
+        "end": 2898.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2898.4,
+        "end": 2902.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo para funcionar mismo.",
+        "start": 2902.4,
+        "end": 2905.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2905.4,
+        "end": 2908.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mismo.",
+        "start": 2908.4,
+        "end": 2910.4
+    },
+    {
+        "text": " Ahora empezó a funcionar salon,",
+        "start": 2910.4,
+        "end": 2911.4
+    },
+    {
+        "text": " ahora empezó a funcionar mismo para funcionar modernamente.",
+        "start": 2911.4,
+        "end": 2915.4
+    },
+    {
+        "text": " Ahora empezó a funcionar mal.",
+        "start": 2915.4,
+        "end": 2917.4
+    },
+    {
+        "text": " Ahora eyeballa atrás.",
+        "start": 2917.4,
+        "end": 2918.4
+    },
+    {
+        "text": " Ahora ji game acidic.",
+        "start": 2919.4,
+        "end": 2920.4
+    },
+    {
+        "text": " Ahora đấyaros.",
+        "start": 2920.4,
+        "end": 2922.4
+    },
+    {
+        "text": " Ahora acumarlo arriba.",
+        "start": 2922.4,
+        "end": 2923.4
+    },
+    {
+        "text": " Ahora quisingутos pacientes.",
+        "start": 2923.4,
+        "end": 2925.4
+    },
+    {
+        "text": " Y para el otro es el óptimo de 5. Para regular el óptimo de 3, queremos regular.",
+        "start": 2925.4,
+        "end": 2945.64
+    },
+    {
+        "text": " El óptimo de 3 más el óptimo de 3 más el óptimo de 3 más el óptimo de 1.",
+        "start": 2945.64,
+        "end": 2963.72
+    },
+    {
+        "text": " Hoy en los dos cosas, en realidad, el óptimo de 2.",
+        "start": 2963.72,
+        "end": 2977.6
+    },
+    {
+        "text": " Hasta ahí va bien, estamos siguiendo esta recusión, estamos entrando en de un lado y el otro.",
+        "start": 2977.6,
+        "end": 2983.04
+    },
+    {
+        "text": " Y para resolver el óptimo de 2, queremos que calcular el valor de 2 más el óptimo de 1.",
+        "start": 2983.04,
+        "end": 3003.4
+    },
+    {
+        "text": " Porque 2 es 0, así que esta componente de la recusión, no las hacemos recularte.",
+        "start": 3003.4,
+        "end": 3016.7200000000003
+    },
+    {
+        "text": " Temos que hacer lo que calcularla con un ente para no superar el lado así no se conforme.",
+        "start": 3016.72,
+        "end": 3034.8399999999997
+    },
+    {
+        "text": " El otro lado de la recusión tenemos que calcular el óptimo de 5, que es 3.",
+        "start": 3034.84,
+        "end": 3054.32
+    },
+    {
+        "text": " Para regular el óptimo de 3, estamos regular el óptimo de 3, que es el óptimo de 1.",
+        "start": 3054.32,
+        "end": 3068.0
+    },
+    {
+        "text": " Y el óptimo de 3 menos 1.",
+        "start": 3068.0,
+        "end": 3079.64
+    },
+    {
+        "text": " Y de nuevo para 2, tenemos que calcular el óptimo de 2 menos 1.",
+        "start": 3079.64,
+        "end": 3097.32
+    },
+    {
+        "text": " Y para casi la recusión, acá tenemos el óptimo de 5 menos 1.",
+        "start": 3097.76,
+        "end": 3114.96
+    },
+    {
+        "text": " Para este lado el óptimo de 4 es 0, así que no ponemos nada y para este lado el óptimo de 4 menos 1.",
+        "start": 3114.96,
+        "end": 3128.44
+    },
+    {
+        "text": " Y así.",
+        "start": 3128.44,
+        "end": 3130.44
+    },
+    {
+        "text": " ¿Qué nos pasó acá?",
+        "start": 3145.96,
+        "end": 3147.96
+    },
+    {
+        "text": " Nos explotó la recusión de este algoritmo que venía tan lindo, nos quedó en los hechos en según se ordenen estos estatares.",
+        "start": 3148.96,
+        "end": 3161.96
+    },
+    {
+        "text": " No queremos eso, nosotros estamos buscando, acarimos eficientes, es decir, a lo que vimos por el que se llamó el óptimo de orenpoelinómico.",
+        "start": 3162.96,
+        "end": 3173.96
+    },
+    {
+        "text": " ¿Qué ven en esta recusión? ¿Qué hay interesante acá?",
+        "start": 3173.96,
+        "end": 3180.96
+    },
+    {
+        "text": " ¿Qué hay que hacer?",
+        "start": 3181.96,
+        "end": 3183.96
+    },
+    {
+        "text": " Cáquela muchas veces la recusión exactamente.",
+        "start": 3183.96,
+        "end": 3186.96
+    },
+    {
+        "text": " Entonces, si se fijan, bueno, el óptimo de 1 está montando de veces, pero incluso el óptimo de 3 está acá, está acá, está acá.",
+        "start": 3186.96,
+        "end": 3199.96
+    },
+    {
+        "text": " Y lo que hay que hacer es que la misma recusión, ¿qué se le ocurre?",
+        "start": 3199.96,
+        "end": 3207.96
+    },
+    {
+        "text": " Acá preguntar a Fabiel, ¿por qué es esta recusión?",
+        "start": 3208.96,
+        "end": 3211.96
+    },
+    {
+        "text": " Bueno, en la ejecución lo puede estar.",
+        "start": 3214.96,
+        "end": 3218.96
+    },
+    {
+        "text": " Cada una de esas recusiones, tener dos posibles opciones, lo que hace es...",
+        "start": 3218.96,
+        "end": 3236.96
+    },
+    {
+        "text": " Elevar 2 a la m.",
+        "start": 3238.96,
+        "end": 3241.96
+    },
+    {
+        "text": " 2 a la cantidad de eventos que tenés.",
+        "start": 3241.96,
+        "end": 3248.96
+    },
+    {
+        "text": " Cresce multiplicando 3 por 2.",
+        "start": 3248.96,
+        "end": 3252.96
+    },
+    {
+        "text": " En cada nivel de esta recusión multiplicas por 2, la cantidad de tallas que tenés que hacer.",
+        "start": 3252.96,
+        "end": 3261.96
+    },
+    {
+        "text": " Y eso es una espalencia.",
+        "start": 3261.96,
+        "end": 3264.96
+    },
+    {
+        "text": " Si pueden mantener los resultados intermedios en la buena estructura exactamente.",
+        "start": 3265.96,
+        "end": 3269.96
+    },
+    {
+        "text": " Entonces, ese concepto está introduciendo, pochado.",
+        "start": 3269.96,
+        "end": 3276.96
+    },
+    {
+        "text": " Se llama en inglés, en un mensaje.",
+        "start": 3276.96,
+        "end": 3281.96
+    },
+    {
+        "text": " En español, no hay una traducción demasiado buena.",
+        "start": 3281.96,
+        "end": 3285.96
+    },
+    {
+        "text": " Se llama la traducción como memoización.",
+        "start": 3285.96,
+        "end": 3290.96
+    },
+    {
+        "text": " Y se trata justamente de guardar el resultado de una estructura.",
+        "start": 3291.96,
+        "end": 3298.96
+    },
+    {
+        "text": " Entonces, lo que hacemos es crearnos una estructura, una Rai.",
+        "start": 3298.96,
+        "end": 3305.96
+    },
+    {
+        "text": " Definitiva, tenemos un resultado, un óptimo para cada N.",
+        "start": 3305.96,
+        "end": 3310.96
+    },
+    {
+        "text": " Entonces, podemos tener una Rai, M, de 0 a N posiciones.",
+        "start": 3311.96,
+        "end": 3322.96
+    },
+    {
+        "text": " Porque de 0 porque el caso 0 nos importaba.",
+        "start": 3322.96,
+        "end": 3325.96
+    },
+    {
+        "text": " Es el cual el óptimo de 0 estaba definido.",
+        "start": 3325.96,
+        "end": 3329.96
+    },
+    {
+        "text": " Y lo que hacemos es modificar nuestro algoritmo para ir guardando en M,",
+        "start": 3329.96,
+        "end": 3336.96
+    },
+    {
+        "text": " lo resultado que ya tenemos.",
+        "start": 3336.96,
+        "end": 3339.96
+    },
+    {
+        "text": " Entonces, este algoritmo se ve, ahí.",
+        "start": 3339.96,
+        "end": 3346.96
+    },
+    {
+        "text": " Se ve más o menos así.",
+        "start": 3346.96,
+        "end": 3348.96
+    },
+    {
+        "text": " Ahí esté, le llamamos.",
+        "start": 3348.96,
+        "end": 3351.96
+    },
+    {
+        "text": " M, compute óptimo.",
+        "start": 3356.96,
+        "end": 3361.96
+    },
+    {
+        "text": " De 0.",
+        "start": 3362.96,
+        "end": 3366.96
+    },
+    {
+        "text": " Y lo que hace es lo mismo que antes.",
+        "start": 3366.96,
+        "end": 3368.96
+    },
+    {
+        "text": " Si se fija, si j, es igual a 0.",
+        "start": 3368.96,
+        "end": 3372.96
+    },
+    {
+        "text": " Ahí, en ese caso, le vuelve 0.",
+        "start": 3372.96,
+        "end": 3377.96
+    },
+    {
+        "text": " Si no.",
+        "start": 3377.96,
+        "end": 3380.96
+    },
+    {
+        "text": " ¿Qué hace ahora?",
+        "start": 3380.96,
+        "end": 3383.96
+    },
+    {
+        "text": " Vamos a ir guardando el resultado en esta estructura.",
+        "start": 3383.96,
+        "end": 3387.96
+    },
+    {
+        "text": " Pero parado para usarlo.",
+        "start": 3387.96,
+        "end": 3389.96
+    },
+    {
+        "text": " Si ya están en esa estructura, lo usamos.",
+        "start": 3390.96,
+        "end": 3394.96
+    },
+    {
+        "text": " Entonces, se fija.",
+        "start": 3394.96,
+        "end": 3396.96
+    },
+    {
+        "text": " Si M, de j, no estaba sido.",
+        "start": 3399.96,
+        "end": 3406.96
+    },
+    {
+        "text": " Entonces, lo que devolvemos es en mi j.",
+        "start": 3411.96,
+        "end": 3414.96
+    },
+    {
+        "text": " Si estaba sido lo calculamos.",
+        "start": 3420.96,
+        "end": 3423.96
+    },
+    {
+        "text": " Lo calculamos igual que antes.",
+        "start": 3423.96,
+        "end": 3426.96
+    },
+    {
+        "text": " M, calculamos en mi j, como el máximo de pdf,",
+        "start": 3431.96,
+        "end": 3441.96
+    },
+    {
+        "text": " más la llamada recurcibo de la función m, compute.",
+        "start": 3441.96,
+        "end": 3447.96
+    },
+    {
+        "text": " Lo último de pdf, esto es igual que antes.",
+        "start": 3450.96,
+        "end": 3458.96
+    },
+    {
+        "text": " El máximo entre esto y la llamada recurcibo m,",
+        "start": 3458.96,
+        "end": 3464.96
+    },
+    {
+        "text": " de j, a menos.",
+        "start": 3468.96,
+        "end": 3472.96
+    },
+    {
+        "text": " Ahí caigamos nuestra estructura con el valor y la devolver.",
+        "start": 3472.96,
+        "end": 3478.96
+    },
+    {
+        "text": " Si no, no, no.",
+        "start": 3480.96,
+        "end": 3485.96
+    },
+    {
+        "text": " Si no, no.",
+        "start": 3485.96,
+        "end": 3488.96
+    },
+    {
+        "text": " Si no, no.",
+        "start": 3488.96,
+        "end": 3491.96
+    },
+    {
+        "text": " Si no, no.",
+        "start": 3491.96,
+        "end": 3495.96
+    },
+    {
+        "text": " Estamos a acuerdo que esto hace lo mismo que hacía el otro grimo.",
+        "start": 3495.96,
+        "end": 3499.96
+    },
+    {
+        "text": " Simplemente que hamedida que va caer creando estas partes del árbol,",
+        "start": 3499.96,
+        "end": 3504.96
+    },
+    {
+        "text": " las va guardando en el.",
+        "start": 3504.96,
+        "end": 3506.96
+    },
+    {
+        "text": " Y 18 torpos.",
+        "start": 3506.96,
+        "end": 3511.96
+    },
+    {
+        "text": " Cuatro de ejecución la parece que tiene.",
+        "start": 3511.96,
+        "end": 3519.96
+    },
+    {
+        "text": " N, ¿por qué?",
+        "start": 3519.96,
+        "end": 3521.96
+    },
+    {
+        "text": " A rumentar ya.",
+        "start": 3523.96,
+        "end": 3525.96
+    },
+    {
+        "text": " porque si estás haciendo la raíz, en definitiva, yo entre en estas recursiones cuando,",
+        "start": 3525.96,
+        "end": 3541.56
+    },
+    {
+        "text": " solo cuando no está llenado de ser lugar de la raíz, cuando entra la región, lo lleno y no vuelvo",
+        "start": 3541.56,
+        "end": 3553.96
+    },
+    {
+        "text": " a entrar ahí.",
+        "start": 3553.96,
+        "end": 3554.96
+    },
+    {
+        "text": " Una pregunta, ¿cómo la primera se llama?",
+        "start": 3554.96,
+        "end": 3564.96
+    },
+    {
+        "text": " Ya va cargándolo los otros nuevos.",
+        "start": 3564.96,
+        "end": 3571.96
+    },
+    {
+        "text": " Cada vez que si se fijan, yo solo entro en este caso cuando acá no hay nada, pero cada vez que",
+        "start": 3571.96,
+        "end": 3585.7200000000003
+    },
+    {
+        "text": " entra acá, lo lleno y cuántas veces lo pueden llenar una, pues puedo llenar una vez cada",
+        "start": 3585.7200000000003,
+        "end": 3592.16
+    },
+    {
+        "text": " lugar de la país.",
+        "start": 3592.16,
+        "end": 3593.96
+    },
+    {
+        "text": " Y si estás lleno no entro en la recursión, así que lo que voy a hacer es una vez por cada",
+        "start": 3593.96,
+        "end": 3602.28
+    },
+    {
+        "text": " lugar de la raíz voy a entrar acá.",
+        "start": 3602.28,
+        "end": 3608.28
+    },
+    {
+        "text": " Pero podrías consultar más de una vez cada lugar, cargándolo sí, pero lo consulto acá.",
+        "start": 3608.28,
+        "end": 3616.08
+    },
+    {
+        "text": " Y eso es que es de orden 1.",
+        "start": 3616.08,
+        "end": 3619.76
+    },
+    {
+        "text": " Lo que me complicaba me hacía explotar el orden del algoritmo anterior era estas amadas",
+        "start": 3619.76,
+        "end": 3625.32
+    },
+    {
+        "text": " acá.",
+        "start": 3625.32,
+        "end": 3626.32
+    },
+    {
+        "text": " Ahora yo voy a entrar a esto solo una vez por cada jota.",
+        "start": 3626.32,
+        "end": 3638.76
+    },
+    {
+        "text": " Bien, ahí va.",
+        "start": 3638.76,
+        "end": 3644.32
+    },
+    {
+        "text": " Entonces esto se volvió de orden en.",
+        "start": 3644.32,
+        "end": 3652.32
+    },
+    {
+        "text": " Y eso acá es la respuesta a alguien que preguntaba a su dato que se llama por aquí",
+        "start": 3652.32,
+        "end": 3658.1800000000003
+    },
+    {
+        "text": " en el A.",
+        "start": 3658.1800000000003,
+        "end": 3659.1800000000003
+    },
+    {
+        "text": " ¿Cuál es la diferencia de esto con Viva de Anconquer?",
+        "start": 3659.1800000000003,
+        "end": 3663.36
+    },
+    {
+        "text": " Bueno, es un Viva de Anconquer en el que, ¿cuál es la diferencia principal?",
+        "start": 3663.36,
+        "end": 3671.0800000000004
+    },
+    {
+        "text": " No es solo que me guardo un valor, no es solo que me guarde el valor de algo que se haga",
+        "start": 3671.08,
+        "end": 3678.64
+    },
+    {
+        "text": " el fulme.",
+        "start": 3678.64,
+        "end": 3679.96
+    },
+    {
+        "text": " Sí.",
+        "start": 3679.96,
+        "end": 3680.96
+    },
+    {
+        "text": " Es que además en Viva de Anconquer yo partí el problema 2, resolví a una mitad, lo",
+        "start": 3680.96,
+        "end": 3689.7799999999997
+    },
+    {
+        "text": " resolví a la otra.",
+        "start": 3689.7799999999997,
+        "end": 3691.56
+    },
+    {
+        "text": " Acá lo aparto en una suprodele más, a partir de las cuales yo puedo construir el problema",
+        "start": 3691.56,
+        "end": 3698.56
+    },
+    {
+        "text": " más grande.",
+        "start": 3698.56,
+        "end": 3699.56
+    },
+    {
+        "text": " Y yo no solo construir, puedo calcular el resultado del problema más grande a partir",
+        "start": 3700.36,
+        "end": 3709.72
+    },
+    {
+        "text": " de los resultados del problema más chico.",
+        "start": 3709.72,
+        "end": 3711.96
+    },
+    {
+        "text": " Y eso es lo importante.",
+        "start": 3711.96,
+        "end": 3713.56
+    },
+    {
+        "text": " Pero se llama cuenta que hasta acá yo solo me quedé con el valor de la mejor solución.",
+        "start": 3713.56,
+        "end": 3724.64
+    },
+    {
+        "text": " No tengo la mejor solución.",
+        "start": 3724.64,
+        "end": 3725.84
+    },
+    {
+        "text": " ¿Déjenme un cuenta de eso?",
+        "start": 3725.84,
+        "end": 3729.48
+    },
+    {
+        "text": " La solución era la selección de tareas y que utilizaba el valor.",
+        "start": 3729.48,
+        "end": 3736.88
+    },
+    {
+        "text": " Y allá acá lo unió este este procedimiento, lo que está calculando es el valor.",
+        "start": 3736.88,
+        "end": 3741.52
+    },
+    {
+        "text": " ¿Y cuál es la mejor selección de tareas?",
+        "start": 3741.52,
+        "end": 3743.96
+    },
+    {
+        "text": " ¿Se le ocurre?",
+        "start": 3743.96,
+        "end": 3752.96
+    },
+    {
+        "text": " ¿Se le ocurre?",
+        "start": 3753.96,
+        "end": 3755.96
+    },
+    {
+        "text": " ¿Qué hacer con esto?",
+        "start": 3755.96,
+        "end": 3757.96
+    },
+    {
+        "text": " ¿Entiene el problema?",
+        "start": 3757.96,
+        "end": 3759.96
+    },
+    {
+        "text": " El valor ahí si usted es joltado no, en esa...",
+        "start": 3763.96,
+        "end": 3767.96
+    },
+    {
+        "text": " ¿Dónde estás indicando ahí se podría valorar cuál es el 2 más grande?",
+        "start": 3770.96,
+        "end": 3775.96
+    },
+    {
+        "text": " Y después mantén a la otra, en la otra raíz también.",
+        "start": 3775.96,
+        "end": 3780.96
+    },
+    {
+        "text": " Acá yo me estoy quedando con el máximo, acá me estoy quedando con el máximo",
+        "start": 3781.96,
+        "end": 3787.96
+    },
+    {
+        "text": " en esta parte de agorismo.",
+        "start": 3787.96,
+        "end": 3790.96
+    },
+    {
+        "text": " Pero no estoy diciendo cuál es los dos fuertes.",
+        "start": 3790.96,
+        "end": 3794.96
+    },
+    {
+        "text": " Pero yo sí calculé este mejota.",
+        "start": 3794.96,
+        "end": 3801.96
+    },
+    {
+        "text": " Entonces puedo hacerlo siguiente.",
+        "start": 3801.96,
+        "end": 3803.96
+    },
+    {
+        "text": " Una vez que yo, al final del máximo me quedé con la estructura esa,",
+        "start": 3811.96,
+        "end": 3817.96
+    },
+    {
+        "text": " el mejota la latido, la guarda, y lo es bueno para empezar un caso hace.",
+        "start": 3817.96,
+        "end": 3823.96
+    },
+    {
+        "text": " Si j, es igual a cero.",
+        "start": 3823.96,
+        "end": 3827.96
+    },
+    {
+        "text": " Entonces no lo vuelvo nada.",
+        "start": 3827.96,
+        "end": 3830.96
+    },
+    {
+        "text": " Pero si no.",
+        "start": 3835.96,
+        "end": 3837.96
+    },
+    {
+        "text": " Agarro m y me fijó.",
+        "start": 3840.96,
+        "end": 3844.96
+    },
+    {
+        "text": " Si el valor de j, más m, de p de j, aprico la misma regla de hoy.",
+        "start": 3844.96,
+        "end": 3855.96
+    },
+    {
+        "text": " Es mayor igual que m de j, menos 1.",
+        "start": 3855.96,
+        "end": 3863.96
+    },
+    {
+        "text": " ¿Qué quería decir esto?",
+        "start": 3863.96,
+        "end": 3866.96
+    },
+    {
+        "text": " Nos vemos visto como por acá, un batón.",
+        "start": 3867.96,
+        "end": 3871.96
+    },
+    {
+        "text": " Acá.",
+        "start": 3873.96,
+        "end": 3876.96
+    },
+    {
+        "text": " ¿Qué quería decir esto?",
+        "start": 3876.96,
+        "end": 3878.96
+    },
+    {
+        "text": " ¿Y quería decir que j, a partencía la solución?",
+        "start": 3878.96,
+        "end": 3881.96
+    },
+    {
+        "text": " ¿Por qué? Porque este valor era más que este.",
+        "start": 3881.96,
+        "end": 3884.96
+    },
+    {
+        "text": " Entonces, volviendo al mejorismo, sí, este valor es mayor que este.",
+        "start": 3884.96,
+        "end": 3889.96
+    },
+    {
+        "text": " Entonces,",
+        "start": 3889.96,
+        "end": 3892.96
+    },
+    {
+        "text": " de vuelvo,",
+        "start": 3893.96,
+        "end": 3896.96
+    },
+    {
+        "text": " j, como es parte de la solución.",
+        "start": 3900.96,
+        "end": 3905.96
+    },
+    {
+        "text": " O sea, a ver, como las escribo esto.",
+        "start": 3905.96,
+        "end": 3908.96
+    },
+    {
+        "text": " J, unión, lo que salga de la llamada recursiva, de este mismo algorithm.",
+        "start": 3908.96,
+        "end": 3917.96
+    },
+    {
+        "text": " De qué?",
+        "start": 3918.96,
+        "end": 3921.96
+    },
+    {
+        "text": " De p de j.",
+        "start": 3921.96,
+        "end": 3924.96
+    },
+    {
+        "text": " Si esta es igualdad no se cumple, entonces j no está en la solución.",
+        "start": 3927.96,
+        "end": 3932.96
+    },
+    {
+        "text": " Y de vuelvo.",
+        "start": 3932.96,
+        "end": 3936.96
+    },
+    {
+        "text": " De j, también.",
+        "start": 3948.96,
+        "end": 3951.96
+    },
+    {
+        "text": " ¿Sentien de lo que ha hecho esto?",
+        "start": 3955.96,
+        "end": 3957.96
+    },
+    {
+        "text": " Ahora que dice acá, hay más el valor de volar sin conjunto y si j, algo.",
+        "start": 3957.96,
+        "end": 3964.96
+    },
+    {
+        "text": " Se entendió lo que hace, y se dos cosas ahora, por un lado, como calculé el óptimo",
+        "start": 3970.96,
+        "end": 3975.96
+    },
+    {
+        "text": " y tener los valores de los óptimos, puede a todos los subproblemas,",
+        "start": 3975.96,
+        "end": 3980.96
+    },
+    {
+        "text": " el problema de tamaño a j, de tamaño de tamaño a j, también a su uno,",
+        "start": 3980.96,
+        "end": 3985.96
+    },
+    {
+        "text": " o a menos dos, etcétera.",
+        "start": 3985.96,
+        "end": 3988.96
+    },
+    {
+        "text": " Ya tengo el valor óptimo para cada uno de esos tamaños de problema y a partir",
+        "start": 3988.96,
+        "end": 3994.96
+    },
+    {
+        "text": " de algo que yo ya sabía, puedo reconstruir cuál es la solución.",
+        "start": 3994.96,
+        "end": 3999.96
+    },
+    {
+        "text": " Es decir, cuál es su conjunto de tareas que me optimiza el valor.",
+        "start": 3999.96,
+        "end": 4005.96
+    },
+    {
+        "text": " Ok, bueno, siendo, ah, si m, me dejota, vale tanto, m, me dejota, menos un, m,",
+        "start": 4005.96,
+        "end": 4012.96
+    },
+    {
+        "text": " y m, me dejota menos un, vale tanto, entonces yo sé que me quedé con j y no con j,",
+        "start": 4012.96,
+        "end": 4019.96
+    },
+    {
+        "text": " no me dejota menos un.",
+        "start": 4019.96,
+        "end": 4022.96
+    },
+    {
+        "text": " Se entendió.",
+        "start": 4022.96,
+        "end": 4025.96
+    },
+    {
+        "text": " Acá cuando dice que sí, y, como representante.",
+        "start": 4030.96,
+        "end": 4036.96
+    },
+    {
+        "text": " Sí.",
+        "start": 4036.96,
+        "end": 4038.96
+    },
+    {
+        "text": " Ahí, vamos a, me parece que acá estuvo bastante denso, así que si esto se entendió,",
+        "start": 4044.96,
+        "end": 4053.96
+    },
+    {
+        "text": " me parece bien que lo se vemos acá.",
+        "start": 4053.96,
+        "end": 4057.96
+    },
+    {
+        "text": " Y el juez prometo no darles pantagüete de asunto de mi instalación a cada",
+        "start": 4058.96,
+        "end": 4065.96
+    },
+    {
+        "text": " de la apto, etcétera y vamos a tener un poquito más de tiempo y avanzamos más.",
+        "start": 4065.96,
+        "end": 4071.96
+    },
+    {
+        "text": " Parece bien.",
+        "start": 4071.96,
+        "end": 4074.96
+    },
+    {
+        "text": " Yo tengo que ver.",
+        "start": 4077.96,
+        "end": 4080.96
+    },
+    {
+        "text": " No de esto, de la vida.",
+        "start": 4080.96,
+        "end": 4083.96
+    },
+    {
+        "text": " Es un tínimo problema que es que no te muestra cuando la gente está escribiendo.",
+        "start": 4088.96,
+        "end": 4094.96
+    },
+    {
+        "text": " No encontré, ah, lo del tiempo de ordenación, estaba en un list que les pasé en mi mensaje de,",
+        "start": 4100.96,
+        "end": 4109.96
+    },
+    {
+        "text": " no me está en el éste, en no, en fin, la que en el curso de 2018 creó.",
+        "start": 4109.96,
+        "end": 4120.96
+    },
+    {
+        "text": " Hay, sí.",
+        "start": 4140.96,
+        "end": 4143.96
+    },
+    {
+        "text": " Nota pleruckando.",
+        "start": 4144.96,
+        "end": 4147.96
+    },
+    {
+        "text": " Ahora vamos a ver si fue más rápido que yo y ya pegó.",
+        "start": 4169.96,
+        "end": 4179.96
+    },
+    {
+        "text": " Es el mismo que está ahí.",
+        "start": 4179.96,
+        "end": 4181.96
+    },
+    {
+        "text": " ¿Ven?",
+        "start": 4188.96,
+        "end": 4189.96
+    },
+    {
+        "text": " No, entonces si les parece, pues cortamos por acá, que me parece que fue como denizo.",
+        "start": 4199.96,
+        "end": 4205.96
+    },
+    {
+        "text": " Y que se entendió el concepto.",
+        "start": 4207.96,
+        "end": 4209.96
+    },
+    {
+        "text": " Esto que hay un montón son los conceptos principales de plan base unirámica.",
+        "start": 4209.96,
+        "end": 4214.96
+    },
+    {
+        "text": " Después, nos vamos a sacar de arriba la recursión, porque si se fijan,",
+        "start": 4214.96,
+        "end": 4220.96
+    },
+    {
+        "text": " lo que hicimos en definitiva fue ir de arriba para abajo.",
+        "start": 4220.96,
+        "end": 4225.96
+    },
+    {
+        "text": " Nos vamos a ir cenando el array de la movilización.",
+        "start": 4225.96,
+        "end": 4231.96
+    },
+    {
+        "text": " Nos fue cenando desde arriba para abajo.",
+        "start": 4231.96,
+        "end": 4234.96
+    },
+    {
+        "text": " Pero lo que podemos hacer ahora, que ya vimos como funciona,",
+        "start": 4234.96,
+        "end": 4239.96
+    },
+    {
+        "text": " es que, a ver, la partida de los problemas más chicos se construye la solución para problemas más grandes.",
+        "start": 4239.96,
+        "end": 4245.96
+    },
+    {
+        "text": " Y podemos simplemente ir iterando a partir de los problemas más chicos",
+        "start": 4245.96,
+        "end": 4251.96
+    },
+    {
+        "text": " y generando el resultado para los problemas más.",
+        "start": 4251.96,
+        "end": 4254.96
+    },
+    {
+        "text": " Eso lo vamos a hacer en la que las que vienen.",
+        "start": 4254.96,
+        "end": 4257.96
+    },
+    {
+        "text": " Y vamos a cerrar cuáles son los primfales características de la solución de la solución dinámica.",
+        "start": 4257.96,
+        "end": 4269.96
+    },
+    {
+        "text": " Y vamos a ver que es muy poderosa si se fijan un problema que está conencialmente",
+        "start": 4269.96,
+        "end": 4278.96
+    },
+    {
+        "text": " y la que lo bajamos de un golpe a un orden polinómico de Java Rnn.",
+        "start": 4278.96,
+        "end": 4285.96
+    },
+    {
+        "text": " Pero no siempre es evidente cuál es la forma de partir del problema en su problema.",
+        "start": 4285.96,
+        "end": 4293.96
+    },
+    {
+        "text": " Y vamos a ver algunos ejemplos de diferentes tipos de cómo se hace eso,",
+        "start": 4293.96,
+        "end": 4300.96
+    },
+    {
+        "text": " intentando generar una intuición de cómo se parte en el problema de su problema.",
+        "start": 4300.96,
+        "end": 4307.96
+    },
+    {
+        "text": " Bueno, nos vemos el jueves, entonces, a las ocho de la mañana, no la ha hecho ni.",
+        "start": 4307.96,
+        "end": 4315.96
+    },
+    {
+        "text": " Gracias.",
+        "start": 4315.96,
+        "end": 4317.96
+    },
+    {
+        "text": " Gracias.",
+        "start": 4318.96,
+        "end": 4319.96
+    },
+    {
+        "text": " ¡Vero!",
+        "start": 4320.96,
+        "end": 4321.96
+    }
+]

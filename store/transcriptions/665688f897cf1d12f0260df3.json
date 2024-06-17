@@ -1,0 +1,4727 @@
+[
+    {
+        "text": " buenas tardes vamos a dar un tema hoy que tiene que ver con lo que vieron al final de programación 1",
+        "start": 0.0,
+        "end": 9.200000000000001
+    },
+    {
+        "text": " pero quizá con enfoque un poquito distinto o profundidad distinta y complementario no diría",
+        "start": 9.200000000000001,
+        "end": 16.2
+    },
+    {
+        "text": " vamos a probar antes de lo que vieron quizás en programación 1 listas y punteros",
+        "start": 16.2,
+        "end": 21.0
+    },
+    {
+        "text": " entonces voy a tratar de ir no digo no a sumir nada pero voy a sumir poco de p1 para ver si este",
+        "start": 21.0,
+        "end": 28.12
+    },
+    {
+        "text": " repaso que voy a hacer el comienzo es adecuado para todos la motivación principal más allá de",
+        "start": 28.12,
+        "end": 35.04
+    },
+    {
+        "text": " ver punteros y memoriedinámicas que me interesa eso me interesa más bien esto ver cómo implemento",
+        "start": 35.04,
+        "end": 42.08
+    },
+    {
+        "text": " tipos inductivos listas pues voy a definir árboles grafos muchas estructuras todas",
+        "start": 42.92,
+        "end": 50.120000000000005
+    },
+    {
+        "text": " puedo definir con reglas entonces tú pira tuviera un mecanismo para definir los tipos de datos",
+        "start": 50.120000000000005,
+        "end": 56.64
+    },
+    {
+        "text": " como sé que estos tipos de datos tienen esquemas de regalo que son esquemas de recursión de",
+        "start": 56.64,
+        "end": 61.160000000000004
+    },
+    {
+        "text": " programación podría usar todo eso pero tendría que ver cómo implemento esto en un lenguaje entonces",
+        "start": 61.160000000000004,
+        "end": 67.72
+    },
+    {
+        "text": " para ver como ejemplo hoy cómo implementar esto que son las listas en un lenguaje es que voy a",
+        "start": 67.72,
+        "end": 73.0
+    },
+    {
+        "text": " usar memoria de dinámica y punteros pero como una herramienta auxiliar no el objetivo es",
+        "start": 73.0,
+        "end": 78.72
+    },
+    {
+        "text": " estudiar memoria de dinámica y punteros como algo en sí interesante para eso uno estudia quizás",
+        "start": 78.72,
+        "end": 84.36
+    },
+    {
+        "text": " arquitectura sistemas operativos para ver cómo funciona la memoria de la máquina entonces arranquemos",
+        "start": 84.36,
+        "end": 91.8
+    },
+    {
+        "text": " los tipos inductivos que características tienen y que no podía armar secuencias de",
+        "start": 93.32,
+        "end": 97.8
+    },
+    {
+        "text": " elemento con estas dos reglas una lista vacía y agregando con el notación puntito muchos elementos",
+        "start": 97.8,
+        "end": 103.24
+    },
+    {
+        "text": " de cualquier largo también o sea puedo armar lista de 10 20 100 elementos y uno diría no hay",
+        "start": 103.8,
+        "end": 110.92
+    },
+    {
+        "text": " una de tamaño máximo porque siempre puedo agregar un elemento más ok entonces la pregunta es",
+        "start": 110.92,
+        "end": 118.28
+    },
+    {
+        "text": " cómo hace esto el lenguaje a ver si anda esto si cuando yo quiero o qué hacen lenguaje cuando",
+        "start": 118.28,
+        "end": 124.96000000000001
+    },
+    {
+        "text": " una define una variable de un tipo T lo que hace es en la memoria que es donde guarda las instrucciones",
+        "start": 124.96000000000001,
+        "end": 130.88
+    },
+    {
+        "text": " y los datos dice voy a reservar tenés a memoria un lugarcito que desde el programa vuelos a referencia",
+        "start": 130.88,
+        "end": 137.32
+    },
+    {
+        "text": " con el nombre de la variable x pero está en cierta dirección de memoria capas de contener cualquier",
+        "start": 137.32,
+        "end": 142.6
+    },
+    {
+        "text": " elemento del tipo T entonces si el tipo T es un int el lenguaje le asignará tantos bytes para el",
+        "start": 142.6,
+        "end": 148.95999999999998
+    },
+    {
+        "text": " máximo entero representado de por ejemplo y todos los tipos tienen un máximo la pregunta es a y",
+        "start": 148.95999999999998,
+        "end": 154.95999999999998
+    },
+    {
+        "text": " cómo si el tipo T quiero que sean estas listas uno diría o define una lista máxima que podría ser",
+        "start": 154.95999999999998,
+        "end": 162.88
+    },
+    {
+        "text": " una opción y entonces te doy ese espacio pero no vas a poder crecer reírso y uno lo sabe por los",
+        "start": 162.88,
+        "end": 167.96
+    },
+    {
+        "text": " arreglos por ejemplo o otra opción una diría una ingenua sería decir matemáticamente te doy",
+        "start": 167.96,
+        "end": 175.44
+    },
+    {
+        "text": " espacio infinito sabemos que no es posible o bien te doy algo de tamaño ajustable vamos a ver que",
+        "start": 175.44,
+        "end": 181.64
+    },
+    {
+        "text": " las estructuras de memoria dinámica la estructura de una llamada dinámicas son las que me permiten",
+        "start": 181.64,
+        "end": 185.96
+    },
+    {
+        "text": " ir ajustando el tamaño no cuando compilo porque no es el tamaño no quiero saber el tamaño si",
+        "start": 185.96,
+        "end": 192.32
+    },
+    {
+        "text": " no con tu ejecuto vamos a ver cómo lo hacen los lenguajes no solo se hice más más los lenguajes de",
+        "start": 192.32,
+        "end": 199.0
+    },
+    {
+        "text": " hecho usted programa en Pascal y lo hace de la misma manera que vamos a ver acá",
+        "start": 199.0,
+        "end": 202.23999999999998
+    },
+    {
+        "text": " supongan si quiero que hiciera tener la lista que tiene el uno el dos y el tres que son",
+        "start": 203.16,
+        "end": 206.68
+    },
+    {
+        "text": " enteros no hay cansa con poner esos tres bloques en la memoria sueltos uno tendría que decir bueno",
+        "start": 206.68,
+        "end": 212.88
+    },
+    {
+        "text": " decime dónde está el primero entonces si yo quiero que la variable elese a la lista 1 2 3",
+        "start": 212.88,
+        "end": 219.95999999999998
+    },
+    {
+        "text": " necesitaría guardar de alguna manera ciertos son bloques de memoria donde guardé el uno de los",
+        "start": 219.96,
+        "end": 225.32000000000002
+    },
+    {
+        "text": " dos el tres que guardé lo que llamo acá como xxx decime cuál es la dirección del primer bloque el",
+        "start": 225.32000000000002,
+        "end": 231.20000000000002
+    },
+    {
+        "text": " primer lugar no está el primer elemento entonces yo sé que la secuencia 1 2 3 arranca ahí para hacer",
+        "start": 231.20000000000002,
+        "end": 238.72
+    },
+    {
+        "text": " eso los lenguajes usados y llaman y hay sinónimos para esto en la literatura direcciones porque son",
+        "start": 238.72,
+        "end": 246.16
+    },
+    {
+        "text": " direcciones de la máquina también se les llama referencia en algunos libros hay que ruidoso",
+        "start": 246.16,
+        "end": 251.0
+    },
+    {
+        "text": " que es esto nombres menos usados indicadores y más comúnmente conocido como punteros y",
+        "start": 251.0,
+        "end": 259.15999999999997
+    },
+    {
+        "text": " porque uno los dibuja como una flecha como que está puntando ahí iban a ver que lo voy a usar mucho",
+        "start": 259.15999999999997,
+        "end": 263.71999999999997
+    },
+    {
+        "text": " como regla práctica para pensar los algoritmos entonces es el un hombre bastante común",
+        "start": 263.71999999999997,
+        "end": 269.48
+    },
+    {
+        "text": " dentro de los tipos punteros uno diría entonces los lenguajes de o sea diviene los tipos de",
+        "start": 269.6,
+        "end": 276.76
+    },
+    {
+        "text": " datos en dos categorías lo que son datos entero, reales, bulián, etcétera que guardan información",
+        "start": 276.76,
+        "end": 282.72
+    },
+    {
+        "text": " de datos y lo que son direcciones de datos direcciones de la máquina entonces acá me estoy refiriendo a las",
+        "start": 282.72,
+        "end": 289.28000000000003
+    },
+    {
+        "text": " direcciones dentro las direcciones hay una distinguida que se llama nul y que van a ver que para mi va a ser",
+        "start": 289.28000000000003,
+        "end": 295.24
+    },
+    {
+        "text": " útil para nosotros va a ser útil sobre todo para cuando uno tiene una estructura dinámica",
+        "start": 295.24,
+        "end": 301.52
+    },
+    {
+        "text": " decir dónde termina como una marquita diciendo el puntero que no apunta de alguna manera hasta",
+        "start": 301.52,
+        "end": 307.6
+    },
+    {
+        "text": " casa acabó como si fuera un string el barra ser o de alguna manera diciendo a casa acabó el string",
+        "start": 307.6,
+        "end": 312.88
+    },
+    {
+        "text": " en la memoria uno quisiera si fuera como un niño y quiere dibujar la memoria como guarda una lista",
+        "start": 314.72,
+        "end": 319.72
+    },
+    {
+        "text": " un dos tres que no esté coincida el puntería porque no los pone los tres bloques pegado en la",
+        "start": 319.72,
+        "end": 323.08
+    },
+    {
+        "text": " memoria y ya está como hace un arreglo un arreglo un vector todos los elementos son consecutivos en",
+        "start": 323.08,
+        "end": 328.8
+    },
+    {
+        "text": " la memoria por eso guarda lo que uno llama la dirección del primero",
+        "start": 328.8,
+        "end": 332.4
+    },
+    {
+        "text": " cuál es la desventaja y cuando uno quiere agregar por ejemplo algo en el medio o al comienzo de",
+        "start": 334.12,
+        "end": 340.08
+    },
+    {
+        "text": " ese arreglo no tiene más remedio que hacerse un nuevo arreglo más grande copiar los elementos",
+        "start": 340.08,
+        "end": 345.24
+    },
+    {
+        "text": " corrios del lugar y meter uno nuevo al comienzo y eso cuál es el problema el tiempo de ejecución",
+        "start": 345.24,
+        "end": 350.84
+    },
+    {
+        "text": " aunque si tengo en elementos que ordenes copiar en elementos en otro arreglo e insertar uno",
+        "start": 351.84,
+        "end": 358.2
+    },
+    {
+        "text": " orden de tiempo ejecución no menos ordené en el no porque recorren elementos y los copios en",
+        "start": 359.2,
+        "end": 368.0
+    },
+    {
+        "text": " lugar en el peor caso ordené vamos a ver que las estructuras dinámicas me van a permitir hacer",
+        "start": 368.0,
+        "end": 373.2
+    },
+    {
+        "text": " esto en orden uno tiempo constante entonces ahí viene la ventaja pero no es que no lo pude hacer con",
+        "start": 373.2,
+        "end": 378.55999999999995
+    },
+    {
+        "text": " arreglo sino que las tengo que estar todo el tiempo re dimensionando y reubicando y eso no es",
+        "start": 379.12,
+        "end": 383.4
+    },
+    {
+        "text": " eficiente entonces una lista en la memoria uno quisiera por ahora verla como esto no ha",
+        "start": 383.4,
+        "end": 389.04
+    },
+    {
+        "text": " algo que me diga donde está la dirección del primero acá tengo el primero pero cada todo va a",
+        "start": 389.04,
+        "end": 393.36
+    },
+    {
+        "text": " tener que decir dónde está el próximo si no es contigo al próximo ese este bloque que tiene el",
+        "start": 393.36,
+        "end": 398.52
+    },
+    {
+        "text": " 2 el próximo este bloque tiene el 3 y este no tiene próximo es decir que cada nodo como dice",
+        "start": 398.52,
+        "end": 405.2
+    },
+    {
+        "text": " ahí debería guardar mínimo y hoy vamos a ver que puede guardar más que esto 2 cosas el dato en",
+        "start": 405.2,
+        "end": 412.52
+    },
+    {
+        "text": " este caso el numerito un 2 3 o lo que yo quiera pues es un estrem puede ser otra lista lo que yo",
+        "start": 412.52,
+        "end": 417.68
+    },
+    {
+        "text": " quiera y una flechita la dirección está siguiente y una flechita distinguida es la última que les",
+        "start": 417.68,
+        "end": 425.8
+    },
+    {
+        "text": " parece que que que flechita es esta la de él no hubiera entonces alguna manera si yo después",
+        "start": 425.8,
+        "end": 431.48
+    },
+    {
+        "text": " tuviera posible de ir recorriendo a las flechitas como si fuera un iterar en un arreglo en vez de",
+        "start": 431.48,
+        "end": 436.32
+    },
+    {
+        "text": " decir llegaste al barracero diría andar recorriendo a las flechas hasta que llegues al nul y ahí tendrían",
+        "start": 436.32,
+        "end": 442.32
+    },
+    {
+        "text": " a forma de recorrar una lista por ahora estoy en la intuición ahora voy a bajar a tierra con las",
+        "start": 442.32,
+        "end": 447.48
+    },
+    {
+        "text": " instrucciones del lenguaje que permiten hacer eso que otra cosa quiero y bueno por ejemplo agregar",
+        "start": 447.48,
+        "end": 454.64000000000004
+    },
+    {
+        "text": " y quitar elementos en una lista por ejemplo qué tendría que hacer si uno dijiera con los dibujitos",
+        "start": 454.64000000000004,
+        "end": 460.12
+    },
+    {
+        "text": " agregar el cero al comienzo de la lista un 2 3 y bueno una iría como un niño dame una cajita más",
+        "start": 460.44,
+        "end": 466.88
+    },
+    {
+        "text": " para meter el cero en algún lado entonces el sistema yo le digo dame memoria para lojar algo nuevo",
+        "start": 466.88,
+        "end": 472.76
+    },
+    {
+        "text": " guardo el cero acá pero para cambiar la lista ahora que tendría que hacer modificar las flechas",
+        "start": 474.12,
+        "end": 482.04
+    },
+    {
+        "text": " exacto que el cero apunte hay que hasta ahora era el primero que es el 1 que es la flechita que",
+        "start": 482.04,
+        "end": 488.88
+    },
+    {
+        "text": " estaba acá y ahora digo el primero paso hacer este fíjense que para hacer eso yo no tuve que",
+        "start": 488.88,
+        "end": 495.04
+    },
+    {
+        "text": " cambiar las flechas del 1 hacia el 2 hacia el 3 no tuve que recorrer el resto de la lista lo",
+        "start": 495.04,
+        "end": 500.36
+    },
+    {
+        "text": " hago solo cambiando dos flechitas no diría dos asignaciones eso es tiempo constante ordeno 1",
+        "start": 500.36,
+        "end": 506.20000000000005
+    },
+    {
+        "text": " entonces yo pudiera hacer eso en lenguaje no lo puedo hacer en una regla si lo podría hacer una",
+        "start": 506.88,
+        "end": 511.47999999999996
+    },
+    {
+        "text": " estructura que tenga esta noción donde las cosas no son contiguas es por eso que uno estudia",
+        "start": 511.47999999999996,
+        "end": 517.4
+    },
+    {
+        "text": " estructuras dinámicas que son las estructuras dinámicas en general a aquellas que pueden cambiar",
+        "start": 517.4,
+        "end": 523.96
+    },
+    {
+        "text": " el tamaño también crecer o de crecer en tiempo de ejecución mientras yo ejecuto en un",
+        "start": 523.96,
+        "end": 530.64
+    },
+    {
+        "text": " guay por ejemplo pudiera grandando una lista o achicándola mientras que mientras salsa memoria",
+        "start": 530.64,
+        "end": 537.52
+    },
+    {
+        "text": " eso contrasta con las estructuras de la mano estáticas les cuento las estructuras estáticas las",
+        "start": 537.52,
+        "end": 542.72
+    },
+    {
+        "text": " que defingo un tamaño fijo cuando compilo y hasta que el programa de ejecutar el tamaño",
+        "start": 542.72,
+        "end": 547.92
+    },
+    {
+        "text": " ss por ejemplo digo una defina un arreglo de tamaño 10 hasta que la variable muere y cierro la",
+        "start": 547.92,
+        "end": 554.4
+    },
+    {
+        "text": " y la becita de la alcance es variable el tamaño 10 también entonces esa son estática un",
+        "start": 554.4,
+        "end": 560.0
+    },
+    {
+        "text": " estru un entero una variable simple son estáticas son fijas son constantes la estructura dinámica son",
+        "start": 560.0,
+        "end": 568.8
+    },
+    {
+        "text": " las que me permiten entonces cuando yo compilo sino conozco el tamaño crecer no diría infinito pero",
+        "start": 568.8,
+        "end": 574.9599999999999
+    },
+    {
+        "text": " si mientras salta memoria no sé si lo notaron pero yo a su ratito dije cuando el fina",
+        "start": 574.9599999999999,
+        "end": 582.68
+    },
+    {
+        "text": " una variable x de un tipo t le tengo que decir donde lo hay lojo y te haré ser un tamaño para",
+        "start": 582.68,
+        "end": 590.56
+    },
+    {
+        "text": " cualquier elemento de ese tipo t si yo tengo una lista que coces una lista se lo digo guarda una lista",
+        "start": 590.56,
+        "end": 597.92
+    },
+    {
+        "text": " que tiene que guardar si la lista está representada con un dibujito de esta forma el primer al punter",
+        "start": 597.92,
+        "end": 605.3199999999999
+    },
+    {
+        "text": " el primer hay cansa con sol la primera flechita por más que la lista tenga cientos de nodos como",
+        "start": 605.3199999999999,
+        "end": 611.1999999999999
+    },
+    {
+        "text": " cada nodo tiene la dirección del siguiente alcanza con que yo le dé una dirección y eso es",
+        "start": 611.2,
+        "end": 616.2
+    },
+    {
+        "text": " de tamaño fijo un es como si hubo un entero entonces yo le hago una trampa el sistema y si no te",
+        "start": 616.2,
+        "end": 622.2
+    },
+    {
+        "text": " dejo a hacer cosas ajustables y después podéis pedirla en tiempo de ejecución total para mí la",
+        "start": 622.2,
+        "end": 626.9200000000001
+    },
+    {
+        "text": " lista siempre va a ser sólo una dirección no importa el largo que tenga se entiende entonces ahí",
+        "start": 626.9200000000001,
+        "end": 631.96
+    },
+    {
+        "text": " caigo en las hipótesis que tiene el sistema no importa el largo la lista para mí es la dirección",
+        "start": 631.96,
+        "end": 638.76
+    },
+    {
+        "text": " del primero y si no hubiera el primero la lista es vacía o sea tuviera esta lista",
+        "start": 638.76,
+        "end": 643.8
+    },
+    {
+        "text": " justamente la ausencia de nodo es el balón bien vamos a a terminar un poquito la",
+        "start": 645.8,
+        "end": 655.64
+    },
+    {
+        "text": " introducción y ahora bajemos al mundo de seis y se más más no como defino estas variables de",
+        "start": 655.64,
+        "end": 660.24
+    },
+    {
+        "text": " tipo dirección medio rápido porque ya han trabajado en la tarea aunque más en el",
+        "start": 660.24,
+        "end": 664.16
+    },
+    {
+        "text": " contexto de arreglos de extremistas cosas usando el asterisco cuando acá ponen un nombre",
+        "start": 664.16,
+        "end": 670.4399999999999
+    },
+    {
+        "text": " variable asterisco t supongan que t es el tipo int no estoy definiendo que la variable tiene",
+        "start": 670.4399999999999,
+        "end": 676.4
+    },
+    {
+        "text": " tipo int sino que va a guardar la dirección de un entero que no es lo mismo que un entero",
+        "start": 676.4,
+        "end": 680.3199999999999
+    },
+    {
+        "text": " el asterisco tiene dos usos para confundirlos a ustedes nada más uno es cuando declara una variable",
+        "start": 680.3199999999999,
+        "end": 687.6
+    },
+    {
+        "text": " como acá y el otro es cuando navego yo le digo navego si supongan que la variable p",
+        "start": 687.9200000000001,
+        "end": 694.84
+    },
+    {
+        "text": " tiene una dirección la dirección de este bloque de memoria supongan que acá tengo el",
+        "start": 696.6,
+        "end": 701.64
+    },
+    {
+        "text": " entero cinco es un dato azul dato amarillo dirección ok azul o violeta o celeste no sé lo que",
+        "start": 701.64,
+        "end": 710.12
+    },
+    {
+        "text": " se ha quedado de la dirección de este o sea que tengo guardado un número un diseque número",
+        "start": 711.08,
+        "end": 717.28
+    },
+    {
+        "text": " guarda el número de exadecima lo binario que tiene la memoria pero yo no lo voy a ver nunca",
+        "start": 717.28,
+        "end": 721.68
+    },
+    {
+        "text": " sino lo voy a simbolizar con una flecha me voy a hacer que todo lo que escriba del código sea",
+        "start": 721.68,
+        "end": 725.48
+    },
+    {
+        "text": " transparente al sistema de numeración de la memoria para que eso no cambies y cambios de un",
+        "start": 725.48,
+        "end": 732.08
+    },
+    {
+        "text": " compilador a otro que tenga que modificar el código nunca voy a ver en sí las direcciones",
+        "start": 732.08,
+        "end": 736.44
+    },
+    {
+        "text": " sino que las voy a manipular a partir de operadores básicos como el asterisco y ahora vamos a",
+        "start": 736.9200000000001,
+        "end": 740.86
+    },
+    {
+        "text": " ver el ampera ok entonces cuál es el segundo uso del asterisco si p guarda la dirección del bloque",
+        "start": 740.86,
+        "end": 749.8000000000001
+    },
+    {
+        "text": " este azul lo vamos a llamarle acá entonces cuando digo asterisco p lo mire así no lo ha",
+        "start": 749.8000000000001,
+        "end": 758.0400000000001
+    },
+    {
+        "text": " puntado por p es esto es como que navegue atrás de la flecha y me parean este lugar si p es lo amarillo",
+        "start": 758.0400000000001,
+        "end": 764.8800000000001
+    },
+    {
+        "text": " asterisco p es lo que está abajo entonces lo puedo ver como que navegue para la flecha y ahora",
+        "start": 764.88,
+        "end": 770.28
+    },
+    {
+        "text": " se acaba de un 5 como imprimo este 5 imprimo lo que tiene asterisco p que pasa sin primo p",
+        "start": 770.28,
+        "end": 777.84
+    },
+    {
+        "text": " va a salir un número fe o raro ahí un lugar de la memoria no lo hagan porque no tiene ningún sentido",
+        "start": 780.0,
+        "end": 785.48
+    },
+    {
+        "text": " práctico pero sale una posición de memoria",
+        "start": 785.48,
+        "end": 787.72
+    },
+    {
+        "text": " acá accedézelo a puntado ahí tengo la dirección bien para ilustrar muchas cosas sobre todo de",
+        "start": 787.72,
+        "end": 799.28
+    },
+    {
+        "text": " errores comunes que le quiero mostrar una dice de acá para que lo vimos en p1 lo voy a detallar",
+        "start": 799.28,
+        "end": 804.0
+    },
+    {
+        "text": " porque porque si uno comete errores cuando programa es peco en listas con árboles y",
+        "start": 804.0,
+        "end": 808.28
+    },
+    {
+        "text": " que a pa que ya le pasó con estrín es difícil encontrar los errores unice quien hizo el",
+        "start": 808.28,
+        "end": 812.86
+    },
+    {
+        "text": " compilador de cemas más que no me da mensajes a mi a mi a mi estosos no diría o estoy tocando",
+        "start": 812.86,
+        "end": 818.42
+    },
+    {
+        "text": " el nivel de la memoria aquí como te puedo dar no estoy programando alto nivel ahora por un",
+        "start": 818.42,
+        "end": 823.38
+    },
+    {
+        "text": " rato en este curso después vamos programada después la primera mitad alto nivel ahora estoy",
+        "start": 823.38,
+        "end": 827.1
+    },
+    {
+        "text": " programando abajo nivel tocando la dirección de la máquina entonces cuando algo salta mal te",
+        "start": 827.1,
+        "end": 831.86
+    },
+    {
+        "text": " va a salir segmentation fall un número de memoria incorrecto se cae el programa estás tocando",
+        "start": 831.86,
+        "end": 837.38
+    },
+    {
+        "text": " la memoria lo que estaba bajo de todo había no esperen que los mensajes sean quisiste hacer",
+        "start": 837.38,
+        "end": 842.82
+    },
+    {
+        "text": " esto y tendría que haber dicho esto no le va a decir eso entonces hay que tener cuidado como",
+        "start": 842.82,
+        "end": 847.62
+    },
+    {
+        "text": " hay que tener cuidado mover que cuidados hay que tener algunos lo más importante creo yo acá",
+        "start": 847.62,
+        "end": 853.4200000000001
+    },
+    {
+        "text": " para ver esos cuidados voy a tener en los siguientes transparencias supongan ser declarado estos dos",
+        "start": 853.4200000000001,
+        "end": 858.46
+    },
+    {
+        "text": " variables pt1 y pt2 puntero 1 puntero 2 van a ser punteros centeros que valor tienen",
+        "start": 858.46,
+        "end": 865.98
+    },
+    {
+        "text": " basura indefinido sino inicializo tienen basura y ojo con los punteros con valores indefinidos",
+        "start": 866.5,
+        "end": 874.62
+    },
+    {
+        "text": " son muy peligrosos y uno después trata de navegar para imprimir algo y no tiene asignado se cae",
+        "start": 874.62,
+        "end": 880.38
+    },
+    {
+        "text": " sobre todo si le da una dirección que no es del programa y es del sistema operativo por ejemplo",
+        "start": 880.38,
+        "end": 884.74
+    },
+    {
+        "text": " puno se cae entonces no lo hagan vamos a ver cuatro formas hoy de asignarle algo un puntero con",
+        "start": 884.74,
+        "end": 890.82
+    },
+    {
+        "text": " esas cuatro formas uno puede manejar cualquier estructura de datos dinámica sea lista sea algo",
+        "start": 890.82,
+        "end": 895.54
+    },
+    {
+        "text": " entonces vamos a ver esas cuatro y vamos a ver cuidados con esas cuatro para que tratan de caer",
+        "start": 896.06,
+        "end": 901.0999999999999
+    },
+    {
+        "text": " la menor cantidad de errores posible y esas cuatro sirven para manejar cualquier estructura no que",
+        "start": 901.0999999999999,
+        "end": 905.62
+    },
+    {
+        "text": " diciendo a me va a faltar no le va a faltar nada con eso pueden hacer todo",
+        "start": 905.62,
+        "end": 908.74
+    },
+    {
+        "text": " operador además del asterisco amparsan también para complicarle la vida ustedes tiene dos usos",
+        "start": 911.02,
+        "end": 917.4599999999999
+    },
+    {
+        "text": " está bien un poqueno solo distinto pero bueno el primer uso es el objetivo es da",
+        "start": 918.0600000000001,
+        "end": 924.74
+    },
+    {
+        "text": " mela aplicado una variable a un objeto me da la dirección de ese objeto o sea donde está el",
+        "start": 924.74,
+        "end": 929.3000000000001
+    },
+    {
+        "text": " ojo me da la dirección de memoria entonces supongo hace que tengo esta que dice int y igual a 5",
+        "start": 929.3000000000001,
+        "end": 936.4200000000001
+    },
+    {
+        "text": " en algún lugar de memoria loja la variable y y la inicial y en 5 después de clave la variable",
+        "start": 936.4200000000001,
+        "end": 941.46
+    },
+    {
+        "text": " y ptr que va a guardar la dirección de un entero que va a lo artiní ptr ahora basura porque no",
+        "start": 941.46,
+        "end": 949.1800000000001
+    },
+    {
+        "text": " le asignan nada entonces supongo hace que ahora digo mira hay ptr le asignó amparsan y la",
+        "start": 949.1800000000001,
+        "end": 956.1
+    },
+    {
+        "text": " dirección de y está bien y está bien esta asignación tiene coherencia porque y ptr de lado izquierdo",
+        "start": 956.1,
+        "end": 963.5400000000001
+    },
+    {
+        "text": " la asignación está esperando la dirección de un entero y amparsan y me da la dirección de la",
+        "start": 963.5400000000001,
+        "end": 968.1800000000001
+    },
+    {
+        "text": " variable y que es un entero todavía ok o sea como tipo concide que lo que hace es un dibujito",
+        "start": 968.18,
+        "end": 974.7399999999999
+    },
+    {
+        "text": " esto que está acá la primera forma de crear una de las fechas yo le dije cuatro acá tiene la",
+        "start": 974.7399999999999,
+        "end": 980.06
+    },
+    {
+        "text": " primera que es a la variable y ptr que estaba indefinida ahora queda apuntando a lo que tenía",
+        "start": 980.06,
+        "end": 987.5
+    },
+    {
+        "text": " y con el valor 5 acá se los pongo como si fueran las direcciones de memoria en número 5.000 y",
+        "start": 987.5,
+        "end": 993.4399999999999
+    },
+    {
+        "text": " para que vean que se copia el 6 mil que la dirección acá pero olvidense esto vamos a mirar lo de",
+        "start": 993.9200000000001,
+        "end": 1000.2
+    },
+    {
+        "text": " arriba también en este momento tengo dos formas de imprimir el 5 cuáles son la más fácil cuáles",
+        "start": 1000.2,
+        "end": 1006.96
+    },
+    {
+        "text": " imprimir que y sin primo y tiene 5 y la segunda cuál es imprimir asterisco y ptr lo que apunta y ptr",
+        "start": 1006.96,
+        "end": 1020.1600000000001
+    },
+    {
+        "text": " es como navegar a través de la flecha vengo acá y hay imprimen 5 porque genera la flecha entonces",
+        "start": 1020.16,
+        "end": 1025.72
+    },
+    {
+        "text": " pongo navegar a la flecha imprimir el valor que tiene ok siguiente operación que necesito cuando",
+        "start": 1025.72,
+        "end": 1032.56
+    },
+    {
+        "text": " yo dije voy a agregar el loquecito a la lista 1 2 3 que tenga el 0 el comienzo como agrego",
+        "start": 1032.56,
+        "end": 1036.8
+    },
+    {
+        "text": " entonces el sistema de silencio le da memoria que no te la pedí cuando compilete la estoy pidiendo",
+        "start": 1036.8,
+        "end": 1042.68
+    },
+    {
+        "text": " cuando ejecuto entonces digo cómo es la forma de pedir memoria en lenguaje c puro con un",
+        "start": 1042.68,
+        "end": 1048.32
+    },
+    {
+        "text": " compilador de c puro combinando estas dos instrucciones voy a lojar memoria e me aloque",
+        "start": 1048.32,
+        "end": 1056.0
+    },
+    {
+        "text": " da memoria le estoy diciendo para lojar de este tamaño si fuera int por ejemplo acá me va a",
+        "start": 1056.8,
+        "end": 1063.9199999999998
+    },
+    {
+        "text": " dar un bloque nuevo de memoria del tamaño del entero esto es lo que está haciendo es",
+        "start": 1063.9199999999998,
+        "end": 1072.1599999999999
+    },
+    {
+        "text": " supongo que ptr es de puntero nomb tipo ptr igual a esto lo que está diciendo es da",
+        "start": 1072.96,
+        "end": 1079.72
+    },
+    {
+        "text": " memoria de este tamaño y cuando digo este tamaño se acaba es el tipo int será tantos bytes por ejemplo",
+        "start": 1079.72,
+        "end": 1088.1200000000001
+    },
+    {
+        "text": " si es un real será otra cantidad de bytes también memoria nueva memoria que nadie está usando",
+        "start": 1088.1200000000001,
+        "end": 1095.44
+    },
+    {
+        "text": " memoria fresca entonces donde sale esa memoria bien esto es en c puro si uno compila en c puro",
+        "start": 1095.44,
+        "end": 1105.04
+    },
+    {
+        "text": " esto funciona en cemas más como os haya que me voy a preguntar él aparece el operador niu como",
+        "start": 1105.04,
+        "end": 1113.4
+    },
+    {
+        "text": " ustedes van a compilar en cemas más por más que usemos un fragmento chiquito de cemas más que",
+        "start": 1113.4,
+        "end": 1117.52
+    },
+    {
+        "text": " no es de c estamos usando un compilador de cemas más el niu es una macro que tienen particular",
+        "start": 1117.52,
+        "end": 1123.96
+    },
+    {
+        "text": " esas dos que tenían ahí hace algo más cuando la cosa que está acá el nomb tipo es una clase",
+        "start": 1123.96,
+        "end": 1130.0
+    },
+    {
+        "text": " un objeto ya no hay el constructor pero no mover clase y objeto que vemos no que hace lo mismo que",
+        "start": 1130.0,
+        "end": 1134.6000000000001
+    },
+    {
+        "text": " el otro ustedes van a usar el niu que en pascal era el niu también niu también pero mayúsculas",
+        "start": 1134.6000000000001,
+        "end": 1142.52
+    },
+    {
+        "text": " no no está niu igual entonces que lo que hace el asesto no de algún lugar sale este bloque y ptr",
+        "start": 1142.52,
+        "end": 1152.2
+    },
+    {
+        "text": " queda puntando acá segunda forma de darle a alguna variante y poirección de generar una flecha",
+        "start": 1152.2,
+        "end": 1156.92
+    },
+    {
+        "text": " pero no dice dónde sale este bloque azul entonces para entender eso por si no lo vieron tan",
+        "start": 1157.92,
+        "end": 1163.76
+    },
+    {
+        "text": " claro no lo recuerdan del programa sin uno puedo pensar lógicamente como que la memoria que usa un",
+        "start": 1163.76,
+        "end": 1169.3600000000001
+    },
+    {
+        "text": " programa un programa en un momento dado tiene como dos segmentos lo que estamos de la memoria estática",
+        "start": 1169.3600000000001,
+        "end": 1175.44
+    },
+    {
+        "text": " y la memoria dinámica qué es lo que es la memoria estática todo lo que el programa declaró como",
+        "start": 1175.44,
+        "end": 1181.92
+    },
+    {
+        "text": " variables que cuando compila se lasina memoria por ejemplo la variable x de tipo entero por ejemplo la",
+        "start": 1181.92,
+        "end": 1189.68
+    },
+    {
+        "text": " variable p es de tipo dirección también va a memoria estática porque es una variable y viven",
+        "start": 1189.68,
+        "end": 1194.76
+    },
+    {
+        "text": " esas variables en el segmento donde fueron declaradas y ahora llave de clara la variable si",
+        "start": 1194.76,
+        "end": 1199.44
+    },
+    {
+        "text": " el rolleve a fuera de la llave pregunto por la variable me dice que no existe todavía me dice no",
+        "start": 1199.44,
+        "end": 1204.8000000000002
+    },
+    {
+        "text": " definida me dice entonces viven ese alcance no es que yo la tengo que pedir y devolverlo hace el",
+        "start": 1204.8000000000002,
+        "end": 1209.88
+    },
+    {
+        "text": " sistema solo la bien eso se llama memoria estática cuando compilo se reserva eso un incentos",
+        "start": 1209.88,
+        "end": 1216.2800000000002
+    },
+    {
+        "text": " es si solo tuviera eso el programa mientras ejecuta solo podría usar la memoria que tiene su",
+        "start": 1216.2800000000002,
+        "end": 1223.0400000000002
+    },
+    {
+        "text": " variable y punto para poder tener más memoria se agrega la memoria dinámica que es la memoria que el",
+        "start": 1223.0400000000002,
+        "end": 1230.0
+    },
+    {
+        "text": " programa va a poder pedir no cuando compila ya sino cuando está ejecutando en tiempo de compilación",
+        "start": 1230.0,
+        "end": 1236.1200000000001
+    },
+    {
+        "text": " se llama arriba negro y en tiempo de ejecutión se llama abajo entonces la memoria de abajo como la",
+        "start": 1236.12,
+        "end": 1241.36
+    },
+    {
+        "text": " puedo ver la dinámica partida en dos lo que puedo llamar la memoria dinámica libre disponible que",
+        "start": 1241.36,
+        "end": 1248.4399999999998
+    },
+    {
+        "text": " es esto que estoy poniendo acá y la memoria dinámica que el programa va pidiendo y va ocupando",
+        "start": 1248.4399999999998,
+        "end": 1255.32
+    },
+    {
+        "text": " la que ganó digamos cuál es la memoria en un momento dado de ese programa todas su memoria estática",
+        "start": 1255.32,
+        "end": 1260.84
+    },
+    {
+        "text": " más la memoria dinámica ocupada como lo ocupas como lo obtiene con nú nú lo que hace es",
+        "start": 1260.84,
+        "end": 1266.6799999999998
+    },
+    {
+        "text": " pasar un segmento de memoria del bloque libre memoria fresca un eso le de decir ocupada y si yo",
+        "start": 1266.6799999999998,
+        "end": 1273.3999999999999
+    },
+    {
+        "text": " se lo asigno a la variable p entonces ahora p queda puntando acá y tiene forma de acceder ese lugar",
+        "start": 1273.3999999999999,
+        "end": 1278.9599999999998
+    },
+    {
+        "text": " con las terisco para guardar a guay entonces ganó un lugar de memoria se entiende memoria que no",
+        "start": 1278.9599999999998,
+        "end": 1284.6799999999998
+    },
+    {
+        "text": " tenía memoria que ganó la operación nú tiene la inversa que es el dilito también que lo que",
+        "start": 1284.68,
+        "end": 1292.44
+    },
+    {
+        "text": " hace es liberación de memoria la memoria dinámica que no uso típicamente si piensa una lista",
+        "start": 1292.44,
+        "end": 1299.16
+    },
+    {
+        "text": " cuando voy a usar en qué tipo de algoritmos voy a usar un nú y en qué tipo de algoritmos",
+        "start": 1299.16,
+        "end": 1311.52
+    },
+    {
+        "text": " voy a usar un nú y cuando yo te manera cuando inserto cuando creo cuando voy cargando",
+        "start": 1311.52,
+        "end": 1322.6
+    },
+    {
+        "text": " le cosas a la lista como le voy pidiendo más memoria voy a usar el nú cuando quiero hacer crezar la",
+        "start": 1322.6,
+        "end": 1327.8799999999999
+    },
+    {
+        "text": " estructura cuando la quiero hacer de crezar pues vaciar la borrarla voy a usar el dilit qué pasa",
+        "start": 1327.8799999999999,
+        "end": 1334.6
+    },
+    {
+        "text": " si no uso el dilit memoria dinámica ocupada que queda inaccesible para el programa y si el",
+        "start": 1334.6,
+        "end": 1340.96
+    },
+    {
+        "text": " programa después pide mucha memoria en algún momento cuando pida nú me va a decir no hay más",
+        "start": 1340.96,
+        "end": 1345.1200000000001
+    },
+    {
+        "text": " tenés que desocupar la memoria en las tareas le van a pegar así si no desocupa la memoria ahora",
+        "start": 1349.28,
+        "end": 1354.28
+    },
+    {
+        "text": " van a haber pruebas chequeos que son de estrés de memoria van a haber si están estresando a la",
+        "start": 1354.28,
+        "end": 1360.22
+    },
+    {
+        "text": " pobre estructura y no liberándola la esta es la memoria de un programa el está de ejecución",
+        "start": 1360.22,
+        "end": 1374.3
+    },
+    {
+        "text": " de la máquina está en el sistema operativo está en otro lado lo maneja el sistema operativo",
+        "start": 1374.3,
+        "end": 1378.8600000000001
+    },
+    {
+        "text": " escondido a los programas tiene un interfaz con los programas pero lo tienen otro lugar",
+        "start": 1378.8600000000001,
+        "end": 1384.22
+    },
+    {
+        "text": " está bien ok bueno vamos a ver ahora usos del nú y del dilit supongase que sí dale perdón",
+        "start": 1384.22,
+        "end": 1395.46
+    },
+    {
+        "text": " ahora vamos a ver eso no no eso pasa en un arreglo que es contigo si opones dilit",
+        "start": 1405.18,
+        "end": 1413.42
+    },
+    {
+        "text": " corchetes y el nombre de la reglo ahí se elimina todo el espacio contigo de la reglo si es",
+        "start": 1414.22,
+        "end": 1420.06
+    },
+    {
+        "text": " una lista que todavía no llegue a la lista a ver seguir la intuición pero todavía no la no",
+        "start": 1420.06,
+        "end": 1425.5
+    },
+    {
+        "text": " les escribimos y pongo dilit el puntero el primero no se libera toda la lista también",
+        "start": 1425.5,
+        "end": 1430.3
+    },
+    {
+        "text": " aunque hace un algoritmo que recorra la lista liberando pues ya vamos a llegar ahí supongase que",
+        "start": 1430.3,
+        "end": 1435.66
+    },
+    {
+        "text": " hago pterre 1 y pterre 2 que eran las variables que teníamos no inicializado nú int y nú int el efecto",
+        "start": 1435.66,
+        "end": 1441.58
+    },
+    {
+        "text": " es este aparece en estos dos bloques de la memoria fresca y pterre 1 a punto acá y pterre 2 a",
+        "start": 1441.58,
+        "end": 1448.08
+    },
+    {
+        "text": " punto acá que lo que hay acá y acá basura todavía no ha sin nada algo que podría hacer es a",
+        "start": 1448.08,
+        "end": 1454.26
+    },
+    {
+        "text": " lo que apunta pterre 1 o sea a este bloque asignarle 5 este lugar de memoria no tiene nombre",
+        "start": 1454.26,
+        "end": 1463.1799999999998
+    },
+    {
+        "text": " la única forma de llegar a él es navegando a través de en este caso una variable que sí tiene",
+        "start": 1464.1399999999999,
+        "end": 1469.22
+    },
+    {
+        "text": " nombre que es pterre 1 entonces por qué lo hace así el lenguaje porque cuando compilo eso no",
+        "start": 1469.22,
+        "end": 1475.5
+    },
+    {
+        "text": " existía entonces no le podía dar un nombre y una regla de alcance de variable eso se lo da las",
+        "start": 1475.5,
+        "end": 1480.46
+    },
+    {
+        "text": " cosas que están en la memoria estática la memoria dinámica no cumplen las reglas de alcance de vida",
+        "start": 1480.46,
+        "end": 1484.46
+    },
+    {
+        "text": " de las yavesitas también por eso yo tengo que liberar la memoria cuando termina la ejecución",
+        "start": 1484.46,
+        "end": 1491.18
+    },
+    {
+        "text": " del programa como es el recupero toda la memoria no es que tiene que salir a comprar memoria",
+        "start": 1491.18,
+        "end": 1494.78
+    },
+    {
+        "text": " pero hasta que no termine la ejecución del programa ningún programa o algoritmo o su rutina que",
+        "start": 1495.5,
+        "end": 1500.8999999999999
+    },
+    {
+        "text": " tenga ahí si se quedó sin memoria marcho una cosa que no les va a pasar a lo que programen mal es",
+        "start": 1500.8999999999999,
+        "end": 1508.1
+    },
+    {
+        "text": " que cuando uno hace nub no da error nunca da error y uno dice qué pasa cuando no hay más memoria a",
+        "start": 1508.1,
+        "end": 1513.54
+    },
+    {
+        "text": " la variable que yo le sin nub por ejemplo acá acá pterre 1 igual nub int si después pregunto",
+        "start": 1513.54,
+        "end": 1521.3
+    },
+    {
+        "text": " is pterre 1 es nub es porque no habíamos en memoria no da error pero le ha sin nub",
+        "start": 1521.3,
+        "end": 1526.18
+    },
+    {
+        "text": " entonces yo puedo chequear eso si se da otra la memoria va a ser programación defensiva se suele",
+        "start": 1527.58,
+        "end": 1533.3799999999999
+    },
+    {
+        "text": " llamar chequeando errores después que haga un nub preguntando si me quedó nub y si me quedó nub",
+        "start": 1533.3799999999999,
+        "end": 1537.86
+    },
+    {
+        "text": " es porque se me acabó la memoria hay guisima al bueno acá tenía otro ejemplo donde",
+        "start": 1537.86,
+        "end": 1545.86
+    },
+    {
+        "text": " asterisco pterre 2 le asignó asterisco pterre 1 o sea lo que tiene pterre 1 más 3",
+        "start": 1545.86,
+        "end": 1551.58
+    },
+    {
+        "text": " está bien está bien eso si qué pasa sin vez de poner acá asterisco pterre 1 pongo pterre 1 más 3",
+        "start": 1553.1799999999998,
+        "end": 1562.86
+    },
+    {
+        "text": " andas a ver qué pasa no porque a una dirección de memoria le estoy sumando 3",
+        "start": 1566.3799999999999,
+        "end": 1569.8999999999999
+    },
+    {
+        "text": " capa que es un lugar de memoria del mismo programa y el sistema de lenguaje hace coarción de",
+        "start": 1570.7,
+        "end": 1577.5800000000002
+    },
+    {
+        "text": " tipos entonces entre direcciones y número como son combinables capa que nos salta el error pero",
+        "start": 1577.5800000000002,
+        "end": 1583.5400000000002
+    },
+    {
+        "text": " va a el lugar de memoria y te da o cualquier cosa que no esperabas o se salió de la memoria del",
+        "start": 1583.5400000000002,
+        "end": 1588.02
+    },
+    {
+        "text": " programa y te da un error se me interesa un fold no hagan eso no mezcle nunca datos con direcciones",
+        "start": 1588.02,
+        "end": 1594.7
+    },
+    {
+        "text": " datos con datos y direcciones con direcciones entre sí no empiecen a sumar no empiecen a ver lo que",
+        "start": 1594.7,
+        "end": 1599.1000000000001
+    },
+    {
+        "text": " llama aritmética de punteros es muy inseguro cuando le puedo sumar y estoy con garantía más",
+        "start": 1599.1,
+        "end": 1605.1
+    },
+    {
+        "text": " menos que no estoy metiendo la pata cuando es un arreglo y yo a la posición del primero le",
+        "start": 1605.1,
+        "end": 1609.58
+    },
+    {
+        "text": " subo en el lugar le sumo un n si el arreglo tiene más largo que n entonces es seguro pues estamos",
+        "start": 1609.58,
+        "end": 1615.58
+    },
+    {
+        "text": " viendo en el lugares en el arreglo pero no es la forma habitual demogarse en un arreglo no es una",
+        "start": 1615.58,
+        "end": 1619.98
+    },
+    {
+        "text": " forma segura demogarse en un arreglo lo puedo hacer con interacción de otra forma",
+        "start": 1619.98,
+        "end": 1625.58
+    },
+    {
+        "text": " es exacto por eso es la forma segura de programar si le sumo la dirección no me va a error pero",
+        "start": 1630.1,
+        "end": 1635.1
+    },
+    {
+        "text": " es una forma insegura de programar no lo va a ver entonces aritmética de punteros lo que dice",
+        "start": 1635.1,
+        "end": 1642.34
+    },
+    {
+        "text": " abajo capítulo el libro que lean que tenga eso saltense lo está bien programar es es",
+        "start": 1642.34,
+        "end": 1649.86
+    },
+    {
+        "text": " parte a veces usan aritmética de punteros porque conocen el compilador que está",
+        "start": 1649.86,
+        "end": 1653.58
+    },
+    {
+        "text": " en usando abajo un nivel como se manejan las cosas entonces como son jodidos promar es",
+        "start": 1653.58,
+        "end": 1658.1399999999999
+    },
+    {
+        "text": " perto tratan de ir y hacerlo abajo un nivel porque es un poquito más rápido está bien pero no",
+        "start": 1658.14,
+        "end": 1663.22
+    },
+    {
+        "text": " lo vamos a eso insegura bueno creo que por ahí recuerda que recién pete reúno estaba apuntando",
+        "start": 1663.22,
+        "end": 1670.8200000000002
+    },
+    {
+        "text": " acá y pete reúo estaba apuntando acá qué pasa cuando hago tercera forma al final le hago un puntero",
+        "start": 1670.8200000000002,
+        "end": 1676.46
+    },
+    {
+        "text": " ahora vimos el amperzan el nú la tercera es el alias cuando un puntero le asino lo que ya tiene",
+        "start": 1676.46,
+        "end": 1683.5400000000002
+    },
+    {
+        "text": " otro es una forma de dejar de ser indefinido de pete reúno si le asino lo que ya tiene otro puntero",
+        "start": 1683.54,
+        "end": 1690.62
+    },
+    {
+        "text": " por ejemplo si pete reúos estaba apuntando acá y pete reúno estaba apuntando al lo que 5 esta",
+        "start": 1690.62,
+        "end": 1697.5
+    },
+    {
+        "text": " asignación lo que provoca es que pete reúno apunte al mismo lugar que pete reúos y si geniales",
+        "start": 1697.5,
+        "end": 1703.18
+    },
+    {
+        "text": " llamas un alias es exacto esto sería un mal manejo de la memoria porque este 5 uniría donde",
+        "start": 1703.18,
+        "end": 1713.3799999999999
+    },
+    {
+        "text": " quedó en la memoria dinámica ocupada pero como no tiene nombre y si perdí la dirección",
+        "start": 1713.38,
+        "end": 1719.42
+    },
+    {
+        "text": " nadie lo va a poder recuperar ese lugar entonces para hacer eso que aparece en el lenguaje además",
+        "start": 1719.42,
+        "end": 1726.18
+    },
+    {
+        "text": " del nú el dilit entonces aparece el dilit que es lo que hace el dilit",
+        "start": 1726.18,
+        "end": 1731.5400000000002
+    },
+    {
+        "text": " libera ahora que el libera yo he escuchado cosa diciendo dilit peterredos es borra la variable",
+        "start": 1733.66,
+        "end": 1739.5400000000002
+    },
+    {
+        "text": " peterredos la variable no se borran vive en el alcance de vía donde fueron declaradas no va a",
+        "start": 1739.54,
+        "end": 1744.58
+    },
+    {
+        "text": " desaparecer una variable también lo que es exacto libera lo ha apuntado todos los bloques que",
+        "start": 1744.58,
+        "end": 1751.06
+    },
+    {
+        "text": " está apuntando entonces si peterredos está apuntando acá dilit peterredos libera este bloque este bloque",
+        "start": 1751.06,
+        "end": 1756.62
+    },
+    {
+        "text": " vuelve a la memoria dinámica libre para que un futuro nú pueda tomar ese cacho de memoria y",
+        "start": 1756.62,
+        "end": 1762.18
+    },
+    {
+        "text": " asignarse lo a otra estructura por ejemplo como queda peterredos indefinido como cuando fue",
+        "start": 1762.18,
+        "end": 1768.78
+    },
+    {
+        "text": " declarado un inicializado igual basura ojo hay gente que bien ahora te voy a mostrar eso",
+        "start": 1768.78,
+        "end": 1781.02
+    },
+    {
+        "text": " ojo que a veces una dice hago esto el dilit y después acá imprimo asterisco peterredos y",
+        "start": 1783.78,
+        "end": 1789.98
+    },
+    {
+        "text": " dice mensalios el 8 profe no entiendo nada se acabo de hacer un dilit porque sale el 8 porque el",
+        "start": 1789.98,
+        "end": 1795.8999999999999
+    },
+    {
+        "text": " dilit es un directivo al sistema operativo diciendo che esta memoria no la preciso más recuperarla",
+        "start": 1795.9,
+        "end": 1801.0600000000002
+    },
+    {
+        "text": " para cuando te la pida un otro nú capa que no la recupera inmediatamente y eso depende la",
+        "start": 1801.0600000000002,
+        "end": 1805.6200000000001
+    },
+    {
+        "text": " versión del compilador que usen o del sistema operativo entonces capa que inmediatamente tienen",
+        "start": 1805.6200000000001,
+        "end": 1810.5400000000002
+    },
+    {
+        "text": " este bloque 2 intrusiones más abajo ya no lo tiene más la consina es después de hacer dilit",
+        "start": 1810.5400000000002,
+        "end": 1815.66
+    },
+    {
+        "text": " no se puede usar más a esa variable le puedo asignar otra cosa pero ya no navegar a través de eso",
+        "start": 1815.66,
+        "end": 1820.74
+    },
+    {
+        "text": " porque el espacio de memoria ya no es de él lo del ámpersan que pasa con el dilit de la",
+        "start": 1820.74,
+        "end": 1828.9
+    },
+    {
+        "text": " ámpersan volvo para atrás esta instrucción vieron int y igual a 5 en que lugar está el",
+        "start": 1828.9,
+        "end": 1838.72
+    },
+    {
+        "text": " ojado de la variable y memoria estática memoria dinámica estática todas las variables",
+        "start": 1838.72,
+        "end": 1844.14
+    },
+    {
+        "text": " memoria estática int asterisco y pterre donde está y pterre en la memoria estática es una",
+        "start": 1844.14,
+        "end": 1852.18
+    },
+    {
+        "text": " variable por más que sea puntero es una variable esa dos variables tan en memoria estática cuando",
+        "start": 1852.18,
+        "end": 1857.66
+    },
+    {
+        "text": " yo le digo y pterre ampersoní genera la flecha que pasa si ahora digo dilit y pterre",
+        "start": 1857.66,
+        "end": 1863.0600000000002
+    },
+    {
+        "text": " es que nada todo esto ustedes me quiero que estaba en memoria estática",
+        "start": 1866.22,
+        "end": 1869.26
+    },
+    {
+        "text": " trata de liberar el puntero ese y les va a dar un error no es que no basan nada león error",
+        "start": 1870.26,
+        "end": 1875.58
+    },
+    {
+        "text": " por decir no pudo liberar memoria estática porque no es memoria que no depende de la parte de ejecución",
+        "start": 1875.58,
+        "end": 1881.94
+    },
+    {
+        "text": " eso es cuando compiló esa memoria cumple reglas diferente a la que a la que manejo abajo salto un",
+        "start": 1881.94,
+        "end": 1887.98
+    },
+    {
+        "text": " error entonces vuelvo acá fíjense que el nube y el dilit son inversos pero a este nivel de la",
+        "start": 1887.98,
+        "end": 1895.46
+    },
+    {
+        "text": " memoria dinámica no se pueden meter con la memoria estática no pueden liberar o pedir",
+        "start": 1895.46,
+        "end": 1900.7
+    },
+    {
+        "text": " memoria a carriba la hace la declaración de variables el alcance de variable ahí es el sistema",
+        "start": 1900.7,
+        "end": 1908.78
+    },
+    {
+        "text": " automáticamente lo hace ok sí como el ejemplo que estábamos viendo su ratito vamos para eso",
+        "start": 1908.78,
+        "end": 1922.66
+    },
+    {
+        "text": " estamos acá pterredosis en puntero cuando habo dilit pterredos yo habo dilit el nombre de la",
+        "start": 1922.66,
+        "end": 1933.42
+    },
+    {
+        "text": " variable tipo puntero que lo que libera lo que apunte ese puntero el puntero que he indefinido",
+        "start": 1933.42,
+        "end": 1938.3400000000001
+    },
+    {
+        "text": " la variable puntero amarilla ahora este bloque que es dato se liberó vuelve la memoria dinámica",
+        "start": 1939.3400000000001,
+        "end": 1946.7
+    },
+    {
+        "text": " libre ahora se entiende sí que pasa cuando tengo una alias y algún dilit bueno si estas dos",
+        "start": 1946.7,
+        "end": 1957.78
+    },
+    {
+        "text": " pterredos y pterredos están apuntando esto y uno dice van a ser útil en los válidos está",
+        "start": 1957.78,
+        "end": 1961.82
+    },
+    {
+        "text": " diciendo algo que no lo voy a usar nunca si van a ser reútiles cuando quiero insertar buscar borrar",
+        "start": 1961.82,
+        "end": 1967.1000000000001
+    },
+    {
+        "text": " en una lista en un árbol todo siempre voy a moverme en una lista por ejemplo diciendo a paro",
+        "start": 1967.1000000000001,
+        "end": 1972.46
+    },
+    {
+        "text": " cuando llegue a esta dirección que la tiene otro puntero entonces llegó cuando se genera un alias",
+        "start": 1972.46,
+        "end": 1976.98
+    },
+    {
+        "text": " va a ser muy útil pero te han cuidado porque por ejemplo si yo va a caer un dilit pterre1 uno dice qué",
+        "start": 1976.98,
+        "end": 1984.46
+    },
+    {
+        "text": " va a ser y libera lo apuntado por pterre1 o sea este bloque pero pterredos que apuntaba acá",
+        "start": 1984.46,
+        "end": 1989.5
+    },
+    {
+        "text": " quedar con basura o sea que de la misma situación que pterre1 indefinido",
+        "start": 1989.5,
+        "end": 1993.94
+    },
+    {
+        "text": " tabiel si les peta todo de usarlo es un error cuando digo usarlo quiere decir navegar a través",
+        "start": 1993.94,
+        "end": 1999.94
+    },
+    {
+        "text": " de él le puedo sinar algo después claro tabiel y vuelve a estar definida pero ya perdió esto las",
+        "start": 1999.94,
+        "end": 2006.5800000000002
+    },
+    {
+        "text": " dos perdieron esto se entiende y la cuarta forma sin darle algún puntero la más simple así no",
+        "start": 2006.5800000000002,
+        "end": 2013.94
+    },
+    {
+        "text": " le null y ahí tengo las cuatro para que les quede claro null no es lo mismo que indefinido no le",
+        "start": 2013.94,
+        "end": 2024.22
+    },
+    {
+        "text": " puedo preguntar una variable está sin definido no que ha sido inicializado no no le puedo preguntar",
+        "start": 2024.22,
+        "end": 2029.7
+    },
+    {
+        "text": " porque me da un error entonces este código está para ilustrar eso yo puedo preguntarle a cualquier",
+        "start": 2029.7,
+        "end": 2034.9
+    },
+    {
+        "text": " variable tipo puntero que esté definida no indefinida por ejemplo si es null o si no",
+        "start": 2034.9,
+        "end": 2042.8600000000001
+    },
+    {
+        "text": " si es null hará esto y si no es null yo sé que está apuntando algo por ejemplo podría venir e",
+        "start": 2044.38,
+        "end": 2049.86
+    },
+    {
+        "text": " imprimir o acceder y hacer algo con asterisco pterre1 sería valida entonces esta transparencia lo",
+        "start": 2049.86,
+        "end": 2056.6600000000003
+    },
+    {
+        "text": " que muestra es que un puntero en un momento todo puede tener tres situaciones posibles o está",
+        "start": 2056.6600000000003,
+        "end": 2061.98
+    },
+    {
+        "text": " indefinido y no lo usen hasta que no le ha sido en algo o tiene null o está apuntando algo y",
+        "start": 2061.98,
+        "end": 2069.2200000000003
+    },
+    {
+        "text": " me dice cómo logró estar apuntando algo con new con ampersan o porque le ha sido una alias con",
+        "start": 2069.2200000000003,
+        "end": 2075.1
+    },
+    {
+        "text": " alguien que se ha tenido algo y no hay otra forma hay otras pero con estas tres alcanzas la",
+        "start": 2075.1,
+        "end": 2080.86
+    },
+    {
+        "text": " auto es un redundante peligrosa la está chamo no sirven para nada ok recapitulando esas",
+        "start": 2080.86,
+        "end": 2088.42
+    },
+    {
+        "text": " en las cuatro formas seguras de trabajar con puntero cuando ustedes manejan eso ya está",
+        "start": 2088.42,
+        "end": 2092.74
+    },
+    {
+        "text": " para que en pegu uno aprendieron entonces dice pegu uno me enseñó todo lo que tenía que saber que",
+        "start": 2092.74,
+        "end": 2098.3399999999997
+    },
+    {
+        "text": " bueno lo docentes pegu uno una cuotación chiquita que pasa con los arreglos los arreglos hay dos",
+        "start": 2098.34,
+        "end": 2106.06
+    },
+    {
+        "text": " tipos de arreglos entonces como uso el nube lo voy a mencionar ahora por más que ustedes ya",
+        "start": 2106.06,
+        "end": 2110.46
+    },
+    {
+        "text": " la taría uno trabajaron con esto hay dos tipos de arreglos los arreglos de memoria estática y",
+        "start": 2110.46,
+        "end": 2115.46
+    },
+    {
+        "text": " los arreglos de memoria dinámica como define un arreglo de memoria estática donde se maneja",
+        "start": 2115.46,
+        "end": 2121.02
+    },
+    {
+        "text": " automáticamente cuando compila y me obliga el sistema a que yo diga por ejemplo int un nombre",
+        "start": 2121.02,
+        "end": 2126.58
+    },
+    {
+        "text": " de variables estamos arreglo pero tengo que poner acá una constante por ejemplo 100 y compila y",
+        "start": 2126.58,
+        "end": 2133.2999999999997
+    },
+    {
+        "text": " reserva un espacio contigo también para 100 lugares el 099 y el nombre arreglo en realidad es",
+        "start": 2133.2999999999997,
+        "end": 2141.94
+    },
+    {
+        "text": " la dirección del primero es lo que yo puse ahí como con rojo aunque uno no vea un ton de tal",
+        "start": 2141.94,
+        "end": 2146.5
+    },
+    {
+        "text": " puntero ahí no hay un puntero pero el nombre arreglo es la dirección del primer lugar",
+        "start": 2146.5,
+        "end": 2151.2999999999997
+    },
+    {
+        "text": " está bien tengo que pedir memoria con nube o liberar memoria si lo declaro de esta forma no",
+        "start": 2152.3,
+        "end": 2158.1400000000003
+    },
+    {
+        "text": " porque el sistema automáticamente le da la memoria y le saca la memoria como es memoria estática",
+        "start": 2159.26,
+        "end": 2164.98
+    },
+    {
+        "text": " automáticamente por el canse de vida de las variables ahora cuando uno quiere firmar arreglo que",
+        "start": 2164.98,
+        "end": 2170.82
+    },
+    {
+        "text": " depende de una variable que le van a ingresar como parámetro un método y hasta que no la ejecuta",
+        "start": 2170.82,
+        "end": 2175.86
+    },
+    {
+        "text": " y no sabe cuál es el valor el compilado no sabe cuánta memoria darle una variable que no",
+        "start": 2175.86,
+        "end": 2180.1400000000003
+    },
+    {
+        "text": " sabe qué valor va a tener entonces cómo lo declaro a esos arreglos así si quiero que",
+        "start": 2180.14,
+        "end": 2184.98
+    },
+    {
+        "text": " suena arreglo de entero lo defino arreglo como el arreglo yo dije que va a ser la dirección del",
+        "start": 2184.98,
+        "end": 2189.42
+    },
+    {
+        "text": " primero asterisco int si es un arreglo de entero la dirección del primero aunque no diga primero",
+        "start": 2189.42,
+        "end": 2194.7799999999997
+    },
+    {
+        "text": " ahí la dirección del entero y cuando yo sepa después cuál es el tamaño de ese arreglo yo puedo",
+        "start": 2194.7799999999997,
+        "end": 2200.22
+    },
+    {
+        "text": " hacer esto nube int de esta cantidad de lugares y ahí puso una variable no tiene porque es una constante",
+        "start": 2200.22,
+        "end": 2208.9
+    },
+    {
+        "text": " cuál es el dibujito que corresponde ese el mismo de abajo el mismo que les mostré de abajo y la",
+        "start": 2209.38,
+        "end": 2214.38
+    },
+    {
+        "text": " forma de hacer un guay o el arreglo en la posición y es la indistinta si es uno u otro lo que pasa que",
+        "start": 2214.38,
+        "end": 2221.42
+    },
+    {
+        "text": " este se pide con nube y cuando yo no lo use más para hacer una buena gestión de memoria debería",
+        "start": 2221.42,
+        "end": 2225.98
+    },
+    {
+        "text": " liberarlo con delete si yo hago delete creo que por acá me preguntaron arreglo la palabra arreglo la",
+        "start": 2225.98,
+        "end": 2232.62
+    },
+    {
+        "text": " variable arreglo que va a liberar el rojo solo libera el espacio rojo la dirección del",
+        "start": 2232.62,
+        "end": 2241.9
+    },
+    {
+        "text": " primero es acto delete corchete corchete que abre coche te que sierra y el nombre de la reglo ahí",
+        "start": 2241.9,
+        "end": 2250.46
+    },
+    {
+        "text": " sí libera todo el bloque contiguo de la regla para liberar toda la memoria contiguo de un arreglo",
+        "start": 2250.46,
+        "end": 2256.74
+    },
+    {
+        "text": " si se deseamos pseudo dinámico porque no es que este arreglo es dinámico no es que se va a",
+        "start": 2256.74,
+        "end": 2261.3399999999997
+    },
+    {
+        "text": " tirar o va a crecer después que ejecuta una es dinámico porque en tiempo ejecución resuelve el",
+        "start": 2261.34,
+        "end": 2266.5
+    },
+    {
+        "text": " tamaño pero no es que los reserva esta no lo puedo volver a rellenar se entiende porque pierdo",
+        "start": 2266.5,
+        "end": 2271.1800000000003
+    },
+    {
+        "text": " los valores pero si me dejó elegir el tamaño no cuando compiles sino cuando ejecuté ¿Sabía?",
+        "start": 2271.1800000000003,
+        "end": 2278.02
+    },
+    {
+        "text": " ¿Qué es eso?",
+        "start": 2279.6800000000003,
+        "end": 2280.42
+    },
+    {
+        "text": " claro de la reglo ¿no? Cuando no cuando el arreglo dice mira vienen para meter un meto que es",
+        "start": 2281.94,
+        "end": 2288.7000000000003
+    },
+    {
+        "text": " la variable bar y el usuario cuando ejecut va decir yo quiero que bar sea 25 cuando compiló",
+        "start": 2288.7,
+        "end": 2294.98
+    },
+    {
+        "text": " no sabía que valor le va a dar el usuario entonces cuando compila el sistema no le puede asignar a",
+        "start": 2294.98,
+        "end": 2301.02
+    },
+    {
+        "text": " reglo un tamaño porque no sabe el valor que va a tomar una variable sí sabe el valor de una",
+        "start": 2301.02,
+        "end": 2305.7
+    },
+    {
+        "text": " constante por eso la reserva él entonces lo que hacemos es decir bueno mira yo la de claro",
+        "start": 2305.7,
+        "end": 2312.14
+    },
+    {
+        "text": " así como int asterisco arreglo y acá podría poner punticoma y más abajo si quiere no tiene",
+        "start": 2312.14,
+        "end": 2319.42
+    },
+    {
+        "text": " por ser ahí mismo cuando se palía le asigno nune int y ahí puedo elegir la variable entonces",
+        "start": 2319.42,
+        "end": 2325.8599999999997
+    },
+    {
+        "text": " que hace le asigno un bloque contigo igual que antes pero ya no está en la memoria está la",
+        "start": 2325.8599999999997,
+        "end": 2330.3399999999997
+    },
+    {
+        "text": " memoria dinámica ese bloque en el dibujito que vimos hace un rato el arreglo que tiene la constante",
+        "start": 2330.3399999999997,
+        "end": 2337.9
+    },
+    {
+        "text": " el arreglo que tiene la constante dibujada está acá el onegro y el arreglo con nune está",
+        "start": 2337.9,
+        "end": 2344.54
+    },
+    {
+        "text": " acá abajo porque lo pedí con nune lo tengo que goble con dilit y para liberar todo el bloque",
+        "start": 2344.54,
+        "end": 2350.38
+    },
+    {
+        "text": " continuo de la reglo no puedo poner dilit el nombre de la variable de arreglo porque solo libera la",
+        "start": 2350.38,
+        "end": 2355.1800000000003
+    },
+    {
+        "text": " dirección el arreglo lo veis capaz que más claro cuando es dinámico porque es la dirección",
+        "start": 2355.1800000000003,
+        "end": 2359.6600000000003
+    },
+    {
+        "text": " del primero entonces cuando hago dilit libera el primero se vuelva acá cuando se le pongo dilit",
+        "start": 2359.6600000000003,
+        "end": 2365.78
+    },
+    {
+        "text": " acá es exacto yo le pongo acá ahora después de haber sido esto no trabajo con arreglo de dilit",
+        "start": 2365.78,
+        "end": 2373.94
+    },
+    {
+        "text": " propongo dilit arreglo libera este bloque rojo si pongo dilit y antes de poner arreglo pongo",
+        "start": 2373.94,
+        "end": 2380.38
+    },
+    {
+        "text": " coche te que abre coche te que cierra libera todo el bloque continuo de la reglo coche te recto",
+        "start": 2380.38,
+        "end": 2387.94
+    },
+    {
+        "text": " así sería hago dilit coche te arreglo y ahí libera hace unirse no me du cuenta y claro porque",
+        "start": 2388.5,
+        "end": 2400.46
+    },
+    {
+        "text": " no no se da cuenta que cosas libero no libero no es funcional cuando se da cuenta cuando se",
+        "start": 2400.46,
+        "end": 2404.9
+    },
+    {
+        "text": " la acaba la memoria nosotros no vamos a dar cuenta así porque vamos a hacer pruebas algunas",
+        "start": 2404.9,
+        "end": 2411.34
+    },
+    {
+        "text": " de manejo de memoria donde vamos a mover si están liberando no a la memoria porque yo digo como",
+        "start": 2411.34,
+        "end": 2415.78
+    },
+    {
+        "text": " lo notas esto y si que gusto una vez no lo veo presión un guay hasta 10 mil y te hago esto y",
+        "start": 2415.78,
+        "end": 2420.2200000000003
+    },
+    {
+        "text": " bueno libera la memoria en el momento el nul no te dice que no hay más memoria",
+        "start": 2420.2200000000003,
+        "end": 2425.1400000000003
+    },
+    {
+        "text": " vamos si",
+        "start": 2427.34,
+        "end": 2428.26
+    },
+    {
+        "text": " si vuelos a ver ahora pero si vas a hacer un encadrenamiento con un person o bien hay en lo",
+        "start": 2446.78,
+        "end": 2454.1000000000004
+    },
+    {
+        "text": " creo en memoria dinámica o estás haciendo un encadrenamiento de memoria estática si",
+        "start": 2454.1000000000004,
+        "end": 2458.78
+    },
+    {
+        "text": " vas a hacer una lista de memoria estática es raro porque difícil que puedas armar algo de",
+        "start": 2458.78,
+        "end": 2463.38
+    },
+    {
+        "text": " tamaño ajustable memoria estática porque se tendría que haber definido ese tamaño cuando compiló",
+        "start": 2463.38,
+        "end": 2467.78
+    },
+    {
+        "text": " es muy raro es entonces siempre la vas a reservar con nul y la vas a liberar con dilit",
+        "start": 2467.78,
+        "end": 2472.5800000000004
+    },
+    {
+        "text": " capaz que un lugar de memoria lo haces con nambas pero si es algo variable no va a estar de",
+        "start": 2473.14,
+        "end": 2478.7799999999997
+    },
+    {
+        "text": " memoria estática",
+        "start": 2478.7799999999997,
+        "end": 2479.42
+    },
+    {
+        "text": " pero ahora vamos a las listas para trabajar con las listas uno puede poner en seis y",
+        "start": 2483.66,
+        "end": 2489.62
+    },
+    {
+        "text": " demás más puntero a lo que se le antoje hasta ahora mismo ejemplo de puntero entero pero yo",
+        "start": 2489.62,
+        "end": 2495.54
+    },
+    {
+        "text": " puedo poner puntero a un estruque todavía en de hecho por qué pongo el ejemplo el estruque porque",
+        "start": 2495.54,
+        "end": 2501.06
+    },
+    {
+        "text": " dijimos que un nodito de una lista como mínimo me va a tener dos cosas un dato y un puntero",
+        "start": 2501.06,
+        "end": 2506.22
+    },
+    {
+        "text": " también pero puede tener muchos campos puede ser puntero o un objeto o una clase lo van a ver que",
+        "start": 2506.22,
+        "end": 2512.34
+    },
+    {
+        "text": " pasa en programación cuatro y puede ser puntero o un código a una función o un procedimiento",
+        "start": 2512.34,
+        "end": 2516.5
+    },
+    {
+        "text": " temas más me deja poner puntero que es dirección a lo que se me antoje de la máquina pero",
+        "start": 2516.5,
+        "end": 2522.54
+    },
+    {
+        "text": " acabamos a ver el ejemplo del puntero a un registro supone que este rej datos un estruque tiene",
+        "start": 2522.54,
+        "end": 2528.42
+    },
+    {
+        "text": " dos campos uno que es un string nombre y otro un salario número real el tijdf lo que está",
+        "start": 2528.42,
+        "end": 2535.54
+    },
+    {
+        "text": " diciendo a quien sabe esto sí el tipo res punt es sinónimo de qué puntero a rec datos de",
+        "start": 2535.54,
+        "end": 2544.9
+    },
+    {
+        "text": " si cuando define la variable res persona de tipo res punt el mismo que ha dicho que res persona",
+        "start": 2544.9,
+        "end": 2549.94
+    },
+    {
+        "text": " de como variable va a ser asterisco rec datos se entiende ahora no le asignada o sea está",
+        "start": 2549.94,
+        "end": 2556.58
+    },
+    {
+        "text": " indefinido entonces yo podría venir y decir mira a res persona le doy niu res datos que lo que hace",
+        "start": 2556.58,
+        "end": 2562.62
+    },
+    {
+        "text": " el sistema lo mismo que antes saca memoria dinámica libre y se la pasa a la dinámica ocupada pero",
+        "start": 2562.62,
+        "end": 2568.94
+    },
+    {
+        "text": " ahora es memoria compuesta porque tiene dos campos es estructura tenía dos campos tu cómo",
+        "start": 2568.94,
+        "end": 2573.7
+    },
+    {
+        "text": " ha sido a cada campo bueno hay dos formas la forma de abajo supone que quiero acceder el salario",
+        "start": 2573.7,
+        "end": 2580.62
+    },
+    {
+        "text": " y explicar primero la de abajo de todo es que yo le diga a asterisco res persona o sea lo que",
+        "start": 2580.62,
+        "end": 2585.2999999999997
+    },
+    {
+        "text": " apunta res persona puntos al ario porque un estructura la forma de acceder a cada campo un",
+        "start": 2585.3,
+        "end": 2590.26
+    },
+    {
+        "text": " estructura es con el puntito como es muy habitual trabajar con punteros estructuras que tienen varios",
+        "start": 2590.26,
+        "end": 2596.82
+    },
+    {
+        "text": " campos hay una notación que es más útil y más práctica más de dar que la flechita poner",
+        "start": 2596.82,
+        "end": 2603.38
+    },
+    {
+        "text": " en vez de poner esto pongo res persona flechita salario que es la forma de decir lo que apunta",
+        "start": 2603.38,
+        "end": 2609.1800000000003
+    },
+    {
+        "text": " res persona en el campo salario es lo mismo que lo que está abajo son indistintos para el sistema",
+        "start": 2609.1800000000003,
+        "end": 2614.34
+    },
+    {
+        "text": " uno o el otro es lo mismo sí si podés componer podéis usarla de arriba con la de abajo mezcladas",
+        "start": 2614.34,
+        "end": 2625.5
+    },
+    {
+        "text": " para el sistema son como sinónimos no sé si es esa tu pregunta así poder si salario otro",
+        "start": 2625.5,
+        "end": 2635.1000000000004
+    },
+    {
+        "text": " puntero esto es compuesto entonces podrías poner punto tal cosa o si es la dirección de algo flechita",
+        "start": 2635.1000000000004,
+        "end": 2640.1800000000003
+    },
+    {
+        "text": " tal y si salario fuera la dirección de algo de otro estruct pone flechita si fuera un estruct",
+        "start": 2640.18,
+        "end": 2648.1
+    },
+    {
+        "text": " salario ponés puntito depende lo que sea ahora vamos a ver ejemplo como anexo de lista ya tenemos",
+        "start": 2648.1,
+        "end": 2655.94
+    },
+    {
+        "text": " todo para manejar las listas disculpe que esta introducción ahí a todo lo básico de memoria dinámica",
+        "start": 2655.94,
+        "end": 2661.14
+    },
+    {
+        "text": " fue muy larga pero como lo vamos a usar no son le listas sino en todas las variantes listas en árboles",
+        "start": 2661.14,
+        "end": 2667.02
+    },
+    {
+        "text": " y en todas las estructuras de datos dinámicas que ustedes vean acá y en el futuro me parecía que",
+        "start": 2667.02,
+        "end": 2671.98
+    },
+    {
+        "text": " vaya a la pena dedicarle esta primera hora las listas o secuencias más simples por ejemplo ésta",
+        "start": 2671.98,
+        "end": 2679.02
+    },
+    {
+        "text": " la que una notación una diría de tipo inductivo la arma como x1 puntito x2 puntito puntito",
+        "start": 2680.1,
+        "end": 2688.62
+    },
+    {
+        "text": " que sería similar ese dibujito donde los x subían los amarillos digamos la información que está",
+        "start": 2688.62,
+        "end": 2695.82
+    },
+    {
+        "text": " en amarillo y el puntito que vendría a ser la flecha y entonces dice y quién es este la flecha",
+        "start": 2695.82,
+        "end": 2703.38
+    },
+    {
+        "text": " final o sea nul a todos ellos a bueno eso lo puedo tener esta analogía puedo manejar punteros",
+        "start": 2703.38,
+        "end": 2710.6200000000003
+    },
+    {
+        "text": " ya vimos cómo en el nodito amarillo que va a haber como mínimo dos cosas el dato y el puntero",
+        "start": 2710.6200000000003,
+        "end": 2716.3
+    },
+    {
+        "text": " el otro ya acabamos de ver un ejemplo de puntero algo que tiene dos campos ya tengo todo se",
+        "start": 2716.3,
+        "end": 2721.6200000000003
+    },
+    {
+        "text": " puedo venir decir mira la estructura nodolista la mable va a tener como mínimo porque yo como",
+        "start": 2721.62,
+        "end": 2727.7999999999997
+    },
+    {
+        "text": " mínimo es podemos ver variantes esto también entonces nodolista la defino la estructura tiene un",
+        "start": 2727.7999999999997,
+        "end": 2735.2999999999997
+    },
+    {
+        "text": " campo info supongan ser o dato a veces sueliz amar que guarda supongan ser que es de un tipo t",
+        "start": 2735.2999999999997,
+        "end": 2740.22
+    },
+    {
+        "text": " cualquiera puede ser chara asterizco entero lo que se me antoje este azul y un campo sig que es",
+        "start": 2740.22,
+        "end": 2747.3399999999997
+    },
+    {
+        "text": " asterizco nodolista se tiene un puntero otro nodolista fíjense que hay ya hay una recursión",
+        "start": 2747.34,
+        "end": 2752.6200000000003
+    },
+    {
+        "text": " o una auto referencia porque usted es definiendo nodolista y uno de los campos no es nodolista pero",
+        "start": 2752.6200000000003,
+        "end": 2758.94
+    },
+    {
+        "text": " es parecido porque es asterizco nodolista entonces ya la estructura que permite definir esos",
+        "start": 2758.94,
+        "end": 2764.82
+    },
+    {
+        "text": " recursos funciona lo que me pide es que si hago una auto referencia como acá que pongo nodolista",
+        "start": 2764.82,
+        "end": 2771.7000000000003
+    },
+    {
+        "text": " arriba y dentro del cuerpo que está definiendo nodolista vuelvo son nodolistas tienen que tener",
+        "start": 2771.7000000000003,
+        "end": 2776.6400000000003
+    },
+    {
+        "text": " sido si un asterizco para que no sea lo mismo si no está como ahí si está indefinido pero",
+        "start": 2776.64,
+        "end": 2781.62
+    },
+    {
+        "text": " dice no el siguiente no es un nodolista es un puntero nodolista una flecha y voy a definir de acá",
+        "start": 2781.62,
+        "end": 2788.6
+    },
+    {
+        "text": " en más en las transparencias como tipo de lista lo que voy a llamar el tipo lista acá cuando digo",
+        "start": 2788.6,
+        "end": 2794.2
+    },
+    {
+        "text": " tipo lista puntero sano lista como te diga toma una lista que te estoy dando algo de tipo asterizco",
+        "start": 2794.2,
+        "end": 2801.7599999999998
+    },
+    {
+        "text": " nodolista la lista básica es nul y la lista que no es básica como la veo y la voy a ver así",
+        "start": 2801.76,
+        "end": 2810.2400000000002
+    },
+    {
+        "text": " una lista que no es nul va a ser un puntero o un nodo que va a tener un campo info y un campo",
+        "start": 2810.2400000000002,
+        "end": 2820.1000000000004
+    },
+    {
+        "text": " sin acá tendrá el XV que yo quiero ponerle y acá la flecha que yo quiero es eso lo que vamos a",
+        "start": 2820.1000000000004,
+        "end": 2827.6600000000003
+    },
+    {
+        "text": " a ver como trabajar ahora ahora vamos a ver cómo avanza una lista pero yo lo que quiero ir",
+        "start": 2827.66,
+        "end": 2838.16
+    },
+    {
+        "text": " armando en estructura de esto que le puedo hacer tan largo como quiera después vamos a ver",
+        "start": 2838.16,
+        "end": 2841.7799999999997
+    },
+    {
+        "text": " cómo yo y teiro como muy muévora vamos a ver eso hay gorismo de listos supongan que los",
+        "start": 2841.7799999999997,
+        "end": 2846.92
+    },
+    {
+        "text": " ejemplos que le vamos a ver ahora la lista peña está declarada la variable no está iniciada pero",
+        "start": 2846.92,
+        "end": 2851.68
+    },
+    {
+        "text": " está declarada que p es una lista por ejemplo p en algún momento podría ser si una lista de entero",
+        "start": 2851.68,
+        "end": 2856.98
+    },
+    {
+        "text": " este dibujito en la memoria no tiene el 4 el 2 y el 5 y nul entonces sería la lista que no",
+        "start": 2856.98,
+        "end": 2862.2400000000002
+    },
+    {
+        "text": " llamaría 4 2 5 que acá la pondría 4 punto 2 punto 2 punto 5 punto lista vacía y por qué",
+        "start": 2862.2400000000002,
+        "end": 2869.2
+    },
+    {
+        "text": " hagan tanta referencia a esta notación porque esta notación tenía regalo una esquema de programación",
+        "start": 2869.2,
+        "end": 2873.84
+    },
+    {
+        "text": " entonces ya en breve voy a usar este esquema con esa notación",
+        "start": 2873.84,
+        "end": 2877.34
+    },
+    {
+        "text": " bien bueno supongamos declarada no sólo p sino q y r también la primera forma de",
+        "start": 2877.34,
+        "end": 2886.2000000000003
+    },
+    {
+        "text": " declarar una lista la más simple la vacía la que ni siquiera tiene un nodo no tiene ningún",
+        "start": 2886.2000000000003,
+        "end": 2891.86
+    },
+    {
+        "text": " nodo es asignarle a penul y yo podría ya venir escribir un método una función que diga y",
+        "start": 2891.86,
+        "end": 2898.6000000000004
+    },
+    {
+        "text": " sempti que le paso con parámetro una lista y me dices buliano si es nul o no que retornan",
+        "start": 2898.6000000000004,
+        "end": 2905.06
+    },
+    {
+        "text": " este código simple la comparación de si p en nul si p en nul es vacía y si no está",
+        "start": 2905.06,
+        "end": 2911.18
+    },
+    {
+        "text": " puntando algo puede ser un nodo pero ya si tiene un nodo ya no es vacía o hagan cientos de nodos",
+        "start": 2911.18,
+        "end": 2917.74
+    },
+    {
+        "text": " pero con uno solo ya no es vacía se entiende entonces este código primero simple me chequias una",
+        "start": 2917.74,
+        "end": 2924.7799999999997
+    },
+    {
+        "text": " lista que yo le de es vaciona veamos ahora cómo es esto si repaso no como por ejemplo ese ejemplo",
+        "start": 2924.7799999999997,
+        "end": 2932.42
+    },
+    {
+        "text": " que le había visto al comienzo como que regaba un nodito al comienzo de la lista esto es",
+        "start": 2932.42,
+        "end": 2936.86
+    },
+    {
+        "text": " espero que sea más repaso de p1 que otra cosa voy ahí me voy rápido salió que ustedes me",
+        "start": 2936.86,
+        "end": 2942.06
+    },
+    {
+        "text": " frenen me ganan no entendí si yo quiero insertar a la lista x1 quedó x3 xn el elemento dato al comienzo",
+        "start": 2942.06,
+        "end": 2950.3
+    },
+    {
+        "text": " que necesito necesito pedir un nuevo nodo se lo ha sido una variable auxiliar q",
+        "start": 2951.3,
+        "end": 2958.26
+    },
+    {
+        "text": " q queda puntando a este nuevo nodo compuesto de dos campos no digo en el q en el info de este",
+        "start": 2958.26,
+        "end": 2967.28
+    },
+    {
+        "text": " nodo cargo el dato en el siguiente que así no lo que decía es hace un ratito la dirección del",
+        "start": 2967.28,
+        "end": 2975.0600000000004
+    },
+    {
+        "text": " primero que es p p tenía guardada la flecha si de x1 entonces la copia ahí y acá actualiza que",
+        "start": 2975.0600000000004,
+        "end": 2983.5800000000004
+    },
+    {
+        "text": " estoy actualizando en palabras acá esa actual la dirección del primero y si en el primero deja de",
+        "start": 2983.58,
+        "end": 2989.7
+    },
+    {
+        "text": " ser el nodo con x1 y pasa hacer este entonces una vez que de nuevo no recorrí la lista para cambiar",
+        "start": 2989.7,
+        "end": 2996.62
+    },
+    {
+        "text": " para agregar a el comienzo hayo que en una regla no podría habíamos dicho tendría que copiar todo",
+        "start": 2996.62,
+        "end": 3001.18
+    },
+    {
+        "text": " pasar todo ordenéene acá lo puedo hacer con cuatro asignaciones orden uno de tiempo de ejecución",
+        "start": 3001.18,
+        "end": 3007.5
+    },
+    {
+        "text": " bueno me salte esto porque ya viene de p1 lo pueden leer solo voy a ir a de cosas más",
+        "start": 3008.22,
+        "end": 3014.3
+    },
+    {
+        "text": " interesantes supúanse que a veces uno no quiere hacer cosas al comienzo de una lista les quiere hacer",
+        "start": 3014.3,
+        "end": 3020.26
+    },
+    {
+        "text": " en el medio supúanse que esta lista es ordenada y se sabe que voy a recorrer y cuando llegue este punto",
+        "start": 3020.26,
+        "end": 3026.1
+    },
+    {
+        "text": " acá quiero insertar entre este y este para que me quedo ordenada supúanse que quiero insertar",
+        "start": 3026.1,
+        "end": 3031.34
+    },
+    {
+        "text": " luego tengo un puntero r por alguna razón que está parado en este nodo el puntero el",
+        "start": 3031.86,
+        "end": 3037.98
+    },
+    {
+        "text": " primero es este pero supúanse yo me moví con r a este nodo y quiero insertar entre este y este",
+        "start": 3037.98,
+        "end": 3044.06
+    },
+    {
+        "text": " este que está acá abajo el código no diría es parecido porque hay que necesito que",
+        "start": 3044.06,
+        "end": 3049.26
+    },
+    {
+        "text": " hay una variable cúle de un nodo para que me aparezca este bloque de acá en ese info le",
+        "start": 3049.26,
+        "end": 3055.02
+    },
+    {
+        "text": " haciendo lo que yo quiero el dato saca el siguiente este quien es y uno diría es este que está",
+        "start": 3055.02,
+        "end": 3062.3
+    },
+    {
+        "text": " puntiada acá quien tiene este r siguiente entonces digo cú siguiente igual a r siguiente o sea que",
+        "start": 3062.3,
+        "end": 3068.74
+    },
+    {
+        "text": " este apunta amarillo apunta ahí y después digo bueno este que deje de apuntar acá porque ahora",
+        "start": 3068.74,
+        "end": 3074.18
+    },
+    {
+        "text": " tiene que apuntar abajo entonces digo cómo hago eso lo que apunta r en el campo siguiente asignale la",
+        "start": 3074.18,
+        "end": 3080.02
+    },
+    {
+        "text": " dirección que tiene cú en qué casos puede fallar este código son cuatro lindas suelta no",
+        "start": 3080.02,
+        "end": 3088.3
+    },
+    {
+        "text": " que están dentro una función a un procedimiento de qué caso si no lo mira así pues podría saltar",
+        "start": 3088.3,
+        "end": 3093.42
+    },
+    {
+        "text": " un error pero en qué situación por ejemplo qué pasa así le pongo a ejemplo yo r es null donde",
+        "start": 3093.42,
+        "end": 3104.78
+    },
+    {
+        "text": " salto en error o sea acá porque null flecha siguiente no existe lo que apunta null va a buscar un",
+        "start": 3104.78,
+        "end": 3117.02
+    },
+    {
+        "text": " registro que no existe entonces ahí se cae error supongo hacer ese sería el ejemplo unidad",
+        "start": 3117.02,
+        "end": 3122.3
+    },
+    {
+        "text": " a te moviste hasta r y ahí quises hacer algo ojo tenés que chequear que cuando te moviste ese",
+        "start": 3122.3,
+        "end": 3127.02
+    },
+    {
+        "text": " lugar existe si es null este código no va a funcionar casos de borde porque digo caso de borde",
+        "start": 3127.02,
+        "end": 3134.1400000000003
+    },
+    {
+        "text": " porque por eso tengo que los voy a darle voy introduciendo unidad que ustedes de conocen de peguo",
+        "start": 3134.14,
+        "end": 3141.74
+    },
+    {
+        "text": " pero es no solo el chequeo del caso general sino el caso de borde siempre que es que en un código",
+        "start": 3141.74,
+        "end": 3146.74
+    },
+    {
+        "text": " vean en qué casos puede fallar si funciona el comienzo de lista en el medio al final o porque los",
+        "start": 3146.74,
+        "end": 3153.14
+    },
+    {
+        "text": " casos de prueba están pensados así no piensan sólo el caso típico a veces piensan el caso de borde",
+        "start": 3153.14,
+        "end": 3159.5
+    },
+    {
+        "text": " que pasa por el tipo de un algoritmo ordenar entonces o de borrar te digo a qué pasa si borra en",
+        "start": 3160.02,
+        "end": 3166.38
+    },
+    {
+        "text": " el medio pero qué pasa el primero y qué pasa el último y ahí veo distintos casos borde a veces",
+        "start": 3166.38,
+        "end": 3171.5
+    },
+    {
+        "text": " los manejaron bien supongo que no ya está con eso hay ganas y ahí tal dibujito veamos un ejemplo",
+        "start": 3171.5,
+        "end": 3183.74
+    },
+    {
+        "text": " de borrado ahora simple antes de pasar a códigos de empaquetar códigos no el primero sería qué",
+        "start": 3183.74,
+        "end": 3189.3599999999997
+    },
+    {
+        "text": " pasa ahora si quiero borrar el primero de una lista está unidad cual es la situación supongo",
+        "start": 3189.3599999999997,
+        "end": 3196.66
+    },
+    {
+        "text": " que las situaciones que tengo esta lista p a punta x 1 x 2 x 3 o sea la lista es esta tiene",
+        "start": 3196.66,
+        "end": 3202.22
+    },
+    {
+        "text": " hasta aquí se ve y quiero borrar el primero o sea este que se está pintando en gris",
+        "start": 3202.22,
+        "end": 3206.14
+    },
+    {
+        "text": " ¿no? de del punto vista lógico alcanzaría con hacer sólo la línea roja que hace la línea roja p igual a",
+        "start": 3206.14,
+        "end": 3217.8199999999997
+    },
+    {
+        "text": " p es siguiente o sea pero qué cambia acá en el dibujito si p está apuntando ahora acá",
+        "start": 3217.8199999999997,
+        "end": 3228.8599999999997
+    },
+    {
+        "text": " es exacto que ahora p guarda la dirección de este bloque que tiene el x 2 y no diría si después",
+        "start": 3228.86,
+        "end": 3237.6600000000003
+    },
+    {
+        "text": " recorro la lista y el imprimo voy a decir borrar bien porque ahora el x 1 no está más está el",
+        "start": 3237.6600000000003,
+        "end": 3241.58
+    },
+    {
+        "text": " x 2 de ahí en adelante o sea lógicamente es correcto pero quedó bollando o sea una",
+        "start": 3241.58,
+        "end": 3247.7400000000002
+    },
+    {
+        "text": " día manejaste más la memoria porque lo que es gris ahora quedó tirado ahí parridos en el espacio",
+        "start": 3247.7400000000002,
+        "end": 3252.86
+    },
+    {
+        "text": " de alguna manera entonces la forma de hacer una liberación no sólo lógicamente correcta sino",
+        "start": 3253.58,
+        "end": 3258.3
+    },
+    {
+        "text": " físicamente correcta sería decir bueno asignale a una variable auxiliar q el valor de p ahora sí",
+        "start": 3258.3,
+        "end": 3265.98
+    },
+    {
+        "text": " hace el borrado lógico o sea q está apuntando acá fíjese que estoy haciendo que estoy haciendo",
+        "start": 3265.98,
+        "end": 3270.7400000000002
+    },
+    {
+        "text": " acá una alias cuando digo acú le hace una p no una alias digo apé a sinal esp sidente o sea",
+        "start": 3270.7400000000002,
+        "end": 3278.94
+    },
+    {
+        "text": " ahora sí p apunta al no de x 2 y esta dirección ahora no la perdí porque la tiene q ahora",
+        "start": 3278.94,
+        "end": 3284.62
+    },
+    {
+        "text": " hago dilítico se entiende entonces ahí es el borrado lógico y físico correcto se entiende",
+        "start": 3284.62,
+        "end": 3290.54
+    },
+    {
+        "text": " en qué caso falla esto este código fallen algún caso o le pedirían a la lista p que sea que",
+        "start": 3295.14,
+        "end": 3304.14
+    },
+    {
+        "text": " tenga al menos una condición cuál sería esa condición más de un elemento o al menos uno",
+        "start": 3304.14,
+        "end": 3312.94
+    },
+    {
+        "text": " y es lo mismo que decía si la lista p es null ahí falla donde falla en qué línea si la lista es",
+        "start": 3314.14,
+        "end": 3320.7
+    },
+    {
+        "text": " vacía y falla en la segunda cuando dice pesí porque null frecha sí no existe entonces esto",
+        "start": 3320.7,
+        "end": 3329.2999999999997
+    },
+    {
+        "text": " funciona siempre y cuando la lista parámetro no sea vacía entonces si uno va a ejecutar este código",
+        "start": 3329.3,
+        "end": 3334.1000000000004
+    },
+    {
+        "text": " tendría estar como en un dentro un if que dijera if not is empty no el código que vimos antes y",
+        "start": 3334.1000000000004,
+        "end": 3340.26
+    },
+    {
+        "text": " ejecutar este código porque si es empty no tenés que hacer nada de nuevo casos de borde",
+        "start": 3340.26,
+        "end": 3344.94
+    },
+    {
+        "text": " acá tengo el caso de nuevo cuando tengo no estoy parado el comienzo de edito si no me parea",
+        "start": 3344.94,
+        "end": 3351.86
+    },
+    {
+        "text": " acá en el medio por alguna razón me interesó parámen el medio y quiero borrar como dice ahí el",
+        "start": 3351.86,
+        "end": 3359.6200000000003
+    },
+    {
+        "text": " siguiente al registro apuntado por r es decir que si r está apuntando al nodo que tiene el x2 el",
+        "start": 3359.6200000000003,
+        "end": 3367.02
+    },
+    {
+        "text": " siguiente este nodo quiere borrar este entonces vean el código que lo que hace para",
+        "start": 3367.02,
+        "end": 3372.86
+    },
+    {
+        "text": " usar el borrado lógico y el físico dice voy a usar una variable q igual a r siguiente o sea",
+        "start": 3372.86,
+        "end": 3378.7400000000002
+    },
+    {
+        "text": " marca en q el que voy a borrar está bien lo mismo que hará un ratito pero antes del primero",
+        "start": 3378.74,
+        "end": 3385.8199999999997
+    },
+    {
+        "text": " y ahora no es el primero ahora sí hace el borrado lógico que dice esta flechita en vez de apuntar",
+        "start": 3385.8199999999997,
+        "end": 3391.3399999999997
+    },
+    {
+        "text": " acá tiene que apuntar al que le sigue a este como a o eso lo que apunta en el campo siguiente o sea",
+        "start": 3391.3399999999997,
+        "end": 3397.22
+    },
+    {
+        "text": " este amarillo en este lugar voy a signar q siguiente es decir la flechita que sale a partir de acá",
+        "start": 3397.22,
+        "end": 3403.9399999999996
+    },
+    {
+        "text": " y después hago el dilit de q hay si por liberar el gris desengancho el nodo x3 y se liberó se",
+        "start": 3404.78,
+        "end": 3414.7200000000003
+    },
+    {
+        "text": " entiende en qué casos falla este código hay más de uno sí que vamos a la primera línea cuál es",
+        "start": 3414.7200000000003,
+        "end": 3425.1
+    },
+    {
+        "text": " un primer caso que falla la primera línea cuando puede fallar cuando es nul a vos quería",
+        "start": 3425.1,
+        "end": 3432.26
+    },
+    {
+        "text": " buscar el lugar para borrar si no le encontraste que este con nul la primera línea es la falla",
+        "start": 3432.26,
+        "end": 3436.3
+    },
+    {
+        "text": " supongan que no es nul hay otro caso de posible falla cuál es que sea el último o sea que no",
+        "start": 3436.3,
+        "end": 3443.82
+    },
+    {
+        "text": " hace un siguiente y donde donde falla cuando dice es reciente existe porque si es el último",
+        "start": 3443.82,
+        "end": 3452.26
+    },
+    {
+        "text": " es reciente nul pero q siguiente no porque el siguiente siguiente ese no existe y ahí se cae",
+        "start": 3452.26,
+        "end": 3458.0200000000004
+    },
+    {
+        "text": " exactamente tiene que a ver un último este tiene más condiciones para que se codio suelto",
+        "start": 3458.02,
+        "end": 3468.7
+    },
+    {
+        "text": " encaje bien en un código real porque hay dos condiciones la cual ya fallaría para ver no",
+        "start": 3468.7,
+        "end": 3476.9
+    },
+    {
+        "text": " codiosueltas sino como empaquetarlo bien en función en procedimiento niría perdón en",
+        "start": 3476.9,
+        "end": 3482.42
+    },
+    {
+        "text": " mes pero les voy a repasar pasaje de parámetro por copi por referencia niría ya lo sé pero quiero",
+        "start": 3482.42,
+        "end": 3489.42
+    },
+    {
+        "text": " ver si lo saben bien porque por cuando es estructuras dinámicas la cosa cambia un poquito y como recién",
+        "start": 3489.42,
+        "end": 3495.7000000000003
+    },
+    {
+        "text": " me dijeron cuando hago delete el punter al primero si libera toda la lista lo mismo pasa cuando",
+        "start": 3495.7000000000003,
+        "end": 3500.46
+    },
+    {
+        "text": " hago pasaje parámente y te paso una lista que se pasa como parámetro entonces vamos a ver un",
+        "start": 3500.46,
+        "end": 3504.7400000000002
+    },
+    {
+        "text": " poquito eso y para ilustrarles una cosa que me parece interesante c y c y c y sobretodo c tiene un",
+        "start": 3504.7400000000002,
+        "end": 3511.86
+    },
+    {
+        "text": " solo pasaje de parámetro que es el pasaje por copia el pasaje por referencia está simulado a partir",
+        "start": 3511.86,
+        "end": 3519.86
+    },
+    {
+        "text": " del pasaje por copia o sea que o yo implementar un lenguaje si usted entiende lo que le voy a explicar",
+        "start": 3519.86,
+        "end": 3524.6200000000003
+    },
+    {
+        "text": " ahora se va a dar cuenta que hay que ancanza con tener implementar un pasaje de parámetro y el otro",
+        "start": 3524.6200000000003,
+        "end": 3529.3
+    },
+    {
+        "text": " lo pueden simular ¿Ve bien? me acuerdo entonces para entender un poquito eso",
+        "start": 3529.3,
+        "end": 3535.48
+    },
+    {
+        "text": " veamos este primero sin punteros y después voy a agregar un caso de punteros supongan",
+        "start": 3535.48,
+        "end": 3541.92
+    },
+    {
+        "text": " si que tengo este main y tengo un procedimiento que recibe un entero m y m le asina 8 y desde el",
+        "start": 3541.92,
+        "end": 3552.68
+    },
+    {
+        "text": " main de clau una variable n igual 5 ya vamos al procedimiento p con n y después imprime acá",
+        "start": 3552.68,
+        "end": 3559.96
+    },
+    {
+        "text": " puse este auto en vez de printf pero lo mismo n la duda si uno no se acuerda mucho el pasaje de",
+        "start": 3559.96,
+        "end": 3567.2
+    },
+    {
+        "text": " parámetro puede ser que va a salir impreso ahí el 5 o el 8 y la duda que puede dar si yo le dije",
+        "start": 3567.2,
+        "end": 3574.48
+    },
+    {
+        "text": " que el pasaje de parámetro único que tiene c es por copia una heriana no hay duda de va a salir",
+        "start": 3574.48,
+        "end": 3581.88
+    },
+    {
+        "text": " impreso como dice ahí el 5 vamos a ver el detalle de esto para ver cómo le maneja también",
+        "start": 3581.88,
+        "end": 3588.12
+    },
+    {
+        "text": " que hace acá en el cuando declaro n igual 5 dijimos que en la memoria se aloja n con valor 5 en la",
+        "start": 3589.96,
+        "end": 3597.68
+    },
+    {
+        "text": " memoria estática acá estoy llamando a un procedimiento con n entonces se liga esto con este parámetro",
+        "start": 3597.68,
+        "end": 3606.88
+    },
+    {
+        "text": " que está acá como se liga n con m diciendo yo te voy a dar una copia es decir aparece un m y lo que",
+        "start": 3606.88,
+        "end": 3615.64
+    },
+    {
+        "text": " hace el sistema es lo que tengo acá te lo copio acá abajo este 5 que está acá te copio el valor",
+        "start": 3615.64,
+        "end": 3621.24
+    },
+    {
+        "text": " entonces este empiece que cutar y dice a sm que tenía un 5 sabe que le paso por arriba y le ha sido",
+        "start": 3622.2799999999997,
+        "end": 3628.16
+    },
+    {
+        "text": " un 8 termina termina cuando termina vuelve acá terminó además si yo acá preguntara qué lo que es",
+        "start": 3628.16,
+        "end": 3638.4
+    },
+    {
+        "text": " m que me diría el sistema m no no existe me va a decir no está definido en este punto después",
+        "start": 3638.4,
+        "end": 3649.76
+    },
+    {
+        "text": " de ejecutar p con n punto y coma no existe m no está bajo el scope de el main el variable m se",
+        "start": 3649.76,
+        "end": 3657.04
+    },
+    {
+        "text": " entiende me decir no existe de hecho cuando vuelve ahí este bloque de memoria ya no existe más",
+        "start": 3657.04,
+        "end": 3663.0
+    },
+    {
+        "text": " para la memoria lo único que existe es este entonces cuando dice imprimir la n que sale obviamente",
+        "start": 3663.0,
+        "end": 3668.1600000000003
+    },
+    {
+        "text": " el 5 yo te pase una copia digamos lo así yo te pase una copia voy si este lo que quisiste yo volví el",
+        "start": 3668.16,
+        "end": 3674.08
+    },
+    {
+        "text": " programa lo que está lo que tenía te pase una foto voy a lici este lo hiciste el programa de tenia eso",
+        "start": 3674.08,
+        "end": 3679.3199999999997
+    },
+    {
+        "text": " es el pasaje por copia estamos de acuerdo el pasaje por referencia no diría en palabra como le",
+        "start": 3679.3199999999997,
+        "end": 3684.7599999999998
+    },
+    {
+        "text": " diría en qué es pasaje por referencia te doy eso si lo modificas cuando salgas queda modificada",
+        "start": 3684.7599999999998,
+        "end": 3694.2799999999997
+    },
+    {
+        "text": " como logró eso solo teniendo copias pasaje por copia miren esta pequeña variante de ese código",
+        "start": 3694.28,
+        "end": 3700.92
+    },
+    {
+        "text": " exactamente ahora tengo de nuevo el main con n igual 5 pero ahora el procedimiento no recibe un",
+        "start": 3703.0400000000004,
+        "end": 3712.92
+    },
+    {
+        "text": " entero sino un puntero un entero asterisco int y el código no es a m la sin 8 sino asterisco m",
+        "start": 3712.92,
+        "end": 3722.0
+    },
+    {
+        "text": " lo que a punta m pasa siempre el entero le ha sin 8 entonces desde el main como este se va a",
+        "start": 3722.0,
+        "end": 3728.28
+    },
+    {
+        "text": " vincular con este y este es una dirección la tiene que llamar con la dirección de n la puedes",
+        "start": 3728.28,
+        "end": 3734.48
+    },
+    {
+        "text": " llamar con n porque n es un entero y abajo está esperando un puntero para que sea yo tengo una",
+        "start": 3734.48,
+        "end": 3741.32
+    },
+    {
+        "text": " persona arriba y tengo que poner un asterisco acá abajo y acá modificarlo apuntado por el puntero",
+        "start": 3741.32,
+        "end": 3749.56
+    },
+    {
+        "text": " que lo que hace el sistema lo mismo que vimos recién veamos dice int n igual 5 entonces viene",
+        "start": 3749.56,
+        "end": 3756.56
+    },
+    {
+        "text": " acá y pone un 5 memoria estática hace una copia de esto en la variable m porque hace copias",
+        "start": 3756.56,
+        "end": 3764.08
+    },
+    {
+        "text": " que copia n m la dirección de n entonces viene acá dice a lo que copias una dirección la flecha",
+        "start": 3765.08,
+        "end": 3773.36
+    },
+    {
+        "text": " se arriba puede ser la dirección de n esto es de acuerdo no y ahora dice a lo apuntado por m y",
+        "start": 3773.36,
+        "end": 3778.84
+    },
+    {
+        "text": " asignale 8 o sea flechita m tacha el 5 pone el 8 termina de ejecutar acá y antes de hacer el",
+        "start": 3778.84,
+        "end": 3786.36
+    },
+    {
+        "text": " sea out este lugar de memoria desapareció pero cuando vengo acá imprime que lo que vea ahora el 8",
+        "start": 3786.36,
+        "end": 3792.6800000000003
+    },
+    {
+        "text": " no el 5 entonces como si sí como es una variable esta memoria estática todas las variables esta",
+        "start": 3792.6800000000003,
+        "end": 3802.06
+    },
+    {
+        "text": " no me muere estática está bien en guardo entonces cuál es el truquito si yo tengo un forma de",
+        "start": 3802.06,
+        "end": 3809.2599999999998
+    },
+    {
+        "text": " mil lenguaje manejar direcciones implementos solo pasaje por copia y simula la referencia de que cuando",
+        "start": 3809.2599999999998,
+        "end": 3815.14
+    },
+    {
+        "text": " yo quiero modificar esto lo que hago es me paro atrás y te paso la dirección de eso esta dirección",
+        "start": 3815.14,
+        "end": 3820.9
+    },
+    {
+        "text": " no la puedo cambiar pero sí lo que apunta la dirección",
+        "start": 3820.9,
+        "end": 3823.1
+    },
+    {
+        "text": " voy a tener que hacer eso en seis semanas más por suerte se más más dice en vez de hacer esto",
+        "start": 3825.9,
+        "end": 3830.5
+    },
+    {
+        "text": " porque sino el primer tiene que estar cambiando una amperza en un asterisco o esta asterisco hace",
+        "start": 3830.5,
+        "end": 3836.54
+    },
+    {
+        "text": " me hay algo que sea más parecido el pasaje por copia pero que yo detecte que es por referencia",
+        "start": 3836.54,
+        "end": 3840.74
+    },
+    {
+        "text": " entonces ahí viene el segundo uso del amperza que es cuando uso el amperza dentro de la firma de un",
+        "start": 3840.74,
+        "end": 3848.1
+    },
+    {
+        "text": " método que es lo que hace este amperza en todo lo que vimos la transparencia anterior pero bueno",
+        "start": 3848.1,
+        "end": 3854.3
+    },
+    {
+        "text": " lo ves esto es una macro de esto pero el lenguaje el único de dice es el mismo código que estaba en el",
+        "start": 3854.3,
+        "end": 3863.38
+    },
+    {
+        "text": " pasaje por copia sólo que al ponerte el amperza en acá lo que estoy diciendo que cuando uno",
+        "start": 3863.38,
+        "end": 3869.02
+    },
+    {
+        "text": " modifique es m8 si voy ligaste esto con esto acaba salida impreso el 8",
+        "start": 3869.02,
+        "end": 3874.5800000000004
+    },
+    {
+        "text": " está bien entendieron vamos a ver ahora nos pasamos alistas 4 variantes",
+        "start": 3875.58,
+        "end": 3887.2999999999997
+    },
+    {
+        "text": " está bien simples hasta que sea la cuarta y vamos a ver si entendemos bien usted me dije a ver",
+        "start": 3887.2999999999997,
+        "end": 3894.2599999999998
+    },
+    {
+        "text": " puedo decirlo así rápido pasaje por copia si cambia no cambia pasaje por referencia sin",
+        "start": 3894.2599999999998,
+        "end": 3902.2599999999998
+    },
+    {
+        "text": " lo modificar dentro del procedimiento salio que ha modificado y más o menos después de esto más o",
+        "start": 3902.26,
+        "end": 3908.0600000000004
+    },
+    {
+        "text": " menos vamos a ver procedimiento uno recibe una lista l por copia porque no puse el amperza no pongo",
+        "start": 3908.0600000000004,
+        "end": 3917.0600000000004
+    },
+    {
+        "text": " nada por copia entonces supongan que ya estamos con esta lista p que tiene x1 x2 hasta cuando",
+        "start": 3917.0600000000004,
+        "end": 3923.5
+    },
+    {
+        "text": " llamo y las aconsejo que lo piensen así para no perderse una hojita pero a mí los",
+        "start": 3923.5,
+        "end": 3929.5400000000004
+    },
+    {
+        "text": " copias van a ver que no van a tener errores cuando vuelve el pasaje de parámetro digo invoca a",
+        "start": 3929.54,
+        "end": 3934.3
+    },
+    {
+        "text": " p1 con la lista p que hace p1 con la lista p como como hace como se vincula p con el y se hace",
+        "start": 3934.3,
+        "end": 3943.66
+    },
+    {
+        "text": " una copia como dibujo la copia la variable p aparece acá para este es la variable p con la cual yo",
+        "start": 3943.66,
+        "end": 3951.82
+    },
+    {
+        "text": " llame entonces digo la variable del parámetro que es el hace una copia de p y que lo que era una",
+        "start": 3951.82,
+        "end": 3958.54
+    },
+    {
+        "text": " lista de la dirección del primero sólo una dirección entonces el copia esta flecha no copia a",
+        "start": 3958.54,
+        "end": 3963.94
+    },
+    {
+        "text": " toda la lista copia una flecha la lista es una dirección y ahora empiece a ejecutar y",
+        "start": 3963.94,
+        "end": 3971.5
+    },
+    {
+        "text": " suel pasaje de parámetro entonces cuál es el código el asignal en ul entonces que va a ser",
+        "start": 3971.5,
+        "end": 3977.3
+    },
+    {
+        "text": " vamos a modificar va a decir a esta flecha que tengo acá no me importa más y ahora paso tener",
+        "start": 3977.3,
+        "end": 3983.0
+    },
+    {
+        "text": " acá nubes cuando salgo la variable l que es local desaparece y miro milista p como quedó igual",
+        "start": 3983.0,
+        "end": 3992.08
+    },
+    {
+        "text": " yo no diría bien porque te pasé una copia modificaste la copia la original que digo al hasta",
+        "start": 3992.08,
+        "end": 3997.36
+    },
+    {
+        "text": " y bien segunda el pedo ahora recibe es igual que el p1 sólo que tiene una ampersán el pasaje es",
+        "start": 3997.36,
+        "end": 4007.0
+    },
+    {
+        "text": " por referencia como el eje aconsejo yo dibujar el pasaje por referencia no dibujar dos cajitas",
+        "start": 4007.0,
+        "end": 4012.84
+    },
+    {
+        "text": " como recién sino decir cuando p se vincula con el ed e dibujen la igual es el mismo lugar de",
+        "start": 4012.84,
+        "end": 4018.96
+    },
+    {
+        "text": " memoria p y l comparten su suerte están las dos acá en esta cajita amarilla entonces cuando",
+        "start": 4018.96,
+        "end": 4024.96
+    },
+    {
+        "text": " ahora digo a él el asignal nul que va a pasar",
+        "start": 4024.96,
+        "end": 4028.04
+    },
+    {
+        "text": " acá se pone nul desaparece esta flecha",
+        "start": 4031.84,
+        "end": 4035.32
+    },
+    {
+        "text": " porque acá se pone nul cuando salgo de esto él desaparece porque es local pero cuando mire p",
+        "start": 4036.56,
+        "end": 4042.04
+    },
+    {
+        "text": " se salí que quedó grabado ahí nul porque p se lee él se fue pero ese lugar p que compartía la",
+        "start": 4042.04,
+        "end": 4048.88
+    },
+    {
+        "text": " suerte de él quedó con nul y de acuerdo de nuevo diría es por referencia lo modificaste que",
+        "start": 4048.88,
+        "end": 4053.72
+    },
+    {
+        "text": " le modificaba hasta ahora ninguna sorpresa y quedó todo el otro te tirado por la memoria mal",
+        "start": 4053.72,
+        "end": 4059.88
+    },
+    {
+        "text": " manejo la memoria también tarcer a variante porque igual ahora me estoy enfocando más que dejar",
+        "start": 4059.88,
+        "end": 4065.68
+    },
+    {
+        "text": " memoria colegada en entender el pasaje de parámetro sigo dejando el ampersan en la firma pero ahora el",
+        "start": 4065.68,
+        "end": 4074.56
+    },
+    {
+        "text": " código lo cambié él es siguiente igual nul entonces como es pasaje por referencia fíjense que el",
+        "start": 4074.56,
+        "end": 4081.0
+    },
+    {
+        "text": " pasaje de parámetro lo dibujé y siendo p l es el mismo lugar de la memoria",
+        "start": 4081.0,
+        "end": 4085.48
+    },
+    {
+        "text": " esto es cuando digo él es el mismo nul que cambia en el dibujito",
+        "start": 4086.48,
+        "end": 4089.84
+    },
+    {
+        "text": " acá en el lugar amarillo aparece nul te amas acuerdo entonces se engancha esto",
+        "start": 4094.4,
+        "end": 4099.68
+    },
+    {
+        "text": " cuando salga desaparece él pero p queda apuntando acá y cuando nave acá lo veo desenganchado",
+        "start": 4103.12,
+        "end": 4108.72
+    },
+    {
+        "text": " donde ya lo pasaste por referencia se modificó quedó modificado si o no está bien",
+        "start": 4108.72,
+        "end": 4115.0
+    },
+    {
+        "text": " dice dónde está la sorpresa a ver si me pueden explicar este cuarto dejo el elecio",
+        "start": 4115.0,
+        "end": 4121.08
+    },
+    {
+        "text": " en tigual nul pero lo dejo el pasaje por copia si es por copia estamos de acuerdo que p l",
+        "start": 4121.08,
+        "end": 4128.64
+    },
+    {
+        "text": " ahora son dos variables distintas pero se copian la flecha si así le dije yo que le dibujara",
+        "start": 4128.64,
+        "end": 4135.240000000001
+    },
+    {
+        "text": " que pasa cuando digo él es siguiente igual nul lo mismo que recién cambia esta flecha capone",
+        "start": 4135.8,
+        "end": 4143.5599999999995
+    },
+    {
+        "text": " nul se va a él es porque es una área local y cuando salga que veo y pero para te pase la lista",
+        "start": 4143.5599999999995,
+        "end": 4152.8
+    },
+    {
+        "text": " por copia y cuando salga y recorre veo que la lista quedó modificada entonces como es no entiendo",
+        "start": 4152.8,
+        "end": 4157.28
+    },
+    {
+        "text": " que es lo que no cambió y no violen nada que lo que era la lista del primero la",
+        "start": 4157.599999999999,
+        "end": 4169.36
+    },
+    {
+        "text": " dirección del primero no cambió pero lo que apunta el primero sea lo segundo lo tercero no",
+        "start": 4169.36,
+        "end": 4174.5199999999995
+    },
+    {
+        "text": " importa si es por copia por referencia queda modificado o guarda con eso que te lo pase por copia o lo",
+        "start": 4174.5199999999995,
+        "end": 4180.2
+    },
+    {
+        "text": " paso por copia y no va a cambiar nada no lo que no cambia es lo que vos pasaste si pasaste un",
+        "start": 4180.2,
+        "end": 4185.36
+    },
+    {
+        "text": " puntero ese puntero no cambia pero la lista no es toda la secuencia que uno ven el dibujito la",
+        "start": 4185.36,
+        "end": 4190.48
+    },
+    {
+        "text": " lista es una dirección entonces no se confundan con eso también porque si no van a cometer errores en",
+        "start": 4190.48,
+        "end": 4196.36
+    },
+    {
+        "text": " la programación bueno para me voy a saltar un poquito algunas cosas porque a ver acá tengo un",
+        "start": 4196.36,
+        "end": 4203.719999999999
+    },
+    {
+        "text": " código que recorre una lista acúle así no p supone que tengo esta lista y quiero recorrarla",
+        "start": 4203.719999999999,
+        "end": 4211.12
+    },
+    {
+        "text": " imprimiendo entonces que haría acúa copia la dirección del primero mientras uno sea null supone",
+        "start": 4212.0,
+        "end": 4220.8
+    },
+    {
+        "text": " esto pp puede ser imprimi el cubinfo y movete un lugar si fuera un arreglo movita en lugares y",
+        "start": 4220.8,
+        "end": 4228.84
+    },
+    {
+        "text": " más más por ejemplo si lindice y es un entero acá movete el siguiente es cubo igual acusidente",
+        "start": 4228.84,
+        "end": 4234.8
+    },
+    {
+        "text": " si cubo está apuntando al primero acá el comienzo cuando le digo cubo igual acusidente apunta a",
+        "start": 4235.360000000001,
+        "end": 4240.84
+    },
+    {
+        "text": " este imprime el x2 movete el siguiente imprime el x3 movete el siguiente y imprime el xn en algún",
+        "start": 4240.84,
+        "end": 4247.4400000000005
+    },
+    {
+        "text": " momento movete el siguiente null sale porque cubo es null si pero una diría esto es un código",
+        "start": 4247.4400000000005,
+        "end": 4259.2
+    },
+    {
+        "text": " suelto vamos a empaquetarlo así después lo puedo llamar con distintas listas y reusos el",
+        "start": 4259.2,
+        "end": 4264.96
+    },
+    {
+        "text": " código como un procedimiento no diría bueno un ejemplo sería este código y fíjense que",
+        "start": 4264.96,
+        "end": 4271.2
+    },
+    {
+        "text": " un dice lo pase por copia venía porque lo pase por copia si quieren imprimir no quiero",
+        "start": 4271.2,
+        "end": 4278.5599999999995
+    },
+    {
+        "text": " modificar cuando voy a pasar por referencia entonces típicamente insertar o borrar cuando",
+        "start": 4278.5599999999995,
+        "end": 4284.04
+    },
+    {
+        "text": " quiero modificar si quieren primir no pasen por copia porque si no puede pasar lo que le",
+        "start": 4284.04,
+        "end": 4289.0
+    },
+    {
+        "text": " voy a mostrar ahora fíjense que te coño se parece el anterior dice mientras p no sea null y",
+        "start": 4289.0,
+        "end": 4294.28
+    },
+    {
+        "text": " imprimir el peinfo y movete el siguiente pero aquí no toa acá y no hay dos variables antes",
+        "start": 4294.28,
+        "end": 4300.56
+    },
+    {
+        "text": " había un peincú entonces donde están las dos variables",
+        "start": 4300.56,
+        "end": 4303.0
+    },
+    {
+        "text": " hay dos variables pero no estas condidas ¿cuál es?",
+        "start": 4309.0,
+        "end": 4311.32
+    },
+    {
+        "text": " esta es la que están encabezados p se suele llamar el parámetro formal del procedimiento",
+        "start": 4311.32,
+        "end": 4318.88
+    },
+    {
+        "text": " ¿cuál es la otra variable? el parámetro con el cual es un invoque a este el parámetro actual",
+        "start": 4318.88,
+        "end": 4328.12
+    },
+    {
+        "text": " entonces fíjense que el dibujito le mostre recién aparece si cuando yo llamo con esta lista él",
+        "start": 4328.12,
+        "end": 4334.16
+    },
+    {
+        "text": " suponganse es esta y llamo implista con él ¿qué lo que hace esto? la primera vez p copia el",
+        "start": 4334.16,
+        "end": 4342.92
+    },
+    {
+        "text": " valor de él es decir p apunta acá y después se mueve con p imprimiendo toda la lista y cuando sale",
+        "start": 4342.92,
+        "end": 4350.84
+    },
+    {
+        "text": " sin boque con él ve la lista entonces tal las dos listas pero pasa uno es el parámetro del",
+        "start": 4350.84,
+        "end": 4355.5199999999995
+    },
+    {
+        "text": " método el que ve acá como p y el otro es el parámetro con el cual es una invoca que",
+        "start": 4355.5199999999995,
+        "end": 4359.72
+    },
+    {
+        "text": " se llama parámetro se suele llamar parámetro formal del procedimiento y el otro el parámetro",
+        "start": 4359.72,
+        "end": 4364.240000000001
+    },
+    {
+        "text": " actual con el cual es un invoc ¿tabía? ¿qué pasa si yo acá le pongo una ampersan? es si no cuyo el",
+        "start": 4364.240000000001,
+        "end": 4370.280000000001
+    },
+    {
+        "text": " efecto se haga en la firma pongo el ampersan al último o anul va a imprimir todo",
+        "start": 4370.280000000001,
+        "end": 4381.12
+    },
+    {
+        "text": " sí entonces ojo si no pone el ampersan y lo ejecuta va a decir anda barbaro imprimido y",
+        "start": 4381.12,
+        "end": 4387.56
+    },
+    {
+        "text": " la próxima vez cuando quiera ir a ver esa lista nul y todo eso es no donde quedaron por ahí",
+        "start": 4388.120000000001,
+        "end": 4396.080000000001
+    },
+    {
+        "text": " perdido en el espacio o sea un pequeño error de poner una ampersan ahí y capaz que no es",
+        "start": 4396.080000000001,
+        "end": 4400.72
+    },
+    {
+        "text": " detectable porque usted dice hizo cuando siempre milo correcto pero no se da en cuenta que después",
+        "start": 4400.72,
+        "end": 4404.84
+    },
+    {
+        "text": " de un efecto posterior esa lista cuando la quieran usar y ahí va cuando le echan la culpa hace más",
+        "start": 4404.84,
+        "end": 4410.120000000001
+    },
+    {
+        "text": " una porquería este lenguaje no sirve van a ojo con lo que hacen bueno miren este este otro y la",
+        "start": 4410.12,
+        "end": 4419.7
+    },
+    {
+        "text": " misma versión de imprimir pero que no tan rápido rápido que no hay un wild y no hay un for que",
+        "start": 4419.7,
+        "end": 4431.16
+    },
+    {
+        "text": " hay para avanzar lo hace recursivo o sea se está llamando acá recursivamente inblista dice si la",
+        "start": 4431.16,
+        "end": 4441.68
+    },
+    {
+        "text": " lista no es vacía o sea si pén es nul imprimir el peinfo y llama inblista con el siguiente",
+        "start": 4441.68,
+        "end": 4448.16
+    },
+    {
+        "text": " si es un pritef no es el anterior procedimiento no es el que hace algo con el peinfo el imprimen pantalla",
+        "start": 4448.16,
+        "end": 4463.639999999999
+    },
+    {
+        "text": " entonces imprime el x1 y llama en lista con el siguiente el que apunta aquí dos imprime el",
+        "start": 4463.64,
+        "end": 4470.200000000001
+    },
+    {
+        "text": " que dos llamas con el siguiente es como que el avanzar acá es implícito no ve la asignación que",
+        "start": 4470.200000000001,
+        "end": 4480.900000000001
+    },
+    {
+        "text": " estaba recién vieron que acá había una asignación para avanzar peigo a la p siguiente acá no está",
+        "start": 4480.900000000001,
+        "end": 4486.8
+    },
+    {
+        "text": " o si está prescondida y no es una asignación donde está ese avanzar",
+        "start": 4487.68,
+        "end": 4492.28
+    },
+    {
+        "text": " en el llama recursivo cuando este pecidente vuelve a entrar se transforma en el nuevo pe",
+        "start": 4494.8,
+        "end": 4499.6
+    },
+    {
+        "text": " no es como que hay pero no es una asignación si no es un pasaje de parámetro se va",
+        "start": 4500.56,
+        "end": 4505.68
+    },
+    {
+        "text": " copiando por pasaje de parámetro se entiende si yo que le pongo una amperza en la firma del método",
+        "start": 4505.68,
+        "end": 4512.24
+    },
+    {
+        "text": " va imprimir si",
+        "start": 4514.04,
+        "end": 4515.52
+    },
+    {
+        "text": " no no tiene el efecto que tenía el iterativo cuando imprimo si acá le pongo una amperza en arriba y",
+        "start": 4517.68,
+        "end": 4525.64
+    },
+    {
+        "text": " salgo la lista con la cual invoque está intacta porque",
+        "start": 4525.64,
+        "end": 4529.64
+    },
+    {
+        "text": " al siguiente pero no está asignando no está modificando nada al no estar modificando igual no",
+        "start": 4533.96,
+        "end": 4540.360000000001
+    },
+    {
+        "text": " tendría sentido que le pongo una amperza pero el efecto ven que es distinto",
+        "start": 4540.36,
+        "end": 4543.92
+    },
+    {
+        "text": " ahora uno usaría el procedimiento recursivo recuerden cuando le dije la recursión no aportaba",
+        "start": 4546.5199999999995,
+        "end": 4551.92
+    },
+    {
+        "text": " mucho cuando era de cola acá es de cola porque no tiene código pendiente eso no está usando el",
+        "start": 4551.92,
+        "end": 4558.36
+    },
+    {
+        "text": " stack para guardar cosas que vais a ejecutar más tarde sería para que hace eso hace el iterativo de",
+        "start": 4558.36,
+        "end": 4563.08
+    },
+    {
+        "text": " hecho hoy perdón esto es iterativo no es mucho más simple pero qué pasa ahora si yo quiero",
+        "start": 4563.08,
+        "end": 4571.44
+    },
+    {
+        "text": " imprimir la lista al revés o sea quieren primir primero éste después éste después éste y al",
+        "start": 4571.44,
+        "end": 4579.12
+    },
+    {
+        "text": " final el primero si lo quiero hacer iterativo como lo harían",
+        "start": 4579.12,
+        "end": 4582.36
+    },
+    {
+        "text": " como ahí está el final bueno a ver lo voy a hacer muy ineficiente tramposamente recorro hasta",
+        "start": 4582.36,
+        "end": 4596.4
+    },
+    {
+        "text": " el final imprime quise y me dejo una marquita acá no después recorro hasta la marquita imprimo",
+        "start": 4596.4,
+        "end": 4601.639999999999
+    },
+    {
+        "text": " este me dejo la marquita en el día pero voy a hacer n recorridos el orden va a ser en",
+        "start": 4601.639999999999,
+        "end": 4606.599999999999
+    },
+    {
+        "text": " cuadrado si en eso es la cantidad de nuevos de la lista muy ineficiente",
+        "start": 4606.72,
+        "end": 4610.8
+    },
+    {
+        "text": " vamos a solos más rápido porque si no me voy a atrasar mucho como modifico este código recursivo",
+        "start": 4615.8,
+        "end": 4620.72
+    },
+    {
+        "text": " para que imprime al revés",
+        "start": 4620.72,
+        "end": 4621.64
+    },
+    {
+        "text": " si le de vuelta a la condición que estoy diciendo en palabras mira si la lista no es vacía",
+        "start": 4624.4800000000005,
+        "end": 4629.68
+    },
+    {
+        "text": " andé imprimir el resto y deja pendiente ahora imprimir el primer lo pone el stack",
+        "start": 4629.68,
+        "end": 4636.08
+    },
+    {
+        "text": " después voy a dejar el segundo pendiente arriba el tercero pendiente arriba",
+        "start": 4637.88,
+        "end": 4641.52
+    },
+    {
+        "text": " entonces de alguna manera acá lo que estoy usando el extract de ejecución es cuando quiero",
+        "start": 4642.64,
+        "end": 4646.92
+    },
+    {
+        "text": " procesar algún orden inverso la recursión es útil",
+        "start": 4646.92,
+        "end": 4650.240000000001
+    },
+    {
+        "text": " y si tenés un nodito x",
+        "start": 4650.24,
+        "end": 4658.0
+    },
+    {
+        "text": " donde tengo el borrador",
+        "start": 4662.88,
+        "end": 4664.0
+    },
+    {
+        "text": " acá no no sí o me voy allá",
+        "start": 4667.0,
+        "end": 4671.28
+    },
+    {
+        "text": " bueno",
+        "start": 4671.599999999999,
+        "end": 4672.639999999999
+    },
+    {
+        "text": " si vos tenés esta lista no x1 x2 x3 y así sigo",
+        "start": 4674.5199999999995,
+        "end": 4683.12
+    },
+    {
+        "text": " qué está diciendo ese código diciendo mira cuando voy a imprimir esta lista lo que está",
+        "start": 4683.12,
+        "end": 4689.0
+    },
+    {
+        "text": " diciendo es llama a imprimir con esto y deja pendiente y imprimir el x1",
+        "start": 4689.0,
+        "end": 4694.5599999999995
+    },
+    {
+        "text": " está",
+        "start": 4695.280000000001,
+        "end": 4696.04
+    },
+    {
+        "text": " ¿tamos a acuerdo?",
+        "start": 4696.04,
+        "end": 4696.84
+    },
+    {
+        "text": " dice ah voy a imprimir esto y esto que va a más tarde",
+        "start": 4696.84,
+        "end": 4700.320000000001
+    },
+    {
+        "text": " vengo esta lista no es vacía que dice andá imprimir el resto y deja pendiente esto para",
+        "start": 4700.320000000001,
+        "end": 4707.56
+    },
+    {
+        "text": " más tarde donde lo pone el stack arriba",
+        "start": 4707.56,
+        "end": 4710.120000000001
+    },
+    {
+        "text": " andá imprimir el resto y deja pendiente esto para más tarde y así hasta que llegue al",
+        "start": 4713.88,
+        "end": 4720.92
+    },
+    {
+        "text": " xn que tiene el null va a decir poner el xn y llama con este y se conocía con null dice que",
+        "start": 4720.92,
+        "end": 4730.92
+    },
+    {
+        "text": " tengo que hacer nada me voy entonces andá sacando los pendientes si os falta imprimir este este este",
+        "start": 4730.92,
+        "end": 4736.8
+    },
+    {
+        "text": " yo no te entendí pero si os resto te entendí o escapa que lo mismo yo no entendí",
+        "start": 4745.76,
+        "end": 4750.28
+    },
+    {
+        "text": " que es las listas hay una sola lista",
+        "start": 4751.28,
+        "end": 4753.36
+    },
+    {
+        "text": " claro es como que dice a las listas son punteros dice mirad tu estoy con este puntero",
+        "start": 4754.76,
+        "end": 4759.16
+    },
+    {
+        "text": " se dice andá con esto y esto guarda lo acá",
+        "start": 4759.16,
+        "end": 4762.6
+    },
+    {
+        "text": " se dice ah vengo acá que hago si no es vacío andá con esto y esto deja lo pendiente lo pone acá",
+        "start": 4763.4,
+        "end": 4769.76
+    },
+    {
+        "text": " no va haciendo nada por ahora va guardando pendientes cuando siga el final y dicen un y guardo todos",
+        "start": 4769.76,
+        "end": 4777.04
+    },
+    {
+        "text": " estos pendientes en orden inverso porque es un stack dice con null dice que tengo que hacer con null",
+        "start": 4777.04,
+        "end": 4783.36
+    },
+    {
+        "text": " mira ahí exacto con null le va a decir que tengo que hacer nada y dice a nada fíjate que",
+        "start": 4783.36,
+        "end": 4790.04
+    },
+    {
+        "text": " te quedo pendiente y ahora si viene lo último pendiente era este dice andá imprimir datos con",
+        "start": 4790.04,
+        "end": 4795.84
+    },
+    {
+        "text": " este con este con este con este hasta que termine ok ahí la recursión deja de ser de cola y",
+        "start": 4795.84,
+        "end": 4801.84
+    },
+    {
+        "text": " pasa ser algo útil en algo iterativo que si lo hacía como dije yo era muy ineficiente me",
+        "start": 4801.84,
+        "end": 4807.04
+    },
+    {
+        "text": " quedan equadrado estos ordenen y ok bueno acá tengo el procedimiento ese que habíamos hecho",
+        "start": 4807.04,
+        "end": 4817.4400000000005
+    },
+    {
+        "text": " insertar al comienzo pero fíjense el único que quiero notar no voy a ver el detalle porque el código",
+        "start": 4817.4400000000005,
+        "end": 4822.4800000000005
+    },
+    {
+        "text": " es el mismo son las cuatro asignaciones pero que sí quiero que no ten la firma no le puse una",
+        "start": 4822.4800000000005,
+        "end": 4827.6
+    },
+    {
+        "text": " empersa si yo no le pongo el am persan acá y ejecuto estas cuatro asignaciones cuando invoque con",
+        "start": 4827.6,
+        "end": 4835.6
+    },
+    {
+        "text": " una lista y salga la lista que de igual como voy a insertar al comienzo el puntero al principio no",
+        "start": 4835.6,
+        "end": 4841.92
+    },
+    {
+        "text": " se va a modificar y no lo voy a ver si saco el ampersa no funcione necesariamente una dice",
+        "start": 4841.92,
+        "end": 4848.68
+    },
+    {
+        "text": " está bien tenías que modificar tiene que ir pero si lo sacan para probar no funcione",
+        "start": 4848.68,
+        "end": 4852.64
+    },
+    {
+        "text": " un ejemplo con catenar lista lo vieron en pronunciar uno que es con catenar",
+        "start": 4853.64,
+        "end": 4862.240000000001
+    },
+    {
+        "text": " es pegar listas no tengo dos listas es como un insertar más grande no tengo una lista 1 una",
+        "start": 4862.240000000001,
+        "end": 4868.68
+    },
+    {
+        "text": " lista 2 y quiero la lista que tenga todo lo elemento de la primera y después todos los elementos de la",
+        "start": 4868.68,
+        "end": 4872.92
+    },
+    {
+        "text": " segunda este podría ser un algoritmo recurso que hace eso y les quema si quisiera ser una",
+        "start": 4872.92,
+        "end": 4879.96
+    },
+    {
+        "text": " recursión con catenar dos lista dice voy a definir los recursos y por el primer argumento que",
+        "start": 4879.96,
+        "end": 4884.64
+    },
+    {
+        "text": " dirían repasemos recursión te manterió con catena una lista vacía con una lista 2 que resulta",
+        "start": 4884.64,
+        "end": 4890.72
+    },
+    {
+        "text": " la lista la lista 2 con catena una lista 1 que tiene al menos un elemento x ahí me van a matar",
+        "start": 4892.72,
+        "end": 4901.2
+    },
+    {
+        "text": " por un uso el puntero al menos un elemento x y el resto de la lista es con el e2 y el esquema me",
+        "start": 4901.2,
+        "end": 4907.36
+    },
+    {
+        "text": " hice yo hace con catenar ese con el e2 que le falta a con catenar ese con el e2 para transformarse",
+        "start": 4907.36,
+        "end": 4914.12
+    },
+    {
+        "text": " lo que yo quería haga x al comienzo es decir ese código que está ahí yo voy a decir cómo lo",
+        "start": 4914.12,
+        "end": 4922.36
+    },
+    {
+        "text": " traduzco medio mecánicamente hace más más y podría decir son dos ecuaciones bueno primero",
+        "start": 4922.36,
+        "end": 4928.0
+    },
+    {
+        "text": " escribir la firma y tengo variantes para escribir la firma diciendo qué hago con la lista que con",
+        "start": 4928.0,
+        "end": 4933.08
+    },
+    {
+        "text": " catena la retorno podría ser una opción la otra es vamos a elegir la opción acá de modifico",
+        "start": 4933.08,
+        "end": 4938.88
+    },
+    {
+        "text": " un parámetro el e1 el resultado de con catena el e1 en el e2 va a quedar en el e1 entonces le",
+        "start": 4938.88,
+        "end": 4946.2
+    },
+    {
+        "text": " pongo fiancé a donde está acá acá le pongo el ámpers al poner el ámpers tanto diciendo que el",
+        "start": 4946.2,
+        "end": 4958.36
+    },
+    {
+        "text": " resultado puede acá es un procedimiento no se retornan nada pero el e1 se va a modificar con",
+        "start": 4958.36,
+        "end": 4964.16
+    },
+    {
+        "text": " qué con la concatenación del e1 el e2 se te digo mira vamos a la primera ecuación que decía",
+        "start": 4964.16,
+        "end": 4969.44
+    },
+    {
+        "text": " que si la primera lista era vacía el resultado es el e2 entonces digo si el e1 es null tan de",
+        "start": 4969.44,
+        "end": 4974.92
+    },
+    {
+        "text": " acuerdo está ahí entonces el resultado es el e2 pero donde dejo el resultado dijimos en el e1",
+        "start": 4974.92,
+        "end": 4980.679999999999
+    },
+    {
+        "text": " entonces el e1 le ha sido el e2 sí o no y el segundo a ver si lo tienen buen ojito el segundo",
+        "start": 4981.200000000001,
+        "end": 4992.16
+    },
+    {
+        "text": " que dice con catena x se con el e2 si se hace con catena y se con el e2 y le tengo que agregar",
+        "start": 4992.16,
+        "end": 4999.64
+    },
+    {
+        "text": " x hay comienzo o sea este es el e1 parámetro y este va a ser el e1 después de lo que yo le tengo",
+        "start": 4999.64,
+        "end": 5007.96
+    },
+    {
+        "text": " que asignar digamos pero que noto que le le dé uno parámetro que es xs y acá xaigo ya está el",
+        "start": 5007.96,
+        "end": 5015.12
+    },
+    {
+        "text": " x primero entonces nada entonces qué es lo único que tengo que hacer avanzar como avanza con catena",
+        "start": 5015.12,
+        "end": 5023.44
+    },
+    {
+        "text": " con s dice bueno el e1 siguiente el e2 esa 2 líneas es largo correr y cuál va a ser el efecto",
+        "start": 5023.44,
+        "end": 5034.2
+    },
+    {
+        "text": " y cuando yo la voy a correr esto va a decir no miremos acá mire en la flechita no yo digo ya",
+        "start": 5034.8,
+        "end": 5040.48
+    },
+    {
+        "text": " vamos a concatenar con este puntero y este puntero el e1 y el e2 y se bueno este no es nul entonces",
+        "start": 5040.48,
+        "end": 5046.72
+    },
+    {
+        "text": " llamar ahora con el siguiente que es este el primero cambió y no si no así neno hice nada",
+        "start": 5046.72,
+        "end": 5053.639999999999
+    },
+    {
+        "text": " se lo dice llamar con otro no hizo nada que es igual es nul este puntero no llama con el siguiente",
+        "start": 5053.639999999999,
+        "end": 5060.36
+    },
+    {
+        "text": " es nul este puntero no llama con el siguiente acá no es llama con el siguiente cuando llega acá y",
+        "start": 5060.36,
+        "end": 5067.639999999999
+    },
+    {
+        "text": " este puntero del e1 sea nul que va a ser a ese puntero le asina el e2 que va a ser entonces",
+        "start": 5067.639999999999,
+        "end": 5076.08
+    },
+    {
+        "text": " acá en vez de nul se copia el e2 que es lo que tiene el e2 la dirección del primero se va a",
+        "start": 5076.08,
+        "end": 5080.44
+    },
+    {
+        "text": " punter acá si yo salgo el imprimo con ese conismo en primer ahora el e1 voy a haber el resultado",
+        "start": 5080.44,
+        "end": 5088.679999999999
+    },
+    {
+        "text": " correcto cuál es tiene x1 x2 x3 xcn y 1 y 2 y 3 y m y se está todo bien ven ningún error",
+        "start": 5088.68,
+        "end": 5099.4800000000005
+    },
+    {
+        "text": " pero hay un efecto físico raro que capaz que lo detectó después no me voy a dar cuenta en el",
+        "start": 5100.4400000000005,
+        "end": 5107.56
+    },
+    {
+        "text": " momento porque porque estas dos listas quedaron enganchadas quedaron compartiendo memoria",
+        "start": 5107.56,
+        "end": 5113.240000000001
+    },
+    {
+        "text": " suponen que después de haber concatenado yo vengo a la lista con la cual yo invoque este",
+        "start": 5113.5599999999995,
+        "end": 5119.32
+    },
+    {
+        "text": " el e2 y borro el primero",
+        "start": 5119.32,
+        "end": 5120.639999999999
+    },
+    {
+        "text": " si borro el primer nodo que va a pasar cuando ahora recorre el e1",
+        "start": 5123.679999999999,
+        "end": 5126.96
+    },
+    {
+        "text": " va a quedar apuntando a un lugar que ya no va a existir más",
+        "start": 5128.84,
+        "end": 5131.84
+    },
+    {
+        "text": " porque quedaron estructuras compartiendo memoria eso es muy peligros en general uno no quiere",
+        "start": 5133.24,
+        "end": 5140.599999999999
+    },
+    {
+        "text": " hacer eso porque después el comportamiento futuro me da errores entonces en vez de hacer eso por",
+        "start": 5140.6,
+        "end": 5148.280000000001
+    },
+    {
+        "text": " eso lo manco como un error común en vez de asignarle el e1 el e2 para que no compártame",
+        "start": 5148.280000000001,
+        "end": 5153.8
+    },
+    {
+        "text": " voy a decir que a el e1 le voy a asignar una copia de el e2 que es una copia de el e2 es lo mismo",
+        "start": 5153.8,
+        "end": 5159.64
+    },
+    {
+        "text": " que el e1 pero en lugares nuevos lugares frescos no va a tener la secuencia igual pero no dos nuevos",
+        "start": 5159.64,
+        "end": 5166.76
+    },
+    {
+        "text": " es decir como que acá pusiera no y uno y dos y tres y en es pero no ditos nuevos",
+        "start": 5166.76,
+        "end": 5171.88
+    },
+    {
+        "text": " vamos a ver cómo hace una copia pero no quiero enganchar el puntero se entiende por qué",
+        "start": 5172.52,
+        "end": 5177.64
+    },
+    {
+        "text": " sí pero supongo que lo hay con cada así y después de haber hecho con cada voy a hacer",
+        "start": 5180.92,
+        "end": 5185.76
+    },
+    {
+        "text": " venir el e2 y borrar este nodo este puntero rojo queda apuntando algo que ya no va a existir más se va a",
+        "start": 5185.76,
+        "end": 5192.76
+    },
+    {
+        "text": " caer y porque después con esa lista podéis es una lista de dos base datos borrar un registro y",
+        "start": 5192.76,
+        "end": 5199.0
+    },
+    {
+        "text": " afecta al primero también voy a decir porque afecta el primero porque quedaron en las adas lo que le",
+        "start": 5199.0,
+        "end": 5205.04
+    },
+    {
+        "text": " pase a una afecta la otra después y no te das cuenta en el momento",
+        "start": 5205.04,
+        "end": 5208.360000000001
+    },
+    {
+        "text": " entonces veamos una versión de la función copia es muy fácil hacer la regusiva no tan fácil",
+        "start": 5211.08,
+        "end": 5219.8
+    },
+    {
+        "text": " hacer la iterativa porque una diría que es una copia regusiva que dice mira copia ahora la",
+        "start": 5219.8,
+        "end": 5227.2
+    },
+    {
+        "text": " pienso como una función que recibe una lista y retorno una lista si la lista es vacía la lista",
+        "start": 5227.2,
+        "end": 5233.360000000001
+    },
+    {
+        "text": " retorno es vacía nul retorno a nul y si no que lo que va a hacer para este nodito azul dice",
+        "start": 5233.360000000001,
+        "end": 5239.88
+    },
+    {
+        "text": " mirá me voy a hacer un nuevo nodo porque no quiero que comparta memoria a ese nodo el copio lo",
+        "start": 5239.88,
+        "end": 5246.12
+    },
+    {
+        "text": " mismo que tiene el el como dato para que se identico el dato y digo quién va a ser el siguiente a",
+        "start": 5246.12,
+        "end": 5251.88
+    },
+    {
+        "text": " este nodo que me estoy girando como duplicado de este el siguiente de este va a ser lo que me",
+        "start": 5251.88,
+        "end": 5257.12
+    },
+    {
+        "text": " dé la copia de ahí para adelante me diciendo yo te copio uno máquina seguirá siendo los vos",
+        "start": 5257.12,
+        "end": 5262.5199999999995
+    },
+    {
+        "text": " recuerdan que para un cualquiera más chiquito ya lo sabe hacer solo dijimos bueno",
+        "start": 5262.5199999999995,
+        "end": 5267.76
+    },
+    {
+        "text": " reciente llamá a copia con el siguiente y retorno el puntero para la máquina con su estág",
+        "start": 5267.76,
+        "end": 5274.76
+    },
+    {
+        "text": " la dura la dura la dura me genera la copia toda la vez la recorciera es como diciendo yo te",
+        "start": 5274.76,
+        "end": 5280.26
+    },
+    {
+        "text": " digo un paso te digo cuando si es el final que el caso hace que tiene que hacer y le digo así",
+        "start": 5280.26,
+        "end": 5285.64
+    },
+    {
+        "text": " sucesivamente hacia las tardes de arata ese es solo la recorcian",
+        "start": 5285.64,
+        "end": 5288.64
+    },
+    {
+        "text": " ¿Qué pasa con la copia iterativa? ¿Por qué lo digo? ¿Por qué lo digo? ¿Por qué le va a pasar",
+        "start": 5293.320000000001,
+        "end": 5299.24
+    },
+    {
+        "text": " que les pidan algo a rimas lista iterativos y no es si dónde está la compilación de hacer un",
+        "start": 5299.24,
+        "end": 5303.280000000001
+    },
+    {
+        "text": " guay en vez de hacer eso tan simple que hemos recién que si yo quiero copiar esta lista",
+        "start": 5303.28,
+        "end": 5308.759999999999
+    },
+    {
+        "text": " ele generándome esta lista res que tenga identico los datos yo podría decir no miren acá",
+        "start": 5308.759999999999,
+        "end": 5317.32
+    },
+    {
+        "text": " miren acá abajo no diciendo qué hago me genera un nodo identico a este copio el dato en la",
+        "start": 5317.32,
+        "end": 5323.08
+    },
+    {
+        "text": " variable res ahora avance en el el segundo lo copio donde lo inserto",
+        "start": 5323.08,
+        "end": 5328.84
+    },
+    {
+        "text": " si lo inserto el comienzo de esta lista que sería lo más fácil porque vimos como insertar el comienzo",
+        "start": 5328.84,
+        "end": 5335.16
+    },
+    {
+        "text": " y el tercero el inserto el comienzo y el cuarto el inserto el comienzo cómo va a quedar res",
+        "start": 5335.16,
+        "end": 5340.52
+    },
+    {
+        "text": " va a quedar una lista copiada per invertida porque el último lo inserto primero",
+        "start": 5340.52,
+        "end": 5345.56
+    },
+    {
+        "text": " entonces tiene un problema me va a quedar la copia pero el revés se entiende eso porque a medida que",
+        "start": 5347.32,
+        "end": 5355.24
+    },
+    {
+        "text": " me va a lanzando el el diciendo a este copiado pero si lo más fácil que es insertar el comienzo me va a",
+        "start": 5355.24,
+        "end": 5359.76
+    },
+    {
+        "text": " quedar invertida entonces qué tendría que hacer ir insertando en res pero al final no hay comienzo",
+        "start": 5359.76,
+        "end": 5366.639999999999
+    },
+    {
+        "text": " para preservar el orden y cómo inserto al final vamos a ver eso porque porque es útil esa",
+        "start": 5366.639999999999,
+        "end": 5372.48
+    },
+    {
+        "text": " idea para muchos otros algoritmos no porque ese me interesa en particular tengo miráme de fino",
+        "start": 5372.48,
+        "end": 5378.8
+    },
+    {
+        "text": " miremos acá no res y nuevo dos variables tipolista de osi de la lista es vacía fácil res en null y el",
+        "start": 5378.8,
+        "end": 5384.599999999999
+    },
+    {
+        "text": " final tiene ese garrato no res o sea que si es null en null y si no es vacía lo que digo moví",
+        "start": 5384.6,
+        "end": 5390.68
+    },
+    {
+        "text": " de fin una variable último pues yo voy a iniciar dando sobre el último de res no sobre el comienzo",
+        "start": 5390.68,
+        "end": 5397.72
+    },
+    {
+        "text": " y digo mientras la lista no sea vacía que estoy recorriendo la lista de datos él y no sea null",
+        "start": 5400.06,
+        "end": 5405.08
+    },
+    {
+        "text": " digo me genera el nodo para hacer la copia le cargo el info de la el el siguiente de ese como va a ir",
+        "start": 5405.08,
+        "end": 5413.04
+    },
+    {
+        "text": " al final siempre va a ser null siempre hay como último nodo y acá pongo un if porque pongo un if",
+        "start": 5413.04,
+        "end": 5420.6
+    },
+    {
+        "text": " porque es dos casos hay un caso de borde la primera vez último va a ser null porque la primera vez",
+        "start": 5420.6,
+        "end": 5427.76
+    },
+    {
+        "text": " acá cuando voy a hacer la primera inmersión yo quiero que el primero y el último sea en ese",
+        "start": 5429.5199999999995,
+        "end": 5434.6
+    },
+    {
+        "text": " después que inserté uno dos tres el primero no se mueve y solo se mueve el último",
+        "start": 5434.6,
+        "end": 5440.08
+    },
+    {
+        "text": " está en acuerdo la primera vez le digo mira si él acá si último es null entonces res igual a",
+        "start": 5440.08,
+        "end": 5446.88
+    },
+    {
+        "text": " último igual nuevo tal eso se puede hacer en ese mamá pone todas las asignaciones en línea o las",
+        "start": 5446.88,
+        "end": 5453.0
+    },
+    {
+        "text": " ponen abajo con un mundo y como que era la primera vez digo me genera el primer nodo y res y",
+        "start": 5453.0,
+        "end": 5458.4
+    },
+    {
+        "text": " último son ese único nodo pero la siguiente vez es y ahí avanza él pero la siguiente vez se va",
+        "start": 5458.4,
+        "end": 5466.76
+    },
+    {
+        "text": " a entrar por el elz porque la primera vez vale null pero ya no después no entonces después lo que",
+        "start": 5466.76,
+        "end": 5470.84
+    },
+    {
+        "text": " va a decir es si ya tengo al menos un nodo sobre el el siguiente a ese último inserto el nuevo y",
+        "start": 5470.84,
+        "end": 5477.88
+    },
+    {
+        "text": " corre el último al nuevo entonces lo voy insertando no acá vengo acá inserto el nuevo sobre el siguiente y",
+        "start": 5477.88,
+        "end": 5486.52
+    },
+    {
+        "text": " corre el último acá al inserto acá corre no inserto acá entonces va a insertando siempre sobre el final",
+        "start": 5486.52,
+        "end": 5491.76
+    },
+    {
+        "text": " y al final retona res se entiende después miren loco un poquito más de cariño como eso lo voy a",
+        "start": 5492.56,
+        "end": 5500.12
+    },
+    {
+        "text": " querer a veces hacer varias en varios algoritmos no solo en este y así como tenía un insertar",
+        "start": 5500.12,
+        "end": 5507.0
+    },
+    {
+        "text": " comienzo porque me hago un procedimiento insertar final que lo puedo usar en particular la copia pero",
+        "start": 5507.0,
+        "end": 5512.280000000001
+    },
+    {
+        "text": " no otros algoritmos también lo voy a hacer bien final van a ver que hago lo mismo que dije recién",
+        "start": 5512.280000000001,
+        "end": 5516.88
+    },
+    {
+        "text": " este íns final es un procedimiento que recibe el elemento quien inicia al final y dos punteros",
+        "start": 5517.16,
+        "end": 5524.32
+    },
+    {
+        "text": " perresía el puntero el primero y el puntero el último ambos por referencia y usted me tiene que decir",
+        "start": 5524.32,
+        "end": 5529.6
+    },
+    {
+        "text": " después que yo explica esto por qué son los dos por referencia que hago acá me genera el",
+        "start": 5529.6,
+        "end": 5536.0
+    },
+    {
+        "text": " nuevo nodo igual que al racial le copio el dato el siguiente va a ser null porque va siempre al final",
+        "start": 5536.0,
+        "end": 5541.08
+    },
+    {
+        "text": " sigo teniendo un índice si él es null o sea no había nada entonces digo él igual ull igual nuevo",
+        "start": 5541.96,
+        "end": 5549.72
+    },
+    {
+        "text": " el y último apuntan al único nodo digamos así y si no digo el siguiente el último se había",
+        "start": 5551.32,
+        "end": 5558.84
+    },
+    {
+        "text": " ya un último le ha sido nuevo y muego el último a ese nodo es como diciendo si acá está bult me hago un",
+        "start": 5558.84,
+        "end": 5567.08
+    },
+    {
+        "text": " nodo no me acuerdo un siguiente asigno el nuevo que es esto y el nuevo",
+        "start": 5567.08,
+        "end": 5574.8
+    },
+    {
+        "text": " acá como voy insartando al final porque tiene que ser las dos por un person",
+        "start": 5574.8,
+        "end": 5581.64
+    },
+    {
+        "text": " si la lista no fuera vacía lo digo así si la lista no fuera vacía precondición hay uno que",
+        "start": 5589.0,
+        "end": 5595.36
+    },
+    {
+        "text": " podría no ser por ámpersan y funcionaría bien cuál es el porque",
+        "start": 5595.36,
+        "end": 5602.92
+    },
+    {
+        "text": " exactamente solo usas una vez cuando insertas el primero pero si ya tiene al menos uno siempre va",
+        "start": 5604.839999999999,
+        "end": 5611.28
+    },
+    {
+        "text": " a entrar por él y solo modifica figencer ahí lo dice ultra no modifica él porque tengo él por",
+        "start": 5611.28,
+        "end": 5618.28
+    },
+    {
+        "text": " referencia solo por el primer caso pero como en un caso se puede modificar le tengo poné por",
+        "start": 5618.28,
+        "end": 5623.96
+    },
+    {
+        "text": " ámpers salvo que tuviera una precondición que la lista no es vacía se entiende de nuevo casos",
+        "start": 5623.96,
+        "end": 5629.44
+    },
+    {
+        "text": " de borde tengan lo presente porque cuando programes los códigos no solo piensen el caso típico",
+        "start": 5629.44,
+        "end": 5635.08
+    },
+    {
+        "text": " con la ayuda de un dibujito que son muy útiles yo hasta el día de hoy cuando programa un código me",
+        "start": 5635.08,
+        "end": 5639.0
+    },
+    {
+        "text": " hago un dibujito y la forma de no perderme pasaje para método entonces después no tengo que estar",
+        "start": 5639.0,
+        "end": 5643.72
+    },
+    {
+        "text": " devaliendo mil horas también si la empiezan a hacer sistemático maldito cada vez programan correcto",
+        "start": 5643.72,
+        "end": 5649.4
+    },
+    {
+        "text": " también en más veces y tiene que devalerme menos encontrar los errores con los mensajes del",
+        "start": 5650.28,
+        "end": 5656.2
+    },
+    {
+        "text": " compilador se la regalo entonces ahora vengo y fíjense el código de copia con el uso del",
+        "start": 5656.2,
+        "end": 5664.599999999999
+    },
+    {
+        "text": " ins final se chico porque porque le digo mira para copiar la lista usando el ins final ahora me",
+        "start": 5664.599999999999,
+        "end": 5670.36
+    },
+    {
+        "text": " re define res y u alt igual a nul y que lo que digo mientras lista el quiero copiar no sea vacía",
+        "start": 5670.36,
+        "end": 5676.759999999999
+    },
+    {
+        "text": " inserto al final en el info en res y u alt y me muevo y al final retorno res entonces esto",
+        "start": 5676.76,
+        "end": 5684.52
+    },
+    {
+        "text": " genera la copia ahí si se parece más al código de insertar comienzo que la cortito porque en",
+        "start": 5684.52,
+        "end": 5690.04
+    },
+    {
+        "text": " paquetes todo eso complicado en infinal pero en paquetes una vez después lo uso en todos los",
+        "start": 5690.04,
+        "end": 5695.12
+    },
+    {
+        "text": " códigos de lo presíces ok voliendo el concato y ya creo que estoy medio terminando",
+        "start": 5695.12,
+        "end": 5703.08
+    },
+    {
+        "text": " tenia otros códigos pero bueno no voy a poder ver todo",
+        "start": 5703.96,
+        "end": 5706.76
+    },
+    {
+        "text": " miremos el concato iterativo una cosita más extra supongo hacer el quiero concaternal los dos",
+        "start": 5708.5199999999995,
+        "end": 5715.5199999999995
+    },
+    {
+        "text": " listas pero no recurciamente sino iterativamente una idea que tienes que hacer",
+        "start": 5715.5199999999995,
+        "end": 5719.8
+    },
+    {
+        "text": " moverte hasta el final de la primer lista iterativamente y cuando llega el último nodo que tendría",
+        "start": 5719.8,
+        "end": 5725.8
+    },
+    {
+        "text": " a gastar engancharlo con la copia de la segunda para no compartir memoria entonces fíjense",
+        "start": 5725.8,
+        "end": 5735.4800000000005
+    },
+    {
+        "text": " este código dice si leúna es nul a eleuno le doy en vez de leúna es la copia de leúna para que",
+        "start": 5735.4800000000005,
+        "end": 5743.8
+    },
+    {
+        "text": " no compara nada y ahí se la copia entonces la uso la voy a gastar ahora fíjense en el el me",
+        "start": 5743.8,
+        "end": 5750.360000000001
+    },
+    {
+        "text": " defino una vez y ter igual a eleuno ese está y ter que digo mientras y ter siguiente sea",
+        "start": 5750.36,
+        "end": 5757.0
+    },
+    {
+        "text": " distinto en un avanza y cuando y ter siguiente sea nul a y ter siguiente le asignó la copia de leo",
+        "start": 5757.0,
+        "end": 5764.5199999999995
+    },
+    {
+        "text": " está bien o no está bien porque puse y ter siguiente distinto de nul porque no puse y ter",
+        "start": 5764.5199999999995,
+        "end": 5770.88
+    },
+    {
+        "text": " distinto de nul cuando y ter",
+        "start": 5770.88,
+        "end": 5776.92
+    },
+    {
+        "text": " cuando que y porque tengo está bien pero porque tengo que pararme porque en el recurso se",
+        "start": 5777.52,
+        "end": 5785.36
+    },
+    {
+        "text": " gaba hasta nul",
+        "start": 5785.36,
+        "end": 5788.56
+    },
+    {
+        "text": " estamos de acuerdo que yo quiero modificar cuando vengo iterando en esta lista quiero modificar",
+        "start": 5790.08,
+        "end": 5794.76
+    },
+    {
+        "text": " este puntero asignando a la copia de leo ahora para modificar este campo como yo vengo",
+        "start": 5794.76,
+        "end": 5800.4400000000005
+    },
+    {
+        "text": " iterando yo solo decirlo así vengo mirando la lista de costado con hitter vengo moviéndome mirando",
+        "start": 5800.4400000000005,
+        "end": 5807.0
+    },
+    {
+        "text": " la lista de costado para poder modificar este nudo este campo como vengo de allá me tengo que",
+        "start": 5807.0,
+        "end": 5813.280000000001
+    },
+    {
+        "text": " parar en este nudo este nudo como sé cuál es el nudo que tiene la condición y ter siguiente igual a nul",
+        "start": 5813.280000000001,
+        "end": 5819.6
+    },
+    {
+        "text": " el último nudo y si por qué cuando era recurso",
+        "start": 5820.320000000001,
+        "end": 5823.84
+    },
+    {
+        "text": " por ejemplo acá miran esta versión del recurso decía si él e 1 y igual a nul él e 1 igual a la copia",
+        "start": 5827.04,
+        "end": 5833.160000000001
+    },
+    {
+        "text": " de leo no perdón este no es el mismo de reciente",
+        "start": 5833.160000000001,
+        "end": 5835.56
+    },
+    {
+        "text": " estaba la acá",
+        "start": 5840.320000000001,
+        "end": 5841.88
+    },
+    {
+        "text": " sí fíjense este no paraba cuando era el siguiente nul sino cuando el nul tal cosa y si no hace esto",
+        "start": 5842.88,
+        "end": 5851.64
+    },
+    {
+        "text": " perdón no era este tampoco",
+        "start": 5851.64,
+        "end": 5853.4800000000005
+    },
+    {
+        "text": " si ahora no el concat es esto el concat ya estoy perdido fíjense 2 líneas exactamente si él es",
+        "start": 5855.4400000000005,
+        "end": 5863.76
+    },
+    {
+        "text": " 1 en nul dice a él e 1 dale la copia de leo y si no dice concat él e 1 siguiente leo",
+        "start": 5863.76,
+        "end": 5869.16
+    },
+    {
+        "text": " está haciendo si está moviendo pero no va mirando la lista de costados sino solo si lo decirá si",
+        "start": 5869.16,
+        "end": 5874.639999999999
+    },
+    {
+        "text": " va montado sobre la lista cuando llama el concat a ver si tengo la siguiente diapositiva con esto o",
+        "start": 5874.639999999999,
+        "end": 5882.639999999999
+    },
+    {
+        "text": " cuando llama acá el concat lo que dice es llama con este puntero no es ese llama con este pero",
+        "start": 5884.639999999999,
+        "end": 5891.48
+    },
+    {
+        "text": " recuerda cuando es por referencia no era una copia de este era este puntero muy montado ahí",
+        "start": 5891.48,
+        "end": 5896.96
+    },
+    {
+        "text": " era la suerte 1 en la suerte del otro recuerdan ya me con este no es no es es este sí ese",
+        "start": 5896.96,
+        "end": 5904.84
+    },
+    {
+        "text": " nul en ese lugar de memoria sinal de leo entonces porque viene montado el puntero cuando estoy",
+        "start": 5904.84,
+        "end": 5910.2
+    },
+    {
+        "text": " para honesta no es una copia del nul ese es este lugar en ese lugar así no la copia leo",
+        "start": 5910.2,
+        "end": 5915.04
+    },
+    {
+        "text": " funciona es decir me pudo parar en el lugar para modificar cuando lo inviterativo moraleja",
+        "start": 5915.04,
+        "end": 5920.64
+    },
+    {
+        "text": " ya no puedo hacer eso mismo me tengo que parar siempre uno antes porque ya no voy montado",
+        "start": 5920.64,
+        "end": 5929.72
+    },
+    {
+        "text": " sobre los punteros estos sino que voy mirando la lista del costado o iterando entonces si quiero",
+        "start": 5929.72,
+        "end": 5935.200000000001
+    },
+    {
+        "text": " modificar acá no puedo llegar a este lugar sino tengo que iterando entonces parate en el último",
+        "start": 5935.200000000001,
+        "end": 5939.200000000001
+    },
+    {
+        "text": " momento para siempre uno antes sino el efecto no se produce",
+        "start": 5939.2,
+        "end": 5943.36
+    },
+    {
+        "text": " el acuerdo rápido sí puedo recuelan el insertado ordenado que vimos",
+        "start": 5946.8,
+        "end": 5956.88
+    },
+    {
+        "text": " recursivo y si no recuelan se los copie yo sabía que iba a llegar a pretar acá entonces",
+        "start": 5956.88,
+        "end": 5961.679999999999
+    },
+    {
+        "text": " lo escribi insertado ordenado que decía dado una lista ordenada y un elemento metelo en el",
+        "start": 5961.679999999999,
+        "end": 5968.639999999999
+    },
+    {
+        "text": " lugar que le corresponda para que siga estando ordenada un insertado ordenado que decía ese",
+        "start": 5968.64,
+        "end": 5973.76
+    },
+    {
+        "text": " código cuando vimos recursión la semana pasada decía que si la lista es vacía insertado ordenado me",
+        "start": 5973.76,
+        "end": 5979.320000000001
+    },
+    {
+        "text": " da una lista unitaria y si la lista no es vacía había dos casos de interés que pasa si el que",
+        "start": 5979.320000000001,
+        "end": 5985.780000000001
+    },
+    {
+        "text": " quiero insertar el es menor igual que el primero sí si es menor igual que el primero lo inserto",
+        "start": 5985.780000000001,
+        "end": 5992.76
+    },
+    {
+        "text": " al comienzo porque porque si este ya es menor igual que el primero y esto está ordenado este menor",
+        "start": 5992.76,
+        "end": 5997.64
+    },
+    {
+        "text": " igual que este menor igual que todos lo mismo la semana pasada no me puedan cara de eso no lo",
+        "start": 5997.64,
+        "end": 6002.9800000000005
+    },
+    {
+        "text": " vi si lo vi si no es menor igual es mayor el primero quien es el que ya estaba el mismo x y",
+        "start": 6002.9800000000005,
+        "end": 6010.12
+    },
+    {
+        "text": " voy a insertar el elemento más adelante como traduzco esto hace más más simple ese es el código",
+        "start": 6010.12,
+        "end": 6018.400000000001
+    },
+    {
+        "text": " para que vean que uno se puede hacer este pseudo código y pasar el código insertado ordenado",
+        "start": 6018.400000000001,
+        "end": 6024.52
+    },
+    {
+        "text": " tomé la variante que recibo el elemento y la lista la recibo por referencia o sea que voy",
+        "start": 6024.84,
+        "end": 6031.6
+    },
+    {
+        "text": " a insertar sobre esta lista el resultado va a quedar guardado acá y voy a los casos el primero que",
+        "start": 6031.6,
+        "end": 6037.200000000001
+    },
+    {
+        "text": " dice si la lista es vacía el igual null que hago ahí una lista unitaria ya vamos bueno inscomienzo",
+        "start": 6037.200000000001,
+        "end": 6044.92
+    },
+    {
+        "text": " e con la lista vacía me va a genial listo unitaria lo hace el insertar comienzo que vimos",
+        "start": 6044.92,
+        "end": 6050.360000000001
+    },
+    {
+        "text": " su ratito a renato vimos al infinal y ante vimos listo comienzo sino que hago me quedan dos",
+        "start": 6050.36,
+        "end": 6058.88
+    },
+    {
+        "text": " ecuaciones vamos a esta si el elemento es menor igual que x entonces que pregunta si el elemento es",
+        "start": 6058.88,
+        "end": 6064.5199999999995
+    },
+    {
+        "text": " menor igual que el x quien es el x el info el primer dato de la lista si pasa eso que me dice acá",
+        "start": 6064.5199999999995,
+        "end": 6072.16
+    },
+    {
+        "text": " que a la lista x es si le tenés que agregar el y al comienzo entonces de nuevo el mismo caso",
+        "start": 6072.16,
+        "end": 6076.88
+    },
+    {
+        "text": " insate al comienzo de de la lista él y si no el x es el mismo acá que acá entonces simplemente",
+        "start": 6076.88,
+        "end": 6088.72
+    },
+    {
+        "text": " lo que tienes que decir es avanzar insertar ordenado e con el siguiente lo larga en correr y funciona a las",
+        "start": 6088.72,
+        "end": 6096.32
+    },
+    {
+        "text": " mil maravillas último para para falta uno para que usan mal insertar ordenado cuando queríamos hacer",
+        "start": 6096.32,
+        "end": 6104.08
+    },
+    {
+        "text": " que no hay recuerda que hace pasada después de insertar ordenado y si ¿eh? y ¿qué que hacía",
+        "start": 6104.08,
+        "end": 6114.28
+    },
+    {
+        "text": " más después? un ordenación un sortin lo teníamos el código que ordenaba el código que ordenaba",
+        "start": 6114.28,
+        "end": 6122.88
+    },
+    {
+        "text": " que decía da la lista vacía el resultado de la lista vacía recuerda en esto y si la lista",
+        "start": 6122.88,
+        "end": 6129.12
+    },
+    {
+        "text": " no es vacía x punto s y el esquema me dice yo hace ordenar s y aquí lo discutimos un ratito",
+        "start": 6129.12,
+        "end": 6135.36
+    },
+    {
+        "text": " digo así tenés toda la lista ordenada s y querés tener la lista x si ordenada que alcanza y que meta",
+        "start": 6135.36,
+        "end": 6144.04
+    },
+    {
+        "text": " s e quien el lugar que le corresponde dentro de la lista ordenada s puede primero si puede",
+        "start": 6144.04,
+        "end": 6148.4800000000005
+    },
+    {
+        "text": " decir un dosis puede tercied podría ir último si quien lo sabe donde va la función in-sort sabe",
+        "start": 6148.48,
+        "end": 6154.44
+    },
+    {
+        "text": " insertar ordenado así vamos es bueno miren este código que está acá y lo hice iterativo para",
+        "start": 6154.44,
+        "end": 6159.919999999999
+    },
+    {
+        "text": " combinar un iterativo de una recurción este dice mira",
+        "start": 6159.919999999999,
+        "end": 6164.48
+    },
+    {
+        "text": " dada la lista él te voy a dar ahora si una lista resultado ordenada nueva",
+        "start": 6165.799999999999,
+        "end": 6171.04
+    },
+    {
+        "text": " entonces de fin la lista res al comienzo igual a númble voy recorriendo la lista que quiero",
+        "start": 6172.0,
+        "end": 6177.44
+    },
+    {
+        "text": " ordenar él y digo insertar ordenado el eleinfo en el res y después avanza el siguiente y cuando",
+        "start": 6177.44,
+        "end": 6187.32
+    },
+    {
+        "text": " termine pero tonamen la lista o sea recorro la lista él uno por uno diciendo ando insertar",
+        "start": 6187.32,
+        "end": 6192.5199999999995
+    },
+    {
+        "text": " ordenado no insertar ordenado no insertar ordenado dentro de la lrs que el comienzo es vacía y va a ir",
+        "start": 6192.5199999999995,
+        "end": 6198.16
+    },
+    {
+        "text": " cada vez insertando en lugar que le corresponde cuando termina todos los elementos quedaron ordenado",
+        "start": 6198.28,
+        "end": 6203.639999999999
+    },
+    {
+        "text": " esa es la lista ordenada",
+        "start": 6203.639999999999,
+        "end": 6206.88
+    },
+    {
+        "text": " bueno hay mucho más le dijo cosa para que le dan pero ya está suficiente nos vemos la semana que bien",
+        "start": 6210.24,
+        "end": 6215.2
+    }
+]

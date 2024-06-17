@@ -1,0 +1,6652 @@
+[
+    {
+        "text": " En esta semana estamos viendo entonces problemas que son empijar, son difíciles de resolver,",
+        "start": 0.0,
+        "end": 9.0
+    },
+    {
+        "text": " pero en particular estamos mirando cómo tienen instancias que sí son tratables o que en una forma podemos aplicar los aigorismos.",
+        "start": 9.0,
+        "end": 20.0
+    },
+    {
+        "text": " Que habíamos visto en effisientes de orden del problema de mirar para resolveros.",
+        "start": 21.0,
+        "end": 26.0
+    },
+    {
+        "text": " Y habíamos visto por ejemplo la determinación de cobertura por vértices y estamos trabajando en la resolución de problemas NFJNAROS.",
+        "start": 26.0,
+        "end": 41.0
+    },
+    {
+        "text": " En particular allí habíamos visto que cuando la instancia son árboles se simplifica la resolución.",
+        "start": 42.0,
+        "end": 55.0
+    },
+    {
+        "text": " Y vimos dos casos, vimos el caso en que el problema de independencia se puede resolver mediante un egoidismo abío.",
+        "start": 56.0,
+        "end": 64.0
+    },
+    {
+        "text": " Y estamos viendo, estamos comenzando a ver el caso de una variante independencia que es el denominado Maximum Weight independencia,",
+        "start": 64.0,
+        "end": 76.0
+    },
+    {
+        "text": " que se puede resolver obviamente en árboles, que se puede resolver mediante programación dinar.",
+        "start": 76.0,
+        "end": 84.0
+    },
+    {
+        "text": " Nos vamos a continuar por ahí, nos vamos un poco acá a caroteros.",
+        "start": 84.0,
+        "end": 92.0
+    },
+    {
+        "text": " Bueno, el problema Maximum Weight independencia, que lo vamos a abreviar, MW, ION y S, en árboles, el problema en signo general es un...",
+        "start": 92.0,
+        "end": 106.0
+    },
+    {
+        "text": " Para todo grafo es una generalización del problema de independencia.",
+        "start": 107.0,
+        "end": 112.0
+    },
+    {
+        "text": " ¿Qué se agrega aquí? Se agrega. Para cada vértice del grafo se agrega un nuevo atributo, es una cantidad número positivo que se domina peso,",
+        "start": 112.0,
+        "end": 126.0
+    },
+    {
+        "text": " el nombre en inglés de Wayne y lo que se busca es determinar el conjunto independiente ese en el árbol,",
+        "start": 127.0,
+        "end": 135.0
+    },
+    {
+        "text": " tal que el peso total de su vértice sea el mayor posible.",
+        "start": 135.0,
+        "end": 139.0
+    },
+    {
+        "text": " El por del que independen ese problema que habíamos visto era determinar la cardemilidad máxima.",
+        "start": 139.0,
+        "end": 149.0
+    },
+    {
+        "text": " Este problema es con respecto a este, como dice un caso especial, donde el peso vale uno para todos.",
+        "start": 150.0,
+        "end": 158.0
+    },
+    {
+        "text": " Hay un peso unitario único, que es un caso especial, un independencia, tiene que ser un caso especial de Maximum Weight,",
+        "start": 158.0,
+        "end": 164.0
+    },
+    {
+        "text": " el problema con ponderación en los partes.",
+        "start": 164.0,
+        "end": 168.0
+    },
+    {
+        "text": " Y bueno, no es más que es, obviamente, independencia ya era un problema en pijar,",
+        "start": 169.0,
+        "end": 175.0
+    },
+    {
+        "text": " Maximum Weight es un problema un, más general, o sea que sigue siendo de pijar.",
+        "start": 175.0,
+        "end": 181.0
+    },
+    {
+        "text": " Y bueno, lo que vamos a ver acá es que cuando la instancia es un árbol, el problema se vuelve tratable y tenemos un algo mismo,",
+        "start": 181.0,
+        "end": 191.0
+    },
+    {
+        "text": " una técnica de programación dinámica.",
+        "start": 192.0,
+        "end": 196.0
+    },
+    {
+        "text": " Entonces lo que vamos a usar es la técnica de programación dinámica, lo que vamos a tener que hacer es componer,",
+        "start": 198.0,
+        "end": 204.0
+    },
+    {
+        "text": " lo que se necesita es componer este problema en su problema.",
+        "start": 204.0,
+        "end": 209.0
+    },
+    {
+        "text": " Bueno, como tenemos árbol, vamos a precisar un poquito de notación, antes, entonces vamos a hablar,",
+        "start": 212.0,
+        "end": 217.0
+    },
+    {
+        "text": " vamos a determinar que un vértice va a usar la is, ese vértice le vamos a determinar erre,",
+        "start": 218.0,
+        "end": 223.0
+    },
+    {
+        "text": " y vamos a precisar alguna de las operaciones sobre el árbol, o sea, bueno,",
+        "start": 223.0,
+        "end": 229.0
+    },
+    {
+        "text": " operadores, que a partir del vértice, o sea, se establece la ansestería en el árbol,",
+        "start": 229.0,
+        "end": 237.0
+    },
+    {
+        "text": " esa es la relación de jerarquía, en decendencia, y para acá a ver si se ve, por ejemplo,",
+        "start": 237.0,
+        "end": 242.0
+    },
+    {
+        "text": " vamos a tener una función que se termina padre, que termina el vértice de ansestro directo del vértice",
+        "start": 242.0,
+        "end": 251.0
+    },
+    {
+        "text": " v, y bueno, está definido para todo, menos la raíz, y tenemos un operador que se llama hijos de v,",
+        "start": 251.0,
+        "end": 258.0
+    },
+    {
+        "text": " que cuando el vértice no es hoja, nos retoma los hijos directos de v,",
+        "start": 258.0,
+        "end": 268.0
+    },
+    {
+        "text": " acá yo le habéis hecho con un, no es hoja, y además tenemos la notación,",
+        "start": 269.0,
+        "end": 276.0
+    },
+    {
+        "text": " tema y un culazú, que es el sub árbol de té, que tiene como raíz el vértice,",
+        "start": 276.0,
+        "end": 284.0
+    },
+    {
+        "text": " o sea, todo el sub árbol que va hasta las hojas, como les dicen, es de un,",
+        "start": 284.0,
+        "end": 289.0
+    },
+    {
+        "text": " tomabú como raíz, y hasta las hojas, ¿no? Entonces tenemos esa notación,",
+        "start": 289.0,
+        "end": 295.0
+    },
+    {
+        "text": " bueno, a partir de esta notación, volvemos a el esquema de composición,",
+        "start": 296.0,
+        "end": 301.0
+    },
+    {
+        "text": " en el programación dinámica, lo que precisamos es, lo que el esquema,",
+        "start": 301.0,
+        "end": 306.0
+    },
+    {
+        "text": " si digo consiste, en que para cada vértice, se va a descomponer el problema,",
+        "start": 306.0,
+        "end": 312.0
+    },
+    {
+        "text": " en sub problemas asociados a los sub árbol de té subú,",
+        "start": 312.0,
+        "end": 317.0
+    },
+    {
+        "text": " o sea, lo que se va a hacer es, a partir de esa composición,",
+        "start": 317.0,
+        "end": 322.0
+    },
+    {
+        "text": " se va a ir resolviendo los árboles más pequeños, los que están próximos a las hojas,",
+        "start": 323.0,
+        "end": 328.0
+    },
+    {
+        "text": " este es lo que abarcan a las hojas, y a partir de ellos se va a ir agregando la solución,",
+        "start": 328.0,
+        "end": 334.0
+    },
+    {
+        "text": " para cada una de ellas se va consiguiendo, esa es un sub problema,",
+        "start": 334.0,
+        "end": 337.0
+    },
+    {
+        "text": " se va a conseguir una solución, esa es su problema, y se van componiendo que",
+        "start": 337.0,
+        "end": 341.0
+    },
+    {
+        "text": " lápicamente hasta se llegaran con la forma genera que en el problema de té,",
+        "start": 341.0,
+        "end": 347.0
+    },
+    {
+        "text": " el problema sobre la raíz, se va subiendo, y que va a quedar,",
+        "start": 348.0,
+        "end": 352.0
+    },
+    {
+        "text": " vamos a tener sub problemas por subar, esa es la idea del esquema que se va a trabajar,",
+        "start": 352.0,
+        "end": 358.0
+    },
+    {
+        "text": " entonces tenemos este como el esquema, bueno, como les decía,",
+        "start": 364.0,
+        "end": 369.0
+    },
+    {
+        "text": " entonces vamos a precisar los vértices desde las hojas en el horpáis,",
+        "start": 369.0,
+        "end": 373.0
+    },
+    {
+        "text": " las hojas no van a tener sub árboles, sino que van a ser los padres",
+        "start": 374.0,
+        "end": 378.0
+    },
+    {
+        "text": " de los vértices hojas en los que hicimos más, bueno, este no lo es un problema.",
+        "start": 378.0,
+        "end": 382.0
+    },
+    {
+        "text": " Entonces, para cada vérticeú se plantea resolver su problema asociado,",
+        "start": 382.0,
+        "end": 389.0
+    },
+    {
+        "text": " después de haber resuelto todos los problemas de sus hijos,",
+        "start": 389.0,
+        "end": 392.0
+    },
+    {
+        "text": " ese es el orden, entonces, en ese esquema se van a considerar dos casos,",
+        "start": 392.0,
+        "end": 399.0
+    },
+    {
+        "text": " tengan en cuenta que estamos resolviendo el problema de concumpti independiente,",
+        "start": 400.0,
+        "end": 404.0
+    },
+    {
+        "text": " entonces, en concumpti dependiente está excluyendo,",
+        "start": 404.0,
+        "end": 408.0
+    },
+    {
+        "text": " a una lista va a uno solo de los vértices, ¿no?",
+        "start": 408.0,
+        "end": 412.0
+    },
+    {
+        "text": " Entonces, se pueden dar dos casos, según el concumpti dependiente,",
+        "start": 412.0,
+        "end": 419.0
+    },
+    {
+        "text": " para cada árbol TDU, según se incluya o no,",
+        "start": 419.0,
+        "end": 426.0
+    },
+    {
+        "text": " si dado U se va a incluir o no a sus hijos, ¿no?",
+        "start": 426.0,
+        "end": 430.0
+    },
+    {
+        "text": " Entonces, perdón, si se incluye o no, ¿no?",
+        "start": 430.0,
+        "end": 433.0
+    },
+    {
+        "text": " Y por qué?",
+        "start": 433.0,
+        "end": 434.0
+    },
+    {
+        "text": " En la condición, si se incluye U,",
+        "start": 434.0,
+        "end": 437.0
+    },
+    {
+        "text": " eso quiere decir que no se van a incluir los hijos, o que también es incluir o no,",
+        "start": 437.0,
+        "end": 441.0
+    },
+    {
+        "text": " en concumpti dependiente, y en el otro caso es bueno, por una encontrario,",
+        "start": 441.0,
+        "end": 445.0
+    },
+    {
+        "text": " si no se le incluye U, entonces queda la opción de incluir o no a sus hijos,",
+        "start": 445.0,
+        "end": 451.0
+    },
+    {
+        "text": " según se va beneficioso, del punto de evitar el festo.",
+        "start": 451.0,
+        "end": 455.0
+    },
+    {
+        "text": " Recuerden que estamos maximizando la selección de verdad,",
+        "start": 455.0,
+        "end": 461.0
+    },
+    {
+        "text": " dice que, elegiendo un conjunto de vértices dependiente que maximice peso total,",
+        "start": 461.0,
+        "end": 467.0
+    },
+    {
+        "text": " entonces, aquí va a ver que tenen cuantas, y se incluye una o sus hijos,",
+        "start": 467.0,
+        "end": 471.0
+    },
+    {
+        "text": " si beneficio, una o el proceso.",
+        "start": 471.0,
+        "end": 473.0
+    },
+    {
+        "text": " Bueno, este es el esquema de sí, del tratamiento de la excepción de la vía",
+        "start": 473.0,
+        "end": 478.0
+    },
+    {
+        "text": " en los subproblemas, eso es como que dice que tenemos dos medidas,",
+        "start": 478.0,
+        "end": 482.0
+    },
+    {
+        "text": " dos condiciones, si se incluye el vértice U o no se le incluye.",
+        "start": 483.0,
+        "end": 488.0
+    },
+    {
+        "text": " Bueno, para ellos, entonces tenemos problemas asociados,",
+        "start": 488.0,
+        "end": 494.0
+    },
+    {
+        "text": " problemas para cada árbol, y vamos a tener una valoración del óptimo del problema de robar,",
+        "start": 494.0,
+        "end": 501.0
+    },
+    {
+        "text": " en ellos, del óptimo, local, a cabo esos árboles, con respecto al global.",
+        "start": 501.0,
+        "end": 507.0
+    },
+    {
+        "text": " Entonces, vamos a definir las variables para el esquema de programación diámita,",
+        "start": 508.0,
+        "end": 513.0
+    },
+    {
+        "text": " como óptimo, subin de U, en el caso del subproblema de TDEU,",
+        "start": 513.0,
+        "end": 520.0
+    },
+    {
+        "text": " incluya ABU, se le diñe este, es que lo está incluyendo,",
+        "start": 520.0,
+        "end": 525.0
+    },
+    {
+        "text": " se ha dado un vértice U, obde U está evaluando el subproblema de sea árbol,",
+        "start": 525.0,
+        "end": 533.0
+    },
+    {
+        "text": " si se incluye ABU, por el contrario, en el otro caso,",
+        "start": 533.0,
+        "end": 537.0
+    },
+    {
+        "text": " si no se incluye ABU, tenemos obde U que se le su problema y que se le está excluyendo.",
+        "start": 537.0,
+        "end": 544.0
+    },
+    {
+        "text": " Entonces, tenemos esas dos variables, tensadas de NU, con que nada hay nada,",
+        "start": 545.0,
+        "end": 551.0
+    },
+    {
+        "text": " que nos van a dar la medida del valor del problema en ese momento.",
+        "start": 551.0,
+        "end": 557.0
+    },
+    {
+        "text": " Bueno, lo que hay que hacer es resolver esas.",
+        "start": 558.0,
+        "end": 562.0
+    },
+    {
+        "text": " Esa es esa valoración de bueno, como ya saben,",
+        "start": 563.0,
+        "end": 567.0
+    },
+    {
+        "text": " el programación dinámica hay que bueno, el establecer,",
+        "start": 567.0,
+        "end": 569.0
+    },
+    {
+        "text": " los casos de borde y las recurrencias, ¿no?",
+        "start": 569.0,
+        "end": 572.0
+    },
+    {
+        "text": " Entonces, los casos de borde son para lo que conocen,",
+        "start": 572.0,
+        "end": 576.0
+    },
+    {
+        "text": " empezamos a desde las hojas para arriba, en la red is,",
+        "start": 576.0,
+        "end": 580.0
+    },
+    {
+        "text": " para cada vértice hoja que distintan a red is,",
+        "start": 580.0,
+        "end": 584.0
+    },
+    {
+        "text": " se va a definir este ópt de I, o sea, en el caso del que se incluye ABU,",
+        "start": 587.0,
+        "end": 592.0
+    },
+    {
+        "text": " como su peso, como PDU, este va a ser el valor que va a tener,",
+        "start": 592.0,
+        "end": 597.0
+    },
+    {
+        "text": " y en el caso de que no se le incluye, ¿no?",
+        "start": 597.0,
+        "end": 601.0
+    },
+    {
+        "text": " ¿no? ¿no se le incluye?",
+        "start": 601.0,
+        "end": 604.0
+    },
+    {
+        "text": " Bueno, esto es el caso de base, como dice,",
+        "start": 605.0,
+        "end": 608.0
+    },
+    {
+        "text": " y después tenemos el caso para todo cada vértice U que tiene hijos.",
+        "start": 608.0,
+        "end": 612.0
+    },
+    {
+        "text": " Ahora sí, se definen los valores óptes según las condiciones,",
+        "start": 612.0,
+        "end": 615.0
+    },
+    {
+        "text": " los casos que se definen anteriormente,",
+        "start": 615.0,
+        "end": 617.0
+    },
+    {
+        "text": " entonces se tienen las siguientes recurrencias.",
+        "start": 617.0,
+        "end": 621.0
+    },
+    {
+        "text": " Para el caso del que se incluye ABU,",
+        "start": 621.0,
+        "end": 624.0
+    },
+    {
+        "text": " entonces hay que tener en cuenta su peso,",
+        "start": 624.0,
+        "end": 627.0
+    },
+    {
+        "text": " más todos los valoraciones de los hijos que no se van a incluir.",
+        "start": 627.0,
+        "end": 635.0
+    },
+    {
+        "text": " La sabemos que en el caso del que se incluye ABU,",
+        "start": 635.0,
+        "end": 638.0
+    },
+    {
+        "text": " los hijos no se incluyen, entonces es el que ponen las valoraciones",
+        "start": 638.0,
+        "end": 642.0
+    },
+    {
+        "text": " de los subproblemas para los hijos no están.",
+        "start": 642.0,
+        "end": 646.0
+    },
+    {
+        "text": " Por otra parte, la recurvencia, la definición de la variable para el caso,",
+        "start": 647.0,
+        "end": 652.0
+    },
+    {
+        "text": " para ABU, en el caso del que se le fluya,",
+        "start": 652.0,
+        "end": 655.0
+    },
+    {
+        "text": " en que ya no esté, existe la opción de que se puede incluir o no a sus hijos.",
+        "start": 655.0,
+        "end": 659.0
+    },
+    {
+        "text": " Y bueno, lo que se va a hacer es lo mejor posible,",
+        "start": 659.0,
+        "end": 663.0
+    },
+    {
+        "text": " entonces lo que se busca es maximizar cualquier desafío.",
+        "start": 663.0,
+        "end": 666.0
+    },
+    {
+        "text": " Para todos sus hijos se va a maximizar la valoración de bueno entre.",
+        "start": 666.0,
+        "end": 675.0
+    },
+    {
+        "text": " Incluirlo con el otro.",
+        "start": 676.0,
+        "end": 678.0
+    },
+    {
+        "text": " Y bueno, esto establece la valoración de todos los subproblemas.",
+        "start": 681.0,
+        "end": 687.0
+    },
+    {
+        "text": " Y bueno, para resolver el problema final,",
+        "start": 687.0,
+        "end": 690.0
+    },
+    {
+        "text": " se lo hace sobre la raíz.",
+        "start": 690.0,
+        "end": 694.0
+    },
+    {
+        "text": " En el caso del óptimo se va a establecer sobre el Partice Radist,",
+        "start": 694.0,
+        "end": 698.0
+    },
+    {
+        "text": " bueno, va a ser la maximización de bueno,",
+        "start": 698.0,
+        "end": 700.0
+    },
+    {
+        "text": " si a él se le fluye o se le cruye.",
+        "start": 700.0,
+        "end": 703.0
+    },
+    {
+        "text": " O se cierra con.",
+        "start": 704.0,
+        "end": 706.0
+    },
+    {
+        "text": " Con este esquema.",
+        "start": 706.0,
+        "end": 708.0
+    },
+    {
+        "text": " Bueno, la recurrencia se puede se concluye en la corima programación dinámica.",
+        "start": 709.0,
+        "end": 716.0
+    },
+    {
+        "text": " Que va de.",
+        "start": 716.0,
+        "end": 718.0
+    },
+    {
+        "text": " Va y nagregando las.",
+        "start": 718.0,
+        "end": 720.0
+    },
+    {
+        "text": " Va y lo soliendo con la estructura de datos, la recurrencia,",
+        "start": 720.0,
+        "end": 724.0
+    },
+    {
+        "text": " entonces, precisamos representar esta recurrencia entre de variables,",
+        "start": 724.0,
+        "end": 729.0
+    },
+    {
+        "text": " de matemáticas en datos, bueno, entonces vamos a ser de se definen.",
+        "start": 729.0,
+        "end": 734.0
+    },
+    {
+        "text": " Para cada una de estas dos variables, valores de datos,",
+        "start": 734.0,
+        "end": 739.0
+    },
+    {
+        "text": " de llamamos a los.",
+        "start": 739.0,
+        "end": 743.0
+    },
+    {
+        "text": " Al arreglo que tiene la valores de datos tenemos dos arreglos,",
+        "start": 743.0,
+        "end": 748.0
+    },
+    {
+        "text": " una para los que se incluye, otro para los que se influye,",
+        "start": 748.0,
+        "end": 751.0
+    },
+    {
+        "text": " M su y M o.",
+        "start": 751.0,
+        "end": 754.0
+    },
+    {
+        "text": " Y bueno, con una valoración para cada uno de los barricades,",
+        "start": 754.0,
+        "end": 758.0
+    },
+    {
+        "text": " y bueno, lo que hay que establecer entonces ahora es un proceso ordenado de construcción de la solución desde los hijos hacia el artesas raíz.",
+        "start": 758.0,
+        "end": 768.0
+    },
+    {
+        "text": " Bueno, ese esquema ordenado así es bueno, procesar un árbol de esa forma se denomina de.",
+        "start": 768.0,
+        "end": 777.0
+    },
+    {
+        "text": " De recorrido en paso orden, si.",
+        "start": 777.0,
+        "end": 780.0
+    },
+    {
+        "text": " Bueno, y el algoritmo, que vamos acá.",
+        "start": 788.0,
+        "end": 792.0
+    },
+    {
+        "text": " Es el algoritmo de programación dinámica.",
+        "start": 792.0,
+        "end": 795.0
+    },
+    {
+        "text": " El primer paso es arragar el árbol, es el único artice R,",
+        "start": 795.0,
+        "end": 800.0
+    },
+    {
+        "text": " o sea, eso, los valores en el orden.",
+        "start": 800.0,
+        "end": 804.0
+    },
+    {
+        "text": " Luego para todo el artice en el árbol, el recorrido por orden,",
+        "start": 804.0,
+        "end": 809.0
+    },
+    {
+        "text": " si un partice es oja, se inicializa en sus pasos bases,",
+        "start": 809.0,
+        "end": 814.0
+    },
+    {
+        "text": " sino se plantean la.",
+        "start": 814.0,
+        "end": 819.0
+    },
+    {
+        "text": " La asignación de los valores según las recolencias,",
+        "start": 819.0,
+        "end": 823.0
+    },
+    {
+        "text": " ahí, ahí, ahí, ahí, ahí, ahí, ahí.",
+        "start": 823.0,
+        "end": 826.0
+    },
+    {
+        "text": " Se termina, el tritera, para que se consumen todos los artices y se retornan.",
+        "start": 826.0,
+        "end": 831.0
+    },
+    {
+        "text": " El máximo de los operantes.",
+        "start": 831.0,
+        "end": 834.0
+    },
+    {
+        "text": " Y bueno, es directo, ¿no? Como siempre, pero la asignación dinámica tiene,",
+        "start": 836.0,
+        "end": 839.0
+    },
+    {
+        "text": " está, los arragarimos son muy directo, la clave aquí está en arvabas las recurrencias.",
+        "start": 839.0,
+        "end": 847.0
+    },
+    {
+        "text": " Y bueno, luego lo que queda pendiente es determinar la solución óptima,",
+        "start": 847.0,
+        "end": 853.0
+    },
+    {
+        "text": " mediante el roastre o sea, haciendo el backtrack de las decisiones comadas",
+        "start": 853.0,
+        "end": 859.0
+    },
+    {
+        "text": " y concluir la solución y bueno, ¿qué nos incluyeron? ¿quién es?",
+        "start": 859.0,
+        "end": 863.0
+    },
+    {
+        "text": " ¿quién es que daron detrás de escena?",
+        "start": 863.0,
+        "end": 865.0
+    },
+    {
+        "text": " Para tu claramente, ¿tienes que dar detrás de escena y concluir detendientes?",
+        "start": 865.0,
+        "end": 868.0
+    },
+    {
+        "text": " Bueno, y con esto terminamos la primera sección de esta semana.",
+        "start": 868.0,
+        "end": 880.0
+    },
+    {
+        "text": " Y bueno, vamos a la segunda,",
+        "start": 880.0,
+        "end": 883.0
+    },
+    {
+        "text": " que son los agorimos de aproximación.",
+        "start": 883.0,
+        "end": 886.0
+    },
+    {
+        "text": " Bueno, ¿cuál es la idea?",
+        "start": 887.0,
+        "end": 889.0
+    },
+    {
+        "text": " La idea es los agorimos, bueno, como ya saben, los agorimos de empijar son,",
+        "start": 891.0,
+        "end": 898.0
+    },
+    {
+        "text": " no tiene solución, interesor lishu y fisciente, ¿no?",
+        "start": 898.0,
+        "end": 901.0
+    },
+    {
+        "text": " Entonces, lo que se busca es,",
+        "start": 901.0,
+        "end": 903.0
+    },
+    {
+        "text": " a partir de la agorisma ya conocida,",
+        "start": 905.0,
+        "end": 908.0
+    },
+    {
+        "text": " poder usarla igualmente",
+        "start": 908.0,
+        "end": 911.0
+    },
+    {
+        "text": " para tratar de conseguir soluciones que no son las soluciones óptimas de los problemas de intista,",
+        "start": 912.0,
+        "end": 921.0
+    },
+    {
+        "text": " pero bueno, ¿qué son soluciones de cierta calidad?",
+        "start": 921.0,
+        "end": 924.0
+    },
+    {
+        "text": " Entonces, lo el mecanismo de los agorimos de aproximación,",
+        "start": 924.0,
+        "end": 928.0
+    },
+    {
+        "text": " no tengo esta metodología, lo que hace es establecer un compromiso entre la calidad de la solución,",
+        "start": 928.0,
+        "end": 936.0
+    },
+    {
+        "text": " no sé garantiza que se llegue al óptimo,",
+        "start": 937.0,
+        "end": 940.0
+    },
+    {
+        "text": " y el tiempo de ejecutía, ¿cuál es el esfuerzo computacional que se va a poner en esto?",
+        "start": 940.0,
+        "end": 946.0
+    },
+    {
+        "text": " O sea, se consiguen soluciones con ese compromiso,",
+        "start": 946.0,
+        "end": 950.0
+    },
+    {
+        "text": " en una forma está necopotada.",
+        "start": 950.0,
+        "end": 953.0
+    },
+    {
+        "text": " Y en particular,",
+        "start": 953.0,
+        "end": 954.0
+    },
+    {
+        "text": " bueno, lo que hacen es hacerlo en tiempo polinomial",
+        "start": 957.0,
+        "end": 962.0
+    },
+    {
+        "text": " y dando una cota, o sea, un brael de cuánto distante se está del óptimo,",
+        "start": 963.0,
+        "end": 970.0
+    },
+    {
+        "text": " es en la cara del ética de entorno.",
+        "start": 970.0,
+        "end": 973.0
+    },
+    {
+        "text": " O sea que obtiene soluciones aproximadas en tiempo polinomial",
+        "start": 973.0,
+        "end": 978.0
+    },
+    {
+        "text": " y garantizando que se está cierta distancia de la luz.",
+        "start": 978.0,
+        "end": 984.0
+    },
+    {
+        "text": " Y bueno, esto no es nada menor,",
+        "start": 985.0,
+        "end": 988.0
+    },
+    {
+        "text": " tener ese un brael, por lo menos tengo una idea,",
+        "start": 988.0,
+        "end": 992.0
+    },
+    {
+        "text": " bueno, invertí tanto esfuerzo y sé que no estoy más de 5%.",
+        "start": 992.0,
+        "end": 997.0
+    },
+    {
+        "text": " Entonces, el óptimo está margen al osumo, un margen de 5%.",
+        "start": 997.0,
+        "end": 1003.0
+    },
+    {
+        "text": " Eso es de un punto de vista práctico, es muy valioso,",
+        "start": 1003.0,
+        "end": 1008.0
+    },
+    {
+        "text": " tener ese margen,",
+        "start": 1009.0,
+        "end": 1011.0
+    },
+    {
+        "text": " porque no nos da una categorización de lo valor de esa sensación,",
+        "start": 1011.0,
+        "end": 1018.0
+    },
+    {
+        "text": " o sea que no es la óptima, tenemos una idea de cómo está.",
+        "start": 1018.0,
+        "end": 1022.0
+    },
+    {
+        "text": " Vean qué esto es muy diferente a lo que se abre cuando se dice",
+        "start": 1022.0,
+        "end": 1028.0
+    },
+    {
+        "text": " que tenemos geogurísticas, en el caso de las geogurísticas,",
+        "start": 1028.0,
+        "end": 1031.0
+    },
+    {
+        "text": " este uno consigue soluciones aproximadas,",
+        "start": 1031.0,
+        "end": 1033.0
+    },
+    {
+        "text": " pero general no tiene esa medida de calidad,",
+        "start": 1033.0,
+        "end": 1036.0
+    },
+    {
+        "text": " y cuanto distante está del óptimo, este carece de ese esquema,",
+        "start": 1036.0,
+        "end": 1041.0
+    },
+    {
+        "text": " de esa métrica.",
+        "start": 1041.0,
+        "end": 1044.0
+    },
+    {
+        "text": " Y bueno,",
+        "start": 1045.0,
+        "end": 1047.0
+    },
+    {
+        "text": " el desafío es resolver,",
+        "start": 1052.0,
+        "end": 1054.0
+    },
+    {
+        "text": " es determinar, es simple, sin resolver el problema original,",
+        "start": 1054.0,
+        "end": 1058.0
+    },
+    {
+        "text": " por lo menos sobre el problema original,",
+        "start": 1058.0,
+        "end": 1060.0
+    },
+    {
+        "text": " obviamente, es donde está el óptimo y sé exactamente",
+        "start": 1060.0,
+        "end": 1063.0
+    },
+    {
+        "text": " que distancia, pero uno a priori no sabe,",
+        "start": 1063.0,
+        "end": 1066.0
+    },
+    {
+        "text": " y el forzo de los horarios del problema es lo que desconoce",
+        "start": 1066.0,
+        "end": 1073.0
+    },
+    {
+        "text": " cuanto lo que lleva ayerado.",
+        "start": 1073.0,
+        "end": 1076.0
+    },
+    {
+        "text": " Y bueno, hay muchísimas metodologías para esto,",
+        "start": 1079.0,
+        "end": 1082.0
+    },
+    {
+        "text": " para nombrarles algunas técnicas,",
+        "start": 1082.0,
+        "end": 1086.0
+    },
+    {
+        "text": " de diseño de gulma presimado,",
+        "start": 1086.0,
+        "end": 1088.0
+    },
+    {
+        "text": " una es algoritmo jable,",
+        "start": 1088.0,
+        "end": 1090.0
+    },
+    {
+        "text": " y es el ejemplo que vamos a borros nosotros,",
+        "start": 1091.0,
+        "end": 1095.0
+    },
+    {
+        "text": " la continuación,",
+        "start": 1095.0,
+        "end": 1096.0
+    },
+    {
+        "text": " o sea, es lo más básico que hay,",
+        "start": 1096.0,
+        "end": 1100.0
+    },
+    {
+        "text": " es un uso en un criterio,",
+        "start": 1100.0,
+        "end": 1102.0
+    },
+    {
+        "text": " ha habido, en un criterio,",
+        "start": 1102.0,
+        "end": 1104.0
+    },
+    {
+        "text": " es lo mejor en el encadre de la etapa que voy,",
+        "start": 1104.0,
+        "end": 1109.0
+    },
+    {
+        "text": " pero además tengo que tratar de construir una técnica,",
+        "start": 1109.0,
+        "end": 1114.0
+    },
+    {
+        "text": " que me diga,",
+        "start": 1114.0,
+        "end": 1115.0
+    },
+    {
+        "text": " bueno, aquel instancia estoy en el trabajo que he caído.",
+        "start": 1115.0,
+        "end": 1119.0
+    },
+    {
+        "text": " Es una desafío.",
+        "start": 1120.0,
+        "end": 1122.0
+    },
+    {
+        "text": " Porque el algoritmo ha habido,",
+        "start": 1123.0,
+        "end": 1125.0
+    },
+    {
+        "text": " de por si solo no tiene mucha información,",
+        "start": 1125.0,
+        "end": 1128.0
+    },
+    {
+        "text": " hay que salir, hay que armar, hay que armar las cotas,",
+        "start": 1128.0,
+        "end": 1131.0
+    },
+    {
+        "text": " hay que construir.",
+        "start": 1131.0,
+        "end": 1132.0
+    },
+    {
+        "text": " Hay otras técnicas que se denominan metodos primal duals,",
+        "start": 1132.0,
+        "end": 1137.0
+    },
+    {
+        "text": " que son para la formelación algebraica,",
+        "start": 1137.0,
+        "end": 1141.0
+    },
+    {
+        "text": " por ejemplo, como la que vimos de los problemas de flujo en red,",
+        "start": 1141.0,
+        "end": 1146.0
+    },
+    {
+        "text": " o de máximo flujo,",
+        "start": 1146.0,
+        "end": 1149.0
+    },
+    {
+        "text": " esos problemas tienen formulaciones,",
+        "start": 1149.0,
+        "end": 1153.0
+    },
+    {
+        "text": " este dado un problema,",
+        "start": 1153.0,
+        "end": 1155.0
+    },
+    {
+        "text": " tiene una formulación terminada dual,",
+        "start": 1155.0,
+        "end": 1157.0
+    },
+    {
+        "text": " que otorla las métricas directamente,",
+        "start": 1157.0,
+        "end": 1160.0
+    },
+    {
+        "text": " otorla la medida de imbarad directa,",
+        "start": 1160.0,
+        "end": 1162.0
+    },
+    {
+        "text": " esa es una de las bandadas que tiene esos metros.",
+        "start": 1162.0,
+        "end": 1164.0
+    },
+    {
+        "text": " Y esa,",
+        "start": 1166.0,
+        "end": 1167.0
+    },
+    {
+        "text": " es un brazo,",
+        "start": 1167.0,
+        "end": 1170.0
+    },
+    {
+        "text": " se controlla a partir de cierta,",
+        "start": 1170.0,
+        "end": 1172.0
+    },
+    {
+        "text": " medida, como los métodos son algebraicos,",
+        "start": 1175.0,
+        "end": 1178.0
+    },
+    {
+        "text": " que están contrugados por la extricción,",
+        "start": 1178.0,
+        "end": 1180.0
+    },
+    {
+        "text": " esa corradima del problema de flujo en red,",
+        "start": 1180.0,
+        "end": 1182.0
+    },
+    {
+        "text": " tenía restricciones que establecían.",
+        "start": 1182.0,
+        "end": 1184.0
+    },
+    {
+        "text": " Las capacidades del flujo eran una,",
+        "start": 1184.0,
+        "end": 1187.0
+    },
+    {
+        "text": " y la otra era el balance del flujo",
+        "start": 1187.0,
+        "end": 1190.0
+    },
+    {
+        "text": " en cada, cada no de la red, cada uno.",
+        "start": 1190.0,
+        "end": 1193.0
+    },
+    {
+        "text": " Este para cada uno de esos restricciones,",
+        "start": 1193.0,
+        "end": 1197.0
+    },
+    {
+        "text": " los métodos estos concluyen unicalismo de penalidades,",
+        "start": 1197.0,
+        "end": 1201.0
+    },
+    {
+        "text": " o también en las carreitas económicas,",
+        "start": 1201.0,
+        "end": 1204.0
+    },
+    {
+        "text": " que se lo dice presios,",
+        "start": 1204.0,
+        "end": 1206.0
+    },
+    {
+        "text": " y según sea la presión de esas retricciones,",
+        "start": 1206.0,
+        "end": 1213.0
+    },
+    {
+        "text": " con respecto a la valoración del óptimo,",
+        "start": 1213.0,
+        "end": 1216.0
+    },
+    {
+        "text": " se establece lo valor en esos presios,",
+        "start": 1216.0,
+        "end": 1218.0
+    },
+    {
+        "text": " y esos presios son los que permiten,",
+        "start": 1218.0,
+        "end": 1221.0
+    },
+    {
+        "text": " o esas penalidades son las que permiten construir el mural.",
+        "start": 1221.0,
+        "end": 1225.0
+    },
+    {
+        "text": " Es interesante,",
+        "start": 1225.0,
+        "end": 1226.0
+    },
+    {
+        "text": " eso es que más,",
+        "start": 1226.0,
+        "end": 1227.0
+    },
+    {
+        "text": " este algebraico,",
+        "start": 1227.0,
+        "end": 1229.0
+    },
+    {
+        "text": " que tiene un concepto,",
+        "start": 1229.0,
+        "end": 1230.0
+    },
+    {
+        "text": " y con vexidad,",
+        "start": 1230.0,
+        "end": 1232.0
+    },
+    {
+        "text": " que ya hay un concepto más que un,",
+        "start": 1232.0,
+        "end": 1235.0
+    },
+    {
+        "text": " sobre, no tenemos ni contravivir.",
+        "start": 1235.0,
+        "end": 1237.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 1237.0,
+        "end": 1238.0
+    },
+    {
+        "text": " es una diferencia con los biolimosavis,",
+        "start": 1238.0,
+        "end": 1240.0
+    },
+    {
+        "text": " si hay un sal en esos métodos,",
+        "start": 1240.0,
+        "end": 1242.0
+    },
+    {
+        "text": " si hay su ya está, amado,",
+        "start": 1242.0,
+        "end": 1244.0
+    },
+    {
+        "text": " obviamente, el desafío es armarlas,",
+        "start": 1244.0,
+        "end": 1246.0
+    },
+    {
+        "text": " las formulaciones geometricas,",
+        "start": 1246.0,
+        "end": 1249.0
+    },
+    {
+        "text": " las formulaciones algebraica,",
+        "start": 1249.0,
+        "end": 1251.0
+    },
+    {
+        "text": " pero bueno, uno se aprende,",
+        "start": 1251.0,
+        "end": 1253.0
+    },
+    {
+        "text": " y se me ha explicado,",
+        "start": 1253.0,
+        "end": 1255.0
+    },
+    {
+        "text": " por ejemplo,",
+        "start": 1255.0,
+        "end": 1257.0
+    },
+    {
+        "text": " para contarles,",
+        "start": 1257.0,
+        "end": 1259.0
+    },
+    {
+        "text": " las que por el primer problema,",
+        "start": 1259.0,
+        "end": 1262.0
+    },
+    {
+        "text": " que se vive durante el curso,",
+        "start": 1262.0,
+        "end": 1263.0
+    },
+    {
+        "text": " el problema de los matrimonios estable,",
+        "start": 1263.0,
+        "end": 1269.0
+    },
+    {
+        "text": " o del emparejamiento estable,",
+        "start": 1269.0,
+        "end": 1271.0
+    },
+    {
+        "text": " tiene una formulación algebraica asociada,",
+        "start": 1271.0,
+        "end": 1274.0
+    },
+    {
+        "text": " que tiene,",
+        "start": 1274.0,
+        "end": 1275.0
+    },
+    {
+        "text": " se le pueden construir el primer dual,",
+        "start": 1275.0,
+        "end": 1278.0
+    },
+    {
+        "text": " y en ese caso,",
+        "start": 1278.0,
+        "end": 1282.0
+    },
+    {
+        "text": " es directo,",
+        "start": 1282.0,
+        "end": 1283.0
+    },
+    {
+        "text": " ese algoritmo,",
+        "start": 1283.0,
+        "end": 1284.0
+    },
+    {
+        "text": " ese problema,",
+        "start": 1284.0,
+        "end": 1286.0
+    },
+    {
+        "text": " no es en EPDURO,",
+        "start": 1286.0,
+        "end": 1288.0
+    },
+    {
+        "text": " una de las propiedades,",
+        "start": 1288.0,
+        "end": 1291.0
+    },
+    {
+        "text": " que tiene los beneficientes,",
+        "start": 1291.0,
+        "end": 1294.0
+    },
+    {
+        "text": " bueno, tiene una característica primal dual,",
+        "start": 1294.0,
+        "end": 1296.0
+    },
+    {
+        "text": " que el último,",
+        "start": 1296.0,
+        "end": 1298.0
+    },
+    {
+        "text": " el óptimo, le dos problemas coincide,",
+        "start": 1298.0,
+        "end": 1300.0
+    },
+    {
+        "text": " en el caso de los problemas que son,",
+        "start": 1300.0,
+        "end": 1303.0
+    },
+    {
+        "text": " empijar esos dos óptimos no coinciden,",
+        "start": 1303.0,
+        "end": 1305.0
+    },
+    {
+        "text": " pero esa distancia,",
+        "start": 1305.0,
+        "end": 1307.0
+    },
+    {
+        "text": " que queda entre los dos,",
+        "start": 1307.0,
+        "end": 1308.0
+    },
+    {
+        "text": " es el de la medida de lembrar.",
+        "start": 1308.0,
+        "end": 1310.0
+    },
+    {
+        "text": " Bueno, después hay otra técnica,",
+        "start": 1315.0,
+        "end": 1317.0
+    },
+    {
+        "text": " que es muy muy usada también,",
+        "start": 1317.0,
+        "end": 1319.0
+    },
+    {
+        "text": " en formulaciones algebraica,",
+        "start": 1319.0,
+        "end": 1320.0
+    },
+    {
+        "text": " es que es la programación lineal,",
+        "start": 1320.0,
+        "end": 1322.0
+    },
+    {
+        "text": " la programación lineal,",
+        "start": 1322.0,
+        "end": 1326.0
+    },
+    {
+        "text": " se puede usar en directa,",
+        "start": 1326.0,
+        "end": 1328.0
+    },
+    {
+        "text": " se puede usar como un mecanismo de relajación,",
+        "start": 1328.0,
+        "end": 1333.0
+    },
+    {
+        "text": " de problemas que tienen estructuras discretas,",
+        "start": 1333.0,
+        "end": 1338.0
+    },
+    {
+        "text": " como la mayoría,",
+        "start": 1338.0,
+        "end": 1339.0
+    },
+    {
+        "text": " lo que hemos visto en la otra casa,",
+        "start": 1339.0,
+        "end": 1340.0
+    },
+    {
+        "text": " como independencia,",
+        "start": 1340.0,
+        "end": 1341.0
+    },
+    {
+        "text": " barrictercóvar,",
+        "start": 1341.0,
+        "end": 1342.0
+    },
+    {
+        "text": " este dinartry,",
+        "start": 1342.0,
+        "end": 1344.0
+    },
+    {
+        "text": " todos los problemas se pueden hacer,",
+        "start": 1344.0,
+        "end": 1346.0
+    },
+    {
+        "text": " se pueden aplicar programación lineal,",
+        "start": 1346.0,
+        "end": 1348.0
+    },
+    {
+        "text": " relajarlos,",
+        "start": 1348.0,
+        "end": 1350.0
+    },
+    {
+        "text": " quiero decirlo,",
+        "start": 1350.0,
+        "end": 1351.0
+    },
+    {
+        "text": " relajarlo como sus decisiones eran discretas,",
+        "start": 1351.0,
+        "end": 1355.0
+    },
+    {
+        "text": " se las pueden relajar a variables continuos,",
+        "start": 1355.0,
+        "end": 1358.0
+    },
+    {
+        "text": " y luego redondear esos valores.",
+        "start": 1358.0,
+        "end": 1361.0
+    },
+    {
+        "text": " Bueno, esa noción,",
+        "start": 1361.0,
+        "end": 1364.0
+    },
+    {
+        "text": " esos valores redondeados son un punto de partida",
+        "start": 1364.0,
+        "end": 1368.0
+    },
+    {
+        "text": " para conseguir soluciones aproximadas.",
+        "start": 1368.0,
+        "end": 1371.0
+    },
+    {
+        "text": " Y bueno, nuevamente,",
+        "start": 1371.0,
+        "end": 1372.0
+    },
+    {
+        "text": " la programación lineal herida,",
+        "start": 1372.0,
+        "end": 1374.0
+    },
+    {
+        "text": " todo lo que es la metodología primal dual,",
+        "start": 1374.0,
+        "end": 1377.0
+    },
+    {
+        "text": " vista en el paso anterior.",
+        "start": 1377.0,
+        "end": 1379.0
+    },
+    {
+        "text": " La programación lineal,",
+        "start": 1379.0,
+        "end": 1380.0
+    },
+    {
+        "text": " la cual es la que es programación,",
+        "start": 1380.0,
+        "end": 1381.0
+    },
+    {
+        "text": " en este caso,",
+        "start": 1381.0,
+        "end": 1382.0
+    },
+    {
+        "text": " significa optimización,",
+        "start": 1382.0,
+        "end": 1385.0
+    },
+    {
+        "text": " la programación en términos computacionales.",
+        "start": 1385.0,
+        "end": 1388.0
+    },
+    {
+        "text": " La programación entera es la que es obviamente difícil,",
+        "start": 1388.0,
+        "end": 1393.0
+    },
+    {
+        "text": " es el empejar,",
+        "start": 1393.0,
+        "end": 1394.0
+    },
+    {
+        "text": " la programación lineal,",
+        "start": 1394.0,
+        "end": 1396.0
+    },
+    {
+        "text": " tiene la resolución eficiente,",
+        "start": 1396.0,
+        "end": 1399.0
+    },
+    {
+        "text": " llevo un tiempo de descubrirla,",
+        "start": 1399.0,
+        "end": 1401.0
+    },
+    {
+        "text": " nos cuantos años,",
+        "start": 1401.0,
+        "end": 1402.0
+    },
+    {
+        "text": " pero ya se tiene la resolución eficiente.",
+        "start": 1402.0,
+        "end": 1405.0
+    },
+    {
+        "text": " Bueno, de programación entera,",
+        "start": 1409.0,
+        "end": 1411.0
+    },
+    {
+        "text": " el repartido de esta semana,",
+        "start": 1411.0,
+        "end": 1413.0
+    },
+    {
+        "text": " y se había dudas de que es,",
+        "start": 1413.0,
+        "end": 1415.0
+    },
+    {
+        "text": " era tratado de resolver un problema de programación entera,",
+        "start": 1415.0,
+        "end": 1418.0
+    },
+    {
+        "text": " en el cual las bañables,",
+        "start": 1418.0,
+        "end": 1419.0
+    },
+    {
+        "text": " en particular,",
+        "start": 1419.0,
+        "end": 1420.0
+    },
+    {
+        "text": " eran cultivinarios.",
+        "start": 1420.0,
+        "end": 1422.0
+    },
+    {
+        "text": " Y bueno,",
+        "start": 1423.0,
+        "end": 1424.0
+    },
+    {
+        "text": " hay otras,",
+        "start": 1424.0,
+        "end": 1425.0
+    },
+    {
+        "text": " también se pueden resolver con programación dinámica,",
+        "start": 1425.0,
+        "end": 1429.0
+    },
+    {
+        "text": " de nuevo,",
+        "start": 1429.0,
+        "end": 1430.0
+    },
+    {
+        "text": " hay que os similar a lo que eres programación entera,",
+        "start": 1430.0,
+        "end": 1432.0
+    },
+    {
+        "text": " redondiándolo,",
+        "start": 1432.0,
+        "end": 1433.0
+    },
+    {
+        "text": " los valores de los parámetros,",
+        "start": 1433.0,
+        "end": 1435.0
+    },
+    {
+        "text": " eso también da quotas,",
+        "start": 1435.0,
+        "end": 1438.0
+    },
+    {
+        "text": " de las resoluciones aproximadas con quotas.",
+        "start": 1438.0,
+        "end": 1440.0
+    },
+    {
+        "text": " Y bueno,",
+        "start": 1440.0,
+        "end": 1441.0
+    },
+    {
+        "text": " hay muchísimas más.",
+        "start": 1441.0,
+        "end": 1442.0
+    },
+    {
+        "text": " Rebele, le puedo preguntar algo.",
+        "start": 1442.0,
+        "end": 1445.0
+    },
+    {
+        "text": " Sí, como no.",
+        "start": 1445.0,
+        "end": 1446.0
+    },
+    {
+        "text": " Aquí se refiere con relajación.",
+        "start": 1446.0,
+        "end": 1449.0
+    },
+    {
+        "text": " Relajación es cuando, por ejemplo,",
+        "start": 1449.0,
+        "end": 1453.0
+    },
+    {
+        "text": " en programación entera,",
+        "start": 1453.0,
+        "end": 1454.0
+    },
+    {
+        "text": " uno tiene las bañables,",
+        "start": 1454.0,
+        "end": 1457.0
+    },
+    {
+        "text": " tiene un dominio entero.",
+        "start": 1457.0,
+        "end": 1459.0
+    },
+    {
+        "text": " No supongo que pueden ser,",
+        "start": 1459.0,
+        "end": 1461.0
+    },
+    {
+        "text": " en el caso de referencia de estas semanas,",
+        "start": 1461.0,
+        "end": 1464.0
+    },
+    {
+        "text": " que hicieron,",
+        "start": 1464.0,
+        "end": 1465.0
+    },
+    {
+        "text": " variable 0 o 1.",
+        "start": 1465.0,
+        "end": 1467.0
+    },
+    {
+        "text": " Uno, lo que establece es,",
+        "start": 1467.0,
+        "end": 1472.0
+    },
+    {
+        "text": " en vez de que suelo va a ir al 0 o 1,",
+        "start": 1472.0,
+        "end": 1475.0
+    },
+    {
+        "text": " habilita a la que va a ir en el interval 0 o 1 real.",
+        "start": 1475.0,
+        "end": 1479.0
+    },
+    {
+        "text": " Es lo que se denomina,",
+        "start": 1479.0,
+        "end": 1481.0
+    },
+    {
+        "text": " por ejemplo, relajación,",
+        "start": 1481.0,
+        "end": 1483.0
+    },
+    {
+        "text": " variables continas,",
+        "start": 1483.0,
+        "end": 1485.0
+    },
+    {
+        "text": " de una variable etes binaria,",
+        "start": 1485.0,
+        "end": 1487.0
+    },
+    {
+        "text": " de poder solo balarse a 1,",
+        "start": 1487.0,
+        "end": 1489.0
+    },
+    {
+        "text": " a que se ha continuo,",
+        "start": 1489.0,
+        "end": 1491.0
+    },
+    {
+        "text": " que se va a ir entre el 0 y el,",
+        "start": 1491.0,
+        "end": 1493.0
+    },
+    {
+        "text": " por ejemplo, la mayoría de todos nuestros problemas,",
+        "start": 1493.0,
+        "end": 1495.0
+    },
+    {
+        "text": " si usted lo,",
+        "start": 1495.0,
+        "end": 1496.0
+    },
+    {
+        "text": " lo pueden plazar en,",
+        "start": 1496.0,
+        "end": 1497.0
+    },
+    {
+        "text": " con, con,",
+        "start": 1497.0,
+        "end": 1498.0
+    },
+    {
+        "text": " con, con, con una variable inaria que, bueno,",
+        "start": 1498.0,
+        "end": 1502.0
+    },
+    {
+        "text": " este verde se integra el conjunto independiente o no,",
+        "start": 1502.0,
+        "end": 1505.0
+    },
+    {
+        "text": " este verde,",
+        "start": 1505.0,
+        "end": 1506.0
+    },
+    {
+        "text": " esta lista está en la cobertura o no.",
+        "start": 1506.0,
+        "end": 1509.0
+    },
+    {
+        "text": " Eso se puede relajar a que vaya a 0 o 1.",
+        "start": 1509.0,
+        "end": 1512.0
+    },
+    {
+        "text": " Bueno, ¿cuál es la ventaja?",
+        "start": 1512.0,
+        "end": 1513.0
+    },
+    {
+        "text": " Al relajar en que va a ir a 0 o 1,",
+        "start": 1513.0,
+        "end": 1515.0
+    },
+    {
+        "text": " el problema original no era convexo,",
+        "start": 1515.0,
+        "end": 1518.0
+    },
+    {
+        "text": " porque los conjuntos y concretas no son convexos,",
+        "start": 1518.0,
+        "end": 1521.0
+    },
+    {
+        "text": " el relajar lo pasa a ser convexo.",
+        "start": 1521.0,
+        "end": 1523.0
+    },
+    {
+        "text": " Entonces, ¿dería las propiedades,",
+        "start": 1523.0,
+        "end": 1525.0
+    },
+    {
+        "text": " estas del método primal dual?",
+        "start": 1525.0,
+        "end": 1527.0
+    },
+    {
+        "text": " Entonces, ¿cáles en todo ese esquema de donde se pueden conseguir",
+        "start": 1527.0,
+        "end": 1531.0
+    },
+    {
+        "text": " cootas?",
+        "start": 1531.0,
+        "end": 1532.0
+    },
+    {
+        "text": " Esa es la gran ventaja de eso.",
+        "start": 1532.0,
+        "end": 1535.0
+    },
+    {
+        "text": " O sea, se puede usar la técnica del primal dual,",
+        "start": 1535.0,
+        "end": 1538.0
+    },
+    {
+        "text": " construir su dual,",
+        "start": 1538.0,
+        "end": 1539.0
+    },
+    {
+        "text": " o sea, a partir de hacer que un problema que no era",
+        "start": 1539.0,
+        "end": 1542.0
+    },
+    {
+        "text": " convexo, sea convexo,",
+        "start": 1542.0,
+        "end": 1544.0
+    },
+    {
+        "text": " usar esas técnicas,",
+        "start": 1544.0,
+        "end": 1546.0
+    },
+    {
+        "text": " se me deja.",
+        "start": 1546.0,
+        "end": 1547.0
+    },
+    {
+        "text": " Bueno, ¿túesas?",
+        "start": 1547.0,
+        "end": 1548.0
+    },
+    {
+        "text": " Y el pa...",
+        "start": 1548.0,
+        "end": 1549.0
+    },
+    {
+        "text": " De nada.",
+        "start": 1549.0,
+        "end": 1550.0
+    },
+    {
+        "text": " Túesas para finales de metodología y todas sus típicas",
+        "start": 1550.0,
+        "end": 1553.0
+    },
+    {
+        "text": " de optimización,",
+        "start": 1553.0,
+        "end": 1555.0
+    },
+    {
+        "text": " y más adelante la carruera sin interesa y de varios cursos,",
+        "start": 1555.0,
+        "end": 1558.0
+    },
+    {
+        "text": " de mayoría sobre el motivo,",
+        "start": 1558.0,
+        "end": 1559.0
+    },
+    {
+        "text": " de un aumento de odio,",
+        "start": 1559.0,
+        "end": 1561.0
+    },
+    {
+        "text": " y de presenta a todas estas y otras muchas más avanzadas,",
+        "start": 1561.0,
+        "end": 1565.0
+    },
+    {
+        "text": " que tiene mucho más base,",
+        "start": 1565.0,
+        "end": 1567.0
+    },
+    {
+        "text": " porque...",
+        "start": 1567.0,
+        "end": 1568.0
+    },
+    {
+        "text": " Por eso...",
+        "start": 1568.0,
+        "end": 1569.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1569.0,
+        "end": 1571.0
+    },
+    {
+        "text": " ¿Dóries explicar de vuelta la idea de primal dual,",
+        "start": 1572.0,
+        "end": 1576.0
+    },
+    {
+        "text": " que no lo entendí mucho?",
+        "start": 1576.0,
+        "end": 1578.0
+    },
+    {
+        "text": " Los deprimal duales, es...",
+        "start": 1578.0,
+        "end": 1581.0
+    },
+    {
+        "text": " que para un problema,",
+        "start": 1581.0,
+        "end": 1583.0
+    },
+    {
+        "text": " por ejemplo,",
+        "start": 1583.0,
+        "end": 1585.0
+    },
+    {
+        "text": " uno tiene un problema definido o la formulación típica que ustedes",
+        "start": 1585.0,
+        "end": 1589.0
+    },
+    {
+        "text": " vieron,",
+        "start": 1589.0,
+        "end": 1590.0
+    },
+    {
+        "text": " aún, ¿gambieron?",
+        "start": 1590.0,
+        "end": 1591.0
+    },
+    {
+        "text": " Es la del problema de flu...",
+        "start": 1591.0,
+        "end": 1593.0
+    },
+    {
+        "text": " fluco en red, ¿sí?",
+        "start": 1593.0,
+        "end": 1595.0
+    },
+    {
+        "text": " Para ese problema,",
+        "start": 1596.0,
+        "end": 1598.0
+    },
+    {
+        "text": " yo puedo definir...",
+        "start": 1599.0,
+        "end": 1601.0
+    },
+    {
+        "text": " ¿sacord...",
+        "start": 1601.0,
+        "end": 1602.0
+    },
+    {
+        "text": " ¿no? ¿Tienen el mente del problema de fluco en red?",
+        "start": 1602.0,
+        "end": 1605.0
+    },
+    {
+        "text": " ¿Tienen una variable real?",
+        "start": 1605.0,
+        "end": 1607.0
+    },
+    {
+        "text": " ¿Tienen una red, no?",
+        "start": 1607.0,
+        "end": 1609.0
+    },
+    {
+        "text": " Definida, sobre partices y arcos.",
+        "start": 1609.0,
+        "end": 1612.0
+    },
+    {
+        "text": " Sobre...",
+        "start": 1612.0,
+        "end": 1613.0
+    },
+    {
+        "text": " El marco puede haber fluco.",
+        "start": 1613.0,
+        "end": 1614.0
+    },
+    {
+        "text": " Para acá, arco hay una variable real,",
+        "start": 1614.0,
+        "end": 1617.0
+    },
+    {
+        "text": " que dice cuál es la cantidad de fluco que voy a enviar",
+        "start": 1617.0,
+        "end": 1619.0
+    },
+    {
+        "text": " en un verde south, ¿no?",
+        "start": 1619.0,
+        "end": 1621.0
+    },
+    {
+        "text": " Los part籍as que le entengen.",
+        "start": 1621.0,
+        "end": 1623.0
+    },
+    {
+        "text": " Para ese problema,",
+        "start": 1623.0,
+        "end": 1625.0
+    },
+    {
+        "text": " yo puedo definir un problema complementario,",
+        "start": 1625.0,
+        "end": 1627.0
+    },
+    {
+        "text": " el gebrés, y que tiene ahora,",
+        "start": 1627.0,
+        "end": 1631.0
+    },
+    {
+        "text": " una variable para acá,",
+        "start": 1631.0,
+        "end": 1634.0
+    },
+    {
+        "text": " ¿verdad?",
+        "start": 1634.0,
+        "end": 1636.0
+    },
+    {
+        "text": " Acabé de verte, el grafo tiene una variable.",
+        "start": 1636.0,
+        "end": 1639.0
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 1639.0,
+        "end": 1641.0
+    },
+    {
+        "text": " Sí.",
+        "start": 1641.0,
+        "end": 1643.0
+    },
+    {
+        "text": " Asociada a ese...",
+        "start": 1643.0,
+        "end": 1646.0
+    },
+    {
+        "text": " ese ve artice,",
+        "start": 1646.0,
+        "end": 1648.0
+    },
+    {
+        "text": " hay una restricción,",
+        "start": 1648.0,
+        "end": 1649.0
+    },
+    {
+        "text": " que es la restricción de balance,",
+        "start": 1649.0,
+        "end": 1651.0
+    },
+    {
+        "text": " de todo lo que entra en la red,",
+        "start": 1651.0,
+        "end": 1654.0
+    },
+    {
+        "text": " en verdices de sal.",
+        "start": 1654.0,
+        "end": 1656.0
+    },
+    {
+        "text": " Esa variable, asociada a ese ve artice,",
+        "start": 1656.0,
+        "end": 1659.0
+    },
+    {
+        "text": " va a medir el grado de...",
+        "start": 1659.0,
+        "end": 1663.0
+    },
+    {
+        "text": " de penalidad,",
+        "start": 1663.0,
+        "end": 1665.0
+    },
+    {
+        "text": " no falta funciones objetivos acá.",
+        "start": 1665.0,
+        "end": 1667.0
+    },
+    {
+        "text": " El problema es que el fluco en red es nuestro único,",
+        "start": 1667.0,
+        "end": 1669.0
+    },
+    {
+        "text": " que hacemos era maximizar el fluco.",
+        "start": 1669.0,
+        "end": 1671.0
+    },
+    {
+        "text": " Pero nosotros podríamos haber agregado,",
+        "start": 1671.0,
+        "end": 1674.0
+    },
+    {
+        "text": " hay una extensión, si tienen los que les interesa en el libro,",
+        "start": 1674.0,
+        "end": 1677.0
+    },
+    {
+        "text": " que además de medir el flujo,",
+        "start": 1677.0,
+        "end": 1679.0
+    },
+    {
+        "text": " agrega una función objetiva sobre el flujo.",
+        "start": 1679.0,
+        "end": 1681.0
+    },
+    {
+        "text": " Por ejemplo, maximizar...",
+        "start": 1681.0,
+        "end": 1684.0
+    },
+    {
+        "text": " El fluco, pero el flujo,",
+        "start": 1684.0,
+        "end": 1686.0
+    },
+    {
+        "text": " onderado, con cierto valor.",
+        "start": 1686.0,
+        "end": 1687.0
+    },
+    {
+        "text": " Por ejemplo, como hicimos acá recién el problema",
+        "start": 1687.0,
+        "end": 1690.0
+    },
+    {
+        "text": " de máximo un weight independencia,",
+        "start": 1690.0,
+        "end": 1692.0
+    },
+    {
+        "text": " que hace un precio asociado del flujo",
+        "start": 1692.0,
+        "end": 1695.0
+    },
+    {
+        "text": " de cada uno de los más procesos,",
+        "start": 1695.0,
+        "end": 1697.0
+    },
+    {
+        "text": " y que yo quiera maximizar, por ejemplo,",
+        "start": 1697.0,
+        "end": 1699.0
+    },
+    {
+        "text": " la valoración total del flujo en la red.",
+        "start": 1699.0,
+        "end": 1702.0
+    },
+    {
+        "text": " No solo maximizar el flujo,",
+        "start": 1702.0,
+        "end": 1704.0
+    },
+    {
+        "text": " sino que el flujo sea...",
+        "start": 1704.0,
+        "end": 1707.0
+    },
+    {
+        "text": " Seguro que tenia infinitas soluciones del problema, ¿no?",
+        "start": 1707.0,
+        "end": 1709.0
+    },
+    {
+        "text": " Que el flujo, dependiendo por qué arrecopase,",
+        "start": 1709.0,
+        "end": 1712.0
+    },
+    {
+        "text": " tenga mayor o menor valor.",
+        "start": 1712.0,
+        "end": 1715.0
+    },
+    {
+        "text": " Eso les genera una función objetiva,",
+        "start": 1715.0,
+        "end": 1717.0
+    },
+    {
+        "text": " y le da una medida, una métrica de valoración al problema,",
+        "start": 1717.0,
+        "end": 1722.0
+    },
+    {
+        "text": " el problema de máximo flujo como ustedes lo vienen a tener.",
+        "start": 1722.0,
+        "end": 1725.0
+    },
+    {
+        "text": " Entonces, el problema dual, lo que está haciendo es indicando,",
+        "start": 1725.0,
+        "end": 1729.0
+    },
+    {
+        "text": " para cada una de esas retriciones,",
+        "start": 1729.0,
+        "end": 1731.0
+    },
+    {
+        "text": " cada uno de esos partices,",
+        "start": 1731.0,
+        "end": 1733.0
+    },
+    {
+        "text": " una medida de valoración del objetivo del problema primal.",
+        "start": 1733.0,
+        "end": 1737.0
+    },
+    {
+        "text": " Si el problema es primal en el objetivo,",
+        "start": 1737.0,
+        "end": 1741.0
+    },
+    {
+        "text": " es como una derivada.",
+        "start": 1741.0,
+        "end": 1744.0
+    },
+    {
+        "text": " Si el valor del veloz se cambia en una unidad,",
+        "start": 1744.0,
+        "end": 1749.0
+    },
+    {
+        "text": " la valoración de con una esbeberda,",
+        "start": 1749.0,
+        "end": 1751.0
+    },
+    {
+        "text": " el objetivo del problema primal va a cambiar en la medida del veloz.",
+        "start": 1751.0,
+        "end": 1756.0
+    },
+    {
+        "text": " Es una medida en relación a los dos problemas,",
+        "start": 1756.0,
+        "end": 1760.0
+    },
+    {
+        "text": " es como uno complementario del otro.",
+        "start": 1760.0,
+        "end": 1763.0
+    },
+    {
+        "text": " Asociado que aún en la retrición hay una variable",
+        "start": 1763.0,
+        "end": 1766.0
+    },
+    {
+        "text": " en el problema dual,",
+        "start": 1766.0,
+        "end": 1768.0
+    },
+    {
+        "text": " dado una variable, va a haber una restricción del tema,",
+        "start": 1768.0,
+        "end": 1771.0
+    },
+    {
+        "text": " es que hay que entrar en mucho detalle.",
+        "start": 1771.0,
+        "end": 1774.0
+    },
+    {
+        "text": " Pero es un poco la idea, son dos problemas que son complementarios,",
+        "start": 1774.0,
+        "end": 1777.0
+    },
+    {
+        "text": " estructuralmente, y qué pasa.",
+        "start": 1777.0,
+        "end": 1780.0
+    },
+    {
+        "text": " Cuando hay resoluciones fiscientes,",
+        "start": 1780.0,
+        "end": 1782.0
+    },
+    {
+        "text": " esos dos problemas tienen el mismo valor del óptimo,",
+        "start": 1782.0,
+        "end": 1786.0
+    },
+    {
+        "text": " por más que son dos dimensiones distintas.",
+        "start": 1786.0,
+        "end": 1788.0
+    },
+    {
+        "text": " Están medidos en dos dimensiones distintas,",
+        "start": 1788.0,
+        "end": 1790.0
+    },
+    {
+        "text": " uno está medido en las variables flujo,",
+        "start": 1790.0,
+        "end": 1792.0
+    },
+    {
+        "text": " y en otro en los variables asociados los partices de las retriciones,",
+        "start": 1792.0,
+        "end": 1797.0
+    },
+    {
+        "text": " son dos dominios totalmente distintas,",
+        "start": 1797.0,
+        "end": 1800.0
+    },
+    {
+        "text": " distintas cardinialidades,",
+        "start": 1800.0,
+        "end": 1801.0
+    },
+    {
+        "text": " pero en el valor del óptimo coinciden,",
+        "start": 1801.0,
+        "end": 1803.0
+    },
+    {
+        "text": " es el método primal de la íntegro de la dimpteorema",
+        "start": 1803.0,
+        "end": 1806.0
+    },
+    {
+        "text": " que se llama el tema primal dual,",
+        "start": 1806.0,
+        "end": 1808.0
+    },
+    {
+        "text": " tiene el mismo valor,",
+        "start": 1808.0,
+        "end": 1809.0
+    },
+    {
+        "text": " cuando existe soluciones fiscientes.",
+        "start": 1809.0,
+        "end": 1811.0
+    },
+    {
+        "text": " Cuando no existe soluciones fiscientes,",
+        "start": 1811.0,
+        "end": 1813.0
+    },
+    {
+        "text": " quedan la distancia entre ellos dos,",
+        "start": 1813.0,
+        "end": 1815.0
+    },
+    {
+        "text": " y ese es el humbrear clásico que se usa para los métodos de fascinación.",
+        "start": 1815.0,
+        "end": 1819.0
+    },
+    {
+        "text": " Es lo que nos da a nosotros acae esa cota,",
+        "start": 1819.0,
+        "end": 1824.0
+    },
+    {
+        "text": " bueno, yo sé que si yo estoy teniendo un problema de, por ejemplo,",
+        "start": 1824.0,
+        "end": 1827.0
+    },
+    {
+        "text": " maximizando el flujo con cierta valoración,",
+        "start": 1827.0,
+        "end": 1830.0
+    },
+    {
+        "text": " tengo un problema complementario que está minimizando,",
+        "start": 1830.0,
+        "end": 1833.0
+    },
+    {
+        "text": " que viene por el lado de arriba,",
+        "start": 1833.0,
+        "end": 1835.0
+    },
+    {
+        "text": " y que me da una cota,",
+        "start": 1835.0,
+        "end": 1837.0
+    },
+    {
+        "text": " para los problemas en el pedificio,",
+        "start": 1837.0,
+        "end": 1839.0
+    },
+    {
+        "text": " me va a quedar una cota, yo consigo cota superior,",
+        "start": 1839.0,
+        "end": 1841.0
+    },
+    {
+        "text": " consigo esos brazos,",
+        "start": 1841.0,
+        "end": 1842.0
+    },
+    {
+        "text": " si el problema llega a ser las revés,",
+        "start": 1842.0,
+        "end": 1844.0
+    },
+    {
+        "text": " si llega a ser un problema de mis mimización,",
+        "start": 1844.0,
+        "end": 1847.0
+    },
+    {
+        "text": " el problema dual va a ser de maximización",
+        "start": 1847.0,
+        "end": 1849.0
+    },
+    {
+        "text": " y me va a dar una cota inferior.",
+        "start": 1849.0,
+        "end": 1851.0
+    },
+    {
+        "text": " Pero bueno, esa es la idea, que en ellos ya viene el humbre alarmado,",
+        "start": 1854.0,
+        "end": 1857.0
+    },
+    {
+        "text": " es una esquema más general,",
+        "start": 1857.0,
+        "end": 1861.0
+    },
+    {
+        "text": " es más complejo,",
+        "start": 1861.0,
+        "end": 1863.0
+    },
+    {
+        "text": " pero el humbrear ya está pronto, como dice.",
+        "start": 1863.0,
+        "end": 1866.0
+    },
+    {
+        "text": " Mientras que, por ejemplo,",
+        "start": 1866.0,
+        "end": 1868.0
+    },
+    {
+        "text": " en el gorismo habido que vamos a ver ahora,",
+        "start": 1868.0,
+        "end": 1870.0
+    },
+    {
+        "text": " nos tenemos que armarnos a otro normal.",
+        "start": 1870.0,
+        "end": 1872.0
+    },
+    {
+        "text": " La partida propia del problema,",
+        "start": 1872.0,
+        "end": 1875.0
+    },
+    {
+        "text": " vamos a contribuir.",
+        "start": 1875.0,
+        "end": 1877.0
+    },
+    {
+        "text": " El fútbol se te va a dejar.",
+        "start": 1877.0,
+        "end": 1880.0
+    },
+    {
+        "text": " Perdón.",
+        "start": 1880.0,
+        "end": 1881.0
+    },
+    {
+        "text": " Que eso de tener, con todo ese primal y el dual,",
+        "start": 1882.0,
+        "end": 1886.0
+    },
+    {
+        "text": " ya hemos de facilitar,",
+        "start": 1886.0,
+        "end": 1887.0
+    },
+    {
+        "text": " porque como va jugando con un problema,",
+        "start": 1887.0,
+        "end": 1890.0
+    },
+    {
+        "text": " y con el otro,",
+        "start": 1890.0,
+        "end": 1891.0
+    },
+    {
+        "text": " y va tratando de acercarte a huele a cota de uno,",
+        "start": 1891.0,
+        "end": 1894.0
+    },
+    {
+        "text": " y a el otro.",
+        "start": 1894.0,
+        "end": 1896.0
+    },
+    {
+        "text": " Cuando uno está resolviendo,",
+        "start": 1896.0,
+        "end": 1900.0
+    },
+    {
+        "text": " uno está resolviendo el otro,",
+        "start": 1900.0,
+        "end": 1902.0
+    },
+    {
+        "text": " y luego lo que uno es con dos cosas paralelas.",
+        "start": 1902.0,
+        "end": 1905.0
+    },
+    {
+        "text": " Cuando los problemas tienen los medicina y se siente,",
+        "start": 1905.0,
+        "end": 1908.0
+    },
+    {
+        "text": " llegan y comparjan.",
+        "start": 1908.0,
+        "end": 1909.0
+    },
+    {
+        "text": " Uno llega por arriba, otro por abajo,",
+        "start": 1909.0,
+        "end": 1911.0
+    },
+    {
+        "text": " y se toca en el lado de la sol.",
+        "start": 1911.0,
+        "end": 1913.0
+    },
+    {
+        "text": " Con soluciones distintas,",
+        "start": 1913.0,
+        "end": 1914.0
+    },
+    {
+        "text": " está un esgdomín.",
+        "start": 1914.0,
+        "end": 1915.0
+    },
+    {
+        "text": " Cuando los problemas son en impejar,",
+        "start": 1915.0,
+        "end": 1918.0
+    },
+    {
+        "text": " que no tienen soluciones y siente,",
+        "start": 1918.0,
+        "end": 1920.0
+    },
+    {
+        "text": " va a quedar una distancia entre el óptimo de uno y el óptimo.",
+        "start": 1920.0,
+        "end": 1924.0
+    },
+    {
+        "text": " Pero como nosotros,",
+        "start": 1924.0,
+        "end": 1926.0
+    },
+    {
+        "text": " a priori no resolver esos problemas muy difícil,",
+        "start": 1926.0,
+        "end": 1931.0
+    },
+    {
+        "text": " lo que hacemos en vez de resolver esos problemas,",
+        "start": 1931.0,
+        "end": 1934.0
+    },
+    {
+        "text": " agarramos y de aplicamos la relajación,",
+        "start": 1934.0,
+        "end": 1936.0
+    },
+    {
+        "text": " la programación del INIEL,",
+        "start": 1936.0,
+        "end": 1937.0
+    },
+    {
+        "text": " al problema de actualidad.",
+        "start": 1937.0,
+        "end": 1939.0
+    },
+    {
+        "text": " Nosotros sabemos que el igual no va a dar la cuota.",
+        "start": 1939.0,
+        "end": 1941.0
+    },
+    {
+        "text": " Pero si le aplicamos la relajación del problema,",
+        "start": 1941.0,
+        "end": 1943.0
+    },
+    {
+        "text": " el INIEL, el problema de actualidad,",
+        "start": 1943.0,
+        "end": 1945.0
+    },
+    {
+        "text": " nos va a dar la cuota rápidamente,",
+        "start": 1945.0,
+        "end": 1947.0
+    },
+    {
+        "text": " porque sabemos que programación del INIEL se resuelve tiempo con el INIEL.",
+        "start": 1947.0,
+        "end": 1950.0
+    },
+    {
+        "text": " Estamos aprendiendo mucha cosa a la vez.",
+        "start": 1952.0,
+        "end": 1955.0
+    },
+    {
+        "text": " Pero la idea central es que hace todo lo mismo.",
+        "start": 1955.0,
+        "end": 1959.0
+    },
+    {
+        "text": " Los mecanismos de aproximación son muchísimos,",
+        "start": 1959.0,
+        "end": 1962.0
+    },
+    {
+        "text": " y el primal ritual,",
+        "start": 1962.0,
+        "end": 1964.0
+    },
+    {
+        "text": " lo que hace es para conseguir las cosas,",
+        "start": 1964.0,
+        "end": 1966.0
+    },
+    {
+        "text": " trabaja con programación del programa de INIEL.",
+        "start": 1966.0,
+        "end": 1969.0
+    },
+    {
+        "text": " Y es uno de los más usados,",
+        "start": 1973.0,
+        "end": 1975.0
+    },
+    {
+        "text": " del punto de vista de resolver programación.",
+        "start": 1975.0,
+        "end": 1978.0
+    },
+    {
+        "text": " Hasta acá ya nos vamos a recursos.",
+        "start": 1978.0,
+        "end": 1980.0
+    },
+    {
+        "text": " Bueno, la verdad.",
+        "start": 1982.0,
+        "end": 1984.0
+    },
+    {
+        "text": " Volvimos al volumen.",
+        "start": 1984.0,
+        "end": 1986.0
+    },
+    {
+        "text": " Vamos a ver entonces,",
+        "start": 1986.0,
+        "end": 1987.0
+    },
+    {
+        "text": " un problema,",
+        "start": 1987.0,
+        "end": 1988.0
+    },
+    {
+        "text": " un problema particular,",
+        "start": 1988.0,
+        "end": 1991.0
+    },
+    {
+        "text": " que es un problema muy clásico,",
+        "start": 1991.0,
+        "end": 1995.0
+    },
+    {
+        "text": " de pacho de scheduling,",
+        "start": 1995.0,
+        "end": 1998.0
+    },
+    {
+        "text": " de trabajos,",
+        "start": 1998.0,
+        "end": 2000.0
+    },
+    {
+        "text": " de máquinas, de tareas, de máquinas,",
+        "start": 2000.0,
+        "end": 2002.0
+    },
+    {
+        "text": " para el cual vamos a construir una egoorismo",
+        "start": 2002.0,
+        "end": 2007.0
+    },
+    {
+        "text": " de aproximación que está basada en la técnica de algoritmos abidos.",
+        "start": 2007.0,
+        "end": 2012.0
+    },
+    {
+        "text": " Y lo que vamos a construir,",
+        "start": 2012.0,
+        "end": 2015.0
+    },
+    {
+        "text": " bueno, es un brael de 50.",
+        "start": 2015.0,
+        "end": 2018.0
+    },
+    {
+        "text": " Vamos a tratar de conseguir una solución aproximada,",
+        "start": 2018.0,
+        "end": 2024.0
+    },
+    {
+        "text": " pero también una cota para decir,",
+        "start": 2024.0,
+        "end": 2027.0
+    },
+    {
+        "text": " bueno, sabemos que no estamos más lejos del óptimo,",
+        "start": 2027.0,
+        "end": 2030.0
+    },
+    {
+        "text": " que está medillado.",
+        "start": 2030.0,
+        "end": 2032.0
+    },
+    {
+        "text": " Esa es la idea central.",
+        "start": 2032.0,
+        "end": 2034.0
+    },
+    {
+        "text": " Vamos a ver, son entonces.",
+        "start": 2034.0,
+        "end": 2036.0
+    },
+    {
+        "text": " Bueno, el problema es el siguiente,",
+        "start": 2040.0,
+        "end": 2042.0
+    },
+    {
+        "text": " se llama el problema del español,",
+        "start": 2042.0,
+        "end": 2044.0
+    },
+    {
+        "text": " de balance de carga,",
+        "start": 2044.0,
+        "end": 2045.0
+    },
+    {
+        "text": " y en inglés lo conoce por lo balance inprole.",
+        "start": 2045.0,
+        "end": 2048.0
+    },
+    {
+        "text": " No vamos a ver ver el levia.",
+        "start": 2050.0,
+        "end": 2052.0
+    },
+    {
+        "text": " ¿Y qué es lo que vamos a ver?",
+        "start": 2052.0,
+        "end": 2054.0
+    },
+    {
+        "text": " Tenemos un conjunto M de máquinas,",
+        "start": 2054.0,
+        "end": 2057.0
+    },
+    {
+        "text": " hay M máquinas,",
+        "start": 2057.0,
+        "end": 2058.0
+    },
+    {
+        "text": " en mi minúscula máquina,",
+        "start": 2058.0,
+        "end": 2059.0
+    },
+    {
+        "text": " y un conjunto de trabajos.",
+        "start": 2059.0,
+        "end": 2061.0
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2061.0,
+        "end": 2062.0
+    },
+    {
+        "text": " Son estas doventidad.",
+        "start": 2062.0,
+        "end": 2064.0
+    },
+    {
+        "text": " Hay N trabajos.",
+        "start": 2064.0,
+        "end": 2066.0
+    },
+    {
+        "text": " Entonces, cada uno de los trabajos",
+        "start": 2066.0,
+        "end": 2068.0
+    },
+    {
+        "text": " se procesa en una única máquina",
+        "start": 2068.0,
+        "end": 2071.0
+    },
+    {
+        "text": " empleando cierto tiempo.",
+        "start": 2071.0,
+        "end": 2073.0
+    },
+    {
+        "text": " En este caso, le vamos a llamar",
+        "start": 2073.0,
+        "end": 2075.0
+    },
+    {
+        "text": " cada trabajo cota",
+        "start": 2075.0,
+        "end": 2077.0
+    },
+    {
+        "text": " y se emplea un tiempo de su cota.",
+        "start": 2077.0,
+        "end": 2080.0
+    },
+    {
+        "text": " Se queda una asignación.",
+        "start": 2082.0,
+        "end": 2085.0
+    },
+    {
+        "text": " Hay máquinas que hacen los trabajos,",
+        "start": 2085.0,
+        "end": 2087.0
+    },
+    {
+        "text": " todas las máquinas pueden hacer todos los trabajos.",
+        "start": 2087.0,
+        "end": 2090.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2090.0,
+        "end": 2091.0
+    },
+    {
+        "text": " Se los pone en un trabajo,",
+        "start": 2091.0,
+        "end": 2093.0
+    },
+    {
+        "text": " dado un trabajo,",
+        "start": 2093.0,
+        "end": 2095.0
+    },
+    {
+        "text": " se lo hacen en una máquina,",
+        "start": 2095.0,
+        "end": 2096.0
+    },
+    {
+        "text": " y se ejecuta totalmente en esa máquina.",
+        "start": 2096.0,
+        "end": 2099.0
+    },
+    {
+        "text": " No se fracciona en un tiempo,",
+        "start": 2099.0,
+        "end": 2101.0
+    },
+    {
+        "text": " ni nada, así es, se ejecuta.",
+        "start": 2101.0,
+        "end": 2104.0
+    },
+    {
+        "text": " Lo que se busca es asignar.",
+        "start": 2104.0,
+        "end": 2107.0
+    },
+    {
+        "text": " Cada trabajo,",
+        "start": 2107.0,
+        "end": 2109.0
+    },
+    {
+        "text": " es una máquina de tal forma",
+        "start": 2109.0,
+        "end": 2112.0
+    },
+    {
+        "text": " que la distribución",
+        "start": 2112.0,
+        "end": 2114.0
+    },
+    {
+        "text": " del tiempo total de presosamiento",
+        "start": 2114.0,
+        "end": 2116.0
+    },
+    {
+        "text": " en las máquinas,",
+        "start": 2116.0,
+        "end": 2117.0
+    },
+    {
+        "text": " si es lo más balanceada posible,",
+        "start": 2117.0,
+        "end": 2119.0
+    },
+    {
+        "text": " si es lo más uniformo.",
+        "start": 2119.0,
+        "end": 2120.0
+    },
+    {
+        "text": " Así es,",
+        "start": 2120.0,
+        "end": 2121.0
+    },
+    {
+        "text": " las máquinas que den con una carga de trabajo",
+        "start": 2121.0,
+        "end": 2123.0
+    },
+    {
+        "text": " más o menos lo mejor,",
+        "start": 2123.0,
+        "end": 2125.0
+    },
+    {
+        "text": " lo más parecido posible.",
+        "start": 2125.0,
+        "end": 2127.0
+    },
+    {
+        "text": " ¿Se entienden el problema de dudas del problema?",
+        "start": 2130.0,
+        "end": 2133.0
+    },
+    {
+        "text": " Bueno, vamos avanzando en notación.",
+        "start": 2139.0,
+        "end": 2142.0
+    },
+    {
+        "text": " El asignar una máquina",
+        "start": 2142.0,
+        "end": 2145.0
+    },
+    {
+        "text": " de trabajos a máquinas",
+        "start": 2145.0,
+        "end": 2147.0
+    },
+    {
+        "text": " nos va a interesar mantener",
+        "start": 2147.0,
+        "end": 2149.0
+    },
+    {
+        "text": " el conjunto de trabajos asignados una máquina.",
+        "start": 2149.0,
+        "end": 2151.0
+    },
+    {
+        "text": " Entonces, tenemos la máquina ahí,",
+        "start": 2151.0,
+        "end": 2153.0
+    },
+    {
+        "text": " en Adi,",
+        "start": 2153.0,
+        "end": 2155.0
+    },
+    {
+        "text": " tenemos el conjunto de trabajos asignados a la máquina,",
+        "start": 2155.0,
+        "end": 2158.0
+    },
+    {
+        "text": " y a partir de la definición,",
+        "start": 2158.0,
+        "end": 2162.0
+    },
+    {
+        "text": " del tiempo que amplía cada uno de los trabajos,",
+        "start": 2162.0,
+        "end": 2164.0
+    },
+    {
+        "text": " nosotros sabemos,",
+        "start": 2164.0,
+        "end": 2165.0
+    },
+    {
+        "text": " podemos de este calcular,",
+        "start": 2165.0,
+        "end": 2167.0
+    },
+    {
+        "text": " el trabajo total que va a realizar",
+        "start": 2167.0,
+        "end": 2169.0
+    },
+    {
+        "text": " esa máquina.",
+        "start": 2169.0,
+        "end": 2170.0
+    },
+    {
+        "text": " En este caso,",
+        "start": 2170.0,
+        "end": 2172.0
+    },
+    {
+        "text": " estamos obteniendo el tiempo.",
+        "start": 2172.0,
+        "end": 2174.0
+    },
+    {
+        "text": " La máquina trabaja",
+        "start": 2174.0,
+        "end": 2175.0
+    },
+    {
+        "text": " durante un tiempo más sucula,",
+        "start": 2175.0,
+        "end": 2177.0
+    },
+    {
+        "text": " de más sucula,",
+        "start": 2177.0,
+        "end": 2179.0
+    },
+    {
+        "text": " subir,",
+        "start": 2179.0,
+        "end": 2180.0
+    },
+    {
+        "text": " que es la suma teoría",
+        "start": 2180.0,
+        "end": 2181.0
+    },
+    {
+        "text": " de los tiempos de los trabajos",
+        "start": 2181.0,
+        "end": 2183.0
+    },
+    {
+        "text": " que se le asignar.",
+        "start": 2183.0,
+        "end": 2185.0
+    },
+    {
+        "text": " Eso se denomina la carga,",
+        "start": 2185.0,
+        "end": 2187.0
+    },
+    {
+        "text": " en la jerga del problema,",
+        "start": 2187.0,
+        "end": 2188.0
+    },
+    {
+        "text": " es decir, la carga del tiempo de la máquina.",
+        "start": 2188.0,
+        "end": 2190.0
+    },
+    {
+        "text": " Sí.",
+        "start": 2190.0,
+        "end": 2191.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 2194.0,
+        "end": 2195.0
+    },
+    {
+        "text": " la nota de la...",
+        "start": 2195.0,
+        "end": 2197.0
+    },
+    {
+        "text": " de este operador sobre la conjunto,",
+        "start": 2197.0,
+        "end": 2200.0
+    },
+    {
+        "text": " de ahora,",
+        "start": 2200.0,
+        "end": 2201.0
+    },
+    {
+        "text": " la máquina, tenemos todos los trabajos de él.",
+        "start": 2201.0,
+        "end": 2203.0
+    },
+    {
+        "text": " Bueno,",
+        "start": 2203.0,
+        "end": 2205.0
+    },
+    {
+        "text": " más notación,",
+        "start": 2205.0,
+        "end": 2207.0
+    },
+    {
+        "text": " lo que buscamos es,",
+        "start": 2207.0,
+        "end": 2209.0
+    },
+    {
+        "text": " para resolver este problema,",
+        "start": 2209.0,
+        "end": 2210.0
+    },
+    {
+        "text": " que queda lo más uniformemente posible,",
+        "start": 2210.0,
+        "end": 2212.0
+    },
+    {
+        "text": " es minimizar",
+        "start": 2212.0,
+        "end": 2213.0
+    },
+    {
+        "text": " la carga máxima de las máquinas.",
+        "start": 2213.0,
+        "end": 2216.0
+    },
+    {
+        "text": " Porque,",
+        "start": 2218.0,
+        "end": 2219.0
+    },
+    {
+        "text": " queremos,",
+        "start": 2219.0,
+        "end": 2220.0
+    },
+    {
+        "text": " la carga máxima de las máquinas,",
+        "start": 2220.0,
+        "end": 2222.0
+    },
+    {
+        "text": " cada máquina tenía carga de la tema sucula,",
+        "start": 2222.0,
+        "end": 2225.0
+    },
+    {
+        "text": " en su vida, no?",
+        "start": 2225.0,
+        "end": 2226.0
+    },
+    {
+        "text": " El máximo de todas ellas,",
+        "start": 2226.0,
+        "end": 2228.0
+    },
+    {
+        "text": " lo que se le define T.",
+        "start": 2228.0,
+        "end": 2230.0
+    },
+    {
+        "text": " Bueno, queremos el T más chico,",
+        "start": 2230.0,
+        "end": 2233.0
+    },
+    {
+        "text": " presionamos sobre este T.",
+        "start": 2233.0,
+        "end": 2234.0
+    },
+    {
+        "text": " El nuestro objetivo es,",
+        "start": 2234.0,
+        "end": 2236.0
+    },
+    {
+        "text": " que minimizar el máximo,",
+        "start": 2236.0,
+        "end": 2239.0
+    },
+    {
+        "text": " de las carga,",
+        "start": 2241.0,
+        "end": 2242.0
+    },
+    {
+        "text": " de las máquinas, ¿sabes?",
+        "start": 2242.0,
+        "end": 2244.0
+    },
+    {
+        "text": " Y, bueno,",
+        "start": 2246.0,
+        "end": 2247.0
+    },
+    {
+        "text": " esto es el sintetiza,",
+        "start": 2247.0,
+        "end": 2248.0
+    },
+    {
+        "text": " como dice el objetivo,",
+        "start": 2248.0,
+        "end": 2249.0
+    },
+    {
+        "text": " el problema.",
+        "start": 2249.0,
+        "end": 2250.0
+    },
+    {
+        "text": " A ese máximo,",
+        "start": 2251.0,
+        "end": 2252.0
+    },
+    {
+        "text": " perdón, a este T,",
+        "start": 2252.0,
+        "end": 2253.0
+    },
+    {
+        "text": " que consigamos,",
+        "start": 2253.0,
+        "end": 2254.0
+    },
+    {
+        "text": " se le define la carga Meks,",
+        "start": 2254.0,
+        "end": 2256.0
+    },
+    {
+        "text": " no tiene una traducción en la empeñora,",
+        "start": 2257.0,
+        "end": 2259.0
+    },
+    {
+        "text": " así que le vamos a seguir llamadas,",
+        "start": 2259.0,
+        "end": 2260.0
+    },
+    {
+        "text": " así que,",
+        "start": 2260.0,
+        "end": 2261.0
+    },
+    {
+        "text": " es como,",
+        "start": 2261.0,
+        "end": 2262.0
+    },
+    {
+        "text": " el alcance,",
+        "start": 2262.0,
+        "end": 2263.0
+    },
+    {
+        "text": " lo que se le logró,",
+        "start": 2263.0,
+        "end": 2265.0
+    },
+    {
+        "text": " este,",
+        "start": 2265.0,
+        "end": 2266.0
+    },
+    {
+        "text": " reducir,",
+        "start": 2266.0,
+        "end": 2267.0
+    },
+    {
+        "text": " el alcance total del tiempo de trabajo,",
+        "start": 2267.0,
+        "end": 2269.0
+    },
+    {
+        "text": " entonces,",
+        "start": 2269.0,
+        "end": 2270.0
+    },
+    {
+        "text": " Meks,",
+        "start": 2270.0,
+        "end": 2271.0
+    },
+    {
+        "text": " dudas, preguntas hasta acá.",
+        "start": 2273.0,
+        "end": 2275.0
+    },
+    {
+        "text": " ¿A qué problema se parece,",
+        "start": 2280.0,
+        "end": 2282.0
+    },
+    {
+        "text": " de los pianos disto hasta ahora?",
+        "start": 2282.0,
+        "end": 2284.0
+    },
+    {
+        "text": " No, totalmente,",
+        "start": 2286.0,
+        "end": 2288.0
+    },
+    {
+        "text": " o del Samsung,",
+        "start": 2288.0,
+        "end": 2290.0
+    },
+    {
+        "text": " se parece bastante.",
+        "start": 2290.0,
+        "end": 2292.0
+    },
+    {
+        "text": " O sea, se me ocurre,",
+        "start": 2292.0,
+        "end": 2294.0
+    },
+    {
+        "text": " es que se pueda reducir a Samsung,",
+        "start": 2294.0,
+        "end": 2296.0
+    },
+    {
+        "text": " si solo pasaba,",
+        "start": 2296.0,
+        "end": 2298.0
+    },
+    {
+        "text": " o si no,",
+        "start": 2298.0,
+        "end": 2299.0
+    },
+    {
+        "text": " si no,",
+        "start": 2299.0,
+        "end": 2300.0
+    },
+    {
+        "text": " si no,",
+        "start": 2300.0,
+        "end": 2301.0
+    },
+    {
+        "text": " si no,",
+        "start": 2301.0,
+        "end": 2302.0
+    },
+    {
+        "text": " si no,",
+        "start": 2302.0,
+        "end": 2303.0
+    },
+    {
+        "text": " si no,",
+        "start": 2303.0,
+        "end": 2304.0
+    },
+    {
+        "text": " si no,",
+        "start": 2304.0,
+        "end": 2305.0
+    },
+    {
+        "text": " si no,",
+        "start": 2305.0,
+        "end": 2306.0
+    },
+    {
+        "text": " si no,",
+        "start": 2306.0,
+        "end": 2307.0
+    },
+    {
+        "text": " si no,",
+        "start": 2307.0,
+        "end": 2308.0
+    },
+    {
+        "text": " si no,",
+        "start": 2308.0,
+        "end": 2309.0
+    },
+    {
+        "text": " si solo pasaba por números centeros,",
+        "start": 2309.0,
+        "end": 2312.0
+    },
+    {
+        "text": " porque es hacer Samsung,",
+        "start": 2312.0,
+        "end": 2314.0
+    },
+    {
+        "text": " con varias máquinas,",
+        "start": 2314.0,
+        "end": 2316.0
+    },
+    {
+        "text": " y tal,",
+        "start": 2316.0,
+        "end": 2318.0
+    },
+    {
+        "text": " el primero que tenga solución,",
+        "start": 2318.0,
+        "end": 2319.0
+    },
+    {
+        "text": " es el que te va a funcionar.",
+        "start": 2319.0,
+        "end": 2321.0
+    },
+    {
+        "text": " Es, parece, es exactamente,",
+        "start": 2321.0,
+        "end": 2323.0
+    },
+    {
+        "text": " hay una diferencia ahí, ¿no?",
+        "start": 2323.0,
+        "end": 2325.0
+    },
+    {
+        "text": " El problema de suma de subconjuntos,",
+        "start": 2325.0,
+        "end": 2330.0
+    },
+    {
+        "text": " selecciona lo cual es van a ir.",
+        "start": 2330.0,
+        "end": 2334.0
+    },
+    {
+        "text": " Acá,",
+        "start": 2334.0,
+        "end": 2335.0
+    },
+    {
+        "text": " hay que hacer todos los trabajos.",
+        "start": 2335.0,
+        "end": 2336.0
+    },
+    {
+        "text": " Esas son unas, empezando.",
+        "start": 2336.0,
+        "end": 2338.0
+    },
+    {
+        "text": " Y, en el caso de la suma de subconjuntos,",
+        "start": 2339.0,
+        "end": 2342.0
+    },
+    {
+        "text": " la cota,",
+        "start": 2342.0,
+        "end": 2343.0
+    },
+    {
+        "text": " la suma que,",
+        "start": 2343.0,
+        "end": 2346.0
+    },
+    {
+        "text": " a la cual se quiere,",
+        "start": 2346.0,
+        "end": 2348.0
+    },
+    {
+        "text": " se está cotando,",
+        "start": 2348.0,
+        "end": 2350.0
+    },
+    {
+        "text": " está dado en un dato del problema.",
+        "start": 2350.0,
+        "end": 2352.0
+    },
+    {
+        "text": " Vean que acá no,",
+        "start": 2352.0,
+        "end": 2354.0
+    },
+    {
+        "text": " acá es parte del problema,",
+        "start": 2354.0,
+        "end": 2356.0
+    },
+    {
+        "text": " es lo que tenemos que,",
+        "start": 2356.0,
+        "end": 2357.0
+    },
+    {
+        "text": " queremos obtener,",
+        "start": 2357.0,
+        "end": 2358.0
+    },
+    {
+        "text": " el valor del óptimo del problema,",
+        "start": 2358.0,
+        "end": 2361.0
+    },
+    {
+        "text": " es, bueno,",
+        "start": 2361.0,
+        "end": 2362.0
+    },
+    {
+        "text": " es la asignación de la estarea,",
+        "start": 2362.0,
+        "end": 2364.0
+    },
+    {
+        "text": " pero también el té,",
+        "start": 2364.0,
+        "end": 2366.0
+    },
+    {
+        "text": " el té que resuelvo a eso,",
+        "start": 2366.0,
+        "end": 2368.0
+    },
+    {
+        "text": " el té mínimo,",
+        "start": 2368.0,
+        "end": 2370.0
+    },
+    {
+        "text": " pero sí como dijo,",
+        "start": 2370.0,
+        "end": 2371.0
+    },
+    {
+        "text": " como Nicolás,",
+        "start": 2371.0,
+        "end": 2372.0
+    },
+    {
+        "text": " la noción es la misma,",
+        "start": 2372.0,
+        "end": 2373.0
+    },
+    {
+        "text": " está ahí, está en prista.",
+        "start": 2373.0,
+        "end": 2375.0
+    },
+    {
+        "text": " Hay muchas en vez de tener",
+        "start": 2375.0,
+        "end": 2377.0
+    },
+    {
+        "text": " una única suma de subconjuntos,",
+        "start": 2377.0,
+        "end": 2379.0
+    },
+    {
+        "text": " tenemos tantas como máquinas,",
+        "start": 2379.0,
+        "end": 2382.0
+    },
+    {
+        "text": " pero todos los trabajos se tienen que hacer.",
+        "start": 2382.0,
+        "end": 2385.0
+    },
+    {
+        "text": " Todo lo trabajo para van,",
+        "start": 2385.0,
+        "end": 2387.0
+    },
+    {
+        "text": " todo se tiene que hacer.",
+        "start": 2387.0,
+        "end": 2389.0
+    },
+    {
+        "text": " Bueno,",
+        "start": 2392.0,
+        "end": 2393.0
+    },
+    {
+        "text": " es un problema en EP1,",
+        "start": 2393.0,
+        "end": 2395.0
+    },
+    {
+        "text": " en Pijar,",
+        "start": 2395.0,
+        "end": 2397.0
+    },
+    {
+        "text": " ya tiene las nociones del sunset,",
+        "start": 2397.0,
+        "end": 2401.0
+    },
+    {
+        "text": " la misma componente.",
+        "start": 2401.0,
+        "end": 2403.0
+    },
+    {
+        "text": " Y bueno, ¿cómo se podría resolver?",
+        "start": 2403.0,
+        "end": 2405.0
+    },
+    {
+        "text": " ¿Cómo lo podríamos?",
+        "start": 2405.0,
+        "end": 2407.0
+    },
+    {
+        "text": " ¿Qué se podría hacer para enfrentar este problema?",
+        "start": 2407.0,
+        "end": 2412.0
+    },
+    {
+        "text": " No sé, ¿cómo es un RD flujo?",
+        "start": 2412.0,
+        "end": 2416.0
+    },
+    {
+        "text": " Sí, también.",
+        "start": 2416.0,
+        "end": 2418.0
+    },
+    {
+        "text": " ¿Cómo se podría hacer ahí?",
+        "start": 2418.0,
+        "end": 2420.0
+    },
+    {
+        "text": " Ahora, ¿y allí por lo menos?",
+        "start": 2420.0,
+        "end": 2421.0
+    },
+    {
+        "text": " Yo le he pensado como,",
+        "start": 2421.0,
+        "end": 2423.0
+    },
+    {
+        "text": " o sea, de tus tors,",
+        "start": 2423.0,
+        "end": 2425.0
+    },
+    {
+        "text": " sale en todos los trabajos.",
+        "start": 2425.0,
+        "end": 2429.0
+    },
+    {
+        "text": " Entonces ahí llegan a un nodo auxiliar,",
+        "start": 2429.0,
+        "end": 2433.0
+    },
+    {
+        "text": " y cada uno de esos nodos auxiliares",
+        "start": 2433.0,
+        "end": 2435.0
+    },
+    {
+        "text": " puede hacer un bipartito entre todas las máquinas,",
+        "start": 2435.0,
+        "end": 2440.0
+    },
+    {
+        "text": " y ahí, ¿y lo que podrías hacer es,",
+        "start": 2440.0,
+        "end": 2444.0
+    },
+    {
+        "text": " bueno, fijar una cota de salida,",
+        "start": 2444.0,
+        "end": 2447.0
+    },
+    {
+        "text": " y esa cota puede decir probando con varias cotas",
+        "start": 2447.0,
+        "end": 2450.0
+    },
+    {
+        "text": " hasta que encuentres una que tiene solución.",
+        "start": 2450.0,
+        "end": 2453.0
+    },
+    {
+        "text": " Claro, está.",
+        "start": 2453.0,
+        "end": 2455.0
+    },
+    {
+        "text": " El hielo, lo planteo, ni con las,",
+        "start": 2455.0,
+        "end": 2457.0
+    },
+    {
+        "text": " si no, tenemos trabajos por acá.",
+        "start": 2457.0,
+        "end": 2459.0
+    },
+    {
+        "text": " Vamos a plantearlo para las líneas.",
+        "start": 2462.0,
+        "end": 2465.0
+    },
+    {
+        "text": " ¿Qué contes?",
+        "start": 2465.0,
+        "end": 2466.0
+    },
+    {
+        "text": " Y con un punto de trabajos.",
+        "start": 2466.0,
+        "end": 2468.0
+    },
+    {
+        "text": " Yo se los planteo en esta división.",
+        "start": 2471.0,
+        "end": 2473.0
+    },
+    {
+        "text": " Como dijo el hielo bipartito,",
+        "start": 2474.0,
+        "end": 2476.0
+    },
+    {
+        "text": " tengo acá los partidos y se le trabajos.",
+        "start": 2476.0,
+        "end": 2479.0
+    },
+    {
+        "text": " Y acá tengo las máquinas.",
+        "start": 2479.0,
+        "end": 2481.0
+    },
+    {
+        "text": " Una máquina acá.",
+        "start": 2482.0,
+        "end": 2483.0
+    },
+    {
+        "text": " O sea, tenemos dos máquinas.",
+        "start": 2483.0,
+        "end": 2486.0
+    },
+    {
+        "text": " Y me planteo...",
+        "start": 2486.0,
+        "end": 2488.0
+    },
+    {
+        "text": " Uno, dos fuentes.",
+        "start": 2491.0,
+        "end": 2492.0
+    },
+    {
+        "text": " Y ahí, ¿y qué?",
+        "start": 2492.0,
+        "end": 2493.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2493.0,
+        "end": 2494.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2494.0,
+        "end": 2495.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2495.0,
+        "end": 2496.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2496.0,
+        "end": 2497.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2497.0,
+        "end": 2498.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2498.0,
+        "end": 2499.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2499.0,
+        "end": 2500.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2500.0,
+        "end": 2501.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2501.0,
+        "end": 2502.0
+    },
+    {
+        "text": "意amente,",
+        "start": 2502.0,
+        "end": 2504.0
+    },
+    {
+        "text": "لك km fotas de heightened是什麼,",
+        "start": 2504.0,
+        "end": 2508.0
+    },
+    {
+        "text": " ¿Y qué?",
+        "start": 2508.0,
+        "end": 2510.0
+    },
+    {
+        "text": " ¿De originadores de la medida que tiene con una gran contradicción o",
+        "start": 2510.0,
+        "end": 2513.84
+    },
+    {
+        "text": " mala gente?",
+        "start": 2513.84,
+        "end": 2516.0
+    },
+    {
+        "text": " true sense.",
+        "start": 2518.0,
+        "end": 2519.0
+    },
+    {
+        "text": " Uno sumidero,",
+        "start": 2521.0,
+        "end": 2524.0
+    },
+    {
+        "text": " las capacidades aqui cup egal se ll来,",
+        "start": 2525.0,
+        "end": 2527.0
+    },
+    {
+        "text": " ¿Qué hay acá?",
+        "start": 2527.0,
+        "end": 2529.0
+    },
+    {
+        "text": " Este...",
+        "start": 2533.0,
+        "end": 2534.0
+    },
+    {
+        "text": " Sabemos que va a ser...",
+        "start": 2535.0,
+        "end": 2537.0
+    },
+    {
+        "text": " Después que es los terresultos de su I, ¿no?",
+        "start": 2538.0,
+        "end": 2541.0
+    },
+    {
+        "text": " Pero al primero, ¿y cómo podemos saberlo? ¿Qué es el que pasé de la ley? Vamos a poner.",
+        "start": 2543.0,
+        "end": 2547.0
+    },
+    {
+        "text": " ¿No le puedo poner capacidad de muy grandes como para que se te atrasora del flujo?",
+        "start": 2558.0,
+        "end": 2566.0
+    },
+    {
+        "text": " Podemos ponerle la suma de todos los terresultos.",
+        "start": 2567.0,
+        "end": 2571.0
+    },
+    {
+        "text": " Por ejemplo...",
+        "start": 2573.0,
+        "end": 2574.0
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2577.0,
+        "end": 2578.0
+    },
+    {
+        "text": " ¿Qué más?",
+        "start": 2581.0,
+        "end": 2582.0
+    },
+    {
+        "text": " Yo soy...",
+        "start": 2583.0,
+        "end": 2584.0
+    },
+    {
+        "text": " Bueno, empecemos, o sea, más óptimos y más tipos desde donde no hay solución de abajo para arriba hasta que haya solución y hay encontras el mínimo.",
+        "start": 2584.0,
+        "end": 2595.0
+    },
+    {
+        "text": " Porque ahí tienes una solución que sería, por ejemplo, a esta máquina, dale todo el trabajo y capaz es más costoso ir para...",
+        "start": 2595.0,
+        "end": 2605.0
+    },
+    {
+        "text": " De arriba para abajo.",
+        "start": 2606.0,
+        "end": 2608.0
+    },
+    {
+        "text": " Ahí está.",
+        "start": 2609.0,
+        "end": 2611.0
+    },
+    {
+        "text": " Bueno, eso nos vamos a concentrar de ahora adelante. Bueno, ¿cuál es...",
+        "start": 2615.0,
+        "end": 2620.0
+    },
+    {
+        "text": " ¿Cómo vamos a hacerlo? Pero bueno, es una foto de hacer ese.",
+        "start": 2621.0,
+        "end": 2624.0
+    },
+    {
+        "text": " El algoritmo ha habido en sí este lo que va a hacer va a ser algo parecido, aquí se usaramos esto.",
+        "start": 2625.0,
+        "end": 2631.0
+    },
+    {
+        "text": " Pero es un algoritmo ha habido, no? Usan Max Flow.",
+        "start": 2632.0,
+        "end": 2634.0
+    },
+    {
+        "text": " Max, el Clujo Max.",
+        "start": 2635.0,
+        "end": 2637.0
+    },
+    {
+        "text": " Pero bueno, esta podría estar sería otra técnica aproximada, obviamente.",
+        "start": 2638.0,
+        "end": 2644.0
+    },
+    {
+        "text": " Lo ideal ahí se llama conseguir el TSN en minimiza, el TSTR, pero a priori no lo sabemos.",
+        "start": 2645.0,
+        "end": 2652.0
+    },
+    {
+        "text": " Y se llama así.",
+        "start": 2652.0,
+        "end": 2653.0
+    },
+    {
+        "text": " Y se llama desafío que un picante.",
+        "start": 2653.0,
+        "end": 2655.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 2659.0,
+        "end": 2660.0
+    },
+    {
+        "text": " Estas son una opción.",
+        "start": 2669.0,
+        "end": 2678.0
+    },
+    {
+        "text": " La otra opción es pensarnos en ahora, ¿cómo vamos a pensar en un algoritmo ha habido?",
+        "start": 2680.0,
+        "end": 2686.0
+    },
+    {
+        "text": " ¿Un posible algoritmo ha habido?",
+        "start": 2687.0,
+        "end": 2690.0
+    },
+    {
+        "text": " Imagínense que tenemos esto como las máquinas.",
+        "start": 2692.0,
+        "end": 2696.0
+    },
+    {
+        "text": " Yo tengo representada las preguntas máquinas acá.",
+        "start": 2699.0,
+        "end": 2701.0
+    },
+    {
+        "text": " Por lo menos que más del gólico ha habido.",
+        "start": 2702.0,
+        "end": 2704.0
+    },
+    {
+        "text": " Yo tengo las máquinas aquí.",
+        "start": 2706.0,
+        "end": 2707.0
+    },
+    {
+        "text": " Una, dos, tres.",
+        "start": 2709.0,
+        "end": 2711.0
+    },
+    {
+        "text": " Y voy la pilando los trabajos acá.",
+        "start": 2714.0,
+        "end": 2716.0
+    },
+    {
+        "text": " ¿Qué es la otra opción que podemos hacer?",
+        "start": 2717.0,
+        "end": 2719.0
+    },
+    {
+        "text": " Podría ser metiendo los trabajos de forma que si vos vas a meter por el",
+        "start": 2732.0,
+        "end": 2740.0
+    },
+    {
+        "text": " trabajo, que te ves a cinco, te fijas en cada una de las máquinas.",
+        "start": 2741.0,
+        "end": 2744.0
+    },
+    {
+        "text": " Si yo me tienes el trabajo, ¿cuál es la que me va a minimizar el si querés el TSTS, el máximo S de las cargas?",
+        "start": 2745.0,
+        "end": 2755.0
+    },
+    {
+        "text": " En este paso.",
+        "start": 2756.0,
+        "end": 2757.0
+    },
+    {
+        "text": " O sea, una posibilidad como dice, ahí, es agarrar la máquina que tenga en ese momento la carga más,",
+        "start": 2758.0,
+        "end": 2764.0
+    },
+    {
+        "text": " la carga en cada dos de cero, ¿no?",
+        "start": 2765.0,
+        "end": 2766.0
+    },
+    {
+        "text": " Podría ser que tiene cierta carga más bien, ya están con ciertos trabajos, están con ciertos niveles en acá.",
+        "start": 2767.0,
+        "end": 2771.0
+    },
+    {
+        "text": " Ya están hasta acá, este es el tiempo.",
+        "start": 2776.0,
+        "end": 2778.0
+    },
+    {
+        "text": " En este caso, yo voy a agarrar la máquina tres porque es la que está disponible como dice, más próxima.",
+        "start": 2783.0,
+        "end": 2789.0
+    },
+    {
+        "text": " Ya agarró el trabajo y con el próximo trabajo, tenen los trabajos y me toca.",
+        "start": 2789.0,
+        "end": 2793.0
+    },
+    {
+        "text": " Pongo el primero acá, esta es una cosa que estaba en las máquinas.",
+        "start": 2794.0,
+        "end": 2799.0
+    },
+    {
+        "text": " El segundo lo puedo poner acá, no? Y en el segundo trabajo.",
+        "start": 2801.0,
+        "end": 2805.0
+    },
+    {
+        "text": " El tercero lo puedo poner acá, dependientemente de cuál es la cosa.",
+        "start": 2807.0,
+        "end": 2810.0
+    },
+    {
+        "text": " Este es un algoritmo de video bien directo.",
+        "start": 2811.0,
+        "end": 2813.0
+    },
+    {
+        "text": " La máquina que esté agarrar un trabajo, ¿víro? ¿Cuál es la máquina que está disponible?",
+        "start": 2814.0,
+        "end": 2818.0
+    },
+    {
+        "text": " ¿Vas disponible más próxima? ¿Vas todo un celo así? ¿No es?",
+        "start": 2819.0,
+        "end": 2821.0
+    },
+    {
+        "text": " Este es el...",
+        "start": 2824.0,
+        "end": 2825.0
+    },
+    {
+        "text": " Tengo...",
+        "start": 2827.0,
+        "end": 2828.0
+    },
+    {
+        "text": " Puede ser que ordenando el tamaño de trabajo, se obtenga algún tipo de beneficio a la hora de resolverlo abiermente.",
+        "start": 2830.0,
+        "end": 2837.0
+    },
+    {
+        "text": " Pero no se me ocurre, pero...",
+        "start": 2840.0,
+        "end": 2842.0
+    },
+    {
+        "text": " No, pero imagínate que es difícil agarrar la máquina.",
+        "start": 2843.0,
+        "end": 2845.0
+    },
+    {
+        "text": " El problema es...",
+        "start": 2849.0,
+        "end": 2850.0
+    },
+    {
+        "text": " Es el problema de...",
+        "start": 2851.0,
+        "end": 2852.0
+    },
+    {
+        "text": " Se acastaran la naturaleza del sub-set suño.",
+        "start": 2853.0,
+        "end": 2856.0
+    },
+    {
+        "text": " Claro, quiero ir en M-Machines.",
+        "start": 2857.0,
+        "end": 2861.0
+    },
+    {
+        "text": " Es altamente combinatoria de...",
+        "start": 2863.0,
+        "end": 2865.0
+    },
+    {
+        "text": " Podría ser el comercioso, pero...",
+        "start": 2866.0,
+        "end": 2868.0
+    },
+    {
+        "text": " Pero bueno, un algoritmo de video bien sencillo en este, ¿no?",
+        "start": 2869.0,
+        "end": 2871.0
+    },
+    {
+        "text": " Agarrar la máquina que está disponible, agarrar los trabajos de uno.",
+        "start": 2872.0,
+        "end": 2875.0
+    },
+    {
+        "text": " Pero...",
+        "start": 2876.0,
+        "end": 2877.0
+    },
+    {
+        "text": " En cualquier orden,",
+        "start": 2878.0,
+        "end": 2879.0
+    },
+    {
+        "text": " y lo hago, lo hago el poniente.",
+        "start": 2880.0,
+        "end": 2882.0
+    },
+    {
+        "text": " Esto es lo más simple que hay.",
+        "start": 2884.0,
+        "end": 2886.0
+    },
+    {
+        "text": " Bueno, vamos por él, esa es la idea.",
+        "start": 2888.0,
+        "end": 2890.0
+    },
+    {
+        "text": " Tenemos un algoritmo de video.",
+        "start": 2891.0,
+        "end": 2892.0
+    },
+    {
+        "text": " Vamos a...",
+        "start": 2893.0,
+        "end": 2894.0
+    },
+    {
+        "text": " Los que dejaron lo...",
+        "start": 2894.0,
+        "end": 2895.0
+    },
+    {
+        "text": " Vamos a ver, vamos a ver, vamos a ver, seguimos...",
+        "start": 2896.0,
+        "end": 2897.0
+    },
+    {
+        "text": " Bueno, hacemos eso.",
+        "start": 2899.0,
+        "end": 2901.0
+    },
+    {
+        "text": " El algoritmo es así en los trabajos, en cualquier orden,",
+        "start": 2901.0,
+        "end": 2903.0
+    },
+    {
+        "text": " y es así en la máquina que tiene la menor carga disponible en ese momento.",
+        "start": 2903.0,
+        "end": 2906.0
+    },
+    {
+        "text": " Entonces, este está el bosquejo de video.",
+        "start": 2907.0,
+        "end": 2910.0
+    },
+    {
+        "text": " Lo que se hace inicialmente, iniciamos la carga y la asignación.",
+        "start": 2911.0,
+        "end": 2915.0
+    },
+    {
+        "text": " O sea, para cada máquina,",
+        "start": 2916.0,
+        "end": 2918.0
+    },
+    {
+        "text": " este... el tiempo...",
+        "start": 2919.0,
+        "end": 2920.0
+    },
+    {
+        "text": " Hasignado y ya se tiene insalizan cero,",
+        "start": 2922.0,
+        "end": 2925.0
+    },
+    {
+        "text": " y el conjunto de trabajos de asignado es vacío.",
+        "start": 2926.0,
+        "end": 2928.0
+    },
+    {
+        "text": " Y todo así.",
+        "start": 2929.0,
+        "end": 2930.0
+    },
+    {
+        "text": " Entonces, agarramos luego para cada trabajo.",
+        "start": 2931.0,
+        "end": 2933.0
+    },
+    {
+        "text": " Determinamos la máquina con carga mínima.",
+        "start": 2935.0,
+        "end": 2937.0
+    },
+    {
+        "text": " O sea, que es el mínimo, es el argumento del mínimo.",
+        "start": 2938.0,
+        "end": 2941.0
+    },
+    {
+        "text": " O sea, agarramos los minimizamos esto, y nos quedamos con el índice c.",
+        "start": 2942.0,
+        "end": 2945.0
+    },
+    {
+        "text": " El índice c.",
+        "start": 2946.0,
+        "end": 2947.0
+    },
+    {
+        "text": " El minimice esto, le denominamos y.",
+        "start": 2947.0,
+        "end": 2949.0
+    },
+    {
+        "text": " Eso es la...",
+        "start": 2950.0,
+        "end": 2951.0
+    },
+    {
+        "text": " Camos en la máquina.",
+        "start": 2951.0,
+        "end": 2952.0
+    },
+    {
+        "text": " Le asignamos el trabajo con toda la máquina.",
+        "start": 2953.0,
+        "end": 2955.0
+    },
+    {
+        "text": " O sea, lo agregamos en su conjunto, con el formiente.",
+        "start": 2956.0,
+        "end": 2959.0
+    },
+    {
+        "text": " El formizamos el conjunto.",
+        "start": 2960.0,
+        "end": 2961.0
+    },
+    {
+        "text": " Y lo que se hace es actualizar la carga del maquice,",
+        "start": 2962.0,
+        "end": 2965.0
+    },
+    {
+        "text": " el tiempo total que lleva a ella.",
+        "start": 2966.0,
+        "end": 2967.0
+    },
+    {
+        "text": " Le incrementamos en el tiempo del maquice.",
+        "start": 2968.0,
+        "end": 2971.0
+    },
+    {
+        "text": " Bueno, esto se intera.",
+        "start": 2973.0,
+        "end": 2974.0
+    },
+    {
+        "text": " Se consumen todos los trabajos.",
+        "start": 2975.0,
+        "end": 2976.0
+    },
+    {
+        "text": " Y bueno, se retorna el maquice,",
+        "start": 2977.0,
+        "end": 2979.0
+    },
+    {
+        "text": " es lo definitivo,",
+        "start": 2980.0,
+        "end": 2983.0
+    },
+    {
+        "text": " y la asignación de trabajos.",
+        "start": 2983.0,
+        "end": 2985.0
+    },
+    {
+        "text": " El maquice, el maquice, va a ser, a conocer el tiempo,",
+        "start": 2986.0,
+        "end": 2988.0
+    },
+    {
+        "text": " que yo va a ser el mínimo tiempo que se va a hacer todo lo trabajo.",
+        "start": 2989.0,
+        "end": 2992.0
+    },
+    {
+        "text": " Bueno, ¿qué va a hacer?",
+        "start": 2993.0,
+        "end": 2994.0
+    },
+    {
+        "text": " El máximo de esta.",
+        "start": 2995.0,
+        "end": 2997.0
+    },
+    {
+        "text": " Este va a ser el maquice.",
+        "start": 2998.0,
+        "end": 2999.0
+    },
+    {
+        "text": " El máximo de todos los trabajos va a ser el maquice.",
+        "start": 3001.0,
+        "end": 3003.0
+    },
+    {
+        "text": " Y bueno, retornamos el conjunto de las asignaciones.",
+        "start": 3007.0,
+        "end": 3009.0
+    },
+    {
+        "text": " Cuando dije el mismo, caminquivo que no.",
+        "start": 3010.0,
+        "end": 3012.0
+    },
+    {
+        "text": " O sea, el algoritmo a vídeo de este, lo que nos da es un sí máximo.",
+        "start": 3012.0,
+        "end": 3015.0
+    },
+    {
+        "text": " No nos da la solución, obviamente.",
+        "start": 3016.0,
+        "end": 3017.0
+    },
+    {
+        "text": " No garantiza la asignación de la misma.",
+        "start": 3018.0,
+        "end": 3019.0
+    },
+    {
+        "text": " Es importante, va a...",
+        "start": 3021.0,
+        "end": 3022.0
+    },
+    {
+        "text": " Hacemos un ejemplo para va a va a va.",
+        "start": 3023.0,
+        "end": 3025.0
+    },
+    {
+        "text": " Y pongan... ahí tenemos...",
+        "start": 3026.0,
+        "end": 3027.0
+    },
+    {
+        "text": " Hacemos este en el que tenemos.",
+        "start": 3037.0,
+        "end": 3038.0
+    },
+    {
+        "text": " Entonces, ¿qué va a hacer?",
+        "start": 3043.0,
+        "end": 3044.0
+    },
+    {
+        "text": " Estos sentados, por ejemplo.",
+        "start": 3046.0,
+        "end": 3048.0
+    },
+    {
+        "text": " En dos maquinas.",
+        "start": 3051.0,
+        "end": 3053.0
+    },
+    {
+        "text": " Me vale dos.",
+        "start": 3054.0,
+        "end": 3056.0
+    },
+    {
+        "text": " Quatro trabajos.",
+        "start": 3057.0,
+        "end": 3058.0
+    },
+    {
+        "text": " Y los tiempos de los trabajos supondan que son...",
+        "start": 3059.0,
+        "end": 3061.0
+    },
+    {
+        "text": " ...tenen esta en este vector.",
+        "start": 3062.0,
+        "end": 3063.0
+    },
+    {
+        "text": " Uno, dos, seis y tres.",
+        "start": 3064.0,
+        "end": 3066.0
+    },
+    {
+        "text": " Ese es el orden.",
+        "start": 3067.0,
+        "end": 3068.0
+    },
+    {
+        "text": " El tiempo de trabajo, uno, el de uno, el de dos y dos, el de tres, el de seis y el de cuatro, tres.",
+        "start": 3069.0,
+        "end": 3076.0
+    },
+    {
+        "text": " Entonces, el algoritmo a vídeo de la solución del algoritmo a vídeo.",
+        "start": 3079.0,
+        "end": 3085.0
+    },
+    {
+        "text": " ¿Qué va a producir?",
+        "start": 3088.0,
+        "end": 3089.0
+    },
+    {
+        "text": " Tengo las maquinas acá.",
+        "start": 3091.0,
+        "end": 3092.0
+    },
+    {
+        "text": " Vamos para acá abajo.",
+        "start": 3094.0,
+        "end": 3095.0
+    },
+    {
+        "text": " Los puntos de maquina de uno y la dos.",
+        "start": 3096.0,
+        "end": 3098.0
+    },
+    {
+        "text": " Los pongan acá en la base.",
+        "start": 3100.0,
+        "end": 3102.0
+    },
+    {
+        "text": " Los apino como un juego de Tetris, los vamos tirando desde arriba para abajo.",
+        "start": 3103.0,
+        "end": 3107.0
+    },
+    {
+        "text": " O sea, el cambio va a quedar la asignación de la máquina de uno y acá los del asignador de maquina dos.",
+        "start": 3108.0,
+        "end": 3113.0
+    },
+    {
+        "text": " Entonces, vean, los trabajos vienen en este orden.",
+        "start": 3114.0,
+        "end": 3116.0
+    },
+    {
+        "text": " El primer trabajo lleva...",
+        "start": 3118.0,
+        "end": 3119.0
+    },
+    {
+        "text": " ...una unidad de tiempo.",
+        "start": 3121.0,
+        "end": 3122.0
+    },
+    {
+        "text": " Entonces, lo pongo en la máquina de esta cara.",
+        "start": 3122.0,
+        "end": 3124.0
+    },
+    {
+        "text": " Uno, mira.",
+        "start": 3125.0,
+        "end": 3126.0
+    },
+    {
+        "text": " Viene el segundo trabajo.",
+        "start": 3128.0,
+        "end": 3130.0
+    },
+    {
+        "text": " ¿Cuál es la máquina que tiene menos tiempo de carga? El más pequeño, esto lo pongo acá.",
+        "start": 3131.0,
+        "end": 3137.0
+    },
+    {
+        "text": " Entonces, el segundo trabajo tiene dos unidades de las representas.",
+        "start": 3138.0,
+        "end": 3140.0
+    },
+    {
+        "text": " Con chucultos.",
+        "start": 3141.0,
+        "end": 3142.0
+    },
+    {
+        "text": " Pusimos este, o la ponemos este.",
+        "start": 3143.0,
+        "end": 3145.0
+    },
+    {
+        "text": " Ahora viene el trabajo.",
+        "start": 3146.0,
+        "end": 3147.0
+    },
+    {
+        "text": " El tercer trabajo que tiene seis unidades de tiempo.",
+        "start": 3148.0,
+        "end": 3150.0
+    },
+    {
+        "text": " Y acá aquí.",
+        "start": 3151.0,
+        "end": 3152.0
+    },
+    {
+        "text": " Lo pongo en la máquina que tiene menor, esta próxima termina, son seis.",
+        "start": 3155.0,
+        "end": 3160.0
+    },
+    {
+        "text": " O sea, acá he quedado el uno y acá he quedado el que es seis.",
+        "start": 3160.0,
+        "end": 3166.0
+    },
+    {
+        "text": " ¿Espera el dedos?",
+        "start": 3167.0,
+        "end": 3168.0
+    },
+    {
+        "text": " Bueno, el cuarto trabajo va a estar máquina.",
+        "start": 3171.0,
+        "end": 3174.0
+    },
+    {
+        "text": " O sea, que tiene tres más acá.",
+        "start": 3175.0,
+        "end": 3176.0
+    },
+    {
+        "text": " Bueno, no tiene tres unidades, no. No, no tiene para que nos queden proporciones.",
+        "start": 3191.0,
+        "end": 3193.0
+    },
+    {
+        "text": " Bueno, ¿cuál es el makespan de esta manera de la corima de audio?",
+        "start": 3194.0,
+        "end": 3201.0
+    },
+    {
+        "text": " Seis, en no, siete.",
+        "start": 3211.0,
+        "end": 3213.0
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 3214.0,
+        "end": 3215.0
+    },
+    {
+        "text": " Porque la máquina que está más cargada es la uno, que tiene trabajo uno más seis.",
+        "start": 3216.0,
+        "end": 3221.0
+    },
+    {
+        "text": " Muy bien, exactamente, ¿sabes? Está la que tiene, está la que llegó a carrillo, la máxima de más cargada.",
+        "start": 3223.0,
+        "end": 3228.0
+    },
+    {
+        "text": " ¿Qué es la que tiene el máximo? Esta otra tiene cinco.",
+        "start": 3230.0,
+        "end": 3233.0
+    },
+    {
+        "text": " Bueno, es esta la solución óptima.",
+        "start": 3234.0,
+        "end": 3237.0
+    },
+    {
+        "text": " ¿El problema?",
+        "start": 3240.0,
+        "end": 3241.0
+    },
+    {
+        "text": " Si le tiras a la máquina uno, el trabajo de seis y a la máquina dos, le tiras los otros trabajos,",
+        "start": 3246.0,
+        "end": 3254.0
+    },
+    {
+        "text": " te quedan mados con el mismo beso y te quedan los dos makespan, te quedan makespan de seis.",
+        "start": 3255.0,
+        "end": 3260.0
+    },
+    {
+        "text": " Muy bien, correcto. ¿Qué ha balenciado ahí?",
+        "start": 3261.0,
+        "end": 3263.0
+    },
+    {
+        "text": " No es lo que tío. Entonces, vamos a plantar esta, la solución óptima.",
+        "start": 3264.0,
+        "end": 3266.0
+    },
+    {
+        "text": " La solución óptima, como te dice, corresponde a la solución de poco te prima acá,",
+        "start": 3267.0,
+        "end": 3271.0
+    },
+    {
+        "text": " de que los tiempos mengan como vacía, si me cocañero, el ser primero después es el uno del día tres por cuatro.",
+        "start": 3271.0,
+        "end": 3279.0
+    },
+    {
+        "text": " Entonces, armamos acá a esa, m, las máquinas, entonces bueno, vean bien, el primero el seis, entonces, el trans seis acá.",
+        "start": 3281.0,
+        "end": 3293.0
+    },
+    {
+        "text": " El de seis, esta vez no dibujo la unidad, así que vamos a hacer.",
+        "start": 3296.0,
+        "end": 3300.0
+    },
+    {
+        "text": " Luego viene el de uno, vaca, o viene de dos, vaca, porque sigue siendo la máquina más...",
+        "start": 3302.0,
+        "end": 3315.0
+    },
+    {
+        "text": " Con tiempo disponible, luego viene de tres y va de nuevo la máquina, porque sigue la máquina.",
+        "start": 3317.0,
+        "end": 3323.0
+    },
+    {
+        "text": " Bueno, vean que el makespan es seis y este es la solución óptima.",
+        "start": 3324.0,
+        "end": 3335.0
+    },
+    {
+        "text": " O sea, no va a hablar mejor que esto, porque es el... cada una de ellas tiene el mismo valor que el promenso.",
+        "start": 3338.0,
+        "end": 3347.0
+    },
+    {
+        "text": " El promenso, el promenso, el promenso, el promenso, el promenso de la dos.",
+        "start": 3348.0,
+        "end": 3353.0
+    },
+    {
+        "text": " Bueno, vean eso, o sea, nuestro algoritmo ha habido de pende de cómo se venga el orden acá, puede que justo le envoque o no en la solución óptima.",
+        "start": 3354.0,
+        "end": 3362.0
+    },
+    {
+        "text": " El tema es cuál lejos va a estar de ella, entonces como que tenemos un orden acá.",
+        "start": 3365.0,
+        "end": 3371.0
+    },
+    {
+        "text": " Nosotros estamos, si nos representamos acá el teno,",
+        "start": 3371.0,
+        "end": 3374.0
+    },
+    {
+        "text": " este es el makespan. La solución óptima va a tener cierto valor, hasta por acá, obviamente no va a haber nada menor que ella.",
+        "start": 3378.0,
+        "end": 3388.0
+    },
+    {
+        "text": " Las posibilidades de nuestro algoritmo nos van a dar por acá.",
+        "start": 3388.0,
+        "end": 3393.0
+    },
+    {
+        "text": " O sea, este, cómo ponen este... suprar uno, esto, o sea, cada uno de ellos, cada uno.",
+        "start": 3393.0,
+        "end": 3401.0
+    },
+    {
+        "text": " nuestro algoritmo va a tener valores por acá, no? Tengo uno.",
+        "start": 3402.0,
+        "end": 3406.0
+    },
+    {
+        "text": " La gran pregunta que nos hacemos, bueno, ¿cuál lejos va a estar de uno de este este mismo?",
+        "start": 3406.0,
+        "end": 3411.0
+    },
+    {
+        "text": " Esa es la solución. ¿Cuál vamos a establecer en una costa? Nosotros, ¿cuál lejos va a estar de uno de este este mismo?",
+        "start": 3411.0,
+        "end": 3417.0
+    },
+    {
+        "text": " O sea, una medida relativa, es lo que nos falta, no? Tenemos el algoritmo, consigue soluciones.",
+        "start": 3417.0,
+        "end": 3426.0
+    },
+    {
+        "text": " Bueno, a tener cierto valor, bueno, pero nos interesa saber cuál lejos va a estar.",
+        "start": 3427.0,
+        "end": 3434.0
+    },
+    {
+        "text": " A través de eso, bueno, miren para tener pasar a tener una idea.",
+        "start": 3436.0,
+        "end": 3441.0
+    },
+    {
+        "text": " Vienen la solución óptima de esta, la característica que tiene, eso es el emisión inmediórapido.",
+        "start": 3441.0,
+        "end": 3445.0
+    },
+    {
+        "text": " Tiene la característica de que si yo he humido el tiempo total de todos estos trabajos, es 12, no?",
+        "start": 3445.0,
+        "end": 3453.0
+    },
+    {
+        "text": " Bueno, como son dos máquinas, la solución esta, la mejor solución tiene como esa costa inferior, ¿no?",
+        "start": 3457.0,
+        "end": 3468.0
+    },
+    {
+        "text": " Que es el promedio del reasumato de todos los trabajos.",
+        "start": 3468.0,
+        "end": 3471.0
+    },
+    {
+        "text": " Bueno, vamos a ir atrás de ese tipo de cosas. ¿Dúbas preguntas acá?",
+        "start": 3472.0,
+        "end": 3477.0
+    },
+    {
+        "text": " ¿No? ¿Por lo? ¿Seguimos?",
+        "start": 3481.0,
+        "end": 3484.0
+    },
+    {
+        "text": " Los famíces me he ocurrió que se podía hacer con que le dieran conca también.",
+        "start": 3484.0,
+        "end": 3488.0
+    },
+    {
+        "text": " Sí, bueno, le pueden carar con muchas formas.",
+        "start": 3488.0,
+        "end": 3491.0
+    },
+    {
+        "text": " Le pueden aproximar con muchísimas técnicas, ese es el de ese de la sombra.",
+        "start": 3498.0,
+        "end": 3502.0
+    },
+    {
+        "text": " Bueno, entonces vamos a atrás de las cotas, bueno, como cotas, como le planteábamos ahí, ¿de si?",
+        "start": 3504.0,
+        "end": 3511.0
+    },
+    {
+        "text": " Si tenemos que, es el maíz pan obtenido por el algoritmo y que esté risco el óptimo, vamos a buscar, vamos a probar que para nuestro caso, para este algoritmo de abío,",
+        "start": 3512.0,
+        "end": 3525.0
+    },
+    {
+        "text": " que el TS no va a ser mucho más grande que T, vamos a tener una medida de cuán grande va a ser.",
+        "start": 3525.0,
+        "end": 3531.0
+    },
+    {
+        "text": " Tenemos que hacer más grandes, como el ásterico es más apretado posible, pero queremos tener una medida de...",
+        "start": 3531.0,
+        "end": 3539.0
+    },
+    {
+        "text": " Bueno, entonces, dado que no lo conocemos, una alternativa en buscar una cota inferior y la primera que en parte que se hace la mención es,",
+        "start": 3540.0,
+        "end": 3553.0
+    },
+    {
+        "text": " dado que sabemos el tiempo total del procesamiento de los algoritmos de todos los trabajos, el asumo de esta, ¿no?",
+        "start": 3553.0,
+        "end": 3562.0
+    },
+    {
+        "text": " Podemos inferir que una de las máquinas debe al menos realizar la fracción de la medida de todo ese trabajo, de una, de una, de una, de la fracción de uno y de UN, del procesamiento total.",
+        "start": 3564.0,
+        "end": 3578.0
+    },
+    {
+        "text": " Entonces eso nos permite establecer, como lo dice, una primera cota inferior, si que nosotros sabemos que el tiempo óptimo,",
+        "start": 3579.0,
+        "end": 3587.0
+    },
+    {
+        "text": " la carga el makespan óptimo, este va a estar acotado inferiormente por eso, ¿sí? Elísimo recién, nunca lo puedo hacer más chico que es.",
+        "start": 3587.0,
+        "end": 3596.0
+    },
+    {
+        "text": " ¿Y unas de eso? Estaba bueno, vimos anteriormente, no va a poder ser más chico que es.",
+        "start": 3597.0,
+        "end": 3605.0
+    },
+    {
+        "text": " Ahí otra más. Bueno, bueno, perdón, dado esta cota, esta cota queda, ¿cómo me dice? La cota por excelencia si las cosas son uniformes ¿no?",
+        "start": 3606.0,
+        "end": 3620.0
+    },
+    {
+        "text": " ¿Qué pasa? Estas de una cota que puede ser muy debi en el caso de que exista para una instancia, de que un trabajo domine el trabajo de todos los demás, o sea que un trabajo sea enorme.",
+        "start": 3621.0,
+        "end": 3634.0
+    },
+    {
+        "text": " Imagínense en el trabajo enorme, domine el tiempo de todos los demás, y esta cota nos exactualiza.",
+        "start": 3634.0,
+        "end": 3641.0
+    },
+    {
+        "text": " Si usamos como ella, nos queda muy desastada.",
+        "start": 3642.0,
+        "end": 3648.0
+    },
+    {
+        "text": " Se entiende la idea que era muy muy débil como cota exterior. Supongan, vamos a preantir un caso.",
+        "start": 3650.0,
+        "end": 3656.0
+    },
+    {
+        "text": " Bueno, de nuevo, ¿qué tiene? Supongan que tenemos dos trabajos.",
+        "start": 3656.0,
+        "end": 3662.0
+    },
+    {
+        "text": " La te con tiempo, 1,99. Tenemos dos más, vamos a preantirlo todo. Tenemos dos más, fina, dos trabajos y los trabajos tienen estos tiempos.",
+        "start": 3663.0,
+        "end": 3686.0
+    },
+    {
+        "text": " Vean que esta suma es cierto.",
+        "start": 3687.0,
+        "end": 3692.0
+    },
+    {
+        "text": " El 1,5 nos va a dar 50.",
+        "start": 3698.0,
+        "end": 3701.0
+    },
+    {
+        "text": " Vamos a dar 50.",
+        "start": 3702.0,
+        "end": 3706.0
+    },
+    {
+        "text": " Pero la solución óptima, ¿cuánto es?",
+        "start": 3714.0,
+        "end": 3718.0
+    },
+    {
+        "text": " Para este problema, no voy a entender.",
+        "start": 3719.0,
+        "end": 3724.0
+    },
+    {
+        "text": " La carta al planteo, vean que esta cota inferior está quedada legísima del 99.",
+        "start": 3724.0,
+        "end": 3732.0
+    },
+    {
+        "text": " Cuando en el ejemplo anterior llegaba con civir, el ejemplo con el contenido de la solución anterior, esa cota era súper ajustada.",
+        "start": 3732.0,
+        "end": 3747.0
+    },
+    {
+        "text": " Pero en este caso, la legísima.",
+        "start": 3748.0,
+        "end": 3753.0
+    },
+    {
+        "text": " Lo que bueno, a ver, es que es relativamente para como decimos todos extremos.",
+        "start": 3756.0,
+        "end": 3761.0
+    },
+    {
+        "text": " Para compensar esta situación lo que podemos hacer es plantearnos una cota que realmente maneje estos casos de extremos.",
+        "start": 3761.0,
+        "end": 3770.0
+    },
+    {
+        "text": " O si le buena elegir el máximo, el 99.",
+        "start": 3771.0,
+        "end": 3775.0
+    },
+    {
+        "text": " Nos te vamos con el máximo dado que es el t2mina. Tenemos una 9, una cota inferior.",
+        "start": 3776.0,
+        "end": 3787.0
+    },
+    {
+        "text": " Está más adecuada como el 16 en tal si entonces vamos a hacer es para construir el umbral nuestro.",
+        "start": 3787.0,
+        "end": 3796.0
+    },
+    {
+        "text": " Pero vamos a utilizar estas dos cotas necesidades.",
+        "start": 3797.0,
+        "end": 3802.0
+    },
+    {
+        "text": " Vamos a usar las dos.",
+        "start": 3802.0,
+        "end": 3808.0
+    },
+    {
+        "text": " Primero vamos a dar la propiedad del umbral y después vamos a producir la de donde sale.",
+        "start": 3811.0,
+        "end": 3818.0
+    },
+    {
+        "text": " Vamos a ver ese.",
+        "start": 3818.0,
+        "end": 3823.0
+    },
+    {
+        "text": " Bueno, tenemos la siguiente propiedad o proposición.",
+        "start": 3824.0,
+        "end": 3828.0
+    },
+    {
+        "text": " El algoritmo avion establece una asignación de trabajo de la máquina con un Max-Espan-T que está al osumo.",
+        "start": 3828.0,
+        "end": 3841.0
+    },
+    {
+        "text": " No más allá de dos veces el T8. Está cotado de esa forma.",
+        "start": 3841.0,
+        "end": 3847.0
+    },
+    {
+        "text": " Este es el umbral que vamos a tener.",
+        "start": 3848.0,
+        "end": 3853.0
+    },
+    {
+        "text": " O sea que no te la solución del algoritmo tienes para todo.",
+        "start": 3853.0,
+        "end": 3859.0
+    },
+    {
+        "text": " Tiene esta característica.",
+        "start": 3859.0,
+        "end": 3862.0
+    },
+    {
+        "text": " No va a estar más allá de dos veces el T8.",
+        "start": 3862.0,
+        "end": 3865.0
+    },
+    {
+        "text": " Hoy aquí tenemos una.",
+        "start": 3865.0,
+        "end": 3867.0
+    },
+    {
+        "text": " Obviamente es un embrad alto, no es el doble del último.",
+        "start": 3867.0,
+        "end": 3871.0
+    },
+    {
+        "text": " Pero bueno, es un un brazo. Es una forma de conseguir un brazo.",
+        "start": 3872.0,
+        "end": 3877.0
+    },
+    {
+        "text": " Hay técnicas de poner más condiciones.",
+        "start": 3877.0,
+        "end": 3881.0
+    },
+    {
+        "text": " Lo que sepa del problema más que puede empezar a apretar ese.",
+        "start": 3881.0,
+        "end": 3885.0
+    },
+    {
+        "text": " Ese es el dos y a chicarlo.",
+        "start": 3885.0,
+        "end": 3887.0
+    },
+    {
+        "text": " A chicarlo a chicarlo a cada vez más.",
+        "start": 3887.0,
+        "end": 3889.0
+    },
+    {
+        "text": " Hasta.",
+        "start": 3889.0,
+        "end": 3891.0
+    },
+    {
+        "text": " Lo deucirlo lo más posible.",
+        "start": 3891.0,
+        "end": 3894.0
+    },
+    {
+        "text": " Bueno, vamos a ver por qué ese dos.",
+        "start": 3894.0,
+        "end": 3898.0
+    },
+    {
+        "text": " Bueno, la idea es que se compara la solución obtenida con las cotas de esas que teníamos inicialmente.",
+        "start": 3898.0,
+        "end": 3906.0
+    },
+    {
+        "text": " La 1 y la 2.",
+        "start": 3906.0,
+        "end": 3907.0
+    },
+    {
+        "text": " O sea, es como lo sé.",
+        "start": 3907.0,
+        "end": 3909.0
+    },
+    {
+        "text": " Consideramos primero una máquina ahí.",
+        "start": 3909.0,
+        "end": 3911.0
+    },
+    {
+        "text": " O sea, tenemos un hipótesis de trabajo.",
+        "start": 3911.0,
+        "end": 3913.0
+    },
+    {
+        "text": " Que tenemos una máquina ahí que alcanza la carga Max-Espan-T.",
+        "start": 3913.0,
+        "end": 3918.0
+    },
+    {
+        "text": " O sea, el caso es estrés.",
+        "start": 3918.0,
+        "end": 3920.0
+    },
+    {
+        "text": " O sea, tenemos una máquina.",
+        "start": 3920.0,
+        "end": 3922.0
+    },
+    {
+        "text": " Es la que es la que es la que es la que es la que.",
+        "start": 3923.0,
+        "end": 3928.0
+    },
+    {
+        "text": " Determine el Max-Espan-T.",
+        "start": 3928.0,
+        "end": 3930.0
+    },
+    {
+        "text": " La carga.",
+        "start": 3930.0,
+        "end": 3931.0
+    },
+    {
+        "text": " Y tenemos por otro lado un trabajo jota que fue el último que se asignó a esa Max-Espan-T.",
+        "start": 3931.0,
+        "end": 3938.0
+    },
+    {
+        "text": " O sea, partimos de esa situación.",
+        "start": 3938.0,
+        "end": 3941.0
+    },
+    {
+        "text": " O sea, como que dice el cierro del proceso en nuestro idiote móvil.",
+        "start": 3941.0,
+        "end": 3945.0
+    },
+    {
+        "text": " La Max-Espan-T.",
+        "start": 3945.0,
+        "end": 3946.0
+    },
+    {
+        "text": " La última asignación de trabajo.",
+        "start": 3946.0,
+        "end": 3948.0
+    },
+    {
+        "text": " La máquina que dominó el espal.",
+        "start": 3949.0,
+        "end": 3952.0
+    },
+    {
+        "text": " Que determinó, bueno, este es el Max-Espan.",
+        "start": 3952.0,
+        "end": 3954.0
+    },
+    {
+        "text": " Fue la que demoró más.",
+        "start": 3954.0,
+        "end": 3955.0
+    },
+    {
+        "text": " Y tenemos las dos condiciones que teníamos anteriormente ahora.",
+        "start": 3957.0,
+        "end": 3962.0
+    },
+    {
+        "text": " Si T no es relativamente más grande que las otros,",
+        "start": 3962.0,
+        "end": 3967.0
+    },
+    {
+        "text": " entonces no vamos a estar muy dejo de la 4ª.",
+        "start": 3967.0,
+        "end": 3970.0
+    },
+    {
+        "text": " Si ese fue el que se asignó último, no vamos a estar muy dejo de la 4ª.",
+        "start": 3970.0,
+        "end": 3975.0
+    },
+    {
+        "text": " Por el contrario, si el T es realmente muy grande,",
+        "start": 3976.0,
+        "end": 3979.0
+    },
+    {
+        "text": " entonces la Cota 2 es la que es realmente la más recuadra.",
+        "start": 3979.0,
+        "end": 3983.0
+    },
+    {
+        "text": " Bueno, el la hipótesis de este trabajo,",
+        "start": 3992.0,
+        "end": 3996.0
+    },
+    {
+        "text": " cuando estamos trabajando sobre el último trabajo,",
+        "start": 3996.0,
+        "end": 4000.0
+    },
+    {
+        "text": " cuando se lo asignó a la máquina y, debido a cómo es el el el ego rimo,",
+        "start": 4001.0,
+        "end": 4005.0
+    },
+    {
+        "text": " era la máquina que tenía la menor carga hasta ese momento.",
+        "start": 4005.0,
+        "end": 4009.0
+    },
+    {
+        "text": " Entonces, esa máquina y tenía una carga previa de TDI menos T de J.",
+        "start": 4009.0,
+        "end": 4016.0
+    },
+    {
+        "text": " La salida del resultado del ego rimo es TDI,",
+        "start": 4018.0,
+        "end": 4021.0
+    },
+    {
+        "text": " no fue la última que se diseñó y terminó con ellos.",
+        "start": 4021.0,
+        "end": 4024.0
+    },
+    {
+        "text": " Pero bueno, antes de asignar hoy el trabajo J, tenía esta carga, ¿no?",
+        "start": 4024.0,
+        "end": 4028.0
+    },
+    {
+        "text": " TDI menos T de J.",
+        "start": 4029.0,
+        "end": 4031.0
+    },
+    {
+        "text": " Si sumamos la suma de todas las cargas de todas las máquinas,",
+        "start": 4032.0,
+        "end": 4037.0
+    },
+    {
+        "text": " nos permite establecer una Cota sobre esto.",
+        "start": 4037.0,
+        "end": 4041.0
+    },
+    {
+        "text": " Por ejemplo, si nosotros sumamos todas las cargas de todas las máquinas",
+        "start": 4041.0,
+        "end": 4046.0
+    },
+    {
+        "text": " que del término derecho acá,",
+        "start": 4046.0,
+        "end": 4049.0
+    },
+    {
+        "text": " esto siempre va a ser mayor que la instancia de esta,",
+        "start": 4049.0,
+        "end": 4056.0
+    },
+    {
+        "text": " la carga previa de la máquina y por todas las máquinas.",
+        "start": 4056.0,
+        "end": 4059.0
+    },
+    {
+        "text": " Reordenó la desigualdad de esta.",
+        "start": 4076.0,
+        "end": 4080.0
+    },
+    {
+        "text": " Justo, lo conficiente, dividido todo entre M y me queda la desigualdad 4.",
+        "start": 4081.0,
+        "end": 4088.0
+    },
+    {
+        "text": " Entonces, tenemos una primera Cota.",
+        "start": 4088.0,
+        "end": 4090.0
+    },
+    {
+        "text": " Bueno, ¿cómo está Cotada la carga de la máquina y previa a la asignación del trabajo Cot?",
+        "start": 4090.0,
+        "end": 4097.0
+    },
+    {
+        "text": " Está Cotado por el promedio de la carga de todas las máquinas.",
+        "start": 4097.0,
+        "end": 4100.0
+    },
+    {
+        "text": " Una primera Cota, que es esa, la 4.",
+        "start": 4101.0,
+        "end": 4104.0
+    },
+    {
+        "text": " Por otro lado, sabemos que cada trabajo se asina cada máquina.",
+        "start": 4105.0,
+        "end": 4110.0
+    },
+    {
+        "text": " Entonces, la asuma de las cargas de todas las máquinas coincide con la suma de los tiempos de todo lo trabajo.",
+        "start": 4110.0,
+        "end": 4119.0
+    },
+    {
+        "text": " Por lo tenemos que asinamos todos los trabajos.",
+        "start": 4119.0,
+        "end": 4123.0
+    },
+    {
+        "text": " Por lo cual, el valor del lado derecho de 4,",
+        "start": 4123.0,
+        "end": 4130.0
+    },
+    {
+        "text": " y si el valor de la Cota inferior en 1,",
+        "start": 4131.0,
+        "end": 4136.0
+    },
+    {
+        "text": " o sea, el valor de este de acá, es la Cota en 1.",
+        "start": 4136.0,
+        "end": 4142.0
+    },
+    {
+        "text": " Y tenemos acá, combinamos esas dos cosas y obtenemos esta Cota.",
+        "start": 4142.0,
+        "end": 4149.0
+    },
+    {
+        "text": " Ya hacemos ahí, para hacer cosas.",
+        "start": 4149.0,
+        "end": 4153.0
+    },
+    {
+        "text": " Ya, sí, está ahí.",
+        "start": 4154.0,
+        "end": 4156.0
+    },
+    {
+        "text": " A lo está, está ahí.",
+        "start": 4156.0,
+        "end": 4159.0
+    },
+    {
+        "text": " O sea, tenemos.",
+        "start": 4161.0,
+        "end": 4163.0
+    },
+    {
+        "text": " Acá tenemos una energía.",
+        "start": 4167.0,
+        "end": 4169.0
+    },
+    {
+        "text": " Que teníamos por un lado que lo se enviemos a la carga de previa de la máquina.",
+        "start": 4169.0,
+        "end": 4176.0
+    },
+    {
+        "text": " Estaba cortada por el promedio de la suma de todas las cargas.",
+        "start": 4176.0,
+        "end": 4182.0
+    },
+    {
+        "text": " Esto es igual a esto, ¿no?",
+        "start": 4184.0,
+        "end": 4186.0
+    },
+    {
+        "text": " Y por la 1 por el silla de la Cota.",
+        "start": 4186.0,
+        "end": 4189.0
+    },
+    {
+        "text": " Esta la tenemos por la 4.",
+        "start": 4192.0,
+        "end": 4195.0
+    },
+    {
+        "text": " Y por la 1 por la 1 por el silla de la Cota.",
+        "start": 4195.0,
+        "end": 4200.0
+    },
+    {
+        "text": " Y por la 1 por el silla de la Cota.",
+        "start": 4200.0,
+        "end": 4203.0
+    },
+    {
+        "text": " 1 por el silla de la Cota.",
+        "start": 4204.0,
+        "end": 4207.0
+    },
+    {
+        "text": " Esta la tenemos por la 4.",
+        "start": 4211.0,
+        "end": 4214.0
+    },
+    {
+        "text": " Esta la tenemos por esta pitaca.",
+        "start": 4215.0,
+        "end": 4219.0
+    },
+    {
+        "text": " Y esta de acá,",
+        "start": 4220.0,
+        "end": 4223.0
+    },
+    {
+        "text": " es la 1.",
+        "start": 4225.0,
+        "end": 4228.0
+    },
+    {
+        "text": " Que la teníamos significada para uso a lo valor.",
+        "start": 4234.0,
+        "end": 4238.0
+    },
+    {
+        "text": " Bueno.",
+        "start": 4238.0,
+        "end": 4240.0
+    },
+    {
+        "text": " Tenemos una nueva desigualdad, o sea,",
+        "start": 4243.0,
+        "end": 4247.0
+    },
+    {
+        "text": " que la carga evia,",
+        "start": 4247.0,
+        "end": 4249.0
+    },
+    {
+        "text": " agresía así en el último trabajo de la máquina y es...",
+        "start": 4249.0,
+        "end": 4254.0
+    },
+    {
+        "text": " Es menor igual que el MazeFan Opti.",
+        "start": 4257.0,
+        "end": 4260.0
+    },
+    {
+        "text": " Es más o menos igual que el MazeFan Opti.",
+        "start": 4261.0,
+        "end": 4265.0
+    },
+    {
+        "text": " Dezamos a vincularlos con el Opti.",
+        "start": 4265.0,
+        "end": 4268.0
+    },
+    {
+        "text": " Y ahora lo que nos falta es traer la Cota 2.",
+        "start": 4272.0,
+        "end": 4276.0
+    },
+    {
+        "text": " Ahora, incluimos la Cota 2.",
+        "start": 4278.0,
+        "end": 4281.0
+    },
+    {
+        "text": " Para determinar esa carga restante de la máquina y con la asignación del trabajo,",
+        "start": 4281.0,
+        "end": 4287.0
+    },
+    {
+        "text": " de 2,",
+        "start": 4287.0,
+        "end": 4290.0
+    },
+    {
+        "text": " obtenemos esta.",
+        "start": 4292.0,
+        "end": 4294.0
+    },
+    {
+        "text": " Bueno, lo que sea ahora es sumar las 2.",
+        "start": 4294.0,
+        "end": 4299.0
+    },
+    {
+        "text": " Sumamos esta desigualdad de esta.",
+        "start": 4300.0,
+        "end": 4305.0
+    },
+    {
+        "text": " Y nos da esta desigualdad.",
+        "start": 4308.0,
+        "end": 4311.0
+    },
+    {
+        "text": " Bueno, por hipótesis, teníamos que ver que esto se va.",
+        "start": 4312.0,
+        "end": 4317.0
+    },
+    {
+        "text": " Que la máquina y era la máquina que se raba,",
+        "start": 4318.0,
+        "end": 4322.0
+    },
+    {
+        "text": " al proceso era el MazeFan, o sea, que el TD eirigualdad.",
+        "start": 4322.0,
+        "end": 4326.0
+    },
+    {
+        "text": " Entonces,",
+        "start": 4328.0,
+        "end": 4331.0
+    },
+    {
+        "text": " ahí tenemos la Cota de la Egorismo,",
+        "start": 4332.0,
+        "end": 4336.0
+    },
+    {
+        "text": " el MazeFan T está acotado por 2 veces,",
+        "start": 4336.0,
+        "end": 4340.0
+    },
+    {
+        "text": " la Cota Max, el valor del Opti, el MazeFan Opti.",
+        "start": 4340.0,
+        "end": 4346.0
+    },
+    {
+        "text": " Y bueno, por esto terminamos la prueba de la Cota.",
+        "start": 4349.0,
+        "end": 4357.0
+    },
+    {
+        "text": " Obviamente,",
+        "start": 4357.0,
+        "end": 4360.0
+    },
+    {
+        "text": " es una Cota, es un braille grande,",
+        "start": 4360.0,
+        "end": 4363.0
+    },
+    {
+        "text": " pero bueno,",
+        "start": 4363.0,
+        "end": 4367.0
+    },
+    {
+        "text": " la ventaja es tener uno,",
+        "start": 4367.0,
+        "end": 4370.0
+    },
+    {
+        "text": " o sea, se sabe que después uno puede poner más condiciones,",
+        "start": 4370.0,
+        "end": 4374.0
+    },
+    {
+        "text": " no puede haber el final.",
+        "start": 4374.0,
+        "end": 4377.0
+    },
+    {
+        "text": " Bueno, dudas, preguntas, hasta acá.",
+        "start": 4382.0,
+        "end": 4386.0
+    },
+    {
+        "text": " En un comentario.",
+        "start": 4386.0,
+        "end": 4390.0
+    },
+    {
+        "text": " Bueno, como les decía, esto es solo un pequeño pantallazo,",
+        "start": 4391.0,
+        "end": 4396.0
+    },
+    {
+        "text": " hay muchísimas más técnicas,",
+        "start": 4396.0,
+        "end": 4399.0
+    },
+    {
+        "text": " en el calce del curso, no da para darlas.",
+        "start": 4399.0,
+        "end": 4403.0
+    },
+    {
+        "text": " Todas, como les comentaba,",
+        "start": 4403.0,
+        "end": 4407.0
+    },
+    {
+        "text": " hay muchas más que más algebraicos.",
+        "start": 4407.0,
+        "end": 4410.0
+    },
+    {
+        "text": " Hay un gran, esto tiene un desarrollo enorme,",
+        "start": 4411.0,
+        "end": 4415.0
+    },
+    {
+        "text": " enorme,",
+        "start": 4415.0,
+        "end": 4419.0
+    },
+    {
+        "text": " hay muchísimas Egorismes para ver a partir de esto.",
+        "start": 4419.0,
+        "end": 4422.0
+    },
+    {
+        "text": " Y bueno, con esto",
+        "start": 4422.0,
+        "end": 4426.0
+    },
+    {
+        "text": " estáremos cerrando el alcance teórico del curso.",
+        "start": 4426.0,
+        "end": 4430.0
+    },
+    {
+        "text": " Como resumen general,",
+        "start": 4431.0,
+        "end": 4434.0
+    },
+    {
+        "text": " bueno, lo que vimos,",
+        "start": 4434.0,
+        "end": 4436.0
+    },
+    {
+        "text": " bueno, que se puso el curso de programación 3,",
+        "start": 4436.0,
+        "end": 4439.0
+    },
+    {
+        "text": " es un curso que ahora se ha ajustado mucho,",
+        "start": 4439.0,
+        "end": 4443.0
+    },
+    {
+        "text": " sus últimas ediciones,",
+        "start": 4443.0,
+        "end": 4447.0
+    },
+    {
+        "text": " es bueno, lo que trata de es fortemente el diseño y análisis",
+        "start": 4447.0,
+        "end": 4451.0
+    },
+    {
+        "text": " de Egorismo,",
+        "start": 4451.0,
+        "end": 4454.0
+    },
+    {
+        "text": " con énfasis en la motivación de la Cota,",
+        "start": 4454.0,
+        "end": 4457.0
+    },
+    {
+        "text": " con énfasis en la motivación de los problemas,",
+        "start": 4458.0,
+        "end": 4461.0
+    },
+    {
+        "text": " así que mucho texto.",
+        "start": 4461.0,
+        "end": 4463.0
+    },
+    {
+        "text": " Y bueno, el análisis, lo que se hace un foco fuerte,",
+        "start": 4463.0,
+        "end": 4466.0
+    },
+    {
+        "text": " es basado en la corrección del desempeño,",
+        "start": 4466.0,
+        "end": 4469.0
+    },
+    {
+        "text": " y a medida bueno que esto.",
+        "start": 4469.0,
+        "end": 4471.0
+    },
+    {
+        "text": " La idea fue el diseño,",
+        "start": 4471.0,
+        "end": 4474.0
+    },
+    {
+        "text": " todo el esquema de trabajo es tu buquillado,",
+        "start": 4474.0,
+        "end": 4478.0
+    },
+    {
+        "text": " por un esquema incremental,",
+        "start": 4478.0,
+        "end": 4482.0
+    },
+    {
+        "text": " este técnicas,",
+        "start": 4482.0,
+        "end": 4485.0
+    },
+    {
+        "text": " pero cada vez más elaborada desde el punto de vista",
+        "start": 4485.0,
+        "end": 4488.0
+    },
+    {
+        "text": " de la complicidad de los problemas,",
+        "start": 4488.0,
+        "end": 4490.0
+    },
+    {
+        "text": " de esquemas sintóticos,",
+        "start": 4490.0,
+        "end": 4492.0
+    },
+    {
+        "text": " y en el esquema sintótico,",
+        "start": 4492.0,
+        "end": 4494.0
+    },
+    {
+        "text": " bueno, vimos y se vi inicialmente a Egorismo",
+        "start": 4494.0,
+        "end": 4497.0
+    },
+    {
+        "text": " para resolver problemas,",
+        "start": 4497.0,
+        "end": 4499.0
+    },
+    {
+        "text": " que tenía resolución inficiente.",
+        "start": 4499.0,
+        "end": 4502.0
+    },
+    {
+        "text": " Desde el comienzo,",
+        "start": 4502.0,
+        "end": 4504.0
+    },
+    {
+        "text": " el primer ejemplo que el primer problema del parejamiento estable,",
+        "start": 4504.0,
+        "end": 4509.0
+    },
+    {
+        "text": " luego se trabajó fortemente sobre problemas definidos,",
+        "start": 4509.0,
+        "end": 4512.0
+    },
+    {
+        "text": " sobre teoría, sobre grafos,",
+        "start": 4512.0,
+        "end": 4514.0
+    },
+    {
+        "text": " unos algoritmos de arroycorridas, clásicas,",
+        "start": 4514.0,
+        "end": 4517.0
+    },
+    {
+        "text": " clásicos, ordenamientos, otros pobres,",
+        "start": 4517.0,
+        "end": 4520.0
+    },
+    {
+        "text": " después pasamos a problemas un poco más elaborados,",
+        "start": 4520.0,
+        "end": 4524.0
+    },
+    {
+        "text": " donde ya los algoritmos no eran totalmente niñales,",
+        "start": 4524.0,
+        "end": 4527.0
+    },
+    {
+        "text": " sino casi niñales, se incluían.",
+        "start": 4527.0,
+        "end": 4529.0
+    },
+    {
+        "text": " Algunos cofiscientos algoritmos logarísmicos,",
+        "start": 4529.0,
+        "end": 4532.0
+    },
+    {
+        "text": " y los algoritmos hábidos para varios problemas,",
+        "start": 4532.0,
+        "end": 4537.0
+    },
+    {
+        "text": " intervales que venían, short test path,",
+        "start": 4537.0,
+        "end": 4540.0
+    },
+    {
+        "text": " en el caso de postos positivos,",
+        "start": 4540.0,
+        "end": 4543.0
+    },
+    {
+        "text": " árboles de expansión minimal,",
+        "start": 4543.0,
+        "end": 4546.0
+    },
+    {
+        "text": " toda la angolimia de Bayancon,",
+        "start": 4546.0,
+        "end": 4549.0
+    },
+    {
+        "text": " que no le vivió y conquista,",
+        "start": 4549.0,
+        "end": 4551.0
+    },
+    {
+        "text": " aparte de ordenamiento, inversiones,",
+        "start": 4551.0,
+        "end": 4556.0
+    },
+    {
+        "text": " secuenciado también, se vieron,",
+        "start": 4556.0,
+        "end": 4560.0
+    },
+    {
+        "text": " también se vio un poquito de manejo de algoritmos",
+        "start": 4560.0,
+        "end": 4564.0
+    },
+    {
+        "text": " al día atorizado para ordenamiento,",
+        "start": 4564.0,
+        "end": 4567.0
+    },
+    {
+        "text": " bueno, pues seguimos con toda la parte",
+        "start": 4567.0,
+        "end": 4572.0
+    },
+    {
+        "text": " de técnicas polinomiales y sus problemas asociados,",
+        "start": 4572.0,
+        "end": 4576.0
+    },
+    {
+        "text": " bueno, una central fue para mación dinámica,",
+        "start": 4576.0,
+        "end": 4581.0
+    },
+    {
+        "text": " habíamos para,",
+        "start": 4581.0,
+        "end": 4584.0
+    },
+    {
+        "text": " el despacho de intervalos ponderados o incuentes de intervales que ven,",
+        "start": 4584.0,
+        "end": 4589.0
+    },
+    {
+        "text": " este segmento en leses cuerdas,",
+        "start": 4589.0,
+        "end": 4592.0
+    },
+    {
+        "text": " el sub-set-sum,",
+        "start": 4592.0,
+        "end": 4595.0
+    },
+    {
+        "text": " un conjunto, napsat,",
+        "start": 4595.0,
+        "end": 4598.0
+    },
+    {
+        "text": " un problema del camino más corto para génerico",
+        "start": 4598.0,
+        "end": 4601.0
+    },
+    {
+        "text": " y para ver cosas negativos,",
+        "start": 4601.0,
+        "end": 4604.0
+    },
+    {
+        "text": " pues se vio también como técnica para,",
+        "start": 4604.0,
+        "end": 4609.0
+    },
+    {
+        "text": " sobre otros problemas flujo en red,",
+        "start": 4609.0,
+        "end": 4611.0
+    },
+    {
+        "text": " en particular su caso de máximo flujo,",
+        "start": 4611.0,
+        "end": 4614.0
+    },
+    {
+        "text": " el problema de parejamiento y partito,",
+        "start": 4614.0,
+        "end": 4622.0
+    },
+    {
+        "text": " se nos convierte con Forfug, que son bueno.",
+        "start": 4622.0,
+        "end": 4625.0
+    },
+    {
+        "text": " Proféu una pregunta,",
+        "start": 4625.0,
+        "end": 4627.0
+    },
+    {
+        "text": " ¿de este último tema no encontré ejercicios o nada para practicar?",
+        "start": 4627.0,
+        "end": 4632.0
+    },
+    {
+        "text": " Puede ser que vaya algo para el parcial o...",
+        "start": 4632.0,
+        "end": 4635.0
+    },
+    {
+        "text": " porque no encontré material para practicar.",
+        "start": 4635.0,
+        "end": 4638.0
+    },
+    {
+        "text": " Y nos queda afuera del...",
+        "start": 4638.0,
+        "end": 4641.0
+    },
+    {
+        "text": " Nos quedó fuera hasta del con,",
+        "start": 4641.0,
+        "end": 4643.0
+    },
+    {
+        "text": " no tenemos monitoreos,",
+        "start": 4643.0,
+        "end": 4645.0
+    },
+    {
+        "text": " ya nos quedó...",
+        "start": 4645.0,
+        "end": 4647.0
+    },
+    {
+        "text": " Claro, es como le damos un patallazo,",
+        "start": 4647.0,
+        "end": 4650.0
+    },
+    {
+        "text": " pero no,",
+        "start": 4650.0,
+        "end": 4652.0
+    },
+    {
+        "text": " sólo vimos eso,",
+        "start": 4652.0,
+        "end": 4654.0
+    },
+    {
+        "text": " pero no había idea,",
+        "start": 4654.0,
+        "end": 4656.0
+    },
+    {
+        "text": " pero que ustedes tengan idea de que,",
+        "start": 4656.0,
+        "end": 4658.0
+    },
+    {
+        "text": " bueno, se hiciste y llegí ante el cual es enorme,",
+        "start": 4658.0,
+        "end": 4660.0
+    },
+    {
+        "text": " es el mundo que les queda poco delante para seguir analizando el burismo.",
+        "start": 4660.0,
+        "end": 4665.0
+    },
+    {
+        "text": " Es bien,",
+        "start": 4665.0,
+        "end": 4667.0
+    },
+    {
+        "text": " en otros cursos.",
+        "start": 4667.0,
+        "end": 4669.0
+    },
+    {
+        "text": " Y bueno,",
+        "start": 4669.0,
+        "end": 4671.0
+    },
+    {
+        "text": " y después pasamos a la parte,",
+        "start": 4671.0,
+        "end": 4673.0
+    },
+    {
+        "text": " bueno, superapolignomial,",
+        "start": 4673.0,
+        "end": 4675.0
+    },
+    {
+        "text": " encarado un puerto de edad mucho,",
+        "start": 4675.0,
+        "end": 4677.0
+    },
+    {
+        "text": " ya más teoría sobre la complicidad de los problemas,",
+        "start": 4677.0,
+        "end": 4680.0
+    },
+    {
+        "text": " como...",
+        "start": 4680.0,
+        "end": 4681.0
+    },
+    {
+        "text": " Es que, bueno,",
+        "start": 4681.0,
+        "end": 4683.0
+    },
+    {
+        "text": " es como se categorizan estos problemas,",
+        "start": 4683.0,
+        "end": 4685.0
+    },
+    {
+        "text": " este...",
+        "start": 4685.0,
+        "end": 4687.0
+    },
+    {
+        "text": " Para lo cual es clave el tema de la reaccion polinomial",
+        "start": 4687.0,
+        "end": 4690.0
+    },
+    {
+        "text": " y las certificaciones fiscientes,",
+        "start": 4690.0,
+        "end": 4693.0
+    },
+    {
+        "text": " no,",
+        "start": 4693.0,
+        "end": 4694.0
+    },
+    {
+        "text": " para definir la clase del problema,",
+        "start": 4694.0,
+        "end": 4696.0
+    },
+    {
+        "text": " sobre la cual nos focalizamos,",
+        "start": 4696.0,
+        "end": 4698.0
+    },
+    {
+        "text": " bueno, vivimos varias problemas,",
+        "start": 4698.0,
+        "end": 4700.0
+    },
+    {
+        "text": " independencia de la artescova,",
+        "start": 4700.0,
+        "end": 4702.0
+    },
+    {
+        "text": " la problema de satisfacilidad,",
+        "start": 4702.0,
+        "end": 4704.0
+    },
+    {
+        "text": " buliana,",
+        "start": 4704.0,
+        "end": 4705.0
+    },
+    {
+        "text": " la desatifacilidad de circuitos,",
+        "start": 4705.0,
+        "end": 4708.0
+    },
+    {
+        "text": " sobre los cuales,",
+        "start": 4708.0,
+        "end": 4710.0
+    },
+    {
+        "text": " los que vinculo de ellos,",
+        "start": 4710.0,
+        "end": 4711.0
+    },
+    {
+        "text": " todo el esquema de reducción,",
+        "start": 4711.0,
+        "end": 4712.0
+    },
+    {
+        "text": " la categorización.",
+        "start": 4712.0,
+        "end": 4714.0
+    },
+    {
+        "text": " Y bueno, después para los,",
+        "start": 4714.0,
+        "end": 4716.0
+    },
+    {
+        "text": " para problemas,",
+        "start": 4716.0,
+        "end": 4719.0
+    },
+    {
+        "text": " que,",
+        "start": 4719.0,
+        "end": 4721.0
+    },
+    {
+        "text": " de estos que no son,",
+        "start": 4721.0,
+        "end": 4723.0
+    },
+    {
+        "text": " que son el EP1,",
+        "start": 4723.0,
+        "end": 4724.0
+    },
+    {
+        "text": " o sea que sus problemas de decisión son el EP completo,",
+        "start": 4724.0,
+        "end": 4728.0
+    },
+    {
+        "text": " vimos en la última semana,",
+        "start": 4728.0,
+        "end": 4730.0
+    },
+    {
+        "text": " que para el caso de instancias,",
+        "start": 4730.0,
+        "end": 4733.0
+    },
+    {
+        "text": " que tienen cierta particularidad,",
+        "start": 4733.0,
+        "end": 4735.0
+    },
+    {
+        "text": " de propiedades estructurales,",
+        "start": 4735.0,
+        "end": 4737.0
+    },
+    {
+        "text": " bueno, pueden existir algoritmos",
+        "start": 4737.0,
+        "end": 4739.0
+    },
+    {
+        "text": " que los consignan los valores óptimos,",
+        "start": 4739.0,
+        "end": 4741.0
+    },
+    {
+        "text": " y este vimos los ejemplos,",
+        "start": 4741.0,
+        "end": 4743.0
+    },
+    {
+        "text": " el algoritmo jabidos,",
+        "start": 4743.0,
+        "end": 4745.0
+    },
+    {
+        "text": " programaciones binámicas,",
+        "start": 4745.0,
+        "end": 4746.0
+    },
+    {
+        "text": " y bueno,",
+        "start": 4746.0,
+        "end": 4747.0
+    },
+    {
+        "text": " y finalmente para la clase de hoy,",
+        "start": 4747.0,
+        "end": 4749.0
+    },
+    {
+        "text": " vimos de este,",
+        "start": 4749.0,
+        "end": 4750.0
+    },
+    {
+        "text": " un caso de algoritmo aproximación,",
+        "start": 4750.0,
+        "end": 4752.0
+    },
+    {
+        "text": " y bueno,",
+        "start": 4752.0,
+        "end": 4753.0
+    },
+    {
+        "text": " de que se trata todo ese momento.",
+        "start": 4753.0,
+        "end": 4755.0
+    },
+    {
+        "text": " Este,",
+        "start": 4755.0,
+        "end": 4756.0
+    },
+    {
+        "text": " bueno,",
+        "start": 4756.0,
+        "end": 4757.0
+    },
+    {
+        "text": " este es un,",
+        "start": 4757.0,
+        "end": 4758.0
+    },
+    {
+        "text": " como de dice,",
+        "start": 4758.0,
+        "end": 4759.0
+    },
+    {
+        "text": " un resumen de lo que alcanzamos,",
+        "start": 4759.0,
+        "end": 4761.0
+    },
+    {
+        "text": " o sea,",
+        "start": 4761.0,
+        "end": 4762.0
+    },
+    {
+        "text": " la gran destémica del diseño,",
+        "start": 4762.0,
+        "end": 4764.0
+    },
+    {
+        "text": " en motivadas por los problemas,",
+        "start": 4764.0,
+        "end": 4767.0
+    },
+    {
+        "text": " y bueno,",
+        "start": 4767.0,
+        "end": 4769.0
+    },
+    {
+        "text": " un indivuerta sobre los algoritmos,",
+        "start": 4769.0,
+        "end": 4772.0
+    },
+    {
+        "text": " hacia la corrección,",
+        "start": 4772.0,
+        "end": 4774.0
+    },
+    {
+        "text": " y en base de lo cual era su desempeña sintótico,",
+        "start": 4774.0,
+        "end": 4778.0
+    },
+    {
+        "text": " suordinado a la ejemplamentación de los datos.",
+        "start": 4778.0,
+        "end": 4782.0
+    },
+    {
+        "text": " Bueno,",
+        "start": 4782.0,
+        "end": 4783.0
+    },
+    {
+        "text": " eso es,",
+        "start": 4783.0,
+        "end": 4785.0
+    },
+    {
+        "text": " no sé si tienen alguna duda,",
+        "start": 4785.0,
+        "end": 4786.0
+    },
+    {
+        "text": " pregunta y general,",
+        "start": 4786.0,
+        "end": 4787.0
+    },
+    {
+        "text": " en un comentario.",
+        "start": 4787.0,
+        "end": 4789.0
+    },
+    {
+        "text": " ¿Esto es todo por hoy?",
+        "start": 4795.0,
+        "end": 4797.0
+    },
+    {
+        "text": " Y por el teórico,",
+        "start": 4797.0,
+        "end": 4798.0
+    },
+    {
+        "text": " muchas gracias por la atención,",
+        "start": 4798.0,
+        "end": 4800.0
+    },
+    {
+        "text": " y por la participación.",
+        "start": 4800.0,
+        "end": 4802.0
+    },
+    {
+        "text": " Bueno,",
+        "start": 4802.0,
+        "end": 4804.0
+    },
+    {
+        "text": " de la garantía de parte del equipo docente,",
+        "start": 4804.0,
+        "end": 4807.0
+    },
+    {
+        "text": " lo que les sugerimos,",
+        "start": 4807.0,
+        "end": 4809.0
+    },
+    {
+        "text": " y es que responda la encuesta",
+        "start": 4809.0,
+        "end": 4811.0
+    },
+    {
+        "text": " después de evaluación del curso y los docentes,",
+        "start": 4811.0,
+        "end": 4813.0
+    },
+    {
+        "text": " que es un insumbo de la identidad,",
+        "start": 4813.0,
+        "end": 4815.0
+    },
+    {
+        "text": " y bueno,",
+        "start": 4815.0,
+        "end": 4816.0
+    },
+    {
+        "text": " y bueno,",
+        "start": 4816.0,
+        "end": 4817.0
+    },
+    {
+        "text": " el diseño de la identidad del equipo docente,",
+        "start": 4817.0,
+        "end": 4819.0
+    },
+    {
+        "text": " lo que les sugerimos,",
+        "start": 4819.0,
+        "end": 4821.0
+    },
+    {
+        "text": " y es que responda la encuesta después de evaluación del curso,",
+        "start": 4821.0,
+        "end": 4823.0
+    },
+    {
+        "text": " el diseño de la identidad del equipo docente,",
+        "start": 4823.0,
+        "end": 4825.0
+    },
+    {
+        "text": " que es un insumbo muy importante con nosotros,",
+        "start": 4825.0,
+        "end": 4827.0
+    },
+    {
+        "text": " para salir este trabajo,",
+        "start": 4827.0,
+        "end": 4829.0
+    },
+    {
+        "text": " de mejorando esto,",
+        "start": 4829.0,
+        "end": 4831.0
+    },
+    {
+        "text": " y en el día a día.",
+        "start": 4831.0,
+        "end": 4833.0
+    },
+    {
+        "text": " Y bueno,",
+        "start": 4833.0,
+        "end": 4835.0
+    },
+    {
+        "text": " les deseo un éxito en las próximas evaluaciones",
+        "start": 4835.0,
+        "end": 4838.0
+    },
+    {
+        "text": " en partidades,",
+        "start": 4838.0,
+        "end": 4840.0
+    },
+    {
+        "text": " y ya es fuerte,",
+        "start": 4840.0,
+        "end": 4841.0
+    },
+    {
+        "text": " ha sido un gusto por acá.",
+        "start": 4841.0,
+        "end": 4843.0
+    }
+]

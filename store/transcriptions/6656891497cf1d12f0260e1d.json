@@ -1,0 +1,3772 @@
+[
+    {
+        "text": " ahí. Repito entonces, la técnica de dividir con gestar, normalmente tenemos un problema",
+        "start": 0.0,
+        "end": 12.8
+    },
+    {
+        "text": " que se aplica a una instancia, esa instancia se subdivide, se construye su vistencia",
+        "start": 12.8,
+        "end": 18.400000000000002
+    },
+    {
+        "text": " a partir de la instancia original, se resuelve esas subistencias para obtener subseluciones",
+        "start": 18.400000000000002,
+        "end": 25.68
+    },
+    {
+        "text": " y luego se conviene las soluciones. El costo de construir las subistencias y luego",
+        "start": 25.68,
+        "end": 32.76
+    },
+    {
+        "text": " combinar resultados se suele poner aquí en la función que va a tener un costo que va",
+        "start": 32.76,
+        "end": 37.68
+    },
+    {
+        "text": " a defender de tamaño. N es el tamaño de la distancia que estamos trabajando, aquí",
+        "start": 37.68,
+        "end": 43.28
+    },
+    {
+        "text": " sumamos FN, es la suma de los costos. Contruir las subistencias y mezclar los resultados.",
+        "start": 43.28,
+        "end": 50.92
+    },
+    {
+        "text": " Que más hay? Hay como siempre hay un caso base que puede ser el 1 o 2, lo que fuera puede ser",
+        "start": 50.92,
+        "end": 56.88
+    },
+    {
+        "text": " varios y ese costo va a tener un costo que es 1 o 1 constante, uno puede poner el 1 porque",
+        "start": 56.88,
+        "end": 63.160000000000004
+    },
+    {
+        "text": " hace una simplemente modelada y una posición de eso. Hay que poner igual, hay que poner",
+        "start": 63.160000000000004,
+        "end": 68.72
+    },
+    {
+        "text": " menor depende lo que estamos buscando y en este caso general se va a separar a subistencias",
+        "start": 68.72,
+        "end": 76.48
+    },
+    {
+        "text": " cada una de un tamaño más chico que el original, typicalmente siempre el mismo tamaño,",
+        "start": 76.48,
+        "end": 84.76
+    },
+    {
+        "text": " la misma subición, que se diga n entre p, acá tiene que ser más o igual a 1 y v más",
+        "start": 84.76,
+        "end": 92.12
+    },
+    {
+        "text": " o igual a 2. Esto no es exactamente así, a veces hay que rondiar escenes sobre v hacia",
+        "start": 92.12,
+        "end": 100.60000000000001
+    },
+    {
+        "text": " abajo y hacia arriba por ejemplo si n, si v es 2, n es n es múltiplo de 2 probablemente",
+        "start": 100.6,
+        "end": 107.44
+    },
+    {
+        "text": " viene, en veces solo por ejemplo vamos a tener que dividir uno que es tamaño 11, un super",
+        "start": 107.44,
+        "end": 114.56
+    },
+    {
+        "text": " uso, una subistencia, va a tener tamaño 5, tamaño 6, entonces si vio de poner el",
+        "start": 114.56,
+        "end": 118.32
+    },
+    {
+        "text": " dios y arriba y el dios y abajo, acá vamos a simplificar eso, vamos a suponer que siempre",
+        "start": 118.32,
+        "end": 122.91999999999999
+    },
+    {
+        "text": " el m es una potencia de v de modo que siempre se pueda hacer ese dicho. Por tiempo muy",
+        "start": 122.91999999999999,
+        "end": 129.84
+    },
+    {
+        "text": " igual y a veces igual o menor igual, porque ahí es decir que le vamos a poder lograr que",
+        "start": 129.84,
+        "end": 135.56
+    },
+    {
+        "text": " esto es igual, vamos a llegar a que tienes una expresión, son la notación tita y otra vamos",
+        "start": 135.56,
+        "end": 142.88
+    },
+    {
+        "text": " a poner menor porque vamos a poner igual, porque vamos a llegar a usar este O. Bueno, hay",
+        "start": 142.88,
+        "end": 151.8
+    },
+    {
+        "text": " muchas formas, esto es que se dice seguramente lo vieron en matemática discreta de manera",
+        "start": 151.8,
+        "end": 159.36
+    },
+    {
+        "text": " más extensa de la que se puede haber en un libro de diseño de algoritmos, ya hay muchas",
+        "start": 159.36,
+        "end": 165.24
+    },
+    {
+        "text": " técnicas para resolver, algunas son tanteo y después se comproba otras son más ofiticadas,",
+        "start": 165.24,
+        "end": 174.36
+    },
+    {
+        "text": " son características, pero eso no en todas las casas se puede usar. Lo que quiero es",
+        "start": 174.36,
+        "end": 181.16000000000003
+    },
+    {
+        "text": " cambiar una intuición, hacer que en la que relacionamos el a, el b y la f, en el libro",
+        "start": 181.16000000000003,
+        "end": 193.68
+    },
+    {
+        "text": " básicamente v se usa dos, o sea, separamos en dos partes, rápamente vemos algún ejemplo",
+        "start": 193.68,
+        "end": 198.44000000000003
+    },
+    {
+        "text": " en el que no usemos dos, hacemos más, pero muchísimo de los ejemplos, en la exclusiva",
+        "start": 198.44,
+        "end": 204.64
+    },
+    {
+        "text": " promoción, pero no, vivir con quita de dos, el a, el a puede ser, puede ser uno, hay gente que",
+        "start": 204.64,
+        "end": 212.32
+    },
+    {
+        "text": " le dice cuando es uno, no es vivir con quita, es de crezan con, o sea, de crementar el, es el",
+        "start": 212.32,
+        "end": 218.2
+    },
+    {
+        "text": " mismo problema aplicado a una instancia más chica nada más, solamente uno, entonces es como dividir",
+        "start": 218.2,
+        "end": 223.12
+    },
+    {
+        "text": " en varias casas, es la misma instancia más chica, entonces el libro se dice dividir en conquer,",
+        "start": 223.64000000000001,
+        "end": 228.6
+    },
+    {
+        "text": " hay otras que sí, el libro también, y que el caso hay igual uno, se considera dividir en conquer,",
+        "start": 228.6,
+        "end": 233.32
+    },
+    {
+        "text": " un caso de igual uno que seguramente conoce en ese museo tiempo es encontrar, hacer una",
+        "start": 233.32,
+        "end": 242.28
+    },
+    {
+        "text": " búsqueda en un arreglo ordenado por mi partición, que es una, que alinaría,",
+        "start": 242.28,
+        "end": 247.6
+    },
+    {
+        "text": " tengo un arreglo y divido el problema lo divido en dos, uno que no podemos cidero y otro sí,",
+        "start": 248.48,
+        "end": 254.35999999999999
+    },
+    {
+        "text": " quiero conseguiro que es el da mitad de tamaño, entonces hay gente dice eso, no es dividir,",
+        "start": 254.35999999999999,
+        "end": 258.4
+    },
+    {
+        "text": " eso es de creentar el de la instancia, bien, o sea, hay una relación para saber cuál es el orden",
+        "start": 258.4,
+        "end": 266.4
+    },
+    {
+        "text": " de TT entre a, b y f, de alguna forma, cuanto más grande sea f, más va a pesar el procesamiento",
+        "start": 266.4,
+        "end": 276.88
+    },
+    {
+        "text": " inicial y cuanto más grande sea, más van a pesar los casos base, o sea, realidad es,",
+        "start": 276.88,
+        "end": 284.79999999999995
+    },
+    {
+        "text": " hay en relación a b, según esa relación entre a y b, por un lado, y f, por otro, vamos a tener que",
+        "start": 284.79999999999995,
+        "end": 292.52
+    },
+    {
+        "text": " decir, el costo va a ser f, o va a ser algo que tiene que ver con a y b, o va a ser algo",
+        "start": 292.52,
+        "end": 299.47999999999996
+    },
+    {
+        "text": " un empate y van a ser, van a estar los mismos, va a ser los mismos, mirar por lado,",
+        "start": 299.47999999999996,
+        "end": 304.2
+    },
+    {
+        "text": " pero bien, lo cual otro, vamos a ver si podemos desarrollar esta intuición, le deza hacer lo siguiente,",
+        "start": 304.2,
+        "end": 311.64
+    },
+    {
+        "text": " le deza hacer una especie de árbol de instancia de las llamadas.",
+        "start": 311.64,
+        "end": 316.76
+    },
+    {
+        "text": " Esto va a representar la entrada original que tiene tamaño en e, y de esa voy a encontrar su",
+        "start": 342.59999999999997,
+        "end": 352.68
+    },
+    {
+        "text": " instancia, a construir su instancia y voy a recurseivamente llamar a estas instancias,",
+        "start": 352.68,
+        "end": 358.12
+    },
+    {
+        "text": " quiero que voy a hacer, aquí voy a contar el tiempo que me lleva toda la ejecución, pero",
+        "start": 358.12,
+        "end": 364.36
+    },
+    {
+        "text": " aquí está parte de acá solamente, con lo que se canse, no, bueno así, voy a encontrar solamente",
+        "start": 364.92,
+        "end": 374.28000000000003
+    },
+    {
+        "text": " el tiempo que me lleva por ser, esta parte de acá, la construcción de sus instancias y la",
+        "start": 374.28000000000003,
+        "end": 379.82
+    },
+    {
+        "text": " mezcla de resultados para la entrada original, lo que cueste nosotros se lo encuentro a este segundo",
+        "start": 379.82,
+        "end": 384.68
+    },
+    {
+        "text": " nivel, eso acá quería poner un texto que ahora pude, cuándo me cuesta esto FN, no, no pude,",
+        "start": 384.68,
+        "end": 392.28000000000003
+    },
+    {
+        "text": " cuándo me va a contar esto FN, por lo que dijimos así,",
+        "start": 395.32,
+        "end": 399.24
+    },
+    {
+        "text": " bueno, acá tengo tres, tres en este caso, no, instancia cada una va a tener tamaño en sobrev,",
+        "start": 412.08000000000004,
+        "end": 420.36
+    },
+    {
+        "text": " no, el tamaño está más bien sobrev y cuantas hay, hay, ¿cuánto me va a costar procesar esto y",
+        "start": 420.36,
+        "end": 430.2
+    },
+    {
+        "text": " me va a costar FN sobrev, o sea, porque ahora M y Lini de este parcer más en sobrev,",
+        "start": 430.2,
+        "end": 435.52000000000004
+    },
+    {
+        "text": " cuándo me va a costar N sobrev, cuantas hay, o sea, cuándo me va a costar,",
+        "start": 436.52000000000004,
+        "end": 442.68
+    },
+    {
+        "text": " cuándo me va a costar procesar todo esto,",
+        "start": 445.6,
+        "end": 447.56
+    },
+    {
+        "text": " en la costar, cada una es inisorever, quiero allá,",
+        "start": 450.36,
+        "end": 462.88
+    },
+    {
+        "text": " o sea, esto, cada vez, supondamos la muñección, no quiero más sufrir,",
+        "start": 472.88,
+        "end": 477.24
+    },
+    {
+        "text": " esto es lo que me va a costar procesar este segundo nivel, el nivel cero digamos me cuesta FN,",
+        "start": 477.24,
+        "end": 485.96000000000004
+    },
+    {
+        "text": " el segundo nivel me cuesta A por FN y V, ¿en sobrev? ¿De acuerdo con esto?",
+        "start": 485.96000000000004,
+        "end": 491.64
+    },
+    {
+        "text": " Bueno, A es A la 1 y B es B la 1, el V con cada 1 y 2, 3, voy a hacer otros 3 amadas,",
+        "start": 494.48,
+        "end": 503.56
+    },
+    {
+        "text": " y así, no voy a escribir, pero cuantas llamadas no haber acá, voy a poner directamente el texto,",
+        "start": 508.24,
+        "end": 514.6800000000001
+    },
+    {
+        "text": " si no me voy a escribir, cuantas llamadas haber acá,",
+        "start": 514.6800000000001,
+        "end": 527.4
+    },
+    {
+        "text": " por cada una de las A llamadas que hice, voy a hacer A llamadas más, y así que acá va a",
+        "start": 527.4,
+        "end": 539.3199999999999
+    },
+    {
+        "text": " ver Al cuadrados, ¿y cuál va a ser el tamaño de las instancias? En esta llamada era N,",
+        "start": 539.3199999999999,
+        "end": 547.3199999999999
+    },
+    {
+        "text": " y la original, si llamadas con tamaño de sobrev, está van a hacer N sobrev,",
+        "start": 547.32,
+        "end": 554.5600000000001
+    },
+    {
+        "text": " cuadrados, o sea que esto, bien, esto parece, ¿no?",
+        "start": 554.5600000000001,
+        "end": 564.44
+    },
+    {
+        "text": " Va a ver esto, acá sí, yo lo puedo poner A la 1 y B la 1, la acá podría poner A la 0 y",
+        "start": 568.36,
+        "end": 576.5600000000001
+    },
+    {
+        "text": " B a la 0, o sea, en el nivel 0 estos numeritos son bien les ponen de 0 y los vegan bien",
+        "start": 576.56,
+        "end": 582.52
+    },
+    {
+        "text": " de en les ponen de 0, en cada nivel va a tener como exponente en nivel, o sea en el nivel genérico,",
+        "start": 582.52,
+        "end": 588.8
+    },
+    {
+        "text": " voy a tener algo,",
+        "start": 588.8,
+        "end": 590.28
+    },
+    {
+        "text": " en el nivel y éximo voy a tener A la y, no, esto no te do, yo lo ponía así, A la y,",
+        "start": 590.28,
+        "end": 612.0
+    },
+    {
+        "text": " y ahí, ¿de acuerdo? Ahora esto va a seguir hasta aquí, hasta aquí aquí seguimos a un caso base,",
+        "start": 613.0,
+        "end": 624.2
+    },
+    {
+        "text": " mucho caso base, bien, recuerden que estamos diciendo siempre que siempre se puede vivir",
+        "start": 629.84,
+        "end": 635.88
+    },
+    {
+        "text": " entre B, entonces al final vamos a llegar a cada caso base, les deito saber y si uno cuantos",
+        "start": 635.88,
+        "end": 643.36
+    },
+    {
+        "text": " niveles, cuantas veces tuvimos que hacer la división entre B para llegar a ese lugar, ¿cuánto le",
+        "start": 643.36,
+        "end": 649.04
+    },
+    {
+        "text": " parece que puede ser?",
+        "start": 649.04,
+        "end": 649.64
+    },
+    {
+        "text": " Cuantos, cuantos niveles tuve que construir para poder llegar a los casos base,",
+        "start": 656.12,
+        "end": 662.92
+    },
+    {
+        "text": " vamos a querer hacer algo así, N dividido, B a la H, o ritmo en base B, N,",
+        "start": 666.88,
+        "end": 678.88
+    },
+    {
+        "text": " a la, por ahí, N dividido, B a la H, eso es lo que queremos, o sea, quiero saber cuantos",
+        "start": 678.88,
+        "end": 685.0
+    },
+    {
+        "text": " vale H y cuando, ¿por qué me tienes que saber cuantos vale H? Porque fíjese como eran las",
+        "start": 685.0,
+        "end": 690.92
+    },
+    {
+        "text": " fórmulas geniales, a la y dividido y ahora hay por fb, m sobreviene ahí, cuando yo sin",
+        "start": 690.92,
+        "end": 697.68
+    },
+    {
+        "text": " pa' cuantos vas a hacer, ¿cuántos casos base se hay? Ese H me va a decir la cantidad de casos",
+        "start": 697.68,
+        "end": 704.56
+    },
+    {
+        "text": " base y la cantidad de casos base a su vez me va a decir, ¿cuál es el costo de prestar todos los",
+        "start": 704.56,
+        "end": 711.0799999999999
+    },
+    {
+        "text": " casos base? Porque como todos los casos base tienen el costo 1, tenemos dicho, ¿no?",
+        "start": 711.0799999999999,
+        "end": 715.7199999999999
+    },
+    {
+        "text": " Este va a ser a la H, con ese H que tengo que saber cuantos vale, este es el costo de",
+        "start": 721.28,
+        "end": 728.0
+    },
+    {
+        "text": " procesar todos los casos base, ¿cuales recuerda que estamos haciendo? Este numarito que está acá es el",
+        "start": 728.0,
+        "end": 733.4799999999999
+    },
+    {
+        "text": " costo de procesar toda la llamada de ese nivel de llamadas, esta es la llamada original,",
+        "start": 733.4799999999999,
+        "end": 739.76
+    },
+    {
+        "text": " estas son las llamadas con tamaño de sobrev, cuesta todo esto, la llamada de tamaño N sobreviene",
+        "start": 739.76,
+        "end": 744.9599999999999
+    },
+    {
+        "text": " cuarado, cuesta todo esto, y esto es lo que va a costar, porque el caso base es 1, costa 1,",
+        "start": 744.96,
+        "end": 750.72
+    },
+    {
+        "text": " esto es lo que va a costar, progresar todos los casos base, bueno, hay que saber cuantos vale",
+        "start": 750.72,
+        "end": 756.1600000000001
+    },
+    {
+        "text": " H y de alguna forma esta fb no depende ni idea ni idea ni idea ni idea ni idea, y esta no",
+        "start": 756.1600000000001,
+        "end": 763.08
+    },
+    {
+        "text": " dependería de F, esto lo que yo le decía depende de otra vez la consejena de toda la",
+        "start": 763.08,
+        "end": 770.32
+    },
+    {
+        "text": " buena, depende de la relación entre F y N y a y tal vez de que lo que va a ser más pesado,",
+        "start": 770.32,
+        "end": 779.64
+    },
+    {
+        "text": " que lo que va a costar más a la hora de saber el problema, bueno tenemos que saber cuantos vale",
+        "start": 779.64,
+        "end": 784.6800000000001
+    },
+    {
+        "text": " H y lo sacamos de acá, se ha fallitio, ¿no? ¿Cuánto vale H?",
+        "start": 784.68,
+        "end": 788.9599999999999
+    },
+    {
+        "text": " Profes, una pregunta, no me queda claro que es a y que es que",
+        "start": 794.4799999999999,
+        "end": 799.4
+    },
+    {
+        "text": " es la cantidad de subincitancias que vamos a construir para hacer el problema,",
+        "start": 800.92,
+        "end": 807.56
+    },
+    {
+        "text": " veis qué tanto dividimos, qué tanto logramos a chicar el problema, la instancia,",
+        "start": 808.0799999999999,
+        "end": 816.3599999999999
+    },
+    {
+        "text": " el problema de la instancia sea otro, déficate, en este caso, por ejemplo, en este caso,",
+        "start": 816.3599999999999,
+        "end": 823.3199999999999
+    },
+    {
+        "text": " veis, no sé, ah, estrés, en el cuarto de instancia, ah, estrés, dar un problema original,",
+        "start": 823.3199999999999,
+        "end": 829.8399999999999
+    },
+    {
+        "text": " dar un instancia original, construir tres instancias, ¿de qué tamaño? Y capaz que son las",
+        "start": 829.8399999999999,
+        "end": 835.76
+    },
+    {
+        "text": " individuos entre dos o capaz que tres, cuatro o capaz de tres ejemplos, marces,",
+        "start": 835.76,
+        "end": 841.64
+    },
+    {
+        "text": " horas, ah, hay veis, son dos, o sea, divido el problema en dos problemas, dos instancias,",
+        "start": 841.64,
+        "end": 848.56
+    },
+    {
+        "text": " cada una tamaño, mitad, dos son más, otro ejemplo clásico, el que se dice hoy con",
+        "start": 848.56,
+        "end": 855.64
+    },
+    {
+        "text": " la igualulos, encontrar un elemento por evipartición, por lo que adivinaria, ah, es uno y veis, y veis,",
+        "start": 855.64,
+        "end": 863.56
+    },
+    {
+        "text": " pronto veremos algún ejemplo en el que ah, estrés y veis, está creo que es el segundo,",
+        "start": 866.6,
+        "end": 873.4
+    },
+    {
+        "text": " es el ejemplo del libro, ¿cámoslo es claro eso? ¿Sí importante la pregunta? Sí, ahí vamos,",
+        "start": 873.4,
+        "end": 878.96
+    },
+    {
+        "text": " claro, gracias. La cantidad, o sea, la cantidad de veis, si lo parece, vamos a código,",
+        "start": 878.96,
+        "end": 884.48
+    },
+    {
+        "text": " vamos a decir el problema tal, igual que tener ah, veis, si es la llamada recorciva,",
+        "start": 884.48,
+        "end": 891.28
+    },
+    {
+        "text": " veis, es en cuanto reducimos el problema, ¿sá? Estamos hablando de ver cuántas veces, cuántos niveles",
+        "start": 891.28,
+        "end": 902.0
+    },
+    {
+        "text": " voy a tener aquí, ¿por qué? Porque la cantidad de niveles me va a decir cuántas llamadas",
+        "start": 902.0,
+        "end": 907.76
+    },
+    {
+        "text": " recorcivas ah, no, o sea, ah, a la cantidad de niveles en la cantidad de llamadas recorcivas,",
+        "start": 907.76,
+        "end": 911.84
+    },
+    {
+        "text": " bueno, ¿cuánto vale esto? Y esto va a ser logaritmo en base V, ¿de ne, verdad? Vea la h igual a n,",
+        "start": 911.84,
+        "end": 922.92
+    },
+    {
+        "text": " h igual logaritmo en base V, ¿de ne? Ahora esto, esto es, perdón, sí, ¿tren?",
+        "start": 922.92,
+        "end": 938.1999999999999
+    },
+    {
+        "text": " ¿No hay que ver más a n? Y esto, con un poquito más temática, también es igual a",
+        "start": 938.1999999999999,
+        "end": 948.0
+    },
+    {
+        "text": " logaritmo, no, perdón, entonces, ahora, yo lo que quiero es ah, ah, lo logaritmo en base V,",
+        "start": 948.0,
+        "end": 958.24
+    },
+    {
+        "text": " es esto que está acá, bueno, pues yo lo quisiera como función de n, esto se lo funda en la",
+        "start": 964.64,
+        "end": 972.44
+    },
+    {
+        "text": " primera vez, ¿de qué está el exponente que hace como logaritmo? Esto, con un poquito",
+        "start": 972.44,
+        "end": 977.6400000000001
+    },
+    {
+        "text": " matemática se pueden saber que esto es igual a n, h igual a la logaritmo en base V, ya,",
+        "start": 977.6400000000001,
+        "end": 989.1600000000001
+    },
+    {
+        "text": " entonces si lo conoce en esto, perdón, así,",
+        "start": 989.16,
+        "end": 993.0
+    },
+    {
+        "text": " ¿no? Y mi, a la logaritmo en base V, ¿o si aquí esté, ¿tico esto acá?",
+        "start": 993.0,
+        "end": 1004.44
+    },
+    {
+        "text": " Y es eso, ¿taca?",
+        "start": 1004.44,
+        "end": 1008.7600000000001
+    },
+    {
+        "text": " En el abierto un base BDA y FM, intuitivamente, CFN es muy grande, o sea, bueno, perdón,",
+        "start": 1034.44,
+        "end": 1046.2
+    },
+    {
+        "text": " el costo, el costo de todo esto, es la suma de cada uno de estos, eso tengo que sumar",
+        "start": 1046.2,
+        "end": 1051.04
+    },
+    {
+        "text": " este, más este, más este para saber cuánto cuesta todo, puede ser el costo total de",
+        "start": 1051.04,
+        "end": 1055.48
+    },
+    {
+        "text": " BDA, intuitivamente, CFN es en un orden superior a N, elevado a lo baritmo de A, lo que cuesta",
+        "start": 1055.48,
+        "end": 1067.16
+    },
+    {
+        "text": " la mayor parte del costo va a ser procesar la entrada y la entrada inicial, sin cambio,",
+        "start": 1067.16,
+        "end": 1073.64
+    },
+    {
+        "text": " el orden de esto es mayor que el de otro, el orden de este N en la B, en el de otro,",
+        "start": 1073.64,
+        "end": 1081.04
+    },
+    {
+        "text": " es lo que F, el costo va a estar dominado por procesar los casos base, es decir, se",
+        "start": 1081.04,
+        "end": 1086.36
+    },
+    {
+        "text": " subdivide tanto el problema, voy a tener que tantos casos base, que finalmente eso,",
+        "start": 1086.36,
+        "end": 1092.2
+    },
+    {
+        "text": " la que progresar esos casos base aquí, esto es lo que va a determinar en la complejidad",
+        "start": 1092.2,
+        "end": 1096.8799999999999
+    },
+    {
+        "text": " de colombianismo, ahora qué pasa si son el mismo orden, si son el mismo orden FN y",
+        "start": 1096.8799999999999,
+        "end": 1101.6
+    },
+    {
+        "text": " N, a la elevado a lo baritmo de A, se puede mostrar que cada uno de estos niveles es igual,",
+        "start": 1101.6,
+        "end": 1107.6399999999999
+    },
+    {
+        "text": " es FN también, entonces en esos casos la cantidad de niveles que es lo baritmo multiplicada",
+        "start": 1107.64,
+        "end": 1116.64
+    },
+    {
+        "text": " por FN los da el orden, entonces ahí lo que se llama el master, master, te膨ero,",
+        "start": 1116.64,
+        "end": 1124.64
+    },
+    {
+        "text": " master, te膨ero, master meto, master te膨ero, que relaciona esto, yo no estoy de mostrar",
+        "start": 1124.64,
+        "end": 1131.72
+    },
+    {
+        "text": " lo que se le muestra matemáticamente de manera no tan complicada, pero no es el punto de este curso,",
+        "start": 1131.72,
+        "end": 1138.04
+    },
+    {
+        "text": " si te dice que se acrega, el master tiene relación a FN con N en la elevado a R y 9,",
+        "start": 1138.04,
+        "end": 1144.04
+    },
+    {
+        "text": " es la siguiente manera, si, a ver, si FN es igual, tendré que ponerlo con matemática,",
+        "start": 1145.0,
+        "end": 1154.44
+    },
+    {
+        "text": " así puedo ponerlo en el objeto, la formula, así me queda de coro,",
+        "start": 1156.44,
+        "end": 1160.88
+    },
+    {
+        "text": " si, si FN es igual,",
+        "start": 1161.72,
+        "end": 1168.72
+    },
+    {
+        "text": " TexNow,",
+        "start": 1169.68,
+        "end": 1177.18
+    },
+    {
+        "text": " Ni,",
+        "start": 1178.8600000000001,
+        "end": 1187.74
+    },
+    {
+        "text": " que bruque esto,",
+        "start": 1187.82,
+        "end": 1196.3
+    },
+    {
+        "text": " Y ahí.",
+        "start": 1196.3,
+        "end": 1202.3
+    },
+    {
+        "text": " Ahí creo así.",
+        "start": 1202.3,
+        "end": 1204.3
+    },
+    {
+        "text": " Como se ve bien chiquito pero...",
+        "start": 1204.3,
+        "end": 1214.3
+    },
+    {
+        "text": " No parece no sería caer esto.",
+        "start": 1214.3,
+        "end": 1216.3
+    },
+    {
+        "text": " No, no, no, no, no, no sé cómo se guanáis.",
+        "start": 1216.3,
+        "end": 1222.3
+    },
+    {
+        "text": " Bueno.",
+        "start": 1222.3,
+        "end": 1227.3
+    },
+    {
+        "text": " En la textura, es diferente.",
+        "start": 1227.3,
+        "end": 1229.3
+    },
+    {
+        "text": " FN es igual, tita de NX.",
+        "start": 1229.3,
+        "end": 1240.3
+    },
+    {
+        "text": " Puedo poner lo que está antes.",
+        "start": 1240.3,
+        "end": 1247.3
+    },
+    {
+        "text": " Si pasa esto, o sea, procesar la entrada original.",
+        "start": 1248.3,
+        "end": 1255.3
+    },
+    {
+        "text": " Tiene el mismo costo que los casos bases se pueden mostrar que todos los niveles,",
+        "start": 1255.3,
+        "end": 1260.3
+    },
+    {
+        "text": " pues, en lo mismo, si pasa eso, el costo de todo,",
+        "start": 1260.3,
+        "end": 1270.3
+    },
+    {
+        "text": " también tita N, lo viene.",
+        "start": 1271.3,
+        "end": 1277.3
+    },
+    {
+        "text": " Luego, lo garismo en base vero, garismo en base 12,",
+        "start": 1277.3,
+        "end": 1280.3
+    },
+    {
+        "text": " lo mismo desde el punto de calor de NX.",
+        "start": 1280.3,
+        "end": 1282.3
+    },
+    {
+        "text": " Más o menos esta parte queda clara.",
+        "start": 1282.3,
+        "end": 1285.3
+    },
+    {
+        "text": " Es un poco, un poco, arrebente, sea un poco tiempo asumindo.",
+        "start": 1285.3,
+        "end": 1289.3
+    },
+    {
+        "text": " Estoy diciendo aquí, lo que cuesta procesar la zama inicial,",
+        "start": 1289.3,
+        "end": 1295.3
+    },
+    {
+        "text": " sé para los problemas.",
+        "start": 1295.3,
+        "end": 1297.3
+    },
+    {
+        "text": " Y yo con mil arsontados, es el mismo orden que la cantidad de su...",
+        "start": 1298.3,
+        "end": 1302.3
+    },
+    {
+        "text": " De casos base que va a haber dado por el orden de FN y la cantidad de IB.",
+        "start": 1302.3,
+        "end": 1307.3
+    },
+    {
+        "text": " Si eso pasa, se demuestra que cada uno de los niveles cuesta lo mismo,",
+        "start": 1307.3,
+        "end": 1312.3
+    },
+    {
+        "text": " o sea, la suma de los...",
+        "start": 1312.3,
+        "end": 1314.3
+    },
+    {
+        "text": " de... de progresar la subistancia de cada nivel,",
+        "start": 1314.3,
+        "end": 1317.3
+    },
+    {
+        "text": " todas cuesta lo mismo.",
+        "start": 1317.3,
+        "end": 1319.3
+    },
+    {
+        "text": " ¿No?",
+        "start": 1319.3,
+        "end": 1320.3
+    },
+    {
+        "text": " Entonces, ¿cuánto cuesta todo?",
+        "start": 1320.3,
+        "end": 1322.3
+    },
+    {
+        "text": " Bueno, eso, la cada FN, que lo que cuesta de cada nivel,",
+        "start": 1322.3,
+        "end": 1325.3
+    },
+    {
+        "text": " por la cantidad de niveles, si la cantidad de niveles se dio orden de logaritmo.",
+        "start": 1325.3,
+        "end": 1328.3
+    },
+    {
+        "text": " Lo que retomó el base V, si no quiere hacer base estricto,",
+        "start": 1328.3,
+        "end": 1330.3
+    },
+    {
+        "text": " pero como es el orden, lo mismo.",
+        "start": 1330.3,
+        "end": 1332.3
+    },
+    {
+        "text": " ¿Va?",
+        "start": 1332.3,
+        "end": 1334.3
+    },
+    {
+        "text": " Entonces, ¿esto sería el caso 1?",
+        "start": 1334.3,
+        "end": 1336.3
+    },
+    {
+        "text": " Luego, tenemos el caso 2.",
+        "start": 1340.3,
+        "end": 1342.3
+    },
+    {
+        "text": " Bueno, sobre el caso 1, posiblemente sea 1 muy típico",
+        "start": 1346.3,
+        "end": 1350.3
+    },
+    {
+        "text": " y es...",
+        "start": 1350.3,
+        "end": 1351.3
+    },
+    {
+        "text": " Un 3% en 2 de estos, el caso 1.",
+        "start": 1352.3,
+        "end": 1354.3
+    },
+    {
+        "text": " El marcesor, el que fíjense, ¿cuánto va en el marcesor V?",
+        "start": 1354.3,
+        "end": 1360.3
+    },
+    {
+        "text": " 2.",
+        "start": 1360.3,
+        "end": 1362.3
+    },
+    {
+        "text": " Y a 2, logaritmo, en base 2 de 2 es 1.",
+        "start": 1362.3,
+        "end": 1367.3
+    },
+    {
+        "text": " O sea, que...",
+        "start": 1367.3,
+        "end": 1369.3
+    },
+    {
+        "text": " Esto es 1.",
+        "start": 1370.3,
+        "end": 1371.3
+    },
+    {
+        "text": " Perdón, en el 1 es M.",
+        "start": 1371.3,
+        "end": 1373.3
+    },
+    {
+        "text": " Y el F, en el marcesor, acá es M también.",
+        "start": 1373.3,
+        "end": 1375.3
+    },
+    {
+        "text": " ¿Por qué es el marces entre 2?",
+        "start": 1375.3,
+        "end": 1377.3
+    },
+    {
+        "text": " Recorremos los 2 arreglos es ordenados,",
+        "start": 1377.3,
+        "end": 1379.3
+    },
+    {
+        "text": " los 2 arreglos, y lo cuesta M.",
+        "start": 1380.3,
+        "end": 1382.3
+    },
+    {
+        "text": " Entonces, entendríamos que son de mi orden",
+        "start": 1382.3,
+        "end": 1384.3
+    },
+    {
+        "text": " y cuen es el orden famoso del marcesor N y lo N.",
+        "start": 1384.3,
+        "end": 1387.3
+    },
+    {
+        "text": " Otro ejemplo conocido, es que me se enobrecien,",
+        "start": 1388.3,
+        "end": 1390.3
+    },
+    {
+        "text": " porque la binaria en el que hay 1 y V2,",
+        "start": 1390.3,
+        "end": 1393.3
+    },
+    {
+        "text": " logaritmo, en base V, en base 2, de 1, ¿cuánto es?",
+        "start": 1393.3,
+        "end": 1398.3
+    },
+    {
+        "text": " Es 0.",
+        "start": 1401.3,
+        "end": 1402.3
+    },
+    {
+        "text": " Y en el asero es 1.",
+        "start": 1402.3,
+        "end": 1404.3
+    },
+    {
+        "text": " En la búsqueda binaria tenemos acá 1, 1,",
+        "start": 1404.3,
+        "end": 1407.3
+    },
+    {
+        "text": " acá 1, 2, le haga 1.",
+        "start": 1407.3,
+        "end": 1410.3
+    },
+    {
+        "text": " Se vuelve a cumplir que FN, que es 1,",
+        "start": 1410.3,
+        "end": 1414.3
+    },
+    {
+        "text": " es igual a N en el asero, que es 1.",
+        "start": 1414.3,
+        "end": 1418.3
+    },
+    {
+        "text": " Y otra vez la búsqueda binaria, ¿cuánto es?",
+        "start": 1418.3,
+        "end": 1421.3
+    },
+    {
+        "text": " Es logaritmo N, o sea, FN...",
+        "start": 1421.3,
+        "end": 1424.3
+    },
+    {
+        "text": " Acá puse...",
+        "start": 1426.3,
+        "end": 1428.3
+    },
+    {
+        "text": " No podemos ser N, ¿eh?",
+        "start": 1429.3,
+        "end": 1430.3
+    },
+    {
+        "text": " Voy poner FN acá.",
+        "start": 1430.3,
+        "end": 1432.3
+    },
+    {
+        "text": " No, acá está bien.",
+        "start": 1438.3,
+        "end": 1440.3
+    },
+    {
+        "text": " Acá le voy a poner FN.",
+        "start": 1440.3,
+        "end": 1442.3
+    },
+    {
+        "text": " Bueno, ahora, eso es el caso 1.",
+        "start": 1447.3,
+        "end": 1450.3
+    },
+    {
+        "text": " La otra posibilidad es que FN sea...",
+        "start": 1450.3,
+        "end": 1454.3
+    },
+    {
+        "text": " más grande dicho de manera informal que es todo otro.",
+        "start": 1454.3,
+        "end": 1458.3
+    },
+    {
+        "text": " O sea, eso es lo que pone así, N,",
+        "start": 1458.3,
+        "end": 1460.3
+    },
+    {
+        "text": " y le va a dobar la logaritmo de base más C,",
+        "start": 1460.3,
+        "end": 1464.3
+    },
+    {
+        "text": " si lo hago así.",
+        "start": 1464.3,
+        "end": 1466.3
+    },
+    {
+        "text": " O sea, es estrictamente más grande, cuesta más.",
+        "start": 1468.3,
+        "end": 1472.3
+    },
+    {
+        "text": " En este caso va a ser FN.",
+        "start": 1472.3,
+        "end": 1477.3
+    },
+    {
+        "text": " A ver si queda claro esto.",
+        "start": 1480.3,
+        "end": 1483.3
+    },
+    {
+        "text": " Acá estoy diciendo que acá irás exactamente lo mismo,",
+        "start": 1483.3,
+        "end": 1486.3
+    },
+    {
+        "text": " N a la logaritmo más en media.",
+        "start": 1486.3,
+        "end": 1488.3
+    },
+    {
+        "text": " Acá estoy diciendo que sí en el elevado",
+        "start": 1488.3,
+        "end": 1490.3
+    },
+    {
+        "text": " la Epsilon Mass, o sea,",
+        "start": 1490.3,
+        "end": 1492.3
+    },
+    {
+        "text": " es más, es polinomialmente mayor,",
+        "start": 1492.3,
+        "end": 1494.3
+    },
+    {
+        "text": " y además tiene que cumplir un poco...",
+        "start": 1494.3,
+        "end": 1496.3
+    },
+    {
+        "text": " algunas otras restricciones en la función.",
+        "start": 1496.3,
+        "end": 1498.3
+    },
+    {
+        "text": " O sea, FN es mayor en la cantidad de casos base.",
+        "start": 1498.3,
+        "end": 1502.3
+    },
+    {
+        "text": " En ese caso, el costo va a estar dominado por procesar",
+        "start": 1502.3,
+        "end": 1506.3
+    },
+    {
+        "text": " la primera llamada.",
+        "start": 1506.3,
+        "end": 1508.3
+    },
+    {
+        "text": " La primera llamada está en grande, o cuesta tanto procesarla,",
+        "start": 1508.3,
+        "end": 1512.3
+    },
+    {
+        "text": " y eso va a ser mucho mayor que lo que el resto.",
+        "start": 1512.3,
+        "end": 1514.3
+    },
+    {
+        "text": " Después con esta se más chiquitas,",
+        "start": 1514.3,
+        "end": 1516.3
+    },
+    {
+        "text": " o sea, en lugar de N, N sobre V,",
+        "start": 1516.3,
+        "end": 1518.3
+    },
+    {
+        "text": " se empieza a diminuir.",
+        "start": 1518.3,
+        "end": 1520.3
+    },
+    {
+        "text": " En cada uno de los pasos va a ser menos costoso.",
+        "start": 1520.3,
+        "end": 1523.3
+    },
+    {
+        "text": " El costo grande va a ser esa más original.",
+        "start": 1523.3,
+        "end": 1525.3
+    },
+    {
+        "text": " Y bueno, en otro caso,",
+        "start": 1526.3,
+        "end": 1528.3
+    },
+    {
+        "text": " obviamente es, o es la revés.",
+        "start": 1530.3,
+        "end": 1532.3
+    },
+    {
+        "text": " Acá sería menos sencillo.",
+        "start": 1539.3,
+        "end": 1541.3
+    },
+    {
+        "text": " Y acá lo que nos quedaría es que el costo es...",
+        "start": 1543.3,
+        "end": 1546.3
+    },
+    {
+        "text": " ...es que está...",
+        "start": 1546.3,
+        "end": 1548.3
+    },
+    {
+        "text": " O sea, si FN es chico,",
+        "start": 1557.3,
+        "end": 1560.3
+    },
+    {
+        "text": " el costo va a ser la cantidad de casos base.",
+        "start": 1560.3,
+        "end": 1563.3
+    },
+    {
+        "text": " O sea, lo que cuesta pronunciar los casos base.",
+        "start": 1563.3,
+        "end": 1566.3
+    },
+    {
+        "text": " Esto es que tiene un costo,",
+        "start": 1566.3,
+        "end": 1568.3
+    },
+    {
+        "text": " pero este otro tiene más.",
+        "start": 1568.3,
+        "end": 1570.3
+    },
+    {
+        "text": " Este nivel más y este más y este más.",
+        "start": 1570.3,
+        "end": 1573.3
+    },
+    {
+        "text": " Bueno, si yo con lo hacemos,",
+        "start": 1573.3,
+        "end": 1575.3
+    },
+    {
+        "text": " va a resultar que esto domina todo lo demás.",
+        "start": 1575.3,
+        "end": 1578.3
+    },
+    {
+        "text": " O sea que el orden de la suma es el que la meta acababa.",
+        "start": 1578.3,
+        "end": 1582.3
+    },
+    {
+        "text": " O sea, más o menos uno con esta formulita comparando FN y con N,",
+        "start": 1583.3,
+        "end": 1588.3
+    },
+    {
+        "text": " en la logaritmo de A,",
+        "start": 1588.3,
+        "end": 1590.3
+    },
+    {
+        "text": " la última base de A,",
+        "start": 1590.3,
+        "end": 1592.3
+    },
+    {
+        "text": " sabe cuantos y los tres casos principales.",
+        "start": 1592.3,
+        "end": 1596.3
+    },
+    {
+        "text": " No es exactamente...",
+        "start": 1596.3,
+        "end": 1598.3
+    },
+    {
+        "text": " No vale para cualquier función FN,",
+        "start": 1598.3,
+        "end": 1600.3
+    },
+    {
+        "text": " pero prácticamente para cualquier de las funciones interesantes de uso",
+        "start": 1600.3,
+        "end": 1605.3
+    },
+    {
+        "text": " en la ansiedad de logaritmo funcional.",
+        "start": 1605.3,
+        "end": 1610.3
+    },
+    {
+        "text": " A parte de este caso,",
+        "start": 1611.3,
+        "end": 1613.3
+    },
+    {
+        "text": " la función FN,",
+        "start": 1613.3,
+        "end": 1614.3
+    },
+    {
+        "text": " tiene que cumplir determinadas cartelíticas más,",
+        "start": 1614.3,
+        "end": 1617.3
+    },
+    {
+        "text": " que normalmente se ponte.",
+        "start": 1617.3,
+        "end": 1619.3
+    },
+    {
+        "text": " Bueno, esto es instituitive,",
+        "start": 1619.3,
+        "end": 1621.3
+    },
+    {
+        "text": " todo esto está demostrado, obviamente, no?",
+        "start": 1621.3,
+        "end": 1623.3
+    },
+    {
+        "text": " Todo se demuestra,",
+        "start": 1623.3,
+        "end": 1624.3
+    },
+    {
+        "text": " pero me interesa a eso.",
+        "start": 1624.3,
+        "end": 1626.3
+    },
+    {
+        "text": " Interesa que bien...",
+        "start": 1626.3,
+        "end": 1628.3
+    },
+    {
+        "text": " Estrata en relación a eso.",
+        "start": 1628.3,
+        "end": 1630.3
+    },
+    {
+        "text": " Nadie se aguarda del Master T-Brem,",
+        "start": 1630.3,
+        "end": 1632.3
+    },
+    {
+        "text": " pero uno, si lo razona,",
+        "start": 1632.3,
+        "end": 1634.3
+    },
+    {
+        "text": " segue a la conclusión,",
+        "start": 1634.3,
+        "end": 1635.3
+    },
+    {
+        "text": " segue a eso,",
+        "start": 1635.3,
+        "end": 1636.3
+    },
+    {
+        "text": " segue a comparar FN y con N,",
+        "start": 1636.3,
+        "end": 1638.3
+    },
+    {
+        "text": " de lo cual es el N,",
+        "start": 1639.3,
+        "end": 1641.3
+    },
+    {
+        "text": " y más o menos uno sabe ahí cuál es el orden,",
+        "start": 1641.3,
+        "end": 1644.3
+    },
+    {
+        "text": " pero después puede mostrar más rigorosamente",
+        "start": 1644.3,
+        "end": 1647.3
+    },
+    {
+        "text": " o su institución,",
+        "start": 1647.3,
+        "end": 1649.3
+    },
+    {
+        "text": " con el aumento que están platicando hasta por ahí.",
+        "start": 1649.3,
+        "end": 1652.3
+    },
+    {
+        "text": " ¿Ustedes?",
+        "start": 1652.3,
+        "end": 1653.3
+    },
+    {
+        "text": " Sí, yo no entendí muy bien que quiere decir con el Master T-Brem,",
+        "start": 1653.3,
+        "end": 1656.3
+    },
+    {
+        "text": " o sea, que está diciendo.",
+        "start": 1656.3,
+        "end": 1657.3
+    },
+    {
+        "text": " ¿Cómo sabemos...",
+        "start": 1659.3,
+        "end": 1661.3
+    },
+    {
+        "text": " cuando vemos esta relación de recurrencia,",
+        "start": 1661.3,
+        "end": 1664.3
+    },
+    {
+        "text": " cómo le damos cuenta cuál es T?",
+        "start": 1664.3,
+        "end": 1667.3
+    },
+    {
+        "text": " La relación de recurrencia se debe resolver",
+        "start": 1667.3,
+        "end": 1669.3
+    },
+    {
+        "text": " para sacar algo de tipo,",
+        "start": 1669.3,
+        "end": 1670.3
+    },
+    {
+        "text": " TN igual, N, lo que hay como N,",
+        "start": 1670.3,
+        "end": 1672.3
+    },
+    {
+        "text": " TN igual, N cuadrado,",
+        "start": 1672.3,
+        "end": 1674.3
+    },
+    {
+        "text": " lo que hay como N,",
+        "start": 1674.3,
+        "end": 1675.3
+    },
+    {
+        "text": " es un objetivo.",
+        "start": 1675.3,
+        "end": 1676.3
+    },
+    {
+        "text": " Hay que resolver la relación de recurrencia.",
+        "start": 1676.3,
+        "end": 1678.3
+    },
+    {
+        "text": " ¿Tá?",
+        "start": 1678.3,
+        "end": 1679.3
+    },
+    {
+        "text": " Entonces,",
+        "start": 1679.3,
+        "end": 1680.3
+    },
+    {
+        "text": " y eso puede ser difícil, no?",
+        "start": 1680.3,
+        "end": 1682.3
+    },
+    {
+        "text": " El Master T-Brem nos dice directamente cuál es esta solución.",
+        "start": 1682.3,
+        "end": 1688.3
+    },
+    {
+        "text": " O sea, sin resolver la relación de recurrencia,",
+        "start": 1691.3,
+        "end": 1694.3
+    },
+    {
+        "text": " sin tratar de...",
+        "start": 1694.3,
+        "end": 1695.3
+    },
+    {
+        "text": " sin ponerle a resolver la relación de recurrencia,",
+        "start": 1695.3,
+        "end": 1697.3
+    },
+    {
+        "text": " sabemos cuál es la resultado.",
+        "start": 1697.3,
+        "end": 1699.3
+    },
+    {
+        "text": " Simplemente, cuarenta es tres casos,",
+        "start": 1699.3,
+        "end": 1701.3
+    },
+    {
+        "text": " comparando el FN y con N,",
+        "start": 1701.3,
+        "end": 1703.3
+    },
+    {
+        "text": " el logaritmo de B,",
+        "start": 1703.3,
+        "end": 1704.3
+    },
+    {
+        "text": " y cada uno es tres casos.",
+        "start": 1704.3,
+        "end": 1706.3
+    },
+    {
+        "text": " Ok, gracias.",
+        "start": 1708.3,
+        "end": 1709.3
+    },
+    {
+        "text": " ¿Estás?",
+        "start": 1709.3,
+        "end": 1710.3
+    },
+    {
+        "text": " Bueno, esto es un poco complicado,",
+        "start": 1710.3,
+        "end": 1713.3
+    },
+    {
+        "text": " pero no hay licencia del curso,",
+        "start": 1713.3,
+        "end": 1717.3
+    },
+    {
+        "text": " resolver la relación de recurrencia,",
+        "start": 1717.3,
+        "end": 1718.3
+    },
+    {
+        "text": " pero uno, cuando tiene un problema,",
+        "start": 1718.3,
+        "end": 1721.3
+    },
+    {
+        "text": " va a llegar la relación de recurrencia",
+        "start": 1721.3,
+        "end": 1724.3
+    },
+    {
+        "text": " y de último, tiene que saber cuál es el resultado.",
+        "start": 1724.3,
+        "end": 1727.3
+    },
+    {
+        "text": " Lo que es el resultado es saber,",
+        "start": 1727.3,
+        "end": 1729.3
+    },
+    {
+        "text": " TN igual, N,",
+        "start": 1729.3,
+        "end": 1731.3
+    },
+    {
+        "text": " o menor igual,",
+        "start": 1731.3,
+        "end": 1733.3
+    },
+    {
+        "text": " igual, N,",
+        "start": 1733.3,
+        "end": 1734.3
+    },
+    {
+        "text": " o menor igual,",
+        "start": 1734.3,
+        "end": 1736.3
+    },
+    {
+        "text": " tiene que tener una método para saber esa relación.",
+        "start": 1736.3,
+        "end": 1740.3
+    },
+    {
+        "text": " Algunas son prácticamente fáciles o son más difíciles.",
+        "start": 1740.3,
+        "end": 1743.3
+    },
+    {
+        "text": " El Master T-Brem,",
+        "start": 1743.3,
+        "end": 1744.3
+    },
+    {
+        "text": " más o menos, nos orienta a la tiempia rápido para saber cuál es el que esperamos.",
+        "start": 1744.3,
+        "end": 1749.3
+    },
+    {
+        "text": " ¿Tá?",
+        "start": 1749.3,
+        "end": 1750.3
+    },
+    {
+        "text": " Son ideas, ¿es eso?",
+        "start": 1750.3,
+        "end": 1752.3
+    },
+    {
+        "text": " Bueno, en el libro,",
+        "start": 1752.3,
+        "end": 1755.3
+    },
+    {
+        "text": " hay algunas formas de resolvernos,",
+        "start": 1755.3,
+        "end": 1758.3
+    },
+    {
+        "text": " haciendo un invento,",
+        "start": 1758.3,
+        "end": 1760.3
+    },
+    {
+        "text": " ya calculando que uno podía hacerla,",
+        "start": 1760.3,
+        "end": 1761.3
+    },
+    {
+        "text": " sacarlo acá,",
+        "start": 1761.3,
+        "end": 1762.3
+    },
+    {
+        "text": " me lo he cuenta que podría ser esto,",
+        "start": 1762.3,
+        "end": 1764.3
+    },
+    {
+        "text": " si lo probaré, y bueno,",
+        "start": 1764.3,
+        "end": 1766.3
+    },
+    {
+        "text": " prueba ahí alguna cuantita,",
+        "start": 1766.3,
+        "end": 1769.3
+    },
+    {
+        "text": " otra es,",
+        "start": 1769.3,
+        "end": 1771.3
+    },
+    {
+        "text": " una enrola,",
+        "start": 1771.3,
+        "end": 1773.3
+    },
+    {
+        "text": " como dicen,",
+        "start": 1773.3,
+        "end": 1774.3
+    },
+    {
+        "text": " rollar,",
+        "start": 1774.3,
+        "end": 1775.3
+    },
+    {
+        "text": " ¿no?",
+        "start": 1775.3,
+        "end": 1776.3
+    },
+    {
+        "text": " ¿Su puedo ajustar a un por",
+        "start": 1776.3,
+        "end": 1778.3
+    },
+    {
+        "text": " que no se puede hacer?",
+        "start": 1778.3,
+        "end": 1779.3
+    },
+    {
+        "text": " Si no es algo así, no.",
+        "start": 1779.3,
+        "end": 1781.3
+    },
+    {
+        "text": " ¿Su puedo ajustar a un por",
+        "start": 1781.3,
+        "end": 1783.3
+    },
+    {
+        "text": " sustitución hacia atrás?",
+        "start": 1783.3,
+        "end": 1785.3
+    },
+    {
+        "text": " Si no, hacia adelante.",
+        "start": 1785.3,
+        "end": 1787.3
+    },
+    {
+        "text": " Bueno, en varios momentos.",
+        "start": 1787.3,
+        "end": 1788.3
+    },
+    {
+        "text": " Repente trabajamos con alguno cuando,",
+        "start": 1788.3,
+        "end": 1790.3
+    },
+    {
+        "text": " cuando vemos ello.",
+        "start": 1790.3,
+        "end": 1792.3
+    },
+    {
+        "text": " Si no vemos algún problema concreto.",
+        "start": 1792.3,
+        "end": 1795.3
+    },
+    {
+        "text": " ¿A algún problema concreto?",
+        "start": 1795.3,
+        "end": 1798.3
+    },
+    {
+        "text": " ¿Por qué entonces si no,",
+        "start": 1798.3,
+        "end": 1801.3
+    },
+    {
+        "text": " iríamos a ver algún problema concreto?",
+        "start": 1801.3,
+        "end": 1805.3
+    },
+    {
+        "text": " Y...",
+        "start": 1805.3,
+        "end": 1808.3
+    },
+    {
+        "text": " ¿Dónde lo que está en el libro? Vamos a verlo que está en...",
+        "start": 1808.3,
+        "end": 1811.3
+    },
+    {
+        "text": " ¿Trabés, no?",
+        "start": 1812.3,
+        "end": 1814.3
+    },
+    {
+        "text": " ¿Alguno que está en el libro y de repente, si nada tiempo, le he puesto",
+        "start": 1822.3,
+        "end": 1825.3
+    },
+    {
+        "text": " alguno que sí hizo algún otro año?",
+        "start": 1825.3,
+        "end": 1828.3
+    },
+    {
+        "text": " Entrarte capaz casi como alguno como de la corrente de la recreativa.",
+        "start": 1829.3,
+        "end": 1832.3
+    },
+    {
+        "text": " Bueno, el primer ejercicio que está en el libro,",
+        "start": 1833.3,
+        "end": 1836.3
+    },
+    {
+        "text": " a ver, creo que es el de contar inversiones.",
+        "start": 1837.3,
+        "end": 1840.3
+    },
+    {
+        "text": " Ahí se afundamente en torno a...",
+        "start": 1841.3,
+        "end": 1843.3
+    },
+    {
+        "text": " ...similitudes entre gustos por películas y demás entre personas.",
+        "start": 1844.3,
+        "end": 1849.3
+    },
+    {
+        "text": " Nosotros sabimos lo que es una inversión.",
+        "start": 1849.3,
+        "end": 1851.3
+    },
+    {
+        "text": " En el problema de...",
+        "start": 1852.3,
+        "end": 1854.3
+    },
+    {
+        "text": " ...de planificación de intervalos con plazos,",
+        "start": 1855.3,
+        "end": 1858.3
+    },
+    {
+        "text": " habíamos visto que teníamos nuestra solución y otra solución diferente.",
+        "start": 1858.3,
+        "end": 1863.3
+    },
+    {
+        "text": " La solución consistía en ordenar, o sea, elegir todos los elementos",
+        "start": 1864.3,
+        "end": 1868.3
+    },
+    {
+        "text": " en determinado orden, otra solución iba a tener otro orden.",
+        "start": 1868.3,
+        "end": 1872.3
+    },
+    {
+        "text": " Y lo planteamos para la técnica de demostrar a través del argumento del examen.",
+        "start": 1873.3,
+        "end": 1879.3
+    },
+    {
+        "text": " Entonces lo que veíamos era, en ese ejemplo, la forma de demostrar,",
+        "start": 1880.3,
+        "end": 1883.3
+    },
+    {
+        "text": " ...sótenmos una solución, la solución del otro es diferente.",
+        "start": 1884.3,
+        "end": 1888.3
+    },
+    {
+        "text": " ¿Por qué? Porque tiene inversiones con respecto al nuestro, o sea,",
+        "start": 1889.3,
+        "end": 1893.3
+    },
+    {
+        "text": " lo que para nosotros y estantes que jota, para él, jota estantes que hay.",
+        "start": 1893.3,
+        "end": 1897.3
+    },
+    {
+        "text": " Esa es una inversión en el libro, en el para el ejercicio,",
+        "start": 1898.3,
+        "end": 1901.3
+    },
+    {
+        "text": " se plantea en torno a...",
+        "start": 1901.3,
+        "end": 1903.3
+    },
+    {
+        "text": " ...sínitudes en...",
+        "start": 1903.3,
+        "end": 1904.3
+    },
+    {
+        "text": " ...y creo que rankings de gusto de peligro y la cosa por el estilo.",
+        "start": 1904.3,
+        "end": 1907.3
+    },
+    {
+        "text": " Bueno, pero entonces ahora, desde lo que digo final de este problema,",
+        "start": 1908.3,
+        "end": 1913.3
+    },
+    {
+        "text": " es contar cuántas inversiones tienen, o sea, tengo algo que se llama a uno,",
+        "start": 1913.3,
+        "end": 1919.3
+    },
+    {
+        "text": " una secuencia, se puede ser de números, digamos, de una línea",
+        "start": 1920.3,
+        "end": 1926.3
+    },
+    {
+        "text": " y queremos saber cuántas inversiones hay.",
+        "start": 1927.3,
+        "end": 1930.3
+    },
+    {
+        "text": " O sea, cuantas veces aparece un í, antes que un jota, cuando í es más o que jota.",
+        "start": 1931.3,
+        "end": 1936.3
+    },
+    {
+        "text": " ¿Cuánta dijimos que podía ver?",
+        "start": 1938.3,
+        "end": 1942.3
+    },
+    {
+        "text": " Máximo.",
+        "start": 1943.3,
+        "end": 1944.3
+    },
+    {
+        "text": " ¿Cuántas?",
+        "start": 1950.3,
+        "end": 1954.3
+    },
+    {
+        "text": " Cominación en el tomado.",
+        "start": 1954.3,
+        "end": 1956.3
+    },
+    {
+        "text": " Exacto, o sea, cada par y jota lo puede estar correcto o puede estar incorrecto o puede estar arries.",
+        "start": 1956.3,
+        "end": 1965.3
+    },
+    {
+        "text": " Entonces, la cantidad es...",
+        "start": 1965.3,
+        "end": 1967.3
+    },
+    {
+        "text": " No, no, no, pero pone así, en ni más 1, en ni más 1, perdón,",
+        "start": 1967.3,
+        "end": 1970.3
+    },
+    {
+        "text": " más,",
+        "start": 1971.3,
+        "end": 1972.3
+    },
+    {
+        "text": " en ni menos 2,",
+        "start": 1972.3,
+        "end": 1974.3
+    },
+    {
+        "text": " o sea, otra forma de verlo, ¿no?",
+        "start": 1975.3,
+        "end": 1977.3
+    },
+    {
+        "text": " más 1, ¿qué es igual a",
+        "start": 1977.3,
+        "end": 1980.3
+    },
+    {
+        "text": " N",
+        "start": 1982.3,
+        "end": 1983.3
+    },
+    {
+        "text": " por ni menos 1, sobre 2.",
+        "start": 1984.3,
+        "end": 1987.3
+    },
+    {
+        "text": " ¿Cá?",
+        "start": 1991.3,
+        "end": 1992.3
+    },
+    {
+        "text": " Cominación en el tomado, tomado de 2.",
+        "start": 1992.3,
+        "end": 1994.3
+    },
+    {
+        "text": " ¿Cá?",
+        "start": 1994.3,
+        "end": 1995.3
+    },
+    {
+        "text": " Si hacemos saber cuántas hay en concreto,",
+        "start": 1995.3,
+        "end": 1997.3
+    },
+    {
+        "text": " en una secuencia, una cosa que podemos hacer es ir y tomar cada uno de los pares y ir y mirar cada uno de los pares.",
+        "start": 1997.3,
+        "end": 2005.3
+    },
+    {
+        "text": " El costo de eso va a ser esto, ¿táin?",
+        "start": 2006.3,
+        "end": 2009.3
+    },
+    {
+        "text": " En igual de ahora.",
+        "start": 2009.3,
+        "end": 2010.3
+    },
+    {
+        "text": " Lo que nos proponemos es ver cómo reducir ese costo a través de la técnica de nir y compisto.",
+        "start": 2013.3,
+        "end": 2022.3
+    },
+    {
+        "text": " Bueno, entonces acá tenemos la instancia es",
+        "start": 2023.3,
+        "end": 2026.3
+    },
+    {
+        "text": " una, una, una, una secuencia de enelimento, el tamaño es m.",
+        "start": 2028.3,
+        "end": 2032.3
+    },
+    {
+        "text": " ¿Qué les parece que podemos hacer?",
+        "start": 2035.3,
+        "end": 2036.3
+    },
+    {
+        "text": " dividirlo en varios problemas de cuál es que tamaño.",
+        "start": 2038.3,
+        "end": 2042.3
+    },
+    {
+        "text": " Agármelo, lo más fácil primero.",
+        "start": 2043.3,
+        "end": 2045.3
+    },
+    {
+        "text": " ¿De qué tamaño la primera idea es de qué tamaño podría hacer los?",
+        "start": 2046.3,
+        "end": 2054.3
+    },
+    {
+        "text": " En la mitad.",
+        "start": 2055.3,
+        "end": 2056.3
+    },
+    {
+        "text": " En la mitad.",
+        "start": 2056.3,
+        "end": 2057.3
+    },
+    {
+        "text": " ¿Cuántas, cuántas subestan, seamos teniendo en construir o una sola podríamos construir?",
+        "start": 2057.3,
+        "end": 2063.3
+    },
+    {
+        "text": " O sea, tomo de a 1 hasta a nir, en, en, en sobre 2 y trabajo solo con eso.",
+        "start": 2064.3,
+        "end": 2069.3
+    },
+    {
+        "text": " El de no, no, si estás bajo las inversiones en las dos mitades.",
+        "start": 2070.3,
+        "end": 2075.3
+    },
+    {
+        "text": " Te voy a contar también las que están del otro lado, ¿no?",
+        "start": 2076.3,
+        "end": 2078.3
+    },
+    {
+        "text": " O sea, que voy a tener a igual 2 y a igual 2, según lo que habíamos en, en, en, en, en las formas general.",
+        "start": 2078.3,
+        "end": 2083.3
+    },
+    {
+        "text": " O sea, que lo que cariamos es, tomo la instancia, la instancia, tomo la primera mitad, resuelvo el problema para la primera mitad.",
+        "start": 2084.3,
+        "end": 2091.3
+    },
+    {
+        "text": " Tome la primera mitad, resuelvo el problema para la primera mitad.",
+        "start": 2091.3,
+        "end": 2094.3
+    },
+    {
+        "text": " Tome la segunda mitad, resuelo, preparando la mitad y, de alguna forma, después, compido.",
+        "start": 2095.3,
+        "end": 2100.3
+    },
+    {
+        "text": " Y tengo que preocuparme de, en el caso base. ¿Cuál puede ser el caso base acá?",
+        "start": 2100.3,
+        "end": 2105.3
+    },
+    {
+        "text": " Tamaño 1, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.",
+        "start": 2106.3,
+        "end": 2114.3
+    },
+    {
+        "text": " Tamaño 2, ¿no? ¿Le puedes comparar?",
+        "start": 2115.3,
+        "end": 2117.3
+    },
+    {
+        "text": " Vamos a superar otra vez como siempre tienes potencia a dos para sacarnos el programa encima. Podemos suponer que así que si tamaño es dos, ¿cuánto cuesta resolver esto?",
+        "start": 2117.3,
+        "end": 2127.3
+    },
+    {
+        "text": " ¿Cómo sabemos cuántas inversiones hay si tenemos solamente dos elementos?",
+        "start": 2129.3,
+        "end": 2132.3
+    },
+    {
+        "text": " Samente comparar así y hay uno más chido que otro.",
+        "start": 2133.3,
+        "end": 2135.3
+    },
+    {
+        "text": " Hay que hacer con una comparación.",
+        "start": 2135.3,
+        "end": 2137.3
+    },
+    {
+        "text": " Entonces, lo otro que no sabemos es si otro. Tiene con ínima, solo hay dos.",
+        "start": 2138.3,
+        "end": 2144.3
+    },
+    {
+        "text": " Sabemos que va a ser igual o menor. Vamos a hacer más precavidos.",
+        "start": 2144.3,
+        "end": 2148.3
+    },
+    {
+        "text": " No hay igual.",
+        "start": 2148.3,
+        "end": 2150.3
+    },
+    {
+        "text": " Duces vamos a resolver problemas de tamaño.",
+        "start": 2152.3,
+        "end": 2156.3
+    },
+    {
+        "text": " Y es sobre dos más una cierta función que no sabemos cuando es.",
+        "start": 2156.3,
+        "end": 2161.3
+    },
+    {
+        "text": " Porque vamos a hacer un problema. Supongamos que resolvimos una subistencia.",
+        "start": 2162.3,
+        "end": 2171.3
+    },
+    {
+        "text": " O sea, si cuántas inversiones hay en la primera mitad.",
+        "start": 2171.3,
+        "end": 2175.3
+    },
+    {
+        "text": " Es el resultado que veo tener de la primera se amaba.",
+        "start": 2175.3,
+        "end": 2179.3
+    },
+    {
+        "text": " O sea, va a ser el mismo problema aplicado a un caso o el tránsito más chica.",
+        "start": 2179.3,
+        "end": 2185.3
+    },
+    {
+        "text": " Entonces, ¿qué me va a decir cuántas inversiones hay en la primera mitad?",
+        "start": 2186.3,
+        "end": 2190.3
+    },
+    {
+        "text": " Y me va a dar cuántas inversiones hay en la mitad. ¿Qué me falta con eso?",
+        "start": 2190.3,
+        "end": 2195.3
+    },
+    {
+        "text": " Supongamos que la instancia, un instancia de ejemplo, es...",
+        "start": 2198.3,
+        "end": 2202.3
+    },
+    {
+        "text": " 8, 2, 3, sin...",
+        "start": 2202.3,
+        "end": 2209.3
+    },
+    {
+        "text": " ¿Qué me faltaría considerarles en medio si es un inversión?",
+        "start": 2210.3,
+        "end": 2213.3
+    },
+    {
+        "text": " 4, 1, que me falta por acá, 6, 7 y 6.",
+        "start": 2213.3,
+        "end": 2217.3
+    },
+    {
+        "text": " Supuestamente, sabemos a esto y antes sabemos de esto otro que nos dio 1.",
+        "start": 2219.3,
+        "end": 2224.3
+    },
+    {
+        "text": " Cuando estamos hoy, nos dio 0 y después tenemos que juntar este 1 de acá con este 0 de acá.",
+        "start": 2224.3,
+        "end": 2231.3
+    },
+    {
+        "text": " Y cuántas inversiones habrán acá en el caparte? 1 más 0 o hay más.",
+        "start": 2231.3,
+        "end": 2236.3
+    },
+    {
+        "text": " Sí, hay 2, ¿no?",
+        "start": 2240.3,
+        "end": 2242.3
+    },
+    {
+        "text": " Hay más 2 porque si gaste que está el 8 con 3, a la revés.",
+        "start": 2243.3,
+        "end": 2248.3
+    },
+    {
+        "text": " 2 más a parte que teníamos.",
+        "start": 2248.3,
+        "end": 2251.3
+    },
+    {
+        "text": " Y bueno, acá ya vamos lo mismo, el 4 es 1 y nos da 1 inversión.",
+        "start": 2251.3,
+        "end": 2254.3
+    },
+    {
+        "text": " 7 y 6 nos da 1 inversión.",
+        "start": 2254.3,
+        "end": 2256.3
+    },
+    {
+        "text": " Cuando os juntamos esto nos da... nos da manada, ¿no?",
+        "start": 2256.3,
+        "end": 2263.3
+    },
+    {
+        "text": " Porque el 4 está antes que esté que el C, y nos da bien.",
+        "start": 2263.3,
+        "end": 2266.3
+    },
+    {
+        "text": " Esto nos daría 1 por acá, 1 por acá, al juntar esto, nada más,",
+        "start": 2267.3,
+        "end": 2273.3
+    },
+    {
+        "text": " son 2 nada más, ¿no?",
+        "start": 2273.3,
+        "end": 2275.3
+    },
+    {
+        "text": " Si no me equivoco, son 2 nada más, ¿no?",
+        "start": 2275.3,
+        "end": 2277.3
+    },
+    {
+        "text": " Esto esto nos daría 2, desde el lado nos daba 1 por acá,",
+        "start": 2277.3,
+        "end": 2281.3
+    },
+    {
+        "text": " sirve acá, 2 más a el juntar, o sea acá teníamos 3 y acá teníamos 2.",
+        "start": 2281.3,
+        "end": 2287.3
+    },
+    {
+        "text": " Y ahora para juntar todo esto van a aparecer en los 4 manos, ¿no?",
+        "start": 2287.3,
+        "end": 2291.3
+    },
+    {
+        "text": " Por ejemplo, el 8 va a aparecer 4 veces más, el 2 va a aparecer 1 vez más,",
+        "start": 2292.3,
+        "end": 2300.3
+    },
+    {
+        "text": " y el 3 una vez más también, ¿no?",
+        "start": 2300.3,
+        "end": 2303.3
+    },
+    {
+        "text": " No sé cuántas son, personas, ¿no?",
+        "start": 2303.3,
+        "end": 2305.3
+    },
+    {
+        "text": " O sea, el hecho de que tengamos resuelta en las 2 subincancias,",
+        "start": 2305.3,
+        "end": 2309.3
+    },
+    {
+        "text": " no nos terminamos sobre el problema, tenemos que hacer algo más.",
+        "start": 2309.3,
+        "end": 2313.3
+    },
+    {
+        "text": " Y eso va a estar que hay que cargarlo acá, que hay que resolverlo.",
+        "start": 2313.3,
+        "end": 2317.3
+    },
+    {
+        "text": " Esta parte tuvo 2 partes, una, se para el problema,",
+        "start": 2318.3,
+        "end": 2322.3
+    },
+    {
+        "text": " que para el otro fue fácil, supongo que tenemos una regla,",
+        "start": 2322.3,
+        "end": 2325.3
+    },
+    {
+        "text": " lo partimos en 2 y chau, otro dirán, no, no tengo una regla,",
+        "start": 2325.3,
+        "end": 2328.3
+    },
+    {
+        "text": " lo tengo un conjunto, tengo que trabajar y armarnos con la mitad por un lado y la mitad para el otro,",
+        "start": 2328.3,
+        "end": 2334.3
+    },
+    {
+        "text": " entonces, si a eso solo me costaría en mi,",
+        "start": 2334.3,
+        "end": 2336.3
+    },
+    {
+        "text": " ahora vamos a ver cuánto me cuesta resolver juntarnos problemas.",
+        "start": 2336.3,
+        "end": 2341.3
+    },
+    {
+        "text": " Con nuestra visión de la regla, la primera parte fue solamente 1.",
+        "start": 2342.3,
+        "end": 2346.3
+    },
+    {
+        "text": " Bien.",
+        "start": 2346.3,
+        "end": 2347.3
+    },
+    {
+        "text": " Entonces, esto sería lo que haríamos, si tuvieramos que hacer un programa,",
+        "start": 2349.3,
+        "end": 2353.3
+    },
+    {
+        "text": " diríamos, si n es igual a 1, resuelve el caso base.",
+        "start": 2353.3,
+        "end": 2357.3
+    },
+    {
+        "text": " Si yo construyo parte 1 y resuelvo, resuelvo, contisto,",
+        "start": 2357.3,
+        "end": 2377.3
+    },
+    {
+        "text": " resuelvo y obtengo sus resuelvo.",
+        "start": 2377.3,
+        "end": 2386.3
+    },
+    {
+        "text": " Subsolucion 1.",
+        "start": 2386.3,
+        "end": 2388.3
+    },
+    {
+        "text": " Lo mismo.",
+        "start": 2393.3,
+        "end": 2394.3
+    },
+    {
+        "text": " Bien.",
+        "start": 2395.3,
+        "end": 2396.3
+    },
+    {
+        "text": " Y acá, mezcló con vino, con vino, las subsoluciones y obtengo asolucion.",
+        "start": 2404.3,
+        "end": 2415.3
+    },
+    {
+        "text": " Un tragenérico, solamente que está hecho para 2.",
+        "start": 2415.3,
+        "end": 2424.3
+    },
+    {
+        "text": " Si el guarde a, hay guardos, fuera a m, fuera, el guarde a igual 2, fuera a m,",
+        "start": 2424.3,
+        "end": 2430.3
+    },
+    {
+        "text": " que tengo que hacer esto a veces.",
+        "start": 2430.3,
+        "end": 2433.3
+    },
+    {
+        "text": " Bueno, bien.",
+        "start": 2433.3,
+        "end": 2436.3
+    },
+    {
+        "text": " El asunto es como hago aquí para resolver la parte de la compesión.",
+        "start": 2436.3,
+        "end": 2444.3
+    },
+    {
+        "text": " Esta parte de la compesión, esta parte de la compesión es muy fácil.",
+        "start": 2444.3,
+        "end": 2451.3
+    },
+    {
+        "text": " Esta parte de la compesión es muy fácil.",
+        "start": 2451.3,
+        "end": 2456.3
+    },
+    {
+        "text": " Por lo menos, en teoría delante yo, la que puede ingenieras.",
+        "start": 2456.3,
+        "end": 2461.3
+    },
+    {
+        "text": " A veces no, a veces cuesta esta parte de la camión.",
+        "start": 2461.3,
+        "end": 2467.3
+    },
+    {
+        "text": " Bueno, aquí ya tenemos, ¿cómo podemos convinar a las soluciones?",
+        "start": 2467.3,
+        "end": 2473.3
+    },
+    {
+        "text": " Yo me voy a comparar, cuando yo estuve y se dije, bueno, ahora voy a comparar el 8 con cada uno de los que están del otro lado y ver cuáles están en ese tubo.",
+        "start": 2473.3,
+        "end": 2482.3
+    },
+    {
+        "text": " Y bueno, esto me va a costar en eso sobre 2.",
+        "start": 2482.3,
+        "end": 2485.3
+    },
+    {
+        "text": " Más esto, como estas en eso sobre 2.",
+        "start": 2485.3,
+        "end": 2488.3
+    },
+    {
+        "text": " Más compara este con el otro, otras, al final, estoy de la misma.",
+        "start": 2488.3,
+        "end": 2494.3
+    },
+    {
+        "text": " O sea, en eso sobre 2, más en eso sobre 2, más en eso sobre 2, más en eso sobre 2, más ser iniquiado.",
+        "start": 2494.3,
+        "end": 2499.3
+    },
+    {
+        "text": " Quiero decir, más en lo que trabaja de hecho, se anogan ni nada.",
+        "start": 2499.3,
+        "end": 2507.3
+    },
+    {
+        "text": " Ojo, a ver, puede ser que no gane nada, pero que vuelve sirva por cualquier otra cuestión, no, no, ya por, por cambiar de operaciones.",
+        "start": 2507.3,
+        "end": 2516.3
+    },
+    {
+        "text": " Imagínate que este arreglo es, junto a este enorme, no cabe en memoria.",
+        "start": 2516.3,
+        "end": 2522.3
+    },
+    {
+        "text": " O, que, más de cuando tenemos una sistema operativo, van a ver lo que se llama la generarquía de memoria.",
+        "start": 2523.3,
+        "end": 2528.3
+    },
+    {
+        "text": " Ya, una cosa es trabajar con la memoria normal, con la que se llama memoria, y otras cosas con la memoria que hacía, y otras más con los registros, y otra, una peor sería trabajar con viscos.",
+        "start": 2528.3,
+        "end": 2538.3
+    },
+    {
+        "text": " Uno va a entender que tengo suficiente memoria para arreglo, pero no sufiente memoria que hacía, se me conviene trabajar con la memoria que hacía.",
+        "start": 2539.3,
+        "end": 2546.3
+    },
+    {
+        "text": " Entonces, se parara el problema en partes de estas chiquitas, puede ser que la cantidad de operaciones sea más chica, sea la misma, pero se logra trabajar siempre en la parte rápida de la memoria.",
+        "start": 2546.3,
+        "end": 2559.3
+    },
+    {
+        "text": " Entonces, termines más eficientes, o puedo más fácil paralelizar el problema, tengo varios procesadores con una resolva una parte con otra otra, y las voy a llamar a la cantidad de operaciones en la misma, pero como tengo un proceso, una computadora con muchas procesadores, en lugar de tenerlo todos inactivos, los tengo todos activos trabajando, entonces, me resulta más eficiente.",
+        "start": 2560.3,
+        "end": 2580.3
+    },
+    {
+        "text": " Este método es dividir, a pesar de que la cantidad de operaciones, si las cuento todas, es la misma.",
+        "start": 2581.3,
+        "end": 2587.3
+    },
+    {
+        "text": " Entonces, aún si no lo agraramos mejorar el orden de tiempo, en el cuadrado del mecanismo obvio, podría ser interesante.",
+        "start": 2587.3,
+        "end": 2596.3
+    },
+    {
+        "text": " Nosotros, además, queremos mejorar el señor.",
+        "start": 2596.3,
+        "end": 2598.3
+    },
+    {
+        "text": " Queremos hacer algo que nos ayudan mejorar el señor.",
+        "start": 2598.3,
+        "end": 2601.3
+    },
+    {
+        "text": " ¿Alguna idea?",
+        "start": 2602.3,
+        "end": 2604.3
+    },
+    {
+        "text": " Lo que me ocurre la casa algo raro, es algo muy raro, porque lo que vamos a hacer es complicar el problema, en lugar de resolver, en lugar de hacerlo de dividir con que escarza, hacerlo más simple, lo que vamos a hacer es complicar el problema, y resolver un problema más difícil.",
+        "start": 2611.3,
+        "end": 2627.3
+    },
+    {
+        "text": " Se vamos a resolver dos problemas juntos, lo cual nos vamos a permitir a resolver este problema.",
+        "start": 2628.3,
+        "end": 2633.3
+    },
+    {
+        "text": " ¿Por qué tuve que cuando veía este hancho acá, por qué tuve que compararnos con todos?",
+        "start": 2634.3,
+        "end": 2640.3
+    },
+    {
+        "text": " Este dos, por qué tuve que compararnos con todos?",
+        "start": 2644.3,
+        "end": 2646.3
+    },
+    {
+        "text": " Si subí la visto, ¿cómo podría no, no, no tengo que comparar con todos?",
+        "start": 2646.3,
+        "end": 2650.3
+    },
+    {
+        "text": " ¿De qué manera rápida?",
+        "start": 2651.3,
+        "end": 2653.3
+    },
+    {
+        "text": " Yo podría haber dicho, en donde el caso se compara con el uno, con la inversión, y se está.",
+        "start": 2653.3,
+        "end": 2659.3
+    },
+    {
+        "text": " Si usted mira el ordenado, esta parte, que no está ordenado, pero yo comparo, se guardan como se enmerce del mercedor, no?",
+        "start": 2667.3,
+        "end": 2676.3
+    },
+    {
+        "text": " Si se ha ordenado, si es el primer y el primer de cada uno, lo comparo, el que gana el menor, lo mando para salir, y se lo juega más, porque sea el menor que todos los del otro lado.",
+        "start": 2677.3,
+        "end": 2687.3
+    },
+    {
+        "text": " ¿Qué ve comparado ahora? El menor que quedó de la otra, y el que era segundo, y ahora me comparé con todos.",
+        "start": 2687.3,
+        "end": 2693.3
+    },
+    {
+        "text": " No voy a comparar en igual que voy a hacer, en comparación de la de última.",
+        "start": 2693.3,
+        "end": 2696.3
+    },
+    {
+        "text": " Entonces, si usted mira los dos arreglos ordenados, ¿a qué?",
+        "start": 2697.3,
+        "end": 2702.3
+    },
+    {
+        "text": " O sea, si yo tuviera dos, tres, cinco y ocho, y de este lado, uno, cuatro, seis, uno, cuatro, seis, y siete.",
+        "start": 2703.3,
+        "end": 2716.3
+    },
+    {
+        "text": " ¿Qué haría para contar inversiones? Veo el dos y veo el uno. Bueno, sé que el dos, sé que el dos, y el uno son inversión.",
+        "start": 2717.3,
+        "end": 2726.3
+    },
+    {
+        "text": " Y el uno, se no va a jugar más, el que va a seguir jugar, el que puede seguir jugando el dos, pero cuando comparo el dos con el cuatro, sé que el dos, no están, no están, no tienen más inversiones.",
+        "start": 2727.3,
+        "end": 2740.3
+    },
+    {
+        "text": " No voy a seguir comparando, voy a comparar, pues el tres con el cuatro, sé que el tres es menor que el cuatro, sí que no lo comparo más, yo voy a comparar el cuatro con el cinco, y así.",
+        "start": 2740.3,
+        "end": 2749.3
+    },
+    {
+        "text": " Entonces, no voy a hacer en igual que la comparación, voy a hacer en comparación, se voy a ir por el lado de dos cadenas juntas, voy a ir separando el menor y voy a ver, ¿cuándo tengo que contar inversiones y cuando no?",
+        "start": 2749.3,
+        "end": 2760.3
+    },
+    {
+        "text": " Estamos en lo que haremos, esto tiene que, esto implica que la solución de contar inversiones, tiene que hacer más cosas, tiene que además de contar inversiones,",
+        "start": 2765.3,
+        "end": 2777.3
+    },
+    {
+        "text": " tiene que ordenar los los los conjuntos, ¿sabes? Por eso es raro, es raro, para resolver un problema, resol un problema más complicado, es casi es contra intuitivo y casi lo contraer lo que estamos diciendo,",
+        "start": 2777.3,
+        "end": 2792.3
+    },
+    {
+        "text": " entonces, tengo un problema y que yo, sobre lo sol, el problema más simples, ya tengo un problema, un instancia y quilo instancia más chiquitas, lo que está haciendo es,",
+        "start": 2792.3,
+        "end": 2801.3
+    },
+    {
+        "text": " lo solvo otro problema, que lo tomamos en un caso particular, si le quiere resolver, ¿sabes?",
+        "start": 2801.3,
+        "end": 2809.3
+    },
+    {
+        "text": " Estamos en el que ahora, porque es raro, en el que es raro y es incontrario y es incontrario y digo, pero estamos a menos la idea de lo que lo que queremos hacer.",
+        "start": 2809.3,
+        "end": 2817.3
+    },
+    {
+        "text": " Si, no.",
+        "start": 2823.3,
+        "end": 2827.3
+    },
+    {
+        "text": " Yo no tendí si era la cosa de la constar, contar inversiones sobre el largo.",
+        "start": 2830.3,
+        "end": 2835.3
+    },
+    {
+        "text": " Es contar inversiones, es contar inversiones, pero el asunto es, ¿cuánto nos cuesta?",
+        "start": 2836.3,
+        "end": 2842.3
+    },
+    {
+        "text": " Si, si no lo ordenamos, cuando yo tenía acá, esta, cuando yo tenía esto acá, yo había contado las inversiones, que no me acuerdo con esto,",
+        "start": 2842.3,
+        "end": 2849.3
+    },
+    {
+        "text": " pero lo que eran tres, y este lado dos, pero hay más, dije que el ocho, está cuatro veces, esta en inversión con el cuatro, con el uno,",
+        "start": 2849.3,
+        "end": 2859.3
+    },
+    {
+        "text": " entonces sumarle esas cuatro, y el dos, entonces sumarle una más, o sea que sumarle son cinco más, se habíamos con entonces, se gavía diez.",
+        "start": 2859.3,
+        "end": 2866.3
+    },
+    {
+        "text": " Ahora, ¿cómo hice eso? Yo a ojo, hice el ocho, lo comparo con este, con este, con este, con este, con el cuatro, el dos, lo comparo con cada uno de estos, otras cuatro comparaciones más, y así son 16 comparaciones más que tú,",
+        "start": 2867.3,
+        "end": 2879.3
+    },
+    {
+        "text": " y hay que hacer, aparte de que se tenía hecha, me costó en equadrado, ¿no?",
+        "start": 2879.3,
+        "end": 2884.3
+    },
+    {
+        "text": " Entonces, ¿cómo resuelvo esto? ¿Hay algún otra forma de resolvernos? Bueno, si esto viniera, si esto, la subsolution, el resuelvo, en esta parte, si el resuelvo yo tengo subsolution,",
+        "start": 2885.3,
+        "end": 2901.3
+    },
+    {
+        "text": " además de decirme cuántas inversiones subos me acomoda, me deja preparado, la solución ordenada me resulta más fácil, esta parte de acá, o sea, yo pago acá, pago acá, gasto tiempo acá, en ordenarle, en acomodarlo como me convenga, para ahorrarme aquí.",
+        "start": 2902.3,
+        "end": 2927.3
+    },
+    {
+        "text": " Esto realmente no debería ser tan, tan sorpresivo, algunas veces hemos visto algoritmo, por ejemplo, el primer agonismo de Grígica, era unos intervalos,",
+        "start": 2928.3,
+        "end": 2942.3
+    },
+    {
+        "text": " también que seleccionar siempre primero el que tuviera fecha de afinadación más corta, y era eficiente gastar tiempo en ordenar esos arreglos,",
+        "start": 2943.3,
+        "end": 2956.3
+    },
+    {
+        "text": " los intervalos, lo que queríamos para que luego fuera muy fácil, y no uno presábamos cada intervalo, gastábamos tiempo inicialmente para que fuera más fácil después,",
+        "start": 2957.3,
+        "end": 2977.3
+    },
+    {
+        "text": " acá se haríamos el mismo, gasto tiempo, consumo, algo más operaciones aquí, algunas más, vamos a ver si más o no, para ahorrarme acá, ¿por qué esta parte se abimos?",
+        "start": 2978.3,
+        "end": 2991.3
+    },
+    {
+        "text": " La parte obvia, una forma obvia hacerlo es encodrado, y si es encodrado, no estoy mejorando el tiempo de la solución obvia sin hacer el dividido en grita,",
+        "start": 2992.3,
+        "end": 3003.3
+    },
+    {
+        "text": " en el sentido de dividido en grita, además de todo lo que dije recién, de las mejoras por usar memoria, por para el mismo y demás,",
+        "start": 3003.3,
+        "end": 3010.3
+    },
+    {
+        "text": " en este caso el menos lograr bajar los costos totales y campiados creaciones, el objetivo no es que quedo ordenado, ordenarlo es un su producto, una parte para hacer más eficiente el agonismo apretado, como sabemos mucho antes, solamente que no en un marco de dividido vistas, no sé qué queda claramente ahora.",
+        "start": 3011.3,
+        "end": 3033.3
+    },
+    {
+        "text": " Si, ahora quedo, que vamos a clara.",
+        "start": 3034.3,
+        "end": 3036.3
+    },
+    {
+        "text": " Bueno, entonces, acá se me sirve sin problema, quiero ahorrarme tiempo aquí, quiero que esto se llama fácil, y para eso se lo cargo a la sentancia, ojo, no sé, a cosa que cargarle trabajo a la sentancia me terminan impuerto a todo, vamos a ver si eso no.",
+        "start": 3036.3,
+        "end": 3056.3
+    },
+    {
+        "text": " A ver, si yo ordenara todo, a un marse solo me cuesta en ilogene, que es peino de encuadrado, ahora si yo lo ordené todo y me devuelven la rey ordenado, no puedo contrar con tantas sin parcines, porque en el resultado se te he ordenado, si eso tengo que hacer lo que hagan las cosas juntas,",
+        "start": 3057.3,
+        "end": 3081.3
+    },
+    {
+        "text": " o sea, que me devuelva lo que quería acá, el obtengo la subsolución, en este caso, si vio el programa puro es 3, no es de cuántas, cuántas habéis acá, 3 en la primera parte y 2 en la segunda, que no querías hacer las números,",
+        "start": 3082.3,
+        "end": 3097.3
+    },
+    {
+        "text": " y acá con truscio tengo que combinar 3 más 2, 5 más del resto, y eso es lo que me he comentado costando, ahora que pasa si aquí como su insolución, el lugar de si me 3, dicen 3 y este a primera parte viene ordenada, y lo mismo acá, 2 y esta segunda parte viene ordenada,",
+        "start": 3098.3,
+        "end": 3118.3
+    },
+    {
+        "text": " y acá, 3 más 2, 5 más lo que juntas en las partes ordenadas, el tema es que esas dos partes el tema es que contrar eso va a ser más fácil y si no estoy bien ordenada,",
+        "start": 3119.3,
+        "end": 3131.3
+    },
+    {
+        "text": " si, bueno, ahora supongamos que está ordenado, no lo voy a escribir, ahora mismo está en el libro, vean lo que está en el dedo, voy a comparar el 2 con el 1,",
+        "start": 3131.3,
+        "end": 3153.3
+    },
+    {
+        "text": " supongamos que tengo la regra y que tengo las posiciones, esta en la posición 1, 2, 3, 4 o una regra, simplemente, cuando hay algo que me puede saber que son las posiciones, estoy en la posición 1 de aquí,",
+        "start": 3154.3,
+        "end": 3166.3
+    },
+    {
+        "text": " sé que acá había 4, estoy en la posición 1, me quedan 3 procesar, y lo comparo el 2 con el 1, si me dice que el 1 es menor que el 2, o sea que el que está del lado grande, del lado mayor, es menor que este, cuantas inversiones hay, en cuantas inversiones tengo lo que lo creo del 1,",
+        "start": 3167.3,
+        "end": 3193.3
+    },
+    {
+        "text": " cuando lo comparo con 2, ve que es menor, en cuantas está involucrado, recuerden que esta parte está ordenada, aparte de las las las las, si está en inversión con el 2, también está con el 3, y también con el 5, y también con el 8, ¿de acuerdo?",
+        "start": 3193.3,
+        "end": 3220.3
+    },
+    {
+        "text": " Sí, tenia la regra, 3, sabemos resuelto, más 2, más lo que voy a hacer ahora, comparo el 2 con el 1, el 1 que está del lado grande es menor que el 2, quiere decir que es que está en inversión con el 2 y contoro que quede, que son 4, sé que son 4, porque el 2 está en la posición 1, y acá había 4, bueno ahora el 1 no cuya más,",
+        "start": 3223.3,
+        "end": 3252.3
+    },
+    {
+        "text": " ahora voy a comparar el 2 con el 4, el 2 es menor que el 4, no hay inversión ahí, si el 2 no está en inversión con el 4, puede estar en inversión con el 6 o con el 7, no, porque si no está en inversión con el 4, y esto ha ordenado tampoco puede estar en inversión con los demás, o sea que el 0, cuando comparece el 2° elemento es 0, así que no lo han consumenado,",
+        "start": 3253.3,
+        "end": 3282.3
+    },
+    {
+        "text": " y el 2 no cuya más, ahora voy a comparar el 3, se lo puede sacar, en el 2°, ahora voy a comparar el 3 con el 4, el 3 es menor que el 4, no está en inversión, como está el lado chico, no está en inversión con nadie, así que el 3, no, el 5 está en inversión con el 4,",
+        "start": 3283.3,
+        "end": 3309.3
+    },
+    {
+        "text": " y el 5 está en la mitad chica y el 4 está en la mitad grande, o sea que hay que encontrar una inversión, solo 1,",
+        "start": 3310.3,
+        "end": 3319.3
+    },
+    {
+        "text": " y tengo parago el 6, y en esta inversión, con el 5 con el 4, sé que ambas partes estén ordenadas,",
+        "start": 3320.3,
+        "end": 3334.3
+    },
+    {
+        "text": " está en inversión con el 1° de esta parte, que es el 5, necesariamente está en inversión con el 1,",
+        "start": 3335.3,
+        "end": 3344.3
+    },
+    {
+        "text": " lo que hay en la después, cuanto viene después, y son 2, porque estoy en la posición 3 y se cae 4, entonces ve su mano 2 más,",
+        "start": 3344.3,
+        "end": 3352.3
+    },
+    {
+        "text": " y el 4 se va a dejar de jugar, porque lo saqué, porque es el menor de lo que me quedaba, ahora me queda comparar el 5 con el 6,",
+        "start": 3352.3,
+        "end": 3361.3
+    },
+    {
+        "text": " el 5 con el 6, y por tanto, también me lo decía que así que no va a estar más en el juego,",
+        "start": 3362.3,
+        "end": 3367.3
+    },
+    {
+        "text": " y ahora me queda comparar el 6 con el 8, el 8 es menor que el 6, ¿de acuerdo?",
+        "start": 3370.3,
+        "end": 3380.3
+    },
+    {
+        "text": " que es mayor o 6, perdón, como es mayor que el 6, para que el 6 se como mal, ¿no?",
+        "start": 3381.3,
+        "end": 3388.3
+    },
+    {
+        "text": " bien, me imporcís el 6, lo haré más a mujer, pero el 8 es el 6, el 6 es menor que el 8,",
+        "start": 3390.3,
+        "end": 3402.3
+    },
+    {
+        "text": " bueno, esta inversión, ¿cuánto voy a contar una? ¿por qué? ¿por qué? el 8 es el último que me queda,",
+        "start": 3403.3,
+        "end": 3410.3
+    },
+    {
+        "text": " pues se voy a sacar el 6, quiero que no hicieran como bueno,",
+        "start": 3410.3,
+        "end": 3416.3
+    },
+    {
+        "text": " bueno, yo ahora voy a comparar el 7 con el 8, y voy a contar una inversión, y nada más, ¿por qué?",
+        "start": 3416.3,
+        "end": 3423.3
+    },
+    {
+        "text": " no había más de 8, aquí el 7, queda el 8, solo ahora, y no queda más nada, ¿no?",
+        "start": 3423.3,
+        "end": 3429.3
+    },
+    {
+        "text": " entonces, total con el 8 más, total 15, aéxan todo menos, 4, que al 4 del 8 más 3 del 1, 7,",
+        "start": 3430.3,
+        "end": 3438.3
+    },
+    {
+        "text": " más 1 entre el 4 del 5, total 8, ¿no?",
+        "start": 3438.3,
+        "end": 3444.3
+    },
+    {
+        "text": " ¿para qué costó esto? ¿Costó procesar dos arreglos ordenados?",
+        "start": 3446.3,
+        "end": 3450.3
+    },
+    {
+        "text": " el que me ha que en cada vez que yo veía un número del lado derecho, mayor que del lado izquierdo,",
+        "start": 3451.3,
+        "end": 3460.3
+    },
+    {
+        "text": " sabía, al revés, perdón, del lado izquierdo menor que el del lado derecho, sabía cuantas inversiones",
+        "start": 3460.3,
+        "end": 3467.3
+    },
+    {
+        "text": " se estaba, con cuantas esta invertión de números, ¿no?",
+        "start": 3467.3,
+        "end": 3472.3
+    },
+    {
+        "text": " y se podía, en un solo paso contar muchas inversiones, como dice acá, con ese 4, un signito de fondo,",
+        "start": 3472.3,
+        "end": 3481.3
+    },
+    {
+        "text": " creo que ahora esto, ve bien el libro que está detallado, paso por paso lo que se hace, con programación,",
+        "start": 3481.3,
+        "end": 3492.3
+    },
+    {
+        "text": " si quieren, al nivel de programación, ya que no hay ese nivel de divas, ¿ya? ¿cuánto no costó?",
+        "start": 3492.3,
+        "end": 3501.3
+    },
+    {
+        "text": " pero esto nos costó ordenarlo, o sea, digo que yo decía, voy sacando, lo, lo venía sacando acá,",
+        "start": 3501.3,
+        "end": 3510.3
+    },
+    {
+        "text": " pero lo que debería haber dicho era ir los poniendo en el arreglo de salida, ¿sí?",
+        "start": 3510.3,
+        "end": 3514.3
+    },
+    {
+        "text": " está mal eso, ¿qué dice? ¿Debería haber hablo sido poniendo en el arreglo de salido?",
+        "start": 3514.3,
+        "end": 3517.3
+    },
+    {
+        "text": " ¿Por qué eso? ¿sí? ¿sí? ¿sí? ¿sí? ¿sí? ¿sí? ¿sí? ¿sí?",
+        "start": 3517.3,
+        "end": 3521.3
+    },
+    {
+        "text": " ¿el paso final? ¿pero en los pasos intermedios, además de contar, además de ayudarme",
+        "start": 3521.3,
+        "end": 3526.3
+    },
+    {
+        "text": " de los arreglos que me dieron, entre los subarreglos que me dieron, para contar cuántas inversiones",
+        "start": 3526.3,
+        "end": 3531.3
+    },
+    {
+        "text": " hay entre las dos partes, tengo que dejarle el arreglo armado para el que está sanando,",
+        "start": 3531.3,
+        "end": 3537.3
+    },
+    {
+        "text": " para la alcance que estamos arriba en este sábado, entonces aparte de una hice,",
+        "start": 3537.3,
+        "end": 3543.3
+    },
+    {
+        "text": " ¿cuánto lo cuesta? Bueno, lo cuesta en lo mismo que el marzo de sol, o sea,",
+        "start": 3543.3,
+        "end": 3547.3
+    },
+    {
+        "text": " lo que me costaba era una comparación, es una comparación a dos cosas, el hijo, un elemento",
+        "start": 3547.3,
+        "end": 3552.3
+    },
+    {
+        "text": " para la arreglo de salida y sumo o no inversiones que es para el objetivo final.",
+        "start": 3552.3,
+        "end": 3559.3
+    },
+    {
+        "text": " Entonces, lo que me va a devolver este programa auxiliar, que hago, quiero que le llama",
+        "start": 3559.3,
+        "end": 3566.3
+    },
+    {
+        "text": " Countan Ansore, pero así, o sea, cuento y ordeno, hago la dos cosas juntas.",
+        "start": 3566.3,
+        "end": 3572.3
+    },
+    {
+        "text": " ¿Algúle dos sobre esto?",
+        "start": 3572.3,
+        "end": 3581.3
+    },
+    {
+        "text": " De repente, mejor en lugar de pasar el segundo ejemplo del libro,",
+        "start": 3581.3,
+        "end": 3603.3
+    },
+    {
+        "text": " puedo pasar al problema seleccionado todos, creo que es algo así, que tiene una idea para",
+        "start": 3603.3,
+        "end": 3612.3
+    },
+    {
+        "text": " similiar a este. Creo que el ejemplo lo plantea con, cuento la inversión, no hay algo así como",
+        "start": 3612.3,
+        "end": 3623.3
+    },
+    {
+        "text": " que, en mercado, cuento vale la sección del mercado cada día, salient sabe o es una simulación,",
+        "start": 3623.3,
+        "end": 3631.3
+    },
+    {
+        "text": " tengo cuánto valí, cuánto va a valer tal producto cada día, cada uno de los días.",
+        "start": 3631.3,
+        "end": 3637.3
+    },
+    {
+        "text": " Entonces, ¿cuándo me conviene comprar y cuando me conviene vender para obtener la mayor cantidad de ganancias?",
+        "start": 3637.3,
+        "end": 3646.3
+    },
+    {
+        "text": " O sea, si nos olvidamos esa realidad y pensamos es, vamos a tener una secuencia otra vez a uno, lo que fuéne,",
+        "start": 3646.3,
+        "end": 3655.3
+    },
+    {
+        "text": " AM de elementos y básicamente lo que queremos es, déjense secuencia, cuál es el mayor salto que podemos dar.",
+        "start": 3655.3,
+        "end": 3665.3
+    },
+    {
+        "text": " O sea, ¿dónde aparece un número, al chico, seguido de un número grande más adelante,",
+        "start": 3665.3,
+        "end": 3672.3
+    },
+    {
+        "text": " tal tal que esa distancia, ese salto sea lo más grande posible.",
+        "start": 3672.3,
+        "end": 3677.3
+    },
+    {
+        "text": " Ahora, ¿se puede hacer el candidajito?",
+        "start": 3677.3,
+        "end": 3680.3
+    },
+    {
+        "text": " Digamos que tengo, que sé que esto es así, acá tengo un valor de crece, luego sigue creciendo,",
+        "start": 3686.3,
+        "end": 3696.3
+    },
+    {
+        "text": " luego crece un poco, ¿no?",
+        "start": 3696.3,
+        "end": 3701.3
+    },
+    {
+        "text": " Luego crece,",
+        "start": 3702.3,
+        "end": 3709.3
+    },
+    {
+        "text": " ¿de crece una vez? Y otra.",
+        "start": 3709.3,
+        "end": 3721.3
+    },
+    {
+        "text": " ¿No te vas?",
+        "start": 3721.3,
+        "end": 3729.3
+    },
+    {
+        "text": " Fíjelo en los cositos de las finanzas, ¿no? ¿Cómo más crece? Y no te vuelvo así.",
+        "start": 3729.3,
+        "end": 3738.3
+    },
+    {
+        "text": " Cuando le convencí a compré su boom, ¿no?",
+        "start": 3738.3,
+        "end": 3741.3
+    },
+    {
+        "text": " Cuando le convencí a comprar a caímentera caja, pero en algún momento se puede hacer pensado que convenía comprar a caímentera caja,",
+        "start": 3741.3,
+        "end": 3748.3
+    },
+    {
+        "text": " y después que compré a caímentera aquí.",
+        "start": 3748.3,
+        "end": 3751.3
+    },
+    {
+        "text": " O sea, ¿de ahí tienes cuál es el salto más grande que se puede dar, siendo de izquierda derecha?",
+        "start": 3751.3,
+        "end": 3758.3
+    },
+    {
+        "text": " Vea no en ejemplo, vea la letra, básicamente es esto, o sea, más allá de la descripción y la realidad,",
+        "start": 3758.3,
+        "end": 3766.3
+    },
+    {
+        "text": " es compré naciones, o compré a vender naciones para obtener ganancia, ¿cuál es el mayor crecimiento que puede haber?",
+        "start": 3766.3,
+        "end": 3775.3
+    },
+    {
+        "text": " ¿de hace? No, no la diferencia entre el mínimo y el máximo que pasa acá podría haber hecho.",
+        "start": 3775.3,
+        "end": 3780.3
+    },
+    {
+        "text": " Sí.",
+        "start": 3780.3,
+        "end": 3786.3
+    },
+    {
+        "text": " Claro, porque fíjese que este número, este acaso es el máximo, es el primero.",
+        "start": 3786.3,
+        "end": 3790.3
+    },
+    {
+        "text": " O sea, no es encontrar el mínimo y encontrar el máximo, porque el máximo casi el primero y esto nos sirve este máximo.",
+        "start": 3790.3,
+        "end": 3797.3
+    },
+    {
+        "text": " Vamos a agregar uno más acá para que quede claro eso.",
+        "start": 3797.3,
+        "end": 3801.3
+    },
+    {
+        "text": " O sea, no es la diferencia entre el mínimo y el máximo.",
+        "start": 3801.3,
+        "end": 3805.3
+    },
+    {
+        "text": " Compraríamos aquí y vendimos acá, partimos mucho.",
+        "start": 3805.3,
+        "end": 3808.3
+    },
+    {
+        "text": " La diferencia entre el mínimo y un máximo posterior, es más o menos salto, más al que se me into posible.",
+        "start": 3808.3,
+        "end": 3815.3
+    },
+    {
+        "text": " Eso es lo que se busca, que se buscaría lograr.",
+        "start": 3815.3,
+        "end": 3820.3
+    },
+    {
+        "text": " Bien, entonces, ¿qué idea podemos tener sobre cómo hacer esto con divircoquista? ¿Qué podemos hacer?",
+        "start": 3820.3,
+        "end": 3829.3
+    },
+    {
+        "text": " Dividir el problema en dos. O sea, tomo en la primera mitad de los puntos.",
+        "start": 3829.3,
+        "end": 3849.3
+    },
+    {
+        "text": " Resolve el problema. Tomo en la segunda mitad de los puntos. Resolve el problema.",
+        "start": 3849.3,
+        "end": 3854.3
+    },
+    {
+        "text": " Si no, no compiere nada. Si no compiere nada, si no compiere nada, si no compiere nada, si es decreciente, no compiere nada, si es decreciente, compiere vender el principio y comprar el punto 1 y vender el punto 2.",
+        "start": 3854.3,
+        "end": 3871.3
+    },
+    {
+        "text": " Esa parte fácil. Y a otra parte que fácil separarlo en dos.",
+        "start": 3871.3,
+        "end": 3876.3
+    },
+    {
+        "text": " Bueno, tomo en la primera mitad de los puntos, con un lado, en la segunda mitad por otro, resuelve el problema.",
+        "start": 3876.3,
+        "end": 3881.3
+    },
+    {
+        "text": " Supongo que los son divirco. Es como como que la mitad está por acá.",
+        "start": 3881.3,
+        "end": 3886.3
+    },
+    {
+        "text": " ¿Cuál sería lo mejor que puedo conseguir aquí? Sería esto.",
+        "start": 3886.3,
+        "end": 3891.3
+    },
+    {
+        "text": " Y la otra mitad y sería toque esta cara.",
+        "start": 3891.3,
+        "end": 3894.3
+    },
+    {
+        "text": " Bueno, ¿cuál es la solución? ¿La mejor de las ubicades? ¿Es que siempre no me sirve?",
+        "start": 3895.3,
+        "end": 3903.3
+    },
+    {
+        "text": " Es que siempre no me sirve para nada. ¿Cómo vas a poner?",
+        "start": 3903.3,
+        "end": 3911.3
+    },
+    {
+        "text": " ¿Podré?",
+        "start": 3911.3,
+        "end": 3915.3
+    },
+    {
+        "text": " ¿Qué es lo mejor de la primera mitad? ¿Cuál es el salto más grande? ¿Decute de ser un nuevo crecimiento?",
+        "start": 3916.3,
+        "end": 3925.3
+    },
+    {
+        "text": " En la segunda mitad empezó acá,",
+        "start": 3925.3,
+        "end": 3929.3
+    },
+    {
+        "text": " ¿cuál es el salto más grande? ¿Decute de ser un nuevo crecimiento?",
+        "start": 3930.3,
+        "end": 3935.3
+    },
+    {
+        "text": " En la segunda mitad empezó acá, tuve este crecimiento y después hay este que mejor.",
+        "start": 3935.3,
+        "end": 3940.3
+    },
+    {
+        "text": " Es que tengo mejor crecimiento en la primera mitad.",
+        "start": 3940.3,
+        "end": 3944.3
+    },
+    {
+        "text": " Es que mejor crecimiento es una mitad esta que está acá.",
+        "start": 3944.3,
+        "end": 3947.3
+    },
+    {
+        "text": " Bueno, y ahora, el mejor crecimiento es que el crecimiento es un nuevo crecimiento.",
+        "start": 3947.3,
+        "end": 3952.3
+    },
+    {
+        "text": " El mejor crecimiento es una mitad esta que está acá.",
+        "start": 3953.3,
+        "end": 3957.3
+    },
+    {
+        "text": " Bueno, y ahora, el mejor crecimiento está como hago la parte de combinar las soldados.",
+        "start": 3957.3,
+        "end": 3962.3
+    },
+    {
+        "text": " Notoriamente, el mejor crecimiento está dado desde acá hasta acá.",
+        "start": 3962.3,
+        "end": 3967.3
+    },
+    {
+        "text": " Hámonos, nos vamos a contar que es este, el mejor crecimiento.",
+        "start": 3967.3,
+        "end": 3970.3
+    },
+    {
+        "text": " Y en la primera mitad y en la segunda, de alguna forma hay que combinar las dos instancias.",
+        "start": 3970.3,
+        "end": 3976.3
+    },
+    {
+        "text": " Podrías guardarte el mínimo de la primera mitad y el máximo de la segunda mitad y comparas.",
+        "start": 3983.3,
+        "end": 3991.3
+    },
+    {
+        "text": " Tengo el salto más llor de la primera mitad, el salto más llor de la segunda mitad y la diferencia entre el mínimo de la primera mitad y el máximo de la segunda mitad.",
+        "start": 3991.3,
+        "end": 4002.3
+    },
+    {
+        "text": " Y te quedas con el más grande y eso.",
+        "start": 4002.3,
+        "end": 4006.3
+    },
+    {
+        "text": " Exacto, porque el mínimo de la primera mitad está antes que el máximo de la primera mitad.",
+        "start": 4007.3,
+        "end": 4012.3
+    },
+    {
+        "text": " O sea que es un salto que me sirve.",
+        "start": 4012.3,
+        "end": 4015.3
+    },
+    {
+        "text": " Bien, bien.",
+        "start": 4015.3,
+        "end": 4017.3
+    },
+    {
+        "text": " Hay que tener alguna otra propuesta o alguna objeción, algún tero esto.",
+        "start": 4017.3,
+        "end": 4021.3
+    },
+    {
+        "text": " Recuerden que tenemos que resolver el caso base, los casos de cada uno de los niveles para seguir al final.",
+        "start": 4021.3,
+        "end": 4045.3
+    },
+    {
+        "text": " Para resolver uno de los casos intermedio, un nivel intermedio, tengo que usar lo que me dijeron los casos base y dejarle todo pronto para el caso que viene de arries, para el caso que me llamó.",
+        "start": 4046.3,
+        "end": 4061.3
+    },
+    {
+        "text": " Entonces, me alcanzará con devolver el mínimo o el máximo.",
+        "start": 4062.3,
+        "end": 4071.3
+    },
+    {
+        "text": " O tener que devolver los dos en un caso normal, en este último caso, en la última mitad, si me cansaba con el mínimo que ha dimas el capo que ya pueden ir más armando.",
+        "start": 4071.3,
+        "end": 4081.3
+    },
+    {
+        "text": " Pero nunca sin termedio.",
+        "start": 4081.3,
+        "end": 4084.3
+    },
+    {
+        "text": " Y tendrías que devolver los dos porque en la primera mitad podría estar el máximo también.",
+        "start": 4085.3,
+        "end": 4096.3
+    },
+    {
+        "text": " Y nunca sin termedio.",
+        "start": 4097.3,
+        "end": 4099.3
+    },
+    {
+        "text": " O sea, si vengo para...",
+        "start": 4103.3,
+        "end": 4106.3
+    },
+    {
+        "text": " Supongamos que estoy trabajando ahora en la primera mitad y se es su paréntose, supongo que te la podrá quedamos o menos, separéntose.",
+        "start": 4110.3,
+        "end": 4119.3
+    },
+    {
+        "text": " Y digamos, destilados solamente me interesa el mínimo.",
+        "start": 4120.3,
+        "end": 4124.3
+    },
+    {
+        "text": " Y destilados solamente me interesa el máximo.",
+        "start": 4124.3,
+        "end": 4126.3
+    },
+    {
+        "text": " Lo cual estaría bien para sobre esta parte de acá.",
+        "start": 4126.3,
+        "end": 4129.3
+    },
+    {
+        "text": " Bien.",
+        "start": 4132.3,
+        "end": 4133.3
+    },
+    {
+        "text": " Y ahora supongamos que los kilos me quedan para acá.",
+        "start": 4133.3,
+        "end": 4138.3
+    },
+    {
+        "text": " Voy a devolver lo mejor y el mínimo.",
+        "start": 4138.3,
+        "end": 4144.3
+    },
+    {
+        "text": " Y en esta parte devolvería lo mejor y el máximo.",
+        "start": 4145.3,
+        "end": 4148.3
+    },
+    {
+        "text": " O sea, tendrías que tener...",
+        "start": 4148.3,
+        "end": 4149.3
+    },
+    {
+        "text": " Si solamente me voy a devolver el mínimo, el máximo tendrías que tener dos funciones que me diga lo que hago.",
+        "start": 4149.3,
+        "end": 4155.3
+    },
+    {
+        "text": " O sea, a la izquierda lo son mocos de vuelveme.",
+        "start": 4155.3,
+        "end": 4159.3
+    },
+    {
+        "text": " De vuelveme el más o de intervalo posible.",
+        "start": 4159.3,
+        "end": 4164.3
+    },
+    {
+        "text": " Y el mínimo, cuando se ha muerto la derecha le pide lo mismo y el máximo.",
+        "start": 4164.3,
+        "end": 4169.3
+    },
+    {
+        "text": " Y el mínimo tendrías que tener dos funciones.",
+        "start": 4169.3,
+        "end": 4171.3
+    },
+    {
+        "text": " Otro es que ha...",
+        "start": 4171.3,
+        "end": 4173.3
+    },
+    {
+        "text": " Una sola que me devolva la dos cosas, ¿no?",
+        "start": 4173.3,
+        "end": 4176.3
+    },
+    {
+        "text": " Me sí, claro.",
+        "start": 4180.3,
+        "end": 4182.3
+    },
+    {
+        "text": " Bueno, acá aquí símos.",
+        "start": 4182.3,
+        "end": 4184.3
+    },
+    {
+        "text": " Otra vez algo similar a la anterior.",
+        "start": 4184.3,
+        "end": 4187.3
+    },
+    {
+        "text": " Teníamos que resolver un problema y de alguna forma lo complicamos y en lugar de simplemente decir cuál es el máximo salto,",
+        "start": 4187.3,
+        "end": 4195.3
+    },
+    {
+        "text": " estamos diciendo cuál es el máximo salto y cuál es el mínimo y cuál es el máximo.",
+        "start": 4195.3,
+        "end": 4200.3
+    },
+    {
+        "text": " O sea, estamos haciendo un problema más complicado pero por el nuevo precio.",
+        "start": 4200.3,
+        "end": 4205.3
+    },
+    {
+        "text": " ¿Cuánto nos costará estos?",
+        "start": 4205.3,
+        "end": 4207.3
+    },
+    {
+        "text": " Ah, me faltó ver hoy cuánto costaba el otro problema.",
+        "start": 4212.3,
+        "end": 4216.3
+    },
+    {
+        "text": " T1, T2.",
+        "start": 4216.3,
+        "end": 4219.3
+    },
+    {
+        "text": " Esto se puede ser sobre el 1.",
+        "start": 4219.3,
+        "end": 4221.3
+    },
+    {
+        "text": " T1, T1.",
+        "start": 4221.3,
+        "end": 4224.3
+    },
+    {
+        "text": " T1.",
+        "start": 4224.3,
+        "end": 4226.3
+    },
+    {
+        "text": " Estamos haciendo dos problemas de tamaño en sobre dos.",
+        "start": 4226.3,
+        "end": 4233.3
+    },
+    {
+        "text": " ¿Más cuántos?",
+        "start": 4233.3,
+        "end": 4236.3
+    },
+    {
+        "text": " ¿Cuánto nos costa...",
+        "start": 4236.3,
+        "end": 4240.3
+    },
+    {
+        "text": " Supongamos que tenemos un arreglo de este a uno de ellos, un arreglo y que dividirlo nos costa o uno.",
+        "start": 4240.3,
+        "end": 4247.3
+    },
+    {
+        "text": " O sea, simplemente lo partimos en dos.",
+        "start": 4247.3,
+        "end": 4250.3
+    },
+    {
+        "text": " ¿Y cuánto nos costa combinarlo?",
+        "start": 4251.3,
+        "end": 4253.3
+    },
+    {
+        "text": " ¿Cuánto?",
+        "start": 4253.3,
+        "end": 4255.3
+    },
+    {
+        "text": " Es uno, ¿verdad?",
+        "start": 4255.3,
+        "end": 4258.3
+    },
+    {
+        "text": " ¿Cuánto piensa que es esto?",
+        "start": 4271.3,
+        "end": 4274.3
+    },
+    {
+        "text": " ¿JVN?",
+        "start": 4281.3,
+        "end": 4285.3
+    },
+    {
+        "text": " ¿Por qué si vas desarmando la recurrencia te ha quedado cuatro veces TDN y O4?",
+        "start": 4285.3,
+        "end": 4296.3
+    },
+    {
+        "text": " Por ejemplo, entonces, y todo lo otro son cosas o uno.",
+        "start": 4296.3,
+        "end": 4300.3
+    },
+    {
+        "text": " Y ahora, vamos a hacer en trabajos por el por eso que hayamos hablado antes como estoy viviendo el mismo cantidad de su problema que hago.",
+        "start": 4300.3,
+        "end": 4309.3
+    },
+    {
+        "text": " En cada nivel estoy haciendo el mismo trabajo y como en cada nivel tengo que hacer un trabajo uno, me quedaría en trabajos de uno.",
+        "start": 4309.3,
+        "end": 4319.3
+    },
+    {
+        "text": " Cada nivel estoy haciendo un trabajo...",
+        "start": 4319.3,
+        "end": 4323.3
+    },
+    {
+        "text": " O sea, lo rees de recombinar y eso.",
+        "start": 4323.3,
+        "end": 4327.3
+    },
+    {
+        "text": " En el nivel uno, en el nivel de los arriba se trabajo uno o uno más.",
+        "start": 4328.3,
+        "end": 4331.3
+    },
+    {
+        "text": " Sonamente solamente partidos y dentro...",
+        "start": 4331.3,
+        "end": 4334.3
+    },
+    {
+        "text": " ¿Dónde?",
+        "start": 4334.3,
+        "end": 4335.3
+    },
+    {
+        "text": " Dos trabajos, ¿no?",
+        "start": 4335.3,
+        "end": 4337.3
+    },
+    {
+        "text": " ¿O estaría haciendo dos veces?",
+        "start": 4337.3,
+        "end": 4340.3
+    },
+    {
+        "text": " El tecón tiene que hacer cuatro.",
+        "start": 4340.3,
+        "end": 4342.3
+    },
+    {
+        "text": " ¿Dónde?",
+        "start": 4342.3,
+        "end": 4343.3
+    },
+    {
+        "text": " Cada nivel tiene que hacer más trabajo del otro.",
+        "start": 4343.3,
+        "end": 4345.3
+    },
+    {
+        "text": " Lo vas complicando en cada nivel y le cante de trabajo de hacer.",
+        "start": 4345.3,
+        "end": 4348.3
+    },
+    {
+        "text": " Ah, parece.",
+        "start": 4348.3,
+        "end": 4350.3
+    },
+    {
+        "text": " ¿Qué guardó?",
+        "start": 4350.3,
+        "end": 4351.3
+    },
+    {
+        "text": " Pero lo suelo de aquí también.",
+        "start": 4351.3,
+        "end": 4353.3
+    },
+    {
+        "text": " ¿Cuánto que pasa?",
+        "start": 4353.3,
+        "end": 4355.3
+    },
+    {
+        "text": " ¿Qué cosa es que hay?",
+        "start": 4356.3,
+        "end": 4358.3
+    },
+    {
+        "text": " Hay un montón de casos básicos, ¿no?",
+        "start": 4358.3,
+        "end": 4360.3
+    },
+    {
+        "text": " ¿Cuántos?",
+        "start": 4360.3,
+        "end": 4362.3
+    },
+    {
+        "text": " N al logaritmo de dos en base 2 o sea N.",
+        "start": 4362.3,
+        "end": 4367.3
+    },
+    {
+        "text": " Hay N y casos básicos, cada uno no cuesta 1.",
+        "start": 4367.3,
+        "end": 4370.3
+    },
+    {
+        "text": " O sea, el procesar los casos básicos me va a cortar N.",
+        "start": 4370.3,
+        "end": 4374.3
+    },
+    {
+        "text": " Y por hacer el caso, iniciar el costar 1.",
+        "start": 4374.3,
+        "end": 4376.3
+    },
+    {
+        "text": " El peso, el peso de este ejecución está en procesar los casos básicos.",
+        "start": 4376.3,
+        "end": 4382.3
+    },
+    {
+        "text": " ¿Ya?",
+        "start": 4382.3,
+        "end": 4383.3
+    },
+    {
+        "text": " El que se vea hoy desde el master, te digo, del master metodos.",
+        "start": 4384.3,
+        "end": 4388.3
+    },
+    {
+        "text": " La formulita N y la logaritmo en base 2 o 2 es N y la 1.",
+        "start": 4388.3,
+        "end": 4393.3
+    },
+    {
+        "text": " Lo comparo con 1, N y la 1, el tomina el otro y ese va a ser el costo recibal.",
+        "start": 4393.3,
+        "end": 4399.3
+    },
+    {
+        "text": " Ahora, si nosotros dijieramos no dividirlo en 2, tengo que separar.",
+        "start": 4399.3,
+        "end": 4404.3
+    },
+    {
+        "text": " Tengo que construir, tengo que recorrer en las primeras metas y construir una y tengo que construir la otra.",
+        "start": 4404.3,
+        "end": 4410.3
+    },
+    {
+        "text": " Esto no costaría N y ahí sería N y lo GN y igual que el master sort.",
+        "start": 4410.3,
+        "end": 4418.3
+    },
+    {
+        "text": " Lo falta ver, esto no es una reparencia, pero aplicada al problema anterior.",
+        "start": 4418.3,
+        "end": 4427.3
+    },
+    {
+        "text": " El problema que teníamos de ordenar y contar.",
+        "start": 4427.3,
+        "end": 4433.3
+    },
+    {
+        "text": " El master sort, que es una parte de lo que hacemos, es eso lo que está en YLogN.",
+        "start": 4434.3,
+        "end": 4440.3
+    },
+    {
+        "text": " ¿Cuánto nos había costado eso?",
+        "start": 4440.3,
+        "end": 4442.3
+    },
+    {
+        "text": " Hemos dicho que si teníamos el caso base, el caso base habíamos dicho que era 1.2, es 1.2.",
+        "start": 4442.3,
+        "end": 4449.3
+    },
+    {
+        "text": " Lo otro que hacíamos era dividir en 2 de tamaño en la mitad y ¿cuánto nos costaba esto?",
+        "start": 4449.3,
+        "end": 4456.3
+    },
+    {
+        "text": " Acá se puede ponerse, puede poner una F. Si pongo, no debería poner menos igual.",
+        "start": 4457.3,
+        "end": 4464.3
+    },
+    {
+        "text": " Pero si pongo una F acá, cuál sería esta F?",
+        "start": 4464.3,
+        "end": 4470.3
+    },
+    {
+        "text": " En el caso anterior, en el caso de contar inversiones.",
+        "start": 4470.3,
+        "end": 4476.3
+    },
+    {
+        "text": " Recuerden, lo que hacíamos era recorrer la separación.",
+        "start": 4476.3,
+        "end": 4480.3
+    },
+    {
+        "text": " No puede costar 1 o no puede costar N si queríamos desarmarlos.",
+        "start": 4481.3,
+        "end": 4486.3
+    },
+    {
+        "text": " Pero ¿cuánto nos costaba unirlos? ¿Cuánto costaba la parte de combinar?",
+        "start": 4486.3,
+        "end": 4490.3
+    },
+    {
+        "text": " Tienemos que recorrer los 2 arreglos, las 2 soluciones.",
+        "start": 4490.3,
+        "end": 4493.3
+    },
+    {
+        "text": " Cada 1 no costaba, cada paso era 1, así que no costaba N.",
+        "start": 4493.3,
+        "end": 4498.3
+    },
+    {
+        "text": " Así que este costo es N. Una ciudad adaptante por N, por ejemplo, o algo o N.",
+        "start": 4498.3,
+        "end": 4504.3
+    },
+    {
+        "text": " Bueno, la solución de esto es O N y lo GN.",
+        "start": 4504.3,
+        "end": 4509.3
+    },
+    {
+        "text": " No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no",
+        "start": 4510.3,
+        "end": 4511.3
+    }
+]
