@@ -1,0 +1,2167 @@
+[
+    {
+        "text": " En la clase pasada habíamos dejado planteada la función copia correspondiente del ejercicio",
+        "start": 0.0,
+        "end": 24.080000000000002
+    },
+    {
+        "text": " 5 del práctico de listas, habíamos estado mejor dicho, habían estado trabajando en esta función,",
+        "start": 24.08,
+        "end": 31.839999999999996
+    },
+    {
+        "text": " habíamos visto distintas alternativas para hacerlo y vamos a hacer ahora una puesta punto,",
+        "start": 31.839999999999996,
+        "end": 37.08
+    },
+    {
+        "text": " ¿Ve bien? Primero que nada, vamos a recordar cómo definimos un tipo para representar una lista de enteros,",
+        "start": 37.08,
+        "end": 46.2
+    },
+    {
+        "text": " como definíamos una lista no importa que sea de enteros, una lista en general,",
+        "start": 46.2,
+        "end": 52.440000000000005
+    },
+    {
+        "text": " ahora definíamos el tipo de datos de qué manera,",
+        "start": 56.2,
+        "end": 62.84
+    },
+    {
+        "text": " ganchito, ¿qué quería decir el ganchito? Empezaba con P, puntero a una K, todo puntero contiene una",
+        "start": 62.84,
+        "end": 78.88
+    },
+    {
+        "text": " dirección de memoria, pero en el caso particular de una lista a una celda, cuál era la idea de la lista,",
+        "start": 78.88,
+        "end": 89.4
+    },
+    {
+        "text": " ir conectando celdas mediante punteros, cada celda que contiene, un dato y una dirección la dirección",
+        "start": 89.4,
+        "end": 103.28
+    },
+    {
+        "text": " de quién, de la siguiente celda, luego la segunda celda va a tener lo mismo un dato y la dirección",
+        "start": 103.28,
+        "end": 110.12
+    },
+    {
+        "text": " de la siguiente celda, cómo marcábamos el final de la lista, con el nil, que era nil,",
+        "start": 110.12,
+        "end": 116.16000000000001
+    },
+    {
+        "text": " el valor nulo de los punteros que lo usamos para representar la lista vacía, ¿Ve bien? Bueno,",
+        "start": 119.64,
+        "end": 127.52000000000001
+    },
+    {
+        "text": " entonces la lista en este ejercicio es de número centeros, pero puede ser de cualquier cosa,",
+        "start": 127.52000000000001,
+        "end": 133.32
+    },
+    {
+        "text": " se definía como un puntero a una celda y la celda como le definíamos, con récord, un registro,",
+        "start": 133.32,
+        "end": 143.07999999999998
+    },
+    {
+        "text": " que tenía que camos, un dato, un dato, un dato, elemento, info, el nombre que le queremos poner de un",
+        "start": 148.32,
+        "end": 161.4
+    },
+    {
+        "text": " determinado tipo, en este ejemplo por tratarse de una lista de enteros es de tipo int, y ahora venía",
+        "start": 161.4,
+        "end": 172.04000000000002
+    },
+    {
+        "text": " la conexión con la próxima celda, como le declarábamos, como siguiente, o sea el nombre puede ser el",
+        "start": 172.04000000000002,
+        "end": 183.64000000000001
+    },
+    {
+        "text": " que nosotros queramos, recordemos siempre cuál es la idea, que los nombres que utilicemos ya sea para",
+        "start": 183.64000000000001,
+        "end": 189.0
+    },
+    {
+        "text": " las variables, para los campos, los procedimientos, o las funciones sean nemotécnicos, o sea que",
+        "start": 189.12,
+        "end": 194.32
+    },
+    {
+        "text": " den una idea de el propósito que se les va a dar, y siguiente de qué tipo es, lista enteros,",
+        "start": 194.32,
+        "end": 201.4
+    },
+    {
+        "text": " o sea es un puntero a otra celda, y haciéramos visto que nosotros podemos concatenar, conectar",
+        "start": 201.4,
+        "end": 214.08
+    },
+    {
+        "text": " tantas celdas como nosotros queramos, y desde la última celda el puntero al siguiente va a valer nil,",
+        "start": 214.08,
+        "end": 220.64000000000001
+    },
+    {
+        "text": " y con esto teníamos definido el tipo lista, observen que para definir la estructura de lista",
+        "start": 223.28,
+        "end": 232.76000000000002
+    },
+    {
+        "text": " necesitamos definir dos tipos de datos, que es referencia mutuamente entre sí, lista de enteros",
+        "start": 232.76000000000002,
+        "end": 240.60000000000002
+    },
+    {
+        "text": " referencia a celda, y a su vez celda referencia nuevamente hacia el lista de enteros, y hayamos visto",
+        "start": 240.6,
+        "end": 247.68
+    },
+    {
+        "text": " que Pascal permite este tipo de construcciones, no solamente Pascal, otros lenguajes también,",
+        "start": 247.68,
+        "end": 253.92
+    },
+    {
+        "text": " el ejercicio 5 planteaba definir la siguiente función, una función llamada copia que recibía",
+        "start": 256.24,
+        "end": 269.52
+    },
+    {
+        "text": " una lista de enteros, y que retorna como resultado otra lista de enteros, que es una copia exacta de la",
+        "start": 270.84000000000003,
+        "end": 285.6
+    },
+    {
+        "text": " primera, y la letra hablaba de hacer una copia limpia de la lista, que quería decir limpia,",
+        "start": 285.6,
+        "end": 294.48
+    },
+    {
+        "text": " exactamente igual pero en otro usando otra parte de la memoria, o sea que los que las celdas de la",
+        "start": 294.48,
+        "end": 304.76
+    },
+    {
+        "text": " lista original no tengan conexión alguna con las celdas de la lista copiada, o sea que no se",
+        "start": 304.76,
+        "end": 312.24
+    },
+    {
+        "text": " produzcan alias entre ambas, bien, observen que esta es una función que está retornando una lista de",
+        "start": 312.24,
+        "end": 325.04
+    },
+    {
+        "text": " enteros, esto Pascal lo permite, nosotros dijimos que las funciones en Pascal tenían una",
+        "start": 325.04,
+        "end": 333.6
+    },
+    {
+        "text": " restricción respecto al tipo de lo que pueden retornar, que es que tiene que ser un tipo simple,",
+        "start": 333.6,
+        "end": 340.72
+    },
+    {
+        "text": " esto nos faltó decirlo en la clase pasada, los punteros son considerados tipos simples, sin",
+        "start": 341.20000000000005,
+        "end": 348.8
+    },
+    {
+        "text": " importar a qué apunten, no importa si es un puntero en registro, o si es un puntero en ínte,",
+        "start": 348.8,
+        "end": 354.88000000000005
+    },
+    {
+        "text": " si es un puntero real, por el solo hecho de ser un puntero es considerado un tipo simple, y por",
+        "start": 354.88000000000005,
+        "end": 361.92
+    },
+    {
+        "text": " lo tanto nosotros podemos hacer una función que devuelva una lista, ¿por qué? Porque la lista en",
+        "start": 361.92,
+        "end": 369.20000000000005
+    },
+    {
+        "text": " sí es en realidad un puntero en la primera celda, ¿no? ¿Qué cosas no podemos devuelver como",
+        "start": 369.2,
+        "end": 378.03999999999996
+    },
+    {
+        "text": " resultado de una función? Tipos estructurados, cualquier cosa que sea un tipo estructurado no puede",
+        "start": 378.03999999999996,
+        "end": 387.96
+    },
+    {
+        "text": " ser devuelto en una función, o sea que necesariamente lo tendríamos que devuelver mediante que,",
+        "start": 387.96,
+        "end": 394.48
+    },
+    {
+        "text": " por ejemplo si yo quiero volver un arreglo o un récord, que tendría que hacer, tendría que ser",
+        "start": 395.20000000000005,
+        "end": 403.92
+    },
+    {
+        "text": " un procedimiento donde la manera de devuelverlo es usando qué tipo de pasaje de parámetros por",
+        "start": 403.92,
+        "end": 409.96000000000004
+    },
+    {
+        "text": " referencia, ¿sabien? Pero no es el caso de los punteros, los punteros en general y las",
+        "start": 409.96000000000004,
+        "end": 415.84000000000003
+    },
+    {
+        "text": " listas en particular pueden ser retornadas como resultado una función. Bien, para fijar ideas,",
+        "start": 415.84,
+        "end": 425.08
+    },
+    {
+        "text": " vamos a suponer que il es esta lista, una lista que tiene estos valores, y para marcar el final",
+        "start": 425.08,
+        "end": 446.88
+    },
+    {
+        "text": " poníamos 1000, que lo representábamos como una especie de cable a tierra. Eso obligatorio en el",
+        "start": 446.88,
+        "end": 456.84
+    },
+    {
+        "text": " dibujo representarlo hacia abajo, es una representación, si no importa si yo lo dibujo para abajo, para arriba o",
+        "start": 456.84,
+        "end": 464.44
+    },
+    {
+        "text": " para adelante, lo importante es que la manera de representar nil se distinga de la manera de",
+        "start": 464.44,
+        "end": 469.71999999999997
+    },
+    {
+        "text": " representar los amaponteros. ¿A bien? Realmente en las dos patitas, sean hacia abajo, hacia adelante,",
+        "start": 469.71999999999997,
+        "end": 476.36
+    },
+    {
+        "text": " se consideran punteronulo. Bueno, en la clase pasada, mientras ustedes trabajaban en este ejercicio,",
+        "start": 476.36,
+        "end": 485.52000000000004
+    },
+    {
+        "text": " yo les había dado un par de sugerencias. La primera era considerar el caso de la lista vacía a",
+        "start": 485.52000000000004,
+        "end": 493.2
+    },
+    {
+        "text": " parte, si la lista original es vacía que tenemos que devolgar. Nil, es decir, otra lista también vacía.",
+        "start": 493.2,
+        "end": 503.08000000000004
+    },
+    {
+        "text": " Y en el caso en que la lista no fuera vacía, si, habíamos conversado que primero debíamos copiar el",
+        "start": 504.08,
+        "end": 513.3199999999999
+    },
+    {
+        "text": " primer elemento y recién después iniciar la iteración para copiar los demás. De esa manera se",
+        "start": 513.3199999999999,
+        "end": 522.48
+    },
+    {
+        "text": " simplificaba el código de la operación a resuldar. Entonces, vamos a manejarnos con esa idea.",
+        "start": 522.48,
+        "end": 531.2
+    },
+    {
+        "text": " Vamos a ver qué variables necesitamos. ¿Qué variables necesitamos?",
+        "start": 533.04,
+        "end": 537.12
+    },
+    {
+        "text": " Alguen puntero auxiliar, vamos a necesitar, pero fundamentalmente un puntero para qué?",
+        "start": 538.72,
+        "end": 543.6800000000001
+    },
+    {
+        "text": " Un puntero para recorrer, un puntero auxiliar y otro para empezar la lista copiada,",
+        "start": 544.68,
+        "end": 555.16
+    },
+    {
+        "text": " o sea un puntero para el resultado, o sea un puntero que me referencia a las celdas de la lista que",
+        "start": 555.16,
+        "end": 562.8
+    },
+    {
+        "text": " queremos producir. Entonces, yo con T3, así vamos a poner T3, P, A, U, y R,",
+        "start": 562.8,
+        "end": 572.92
+    },
+    {
+        "text": " y Su son los nombres que le vamos a poner. ¿De qué tipo?",
+        "start": 572.92,
+        "end": 579.36
+    },
+    {
+        "text": " Son punteros y en nuestras declaraciones qué cosas punteros. ¿Listantes?",
+        "start": 583.8399999999999,
+        "end": 589.4799999999999
+    },
+    {
+        "text": " Listanteros es el tipo de datos de esas tres variables locales.",
+        "start": 589.48,
+        "end": 600.64
+    },
+    {
+        "text": " Bien, vamos a inicializar rezo con nombres, para allá tratar de esa manera el caso particular en",
+        "start": 603.64,
+        "end": 615.6800000000001
+    },
+    {
+        "text": " que la lista pudiera venir vacía. Si yo a rezo le asigno nil que quiere decir que esta vacía,",
+        "start": 615.68,
+        "end": 629.3599999999999
+    },
+    {
+        "text": " rezo representa la lista vacía, nil era el valor nulo de todos los punteros que usábamos para",
+        "start": 629.3599999999999,
+        "end": 637.64
+    },
+    {
+        "text": " representar una lista vacía. ¿Ve bien? Y vamos a preocuparnos ahora por el caso en el cual la lista que",
+        "start": 637.64,
+        "end": 648.64
+    },
+    {
+        "text": " nos pase no sea vacía, o sea, y él es que cosa. Distinto de nil. Si él es distinta de nil,",
+        "start": 648.64,
+        "end": 661.1999999999999
+    },
+    {
+        "text": " entonces es que vamos a iniciar el procesamiento para ir copiándose la aselda. Y si la lista original",
+        "start": 661.76,
+        "end": 670.8000000000001
+    },
+    {
+        "text": " es nil que vamos a hacer, directamente salteamos y al final del todo que vamos a hacer, devolver qué",
+        "start": 670.8000000000001,
+        "end": 679.48
+    },
+    {
+        "text": " cosa? Devolver nil. En cualquier caso vamos a devolver rezo. Bien, o sea que si entramos acá",
+        "start": 679.48,
+        "end": 690.08
+    },
+    {
+        "text": " es porque estamos considerando el caso en el cual la lista tiene por lo menos una aselda. Y esa lista",
+        "start": 690.64,
+        "end": 697.36
+    },
+    {
+        "text": " que dibujamos así tiene cuatro aseldas. ¿Ve bien? Bueno, entonces la estrategia era primero antes de",
+        "start": 697.36,
+        "end": 707.6
+    },
+    {
+        "text": " empezar a recorrer, vamos a hacer una copia de la primera aselda, ¿cómo hacemos eso?",
+        "start": 707.6,
+        "end": 712.5600000000001
+    },
+    {
+        "text": " Tenemos que hacer nil rezo muy bien. ¿Qué hacía nil aplicado un puntito?",
+        "start": 712.56,
+        "end": 725.1999999999999
+    },
+    {
+        "text": " Creaba un espacio de memoria en forma dinámica, o sea, en tiempo de ejecución. Entonces,",
+        "start": 727.3599999999999,
+        "end": 736.68
+    },
+    {
+        "text": " si acá dibujamos rezo y le aplicamos nil lo que sucede es, se genera en tiempo de ejecución una",
+        "start": 736.68,
+        "end": 748.0
+    },
+    {
+        "text": " nueva aselda en memoria y rezo queda cargado con qué? Con la dirección muy bien de esa aselda.",
+        "start": 748.0,
+        "end": 755.0
+    },
+    {
+        "text": " O sea, rezo queda apuntando a esa aselda que acabamos de crear. Y uno de los problemas que",
+        "start": 755.0,
+        "end": 766.16
+    },
+    {
+        "text": " habíamos tenido con este ejercicio era que a medida que avanzábamos y vamos perdiendo las",
+        "start": 766.16,
+        "end": 773.62
+    },
+    {
+        "text": " aseldas creadas, yo vi que eso le pasó a varios. Entonces, justamente para evitar ese problema fue",
+        "start": 773.62,
+        "end": 778.9399999999999
+    },
+    {
+        "text": " que acabamos de declarar qué cosa. Aux. ¿Por qué? ¿Cuál va a hacer la idea? Dejar rezo apuntando a la",
+        "start": 778.9399999999999,
+        "end": 785.42
+    },
+    {
+        "text": " primera aselda e ir avanzando, utilizando aux. Los algoritmos que manipulan listas, en particular",
+        "start": 785.42,
+        "end": 794.4399999999999
+    },
+    {
+        "text": " aquellos que manipulan memoria dinámica ya sea porque van a crear aseldas o porque van a destruir",
+        "start": 794.44,
+        "end": 802.12
+    },
+    {
+        "text": " aseldas, es altamente probable que necesitemos balernos de punteros auxiliares porque si no corremos",
+        "start": 802.12,
+        "end": 808.8000000000001
+    },
+    {
+        "text": " varios peligros y uno de esos peligros es que las celdas que vamos creando vayan quedando inaccesibles.",
+        "start": 808.8000000000001,
+        "end": 816.6800000000001
+    },
+    {
+        "text": " ¿Y cuál es el problema con la memoria dinámica que quede inaccesible? Es basura que se generó",
+        "start": 817.64,
+        "end": 824.8399999999999
+    },
+    {
+        "text": " y no la puedes acceder desde ningún lugar y no la puedes devolver porque que pasa, la memoria",
+        "start": 824.8399999999999,
+        "end": 831.8
+    },
+    {
+        "text": " dinámica no se va automáticamente cuando finaliza el subprograma, queda ahí. Es memoria que se",
+        "start": 831.8,
+        "end": 839.5999999999999
+    },
+    {
+        "text": " perdió, se convirtió en basura que está inaccesible desde todas partes. Así que mucho juego",
+        "start": 839.6,
+        "end": 846.46
+    },
+    {
+        "text": " en eso. No, es que no vamos a perderlos de la lista original, sino estos nuevos que vamos creando",
+        "start": 846.46,
+        "end": 858.36
+    },
+    {
+        "text": " es el problema, el peligro es ir perdiendo los que vamos generando dentro de la función.",
+        "start": 858.36,
+        "end": 862.64
+    },
+    {
+        "text": " Bueno, bien, hemos pedido memoria para esta celda. Lo siguiente que teníamos que hacer era",
+        "start": 863.64,
+        "end": 870.96
+    },
+    {
+        "text": " copiar el primer valor, o sea, este 7 lo tenemos que traer para acá como hacemos.",
+        "start": 870.96,
+        "end": 874.48
+    },
+    {
+        "text": " Resu es el puntero, resutechito quiere decir la celda apuntada y me tengo que meter acá el",
+        "start": 878.4,
+        "end": 888.4
+    },
+    {
+        "text": " nombre que le pusimos acá fue dato, así que le va a poner dato, pero es el nombre que",
+        "start": 888.4,
+        "end": 893.72
+    },
+    {
+        "text": " figura en la declaración. Resutecho punto dato, copiamos así que cosa. Exactamente le asignamos",
+        "start": 893.72,
+        "end": 906.56
+    },
+    {
+        "text": " el etecho punto dato, o sea que este 7 lo copiamos para acá. Y ahora es que vamos a dejar",
+        "start": 906.56,
+        "end": 919.56
+    },
+    {
+        "text": " resu, fijo apuntando a la primera celda y va a entrar en escena que puntero ahora, el auxiliar.",
+        "start": 919.56,
+        "end": 927.3199999999999
+    },
+    {
+        "text": " Yo quiero que aux me quede apuntando a lo mismo que me apunta resu, como así eso.",
+        "start": 927.32,
+        "end": 935.32
+    },
+    {
+        "text": " A aux le asignamos resu, esto es una asignación entre punteros. Nosotros habíamos dicho que la asignación",
+        "start": 938.5600000000001,
+        "end": 953.8800000000001
+    },
+    {
+        "text": " entre punteros que genera, genera alias, es decir que los dos punteros queden apuntando al mismo",
+        "start": 953.88,
+        "end": 960.76
+    },
+    {
+        "text": " lugar de memoria. Y en este caso nos viene bien tener este alias porque expresamente queremos que aux",
+        "start": 960.76,
+        "end": 966.72
+    },
+    {
+        "text": " quede apuntando a la primera celda. La idea con resu, cuál es dejarlo, no tocarlo más.",
+        "start": 966.72,
+        "end": 973.8
+    },
+    {
+        "text": " Bien, bueno y teníamos declarado por acipe que lo vamos a utilizar para irnos moviendo sobre",
+        "start": 973.8,
+        "end": 984.7199999999999
+    },
+    {
+        "text": " la lista original pero partir de que es el da. En realidad la 7 ya la copiamos. Vamos a empezar a",
+        "start": 984.7199999999999,
+        "end": 994.04
+    },
+    {
+        "text": " partir de la segunda celda. Entonces vamos a hacer que te apunte a la segunda celda de la lista",
+        "start": 994.04,
+        "end": 1002.12
+    },
+    {
+        "text": " original, como escribimos eso. ¿Cómo hacemos para que es P? Quede apuntando a la segunda celda de la",
+        "start": 1002.12,
+        "end": 1010.4
+    },
+    {
+        "text": " lista original. A PL, asignamos y vamos a mirar cómo hacemos para llegar hasta acá. Tenemos que",
+        "start": 1010.4,
+        "end": 1023.04
+    },
+    {
+        "text": " compartirles de él. Entonces que ponemos. Él, él es techo, quien es el techo, esta celda y",
+        "start": 1023.04,
+        "end": 1031.68
+    },
+    {
+        "text": " cómo accedó a este campo de acá. Punto siguiente y da la casualidad que ese campo a su vez es un puntero.",
+        "start": 1031.68,
+        "end": 1043.36
+    },
+    {
+        "text": " Entonces cómo hago para desde este puntero venir acá. Siguiente techo, punto, siguiente techo",
+        "start": 1043.9199999999998,
+        "end": 1054.4799999999998
+    },
+    {
+        "text": " punto dato, no, en realidad directamente lo terminamos ahí. ¿Por qué? Porque siguiente que es la",
+        "start": 1054.4799999999998,
+        "end": 1063.76
+    },
+    {
+        "text": " dirección de memoria de esta celda la queremos copiar acá, en P. O sea queremos generar alias",
+        "start": 1063.76,
+        "end": 1068.7199999999998
+    },
+    {
+        "text": " directamente le ponemos así. Si yo le pusiera techo punto dato estaría accediendo al dos,",
+        "start": 1068.72,
+        "end": 1074.32
+    },
+    {
+        "text": " pero mi no me interesa acceder al dos. Me interesa que quede apuntando a la misma celda que apunta a este.",
+        "start": 1074.32,
+        "end": 1080.2
+    },
+    {
+        "text": " Miremos los tipos de qué tipo es P, de tipo listanteros y de qué tipo es el campo siguiente de",
+        "start": 1082.04,
+        "end": 1091.24
+    },
+    {
+        "text": " el techo, distanteros, se son del mismo tipo. Hasta acá bien.",
+        "start": 1091.24,
+        "end": 1101.96
+    },
+    {
+        "text": " Vamos a seguir por acá y ahora empezamos la recorrida sobre la lista original hasta cuando,",
+        "start": 1107.56,
+        "end": 1115.92
+    },
+    {
+        "text": " hasta llegar al final del todo. Es una recorrida completa a menos de la primera celda. Si esto",
+        "start": 1116.92,
+        "end": 1126.4
+    },
+    {
+        "text": " fuera un arreglo para hacer una recorrida completa que usaríamos. Forgo, porque en los arreglos la",
+        "start": 1126.4,
+        "end": 1133.44
+    },
+    {
+        "text": " estructura de control adecuada para una recorrida completa era el forgo, porque sabemos dónde empezamos,",
+        "start": 1133.44,
+        "end": 1139.2
+    },
+    {
+        "text": " en qué índice y sabemos dónde terminamos. Ahora la clase pasada dijimos que para las listas",
+        "start": 1139.2,
+        "end": 1145.52
+    },
+    {
+        "text": " por más que sea una recorrida completa sí o sí debe ser con qué, porque es razón,",
+        "start": 1145.52,
+        "end": 1151.32
+    },
+    {
+        "text": " porque nunca sabes de antemano cuántas celda tiene la lista. Entonces de alguna manera se nos",
+        "start": 1152.72,
+        "end": 1159.16
+    },
+    {
+        "text": " facilitaba la elección de la estructura porque la enorme mayoría de las veces las vamos a",
+        "start": 1159.16,
+        "end": 1166.0
+    },
+    {
+        "text": " recorrer con guay. Bueno, mientras que cosa, vamos a mirar p.",
+        "start": 1166.0,
+        "end": 1174.48
+    },
+    {
+        "text": " Lo dejamos acá, estamos usando p, mientras p distinto de 10, o sea mientras que p no sea el punteronulo.",
+        "start": 1177.68,
+        "end": 1193.44
+    },
+    {
+        "text": " Bueno, mientras que pese a distinto de 10 debemos entrar al guay. Y la elega es ahora que",
+        "start": 1194.44,
+        "end": 1204.52
+    },
+    {
+        "text": " queremos copiar el 2 a continuación del 7, pero para copiar el 2 a continuación del 7,",
+        "start": 1204.52,
+        "end": 1212.04
+    },
+    {
+        "text": " ¿qué necesitamos hacer acá? A hacer un nú, necesitamos hacer aparecer una nueva celda,",
+        "start": 1212.04,
+        "end": 1219.48
+    },
+    {
+        "text": " una error que se produjo bastante y que es normal en este ejercicio es olvidarnos de hacer",
+        "start": 1220.48,
+        "end": 1227.88
+    },
+    {
+        "text": " nú dentro del guay si yo hago nú solo al principio, ¿qué efecto tiene eso? Que estás creando solo",
+        "start": 1227.88,
+        "end": 1235.08
+    },
+    {
+        "text": " una espacio en memoria, solo una celda, pero sin embargo yo necesito crear una celda para cada",
+        "start": 1235.08,
+        "end": 1241.68
+    },
+    {
+        "text": " valor de la lista original que voy a llamar copiar. Entonces, ¿cómo hago para desde acá generar",
+        "start": 1241.68,
+        "end": 1249.4
+    },
+    {
+        "text": " una nueva celda? Nú y bueno, empezamos en aús, aús, techo, aús, techito, ¿quién es esto de acá?",
+        "start": 1249.4,
+        "end": 1266.68
+    },
+    {
+        "text": " Y para meterme a este campo que hago, punto siguiente, ¿por qué punto? ¿Por qué es el tipo",
+        "start": 1266.68,
+        "end": 1276.76
+    },
+    {
+        "text": " celda y celda es un record? Es un registro y para acceder a los campos, un recurso,",
+        "start": 1276.8799999999999,
+        "end": 1282.68
+    },
+    {
+        "text": " vamos al punto. Entonces, nú, de aús, techo, punto siguiente, genera que a partir de acá,",
+        "start": 1282.68,
+        "end": 1291.08
+    },
+    {
+        "text": " si, pase que cosa, se crea una nueva celda y acaba de quedar la dirección de esa nueva celda,",
+        "start": 1292.44,
+        "end": 1303.32
+    },
+    {
+        "text": " eso es lo que genera señal. Ya tenemos la celda creada, ahora vamos a mover aús,",
+        "start": 1303.32,
+        "end": 1312.96
+    },
+    {
+        "text": " ¿cómo hacemos para mover aús? Aús, le asignamos, aús, techito, punto siguiente, esta",
+        "start": 1312.96,
+        "end": 1326.3999999999999
+    },
+    {
+        "text": " habíamos visto que era la manera de ir avanzando en una lista, tomo el puntero y lo hago a punter",
+        "start": 1326.4,
+        "end": 1335.2800000000002
+    },
+    {
+        "text": " al mismo que a punter el siguiente de lo a punter, parece medio de otra valingua, pero es así,",
+        "start": 1335.2800000000002,
+        "end": 1340.1200000000001
+    },
+    {
+        "text": " aús, techo, punto siguiente, me paro en aús, aús, techo es este, punto siguiente es este,",
+        "start": 1341.1200000000001,
+        "end": 1347.3600000000001
+    },
+    {
+        "text": " este puntero es decir, la dirección que está acá, la guardo en aús, eso que genera,",
+        "start": 1347.3600000000001,
+        "end": 1353.92
+    },
+    {
+        "text": " que aús deja de apuntar acá y pasa a apuntar acá.",
+        "start": 1353.92,
+        "end": 1358.72
+    },
+    {
+        "text": " Una de las cosas que tratábamos de hacer en las rondas de práctico, el viernes,",
+        "start": 1360.5600000000002,
+        "end": 1365.92
+    },
+    {
+        "text": " era hacer esto con rezo, pero si yo hago que rezo, me apunta el siguiente que me pasaba con esta,",
+        "start": 1365.92,
+        "end": 1371.16
+    },
+    {
+        "text": " se perdía, y vamos perdiendo las celdas creadas a medida que avanzabamos y eso es algo que no nos",
+        "start": 1371.16,
+        "end": 1377.52
+    },
+    {
+        "text": " puede pasar. Bien, ahora que aús está referenciando acá, la copia, como le hacemos,",
+        "start": 1377.52,
+        "end": 1386.16
+    },
+    {
+        "text": " muy parecido a la primera, aús que, aús, techo, punto, dato, allí copiamos, qué cosa?",
+        "start": 1388.36,
+        "end": 1399.76
+    },
+    {
+        "text": " Pete chito, punto dato.",
+        "start": 1400.76,
+        "end": 1402.84
+    },
+    {
+        "text": " O sea que este dos viene para acá, y ahora que ya copiamos el dos, avanzamos en la lista original,",
+        "start": 1407.76,
+        "end": 1417.6
+    },
+    {
+        "text": " como hacemos eso, ap, exactamente, le asignamos petecho, punto siguiente,",
+        "start": 1417.6,
+        "end": 1426.44
+    },
+    {
+        "text": " o sea que p deja de apuntar acá y apuntar a donde? A la celda con el 5, o sea, deja de apuntar acá y",
+        "start": 1429.76,
+        "end": 1446.4
+    },
+    {
+        "text": " pasa a apuntar a la celda con el 5. Bien, vamos repetir esto, volvemos acá, p es distinto de nil,",
+        "start": 1446.4,
+        "end": 1454.92
+    },
+    {
+        "text": " sí, entonces nil de aús techo punto siguiente, ahora aús donde está acá, qué genera este nil?",
+        "start": 1455.88,
+        "end": 1463.68
+    },
+    {
+        "text": " La aparición de otra celda, cuya dirección la vamos a guardar en donde? En aús techo punto",
+        "start": 1467.44,
+        "end": 1479.0
+    },
+    {
+        "text": " siguiente, o sea acá, esto queda así, ¿qué hacemos ahora con aús? Que avance,",
+        "start": 1479.0,
+        "end": 1489.84
+    },
+    {
+        "text": " lo hacemos a ponder ahí, y esto que era? El valor apuntado desde p, o sea petecho punto dato,",
+        "start": 1491.84,
+        "end": 1507.0
+    },
+    {
+        "text": " lo vamos a compiar acá en aús techo punto dato, o sea, se copia el 5 y esto me hace avanzar",
+        "start": 1507.0,
+        "end": 1518.16
+    },
+    {
+        "text": " el siguiente, deja de apuntar acá y pasa a apuntar acá, volvemos al y, p sigue siendo distinto de nil,",
+        "start": 1518.16,
+        "end": 1526.6
+    },
+    {
+        "text": " sí, entramos de vuelta, ahora aús está apuntando acá aús techo punto siguiente,",
+        "start": 1526.6,
+        "end": 1533.52
+    },
+    {
+        "text": " ese este y al asarnio aparece otra celda más, cuya dirección que de guardada acá,",
+        "start": 1533.52,
+        "end": 1540.68
+    },
+    {
+        "text": " avanzamos aús de la misma manera que en la centrada de santa y de saluaí hacemos la copia p",
+        "start": 1543.8799999999999,
+        "end": 1552.84
+    },
+    {
+        "text": " techo punto dato, ese este 4 lo copiamos hacia aús techo punto dato y a p lo hacemos a avanzar",
+        "start": 1552.84,
+        "end": 1562.56
+    },
+    {
+        "text": " a donde? al siguiente y el siguiente quieres, nil, cuando vuelvo a este igual que pasa salua",
+        "start": 1562.56,
+        "end": 1573.08
+    },
+    {
+        "text": " y la lista resultante está casi pronta, ¿qué me falta?",
+        "start": 1576.08,
+        "end": 1579.6799999999998
+    },
+    {
+        "text": " ponerle que marca acá, nil, entonces como hacemos esto?",
+        "start": 1581.6799999999998,
+        "end": 1587.2
+    },
+    {
+        "text": " no necesito if, aús techo punto siguiente, o sea, si esto es aús, esto es aús techo,",
+        "start": 1587.2,
+        "end": 1604.28
+    },
+    {
+        "text": " punto siguiente, se esté acá, que ponemos, nil, con esta variante no necesitamos hacer ningún if,",
+        "start": 1604.28,
+        "end": 1617.96
+    },
+    {
+        "text": " una de las cosas que había pasado en la clase pasada era que muchos en vez de copiar la primera",
+        "start": 1619.6399999999999,
+        "end": 1625.28
+    },
+    {
+        "text": " celda antes la querían copiar dentro del guay, entonces al copiarla dentro del guay era necesario",
+        "start": 1625.28,
+        "end": 1632.36
+    },
+    {
+        "text": " preguntar cada vez que entraba mediante un if es la última, es la última, es la última, bueno con",
+        "start": 1632.36,
+        "end": 1640.6399999999999
+    },
+    {
+        "text": " esta alternativa de copiarla primera antes de entrar no saoramos el if dentro del guay, lo cual está",
+        "start": 1640.6399999999999,
+        "end": 1646.76
+    },
+    {
+        "text": " bueno porque es una pregunta menos que hacemos, cada vez que entramos al guay,",
+        "start": 1646.76,
+        "end": 1653.8
+    },
+    {
+        "text": " funcionar funciona el algoritmo es correcto pero cuál es más eficiente, esto no es que este mal,",
+        "start": 1653.8,
+        "end": 1666.36
+    },
+    {
+        "text": " pero cuál es más eficiente, este algoritmo es mejor que el que tiene un if adentro,",
+        "start": 1666.36,
+        "end": 1674.96
+    },
+    {
+        "text": " no es que este tardiblemente mal pero no está bueno como este, va a restar algunos puntos más",
+        "start": 1675.96,
+        "end": 1686.32
+    },
+    {
+        "text": " que hacer esto, es más de hecho cuando vimos estructuras de control, concretamente la parte de",
+        "start": 1686.32,
+        "end": 1693.08
+    },
+    {
+        "text": " estructuras repetitivas, había un caso en el cual dijimos evitar controlar dentro de la",
+        "start": 1693.08,
+        "end": 1699.04
+    },
+    {
+        "text": " iteración algo que puede resolverse en un caso borde, o sea si lo puedes resolver antes",
+        "start": 1699.04,
+        "end": 1704.84
+    },
+    {
+        "text": " de entrar o después de salir te ahorrá celif cada vez que entras,",
+        "start": 1704.84,
+        "end": 1708.3999999999999
+    },
+    {
+        "text": " creo que era el capítulo 6 que hablaba de las parámaticas de las diferentes estructuras",
+        "start": 1710.72,
+        "end": 1717.3999999999999
+    },
+    {
+        "text": " repetitivas, sí, cómo?",
+        "start": 1717.3999999999999,
+        "end": 1722.44
+    },
+    {
+        "text": " Quizás de repente se le pueda simplificar alguna cosa pero la idea más o menos es esto,",
+        "start": 1722.44,
+        "end": 1731.3200000000002
+    },
+    {
+        "text": " o sea ahorrarte la pregunta innecesaria dentro del guay, bueno entonces esto lo habíamos puesto",
+        "start": 1731.3200000000002,
+        "end": 1742.04
+    },
+    {
+        "text": " en este if, que empezaba acá, y que lo vamos a terminar por acá,",
+        "start": 1742.04,
+        "end": 1752.52
+    },
+    {
+        "text": " o sea que este n me cierra este if, luego del n, que tengo que hacer?",
+        "start": 1757.8799999999999,
+        "end": 1764.68
+    },
+    {
+        "text": " Bueno pasa que si le pusiera un el sería para el caso en que la lista es como,",
+        "start": 1764.68,
+        "end": 1773.92
+    },
+    {
+        "text": " vacía y si la lista es vacía que pasa con resu, ya está vacía, o sea ya tiene guardado el resultado,",
+        "start": 1773.92,
+        "end": 1783.44
+    },
+    {
+        "text": " ¿qué es lo que me falta hacer al final de la función? De volver al resultado, si esto lo haríamos",
+        "start": 1785.44,
+        "end": 1793.48
+    },
+    {
+        "text": " a continuación y para devolver el resultado que hacemos, una asignación con el nombre",
+        "start": 1794.68,
+        "end": 1803.76
+    },
+    {
+        "text": " de la función, a copia le asignamos rezo, y acá es donde vendría el end de la función,",
+        "start": 1803.76,
+        "end": 1816.0
+    },
+    {
+        "text": " la instrucción que devuelve el resultado se puede escribir en más de un lugar,",
+        "start": 1816.0,
+        "end": 1824.52
+    },
+    {
+        "text": " pascarlo soporta, sí, pero una recomendación cual era, una sola vez y al final del todo,",
+        "start": 1825.68,
+        "end": 1834.52
+    },
+    {
+        "text": " para eso una buena práctica era declarar una variable para guardar el resultado, verdad, y usar",
+        "start": 1834.52,
+        "end": 1843.04
+    },
+    {
+        "text": " esa variable para ir construyendo el resultado y devolverlo una sola vez y al final.",
+        "start": 1843.04,
+        "end": 1847.68
+    },
+    {
+        "text": " Está bien?",
+        "start": 1855.3999999999999,
+        "end": 1856.12
+    },
+    {
+        "text": " ¿Más preguntas de esto?",
+        "start": 1862.28,
+        "end": 1863.52
+    },
+    {
+        "text": " Bien, en el caso que él le venga vacía, ¿qué pasa? Ponemos rezo en él, ¿qué pasa con este ir?",
+        "start": 1863.52,
+        "end": 1872.76
+    },
+    {
+        "text": " No entras, se saltea todo y directamente voy a estar devolviendo como resultado, rezo que va a",
+        "start": 1872.76,
+        "end": 1882.56
+    },
+    {
+        "text": " valer mi, en el caso que la lista tenga por lo menos una celdra va a entrar y va a ser ese procesamiento.",
+        "start": 1882.56,
+        "end": 1890.68
+    },
+    {
+        "text": " Está bien? Vamos a mirar este otro caso. ¿Qué pasa acá? Cuando la lista tiene un solo valor.",
+        "start": 1893.52,
+        "end": 1916.92
+    },
+    {
+        "text": " Un caso borde es el caso en que la lista viene vacía, ahora hay un segundo caso borde que es",
+        "start": 1924.24,
+        "end": 1931.28
+    },
+    {
+        "text": " cuando trae un elemento, porque vamos a ver qué es lo que sucede con ese y que va a ir.",
+        "start": 1931.28,
+        "end": 1935.6
+    },
+    {
+        "text": " A ver si funciona o si tiene algún problema, estamos en ese caso, empezamos de vuelta, acá está rezo,",
+        "start": 1936.44,
+        "end": 1943.6
+    },
+    {
+        "text": " rezo es inicializada con nil, el es distinto de nil, sí, ni un rezo, ¿qué pasa?",
+        "start": 1944.48,
+        "end": 1957.28
+    },
+    {
+        "text": " Deja de apuntar a nil y apunta a una nueva celdra que se acaba de crear.",
+        "start": 1959.76,
+        "end": 1964.6399999999999
+    },
+    {
+        "text": " Está bien? Rezo techo punto dato, le asignamos el etecho punto dato. Rezo techo es esto punto dato,",
+        "start": 1964.64,
+        "end": 1978.64
+    },
+    {
+        "text": " acá colocamos el etecho punto dato, sea el 8, quiero que habemos dicho, copiábamos el valor de",
+        "start": 1978.64,
+        "end": 1985.3200000000002
+    },
+    {
+        "text": " la primera celdra antes de entrar al guay. Usabamos aux, generábamos alias con rezo y apé le",
+        "start": 1985.32,
+        "end": 2002.48
+    },
+    {
+        "text": " asignamos el etecho punto siguiente, y miremos lo que pasa acá. El etecho es esto punto siguiente",
+        "start": 2002.48,
+        "end": 2010.6799999999998
+    },
+    {
+        "text": " en nil, o sea que p queda con qué valor, con nil, de acá vendríamos al guay, mientras que pese a",
+        "start": 2010.68,
+        "end": 2024.5600000000002
+    },
+    {
+        "text": " distinto de nil, ya es nil, o sea que no entras al guay, ni siquiera una vez. Aux techo punto",
+        "start": 2024.5600000000002,
+        "end": 2035.48
+    },
+    {
+        "text": " siguiente le asignamos nil, acá está aux, aux techo punto siguiente, le asignamos nil, o sea, el",
+        "start": 2035.48,
+        "end": 2045.8
+    },
+    {
+        "text": " otro caso borde es decir cuando hay una celdra sola también funciona bien, y cuando tiene dos o más",
+        "start": 2045.8,
+        "end": 2052.12
+    },
+    {
+        "text": " celdas es el caso general, que es porque dibujamos ahí. Bueno acá tenemos una operación representativa de",
+        "start": 2052.12,
+        "end": 2062.96
+    },
+    {
+        "text": " lo que es manipulación de una lista con generación de memoria dinámica a medida que le vamos",
+        "start": 2062.96,
+        "end": 2069.56
+    },
+    {
+        "text": " recorriendo. ¿Qué pasa con estas variables locales cuando la función termina? Seban por sí",
+        "start": 2069.56,
+        "end": 2081.42
+    },
+    {
+        "text": " solas, uno estaría muy tentado a querer borrarlas haciendo que, haciendo dispos, el problema es que si",
+        "start": 2081.42,
+        "end": 2094.14
+    },
+    {
+        "text": " vos le aplica dispos a un puntero no es el puntero lo que está eliminando, sino que cosa, la memoria",
+        "start": 2094.14,
+        "end": 2102.82
+    },
+    {
+        "text": " apuntada es la que estás liberando, entonces cuidado con pretender hacer dispos para una variable",
+        "start": 2102.82,
+        "end": 2110.9
+    },
+    {
+        "text": " local, la variable local como toda variable local, desaparece por sí sola al momento de finalizar el",
+        "start": 2110.9,
+        "end": 2118.7000000000003
+    },
+    {
+        "text": " su programa. Sí, el puntero no importa a dónde apunte, por sí solo va a desaparecer, de hecho lo que le",
+        "start": 2118.7000000000003,
+        "end": 2136.52
+    },
+    {
+        "text": " pasa a Ux, fíjate acá, rezu está apuntando a la primera celdar, rezu es lo que se retorna, o sea que cuando se ejecute",
+        "start": 2136.52,
+        "end": 2146.24
+    },
+    {
+        "text": " la instrucción que retorna el resultado en el programa principal va a quedar un puntero a esta celdar. Ahora",
+        "start": 2146.24,
+        "end": 2153.6
+    },
+    {
+        "text": " miramos a Ux, a Ux que está apuntando a la misma celdar cuando la función termina, a Ux desaparece por sí sola.",
+        "start": 2153.6,
+        "end": 2159.4
+    },
+    {
+        "text": " Voy a decir si Aux estuviera apuntando por ejemplo tras el da por acá, bueno ahí tendríamos un problema,",
+        "start": 2167.04,
+        "end": 2172.32
+    },
+    {
+        "text": " porque esta celdar luego de finalizar la función que daría inaccesible. Y ahí tenemos un ejemplo de algo",
+        "start": 2172.32,
+        "end": 2178.72
+    },
+    {
+        "text": " que no debe pasar, no nos pasó acá porque por suerte esta celdar también estaba apuntada desde rezu y por suerte rezu es lo que",
+        "start": 2178.72,
+        "end": 2185.64
+    },
+    {
+        "text": " estamos devoliendo, o sea que si Aux estuviera apuntando otra cosa por acá esta memoria que daría inaccesible,",
+        "start": 2185.64,
+        "end": 2195.3599999999997
+    },
+    {
+        "text": " ese es uno de los cuidados que tenemos que tener, que ahora vamos a echarlar un poquito más de eso y después hablamos de la tarea.",
+        "start": 2196.96,
+        "end": 2202.7599999999998
+    },
+    {
+        "text": " Les gustó este algoritmo, el de la tarea es aún más lindo.",
+        "start": 2208.08,
+        "end": 2212.8399999999997
+    },
+    {
+        "text": " Vamos a hablar de ya después.",
+        "start": 2216.24,
+        "end": 2217.64
+    },
+    {
+        "text": " Bueno más preguntas de este.",
+        "start": 2219.44,
+        "end": 2220.44
+    },
+    {
+        "text": " Bueno vamos a mirar un poquito de otro ejercicio, muy poquita cosa y con eso le quedamos listas.",
+        "start": 2224.2799999999997,
+        "end": 2230.3599999999997
+    },
+    {
+        "text": " Yo les recomiendo que antes de ponerse a realizar la función sobre listas, las funciones porque son dos que pide la tarea,",
+        "start": 2235.64,
+        "end": 2243.24
+    },
+    {
+        "text": " primero ejerciten con el práctico 12, porque les va a dar buena mecánica para lo que pide la tarea.",
+        "start": 2243.24,
+        "end": 2251.24
+    },
+    {
+        "text": " Bueno vamos a mirar un poquito el ejercicio 9,",
+        "start": 2254.24,
+        "end": 2257.04
+    },
+    {
+        "text": " está.",
+        "start": 2257.04,
+        "end": 2258.04
+    },
+    {
+        "text": " Bien, el ejercicio 9 nos muestra algunos ejemplos de cosas que están mal hechas en relación al manejo de memoria dinámica con listas.",
+        "start": 2269.04,
+        "end": 2281.04
+    },
+    {
+        "text": " Cosas que errores que es muy frecuente que cometamos y que no debemos cometer están ilustrados en estos fragmentos de código.",
+        "start": 2282.04,
+        "end": 2292.04
+    },
+    {
+        "text": " Entonces vamos a mirar un poquito cada uno de estos fragmentos y vamos a discutir qué sucede de malo en términos del manejo de memoria dinámica con cada uno de ellos.",
+        "start": 2293.04,
+        "end": 2304.04
+    },
+    {
+        "text": " Algunos de los problemas que vamos a ver acá medio les aparecieron ustedes haciendo aquella función la que la se pasaba y medio que estuvimos discutiendo acá que podían llegar a pasar.",
+        "start": 2305.04,
+        "end": 2316.04
+    },
+    {
+        "text": " Cosas como que hayan celdas que queden inaccesibles, cosas como pretender acceder a un espacio de memoria que no fue debidamente pedido con nimo por ejemplo.",
+        "start": 2318.04,
+        "end": 2332.04
+    },
+    {
+        "text": " Ese tipo de situaciones.",
+        "start": 2332.04,
+        "end": 2334.04
+    },
+    {
+        "text": " Y vamos a mirar la parte uno del ejercicio 9, que dice que se desea crear una lista con solamente un elemento, el valor 1.",
+        "start": 2337.04,
+        "end": 2349.04
+    },
+    {
+        "text": " Entonces vamos a ejecutar esto y ver qué sucede.",
+        "start": 2350.04,
+        "end": 2360.04
+    },
+    {
+        "text": " Nuevo es de tipo listanteros.",
+        "start": 2363.04,
+        "end": 2366.04
+    },
+    {
+        "text": " Se le dibujamos nuevo y lo primero que hacemos que es iniciar lo que manera.",
+        "start": 2367.04,
+        "end": 2380.04
+    },
+    {
+        "text": " Crear una espacio de memoria o sea, ni un espacio de memoria y nuevo que da apuntando a ese espacio de memoria.",
+        "start": 2381.04,
+        "end": 2390.04
+    },
+    {
+        "text": " Está bien.",
+        "start": 2391.04,
+        "end": 2393.04
+    },
+    {
+        "text": " Bueno, el muelle la balsa la cuerva.",
+        "start": 2395.04,
+        "end": 2399.04
+    },
+    {
+        "text": " A nuevo enseguida le asignamos nimo.",
+        "start": 2401.04,
+        "end": 2404.04
+    },
+    {
+        "text": " ¿Qué va a pasar?",
+        "start": 2406.04,
+        "end": 2407.04
+    },
+    {
+        "text": " Cortamos la cuerva, es decir, deja de apuntar esta celda y la cuerva le hacemos un nudo que apunte la tierra.",
+        "start": 2408.04,
+        "end": 2419.04
+    },
+    {
+        "text": " ¿Y qué pasó con la balsa?",
+        "start": 2421.04,
+        "end": 2423.04
+    },
+    {
+        "text": " Se perdió a la deriva.",
+        "start": 2424.04,
+        "end": 2426.04
+    },
+    {
+        "text": " Esta memoria quedó inaccesible.",
+        "start": 2427.04,
+        "end": 2430.04
+    },
+    {
+        "text": " Y acá tenemos el primer ejemplo de algo que no debemos hacer.",
+        "start": 2431.04,
+        "end": 2439.04
+    },
+    {
+        "text": " Algo que vemos mucho en los parciales es que ustedes con la genuina intención de que el puntero no quede con basura le asignó.",
+        "start": 2440.04,
+        "end": 2451.04
+    },
+    {
+        "text": " O sea, muchas veces esto lo hacen para evitar justamente que quede con basura.",
+        "start": 2452.04,
+        "end": 2457.04
+    },
+    {
+        "text": " El problema es que enseguida que hicieron esto hacen que el puntero apunte a otro lado y esta memoria que acaban de generar quedó inaccesible.",
+        "start": 2458.04,
+        "end": 2467.04
+    },
+    {
+        "text": " Se perdió y esto salió grave.",
+        "start": 2468.04,
+        "end": 2471.04
+    },
+    {
+        "text": " Nunca debemos dejar memoria inaccesible.",
+        "start": 2472.04,
+        "end": 2475.04
+    },
+    {
+        "text": " Pero vamos a tener un problema adicional.",
+        "start": 2478.04,
+        "end": 2481.04
+    },
+    {
+        "text": " ¿Por qué que pasa?",
+        "start": 2482.04,
+        "end": 2483.04
+    },
+    {
+        "text": " Ahora que nuevo tiene el valor nil, ¿no está apuntando a una celda válida.",
+        "start": 2484.04,
+        "end": 2492.04
+    },
+    {
+        "text": " Porque aquí está apuntando nuevo.",
+        "start": 2493.04,
+        "end": 2495.04
+    },
+    {
+        "text": " A nada.",
+        "start": 2496.04,
+        "end": 2497.04
+    },
+    {
+        "text": " Porque nil justamente significa eso. Puntero a ninguna parte.",
+        "start": 2498.04,
+        "end": 2501.04
+    },
+    {
+        "text": " Entonces, además de que acabamos de dejar memoria inaccesible, cuando queramos hacer nuevo techo, punto dato,",
+        "start": 2502.04,
+        "end": 2510.04
+    },
+    {
+        "text": " miramos acá. Existe una celda apuntada por nuevo.",
+        "start": 2510.04,
+        "end": 2515.04
+    },
+    {
+        "text": " No. Mucho menos existe un campo dato.",
+        "start": 2516.04,
+        "end": 2519.04
+    },
+    {
+        "text": " Esta celda no existe.",
+        "start": 2520.04,
+        "end": 2522.04
+    },
+    {
+        "text": " Entonces, cuando queramos colocar un 1 ahí, vamos a estar queriendo escribir un 1 en un lugar de la memoria que no está definido.",
+        "start": 2524.04,
+        "end": 2533.04
+    },
+    {
+        "text": " Y esto significa crash en tiempo de ejecución.",
+        "start": 2535.04,
+        "end": 2538.04
+    },
+    {
+        "text": " El error que arrafal acá cual fue.",
+        "start": 2541.04,
+        "end": 2544.04
+    },
+    {
+        "text": " La asignación a nil, porque si yo no le hubiera asignado a nil, esto en vez de apuntar a nil, apuntaba esta celda.",
+        "start": 2546.04,
+        "end": 2551.04
+    },
+    {
+        "text": " Y ahí tranquilamente colocábamos un valor para el dato y el siguiente nil.",
+        "start": 2552.04,
+        "end": 2555.04
+    },
+    {
+        "text": " Así que mucho ojo, a veces una sola instrucción, puesta en un lugar inadecuado, te rompió todo.",
+        "start": 2559.04,
+        "end": 2566.04
+    },
+    {
+        "text": " ¿Se entendió eso?",
+        "start": 2571.04,
+        "end": 2573.04
+    },
+    {
+        "text": " Vamos a ver el 2.",
+        "start": 2575.04,
+        "end": 2576.04
+    },
+    {
+        "text": " Tenemos aquí un procedimiento que pretende insertar un elemento al final de la lista.",
+        "start": 2584.04,
+        "end": 2591.04
+    },
+    {
+        "text": " No es como aquel que iba generando elementos a medida que avanzaba.",
+        "start": 2592.04,
+        "end": 2597.04
+    },
+    {
+        "text": " Aquí queremos agregar un nuevo elemento al final de una lista.",
+        "start": 2598.04,
+        "end": 2603.04
+    },
+    {
+        "text": " Bien.",
+        "start": 2606.04,
+        "end": 2607.04
+    },
+    {
+        "text": " Entonces, vamos a empezar a dibujar lo que pasa.",
+        "start": 2608.04,
+        "end": 2610.04
+    },
+    {
+        "text": " Vamos a suponer que acá tenemos, bueno, primero, es un procedimiento que nos pasan.",
+        "start": 2611.04,
+        "end": 2616.04
+    },
+    {
+        "text": " El dato que queremos agregar y la lista de que manera.",
+        "start": 2617.04,
+        "end": 2622.04
+    },
+    {
+        "text": " Por referencia, ahí está bien, porque qué va a hacer este procedimiento con la lista.",
+        "start": 2623.04,
+        "end": 2627.04
+    },
+    {
+        "text": " Vamos a modificar.",
+        "start": 2628.04,
+        "end": 2629.04
+    },
+    {
+        "text": " Digimos, la mecánica es en un ma de siempre.",
+        "start": 2630.04,
+        "end": 2632.04
+    },
+    {
+        "text": " Si no le quiero modificar, la paso como.",
+        "start": 2633.04,
+        "end": 2635.04
+    },
+    {
+        "text": " Por valor, si le quiero modificar, la paso por referencia.",
+        "start": 2636.04,
+        "end": 2639.04
+    },
+    {
+        "text": " Eso después, un poquito.",
+        "start": 2641.04,
+        "end": 2642.04
+    },
+    {
+        "text": " Entonces, vamos a suponer que acá tenemos la lista.",
+        "start": 2643.04,
+        "end": 2645.04
+    },
+    {
+        "text": " Y vamos a suponer que la lista contiene, no sé, 12.",
+        "start": 2649.04,
+        "end": 2654.04
+    },
+    {
+        "text": " Un 7 y un 5.",
+        "start": 2656.04,
+        "end": 2657.04
+    },
+    {
+        "text": " Y vamos a suponer que queremos agregar un 4.",
+        "start": 2660.04,
+        "end": 2662.04
+    },
+    {
+        "text": " El dato que queremos agregar es un 4.",
+        "start": 2665.04,
+        "end": 2668.04
+    },
+    {
+        "text": " Bien.",
+        "start": 2672.04,
+        "end": 2673.04
+    },
+    {
+        "text": " Dos punteros auxiliares, IT y nuevo.",
+        "start": 2674.04,
+        "end": 2676.04
+    },
+    {
+        "text": " New, nuevo.",
+        "start": 2677.04,
+        "end": 2678.04
+    },
+    {
+        "text": " O sea, dibujemos nuevo.",
+        "start": 2679.04,
+        "end": 2680.04
+    },
+    {
+        "text": " Al aplicarle a New, va a pasar lo mismo que pasaba en el caso 1.",
+        "start": 2683.04,
+        "end": 2686.04
+    },
+    {
+        "text": " Se genera una nueva celda y nuevo queda con su dirección de memoria.",
+        "start": 2687.04,
+        "end": 2692.04
+    },
+    {
+        "text": " Bueno, hasta acá venimos bien, ¿por qué?",
+        "start": 2696.04,
+        "end": 2698.04
+    },
+    {
+        "text": " Porque ahora no está la instrucción que asignaba a Nile en el medio.",
+        "start": 2703.04,
+        "end": 2707.04
+    },
+    {
+        "text": " O sea, nuevo techo punto dato es decir ahí que colocó.",
+        "start": 2708.04,
+        "end": 2712.04
+    },
+    {
+        "text": " El 4.",
+        "start": 2713.04,
+        "end": 2714.04
+    },
+    {
+        "text": " O sea, por ahora viene bien.",
+        "start": 2715.04,
+        "end": 2716.04
+    },
+    {
+        "text": " Bien.",
+        "start": 2720.04,
+        "end": 2721.04
+    },
+    {
+        "text": " La lista original es Nile.",
+        "start": 2722.04,
+        "end": 2723.04
+    },
+    {
+        "text": " No.",
+        "start": 2724.04,
+        "end": 2725.04
+    },
+    {
+        "text": " O sea, quedamos a ir a Nile.",
+        "start": 2725.04,
+        "end": 2726.04
+    },
+    {
+        "text": " Si fuera Nile, ya estaba, ¿por qué?",
+        "start": 2727.04,
+        "end": 2728.04
+    },
+    {
+        "text": " Porque la lista va a dejar de apuntar a Nile para pasar a apuntar acá.",
+        "start": 2729.04,
+        "end": 2733.04
+    },
+    {
+        "text": " Sí.",
+        "start": 2734.04,
+        "end": 2735.04
+    },
+    {
+        "text": " Quedaría apuntando la celda que acabamos de crear.",
+        "start": 2735.04,
+        "end": 2737.04
+    },
+    {
+        "text": " Porque si vos querés agregar al final cuando la lista estaba así, ¿a?",
+        "start": 2738.04,
+        "end": 2740.04
+    },
+    {
+        "text": " Bueno, el final va a ser el primero valor que pongas.",
+        "start": 2742.04,
+        "end": 2744.04
+    },
+    {
+        "text": " Pero no es el caso, así que vamos a él.",
+        "start": 2747.04,
+        "end": 2748.04
+    },
+    {
+        "text": " New y T.",
+        "start": 2749.04,
+        "end": 2750.04
+    },
+    {
+        "text": " Se llamamos a dibujar por acá IT.",
+        "start": 2753.04,
+        "end": 2755.04
+    },
+    {
+        "text": " A la salguió qué pasa.",
+        "start": 2756.04,
+        "end": 2758.04
+    },
+    {
+        "text": " Se crea una espacio en memoria.",
+        "start": 2761.04,
+        "end": 2763.04
+    },
+    {
+        "text": " Lo cual se hame cerruido, ¿por qué?",
+        "start": 2764.04,
+        "end": 2765.04
+    },
+    {
+        "text": " ¿Cuántos valores queríamos agregar al final de la lista?",
+        "start": 2768.04,
+        "end": 2771.04
+    },
+    {
+        "text": " Uno solo, por lo tanto, en los razonables sería salguir cuántas veces.",
+        "start": 2772.04,
+        "end": 2775.04
+    },
+    {
+        "text": " Una para crear la celda que vamos a crear.",
+        "start": 2776.04,
+        "end": 2778.04
+    },
+    {
+        "text": " Y acá, ya creamos una segunda celda.",
+        "start": 2779.04,
+        "end": 2782.04
+    },
+    {
+        "text": " Y bueno, ¿qué pasó acá?",
+        "start": 2783.04,
+        "end": 2785.04
+    },
+    {
+        "text": " Lo mismo que nos había pasado antes.",
+        "start": 2788.04,
+        "end": 2789.04
+    },
+    {
+        "text": " A IT le asinamos lista.",
+        "start": 2790.04,
+        "end": 2792.04
+    },
+    {
+        "text": " O sea, acaba de aparecer una celda nueva que inmediatamente en la instrucción siguiente que le va a pasar.",
+        "start": 2793.04,
+        "end": 2800.04
+    },
+    {
+        "text": " Y te va a pasar a apuntar a donde?",
+        "start": 2802.04,
+        "end": 2803.04
+    },
+    {
+        "text": " A lo que apunta lista. O sea, va a dejar de apuntar acá para pasar a apuntar acá y que le pasó a esto.",
+        "start": 2806.04,
+        "end": 2811.04
+    },
+    {
+        "text": " Otra vez inaccesible.",
+        "start": 2813.04,
+        "end": 2815.04
+    },
+    {
+        "text": " Esto no debe pasar.",
+        "start": 2818.04,
+        "end": 2820.04
+    },
+    {
+        "text": " No debemos dejar memoria inaccesible.",
+        "start": 2824.04,
+        "end": 2826.04
+    },
+    {
+        "text": " O sea, que ahí ya tenemos otro problema.",
+        "start": 2830.04,
+        "end": 2831.04
+    },
+    {
+        "text": " Ahora, IT apunta a lo mismo que apunta lista.",
+        "start": 2832.04,
+        "end": 2837.04
+    },
+    {
+        "text": " La asignación entre dos punteros que genera.",
+        "start": 2838.04,
+        "end": 2841.04
+    },
+    {
+        "text": " Hayas que queden apuntando al mismo lugar. O sea, que IT y lista apuntan al mismo.",
+        "start": 2842.04,
+        "end": 2847.04
+    },
+    {
+        "text": " Bien.",
+        "start": 2848.04,
+        "end": 2849.04
+    },
+    {
+        "text": " IT techo punto sigo.",
+        "start": 2850.04,
+        "end": 2852.04
+    },
+    {
+        "text": " IT techo es esto punto sigo. O sea, este puntero.",
+        "start": 2854.04,
+        "end": 2859.04
+    },
+    {
+        "text": " Es distinto de mí?",
+        "start": 2861.04,
+        "end": 2862.04
+    },
+    {
+        "text": " Sí. Este es distinto de mí.",
+        "start": 2863.04,
+        "end": 2866.04
+    },
+    {
+        "text": " Con lo cual que hacemos.",
+        "start": 2868.04,
+        "end": 2869.04
+    },
+    {
+        "text": " Ahí te le asinamos y te techo punto sigo.",
+        "start": 2870.04,
+        "end": 2874.04
+    },
+    {
+        "text": " O sea, IT te va a pasar a apuntar a cual?",
+        "start": 2875.04,
+        "end": 2877.04
+    },
+    {
+        "text": " A lo que apunta este. O sea, a la celda que contiene el símo.",
+        "start": 2878.04,
+        "end": 2882.04
+    },
+    {
+        "text": " Volvemos al yway.",
+        "start": 2885.04,
+        "end": 2887.04
+    },
+    {
+        "text": " Y techo punto sigo.",
+        "start": 2888.04,
+        "end": 2891.04
+    },
+    {
+        "text": " Y te es esto y techo punto sigo.",
+        "start": 2892.04,
+        "end": 2895.04
+    },
+    {
+        "text": " Es distinto de mí?",
+        "start": 2896.04,
+        "end": 2897.04
+    },
+    {
+        "text": " No, es igual a mí. Entonces, que hago.",
+        "start": 2898.04,
+        "end": 2900.04
+    },
+    {
+        "text": " Salvo. Fíjense lo que hizo IT.",
+        "start": 2901.04,
+        "end": 2904.04
+    },
+    {
+        "text": " No llegó hasta el final de la lista.",
+        "start": 2905.04,
+        "end": 2907.04
+    },
+    {
+        "text": " Si no, que freno donde? Freno uno antes.",
+        "start": 2908.04,
+        "end": 2911.04
+    },
+    {
+        "text": " Porque el final sería a mí freno acá, en este.",
+        "start": 2912.04,
+        "end": 2914.04
+    },
+    {
+        "text": " Y está bien que haya para uno antes. Porque miren lo que hace después.",
+        "start": 2915.04,
+        "end": 2918.04
+    },
+    {
+        "text": " Ahí te techo punto sigo que le asigla.",
+        "start": 2920.04,
+        "end": 2923.04
+    },
+    {
+        "text": " Le asigla nuevo. O sea, que IT techo punto sigo.",
+        "start": 2924.04,
+        "end": 2928.04
+    },
+    {
+        "text": " Deja de apuntar a él.",
+        "start": 2929.04,
+        "end": 2930.04
+    },
+    {
+        "text": " Sí.",
+        "start": 2932.04,
+        "end": 2933.04
+    },
+    {
+        "text": " Para que apunte acá.",
+        "start": 2934.04,
+        "end": 2935.04
+    },
+    {
+        "text": " O sea, el engancho lo hizo bien porque la nueva celda a donde fue a parar.",
+        "start": 2937.04,
+        "end": 2941.04
+    },
+    {
+        "text": " La nueva celda quedó al final de la lista original.",
+        "start": 2941.04,
+        "end": 2944.04
+    },
+    {
+        "text": " Y igual lo falta algo.",
+        "start": 2947.04,
+        "end": 2950.04
+    },
+    {
+        "text": " Tendríamos que apuntar el siguiente anil para marcar que ahora esto es el final de la lista.",
+        "start": 2951.04,
+        "end": 2957.04
+    },
+    {
+        "text": " O sea, que tenemos dos problemas con este algoritmo.",
+        "start": 2958.04,
+        "end": 2961.04
+    },
+    {
+        "text": " Uno. Nuevamente dejamos memoria inaccesible y dos.",
+        "start": 2962.04,
+        "end": 2965.04
+    },
+    {
+        "text": " Esto quedó con basura.",
+        "start": 2966.04,
+        "end": 2968.04
+    },
+    {
+        "text": " Cuando al crear la nueva celda, además de colocar el dato acá que deberíamos haber hecho.",
+        "start": 2972.04,
+        "end": 2980.04
+    },
+    {
+        "text": " Nuevo techo punto sigo, asignar el nil.",
+        "start": 2981.04,
+        "end": 2984.04
+    },
+    {
+        "text": " O sea, de que ya cuando la celda se creó, o sea, esta instrucción deberíamos haber escrito.",
+        "start": 2985.04,
+        "end": 2989.04
+    },
+    {
+        "text": " Nuevo techo punto sigo, le asignamos nil.",
+        "start": 2992.04,
+        "end": 2995.04
+    },
+    {
+        "text": " Nuevo, Nuevo techo punto sigo.",
+        "start": 2997.04,
+        "end": 2999.04
+    },
+    {
+        "text": " O sea, nos faltó esta asignación colocada acá para que ahí sigue debidamente marcada el final de la lista.",
+        "start": 3000.04,
+        "end": 3007.04
+    },
+    {
+        "text": " Tiene una pregunta ya en el fondo.",
+        "start": 3008.04,
+        "end": 3009.04
+    },
+    {
+        "text": " ¿Ya está? ¿Tenía otra pregunta por acá?",
+        "start": 3010.04,
+        "end": 3012.04
+    },
+    {
+        "text": " ¿Tenía alguna otra pregunta? No, está.",
+        "start": 3014.04,
+        "end": 3016.04
+    },
+    {
+        "text": " Alucinaciones. Bien.",
+        "start": 3017.04,
+        "end": 3018.04
+    },
+    {
+        "text": " Si esta asignación, en vez de hacerla ahí, las es al final.",
+        "start": 3021.04,
+        "end": 3025.04
+    },
+    {
+        "text": " Bueno, te va a quedar bien cuando no es el primer valor que le va a ser insertada de la lista.",
+        "start": 3026.04,
+        "end": 3031.04
+    },
+    {
+        "text": " Porque si lo asesiné él, si lo ponés acá,",
+        "start": 3032.04,
+        "end": 3034.04
+    },
+    {
+        "text": " y justo te viene una lista que no tenía nada y estaban ni mientras acá,",
+        "start": 3035.04,
+        "end": 3039.04
+    },
+    {
+        "text": " en este caso no te queda bien inicializado el campo, sí.",
+        "start": 3040.04,
+        "end": 3043.04
+    },
+    {
+        "text": " Por eso es importante hacerlo acá y no acá.",
+        "start": 3044.04,
+        "end": 3046.04
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3047.04,
+        "end": 3048.04
+    },
+    {
+        "text": " ¿Sentiende?",
+        "start": 3050.04,
+        "end": 3051.04
+    },
+    {
+        "text": " ¿Otro lugar donde lo podría llegar a poner esa acá?",
+        "start": 3052.04,
+        "end": 3055.04
+    },
+    {
+        "text": " Al final acá?",
+        "start": 3059.04,
+        "end": 3060.04
+    },
+    {
+        "text": " Ahí sí, porque ahí sí va a pasar siempre, en ese caso sí.",
+        "start": 3061.04,
+        "end": 3063.04
+    },
+    {
+        "text": " Ensegué la acá dentro. O sea, a continuación de esta,",
+        "start": 3064.04,
+        "end": 3067.04
+    },
+    {
+        "text": " guacarriba y guay.",
+        "start": 3068.04,
+        "end": 3069.04
+    },
+    {
+        "text": " En cualquiera de los tres va a pasar por esa instrucción y va a quedar bien inicializada.",
+        "start": 3070.04,
+        "end": 3074.04
+    },
+    {
+        "text": " ¿Sabí bien?",
+        "start": 3076.04,
+        "end": 3077.04
+    },
+    {
+        "text": " Otro error muy común es hacer esto.",
+        "start": 3078.04,
+        "end": 3081.04
+    },
+    {
+        "text": " No poner punto, sí acá.",
+        "start": 3082.04,
+        "end": 3084.04
+    },
+    {
+        "text": " Y eso también va a generar un problema, ¿por qué?",
+        "start": 3085.04,
+        "end": 3087.04
+    },
+    {
+        "text": " Porque en vez de quedarme parado uno antes,",
+        "start": 3088.04,
+        "end": 3091.04
+    },
+    {
+        "text": " voy a llegar a Estanil.",
+        "start": 3092.04,
+        "end": 3093.04
+    },
+    {
+        "text": " O sea, la nueva Zelda me va a quedar desconectada del resto de la lista.",
+        "start": 3094.04,
+        "end": 3098.04
+    },
+    {
+        "text": " Es otro error que, a veces también se conecte.",
+        "start": 3099.04,
+        "end": 3102.04
+    },
+    {
+        "text": " Entonces, cuidado con dejarme morina accesible.",
+        "start": 3103.04,
+        "end": 3107.04
+    },
+    {
+        "text": " Cuidado con tener un puntero referenciando a NIL y pretender acceder a la Zelda apuntada.",
+        "start": 3108.04,
+        "end": 3116.04
+    },
+    {
+        "text": " Si está apuntando a NIL, no existe ninguna Zelda apuntada.",
+        "start": 3117.04,
+        "end": 3121.04
+    },
+    {
+        "text": " Y cuidado con querer aplicarle Dispose a una variable local,",
+        "start": 3122.04,
+        "end": 3128.04
+    },
+    {
+        "text": " porque el Dispose ha aplicado un puntero declarado como variable local,",
+        "start": 3128.04,
+        "end": 3132.04
+    },
+    {
+        "text": " no te borra el puntero, sino que que hace.",
+        "start": 3133.04,
+        "end": 3135.04
+    },
+    {
+        "text": " Te libera la Zelda apuntada y salvo que expresamente,",
+        "start": 3137.04,
+        "end": 3140.04
+    },
+    {
+        "text": " la quiera se eliminar, no es algo que debamos hacer.",
+        "start": 3141.04,
+        "end": 3143.04
+    },
+    {
+        "text": " Lo vemos discutido allá.",
+        "start": 3144.04,
+        "end": 3145.04
+    },
+    {
+        "text": " Bueno, acá vimos un par de cosas que no debemos hacer cuando manipulación.",
+        "start": 3152.04,
+        "end": 3157.04
+    },
+    {
+        "text": " En realidad ni siquiera debería haberle hecho este nil.",
+        "start": 3158.04,
+        "end": 3161.04
+    },
+    {
+        "text": " O sea, porque el único propósito de Iz era generar alias con lista.",
+        "start": 3164.04,
+        "end": 3167.04
+    },
+    {
+        "text": " O sea que este nil, sobre o de nuevo, este nil,",
+        "start": 3177.04,
+        "end": 3180.04
+    },
+    {
+        "text": " al igual que el que vimos en el caso 1,",
+        "start": 3181.04,
+        "end": 3183.04
+    },
+    {
+        "text": " nosotros muchas veces lo hacemos de buena fe para evitar que el puntero quede con basura.",
+        "start": 3183.04,
+        "end": 3190.04
+    },
+    {
+        "text": " Pero lo que estamos haciendo es generando una nueva Zelda que enseguida,",
+        "start": 3192.04,
+        "end": 3195.04
+    },
+    {
+        "text": " dejamos inaccesible.",
+        "start": 3196.04,
+        "end": 3197.04
+    },
+    {
+        "text": " Si el algoritmo que vos querés resolver requiere su creación,",
+        "start": 3201.04,
+        "end": 3205.04
+    },
+    {
+        "text": " creala y asegúrate de que no requiere inaccesible.",
+        "start": 3206.04,
+        "end": 3208.04
+    },
+    {
+        "text": " Pero si el problema que querés resolver requiere que se crea.",
+        "start": 3209.04,
+        "end": 3213.04
+    },
+    {
+        "text": " Pregunta.",
+        "start": 3216.04,
+        "end": 3217.04
+    },
+    {
+        "text": " Bueno, ahora sí, damos porcerrado el tema listas.",
+        "start": 3220.04,
+        "end": 3222.04
+    }
+]

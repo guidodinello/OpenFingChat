@@ -1,0 +1,6837 @@
+[
+    {
+        "text": " Bueno, entonces retomando, ¿sabuérdos lo que estamos viendo? Bueno, con estas siguiendo",
+        "start": 0.0,
+        "end": 11.040000000000001
+    },
+    {
+        "text": " estas notas hechas por compañero a ustedes en Castellano. Yo había aprovechado para",
+        "start": 11.040000000000001,
+        "end": 18.46
+    },
+    {
+        "text": " tomarlas y así de paso les muestro algunas de estas decorrección, los que percieron usar",
+        "start": 18.46,
+        "end": 24.62
+    },
+    {
+        "text": " este material y no el libro que está en inglés y a mí me voy a ir ilustrando los contenidos.",
+        "start": 24.62,
+        "end": 33.5
+    },
+    {
+        "text": " Entonces, se ve que hemos arrancado bueno con el problema de esto de emparejamiento estable",
+        "start": 33.5,
+        "end": 38.900000000000006
+    },
+    {
+        "text": " y siguiendo más o menos un patrón de trabajo que van a ver que se repite. Primero,",
+        "start": 38.900000000000006,
+        "end": 48.5
+    },
+    {
+        "text": " nos formulamos el problema, nos apetaremos un poco de las detalles concretos de una",
+        "start": 48.5,
+        "end": 53.74
+    },
+    {
+        "text": " formulación particular del problema y tratamos de hacer unas tracción de eso. Entonces,",
+        "start": 53.74,
+        "end": 58.980000000000004
+    },
+    {
+        "text": " habíamos bueno definido lo que era el emparejamiento perfecto, el emparejamiento estable, etcétera.",
+        "start": 58.980000000000004,
+        "end": 67.66
+    },
+    {
+        "text": " Lo que aspiramos a encontrar en parejamiento estable es después, bueno, una vez que teníamos",
+        "start": 69.86,
+        "end": 74.9
+    },
+    {
+        "text": " el problema bien formulado de un punto de vista matemático, jugamos con algunos ejemplos,",
+        "start": 74.9,
+        "end": 82.34
+    },
+    {
+        "text": " dimos que había más de en algunos casos, para algunas instancias del problema,",
+        "start": 82.34,
+        "end": 89.38000000000001
+    },
+    {
+        "text": " podía haber más de una solución, en principio estamos buscando cualquiera de esas.",
+        "start": 89.38000000000001,
+        "end": 94.82000000000001
+    },
+    {
+        "text": " Después seguimos diseñando el algoritmo, bueno, algunas, a partir de la intuición que uno",
+        "start": 94.82,
+        "end": 108.5
+    },
+    {
+        "text": " consigue con ciertos ejemplos, empieza a diseñar un algoritmo concreto, en este caso,",
+        "start": 108.5,
+        "end": 117.25999999999999
+    },
+    {
+        "text": " habíamos visto tres puntos, más o menos guiaban el desarrollo de solo ritmo y hemos terminado",
+        "start": 117.26,
+        "end": 124.94
+    },
+    {
+        "text": " con este algoritmo que está acá, que se acuerdan lo que hacía, básicamente,",
+        "start": 124.94,
+        "end": 131.42000000000002
+    },
+    {
+        "text": " simular un mercado de asignaciones de unos a otros, teniendo cuenta las preferencias de cada",
+        "start": 133.5,
+        "end": 140.74
+    },
+    {
+        "text": " ojalá que habíamos conjunto M, conjunto de breve, cada uno de los M tenía una lista de preferencias,",
+        "start": 141.22,
+        "end": 148.78
+    },
+    {
+        "text": " un orden de preferencias sobre los 2.0, y viceversa, entonces, cuando inicialmente los ponemos todos",
+        "start": 148.78,
+        "end": 154.94
+    },
+    {
+        "text": " libres, y después empezamos a iterar, mientras haya algún M libre, que todavía no se propuso a todo",
+        "start": 154.94,
+        "end": 164.98000000000002
+    },
+    {
+        "text": " lo que lo le ve, seguimos iterando y lo que hacemos es arramos un M que esté libre,",
+        "start": 164.98,
+        "end": 171.1
+    },
+    {
+        "text": " arbitrario, acá hemos observado que el algoritmo no está completamente especificado, fíjense",
+        "start": 171.1,
+        "end": 179.62
+    },
+    {
+        "text": " que acá podría haber más de un M libre acá, el algoritmo no nos dice específicamente",
+        "start": 179.62,
+        "end": 188.33999999999997
+    },
+    {
+        "text": " cueltos mar, eso es irrelevante en la medida en que cualquiera que tomemos el algoritmo funcione",
+        "start": 188.34,
+        "end": 197.58
+    },
+    {
+        "text": " bien, eventualmente podría dar unos distintas soluciones en cada caso, vamos a ver que ha hecho",
+        "start": 197.58,
+        "end": 202.18
+    },
+    {
+        "text": " no suceda aquí, pero en otros el mismo que estudios más adelante van a haber que pasas de nuevo,",
+        "start": 202.18,
+        "end": 209.7
+    },
+    {
+        "text": " no está completamente especificado que hacía, y eso es porque cualquiera de las cosas que hagamos",
+        "start": 209.7,
+        "end": 215.22
+    },
+    {
+        "text": " que satisfaguen con las instituciones que están dando, al final de cuentas va a terminar",
+        "start": 216.22,
+        "end": 221.06
+    },
+    {
+        "text": " alguna solución correcta, entonces bueno, agramos un M, nos fijamos en su lista de preferencias,",
+        "start": 221.06,
+        "end": 229.62
+    },
+    {
+        "text": " quienes es de mayor preferencia, al cual todavía no se les propuso, ya se propuesta,",
+        "start": 229.62,
+        "end": 234.46
+    },
+    {
+        "text": " sí se dole ve esta libre acepta enseguida, y si no, lo que hace es comparar con la pareja que",
+        "start": 234.46,
+        "end": 241.78
+    },
+    {
+        "text": " tiene actualmente y se queda con lo que prefiera, entonces esto empieza a iterar hasta que en algún",
+        "start": 241.78,
+        "end": 251.06
+    },
+    {
+        "text": " momento termina, y bueno, vamos a ver que ha dicho cuando termina, también ha influyendo un",
+        "start": 251.06,
+        "end": 256.86
+    },
+    {
+        "text": " emparejamiento estable, ¿no? Y sabía comentado también que el primer boceto de diseño de algoritmo",
+        "start": 256.86,
+        "end": 270.06
+    },
+    {
+        "text": " la condición de parada que hayamos encontrado es que el algoritmo iba a terminar cuando nadie",
+        "start": 271.97999999999996,
+        "end": 281.29999999999995
+    },
+    {
+        "text": " eso, o sea, decir cuando todo se esté empareja, esa no es exactamente la condición que aparece acá en",
+        "start": 281.29999999999995,
+        "end": 287.65999999999997
+    },
+    {
+        "text": " los paels, lo que decía que es que mientras hace un M libre, que todavía no se hace propuesto a todo",
+        "start": 287.65999999999997,
+        "end": 296.94
+    },
+    {
+        "text": " el mundo, o sea, podría eventualmente pasar en este logrimo, tal cual lo tenemos planteado aquí,",
+        "start": 296.94,
+        "end": 303.21999999999997
+    },
+    {
+        "text": " que en realidad el ciclo este se termine, porque hay algún M que se le propuso a todo el mundo y en realidad",
+        "start": 303.21999999999997,
+        "end": 308.7
+    },
+    {
+        "text": " está libre, eso, no es lo que queríamos, porque en ese caso no tendríamos un emparejamiento perfecto,",
+        "start": 308.7,
+        "end": 316.78
+    },
+    {
+        "text": " mucho menos estable, por favor.",
+        "start": 316.78,
+        "end": 321.02
+    },
+    {
+        "text": " Bueno, eso es modo de repaso de lo que estuvo viendo, si alguien tiene alguna consulta que le quedó",
+        "start": 326.5,
+        "end": 333.14
+    },
+    {
+        "text": " colgada la despasada o ahora me avisa.",
+        "start": 333.14,
+        "end": 338.38
+    },
+    {
+        "text": " Tengo una consulta, ¿viste que hay una de las condiciones de parada del Wail? Es que un hombre",
+        "start": 339.86,
+        "end": 348.86
+    },
+    {
+        "text": " danse a lo que propuesto a todas las mujeres, o sea, si sacase esa parte, se usa después el libro",
+        "start": 348.86,
+        "end": 358.3
+    },
+    {
+        "text": " y luego lo usan las demostraciones, pero si sacase esa parte, el algoritmo no funcionaría igual.",
+        "start": 358.3,
+        "end": 364.18
+    },
+    {
+        "text": " O sea, si acá pusieramos mientras existe un M libre y punto, ahí saca la condición del Wail, claro,",
+        "start": 365.3,
+        "end": 376.34000000000003
+    },
+    {
+        "text": " sí, eso funciona, pero no es para nada, obviamente. Ahora vamos a empezar a analizar el algoritmo,",
+        "start": 376.34000000000003,
+        "end": 385.14
+    },
+    {
+        "text": " el siguiente paso entre nuestra secuencia de trabajo, planteamos el algoritmo, la vez que",
+        "start": 385.14,
+        "end": 393.82
+    },
+    {
+        "text": " tenemos planteado el algoritmo, lo analizamos el punto de vista de su corrección, después más adelante",
+        "start": 393.82,
+        "end": 397.58
+    },
+    {
+        "text": " vamos a ver también que desde el punto de vista de su complejidad, el tiempo de recursos de",
+        "start": 397.58,
+        "end": 403.26
+    },
+    {
+        "text": " cómputo y necesitan. Pero está bien la observación, vamos a ver que en realidad podría expresar esa",
+        "start": 403.26,
+        "end": 411.26
+    },
+    {
+        "text": " la condición del Wail de esa manera y funcionaría los argumentos que debemos usar para demostrar que",
+        "start": 411.26,
+        "end": 419.86
+    },
+    {
+        "text": " la vemos termina, que lo siguiente vamos a hacer sería un poco diferente, pero de hecho sí podríamos",
+        "start": 419.86,
+        "end": 424.5
+    },
+    {
+        "text": " formular al cual como esto que está remarcado acá en Amalch, simplemente apuntar en la condición del",
+        "start": 425.5,
+        "end": 432.46
+    },
+    {
+        "text": " Wail a lo que realmente nos interesa que es que todo el mundo empareja. Ahora es bastante natural",
+        "start": 432.46,
+        "end": 443.14
+    },
+    {
+        "text": " igual comenzar de esta manera con esta condición del Wail, una vez que vamos a hacer una primera aproximación",
+        "start": 443.14,
+        "end": 449.46
+    },
+    {
+        "text": " al algoritmo, porque recuerden que en principio nosotros ni siquiera sabemos si realmente existe un",
+        "start": 449.46,
+        "end": 458.58
+    },
+    {
+        "text": " parejamiento perfecto y un emparejamiento está, un emparejamiento perfecto si pide un emparejamiento",
+        "start": 458.58,
+        "end": 465.82
+    },
+    {
+        "text": " estable, entonces si yo me pongo en principio muy rígido con esta aspirando a llegar a un emparejamiento",
+        "start": 465.82,
+        "end": 478.82
+    },
+    {
+        "text": " estable capaz de hecho nunca alcanso ese punto, pero de hecho vamos a ver que sí que esto es",
+        "start": 478.82,
+        "end": 486.09999999999997
+    },
+    {
+        "text": " en realidad la condición del Wail por la cual se termina saliendo de este ciclo es el hecho de que",
+        "start": 487.06,
+        "end": 493.18
+    },
+    {
+        "text": " no va a haber nadie libre, pero eso no es algo obvio de mi media.",
+        "start": 493.18,
+        "end": 499.06
+    },
+    {
+        "text": " Fingo una dos. Este problema no se podría plantear como una optimización donde yo me",
+        "start": 500.06,
+        "end": 509.5
+    },
+    {
+        "text": " fabrico una función, que los números que yo le paso son las parejas que puedo formar y me devuelve",
+        "start": 509.5,
+        "end": 518.58
+    },
+    {
+        "text": " el valor que indicaría cada pareja que posición tiene en la lista respectiva y ahí tendría que",
+        "start": 518.58,
+        "end": 529.02
+    },
+    {
+        "text": " haya lo mínimo. No se podría hacer de forma analítica eso. A ver lo mínimo de qué.",
+        "start": 529.02,
+        "end": 535.9
+    },
+    {
+        "text": " Claro, pues yo lo que digo es si a mí me toco una pareja que está en mi posición 3 o sea",
+        "start": 536.86,
+        "end": 542.8199999999999
+    },
+    {
+        "text": " lo ideal sería la que está en la posición 1 o 0 como se quiere. Y así con todas las personas.",
+        "start": 542.8199999999999,
+        "end": 552.8199999999999
+    },
+    {
+        "text": " Sí, sí, pero si vuelvo a lo que eres plantear como un programa de optimización, tenés que llegar a un",
+        "start": 552.8199999999999,
+        "end": 557.38
+    },
+    {
+        "text": " número global, es decir, a cual persona vas a priorizar ahí o cómo vas a hacer para porque",
+        "start": 557.38,
+        "end": 563.26
+    },
+    {
+        "text": " la repente en un emparejamiento concreto yo termino con el último de la lista y otro con el",
+        "start": 563.8199999999999,
+        "end": 570.9399999999999
+    },
+    {
+        "text": " primero de la lista y en otra solución con las ideas al revés. Y entonces bueno, hay uno que termino muy",
+        "start": 570.9399999999999,
+        "end": 578.8199999999999
+    },
+    {
+        "text": " bien, otro termino muy mal y como en la formulación como programa de optimización, cuál preferís a",
+        "start": 578.8199999999999,
+        "end": 585.98
+    },
+    {
+        "text": " cuál. Y bueno, puede estar lidar restricciones. Ese es mi planteo. No quería profundizar mucho igual",
+        "start": 585.98,
+        "end": 593.14
+    },
+    {
+        "text": " era para saber si era una opción válida. No sé cómo ocurre ahora, así pensando rápido cómo lo haría",
+        "start": 593.14,
+        "end": 602.58
+    },
+    {
+        "text": " y además que tenés que tener en cuenta el tema de las instabilidades, cómo lo modela eso desde el",
+        "start": 602.58,
+        "end": 608.22
+    },
+    {
+        "text": " punto de vista de. Acordate que para que un emparejamiento estable, ese estable no es necesariamente",
+        "start": 608.22,
+        "end": 616.78
+    },
+    {
+        "text": " significa que uno, diez más, muchas veces no va a ocurrir que uno termina con alguien que está",
+        "start": 616.78,
+        "end": 620.62
+    },
+    {
+        "text": " en orden de los primeros lugares de la lista de transferencias. Simplemente puede pasar que esté",
+        "start": 622.62,
+        "end": 629.5400000000001
+    },
+    {
+        "text": " con el último, pero el resto de las mis potenciales parejas que yo preferiría no me preferiré.",
+        "start": 629.5400000000001,
+        "end": 635.74
+    },
+    {
+        "text": " Y todo eso también, habría que pensar muy bien cómo modelarlo, cómo",
+        "start": 638.22,
+        "end": 642.22
+    },
+    {
+        "text": " cómo programa de optimización. En cualquier caso, no creo que termines con algo más sencillo que esto,",
+        "start": 643.9,
+        "end": 648.62
+    },
+    {
+        "text": " que es, es bien sencillo. Desde el punto de vista lo haría.",
+        "start": 648.62,
+        "end": 652.82
+    },
+    {
+        "text": " Muchas gracias.",
+        "start": 653.5400000000001,
+        "end": 654.34
+    },
+    {
+        "text": " Bueno, yo tengo una consulta.",
+        "start": 656.02,
+        "end": 657.3000000000001
+    },
+    {
+        "text": " Sí.",
+        "start": 657.3000000000001,
+        "end": 657.9
+    },
+    {
+        "text": " Nosotros vamos a tener que probar que algoritmos paran de correr en algún momento, ¿no?",
+        "start": 658.9,
+        "end": 663.3000000000001
+    },
+    {
+        "text": " Bueno, eso vamos ahora. En general lo que nos vamos a ocupar a lo largo de prácticamente todo",
+        "start": 663.9,
+        "end": 669.62
+    },
+    {
+        "text": " el semestre es de entre otras cosas de demostrar que los saludinos que hacemos son correctos.",
+        "start": 669.62,
+        "end": 674.42
+    },
+    {
+        "text": " Pero mi pregunta es, ¿Alanturin no había probado que no se puede probar que un algoritmo terminado para?",
+        "start": 674.42,
+        "end": 680.78
+    },
+    {
+        "text": " Qué qué qué qué te me interesante, pero no es eso lo que lo que provoca.",
+        "start": 684.78,
+        "end": 687.78
+    },
+    {
+        "text": " El problema de la parada que es lo que no puede estar reciriendo es,",
+        "start": 688.78,
+        "end": 697.1
+    },
+    {
+        "text": " no es analizar un problema, es hacer un algoritmo.",
+        "start": 700.1,
+        "end": 706.22
+    },
+    {
+        "text": " Voy a seguir yo pretendo hacer un algoritmo que toma como entrada.",
+        "start": 706.22,
+        "end": 714.66
+    },
+    {
+        "text": " El código fuente de un programa, por ejemplo, lo analiza y determina si siempre para o no.",
+        "start": 715.66,
+        "end": 723.78
+    },
+    {
+        "text": " Es decir, imagínense que ustedes están trabajando.",
+        "start": 724.9399999999999,
+        "end": 727.5
+    },
+    {
+        "text": " Bueno, semana, semana en el curso este y cada vez aparecen el algoritmo nuevo y tenemos que demostrar que,",
+        "start": 727.5,
+        "end": 735.2199999999999
+    },
+    {
+        "text": " bueno, que el algoritmo parga, el algoritmo termina, llega la semana ocho y se enfa.",
+        "start": 735.2199999999999,
+        "end": 740.9399999999999
+    },
+    {
+        "text": " Soy podrido de esto, me voy a hacer un programa que le doy como entrada,",
+        "start": 740.94,
+        "end": 746.4200000000001
+    },
+    {
+        "text": " un algoritmo, un código fuente, un programa de implementación del algoritmo,",
+        "start": 746.4200000000001,
+        "end": 751.2600000000001
+    },
+    {
+        "text": " lo analiza y determina si ese algoritmo puede quedar en el loop y no termina nunca,",
+        "start": 751.2600000000001,
+        "end": 759.3000000000001
+    },
+    {
+        "text": " o si siempre termina para cualquier entrada posible.",
+        "start": 759.3000000000001,
+        "end": 762.4200000000001
+    },
+    {
+        "text": " Sí.",
+        "start": 762.4200000000001,
+        "end": 764.1
+    },
+    {
+        "text": " Bueno, eso no existe.",
+        "start": 764.1,
+        "end": 767.1
+    },
+    {
+        "text": " Eso es lo que mostraba la enturma.",
+        "start": 767.1,
+        "end": 768.74
+    },
+    {
+        "text": " Si no se puede, ni siquiera es un tema como vamos a ver más, después vamos a ver más adelante",
+        "start": 768.74,
+        "end": 773.86
+    },
+    {
+        "text": " que hay problemas algoritmicos,",
+        "start": 773.86,
+        "end": 778.58
+    },
+    {
+        "text": " que son a priori con lo que seamos hasta ahora,",
+        "start": 778.58,
+        "end": 782.78
+    },
+    {
+        "text": " tremendamente complejos, es decir, que si bien conocemos algo,",
+        "start": 782.78,
+        "end": 788.7
+    },
+    {
+        "text": " que conocemos algoritmos que no podrían resolver, porque esos algoritmos se varió una cantidad de tiempo muy gran.",
+        "start": 788.7,
+        "end": 795.22
+    },
+    {
+        "text": " Esto otro, que es el tema de computabilidad, que está discutiendo ahora,",
+        "start": 796.22,
+        "end": 804.94
+    },
+    {
+        "text": " al revise tu pregunta, no tiene que ver con cuánto tiempo llega,",
+        "start": 804.94,
+        "end": 809.26
+    },
+    {
+        "text": " no llega directamente, que no existe el algoritmo.",
+        "start": 809.26,
+        "end": 812.7
+    },
+    {
+        "text": " No puedo ni siquiera aspirar a escribir una cosa.",
+        "start": 812.7,
+        "end": 817.9
+    },
+    {
+        "text": " Pero eso no quita que nosotros podamos agarrar este lo bien concretamente",
+        "start": 817.9,
+        "end": 823.26
+    },
+    {
+        "text": " y probar matemáticamente que le termina.",
+        "start": 823.26,
+        "end": 827.22
+    },
+    {
+        "text": " Claro, no se tiene un algoritmo general, pero se puede ver para acá programa puntual.",
+        "start": 827.22,
+        "end": 831.7
+    },
+    {
+        "text": " Exacto. Y además que bueno, no somos máquinas, somos.",
+        "start": 831.7,
+        "end": 834.7
+    },
+    {
+        "text": " Claro, sí.",
+        "start": 834.7,
+        "end": 836.22
+    },
+    {
+        "text": " Bueno, muchas gracias.",
+        "start": 836.22,
+        "end": 837.26
+    },
+    {
+        "text": " No, pero es un tema muy lindo.",
+        "start": 837.26,
+        "end": 843.1
+    },
+    {
+        "text": " ¿Alguna pregunta más?",
+        "start": 843.1,
+        "end": 844.5
+    },
+    {
+        "text": " Bueno, entonces, como les decía, alguna vez que tenemos nuestro algoritmo acá,",
+        "start": 844.5,
+        "end": 856.26
+    },
+    {
+        "text": " lo siguiente sería analizarlo.",
+        "start": 856.26,
+        "end": 860.5
+    },
+    {
+        "text": " Entre otras cosas, analizarlo, como decimos, hace muchas veces implica mostrar que en el momento para,",
+        "start": 860.5,
+        "end": 869.74
+    },
+    {
+        "text": " cuando tenemos el algoritmo que son un par de foranidad, no hay mucho misterio,",
+        "start": 869.74,
+        "end": 874.74
+    },
+    {
+        "text": " eso termina, pero nos vamos a encontrar muchas veces a lo largo del curso,",
+        "start": 874.74,
+        "end": 878.26
+    },
+    {
+        "text": " con el algoritmo más complicado con eso, como esta, que es un cual que va iterando",
+        "start": 878.26,
+        "end": 885.3
+    },
+    {
+        "text": " con una condición que no es repetir en ese, sino que bueno, hay unos m,",
+        "start": 885.3,
+        "end": 890.9
+    },
+    {
+        "text": " y cabezas quedan libres, a veces quedan en pareje y van al tarnando en esa situación,",
+        "start": 890.9,
+        "end": 895.66
+    },
+    {
+        "text": " y tenemos una condición acá que no es obvia que en el momento se va a cumplir",
+        "start": 895.66,
+        "end": 900.4599999999999
+    },
+    {
+        "text": " para que se salga.",
+        "start": 900.4599999999999,
+        "end": 903.2199999999999
+    },
+    {
+        "text": " Bueno, entonces les comento un poco cómo es lo que se van a encontrar en este análisis",
+        "start": 903.2199999999999,
+        "end": 906.74
+    },
+    {
+        "text": " del algoritmo que está presentando las notas.",
+        "start": 906.74,
+        "end": 912.14
+    },
+    {
+        "text": " Arrancamos con un par de observaciones, ¿no?",
+        "start": 912.14,
+        "end": 916.02
+    },
+    {
+        "text": " ¿Qué van a hacer?",
+        "start": 916.02,
+        "end": 917.62
+    },
+    {
+        "text": " Después son bastante evidentes, en realidad.",
+        "start": 917.62,
+        "end": 920.4599999999999
+    },
+    {
+        "text": " Una es que cualquier W, que uno observe, en cuanto recibo una primera proposición se compromete,",
+        "start": 920.46,
+        "end": 931.94
+    },
+    {
+        "text": " y a partir de ahí se mantiene en pareja hasta de ahí adelante,",
+        "start": 931.94,
+        "end": 939.7800000000001
+    },
+    {
+        "text": " y las parejas con las que va aparejándose W, sólo pueden ir mejorando,",
+        "start": 939.7800000000001,
+        "end": 947.38
+    },
+    {
+        "text": " ¿se va a mantener o mejor?",
+        "start": 947.38,
+        "end": 948.94
+    },
+    {
+        "text": " A veces es bastante evidente porque, por cómo está hecho esto, el algoritmo.",
+        "start": 948.94,
+        "end": 956.34
+    },
+    {
+        "text": " Si W está libre lo emparejamos inmediatamente, y si no lo que hay es W,",
+        "start": 956.34,
+        "end": 961.1400000000001
+    },
+    {
+        "text": " compara la oferta que tiene ahora con las parejas que tienen su momento,",
+        "start": 961.1400000000001,
+        "end": 964.7800000000001
+    },
+    {
+        "text": " y sólo cambia así mejor.",
+        "start": 964.7800000000001,
+        "end": 966.3000000000001
+    },
+    {
+        "text": " Entonces, en ningún momento el algoritmo,",
+        "start": 966.3000000000001,
+        "end": 968.2600000000001
+    },
+    {
+        "text": " a un W se puede liberar de su pareja, una vez que está empareja con alguien,",
+        "start": 968.2600000000001,
+        "end": 972.62
+    },
+    {
+        "text": " y además sólo cambia por alguien que es mejor para W.",
+        "start": 972.62,
+        "end": 978.22
+    },
+    {
+        "text": " Eso que si es un primer punto, en los W arranca libres,",
+        "start": 978.22,
+        "end": 983.34
+    },
+    {
+        "text": " pero una vez que está empareja, siguen emparejas, y sólo mejora.",
+        "start": 983.34,
+        "end": 989.7
+    },
+    {
+        "text": " Ahora, para los M, eso es distinto, los M pueden ir alternando,",
+        "start": 989.7,
+        "end": 996.82
+    },
+    {
+        "text": " acá hay ser terar, tendría que ser alternar.",
+        "start": 996.82,
+        "end": 1000.1800000000001
+    },
+    {
+        "text": " Creo que, que, nada, usan, se ve mejor.",
+        "start": 1000.1800000000001,
+        "end": 1002.82
+    },
+    {
+        "text": " Los M pueden ir alternando entre libre y empareja,",
+        "start": 1002.82,
+        "end": 1009.1800000000001
+    },
+    {
+        "text": " y lo que sí podemos ver claramente es que, cuando se pone empareja,",
+        "start": 1009.1800000000001,
+        "end": 1014.5
+    },
+    {
+        "text": " las parejas que va formando,",
+        "start": 1014.5,
+        "end": 1019.86
+    },
+    {
+        "text": " son según su perspectiva cada vez peor.",
+        "start": 1019.86,
+        "end": 1023.38
+    },
+    {
+        "text": " A decir, los M mejorando, los M en peorando, eso también es bastante claro,",
+        "start": 1023.38,
+        "end": 1028.54
+    },
+    {
+        "text": " porque en este paso, el segundo agarramos un M,",
+        "start": 1028.54,
+        "end": 1034.86
+    },
+    {
+        "text": " y el segundo paso lo que hacemos es elegir el W,",
+        "start": 1034.86,
+        "end": 1038.94
+    },
+    {
+        "text": " siguiente en su lista de preferencias, a la cual todavía no sea propuesto.",
+        "start": 1038.94,
+        "end": 1043.62
+    },
+    {
+        "text": " Ahí va, entonces va proponiendo el orden de preferencia,",
+        "start": 1043.62,
+        "end": 1046.3
+    },
+    {
+        "text": " a mí hay que lo van rechazando o luego,",
+        "start": 1046.3,
+        "end": 1049.34
+    },
+    {
+        "text": " va avanzando en su vista.",
+        "start": 1049.34,
+        "end": 1051.54
+    },
+    {
+        "text": " Entonces, finalmente, llegamos a este punto,",
+        "start": 1052.54,
+        "end": 1059.22
+    },
+    {
+        "text": " que sí es un poco más interesante,",
+        "start": 1059.22,
+        "end": 1061.8999999999999
+    },
+    {
+        "text": " o bien, no solo que es que efectivamente la deberingo termina",
+        "start": 1061.8999999999999,
+        "end": 1065.94
+    },
+    {
+        "text": " y emas la cantidad máxima de declaraciones que puede realizar es N cuadrado.",
+        "start": 1065.94,
+        "end": 1072.58
+    },
+    {
+        "text": " Recuerda que teníamos los conjuntos del V, Y, M,",
+        "start": 1072.58,
+        "end": 1076.06
+    },
+    {
+        "text": " eran de tamaño que N cada uno.",
+        "start": 1076.06,
+        "end": 1079.3799999999999
+    },
+    {
+        "text": " Bueno, para un N cualquiera, N cuadrado,",
+        "start": 1079.38,
+        "end": 1081.5400000000002
+    },
+    {
+        "text": " su número, fijo, N cuadrado y treación, es esto, se ha acabado.",
+        "start": 1081.5400000000002,
+        "end": 1086.9
+    },
+    {
+        "text": " Y esto, la clase pasada había surgido este tema,",
+        "start": 1086.9,
+        "end": 1091.8200000000002
+    },
+    {
+        "text": " algunos de ustedes había sugerido alguna idea de cómo mostrarlo,",
+        "start": 1091.8200000000002,
+        "end": 1095.5800000000002
+    },
+    {
+        "text": " la que la intuición estaba,",
+        "start": 1095.5800000000002,
+        "end": 1099.8600000000001
+    },
+    {
+        "text": " y que era quizá un poco menos directo de lo que se podría hacer",
+        "start": 1099.8600000000001,
+        "end": 1107.66
+    },
+    {
+        "text": " como se muestra acá.",
+        "start": 1107.66,
+        "end": 1110.78
+    },
+    {
+        "text": " Y además, así para ilustrar una más de ver este problema concreto,",
+        "start": 1110.78,
+        "end": 1114.38
+    },
+    {
+        "text": " este lo mismo concreto, lo que estamos presentando acá",
+        "start": 1114.38,
+        "end": 1116.42
+    },
+    {
+        "text": " en definitiva es una técnica que ustedes tienen que tener la manga",
+        "start": 1116.42,
+        "end": 1119.94
+    },
+    {
+        "text": " para aplicar en otras síbamos.",
+        "start": 1119.94,
+        "end": 1123.22
+    },
+    {
+        "text": " La intuición nos parece esa idea, la idea es identificar",
+        "start": 1123.22,
+        "end": 1126.98
+    },
+    {
+        "text": " lo que se llama una medida de progreso,",
+        "start": 1126.98,
+        "end": 1129.26
+    },
+    {
+        "text": " es decir, algo, alguna magnitude, una pueda identificar",
+        "start": 1129.26,
+        "end": 1136.1000000000001
+    },
+    {
+        "text": " que sostenidamente, iteración, tal, tras iteración,",
+        "start": 1136.2199999999998,
+        "end": 1140.3799999999999
+    },
+    {
+        "text": " nos va aproximando a una situación en que el algoritmo",
+        "start": 1140.3799999999999,
+        "end": 1144.5
+    },
+    {
+        "text": " necesariamente termina.",
+        "start": 1144.5,
+        "end": 1146.4599999999998
+    },
+    {
+        "text": " En este caso, la medida de progreso que se propone es,",
+        "start": 1153.02,
+        "end": 1156.86
+    },
+    {
+        "text": " bueno, acá dice, si denotamos,",
+        "start": 1156.86,
+        "end": 1159.6999999999998
+    },
+    {
+        "text": " acá tiene que ser pdt al conjunto de pares, mw,",
+        "start": 1159.98,
+        "end": 1168.78
+    },
+    {
+        "text": " tal que m se le hizo una propuesta a w,",
+        "start": 1168.78,
+        "end": 1174.78
+    },
+    {
+        "text": " al final de la iteración,",
+        "start": 1174.78,
+        "end": 1177.26
+    },
+    {
+        "text": " es decir, para acá a iteración t,",
+        "start": 1177.26,
+        "end": 1179.46
+    },
+    {
+        "text": " la primera iteración del cual, el segundo iteración del cual,",
+        "start": 1179.46,
+        "end": 1181.66
+    },
+    {
+        "text": " para cada t, lo que hacemos es contar",
+        "start": 1181.66,
+        "end": 1184.8600000000001
+    },
+    {
+        "text": " cuántas proposiciones hubo de algún m al un w.",
+        "start": 1184.86,
+        "end": 1189.5
+    },
+    {
+        "text": " Entonces ustedes ven que eso solo puede ir aumentando",
+        "start": 1191.9799999999998,
+        "end": 1195.3799999999999
+    },
+    {
+        "text": " estrictamente.",
+        "start": 1195.3799999999999,
+        "end": 1196.3799999999999
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 1199.34,
+        "end": 1200.5
+    },
+    {
+        "text": " Porque en cada iteración elegimos un m que está libre",
+        "start": 1200.5,
+        "end": 1206.8999999999999
+    },
+    {
+        "text": " y sm hace una nueva propuesta.",
+        "start": 1206.8999999999999,
+        "end": 1209.34
+    },
+    {
+        "text": " Entonces, la cantidad de propuestas diferentes",
+        "start": 1210.3,
+        "end": 1215.74
+    },
+    {
+        "text": " que se han realizado aumenten una unidad con cada",
+        "start": 1215.74,
+        "end": 1218.62
+    },
+    {
+        "text": " iteración del cual.",
+        "start": 1218.62,
+        "end": 1219.6999999999998
+    },
+    {
+        "text": " Eso lo tenemos que combinar con otra observación importante,",
+        "start": 1222.22,
+        "end": 1225.1399999999999
+    },
+    {
+        "text": " que es que nunca se repiten propuestas.",
+        "start": 1225.1399999999999,
+        "end": 1228.4199999999998
+    },
+    {
+        "text": " Es decir, una vez que m le propuso un cierto w,",
+        "start": 1228.4199999999998,
+        "end": 1232.06
+    },
+    {
+        "text": " esa propuesta no la vuelve a realizar.",
+        "start": 1234.06,
+        "end": 1235.78
+    },
+    {
+        "text": " Porque avanza en su lista de preferencias,",
+        "start": 1236.78,
+        "end": 1240.78
+    },
+    {
+        "text": " si no vuelve a pasar por así.",
+        "start": 1240.78,
+        "end": 1242.78
+    },
+    {
+        "text": " Entonces, el remate de esto es que, bueno,",
+        "start": 1242.78,
+        "end": 1249.78
+    },
+    {
+        "text": " en definitiva, si tengo n elementos en m y n en w,",
+        "start": 1249.78,
+        "end": 1252.78
+    },
+    {
+        "text": " no es más de n por n, posibles pares,",
+        "start": 1252.78,
+        "end": 1255.78
+    },
+    {
+        "text": " posibles proposiciones distintas que se pueden hacer.",
+        "start": 1255.78,
+        "end": 1258.78
+    },
+    {
+        "text": " Y en cada iteración se realiza una proposición diferente,",
+        "start": 1258.78,
+        "end": 1261.78
+    },
+    {
+        "text": " nunca se repiten.",
+        "start": 1261.78,
+        "end": 1262.78
+    },
+    {
+        "text": " Entonces, a lo más tardar después de n cuadrado",
+        "start": 1263.78,
+        "end": 1267.78
+    },
+    {
+        "text": " iteraciones se van a haber agotado todas las propuestas posibles.",
+        "start": 1267.78,
+        "end": 1271.78
+    },
+    {
+        "text": " Y en ese punto seguro que hay algún m que ya agotó su lista",
+        "start": 1271.78,
+        "end": 1279.78
+    },
+    {
+        "text": " de propuestas.",
+        "start": 1279.78,
+        "end": 1281.78
+    },
+    {
+        "text": " Entonces, esta condición de que no se ha propuesto a todo w,",
+        "start": 1281.78,
+        "end": 1287.78
+    },
+    {
+        "text": " esa condición ya no se complice, va a salir del cual.",
+        "start": 1287.78,
+        "end": 1291.78
+    },
+    {
+        "text": " Bien, fíjense que algo que hablábamos recién,",
+        "start": 1292.78,
+        "end": 1297.78
+    },
+    {
+        "text": " si la condición del cual le hubiera hecho,",
+        "start": 1297.78,
+        "end": 1299.78
+    },
+    {
+        "text": " le hubiera planteado de otra forma sin esta parte",
+        "start": 1299.78,
+        "end": 1303.78
+    },
+    {
+        "text": " de que ha salgúno que todavía no se propuso a todo lo que le ve,",
+        "start": 1303.78,
+        "end": 1308.78
+    },
+    {
+        "text": " este argumento no camina así no más.",
+        "start": 1308.78,
+        "end": 1312.78
+    },
+    {
+        "text": " Entonces, tendríamos que buscar algo alguna otra forma de contraer.",
+        "start": 1312.78,
+        "end": 1317.78
+    },
+    {
+        "text": " ¿Se ve?",
+        "start": 1318.78,
+        "end": 1319.78
+    },
+    {
+        "text": " Otro me parece interesante comentar que uno podría pensar",
+        "start": 1324.78,
+        "end": 1329.78
+    },
+    {
+        "text": " en otras medidas de profesión en realidad no funciona.",
+        "start": 1329.78,
+        "end": 1332.78
+    },
+    {
+        "text": " Por ejemplo, el número de individuos soltidos.",
+        "start": 1332.78,
+        "end": 1335.78
+    },
+    {
+        "text": " Eso no es una medida de profesión que nos permite seguir",
+        "start": 1335.78,
+        "end": 1339.78
+    },
+    {
+        "text": " este razonamiento directamente,",
+        "start": 1339.78,
+        "end": 1343.78
+    },
+    {
+        "text": " porque eso no necesariamente avanza estrictamente",
+        "start": 1343.78,
+        "end": 1346.78
+    },
+    {
+        "text": " en cada una de las interaciones.",
+        "start": 1347.78,
+        "end": 1349.78
+    },
+    {
+        "text": " A veces se mantiene, puede ser que yo agarre un M,",
+        "start": 1349.78,
+        "end": 1353.78
+    },
+    {
+        "text": " que está libre, hace una propuesta y es rechazado y sin libre.",
+        "start": 1356.78,
+        "end": 1360.78
+    },
+    {
+        "text": " Entonces, en una interacción completa de este cual",
+        "start": 1360.78,
+        "end": 1363.78
+    },
+    {
+        "text": " la cantidad de personas libres se mantiene igual.",
+        "start": 1363.78,
+        "end": 1367.78
+    },
+    {
+        "text": " En lo mismo el número de parejas farmadas hasta ahora",
+        "start": 1372.78,
+        "end": 1375.78
+    },
+    {
+        "text": " no tiene por qué cambiar.",
+        "start": 1376.78,
+        "end": 1378.78
+    },
+    {
+        "text": " Mismo podría cambiar un W, podría cambiar de pareja,",
+        "start": 1378.78,
+        "end": 1381.78
+    },
+    {
+        "text": " pero la cantidad total de parejas que se han formado se mantiene.",
+        "start": 1381.78,
+        "end": 1384.78
+    },
+    {
+        "text": " Entonces, uno tampoco puede decir,",
+        "start": 1384.78,
+        "end": 1385.78
+    },
+    {
+        "text": " bueno, esto cada vez tiene más parejas formadas,",
+        "start": 1385.78,
+        "end": 1388.78
+    },
+    {
+        "text": " ese argumento no camina.",
+        "start": 1388.78,
+        "end": 1390.78
+    },
+    {
+        "text": " Tiene que identificar algo que avance sostenidamente",
+        "start": 1391.78,
+        "end": 1395.78
+    },
+    {
+        "text": " a hacer una condición de parada.",
+        "start": 1399.78,
+        "end": 1401.78
+    },
+    {
+        "text": " En el argumento que hayamos que a algunos que les había comentado",
+        "start": 1402.78,
+        "end": 1405.78
+    },
+    {
+        "text": " la vez pasada,",
+        "start": 1405.78,
+        "end": 1407.78
+    },
+    {
+        "text": " habíamos identificado una medida de progreso que no me acuerdo exactamente cual era,",
+        "start": 1407.78,
+        "end": 1410.78
+    },
+    {
+        "text": " porque efectivamente podía quedar estancada y habíamos complementado",
+        "start": 1410.78,
+        "end": 1413.78
+    },
+    {
+        "text": " de algún argumento de cinto y diciendo que,",
+        "start": 1413.78,
+        "end": 1415.78
+    },
+    {
+        "text": " bueno, que eso no puede quedar estancado para siempre.",
+        "start": 1415.78,
+        "end": 1418.78
+    },
+    {
+        "text": " Entonces, bueno, había como una especie de atacar",
+        "start": 1418.78,
+        "end": 1423.78
+    },
+    {
+        "text": " el problema desde dos puntos distintos y identificar una medida",
+        "start": 1423.78,
+        "end": 1428.78
+    },
+    {
+        "text": " que no es estrictamente con un progreso estricto,",
+        "start": 1429.78,
+        "end": 1432.78
+    },
+    {
+        "text": " pero bueno, por otro lado argumentar que no se puede estar cari indefinidamente.",
+        "start": 1432.78,
+        "end": 1435.78
+    },
+    {
+        "text": " Eso si uno les cree bien puede funcionar,",
+        "start": 1435.78,
+        "end": 1438.78
+    },
+    {
+        "text": " pero es más complejo que esto que es mucho más directo.",
+        "start": 1438.78,
+        "end": 1441.78
+    },
+    {
+        "text": " Identificar algo que avance sostenidamente",
+        "start": 1441.78,
+        "end": 1445.78
+    },
+    {
+        "text": " positivamente una unidad cada vez a lo largo de cada iteración.",
+        "start": 1445.78,
+        "end": 1451.78
+    },
+    {
+        "text": " Entonces, efectivamente, alogrimo termina.",
+        "start": 1453.78,
+        "end": 1455.78
+    },
+    {
+        "text": " Alguien le quedó alguna duda.",
+        "start": 1456.78,
+        "end": 1458.78
+    },
+    {
+        "text": " Este es un tema importante, va a la pena prestar la atención.",
+        "start": 1458.78,
+        "end": 1461.78
+    },
+    {
+        "text": " La más de una vez se van a encontrar a la situación de cuantos",
+        "start": 1461.78,
+        "end": 1465.78
+    },
+    {
+        "text": " tiene que probar con el gobierno que escribieron ustedes termina.",
+        "start": 1465.78,
+        "end": 1469.78
+    },
+    {
+        "text": " Ahí esta es una herramienta que, que, que,",
+        "start": 1470.78,
+        "end": 1473.78
+    },
+    {
+        "text": " muy útil que tiene que tener a mano.",
+        "start": 1473.78,
+        "end": 1475.78
+    },
+    {
+        "text": " Si, a mí no me queda claro el tema de la notación de PDT y PDT Mas 1.",
+        "start": 1478.78,
+        "end": 1484.78
+    },
+    {
+        "text": " ¿Qué es PDT?",
+        "start": 1484.78,
+        "end": 1486.78
+    },
+    {
+        "text": " PDT es el conjunto de, el conjunto de pares MWB.",
+        "start": 1486.78,
+        "end": 1493.78
+    },
+    {
+        "text": " O sea, T denota una iteración de aburismo.",
+        "start": 1493.78,
+        "end": 1497.78
+    },
+    {
+        "text": " O sea, como va a, cada vez que se ejecuta una iteración del cual",
+        "start": 1497.78,
+        "end": 1502.78
+    },
+    {
+        "text": " aumenta en un lote.",
+        "start": 1502.78,
+        "end": 1504.78
+    },
+    {
+        "text": " O sea, PD1 es la cantidad de parejas,",
+        "start": 1504.78,
+        "end": 1507.78
+    },
+    {
+        "text": " o mejor hecho, la cantidad de los que tiene,",
+        "start": 1507.78,
+        "end": 1510.78
+    },
+    {
+        "text": " el conjunto de pares MWB para los cuales M le hizo una proposición W",
+        "start": 1510.78,
+        "end": 1517.78
+    },
+    {
+        "text": " mirando la, solo la primera iteración del cual.",
+        "start": 1517.78,
+        "end": 1521.78
+    },
+    {
+        "text": " PD2, lo que hace es mirar el conjunto de proposiciones que se han realizado",
+        "start": 1521.78,
+        "end": 1527.78
+    },
+    {
+        "text": " en las primeras dos iteraciones del cual.",
+        "start": 1527.78,
+        "end": 1529.78
+    },
+    {
+        "text": " PD3 es el conjunto de pares MWB,",
+        "start": 1532.78,
+        "end": 1535.78
+    },
+    {
+        "text": " tal que M le propuso a WB",
+        "start": 1535.78,
+        "end": 1537.78
+    },
+    {
+        "text": " hasta la tercera iteración del cual inclusive.",
+        "start": 1538.78,
+        "end": 1541.78
+    },
+    {
+        "text": " Entonces, por ejemplo, si en la primera pasada de aburismo, ¿cómo?",
+        "start": 1541.78,
+        "end": 1545.78
+    },
+    {
+        "text": " Para un besocial intímida, pero...",
+        "start": 1548.78,
+        "end": 1550.78
+    },
+    {
+        "text": " Entonces, si en la primera iteración de aburismo,",
+        "start": 1550.78,
+        "end": 1552.78
+    },
+    {
+        "text": " tienes que M le propone a, M1 le propone a WB1.",
+        "start": 1552.78,
+        "end": 1556.78
+    },
+    {
+        "text": " O sea, PD1 solo tiene el par M1 del WB.",
+        "start": 1556.78,
+        "end": 1560.78
+    },
+    {
+        "text": " En la siguiente iteración, M2 le propone a,",
+        "start": 1560.78,
+        "end": 1565.78
+    },
+    {
+        "text": " al mismo del WB.",
+        "start": 1566.78,
+        "end": 1567.78
+    },
+    {
+        "text": " Ahí tenemos dos pares metidos ahí.",
+        "start": 1568.78,
+        "end": 1571.78
+    },
+    {
+        "text": " M1, WB1 y M2, WB1.",
+        "start": 1571.78,
+        "end": 1574.78
+    },
+    {
+        "text": " Suponete que ahí M1 queda libre,",
+        "start": 1574.78,
+        "end": 1577.78
+    },
+    {
+        "text": " entonces vuelvo a arrae M1, por ejemplo,",
+        "start": 1577.78,
+        "end": 1579.78
+    },
+    {
+        "text": " las siguientes proposiciones de M1 a WB3.",
+        "start": 1579.78,
+        "end": 1583.78
+    },
+    {
+        "text": " Entonces, esa tercera proposición se agrega a PD3.",
+        "start": 1583.78,
+        "end": 1587.78
+    },
+    {
+        "text": " Y esto va, cada vez teniendo más pares de proposiciones",
+        "start": 1587.78,
+        "end": 1594.78
+    },
+    {
+        "text": " hechas. O sea, este conjunto PDT no es un conjunto de parejas formadas,",
+        "start": 1595.78,
+        "end": 1600.78
+    },
+    {
+        "text": " sino que es un conjunto de proposiciones hechas.",
+        "start": 1600.78,
+        "end": 1603.78
+    },
+    {
+        "text": " Pares M2, WB, para que M le hicieran posiciones WB, hasta la iteración T.",
+        "start": 1603.78,
+        "end": 1607.78
+    },
+    {
+        "text": " En principio, si el aburismo no termina,",
+        "start": 1609.78,
+        "end": 1612.78
+    },
+    {
+        "text": " este T puede seguir indefinidamente creciendo.",
+        "start": 1612.78,
+        "end": 1615.78
+    },
+    {
+        "text": " ¿Qué es claro?",
+        "start": 1616.78,
+        "end": 1618.78
+    },
+    {
+        "text": " Una consulta.",
+        "start": 1621.78,
+        "end": 1624.78
+    },
+    {
+        "text": " Sí.",
+        "start": 1624.78,
+        "end": 1625.78
+    },
+    {
+        "text": " Hay algún motivo porque se trabaja con pares,",
+        "start": 1625.78,
+        "end": 1629.78
+    },
+    {
+        "text": " en vez de con la cantidad de parejas formadas.",
+        "start": 1629.78,
+        "end": 1633.78
+    },
+    {
+        "text": " Bueno, la cantidad de pares,",
+        "start": 1638.78,
+        "end": 1640.78
+    },
+    {
+        "text": " la cantidad, ¿vas a decir como media de progreso?",
+        "start": 1640.78,
+        "end": 1643.78
+    },
+    {
+        "text": " Claro, porque estás sacotando,",
+        "start": 1644.78,
+        "end": 1647.78
+    },
+    {
+        "text": " porque el conjunto PDT no puede traer a lo más que encuadrado elementos.",
+        "start": 1647.78,
+        "end": 1652.78
+    },
+    {
+        "text": " Exacto.",
+        "start": 1652.78,
+        "end": 1653.78
+    },
+    {
+        "text": " Porque en vez de trabajar con conjuntos,",
+        "start": 1653.78,
+        "end": 1656.78
+    },
+    {
+        "text": " lo trabajas con el número directamente.",
+        "start": 1656.78,
+        "end": 1659.78
+    },
+    {
+        "text": " Sí, puede ser.",
+        "start": 1659.78,
+        "end": 1661.78
+    },
+    {
+        "text": " Voy a usar la notación y las definiciones matemáticas que más te sirva.",
+        "start": 1661.78,
+        "end": 1670.78
+    },
+    {
+        "text": " Podrías, en vez de definir PDT como el conjunto de,",
+        "start": 1671.78,
+        "end": 1675.78
+    },
+    {
+        "text": " pues definí como la cantidad de...",
+        "start": 1675.78,
+        "end": 1678.78
+    },
+    {
+        "text": " Pero funciona también.",
+        "start": 1679.78,
+        "end": 1681.78
+    },
+    {
+        "text": " Sí, sí, en definitiva.",
+        "start": 1681.78,
+        "end": 1683.78
+    },
+    {
+        "text": " Usted va a la vez con un mismo concepto,",
+        "start": 1683.78,
+        "end": 1688.78
+    },
+    {
+        "text": " una misma idea, uno la puede traer matemáticamente",
+        "start": 1688.78,
+        "end": 1691.78
+    },
+    {
+        "text": " y explicarla de varias formas distintas",
+        "start": 1691.78,
+        "end": 1695.78
+    },
+    {
+        "text": " y estamos hablando de la misma idea.",
+        "start": 1695.78,
+        "end": 1698.78
+    },
+    {
+        "text": " Gracias.",
+        "start": 1698.78,
+        "end": 1699.78
+    },
+    {
+        "text": " Una pregunta.",
+        "start": 1700.78,
+        "end": 1701.78
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 1701.78,
+        "end": 1702.78
+    },
+    {
+        "text": " Entonces, siempre para encontrar una medida de progreso,",
+        "start": 1702.78,
+        "end": 1705.78
+    },
+    {
+        "text": " que es decir, que siempre sea a medida que corren las iteraciones,",
+        "start": 1705.78,
+        "end": 1710.78
+    },
+    {
+        "text": " siempre sea estrictamente creciente como fusionáis en el chat.",
+        "start": 1710.78,
+        "end": 1714.78
+    },
+    {
+        "text": " Sí, perdón, no está mirando el chat.",
+        "start": 1715.78,
+        "end": 1717.78
+    },
+    {
+        "text": " Pero sí, ¿por qué pasa?",
+        "start": 1719.78,
+        "end": 1722.78
+    },
+    {
+        "text": " Por ejemplo, imagínate, yo digo,",
+        "start": 1722.78,
+        "end": 1724.78
+    },
+    {
+        "text": " bueno, mi medida de progreso va a tratar de ser",
+        "start": 1724.78,
+        "end": 1727.78
+    },
+    {
+        "text": " la cantidad de individuos solteros.",
+        "start": 1727.78,
+        "end": 1730.78
+    },
+    {
+        "text": " Vamos a definir un NDT, que es la cantidad de solteros.",
+        "start": 1735.78,
+        "end": 1742.78
+    },
+    {
+        "text": " ¿Cómo sería el argumento?",
+        "start": 1742.78,
+        "end": 1744.78
+    },
+    {
+        "text": " Quisías argumentar que ese NDT va disminuyendo,",
+        "start": 1744.78,
+        "end": 1750.78
+    },
+    {
+        "text": " de manera que, en algún momento, llega a ser.",
+        "start": 1751.78,
+        "end": 1754.78
+    },
+    {
+        "text": " ¿La medida de progreso puede ser o sea ría o hacia abajo?",
+        "start": 1755.78,
+        "end": 1759.78
+    },
+    {
+        "text": " ¿Cuál es el problema con eso?",
+        "start": 1761.78,
+        "end": 1763.78
+    },
+    {
+        "text": " Con cada iteración del J,",
+        "start": 1763.78,
+        "end": 1766.78
+    },
+    {
+        "text": " eso no es necesariamente disminuces trítamente.",
+        "start": 1766.78,
+        "end": 1770.78
+    },
+    {
+        "text": " Hay algunas iteraciones donde eso se mantiene.",
+        "start": 1770.78,
+        "end": 1773.78
+    },
+    {
+        "text": " Porque si hagas un N, N hace una propuesta y es rechazado,",
+        "start": 1774.78,
+        "end": 1778.78
+    },
+    {
+        "text": " sí, solo, sí, sonteros.",
+        "start": 1778.78,
+        "end": 1781.78
+    },
+    {
+        "text": " ¿Está bien?",
+        "start": 1782.78,
+        "end": 1784.78
+    },
+    {
+        "text": " Entonces, ¿por qué no te podría pasar?",
+        "start": 1784.78,
+        "end": 1787.78
+    },
+    {
+        "text": " Que lo veríamos, están que es una determinada cantidad de individuos solteros",
+        "start": 1788.78,
+        "end": 1793.78
+    },
+    {
+        "text": " que nunca más salga de ahí.",
+        "start": 1793.78,
+        "end": 1795.78
+    },
+    {
+        "text": " Seguen un momento que tengo cinco individuos solteros.",
+        "start": 1798.78,
+        "end": 1802.78
+    },
+    {
+        "text": " Sin la siguiente, también cinco.",
+        "start": 1802.78,
+        "end": 1804.78
+    },
+    {
+        "text": " Y en la siguiente, cinco,",
+        "start": 1804.78,
+        "end": 1806.78
+    },
+    {
+        "text": " eso podría, en principio, poder seguir infinitamente.",
+        "start": 1806.78,
+        "end": 1809.78
+    },
+    {
+        "text": " El digo, más a lo que yo digo,",
+        "start": 1812.78,
+        "end": 1814.78
+    },
+    {
+        "text": " es que si una buena estrategia siempre ver que algo crece o decrece,",
+        "start": 1814.78,
+        "end": 1819.78
+    },
+    {
+        "text": " a eso no tanto a este ejemplo, sino como una buena estrategia",
+        "start": 1819.78,
+        "end": 1825.78
+    },
+    {
+        "text": " para tener la en cuenta de un carálogo.",
+        "start": 1825.78,
+        "end": 1827.78
+    },
+    {
+        "text": " Es una buena estrategia.",
+        "start": 1827.78,
+        "end": 1829.78
+    },
+    {
+        "text": " Sí, es una buena estrategia.",
+        "start": 1829.78,
+        "end": 1832.78
+    },
+    {
+        "text": " Y que además, en general, se va argumento muy líquido,",
+        "start": 1832.78,
+        "end": 1837.78
+    },
+    {
+        "text": " que no nos va a dar mucho lugar a la confusión.",
+        "start": 1838.78,
+        "end": 1841.78
+    },
+    {
+        "text": " Si están bien planteadas, pero no es necesariamente la única forma de mostrarlo",
+        "start": 1841.78,
+        "end": 1847.78
+    },
+    {
+        "text": " y, a mí, a veces, de hecho, puede ser alguna otra en la que funcione mejor.",
+        "start": 1847.78,
+        "end": 1852.78
+    },
+    {
+        "text": " Pero sin duda, que es una herramienta, una estrategia que tiene que tener la manga",
+        "start": 1852.78,
+        "end": 1858.78
+    },
+    {
+        "text": " porque muchas veces funciona y...",
+        "start": 1858.78,
+        "end": 1861.78
+    },
+    {
+        "text": " Que no es una buena estrategia siempre que está cotado, ¿no?",
+        "start": 1861.78,
+        "end": 1865.78
+    },
+    {
+        "text": " Porque...",
+        "start": 1865.78,
+        "end": 1866.78
+    },
+    {
+        "text": " O sea, si yo busco una media progreso que el crece y crece, no te he oído cota superior.",
+        "start": 1866.78,
+        "end": 1870.78
+    },
+    {
+        "text": " Bueno, claramente.",
+        "start": 1870.78,
+        "end": 1871.78
+    },
+    {
+        "text": " Es una buena observación.",
+        "start": 1871.78,
+        "end": 1873.78
+    },
+    {
+        "text": " Tenés que tener un unbrado, o es decir, es una media que progresía hacia una situación",
+        "start": 1873.78,
+        "end": 1881.78
+    },
+    {
+        "text": " y la cual vos salés que lo vimos para.",
+        "start": 1881.78,
+        "end": 1884.78
+    },
+    {
+        "text": " Perfecto.",
+        "start": 1885.78,
+        "end": 1886.78
+    },
+    {
+        "text": " Gracias.",
+        "start": 1886.78,
+        "end": 1887.78
+    },
+    {
+        "text": " Bien, nada.",
+        "start": 1887.78,
+        "end": 1888.78
+    },
+    {
+        "text": " Bien.",
+        "start": 1888.78,
+        "end": 1889.78
+    },
+    {
+        "text": " Básicamente, termina.",
+        "start": 1889.78,
+        "end": 1890.78
+    },
+    {
+        "text": " ¿Estamos de acuerdo?",
+        "start": 1890.78,
+        "end": 1891.78
+    },
+    {
+        "text": " Eso es bueno.",
+        "start": 1891.78,
+        "end": 1892.78
+    },
+    {
+        "text": " Ahora, termina.",
+        "start": 1892.78,
+        "end": 1893.78
+    },
+    {
+        "text": " También sabemos que nos da, ¿no?",
+        "start": 1893.78,
+        "end": 1895.78
+    },
+    {
+        "text": " Podría dar este principio poco a poco.",
+        "start": 1895.78,
+        "end": 1897.78
+    },
+    {
+        "text": " Vamos a ver qué no.",
+        "start": 1897.78,
+        "end": 1898.78
+    },
+    {
+        "text": " Que lo queda.",
+        "start": 1898.78,
+        "end": 1899.78
+    },
+    {
+        "text": " De hecho, es un...",
+        "start": 1899.78,
+        "end": 1900.78
+    },
+    {
+        "text": " Un buen parejamiento perfecto y no solo perfecto estable.",
+        "start": 1901.78,
+        "end": 1907.78
+    },
+    {
+        "text": " Entonces, dice, vamos a estar en el principio.",
+        "start": 1907.78,
+        "end": 1915.78
+    },
+    {
+        "text": " Vamos a ver qué no.",
+        "start": 1915.78,
+        "end": 1916.78
+    },
+    {
+        "text": " Que lo queda.",
+        "start": 1916.78,
+        "end": 1917.78
+    },
+    {
+        "text": " De hecho, es un buen parejamiento perfecto y no solo perfecto estable.",
+        "start": 1917.78,
+        "end": 1924.78
+    },
+    {
+        "text": " Entonces, dice, vamos a estar en el conjunto de...",
+        "start": 1925.78,
+        "end": 1931.78
+    },
+    {
+        "text": " De vuelta, he dicho un parejamiento perfecto.",
+        "start": 1931.78,
+        "end": 1935.78
+    },
+    {
+        "text": " Recuerda que perfecto significa que todos terminan en pareja,",
+        "start": 1935.78,
+        "end": 1940.78
+    },
+    {
+        "text": " decir, a nadie, es solteiro.",
+        "start": 1940.78,
+        "end": 1942.78
+    },
+    {
+        "text": " Bueno, acá sigue una serie de proposiciones o resultados.",
+        "start": 1942.78,
+        "end": 1947.78
+    },
+    {
+        "text": " Entonces, lo que vamos a traer es que si m está libre",
+        "start": 1948.78,
+        "end": 1954.78
+    },
+    {
+        "text": " en algún punto de la ejecución del ego ritmo,",
+        "start": 1954.78,
+        "end": 1957.78
+    },
+    {
+        "text": " entonces hay el mundo W, a la cual aún no se le propuso.",
+        "start": 1957.78,
+        "end": 1962.78
+    },
+    {
+        "text": " Básicamente, lo que dice esta condición, esta enunciado que está acá,",
+        "start": 1962.78,
+        "end": 1970.78
+    },
+    {
+        "text": " es que cuando la ven o salga en este jugador,",
+        "start": 1970.78,
+        "end": 1976.78
+    },
+    {
+        "text": " en este Jual, en realidad va a ser porque ya no hay un m libre.",
+        "start": 1976.78,
+        "end": 1983.78
+    },
+    {
+        "text": " Es la otra condición de que no se propuesta nadie, no se puede dar.",
+        "start": 1983.78,
+        "end": 1989.78
+    },
+    {
+        "text": " Es un m libre, hay alguien al cual todavía no se le propuso.",
+        "start": 1989.78,
+        "end": 1992.78
+    },
+    {
+        "text": " Eso es lo que dice la proposición.",
+        "start": 1992.78,
+        "end": 1998.78
+    },
+    {
+        "text": " Y esto creo que lo hace por absurdo, pero en realidad la razón por la cual se cumple,",
+        "start": 1999.78,
+        "end": 2010.78
+    },
+    {
+        "text": " esto es bastante sencilla de ver y tiene que ver con que a lo largo de toda la ejecución,",
+        "start": 2010.78,
+        "end": 2018.78
+    },
+    {
+        "text": " el algoritmo mantiene un emparejamiento, no?",
+        "start": 2018.78,
+        "end": 2022.78
+    },
+    {
+        "text": " Necesariamente perfecto, pero es un emparejamiento.",
+        "start": 2022.78,
+        "end": 2025.78
+    },
+    {
+        "text": " Es decir, que nadie rematir el homogami, a nadie está en pareja con más de 1.",
+        "start": 2025.78,
+        "end": 2032.78
+    },
+    {
+        "text": " Eso es bastante claro también los paredes que se mostró por inducción,",
+        "start": 2032.78,
+        "end": 2038.78
+    },
+    {
+        "text": " por ejemplo acá simplemente el nivel lo asumo como algo bastante evidente.",
+        "start": 2038.78,
+        "end": 2043.78
+    },
+    {
+        "text": " Tiene que cuando esos fueron una pareja en alguna interacción,",
+        "start": 2043.78,
+        "end": 2046.78
+    },
+    {
+        "text": " bueno arranqué el higiendo un m que estaba libre,",
+        "start": 2046.78,
+        "end": 2050.7799999999997
+    },
+    {
+        "text": " así que ese no nos va a estar en pareja con más luz, no?",
+        "start": 2050.7799999999997,
+        "end": 2054.7799999999997
+    },
+    {
+        "text": " Y si forma una pareja, la forma con un cierto W que hoy en esta val libre,",
+        "start": 2055.78,
+        "end": 2061.78
+    },
+    {
+        "text": " entonces a cada uno de ellos está en pareja exclusivamente con el otro.",
+        "start": 2061.78,
+        "end": 2068.78
+    },
+    {
+        "text": " Y si W estaba en pareja con alguien empreme y forma ahora con W antes de formar pareja",
+        "start": 2068.78,
+        "end": 2077.78
+    },
+    {
+        "text": " de jalibre, antes de formar pareja con m de jalibre a m3.",
+        "start": 2078.78,
+        "end": 2083.78
+    },
+    {
+        "text": " Entonces, se mantiene, es el principio como todos están iniciados libres,",
+        "start": 2083.78,
+        "end": 2088.78
+    },
+    {
+        "text": " nadie está en pareja con más de 1 y a lo largo de cada interacción",
+        "start": 2088.78,
+        "end": 2091.78
+    },
+    {
+        "text": " siempre se mantiene que nadie está en pareja con más.",
+        "start": 2091.78,
+        "end": 2095.78
+    },
+    {
+        "text": " Eso que quiere decir, como tenemos la misma cantidad n en un conjunto y en el otro,",
+        "start": 2095.78,
+        "end": 2103.78
+    },
+    {
+        "text": " bueno, si hay uno libre de un lado, tiene que haber uno libre de otro.",
+        "start": 2103.78,
+        "end": 2106.78
+    },
+    {
+        "text": " Es bueno, si no, hay alguien que estaría en pareja con más luz.",
+        "start": 2106.78,
+        "end": 2110.78
+    },
+    {
+        "text": " ¿Tradón? ¿Cuándo?",
+        "start": 2110.78,
+        "end": 2112.78
+    },
+    {
+        "text": " Es el argumento, acá está escrito un poco más detazado,",
+        "start": 2118.78,
+        "end": 2123.78
+    },
+    {
+        "text": " pero el argumento esencialmente es eso.",
+        "start": 2123.78,
+        "end": 2128.78
+    },
+    {
+        "text": " Si hay alguien, si hay un m libre, entonces como siempre se mantiene la monobam,",
+        "start": 2129.78,
+        "end": 2136.78
+    },
+    {
+        "text": " tiene que haber un doble be, libre también.",
+        "start": 2136.78,
+        "end": 2138.78
+    },
+    {
+        "text": " Y como los doble be, en cuanto recién una propuesta, la garran,",
+        "start": 2138.78,
+        "end": 2143.78
+    },
+    {
+        "text": " el hecho de que esté libre, que decir que nadie se le propuso.",
+        "start": 2143.78,
+        "end": 2147.78
+    },
+    {
+        "text": " En particular, m no se le propuso, o sea que m esto había dado todos sus distancias.",
+        "start": 2147.78,
+        "end": 2152.78
+    },
+    {
+        "text": " ¿Sentiendes?",
+        "start": 2153.78,
+        "end": 2155.78
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 2158.78,
+        "end": 2159.78
+    },
+    {
+        "text": " Así que avanzamos, si el algoritmo se detiene,",
+        "start": 2170.78,
+        "end": 2175.78
+    },
+    {
+        "text": " forma cuando termina lo que formó es un empejejamiento,",
+        "start": 2175.78,
+        "end": 2181.78
+    },
+    {
+        "text": " no es un empejejamiento, es un empejejamiento perfecto.",
+        "start": 2181.78,
+        "end": 2186.78
+    },
+    {
+        "text": " Lo que falta ver es que es un empejejamiento estable,",
+        "start": 2189.78,
+        "end": 2194.78
+    },
+    {
+        "text": " que es lo más complicado.",
+        "start": 2194.78,
+        "end": 2200.78
+    },
+    {
+        "text": " El punto que priori parece más complicado,",
+        "start": 2200.78,
+        "end": 2203.78
+    },
+    {
+        "text": " que van a ver que en realidad tampoco se están tan difícil.",
+        "start": 2203.78,
+        "end": 2206.78
+    },
+    {
+        "text": " ¿Sabes eso? Lo que se muestra en la proposición está 1.6,",
+        "start": 2208.78,
+        "end": 2212.78
+    },
+    {
+        "text": " el enunciado 1.6.",
+        "start": 2212.78,
+        "end": 2214.78
+    },
+    {
+        "text": " En acá va la pena de rebanar y si consideramos una ejecución de brimo gs,",
+        "start": 2215.78,
+        "end": 2220.78
+    },
+    {
+        "text": " que devuelve un conjunto s de pares.",
+        "start": 2220.78,
+        "end": 2223.78
+    },
+    {
+        "text": " El conjunto s es un empejejamiento estable.",
+        "start": 2224.78,
+        "end": 2227.78
+    },
+    {
+        "text": " Fíjese en la forma de expresar este resultado,",
+        "start": 2227.78,
+        "end": 2231.78
+    },
+    {
+        "text": " que sea lo que está resaltado un poco más adelante.",
+        "start": 2231.78,
+        "end": 2234.78
+    },
+    {
+        "text": " Está un poco más adelante, libre, que lo voy a comentar ahora.",
+        "start": 2237.78,
+        "end": 2240.78
+    },
+    {
+        "text": " En principio, el algoritmo está subespecificado,",
+        "start": 2245.78,
+        "end": 2249.78
+    },
+    {
+        "text": " en el sentido de que no decimos exactamente qué hombre,",
+        "start": 2249.78,
+        "end": 2252.78
+    },
+    {
+        "text": " qué m elegir en cada caso.",
+        "start": 2252.78,
+        "end": 2255.78
+    },
+    {
+        "text": " Entonces, cabe la duda,",
+        "start": 2255.78,
+        "end": 2259.78
+    },
+    {
+        "text": " es decir, el emparejamiento que se genera con una ejecución de brimo",
+        "start": 2259.78,
+        "end": 2266.78
+    },
+    {
+        "text": " por eso es diferente en un caso o en otro,",
+        "start": 2266.78,
+        "end": 2268.78
+    },
+    {
+        "text": " dependiendo de en que orden, el, el, el, el,",
+        "start": 2268.78,
+        "end": 2270.78
+    },
+    {
+        "text": " que dijamos los límites.",
+        "start": 2271.78,
+        "end": 2273.78
+    },
+    {
+        "text": " Por eso, aquí, este resultado está en un funcion de esa manera.",
+        "start": 2273.78,
+        "end": 2276.78
+    },
+    {
+        "text": " Consideramos una ejecución de brimo gs.",
+        "start": 2276.78,
+        "end": 2279.78
+    },
+    {
+        "text": " Pero la misma instancia podría entrar diferentes ejecuciones.",
+        "start": 2279.78,
+        "end": 2282.78
+    },
+    {
+        "text": " Es el mismo algoritmo, sólo que en alguna vez se lijo en determinador",
+        "start": 2282.78,
+        "end": 2285.78
+    },
+    {
+        "text": " y otra vez se lijo en otro.",
+        "start": 2285.78,
+        "end": 2288.78
+    },
+    {
+        "text": " Y digamos que esa ejecución, en particular, devuelve un cierto conjunto s,",
+        "start": 2288.78,
+        "end": 2293.78
+    },
+    {
+        "text": " y lo que vamos a mostrar es que el conjunto s es un empejejamiento estable.",
+        "start": 2293.78,
+        "end": 2297.78
+    },
+    {
+        "text": " Entonces, como la ejecución esa,",
+        "start": 2297.78,
+        "end": 2299.78
+    },
+    {
+        "text": " que estoy considerando es arbitraria,",
+        "start": 2299.78,
+        "end": 2301.78
+    },
+    {
+        "text": " quiere decir que cualquiera, cualquier forma en la cual se le hija los emelibres,",
+        "start": 2301.78,
+        "end": 2306.78
+    },
+    {
+        "text": " podrá darme diferentes pese, pero cualquiera de ello va a ser un emparejamiento estado.",
+        "start": 2306.78,
+        "end": 2311.78
+    },
+    {
+        "text": " Bueno, acá está la, la, la demostración de ese punto,",
+        "start": 2317.78,
+        "end": 2321.78
+    },
+    {
+        "text": " y es una demostración por absurdo.",
+        "start": 2321.78,
+        "end": 2326.78
+    },
+    {
+        "text": " Y se, vamos a suponer que hay una instabilidad.",
+        "start": 2328.78,
+        "end": 2333.78
+    },
+    {
+        "text": " Entonces, dice, van a ser una instabilidad que quiere decir que hay dos parejas,",
+        "start": 2335.78,
+        "end": 2339.78
+    },
+    {
+        "text": " MWB, M prima, WB, que forman una instabilidad entre eso.",
+        "start": 2339.78,
+        "end": 2344.78
+    },
+    {
+        "text": " O sea, es decir, que M prefiero W prima, ante que a su pareja,",
+        "start": 2344.78,
+        "end": 2349.78
+    },
+    {
+        "text": " Y W prima también prefere a M, ante que a su pareja me prima.",
+        "start": 2349.78,
+        "end": 2353.78
+    },
+    {
+        "text": " Entonces, estos dos irían juntos y eso es una instabilidad.",
+        "start": 2354.78,
+        "end": 2358.78
+    },
+    {
+        "text": " Entonces, lo que hacemos es asumir que ocurre esto y llegar una contradicción.",
+        "start": 2358.78,
+        "end": 2364.78
+    },
+    {
+        "text": " acá van a ver que hay una serie de inconsistencia con la notación.",
+        "start": 2366.78,
+        "end": 2373.78
+    },
+    {
+        "text": " Este M prima tendría que ser un M, estos W están marcados acá, tendría que ser W prima.",
+        "start": 2374.78,
+        "end": 2379.78
+    },
+    {
+        "text": " Y este M prima tendría que ser un M1.",
+        "start": 2380.78,
+        "end": 2382.78
+    },
+    {
+        "text": " Bueno, dice, la ejecución de logaritmo que genera ese M,",
+        "start": 2386.78,
+        "end": 2392.78
+    },
+    {
+        "text": " la última proyección que hizo M fue a W, eso es bueno,",
+        "start": 2393.78,
+        "end": 2396.78
+    },
+    {
+        "text": " porque M termina en pareja con W, o sea, que W es la última proposición que hizo.",
+        "start": 2396.78,
+        "end": 2400.78
+    },
+    {
+        "text": " Y se quedó ahí hasta que terminó.",
+        "start": 2403.78,
+        "end": 2405.78
+    },
+    {
+        "text": " El agujillo.",
+        "start": 2406.78,
+        "end": 2407.78
+    },
+    {
+        "text": " Entonces acá, discute en dos casos.",
+        "start": 2408.78,
+        "end": 2410.78
+    },
+    {
+        "text": " Esta es también una técnica para escribir demostraciones y para pensar en mostraciones con discute.",
+        "start": 2410.78,
+        "end": 2416.78
+    },
+    {
+        "text": " ¿Qué pasa si pasa esto, qué pasa si pasa esto otro y analizar cada paso por separado?",
+        "start": 2416.78,
+        "end": 2421.78
+    },
+    {
+        "text": " La que ha discutido dos casos.",
+        "start": 2422.78,
+        "end": 2424.78
+    },
+    {
+        "text": " M le propuso W prima, o sea, lo que prefiere en algún punto anterior,",
+        "start": 2424.78,
+        "end": 2432.78
+    },
+    {
+        "text": " a esta última proposición que le hizo a W,",
+        "start": 2432.78,
+        "end": 2437.78
+    },
+    {
+        "text": " si no lo hizo, entonces W está más adelante en la lista de presidencias de M.",
+        "start": 2439.78,
+        "end": 2447.78
+    },
+    {
+        "text": " Eso es porque M propone en orden, y eso es una contradicción con el hecho de que,",
+        "start": 2448.78,
+        "end": 2456.78
+    },
+    {
+        "text": " para que existiera la inestabilidad, M prefiera W prima antes que W.",
+        "start": 2456.78,
+        "end": 2461.78
+    },
+    {
+        "text": " Entonces, en ese primer caso llegamos a una contradicción,",
+        "start": 2464.78,
+        "end": 2467.78
+    },
+    {
+        "text": " después vamos a ver que si sí lo hizo también,",
+        "start": 2467.78,
+        "end": 2469.78
+    },
+    {
+        "text": " si lo tiene una contradicción.",
+        "start": 2469.78,
+        "end": 2470.78
+    },
+    {
+        "text": " Yo creo que esto se puede expresar de forma mucho más compacta.",
+        "start": 2470.78,
+        "end": 2475.78
+    },
+    {
+        "text": " Esto no es que esté mal, pero también se puede hacer más compacto.",
+        "start": 2478.78,
+        "end": 2482.78
+    },
+    {
+        "text": " Eso diría algo así.",
+        "start": 2482.78,
+        "end": 2483.78
+    },
+    {
+        "text": " Assumimos que efectivamente existen M, W, M, prima, W prima,",
+        "start": 2484.78,
+        "end": 2489.78
+    },
+    {
+        "text": " tal que se genera esta inestabilidad.",
+        "start": 2489.78,
+        "end": 2495.78
+    },
+    {
+        "text": " Entonces, como M prefiere a W prima antes que a W,",
+        "start": 2500.78,
+        "end": 2504.78
+    },
+    {
+        "text": " hace proposiciones en orden de preferencia,",
+        "start": 2505.78,
+        "end": 2507.78
+    },
+    {
+        "text": " entonces necesariamente M le propuso, le hizo una propuesta W prima antes que a W.",
+        "start": 2507.78,
+        "end": 2514.78
+    },
+    {
+        "text": " Porque la prefiere.",
+        "start": 2514.78,
+        "end": 2515.78
+    },
+    {
+        "text": " Entonces, no hay por qué discutir si pasa, si no pasa,",
+        "start": 2516.78,
+        "end": 2519.78
+    },
+    {
+        "text": " vamos directamente a cumplirme, que de esta efectivamente tiene que haber pasado.",
+        "start": 2519.78,
+        "end": 2522.78
+    },
+    {
+        "text": " O la hipótesis que estamos asumiendo de que M prefiera W prima antes que a su pareja.",
+        "start": 2522.78,
+        "end": 2527.78
+    },
+    {
+        "text": " Entonces, necesariamente a W prima le tiene que dar propuesto antes.",
+        "start": 2527.78,
+        "end": 2531.78
+    },
+    {
+        "text": " Entonces, si hizo esa proposición,",
+        "start": 2535.78,
+        "end": 2537.78
+    },
+    {
+        "text": " y pero no terminó cuando W prima, entonces quiere decir que M fue rechazado",
+        "start": 2537.78,
+        "end": 2545.78
+    },
+    {
+        "text": " por W prima de venir de Sina acá.",
+        "start": 2545.78,
+        "end": 2548.78
+    },
+    {
+        "text": " En favor de otro, M1.",
+        "start": 2548.78,
+        "end": 2551.78
+    },
+    {
+        "text": " Y aquí en W prima prefiere, si se fue con M1 en vez de W prima,",
+        "start": 2555.78,
+        "end": 2561.78
+    },
+    {
+        "text": " que de se que no prefiere.",
+        "start": 2561.78,
+        "end": 2563.78
+    },
+    {
+        "text": " Fíjense que acá dice M1,",
+        "start": 2567.78,
+        "end": 2570.78
+    },
+    {
+        "text": " y no W prima, que es efectivamente termina en el primer.",
+        "start": 2573.78,
+        "end": 2577.78
+    },
+    {
+        "text": " Y ese también cuando uno analiza este tipo de algoritmo,",
+        "start": 2577.78,
+        "end": 2580.78
+    },
+    {
+        "text": " si yo con experiencia y daños anteriores,",
+        "start": 2580.78,
+        "end": 2583.78
+    },
+    {
+        "text": " de forma de resolver ejercicio por parte de estudiantes también,",
+        "start": 2584.78,
+        "end": 2589.78
+    },
+    {
+        "text": " un error muy común es decir,",
+        "start": 2589.78,
+        "end": 2592.78
+    },
+    {
+        "text": " no ver que en el medio pueden pasar otras cosas,",
+        "start": 2592.78,
+        "end": 2594.78
+    },
+    {
+        "text": " más allá de la foto que yo estoy viendo el final.",
+        "start": 2594.78,
+        "end": 2597.78
+    },
+    {
+        "text": " Entonces, un argumento incorrecto acá,",
+        "start": 2597.78,
+        "end": 2601.78
+    },
+    {
+        "text": " por decir, bueno, entonces, como dijimos,",
+        "start": 2601.78,
+        "end": 2605.78
+    },
+    {
+        "text": " M le tiene que haber propuesto a W prima.",
+        "start": 2605.78,
+        "end": 2610.78
+    },
+    {
+        "text": " Y entonces W prima, lo tiene que haber rechazado",
+        "start": 2612.78,
+        "end": 2616.78
+    },
+    {
+        "text": " y reemplazarlo por M prima,",
+        "start": 2616.78,
+        "end": 2619.78
+    },
+    {
+        "text": " que es el con el que termina.",
+        "start": 2619.78,
+        "end": 2620.78
+    },
+    {
+        "text": " Y no, eso no es cierto.",
+        "start": 2620.78,
+        "end": 2621.78
+    },
+    {
+        "text": " En ese momento donde estám de ser eso,",
+        "start": 2621.78,
+        "end": 2623.78
+    },
+    {
+        "text": " no tiene por qué ser en favor de M prima.",
+        "start": 2623.78,
+        "end": 2625.78
+    },
+    {
+        "text": " Puede ser en favor de otro, M1.",
+        "start": 2625.78,
+        "end": 2627.78
+    },
+    {
+        "text": " Y que después más adelante se terminen parejando con M prima.",
+        "start": 2627.78,
+        "end": 2630.78
+    },
+    {
+        "text": " ¿Acuál es lo que ocurre muchas veces?",
+        "start": 2631.78,
+        "end": 2636.78
+    },
+    {
+        "text": " Cuando uno razona sobre estas cosas.",
+        "start": 2637.78,
+        "end": 2639.78
+    },
+    {
+        "text": " Lo que es cierto es que, bueno, M le hizo una propuesta.",
+        "start": 2639.78,
+        "end": 2643.78
+    },
+    {
+        "text": " A W prima, W prima decidió rechazarlo en favor de otro, M1.",
+        "start": 2644.78,
+        "end": 2648.78
+    },
+    {
+        "text": " Ahora recuerden que los W,",
+        "start": 2648.78,
+        "end": 2651.78
+    },
+    {
+        "text": " de ahí en más solo pueden mejorar.",
+        "start": 2651.78,
+        "end": 2654.78
+    },
+    {
+        "text": " Los M van empeorando sus sucesivas parejas,",
+        "start": 2655.78,
+        "end": 2658.78
+    },
+    {
+        "text": " los W van mejorando.",
+        "start": 2658.78,
+        "end": 2659.78
+    },
+    {
+        "text": " Entonces, si terminó con W prima,",
+        "start": 2659.78,
+        "end": 2662.78
+    },
+    {
+        "text": " quiere decir que para ese W prima,",
+        "start": 2662.78,
+        "end": 2665.78
+    },
+    {
+        "text": " si terminó con M prima, quiere decir que para W prima,",
+        "start": 2665.78,
+        "end": 2670.78
+    },
+    {
+        "text": " M prima es aún mejor que M1.",
+        "start": 2671.78,
+        "end": 2673.78
+    },
+    {
+        "text": " Pues en mismo, o si no,",
+        "start": 2673.78,
+        "end": 2675.78
+    },
+    {
+        "text": " es porque incluso mejora aún más respecto a su surista de preferencias.",
+        "start": 2675.78,
+        "end": 2679.78
+    },
+    {
+        "text": " Bueno, ¿cómo sea?",
+        "start": 2681.78,
+        "end": 2682.78
+    },
+    {
+        "text": " Se llegamos a una contradicción,",
+        "start": 2683.78,
+        "end": 2685.78
+    },
+    {
+        "text": " porque hagamos a su medio que W prima prefería M antes que M prima y eso no puede ser.",
+        "start": 2685.78,
+        "end": 2690.78
+    },
+    {
+        "text": " En resumen,",
+        "start": 2694.78,
+        "end": 2695.78
+    },
+    {
+        "text": " en una línea, esto que está escrito acá,",
+        "start": 2696.78,
+        "end": 2703.78
+    },
+    {
+        "text": " esta situación,",
+        "start": 2707.78,
+        "end": 2709.78
+    },
+    {
+        "text": " la inestabilidad no se puede dar,",
+        "start": 2709.78,
+        "end": 2711.78
+    },
+    {
+        "text": " porque pues yo no hago un M,",
+        "start": 2711.78,
+        "end": 2713.78
+    },
+    {
+        "text": " arbitrario cualquiera,",
+        "start": 2713.78,
+        "end": 2715.78
+    },
+    {
+        "text": " bueno, todos los W,",
+        "start": 2717.78,
+        "end": 2719.78
+    },
+    {
+        "text": " en los cuales M podría estar interesados,",
+        "start": 2719.78,
+        "end": 2722.78
+    },
+    {
+        "text": " cambiar por la pareja que le fue asignado,",
+        "start": 2723.78,
+        "end": 2728.78
+    },
+    {
+        "text": " por su pareja cual,",
+        "start": 2728.78,
+        "end": 2729.78
+    },
+    {
+        "text": " todos esos W,",
+        "start": 2729.78,
+        "end": 2731.78
+    },
+    {
+        "text": " en algún momento,",
+        "start": 2731.78,
+        "end": 2732.78
+    },
+    {
+        "text": " de lo mismo lo rechazar,",
+        "start": 2732.78,
+        "end": 2734.78
+    },
+    {
+        "text": " porque él fue haciendo propuestas",
+        "start": 2734.78,
+        "end": 2736.78
+    },
+    {
+        "text": " que les propuso antes y lo rechazar.",
+        "start": 2739.78,
+        "end": 2741.78
+    },
+    {
+        "text": " Entonces,",
+        "start": 2742.78,
+        "end": 2743.78
+    },
+    {
+        "text": " todos esos W,",
+        "start": 2743.78,
+        "end": 2744.78
+    },
+    {
+        "text": " en los cuales él podría estar interesado,",
+        "start": 2744.78,
+        "end": 2746.78
+    },
+    {
+        "text": " lo rechazaron,",
+        "start": 2746.78,
+        "end": 2748.78
+    },
+    {
+        "text": " y quiere decir que están con parejas",
+        "start": 2749.78,
+        "end": 2751.78
+    },
+    {
+        "text": " que prefier,",
+        "start": 2752.78,
+        "end": 2753.78
+    },
+    {
+        "text": " por lo tanto,",
+        "start": 2753.78,
+        "end": 2754.78
+    },
+    {
+        "text": " aunque M quisiera cambiar,",
+        "start": 2754.78,
+        "end": 2755.78
+    },
+    {
+        "text": " los W,",
+        "start": 2757.78,
+        "end": 2758.78
+    },
+    {
+        "text": " con los cuales quisiera cambiar no están interesados,",
+        "start": 2758.78,
+        "end": 2760.78
+    },
+    {
+        "text": " en cambiar,",
+        "start": 2760.78,
+        "end": 2761.78
+    },
+    {
+        "text": " entonces efectivamente no hay ningún inestabilidad.",
+        "start": 2761.78,
+        "end": 2763.78
+    },
+    {
+        "text": " Está sencillo como eso.",
+        "start": 2763.78,
+        "end": 2765.78
+    },
+    {
+        "text": " Al final del día,",
+        "start": 2768.78,
+        "end": 2770.78
+    },
+    {
+        "text": " el del dolorismo M termina con alguien,",
+        "start": 2770.78,
+        "end": 2776.78
+    },
+    {
+        "text": " que bueno,",
+        "start": 2777.78,
+        "end": 2778.78
+    },
+    {
+        "text": " el primero que no prefirió a otro lugar de,",
+        "start": 2779.78,
+        "end": 2782.78
+    },
+    {
+        "text": " entonces también importa que él pudiera estar interesado",
+        "start": 2782.78,
+        "end": 2785.78
+    },
+    {
+        "text": " en cambiar,",
+        "start": 2785.78,
+        "end": 2786.78
+    },
+    {
+        "text": " nadie de los cuales está interesado",
+        "start": 2787.78,
+        "end": 2789.78
+    },
+    {
+        "text": " le interesa hacer negocio.",
+        "start": 2789.78,
+        "end": 2791.78
+    },
+    {
+        "text": " Se entiende,",
+        "start": 2793.78,
+        "end": 2794.78
+    },
+    {
+        "text": " alguna duda,",
+        "start": 2795.78,
+        "end": 2796.78
+    },
+    {
+        "text": " bueno,",
+        "start": 2809.78,
+        "end": 2810.78
+    },
+    {
+        "text": " ¿Ya pensé que tengo una ua?",
+        "start": 2818.78,
+        "end": 2820.78
+    },
+    {
+        "text": " Sí, lo hicimos.",
+        "start": 2820.78,
+        "end": 2821.78
+    },
+    {
+        "text": " Para eso, en demano como precondición por él,",
+        "start": 2822.78,
+        "end": 2826.78
+    },
+    {
+        "text": " tiene que estar bien embarajado,",
+        "start": 2826.78,
+        "end": 2830.78
+    },
+    {
+        "text": " por así decirlo,",
+        "start": 2830.78,
+        "end": 2831.78
+    },
+    {
+        "text": " las preferencias de los mécollos de obrido.",
+        "start": 2831.78,
+        "end": 2835.78
+    },
+    {
+        "text": " Pero no, no, no escuché bien.",
+        "start": 2836.78,
+        "end": 2838.78
+    },
+    {
+        "text": " La preferencia,",
+        "start": 2838.78,
+        "end": 2840.78
+    },
+    {
+        "text": " ni lo he olvidado,",
+        "start": 2840.78,
+        "end": 2841.78
+    },
+    {
+        "text": " por eso me dié no por algo que no tiene sentido,",
+        "start": 2841.78,
+        "end": 2849.78
+    },
+    {
+        "text": " como cuando la preferencia.",
+        "start": 2849.78,
+        "end": 2852.78
+    },
+    {
+        "text": " Sí, las preferencias tienen que satisfacer las,",
+        "start": 2853.78,
+        "end": 2856.78
+    },
+    {
+        "text": " las,",
+        "start": 2856.78,
+        "end": 2857.78
+    },
+    {
+        "text": " las, las,",
+        "start": 2857.78,
+        "end": 2858.78
+    },
+    {
+        "text": " las requiciones que hemos hablado.",
+        "start": 2858.78,
+        "end": 2859.78
+    },
+    {
+        "text": " No cada doble,",
+        "start": 2859.78,
+        "end": 2860.78
+    },
+    {
+        "text": " tiene que",
+        "start": 2860.78,
+        "end": 2861.78
+    },
+    {
+        "text": " ordenar a todos",
+        "start": 2862.78,
+        "end": 2864.78
+    },
+    {
+        "text": " los mécollos,",
+        "start": 2864.78,
+        "end": 2866.78
+    },
+    {
+        "text": " no, no, no, no, a todos los m,",
+        "start": 2866.78,
+        "end": 2868.78
+    },
+    {
+        "text": " no puede dejar huecos y no puede haber repetido,",
+        "start": 2868.78,
+        "end": 2870.78
+    },
+    {
+        "text": " tampoco en ese listo de procedencias,",
+        "start": 2870.78,
+        "end": 2872.78
+    },
+    {
+        "text": " no puede haber empatado.",
+        "start": 2872.78,
+        "end": 2874.78
+    },
+    {
+        "text": " ¿Tagares?",
+        "start": 2874.78,
+        "end": 2875.78
+    },
+    {
+        "text": " Sí.",
+        "start": 2875.78,
+        "end": 2876.78
+    },
+    {
+        "text": " ¿Algüe más que una pregunta?",
+        "start": 2877.78,
+        "end": 2879.78
+    },
+    {
+        "text": " Sí, yo tengo una pregunta sobre otro conciso,",
+        "start": 2881.78,
+        "end": 2884.78
+    },
+    {
+        "text": " pero justo con esto de las preferencias.",
+        "start": 2884.78,
+        "end": 2887.78
+    },
+    {
+        "text": " Hay un ejército que dice que hay parejas",
+        "start": 2887.78,
+        "end": 2890.78
+    },
+    {
+        "text": " que no pueden formarse,",
+        "start": 2890.78,
+        "end": 2891.78
+    },
+    {
+        "text": " como están por la vida.",
+        "start": 2891.78,
+        "end": 2892.78
+    },
+    {
+        "text": " Sí, eso es que resuelto.",
+        "start": 2892.78,
+        "end": 2894.78
+    },
+    {
+        "text": " Sí.",
+        "start": 2896.78,
+        "end": 2897.78
+    },
+    {
+        "text": " Sí.",
+        "start": 2897.78,
+        "end": 2898.78
+    },
+    {
+        "text": " No sé, yo lo vi en la lista de joyos del práctico.",
+        "start": 2898.78,
+        "end": 2900.78
+    },
+    {
+        "text": " Ahí,",
+        "start": 2900.78,
+        "end": 2901.78
+    },
+    {
+        "text": " las, las parejas provivenas igual están en la lista de preferencias,",
+        "start": 2901.78,
+        "end": 2905.78
+    },
+    {
+        "text": " o sea, en la lista están todos los posibles,",
+        "start": 2905.78,
+        "end": 2907.78
+    },
+    {
+        "text": " todos los,",
+        "start": 2907.78,
+        "end": 2908.78
+    },
+    {
+        "text": " todos los,",
+        "start": 2908.78,
+        "end": 2909.78
+    },
+    {
+        "text": " todos los provivenas,",
+        "start": 2909.78,
+        "end": 2910.78
+    },
+    {
+        "text": " todos los doble vean que están providos,",
+        "start": 2910.78,
+        "end": 2911.78
+    },
+    {
+        "text": " postados solamente los,",
+        "start": 2911.78,
+        "end": 2912.78
+    },
+    {
+        "text": " los doble ve,",
+        "start": 2912.78,
+        "end": 2913.78
+    },
+    {
+        "text": " permitidos digamos,",
+        "start": 2913.78,
+        "end": 2916.78
+    },
+    {
+        "text": " para ese m,",
+        "start": 2916.78,
+        "end": 2917.78
+    },
+    {
+        "text": " o no importa.",
+        "start": 2917.78,
+        "end": 2919.78
+    },
+    {
+        "text": " Bueno, puede, puede formular el problema de diferentes maneras.",
+        "start": 2920.78,
+        "end": 2925.78
+    },
+    {
+        "text": " Creo que la, la forma en que lo,",
+        "start": 2925.78,
+        "end": 2929.78
+    },
+    {
+        "text": " en que lo presentan acá,",
+        "start": 2929.78,
+        "end": 2931.78
+    },
+    {
+        "text": " me parece que efectivamente los incluyan todos.",
+        "start": 2931.78,
+        "end": 2934.78
+    },
+    {
+        "text": " Bien, que al final del capítulo hay una serie de ejercicios resueltos,",
+        "start": 2939.78,
+        "end": 2943.78
+    },
+    {
+        "text": " está este ejercicio uno,",
+        "start": 2943.78,
+        "end": 2944.78
+    },
+    {
+        "text": " y el que decía, ¿vos es este ejercicio 2?",
+        "start": 2944.78,
+        "end": 2947.78
+    },
+    {
+        "text": " ¿No?",
+        "start": 2947.78,
+        "end": 2948.78
+    },
+    {
+        "text": " Sí, están, están todos,",
+        "start": 2959.78,
+        "end": 2962.78
+    },
+    {
+        "text": " cada uno hace una lista de preferencias sobre todo el mundo,",
+        "start": 2962.78,
+        "end": 2966.78
+    },
+    {
+        "text": " pero,",
+        "start": 2966.78,
+        "end": 2967.78
+    },
+    {
+        "text": " pero hay un conjunto de fe de tepades que no está permitido formar.",
+        "start": 2968.78,
+        "end": 2974.78
+    },
+    {
+        "text": " Pero sí, en principio la,",
+        "start": 2975.78,
+        "end": 2978.78
+    },
+    {
+        "text": " la lista los incluyan todos.",
+        "start": 2978.78,
+        "end": 2981.78
+    },
+    {
+        "text": " No, no es igual algo demasiado importante,",
+        "start": 2981.78,
+        "end": 2985.78
+    },
+    {
+        "text": " el pueblo puede formular diferentes maneras,",
+        "start": 2985.78,
+        "end": 2987.78
+    },
+    {
+        "text": " después tienes que ser consistente con tu,",
+        "start": 2987.78,
+        "end": 2989.78
+    },
+    {
+        "text": " con tu definición,",
+        "start": 2989.78,
+        "end": 2991.78
+    },
+    {
+        "text": " pero,",
+        "start": 2991.78,
+        "end": 2992.78
+    },
+    {
+        "text": " pero lo podré formalizar de más de la manera.",
+        "start": 2992.78,
+        "end": 2994.78
+    },
+    {
+        "text": " Está bien?",
+        "start": 2997.78,
+        "end": 2998.78
+    },
+    {
+        "text": " Al final.",
+        "start": 2998.78,
+        "end": 2999.78
+    },
+    {
+        "text": " Sí.",
+        "start": 2999.78,
+        "end": 3000.78
+    },
+    {
+        "text": " Al principio hayamos dicho que no,",
+        "start": 3001.78,
+        "end": 3004.78
+    },
+    {
+        "text": " no podía haber empate,",
+        "start": 3004.78,
+        "end": 3005.78
+    },
+    {
+        "text": " o a la lista de preferencias.",
+        "start": 3005.78,
+        "end": 3006.78
+    },
+    {
+        "text": " Sí.",
+        "start": 3006.78,
+        "end": 3007.78
+    },
+    {
+        "text": " ¿Por qué no funcionaría igual todo?",
+        "start": 3007.78,
+        "end": 3011.78
+    },
+    {
+        "text": " Bueno, pregunta.",
+        "start": 3013.78,
+        "end": 3014.78
+    },
+    {
+        "text": " Bueno, ahora sí hay empate.",
+        "start": 3027.78,
+        "end": 3029.78
+    },
+    {
+        "text": " El problema no sería que podías entrar en un loop de,",
+        "start": 3031.78,
+        "end": 3034.78
+    },
+    {
+        "text": " yo me da lo mismo a estas dos personas,",
+        "start": 3034.78,
+        "end": 3036.78
+    },
+    {
+        "text": " y yo hago un aledo y lo mismo que el otro.",
+        "start": 3036.78,
+        "end": 3038.78
+    },
+    {
+        "text": " Entonces, nos empezamos a cambiar tipo,",
+        "start": 3038.78,
+        "end": 3041.78
+    },
+    {
+        "text": " ok, yo con vos,",
+        "start": 3041.78,
+        "end": 3044.78
+    },
+    {
+        "text": " a vos te lo mismo yo y el otro,",
+        "start": 3044.78,
+        "end": 3046.78
+    },
+    {
+        "text": " entonces, este cambiás,",
+        "start": 3046.78,
+        "end": 3047.78
+    },
+    {
+        "text": " al otro le da lo mismo,",
+        "start": 3047.78,
+        "end": 3049.78
+    },
+    {
+        "text": " vos y el otro y veí,",
+        "start": 3049.78,
+        "end": 3051.78
+    },
+    {
+        "text": " como todos tenemos el mismo nivel,",
+        "start": 3051.78,
+        "end": 3053.78
+    },
+    {
+        "text": " empezamos a,",
+        "start": 3053.78,
+        "end": 3055.78
+    },
+    {
+        "text": " bueno, depende cómo hagas este,",
+        "start": 3055.78,
+        "end": 3058.78
+    },
+    {
+        "text": " cómo escribos el algoritmo,",
+        "start": 3059.78,
+        "end": 3061.78
+    },
+    {
+        "text": " o sea,",
+        "start": 3061.78,
+        "end": 3062.78
+    },
+    {
+        "text": " y que es,",
+        "start": 3065.78,
+        "end": 3066.78
+    },
+    {
+        "text": " para empezar tendrías que ver cómo formalizar matemáticamente eso, ¿no?",
+        "start": 3066.78,
+        "end": 3069.78
+    },
+    {
+        "text": " Para después recién poder pensar,",
+        "start": 3071.78,
+        "end": 3072.78
+    },
+    {
+        "text": " bueno, cómo escribimos el algoritmo para atacarlo.",
+        "start": 3072.78,
+        "end": 3074.78
+    },
+    {
+        "text": " ¿Qué quiere decir que haza empates?",
+        "start": 3074.78,
+        "end": 3076.78
+    },
+    {
+        "text": " Antes de más o menos,",
+        "start": 3076.78,
+        "end": 3077.78
+    },
+    {
+        "text": " no puedes tener una,",
+        "start": 3077.78,
+        "end": 3078.78
+    },
+    {
+        "text": " asociado a cada M,",
+        "start": 3078.78,
+        "end": 3080.78
+    },
+    {
+        "text": " una lista de voleves",
+        "start": 3080.78,
+        "end": 3082.78
+    },
+    {
+        "text": " y asociado a cada dueve,",
+        "start": 3082.78,
+        "end": 3083.78
+    },
+    {
+        "text": " una lista de,",
+        "start": 3083.78,
+        "end": 3084.78
+    },
+    {
+        "text": " una lista estordenada.",
+        "start": 3084.78,
+        "end": 3085.78
+    },
+    {
+        "text": " Pero, y no podrías como artificialmente,",
+        "start": 3089.78,
+        "end": 3092.78
+    },
+    {
+        "text": " no sé si hay un empate,",
+        "start": 3092.78,
+        "end": 3093.78
+    },
+    {
+        "text": " a razuno,",
+        "start": 3097.78,
+        "end": 3098.78
+    },
+    {
+        "text": " no sé, ponerle que estás empatado entre dos,",
+        "start": 3098.78,
+        "end": 3100.78
+    },
+    {
+        "text": " ¿no?",
+        "start": 3100.78,
+        "end": 3101.78
+    },
+    {
+        "text": " Entonces,",
+        "start": 3101.78,
+        "end": 3102.78
+    },
+    {
+        "text": " lo ponés uno primero antes que el otro,",
+        "start": 3102.78,
+        "end": 3105.78
+    },
+    {
+        "text": " ¿no?",
+        "start": 3105.78,
+        "end": 3106.78
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 3106.78,
+        "end": 3107.78
+    },
+    {
+        "text": " Y para el resultado,",
+        "start": 3107.78,
+        "end": 3109.78
+    },
+    {
+        "text": " o sea, y entonces el algoritmo trabajaría,",
+        "start": 3109.78,
+        "end": 3111.78
+    },
+    {
+        "text": " como que no hubiese empate.",
+        "start": 3111.78,
+        "end": 3114.78
+    },
+    {
+        "text": " Bueno, va, va, por eso.",
+        "start": 3115.78,
+        "end": 3116.78
+    },
+    {
+        "text": " A lo que iba, incluso creo que hay un ejercicio sobre este tema,",
+        "start": 3117.78,
+        "end": 3122.78
+    },
+    {
+        "text": " porque,",
+        "start": 3123.78,
+        "end": 3125.78
+    },
+    {
+        "text": " tiene que decir,",
+        "start": 3125.78,
+        "end": 3126.78
+    },
+    {
+        "text": " ¿cómo lo formalizas?",
+        "start": 3126.78,
+        "end": 3128.78
+    },
+    {
+        "text": " Incluso cómo, ¿qué quiere decir que haza una inistabilidad en ese caso?",
+        "start": 3128.78,
+        "end": 3131.78
+    },
+    {
+        "text": " Bueno, una vez que todo se ha aclarado,",
+        "start": 3131.78,
+        "end": 3133.78
+    },
+    {
+        "text": " una forma,",
+        "start": 3133.78,
+        "end": 3134.78
+    },
+    {
+        "text": " sencilla que creo que lo que estaba diciendo a vos,",
+        "start": 3135.78,
+        "end": 3138.78
+    },
+    {
+        "text": " bueno,",
+        "start": 3138.78,
+        "end": 3139.78
+    },
+    {
+        "text": " si hay empates,",
+        "start": 3139.78,
+        "end": 3140.78
+    },
+    {
+        "text": " bueno, solo sordeno,",
+        "start": 3140.78,
+        "end": 3142.78
+    },
+    {
+        "text": " de formas arbitrares.",
+        "start": 3142.78,
+        "end": 3143.78
+    },
+    {
+        "text": " Si hay un empate de la posición,",
+        "start": 3144.78,
+        "end": 3146.78
+    },
+    {
+        "text": " este 4 y la 5,",
+        "start": 3146.78,
+        "end": 3147.78
+    },
+    {
+        "text": " bueno, puedo poner la 4 y después la 5,",
+        "start": 3147.78,
+        "end": 3150.78
+    },
+    {
+        "text": " la 5 y después la 4,",
+        "start": 3150.78,
+        "end": 3151.78
+    },
+    {
+        "text": " y cualquiera de esos,",
+        "start": 3151.78,
+        "end": 3153.78
+    },
+    {
+        "text": " este funciona.",
+        "start": 3153.78,
+        "end": 3154.78
+    },
+    {
+        "text": " Tanto se resuelvo",
+        "start": 3154.78,
+        "end": 3156.78
+    },
+    {
+        "text": " para cada individuo,",
+        "start": 3156.78,
+        "end": 3158.78
+    },
+    {
+        "text": " digamos,",
+        "start": 3158.78,
+        "end": 3159.78
+    },
+    {
+        "text": " define un orden de preferencia estricto,",
+        "start": 3159.78,
+        "end": 3162.78
+    },
+    {
+        "text": " que,",
+        "start": 3165.78,
+        "end": 3166.78
+    },
+    {
+        "text": " que sea compatible con su orden,",
+        "start": 3167.78,
+        "end": 3170.78
+    },
+    {
+        "text": " laxo,",
+        "start": 3170.78,
+        "end": 3171.78
+    },
+    {
+        "text": " en este sentido,",
+        "start": 3172.78,
+        "end": 3173.78
+    },
+    {
+        "text": " dentro de los empates,",
+        "start": 3173.78,
+        "end": 3175.78
+    },
+    {
+        "text": " los resuelvo ordenando de forma irritable,",
+        "start": 3175.78,
+        "end": 3177.78
+    },
+    {
+        "text": " y una vez que hice eso,",
+        "start": 3177.78,
+        "end": 3179.78
+    },
+    {
+        "text": " corre este algoritmo,",
+        "start": 3179.78,
+        "end": 3180.78
+    },
+    {
+        "text": " y está de todo va a funcionar.",
+        "start": 3180.78,
+        "end": 3182.78
+    },
+    {
+        "text": " Pero, por ejemplo,",
+        "start": 3184.78,
+        "end": 3185.78
+    },
+    {
+        "text": " ¿qué es iniclo?",
+        "start": 3185.78,
+        "end": 3187.78
+    },
+    {
+        "text": " ¿Cómo se formaliza la inistabilidad de por ejemplo?",
+        "start": 3187.78,
+        "end": 3192.78
+    },
+    {
+        "text": " Voy a buscar el poder,",
+        "start": 3192.78,
+        "end": 3194.78
+    },
+    {
+        "text": " no me acuerdo bien,",
+        "start": 3194.78,
+        "end": 3195.78
+    },
+    {
+        "text": " como me voy a ver una noción de inistabilidad escrita,",
+        "start": 3195.78,
+        "end": 3198.78
+    },
+    {
+        "text": " o sea,",
+        "start": 3198.78,
+        "end": 3199.78
+    },
+    {
+        "text": " la formalización del problema cambia.",
+        "start": 3199.78,
+        "end": 3202.78
+    },
+    {
+        "text": " Ok, gracias.",
+        "start": 3204.78,
+        "end": 3205.78
+    },
+    {
+        "text": " Bueno.",
+        "start": 3210.78,
+        "end": 3211.78
+    },
+    {
+        "text": " Una pregunta más.",
+        "start": 3217.78,
+        "end": 3219.78
+    },
+    {
+        "text": " Para mí me llega entonces a que,",
+        "start": 3220.78,
+        "end": 3222.78
+    },
+    {
+        "text": " esto, en principio,",
+        "start": 3223.78,
+        "end": 3225.78
+    },
+    {
+        "text": " distintas ejecución,",
+        "start": 3226.78,
+        "end": 3227.78
+    },
+    {
+        "text": " con la misma instancia del problema,",
+        "start": 3227.78,
+        "end": 3229.78
+    },
+    {
+        "text": " es decir, la misma,",
+        "start": 3229.78,
+        "end": 3230.78
+    },
+    {
+        "text": " los mismos conjuntos M,",
+        "start": 3230.78,
+        "end": 3232.78
+    },
+    {
+        "text": " lo leve con las mismas listas de preferencias,",
+        "start": 3232.78,
+        "end": 3235.78
+    },
+    {
+        "text": " en definitivamente,",
+        "start": 3235.78,
+        "end": 3236.78
+    },
+    {
+        "text": " eso puedo determinar lo mismo de más de una forma distinta.",
+        "start": 3236.78,
+        "end": 3239.78
+    },
+    {
+        "text": " Pero, sea, como sea,",
+        "start": 3242.78,
+        "end": 3243.78
+    },
+    {
+        "text": " lo mismo va a terminar,",
+        "start": 3243.78,
+        "end": 3244.78
+    },
+    {
+        "text": " y va a terminar con un conjunto S,",
+        "start": 3244.78,
+        "end": 3246.78
+    },
+    {
+        "text": " que es un emparejamiento estable.",
+        "start": 3246.78,
+        "end": 3248.78
+    },
+    {
+        "text": " En principio,",
+        "start": 3248.78,
+        "end": 3249.78
+    },
+    {
+        "text": " diferentes ejecuciones pudiendo el lugar",
+        "start": 3249.78,
+        "end": 3251.78
+    },
+    {
+        "text": " a diferentes emparejamientos.",
+        "start": 3251.78,
+        "end": 3254.78
+    },
+    {
+        "text": " Ahora, vamos a ver que,",
+        "start": 3254.78,
+        "end": 3255.78
+    },
+    {
+        "text": " en realidad eso no, no, no funciona.",
+        "start": 3255.78,
+        "end": 3257.78
+    },
+    {
+        "text": " No, digo, no, no, no es lo que ocurre.",
+        "start": 3257.78,
+        "end": 3259.78
+    },
+    {
+        "text": " Y esto es un punto que está bien,",
+        "start": 3261.78,
+        "end": 3263.78
+    },
+    {
+        "text": " bueno,",
+        "start": 3263.78,
+        "end": 3265.78
+    },
+    {
+        "text": " reparar, y por eso,",
+        "start": 3265.78,
+        "end": 3266.78
+    },
+    {
+        "text": " vuelvo esto de que el,",
+        "start": 3266.78,
+        "end": 3268.78
+    },
+    {
+        "text": " el problema está de emparejamiento estable.",
+        "start": 3268.78,
+        "end": 3269.78
+    },
+    {
+        "text": " Es un problema muy rico desde el punto de vista del análisis,",
+        "start": 3269.78,
+        "end": 3272.78
+    },
+    {
+        "text": " y por eso, si viene del barrimon,",
+        "start": 3272.78,
+        "end": 3273.78
+    },
+    {
+        "text": " no es el todo sencillo,",
+        "start": 3273.78,
+        "end": 3274.78
+    },
+    {
+        "text": " es un excelente motivador del tipo de cosas",
+        "start": 3274.78,
+        "end": 3277.78
+    },
+    {
+        "text": " que podemos querer hacer en este curso,",
+        "start": 3277.78,
+        "end": 3279.78
+    },
+    {
+        "text": " y en el análisis del barrimon,",
+        "start": 3279.78,
+        "end": 3281.78
+    },
+    {
+        "text": " en general.",
+        "start": 3281.78,
+        "end": 3282.78
+    },
+    {
+        "text": " Entonces, vamos a analizar,",
+        "start": 3282.78,
+        "end": 3284.78
+    },
+    {
+        "text": " no solo el hecho de que el gobierno es correcto,",
+        "start": 3284.78,
+        "end": 3287.78
+    },
+    {
+        "text": " que salo, nos mostramos,",
+        "start": 3287.78,
+        "end": 3289.78
+    },
+    {
+        "text": " sino además, vamos a analizar,",
+        "start": 3289.78,
+        "end": 3290.78
+    },
+    {
+        "text": " ¿qué tipo de soluciones son las?",
+        "start": 3290.78,
+        "end": 3292.78
+    },
+    {
+        "text": " ¿Con definitiva?",
+        "start": 3292.78,
+        "end": 3293.78
+    },
+    {
+        "text": " Como vimos con algún ejemplo,",
+        "start": 3293.78,
+        "end": 3294.78
+    },
+    {
+        "text": " hay más de un emparejamiento posible,",
+        "start": 3294.78,
+        "end": 3296.78
+    },
+    {
+        "text": " en algunas instantes, y esto,",
+        "start": 3296.78,
+        "end": 3298.78
+    },
+    {
+        "text": " ¿qué es lo que me da?",
+        "start": 3298.78,
+        "end": 3300.78
+    },
+    {
+        "text": " Alguien recién hablaba de plantear el problema,",
+        "start": 3300.78,
+        "end": 3303.78
+    },
+    {
+        "text": " un problema de optimización.",
+        "start": 3303.78,
+        "end": 3305.78
+    },
+    {
+        "text": " Bueno, a veces,",
+        "start": 3305.78,
+        "end": 3306.78
+    },
+    {
+        "text": " un planteo de ese tipo podría",
+        "start": 3306.78,
+        "end": 3309.78
+    },
+    {
+        "text": " sebarme a integrarme por una solución en particular,",
+        "start": 3310.78,
+        "end": 3314.78
+    },
+    {
+        "text": " en una optimización esté haciendo,",
+        "start": 3314.78,
+        "end": 3316.78
+    },
+    {
+        "text": " es de otra,",
+        "start": 3316.78,
+        "end": 3317.78
+    },
+    {
+        "text": " y como yo se le decía también,",
+        "start": 3317.78,
+        "end": 3319.78
+    },
+    {
+        "text": " bueno, pero ojo,",
+        "start": 3319.78,
+        "end": 3320.78
+    },
+    {
+        "text": " porque no todos tienen las preferencias de todos,",
+        "start": 3320.78,
+        "end": 3323.78
+    },
+    {
+        "text": " no necesariamente tienen poques al compatible,",
+        "start": 3323.78,
+        "end": 3325.78
+    },
+    {
+        "text": " si con alguna solución",
+        "start": 3325.78,
+        "end": 3327.78
+    },
+    {
+        "text": " no vas a estar beneficiando a uno,",
+        "start": 3327.78,
+        "end": 3329.78
+    },
+    {
+        "text": " si con otras vas a estar medicando a uno.",
+        "start": 3329.78,
+        "end": 3331.78
+    },
+    {
+        "text": " Entonces,",
+        "start": 3332.78,
+        "end": 3333.78
+    },
+    {
+        "text": " vamos a ver que de hecho,",
+        "start": 3333.78,
+        "end": 3335.78
+    },
+    {
+        "text": " este lo veimos, él hija como él hija los m,",
+        "start": 3335.78,
+        "end": 3338.78
+    },
+    {
+        "text": " libres, siempre terminan dando lo mismo,",
+        "start": 3338.78,
+        "end": 3341.78
+    },
+    {
+        "text": " y la forma de hacer eso va a ser",
+        "start": 3341.78,
+        "end": 3345.78
+    },
+    {
+        "text": " caracterizar cuál es el conjunto s,",
+        "start": 3345.78,
+        "end": 3349.78
+    },
+    {
+        "text": " que genera el algorithm.",
+        "start": 3349.78,
+        "end": 3351.78
+    },
+    {
+        "text": " Es decir,",
+        "start": 3351.78,
+        "end": 3353.78
+    },
+    {
+        "text": " una forma de",
+        "start": 3353.78,
+        "end": 3356.78
+    },
+    {
+        "text": " una forma de mostrar que es única la solución que genera,",
+        "start": 3357.78,
+        "end": 3360.78
+    },
+    {
+        "text": " es decir, quien es esa solución,",
+        "start": 3360.78,
+        "end": 3362.78
+    },
+    {
+        "text": " y mostrar que es siempre ese genera esa.",
+        "start": 3362.78,
+        "end": 3364.78
+    },
+    {
+        "text": " Eso es lo que vamos a hacer.",
+        "start": 3364.78,
+        "end": 3366.78
+    },
+    {
+        "text": " Lo que vamos a ver es que el algoritmo,",
+        "start": 3366.78,
+        "end": 3369.78
+    },
+    {
+        "text": " esto más que cada vez,",
+        "start": 3369.78,
+        "end": 3371.78
+    },
+    {
+        "text": " tiene esa toda ejecución del algoritmo,",
+        "start": 3371.78,
+        "end": 3374.78
+    },
+    {
+        "text": " que el sable",
+        "start": 3374.78,
+        "end": 3377.78
+    },
+    {
+        "text": " da como resultado el mismo conjunto",
+        "start": 3377.78,
+        "end": 3381.78
+    },
+    {
+        "text": " y que lo que pasa es que la solución",
+        "start": 3381.78,
+        "end": 3384.78
+    },
+    {
+        "text": " es que como resultado,",
+        "start": 3384.78,
+        "end": 3386.78
+    },
+    {
+        "text": " el mismo conjunto s,",
+        "start": 3386.78,
+        "end": 3388.78
+    },
+    {
+        "text": " acerisco y ese conjunto s,",
+        "start": 3388.78,
+        "end": 3390.78
+    },
+    {
+        "text": " acerisco, esto definido acá,",
+        "start": 3390.78,
+        "end": 3392.78
+    },
+    {
+        "text": " es el conjunto de pares,",
+        "start": 3392.78,
+        "end": 3394.78
+    },
+    {
+        "text": " m,",
+        "start": 3394.78,
+        "end": 3395.78
+    },
+    {
+        "text": " como mejor de m.",
+        "start": 3395.78,
+        "end": 3397.78
+    },
+    {
+        "text": " Es decir, que a cada m,",
+        "start": 3397.78,
+        "end": 3399.78
+    },
+    {
+        "text": " donde m,",
+        "start": 3399.78,
+        "end": 3401.78
+    },
+    {
+        "text": " está con el rol proponente,",
+        "start": 3401.78,
+        "end": 3403.78
+    },
+    {
+        "text": " a cada m se le asina",
+        "start": 3403.78,
+        "end": 3406.78
+    },
+    {
+        "text": " su mejor pareja,",
+        "start": 3406.78,
+        "end": 3409.78
+    },
+    {
+        "text": " valea.",
+        "start": 3409.78,
+        "end": 3411.78
+    },
+    {
+        "text": " A cada mera silla de",
+        "start": 3412.78,
+        "end": 3415.78
+    },
+    {
+        "text": " este pronóstolo, esto es de encerro en parejamiento.",
+        "start": 3415.78,
+        "end": 3419.78
+    },
+    {
+        "text": " En parejamiento, en parejamiento.",
+        "start": 3419.78,
+        "end": 3422.78
+    },
+    {
+        "text": " Está bien,",
+        "start": 3428.78,
+        "end": 3429.78
+    },
+    {
+        "text": " detallecito de traducción.",
+        "start": 3429.78,
+        "end": 3431.78
+    },
+    {
+        "text": " Pero quién es este mejor de m?",
+        "start": 3431.78,
+        "end": 3434.78
+    },
+    {
+        "text": " Este mejor de m es",
+        "start": 3434.78,
+        "end": 3436.78
+    },
+    {
+        "text": " dentro de todos los posibles soluciones,",
+        "start": 3441.78,
+        "end": 3444.78
+    },
+    {
+        "text": " parecencia del programa,",
+        "start": 3444.78,
+        "end": 3446.78
+    },
+    {
+        "text": " si de todos los posibles",
+        "start": 3446.78,
+        "end": 3448.78
+    },
+    {
+        "text": " emparejamientos estables,",
+        "start": 3448.78,
+        "end": 3450.78
+    },
+    {
+        "text": " m,",
+        "start": 3450.78,
+        "end": 3451.78
+    },
+    {
+        "text": " m,",
+        "start": 3451.78,
+        "end": 3452.78
+    },
+    {
+        "text": " m,",
+        "start": 3452.78,
+        "end": 3453.78
+    },
+    {
+        "text": " m,",
+        "start": 3453.78,
+        "end": 3454.78
+    },
+    {
+        "text": " m,",
+        "start": 3454.78,
+        "end": 3455.78
+    },
+    {
+        "text": " m,",
+        "start": 3455.78,
+        "end": 3456.78
+    },
+    {
+        "text": " m,",
+        "start": 3456.78,
+        "end": 3457.78
+    },
+    {
+        "text": " m,",
+        "start": 3457.78,
+        "end": 3458.78
+    },
+    {
+        "text": " m,",
+        "start": 3458.78,
+        "end": 3459.78
+    },
+    {
+        "text": " m,",
+        "start": 3459.78,
+        "end": 3460.78
+    },
+    {
+        "text": " m,",
+        "start": 3460.78,
+        "end": 3461.78
+    },
+    {
+        "text": " m,",
+        "start": 3461.78,
+        "end": 3462.78
+    },
+    {
+        "text": " m,",
+        "start": 3462.78,
+        "end": 3463.78
+    },
+    {
+        "text": " m,",
+        "start": 3463.78,
+        "end": 3464.78
+    },
+    {
+        "text": " m,",
+        "start": 3464.78,
+        "end": 3465.78
+    },
+    {
+        "text": " m,",
+        "start": 3465.78,
+        "end": 3466.78
+    },
+    {
+        "text": " m,",
+        "start": 3466.78,
+        "end": 3467.78
+    },
+    {
+        "text": " m,",
+        "start": 3467.78,
+        "end": 3468.78
+    },
+    {
+        "text": " m,",
+        "start": 3468.78,
+        "end": 3469.78
+    },
+    {
+        "text": " m,",
+        "start": 3469.78,
+        "end": 3470.78
+    },
+    {
+        "text": " m,",
+        "start": 3470.78,
+        "end": 3477.78
+    },
+    {
+        "text": " m,",
+        "start": 3477.78,
+        "end": 3478.78
+    },
+    {
+        "text": " m,",
+        "start": 3478.78,
+        "end": 3481.78
+    },
+    {
+        "text": " sí que sided con quién,",
+        "start": 3481.78,
+        "end": 3482.78
+    },
+    {
+        "text": " la gente y pasta ver blessings motivateere,",
+        "start": 3482.78,
+        "end": 3484.78
+    },
+    {
+        "text": " la gente y elastic audience,",
+        "start": 3484.78,
+        "end": 3487.78
+    },
+    {
+        "text": " fuir todos los posibles psilnécos,",
+        "start": 3487.78,
+        "end": 3491.78
+    },
+    {
+        "text": " hypothesis de los impuestos que پes pipila.",
+        "start": 3491.78,
+        "end": 3493.78
+    },
+    {
+        "text": " Y,",
+        "start": 3493.78,
+        "end": 3494.78
+    },
+    {
+        "text": " hecho esto sino que no barking44 para 25 días.",
+        "start": 3494.78,
+        "end": 3496.78
+    },
+    {
+        "text": " Y también sin okren $500 UL De Brexit tiene nada PIOS",
+        "start": 3496.78,
+        "end": 3499.78
+    },
+    {
+        "text": " Emparejamientos",
+        "start": 3499.78,
+        "end": 3503.78
+    },
+    {
+        "text": " Estables posibles",
+        "start": 3503.78,
+        "end": 3507.78
+    },
+    {
+        "text": " Yo que si se me molé",
+        "start": 3507.78,
+        "end": 3511.78
+    },
+    {
+        "text": " Escoeber un S1, S2, S3",
+        "start": 3511.78,
+        "end": 3521.78
+    },
+    {
+        "text": " S4, etcévares",
+        "start": 3521.78,
+        "end": 3525.78
+    },
+    {
+        "text": " En un ejemplo que estaba por el libro",
+        "start": 3525.78,
+        "end": 3529.78
+    },
+    {
+        "text": " Por ejemplo había dos emparejamientos posibles",
+        "start": 3529.78,
+        "end": 3531.78
+    },
+    {
+        "text": " Estaba en instancia más grande para ver un montón de emparejamientos estables",
+        "start": 3531.78,
+        "end": 3535.78
+    },
+    {
+        "text": " Pósiles, algunos de ellos",
+        "start": 3535.78,
+        "end": 3539.78
+    },
+    {
+        "text": " Pueden ser posibles salidas del último de Google S3 y otros capas que no",
+        "start": 3539.78,
+        "end": 3545.78
+    },
+    {
+        "text": " Por eso la vez pasada les hacía en fase sin creación",
+        "start": 3545.78,
+        "end": 3547.78
+    },
+    {
+        "text": " Quiere probar algo con respecto a",
+        "start": 3547.78,
+        "end": 3551.78
+    },
+    {
+        "text": " Los emparejamientos estables como entidad matemática",
+        "start": 3551.78,
+        "end": 3555.78
+    },
+    {
+        "text": " No puede recurrir a lo que hace el grupo de Gelshapri",
+        "start": 3555.78,
+        "end": 3559.78
+    },
+    {
+        "text": " Para encontrar algo, el SAPri en definitiva termina encontrando alguno",
+        "start": 3559.78,
+        "end": 3563.78
+    },
+    {
+        "text": " Y las cosas que sólo lograron hacer con respecto a S",
+        "start": 3563.78,
+        "end": 3567.78
+    },
+    {
+        "text": " Pero hay potencialmente muchos otros",
+        "start": 3567.78,
+        "end": 3569.78
+    },
+    {
+        "text": " Tenemos que son S1, S2, S2",
+        "start": 3569.78,
+        "end": 3571.78
+    },
+    {
+        "text": " En cada uno de estos",
+        "start": 3571.78,
+        "end": 3573.78
+    },
+    {
+        "text": " Se arman emparejamientos, se arman paredas diferentes",
+        "start": 3573.78,
+        "end": 3579.78
+    },
+    {
+        "text": " Por ejemplo, un M en particular",
+        "start": 3579.78,
+        "end": 3583.78
+    },
+    {
+        "text": " S1, podría formar una pared con un W5",
+        "start": 3583.78,
+        "end": 3591.78
+    },
+    {
+        "text": " Y vamos a ver",
+        "start": 3591.78,
+        "end": 3595.78
+    },
+    {
+        "text": " Voy a matar por acá las preferencias",
+        "start": 3595.78,
+        "end": 3599.78
+    },
+    {
+        "text": " Dm digamos que están en ordens, así que los W1",
+        "start": 3599.78,
+        "end": 3603.78
+    },
+    {
+        "text": " Los W2 hasta los WN",
+        "start": 3603.78,
+        "end": 3607.78
+    },
+    {
+        "text": " Entonces digamos que en el emparejamiento estable",
+        "start": 3607.78,
+        "end": 3615.78
+    },
+    {
+        "text": " S1, M está emparejado con un W5",
+        "start": 3615.78,
+        "end": 3619.78
+    },
+    {
+        "text": " En el S2, M está emparejado también con W5",
+        "start": 3619.78,
+        "end": 3627.78
+    },
+    {
+        "text": " Capas que en el S3, M está emparejado con W2",
+        "start": 3627.78,
+        "end": 3633.78
+    },
+    {
+        "text": " Y en el S4, M está emparejado con W7",
+        "start": 3633.78,
+        "end": 3637.78
+    },
+    {
+        "text": " O sea, ¿no?",
+        "start": 3637.78,
+        "end": 3639.78
+    },
+    {
+        "text": " El mismo M en diferentes emparejamientos estable están paredas con diferentes W",
+        "start": 3639.78,
+        "end": 3647.78
+    },
+    {
+        "text": " Dm digamos que el mejor de todos",
+        "start": 3647.78,
+        "end": 3651.78
+    },
+    {
+        "text": " Es este, vamos a ver otros",
+        "start": 3653.78,
+        "end": 3657.78
+    },
+    {
+        "text": " Pero en ningún caso, para ninguno de los emparejamientos establez",
+        "start": 3657.78,
+        "end": 3661.78
+    },
+    {
+        "text": " M termina con W1",
+        "start": 3661.78,
+        "end": 3667.78
+    },
+    {
+        "text": " O sea, si bien, la que está primero en su listo W1",
+        "start": 3667.78,
+        "end": 3671.78
+    },
+    {
+        "text": " Ninguno en pared, que incluso que ponga M pared con W",
+        "start": 3671.78,
+        "end": 3677.78
+    },
+    {
+        "text": " Entonces W1, decimos que no es una pared jvalida para M",
+        "start": 3677.78,
+        "end": 3681.78
+    },
+    {
+        "text": " W2, sí, es una pared jvalida, W5",
+        "start": 3681.78,
+        "end": 3685.78
+    },
+    {
+        "text": " También es una pared jvalida, W7 también es una pared jvalida para M",
+        "start": 3685.78,
+        "end": 3689.78
+    },
+    {
+        "text": " Y de todas esas, la de mazón preferencia es W2",
+        "start": 3689.78,
+        "end": 3693.78
+    },
+    {
+        "text": " Entonces W2 es el mejor para M",
+        "start": 3693.78,
+        "end": 3699.78
+    },
+    {
+        "text": " No es el primero de su lista, es lo mejor lo que puedes aspirar",
+        "start": 3699.78,
+        "end": 3703.78
+    },
+    {
+        "text": " Si yo de todos los emparejamientos establez possiblees el hijo que más le favorece M",
+        "start": 3703.78,
+        "end": 3709.78
+    },
+    {
+        "text": " Termina con W2",
+        "start": 3709.78,
+        "end": 3711.78
+    },
+    {
+        "text": " ¿A por lo?",
+        "start": 3711.78,
+        "end": 3713.78
+    },
+    {
+        "text": " Ahí lo mismo pasa con otro M",
+        "start": 3713.78,
+        "end": 3719.78
+    },
+    {
+        "text": " Es un M prima",
+        "start": 3719.78,
+        "end": 3723.78
+    },
+    {
+        "text": " Que digamos que acá termina con W7",
+        "start": 3723.78,
+        "end": 3727.78
+    },
+    {
+        "text": " Díamos que las preferencias",
+        "start": 3727.78,
+        "end": 3731.78
+    },
+    {
+        "text": " M prima son W1 prima, W1 prima",
+        "start": 3731.78,
+        "end": 3737.78
+    },
+    {
+        "text": " Hasta WM prima",
+        "start": 3737.78,
+        "end": 3741.78
+    },
+    {
+        "text": " ¿A cuándo son?",
+        "start": 3741.78,
+        "end": 3743.78
+    },
+    {
+        "text": " Es otra permutación de los other",
+        "start": 3743.78,
+        "end": 3747.78
+    },
+    {
+        "text": " Y digamos que en E2",
+        "start": 3747.78,
+        "end": 3751.78
+    },
+    {
+        "text": " M prima termina",
+        "start": 3751.78,
+        "end": 3755.78
+    },
+    {
+        "text": " Cuando W1 prima",
+        "start": 3755.78,
+        "end": 3759.78
+    },
+    {
+        "text": " Y eso que se me acabe, M prima termina con W7 prima",
+        "start": 3759.78,
+        "end": 3765.78
+    },
+    {
+        "text": " Y adentro, si acá se acabe cuando W1 prima",
+        "start": 3765.78,
+        "end": 3769.78
+    },
+    {
+        "text": " Y esto es lo mejor a lo que puede aspirar",
+        "start": 3769.78,
+        "end": 3773.78
+    },
+    {
+        "text": " Entonces en este caso W1 prima es una pared jvalida para M",
+        "start": 3773.78,
+        "end": 3781.78
+    },
+    {
+        "text": " Y de hecho es la mejor pared jvalida para M",
+        "start": 3781.78,
+        "end": 3785.78
+    },
+    {
+        "text": " Ahí con cada uno de los M",
+        "start": 3785.78,
+        "end": 3787.78
+    },
+    {
+        "text": " Es cada uno tiene una mejor opción valida",
+        "start": 3787.78,
+        "end": 3791.78
+    },
+    {
+        "text": " Estamos de acuerdo, se entiende que el concepto la definición siró",
+        "start": 3791.78,
+        "end": 3795.78
+    },
+    {
+        "text": " Este me paro",
+        "start": 3795.78,
+        "end": 3797.78
+    },
+    {
+        "text": " Lo que vamos a ver y que es bastante sorprendente",
+        "start": 3797.78,
+        "end": 3803.78
+    },
+    {
+        "text": " Es que el algoritmo también construyendo un emparejamiento",
+        "start": 3803.78,
+        "end": 3809.78
+    },
+    {
+        "text": " Es el asterisco",
+        "start": 3809.78,
+        "end": 3813.78
+    },
+    {
+        "text": " Tal que M termina con W2",
+        "start": 3813.78,
+        "end": 3819.78
+    },
+    {
+        "text": " Es decir con la mejor opción valida",
+        "start": 3819.78,
+        "end": 3823.78
+    },
+    {
+        "text": " M prima termina con W1 prima",
+        "start": 3823.78,
+        "end": 3827.78
+    },
+    {
+        "text": " Es decir su mejor opción valida",
+        "start": 3827.78,
+        "end": 3831.78
+    },
+    {
+        "text": " Y etc. para todos los demás",
+        "start": 3831.78,
+        "end": 3835.78
+    },
+    {
+        "text": " Es decir existe un emparejamiento estable",
+        "start": 3835.78,
+        "end": 3841.78
+    },
+    {
+        "text": " Que deja simultáneamente a todos los M",
+        "start": 3841.78,
+        "end": 3845.78
+    },
+    {
+        "text": " Es decir, es una opción más favorable posible",
+        "start": 3845.78,
+        "end": 3849.78
+    },
+    {
+        "text": " Sinultáneamente para todos estos podrían no ser posible",
+        "start": 3849.78,
+        "end": 3853.78
+    },
+    {
+        "text": " Podría ser que estuviera obligado a elegir en S10",
+        "start": 3853.78,
+        "end": 3857.78
+    },
+    {
+        "text": " Que favorezco M",
+        "start": 3857.78,
+        "end": 3859.78
+    },
+    {
+        "text": " O en S2 que favorezco M prima pero en cada uno de los casos",
+        "start": 3859.78,
+        "end": 3863.78
+    },
+    {
+        "text": " Y lo que sale para M",
+        "start": 3863.78,
+        "end": 3865.78
+    },
+    {
+        "text": " Y en realidad no vamos a ver que es bastante sorprendente",
+        "start": 3865.78,
+        "end": 3869.78
+    },
+    {
+        "text": " Que se puede dejar a todo el mundo lo más contento posible",
+        "start": 3869.78,
+        "end": 3873.78
+    },
+    {
+        "text": " Sinultáneamente",
+        "start": 3873.78,
+        "end": 3875.78
+    },
+    {
+        "text": " Repito que lo más contento posible no quiere decir el primero de su lista",
+        "start": 3875.78,
+        "end": 3879.78
+    },
+    {
+        "text": " Es decir, el primero de su lista dentro de los que son valos",
+        "start": 3879.78,
+        "end": 3885.78
+    },
+    {
+        "text": " En otros los que podrían afirar",
+        "start": 3885.78,
+        "end": 3889.78
+    },
+    {
+        "text": " ¿Se entiende cuál es esta definición?",
+        "start": 3889.78,
+        "end": 3893.78
+    },
+    {
+        "text": " Disculpa, yo tengo una consulta",
+        "start": 3897.78,
+        "end": 3899.78
+    },
+    {
+        "text": " No podría pasar que el mejor WD de cierto M concuardo con el mejor WD de un M prima",
+        "start": 3899.78,
+        "end": 3907.78
+    },
+    {
+        "text": " No",
+        "start": 3907.78,
+        "end": 3909.78
+    },
+    {
+        "text": " Por esto que estamos viendo ahora",
+        "start": 3909.78,
+        "end": 3913.78
+    },
+    {
+        "text": " Porque si no, no sería cierto, este es este es este disco",
+        "start": 3913.78,
+        "end": 3917.78
+    },
+    {
+        "text": " No podría existir",
+        "start": 3917.78,
+        "end": 3919.78
+    },
+    {
+        "text": " No podría existir",
+        "start": 3919.78,
+        "end": 3921.78
+    },
+    {
+        "text": " Pero si es un presentante",
+        "start": 3927.78,
+        "end": 3929.78
+    },
+    {
+        "text": " Lo que puede pasar es que coincidan con quienes es el primero de su lista",
+        "start": 3929.78,
+        "end": 3939.78
+    },
+    {
+        "text": " Incluso pueden tener la misma lista de projerencias",
+        "start": 3939.78,
+        "end": 3941.78
+    },
+    {
+        "text": " Por lo que no puede pasar",
+        "start": 3941.78,
+        "end": 3943.78
+    },
+    {
+        "text": " Es que el mejor de uno coincide con el mejor del otro",
+        "start": 3943.78,
+        "end": 3947.78
+    },
+    {
+        "text": " Sin embargo, los imparejamientos que son valios",
+        "start": 3947.78,
+        "end": 3951.78
+    },
+    {
+        "text": " En definitiva, si hay dos que tienen la misma lista de preferencias",
+        "start": 3951.78,
+        "end": 3959.78
+    },
+    {
+        "text": " Son los WD, los que van a definiendo, cuáles vale y no",
+        "start": 3959.78,
+        "end": 3967.78
+    },
+    {
+        "text": " Claro, muchas gracias",
+        "start": 3967.78,
+        "end": 3975.78
+    },
+    {
+        "text": " Pero no es para nada obvio, para nada obvio",
+        "start": 3975.78,
+        "end": 3981.78
+    },
+    {
+        "text": " Es bastante sorprendente",
+        "start": 3981.78,
+        "end": 3985.78
+    },
+    {
+        "text": " Yo fíjense, si maldra la pena analizar",
+        "start": 3985.78,
+        "end": 3993.78
+    },
+    {
+        "text": " Lo ha resultado que genera un alborismo",
+        "start": 3993.78,
+        "end": 3997.78
+    },
+    {
+        "text": " Esta es la proposición del resultado que está mostrando esto",
+        "start": 3997.78,
+        "end": 4005.78
+    },
+    {
+        "text": " Es que toda la ejecución del V1G se da como resultado mismo con un S-Aterico",
+        "start": 4005.78,
+        "end": 4011.78
+    },
+    {
+        "text": " El hecho de que todos los mismos tienen su interés",
+        "start": 4011.78,
+        "end": 4015.78
+    },
+    {
+        "text": " El hecho de además, por decir cuáles es ese esterisco",
+        "start": 4015.78,
+        "end": 4019.78
+    },
+    {
+        "text": " Y estas características tan particulares que tienes, es aún mucho más interesante",
+        "start": 4019.78,
+        "end": 4025.78
+    },
+    {
+        "text": " Esto es la demostración",
+        "start": 4027.78,
+        "end": 4035.78
+    },
+    {
+        "text": " La demostración tiene algún punto clave",
+        "start": 4035.78,
+        "end": 4043.78
+    },
+    {
+        "text": " De vuelta, déjenme insistir con reparar en esto",
+        "start": 4043.78,
+        "end": 4047.78
+    },
+    {
+        "text": " Si es la forma que está explicado, la forma que está escrito",
+        "start": 4047.78,
+        "end": 4051.78
+    },
+    {
+        "text": " Va a ser una demostración por absurdo y se supongamos que en alguna ejecución E del alborismo",
+        "start": 4051.78,
+        "end": 4061.78
+    },
+    {
+        "text": " En principios, muchas ejecuciones posible para el mismo alborismo",
+        "start": 4061.78,
+        "end": 4067.78
+    },
+    {
+        "text": " Porque hay partes que esplicitamente están dejadas abiertas",
+        "start": 4067.78,
+        "end": 4071.78
+    },
+    {
+        "text": " Habemos que no influycen sobre el hecho de que va en cualquier caso el genónio parejamente estable",
+        "start": 4071.78,
+        "end": 4077.78
+    },
+    {
+        "text": " Hay muchas ejecuciones posibles y tenemos que analizar todas ellas",
+        "start": 4077.78,
+        "end": 4087.78
+    },
+    {
+        "text": " Y acá hay otro punto que resalté que me gustaría insistir como estrategia para que tengan en la manga para poder usar",
+        "start": 4087.78,
+        "end": 4095.78
+    },
+    {
+        "text": " Para poder reazonar rigurosamente",
+        "start": 4095.78,
+        "end": 4099.780000000001
+    },
+    {
+        "text": " Al decir que la tratada de reazonar por absurdo, vamos a decir con su omogé, hay alguna ejecución E del alborismo que resulta en un parejamiento E",
+        "start": 4099.78,
+        "end": 4111.78
+    },
+    {
+        "text": " Si que sabemos que tiene que ser un parejamiento estable",
+        "start": 4111.78,
+        "end": 4117.78
+    },
+    {
+        "text": " Pero que no es este esterisco, es decir que hay un M que termina con ahí que no es su mejor pareja o algo",
+        "start": 4117.78,
+        "end": 4127.78
+    },
+    {
+        "text": " Esta es la negación de la Tesis y aparte empezamos a ver todo",
+        "start": 4127.78,
+        "end": 4131.78
+    },
+    {
+        "text": " Pero lo asumimos con hipótesis y si buscamos una contradicción",
+        "start": 4131.78,
+        "end": 4135.78
+    },
+    {
+        "text": " Entonces, ¿qué que decir? Como lo sombre van proponiendo en orden de creciente de preferencia",
+        "start": 4141.78,
+        "end": 4149.78
+    },
+    {
+        "text": " Si hay algún M que no es termina con su mejor pareja valida, aquí decir que en algún momento fue rechazado",
+        "start": 4149.78,
+        "end": 4159.78
+    },
+    {
+        "text": " O al un aparejador de que era valida",
+        "start": 4159.78,
+        "end": 4163.78
+    },
+    {
+        "text": " Lo he quedado M termina con el último de lo que era rechazo",
+        "start": 4163.78,
+        "end": 4171.78
+    },
+    {
+        "text": " Si termina con alguien que no es la mejor valida, o al que decir que algún doble de valido, lo rechazo",
+        "start": 4171.78,
+        "end": 4181.78
+    },
+    {
+        "text": " Si algo ocurre en determinado momento en la ejecución de un alborismo, entonces tiene que haber una primera vez en que eso ocurre",
+        "start": 4181.78,
+        "end": 4195.78
+    },
+    {
+        "text": " Yo creo asumiendo con hipótesis que algo ocurrió, es decir que hay un M que fue rechazado por su pareja valida",
+        "start": 4195.78,
+        "end": 4205.78
+    },
+    {
+        "text": " Podemos ser y a buscar una contradicción directamente a partir de allí",
+        "start": 4205.78,
+        "end": 4213.78
+    },
+    {
+        "text": " Lo que estamos haciendo acá, es decir, es consideramos el primer momento en que eso ocurre es darnos a nosotros mismos un pótesis un poco más fuerte",
+        "start": 4213.78,
+        "end": 4225.78
+    },
+    {
+        "text": " Y nos van a dar un poco más de estructura donde escarabar para poder llegar una contradicción",
+        "start": 4225.78,
+        "end": 4231.78
+    },
+    {
+        "text": " Vienen a lo que me refiero, en principio al negar la tesis yo simplemente sé la conclusión de que, bueno, en algún momento hay algún M que fue rechazado por un doble de val",
+        "start": 4231.78,
+        "end": 4243.78
+    },
+    {
+        "text": " Una vez que yo asumo eso con hipótesis y mi tarea ahora está para encontrar una contradicción, yo puedo tratar de ayudarme a mí mismo con más hipótesis que no, que no más hipótesis y trabajo",
+        "start": 4243.78,
+        "end": 4263.78
+    },
+    {
+        "text": " Que no pierde generalidad para nada, es decir, porque si en algún momento un M fue rechazado por un doble de valido, bueno hay una primera vez en que eso ocurre",
+        "start": 4263.78,
+        "end": 4274.78
+    },
+    {
+        "text": " No te sigamos miros esa, y a la garada es en particular, bueno, tengo un poco más de estructura donde agarrarme para tratar de encontrar una contradicción",
+        "start": 4274.78,
+        "end": 4283.78
+    },
+    {
+        "text": " Dependiendo de caso no podría agarrar la última, o sea, si son números el mayor o el menor o lo que fuera",
+        "start": 4283.78,
+        "end": 4290.78
+    },
+    {
+        "text": " Pero bueno, esta es una forma de razonar, que quiero enfatizar ahora para tratar de resaltar técnica para razonar sobre los algoritmos que les pueden venir bien más adelante",
+        "start": 4290.78,
+        "end": 4309.78
+    },
+    {
+        "text": " Bueno, entonces eso nos paramos en la primera vez en que algún M es rechazado por un doble de valido y sin embargo los carchazo",
+        "start": 4309.78,
+        "end": 4322.78
+    },
+    {
+        "text": " Y que sea más de este rechazo, como bien dice acá, puede haber ocurrido en el mismo momento en que M hace una proposición",
+        "start": 4322.78,
+        "end": 4334.78
+    },
+    {
+        "text": " Y lo le ve, capaz que ya estaba en pareja con alguien y lo rechaza, o lo que fue al pasar que lo le ve, en algún momento estuvo en pareja con M, pero lo reemplazó por alguien aquí en preferida",
+        "start": 4334.78,
+        "end": 4350.78
+    },
+    {
+        "text": " En cualquier caso lo le ve forma y por lo que vimos mantiene pues un compromiso con alguien, un M prima, aquí en preferentes que",
+        "start": 4351.78,
+        "end": 4369.78
+    },
+    {
+        "text": " Y ahí vamos a salir a buscar una contradicción, esto dejenme mostrarles un poco de tasas de traducción, este es acá lo que ve forma, continuación un compromiso con un hombre M prima, aquí en preferentes que M, deberiden ser acá",
+        "start": 4369.78,
+        "end": 4384.78
+    },
+    {
+        "text": " Ah, y acá hay unos, o en estos más que en realidad se vean rechazado y este de este es Magan un como, y esta última frase de acá, este nueva",
+        "start": 4385.78,
+        "end": 4396.78
+    },
+    {
+        "text": " Pero déjeme la explicación de esto, creo que va a ser más claro de forma gráfica, después igual el texto lo tienen para leerlo, pero no parece que subo más si os explico por algún dibujo",
+        "start": 4397.78,
+        "end": 4413.78
+    },
+    {
+        "text": " Pero fue una consulta, para la próxima su oportunidad es cuando vaya a leer el texto se anima a cambiar de cursor por uno más grande o sin hoy tipo ir subrallando lo que va leyendo",
+        "start": 4415.78,
+        "end": 4432.78
+    },
+    {
+        "text": " Bien, bueno, ser acción, perdón, si, por favor, la comentario es ese tipo que ayudan a la comunicación, haganme lojo que ganamos todos",
+        "start": 4433.78,
+        "end": 4444.78
+    },
+    {
+        "text": " Bueno, bueno, esta vez buscar así, capaz que, si yo así acá, no sigue siendo malta, para la próxima le busco la vuelta y si no voy pintando como me decías, bueno, discute por eso",
+        "start": 4444.78,
+        "end": 4460.78
+    },
+    {
+        "text": " Bueno, le decía, tratar de ilustrar esto, pero afiramente",
+        "start": 4463.78,
+        "end": 4468.78
+    },
+    {
+        "text": " Bueno, ¿tos si cual es la situación que esto?",
+        "start": 4487.78,
+        "end": 4491.78
+    },
+    {
+        "text": " Todo esto está cambiando",
+        "start": 4492.78,
+        "end": 4494.78
+    },
+    {
+        "text": " Y ahora, si me dejó de refrescar la pantalla de la tableta donde escribo, un doctor de arreglarlo",
+        "start": 4522.78,
+        "end": 4540.78
+    },
+    {
+        "text": " Si",
+        "start": 4553.78,
+        "end": 4554.78
+    },
+    {
+        "text": " Si",
+        "start": 4555.78,
+        "end": 4556.78
+    },
+    {
+        "text": " Si",
+        "start": 4556.78,
+        "end": 4558.78
+    },
+    {
+        "text": " Si",
+        "start": 4559.78,
+        "end": 4560.78
+    },
+    {
+        "text": " Capado, pero yo pasé un comentario capaz que alguno le sirve que otra medida de progreso que yo había pensado para demostrar que la gorimo termina",
+        "start": 4576.78,
+        "end": 4585.78
+    },
+    {
+        "text": " Yo agarro en un momento de la ejecución, todas las posiciones de los emparejamientos que llegan hechos y los sumo todos",
+        "start": 4586.78,
+        "end": 4595.78
+    },
+    {
+        "text": " Y yo puedo ver que en cada iteración es el número baja y edad, efectivamente, tiene un mínimo, tiene una cota",
+        "start": 4595.78,
+        "end": 4605.78
+    },
+    {
+        "text": " Entonces, ¿ca pasé alguno de eso?",
+        "start": 4605.78,
+        "end": 4607.78
+    },
+    {
+        "text": " Provechoso, por ejemplo",
+        "start": 4607.78,
+        "end": 4609.78
+    },
+    {
+        "text": " Si, los puchemes de costado, porque estaba tratando de solucionar esto, pero creo que me parece que puede funcionar eso",
+        "start": 4616.78,
+        "end": 4623.78
+    },
+    {
+        "text": " Y ahora, ¿qué pasa?",
+        "start": 4635.78,
+        "end": 4637.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4637.78,
+        "end": 4639.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4639.78,
+        "end": 4641.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4641.78,
+        "end": 4643.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4643.78,
+        "end": 4645.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4645.78,
+        "end": 4647.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4647.78,
+        "end": 4649.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4649.78,
+        "end": 4651.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4651.78,
+        "end": 4653.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4653.78,
+        "end": 4655.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4655.78,
+        "end": 4657.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4657.78,
+        "end": 4659.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4659.78,
+        "end": 4661.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4661.78,
+        "end": 4663.78
+    },
+    {
+        "text": " Si, ¿qué pasa?",
+        "start": 4663.78,
+        "end": 4664.78
+    },
+    {
+        "text": " Bueno, hay que revesar el gló, ¿no? Ve la pizarra negra",
+        "start": 4664.78,
+        "end": 4668.78
+    },
+    {
+        "text": " Bueno, entonces retomando esto",
+        "start": 4674.78,
+        "end": 4678.78
+    },
+    {
+        "text": " Tenemos un cierto",
+        "start": 4684.78,
+        "end": 4686.78
+    },
+    {
+        "text": " Emparejamiento",
+        "start": 4688.78,
+        "end": 4690.78
+    },
+    {
+        "text": " Estamos en ese hastedisco",
+        "start": 4690.78,
+        "end": 4694.78
+    },
+    {
+        "text": " Que genera el algoritmo del gale sable, ¿no?",
+        "start": 4698.78,
+        "end": 4700.78
+    },
+    {
+        "text": " Y mi trasté y jugando el algoritmo, entonces lo que dijimos es, bueno, suponamos por absurdo que lo que genera",
+        "start": 4700.78,
+        "end": 4706.78
+    },
+    {
+        "text": " No es si le sea hastedisco",
+        "start": 4706.78,
+        "end": 4710.78
+    },
+    {
+        "text": " Claro, así que mejor voy a borrar el esheterisco de tantas veces todavía no sé",
+        "start": 4710.78,
+        "end": 4714.78
+    },
+    {
+        "text": " Bueno, digamos que suponamos por absurdo que no genera el emparejamiento de ese hastedisco",
+        "start": 4714.78,
+        "end": 4726.78
+    },
+    {
+        "text": " Es que hay algún m que en algún momento es rechazado por un cierto W que es una pareja valida",
+        "start": 4726.78,
+        "end": 4740.78
+    },
+    {
+        "text": " O sea, W es una pareja valida para M y en algún momento de ejecución de lo vermos los rechaz",
+        "start": 4740.78,
+        "end": 4748.78
+    },
+    {
+        "text": " O sea, sé que le hace una propuesta y lo rechaz inedidamente o que, momentanemente lo acepta pero en un momento, lo reemplaza por otro",
+        "start": 4748.78,
+        "end": 4756.78
+    },
+    {
+        "text": " Lo reemplaza por otro",
+        "start": 4756.78,
+        "end": 4760.78
+    },
+    {
+        "text": " M prima, aquí en W prefiere",
+        "start": 4760.78,
+        "end": 4770.78
+    },
+    {
+        "text": " ¿la acuerdo? Porque siempre que rechazora en plazas es por alguien, aquí en prefiere",
+        "start": 4770.78,
+        "end": 4776.78
+    },
+    {
+        "text": " Está y esto, como dijimos, es la primera vez que ocupa",
+        "start": 4776.78,
+        "end": 4784.78
+    },
+    {
+        "text": " Hasta este momento en la ejecución del horismo que estamos considerando, nunca antes había pasado que un M se ha rechazado por un W que es valida",
+        "start": 4784.78,
+        "end": 4800.78
+    },
+    {
+        "text": " Vamos a tratar de buscar un absurdo, donde buscaría una absurda, ¿qué tipo de absurdo? Bueno, buscaría",
+        "start": 4800.78,
+        "end": 4812.78
+    },
+    {
+        "text": " Por ejemplo, una inestabilidad en algún emparejamiento que supuestamente tendría que ser estable",
+        "start": 4812.78,
+        "end": 4820.78
+    },
+    {
+        "text": " Y donde vamos a buscar? Bueno, en este mismo el que producen el horismo, que no también no es la ejecución que estamos mirando",
+        "start": 4820.78,
+        "end": 4830.78
+    },
+    {
+        "text": " No, pero si lo podemos buscar en algún otro, en un ser como otro color",
+        "start": 4830.78,
+        "end": 4840.78
+    },
+    {
+        "text": " En un emparejamiento es prima, en el cual M y W sí están emparejas",
+        "start": 4841.78,
+        "end": 4858.78
+    },
+    {
+        "text": " Ahora ese es prima, existe, porque tengo derecho, yo decía bueno, hagaremos un emparejamiento estable, es prima",
+        "start": 4858.78,
+        "end": 4868.78
+    },
+    {
+        "text": " En el cual M está emparejado en un W, porque sé que tengo derecho a decir eso",
+        "start": 4869.78,
+        "end": 4875.78
+    },
+    {
+        "text": " ¿Por qué todos los emparejamientos generados por el horismo son estable?",
+        "start": 4878.78,
+        "end": 4882.78
+    },
+    {
+        "text": " Bueno, pero el horismo está generando la corpidoria de Válvila",
+        "start": 4884.78,
+        "end": 4890.78
+    },
+    {
+        "text": " El emparejamiento que está generando el horismo es el que está aligiero en blanco",
+        "start": 4891.78,
+        "end": 4895.78
+    },
+    {
+        "text": " Y allí M está ocurriendo que no va a terminar con Doble V",
+        "start": 4896.78,
+        "end": 4902.78
+    },
+    {
+        "text": " Yo creo que digo, existe otro emparejamiento, entonces estable, ya no me le desestrima, en el cual M sí termine empareja cuando le ves",
+        "start": 4902.78,
+        "end": 4910.78
+    },
+    {
+        "text": " Y eso porque como le decían recién, son por hipótesis o sumí que Doble V era una pareja válida",
+        "start": 4911.78,
+        "end": 4916.78
+    },
+    {
+        "text": " Bueno, nuestra definición de pareja válida se acuerdan de ser con mis símbolos",
+        "start": 4916.78,
+        "end": 4919.78
+    },
+    {
+        "text": " Si hubo, necesión de ser loces, etcétera, nuestra definición de pareja válida es que hay algún emparejamiento estable",
+        "start": 4919.78,
+        "end": 4925.78
+    },
+    {
+        "text": " Si hubo, necesión de ser tres que el símbolo recién, en el cual estos dos también empareja",
+        "start": 4925.78,
+        "end": 4930.78
+    },
+    {
+        "text": " No necesariamente es producto de un algoritmo, mucho menos de lo que hubo el sábado",
+        "start": 4931.78,
+        "end": 4936.78
+    },
+    {
+        "text": " Y es nada, simplemente un objeto matemático que sigue existo",
+        "start": 4936.78,
+        "end": 4941.78
+    },
+    {
+        "text": " Ahora, eso por el lado, ¿cómo se ha agobocar una inestabilidad aquí como para llegar a una contradicción?",
+        "start": 4947.78,
+        "end": 4956.78
+    },
+    {
+        "text": " Y bueno, a ver quién es solo los personajes que están en el como está en M, estado de Doble V y está en M prima",
+        "start": 4957.78,
+        "end": 4963.78
+    },
+    {
+        "text": " Este M prima que aquí en Doble V prefirió la ejecución del abrimo de Doble, y en este otro emparejamiento estable",
+        "start": 4963.78,
+        "end": 4977.78
+    },
+    {
+        "text": " Este M prima está en pareja con alguien, ya sabemos leer Doble V prima",
+        "start": 4977.78,
+        "end": 4984.78
+    },
+    {
+        "text": " Bueno, ahora fíjense, ahora quiero llegar a que hay una contradicción, una inestabilidad que me permitió una contradicción",
+        "start": 4984.78,
+        "end": 4999.78
+    },
+    {
+        "text": " Ahora fíjense, este Doble V está claro que prefiere en el primer",
+        "start": 4999.78,
+        "end": 5004.78
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 5008.78,
+        "end": 5010.78
+    },
+    {
+        "text": " Porque el rechazo de M por el primer prima, ¿no?",
+        "start": 5014.78,
+        "end": 5020.78
+    },
+    {
+        "text": " ¿Tacto?",
+        "start": 5021.78,
+        "end": 5022.78
+    },
+    {
+        "text": " Hoy pop, sí dijimos, bueno, cuando el primer rechazo de M por la mujer o alidad WB, por eso fue un favor de M prima, ¿quién prefirió?",
+        "start": 5022.78,
+        "end": 5037.78
+    },
+    {
+        "text": " Entonces eso sé que no prefiere en M prima",
+        "start": 5037.78,
+        "end": 5040.78
+    },
+    {
+        "text": " Ahora qué pasa con M prima? ¿Cómo es la lista de preferencia de M prima?",
+        "start": 5040.78,
+        "end": 5044.78
+    },
+    {
+        "text": " No, en M prima",
+        "start": 5045.78,
+        "end": 5047.78
+    },
+    {
+        "text": " Tiene una lista de preferencia donde aparecen todos los Doble V, por eso es algo así, porque como está podría estar Doble V",
+        "start": 5052.78,
+        "end": 5061.78
+    },
+    {
+        "text": " Más adelante parece Doble V prima",
+        "start": 5062.78,
+        "end": 5065.78
+    },
+    {
+        "text": " Si esto fuera así, entonces efectivamente M prima prefiere A W antes que Doble V prima, entonces acá habría una inestabilidad",
+        "start": 5073.78,
+        "end": 5081.78
+    },
+    {
+        "text": " ¿De acuerdo?",
+        "start": 5081.78,
+        "end": 5084.78
+    },
+    {
+        "text": " Ahora puede pasar",
+        "start": 5084.78,
+        "end": 5087.78
+    },
+    {
+        "text": " ¿Qué Doble V prima esté acá antes en su tésimo? ¿No se lista podría pasar eso?",
+        "start": 5088.78,
+        "end": 5095.78
+    },
+    {
+        "text": " No, no podría, porque si no era el gorismo del Japlín, doble V prima tendría que rechazarlo para que él se ira preguntando después",
+        "start": 5097.78,
+        "end": 5108.78
+    },
+    {
+        "text": " Y ahí ya está suponiendo que es la primera vez que sucede un rechazo",
+        "start": 5108.78,
+        "end": 5112.78
+    },
+    {
+        "text": " Exacto, entonces no, esto de acá no puede pasar",
+        "start": 5113.78,
+        "end": 5118.78
+    },
+    {
+        "text": " Porque porque Si Doble V prima estuviera por acá",
+        "start": 5119.78,
+        "end": 5122.78
+    },
+    {
+        "text": " en el punto de tengamos acá por allá",
+        "start": 5123.78,
+        "end": 5126.78
+    },
+    {
+        "text": " Entonces en el algoritmo de la ejecución del algoritmo del Japlín",
+        "start": 5126.78,
+        "end": 5132.78
+    },
+    {
+        "text": " M prima tendría que haberle propuesto A W prima antes",
+        "start": 5132.78,
+        "end": 5136.78
+    },
+    {
+        "text": " Pero cuando se da el rechazo de W AM en la ejecución del algoritmo en favor de M prima",
+        "start": 5137.78,
+        "end": 5146.78
+    },
+    {
+        "text": " M prima está delísimo momento formando pareja con W",
+        "start": 5146.78,
+        "end": 5150.78
+    },
+    {
+        "text": " quiere decir que esa eventual propuesta de M prima W prima tiene que haber ocurrido antes y para que se haga proponer W",
+        "start": 5150.78,
+        "end": 5157.78
+    },
+    {
+        "text": " W prima lo tiene que haber rechazado",
+        "start": 5157.78,
+        "end": 5160.78
+    },
+    {
+        "text": " Pero entonces la oblemente W prima y M prima son una pareja válida porque pertenecen al emparejamiento de ese primo este gano de escribir",
+        "start": 5161.78,
+        "end": 5172.78
+    },
+    {
+        "text": " sin por definición son una potencial pareja igual",
+        "start": 5172.78,
+        "end": 5176.78
+    },
+    {
+        "text": " Entonces W prima habría rechazado a M prima antes de rechazar un correo de W AM",
+        "start": 5176.78,
+        "end": 5185.78
+    },
+    {
+        "text": " Y eso es un absoluto porque suimos que este W AM era el primer rechazo",
+        "start": 5185.78,
+        "end": 5192.78
+    },
+    {
+        "text": " Vengo como ahí, estoy aprovechando",
+        "start": 5192.78,
+        "end": 5196.78
+    },
+    {
+        "text": " Esa hipótesis extra de que bueno esta rechazo que estoy considerando a ver ese primero que ocurrió",
+        "start": 5196.78,
+        "end": 5201.78
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 5202.78,
+        "end": 5204.78
+    },
+    {
+        "text": " Ahora le diar una duda con respecto a eso",
+        "start": 5205.78,
+        "end": 5209.78
+    },
+    {
+        "text": " Lo que van a encontrar en el texto en las notas con la tradunción o en el libro mismo",
+        "start": 5209.78,
+        "end": 5216.78
+    },
+    {
+        "text": " Es una base en la explicación de esto que les acabo de explicar acá",
+        "start": 5216.78,
+        "end": 5222.78
+    },
+    {
+        "text": " Si se le diven",
+        "start": 5223.78,
+        "end": 5226.78
+    },
+    {
+        "text": " ¿Cóigo le voy a explicar la última parte de las preferencias de M prima?",
+        "start": 5231.78,
+        "end": 5235.78
+    },
+    {
+        "text": " Claro",
+        "start": 5235.78,
+        "end": 5237.78
+    },
+    {
+        "text": " Yo quiero llegar a que hay una instabilidad entre el emparejamiento de ese primo",
+        "start": 5238.78,
+        "end": 5249.78
+    },
+    {
+        "text": " Es una que me asomí que se estable",
+        "start": 5249.78,
+        "end": 5252.78
+    },
+    {
+        "text": " Bien",
+        "start": 5252.78,
+        "end": 5254.78
+    },
+    {
+        "text": " Viciéndole que W pregírenme prima y que me prima prefiera W",
+        "start": 5254.78,
+        "end": 5259.78
+    },
+    {
+        "text": " Para ese candidato",
+        "start": 5259.78,
+        "end": 5261.78
+    },
+    {
+        "text": " El hecho de que W pregira a M prima es como dijimos bueno, es consecuencia de que",
+        "start": 5261.78,
+        "end": 5266.78
+    },
+    {
+        "text": " Por hipótesis para trabajar en la demosas un por absoluto",
+        "start": 5266.78,
+        "end": 5269.78
+    },
+    {
+        "text": " Yo estoy asumiendo que W ha hecho suelen favor de M",
+        "start": 5269.78,
+        "end": 5273.78
+    },
+    {
+        "text": " En la ejecución del orden",
+        "start": 5273.78,
+        "end": 5275.78
+    },
+    {
+        "text": " Esa flecha roja que está ahí efectivamente",
+        "start": 5275.78,
+        "end": 5278.78
+    },
+    {
+        "text": " La que me falta ver hacia el otro lado",
+        "start": 5278.78,
+        "end": 5281.78
+    },
+    {
+        "text": " Al comentar que M prima también prefiera W antes que W",
+        "start": 5281.78,
+        "end": 5285.78
+    },
+    {
+        "text": " ¿Cuáles son las preferencias de M prima?",
+        "start": 5285.78,
+        "end": 5290.78
+    },
+    {
+        "text": " ¿A quién prefiere M prima entre W y W prima?",
+        "start": 5290.78,
+        "end": 5294.78
+    },
+    {
+        "text": " ¿Está dado por su lista de preferencias? ¿Acuardado?",
+        "start": 5294.78,
+        "end": 5297.78
+    },
+    {
+        "text": " Sí",
+        "start": 5297.78,
+        "end": 5298.78
+    },
+    {
+        "text": " En esta lista de preferencias que yo dibujé en barbe",
+        "start": 5298.78,
+        "end": 5301.78
+    },
+    {
+        "text": " Está primero a W y después de W prima",
+        "start": 5302.78,
+        "end": 5306.78
+    },
+    {
+        "text": " Lo que dibujé ahí es especialmente en la situación donde M prima prefiere a W antes que W prima",
+        "start": 5306.78,
+        "end": 5313.78
+    },
+    {
+        "text": " Y por lo tanto hay una instabilidad",
+        "start": 5313.78,
+        "end": 5317.78
+    },
+    {
+        "text": " ¿Cuáles es el argumento para decir que efectivamente la lista de preferencias de M prima",
+        "start": 5317.78,
+        "end": 5324.78
+    },
+    {
+        "text": " Es que es el desafuado",
+        "start": 5324.78,
+        "end": 5326.78
+    },
+    {
+        "text": " Y la argumento es que",
+        "start": 5326.78,
+        "end": 5328.78
+    },
+    {
+        "text": " Si no fuera así, es decir, si W prima",
+        "start": 5333.78,
+        "end": 5339.78
+    },
+    {
+        "text": " Estuviera una posición en su lista de preferencias antes que W le ve",
+        "start": 5339.78,
+        "end": 5343.78
+    },
+    {
+        "text": " Entonces, en la ejecución del algoritmo de M sable",
+        "start": 5343.78,
+        "end": 5348.78
+    },
+    {
+        "text": " No es forma de que M prima seguía a formar pareja con W prima",
+        "start": 5348.78,
+        "end": 5352.78
+    },
+    {
+        "text": " Sin antes a ver le propuesto W",
+        "start": 5352.78,
+        "end": 5355.78
+    },
+    {
+        "text": " ¿Estamos acuerdos?",
+        "start": 5355.78,
+        "end": 5357.78
+    },
+    {
+        "text": " Claro, sí, sí",
+        "start": 5357.78,
+        "end": 5359.78
+    },
+    {
+        "text": " Porque en el primer va por proponiendo en orden",
+        "start": 5359.78,
+        "end": 5362.78
+    },
+    {
+        "text": " Entonces, no hay forma de que llegue a formar unos parejes con W prima",
+        "start": 5362.78,
+        "end": 5366.78
+    },
+    {
+        "text": " Si antes no fuera chazado, perdón, no hay forma de que M prima sigue a formar unos parejes con W",
+        "start": 5366.78,
+        "end": 5374.78
+    },
+    {
+        "text": " Si antes no fuera chazado por W prima",
+        "start": 5374.78,
+        "end": 5378.78
+    },
+    {
+        "text": " En la hipótesis esta de que el puntito blanco es donde estaba, no hay forma de que viste a referencia",
+        "start": 5378.78,
+        "end": 5383.78
+    },
+    {
+        "text": " ¿Vamos?",
+        "start": 5383.78,
+        "end": 5385.78
+    },
+    {
+        "text": " Claro",
+        "start": 5385.78,
+        "end": 5386.78
+    },
+    {
+        "text": " Ahora, entonces vuelvo a la situación de este primer rechazo en el algoritmo del algoritmo",
+        "start": 5386.78,
+        "end": 5392.78
+    },
+    {
+        "text": " En ese momento, que asumimos que era la primera vez que estaba ocurrido un rechazo en el algoritmo de M",
+        "start": 5399.78,
+        "end": 5406.78
+    },
+    {
+        "text": " Fue en favor de M prima",
+        "start": 5406.78,
+        "end": 5410.78
+    },
+    {
+        "text": " En ese momento, en mi prima estaba formando o ya tenía forma de antes una pareja con W",
+        "start": 5410.78,
+        "end": 5416.78
+    },
+    {
+        "text": " Por eso W rechazo a M",
+        "start": 5416.78,
+        "end": 5418.78
+    },
+    {
+        "text": " Sí",
+        "start": 5418.78,
+        "end": 5420.78
+    },
+    {
+        "text": " ¿Vale?",
+        "start": 5420.78,
+        "end": 5421.78
+    },
+    {
+        "text": " Pero entonces en ese caso para llegar a esa situación necesariamente M prima le tendría que haber una propuesta antes a no tener prima",
+        "start": 5421.78,
+        "end": 5428.78
+    },
+    {
+        "text": " Si no le había que ir a ciberar",
+        "start": 5428.78,
+        "end": 5430.78
+    },
+    {
+        "text": " Y entonces si se unir así un rechazo anterior, el que estoy considerando ahora",
+        "start": 5430.78,
+        "end": 5435.78
+    },
+    {
+        "text": " Claro",
+        "start": 5435.78,
+        "end": 5436.78
+    },
+    {
+        "text": " Entre dos, y dos que fueron una pareja válida, son una pareja válida porque están emparejados en este ese pino que son emparejamente estados",
+        "start": 5436.78,
+        "end": 5444.78
+    },
+    {
+        "text": " Entonces por definición, son una pareja válida",
+        "start": 5444.78,
+        "end": 5449.78
+    },
+    {
+        "text": " ¿Vale?",
+        "start": 5449.78,
+        "end": 5450.78
+    },
+    {
+        "text": " Sí, gracias",
+        "start": 5450.78,
+        "end": 5453.78
+    },
+    {
+        "text": " Es útil, de las que hemos visto esta ahora, creo que es un razonamiento un poco más complejo",
+        "start": 5453.78,
+        "end": 5461.78
+    },
+    {
+        "text": " Pero además es un razonamiento bien elegante y resultado super sorprendente",
+        "start": 5462.78,
+        "end": 5468.78
+    },
+    {
+        "text": " También me resulta cuando uno llega a encontrar este tipo de conclusiones según un problema de gringo realmente es este",
+        "start": 5468.78,
+        "end": 5477.78
+    },
+    {
+        "text": " En linda, como estén ligamente el indiso sorprendente, hay útil",
+        "start": 5477.78,
+        "end": 5481.78
+    },
+    {
+        "text": " Porque a su entender no solo que nuestro aburismo resuelva realmente por lo menos, sino que tipo de soluciones está, eso es algo bien interesante",
+        "start": 5481.78,
+        "end": 5490.78
+    },
+    {
+        "text": " Bueno, estamos bien",
+        "start": 5492.78,
+        "end": 5494.78
+    },
+    {
+        "text": " Todo lo que nos pregunta",
+        "start": 5494.78,
+        "end": 5497.78
+    },
+    {
+        "text": " Yo creo que no entendí el todo es como resulta en varios emparejamientos válidos, correr la evorismo sobre el mismo grupo",
+        "start": 5497.78,
+        "end": 5506.78
+    },
+    {
+        "text": " sobre los mismos grupos de hombres y mujeres, es porque los hombres no se toman siempre de mismo ahora",
+        "start": 5506.78,
+        "end": 5513.78
+    },
+    {
+        "text": " En realidad lo que acabamos de demostrar es que los tomes como los tomes siempre se termina produciendo el mismo emparejamiento estable",
+        "start": 5514.78,
+        "end": 5522.78
+    },
+    {
+        "text": " Eso es lo que acabamos de probar",
+        "start": 5522.78,
+        "end": 5524.78
+    },
+    {
+        "text": " Ah, da, da, da",
+        "start": 5524.78,
+        "end": 5525.78
+    },
+    {
+        "text": " Claro",
+        "start": 5525.78,
+        "end": 5526.78
+    },
+    {
+        "text": " Pero lo que, pero es algo que hay que mostrar, os oponar sovió",
+        "start": 5526.78,
+        "end": 5530.78
+    },
+    {
+        "text": " Claro, los alos impusimos varios emparejamientos y al final llegamos a que siempre se odio",
+        "start": 5530.78,
+        "end": 5536.78
+    },
+    {
+        "text": " Sí, ahí va",
+        "start": 5536.78,
+        "end": 5538.78
+    },
+    {
+        "text": " Potentialmente diferentes ejecutiones de la devorismo tomando los ms diferentes órdenes, uno diría bueno, ¿no?",
+        "start": 5539.78,
+        "end": 5545.78
+    },
+    {
+        "text": " Sí, se capa que me da cosas distintas porque no",
+        "start": 5545.78,
+        "end": 5548.78
+    },
+    {
+        "text": " Ega a una vez, imagínate la situación inicial, al principio están todos libres, entonces el obrín lo dice, bueno agarrar un m que esté libre",
+        "start": 5550.78,
+        "end": 5557.78
+    },
+    {
+        "text": " ¿Cuánto han todos libres? ¿Puedo agarrar cualquiera?",
+        "start": 5557.78,
+        "end": 5559.78
+    },
+    {
+        "text": " Se agarró el primero, agarró el último, agarró el medio",
+        "start": 5560.78,
+        "end": 5563.78
+    },
+    {
+        "text": " Podría terminar con su diferente sal fina, porque no, o sea de hecho si me apurás sin colisiones diría bueno, y sí, es lo que suele pasar",
+        "start": 5564.78,
+        "end": 5577.78
+    },
+    {
+        "text": " ¿Orían ser todas soluciones correctas?",
+        "start": 5578.78,
+        "end": 5582.78
+    },
+    {
+        "text": " Pero distintas entre sí, porque hay muchas soluciones correctas",
+        "start": 5582.78,
+        "end": 5586.78
+    },
+    {
+        "text": " Bueno, lo que estamos viendo es que no, que siempre da la misma, ahí no solo siempre da la misma, da una muy particular",
+        "start": 5587.78,
+        "end": 5592.78
+    },
+    {
+        "text": " ¿Qué sorprendente hasta su existencia sorprendente?",
+        "start": 5595.78,
+        "end": 5600.78
+    },
+    {
+        "text": " Sorprendente, uno pueda, como decía hoy, simultáneamente darles a cada m lo mejor o lo que puedas pirar",
+        "start": 5600.78,
+        "end": 5609.78
+    },
+    {
+        "text": " Bueno, eso por un lado",
+        "start": 5617.78,
+        "end": 5621.78
+    },
+    {
+        "text": " Ahora uno podría preguntarse ¿Qué pasa con los doble?",
+        "start": 5633.78,
+        "end": 5639.78
+    },
+    {
+        "text": " Lo se ve, termina con lo mejor lo que pueden aspirar, lo que pasa con los doble?",
+        "start": 5640.78,
+        "end": 5645.78
+    },
+    {
+        "text": " Bueno, lo asusta que los doble termina con lo peor que le podría pasar",
+        "start": 5645.78,
+        "end": 5651.78
+    },
+    {
+        "text": " Así como definimos mejor de m, podemos definir también peor de doble para cada uno de los doble",
+        "start": 5653.78,
+        "end": 5666.78
+    },
+    {
+        "text": " M es la peor pareja vale doble, si m es un pareja vale, y ninguno es peor, es decir",
+        "start": 5670.78,
+        "end": 5676.78
+    },
+    {
+        "text": " Volviendo al ejemplo de este si yo ahora miro desde el lado de los doble,",
+        "start": 5677.78,
+        "end": 5698.78
+    },
+    {
+        "text": " Bueno, cada uno de estos según, es el 12, 13, 13, 4 etc.",
+        "start": 5699.78,
+        "end": 5702.78
+    },
+    {
+        "text": " Bueno, cada uno de los doble a veces termina con una e, a veces un e, a veces con otro m,",
+        "start": 5702.78,
+        "end": 5707.78
+    },
+    {
+        "text": " Bueno, de todos los que son válidos, ¿cuál es el peor?",
+        "start": 5707.78,
+        "end": 5713.78
+    },
+    {
+        "text": " Es decir, ¿cuál es el peor de según, es el 12, 13, 14, cuáles el peor que puede elegir para un cierto doble?",
+        "start": 5713.78,
+        "end": 5721.78
+    },
+    {
+        "text": " No necesariamente es el último de la lista, y lo si es dentro de todos los posibles emperes",
+        "start": 5722.78,
+        "end": 5728.78
+    },
+    {
+        "text": " que aumentos el peor, para ese es el que nací en el algoritmo de gale, y bueno, ¿cómo se muestra eso?",
+        "start": 5728.78,
+        "end": 5744.78
+    },
+    {
+        "text": " En algún momento no había parecido, se sucede que tengo un emparejamiento de ese acerisco,",
+        "start": 5745.78,
+        "end": 5769.78
+    },
+    {
+        "text": " en el cual em,",
+        "start": 5770.78,
+        "end": 5781.78
+    },
+    {
+        "text": " en cierto em, termina con un cierto doble, ¿no? Esto es lo que produce el albudo del sable,",
+        "start": 5781.78,
+        "end": 5786.78
+    },
+    {
+        "text": " y sabimos que doble de es la mejor opción para él.",
+        "start": 5786.78,
+        "end": 5791.78
+    },
+    {
+        "text": " Bueno, suponamos que em, suponamos que em, o sea, por el sur o de vuelta, suponamos que em,",
+        "start": 5792.78,
+        "end": 5803.78
+    },
+    {
+        "text": " no es la, la, la peor opción válida para doble. ¿No? ¿Qué quiere decir eso? ¿Qué quiere decir que hay un emparejamiento estable ese prima?",
+        "start": 5803.78,
+        "end": 5820.78
+    },
+    {
+        "text": " ¿En el cual doble? ¿Termina?",
+        "start": 5821.78,
+        "end": 5834.78
+    },
+    {
+        "text": " No, las productos necesariamente, un algoritmo que está en pareja con otro emprima,",
+        "start": 5835.78,
+        "end": 5847.78
+    },
+    {
+        "text": " que es aún peor que el que la sinón el algoritmo, es decir, doble preferiría estar con em.",
+        "start": 5847.78,
+        "end": 5857.78
+    },
+    {
+        "text": " Pero ese primer es un emparejamiento estable de manera que efectivamente mi primer doble es un,",
+        "start": 5858.78,
+        "end": 5863.78
+    },
+    {
+        "text": " que tiene una pareja valida. ¿De acuerdo? Bueno, ahora con un, o sea, esta,",
+        "start": 5863.78,
+        "end": 5872.78
+    },
+    {
+        "text": " o sea, esta pareja que formó acá es peor.",
+        "start": 5873.78,
+        "end": 5878.78
+    },
+    {
+        "text": " Ahora bueno, de vuelta con un razonamiento parecido lo que hicimos recién.",
+        "start": 5887.78,
+        "end": 5890.78
+    },
+    {
+        "text": " Bueno, está bien, ahora doble ver, el resultado de todo el emprima.",
+        "start": 5890.78,
+        "end": 5893.78
+    },
+    {
+        "text": " Entonces, el em que estaban parejado en ese dedico tiene que estar en pareja con alguien más.",
+        "start": 5894.78,
+        "end": 5900.78
+    },
+    {
+        "text": " O sea, este em, está con alguno toda vez, digamos, doble prima. ¿De acuerdo?",
+        "start": 5900.78,
+        "end": 5911.78
+    },
+    {
+        "text": " Ahora qué pasa, acá hay una de vuelta una inestabilidad. ¿Por qué?",
+        "start": 5912.78,
+        "end": 5917.78
+    },
+    {
+        "text": " Bueno, sabemos que doble ver en realidad prefiera em, porque justamente lo que sumimos como hipótesis para hacer una contradición,",
+        "start": 5917.78,
+        "end": 5922.78
+    },
+    {
+        "text": " dijimos, bueno, hay otro emprisamiento donde doble ver, termina con un emprima que es peor que quede en mi paraje.",
+        "start": 5923.78,
+        "end": 5929.78
+    },
+    {
+        "text": " Vamos bien, ¿no?",
+        "start": 5929.78,
+        "end": 5934.78
+    },
+    {
+        "text": " Porque justamente lo que sumimos como hipótesis para hacer una contradición, dijimos, bueno, hay otro emprisamiento donde doble ver, termina con un emprima que es peor que quede en mi paraje.",
+        "start": 5935.78,
+        "end": 5946.78
+    },
+    {
+        "text": " Vamos bien.",
+        "start": 5946.78,
+        "end": 5951.78
+    },
+    {
+        "text": " Y em, en realidad también prefieres doble ver antes que doble ver prima, ¿por qué?",
+        "start": 5953.78,
+        "end": 5957.78
+    },
+    {
+        "text": " Porque están en el algoritmo. Porque están en el algoritmo.",
+        "start": 5958.78,
+        "end": 5964.78
+    },
+    {
+        "text": " No hay nada, hay necesitarismo.",
+        "start": 5964.78,
+        "end": 5967.78
+    },
+    {
+        "text": " Claro, o sea, lo que provo recién en esas teniscos, sabemos que a M si la cina lo mejor lo que pueda aspirar.",
+        "start": 5967.78,
+        "end": 5972.78
+    },
+    {
+        "text": " Entonces, en un portaque de ciencia doble ver prima, seguro que prefieras doble ver.",
+        "start": 5972.78,
+        "end": 5979.78
+    },
+    {
+        "text": " Sabimos que en esas teniscos a M si la cina lo mejor, a lo que pueda aspirar, el que todo lo se emparecamos por este caso.",
+        "start": 5979.78,
+        "end": 5986.78
+    },
+    {
+        "text": " Bueno, ese prima de cina emparecamente estable, después de este, en ese prima empareja con doble ver prima, seguro que prefieras doble ver, por eso lo mejor que le puedo hacer.",
+        "start": 5987.78,
+        "end": 5997.78
+    },
+    {
+        "text": " Doble ver por nuestro hipótesis trabajo para hacer un absurdo, dijimos que es también preciosa.",
+        "start": 5997.78,
+        "end": 6001.78
+    },
+    {
+        "text": " Entonces, ahí tenemos una inestabilidad y ese inestabilidad no sea un absurdo porque habíamos asumido que se extrimieron emparecamente.",
+        "start": 6001.78,
+        "end": 6012.78
+    },
+    {
+        "text": " Lo que han tenido es la misma, incluso bastante, un poco más en silla, pero es el mismo tipo de estrategia por absurdo para mostrar que los doble ver terminan en pareja con lo peor que le podría pasar.",
+        "start": 6012.78,
+        "end": 6034.78
+    },
+    {
+        "text": " Sin embargo, históricamente, y curiosamente, esto, este resultado, digamos, a ver ahora, no es algo que se suporta, pasará como 10 años hasta que se supone.",
+        "start": 6035.78,
+        "end": 6048.78
+    },
+    {
+        "text": " Aquí hay un bidet, ahí que después se lo voy a hacer, para hacer comparte que explica todo este tema también, que se van a suda.",
+        "start": 6049.78,
+        "end": 6057.78
+    },
+    {
+        "text": " Lo un poco una idea, así que antes que tanto, importaba en ese momento lo que pasaba el lado de los hombres, en la metáfora, en el lado de las mujeres.",
+        "start": 6057.78,
+        "end": 6068.78
+    },
+    {
+        "text": " La metáfora para todo este tema, se entendió alguna duda.",
+        "start": 6069.78,
+        "end": 6077.78
+    },
+    {
+        "text": " Yo tengo una duda, más bien una idea, porque yo le he librado y dice que vamos a suponer que estamos trabajando con un conjunto de N y N, como para simplificar un poco.",
+        "start": 6080.78,
+        "end": 6095.78
+    },
+    {
+        "text": " Y trae el ejemplo de una empresa que quiere tales empleados y tales empleados que hay en preferencia su total empresa, y ahí se me ha ocurrido.",
+        "start": 6096.78,
+        "end": 6107.78
+    },
+    {
+        "text": " En el caso de alguna empresa, por ejemplo, quiere a tres empleados, no puedo emularlo como tres personas distintas con las mismas preferencias.",
+        "start": 6107.78,
+        "end": 6116.78
+    },
+    {
+        "text": " Y efectos es una generalización entre todo un poco tonta, pero que tiene como más general, no sé si me explico.",
+        "start": 6117.78,
+        "end": 6126.78
+    },
+    {
+        "text": " A ver, no entendí bien cuál es la, a ver, vamos a pasar el libro, ¿no?",
+        "start": 6127.78,
+        "end": 6132.78
+    },
+    {
+        "text": " Entienda la situación en el primer ejemplo que comienza la motivación que se presenta en el libro.",
+        "start": 6132.78,
+        "end": 6142.78
+    },
+    {
+        "text": " Yo bueno, tenemos empresa que están buscando pasantes que vas a trabajar en ella ahora, y a su vez aspirantes, eso es opuesto que hace un trabajo, una pasantilla.",
+        "start": 6143.78,
+        "end": 6159.78
+    },
+    {
+        "text": " Y cada uno tiene una lista de preferencias, yo como potencial empleado prefiero trabajar acá primero, acá segundo, que tercer, etc.",
+        "start": 6159.78,
+        "end": 6171.78
+    },
+    {
+        "text": " Y del otro lado, bueno, tiene los currículum de la gente y se muestra, si lo hay en este primero, segundo, no sé, no.",
+        "start": 6172.78,
+        "end": 6180.78
+    },
+    {
+        "text": " Un cierto, esta persona primero, esta persona después de este.",
+        "start": 6180.78,
+        "end": 6186.78
+    },
+    {
+        "text": " La diferencia ahí es que cada empresa está interesada en contratar más de un potencialmente más de buca andidad.",
+        "start": 6186.78,
+        "end": 6198.78
+    },
+    {
+        "text": " Entonces la relación no es uno a uno, ¿eh?",
+        "start": 6199.78,
+        "end": 6201.78
+    },
+    {
+        "text": " Es el plan primero.",
+        "start": 6202.78,
+        "end": 6203.78
+    },
+    {
+        "text": " Y entonces la propuesta tuya como era?",
+        "start": 6204.78,
+        "end": 6207.78
+    },
+    {
+        "text": " Es la siguiente, imaginemos que si yo soy una empresa y quiero contratar a tres personas, lo que puedo hacer es hacerlo mismo que estamos haciendo ahora, sólo que me presento como tres empresas distintas.",
+        "start": 6208.78,
+        "end": 6223.78
+    },
+    {
+        "text": " Y después de resumir esa la empresa, no sé si me explico.",
+        "start": 6224.78,
+        "end": 6227.78
+    },
+    {
+        "text": " Sí, así es.",
+        "start": 6229.78,
+        "end": 6230.78
+    },
+    {
+        "text": " O sea como que está bien, como que y con las mismas listas de preferencias.",
+        "start": 6233.78,
+        "end": 6238.78
+    },
+    {
+        "text": " Claro, pero se va a seguir manteniendo eso de que cuando si yo quiero a tres personas, o sea, después cuando yo me presente como tres empresas vas a ir siendo en el NN, esa era como mi reflexión.",
+        "start": 6239.78,
+        "end": 6252.78
+    },
+    {
+        "text": " Pero una brunda ahí no, no tenés el problema de que esas como tres subo empresas, no sabes, o sea, cual te quedas de esas, tienes que elegir una, como yo al editorial, ¿no sé?",
+        "start": 6254.78,
+        "end": 6266.78
+    },
+    {
+        "text": " Ah, sí, bueno, pero tal, el final, el cabo como son la misma, no te importa que orden relativo, o sea como que puede ser gileno cualquiera.",
+        "start": 6267.78,
+        "end": 6276.78
+    },
+    {
+        "text": " Claro, tiene que ver con los empatos que decimos reciente, que uno podría...",
+        "start": 6276.78,
+        "end": 6279.78
+    },
+    {
+        "text": " Claro, listarlas en cualquier orden.",
+        "start": 6279.78,
+        "end": 6282.78
+    },
+    {
+        "text": " La podría ser, pero no te van a quedar de NN, no te van a quedar de mismo tamaño, ¿no?",
+        "start": 6282.78,
+        "end": 6288.78
+    },
+    {
+        "text": " Muy apelita.",
+        "start": 6289.78,
+        "end": 6290.78
+    },
+    {
+        "text": " De día es que cuando yo lo expandas que en NN, como pensando en eso antes.",
+        "start": 6290.78,
+        "end": 6296.78
+    },
+    {
+        "text": " No, la verdad, no, no estoy seguro ahora si, si, si, si funciona, ¿verdad que escribirlo y pensarlo bien de todos.",
+        "start": 6296.78,
+        "end": 6304.78
+    },
+    {
+        "text": " Este problema está planteando, es lo mismo que ocurría, porque cuando apareció el artículo de...",
+        "start": 6305.78,
+        "end": 6311.78
+    },
+    {
+        "text": " Sabre el resultado que en realidad algo, lo mismo, ya se, ya se conocí, se estaba aplicando antes sobre todo de la ablegida del libro también, para...",
+        "start": 6311.78,
+        "end": 6322.78
+    },
+    {
+        "text": " Para hacer, para asignar los internados en hospital, si los estudiantes en medicina, van a ser un internado en un...",
+        "start": 6322.78,
+        "end": 6329.78
+    },
+    {
+        "text": " Pasan tiempos hospital.",
+        "start": 6330.78,
+        "end": 6332.78
+    },
+    {
+        "text": " Y esa, exactamente esa situación, no ha quedado hospital y va a ir varios estudiantes para hacer el...",
+        "start": 6332.78,
+        "end": 6340.78
+    },
+    {
+        "text": " El internado y cada estudiant, cada candidato tenía también una lista de preferencias de los hospitales.",
+        "start": 6340.78,
+        "end": 6350.78
+    },
+    {
+        "text": " Y, está, era un problema real que tenía que resolver, para que no se generara el, el lío, el que bueno, el fulano, el hospital, el hospital, después resulta que recibe una falta de...",
+        "start": 6351.78,
+        "end": 6366.78
+    },
+    {
+        "text": " Es que, a aquel otro hospital, entonces se va y deja colgado el hospital y se empieza a generar toda una rosca de este movimiento, un lado para otro, que explica otra.",
+        "start": 6366.78,
+        "end": 6375.78
+    },
+    {
+        "text": " Entonces, era un problema real, concreto, resolver y implementar un algoritmo tiempo antes de que apareciera la propuesta de hoy,",
+        "start": 6376.78,
+        "end": 6386.78
+    },
+    {
+        "text": " ¿sabre que hacía efectivamente eso?",
+        "start": 6386.78,
+        "end": 6389.78
+    },
+    {
+        "text": " O sea, hacía el segundo de hoy en realidad una generalización, para el caso que justamente hay,",
+        "start": 6389.78,
+        "end": 6399.78
+    },
+    {
+        "text": " los hospitales pueden aceptar a más de un candidato.",
+        "start": 6400.78,
+        "end": 6405.78
+    },
+    {
+        "text": " Y ese de hecho es uno de los ejercicios que tenemos propuestas para hacer en el práctico, así que en realidad lo que te propongo es que lo escriba bien.",
+        "start": 6407.78,
+        "end": 6417.78
+    },
+    {
+        "text": " Es uno de los ejercicios que tenemos que hacer y probar que eso funciona o no.",
+        "start": 6420.78,
+        "end": 6427.78
+    },
+    {
+        "text": " Hay otras formas de solucionarlo, no me di cuenta, igual de cómo si se que está proponiendo vos, ahora tiene algún defecto que puede hacer que no funciona.",
+        "start": 6428.78,
+        "end": 6439.78
+    },
+    {
+        "text": " Por lo pronto, tienes que ver que hacer con lecho de que las manos los tamaños de los conjuntos no tienen por qué conseguir.",
+        "start": 6439.78,
+        "end": 6445.78
+    },
+    {
+        "text": " ¿También?",
+        "start": 6446.78,
+        "end": 6447.78
+    },
+    {
+        "text": " Sí.",
+        "start": 6447.78,
+        "end": 6448.78
+    },
+    {
+        "text": " Tengo una pregunta sobre el tema de los empates y de las parejas prohibidas y ese tipo de cosas diferentes, lo que es la normal del algoritmo.",
+        "start": 6448.78,
+        "end": 6465.78
+    },
+    {
+        "text": " Sí.",
+        "start": 6465.78,
+        "end": 6466.78
+    },
+    {
+        "text": " Se deben resolver antes de aplicar el algoritmo o dentro del algoritmo como un caso particular.",
+        "start": 6466.78,
+        "end": 6472.78
+    },
+    {
+        "text": " Depende de cada caso, podrías que fue un tipo de soluciones que propusieron recién como preprocesar la instancia que tiene entre manos de ese problema más general para llevarlo a el caso que sabemos resolver.",
+        "start": 6473.78,
+        "end": 6489.78
+    },
+    {
+        "text": " Y eso es una posibilidad.",
+        "start": 6490.78,
+        "end": 6491.78
+    },
+    {
+        "text": " La otra es escribir un algoritmo nuevo inspirado seguramente en el de Geel Sáprio pero con sus matices que de entrada trabaja con una instancia de este tipo más general.",
+        "start": 6491.78,
+        "end": 6506.78
+    },
+    {
+        "text": " Por ejemplo, el caso de las parejas prohibidas que se le ejercicio resuelto número dos de este capítulo, ahí, bueno, si, reescribe el algoritmo, van a empezar.",
+        "start": 6507.78,
+        "end": 6521.78
+    },
+    {
+        "text": " Hay que definir formalmente que significa ahí inestabilidades.",
+        "start": 6521.78,
+        "end": 6525.78
+    },
+    {
+        "text": " Y muchas veces cuando vos generalizás un problema para empezar, es que reformular la abtacción del problema en términos matemáticos.",
+        "start": 6525.78,
+        "end": 6534.78
+    },
+    {
+        "text": " Esto que decimos hoy, por ejemplo, capaz que ya no tenés la misma cantidad de elementos en un lado de lo que es lo que es juntos, capaz que la noción de inestabilidad tiene que redefinirla.",
+        "start": 6534.78,
+        "end": 6544.78
+    },
+    {
+        "text": " Que es lo que pasa, por ejemplo, con el caso de las parejas prohibidas en el de ejemplo este que trae las acoración.",
+        "start": 6544.78,
+        "end": 6552.78
+    },
+    {
+        "text": " Después de que formalizaste bien, bueno, tienes que escribir el algoritmo, puede ser tan sencillo como llevar la instancia a un caso que sí se va a resolver con el de Geel Sáprio sin tocar.",
+        "start": 6553.78,
+        "end": 6567.78
+    },
+    {
+        "text": " O puede escribir un algoritmo nuevo.",
+        "start": 6567.78,
+        "end": 6570.78
+    },
+    {
+        "text": " Muchas veces es el último, lo que tenemos hace es un algoritmo con el exactamente el que conocemos, sino bueno, alguna adaptación de...",
+        "start": 6570.78,
+        "end": 6577.78
+    },
+    {
+        "text": " Pero hay hay que probar todo lo que probaste para Geel Sáprio.",
+        "start": 6577.78,
+        "end": 6581.78
+    },
+    {
+        "text": " Todo lo que parece para Geel Sáprio o más bien las propiedades analogos para esta otra formalización que va a ser tan rápido.",
+        "start": 6582.78,
+        "end": 6595.78
+    },
+    {
+        "text": " La refiero en temas de la estabilidad y de bien que se...",
+        "start": 6595.78,
+        "end": 6599.78
+    },
+    {
+        "text": " Bueno, tú me estoy diciendo eso.",
+        "start": 6599.78,
+        "end": 6601.78
+    },
+    {
+        "text": " En el momento en que cambia tu definición de inestabilidad, porque cambió la forma en que formulaste el problema, ya ni siquiera tiene sentido hablar de los resultados sobre inestabilidad que tenías para el algoritmo de Geel Sáprio, porque son uno de definiciones de inestabilidad diferentes.",
+        "start": 6601.78,
+        "end": 6619.78
+    },
+    {
+        "text": " Entonces, si no te quedan más renovos, pero la repente hay cosas, como por ejemplo, el hecho de que el algoritmo se detiene, que son iguales.",
+        "start": 6619.78,
+        "end": 6629.78
+    },
+    {
+        "text": " Y eso no tiene que repensar. Pero hay otras que sí.",
+        "start": 6629.78,
+        "end": 6636.78
+    },
+    {
+        "text": " Y de hecho, muchas veces lo que nos va a pasar, a lo largo del curso y en realidad la vida profesional, es que a veces el problema que tiene ese entremano no es exactamente el que vos estudias tienes libre.",
+        "start": 6636.78,
+        "end": 6655.78
+    },
+    {
+        "text": " Lo importante es tener, haber adquirido las habilidades para analizar algoritmos de ese tipo, conocer los algoritmos clásicos para saber cuál podría estar de adaptar a tu situación.",
+        "start": 6655.78,
+        "end": 6673.78
+    },
+    {
+        "text": " Pero difícilmente vas a coincidir, a veces sí, pero muchas veces no, no coincide exactamente el problema que tienes entre manos con la formulación precisa que está en el libre con la comunidad.",
+        "start": 6673.78,
+        "end": 6691.78
+    },
+    {
+        "text": " Igual, ya que hay que arromandarse y trabajar un humilde.",
+        "start": 6691.78,
+        "end": 6698.78
+    },
+    {
+        "text": " ¿Alguna, con una consulta?",
+        "start": 6698.78,
+        "end": 6700.78
+    },
+    {
+        "text": " Sí. Viste que acá ponéis las favoreces, los hombres terminan con la mejor pareja y las mujeres con la peor.",
+        "start": 6700.78,
+        "end": 6709.78
+    },
+    {
+        "text": " Sí. Supongamos que no queremos favorezar completamente ninguno a los dos lados, no sé, queremos ser algo 50-50 por la situación que sea.",
+        "start": 6709.78,
+        "end": 6721.78
+    },
+    {
+        "text": " ¿Cómo? O sea, si los hombres se favorecen porque son ellos los que eligen de una forma.",
+        "start": 6722.78,
+        "end": 6732.78
+    },
+    {
+        "text": " Sí. Entonces, si en el algoritmo yo estaría alternando el hijo con el ego, una vez que elija el hombre y la ciencia interacción que elija la mujer y todo así.",
+        "start": 6732.78,
+        "end": 6746.78
+    },
+    {
+        "text": " Fájate.",
+        "start": 6747.78,
+        "end": 6748.78
+    },
+    {
+        "text": " ¿Lo pasa que ahí rompe todo la extrempura algoritmica en la cual basamos casi todas las demostraciones que hicimos?",
+        "start": 6749.78,
+        "end": 6759.78
+    },
+    {
+        "text": " Para ahí me mostraron que ya deseneso es un bolón, ¿qué?",
+        "start": 6759.78,
+        "end": 6763.78
+    },
+    {
+        "text": " No podría centrar en un lupa parte en donde una mujer rechaza su nombre y una hombre rechaza la mujer.",
+        "start": 6763.78,
+        "end": 6769.78
+    },
+    {
+        "text": " Sí, no sé, habré que pensarlo, pero probablemente casi todo lo que lo que lo que lo que demostramos, incluso la verdad.",
+        "start": 6770.78,
+        "end": 6779.78
+    },
+    {
+        "text": " De hecho, que también está basado en esa estructura a cimetria donde hay unos que son los que avanzan en un lado y otro que van previamente mejorando su situación.",
+        "start": 6779.78,
+        "end": 6791.78
+    },
+    {
+        "text": " Si rompe eso, bueno, tiene que repensar todo la... todo se está demostrando que hicimos y probablemente es algo que fase.",
+        "start": 6792.78,
+        "end": 6800.78
+    },
+    {
+        "text": " Porque si puedes hacer eso, obviamente correr el algoritmo al revés con WN el rol proponente, está pero el algoritmo de GAY ya que así como está, en esas opciones.",
+        "start": 6800.78,
+        "end": 6809.78
+    },
+    {
+        "text": " O propone M y termina con el mejor, o propone WN y lo mejor.",
+        "start": 6809.78,
+        "end": 6814.78
+    },
+    {
+        "text": " Y todo lo que sale lo más favorecido posible y lo otro, lo más perjudicado.",
+        "start": 6815.78,
+        "end": 6819.78
+    },
+    {
+        "text": " Y esas son las dos opciones que tienes.",
+        "start": 6819.78,
+        "end": 6821.78
+    },
+    {
+        "text": " Hay todo un universo en el medio de posibles soluciones que no tenés forma de acceder a ellas, o sea que matemáticamente existen, pero no tenés forma de acceder a ellas a través de este algoritmo específico.",
+        "start": 6821.78,
+        "end": 6836.78
+    },
+    {
+        "text": " Vamos a ver en el próximo.",
+        "start": 6837.78,
+        "end": 6840.78
+    },
+    {
+        "text": " Vamos a ver en el práctico, formas algoritmica de moverse hacia el medio, así que los hienes más parejas, más equilibradas.",
+        "start": 6841.78,
+        "end": 6856.78
+    },
+    {
+        "text": " Es uno de los ejercicios del práctico y si no lo recuerdes, de hecho, que vamos a trabajar en la clase de monitoreo.",
+        "start": 6857.78,
+        "end": 6865.78
+    }
+]

@@ -1,0 +1,2532 @@
+[
+    {
+        "text": " Bueno, se titula iteración, ejemplos avanzados, pero como les adelanté, en realidad es un",
+        "start": 0.0,
+        "end": 24.560000000000002
+    },
+    {
+        "text": " poco un repaso de todas las estructuras que estuvimos viendo hasta ahora. Y vamos a empezar por",
+        "start": 24.56,
+        "end": 31.4
+    },
+    {
+        "text": " justamente recordarlas, vamos a hacer un resumen de todas las instrucciones de control que estuvimos",
+        "start": 31.4,
+        "end": 38.16
+    },
+    {
+        "text": " viendo. Bueno, conocemos dos tipos de instrucciones, las instrucciones simples y las instrucciones",
+        "start": 38.16,
+        "end": 47.76
+    },
+    {
+        "text": " compuestas. Una instrucción simple puede ser, o bien una asignación, o bien una llamada procedimiento,",
+        "start": 47.76,
+        "end": 59.36
+    },
+    {
+        "text": " los únicos procedimientos que conocemos hasta ahora, cuáles son. RID, O RIDLINE, Y RIDE, O RIDELINE,",
+        "start": 59.36,
+        "end": 69.16
+    },
+    {
+        "text": " los que se encargan de realizar interacción con el usuario. Vamos a ver más adelante en el curso",
+        "start": 69.16,
+        "end": 75.96
+    },
+    {
+        "text": " que nosotros podemos definir nuestros propios procedimientos. Pero por el momento lo que consideramos",
+        "start": 75.96,
+        "end": 83.19999999999999
+    },
+    {
+        "text": " como instrucción simple es, o bien una asignación, o bien cualquier uso de RID, RIDE, RIDLINE, o RIDELINE. Y después",
+        "start": 83.19999999999999,
+        "end": 93.44
+    },
+    {
+        "text": " están las instrucciones compuestas, también denominadas estructuras de control o instrucciones de control.",
+        "start": 93.44,
+        "end": 100.91999999999999
+    },
+    {
+        "text": " La primera idea es la secuencia. Una secuencia dijimos que era una nueva instrucción que se formaba",
+        "start": 100.92,
+        "end": 113.2
+    },
+    {
+        "text": " colocando VIGIN en, y varias instrucciones separadas con punta y coma. Eso es la primera instrucción",
+        "start": 113.2,
+        "end": 124.48
+    },
+    {
+        "text": " compuesta, la secuencia. Todo lo que va dentro del programa entre el VIGIN y el em principal es una",
+        "start": 124.48,
+        "end": 131.88
+    },
+    {
+        "text": " secuencia, pero nosotros vimos también que la secuencia pueda parecer anidad adentro de otras",
+        "start": 131.88,
+        "end": 138.8
+    },
+    {
+        "text": " estructuras. Por ejemplo, si yo tengo UNIF y en caso de que la condición se cumpla, yo quiero hacer",
+        "start": 138.8,
+        "end": 144.92000000000002
+    },
+    {
+        "text": " varias cosas que hago, las coloco dentro de una secuencia con VIGIN, lo mismo con UAL, lo mismo con",
+        "start": 144.92000000000002,
+        "end": 151.88
+    },
+    {
+        "text": " UNELS, etcétera. Después vimos las dos estructuras de selección. La denominada selección simple",
+        "start": 151.88,
+        "end": 162.22
+    },
+    {
+        "text": " IFDENELS y la denominada SELECTION GENERALISADA que es ELK. En ELIFDENELS que parte es opcional, ELELS",
+        "start": 162.22,
+        "end": 173.28
+    },
+    {
+        "text": " puede ponerlo o no, ¿de qué depende? De si quiero hacer algo o no en caso de que la condición sea",
+        "start": 173.28,
+        "end": 182.4
+    },
+    {
+        "text": " como falsa. Si la condición es falsa es cuando yo iría a ELLs o me voy, si no colocó ELLS. Luego está",
+        "start": 182.4,
+        "end": 192.36
+    },
+    {
+        "text": " la selección generalizada que es ELK, que la idea es utilizarla cuando, cuando son más de dos",
+        "start": 192.36,
+        "end": 200.52
+    },
+    {
+        "text": " opciones posibles. Si solo son dos opciones posibles, funcione al queéis, sí, pero por un tema de",
+        "start": 200.52,
+        "end": 207.84
+    },
+    {
+        "text": " religidad de buen estilo de programación, ahí que se recomienda. ¡Has alogonido! FRIPASCAL le",
+        "start": 207.84,
+        "end": 216.20000000000002
+    },
+    {
+        "text": " agrega algo al queéis que no vienen el PASCAL estándar, que es la posibilidad de colocar",
+        "start": 216.20000000000002,
+        "end": 221.62
+    },
+    {
+        "text": " el ELLS de la misma manera que el ELFDENELS. Esas son las estructuras de SELECTION. Luego vienen las",
+        "start": 221.62,
+        "end": 229.9
+    },
+    {
+        "text": " estructuras repetitivas, las que permiten iterar, es decir, hacer una misma instrucción que puede",
+        "start": 229.9,
+        "end": 238.26
+    },
+    {
+        "text": " ser simple o compuesta muchas veces. Allivimos el FOR, el WAL y el REPIT. Muy grandes rasgos,",
+        "start": 238.26,
+        "end": 246.78
+    },
+    {
+        "text": " cuando corresponde usar el FOR, cuando sea la cantidad de veces que quiero repetir. Por ende,",
+        "start": 246.78,
+        "end": 255.1
+    },
+    {
+        "text": " cuando no sea la cantidad de veces que quiero repetir, voy a usar alguna de las otras dos, el WAL",
+        "start": 255.1,
+        "end": 260.98
+    },
+    {
+        "text": " o el REPIT. Lo que tienen en común que es, que repiten algo en función del cumplimiento de",
+        "start": 260.98,
+        "end": 273.5
+    },
+    {
+        "text": " una condición, eso es lo que tienen en común. Sabemos de antemano cuántas veces se va a ejecutarlo",
+        "start": 273.5,
+        "end": 280.94
+    },
+    {
+        "text": " que pongamos adentro, no lo sabemos. ¿Y qué diferencia hay entre el WAL y el REPIT? El REPIT se tiene",
+        "start": 280.94,
+        "end": 290.22
+    },
+    {
+        "text": " que ejecutar por lo menos una vez, mientras que el WAL puede no ejecutarse nunca. Esto es repaso,",
+        "start": 290.22,
+        "end": 301.1
+    },
+    {
+        "text": " esto es lo que hemos visto hasta ahora, hasta acá. Preguntas de esto, vamos a ir a ondando un",
+        "start": 301.1,
+        "end": 308.24
+    },
+    {
+        "text": " poquito más. FOR, es una estructura de repetición controlada por una variable, como le llamamos",
+        "start": 308.24,
+        "end": 317.82000000000005
+    },
+    {
+        "text": " esa variable, variable de control del FOR, que toma valores en un rango determinado desde acá y",
+        "start": 317.82000000000005,
+        "end": 326.98
+    },
+    {
+        "text": " hasta acá. Dice allí que el cuerpo, es decir, lo que colocamos dentro, puede no ejecutarse nunca,",
+        "start": 326.98,
+        "end": 335.1
+    },
+    {
+        "text": " en qué caso ocurre eso. ¿Quién es mayor que quién? ¿Cuándo",
+        "start": 335.1,
+        "end": 356.86
+    },
+    {
+        "text": " se pone para explicar si es a 5? Si por ejemplo, de 6 a 5, ¿qué pasa? No entra. Si el inicio es mayor",
+        "start": 356.86,
+        "end": 368.94
+    },
+    {
+        "text": " que el final directamente no entra. Eso si es un FOR que es ascendente, que lo poníamos con la",
+        "start": 368.94,
+        "end": 376.42
+    },
+    {
+        "text": " pala ahorita, ¿tú? Si es descendente, cuál era la palabra? DAUTU. En ese caso pasa al revés, si",
+        "start": 376.42,
+        "end": 383.98
+    },
+    {
+        "text": " el origen es menor que el destino es que no entra. Queda claro. Por sí sola, es decir, si no se",
+        "start": 383.98,
+        "end": 393.3
+    },
+    {
+        "text": " combina con estas dos, siempre termina, ¿qué significa esto? No hay posibilidad de que quede en",
+        "start": 393.3,
+        "end": 401.94
+    },
+    {
+        "text": " el loop infinito, en un bucle infinito, en una iteración de la cual no se sale nunca.",
+        "start": 401.94,
+        "end": 408.70000000000005
+    },
+    {
+        "text": " Eso si se utiliza por si sola, ¿por qué pasa si yo por ejemplo adentro del FOR meton-why?",
+        "start": 409.26,
+        "end": 414.86
+    },
+    {
+        "text": " El why tiene peligro de quedar en loop, con lo cual de rebo de el FOR también que no loop,",
+        "start": 417.38,
+        "end": 422.94
+    },
+    {
+        "text": " pero por si solo el FOR si no se lo combina con estas dos, en principio no tiene riesgo ninguno de quedar",
+        "start": 422.94,
+        "end": 429.74
+    },
+    {
+        "text": " en loop. ¿Tabía? Las que sí tienen riesgo de quedar en loop son el why y el repid, por eso dice",
+        "start": 429.74,
+        "end": 437.38
+    },
+    {
+        "text": " que así que puede no terminar nunca. Why? Repetición controlada por una expresión buleana,",
+        "start": 437.38,
+        "end": 446.9
+    },
+    {
+        "text": " esa es la condición. En el why, la condición se pregunta al principio o al final, al principio.",
+        "start": 446.9,
+        "end": 455.18
+    },
+    {
+        "text": " Y yo voy a entrar al why siempre que la condición sea verdadera. Si la condición es falsa, me voy.",
+        "start": 455.18,
+        "end": 464.42
+    },
+    {
+        "text": " Y cuando es que puede no ejecutarse nunca. Cuando de una la primera vez que preguntas por la",
+        "start": 465.42,
+        "end": 472.82
+    },
+    {
+        "text": " condición ya te da que falsa, ahí se fue. Distinto es al repid. El cuerpo siempre se ejecuta por lo menos",
+        "start": 472.82,
+        "end": 481.58000000000004
+    },
+    {
+        "text": " una vez, porque la pregunta sea al final. Entonces yo entro ejecuto por lo menos una vez la",
+        "start": 481.58000000000004,
+        "end": 491.42
+    },
+    {
+        "text": " secuencia y pregunto por la condición en que caso vuelvo a entrar al repid. Mientras que la",
+        "start": 491.42,
+        "end": 498.58000000000004
+    },
+    {
+        "text": " condición sea falsa, yo voy a salir del repid cuando la condición sea verdadera, en ese sentido",
+        "start": 498.58000000000004,
+        "end": 505.5
+    },
+    {
+        "text": " salre vez que el why. ¿Está bien? ¿Hasta acá? Bien. Pragmática del FOR. Esto significa vamos a",
+        "start": 505.5,
+        "end": 518.46
+    },
+    {
+        "text": " repasar aquellas cuestiones importantes del FOR. ¿Cuándo corresponde usarlo? ¿Cuándo no corresponde",
+        "start": 518.46,
+        "end": 525.94
+    },
+    {
+        "text": " usarlo? ¿Qué cosa se está bien hacer con un FOR? ¿Qué cosa se está mal hacer con un FOR?",
+        "start": 525.94,
+        "end": 531.7
+    },
+    {
+        "text": " Entonces, la idea es repetir algo N veces, donde N allí es una expresión entera. Por ejemplo,",
+        "start": 531.7,
+        "end": 546.0600000000001
+    },
+    {
+        "text": " esto lo que hace es, escribe N esterístico en la salida. Ese FOR comienza en uno, termina N y cada vez",
+        "start": 546.8599999999999,
+        "end": 555.54
+    },
+    {
+        "text": " que entra imprimiuna esterístico. Eso es un ejemplo de FOR bien usado o mal usado. Bien usado.",
+        "start": 555.54,
+        "end": 563.8199999999999
+    },
+    {
+        "text": " Dejar en elineas. Es como el anterior, pero en vez de imprimir una esterístico que imprimimos.",
+        "start": 566.06,
+        "end": 571.7399999999999
+    },
+    {
+        "text": " Más que un espacio, un salto de línea popularmente llamado enter. Entonces,",
+        "start": 572.74,
+        "end": 580.5
+    },
+    {
+        "text": " esto lo que hace es, salta N veces de línea. Digamos, da N veces enter. Esto también está bien usado.",
+        "start": 580.5,
+        "end": 587.74
+    },
+    {
+        "text": " Sabemos cuando empieza, sabemos cuando termina y de a cuanto aumenta. De a uno.",
+        "start": 590.22,
+        "end": 596.46
+    },
+    {
+        "text": " La variable de control del FOR siempre tiene que ser intayar. Siempre no. Puede ser char o incluso",
+        "start": 597.46,
+        "end": 608.46
+    },
+    {
+        "text": " podría ser bule. En serio, un forme de raro porque sería cuantas veces, dos veces, a lo máximo.",
+        "start": 608.46,
+        "end": 615.22
+    },
+    {
+        "text": " En realidad, depende de si empezas en FOLSI, termina Centro. Vamos a ver más adelante que yo",
+        "start": 615.22,
+        "end": 622.86
+    },
+    {
+        "text": " puede usar como variable de control del FOR, cualquier variable que parten esca un tipo lo que se",
+        "start": 622.86,
+        "end": 628.78
+    },
+    {
+        "text": " llama ordinal. Ordinal es que los elementos se pueden poner como en una fila imaginaria.",
+        "start": 628.78,
+        "end": 634.22
+    },
+    {
+        "text": " Dicho por la contrari, ¿qué es lo que no podemos usar como contador de un FOR, un real?",
+        "start": 634.22,
+        "end": 640.14
+    },
+    {
+        "text": " Bien.",
+        "start": 642.86,
+        "end": 643.42
+    },
+    {
+        "text": " Otros ejemplos de uso correcto del FOR, por ejemplo, una función numérica expresada por algún",
+        "start": 643.42,
+        "end": 654.8199999999999
+    },
+    {
+        "text": " tipo de sumatoria o de productoria. Este fragmento de programa calcula el factorial de un número,",
+        "start": 654.8199999999999,
+        "end": 664.18
+    },
+    {
+        "text": " el factorial de cuanto, de N. Tenemos una variable que le damos valor inicial uno y este FOR",
+        "start": 664.7399999999999,
+        "end": 675.66
+    },
+    {
+        "text": " cuántas veces se va a ser. N veces no. Desde dos hasta N cuántas veces son. N menos uno, pero no importa",
+        "start": 675.66,
+        "end": 685.9
+    },
+    {
+        "text": " porque yo sé dónde empiezo y dónde termino. O sea que está bien, ese FOR. Y esta instrucción es",
+        "start": 685.9,
+        "end": 693.42
+    },
+    {
+        "text": " una instrucción muy especial que en nombre le habíamos dado a las instrucciones de este tipo.",
+        "start": 693.42,
+        "end": 696.78
+    },
+    {
+        "text": " Instrucciones de acumulación. ¿Cómo nos damos cuenta que es una instrucción de acumulación?",
+        "start": 696.78,
+        "end": 702.2199999999999
+    },
+    {
+        "text": " Porque la variable aparece a la derecha y a la izquierda. ¿Cómo se lee toda asignación?",
+        "start": 704.2199999999999,
+        "end": 709.18
+    },
+    {
+        "text": " De derecha izquierda. Se toma el valor actual que tiene factorial, se lo multiplica por I y el",
+        "start": 710.18,
+        "end": 716.4599999999999
+    },
+    {
+        "text": " resultado se guarda en factorial. O sea que factorial va a ir acumulando un valor conforme se va",
+        "start": 716.46,
+        "end": 724.14
+    },
+    {
+        "text": " ejecutando el FOR. Esa es un ejemplo, otro ejemplo, calcular una potencia. La potencia le inicializamos",
+        "start": 724.14,
+        "end": 734.62
+    },
+    {
+        "text": " en uno y después vamos desde uno hasta el exponente, de uno a cinco. Entonces que estamos haciendo,",
+        "start": 734.62,
+        "end": 741.5400000000001
+    },
+    {
+        "text": " multiplicamos la potencia por la base y el resultado lo guardamos en potencia. Por ejemplo, si base es",
+        "start": 741.8199999999999,
+        "end": 750.06
+    },
+    {
+        "text": " dos y n vale, perdón, y exponente vale cinco, que vamos a estar calculando ahí. Dos a la cinco, dos por dos por dos por dos por dos,",
+        "start": 750.06,
+        "end": 759.14
+    },
+    {
+        "text": " cinco veces. Pero eso otro ejemplo de lo mismo, esta también es una instrucción de acumulación.",
+        "start": 759.14,
+        "end": 765.9399999999999
+    },
+    {
+        "text": " Y estas instrucciones son muy importantes porque son las que nos permiten ir llevando un cálculo",
+        "start": 766.9000000000001,
+        "end": 774.7
+    },
+    {
+        "text": " conforme la iteración se ejecuta. En ambos casos sabemos dónde empieza y sabemos dónde termina.",
+        "start": 774.7,
+        "end": 783.5400000000001
+    },
+    {
+        "text": " ¿Qué da claro?",
+        "start": 784.74,
+        "end": 785.5400000000001
+    },
+    {
+        "text": " Bueno, acá tenemos un ejemplo de un FOR donde la variable de controles de tipo char. Empieza en el",
+        "start": 786.18,
+        "end": 800.02
+    },
+    {
+        "text": " carácter A, acuerdense que los valores de tipo char se ponen entre comillas y va desde la A hasta la",
+        "start": 800.02,
+        "end": 807.0999999999999
+    },
+    {
+        "text": " A, pasando por todos los caracteres que hay en el medio. Concretamente todas las mayúsculas. Cada vez",
+        "start": 807.1,
+        "end": 816.02
+    },
+    {
+        "text": " que entro al FOR, ¿qué es lo que muestra? Primero que muestra. El propio carácter, luego una flechita",
+        "start": 816.02,
+        "end": 824.62
+    },
+    {
+        "text": " que se dibuja así y que hacía la función hordo. Devolvía el valor numérico correspondiente a la",
+        "start": 824.62,
+        "end": 833.74
+    },
+    {
+        "text": " codificación interna de los caracteres, por ejemplo la codificación ASCII, o la que sea que utilice el",
+        "start": 833.74,
+        "end": 839.62
+    },
+    {
+        "text": " convilador. ¿Sabía? ¿Cuántas veces se va a ejecutar esto? Tantas veces como caracteres allá",
+        "start": 839.62,
+        "end": 850.66
+    },
+    {
+        "text": " desde la A hasta la A, sí en el alfabeto inglés creo que son 24 o 25, la cantidad que sea. Pero",
+        "start": 850.66,
+        "end": 859.66
+    },
+    {
+        "text": " observen que en este caso la variable de control no era entera. La primera vez que entro carácter A,",
+        "start": 859.66,
+        "end": 865.78
+    },
+    {
+        "text": " la siguiente B es B, la siguiente B es B, y así hasta llegar a Z. ¿Sabía? Es valido mostrar en",
+        "start": 865.78,
+        "end": 877.6999999999999
+    },
+    {
+        "text": " pantalla el valor de la variable de control, que es lo que no es valido con la variable de control,",
+        "start": 877.6999999999999,
+        "end": 883.74
+    },
+    {
+        "text": " modificar su valor. Eso dijimos que lo teníamos expresamente prohibido, ¿por qué razón?",
+        "start": 883.74,
+        "end": 889.58
+    },
+    {
+        "text": " No sé si es porque creamos un loop, porque estamos alterando la cantidad de veces que se va a",
+        "start": 892.74,
+        "end": 900.82
+    },
+    {
+        "text": " ejecutar el for. La idea es que la cantidad de veces que se va a ejecutar el for, que he",
+        "start": 900.82,
+        "end": 905.62
+    },
+    {
+        "text": " determinado pura y exclusivamente por qué, por el origen y el destino. ¿Sabía? Y dejar que la",
+        "start": 905.62,
+        "end": 914.5
+    },
+    {
+        "text": " variable de control vaya avanzando naturalmente. ¿Qué va claro eso? Bien. Mostrar los múltiples de",
+        "start": 914.5,
+        "end": 924.1
+    },
+    {
+        "text": " m en el intervalo A, ¿vale? Empezamos en A, terminamos en B, ¿qué pasa si A fuera mayor A?",
+        "start": 924.1,
+        "end": 934.5
+    },
+    {
+        "text": " Directamente no va a entrar, está mal que no entre, no está bien que no entre. Ahora si B es mayor",
+        "start": 935.9,
+        "end": 944.14
+    },
+    {
+        "text": " o igual que A, hay que va a pasar. ¿Va a entrar? Y cuántas veces se va a ejecutar? B menos A, o sea,",
+        "start": 944.14,
+        "end": 953.02
+    },
+    {
+        "text": " la distancia que hay entre A y B. Acá tenemos un ejemplo donde estamos combinando un for con una",
+        "start": 953.02,
+        "end": 960.06
+    },
+    {
+        "text": " selección simple. Cada vez que entramos, ¿qué preguntamos acá? Esto era el resto de dividir",
+        "start": 960.06,
+        "end": 971.62
+    },
+    {
+        "text": " num entre M, si eso me da cero, ¿qué quiere decir? Que efectivamente num es múltiplo de M, en",
+        "start": 971.62,
+        "end": 984.1
+    },
+    {
+        "text": " cuyo caso lo mostramos. Es validar num acá y acá, ¿por qué? Porque lo estás mostrando o estás",
+        "start": 984.1,
+        "end": 993.1
+    },
+    {
+        "text": " consultando su valor, no lo estás modificando. ¿Tú haces estas cosas ya le hace mochar lado? La idea",
+        "start": 993.1,
+        "end": 1000.1800000000001
+    },
+    {
+        "text": " es reafirmarlas. Bien, ahora cosas que no debemos hacer con form. Errores, errores conceptuales,",
+        "start": 1000.18,
+        "end": 1013.66
+    },
+    {
+        "text": " no son errores que detecta la compilación. Tampoco son errores de ejecución, son errores en el",
+        "start": 1013.66,
+        "end": 1021.8199999999999
+    },
+    {
+        "text": " sentido de que no es un buen estilo de programación. Por ejemplo esto, preguntar si A es menor",
+        "start": 1021.82,
+        "end": 1032.18
+    },
+    {
+        "text": " igual que B es totalmente innecesario, ¿por qué? El propio for ya se se controla, si A fuera mayor",
+        "start": 1032.18,
+        "end": 1044.5
+    },
+    {
+        "text": " que B, ¿qué va a pasar? Tirecamente se va a ir, entonces no gano nada con hacer este control",
+        "start": 1044.5,
+        "end": 1051.26
+    },
+    {
+        "text": " el previo, porque si yo no pongo esto, el efecto va a ser exactamente el mismo, que si A es mayor",
+        "start": 1051.26,
+        "end": 1057.94
+    },
+    {
+        "text": " no va a entrar al for. O sea que E es E previo consultando por los bordes de la iteración,",
+        "start": 1057.94,
+        "end": 1066.82
+    },
+    {
+        "text": " no aporta nada y por lo tanto no está bueno que este. Sí. Bueno, si tú por la naturaleza de tu",
+        "start": 1067.3799999999999,
+        "end": 1085.3799999999999
+    },
+    {
+        "text": " problema, tu hubieras necesidad de hacer esta pregunta porque querés no se emitir un mensaje,",
+        "start": 1085.3799999999999,
+        "end": 1091.0
+    },
+    {
+        "text": " ahí podría llegar a ser, pero si el único propósito de este I es controlar los bordes de la",
+        "start": 1091.52,
+        "end": 1098.92
+    },
+    {
+        "text": " iteración no, ¿cabien? Porque la propieteración ya lo controla, se entendió bien,",
+        "start": 1098.92,
+        "end": 1111.28
+    },
+    {
+        "text": " hacer esto es más o menos como invocar a Satan, así, se abre la tierra, sale Satan y se lo lleva",
+        "start": 1115.88,
+        "end": 1128.16
+    },
+    {
+        "text": " al infierno y yo les doy una patada y los empujo. No, yo me quedé de este lado porque no hago eso,",
+        "start": 1128.16,
+        "end": 1137.92
+    },
+    {
+        "text": " esto es lo que dijimos 800 veces que no hay que hacer, es más, está puesto en mayúsculas,",
+        "start": 1140.4,
+        "end": 1146.2
+    },
+    {
+        "text": " no modificar la variable de control, esta es la variable de control, debemos dejar que naturalmente",
+        "start": 1146.2,
+        "end": 1154.16
+    },
+    {
+        "text": " ella vaya avanzando desde unos hasta diez, no debemos modificar su valor dentro de la estructura",
+        "start": 1154.16,
+        "end": 1162.8000000000002
+    },
+    {
+        "text": " repetitiva, queda claro, si ustedes hacen esto en un parcial es un error gravísimo y los errores",
+        "start": 1162.8000000000002,
+        "end": 1173.52
+    },
+    {
+        "text": " gravísimos restan muchísimos puntos, muchísimos, así que por favor no modificar la variable de control,",
+        "start": 1173.52,
+        "end": 1183.16
+    },
+    {
+        "text": " quedó claro, esto sí está bien, porque qué les hacemos acá, consultas su valor para hacer una",
+        "start": 1184.16,
+        "end": 1193.16
+    },
+    {
+        "text": " cuenta y mostrar en pantalla, consultarla está bien, mostrarla está bien, modificarlas lo que no",
+        "start": 1193.16,
+        "end": 1199.76
+    },
+    {
+        "text": " está bien, se entendió bien, bueno, modificar el valor de la variable de control para",
+        "start": 1199.76,
+        "end": 1213.76
+    },
+    {
+        "text": " forzar la terminación, esto en realidad es un caso particular de algo más general, voy a volver a",
+        "start": 1213.76,
+        "end": 1221.52
+    },
+    {
+        "text": " leer la oración, modificar el valor de la variable de control, punto, ya eso no lo debemos hacer,",
+        "start": 1221.52,
+        "end": 1228.76
+    },
+    {
+        "text": " no importa para qué, no debemos hacerlo nunca, pero un error de concepto muy importante que se suele",
+        "start": 1228.76,
+        "end": 1236.12
+    },
+    {
+        "text": " cometer es ir haciendo cosas y en algún punto decir quiero irme ya del foro, entonces por ejemplo",
+        "start": 1236.12,
+        "end": 1246.4
+    },
+    {
+        "text": " imaginemos que intentos vale uno, entramos, leemos un número, vamos a suponer que el número leído es",
+        "start": 1246.4,
+        "end": 1254.2
+    },
+    {
+        "text": " igual al número, entonces que va a pasar, no se va a cumplir esta condición, no vamos a ir a",
+        "start": 1254.2,
+        "end": 1260.3600000000001
+    },
+    {
+        "text": " él y qué estamos haciendo acá, modificando la variable de control para qué, para terminar de golpe,",
+        "start": 1260.3600000000001,
+        "end": 1267.52
+    },
+    {
+        "text": " qué dice ahí, no modificar la variable de control, si puede llegar a suceder algo, que a mí me",
+        "start": 1267.52,
+        "end": 1278.0800000000002
+    },
+    {
+        "text": " significa tener que terminar la iteración, esto no debería ser un foro, debería ser un",
+        "start": 1278.08,
+        "end": 1283.6799999999998
+    },
+    {
+        "text": " while, porque el while es la herramienta correcta para ese caso, de nuevo esto compila, pero desde",
+        "start": 1283.6799999999998,
+        "end": 1292.84
+    },
+    {
+        "text": " el punto de vista conceptual no es una buena práctica de programación,",
+        "start": 1292.84,
+        "end": 1296.4399999999998
+    },
+    {
+        "text": " si podés no solamente perder la tarea por esto, sino que además voy a venir yo y te voy a",
+        "start": 1296.44,
+        "end": 1309.76
+    },
+    {
+        "text": " rosiar con un glance a llamas, sutil y está quedando grabado, bien, bueno, acá hay otra cosa que tampoco",
+        "start": 1309.76,
+        "end": 1324.28
+    },
+    {
+        "text": " debemos hacer con la variable de control, dijimos, la variable de control toma como valor inicial",
+        "start": 1324.28,
+        "end": 1331.6399999999999
+    },
+    {
+        "text": " cual, algo uno y la última vez que entra al foro cuanto vale, algo dos, que no, algo dos,",
+        "start": 1331.6399999999999,
+        "end": 1342.68
+    },
+    {
+        "text": " después que termina el foro qué pasaba con el valor de la variable de control, no se sabe, queda",
+        "start": 1342.68,
+        "end": 1351.32
+    },
+    {
+        "text": " indeterminado, no podemos suponer nada respecto al valor de la variable de control cuando el foro",
+        "start": 1351.32,
+        "end": 1358.24
+    },
+    {
+        "text": " se terminó, ¿cabien? nuestro instinto nos haría suponer que el valor final es cual, algo dos,",
+        "start": 1358.24,
+        "end": 1367.96
+    },
+    {
+        "text": " pero no lo sabemos, puede haber un compilador en el cual eso no pase, si vos después del foro,",
+        "start": 1367.96,
+        "end": 1375.8
+    },
+    {
+        "text": " ¿quieres usar la variable de control en el medio acá que hay que hacer?",
+        "start": 1375.8,
+        "end": 1380.6
+    },
+    {
+        "text": " Inicializarla con algún nuevo valor, ya sea porque se lo asignas, ya sea porque se lo pedís al",
+        "start": 1380.6,
+        "end": 1387.76
+    },
+    {
+        "text": " usuario lo que sea, pero no suponer nunca ningún valor en especial para la variable de control cuando",
+        "start": 1387.76,
+        "end": 1394.04
+    },
+    {
+        "text": " el foro termino, ¿sí? eso compila, porque la variable fue declarada arriba en la sección de bar,",
+        "start": 1394.04,
+        "end": 1401.1599999999999
+    },
+    {
+        "text": " al estar declarada en la sección bar es usable en todo el programa, todas estas cosas que vimos",
+        "start": 1401.88,
+        "end": 1408.0800000000002
+    },
+    {
+        "text": " compilan pero no se deben hacer, ¿sí? ¿si se va a usar la variable antes del foro? ¿qué pasa cuando",
+        "start": 1408.0800000000002,
+        "end": 1416.64
+    },
+    {
+        "text": " llegas al foro quizás el valor que tenía con algo uno? y después nos sabemos con qué queda,",
+        "start": 1416.64,
+        "end": 1424.44
+    },
+    {
+        "text": " queda indefinida, ¿cabien? sí, repito, todo esto ya lo hemos visto, estamos reforzándonos,",
+        "start": 1424.44,
+        "end": 1432.72
+    },
+    {
+        "text": " no sabemos, porque su valor es indefinido, capaz que el compilador A te muestra algo dos,",
+        "start": 1435.92,
+        "end": 1442.04
+    },
+    {
+        "text": " capaz que el compilador B te muestra basura, no sabes,",
+        "start": 1442.04,
+        "end": 1445.64
+    },
+    {
+        "text": " más errores de concepto conform, a midar unif innecesariamente dentro del cuerpo de la",
+        "start": 1455.4,
+        "end": 1465.44
+    },
+    {
+        "text": " iteración, veamos este ejemplo, queremos desplegar los números que hay en el intervalo A B separados",
+        "start": 1465.44,
+        "end": 1475.52
+    },
+    {
+        "text": " por coma, queremos desplegar por ejemplo si A vale dos y B vale cinco, que vamos a querer",
+        "start": 1475.52,
+        "end": 1483.0
+    },
+    {
+        "text": " mostrar en pantalla, vamos a querer mostrar esto, dos coma tres coma cuatro coma cinco, ahora después",
+        "start": 1483.0,
+        "end": 1495.76
+    },
+    {
+        "text": " del cinco no queremos una coma, entonces un primer intento podría ser esto, hacemos el foro que",
+        "start": 1495.76,
+        "end": 1507.32
+    },
+    {
+        "text": " va desde A hasta B, ese foro está bien, ahora entramos, ¿qué hacemos? mostramos el valor de I que",
+        "start": 1507.32,
+        "end": 1515.9199999999998
+    },
+    {
+        "text": " la primera vez va a ser cuanto, dos, ¿qué estamos preguntando acá? sí es distinto de B, ¿verdad?",
+        "start": 1515.9199999999998,
+        "end": 1527.48
+    },
+    {
+        "text": " bueno sí es distinto de B que muestra acá, la coma y si no que hace, da un enter, esto compila,",
+        "start": 1528.0,
+        "end": 1538.04
+    },
+    {
+        "text": " esto funciona, pero no es una buena práctica porque hace trabajar innecesariamente al programa,",
+        "start": 1538.04,
+        "end": 1544.6
+    },
+    {
+        "text": " a ver cuántas veces va a valer I, B, una sola la última y todas las veces anteriores, no va a",
+        "start": 1544.6,
+        "end": 1555.48
+    },
+    {
+        "text": " valer, entonces vamos a preguntar cada vez, es distinto de B, muestra una coma, es distinto de B,",
+        "start": 1555.48,
+        "end": 1560.88
+    },
+    {
+        "text": " muestra una coma, es distinto de B, muestra una coma, cuando sabemos que el problema está en el",
+        "start": 1560.88,
+        "end": 1566.28
+    },
+    {
+        "text": " borde, ¿sabien? repito eso compila y funciona, ahora acá tenemos una solución mucho mejor y más",
+        "start": 1566.28,
+        "end": 1574.8
+    },
+    {
+        "text": " eficiente, ¿qué quiere decir más eficiente? menos se ejecutan menos instrucciones, ¿sabien?",
+        "start": 1574.8,
+        "end": 1584.04
+    },
+    {
+        "text": " miremos lo que pasa acá, mostramos el valor inicial, o sea en aquel ejemplo dos, entonces",
+        "start": 1584.04,
+        "end": 1594.52
+    },
+    {
+        "text": " empezamos con I, esto quiere decir en el siguiente de A, ¿sabien? que en el caso de los enteros que",
+        "start": 1594.52,
+        "end": 1603.76
+    },
+    {
+        "text": " sería el siguiente de A, sería tres, arranco en tres y voy desde tres hasta cuando, hasta cinco,",
+        "start": 1603.76,
+        "end": 1612.76
+    },
+    {
+        "text": " entonces que hago, muestro una coma y el tres, vuelvo a entrar y que muestro, una coma y el cuatro,",
+        "start": 1612.76,
+        "end": 1621.28
+    },
+    {
+        "text": " vuelvo a entrar y que muestro, una coma y el cinco y cuando salgo lo hoy el enter,",
+        "start": 1621.28,
+        "end": 1628.4
+    },
+    {
+        "text": " entonces fíjense que me ahorré hacer que cosa cada vez que entro, consultar por el valor de I",
+        "start": 1628.4,
+        "end": 1636.8400000000001
+    },
+    {
+        "text": " me ahorré una pregunta en cada entrada, en esta versión lo único que hacemos cuando entramos que",
+        "start": 1636.8400000000001,
+        "end": 1642.52
+    },
+    {
+        "text": " es escribir y lo que era el caso borde lo controlamos al principio, mostramos el valor inicial y después",
+        "start": 1642.52,
+        "end": 1653.48
+    },
+    {
+        "text": " a partir del tres, en adelante hicimos coma el número, entiende? los dos códigos muestran lo",
+        "start": 1653.48,
+        "end": 1662.84
+    },
+    {
+        "text": " mismo pero este es más eficiente, ¿sabas? entonces si ustedes están en una situación en la cual en",
+        "start": 1662.84,
+        "end": 1669.56
+    },
+    {
+        "text": " alguno de los bordes ocurre algo especial no lo controlen con un ispa dentro cada vez que entran",
+        "start": 1669.56,
+        "end": 1677.08
+    },
+    {
+        "text": " porque van a preguntar innecessariamente todas las veces cuando un único caso relevante es el",
+        "start": 1677.8799999999999,
+        "end": 1683.8
+    },
+    {
+        "text": " borde, hagan algo de este estilo, procesen lo que sería el borde o uno de los bordes aparte,",
+        "start": 1683.8,
+        "end": 1690.6799999999998
+    },
+    {
+        "text": " se entendió? bueno, esto es otro ejemplo de dos códigos que compilan y se ejecutan pero este",
+        "start": 1694.1999999999998,
+        "end": 1701.76
+    },
+    {
+        "text": " es preferible, sí probablemente tendrías que mostrar el número y la coma después y el b lo",
+        "start": 1701.76,
+        "end": 1711.24
+    },
+    {
+        "text": " mostrarías al final abajo, es totalmente equivalente y es igual de valio, bien, bueno vamos",
+        "start": 1711.24,
+        "end": 1720.32
+    },
+    {
+        "text": " ver el yay, repasar cosas que está bien hacer con el yay cosas que no está bien hacer con el yay",
+        "start": 1720.32,
+        "end": 1727.44
+    },
+    {
+        "text": " bueno, cuando utilizar el yay, cuando no se conoce a priori el número de repeticiones que",
+        "start": 1732.64,
+        "end": 1743.6
+    },
+    {
+        "text": " incluso podrían ser cuántas, cero ninguna, bien algunos ejemplos de problemas que se pueden",
+        "start": 1743.6,
+        "end": 1754.12
+    },
+    {
+        "text": " resolver con yay, un ejemplo puntual pero no el único son los problemas de lectura con centinela,",
+        "start": 1754.12,
+        "end": 1763.0
+    },
+    {
+        "text": " estos serán problemas en los cuales yo iba leyendo un valor por teclado hasta que pasara",
+        "start": 1764.1999999999998,
+        "end": 1769.6399999999999
+    },
+    {
+        "text": " que cosa, hasta que aparezca el centinela y que es el centinela, es un valor especial que a vos te",
+        "start": 1769.6399999999999,
+        "end": 1777.6399999999999
+    },
+    {
+        "text": " indica que vas a cortar la ejecución y te vas a ir, llegamos a ver incluso un esqueleto",
+        "start": 1777.64,
+        "end": 1784.4
+    },
+    {
+        "text": " genérico, cómo funcionaba la lectura con centinela, donde teníamos que leer el primer valor,",
+        "start": 1784.4,
+        "end": 1789.0400000000002
+    },
+    {
+        "text": " antes del yay, porque podría pasar que lo que el usuario te ingresa la primera vez sea que cosa,",
+        "start": 1790.0400000000002,
+        "end": 1796.0400000000002
+    },
+    {
+        "text": " el centinela en curso caso ya no entras, ahora si entras al yay es porque lo que leí usted no era",
+        "start": 1796.0400000000002,
+        "end": 1804.8000000000002
+    },
+    {
+        "text": " el centinela, ahí ases las instrucciones que coloques dentro del yay y la última que tiene que ser,",
+        "start": 1804.8,
+        "end": 1811.84
+    },
+    {
+        "text": " leer de vuelta en la variable que está usando, de hecho el primer ejemplo que vimos de yay era un",
+        "start": 1813.36,
+        "end": 1821.2
+    },
+    {
+        "text": " ejemplo de lectura con centinela y dijimos no es el único tipo de problemas que se puede resolver",
+        "start": 1821.2,
+        "end": 1827.36
+    },
+    {
+        "text": " con yay es uno de varios posibles, otro ejemplo la división por restas, esto lo habíamos,",
+        "start": 1827.36,
+        "end": 1837.4399999999998
+    },
+    {
+        "text": " se acuerdan de la primera clase cuando repartíamos los lápices, bueno eso era un ejemplo digamos",
+        "start": 1837.4399999999998,
+        "end": 1844.9599999999998
+    },
+    {
+        "text": " llevado a un caso real de lo que era la división por restas, la división por restas se puede",
+        "start": 1844.9599999999998,
+        "end": 1851.36
+    },
+    {
+        "text": " programar con un yay y de hecho aparece en una de las diapositivas de clases 5, es otro ejemplo de",
+        "start": 1851.36,
+        "end": 1857.84
+    },
+    {
+        "text": " uso de yay que no es una lectura con centinela, otro ejemplo más se puede calcular el máximo",
+        "start": 1857.84,
+        "end": 1868.9599999999998
+    },
+    {
+        "text": " común divisor entre dos naturales, que era el máximo común divisor entre dos naturales,",
+        "start": 1868.96,
+        "end": 1876.48
+    },
+    {
+        "text": " el número más grande posible que el resto da cero para quienes, para los dos números es el",
+        "start": 1880.48,
+        "end": 1891.52
+    },
+    {
+        "text": " valor más grande posible que te divide tanto a m como a m que lo divide a quiere decir que el",
+        "start": 1891.52,
+        "end": 1897.96
+    },
+    {
+        "text": " resto da cero, lo que tenemos acá es una función matemática que dice cómo se puede",
+        "start": 1897.96,
+        "end": 1906.3600000000001
+    },
+    {
+        "text": " calcular el máximo común divisor entre dos números cuales quiera, si yo quiero calcular el",
+        "start": 1906.3600000000001,
+        "end": 1913.72
+    },
+    {
+        "text": " máximo común divisor entre un número y sí mismo, el resultado es el propio número, ahora si",
+        "start": 1913.72,
+        "end": 1920.3600000000001
+    },
+    {
+        "text": " yo quiero calcular el máximo común divisor entre dos números diferentes, bueno, cm es mayor que n,",
+        "start": 1920.36,
+        "end": 1928.36
+    },
+    {
+        "text": " lo hacemos así y cm es menor que n lo hacemos de esta manera, volvemos a calcular el máximo común",
+        "start": 1928.36,
+        "end": 1936.1999999999998
+    },
+    {
+        "text": " divisor entre la resta y el otro, bueno ese comportamiento se puede programar con un yay, no me",
+        "start": 1936.1999999999998,
+        "end": 1946.9199999999998
+    },
+    {
+        "text": " voy a detener más en este ejemplo porque es un ejercicio del práctico 6 que ustedes transformen",
+        "start": 1946.92,
+        "end": 1953.1200000000001
+    },
+    {
+        "text": " estas formulitas en un programista que mediante yay calcule el máximo común divisor, es un lindo",
+        "start": 1953.1200000000001,
+        "end": 1960.04
+    },
+    {
+        "text": " ejercicio que queda como parte del práctico 6, lo que tenemos acá son tres ejemplos en los cuales",
+        "start": 1960.04,
+        "end": 1967.24
+    },
+    {
+        "text": " la cantidad de repeticiones puede ser cero, o sea en los tres ejemplos podría pasar que cuando",
+        "start": 1967.24,
+        "end": 1973.2
+    },
+    {
+        "text": " llegas a la condición del yay preguntas y te da como, false y te vas, ok, otra situación en la cual",
+        "start": 1973.2,
+        "end": 1988.68
+    },
+    {
+        "text": " usamos el yay, queremos ir recorriendo una secuencia de valores en búsqueda de una condición,",
+        "start": 1988.68,
+        "end": 1998.0800000000002
+    },
+    {
+        "text": " si se encuentra un valor que cumple la condición, la recorrida termina, ahí dice tempranamente, o sea",
+        "start": 1999.04,
+        "end": 2007.1599999999999
+    },
+    {
+        "text": " la idea es potencialmente yo tengo que explorar todo un rango, si fuera seguro que vamos a explorar",
+        "start": 2007.1599999999999,
+        "end": 2014.4399999999998
+    },
+    {
+        "text": " todo el rango cuál sería la estructura, por ahora si puede pasar que tengas que terminar antes,",
+        "start": 2014.4399999999998,
+        "end": 2022.1999999999998
+    },
+    {
+        "text": " ahí lo haces con un wile, con una doble condición, nosotros vimos un ejemplo cuando vimos",
+        "start": 2023.16,
+        "end": 2030.1200000000001
+    },
+    {
+        "text": " wile de este tipo de estructura, que era determinarse un número era primo, cuando nosotros vimos",
+        "start": 2030.1200000000001,
+        "end": 2039.0800000000002
+    },
+    {
+        "text": " este ejemplo y vamos desde dos hasta cuánto, hasta trum de la raíz cuadrada del número,",
+        "start": 2039.0800000000002,
+        "end": 2046.96
+    },
+    {
+        "text": " había una propiedad matemática que nos decía que teníamos que ir como mucho hasta ahí,",
+        "start": 2047.52,
+        "end": 2051.96
+    },
+    {
+        "text": " que era más eficiente que ir, hasta todo el número y aún más eficiente que ir a la mitad,",
+        "start": 2051.96,
+        "end": 2058.16
+    },
+    {
+        "text": " eso era un ejemplo puntual, pero eso es un ejemplo puntual de una estructura más genérica que",
+        "start": 2058.16,
+        "end": 2064.88
+    },
+    {
+        "text": " es esta que está acá, en este tipo de problemas vos empezás en el primer valor de tu rango,",
+        "start": 2064.88,
+        "end": 2072.96
+    },
+    {
+        "text": " y como mucho podría ser hasta cuál, hasta el último, por eso es que tenemos en el wile esta",
+        "start": 2072.96,
+        "end": 2082.76
+    },
+    {
+        "text": " condición, mientras el valor sea menor igual que el último, ¿abien? Y después viene la segunda",
+        "start": 2082.76,
+        "end": 2091.08
+    },
+    {
+        "text": " pregunta, mientras que el valor sea menor igual que el último y no se cumpla la condición que",
+        "start": 2091.08,
+        "end": 2099.08
+    },
+    {
+        "text": " yo estoy buscando para mi valor, quiere decir que todavía no encontré lo que estaba buscando",
+        "start": 2099.08,
+        "end": 2104.36
+    },
+    {
+        "text": " encontrar, ahí que hago, entro y avanza uno, de nuevo, este siguiente es como el sux, quiere decirle",
+        "start": 2104.36,
+        "end": 2113.16
+    },
+    {
+        "text": " sumar su uno al valor, volveza a preguntar, llegué al final si la respuesta es si que pasa,",
+        "start": 2113.16,
+        "end": 2122.24
+    },
+    {
+        "text": " salí y qué recorri, recorri todo el rango, ahora si la respuesta es no que hago,",
+        "start": 2123.24,
+        "end": 2131.08
+    },
+    {
+        "text": " pero he agunto, digo bueno que no llegué al final de mi rango, si se cumple la condición que",
+        "start": 2131.08,
+        "end": 2139.64
+    },
+    {
+        "text": " quiero que se cumpla, si la respuesta es si, para, si la respuesta es no que hago,",
+        "start": 2139.64,
+        "end": 2145.7599999999998
+    },
+    {
+        "text": " entro y avanza otro más, este esqueleto chiquilines gravense lo a fuego porque es la estructura",
+        "start": 2146.32,
+        "end": 2156.6400000000003
+    },
+    {
+        "text": " genérica de cualquier búsqueda, en el peor de los casos voy a explorar todo el rango porque",
+        "start": 2156.6400000000003,
+        "end": 2164.1200000000003
+    },
+    {
+        "text": " ninguno de los valores va a cumplir la condición, ahora donde alguno durante el viaje la cumpla que",
+        "start": 2164.1200000000003,
+        "end": 2170.44
+    },
+    {
+        "text": " voy a hacer, corto y me voy, avanzando de a uno o de lo que corresponda, y este ejemplo le",
+        "start": 2170.44,
+        "end": 2181.12
+    },
+    {
+        "text": " estamos viendo avanzando de a uno, esto funciona gracias a que fripascal evalua las expresiones",
+        "start": 2181.12,
+        "end": 2189.52
+    },
+    {
+        "text": " uleanas como, por circuito corto, vamos a recordar el circuito corto, por ejemplo en el caso del",
+        "start": 2189.52,
+        "end": 2195.92
+    },
+    {
+        "text": " que va a ser, si la primera da tru va a preguntar por la segunda, porque para que el",
+        "start": 2196.88,
+        "end": 2206.44
+    },
+    {
+        "text": " and de verdadero que tiene que pasar, las dos tienen que ser verdaderos, o sea que en el caso",
+        "start": 2206.44,
+        "end": 2212.32
+    },
+    {
+        "text": " que la primera parte del and de tru, bueno ahí sí fripascal va a preguntar por la segunda,",
+        "start": 2212.32,
+        "end": 2217.76
+    },
+    {
+        "text": " ahora qué pasa si la primera condición yadio folso, corta y ni siquiera el valúa la segunda,",
+        "start": 2217.76,
+        "end": 2225.84
+    },
+    {
+        "text": " nosotros incluso llegamos a ver algunos ejemplos de este estilo en el práctico de",
+        "start": 2226.84,
+        "end": 2231.44
+    },
+    {
+        "text": " wild, en el práctico de wild no, perdón en el práctico donde vimos expresiones uleanas de qué",
+        "start": 2231.44,
+        "end": 2238.7200000000003
+    },
+    {
+        "text": " pasaba con algunas expresiones uleanas cuando se evaluaba con circuito corto y cuando no se evaluaba",
+        "start": 2238.7200000000003,
+        "end": 2245.6800000000003
+    },
+    {
+        "text": " con circuito corto, en los casos en los que no se evaluaba con circuito corto quiere decir que si o",
+        "start": 2245.6800000000003,
+        "end": 2251.76
+    },
+    {
+        "text": " si preguntaba por la segunda y qué podía pasar, le podría dar un error de ejecución que se rompiera,",
+        "start": 2252.32,
+        "end": 2259.44
+    },
+    {
+        "text": " este esquema funciona gracias a la evaluación de expresiones por circuito corto,",
+        "start": 2259.44,
+        "end": 2266.32
+    },
+    {
+        "text": " ¿a bien? la cual dijimos para todo el curso se asume válida,",
+        "start": 2266.32,
+        "end": 2271.36
+    },
+    {
+        "text": " salvo que algún ejercicio expresamente les diga, estamos en pascal estándar y no en fripascal",
+        "start": 2271.36,
+        "end": 2279.1600000000003
+    },
+    {
+        "text": " o en un contexto de evaluación por circuito corto, ¿ok? para entender esto ustedes imagínense lo",
+        "start": 2279.16,
+        "end": 2286.68
+    },
+    {
+        "text": " siguiente, tenemos, no sé, 100 puertas en una calle, 100 casitas y estamos buscando a Juan,",
+        "start": 2286.68,
+        "end": 2294.16
+    },
+    {
+        "text": " ¿cómo haríamos nosotros para buscar a Juan? golpeamos la primera puerta, es la última,",
+        "start": 2294.16,
+        "end": 2302.3199999999997
+    },
+    {
+        "text": " no, entonces pasamos a la segunda condición, la condición ahí cuál va a ser, está Juan, si",
+        "start": 2302.84,
+        "end": 2311.7200000000003
+    },
+    {
+        "text": " me da que no que vamos a hacer, no se cumple la condición y vamos a pasar a donde, a la siguiente",
+        "start": 2311.7200000000003,
+        "end": 2318.6800000000003
+    },
+    {
+        "text": " puerta, la puerta número 2, estando parados en la puerta número 2, vamos a preguntar, es la",
+        "start": 2318.6800000000003,
+        "end": 2325.44
+    },
+    {
+        "text": " última, no vamos a preguntar por la segunda, está Juan, vamos a poner que no está Juan,",
+        "start": 2325.44,
+        "end": 2332.36
+    },
+    {
+        "text": " que vamos a hacer, vamos a ir a la tercera, entramos a la tercera, preguntamos, es la última,",
+        "start": 2332.36,
+        "end": 2340.0
+    },
+    {
+        "text": " no, no es la última, preguntamos si está Juan y supongamos que sí que esa era la casa de Juan,",
+        "start": 2340.0,
+        "end": 2346.6
+    },
+    {
+        "text": " ¿qué hacemos? se cumple la condición, entonces el an me da falso, me fui, me quedé con Juan",
+        "start": 2346.6,
+        "end": 2356.64
+    },
+    {
+        "text": " en la puerta número 3 y no recorri las puertas que van de la 4 de la 100, si nosotros hacemos esto",
+        "start": 2356.64,
+        "end": 2366.96
+    },
+    {
+        "text": " con 4, ¿qué vamos a hacer? le vamos a decir a Juan, yo ya te encontré, pero espera, espera que",
+        "start": 2366.96,
+        "end": 2374.48
+    },
+    {
+        "text": " voy a preguntar si estás en todas las demás y después que haya preguntado en todas las",
+        "start": 2374.48,
+        "end": 2378.68
+    },
+    {
+        "text": " demás si estás voy a volver y no voy a quedar contigo, nadie en sus anujuisios haría eso,",
+        "start": 2378.68,
+        "end": 2385.64
+    },
+    {
+        "text": " pues bien, por alguna razón ustedes muchas veces esto lo programan con 4, no, las búsquedas se programan",
+        "start": 2385.64,
+        "end": 2394.2
+    },
+    {
+        "text": " así, ok, más adelante vamos a ver un tema que son arreglos y después es otro tema que son",
+        "start": 2394.2,
+        "end": 2401.44
+    },
+    {
+        "text": " listas donde vamos a hacer búsquedas de manera abundante y este es el esquema genérico de cualquier",
+        "start": 2401.44,
+        "end": 2408.2000000000003
+    },
+    {
+        "text": " búsqueda, ¿eh? la idea es parar cuando encontré lo que estaba buscando, pero en caso que va a suceder,",
+        "start": 2408.2000000000003,
+        "end": 2417.36
+    },
+    {
+        "text": " todo el rango hasta el final, ok, bien, este is está después del y hay, fíjense que acá hay un punto",
+        "start": 2418.76,
+        "end": 2429.12
+    },
+    {
+        "text": " y como separando, bueno esta es la manera de preguntar si tuve éxito o tuve fracasso en la búsqueda,",
+        "start": 2429.12,
+        "end": 2438.04
+    },
+    {
+        "text": " si el valor es menor o igual que el último, después del y hay que significa que lo encontré antes",
+        "start": 2438.04,
+        "end": 2446.56
+    },
+    {
+        "text": " de llegar al final y corté, entonces éxito significa la búsqueda fue éxito, o sea encontré lo que",
+        "start": 2446.56,
+        "end": 2453.24
+    },
+    {
+        "text": " estaba buscando, ahora si valor se pasó del último es porque iteró todo el rango y nunca",
+        "start": 2453.24,
+        "end": 2461.7599999999998
+    },
+    {
+        "text": " encontró lo que estaba buscando y entonces avanzó uno más, cuando avanzó uno más salió por esta",
+        "start": 2461.7599999999998,
+        "end": 2468.9599999999996
+    },
+    {
+        "text": " condición y entonces cuando vimos acá esta me va a dar que no y voy a decir fracasso,",
+        "start": 2468.9599999999996,
+        "end": 2474.52
+    },
+    {
+        "text": " todo problema que implique algún tipo de búsqueda este es el esquema genérico para resolver,",
+        "start": 2476.0,
+        "end": 2482.04
+    },
+    {
+        "text": " queda claro, bien, cosas que no debemos hacer con guay, usar guay donde lo correcto sería usar",
+        "start": 2483.24,
+        "end": 2499.2799999999997
+    },
+    {
+        "text": " foro, si yo sé dónde empiezo y sé dónde termino y no hay chance de determinar antes lo que hay que",
+        "start": 2499.2799999999997,
+        "end": 2509.3999999999996
+    },
+    {
+        "text": " usar ahí es foro, fíjense este guay, este guay compila y se ejecuta bien pero qué hace,",
+        "start": 2509.4,
+        "end": 2517.64
+    },
+    {
+        "text": " la ahí empiezan el primero valor, mientras que hice a menor o igual al último hago algo y qué",
+        "start": 2517.64,
+        "end": 2525.6800000000003
+    },
+    {
+        "text": " hago acá, les suma uno, este guay tiene posibilidad de determinarte empranamente,",
+        "start": 2525.6800000000003,
+        "end": 2533.04
+    },
+    {
+        "text": " va a seguir hasta que la ahí sea igual al último, o sea sé dónde empiezo y sé dónde termino,",
+        "start": 2533.7599999999998,
+        "end": 2541.52
+    },
+    {
+        "text": " lo correcto aquí sería utilizar por como acá, la ahí que empiecen el primero que vaya hasta el",
+        "start": 2541.52,
+        "end": 2549.24
+    },
+    {
+        "text": " último y que haga algo cada vez que entra, se entiende?",
+        "start": 2549.24,
+        "end": 2557.52
+    },
+    {
+        "text": " de nuevo, todo no lleva a lo mismo, a usar siempre la estructura que sea más adecuada a cada",
+        "start": 2558.52,
+        "end": 2565.08
+    },
+    {
+        "text": " problema, más allá de que con otras estructuras el programa compila y funciones, no solamente al",
+        "start": 2565.08,
+        "end": 2572.16
+    },
+    {
+        "text": " cansa con que compila y funciones, debemos siempre programar usando las herramientas más adecuadas",
+        "start": 2572.16,
+        "end": 2578.6
+    },
+    {
+        "text": " en cada caso, cada estructura tiene un propósito, la pragmática que estamos viendo, bueno, asegurarse",
+        "start": 2578.6,
+        "end": 2586.0
+    },
+    {
+        "text": " siempre de usar las estructuras en forma acorde a esa pragmática, otra cosa que no debemos hacer,",
+        "start": 2586.0,
+        "end": 2598.08
+    },
+    {
+        "text": " utilizar un if considerando un caso de borde ya previsto en la condición del guay, vamos a",
+        "start": 2598.08,
+        "end": 2608.88
+    },
+    {
+        "text": " mirar esto, este algoritmo es conocido, cual era, el que determina si un número es primo que",
+        "start": 2608.88,
+        "end": 2616.48
+    },
+    {
+        "text": " no vimos en la clase de guay, este código funciona cualquiera sea el número, sin embargo,",
+        "start": 2616.48,
+        "end": 2626.52
+    },
+    {
+        "text": " qué le pusieron acá adelante, un primer if que controla como si fueran casos especiales",
+        "start": 2626.52,
+        "end": 2633.84
+    },
+    {
+        "text": " cuales, el 1 o el 2, dice si el número es igual a 1 o el número es igual al 2 muestra un mensaje",
+        "start": 2633.84,
+        "end": 2643.1600000000003
+    },
+    {
+        "text": " en pantalla y no voy al guay, esto se hace cuando uno piensa que el guay no puede controlar esos casos",
+        "start": 2643.1600000000003,
+        "end": 2652.6800000000003
+    },
+    {
+        "text": " borde, no, si el guay te controla, los casos borde no le ponga un if innecesario adentro,",
+        "start": 2652.6800000000003,
+        "end": 2659.52
+    },
+    {
+        "text": " es algo parecido lo que pasaba antes, componer el unif al for preguntando por los bordes,",
+        "start": 2659.52,
+        "end": 2664.68
+    },
+    {
+        "text": " es completamente innecesario, vamos a imaginarnos que el número es el 1 o es el 2 y vamos a",
+        "start": 2665.48,
+        "end": 2673.6
+    },
+    {
+        "text": " imaginarnos que no pusimos este if, vamos a ver que el guay le esté funciona bien igual,",
+        "start": 2673.6,
+        "end": 2678.6
+    },
+    {
+        "text": " si el número es tanto 1 como 2, cuánto me va a dar la raíz cuadrada,",
+        "start": 2680.44,
+        "end": 2686.08
+    },
+    {
+        "text": " en el caso del 1 cuanto me va a dar, 1 y en el caso del 2 que me va a dar, 1,4 y pico,",
+        "start": 2686.08,
+        "end": 2696.0
+    },
+    {
+        "text": " bien, cuando el otro unque que me va a quedar, me va a quedar 1, tanto si el número era 1 como",
+        "start": 2696.0,
+        "end": 2703.68
+    },
+    {
+        "text": " si era 2, con lo cual el valor que va a quedar guardado en 5 al va a ser, 1, tanto para el",
+        "start": 2703.68,
+        "end": 2711.16
+    },
+    {
+        "text": " número igual a 1 como para el número igual a 2, bien, divisor igual a 2 le asigno 2,",
+        "start": 2711.16,
+        "end": 2717.7599999999998
+    },
+    {
+        "text": " entramos al guay, divisor es menor igual que fin, no, porque cuanto valía fin dijimos,",
+        "start": 2719.08,
+        "end": 2726.64
+    },
+    {
+        "text": " valía 1 tanto para el número igual a 1 como para el número igual a 2, entonces que le pasa",
+        "start": 2727.64,
+        "end": 2732.64
+    },
+    {
+        "text": " esta condición, ya da false y si ya da false que pasa con el anda, directamente la anda false,",
+        "start": 2732.64,
+        "end": 2741.4
+    },
+    {
+        "text": " gracias a que fripascal utiliza e evaluación por circuito corto, que va a pasar con este guay,",
+        "start": 2741.4,
+        "end": 2746.72
+    },
+    {
+        "text": " va a salir, cabien, divisor es menor igual que fin, no, a donde va ir, al el y que va a mostrar,",
+        "start": 2747.92,
+        "end": 2757.6
+    },
+    {
+        "text": " el mismo mensaje que habíamos mostrado antes, o sea que fue totalmente innecesario meterle este",
+        "start": 2758.08,
+        "end": 2765.96
+    },
+    {
+        "text": " if adelante, moral eja, si los casos borde, ya quedan contemplados en la iteración principal con el",
+        "start": 2765.96,
+        "end": 2774.8399999999997
+    },
+    {
+        "text": " wild, no preguntar por ellos en forma previa innecesariamente, queda claro, es lo mismo, es muy",
+        "start": 2774.8399999999997,
+        "end": 2784.68
+    },
+    {
+        "text": " parecido a lo que pasa con el if, no preguntar, no comparar los bordes del for, perdón, no comparar",
+        "start": 2784.68,
+        "end": 2790.9199999999996
+    },
+    {
+        "text": " los bordes de la iteración antes de entrar al for, ya miendo que programar tiene muchas,",
+        "start": 2790.9199999999996,
+        "end": 2799.12
+    },
+    {
+        "text": " y la muy fino en muchos aspectos, no solamente importa que los programas compilen y se ejecuten,",
+        "start": 2801.12,
+        "end": 2807.96
+    },
+    {
+        "text": " también importa cuidar el uso correcto de todas las herramientas, y vamos a hacer muy puntillosos",
+        "start": 2808.52,
+        "end": 2816.32
+    },
+    {
+        "text": " tanto en los laboratorios como en los parciales, hasta acá, bien,",
+        "start": 2816.32,
+        "end": 2825.4
+    },
+    {
+        "text": " bueno, otro ejemplo de algo que está mal hecho con el wild, lectura con centinela mal diseñada,",
+        "start": 2828.08,
+        "end": 2835.28
+    },
+    {
+        "text": " recordemos el esquema correcto de una lectura con centinela, lo primero que hago que es, leo un",
+        "start": 2835.28,
+        "end": 2843.1200000000003
+    },
+    {
+        "text": " valor, luego pongo que cosa, el wild, dentro del wild que pongo, las instrucciones que quiera",
+        "start": 2843.1200000000003,
+        "end": 2855.0800000000004
+    },
+    {
+        "text": " poner y al final leo de vuelta, ese es el esquema correcto de una lectura con centinela,",
+        "start": 2855.0800000000004,
+        "end": 2861.6400000000003
+    },
+    {
+        "text": " porque, porque si el primer valor que me ingresa al usuario fuera el centinela que hago,",
+        "start": 2862.3599999999997,
+        "end": 2866.7599999999998
+    },
+    {
+        "text": " leo antes, pero cuando pregunto en el wild me da que ya hacer el centinela y me fui,",
+        "start": 2867.7999999999997,
+        "end": 2872.2799999999997
+    },
+    {
+        "text": " acá tenemos un ejemplo de una lectura con centinela mal hecha,",
+        "start": 2874.08,
+        "end": 2878.2
+    },
+    {
+        "text": " miremos esto, usa una variable buliana, en el libro estas variables bulanas, como la llama el libro,",
+        "start": 2879.72,
+        "end": 2888.2799999999997
+    },
+    {
+        "text": " las banderas, nosotros hemos prohibido el uso de banderas, no lo hemos prohibido, pero que dijimos,",
+        "start": 2888.28,
+        "end": 2897.52
+    },
+    {
+        "text": " usarlas con discreción, únicamente si no hay más remedio, si se puede resolver mediante una",
+        "start": 2897.52,
+        "end": 2905.84
+    },
+    {
+        "text": " condición bien armada por circuito corto hacerlo, fíjense que acá pone seguir en true y cuando viene",
+        "start": 2905.84,
+        "end": 2916.0400000000004
+    },
+    {
+        "text": " este wild que va a pasar, le va a artru y entonces que va a ser, va a entrar, o sea, es un wild en el",
+        "start": 2916.04,
+        "end": 2926.08
+    },
+    {
+        "text": " cual estamos forzando que cosa, que entre por lo menos una vez y cuál es la idea del wild,",
+        "start": 2926.08,
+        "end": 2933.32
+    },
+    {
+        "text": " que podría pasar que no entere la primera vez, bueno acá leo el número, vamos a suponer que el",
+        "start": 2934.84,
+        "end": 2942.48
+    },
+    {
+        "text": " centinela en este ejemplo es que sea negativo, si es positivo, pero o sea el número, esto puesto",
+        "start": 2942.48,
+        "end": 2949.56
+    },
+    {
+        "text": " así es se ubicó o digo, y si no que hace, corta, imaginemos que justo el primer número que ingresa",
+        "start": 2949.56,
+        "end": 2958.56
+    },
+    {
+        "text": " en usuarias al centinela, o sea un negativo, cómo se va a ejecutar esto, pongo seguir en true,",
+        "start": 2958.56,
+        "end": 2965.4
+    },
+    {
+        "text": " esfuerzo la entrada en wild, leo el número, me da que es como negativo o cero, el centinel de este",
+        "start": 2965.4,
+        "end": 2973.76
+    },
+    {
+        "text": " ejemplo podría ser cero también, voy a leer si que hago, corto, de esta manera rebuscada forcer la",
+        "start": 2973.76,
+        "end": 2981.52
+    },
+    {
+        "text": " entrada, yo podría haber aplicado acá el esquema general de una lectura con centinela que es haber",
+        "start": 2981.52,
+        "end": 2987.84
+    },
+    {
+        "text": " leído antes del wild, haberme orrado la bandera y haber leído de nuevo adentro y al final,",
+        "start": 2987.84,
+        "end": 2993.12
+    },
+    {
+        "text": " bueno el repeat solo en el caso que el centinela también te interese procesarlo, si el centinela no",
+        "start": 2995.4,
+        "end": 3005.4
+    },
+    {
+        "text": " te interesa procesarlo hay que volver al esquema clásico de lectura con centinela con la lectura antes del wild",
+        "start": 3005.4,
+        "end": 3011.2000000000003
+    },
+    {
+        "text": " algo que va más o menos parecido al ejemplo anterior, forzar la entrada al wild con un valor",
+        "start": 3011.2,
+        "end": 3026.7999999999997
+    },
+    {
+        "text": " ficticio, yo les puedo asegurar que esto por razones que no logro comprender les encanta hacerlo",
+        "start": 3026.7999999999997,
+        "end": 3033.8799999999997
+    },
+    {
+        "text": " en los parciales, inventar un valor bien raro para decir lo obligo a entrar al wild, por ejemplo no",
+        "start": 3033.88,
+        "end": 3044.96
+    },
+    {
+        "text": " sé un numeral o un hashtag como le dicen ahora, entonces mientras que el carácter sea distinto",
+        "start": 3044.96,
+        "end": 3053.84
+    },
+    {
+        "text": " decir vamos a poner que le fines el punto, pone que estamos leyendo no sé una obra así,",
+        "start": 3053.84,
+        "end": 3057.96
+    },
+    {
+        "text": " esta manera que estamos haciendo, obligando a que entre porque le estamos dando un valor que seguro",
+        "start": 3057.96,
+        "end": 3066.84
+    },
+    {
+        "text": " no va a ser el fin, el punto o el que hayamos tomado como fin, bueno acá adentro algo cosas,",
+        "start": 3066.84,
+        "end": 3074.2400000000002
+    },
+    {
+        "text": " a ver si es seguro que vos tenés que entrar por lo menos una vez lo correcto que sería,",
+        "start": 3076.2400000000002,
+        "end": 3082.68
+    },
+    {
+        "text": " repeat o en su defecto hacen una lectura antes del wild y si antes del wild ya es el fin no",
+        "start": 3083.3999999999996,
+        "end": 3092.3599999999997
+    },
+    {
+        "text": " entre, ustedes siempre antes de escribir código mediten un rato sobre lo que van a escribir,",
+        "start": 3092.3599999999997,
+        "end": 3101.12
+    },
+    {
+        "text": " una buena recomendación es no apurarse en ir a la máquina, agarrar el papel, escribir un",
+        "start": 3102.48,
+        "end": 3109.3599999999997
+    },
+    {
+        "text": " seguro código, pensar un borrador de la lógica del algoritmo y después si eso lo van puliendo y",
+        "start": 3109.36,
+        "end": 3116.56
+    },
+    {
+        "text": " lo van transformando en sintaxis pascal que compile, de hecho muchas veces de un an de los ejercicios",
+        "start": 3116.56,
+        "end": 3123.6800000000003
+    },
+    {
+        "text": " del práctico habrán visto que a veces le falta pulir alguna cuestión de compilación pero yo",
+        "start": 3123.6800000000003,
+        "end": 3129.32
+    },
+    {
+        "text": " que les digo que está bien igual, porque les digo que está bien igual, porque razonaron el algoritmo,",
+        "start": 3129.32,
+        "end": 3135.32
+    },
+    {
+        "text": " ok, se entendió esto, bueno y llegamos al repeat, recordemos cuando corresponde usar repeat,",
+        "start": 3135.32,
+        "end": 3148.1600000000003
+    },
+    {
+        "text": " cuando es seguro que vamos a entrar por lo menos una vez, que tienen común con el wild,",
+        "start": 3150.0,
+        "end": 3155.32
+    },
+    {
+        "text": " no sabemos de antemano cuántas veces se va a ejecutar, por lo menos va a ser una mientras que en",
+        "start": 3157.1600000000003,
+        "end": 3163.1200000000003
+    },
+    {
+        "text": " el wild que ocurría, podía no ser ninguna, al igual que el wild que peligro tiene, caer en",
+        "start": 3163.12,
+        "end": 3170.7599999999998
+    },
+    {
+        "text": " bucle infinito, en loop infinito, en ciclo infinito, como lo quieran llamar,",
+        "start": 3170.7599999999998,
+        "end": 3175.2
+    },
+    {
+        "text": " bueno, le cuándo está bien usar repeat, primero ejemplo, lectura con centinera cuando este es un",
+        "start": 3179.24,
+        "end": 3190.08
+    },
+    {
+        "text": " dato valido, o sea, es el centinela, te marca el fin de la iteración, pero además de marcar",
+        "start": 3190.08,
+        "end": 3196.2
+    },
+    {
+        "text": " el fin de la iteración lo quieres procesar como el último valor valido, en ese caso está bien,",
+        "start": 3196.2,
+        "end": 3202.24
+    },
+    {
+        "text": " hacerlo con repeat, leo el dato, lo proceso y después pregunto si es el centinela,",
+        "start": 3202.24,
+        "end": 3209.4
+    },
+    {
+        "text": " ¿qué pasa si justo fuera el centinela de la primera vez? corta, pero estuvo bien procesarlo,",
+        "start": 3211.24,
+        "end": 3217.7599999999998
+    },
+    {
+        "text": " siempre y cuando sea un problema en el cual al centinela también lo queramos procesar como los",
+        "start": 3217.76,
+        "end": 3223.96
+    },
+    {
+        "text": " demás valores, si es un caso en el cual el centinela lo queremos usar solo para cortar la",
+        "start": 3223.96,
+        "end": 3231.5200000000004
+    },
+    {
+        "text": " iteración ahí que hay que usar, wild según el esquema de lectura con centinela que ya vimos,",
+        "start": 3231.5200000000004,
+        "end": 3237.0
+    },
+    {
+        "text": " bien, la solución con wild justamente no es adecuada en este caso, este esquema es el esquema",
+        "start": 3237.32,
+        "end": 3248.7
+    },
+    {
+        "text": " clásico de la lectura con centinela que es valido dijimos cuando, cuando no quiero procesar el",
+        "start": 3248.7,
+        "end": 3256.16
+    },
+    {
+        "text": " centinela, ¿abien? lo leo, si no es el centinela adentro, ahora si ya es el centinela que va a pasar",
+        "start": 3256.16,
+        "end": 3264.6
+    },
+    {
+        "text": " acá, me fui pero no lo procesé, esto es correcto si no lo quiero procesar, ahora si el",
+        "start": 3265.4,
+        "end": 3272.94
+    },
+    {
+        "text": " centinela lo quiero procesar antes de terminar hay que hacerlo como está arriba, de qué depende",
+        "start": 3272.94,
+        "end": 3280.8399999999997
+    },
+    {
+        "text": " bueno del problema que a mí me da en para resolver, sí, tratamiento de un menú de opciones,",
+        "start": 3280.84,
+        "end": 3293.4
+    },
+    {
+        "text": " vamos a esponhar que nosotros queremos mantener una iteración y cada vez que entramos le queremos",
+        "start": 3294.6000000000004,
+        "end": 3300.1200000000003
+    },
+    {
+        "text": " mostrar el usuario opciones, opción 1, ingresar los datos de una persona, opción 2,",
+        "start": 3300.1200000000003,
+        "end": 3306.44
+    },
+    {
+        "text": " calcular el sueldo, opción 3, no sé, allá un promedio, opción 4, salir, entonces el usuario",
+        "start": 3306.44,
+        "end": 3314.84
+    },
+    {
+        "text": " elige una opción en función del opción yo hago algo y después le muestro de vuelta al menú,",
+        "start": 3314.84,
+        "end": 3320.6
+    },
+    {
+        "text": " así hasta que en algún momento lo suere ingresa la opción de salida y eso es valido hacerlo con",
+        "start": 3320.6,
+        "end": 3327.96
+    },
+    {
+        "text": " repeat, sí, entro, leo la opción, ¿cabien? acá este case para que será,",
+        "start": 3327.96,
+        "end": 3337.0
+    },
+    {
+        "text": " para saber qué opción fue, acá le voy a poner los distintos valores posibles para las opciones,",
+        "start": 3340.48,
+        "end": 3345.8
+    },
+    {
+        "text": " ¿cabien? Si no me ingresa ningún valor valido, por ejemplo si las opciones van de 1 a 4 y me",
+        "start": 3345.8,
+        "end": 3352.36
+    },
+    {
+        "text": " ingresa un 5 le voy a poner opción a Ronia, hasta que la opción se iguala fin, si la primera",
+        "start": 3352.36,
+        "end": 3362.36
+    },
+    {
+        "text": " opción es fin, la voy a leer, la voy a procesar porque a lo mejor en el caso de la opción fin,",
+        "start": 3362.36,
+        "end": 3368.6
+    },
+    {
+        "text": " que es terminar de calcular algo, mostrar un mensaje de despedida y cuando salis la opción",
+        "start": 3368.6,
+        "end": 3375.08
+    },
+    {
+        "text": " fin y te fuiste, ¿cabien? Si fuera un caso en el cual en la opción fin, no que eres procesar nada,",
+        "start": 3375.08,
+        "end": 3382.12
+    },
+    {
+        "text": " funcionaría de manera similar a una lectura con sentinelas, pondrías antes y pondrías un guay,",
+        "start": 3382.12,
+        "end": 3387.4
+    },
+    {
+        "text": " es que todo lo que se puede hacer con una se puede hacer con la otra, de hecho guay de repeat",
+        "start": 3387.4,
+        "end": 3395.0
+    },
+    {
+        "text": " están mucho más cercanas entre sí que el for, sí,",
+        "start": 3395.0,
+        "end": 3401.96
+    },
+    {
+        "text": " no sería tan mal como usar por ejemplo for en un caso donde corresponde guay lo repeat, o sea,",
+        "start": 3405.08,
+        "end": 3414.84
+    },
+    {
+        "text": " sería un error en un error más leve que confundirlas con el for, recuerden, usar repeat cuando corresponda",
+        "start": 3414.84,
+        "end": 3423.72
+    },
+    {
+        "text": " entrar por lo menos una vez, si puede pasar que ya la primera vez no entres, hacerlo con guay,",
+        "start": 3423.72,
+        "end": 3430.6
+    },
+    {
+        "text": " a la hora de corregir la distancia entre guay y repeat no es tan terrible, ¿cabien?",
+        "start": 3431.16,
+        "end": 3438.12
+    },
+    {
+        "text": " Si, si,",
+        "start": 3440.6,
+        "end": 3441.64
+    },
+    {
+        "text": " acá pusimos puntos suspensivos, vos acuerrate que el case no lleva a Villain End,",
+        "start": 3449.0,
+        "end": 3454.52
+    },
+    {
+        "text": " o sea, perdón, el case lleva Villain, no lleva Villain pero lleva End,",
+        "start": 3455.48,
+        "end": 3460.12
+    },
+    {
+        "text": " ponele que está en los puntos suspensivos, ¿sacto? ¿cabien?",
+        "start": 3460.12,
+        "end": 3465.88
+    },
+    {
+        "text": " Bien, otro ejemplo de uso válido de repeat, ignorar datos de entrada hasta el primer número que",
+        "start": 3469.36,
+        "end": 3481.4
+    },
+    {
+        "text": " cumpla una condición, por ejemplo nosotros cuando vimos repeat la clase pasada vimos un ejemplo donde",
+        "start": 3481.4,
+        "end": 3489.08
+    },
+    {
+        "text": " salteábamos todos los espacios en blanco, sí, hasta llegar a un valor que no fuera una espacio en blanco,",
+        "start": 3489.08,
+        "end": 3496.28
+    },
+    {
+        "text": " bueno, acá leemos un dato hasta que ese dato cumpla una cierta condición, por ejemplo que no sea",
+        "start": 3498.52,
+        "end": 3505.4
+    },
+    {
+        "text": " un espacio en blanco, entonces que hacíamos, entro leo un espacio en blanco, pregunto, es algo que no",
+        "start": 3505.4,
+        "end": 3512.92
+    },
+    {
+        "text": " sea blanco si la respuesta es sí para o si la respuesta es no, entro de vuelta leo otro, es para",
+        "start": 3512.92,
+        "end": 3518.92
+    },
+    {
+        "text": " saltearme cosas, por ejemplo saltearme espacios en blanco,",
+        "start": 3518.92,
+        "end": 3522.4
+    },
+    {
+        "text": " errores con repeat son similares a los errores que se pueden comentar con guay,",
+        "start": 3528.8,
+        "end": 3534.52
+    },
+    {
+        "text": " observar que siempre se puede forzar un repeat para que se comporte como guay, si estamos queriendo empujar",
+        "start": 3535.56,
+        "end": 3543.48
+    },
+    {
+        "text": " al repeat para que se parezca guay, habría que usar un guay en ese caso, por ejemplo acá,",
+        "start": 3543.48,
+        "end": 3548.6
+    },
+    {
+        "text": " algo que no es correcto, terminar le pongo false, entro, pregunto si se cumple la condición,",
+        "start": 3549.96,
+        "end": 3558.08
+    },
+    {
+        "text": " si se cumple la condición hago algo, y si la condición no se cumple, o sea si la primera vez que",
+        "start": 3558.68,
+        "end": 3566.4
+    },
+    {
+        "text": " pregunto por ella, la condición no se cumple, vengo al él si que hago,",
+        "start": 3566.4,
+        "end": 3569.68
+    },
+    {
+        "text": " termino, cuántas veces se hizo esto, ninguna, que habría correspondido en este caso,",
+        "start": 3571.68,
+        "end": 3577.2799999999997
+    },
+    {
+        "text": " habría dicho un guay, habría dicho un guay, mientras se cumple la condición,",
+        "start": 3578.04,
+        "end": 3585.04
+    },
+    {
+        "text": " guay, condición, du, hacer algo, entonces la primera vez cuando llego, si me da falso,",
+        "start": 3585.04,
+        "end": 3590.44
+    },
+    {
+        "text": " directamente me fui, esto así es forzar al repeat a que se parezca guay con unif adentro,",
+        "start": 3590.44,
+        "end": 3598.2
+    },
+    {
+        "text": " si ustedes están haciendo repeat y le están metiendo unif, piensenlo dos veces porque quizás",
+        "start": 3598.2,
+        "end": 3606.7599999999998
+    },
+    {
+        "text": " estén queriendo forzar al repeat a comportarse como guay, no quiere decir que repeat conif",
+        "start": 3606.7599999999998,
+        "end": 3613.68
+    },
+    {
+        "text": " este prohibido depende de lo que hagas en ese if, bueno algo parecido pasa acá,",
+        "start": 3613.68,
+        "end": 3622.68
+    },
+    {
+        "text": " sin mandera, si la condición se cumple hago algo hasta que no se cumple a la condición,",
+        "start": 3622.68,
+        "end": 3632.24
+    },
+    {
+        "text": " entonces si la primera vez que entro la condición es falsa que va a pasar, no va a entrar al if y se",
+        "start": 3632.24,
+        "end": 3638.48
+    },
+    {
+        "text": " va a ir del antil, de nuevo en cualquiera de estos dos casos era más elegante hacer guay,",
+        "start": 3638.48,
+        "end": 3644.0
+    },
+    {
+        "text": " bueno queda poquito ya y pues pasamos al práctico,",
+        "start": 3650.64,
+        "end": 3654.56
+    },
+    {
+        "text": " cuidado con las instrucciones de acumulación, siempre que uno quiere resolver un problema que",
+        "start": 3656.16,
+        "end": 3663.72
+    },
+    {
+        "text": " implica realizar algún tipo de acumulación hay que tener presentes tres momentos, antes de empezar",
+        "start": 3663.72,
+        "end": 3670.4399999999996
+    },
+    {
+        "text": " la variable de acumulación yo le tengo que dar un valor inicial, 0, 1, 2 depende del problema,",
+        "start": 3670.4399999999996,
+        "end": 3678.9599999999996
+    },
+    {
+        "text": " pero tiene que estar inicializada, porque si yo no la inicializo con qué valor queda, basura",
+        "start": 3678.9599999999996,
+        "end": 3687.7599999999998
+    },
+    {
+        "text": " a un valor indefinido, o sea que siempre que estén ante un problema que requiera acumulación,",
+        "start": 3687.76,
+        "end": 3693.76
+    },
+    {
+        "text": " primero inicializar adecuadamente la variable de acumulación, antes de la repetición y esto no",
+        "start": 3693.76,
+        "end": 3702.84
+    },
+    {
+        "text": " importa si es una acumulación con for con while or repeat, antes de empezar le tengo que dar un",
+        "start": 3702.84,
+        "end": 3709.7200000000003
+    },
+    {
+        "text": " valor inicial a la variable pongamos la eb, dentro de la iteración for while repeat la que sea,",
+        "start": 3709.72,
+        "end": 3719.7599999999998
+    },
+    {
+        "text": " va a venir la instrucción de acumulación esto que está acá a b le asigno fdb es una forma",
+        "start": 3719.7599999999998,
+        "end": 3727.8399999999997
+    },
+    {
+        "text": " generica de decir que cosa, como el valor de b le aplico alguna cuenta y el resultado lo guardo en",
+        "start": 3727.8399999999997,
+        "end": 3735.8399999999997
+    },
+    {
+        "text": " la misma variable, como dijimos que reconocemos las instrucciones de acumulación, la misma variable aparece",
+        "start": 3735.84,
+        "end": 3745.6800000000003
+    },
+    {
+        "text": " el izquierda y a la derecha de la asignación y cómo se lee toda asignación de derecha izquierda,",
+        "start": 3745.6800000000003,
+        "end": 3752.04
+    },
+    {
+        "text": " se toma el valor actual de b, se le aplica alguna cuenta la que sea y el resultado se guarda la",
+        "start": 3752.04,
+        "end": 3759.6400000000003
+    },
+    {
+        "text": " misma variable, ojo que acumulación lo quiere decir que sea solamente suma, se va tomando el valor",
+        "start": 3759.64,
+        "end": 3767.3199999999997
+    },
+    {
+        "text": " de b, se le aplica alguna operación y se guarda el resultado en b y eso se repite muchas veces,",
+        "start": 3767.3199999999997,
+        "end": 3772.7999999999997
+    },
+    {
+        "text": " después que la iteración terminó utilización del resultado, son errores habituales o emitir",
+        "start": 3772.7999999999997,
+        "end": 3785.96
+    },
+    {
+        "text": " algunos de estos, por ejemplo olvidarme de inicializarla o ubicar en lugar equivocado estos pasos,",
+        "start": 3785.96,
+        "end": 3793.36
+    },
+    {
+        "text": " la inicialización cuando corresponde a hacerla antes de la repetición, la utilización del resultado luego",
+        "start": 3793.36,
+        "end": 3802.0
+    },
+    {
+        "text": " de la repetición, la instrucción de acumulación durante la repetición, bueno y con esto se terminó,",
+        "start": 3802.0,
+        "end": 3815.36
+    },
+    {
+        "text": " vamos a mirar un poquito el práctico 6, vamos a elegir un ejercicio, lo vamos a charlar y después",
+        "start": 3816.52,
+        "end": 3824.2400000000002
+    },
+    {
+        "text": " se van a poner a trabajar y yo voy a empezar por los bancos a que me preguntan lo que quieran,",
+        "start": 3824.2400000000002,
+        "end": 3829.16
+    },
+    {
+        "text": " de este ejercicio o de lo que sea, bien, ejercicio 2, escribir un programa en Pascal que lea",
+        "start": 3829.16,
+        "end": 3842.96
+    },
+    {
+        "text": " 2 cosas de la entrada estándar, una letra y una oración de la entrada estándar y calcule la",
+        "start": 3842.96,
+        "end": 3853.44
+    },
+    {
+        "text": " cantidad de palabras que terminan con la letra y están en la oración dada, por ejemplo vamos a",
+        "start": 3853.44,
+        "end": 3863.12
+    },
+    {
+        "text": " suponer que el usuario ingresa, primero la letra S, el programa le tiene que mostrar un",
+        "start": 3863.12,
+        "end": 3867.36
+    },
+    {
+        "text": " cartelito que diga letra 2 puntos, luego debemos leer la letra y después otro cartelito que diga",
+        "start": 3867.36,
+        "end": 3877.6400000000003
+    },
+    {
+        "text": " la oración, el usuario va a escribir toda la oración como una larga cadena de carácter es y la va a",
+        "start": 3877.6400000000003,
+        "end": 3885.36
+    },
+    {
+        "text": " finalizar con un punto, este problema es parecido a uno que vimos la clase pasada cuando vimos",
+        "start": 3885.36,
+        "end": 3893.08
+    },
+    {
+        "text": " rapid, qué dijimos de la oración, la vamos a almacenar toda en memoria, vamos a ir leyendo",
+        "start": 3893.08,
+        "end": 3901.7999999999997
+    },
+    {
+        "text": " los carácteres de a uno, está bien y cuando vamos a parar, cuando el carácter sea un punto,",
+        "start": 3901.7999999999997,
+        "end": 3909.88
+    },
+    {
+        "text": " ¿sí? sabemos de antemano, ¿cuántos carácteres van a ingresar el usuario? no, lo que sí sabemos es",
+        "start": 3909.88,
+        "end": 3921.52
+    },
+    {
+        "text": " que van ingresar por lo menos una palabra antes del punto, eso ya huele a que estructura,",
+        "start": 3921.52,
+        "end": 3927.7599999999998
+    },
+    {
+        "text": " si sabemos que vamos a leer por lo menos una palabra antes del punto huele más a repeat,",
+        "start": 3929.52,
+        "end": 3934.84
+    },
+    {
+        "text": " bueno ir tomando notades, asuma que una oración es una secuencia de palabras separadas solo por",
+        "start": 3936.52,
+        "end": 3945.4
+    },
+    {
+        "text": " espacios y vamos a simplificarlo, vamos a suponer que hay un solo espacio separando dos palabras,",
+        "start": 3945.4,
+        "end": 3951.2000000000003
+    },
+    {
+        "text": " ¿sabien? y que termina con un punto, o sea tenemos palabras, espacio, palabra, espacio, palabra y luego",
+        "start": 3951.2000000000003,
+        "end": 3958.96
+    },
+    {
+        "text": " del último palabra un punto, asuma que el usuario lo que va a ingresar lo va a ingresar de esa forma,",
+        "start": 3958.96,
+        "end": 3964.7200000000003
+    },
+    {
+        "text": " como mínimo que pondrá el usuario, una palabra y un punto, hasta acá, bien,",
+        "start": 3965.3599999999997,
+        "end": 3973.3599999999997
+    },
+    {
+        "text": " es lo que dice acá, asuma que la oración siempre tiene al menos una palabra, por ahora vamos a",
+        "start": 3975.56,
+        "end": 3982.72
+    },
+    {
+        "text": " concentrarnos en resolver eso, después acá nos preguntan qué cambios le haríamos si la situación",
+        "start": 3982.72,
+        "end": 3987.7999999999997
+    },
+    {
+        "text": " fuera un poquito diferente, pero primero vamos a resolver el caso original como lo pide la",
+        "start": 3987.7999999999997,
+        "end": 3992.52
+    },
+    {
+        "text": " letra, bueno miramos acá, ¿cuántas palabras terminan con ese? cuatro palabras, veamos, la no,",
+        "start": 3992.52,
+        "end": 4002.4
+    },
+    {
+        "text": " cualidad tampoco, indispensable para un buen cocinero es, ahí que encontramos una palabra que termina",
+        "start": 4002.4,
+        "end": 4012.6
+    },
+    {
+        "text": " con ese, ¿sabien? la puntualidad pero es dos palabras que terminan con ese, también la de los",
+        "start": 4012.6,
+        "end": 4022.2799999999997
+    },
+    {
+        "text": " tres palabras que terminan con ese invitados, cuatro palabras que terminan con ese,",
+        "start": 4022.2799999999997,
+        "end": 4028.2799999999997
+    },
+    {
+        "text": " a medida que yo voy leyendo cada palabra me interesa adentrarme en cada carácter,",
+        "start": 4032.52,
+        "end": 4036.7999999999997
+    },
+    {
+        "text": " no quiero que me va a interesar hacer con la palabra, pasarla hasta cuando, hasta llegar",
+        "start": 4036.8,
+        "end": 4047.2400000000002
+    },
+    {
+        "text": " a la última palabra, hasta la última letra, perdón, acá tenemos un ejemplo de quiero pasar",
+        "start": 4047.2400000000002,
+        "end": 4053.8
+    },
+    {
+        "text": " hasta que pase algo eso como lo hacíamos, con repeat, entonces esto se va deliniendo con qué",
+        "start": 4053.8,
+        "end": 4061.96
+    },
+    {
+        "text": " estructura o estructuras, ¿por justo? pero cuando usamos for, cuando sabemos de antemano",
+        "start": 4061.96,
+        "end": 4077.04
+    },
+    {
+        "text": " en la cantidad de veces y acá de qué depende, pero no sé lo que es un estrello,",
+        "start": 4077.04,
+        "end": 4087.12
+    },
+    {
+        "text": " una letra, pero ¿y cuántas letras vamos a ir leyendo para guardar en esa variable? ni idea,",
+        "start": 4087.12,
+        "end": 4097.12
+    },
+    {
+        "text": " o sea justamente forno, porque no tenemos idea, primero, ¿de cuando es que llega el punto?",
+        "start": 4097.12,
+        "end": 4104.5599999999995
+    },
+    {
+        "text": " no, tú vas a salir los caracteres de a uno, tú vas a salir la aélie, luego va a salir la a,",
+        "start": 4108.28,
+        "end": 4115.36
+    },
+    {
+        "text": " luego el blanco y así dijimos no almacenamos toda la oración en memoria, ¿cabien? ojo,",
+        "start": 4115.36,
+        "end": 4125.08
+    },
+    {
+        "text": " con eso, de hecho eso todavía no lo podemos hacer porque todavía no tenemos string,",
+        "start": 4125.08,
+        "end": 4128.36
+    },
+    {
+        "text": " entonces este problema se parece un poco al problema que habíamos visto con repeat la clase pasada,",
+        "start": 4130.36,
+        "end": 4137.599999999999
+    },
+    {
+        "text": " en la clase pasada nosotros salteábamos blancos hasta cuando, hasta llegar a algo que no sea un",
+        "start": 4138.400000000001,
+        "end": 4146.08
+    },
+    {
+        "text": " blanco, acá es lo que nos vamos a saltear, nos vamos a saltear cada palabra hasta llegar al final,",
+        "start": 4146.08,
+        "end": 4154.0
+    },
+    {
+        "text": " al final de la palabra, entonces manejense con la idea de repeat, manejense con la idea de dentro",
+        "start": 4154.0,
+        "end": 4164.120000000001
+    },
+    {
+        "text": " del repeat ir salteando hasta pasar toda la palabra, ¿de acuerdo? a ver, ¿qué variables vamos a",
+        "start": 4164.12,
+        "end": 4173.12
+    },
+    {
+        "text": " necesitar? una de tipo char para que? para la primera letra, después vamos a necesitar por lo menos",
+        "start": 4173.12,
+        "end": 4180.36
+    },
+    {
+        "text": " otra de tipo char para que, para ir leyendo y les voy una pista, capaz que necesitamos alguna",
+        "start": 4180.36,
+        "end": 4187.0
+    },
+    {
+        "text": " tercera también, o sea que dos o tres variables de tipo char vamos a necesitar, ¿sí? y también",
+        "start": 4187.0,
+        "end": 4196.0
+    },
+    {
+        "text": " necesitamos otra variable de que tipo, bueno numérico puede ser real, numérico de tipo ínte,",
+        "start": 4196.0,
+        "end": 4205.24
+    },
+    {
+        "text": " ya para que? para ir contando, contando que cosa, las palabras que terminan con ese, que no es lo",
+        "start": 4205.24,
+        "end": 4214.04
+    },
+    {
+        "text": " mismo que contar todas las S, o sea que ahí huéle a una instrucción de que de acumulación,",
+        "start": 4214.04,
+        "end": 4221.96
+    },
+    {
+        "text": " ¿de acuerdo? bueno, pónganse a trabajar, son nueve y veinte, vamos a estinar una media hora,",
+        "start": 4223.48,
+        "end": 4230.96
+    },
+    {
+        "text": " sí, yo mientras voy pasando por los bancos y al final vemos si nos da para discutirlo adelante o",
+        "start": 4230.96,
+        "end": 4236.6
+    },
+    {
+        "text": " si me lo van mostrando, medida que lo van haciendo.",
+        "start": 4236.6,
+        "end": 4238.68
+    }
+]

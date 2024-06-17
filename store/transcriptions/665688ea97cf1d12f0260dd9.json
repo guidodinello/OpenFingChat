@@ -1,0 +1,5727 @@
+[
+    {
+        "text": " Bueno, la clase pasada empezamos a hablar de funciones y procedimientos que son los",
+        "start": 0.0,
+        "end": 22.56
+    },
+    {
+        "text": " dos tipos de sus programas que nosotros podemos definir.",
+        "start": 22.56,
+        "end": 27.12
+    },
+    {
+        "text": " La idea, muy grande rasgo, era, en vez de tener un único gran bloque de código, puesto",
+        "start": 27.12,
+        "end": 33.84
+    },
+    {
+        "text": " todo en el programa principal, tener que cosa.",
+        "start": 33.84,
+        "end": 39.08
+    },
+    {
+        "text": " Varios subprogramas pequeños que pueden ser utilizados, pueden ser llamados, pueden",
+        "start": 39.08,
+        "end": 46.120000000000005
+    },
+    {
+        "text": " ser invocados, tanto desde el programa principal como desde otros subprogramas.",
+        "start": 46.120000000000005,
+        "end": 54.1
+    },
+    {
+        "text": " Y los subprogramas se clasificaban en dos, por un lado estaban las funciones y por otro",
+        "start": 54.1,
+        "end": 58.7
+    },
+    {
+        "text": " lado están los procedimientos.",
+        "start": 58.7,
+        "end": 61.38
+    },
+    {
+        "text": " De las funciones estuvimos hablando de lunes y vimos que una función tenía un encabezado",
+        "start": 61.38,
+        "end": 77.94
+    },
+    {
+        "text": " y que tenía un cuerpo.",
+        "start": 77.94,
+        "end": 81.74000000000001
+    },
+    {
+        "text": " Por ejemplo, teníamos la función potencia y la manera de decir que ese subprograma",
+        "start": 81.74,
+        "end": 87.78
+    },
+    {
+        "text": " es una función es mediante la palabra reservada a función.",
+        "start": 87.78,
+        "end": 91.94
+    },
+    {
+        "text": " A continuación que le poníamos, le poníamos el nombre que debía ser un identificador",
+        "start": 91.94,
+        "end": 98.5
+    },
+    {
+        "text": " válido de Pascal, es decir cumplir las mismas reglas que siempre deben cumplir",
+        "start": 98.5,
+        "end": 103.25999999999999
+    },
+    {
+        "text": " los identificadores.",
+        "start": 103.25999999999999,
+        "end": 105.5
+    },
+    {
+        "text": " Y después entre paréntesis le pasábamos los parámetros, los parámetros que representaban.",
+        "start": 105.5,
+        "end": 116.58
+    },
+    {
+        "text": " Que eran los parámetros?",
+        "start": 116.58,
+        "end": 118.86
+    },
+    {
+        "text": " Son los valores de entrada que reciben la función y que asumíamos de los valores de entrada.",
+        "start": 118.86,
+        "end": 124.82
+    },
+    {
+        "text": " No, acá tenemos un real y un ínte, ya no son de mismo tipo.",
+        "start": 124.82,
+        "end": 133.86
+    },
+    {
+        "text": " Desde el programa que le invoca yo ya le pasé valores bien ingresados.",
+        "start": 133.86,
+        "end": 139.10000000000002
+    },
+    {
+        "text": " O sea que los parámetros ya vienen como.",
+        "start": 139.10000000000002,
+        "end": 142.14000000000001
+    },
+    {
+        "text": " Ya vienen cargados, ya traen un valor.",
+        "start": 142.14000000000001,
+        "end": 146.38000000000002
+    },
+    {
+        "text": " Un error que no debíamos cometer dentro de la función era hacer que con los parámetros",
+        "start": 146.38000000000002,
+        "end": 151.10000000000002
+    },
+    {
+        "text": " entrada.",
+        "start": 151.10000000000002,
+        "end": 152.42000000000002
+    },
+    {
+        "text": " Leer los del usuario, leerlos por la entrada de estándar.",
+        "start": 152.42000000000002,
+        "end": 155.5
+    },
+    {
+        "text": " De hecho dijimos no es una buena práctica que las funciones realicen operaciones de entrada",
+        "start": 155.5,
+        "end": 161.5
+    },
+    {
+        "text": " y salida.",
+        "start": 161.5,
+        "end": 162.5
+    },
+    {
+        "text": " Es la idea de una caja negra que ya recibe parámetros cargados, los procesas y que produce.",
+        "start": 162.5,
+        "end": 171.62
+    },
+    {
+        "text": " Un resultado.",
+        "start": 171.62,
+        "end": 172.9
+    },
+    {
+        "text": " Y a continuación se pone dos puntos en el encabezado y de qué tipo va a ser el resultado.",
+        "start": 172.9,
+        "end": 182.42000000000002
+    },
+    {
+        "text": " Que en Pascal tenemos una restricción, tiene que ser un tipo simple.",
+        "start": 182.42000000000002,
+        "end": 187.02
+    },
+    {
+        "text": " Es decir no puede ser un tipo estructurado.",
+        "start": 187.02,
+        "end": 189.62
+    },
+    {
+        "text": " Hay otros lenguajes de programación que sí permiten devolver valores de tipo estructurados,",
+        "start": 189.62,
+        "end": 195.14000000000001
+    },
+    {
+        "text": " pero no es el caso de Pascal.",
+        "start": 195.14000000000001,
+        "end": 198.02
+    },
+    {
+        "text": " Que es algo que no podríamos devolver en Pascal.",
+        "start": 198.02,
+        "end": 201.86
+    },
+    {
+        "text": " Una rey.",
+        "start": 201.86,
+        "end": 204.26000000000002
+    },
+    {
+        "text": " Tampoco podríamos devolver un record que vamos a ver después lo que son los record.",
+        "start": 204.26000000000002,
+        "end": 208.98000000000002
+    },
+    {
+        "text": " Solamente valores de tipos simples.",
+        "start": 208.98000000000002,
+        "end": 211.86
+    },
+    {
+        "text": " Intesa echar real, bulian, subrangos, enumerados que van a venir después.",
+        "start": 211.86,
+        "end": 218.62
+    },
+    {
+        "text": " Todas esas cosas son admisibles como tipo de retorno de una función.",
+        "start": 218.62,
+        "end": 223.14000000000001
+    },
+    {
+        "text": " ¿Está ahí?",
+        "start": 223.14000000000001,
+        "end": 225.26000000000002
+    },
+    {
+        "text": " Bien, nosotros luego podíamos hacer uso de la función, podíamos invocarla, podíamos",
+        "start": 225.26000000000002,
+        "end": 231.94000000000003
+    },
+    {
+        "text": " llamarla.",
+        "start": 231.94000000000003,
+        "end": 232.94000000000003
+    },
+    {
+        "text": " Sí.",
+        "start": 233.54,
+        "end": 234.54
+    },
+    {
+        "text": " Por ejemplo acá vemos algunas invocaciones de ejemplo a la función potencia que imaginemos",
+        "start": 234.54,
+        "end": 241.74
+    },
+    {
+        "text": " que se hacen en el programa principal.",
+        "start": 241.74,
+        "end": 244.42
+    },
+    {
+        "text": " Recuerdan la estructura.",
+        "start": 244.42,
+        "end": 245.9
+    },
+    {
+        "text": " Poníamos program, costantes, variables, procedimientos y funciones y por último,",
+        "start": 245.9,
+        "end": 252.18
+    },
+    {
+        "text": " bikinen y a eso ahora le vamos a llamar el programa principal.",
+        "start": 252.18,
+        "end": 256.65999999999997
+    },
+    {
+        "text": " Entonces por ejemplo desde el programa principal yo puedo hacer estas dos llamadas",
+        "start": 256.65999999999997,
+        "end": 261.38
+    },
+    {
+        "text": " a la función potencia.",
+        "start": 261.38,
+        "end": 264.21999999999997
+    },
+    {
+        "text": " Por ejemplo en la primera le estoy pasando como primer parámetro P.",
+        "start": 264.21999999999997,
+        "end": 269.06
+    },
+    {
+        "text": " Vamos a suponer que P es una variable de tipo real y como segundo parámetro",
+        "start": 269.06,
+        "end": 274.38
+    },
+    {
+        "text": " un valor constante del 23.",
+        "start": 274.38,
+        "end": 277.58
+    },
+    {
+        "text": " Vimos que en la invocación nosotros podíamos pasar constantes, podíamos pasar variables",
+        "start": 277.58,
+        "end": 282.7
+    },
+    {
+        "text": " e incluso podíamos pasar qué cosa.",
+        "start": 282.7,
+        "end": 286.58
+    },
+    {
+        "text": " ¿Qué es esto?",
+        "start": 286.58,
+        "end": 287.06
+    },
+    {
+        "text": " Por ejemplo.",
+        "start": 287.06,
+        "end": 289.98
+    },
+    {
+        "text": " Una expresión que eventualmente puede contener una función y lo que importa y ahora sí lo que",
+        "start": 289.98,
+        "end": 297.90000000000003
+    },
+    {
+        "text": " vos me decías que el tipo y el orden de los parámetros que yo pasó en la invocación",
+        "start": 297.90000000000003,
+        "end": 303.66
+    },
+    {
+        "text": " coincidan con que con los del cabezal que por lo menos sean compatibles.",
+        "start": 303.66,
+        "end": 309.22
+    },
+    {
+        "text": " O sea que se puede aplicar aunque sea coreciona automática en los casos donde sea posible.",
+        "start": 309.22,
+        "end": 315.46000000000004
+    },
+    {
+        "text": " Los parámetros que definíamos en el cabezal se llaman parámetros nominales y los parámetros",
+        "start": 315.46,
+        "end": 321.06
+    },
+    {
+        "text": " específicos y los parámetros concretos, los que pasamos en la invocación como se llamaban",
+        "start": 321.06,
+        "end": 326.21999999999997
+    },
+    {
+        "text": " parámetros efectivos también.",
+        "start": 326.21999999999997,
+        "end": 328.14
+    },
+    {
+        "text": " Creo que el libro también le llama parámetros verdaderos.",
+        "start": 328.14,
+        "end": 331.9
+    },
+    {
+        "text": " Cuestionan que son los parámetros concretos que contienen los valores concretos que se",
+        "start": 331.9,
+        "end": 336.65999999999997
+    },
+    {
+        "text": " le pasan a la función al momento de su invocación.",
+        "start": 336.65999999999997,
+        "end": 340.34
+    },
+    {
+        "text": " En este caso un real que se guarda en base y un 23 que se guarda en exponente.",
+        "start": 340.34,
+        "end": 349.61999999999995
+    },
+    {
+        "text": " Más o menos ahí habíamos quedado en funciones.",
+        "start": 349.61999999999995,
+        "end": 352.41999999999996
+    },
+    {
+        "text": " ¿Alguna pregunta más esto?",
+        "start": 352.41999999999996,
+        "end": 357.26
+    },
+    {
+        "text": " Sí.",
+        "start": 357.26,
+        "end": 358.26
+    },
+    {
+        "text": " ¿No?",
+        "start": 358.26,
+        "end": 360.26
+    },
+    {
+        "text": " El nombre de la función dentro del programa debe ser, en principio debe ser único.",
+        "start": 360.26,
+        "end": 365.78
+    },
+    {
+        "text": " Si vos tenés una función que sea local a otra función ahí el nombre se puede llegar a",
+        "start": 365.78,
+        "end": 370.21999999999997
+    },
+    {
+        "text": " repetir por las reglas del cáncer que si nos al tiempo les vamos a discutir hoy.",
+        "start": 370.21999999999997,
+        "end": 375.73999999999995
+    },
+    {
+        "text": " Igualmente yo te recomiendo que las funciones siempre tengan todas las nombres diferentes.",
+        "start": 375.73999999999995,
+        "end": 379.02
+    },
+    {
+        "text": " Puntema de claridad de reducir el rey juego de confusión.",
+        "start": 379.02,
+        "end": 382.85999999999996
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 382.85999999999996,
+        "end": 383.85999999999996
+    },
+    {
+        "text": " ¿Alo más?",
+        "start": 383.85999999999996,
+        "end": 385.85999999999996
+    },
+    {
+        "text": " Bueno, ahora sí nos metemos de lleno en los otros programas que son los prosedinientos.",
+        "start": 385.85999999999996,
+        "end": 392.34
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 392.34,
+        "end": 393.34
+    },
+    {
+        "text": " ¿Al igual que las funciones son subprogramas?",
+        "start": 393.34,
+        "end": 399.73999999999995
+    },
+    {
+        "text": " Es decir, podemos pensar que el procedimiento es algo así como un mini programa en sí mismo",
+        "start": 399.73999999999995,
+        "end": 406.14
+    },
+    {
+        "text": " de la misma manera que lo es una función.",
+        "start": 406.14,
+        "end": 410.21999999999997
+    },
+    {
+        "text": " Pero tienen diferencias con las funciones.",
+        "start": 410.21999999999997,
+        "end": 413.58
+    },
+    {
+        "text": " Primero que nada los procedimientos no retornan un valor en su encabezado.",
+        "start": 413.58,
+        "end": 420.09999999999997
+    },
+    {
+        "text": " O sea, el propósito del procedimiento no es producir un resultado como la función.",
+        "start": 420.98,
+        "end": 427.86
+    },
+    {
+        "text": " El propósito de un procedimiento es simplemente ejecutar una serie de acciones y nada más.",
+        "start": 427.86,
+        "end": 435.38
+    },
+    {
+        "text": " Un encabezado de un procedimiento tiene esta forma.",
+        "start": 435.38,
+        "end": 438.42
+    },
+    {
+        "text": " En vez de la palabra reservada función es la palabra reservada procedure, se le pone",
+        "start": 438.42,
+        "end": 443.22
+    },
+    {
+        "text": " un nombre y después se le ponen parámetros al igual que se le ponían a las funciones.",
+        "start": 443.22,
+        "end": 450.5
+    },
+    {
+        "text": " Lo que no va en el encabezado del procedimiento que es 2.5 de retorno porque el procedimiento",
+        "start": 450.5,
+        "end": 456.70000000000005
+    },
+    {
+        "text": " no retornan ningún resultado.",
+        "start": 456.70000000000005,
+        "end": 460.98
+    },
+    {
+        "text": " Se pone simplemente punto y coma y ahí finalizó el encabezado.",
+        "start": 460.98,
+        "end": 467.18
+    },
+    {
+        "text": " Cuando vimos funciones, sobre todo cuando vimos la parte de invocar una función, nosotros",
+        "start": 467.18,
+        "end": 472.46000000000004
+    },
+    {
+        "text": " dijimos que previamente en el curso habíamos hecho uso de funciones predefinidas, por ejemplo",
+        "start": 472.46,
+        "end": 479.06
+    },
+    {
+        "text": " cual, por ejemplo SQLRUT, por ejemplo Apps que calcula el valor absoluto, por ejemplo",
+        "start": 479.06,
+        "end": 486.09999999999997
+    },
+    {
+        "text": " la función Strung, Round, Char, Or, todas esas.",
+        "start": 486.09999999999997,
+        "end": 491.17999999999995
+    },
+    {
+        "text": " Y habíamos visto que la manera de invocarlas era completamente análoga a la manera de",
+        "start": 491.17999999999995,
+        "end": 496.17999999999995
+    },
+    {
+        "text": " invocar las funciones predefinidas.",
+        "start": 496.17999999999995,
+        "end": 499.02
+    },
+    {
+        "text": " Bueno, lo mismo pasa con los procedimientos.",
+        "start": 499.02,
+        "end": 501.74
+    },
+    {
+        "text": " Nosotros ya hemos visto algunos procedimientos concretamente cuales.",
+        "start": 501.74,
+        "end": 511.58
+    },
+    {
+        "text": " ¿Cuál no es un procedimiento?",
+        "start": 511.58,
+        "end": 512.58
+    },
+    {
+        "text": " ¿Cuál es una estructura de control lo mismo que for?",
+        "start": 512.58,
+        "end": 516.74
+    },
+    {
+        "text": " Rhythline, Rhyth, Rhythline, Rhyth.",
+        "start": 516.74,
+        "end": 520.74
+    },
+    {
+        "text": " Es decir, lo que nosotros llamábamos instrucciones de entrada y salida son en realidad procedimientos.",
+        "start": 520.74,
+        "end": 527.62
+    },
+    {
+        "text": " Fíjense como llamábamos, por ejemplo, a Rhyth.",
+        "start": 527.62,
+        "end": 531.14
+    },
+    {
+        "text": " Nosotros poníamos Rhyth y entreparentesis imaginemos que queríamos mostrar X y que",
+        "start": 531.14,
+        "end": 536.5
+    },
+    {
+        "text": " hacíamos.",
+        "start": 536.5,
+        "end": 537.5
+    },
+    {
+        "text": " ¿Pontricoma?",
+        "start": 537.5,
+        "end": 540.1
+    },
+    {
+        "text": " No poníamos un operador de asignación y no guardábamos al resultado en ningún lado,",
+        "start": 540.1,
+        "end": 545.54
+    },
+    {
+        "text": " ¿por qué?",
+        "start": 545.54,
+        "end": 546.54
+    },
+    {
+        "text": " Porque no es una función.",
+        "start": 546.54,
+        "end": 548.8199999999999
+    },
+    {
+        "text": " Es un procedimiento.",
+        "start": 548.8199999999999,
+        "end": 551.62
+    },
+    {
+        "text": " Entonces los procedimientos que nosotros vamos a escribir se van a invocar de la misma",
+        "start": 551.62,
+        "end": 556.58
+    },
+    {
+        "text": " manera que los procedimientos predefinidos de Pascal, nombre del procedimiento, parámetros",
+        "start": 556.58,
+        "end": 562.38
+    },
+    {
+        "text": " efectivos entre paréntesis y punto y coma.",
+        "start": 562.38,
+        "end": 566.0200000000001
+    },
+    {
+        "text": " La llamada a un procedimiento es por sí sola una instrucción que nosotros podemos ejecutar.",
+        "start": 566.0200000000001,
+        "end": 573.82
+    },
+    {
+        "text": " No ten la diferencia con, por ejemplo, esto otro.",
+        "start": 573.82,
+        "end": 584.62
+    },
+    {
+        "text": " Ahora como nos damos cuenta que estamos llamando una función.",
+        "start": 584.62,
+        "end": 589.94
+    },
+    {
+        "text": " Porque la función internamente producirá un resultado y ese resultado se asigna a una",
+        "start": 589.94,
+        "end": 595.82
+    },
+    {
+        "text": " variable de este ejemplo.",
+        "start": 595.82,
+        "end": 598.46
+    },
+    {
+        "text": " Miren la diferencia con el procedimiento.",
+        "start": 598.46,
+        "end": 600.62
+    },
+    {
+        "text": " El procedimiento se invoca y punto nada más.",
+        "start": 600.62,
+        "end": 604.86
+    },
+    {
+        "text": " Lo mismo va a pasar con los procedimientos que hagamos nosotros.",
+        "start": 604.86,
+        "end": 608.34
+    },
+    {
+        "text": " Se invoca, se le pasan los parámetros efectivos, punto y coma.",
+        "start": 608.34,
+        "end": 612.9
+    },
+    {
+        "text": " Ahí finalizó la invocación al procedimiento.",
+        "start": 612.9,
+        "end": 616.38
+    },
+    {
+        "text": " Y el propósito es realizar una serie de acciones en su interior sin producir un resultado.",
+        "start": 616.38,
+        "end": 623.9
+    },
+    {
+        "text": " Vamos a ver que hay casos en los cuales nos va a convenir a hacer eso.",
+        "start": 623.9,
+        "end": 629.8199999999999
+    },
+    {
+        "text": " Por eso dice ahí que se invocan como una instrucción independiente, como está ya en",
+        "start": 629.8199999999999,
+        "end": 634.26
+    },
+    {
+        "text": " aquel raio.",
+        "start": 634.26,
+        "end": 636.26
+    },
+    {
+        "text": " ¿Quién ha declarado eso?",
+        "start": 636.26,
+        "end": 639.06
+    },
+    {
+        "text": " Bien.",
+        "start": 639.06,
+        "end": 640.06
+    },
+    {
+        "text": " Salvo por los dos puntos y el tipo de retorno y salvo porque ya dice Procedure, el resto",
+        "start": 640.78,
+        "end": 646.26
+    },
+    {
+        "text": " del encabezado funciona igual que en una función.",
+        "start": 646.26,
+        "end": 650.6999999999999
+    },
+    {
+        "text": " ¿Más preguntas?",
+        "start": 650.6999999999999,
+        "end": 653.2199999999999
+    },
+    {
+        "text": " Bien.",
+        "start": 653.2199999999999,
+        "end": 656.3
+    },
+    {
+        "text": " Y acá tenemos un ejemplo de un procedimiento definido por nosotros.",
+        "start": 656.3,
+        "end": 662.3
+    },
+    {
+        "text": " Palabra reservada Procedure.",
+        "start": 662.3,
+        "end": 664.78
+    },
+    {
+        "text": " Se ponemos un nombre al procedimiento.",
+        "start": 664.78,
+        "end": 668.26
+    },
+    {
+        "text": " En este caso mostrar al reglo que lo que quiere hacer es desplegar por pantalla el contenido",
+        "start": 668.26,
+        "end": 673.78
+    },
+    {
+        "text": " de un arreglo.",
+        "start": 673.78,
+        "end": 676.06
+    },
+    {
+        "text": " ¿Qué le pasamos como parámetro?",
+        "start": 676.06,
+        "end": 678.22
+    },
+    {
+        "text": " El arreglo.",
+        "start": 678.22,
+        "end": 679.6999999999999
+    },
+    {
+        "text": " Y para este arreglo vamos a hacer el mismo supuesto que en los parámetros de entrada de",
+        "start": 679.6999999999999,
+        "end": 684.5
+    },
+    {
+        "text": " una función que era cuál.",
+        "start": 684.5,
+        "end": 685.8199999999999
+    },
+    {
+        "text": " Además, pero que asumíamos sobre el valor de los parámetros, que ya estaba cargado,",
+        "start": 685.82,
+        "end": 696.82
+    },
+    {
+        "text": " ya estaba ingresado.",
+        "start": 696.82,
+        "end": 698.9000000000001
+    },
+    {
+        "text": " Este arreglo ya viene ingresado con valores válidos y lo que va a hacer es el procedimiento",
+        "start": 698.9000000000001,
+        "end": 705.1400000000001
+    },
+    {
+        "text": " va a recorrerlo y desplegar por pantalla su contenido.",
+        "start": 705.1400000000001,
+        "end": 709.5400000000001
+    },
+    {
+        "text": " En este caso, este procedimiento lo que hace es recorrer el arreglo y vamos",
+        "start": 709.54,
+        "end": 723.04
+    },
+    {
+        "text": " traando Zelda Zelda.",
+        "start": 723.04,
+        "end": 725.5
+    },
+    {
+        "text": " Yo luego, desde el programa principal, puedo tener un arreglo cargado y ese arreglo se",
+        "start": 725.5,
+        "end": 731.78
+    },
+    {
+        "text": " lo paso como parámetro en una invocación.",
+        "start": 731.78,
+        "end": 734.06
+    },
+    {
+        "text": " ¿No se si era esa laguda ahora otra?",
+        "start": 734.06,
+        "end": 738.0999999999999
+    },
+    {
+        "text": " Bien.",
+        "start": 739.1,
+        "end": 740.1
+    },
+    {
+        "text": " Y, bueno, miren lo que pasa dentro.",
+        "start": 740.1,
+        "end": 742.82
+    },
+    {
+        "text": " Tenemos una sección de variables donde estamos declarando una única variable.",
+        "start": 742.82,
+        "end": 747.1800000000001
+    },
+    {
+        "text": " En este caso es la variable de control para recorrer el arreglo.",
+        "start": 747.1800000000001,
+        "end": 751.66
+    },
+    {
+        "text": " Y como instrucciones colocamos un for que recorre el arreglo en su totalidad y vamos",
+        "start": 751.66,
+        "end": 758.08
+    },
+    {
+        "text": " traando índice y contenido.",
+        "start": 758.08,
+        "end": 762.94
+    },
+    {
+        "text": " Y luego en que el procedimiento hace uso de instrucciones que nosotros en las funciones",
+        "start": 762.94,
+        "end": 768.7
+    },
+    {
+        "text": " dijimos no le asusemos, que son que tipo de instrucciones.",
+        "start": 768.7,
+        "end": 772.5400000000001
+    },
+    {
+        "text": " Las rentradas y salidas.",
+        "start": 772.5400000000001,
+        "end": 774.86
+    },
+    {
+        "text": " Las funciones no deberían tener interacción con los usuarios, no es el propósito de las",
+        "start": 774.86,
+        "end": 779.94
+    },
+    {
+        "text": " funciones.",
+        "start": 779.94,
+        "end": 780.94
+    },
+    {
+        "text": " Para eso están los procedimientos.",
+        "start": 780.94,
+        "end": 785.5
+    },
+    {
+        "text": " Y este en particular es lo que vamos a llamar un procedimiento de salida.",
+        "start": 785.5,
+        "end": 790.3000000000001
+    },
+    {
+        "text": " Un procedimiento que usó propósito es emitir datos de salida al usuario.",
+        "start": 790.3,
+        "end": 796.14
+    },
+    {
+        "text": " Vamos a ver después que también están los procedimientos de entrada y lo que vamos",
+        "start": 796.14,
+        "end": 799.9799999999999
+    },
+    {
+        "text": " a llamar los procedimientos internos.",
+        "start": 799.9799999999999,
+        "end": 802.38
+    },
+    {
+        "text": " Pero eso viene ahora en breve.",
+        "start": 802.38,
+        "end": 806.3
+    },
+    {
+        "text": " Así se define un procedimiento.",
+        "start": 806.3,
+        "end": 809.42
+    },
+    {
+        "text": " Si yo luego quisiera invocar a ese procedimiento desde el programa principal que tendría que",
+        "start": 809.42,
+        "end": 813.8599999999999
+    },
+    {
+        "text": " poner.",
+        "start": 813.8599999999999,
+        "end": 816.62
+    },
+    {
+        "text": " Desde el procedimiento mostrará arreglo y pasarle algo que sea de tipo arreglo.",
+        "start": 816.62,
+        "end": 828.34
+    },
+    {
+        "text": " Estamos suponiendo que arreglo es un tipo de datos que se definió arriba con la palabra",
+        "start": 828.34,
+        "end": 833.58
+    },
+    {
+        "text": " reservada a Thai y punto y coma y con eso finalizó la invocación al procedimiento.",
+        "start": 833.58,
+        "end": 843.38
+    },
+    {
+        "text": " ¿Se van teniendo?",
+        "start": 843.38,
+        "end": 850.38
+    },
+    {
+        "text": " Bien.",
+        "start": 850.38,
+        "end": 853.22
+    },
+    {
+        "text": " Y vamos a hablar ahora de algo que tiene que ver con procedimientos que es pasaje de",
+        "start": 853.22,
+        "end": 858.3
+    },
+    {
+        "text": " parámetros.",
+        "start": 858.3,
+        "end": 863.54
+    },
+    {
+        "text": " Vamos a ver que existen dos tipos de pasaje de parámetros.",
+        "start": 863.54,
+        "end": 867.66
+    },
+    {
+        "text": " Por un lado está lo que se llama el pasaje por valor.",
+        "start": 867.66,
+        "end": 870.9
+    },
+    {
+        "text": " Por otro lado está lo que se llama el pasaje por referencia.",
+        "start": 870.9,
+        "end": 874.9
+    },
+    {
+        "text": " Yo les cuento que el único pasaje de parámetros que hemos estado viendo hasta ahora fue pasaje",
+        "start": 874.9,
+        "end": 880.78
+    },
+    {
+        "text": " por valor.",
+        "start": 880.78,
+        "end": 882.5799999999999
+    },
+    {
+        "text": " Tanto en la clase pasada como el mincio esta.",
+        "start": 882.5799999999999,
+        "end": 887.38
+    },
+    {
+        "text": " Cuando nosotros pasamos un parámetro por valor, esos parámetros no llevan la palabra",
+        "start": 887.38,
+        "end": 893.98
+    },
+    {
+        "text": " bar adelante.",
+        "start": 893.98,
+        "end": 894.98
+    },
+    {
+        "text": " Quizás esto sea algo que todavía no le prestamos mucha atención, justamente porque",
+        "start": 894.98,
+        "end": 899.1999999999999
+    },
+    {
+        "text": " son pasados por valor.",
+        "start": 899.2,
+        "end": 901.5600000000001
+    },
+    {
+        "text": " Vamos a ver que los que sí llevan la palabra bar en el parámetro son lo que se pasan",
+        "start": 901.5600000000001,
+        "end": 906.88
+    },
+    {
+        "text": " por referencia.",
+        "start": 906.88,
+        "end": 909.84
+    },
+    {
+        "text": " Volvamos al procedimiento anterior.",
+        "start": 909.84,
+        "end": 914.8000000000001
+    },
+    {
+        "text": " Directamente vino el parámetro sin la palabra bar adelante.",
+        "start": 914.8000000000001,
+        "end": 919.6
+    },
+    {
+        "text": " Eso quiere decir que este parámetro se pasó por valor.",
+        "start": 919.6,
+        "end": 924.9200000000001
+    },
+    {
+        "text": " Lo vimos previamente, por ejemplo, la función pertenece, tanto x como el arreglo, los dos",
+        "start": 924.92,
+        "end": 932.76
+    },
+    {
+        "text": " vinieron sin la palabra bar.",
+        "start": 932.76,
+        "end": 936.1999999999999
+    },
+    {
+        "text": " También fue pasaje por valor.",
+        "start": 936.1999999999999,
+        "end": 938.92
+    },
+    {
+        "text": " Cuando hicimos la función que determinaba si un número era primo vino el número de",
+        "start": 938.92,
+        "end": 943.4399999999999
+    },
+    {
+        "text": " tipo ínte, sin la palabra bar.",
+        "start": 943.4399999999999,
+        "end": 947.16
+    },
+    {
+        "text": " O sea que en todos los ejemplos que hemos visto hasta ahora el pasaje siempre fue por valor.",
+        "start": 947.16,
+        "end": 952.64
+    },
+    {
+        "text": " Y ahora vamos a ver qué quiere decir por valor sí.",
+        "start": 953.36,
+        "end": 960.56
+    },
+    {
+        "text": " Las funciones no deben tener instrucciones riddy right que interactúen con el usuario",
+        "start": 960.56,
+        "end": 965.64
+    },
+    {
+        "text": " y vamos a ver que tampoco deberían tener pasaje por referencia.",
+        "start": 965.64,
+        "end": 970.16
+    },
+    {
+        "text": " Todas las funciones que vimos tenían solo pasaje por valor lo mismo que el procedimiento",
+        "start": 970.16,
+        "end": 974.96
+    },
+    {
+        "text": " mostrar al arreglo que acabamos de ver.",
+        "start": 974.96,
+        "end": 978.3199999999999
+    },
+    {
+        "text": " Esto fue simplemente para mostrar que efectivamente en todos los ejemplos hasta ahora solo tuvimos",
+        "start": 978.32,
+        "end": 984.08
+    },
+    {
+        "text": " pasaje por valor.",
+        "start": 984.08,
+        "end": 986.6
+    },
+    {
+        "text": " ¿Qué significa que se pase por valor?",
+        "start": 986.6,
+        "end": 990.6
+    },
+    {
+        "text": " Significa eso que está acá.",
+        "start": 990.6,
+        "end": 992.7600000000001
+    },
+    {
+        "text": " En el momento de la invocación se realiza una copia de los valores de los parámetros",
+        "start": 992.7600000000001,
+        "end": 999.84
+    },
+    {
+        "text": " efectivos a los parámetros nominales.",
+        "start": 999.84,
+        "end": 1002.8000000000001
+    },
+    {
+        "text": " ¿Cuáles eran los parámetros nominales?",
+        "start": 1002.8000000000001,
+        "end": 1006.8000000000001
+    },
+    {
+        "text": " Los del encabezado del su programa.",
+        "start": 1006.8,
+        "end": 1008.64
+    },
+    {
+        "text": " ¿Cuáles eran los parámetros efectivos?",
+        "start": 1008.64,
+        "end": 1012.24
+    },
+    {
+        "text": " Los parámetros concretos que se le pasan en la invocación.",
+        "start": 1012.24,
+        "end": 1018.8
+    },
+    {
+        "text": " Entonces por ejemplo, imaginemos la función exprimo, vamos a suponer que v es una variable",
+        "start": 1018.8,
+        "end": 1030.6
+    },
+    {
+        "text": " de tipo Boolean y por qué digo de tipo Boolean porque la función exprimo devolvía un resultado",
+        "start": 1030.6,
+        "end": 1037.6
+    },
+    {
+        "text": " de tipo Boolean.",
+        "start": 1037.6,
+        "end": 1041.6399999999999
+    },
+    {
+        "text": " Yo puedo hacer por ejemplo esta invocación.",
+        "start": 1041.6399999999999,
+        "end": 1051.36
+    },
+    {
+        "text": " Vamos a volver a la función exprimo.",
+        "start": 1051.36,
+        "end": 1058.12
+    },
+    {
+        "text": " ¿Qué es el parámetro nominal?",
+        "start": 1058.12,
+        "end": 1060.28
+    },
+    {
+        "text": " El parámetro nominal se llama como número y el parámetro efectivo acá como se llama",
+        "start": 1060.28,
+        "end": 1066.12
+    },
+    {
+        "text": " x.",
+        "start": 1066.12,
+        "end": 1069.12
+    },
+    {
+        "text": " X está pasado por valor.",
+        "start": 1069.12,
+        "end": 1071.32
+    },
+    {
+        "text": " Esto significa que el valor que está en el x se copia hacia número.",
+        "start": 1071.32,
+        "end": 1080.1599999999999
+    },
+    {
+        "text": " O sea tenemos dos espacios de memoria diferentes.",
+        "start": 1080.1599999999999,
+        "end": 1085.4799999999998
+    },
+    {
+        "text": " No es x que está definido en el programa principal que contiene un valor.",
+        "start": 1085.48,
+        "end": 1090.76
+    },
+    {
+        "text": " Vamos a imaginarnos que es un 7.",
+        "start": 1090.76,
+        "end": 1093.4
+    },
+    {
+        "text": " Entonces yo tengo en el programa principal una variable x con el valor 7.",
+        "start": 1093.4,
+        "end": 1101.4
+    },
+    {
+        "text": " Acomprado los índices de los arreglos.",
+        "start": 1101.4,
+        "end": 1104.72
+    },
+    {
+        "text": " Al momento de hacer la llamada, ¿quién aparece en escena?",
+        "start": 1104.72,
+        "end": 1111.56
+    },
+    {
+        "text": " Número.",
+        "start": 1111.56,
+        "end": 1113.76
+    },
+    {
+        "text": " En escena aparece número que es un parámetro de la función y este 7 es copiado dentro",
+        "start": 1113.76,
+        "end": 1123.96
+    },
+    {
+        "text": " de número.",
+        "start": 1123.96,
+        "end": 1126.8
+    },
+    {
+        "text": " El pasaje de parámetros se haga por valor significa que se hizo una copia del valor que",
+        "start": 1126.8,
+        "end": 1133.52
+    },
+    {
+        "text": " se pasó como parámetro efectivo hacia el parámetro nominal correspondiente.",
+        "start": 1133.52,
+        "end": 1140.44
+    },
+    {
+        "text": " Hay quienes le llaman pasaje de parámetros por copia también.",
+        "start": 1140.44,
+        "end": 1146.12
+    },
+    {
+        "text": " ¿Y esto qué consecuencia tiene?",
+        "start": 1146.12,
+        "end": 1149.4
+    },
+    {
+        "text": " Si por alguna razón dentro de la función se modificara el valor de número, este valor",
+        "start": 1149.4,
+        "end": 1157.24
+    },
+    {
+        "text": " de acá que pasaría con el valor en x.",
+        "start": 1157.24,
+        "end": 1160.56
+    },
+    {
+        "text": " No se modifica, se modifica la copia.",
+        "start": 1160.56,
+        "end": 1165.8
+    },
+    {
+        "text": " Eso es si por alguna razón dentro de la función se modificara el parámetro de entrada.",
+        "start": 1165.8,
+        "end": 1172.8799999999999
+    },
+    {
+        "text": " Que de hecho es una buena práctica modificar el dato de entrada.",
+        "start": 1172.8799999999999,
+        "end": 1176.96
+    },
+    {
+        "text": " No.",
+        "start": 1176.96,
+        "end": 1177.96
+    },
+    {
+        "text": " Es algo antirecomendado.",
+        "start": 1177.96,
+        "end": 1180.36
+    },
+    {
+        "text": " Pero gracias al pasaje por valor, si por alguna razón me equivocué y adentro de la",
+        "start": 1180.36,
+        "end": 1185.6
+    },
+    {
+        "text": " función modifique número, no hay peligro.",
+        "start": 1185.6,
+        "end": 1188.3999999999999
+    },
+    {
+        "text": " ¿Por qué?",
+        "start": 1188.4,
+        "end": 1191.16
+    },
+    {
+        "text": " Porque estoy modificando la copia y no el parámetro efectivo que se pasó en la invocación.",
+        "start": 1191.16,
+        "end": 1197.3200000000002
+    },
+    {
+        "text": " Podríamos decir que el pasaje por valor es una manera segura de garantizar que los",
+        "start": 1197.3200000000002,
+        "end": 1202.0
+    },
+    {
+        "text": " datos de entrada no se van a ver modificados dentro del procedimiento.",
+        "start": 1202.0,
+        "end": 1207.2800000000002
+    },
+    {
+        "text": " ¿Sabía?",
+        "start": 1207.2800000000002,
+        "end": 1210.2800000000002
+    },
+    {
+        "text": " Eso es el pasaje por valor.",
+        "start": 1210.2800000000002,
+        "end": 1212.48
+    },
+    {
+        "text": " Cuando debo usarlo, bueno, justamente en aquellos casos en los cuales yo no quiera",
+        "start": 1212.48,
+        "end": 1217.5600000000002
+    },
+    {
+        "text": " modificar el valor dentro de el subprograma.",
+        "start": 1217.56,
+        "end": 1220.84
+    },
+    {
+        "text": " ¿Pasca acá?",
+        "start": 1220.84,
+        "end": 1226.08
+    },
+    {
+        "text": " Recordemos otra cosa.",
+        "start": 1226.08,
+        "end": 1230.32
+    },
+    {
+        "text": " Cuando yo hago una invocación, no solamente podía pasar variables, que otras cosas",
+        "start": 1230.32,
+        "end": 1236.02
+    },
+    {
+        "text": " podía pasar.",
+        "start": 1236.02,
+        "end": 1239.52
+    },
+    {
+        "text": " Constantes o que otra cosa.",
+        "start": 1239.52,
+        "end": 1242.8
+    },
+    {
+        "text": " Es que la expresión es que eventualmente a su vez podían contenerla a la llamada otra",
+        "start": 1242.8,
+        "end": 1246.56
+    },
+    {
+        "text": " función.",
+        "start": 1246.56,
+        "end": 1248.56
+    },
+    {
+        "text": " Bueno, si lo que paso es una variable, el valor de esa variable es copiada en el parámetro",
+        "start": 1248.56,
+        "end": 1254.24
+    },
+    {
+        "text": " o nominal.",
+        "start": 1254.24,
+        "end": 1255.24
+    },
+    {
+        "text": " Si paso un valor, bueno, directamente el valor es colocado en el parámetro o nominal.",
+        "start": 1255.24,
+        "end": 1260.56
+    },
+    {
+        "text": " Y si lo que paso es una expresión, primero se calcula la expresión y el resultado de",
+        "start": 1260.56,
+        "end": 1266.24
+    },
+    {
+        "text": " la expresión es el que es copiado en el parámetro o nominal.",
+        "start": 1266.24,
+        "end": 1271.12
+    },
+    {
+        "text": " O sea que en el pasaje por valor, cuando yo hago la invocación puedo pasar variables,",
+        "start": 1271.12,
+        "end": 1277.1399999999999
+    },
+    {
+        "text": " valor constante o expresión, cualquiera de esas tres cosas.",
+        "start": 1277.1399999999999,
+        "end": 1281.52
+    },
+    {
+        "text": " Porque lo que sea que pase va a ser copiado en el parámetro o nominal que está en el",
+        "start": 1281.52,
+        "end": 1286.9199999999998
+    },
+    {
+        "text": " encabezado de la función.",
+        "start": 1286.9199999999998,
+        "end": 1290.6
+    },
+    {
+        "text": " ¿Se entendió esto?",
+        "start": 1290.6,
+        "end": 1294.1599999999999
+    },
+    {
+        "text": " No digo cuando quiero usar pasaje por valor.",
+        "start": 1294.16,
+        "end": 1298.88
+    },
+    {
+        "text": " Cuando no quiero modificar los valores entra.",
+        "start": 1298.88,
+        "end": 1303.64
+    },
+    {
+        "text": " Esta x, gracias al pasaje por valor, no importa qué pase dentro de exprimo que le va a pasar",
+        "start": 1303.64,
+        "end": 1309.3200000000002
+    },
+    {
+        "text": " a x cuando termine la función.",
+        "start": 1309.3200000000002,
+        "end": 1311.52
+    },
+    {
+        "text": " Va a seguir manteniendo el valor que tenía y eso es lo que queremos.",
+        "start": 1311.52,
+        "end": 1317.5600000000002
+    },
+    {
+        "text": " Bueno, cuando les parece que usaremos el pasaje por referencia.",
+        "start": 1317.5600000000002,
+        "end": 1322.4
+    },
+    {
+        "text": " Lo que queramos poder modificar dentro del su programa.",
+        "start": 1322.4,
+        "end": 1325.8000000000002
+    },
+    {
+        "text": " Cuando el propósito se ajusta a mente ese.",
+        "start": 1325.8000000000002,
+        "end": 1335.2800000000002
+    },
+    {
+        "text": " ¿Qué había pasado acá en mostrar el arreglo?",
+        "start": 1335.2800000000002,
+        "end": 1338.1200000000001
+    },
+    {
+        "text": " Este arreglo, como venía.",
+        "start": 1338.1200000000001,
+        "end": 1340.92
+    },
+    {
+        "text": " Ya ha cargado, por supuesto.",
+        "start": 1340.92,
+        "end": 1342.64
+    },
+    {
+        "text": " Pero ¿qué tipo de pasaje de parámetros teníamos acá?",
+        "start": 1342.64,
+        "end": 1345.72
+    },
+    {
+        "text": " Por valor.",
+        "start": 1345.72,
+        "end": 1347.3200000000002
+    },
+    {
+        "text": " ¿Por qué razón?",
+        "start": 1347.3200000000002,
+        "end": 1348.3200000000002
+    },
+    {
+        "text": " ¿Qué es lo que hicimos dentro de este procedimiento?",
+        "start": 1348.3200000000002,
+        "end": 1351.92
+    },
+    {
+        "text": " ¿Cómo mostramos?",
+        "start": 1351.92,
+        "end": 1352.92
+    },
+    {
+        "text": " ¿Qué es lo que no hicimos con el arreglo?",
+        "start": 1352.92,
+        "end": 1355.8000000000002
+    },
+    {
+        "text": " Modificarlo.",
+        "start": 1355.8000000000002,
+        "end": 1358.3200000000002
+    },
+    {
+        "text": " O sea que el pasaje por valor no es algo propio de las funciones.",
+        "start": 1358.3200000000002,
+        "end": 1362.0
+    },
+    {
+        "text": " Yo puedo tener procedimientos donde también haya pasaje por valor.",
+        "start": 1362.0,
+        "end": 1365.48
+    },
+    {
+        "text": " ¿Cómo, por ejemplo, acá?",
+        "start": 1365.48,
+        "end": 1367.44
+    },
+    {
+        "text": " Siempre que el propósito sea hacer uso del valor que viene en el parámetro.",
+        "start": 1367.44,
+        "end": 1374.1200000000001
+    },
+    {
+        "text": " Sin modificarlo, no importa si es procedimiento de función.",
+        "start": 1374.1200000000001,
+        "end": 1377.5600000000002
+    },
+    {
+        "text": " Usamos pasaje por valor.",
+        "start": 1377.5600000000002,
+        "end": 1380.48
+    },
+    {
+        "text": " ¿Qué hago claro eso?",
+        "start": 1380.48,
+        "end": 1381.88
+    },
+    {
+        "text": " Vamos a ver el otro, el pasaje por referencia.",
+        "start": 1382.88,
+        "end": 1392.6000000000001
+    },
+    {
+        "text": " En el pasaje por referencia, el parámetro que se pasa por referencia es precedido por",
+        "start": 1392.6000000000001,
+        "end": 1400.92
+    },
+    {
+        "text": " la palabra reservada var.",
+        "start": 1400.92,
+        "end": 1403.4
+    },
+    {
+        "text": " La misma palabra que se usa para declarar variables, pero cuesta delante del parámetro en el encabezado.",
+        "start": 1403.4,
+        "end": 1411.0
+    },
+    {
+        "text": " Esas es la manera que yo tengo de a la vista con solo mirar el encabezado saber si el",
+        "start": 1411.0,
+        "end": 1418.2
+    },
+    {
+        "text": " parámetro va o no por referencia.",
+        "start": 1418.2,
+        "end": 1422.76
+    },
+    {
+        "text": " Por ejemplo, acá, procedimiento para leer un arreglo por teclado.",
+        "start": 1422.76,
+        "end": 1429.48
+    },
+    {
+        "text": " Le paso a de tipo arreglo y adelante tiene la palabra barra.",
+        "start": 1429.48,
+        "end": 1436.16
+    },
+    {
+        "text": " ¿Qué quiere decir la palabra barra que ha estado por referencia?",
+        "start": 1436.16,
+        "end": 1441.24
+    },
+    {
+        "text": " No por valor.",
+        "start": 1441.24,
+        "end": 1444.0400000000002
+    },
+    {
+        "text": " ¿Y qué quiere decir que está pasado por referencia?",
+        "start": 1444.0400000000002,
+        "end": 1447.6000000000001
+    },
+    {
+        "text": " Esto de acá.",
+        "start": 1447.6000000000001,
+        "end": 1449.88
+    },
+    {
+        "text": " En el momento de la invocación, el parámetro nominal comparte el mismo espacio de memoria",
+        "start": 1449.88,
+        "end": 1458.3200000000002
+    },
+    {
+        "text": " que el parámetro efectivo.",
+        "start": 1458.3200000000002,
+        "end": 1459.8000000000002
+    },
+    {
+        "text": " Eso se le llama alias de variables.",
+        "start": 1459.8000000000002,
+        "end": 1463.0400000000002
+    },
+    {
+        "text": " Es decir, no se hace una guerra, no se hace una copia.",
+        "start": 1463.04,
+        "end": 1469.08
+    },
+    {
+        "text": " Cuando yo acapasex por valor, el valor que estaban exfue copiado a un nuevo espacio de",
+        "start": 1469.08,
+        "end": 1476.52
+    },
+    {
+        "text": " memoria, llamado número, eso es pasaje por valor.",
+        "start": 1476.52,
+        "end": 1481.56
+    },
+    {
+        "text": " En el pasaje por referencia no se produce ninguna copia, sino que el mismo espacio de",
+        "start": 1481.56,
+        "end": 1488.32
+    },
+    {
+        "text": " memoria va a tener dos nombres.",
+        "start": 1488.32,
+        "end": 1491.76
+    },
+    {
+        "text": " El nombre que aparece en el parámetro nominal es decir, en el cabezal y el nombre del parámetro",
+        "start": 1491.76,
+        "end": 1498.72
+    },
+    {
+        "text": " efectivo que yo le estoy pasando.",
+        "start": 1498.72,
+        "end": 1502.32
+    },
+    {
+        "text": " Eso que efecto va a tener que cualquier modificación que yo haga dentro del subsprograma, derrevote que",
+        "start": 1502.32,
+        "end": 1509.72
+    },
+    {
+        "text": " va a pasar.",
+        "start": 1509.72,
+        "end": 1510.72
+    },
+    {
+        "text": " ¿Va a afectar a la variable que yo pese en la invocación?",
+        "start": 1510.72,
+        "end": 1514.0
+    },
+    {
+        "text": " ¿Qué es lo que queremos cuando usamos pasaje por referencia?",
+        "start": 1514.0,
+        "end": 1521.28
+    },
+    {
+        "text": " Dos parámetros efectivos deben ser variables, es decir, cuando yo pasaba un parámetro",
+        "start": 1521.28,
+        "end": 1526.96
+    },
+    {
+        "text": " por valor, el parámetro efectivo podría ser una de tres cosas, ¿cuáles eran?",
+        "start": 1526.96,
+        "end": 1532.6
+    },
+    {
+        "text": " Una expresión, una variable o una constante, cualquiera de esas tres se podía poner en",
+        "start": 1532.6,
+        "end": 1537.2
+    },
+    {
+        "text": " la invocación como parámetro efectivo.",
+        "start": 1537.2,
+        "end": 1540.2
+    },
+    {
+        "text": " En el caso del parámetro por referencia solamente le puedo pasar una variable.",
+        "start": 1540.2,
+        "end": 1544.52
+    },
+    {
+        "text": " No tiene sentido pasarle otra cosa.",
+        "start": 1544.52,
+        "end": 1546.72
+    },
+    {
+        "text": " Es más ni siquiera te va a compilar si le pasas otra cosa.",
+        "start": 1546.72,
+        "end": 1551.16
+    },
+    {
+        "text": " Le pasas una variable al procedimiento para que internamente ese procedimiento la",
+        "start": 1551.16,
+        "end": 1557.48
+    },
+    {
+        "text": " pueda modificar.",
+        "start": 1557.48,
+        "end": 1559.68
+    },
+    {
+        "text": " Y cualquier modificación que le ocurra a la variable dentro del procedimiento, bueno,",
+        "start": 1559.68,
+        "end": 1565.3200000000002
+    },
+    {
+        "text": " derrevote va a haber afectado también al parámetro efectivo, es decir, a la variable",
+        "start": 1565.3200000000002,
+        "end": 1570.3600000000001
+    },
+    {
+        "text": " que le pasas en la invocación, justamente porque son el mismo espacio en el moriador.",
+        "start": 1570.3600000000001,
+        "end": 1576.4
+    },
+    {
+        "text": " ¿Hasta acá?",
+        "start": 1576.4,
+        "end": 1577.48
+    },
+    {
+        "text": " Bueno, voy a vamos nuevamente a este.",
+        "start": 1577.48,
+        "end": 1585.28
+    },
+    {
+        "text": " Ya habíamos visto un procedimiento para mostrar por pantalla la reglo y en ese procedimiento",
+        "start": 1585.28,
+        "end": 1591.28
+    },
+    {
+        "text": " el arreglo fue pasado por valor.",
+        "start": 1591.28,
+        "end": 1593.52
+    },
+    {
+        "text": " Y está bien que fuera pasado por valor, ¿por qué?",
+        "start": 1593.52,
+        "end": 1597.52
+    },
+    {
+        "text": " No lo queríamos modificar, sólo lo queríamos mostrar.",
+        "start": 1597.52,
+        "end": 1601.08
+    },
+    {
+        "text": " ¿A qué pasa exactamente al revés?",
+        "start": 1601.08,
+        "end": 1603.0
+    },
+    {
+        "text": " ¿A qué queremos modificarlo?",
+        "start": 1603.0,
+        "end": 1606.56
+    },
+    {
+        "text": " Me pasan a que es una reglo por referencia y lo que nosotros vamos a querer hacer dentro",
+        "start": 1606.56,
+        "end": 1615.52
+    },
+    {
+        "text": " de este procedimiento es cargarle valores a las cendas.",
+        "start": 1615.52,
+        "end": 1622.32
+    },
+    {
+        "text": " Eso quiere decir que lo que fuera que tuviera el arreglo que le va a pasar.",
+        "start": 1622.32,
+        "end": 1627.56
+    },
+    {
+        "text": " Lo vamos a modificar, no importa si la reglo ya venía cargado con valores válidos o si",
+        "start": 1627.56,
+        "end": 1632.52
+    },
+    {
+        "text": " es la primera vez que lo vamos a cargar, porque si es la primera vez que traía las reglas",
+        "start": 1632.52,
+        "end": 1636.8
+    },
+    {
+        "text": " sus cendas.",
+        "start": 1636.8,
+        "end": 1639.8
+    },
+    {
+        "text": " Vasura, valores inválidos, valores indefinidos.",
+        "start": 1639.8,
+        "end": 1643.72
+    },
+    {
+        "text": " ¿Qué me vas a preguntar?",
+        "start": 1643.72,
+        "end": 1645.6399999999999
+    },
+    {
+        "text": " Eso mismo.",
+        "start": 1645.6399999999999,
+        "end": 1647.84
+    },
+    {
+        "text": " Entonces, no importa lo que traiga la reglo, ya sea valores indefinidos o ya sea valores",
+        "start": 1647.84,
+        "end": 1653.76
+    },
+    {
+        "text": " válidos previamente cargados.",
+        "start": 1653.76,
+        "end": 1655.08
+    },
+    {
+        "text": " Lo que va a hacer este procedimiento es pedirle al usuario valores y colocarlos en las",
+        "start": 1655.08,
+        "end": 1660.2
+    },
+    {
+        "text": " cendas.",
+        "start": 1660.2,
+        "end": 1661.2
+    },
+    {
+        "text": " Y es lo que hacemos acá.",
+        "start": 1661.2,
+        "end": 1665.0
+    },
+    {
+        "text": " Nuevamente declaramos una variable interna al procedimiento, variable de control del",
+        "start": 1665.0,
+        "end": 1670.04
+    },
+    {
+        "text": " for, y este for recorre, le mostro un cartelito y valesiendo celdacelda, un valor obtenido",
+        "start": 1670.04,
+        "end": 1679.44
+    },
+    {
+        "text": " de la entrada de estanta.",
+        "start": 1679.44,
+        "end": 1683.72
+    },
+    {
+        "text": " Hasta acá, ¿cómo haríamos la invocación de esto?",
+        "start": 1683.72,
+        "end": 1690.72
+    },
+    {
+        "text": " Bueno, imaginemos que tenemos una variable aminúscula en el programa principal.",
+        "start": 1690.72,
+        "end": 1703.88
+    },
+    {
+        "text": " La invocación sería como la de cualquier procedimiento.",
+        "start": 1703.88,
+        "end": 1708.04
+    },
+    {
+        "text": " Se pone el nombre del procedimiento y en la invocación no hay diferencia entre si",
+        "start": 1708.04,
+        "end": 1714.52
+    },
+    {
+        "text": " es por valores por referencia.",
+        "start": 1714.52,
+        "end": 1715.72
+    },
+    {
+        "text": " Yo le voy a pasar directamente a, igual que acá, si yo miro las invocaciones, no tengo",
+        "start": 1715.72,
+        "end": 1723.68
+    },
+    {
+        "text": " manera de saber que en un caso está siendo pasada por valor y que en otro caso está",
+        "start": 1723.68,
+        "end": 1728.72
+    },
+    {
+        "text": " siendo pasado por referencia.",
+        "start": 1728.72,
+        "end": 1731.12
+    },
+    {
+        "text": " Eso únicamente lo puedo ver donde, en el encabezado del procedimiento.",
+        "start": 1731.12,
+        "end": 1737.76
+    },
+    {
+        "text": " Lo que va a pasar acá es que esta A se está pasando por referencia por el barque",
+        "start": 1737.76,
+        "end": 1744.76
+    },
+    {
+        "text": " está acá, mientras que en esta otra llamada hace pasaba por valor porque en el cabezal",
+        "start": 1744.76,
+        "end": 1751.76
+    },
+    {
+        "text": " demostrará reglo no había la palabra bar.",
+        "start": 1751.76,
+        "end": 1754.8
+    },
+    {
+        "text": " Si.",
+        "start": 1754.8,
+        "end": 1755.8
+    },
+    {
+        "text": " ¿Y usted que está al comportamiento del mismo procedimiento?",
+        "start": 1755.8,
+        "end": 1758.8
+    },
+    {
+        "text": " Sí.",
+        "start": 1758.8,
+        "end": 1759.8
+    },
+    {
+        "text": " Yo no llamó dos veces.",
+        "start": 1759.8,
+        "end": 1760.8
+    },
+    {
+        "text": " Yo llamó primero una parte del programa y después yo llamó después.",
+        "start": 1760.8,
+        "end": 1763.48
+    },
+    {
+        "text": " Pues sí, si yo más adelante vuelvo a llamar a mostrar reglo lo vas a volver a modificar.",
+        "start": 1763.48,
+        "end": 1767.24
+    },
+    {
+        "text": " Exactamente.",
+        "start": 1767.24,
+        "end": 1768.24
+    },
+    {
+        "text": " Yo voy a tener una reglo que va a tener una cierta cantidad de celdas que desde el programa",
+        "start": 1768.24,
+        "end": 1779.96
+    },
+    {
+        "text": " principal se va a llamar así a minúscula.",
+        "start": 1779.96,
+        "end": 1783.72
+    },
+    {
+        "text": " Y dentro del procedimiento se va a llamar así a mayúscula.",
+        "start": 1783.72,
+        "end": 1788.72
+    },
+    {
+        "text": " Esto es lo que se llama alias de variables o alias de nombres.",
+        "start": 1788.72,
+        "end": 1793.08
+    },
+    {
+        "text": " Tenemos dos nombres diferentes para el mismo espacio de memoria.",
+        "start": 1793.08,
+        "end": 1798.28
+    },
+    {
+        "text": " Uno es el que figura como parámetro nominal es el encabezado y otro es el que estamos pasando",
+        "start": 1798.28,
+        "end": 1803.4399999999998
+    },
+    {
+        "text": " en la invocación.",
+        "start": 1803.4399999999998,
+        "end": 1805.96
+    },
+    {
+        "text": " Cuando yo le paso a acá perdón, aléra reglo, bueno le estoy pasando este a reglo e internamente",
+        "start": 1805.96,
+        "end": 1815.96
+    },
+    {
+        "text": " en el procedimiento se lo va a conocer bajo este nombre.",
+        "start": 1815.96,
+        "end": 1819.84
+    },
+    {
+        "text": " Bueno, capaz que justo el nombre a minúscula y a mayúscula nos muy feliz.",
+        "start": 1819.84,
+        "end": 1823.8799999999999
+    },
+    {
+        "text": " Vamos a suponer que acá le llamamos R.",
+        "start": 1823.8799999999999,
+        "end": 1834.84
+    },
+    {
+        "text": " Acá queda claro que los nombres pueden ser totalmente diferentes.",
+        "start": 1834.84,
+        "end": 1840.72
+    },
+    {
+        "text": " Entonces cuando yo le paso R que es este a reglo en memoria, este mismo a reglo dentro",
+        "start": 1840.72,
+        "end": 1847.76
+    },
+    {
+        "text": " del procedimiento se va a llamar a mayúscula.",
+        "start": 1847.76,
+        "end": 1851.52
+    },
+    {
+        "text": " Cuando yo dentro del procedimiento estoy cargando valores para las celdas de a mayúscula,",
+        "start": 1851.52,
+        "end": 1857.16
+    },
+    {
+        "text": " derrevotes y las estoy cargando aquí en R que tengo en el programa principal.",
+        "start": 1857.16,
+        "end": 1862.52
+    },
+    {
+        "text": " Si dentro de media hora yo vuelvo a hacer esta invocación, voy a leer nuevamente valores",
+        "start": 1862.52,
+        "end": 1867.92
+    },
+    {
+        "text": " para el mismo a reglo.",
+        "start": 1867.92,
+        "end": 1869.4
+    },
+    {
+        "text": " La cuestión es que siempre que yo llame a este procedimiento y le pase el mismo a reglo,",
+        "start": 1869.4,
+        "end": 1874.04
+    },
+    {
+        "text": " me lo voy a volver a cargar a proteclaro al mismo.",
+        "start": 1874.04,
+        "end": 1877.0
+    },
+    {
+        "text": " No puedo llamar al mismo procedimiento y le puedo pasar otro a reglo.",
+        "start": 1877.0,
+        "end": 1886.92
+    },
+    {
+        "text": " No porque en el programa principal vos tenés dos a reglos distintos, R y R2.",
+        "start": 1886.92,
+        "end": 1893.0
+    },
+    {
+        "text": " Mientras dura esta llamada, este R va a ser el ADC.",
+        "start": 1893.0,
+        "end": 1899.24
+    },
+    {
+        "text": " Cuando dentro del procedimiento se cargan las celdas de A se va a estar cargando R.",
+        "start": 1899.24,
+        "end": 1905.0
+    },
+    {
+        "text": " Cuando termine de ejecutarse esta invocación y pase ejecutarse esta otra, yo le voy a estar",
+        "start": 1905.0,
+        "end": 1910.26
+    },
+    {
+        "text": " pasando otro a reglo distinto llamado R2.",
+        "start": 1910.26,
+        "end": 1913.72
+    },
+    {
+        "text": " Ese otro a reglo distinto durante esta invocación es el que se va a llamar a.",
+        "start": 1913.72,
+        "end": 1921.36
+    },
+    {
+        "text": " Cuando ahí estemos cargando en las celdas de A van a hacer las celdas de R2 en el programa",
+        "start": 1921.36,
+        "end": 1926.14
+    },
+    {
+        "text": " principal.",
+        "start": 1926.14,
+        "end": 1927.14
+    },
+    {
+        "text": " O sea, vos podés llamar dos veces al procedimiento y pasarle parámetros diferentes en cada invocación",
+        "start": 1927.14,
+        "end": 1933.96
+    },
+    {
+        "text": " podés.",
+        "start": 1933.96,
+        "end": 1935.4
+    },
+    {
+        "text": " En la primera invocación este parámetro va a compartir A y en la segunda invocación va",
+        "start": 1935.4,
+        "end": 1941.28
+    },
+    {
+        "text": " a ser R2.",
+        "start": 1941.28,
+        "end": 1942.28
+    },
+    {
+        "text": " O sea, no es que quedan atados de por vida el parámetro nominal y el efectivo.",
+        "start": 1942.28,
+        "end": 1947.74
+    },
+    {
+        "text": " Es, son el mismo únicamente mientras dura la ejecución del procedimiento.",
+        "start": 1947.74,
+        "end": 1952.96
+    },
+    {
+        "text": " Cuando usamos pasaje por referencia, cuando espresamente dentro del procedimiento queramos",
+        "start": 1952.96,
+        "end": 1959.14
+    },
+    {
+        "text": " moderno modificar el parámetro efectivo.",
+        "start": 1959.14,
+        "end": 1963.94
+    },
+    {
+        "text": " ¿Ve bien?",
+        "start": 1963.94,
+        "end": 1966.14
+    },
+    {
+        "text": " Sí.",
+        "start": 1966.14,
+        "end": 1967.14
+    },
+    {
+        "text": " ¿Estamos suponiendo que son todos del mismo tipo?",
+        "start": 1967.14,
+        "end": 1976.14
+    },
+    {
+        "text": " O sea, tanto A como R2 en estos ejemplos yo estoy suponiendo que son todos de tipo",
+        "start": 1976.14,
+        "end": 1982.0600000000002
+    },
+    {
+        "text": " a reglo y a reglo fue definido arriba con la palabra Tide y tiene obviamente todos",
+        "start": 1982.0600000000002,
+        "end": 1986.8600000000001
+    },
+    {
+        "text": " el mismo subrango de índices.",
+        "start": 1986.86,
+        "end": 1989.62
+    },
+    {
+        "text": " ¿Está bien?",
+        "start": 1989.62,
+        "end": 1991.82
+    },
+    {
+        "text": " ¿Más preguntas?",
+        "start": 1991.82,
+        "end": 1992.82
+    },
+    {
+        "text": " ¿Qué pasa cuando vas a ver la variabilidad de parámetros y de parámetros?",
+        "start": 1992.82,
+        "end": 1997.78
+    },
+    {
+        "text": " La primera vez que lo llamás aparece en escena ahí, va variando desde 1 hasta n, se va",
+        "start": 1997.78,
+        "end": 2003.82
+    },
+    {
+        "text": " cargando el primera reglo que le pasaste, terminó el procedimiento de esa pareció.",
+        "start": 2003.82,
+        "end": 2009.54
+    },
+    {
+        "text": " Dentro de media hora, voy a más nuevamente al procedimiento y aparece y de nuevo, como",
+        "start": 2009.54,
+        "end": 2014.1399999999999
+    },
+    {
+        "text": " si nunca hubiera existido la primera vez.",
+        "start": 2014.14,
+        "end": 2016.74
+    },
+    {
+        "text": " O sea, las variables locales al procedimiento únicamente viven por decirlo alguna manera",
+        "start": 2016.74,
+        "end": 2022.42
+    },
+    {
+        "text": " mientras dura la invocación.",
+        "start": 2022.42,
+        "end": 2025.74
+    },
+    {
+        "text": " ¿Vagínense las cosas que vamos a poder hacer con esto?",
+        "start": 2025.74,
+        "end": 2032.9
+    },
+    {
+        "text": " Las cosas que van a poder hacer como según la rarrea con esto.",
+        "start": 2032.9,
+        "end": 2037.18
+    },
+    {
+        "text": " Bueno, otro ejemplo, queremos poder modificar una reglo que ya fue cargado.",
+        "start": 2037.18,
+        "end": 2043.9
+    },
+    {
+        "text": " O sea, no lo queremos cargar por teclado.",
+        "start": 2043.9,
+        "end": 2047.46
+    },
+    {
+        "text": " El arreglo ya viene con valores y dentro del procedimiento yo quiero modificar esos valores.",
+        "start": 2047.46,
+        "end": 2054.78
+    },
+    {
+        "text": " Bueno, el arreglo también lo voy a pasar por referencia.",
+        "start": 2054.78,
+        "end": 2063.26
+    },
+    {
+        "text": " En este ejemplo queremos sumarle algo a todos los elementos del arreglo.",
+        "start": 2063.26,
+        "end": 2069.14
+    },
+    {
+        "text": " También me da un arreglo que ya tiene valores y yo quiero ir celda a celda sumándole",
+        "start": 2069.14,
+        "end": 2074.66
+    },
+    {
+        "text": " un incremento a cada valor.",
+        "start": 2074.66,
+        "end": 2078.2999999999997
+    },
+    {
+        "text": " ¿Qué le pasó?",
+        "start": 2078.2999999999997,
+        "end": 2079.9
+    },
+    {
+        "text": " Incremento de tipo inteser y el parámetro incremento como lo pasé.",
+        "start": 2079.9,
+        "end": 2085.42
+    },
+    {
+        "text": " Por valor.",
+        "start": 2085.42,
+        "end": 2086.42
+    },
+    {
+        "text": " Porque a incremento no lo quiero modificar.",
+        "start": 2086.42,
+        "end": 2088.8599999999997
+    },
+    {
+        "text": " Al que quiero modificar esa A, por eso A fue pasado expresamente por referencia.",
+        "start": 2088.8599999999997,
+        "end": 2096.54
+    },
+    {
+        "text": " Sí.",
+        "start": 2096.54,
+        "end": 2097.54
+    },
+    {
+        "text": " ¿Qué yo quiero modificar?",
+        "start": 2097.54,
+        "end": 2099.54
+    },
+    {
+        "text": " Tendría que ponerle bar adelante.",
+        "start": 2099.54,
+        "end": 2101.7799999999997
+    },
+    {
+        "text": " Exactamente.",
+        "start": 2101.7799999999997,
+        "end": 2103.7799999999997
+    },
+    {
+        "text": " Salvo que tengas varios parámetros del mismo tipo todos por referencia.",
+        "start": 2103.7799999999997,
+        "end": 2108.14
+    },
+    {
+        "text": " Ahí puedes poner una vez sola la palabra bar para metrón 1, para metrón 2, 2 puntos",
+        "start": 2108.14,
+        "end": 2114.22
+    },
+    {
+        "text": " tipo.",
+        "start": 2114.22,
+        "end": 2115.22
+    },
+    {
+        "text": " ¿Pero si usted lo tengo?",
+        "start": 2115.22,
+        "end": 2118.7799999999997
+    },
+    {
+        "text": " ¿Usted ya?",
+        "start": 2118.7799999999997,
+        "end": 2119.7799999999997
+    },
+    {
+        "text": " Sí.",
+        "start": 2119.7799999999997,
+        "end": 2120.7799999999997
+    },
+    {
+        "text": " ¿Pero?",
+        "start": 2120.7799999999997,
+        "end": 2121.7799999999997
+    },
+    {
+        "text": " ¿Pero que quiero ver tener?",
+        "start": 2121.7799999999997,
+        "end": 2122.7799999999997
+    },
+    {
+        "text": " ¿Pero que hacer la primera declaración por valor x 2, sin t叙.com y después bar y",
+        "start": 2122.78,
+        "end": 2130.5800000000004
+    },
+    {
+        "text": " de tipo int叙.",
+        "start": 2130.5800000000004,
+        "end": 2131.5800000000004
+    },
+    {
+        "text": " Entonces ahí tienes como separar 2 parámetros del mismo tipo 1 por valor y otro por referencia.",
+        "start": 2131.5800000000004,
+        "end": 2136.78
+    },
+    {
+        "text": " O sea, sería como acá en realidad.",
+        "start": 2136.78,
+        "end": 2140.1800000000003
+    },
+    {
+        "text": " ¿Aca le pondría sin t叙?",
+        "start": 2140.1800000000003,
+        "end": 2142.1800000000003
+    },
+    {
+        "text": " En vez de arreglo.",
+        "start": 2142.1800000000003,
+        "end": 2143.1800000000003
+    },
+    {
+        "text": " ¿Tabía?",
+        "start": 2143.1800000000003,
+        "end": 2145.1800000000003
+    },
+    {
+        "text": " Entonces en este ejemplo tenemos un primer parámetro pasado por valor y un segundo parámetro",
+        "start": 2145.1800000000003,
+        "end": 2149.46
+    },
+    {
+        "text": " pasado por referencia.",
+        "start": 2149.46,
+        "end": 2153.1
+    },
+    {
+        "text": " La variable y, variable interna, variable local al procedimiento, la usamos para recorrer",
+        "start": 2153.1,
+        "end": 2159.82
+    },
+    {
+        "text": " en su totalidad de la reglo, como siempre que queremos recorrer en su totalidad de un",
+        "start": 2159.82,
+        "end": 2165.02
+    },
+    {
+        "text": " arreglo y que estamos haciendo dentro.",
+        "start": 2165.02,
+        "end": 2171.46
+    },
+    {
+        "text": " Tomamos el valor que está en la celda y le sumamos el valor del incremento y el resultado",
+        "start": 2171.46,
+        "end": 2178.38
+    },
+    {
+        "text": " a la misma celda.",
+        "start": 2178.38,
+        "end": 2179.38
+    },
+    {
+        "text": " Entonces por ejemplo sin incremento valía 3, lo que hace es que se for es basumando 3",
+        "start": 2179.38,
+        "end": 2187.3
+    },
+    {
+        "text": " al valor que está en cada celda.",
+        "start": 2187.3,
+        "end": 2188.62
+    },
+    {
+        "text": " El resultado es que el arreglo termina con cada valor que tenía su celda sumado 3.",
+        "start": 2188.62,
+        "end": 2198.94
+    },
+    {
+        "text": " Ocaren que acá no hubo interacción con el usuario.",
+        "start": 2198.94,
+        "end": 2203.38
+    },
+    {
+        "text": " Es lo que se conoce como un procedimiento interno.",
+        "start": 2203.38,
+        "end": 2207.1400000000003
+    },
+    {
+        "text": " Un procedimiento que yo propósito es modificar datos de entrada pero que no interesa mostrarse",
+        "start": 2207.1400000000003,
+        "end": 2213.46
+    },
+    {
+        "text": " los alusuarios.",
+        "start": 2213.46,
+        "end": 2214.46
+    },
+    {
+        "text": " O sea no quiere decir que en todos los procedimientos yo vaya a ser ridid right.",
+        "start": 2214.46,
+        "end": 2220.1800000000003
+    },
+    {
+        "text": " Depende de lo que quiera, el procedimiento mostrar arreglo era un procedimiento de salida.",
+        "start": 2220.1800000000003,
+        "end": 2226.6600000000003
+    },
+    {
+        "text": " Procedimiento es precisamente pensado para mostrarle datos al usuario.",
+        "start": 2226.6600000000003,
+        "end": 2230.86
+    },
+    {
+        "text": " El procedimiento le era arreglo era un procedimiento de entrada.",
+        "start": 2230.86,
+        "end": 2235.26
+    },
+    {
+        "text": " Un procedimiento pensado para dentro del subprograma cargar valores leídos del entrada de estándar.",
+        "start": 2235.26,
+        "end": 2243.86
+    },
+    {
+        "text": " Este procedimiento pertenece a una tercera categoría diferente de estas dos.",
+        "start": 2243.86,
+        "end": 2248.3
+    },
+    {
+        "text": " Es un procedimiento de modificación de datos que ya venían cargados.",
+        "start": 2248.3,
+        "end": 2254.26
+    },
+    {
+        "text": " Es básicamente tu cuando haces un procedimiento va a pertenecer algunas de esas tres categorías.",
+        "start": 2254.26,
+        "end": 2261.26
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 2261.26,
+        "end": 2268.82
+    },
+    {
+        "text": " Otro ejemplo del mismo tipo.",
+        "start": 2268.82,
+        "end": 2271.38
+    },
+    {
+        "text": " Un procedimiento interno.",
+        "start": 2271.38,
+        "end": 2273.38
+    },
+    {
+        "text": " Un procedimiento que modifica valores pero no tiene interacción con los usuarios.",
+        "start": 2273.38,
+        "end": 2278.38
+    },
+    {
+        "text": " El procedimiento que intercambia el contenido de dos variables.",
+        "start": 2278.38,
+        "end": 2297.38
+    },
+    {
+        "text": " Recibe a y ve.",
+        "start": 2297.38,
+        "end": 2299.9
+    },
+    {
+        "text": " Acá dice te lo que está queriendo decir es que son de el mismo tipo.",
+        "start": 2299.9,
+        "end": 2304.1800000000003
+    },
+    {
+        "text": " Vamos a suponer que son las dos intes y las dos real no importa.",
+        "start": 2304.18,
+        "end": 2307.66
+    },
+    {
+        "text": " Son del mismo tipo.",
+        "start": 2307.66,
+        "end": 2310.7
+    },
+    {
+        "text": " Y las dos vienen por referencia.",
+        "start": 2310.7,
+        "end": 2312.8199999999997
+    },
+    {
+        "text": " ¿Qué creo que esto es lo que me preguntaste?",
+        "start": 2312.8199999999997,
+        "end": 2314.1
+    },
+    {
+        "text": " ¿Qué pasa cuando tengo dos parámetros y los dos quiero que vayan por referencia?",
+        "start": 2314.1,
+        "end": 2318.4199999999996
+    },
+    {
+        "text": " Así.",
+        "start": 2318.4199999999996,
+        "end": 2321.8199999999997
+    },
+    {
+        "text": " A y B ya traen valores.",
+        "start": 2321.8199999999997,
+        "end": 2326.02
+    },
+    {
+        "text": " ¿Qué ocurre dentro del procedimiento?",
+        "start": 2326.02,
+        "end": 2327.58
+    },
+    {
+        "text": " ¿Qué tenemos acá?",
+        "start": 2327.58,
+        "end": 2329.4199999999996
+    },
+    {
+        "text": " Una variable auxiliar.",
+        "start": 2329.4199999999996,
+        "end": 2331.7799999999997
+    },
+    {
+        "text": " Y vamos a ver que estas tres asignaciones van a generar el intercambio de los valores",
+        "start": 2331.78,
+        "end": 2337.2200000000003
+    },
+    {
+        "text": " entre A y B.",
+        "start": 2337.2200000000003,
+        "end": 2341.86
+    },
+    {
+        "text": " Notice la utilización de bar en ambos parámetros.",
+        "start": 2341.86,
+        "end": 2344.94
+    },
+    {
+        "text": " Los dos están pasados por referencia.",
+        "start": 2344.94,
+        "end": 2349.1000000000004
+    },
+    {
+        "text": " Vamos a suponer que en el programa principal nosotros declaramos dos variables x y vamos",
+        "start": 2349.1000000000004,
+        "end": 2357.78
+    },
+    {
+        "text": " a suponer que el tipo T es intes y arra.",
+        "start": 2357.78,
+        "end": 2364.1000000000004
+    },
+    {
+        "text": " Vamos a suponer que luego dentro del bikinen nosotros le dimos valores iniciales a x y",
+        "start": 2364.1000000000004,
+        "end": 2369.7000000000003
+    },
+    {
+        "text": " y a y.",
+        "start": 2369.7000000000003,
+        "end": 2371.78
+    },
+    {
+        "text": " Entonces tenemos x que fue cargada con un valor,",
+        "start": 2371.78,
+        "end": 2375.98
+    },
+    {
+        "text": " y que fue cargada con otro valor, por ejemplo, 17 y 23.",
+        "start": 2375.98,
+        "end": 2382.6200000000003
+    },
+    {
+        "text": " Y vamos a suponer que en algún punto nosotros estamos invocando a intercambio.",
+        "start": 2382.62,
+        "end": 2391.02
+    },
+    {
+        "text": " La invocación a intercambio va a tener esta forma, nombre del procedimiento y entre",
+        "start": 2391.02,
+        "end": 2397.2599999999998
+    },
+    {
+        "text": " paréntesis le pasamos los parámetros y punto y coma.",
+        "start": 2397.2599999999998,
+        "end": 2403.54
+    },
+    {
+        "text": " Recordemos que la llamada del procedimiento es por sí sólo una instrucción.",
+        "start": 2403.54,
+        "end": 2407.8599999999997
+    },
+    {
+        "text": " ¿Está acá?",
+        "start": 2407.8599999999997,
+        "end": 2411.18
+    },
+    {
+        "text": " Miremos x y miremos y a y B.",
+        "start": 2411.18,
+        "end": 2416.94
+    },
+    {
+        "text": " Pasaje por referencia.",
+        "start": 2416.94,
+        "end": 2420.06
+    },
+    {
+        "text": " No se hace ninguna copia.",
+        "start": 2420.06,
+        "end": 2424.3399999999997
+    },
+    {
+        "text": " Es decir que esta va a ser el mismo espacio de memoria que en el programa principal",
+        "start": 2424.3399999999997,
+        "end": 2429.68
+    },
+    {
+        "text": " quienes x le voy a poner otro nombre al mismo espacio de memoria.",
+        "start": 2429.68,
+        "end": 2436.5
+    },
+    {
+        "text": " Y lo mismo va a pasar con B. B allá es el mismo espacio de memoria que acá y y y.",
+        "start": 2436.5,
+        "end": 2444.06
+    },
+    {
+        "text": " O sea que acá lo hagamos B.",
+        "start": 2444.06,
+        "end": 2446.82
+    },
+    {
+        "text": " Se hizo pasaje por referencia.",
+        "start": 2446.82,
+        "end": 2448.62
+    },
+    {
+        "text": " Tenemos dos nombres diferentes para el primero y dos nombres diferentes para el segundo.",
+        "start": 2448.62,
+        "end": 2456.98
+    },
+    {
+        "text": " ¿Hasta ahí?",
+        "start": 2456.98,
+        "end": 2460.22
+    },
+    {
+        "text": " Dentro del procedimiento declaramos a x.",
+        "start": 2460.22,
+        "end": 2462.98
+    },
+    {
+        "text": " Aux es una variable local al procedimiento.",
+        "start": 2462.98,
+        "end": 2465.5
+    },
+    {
+        "text": " Existe sólo dentro del procedimiento.",
+        "start": 2465.5,
+        "end": 2469.7400000000002
+    },
+    {
+        "text": " Vamos a poner que acá tenemos Aux.",
+        "start": 2469.7400000000002,
+        "end": 2472.94
+    },
+    {
+        "text": " Aux a diferencia de estos dos no tiene dos nombres.",
+        "start": 2472.94,
+        "end": 2476.86
+    },
+    {
+        "text": " Tiene uno sólo porque únicamente esta variable es usada dentro del procedimiento.",
+        "start": 2476.86,
+        "end": 2485.22
+    },
+    {
+        "text": " Bueno, empezamos.",
+        "start": 2485.22,
+        "end": 2486.26
+    },
+    {
+        "text": " Lo que está en B es asignado en Aux.",
+        "start": 2486.26,
+        "end": 2488.46
+    },
+    {
+        "text": " O sea que Aux queda con cuánto?",
+        "start": 2488.46,
+        "end": 2491.22
+    },
+    {
+        "text": " 23.",
+        "start": 2491.22,
+        "end": 2493.8199999999997
+    },
+    {
+        "text": " Luego lo que está en A es asignado a B. O sea que B queda con 17.",
+        "start": 2493.8199999999997,
+        "end": 2499.54
+    },
+    {
+        "text": " O sea este viene para acá, se pierde el 23 y en su lugar que era el 17.",
+        "start": 2499.54,
+        "end": 2506.2599999999998
+    },
+    {
+        "text": " Por último lo que está en Aux es asignado a A. O sea este 23 se pone acá en A, con",
+        "start": 2506.2599999999998,
+        "end": 2514.8599999999997
+    },
+    {
+        "text": " lo cual el 17 se pierde y en su lugar quedó el 23.",
+        "start": 2514.8599999999997,
+        "end": 2520.98
+    },
+    {
+        "text": " El fue el efecto final de esto, que los valores de A y B fueron intercambiados.",
+        "start": 2520.98,
+        "end": 2528.42
+    },
+    {
+        "text": " Cuando termina el procedimiento en el end, la ejecución pega un salto de regreso al",
+        "start": 2528.42,
+        "end": 2533.92
+    },
+    {
+        "text": " programa principal donde los únicos nombres de estos dos espacios de memoria cuales son.",
+        "start": 2533.92,
+        "end": 2539.82
+    },
+    {
+        "text": " X y Y dejaron de llamarse A y B.",
+        "start": 2539.82,
+        "end": 2544.9
+    },
+    {
+        "text": " Esto es un ejemplo paradigmático de pasaje por referencia.",
+        "start": 2544.9,
+        "end": 2549.7400000000002
+    },
+    {
+        "text": " No hubo interacción con el usuario.",
+        "start": 2549.74,
+        "end": 2555.4199999999996
+    },
+    {
+        "text": " Este procedimiento al igual que el procedimiento que incrementaba son ejemplos de procedimientos",
+        "start": 2555.4199999999996,
+        "end": 2560.9399999999996
+    },
+    {
+        "text": " lo que se llama internos.",
+        "start": 2560.9399999999996,
+        "end": 2564.9799999999996
+    },
+    {
+        "text": " Residen valores, los modifican y cuando el procedimiento termina los valores quedaron modificados",
+        "start": 2564.9799999999996,
+        "end": 2571.7
+    },
+    {
+        "text": " y en el proceso no hubo ninguna interacción con usuarios.",
+        "start": 2571.7,
+        "end": 2579.3799999999997
+    },
+    {
+        "text": " ¿Pero qué pasa esto?",
+        "start": 2579.38,
+        "end": 2585.6600000000003
+    },
+    {
+        "text": " Bueno, recomendaciones de estilo que un poquito las de las funciones ya las estuvimos",
+        "start": 2585.6600000000003,
+        "end": 2590.86
+    },
+    {
+        "text": " charlando la clase pasada, vamos a agregar algunas ahora para procedimientos.",
+        "start": 2590.86,
+        "end": 2598.06
+    },
+    {
+        "text": " Vamos a repasar las de las funciones.",
+        "start": 2598.06,
+        "end": 2601.9
+    },
+    {
+        "text": " Dice recomendaciones de estilo, o sea no estamos hablando de problemas ni de compilación",
+        "start": 2601.9,
+        "end": 2607.94
+    },
+    {
+        "text": " ni de ejecución, sino de buenas prácticas de programación.",
+        "start": 2607.94,
+        "end": 2615.18
+    },
+    {
+        "text": " La primera, no utilizar pasaje por referencia con funciones.",
+        "start": 2615.18,
+        "end": 2621.1
+    },
+    {
+        "text": " Es decir, que los parámetros nominales de una función deberían ser siempre únicamente",
+        "start": 2621.1,
+        "end": 2627.3
+    },
+    {
+        "text": " como.",
+        "start": 2627.3,
+        "end": 2628.98
+    },
+    {
+        "text": " Por valor.",
+        "start": 2628.98,
+        "end": 2630.98
+    },
+    {
+        "text": " Una función nunca debería modificar sus datos de entrada.",
+        "start": 2630.98,
+        "end": 2634.58
+    },
+    {
+        "text": " No es el propósito de una función.",
+        "start": 2634.58,
+        "end": 2637.2200000000003
+    },
+    {
+        "text": " Entonces, en el cabezal de una función únicamente pasaje por valor.",
+        "start": 2637.22,
+        "end": 2642.7
+    },
+    {
+        "text": " O sea, pasaje sin que palabra, sin barro.",
+        "start": 2642.7,
+        "end": 2648.66
+    },
+    {
+        "text": " Por ende, restringimos el pasaje por referencia únicamente a que?",
+        "start": 2648.66,
+        "end": 2653.62
+    },
+    {
+        "text": " A procedimientos.",
+        "start": 2653.62,
+        "end": 2654.62
+    },
+    {
+        "text": " Todos los procedimientos obligatoriamente tendrán pasaje por referencia?",
+        "start": 2654.62,
+        "end": 2658.7799999999997
+    },
+    {
+        "text": " No.",
+        "start": 2658.7799999999997,
+        "end": 2659.7799999999997
+    },
+    {
+        "text": " Únicamente a aquellos procedimientos cuyo propósito sea poder modificar los valores.",
+        "start": 2659.7799999999997,
+        "end": 2664.5
+    },
+    {
+        "text": " El procedimiento mostrar a reglo que ya borré lo único que hacía era recorrer a la",
+        "start": 2664.5,
+        "end": 2669.46
+    },
+    {
+        "text": " reglo e imprimir a por pantalla.",
+        "start": 2669.46,
+        "end": 2672.18
+    },
+    {
+        "text": " Era un procedimiento, pero ahí el arreglo se pasaba por valor.",
+        "start": 2672.18,
+        "end": 2676.3
+    },
+    {
+        "text": " O sea, que en las funciones nada de pasaje por referencia únicamente en los procedimientos",
+        "start": 2676.3,
+        "end": 2683.98
+    },
+    {
+        "text": " y únicamente cuando los procedimientos, cuando queramos modificar los parámetros.",
+        "start": 2683.98,
+        "end": 2692.02
+    },
+    {
+        "text": " No hacer entrada y salida dentro de las funciones.",
+        "start": 2692.02,
+        "end": 2695.3
+    },
+    {
+        "text": " Nada de riz, nada de rwight, ni sus equivalentes con entes.",
+        "start": 2695.3,
+        "end": 2700.94
+    },
+    {
+        "text": " El propósito de la función no es tener interacción con los usuarios.",
+        "start": 2700.94,
+        "end": 2705.34
+    },
+    {
+        "text": " El propósito es recibir datos de entrada, no modificarlos y usarlos para producir un resultado.",
+        "start": 2705.34,
+        "end": 2713.3
+    },
+    {
+        "text": " ¿Vean?",
+        "start": 2713.3,
+        "end": 2716.58
+    },
+    {
+        "text": " No utilizar variables globales declaradas en el programa principal.",
+        "start": 2716.58,
+        "end": 2722.58
+    },
+    {
+        "text": " Dentro de la función, la idea es utilizar únicamente lo que vino en los parámetros",
+        "start": 2722.58,
+        "end": 2728.98
+    },
+    {
+        "text": " de entrada y sus propias variables locales.",
+        "start": 2728.98,
+        "end": 2733.02
+    },
+    {
+        "text": " La idea es que la función no debería tener ningún otro por llamarlo de alguna manera",
+        "start": 2733.02,
+        "end": 2737.18
+    },
+    {
+        "text": " contacto con el mundo exterior.",
+        "start": 2737.18,
+        "end": 2740.22
+    },
+    {
+        "text": " Así que nada de tocar dentro de la función las variables del programa principal.",
+        "start": 2740.22,
+        "end": 2745.98
+    },
+    {
+        "text": " Si con bilahor te lo va a permitir, te lo va a permitir.",
+        "start": 2745.98,
+        "end": 2749.06
+    },
+    {
+        "text": " No es una buena práctica.",
+        "start": 2749.06,
+        "end": 2751.78
+    },
+    {
+        "text": " Porque a ver, si vos querés pasarle algo a la función, pasáselo como parámetro.",
+        "start": 2751.78,
+        "end": 2756.78
+    },
+    {
+        "text": " O sea que la función no haga trampa de alguna manera sacando la mano y toqueteando",
+        "start": 2756.78,
+        "end": 2761.82
+    },
+    {
+        "text": " las variables del programa principal.",
+        "start": 2761.82,
+        "end": 2763.58
+    },
+    {
+        "text": " No es la idea.",
+        "start": 2763.58,
+        "end": 2767.02
+    },
+    {
+        "text": " Asignar una sola vez y al final el valor de la función.",
+        "start": 2767.02,
+        "end": 2771.22
+    },
+    {
+        "text": " Efectos no deseados.",
+        "start": 2771.22,
+        "end": 2776.4599999999996
+    },
+    {
+        "text": " Vos te concentras en el código del programa principal.",
+        "start": 2776.4599999999996,
+        "end": 2779.8599999999997
+    },
+    {
+        "text": " En el programa principal, llamaste una función.",
+        "start": 2779.8599999999997,
+        "end": 2783.22
+    },
+    {
+        "text": " Dentro de la función, la función te modificó un valor de una variable, pero vos leyendo",
+        "start": 2783.22,
+        "end": 2787.62
+    },
+    {
+        "text": " el programa principal no te diste cuenta que te modificó el valor de esa variable.",
+        "start": 2787.62,
+        "end": 2791.5
+    },
+    {
+        "text": " Y más adelante, vos esperabas que la variable tuviera el valor que tenía antes de la",
+        "start": 2791.5,
+        "end": 2795.2999999999997
+    },
+    {
+        "text": " llamada y mágicamente te cambió.",
+        "start": 2795.2999999999997,
+        "end": 2797.98
+    },
+    {
+        "text": " Entonces, eso te puede generar problemas con cálculos que vos esperabas que te dieran",
+        "start": 2797.98,
+        "end": 2802.7400000000002
+    },
+    {
+        "text": " una cosa y te da otra.",
+        "start": 2802.7400000000002,
+        "end": 2806.22
+    },
+    {
+        "text": " Por ese tipo de cosas, para no agregar confusión y no agregar la posibilidad de resultados",
+        "start": 2806.22,
+        "end": 2811.38
+    },
+    {
+        "text": " inesperados.",
+        "start": 2811.38,
+        "end": 2812.38
+    },
+    {
+        "text": " A ver, pues eso digo, son de estilo.",
+        "start": 2812.38,
+        "end": 2814.66
+    },
+    {
+        "text": " No es que no te conviene y no te funcione.",
+        "start": 2814.66,
+        "end": 2819.22
+    },
+    {
+        "text": " Asignar una sola vez y al final el valor de la función.",
+        "start": 2819.22,
+        "end": 2823.94
+    },
+    {
+        "text": " Es una instrucción especial que era la instrucción que poníamos dentro de una función para",
+        "start": 2823.94,
+        "end": 2830.14
+    },
+    {
+        "text": " devolver el resultado.",
+        "start": 2830.14,
+        "end": 2833.2200000000003
+    },
+    {
+        "text": " Y esa instrucción se parecía mucho a las asignaciones.",
+        "start": 2833.2200000000003,
+        "end": 2842.98
+    },
+    {
+        "text": " Pero involucraba, por ejemplo, acá esto.",
+        "start": 2842.98,
+        "end": 2847.7000000000003
+    },
+    {
+        "text": " Si a mí me agarran desprevenido y yo leo esta asignación, ¿qué pienso que es potencia?",
+        "start": 2847.7000000000003,
+        "end": 2853.7000000000003
+    },
+    {
+        "text": " Esto es una variable y en realidad no, ¿qué es potencia?",
+        "start": 2853.7,
+        "end": 2856.9399999999996
+    },
+    {
+        "text": " El nombre de la función.",
+        "start": 2856.9399999999996,
+        "end": 2861.66
+    },
+    {
+        "text": " Esto no es el nombre de una variable.",
+        "start": 2861.66,
+        "end": 2864.9399999999996
+    },
+    {
+        "text": " Esto es una instrucción que permite devolver el resultado de la función.",
+        "start": 2864.9399999999996,
+        "end": 2870.18
+    },
+    {
+        "text": " El valor de pot.",
+        "start": 2870.18,
+        "end": 2873.46
+    },
+    {
+        "text": " No va a ser guardado en una variable llamada potencia.",
+        "start": 2873.46,
+        "end": 2876.7799999999997
+    },
+    {
+        "text": " Porque potencia no es una variable, es el nombre de la función.",
+        "start": 2876.7799999999997,
+        "end": 2880.46
+    },
+    {
+        "text": " El valor que está en pot va a ser devuelto hacia donde se haya hecho la invocación.",
+        "start": 2880.46,
+        "end": 2886.94
+    },
+    {
+        "text": " Y si ahí había una variable y sin esa variable donde se va a almacenar.",
+        "start": 2886.94,
+        "end": 2893.18
+    },
+    {
+        "text": " ¿Se acuerdan de esto?",
+        "start": 2893.18,
+        "end": 2894.18
+    },
+    {
+        "text": " Esto lo vimos la que se pasaba.",
+        "start": 2894.18,
+        "end": 2897.18
+    },
+    {
+        "text": " Pascal me permite que yo pueda hacer esto en cualquier lugar de la función.",
+        "start": 2897.18,
+        "end": 2903.34
+    },
+    {
+        "text": " Pero eso no es recomendable.",
+        "start": 2903.34,
+        "end": 2905.86
+    },
+    {
+        "text": " Lo recomendable.",
+        "start": 2905.86,
+        "end": 2906.86
+    },
+    {
+        "text": " Es hacerlo una sola vez y al final.",
+        "start": 2911.46,
+        "end": 2915.46
+    },
+    {
+        "text": " Porque si lo hago una sola vez y al final me quedo tranquilo de que.",
+        "start": 2915.46,
+        "end": 2920.46
+    },
+    {
+        "text": " Abance de código.",
+        "start": 2920.46,
+        "end": 2924.46
+    },
+    {
+        "text": " Que no me quedo parte de código sin ejecutar y más importante me aseguro de que la función",
+        "start": 2924.46,
+        "end": 2929.46
+    },
+    {
+        "text": " efectivamente está devoliendo algo.",
+        "start": 2929.46,
+        "end": 2931.46
+    },
+    {
+        "text": " ¿Qué pasa por ejemplo si yo me equivocué y puse la instrucción que devuelve el resultado",
+        "start": 2931.46,
+        "end": 2936.46
+    },
+    {
+        "text": " adentro de un uff?",
+        "start": 2936.46,
+        "end": 2938.46
+    },
+    {
+        "text": " No es peligro correo.",
+        "start": 2938.46,
+        "end": 2941.46
+    },
+    {
+        "text": " Que si no se cumple la condición no entre alif y entonces no esté devoliendo el resultado.",
+        "start": 2941.46,
+        "end": 2948.46
+    },
+    {
+        "text": " Por eso asignar una sola vez y al final.",
+        "start": 2948.46,
+        "end": 2952.46
+    },
+    {
+        "text": " Que siempre la última instrucción de una función sea la que retornan el resultado.",
+        "start": 2952.46,
+        "end": 2958.46
+    },
+    {
+        "text": " Además eso se puede arreglar muy fácil porque tú te puedes definir una variable dentro de la función",
+        "start": 2958.46,
+        "end": 2963.46
+    },
+    {
+        "text": " que la vas usando para ir acumulando o calculando el resultado y al final del todo",
+        "start": 2963.46,
+        "end": 2968.46
+    },
+    {
+        "text": " ponés el nombre de la función operadora de asignación y sabariable.",
+        "start": 2968.46,
+        "end": 2973.46
+    },
+    {
+        "text": " Entonces quedás tranquilo que la función está devolviendo y está devolviendo al final del todo y bueno,",
+        "start": 2973.46,
+        "end": 2979.46
+    },
+    {
+        "text": " obviamente un resultado solo.",
+        "start": 2979.46,
+        "end": 2983.46
+    },
+    {
+        "text": " Definir funciones para todo cálculo intermedio que sea independiente.",
+        "start": 2983.46,
+        "end": 2989.46
+    },
+    {
+        "text": " Es decir que el cálculo que haga la función tenga un sentido propio.",
+        "start": 2989.46,
+        "end": 2995.46
+    },
+    {
+        "text": " Yo quiero hacer una función que me calcule la potencia de un número.",
+        "start": 2995.46,
+        "end": 2999.46
+    },
+    {
+        "text": " Quiero hacer otra función que me calcule el factorial de un número que no sean cálculos aislados",
+        "start": 2999.46,
+        "end": 3004.46
+    },
+    {
+        "text": " que están medio pedados con pegamento, que sea una operación que tenga sentido propio",
+        "start": 3004.46,
+        "end": 3009.46
+    },
+    {
+        "text": " en capsularla dentro de una función.",
+        "start": 3009.46,
+        "end": 3013.46
+    },
+    {
+        "text": " Es un poco más o menos lo mismo que dice después definir funciones cuya semántica sea clara",
+        "start": 3013.46,
+        "end": 3018.46
+    },
+    {
+        "text": " que yo leo la función y solo con la función diga perfecto.",
+        "start": 3018.46,
+        "end": 3022.46
+    },
+    {
+        "text": " Acá hizo una función para saber si un número es primo, que no te hay que andar",
+        "start": 3022.46,
+        "end": 3027.46
+    },
+    {
+        "text": " tratando de entender a ver qué fue lo que se quiso hacer dentro de la función.",
+        "start": 3027.46,
+        "end": 3033.46
+    },
+    {
+        "text": " O sea, programar las de manera proliga.",
+        "start": 3033.46,
+        "end": 3038.46
+    },
+    {
+        "text": " Bueno, respecto a los procedimientos también tenemos algunas recomendaciones.",
+        "start": 3038.46,
+        "end": 3044.46
+    },
+    {
+        "text": " La primera, cuando yo haga un procedimiento que el procedimiento partenezca a una",
+        "start": 3044.46,
+        "end": 3051.46
+    },
+    {
+        "text": " y solo una de estas tres clases.",
+        "start": 3051.46,
+        "end": 3055.46
+    },
+    {
+        "text": " Procedimiento de salida, procedimiento de entrada o procedimiento interno.",
+        "start": 3055.46,
+        "end": 3060.46
+    },
+    {
+        "text": " O sea, no mezclar tareas de las diferentes categorías en una forma.",
+        "start": 3060.46,
+        "end": 3067.46
+    },
+    {
+        "text": " Procedimientos de salida despliegan resultados en la salida y estos procedimientos no realiza",
+        "start": 3067.46,
+        "end": 3075.46
+    },
+    {
+        "text": " en operaciones de entrada. Por ejemplo, mostrar al réglio.",
+        "start": 3075.46,
+        "end": 3079.46
+    },
+    {
+        "text": " Que es lo único que sea mostrar al réglio. Recibía el réglio, ya cargado, lo recorría y lo emitía por pantalla.",
+        "start": 3079.46,
+        "end": 3087.46
+    },
+    {
+        "text": " No tienen parámetros por referencia.",
+        "start": 3087.46,
+        "end": 3091.46
+    },
+    {
+        "text": " Porque la idea no es poder modificar esos parámetros porque justamente es un procedimiento de salida.",
+        "start": 3091.46,
+        "end": 3096.46
+    },
+    {
+        "text": " Le dio algo para que el procedimiento le unita por pantalla.",
+        "start": 3096.46,
+        "end": 3102.46
+    },
+    {
+        "text": " ¿Sabía? Me habría compilado mostrar al réglio si yo le ponía bar en el cabezal.",
+        "start": 3102.46,
+        "end": 3108.46
+    },
+    {
+        "text": " Sí, pero no es la idea porque yo no quería modificar el arreglo, quería simplemente mostrarlo.",
+        "start": 3108.46,
+        "end": 3116.46
+    },
+    {
+        "text": " Procedimiento de entrada, ingresa datos desde la entrada y los cargan en variables.",
+        "start": 3116.46,
+        "end": 3124.46
+    },
+    {
+        "text": " No ha sensalida excepto para el cartelito que le pide el usuario por favor ingrese los datos.",
+        "start": 3124.46,
+        "end": 3131.46
+    },
+    {
+        "text": " ¿Sí? Sus parámetros son por referencia. ¿Qué pasaba con leer arreglo?",
+        "start": 3131.46,
+        "end": 3136.46
+    },
+    {
+        "text": " En leer arreglo y el arreglo se pasó específicamente con la palabra bar.",
+        "start": 3136.46,
+        "end": 3141.46
+    },
+    {
+        "text": " Se pasó específicamente por referencia. ¿Por qué? Porque el arreglo se quiere modificar.",
+        "start": 3141.46,
+        "end": 3147.46
+    },
+    {
+        "text": " ¿Cómo es que se va a modificar con los valores que el usuario le cargaba por teclado?",
+        "start": 3147.46,
+        "end": 3153.46
+    },
+    {
+        "text": " ¿O bien procedimientos internos? Estos no hacen entrada ni salida.",
+        "start": 3153.46,
+        "end": 3161.46
+    },
+    {
+        "text": " Reciben datos del programa y retornan estos mismos datos ya modificados.",
+        "start": 3161.46,
+        "end": 3168.46
+    },
+    {
+        "text": " Estos pueden tener tanto pasaje por valor como pasaje por referencia como solo pasaje por referencia.",
+        "start": 3168.46,
+        "end": 3175.46
+    },
+    {
+        "text": " Por ejemplo, el procedimiento intercambio recibió sus dos parámetros por referencia porque los dos fueron modificados.",
+        "start": 3175.46,
+        "end": 3189.46
+    },
+    {
+        "text": " En cambio, sumar a todos había recibido el primero por valor y el segundo por referencia.",
+        "start": 3189.46,
+        "end": 3198.46
+    },
+    {
+        "text": " Recibió el arreglo se ha cargado y le incrementaba el valor de incremento en todas sus eldas.",
+        "start": 3198.46,
+        "end": 3204.46
+    },
+    {
+        "text": " O sea, lo que tanto este como este otro ninguno de los dos tuvo interacción con los usuarios.",
+        "start": 3204.46,
+        "end": 3213.46
+    },
+    {
+        "text": " Y al igual que las funciones no usaron variables globales.",
+        "start": 3213.46,
+        "end": 3224.46
+    },
+    {
+        "text": " O sea, en ese sentido es un poco la misma lógica que para las funciones,",
+        "start": 3224.46,
+        "end": 3228.46
+    },
+    {
+        "text": " que los únicos lugares de interacción con el resto del programa sean siempre los parámetros.",
+        "start": 3228.46,
+        "end": 3235.46
+    },
+    {
+        "text": " El procedimiento puede tener sus propias variables locales, las puede tener lo mismo que las funciones,",
+        "start": 3235.46,
+        "end": 3241.46
+    },
+    {
+        "text": " pero que las variables del programa principal sean del programa principal.",
+        "start": 3241.46,
+        "end": 3246.46
+    },
+    {
+        "text": " Por los mismos efectos no deseados que te pueden tener una función, te pueden generar un procedimiento.",
+        "start": 3246.46,
+        "end": 3252.46
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3254.46,
+        "end": 3256.46
+    },
+    {
+        "text": " Bueno, dejamos para dentro de un ratito las reis las alcance, vamos a pasar un poco al práctico.",
+        "start": 3259.46,
+        "end": 3264.46
+    },
+    {
+        "text": " Bueno, vamos a mirar el ejercicio 7 la parte 1.",
+        "start": 3269.46,
+        "end": 3274.46
+    },
+    {
+        "text": " Dice así, implementar un subprograma para calcular las raíces de un polinomio de segundo grado.",
+        "start": 3275.46,
+        "end": 3290.46
+    },
+    {
+        "text": " Vamos a recordar la forma de un polinomio de segundo grado.",
+        "start": 3293.46,
+        "end": 3296.46
+    },
+    {
+        "text": " ¿Cuál era la forma de un polinomio de segundo grado?",
+        "start": 3305.46,
+        "end": 3309.46
+    },
+    {
+        "text": " Hay que escuadrado más VX más C.",
+        "start": 3310.46,
+        "end": 3318.46
+    },
+    {
+        "text": " Así era la forma general de un polinomio de segundo grado.",
+        "start": 3319.46,
+        "end": 3324.46
+    },
+    {
+        "text": " Nosotros vamos a hacer un subprograma que calcula las raíces del polinomio.",
+        "start": 3325.46,
+        "end": 3333.46
+    },
+    {
+        "text": " ¿Cuántas raíces puede tener un polinomio de segundo grado?",
+        "start": 3336.46,
+        "end": 3339.46
+    },
+    {
+        "text": " Dos, una o ninguna, raíces reales, vamos a dejar afuera las raíces complejas.",
+        "start": 3340.46,
+        "end": 3346.46
+    },
+    {
+        "text": " Puede tener dos raíces reales y distintas, una raíx real doble o no tener raíces reales.",
+        "start": 3347.46,
+        "end": 3355.46
+    },
+    {
+        "text": " Entonces vamos a hacer un subprograma que va a calcular la o la raíces del polinomio.",
+        "start": 3358.46,
+        "end": 3365.46
+    },
+    {
+        "text": " Y va a tener seis parámetros este subprograma.",
+        "start": 3366.46,
+        "end": 3370.46
+    },
+    {
+        "text": " Los primeros tres van a representar los coeficientes del polinomio que vamos a suponer coeficiente centeros.",
+        "start": 3371.46,
+        "end": 3377.46
+    },
+    {
+        "text": " O sea, quienes serían los primeros tres parámetros, AB y C.",
+        "start": 3378.46,
+        "end": 3383.46
+    },
+    {
+        "text": " Luego va a tener dos parámetros más para las raíces, raíces reales,",
+        "start": 3385.46,
+        "end": 3392.46
+    },
+    {
+        "text": " y un sexto parámetro para la cantidad de raíces halladas que va a ser un entero.",
+        "start": 3393.46,
+        "end": 3399.46
+    },
+    {
+        "text": " O sea, el último parámetro me va a salir con qué valores.",
+        "start": 3400.46,
+        "end": 3403.46
+    },
+    {
+        "text": " Zero, uno, dos.",
+        "start": 3405.46,
+        "end": 3406.46
+    },
+    {
+        "text": " Primero corresponde a escribir funciono procedimiento, ¿qué les parece?",
+        "start": 3409.46,
+        "end": 3412.46
+    },
+    {
+        "text": " Pero procedimiento, ¿por qué?",
+        "start": 3414.46,
+        "end": 3415.46
+    },
+    {
+        "text": " En realidad no es que no devuelva nada, devuelve más de una cosa.",
+        "start": 3419.46,
+        "end": 3421.46
+    },
+    {
+        "text": " ¿Qué devuelve?",
+        "start": 3422.46,
+        "end": 3423.46
+    },
+    {
+        "text": " Las raíces y la cantidad.",
+        "start": 3424.46,
+        "end": 3427.46
+    },
+    {
+        "text": " Ya, está bien. Yo podría encapsular todo eso en un único objeto,",
+        "start": 3427.46,
+        "end": 3431.46
+    },
+    {
+        "text": " pero para eso tenemos que primero aprender record, registros que todavía no lo vimos.",
+        "start": 3432.46,
+        "end": 3436.46
+    },
+    {
+        "text": " Así que por ahora no tenemos más remedio que devolverlo en forma de varios parámetros por referencia.",
+        "start": 3437.46,
+        "end": 3442.46
+    },
+    {
+        "text": " Y la función, tenas razón, en Pascal solamente un tipo simple.",
+        "start": 3447.46,
+        "end": 3450.46
+    },
+    {
+        "text": " Estoy pensando en el lenguaje C que sí me deja de volver restructurados.",
+        "start": 3451.46,
+        "end": 3454.46
+    },
+    {
+        "text": " Olviense de lo que dije.",
+        "start": 3455.46,
+        "end": 3456.46
+    },
+    {
+        "text": " No hay más remedio que sea procedimiento. Bien.",
+        "start": 3459.46,
+        "end": 3461.46
+    },
+    {
+        "text": " Entonces, tres parámetros para los coeficientes del polinomio, parámetros de un procedimiento.",
+        "start": 3462.46,
+        "end": 3468.46
+    },
+    {
+        "text": " Los coeficientes van a ir por valor o por referencia.",
+        "start": 3470.46,
+        "end": 3472.46
+    },
+    {
+        "text": " Por valor, o sea, yo le voy a pasar ya cargados los tres coeficientes.",
+        "start": 3475.46,
+        "end": 3479.46
+    },
+    {
+        "text": " Y dentro del programa no quiero modificar los coeficientes.",
+        "start": 3480.46,
+        "end": 3485.46
+    },
+    {
+        "text": " O sea, que los primeros tres parámetros que representan los coeficientes van a ir por valor.",
+        "start": 3487.46,
+        "end": 3491.46
+    },
+    {
+        "text": " Los otros tres, los primeros dos para las raíces y el último para la cantidad de raíces que yo pude cargar, ¿cómo van a ir esos?",
+        "start": 3494.46,
+        "end": 3502.46
+    },
+    {
+        "text": " Por referencia.",
+        "start": 3504.46,
+        "end": 3505.46
+    },
+    {
+        "text": " ¿Por qué esos? Yo los voy a modificar dentro del procedimiento.",
+        "start": 3506.46,
+        "end": 3508.46
+    },
+    {
+        "text": " Yo voy a calcular la o las raíces y las voy a cargar ahí.",
+        "start": 3509.46,
+        "end": 3512.46
+    },
+    {
+        "text": " Y voy a cargar en el último la cantidad de parámetros.",
+        "start": 3513.46,
+        "end": 3515.46
+    },
+    {
+        "text": " Por eso dice ver qué parámetros deben ser parámetros pasados por valor y cuáles deben ser pasados por referencia.",
+        "start": 3519.46,
+        "end": 3525.46
+    },
+    {
+        "text": " ¿Cómo sería el cabezal del procedimiento?",
+        "start": 3526.46,
+        "end": 3527.46
+    },
+    {
+        "text": " Podemos procedir raíces o el nombre que le queremos poner parámetros.",
+        "start": 3528.46,
+        "end": 3537.46
+    },
+    {
+        "text": " A, C, C sin la palabra bar, todos estos de tipo 1 de llarro.",
+        "start": 3540.46,
+        "end": 3546.46
+    },
+    {
+        "text": " Son parámetros pasados por valor.",
+        "start": 3549.46,
+        "end": 3552.46
+    },
+    {
+        "text": " Punto y coma.",
+        "start": 3553.46,
+        "end": 3555.46
+    },
+    {
+        "text": " Luego bar, o sea, los que vienen a continuación van a ser parámetros pasados por referencia.",
+        "start": 3556.46,
+        "end": 3564.46
+    },
+    {
+        "text": " ¿Qué nombre se ponemos?",
+        "start": 3566.46,
+        "end": 3567.46
+    },
+    {
+        "text": " La raíz 1, la raíz 2 de qué tipo?",
+        "start": 3568.46,
+        "end": 3573.46
+    },
+    {
+        "text": " De tipo real, porque las raíces pueden darme real.",
+        "start": 3575.46,
+        "end": 3577.46
+    },
+    {
+        "text": " Bien. Y después separamos y otra vez ponemos la palabra bar, ¿por qué?",
+        "start": 3578.46,
+        "end": 3587.46
+    },
+    {
+        "text": " ¿Por qué son de distintos tipos? Ahora que viene.",
+        "start": 3592.46,
+        "end": 3596.46
+    },
+    {
+        "text": " La cantidad de raíces, vamos a llamar la cantidad de tipo.",
+        "start": 3597.46,
+        "end": 3601.46
+    },
+    {
+        "text": " ¿Puedo definir los parámetros?",
+        "start": 3602.46,
+        "end": 3604.46
+    },
+    {
+        "text": " Bueno, podríamos definir unos un tipo su rango y poner 0, 1, 2 y que el parámetro cansa de ese tipo su rango, no habría problema.",
+        "start": 3605.46,
+        "end": 3612.46
+    },
+    {
+        "text": " Yo para simplificarle un poco le voy a dejar integer, así no me define un tipo más.",
+        "start": 3613.46,
+        "end": 3617.46
+    },
+    {
+        "text": " Sí.",
+        "start": 3617.46,
+        "end": 3618.46
+    },
+    {
+        "text": " Podrías definir anónimamente el su rango, de repente sí.",
+        "start": 3623.46,
+        "end": 3626.46
+    },
+    {
+        "text": " ¿Pondría 0, 0, 2?",
+        "start": 3627.46,
+        "end": 3629.46
+    },
+    {
+        "text": " Sé que Pascal te lo deja definir, por ejemplo, entre los colchetes de un arreglo.",
+        "start": 3629.46,
+        "end": 3635.46
+    },
+    {
+        "text": " No me queda muy claro si te deja definir en forma anónima el tipo acá dentro.",
+        "start": 3635.46,
+        "end": 3639.46
+    },
+    {
+        "text": " Es obría que probarlo en Fri Pascal y Barlo.",
+        "start": 3639.46,
+        "end": 3641.46
+    },
+    {
+        "text": " Si se pudiera, el libro que dice, en el Pascal estándar no se puede.",
+        "start": 3641.46,
+        "end": 3646.46
+    },
+    {
+        "text": " Bueno, en el Pascal estándar no, capaz que en Fri Pascal de repente sí.",
+        "start": 3646.46,
+        "end": 3650.46
+    },
+    {
+        "text": " Si no siempre te podes definir el tipo arriba con la palabra Type y a caponer el tipo S.",
+        "start": 3650.46,
+        "end": 3655.46
+    },
+    {
+        "text": " Bien, este procedimiento, ¿qué categorías entrada salida o interno?",
+        "start": 3657.46,
+        "end": 3665.46
+    },
+    {
+        "text": " Voy a mostrar en pantalla.",
+        "start": 3668.46,
+        "end": 3671.46
+    },
+    {
+        "text": " No.",
+        "start": 3672.46,
+        "end": 3673.46
+    },
+    {
+        "text": " Quiero devolver las raíces.",
+        "start": 3673.46,
+        "end": 3676.46
+    },
+    {
+        "text": " No les quiero mostrar. Es más, en ningún momento la letra dice muestre las.",
+        "start": 3676.46,
+        "end": 3681.46
+    },
+    {
+        "text": " Si vuelvo a que querés hacer escalcular resultados para devolverlos al programa principal,",
+        "start": 3682.46,
+        "end": 3688.46
+    },
+    {
+        "text": " no estás pensando en interacción con los usuarios dentro del procedimiento.",
+        "start": 3688.46,
+        "end": 3695.46
+    },
+    {
+        "text": " Este va a ser un procedimiento interno.",
+        "start": 3695.46,
+        "end": 3698.46
+    },
+    {
+        "text": " O sea que nada de RID y nada de RWIDE dentro del procedimiento.",
+        "start": 3700.46,
+        "end": 3704.46
+    },
+    {
+        "text": " Los primeros tres parámetros pasados por valor, los últimos tres parámetros pasados por referencia.",
+        "start": 3704.46,
+        "end": 3710.46
+    },
+    {
+        "text": " Ok.",
+        "start": 3712.46,
+        "end": 3714.46
+    },
+    {
+        "text": " Y nada de interacción con los usuarios en su interior.",
+        "start": 3714.46,
+        "end": 3717.46
+    },
+    {
+        "text": " ¿Qué du claro?",
+        "start": 3719.46,
+        "end": 3721.46
+    },
+    {
+        "text": " Sí.",
+        "start": 3721.46,
+        "end": 3723.46
+    },
+    {
+        "text": " Bueno, ¿y cómo hacemos para calcular las raíces?",
+        "start": 3723.46,
+        "end": 3726.46
+    },
+    {
+        "text": " Báscaras.",
+        "start": 3727.46,
+        "end": 3728.46
+    },
+    {
+        "text": " La estrategia querida fórmula de báscaras.",
+        "start": 3728.46,
+        "end": 3731.46
+    },
+    {
+        "text": " ¿Tá? ¿Seguaron de la fórmula?",
+        "start": 3731.46,
+        "end": 3733.46
+    },
+    {
+        "text": " Bueno, esperemos que sí.",
+        "start": 3733.46,
+        "end": 3735.46
+    },
+    {
+        "text": " Bueno, esa fórmula es la que vamos a programar en el interior del procedimiento.",
+        "start": 3735.46,
+        "end": 3740.46
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3741.46,
+        "end": 3743.46
+    },
+    {
+        "text": " La parte 1 pide solo escribir el procedimiento.",
+        "start": 3744.46,
+        "end": 3747.46
+    },
+    {
+        "text": " No pide llamarlo desde el programa principal.",
+        "start": 3747.46,
+        "end": 3750.46
+    },
+    {
+        "text": " Eso después es la parte 2 que pide escribir un programa completo que haga la llamada el procedimiento.",
+        "start": 3750.46,
+        "end": 3755.46
+    },
+    {
+        "text": " En la parte 1 es solamente escribir el procedimiento y nada más.",
+        "start": 3756.46,
+        "end": 3760.46
+    },
+    {
+        "text": " Que de hecho van a ver que en el segundo parcial,",
+        "start": 3761.46,
+        "end": 3763.46
+    },
+    {
+        "text": " en la mayoría de los ejercicios, no les pedimos que escriban un programa completo,",
+        "start": 3763.46,
+        "end": 3767.46
+    },
+    {
+        "text": " sino que les pedimos específicamente determinados subprogramas.",
+        "start": 3767.46,
+        "end": 3771.46
+    },
+    {
+        "text": " ¿Más preguntas esto?",
+        "start": 3775.46,
+        "end": 3776.46
+    },
+    {
+        "text": " ¿Y vos vas a devolar como resultado 0, 1 o 2?",
+        "start": 3776.46,
+        "end": 3780.46
+    },
+    {
+        "text": " Si acasa el 0 es porque en estas 2 que carguen.",
+        "start": 3780.46,
+        "end": 3784.46
+    },
+    {
+        "text": " Nada, porque no vean radísas reales.",
+        "start": 3785.46,
+        "end": 3787.46
+    },
+    {
+        "text": " Si acasa el 1, ¿qué vamos a hacer acá?",
+        "start": 3787.46,
+        "end": 3790.46
+    },
+    {
+        "text": " De hecho, tenemos que definir eso.",
+        "start": 3790.46,
+        "end": 3792.46
+    },
+    {
+        "text": " Son iguales.",
+        "start": 3793.46,
+        "end": 3794.46
+    },
+    {
+        "text": " Podemos cargar el mismo valor en ambas.",
+        "start": 3794.46,
+        "end": 3797.46
+    },
+    {
+        "text": " O podemos cargar una sola y desde el programa principal,",
+        "start": 3797.46,
+        "end": 3800.46
+    },
+    {
+        "text": " si acabin 1, 1, sé que solamente consulta la primera.",
+        "start": 3800.46,
+        "end": 3803.46
+    },
+    {
+        "text": " Eso es un criterio que uno toma.",
+        "start": 3803.46,
+        "end": 3805.46
+    },
+    {
+        "text": " Y si acaben 2, ¿qué sabemos de estas 2?",
+        "start": 3806.46,
+        "end": 3808.46
+    },
+    {
+        "text": " Que van a salir con valores diferentes.",
+        "start": 3809.46,
+        "end": 3811.46
+    },
+    {
+        "text": " Así vamos a hacer eso.",
+        "start": 3812.46,
+        "end": 3813.46
+    },
+    {
+        "text": " Si acá salió un 2, bien encargadas con valores diferentes,",
+        "start": 3813.46,
+        "end": 3817.46
+    },
+    {
+        "text": " o mejor dicho sale encargadas con valores diferentes,",
+        "start": 3817.46,
+        "end": 3820.46
+    },
+    {
+        "text": " si acá es un 1, vamos a cargar las 2 con el mismo.",
+        "start": 3820.46,
+        "end": 3824.46
+    },
+    {
+        "text": " Y si acasa el 1, 0, ¿qué vamos a dejar en estos 2?",
+        "start": 3825.46,
+        "end": 3828.46
+    },
+    {
+        "text": " Indefinido.",
+        "start": 3829.46,
+        "end": 3830.46
+    },
+    {
+        "text": " Porque yo luego, en el programa principal, antes de consultar estos 2,",
+        "start": 3831.46,
+        "end": 3835.46
+    },
+    {
+        "text": " que voy a hacer.",
+        "start": 3835.46,
+        "end": 3836.46
+    },
+    {
+        "text": " Voy a consultar este de acá.",
+        "start": 3836.46,
+        "end": 3838.46
+    },
+    {
+        "text": " ¿A bien?",
+        "start": 3839.46,
+        "end": 3840.46
+    },
+    {
+        "text": " Bueno.",
+        "start": 3841.46,
+        "end": 3842.46
+    },
+    {
+        "text": " Vamos a hacerlo.",
+        "start": 3845.46,
+        "end": 3846.46
+    },
+    {
+        "text": " Variables locales al procedimiento.",
+        "start": 3846.46,
+        "end": 3849.46
+    },
+    {
+        "text": " Vamos a usar variables o no.",
+        "start": 3850.46,
+        "end": 3855.46
+    },
+    {
+        "text": " Por ejemplo, ¿cuál es el determinante?",
+        "start": 3856.46,
+        "end": 3859.46
+    },
+    {
+        "text": " El determinante o discriminante.",
+        "start": 3859.46,
+        "end": 3862.46
+    },
+    {
+        "text": " El discriminante.",
+        "start": 3862.46,
+        "end": 3863.46
+    },
+    {
+        "text": " Bueno, es lo mismo en realidad.",
+        "start": 3863.46,
+        "end": 3865.46
+    },
+    {
+        "text": " El discriminante, bien.",
+        "start": 3865.46,
+        "end": 3867.46
+    },
+    {
+        "text": " El coso de ese.",
+        "start": 3867.46,
+        "end": 3868.46
+    },
+    {
+        "text": " Yo le voy a poner disk para que sea más corto.",
+        "start": 3868.46,
+        "end": 3870.46
+    },
+    {
+        "text": " Perfecto. ¿De qué tipo?",
+        "start": 3870.46,
+        "end": 3871.46
+    },
+    {
+        "text": " De tipo real.",
+        "start": 3872.46,
+        "end": 3873.46
+    },
+    {
+        "text": " ¿De qué tipo real?",
+        "start": 3873.46,
+        "end": 3874.46
+    },
+    {
+        "text": " Bien, ¿algunas más?",
+        "start": 3879.46,
+        "end": 3880.46
+    },
+    {
+        "text": " Bueno, dejamos por ahí.",
+        "start": 3882.46,
+        "end": 3884.46
+    },
+    {
+        "text": " Después de las variables, el biguín del procedimiento.",
+        "start": 3884.46,
+        "end": 3887.46
+    },
+    {
+        "text": " Bueno, y lo primero que tenemos que calcular es el coso,",
+        "start": 3890.46,
+        "end": 3893.46
+    },
+    {
+        "text": " el determinante, discriminante o coso.",
+        "start": 3894.46,
+        "end": 3896.46
+    },
+    {
+        "text": " ¿Cómo calculamos el coso?",
+        "start": 3897.46,
+        "end": 3899.46
+    },
+    {
+        "text": " Esto era e a o ve al cuadrado.",
+        "start": 3900.46,
+        "end": 3904.46
+    },
+    {
+        "text": " Ve al cuadrado menos 4 por a por c.",
+        "start": 3905.46,
+        "end": 3908.46
+    },
+    {
+        "text": " Bueno, entonces, le asignamos a disk.",
+        "start": 3909.46,
+        "end": 3913.46
+    },
+    {
+        "text": " ¿Cómo hacemos ve cuadrado?",
+        "start": 3914.46,
+        "end": 3915.46
+    },
+    {
+        "text": " Sqr db.",
+        "start": 3917.46,
+        "end": 3919.46
+    },
+    {
+        "text": " Luego menos 4.",
+        "start": 3922.46,
+        "end": 3925.46
+    },
+    {
+        "text": " Asterisco a.",
+        "start": 3926.46,
+        "end": 3928.46
+    },
+    {
+        "text": " Asterisco c.",
+        "start": 3929.46,
+        "end": 3930.46
+    },
+    {
+        "text": " Y ahí tenemos el valor del coso, el discriminante.",
+        "start": 3932.46,
+        "end": 3934.46
+    },
+    {
+        "text": " Vale, posterior, ha quedado.",
+        "start": 3937.46,
+        "end": 3939.46
+    },
+    {
+        "text": " Bueno, y ahora que tenemos que ver del discriminante.",
+        "start": 3940.46,
+        "end": 3942.46
+    },
+    {
+        "text": " Si es menor que 0, que significa que no hay raíces.",
+        "start": 3944.46,
+        "end": 3947.46
+    },
+    {
+        "text": " Entonces, if.",
+        "start": 3949.46,
+        "end": 3950.46
+    },
+    {
+        "text": " Si el discriminante es menor que 0,",
+        "start": 3951.46,
+        "end": 3956.46
+    },
+    {
+        "text": " ¿cómo decimos no hay raíces?",
+        "start": 3959.46,
+        "end": 3962.46
+    },
+    {
+        "text": " A, el parámetro can, que va por referencia, le asignamos 0.",
+        "start": 3963.46,
+        "end": 3967.46
+    },
+    {
+        "text": " Uno acá estaría tentado de ponerle un cartelo al usuario.",
+        "start": 3968.46,
+        "end": 3973.46
+    },
+    {
+        "text": " Pero recordemos este procedimiento a que te categoría pertenece.",
+        "start": 3974.46,
+        "end": 3978.46
+    },
+    {
+        "text": " Interno y los procedimientos internos no hacen entrada y salida dentro de su cuerpo.",
+        "start": 3979.46,
+        "end": 3984.46
+    },
+    {
+        "text": " Yo luego en el programa principal voy a mostrar lo que haya de vuelta acá.",
+        "start": 3985.46,
+        "end": 3989.46
+    },
+    {
+        "text": " Es un tema de estilo.",
+        "start": 3991.46,
+        "end": 3993.46
+    },
+    {
+        "text": " Así que directamente Kant igual a 0, le asignamos 0.",
+        "start": 3994.46,
+        "end": 3997.46
+    },
+    {
+        "text": " Bueno, ¿qué es que más?",
+        "start": 3998.46,
+        "end": 4000.46
+    },
+    {
+        "text": " ¿Cómo, bro?",
+        "start": 4003.46,
+        "end": 4004.46
+    },
+    {
+        "text": " Claro, bueno, exacto.",
+        "start": 4005.46,
+        "end": 4007.46
+    },
+    {
+        "text": " Las raíces, R1 y R2, está bien.",
+        "start": 4008.46,
+        "end": 4010.46
+    },
+    {
+        "text": " No las toco, no les asignó nada.",
+        "start": 4011.46,
+        "end": 4013.46
+    },
+    {
+        "text": " Salen como indefinidas.",
+        "start": 4014.46,
+        "end": 4017.46
+    },
+    {
+        "text": " Y en este caso está bien que salen indefinidas.",
+        "start": 4018.46,
+        "end": 4020.46
+    },
+    {
+        "text": " Porque el criterio que nosotros tomamos con nosotros mismos,",
+        "start": 4021.46,
+        "end": 4024.46
+    },
+    {
+        "text": " fue en el programa principal acerque.",
+        "start": 4025.46,
+        "end": 4027.46
+    },
+    {
+        "text": " Primero chequear Kant.",
+        "start": 4028.46,
+        "end": 4029.46
+    },
+    {
+        "text": " Y según cuanto va al Kant, si míro o no lo que devolvió.",
+        "start": 4030.46,
+        "end": 4033.46
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 4035.46,
+        "end": 4036.46
+    },
+    {
+        "text": " O sea, si uno se pone de acuerdo con uno mismo en cómo manipular los parámetros de salida,",
+        "start": 4037.46,
+        "end": 4042.46
+    },
+    {
+        "text": " no hay problema, la cosa no es bien.",
+        "start": 4043.46,
+        "end": 4044.46
+    },
+    {
+        "text": " O sea que en este caso Kant le asignamos 0 y muy bien no tocamos R1 y R2.",
+        "start": 4046.46,
+        "end": 4050.46
+    },
+    {
+        "text": " ¿Qué más pongo ahora?",
+        "start": 4052.46,
+        "end": 4053.46
+    },
+    {
+        "text": " Ls.",
+        "start": 4054.46,
+        "end": 4055.46
+    },
+    {
+        "text": " O sea, el discriminante puede ser como.",
+        "start": 4058.46,
+        "end": 4062.46
+    },
+    {
+        "text": " Igual o mayor que 0, segundo IF.",
+        "start": 4064.46,
+        "end": 4066.46
+    },
+    {
+        "text": " Váro, ¿no?",
+        "start": 4067.46,
+        "end": 4068.46
+    },
+    {
+        "text": " Segundo IF, ¿qué preguntamos en el segundo IF?",
+        "start": 4069.46,
+        "end": 4071.46
+    },
+    {
+        "text": " Por ejemplo, igual a 0.",
+        "start": 4074.46,
+        "end": 4075.46
+    },
+    {
+        "text": " Bueno, si el discriminante es igual a 0,",
+        "start": 4078.46,
+        "end": 4081.46
+    },
+    {
+        "text": " entonces que va a pasar.",
+        "start": 4084.46,
+        "end": 4085.46
+    },
+    {
+        "text": " Las dos raíces van a ser iguales, dijimos.",
+        "start": 4088.46,
+        "end": 4090.46
+    },
+    {
+        "text": " El criterio nuestro va a ser que R1 y R2 les voy a cargar el mismo valor.",
+        "start": 4091.46,
+        "end": 4095.46
+    },
+    {
+        "text": " Otro criterio posible podría haber sido cargo solo R1 y dejo R2 indefinido.",
+        "start": 4097.46,
+        "end": 4102.46
+    },
+    {
+        "text": " Si, yo defino un criterio y luego actúbo en forma de acordes secretario.",
+        "start": 4104.46,
+        "end": 4108.46
+    },
+    {
+        "text": " Bueno, si el discriminante es 0, entonces que le asignamos R1, primero.",
+        "start": 4109.46,
+        "end": 4113.46
+    },
+    {
+        "text": " A R1 le asignamos",
+        "start": 4115.46,
+        "end": 4118.46
+    },
+    {
+        "text": " menos B sobre y como digo 2A.",
+        "start": 4118.46,
+        "end": 4123.46
+    },
+    {
+        "text": " 2A es terizco A, 2 por A.",
+        "start": 4126.46,
+        "end": 4127.46
+    },
+    {
+        "text": " Y a R2 ya signo R1.",
+        "start": 4132.46,
+        "end": 4134.46
+    },
+    {
+        "text": " Píjense que acá,",
+        "start": 4136.46,
+        "end": 4137.46
+    },
+    {
+        "text": " en vez de poner nuevamente la expresión directamente y la sinelo anterior, lo cual es mejor, porque...",
+        "start": 4139.46,
+        "end": 4143.46
+    },
+    {
+        "text": " Porque aún no cuenta menos.",
+        "start": 4144.46,
+        "end": 4146.46
+    },
+    {
+        "text": " Ya la calculé, no tiene sentido volver a calcular la misma expresión.",
+        "start": 4147.46,
+        "end": 4149.46
+    },
+    {
+        "text": " Si yo escribo 2 veces la misma expresión, pasca la vaca a calcular 2 veces.",
+        "start": 4150.46,
+        "end": 4153.46
+    },
+    {
+        "text": " Totalmente innecesaria.",
+        "start": 4154.46,
+        "end": 4155.46
+    },
+    {
+        "text": " Y que más me falta?",
+        "start": 4157.46,
+        "end": 4158.46
+    },
+    {
+        "text": " Cán le asignamos 1 exactamente.",
+        "start": 4159.46,
+        "end": 4161.46
+    },
+    {
+        "text": " Y con esto cerramos",
+        "start": 4166.46,
+        "end": 4168.46
+    },
+    {
+        "text": " el cuerpo de lo que pasa dentro del segundo IF.",
+        "start": 4169.46,
+        "end": 4172.46
+    },
+    {
+        "text": " Vengo para acá.",
+        "start": 4174.46,
+        "end": 4175.46
+    },
+    {
+        "text": " Y ahora que viene.",
+        "start": 4177.46,
+        "end": 4178.46
+    },
+    {
+        "text": " LLs que contempla el caso en el cual el discriminante es mayor que 0.",
+        "start": 4181.46,
+        "end": 4186.46
+    },
+    {
+        "text": " Es en Ls que corresponde a este IF de acá.",
+        "start": 4188.46,
+        "end": 4190.46
+    },
+    {
+        "text": " Bueno.",
+        "start": 4191.46,
+        "end": 4192.46
+    },
+    {
+        "text": " Y en ese caso que hacemos.",
+        "start": 4194.46,
+        "end": 4196.46
+    },
+    {
+        "text": " A R1 que le asignamos.",
+        "start": 4200.46,
+        "end": 4201.46
+    },
+    {
+        "text": " Menos B.",
+        "start": 4203.46,
+        "end": 4204.46
+    },
+    {
+        "text": " Y como digo la raíz cuadrada.",
+        "start": 4207.46,
+        "end": 4209.46
+    },
+    {
+        "text": " Es cuadrude.",
+        "start": 4209.46,
+        "end": 4210.46
+    },
+    {
+        "text": " Menos B más.",
+        "start": 4212.46,
+        "end": 4213.46
+    },
+    {
+        "text": " Raíz cuadrada del discriminante.",
+        "start": 4214.46,
+        "end": 4216.46
+    },
+    {
+        "text": " ¿Cómo esto?",
+        "start": 4217.46,
+        "end": 4218.46
+    },
+    {
+        "text": " Sobre 2 por A.",
+        "start": 4219.46,
+        "end": 4220.46
+    },
+    {
+        "text": " ¿Por qué quiero que todo sea dividido?",
+        "start": 4221.46,
+        "end": 4223.46
+    },
+    {
+        "text": " O sea, exactamente.",
+        "start": 4225.46,
+        "end": 4226.46
+    },
+    {
+        "text": " Si no me jugo una mala pasada de las presidencias.",
+        "start": 4227.46,
+        "end": 4229.46
+    },
+    {
+        "text": " ¿Por qué? ¿Quién es más fuerte?",
+        "start": 4230.46,
+        "end": 4231.46
+    },
+    {
+        "text": " El div o el más.",
+        "start": 4232.46,
+        "end": 4233.46
+    },
+    {
+        "text": " El dividido perdón el más.",
+        "start": 4234.46,
+        "end": 4235.46
+    },
+    {
+        "text": " El dividido.",
+        "start": 4236.46,
+        "end": 4237.46
+    },
+    {
+        "text": " Entonces, si yo quiero que efectivamente todo esto me queda afectado,",
+        "start": 4237.46,
+        "end": 4240.46
+    },
+    {
+        "text": " tiene razón de ponerme paréntesis.",
+        "start": 4241.46,
+        "end": 4243.46
+    },
+    {
+        "text": " Si no, voy a tener un dolor de cabeza.",
+        "start": 4244.46,
+        "end": 4246.46
+    },
+    {
+        "text": " Gracias a la paréntica.",
+        "start": 4247.46,
+        "end": 4248.46
+    },
+    {
+        "text": " Voy a tener un dolor de cabeza.",
+        "start": 4248.46,
+        "end": 4249.46
+    },
+    {
+        "text": " Gracias a la presidencias.",
+        "start": 4249.46,
+        "end": 4250.46
+    },
+    {
+        "text": " Bien. Y la otra.",
+        "start": 4254.46,
+        "end": 4255.46
+    },
+    {
+        "text": " R2.",
+        "start": 4256.46,
+        "end": 4257.46
+    },
+    {
+        "text": " Lo mismo.",
+        "start": 4258.46,
+        "end": 4259.46
+    },
+    {
+        "text": " Pero.",
+        "start": 4260.46,
+        "end": 4261.46
+    },
+    {
+        "text": " Con menos.",
+        "start": 4261.46,
+        "end": 4262.46
+    },
+    {
+        "text": " Hacemos todo esto.",
+        "start": 4267.46,
+        "end": 4269.46
+    },
+    {
+        "text": " Dividido.",
+        "start": 4271.46,
+        "end": 4272.46
+    },
+    {
+        "text": " 2 por A.",
+        "start": 4275.46,
+        "end": 4276.46
+    },
+    {
+        "text": " Y que más.",
+        "start": 4279.46,
+        "end": 4280.46
+    },
+    {
+        "text": " Kant.",
+        "start": 4282.46,
+        "end": 4283.46
+    },
+    {
+        "text": " Le asignamos 2.",
+        "start": 4284.46,
+        "end": 4285.46
+    },
+    {
+        "text": " Esta relea no precisa, porque no precisa.",
+        "start": 4290.46,
+        "end": 4292.46
+    },
+    {
+        "text": " Porque es la última.",
+        "start": 4293.46,
+        "end": 4294.46
+    },
+    {
+        "text": " Bueno, acá tenemos el end de Estelz y que me falta.",
+        "start": 4295.46,
+        "end": 4299.46
+    },
+    {
+        "text": " El end de todo el procedimiento y cómo marco que se lenda el procedimiento.",
+        "start": 4301.46,
+        "end": 4306.46
+    },
+    {
+        "text": " punto y cómo.",
+        "start": 4307.46,
+        "end": 4308.46
+    },
+    {
+        "text": " Y el único que lleva a punto cuál es.",
+        "start": 4308.46,
+        "end": 4309.46
+    },
+    {
+        "text": " El final del de todo el programa.",
+        "start": 4311.46,
+        "end": 4313.46
+    },
+    {
+        "text": " Está bien?",
+        "start": 4321.46,
+        "end": 4322.46
+    },
+    {
+        "text": " Si yo luego quisiera llamar desde el programa principal,",
+        "start": 4324.46,
+        "end": 4330.46
+    },
+    {
+        "text": " tendría que hacer una invocación como esta.",
+        "start": 4331.46,
+        "end": 4333.46
+    },
+    {
+        "text": " Nombres del procedimiento y cuántos parámetros efectivos.",
+        "start": 4334.46,
+        "end": 4338.46
+    },
+    {
+        "text": " 6.",
+        "start": 4339.46,
+        "end": 4340.46
+    },
+    {
+        "text": " Los 3 primeros, los coeficientes, vamos a suponer que le puse los mismos nombres en el programa principal.",
+        "start": 4341.46,
+        "end": 4349.46
+    },
+    {
+        "text": " Es obligatorio que se llame en igual.",
+        "start": 4350.46,
+        "end": 4352.46
+    },
+    {
+        "text": " No, lo único que es obligatorio que es.",
+        "start": 4353.46,
+        "end": 4355.46
+    },
+    {
+        "text": " Que sean del mismo tipo o por lo menos compatibles.",
+        "start": 4356.46,
+        "end": 4358.46
+    },
+    {
+        "text": " Cómo?",
+        "start": 4359.46,
+        "end": 4360.46
+    },
+    {
+        "text": " Y después cuáles vienen.",
+        "start": 4361.46,
+        "end": 4362.46
+    },
+    {
+        "text": " R1, R2 y Kant.",
+        "start": 4364.46,
+        "end": 4367.46
+    },
+    {
+        "text": " O sea, la invocación que yo haría desde el programa principal sería algo así.",
+        "start": 4368.46,
+        "end": 4372.46
+    },
+    {
+        "text": " 6 parámetros allá, 6 parámetros acá.",
+        "start": 4373.46,
+        "end": 4376.46
+    },
+    {
+        "text": " No importa si son por valor o por referencia.",
+        "start": 4377.46,
+        "end": 4379.46
+    },
+    {
+        "text": " Lo importante es que sean la misma cantidad de el mismo tipo o por lo menos de tipos compatibles y en el mismo orden.",
+        "start": 4380.46,
+        "end": 4387.46
+    },
+    {
+        "text": " Estos 3 ya van a entrar cargados con valores.",
+        "start": 4389.46,
+        "end": 4392.46
+    },
+    {
+        "text": " Estos 3 van a entrar sin tener valores cargados.",
+        "start": 4393.46,
+        "end": 4397.46
+    },
+    {
+        "text": " O sea, van a entrar indefinidos.",
+        "start": 4398.46,
+        "end": 4399.46
+    },
+    {
+        "text": " Se va a ejecutar todo aquello.",
+        "start": 4400.46,
+        "end": 4402.46
+    },
+    {
+        "text": " Y cuando el procedimiento termine, el que seguro va a salir cargado, cuál es.",
+        "start": 4403.46,
+        "end": 4407.46
+    },
+    {
+        "text": " Kant. ¿Con qué valores puede ser?",
+        "start": 4408.46,
+        "end": 4410.46
+    },
+    {
+        "text": " 0, 1, 2. Bueno, yo luego de esto más abajo en el código.",
+        "start": 4411.46,
+        "end": 4414.46
+    },
+    {
+        "text": " Probablemente con I, foca, paje con Kays.",
+        "start": 4415.46,
+        "end": 4417.46
+    },
+    {
+        "text": " Preguntaré por el valor de Kant y en función de Sovere, si consulto las 2 o no.",
+        "start": 4418.46,
+        "end": 4423.46
+    },
+    {
+        "text": " Pero es en el programa principal donde yo le mito la salida al usuario.",
+        "start": 4426.46,
+        "end": 4430.46
+    },
+    {
+        "text": " No dentro del procedimiento.",
+        "start": 4431.46,
+        "end": 4432.46
+    },
+    {
+        "text": " Bueno, acá tenemos un buen ejemplo de lo que es diferencia entre pasaje por valor y pasaje por referencia.",
+        "start": 4437.46,
+        "end": 4441.46
+    },
+    {
+        "text": " Pasaje por valor, datos de entrada que no quiero modificar.",
+        "start": 4441.46,
+        "end": 4444.46
+    },
+    {
+        "text": " Pasaje por referencia de alguna manera son datos de salida que sí los voy a modificar dentro del procedimiento.",
+        "start": 4445.46,
+        "end": 4451.46
+    },
+    {
+        "text": " Todo el código este?",
+        "start": 4465.46,
+        "end": 4466.46
+    },
+    {
+        "text": " No, la gracia justamente que vos lo llamasa el procedimiento.",
+        "start": 4467.46,
+        "end": 4470.46
+    },
+    {
+        "text": " Claro, yo esto lo puedo llamar en cualquier parte del programa.",
+        "start": 4472.46,
+        "end": 4474.46
+    },
+    {
+        "text": " Claro, yo tendría en el programa principal tendría VIN, tendría asintrucciones varias,",
+        "start": 4476.46,
+        "end": 4482.46
+    },
+    {
+        "text": " luego esto, luego más instrucciones varias y por último el endel punto.",
+        "start": 4483.46,
+        "end": 4488.46
+    },
+    {
+        "text": " Es más, ponenle que vos querés calcular las raíces de tres polinomios distintos.",
+        "start": 4489.46,
+        "end": 4494.46
+    },
+    {
+        "text": " Vas a hacer tres llamadas a raíces.",
+        "start": 4495.46,
+        "end": 4497.46
+    },
+    {
+        "text": " Ahí vemos de vuelta en escena que yo que dijimos la clase pasada que es que lo su programa se pueden reutilizar.",
+        "start": 4498.46,
+        "end": 4503.46
+    },
+    {
+        "text": " ¿Más preguntas este?",
+        "start": 4507.46,
+        "end": 4508.46
+    },
+    {
+        "text": " Bueno, vamos a terminar el teórico que son las reglas del canse y con eso vamos a liquidar.",
+        "start": 4512.46,
+        "end": 4517.46
+    },
+    {
+        "text": " Bueno, reglas del canse.",
+        "start": 4519.46,
+        "end": 4520.46
+    },
+    {
+        "text": " Me he preguntado hoy más temprano si yo podía tener el mismo nombre para dos funciones diferentes y yo que les dije.",
+        "start": 4521.46,
+        "end": 4530.46
+    },
+    {
+        "text": " Preferentemente no es decir que el nombre de cada función sea único pero según dónde esté la función,",
+        "start": 4532.46,
+        "end": 4539.46
+    },
+    {
+        "text": " te puede llegar a pasar que podrías tener dos funciones distintas que se llaman igual,",
+        "start": 4540.46,
+        "end": 4543.46
+    },
+    {
+        "text": " sin que el nombre de una se interfira con el nombre de la otra.",
+        "start": 4544.46,
+        "end": 4547.46
+    },
+    {
+        "text": " Bueno, eso tiene que ver con esto que son las reglas de alcanse.",
+        "start": 4548.46,
+        "end": 4551.46
+    },
+    {
+        "text": " Son reglas que tienen los lenguajes de programación pascales en particular que dicen en qué lugar del programa están alcanzados",
+        "start": 4552.46,
+        "end": 4562.46
+    },
+    {
+        "text": " determinados identificadores.",
+        "start": 4563.46,
+        "end": 4564.46
+    },
+    {
+        "text": " Dicho de otra manera, donde el compilador me permite usar determinados elementos del programa y donde no me permite hacerlo.",
+        "start": 4565.46,
+        "end": 4572.46
+    },
+    {
+        "text": " A todo eso se le llama reglas del canse.",
+        "start": 4573.46,
+        "end": 4576.46
+    },
+    {
+        "text": " Entonces, se define como alcance de un identificador a aquella porción del programa en que dicho identificador es visible.",
+        "start": 4579.46,
+        "end": 4591.46
+    },
+    {
+        "text": " Es decir, aquel trozo del programa donde el compilador te reconoce el uso de ese identificador.",
+        "start": 4592.46,
+        "end": 4599.46
+    },
+    {
+        "text": " Por ejemplo, las variables locales, la variable disk que representaba el coso, que era una variable interna al procedimiento raíces,",
+        "start": 4602.46,
+        "end": 4612.46
+    },
+    {
+        "text": " yo la podría usar en el programa principal.",
+        "start": 4613.46,
+        "end": 4615.46
+    },
+    {
+        "text": " No, el compilador, si yo en el programa principal, quiero utilizar una variable local al procedimiento, me va a decir no poder.",
+        "start": 4616.46,
+        "end": 4622.46
+    },
+    {
+        "text": " Este identificador no está definido para el programa principal.",
+        "start": 4623.46,
+        "end": 4626.46
+    },
+    {
+        "text": " El único lugar en el cual es al cansable la variable disk es dentro del procedimiento raíces.",
+        "start": 4627.46,
+        "end": 4634.46
+    },
+    {
+        "text": " Entonces, decimos que el alcance de la variable disk es el cuerpo del procedimiento.",
+        "start": 4635.46,
+        "end": 4639.46
+    },
+    {
+        "text": " Eso es el alcance de un identificador.",
+        "start": 4643.46,
+        "end": 4645.46
+    },
+    {
+        "text": " Y existen reglas que definen la visibilidad de cada identificador.",
+        "start": 4646.46,
+        "end": 4650.46
+    },
+    {
+        "text": " O sea, reglas que dicen dónde es que el compilador permite usar los identificadores y dónde no.",
+        "start": 4651.46,
+        "end": 4657.46
+    },
+    {
+        "text": " Y vamos a irlas viendo.",
+        "start": 4659.46,
+        "end": 4660.46
+    },
+    {
+        "text": " Dice así, un identificador definido dentro de un bloque va a ser visible en ese bloque y en todos sus subbloques.",
+        "start": 4665.46,
+        "end": 4677.46
+    },
+    {
+        "text": " No así en bloques externos.",
+        "start": 4678.46,
+        "end": 4680.46
+    },
+    {
+        "text": " Por ejemplo, miremos acá.",
+        "start": 4683.46,
+        "end": 4685.46
+    },
+    {
+        "text": " El parámetro X i, de acuerdo con esta regla del canse.",
+        "start": 4687.46,
+        "end": 4691.46
+    },
+    {
+        "text": " Yo lo puedo usar acá dentro del villinan del procedimiento.",
+        "start": 4692.46,
+        "end": 4695.46
+    },
+    {
+        "text": " Sí, porque la regla dice que un identificador definido en un bloque es visible en ese bloque.",
+        "start": 4697.46,
+        "end": 4701.46
+    },
+    {
+        "text": " Entonces, los parámetros X i, D, P, yo lo puedo usar acá dentro del procedimiento.",
+        "start": 4702.46,
+        "end": 4708.46
+    },
+    {
+        "text": " Y donde más lo puedo usar también.",
+        "start": 4709.46,
+        "end": 4710.46
+    },
+    {
+        "text": " Y dentro de la función, acá tenemos una función local al procedimiento P,",
+        "start": 4712.46,
+        "end": 4716.46
+    },
+    {
+        "text": " que sovimos la clase pasada que uno puede hacer lo que se llama anidar su programas.",
+        "start": 4718.46,
+        "end": 4722.46
+    },
+    {
+        "text": " Poner uno adentro de otro.",
+        "start": 4723.46,
+        "end": 4724.46
+    },
+    {
+        "text": " Entonces, dentro de las sentencias de la función F, yo desde acá puedo manipular si quiero a X i por lo que dice así.",
+        "start": 4725.46,
+        "end": 4736.46
+    },
+    {
+        "text": " Porque los identificadores definidos en un bloque son visibles, no solo en el bloque, sino en sus subbloques.",
+        "start": 4738.46,
+        "end": 4743.46
+    },
+    {
+        "text": " La función F es un subbloque del procedimiento P.",
+        "start": 4744.46,
+        "end": 4747.46
+    },
+    {
+        "text": " Es más, yo desde acá puedo usar a X, A y A, y aquí en más.",
+        "start": 4748.46,
+        "end": 4754.46
+    },
+    {
+        "text": " También puede usar a Z, porque Z es visible, no solamente en P, sino en los subbloques de P, que en este caso es la función F.",
+        "start": 4755.46,
+        "end": 4765.46
+    },
+    {
+        "text": " Sí.",
+        "start": 4766.46,
+        "end": 4767.46
+    },
+    {
+        "text": " Variables del procedimiento podés llegar a querer usarlas, pasan poco a nivel micro lo mismo que pasa a nivel macro con las variables globales.",
+        "start": 4771.46,
+        "end": 4780.46
+    },
+    {
+        "text": " La idea es tratar de evitarlo, ¿verdad?",
+        "start": 4782.46,
+        "end": 4784.46
+    },
+    {
+        "text": " Pero ¿qué pasa?",
+        "start": 4785.46,
+        "end": 4786.46
+    },
+    {
+        "text": " El problema acá no sería tan grande como si pasara a nivel del programa principal.",
+        "start": 4786.46,
+        "end": 4790.46
+    },
+    {
+        "text": " Entonces, entramos en una discusión filosófica de no es la idea, pero podría llegar a salvo en algún caso.",
+        "start": 4791.46,
+        "end": 4796.46
+    },
+    {
+        "text": " Las que seguro no son las variables globales a todo el programa principal.",
+        "start": 4797.46,
+        "end": 4800.46
+    },
+    {
+        "text": " Ojo que en esta parte lo único que estamos viendo es donde el compilador permite y donde no.",
+        "start": 4802.46,
+        "end": 4806.46
+    },
+    {
+        "text": " Es más, incluso puede pasar que, por ejemplo en el segundo parcial o en el práctico, a ustedes les demos un programa que no cumplen ninguna de las recomendaciones de estilo vistas.",
+        "start": 4807.46,
+        "end": 4817.46
+    },
+    {
+        "text": " Lo único que queremos ver es si compila o no compila.",
+        "start": 4818.46,
+        "end": 4821.46
+    },
+    {
+        "text": " O sea que puede haber algún ejercicio donde ustedes se les presenten escrito un programa que no siga las recomendaciones de estilo.",
+        "start": 4822.46,
+        "end": 4828.46
+    },
+    {
+        "text": " Pasa que lo que se quiere evaluar en ese ejercicio es si se cumple no las reglas alcance.",
+        "start": 4829.46,
+        "end": 4833.46
+    },
+    {
+        "text": " Bien.",
+        "start": 4835.46,
+        "end": 4836.46
+    },
+    {
+        "text": " Bueno, ver, X y Y se podían usar dentro de la función F, de acuerdo con las reglas alcance.",
+        "start": 4837.46,
+        "end": 4842.46
+    },
+    {
+        "text": " Sí, se pueden usar acá.",
+        "start": 4843.46,
+        "end": 4844.46
+    },
+    {
+        "text": " También. ¿Qué pasa con z?",
+        "start": 4845.46,
+        "end": 4847.46
+    },
+    {
+        "text": " Exactamente lo mismo que con X y con Y.",
+        "start": 4848.46,
+        "end": 4851.46
+    },
+    {
+        "text": " Vamos a ver qué es lo que pasa acá.",
+        "start": 4854.46,
+        "end": 4856.46
+    },
+    {
+        "text": " El parámetro A es local a la función F.",
+        "start": 4857.46,
+        "end": 4860.46
+    },
+    {
+        "text": " Lo mismo que la variable V es una variable local a la función F, que quiere decir que sea local.",
+        "start": 4861.46,
+        "end": 4866.46
+    },
+    {
+        "text": " Que por supuesto que pertenece pero en términos de uso donde se puede usar.",
+        "start": 4867.46,
+        "end": 4872.46
+    },
+    {
+        "text": " Solamente acá, en la sección Vignan de sentencias de la función F es el único lugar en el que yo puedo utilizar A y B.",
+        "start": 4873.46,
+        "end": 4881.46
+    },
+    {
+        "text": " O sea que, resumiendo, las sentencias de F a quienes pueden utilizar.",
+        "start": 4883.46,
+        "end": 4888.46
+    },
+    {
+        "text": " Pueden utilizar A, pueden utilizar A y B, pueden utilizar A y B si pueden utilizar A.",
+        "start": 4889.46,
+        "end": 4895.46
+    },
+    {
+        "text": " ¿A bien?",
+        "start": 4897.46,
+        "end": 4898.46
+    },
+    {
+        "text": " ¿Qué pasa en el cuerpo del procedimiento P? ¿Cuáles son los identificadores que permite usar las reglas alcance?",
+        "start": 4899.46,
+        "end": 4906.46
+    },
+    {
+        "text": " Acá vengo acá, tengo X, tengo Y, tengo Z, que son identificadores de este bloque.",
+        "start": 4908.46,
+        "end": 4912.46
+    },
+    {
+        "text": " ¿A la función F es el único lugar en el que yo puedo usar?",
+        "start": 4913.46,
+        "end": 4916.46
+    },
+    {
+        "text": " Sí, por lo que dice acá, un identificador definido en un bloque visible para él y sus subbloques.",
+        "start": 4917.46,
+        "end": 4922.46
+    },
+    {
+        "text": " Veamos acá, Z es una variable que pertenece al bloque P y F es un subbloque de P.",
+        "start": 4924.46,
+        "end": 4930.46
+    },
+    {
+        "text": " O sea que de acuerdo con ese parrafoque dice ahí, tanto X como Y como Z que son identificadores del bloque P,",
+        "start": 4931.46,
+        "end": 4937.46
+    },
+    {
+        "text": " también son visibles para F que son subbloques de P.",
+        "start": 4937.46,
+        "end": 4942.46
+    },
+    {
+        "text": " De nuevo, ¿por qué te has cerruido? Porque desde el punto de vista de estilo capaz que no es lo mejor.",
+        "start": 4944.46,
+        "end": 4949.46
+    },
+    {
+        "text": " La idea sería que las únicas variables que estos que F sean quienes, el parámetro y su variado del local.",
+        "start": 4950.46,
+        "end": 4955.46
+    },
+    {
+        "text": " Pero el convidador te lo permite.",
+        "start": 4957.46,
+        "end": 4959.46
+    },
+    {
+        "text": " Entonces, de nuevo, acá en las sentencias de P, puedo usar X y Z, sí.",
+        "start": 4960.46,
+        "end": 4968.46
+    },
+    {
+        "text": " ¿Puedo usar A y B? No. ¿Puedo llamar a la función F? Sí.",
+        "start": 4969.46,
+        "end": 4975.46
+    },
+    {
+        "text": " O sea, yo desde el procedimiento P puedo llamar a una función que corresponda a un subbloque de P.",
+        "start": 4977.46,
+        "end": 4982.46
+    },
+    {
+        "text": " Lo que no puedo hacer es meterme con los identificadores internos ese subbloque.",
+        "start": 4983.46,
+        "end": 4988.46
+    },
+    {
+        "text": " ¿Se entendió? ¿Cuándo yo querría poner una función adentro de un procedimiento?",
+        "start": 4990.46,
+        "end": 4997.46
+    },
+    {
+        "text": " ¿Cuándo el procedimiento realiza una cierta tarea y a su vez parte de esa tarea?",
+        "start": 4998.46,
+        "end": 5004.46
+    },
+    {
+        "text": " Sí, yo quiero ayudarme con una función auxiliar.",
+        "start": 5005.46,
+        "end": 5007.46
+    },
+    {
+        "text": " Entonces, es viable poner una función adentro de un procedimiento para desde acá, yo voy a llamar esa función.",
+        "start": 5008.46,
+        "end": 5014.46
+    },
+    {
+        "text": " No es una función que yo quiere usar en otras partes del programa.",
+        "start": 5015.46,
+        "end": 5018.46
+    },
+    {
+        "text": " ¿OK? Todo depende del propósito de lo que queramos hacer.",
+        "start": 5020.46,
+        "end": 5024.46
+    },
+    {
+        "text": " Sí. ¿Se van teniendo?",
+        "start": 5025.46,
+        "end": 5028.46
+    },
+    {
+        "text": " Bueno, los parámetros nominales, X, Y y la variable Z, son identificadores locales a P y globales a F.",
+        "start": 5032.46,
+        "end": 5041.46
+    },
+    {
+        "text": " Es decir, X, Y y Z.",
+        "start": 5042.46,
+        "end": 5046.46
+    },
+    {
+        "text": " X, Y y Z son globales a la función, o sea que el compilador permite usarlos acá adentro y son locales al procedimiento P, el compilador me incluso hablo también acá.",
+        "start": 5046.46,
+        "end": 5060.46
+    },
+    {
+        "text": " O sea que en resumen X, Y y Z se pueden usar tanto acá como acá.",
+        "start": 5061.46,
+        "end": 5064.46
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 5065.46,
+        "end": 5067.46
+    },
+    {
+        "text": " Es posible hacer referencia a X, Y y Z, en las sentencias de P y dentro de F.",
+        "start": 5069.46,
+        "end": 5078.46
+    },
+    {
+        "text": " Es decir, X, Y y Z, lo que dijimos, se pueden usar acá y se pueden usar acá.",
+        "start": 5079.46,
+        "end": 5086.46
+    },
+    {
+        "text": " ¿Donde no se pueden usar es a fuera de P?",
+        "start": 5087.46,
+        "end": 5091.46
+    },
+    {
+        "text": " Por ejemplo, en el programa principal, ¿sí? Porque esos identificadores, X, Y y Z, son locales a P, no son visibles fuera de P.",
+        "start": 5092.46,
+        "end": 5102.46
+    },
+    {
+        "text": " ¿Por eso dice acá que no son visibles fuera de P?",
+        "start": 5104.46,
+        "end": 5109.46
+    },
+    {
+        "text": " ¿Sí?",
+        "start": 5110.46,
+        "end": 5112.46
+    },
+    {
+        "text": " ¿Hasta acá?",
+        "start": 5113.46,
+        "end": 5114.46
+    },
+    {
+        "text": " El para-pentro nominal A y la variable B son locales a la función F, eso quiere decir que únicamente se los puede usar dentro de las sentencias de la función F.",
+        "start": 5115.46,
+        "end": 5126.46
+    },
+    {
+        "text": " A y B son locales a este bloque, sólo es posible usarlos dentro de este bloque.",
+        "start": 5130.46,
+        "end": 5138.46
+    },
+    {
+        "text": " Yo desde P, si quiero usar A o B, el compilador me va a decir no puedes.",
+        "start": 5138.46,
+        "end": 5143.46
+    },
+    {
+        "text": " El compilador te lo permite, pero en las recomendaciones de estilo dijimos evitarlo.",
+        "start": 5148.46,
+        "end": 5153.46
+    },
+    {
+        "text": " Pero sí, desde el punto de vista de la compilación se puede.",
+        "start": 5153.46,
+        "end": 5156.46
+    },
+    {
+        "text": " ¿Se van teniendo?",
+        "start": 5158.46,
+        "end": 5160.46
+    },
+    {
+        "text": " Esto tiene en el práctico 9 que es todo ejercicio de este estilo.",
+        "start": 5161.46,
+        "end": 5165.46
+    },
+    {
+        "text": " De hecho van a ver en el ejercicio 1, por ejemplo, que se les da un código programa y se les da a elegir para cada identificador donde lo puedes usar.",
+        "start": 5166.46,
+        "end": 5173.46
+    },
+    {
+        "text": " Bueno, ¿qué pasa cuando tengo un identificador local que tiene el mismo nombre que un identificador lo cual dijimos?",
+        "start": 5179.46,
+        "end": 5190.46
+    },
+    {
+        "text": " Preferentemente por comodidad está bueno que los nombres de todos los identificadores sean diferentes.",
+        "start": 5191.46,
+        "end": 5197.46
+    },
+    {
+        "text": " Pero dijimos, se pueden llegar a repetir y dependiendo de dónde estés en el programa es cual de los dos es el que vas a estar haciendo referencia.",
+        "start": 5198.46,
+        "end": 5206.46
+    },
+    {
+        "text": " Cuando vos tenés un identificador local que tiene el mismo nombre que un identificador global,",
+        "start": 5209.46,
+        "end": 5214.46
+    },
+    {
+        "text": " bueno, el local tiene prioridad sobre el local, sobre el global, perdón.",
+        "start": 5215.46,
+        "end": 5220.46
+    },
+    {
+        "text": " O sea, es como que el local tapa al global, es como un eclipse. Vieron que en un eclipse acá tengo la Luna y acá tengo el Sol.",
+        "start": 5221.46,
+        "end": 5227.46
+    },
+    {
+        "text": " Entonces, cuando pasa así, ¿cuál que estoy viendo yo acá?",
+        "start": 5228.46,
+        "end": 5231.46
+    },
+    {
+        "text": " La Luna pero no el Sol, bueno, este es el X local y el Sol es el X global, yo suelo ver el local.",
+        "start": 5231.46,
+        "end": 5236.46
+    },
+    {
+        "text": " Entonces, por ejemplo acá, dentro de F, imaginemos que yo hago uso de X.",
+        "start": 5237.46,
+        "end": 5245.46
+    },
+    {
+        "text": " La pregunta del misiones, cuando yo acá, accedo a X. ¿Esa esta X o esa esta otra X?",
+        "start": 5246.46,
+        "end": 5254.46
+    },
+    {
+        "text": " Esa está de acá. ¿Por qué esta X es global a F?",
+        "start": 5254.46,
+        "end": 5258.46
+    },
+    {
+        "text": " Mientras que esta otra X es, perdón, esta X es local a F, mientras que esta otra X es global a F.",
+        "start": 5259.46,
+        "end": 5266.46
+    },
+    {
+        "text": " Bueno, acá dentro, si yo accedo a X, el combiador va a entender que se esta y no la da arriba.",
+        "start": 5267.46,
+        "end": 5273.46
+    },
+    {
+        "text": " Sí.",
+        "start": 5278.46,
+        "end": 5279.46
+    },
+    {
+        "text": " Con el mismo nombre.",
+        "start": 5280.46,
+        "end": 5284.46
+    },
+    {
+        "text": " Sí.",
+        "start": 5284.46,
+        "end": 5285.46
+    },
+    {
+        "text": " Pero, uno de las cuales es un poco obligado, y otro tipo de imágenes.",
+        "start": 5285.46,
+        "end": 5289.46
+    },
+    {
+        "text": " No importa, porque el problema es de los identificadores, no del tipo de esos identificadores.",
+        "start": 5289.46,
+        "end": 5294.46
+    },
+    {
+        "text": " O sea, yo poné el de Google Global, poné el de que esta X fuera bulea en vez de Integer y que esta X es Integer.",
+        "start": 5294.46,
+        "end": 5301.46
+    },
+    {
+        "text": " Acá dentro, el combiador va a suponer que la X a la que esta refiriendose está acá.",
+        "start": 5301.46,
+        "end": 5306.46
+    },
+    {
+        "text": " La otra no existe, está eclipsada. O sea, es un tema de alcance de los identificadores, es independiente del tipo de esos identificadores.",
+        "start": 5307.46,
+        "end": 5315.46
+    },
+    {
+        "text": " Bueno, lo que dijimos, el parámetro nominal X, se puede usar en las sentencias de P, pero no se puede usar dentro de F.",
+        "start": 5323.46,
+        "end": 5332.46
+    },
+    {
+        "text": " Porque dentro de F cualquier referencia a X va a ser cual.",
+        "start": 5332.46,
+        "end": 5337.46
+    },
+    {
+        "text": " Se va a referir a esta X, o sea, que esta X es únicamente visible acá.",
+        "start": 5337.46,
+        "end": 5341.46
+    },
+    {
+        "text": " En las sentencias del procedimiento P.",
+        "start": 5341.46,
+        "end": 5343.46
+    },
+    {
+        "text": " Sí.",
+        "start": 5343.46,
+        "end": 5344.46
+    },
+    {
+        "text": " Exactamente, sí. Esto es a bloques, aplica a bloques que tienen sus bloques.",
+        "start": 5349.46,
+        "end": 5354.46
+    },
+    {
+        "text": " Por ejemplo, si yo tuviera en el programa principal más abajo X, y yo me declaré una variable global X, es más, el problema principal ni siquiera te va a ver esta X porque es lo que la P.",
+        "start": 5355.46,
+        "end": 5368.46
+    },
+    {
+        "text": " O sea, son reglas que tienen que haber con bloques que tienen sus bloques.",
+        "start": 5369.46,
+        "end": 5373.46
+    },
+    {
+        "text": " Bueno, ¿me he faltado algo del anterior?",
+        "start": 5377.46,
+        "end": 5381.46
+    },
+    {
+        "text": " Bueno, lo que dijimos, toda referencia a X dentro de la función corresponde al parámetro nominal X de la función y no a la variable global X.",
+        "start": 5382.46,
+        "end": 5390.46
+    },
+    {
+        "text": " Cualquier referencia a X acá se refira a esta y no esta.",
+        "start": 5390.46,
+        "end": 5393.46
+    },
+    {
+        "text": " Bueno, y ahora sí, para terminar, los identificadores de funciones y procedimientos son visibles en el bloque donde están definidos",
+        "start": 5397.46,
+        "end": 5409.46
+    },
+    {
+        "text": " y también en todos los subbloques que siguen a su declaración.",
+        "start": 5410.46,
+        "end": 5415.46
+    },
+    {
+        "text": " El incluyendo el de su propia definición lo vemos ahora después.",
+        "start": 5417.46,
+        "end": 5420.46
+    },
+    {
+        "text": " Acá, X, Z, A, todo lo que son parámetros y variables ya lo echarlamos en el anterior.",
+        "start": 5422.46,
+        "end": 5428.46
+    },
+    {
+        "text": " Acá me quiero concentrar en qué invocaciones puedo hacer y desde dónde puedo hacerlas.",
+        "start": 5428.46,
+        "end": 5434.46
+    },
+    {
+        "text": " Acá, yo desde dentro del cuerpo de la función F, yo podría llamar a P, sí, capaz que nos parece raro pero el compilador lo permite.",
+        "start": 5435.46,
+        "end": 5448.46
+    },
+    {
+        "text": " ¿Por qué? Porque fue definido antes.",
+        "start": 5448.46,
+        "end": 5450.46
+    },
+    {
+        "text": " Ahora, yo desde F podría llamar a G, no, ahí el compilador no me va a dejar porque el identificador G fue definido después.",
+        "start": 5451.46,
+        "end": 5460.46
+    },
+    {
+        "text": " O sea que lo que el compilador permite, lo que las reglas del cáncer permiten es desde F, yo puedo llamar a P pero no puedo llamar a G.",
+        "start": 5461.46,
+        "end": 5469.46
+    },
+    {
+        "text": " Por el orden exactamente, dice ahí, es visible en el bloque y en todos los subbloques que siguen a su declaración en lo que están después o sea que el identificador F es visible para lo que está después.",
+        "start": 5471.46,
+        "end": 5483.46
+    },
+    {
+        "text": " Por eso aquí yo decía que puedo llamar a F, entonces desde F yo puedo llamar a P pero no puedo llamar a G.",
+        "start": 5484.46,
+        "end": 5493.46
+    },
+    {
+        "text": " Desde G puedo llamar a F, sí porque está definido antes, puedo llamar a P, sí porque también está definido antes.",
+        "start": 5493.46,
+        "end": 5503.46
+    },
+    {
+        "text": " Y desde P, ¿qué puedo llamar a todo?",
+        "start": 5504.46,
+        "end": 5513.46
+    },
+    {
+        "text": " O llamar a F, puedo llamar a G porque son sus bloques de P y desde P si yo quisiera puedo llamar al propio P.",
+        "start": 5514.46,
+        "end": 5522.46
+    },
+    {
+        "text": " Desde F si yo quisiera puedo llamar a la propia F, desde G si yo quisiera puedo llamar a la propia G.",
+        "start": 5523.46,
+        "end": 5532.46
+    },
+    {
+        "text": " Eso las reglas del cáncer lo permiten y eso no lo vamos a ver en programación 1, lo van a ver en programación 2.",
+        "start": 5533.46,
+        "end": 5541.46
+    },
+    {
+        "text": " Es un tipo especial de subprogramma que es lo que se conoce como un subprogramma recurso que se puede llamar a sí mismo.",
+        "start": 5541.46,
+        "end": 5550.46
+    },
+    {
+        "text": " Pero eso no va a ser tema de programación.",
+        "start": 5550.46,
+        "end": 5553.46
+    },
+    {
+        "text": " Para terminar la función F puede ser llamada desde las sentencias del procedimiento por ser local al procedimiento desde sí misma.",
+        "start": 5554.46,
+        "end": 5566.46
+    },
+    {
+        "text": " Eso sería una llamada recurciva y desde G.",
+        "start": 5566.46,
+        "end": 5571.46
+    },
+    {
+        "text": " O sea yo desde G puedo llamar a F, desde el programa principal puedo llamar a F y la propia F se podría llamar a sí mismo.",
+        "start": 5571.46,
+        "end": 5580.46
+    },
+    {
+        "text": " La función G puedo llamarla desde P, desde la propia G pero ya hemos visto que no puedo llamarla desde F porque es definido después que F.",
+        "start": 5581.46,
+        "end": 5592.46
+    },
+    {
+        "text": " Es decir, yo desde G puedo llamar a F pero desde F no puedo llamar a G.",
+        "start": 5592.46,
+        "end": 5599.46
+    },
+    {
+        "text": " A G lo puedo llamar desde Acanismo o desde P.",
+        "start": 5599.46,
+        "end": 5605.46
+    },
+    {
+        "text": " Es lo que dice ahí la función G no puede ser llamada desde F por estar declarada después y algo parecido pasa con un procedimiento K que es local a G.",
+        "start": 5606.46,
+        "end": 5620.46
+    },
+    {
+        "text": " ¿Qué que hace que acá pasó hasta medio escondido? K que dode dentro de G.",
+        "start": 5620.46,
+        "end": 5625.46
+    },
+    {
+        "text": " Yo desde K podría llamar a G y de hecho el procedimiento K es local a G.",
+        "start": 5626.46,
+        "end": 5632.46
+    },
+    {
+        "text": " Por lo tanto el único lugar desde el cual yo puedo llamar a K, a cada perdón sería desde Acanismo.",
+        "start": 5632.46,
+        "end": 5639.46
+    },
+    {
+        "text": " Si yo lo quiero llamar desde P o desde F no puedo llamar a G.",
+        "start": 5639.46,
+        "end": 5644.46
+    },
+    {
+        "text": " Medio Trabalenguas, medio mareadora hasta que uno le agarrara la práctica tiene el práctico 9, que el práctico 9 tiene un montón de ejercicios del cánce para entretenerse con donde puedo y donde no puedo usar los distintos identificadores.",
+        "start": 5645.46,
+        "end": 5660.46
+    },
+    {
+        "text": " Bueno, nos vemos el otro viernes porque el lunes es feriado.",
+        "start": 5660.46,
+        "end": 5664.46
+    }
+]

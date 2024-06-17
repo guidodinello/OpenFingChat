@@ -1,0 +1,707 @@
+[
+    {
+        "text": " Bien, entonces, como le decía, estas son un texto que laboró algunos estudiantes que básicamente",
+        "start": 0.0,
+        "end": 17.0
+    },
+    {
+        "text": " traduciendo lo que están en el libro y vamos a repasar un poco qué es lo que hay acá.",
+        "start": 17.0,
+        "end": 26.0
+    },
+    {
+        "text": " En general se van a encontrar un esquema de presentación de los temas de esta forma.",
+        "start": 30.0,
+        "end": 37.0
+    },
+    {
+        "text": " Una primera etapa donde se describe el problema, cada vez en la etapa se detrás de la traducción, lo que estamos buscando es alguna forma de emparejar las cosas de manera que quedan autoreguladas.",
+        "start": 37.0,
+        "end": 49.0
+    },
+    {
+        "text": " Esto de las inestabilidades, la oses un rato, evitar las inequilaciones, hace que el sistema se autoregule.",
+        "start": 52.0,
+        "end": 58.0
+    },
+    {
+        "text": " Si no hay necesidad de imponer nada desde afuera, sino que todo se queda aquí donde está por su propia voluntad.",
+        "start": 58.0,
+        "end": 67.0
+    },
+    {
+        "text": " Entonces, en un primer paso se presenta el problema.",
+        "start": 69.0,
+        "end": 73.0
+    },
+    {
+        "text": " La idea es que la forma de la forma más bien coloquial, leemos formular el problema de forma más precisa,",
+        "start": 73.0,
+        "end": 87.0
+    },
+    {
+        "text": " es decir, atraernos de todo lo anexótico, todo lo que tiene que ver con una situación concreta que tenemos entre manos y tratar de atraer un problema algoritmico,",
+        "start": 87.0,
+        "end": 102.0
+    },
+    {
+        "text": " y el tráctum termino matemático. Eso es un poco lo que estimos haciendo hace un rato.",
+        "start": 102.0,
+        "end": 111.0
+    },
+    {
+        "text": " Consisten definir formalmente, que es un emparejamiento estable, que es lo que estamos buscando.",
+        "start": 114.0,
+        "end": 121.0
+    },
+    {
+        "text": " Aquí hay un par de problemas, más que cada hombre clasifica en ordenas, y acá no se permiten empates,",
+        "start": 121.0,
+        "end": 134.0
+    },
+    {
+        "text": " es lo que hay un mencionado. La lista de preferencias de cada uno no admiten empare,",
+        "start": 135.0,
+        "end": 141.0
+    },
+    {
+        "text": " y ahí estamos, estamos en un orden estricto.",
+        "start": 141.0,
+        "end": 146.0
+    },
+    {
+        "text": " Entonces, esta es la formalización del problema, y hay algunas preguntas planqueadas de las casiones raciones.",
+        "start": 146.0,
+        "end": 155.0
+    },
+    {
+        "text": " No se existe el buen emparejamiento, y mismo se existe, como podemos construirlo.",
+        "start": 155.0,
+        "end": 161.0
+    },
+    {
+        "text": " Después se va a encontrar con algunos ejemplos.",
+        "start": 161.0,
+        "end": 167.0
+    },
+    {
+        "text": " Es que es típicamente lo que uno hace frente a un problema nuevo y empieza a... y quiere pensar un algoritmo.",
+        "start": 167.0,
+        "end": 175.0
+    },
+    {
+        "text": " ¿Cómo hace uno para ganar un poco de infisión? Y lo primero suele ser tirar un par de ejemplos y ver a mano, como sería una solución.",
+        "start": 175.0,
+        "end": 184.0
+    },
+    {
+        "text": " Para hacer una idea de cómo funcionaría en las cosas.",
+        "start": 184.0,
+        "end": 196.0
+    },
+    {
+        "text": " Entonces, eso es lo que hay acá, hay un par de instancias.",
+        "start": 196.0,
+        "end": 202.0
+    },
+    {
+        "text": " Estos ejemplos, los hacemos chiquitos, que queremos manejar los a mano, la instición con eso,",
+        "start": 202.0,
+        "end": 208.0
+    },
+    {
+        "text": " así que lo más sencillo puede haber, dos por dos.",
+        "start": 208.0,
+        "end": 212.0
+    },
+    {
+        "text": " Hay un ejemplo donde... M, preferido LV, M prima, acá M y M prima prefieren a la misma LV.",
+        "start": 212.0,
+        "end": 223.0
+    },
+    {
+        "text": " Y acá LV, Y LV prima también preceden el primer lugar al mismo M,",
+        "start": 223.0,
+        "end": 228.0
+    },
+    {
+        "text": " es decir, acá hay con una especie de M y LV, que son los preferidos de todo el mundo.",
+        "start": 228.0,
+        "end": 232.0
+    },
+    {
+        "text": " En ese caso, la única solución posible con los brillos se emparegen entre sí, cualquiera una cosa pasada, inestable.",
+        "start": 232.0,
+        "end": 240.0
+    },
+    {
+        "text": " Y hay otro ejemplo que es un poco más interesante, donde las preferencias están cruzadas,",
+        "start": 240.0,
+        "end": 247.0
+    },
+    {
+        "text": " y acá sí ilustra que pueda haber más de una solución posible.",
+        "start": 247.0,
+        "end": 253.0
+    },
+    {
+        "text": " Y ese caso están cruzadas en las preferencias.",
+        "start": 254.0,
+        "end": 262.0
+    },
+    {
+        "text": " Es un punto importante, que es posible que existe dado una instancia,",
+        "start": 262.0,
+        "end": 270.0
+    },
+    {
+        "text": " pero el problema, un problema que es decir, una versión específica,",
+        "start": 270.0,
+        "end": 281.0
+    },
+    {
+        "text": " concreta, determinada, lista de preferencias vendadas,",
+        "start": 281.0,
+        "end": 284.0
+    },
+    {
+        "text": " es una versión posible que nos puede interesar.",
+        "start": 284.0,
+        "end": 289.0
+    },
+    {
+        "text": " Bien, si lo como la entrada, a la algoritmo, una entrada concreta para que la algoritmo lo resuelve.",
+        "start": 289.0,
+        "end": 295.0
+    },
+    {
+        "text": " El problema en general es que todas las posibles instancias que uno podría pensar,",
+        "start": 296.0,
+        "end": 300.0
+    },
+    {
+        "text": " todas las posibles listas de preferencias y para todos los posibles conjuntos, lo 9 y M,",
+        "start": 300.0,
+        "end": 307.0
+    },
+    {
+        "text": " una instancia concreta es una en particular.",
+        "start": 307.0,
+        "end": 311.0
+    },
+    {
+        "text": " Ahora, en el primer ejemplo, había una única solución posible en esta imagen más de una,",
+        "start": 311.0,
+        "end": 316.0
+    },
+    {
+        "text": " y ese es un punto importante.",
+        "start": 316.0,
+        "end": 319.0
+    },
+    {
+        "text": " Incluso cuando razonan sobre esto.",
+        "start": 320.0,
+        "end": 324.0
+    },
+    {
+        "text": " A veces, como les dije, ahora, a veces vamos a ir a razonar sobre el algoritmo,",
+        "start": 324.0,
+        "end": 331.0
+    },
+    {
+        "text": " sobre un algoritmo, y a veces sobre un problema.",
+        "start": 331.0,
+        "end": 335.0
+    },
+    {
+        "text": " Le quiero comentar, pues, un error muy común que uno comete,",
+        "start": 335.0,
+        "end": 343.0
+    },
+    {
+        "text": " y empieza a trabajar con esta cosa.",
+        "start": 344.0,
+        "end": 346.0
+    },
+    {
+        "text": " Suponó que pedimos que demuestre algo con respecto a el problema de parejamiento estable.",
+        "start": 346.0,
+        "end": 350.0
+    },
+    {
+        "text": " No, al algoritmo, de gay y saquear al problema de parejamiento estable en sí.",
+        "start": 350.0,
+        "end": 355.0
+    },
+    {
+        "text": " Por ejemplo, uno podría plantearse lo siguiente.",
+        "start": 355.0,
+        "end": 360.0
+    },
+    {
+        "text": " Si en una instancia hay un M y un W que los dos se prefieren mutuamente en primer lugar,",
+        "start": 360.0,
+        "end": 369.0
+    },
+    {
+        "text": " entonces, en cualquier parejamiento estable, esos dos terminan juntos.",
+        "start": 369.0,
+        "end": 374.0
+    },
+    {
+        "text": " Por decirles algo.",
+        "start": 374.0,
+        "end": 376.0
+    },
+    {
+        "text": " Si cada uno es primer en su lista,",
+        "start": 376.0,
+        "end": 379.0
+    },
+    {
+        "text": " ahí podría que era demostrar una propiedad de ese tipo.",
+        "start": 379.0,
+        "end": 384.0
+    },
+    {
+        "text": " Es un aprobado con respecto al problema.",
+        "start": 384.0,
+        "end": 386.0
+    },
+    {
+        "text": " No, no lo digo con que.",
+        "start": 386.0,
+        "end": 388.0
+    },
+    {
+        "text": " ¿Cuál es un error típico empezar?",
+        "start": 388.0,
+        "end": 390.0
+    },
+    {
+        "text": " Bueno, sí, eso se cumple porque el algoritmo, cuando arranca en el primer paso,",
+        "start": 390.0,
+        "end": 394.0
+    },
+    {
+        "text": " así esto y aquí yo, no.",
+        "start": 394.0,
+        "end": 396.0
+    },
+    {
+        "text": " Porque ahí lo que estamos haciendo es razonando sobre un algoritmo concreto,",
+        "start": 397.0,
+        "end": 402.0
+    },
+    {
+        "text": " que estudiamos nosotros, que nos da una posible,",
+        "start": 402.0,
+        "end": 405.0
+    },
+    {
+        "text": " un posible en parejamiento estable en parejamiento estable en parejamiento estable.",
+        "start": 405.0,
+        "end": 408.0
+    },
+    {
+        "text": " Pero si lo que estamos quedando es analizar el problema en general,",
+        "start": 408.0,
+        "end": 412.0
+    },
+    {
+        "text": " no podemos razonar parados arriba del algoritmo.",
+        "start": 412.0,
+        "end": 417.0
+    },
+    {
+        "text": " ¿De acuerdo?",
+        "start": 417.0,
+        "end": 418.0
+    },
+    {
+        "text": " Entonces, eso es súper común.",
+        "start": 418.0,
+        "end": 421.0
+    },
+    {
+        "text": " Entonces, te han cuidado.",
+        "start": 421.0,
+        "end": 422.0
+    },
+    {
+        "text": " Estamos razonando sobre el problema,",
+        "start": 422.0,
+        "end": 425.0
+    },
+    {
+        "text": " sobre la existencia del problema y sobre las posibles soluciones,",
+        "start": 425.0,
+        "end": 428.0
+    },
+    {
+        "text": " o sobre un algoritmo concreto.",
+        "start": 428.0,
+        "end": 430.0
+    },
+    {
+        "text": " ¿Entienden?",
+        "start": 433.0,
+        "end": 434.0
+    },
+    {
+        "text": " Entonces, esto es un poco formalizo el problema,",
+        "start": 439.0,
+        "end": 442.0
+    },
+    {
+        "text": " trato de ganar un poco de intuición y después,",
+        "start": 442.0,
+        "end": 445.0
+    },
+    {
+        "text": " bueno, trato de avanzar hacia diseñar el algoritmo.",
+        "start": 445.0,
+        "end": 449.0
+    },
+    {
+        "text": " Entonces, ahí, bueno, ¿qué es eso?",
+        "start": 453.0,
+        "end": 455.0
+    },
+    {
+        "text": " Bueno, empieza a tratar de tirar unos primeros pasos",
+        "start": 455.0,
+        "end": 460.0
+    },
+    {
+        "text": " a ver cómo podría llegar a construir una solución.",
+        "start": 460.0,
+        "end": 464.0
+    },
+    {
+        "text": " Acá hay un ejemplo de cómo se podría plantear los primeros pasos",
+        "start": 464.0,
+        "end": 473.0
+    },
+    {
+        "text": " para empezar un algoritmo en el caso de uno de que él se va.",
+        "start": 473.0,
+        "end": 477.0
+    },
+    {
+        "text": " Veamos que inicialmente podemos hacer todos los alteros",
+        "start": 478.0,
+        "end": 481.0
+    },
+    {
+        "text": " y después, bueno, empezamos a armar este pareja.",
+        "start": 481.0,
+        "end": 484.0
+    },
+    {
+        "text": " Entonces, vamos con un resaltero M,",
+        "start": 484.0,
+        "end": 486.0
+    },
+    {
+        "text": " él dice una mujer W, ¿qué es lo que la más está primero",
+        "start": 486.0,
+        "end": 493.0
+    },
+    {
+        "text": " y su lista de preferencia?",
+        "start": 493.0,
+        "end": 495.0
+    },
+    {
+        "text": " Bueno, es lo que yo quiero evitar esta habilidad,",
+        "start": 495.0,
+        "end": 497.0
+    },
+    {
+        "text": " es que el total de cada uno tenga lo más cercano,",
+        "start": 497.0,
+        "end": 500.0
+    },
+    {
+        "text": " su más su preferencia posible.",
+        "start": 500.0,
+        "end": 502.0
+    },
+    {
+        "text": " Es eso, parece razonable para arrancar.",
+        "start": 502.0,
+        "end": 504.0
+    },
+    {
+        "text": " Entonces, en vez de manera que podemos declarar que M y Doble V",
+        "start": 505.0,
+        "end": 510.0
+    },
+    {
+        "text": " seron uno de los pares del empejejamiento final.",
+        "start": 510.0,
+        "end": 513.0
+    },
+    {
+        "text": " Bueno, no necesariamente,",
+        "start": 513.0,
+        "end": 516.0
+    },
+    {
+        "text": " porque podría haber otro M prima,",
+        "start": 516.0,
+        "end": 519.0
+    },
+    {
+        "text": " que se podría proponer a Doble V y por qué podría preferir.",
+        "start": 519.0,
+        "end": 524.0
+    },
+    {
+        "text": " O sea, puede haber algún cambio a posterior, ¿no?",
+        "start": 524.0,
+        "end": 528.0
+    },
+    {
+        "text": " Ya acá hay otra joyita,",
+        "start": 529.0,
+        "end": 532.0
+    },
+    {
+        "text": " esto no es de traducción, estaba en el texto original así también.",
+        "start": 532.0,
+        "end": 537.0
+    },
+    {
+        "text": " Es otra joyita de la metáfora,",
+        "start": 537.0,
+        "end": 540.0
+    },
+    {
+        "text": " esta machista, etcétera,",
+        "start": 540.0,
+        "end": 546.0
+    },
+    {
+        "text": " y si por otro lado puede ser peligroso para Doble V rechazar a M",
+        "start": 546.0,
+        "end": 553.0
+    },
+    {
+        "text": " ya que tal vez nunca recibo una propuesta de alguien que esté más arriba en su lista.",
+        "start": 554.0,
+        "end": 558.0
+    },
+    {
+        "text": " O sea, todos sabemos que más vale más la acompañado que soltero,",
+        "start": 558.0,
+        "end": 565.0
+    },
+    {
+        "text": " básicamente lo que está diciendo acá.",
+        "start": 565.0,
+        "end": 568.0
+    },
+    {
+        "text": " Entonces, el algoritmo de hecho,",
+        "start": 568.0,
+        "end": 573.0
+    },
+    {
+        "text": " si lo miran, le está un poco más abajo, funciona así.",
+        "start": 573.0,
+        "end": 578.0
+    },
+    {
+        "text": " Doble V está libre,",
+        "start": 579.0,
+        "end": 582.0
+    },
+    {
+        "text": " entonces inmediatamente se forma tentativamente buena para ejercer.",
+        "start": 582.0,
+        "end": 588.0
+    },
+    {
+        "text": " Y básicamente las mujeres igual en esta metáfora machista,",
+        "start": 588.0,
+        "end": 595.0
+    },
+    {
+        "text": " las mujeres igual se prenden nunca lo he pelado,",
+        "start": 595.0,
+        "end": 597.0
+    },
+    {
+        "text": " porque más vale más la acompañado que soltero.",
+        "start": 597.0,
+        "end": 602.0
+    },
+    {
+        "text": " Es poco analizo un poco como sigue,",
+        "start": 603.0,
+        "end": 609.0
+    },
+    {
+        "text": " el siguiente paso, pero veré cómo está un nombre de habitarios soltero,",
+        "start": 609.0,
+        "end": 612.0
+    },
+    {
+        "text": " me he ligado una mujer doble V",
+        "start": 612.0,
+        "end": 615.0
+    },
+    {
+        "text": " y este primer en su lista,",
+        "start": 615.0,
+        "end": 617.0
+    },
+    {
+        "text": " a la que aún no se le propuso,",
+        "start": 617.0,
+        "end": 619.0
+    },
+    {
+        "text": " esto es no que no es que no se le propuse en cualquier vez,",
+        "start": 619.0,
+        "end": 621.0
+    },
+    {
+        "text": " no se le propuso el,",
+        "start": 621.0,
+        "end": 624.0
+    },
+    {
+        "text": " si doble V está soltero,",
+        "start": 624.0,
+        "end": 625.0
+    },
+    {
+        "text": " entonces se me doles compravete en otra manera,",
+        "start": 625.0,
+        "end": 628.0
+    },
+    {
+        "text": " y se hace el tancaño.",
+        "start": 628.0,
+        "end": 631.0
+    },
+    {
+        "text": " Y quería comentarnos una cosa que finalmente el algoritmo termina,",
+        "start": 633.0,
+        "end": 636.0
+    },
+    {
+        "text": " y ya estamos en hora,",
+        "start": 636.0,
+        "end": 637.0
+    },
+    {
+        "text": " así vamos a tener que dejar,",
+        "start": 637.0,
+        "end": 639.0
+    },
+    {
+        "text": " finalmente el algoritmo termina cuando nadie está soltero.",
+        "start": 639.0,
+        "end": 643.0
+    },
+    {
+        "text": " O sea, el algoritmo se van cuando todos son hermanos pareja",
+        "start": 643.0,
+        "end": 646.0
+    },
+    {
+        "text": " que vas a saber si eso realmente se va a ocurrir,",
+        "start": 646.0,
+        "end": 650.0
+    },
+    {
+        "text": " esto es tarde.",
+        "start": 650.0,
+        "end": 652.0
+    },
+    {
+        "text": " Ahora el algoritmo no está escrito de esa manera.",
+        "start": 652.0,
+        "end": 656.0
+    },
+    {
+        "text": " El algoritmo dice,",
+        "start": 656.0,
+        "end": 657.0
+    },
+    {
+        "text": " mientras no es su nombre,",
+        "start": 657.0,
+        "end": 659.0
+    },
+    {
+        "text": " mientras es su nombre,",
+        "start": 659.0,
+        "end": 661.0
+    },
+    {
+        "text": " que es libre,",
+        "start": 661.0,
+        "end": 663.0
+    },
+    {
+        "text": " y como que se rezarba la posibilidad de terminar otra manera,",
+        "start": 663.0,
+        "end": 667.0
+    },
+    {
+        "text": " no solo cuando está en pareja,",
+        "start": 667.0,
+        "end": 669.0
+    },
+    {
+        "text": " sino también si ocurrió que se le propuso a todos y nadie arrovia.",
+        "start": 669.0,
+        "end": 673.0
+    },
+    {
+        "text": " Esto tiene una virtud que es que se generaliza a otro tipo de situaciones",
+        "start": 676.0,
+        "end": 680.0
+    },
+    {
+        "text": " y capaz que no simplificen los análisis más adelante.",
+        "start": 680.0,
+        "end": 683.0
+    },
+    {
+        "text": " Pero de hecho,",
+        "start": 683.0,
+        "end": 684.0
+    },
+    {
+        "text": " podríamos saber fórmula del último de esta manera.",
+        "start": 684.0,
+        "end": 686.0
+    },
+    {
+        "text": " Y solo si los comento un poco la clase que viene,",
+        "start": 686.0,
+        "end": 690.0
+    },
+    {
+        "text": " no me quiero exceder de tiempo porque...",
+        "start": 690.0,
+        "end": 693.0
+    },
+    {
+        "text": " porque la reserva de sumla puede llegar a necesitar",
+        "start": 697.0,
+        "end": 700.0
+    },
+    {
+        "text": " alguien más, así que tratemos de ser estricto con los tiempos.",
+        "start": 700.0,
+        "end": 705.0
+    }
+]

@@ -1,0 +1,2512 @@
+[
+    {
+        "text": " Vamos a hablar hoy de Búsqueda y Ordenación.",
+        "start": 0.0,
+        "end": 23.240000000000002
+    },
+    {
+        "text": " Se trata de determinados algoritmos que se concentran en dos tipos de problemas",
+        "start": 23.24,
+        "end": 30.86
+    },
+    {
+        "text": " puntuales y bastante frecuentes que se dan a la hora de escribir programas.",
+        "start": 30.86,
+        "end": 37.2
+    },
+    {
+        "text": " Que es resolver el problema de la Búsqueda de algún elemento y el problema de la",
+        "start": 37.2,
+        "end": 43.08
+    },
+    {
+        "text": " ordenación de una secuencia de elementos.",
+        "start": 43.08,
+        "end": 47.2
+    },
+    {
+        "text": " Por ejemplo, ordenar los elementos de un arreglo siguiendo determinado criterio.",
+        "start": 47.2,
+        "end": 54.2
+    },
+    {
+        "text": " Lo que vamos a hablar es de algunos algoritmos entre comillas famosos que se encargan de resolver",
+        "start": 54.2,
+        "end": 61.92
+    },
+    {
+        "text": " estos problemas. Es decir, esto que vamos a hablar no implica ningún elemento nuevo desde",
+        "start": 61.92,
+        "end": 68.04
+    },
+    {
+        "text": " el punto de vista de las sintaxis de Pascal. De hecho, estos algoritmos se pueden implementar",
+        "start": 68.04,
+        "end": 73.32000000000001
+    },
+    {
+        "text": " en Pascal y se pueden implementar en prácticamente cualquier lenguaje de programación.",
+        "start": 73.32,
+        "end": 80.32
+    },
+    {
+        "text": " Bien, ¿por qué Búsqueda y por qué ordenación? Bueno, por muchas razones entre ellas, si se",
+        "start": 80.32,
+        "end": 87.24
+    },
+    {
+        "text": " quiere por la aplicación que tiene, por la importancia que tienen este tipo de algoritmos",
+        "start": 87.24,
+        "end": 95.03999999999999
+    },
+    {
+        "text": " a la hora de resolver una vasta clase de problemas de programación.",
+        "start": 95.03999999999999,
+        "end": 99.28
+    },
+    {
+        "text": " Programación uno quizás no nos hemos concentrado tanto aún en el problema de la ordenación,",
+        "start": 99.28,
+        "end": 104.24
+    },
+    {
+        "text": " pero hemos visto abundantes búsquedas. En particular, la Búsqueda Lineal, que es el primer",
+        "start": 104.24,
+        "end": 111.88
+    },
+    {
+        "text": " algoritmo de Búsqueda, este es el algoritmo de Búsqueda que ya hemos visto. O sea,",
+        "start": 111.88,
+        "end": 119.24000000000001
+    },
+    {
+        "text": " no le habíamos puesto nombre, pero las búsquedas que hicimos hasta el momento siempre eran",
+        "start": 119.24000000000001,
+        "end": 124.84
+    },
+    {
+        "text": " búsquedas lineales. Cuando vimos arreglos, después también lo volvimos a repetir cuando",
+        "start": 124.84,
+        "end": 132.28
+    },
+    {
+        "text": " vimos listas, por donde empezábamos a buscar, por el principio empezábamos en la primera",
+        "start": 132.28,
+        "end": 140.0
+    },
+    {
+        "text": " Zelda y ahí íbamos avanzando de manera lineal hasta cuando. Hasta el final o hasta encontrar",
+        "start": 140.0,
+        "end": 152.08
+    },
+    {
+        "text": " lo que fuera que estuvieramos buscando. De hecho, teníamos incluso un esqueleto",
+        "start": 152.08,
+        "end": 155.52
+    },
+    {
+        "text": " génerico de Búsqueda que podíamos aplicar y adaptar cualquiera fuera la situación. Es",
+        "start": 155.52,
+        "end": 161.60000000000002
+    },
+    {
+        "text": " más, ese mismo esqueleto de Búsqueda Lineal ustedes lo han estado aplicando en la segunda",
+        "start": 161.60000000000002,
+        "end": 165.44
+    },
+    {
+        "text": " tarea. Lo hacíamos con un y que tenía dos condiciones, separadas con que. Separadas con",
+        "start": 165.44,
+        "end": 173.48000000000002
+    },
+    {
+        "text": " un and, la primera condición que chequeaba, que no te pasaras del límite, la segunda",
+        "start": 173.48000000000002,
+        "end": 180.24
+    },
+    {
+        "text": " condición que chequeaba. Si habías encontrado no el elemento que estabas buscando. Sí, y gracias",
+        "start": 180.24,
+        "end": 187.60000000000002
+    },
+    {
+        "text": " a nuestro viejo y querido circuito corto, si la primera no se cumplía, no se vuelva",
+        "start": 187.60000000000002,
+        "end": 192.68
+    },
+    {
+        "text": " a la segunda. O sea que este problema, el problema de la Búsqueda Lineal lo vimos abundante.",
+        "start": 192.68,
+        "end": 199.96
+    },
+    {
+        "text": " El peor caso posible que se pueda dar en la Búsqueda Lineal, cuál es. Que no encuentres",
+        "start": 199.96,
+        "end": 207.56
+    },
+    {
+        "text": " o que esté en el último lugar. O sea que tengas que recorrer todo el arreglo para",
+        "start": 207.56,
+        "end": 213.24
+    },
+    {
+        "text": " ver si estaba o no lo que estaba buscando. Ahora bien, el alurismo de Búsqueda Lineal",
+        "start": 213.24,
+        "end": 221.4
+    },
+    {
+        "text": " es un buen alurismo, siempre y cuando los elementos no tengan ningún orden en particular.",
+        "start": 221.4,
+        "end": 228.12
+    },
+    {
+        "text": " O sea que no esté en ordenado por ningún criterio. Sí, sin embargo, en ocasiones",
+        "start": 228.12,
+        "end": 236.8
+    },
+    {
+        "text": " sucede que a nosotros nos dan el arreglo ordenado mediante algún criterio. Por ejemplo, si",
+        "start": 236.8,
+        "end": 244.88000000000002
+    },
+    {
+        "text": " es un arreglo de enteros, que nos lo den ordenado de menor a mayor o que nos lo den ordenado",
+        "start": 244.88000000000002,
+        "end": 251.44
+    },
+    {
+        "text": " de mayor a menor. Ahora bien, si fuera un arreglo de carácteres, por ejemplo, nos lo podrían",
+        "start": 251.44,
+        "end": 258.68
+    },
+    {
+        "text": " dar ordenado de manera alfabética. O sea que si los elementos ya vienen ordenados,",
+        "start": 258.68,
+        "end": 266.78000000000003
+    },
+    {
+        "text": " según algún criterio no importa cuál sea, vamos a ver que hay un segundo alurismo de",
+        "start": 266.78,
+        "end": 271.84
+    },
+    {
+        "text": " Búsqueda que es la Búsqueda Lineal, que va a resolver el problema de manera más",
+        "start": 271.84,
+        "end": 276.58
+    },
+    {
+        "text": " eficiente, que significa de manera más eficiente, en menos cantidad de pasos. Y para ilustrar",
+        "start": 276.58,
+        "end": 285.11999999999995
+    },
+    {
+        "text": " la idea, vamos a verlo con un ejemplo. Vamos a suponer que a nosotros nos dan este arreglo",
+        "start": 285.11999999999995,
+        "end": 296.38
+    },
+    {
+        "text": " para simplificar, vamos a suponer que es un arreglo de enteros y que esos enteros están",
+        "start": 296.38,
+        "end": 304.94
+    },
+    {
+        "text": " ordenados de menor a mayor. Pero el alurismo se aplica igual no importa de qué tipo sean",
+        "start": 304.94,
+        "end": 311.18
+    },
+    {
+        "text": " los elementos y no importa cuál sea el criterio de ordenación. Vamos a suponer que tenemos estos",
+        "start": 311.18,
+        "end": 319.18
+    },
+    {
+        "text": " valores. En un arreglo de enteros, vamos a imaginarnos que los índices van desde uno",
+        "start": 319.18,
+        "end": 340.26
+    },
+    {
+        "text": " hasta el siete. Este alurismo todos lo hemos aplicado alguna vez en nuestras vidas. No sé",
+        "start": 340.26,
+        "end": 352.02
+    },
+    {
+        "text": " si ustedes conocen lo que es una hía telefónica. Bueno, cuando yo era chico, los teléfonos se",
+        "start": 352.02,
+        "end": 357.3
+    },
+    {
+        "text": " buscaban en la hía telefónica. Era un mamotreto bastante grande, que venía por ejemplo ordenado",
+        "start": 357.3,
+        "end": 364.82
+    },
+    {
+        "text": " de manera alfabética. O sea, tenías en la primera hoja empezaban los apellidos con",
+        "start": 364.82,
+        "end": 370.5
+    },
+    {
+        "text": " a, más adelante los apellidos con b, con c, tenía lo que se llamó un orden lexico gráfico.",
+        "start": 370.5,
+        "end": 375.74
+    },
+    {
+        "text": " Yo no conozco a ninguna persona que ha hecho una búsqueda lineal en la hía telefónica.",
+        "start": 375.74,
+        "end": 383.06
+    },
+    {
+        "text": " ¿Qué sería hacer una búsqueda lineal en la hía telefónica? ¿Quieres buscar alín con",
+        "start": 383.06,
+        "end": 389.78
+    },
+    {
+        "text": " apellido que empieza con p y empezás en la hoja con la a y después pasás por la hoja con la",
+        "start": 389.78,
+        "end": 396.34
+    },
+    {
+        "text": " b, con la c con la d, así hasta llegar al apell. Eso sería hacer una búsqueda lineal en una",
+        "start": 396.34,
+        "end": 401.65999999999997
+    },
+    {
+        "text": " hía telefónica. En uno de ustedes, supongo yo habrá hecho una búsqueda lineal en la hía telefónica.",
+        "start": 401.65999999999997,
+        "end": 408.85999999999996
+    },
+    {
+        "text": " Lo que hemos hecho es una búsqueda binaria. Ahora, si yo estoy buscando alguien cuyo apecido empieza",
+        "start": 410.82,
+        "end": 417.34
+    },
+    {
+        "text": " con p, tomamos la guía pero no la abrimos en la primera hoja, donde la abrimos. La abrim más o",
+        "start": 417.34,
+        "end": 424.61999999999995
+    },
+    {
+        "text": " menos por la mitad y te fijas en que letra quedaste. Suponete que la brista ya estaba en la m,",
+        "start": 424.61999999999995,
+        "end": 431.53999999999996
+    },
+    {
+        "text": " sí, ya no más contener la abierta en una hoja donde está la m ya sabemos algo muy importante,",
+        "start": 431.53999999999996,
+        "end": 439.09999999999997
+    },
+    {
+        "text": " que sabemos que está más adelante o sea que en la mitad izquierda de la guía telefónica,",
+        "start": 439.1,
+        "end": 446.90000000000003
+    },
+    {
+        "text": " sí, lo quería desde la a hasta la m, ni siquiera tiene sentido que vayamos a buscar ahí,",
+        "start": 446.90000000000003,
+        "end": 453.5
+    },
+    {
+        "text": " porque al ser un apellido con la p sabemos que va a estar en la otra mitad.",
+        "start": 453.5,
+        "end": 457.90000000000003
+    },
+    {
+        "text": " Podemos hacerlo así gracias a que la guía telefónica viene ordenada. Entonces que hacía",
+        "start": 460.54,
+        "end": 467.34000000000003
+    },
+    {
+        "text": " más después, tomábamos la mitad de la derecha y más o menos a ojo buscábamos donde podía estar la p",
+        "start": 467.34,
+        "end": 473.06
+    },
+    {
+        "text": " o medio por la mitad, abríamos, estábamos en la r, entonces ahí que así habíamos descartábamos",
+        "start": 473.06,
+        "end": 481.34
+    },
+    {
+        "text": " lo que iba de la r hasta la z, ya habíamos descartado anteriormente desde la hasta la m, el fragmento que",
+        "start": 481.34,
+        "end": 487.82
+    },
+    {
+        "text": " va entre la m y la s creo, ahí seguíamos buscando y seguíamos aplicando el mismo proceso hasta",
+        "start": 487.82,
+        "end": 496.97999999999996
+    },
+    {
+        "text": " cuando, bueno hasta dar con la hoja con la p, a ver si está o no la persona que buscábamos.",
+        "start": 496.98,
+        "end": 502.86
+    },
+    {
+        "text": " Eso es justamente lo que hace el algoritmo de búsqueda binaria, se inspiran el hecho de que la",
+        "start": 503.92,
+        "end": 511.02000000000004
+    },
+    {
+        "text": " secuencia, en este caso puntual el arreglo ya viene ordenado y hace uso de ese orden para evitar",
+        "start": 511.02000000000004,
+        "end": 519.22
+    },
+    {
+        "text": " recorrer todo el arreglo en el peor caso, que es lo que pasaba con la búsqueda lineal,",
+        "start": 519.94,
+        "end": 524.94
+    },
+    {
+        "text": " sin embargo en la búsqueda binaria, vamos a imaginarnos que acá estamos buscando el 11,",
+        "start": 524.94,
+        "end": 534.58
+    },
+    {
+        "text": " esto vendría a ser migía telefónica, este vendría a ser el valor que estamos buscando.",
+        "start": 536.38,
+        "end": 542.3000000000001
+    },
+    {
+        "text": " Lo que dice este algoritmo es, primero fijaemos no si está en donde, en el medio,",
+        "start": 543.3,
+        "end": 550.06
+    },
+    {
+        "text": " o sea lo primero que hace es bien el medio, para este ejemplo cual sería la cenda del medio,",
+        "start": 550.06,
+        "end": 555.5799999999999
+    },
+    {
+        "text": " la cenda 4, esta sería exactamente la cenda de la mitad, o sea que lo primero que hace el",
+        "start": 555.5799999999999,
+        "end": 562.5
+    },
+    {
+        "text": " algoritmo es, se fija a ver si está ahí, si está ahí que pasa, ya está, se encontró.",
+        "start": 562.5,
+        "end": 570.74
+    },
+    {
+        "text": " Ahora en caso de que no esté ahí, que es lo que hay que hacer, hay que comparar el valor",
+        "start": 571.54,
+        "end": 577.26
+    },
+    {
+        "text": " que está en la mitad con el que estamos buscando, en este ejemplo dijimos el criterio de ordenación,",
+        "start": 577.26,
+        "end": 583.42
+    },
+    {
+        "text": " cuál es, de menor a mayor, ¿sabien? entonces como es de menor a mayor, acá hay un 8 y yo estoy buscando",
+        "start": 583.42,
+        "end": 594.1
+    },
+    {
+        "text": " un 11 por donde va a continuar la búsqueda, en la parte de la derecha, o sea vamos a",
+        "start": 594.1,
+        "end": 601.14
+    },
+    {
+        "text": " inspeccionar esta porción de la regno, ¿y qué pasa con lo que está el izquierdo del 8?",
+        "start": 601.14,
+        "end": 606.46
+    },
+    {
+        "text": " Ni siquiera lo vamos a mirar, no vamos a recorrer esa mitad de la reglo, o sea que ya arrancamos",
+        "start": 606.46,
+        "end": 614.4200000000001
+    },
+    {
+        "text": " mejor que en la búsqueda lineal, porque ya hay todo un bloque de celda que directamente no vamos",
+        "start": 614.4200000000001,
+        "end": 619.82
+    },
+    {
+        "text": " a recorrarlas, ¿sí? entonces ahora nos concentramos en la mitad de la derecha y en la mitad de la",
+        "start": 619.82,
+        "end": 627.9000000000001
+    },
+    {
+        "text": " derecha volvemos a aplicar exactamente lo mismo, ¿cuál es el primero que vamos a mirar?",
+        "start": 627.9000000000001,
+        "end": 632.38
+    },
+    {
+        "text": " La mitad, la mitad de esta porción que es la celda 6, miramos acá, bueno y otra vez la misma pregunta,",
+        "start": 634.38,
+        "end": 642.9000000000001
+    },
+    {
+        "text": " acá está lo que estábamos buscando, si la respuesta es sí, listo lo encontramos, pero yo",
+        "start": 642.9000000000001,
+        "end": 649.46
+    },
+    {
+        "text": " estoy buscando el 11, o sea que la respuesta va a ser que no, con lo cual que vamos a hacer,",
+        "start": 649.46,
+        "end": 654.58
+    },
+    {
+        "text": " vamos de esta porción a mirar que parte, la parte izquierda y en la parte izquierda que tenemos,",
+        "start": 654.58,
+        "end": 663.14
+    },
+    {
+        "text": " el 10, o sea la celda con el 15 ni siquiera la llegamos a mirar, ¿sí? bueno y acá estamos en una",
+        "start": 663.14,
+        "end": 673.46
+    },
+    {
+        "text": " porción sumamente pequeña de la regla, una celda sola, bueno que hay acá un 10 que estoy buscando,",
+        "start": 673.46,
+        "end": 681.5400000000001
+    },
+    {
+        "text": " un 11, coinciden, no, tengo donde seguir buscando, no, ahí finalizó la búsqueda,",
+        "start": 681.5400000000001,
+        "end": 689.86
+    },
+    {
+        "text": " esa es la estrategia de la logaritmo de búsqueda binaria, ¿sí? la misma estrategia que la búsqueda en",
+        "start": 692.34,
+        "end": 699.1800000000001
+    },
+    {
+        "text": " una dieta telefónica, y es más eficiente que la búsqueda lineal porque en el peor caso la",
+        "start": 699.18,
+        "end": 706.02
+    },
+    {
+        "text": " búsqueda lineal cuantas celdas inspeccionan, 7, todas las celdas, sin embargo la búsqueda binaria en",
+        "start": 706.02,
+        "end": 714.5799999999999
+    },
+    {
+        "text": " cada nuevo paso descarta toda una porción de la regla, hay una mitad de la regla que es descartada,",
+        "start": 714.5799999999999,
+        "end": 723.42
+    },
+    {
+        "text": " o sea que el total de celdas que se van a inspeccionar va a ser menor que en una búsqueda lineal,",
+        "start": 724.14,
+        "end": 729.0999999999999
+    },
+    {
+        "text": " si el arreglo que a nosotros nos dan no está ordenado por ningún criterio, bueno,",
+        "start": 729.0999999999999,
+        "end": 734.8199999999999
+    },
+    {
+        "text": " ahí no tenemos más remedio que seguir realizando búsquedas mediante la logaritmo de búsqueda lineal,",
+        "start": 734.8199999999999,
+        "end": 739.6999999999999
+    },
+    {
+        "text": " ahora si el arreglo viene ordenado entonces siempre va a ser preferible hacer una",
+        "start": 739.6999999999999,
+        "end": 746.56
+    },
+    {
+        "text": " búsqueda binaria en vez de una búsqueda lineal, o sea que tengan esto en cuenta, siempre que ustedes",
+        "start": 746.56,
+        "end": 754.76
+    },
+    {
+        "text": " necesiten hacer una búsqueda fíjense si lo que están buscando está dentro de alguna",
+        "start": 754.76,
+        "end": 762.0799999999999
+    },
+    {
+        "text": " secuencia de valores que ya ven a ordenada mediante el criterio que sea, pues a",
+        "start": 762.0799999999999,
+        "end": 766.8
+    },
+    {
+        "text": " del menor a mayor, pues a del menor a menor, pues a del menor de numeric, con caso de que sean",
+        "start": 766.8,
+        "end": 771.4
+    },
+    {
+        "text": " enteros, puede ser ordenada alfabetico en caso de que sean letras y en ese caso corresponde",
+        "start": 771.4,
+        "end": 776.36
+    },
+    {
+        "text": " aplicar la búsqueda binaria, hasta acá, vamos a mirar de hecho un poquito el código fuente",
+        "start": 776.36,
+        "end": 787.64
+    },
+    {
+        "text": " de la búsqueda binaria.",
+        "start": 789.52,
+        "end": 790.9599999999999
+    },
+    {
+        "text": " Bueno, y acá tenemos en Pascal lo que acabamos de comentar en el ejemplo,",
+        "start": 801.4,
+        "end": 822.3199999999999
+    },
+    {
+        "text": " estas notas ustedes las tienen publicadas en el Eva, si están disponibles la idea que las",
+        "start": 822.3199999999999,
+        "end": 831.28
+    },
+    {
+        "text": " lean, vean bien cómo que funciona cada algoritmo y después está el práctico 13 para realizar.",
+        "start": 831.28,
+        "end": 837.4
+    },
+    {
+        "text": " Bueno, en este ejemplo tenemos una reglo de enteros y el encabezado de una función que",
+        "start": 837.4,
+        "end": 848.64
+    },
+    {
+        "text": " realiza la búsqueda binaria, le paso el elemento que quiero buscar en este ejemplo estamos",
+        "start": 848.64,
+        "end": 854.6
+    },
+    {
+        "text": " suponiendo que es un entero y el arreglo, como en toda función los parámetros de que maneras",
+        "start": 854.6,
+        "end": 860.84
+    },
+    {
+        "text": " están pasados, por valor que es el pasaje de parámetros que corresponde ser en una función,",
+        "start": 860.84,
+        "end": 867.2
+    },
+    {
+        "text": " pero hay condición, supone que el arreglo está ordenado, si el arreglo no está ordenado,",
+        "start": 867.2,
+        "end": 873.36
+    },
+    {
+        "text": " la búsqueda binaria no funciona. Bueno, declara algunas variables auxiliares, inf y sub, van a ser",
+        "start": 873.36,
+        "end": 884.28
+    },
+    {
+        "text": " los índices que vamos a usar para empezar desde el principio y desde el final y después el medio",
+        "start": 884.28,
+        "end": 891.4
+    },
+    {
+        "text": " va a hacer para marcar la celda de la mitad. Entonces empezamos poniendo inf en la primera posición y",
+        "start": 891.4,
+        "end": 900.72
+    },
+    {
+        "text": " sub en la última, estamos diciendo de momento tenemos todo el rango de celdas para procesar,",
+        "start": 900.72,
+        "end": 907.72
+    },
+    {
+        "text": " que hace esta asignación? Bueno, el promedio que es justamente que valor, la mitad, la celda de la",
+        "start": 908.72,
+        "end": 921.5600000000001
+    },
+    {
+        "text": " mitad, si, tomamos el primer índice, el último índice, lo sumamos los diglimos entre dos,",
+        "start": 921.5600000000001,
+        "end": 926.6800000000001
+    },
+    {
+        "text": " eso nos da el índice de la celda del medio. Bueno, y después viene un esquema de búsqueda",
+        "start": 926.6800000000001,
+        "end": 934.0
+    },
+    {
+        "text": " similar al de la búsqueda lineal, sólo que lo que compara no es si el índice actual",
+        "start": 934.0,
+        "end": 941.2
+    },
+    {
+        "text": " llegó al final, lo que compara es si el índice que marca el principio y el índice que marca el",
+        "start": 941.2,
+        "end": 947.52
+    },
+    {
+        "text": " último se llegaron a juntar, porque si se llegaron a juntar, que significa que tenemos que parar,",
+        "start": 947.52,
+        "end": 954.4
+    },
+    {
+        "text": " porque no lo encontramos, bien, entonces si todavía queda espacio para buscar, que es lo que nos",
+        "start": 955.4,
+        "end": 966.3199999999999
+    },
+    {
+        "text": " fijamos acá, si el valor del medio es distinto de x, si es distinto de x que significa que no es ese,",
+        "start": 966.3199999999999,
+        "end": 976.24
+    },
+    {
+        "text": " ahora si llega a ser igual que va a pasar, sale porque lo encontró,",
+        "start": 976.24,
+        "end": 980.56
+    },
+    {
+        "text": " está bien, pero en caso de entrar es porque el que estaba en la mitad no era el que estábamos",
+        "start": 981.56,
+        "end": 987.3199999999999
+    },
+    {
+        "text": " buscando, entonces ahí que se fija, si lo que estoy buscando es como menor al que está en la",
+        "start": 987.3199999999999,
+        "end": 995.0799999999999
+    },
+    {
+        "text": " mitad y miren lo que hace acá, a sup le asigna medio menos uno, índice estaba al principio,",
+        "start": 995.0799999999999,
+        "end": 1005.1199999999999
+    },
+    {
+        "text": " sup estaba al final, al hacer sup la asignación de medio menos uno que pasa,",
+        "start": 1005.12,
+        "end": 1011.52
+    },
+    {
+        "text": " este era sup lo traemos para acá, para el anterior en la mitad, eso quiere decir que en la",
+        "start": 1013.32,
+        "end": 1019.76
+    },
+    {
+        "text": " próxima entrada el y va a ser esta, la fracción de la rey lo que vamos a procesar, y si vino al",
+        "start": 1019.76,
+        "end": 1027.56
+    },
+    {
+        "text": " él es porque era mayor, entonces en vez de traer el sup hacia el anterior en la mitad lo que hace",
+        "start": 1027.56,
+        "end": 1035.96
+    },
+    {
+        "text": " lo deja acá y el índice lo trae el siguiente en la mitad, eso significa que en la próxima entrada va a",
+        "start": 1035.96,
+        "end": 1041.6399999999999
+    },
+    {
+        "text": " ser esta la fracción de la rey lo que se va a procesar, y ese proceso continúa, continúa, continúa,",
+        "start": 1041.6399999999999,
+        "end": 1048.72
+    },
+    {
+        "text": " ya sea hasta haber encontrado el valor, o hasta que los índices se cruzaron, cuando los índices se",
+        "start": 1048.72,
+        "end": 1056.1599999999999
+    },
+    {
+        "text": " cruzaron que significa, que no estaba el valor buscado, fíjense que esto desde el punto de vista",
+        "start": 1056.16,
+        "end": 1066.28
+    },
+    {
+        "text": " de las sintaxis del lenguaje no tiene nada nuevo, es simplemente un algoritmo que realiza una",
+        "start": 1066.28,
+        "end": 1071.9
+    },
+    {
+        "text": " búsqueda más eficiente siempre y cuando la secuencia de valores venga ordenada, entonces a tomar",
+        "start": 1071.9,
+        "end": 1081.3200000000002
+    },
+    {
+        "text": " de en cuenta si ustedes la búsqueda que deben realizar es en un arreglo que ya está ordenado",
+        "start": 1081.32,
+        "end": 1086.6799999999998
+    },
+    {
+        "text": " repito mediante algún criterio lo importa cuál aplicar este esquema de búsqueda en vez de la búsqueda",
+        "start": 1086.6799999999998,
+        "end": 1093.4399999999998
+    },
+    {
+        "text": " línea, quedo claro, este tema lo vamos medio por arriba les queda ustedes el material para",
+        "start": 1093.4399999999998,
+        "end": 1101.84
+    },
+    {
+        "text": " leerlo en detalle después, si a ti te dan un arreglo que está ordenado,",
+        "start": 1101.84,
+        "end": 1111.2
+    },
+    {
+        "text": " y tienes que hacer una búsqueda, vas a aplicar este algoritmo y no es tan",
+        "start": 1111.2,
+        "end": 1116.16
+    },
+    {
+        "text": " eficiente como esta solución, esta solución es mejor, se supone que vos lo vas a razonar,",
+        "start": 1116.16,
+        "end": 1125.4
+    },
+    {
+        "text": " o sea si a vos te dan como precondición que la secuencia de valores está ordenada,",
+        "start": 1125.4,
+        "end": 1131.04
+    },
+    {
+        "text": " bueno, ahí corresponde a aplicar este, es el mismo tipo de decisión que tienes que tomar el",
+        "start": 1131.04,
+        "end": 1136.32
+    },
+    {
+        "text": " obra de elegir la estructura correcta, acá se elegir el algoritmo de búsqueda correcto,",
+        "start": 1136.32,
+        "end": 1139.84
+    },
+    {
+        "text": " más consultas de la búsqueda binaria, vamos, sí, todo depende de las consecuencias que tengan",
+        "start": 1143.84,
+        "end": 1154.8
+    },
+    {
+        "text": " el contexto del ejercicio, bien, bueno, apago y hablamos un poquito de ordenación,",
+        "start": 1154.8,
+        "end": 1164.2
+    },
+    {
+        "text": " bien, bueno les cuento que existen muchísimos algoritmos de ordenación, y cuando digo muchos",
+        "start": 1166.32,
+        "end": 1187.1599999999999
+    },
+    {
+        "text": " digo unas cuantas decenas y no sé si no me animaría a decir cientos al día de hoy,",
+        "start": 1187.1599999999999,
+        "end": 1194.56
+    },
+    {
+        "text": " nosotros en programación uno solamente vamos a conversar sobre estos dos, hay más algoritmos",
+        "start": 1194.56,
+        "end": 1201.04
+    },
+    {
+        "text": " de ordenación, unos cuantos más que no los vemos en programación uno, probablemente si",
+        "start": 1201.04,
+        "end": 1205.72
+    },
+    {
+        "text": " los encuentren más adelante en otras materias, cuando hablamos de ordenación, nos referimos a que",
+        "start": 1205.72,
+        "end": 1214.04
+    },
+    {
+        "text": " nos dan una secuencia de valores, por ejemplo, un arreglo, que no está ordenado de ninguna manera,",
+        "start": 1214.04,
+        "end": 1219.8799999999999
+    },
+    {
+        "text": " y el propósito, el problema que nosotros queremos resolver es ordenarlos siguiendo a algún",
+        "start": 1220.88,
+        "end": 1229.1200000000001
+    },
+    {
+        "text": " criterio determinado, yo primero tengo que tener definido cuál es el criterio de ordenación que",
+        "start": 1229.1200000000001,
+        "end": 1233.3200000000002
+    },
+    {
+        "text": " voy a aplicar, por ejemplo si son números yo puedo decidir querer ordenarlos de menor a mayor,",
+        "start": 1233.3200000000002,
+        "end": 1239.3600000000001
+    },
+    {
+        "text": " o puedo querer decidir ordenarlos de mayor a menor, ahora sí es un arreglo en el cual tengo",
+        "start": 1239.3600000000001,
+        "end": 1246.16
+    },
+    {
+        "text": " no sé personas que son registros, de repente puedo querer ordenarlos por cédula, o puedo querer",
+        "start": 1246.16,
+        "end": 1254.48
+    },
+    {
+        "text": " ordenarlos por fecha de nacimiento, sea que siempre antes de encarar el problema de la",
+        "start": 1254.48,
+        "end": 1260.76
+    },
+    {
+        "text": " ordenación uno tiene que tener presente primero de qué tipos son los valores y segundo cuál es",
+        "start": 1260.76,
+        "end": 1267.3200000000002
+    },
+    {
+        "text": " el criterio de ordenación que desea aplicar, luego el algoritmo concreto que uno lija lo va a",
+        "start": 1267.3200000000002,
+        "end": 1274.4
+    },
+    {
+        "text": " implementar en forma acorde al criterio de ordenación que se tenga, bien, nosotros vamos a hablar de",
+        "start": 1274.4,
+        "end": 1283.2800000000002
+    },
+    {
+        "text": " ordenación por selección y también vamos a hablar de ordenación por una inmersión, pero",
+        "start": 1283.2800000000002,
+        "end": 1287.3200000000002
+    },
+    {
+        "text": " vuelvo a repetir, existen más algoritmos de ordenación que no lo tratamos en programación,",
+        "start": 1287.3200000000002,
+        "end": 1292.64
+    },
+    {
+        "text": " vamos a comentar por arriba cuál es la idea de cada uno de ellos, vamos a ver algún",
+        "start": 1294.92,
+        "end": 1299.5600000000002
+    },
+    {
+        "text": " ejemplo y de nuevo les queda para leer a ustedes de las notas de teorico, por ejemplo vamos a",
+        "start": 1299.56,
+        "end": 1308.6399999999999
+    },
+    {
+        "text": " suponer que aprender un poquito ya,",
+        "start": 1308.6399999999999,
+        "end": 1310.56
+    },
+    {
+        "text": " vamos a ver primero la ordenación por selección,",
+        "start": 1321.36,
+        "end": 1323.8799999999999
+    },
+    {
+        "text": " y vamos a suponer que tenemos este arreglo para simplificar nuevamente, vamos a suponer que",
+        "start": 1330.44,
+        "end": 1336.6
+    },
+    {
+        "text": " es un arreglo de enteros con estos valores, de momento no ordenados por ningún criterio en",
+        "start": 1336.6,
+        "end": 1347.1599999999999
+    },
+    {
+        "text": " particular,",
+        "start": 1347.16,
+        "end": 1347.8000000000002
+    },
+    {
+        "text": " no se os pone que son los mismos valores del ejemplo anterior pero en cualquier orden,",
+        "start": 1358.6000000000001,
+        "end": 1362.24
+    },
+    {
+        "text": " bien,",
+        "start": 1369.52,
+        "end": 1370.16
+    },
+    {
+        "text": " entonces la ordenación por selección funciona de una manera y vamos a ver después que la",
+        "start": 1370.16,
+        "end": 1381.28
+    },
+    {
+        "text": " ordenación por insertión funciona de otra manera distinta, cada algoritmo de ordenación",
+        "start": 1381.28,
+        "end": 1386.16
+    },
+    {
+        "text": " aplica su propia estrategia, tiene su propia forma de ir ordenando los valores, lo mismo con",
+        "start": 1386.16,
+        "end": 1393.5600000000002
+    },
+    {
+        "text": " los demás algoritmos de ordenación que existen que no vemos en programación,",
+        "start": 1393.56,
+        "end": 1397.36
+    },
+    {
+        "text": " el algoritmo de ordenación por selección funciona de la siguiente manera, lo primero que",
+        "start": 1400.36,
+        "end": 1406.56
+    },
+    {
+        "text": " tenemos que tener presente es que es un algoritmo que hace varias recorridas sobre el arreglo,",
+        "start": 1406.56,
+        "end": 1411.96
+    },
+    {
+        "text": " o sea no va a ser una única recorrida, va a ser varias recorridas y después de hacer esas",
+        "start": 1411.96,
+        "end": 1421.6399999999999
+    },
+    {
+        "text": " varias recorridas, el arreglo va a quedar ordenado, pero lo primero que tenemos que tener",
+        "start": 1421.64,
+        "end": 1428.0800000000002
+    },
+    {
+        "text": " presentes es que la ordenación por selección necesita varias pasadas, varias recorridas,",
+        "start": 1428.0800000000002,
+        "end": 1433.8400000000001
+    },
+    {
+        "text": " después cuando vean la implementación van a ver que eso se logra anidando una iteración",
+        "start": 1435.8400000000001,
+        "end": 1441.0800000000002
+    },
+    {
+        "text": " dentro de otra iteración, nuevamente aquello que hemos dicho muchas veces es necesario combinar",
+        "start": 1441.0800000000002,
+        "end": 1449.48
+    },
+    {
+        "text": " distintas estructuras de control para obtener el comportamiento deseado, entonces lo que hace",
+        "start": 1449.48,
+        "end": 1460.24
+    },
+    {
+        "text": " la ordenación por selección es lo siguiente, en cada pasada intenta buscar el valor más grande,",
+        "start": 1460.24,
+        "end": 1468.3600000000001
+    },
+    {
+        "text": " el valor máximo siempre en forma acorde al criterio de ordenación que estemos considerando,",
+        "start": 1468.3600000000001,
+        "end": 1473.8
+    },
+    {
+        "text": " a intercambiarlo con el que está en el último lugar, en la siguiente pasada ya sabemos que el máximo",
+        "start": 1473.8,
+        "end": 1484.68
+    },
+    {
+        "text": " quedó en el último lugar va a repetir el mismo proceso pero con uno menos y va a buscar el",
+        "start": 1484.68,
+        "end": 1490.68
+    },
+    {
+        "text": " máximo de esa porción que resta ordenar, lo va a intercambiar y lo va a poner en el último lugar,",
+        "start": 1490.68,
+        "end": 1497.32
+    },
+    {
+        "text": " en la siguiente pasada lo mismo pero con uno menos y ese proceso va a continuar hasta que la",
+        "start": 1498.04,
+        "end": 1505.32
+    },
+    {
+        "text": " reglo va a haber quedado ordenado, hace la misma cantidad de recorridas que la piernas en la",
+        "start": 1505.32,
+        "end": 1509.8
+    },
+    {
+        "text": " primera, hace la misma cantidad de exacto, tantas recorridas como se la tiene, en realidad una menos",
+        "start": 1509.8,
+        "end": 1515.6399999999999
+    },
+    {
+        "text": " porque para encontrar el máximo no empezas en la primera sino que empezas en la segunda, pero la idea es esa,",
+        "start": 1515.6399999999999,
+        "end": 1521.1599999999999
+    },
+    {
+        "text": " entonces vamos a hacerlo con este ejemplo para que nos quede la idea de cómo es que funciona,",
+        "start": 1522.4399999999998,
+        "end": 1526.24
+    },
+    {
+        "text": " repito ustedes después tienen el práctico 13, tienen las notas de teórico para ver bien cómo es la",
+        "start": 1526.24,
+        "end": 1531.1200000000001
+    },
+    {
+        "text": " implementación, bien, en la primera pasada vamos a ir marcando acá las pasadas, yo voy a buscar el",
+        "start": 1531.1200000000001,
+        "end": 1542.24
+    },
+    {
+        "text": " máximo de todo el arreglo, nosotros cuando vimos arreglos de hecho llegamos a ver un ejemplo de",
+        "start": 1542.24,
+        "end": 1550.52
+    },
+    {
+        "text": " búsqueda del máximo, si bien use la palabra a búsqueda es un problema de búsqueda para encontrar el máximo,",
+        "start": 1550.52,
+        "end": 1558.44
+    },
+    {
+        "text": " tenés que recorrer todo porque vos no sabes si más adelante no hay otro más grande,",
+        "start": 1560.76,
+        "end": 1565.4
+    },
+    {
+        "text": " entonces más que búsqueda del máximo ya me hemos leo encontrar el máximo, bueno,",
+        "start": 1566.84,
+        "end": 1572.28
+    },
+    {
+        "text": " si imaginan el código para encontrar el máximo no empezamos y vamos recorriendo y cada vez que",
+        "start": 1573.28,
+        "end": 1578.56
+    },
+    {
+        "text": " encontramos uno más grande nos lo guardamos, de hecho, y si esto es ejemplo lo llegamos a ver cuando",
+        "start": 1578.56,
+        "end": 1583.84
+    },
+    {
+        "text": " vimos arreglos, bien, entonces en la primera pasada hacemos una recorrida buscando el máximo el máximo",
+        "start": 1583.84,
+        "end": 1592.6399999999999
+    },
+    {
+        "text": " cual es el 15, hemos encontrado el máximo, entonces una vez que encontramos el máximo lo que vamos",
+        "start": 1592.6399999999999,
+        "end": 1604.24
+    },
+    {
+        "text": " a hacer es intercambiarlo con el que está en que posición en la última, o sea vamos a intercambiar",
+        "start": 1604.24,
+        "end": 1611.2
+    },
+    {
+        "text": " estos dos, vamos a utilizar una variabilidad auxiliar en la implementación exactamente,",
+        "start": 1611.2,
+        "end": 1619.96
+    },
+    {
+        "text": " si, de hecho llegamos a ver también el intercambio de dos variables requiere una tercera variabilidad,",
+        "start": 1619.96,
+        "end": 1624.88
+    },
+    {
+        "text": " entonces hacemos la primera pasada encontramos el máximo y lo vamos a intercambiar con el que está en",
+        "start": 1624.88,
+        "end": 1631.0
+    },
+    {
+        "text": " última posición, que nos va a quedar, nos va a quedar el 15 acá y nos va a quedar el 6 acá y",
+        "start": 1631.0,
+        "end": 1637.4
+    },
+    {
+        "text": " qué pasa con los demás valores, de momento quedan todos como estaban, o sea que en la última",
+        "start": 1637.4,
+        "end": 1648.4
+    },
+    {
+        "text": " posición nos quedó el máximo, entonces yo voy a poner acá una marquita para indicar que lo que",
+        "start": 1648.4,
+        "end": 1657.04
+    },
+    {
+        "text": " está de acá al lado ya está, no lo tengo que tocar más, se puede implementar sin arreglo con topeo,",
+        "start": 1657.04,
+        "end": 1664.6
+    },
+    {
+        "text": " si, de hecho en las notas heteríagos sabr que no usa arreglo con tope, para su implementación,",
+        "start": 1664.6,
+        "end": 1671.6
+    },
+    {
+        "text": " lo que vamos a hacer es ir variando un índice, en ese jodito de la doble iteración,",
+        "start": 1671.6,
+        "end": 1677.8
+    },
+    {
+        "text": " bueno vamos a la segunda pasada, en la segunda pasada debemos aplicar la misma estrategia,",
+        "start": 1677.8,
+        "end": 1685.76
+    },
+    {
+        "text": " pero en vez de llegar hasta el final llegamos hasta el anterior, encontrar el máximo de esta",
+        "start": 1685.76,
+        "end": 1691.92
+    },
+    {
+        "text": " porción del arreglo, bueno y el máximo cual es, el 12, entonces vamos a tomar el 12 y al 12 lo",
+        "start": 1691.92,
+        "end": 1703.28
+    },
+    {
+        "text": " vamos a intercambiar con el valor de la última posición donde la última no es la última de todas,",
+        "start": 1703.28,
+        "end": 1709.08
+    },
+    {
+        "text": " es la última del fragmento del arreglo en el cual estoy, entonces el valor 12 lo vamos a",
+        "start": 1709.08,
+        "end": 1717.04
+    },
+    {
+        "text": " intercambiar con el valor 5, o sea vamos a hacer el intercambio entre estos 2, el 15 ya estaba en su",
+        "start": 1717.04,
+        "end": 1725.6999999999998
+    },
+    {
+        "text": " lugar, acaba quedar el 12, acaba quedar el 5 y todas las demás se mantienen con los valores que",
+        "start": 1725.6999999999998,
+        "end": 1734.6
+    },
+    {
+        "text": " tenían, y ahora voy a poner acá la marquita, tercera pasada vamos a aplicarlo mismo, de esta porción",
+        "start": 1734.6,
+        "end": 1748.6399999999999
+    },
+    {
+        "text": " vamos a encontrar el máximo, con el cual es, el 10, o sea que recordemos para encontrar el máximo",
+        "start": 1748.6399999999999,
+        "end": 1759.9199999999998
+    },
+    {
+        "text": " yo voy a tener que ser una recorrida en esta porción del arreglo, una vez que identifique donde está el",
+        "start": 1759.92,
+        "end": 1765.24
+    },
+    {
+        "text": " máximo de nuevo, lo vamos a intercambiar con el valor que está en la última posición, pero",
+        "start": 1765.24,
+        "end": 1770.64
+    },
+    {
+        "text": " siempre considerando la franja del arreglo en lo cual estábamos, o sea lo vamos a intercambiar con",
+        "start": 1770.64,
+        "end": 1775.72
+    },
+    {
+        "text": " este acá, con el de la celdas aís, o sea que nos va a quedar, el 10 acá nos va a quedar el 6 acá",
+        "start": 1775.72,
+        "end": 1785.0
+    },
+    {
+        "text": " y los demás se mantienen como estaban, y ahora bajamos la marquita, esta marquita vendría",
+        "start": 1785.56,
+        "end": 1796.28
+    },
+    {
+        "text": " representar ese índice que vos me consultabas, que iría bajando, nuevamente lo mismo, en la próxima",
+        "start": 1796.28,
+        "end": 1805.08
+    },
+    {
+        "text": " pasada de esta porción encontramos el más grande, que justo dio la casualidad que está en donde,",
+        "start": 1805.08,
+        "end": 1811.12
+    },
+    {
+        "text": " en la primera, pero eso es casualidad, no quiere decir que siempre te va a que estar ahí, de hecho en",
+        "start": 1811.6799999999998,
+        "end": 1816.6399999999999
+    },
+    {
+        "text": " las anteriores lo hemos encontrado en cualquier posición, entonces vamos a intercambiar este con el",
+        "start": 1816.6399999999999,
+        "end": 1825.08
+    },
+    {
+        "text": " desaposición y nos va a quedar así, 8, 10, 12 y 15, el 7 pasó para acá, el 5 y el 6 y la marquita",
+        "start": 1825.08,
+        "end": 1838.0
+    },
+    {
+        "text": " quedó acá, bueno nuevamente lo mismo, nos quedan solamente 3, en esta porción nuevamente encontramos",
+        "start": 1838.0,
+        "end": 1851.48
+    },
+    {
+        "text": " el máximo que volvió a dar la casualidad que quedó al principio y lo vamos a intercambiar con el",
+        "start": 1851.48,
+        "end": 1856.72
+    },
+    {
+        "text": " último, donde de nuevo el último siempre el último del fragmento del arreglo que estamos revisando,",
+        "start": 1856.72,
+        "end": 1863.16
+    },
+    {
+        "text": " o sea que ahí es donde nos va a quedar el 7, que se intercambia con el 6, los demás quedan como",
+        "start": 1864.68,
+        "end": 1872.56
+    },
+    {
+        "text": " estaban y la marquita quedó acá, bueno vamos a la última pasada de esta porción el máximo",
+        "start": 1872.56,
+        "end": 1884.6
+    },
+    {
+        "text": " este se va a intercambiar con la última donde la última ahora es esta y acá vamos a poner 6,",
+        "start": 1884.6,
+        "end": 1892.96
+    },
+    {
+        "text": " acá el 5, bueno y lo demás que ya está abordinado, quedo abordinado y así es como finalmente queda",
+        "start": 1892.96,
+        "end": 1903.96
+    },
+    {
+        "text": " el arreglo tras la ordenación, se entendió la estrategia de la ordenación por selección,",
+        "start": 1903.96,
+        "end": 1914.44
+    },
+    {
+        "text": " no entendí perdón, lo que pasa es que preguntar si está ordenado te implicaré una recorrida adicional,",
+        "start": 1922.96,
+        "end": 1930.52
+    },
+    {
+        "text": " seguramente eso te encar esca, te aumenta la cantidad de pasos,",
+        "start": 1930.52,
+        "end": 1935.56
+    },
+    {
+        "text": " voy a decir para ir poniendo el mínimo acá y el máximo ya, en cantidad total de pasos te",
+        "start": 1935.56,
+        "end": 1953.32
+    },
+    {
+        "text": " va a quedar equivalente, o sea no va a haber gran diferencia, y puede ser que más o menos alguna",
+        "start": 1953.32,
+        "end": 1959.72
+    },
+    {
+        "text": " instrucción pero la idea es más o menos la misma, la idea es esa buscar el más grande y llevarlo,",
+        "start": 1959.72,
+        "end": 1966.28
+    },
+    {
+        "text": " luego uno menos, buscar el siguiente más grande y llevarlo, luego uno menos, existen varias",
+        "start": 1966.28,
+        "end": 1973.28
+    },
+    {
+        "text": " implementaciones posibles, yo puedo hacerlo llevando siempre el máximo hasta el final o también",
+        "start": 1973.28,
+        "end": 1979.88
+    },
+    {
+        "text": " llevando el mínimo hasta el principio es equivalente, o sea lo que va a cambiar es en qué orden vamos",
+        "start": 1979.88,
+        "end": 1984.56
+    },
+    {
+        "text": " estar haciendo la recorrida sobre el arreglo, lo mismo si es de menor a mayor o si es de mayor",
+        "start": 1984.56,
+        "end": 1993.76
+    },
+    {
+        "text": " a menor o si es un orden alfabetico, uno tiene que primero tener bien claro cuál es el criterio de",
+        "start": 1993.76,
+        "end": 1999.04
+    },
+    {
+        "text": " ordenación, pero a grandes rasgos esta es la idea de la ordenación por selección y es un algoritmo",
+        "start": 1999.04,
+        "end": 2008.0
+    },
+    {
+        "text": " posible que podemos aplicar cuando nos enfrentemos al problema de tener que ordenar una secuencia de",
+        "start": 2008.0,
+        "end": 2013.3999999999999
+    },
+    {
+        "text": " valores, por ejemplo una reglo como es que está ahí, más preguntas de este,",
+        "start": 2013.4,
+        "end": 2020.8400000000001
+    },
+    {
+        "text": " vamos a dar poquito la ordenación por inserción,",
+        "start": 2022.48,
+        "end": 2025.88
+    },
+    {
+        "text": " bueno el propósito es el mismo ordenar una secuencia de valores que no está ordenada de",
+        "start": 2034.0400000000002,
+        "end": 2041.76
+    },
+    {
+        "text": " ninguna manera mediante algún criterio prestablecillo, por ejemplo nuevamente ordenarlo de menor a mayor,",
+        "start": 2041.76,
+        "end": 2048.8
+    },
+    {
+        "text": " sin embargo la manera en la cual opera este algoritmo es diferente de la manera en la cual",
+        "start": 2049.8,
+        "end": 2056.36
+    },
+    {
+        "text": " opera el algoritmo de ordenación por selección, sí,",
+        "start": 2056.36,
+        "end": 2060.16
+    },
+    {
+        "text": " si lo tienes con el tiempo,",
+        "start": 2060.16,
+        "end": 2062.16
+    },
+    {
+        "text": " sí,",
+        "start": 2064.16,
+        "end": 2065.16
+    },
+    {
+        "text": " si,",
+        "start": 2065.16,
+        "end": 2066.16
+    },
+    {
+        "text": " el puro elemento no,",
+        "start": 2066.16,
+        "end": 2067.16
+    },
+    {
+        "text": " si,",
+        "start": 2067.16,
+        "end": 2068.16
+    },
+    {
+        "text": " ¿qué sería más rápido?",
+        "start": 2068.16,
+        "end": 2069.16
+    },
+    {
+        "text": " ¿qué vino de darlo después de servir a la cierta manera?",
+        "start": 2069.16,
+        "end": 2072.16
+    },
+    {
+        "text": " pero nuestro problema es lo que queremos ordenar,",
+        "start": 2072.16,
+        "end": 2074.16
+    },
+    {
+        "text": " está, pero ¿no?",
+        "start": 2076.16,
+        "end": 2077.16
+    },
+    {
+        "text": " lo estamos queriendo ordenar, después de que lo ordenaste, después de que finalizó la ordenación,",
+        "start": 2077.16,
+        "end": 2083.16
+    },
+    {
+        "text": " esto se lo puede pasar como entrar al algoritmo de bosque de adivinaria.",
+        "start": 2083.16,
+        "end": 2087.16
+    },
+    {
+        "text": " ¿qué sería el punto de transportar?",
+        "start": 2088.16,
+        "end": 2089.16
+    },
+    {
+        "text": " sí,",
+        "start": 2089.16,
+        "end": 2090.16
+    },
+    {
+        "text": " ¿qué sería más rápido?",
+        "start": 2090.16,
+        "end": 2091.16
+    },
+    {
+        "text": " ordenarme de aserinaria o de una subida.",
+        "start": 2091.16,
+        "end": 2093.16
+    },
+    {
+        "text": " si tu propósito un incocese,",
+        "start": 2093.16,
+        "end": 2096.16
+    },
+    {
+        "text": " ahí sí, sería más rápido hacer una búsqueda lineal porque es una sola recorrida,",
+        "start": 2096.16,
+        "end": 2100.16
+    },
+    {
+        "text": " está,",
+        "start": 2100.16,
+        "end": 2102.16
+    },
+    {
+        "text": " o sea, ordenarlo mediante algún algoritmo de ordenación, para luego hacer una búsqueda",
+        "start": 2102.16,
+        "end": 2107.16
+    },
+    {
+        "text": " linearia va a demorar más,",
+        "start": 2107.16,
+        "end": 2109.16
+    },
+    {
+        "text": " que hacer directamente una búsqueda lineal,",
+        "start": 2109.16,
+        "end": 2112.16
+    },
+    {
+        "text": " digamos, si bosque eres tener el arreglo ordenado,",
+        "start": 2112.16,
+        "end": 2115.16
+    },
+    {
+        "text": " probablemente sea por distintos motivos, no solamente para luego poder buscar un valor,",
+        "start": 2115.16,
+        "end": 2119.16
+    },
+    {
+        "text": " por ejemplo, ¿vos lo podés querer ordenar o porque se lo querés listar el usuario de manera ordenada?",
+        "start": 2119.16,
+        "end": 2124.16
+    },
+    {
+        "text": " o porque si lo querés pasar como dato de entrada a otro algoritmo,",
+        "start": 2124.16,
+        "end": 2129.16
+    },
+    {
+        "text": " el de la búsqueda linearia es uno de ellos, pero pueden haber otros,",
+        "start": 2129.16,
+        "end": 2133.16
+    },
+    {
+        "text": " que va a ser uso del hecho de que los valores ya vinieron ordenados,",
+        "start": 2133.16,
+        "end": 2137.16
+    },
+    {
+        "text": " y entonces ese otro algoritmo va a ser más eficiente gracias a que los datos entraven en ordenados.",
+        "start": 2137.16,
+        "end": 2143.16
+    },
+    {
+        "text": " ¿Vos podés ordenar cualquier secuencia de valores,",
+        "start": 2146.16,
+        "end": 2150.16
+    },
+    {
+        "text": " no solamente arreglos, podrías querer ordenar listas también?",
+        "start": 2150.16,
+        "end": 2154.16
+    },
+    {
+        "text": " ¿Polí le voy a servir si lo subía primero, empiega a malditarlo?",
+        "start": 2154.16,
+        "end": 2158.16
+    },
+    {
+        "text": " Por ejemplo, podrías saber y doinzartando de manera ordenada en una lista.",
+        "start": 2158.16,
+        "end": 2163.16
+    },
+    {
+        "text": " Lo que está en el teórico, lo que están las notas publicadas, es para el caso de arreglos.",
+        "start": 2163.16,
+        "end": 2169.16
+    },
+    {
+        "text": " También existen algoritmos de ordenación aplicables alistas.",
+        "start": 2169.16,
+        "end": 2173.16
+    },
+    {
+        "text": " ¿Puedes aparecer algún ejercicio?",
+        "start": 2174.16,
+        "end": 2178.16
+    },
+    {
+        "text": " Sí, claro.",
+        "start": 2178.16,
+        "end": 2179.16
+    },
+    {
+        "text": " Sí, de búsqueda de ordenación se puede llegar a preguntar.",
+        "start": 2179.16,
+        "end": 2182.16
+    },
+    {
+        "text": " Es parte del curso.",
+        "start": 2182.16,
+        "end": 2184.16
+    },
+    {
+        "text": " Bueno, vamos a hablar un poquito de este, de la ordenación por insertión.",
+        "start": 2186.16,
+        "end": 2191.16
+    },
+    {
+        "text": " Y vamos a verlo con el mismo ejemplo.",
+        "start": 2193.16,
+        "end": 2195.16
+    },
+    {
+        "text": " Vamos a ver cómo aplicando una estrategia distinta, el resultado va a ser el mismo.",
+        "start": 2203.16,
+        "end": 2208.16
+    },
+    {
+        "text": " Qué va a quedar ordenado mediante algún criterio, en este ejemplo nuevamente de menor a mayor.",
+        "start": 2209.16,
+        "end": 2214.16
+    },
+    {
+        "text": " ¿No?",
+        "start": 2215.16,
+        "end": 2216.16
+    },
+    {
+        "text": " No sé, sino que sí, es una pregunta, ¿no?",
+        "start": 2216.16,
+        "end": 2218.16
+    },
+    {
+        "text": " ¿Pero qué es el resultado?",
+        "start": 2218.16,
+        "end": 2220.16
+    },
+    {
+        "text": " ¿Pero qué es el resultado?",
+        "start": 2221.16,
+        "end": 2223.16
+    },
+    {
+        "text": " Vamos a ver cómo aplicando una estrategia distinta, el resultado va a ser el mismo.",
+        "start": 2223.16,
+        "end": 2227.16
+    },
+    {
+        "text": " Qué va a quedar ordenado mediante algún criterio, en este ejemplo nuevamente de menor a mayor.",
+        "start": 2227.16,
+        "end": 2232.16
+    },
+    {
+        "text": " Bueno, acá dijimos en cada pasada buscábamos el máximo, lo intercambiábamos con el de la última posición,",
+        "start": 2232.16,
+        "end": 2245.16
+    },
+    {
+        "text": " luego bajábamos uno y otra vez repetíamos lo mismo.",
+        "start": 2245.16,
+        "end": 2248.16
+    },
+    {
+        "text": " Acá la estrategia es completamente diferente.",
+        "start": 2248.16,
+        "end": 2251.16
+    },
+    {
+        "text": " Lo que hace la ordenación por inserción es lo siguiente.",
+        "start": 2251.16,
+        "end": 2256.16
+    },
+    {
+        "text": " Vamos a suponar que es de menor a mayor que queremos ordenar igual que en este ejemplo.",
+        "start": 2257.16,
+        "end": 2262.16
+    },
+    {
+        "text": " El algoritmo empieza por la segunda cenda.",
+        "start": 2262.16,
+        "end": 2266.16
+    },
+    {
+        "text": " Tuma el valor que está en esa cenda e intenta bajarlo lo más que pudiera.",
+        "start": 2269.16,
+        "end": 2277.16
+    },
+    {
+        "text": " Si, ustedes imaginen, mira, cuando tiran una piedra en un lago, ¿qué pasa con la piedra?",
+        "start": 2277.16,
+        "end": 2283.16
+    },
+    {
+        "text": " Bájalo más que pudiera.",
+        "start": 2283.16,
+        "end": 2286.16
+    },
+    {
+        "text": " Si no hay nada en el fondo, que le pasa a la piedra, se estrella en el fondo.",
+        "start": 2286.16,
+        "end": 2290.16
+    },
+    {
+        "text": " Ahora, si vos después tiras una segunda piedra, va a bajarlo más que pueda, pero probablemente que de arriba del anterior es un poquito esa idea.",
+        "start": 2290.16,
+        "end": 2297.16
+    },
+    {
+        "text": " En este caso queremos que quede ordenado de menor a mayor.",
+        "start": 2301.16,
+        "end": 2306.16
+    },
+    {
+        "text": " El 12, podemos bajarlo más, olvíense del resto del arreno, por ahora.",
+        "start": 2306.16,
+        "end": 2312.16
+    },
+    {
+        "text": " No, porque lo que está acá como es, ya es menor que el 12.",
+        "start": 2312.16,
+        "end": 2317.16
+    },
+    {
+        "text": " El 12 no tenemos como bajarlo más, en este ejemplo puntual que da acá.",
+        "start": 2317.16,
+        "end": 2322.16
+    },
+    {
+        "text": " La primera pasada no va a nabar cambios en el arreno.",
+        "start": 2322.16,
+        "end": 2328.16
+    },
+    {
+        "text": " Voy a copiarlo de vuelta.",
+        "start": 2328.16,
+        "end": 2332.16
+    },
+    {
+        "text": " Y, en la primera pasada empezamos acá e intentamos ir bajando.",
+        "start": 2332.16,
+        "end": 2342.16
+    },
+    {
+        "text": " En la siguiente pasada, vamos a empezar acá, en la posición 3.",
+        "start": 2342.16,
+        "end": 2349.16
+    },
+    {
+        "text": " Y este valor, vamos a tratar de bajarlo lo más que podamos.",
+        "start": 2349.16,
+        "end": 2355.16
+    },
+    {
+        "text": " Y ese bajarlo lo más que podamos, lo vamos a lograr haciendo intercambios.",
+        "start": 2355.16,
+        "end": 2361.16
+    },
+    {
+        "text": " Símilares al intercambio que hicimos acá entre estos dos, entre las del máximo y la última.",
+        "start": 2362.16,
+        "end": 2368.16
+    },
+    {
+        "text": " Bueno, 10 y 12, podemos hacer intercambio acá?",
+        "start": 2368.16,
+        "end": 2373.16
+    },
+    {
+        "text": " Sí, porque el 10 es menor que el 12.",
+        "start": 2373.16,
+        "end": 2375.16
+    },
+    {
+        "text": " Entonces, es que es lo que va a pasar.",
+        "start": 2375.16,
+        "end": 2377.16
+    },
+    {
+        "text": " Lo que va a pasar es que el 10 va a bajar y el 12 va a subir.",
+        "start": 2377.16,
+        "end": 2382.16
+    },
+    {
+        "text": " Teniendo el 10 acá con el 8. Vamos a poderlo seguir bajando.",
+        "start": 2382.16,
+        "end": 2388.16
+    },
+    {
+        "text": " No, porque el 10 va a ser más grande que el 8 sea que vamos a intercambiar estos dos y ahí va a terminar.",
+        "start": 2389.16,
+        "end": 2394.16
+    },
+    {
+        "text": " Nos va a quedar el 10 acá, el 12 acá y el 8 acá.",
+        "start": 2394.16,
+        "end": 2401.16
+    },
+    {
+        "text": " Los demás todavía no se han procesado.",
+        "start": 2401.16,
+        "end": 2406.16
+    },
+    {
+        "text": " En la siguiente pasada, tomamos el que está en la celdac 4 y tratamos de bajarlo lo más que poder.",
+        "start": 2409.16,
+        "end": 2415.16
+    },
+    {
+        "text": " No, no, no.",
+        "start": 2416.16,
+        "end": 2418.16
+    },
+    {
+        "text": " Arranca en esta posición y mira lo más que puede.",
+        "start": 2421.16,
+        "end": 2424.16
+    },
+    {
+        "text": " No, claro, o sea, mira al anterior si los puede los intercambias.",
+        "start": 2424.16,
+        "end": 2428.16
+    },
+    {
+        "text": " Luego mira ese con el anterior si puede los intercambias.",
+        "start": 2428.16,
+        "end": 2431.16
+    },
+    {
+        "text": " Lo va a bajarlo más que pueda, capaz que llega el principio del todo, capaz que termina antes.",
+        "start": 2431.16,
+        "end": 2436.16
+    },
+    {
+        "text": " Por ejemplo acá el 10 pudimos hacer un solo intercambio que duro así y después en 10 no se puedo bajar más.",
+        "start": 2436.16,
+        "end": 2441.16
+    },
+    {
+        "text": " Empezamos con el 7 ahora.",
+        "start": 2445.16,
+        "end": 2447.16
+    },
+    {
+        "text": " Tomamos el 7.",
+        "start": 2447.16,
+        "end": 2449.16
+    },
+    {
+        "text": " Bueno, ver, 7 y 12, el 7 lo podemos bajar.",
+        "start": 2449.16,
+        "end": 2453.16
+    },
+    {
+        "text": " Sí, entonces nos queda.",
+        "start": 2453.16,
+        "end": 2455.16
+    },
+    {
+        "text": " El 12 acá y el 7 acá.",
+        "start": 2455.16,
+        "end": 2457.16
+    },
+    {
+        "text": " Los intercambiamos.",
+        "start": 2457.16,
+        "end": 2459.16
+    },
+    {
+        "text": " Ahora miramos 7 con 10.",
+        "start": 2459.16,
+        "end": 2461.16
+    },
+    {
+        "text": " El 7 lo podemos seguir bajando.",
+        "start": 2461.16,
+        "end": 2463.16
+    },
+    {
+        "text": " Sí, entonces bajamos el 7 y subimos el 10.",
+        "start": 2463.16,
+        "end": 2468.16
+    },
+    {
+        "text": " Normalmente hicimos un intercambio.",
+        "start": 2468.16,
+        "end": 2470.16
+    },
+    {
+        "text": " 7 y 8 lo podemos seguir bajando el 7.",
+        "start": 2470.16,
+        "end": 2473.16
+    },
+    {
+        "text": " Sí, sí, sí, entonces bajamos el 7 y subimos el 8.",
+        "start": 2473.16,
+        "end": 2477.16
+    },
+    {
+        "text": " Acá tenemos una piedra que llegó hasta el fondo.",
+        "start": 2477.16,
+        "end": 2480.16
+    },
+    {
+        "text": " Estos 3 todavía quedan como estaba.",
+        "start": 2484.16,
+        "end": 2487.16
+    },
+    {
+        "text": " Se la idea siempre es tomar este y bajarlo lo más que podemos.",
+        "start": 2487.16,
+        "end": 2491.16
+    },
+    {
+        "text": " Tomar el próximo en la siguiente pasada y bajarlo lo más que podemos.",
+        "start": 2491.16,
+        "end": 2495.16
+    },
+    {
+        "text": " Tomar el próximo en la siguiente pasada y bajarlo lo más que podemos.",
+        "start": 2495.16,
+        "end": 2499.16
+    },
+    {
+        "text": " A veces bajará mucho, a veces bajará poco.",
+        "start": 2499.16,
+        "end": 2502.16
+    },
+    {
+        "text": " Tomamos ahora el 15 y da la casualidad en este ejemplo que cuando trate de bajar el 15 que va a pasar.",
+        "start": 2503.16,
+        "end": 2510.16
+    },
+    {
+        "text": " Justo el 12 ya más chico, se queda ahí.",
+        "start": 2510.16,
+        "end": 2513.16
+    },
+    {
+        "text": " En esta pasada no se vamos a hacer ni siquiera un intercambio.",
+        "start": 2513.16,
+        "end": 2518.16
+    },
+    {
+        "text": " Vamos a la siguiente pasada.",
+        "start": 2518.16,
+        "end": 2522.16
+    },
+    {
+        "text": " ¿Dónde ahora corresponde intentar bajar el 5 lo más que podamos?",
+        "start": 2523.16,
+        "end": 2534.16
+    },
+    {
+        "text": " Bueno, bajar el 5.",
+        "start": 2534.16,
+        "end": 2538.16
+    },
+    {
+        "text": " Con el 15 se puede intercambiar?",
+        "start": 2538.16,
+        "end": 2540.16
+    },
+    {
+        "text": " Sí, o sea que nos va a quedar el 15 acá y el 5 acá.",
+        "start": 2540.16,
+        "end": 2546.16
+    },
+    {
+        "text": " 5 con 12.",
+        "start": 2546.16,
+        "end": 2548.16
+    },
+    {
+        "text": " Normalmente los vamos a intercambiar.",
+        "start": 2549.16,
+        "end": 2551.16
+    },
+    {
+        "text": " Va a quedar 5 acá y 12 acá.",
+        "start": 2551.16,
+        "end": 2553.16
+    },
+    {
+        "text": " 5 con 10.",
+        "start": 2553.16,
+        "end": 2555.16
+    },
+    {
+        "text": " Otra vez a pasar lo mismo.",
+        "start": 2555.16,
+        "end": 2557.16
+    },
+    {
+        "text": " De hecho el 5 está donde va a llegar.",
+        "start": 2557.16,
+        "end": 2559.16
+    },
+    {
+        "text": " Va a llegar hasta el principio.",
+        "start": 2559.16,
+        "end": 2562.16
+    },
+    {
+        "text": " Nos va a quedar el 8 acá, luego el 7 acá y el 5 ahí.",
+        "start": 2562.16,
+        "end": 2567.16
+    },
+    {
+        "text": " O sea hasta el final de la recorrida hasta el principio del arreglo.",
+        "start": 2567.16,
+        "end": 2570.16
+    },
+    {
+        "text": " Relativo según cómo se mire.",
+        "start": 2570.16,
+        "end": 2573.16
+    },
+    {
+        "text": " ¿Van bien?",
+        "start": 2574.16,
+        "end": 2576.16
+    },
+    {
+        "text": " Bueno, y nos queda el 6.",
+        "start": 2576.16,
+        "end": 2579.16
+    },
+    {
+        "text": " Y en la última pasada vamos a hacer exactamente lo mismo.",
+        "start": 2579.16,
+        "end": 2582.16
+    },
+    {
+        "text": " Vamos a tomar el 6 y vamos a tratar de bajarlo lo más que se pueda.",
+        "start": 2582.16,
+        "end": 2587.16
+    },
+    {
+        "text": " Y bueno, en este ejemplo donde me va a quedar el 6.",
+        "start": 2587.16,
+        "end": 2590.16
+    },
+    {
+        "text": " Entre el 5 y el 7.",
+        "start": 2590.16,
+        "end": 2592.16
+    },
+    {
+        "text": " O sea, va a subir el 15, el 12, el 10, el 8 y el 7 siempre haciendo de aún intercambio por pasada.",
+        "start": 2592.16,
+        "end": 2598.16
+    },
+    {
+        "text": " Y nos va a quedar así.",
+        "start": 2599.16,
+        "end": 2601.16
+    },
+    {
+        "text": " 15, 12, 10, 8, 7, el 6 acá, el 5 y así es como nos queda finalmente el arreglo.",
+        "start": 2601.16,
+        "end": 2613.16
+    },
+    {
+        "text": " Entonces cada algoritmo de ordenación define su propia estrategia para la ordenación de los valores.",
+        "start": 2616.16,
+        "end": 2625.16
+    },
+    {
+        "text": " Nosotros vimos solamente estos dos pero crean que existen montones, cientos de cenas seguros,",
+        "start": 2629.16,
+        "end": 2635.16
+    },
+    {
+        "text": " capaz de cientos de reglos de... perdón, algoritmos de ordenación.",
+        "start": 2635.16,
+        "end": 2639.16
+    },
+    {
+        "text": " Bien, pensando un poquito en las estructuras de control.",
+        "start": 2642.16,
+        "end": 2646.16
+    },
+    {
+        "text": " Después lo tienen las notas de teorico igual, pero tratando de razonarlas.",
+        "start": 2647.16,
+        "end": 2652.16
+    },
+    {
+        "text": " La ordenación por selección, ¿qué estructuras de control lo va a combinar?",
+        "start": 2652.16,
+        "end": 2657.16
+    },
+    {
+        "text": " ¿Qué habíamos dicho?",
+        "start": 2658.16,
+        "end": 2660.16
+    },
+    {
+        "text": " Para cada una de las pasadas...",
+        "start": 2661.16,
+        "end": 2663.16
+    },
+    {
+        "text": " ¿El mayor se buscaba con un y... con un forro?",
+        "start": 2663.16,
+        "end": 2670.16
+    },
+    {
+        "text": " El máximo porque vos lo sabes más adelante, la palabra busca de poder confundir, por eso digamos encontrar el mayor.",
+        "start": 2671.16,
+        "end": 2678.16
+    },
+    {
+        "text": " Para encontrar el máximo de la opción en la que estás, va a usar un forro.",
+        "start": 2680.16,
+        "end": 2684.16
+    },
+    {
+        "text": " Ahora, eso lo vas a hacer en cada una de las pasadas y vas a hacer tantas pasadas como se las tengas, menos uno.",
+        "start": 2685.16,
+        "end": 2694.16
+    },
+    {
+        "text": " Bueno, eso tuve si lo haces así allá o lo haces así acá, eso no me importa el sentido del forro, lo que importa es que forro.",
+        "start": 2695.16,
+        "end": 2702.16
+    },
+    {
+        "text": " Entonces, este se va a resolver con una combinación de forro, de dos forro, un forro para cada una de las pasadas",
+        "start": 2703.16,
+        "end": 2712.16
+    },
+    {
+        "text": " y otro forro para encontrar el máximo dentro de la pasada en la cual estamos.",
+        "start": 2712.16,
+        "end": 2718.16
+    },
+    {
+        "text": " Esto también depende de cómo lo organizan ustedes en sus programas.",
+        "start": 2720.16,
+        "end": 2724.16
+    },
+    {
+        "text": " Por ejemplo, capaz que se pueden hacer una función auxiliar que encuentra el máximo, esa funciona auxiliar tendrá este forro,",
+        "start": 2724.16,
+        "end": 2732.16
+    },
+    {
+        "text": " y después el algoritmo de ordenación en sí tendrá este otro forro, ¿murda?",
+        "start": 2733.16,
+        "end": 2739.16
+    },
+    {
+        "text": " ¿Qué internamente llamará a la función que encuentra el máximo?",
+        "start": 2739.16,
+        "end": 2744.16
+    },
+    {
+        "text": " Lo cierto es que en los hechos en tiempo de ejecución se realiza combinando dos estructuras de repetición de forro.",
+        "start": 2744.16,
+        "end": 2751.16
+    },
+    {
+        "text": " ¿Qué pasará con este?",
+        "start": 2754.16,
+        "end": 2755.16
+    },
+    {
+        "text": " Con la ordenación por selección, por inserción, para lo que está pasando.",
+        "start": 2755.16,
+        "end": 2759.16
+    },
+    {
+        "text": " ¿Será ando fortamente?",
+        "start": 2759.16,
+        "end": 2761.16
+    },
+    {
+        "text": " A ver, tenemos que hacer una pasada que empieza a caio a bajando, luego otra que empieza a caio a bajando,",
+        "start": 2762.16,
+        "end": 2773.16
+    },
+    {
+        "text": " luego otra que empieza a caio a bajando. ¿Sabemos de antemano la cantidad de pasadas?",
+        "start": 2773.16,
+        "end": 2777.16
+    },
+    {
+        "text": " Sí, desde la dosa hasta la última. ¿O sea que por cada pasada? ¿Tá?",
+        "start": 2777.16,
+        "end": 2783.16
+    },
+    {
+        "text": " ¿Sabemos dónde empezamos? ¿Sabemos dónde terminamos?",
+        "start": 2783.16,
+        "end": 2787.16
+    },
+    {
+        "text": " Ahora bien, estando en un valor tratando de empujarlo lo más que puedo. ¿Sabemos de antemano cuántos lugares lo vamos a empujar?",
+        "start": 2788.16,
+        "end": 2800.16
+    },
+    {
+        "text": " No. ¿Puedes pasar como nos pasó con el 5 que lo empujamos hasta el principio del todo? ¿Puedes pasar como nos pasó con el 15 que ni siquiera lo empujamos una vez?",
+        "start": 2800.16,
+        "end": 2810.16
+    },
+    {
+        "text": " Eso va a ser y. O sea que la bajada del valor lo más que podamos, esa se va a implementar con y.",
+        "start": 2811.16,
+        "end": 2820.16
+    },
+    {
+        "text": " O sea que ya vemos que utilizan estructuras de control diferentes, con el cual cada uno aplica su propia estrategia pero el efecto final es el mismo.",
+        "start": 2828.16,
+        "end": 2838.16
+    },
+    {
+        "text": " Se logre la ordenación, tenías preguntas. ¿Tá?",
+        "start": 2838.16,
+        "end": 2843.16
+    },
+    {
+        "text": " O sea que en que nambos casos quedo igualmente ordenado. ¿Perdón?",
+        "start": 2843.16,
+        "end": 2849.16
+    },
+    {
+        "text": " Bien, más preguntas de esto?",
+        "start": 2852.16,
+        "end": 2856.16
+    },
+    {
+        "text": " Bueno, vamos a enchar un poquito del práctico 13.",
+        "start": 2856.16,
+        "end": 2861.16
+    },
+    {
+        "text": " Bueno, el práctico 13 tiene un montón de ejercicios que se concentra justamente en estos dos problemas, el de la búsqueda y el del ordenación, concretamente en los cuatro algoritmos que mencionamos.",
+        "start": 2862.16,
+        "end": 2873.16
+    },
+    {
+        "text": " La búsqueda lineal y la búsqueda binaria para el caso de los algoritmos de búsqueda y la ordenación por selección y por inserción que quedaron tapadas para el problema de la ordenación.",
+        "start": 2873.16,
+        "end": 2883.16
+    },
+    {
+        "text": " Bueno, para lo que está de la clase, vamos a dejar planteado el ejercicio 6.",
+        "start": 2884.16,
+        "end": 2895.16
+    },
+    {
+        "text": " El ejercicio 6 propone las siguientes declaraciones, una constante max que define el tamaño de un arreglo, un rango para los índices y después la declaración de un arreglo de entre.",
+        "start": 2898.16,
+        "end": 2912.16
+    },
+    {
+        "text": " Esa es la función de un arreglo de entero, como los ejemplos que estuvimos viendo, que utiliza ese rango de índices para identificar a las celdas y contienen enteros.",
+        "start": 2912.16,
+        "end": 2924.16
+    },
+    {
+        "text": " Bien, la primera función es una función que yo le paso un arreglo de estos y determina si está ordenado o no.",
+        "start": 2924.16,
+        "end": 2935.16
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 2936.16,
+        "end": 2937.16
+    },
+    {
+        "text": " ¿Esto? Esta función que está acá, ¿qué tipo de búsqueda utilizará? Es un problema de búsqueda camuflado.",
+        "start": 2938.16,
+        "end": 2945.16
+    },
+    {
+        "text": " Por supuesto, pero me refiero a búsqueda lineal o búsqueda binaria para saber si está ordenado. Es una búsqueda lineal.",
+        "start": 2948.16,
+        "end": 2957.16
+    },
+    {
+        "text": " ¿Dónde encuentres uno?",
+        "start": 2958.16,
+        "end": 2959.16
+    },
+    {
+        "text": " ¿Dónde encuentres uno que sea menor que el anterior ya está? Vamos a suponer de menor a la mayor.",
+        "start": 2960.16,
+        "end": 2966.16
+    },
+    {
+        "text": " ¿Ah? En forma ascendente. ¿Sí? Esto lo dijimos muchísimas veces durante el curso que las búsquedas a veces vienen camufladas, no vienen dichas de manera plíci.",
+        "start": 2966.16,
+        "end": 2976.16
+    },
+    {
+        "text": " Es más, esta función incluso la llegamos a hacer en el práctico de arreglos.",
+        "start": 2976.16,
+        "end": 2980.16
+    },
+    {
+        "text": " Y cuando habíamos visto funciones todavía, pero el algoritmo este lo llegamos a discutir.",
+        "start": 2981.16,
+        "end": 2986.16
+    },
+    {
+        "text": " ¿Ah? Sí que este lo dejamos. Sí, lo pasamos por alto, pues ya lo hemos hecho varias veces. ¿Ah?",
+        "start": 2986.16,
+        "end": 2992.16
+    },
+    {
+        "text": " Está ordenado.",
+        "start": 2992.16,
+        "end": 2993.16
+    },
+    {
+        "text": " Está ordenado, es una clásica búsqueda lineal.",
+        "start": 2993.16,
+        "end": 2996.16
+    },
+    {
+        "text": " Nos vamos a concentrar en estos dos.",
+        "start": 2997.16,
+        "end": 2999.16
+    },
+    {
+        "text": " Estos dos algoritmos que están acá implementan la ordenación por inserción.",
+        "start": 3000.16,
+        "end": 3007.16
+    },
+    {
+        "text": " Sí.",
+        "start": 3008.16,
+        "end": 3009.16
+    },
+    {
+        "text": " El primero de ellos, el ordenar posición, es el que resuelve lo que hacemos dentro de una de las pasadas, que es tomar un valor y tratar de bajarlo lo más que podamos.",
+        "start": 3010.16,
+        "end": 3022.16
+    },
+    {
+        "text": " Recibe una posición, recibe el arreglo de enteros y lo que hace es trata de bajar lo más que puede el valor en la posición.",
+        "start": 3023.16,
+        "end": 3038.16
+    },
+    {
+        "text": " Vamos a lo que un ejemplo de acá.",
+        "start": 3040.16,
+        "end": 3042.16
+    },
+    {
+        "text": " Vamos a suponer que...",
+        "start": 3045.16,
+        "end": 3047.16
+    },
+    {
+        "text": " Tenemos este arreglo con estos valores.",
+        "start": 3052.16,
+        "end": 3061.16
+    },
+    {
+        "text": " Los valores.",
+        "start": 3062.16,
+        "end": 3063.16
+    },
+    {
+        "text": " Numerados desde uno en adelante, de uno hasta max.",
+        "start": 3078.16,
+        "end": 3081.16
+    },
+    {
+        "text": " Vamos a suponer que max vale 7 y vamos a suponer que nos dan, bueno, obviamente el arreglo y la posición vamos a suponer que se está.",
+        "start": 3082.16,
+        "end": 3096.16
+    },
+    {
+        "text": " 5.",
+        "start": 3096.16,
+        "end": 3097.16
+    },
+    {
+        "text": " Decibe así.",
+        "start": 3098.16,
+        "end": 3099.16
+    },
+    {
+        "text": " Este procedimiento recibe una reglo A, este arreglo ordenado parcialmente entre las posiciones 1 y pos menos 1.",
+        "start": 3103.16,
+        "end": 3117.16
+    },
+    {
+        "text": " Es decir, que desde acá hasta acá ya sabemos que este arreglo está ordenado.",
+        "start": 3118.16,
+        "end": 3128.16
+    },
+    {
+        "text": " Desde esta hasta esta. 4,6,7,8, esta porción del arreglo ya está ordenada.",
+        "start": 3131.16,
+        "end": 3135.16
+    },
+    {
+        "text": " Y este valor que tenemos acá, de casualidad que doy índice igual a contenido, pero eso fue pura casualidad.",
+        "start": 3138.16,
+        "end": 3144.16
+    },
+    {
+        "text": " Ese es el que tenemos que tratar de empujarlo más que podamos, esto era lo que hacíamos dentro de cada pasada.",
+        "start": 3145.16,
+        "end": 3153.16
+    },
+    {
+        "text": " En particular, en este ejemplo el 5 está donde va a llegar.",
+        "start": 3154.16,
+        "end": 3157.16
+    },
+    {
+        "text": " Vamos a ir haciendo intercambios hasta dejarlo en donde.",
+        "start": 3158.16,
+        "end": 3162.16
+    },
+    {
+        "text": " Acá.",
+        "start": 3163.16,
+        "end": 3164.16
+    },
+    {
+        "text": " Y lo que hace es reinserta el elemento que originalmente se encuentra en la posición pos, o sea, este valor.",
+        "start": 3168.16,
+        "end": 3177.16
+    },
+    {
+        "text": " De forma ordenada entre las posiciones 1 y pos.",
+        "start": 3179.16,
+        "end": 3183.16
+    },
+    {
+        "text": " O sea, lo que vimos en el ejemplo anterior, lo tomo y trato de bajarlo lo más que bueno.",
+        "start": 3184.16,
+        "end": 3189.16
+    },
+    {
+        "text": " Para hacer ese entre comillas empujo y bajarlo lo más que podamos que estructura dijimos que usábamos.",
+        "start": 3192.16,
+        "end": 3198.16
+    },
+    {
+        "text": " Un wise.",
+        "start": 3199.16,
+        "end": 3200.16
+    },
+    {
+        "text": " Hay que hacer un wise.",
+        "start": 3201.16,
+        "end": 3203.16
+    },
+    {
+        "text": " Para ir lo bajándolo más que podamos y cada vez que entramos a ese wise que tenemos que hacer.",
+        "start": 3205.16,
+        "end": 3210.16
+    },
+    {
+        "text": " Tenemos que ir dando vuelta y obviamente en la condición tenemos que preguntar.",
+        "start": 3211.16,
+        "end": 3215.16
+    },
+    {
+        "text": " ¿Cuándo vamos a parar?",
+        "start": 3216.16,
+        "end": 3218.16
+    },
+    {
+        "text": " Cuando este sea mayor al anterior.",
+        "start": 3219.16,
+        "end": 3224.16
+    },
+    {
+        "text": " Porque en el momento el 5 es menor al 8 o sea, si el actual es menor que el anterior corresponde dar los vueltas.",
+        "start": 3225.16,
+        "end": 3230.16
+    },
+    {
+        "text": " Luego me va a quedar el 5 acá y el 7 corresponde dar los vueltas.",
+        "start": 3232.16,
+        "end": 3235.16
+    },
+    {
+        "text": " El 5 acá y el 6 corresponde dar los vueltas. ¿Qué va a pasar cuando lleguemos el 5 y el 4?",
+        "start": 3236.16,
+        "end": 3241.16
+    },
+    {
+        "text": " Ahí paramos.",
+        "start": 3242.16,
+        "end": 3243.16
+    },
+    {
+        "text": " ¿Algo porque puede pasar es que me quede la primera aserda de todas.",
+        "start": 3244.16,
+        "end": 3247.16
+    },
+    {
+        "text": " O sea que este algoritmo resuelve la bajada de un valor lo más que podamos.",
+        "start": 3249.16,
+        "end": 3253.16
+    },
+    {
+        "text": " ¿Sabían? ¿Se entendió eso?",
+        "start": 3255.16,
+        "end": 3258.16
+    },
+    {
+        "text": " Bueno, y la parte 3, el procedimiento ordenar a reglo enteros, este es el que aplica la ordenación por interción.",
+        "start": 3259.16,
+        "end": 3269.16
+    },
+    {
+        "text": " O sea, este va a implementar la parte del 4.",
+        "start": 3270.16,
+        "end": 3274.16
+    },
+    {
+        "text": " Hayamos anotado acá que era una combinación de 4 con 9.",
+        "start": 3275.16,
+        "end": 3278.16
+    },
+    {
+        "text": " La parte del 9 es la que se resuelve acá dentro. La parte del 4 es la que empezaba en que se elda.",
+        "start": 3279.16,
+        "end": 3285.16
+    },
+    {
+        "text": " En la 2 y trataba de bajarlo.",
+        "start": 3286.16,
+        "end": 3289.16
+    },
+    {
+        "text": " Luego pasa la siguiente Zelda a la 3 y trata de bajarlo. ¿Cómo lo va a lograr llamando al anterior?",
+        "start": 3290.16,
+        "end": 3296.16
+    },
+    {
+        "text": " Sí.",
+        "start": 3297.16,
+        "end": 3298.16
+    },
+    {
+        "text": " ¿Por qué está el reglo o el que está en el en los aburrados?",
+        "start": 3298.16,
+        "end": 3302.16
+    },
+    {
+        "text": " No, vamos a ordenar una reglo que es enteros y el criterio ordenación que queremos aplicar es que te quede ordenado en forma ascendente de menor a mayor.",
+        "start": 3303.16,
+        "end": 3310.16
+    },
+    {
+        "text": " O sea, una reglo como este.",
+        "start": 3312.16,
+        "end": 3313.16
+    },
+    {
+        "text": " Lo que a vos te asegura el ordenar posición es que cuando vos esté esperado en pos lo anterior ya está ordenado.",
+        "start": 3314.16,
+        "end": 3320.16
+    },
+    {
+        "text": " Pero en la reglo que a vos te pasan acá, tiene totalmente desordenado.",
+        "start": 3321.16,
+        "end": 3325.16
+    },
+    {
+        "text": " Lo vamos a empezar a ordenar haciendo cada una de las pasadas y llamando al anterior.",
+        "start": 3326.16,
+        "end": 3331.16
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3334.16,
+        "end": 3335.16
+    },
+    {
+        "text": " Bueno, se ponen a trabajar en esto, hacemos un rato, hago una ronda de dudas.",
+        "start": 3336.16,
+        "end": 3340.16
+    },
+    {
+        "text": " Si me quieren preguntar de la tarea, me pueden preguntar de la tarea.",
+        "start": 3341.16,
+        "end": 3344.16
+    }
+]

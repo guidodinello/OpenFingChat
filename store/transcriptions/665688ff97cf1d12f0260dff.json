@@ -1,0 +1,2737 @@
+[
+    {
+        "text": " Estamos en la penúltima clase, también nos sacamos de estar cerrando el último tema de los que",
+        "start": 0.0,
+        "end": 6.92
+    },
+    {
+        "text": " va a ser considerado para la tarea, de hecho este tema va a ir a la tarea, si como Hagen yo les dije que",
+        "start": 6.92,
+        "end": 11.82
+    },
+    {
+        "text": " va a ir a la tarea, son los dos distinguidos así de alguna manera para la tarea 4, la última,",
+        "start": 11.82,
+        "end": 17.04
+    },
+    {
+        "text": " ya el último tema que vamos a ver la semana que viene es un poquito, tiene dos partes, una",
+        "start": 17.04,
+        "end": 24.400000000000002
+    },
+    {
+        "text": " primera que es una integración de cosas que vimos sueltas, ver como las puedo integrarse a",
+        "start": 24.400000000000002,
+        "end": 28.84
+    },
+    {
+        "text": " la tarea, la misma multiestructuras y la segunda es un puente hacia programación 4, ni siquiera",
+        "start": 28.84,
+        "end": 34.2
+    },
+    {
+        "text": " programación 3, la estamos saltiando así, también tiene que ver con la introducción al diseño",
+        "start": 34.2,
+        "end": 38.88
+    },
+    {
+        "text": " de TALS y es un poco lo que focaliza más P4, con la orientación de objetos, ustedes empiezan",
+        "start": 38.88,
+        "end": 43.92
+    },
+    {
+        "text": " el diseño de aplicaciones, hay en programación 3 tiene otro foco, por eso digo va por otro lado",
+        "start": 43.92,
+        "end": 49.8
+    },
+    {
+        "text": " y profundizar cosas que vieron acá, estructuradas, datos, algoritmo, análisis técnicas, diseño,",
+        "start": 49.8,
+        "end": 54.879999999999995
+    },
+    {
+        "text": " análisis de algoritmo, etcétera, así que bueno eso es lo que nos estaría quedando,",
+        "start": 54.88,
+        "end": 59.64
+    },
+    {
+        "text": " la clase de hoy ponense contentos, va a ser más corta que lo que han sido de las últimas 2,",
+        "start": 59.64,
+        "end": 65.36
+    },
+    {
+        "text": " que han sido bastante largas, porque es un tema que no tan complejo ni hay tanta variedad,",
+        "start": 65.36,
+        "end": 71.28
+    },
+    {
+        "text": " así que vamos a discutir un poquito de esta idea, las colas de prioridad son una variante",
+        "start": 71.28,
+        "end": 78.6
+    },
+    {
+        "text": " de las colecciones también, así como vimos los conjuntos, los multiconguntos, las tablas o",
+        "start": 78.6,
+        "end": 84.80000000000001
+    },
+    {
+        "text": " las correspondencias que eran entre conjuntos, las colas de prioridad también se pueden ver como",
+        "start": 84.8,
+        "end": 89.92
+    },
+    {
+        "text": " colecciones, también donde las operaciones distinguidas un poco son las mismas",
+        "start": 89.92,
+        "end": 95.75999999999999
+    },
+    {
+        "text": " constructoras que tiene el conjunto o el multiset, un vacío y un insertar, obviamente el insertar",
+        "start": 95.75999999999999,
+        "end": 103.08
+    },
+    {
+        "text": " varía la poscondición, suelto a la poscondición si es un multiset o no es un multiset, y vamos",
+        "start": 103.08,
+        "end": 109.03999999999999
+    },
+    {
+        "text": " a ver que las dos variantes las puse en cola de prioridad con o sin repetidos, son",
+        "start": 109.12,
+        "end": 115.32000000000001
+    },
+    {
+        "text": " pequeñas variantes, un predicado mínimo que es saber si es vacío, lo que vamos a llamar",
+        "start": 115.32000000000001,
+        "end": 122.24000000000001
+    },
+    {
+        "text": " una cola de prioridad o un conjunto, un multiconjunto, y como selectoras uno saca información",
+        "start": 122.24000000000001,
+        "end": 127.76
+    },
+    {
+        "text": " de esta colección por un orden, no es el orden posicional porque no hay en un conjunto,",
+        "start": 127.76,
+        "end": 132.56
+    },
+    {
+        "text": " no no no no dice esta primero que este, o este llegó último y este llegó primero, pero sí",
+        "start": 132.56,
+        "end": 138.08
+    },
+    {
+        "text": " un orden comparativo entre elementos, si no tengo un orden comparativo en el entre",
+        "start": 138.08,
+        "end": 141.64000000000001
+    },
+    {
+        "text": " elementos no tiene sentido hablar de una cola de prioridad, porque el orden de salida de",
+        "start": 141.64000000000001,
+        "end": 146.16000000000003
+    },
+    {
+        "text": " alguna manera ha estado dado por algo que podríamos llamar el mínimo o el máximo conceptos",
+        "start": 146.16000000000003,
+        "end": 151.32000000000002
+    },
+    {
+        "text": " duales o borrar mínimo y borrar máximo para sacarlo de la prioridad, a veces en cola de",
+        "start": 151.32000000000002,
+        "end": 157.52
+    },
+    {
+        "text": " prioridad doble es que se suena llamar estas las cuatro operaciones, mínimo borrar mínimo,",
+        "start": 157.52,
+        "end": 161.96
+    },
+    {
+        "text": " borrar máximo, pero no es lo habitual, o sea que este es el foco que nos vamos a poner",
+        "start": 161.96,
+        "end": 168.36
+    },
+    {
+        "text": " en esta clase, tratando de ver variantes y implementaciones eficientes de estas operaciones,",
+        "start": 168.36,
+        "end": 174.48000000000002
+    },
+    {
+        "text": " no mucho más que eso, ¿qué implementaciones podríamos considerar para estas cosas?",
+        "start": 174.48000000000002,
+        "end": 183.12
+    },
+    {
+        "text": " Todo lo que vimos puede ser más o menos útil para esto y cuando digo más o menos útil",
+        "start": 183.12,
+        "end": 188.68
+    },
+    {
+        "text": " lo de la eficiencia, ¿cabien? Uno pensaría, por ejemplo, una opción podría ser listas,",
+        "start": 188.68,
+        "end": 195.16
+    },
+    {
+        "text": " si uno tiene listas, ¿qué le parece? ¿Cómo cómo podría implementar esto con listas?",
+        "start": 195.16,
+        "end": 205.36
+    },
+    {
+        "text": " La representación de M.T.C. para tratar de cumplir con estas operaciones que están acá,",
+        "start": 205.36,
+        "end": 211.36
+    },
+    {
+        "text": " se varía una lista con un cabezal, por tener este cabezal, suponence, esa es mi lista y en el cabezal",
+        "start": 211.36,
+        "end": 222.64000000000001
+    },
+    {
+        "text": " ¿qué pondría? La cantidad de elementos, vamos a poner un numeral como cantidad ahí,",
+        "start": 222.64000000000001,
+        "end": 228.4
+    },
+    {
+        "text": " ¿no? Un atributo de esa cantidad. El inicio, si lo van a borrar como una lista, entonces,",
+        "start": 228.4,
+        "end": 235.8
+    },
+    {
+        "text": " o algo así, pero ya hablando de implementación, ¿no? Entonces podría ser que la representación",
+        "start": 236.36,
+        "end": 241.52
+    },
+    {
+        "text": " guarde, podría decir si no ha cotado, guardo, una listita, ¿si? Podría ser una opción, ¿qué guardo en",
+        "start": 241.52,
+        "end": 256.24
+    },
+    {
+        "text": " los nodos de la lista, además del siguiente? Yo no puse doble encadenada, les parece que puede",
+        "start": 256.24,
+        "end": 260.68
+    },
+    {
+        "text": " aportar el doble encadenado acá, ya estamos con el final del curso, entonces, voy a hacerlo más",
+        "start": 260.68,
+        "end": 264.92
+    },
+    {
+        "text": " evaluación diagnóstico, como se fuera en la lista de estructuras ustedes ¿no? Una puntadora al final,",
+        "start": 264.92,
+        "end": 276.40000000000003
+    },
+    {
+        "text": " acá me dicen ¿qué dijiste? Bueno, buscar el mínimo del máximo, la pregunta es, esto es",
+        "start": 276.40000000000003,
+        "end": 285.0
+    },
+    {
+        "text": " nodos no están ordenados, ¿o sí? Bueno, entonces ahí hay otra variante ¿no? Si considero que",
+        "start": 285.0,
+        "end": 293.76
+    },
+    {
+        "text": " esta lista la voy a mantener ordenada, por ejemplo, de menor a mayor, acá pongo menor igual suponiendo",
+        "start": 293.76,
+        "end": 300.24
+    },
+    {
+        "text": " que es repetido, si no hubiera repetidas prioridades sería menor estricto, pero voy a poner menor igual,",
+        "start": 300.24,
+        "end": 305.96
+    },
+    {
+        "text": " porque lo puedo cambiar eso mínimamente, ¿si? Bien, eso es lo voy a aclarar porque la",
+        "start": 305.96,
+        "end": 314.84
+    },
+    {
+        "text": " literatura es confusa, a veces hablan que el de máxima prioridad, es el que tiene, miren que",
+        "start": 314.84,
+        "end": 321.46
+    },
+    {
+        "text": " lindo tal vez que hay, es el que tiene está todo rojo a fuera, es el que tiene numerito más chiquita,",
+        "start": 321.46,
+        "end": 326.52
+    },
+    {
+        "text": " vieron cuando dice prioridad uno, parece la máxima prioridad, entonces el número más chiquito,",
+        "start": 326.52,
+        "end": 331.44
+    },
+    {
+        "text": " y si tiene prioridad cinco, parece que fuera, entonces a veces confusos, entonces cuando una",
+        "start": 331.44,
+        "end": 335.84
+    },
+    {
+        "text": " específica y lee un tado un punto HD esto tiene que tener cuidado, ese numerito que habla de",
+        "start": 335.84,
+        "end": 341.47999999999996
+    },
+    {
+        "text": " prioridad, que general es un número, también si el número más chiquito es la máxima prioridad o la",
+        "start": 341.48,
+        "end": 346.6
+    },
+    {
+        "text": " mínima prioridad, ¿también? El acuerdo acá voy a tomar que mayor prioridad es el número más grande,",
+        "start": 346.6,
+        "end": 351.68
+    },
+    {
+        "text": " menor prioridad es el número más chico, o algo así, o si no ahora cuando veamos la implementación lo",
+        "start": 351.68,
+        "end": 356.6
+    },
+    {
+        "text": " vemos, pero eso hay que aclararlo porque no es estándar, eso es lo que quiero decir.",
+        "start": 356.6,
+        "end": 359.76
+    },
+    {
+        "text": " Bien, si no me importara esta que están entreparem, de si, y solo me quedara con mínimo y borrar mínimo,",
+        "start": 363.84000000000003,
+        "end": 371.04
+    },
+    {
+        "text": " está pensando que el mínimo que si me da el uno es la máxima prioridad por eso tomo mínimos,",
+        "start": 371.48,
+        "end": 377.52000000000004
+    },
+    {
+        "text": " haría falta el puntero al final y no porque una diría mínimo, borrar mínimo donde están en",
+        "start": 378.88,
+        "end": 386.96000000000004
+    },
+    {
+        "text": " esta lista ordenada al principio, entonces está, con solo tener el puntero al inicio podría hacer",
+        "start": 386.96000000000004,
+        "end": 392.56
+    },
+    {
+        "text": " todo sobre mínimo y borrar mínimo acá, ¿también? Me acuerdo y lo podría hacer en orden uno,",
+        "start": 392.56,
+        "end": 399.36
+    },
+    {
+        "text": " suponiendo que más fuerte.",
+        "start": 401.48,
+        "end": 406.76
+    },
+    {
+        "text": " ¿Por qué me voy a mandar la prioridad, por ejemplo yo, a sí, voy a ganar algo pero le pongo",
+        "start": 406.76,
+        "end": 411.48
+    },
+    {
+        "text": " prioridad un millón porque lo necesito ya. Es que, aclarote que el número más chiquito acá va a",
+        "start": 411.48,
+        "end": 416.12
+    },
+    {
+        "text": " hacer como la máxima prioridad, o cuando diga mínimo, me da el número más chiquito, pero si el uno",
+        "start": 416.12,
+        "end": 420.96000000000004
+    },
+    {
+        "text": " es la prioridad máxima, el cinco tiene menor prioridad que el uno.",
+        "start": 420.96000000000004,
+        "end": 423.8
+    },
+    {
+        "text": " ¿Estás el salgrafo con este tipo de coreidad? Sí.",
+        "start": 423.8,
+        "end": 426.12
+    },
+    {
+        "text": " ¿Estás el doyar? ¿Tengo cosas que voy a hacer?",
+        "start": 426.12,
+        "end": 428.8
+    },
+    {
+        "text": " Eso depende el que te invoque la operación que prioridad le puso es un parámetro, él lo",
+        "start": 428.8,
+        "end": 432.6
+    },
+    {
+        "text": " elegirá. Si esto es muy común, por ejemplo, un ejemplo de uso de estos son los procesos",
+        "start": 432.6,
+        "end": 438.0
+    },
+    {
+        "text": " en un procesador, entonces yo le doy una prioridad cada proceso. Depende de que invoque la operación",
+        "start": 438.0,
+        "end": 443.48
+    },
+    {
+        "text": " si le doy a este prioridad cinco, prioridad uno, eso ya no depende el tado, depende del uso",
+        "start": 443.48,
+        "end": 448.36
+    },
+    {
+        "text": " el tado, se entiende de la aplicación que uses esto. Entonces si solo me interesa eso,",
+        "start": 448.36,
+        "end": 453.24
+    },
+    {
+        "text": " no diría podría ser que la lista, porque estas dos temas de acuerdo que serían orden",
+        "start": 453.24,
+        "end": 458.56
+    },
+    {
+        "text": " uno, mínimo, borrar mínimo, insertar que es otra de la que está ahí y ya no, porque cuál es",
+        "start": 458.56,
+        "end": 468.6
+    },
+    {
+        "text": " el peor caso de sin insertar? Al final, que sea el caso que le tocó insertar uno más grande",
+        "start": 468.6,
+        "end": 474.64
+    },
+    {
+        "text": " que el último. Primera cosa que no sé si lo diga como obvio, pero no es obvio. El tipo",
+        "start": 474.64,
+        "end": 481.24
+    },
+    {
+        "text": " de datos de lo que tengo además del siguiente, le tengo en no dos, típicamente son dos cosas.",
+        "start": 481.24,
+        "end": 486.68
+    },
+    {
+        "text": " ¿Qué son?",
+        "start": 486.68,
+        "end": 488.32
+    },
+    {
+        "text": " Al puntero seguro, pero ¿qué decías? La prioridad y la información. Por ejemplo, los datos",
+        "start": 491.68,
+        "end": 498.24
+    },
+    {
+        "text": " del proceso y la prioridad que la asocien. Ingenial van separados, es como en el",
+        "start": 498.24,
+        "end": 505.24
+    },
+    {
+        "text": " prédio puede ser que diga, implementa una cola de prioridad de enteros y uno asume que el",
+        "start": 505.24,
+        "end": 509.40000000000003
+    },
+    {
+        "text": " dato entero, esa es la prioridad, pero como con los colapsas en el mismo, pero si no en general",
+        "start": 509.4,
+        "end": 513.76
+    },
+    {
+        "text": " en la práctica, el dato es una cosa y la prioridad que le asocié a otro. Es más, a veces",
+        "start": 513.76,
+        "end": 518.48
+    },
+    {
+        "text": " le cambia la prioridad y no cambia el dato. Al mismo proceso le subo, le bajo la prioridad",
+        "start": 518.48,
+        "end": 523.04
+    },
+    {
+        "text": " para que lo atienda más rápido o para que lo demores, por ejemplo. Si pienso los procesos",
+        "start": 523.04,
+        "end": 527.64
+    },
+    {
+        "text": " en un procesado, ¿ok? Seguiría una implementación simple, ¿tabién? Si ya sabemos todos los algoritmos",
+        "start": 527.64,
+        "end": 535.52
+    },
+    {
+        "text": " como insertar una lista ordenada, borrar o retornar el primero, ¿no? Pero le insertar",
+        "start": 535.52,
+        "end": 542.12
+    },
+    {
+        "text": " el lento. ¿Qué pasaría si yo tengo segunda variante? Una lista, pero no ordenada. ¿Tiene",
+        "start": 542.12,
+        "end": 554.4
+    },
+    {
+        "text": " sentido? También, ¿seguiría teniendo en cada nodo el dato del proceso, el dato del",
+        "start": 554.4,
+        "end": 563.16
+    },
+    {
+        "text": " sí y la prioridad? Eso lo voy a tener porque si no, cuando busque el mínimo, no voy a",
+        "start": 563.16,
+        "end": 567.9599999999999
+    },
+    {
+        "text": " salir quienes el malito. El dato de nuevo, acá piensen que tengo dos cosas, ¿no? La prioridad",
+        "start": 567.9599999999999,
+        "end": 573.0799999999999
+    },
+    {
+        "text": " y la información de ese dato. ¿Tamos de acuerdo que mínimo y borrar mínimo serían lenta",
+        "start": 573.0799999999999,
+        "end": 582.88
+    },
+    {
+        "text": " porque tengo que encontrarlo? Insartar podría ser rápido. Sí, porque puedo insertar",
+        "start": 582.88,
+        "end": 589.1999999999999
+    },
+    {
+        "text": " de qué forma. Al inicio. Entonces, ven que lo que una compensa, la otra lo descompensa,",
+        "start": 589.2,
+        "end": 594.44
+    },
+    {
+        "text": " ¿no? Si quiero insertar rápido, una lista ordenada es más rápido que una lista ordenada,",
+        "start": 594.44,
+        "end": 600.36
+    },
+    {
+        "text": " pero las selectoras que serían acá mínimo borrar mínimo al revés. ¿Tabá? Y se les ocurre",
+        "start": 600.36,
+        "end": 606.44
+    },
+    {
+        "text": " como hacer este que no tiene orden. Yo le dijera, ¿sabe qué quiero ejercicio de parcial?",
+        "start": 606.44,
+        "end": 611.5200000000001
+    },
+    {
+        "text": " Estas son las cosas que están pensando, ¿no? Insartar en orden 1 y saber quién es el",
+        "start": 611.52,
+        "end": 616.56
+    },
+    {
+        "text": " mínimo en orden 1. ¿Cómo haría? ¿El caeso al tiene? ¿Por qué una regla? ¿Qué puede",
+        "start": 616.56,
+        "end": 627.04
+    },
+    {
+        "text": " hacer que lleve? ¿Un punteral mínimo. Supongo que yo digo agrego un otro atributo acá que",
+        "start": 627.04,
+        "end": 635.4399999999999
+    },
+    {
+        "text": " sea un punteral mínimo, por ejemplo, el mínimo en este momento es este. Me cuesta actualizar",
+        "start": 635.44,
+        "end": 642.44
+    },
+    {
+        "text": " eso. ¿Quién la va a tener que actualizar quién es el punteral mínimo? ¿Cuándo inserto?",
+        "start": 642.44,
+        "end": 650.0400000000001
+    },
+    {
+        "text": " ¿Qué le preguntarían cuando voy a insertar un dato? ¿No? Si es menor. ¿Está bien? Que",
+        "start": 650.0400000000001,
+        "end": 659.5200000000001
+    },
+    {
+        "text": " el mínimo lo inserto al comienzo y ese pasa a ser el nuevo mínimo. ¿Y si no? Lo inserto",
+        "start": 659.52,
+        "end": 665.4399999999999
+    },
+    {
+        "text": " al comienzo y el mínimo sigue siendo el que estaba. ¿Es unif? ¿Está más de acuerdo? ¿Entonces",
+        "start": 665.4399999999999,
+        "end": 671.84
+    },
+    {
+        "text": " sí? ¿Pues se dio suponiendo que repetidos pueden insertar al comienzo sin chequear. Si",
+        "start": 671.84,
+        "end": 679.0
+    },
+    {
+        "text": " no hubiera posibilidad de prioridades repetidas tendría que chequear que la prioridad no esté.",
+        "start": 679.0,
+        "end": 684.4399999999999
+    },
+    {
+        "text": " Podría que había una precondición que me asegura que esa prioridad no está. Entonces ahí",
+        "start": 684.44,
+        "end": 688.84
+    },
+    {
+        "text": " hay pequeñas variantes que no tiene que considerar la cuerda de la especificación. Es muy normal",
+        "start": 688.84,
+        "end": 693.8800000000001
+    },
+    {
+        "text": " que las prioridades se admitan repetidas, o sea que tenga varios procesos de prioridad",
+        "start": 693.8800000000001,
+        "end": 697.2800000000001
+    },
+    {
+        "text": " 1. Lo más común es el modelo de multiset para la cual hay prioridad. La prioridad se",
+        "start": 697.2800000000001,
+        "end": 703.32
+    },
+    {
+        "text": " repiten. Ojo, no quiere decir que los datos se repiten. Yo por tenernos dos procesos distintos",
+        "start": 703.32,
+        "end": 707.72
+    },
+    {
+        "text": " y ambos de prioridad 1. La prioridad 1 es la que se repite. ¿Ok? Bueno, ahí vimos variantes",
+        "start": 707.72,
+        "end": 714.36
+    },
+    {
+        "text": " de listas, por ejemplo. Pero también una bebé podría ser útil. O sea, sin la representación",
+        "start": 714.36,
+        "end": 727.92
+    },
+    {
+        "text": " en vez de llevar esto, quisimos recién, me llevaron un aruino y un abel, que es una variante",
+        "start": 727.92,
+        "end": 734.8000000000001
+    },
+    {
+        "text": " de la bebé, pero me lo mantiene equilibrado y altura logarismo en el peor caso. Tiene sentido",
+        "start": 734.8000000000001,
+        "end": 742.08
+    },
+    {
+        "text": " no, primera pregunta. ¿Por qué sí? Sí. Y además porque hay un orden natural, de menor",
+        "start": 742.08,
+        "end": 753.32
+    },
+    {
+        "text": " y mayor, entonces puede ser se orden para las prioridades. Bajar el tiempo y buscan. Entonces",
+        "start": 753.32,
+        "end": 758.48
+    },
+    {
+        "text": " uno podría vencer, bueno, acá el cebo, no dito que está, ya vemos el dato, la prioridad",
+        "start": 758.48,
+        "end": 765.44
+    },
+    {
+        "text": " es apenas, y bueno, dos punteros. Y acá tengo el arbol izquierdo, el arbol derecho, y acá",
+        "start": 765.44,
+        "end": 771.96
+    },
+    {
+        "text": " están los que sean menores que la prioridad y mayores que la prioridad. Ahí capaz que",
+        "start": 771.96,
+        "end": 778.1600000000001
+    },
+    {
+        "text": " usted dice en pero el la bebé era para no repetidos. ¿Qué harían con los repetidos? Sí, si",
+        "start": 778.1600000000001,
+        "end": 786.7600000000001
+    },
+    {
+        "text": " la especificación dice que puede repetidos. Un contador donde lo pondría ese contador",
+        "start": 786.7600000000001,
+        "end": 794.08
+    },
+    {
+        "text": " en cada nodo, porque digo este elemento de con esta prioridad está cinco veces. Agregaría",
+        "start": 794.08,
+        "end": 800.48
+    },
+    {
+        "text": " un campo, ¿no? Porque no es un contador global, sino es un contador de cada elemento. Eso",
+        "start": 800.48,
+        "end": 805.32
+    },
+    {
+        "text": " es una opción. La otra es si hay varios de la misma prioridad, pero los datos son distintos,",
+        "start": 805.32,
+        "end": 811.72
+    },
+    {
+        "text": " no sirve el contador. ¿Qué podría?",
+        "start": 811.72,
+        "end": 815.8000000000001
+    },
+    {
+        "text": " Bueno, puedo usar el hermano y dijo, eso es un árbol general y ya se complica un poquito,",
+        "start": 815.8,
+        "end": 825.92
+    },
+    {
+        "text": " pues no tengo orden, pero ¿qué se podría hacer la alternativa? Y una alternativa en el",
+        "start": 825.92,
+        "end": 831.04
+    },
+    {
+        "text": " nodito tiene una segunda estructura, por ejemplo, la lista de todos los que tienen prioridad",
+        "start": 831.04,
+        "end": 836.5999999999999
+    },
+    {
+        "text": " P. Entonces, los que son colapsos, digo los pongo acá, si no es un contador donde todo",
+        "start": 836.5999999999999,
+        "end": 842.1999999999999
+    },
+    {
+        "text": " me da lo mismo y la misma prioridad, entonces si es solamente cinco de esta prioridad,",
+        "start": 842.2,
+        "end": 846.6800000000001
+    },
+    {
+        "text": " los que tengan esa prioridad, puedo pensar que es una segunda estructura, cada nodito",
+        "start": 846.6800000000001,
+        "end": 851.0400000000001
+    },
+    {
+        "text": " lleve una lista, la lista de los que tienen esa prioridad. ¿Se entiende? La otra es flexibilizar",
+        "start": 851.0400000000001,
+        "end": 858.24
+    },
+    {
+        "text": " y decir, no sé, una lista, pero acá uno de estos dos lo flexibilizo, pongo acá los menores",
+        "start": 858.24,
+        "end": 864.1600000000001
+    },
+    {
+        "text": " iguales o acá los mayores iguales. Entonces, mantengo el árbol con esa flexibilidad. ¿Se",
+        "start": 864.16,
+        "end": 872.4399999999999
+    },
+    {
+        "text": " entiende variante que potena? Podría llevar dependiendo de las operaciones que tenga ahí,",
+        "start": 872.4399999999999,
+        "end": 879.0799999999999
+    },
+    {
+        "text": " si mire esas operaciones, ¿para qué me sirve el contador este? Si mire esas, porque",
+        "start": 879.0799999999999,
+        "end": 886.4399999999999
+    },
+    {
+        "text": " capaz que usted cuando la tarea aparecen más operaciones en un tag que es una cola de prioridad",
+        "start": 886.4399999999999,
+        "end": 891.48
+    },
+    {
+        "text": " y uno que es cantidad de, o sea, el elemento se dice y la tiene que poner, pero ahí no está,",
+        "start": 891.48,
+        "end": 896.32
+    },
+    {
+        "text": " no hay ninguna que sea cantidad de algo. Para ver si es vacío, muy bien. Y me hace falta",
+        "start": 896.32,
+        "end": 902.0
+    },
+    {
+        "text": " una lista, me hace falta saber si era vacía un contador, el puntero inicio, null, y acá",
+        "start": 902.0,
+        "end": 909.64
+    },
+    {
+        "text": " la puntero en la raíz de largo, si es null ya está, o sea que si no quiero contar cantidad",
+        "start": 909.64,
+        "end": 916.44
+    },
+    {
+        "text": " de proceso, esto lo puedo emitir. También no lo tomen diciendo, porque en un ejercicio",
+        "start": 916.44,
+        "end": 923.32
+    },
+    {
+        "text": " puse el contador, en todo el ejercicio te lo pones el contador, depende. Uno mire el",
+        "start": 923.32,
+        "end": 927.6
+    },
+    {
+        "text": " contrato y ves si es útil, es necesario, si aporte eficiencia, pero no pongan más información",
+        "start": 927.6,
+        "end": 936.0
+    },
+    {
+        "text": " en ese nodo cabecera, ¿no? ¿Cómo les llamaste, o? Cabezal. Sentine la también se les suele",
+        "start": 936.0,
+        "end": 944.4000000000001
+    },
+    {
+        "text": " decir, de la que precisan, porque después cada método, cada función, cada procedimiento",
+        "start": 944.4,
+        "end": 949.92
+    },
+    {
+        "text": " tiene que actualizarlo, déjalo bien, uno solo que se olviden de sumarle uno al contador,",
+        "start": 949.92,
+        "end": 954.3199999999999
+    },
+    {
+        "text": " lo que sea, ya que queda mal, queda inconsistente. Bien, entonces ¿qué ventaja puede tener esto?",
+        "start": 954.3199999999999,
+        "end": 962.52
+    },
+    {
+        "text": " Los algoritmos van a ser similar, si es menor andad el lado izquierdo, mayor del lado",
+        "start": 962.52,
+        "end": 965.92
+    },
+    {
+        "text": " derecho, ¿no? Dependiendo de la variante, una diría si viene una de prioridad P y ese",
+        "start": 965.92,
+        "end": 969.88
+    },
+    {
+        "text": " nodo ya está, y lleva una listita, bueno, inserto el nodito en esa lista, por ejemplo,",
+        "start": 969.88,
+        "end": 973.92
+    },
+    {
+        "text": " si es menor igual, y es igual, anda para acá, por ejemplo si los flexibilizan de esa",
+        "start": 973.92,
+        "end": 979.12
+    },
+    {
+        "text": " forma, pero el algoritmo es muy similar lo que ya vimos, ¿tabía? La ventaja cual sería,",
+        "start": 979.12,
+        "end": 987.0
+    },
+    {
+        "text": " que uno puede pensar acá donde va a estar el mínimo y el máximo. Claro, estamos de acuerdo",
+        "start": 987.0,
+        "end": 993.36
+    },
+    {
+        "text": " que el mínimo es el que está como más al izquierdo, como lo detecto, porque él no tiene nadie",
+        "start": 993.36,
+        "end": 997.16
+    },
+    {
+        "text": " al lado izquierdo, podría tener alguien del lado derecho, pero sí, siendo el mínimo,",
+        "start": 997.16,
+        "end": 1002.68
+    },
+    {
+        "text": " estamos de acuerdo que está por el camino de izquierdo, de izquierdo, de izquierdo, de izquierdo,",
+        "start": 1002.68,
+        "end": 1005.8
+    },
+    {
+        "text": " que no tiene nadie más al izquierdo, ese es el menor, y lo mismo, dual a eso es el mayor,",
+        "start": 1005.8,
+        "end": 1010.48
+    },
+    {
+        "text": " ¿no? Que podría o no tener algo del otro lado, ¿tabas? Entonces, encontrarlo es recorrer",
+        "start": 1010.48,
+        "end": 1016.56
+    },
+    {
+        "text": " caminos o el camino más a la derecha o el camino más al izquierdo, máximo mínimo, ¿tabía?",
+        "start": 1016.56,
+        "end": 1021.72
+    },
+    {
+        "text": " Y borrarlo también. La ventaja, el algoritmo, si lo pienso balanceado, per caso, si lo pienso",
+        "start": 1021.72,
+        "end": 1029.4
+    },
+    {
+        "text": " un ABB y no una BL, pero medio, per caso N, porque se puede generar esto con una lista, ¿ok?",
+        "start": 1029.4,
+        "end": 1038.3600000000001
+    },
+    {
+        "text": " Y el insertar... Lo haría, entonces uno dice saca la cuenta, ¿no? Una ABB es mejor de una",
+        "start": 1038.3600000000001,
+        "end": 1046.32
+    },
+    {
+        "text": " lista y de una iría para qué, para esto. ¿Cuándo le gana el ABB a la lista?",
+        "start": 1046.32,
+        "end": 1054.32
+    },
+    {
+        "text": " Ganó un balance, son en la lista, ya están regresados del curso, así que véndame el ABB o",
+        "start": 1054.32,
+        "end": 1058.76
+    },
+    {
+        "text": " véndame la lista, convenzame. ¿Cuándo le gregó el insertar o orden?",
+        "start": 1058.76,
+        "end": 1063.3999999999999
+    },
+    {
+        "text": " En la lista también, ¿poye ordenó orden? ¿En lista ordenada?",
+        "start": 1063.3999999999999,
+        "end": 1065.8799999999999
+    },
+    {
+        "text": " Sí, pero por ejemplo, con vida más cortada, más buscar el enlace ordenada y más complico",
+        "start": 1065.8799999999999,
+        "end": 1073.6399999999999
+    },
+    {
+        "text": " que lo que hay en una área de frenada. Si me vende, decime, este es el contrato y yo de",
+        "start": 1074.64,
+        "end": 1080.16
+    },
+    {
+        "text": " estas operaciones te lo hago más rápido, más lento, ocupamos más memoria a memoria, ¿cómo",
+        "start": 1080.16,
+        "end": 1084.0
+    },
+    {
+        "text": " la orientan? No me importa, yo soy el cliente, vendeme que estas operaciones las puedo hacer mejor",
+        "start": 1084.0,
+        "end": 1088.2
+    },
+    {
+        "text": " o peor o más rápido o lo que sea. ¿Cómo la orientan? El cliente no te va a preguntar.",
+        "start": 1088.2,
+        "end": 1093.1200000000001
+    },
+    {
+        "text": " Usas una ABB, un punteir, un contador, que es... Aregla teláteo, ¿vale? Sí.",
+        "start": 1093.1200000000001,
+        "end": 1097.5600000000002
+    },
+    {
+        "text": " Pero no es la misma la cantidad de nodos en una lista y un árbol para tener 100 y ese sinisarse",
+        "start": 1097.56,
+        "end": 1112.48
+    },
+    {
+        "text": " no que tener 100 nodos en la lista y 100 nodos en el árbol. ¿Por qué? ¿Por qué?",
+        "start": 1112.48,
+        "end": 1121.28
+    },
+    {
+        "text": " Porque agrega el comienzo. Entonces, en realidad no es por la cantidad.",
+        "start": 1121.28,
+        "end": 1127.44
+    },
+    {
+        "text": " Es porque le insertar si no tengo un orden lo puedo hacer en orden uno. Entonces,",
+        "start": 1127.8400000000001,
+        "end": 1131.72
+    },
+    {
+        "text": " me hice el cliente, mira, yo quiero cargar las cosas, todo el golpe, vienen todas juntas.",
+        "start": 1131.72,
+        "end": 1135.24
+    },
+    {
+        "text": " Está bien, después le voy seleccionando, pero ahí comienzo, la quiero cargar rápido.",
+        "start": 1135.24,
+        "end": 1137.96
+    },
+    {
+        "text": " Dios, entonces te doy una lista, no ordenada. Porque puede insertar el comienzo sin chequear,",
+        "start": 1137.96,
+        "end": 1143.44
+    },
+    {
+        "text": " no se me rompe el orden, ya está. Ahora el cliente me dice, no, sabe que yo quiero,",
+        "start": 1143.44,
+        "end": 1147.1200000000001
+    },
+    {
+        "text": " tengo tiempo de insertar, de cargar las cosas, pero cuando voy a seleccionar, que es cuando",
+        "start": 1147.1200000000001,
+        "end": 1151.76
+    },
+    {
+        "text": " viene a alguien, quiero ser rápido, cuando un proceso quiere ser atendido, quiero ser rápido.",
+        "start": 1151.76,
+        "end": 1155.8400000000001
+    },
+    {
+        "text": " Entonces, yo, ah, lo mantengo ordenado y tengo mínimo, borrar mínimo en orden uno,",
+        "start": 1155.84,
+        "end": 1160.8799999999999
+    },
+    {
+        "text": " una lista ordenada, el primer nodo tiene esa información. Entonces, yo, ah, ese es tu",
+        "start": 1160.8799999999999,
+        "end": 1165.6799999999998
+    },
+    {
+        "text": " prioridad, una lista ordenada. ¿Sentiendo? Seguro tiene que ver qué es lo que quiere",
+        "start": 1165.6799999999998,
+        "end": 1170.6399999999999
+    },
+    {
+        "text": " priorizar. No solo, obviamente, che admitir repetidos o no, puede haber dos prioridades",
+        "start": 1170.6399999999999,
+        "end": 1176.32
+    },
+    {
+        "text": " iguales con elementos distintos. Bueno, eso lo tiene que preguntar para ver si la variante",
+        "start": 1176.32,
+        "end": 1181.72
+    },
+    {
+        "text": " el contrato con el insertar como set, o el insertar como multiset, cuál de las dos",
+        "start": 1181.72,
+        "end": 1186.68
+    },
+    {
+        "text": " y la que uso. ¿Tabía? Esto es viendo usando cosas que ya vieron,",
+        "start": 1186.68,
+        "end": 1193.2
+    },
+    {
+        "text": " se no hay nada nuevo. Entonces, vamos a ver algo un poquito diferente, ¿no? Una implementación",
+        "start": 1193.2,
+        "end": 1201.32
+    },
+    {
+        "text": " alternativa, esta que no solo se usa para colas de prioridad, pero sí se usa en colas",
+        "start": 1201.32,
+        "end": 1206.2
+    },
+    {
+        "text": " de prioridad, se llama Hip o Montículo binario, ¿qué vamos a ver que tiene buenas propiedades",
+        "start": 1206.2,
+        "end": 1213.04
+    },
+    {
+        "text": " en cuanto a la eficiencia a ver? No, estaba para acá a ver. No, creo que la había puesto.",
+        "start": 1213.04,
+        "end": 1220.44
+    },
+    {
+        "text": " Se la voy a vender primero, para decir, vale, apenas estudiar esto, bueno, yo voy a poder",
+        "start": 1220.44,
+        "end": 1224.1200000000001
+    },
+    {
+        "text": " saber quién es el mínimo en orden uno, voy a poder insertar en orden logaritmo, per",
+        "start": 1224.1200000000001,
+        "end": 1229.4
+    },
+    {
+        "text": " caso, pero promedio uno, y voy a poder borrar el mínimo en orden logaritmo. O sea, si sumo",
+        "start": 1229.4,
+        "end": 1237.0400000000002
+    },
+    {
+        "text": " las tres, una iría en el balance de las tres que son las constructores, las dos selectores,",
+        "start": 1237.0400000000002,
+        "end": 1242.16
+    },
+    {
+        "text": " una iría mejor que todas las anteriores, pues todas las otras, al menos una era ordenene,",
+        "start": 1242.16,
+        "end": 1247.64
+    },
+    {
+        "text": " y acá no hay ninguna ahora en el app, pero que puede ser es logarimos por caso, logarimos",
+        "start": 1247.64,
+        "end": 1251.5600000000002
+    },
+    {
+        "text": " de un millones 20, una iría, ah, tenés un millón 20, no digo que es orden uno, pero",
+        "start": 1251.5600000000002,
+        "end": 1256.44
+    },
+    {
+        "text": " es muy rápido. Entonces, una dice bueno, parece que puedan dar bien, ¿ok? ¿Qué es un",
+        "start": 1256.44,
+        "end": 1267.0800000000002
+    },
+    {
+        "text": " montículo, un hip, es un árbol balanceado, y acá todas empiezan a temblar, ¿no? Puedes",
+        "start": 1267.0800000000002,
+        "end": 1272.52
+    },
+    {
+        "text": " un árbol balanceado mucho más simple que la VL, también, y vamos a ver qué es más simple",
+        "start": 1272.52,
+        "end": 1279.44
+    },
+    {
+        "text": " incluso, porque no necesito usar punteros, lo pueda almacenar en un arreglo. Entonces,",
+        "start": 1279.44,
+        "end": 1286.44
+    },
+    {
+        "text": " vamos a ver que los algoritmos, eso es curioso, porque ahora dice cómo que un árbol balanceado",
+        "start": 1286.44,
+        "end": 1291.6000000000001
+    },
+    {
+        "text": " va a tener un arreglo, ¿no? Al igual que los ABL, hay dos propiedades que tienen estos árboles",
+        "start": 1291.6000000000001,
+        "end": 1298.2
+    },
+    {
+        "text": " balanceado, una es una propia de orden, y otra es la propia estructura, ¿cuál es la",
+        "start": 1298.2,
+        "end": 1301.88
+    },
+    {
+        "text": " propia de orden en los ABL? Para cada nodo, cuál es la propia de orden? Todo lo deligiero",
+        "start": 1301.88,
+        "end": 1311.3600000000001
+    },
+    {
+        "text": " son menores y todo lo derecho son mayores, y si flexibilizo, uno del dos, igual, más",
+        "start": 1311.3600000000001,
+        "end": 1316.3200000000002
+    },
+    {
+        "text": " o igual, menor igual. La propia estructura, ¿cuál es la estructura? El ABL no tenía",
+        "start": 1316.3200000000002,
+        "end": 1320.92
+    },
+    {
+        "text": " una propia estructura, pero el ABL sí. Para cada nodo, la diferencia entre niveles de",
+        "start": 1320.92,
+        "end": 1327.7600000000002
+    },
+    {
+        "text": " los árboles puede diferir al osumo en una unidad, o son iguales o más o menos una.",
+        "start": 1327.76,
+        "end": 1334.76
+    },
+    {
+        "text": " Ok? Acá la propiedad va a ser una propia de la estructura y también una propia de",
+        "start": 1334.76,
+        "end": 1340.36
+    },
+    {
+        "text": " orden, pero diferente, una iría un poquito más flexible, porque pensem en el orden,",
+        "start": 1340.36,
+        "end": 1345.52
+    },
+    {
+        "text": " yo no quiero un orden total, no necesito ordenar todos los elementos para buscar, porque",
+        "start": 1345.52,
+        "end": 1350.54
+    },
+    {
+        "text": " cada vez que voy a buscar, siempre hay que buscar en una cola de prioridad, el mínimo.",
+        "start": 1350.54,
+        "end": 1355.28
+    },
+    {
+        "text": " La verdad es que voy a buscar en el elemento arbitrario, entonces mi prioridad es encontrar",
+        "start": 1355.84,
+        "end": 1360.32
+    },
+    {
+        "text": " el mínimo rápido, voy a buscar una propia de orden que sea más fácil, más flexible,",
+        "start": 1360.32,
+        "end": 1365.0
+    },
+    {
+        "text": " que la que vimos en el ABL, que me permite encontrar el mínimo rápido, por eso le dice que no es",
+        "start": 1365.0,
+        "end": 1370.6
+    },
+    {
+        "text": " un orden total entre los elementos, no voy a ordenar todos los elementos y este menor,",
+        "start": 1370.6,
+        "end": 1375.92
+    },
+    {
+        "text": " este mayor, sino va a ser un orden parcial. Vamos primero a la propia de la estructura,",
+        "start": 1375.92,
+        "end": 1382.2
+    },
+    {
+        "text": " antes de la de orden. La propiedad de estructura dice que un hip, lo que vamos a dar un hip, es",
+        "start": 1382.2,
+        "end": 1388.3600000000001
+    },
+    {
+        "text": " un árbol binario completamente lleno, excepto posiblemente el último nivel, que se llena",
+        "start": 1388.3600000000001,
+        "end": 1394.32
+    },
+    {
+        "text": " a izquierda de derecha, no se va cargando de izquierda de derecha, sino que mira graficamente",
+        "start": 1394.32,
+        "end": 1399.0
+    },
+    {
+        "text": " no diría es un árbol completito, completito y si vas agregando elementos se van agregando",
+        "start": 1399.0,
+        "end": 1404.76
+    },
+    {
+        "text": " de izquierda de derecha, hasta llena de la este nivel, después empiecen el otro nivel y así,",
+        "start": 1404.76,
+        "end": 1409.96
+    },
+    {
+        "text": " como que se van llegando a izquierda de derecha un nivel, vamos a izquierda de derecha al siguiente",
+        "start": 1409.96,
+        "end": 1413.64
+    },
+    {
+        "text": " nivel, un árbol completo, todos los nodos presentes en todos los niveles anterior a la altura,",
+        "start": 1413.64,
+        "end": 1422.8
+    },
+    {
+        "text": " en el nivel de la altura si falta algún nodo está a la derecha del último que puse, al izquierda no",
+        "start": 1422.8,
+        "end": 1429.44
+    },
+    {
+        "text": " puede faltar, se entiende? Ya lo vimos este análisis cuando vimos el ABL, cual era la altura de un árbol",
+        "start": 1429.44,
+        "end": 1438.4
+    },
+    {
+        "text": " completito, completito y resultaba que si contaba el nodo era la sumatoria de los dos alaí y",
+        "start": 1438.4,
+        "end": 1444.2800000000002
+    },
+    {
+        "text": " entonces despejaba la altura y me quedaba a logaritmo, es la misma cuenta que para esto, es fácil",
+        "start": 1444.2800000000002,
+        "end": 1448.0400000000002
+    },
+    {
+        "text": " de ver que si yo respeto esa estructura y recorro un camino ese árbol al osumo me toca el peor",
+        "start": 1448.0400000000002,
+        "end": 1456.52
+    },
+    {
+        "text": " que tiene altura logarita, entonces eso es buena, segunda característica, esa propiedad me permite",
+        "start": 1456.52,
+        "end": 1466.5600000000002
+    },
+    {
+        "text": " almacenar un árbol como puede ser ese que estoy dibujando acá, es una regla, como codifico este",
+        "start": 1466.56,
+        "end": 1474.1799999999998
+    },
+    {
+        "text": " árbol, fíjese primero, el dibujito, tan de acuerdo que hasta el nivel anterior a la altura,",
+        "start": 1474.1799999999998,
+        "end": 1478.6799999999998
+    },
+    {
+        "text": " sea todo esto, está completo y el último nivel que sería este, están los dos y este, incluso que le",
+        "start": 1478.6799999999998,
+        "end": 1488.6
+    },
+    {
+        "text": " falta uno, hasta el del izquierda que falta es de la derecha, eso quiere decir que es un árbol",
+        "start": 1488.6,
+        "end": 1493.28
+    },
+    {
+        "text": " completo, cómo lo cargo en una regla, bueno el algoritmo sería fácil diciendo la raíz va en la",
+        "start": 1493.84,
+        "end": 1502.7
+    },
+    {
+        "text": " posición uno y para cada nodo ahora el hijo izquierdo está en la posición 2 por I y el hijo",
+        "start": 1502.7,
+        "end": 1511.92
+    },
+    {
+        "text": " derecho en la posición 2 por I más 1 si el nodo está en la posición I, es decir, a está en",
+        "start": 1511.92,
+        "end": 1518.56
+    },
+    {
+        "text": " la posición 1, que la raíz, entonces el hijo izquierdo de A si está que lo veo en el dibujito",
+        "start": 1518.56,
+        "end": 1524.8
+    },
+    {
+        "text": " de arriba y tiene un hijo izquierdo que es B está en la posición 2 por I, 2 está acá,",
+        "start": 1524.8,
+        "end": 1528.8799999999999
+    },
+    {
+        "text": " está bien y el hijo derecho de A está en la posición 2 por I más 1, o sea la posición 3,",
+        "start": 1528.8799999999999,
+        "end": 1536.6799999999998
+    },
+    {
+        "text": " si miro la B y uso esa reglita, el hijo derecho en qué posición estaría, el hijo izquierdo para",
+        "start": 1538.6799999999998,
+        "end": 1546.56
+    },
+    {
+        "text": " si la B está en la posición 2 el hijo izquierdo debería estar en la posición 2 por 2,",
+        "start": 1547.56,
+        "end": 1552.6
+    },
+    {
+        "text": " bueno está en la posición 4 que es la D, B tiene a la izquierda el D y el hijo derecho en la",
+        "start": 1552.6,
+        "end": 1561.32
+    },
+    {
+        "text": " posición 2 por 2 más 1, o sea que está acá a la E, se entiende, siguiendo esa regla es",
+        "start": 1561.32,
+        "end": 1568.6799999999998
+    },
+    {
+        "text": " fácil visualizar que la regla se va cargando sin ningún hueco hasta llegar al último, o sea que",
+        "start": 1568.6799999999998,
+        "end": 1574.8
+    },
+    {
+        "text": " lo pudo ver como una regla con tope, el tope me dice hasta donde cargue, en este caso hasta la",
+        "start": 1574.8,
+        "end": 1580.8
+    },
+    {
+        "text": " jota o sea hasta la posición 10, fíjense que por ejemplo E, donde está E en el arreglo, en la",
+        "start": 1580.8,
+        "end": 1588.84
+    },
+    {
+        "text": " posición 5, entonces el hijo izquierdo si tuviera en qué posición tiene que estar, 2 por 5",
+        "start": 1588.84,
+        "end": 1596.6
+    },
+    {
+        "text": " 10, entonces viro E, tiene un hijo sí, la posición 10 porque el tope y está la jota bien porque E",
+        "start": 1597.32,
+        "end": 1605.12
+    },
+    {
+        "text": " tiene como hijo izquierdo la jota y en hijo derecho si lo tuviera debería estar en la posición 2 por",
+        "start": 1605.12,
+        "end": 1610.84
+    },
+    {
+        "text": " 5 más 1, o sea 11, de acuerdo, pero como 11 ya es mayor que el tope no está, no existe todavía",
+        "start": 1610.84,
+        "end": 1622.3999999999999
+    },
+    {
+        "text": " no lo cargue a ese, no tiene un hijo derecho, entonces como o sea si tiene no no tiene si está en el",
+        "start": 1622.4,
+        "end": 1627.44
+    },
+    {
+        "text": " rango entre un y tope, ¿sí? ¿Me entiendan hasta acá? No hice nada raro, simplemente le estoy diciendo",
+        "start": 1627.44,
+        "end": 1636.48
+    },
+    {
+        "text": " como paso este dibujito a este arregla, entonces cada elemento empiezo por la raíz y voy poniendo",
+        "start": 1636.48,
+        "end": 1644.0800000000002
+    },
+    {
+        "text": " los hijos en la posición 2 por el izquierdo y 2 por más 1 en derecho, entonces 2 por 1, 2 por 2",
+        "start": 1644.0800000000002,
+        "end": 1652.0
+    },
+    {
+        "text": " más 1 y el c, donde pongo el hijo izquierdo 2 por 3 es 6 y el hijo derecho más 1, no lo",
+        "start": 1652.0,
+        "end": 1659.54
+    },
+    {
+        "text": " fíjense que la c tiene como hijos el F, el g y miro acá y es cierto, también, F tiene",
+        "start": 1659.54,
+        "end": 1667.76
+    },
+    {
+        "text": " hijo izquierdo, tiene hijo derecho uno diría no, acá no de cuenta que no y cómo lo detectó acá",
+        "start": 1667.76,
+        "end": 1671.84
+    },
+    {
+        "text": " porque la F está en qué posición, 6, 2 por 6, quiere decir que el hijo izquierdo si tuviera",
+        "start": 1673.56,
+        "end": 1680.28
+    },
+    {
+        "text": " también la opción 12 y el hijo derecho en la opción 12 más 1 13, pero 2 y 13 son mayores",
+        "start": 1680.28,
+        "end": 1685.68
+    },
+    {
+        "text": " que el tope, entonces no están, ¿ok? Sí, bien, yo diría que es un árbol doble encadenado porque",
+        "start": 1685.68,
+        "end": 1697.36
+    },
+    {
+        "text": " de un padre podría al hijo como voy, si el padre está en la opción y como voy al hijo izquierdo",
+        "start": 1697.36,
+        "end": 1702.72
+    },
+    {
+        "text": " 2 por y y si quiere el hijo derecho, ¿dónde voy? Si el padre está en la opción y 2 por y más 1,",
+        "start": 1703.72,
+        "end": 1711.1200000000001
+    },
+    {
+        "text": " ahora si estoy en un hijo y quiero ir al padre, navegar al revés, ¿no? Por eso digo doble encadenado,",
+        "start": 1711.1200000000001,
+        "end": 1715.96
+    },
+    {
+        "text": " digo estoy en el E que es la opción 5, ¿cómo encontraría el padre? El inverso, ¿sí?",
+        "start": 1715.96,
+        "end": 1725.56
+    },
+    {
+        "text": " Y el inverso es dividir entre 2, o la división la parte entera baja, entonces cuando 7 lo",
+        "start": 1725.56,
+        "end": 1734.48
+    },
+    {
+        "text": " dio entre 2, me atrez, saí de 2, me atrez, también el 5,5 en el caso del imparlo de escarto,",
+        "start": 1734.48,
+        "end": 1741.04
+    },
+    {
+        "text": " exactamente, entonces yo digo de un hijo poder un padre en vez de multiplicando, dividiendo por 2,",
+        "start": 1741.04,
+        "end": 1747.1599999999999
+    },
+    {
+        "text": " quedándome siempre con la parte entera, entonces digo, ¿de y es cuál es el padre? Bueno, el padre",
+        "start": 1747.1599999999999,
+        "end": 1753.48
+    },
+    {
+        "text": " de D, si está en la opción 4, es 4 y 2, ese es el padre y del E que está en la opción 5, 5 y",
+        "start": 1753.48,
+        "end": 1760.2
+    },
+    {
+        "text": " 2, también es 2, 2 con algo, pero 2, entonces el hijo, el padre de D también es B, fíjense que",
+        "start": 1760.2,
+        "end": 1767.96
+    },
+    {
+        "text": " de y tiene como padre el B y por qué digo eso, porque en los algoritmos que vamos a ver ahora,",
+        "start": 1767.96,
+        "end": 1774.52
+    },
+    {
+        "text": " me va a interesar a veces subir y bajar, es que entonces por eso digo es como si fuera doble encadenado,",
+        "start": 1774.52,
+        "end": 1779.28
+    },
+    {
+        "text": " yo pude de un padre un hijo o de un hijo un padre, siempre con cuidado porque si voy para abajo,",
+        "start": 1779.28,
+        "end": 1786.3999999999999
+    },
+    {
+        "text": " que tengo que chequear, cuando voy calculando 2 por I o 2 por I más 1 para ir bajando,",
+        "start": 1787.52,
+        "end": 1792.04
+    },
+    {
+        "text": " que no sea mayor que el tope porque no existe y si fuera para arriba dividiendo por 2,",
+        "start": 1793.24,
+        "end": 1798.36
+    },
+    {
+        "text": " hasta cuando pude dividiendo por 2, hasta 1 porque ya, si no después, entonces tengo que el",
+        "start": 1798.36,
+        "end": 1805.68
+    },
+    {
+        "text": " otro freno, es la raíz de la posición 1, prefija, es la posición 1, unirá por qué no",
+        "start": 1805.68,
+        "end": 1810.76
+    },
+    {
+        "text": " usar la opción 0 de la regla, la respuesta es, ¿eh? y por qué es neutro,",
+        "start": 1810.76,
+        "end": 1819.2
+    },
+    {
+        "text": " esa, entonces me arrompe la regla de 2 por I, el hijo izquierdo sería 2 por 0, es 0,",
+        "start": 1821.2,
+        "end": 1827.6000000000001
+    },
+    {
+        "text": " o sea como que el padre el hijo tiene que temeimo el lugar, entonces dejo libre la opción 0,",
+        "start": 1827.6000000000001,
+        "end": 1832.72
+    },
+    {
+        "text": " como determina, a que me pregunta, como determino la cantidad de regla, bueno, yo puedo estimar",
+        "start": 1836.68,
+        "end": 1842.76
+    },
+    {
+        "text": " de nuevo el modelo acotado, de cual la prioridad acotada, cuántos elementos voy a tener y ese es el",
+        "start": 1842.76,
+        "end": 1848.88
+    },
+    {
+        "text": " tamaño de la regla, un dice cada tanto que puedo hacer, re-imensionar la regla como el hash,",
+        "start": 1848.88,
+        "end": 1853.92
+    },
+    {
+        "text": " cuando se me lleno, multiplico por 2 por ejemplo y y lo tengo ahí, ¿eh?",
+        "start": 1853.92,
+        "end": 1861.04
+    },
+    {
+        "text": " y bueno, también esto lo puede amacer una lista, pero es mucho más, digo, eficiente si lo tengo",
+        "start": 1862.04,
+        "end": 1867.1599999999999
+    },
+    {
+        "text": " y simple lo saigan y vamos y lo tengo en la regla, ok, se entendió la propiedad de estructura,",
+        "start": 1867.1599999999999,
+        "end": 1872.8
+    },
+    {
+        "text": " bueno, la segunda, eso te explica acá, no 2 por I, 2 por I más 1 y 2, es lo que le explique,",
+        "start": 1872.8,
+        "end": 1878.84
+    },
+    {
+        "text": " y después de la panavirorafía pero esto es, está en una sección de capítulo y",
+        "start": 1878.84,
+        "end": 1884.26
+    },
+    {
+        "text": " si alguien lo quiere ampliar, capítulo 6, la otra propiedad, la propiedad de orden,",
+        "start": 1884.26,
+        "end": 1890.58
+    },
+    {
+        "text": " también la propiedad de orden me hice básicamente que para cada nodo X, de ese árbol, completo,",
+        "start": 1890.58,
+        "end": 1896.62
+    },
+    {
+        "text": " la clave del padre es menor, también que la clave en X, o sea que el padre tiene prioridad",
+        "start": 1896.62,
+        "end": 1910.02
+    },
+    {
+        "text": " menor que los hijos y si lo pienso en un múltiid set menor igual, ¿verdad? que para cada nodo",
+        "start": 1910.02,
+        "end": 1918.18
+    },
+    {
+        "text": " la prioridad del padre es menor igual que entre ellos y acá se diferencia con el ABB, porque",
+        "start": 1918.18,
+        "end": 1924.1399999999999
+    },
+    {
+        "text": " yo en la ABB decía, menor es de este lado y mayor es de este lado, no se mezclen y acá lo que",
+        "start": 1924.1399999999999,
+        "end": 1928.62
+    },
+    {
+        "text": " me interesa es decir que este es menor que cualquiera de ellos, entre ellos me importa aquí",
+        "start": 1928.62,
+        "end": 1933.54
+    },
+    {
+        "text": " eso es mayor aquí y el otro, pero ambos tienen que ser menor y o sea mayor igual que el que",
+        "start": 1933.54,
+        "end": 1939.62
+    },
+    {
+        "text": " ponga como raíz, como nodo padre, ¿verdad? por eso digo que no es un orden total, ¿verdad?",
+        "start": 1939.62,
+        "end": 1947.3
+    },
+    {
+        "text": " para simplificar, este es un, primero miremos que este dibujito cumple la propiedad de la estructura",
+        "start": 1949.5,
+        "end": 1957.86
+    },
+    {
+        "text": " porque están hasta este nivel todo llenos y el último nivel se llena de izquierda derecha,",
+        "start": 1957.86,
+        "end": 1962.7
+    },
+    {
+        "text": " no hay huecos y cumple la propiedad de orden, ¿verdad? porque una diría porque, bueno no lo voy a decir",
+        "start": 1962.7,
+        "end": 1971.46
+    },
+    {
+        "text": " porque, primero veamos por qué este no la cumple, haces en cuenta ustedes, ¿no? este también cumple la",
+        "start": 1971.46,
+        "end": 1976.78
+    },
+    {
+        "text": " propiedad de la estructura, pero no cumple la propiedad de orden, ¿verdad? ¿quién es el que la",
+        "start": 1976.78,
+        "end": 1983.46
+    },
+    {
+        "text": " está violando acá y por qué la está violando? voy a hablaste mucho, él, el 6 por qué no cumple?",
+        "start": 1983.46,
+        "end": 1992.22
+    },
+    {
+        "text": " que el padre como es, era la relación entre hijo padre acá, entre hermanos no le importa como son",
+        "start": 1997.74,
+        "end": 2004.46
+    },
+    {
+        "text": " pero es entre hijo padre, ¿qué tiene que ser el padre?",
+        "start": 2004.46,
+        "end": 2006.58
+    },
+    {
+        "text": " menor y si lo pienso en un dc, menor igual, entonces digo el 21 no es menor igual que el 6,",
+        "start": 2006.58,
+        "end": 2017.06
+    },
+    {
+        "text": " el resto sí cumple, ¿no? porque un dc, el 16 es menor igual que el 19, es 68, el 13 o el 21,",
+        "start": 2017.06,
+        "end": 2026.1
+    },
+    {
+        "text": " ¿tabía en este caso el 13 es menor igual que el 21 y el 16, el peor que está violando la propiedad",
+        "start": 2026.1,
+        "end": 2031.4199999999998
+    },
+    {
+        "text": " de este 6, ¿ok? sí, frente a la propiedad de orden, obviamente sumo las 2, ¿no? el hip",
+        "start": 2031.42,
+        "end": 2040.98
+    },
+    {
+        "text": " pasar las 2 cosas juntas, entonces interesa por ejemplo un hip que es esto, ¿ok? bueno a",
+        "start": 2040.98,
+        "end": 2047.48
+    },
+    {
+        "text": " bar, algo orimo fácil, ¿no? piensen que esto además es un arreglo, ¿no? ese dibujito es implemento",
+        "start": 2047.48,
+        "end": 2056.86
+    },
+    {
+        "text": " en código es un arreglo, cuando voy de un nodo a sus hijos voy dos por ídos por imas uno,",
+        "start": 2056.86,
+        "end": 2062.9
+    },
+    {
+        "text": " si estoy en la posición y del arreglo y cuando vuelvo a revés divido por 2, ¿no? pero",
+        "start": 2062.9,
+        "end": 2067.86
+    },
+    {
+        "text": " yo voy a trabajar con estos dibujitos pero recuerden que hay una traducción directa a este arreglo",
+        "start": 2067.86,
+        "end": 2072.6200000000003
+    },
+    {
+        "text": " hasta un top, una raí con top, ¿ok? ¿qué olorimos tenía la correde prioridad? el vacío,",
+        "start": 2072.6200000000003,
+        "end": 2083.42
+    },
+    {
+        "text": " ¿cómo construyerían? entonces un árbol vacío, top y o al ser, o menos uno, depende como lo",
+        "start": 2084.3,
+        "end": 2092.44
+    },
+    {
+        "text": " quiera y le decía pero hay comienzo, ¿no? general arreglo en el crear, pues de nebasura obviamente,",
+        "start": 2092.44,
+        "end": 2098.02
+    },
+    {
+        "text": " pero top y lo pongo hay comienzo, ¿cómo se quienes el mínimo?",
+        "start": 2098.02,
+        "end": 2102.42
+    },
+    {
+        "text": " arreglo de posion 1, no hay duda, el arreglo de posion 1 hay que tiene machiquito,",
+        "start": 2102.42,
+        "end": 2115.34
+    },
+    {
+        "text": " ¿no? el mínimo es la raíz de este árbol, ¿te me acuerdo? y la raíz del árbol,",
+        "start": 2115.34,
+        "end": 2119.14
+    },
+    {
+        "text": " siempre la pongo la posion 1, entonces eso no hay duda, por eso que no me importa,",
+        "start": 2119.14,
+        "end": 2125.98
+    },
+    {
+        "text": " siente los hermanos, están los menores acá, los mayores, eso es entre ellos,",
+        "start": 2125.98,
+        "end": 2129.26
+    },
+    {
+        "text": " hay mi importe el padre, pues yo siempre busco el mínimo y el mínimo quiero que esté accesible,",
+        "start": 2129.26,
+        "end": 2133.26
+    },
+    {
+        "text": " fácil arreglo, ¿no? entonces ¿qué me está quedando como algoritmos interesantes? ¿cómo obtener",
+        "start": 2133.26,
+        "end": 2140.1400000000003
+    },
+    {
+        "text": " el mínimo no es fácil? ¿cómo inserto, como agrego, algo enemigo y ¿qué más? ¿y cómo?",
+        "start": 2140.1400000000003,
+        "end": 2146.6200000000003
+    },
+    {
+        "text": " o como borro, ¿tabía en particular el borrado que tengo cuál es el borrado de quien? del mínimo,",
+        "start": 2148.6200000000003,
+        "end": 2155.38
+    },
+    {
+        "text": " ¿cómo inserto y borrar el mínimo pasa a ser las dos algoritmos interesantes acá?",
+        "start": 2155.38,
+        "end": 2160.5
+    },
+    {
+        "text": " bien, entonces como le decía este es el capítulo 6, vamos a ver, entonces las operaciones que",
+        "start": 2164.34,
+        "end": 2173.94
+    },
+    {
+        "text": " es vacío es el otro predicado, pero es chequear si el top es 0 o top es 1, depende como",
+        "start": 2173.94,
+        "end": 2178.94
+    },
+    {
+        "text": " lo inicialice, las que me queda muy interesantes son estas dos, insertar y borrar el mínimo,",
+        "start": 2178.94,
+        "end": 2183.1
+    },
+    {
+        "text": " porque mínimo es el arrego en la opción 1, entonces ahí tal resumen, ¿no?",
+        "start": 2183.1,
+        "end": 2189.98
+    },
+    {
+        "text": " suponganse, vamos a empezar por la inserción, ¿tabía? yo tenía este arbolito que está acá,",
+        "start": 2189.98,
+        "end": 2198.3399999999997
+    },
+    {
+        "text": " que hasta el 32 estaba todo cargado, ¿acuerdo? si me dicen que van a insertar uno más,",
+        "start": 2198.3399999999997,
+        "end": 2206.38
+    },
+    {
+        "text": " como los algoritmos que modifican son los que mantienen las propiedades esa, yo sé que",
+        "start": 2206.38,
+        "end": 2212.22
+    },
+    {
+        "text": " estructuralmente estamos de acuerdo tendría que haber un nodo acá, después me tengo que",
+        "start": 2212.22,
+        "end": 2217.7
+    },
+    {
+        "text": " arreglar quien va ahí, pero estructuralmente vas a agregar uno más, tiene que estar todos los",
+        "start": 2217.7,
+        "end": 2222.3399999999997
+    },
+    {
+        "text": " niveles de arriba y había tres abajo, un cuarto y el cuarto tiene que ser el derecho de este nodo,",
+        "start": 2222.3399999999997,
+        "end": 2228.8199999999997
+    },
+    {
+        "text": " estamos de acuerdo, es como que digo se genera una burbuja, la no me voy a decir y siendo quién me",
+        "start": 2228.8199999999997,
+        "end": 2234.58
+    },
+    {
+        "text": " to acá, bueno suponganse yo quiero insertar como dice acá el 14, cuando he ido 14 me estoy",
+        "start": 2234.58,
+        "end": 2240.7799999999997
+    },
+    {
+        "text": " refiriendo la prioridad, no el dato, el dato puede ser cualquier cosa, yo estoy hablando de las",
+        "start": 2240.78,
+        "end": 2244.26
+    },
+    {
+        "text": " prioridades acá, ¿cabía? algo que tenga prioridad 14 y recuerda que la máxima prioridad cuando yo digo",
+        "start": 2244.26,
+        "end": 2251.0600000000004
+    },
+    {
+        "text": " el mínimo es el numerito machiquito, ¿qué sería el ideal? es para primero ¿qué quiere decir esto",
+        "start": 2251.0600000000004,
+        "end": 2257.7000000000003
+    },
+    {
+        "text": " de generar la burbuja acá abajo? pensando en la implementación que es una regla con tope ¿no?",
+        "start": 2257.7000000000003,
+        "end": 2263.1400000000003
+    },
+    {
+        "text": " no la memoria no la pido, esto es tope más uno, corre el tope en lugar, la regla está tope",
+        "start": 2263.7,
+        "end": 2272.2599999999998
+    },
+    {
+        "text": " dedido cuando crees, si me quedé chico en el tamaño lo tengo que restructurar, pero no es que",
+        "start": 2272.2599999999998,
+        "end": 2276.2999999999997
+    },
+    {
+        "text": " pido me, no es como una lista, voy pidiendo nodos, el crear es el que pide el espacio para todo",
+        "start": 2276.2999999999997,
+        "end": 2281.22
+    },
+    {
+        "text": " la regla de acuerdo al tamaño que se estimo para meterlo y crear, ¿ok? entonces crear este hueco",
+        "start": 2281.22,
+        "end": 2289.9
+    },
+    {
+        "text": " en palabras, pre encódigo es sumarle una tope como decía el compañero ahí, ¿qué puede pasar?",
+        "start": 2289.9,
+        "end": 2298.38
+    },
+    {
+        "text": " bueno, lo ideal sería que decido el 14 si encaja justo en esta posición que es el tope corrido",
+        "start": 2298.38,
+        "end": 2305.14
+    },
+    {
+        "text": " si la regla en esa posición encaja ya está y como se se encaja, ahora me pienso en la segunda",
+        "start": 2305.14,
+        "end": 2311.86
+    },
+    {
+        "text": " propia, la propia del orden, ¿cómo que número podría encajar acá sin problemas? ¿cómo le",
+        "start": 2311.86,
+        "end": 2319.7000000000003
+    },
+    {
+        "text": " chequearían? es cierto, mayor igual que el padre, 31 o un número mayor que 31, lo meto ahí y se",
+        "start": 2319.7000000000003,
+        "end": 2328.06
+    },
+    {
+        "text": " acabó la insarsión, ¿por qué no se falta que cheque el resto? yo asumo que ya es un hip,",
+        "start": 2328.06,
+        "end": 2337.42
+    },
+    {
+        "text": " ya tiene las dos propiedades previo a la insarsión, entonces siempre los algoritmos que sean que",
+        "start": 2337.94,
+        "end": 2343.26
+    },
+    {
+        "text": " mantener estructuras que tienen propiedades, asumen que las propiedades valen, hacen lo que tengan que",
+        "start": 2343.26,
+        "end": 2349.34
+    },
+    {
+        "text": " hacer, insertar, borrar y la tienen que restaurar, entonces se mantiene invariante todo algoritmo que",
+        "start": 2349.34,
+        "end": 2354.98
+    },
+    {
+        "text": " modifica la estructura, arranca de un vacío, va agregando, va agregando, va borrando, pero si cada",
+        "start": 2354.98,
+        "end": 2360.1800000000003
+    },
+    {
+        "text": " uno lo mantiene, en cada momento lo que tengo ahí es un hip, o sea algo que cumplir",
+        "start": 2360.18,
+        "end": 2365.98
+    },
+    {
+        "text": " las dos propiedades, ¿entiendes? entonces si fuera un número el x y q insertar, el parametrile",
+        "start": 2365.98,
+        "end": 2372.62
+    },
+    {
+        "text": " insertar que es mayor igual que el 31, lo pongo ahí y se acabó, pero el 14 no es mayor igual que",
+        "start": 2372.62,
+        "end": 2378.2599999999998
+    },
+    {
+        "text": " el 31, entonces que puedo hacer y bueno, diciendo lo que se suele dar a un filtrado ascendente, es como",
+        "start": 2378.2599999999998,
+        "end": 2385.74
+    },
+    {
+        "text": " diciendo esta incógnita no se puede llenar con el 14, entonces que hago bajo el padre, acá y es",
+        "start": 2385.74,
+        "end": 2393.58
+    },
+    {
+        "text": " como que suba la incógnita para ría, sino tiene que ir más a ría porque es menor,",
+        "start": 2393.58,
+        "end": 2397.2999999999997
+    },
+    {
+        "text": " quiere decir poner el padre acá, incódio, es como un swap, ¿no? lo que estaba, si esta es la",
+        "start": 2398.8199999999997,
+        "end": 2407.4599999999996
+    },
+    {
+        "text": " posición y, que era lo que estaba acá antes, que era el 31, ¿qué posición es? y y y y y y y y y y y y y y y y y y y y y y y y y y y,",
+        "start": 2407.46,
+        "end": 2416.34
+    },
+    {
+        "text": " ¿no? entonces lo que estaba en la posición y y y y y ahora lo paso a la posición y y y y y y y, acá,",
+        "start": 2416.34,
+        "end": 2423.3
+    },
+    {
+        "text": " porque mi incógnita pasa hacer ahora acá y vuelvo a preguntarme, esto es una iteración, 14, encaja acá,",
+        "start": 2423.3,
+        "end": 2430.42
+    },
+    {
+        "text": " ahora, y para ver qué encaja que tengo que mirar el padre y el padre de nuevo la posición y y y y y y",
+        "start": 2430.42,
+        "end": 2437.2200000000003
+    },
+    {
+        "text": " y y y 2, yo digo si 14 fuera mayor igual que 21, todo bien, lo dejo ahí y se acabó, ¿cómo no lo es?",
+        "start": 2437.22,
+        "end": 2444.3199999999997
+    },
+    {
+        "text": " de nuevo, mire o que lo quede en la posición de y y 2 y lo paso para abajo el 21 y es como que ahora",
+        "start": 2447.3799999999997,
+        "end": 2453.8999999999996
+    },
+    {
+        "text": " ahí pasa estar acá. ¿Está bien? 14 es mayor igual que el 13, entonces meto el 14 ahí y freno el",
+        "start": 2453.9,
+        "end": 2466.7400000000002
+    },
+    {
+        "text": " algoritmo. Una vez que el inserté se acabó. Como siempre fui manteniendo la estructura con ese",
+        "start": 2466.7400000000002,
+        "end": 2472.62
+    },
+    {
+        "text": " nodito extra, ¿qué es lo peor que le puede pasar? ¿Qué sea menor que el 13? Supongo que",
+        "start": 2472.62,
+        "end": 2480.34
+    },
+    {
+        "text": " hubiera encertado el 12 o el 11. ¿Qué hubiera pasado? El 13 hubiera bajado y el 11 o el 12 que",
+        "start": 2480.34,
+        "end": 2487.34
+    },
+    {
+        "text": " estoy diciendo sería la nueva raíz. Eso es lo peor que puede pasar, que llegue hasta la raíz.",
+        "start": 2487.34,
+        "end": 2492.78
+    },
+    {
+        "text": " A ver, intuition es más probable que llega la raíz o más probable que se quede por abajo.",
+        "start": 2496.78,
+        "end": 2503.26
+    },
+    {
+        "text": " ¿Por qué? Bien, bien. Es más, si uno dijera, ¿no? Acá si miran acá y siete nodos, ¿no?",
+        "start": 2503.26,
+        "end": 2518.38
+    },
+    {
+        "text": " Hasta ahí. Si lleno el nivel de abajo, llenar este nivel, ¿cuánto no dos habría?",
+        "start": 2518.38,
+        "end": 2523.26
+    },
+    {
+        "text": " O sea, 8. En un árbol completo, siempre, en un nivel, completo completo, ¿no? En un nivel",
+        "start": 2523.26,
+        "end": 2537.98
+    },
+    {
+        "text": " hay incluso un nodo más que en todos los niveles anteriores sumados. ¿Se entiende? Díamos",
+        "start": 2537.98,
+        "end": 2546.5
+    },
+    {
+        "text": " mitad, mi temita. ¿Qué quiere decir? Entonces, que si esto el algoritmo va de abajo para arriba,",
+        "start": 2546.5,
+        "end": 2551.2200000000003
+    },
+    {
+        "text": " es como diciendo si es mi temita como una moneda, ¿no? Tiene la misma probabilidad que se quiere",
+        "start": 2551.22,
+        "end": 2555.1
+    },
+    {
+        "text": " allá abajo, porque hay 50% o que suba uno. ¿Y si sube una de nuevo? Que se queda ahí, o si",
+        "start": 2555.1,
+        "end": 2561.22
+    },
+    {
+        "text": " ha subiendo de lo que le resta, es como tirar la moneda nueva, 50% es probabilidad que se",
+        "start": 2561.22,
+        "end": 2565.3799999999997
+    },
+    {
+        "text": " quede ahí o que suba uno más. Ya se aumenta un 75% si no se quedó abajo, pues le sumo",
+        "start": 2565.3799999999997,
+        "end": 2570.98
+    },
+    {
+        "text": " 25 más. Entonces, es mucho más probable, está bien, está bien, está bien, está bien,",
+        "start": 2570.98,
+        "end": 2575.7
+    },
+    {
+        "text": " muy mala suerte para que me toque llegar a ría. Si son todas las prioridades igualmente",
+        "start": 2575.7,
+        "end": 2581.4199999999996
+    },
+    {
+        "text": " probables, o sea no hay tendencia a insertar siempre chiquitos, o sea, hay más chance que se",
+        "start": 2581.4199999999996,
+        "end": 2586.46
+    },
+    {
+        "text": " queda abajo. ¿Se entiende? Y ahí viene esa cosa de orden 1 promedio, porque en promedio",
+        "start": 2586.46,
+        "end": 2592.2999999999997
+    },
+    {
+        "text": " va a subir 1, 2 niveles y su factor constante y la mayoría de las veces, incluso subiendo 1",
+        "start": 2592.2999999999997,
+        "end": 2597.8599999999997
+    },
+    {
+        "text": " niveles son 75% de la chance de que suba un nivel. ¿El? En general, cualquiera hay gorismo",
+        "start": 2597.86,
+        "end": 2613.1
+    },
+    {
+        "text": " que si vuelve a hacer iterativo y recurso, ¿qué sería mejor? Si el orden de tiempo es",
+        "start": 2613.1,
+        "end": 2620.6600000000003
+    },
+    {
+        "text": " que usan, el mismo ella dice iterativo, ¿por qué? ¿Por qué es más fácil entrandar? Bueno,",
+        "start": 2620.66,
+        "end": 2627.7799999999997
+    },
+    {
+        "text": " eso es esa subjetividad también ayuda. Pensando en eficiencia? Exactamente, porque si la",
+        "start": 2627.7799999999997,
+        "end": 2635.7799999999997
+    },
+    {
+        "text": " oi iterativo no usa el estáque de ejecución es ahorro memoria. Si la complejidad, o sea,",
+        "start": 2635.7799999999997,
+        "end": 2641.58
+    },
+    {
+        "text": " si se me ocurre el algoritmo y veo que el orden de tiempo es que usan el mismo, el iterativo",
+        "start": 2641.58,
+        "end": 2646.8199999999997
+    },
+    {
+        "text": " no solo que puede ser más fácil, dependiendo del que están acostumbrados a estoy con la",
+        "start": 2646.82,
+        "end": 2650.42
+    },
+    {
+        "text": " recurción, sino que también es más eficiente en la uso de la memoria. En general, muchos",
+        "start": 2650.42,
+        "end": 2655.7000000000003
+    },
+    {
+        "text": " algoritmos van a ver en los libros iterativos. ¿Se entiende? Entonces el filtrado es un",
+        "start": 2655.7000000000003,
+        "end": 2662.6200000000003
+    },
+    {
+        "text": " wine y muy fácil, porque va chequeando, che, encaja acá y como le digo, le chequea con el",
+        "start": 2662.6200000000003,
+        "end": 2668.26
+    },
+    {
+        "text": " padre, entonces la posición donde está ahí, le divide por 2 y chequea, sino el que está",
+        "start": 2668.26,
+        "end": 2672.3
+    },
+    {
+        "text": " la posición del vídeo 2 lo pasa abajo, el hilo pasa arriba y a los sumos está llegada",
+        "start": 2672.3,
+        "end": 2675.7400000000002
+    },
+    {
+        "text": " porción 1, ¿Ya está? Esa es el código, es, no es como los aveles, no hicieron",
+        "start": 2675.74,
+        "end": 2680.9799999999996
+    },
+    {
+        "text": " transpiro un poco para reorganizar los elementos, las rotaciones simples, las rotaciones dobles,",
+        "start": 2680.9799999999996,
+        "end": 2687.8999999999996
+    },
+    {
+        "text": " esto es mucho más simple. ¿Qué pasa ahora cuando el otro algoritmo que modifique el árboles",
+        "start": 2687.8999999999996,
+        "end": 2694.66
+    },
+    {
+        "text": " que tiene la especificación de la cola de prioridad, que es borrar el mínimo? ¿Está bien?",
+        "start": 2694.66,
+        "end": 2702.54
+    },
+    {
+        "text": " El mínimo, si uno lo piensa que tiene este dibujito de acá, conceptualmente el mínimo",
+        "start": 2702.54,
+        "end": 2707.58
+    },
+    {
+        "text": " sabe quién es el que se va a ir, es la raíz. Es como diciendo, bueno ahora el hueco,",
+        "start": 2707.58,
+        "end": 2713.66
+    },
+    {
+        "text": " mi incómitra está acá arriba, pero estructuralmente yo sé quién se tiene que ir de la árbol como",
+        "start": 2713.66,
+        "end": 2719.88
+    },
+    {
+        "text": " estructura, se tiene que ir este nodo, porque como yo dije que siempre tiene que estar",
+        "start": 2719.88,
+        "end": 2725.1
+    },
+    {
+        "text": " todo llenito, pero y el último si le falta uno, disquierra derecha, el que no encaja en",
+        "start": 2725.1,
+        "end": 2731.3
+    },
+    {
+        "text": " la estructura ahora, porque este nodo va a quedar, no sé con qué pero va a quedar, porque",
+        "start": 2731.34,
+        "end": 2734.5
+    },
+    {
+        "text": " si no se me rompe la estructura, algo va a ir acá y el 31 es como quedó fuera del árbol,",
+        "start": 2734.5,
+        "end": 2742.38
+    },
+    {
+        "text": " porque si se tiene que chicar el árbol en uno es el que le toca irse, pero no es este",
+        "start": 2742.38,
+        "end": 2746.86
+    },
+    {
+        "text": " que quiero borrar el 31, quiero borrar el 13, entonces uno diría, muy poca probabilidad",
+        "start": 2746.86,
+        "end": 2755.1400000000003
+    },
+    {
+        "text": " y usted me hizo en cuanto es la probabilidad, si este me sobra y este hueco tengo que encajar",
+        "start": 2755.14,
+        "end": 2761.3799999999997
+    },
+    {
+        "text": " lo con alguien, es poner el 31 acá y ya está, cuáles la probabilidad que el 31 encaje",
+        "start": 2761.3799999999997,
+        "end": 2768.1
+    },
+    {
+        "text": " ahí, ¿eh? Que sean todos iguales o que este árbol tenga altura 2 o digamos, pero si no",
+        "start": 2768.1,
+        "end": 2775.94
+    },
+    {
+        "text": " es raro porque si son menores, menores, menores que uno es muy grande, vaya como raíz",
+        "start": 2775.94,
+        "end": 2780.14
+    },
+    {
+        "text": " que es el machiquito, muy poco probable, ¿eh? Pero entonces que me encuentro ahora, con",
+        "start": 2780.14,
+        "end": 2787.3799999999997
+    },
+    {
+        "text": " el problema de ahora la burbuja no está abajo, si no está arriba, tengo que rubicar o poner",
+        "start": 2787.3799999999997,
+        "end": 2791.7
+    },
+    {
+        "text": " alguien acá y por ahora el único candidato que tengo es el 31, primera cosa, ¿cómo me",
+        "start": 2791.7,
+        "end": 2796.8599999999997
+    },
+    {
+        "text": " de cuenta? Sabía en este caso si el 31 encaja o no, a ustedes que vieron, ¿eh?",
+        "start": 2796.8599999999997,
+        "end": 2804.2999999999997
+    },
+    {
+        "text": " los hijos, entonces este es la opción I en este momento que es la I, lo chequeo con 2 por I y 2 por",
+        "start": 2804.46,
+        "end": 2813.2200000000003
+    },
+    {
+        "text": " I más 1, como tanto el 14 como el 16, son menores que el 31 no encaja, ¿vale? Entonces la pregunta",
+        "start": 2813.2200000000003,
+        "end": 2821.5
+    },
+    {
+        "text": " es si el huequito lo quisiera bajar, como hicimos el otro subía, ahora el huequito va a bajar,",
+        "start": 2821.5,
+        "end": 2826.5
+    },
+    {
+        "text": " ¿quién de estos escandillato a ir como no a raíz? El machico, ¿también aguardó? Porque si no,",
+        "start": 2827.5,
+        "end": 2835.26
+    },
+    {
+        "text": " no se va a cumplir la propiedad de lo, entonces que hago, el machiquito de ellos, el mínimo de estos",
+        "start": 2835.26,
+        "end": 2840.22
+    },
+    {
+        "text": " dos lo pongo como no a raíz, ¿vale? Y bajo la incógnita acá, y está, estoy entre el",
+        "start": 2840.22,
+        "end": 2851.5
+    },
+    {
+        "text": " agua en el agua, el agua en el agua, ¿eh? Y es decir, el 31 entra acá y tengo que chequear los",
+        "start": 2851.5,
+        "end": 2857.54
+    },
+    {
+        "text": " hijos de nuevo, como el 31 no es menor igual que el 19 y el 21 no encaja, ¿qué el hijo de los",
+        "start": 2857.54,
+        "end": 2865.94
+    },
+    {
+        "text": " hijos el machiquito? En este caso tienes el 19 y lo pongo acá, y bajo el I, bajar el I es",
+        "start": 2865.94,
+        "end": 2873.7
+    },
+    {
+        "text": " multiplicarlo, en este caso 2 por I, si lo hubiera bajado el lado derecho es 2 por I más 1,",
+        "start": 2873.7,
+        "end": 2878.26
+    },
+    {
+        "text": " estamos acuerdo, ¿eh? Y volve a preguntarme, ¿che? El 31 encaja acá, no encaja, una iría casi no",
+        "start": 2878.26,
+        "end": 2887.1600000000003
+    },
+    {
+        "text": " encaja, porque el 65 dice sí, encaja, pero el 26 dice no, no encaja, por poco, pero no encaja,",
+        "start": 2887.1600000000003,
+        "end": 2893.7400000000002
+    },
+    {
+        "text": " entonces dice bueno el mínimo suelo, sube el 26 y llega acá, y ya acá dice, tiene que encajar,",
+        "start": 2893.7400000000002,
+        "end": 2905.82
+    },
+    {
+        "text": " porque si mira los hijos 2 por I y 2 por I más 1 no existen, se salió el tope, entonces",
+        "start": 2905.82,
+        "end": 2912.9
+    },
+    {
+        "text": " ya está, como no va a violar la propiedad de ahí hacia abajo con los hijos, porque no tiene",
+        "start": 2912.9,
+        "end": 2916.7400000000002
+    },
+    {
+        "text": " el 31 lo pone acá, ¿todavía? O sea que lo peor que le pasa es llegar hasta abajo y ponerlo,",
+        "start": 2916.7400000000002,
+        "end": 2922.5800000000004
+    },
+    {
+        "text": " subir ha sido por ejemplo, acá que decíamos casi encaja ¿no? Casi encaja, si hubiera sido el",
+        "start": 2922.5800000000004,
+        "end": 2932.94
+    },
+    {
+        "text": " 31 el 25, lo hubiera puesto acá porque el 25 es menor igual que el 65, menor igual que el 26,",
+        "start": 2932.94,
+        "end": 2940.7400000000002
+    },
+    {
+        "text": " entonces no hubiera llegado hasta abajo, lo hubiera puesto ahí me voy, de nuevo la misma pregunta,",
+        "start": 2940.7400000000002,
+        "end": 2947.1
+    },
+    {
+        "text": " ahora hay más chance que la burbuja se queda arriba o que baje, y que baje, porque el",
+        "start": 2947.1,
+        "end": 2952.7000000000003
+    },
+    {
+        "text": " resonamiento es el mismo, hay más nodos abajo que arriba, no? No pienso un árbol y más",
+        "start": 2952.7000000000003,
+        "end": 2957.3
+    },
+    {
+        "text": " que está completo, la distribución está como triángulo es clara ¿no? Hay menos dos arriba",
+        "start": 2957.3,
+        "end": 2961.98
+    },
+    {
+        "text": " que abajo, o sea, este tiene más probabilidad de llegar hasta el fondo del árbol, pero el fondo",
+        "start": 2961.98,
+        "end": 2967.1400000000003
+    },
+    {
+        "text": " es lo varismo, o sea que tampoco está malo, en cambio el otro tenía más probabilidad de que",
+        "start": 2967.1400000000003,
+        "end": 2971.3
+    },
+    {
+        "text": " hacer abajo, porque la burbuja está abajo, por eso que en general, el peor caso es lo varismo,",
+        "start": 2971.3,
+        "end": 2975.86
+    },
+    {
+        "text": " pero en general es mucho más rápido lo varismo, el insertal, ¿ok? Bien, esta es un poco el resume",
+        "start": 2975.86,
+        "end": 2986.0600000000004
+    },
+    {
+        "text": " que estaba en la de la positiva anterior sí, porque un borrado el lógico, ¿a qué le",
+        "start": 2986.06,
+        "end": 2994.2599999999998
+    },
+    {
+        "text": " llamamos un borrado el lógico acá? Sí, pero fíjete acá, el borrado me empieza a complicar",
+        "start": 2994.2599999999998,
+        "end": 3014.66
+    },
+    {
+        "text": " cuando soy una estructura de tipo estática o pseudo estática como una regla, porque",
+        "start": 3014.66,
+        "end": 3018.2999999999997
+    },
+    {
+        "text": " pseudo estática, porque si usa el nune, aunque sea contigo a la memoria, esa es memoria",
+        "start": 3018.2999999999997,
+        "end": 3023.06
+    },
+    {
+        "text": " dinámica, ¿abén? Pero no es dinámica como una lista, ¿por qué me empieza a complicar?",
+        "start": 3023.06,
+        "end": 3027.2599999999998
+    },
+    {
+        "text": " Porque acá tengo una cota, entonces, empiezo a dejar como huecos en el medio de borrado",
+        "start": 3027.2599999999998,
+        "end": 3031.7
+    },
+    {
+        "text": " el lógico, me complica la cota cuando está lleno y cómo reutilizar los lugares que deje",
+        "start": 3031.7,
+        "end": 3036.98
+    },
+    {
+        "text": " hueco, porque si no, si te hago mucho borrado el lógico, capaz que tengo espacio, pero como",
+        "start": 3036.98,
+        "end": 3042.66
+    },
+    {
+        "text": " lo reutilizo después, ¿abén? Entonces, en eso no se usa tanto y además porque la eficiencia",
+        "start": 3042.66,
+        "end": 3048.14
+    },
+    {
+        "text": " acá y la complejidad hacer esto no es ni cerca comparable con los árboles financiado,",
+        "start": 3048.14,
+        "end": 3054.5
+    },
+    {
+        "text": " como los ABL, los árboles B, toda esa familia dinámica, ¿ok? Yo creo que por eso la razón,",
+        "start": 3054.5,
+        "end": 3060.2999999999997
+    },
+    {
+        "text": " pero sobre todo es por el problema de la cota, que dejar huecos en el medio de la regla,",
+        "start": 3060.2999999999997,
+        "end": 3064.06
+    },
+    {
+        "text": " porque son los borrados lógicos, hace después complicado reutilizar eso, que no se rompa",
+        "start": 3064.06,
+        "end": 3069.2999999999997
+    },
+    {
+        "text": " la propiedad del 2 por I y el hirvio 2 y tuve su historia ¿no?",
+        "start": 3069.3,
+        "end": 3073.38
+    },
+    {
+        "text": " Bueno, ese es un poco el resumen, mínimo en orden 1, vacío y vacío en orden 1, insertar",
+        "start": 3073.38,
+        "end": 3083.0600000000004
+    },
+    {
+        "text": " el logarimbo per caso, pero en el promedio es mejor y borrar ahí sí el per caso en el logarimbo,",
+        "start": 3083.0600000000004,
+        "end": 3089.38
+    },
+    {
+        "text": " porque en general la burbuja llega abajo, fíjense que acá yo me base mucho y lo remarco",
+        "start": 3089.38,
+        "end": 3095.3
+    },
+    {
+        "text": " porque seguramente en el laboratorio van a trabajar con esta idea con una variante esto,",
+        "start": 3095.3,
+        "end": 3099.9
+    },
+    {
+        "text": " los dos algoritmos que vimos son como puestos en el sentido de ir de abajo para arriba",
+        "start": 3099.9,
+        "end": 3104.7400000000002
+    },
+    {
+        "text": " de árbol o de arriba para abajo, en el de borrado va de arriba hacia abajo como que genera",
+        "start": 3104.7400000000002,
+        "end": 3109.86
+    },
+    {
+        "text": " la burbuja o linkónita el que se tiene que ir en la raíz y el trato de bajar ubicando",
+        "start": 3109.86,
+        "end": 3114.3
+    },
+    {
+        "text": " el lugar y el insertal es al revés porque por la estructura tiene que crecer abajo y después",
+        "start": 3114.3,
+        "end": 3119.38
+    },
+    {
+        "text": " hay que buscar el lugar hacia arriba, eso es más filtrado ascendente cuando subo y descendente",
+        "start": 3119.38,
+        "end": 3124.26
+    },
+    {
+        "text": " cuando bajo, en uno voy multiplicando y lo otro voy dividiendo, es la unigos, porque en",
+        "start": 3124.26,
+        "end": 3130.78
+    },
+    {
+        "text": " base a eso también hay otras operaciones con la prioridad extendidas que no puede decir",
+        "start": 3130.78,
+        "end": 3136.3
+    },
+    {
+        "text": " que podría considerar, estas son las mínimas, entonces si uno ve en el uso que tiene por",
+        "start": 3136.3,
+        "end": 3141.3
+    },
+    {
+        "text": " ejemplo un hip en un sistema operativo para administrar procesos de atención y unas",
+        "start": 3141.3,
+        "end": 3146.9
+    },
+    {
+        "text": " de administradores sistemas, como la URI acá la Unidad Reguncia Informativa y pudiera",
+        "start": 3146.9,
+        "end": 3152.2200000000003
+    },
+    {
+        "text": " saber de cada proceso la posición que tiene en el hip podría ser cosas bastante interesantes,",
+        "start": 3152.2200000000003,
+        "end": 3158.38
+    },
+    {
+        "text": " por ejemplo de crementar la clave o la prioridad de un valor de hip, que cuando usaría eso",
+        "start": 3158.38,
+        "end": 3166.2200000000003
+    },
+    {
+        "text": " bajarle o sea, a chicar el número quiere hacerlo más prioritario porque va hacia la raíz",
+        "start": 3166.2200000000003,
+        "end": 3171.82
+    },
+    {
+        "text": " y bueno cuando quiero por ejemplo acá dicen el libro hacer que un programa se ejecute con",
+        "start": 3171.82,
+        "end": 3176.6600000000003
+    },
+    {
+        "text": " mayor prioridad, un proceso que estaba muy demorado en la cola de proceso, dicen lo subo,",
+        "start": 3176.6600000000003,
+        "end": 3183.3
+    },
+    {
+        "text": " que es subirlo, empujarlo hacia arriba, entonces le de cremento el valor para que se haga",
+        "start": 3183.3,
+        "end": 3188.54
+    },
+    {
+        "text": " más prioritario, ¿qué tendría que hacer ahí? un algoritmo si va hacia arriba el elemento",
+        "start": 3188.54,
+        "end": 3194.86
+    },
+    {
+        "text": " es como le insertar un filtrado ascendente, ¿vale? a ver si tengo un dibujito, por ejemplo",
+        "start": 3194.86,
+        "end": 3201.3
+    },
+    {
+        "text": " este supongan que lo quiero ascender o sea haciendo lo más prioritario y puede decir bueno",
+        "start": 3201.3,
+        "end": 3206.0600000000004
+    },
+    {
+        "text": " resta el 10, entonces el 21 se transformaría en 11, ¿tamos al acuerdo? pero no encaja acá,",
+        "start": 3206.0600000000004,
+        "end": 3212.6600000000003
+    },
+    {
+        "text": " porque sin cajar a directamente acá estaría bien, ¿cómo veo que no encaja? porque acá",
+        "start": 3212.6600000000003,
+        "end": 3216.0600000000004
+    },
+    {
+        "text": " tenemos el 14 que es mayor que el 11, si lo resté 10 este se transforma en 11, ¿tamos al",
+        "start": 3216.0600000000004,
+        "end": 3221.38
+    },
+    {
+        "text": " acuerdo? ¿tú qué tendría que hacer? bajar el 14 y subir el hueco acá y ahora diría el 11",
+        "start": 3221.38,
+        "end": 3228.26
+    },
+    {
+        "text": " encaja acá, no porque el padre es el 13, baja el 13 y el 11 no va a raíz, lo mismo que",
+        "start": 3228.26,
+        "end": 3234.5
+    },
+    {
+        "text": " hice en el insertar, ¿tabía bien? por eso a veces uno codifica la rutina filtrado ascendente,",
+        "start": 3234.5,
+        "end": 3239.7400000000002
+    },
+    {
+        "text": " filtrado descendente y después la puedo usar en estas variantes y alguna variante le va a",
+        "start": 3239.7400000000002,
+        "end": 3244.26
+    },
+    {
+        "text": " tocar en el barato, ¿vale? la otra es al revés, cuando uno quiere incrementar la prioridad",
+        "start": 3244.26,
+        "end": 3252.78
+    },
+    {
+        "text": " de un valor en eje, de una posición ¿vale? y cuando puede pasar eso, por ejemplo cuando un",
+        "start": 3252.78,
+        "end": 3258.6600000000003
+    },
+    {
+        "text": " proceso se está consumiendo todo el procesador o sea todo el tiempo, es decir nada para más,",
+        "start": 3258.6600000000003,
+        "end": 3263.2200000000003
+    },
+    {
+        "text": " te paramos al final, ya está, ya lo usaste mucho, ¿vale? entonces esa el revés, si el 21 lo",
+        "start": 3263.2200000000003,
+        "end": 3268.5800000000004
+    },
+    {
+        "text": " transformó al sumo 10 en 31, bueno justo encaja acá, porque el 31 es menor igual que el 31 y el 32,",
+        "start": 3268.5800000000004,
+        "end": 3275.5400000000004
+    },
+    {
+        "text": " que daría igual, pero si le sumo 20 y es 41 entonces ahí sí, ¿quién de estos dos vendría acá?",
+        "start": 3276.1,
+        "end": 3283.1
+    },
+    {
+        "text": " si eres el transformo en el 41, el mínimo que es el 31 y el 41 pasaría acá, o sea es un",
+        "start": 3283.1,
+        "end": 3292.7799999999997
+    },
+    {
+        "text": " filtrado descendente, entonces yo muchas veces recomiendo áncer la rutina de filtrado ascendente",
+        "start": 3292.7799999999997,
+        "end": 3298.86
+    },
+    {
+        "text": " pues la puedo usar después en distintas cosas, incluso fíjense que yo ahora podría decir cómo el",
+        "start": 3298.86,
+        "end": 3304.54
+    },
+    {
+        "text": " ilimino es un elemento arbitrario del hip, eliminar un x como diciendo este se va, no por ser el mínimo",
+        "start": 3304.54,
+        "end": 3310.7799999999997
+    },
+    {
+        "text": " sino este se va, bueno una alternativa es diciendo le decremento la clave con un valor muy grande por",
+        "start": 3310.7799999999997,
+        "end": 3317.94
+    },
+    {
+        "text": " suposo un infinito acá, o sea luego super prioritario lo llevo a seguramente a ser el nuevo mínimo y",
+        "start": 3317.94,
+        "end": 3323.86
+    },
+    {
+        "text": " después ejecuto eliminar mínimo, entonces lo tiraba abajo, o sea cualquiera quiere eliminar",
+        "start": 3323.86,
+        "end": 3328.98
+    },
+    {
+        "text": " diciendo te llevo a tener ahí y después ejecuto borrar el mínimo plato, te vas, también se",
+        "start": 3328.98,
+        "end": 3334.42
+    },
+    {
+        "text": " puedo combinar como son secuencial en los dos procesos, la regla de la suma dice que es el",
+        "start": 3334.42,
+        "end": 3338.56
+    },
+    {
+        "text": " peor de los dos y el hogarino, entonces eso puede por combinar operaciones, o sea borrar un elemento",
+        "start": 3338.56,
+        "end": 3345.06
+    },
+    {
+        "text": " arbitrario es te llevo arriba con un valor decremento la clave en la gran y después digo borrar",
+        "start": 3345.06,
+        "end": 3349.14
+    },
+    {
+        "text": " el mínimo, ponte bajo, bueno, áreas de aplicación de los hips hay muchas, te hicieron ya sistemas",
+        "start": 3349.14,
+        "end": 3357.7
+    },
+    {
+        "text": " operativos, bueno en sistema operativo van a ver justamente los hips, hip de la máquina de",
+        "start": 3357.7,
+        "end": 3364.54
+    },
+    {
+        "text": " atención de procesos procesados se usa en general para sistemas operativos, hay un algoritmo de",
+        "start": 3364.54,
+        "end": 3371.1
+    },
+    {
+        "text": " ordenación extranada, se no se en un hip sort, también porque se basa, es como andabuca el",
+        "start": 3371.1,
+        "end": 3375.96
+    },
+    {
+        "text": " mínimo y ponerlo, el siguiente mínimo, el siguiente mínimo y como acá obtener mínimo sordeno",
+        "start": 3375.96,
+        "end": 3381.1
+    },
+    {
+        "text": " y borrarlo al sumo es el hogarismo, poten un algoritmo cercano al óptimo, el hogarismo va",
+        "start": 3381.1,
+        "end": 3387.06
+    },
+    {
+        "text": " a ser los de N por N, en algoritmos grid y los algoritmos grid, acá bienvenido P3, también",
+        "start": 3387.62,
+        "end": 3395.22
+    },
+    {
+        "text": " managar técnicas de diseño de algoritmos, también, entonces muchos algoritmos se basan",
+        "start": 3395.22,
+        "end": 3401.14
+    },
+    {
+        "text": " repetitivamente encontrar lo mejor en un paso, grid y goloso, entonces es como que si",
+        "start": 3401.14,
+        "end": 3407.42
+    },
+    {
+        "text": " quiero buscar el mejor camino para ir de un lado al otro, por varios puntos de una ciudad,",
+        "start": 3407.42,
+        "end": 3412.38
+    },
+    {
+        "text": " en un grafo, se suele decir, lo se disabendó que es un grafo, yo elijo entre todas las",
+        "start": 3412.38,
+        "end": 3417.6
+    },
+    {
+        "text": " opciones, estoy parado de ahora si tengo 3 puntos de ir, elijo y que esté más cercano",
+        "start": 3417.6,
+        "end": 3421.94
+    },
+    {
+        "text": " y le voy a hacer ese, y ahora digo, ¿cuál es el punto de tengo más cercano? ¿Esto",
+        "start": 3421.94,
+        "end": 3425.58
+    },
+    {
+        "text": " 5 o cuál es el más cercano? Voy de nuevo a ese mínimo, entonces ser grid y es tomar",
+        "start": 3425.58,
+        "end": 3430.62
+    },
+    {
+        "text": " la decisión como mejor en un paso, ahora qué pasa ahí con esa decisión cuando quiero",
+        "start": 3430.62,
+        "end": 3435.94
+    },
+    {
+        "text": " llegar atravesando muchos pasos, la pregunta es si la elección mejor en un paso, paso",
+        "start": 3435.94,
+        "end": 3441.86
+    },
+    {
+        "text": " paso me lleva la mejor de elección global y la respuesta en un grafo va a ser, no, o",
+        "start": 3441.86,
+        "end": 3449.1800000000003
+    },
+    {
+        "text": " sí, dependiendo de alguna propiedad, entonces también se usa en simulación de eventos",
+        "start": 3449.1800000000003,
+        "end": 3454.3
+    },
+    {
+        "text": " discretos, pero se lo van a ver en P3, simulación hay un curso en IO, creo que viene algo de",
+        "start": 3454.3,
+        "end": 3460.34
+    },
+    {
+        "text": " esto también, en estaciones, pero bueno no vamos a avanzar mucho más allá, y por hoy",
+        "start": 3460.34,
+        "end": 3466.46
+    },
+    {
+        "text": " como les dije no era tan larga, vieron que no le mentí, terminamos acá y nos queda",
+        "start": 3466.46,
+        "end": 3471.1800000000003
+    },
+    {
+        "text": " la última clase que es integrar por la primera mitad en estructuras, muchas estructuras y",
+        "start": 3471.18,
+        "end": 3478.02
+    },
+    {
+        "text": " por otro lado ver ya una introducción al diseño que ustedes sean los creadores de los",
+        "start": 3478.02,
+        "end": 3484.06
+    },
+    {
+        "text": " H, lo vamos a poner así, digamos no, hasta ahora los H siempre se los damos, en la tarea",
+        "start": 3484.06,
+        "end": 3488.5
+    },
+    {
+        "text": " todo, como yo si quiero resolver un problema de X diseño mis H, con qué criterios y",
+        "start": 3488.5,
+        "end": 3495.06
+    },
+    {
+        "text": " subsidios amendmentsaran Shine Activar B y consistent los coq 받esłę, por favor bet hitón",
+        "start": 3495.06,
+        "end": 3499.7599999999998
+    }
+]

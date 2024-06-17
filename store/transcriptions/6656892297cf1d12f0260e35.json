@@ -1,0 +1,4347 @@
+[
+    {
+        "text": " La idea de la clase de hoy es trabajar sobre un nuevo mecanismo que permite la categorización",
+        "start": 0.0,
+        "end": 23.240000000000002
+    },
+    {
+        "text": " de los problemas en la clase de complejidad temporal denominada Np.",
+        "start": 23.24,
+        "end": 30.24
+    },
+    {
+        "text": " Y bueno, vamos a introducir un coce de film en esa clase.",
+        "start": 30.24,
+        "end": 38.239999999999995
+    },
+    {
+        "text": " Premio ello, vamos a repasar un poquito.",
+        "start": 38.239999999999995,
+        "end": 46.239999999999995
+    },
+    {
+        "text": " La clase anterior, la clase anterior teníamos dos conceptos relevantes.",
+        "start": 46.24,
+        "end": 60.24
+    },
+    {
+        "text": " Uno de ellos es la reducción en tiempo ponen o mirar.",
+        "start": 63.24,
+        "end": 73.24000000000001
+    },
+    {
+        "text": " Lo que hace es que nos permite clasificar los problemas según su grado dificultad,",
+        "start": 73.24,
+        "end": 81.24
+    },
+    {
+        "text": " me usando un mecanismo de comparación.",
+        "start": 81.24,
+        "end": 84.24
+    },
+    {
+        "text": " Se dice que un problema es que es al menos tan difícil formular como un problema ahí y se le formaliza.",
+        "start": 84.24,
+        "end": 92.24
+    },
+    {
+        "text": " En particular nos interesa en esa comparación, disponar un mecanismo de transformación o reducción del problema X al problema Y.",
+        "start": 92.24,
+        "end": 107.24
+    },
+    {
+        "text": " Así, disponemos de un mecanismo cerrado en mi acá, general para resolver el problema X.",
+        "start": 107.24,
+        "end": 114.24
+    },
+    {
+        "text": " Entonces, podemos resolver el problema Y.",
+        "start": 114.24,
+        "end": 118.24
+    },
+    {
+        "text": " Lo que es fundamental aquí es que nos interesa que ese proceso de reducción o de transformación sea en tiempo polinomial.",
+        "start": 119.24,
+        "end": 130.24
+    },
+    {
+        "text": " Así que incluya una cantidad de pasos que es polinomial con respecto a los parámetros que miren las instituciones del problema.",
+        "start": 130.24,
+        "end": 141.24
+    },
+    {
+        "text": " Y que al osumo tenga una cantidad polinomial y invocaciones a la caja negra del problema en cuestión.",
+        "start": 141.24,
+        "end": 150.24
+    },
+    {
+        "text": " Lo que vamos a decir es que el problema Y es reducible en tiempo con el problema X si esa condición se cumpa.",
+        "start": 150.24,
+        "end": 162.24
+    },
+    {
+        "text": " La polinomialidad de la transformación del problema Y a la interfaz del problema X y que al osumo hay un número de polinomial invocaciones a la caja negra que adopta el problema X.",
+        "start": 162.24,
+        "end": 178.24
+    },
+    {
+        "text": " Bueno, ese mecanismo, lo vamos a denotar por Y, menor igual, su gindice Pemashuskula, polinomial X.",
+        "start": 178.24,
+        "end": 190.24
+    },
+    {
+        "text": " Y luego otro que nos interesa repasar de acá, con dos problemas para ver que no nos encuentra.",
+        "start": 196.24,
+        "end": 205.24
+    },
+    {
+        "text": " Uno de ellos es el problema de independencia.",
+        "start": 205.24,
+        "end": 208.24
+    },
+    {
+        "text": " El problema de independencia se define a partir de grafos.",
+        "start": 209.24,
+        "end": 213.24
+    },
+    {
+        "text": " He dado un grafo G con conjunto de arteses B y un conjunto de listas E se dice que un conjunto del S, el conjunto de artes independiente, sin ningún par de artes NC, comparten a vista.",
+        "start": 213.24,
+        "end": 232.24
+    },
+    {
+        "text": " Lo que requiere el problema es encontrar el conjunto independiente más carante.",
+        "start": 233.24,
+        "end": 238.24
+    },
+    {
+        "text": " En la que la se pasaba vimos que este es un problema de empaquetamiento, donde uno asociado a los partidos empaquetas, sus conjuntos de artesas, y de forma tarde lograr empaquetamiento de máxima carbonidad.",
+        "start": 238.24,
+        "end": 259.24
+    },
+    {
+        "text": " Bueno, como toda la teoría, que vamos a ver de complejidad computacional temporal está basada en problema de decisión,",
+        "start": 260.24,
+        "end": 271.24
+    },
+    {
+        "text": " estos problemas de optimización que compartirlos a problemas de decisión.",
+        "start": 271.24,
+        "end": 275.24
+    },
+    {
+        "text": " Entonces, lo que hacemos es realmente resolver un problema que es equivalente a dificultad, que es el problema de decisión o de reconocimiento, la variante,",
+        "start": 276.24,
+        "end": 289.24
+    },
+    {
+        "text": " el problema de decisión o reconocimiento del problema de independencia.",
+        "start": 289.24,
+        "end": 293.24
+    },
+    {
+        "text": " Lo que dice es que dado grafoca, no me gusta, un número ca, que la sociedad ha cambiado de arteses, pregunta si el grafuje contiene un conjunto independiente de tamaño del menos ca.",
+        "start": 294.24,
+        "end": 308.24
+    },
+    {
+        "text": " Todos nuestros problemas de optimización hay que chuchibarlos a un esquema parecido así.",
+        "start": 308.24,
+        "end": 312.24
+    },
+    {
+        "text": " Eso por un lado, por otro lado, vimos un problema que es complementario a este, que se llama Varthescober, muy similar, pero que hace una cobertura, ya listas por antes.",
+        "start": 313.24,
+        "end": 326.24
+    },
+    {
+        "text": " Y el tercer problema que me interesa ver pasar hoy es el problema de satisfacibilidad moniana, denominado problema SAT.",
+        "start": 326.24,
+        "end": 336.24
+    },
+    {
+        "text": " Los cuales se pueden tomar valores 1 a partir de ellas se pueden tener su valor directamente o la negación de su valor a esos casos en el denominato de términos.",
+        "start": 337.24,
+        "end": 359.24
+    },
+    {
+        "text": " Y luego a partir de los términos se pueden construir clavusas, la disjunción de muchos términos, compone lo que denominamos clavusas.",
+        "start": 360.24,
+        "end": 371.24
+    },
+    {
+        "text": " Lo que plantea el problema es que para una conjunción de muchas clavusas se busca satisfazar la conjunción de todas esas clavusas, se busca determina si existen.",
+        "start": 371.24,
+        "end": 388.24
+    },
+    {
+        "text": " Hay alguna asignación de valores de las variables, tal que la conjunción de todas las clavusas produce una salida verdadera.",
+        "start": 388.24,
+        "end": 402.24
+    },
+    {
+        "text": " El problema SAT es eso, hay un problema minimal con respecto a la carna de la idea clavusas, que es el problema del minato 3SATS, en el caso de que cada uno de los términos de la clavusas, en el caso de cada uno de los términos de la clavusas tenga exactamente 3 elementos.",
+        "start": 403.24,
+        "end": 426.24
+    },
+    {
+        "text": " Se dice que es una variante del problema, se denomina 3SATS y bueno, 10S, del punto de vista dificultada, intería en complejidad computacional, en complejidad computacional, desequivalente del problema SATS.",
+        "start": 427.24,
+        "end": 444.24
+    },
+    {
+        "text": " Luego revisar estos partículumamente dos problemas, vamos ahora así a trabajar sobre la clase de hoy.",
+        "start": 445.24,
+        "end": 453.24
+    },
+    {
+        "text": " Bueno, entonces este es el temario, perdón, de las dos próximas clases.",
+        "start": 459.24,
+        "end": 465.24
+    },
+    {
+        "text": " Vamos a ver el primer introducción, vamos a definir lo que es la clase de problemas P, son la clase de problema que tiene por solución polilomial, si en la idea de que hay que empezar a formalizar, vamos a ver lo que es el concepto de certificación eficiente, la clase de problemas NP, que va a recaturse estos problemas computacionales, que están afrastando,",
+        "start": 466.24,
+        "end": 489.24
+    },
+    {
+        "text": " luego vamos a ver la clase de problemas NP completo, que es la clase de las problemas que tienen la solución, que no se ha podido determinado que es eficiente, vamos a formizarla, y luego vamos a ver un problema particular, que es el problema de satisfacibilidad de circunso, que le vamos a terminar a CESAT, que es un problema clave en todo esto, porque es como le dice un problema exhumático, para empezar a poder definir,",
+        "start": 489.24,
+        "end": 518.24
+    },
+    {
+        "text": " la clase de los problemas NP completo, con esta es la hoja de arruita parana, próximas dos clases, vamos a ver el primer punto entonces, bueno lo que hemos visto, que como recién repasamos, además de comparar los problemas a través del mecanismo de reducción polilomial, lo que se requiere es que hará utilizar de una forma estas problemas, buscar algún atributo distintivo para poder clasificaros,",
+        "start": 519.24,
+        "end": 548.24
+    },
+    {
+        "text": " entonces vamos a ver el pasado de los ejemplos de los problemas primorcientemente, supongan que tenemos una supuesta solución de una instancia del problema de decisión, de independencia, o alternativa tenemos otra supuesta solución de una instancia del problema de TRESAT, vamos a cruzar por los dos lugares, por independencia de la profesión, son ejemplos,",
+        "start": 549.24,
+        "end": 577.24
+    },
+    {
+        "text": " tenemos una supuesta solución, de una forma con el problema de ser un solido, y tenemos este, hay, se proponen una solución, entonces nos podíamos preguntar cómo se puede probar que es cualquiera de esas dos, su supuesta solución es una solución o una instancia de esos problemas,",
+        "start": 579.24,
+        "end": 604.24
+    },
+    {
+        "text": " y puedes dejar que cuando le Анterrey absent ICE xdx 8 vergez en paz y todo",
+        "start": 609.24,
+        "end": 628.12
+    },
+    {
+        "text": " ¿Qué pina? ¿Cómo podríamos probar?",
+        "start": 628.12,
+        "end": 638.12
+    },
+    {
+        "text": " No nos conocemos el problema, cuando estamos en el...",
+        "start": 638.12,
+        "end": 644.12
+    },
+    {
+        "text": " ...paldes una instancia del problema.",
+        "start": 644.12,
+        "end": 646.12
+    },
+    {
+        "text": " Y en el que alguien no dice, mira, yo tengo esta solución,",
+        "start": 646.12,
+        "end": 651.12
+    },
+    {
+        "text": " hay sustancia.",
+        "start": 651.12,
+        "end": 653.12
+    },
+    {
+        "text": " Por ejemplo, en el Trisa, si te dan una solución,",
+        "start": 654.12,
+        "end": 660.12
+    },
+    {
+        "text": " podéis computar los valores de las cláusulas,",
+        "start": 660.12,
+        "end": 667.12
+    },
+    {
+        "text": " y ver si la conjunción es o algo a uno,",
+        "start": 667.12,
+        "end": 670.12
+    },
+    {
+        "text": " porque no es una solución valida,",
+        "start": 670.12,
+        "end": 672.12
+    },
+    {
+        "text": " y si no es porque no es una solución valida.",
+        "start": 672.12,
+        "end": 675.12
+    },
+    {
+        "text": " Muy bien, esta es la idea, ¿no?",
+        "start": 679.12,
+        "end": 681.12
+    },
+    {
+        "text": " Puedemos hacerlo así de esa forma, ¿sí?",
+        "start": 681.12,
+        "end": 684.12
+    },
+    {
+        "text": " Como dijo compañero, tomamos la solución,",
+        "start": 688.12,
+        "end": 693.12
+    },
+    {
+        "text": " y vamos y la aplicamos las condiciones que definen el problema.",
+        "start": 693.12,
+        "end": 699.12
+    },
+    {
+        "text": " Lo explico para trezar, en el caso de Independentset,",
+        "start": 699.12,
+        "end": 704.12
+    },
+    {
+        "text": " lo que podríamos tener es en su conjunto de beértices,",
+        "start": 704.12,
+        "end": 709.12
+    },
+    {
+        "text": " vemos cuáles son las haristas,",
+        "start": 710.12,
+        "end": 713.12
+    },
+    {
+        "text": " tomamos los bértices uno a uno,",
+        "start": 713.12,
+        "end": 715.12
+    },
+    {
+        "text": " vemos cuáles son las haristas,",
+        "start": 715.12,
+        "end": 717.12
+    },
+    {
+        "text": " marcamos sus haristas de ya sentes,",
+        "start": 717.12,
+        "end": 719.12
+    },
+    {
+        "text": " y verificamos que ningún par de verdes es comparte a listas.",
+        "start": 719.12,
+        "end": 725.12
+    },
+    {
+        "text": " Uno de ellos, o sea, vamos,",
+        "start": 725.12,
+        "end": 727.12
+    },
+    {
+        "text": " y terminando, vamos determinando hasta que verificamos ese sím.",
+        "start": 727.12,
+        "end": 732.12
+    },
+    {
+        "text": " Se entiende la idea,",
+        "start": 733.12,
+        "end": 735.12
+    },
+    {
+        "text": " es sólo tomar la solución de esta casa,",
+        "start": 735.12,
+        "end": 738.12
+    },
+    {
+        "text": " la otra problema, ir y realizar, bueno,",
+        "start": 738.12,
+        "end": 742.12
+    },
+    {
+        "text": " a ver, cumple las condiciones del problema,",
+        "start": 742.12,
+        "end": 744.12
+    },
+    {
+        "text": " cumple los metenimientos del problema.",
+        "start": 744.12,
+        "end": 747.12
+    },
+    {
+        "text": " Bueno, como pueden ver en ambos problemas,",
+        "start": 748.12,
+        "end": 752.12
+    },
+    {
+        "text": " es más fácil obtener, es más difícil obtener una solución",
+        "start": 752.12,
+        "end": 759.12
+    },
+    {
+        "text": " que comprobar una supuesta solución.",
+        "start": 759.12,
+        "end": 762.12
+    },
+    {
+        "text": " particularmente en estas dos, ¿sí?",
+        "start": 763.12,
+        "end": 767.12
+    },
+    {
+        "text": " Importante que hay un pecar que hay como dos,",
+        "start": 771.12,
+        "end": 775.12
+    },
+    {
+        "text": " y como que hay un dos cosas, uno es,",
+        "start": 775.12,
+        "end": 778.12
+    },
+    {
+        "text": " salir y obtener una solución que es resolver un problema,",
+        "start": 780.12,
+        "end": 783.12
+    },
+    {
+        "text": " una instancia de un problema,",
+        "start": 783.12,
+        "end": 785.12
+    },
+    {
+        "text": " y lo otro es ver poder comprobar o verificar que una supuesta solución",
+        "start": 785.12,
+        "end": 791.12
+    },
+    {
+        "text": " es realmente solución del problema.",
+        "start": 791.12,
+        "end": 794.12
+    },
+    {
+        "text": " Es una interesa de distinguir esas dos fases,",
+        "start": 794.12,
+        "end": 797.12
+    },
+    {
+        "text": " esas dos tareas,",
+        "start": 797.12,
+        "end": 800.12
+    },
+    {
+        "text": " particularmente, podemos ver que la de comprobar una supuesta solución",
+        "start": 801.12,
+        "end": 808.12
+    },
+    {
+        "text": " es mucho más fácil, ¿no?",
+        "start": 808.12,
+        "end": 811.12
+    },
+    {
+        "text": " Bueno, dado que ya tenemos una idea que eso es más fácil.",
+        "start": 812.12,
+        "end": 817.12
+    },
+    {
+        "text": " ¿Cómo podemos medir ese grado dificultad de comprobar una solución?",
+        "start": 817.12,
+        "end": 822.12
+    },
+    {
+        "text": " Con los órdenes...",
+        "start": 838.12,
+        "end": 840.12
+    },
+    {
+        "text": " Perdón, ¿a ver qué no te escuché?",
+        "start": 840.12,
+        "end": 843.12
+    },
+    {
+        "text": " ¿Cómo los órdenes computacionales, como veníamos haciendo,",
+        "start": 843.12,
+        "end": 847.12
+    },
+    {
+        "text": " los sabiobrismos?",
+        "start": 847.12,
+        "end": 848.12
+    },
+    {
+        "text": " Ah, ¿a ver?",
+        "start": 848.12,
+        "end": 850.12
+    },
+    {
+        "text": " ¿Puedes explicar un poquito más cómo haríamos?",
+        "start": 850.12,
+        "end": 853.12
+    },
+    {
+        "text": " ¿Cómo son los órdenes computacionales?",
+        "start": 853.12,
+        "end": 856.12
+    },
+    {
+        "text": " Claro, ¿cómo hacíamos con el estudio de los sabiobrismos,",
+        "start": 858.12,
+        "end": 862.12
+    },
+    {
+        "text": " que veíamos cómo podíamos sacotar el tiempo de ejecución de programa?",
+        "start": 862.12,
+        "end": 868.12
+    },
+    {
+        "text": " ¿Puedemos ver para el chiqueo,",
+        "start": 868.12,
+        "end": 872.12
+    },
+    {
+        "text": " y efectivamente es una solución,",
+        "start": 872.12,
+        "end": 874.12
+    },
+    {
+        "text": " cuánto tardó...",
+        "start": 874.12,
+        "end": 876.12
+    },
+    {
+        "text": " O sea, si tengo un algoritmo para chiliar si es una solución correcta",
+        "start": 878.12,
+        "end": 883.12
+    },
+    {
+        "text": " cuando tardas algoritmos.",
+        "start": 883.12,
+        "end": 885.12
+    },
+    {
+        "text": " Y como, por ejemplo, en el problema tres artes,",
+        "start": 888.12,
+        "end": 891.12
+    },
+    {
+        "text": " ¿cómo podíamos tener una medida de eso?",
+        "start": 891.12,
+        "end": 895.12
+    },
+    {
+        "text": " ¿Y qué, a partir de lo...",
+        "start": 895.12,
+        "end": 898.12
+    },
+    {
+        "text": " Y sería un algoritmo que va recorriendo las cláusulas",
+        "start": 901.12,
+        "end": 907.12
+    },
+    {
+        "text": " y va chequeando que todas de verdadero",
+        "start": 907.12,
+        "end": 911.12
+    },
+    {
+        "text": " y eso lo haría en orden, cantidad de cláusulas.",
+        "start": 911.12,
+        "end": 914.12
+    },
+    {
+        "text": " Pero para por hecho, que a las cláusulas primero hay que ver qué hacer.",
+        "start": 914.12,
+        "end": 919.12
+    },
+    {
+        "text": " Ega el lugar dentro de cada una.",
+        "start": 919.12,
+        "end": 922.12
+    },
+    {
+        "text": " Y ya está, o sea, que primero tenemos que asignar los valores de verdad",
+        "start": 922.12,
+        "end": 926.12
+    },
+    {
+        "text": " de la variables.",
+        "start": 926.12,
+        "end": 928.12
+    },
+    {
+        "text": " Ahí tenemos cuántas variables son.",
+        "start": 928.12,
+        "end": 931.12
+    },
+    {
+        "text": " Supongo que si se acordan la cantidad, supongo que hay ene variables.",
+        "start": 931.12,
+        "end": 936.12
+    },
+    {
+        "text": " Hay ene variables.",
+        "start": 944.12,
+        "end": 946.12
+    },
+    {
+        "text": " Lo que hace es asignarle los valores a las variables,",
+        "start": 946.12,
+        "end": 950.12
+    },
+    {
+        "text": " la variables se pueden repetir en los términos.",
+        "start": 950.12,
+        "end": 953.12
+    },
+    {
+        "text": " O sea, que...",
+        "start": 953.12,
+        "end": 955.12
+    },
+    {
+        "text": " Por ejemplo, si agarramos tres sets,",
+        "start": 955.12,
+        "end": 958.12
+    },
+    {
+        "text": " sabemos que hay tres términos.",
+        "start": 958.12,
+        "end": 961.12
+    },
+    {
+        "text": " Por cada cláusula hay tres términos.",
+        "start": 961.12,
+        "end": 964.12
+    },
+    {
+        "text": " Entonces, vamos a tener que asignarle los valores a las...",
+        "start": 964.12,
+        "end": 967.12
+    },
+    {
+        "text": " Las sinamos los valores a las variables,",
+        "start": 967.12,
+        "end": 969.12
+    },
+    {
+        "text": " algunas de esas variables de...",
+        "start": 969.12,
+        "end": 971.12
+    },
+    {
+        "text": " Se pueden repetir en algunos términos.",
+        "start": 971.12,
+        "end": 973.12
+    },
+    {
+        "text": " Tenemos ene asignaciones.",
+        "start": 973.12,
+        "end": 975.12
+    },
+    {
+        "text": " Por ahí tenemos ene asignaciones de valores de orden.",
+        "start": 975.12,
+        "end": 978.12
+    },
+    {
+        "text": " Luego, para cada uno de las cláusulas, tenemos tres términos.",
+        "start": 978.12,
+        "end": 984.12
+    },
+    {
+        "text": " Entonces, tenemos que...",
+        "start": 984.12,
+        "end": 986.12
+    },
+    {
+        "text": " Esos tres términos están vinculados por dos operaciones lógicas de su función.",
+        "start": 986.12,
+        "end": 992.12
+    },
+    {
+        "text": " Hay dos operadores de orden.",
+        "start": 992.12,
+        "end": 995.12
+    },
+    {
+        "text": " Entonces, si había el cláusulas,",
+        "start": 995.12,
+        "end": 1000.12
+    },
+    {
+        "text": " vamos a tener ahora dos por él,",
+        "start": 1000.12,
+        "end": 1006.12
+    },
+    {
+        "text": " evaluaciones de las operaciones a or.",
+        "start": 1006.12,
+        "end": 1011.12
+    },
+    {
+        "text": " Más él menos una con funciones de las cláusulas.",
+        "start": 1011.12,
+        "end": 1021.12
+    },
+    {
+        "text": " Muchas que tenemos las ene asignaciones a los valores de las variables,",
+        "start": 1021.12,
+        "end": 1028.12
+    },
+    {
+        "text": " más dos ene, más ene por uno.",
+        "start": 1028.12,
+        "end": 1031.12
+    },
+    {
+        "text": " O sea, algo que es, actualmente, polinomial en ene y ene.",
+        "start": 1031.12,
+        "end": 1036.12
+    },
+    {
+        "text": " Sí, ene, en mayor que ene.",
+        "start": 1036.12,
+        "end": 1040.12
+    },
+    {
+        "text": " Por lo que depende del caso, no, eso puede ser independiente.",
+        "start": 1040.12,
+        "end": 1045.12
+    },
+    {
+        "text": " El orden va a ser polinomial.",
+        "start": 1045.12,
+        "end": 1049.12
+    },
+    {
+        "text": " Tenemos una medida ahí concreta de...",
+        "start": 1049.12,
+        "end": 1054.12
+    },
+    {
+        "text": " una métrica concreta del trabajo",
+        "start": 1054.12,
+        "end": 1057.12
+    },
+    {
+        "text": " y comprobar la tercera ilusión.",
+        "start": 1057.12,
+        "end": 1059.12
+    },
+    {
+        "text": " Va a barcar y sacante a operaciones.",
+        "start": 1059.12,
+        "end": 1062.12
+    },
+    {
+        "text": " Ahí tenemos una primera idea,",
+        "start": 1062.12,
+        "end": 1066.12
+    },
+    {
+        "text": " una primera boquejo.",
+        "start": 1066.12,
+        "end": 1070.12
+    },
+    {
+        "text": " Comprovar la supuesta solución del problema 3x,",
+        "start": 1070.12,
+        "end": 1074.12
+    },
+    {
+        "text": " sabemos que polinomial, en ene,",
+        "start": 1074.12,
+        "end": 1076.12
+    },
+    {
+        "text": " en en cantidad de elementos que conforman el problema.",
+        "start": 1076.12,
+        "end": 1080.12
+    },
+    {
+        "text": " Lo mismo pasa para independencia.",
+        "start": 1080.12,
+        "end": 1084.12
+    },
+    {
+        "text": " Independencia, nosotros tenemos un conjunto de los partidos.",
+        "start": 1085.12,
+        "end": 1090.12
+    },
+    {
+        "text": " Si tenemos ene verdices,",
+        "start": 1090.12,
+        "end": 1093.12
+    },
+    {
+        "text": " sabemos que va a ser acotado por ene.",
+        "start": 1093.12,
+        "end": 1096.12
+    },
+    {
+        "text": " De todos ellos vamos a ir a recorrer sus heristas a Chacen.",
+        "start": 1096.12,
+        "end": 1099.12
+    },
+    {
+        "text": " Si las heristas digan, fue su NEM,",
+        "start": 1099.12,
+        "end": 1102.12
+    },
+    {
+        "text": " seguramente no va a ir a cobrir más de NEM y no que buscamos",
+        "start": 1102.12,
+        "end": 1105.12
+    },
+    {
+        "text": " y detectar que no compartan a listos.",
+        "start": 1105.12,
+        "end": 1109.12
+    },
+    {
+        "text": " O sea, con tanto el nuevo nuestro aligurismo de comprobación,",
+        "start": 1109.12,
+        "end": 1113.12
+    },
+    {
+        "text": " para independencia también tiene orden,",
+        "start": 1114.12,
+        "end": 1117.12
+    },
+    {
+        "text": " va a tener orden polinomial en tamaño de la estructura del problema.",
+        "start": 1117.12,
+        "end": 1122.12
+    },
+    {
+        "text": " ¿Se entiende la idea?",
+        "start": 1122.12,
+        "end": 1125.12
+    },
+    {
+        "text": " O sea, no sólo lo pudimos ver que comprobar una supuesta solución",
+        "start": 1125.12,
+        "end": 1133.12
+    },
+    {
+        "text": " más fácil, sino que tenemos una medida que es, además, polinomial",
+        "start": 1133.12,
+        "end": 1138.12
+    },
+    {
+        "text": " en tamaño de la etraf.",
+        "start": 1138.12,
+        "end": 1140.12
+    },
+    {
+        "text": " Y esto es clave aquí.",
+        "start": 1141.12,
+        "end": 1143.12
+    },
+    {
+        "text": " Es fundamental esa separación.",
+        "start": 1143.12,
+        "end": 1147.12
+    },
+    {
+        "text": " Nos va a regir esta propiedad, va a regir todas las definiciones",
+        "start": 1147.12,
+        "end": 1152.12
+    },
+    {
+        "text": " que vienen de acá en adelante.",
+        "start": 1152.12,
+        "end": 1154.12
+    },
+    {
+        "text": " Nos vamos a formar esa.",
+        "start": 1154.12,
+        "end": 1156.12
+    },
+    {
+        "text": " Bueno, bueno, como conclusión, tenemos que para esta parte",
+        "start": 1158.12,
+        "end": 1164.12
+    },
+    {
+        "text": " que bueno, hagan vos problemas, tanto independencia como trezad.",
+        "start": 1164.12,
+        "end": 1168.12
+    },
+    {
+        "text": " No se conoce un aligurismo ficiente para autodosos soluciones,",
+        "start": 1169.12,
+        "end": 1173.12
+    },
+    {
+        "text": " pero una supuesta solución de ellos,",
+        "start": 1173.12,
+        "end": 1175.12
+    },
+    {
+        "text": " que se puede comprobar este sientenés.",
+        "start": 1175.12,
+        "end": 1177.12
+    },
+    {
+        "text": " Bueno, acá en detalle que es medio colateral a todo esto,",
+        "start": 1184.12,
+        "end": 1187.12
+    },
+    {
+        "text": " pero es no menos importante,",
+        "start": 1187.12,
+        "end": 1189.12
+    },
+    {
+        "text": " porque por que se dice que una instancia de trezad es satisfacible",
+        "start": 1189.12,
+        "end": 1194.12
+    },
+    {
+        "text": " cuando tiene al menos una solución.",
+        "start": 1194.12,
+        "end": 1196.12
+    },
+    {
+        "text": " Una asignación de variables buliana,",
+        "start": 1197.12,
+        "end": 1200.12
+    },
+    {
+        "text": " hasta el que la conjunción de todas las cláucilas produce valor",
+        "start": 1200.12,
+        "end": 1205.12
+    },
+    {
+        "text": " una, ese valor verdadero.",
+        "start": 1205.12,
+        "end": 1207.12
+    },
+    {
+        "text": " Vean que buscamos solo una.",
+        "start": 1209.12,
+        "end": 1212.12
+    },
+    {
+        "text": " No, existe una.",
+        "start": 1212.12,
+        "end": 1213.12
+    },
+    {
+        "text": " Si, donde exista una, ya está, resolvimos el problema.",
+        "start": 1213.12,
+        "end": 1216.12
+    },
+    {
+        "text": " Entre todo el espacio de asignaciones de verdad, de esas variables,",
+        "start": 1216.12,
+        "end": 1221.12
+    },
+    {
+        "text": " el problema trezad, lo que hace es preguntarse por sólo la existencia",
+        "start": 1221.12,
+        "end": 1225.12
+    },
+    {
+        "text": " de una de ellas, y que tiene que ser barbadaena.",
+        "start": 1225.12,
+        "end": 1229.12
+    },
+    {
+        "text": " Bueno, los podemos preguntar, nos podemos preguntar un planteo",
+        "start": 1231.12,
+        "end": 1235.12
+    },
+    {
+        "text": " por la negativa de esto.",
+        "start": 1235.12,
+        "end": 1237.12
+    },
+    {
+        "text": " ¿Cómo se podría probar que una instancia de trezad",
+        "start": 1240.12,
+        "end": 1243.12
+    },
+    {
+        "text": " no es satisfacible?",
+        "start": 1243.12,
+        "end": 1245.12
+    },
+    {
+        "text": " Probando con todas las asignaciones posibles.",
+        "start": 1256.12,
+        "end": 1258.12
+    },
+    {
+        "text": " Sí.",
+        "start": 1261.12,
+        "end": 1262.12
+    },
+    {
+        "text": " O sea, todos los valores de cero sin unos que le puedes dar los",
+        "start": 1264.12,
+        "end": 1268.12
+    },
+    {
+        "text": " dos alaena valores de las variables,",
+        "start": 1268.12,
+        "end": 1272.12
+    },
+    {
+        "text": " los vas probando y te fijas si la instancia va a ser satisfacible.",
+        "start": 1272.12,
+        "end": 1278.12
+    },
+    {
+        "text": " O sea, si, cuando su titüe si te a uno, o no, sin ninguno de ellos",
+        "start": 1279.12,
+        "end": 1283.12
+    },
+    {
+        "text": " te a uno, es porque no es satisfacible.",
+        "start": 1283.12,
+        "end": 1286.12
+    },
+    {
+        "text": " Probaste con todos sin ninguno de los cumple.",
+        "start": 1286.12,
+        "end": 1289.12
+    },
+    {
+        "text": " Muy bien, Rafael, de esas ideas.",
+        "start": 1292.12,
+        "end": 1294.12
+    },
+    {
+        "text": " Vean la diferencia de los dos problemas, ¿no?",
+        "start": 1295.12,
+        "end": 1297.12
+    },
+    {
+        "text": " El problema nuestro original, el problema trezada,",
+        "start": 1297.12,
+        "end": 1300.12
+    },
+    {
+        "text": " es de las variables que se pueden dar,",
+        "start": 1300.12,
+        "end": 1303.12
+    },
+    {
+        "text": " los que buscan, es de que te ha dado,",
+        "start": 1304.12,
+        "end": 1306.12
+    },
+    {
+        "text": " solo si existe una asignación de valores de verdad",
+        "start": 1306.12,
+        "end": 1309.12
+    },
+    {
+        "text": " que produce una conclusión final que sea barbarera.",
+        "start": 1309.12,
+        "end": 1313.12
+    },
+    {
+        "text": " Pero solo nos buscamos un.",
+        "start": 1313.12,
+        "end": 1315.12
+    },
+    {
+        "text": " En este otro problema,",
+        "start": 1315.12,
+        "end": 1317.12
+    },
+    {
+        "text": " en comprobar que una instancia de trezada no es satisfacible,",
+        "start": 1317.12,
+        "end": 1321.12
+    },
+    {
+        "text": " implica indagar por todos los valores de verdad",
+        "start": 1321.12,
+        "end": 1325.12
+    },
+    {
+        "text": " y confirmar que la instancia de trezada no es satisfacible,",
+        "start": 1325.12,
+        "end": 1329.12
+    },
+    {
+        "text": " indagar por todo el valor de verdad",
+        "start": 1329.12,
+        "end": 1332.12
+    },
+    {
+        "text": " y confirmar que todos producen una salida negativa.",
+        "start": 1332.12,
+        "end": 1337.12
+    },
+    {
+        "text": " Vean la diferencia enorme que hay",
+        "start": 1340.12,
+        "end": 1344.12
+    },
+    {
+        "text": " de esfuerzo entre los dos problemas.",
+        "start": 1344.12,
+        "end": 1347.12
+    },
+    {
+        "text": " ¿No ven eso?",
+        "start": 1347.12,
+        "end": 1348.12
+    },
+    {
+        "text": " Si en el primero,",
+        "start": 1355.12,
+        "end": 1356.12
+    },
+    {
+        "text": " ¿que viene un poquito de arriba?",
+        "start": 1356.12,
+        "end": 1358.12
+    },
+    {
+        "text": " Si en el primero problema.",
+        "start": 1360.12,
+        "end": 1362.12
+    },
+    {
+        "text": " Ah, ¿que tiene que ser una partida?",
+        "start": 1364.12,
+        "end": 1366.12
+    },
+    {
+        "text": " Si en el primero original,",
+        "start": 1367.12,
+        "end": 1369.12
+    },
+    {
+        "text": " el satisfacible.",
+        "start": 1369.12,
+        "end": 1370.12
+    },
+    {
+        "text": " Ah, si, una frecuencia de poner esto para atrás.",
+        "start": 1397.12,
+        "end": 1399.12
+    },
+    {
+        "text": " Si tenemos un lugar.",
+        "start": 1410.12,
+        "end": 1411.12
+    },
+    {
+        "text": " Si nos vamos a preguntar.",
+        "start": 1426.12,
+        "end": 1428.12
+    },
+    {
+        "text": " Si existe.",
+        "start": 1429.12,
+        "end": 1430.12
+    },
+    {
+        "text": " Si existe.",
+        "start": 1430.12,
+        "end": 1432.12
+    },
+    {
+        "text": " Algunas.",
+        "start": 1432.12,
+        "end": 1433.12
+    },
+    {
+        "text": " Yo lo habría que dar como X.",
+        "start": 1434.12,
+        "end": 1435.12
+    },
+    {
+        "text": " Perteneciente.",
+        "start": 1435.12,
+        "end": 1437.12
+    },
+    {
+        "text": " ¿A que no?",
+        "start": 1437.12,
+        "end": 1438.12
+    },
+    {
+        "text": " Que no,",
+        "start": 1438.12,
+        "end": 1439.12
+    },
+    {
+        "text": " que no.",
+        "start": 1439.12,
+        "end": 1440.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1440.12,
+        "end": 1441.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1441.12,
+        "end": 1443.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1443.12,
+        "end": 1444.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1444.12,
+        "end": 1445.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1445.12,
+        "end": 1446.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1446.12,
+        "end": 1447.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1447.12,
+        "end": 1448.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1448.12,
+        "end": 1449.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1449.12,
+        "end": 1450.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1450.12,
+        "end": 1451.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1451.12,
+        "end": 1452.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1452.12,
+        "end": 1453.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1453.12,
+        "end": 1454.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1454.12,
+        "end": 1455.12
+    },
+    {
+        "text": " Que no.",
+        "start": 1455.12,
+        "end": 1457.12
+    },
+    {
+        "text": " Que no es ti nかな?",
+        "start": 1457.12,
+        "end": 1458.12
+    },
+    {
+        "text": " Om,",
+        "start": 1458.12,
+        "end": 1459.4199999999998
+    },
+    {
+        "text": " que no es ti nかな可能.",
+        "start": 1459.4199999999998,
+        "end": 1460.12
+    },
+    {
+        "text": " Que no es ti nかな?",
+        "start": 1460.12,
+        "end": 1462.12
+    },
+    {
+        "text": " Laのこating transc Esta.",
+        "start": 1462.12,
+        "end": 1465.12
+    },
+    {
+        "text": " Okey.",
+        "start": 1465.12,
+        "end": 1466.12
+    },
+    {
+        "text": " yo como esto por spl 소리 y manipulated,",
+        "start": 1466.12,
+        "end": 1467.12
+    },
+    {
+        "text": " Spider-Man no dura si nada.",
+        "start": 1467.12,
+        "end": 1468.12
+    },
+    {
+        "text": " La La esta la fala no es decayalla",
+        "start": 1468.12,
+        "end": 1471.12
+    },
+    {
+        "text": " no es ninguna pero el trladım.",
+        "start": 1471.12,
+        "end": 1472.12
+    },
+    {
+        "text": " No es de el ratón que aka traes el tén.",
+        "start": 1472.12,
+        "end": 1474.12
+    },
+    {
+        "text": " Puede que eh?",
+        "start": 1474.12,
+        "end": 1476.12
+    },
+    {
+        "text": " Esta.",
+        "start": 1476.12,
+        "end": 1477.12
+    },
+    {
+        "text": " No,",
+        "start": 1477.12,
+        "end": 1478.4599999999998
+    },
+    {
+        "text": " que no la ha resultado.",
+        "start": 1478.4599999999998,
+        "end": 1480.12
+    },
+    {
+        "text": " Venga,",
+        "start": 1480.12,
+        "end": 1481.12
+    },
+    {
+        "text": " la tritad doncara de bien logro los est什么.",
+        "start": 1481.12,
+        "end": 1483.12
+    },
+    {
+        "text": " existe una X perteneciente a lospoints. Hay que verificar cualquier forma en el trésato.",
+        "start": 1483.12,
+        "end": 1496.36
+    },
+    {
+        "text": " No, ¿safi fácil? Lo que nos planteamos es la negación de todo esto. No existe un x",
+        "start": 1496.36,
+        "end": 1520.9199999999998
+    },
+    {
+        "text": " perteneciente a ver a la n, hay que ser x que esto es lógicamente equivalente a que para",
+        "start": 1520.92,
+        "end": 1534.3200000000002
+    },
+    {
+        "text": " todo x perteneciente a la n, no se cumpla, se dex, hay, la negación de expresiones que tienen",
+        "start": 1534.32,
+        "end": 1553.3
+    },
+    {
+        "text": " cualificadores y predicados. Lo que se está planteando en el problema a trestar no satisflasibles",
+        "start": 1553.3,
+        "end": 1564.5
+    },
+    {
+        "text": " esto. Un esfuerzo realmente muchísimo, un problema más complicado que el problema original,",
+        "start": 1564.5,
+        "end": 1572.6599999999999
+    },
+    {
+        "text": " que es solo la determinación de uno, ¿sí? Como dijo Rafael, una opción es buscar todos los valores",
+        "start": 1572.66,
+        "end": 1585.1000000000001
+    },
+    {
+        "text": " posible verdad y determinar que todos son, todos producen salida falses. Bueno, esta",
+        "start": 1585.1000000000001,
+        "end": 1596.6200000000001
+    },
+    {
+        "text": " simétría en este mundo de las problemas satisflasibles y no satisflasibles es un capítulo",
+        "start": 1596.62,
+        "end": 1605.06
+    },
+    {
+        "text": " aparte en todo este mundo en la complejidad contacional que nosotros no vamos a enterar. En este curso",
+        "start": 1605.06,
+        "end": 1610.9399999999998
+    },
+    {
+        "text": " no va, ¿no? Pero es un tema así relevante, aquellos que quieran estudiarlos pueden",
+        "start": 1610.9399999999998,
+        "end": 1619.1399999999999
+    },
+    {
+        "text": " degar soledad, lo que se denomina la complementaridad de los problemas, o sea, la",
+        "start": 1619.14,
+        "end": 1628.38
+    },
+    {
+        "text": " dos problemes, este es el problema que se plantea acá es como un problema complementario,",
+        "start": 1628.38,
+        "end": 1632.3400000000001
+    },
+    {
+        "text": " el problema trestar no satisflasibles como un problema complementario en relación a los",
+        "start": 1632.3400000000001,
+        "end": 1639.1000000000001
+    },
+    {
+        "text": " problemas de decisión y bueno tiene todo un desarrollo, pero lo que me gustaba destacar",
+        "start": 1639.1000000000001,
+        "end": 1646.8200000000002
+    },
+    {
+        "text": " es que bueno que hay el resto de las satisfacilidades tiene esa otra propiedad de complementaridad",
+        "start": 1646.82,
+        "end": 1660.8999999999999
+    },
+    {
+        "text": " que es asimétrico, que sea que no ustedes no vayan a sumir que determinar el problema satisfacible",
+        "start": 1660.8999999999999,
+        "end": 1670.6599999999999
+    },
+    {
+        "text": " que tiene respuesta así es equivalente en complejidad a determinar uno que tiene",
+        "start": 1670.66,
+        "end": 1676.7
+    },
+    {
+        "text": " las respuestas, ¿no? Porque la negación acá implica la negara y el cuantificador.",
+        "start": 1676.7,
+        "end": 1683.14
+    },
+    {
+        "text": " Bueno, dudas preguntas de este punto.",
+        "start": 1692.6200000000001,
+        "end": 1695.1000000000001
+    },
+    {
+        "text": " Bueno, seguimos, entonces esto vuelvo a presentarlo, lo vemos de ser nuevo para bueno seguimos.",
+        "start": 1700.66,
+        "end": 1715.74
+    },
+    {
+        "text": " Bueno, lo vamos a hacer ahora, formalizar y a poco todo este, lo que vimos en la clase anterior,",
+        "start": 1715.74,
+        "end": 1735.98
+    },
+    {
+        "text": " las clases anteriores con respecto a problemas de decisión y algoritmo, pero ahora sí,",
+        "start": 1735.98,
+        "end": 1740.78
+    },
+    {
+        "text": " dentro del mecanismo de problemas de decisión, ¿sí? Entonces vamos a definir ahora para",
+        "start": 1740.78,
+        "end": 1750.1
+    },
+    {
+        "text": " las problemas de decisión particularmente bueno que es una instancia y qué es lo que la caracteriza.",
+        "start": 1750.1,
+        "end": 1754.46
+    },
+    {
+        "text": " Entonces una instancia en un problema de decisión está determinada por lo que se denomina o un",
+        "start": 1754.46,
+        "end": 1762.54
+    },
+    {
+        "text": " entrada de datos y bueno, todo de la estructura de la problema de decisión, lo que hace es trabajar",
+        "start": 1762.54,
+        "end": 1772.06
+    },
+    {
+        "text": " sobre una delimética binaria, entonces vamos a plantearnos bueno que la entrada de alguna forma",
+        "start": 1772.06,
+        "end": 1777.86
+    },
+    {
+        "text": " la codificamos, una representación binaria, pero la codificamos como una cadena o un",
+        "start": 1777.86,
+        "end": 1785.18
+    },
+    {
+        "text": " literal ese, vamos en una vez, es una cadena finita y nos interesa destacar Santa Mania.",
+        "start": 1785.18,
+        "end": 1793.8600000000001
+    },
+    {
+        "text": " Bueno, el tamaño lo vamos a determinar por este barra vertical, ese bar, como una medida modular,",
+        "start": 1793.8600000000001,
+        "end": 1802.0600000000002
+    },
+    {
+        "text": " este es el modo de ese tamaño, es la cantidad de bits que ocupa la entrada,",
+        "start": 1802.0600000000002,
+        "end": 1808.18
+    },
+    {
+        "text": " que nuestras instancias van a estar definidas por cadenas de literales y nos interesa saber su tamaño.",
+        "start": 1809.18,
+        "end": 1818.42
+    },
+    {
+        "text": " Por otro lado, vamos a tener los problemas de decisión en sí, porcentual nuestro problema",
+        "start": 1818.42,
+        "end": 1827.8600000000001
+    },
+    {
+        "text": " son problemas comunicacionales, este que sí eran problemas de optimización, los los",
+        "start": 1827.8600000000001,
+        "end": 1831.78
+    },
+    {
+        "text": " los ajustados a un problema de decisión. Bueno, entonces en esos problemas de incision lo lo que",
+        "start": 1831.78,
+        "end": 1838.74
+    },
+    {
+        "text": " nos interesa es identificar los a ellos, o sea, cada uno de esos problemas se identifica solo con",
+        "start": 1838.74,
+        "end": 1845.74
+    },
+    {
+        "text": " las entradas que tienen respuesta así en el problema de decisión, este es un poquito diferente con lo",
+        "start": 1845.74,
+        "end": 1854.34
+    },
+    {
+        "text": " que hagamos visto hasta ahora es una incidencia más en la mecánica de toda la teoría complejidad",
+        "start": 1854.34,
+        "end": 1861.1
+    },
+    {
+        "text": " para los problemas de decisión, o sea, como que el problema está solo, como dice definido para",
+        "start": 1861.1,
+        "end": 1869.5
+    },
+    {
+        "text": " ascoví sus instancias, tal de que producen respuesta, sí, el problema de decisión,",
+        "start": 1869.5,
+        "end": 1874.86
+    },
+    {
+        "text": " producir respuesta, sí, o producir respuesta a la entrada de decisión.",
+        "start": 1874.86,
+        "end": 1877.2199999999998
+    },
+    {
+        "text": " Vamos a decir que hasta el punto es la correlación entre la identificación,",
+        "start": 1881.06,
+        "end": 1888.86
+    },
+    {
+        "text": " como dice decir que es un problema de respuesta así, entonces una instancia,",
+        "start": 1888.86,
+        "end": 1893.78
+    },
+    {
+        "text": " un problema, el problema de la pregunta así, entonces esa instancia pertenece al problema,",
+        "start": 1893.78,
+        "end": 1898.9799999999998
+    },
+    {
+        "text": " si que vamos a tratar al problema de que es como un conjunto y las cadenas como elementos de",
+        "start": 1898.98,
+        "end": 1905.58
+    },
+    {
+        "text": " ese conjunto, o sea, el problema de que es bastante identificado como hay conjunto de todos esos",
+        "start": 1905.58,
+        "end": 1910.64
+    },
+    {
+        "text": " centras, o sea, vamos a usar esa notación. Bueno, recuerden, esto es un poco más exigente",
+        "start": 1910.64,
+        "end": 1918.02
+    },
+    {
+        "text": " que la definición nuestra, que teníamos antes de instancias, bueno, que podía haber instancia que",
+        "start": 1918.02,
+        "end": 1923.8600000000001
+    },
+    {
+        "text": " para cuál no había solución del problema o de otra forma, en acá sí, todas las instancias del",
+        "start": 1924.3799999999999,
+        "end": 1932.6999999999998
+    },
+    {
+        "text": " problema son las que producen la solución, por supuesto así en el problema de decisión.",
+        "start": 1932.6999999999998,
+        "end": 1939.4199999999998
+    },
+    {
+        "text": " Bueno, el otro que nos interesa tener es bueno, solo el factorismo, vamos a hablar de una",
+        "start": 1941.4199999999998,
+        "end": 1946.4599999999998
+    },
+    {
+        "text": " problema de decisión X que recibe una entrada S y bueno, y puede retornar dos salidas, como son",
+        "start": 1947.42,
+        "end": 1956.54
+    },
+    {
+        "text": " problemas de decisión o retornas, el algorithm S, el perdón, la entrada S, ejecutada sobre el",
+        "start": 1956.54,
+        "end": 1964.5
+    },
+    {
+        "text": " del algorithm S, tenemos dos posibles emisiones, retornas S o retornas S, son las posibles del problema.",
+        "start": 1964.5,
+        "end": 1971.46
+    },
+    {
+        "text": " Eso para una entrada va a quiera arbitraria. Entonces vamos a decir que el algorithm a resuelve el",
+        "start": 1972.46,
+        "end": 1982.14
+    },
+    {
+        "text": " problema X, sí para toda cadena S se cumple que A, D, O sea, que si lo invocamos al algorithm con esa",
+        "start": 1982.14,
+        "end": 1991.6200000000001
+    },
+    {
+        "text": " cadena, producen un resultado S y sólo S, el S pertenece a X, o si quiere,",
+        "start": 1991.6200000000001,
+        "end": 2000.78
+    },
+    {
+        "text": " el algorithm a la definición se puede ajustar también, se dice que el algorithm a resuelve el problema",
+        "start": 2000.78,
+        "end": 2008.94
+    },
+    {
+        "text": " X, sí para toda cadena S perteneciente a X, se cumple que A, D, O sea, sí.",
+        "start": 2008.94,
+        "end": 2014.1
+    },
+    {
+        "text": " Y ahí están el impacto de que los problemas están definidos sólo para las cadenas",
+        "start": 2016.98,
+        "end": 2026.62
+    },
+    {
+        "text": " tienen solución S, ¿eh? Bueno, ¿por qué se hace esto? A diferencia del otro, bueno, ¿por qué se",
+        "start": 2027.62,
+        "end": 2035.1799999999998
+    },
+    {
+        "text": " deja? Los problemas cuyas cadenas S no responden, no responden, aplicar si se le aplica el",
+        "start": 2035.1799999999998,
+        "end": 2053.5
+    },
+    {
+        "text": " algorithm o ese, dan respuesta, ¿no? Eso son los problemas que le mencionaban anteriormente que",
+        "start": 2053.5,
+        "end": 2058.14
+    },
+    {
+        "text": " son los problemas complementarios, o sea, si el S no pertenece a X, entonces pertenece al",
+        "start": 2058.14,
+        "end": 2066.26
+    },
+    {
+        "text": " complemento de ese, de perdón de X y es donde se deriva toda esa teoría que nosotros no vamos a",
+        "start": 2066.26,
+        "end": 2072.34
+    },
+    {
+        "text": " trabajar, pero esto está planteado por eso, o sea, nosotros sólo acabamos a trabajar por el lado del",
+        "start": 2072.34,
+        "end": 2079.3
+    },
+    {
+        "text": " S, ¿eh? Por eso esa es la esigencia, son sólo los S que pertenecen a X, lo que no interesa,",
+        "start": 2079.3,
+        "end": 2088.38
+    },
+    {
+        "text": " yo no lo que no interesa trabajar, no vamos a movernos sobre los que no pertenecen,",
+        "start": 2088.38,
+        "end": 2094.02
+    },
+    {
+        "text": " eso es lo que desarrolla el mundo, ese es la complementaridad.",
+        "start": 2094.02,
+        "end": 2097.1000000000004
+    },
+    {
+        "text": " ¿No es una consulta? Sí. Eso, la definición de algoritmo que está ahí, está tomando en cuenta,",
+        "start": 2097.1,
+        "end": 2109.22
+    },
+    {
+        "text": " por ejemplo, acá hayamos mencionado los olorimos, Monte Carlo 2, que te puede dar para un problema,",
+        "start": 2109.22,
+        "end": 2116.42
+    },
+    {
+        "text": " te va a dar una solución, pero bueno, saber si está bien o está mal, la solución en principio,",
+        "start": 2116.42,
+        "end": 2121.1
+    },
+    {
+        "text": " que esos caerían dentro de esa solución. No, acá son todos, nuestros problemas tienen que ser",
+        "start": 2121.1,
+        "end": 2129.86
+    },
+    {
+        "text": " determinidos, tienen que ser deterministas, nosotros podemos tener que probar lo que vivimos",
+        "start": 2129.86,
+        "end": 2137.7
+    },
+    {
+        "text": " anteriormente, dado una solución, tenemos que poder comprobar, dado una entrada, tenemos que",
+        "start": 2137.7,
+        "end": 2148.5
+    },
+    {
+        "text": " poder comprobar, dado una supuesta solución, tenemos que poder comprobar, fíjense en mente,",
+        "start": 2148.5,
+        "end": 2153.02
+    },
+    {
+        "text": " que es solución del problema. Ok, tenemos poder comprobar, fíjense en mente,",
+        "start": 2153.02,
+        "end": 2160.82
+    },
+    {
+        "text": " y nosotros vamos a reforzar ahora, vamos a ver más allá, vamos a ver. No sólo lo queremos",
+        "start": 2160.82,
+        "end": 2166.7
+    },
+    {
+        "text": " comprobar, poder comprobar, si no queremos hacer en tiempo por ilumía.",
+        "start": 2166.7,
+        "end": 2171.22
+    },
+    {
+        "text": " Bien, la dice. Bueno, seguimos formalizando lo que habíamos visto",
+        "start": 2179.5,
+        "end": 2189.78
+    },
+    {
+        "text": " antes de los olorimos perlinomiales para problemas de decisiones, entonces vamos a decir que",
+        "start": 2189.78,
+        "end": 2193.74
+    },
+    {
+        "text": " una algoritmo A tiene tiempo de ejecutión polilinomial, si existe una función polilinomial",
+        "start": 2193.74,
+        "end": 2199.26
+    },
+    {
+        "text": " F, tal que para cada cadena de entrada A es el algoritmo, si lo podemos colocar con el algoritmo,",
+        "start": 2199.26,
+        "end": 2207.74
+    },
+    {
+        "text": " va a terminar en un orden asintótico, de F, del tamaño de la cadena, pasos, tal.",
+        "start": 2207.74,
+        "end": 2218.66
+    },
+    {
+        "text": " Sabemos que es polilinomial va a terminar el orden polilinomial.",
+        "start": 2218.66,
+        "end": 2222.8199999999997
+    },
+    {
+        "text": " Y esa es la idea que derrastramos. Aquí no hay diferencia con lo que hemos visto hasta ahora.",
+        "start": 2227.62,
+        "end": 2231.3799999999997
+    },
+    {
+        "text": " Si nosotros tenemos una función polilinomial en el tamaño de la entrada,",
+        "start": 2231.3799999999997,
+        "end": 2235.9799999999996
+    },
+    {
+        "text": " lo queremos ahora en entrada a que es un literal, un bit, y bueno, si es polilinomial,",
+        "start": 2235.98,
+        "end": 2239.82
+    },
+    {
+        "text": " si dice que el algoritmo tiene tiempo de ejecutión polilinomial, como siempre,",
+        "start": 2242.14,
+        "end": 2246.34
+    },
+    {
+        "text": " acuerdense el concepto de tiempo de ejecutión polilinomial está derivado de la cuenta de pasos,",
+        "start": 2246.34,
+        "end": 2254.46
+    },
+    {
+        "text": " la cantidad de ejecutiones, la cantidad de inclusiones que se realizan.",
+        "start": 2254.46,
+        "end": 2261.34
+    },
+    {
+        "text": " Bueno, entonces a partir de todas estas formalizaciones de entrada, problema, algoritmo,",
+        "start": 2261.78,
+        "end": 2272.7400000000002
+    },
+    {
+        "text": " polilinomial, se define la primera clase. Se denomina clase de problema P y se",
+        "start": 2272.7400000000002,
+        "end": 2279.58
+    },
+    {
+        "text": " escribe con peca liguerafica, es de esa P como la, como esta escritura",
+        "start": 2279.58,
+        "end": 2285.3
+    },
+    {
+        "text": " de manuscrito de la escuela. Hay conjunto de problemas para los que existen el gorismo,",
+        "start": 2285.3,
+        "end": 2292.6200000000003
+    },
+    {
+        "text": " que los resuelven en tiempo polilinomial. O sea, todos hay que ellos problemas, a los cuales se",
+        "start": 2292.6200000000003,
+        "end": 2299.46
+    },
+    {
+        "text": " pueden aplicar un algoritmo que tiene tiempo de ejecutión polilinomial, entonces a ellos",
+        "start": 2299.46,
+        "end": 2305.1000000000004
+    },
+    {
+        "text": " nos vamos a categorizar como que pertenecen en la clase P. Entonces tenemos una primera clase,",
+        "start": 2305.1,
+        "end": 2311.22
+    },
+    {
+        "text": " formalizamos para los problemas computacionales de decisión o reconocimiento, una primera clase que",
+        "start": 2317.42,
+        "end": 2325.2999999999997
+    },
+    {
+        "text": " es en la clase P.",
+        "start": 2325.3,
+        "end": 2326.54
+    },
+    {
+        "text": " Ahora vamos a volver un poquito sobre el tema anterior, de cómo confirmar que una solución,",
+        "start": 2337.02,
+        "end": 2346.6200000000003
+    },
+    {
+        "text": " lo que vimos que es determinar que una solución de la solución, la podemos comprobar que",
+        "start": 2347.2599999999998,
+        "end": 2356.8599999999997
+    },
+    {
+        "text": " suelección, bueno vamos a formalizar eso. Ese concepto se llama de certificadores",
+        "start": 2356.8599999999997,
+        "end": 2361.98
+    },
+    {
+        "text": " eficiente, entonces lo que nos vamos a plantear es bueno, esa primera idea que vimos para dos problemas,",
+        "start": 2361.98,
+        "end": 2369.1
+    },
+    {
+        "text": " para el problema de independencia y para el problema de Tresat, que podíamos dar una",
+        "start": 2369.1,
+        "end": 2375.7
+    },
+    {
+        "text": " supuesta solución verificarla, podemos ver que lo podíamos hacer en forma suficiente,",
+        "start": 2375.7,
+        "end": 2386.7
+    },
+    {
+        "text": " bueno lo que vamos a hacer ahora es formalizar todo ese para crear varios conceptos aquí que formalizan",
+        "start": 2386.7,
+        "end": 2394.8999999999996
+    },
+    {
+        "text": " eso, ese concepto de formalización en el que se llama. Solo primero que tenemos es bueno,",
+        "start": 2394.8999999999996,
+        "end": 2399.9399999999996
+    },
+    {
+        "text": " para explicar una solución de una entrada es un problema, pues vamos a tener una cadena",
+        "start": 2400.5,
+        "end": 2408.18
+    },
+    {
+        "text": " associada T, o sea, tenemos la distancia definida por la cadena S, por la cadena de Tresat,",
+        "start": 2408.18,
+        "end": 2416.1
+    },
+    {
+        "text": " una cadena binaria, entonces ahora la solución la vamos a tener de alguna forma representada en una",
+        "start": 2416.1,
+        "end": 2425.02
+    },
+    {
+        "text": " cadena T, de la amenidad certificada, que de alguna forma tiene esa cadena T,",
+        "start": 2425.02,
+        "end": 2435.02
+    },
+    {
+        "text": " esa otra cadena B, tiene una prueba de que es una instancia así al problema que arrozone,",
+        "start": 2435.02,
+        "end": 2443.58
+    },
+    {
+        "text": " de problemas de cuales, pues tenemos un problema, una cadena S, que definen la instancia",
+        "start": 2444.46,
+        "end": 2453.94
+    },
+    {
+        "text": " del problema y además tenemos una cadena T, que se denomina certificado, que certifica que la",
+        "start": 2453.94,
+        "end": 2463.2999999999997
+    },
+    {
+        "text": " distancia es una instancia S y del problema, por el que estamos en el problema de decisión,",
+        "start": 2463.3,
+        "end": 2469.7000000000003
+    },
+    {
+        "text": " bueno en general esa cadena T para nosotros hasta vincular las soluciones del problema,",
+        "start": 2472.1800000000003,
+        "end": 2479.78
+    },
+    {
+        "text": " se nos va a rapier, pero no es más general, podría vincularse a otras condiciones,",
+        "start": 2479.78,
+        "end": 2485.98
+    },
+    {
+        "text": " dependiendo del tipo de problema, pero estoy tratando de los acciones anteriores,",
+        "start": 2486.54,
+        "end": 2492.46
+    },
+    {
+        "text": " en esa cadena T, esa denominas certificado, podría hablar de condiciones de propiedades,",
+        "start": 2492.46,
+        "end": 2500.98
+    },
+    {
+        "text": " si es una formula acción algebraica, pot ser propiedades algebraicas, que digan que sí que es",
+        "start": 2500.98,
+        "end": 2507.06
+    },
+    {
+        "text": " solución, que no representa directamente la solución, pero sí establece condiciones",
+        "start": 2507.06,
+        "end": 2515.7400000000002
+    },
+    {
+        "text": " cuando los cuales nos dicen, ah, esto es la ilusión, se puede decir algo más de mayor que la",
+        "start": 2516.4599999999996,
+        "end": 2522.9399999999996
+    },
+    {
+        "text": " quía de la solución, en el caso del curso solo vamos a ver esa ilusión, bueno entonces ese",
+        "start": 2522.9399999999996,
+        "end": 2531.7799999999997
+    },
+    {
+        "text": " mecanismo certificador va a ser un algoritmo en sí mismo, en que va a poder producir",
+        "start": 2531.7799999999997,
+        "end": 2538.7
+    },
+    {
+        "text": " esa comprobarla certificado va a ser un algoritmo a sí mismo y luego vamos a denominar por",
+        "start": 2539.2599999999998,
+        "end": 2545.8599999999997
+    },
+    {
+        "text": " la detrabema succula, se vamos a decir que un algoritmo B es un certificado deficiente para",
+        "start": 2545.8599999999997,
+        "end": 2554.5
+    },
+    {
+        "text": " un problema X, si se cumplen dos cosas, primero que el algoritmo es un algoritmo de tiempo con",
+        "start": 2554.5,
+        "end": 2561.7
+    },
+    {
+        "text": " el inomial, pues que va a tener dos argumentos de entrada, o sea que S y T son parámetros de entrada",
+        "start": 2561.7,
+        "end": 2570.7
+    },
+    {
+        "text": " en el gory, además si algoritmo funciona de talfop, que es lo que está condicionado de la parte",
+        "start": 2570.7,
+        "end": 2581.98
+    },
+    {
+        "text": " de dos, tenemos una función polinomial de 9p, tal que para cada cadena S, la distancia,",
+        "start": 2581.98,
+        "end": 2591.22
+    },
+    {
+        "text": " es decir una distancia del problema, se cumple que S es pertenece a X, es decir que es una",
+        "start": 2591.22,
+        "end": 2597.62
+    },
+    {
+        "text": " instancia así del problema, si solo si existe una cadena T, o sea existe un certificado,",
+        "start": 2597.62,
+        "end": 2604.34
+    },
+    {
+        "text": " tal que la cantidad de elemento del certificado, o sea la cantidad de bits que lo compones, está",
+        "start": 2604.34,
+        "end": 2611.06
+    },
+    {
+        "text": " cortado por un polinomial del tamaño de la entrada, y además el algoritmo certificador",
+        "start": 2611.06,
+        "end": 2622.14
+    },
+    {
+        "text": " comproe dado de la entrada S y el certificado T retornan así, es un certificado, dice que S es",
+        "start": 2622.14,
+        "end": 2635.18
+    },
+    {
+        "text": " una entrada S y el problema. Sí, con esto formalizamos ese día que vimos antes sobre el problema",
+        "start": 2635.18,
+        "end": 2642.58
+    },
+    {
+        "text": " independencia y sobre el problema de Teresa, es un mecanismo algoritmico que tiene la característica",
+        "start": 2642.58,
+        "end": 2653.66
+    },
+    {
+        "text": " de que está cortado polinomialmente en el tamaño de la entrada, su dimensión, el algoritmo",
+        "start": 2653.66,
+        "end": 2662.8599999999997
+    },
+    {
+        "text": " tiene un tiempo de ejecución en sí mismo polinomial y además produce una salida S y tienes",
+        "start": 2662.86,
+        "end": 2668.1800000000003
+    },
+    {
+        "text": " esas tres cosas, duda hasta acá, me pregunto el problema, o sea si te puede ser medio abstracto,",
+        "start": 2668.1800000000003,
+        "end": 2679.34
+    },
+    {
+        "text": " vemos un ejemplo, y ahora, por ejemplo, para el problema SAT, Teresa el certificado es la",
+        "start": 2679.34,
+        "end": 2687.2200000000003
+    },
+    {
+        "text": " asignación de los valores de la variables, la cadena S es la definición del problema, es la instancia",
+        "start": 2687.22,
+        "end": 2696.7
+    },
+    {
+        "text": " del problema, ahí tenemos las variables que lo componen, tenemos que en eso en los términos,",
+        "start": 2696.7,
+        "end": 2703.66
+    },
+    {
+        "text": " quienes son las clavuzulas, como se vinculan todos los estrellos, en la cadena T tenemos la solución",
+        "start": 2703.66,
+        "end": 2710.54
+    },
+    {
+        "text": " lo que hicimos hoy, vamos a tan mal, los valores de verdad, que tiene cada una de las variables,",
+        "start": 2710.54,
+        "end": 2716.06
+    },
+    {
+        "text": " entonces el certificador en el algoritmo B, vean que cumple que lo que tiene que hacer es lo que",
+        "start": 2719.02,
+        "end": 2725.46
+    },
+    {
+        "text": " hicimos hoy, tomar cada uno esos valores, evaluar los términos, después aplicar la conjunción de",
+        "start": 2725.46,
+        "end": 2735.3
+    },
+    {
+        "text": " todos los términos, construir las clavuzulas y armar la conjunción de las clavuzulas, y eso es lo que",
+        "start": 2735.3,
+        "end": 2743.86
+    },
+    {
+        "text": " está haciendo el certificador, es como que dicen verificando la solución, bueno, como pueden ver,",
+        "start": 2743.86,
+        "end": 2749.94
+    },
+    {
+        "text": " es un algoritmo polinomial, como ya vimos, porque tiene un número de operaciones que es asintótico",
+        "start": 2749.94,
+        "end": 2758.5800000000004
+    },
+    {
+        "text": " en N, N, N, bueno, vamos a producir una respuesta así, porque si la entancia es pertenece el conjunto,",
+        "start": 2758.58,
+        "end": 2767.22
+    },
+    {
+        "text": " entonces sabemos que va a haber algún certificado que la va a haberificado, va a tener este",
+        "start": 2767.22,
+        "end": 2773.46
+    },
+    {
+        "text": " respuesta así, bueno de forma equivalente, el certificado para el problema de independencia, el",
+        "start": 2774.46,
+        "end": 2783.14
+    },
+    {
+        "text": " certificado T es el conjunto de su ilusión de esas al menos cabartices que te verifican el problema de",
+        "start": 2783.14,
+        "end": 2789.42
+    },
+    {
+        "text": " decisión, ¿no? Bueno, el certificado lo que hace es comprobar que ese son conjunto de vértices,",
+        "start": 2789.42,
+        "end": 2795.8599999999997
+    },
+    {
+        "text": " parece ser un conjunto de vértices, que ninguna de la lista conecta, parece posible de eso,",
+        "start": 2795.8599999999997,
+        "end": 2803.62
+    },
+    {
+        "text": " se te dio le da el certificador, es una formalización de todo ese concepto, es un nuevo algoritmo,",
+        "start": 2803.62,
+        "end": 2815.9
+    },
+    {
+        "text": " que se tiene que juntar en tiempo polinomial, el volumen tofése y además, bueno, nos paranitiza que",
+        "start": 2815.9,
+        "end": 2828.98
+    },
+    {
+        "text": " he dado una entrada a ese certificado T, va a existir un certificado T, tal que si aplicamos el algoritmo,",
+        "start": 2828.98,
+        "end": 2836.38
+    },
+    {
+        "text": " va a producir un valor sí, bueno, vean que toda esta definición de certificador lo que haces",
+        "start": 2836.38,
+        "end": 2845.62
+    },
+    {
+        "text": " garantizarnos que todas esas operaciones se realizan en tiempo polinomial, que mantenimos el concepto",
+        "start": 2845.62,
+        "end": 2852.9
+    },
+    {
+        "text": " de que bueno, todo está cotado polinomial, el certificador no se va a ir más allá de algo",
+        "start": 2852.9,
+        "end": 2859.5
+    },
+    {
+        "text": " polinomial, eso es lo central entonces, dudas preguntas, atacar, bueno, y con esta formalización,",
+        "start": 2859.5,
+        "end": 2884.98
+    },
+    {
+        "text": " el concepto de poder verificar, comprobar una solución, que es la existencia del certificador",
+        "start": 2884.98,
+        "end": 2891.78
+    },
+    {
+        "text": " eficiente, nos permite definir la clase central de todo esto, que es la clase NP, la clase de problemas",
+        "start": 2891.78,
+        "end": 2904.06
+    },
+    {
+        "text": " NP se define como el conjunto, de todos los problemas de decisión para los que existe un certificador",
+        "start": 2904.06,
+        "end": 2913.3
+    },
+    {
+        "text": " eficiente, este es eso, o sea, nosotros vamos a buscar tebolizado, esta es la forma de",
+        "start": 2913.3,
+        "end": 2924.98
+    },
+    {
+        "text": " categorizarlo porque el certificador eficiente nos va a permitir categorizarlos a todos, y bueno, esa",
+        "start": 2924.98,
+        "end": 2941.5
+    },
+    {
+        "text": " clase se denomina NP, entonces tenemos una primera proposición que bueno da la definición",
+        "start": 2941.5,
+        "end": 2950.14
+    },
+    {
+        "text": " de la clase de problemas P, aquellos que tenían, tienen algoritmo de resolución polinomial,",
+        "start": 2950.14,
+        "end": 2958.74
+    },
+    {
+        "text": " se va a firmar que P es un conjunto, la clase de problemas P es un zucodo Junta de la clase de",
+        "start": 2958.74,
+        "end": 2967.26
+    },
+    {
+        "text": " problemas NP, esa es una primera propiedad, la chanta frente a antes, como que empieza a",
+        "start": 2967.26,
+        "end": 2974.94
+    },
+    {
+        "text": " vincular las clases, bueno, y bueno, ¿cómo se prueba esto? A partir de las definiciones de",
+        "start": 2974.94,
+        "end": 2981.0600000000004
+    },
+    {
+        "text": " que hemos visto anteriormente, cuando tenemos un dado un problema P, da un problema X,",
+        "start": 2981.0600000000004,
+        "end": 2987.6200000000003
+    },
+    {
+        "text": " para que te deciente a la clase P, nosotros sabemos que existe un algoritmo A de tiempo",
+        "start": 2987.6200000000003,
+        "end": 2992.46
+    },
+    {
+        "text": " polinomial que lo resolde, porque esa es una definición de clases, ahora demostrar que",
+        "start": 2992.46,
+        "end": 2997.34
+    },
+    {
+        "text": " ese mismo problema, para tenencia de la clase NP, implica demostrar como vimos anteriormente que",
+        "start": 2997.34,
+        "end": 3004.82
+    },
+    {
+        "text": " es una definición que existe un certificador eficiente para el problema, bueno, ¿cómo lo",
+        "start": 3004.82,
+        "end": 3010.42
+    },
+    {
+        "text": " construimos? Es ese planteo, bueno, el certificador este B se puede construir directamente a partir",
+        "start": 3010.42,
+        "end": 3017.5
+    },
+    {
+        "text": " de la algoritmo A, de la algoritmo que resuelve el problema, dado que pertenece a la clase P,",
+        "start": 3017.5,
+        "end": 3022.66
+    },
+    {
+        "text": " porque ya nos garantiza, si tomamos ese algoritmo que bebas al polinomial,",
+        "start": 3025.42,
+        "end": 3032.22
+    },
+    {
+        "text": " ¿no? Sí, lo construimos B, a partir de la algoritmo de polinomial, lo usamos directamente,",
+        "start": 3032.22,
+        "end": 3038.78
+    },
+    {
+        "text": " entonces supongo que estén en una cadena, la estrada del problema XS, entonces para cada T,",
+        "start": 3039.34,
+        "end": 3050.5400000000004
+    },
+    {
+        "text": " para acá certificado T, tal que la dimensión de T está cotada por un polinomial,",
+        "start": 3053.82,
+        "end": 3060.78
+    },
+    {
+        "text": " en la dimensión de S, nosotros vamos a tener que el B de ST, que es el mismo que la, que",
+        "start": 3061.34,
+        "end": 3069.3
+    },
+    {
+        "text": " el problema, no da resultado sí, porque ha resolvido el problema, y bueno, por otro lado,",
+        "start": 3069.3,
+        "end": 3080.02
+    },
+    {
+        "text": " si el X, perdón el S, no pertenece a la AX, o sea que no es un problema que lo define,",
+        "start": 3080.02,
+        "end": 3089.34
+    },
+    {
+        "text": " tenemos una entrada que no define el problema X, entonces no va a ocurrir que el B de ST va a",
+        "start": 3090.78,
+        "end": 3097.46
+    },
+    {
+        "text": " producir una salida, no, si no llega a partir de Cero, va a producir una salida, y bueno,",
+        "start": 3097.46,
+        "end": 3106.38
+    },
+    {
+        "text": " esa es la bosquejo de la prueba, como le dicen, de que P, este es un su conjunto de la P,",
+        "start": 3106.38,
+        "end": 3118.1400000000003
+    },
+    {
+        "text": " o sea que el algoritmo certificador puede ser usado para resolver el problema X,",
+        "start": 3118.14,
+        "end": 3123.5
+    },
+    {
+        "text": " usamos el perdón, el algoritmo va a como certificador para resolver el problema X,",
+        "start": 3127.98,
+        "end": 3131.98
+    },
+    {
+        "text": " esto no puede plantear, este esquema usado para la prueba de esto, nos podría plantear",
+        "start": 3135.8199999999997,
+        "end": 3140.62
+    },
+    {
+        "text": " mecanismo de resolución del problema X, obviamente hay que empezar a buscar en todas las",
+        "start": 3140.62,
+        "end": 3151.18
+    },
+    {
+        "text": " instancias posibles, no, este, perdón, da una entrada a ese, habría que de alguna forma y",
+        "start": 3151.18,
+        "end": 3159.74
+    },
+    {
+        "text": " potetizar bueno, todo lo certificado para los cuales ver si es solución, como mecanismo",
+        "start": 3159.74,
+        "end": 3166.98
+    },
+    {
+        "text": " sautivo, es como si plantearemos para accesar, por ejemplo, todas las posibles valores de verdad",
+        "start": 3166.98,
+        "end": 3174.58
+    },
+    {
+        "text": " de la genetuplas, y si te vean qué, si no, nos planteamos hipotéticamente, todas estas son",
+        "start": 3174.58,
+        "end": 3181.26
+    },
+    {
+        "text": " soluciones y aplicamos el mecánismo, el algoritmo certificador, bueno, en algún momento nos",
+        "start": 3181.26,
+        "end": 3186.78
+    },
+    {
+        "text": " va a decir que sí vamos a encontrar uno, pero esa bosque de sautiva es potencialmente exponenciada,",
+        "start": 3186.78,
+        "end": 3191.7
+    },
+    {
+        "text": " como menciono, creo que para Rafael tenemos dos, si tenemos ene variables, tenemos dos ala",
+        "start": 3192.54,
+        "end": 3199.14
+    },
+    {
+        "text": " ene posibles estados de valores de verdad de dos ala ene variable, y después hay que aplicar las",
+        "start": 3199.14,
+        "end": 3204.54
+    },
+    {
+        "text": " 3 ene clavos en las panelos de términos y las ene, menos una conjunción para las clavos,",
+        "start": 3204.54,
+        "end": 3210.22
+    },
+    {
+        "text": " pero ya exponencian en el dominio de las variables, si, si, se puede usar en la nivelismo certificador para",
+        "start": 3211.58,
+        "end": 3219.06
+    },
+    {
+        "text": " construir soluciones, pero implica una bosque de sautiva, eso es lo que está planteando,",
+        "start": 3219.06,
+        "end": 3225.18
+    },
+    {
+        "text": " es una bosque de sautiva, bueno, es como comentario, en correto a la teoría de todo esto,",
+        "start": 3225.18,
+        "end": 3231.82
+    },
+    {
+        "text": " y que viene un poco a tema, ese proceso de bosque, eso es de bueno, si yo puedo usar el",
+        "start": 3233.22,
+        "end": 3239.42
+    },
+    {
+        "text": " engolismo certificador para resolver el problema en sí, es como un algoritmo que no determinista,",
+        "start": 3240.42,
+        "end": 3248.54
+    },
+    {
+        "text": " o sea, se va a expandir, como dice, conceptualmente ponense a mí, bueno, eso no va a haber más adelante,",
+        "start": 3248.54,
+        "end": 3255.86
+    },
+    {
+        "text": " que si que impara con lo que se le vino una máquina de Turing, que se dice no de terminista,",
+        "start": 3255.86,
+        "end": 3261.98
+    },
+    {
+        "text": " o sea, cuando una máquina de Turing, este es un modelo computacional, una máquina de Turing de",
+        "start": 3261.98,
+        "end": 3267.02
+    },
+    {
+        "text": " terminista, modelo computacional que está haciendo pasos según el estado de un algoritmo,",
+        "start": 3267.02,
+        "end": 3272.46
+    },
+    {
+        "text": " que lo que se va leyendo, lo va haciendo en forma de terminista, o sea, hay un único camino posible,",
+        "start": 3273.34,
+        "end": 3279.66
+    },
+    {
+        "text": " en los algoritmos no de terministas, lo que ocurre que dado en el estado de situación se puede",
+        "start": 3279.66,
+        "end": 3284.62
+    },
+    {
+        "text": " ramificar y abrir un árbol de posibilidades, soluciones posibles, de potenciales, derivaciones,",
+        "start": 3284.62,
+        "end": 3291.18
+    },
+    {
+        "text": " del cálculo de sa máquina, ¿no te voy a decir? Bueno, de ahí, de desajar, todo ese desarrollo,",
+        "start": 3291.18,
+        "end": 3298.54
+    },
+    {
+        "text": " que es parte de lo que se denomina teoría de automatas, es que se denomina el nombre de esta clase,",
+        "start": 3298.54,
+        "end": 3303.5
+    },
+    {
+        "text": " la clase NPN proviene de la cálculo de NPN, que en español es tiempo polinomial, no determinista,",
+        "start": 3304.7799999999997,
+        "end": 3314.86
+    },
+    {
+        "text": " no polinomial de deterministic time, y esto es lo que significa NPN, no significa solo no polinomial,",
+        "start": 3314.86,
+        "end": 3322.86
+    },
+    {
+        "text": " no porque a revés, ahí adentro va a haber dentro de la clase P, vamos a ver un poco más adelante,",
+        "start": 3322.86,
+        "end": 3328.3
+    },
+    {
+        "text": " a ver algoritmos para los cuales no sabemos si existe resolución en tiempo polinomial, lo único",
+        "start": 3328.3,
+        "end": 3335.58
+    },
+    {
+        "text": " que sabemos de esta clase es lo que la define, que si sabemos que existe un certificador eficiente para",
+        "start": 3335.58,
+        "end": 3341.98
+    },
+    {
+        "text": " todo esto es un problema, que si sabemos que se ejecuta en tiempo de polinomial, pero solo el",
+        "start": 3341.98,
+        "end": 3348.06
+    },
+    {
+        "text": " certificador no es resolución, por eso es el nombre, que es un poco con un uso, quizás, pero deriva de todo lo que",
+        "start": 3348.06,
+        "end": 3355.5
+    },
+    {
+        "text": " este teoría de automata que lo van a ver más adelante, porque todos este, en la parte de estructuras,",
+        "start": 3355.5,
+        "end": 3364.06
+    },
+    {
+        "text": " todo una jerarquía y de estructura, que se denomina las máquinas de ture, los automatas de pulsado,",
+        "start": 3364.86,
+        "end": 3371.74
+    },
+    {
+        "text": " máquinas de tado finista, todo lo que es la lógica con minatoria, que más conocieron algo",
+        "start": 3372.7,
+        "end": 3379.8599999999997
+    },
+    {
+        "text": " de la lógica de eso, pero no hay uno de esos temas, esto es lo que yo me voy a ver,",
+        "start": 3384.66,
+        "end": 3386.62
+    },
+    {
+        "text": " todavía no, bueno, es bueno ver más adelante, bueno, y o sea que existe un mundo para leerlo,",
+        "start": 3386.62,
+        "end": 3400.18
+    },
+    {
+        "text": " este mundo que estamos viendo acá, que está derivado por ese otro lado, que es equivalente a esto,",
+        "start": 3400.18,
+        "end": 3408.3399999999997
+    },
+    {
+        "text": " ahí va a cerrar de nuevo la teoría con lo que estamos viendo acá, más y el desarrollo de todo",
+        "start": 3408.3399999999997,
+        "end": 3415.74
+    },
+    {
+        "text": " eso en parte vino de ese lado, no vino del lado de la optimización, como estamos viendo acá,",
+        "start": 3415.74,
+        "end": 3420.8999999999996
+    },
+    {
+        "text": " los problemas de optimización, sino que vino del lado del problema de satisfacibilidad,",
+        "start": 3420.8999999999996,
+        "end": 3425.58
+    },
+    {
+        "text": " bueno, dudas, preguntas hasta acá,",
+        "start": 3427.4599999999996,
+        "end": 3429.06
+    },
+    {
+        "text": " bueno, entonces tenemos nosotros en esa primera situación acá, que es importante y el",
+        "start": 3429.06,
+        "end": 3442.74
+    },
+    {
+        "text": " como la representan con una notación, que es esto, si lo ven con una clase, lo dibujamos en un diagrama,",
+        "start": 3442.74,
+        "end": 3454.4199999999996
+    },
+    {
+        "text": " por favor, disculpada, eso de teoría de automata sin máquina de ture, en eso sean algún curso de",
+        "start": 3458.9399999999996,
+        "end": 3466.58
+    },
+    {
+        "text": " la finjo, se da más adelante, lo van a ver en algún curso, no me acuerdo si queda en alguno de los",
+        "start": 3466.58,
+        "end": 3473.34
+    },
+    {
+        "text": " cursos obligatorios, pero en las electivas están, si les interesan esas temas hay idea de quiler,",
+        "start": 3473.34,
+        "end": 3479.74
+    },
+    {
+        "text": " esa es un nombre de una elequía como para no haber dado el tema, ahora no puedo acordar en cuál es la que",
+        "start": 3480.74,
+        "end": 3486.38
+    },
+    {
+        "text": " se estaba dando esa, pues ya hace tiempo, pero no puedo acordar, pero sí, más la reformulación,",
+        "start": 3486.38,
+        "end": 3499.38
+    },
+    {
+        "text": " si se está dando un poco de nombre, si lo dibujo para los próximos,",
+        "start": 3500.82,
+        "end": 3505.1400000000003
+    },
+    {
+        "text": " ok, gracias, bueno, lo que les quería decir la carrera, a una primera,",
+        "start": 3505.14,
+        "end": 3514.14
+    },
+    {
+        "text": " bueno, la proposición de esta es clara, tenemos representado esto, tenemos como dice si buscamos el",
+        "start": 3524.14,
+        "end": 3532.42
+    },
+    {
+        "text": " diagrama de clases esto, una gran clase que tenemos nosotros que es la clase Np,",
+        "start": 3532.42,
+        "end": 3544.1800000000003
+    },
+    {
+        "text": " si, están todos los problemas para las cuales existen un certificado, nosotros sabemos que para",
+        "start": 3547.1800000000003,
+        "end": 3552.62
+    },
+    {
+        "text": " alguno de ellos, ya estamos dentro de P, tenemos dentro de Np tenemos una clase P,",
+        "start": 3552.62,
+        "end": 3560.42
+    },
+    {
+        "text": " que sabemos que tiene la resolución en tiempo policleonomial, existe un algoritmo de tiempo",
+        "start": 3560.42,
+        "end": 3568.06
+    },
+    {
+        "text": " policleonomial que la resuelve, pero la duda que nos queda es, existe algún problema acá,",
+        "start": 3568.06,
+        "end": 3579.02
+    },
+    {
+        "text": " realmente, de este lado, algún problema en Np que no parten ese apen, bueno, y ese es todo",
+        "start": 3579.02,
+        "end": 3588.62
+    },
+    {
+        "text": " un desafío que enfrenta a toda esta teoría, que lo vamos a discutir un poco para otro,",
+        "start": 3588.62,
+        "end": 3599.46
+    },
+    {
+        "text": " bueno, se nos puede plantear una pregunta, existe realmente un problema en Np, o sea en esos problemas",
+        "start": 3599.46,
+        "end": 3606.2599999999998
+    },
+    {
+        "text": " que sabemos para los cuales sabemos que existe un certificador de eficientes que no pertenezca",
+        "start": 3606.26,
+        "end": 3610.34
+    },
+    {
+        "text": " P, bueno, hasta el momento no se han podido mostrar que los problemas que no han podido resolverse",
+        "start": 3610.34,
+        "end": 3619.5800000000004
+    },
+    {
+        "text": " eficientemente, o sea, aquí se os cristán, sabemos que no están en P, requieran realmente un",
+        "start": 3619.5800000000004,
+        "end": 3625.0200000000004
+    },
+    {
+        "text": " tiempo super policleonomial para resolver, o sea, para que esté fuera entre la diferencia de Np",
+        "start": 3625.0200000000004,
+        "end": 3633.82
+    },
+    {
+        "text": " y Np, esto es una de las limitantes que tiene esta situación actual, no se han podido probar,",
+        "start": 3633.82,
+        "end": 3642.26
+    },
+    {
+        "text": " o sea, que exista un problema en Np que no pertenezca P, no se han podido determinar,",
+        "start": 3642.26,
+        "end": 3648.38
+    },
+    {
+        "text": " más, se puede uno podría llegar a ser plantear si P es igual a Np, o sea que P abarca toda la",
+        "start": 3650.98,
+        "end": 3657.78
+    },
+    {
+        "text": " clase Np, no podemos saber esto y como lo vimos ya en las clases anteriores,",
+        "start": 3657.78,
+        "end": 3672.1800000000003
+    },
+    {
+        "text": " en términos generales de todos estos problemas, de la deca, de la deca, de 70,",
+        "start": 3672.1800000000003,
+        "end": 3678.42
+    },
+    {
+        "text": " principios del 70, lo que se conjetura que son distintas, o sea que realmente hay problemas en",
+        "start": 3678.42,
+        "end": 3685.6600000000003
+    },
+    {
+        "text": " Np que no pertenezan a P, esa es la situación que tenemos que también, o sea que realmente",
+        "start": 3685.66,
+        "end": 3694.42
+    },
+    {
+        "text": " que P no llega a ser igual a Np, porque el problema fuera de Np, que no tiene la intercensión",
+        "start": 3694.42,
+        "end": 3706.06
+    },
+    {
+        "text": " en la lula, porque si no tiene una forma, entonces como todavía no hemos podido probar esto,",
+        "start": 3706.06,
+        "end": 3713.98
+    },
+    {
+        "text": " con los problemas para los cuales no se ha podido descubrir que tengan soluciones fiscientes,",
+        "start": 3714.82,
+        "end": 3722.5
+    },
+    {
+        "text": " como ya vimos, ejemplo con los problemas, como independen Z, Vertescover, ZCover, ZPacking,",
+        "start": 3722.5,
+        "end": 3733.2999999999997
+    },
+    {
+        "text": " Tres SAC, para todos ellos, lo que se ha hecho es de alguna forma agruparlos en su grado",
+        "start": 3734.02,
+        "end": 3743.26
+    },
+    {
+        "text": " dificultad, ¿no? Como no podemos probar que ninguno de ellos parten es KP, lo que se está haciendo",
+        "start": 3743.26,
+        "end": 3752.34
+    },
+    {
+        "text": " es de alguna forma categorizarlos todos en una clase particular, como de bueno problemas",
+        "start": 3752.34,
+        "end": 3757.94
+    },
+    {
+        "text": " intratables, problemas difíciles, que todavía no hemos podido, para los cuales no hemos podido",
+        "start": 3757.94,
+        "end": 3764.7400000000002
+    },
+    {
+        "text": " insuizar, determinar si realmente pertenecen a Np, bueno en el interior, lo que se está haciendo",
+        "start": 3764.7400000000002,
+        "end": 3772.66
+    },
+    {
+        "text": " es agruparlos todos a partir de lo que como vimos anteriormente es el mercalismo de resolución,",
+        "start": 3772.66,
+        "end": 3779.18
+    },
+    {
+        "text": " sobre aquellos problemas que no hemos podido encontrar, entonces sabemos que son difíciles,",
+        "start": 3780.18,
+        "end": 3787.2599999999998
+    },
+    {
+        "text": " entonces los agruparlos, bueno, ¿cómo los agruparlos? Bueno, los agruparlos en una nueva clase",
+        "start": 3787.2599999999998,
+        "end": 3796.02
+    },
+    {
+        "text": " que se denomina Np completo, es una clase particular, ¿no? Entonces, que lo que va a ser es",
+        "start": 3797.02,
+        "end": 3803.8999999999996
+    },
+    {
+        "text": " formalizar todo ese conjunto de problemas más difíciles, y para lo cual realmente usamos el",
+        "start": 3804.46,
+        "end": 3813.1
+    },
+    {
+        "text": " mercalismo reducción perlino mundial, como vimos se acuerdan por el lado del contrato resistproco,",
+        "start": 3813.1,
+        "end": 3819.7400000000002
+    },
+    {
+        "text": " que es lo que nos interesa, entonces la definición de esta clase es la siguiente, se dice que un problema",
+        "start": 3819.7400000000002,
+        "end": 3827.7400000000002
+    },
+    {
+        "text": " esto formalmente, un problema X es difícil, o que ese problema pertenece a la clase Np completo,",
+        "start": 3827.74,
+        "end": 3835.54
+    },
+    {
+        "text": " sí cumple dos condiciones, la primera es que el problema pertenezca Np, o sea vean que en el",
+        "start": 3835.54,
+        "end": 3845.62
+    },
+    {
+        "text": " apartado dice está pidiendo que ese problema tenga un certificador eficiente,",
+        "start": 3845.62,
+        "end": 3850.3399999999997
+    },
+    {
+        "text": " que ya sabemos que bueno, que existe un agruelismo en tiempo con ilumial, pero da una entrada",
+        "start": 3851.3,
+        "end": 3858.42
+    },
+    {
+        "text": " de ese y un certificado de produce una salida, y bueno el certificado de más tiene que estar acotado",
+        "start": 3858.42,
+        "end": 3863.54
+    },
+    {
+        "text": " olinomialmente por el tamaño de entrada, sí, que nosotros, de estos problemas para que tienen",
+        "start": 3863.54,
+        "end": 3872.34
+    },
+    {
+        "text": " que pertencer a Np, sí que tienen que ser problemas en los cuales que da una solución,",
+        "start": 3872.34,
+        "end": 3877.38
+    },
+    {
+        "text": " la podemos determinar eficientemente, que es comprobar que se lección, como vimos al comienzo,",
+        "start": 3877.38,
+        "end": 3882.5
+    },
+    {
+        "text": " lo hicimos para ver problemes independiencial y para el problema trezado, tenemos que edificar eso,",
+        "start": 3882.5,
+        "end": 3888.54
+    },
+    {
+        "text": " esa es la primera, la segunda y que para todo problema y perteneciente a Np, se tiene que poder",
+        "start": 3888.54,
+        "end": 3902.7400000000002
+    },
+    {
+        "text": " reducir el problema y se tiene que poder reducir en tiempo con ilumial al problema X,",
+        "start": 3902.74,
+        "end": 3909.14
+    },
+    {
+        "text": " esto es como bien, es un momento, la de eso, realmente voy a hacer un diogito acá para que",
+        "start": 3911.8599999999997,
+        "end": 3924.66
+    },
+    {
+        "text": " lo puedan decidir, volviendo, tenemos la clase acá, Np, todos los problemas que tiene certificadores",
+        "start": 3924.66,
+        "end": 3937.22
+    },
+    {
+        "text": " y abductos exicientes, la miracle chavada y lasulades tenemos",
+        "start": 3937.22,
+        "end": 3966.4599999999996
+    },
+    {
+        "text": " porque ya sabemos que tiene que proteger el np, y bueno tiene que tener la característica,",
+        "start": 3967.22,
+        "end": 3974.22
+    },
+    {
+        "text": " que haya que jugar aquí el problema de acá, un problema y de np, yo tengo que un problema",
+        "start": 3974.22,
+        "end": 3983.22
+    },
+    {
+        "text": " que un problema acá, este es un problema de x, no, se puede ser acá, este no es un problema",
+        "start": 3983.22,
+        "end": 3990.22
+    },
+    {
+        "text": " esto del cam, es una reducción poniendo miel, para todo y ni su uno,",
+        "start": 4001.22,
+        "end": 4010.22
+    },
+    {
+        "text": " acuerdanse en que por acá está va a p, a barca los de p, y también a barca,",
+        "start": 4014.22,
+        "end": 4022.22
+    },
+    {
+        "text": " este y su dos también tienen que cumplir eso,",
+        "start": 4025.22,
+        "end": 4027.22
+    },
+    {
+        "text": " y también a barca los que están en el propio np completo,",
+        "start": 4027.22,
+        "end": 4040.22
+    },
+    {
+        "text": " con el brDY en la stabbed, y encima delío y está Wholeheart,",
+        "start": 4040.22,
+        "end": 4065.22
+    },
+    {
+        "text": " Ve que es súper exigente, todo problema en NCP tiene que ser poninomialmente reducible",
+        "start": 4065.22,
+        "end": 4085.74
+    },
+    {
+        "text": " del problema que partenese a NCP completo, para que ese problema se lleva a decir que en NCP completo si existe,",
+        "start": 4085.74,
+        "end": 4091.7799999999997
+    },
+    {
+        "text": " nosotros sabemos que el problema de este es difícil y bueno, él no va a ser menos difícil que ningún",
+        "start": 4098.74,
+        "end": 4104.26
+    },
+    {
+        "text": " otro problema que tal hago en su clase, esa es la idea, pero es una definición súper exigente,",
+        "start": 4104.26,
+        "end": 4111.98
+    },
+    {
+        "text": " es súper exigente, vean que categorizar problema a partir de esto es realmente un esfuerzo enorme,",
+        "start": 4112.98,
+        "end": 4122.78
+    },
+    {
+        "text": " bueno lo que vamos a ver de acabrar adelante es cómo vamos a manejar esto para realmente poder",
+        "start": 4122.78,
+        "end": 4129.139999999999
+    },
+    {
+        "text": " cautivizar problemas en NCP completo, duas preguntas que tengan acá,",
+        "start": 4129.14,
+        "end": 4134.740000000001
+    },
+    {
+        "text": " seguimos, bueno vamos a tener otra propiedad,",
+        "start": 4141.740000000001,
+        "end": 4147.26
+    },
+    {
+        "text": " que es la siguiente, supongo así que los tenemos que tenemos ya definidas esta clase en NCP completo,",
+        "start": 4149.42,
+        "end": 4155.9800000000005
+    },
+    {
+        "text": " tiene un problema exigente, que partenese a ella, entonces ese problema es resolvable, el tiempo",
+        "start": 4155.98,
+        "end": 4163.459999999999
+    },
+    {
+        "text": " poninomial solo sí la clase P en el esquema anterior se expandió tanto que un cubrió todo NCP,",
+        "start": 4163.459999999999,
+        "end": 4170.78
+    },
+    {
+        "text": " solo bajo esa condición el problema va a tener resoluciones de tiempo poninomial,",
+        "start": 4172.139999999999,
+        "end": 4178.0599999999995
+    },
+    {
+        "text": " y esto la prueba se puede hacer a partir de las definiciones, como partenese,",
+        "start": 4178.06,
+        "end": 4188.620000000001
+    },
+    {
+        "text": " si se verifica esto entonces bueno, sabemos que en la clase de problemas P tiene una resolución",
+        "start": 4192.620000000001,
+        "end": 4197.5
+    },
+    {
+        "text": " poninomial entonces el problema va a tener resolución poninomial,",
+        "start": 4197.5,
+        "end": 4204.1
+    },
+    {
+        "text": " bueno si esto no se cumple, o sea si existe algún problema en NCP que no se puede resolver en tiempo",
+        "start": 4207.82,
+        "end": 4215.58
+    },
+    {
+        "text": " poninomial,",
+        "start": 4215.58,
+        "end": 4216.42
+    },
+    {
+        "text": " entonces no hay problema en NCP completo que se pueda resolver en el problema poninomial,",
+        "start": 4217.42,
+        "end": 4228.42
+    },
+    {
+        "text": " es un contrado siempre,",
+        "start": 4235.86,
+        "end": 4237.22
+    },
+    {
+        "text": " bueno,",
+        "start": 4247.34,
+        "end": 4271.46
+    },
+    {
+        "text": " Bueno, entonces probar que un problema pertenece en el p completo implica que ese problema",
+        "start": 4271.46,
+        "end": 4295.1
+    },
+    {
+        "text": " puede codificar cualquier problema en Np.",
+        "start": 4295.1,
+        "end": 4296.9400000000005
+    },
+    {
+        "text": " Entonces lo que para poder realmente aplicar esta definición, lo que nosotros tenemos la categorización",
+        "start": 4299.4400000000005,
+        "end": 4312.14
+    },
+    {
+        "text": " de esos problemas, pero lo que necesitamos es tener para poder aplicar lo para poder realmente",
+        "start": 4312.14,
+        "end": 4320.3
+    },
+    {
+        "text": " determinar la clase Np completo, lo que precisamos es un primer problema en Np, en Np completo.",
+        "start": 4320.3,
+        "end": 4327.26
+    },
+    {
+        "text": " Entonces si nosotros tenemos un problema en Np completo, podemos derivar que otros problemas",
+        "start": 4329.42,
+        "end": 4337.46
+    },
+    {
+        "text": " son en el completo reduciendo ese primer problema en Np completo a los otros candidatos de Np",
+        "start": 4337.46,
+        "end": 4344.54
+    },
+    {
+        "text": " completo. Entonces una forma de que nos va a ayudar a simplificar en vez de tener que aplicar la",
+        "start": 4344.54,
+        "end": 4353.3
+    },
+    {
+        "text": " propiedad 2 para categorizar los problemas, que es una propiedad exhaustiva y enormemente",
+        "start": 4353.3,
+        "end": 4360.42
+    },
+    {
+        "text": " decisiva. Lo que necesitamos es conseguir uno primero y después hacer la reducción por el lado",
+        "start": 4360.42,
+        "end": 4372.9800000000005
+    },
+    {
+        "text": " de la negación de que no sea resolublo con inomialmente. Entonces vamos a ver un primer problema",
+        "start": 4372.9800000000005,
+        "end": 4381.58
+    },
+    {
+        "text": " que pertenece en Np completo, que tiene que cumplir esta característica.",
+        "start": 4381.58,
+        "end": 4387.62
+    },
+    {
+        "text": " Entonces vamos a aprender eso en el primer problema. O no es ese problema, ese primer problema se llama",
+        "start": 4387.62,
+        "end": 4394.94
+    },
+    {
+        "text": " problema de satisfacilidad de circuintra y lo vamos a abreviar como CESAT.",
+        "start": 4394.94,
+        "end": 4401.82
+    },
+    {
+        "text": " Es un problema de satisfacilidad en el sentido similar a lo que era el problema de satisfacilidad,",
+        "start": 4401.82,
+        "end": 4415.78
+    },
+    {
+        "text": " la higibra buliana, pero diferencia de la higibra buliana, lo que se define a partir de elementos más",
+        "start": 4415.78,
+        "end": 4427.66
+    },
+    {
+        "text": " básicos de dispositivos electrónicos. Bueno, este problema es el problema inicial ese que nos va",
+        "start": 4427.66,
+        "end": 4437.42
+    },
+    {
+        "text": " a poder permitir aplicar la definición particularmente el paso. Y bueno, lo que vamos a hacer es presentarlo y",
+        "start": 4437.42,
+        "end": 4449.62
+    },
+    {
+        "text": " vemos que a partir de él podemos codificar cualquier problema en Np, o sea estamos en condiciones de armar",
+        "start": 4449.62,
+        "end": 4457.54
+    },
+    {
+        "text": " el apartado dos. Bueno, entonces primero lo vamos a definir, que es un circuito para definir el problema",
+        "start": 4457.54,
+        "end": 4467.9
+    },
+    {
+        "text": " de satisfacilidad, satisfacilidad, no hay buen problema. Entonces un circuito es bien del",
+        "start": 4467.9,
+        "end": 4473.5
+    },
+    {
+        "text": " modo de la electrónica, es un dispositivo físico que implementa las operaciones lógicas más",
+        "start": 4473.5,
+        "end": 4480.42
+    },
+    {
+        "text": " e conocida el operador ANS, en el poco en inglés porque no hay más caras, que está determinado por el",
+        "start": 4480.42,
+        "end": 4489.66
+    },
+    {
+        "text": " la frechase arriba, el tréfon serroído, el operador OR, la frechase abajo, la cabeza del frechase abajo y el",
+        "start": 4489.66,
+        "end": 4498.14
+    },
+    {
+        "text": " operador NO, con la negación, que en la jerga de la electrónica se denomina como puertas lógicas.",
+        "start": 4498.14,
+        "end": 4507.38
+    },
+    {
+        "text": " Uno lo que tiene es, por ejemplo, el operador ANS tiene dos entradas, el operador que tiene dos",
+        "start": 4509.860000000001,
+        "end": 4518.3
+    },
+    {
+        "text": " paramentos y una salida, lo que dice es si el operador ANS, si bueno al menos una de las dos entradas es",
+        "start": 4518.3,
+        "end": 4526.18
+    },
+    {
+        "text": " uno, en términos de circuito, en verdad era, para que la salida sea uno, las dos entradas tienen que ser",
+        "start": 4526.900000000001,
+        "end": 4535.700000000001
+    },
+    {
+        "text": " uno, si una de las dos entradas es cero, la salida va a ser, el hilo, bueno el hilo es bueno,",
+        "start": 4535.700000000001,
+        "end": 4542.66
+    },
+    {
+        "text": " dado entradas, si al menos una es uno, la salida va a ser uno y el operador NO, es un operador de",
+        "start": 4542.66,
+        "end": 4551.4400000000005
+    },
+    {
+        "text": " solo argumento, nadie bueno dado la entrada, lo que hace es invertir.",
+        "start": 4551.5199999999995,
+        "end": 4555.799999999999
+    },
+    {
+        "text": " Entonces lo que vamos a tener es, a partir de estas tres puertas lógicas,",
+        "start": 4562.919999999999,
+        "end": 4570.839999999999
+    },
+    {
+        "text": " lo que vamos a hacer es construir expresiones de mayor quedar aquí, entonces vamos a tener,",
+        "start": 4570.84,
+        "end": 4583.4400000000005
+    },
+    {
+        "text": " por ejemplo, un circuito, lo vuelvo para transparso acá porque de ahí, por ejemplo, vamos a tener",
+        "start": 4583.4400000000005,
+        "end": 4597.04
+    },
+    {
+        "text": " un circuito que está formado por fuentes, cuando le sé que tenemos acá fuentes,",
+        "start": 4597.04,
+        "end": 4605.96
+    },
+    {
+        "text": " vamos a dejarlo este un circuito, va a tener posible fuentes, las cuales yo tengo acá y",
+        "start": 4605.96,
+        "end": 4619.96
+    },
+    {
+        "text": " por sí, los valores de entrada, uno, cero, uno, que lo represento al circuito con un",
+        "start": 4619.96,
+        "end": 4633.76
+    },
+    {
+        "text": " gráfico dirigido, donde tengo los operadores, estos dos, dado fuentes, la enquizú, uno,",
+        "start": 4633.76,
+        "end": 4645.28
+    },
+    {
+        "text": " 2 mand Nowadays, da ruente de quiso 2 a queелamos ahora al punto de quiso 3,",
+        "start": 4645.28,
+        "end": 4650.12
+    },
+    {
+        "text": " y",
+        "start": 4675.28,
+        "end": 4679.28
+    },
+    {
+        "text": " y",
+        "start": 4679.28,
+        "end": 4683.28
+    },
+    {
+        "text": " y",
+        "start": 4683.28,
+        "end": 4687.28
+    },
+    {
+        "text": " y",
+        "start": 4687.28,
+        "end": 4691.28
+    },
+    {
+        "text": " y",
+        "start": 4691.28,
+        "end": 4695.28
+    },
+    {
+        "text": " y",
+        "start": 4695.28,
+        "end": 4699.28
+    },
+    {
+        "text": " y",
+        "start": 4699.28,
+        "end": 4703.28
+    },
+    {
+        "text": " y",
+        "start": 4703.28,
+        "end": 4705.28
+    },
+    {
+        "text": " y",
+        "start": 4705.28,
+        "end": 4707.28
+    },
+    {
+        "text": " y",
+        "start": 4707.28,
+        "end": 4711.28
+    },
+    {
+        "text": " y",
+        "start": 4711.28,
+        "end": 4713.28
+    },
+    {
+        "text": " y",
+        "start": 4713.28,
+        "end": 4715.28
+    },
+    {
+        "text": " y",
+        "start": 4715.28,
+        "end": 4717.28
+    },
+    {
+        "text": " y",
+        "start": 4717.28,
+        "end": 4719.28
+    },
+    {
+        "text": " y",
+        "start": 4719.28,
+        "end": 4723.28
+    },
+    {
+        "text": " y",
+        "start": 4723.28,
+        "end": 4727.28
+    },
+    {
+        "text": " y",
+        "start": 4727.28,
+        "end": 4729.28
+    },
+    {
+        "text": " y",
+        "start": 4729.28,
+        "end": 4731.28
+    },
+    {
+        "text": " esto es un gráfico dirigido a cíclico donde yo convino un conjunto de cinco",
+        "start": 4731.28,
+        "end": 4739.04
+    },
+    {
+        "text": " acantadas o fuentes y tal que tengo una única salida",
+        "start": 4739.04,
+        "end": 4746.639999999999
+    },
+    {
+        "text": " potencialmente muchas fuentes y un único sumidero no tiene porque ser",
+        "start": 4749.84,
+        "end": 4753.759999999999
+    },
+    {
+        "text": " rebalanceado un similético o ser cualquier cosa siempre es un gráfico dirigido",
+        "start": 4753.759999999999,
+        "end": 4757.8
+    },
+    {
+        "text": " cíclico que tiene uno único sumidero o salida bueno algunas de esas fuentes",
+        "start": 4757.8,
+        "end": 4764.360000000001
+    },
+    {
+        "text": " pueden ser cortantes como esta y quiso uno y quiso dos y tres ya tienen",
+        "start": 4764.360000000001,
+        "end": 4769.76
+    },
+    {
+        "text": " valores dados y estas pueden ser variables",
+        "start": 4769.76,
+        "end": 4773.76
+    },
+    {
+        "text": " el quisio cuatro y quiso cinco dependiendo de este son como parámetros que bueno",
+        "start": 4774.12,
+        "end": 4779.4400000000005
+    },
+    {
+        "text": " sobre ellos se lee su valor de verdad que puede ser uno aquí",
+        "start": 4779.4400000000005,
+        "end": 4785.08
+    },
+    {
+        "text": " vamos a tener bueno que estas están definidas determinadas y estas no",
+        "start": 4785.24,
+        "end": 4789.08
+    },
+    {
+        "text": " bueno esto es un gráfico dirigido a cíclico que de alguna forma que opera",
+        "start": 4792.5599999999995,
+        "end": 4801.2
+    },
+    {
+        "text": " aplicando las operaciones que son las puertas lóficas a las entradas o fuentes",
+        "start": 4802.24,
+        "end": 4808.44
+    },
+    {
+        "text": " sucesivamente hasta que obtiene el resultado en la salida",
+        "start": 4809.08,
+        "end": 4812.759999999999
+    },
+    {
+        "text": " si es un dar",
+        "start": 4816.5599999999995,
+        "end": 4817.639999999999
+    },
+    {
+        "text": " con algunas entradas que pueden estar fija y otras que quedan variables",
+        "start": 4821.44,
+        "end": 4825.48
+    },
+    {
+        "text": " es un dispositivo de esa forma",
+        "start": 4827.24,
+        "end": 4830.12
+    },
+    {
+        "text": " bueno",
+        "start": 4834.639999999999,
+        "end": 4835.24
+    },
+    {
+        "text": " vean que comparado con el problema de satisfacibilidad",
+        "start": 4835.24,
+        "end": 4843.2
+    },
+    {
+        "text": " buliana con el anterior que vimos el problema de satisfacibilidad buliana o",
+        "start": 4843.2,
+        "end": 4849.8
+    },
+    {
+        "text": " el tres ad era mucho más estricto en el sentido de que bueno teníamos una",
+        "start": 4849.8,
+        "end": 4855.4
+    },
+    {
+        "text": " estructura que tenía",
+        "start": 4855.4,
+        "end": 4857.599999999999
+    },
+    {
+        "text": " términos y cláusulas y se vinculaban entre ellos de una forma",
+        "start": 4859.08,
+        "end": 4864.48
+    },
+    {
+        "text": " formando o sea las cláusulas estaban formadas por la licenciación de los",
+        "start": 4864.48,
+        "end": 4869.24
+    },
+    {
+        "text": " términos en el caso particular del problema treinta tenían sólo tres",
+        "start": 4869.24,
+        "end": 4874.0
+    },
+    {
+        "text": " tres elementos y las cláusulas después para conseguir la solución final",
+        "start": 4874.0,
+        "end": 4878.959999999999
+    },
+    {
+        "text": " tenemos la conclusión de ellas en cambio aquí el problema en el en el circuito",
+        "start": 4878.959999999999,
+        "end": 4888.08
+    },
+    {
+        "text": " es totalmente abierto que es totalmente disponible representar lo que se",
+        "start": 4888.08,
+        "end": 4893.7
+    },
+    {
+        "text": " quiera con esos tres cuartas los",
+        "start": 4893.7,
+        "end": 4896.7
+    },
+    {
+        "text": " si cualquier problema de",
+        "start": 4896.7,
+        "end": 4899.98
+    },
+    {
+        "text": " tres ad vean que se podría codificar con un circuit no tengo que armar equivalentemente",
+        "start": 4899.98,
+        "end": 4906.9
+    },
+    {
+        "text": " con un circuit",
+        "start": 4906.9,
+        "end": 4909.179999999999
+    },
+    {
+        "text": " dudas preguntas de la formulación bueno si me factorecí del problema en sí",
+        "start": 4910.0199999999995,
+        "end": 4914.34
+    },
+    {
+        "text": " consiste en determinar ya que hay algunas entradas fija determinar",
+        "start": 4914.34,
+        "end": 4920.78
+    },
+    {
+        "text": " si existe una para la una asignación de los valores de laboriables x4 y x5",
+        "start": 4920.9,
+        "end": 4928.94
+    },
+    {
+        "text": " tal que en la salida se consiguió un valor de una es la definición del problema",
+        "start": 4928.94,
+        "end": 4937.54
+    },
+    {
+        "text": " que está presida por por esa",
+        "start": 4937.54,
+        "end": 4942.259999999999
+    },
+    {
+        "text": " alguna pregunta comentario aquí hasta acá",
+        "start": 4942.259999999999,
+        "end": 4947.099999999999
+    },
+    {
+        "text": " bueno esto ya les dije el problema de ejemplo y bueno el problema es que se ha",
+        "start": 4950.78,
+        "end": 4967.0599999999995
+    },
+    {
+        "text": " dado una asignación de valor de valores verdad para las entradas variables",
+        "start": 4967.0599999999995,
+        "end": 4973.62
+    },
+    {
+        "text": " determinar si existe alguna de ellas que implica que la salida va a ir a algún",
+        "start": 4974.58,
+        "end": 4982.38
+    },
+    {
+        "text": " el vídeo del salida sea bueno y como comentarios eso o sea vean que es un problema",
+        "start": 4982.38,
+        "end": 4990.5
+    },
+    {
+        "text": " que es mucho más general que el SAT es mucho más flexible",
+        "start": 4990.5,
+        "end": 4996.18
+    },
+    {
+        "text": " tiene una simetría con respecto a lo al tres ad",
+        "start": 4997.14,
+        "end": 5005.700000000001
+    },
+    {
+        "text": " bueno todo esto es un mundo físico",
+        "start": 5005.700000000001,
+        "end": 5008.02
+    },
+    {
+        "text": " obviamente el mundo físico bueno hay que tenerlo",
+        "start": 5019.02,
+        "end": 5021.860000000001
+    },
+    {
+        "text": " todas las entradas tienen que estar definidas como bien dice",
+        "start": 5022.38,
+        "end": 5030.94
+    },
+    {
+        "text": " el carcode el fuente tiene que estar todo tiene que estar concluido",
+        "start": 5030.94,
+        "end": 5038.099999999999
+    },
+    {
+        "text": " mientras que en el tres ad uno lo maneja de forma fritzable según",
+        "start": 5041.099999999999,
+        "end": 5046.339999999999
+    },
+    {
+        "text": " si aún quiere representar las cosas",
+        "start": 5046.860000000001,
+        "end": 5053.54
+    },
+    {
+        "text": " bueno primero que vamos a ver es bueno cómo se vincula",
+        "start": 5054.900000000001,
+        "end": 5060.14
+    },
+    {
+        "text": " cómo podemos decir que este problema es realmente un problema inicial para el",
+        "start": 5060.66,
+        "end": 5067.38
+    },
+    {
+        "text": " NP completo",
+        "start": 5067.38,
+        "end": 5069.9800000000005
+    },
+    {
+        "text": " o sea lo que debamos plantearnos bueno verifica las propiedades uno en la I y",
+        "start": 5070.339999999999,
+        "end": 5077.259999999999
+    },
+    {
+        "text": " doble y definición de NP completo bueno vamos a ellos esa es la primera",
+        "start": 5077.259999999999,
+        "end": 5083.0599999999995
+    },
+    {
+        "text": " en la proposición esta que tenemos acá en la proposición fundamental en todo lo",
+        "start": 5083.0599999999995,
+        "end": 5088.259999999999
+    },
+    {
+        "text": " que es la teoría y complejidad este tiempo la teoría y complejidad temporal",
+        "start": 5088.259999999999,
+        "end": 5097.0199999999995
+    },
+    {
+        "text": " y que bueno fue anunciado por cu que le ven en forma independiente en el año 71",
+        "start": 5098.02,
+        "end": 5104.02
+    },
+    {
+        "text": " bueno vamos a ver una bosquejo de la problema que lo que afirma es que el problema",
+        "start": 5107.38,
+        "end": 5112.660000000001
+    },
+    {
+        "text": " de esta satisfacilidad de circuito es NP completo y bueno la gran dificultad de esto es",
+        "start": 5112.660000000001,
+        "end": 5121.620000000001
+    },
+    {
+        "text": " determinar esta en la partado doble y que es en la partada más fuerte",
+        "start": 5121.62,
+        "end": 5125.94
+    },
+    {
+        "text": " que es quedado cualquier problema quedado que para todo problema en la clase NP ese",
+        "start": 5133.0599999999995,
+        "end": 5138.9
+    },
+    {
+        "text": " problema se puede reducir en tiempo por lino a mi alma el problema de satisfacilidad de circuito",
+        "start": 5138.9,
+        "end": 5144.74
+    },
+    {
+        "text": " esa es la gran desafío bueno que el problema pertenezca la clase NP y que era el primer",
+        "start": 5144.74,
+        "end": 5155.74
+    },
+    {
+        "text": " el primer apartado no es difícil de resolver porque vean que tenemos bueno el circuito va a",
+        "start": 5155.74,
+        "end": 5160.78
+    },
+    {
+        "text": " tener un número finito de entrada y va a tener un número finito de puertas lógicas bueno",
+        "start": 5160.78,
+        "end": 5166.34
+    },
+    {
+        "text": " aplicarlas todas ellas se puede hacer en tiempo colinomial o sea nosotros podemos construir",
+        "start": 5166.34,
+        "end": 5176.3
+    },
+    {
+        "text": " un certificador eficiente para para cesar bueno",
+        "start": 5176.3,
+        "end": 5183.14
+    },
+    {
+        "text": " lo que se va a plantear es entonces",
+        "start": 5188.66,
+        "end": 5190.7
+    },
+    {
+        "text": " es tratar de resolver la partada de ahí a partir de los algoritmos del trada",
+        "start": 5191.0199999999995,
+        "end": 5199.58
+    },
+    {
+        "text": " que se carrosone los problemas entonces lo que vamos a plantear es una de cualquier algoritmo",
+        "start": 5199.58,
+        "end": 5205.3
+    },
+    {
+        "text": " que tiene una entrada de NBIT y produce una respuesta si o no puede implementarse con un",
+        "start": 5205.3,
+        "end": 5212.78
+    },
+    {
+        "text": " circuito de NBIT de entrada y una serie de NBIT es eso es lo que vamos a",
+        "start": 5212.78,
+        "end": 5218.38
+    },
+    {
+        "text": " a perseguir porque esto es lo que define encierra a los problemas entonces",
+        "start": 5220.7,
+        "end": 5230.7
+    },
+    {
+        "text": " vamos a ver que el circuito es equivalente a la algoritmo cuando la salida de",
+        "start": 5230.7,
+        "end": 5238.46
+    },
+    {
+        "text": " valor uno del circuito corresponde con las entradas y una salida sí en el algoritmo",
+        "start": 5238.46,
+        "end": 5244.7
+    },
+    {
+        "text": " si un algoritmo emplea un tiempo colinomial en el impasos en el circuito lo",
+        "start": 5244.7,
+        "end": 5254.7
+    },
+    {
+        "text": " podremos implementar de forma equivalente con una cantidad colinomial de puertas lógicas",
+        "start": 5254.7,
+        "end": 5262.42
+    },
+    {
+        "text": " obviamente como les decía anteriormente en circuitos en una concesión física",
+        "start": 5264.42,
+        "end": 5268.9
+    },
+    {
+        "text": " positiva va a tener que tener la capacidad suficiente para poder representar",
+        "start": 5268.9,
+        "end": 5273.98
+    },
+    {
+        "text": " toda la variación de datos que tiene algoritmos",
+        "start": 5273.98,
+        "end": 5278.379999999999
+    },
+    {
+        "text": " pero bueno pero siempre como poder incluir un armario en circuito que tenga la",
+        "start": 5280.54,
+        "end": 5287.66
+    },
+    {
+        "text": " posibilidad de representar un algoritmo cualquiera",
+        "start": 5287.66,
+        "end": 5294.54
+    },
+    {
+        "text": " obviamente va a ser un esfuerzo, esto es como retórico, es como simulamos los pasos",
+        "start": 5295.54,
+        "end": 5305.78
+    },
+    {
+        "text": " del algoritmo van a tener que representar ese mensaje de arquía de etapas de",
+        "start": 5305.78,
+        "end": 5310.0199999999995
+    },
+    {
+        "text": " el que agrega fue dirigido a círclico que está representando en circuito",
+        "start": 5310.0199999999995,
+        "end": 5313.0199999999995
+    },
+    {
+        "text": " va a ser potertialmente muy grande pero siempre va a ser por ilumía, esa es la característica",
+        "start": 5315.0199999999995,
+        "end": 5320.42
+    },
+    {
+        "text": " entonces si ahora para demostrar el paso de acarriba la tapa de esta de la reducción",
+        "start": 5321.42,
+        "end": 5327.26
+    },
+    {
+        "text": " lo que vamos a tener es una entrada a ese, es lo que se busca es determinar si ese",
+        "start": 5327.26,
+        "end": 5334.46
+    },
+    {
+        "text": " pertenece a un problema X al problema X, entonces lo que vamos a usar es una caja negra",
+        "start": 5334.46,
+        "end": 5341.9800000000005
+    },
+    {
+        "text": " que tenemos la reducción esta X se reduce por nuevamente a cesar, supongamos que",
+        "start": 5341.9800000000005,
+        "end": 5349.3
+    },
+    {
+        "text": " tenemos, a su dimos que tenemos una caja negra que arrasuelve ese zap, entonces dado que X ya",
+        "start": 5349.3,
+        "end": 5356.74
+    },
+    {
+        "text": " sabemos que es NP, o hipótesis, entonces sabemos que X tiene un certificador eficiente",
+        "start": 5356.74,
+        "end": 5363.66
+    },
+    {
+        "text": " que está en la definición de la clase NP, entonces le demiramos a ese certificador eficiente",
+        "start": 5363.66,
+        "end": 5371.06
+    },
+    {
+        "text": " como el movimiento, entonces lo que nos planteamos es para determinar el sistema",
+        "start": 5371.06,
+        "end": 5379.3
+    },
+    {
+        "text": " una entrada a ese tamaño de cumple que es pertenece a X, se determinar si realmente",
+        "start": 5379.3,
+        "end": 5386.18
+    },
+    {
+        "text": " existe un certificado de tamaño polinomial en la entrada a N, en la entrada a ese que",
+        "start": 5386.18,
+        "end": 5392.1
+    },
+    {
+        "text": " tiene tal que BST, sino eso es lo que estamos haciendo para verificar que X pertenece",
+        "start": 5392.1,
+        "end": 5400.9800000000005
+    },
+    {
+        "text": " a NP, bueno entonces el certificador es un algoritmo que realmente va a tener un tamaño",
+        "start": 5400.9800000000005,
+        "end": 5420.660000000001
+    },
+    {
+        "text": " de entrada que es la entrada a ese que son N, y lo que le corresponde a T que es una función",
+        "start": 5420.66,
+        "end": 5429.78
+    },
+    {
+        "text": " polinomial en el tamaño de los N, con la definición de algoritmo certificador, el certificador",
+        "start": 5429.78,
+        "end": 5442.58
+    },
+    {
+        "text": " tenía que estar atado con el nivel de entrada, entonces la entrada a BST se va a tener todo",
+        "start": 5442.58,
+        "end": 5447.62
+    },
+    {
+        "text": " eso, los N corresponden a E, y lo esté a PDS, a PDN, bueno entonces a E, ese circuito",
+        "start": 5447.62,
+        "end": 5463.22
+    },
+    {
+        "text": " al algoritmo, perdón, lo vamos a poder implementar con un circuito que va a ser de tamaño polinomial",
+        "start": 5463.22,
+        "end": 5471.34
+    },
+    {
+        "text": " en N y de PDN entra a SQLT, tenemos que representar el algoritmo B ahora con un circuito,",
+        "start": 5471.34,
+        "end": 5484.02
+    },
+    {
+        "text": " entonces va a tener todas esas entradas, las primeras N, las que corresponden a E,",
+        "start": 5484.02,
+        "end": 5489.74
+    },
+    {
+        "text": " nosotros las podemos dejar fijas, es parte de lo que codicicen un circuito, un circuito",
+        "start": 5489.74,
+        "end": 5495.66
+    },
+    {
+        "text": " que recuerden que puede tener una codificación fija, que ya está dada y que es parte de",
+        "start": 5495.66,
+        "end": 5502.98
+    },
+    {
+        "text": " la fuente del circuito, las restantes, las que están asociadas al certificado T van a ser",
+        "start": 5502.98,
+        "end": 5509.66
+    },
+    {
+        "text": " realmente entradas variables del circuito, y bueno, son las que corresponden a el algoritmo",
+        "start": 5509.66,
+        "end": 5516.18
+    },
+    {
+        "text": " certificador de X, el circuito, entonces lo que podemos afirmar es que S, pertenece",
+        "start": 5516.18,
+        "end": 5528.46
+    },
+    {
+        "text": " X, si solo existe una forma de configurar todos esos entradas al circuito, tal que produce una",
+        "start": 5528.46,
+        "end": 5538.18
+    },
+    {
+        "text": " salida S, o sea que si nosotros sabemos que S pertenece X quiere decir que tiene una solución",
+        "start": 5538.18,
+        "end": 5548.54
+    },
+    {
+        "text": " S, entonces vamos a usar su algoritmo de certificación, vamos para ahí, vamos a construir un circuito,",
+        "start": 5548.54,
+        "end": 5556.26
+    },
+    {
+        "text": " tal que produce una salida S, entonces logramos que tener un circuito asociado que es satisfacible,",
+        "start": 5556.26,
+        "end": 5566.06
+    },
+    {
+        "text": " bueno si eso lo podemos hacer para todos los algoritmos que resuelven todos los problemas X,",
+        "start": 5566.780000000001,
+        "end": 5573.42
+    },
+    {
+        "text": " bueno podemos afirmar que X se puede reducir, se reduce por linealmente a 3ap, y esto es posible",
+        "start": 5573.42,
+        "end": 5584.02
+    },
+    {
+        "text": " es porque bueno yo con cualquier problema X, si pertenece a la clase NP, yo sé que existe un",
+        "start": 5584.02,
+        "end": 5592.820000000001
+    },
+    {
+        "text": " certificador eficiente, ahí se certifica eficiente, puedo construir un circuito equivalente en el cual",
+        "start": 5592.82,
+        "end": 5599.86
+    },
+    {
+        "text": " sus primeras enentradas sean para fija, sus siguientes PDN, entradas correspondientes de certificados sean",
+        "start": 5599.86,
+        "end": 5607.98
+    },
+    {
+        "text": " variables y construir de forma equivalente una mímica de todo lo que hacen los algoritmos,",
+        "start": 5607.98,
+        "end": 5613.82
+    },
+    {
+        "text": " todos los que hacen los algoritmos que resuelven los problemas, todos los problemas posibles que hay en NP,",
+        "start": 5613.82,
+        "end": 5621.42
+    },
+    {
+        "text": " con y con esto terminamos, determinamos, por un punto para atrás que no esencial, que C,",
+        "start": 5623.219999999999,
+        "end": 5635.66
+    },
+    {
+        "text": " C, C es NP completo, entonces tenemos un primer problema, llegamos a tener uno,",
+        "start": 5635.66,
+        "end": 5648.34
+    },
+    {
+        "text": " el esquema que teníamos planteado recién es como que bueno, perdón, es que compartimos el lenguero,",
+        "start": 5650.34,
+        "end": 5658.38
+    },
+    {
+        "text": " tenemos la clase, si tenemos la clase de problema, digamos que llegamos a el número,",
+        "start": 5658.38,
+        "end": 5665.14
+    },
+    {
+        "text": " tenemos la clase de problemas en NP,",
+        "start": 5665.14,
+        "end": 5668.34
+    },
+    {
+        "text": " tenemos la clase de problemas en NP, tenemos la categoría acá,",
+        "start": 5668.34,
+        "end": 5687.9400000000005
+    },
+    {
+        "text": " de los NP completos, aquí potisamos, nos perdían que dado todo llegue acá, lo pudiéramos",
+        "start": 5687.94,
+        "end": 5705.419999999999
+    },
+    {
+        "text": " reducir a un X acá, bueno, el primer X que tenemos acá es C, C, se ha conseguido un problema",
+        "start": 5705.419999999999,
+        "end": 5717.62
+    },
+    {
+        "text": " acá, seguimos uno primero, ya tenemos uno de este lado, estábleciendo la definición original,",
+        "start": 5717.62,
+        "end": 5728.78
+    },
+    {
+        "text": " bueno, ¿qué es lo que vamos a hacer de ahora adelante? Bueno, dado que tenemos uno acá,",
+        "start": 5728.78,
+        "end": 5733.22
+    },
+    {
+        "text": " vamos a usar el mecanismo de reducción polinomial para, en vez de tener que hacer lo mismo,",
+        "start": 5734.42,
+        "end": 5742.66
+    },
+    {
+        "text": " para que se veamos el problema, en vez de tener que hacer lo mismo que recién hicimos con",
+        "start": 5743.38,
+        "end": 5747.0599999999995
+    },
+    {
+        "text": " C, lo que vamos a hacer es dar todo este problema,",
+        "start": 5747.0599999999995,
+        "end": 5750.0199999999995
+    },
+    {
+        "text": " voy a poner a más esa, realmente sé, este es esa,",
+        "start": 5750.02,
+        "end": 5761.3
+    },
+    {
+        "text": " lo que nos vamos a plantear ahora es bueno, dado este inicial,",
+        "start": 5770.700000000001,
+        "end": 5774.1
+    },
+    {
+        "text": " reducciones de él hacia otros problemas, si logramos, esto va a ser acá, no, después una",
+        "start": 5774.1,
+        "end": 5786.06
+    },
+    {
+        "text": " flechita de él, izquierda de derecho, reducir polinomialmente, cesar a otros problemas, aquí,",
+        "start": 5786.06,
+        "end": 5794.18
+    },
+    {
+        "text": " la maceta, si logramos hacer esto, logramos demostrar eso, bueno, con eso vamos a poder",
+        "start": 5794.900000000001,
+        "end": 5805.26
+    },
+    {
+        "text": " categorizar que C está en EP completo, en vez de tener que aplicar el apartado y la definición,",
+        "start": 5805.26,
+        "end": 5816.18
+    },
+    {
+        "text": " tenemos una forma más simple y resumida de quedado que tenemos un problema inicial, si nosotros",
+        "start": 5816.18,
+        "end": 5824.1
+    },
+    {
+        "text": " aplicamos ahora la reducción polinomial por el lado de contra resímprico, vamos a poder levantar",
+        "start": 5824.1,
+        "end": 5830.54
+    },
+    {
+        "text": " problemas, vamos a poder seguir categorizando más problemas en EP completo, si nos planteamos",
+        "start": 5830.54,
+        "end": 5839.42
+    },
+    {
+        "text": " el poste, si pueden reducirse esta otra problema, bueno, si eso ocurre, esta es la acercación,",
+        "start": 5839.42,
+        "end": 5845.14
+    },
+    {
+        "text": " la acercación era esta es de acercación, si esto ocurre, entonces ese problema Z también",
+        "start": 5845.14,
+        "end": 5854.3
+    },
+    {
+        "text": " es parte del CNP completo y ahí está la forma que vamos a usar de ahora adelante para categorizar",
+        "start": 5854.3,
+        "end": 5859.58
+    },
+    {
+        "text": " problemas en EP completado que tenemos uno, bueno, el mercado es más simple para poder seguir",
+        "start": 5859.58,
+        "end": 5866.5
+    },
+    {
+        "text": " categorizando los, obviamente todo esto aún sin poder confirmar que la clase P de problemas",
+        "start": 5867.38,
+        "end": 5878.9
+    },
+    {
+        "text": " respone que la que buscamos de este lado, probablemente coincide con el EP, o sea,",
+        "start": 5878.9,
+        "end": 5884.06
+    },
+    {
+        "text": " SIP a barca todo en EP, o sea, no podemos afirmar mi EP, si es igual en EP ni que P es",
+        "start": 5884.06,
+        "end": 5890.22
+    },
+    {
+        "text": " el distinto en EP, pero en el interín lo que estamos haciendo es asumiendo que es distinta,",
+        "start": 5890.22,
+        "end": 5896.9800000000005
+    },
+    {
+        "text": " que es de distinto en EP y lo que estamos cerca de categorizando, todos estos problemas,",
+        "start": 5896.9800000000005,
+        "end": 5902.58
+    },
+    {
+        "text": " por un grado dificultad equivalente, el día que alguien pueda demostrar que estos problemas tienen",
+        "start": 5902.58,
+        "end": 5909.22
+    },
+    {
+        "text": " el resolución, si estos problemas tienen el resolución eficiente, bueno, la clase P a barca",
+        "start": 5909.22,
+        "end": 5913.5
+    },
+    {
+        "text": " a basalla con todo en EP si queda con todo, o viceversas, si se puede mostrar que estos problemas",
+        "start": 5913.5,
+        "end": 5919.66
+    },
+    {
+        "text": " no tienen el resolución eficiente, entonces acá se va a generar una clase en EP completo y,",
+        "start": 5919.66,
+        "end": 5925.46
+    },
+    {
+        "text": " bueno, se va a poder afirmar que P realmente no cubre todo en EP, que hay realmente problemas que",
+        "start": 5925.46,
+        "end": 5932.5
+    },
+    {
+        "text": " son intratables y bueno, que se tiene la demostración de eso, pero en el interín lo que está haciendo",
+        "start": 5932.5,
+        "end": 5937.18
+    },
+    {
+        "text": " es categorizarlos a todos a través de este mecanismo de reducción, bueno, dundas preguntas que tengan",
+        "start": 5937.18,
+        "end": 5944.0199999999995
+    },
+    {
+        "text": " hasta acá.",
+        "start": 5944.02,
+        "end": 5945.02
+    },
+    {
+        "text": " A mí no me queda muy claro eso de que como que fijan la cantidad de entradas, porque yo no",
+        "start": 5945.02,
+        "end": 5954.540000000001
+    },
+    {
+        "text": " problema podría tener entrada de cualquier cantidad de EITS y cuando le paso un circuito,",
+        "start": 5954.540000000001,
+        "end": 5962.06
+    },
+    {
+        "text": " tengo que tener una cantidad fija, entonces es una de las administraciones, por ejemplo,",
+        "start": 5962.06,
+        "end": 5969.14
+    },
+    {
+        "text": " en un algoritmo, hay un tema, las entradas de los algoritmos tienen que ser finitas,",
+        "start": 5969.14,
+        "end": 5976.34
+    },
+    {
+        "text": " si uno pensaba en el punto deitar escrito, todos los algoritmos tienen entrada,",
+        "start": 5976.34,
+        "end": 5988.3
+    },
+    {
+        "text": " de un punto estratégrico, una poder decir, bueno, la entrada ésta es un valor, pero aconecento",
+        "start": 5988.3,
+        "end": 5996.1
+    },
+    {
+        "text": " a nuestro algoritmo son finitos, entonces yo tengo un número, no sé, un literal, una cadena",
+        "start": 5996.1,
+        "end": 6002.02
+    },
+    {
+        "text": " literal esa cadena está codificada en un número finito de EITS, un número entero, por ejemplo,",
+        "start": 6002.02,
+        "end": 6009.660000000001
+    },
+    {
+        "text": " está codificado en cierta cantidad, por más que nosotros, sólo usemos, por ejemplo,",
+        "start": 6009.660000000001,
+        "end": 6016.900000000001
+    },
+    {
+        "text": " un número, vamos, nos vamos al mundo ahora, así, fisi, para poder, pues verlo, es una representación",
+        "start": 6016.900000000001,
+        "end": 6024.740000000001
+    },
+    {
+        "text": " de una computadora, es una arquitectura computadora, cuando una computadora tiene representado",
+        "start": 6024.74,
+        "end": 6029.7
+    },
+    {
+        "text": " un entero, por ejemplo, si el entero, la palabra del computador ocupa 64 la bicácil, el procesador",
+        "start": 6029.7,
+        "end": 6038.74
+    },
+    {
+        "text": " ocupa 64 bits, el entero truyes no puede ser mayor que 2 a 64, si es un número real,",
+        "start": 6038.74,
+        "end": 6047.86
+    },
+    {
+        "text": " también, por ejemplo, si está representado con 64 bits que lo que tenemos hoy día, sabemos",
+        "start": 6047.86,
+        "end": 6055.339999999999
+    },
+    {
+        "text": " que por ejemplo tiene una mantisa, el número real tiene una mantisa, realmente es número",
+        "start": 6055.339999999999,
+        "end": 6060.259999999999
+    },
+    {
+        "text": " racional, tiene una mantisa de 15 dígitos más o menos, y bueno, un exponente que puede",
+        "start": 6060.259999999999,
+        "end": 6066.42
+    },
+    {
+        "text": " ir de 10 a la, a la menos 308, creo, hasta 10 a la 308, pero no puede tener más",
+        "start": 6066.42,
+        "end": 6075.099999999999
+    },
+    {
+        "text": " de 20 más chico que es, se es más grande que es, pues tenés sólo 64 bits para representar",
+        "start": 6075.1,
+        "end": 6080.26
+    },
+    {
+        "text": " un real, sólo 64 bits para representar un entero, si quisieras tener una representación",
+        "start": 6080.26,
+        "end": 6087.1
+    },
+    {
+        "text": " mayor que esa, que es la que está, jared, codea en los circuitos de la máquina, así",
+        "start": 6087.1,
+        "end": 6092.620000000001
+    },
+    {
+        "text": " esto es una jerarquía, no, de la algoritmo hasta una representación de máquina, tiene",
+        "start": 6092.620000000001,
+        "end": 6098.54
+    },
+    {
+        "text": " que hacer una super estructura, su que se combinar a dos paquetes de 64 bits para tener",
+        "start": 6098.54,
+        "end": 6104.3
+    },
+    {
+        "text": " unos macarantes, pero siempre a la larga todo el gorismo va a ser, va a tener una trasfínita,",
+        "start": 6104.3,
+        "end": 6110.78
+    },
+    {
+        "text": " obviamente, es una entrada que es potencialmente variable, que uno puede estar no usando",
+        "start": 6110.78,
+        "end": 6118.62
+    },
+    {
+        "text": " el a totalmente, se se entiende de ver, porque los circuitos sí son dos hijos, este tiene",
+        "start": 6118.62,
+        "end": 6126.3
+    },
+    {
+        "text": " una parte de fija, y tiene una parte de fija, pero bueno, nosotros siempre, para cualquier",
+        "start": 6126.3,
+        "end": 6130.900000000001
+    },
+    {
+        "text": " algoritmo que tiene una entrada finita, siempre le vamos a poder construir un simpusto asociado",
+        "start": 6130.9,
+        "end": 6136.74
+    },
+    {
+        "text": " con un número finito de entrada, entonces se entiende la idea, más o menos, por qué, o sea,",
+        "start": 6136.74,
+        "end": 6146.42
+    },
+    {
+        "text": " yo puedo tener un algoritmo, formalmente yo podría tener un algoritmo que, en base de",
+        "start": 6146.42,
+        "end": 6152.42
+    },
+    {
+        "text": " dos centeros, tres centeros, o la cantidad de enteros que puedo aceptar en principio,",
+        "start": 6152.42,
+        "end": 6158.74
+    },
+    {
+        "text": " va a ser finita, pero no va a estar acotada, digamos. El problema es el sí o sea, no",
+        "start": 6158.74,
+        "end": 6164.219999999999
+    },
+    {
+        "text": " es la definición de algoritmos siempre finita, o sea, bueno, ¿tenes una cantidad de",
+        "start": 6164.219999999999,
+        "end": 6168.82
+    },
+    {
+        "text": " infinita de memoria? Está ahí.",
+        "start": 6168.82,
+        "end": 6172.62
+    },
+    {
+        "text": " O sea, siempre está suponiendo que, digamos, no puedo meterle, no puedo hacer que la cantidad",
+        "start": 6174.78,
+        "end": 6181.86
+    },
+    {
+        "text": " de enteros, por ejemplo, que le hago entrar a un algoritmo, crezca cada vez, o sea, si le hago",
+        "start": 6181.86,
+        "end": 6187.74
+    },
+    {
+        "text": " entrar una lista, como la memoria finita, que es una cantidad finita de no, por ejemplo,",
+        "start": 6187.74,
+        "end": 6192.78
+    },
+    {
+        "text": " eso sí, claramente.",
+        "start": 6192.78,
+        "end": 6195.74
+    },
+    {
+        "text": " Exactamente, esa es la event... Eso es lo que estamos usando acá. Todo en este esquema está",
+        "start": 6195.74,
+        "end": 6203.179999999999
+    },
+    {
+        "text": " teniendo ese planteo. Bueno, si existe un algoritmo que tiene una cantidad de potencial finita",
+        "start": 6203.179999999999,
+        "end": 6209.46
+    },
+    {
+        "text": " para representar su detentura y aconsecen los algoritmos, este ejeúte en un número finito",
+        "start": 6209.46,
+        "end": 6214.98
+    },
+    {
+        "text": " de pasos, por lo tanto, yo voy a tener un dispositivo, cesar un circuito acá, que va a tener",
+        "start": 6214.98,
+        "end": 6223.219999999999
+    },
+    {
+        "text": " potencialmente una entrada finita y le voy a poder construir un algoritmo, este fue construir",
+        "start": 6223.219999999999,
+        "end": 6229.74
+    },
+    {
+        "text": " un número finito, por lino miel de puertas de entrada, que representen todos los pasos",
+        "start": 6229.74,
+        "end": 6234.219999999999
+    },
+    {
+        "text": " de la algoritma.",
+        "start": 6234.219999999999,
+        "end": 6235.459999999999
+    },
+    {
+        "text": " De la algoritmo finito, el memoria y el paso, en la equilición de intrusiones, esa es",
+        "start": 6235.46,
+        "end": 6248.3
+    },
+    {
+        "text": " la hipótesis de trabajo, que estaba finito, el jarco deado, el dispositivo, el duro, el",
+        "start": 6248.3,
+        "end": 6256.22
+    },
+    {
+        "text": " cálco deado, pero siempre lo puedo construir. Es un artificio, el cesar, pero siempre hay",
+        "start": 6256.22,
+        "end": 6262.86
+    },
+    {
+        "text": " que construir algo que tiene mucho poder de codificación. ¿Qué es el poder máximo que",
+        "start": 6262.86,
+        "end": 6270.42
+    },
+    {
+        "text": " hay como en ese punto de esta computacional?",
+        "start": 6270.42,
+        "end": 6275.7
+    },
+    {
+        "text": " Quedamos cortas lógicas, yo puedo construir cualquier representación de una máquina, esto",
+        "start": 6275.7,
+        "end": 6283.38
+    },
+    {
+        "text": " lo puedo llevar más adelante en teoría automata, como yo puedo con esto armar todas las",
+        "start": 6283.38,
+        "end": 6287.82
+    },
+    {
+        "text": " posibilidades de una máquina de estado finito, las puedo armar todas.",
+        "start": 6287.82,
+        "end": 6291.98
+    },
+    {
+        "text": " Es súper general, y bueno, puedo construir cualquier posal, bueno, debido a esa súper generalía,",
+        "start": 6291.98,
+        "end": 6299.82
+    },
+    {
+        "text": " es que puedo usarlo para la partada o dos de la definición de la clase de NPE.",
+        "start": 6299.82,
+        "end": 6309.54
+    },
+    {
+        "text": " Es por eso, pero creo que ya, ¿se es una traduga, comentario que tengo?",
+        "start": 6310.54,
+        "end": 6316.78
+    },
+    {
+        "text": " Bueno, si no hay más curvas o preguntas, comentario, bueno, dejamos por acá y",
+        "start": 6334.0199999999995,
+        "end": 6339.14
+    },
+    {
+        "text": " bueno, seguimos ahí, juegue, viendo un poquito como toda esta mecanismo de certificado",
+        "start": 6339.14,
+        "end": 6348.5
+    },
+    {
+        "text": " eficiente de categorización de la clase NPE completo, la puedo usar ahora combinada",
+        "start": 6348.5,
+        "end": 6355.1
+    },
+    {
+        "text": " con el mecanismo de la reducción ponidronía. Bueno, ¿qué vamos a hacer? Entonces, nos vemos",
+        "start": 6355.1,
+        "end": 6361.54
+    },
+    {
+        "text": " en jueves próximos. ¿Qué pasa en qué?",
+        "start": 6361.54,
+        "end": 6364.26
+    },
+    {
+        "text": " No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no",
+        "start": 6369.14,
+        "end": 6371.52
+    }
+]

@@ -1,0 +1,1437 @@
+[
+    {
+        "text": " Hola, vamos a resolver una ejercicio, que es una de las ejercicios del libro, el",
+        "start": 0.0,
+        "end": 13.52
+    },
+    {
+        "text": " no punto 6.",
+        "start": 13.52,
+        "end": 14.82
+    },
+    {
+        "text": " Al escuento un poco de que se trata la letra, resumidamente.",
+        "start": 14.82,
+        "end": 20.2
+    },
+    {
+        "text": " Hay un conjunto de barcos, normalmente tienen una agenda de visita a puertos.",
+        "start": 20.2,
+        "end": 29.0
+    },
+    {
+        "text": " Son nevarcos y neportos.",
+        "start": 29.0,
+        "end": 33.0
+    },
+    {
+        "text": " Si leí con atención de la letra, van a dar que algunos datos importantes, cada en",
+        "start": 33.0,
+        "end": 41.64
+    },
+    {
+        "text": " ningún momento en ningún barco, dos barcos visitan el mismo puerto en el mismo día, y",
+        "start": 41.64,
+        "end": 48.2
+    },
+    {
+        "text": " además al largo de todo el mes que está agendado, cada barco visita a todo el puerto,",
+        "start": 48.2,
+        "end": 54.879999999999995
+    },
+    {
+        "text": " está del último determinado por ver.",
+        "start": 54.879999999999995,
+        "end": 57.16
+    },
+    {
+        "text": " La agenda, cada barco tiene una agenda, como este ejemplo que se mostraba acá, donde",
+        "start": 57.16,
+        "end": 64.0
+    },
+    {
+        "text": " por ejemplo el barco V1 pasa en el primer día por un puerto V1, hay un siguiente día",
+        "start": 64.0,
+        "end": 70.0
+    },
+    {
+        "text": " que está navegando, en tercer día pasa por pegos, otro puerto, pues siguen navegando",
+        "start": 70.0,
+        "end": 76.19999999999999
+    },
+    {
+        "text": " y bueno algo similar para veos.",
+        "start": 76.19999999999999,
+        "end": 80.03999999999999
+    },
+    {
+        "text": " Por el resultado que he determinado mes, la empresa que gestiona en estos barcos, quiere",
+        "start": 80.03999999999999,
+        "end": 85.8
+    },
+    {
+        "text": " ser el mantenimiento a todos ellos, es manera que lo que va a hacer es truncar la agenda",
+        "start": 85.8,
+        "end": 90.36
+    },
+    {
+        "text": " de cada barco y cada barco va a tener un puerto asignado en el cual se detiene y se la",
+        "start": 90.36,
+        "end": 98.0
+    },
+    {
+        "text": " hace mantenimiento.",
+        "start": 98.0,
+        "end": 100.0
+    },
+    {
+        "text": " Entonces, por ejemplo, puede hacer que V1 parara en el puerto V1 y quedara detenido",
+        "start": 100.0,
+        "end": 107.28
+    },
+    {
+        "text": " así.",
+        "start": 107.28,
+        "end": 108.28
+    },
+    {
+        "text": " Bueno, eso sería un problema en este caso, en este ejemplo, porque V2 en el segundo",
+        "start": 108.28,
+        "end": 113.82
+    },
+    {
+        "text": " día va a querer pasar por P1 y se van a contar con que está el barco V1 atracado ahí",
+        "start": 113.82,
+        "end": 119.38
+    },
+    {
+        "text": " y no se llevan las blot.",
+        "start": 119.38,
+        "end": 121.38
+    },
+    {
+        "text": " Y entonces no va a poder seguir con su agenda, para eventualmente llegar a P2 donde ahí",
+        "start": 121.38,
+        "end": 126.38
+    },
+    {
+        "text": " podría ser su mantenimiento.",
+        "start": 126.38,
+        "end": 128.38
+    },
+    {
+        "text": " Como cada barco, como no puede haber dos barcos en el mismo puerto, no le podemos asignar",
+        "start": 128.38,
+        "end": 133.34
+    },
+    {
+        "text": " el mismo puerto para mantenimiento a ambos.",
+        "start": 133.34,
+        "end": 139.1
+    },
+    {
+        "text": " Entonces, bueno, ese es el tipo de situaciones que queremos evitar.",
+        "start": 139.1,
+        "end": 144.38
+    },
+    {
+        "text": " De distintos días, si V1 les inaramos, entonces el puerto P2 y el revés ha habido el puerto",
+        "start": 144.38,
+        "end": 153.16
+    },
+    {
+        "text": " P1.",
+        "start": 153.16,
+        "end": 154.16
+    },
+    {
+        "text": " En cuanto a eso, ahí sí, no abre problema, porque V2 segaría a P1, si que ha detenido",
+        "start": 154.16,
+        "end": 157.62
+    },
+    {
+        "text": " ahí, pero para cuando V2 llega a P1, no le da a P1, ya pasó por ahí, el primer día.",
+        "start": 157.62,
+        "end": 166.62
+    },
+    {
+        "text": " Y llega a su puerto de mantenimiento al tercer día y queda atracado ahí.",
+        "start": 166.62,
+        "end": 170.9
+    },
+    {
+        "text": " Entonces, dependiendo de cómo hagamos la asignación de en qué puerto hace mantenimiento que",
+        "start": 170.9,
+        "end": 176.9
+    },
+    {
+        "text": " barco, las cosas pueden funcionar o no.",
+        "start": 176.9,
+        "end": 181.98000000000002
+    },
+    {
+        "text": " Entonces, la pregunta que hacemos es si siempre hay una forma, cualquiera sea de la agenda,",
+        "start": 181.98000000000002,
+        "end": 191.22
+    },
+    {
+        "text": " de planificar el mantenimiento de manera que no hace conflicto de este tipo.",
+        "start": 191.22,
+        "end": 194.14000000000001
+    },
+    {
+        "text": " Que cada barco pueda llegar a su puerto de mantenimiento sin transgarse el medio con",
+        "start": 194.14,
+        "end": 201.38
+    },
+    {
+        "text": " alguien que queda atracado allí.",
+        "start": 201.38,
+        "end": 203.38
+    },
+    {
+        "text": " Y también la nota es cómo es saber.",
+        "start": 203.38,
+        "end": 207.29999999999998
+    },
+    {
+        "text": " Es decir, cómo construir, cómo asignar, alberínicamente, un puerto a cada barco.",
+        "start": 207.29999999999998,
+        "end": 213.38
+    },
+    {
+        "text": " Yo creo que cuando uno mira este problema, bueno, tiene un puerto de los dos conjuntos,",
+        "start": 213.38,
+        "end": 224.22
+    },
+    {
+        "text": " de elementos en este caso los barcos y los puertos que tienen el mismo tamaño y queremos",
+        "start": 224.22,
+        "end": 230.5
+    },
+    {
+        "text": " ponerlos en relación 1 a 1, asignarle a cada barco un puerto y viceversa.",
+        "start": 230.5,
+        "end": 239.78
+    },
+    {
+        "text": " De manera que esto suena, hay ciertos...",
+        "start": 239.78,
+        "end": 243.74
+    },
+    {
+        "text": " Bueno, hay situaciones de conflicto que pueden darse aquí.",
+        "start": 243.74,
+        "end": 246.62
+    },
+    {
+        "text": " Hay situaciones que queremos evitar, como lo que describió el recién, donde bueno,",
+        "start": 246.62,
+        "end": 249.82
+    },
+    {
+        "text": " un barco se queda atracado y eso impide que venga otro y siga viaje hasta el puerto",
+        "start": 249.82,
+        "end": 255.26
+    },
+    {
+        "text": " donde vas a mantenimiento.",
+        "start": 255.26,
+        "end": 256.74
+    },
+    {
+        "text": " Entonces, están como todos los ingredientes de un problema del estilo emparejamiento establecer.",
+        "start": 256.74,
+        "end": 264.3
+    },
+    {
+        "text": " Son indicios que podrían hacernos pensar en el algoritmo del gel se aprende como forma",
+        "start": 264.3,
+        "end": 272.7
+    },
+    {
+        "text": " de resolver.",
+        "start": 272.7,
+        "end": 273.7
+    },
+    {
+        "text": " Entonces, en este caso hay un indicio aún más fuerte que es que es el único algoritmo",
+        "start": 273.7,
+        "end": 281.5
+    },
+    {
+        "text": " que hemos estudiado hasta ahora.",
+        "start": 281.5,
+        "end": 282.7
+    },
+    {
+        "text": " La primera general, más adelante, vamos a ir nutriendo a nuestra caja de herramientas",
+        "start": 282.7,
+        "end": 287.5
+    },
+    {
+        "text": " con más y más algoritmos y frente a un problema, bueno, uno tiene que decidir...",
+        "start": 287.5,
+        "end": 293.78
+    },
+    {
+        "text": " Bueno, cuáles de los algoritmos que conocemos es el que mejor se ajusta al problema que",
+        "start": 293.78,
+        "end": 301.38
+    },
+    {
+        "text": " tenemos en el sistema.",
+        "start": 301.38,
+        "end": 302.86
+    },
+    {
+        "text": " Probablemente no directamente, capaz de que acasarlas de adaptarlo de alguna manera",
+        "start": 302.86,
+        "end": 308.7
+    },
+    {
+        "text": " en algoritmo o nutrirlo con otros pasos más o combinarlo con otros algoritmos, etcétera.",
+        "start": 308.7,
+        "end": 315.02
+    },
+    {
+        "text": " Pero en definitiva es importante ir a extraer primero el problema, olvidarme de los",
+        "start": 315.02,
+        "end": 320.82
+    },
+    {
+        "text": " algoritmos y los puertos, etcétera y no estar que cuando tengo el definitivo son dos",
+        "start": 320.82,
+        "end": 324.5
+    },
+    {
+        "text": " conjuntos que puedo poner en relación a uno a uno y que pueda ver dependiendo de cómo",
+        "start": 324.5,
+        "end": 330.65999999999997
+    },
+    {
+        "text": " lo haga, pueden aparecer conflictos.",
+        "start": 330.65999999999997,
+        "end": 332.26
+    },
+    {
+        "text": " Y una vez que tengo esa abstracción hecha, bueno, puedo empezar a pensar en cuáles de",
+        "start": 332.26,
+        "end": 338.9
+    },
+    {
+        "text": " la salorismo y conozco, se puede adaptar bien cómo para resolver el problema que tengo.",
+        "start": 338.9,
+        "end": 347.82
+    },
+    {
+        "text": " Entonces, en este caso, ¿cómo aplicaríamos el valorismo de que se apreu cuál sería nuestra",
+        "start": 347.82,
+        "end": 357.97999999999996
+    },
+    {
+        "text": " estrategia para tratar de resolver el problema?",
+        "start": 357.98,
+        "end": 370.74
+    },
+    {
+        "text": " De vez que nosotros tenemos por un lado una una instancia de un problema, ya vemos",
+        "start": 370.74,
+        "end": 386.06
+    },
+    {
+        "text": " que es una instancia de barcos, una instancia de ese definitivo, con punto de barcos, con punto",
+        "start": 386.06,
+        "end": 394.26
+    },
+    {
+        "text": " de puertos, una agenda concreta, esa es una instancia del problema, lo que quiero resolver",
+        "start": 394.26,
+        "end": 402.34000000000003
+    },
+    {
+        "text": " cómo asignar este barco de soporte. Entonces, quisiera pasar esto por un algoritmo y que",
+        "start": 402.34,
+        "end": 425.85999999999996
+    },
+    {
+        "text": " termine produciendo como salida una solución.",
+        "start": 425.86,
+        "end": 432.62
+    },
+    {
+        "text": " Para el problema de los barcos, vamos a hacer para distinguir las instancias de los algoritmos",
+        "start": 432.62,
+        "end": 459.3
+    },
+    {
+        "text": " con fibro de quinto. Entonces, esa es la situación, yo lo que tengo por otra parte es un algoritmo",
+        "start": 459.3,
+        "end": 471.5
+    },
+    {
+        "text": " que es el de Guilherme, que sabe cómo resolver problemas de emparejamiento estable, ahí esto,",
+        "start": 473.1,
+        "end": 481.98
+    },
+    {
+        "text": " que tiene el problema de los barcos, no es un problema de emparejamiento estable, tiene",
+        "start": 481.98,
+        "end": 485.26
+    },
+    {
+        "text": " ingredientes similares, pero no hay a cada lista de preferencias, por ejemplo, entre un conjunto",
+        "start": 485.26,
+        "end": 492.21999999999997
+    },
+    {
+        "text": " y entre elementos de un conjunto y los elementos del otro. Lo que sí podría hacer y es una técnica",
+        "start": 492.21999999999997,
+        "end": 499.5
+    },
+    {
+        "text": " que más son las conscientemente, un pacientemente seguro que hayan aplicado desde hace tiempo y nosotros",
+        "start": 499.5,
+        "end": 505.3
+    },
+    {
+        "text": " vamos a explicar mucho al largo de este curso, que es reducir un problema de otro, se mapear de",
+        "start": 505.3,
+        "end": 514.5
+    },
+    {
+        "text": " una manera, esta instancia del problema de barcos, hacerlo pasar por algún algoritmo uno que",
+        "start": 514.5,
+        "end": 524.22
+    },
+    {
+        "text": " tenemos que ver bien, cuál es y hacer que esto genere una instancia,",
+        "start": 524.22,
+        "end": 532.26
+    },
+    {
+        "text": " el problema de emparejamiento estable, que es otra cosa, acá no hay barcos, son problemas",
+        "start": 532.26,
+        "end": 552.02
+    },
+    {
+        "text": " tan definidos de forma diferente, pero de una manera de este algoritmo uno que dibujé a cada",
+        "start": 552.02,
+        "end": 558.58
+    },
+    {
+        "text": " manera va a ser, va a transformar un instancia en un problema, en una instancia de otro problema que",
+        "start": 558.58,
+        "end": 564.26
+    },
+    {
+        "text": " es otro problema, sí sé cómo resolver, esto lo puedo pasar, por el algoritmo de el SAPLE para",
+        "start": 564.26,
+        "end": 579.34
+    },
+    {
+        "text": " producir a partir de aquí un emparejamiento estable, un emparejamiento estable según estas",
+        "start": 579.34,
+        "end": 587.7800000000001
+    },
+    {
+        "text": " listas de preferencia que yo va a definido acá en este curso, eso a su vez lo venen a pasar por",
+        "start": 587.7800000000001,
+        "end": 594.58
+    },
+    {
+        "text": " otro algoritmo, eso es el algoritmo 2, que sí va a terminar generando una solución, es una",
+        "start": 594.58,
+        "end": 605.74
+    },
+    {
+        "text": " sucesión entre barcos y puertos, que es la solución que estoy buscando al problema original,",
+        "start": 605.74,
+        "end": 620.98
+    },
+    {
+        "text": " entonces de alguna manera hay como una interfaz de dos lados, un algoritmo que transforma el problema",
+        "start": 620.98,
+        "end": 626.9
+    },
+    {
+        "text": " de una instancia del problema de barcos, en una instancia del problema de emparejamiento estable,",
+        "start": 626.9,
+        "end": 631.66
+    },
+    {
+        "text": " ahí aplica un algoritmo que yo ya conozco y después hay otro algoritmo, el algoritmo 2 que",
+        "start": 632.18,
+        "end": 637.4599999999999
+    },
+    {
+        "text": " transforma la solución al problema de emparejamiento estable a la solución de mi problema original,",
+        "start": 637.4599999999999,
+        "end": 644.2199999999999
+    },
+    {
+        "text": " entonces ese es el esquema general que vamos a aplicar ahora y que vamos a usar van a ver muchas",
+        "start": 647.3399999999999,
+        "end": 653.62
+    },
+    {
+        "text": " veces, entonces el esqueleto de lorismo es éste lo que tenemos que hacer ahora es ver definir quién",
+        "start": 653.62,
+        "end": 665.22
+    },
+    {
+        "text": " es este algoritmo 1 y este algoritmo 2,",
+        "start": 665.22,
+        "end": 667.94
+    },
+    {
+        "text": " entonces bueno vamos a definir el algoritmo 1, eso que tiene que hacer el algoritmo 1,",
+        "start": 667.94,
+        "end": 682.86
+    },
+    {
+        "text": " el algoritmo 1 tiene que tomar una instancia del problema de barcos y construir una instancia del",
+        "start": 682.86,
+        "end": 691.82
+    },
+    {
+        "text": " problema de emparejamiento estable, así tiene que definir un conjunto M, un conjunto W y una",
+        "start": 691.82,
+        "end": 696.58
+    },
+    {
+        "text": " lista de preferencias, entonces bueno naturalmente el M y el W van a hacer los barcos y los",
+        "start": 696.58,
+        "end": 703.62
+    },
+    {
+        "text": " barcos, no importa, no hay, cualquiera de ellos puede ser igual cualquiera de los robos, entonces el",
+        "start": 703.62,
+        "end": 711.54
+    },
+    {
+        "text": " paso 1 acá sería definir M igual a conjunto de barcos,",
+        "start": 711.54,
+        "end": 722.1
+    },
+    {
+        "text": " le voy a igualar conjunto de puertos, puede ser arrevesa, en mi importa.",
+        "start": 722.1,
+        "end": 735.78
+    },
+    {
+        "text": " Y lo siguiente tenemos que hacer es definir listas de preferencias,",
+        "start": 738.78,
+        "end": 743.1
+    },
+    {
+        "text": " lo vamos a buscar definir las de forma tal que las situaciones de conflicto entre barcos que",
+        "start": 743.1,
+        "end": 754.78
+    },
+    {
+        "text": " quedan trancados uno por que el otro está haciendo mantenimiento y yo tengo que pasar por ahí,",
+        "start": 754.78,
+        "end": 758.46
+    },
+    {
+        "text": " esa situación esté asociada a una inestabilidad en emparejamiento, de manera que si construyo un algoritmo",
+        "start": 758.46,
+        "end": 766.5400000000001
+    },
+    {
+        "text": " para si ejecuta un algoritmo como el debele Sapro que obtiene un emparejamiento estable que evita",
+        "start": 767.6600000000001,
+        "end": 772.1800000000001
+    },
+    {
+        "text": " instabilidades en emparejamiento naturalmente eso se va a traducir a evitar estas situaciones de",
+        "start": 772.18,
+        "end": 777.3
+    },
+    {
+        "text": " conflicto entre los barcos que quieren pasar por el mismo cuerpo, entonces bueno que como me",
+        "start": 777.3,
+        "end": 784.9799999999999
+    },
+    {
+        "text": " convendría a ser, analicemos un poco cuáles son las situaciones esas de conflicto, cuando",
+        "start": 784.9799999999999,
+        "end": 791.42
+    },
+    {
+        "text": " ocurre un barco se tranca porque hay otro para el ejemplo que vimos acá, por ejemplo si V1",
+        "start": 791.42,
+        "end": 798.42
+    },
+    {
+        "text": " se detenía el puerto P1 eso generaba conflicto, porque después venía V2 que tiene",
+        "start": 799.38,
+        "end": 808.18
+    },
+    {
+        "text": " necesidad de pasar por el puerto P1 antes de llegar al puerto P2 donde haría mantenimiento.",
+        "start": 811.62,
+        "end": 816.9799999999999
+    },
+    {
+        "text": " Entonces como podríamos definir las preferencias para que esto este tipo de situaciones se esté",
+        "start": 819.9799999999999,
+        "end": 825.66
+    },
+    {
+        "text": " asociada a una inestabilidad, bueno lo que quisieron es que en esta situación para que efectivamente",
+        "start": 825.66,
+        "end": 830.6999999999999
+    },
+    {
+        "text": " hagas alguna estabilidad lo que quisieron es que en realidad P1 prefiriera a V2",
+        "start": 830.6999999999999,
+        "end": 836.78
+    },
+    {
+        "text": " y V2",
+        "start": 839.42,
+        "end": 840.38
+    },
+    {
+        "text": " también prefiriera a V1",
+        "start": 843.5799999999999,
+        "end": 846.9399999999999
+    },
+    {
+        "text": " entonces",
+        "start": 848.86,
+        "end": 849.5
+    },
+    {
+        "text": " en términos de ordenen que se realizan las visitas",
+        "start": 849.82,
+        "end": 856.62
+    },
+    {
+        "text": " para que lo que tengo es que P1 prefiera a V2",
+        "start": 862.22,
+        "end": 867.66
+    },
+    {
+        "text": " entonces si se fijan",
+        "start": 868.94,
+        "end": 870.3
+    },
+    {
+        "text": " V2 pasa por P1 después, entonces lo ponemos así, entonces define bueno las preferencias de los",
+        "start": 872.3,
+        "end": 878.82
+    },
+    {
+        "text": " puertos en el formato que prefieren que el barco que va a ser mantenimiento llega a ir lo más",
+        "start": 878.82,
+        "end": 883.86
+    },
+    {
+        "text": " tarde posible, en ese caso el puerto P1 preferiría a V2, lo cual la emacia es bastante",
+        "start": 883.86,
+        "end": 892.58
+    },
+    {
+        "text": " natural, pues si yo hago que los puertos prefieran entre comillas ser arracado es lo más tarde posible",
+        "start": 892.58,
+        "end": 901.3000000000001
+    },
+    {
+        "text": " no es más margen para que los barcos que eventualmente tienen que pasar por ahí puedan",
+        "start": 902.26,
+        "end": 908.3399999999999
+    },
+    {
+        "text": " aserlos sin que se encuentren con nadie trancado, así por el contrario los puertos prefieren que",
+        "start": 908.3399999999999,
+        "end": 913.9399999999999
+    },
+    {
+        "text": " en cuanto sea posible, se tranque, bueno tengo, abro más la posibilidad de que alguien que",
+        "start": 913.9399999999999,
+        "end": 923.14
+    },
+    {
+        "text": " necesite pasar por ahí no puede aserlos y los barcos harían reves, los barcos en cuanto puedan",
+        "start": 923.14,
+        "end": 931.3
+    },
+    {
+        "text": " el primer puerto que puedan parar se se den tan bien, entonces en este caso V2 efectivamente",
+        "start": 935.3,
+        "end": 942.5
+    },
+    {
+        "text": " también preferiría el P1, eso también tiene cierta lógica desde el punto de vista que",
+        "start": 942.5,
+        "end": 952.34
+    },
+    {
+        "text": " el bueno cuanto antes se detenga el barco menos situaciones género de trancarme con alguien más adelante",
+        "start": 952.34,
+        "end": 959.1
+    },
+    {
+        "text": " igual todo esto en términos en principio un poco intuitivo jugando con un ejemplo pero",
+        "start": 959.1,
+        "end": 966.34
+    },
+    {
+        "text": " tenemos que después mostrar que efectivamente eso funciona, en principio no es para nada, para nada",
+        "start": 966.34,
+        "end": 973.94
+    },
+    {
+        "text": " entonces bueno siguiendo con la definición del algoritmo 1, definimos quién es M, definimos quién es",
+        "start": 976.74,
+        "end": 981.74
+    },
+    {
+        "text": " W, el siguiente paso sería 2 definir preferencias",
+        "start": 981.74,
+        "end": 994.7
+    },
+    {
+        "text": " y la siguiente manera",
+        "start": 1005.66,
+        "end": 1007.02
+    },
+    {
+        "text": " para un V, un barco, cualquiera, esto sería",
+        "start": 1011.74,
+        "end": 1025.38
+    },
+    {
+        "text": " en orden en que V visita los puertos, o sea cada barco para eso también definir una",
+        "start": 1025.38,
+        "end": 1047.1000000000001
+    },
+    {
+        "text": " un instancia para ver parcamente está luego entonces para cada barco en que orden prefiere los",
+        "start": 1047.1000000000001,
+        "end": 1053.18
+    },
+    {
+        "text": " puertos, en el orden en que lo visita y tengo que decir también para hacer el P para cada puerto",
+        "start": 1053.18,
+        "end": 1072.7
+    },
+    {
+        "text": " tengo que decir cómo ordena los barcos en orden de preferencia y bueno va a ser en orden sería",
+        "start": 1072.7,
+        "end": 1083.78
+    },
+    {
+        "text": " el nuevo conceived en anticipate, en pronto hace 3 DIishops, en torneos",
+        "start": 1084.22,
+        "end": 1089.58
+    },
+    {
+        "text": " Feng, 같아요.",
+        "start": 1089.58,
+        "end": 1101.36
+    },
+    {
+        "text": " Magnum de cresceante de día en que visita la P.",
+        "start": 1101.36,
+        "end": 1110.28
+    },
+    {
+        "text": " según la agenda de cada barco.",
+        "start": 1110.28,
+        "end": 1119.28
+    },
+    {
+        "text": " Esto está bien definido por los dictase que les comentaba de la letra, los barcos,",
+        "start": 1119.28,
+        "end": 1129.28
+    },
+    {
+        "text": " todos tienen agenda de visitar a todos los puertos, o sea que efectivamente,",
+        "start": 1129.28,
+        "end": 1134.28
+    },
+    {
+        "text": " en el paso 2.1 estamos definiendo un horo donde preferencia sobre todos los puertos para cada barco.",
+        "start": 1134.28,
+        "end": 1143.28
+    },
+    {
+        "text": " También ocurre que todos los puertos son visitados por todos los barcos en las agendas.",
+        "start": 1143.28,
+        "end": 1156.28
+    },
+    {
+        "text": " Como no hay dos barcos en el mismo puerto, mejor dicho en las agendas,",
+        "start": 1157.28,
+        "end": 1166.28
+    },
+    {
+        "text": " no está programado nunca que dos barcos sigan el mismo puerto el mismo día.",
+        "start": 1166.28,
+        "end": 1171.28
+    },
+    {
+        "text": " Entonces, el paso 2.2, nos definimos el horo, para los puertos,",
+        "start": 1171.28,
+        "end": 1176.28
+    },
+    {
+        "text": " con eso también definimos, pero no hay empates.",
+        "start": 1176.28,
+        "end": 1179.28
+    },
+    {
+        "text": " Si yo miro desde el punto de vista del puerto en que días he visitado ese puerto por cada uno de los barcos,",
+        "start": 1180.28,
+        "end": 1186.28
+    },
+    {
+        "text": " bueno no hay dos barcos que sigan el mismo día.",
+        "start": 1186.28,
+        "end": 1188.28
+    },
+    {
+        "text": " O sea que efectivamente estoy ordenando estrictamente a todos los barcos.",
+        "start": 1188.28,
+        "end": 1197.28
+    },
+    {
+        "text": " Con esto está, con esto definimos completamente una instancia y un problema de parejamente estable.",
+        "start": 1197.28,
+        "end": 1206.28
+    },
+    {
+        "text": " ¿Cuál sería el siguiente paso ahora?",
+        "start": 1210.28,
+        "end": 1212.28
+    },
+    {
+        "text": " El siguiente paso, el tercer paso.",
+        "start": 1220.28,
+        "end": 1222.28
+    },
+    {
+        "text": " El tercer paso.",
+        "start": 1222.28,
+        "end": 1224.28
+    },
+    {
+        "text": " El tercer paso 3 sería ejecutar el algoritmo del SAPLE sobre instancia definida.",
+        "start": 1230.28,
+        "end": 1250.28
+    },
+    {
+        "text": " Por el algoritmo 1, así por los pasos unidos que vimos recién.",
+        "start": 1253.28,
+        "end": 1257.28
+    },
+    {
+        "text": " Eso nos va a dar como salida una asociación entre puertos y barcos,",
+        "start": 1259.28,
+        "end": 1267.28
+    },
+    {
+        "text": " un emparejamiento entre puertos y barcos.",
+        "start": 1267.28,
+        "end": 1270.28
+    },
+    {
+        "text": " Y de hecho, ese es el mismo tipo de objeto matemático que tenemos que devolvérlo como parte de la solución",
+        "start": 1271.28,
+        "end": 1281.28
+    },
+    {
+        "text": " en nuestro problema original de los barcos.",
+        "start": 1281.28,
+        "end": 1283.28
+    },
+    {
+        "text": " En este caso, el paso 4 sería nuestro algoritmo 2.",
+        "start": 1284.28,
+        "end": 1301.28
+    },
+    {
+        "text": " En el diagrama de cajitas que se había dibujado un rato.",
+        "start": 1301.28,
+        "end": 1306.28
+    },
+    {
+        "text": " En el caso 4 es bastante sencillo, simplemente sería asignar.",
+        "start": 1307.28,
+        "end": 1312.28
+    },
+    {
+        "text": " Acá barco.",
+        "start": 1320.28,
+        "end": 1324.28
+    },
+    {
+        "text": " V.",
+        "start": 1325.28,
+        "end": 1329.28
+    },
+    {
+        "text": " El puerto P.",
+        "start": 1331.28,
+        "end": 1334.28
+    },
+    {
+        "text": " Para mantenimiento.",
+        "start": 1334.28,
+        "end": 1338.28
+    },
+    {
+        "text": " Que es su pareja.",
+        "start": 1342.28,
+        "end": 1345.28
+    },
+    {
+        "text": " En ese.",
+        "start": 1346.28,
+        "end": 1350.28
+    },
+    {
+        "text": " En ese, el emparejamiento estableco, tengo en el paso 3.",
+        "start": 1350.28,
+        "end": 1354.28
+    },
+    {
+        "text": " Acá es que sería ejecutar el algoritmo de SAPLE sobre instancia definida para 1, para obtener.",
+        "start": 1354.28,
+        "end": 1363.28
+    },
+    {
+        "text": " Un emparejamiento estable.",
+        "start": 1366.28,
+        "end": 1370.28
+    },
+    {
+        "text": " Bueno, ahí está nuestro candidato al algoritmo que resolve el problema.",
+        "start": 1371.28,
+        "end": 1380.28
+    },
+    {
+        "text": " Entonces, si miren un poco los pasos que hicimos, formulamos el problema de forma precisa.",
+        "start": 1380.28,
+        "end": 1389.28
+    },
+    {
+        "text": " Después, cuando lo analizamos un poco, jugamos con un ejemplo y a partir de ahí ganamos cierta instrucción.",
+        "start": 1389.28,
+        "end": 1399.28
+    },
+    {
+        "text": " Escribimos un algoritmo que es lo que acabamos de terminar de hacer.",
+        "start": 1400.28,
+        "end": 1405.28
+    },
+    {
+        "text": " Lo siguiente que hacer es analizar el algoritmo, es decir, mostrar que esto es correcto.",
+        "start": 1405.28,
+        "end": 1411.28
+    },
+    {
+        "text": " Que efectivamente construy una solución al problema.",
+        "start": 1411.28,
+        "end": 1417.28
+    },
+    {
+        "text": " Una error típico que se puede cometer analizando es que más de este tipo de sí, bueno, si es correcto,",
+        "start": 1417.28,
+        "end": 1428.28
+    },
+    {
+        "text": " porque el algoritmo de que el SAPLE es correcto.",
+        "start": 1428.28,
+        "end": 1433.28
+    },
+    {
+        "text": " Si es visto, como el algoritmo de SAPLE, lo que producen emparejamiento estable, esto es solucionar correctamente el problema.",
+        "start": 1433.28,
+        "end": 1440.28
+    },
+    {
+        "text": " En realidad, claro, el algoritmo de que el SAPI solucione correctamente otro problema,",
+        "start": 1440.28,
+        "end": 1445.28
+    },
+    {
+        "text": " que se problema de evitar instabilidades que están definidas.",
+        "start": 1445.28,
+        "end": 1450.28
+    },
+    {
+        "text": " Atentamente, sobre los conjuntos que tienen preferencias, unos solos.",
+        "start": 1451.28,
+        "end": 1458.28
+    },
+    {
+        "text": " El problema original, esto es otro.",
+        "start": 1458.28,
+        "end": 1461.28
+    },
+    {
+        "text": " Lo que tenemos que, básicamente, lo que tenemos que probar nosotros es que el más peo, este que hicimos con el algoritmo 1 y el 2, es correcto.",
+        "start": 1461.28,
+        "end": 1469.28
+    },
+    {
+        "text": " Es lo que está el problema que tenemos que resolver.",
+        "start": 1469.28,
+        "end": 1474.28
+    },
+    {
+        "text": " Entonces, cuando tenemos que anirse la corrección de la teoría.",
+        "start": 1481.28,
+        "end": 1487.28
+    },
+    {
+        "text": " Como podríamos demostrar que esto funciona correctamente,",
+        "start": 1487.28,
+        "end": 1498.28
+    },
+    {
+        "text": " una posibilidad que, creo que bastante naturalmente, es tratar de demostrarlo por azul.",
+        "start": 1498.28,
+        "end": 1504.28
+    },
+    {
+        "text": " Supongamos que en la solución que yo genero, está claro que este algoritmo siempre termina,",
+        "start": 1505.28,
+        "end": 1514.28
+    },
+    {
+        "text": " porque bueno, no hay un SAPLE termina, y por fuera de eso no tenemos ningún ciclo que pueda quedar trancado.",
+        "start": 1514.28,
+        "end": 1523.28
+    },
+    {
+        "text": " Esto termina y genera un emparejamiento por el algoritmo de SAPLE y genero el emparejamiento.",
+        "start": 1523.28,
+        "end": 1528.28
+    },
+    {
+        "text": " La única duda que podría acabar es si podría haber conflictos entre barcos en la solución que yo genero.",
+        "start": 1529.28,
+        "end": 1539.28
+    },
+    {
+        "text": " Entonces, supongo por azul que efectivamente aparece en la situación de ese tipo.",
+        "start": 1539.28,
+        "end": 1543.28
+    },
+    {
+        "text": " Entonces, ¿sabes? Bueno, supongamos.",
+        "start": 1543.28,
+        "end": 1548.28
+    },
+    {
+        "text": " Supongamos que existen barcos y de prima, que se van a trancar entre ellos.",
+        "start": 1548.28,
+        "end": 1568.28
+    },
+    {
+        "text": " Es decir que...",
+        "start": 1569.28,
+        "end": 1575.28
+    },
+    {
+        "text": " Ya hace mantenimiento,",
+        "start": 1576.28,
+        "end": 1588.28
+    },
+    {
+        "text": " empie y pérdima, respectivamente.",
+        "start": 1589.28,
+        "end": 1595.28
+    },
+    {
+        "text": " Y tal es que tenemos que pensar cuáles son las situaciones que hace ahora que...",
+        "start": 1603.28,
+        "end": 1611.28
+    },
+    {
+        "text": " Que efectivamente, sobre ese B, prima se tranca y puede estar en un porto con el que tiene que pasar.",
+        "start": 1612.28,
+        "end": 1620.28
+    },
+    {
+        "text": " Entonces, la situación no tiene que burbirse algo así, tiene que darse varias condiciones.",
+        "start": 1620.28,
+        "end": 1629.28
+    },
+    {
+        "text": " Uno, digamos que B se detiene.",
+        "start": 1629.28,
+        "end": 1636.28
+    },
+    {
+        "text": " En P, lo que es un cierto día de...",
+        "start": 1642.28,
+        "end": 1648.28
+    },
+    {
+        "text": " Una vez que llega ahí en ese día, D, que ha trancado.",
+        "start": 1648.28,
+        "end": 1655.28
+    },
+    {
+        "text": " Ahora, son las situaciones.",
+        "start": 1655.28,
+        "end": 1656.28
+    },
+    {
+        "text": " Y quiero describir, es una de la cual B, prima, tiene que pasar por así.",
+        "start": 1656.28,
+        "end": 1663.28
+    },
+    {
+        "text": " Entonces, B, prima, pasa, esto es según su agenda.",
+        "start": 1664.28,
+        "end": 1680.28
+    },
+    {
+        "text": " Por P,",
+        "start": 1680.28,
+        "end": 1684.28
+    },
+    {
+        "text": " en un día de prima, más orque de.",
+        "start": 1685.28,
+        "end": 1691.28
+    },
+    {
+        "text": " Es decir que...",
+        "start": 1691.28,
+        "end": 1694.28
+    },
+    {
+        "text": " Según su agenda de prima, si sigue...",
+        "start": 1694.28,
+        "end": 1699.28
+    },
+    {
+        "text": " Salo que pare antes, si sigue recorriendo los barcos,",
+        "start": 1699.28,
+        "end": 1704.28
+    },
+    {
+        "text": " va a ser los puertos, perdón, va a ser el momento en que va a querer pasar por P",
+        "start": 1705.28,
+        "end": 1709.28
+    },
+    {
+        "text": " y se va a encontrar con que B está trancado a C.",
+        "start": 1709.28,
+        "end": 1713.28
+    },
+    {
+        "text": " Pero, además, tiene que dar otra condición más, que es que B, prima,",
+        "start": 1713.28,
+        "end": 1719.28
+    },
+    {
+        "text": " en realidad no haga mantenimiento antes, pues si en su agenda tiene que ver que es un par de cosas que no se puede ver.",
+        "start": 1719.28,
+        "end": 1726.28
+    },
+    {
+        "text": " Que es que B, prima, en realidad no haga mantenimiento antes, pues si, si en su agenda tiene agenda o pasar por P,",
+        "start": 1727.28,
+        "end": 1735.28
+    },
+    {
+        "text": " en un día de prima, más orque de, como dijimos acá, pero en realidad también tiene agenda o su mantenimiento antes,",
+        "start": 1735.28,
+        "end": 1743.28
+    },
+    {
+        "text": " entonces ahí no va a haber no para ser ningún conflicto.",
+        "start": 1743.28,
+        "end": 1748.28
+    },
+    {
+        "text": " Entonces, para realmente hacer un conflicto,",
+        "start": 1748.28,
+        "end": 1753.28
+    },
+    {
+        "text": " se tiene que dar que B, más pasa por P,",
+        "start": 1754.28,
+        "end": 1760.28
+    },
+    {
+        "text": " antes que por P, prima.",
+        "start": 1765.28,
+        "end": 1769.28
+    },
+    {
+        "text": " Entonces, no solo que pasa un día posterior al día que pasa P, sino que además,",
+        "start": 1770.28,
+        "end": 1779.28
+    },
+    {
+        "text": " pasa por allí antes que su propio puerto de mantenimiento.",
+        "start": 1780.28,
+        "end": 1784.28
+    },
+    {
+        "text": " Entonces, esta es la situación de conflicto.",
+        "start": 1784.28,
+        "end": 1790.28
+    },
+    {
+        "text": " Esto caracteriza la situación de conflicto.",
+        "start": 1790.28,
+        "end": 1792.28
+    },
+    {
+        "text": " Cualquier de estas situaciones de conflicto se puede decir de esta manera.",
+        "start": 1792.28,
+        "end": 1795.28
+    },
+    {
+        "text": " Tiene que hablar dos barcos y dos puertos que cumple con estas características.",
+        "start": 1795.28,
+        "end": 1802.28
+    },
+    {
+        "text": " Los conflictos aparecen sí, solo sí se de esta situación.",
+        "start": 1804.28,
+        "end": 1807.28
+    },
+    {
+        "text": " Se ponemos que ocurre esta situación.",
+        "start": 1807.28,
+        "end": 1809.28
+    },
+    {
+        "text": " Lo que queremos hacer naturalmente para probar por a un sur,",
+        "start": 1809.28,
+        "end": 1813.28
+    },
+    {
+        "text": " la corrección de esta oliva es encontrar, entonces que hay una inestabilidad",
+        "start": 1813.28,
+        "end": 1819.28
+    },
+    {
+        "text": " en el emparejamiento estable en S que me construyeron el orden de la desaparición.",
+        "start": 1819.28,
+        "end": 1824.28
+    },
+    {
+        "text": " Eso es a un sur, pues sabemos que el orden de la desaparición funciona bien, funciona correctamente.",
+        "start": 1824.28,
+        "end": 1828.28
+    },
+    {
+        "text": " Está muy bien donde está la inestabilidad aquí.",
+        "start": 1828.28,
+        "end": 1832.28
+    },
+    {
+        "text": " Las propias preferencias que definimos, o sea, según preferencias definidas.",
+        "start": 1832.28,
+        "end": 1844.28
+    },
+    {
+        "text": " Bueno, el mismo uno, tenemos que...",
+        "start": 1849.28,
+        "end": 1854.28
+    },
+    {
+        "text": " Bueno, por los puntos 1 y 2,",
+        "start": 1854.28,
+        "end": 1859.28
+    },
+    {
+        "text": " se detiene en P en un cierto día de,",
+        "start": 1860.28,
+        "end": 1864.28
+    },
+    {
+        "text": " y V prima pasa por P en un día posterior.",
+        "start": 1864.28,
+        "end": 1869.28
+    },
+    {
+        "text": " Eso es lo que significa es que P prefiere V prima antes que V.",
+        "start": 1869.28,
+        "end": 1874.28
+    },
+    {
+        "text": " La cosa que definimos las preferencias de esa forma,",
+        "start": 1874.28,
+        "end": 1877.28
+    },
+    {
+        "text": " si los puertos prefieren los barcos, cuando más tarde llegan a eso.",
+        "start": 1877.28,
+        "end": 1881.28
+    },
+    {
+        "text": " Entonces esto significa que P prefiere V prima antes que V.",
+        "start": 1882.28,
+        "end": 1896.28
+    },
+    {
+        "text": " Y el punto 3,",
+        "start": 1896.28,
+        "end": 1901.28
+    },
+    {
+        "text": " que implica V prima pasa por P antes que...",
+        "start": 1903.28,
+        "end": 1907.28
+    },
+    {
+        "text": " Por P prima, en el caso de los barcos, ser en orden de recorrido,",
+        "start": 1908.28,
+        "end": 1912.28
+    },
+    {
+        "text": " V prima, prefiera P.",
+        "start": 1912.28,
+        "end": 1915.28
+    },
+    {
+        "text": " V prima,",
+        "start": 1915.28,
+        "end": 1918.28
+    },
+    {
+        "text": " prefiera P antes que V prima.",
+        "start": 1919.28,
+        "end": 1927.28
+    },
+    {
+        "text": " Y ahí tenemos el absurdo, entonces esto es una inestabilidad.",
+        "start": 1927.28,
+        "end": 1932.28
+    },
+    {
+        "text": " Este es absurdo.",
+        "start": 1938.28,
+        "end": 1944.28
+    },
+    {
+        "text": " Porque muestra",
+        "start": 1951.28,
+        "end": 1954.28
+    },
+    {
+        "text": " una inestabilidad",
+        "start": 1956.28,
+        "end": 1961.28
+    },
+    {
+        "text": " el empaljamiento estable es.",
+        "start": 1962.28,
+        "end": 1967.28
+    },
+    {
+        "text": " Entonces ven como la corrección del horismo de él,",
+        "start": 1967.28,
+        "end": 1973.28
+    },
+    {
+        "text": " se aplica la corrección de este horismo de la definición.",
+        "start": 1973.28,
+        "end": 1977.28
+    },
+    {
+        "text": " Pero es importante analizar ese mapeo entre un tipo de estances",
+        "start": 1977.28,
+        "end": 1982.28
+    },
+    {
+        "text": " y otra y ver que la corrección de un implica la corrección del otro.",
+        "start": 1982.28,
+        "end": 1985.28
+    },
+    {
+        "text": " La situación está...",
+        "start": 1986.28,
+        "end": 1990.28
+    },
+    {
+        "text": " La equivocación está que les comentaba un rato,",
+        "start": 1990.28,
+        "end": 1992.28
+    },
+    {
+        "text": " es que esto es correcto por el grimo de que el sample es correcto",
+        "start": 1992.28,
+        "end": 1995.28
+    },
+    {
+        "text": " y producen un parejamiento estable.",
+        "start": 1995.28,
+        "end": 1997.28
+    },
+    {
+        "text": " Eso es tipo de razonamiento, lo podría haber aplicado directamente,",
+        "start": 1997.28,
+        "end": 2001.28
+    },
+    {
+        "text": " básicamente sobre cualquier manque de superficie.",
+        "start": 2001.28,
+        "end": 2003.28
+    },
+    {
+        "text": " Si hubiera más piedado de las listas de preferencias al revés",
+        "start": 2003.28,
+        "end": 2006.28
+    },
+    {
+        "text": " y el tema de que esto no funcionara,",
+        "start": 2006.28,
+        "end": 2009.28
+    },
+    {
+        "text": " podría repite de mismo argumento.",
+        "start": 2009.28,
+        "end": 2012.28
+    },
+    {
+        "text": " El problema de que no está acumulado en el sample",
+        "start": 2013.28,
+        "end": 2016.28
+    },
+    {
+        "text": " funciona perfectamente, entonces no habría inestabilidad en ese.",
+        "start": 2016.28,
+        "end": 2019.28
+    },
+    {
+        "text": " Es un problema de que las inestabilidades",
+        "start": 2019.28,
+        "end": 2022.28
+    },
+    {
+        "text": " en ese efectivamente se traduce en las situaciones de conflictos",
+        "start": 2022.28,
+        "end": 2026.28
+    },
+    {
+        "text": " en mi problema original, que es el de los barcos,",
+        "start": 2026.28,
+        "end": 2029.28
+    },
+    {
+        "text": " que no tiene en principio relación directa con el problema de parcamento.",
+        "start": 2029.28,
+        "end": 2034.28
+    },
+    {
+        "text": " Así, bueno, dejamos por acá la solución de este ejercicio.",
+        "start": 2034.28,
+        "end": 2042.28
+    }
+]

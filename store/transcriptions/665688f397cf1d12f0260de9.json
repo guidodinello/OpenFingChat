@@ -1,0 +1,4032 @@
+[
+    {
+        "text": " Y acá vemos un ejemplo de esta jistas, la celda autores tiene el código que es un arreglo",
+        "start": 0.0,
+        "end": 25.080000000000002
+    },
+    {
+        "text": " de dígitos y un puntero en la siguiente celda, lo mismo lo ocurre la segunda, lo mismo lo ocurre",
+        "start": 25.08,
+        "end": 30.479999999999997
+    },
+    {
+        "text": " la tercera y al final colocamos nil como en cualquier lista para indicar su finalización.",
+        "start": 30.479999999999997,
+        "end": 35.92
+    },
+    {
+        "text": " O sea, esa es el ejercicio manipula arreglo y manipula lista. Luego tenemos otro récord llamado artículo",
+        "start": 38.16,
+        "end": 47.68
+    },
+    {
+        "text": " y un artículo está formado por estos campos, código de artículo que es de tipo código, es decir",
+        "start": 48.56,
+        "end": 55.92
+    },
+    {
+        "text": " el mismo reglo de dígitos entre ser y nueve, acá vemos cómo queda un artículo, su primer campo es",
+        "start": 55.92,
+        "end": 63.96
+    },
+    {
+        "text": " el arreglo de dígitos y eso representa el código del artículo, el segundo campo es una lista de",
+        "start": 63.96,
+        "end": 75.84
+    },
+    {
+        "text": " autores llamada justamente autores, o sea que el segundo campo que contiene una dirección de",
+        "start": 75.84,
+        "end": 84.08
+    },
+    {
+        "text": " memoria contiene el puntero a la primera celda de la lista de autores de este artículo.",
+        "start": 84.08,
+        "end": 92.0
+    },
+    {
+        "text": " Bien, recordemos los campos de un récord pueden ser de cualquier tipo, no hay ninguna restricción,",
+        "start": 93.60000000000001,
+        "end": 99.92
+    },
+    {
+        "text": " así que perfectamente uno de los campos puede ser de tipo lista y es un tipo de registro,",
+        "start": 100.92,
+        "end": 110.16
+    },
+    {
+        "text": " como se llamaba en los registros cuando le poníamos que es, es un registro variante, tiene un campo",
+        "start": 110.16,
+        "end": 118.2
+    },
+    {
+        "text": " llamado Eval que como denominábamos este campo discriminante, un discriminante de tipo bulliano,",
+        "start": 118.2,
+        "end": 126.08
+    },
+    {
+        "text": " o sea que ese campo va a tomar dos posibles valores, true or false, en caso de que aquí guardemos true,",
+        "start": 126.96,
+        "end": 134.35999999999999
+    },
+    {
+        "text": " lo que vamos al mazena de continuación es un íntegia que representa la evaluación del artículo,",
+        "start": 134.35999999999999,
+        "end": 140.64
+    },
+    {
+        "text": " o sea vamos a imaginarnos que es un punter genumérico entre uno y 100, por decir algo, en este ejemplo",
+        "start": 140.64,
+        "end": 146.44
+    },
+    {
+        "text": " este artículo fue evaluado y su punter genumérico de Evalución 85 y en caso de que no esté evaluado,",
+        "start": 146.44,
+        "end": 156.16
+    },
+    {
+        "text": " que registramos, nada, recordemos lo que dijimos en su momento, debo ser coherente con mismo",
+        "start": 156.16,
+        "end": 164.36
+    },
+    {
+        "text": " mismo entre que y que, entre que valor le cargo al discriminante y como accedo a cual de los dos",
+        "start": 164.36,
+        "end": 172.96
+    },
+    {
+        "text": " campos variantes accedo, si yo me equivoco y acá pongo true y no carbonada,",
+        "start": 172.96,
+        "end": 180.64000000000001
+    },
+    {
+        "text": " opongo false y le cargo una evaluación, no es algo que me vaya a detectar la compilación,",
+        "start": 180.64000000000001,
+        "end": 186.20000000000002
+    },
+    {
+        "text": " voy a ver bananas en tiempo de ejecución y esto es un artículo, luego se declara artículos",
+        "start": 186.20000000000002,
+        "end": 198.52
+    },
+    {
+        "text": " y acá tenemos otro record y por lo que tiene adentro que es eso, una reglo con tope,",
+        "start": 199.4,
+        "end": 207.28
+    },
+    {
+        "text": " el cual estuvimos hablando largo y tendido, elms es un arreglo de artículos y es lo que tenemos",
+        "start": 207.28,
+        "end": 218.56
+    },
+    {
+        "text": " acá, el arreglo y en cada una de sus celdas lo que hay es uno de estos, y el tope que puede",
+        "start": 218.56,
+        "end": 227.36
+    },
+    {
+        "text": " tomar un valo entre cero y la constante, para este dibujo vamos a suponer que la constante vale",
+        "start": 227.36,
+        "end": 232.52
+    },
+    {
+        "text": " 30, o sea que el arreglo con tope como mucho puede tener 30 artículos cargados,",
+        "start": 232.52,
+        "end": 238.96
+    },
+    {
+        "text": " recordemos que la propiedad fundamental de la reglo con tope es que no estamos obligados a cargar",
+        "start": 240.26000000000002,
+        "end": 246.28000000000003
+    },
+    {
+        "text": " todas sus celdas, se van cargando a demanda, hasta que en algún momento se puede llenar,",
+        "start": 246.28000000000003,
+        "end": 251.76000000000002
+    },
+    {
+        "text": " consejo, antes de empezar si tienen un ejercicio que les proponen tipos de datos,",
+        "start": 252.44,
+        "end": 261.59999999999997
+    },
+    {
+        "text": " lo primero es dibujen la estructura, es mucho más fácil de razonar los algoritmos,",
+        "start": 261.59999999999997,
+        "end": 268.36
+    },
+    {
+        "text": " si uno se hace un borrador donde visualmente vea qué tipos de datos tienen, no confiemos en",
+        "start": 268.36,
+        "end": 276.68
+    },
+    {
+        "text": " yo me acuerdo, porque si confío en el yo me acuerdo después es muy fácil meter la pata,",
+        "start": 276.68,
+        "end": 281.8
+    },
+    {
+        "text": " quedan claro los tipos de datos, bueno, mirar un poco las operaciones que se piden,",
+        "start": 285.44,
+        "end": 291.44
+    },
+    {
+        "text": " parte a escribir una función, yo les había comentado que rara vez les pedimos un programa completo en",
+        "start": 293.84000000000003,
+        "end": 304.4
+    },
+    {
+        "text": " el segundo parcial, casi siempre les pedimos que escriban determinados procedimientos o",
+        "start": 304.4,
+        "end": 310.64
+    },
+    {
+        "text": " funciones, que resole una problemática específica, no tienen que hacer el programa entero,",
+        "start": 310.64,
+        "end": 315.32
+    },
+    {
+        "text": " sino solamente el subprograma que se solicita, a lo que ustedes pueden hacer en la medida que corresponda",
+        "start": 315.32,
+        "end": 324.35999999999996
+    },
+    {
+        "text": " es si quieren hacerse algún subprograma auxiliar, bueno, lo pueden hacer y lo pueden llamar,",
+        "start": 324.35999999999996,
+        "end": 332.23999999999995
+    },
+    {
+        "text": " no hay ningún problema, siempre y cuando no violen ninguna de las consideraciones que dijimos al",
+        "start": 332.24,
+        "end": 337.28000000000003
+    },
+    {
+        "text": " principio, si usted hace un subprograma auxiliar que te queda cómodo hacerlo, pero eso termina en un",
+        "start": 337.28000000000003,
+        "end": 345.36
+    },
+    {
+        "text": " alorismo que es menos eficiente, entonces capaz que ese subprograma auxiliar no es el mejor,",
+        "start": 345.36,
+        "end": 350.0
+    },
+    {
+        "text": " de repente hay que pensar otro, pero en caso de que aporte, en caso de que ayude, en caso de que",
+        "start": 350.0,
+        "end": 357.08
+    },
+    {
+        "text": " corresponda ustedes se pueden hacer su programa auxiliar, salvo que la letra expresamente te diga que no,",
+        "start": 357.2,
+        "end": 363.59999999999997
+    },
+    {
+        "text": " si la letra no te dice que no, entonces vos te puedes hacer cualquier subprograma auxiliar que",
+        "start": 363.59999999999997,
+        "end": 369.0
+    },
+    {
+        "text": " consideres, otra cosa que pueden hacer también es desde alguna parte posterior invocar",
+        "start": 369.0,
+        "end": 376.91999999999996
+    },
+    {
+        "text": " alguno que haya hecho en alguna parte anterior, o sea que en ese sentido hay la misma libertad de",
+        "start": 376.91999999999996,
+        "end": 382.76
+    },
+    {
+        "text": " la elección que tuvieron durante los prácticos y durante la tarea, parte a escribir la función",
+        "start": 382.76,
+        "end": 391.4
+    },
+    {
+        "text": " comparar códigos que recibe dos códigos, es decir, dos arreglos de dígitos que quedaron allá arriba",
+        "start": 391.4,
+        "end": 400.44
+    },
+    {
+        "text": " y determina si el primero de ellos es menor igual o mayor que el segundo,",
+        "start": 402.2,
+        "end": 408.64
+    },
+    {
+        "text": " o sea subir un poquito, recibimos dos de estos, el resultado va a ser un valor del tipo numerado que",
+        "start": 408.64,
+        "end": 422.03999999999996
+    },
+    {
+        "text": " se definió al principio, entonces cuál será la idea de esta función ir haciendo que cosa,",
+        "start": 422.03999999999996,
+        "end": 429.71999999999997
+    },
+    {
+        "text": " comparar lígito por lígito y qué tipo de comparación, alfabética, numérica,",
+        "start": 430.72,
+        "end": 438.68
+    },
+    {
+        "text": " numérica, ¿por qué?, porque el contenido es un subrango de los centeros,",
+        "start": 441.36,
+        "end": 447.84000000000003
+    },
+    {
+        "text": " cuál es la idea conceptual que si numéricamente hablando, todo el primer código es efectivamente menor",
+        "start": 450.24,
+        "end": 459.0
+    },
+    {
+        "text": " en un sentido numérico, el segundo, bueno, el resultado que vamos a devolver cuál va a ser,",
+        "start": 459.0,
+        "end": 464.56
+    },
+    {
+        "text": " menor, si son idénticos vamos a devolver igual y si el primero es mayor vamos a devolver mayor,",
+        "start": 464.56,
+        "end": 475.16
+    },
+    {
+        "text": " recorrida completa o búsqueda, búsqueda y ahí hay que jugar un poquito en qué tipo de comparación",
+        "start": 478.56,
+        "end": 485.96
+    },
+    {
+        "text": " numérica tenemos que hacer pero claramente esta tiene pinta de ser una operación de búsqueda,",
+        "start": 485.96,
+        "end": 491.23999999999995
+    },
+    {
+        "text": " bueno esta es la parte en la cual reflexionamos, cuando es una búsqueda cuál es la estructura adecuada en",
+        "start": 493.23999999999995,
+        "end": 498.88
+    },
+    {
+        "text": " un arreglo, si fuera una recorrida completa cuál es la estructura adecuada, por recuerden siempre",
+        "start": 498.88,
+        "end": 507.91999999999996
+    },
+    {
+        "text": " busquen usar la estructura más adecuada para cada el orgismo, ¿sí entendió la parte a?",
+        "start": 507.92,
+        "end": 516.84
+    },
+    {
+        "text": " bueno vamos a suponer que ya están hecha esta parte les queda para ser a ustedes,",
+        "start": 516.84,
+        "end": 523.88
+    },
+    {
+        "text": " cualquier cosa me preguntan después y quiero mirar la parte b que está bastante jugosa por decirlo",
+        "start": 523.88,
+        "end": 532.96
+    },
+    {
+        "text": " de alguna manera, esta la vamos a discutir en detalle, pide escribir el procedimiento menor art",
+        "start": 532.96,
+        "end": 545.64
+    },
+    {
+        "text": " eval, ese es el nombre que dado un conjunto de artículos, o sea dado uno de estos,",
+        "start": 545.64,
+        "end": 555.0400000000001
+    },
+    {
+        "text": " encuentra el artículo de menor código que haya sido evaluado, vamos a mirar acá, tenemos",
+        "start": 555.04,
+        "end": 567.9599999999999
+    },
+    {
+        "text": " artículos, cada uno de ellos está representado mediante un registro variante, entonces como hago para",
+        "start": 567.9599999999999,
+        "end": 575.92
+    },
+    {
+        "text": " saber si fue evaluado o no, nos fijamos en donde, en el campo discriminante de cada uno de ellos,",
+        "start": 575.92,
+        "end": 586.16
+    },
+    {
+        "text": " aquellos que tengan cargado el valor true efectivamente han sido evaluados, en este dibujo vamos",
+        "start": 586.16,
+        "end": 597.16
+    },
+    {
+        "text": " a suponer que los que están rayados son los que han sido evaluados y los que están punteados son",
+        "start": 597.16,
+        "end": 603.24
+    },
+    {
+        "text": " los que no han sido evaluados, o sea que si miramos acá los evaluados son estos tres, bueno de estos",
+        "start": 603.24,
+        "end": 612.6
+    },
+    {
+        "text": " tres, cual me piden encontrar, el que tenga menor código, o sea que sobrevuelve a ir la idea de que",
+        "start": 612.6,
+        "end": 621.32
+    },
+    {
+        "text": " voy a tener que hacer una comparación entre códigos, bueno que vamos a hacer para hacer la comparación",
+        "start": 621.32,
+        "end": 626.08
+    },
+    {
+        "text": " entre códigos, llamar no, llamar a la de la parte A, le recorría completa que vas a que",
+        "start": 626.08,
+        "end": 633.84
+    },
+    {
+        "text": " para este, para la parte B, yo me refería puntualmente al momento en el cual comparas un código con",
+        "start": 633.84,
+        "end": 639.24
+    },
+    {
+        "text": " otro, bien es seguro que hay al menos un artículo evaluado, la ledora no me dice nada, o sea que",
+        "start": 643.24,
+        "end": 651.6
+    },
+    {
+        "text": " podría pasar que cosa, que no haya ningún artículo evaluado y eso es algo que el algoritmo va",
+        "start": 651.6,
+        "end": 658.36
+    },
+    {
+        "text": " a tener que tomar en cuenta, miremos lo que dice a continuación, el procedimiento devuelve el",
+        "start": 658.36,
+        "end": 665.52
+    },
+    {
+        "text": " código y la evaluación del artículo encontrado, es decir si hay un artículo evaluado por lo menos,",
+        "start": 665.52,
+        "end": 673.0400000000001
+    },
+    {
+        "text": " o bien una indicación de que no se encontró ningún artículo evaluado, lo que dijimos recién,",
+        "start": 674.64,
+        "end": 681.1600000000001
+    },
+    {
+        "text": " podría no ver ninguno, para devolver el resultado se va a utilizar un nuevo tipo de datos",
+        "start": 681.16,
+        "end": 690.28
+    },
+    {
+        "text": " distintos de los que están detallados antes que se llama resultado y que pertenece a que categoría,",
+        "start": 690.28,
+        "end": 696.52
+    },
+    {
+        "text": " es otro record case, es otro registro variante, lo que vamos a devolver es uno de estos, fíjense",
+        "start": 697.8,
+        "end": 707.16
+    },
+    {
+        "text": " que antes del case en un registro variante nosotros podíamos llegar a poner diferentes campos y al",
+        "start": 707.16,
+        "end": 715.9599999999999
+    },
+    {
+        "text": " final es que venía la parte variante, podía pasar en algunos casos que antes del discriminante",
+        "start": 715.9599999999999,
+        "end": 722.52
+    },
+    {
+        "text": " no tuvieramos ningún campo, eso puede ocurrir y de hecho es lo que pasa acá, el primer campo es",
+        "start": 722.52,
+        "end": 728.52
+    },
+    {
+        "text": " directamente el discriminante que es un bulian, en el cual vamos a cargar si encontramos o no que cosa,",
+        "start": 728.52,
+        "end": 735.4
+    },
+    {
+        "text": " algún artículo evaluado, en caso de que hayamos encontrado algún artículo evaluado,",
+        "start": 737.64,
+        "end": 743.48
+    },
+    {
+        "text": " acabamos a cargar true y lo que vamos a devolver son estos dos datos, el código y su valor de",
+        "start": 743.48,
+        "end": 752.6
+    },
+    {
+        "text": " evaluación, o sea estos dos, los vamos a copiar para ahí y si no lo encontramos no vamos a",
+        "start": 752.6,
+        "end": 762.04
+    },
+    {
+        "text": " devolver nada más, simplemente false como indicación de que no se encontró ningún artículo evaluado.",
+        "start": 762.04,
+        "end": 767.48
+    },
+    {
+        "text": " Claro, hay una cosa, los nombres de los campos en el tipo artículo no tienen nada que ver con los",
+        "start": 773.0799999999999,
+        "end": 780.36
+    },
+    {
+        "text": " nombres de los campos acá, dio la casualidad que acá se llama Eval uno de tipo int,",
+        "start": 780.36,
+        "end": 785.04
+    },
+    {
+        "text": " mientras que acá se llama Eval uno de tipo bulian, lo que hay que asegurarse es que cuando manipulemos",
+        "start": 785.04,
+        "end": 790.5999999999999
+    },
+    {
+        "text": " el récord correcto usan los nombres cuerences, bien y acá tenemos el encabezado,",
+        "start": 790.6,
+        "end": 800.76
+    },
+    {
+        "text": " es un procedimiento menor de arte igual, me pasan algo de tipo artículos o sea una recontope",
+        "start": 802.26,
+        "end": 810.9200000000001
+    },
+    {
+        "text": " y lo que devolvemos es un resultado de este tipo que indicamos acá,",
+        "start": 811.88,
+        "end": 818.36
+    },
+    {
+        "text": " como me doy cuenta cuál es parámetro de entrada y cuál es parámetro de salida,",
+        "start": 820.36,
+        "end": 824.1999999999999
+    },
+    {
+        "text": " mirándole encabezado, el primero se pasa por valor, o sea que entra cargado donde cargado en una",
+        "start": 826.04,
+        "end": 834.52
+    },
+    {
+        "text": " ráy contope significa podría valercer el tope, o si el tope vale más es que hay valores cargados",
+        "start": 834.52,
+        "end": 842.4399999999999
+    },
+    {
+        "text": " en sus celdas, o sea el arrelo contope viene bien, no viene con basura, lo vamos a modificar dentro",
+        "start": 842.4399999999999,
+        "end": 849.3199999999999
+    },
+    {
+        "text": " del procedimiento, no, la idea es que los parámetros que se pasan por valor no se desean modificar",
+        "start": 849.3199999999999,
+        "end": 855.0799999999999
+    },
+    {
+        "text": " y el segundo está por referencia, o sea que ese sí lo vamos a modificar porque justamente eso es",
+        "start": 857.56,
+        "end": 864.12
+    },
+    {
+        "text": " lo que vamos a devolver, se entendió la idea, vamos acá y lo echamos,",
+        "start": 864.12,
+        "end": 872.44
+    },
+    {
+        "text": " bien,",
+        "start": 878.2,
+        "end": 878.68
+    },
+    {
+        "text": " bueno, vamos a copiar el encabezado,",
+        "start": 887.4,
+        "end": 890.36
+    },
+    {
+        "text": " es un procedimiento, se llama menor arteval y recibía,",
+        "start": 894.68,
+        "end": 903.48
+    },
+    {
+        "text": " un parámetro arts de tipo artículos, que se dijimos que era por valor y como resultado devolvemos",
+        "start": 905.96,
+        "end": 915.88
+    },
+    {
+        "text": " por referencia, algo de tipo resultado, donde resultado era el record que ahí se acabamos de ver,",
+        "start": 915.88,
+        "end": 931.48
+    },
+    {
+        "text": " bien, bueno y vamos a pensar cómo lo hacemos, el menor artículo perdón, el artículo con",
+        "start": 931.48,
+        "end": 949.12
+    },
+    {
+        "text": " menor código que haya sido evaluado si es que existe, y vamos a quedarnos con esa parte, si es",
+        "start": 949.12,
+        "end": 957.28
+    },
+    {
+        "text": " que existe, que es lo primero que tendríamos que hacer, determinar si hay o no artículos evaluados por",
+        "start": 957.28,
+        "end": 967.36
+    },
+    {
+        "text": " lo menos uno, y para resolver eso que tenemos que hacer, una recorrida completa, una búsqueda",
+        "start": 967.36,
+        "end": 976.76
+    },
+    {
+        "text": " hasta encontrar el primero evaluado, en el peor caso que va a suceder, que no hay evaluados en",
+        "start": 976.76,
+        "end": 984.52
+    },
+    {
+        "text": " cuyo caso voy a llegar hasta donde, que es el final en una raícontope, la posición y",
+        "start": 984.52,
+        "end": 990.8
+    },
+    {
+        "text": " media también posterior al top, luego del top que hay en una raícontope, basura, valores indefinidos,",
+        "start": 990.8,
+        "end": 998.48
+    },
+    {
+        "text": " monstruos, bien, tenemos que buscar el primer artículo evaluado, no están en ninguno orden,",
+        "start": 998.48,
+        "end": 1009.28
+    },
+    {
+        "text": " de ningún criterio, con lo cual si no hay ningún tipo de orden, qué tipo de búsqueda vamos a",
+        "start": 1010.24,
+        "end": 1017.9399999999999
+    },
+    {
+        "text": " hacer, nosotros conocemos dos búsquedas ahora, la lineal y la otra como se llamaba, la búsqueda",
+        "start": 1017.9399999999999,
+        "end": 1023.56
+    },
+    {
+        "text": " binaria, pero cuando aplicaba la búsqueda binaria, cuando teníamos una relación de orden que no es el",
+        "start": 1023.56,
+        "end": 1029.8799999999999
+    },
+    {
+        "text": " caso, así que la vieja y querida búsqueda linear, bien, vamos a declarar una sección para variables",
+        "start": 1029.88,
+        "end": 1040.1200000000001
+    },
+    {
+        "text": " y vamos a ir llenando a las variables que necesitemos, bien, bueno, primero nos concentramos en",
+        "start": 1040.1200000000001,
+        "end": 1049.8000000000002
+    },
+    {
+        "text": " la búsqueda del primer artículo evaluado, si es que hay, como toda búsqueda linear como la hacemos,",
+        "start": 1049.8000000000002,
+        "end": 1057.5200000000002
+    },
+    {
+        "text": " con yai, si, si si, ahora vamos a ir declarando las variables que presisemos, bien, dijimos entonces que",
+        "start": 1057.52,
+        "end": 1070.2
+    },
+    {
+        "text": " usamos yai para hacer una búsqueda, cuál es el esquema para una búsqueda lineal, poníamos y",
+        "start": 1070.2,
+        "end": 1079.48
+    },
+    {
+        "text": " huay y cuantas condiciones, dos, la primera para controlar algo y cosa, que no me vaya de rango y la",
+        "start": 1079.48,
+        "end": 1086.16
+    },
+    {
+        "text": " segunda, lo que quiero encontrar, separadas por and, y es importante que vayan en ese orden porque",
+        "start": 1086.16,
+        "end": 1094.04
+    },
+    {
+        "text": " por el circuito corto, lo echarlamos muchísimas veces, bien, me gusta que lo tengan tan aflor de piel",
+        "start": 1095.04,
+        "end": 1102.76
+    },
+    {
+        "text": " esta altura, es bueno eso, bueno, que variables necesitamos para hacer esa búsqueda, un intescer,",
+        "start": 1102.76,
+        "end": 1111.32
+    },
+    {
+        "text": " vamos a llamarlo y, bueno, y esa variable y que va a lo inicial le vamos a dar, como?",
+        "start": 1112.92,
+        "end": 1128.2
+    },
+    {
+        "text": " uno, nos vamos a posicionar a partir de la primera z, bien, o sea que ahí le vamos a asignar uno,",
+        "start": 1129.2,
+        "end": 1136.44
+    },
+    {
+        "text": " medida que vellamos necesitando más variables las colocamos allí, bueno, y como empezamos la",
+        "start": 1136.44,
+        "end": 1145.04
+    },
+    {
+        "text": " búsqueda, huay, nuestra vieja y querida estructura repetitiva huay, huay que, mientras que hice a",
+        "start": 1145.04,
+        "end": 1154.8
+    },
+    {
+        "text": " menor o igual a arts punto top, artes un record, tiene un campo llamado top, lo estamos",
+        "start": 1155.76,
+        "end": 1167.6399999999999
+    },
+    {
+        "text": " accediendo acá, en este dibujo vale 6, o sea que la I es menor o igual que el top de arts,",
+        "start": 1167.6399999999999,
+        "end": 1173.8799999999999
+    },
+    {
+        "text": " primera condición para controlar no irnos de rango, luego, and",
+        "start": 1175.72,
+        "end": 1182.84
+    },
+    {
+        "text": " bueno y ahora que tenemos que ver en la segunda, si el artículo que tenemos acá está",
+        "start": 1185.1599999999999,
+        "end": 1194.48
+    },
+    {
+        "text": " evaluado, bueno entonces vamos a mirar la estructura del artículo, qué campo me dice si fue evaluado,",
+        "start": 1194.48,
+        "end": 1202.76
+    },
+    {
+        "text": " el campo Eval del artículo que tenemos en la celdabuno, eso es lo que tenemos que mirar,",
+        "start": 1202.76,
+        "end": 1210.6
+    },
+    {
+        "text": " entonces, anque,",
+        "start": 1210.6,
+        "end": 1213.8
+    },
+    {
+        "text": " ahora vamos a ver arts en la posición E, punto, Lms, arts punto elms para el arreglo, bien, luego de eso",
+        "start": 1221.0,
+        "end": 1234.6
+    },
+    {
+        "text": " entre colchetes la celdab que queremos que es la I, ahí entramos acá,",
+        "start": 1235.9599999999998,
+        "end": 1239.6399999999999
+    },
+    {
+        "text": " y dentro de esto punto Eval, y vamos a seguir avanzando mientras que, mientras que esas",
+        "start": 1240.6,
+        "end": 1246.24
+    },
+    {
+        "text": " sean pols, bueno lo podemos poner así, and not y ahora vamos a escribir esa ruta que me",
+        "start": 1246.24,
+        "end": 1256.1399999999999
+    },
+    {
+        "text": " dijeron, dijimos arts punto, arts es el record, nos metemos dentro de Lms, eso es el arreglo,",
+        "start": 1256.14,
+        "end": 1270.42
+    },
+    {
+        "text": " la celdab, eso es el artículo y dentro del artículo, punto Eval, si esto vale pols,",
+        "start": 1270.42,
+        "end": 1283.38
+    },
+    {
+        "text": " su negación que va a dar, por lo tanto voy a seguir buscando, en el momento en que esto va al",
+        "start": 1284.38,
+        "end": 1292.5800000000002
+    },
+    {
+        "text": " gatru, su negación que va a dar y la parte derecha delante va a pols y salís, no, campo de",
+        "start": 1292.5800000000002,
+        "end": 1303.8600000000001
+    },
+    {
+        "text": " tipo bulian se le pueden aplicar los superadores bulian, ¿vale? queda claro esto, bien,",
+        "start": 1303.8600000000001,
+        "end": 1312.8200000000002
+    },
+    {
+        "text": " si no llega al final y no está evaluado el artículo que tenemos que hacerlo, vamos a",
+        "start": 1314.38,
+        "end": 1322.9
+    },
+    {
+        "text": " imaginar que estamos acá, avanzar, como avanzamos en un arreglo, ahí le asignamos y más uno,",
+        "start": 1322.9,
+        "end": 1332.3000000000002
+    },
+    {
+        "text": " nuestro viejo y querido es que más de búsqueda linea, sí, si su cero la comparación",
+        "start": 1336.14,
+        "end": 1341.1000000000001
+    },
+    {
+        "text": " mal no estaría pero esto es mejor, algún puntito, pero esto es mejor,",
+        "start": 1344.38,
+        "end": 1351.66
+    },
+    {
+        "text": " preguntar esto que comparar con igual a Barcio y Vallefolso, lo que vos querías hacer, esto es",
+        "start": 1354.5600000000002,
+        "end": 1362.5
+    },
+    {
+        "text": " mejor, si quieres buscar uno que va al gatru y les sacarías el lot y ya está, ¿por qué que",
+        "start": 1362.5,
+        "end": 1372.74
+    },
+    {
+        "text": " pasa comparar un buliano con otro buliano es como redundante, porque al ser ya buliano directamente",
+        "start": 1372.74,
+        "end": 1380.74
+    },
+    {
+        "text": " vale truos, una negación vale truos, recuerden, hay diferentes grados de cosas que están mal y",
+        "start": 1380.74,
+        "end": 1389.66
+    },
+    {
+        "text": " cosas que están muy mal y cosas que son chiquitas, esta vendría a ser chiquita, no sé, eso cuando se definan",
+        "start": 1389.66,
+        "end": 1396.26
+    },
+    {
+        "text": " los criterios de valosión se ve, pero a Barno es blanco negro, hay escala de grises en el medio",
+        "start": 1396.26,
+        "end": 1402.66
+    },
+    {
+        "text": " hay errores muy graves, hay errores graves, hay errores medios y errores leve, esto sería leve,",
+        "start": 1402.9,
+        "end": 1407.78
+    },
+    {
+        "text": " se entendió, bueno si no hubiera ningún artículo evaluado hasta dónde va a llegar, hasta",
+        "start": 1411.66,
+        "end": 1419.14
+    },
+    {
+        "text": " el final donde el final es pasando el tope, no consulté por basura gracias a la magia de quien,",
+        "start": 1419.14,
+        "end": 1426.22
+    },
+    {
+        "text": " del circuito corto, bien, pero vamos a mirar este dibujo que tenemos acá, esa búsqueda donde va a",
+        "start": 1426.22,
+        "end": 1435.34
+    },
+    {
+        "text": " parar, ¿en qué se va a parar? estamos suponiendo que los rayados son los evaluados, esto va a llegar",
+        "start": 1435.34,
+        "end": 1442.1000000000001
+    },
+    {
+        "text": " hasta acá y estando acá, es que va a detenerse la búsqueda, o sea que acá es donde va a quedar,",
+        "start": 1442.1000000000001,
+        "end": 1450.54
+    },
+    {
+        "text": " el índice en caso de que haya un artículo evaluado, se entendió hasta acá,",
+        "start": 1451.26,
+        "end": 1458.02
+    },
+    {
+        "text": " estamos parados en el primer artículo evaluado, ¿qué debemos hacer ahora?",
+        "start": 1459.54,
+        "end": 1466.1599999999999
+    },
+    {
+        "text": " algún tipo de if quizás pongamos luego exactamente, si, eso ahora cuando los escribamos,",
+        "start": 1471.02,
+        "end": 1476.42
+    },
+    {
+        "text": " bueno ahora nos hemos parado arriba del primer artículo que está evaluado, ¿sabién?",
+        "start": 1481.02,
+        "end": 1487.86
+    },
+    {
+        "text": " entonces ahora que debemos buscar, tenemos que seguir mirando qué cosa,",
+        "start": 1490.18,
+        "end": 1498.6599999999999
+    },
+    {
+        "text": " el siguiente fijándonos qué cosa, si está evaluado y si está evaluado que tenemos que hacer,",
+        "start": 1500.54,
+        "end": 1505.62
+    },
+    {
+        "text": " comparar qué, comparar los codigos, y si encuentro uno que tenga un código menor que hago,",
+        "start": 1506.34,
+        "end": 1514.02
+    },
+    {
+        "text": " me quedo con ese, vamos a necesitar más variables auxiliares que ahora les vamos a ir a agregarlo,",
+        "start": 1514.02,
+        "end": 1521.3
+    },
+    {
+        "text": " yo dije buscar el menor, pero es una búsqueda lo que hacemos a partir de ahora,",
+        "start": 1521.3,
+        "end": 1527.34
+    },
+    {
+        "text": " no, ahora vamos a ir desde acá hasta el final porque para encontrar un mínimo o un máximo,",
+        "start": 1528.54,
+        "end": 1533.86
+    },
+    {
+        "text": " esto lo vimos cuando vimos a reglos, es necesario explorar todo el rango completo porque,",
+        "start": 1534.4199999999998,
+        "end": 1538.8999999999999
+    },
+    {
+        "text": " porque no sabes si más adelante no hay otro que sea un menor,",
+        "start": 1540.2199999999998,
+        "end": 1543.34
+    },
+    {
+        "text": " se va entendiendo, bien, me voy a declarar otra variable, yo lo voy a llamar inmin,",
+        "start": 1547.1399999999999,
+        "end": 1554.8999999999999
+    },
+    {
+        "text": " de tipo int, yo acá les estoy declarando de alguna medida que las vamos necesitando,",
+        "start": 1554.9,
+        "end": 1564.3400000000001
+    },
+    {
+        "text": " no hay problema con eso, si son del mismo tipo recuerden que las pueden declarar juntas,",
+        "start": 1564.3400000000001,
+        "end": 1569.3400000000001
+    },
+    {
+        "text": " y ahí sí no hay diferencia, bueno entonces hasta el momento como este fue el primer artículo",
+        "start": 1569.3400000000001,
+        "end": 1578.42
+    },
+    {
+        "text": " evaluado que encontré, voy a tomar este, como el artículo con código mínimo,",
+        "start": 1578.42,
+        "end": 1583.3000000000002
+    },
+    {
+        "text": " y para eso es que voy a usar inmin,",
+        "start": 1584.98,
+        "end": 1586.74
+    },
+    {
+        "text": " voy a guardar el índice de la celda que tiene el que hasta el momento es el de menor código",
+        "start": 1591.22,
+        "end": 1596.78
+    },
+    {
+        "text": " y evaluado, todo eso, entonces inin que valor le damos,",
+        "start": 1596.78,
+        "end": 1603.8600000000001
+    },
+    {
+        "text": " tres en el ejemplo en forma general y lo puse adentro fuera del y",
+        "start": 1604.86,
+        "end": 1609.8999999999999
+    },
+    {
+        "text": " bueno y qué tendríamos que hacer ahora empezar en donde, empezar en realidad entre no,",
+        "start": 1615.1,
+        "end": 1622.4599999999998
+    },
+    {
+        "text": " en el siguiente, en cuatro, sí,",
+        "start": 1623.4599999999998,
+        "end": 1627.1799999999998
+    },
+    {
+        "text": " puedo, no me va a servir de nada, ahora vamos a ver qué pasa con eso,",
+        "start": 1634.58,
+        "end": 1639.02
+    },
+    {
+        "text": " vamos a suponer por un momento que lo encontré, o sea que efectivamente no me fui,",
+        "start": 1641.12,
+        "end": 1647.26
+    },
+    {
+        "text": " hasta el momento este fue el primer artículo evaluado que encontré, el cual tomamos como el",
+        "start": 1648.78,
+        "end": 1654.02
+    },
+    {
+        "text": " inmin, y a partir de ahora voy a continuar desde donde, desde la de al lado, desde ahí,",
+        "start": 1654.02,
+        "end": 1663.62
+    },
+    {
+        "text": " ahí empiezo y voy a seguir hasta donde, hasta el último, hasta el del toque,",
+        "start": 1663.62,
+        "end": 1669.74
+    },
+    {
+        "text": " cedón de empiezo, cedón de termino y esto es un arreglo, qué uso,",
+        "start": 1670.74,
+        "end": 1676.1
+    },
+    {
+        "text": " bueno vamos a usar,",
+        "start": 1680.74,
+        "end": 1684.0
+    },
+    {
+        "text": " por, cómo, no vas a enterar o sea, a partir de los que viva, no vas a enterar, no voy a enterar,",
+        "start": 1684.0,
+        "end": 1697.04
+    },
+    {
+        "text": " o sea si uso el mismo ídesis, lo que iba a hacer acá era declarar un jota, justamente porque",
+        "start": 1699.04,
+        "end": 1705.04
+    },
+    {
+        "text": " necesito mantener y, ¿qué es todo en donde quedó? ahora vamos a verlo, entonces declaro jota,",
+        "start": 1705.04,
+        "end": 1713.36
+    },
+    {
+        "text": " que la voy a usar como variable de control del forque va a empezar ahora,",
+        "start": 1714.0,
+        "end": 1722.0
+    },
+    {
+        "text": " desde acá hasta el final antes me voy a fijar qué cosa, y si está evaluado me voy a fijar si",
+        "start": 1722.0,
+        "end": 1733.92
+    },
+    {
+        "text": " tiene código más chico, y nuevamente me lo va a resolver nuestro amigo el circuito corto,",
+        "start": 1733.92,
+        "end": 1738.0
+    },
+    {
+        "text": " bueno, forque, jota va a arrancar en y más uno y vamos a seguir hasta donde, hasta el toque y el toque",
+        "start": 1739.0,
+        "end": 1755.56
+    },
+    {
+        "text": " como lo pongo, arts punto toque, recorrida completa que arranca en la posición siguiente al que",
+        "start": 1755.56,
+        "end": 1767.16
+    },
+    {
+        "text": " encontramos y finaliza en el toque, se donde empiezo, se donde termino la estructura de cuadralfor,",
+        "start": 1767.16,
+        "end": 1774.68
+    },
+    {
+        "text": " vamos a imaginarnos por un segundo que no había ningún artículo evaluado, si no había ningún",
+        "start": 1776.28,
+        "end": 1783.2
+    },
+    {
+        "text": " artículo evaluado que pasaba con ídesis y va a llegar hasta acá hasta la 7, si no hubiera",
+        "start": 1783.2,
+        "end": 1790.44
+    },
+    {
+        "text": " encontrado ninguno, el wireless, entonces qué va a pasar, voy a tratar de empezar en donde, en la 8,",
+        "start": 1790.44,
+        "end": 1802.0
+    },
+    {
+        "text": " se voy a tratar de empezar, en un origen mayor que un destino, y qué pasaba en un for, un for",
+        "start": 1802.0,
+        "end": 1808.4
+    },
+    {
+        "text": " ascendente cuando el origen es mayor que el destino, directamente no entra, no tira error, no se rompe,",
+        "start": 1808.4,
+        "end": 1816.0800000000002
+    },
+    {
+        "text": " directamente no entra, pues se evitamos ese is que querían poner, porque el propio for ya lo",
+        "start": 1816.08,
+        "end": 1822.9199999999998
+    },
+    {
+        "text": " controla, una de las buenas prácticas que vimos, un capítulo que se institutelaba, ejemplo,",
+        "start": 1822.9199999999998,
+        "end": 1829.08
+    },
+    {
+        "text": " avanzados de iteración, a bien aparte que era la pragmática del for, que decía no controlar con",
+        "start": 1829.08,
+        "end": 1835.32
+    },
+    {
+        "text": " un is innecesario algo que el propio for ya controla, y ese for ya lo controla,",
+        "start": 1835.32,
+        "end": 1842.6799999999998
+    },
+    {
+        "text": " no sería un error grave, pero sería lo que llamamos una descuida, una torpesa, un apalatoso,",
+        "start": 1846.96,
+        "end": 1855.8
+    },
+    {
+        "text": " bien, bueno y ahora nos metemos al artículo y que preguntamos del artículo,",
+        "start": 1858.28,
+        "end": 1865.76
+    },
+    {
+        "text": " primero si está evaluado, cómo hacemos eso, y qué uso, y vamos a meternos en el artículo,",
+        "start": 1866.76,
+        "end": 1876.8
+    },
+    {
+        "text": " ahora vemos si hace falta, si hace falta se lo colocamos, y arts, eso es el arraicontope,",
+        "start": 1880.64,
+        "end": 1888.44
+    },
+    {
+        "text": " punto elms, me metí dentro del arreglo, en la posición, que estoy usando para moverme acá,",
+        "start": 1888.44,
+        "end": 1896.0800000000002
+    },
+    {
+        "text": " está, estoy en uno de estos, y donde me meto, dentro del campo Eval,",
+        "start": 1899.28,
+        "end": 1905.04
+    },
+    {
+        "text": " y lo cierro acá, no pregunto si esto es igual a tru, porque, porque ya es William,",
+        "start": 1908.88,
+        "end": 1914.88
+    },
+    {
+        "text": " si esto ya me va a dar cierta la condición, entonces acá estoy preguntando si el artículo en",
+        "start": 1915.7600000000002,
+        "end": 1923.5200000000002
+    },
+    {
+        "text": " la posición j fue evaluado, que es lo segundo que tengo que preguntar, si su código es",
+        "start": 1923.5200000000002,
+        "end": 1932.5600000000002
+    },
+    {
+        "text": " mayor al código del que hasta el momento es el mínimo, perdón si es menor,",
+        "start": 1932.5600000000002,
+        "end": 1939.64
+    },
+    {
+        "text": " menor al que está en la posición invenible, y ahí que usamos, la función de la parte anterior,",
+        "start": 1939.64,
+        "end": 1948.88
+    },
+    {
+        "text": " qué pongo acá, An, está, y acá llamamos a, si no recuerdo mal se llamaba,",
+        "start": 1948.88,
+        "end": 1957.24
+    },
+    {
+        "text": " comparar códigos, An, comparar códigos, y comparar códigos,",
+        "start": 1957.24,
+        "end": 1972.52
+    },
+    {
+        "text": " recibía dos cosas de tipo código, y código era un arreglo de dígitos, e internamente",
+        "start": 1972.52,
+        "end": 1982.36
+    },
+    {
+        "text": " verificaba y habían trasresultado posibles, menor igual o mayor, yo quiero ver si el que tengo en",
+        "start": 1983.08,
+        "end": 1990.0
+    },
+    {
+        "text": " la posición j es como, menor al que tengo en la posición inmin, la primera vez vale y,",
+        "start": 1990.0,
+        "end": 1998.7199999999998
+    },
+    {
+        "text": " pero luego puede llegar a cambiar, bueno, comparar códigos como digo el artículo que está en la",
+        "start": 1998.7199999999998,
+        "end": 2006.56
+    },
+    {
+        "text": " posición j, igual que allá, arts.lens, de j, esto es el artículo y dentro del artículo que campo,",
+        "start": 2006.56,
+        "end": 2023.0
+    },
+    {
+        "text": " coartículo, punto, coartículo, estamos comparando el código del artículo que está en la posición",
+        "start": 2023.0,
+        "end": 2040.04
+    },
+    {
+        "text": " j, de la raí con top, con cuál, con el código del que está en la posición donde, inmin, entonces",
+        "start": 2040.04,
+        "end": 2050.28
+    },
+    {
+        "text": " que pongo, arts.lens, correcto, indice inmin, punto, coartículo, si no les da la hoja en el",
+        "start": 2050.28,
+        "end": 2066.0400000000004
+    },
+    {
+        "text": " parcial pueden poner la segunda condición abajo, el problema, punto con el artículo, cierro,",
+        "start": 2066.0400000000004,
+        "end": 2073.88
+    },
+    {
+        "text": " esto es un arreglo de dígitos y esto es otro arreglo de dígitos que es lo que recibía la",
+        "start": 2074.88,
+        "end": 2082.52
+    },
+    {
+        "text": " función comparar códigos, porque ir es la primera vez, pero cada vez que yo luego encuentre uno más",
+        "start": 2082.52,
+        "end": 2092.7200000000003
+    },
+    {
+        "text": " chico voy a ir modificando, inmin, bueno, si la función está me devolvió que cosa,",
+        "start": 2092.7200000000003,
+        "end": 2101.36
+    },
+    {
+        "text": " porque está devolvido en numerado que podía ser menor igual o mayor, si me devolvíó,",
+        "start": 2101.96,
+        "end": 2106.6400000000003
+    },
+    {
+        "text": " menor, acá sí hago la comparación con igual, porque estamos comparando valores de un enumerado,",
+        "start": 2108.48,
+        "end": 2114.84
+    },
+    {
+        "text": " no es buliano, bueno, entonces acá abrimos, acá cerramos, acá abrimos la condición del",
+        "start": 2114.84,
+        "end": 2125.52
+    },
+    {
+        "text": " arreglo, acá cerramos y recién ahora valden, si el artículo en la posición j fue evaluado y su",
+        "start": 2125.52,
+        "end": 2133.96
+    },
+    {
+        "text": " código es menor al código del que está en la posición inmin, tengo un nuevo mínimo,",
+        "start": 2133.96,
+        "end": 2142.16
+    },
+    {
+        "text": " como inmin le asignas, no, es un índice, j, le asignamos j, entonces estamos acá, j, rancuaca,",
+        "start": 2142.16,
+        "end": 2158.6
+    },
+    {
+        "text": " si el código de este, primero, este está evaluado, sí, porque está pintado arrayado, si su código",
+        "start": 2158.6,
+        "end": 2165.72
+    },
+    {
+        "text": " llega a ser menor que este inmin deja de valer 3 y ahora pasaba a valer 4, y si no se mira",
+        "start": 2165.72,
+        "end": 2171.96
+    },
+    {
+        "text": " valiendo 3, bueno, qué es lo que hay dentro del for, unif y todo elif es una instrucción",
+        "start": 2171.96,
+        "end": 2184.88
+    },
+    {
+        "text": " compuesta, se considera y de hecho es una sola instrucción, está mal poner viginen, mal no está,",
+        "start": 2184.88,
+        "end": 2193.88
+    },
+    {
+        "text": " pero recordemos, cuando es una instrucción sola, ya sea simple, o sea compuesta, podemos",
+        "start": 2195.08,
+        "end": 2201.0
+    },
+    {
+        "text": " omitir viginen, acá sí, si lo ponen o no lo ponen, no es grave, yo no creo, eso es",
+        "start": 2201.0,
+        "end": 2210.12
+    },
+    {
+        "text": " realmente algo muy menor, si hubieran 2 o más instrucciones, ahí sí es necesario viginen,",
+        "start": 2210.12,
+        "end": 2216.6
+    },
+    {
+        "text": " bueno, entonces si este que está evaluado tiene un código menor a este, este pasa a ser",
+        "start": 2220.6,
+        "end": 2229.0
+    },
+    {
+        "text": " mi nuevo artículo con menor código evaluado y si no seguir haciendo este, luego que hace el for,",
+        "start": 2229.56,
+        "end": 2235.72
+    },
+    {
+        "text": " avanza a el siguiente, entramos ahora con j tan 5, está evaluado a este, no, que hacemos,",
+        "start": 2237.72,
+        "end": 2246.24
+    },
+    {
+        "text": " avanza, entramos con j valiendo 6, está evaluado, sí, lo segundo que miramos que es la comparación",
+        "start": 2246.24,
+        "end": 2254.8
+    },
+    {
+        "text": " de los códigos, si este llega a ser a un menor, entonces me voy a quedar con el índices 6",
+        "start": 2254.8,
+        "end": 2262.2400000000002
+    },
+    {
+        "text": " como inmin, y si no me seguiré quedando con el que fuera que tenía, hasta acá,",
+        "start": 2262.2400000000002,
+        "end": 2271.6000000000004
+    },
+    {
+        "text": " entonces finalizada esta iteración en caso de que se haya ejecutado lo que yo voy a",
+        "start": 2273.84,
+        "end": 2281.0800000000004
+    },
+    {
+        "text": " tener en inmin que va a ser, el índice del artículo evaluado con menor código,",
+        "start": 2281.08,
+        "end": 2289.72
+    },
+    {
+        "text": " y si no había ninguno que le pasa en min, si no había ningún evaluado y se pasó del tope con",
+        "start": 2293.88,
+        "end": 2305.16
+    },
+    {
+        "text": " lo cual inmin quedó con uno más que el tope, lo cual significa que cosa, el reliano se fue",
+        "start": 2305.16,
+        "end": 2312.72
+    },
+    {
+        "text": " derrango por el circuito corto, en términos de la solución del resultado que tenemos que",
+        "start": 2312.72,
+        "end": 2316.64
+    },
+    {
+        "text": " devolar que quiere decir, que no había ningún evaluado, porque ahora que tenemos que cargar,",
+        "start": 2316.64,
+        "end": 2323.16
+    },
+    {
+        "text": " tenemos que cargar el resultado, resultado va a monetar por ahí como era el tipo de datos,",
+        "start": 2323.16,
+        "end": 2330.56
+    },
+    {
+        "text": " estaba también dentro de la sección type, se llamaba resultado efectivamente,",
+        "start": 2330.88,
+        "end": 2345.72
+    },
+    {
+        "text": " y resultado era un récord, que tenía como primer campo un discriminante, era un registro variante,",
+        "start": 2347.72,
+        "end": 2356.48
+    },
+    {
+        "text": " llamado encontrado de tipo William y habiendo posibilidades true of alls,",
+        "start": 2356.48,
+        "end": 2371.12
+    },
+    {
+        "text": " si era true lo que guardábamos era, el código del artículo encontrado y su valor de evaluación,",
+        "start": 2371.12,
+        "end": 2386.92
+    },
+    {
+        "text": " y si no, no devolíamos nada, resulta que ya forma, ahora debemos cargar el resultado,",
+        "start": 2386.92,
+        "end": 2405.4
+    },
+    {
+        "text": " y como en todo registro variante, lo primero que le tenemos que cargar que es,",
+        "start": 2407.2000000000003,
+        "end": 2410.92
+    },
+    {
+        "text": " el discriminante antes de mentarnos a los campos variantes, y debemos ser coherentes con nosotros mismos entre lo que ponemos acá,",
+        "start": 2411.92,
+        "end": 2418.92
+    },
+    {
+        "text": " y cual de los dos reglones miramos,",
+        "start": 2418.92,
+        "end": 2420.92
+    },
+    {
+        "text": " como bro,",
+        "start": 2425.92,
+        "end": 2428.92
+    },
+    {
+        "text": " claro, si es true vamos a cargar estos dos, yo me refería a esta reglón con esta reglón,",
+        "start": 2429.92,
+        "end": 2437.92
+    },
+    {
+        "text": " bueno, vamos a cargar encontrado, encontrado le vamos a poner true en que caso,",
+        "start": 2437.92,
+        "end": 2447.92
+    },
+    {
+        "text": " en que haya encontrado al menos un artículo evaluado, y eso lo sabíamos si hay ni le pasaba que cosa,",
+        "start": 2447.92,
+        "end": 2456.92
+    },
+    {
+        "text": " era menor igual al top,",
+        "start": 2457.92,
+        "end": 2459.92
+    },
+    {
+        "text": " bueno el top es suelto no, donde está el top, dentro de quién, dentro de arts,",
+        "start": 2464.92,
+        "end": 2470.92
+    },
+    {
+        "text": " encontrado es verdad, sí porque encontrado es el campo al cual debemos acceder desde el récord, si,",
+        "start": 2475.92,
+        "end": 2485.92
+    },
+    {
+        "text": " entonces dentro de result, me meto al campo discriminante, y allí así no esto, esto que es una que,",
+        "start": 2486.92,
+        "end": 2496.92
+    },
+    {
+        "text": " una expresión de tipo bulian, que estamos evaluándola y su resultado cual va a ser,",
+        "start": 2496.92,
+        "end": 2504.92
+    },
+    {
+        "text": " truvo false que se cargan encontrado que es de tipo bulian,",
+        "start": 2504.92,
+        "end": 2509.92
+    },
+    {
+        "text": " las viejas y queridas reglas de la asignación, tenemos una variable en este caso un campo de un cierto tipo,",
+        "start": 2510.92,
+        "end": 2517.92
+    },
+    {
+        "text": " asignamos al resultado de una expresión compatible con ese tipo, en este caso del mismo tipo,",
+        "start": 2517.92,
+        "end": 2522.92
+    },
+    {
+        "text": " o sea que esto va a generar que encontrado que de contru, si efectivamente el índice quedó por debajo del top,",
+        "start": 2522.92,
+        "end": 2529.92
+    },
+    {
+        "text": " y false si se pasó,",
+        "start": 2530.92,
+        "end": 2533.92
+    },
+    {
+        "text": " y en caso de que hayamos guardado true, ahora que debemos hacer,",
+        "start": 2538.92,
+        "end": 2542.92
+    },
+    {
+        "text": " cargar estos dos, ahora sí,",
+        "start": 2543.92,
+        "end": 2547.92
+    },
+    {
+        "text": " if que result, punto encontrado,",
+        "start": 2550.92,
+        "end": 2555.92
+    },
+    {
+        "text": " directamente esto, y ahora, den, ponía casi voy a poner bien,",
+        "start": 2559.92,
+        "end": 2566.92
+    },
+    {
+        "text": " para cargar aquellos dos, tenemos que cargar code, o sea que pongo,",
+        "start": 2568.92,
+        "end": 2575.92
+    },
+    {
+        "text": " result, punto code, y ahí le asignamos el código del artículo que quedó en qué posición,",
+        "start": 2577.92,
+        "end": 2586.92
+    },
+    {
+        "text": " inmin, o sea uno de estos,",
+        "start": 2587.92,
+        "end": 2591.92
+    },
+    {
+        "text": " entonces que pongo,",
+        "start": 2592.92,
+        "end": 2595.92
+    },
+    {
+        "text": " arts que se la rai contó, p punto elens que se la reglo,",
+        "start": 2595.92,
+        "end": 2600.92
+    },
+    {
+        "text": " en la posición inmin,",
+        "start": 2600.92,
+        "end": 2604.92
+    },
+    {
+        "text": " esto es un artículo, punto code artículo,",
+        "start": 2605.92,
+        "end": 2613.92
+    },
+    {
+        "text": " ahí me guardé el código del artículo evaluado con menor código,",
+        "start": 2616.92,
+        "end": 2623.92
+    },
+    {
+        "text": " o sea ese es el menor código, de los evaluados,",
+        "start": 2623.92,
+        "end": 2628.92
+    },
+    {
+        "text": " y bueno, y tengo que cargar el bal,",
+        "start": 2630.92,
+        "end": 2634.92
+    },
+    {
+        "text": " result, punto de bal,",
+        "start": 2635.92,
+        "end": 2639.92
+    },
+    {
+        "text": " lo mismo, pero exactamente el campo haya se llama evaluación,",
+        "start": 2640.92,
+        "end": 2645.92
+    },
+    {
+        "text": " queda lo que dijimos, justo mareaba un poquito el nombre, hay que prestar atención,",
+        "start": 2645.92,
+        "end": 2651.92
+    },
+    {
+        "text": " art.elens, de inmin, punto evaluación,",
+        "start": 2652.92,
+        "end": 2659.92
+    },
+    {
+        "text": " y acá cerramos el if,",
+        "start": 2666.92,
+        "end": 2670.92
+    },
+    {
+        "text": " y después cerramos el procedimiento,",
+        "start": 2670.92,
+        "end": 2675.92
+    },
+    {
+        "text": " una cosa, dentro de un registro con variante dijimos,",
+        "start": 2683.92,
+        "end": 2687.92
+    },
+    {
+        "text": " es la misma manera para acceder al campo discriminante que alguno de los campos variantes,",
+        "start": 2687.92,
+        "end": 2692.92
+    },
+    {
+        "text": " se pone el record punto el campo el que accedo,",
+        "start": 2692.92,
+        "end": 2696.92
+    },
+    {
+        "text": " en el caso del discriminante resulta el punto encontrado,",
+        "start": 2697.92,
+        "end": 2701.92
+    },
+    {
+        "text": " y estos dos si bien son campos variantes,",
+        "start": 2701.92,
+        "end": 2705.92
+    },
+    {
+        "text": " se acceden de manera normal, el nombre del record punto el campo el que estoy accediendo",
+        "start": 2705.92,
+        "end": 2710.92
+    },
+    {
+        "text": " por más que estén declarados dentro de los paréntesis,",
+        "start": 2710.92,
+        "end": 2714.92
+    },
+    {
+        "text": " o sea lo que yo tengo que tener cuidado es que si le cargue truva el discriminante,",
+        "start": 2717.92,
+        "end": 2721.92
+    },
+    {
+        "text": " entonces lo se accede y si no, no,",
+        "start": 2721.92,
+        "end": 2724.92
+    },
+    {
+        "text": " bien,",
+        "start": 2724.92,
+        "end": 2727.92
+    },
+    {
+        "text": " bueno acá tenemos un ejemplo de un aloorismo que tiene de todo,",
+        "start": 2729.92,
+        "end": 2733.92
+    },
+    {
+        "text": " tiene arreglo con tope, tiene registro variante,",
+        "start": 2734.92,
+        "end": 2738.92
+    },
+    {
+        "text": " tanto en las celdas del arreglo como en el resultado,",
+        "start": 2739.92,
+        "end": 2743.92
+    },
+    {
+        "text": " tiene una búsqueda, tiene una recorrida completa,",
+        "start": 2743.92,
+        "end": 2747.92
+    },
+    {
+        "text": " tiene circuito corto,",
+        "start": 2747.92,
+        "end": 2750.92
+    },
+    {
+        "text": " o sea que ya ven que los ejercicios integran bastante de todo lo visto,",
+        "start": 2750.92,
+        "end": 2756.92
+    },
+    {
+        "text": " pues eso siempre es importante lo que les decía,",
+        "start": 2758.92,
+        "end": 2760.92
+    },
+    {
+        "text": " primero el dibujo de las estructuras para tener claro dónde estamos parados,",
+        "start": 2760.92,
+        "end": 2764.92
+    },
+    {
+        "text": " y después la reflexión adecuada de qué tipo de programática debo resolver,",
+        "start": 2764.92,
+        "end": 2769.92
+    },
+    {
+        "text": " bueno hay que estructurar de control de utilizar para resolverla,",
+        "start": 2770.92,
+        "end": 2774.92
+    },
+    {
+        "text": " bueno, más preguntas de este,",
+        "start": 2781.92,
+        "end": 2785.92
+    },
+    {
+        "text": " queda claro,",
+        "start": 2786.92,
+        "end": 2789.92
+    },
+    {
+        "text": " vamos a hacer uno más,",
+        "start": 2790.92,
+        "end": 2793.92
+    },
+    {
+        "text": " que manipule aquella algita,",
+        "start": 2795.92,
+        "end": 2798.92
+    },
+    {
+        "text": " bien, bueno esa fue la parte V,",
+        "start": 2810.92,
+        "end": 2814.92
+    },
+    {
+        "text": " parte C,",
+        "start": 2815.92,
+        "end": 2818.92
+    },
+    {
+        "text": " vamos a mirar por la arriba y el igual que la parte A les queda para hacer a ustedes después,",
+        "start": 2819.92,
+        "end": 2823.92
+    },
+    {
+        "text": " escribir el procedimiento",
+        "start": 2825.92,
+        "end": 2829.92
+    },
+    {
+        "text": " y escribir el procedimiento",
+        "start": 2830.92,
+        "end": 2834.92
+    },
+    {
+        "text": " después,",
+        "start": 2834.92,
+        "end": 2837.92
+    },
+    {
+        "text": " escribir el procedimiento entero código,",
+        "start": 2838.92,
+        "end": 2842.92
+    },
+    {
+        "text": " que dado un número entero genera el código correspondiente,",
+        "start": 2843.92,
+        "end": 2847.92
+    },
+    {
+        "text": " es decir, convierte un valor numérico en un arreglo de dijitos,",
+        "start": 2847.92,
+        "end": 2854.92
+    },
+    {
+        "text": " de estos,",
+        "start": 2855.92,
+        "end": 2858.92
+    },
+    {
+        "text": " es un procedimiento que recibe,",
+        "start": 2859.92,
+        "end": 2861.92
+    },
+    {
+        "text": " tiene de tipo intesar por valor y devuelve como resultado code de tipo código por referencia,",
+        "start": 2861.92,
+        "end": 2868.92
+    },
+    {
+        "text": " entonces la idea es que el valor numérico dado por ese intesar,",
+        "start": 2871.92,
+        "end": 2877.92
+    },
+    {
+        "text": " irlo descomponiendo y cargando cada uno de los dijitos por separado en la celda del arreglo,",
+        "start": 2878.92,
+        "end": 2886.92
+    },
+    {
+        "text": " por ejemplo acá, el número 1, 2, 3, 4,",
+        "start": 2887.92,
+        "end": 2892.92
+    },
+    {
+        "text": " la idea es ir descomponiendo y el 1 se cargan la primera celda,",
+        "start": 2893.92,
+        "end": 2897.92
+    },
+    {
+        "text": " el 2 en la segunda, el 3 en la tercera, el 4 en la cuarta,",
+        "start": 2897.92,
+        "end": 2901.92
+    },
+    {
+        "text": " justo el ejemplo dio que es que es, digamos cada dijito menos el siguiente,",
+        "start": 2902.92,
+        "end": 2906.92
+    },
+    {
+        "text": " puede ser cualquier número,",
+        "start": 2906.92,
+        "end": 2909.92
+    },
+    {
+        "text": " bien, como hacíamos para ir descomponiendo un intesar en cada uno de sus dijitos,",
+        "start": 2909.92,
+        "end": 2917.92
+    },
+    {
+        "text": " que operaciones usábamos para eso,",
+        "start": 2917.92,
+        "end": 2920.92
+    },
+    {
+        "text": " hay que jugar con mod y div, div que era cosiente de la división entera,",
+        "start": 2920.92,
+        "end": 2928.92
+    },
+    {
+        "text": " o sea, de la división entre dos intesar y que era modo,",
+        "start": 2928.92,
+        "end": 2931.92
+    },
+    {
+        "text": " el resto de la división entera,",
+        "start": 2932.92,
+        "end": 2935.92
+    },
+    {
+        "text": " entonces la idea es ir descomponiendo, jugando con div y mod,",
+        "start": 2936.92,
+        "end": 2942.92
+    },
+    {
+        "text": " y de esa manera vamos a poder de alguna manera ir extrayendo los dijitos por separado",
+        "start": 2943.92,
+        "end": 2950.92
+    },
+    {
+        "text": " y guardándolos en cada una de las celdas del arreglo,",
+        "start": 2950.92,
+        "end": 2954.92
+    },
+    {
+        "text": " algunas observaciones,",
+        "start": 2958.92,
+        "end": 2960.92
+    },
+    {
+        "text": " si el entero tiene menos dijitos que el tamaño del arreglo,",
+        "start": 2960.92,
+        "end": 2965.92
+    },
+    {
+        "text": " entonces el arreglo code debe completarse con cero hacia el izquierdo,",
+        "start": 2966.92,
+        "end": 2970.92
+    },
+    {
+        "text": " por ejemplo, si vale 4 y sólo tenemos 3 dijitos al izquierdo debe quedar un 0,",
+        "start": 2970.92,
+        "end": 2976.92
+    },
+    {
+        "text": " si fueran sólo 2 dijitos, los primeros 2 tienen que quedar con 0,",
+        "start": 2977.92,
+        "end": 2981.92
+    },
+    {
+        "text": " y en caso de que tenga más dijitos que los que caben,",
+        "start": 2983.92,
+        "end": 2987.92
+    },
+    {
+        "text": " se completa code con los max dijitos de más a la derecha,",
+        "start": 2988.92,
+        "end": 2992.92
+    },
+    {
+        "text": " por ejemplo, acá, que había 8 dijitos,",
+        "start": 2992.92,
+        "end": 2995.92
+    },
+    {
+        "text": " pero el arreglo tenía tamaño 4, solamente los 4 de la derecha,",
+        "start": 2995.92,
+        "end": 2999.92
+    },
+    {
+        "text": " a priori nosotros no sabemos cuánto es max dij,",
+        "start": 3003.92,
+        "end": 3006.92
+    },
+    {
+        "text": " sabemos que tenemos una constante con ese valor,",
+        "start": 3006.92,
+        "end": 3009.92
+    },
+    {
+        "text": " exactamente, no podemos presupanar ningún valor para la constante,",
+        "start": 3009.92,
+        "end": 3013.92
+    },
+    {
+        "text": " si,",
+        "start": 3014.92,
+        "end": 3016.92
+    },
+    {
+        "text": " bueno, es parte de lo que hay que pensar,",
+        "start": 3019.92,
+        "end": 3022.92
+    },
+    {
+        "text": " la idea es ir jugando con las divisiones y quedándote con los restos,",
+        "start": 3023.92,
+        "end": 3028.92
+    },
+    {
+        "text": " e ir cargando hasta cuando,",
+        "start": 3030.92,
+        "end": 3033.92
+    },
+    {
+        "text": " hasta max, no, ir cargando en las celdas del código hasta cuando,",
+        "start": 3036.92,
+        "end": 3039.92
+    },
+    {
+        "text": " hasta que le pase que cosa, el arreglo, hasta que se llene, ¿cabien?",
+        "start": 3040.92,
+        "end": 3047.92
+    },
+    {
+        "text": " si veo que tenía más lo tengo que cortar antes,",
+        "start": 3048.92,
+        "end": 3051.92
+    },
+    {
+        "text": " y si termine de dividir y no llega a completar todas las ciflas que tengo que hacer,",
+        "start": 3053.92,
+        "end": 3059.92
+    },
+    {
+        "text": " cargar con 0 después, se cae a reflexionar sobre de nuevo,",
+        "start": 3060.92,
+        "end": 3064.92
+    },
+    {
+        "text": " ¿cuáles son las estructuras adecuadas?",
+        "start": 3064.92,
+        "end": 3066.92
+    },
+    {
+        "text": " capaz que es mejor arrancar del fondo e ir bajando, exactamente,",
+        "start": 3069.92,
+        "end": 3073.92
+    },
+    {
+        "text": " tanto si es una búsqueda como si es una recorrida completa,",
+        "start": 3074.92,
+        "end": 3076.92
+    },
+    {
+        "text": " si, se acuerdan que el orden en el cual yo recorro si es,",
+        "start": 3077.92,
+        "end": 3080.92
+    },
+    {
+        "text": " los índices de manera ascendente, o descendente depende de lo que yo quiero resolver.",
+        "start": 3080.92,
+        "end": 3084.92
+    },
+    {
+        "text": " después ustedes, o sea, lo que ustedes tienen que resolver es,",
+        "start": 3089.92,
+        "end": 3092.92
+    },
+    {
+        "text": " el íntejar y lo descomponiendo,",
+        "start": 3092.92,
+        "end": 3095.92
+    },
+    {
+        "text": " e ir cargando los dígitos por separado en las celdas.",
+        "start": 3096.92,
+        "end": 3098.92
+    },
+    {
+        "text": " si empiezan por la primera y avanza, lo empiezan por la final y van bajando,",
+        "start": 3100.92,
+        "end": 3104.92
+    },
+    {
+        "text": " si empiezan por el final, primero asegúrate que es el 4,",
+        "start": 3105.92,
+        "end": 3107.92
+    },
+    {
+        "text": " el demás se le da derecho.",
+        "start": 3107.92,
+        "end": 3108.92
+    },
+    {
+        "text": " bueno, reflexionar sobre las estructuras de control,",
+        "start": 3112.92,
+        "end": 3115.92
+    },
+    {
+        "text": " reflexionar si se de ante mano cuantas veces debo recorrer o no,",
+        "start": 3116.92,
+        "end": 3120.92
+    },
+    {
+        "text": " para saber si usó wild, si usó repeat, si usó 4,",
+        "start": 3121.92,
+        "end": 3124.92
+    },
+    {
+        "text": " si, si lo podés resolver sin potencia va a ser más eficiente,",
+        "start": 3124.92,
+        "end": 3133.92
+    },
+    {
+        "text": " directamente con divi mod es la mejor alternativa,",
+        "start": 3134.92,
+        "end": 3138.92
+    },
+    {
+        "text": " o sea, la idea es ingeniarte para resolverlo sin conocer de en de mano cuantos dígitos tiene.",
+        "start": 3140.92,
+        "end": 3145.92
+    },
+    {
+        "text": " bueno, tienen que ver módulo entre que y que,",
+        "start": 3150.92,
+        "end": 3152.92
+    },
+    {
+        "text": " este es justamente si los voy a dejar para que lo trabaje en hora después.",
+        "start": 3155.92,
+        "end": 3158.92
+    },
+    {
+        "text": " bien, porque me quiero ir al que manipule alistas,",
+        "start": 3160.92,
+        "end": 3164.92
+    },
+    {
+        "text": " es el D,",
+        "start": 3165.92,
+        "end": 3166.92
+    },
+    {
+        "text": " escribir el procedimiento agregar autor que,",
+        "start": 3175.92,
+        "end": 3180.92
+    },
+    {
+        "text": " dado un código, o sea, nuevamente nos dan un arreglo de dígitos",
+        "start": 3180.92,
+        "end": 3185.92
+    },
+    {
+        "text": " y un artículo, un artículo solo, esta operación no manipula la raí con tope,",
+        "start": 3186.92,
+        "end": 3191.92
+    },
+    {
+        "text": " trabaja específicamente sobre un artículo que me están pasando por parámetro",
+        "start": 3192.92,
+        "end": 3197.92
+    },
+    {
+        "text": " y me lo están pasando como, por referencia,",
+        "start": 3198.92,
+        "end": 3202.92
+    },
+    {
+        "text": " si me lo pasan por referencia es que el artículo va a ser modificado,",
+        "start": 3204.92,
+        "end": 3207.92
+    },
+    {
+        "text": " escribir el procedimiento, agregar autor que, dado un código y un artículo,",
+        "start": 3211.92,
+        "end": 3215.92
+    },
+    {
+        "text": " agrega el autor, o sea, agrega este código,",
+        "start": 3216.92,
+        "end": 3219.92
+    },
+    {
+        "text": " parámetro se llama autor, pero es de tipo código, al final de la lista de autores del artículo.",
+        "start": 3221.92,
+        "end": 3228.92
+    },
+    {
+        "text": " Este artículo pongamos que es este que me dieron acá,",
+        "start": 3230.92,
+        "end": 3232.92
+    },
+    {
+        "text": " olviden ser de la raí con tope, en este ejercicio no hay arreglo con tope,",
+        "start": 3233.92,
+        "end": 3235.92
+    },
+    {
+        "text": " me dieron esto,",
+        "start": 3236.92,
+        "end": 3237.92
+    },
+    {
+        "text": " y me dieron un código,",
+        "start": 3238.92,
+        "end": 3239.92
+    },
+    {
+        "text": " entonces lo que nosotros tenemos que hacer es,",
+        "start": 3240.92,
+        "end": 3242.92
+    },
+    {
+        "text": " meternos a la lista de autores y la recorriendo y hacer que cosa.",
+        "start": 3243.92,
+        "end": 3249.92
+    },
+    {
+        "text": " Agregar lo que me dieron al final y para agregar un nuevo valor al final de una lista que debemos generar,",
+        "start": 3252.92,
+        "end": 3257.92
+    },
+    {
+        "text": " un nuevo espacio de memoria, una nueva, como se llaman estas,",
+        "start": 3260.92,
+        "end": 3263.92
+    },
+    {
+        "text": " una nueva cera,",
+        "start": 3264.92,
+        "end": 3265.92
+    },
+    {
+        "text": " y la instrucción, es un procedimiento en realidad,",
+        "start": 3268.92,
+        "end": 3271.92
+    },
+    {
+        "text": " para reservar un espacio de memoria en tiempo de ejecución de manera inámica se llama,",
+        "start": 3272.92,
+        "end": 3276.92
+    },
+    {
+        "text": " Niu, o sea que en algún lugar vamos a tener que hacer Niu,",
+        "start": 3277.92,
+        "end": 3280.92
+    },
+    {
+        "text": " para hacer a aparecer la nueva cera,",
+        "start": 3281.92,
+        "end": 3283.92
+    },
+    {
+        "text": " y después tenemos que hacer el engaño,",
+        "start": 3285.92,
+        "end": 3288.92
+    },
+    {
+        "text": " hay vamos a tener que hacer algún tipo de recorrida,",
+        "start": 3290.92,
+        "end": 3292.92
+    },
+    {
+        "text": " a bien,",
+        "start": 3293.92,
+        "end": 3294.92
+    },
+    {
+        "text": " osaron que el artículo se está pasando por referencia, o sea que esto se va a modificar,",
+        "start": 3295.92,
+        "end": 3299.92
+    },
+    {
+        "text": " o sea que para ir me moviendo,",
+        "start": 3300.92,
+        "end": 3302.92
+    },
+    {
+        "text": " voy a necesitar un punter auxiliar porque si no pasa algo gravísimo que es que,",
+        "start": 3303.92,
+        "end": 3307.92
+    },
+    {
+        "text": " voy perdiendo las celdas, si voy moviendo este mismo,",
+        "start": 3308.92,
+        "end": 3311.92
+    },
+    {
+        "text": " las celdas van quedando inaccesibles,",
+        "start": 3312.92,
+        "end": 3314.92
+    },
+    {
+        "text": " y qué dijimos acerca de la memoria dinámica que quede inaccesible,",
+        "start": 3315.92,
+        "end": 3318.92
+    },
+    {
+        "text": " que está muy mal,",
+        "start": 3319.92,
+        "end": 3320.92
+    },
+    {
+        "text": " es memoria que se perdió y no se recupera,",
+        "start": 3320.92,
+        "end": 3324.92
+    },
+    {
+        "text": " porque no se libera automáticamente,",
+        "start": 3325.92,
+        "end": 3326.92
+    },
+    {
+        "text": " bien,",
+        "start": 3332.92,
+        "end": 3333.92
+    },
+    {
+        "text": " la buena noticia es que no hay que reflexionar demasiado sobre la estructura para recorrer,",
+        "start": 3334.92,
+        "end": 3338.92
+    },
+    {
+        "text": " porque en las listas que dijimos,",
+        "start": 3339.92,
+        "end": 3340.92
+    },
+    {
+        "text": " siempre o prácticamente siempre es con wild,",
+        "start": 3341.92,
+        "end": 3344.92
+    },
+    {
+        "text": " conforme nunca recorremos una lista, porque,",
+        "start": 3345.92,
+        "end": 3347.92
+    },
+    {
+        "text": " porque no sabes de antemano cuántas celdas tiene,",
+        "start": 3348.92,
+        "end": 3350.92
+    },
+    {
+        "text": " no tenemos un rango de índices como los arreglos, o sea que no tengo más remedio que recorrer con wild,",
+        "start": 3351.92,
+        "end": 3355.92
+    },
+    {
+        "text": " y va a haber un caso especial que se manipula un poquito diferente, ¿qué es cuál?",
+        "start": 3357.92,
+        "end": 3360.92
+    },
+    {
+        "text": " si es el primero, ¿qué pasa si justo me dan un artículo que de momento tiene vacía su lista de autores?",
+        "start": 3362.92,
+        "end": 3368.92
+    },
+    {
+        "text": " ¿Qué valorosamos para la lista vacía?",
+        "start": 3369.92,
+        "end": 3371.92
+    },
+    {
+        "text": " NIL, si vale NIL, ese caso se maneja distinto,",
+        "start": 3372.92,
+        "end": 3375.92
+    },
+    {
+        "text": " directamente se crea la celda y se engancha,",
+        "start": 3376.92,
+        "end": 3378.92
+    },
+    {
+        "text": " y si no es que vamos a iniciar la recorrida.",
+        "start": 3379.92,
+        "end": 3381.92
+    },
+    {
+        "text": " Entiendo más o menos la idea, eso lo que vamos a ir ahora,",
+        "start": 3385.92,
+        "end": 3388.92
+    },
+    {
+        "text": " pagamos acá.",
+        "start": 3390.92,
+        "end": 3391.92
+    },
+    {
+        "text": " ¡Buen!",
+        "start": 3392.42,
+        "end": 3401.42
+    },
+    {
+        "text": " Vamos a sacar esto.",
+        "start": 3404.92,
+        "end": 3405.92
+    },
+    {
+        "text": " Over wall",
+        "start": 3410.92,
+        "end": 3413.92
+    },
+    {
+        "text": " Bueno, el procedimiento se llama agregar a autón.",
+        "start": 3413.92,
+        "end": 3423.92
+    },
+    {
+        "text": " ¿Qué le pasamos?",
+        "start": 3423.92,
+        "end": 3433.92
+    },
+    {
+        "text": " El código del autor por valor,",
+        "start": 3433.92,
+        "end": 3438.92
+    },
+    {
+        "text": " este tipo de código",
+        "start": 3439.92,
+        "end": 3441.92
+    },
+    {
+        "text": " y le pasamos un artículo por referencia.",
+        "start": 3441.92,
+        "end": 3446.92
+    },
+    {
+        "text": " Y al final de la lista de artículos,",
+        "start": 3458.92,
+        "end": 3461.92
+    },
+    {
+        "text": " perdón, de la lista de autores del artículo,",
+        "start": 3461.92,
+        "end": 3463.92
+    },
+    {
+        "text": " es que vamos a generar una zoonueva celda para guardar ese auto.",
+        "start": 3463.92,
+        "end": 3467.92
+    },
+    {
+        "text": " Bien.",
+        "start": 3468.92,
+        "end": 3472.92
+    },
+    {
+        "text": " Es seguro que al menos una variable auxiliar vamos a necesitar,",
+        "start": 3482.92,
+        "end": 3485.92
+    },
+    {
+        "text": " porque dijimos que necesitábamos que cosa.",
+        "start": 3485.92,
+        "end": 3489.92
+    },
+    {
+        "text": " Un punter auxiliar.",
+        "start": 3489.92,
+        "end": 3491.92
+    },
+    {
+        "text": " Vamos a dejar la sección de variables,",
+        "start": 3492.92,
+        "end": 3495.92
+    },
+    {
+        "text": " abiertos y completamos que necesitamos.",
+        "start": 3495.92,
+        "end": 3499.92
+    },
+    {
+        "text": " Vamos a necesitar un punter auxiliar para irnos moviendo.",
+        "start": 3499.92,
+        "end": 3504.92
+    },
+    {
+        "text": " ¿De qué tipo va a ser P?",
+        "start": 3508.92,
+        "end": 3511.92
+    },
+    {
+        "text": " La lista se llamaba",
+        "start": 3511.92,
+        "end": 3516.92
+    },
+    {
+        "text": " el tipo de auto se llamaba Lista Autores.",
+        "start": 3516.92,
+        "end": 3521.92
+    },
+    {
+        "text": " Esto es un acel de autores, pero todo esto,",
+        "start": 3521.92,
+        "end": 3526.92
+    },
+    {
+        "text": " todo esto es una lista de autores.",
+        "start": 3526.92,
+        "end": 3530.92
+    },
+    {
+        "text": " Que en realidad, decir todo es si se quiere un abuso,",
+        "start": 3530.92,
+        "end": 3536.92
+    },
+    {
+        "text": " porque el lista autores en realidad es el punter.",
+        "start": 3536.92,
+        "end": 3541.92
+    },
+    {
+        "text": " A veces se suele ver la realista como toda la lista,",
+        "start": 3541.92,
+        "end": 3544.92
+    },
+    {
+        "text": " y vamos a ver que la lista en sí es solamente el punter auxiliar.",
+        "start": 3544.92,
+        "end": 3549.92
+    },
+    {
+        "text": " El punter auxiliar es todo esto.",
+        "start": 3549.92,
+        "end": 3553.92
+    },
+    {
+        "text": " Cada uno de ellos.",
+        "start": 3553.92,
+        "end": 3556.92
+    },
+    {
+        "text": " Cada uno de ellos.",
+        "start": 3556.92,
+        "end": 3559.92
+    },
+    {
+        "text": " Cada uno de ellos.",
+        "start": 3559.92,
+        "end": 3562.92
+    },
+    {
+        "text": " Cada uno de ellos es todo esto.",
+        "start": 3562.92,
+        "end": 3566.92
+    },
+    {
+        "text": " P es la que vamos a usar para la recorrida,",
+        "start": 3566.92,
+        "end": 3570.92
+    },
+    {
+        "text": " pero vamos a necesitar otra.",
+        "start": 3570.92,
+        "end": 3573.92
+    },
+    {
+        "text": " Esto para dinámicamente hacer aparecer la nueva celda.",
+        "start": 3573.92,
+        "end": 3578.92
+    },
+    {
+        "text": " Vamos a llamarle aux.",
+        "start": 3580.92,
+        "end": 3583.92
+    },
+    {
+        "text": " Amos de tipo Lista Autores.",
+        "start": 3583.92,
+        "end": 3587.92
+    },
+    {
+        "text": " Y bueno, si luego necesitamos más, los agregamos.",
+        "start": 3594.92,
+        "end": 3598.92
+    },
+    {
+        "text": " Bien.",
+        "start": 3598.92,
+        "end": 3600.92
+    },
+    {
+        "text": " Bueno, vamos a crear la nueva celda.",
+        "start": 3601.92,
+        "end": 3605.92
+    },
+    {
+        "text": " Niú aplicado aquí.",
+        "start": 3605.92,
+        "end": 3609.92
+    },
+    {
+        "text": " Niú aplicado a auxperfecto.",
+        "start": 3609.92,
+        "end": 3614.92
+    },
+    {
+        "text": " Bueno, vamos a dibujar aux por acá.",
+        "start": 3614.92,
+        "end": 3618.92
+    },
+    {
+        "text": " Vamos a poner que acá tenemos aux.",
+        "start": 3618.92,
+        "end": 3623.92
+    },
+    {
+        "text": " Le hacemos Niú, esto genera que se reserve",
+        "start": 3623.92,
+        "end": 3628.92
+    },
+    {
+        "text": " en tiempo de ejecución un nuevo asparcio de memoria,",
+        "start": 3628.92,
+        "end": 3633.92
+    },
+    {
+        "text": " que es de tipo Celdautores, o sea, tiene un código y un puntero,",
+        "start": 3633.92,
+        "end": 3639.92
+    },
+    {
+        "text": " y lo que queda aux es la dirección de esa nueva celda.",
+        "start": 3639.92,
+        "end": 3646.92
+    },
+    {
+        "text": " Bueno, ¿qué debemos copiar acá?",
+        "start": 3646.92,
+        "end": 3651.92
+    },
+    {
+        "text": " El código que me dieron.",
+        "start": 3653.92,
+        "end": 3657.92
+    },
+    {
+        "text": " Entonces, ¿cómo hago desde aux para acceder al primer campo?",
+        "start": 3658.92,
+        "end": 3663.92
+    },
+    {
+        "text": " Aux es el puntero,",
+        "start": 3663.92,
+        "end": 3666.92
+    },
+    {
+        "text": " Aux techito,",
+        "start": 3666.92,
+        "end": 3668.92
+    },
+    {
+        "text": " Aux techito es esto, punto,",
+        "start": 3668.92,
+        "end": 3670.92
+    },
+    {
+        "text": " y el primer campo se llama Codautor.",
+        "start": 3670.92,
+        "end": 3674.92
+    },
+    {
+        "text": " Y ahí le asignamos autor.",
+        "start": 3674.92,
+        "end": 3679.92
+    },
+    {
+        "text": " Y al otro, asignamos ni les exactamente.",
+        "start": 3682.92,
+        "end": 3685.92
+    },
+    {
+        "text": " Esto es de tipo...",
+        "start": 3685.92,
+        "end": 3688.92
+    },
+    {
+        "text": " que lo que se llama va código,",
+        "start": 3688.92,
+        "end": 3691.92
+    },
+    {
+        "text": " esto otro también es de tipo código,",
+        "start": 3691.92,
+        "end": 3694.92
+    },
+    {
+        "text": " lo que está al izquierdo y la derecha de la asignación,",
+        "start": 3694.92,
+        "end": 3697.92
+    },
+    {
+        "text": " son del mismo tipo.",
+        "start": 3697.92,
+        "end": 3700.92
+    },
+    {
+        "text": " Vamos a suponer que era 4.1.9.3,",
+        "start": 3700.92,
+        "end": 3703.92
+    },
+    {
+        "text": " lo que venía allá en autor.",
+        "start": 3703.92,
+        "end": 3706.92
+    },
+    {
+        "text": " Bien, hemos cargado el código",
+        "start": 3706.92,
+        "end": 3709.92
+    },
+    {
+        "text": " y este justamente hay que ponerlo en que.",
+        "start": 3709.92,
+        "end": 3713.92
+    },
+    {
+        "text": " Está bien que sean ni el,",
+        "start": 3713.92,
+        "end": 3715.92
+    },
+    {
+        "text": " porque a Aux techito,",
+        "start": 3715.92,
+        "end": 3717.92
+    },
+    {
+        "text": " exactamente,",
+        "start": 3717.92,
+        "end": 3719.92
+    },
+    {
+        "text": " porque va a pasar a hacer la última celda de la lista.",
+        "start": 3719.92,
+        "end": 3724.92
+    },
+    {
+        "text": " Entonces, para marcar la finalización,",
+        "start": 3724.92,
+        "end": 3727.92
+    },
+    {
+        "text": " es que le vamos a poner ni.",
+        "start": 3727.92,
+        "end": 3731.92
+    },
+    {
+        "text": " De momento tenemos 2 con ni les de también,",
+        "start": 3731.92,
+        "end": 3734.92
+    },
+    {
+        "text": " pero este después lo vamos a enganchar",
+        "start": 3734.92,
+        "end": 3736.92
+    },
+    {
+        "text": " para que referencia de nueva celda.",
+        "start": 3736.92,
+        "end": 3740.92
+    },
+    {
+        "text": " Bueno,",
+        "start": 3741.92,
+        "end": 3743.92
+    },
+    {
+        "text": " habiendo 2 casos, dijimos, primero.",
+        "start": 3743.92,
+        "end": 3746.92
+    },
+    {
+        "text": " Exactamente, si la lista de autores es ni.",
+        "start": 3747.92,
+        "end": 3751.92
+    },
+    {
+        "text": " Y...",
+        "start": 3751.92,
+        "end": 3753.92
+    },
+    {
+        "text": " me tengo que meter dentro del campo autores.",
+        "start": 3753.92,
+        "end": 3757.92
+    },
+    {
+        "text": " O sea que hago ART,",
+        "start": 3757.92,
+        "end": 3759.92
+    },
+    {
+        "text": " que es todo el artículo,",
+        "start": 3759.92,
+        "end": 3762.92
+    },
+    {
+        "text": " punto a autores.",
+        "start": 3762.92,
+        "end": 3765.92
+    },
+    {
+        "text": " Esto es, si la lista de autores del artículo,",
+        "start": 3765.92,
+        "end": 3769.92
+    },
+    {
+        "text": " es nil.",
+        "start": 3770.92,
+        "end": 3772.92
+    },
+    {
+        "text": " O sea, si desde acá tenemos nil,",
+        "start": 3775.92,
+        "end": 3778.92
+    },
+    {
+        "text": " directamente hay que hacer que este campo referencia a quien.",
+        "start": 3778.92,
+        "end": 3783.92
+    },
+    {
+        "text": " Que apunte acá.",
+        "start": 3783.92,
+        "end": 3785.92
+    },
+    {
+        "text": " Que apunte a lo mismo que apunta a Aux.",
+        "start": 3785.92,
+        "end": 3788.92
+    },
+    {
+        "text": " Como se llamaba,",
+        "start": 3788.92,
+        "end": 3790.92
+    },
+    {
+        "text": " cuando 2 punteros te apuntaban al mismo lugar.",
+        "start": 3790.92,
+        "end": 3793.92
+    },
+    {
+        "text": " Allas.",
+        "start": 3793.92,
+        "end": 3794.92
+    },
+    {
+        "text": " Y eso se lograba mediante asignación entre los punteros.",
+        "start": 3794.92,
+        "end": 3797.92
+    },
+    {
+        "text": " Entonces, que escribo.",
+        "start": 3797.92,
+        "end": 3800.92
+    },
+    {
+        "text": " ART, punto a autores,",
+        "start": 3801.92,
+        "end": 3804.92
+    },
+    {
+        "text": " le asignamos Aux.",
+        "start": 3804.92,
+        "end": 3808.92
+    },
+    {
+        "text": " Eso lo que genera,",
+        "start": 3810.92,
+        "end": 3813.92
+    },
+    {
+        "text": " es que este puntero me apunte a lo mismo que me apunta Aux.",
+        "start": 3813.92,
+        "end": 3817.92
+    },
+    {
+        "text": " Eso es suponiendo que es la primera que queremos agregar.",
+        "start": 3817.92,
+        "end": 3821.92
+    },
+    {
+        "text": " Está bien?",
+        "start": 3821.92,
+        "end": 3824.92
+    },
+    {
+        "text": " Bien.",
+        "start": 3824.92,
+        "end": 3825.92
+    },
+    {
+        "text": " Y si no, que tenemos que hacer.",
+        "start": 3825.92,
+        "end": 3828.92
+    },
+    {
+        "text": " Debemos iniciar una recorrida.",
+        "start": 3828.92,
+        "end": 3831.92
+    },
+    {
+        "text": " ¿Cómo?",
+        "start": 3837.92,
+        "end": 3839.92
+    },
+    {
+        "text": " El Lc6.",
+        "start": 3839.92,
+        "end": 3842.92
+    },
+    {
+        "text": " Bueno, debemos iniciar una recorrida.",
+        "start": 3842.92,
+        "end": 3846.92
+    },
+    {
+        "text": " Para lo cual vamos a usar quien?",
+        "start": 3847.92,
+        "end": 3850.92
+    },
+    {
+        "text": " Que variable.",
+        "start": 3851.92,
+        "end": 3853.92
+    },
+    {
+        "text": " P.",
+        "start": 3853.92,
+        "end": 3854.92
+    },
+    {
+        "text": " Vamos a usar P.",
+        "start": 3854.92,
+        "end": 3855.92
+    },
+    {
+        "text": " No vamos a usar la original, porque si no, que pasa.",
+        "start": 3855.92,
+        "end": 3858.92
+    },
+    {
+        "text": " Se van perdiendo las celdas que dan inaccesibles.",
+        "start": 3858.92,
+        "end": 3862.92
+    },
+    {
+        "text": " Tenemos que hacer que P apunte a lo mismo que me apunta a el instautores.",
+        "start": 3862.92,
+        "end": 3866.92
+    },
+    {
+        "text": " Eso se generamos alias.",
+        "start": 3866.92,
+        "end": 3869.92
+    },
+    {
+        "text": " Queremos que P apunte acá.",
+        "start": 3869.92,
+        "end": 3874.92
+    },
+    {
+        "text": " A lo mismo que apunta a autores.",
+        "start": 3874.92,
+        "end": 3878.92
+    },
+    {
+        "text": " Entonces, que ponemos.",
+        "start": 3878.92,
+        "end": 3881.92
+    },
+    {
+        "text": " Bien.",
+        "start": 3881.92,
+        "end": 3883.92
+    },
+    {
+        "text": " Ap.",
+        "start": 3883.92,
+        "end": 3885.92
+    },
+    {
+        "text": " Le asignamos.",
+        "start": 3885.92,
+        "end": 3887.92
+    },
+    {
+        "text": " Art.",
+        "start": 3887.92,
+        "end": 3890.92
+    },
+    {
+        "text": " Autores.",
+        "start": 3890.92,
+        "end": 3891.92
+    },
+    {
+        "text": " O sea, alias.",
+        "start": 3891.92,
+        "end": 3895.92
+    },
+    {
+        "text": " Bueno.",
+        "start": 3898.92,
+        "end": 3900.92
+    },
+    {
+        "text": " Y ahora vamos a usar P para irnos moviendo.",
+        "start": 3900.92,
+        "end": 3903.92
+    },
+    {
+        "text": " Y cuando vamos a parar.",
+        "start": 3903.92,
+        "end": 3906.92
+    },
+    {
+        "text": " Cuando lleguemos a nil.",
+        "start": 3906.92,
+        "end": 3909.92
+    },
+    {
+        "text": " Bueno, veamos lo.",
+        "start": 3909.92,
+        "end": 3912.92
+    },
+    {
+        "text": " Como hago para irme moviendo.",
+        "start": 3912.92,
+        "end": 3915.92
+    },
+    {
+        "text": " Y dijimos, la recorrida en la lista.",
+        "start": 3918.92,
+        "end": 3920.92
+    },
+    {
+        "text": " Por suerte, no tenemos que preocuparnos demasiado por elegir las estructuras.",
+        "start": 3920.92,
+        "end": 3923.92
+    },
+    {
+        "text": " Y.",
+        "start": 3923.92,
+        "end": 3925.92
+    },
+    {
+        "text": " Mientras que P.",
+        "start": 3925.92,
+        "end": 3927.92
+    },
+    {
+        "text": " C.A.",
+        "start": 3927.92,
+        "end": 3929.92
+    },
+    {
+        "text": " Distinto de nil.",
+        "start": 3929.92,
+        "end": 3931.92
+    },
+    {
+        "text": " Bien.",
+        "start": 3931.92,
+        "end": 3932.92
+    },
+    {
+        "text": " Que hacemos en ese caso?",
+        "start": 3932.92,
+        "end": 3935.92
+    },
+    {
+        "text": " Muy bien.",
+        "start": 3935.92,
+        "end": 3938.92
+    },
+    {
+        "text": " La mañana pregunta.",
+        "start": 3938.92,
+        "end": 3940.92
+    },
+    {
+        "text": " Si en vez de P, no deberíamos fijarnos en el siguiente.",
+        "start": 3940.92,
+        "end": 3944.92
+    },
+    {
+        "text": " Y está bien.",
+        "start": 3944.92,
+        "end": 3946.92
+    },
+    {
+        "text": " Porque si hacemos que P.A. avance hasta nil que nos va a pasar.",
+        "start": 3946.92,
+        "end": 3952.92
+    },
+    {
+        "text": " Vamos a venir acá.",
+        "start": 3952.92,
+        "end": 3954.92
+    },
+    {
+        "text": " Luego vamos a venir acá.",
+        "start": 3954.92,
+        "end": 3956.92
+    },
+    {
+        "text": " Y luego vamos a llegar a nil.",
+        "start": 3956.92,
+        "end": 3958.92
+    },
+    {
+        "text": " Entonces, estando P en nil,",
+        "start": 3958.92,
+        "end": 3961.92
+    },
+    {
+        "text": " vamos a pretender hacer un enganche que no vamos a poder hacer.",
+        "start": 3961.92,
+        "end": 3965.92
+    },
+    {
+        "text": " No necesito que este me apunte a lo que me apunta a aux.",
+        "start": 3965.92,
+        "end": 3969.92
+    },
+    {
+        "text": " Y para poder acceder a este, si me pase,",
+        "start": 3969.92,
+        "end": 3973.92
+    },
+    {
+        "text": " no voy a poder.",
+        "start": 3973.92,
+        "end": 3974.92
+    },
+    {
+        "text": " Ese es un error muy común cuando se quiera hacer una inserción real final.",
+        "start": 3974.92,
+        "end": 3977.92
+    },
+    {
+        "text": " Debo parar uno antes.",
+        "start": 3977.92,
+        "end": 3979.92
+    },
+    {
+        "text": " Debo hacer que P.K. de acá.",
+        "start": 3979.92,
+        "end": 3981.92
+    },
+    {
+        "text": " Y P.K. de acá cuando este,",
+        "start": 3981.92,
+        "end": 3984.92
+    },
+    {
+        "text": " está en nil.",
+        "start": 3984.92,
+        "end": 3985.92
+    },
+    {
+        "text": " O sea, cuando el siguiente de P es nil.",
+        "start": 3985.92,
+        "end": 3989.92
+    },
+    {
+        "text": " Ojo con eso.",
+        "start": 3989.92,
+        "end": 3991.92
+    },
+    {
+        "text": " Pues si no la nueva sela, no nos va a quedar devidamente conectada.",
+        "start": 3991.92,
+        "end": 3994.92
+    },
+    {
+        "text": " Entonces, que cambiamos acá.",
+        "start": 3994.92,
+        "end": 3997.92
+    },
+    {
+        "text": " Mientras que P es el puntero,",
+        "start": 3997.92,
+        "end": 4000.92
+    },
+    {
+        "text": " P.K. es al record, punto siguiente,",
+        "start": 4000.92,
+        "end": 4004.92
+    },
+    {
+        "text": " sea distinto de nil.",
+        "start": 4004.92,
+        "end": 4008.92
+    },
+    {
+        "text": " Este es P.P.T.E.C. punto siguiente.",
+        "start": 4011.92,
+        "end": 4015.92
+    },
+    {
+        "text": " Mientras que este sea distinto de nil.",
+        "start": 4015.92,
+        "end": 4017.92
+    },
+    {
+        "text": " Y de hecho, acá lo es que hacemos.",
+        "start": 4017.92,
+        "end": 4020.92
+    },
+    {
+        "text": " Avanzamos, y la manera de avanzar en una lista cualera.",
+        "start": 4020.92,
+        "end": 4025.92
+    },
+    {
+        "text": " A P, y ya tengamos P.K.Ch. y un punto siguiente.",
+        "start": 4025.92,
+        "end": 4029.92
+    },
+    {
+        "text": " Esto es una recorrida completa, menos de la última celda.",
+        "start": 4035.92,
+        "end": 4039.92
+    },
+    {
+        "text": " Igual si hace con yuellen, que en el caso de la lista.",
+        "start": 4039.92,
+        "end": 4043.92
+    },
+    {
+        "text": " Bien.",
+        "start": 4043.92,
+        "end": 4044.92
+    },
+    {
+        "text": " P, P.K.T.E.C. punto siguiente, distinto de nil, entramos.",
+        "start": 4044.92,
+        "end": 4048.92
+    },
+    {
+        "text": " entramos hacemos avanzar p o sea que p deja de avanzar acá, deja de apuntar acá",
+        "start": 4048.92,
+        "end": 4055.6
+    },
+    {
+        "text": " perdón y pasa a puntar ahí. Volvemos al y petecho petecho punto siguientes",
+        "start": 4055.6,
+        "end": 4065.1
+    },
+    {
+        "text": " distinto de nil, sí, pete distinto de nil, apuntando a la tercera celda, entonces",
+        "start": 4065.1,
+        "end": 4071.9
+    },
+    {
+        "text": " nuevamente que hacemos con p lo avanzamos, deja de apuntar acá y pasa a puntar acá",
+        "start": 4071.9,
+        "end": 4079.46
+    },
+    {
+        "text": " volvemos al y petecho punto siguientes, es distinto de nil, no, pare y pare en el lugar correcto",
+        "start": 4079.46,
+        "end": 4090.1
+    },
+    {
+        "text": " uno antes para a través de p poder acceder a este y hacer que cosa, engancharlo",
+        "start": 4090.1,
+        "end": 4098.26
+    },
+    {
+        "text": " o sea conectarlo evidamente con la nueva celda. Ahora hacemos que este puntero apunte a la",
+        "start": 4098.26,
+        "end": 4106.26
+    },
+    {
+        "text": " misma celda que apunta a aux una vez más hacemos hallas, pero lo hacemos a la salida del",
+        "start": 4106.26,
+        "end": 4113.14
+    },
+    {
+        "text": " lugar, entonces que hacemos petecho punto siguiente exactamente le asignamos aux,",
+        "start": 4113.14,
+        "end": 4121.9400000000005
+    },
+    {
+        "text": " acá está petecho punto siguiente esto le asignó lo mismo que aux, hallas, aux contiene la",
+        "start": 4126.42,
+        "end": 4135.14
+    },
+    {
+        "text": " dirección de esta celda y esa dirección la copiamos acá o sea que esto deja de apuntar a nil y pasa",
+        "start": 4135.14,
+        "end": 4143.900000000001
+    },
+    {
+        "text": " a puntar a esta y ahí quedó devidamente conectada la nueva celda al final de la lista.",
+        "start": 4145.14,
+        "end": 4152.780000000001
+    },
+    {
+        "text": " El caso en el cual la lista, ven inicialmente vacía, ya lo controlamos antes, con lo cual esto",
+        "start": 4156.06,
+        "end": 4161.9800000000005
+    },
+    {
+        "text": " no me va a afectar, hay que ser algo más, porque lo pasé por referencia o sea que al",
+        "start": 4161.98,
+        "end": 4172.44
+    },
+    {
+        "text": " haberlo hecho de esta manera como el artículo vino por referencia fue este mismo artículo el que fue",
+        "start": 4172.44,
+        "end": 4178.66
+    },
+    {
+        "text": " modificado, a ver si hubiera venido por valor habría sido una copia y a la copia le abriamos enganchado",
+        "start": 4178.66,
+        "end": 4188.66
+    },
+    {
+        "text": " la nueva celda pero no al original lo que aún desbarajaste tremendo recuerden lo que hemos",
+        "start": 4188.66,
+        "end": 4195.4
+    },
+    {
+        "text": " dicho aplicar las reis las usuales de pasaje de parámetros más allá del tipo de datos concreto no importa",
+        "start": 4195.4,
+        "end": 4202.3
+    },
+    {
+        "text": " si es una lista o si es un récord que adentro tiene una lista quiero modificarlo por referencia no",
+        "start": 4202.3,
+        "end": 4209.099999999999
+    },
+    {
+        "text": " quiero modificarlo por valor. Sí, bueno, si le hago dispós a este,",
+        "start": 4209.1,
+        "end": 4228.26
+    },
+    {
+        "text": " la compañera pregunta lo siguiente, tenemos claro que no lo debemos hacer acá, no se los hacemos",
+        "start": 4228.26,
+        "end": 4236.740000000001
+    },
+    {
+        "text": " dispós siempre que queremos hacer que si queremos liberar un espacio de memoria probablemente",
+        "start": 4236.74,
+        "end": 4243.219999999999
+    },
+    {
+        "text": " porque queramos borrar alguna celda de una lista en este ejercicio nos pedían insertar o sea que",
+        "start": 4243.219999999999,
+        "end": 4248.98
+    },
+    {
+        "text": " tenemos claro que acá no corresponde dispós, pero imaginando por un momento lo que pregunta la",
+        "start": 4248.98,
+        "end": 4255.9
+    },
+    {
+        "text": " compañera es si yo le aplico dispós a este puntero no se va todo se va solamente la primera recordemos",
+        "start": 4255.9,
+        "end": 4265.38
+    },
+    {
+        "text": " como funciona dispós yo tengo dispós de un determinado puntero imaginemos que se llama punto",
+        "start": 4265.38,
+        "end": 4274.26
+    },
+    {
+        "text": " acá está punter y punter a punter a un determinado espacio de memoria imaginemos que es una celda y que",
+        "start": 4274.26,
+        "end": 4283.9800000000005
+    },
+    {
+        "text": " de esta celda a su vez se referencia a otras celdas no se una lista que continúa y puede",
+        "start": 4283.9800000000005,
+        "end": 4290.82
+    },
+    {
+        "text": " llegar a tener muchísimas celdas si yo le aplico dispós a puntero no es puntero que se va lo que",
+        "start": 4290.82,
+        "end": 4298.94
+    },
+    {
+        "text": " se va quienes es lo apuntado esta celda que está acá es la que fue liberada y de vuelta al sistema",
+        "start": 4298.94,
+        "end": 4308.78
+    },
+    {
+        "text": " al ejecutarle dispós punter automáticamente quedó como con basura que no he indefinido entonces",
+        "start": 4308.78,
+        "end": 4319.139999999999
+    },
+    {
+        "text": " esta se liberó y qué pasó con la segunda celda bueno y con todas las que están después quedaron",
+        "start": 4319.14,
+        "end": 4325.26
+    },
+    {
+        "text": " inaccesibles mucho ojo todo esto queda inaccesible sin impropósito fuera borrar toda la lista de artículos",
+        "start": 4325.26,
+        "end": 4340.5
+    },
+    {
+        "text": " que tendría que hacer recorrer uno por uno e ir aplicando dispós uno por uno no no del",
+        "start": 4340.5,
+        "end": 4350.54
+    },
+    {
+        "text": " principio el final la recorrida de la lista las es en el sentido en el que van los punteros",
+        "start": 4350.54,
+        "end": 4354.38
+    },
+    {
+        "text": " tiene que jugar con los punteritos auxiliares ver si para uno antes sonó todo eso de hecho esa",
+        "start": 4357.42,
+        "end": 4364.38
+    },
+    {
+        "text": " operación la presión que elimina toda la lista la vimos en el teorico cuando vimos listas si",
+        "start": 4364.38,
+        "end": 4369.42
+    },
+    {
+        "text": " la busca en el sectorico está casi al final del capítulo es un cual que va aplicando dispós a",
+        "start": 4369.42,
+        "end": 4374.06
+    },
+    {
+        "text": " medida que se va moviendo pero es buena la pregunta si yo le aplico dispós al primer puntero",
+        "start": 4374.06,
+        "end": 4381.22
+    },
+    {
+        "text": " uno ingenuamente podría pensar que se borra todo no se borra solo el primer y lo demás quedó",
+        "start": 4381.22,
+        "end": 4386.54
+    },
+    {
+        "text": " como la no solamente es una balza que quedó gollando es un montón de balzas atados con cuerdas",
+        "start": 4386.54,
+        "end": 4393.58
+    },
+    {
+        "text": " todas ellas quedaron bollando y no sé si las comió el monstruo de la oles pero bueno volvamos",
+        "start": 4393.58,
+        "end": 4405.58
+    },
+    {
+        "text": " al nuestro acá dijimos que cosa acerca de dispós ningún dispós ni siquiera para los punteros",
+        "start": 4405.58,
+        "end": 4413.26
+    },
+    {
+        "text": " auxiliares porque como toda variable local que les va a pasar al terminar el procedimiento se van por",
+        "start": 4413.26,
+        "end": 4419.64
+    },
+    {
+        "text": " así solos que me falta acá cerrar el vineste del el y cerrar el procedimiento a propósito de esto",
+        "start": 4419.64,
+        "end": 4436.6
+    },
+    {
+        "text": " tienen publicado en el Eva un material que está muy bueno que resume un montón de errores",
+        "start": 4437.400000000001,
+        "end": 4444.6
+    },
+    {
+        "text": " con punteros que habitualmente solemos cometer se publicó creo que haya que detalle a caso a caso",
+        "start": 4444.6,
+        "end": 4451.56
+    },
+    {
+        "text": " todas las cosas que podemos llegar a ser mal al manipular punteros y memoria dinámica así que",
+        "start": 4451.56,
+        "end": 4457.88
+    },
+    {
+        "text": " está bueno que le den una buena leída que reflexionen sobre eso para reducir el peligro de hacer",
+        "start": 4457.88,
+        "end": 4463.320000000001
+    },
+    {
+        "text": " algunas de esas cosas que lo peor es que la compilación no te las detecta a veces dependiendo del",
+        "start": 4463.320000000001,
+        "end": 4469.68
+    },
+    {
+        "text": " problema te salta rola en tiempo de ejecución pero a veces no a veces es como esto memoria que quedó",
+        "start": 4469.68,
+        "end": 4474.8
+    },
+    {
+        "text": " inaccesible de manera silenciosa así que darlo una leída para evitar que pasen esas cosas más",
+        "start": 4474.8,
+        "end": 4488.200000000001
+    },
+    {
+        "text": " preguntas de este que la estamos si si no le pones bar lo estás pasando por valor el que está",
+        "start": 4488.200000000001,
+        "end": 4499.56
+    },
+    {
+        "text": " pasando no es este sino una copia una copia que es todo un récord entero imaginemos el caso más",
+        "start": 4499.56,
+        "end": 4510.160000000001
+    },
+    {
+        "text": " simple que esto venían niles vos lo que pasaste al pasarlo por valor fue una copia y en esa copia",
+        "start": 4510.160000000001,
+        "end": 4516.72
+    },
+    {
+        "text": " tienes un nil la nueva celda si la vas a estar agregando la copia pero no lo original",
+        "start": 4516.72,
+        "end": 4521.76
+    },
+    {
+        "text": " como si estuviera apuntando una celda no fuera nil de rebote te queda bien pero no es la idea",
+        "start": 4526.72,
+        "end": 4536.400000000001
+    },
+    {
+        "text": " está es la misma pregunta que tuviste lo otra vez aplicar las reis las de siempre lo quiero",
+        "start": 4536.400000000001,
+        "end": 4543.08
+    },
+    {
+        "text": " modificar pasarlo por bar no lo crees modificar por valor porque así corregimos el riesgo de sin",
+        "start": 4543.08,
+        "end": 4549.64
+    },
+    {
+        "text": " querer que nos quede mal claro una copia de todo el récord pero no de la celda porque es una copia",
+        "start": 4549.64,
+        "end": 4559.68
+    },
+    {
+        "text": " del puntero de la primera está mucho cuidado con eso si ustedes se manejan con las relas usuales",
+        "start": 4559.68,
+        "end": 4566.5599999999995
+    },
+    {
+        "text": " de pasaje de parámetros y manipulan los punteros auxiliares que a dan falta no se van a equivocar",
+        "start": 4566.5599999999995,
+        "end": 4571.64
+    },
+    {
+        "text": " bueno nos va para ver algo del cáncer así que vamos a hacerlo",
+        "start": 4573.96,
+        "end": 4579.12
+    },
+    {
+        "text": " bien",
+        "start": 4595.84,
+        "end": 4596.4
+    },
+    {
+        "text": " bueno dejamos atrás el ejercicio 1 y pasamos al 2",
+        "start": 4604.04,
+        "end": 4608.36
+    },
+    {
+        "text": " casi siempre hay uno de este estilo un ejercicio para evaluar las reglas de alcance",
+        "start": 4614.48,
+        "end": 4620.5599999999995
+    },
+    {
+        "text": " recordemos cuando vimos reglas del cáncer son reglas que medicen dependiendo dónde esté declarado",
+        "start": 4620.5599999999995,
+        "end": 4627.24
+    },
+    {
+        "text": " un identificador es en qué partes del programa el compilador te las reconoziono",
+        "start": 4627.24,
+        "end": 4632.28
+    },
+    {
+        "text": " hay en identificadores locales hay en identificadores globales a los distintos bloques",
+        "start": 4632.28,
+        "end": 4638.16
+    },
+    {
+        "text": " a eso lo vimos en el capítulo de funciones y procedimientos",
+        "start": 4638.16,
+        "end": 4641.88
+    },
+    {
+        "text": " entonces vamos a mirar acá nos dan un programa",
+        "start": 4644.36,
+        "end": 4650.4
+    },
+    {
+        "text": " que no le busquemos sentido o sea este programa no tiene ningún propósito filosófico si se quiere",
+        "start": 4650.4,
+        "end": 4662.5199999999995
+    },
+    {
+        "text": " simplemente hace cuentas tiene variables locales tiene variables locales tiene procedimientos tiene",
+        "start": 4662.5199999999995,
+        "end": 4669.679999999999
+    },
+    {
+        "text": " funciones tiene un programa principal incluso puede llegar a pasar que no cumpla con algunas de",
+        "start": 4669.679999999999,
+        "end": 4675.0
+    },
+    {
+        "text": " las recomendaciones de estilo en este ejercicio eso no nos importa porque lo que nos piden a nosotros",
+        "start": 4675.0,
+        "end": 4681.84
+    },
+    {
+        "text": " es que lo ejecutemos a mano y anotemos cuál es la salida que dan pantalla lo que tenemos que",
+        "start": 4681.84,
+        "end": 4689.16
+    },
+    {
+        "text": " tener claro acaes qué cosas son locales qué cosas son globales qué cosas van por valor qué",
+        "start": 4689.16,
+        "end": 4694.8
+    },
+    {
+        "text": " cosas van por referencia bueno dado el siguiente programa determinar su salida a pantalla cuando se",
+        "start": 4694.8,
+        "end": 4706.76
+    },
+    {
+        "text": " asigna la variable b o mejor dicho cuando se lee por teclado la variable b el último dígito de",
+        "start": 4706.76,
+        "end": 4713.64
+    },
+    {
+        "text": " su cédula de identidad el que está antes de la barra por ejemplo si su cédula fuera un",
+        "start": 4713.64,
+        "end": 4722.6
+    },
+    {
+        "text": " millón trescientos sesenta y ocho cuatro nueve dos y on cero el último dígito es el dos una",
+        "start": 4722.6,
+        "end": 4727.84
+    },
+    {
+        "text": " cosa es que claro porque la pregunta todos los años a mí me sorprende que lo preguntan es lo",
+        "start": 4727.84,
+        "end": 4732.6
+    },
+    {
+        "text": " tengo que hacer con mi propia cédula si o sea cada uno tiene que mirar su propia cédula de",
+        "start": 4732.6,
+        "end": 4738.4800000000005
+    },
+    {
+        "text": " identidad usar su bígito y no el del compañero o el de la letra está mal si lo corro con un",
+        "start": 4738.4800000000005,
+        "end": 4748.160000000001
+    },
+    {
+        "text": " dígito que no es el mío si está mal queda claro así que tener bien claro cuál es el número",
+        "start": 4748.16,
+        "end": 4754.68
+    },
+    {
+        "text": " de cédula para usar el dígito correcto yo lo voy a hacer con el de la letra este ejemplo voy",
+        "start": 4754.68,
+        "end": 4759.92
+    },
+    {
+        "text": " a usar el dos pero ustedes hay tienen que poner el de ustedes de la cédula de verdad de ustedes",
+        "start": 4759.92,
+        "end": 4764.28
+    },
+    {
+        "text": " ustedes se rían pero lo preguntan así que por favor este año no lo preguntan",
+        "start": 4764.28,
+        "end": 4770.08
+    },
+    {
+        "text": " bueno tenemos varias cosas bueno un programa que se llama alcance a mi na constante",
+        "start": 4770.72,
+        "end": 4780.08
+    },
+    {
+        "text": " me voy a notar por ahí la constante una constante a que vale cinco y acá tenemos una variable",
+        "start": 4780.08,
+        "end": 4792.84
+    },
+    {
+        "text": " global a todo el programa que se llama ve esta variable por suerte solamente se usan el programa",
+        "start": 4792.84,
+        "end": 4805.12
+    },
+    {
+        "text": " principal en ningún otro lugar estamos explícitamente mencionando ve eso es acorde o no las",
+        "start": 4805.12,
+        "end": 4812.88
+    },
+    {
+        "text": " recomendaciones de estilo por suerte si si yo usar a ve acá dentro o acá dentro con pila si",
+        "start": 4812.88,
+        "end": 4821.96
+    },
+    {
+        "text": " corre si es una buena práctica no entre las recomendaciones de estilo estaba nunca usar variables",
+        "start": 4821.96,
+        "end": 4830.4
+    },
+    {
+        "text": " lovales dentro del procedimiento son funciones o sea que sabe está declarada ahí pero solamente se",
+        "start": 4830.4,
+        "end": 4835.96
+    },
+    {
+        "text": " la menciona dentro del programa principal bueno hasta acá bien hay un procedimiento pro que",
+        "start": 4835.96,
+        "end": 4848.68
+    },
+    {
+        "text": " tiene una variable local a tiene dos parámetros empieza acá termina acá y a su vez dentro del procedimiento",
+        "start": 4848.68,
+        "end": 4856.84
+    },
+    {
+        "text": " hay una función que es local ese procedimiento eso vimos que también podía pasar tener",
+        "start": 4856.84,
+        "end": 4861.84
+    },
+    {
+        "text": " sus programas que fueran locales a otros programas bueno hay pasaje de parámetros estos",
+        "start": 4861.84,
+        "end": 4872.12
+    },
+    {
+        "text": " por valor estos por referencia estos dos son por valor y donde empieza la ejecución de todo",
+        "start": 4872.12,
+        "end": 4879.04
+    },
+    {
+        "text": " acá en el vigín del programa principal y acá donde nosotros les vamos a empezar con cejo",
+        "start": 4880.2,
+        "end": 4886.92
+    },
+    {
+        "text": " dibujen las variables dibujen las cajitas que es lo que vamos a hacer ahora vayan corriéndolo a mano",
+        "start": 4886.92,
+        "end": 4894.72
+    },
+    {
+        "text": " como me gusta decir trabajo de hormiga no confíen en su memoria mental para recordar los",
+        "start": 4894.72,
+        "end": 4901.2
+    },
+    {
+        "text": " nombres de las variables porque es altamente probable equivocarse bueno voy a dibujar bien",
+        "start": 4901.2,
+        "end": 4908.28
+    },
+    {
+        "text": " la variable v del programa principal",
+        "start": 4910.28,
+        "end": 4912.5599999999995
+    },
+    {
+        "text": " vamos a suponer que acá tenemos v de el programa principal y vamos a suponer que le cargamos el",
+        "start": 4916.88,
+        "end": 4926.5199999999995
+    },
+    {
+        "text": " dos el de legéndolo o sea que v arranca con el valor dos",
+        "start": 4926.52,
+        "end": 4932.96
+    },
+    {
+        "text": " se leció con ridline no importan estos ejercicios si se lee con rid o se lee con ridlan",
+        "start": 4939.320000000001,
+        "end": 4944.4400000000005
+    },
+    {
+        "text": " importantes que se lee yo ya está leído ve que es esto una llamada al procedimiento pro",
+        "start": 4944.4400000000005,
+        "end": 4953.0
+    },
+    {
+        "text": " parámetros efectivos a y b",
+        "start": 4953.12,
+        "end": 4955.84
+    },
+    {
+        "text": " bueno a",
+        "start": 4957.92,
+        "end": 4959.44
+    },
+    {
+        "text": " viene como m b viene como n acá están los parámetros nominales el primero fue pasado de qué manera",
+        "start": 4960.08,
+        "end": 4969.6
+    },
+    {
+        "text": " por valor cuando no le pongo la palabra bares que va por valor",
+        "start": 4970.8,
+        "end": 4974.52
+    },
+    {
+        "text": " y que pasa cuando hago pasaje por valor",
+        "start": 4976.32,
+        "end": 4978.52
+    },
+    {
+        "text": " se hace una copia no se modifica porque se hace una copia",
+        "start": 4979.400000000001,
+        "end": 4982.76
+    },
+    {
+        "text": " o sea que aparece quien ahora aparece m",
+        "start": 4984.040000000001,
+        "end": 4988.320000000001
+    },
+    {
+        "text": " que es el parámetro de pro",
+        "start": 4991.88,
+        "end": 4994.040000000001
+    },
+    {
+        "text": " sí",
+        "start": 4995.96,
+        "end": 4996.4800000000005
+    },
+    {
+        "text": " como una copia debe o sea que m se carga con qué valor con el mismo dos",
+        "start": 4998.160000000001,
+        "end": 5004.160000000001
+    },
+    {
+        "text": " que es copiada como una copia de",
+        "start": 5005.04,
+        "end": 5007.08
+    },
+    {
+        "text": " perdón",
+        "start": 5009.04,
+        "end": 5010.04
+    },
+    {
+        "text": " no me di cuenta de eso le estamos pasando a y a que es una constante 5 o sea que directamente el valor de la",
+        "start": 5012.8,
+        "end": 5019.92
+    },
+    {
+        "text": " constante se pasa acá gracias",
+        "start": 5019.92,
+        "end": 5021.32
+    },
+    {
+        "text": " la que se pasa b es en segundo lugar",
+        "start": 5025.16,
+        "end": 5027.599999999999
+    },
+    {
+        "text": " y ve se pasa como quien como m y de qué manera va por referencia y cuando se pasa por referencia",
+        "start": 5028.6,
+        "end": 5037.4800000000005
+    },
+    {
+        "text": " que pasa se pasa la misma no se suena copia con lo cual n no es un nuevo espacio de memoria",
+        "start": 5037.4800000000005,
+        "end": 5045.56
+    },
+    {
+        "text": " sino que n quienes el mismo espacio de memoria que ve o sea se llama b en el programa principal",
+        "start": 5045.56,
+        "end": 5052.0
+    },
+    {
+        "text": " y se llama n en el procedimiento pero son el mismo espacio de memoria",
+        "start": 5052.52,
+        "end": 5056.4
+    },
+    {
+        "text": " bien",
+        "start": 5060.4,
+        "end": 5060.92
+    },
+    {
+        "text": " empezamos m tiene el valor 5 que era el de la constante y n",
+        "start": 5062.32,
+        "end": 5067.32
+    },
+    {
+        "text": " arranca valiendo 2 porque coincide con b",
+        "start": 5068.32,
+        "end": 5070.8
+    },
+    {
+        "text": " y aparece una nueva",
+        "start": 5073.16,
+        "end": 5075.24
+    },
+    {
+        "text": " un nuevo identificador de nombre a que es una variable local al procedimiento",
+        "start": 5076.24,
+        "end": 5081.12
+    },
+    {
+        "text": " se ha que vamos a dibujar por acá",
+        "start": 5082.52,
+        "end": 5084.0
+    },
+    {
+        "text": " pero esta",
+        "start": 5086.0,
+        "end": 5087.0
+    },
+    {
+        "text": " no es la constante a sino que es una variable local al procedimiento",
+        "start": 5090.0,
+        "end": 5095.52
+    },
+    {
+        "text": " la dejamos por ahí",
+        "start": 5098.24,
+        "end": 5099.44
+    },
+    {
+        "text": " me salté la función donde vamos ahora",
+        "start": 5099.44,
+        "end": 5102.56
+    },
+    {
+        "text": " al vin del procedimiento y acá empieza el trabajo dormida",
+        "start": 5103.76,
+        "end": 5107.28
+    },
+    {
+        "text": " a m le asignamos n más 2 bueno n en esta ca",
+        "start": 5108.28,
+        "end": 5113.32
+    },
+    {
+        "text": " 2 2 más 2 4 y ese 4 donde lo guardamos n m o sea que m que de momento vale 5",
+        "start": 5114.32,
+        "end": 5123.08
+    },
+    {
+        "text": " deja de valor 5 y pasaba a leer 4 se perdió el 5",
+        "start": 5124.08,
+        "end": 5129.639999999999
+    },
+    {
+        "text": " si",
+        "start": 5130.64,
+        "end": 5131.64
+    },
+    {
+        "text": " pasamos a la siguiente a a le asignamos m más n m más n",
+        "start": 5132.64,
+        "end": 5138.280000000001
+    },
+    {
+        "text": " cuanto da m 4 más n es 2 eso me da 6 y ojo con algo",
+        "start": 5138.280000000001,
+        "end": 5145.64
+    },
+    {
+        "text": " a cual a a la variable local fíjense que tenemos un identificador local con el mismo nombre que uno global",
+        "start": 5146.64,
+        "end": 5154.64
+    },
+    {
+        "text": " que pasaba como resolvía el compilador cuando había un identificador local con el mismo nombre que uno global",
+        "start": 5155.64,
+        "end": 5161.64
+    },
+    {
+        "text": " da valor no da valor de compilación asumía el local por sobre el global eso lo vimos cuando vimos las relas del cáncer",
+        "start": 5162.64,
+        "end": 5168.64
+    },
+    {
+        "text": " por lo menos así es en pascalca para que otros lenguajes es diferente",
+        "start": 5170.64,
+        "end": 5173.64
+    },
+    {
+        "text": " entonces a es la variable local si fuera la constante imagínense que este no está declarado",
+        "start": 5175.64,
+        "end": 5182.64
+    },
+    {
+        "text": " entonces a estaría siendo referencia a esto y eso no convilaría porque porque no es una variable",
+        "start": 5183.64,
+        "end": 5189.64
+    },
+    {
+        "text": " es una constante yo la constante no les puedo asignar nada",
+        "start": 5190.64,
+        "end": 5193.64
+    },
+    {
+        "text": " pero así como está hace refiere a la variable local o sea que justo de rebote si acá no tenemos muy claro el tema de lo local",
+        "start": 5193.64,
+        "end": 5200.64
+    },
+    {
+        "text": " o al ver sus lobal me salvo a el hecho de que esto es una constante y algún ruido te tiene que hacer si querés asignarlo a una constante",
+        "start": 5200.64,
+        "end": 5208.64
+    },
+    {
+        "text": " pero bueno eso justo pasó acá cuestion que es la variable local",
+        "start": 5209.64,
+        "end": 5214.64
+    },
+    {
+        "text": " le asignamos en mi omacene que dijimos que era 4 más 2 6 y a la variable edad del procedimiento sea a esta",
+        "start": 5215.64,
+        "end": 5223.64
+    },
+    {
+        "text": " le cargamos ahí 6",
+        "start": 5223.64,
+        "end": 5226.64
+    },
+    {
+        "text": " bueno, primer salida pantalla, vamos a notar por acá lo que se muestra en pantalla",
+        "start": 5229.64,
+        "end": 5235.64
+    },
+    {
+        "text": " primer salida pantalla, Rhythline A o sea la variable local A se muestra un 6 y como fue con Rhythline se va a demostrando por lo menos la próxima salida se va a mostrar en el reglón de abajo",
+        "start": 5239.64,
+        "end": 5252.64
+    },
+    {
+        "text": " y enseguida mostramos M bueno cuanto vale M4 o sea que a continuación del 6 en la siguiente línea mostramos 4",
+        "start": 5256.64,
+        "end": 5264.64
+    },
+    {
+        "text": " bien ahora unif y fíjense que como condición de if estamos llamando a la función directamente porque",
+        "start": 5269.64,
+        "end": 5278.64
+    },
+    {
+        "text": " miremos la función miremos el tipo del resultado julian una llamada una función de tipo julian esto lo vimos cuando vimos invocación de funciones se puede poner directamente como condición de unif",
+        "start": 5279.64,
+        "end": 5290.64
+    },
+    {
+        "text": " le pasamos MIA estos son los parámetros efectivos como XI y como están pasados XI ambos por valor lo cual de hecho es una buena practica en las funciones",
+        "start": 5291.64,
+        "end": 5305.64
+    },
+    {
+        "text": " que los parámetros se pasen siempre por valor y al pasarse por valor que son XI copias o sea que vamos a dibujar aparte",
+        "start": 5306.64,
+        "end": 5315.64
+    },
+    {
+        "text": " vamos a dibujar por acá la X de la función y vamos a dibujar por acá para metro y de la función",
+        "start": 5316.64,
+        "end": 5330.64
+    },
+    {
+        "text": " m se copian X a se copian y por ser pasaje por valor m cuanto vale en este momento 4 o sea que este 4 se copian X y después le pasamos a que a la variable lo constante la variable que de momento vale 6 este 6 se pasan lugar de y",
+        "start": 5330.64,
+        "end": 5359.64
+    },
+    {
+        "text": " así quedan cargados los parámetros de la función bueno entramos quien apareció apareció a",
+        "start": 5361.64,
+        "end": 5370.64
+    },
+    {
+        "text": " vamos a dibujar a che por acá abajo acá está la variable local a che de la función",
+        "start": 5371.64,
+        "end": 5377.64
+    },
+    {
+        "text": " bien y finalmente empezamos a dibujar la función a che le asignamos X más y donde está X acá vale 4 donde está ahí acaba la 6 4 más 6 eso me da 10 y ese 10 es asignado a che o sea que a che que está acá queda con el valor 10",
+        "start": 5377.64,
+        "end": 5406.64
+    },
+    {
+        "text": " que hacemos enseguida mostramos a che y nuevamente con raíz le no sea otra salida más con un entero al final a che que dijimos vale 10 se mostran pantalla en la línea",
+        "start": 5408.64,
+        "end": 5423.64
+    },
+    {
+        "text": " abajo del 4 si acabamos de ver una recomendación de estilo cual que dentro una función se mostran pantalla esto compila esto corre pero",
+        "start": 5423.64,
+        "end": 5434.64
+    },
+    {
+        "text": " dijimos no se considera una buena práctica el concepto filosófico de la función es que sea una cajita negra que recibe parámetros de entrada",
+        "start": 5434.64,
+        "end": 5442.64
+    },
+    {
+        "text": " hace cálculos y devol un resultado sin interacción directa con los usuarios pero en este ejercicio son los nos importa",
+        "start": 5442.64,
+        "end": 5449.64
+    },
+    {
+        "text": " puede pasar que a veces se vio en alguna recomendación de estilo como ocurrió acá bueno ¿qué pasa cuando pongo nombre de la función 2 puntos igual",
+        "start": 5449.64,
+        "end": 5462.64
+    },
+    {
+        "text": " no es una asignación en el sentido clásico porque esto no es una no es una variable es la manera que tenemos de devolver el resultado de la función se usa el nombre de la función en una suerte de asignación y lo que se coloco a la derecha es el resultado y es el resultado del cel que sale hacia afuera de la función",
+        "start": 5462.64,
+        "end": 5483.64
+    },
+    {
+        "text": " la función de vuelve bulian y esto que es una expresión de tipo bulian h mod 2 el resto de dividir h entre 2 cuanto vale h vale 10 el resto de dividir 10 entre 2 cuanto da 0 0 es igual a 1 no o sea que esto es falso por lo tanto el resultado que devuelve la función es false",
+        "start": 5483.64,
+        "end": 5511.64
+    },
+    {
+        "text": " false o sea que false a ver ahí false es el resultado que vuelve hacia el lugar donde se invoco que fue este if la condición del if entonces vale false porque fue lo que devolvió la función",
+        "start": 5511.64,
+        "end": 5534.64
+    },
+    {
+        "text": " si vale false a donde voy me salteo el den y voy a él o sea que a n le asignamos a donde está n a carriba n queda la casualidad que coincide con v del programa principal a n le asignamos a cual de las dos a la variable local y no la constante global y la variable local a en este momento",
+        "start": 5534.64,
+        "end": 5560.64
+    },
+    {
+        "text": " cuanto vale 6 o sea que este 6 se copia desde a hacia n o sea que acá perdemos el 2 y en su lugar queda un 6 que derreote aquí en afectó a la vez del programa principal debido al pasaje por referencia",
+        "start": 5560.64,
+        "end": 5578.64
+    },
+    {
+        "text": " bien en o sea que finalizó la ejecución del procedimiento volvemos al programa principal y esta es la línea donde habíamos hecho la invocación recién ahora se va a ejecutar quien el regla en que está después que va a mostrar v y ve ahora vale 6 porque fue modificado",
+        "start": 5578.64,
+        "end": 5599.64
+    },
+    {
+        "text": " dentro del procedimiento como regla se muestra y va a dar un entar más o sea que si se mostrar algo más después y ya después",
+        "start": 5599.64,
+        "end": 5609.64
+    },
+    {
+        "text": " entonces en este ejercicio lo que ustedes deben dar es esto la salida pan bralla ya ven que es muy fácil marearse yo me marien varias ocasiones",
+        "start": 5609.64,
+        "end": 5619.64
+    },
+    {
+        "text": " durante el camino aún habiendo dibujado la variable y imagínense querer hacer esto mentalmente sin dibujar las variables",
+        "start": 5619.64,
+        "end": 5629.64
+    },
+    {
+        "text": " bueno tienen el resto de este parcial si alguien tiene dudas me quedo y la miramos lo mismo si tienen dudas de teórico de práctico",
+        "start": 5629.64,
+        "end": 5639.64
+    },
+    {
+        "text": " tienen más parciales viejos publicados tienen el listado de errores frecuentes con punteros",
+        "start": 5639.64,
+        "end": 5646.64
+    },
+    {
+        "text": " ven una leída y mi consejo es hagan muchos ejercicios de acá al parcial",
+        "start": 5646.64,
+        "end": 5653.64
+    }
+]

@@ -1,0 +1,3122 @@
+[
+    {
+        "text": " Bueno, buenas tardes. Hoy vamos a terminar lo que nos faltó del capítulo de componentes básicos,",
+        "start": 0.0,
+        "end": 24.0
+    },
+    {
+        "text": " que fueron algunas de las positivas al final. Vamos a hacer algún ejercicio más del práctico 1,",
+        "start": 24.0,
+        "end": 30.0
+    },
+    {
+        "text": " luego vamos a hablar de las instrucciones de entrada y salida que tenemos en Pascal, entrada,",
+        "start": 30.0,
+        "end": 36.76
+    },
+    {
+        "text": " lectura por teclado, salida, emisión de resultados por pantalla. Vamos a hacer algún ejercicio del",
+        "start": 36.76,
+        "end": 43.72
+    },
+    {
+        "text": " práctico 2 y eso más o menos es lo que va a hacer la clase de hoy. Para la semana que viene,",
+        "start": 43.72,
+        "end": 49.36
+    },
+    {
+        "text": " ya están publicados los materiales, se va a trabajar con lo que son las estructuras de selección y",
+        "start": 49.36,
+        "end": 55.76
+    },
+    {
+        "text": " vamos a empezar quizás a ver algo de iteración. La semana que viene está previsto trabajar en los",
+        "start": 55.76,
+        "end": 62.82
+    },
+    {
+        "text": " prácticos 3 y 4. Recuerden siempre que la idea es un promedio de dos prácticos por semana,",
+        "start": 62.82,
+        "end": 68.68
+    },
+    {
+        "text": " en clases solamente da para hacer algunos ejercicios, ustedes deben hacer práctico fuera de clase.",
+        "start": 68.68,
+        "end": 76.16
+    },
+    {
+        "text": " Bueno les quería comentar que ya se publicó esta abajo del todo, el instructivo con las",
+        "start": 76.16,
+        "end": 89.16
+    },
+    {
+        "text": " indicaciones para poder instalar y compilar con el fripascal que va a ser el entorno que vamos a",
+        "start": 89.16,
+        "end": 95.52
+    },
+    {
+        "text": " utilizar para los laboratorios. En esta sección de acá tienen dos instructivos, uno que explica",
+        "start": 95.52,
+        "end": 104.8
+    },
+    {
+        "text": " cómo se instalan Linux y cómo se compilan Linux y lo mismo para versiones de Windows, uno que",
+        "start": 104.8,
+        "end": 112.32
+    },
+    {
+        "text": " explica cómo se instala en Windows y cómo es que se compila. Una aclaración importante es que",
+        "start": 112.32,
+        "end": 118.92
+    },
+    {
+        "text": " ustedes durante los prácticos pueden trabajar en la versión que prefieran, pero los laboratorios,",
+        "start": 118.92,
+        "end": 124.64
+    },
+    {
+        "text": " tanto el primero como el segundo, nosotros los vamos a ejecutar y los vamos a corregir en Linux,",
+        "start": 124.64,
+        "end": 131.28
+    },
+    {
+        "text": " o sea que si ustedes se les jendrabajar con Windows durante los prácticos no hay ningún problema,",
+        "start": 132.0,
+        "end": 136.48
+    },
+    {
+        "text": " pero a según se cuando llegue la época del laboratorio de garantizar que lo que escriban para Windows",
+        "start": 136.48,
+        "end": 142.08
+    },
+    {
+        "text": " también funcione para Linux, porque pueden haber algunas diferencias, sobre todo lo que tiene",
+        "start": 142.08,
+        "end": 147.84
+    },
+    {
+        "text": " que ver con manejo de memoria, de entrada salida, que en Windows funcionan de una manera y en Linux",
+        "start": 147.84,
+        "end": 152.96
+    },
+    {
+        "text": " funcionan de otras. Nosotros la corrección del laboratorio puede pasar adelante, la vamos a",
+        "start": 152.96,
+        "end": 161.2
+    },
+    {
+        "text": " hacer siempre en Linux, quedo claro eso, ustedes disponen de salas con máquinas Linux en facultad en",
+        "start": 161.2,
+        "end": 168.67999999999998
+    },
+    {
+        "text": " caso de que dejen venir a trabajar acá, también hay aquí alguna indicación al respecto, queda claro el",
+        "start": 168.67999999999998,
+        "end": 175.32
+    },
+    {
+        "text": " tema de las herramientas, bueno y ya vayan aprovechando también para los ejercicios que van haciendo",
+        "start": 175.32,
+        "end": 181.76
+    },
+    {
+        "text": " los prácticos, no solamente hacerlos en el papel, sino además probarlos en máquina, queda claro,",
+        "start": 181.76,
+        "end": 187.95999999999998
+    },
+    {
+        "text": " bien, bueno dicho esto vamos a retomar el capítulo de componentes básicos",
+        "start": 188.96,
+        "end": 196.52
+    },
+    {
+        "text": " y vamos a empezar por repasar un poquito este programa de ejemplo que habíamos visto la clase pasada,",
+        "start": 201.52,
+        "end": 208.04000000000002
+    },
+    {
+        "text": " un programa que habíamos definido como pequeño pero bien representativo de lo que es un programa,",
+        "start": 209.56,
+        "end": 216.04000000000002
+    },
+    {
+        "text": " que problema resuelve este programa,",
+        "start": 218.24,
+        "end": 220.6
+    },
+    {
+        "text": " calcular el área de un triángulo, cuáles son los datos de entrada,",
+        "start": 223.24,
+        "end": 227.20000000000002
+    },
+    {
+        "text": " la altura y la base, ¿sí?, cuáles la salida el resultado del programa, el valor del área,",
+        "start": 228.96,
+        "end": 235.8
+    },
+    {
+        "text": " o sea que este programa tiene tres secciones claramente definidas, una para ingreso de datos,",
+        "start": 236.8,
+        "end": 242.20000000000002
+    },
+    {
+        "text": " una para procesamiento, que en este caso es un procesamiento muy sencillito, ¿verdad?, y una sección",
+        "start": 242.72,
+        "end": 248.28
+    },
+    {
+        "text": " final para mostrar el resultado, bien vamos a identificar diferentes elementos que tenemos en este",
+        "start": 248.28,
+        "end": 256.32
+    },
+    {
+        "text": " programa, todo programa empieza con la palabra reservada program, y a continuación se le ponía un",
+        "start": 256.32,
+        "end": 263.71999999999997
+    },
+    {
+        "text": " nombre al programa, ¿sí?, ¿qué son las palabras reservadas?",
+        "start": 263.71999999999997,
+        "end": 269.48
+    },
+    {
+        "text": " palabras que cumple en una función en Pascal, tienen un uso preestablecido, yo podría, por ejemplo,",
+        "start": 272.2,
+        "end": 280.84
+    },
+    {
+        "text": " tomar una palabra reservada y usarla como el nombre de una variable, no lo podría hacer, ¿sabes?,",
+        "start": 280.84,
+        "end": 287.24
+    },
+    {
+        "text": " bien, o sea que tenemos a sheet palabras reservadas, program barbegin en son palabras reservadas,",
+        "start": 287.24,
+        "end": 295.15999999999997
+    },
+    {
+        "text": " ¿ok?, las variables se declaran dentro de la sección del programa etiquetada con barbe,",
+        "start": 296.04,
+        "end": 304.04
+    },
+    {
+        "text": " lo que tenemos en este ejemplo son tres variables del mismo tipo, el tipo real,",
+        "start": 304.04,
+        "end": 309.68
+    },
+    {
+        "text": " entre la línea que define el nombre del programa y la línea donde se declaran las variables podríamos",
+        "start": 311.92,
+        "end": 317.92
+    },
+    {
+        "text": " poner algo que eran, los comentarios pueden ir en cualquier sección, pero hay algo que",
+        "start": 317.92,
+        "end": 323.96000000000004
+    },
+    {
+        "text": " específicamente debe ir antes de las variables en caso de que lo queramos usar, ahora si él",
+        "start": 323.96,
+        "end": 329.03999999999996
+    },
+    {
+        "text": " les aguarda, las constantes, yo puedo definir valores fijos que no cambian durante la ejecución del",
+        "start": 329.03999999999996,
+        "end": 337.64
+    },
+    {
+        "text": " programa y darles un identificador de igual manera que las variables, valores constantes, de hecho",
+        "start": 337.64,
+        "end": 345.28
+    },
+    {
+        "text": " es una buena práctica definir constantes para aquellos valores que se van a utilizar muchas",
+        "start": 345.28,
+        "end": 351.24
+    },
+    {
+        "text": " veces, mire que pueden pasar que no hay ningún problema, aquí se usan valores que vamos a utilizar",
+        "start": 351.24,
+        "end": 357.92
+    },
+    {
+        "text": " muchas veces dentro del programa, por ejemplo yo me podría definir una constante para el valor de",
+        "start": 357.92,
+        "end": 363.28000000000003
+    },
+    {
+        "text": " liva y luego le pongo de nombre iva a esa constante y luego la constante la uso en 27 lugares diferentes",
+        "start": 363.28000000000003,
+        "end": 371.8
+    },
+    {
+        "text": " dentro del programa, ¿qué ventaja tiene eso?, ¿qué pasa si el iba mañana cambia?",
+        "start": 371.8,
+        "end": 376.88
+    },
+    {
+        "text": " Cambio el valor de la constante y automáticamente eso se va reflejado en todo lugar del programa donde se",
+        "start": 376.88,
+        "end": 384.8
+    },
+    {
+        "text": " haga uso de la constante, o sea que es una buena práctica a ser uso de constantes, bien? Bueno,",
+        "start": 384.8,
+        "end": 392.71999999999997
+    },
+    {
+        "text": " la ejecución del programa corresponde a las instrucciones que se encierran donde,",
+        "start": 392.71999999999997,
+        "end": 400.04
+    },
+    {
+        "text": " entre el bigin y el n es donde va el cuerpo del programa y acá tenemos tres tipos de",
+        "start": 401.04,
+        "end": 409.24
+    },
+    {
+        "text": " instrucciones diferentes, esta es una instrucción para que, es una instrucción para lectura de datos",
+        "start": 409.24,
+        "end": 416.04
+    },
+    {
+        "text": " de la entrada, ¿tabién? Ridline es una de las posibles operaciones de las cuales disponemos para",
+        "start": 416.04,
+        "end": 423.76
+    },
+    {
+        "text": " leer datos de la entrada y vamos a mencionar Rid y Ridline lados, ¿vale? Esto es una,",
+        "start": 423.76,
+        "end": 430.0
+    },
+    {
+        "text": " esta línea es una asignación, la asignación es un tipo especial de instrucción que permite que",
+        "start": 432.52,
+        "end": 440.8
+    },
+    {
+        "text": " calcular un valor y asignárselo una variable, guardarlo en una variable, ¿vale? ¿cómo se le y cómo se ejecuta",
+        "start": 440.8,
+        "end": 455.56
+    },
+    {
+        "text": " de derecha izquierda, del lado izquierdo que se coloca, la variable y del lado derecho que se coloca,",
+        "start": 455.56,
+        "end": 463.92
+    },
+    {
+        "text": " la expresión, la expresión es una cadena de operadores y valores que permite calcular un resultado",
+        "start": 464.48,
+        "end": 472.76
+    },
+    {
+        "text": " y ese resultado que debe cumplir, tiene que ser del mismo tipo que la variable o por lo menos",
+        "start": 472.76,
+        "end": 482.24
+    },
+    {
+        "text": " compatible, el mecanismo por el cual Pascal transforma un valor de un tipo, un valor de otro tipo,",
+        "start": 482.24,
+        "end": 489.6
+    },
+    {
+        "text": " tenía un nombre, a ver si alguien se lo acuerda, coerción, por ejemplo si la variable destino es de",
+        "start": 489.6,
+        "end": 496.24
+    },
+    {
+        "text": " tipo real y yo del lado derecho, coloca una expresión, queda como resultado un integer,",
+        "start": 496.24,
+        "end": 501.36
+    },
+    {
+        "text": " lo que hace Pascal es convierte ese integer a real antes de efectuar la asignación, pero no al revés,",
+        "start": 501.36,
+        "end": 508.88
+    },
+    {
+        "text": " la coerción de real anterior no está disponible, ¿atagá? Bueno y la última es una instrucción para",
+        "start": 508.88,
+        "end": 518.1600000000001
+    },
+    {
+        "text": " exactamente imprimir en pantalla, en este caso un valor solo, vamos a ver que también se",
+        "start": 520.16,
+        "end": 525.6800000000001
+    },
+    {
+        "text": " puede utilizar para imprimir varios valores e incluso cadenas de texto, ¿atagá? Bien, bueno,",
+        "start": 525.6800000000001,
+        "end": 535.88
+    },
+    {
+        "text": " viendo el pasado esto, vamos a seguir un poquito con lo que nos había faltado,",
+        "start": 535.88,
+        "end": 541.6800000000001
+    },
+    {
+        "text": " lo que son las funciones predefinidas, nosotros en Pascal disponemos de una serie de funciones",
+        "start": 541.68,
+        "end": 559.0
+    },
+    {
+        "text": " que ya vienen con el lenguaje de programación, funciones que ya están hechas y que nosotros podemos",
+        "start": 559.0,
+        "end": 567.04
+    },
+    {
+        "text": " hacer uso de ellas en nuestros programas, en particular las que tenemos aquí son funciones aritméticas,",
+        "start": 567.04,
+        "end": 575.4399999999999
+    },
+    {
+        "text": " ¿qué operan con valores de tipo real? A estas funciones yo las puedo llamar en cualquier lugar",
+        "start": 575.4399999999999,
+        "end": 586.04
+    },
+    {
+        "text": " del programa y cada función me va a devolver un valor y ese valor, o bien lo puedo asignar a una",
+        "start": 586.04,
+        "end": 595.04
+    },
+    {
+        "text": " variable, o bien lo puedo mostrar en la salida estándar, o bien lo puedo poner como parte de una",
+        "start": 595.04,
+        "end": 601.5999999999999
+    },
+    {
+        "text": " expresión, cualquiera de esos lugares son admisibles para el uso de funciones aritméticas predefinidas,",
+        "start": 601.5999999999999,
+        "end": 609.48
+    },
+    {
+        "text": " vamos a ver más adelante que nosotros también podemos crear nuestras propias funciones, pero eso",
+        "start": 609.48,
+        "end": 614.1999999999999
+    },
+    {
+        "text": " va a venir después, entonces la función skear retorna el cuadrado de x, skear root retorna la",
+        "start": 614.1999999999999,
+        "end": 624.04
+    },
+    {
+        "text": " raíz cuadrada de x y hay que tener un cuidado muy especial cuando yo llamas qar root, cuál será",
+        "start": 624.04,
+        "end": 631.36
+    },
+    {
+        "text": " lo que yo le pase, lo que la x que yo le pase no puede ser negativa, si es negativa me dará",
+        "start": 633.04,
+        "end": 641.36
+    },
+    {
+        "text": " un error de compilación o de ejecución, de ejecución, va a ser un error en tiempo de ejecución",
+        "start": 641.36,
+        "end": 647.76
+    },
+    {
+        "text": " porque sintácticamente no hay error, yo le estoy pasando algo que es de tipo real y eso es",
+        "start": 647.76,
+        "end": 653.8
+    },
+    {
+        "text": " suficiente para el compilador, se va a producir un error en tiempo de ejecución, si ya hayamos",
+        "start": 653.8,
+        "end": 660.68
+    },
+    {
+        "text": " charlado la diferencia entre error en tiempo de compilación y error en tiempo de ejecución, ¿verdad?",
+        "start": 660.68,
+        "end": 665.12
+    },
+    {
+        "text": " Bueno, las funciones trunk y round son para hacer conversión de real antero, trunk lo que",
+        "start": 666.4,
+        "end": 672.76
+    },
+    {
+        "text": " hace es, se queda con la parte entera y desecha lo que está después, la función round lo que hace es",
+        "start": 672.76,
+        "end": 678.4399999999999
+    },
+    {
+        "text": " redondea al entero más próximo, ya sea para arriba o para abajo, por ejemplo si es 5,7, redonde",
+        "start": 678.4399999999999,
+        "end": 686.0
+    },
+    {
+        "text": " a 6, si es 5,3, redonde a 5, y por último la función abs que devuelve el valor absoluto, calcula,",
+        "start": 686.0,
+        "end": 695.48
+    },
+    {
+        "text": " mejor dicho el valor absoluto, el resultado siempre va a ser positivo, entonces cualquiera de estas",
+        "start": 695.48,
+        "end": 702.56
+    },
+    {
+        "text": " funciones se puede utilizar como parte de expresiones, cualquier lugar, cualquier expresión que",
+        "start": 702.56,
+        "end": 709.28
+    },
+    {
+        "text": " admita algún parámetro, algún argumento de tipo real, yo puedo colocar una llamada alguna",
+        "start": 709.28,
+        "end": 715.3599999999999
+    },
+    {
+        "text": " de estas funciones, vamos a ver algunos exlitos ahora, consultas de esto, bien,",
+        "start": 715.3599999999999,
+        "end": 721.2399999999999
+    },
+    {
+        "text": " bueno, teníamos el tipo Boolean que lo voy a pasar medio rápido porque la semana que viene,",
+        "start": 724.04,
+        "end": 728.76
+    },
+    {
+        "text": " vamos a hablar en detalle del tipo Boolean, que tiene solamente dos valores, true y false que",
+        "start": 728.76,
+        "end": 735.36
+    },
+    {
+        "text": " representan la noción de verdadero y de falso y que nos van a servir para lo que es la evaluación",
+        "start": 735.36,
+        "end": 741.28
+    },
+    {
+        "text": " de condiciones lógicas, los operadores disponibles para el tipo Boolean son el an, el or y el not,",
+        "start": 741.28,
+        "end": 749.4399999999999
+    },
+    {
+        "text": " estos son los nombres formales, la conjunción vendría a ser el I en español, la disjunción que",
+        "start": 749.4399999999999,
+        "end": 755.64
+    },
+    {
+        "text": " vendría a ser I lo y la negación que vendría a ser I ego, la condición, no me da tener mucho en",
+        "start": 755.64,
+        "end": 763.48
+    },
+    {
+        "text": " las semánticas, es decir, en cómo funcionan estos porque lo vamos a ver en detalle la semana que viene,",
+        "start": 763.48,
+        "end": 767.72
+    },
+    {
+        "text": " bien, bueno, el tipo Char representa los caracteres, un valor de tipo Char corresponde a un",
+        "start": 768.8,
+        "end": 780.04
+    },
+    {
+        "text": " carácter, un carácter que era, voy a hacer una letra, un número pero en qué sentido el número,",
+        "start": 780.04,
+        "end": 787.9599999999999
+    },
+    {
+        "text": " de una cifra, lo que sería un dijito y se lo trabaja como si tuviera valor numérico, no,",
+        "start": 789.48,
+        "end": 796.36
+    },
+    {
+        "text": " se lo trabaja como símbolo carácter, si yo pongo un 7 entre comillas simples, eso no es el",
+        "start": 796.36,
+        "end": 803.7199999999999
+    },
+    {
+        "text": " número entero 7, sino que vendría a ser el símbolo 7, tomado como parte de un texto,",
+        "start": 803.72,
+        "end": 810.12
+    },
+    {
+        "text": " entonces cualquier letra, ya sea mayúsculo minúscula, cualquier dijito, cualquier símbolo,",
+        "start": 811.9200000000001,
+        "end": 816.6
+    },
+    {
+        "text": " puesto entre comillas simples, es un carácter y obviamente puede ser asignado una variable de tipo Char,",
+        "start": 816.6,
+        "end": 822.6800000000001
+    },
+    {
+        "text": " si, en los caracteres sí, exactamente, si tú por ejemplo, pones bar que es la palabra reservada",
+        "start": 822.68,
+        "end": 841.3199999999999
+    },
+    {
+        "text": " a todas minúsculas o todas mayúsculas para pascales igual, ahora el carácter a mayúscula y el",
+        "start": 841.3199999999999,
+        "end": 847.56
+    },
+    {
+        "text": " carácter a mayúscula son valores distintos, porque estos que están acá son valores de un tipo de",
+        "start": 847.56,
+        "end": 855.1999999999999
+    },
+    {
+        "text": " datos, o sea que si hay diferencia entre la mayúscula y la mayúscula si los tomamos como valores de",
+        "start": 855.1999999999999,
+        "end": 861.56
+    },
+    {
+        "text": " tipo Char, bien, bueno, también existen algunas funciones predefinidas que involucran el uso de",
+        "start": 861.56,
+        "end": 873.4399999999999
+    },
+    {
+        "text": " carácteres, concretamente las funciones or y char son predefinidas, es decir, al igual que las",
+        "start": 873.44,
+        "end": 880.4000000000001
+    },
+    {
+        "text": " otras cuatro que acabamos de ver, ya vienen con pascales, y yo las puedo utilizar en cualquier lugar,",
+        "start": 880.4000000000001,
+        "end": 887.9200000000001
+    },
+    {
+        "text": " en cualquier expresión que sea acorde al tipo de datos de lo que devuelve, la función or toma un",
+        "start": 887.9200000000001,
+        "end": 896.1600000000001
+    },
+    {
+        "text": " carácter y devuelve el entero que corresponde a la codificación numérica interna que se utilice para",
+        "start": 896.16,
+        "end": 903.88
+    },
+    {
+        "text": " los caracteres, por ejemplo, si yo estoy ejecutando en alguna versión de pascales que por detrás",
+        "start": 903.88,
+        "end": 910.0799999999999
+    },
+    {
+        "text": " codifica los caracteres en formato ASCII, lo que va a devolver va a ser el número ASCII correspondiente,",
+        "start": 910.0799999999999,
+        "end": 916.4
+    },
+    {
+        "text": " y la función char hace el proceso inverso, toma un valor numérico del código numérico que se",
+        "start": 919.1999999999999,
+        "end": 925.24
+    },
+    {
+        "text": " utilice para representar los caracteres y devuelve como resultado el carácter que corresponde a ese valor",
+        "start": 925.24,
+        "end": 932.08
+    },
+    {
+        "text": " numérico, por ejemplo, si yo le aplico la función or do, al carácter A eso me va a devolver un 65,",
+        "start": 932.08,
+        "end": 942.76
+    },
+    {
+        "text": " y viceversa, si yo le aplico la función char al 65 eso me va a devolver el carácter A,",
+        "start": 942.76,
+        "end": 949.24
+    },
+    {
+        "text": " está bien, y así tenemos más ejemplos, hasta acá, esto es en una máquina en la cual la codificación",
+        "start": 950.24,
+        "end": 964.72
+    },
+    {
+        "text": " que tenés por atrás te da 65, podría llegar a variar en alguna otra versión, en el fripascal si",
+        "start": 964.72,
+        "end": 972.08
+    },
+    {
+        "text": " no recuerdo mal da esto mismo, o sea que pueden tomar estos valores si no lo prueban y después me",
+        "start": 972.08,
+        "end": 976.64
+    },
+    {
+        "text": " cuentan cuanto a, exactamente porque la amasiuscula, la aminúscula son caracteres diferentes y ocupan",
+        "start": 976.64,
+        "end": 984.0
+    },
+    {
+        "text": " lugares diferentes en el código, vamos a ver más adelante que existe algo que son los tipos ordinales",
+        "start": 984.0,
+        "end": 993.08
+    },
+    {
+        "text": " que no es lo mismo que los tipos ordinarios, muy malo y eso que quedan cámaras, bueno, y la",
+        "start": 993.08,
+        "end": 1000.58
+    },
+    {
+        "text": " función or se puede aplicar a cualquier valor que pertenezca un tipo ordinal, no solamente a los",
+        "start": 1000.58,
+        "end": 1005.68
+    },
+    {
+        "text": " caracteres, pero por ahora a nosotros nos va a alcanzar con los caracteres, bueno y tenemos aquí",
+        "start": 1005.68,
+        "end": 1014.0
+    },
+    {
+        "text": " un fragmento de un programa que hace todo tipo de asignaciones y utiliza las diferentes funciones",
+        "start": 1014.0,
+        "end": 1024.08
+    },
+    {
+        "text": " predefinidas, primero que nada, tenemos una sección en la cual estamos declarando cuántas variables",
+        "start": 1024.08,
+        "end": 1030.84
+    },
+    {
+        "text": " 1, 2, 3, 4, 5, 6 variables, 2 de tipo entero, 2 de tipo real, 1 buleana y una de tipo char,",
+        "start": 1036.4,
+        "end": 1043.6000000000001
+    },
+    {
+        "text": " o sea que tenemos un muestrario de los cuatro tipos básicos que hemos visto hasta el momento,",
+        "start": 1043.6000000000001,
+        "end": 1048.0800000000002
+    },
+    {
+        "text": " y lo que tenemos dentro del cuerpo del programa, estos puntitos suspensivos indican que el programa luego",
+        "start": 1049.8400000000001,
+        "end": 1055.52
+    },
+    {
+        "text": " sigue, son diferentes asignaciones, por ejemplo, aquí estamos asignando directamente valores a las",
+        "start": 1055.52,
+        "end": 1064.5600000000002
+    },
+    {
+        "text": " variables i, x y y y el valor que estamos asignando es del mismo tipo que la variable donde está haciendo",
+        "start": 1064.56,
+        "end": 1072.3999999999999
+    },
+    {
+        "text": " asignado, o bien se aplica el mecanismo de coarción, en este caso la y es de tipo intesher y se",
+        "start": 1072.3999999999999,
+        "end": 1083.26
+    },
+    {
+        "text": " le asignó valor de tipo int, en este caso la y es de tipo real y se le asignó valor de tipo real y",
+        "start": 1083.26,
+        "end": 1089.28
+    },
+    {
+        "text": " acá se está haciendo conversión antes de asignar al resultado, porque esta variable es de tipo real,",
+        "start": 1089.28,
+        "end": 1094.96
+    },
+    {
+        "text": " el valor que estoy queriendo poner es de tipo entero, lo que hace pascales lo confie, lo transforma real y",
+        "start": 1094.96,
+        "end": 1101.32
+    },
+    {
+        "text": " después lo asignamos, acá tenemos un ejemplo donde estamos llamando a la función trunc y le estamos",
+        "start": 1101.32,
+        "end": 1109.68
+    },
+    {
+        "text": " pasando x, que va a devolver como resultado esto, 2, o sea el punto 3 lo va a desechar y ese 2",
+        "start": 1109.68,
+        "end": 1118.68
+    },
+    {
+        "text": " lo va a guardar en la variable k, bien, trunc recibe un real y devuelo un entero, queda claro por eso",
+        "start": 1118.68,
+        "end": 1128.64
+    },
+    {
+        "text": " decimos que es conversión explícita y arriba era la conversión implícita por la corrupción,",
+        "start": 1128.64,
+        "end": 1132.44
+    },
+    {
+        "text": " bueno después tenemos más ejemplos de expresiones, por ejemplo acá tenemos una que hace uso de operadores,",
+        "start": 1134.44,
+        "end": 1139.76
+    },
+    {
+        "text": " esta es una expresión de que tipo, las arineticas pueden ser enteras o pueden ser reales,",
+        "start": 1139.76,
+        "end": 1148.2
+    },
+    {
+        "text": " es una expresión aritmética de tipo real, ¿donde? ¿cómo funciona la evaluación? la que se",
+        "start": 1148.2,
+        "end": 1155.28
+    },
+    {
+        "text": " pasaba estuvió hablando de presidencias, primero lo que está entreparentesis, se hace más,",
+        "start": 1155.28,
+        "end": 1161.2
+    },
+    {
+        "text": " esto devuelve el cuadrado de x que es de tipo real que lo sumamos con y que me da algo de tipo,",
+        "start": 1161.2,
+        "end": 1169.24
+    },
+    {
+        "text": " real y esta que división es, la división real, como se llamaba la división entera,",
+        "start": 1170.2,
+        "end": 1176.76
+    },
+    {
+        "text": " div, dividido 2, esto me devuelve algo de tipo que es almacenado en la variable k que también",
+        "start": 1176.76,
+        "end": 1185.16
+    },
+    {
+        "text": " es de tipo real, se van entendiendo más o menos, bueno luego tenemos varias expresiones más,",
+        "start": 1185.16,
+        "end": 1192.24
+    },
+    {
+        "text": " voy a ir hasta esta de acá, aquí tenemos un ejemplo de una expresión de tipo bulian,",
+        "start": 1192.24,
+        "end": 1199.2
+    },
+    {
+        "text": " una expresión lógica, entonces fíjense que estamos usando el operador or, el operador or se",
+        "start": 1199.2,
+        "end": 1209.64
+    },
+    {
+        "text": " aplica a dos subexpressiones que a su beso de tipo buliano también, bien, del lado izquierdo que",
+        "start": 1209.64,
+        "end": 1222.16
+    },
+    {
+        "text": " dice acá y menor que x, esto vamos a ver más en detalle la semana que viene que es un ejemplo",
+        "start": 1222.16,
+        "end": 1227.72
+    },
+    {
+        "text": " de condición, lo que hace aquí es se fija ver si el valor almacenado en y es efectivamente menor al",
+        "start": 1227.72,
+        "end": 1236.44
+    },
+    {
+        "text": " valor almacenado en x, en caso de hacerlo el resultado de esta subexpressión va a ser como true verdadero,",
+        "start": 1236.44,
+        "end": 1245.2
+    },
+    {
+        "text": " en caso de no hacerlo el resultado va a ser false, false, o sea que esto es una subexpressión de",
+        "start": 1245.2,
+        "end": 1254.68
+    },
+    {
+        "text": " tipo bulian que devuelve true false, luego se va a utilizar el or que la semana que viene,",
+        "start": 1254.68,
+        "end": 1260.6000000000001
+    },
+    {
+        "text": " vamos a ver bien en detalle el tema del or y acá tenemos la subexpressión derecha que si",
+        "start": 1260.6,
+        "end": 1267.1999999999998
+    },
+    {
+        "text": " la miramos también devuelve un bulian, está preguntando si 3 es mayor o igual que el resultado de esta",
+        "start": 1267.1999999999998,
+        "end": 1277.3999999999999
+    },
+    {
+        "text": " suma, o sea esta subexpressión es una subexpressión aritmética mientras que toda esta subexpressión es",
+        "start": 1277.3999999999999,
+        "end": 1286.3999999999999
+    },
+    {
+        "text": " una subexpressión lógica, también todo esto también va a dar como resultado true false, luego se va a",
+        "start": 1286.4,
+        "end": 1294.76
+    },
+    {
+        "text": " combinar con el or y bueno quedará el resultado guardado en la variable bebé y las últimas dos muestran",
+        "start": 1294.76,
+        "end": 1303.2
+    },
+    {
+        "text": " ejemplos de uso de or y char, que son las funciones préstables cidas que manipulan carácteles, sí,",
+        "start": 1303.2,
+        "end": 1309.4
+    },
+    {
+        "text": " no, el valor final que va a quedar guardado acá como en toda variable va a ser uno solo,",
+        "start": 1309.4,
+        "end": 1320.3200000000002
+    },
+    {
+        "text": " podrá ser true o podrá ser false, eso va a depender de si la subexpressión izquierda y la",
+        "start": 1320.3200000000002,
+        "end": 1327.52
+    },
+    {
+        "text": " subexpressión derecha dan true o dan false y luego de acuerdo al funcionamiento del operador or",
+        "start": 1327.52,
+        "end": 1333.72
+    },
+    {
+        "text": " que vamos a ver que es una tablita, te va a decir cuál es el resultado final pero siempre el resultado final es",
+        "start": 1334.28,
+        "end": 1339.88
+    },
+    {
+        "text": " uno solo, nunca una variable por lo menos como las conocemos hasta ahora puede tener más de un valor, sí",
+        "start": 1339.88,
+        "end": 1345.2
+    },
+    {
+        "text": " que es lo que sucede cuando una variable ya tenía un valor y más abajo en el programa hago otra",
+        "start": 1351.2,
+        "end": 1357.5
+    },
+    {
+        "text": " asignación en la misma variable le pasa por arriba o sea este valor true va a ser pasado por arriba",
+        "start": 1357.5,
+        "end": 1364.3
+    },
+    {
+        "text": " capaz que va a ser pasado por arriba nuevamente control o con false, más preguntas tenían",
+        "start": 1364.3,
+        "end": 1371.62
+    },
+    {
+        "text": " bueno con esto entonces damos por liquidado el teórico de componentes básicos y bueno vamos a",
+        "start": 1375.98,
+        "end": 1385.34
+    },
+    {
+        "text": " mirar un poquito el ejercicio 13 pregunta cuál es la salida estándar en pascal del siguiente",
+        "start": 1385.34,
+        "end": 1396.06
+    },
+    {
+        "text": " programa y antes de eso vamos a mirarlo y quiero que me digan si esto tiene errores de combinación",
+        "start": 1396.06,
+        "end": 1405.26
+    },
+    {
+        "text": " compila esto sí o no la pregunta si hay error de sintaxis",
+        "start": 1406.26,
+        "end": 1416.78
+    },
+    {
+        "text": " escuchen la pregunta que hice tiene errores de sintaxis esto",
+        "start": 1424.78,
+        "end": 1428.3799999999999
+    },
+    {
+        "text": " qué quiere decir error de sintaxis algo mal escrito en el programa",
+        "start": 1428.38,
+        "end": 1436.38
+    },
+    {
+        "text": " no acá sí allá atrás",
+        "start": 1441.38,
+        "end": 1445.8200000000002
+    },
+    {
+        "text": " bueno perdón que no aclaré esto entre paréntesis se puede poner nada la palabra input la palabra output",
+        "start": 1451.38,
+        "end": 1458.14
+    },
+    {
+        "text": " o input coma output que eso está dicho está explicado en el libro eso es para indicar que este es un",
+        "start": 1458.14,
+        "end": 1464.22
+    },
+    {
+        "text": " programa que solamente emite salida que no no está leyendo datos de entrada igual aunque tú le pusieras",
+        "start": 1464.22,
+        "end": 1470.9
+    },
+    {
+        "text": " input coma output esto compilaría igual y no es un detalle que nos vaya a quitar el sueño así que",
+        "start": 1470.9,
+        "end": 1477.26
+    },
+    {
+        "text": " esto no es problema en cuanto a las sintaxis sí hay problema en que no haya espacio entre la n y",
+        "start": 1477.26,
+        "end": 1488.1000000000001
+    },
+    {
+        "text": " el paréntesis el rite line no es problema se puede poner o no pascarlo toma igual mi pregunta es",
+        "start": 1488.1,
+        "end": 1498.06
+    },
+    {
+        "text": " compila eso viene luego compila de sintaxis no hay ninguna error por lo tanto esto supera la etapa de",
+        "start": 1498.06,
+        "end": 1510.1
+    },
+    {
+        "text": " la combinación ahora a varios de ustedes ya les hizo ruido algo que fue",
+        "start": 1510.1,
+        "end": 1516.5
+    },
+    {
+        "text": " esto es el cuerpo del programa cuando se va a ejecutar la primera instrucción esta instrucción es",
+        "start": 1520.1,
+        "end": 1526.06
+    },
+    {
+        "text": " una asignación como toda asignación se lee como de derecha izquierda bueno vamos a la parte derecha",
+        "start": 1526.06,
+        "end": 1532.78
+    },
+    {
+        "text": " quiero calcular el resultado de la expresión y más uno tomo el valor de i y les sumo uno pero",
+        "start": 1532.78,
+        "end": 1540.06
+    },
+    {
+        "text": " qué pasa con el valor de i no se sabe que es no es indefinido si yo creo que la clase pasada hablamos",
+        "start": 1540.06,
+        "end": 1559.54
+    },
+    {
+        "text": " de la importancia de inicializar las variables con un valor válido antes de empezar a trabajar por",
+        "start": 1559.54,
+        "end": 1567.62
+    },
+    {
+        "text": " ejemplo inicializar una variable significa o bien le doy yo a prepo mediante una asignación un",
+        "start": 1567.62,
+        "end": 1574.8999999999999
+    },
+    {
+        "text": " valor inicial o bien lo obtengo de la entrada estándar acá no está pasando en ninguna de las dos",
+        "start": 1574.8999999999999,
+        "end": 1581.98
+    },
+    {
+        "text": " cosas cuando se llega a ejecutar esta línea no se sabe que tiene la variable y decimos que su",
+        "start": 1581.98,
+        "end": 1590.42
+    },
+    {
+        "text": " valor está indefinido entonces pueden pasar muchas cosas por ejemplo que la máquina concreta",
+        "start": 1590.42,
+        "end": 1600.22
+    },
+    {
+        "text": " donde yo lo estoy corriendo le asigné un valor cualquiera que justo era lo que estaba en esa",
+        "start": 1600.22,
+        "end": 1606.82
+    },
+    {
+        "text": " porción de memoria que es lo que popularmente se llama basura y a esa basura que le está haciendo",
+        "start": 1606.82,
+        "end": 1613.78
+    },
+    {
+        "text": " le está sumando uno sí hay otros lenguajes de programación que lo que hacen es en vez de tomar",
+        "start": 1614.4199999999998,
+        "end": 1622.22
+    },
+    {
+        "text": " basura le dan por defecto lo que sería el valor nulo correspondiente ese tipo de datos",
+        "start": 1622.22,
+        "end": 1627.3
+    },
+    {
+        "text": " va a quedar basura mas uno que basura mas uno es una nueva basura",
+        "start": 1627.3,
+        "end": 1635.22
+    },
+    {
+        "text": " verdad entonces esto es un ejemplo de algo que no debemos hacer nunca que es trabajar con una",
+        "start": 1636.74,
+        "end": 1645.74
+    },
+    {
+        "text": " variable que tiene un valor indefinido siempre toda variable debe estar debidamente inicializada",
+        "start": 1645.74,
+        "end": 1654.1399999999999
+    },
+    {
+        "text": " antes de ser utilizada por primera vez ya sea porque se le hace un valor expresamente o porque",
+        "start": 1654.46,
+        "end": 1661.98
+    },
+    {
+        "text": " se tomó un valor de la entrada estándar para dicha variable sí eso dentro del bien y yo entre",
+        "start": 1661.98,
+        "end": 1670.74
+    },
+    {
+        "text": " el bien y esta instrucción acá donde está mi video debería dar un valor inicial ahí",
+        "start": 1670.74,
+        "end": 1676.0600000000002
+    },
+    {
+        "text": " queda claro ojo con esto porque les va a dar muchos dolores de cabeza en los laboratorios porque",
+        "start": 1676.06,
+        "end": 1686.74
+    },
+    {
+        "text": " vos te das cuenta que algo no está andando bien cuando en la ejecución porque esto pasa la",
+        "start": 1686.74,
+        "end": 1694.86
+    },
+    {
+        "text": " compilación entonces los errores de ese tipo saltan en tiempo de ejecución o bien cuando se",
+        "start": 1694.86,
+        "end": 1702.28
+    },
+    {
+        "text": " te rompió durante la ejecución o bien cuando te dio cualquier disparate como resultado ahí te",
+        "start": 1702.28,
+        "end": 1708.1
+    },
+    {
+        "text": " das cuenta que algo no quedó bien tenia una pregunta acá y otra ya acá no ya te voy a",
+        "start": 1708.1,
+        "end": 1712.06
+    },
+    {
+        "text": " romper si yo por lo que uno masaba el ejemplo de compilas uno mas que perdón",
+        "start": 1712.06,
+        "end": 1718.12
+    },
+    {
+        "text": " que pasa cuando pongo un entero y un carácter con el mas que pasa con esa expresión no compila",
+        "start": 1720.6,
+        "end": 1727.6
+    },
+    {
+        "text": " tiene problema de tipo exactamente no son tipos compatibles para el operador más",
+        "start": 1727.7199999999998,
+        "end": 1734.36
+    },
+    {
+        "text": " si pero eso lo detecta la compilación los problemas de tipos son chequeados en tiempo del",
+        "start": 1735.56,
+        "end": 1740.8799999999999
+    },
+    {
+        "text": " compilación queda claro había otra pregunta por allá",
+        "start": 1740.8799999999999,
+        "end": 1745.3999999999999
+    },
+    {
+        "text": " si yo provee hacer algunas cosas que ya hay en realidad el compilador avisa está de una variable",
+        "start": 1745.4,
+        "end": 1750.64
+    },
+    {
+        "text": " no iniciada y te dice algo bien eso si justo está usando un compilador que es lo bastante amable para",
+        "start": 1750.64,
+        "end": 1760.0400000000002
+    },
+    {
+        "text": " avisártelo como advertencia que bueno que alegría existe en otros compiladores que no son tan",
+        "start": 1760.0400000000002,
+        "end": 1770.48
+    },
+    {
+        "text": " amables que ni siquiera te lo avisa también eso igual me sirve para lo siguiente a veces el",
+        "start": 1770.48,
+        "end": 1777.4
+    },
+    {
+        "text": " compilador te puede tirar una warning una advertencia eso significa mira que acá puede estar pasando",
+        "start": 1777.4,
+        "end": 1785.4
+    },
+    {
+        "text": " algo raro o sea compilador te dice técnicamente no es un error pero prestále atención por las dudas",
+        "start": 1785.4,
+        "end": 1791.1200000000001
+    },
+    {
+        "text": " está bien buenísimo que entonces el fripascal te tira como warno bueno quedó claro esto más allá",
+        "start": 1792.08,
+        "end": 1801.7199999999998
+    },
+    {
+        "text": " de que el compilador de turno te lo tire o no como advertencia esto es algo que nunca debemos hacer",
+        "start": 1801.7199999999998,
+        "end": 1806.9199999999998
+    },
+    {
+        "text": " quedó claro bien vamos a ir entonces con las operaciones de entrada y salida y vamos a hacer",
+        "start": 1810.12,
+        "end": 1820.04
+    },
+    {
+        "text": " algo del práctico dos no pero antes perdón vamos a hacer un ejercicio más",
+        "start": 1820.04,
+        "end": 1824.24
+    },
+    {
+        "text": " acá ejercicio 16 la primera parte van a implementar un programita en pascal que calcule el",
+        "start": 1830.3999999999999,
+        "end": 1843.96
+    },
+    {
+        "text": " periódoh de un pétulo de longitud el nosotros vamos a hacer un programa y se lo vamos a dar a",
+        "start": 1843.96,
+        "end": 1852.1200000000001
+    },
+    {
+        "text": " la gente de física para que pueda resolver cálculos de física vamos a suponer que los datos",
+        "start": 1852.1200000000001,
+        "end": 1860.2
+    },
+    {
+        "text": " de entrada serán siempre válidos el programa no necesita controlar los tochos se los había",
+        "start": 1860.2,
+        "end": 1865.92
+    },
+    {
+        "text": " comentado la despasada para este curso vamos a suponer que lo que yo le pido al usuario que ingrese",
+        "start": 1865.92,
+        "end": 1871.24
+    },
+    {
+        "text": " está bien es del tipo correcto por lo menos capaz que tengo que checar a ver si el valor está",
+        "start": 1871.24,
+        "end": 1876.88
+    },
+    {
+        "text": " bien pero que es del tipo esperado bien hay que escribirlo y después escribirlo hay que verificar",
+        "start": 1876.88,
+        "end": 1886.8
+    },
+    {
+        "text": " qué funcione correctamente para varios datos de entrada aplicando todo lo que acabamos de ver",
+        "start": 1886.8,
+        "end": 1895.0
+    },
+    {
+        "text": " hasta recién entonces calcular el periódoh de un pétulo de longitud l el periódoh de un pétulo",
+        "start": 1895.0,
+        "end": 1906.76
+    },
+    {
+        "text": " estadado por la siguiente ecuación se le llamate al resultado y es 2 por el número p por la",
+        "start": 1906.76,
+        "end": 1917.68
+    },
+    {
+        "text": " raíz cuadrada de l dividido g donde p va a ser una constante con este valor que va a ser",
+        "start": 1917.68,
+        "end": 1925.48
+    },
+    {
+        "text": " otra constante con este valor y él va a ser leído de la entrada estándar ¿no es verdad?",
+        "start": 1925.48,
+        "end": 1931.8400000000001
+    },
+    {
+        "text": " hay que calcular eso y emitir el resultado se entendió la consigna",
+        "start": 1933.64,
+        "end": 1938.44
+    },
+    {
+        "text": " tomé de 10 minutitos lo hacen y lo discutimos",
+        "start": 1939.3200000000002,
+        "end": 1942.52
+    },
+    {
+        "text": " bueno",
+        "start": 1942.52,
+        "end": 1967.84
+    },
+    {
+        "text": " una de las cosas que me estuvieron consultando es qué pasaba con el input qué pasaba con el output",
+        "start": 1968.8,
+        "end": 1973.9599999999998
+    },
+    {
+        "text": " qué pasaba con no poner nada yo lo que les digo es duerman tranquilos no sé es trece por eso",
+        "start": 1973.9599999999998,
+        "end": 1979.84
+    },
+    {
+        "text": " le ponen siempre input output y con eso funcionan todos los casos igual va a funcionar en todos los",
+        "start": 1979.84,
+        "end": 1985.1999999999998
+    },
+    {
+        "text": " casos y es entrar en una discusión filosófica y si le indico que tiene entrada que tiene",
+        "start": 1985.1999999999998,
+        "end": 1989.9599999999998
+    },
+    {
+        "text": " salida de poner input output siempre y no hay problema",
+        "start": 1989.96,
+        "end": 1992.8
+    },
+    {
+        "text": " le podés no poner también exactamente bueno",
+        "start": 1996.2,
+        "end": 2000.72
+    },
+    {
+        "text": " medita programos",
+        "start": 2002.96,
+        "end": 2006.04
+    },
+    {
+        "text": " nombre pétulo muy bien un nombre nemo técnico que quiere decir nemo técnico",
+        "start": 2011.04,
+        "end": 2019.8400000000001
+    },
+    {
+        "text": " que refiere al propósito filosófico del programa muy bien dijimos que le vamos a poner",
+        "start": 2019.84,
+        "end": 2028.32
+    },
+    {
+        "text": " input output ahí está y acá punto y con barbarón ya está la línea de finitoria del programa que",
+        "start": 2028.32,
+        "end": 2039.6799999999998
+    },
+    {
+        "text": " viene ahora constante que escribo const palabra reservada como defino las dos constantes",
+        "start": 2039.68,
+        "end": 2049.2000000000003
+    },
+    {
+        "text": " p usarven que el operador que se utiliza para la definición de una constante es el igual no es el",
+        "start": 2051.52,
+        "end": 2058.52
+    },
+    {
+        "text": " operador de asignación el operador de asignación es solamente para variables p igual",
+        "start": 2058.52,
+        "end": 2066.08
+    },
+    {
+        "text": " tres en realidad ponemos un puntito y la otra",
+        "start": 2067.08,
+        "end": 2073.08
+    },
+    {
+        "text": " si le pones dos puntos acá no no exactamente porque es un operador definido expresamente para",
+        "start": 2076.08,
+        "end": 2084.48
+    },
+    {
+        "text": " variables y esto esto no es una variable esto es un nombre asociado un valor",
+        "start": 2084.48,
+        "end": 2088.84
+    },
+    {
+        "text": " 9.8 ahí está hay más constantes no cerramos la sección de constantes y inauguramos la sección",
+        "start": 2096.08,
+        "end": 2106.2799999999997
+    },
+    {
+        "text": " de variables t como l ambas variables de tipo real sí puedes definirlas por separado no hay",
+        "start": 2106.2799999999997,
+        "end": 2123.64
+    },
+    {
+        "text": " ningún problema generalmente la costumbre es que si son del mismo tipo las vas agrupando por",
+        "start": 2123.64,
+        "end": 2129.8399999999997
+    },
+    {
+        "text": " tipo de datos más variables cuerpo del programa big in y aquí empiezan las instrucciones del programa",
+        "start": 2129.8399999999997,
+        "end": 2143.92
+    },
+    {
+        "text": " primera instrucción rith rith line rite bueno aquí nos enfrentamos a un debate filosófico le",
+        "start": 2144.7200000000003,
+        "end": 2157.28
+    },
+    {
+        "text": " pongo un cartelito el usuario pidiendo que ingrese datos o no le pongo un cartelito el usuario",
+        "start": 2157.28,
+        "end": 2163.4
+    },
+    {
+        "text": " pidiendo que ingrese datos es un debate filosófico que es importante sí pero que tampoco tenemos que",
+        "start": 2163.4,
+        "end": 2173.6
+    },
+    {
+        "text": " sobrevalorarlo. La idea es si esto fuera un programa de verdad que nosotros le vamos a dar",
+        "start": 2173.6,
+        "end": 2179.4
+    },
+    {
+        "text": " a los compañeros del Instituto de Física, bueno está bueno ponerles un cartelito que indique",
+        "start": 2179.4,
+        "end": 2184.48
+    },
+    {
+        "text": " lo que tienen que hacer por causa de razón. Porque si no cuando le ejecuten que es lo que",
+        "start": 2184.48,
+        "end": 2189.4
+    },
+    {
+        "text": " van a ver, la pantalla negra y el cursor titilando y entonces yo siempre digo si yo pongo a mi madre,",
+        "start": 2189.4,
+        "end": 2197.36
+    },
+    {
+        "text": " frente a un programa y no le pido que haga y ver la pantalla negra titilando donde",
+        "start": 2197.36,
+        "end": 2201.2799999999997
+    },
+    {
+        "text": " es saber lo que puedes escribir. Bueno, entonces todo depende del contexto. Si ya sabemos que",
+        "start": 2201.28,
+        "end": 2209.0800000000004
+    },
+    {
+        "text": " quien lo va a ejecutar tiene claro lo que debe ingresar no le ponemos cartelito para pedir",
+        "start": 2209.0800000000004,
+        "end": 2214.88
+    },
+    {
+        "text": " datos entradas. Si no estamos seguros de que del otro lado haya una persona con la",
+        "start": 2214.88,
+        "end": 2218.84
+    },
+    {
+        "text": " habilidad de suficientes para ingresar datos entradas correctos le ponemos un cartelito y por",
+        "start": 2218.84,
+        "end": 2223.96
+    },
+    {
+        "text": " lo menos nuestra conciencia quedó tranquila de que le pedimos que ingresar un valor.",
+        "start": 2223.96,
+        "end": 2227.0400000000004
+    },
+    {
+        "text": " Quiero claro, por supuesto es que si fueron bromas de verdad debe hacerse. En el caso del",
+        "start": 2227.04,
+        "end": 2235.48
+    },
+    {
+        "text": " laboratorio es altamente probable que nosotros no les pedamos que pongan cartelito de entrada,",
+        "start": 2235.48,
+        "end": 2240.4
+    },
+    {
+        "text": " sino que ya les decimos, quédense tranquilos que cuando lo corramos lo primero que vamos a leer",
+        "start": 2240.4,
+        "end": 2245.0
+    },
+    {
+        "text": " va a ser tal y tal lado. ¿Se entendió? Bueno espero que esto no genere más debates filosóficos",
+        "start": 2245.0,
+        "end": 2251.04
+    },
+    {
+        "text": " de aquí al fin del curso porque todos los años pasa que se preocupan mucho por esto todo el",
+        "start": 2251.04,
+        "end": 2255.92
+    },
+    {
+        "text": " tiempo. ¿Ah? ¿Acas dejo que ustedes me dian? ¿Quieren ponerle cartelito o no? Sí o no.",
+        "start": 2255.92,
+        "end": 2263.84
+    },
+    {
+        "text": " Botamos partidarios del sí. Partidarios del no. Hay menos del no que del sí, así que vamos a",
+        "start": 2263.84,
+        "end": 2274.28
+    },
+    {
+        "text": " ponerme. Bueno entonces diganme que escribo. Right. Y entre comillas no vamos a poner un",
+        "start": 2274.28,
+        "end": 2283.28
+    },
+    {
+        "text": " sí, solo correcto, vamos a poner una cadena de texto. Ingresé la letra llamada longitud,",
+        "start": 2283.28,
+        "end": 2291.84
+    },
+    {
+        "text": " ¿no? Tá. Ingresé longitud del péndulo. Sí. Sí, sí, sí, sí, sí. Hay otros lenguajes que es",
+        "start": 2291.84,
+        "end": 2306.1200000000003
+    },
+    {
+        "text": " comillas doble, pero para cada comilla simple este lo toma como una cadena. Sí.",
+        "start": 2306.1200000000003,
+        "end": 2310.1600000000003
+    },
+    {
+        "text": " Después entre un ratito vamos a hablar de la diferencia entre Rhyte Rhytla, ni es una diferencia",
+        "start": 2313.28,
+        "end": 2319.5600000000004
+    },
+    {
+        "text": " mínima y que tampoco nos va a quitar el sueño. Creo que le tenés que poner comilla con",
+        "start": 2319.5600000000004,
+        "end": 2329.52
+    },
+    {
+        "text": " milla pegadito. Lo probás y después me contás. ¿Cantaba si lo ponéis con milla con milla",
+        "start": 2329.52,
+        "end": 2333.76
+    },
+    {
+        "text": " pegadito? Ah. Contrabarra comilla. Lo prueban y después me cuentan a ver como lo",
+        "start": 2333.76,
+        "end": 2340.96
+    },
+    {
+        "text": " pasó. Sí. Y porque yo como usuario cuando veo el cartelito está bueno que los dos puntos me",
+        "start": 2340.96,
+        "end": 2348.92
+    },
+    {
+        "text": " indiquen que a continuación. Claro, no, no, los puntos son parte del texto. ¿A bien?",
+        "start": 2348.92,
+        "end": 2354.48
+    },
+    {
+        "text": " O a continuación, en vez de los dos puntos exactamente, sí. Le puedo decir por favor señor",
+        "start": 2356.96,
+        "end": 2363.0
+    },
+    {
+        "text": " usuario, tenga bien usted ingresar milla de longitud del péndulo. Se lo puedo hacer en",
+        "start": 2363.0,
+        "end": 2367.4
+    },
+    {
+        "text": " el ríblas. Bueno, cartelito que pide datos en trada en el idioma y con el grado de",
+        "start": 2367.4,
+        "end": 2374.7200000000003
+    },
+    {
+        "text": " movilidad que ustedes quieran. Bien, listo, ya está, seguimos. Lectura. Bien. Rhytla. Si",
+        "start": 2374.7200000000003,
+        "end": 2387.12
+    },
+    {
+        "text": " es Rhytla, no es Rhytla, no nos estresa. Está bien, dentro de un ratito, echarlamos en la diferencia",
+        "start": 2387.12,
+        "end": 2391.88
+    },
+    {
+        "text": " de un gran truco. Entreparentes, sí que le pongo. El. ¿Qué genera esta instrucción? Que lo que el",
+        "start": 2391.88,
+        "end": 2403.6400000000003
+    },
+    {
+        "text": " usuario TPO que estamos asumiendo que va a ser un número real valio va a quedar almacenado",
+        "start": 2403.6400000000003,
+        "end": 2409.56
+    },
+    {
+        "text": " en la variable L. ¿A bien? Hasta acá. Buenísimo, ya tenemos el valor del. Ahora que hacemos.",
+        "start": 2409.56,
+        "end": 2417.6400000000003
+    },
+    {
+        "text": " La asignación. Yo estoy omitiendo poner comentarios. ¿A cuáles se le dé los comentarios?",
+        "start": 2417.64,
+        "end": 2427.7999999999997
+    },
+    {
+        "text": " Usarlos, pero no abusar de ellos. Como este es un programa tan sencillito, sí, es bastante",
+        "start": 2427.7999999999997,
+        "end": 2434.4
+    },
+    {
+        "text": " entendible si yo lo leo y no tiene comentarios. Conforme el programa se hace más grandes,",
+        "start": 2434.4,
+        "end": 2439.12
+    },
+    {
+        "text": " está bueno poner comentarios de repente en determinadas secciones o cuando me interesa",
+        "start": 2439.12,
+        "end": 2443.44
+    },
+    {
+        "text": " aclarar algo en particular, porque el comentario no está dirigido al usuario, está dirigido",
+        "start": 2443.44,
+        "end": 2447.52
+    },
+    {
+        "text": " aquí en el propio programador. Así que yo acá me voy a obstinar de poner comentarios. Es",
+        "start": 2447.52,
+        "end": 2453.32
+    },
+    {
+        "text": " más, en los parciales, concretamente en el segundo parcial no les pedimos que pongan",
+        "start": 2453.32,
+        "end": 2457.64
+    },
+    {
+        "text": " comentarios. No se exige. Ahora sí, operador de asignación, porque le vamos a colocar un valor",
+        "start": 2457.64,
+        "end": 2466.36
+    },
+    {
+        "text": " a la variable T. Y bueno, la expresión que gracias a los compañeros de física que saben",
+        "start": 2466.36,
+        "end": 2471.32
+    },
+    {
+        "text": " mucho eso nos dijeron cuales. ¿Qué pongo acá? 2 por la constante P y acá llamamos",
+        "start": 2471.32,
+        "end": 2483.92
+    },
+    {
+        "text": " a la función predefinida, Square o Square root era. Ray cuadrada? A mira que interés",
+        "start": 2483.92,
+        "end": 2490.0800000000004
+    },
+    {
+        "text": " alme. Square root de quien? De L sobre 2. Ah bueno, sobre, debiéndose no, gente.",
+        "start": 2490.08,
+        "end": 2500.96
+    },
+    {
+        "text": " Sobre, tengo algo más. Sobre G, bueno, G que, ah, ah, ah, así voy a apuesto 2, G o T,",
+        "start": 2500.96,
+        "end": 2510.84
+    },
+    {
+        "text": " compila. Sí, sí, sí. Pero solo es correcto con que? Con G. Ahí habría pasado que supera",
+        "start": 2510.84,
+        "end": 2519.2799999999997
+    },
+    {
+        "text": " la etapa de compilación, pero la ejecución no es la esperada. Además, y lo que acabaste",
+        "start": 2519.28,
+        "end": 2528.6000000000004
+    },
+    {
+        "text": " de decir que he grabado para la posteridad. Bien, acá tendríamos un ejemplo de una situación",
+        "start": 2528.6000000000004,
+        "end": 2536.44
+    },
+    {
+        "text": " en la cual el programa compila se ejecuta sin romperse, pero que pasa. Tira cualquier fruta,",
+        "start": 2536.44,
+        "end": 2544.32
+    },
+    {
+        "text": " el resultado es invalio. Cualquiera de esas situaciones para nosotros es igualmente mala.",
+        "start": 2544.32,
+        "end": 2552.36
+    },
+    {
+        "text": " Si el programa se rompe en tiempo de ejecución, es malo. Y si el programa no se rompe, pero",
+        "start": 2552.36,
+        "end": 2558.2400000000002
+    },
+    {
+        "text": " el resultado es incorrecto, nosotros lo consideramos igual de malo que si se rompe, es, el programa",
+        "start": 2558.2400000000002,
+        "end": 2563.6000000000004
+    },
+    {
+        "text": " funciona mal. Tiene que quedar claro eso. ¿Avíen? Pero bueno, como le hicimos caso a",
+        "start": 2563.6000000000004,
+        "end": 2572.28
+    },
+    {
+        "text": " la gente de física y pusimos G, a pesar de que yo me empeciné en querer poner otra cosa,",
+        "start": 2572.28,
+        "end": 2576.5600000000004
+    },
+    {
+        "text": " ahora esto va a producir el resultado esperado. Buenísimo, entonces ya tenemos guardado",
+        "start": 2576.5600000000004,
+        "end": 2582.36
+    },
+    {
+        "text": " entre el resultado. Se lo emitimos al usuario. De nuevo, le podemos poner cartelito o no",
+        "start": 2582.36,
+        "end": 2588.6000000000004
+    },
+    {
+        "text": " que quieren hacer. Vamos a ir con cartel, ya pusimos cartel, vamos a ir coherentes con nosotros",
+        "start": 2588.6000000000004,
+        "end": 2594.4
+    },
+    {
+        "text": " mismo. Bien, y ahora que pongo.",
+        "start": 2594.4,
+        "end": 2597.4
+    },
+    {
+        "text": " ¿Ride?",
+        "start": 2597.4,
+        "end": 2600.4
+    },
+    {
+        "text": " ¿Ride?",
+        "start": 2600.4,
+        "end": 2603.4
+    },
+    {
+        "text": " No, el periódolo. El periódolo, el péndulo ahí está.",
+        "start": 2603.4,
+        "end": 2608.4
+    },
+    {
+        "text": " Exactamente, el periódolo del péndulo es dos puntos cierro con ellas, como T.",
+        "start": 2608.4,
+        "end": 2621.4
+    },
+    {
+        "text": " Y como estas la última instrucción del programa directamente que pongo.",
+        "start": 2622.4,
+        "end": 2626.4
+    },
+    {
+        "text": " Ent.",
+        "start": 2626.4,
+        "end": 2628.4
+    },
+    {
+        "text": " ¿Alú?",
+        "start": 2632.4,
+        "end": 2634.4
+    },
+    {
+        "text": " Yo vieron un café, pero...",
+        "start": 2634.4,
+        "end": 2636.4
+    },
+    {
+        "text": " ...porque todo en el medio de la máquina que se le pones.",
+        "start": 2636.4,
+        "end": 2638.4
+    },
+    {
+        "text": " Pones.",
+        "start": 2638.4,
+        "end": 2639.4
+    },
+    {
+        "text": " Texto entre comillas, coma, el resultado, coma y otro texto después.",
+        "start": 2639.4,
+        "end": 2645.4
+    },
+    {
+        "text": " ¿Vos a Ride le puedes pasar varias expresiones separadas con coma?",
+        "start": 2645.4,
+        "end": 2649.4
+    },
+    {
+        "text": " Lo mismo que en Ride, vos podés leer varias variables también separadas con coma.",
+        "start": 2649.4,
+        "end": 2654.4
+    },
+    {
+        "text": " Siempre con coma.",
+        "start": 2654.4,
+        "end": 2655.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2655.4,
+        "end": 2656.4
+    },
+    {
+        "text": " ¿Pues ya se ha hecho de comeras menos de él?",
+        "start": 2656.4,
+        "end": 2658.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2658.4,
+        "end": 2659.4
+    },
+    {
+        "text": " ¿Por qué no?",
+        "start": 2659.4,
+        "end": 2660.4
+    },
+    {
+        "text": " ¿Por qué no?",
+        "start": 2660.4,
+        "end": 2661.4
+    },
+    {
+        "text": " ¿Por qué no?",
+        "start": 2661.4,
+        "end": 2662.4
+    },
+    {
+        "text": " Ah, bueno, porque así como está, te lo voy a mostrar con todas las cifras de precisión que el compilador requiera.",
+        "start": 2662.4,
+        "end": 2668.4
+    },
+    {
+        "text": " Vuelve a poner dos puntitos.",
+        "start": 2668.4,
+        "end": 2671.4
+    },
+    {
+        "text": " ¿Cuántas cifras en total?",
+        "start": 2671.4,
+        "end": 2672.4
+    },
+    {
+        "text": " Dos puntitos, cuántas cifras querés para la parte entera.",
+        "start": 2672.4,
+        "end": 2675.4
+    },
+    {
+        "text": " ¿Cuántos ves impactados?",
+        "start": 2675.4,
+        "end": 2676.4
+    },
+    {
+        "text": " Exactamente.",
+        "start": 2676.4,
+        "end": 2677.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2677.4,
+        "end": 2677.9
+    },
+    {
+        "text": " Sí ¿а más?",
+        "start": 2681.4,
+        "end": 2682.4
+    },
+    {
+        "text": " ¿cómo pas 보시면?",
+        "start": 2682.4,
+        "end": 2683.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2683.4,
+        "end": 2684.4
+    },
+    {
+        "text": " ¿te va a compilar igual?",
+        "start": 2684.4,
+        "end": 2685.4
+    },
+    {
+        "text": " Pero lo que va a estar pasando es que te va a quedar punto y coma, instrucción pacía y end.",
+        "start": 2685.4,
+        "end": 2691.4
+    },
+    {
+        "text": " Y no tiene sentido tener una instrucción vacía.",
+        "start": 2693.4,
+        "end": 2695.4
+    },
+    {
+        "text": " La idea es que el punto y coma lo vamos a utilizar cómo separador de instrucciones.",
+        "start": 2695.4,
+        "end": 2701.4
+    },
+    {
+        "text": " o sea que si lo ponéis te va a compilar el criterio nuestro por un tema de",
+        "start": 2701.4,
+        "end": 2705.84
+    },
+    {
+        "text": " proligidad si creces no ponerlo antes del último endo.",
+        "start": 2705.84,
+        "end": 2709.4
+    },
+    {
+        "text": " Alguien levantó la mano.",
+        "start": 2709.4,
+        "end": 2712.4
+    },
+    {
+        "text": " No, fueron las imágenes en mi cadés entonces.",
+        "start": 2712.4,
+        "end": 2715.4
+    },
+    {
+        "text": " ¿Así?",
+        "start": 2715.4,
+        "end": 2716.4
+    },
+    {
+        "text": " ¿O la de las variables están?",
+        "start": 2716.4,
+        "end": 2718.4
+    },
+    {
+        "text": " No, primero es constante si luego de las variables, en ese orden.",
+        "start": 2718.4,
+        "end": 2722.4
+    },
+    {
+        "text": " ¿Qué es lo claro?",
+        "start": 2725.4,
+        "end": 2726.4
+    },
+    {
+        "text": " Bueno, aquí tenemos un ejemplo de los primeros programas que podemos ir escribiendo.",
+        "start": 2726.4,
+        "end": 2730.4
+    },
+    {
+        "text": " Es importante que se vayan tirando el agua, los prácticos tienen muchos ejercicios,",
+        "start": 2731.4,
+        "end": 2736.4
+    },
+    {
+        "text": " empiecen a escribir programas, empiecen a probarlos, ejecuten los con valores diferentes cada vez.",
+        "start": 2736.4,
+        "end": 2743.4
+    },
+    {
+        "text": " Empiecen a empaparse de lo que es probar en máquina los programas que escribimos.",
+        "start": 2743.4,
+        "end": 2750.4
+    },
+    {
+        "text": " ¿De acuerdo?",
+        "start": 2750.4,
+        "end": 2752.4
+    },
+    {
+        "text": " Bueno, más preguntas de esto.",
+        "start": 2752.4,
+        "end": 2754.4
+    },
+    {
+        "text": " Bueno, ahora sí, vamos a hablar un poquito más en detalle de las instrucciones de entrada y salida.",
+        "start": 2755.4,
+        "end": 2761.4
+    },
+    {
+        "text": " Las operaciones de entrada y salida, lo voy a hacer de este lado.",
+        "start": 2761.4,
+        "end": 2765.4
+    },
+    {
+        "text": " De nuevo, no les quite el sueño la diferencia entre RID y RIDLINE, entre RIDLINE y RIDLINE,",
+        "start": 2767.4,
+        "end": 2774.4
+    },
+    {
+        "text": " que si lleva Enter, que si no lleva Enter, que si lo toma Enter, que si no toma Enter, que no importa.",
+        "start": 2774.4,
+        "end": 2780.4
+    },
+    {
+        "text": " No es algo que se vaya a evaluar en los parciales.",
+        "start": 2781.4,
+        "end": 2786.4
+    },
+    {
+        "text": " O sea que si no parciales ustedes leen con RIDLINE, o leen con RIDLINE, no importa,",
+        "start": 2786.4,
+        "end": 2789.4
+    },
+    {
+        "text": " el propósito es que quisieron leer algo.",
+        "start": 2789.4,
+        "end": 2792.4
+    },
+    {
+        "text": " Si está bueno tenerlo claro para cuando llegue el momento del laboratorio, leer bien,",
+        "start": 2792.4,
+        "end": 2798.4
+    },
+    {
+        "text": " pero no es algo que a nivel filosófico si se quiere deba quitarnos el sueño.",
+        "start": 2798.4,
+        "end": 2803.4
+    },
+    {
+        "text": " Bueno, igual, vamos a echarla.",
+        "start": 2806.4,
+        "end": 2809.4
+    },
+    {
+        "text": " Primero que nada, la instrucción RID se aplica a una variable.",
+        "start": 2809.4,
+        "end": 2818.4
+    },
+    {
+        "text": " Yo le voy a llamar V y se pone punto y coma. Esto es una instrucción.",
+        "start": 2818.4,
+        "end": 2825.4
+    },
+    {
+        "text": " Más adelante vamos a ver que en realidad estamos llamando lo que se llama un procedimiento.",
+        "start": 2825.4,
+        "end": 2829.4
+    },
+    {
+        "text": " Pero por ahora lo podemos tomar como instrucción de lectura de datos de la entrada de estándar.",
+        "start": 2829.4,
+        "end": 2835.4
+    },
+    {
+        "text": " ¿Qué es lo que hace esto?",
+        "start": 2836.4,
+        "end": 2838.4
+    },
+    {
+        "text": " Le el valor que el usuario haya escrito y lo almacena en la variable LED.",
+        "start": 2838.4,
+        "end": 2843.4
+    },
+    {
+        "text": " La variable B puede ser de tipo Integer, puede ser de tipo Real o puede ser de tipo Char.",
+        "start": 2845.4,
+        "end": 2853.4
+    },
+    {
+        "text": " No puede ser de tipo Boolean. RIDLINE no admite lectura de Boolean por teclado.",
+        "start": 2853.4,
+        "end": 2859.4
+    },
+    {
+        "text": " ¿Qué do claro eso? Bien.",
+        "start": 2860.4,
+        "end": 2863.4
+    },
+    {
+        "text": " Entonces, si yo ejecuto RID, vamos a suponer que V es de tipo Integer y el usuario me escríbe,",
+        "start": 2864.4,
+        "end": 2870.4
+    },
+    {
+        "text": " no sé, 123, me guarda el valor 123 en la variable.",
+        "start": 2870.4,
+        "end": 2875.4
+    },
+    {
+        "text": " Si suponemos que la variable B es de tipo Real y el usuario me escríbe 3.15,",
+        "start": 2875.4,
+        "end": 2881.4
+    },
+    {
+        "text": " bueno, ese 3.15 va a quedar guardado en la variable.",
+        "start": 2881.4,
+        "end": 2885.4
+    },
+    {
+        "text": " Ahora bien, si la variable es de tipo Char,",
+        "start": 2885.4,
+        "end": 2889.4
+    },
+    {
+        "text": " tengamos en cuenta algo Char significa que es un carácter.",
+        "start": 2889.4,
+        "end": 2895.4
+    },
+    {
+        "text": " Si el usuario me tiene que escribir que cosa, un solo carácter, por ejemplo la letra F.",
+        "start": 2896.4,
+        "end": 2902.4
+    },
+    {
+        "text": " Y esa letra F es la que va a quedar guardada en la variable B.",
+        "start": 2902.4,
+        "end": 2906.4
+    },
+    {
+        "text": " Ahora, ¿qué pasa si el usuario escribe FGH?",
+        "start": 2907.4,
+        "end": 2910.4
+    },
+    {
+        "text": " Todo junto.",
+        "start": 2910.4,
+        "end": 2912.4
+    },
+    {
+        "text": " El RID en la variable B lo único que va a leer va a ser que la F no va a llegar a leer la GGH.",
+        "start": 2913.4,
+        "end": 2920.4
+    },
+    {
+        "text": " O sea, toma el primer carácter y el cursor que doy.",
+        "start": 2923.4,
+        "end": 2926.4
+    },
+    {
+        "text": " Luego, si quiero leer el segundo, tendré que poner de repente otro RIDA continuación.",
+        "start": 2926.4,
+        "end": 2930.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 2931.4,
+        "end": 2932.4
+    },
+    {
+        "text": " Si el usuario apriza un espacio en blanco, el espacio en blanco es también un carácter.",
+        "start": 2933.4,
+        "end": 2939.4
+    },
+    {
+        "text": " Entonces, el espacio en blanco va a ser lo que queda el más senado en la variable B.",
+        "start": 2940.4,
+        "end": 2943.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 2944.4,
+        "end": 2945.4
+    },
+    {
+        "text": " En caso de que sea de tipo Char.",
+        "start": 2945.4,
+        "end": 2948.4
+    },
+    {
+        "text": " En caso de que sea de tipo Char.",
+        "start": 2948.4,
+        "end": 2949.4
+    },
+    {
+        "text": " Si es de tipo entero, 123 tú vas a tener 3 dígitos, pero los 3 dígitos conforman un mismo número entero y ese número entero va a quedar en la variable.",
+        "start": 2949.4,
+        "end": 2959.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 2959.4,
+        "end": 2960.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2960.4,
+        "end": 2961.4
+    },
+    {
+        "text": " ¿Se están dando que ni Char tiene que darles comillas o no?",
+        "start": 2961.4,
+        "end": 2964.4
+    },
+    {
+        "text": " El usuario escribe directamente el carácter sin las comillas.",
+        "start": 2964.4,
+        "end": 2968.4
+    },
+    {
+        "text": " Si yo dentro de mi programa quiero definir una constante de tipo Char, yo adentro del código del programa si le tengo que poner las comillas.",
+        "start": 2968.4,
+        "end": 2975.4
+    },
+    {
+        "text": " ¿Qué he oído?",
+        "start": 2976.4,
+        "end": 2977.4
+    },
+    {
+        "text": " Sí.",
+        "start": 2977.4,
+        "end": 2978.4
+    },
+    {
+        "text": " Bien.",
+        "start": 2979.4,
+        "end": 2980.4
+    },
+    {
+        "text": " Bueno, RID se puede utilizar para leer un valor en una variable o en N variables.",
+        "start": 2981.4,
+        "end": 2991.4
+    },
+    {
+        "text": " Si se le pongo RID, V1, V2, V3.",
+        "start": 2994.4,
+        "end": 2997.4
+    },
+    {
+        "text": " Entonces, si las 3 son de tipo Char, me va a quedar F1, G2, H3.",
+        "start": 3000.4,
+        "end": 3005.4
+    },
+    {
+        "text": " De nuevo, vamos a asumir durante este curso que el usuario va a ingresar las cosas con los tipos correctos.",
+        "start": 3006.4,
+        "end": 3013.4
+    },
+    {
+        "text": " Entonces, por ejemplo, si yo quiero leer dos variables, la primera es un entero y la segunda es un real, nosotros vamos a asumir que el usuario cuando escriba,",
+        "start": 3013.4,
+        "end": 3022.4
+    },
+    {
+        "text": " cuando Tipeba, tipear primero un entero y luego un real.",
+        "start": 3022.4,
+        "end": 3025.4
+    },
+    {
+        "text": " Y el primer entero va a quedar en V1 y el segundo real va a quedar en V2.",
+        "start": 3025.4,
+        "end": 3028.4
+    },
+    {
+        "text": " Los sumimos para todo el curso.",
+        "start": 3028.4,
+        "end": 3031.4
+    },
+    {
+        "text": " Ah, no nos vamos a preocupar de lo que se llama valiación del tipo de los datos de entrada.",
+        "start": 3031.4,
+        "end": 3036.4
+    },
+    {
+        "text": " ¿Ok?",
+        "start": 3037.4,
+        "end": 3038.4
+    },
+    {
+        "text": " O sea que puedes leer de una variable o de varias.",
+        "start": 3039.4,
+        "end": 3041.4
+    },
+    {
+        "text": " ¿Consultas hasta acá?",
+        "start": 3043.4,
+        "end": 3044.4
+    },
+    {
+        "text": " Siempre separadas con cómbal.",
+        "start": 3045.4,
+        "end": 3047.4
+    },
+    {
+        "text": " Exactamente.",
+        "start": 3047.4,
+        "end": 3048.4
+    },
+    {
+        "text": " Y siempre tienen que ser variables.",
+        "start": 3049.4,
+        "end": 3051.4
+    },
+    {
+        "text": " No pueden ser otra cosa que no sean variables.",
+        "start": 3052.4,
+        "end": 3054.4
+    },
+    {
+        "text": " ¿Se entendió, Red? Sí.",
+        "start": 3055.4,
+        "end": 3057.4
+    },
+    {
+        "text": " Con espacio en blanco.",
+        "start": 3061.4,
+        "end": 3062.4
+    },
+    {
+        "text": " Exactamente.",
+        "start": 3062.4,
+        "end": 3063.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3065.4,
+        "end": 3066.4
+    },
+    {
+        "text": " Bueno, luego tenemos las variantes con Ridline.",
+        "start": 3067.4,
+        "end": 3070.4
+    },
+    {
+        "text": " Yo puedo hacer Ridline de una variable",
+        "start": 3072.4,
+        "end": 3075.4
+    },
+    {
+        "text": " o Ridline de una secuencia de variables.",
+        "start": 3075.4,
+        "end": 3078.4
+    },
+    {
+        "text": " ¿Qué es lo que hace Ridline?",
+        "start": 3091.4,
+        "end": 3093.4
+    },
+    {
+        "text": " Ridline le el valor que el usuario ingresó y lo guardan la variable V.",
+        "start": 3094.4,
+        "end": 3099.4
+    },
+    {
+        "text": " Ahora bien, si el usuario luego del valor escribió más cosas hasta el enter.",
+        "start": 3100.4,
+        "end": 3105.4
+    },
+    {
+        "text": " Ridline lo que hace es tirar la basura todo lo que está después.",
+        "start": 3106.4,
+        "end": 3110.4
+    },
+    {
+        "text": " No lo considera.",
+        "start": 3111.4,
+        "end": 3113.4
+    },
+    {
+        "text": " En cambio, Rid no tira a la basura todo lo que está después del primer valor.",
+        "start": 3115.4,
+        "end": 3119.4
+    },
+    {
+        "text": " Si, por ejemplo, el usuario escribió tres valores, tres enteros, pongamos la.",
+        "start": 3120.4,
+        "end": 3124.4
+    },
+    {
+        "text": " Y yo serrrid para leer uno.",
+        "start": 3125.4,
+        "end": 3127.4
+    },
+    {
+        "text": " Lo que va a ocurrir es valer el primero de esos tres enteros y me lo va a guardar en esa variable.",
+        "start": 3128.4,
+        "end": 3133.4
+    },
+    {
+        "text": " Y el cursor va a quedar pronto para leer el segundo.",
+        "start": 3134.4,
+        "end": 3136.4
+    },
+    {
+        "text": " Y si yo más abajo le pongo la instrucción de lectura, me valer el segundo valor.",
+        "start": 3137.4,
+        "end": 3141.4
+    },
+    {
+        "text": " Ahora bien, si en vez de usar Rid, yo serrrid line y el usuario escribió tres valores.",
+        "start": 3142.4,
+        "end": 3148.4
+    },
+    {
+        "text": " Lo que va a serrrid line es valer el primero.",
+        "start": 3149.4,
+        "end": 3151.4
+    },
+    {
+        "text": " Me lo va a guardar en la variable y los otros dos que están después y hasta que el usuario puso enter se descarta.",
+        "start": 3151.4,
+        "end": 3158.4
+    },
+    {
+        "text": " ¿Qué es lo claro?",
+        "start": 3160.4,
+        "end": 3161.4
+    },
+    {
+        "text": " Tengas lo presente para ver cuando es que con bien a Rid y cuando es que con bien a Ridline.",
+        "start": 3162.4,
+        "end": 3166.4
+    },
+    {
+        "text": " Bien?",
+        "start": 3167.4,
+        "end": 3168.4
+    },
+    {
+        "text": " ¿Pregunta de esto?",
+        "start": 3169.4,
+        "end": 3170.4
+    },
+    {
+        "text": " El espacio en blanco pasa que también depende del tipo de datos de las variables.",
+        "start": 3172.4,
+        "end": 3175.4
+    },
+    {
+        "text": " Por ejemplo, si son todas enteras o reales, vos ponés un valor uno o más espacio en blanco y otro valor.",
+        "start": 3176.4,
+        "end": 3182.4
+    },
+    {
+        "text": " Y pasca al ver que el primer número es un valor, no le va a dar pelota los espacios en blanco y luego va a venir el segundo valor.",
+        "start": 3183.4,
+        "end": 3188.4
+    },
+    {
+        "text": " Ahora si la primera es de tipo int, y la segunda variable es de tipo char, te vale el primero valor y el espacio en blanco a continuación te lo va a tomar como char.",
+        "start": 3189.4,
+        "end": 3196.4
+    },
+    {
+        "text": " Se ya depende del tipo de datos, pero si son lecturas de valores numericos, el espacio en blanco o varios espacios en blanco lo que estás como separado.",
+        "start": 3197.4,
+        "end": 3204.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3206.4,
+        "end": 3210.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3211.4,
+        "end": 3212.4
+    },
+    {
+        "text": " Sí.",
+        "start": 3213.4,
+        "end": 3214.4
+    },
+    {
+        "text": " Exactamente, si después por ejemplo, te han a Rid, varias asignaciones y luego otro Rid, ese segundo Rid que pusiste bastante más abajo, te vale la continuación de donde había quedado el cursor.",
+        "start": 3222.4,
+        "end": 3230.4
+    },
+    {
+        "text": " Exacto, si así estás usando Rid, Rid telellosa variable y el cursor quedó allí.",
+        "start": 3231.4,
+        "end": 3235.4
+    },
+    {
+        "text": " A la espera de si más adelante les otra cosa te vale dar lo que está continuación.",
+        "start": 3236.4,
+        "end": 3239.4
+    },
+    {
+        "text": " Bien. Bueno, vamos a ver ahora las de salida.",
+        "start": 3241.4,
+        "end": 3245.4
+    },
+    {
+        "text": " Right.",
+        "start": 3248.4,
+        "end": 3249.4
+    },
+    {
+        "text": " Receive una expresión y también termina con punto y coma.",
+        "start": 3252.4,
+        "end": 3257.4
+    },
+    {
+        "text": " O sea, la instrucción es right, paréntesis, expresión, punto y coma.",
+        "start": 3257.4,
+        "end": 3262.4
+    },
+    {
+        "text": " Expresión es más que una variable, puede ser una variable, puede ser un valor concreto puesto entre paréntesis o incluso puede tener operadores.",
+        "start": 3266.4,
+        "end": 3279.4
+    },
+    {
+        "text": " Puede tener más, puede tener un por, puede tener un div, admites expresiones.",
+        "start": 3280.4,
+        "end": 3285.4
+    },
+    {
+        "text": " Exacto, por ejemplo, en este, en vez de haber guardado esto en una variable, yo podría haber escrito toda expresión acá dentro.",
+        "start": 3288.4,
+        "end": 3296.4
+    },
+    {
+        "text": " ¿Y habría funcionado, oye? Sí.",
+        "start": 3297.4,
+        "end": 3299.4
+    },
+    {
+        "text": " Exactamente, porque Rid lo que haces, te muestra y dejó el cursor ahí.",
+        "start": 3302.4,
+        "end": 3306.4
+    },
+    {
+        "text": " Rid, Rid, Rid, la gente va a dar el enter.",
+        "start": 3307.4,
+        "end": 3309.4
+    },
+    {
+        "text": " ¿Dí? Sí. ¿Convírenos a expresiones acá dentro del aire?",
+        "start": 3310.4,
+        "end": 3313.4
+    },
+    {
+        "text": " Si no son un choque gigantesco de largo, sí.",
+        "start": 3314.4,
+        "end": 3318.4
+    },
+    {
+        "text": " No, claro, la está calculando solamente ahí. Si vos he el valor calculado por esa expresión lo querías reutilizar varias veces, te conviene guardarlo en una variable,",
+        "start": 3320.4,
+        "end": 3329.4
+    },
+    {
+        "text": " porque cada vez que vos pone esa expresión, por ejemplo si yo pusiera esta expresión entre sin instrucciones, Roy, las va a recalcular las tres veces.",
+        "start": 3330.4,
+        "end": 3337.4
+    },
+    {
+        "text": " Entonces ahí no te conviene. ¿Está bien? Ahora yo que sé, si es X más 1, bueno, ahí entramos en el interno filosófico de tampoco es un cálculo tan complicado.",
+        "start": 3338.4,
+        "end": 3346.4
+    },
+    {
+        "text": " ¿Dien? ¿Se entendió?",
+        "start": 3349.4,
+        "end": 3351.4
+    },
+    {
+        "text": " Bueno, la expresión puede ser incluso una cadena de texto. ¿Cómo hicimos acá?",
+        "start": 3352.4,
+        "end": 3357.4
+    },
+    {
+        "text": " Esto es una expresión de tipo cadena de caracteres, ¿eh? ¿Vien?",
+        "start": 3358.4,
+        "end": 3365.4
+    },
+    {
+        "text": " Así como admite una, admite N expresiones separadas con coma.",
+        "start": 3365.4,
+        "end": 3374.4
+    },
+    {
+        "text": " Y de hecho fue lo que hicimos acá. N está llamada Roy, la primera expresión es una cadena de texto y la segunda expresión es de tipo real.",
+        "start": 3377.4,
+        "end": 3388.4
+    },
+    {
+        "text": " Y lo que hizo fue mostrar esto exactamente la continuación de la primera.",
+        "start": 3389.4,
+        "end": 3394.4
+    },
+    {
+        "text": " ¿Está bien? Es más fíjense que no sé si se le va a notar acá, yo entre los dos puntos y la comilla deje un espacio blanco.",
+        "start": 3396.4,
+        "end": 3401.4
+    },
+    {
+        "text": " Para que cuando el usuario vea el output en la pantalla, haya una separación entre los dos puntos y el valor.",
+        "start": 3402.4,
+        "end": 3408.4
+    },
+    {
+        "text": " Si yo no le pongo este espacio blanco, le vamos a ver todo peado.",
+        "start": 3409.4,
+        "end": 3412.4
+    },
+    {
+        "text": " Y después están las mismas pero en versión write line.",
+        "start": 3412.4,
+        "end": 3421.4
+    },
+    {
+        "text": " Yo puedo aplicarle write line a una expresión o puedo aplicarle write line a una secuencia de expresiones.",
+        "start": 3423.4,
+        "end": 3433.4
+    },
+    {
+        "text": " ¿Está bien?",
+        "start": 3434.4,
+        "end": 3438.4
+    },
+    {
+        "text": " Esas expresiones pueden ser intesas, pueden ser real, pueden ser char y si no recuerdo mal también creo que pueden ser bulianas.",
+        "start": 3441.4,
+        "end": 3447.4
+    },
+    {
+        "text": " O sea no puedo leer un buliano por la entrada de standard pero sí lo puedo mostrar por la salida de standard.",
+        "start": 3448.4,
+        "end": 3452.4
+    },
+    {
+        "text": " Lo prueban en fripas calis después me cuentan a ver si efectivamente es así.",
+        "start": 3453.4,
+        "end": 3456.4
+    },
+    {
+        "text": " Se puede mostrar bulian, perfecto.",
+        "start": 3456.4,
+        "end": 3458.4
+    },
+    {
+        "text": " Entonces, cualquiera de los cuatro tipos básicos puede usarse en write on write line.",
+        "start": 3459.4,
+        "end": 3463.4
+    },
+    {
+        "text": " Bueno, ¿qué hace write line? Lo mismo que write, sólo que después que mostró inmediatamente da un enter, lo que en pascales se llama un carácter de fin de línea, da un enter y pasa el próximo renglón.",
+        "start": 3464.4,
+        "end": 3474.4
+    },
+    {
+        "text": " O sea que lo próximo que despliegue es va a parecer un renglón más abajo.",
+        "start": 3475.4,
+        "end": 3478.4
+    },
+    {
+        "text": " Si vos usaste write, en vez de write line lo próximo que despliegue es va a parecer a continuación al lado, en vez de en el próximo renglón.",
+        "start": 3479.4,
+        "end": 3486.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3488.4,
+        "end": 3490.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3490.4,
+        "end": 3492.4
+    },
+    {
+        "text": " Bueno.",
+        "start": 3493.4,
+        "end": 3495.4
+    },
+    {
+        "text": " Vamos a mirar ahora sí, preguntas.",
+        "start": 3496.4,
+        "end": 3499.4
+    },
+    {
+        "text": " Vamos a mirar ahora sí un poquito del práctico 2.",
+        "start": 3500.4,
+        "end": 3504.4
+    },
+    {
+        "text": " Bueno.",
+        "start": 3504.4,
+        "end": 3507.4
+    },
+    {
+        "text": " Vamos a jugar un poquito con el ejercicio 1 del práctico 2.",
+        "start": 3508.4,
+        "end": 3513.4
+    },
+    {
+        "text": " Tómense 5 minutitos, lo hacen y lo discutimos acá.",
+        "start": 3514.4,
+        "end": 3519.4
+    },
+    {
+        "text": " Y después eso vamos a hacer más ejercicios del práctico 2.",
+        "start": 3520.4,
+        "end": 3523.4
+    },
+    {
+        "text": " ¿A bien?",
+        "start": 3524.4,
+        "end": 3525.4
+    },
+    {
+        "text": " Se tiene la siguiente secuencia de proposiciones de entrada, considera que todas las variables se declararon como enteras.",
+        "start": 3526.4,
+        "end": 3534.4
+    },
+    {
+        "text": " 1, 2, 3, 4 instrucciones.",
+        "start": 3537.4,
+        "end": 3540.4
+    },
+    {
+        "text": " La primera isrid y se aplica 3 variables, la segunda isrid line a una sola, la tercera isrid line a 2, la cuarta isrid y a una variable sola.",
+        "start": 3541.4,
+        "end": 3549.4
+    },
+    {
+        "text": " Vamos a exponer que el usuario ingresó esto.",
+        "start": 3550.4,
+        "end": 3554.4
+    },
+    {
+        "text": " En la primera line a esto 5, esto 5 en la segunda y estos 2 en la tercera.",
+        "start": 3555.4,
+        "end": 3559.4
+    },
+    {
+        "text": " Vamos a ver qué valores quedan efectivamente cargados en qué variables.",
+        "start": 3561.4,
+        "end": 3566.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3567.4,
+        "end": 3569.4
+    },
+    {
+        "text": " Rydx y z, ¿qué es lo que va a generar esto?",
+        "start": 3569.4,
+        "end": 3572.4
+    },
+    {
+        "text": " Sí.",
+        "start": 3573.4,
+        "end": 3574.4
+    },
+    {
+        "text": " ¿En x? ¿Se guarda de 8?",
+        "start": 3575.4,
+        "end": 3576.4
+    },
+    {
+        "text": " En x 8.",
+        "start": 3576.4,
+        "end": 3577.4
+    },
+    {
+        "text": " ¿Y 7?",
+        "start": 3577.4,
+        "end": 3578.4
+    },
+    {
+        "text": " En y 7?",
+        "start": 3578.4,
+        "end": 3579.4
+    },
+    {
+        "text": " En y 7?",
+        "start": 3579.4,
+        "end": 3580.4
+    },
+    {
+        "text": " Y en z 2.",
+        "start": 3580.4,
+        "end": 3581.4
+    },
+    {
+        "text": " Vamos a ir anotando.",
+        "start": 3581.4,
+        "end": 3583.4
+    },
+    {
+        "text": " En x 8.",
+        "start": 3584.4,
+        "end": 3586.4
+    },
+    {
+        "text": " En y 7.",
+        "start": 3587.4,
+        "end": 3589.4
+    },
+    {
+        "text": " Y en z 2.",
+        "start": 3589.4,
+        "end": 3591.4
+    },
+    {
+        "text": " Y dado que fue ril donde va a quedar el cursor.",
+        "start": 3593.4,
+        "end": 3596.4
+    },
+    {
+        "text": " Acá, a continuación del 2.",
+        "start": 3597.4,
+        "end": 3599.4
+    },
+    {
+        "text": " Proximo valor al leer, debería ser el 1.",
+        "start": 3600.4,
+        "end": 3602.4
+    },
+    {
+        "text": " Chao.",
+        "start": 3602.4,
+        "end": 3603.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3604.4,
+        "end": 3605.4
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3606.4,
+        "end": 3607.4
+    },
+    {
+        "text": " Se ejecutó esta instrucción y quedaron esos valores en las variables.",
+        "start": 3608.4,
+        "end": 3611.4
+    },
+    {
+        "text": " Ahora pasamos a la siguiente. Se ejecuta Rydx y el valor leído va a parar a la variable A.",
+        "start": 3612.4,
+        "end": 3618.4
+    },
+    {
+        "text": " ¿Qué valor queda en A?",
+        "start": 3619.4,
+        "end": 3620.4
+    },
+    {
+        "text": " Este 1 fue a parar a la variable A.",
+        "start": 3621.4,
+        "end": 3623.4
+    },
+    {
+        "text": " Pero al ser Rydx que ocurre con lo que está después del 1.",
+        "start": 3630.4,
+        "end": 3633.4
+    },
+    {
+        "text": " Se descarta.",
+        "start": 3634.4,
+        "end": 3635.4
+    },
+    {
+        "text": " El 3 se perdió.",
+        "start": 3635.4,
+        "end": 3637.4
+    },
+    {
+        "text": " Desapareció.",
+        "start": 3637.4,
+        "end": 3638.4
+    },
+    {
+        "text": " No se toma en cuenta.",
+        "start": 3638.4,
+        "end": 3639.4
+    },
+    {
+        "text": " Hasta acá.",
+        "start": 3640.4,
+        "end": 3641.4
+    },
+    {
+        "text": " Lo próximo en leer se va a estar posicionado el comienzo de la segunda línea.",
+        "start": 3641.4,
+        "end": 3645.4
+    },
+    {
+        "text": " Siguiente instrucción en ejecutarse Rydx en B.",
+        "start": 3646.4,
+        "end": 3649.4
+    },
+    {
+        "text": " Con lo cual va a tomar qué valores para qué variables.",
+        "start": 3650.4,
+        "end": 3653.4
+    },
+    {
+        "text": " 1 para B y 4 para C.",
+        "start": 3654.4,
+        "end": 3657.4
+    },
+    {
+        "text": " O sea que",
+        "start": 3658.4,
+        "end": 3659.4
+    },
+    {
+        "text": " B queda con 1.",
+        "start": 3660.4,
+        "end": 3662.4
+    },
+    {
+        "text": " C queda con 4.",
+        "start": 3662.4,
+        "end": 3665.4
+    },
+    {
+        "text": " Y qué pasa con este 4.",
+        "start": 3666.4,
+        "end": 3668.4
+    },
+    {
+        "text": " Se descarta.",
+        "start": 3669.4,
+        "end": 3671.4
+    },
+    {
+        "text": " Porque es Rydx y se pierde.",
+        "start": 3671.4,
+        "end": 3673.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3674.4,
+        "end": 3675.4
+    },
+    {
+        "text": " O sea que lo próximo en leer se va a ser lo que está el comienzo de la tercera línea.",
+        "start": 3676.4,
+        "end": 3679.4
+    },
+    {
+        "text": " Y es Ryd que va a leer D.",
+        "start": 3681.4,
+        "end": 3683.4
+    },
+    {
+        "text": " O sea que D va a quedar con qué valor.",
+        "start": 3684.4,
+        "end": 3686.4
+    },
+    {
+        "text": " Con el valor 3.",
+        "start": 3687.4,
+        "end": 3688.4
+    },
+    {
+        "text": " El 7 se descarta.",
+        "start": 3692.4,
+        "end": 3694.4
+    },
+    {
+        "text": " El cursor queda ahí.",
+        "start": 3695.4,
+        "end": 3697.4
+    },
+    {
+        "text": " Si luego más adelante yo leo algo.",
+        "start": 3698.4,
+        "end": 3700.4
+    },
+    {
+        "text": " Me debería leer el 7.",
+        "start": 3701.4,
+        "end": 3702.4
+    },
+    {
+        "text": " ¿Se entendió?",
+        "start": 3703.4,
+        "end": 3704.4
+    },
+    {
+        "text": " Bueno, por suerte, todo bien.",
+        "start": 3707.4,
+        "end": 3709.4
+    },
+    {
+        "text": " Qué un poquito más claro está cuestión del Rydx, Rydx.",
+        "start": 3712.4,
+        "end": 3715.4
+    },
+    {
+        "text": " Yo te hice Rydx con más 3.",
+        "start": 3716.4,
+        "end": 3717.4
+    },
+    {
+        "text": " No le puedo parar Rydx y es puesta tución Rydx.",
+        "start": 3717.4,
+        "end": 3720.4
+    },
+    {
+        "text": " No, porque si hace Rydx,",
+        "start": 3720.4,
+        "end": 3722.4
+    },
+    {
+        "text": " te vale el primer valor y el segundo ya va a quedar descartado.",
+        "start": 3723.4,
+        "end": 3726.4
+    },
+    {
+        "text": " En capos si pones Rydx, Rydx, Rydx, C te vale dar los primeros 2 y te va a descartar lo que esté luego del segundo.",
+        "start": 3727.4,
+        "end": 3732.4
+    },
+    {
+        "text": " ¿Más preguntas?",
+        "start": 3735.4,
+        "end": 3736.4
+    },
+    {
+        "text": " Sí.",
+        "start": 3736.4,
+        "end": 3737.4
+    },
+    {
+        "text": " Exacto.",
+        "start": 3747.4,
+        "end": 3748.4
+    },
+    {
+        "text": " Primero se ejecutó esta destrucción que le yo estos 3 valores.",
+        "start": 3748.4,
+        "end": 3751.4
+    },
+    {
+        "text": " Y el cursor quedó a continuación del tercer valor reído.",
+        "start": 3752.4,
+        "end": 3754.4
+    },
+    {
+        "text": " Luego cuando se ejecuta Rydx, vale el primer valor a continuación del cursor",
+        "start": 3755.4,
+        "end": 3760.4
+    },
+    {
+        "text": " y lo que esté luego del primer valor a continuación del cursor a la basura.",
+        "start": 3761.4,
+        "end": 3764.4
+    },
+    {
+        "text": " Bien.",
+        "start": 3766.4,
+        "end": 3767.4
+    },
+    {
+        "text": " El resto.",
+        "start": 3768.4,
+        "end": 3769.4
+    },
+    {
+        "text": " Sí.",
+        "start": 3770.4,
+        "end": 3771.4
+    },
+    {
+        "text": " Buenísimo.",
+        "start": 3772.4,
+        "end": 3773.4
+    },
+    {
+        "text": " Vamos a pasar del ejercicio 1.",
+        "start": 3774.4,
+        "end": 3776.4
+    },
+    {
+        "text": " Al ejercicio 22.",
+        "start": 3780.4,
+        "end": 3781.4
+    },
+    {
+        "text": " El último de todos.",
+        "start": 3782.4,
+        "end": 3784.4
+    },
+    {
+        "text": " Y es en el que se van a poner a trabajar ahora.",
+        "start": 3785.4,
+        "end": 3787.4
+    },
+    {
+        "text": " ¿Ah?",
+        "start": 3788.4,
+        "end": 3789.4
+    },
+    {
+        "text": " Escribir un programa que tenga como única entrada un número octal.",
+        "start": 3791.4,
+        "end": 3796.4
+    },
+    {
+        "text": " Un número en base 8 de 3 dijeros.",
+        "start": 3797.4,
+        "end": 3800.4
+    },
+    {
+        "text": " ¿Sabes que existen diferentes bases numéricas? ¿No? ¿Vacendo? ¿Vacendo? ¿Vacendo 8? ¿Vacendo 10? ¿Vacendo exadecimal? ¿Decisáis? ¿etcetera? ¿Ah?",
+        "start": 3801.4,
+        "end": 3809.4
+    },
+    {
+        "text": " Exiva el número octal original y el número equivalente en base 10.",
+        "start": 3809.4,
+        "end": 3817.4
+    },
+    {
+        "text": " Por ejemplo, el número octal de 3 dijeros 415, ¿qué es este 415? Por más que la letra mediga que es octal,",
+        "start": 3819.4,
+        "end": 3828.4
+    },
+    {
+        "text": " yo en mi programa lo voy a trabajar como de tipo que. ¿Qué es?",
+        "start": 3829.4,
+        "end": 3832.4
+    },
+    {
+        "text": " Como de tipo íntegra. ¿Ah?",
+        "start": 3833.4,
+        "end": 3835.4
+    },
+    {
+        "text": " Bien, equivale al valor decimal 4x8, 1x8, 5x8. ¿Sabes? O sea, 29.",
+        "start": 3836.4,
+        "end": 3846.4
+    },
+    {
+        "text": " O sea, tengo que descomponer mi entero original en cada uno de sus dijeros y multiplicarlos por 8 y sumarnos.",
+        "start": 3847.4,
+        "end": 3856.4
+    },
+    {
+        "text": " ¿Parte y lo que ustedes tienen que pensar es qué operadores puede usar para hacer esa descomposición del número en sus dijeros?",
+        "start": 3857.4,
+        "end": 3865.4
+    },
+    {
+        "text": " Eso es parte del ejercicio a pensar. ¿Ah? Bien, recuerde que Pascal considerará el número introducido como número de simal, o sea, lo que yo les decía para nosotros es un íntegra.",
+        "start": 3866.4,
+        "end": 3878.4
+    },
+    {
+        "text": " Que yo tengo que ver como me las ingenio para descomponarlo en sus tres cifras, multiplicar por 8 cada una de ellas, sumarlas y mostrar el resultado.",
+        "start": 3878.4,
+        "end": 3887.4
+    },
+    {
+        "text": " Sí. ¿Qué es que le dan los 8 de los rupos? ¿Tenes el elevado de la 2 a la 1 y la 3?",
+        "start": 3887.4,
+        "end": 3893.4
+    },
+    {
+        "text": " Perdón, 8 al cuadrado 8 le 1 y 8 al acero, si está bien son las potencias de 8.",
+        "start": 3893.4,
+        "end": 3897.4
+    },
+    {
+        "text": " No se ve mucho acá, pero es el primero es por 8 al cuadrado, el segundo es por 8 al 1 y el tercero es por 8 al acero.",
+        "start": 3898.4,
+        "end": 3903.4
+    },
+    {
+        "text": " Entonces, por ejemplo, si lo es hora ingresar 2,17 y yo le aplico esta cuenta como en el 2,69, la salida tiene que ser este cartelito.",
+        "start": 3904.4,
+        "end": 3916.4
+    },
+    {
+        "text": " El octal es este y esto es igual al decimal 143. ¿Entendió?",
+        "start": 3916.4,
+        "end": 3923.4
+    },
+    {
+        "text": " Bueno, el resto de la clase es para que trabajen este ejercicio, me lo muestren y para que sigan trabajando en el práctico 2 y me consulten cualquier duda que tengan de cualquier ejercicio.",
+        "start": 3924.4,
+        "end": 3936.4
+    },
+    {
+        "text": " ¿Ok? Sí.",
+        "start": 3936.4,
+        "end": 3938.4
+    },
+    {
+        "text": " Sí, sí, sí, assumemos que va a ser de 3. Exactamente de 3. ¿Se entendió la consima?",
+        "start": 3941.4,
+        "end": 3948.4
+    },
+    {
+        "text": " Bueno, este no vamos a hacer una puesta punto, el resto de la clase es para que ustedes trabajen, me muestren y me consulten.",
+        "start": 3949.4,
+        "end": 3956.4
+    },
+    {
+        "text": " Bien, pregunta, sí.",
+        "start": 3957.4,
+        "end": 3959.4
+    },
+    {
+        "text": " Sí.",
+        "start": 3963.4,
+        "end": 3964.4
+    },
+    {
+        "text": " No podés, tenés que leerlo todo en una variable de tipo integer y después ver cómo ases para descomponerlo vos en el programa.",
+        "start": 3967.4,
+        "end": 3975.4
+    },
+    {
+        "text": " Vamos por terminado. Eso nosotros seguimos en clase.",
+        "start": 3978.4,
+        "end": 3982.4
+    }
+]
