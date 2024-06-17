@@ -8,6 +8,7 @@ const initialState: IQuery = {
   query: "",
   subject: undefined,
   lesson: undefined,
+  conversationId: undefined,
 };
 
 const queryReducer = (
