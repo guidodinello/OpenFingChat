@@ -22,6 +22,11 @@ DATA_PATH = PROJECT_ROOT_PATH / os.environ.get("DATA_PATH")
 CACHE_PATH = PROJECT_ROOT_PATH / os.environ.get("CACHE_PATH")
 
 
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+
 class VectorStore:
     def __init__(
         self,
@@ -60,35 +65,62 @@ class VectorStore:
             return self
         logging.info(f"Seeding vectorstore with data from {data_path}")
 
-        filters = {"transcribed": True}
-        projection = {"_id": 1}
-        lessons_id = LessonModel().getAll(projection=projection, **filters)
+        pipeline = [
+            {
+                "$match": {
+                    "transcribed": True,
+                }
+            },
+            {
+                "$lookup": {
+                    "from": "subjects",
+                    "localField": "subjectId",
+                    "foreignField": "_id",
+                    "as": "subject",
+                }
+            },
+            {"$unwind": "$subject"},
+            {
+                "$project": {
+                    "_id": 1,
+                    "name": 1,
+                    "subject_name": "$subject.name",
+                }
+            },
+        ]
 
-        if not lessons_id:
+        lessons_meta = LessonModel().collection.aggregate(pipeline)
+
+        if not lessons_meta:
             logging.error("No transcribed lessons returned from the database!")
             # si no hay lessons marcadas como transcriptas, para testear se puede usar el mock
-            from .mock import MONGO_CLIENT
+            # from .mock import MONGO_CLIENT
 
-            lessons_id = MONGO_CLIENT["database"]["classes"].find(
-                {"transcribed": True},
-                projection={"_id": 1},
-            )
-            # return self
+            # lessons_id = MONGO_CLIENT["database"]["classes"].find(
+            #     {"transcribed": True},
+            #     projection={"_id": 1},
+            # )
+            return self
+
+        texts = []
+        metadatas = []
 
         job = functools.partial(process_transcript, data_path)
-        with futures.ThreadPoolExecutor() as executor:
-            results = [executor.submit(job, id["_id"]) for id in lessons_id]
+        with futures.ThreadPoolExecutor(max_workers=1) as executor:
+            results = [executor.submit(job, meta) for meta in lessons_meta]
 
             for res in futures.as_completed(results):
                 result = res.result()
                 if result is not None:
                     text, metadata = result
+                    texts.append(text[0])
+                    metadatas.append(metadata[0])
 
-                    vectorstore = FAISS.from_texts(
-                        texts=text,
-                        metadatas=metadata,
-                        embedding=self.embedding_model,
-                    )
+        vectorstore = FAISS.from_texts(
+            texts=texts,
+            metadatas=metadatas,
+            embedding=self.embedding_model,
+        )
 
         if not self.db:
             self.db = vectorstore
@@ -130,8 +162,8 @@ def concatenate_segments(segments, max_length):
     return concatenated_segments
 
 
-def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]:
-    class_transcript = Path(f"{data_folder}/{lesson_id}.json")
+def process_transcript(data_folder: PathLike, lesson_meta: dict) -> Optional[tuple]:
+    class_transcript = Path(f"{data_folder}/{lesson_meta["_id"]}.json")
 
     if not class_transcript.exists():
         logging.error(
@@ -139,7 +171,6 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
         )
         return None
 
-    # TODO: asumi que los archivos segmentados estan guardados localmente
     with open(class_transcript, "r", encoding="utf-8") as f:
         content = json.load(f)
 
@@ -153,8 +184,6 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
     max_length = 120  # Set an appropriate max length for concatenation
     concatenated_segments = concatenate_segments(content, max_length)
 
-    lesson_meta = LessonModel().get(lesson_id, True)
-
     texts, metadatas = zip(
         *(
             (
@@ -163,12 +192,11 @@ def process_transcript(data_folder: PathLike, lesson_id: str) -> Optional[tuple]
                     "lesson_id": str(lesson_meta["_id"]),
                     "start": item["start"],
                     "end": item["end"],
-                    "subject": lesson_meta["subject"]["name"],
+                    "subject": lesson_meta["subject_name"],
                     "lesson": lesson_meta["name"],
                 },
             )
             for item in concatenated_segments
         )
     )
-    print(metadatas)
     return texts, metadatas
