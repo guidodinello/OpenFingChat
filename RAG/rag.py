@@ -41,7 +41,7 @@ def initialize_retriever(llm):
     vectorstore = VectorStore()
     retriever = vectorstore.db.as_retriever(
         search_type="similarity_score_threshold",
-        search_kwargs={"k":2, "score_threshold": 0.3}
+        search_kwargs={"k":2, "score_threshold": 0.2}
     )
     
     # First we define a sub-chain that takes historical messages and the latest user question, and reformulates the question if it makes reference to any information in the historical information.
