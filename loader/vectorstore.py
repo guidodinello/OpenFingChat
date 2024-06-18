@@ -106,15 +106,15 @@ class VectorStore:
         metadatas = []
 
         job = functools.partial(process_transcript, data_path)
-        with futures.ThreadPoolExecutor(max_workers=1) as executor:
+        with futures.ThreadPoolExecutor(max_workers=6) as executor:
             results = [executor.submit(job, meta) for meta in lessons_meta]
 
             for res in futures.as_completed(results):
                 result = res.result()
                 if result is not None:
                     text, metadata = result
-                    texts.append(text[0])
-                    metadatas.append(metadata[0])
+                    texts.extend(text)
+                    metadatas.extend(metadata)
 
         vectorstore = FAISS.from_texts(
             texts=texts,
