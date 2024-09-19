@@ -1,15 +1,16 @@
 import logging
 import sys
 
+import constants
 from loader import loader
-from scrapper.scrapper import scrapping
-from store.data.models.lessons import LessonModel
-from transcriptor.transcriptor import transcript
+from scrapper import scrapper
+from store.mongo.models.lessons import LessonModel
+from store.mongo.models.subjects import SubjectModel
+from transcriptor import transcriptor
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -18,12 +19,24 @@ if __name__ == "__main__":
 
     _, script, *script_args = sys.argv
 
-    if script == "scrapping":
-        scrapping()
+    logging.info(
+        "Running script: %s with configuration file %s", script, constants.CONFIG_FILE
+    )
+
+    lesson = LessonModel()
+    subject = SubjectModel()
+
+    if script == "scrapper":
+        scrapper.scrapping(lesson, subject)
     elif script == "loader":
         loader.main(script_args)
     elif script == "transcriptor":
-        transcript()
+        subjects_names = [
+            "Mecánica Newtoniana",
+            "Electrónica Fundamental",
+            "Señales y Sistemas",
+        ]
+        transcriptor.transcript(subjects_names, max_lessons=10)
     else:
-        logging.info(f"Unknown script: {script}")
+        logging.info("Unknown script: %s", script)
         sys.exit(1)
