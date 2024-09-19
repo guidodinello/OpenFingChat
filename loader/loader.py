@@ -1,11 +1,6 @@
-import logging
 from argparse import ArgumentParser
 
 from .vectorstore import VectorStore
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
 
 
 def main(args=None):

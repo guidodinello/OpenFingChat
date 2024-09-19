@@ -19,7 +19,7 @@ class Embeddings:
     def _load_embedding_model(cache_path):
         cache_folder = Path(cache_path) / "embeddings"
         if not cache_folder.exists():
-            logging.info(f"Creating cache folder at {cache_folder}")
+            logging.info("Creating cache folder at  %s", cache_folder)
             cache_folder.mkdir(exist_ok=True, parents=True)
 
         device = "cuda:0" if cuda.is_available() else "cpu"
