@@ -1,41 +1,31 @@
 import functools
 import json
 import logging
-import os
 from concurrent import futures
 from os import PathLike
 from pathlib import Path
 from typing import Optional
 
-from dotenv import load_dotenv
+import pymongo
 from langchain_community.vectorstores import FAISS
 
-from store.data.models.lessons import LessonModel
+import constants
+from store.mongo.models.lessons import LessonModel
 
 from .embeddings import Embeddings
-
-load_dotenv(override=True)
-
-PROJECT_ROOT_PATH = Path(__file__).parent.parent
-DB_PATH = PROJECT_ROOT_PATH / os.environ.get("VDB_PATH")
-DATA_PATH = PROJECT_ROOT_PATH / os.environ.get("DATA_PATH")
-CACHE_PATH = PROJECT_ROOT_PATH / os.environ.get("CACHE_PATH")
-
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
 
 
 class VectorStore:
     def __init__(
         self,
         embedding_model: Optional[Embeddings] = None,
-        persistence_path: PathLike = DB_PATH,
-        data_path: PathLike = DATA_PATH,
+        persistence_path: PathLike = constants.VDB_PATH,
+        data_path: PathLike = constants.DATA_PATH,
         seed_on_init: bool = True,
     ):
-        self.embedding_model = embedding_model or Embeddings.load(cache_path=CACHE_PATH)
+        self.embedding_model = embedding_model or Embeddings.load(
+            cache_path=constants.CACHE_PATH
+        )
         self.path = Path(persistence_path)
         self.data_path = Path(data_path)
         self.db = None
@@ -44,14 +34,14 @@ class VectorStore:
 
     def _load_vectorstore(self):
         if (self.path / "index.faiss").exists():
-            logging.info(f"Loading existing vectorstore from {self.path}")
+            logging.info("Loading existing vectorstore from  %s", self.path)
             self.db = FAISS.load_local(
                 self.path,
                 embeddings=self.embedding_model,
                 allow_dangerous_deserialization=True,
             )
         else:
-            logging.info(f"Creating new vectorstore at {self.path}")
+            logging.info("Creating new vectorstore at  %s", self.path)
             self.seed(self.data_path)
 
     def seed(self, data_path: PathLike) -> None:
@@ -61,35 +51,11 @@ class VectorStore:
         data_path = data_path or self.data_path
 
         if not Path(data_path).exists():
-            logging.error(f"Data folder {data_path} does not exist!")
+            logging.error("Data folder  %s  does not exist!", data_path)
             return self
-        logging.info(f"Seeding vectorstore with data from {data_path}")
+        logging.info("Seeding vectorstore with data from  %s", data_path)
 
-        pipeline = [
-            {
-                "$match": {
-                    "transcribed": True,
-                }
-            },
-            {
-                "$lookup": {
-                    "from": "subjects",
-                    "localField": "subjectId",
-                    "foreignField": "_id",
-                    "as": "subject",
-                }
-            },
-            {"$unwind": "$subject"},
-            {
-                "$project": {
-                    "_id": 1,
-                    "name": 1,
-                    "subject_name": "$subject.name",
-                }
-            },
-        ]
-
-        lessons_meta = LessonModel().collection.aggregate(pipeline)
+        lessons_meta = transcribed_lessons()
 
         if not lessons_meta:
             logging.error("No transcribed lessons returned from the database!")
@@ -130,7 +96,7 @@ class VectorStore:
         vectorstore.save_local(folder_path=self.path)
 
     def drop(self) -> None:
-        logging.info(f"Dropping vector database from {self.path}")
+        logging.info("Dropping vector database from  %s", self.path)
         (self.path / "index.faiss").unlink(missing_ok=True)
         (self.path / "index.pkl").unlink(missing_ok=True)
 
@@ -167,16 +133,17 @@ def process_transcript(data_folder: PathLike, lesson_meta: dict) -> Optional[tup
 
     if not class_transcript.exists():
         logging.error(
-            f"Lesson is marked as transcribed but file {class_transcript} not found!"
+            "Lesson is marked as transcribed but file %s not found!", class_transcript
         )
         return None
 
-    with open(class_transcript, "r", encoding="utf-8") as f:
+    with open(class_transcript, encoding="utf-8") as f:
         content = json.load(f)
 
     if not isinstance(content, list):
         logging.error(
-            f"Invalid structure in file {class_transcript}. Expected a list of segments."
+            "Invalid structure in file %s. Expected a list of segments.",
+            class_transcript,
         )
         return None
 
@@ -190,8 +157,8 @@ def process_transcript(data_folder: PathLike, lesson_meta: dict) -> Optional[tup
                 item["text"],
                 {
                     "lesson_id": str(lesson_meta["_id"]),
-                    "start": item["start"],
-                    "end": item["end"],
+                    "start": str(item["start"]),
+                    "end": str(item["end"]),
                     "subject": lesson_meta["subject_name"],
                     "lesson": lesson_meta["name"],
                 },
@@ -200,3 +167,30 @@ def process_transcript(data_folder: PathLike, lesson_meta: dict) -> Optional[tup
         )
     )
     return texts, metadatas
+
+
+def transcribed_lessons() -> pymongo.command_cursor.CommandCursor:
+    pipeline = [
+        {
+            "$match": {
+                "transcribed": True,
+            }
+        },
+        {
+            "$lookup": {
+                "from": "subjects",
+                "localField": "subjectId",
+                "foreignField": "_id",
+                "as": "subject",
+            }
+        },
+        {"$unwind": "$subject"},
+        {
+            "$project": {
+                "_id": 1,
+                "name": 1,
+                "subject_name": "$subject.name",
+            }
+        },
+    ]
+    return LessonModel().collection.aggregate(pipeline)
