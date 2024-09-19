@@ -12,6 +12,7 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# TODO: maybe migrate to a CLI library. i.e. argparse
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         logging.info("Usage: python main.py <script> [<args>]")
