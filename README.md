@@ -2,20 +2,9 @@
 
 ### Variables de Ambiente
 
-Duplicar el archivo `.env.example`.
+cp .env.example .env
 
-```python
-MONGODB_URI="mongodb://localhost:27017/"
-OPENFING_URL="https://open.fing.edu.uy"
-DATABASE_NAME="webir"
-
-CACHE_PATH="models" # Folder to persist models and avoid downloading every time, e.g., embeddings.
-VDB_PATH="store/vector_database" # Folder where the vector database will be persisted.
-DATA_PATH="store/transcriptions" # Folder containing transcribed and segmented lessons outputted by Whisper.
-
-HUGGINGFACEHUB_API_TOKEN="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" # Access token of Hugging Face Hub, for the llm
-LANGCHAIN_API_KEY="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" # Api key for LangSmith
-```
+Modificar las variables de ambiente en el archivo `.env` segun corresponda.
 
 ### Requerimientos
 
@@ -172,7 +161,6 @@ fastapi (run | dev) backend/api.py
 -   [ ] (Interesante para jugar) "perform maximum inner product search instead of minimum Euclidean search. There is also limited support for other distances (L1, Linf, etc.)." [faiss docs](https://faiss.ai/). osea que podriamos hacer algo divertido como responder lo mas opuesto a lo que se pregunta.
 -   [ ] Agregar el reranker. [bge-m3](https://huggingface.co/BAAI/bge-m3) ver el bge-reranker en el link.
 -   [ ] Leer https://cookbook.openai.com/examples/whisper_processing_guide e implementar algun audio pre processing
-
 
 ## Tools
 
