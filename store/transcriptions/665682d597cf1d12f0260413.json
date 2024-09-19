@@ -1,0 +1,3762 @@
+[
+    {
+        "text": " finished",
+        "start": 0.0,
+        "end": 3.0
+    },
+    {
+        "text": " Tapas guide",
+        "start": 16.0,
+        "end": 17.0
+    },
+    {
+        "text": " Adonado analógico, adonado por amplificar señales, a partir de eso de dar ganancia, podemos",
+        "start": 17.0,
+        "end": 23.8
+    },
+    {
+        "text": " más algún tuquito más tener un amplifiore operacional y con eso casi queríamos toda la",
+        "start": 23.8,
+        "end": 29.060000000000002
+    },
+    {
+        "text": " electrónica analógica.",
+        "start": 29.060000000000002,
+        "end": 30.8
+    },
+    {
+        "text": " Ahí veíamos que además de que como fuente con toda la detención, que sería una manera",
+        "start": 30.8,
+        "end": 37.58
+    },
+    {
+        "text": " en general también lo podemos pensar o solucionar si tenemos una fuente controlada de corriente,",
+        "start": 37.58,
+        "end": 43.8
+    },
+    {
+        "text": " que es de hecho van a dar lo que vamos a tener en un transistor.",
+        "start": 43.8,
+        "end": 47.08
+    },
+    {
+        "text": " Y por otra parte el otro modo de funcionamiento que precisamos de alguna manera es el funcionamiento",
+        "start": 47.08,
+        "end": 53.62
+    },
+    {
+        "text": " como llave controlada por tensión o por corriente, que es lo que vamos a usar en los circuitos",
+        "start": 53.62,
+        "end": 59.12
+    },
+    {
+        "text": " digitales.",
+        "start": 59.12,
+        "end": 60.12
+    },
+    {
+        "text": " Entonces hoy vamos a empezar a dar los transistores que ocupan el lugar central al curso, que",
+        "start": 60.12,
+        "end": 65.84
+    },
+    {
+        "text": " son los transistores y en la electrónica actual también, que son los transistores de",
+        "start": 65.84,
+        "end": 69.72
+    },
+    {
+        "text": " efecto de campo.",
+        "start": 69.72,
+        "end": 70.72
+    },
+    {
+        "text": " Entonces los field effect transistores como FETs, como se llaman por sus siglas ingles,",
+        "start": 70.72,
+        "end": 76.64
+    },
+    {
+        "text": " en particular el que más nos vamos a centrar y el que más sin duda se impuesto por muy",
+        "start": 76.64,
+        "end": 82.36
+    },
+    {
+        "text": " lejos, es el que se conoce como MoFET, Metal, Oxide, semi conductor FET por su estructura",
+        "start": 82.36,
+        "end": 88.28
+    },
+    {
+        "text": " física que vamos a ver ahora enseguida.",
+        "start": 88.28,
+        "end": 91.75999999999999
+    },
+    {
+        "text": " Y en realidad hay dos tipos de MoFET, los de Enriquecimiento y los de Empobrecimiento,",
+        "start": 91.75999999999999,
+        "end": 100.4
+    },
+    {
+        "text": " que si conoce la terminología del mundo los relé, digamos, uno es normalmente abierto,",
+        "start": 100.4,
+        "end": 106.68
+    },
+    {
+        "text": " que es el de Enriquecimiento, o sea menos que yo haga algo, esa llave hasta que si",
+        "start": 106.68,
+        "end": 111.08000000000001
+    },
+    {
+        "text": " hemos no va a dejar pasar la corriente, va a estar abierta, no va a conducir.",
+        "start": 111.08000000000001,
+        "end": 114.92
+    },
+    {
+        "text": " Y el de Empobrecimiento es al revés, es normalmente cerrado, es decir, si yo no hago nada, si",
+        "start": 114.92,
+        "end": 119.76
+    },
+    {
+        "text": " no le aplico tensión, deja pasar la corriente para abrir la llave, tengo que aplicar una",
+        "start": 119.76,
+        "end": 124.48
+    },
+    {
+        "text": " tensión que lo corte, que lo interrumpa.",
+        "start": 124.48,
+        "end": 127.16000000000001
+    },
+    {
+        "text": " Pero toda forma, el más este, que nos vamos a centrar es el primero, pues también es",
+        "start": 127.16,
+        "end": 131.44
+    },
+    {
+        "text": " el más usado ampliamente, existe en otras, en definitiva, podíamos decir que existe",
+        "start": 131.44,
+        "end": 136.88
+    },
+    {
+        "text": " en otras variantes de FET sin ser el MoFET de Enriquecimiento, como el MoFET de Empobrecimiento",
+        "start": 136.88,
+        "end": 141.76
+    },
+    {
+        "text": " o el FET de Juntura, que a los efectos de recursos totalmente anécdóticos, digamos,",
+        "start": 141.76,
+        "end": 147.44
+    },
+    {
+        "text": " no vamos a meter en ellos, general, a los efectos de la electrónica actual, es bastante",
+        "start": 147.44,
+        "end": 151.96
+    },
+    {
+        "text": " anécdótico, o sea, son usados en casos muy, muy particulares.",
+        "start": 151.96,
+        "end": 157.04
+    },
+    {
+        "text": " Entonces, quien nos vamos a centrar es en el MoFET, que como yo os comentado es una idea,",
+        "start": 157.04,
+        "end": 162.51999999999998
+    },
+    {
+        "text": " una idea del estilo estar una patente bastante vieja de 1928, pero que recién a fines de los",
+        "start": 162.51999999999998,
+        "end": 169.84
+    },
+    {
+        "text": " 50, principios de los 60, donde se pudo implementar prácticamente.",
+        "start": 169.84,
+        "end": 173.76
+    },
+    {
+        "text": " Aseguala a mí os he dicho, el transistor nació en 1948, con el transistor bipolar,",
+        "start": 173.76,
+        "end": 180.16
+    },
+    {
+        "text": " o sea, y el circuito integrado en el 58, o sea, el MoFET nació en la primera época",
+        "start": 180.16,
+        "end": 186.44
+    },
+    {
+        "text": " de la electrónica integrada, en la época que nació en los primeros chips, y rápidamente",
+        "start": 186.44,
+        "end": 191.44
+    },
+    {
+        "text": " mostró que tenía muchas ventajas para poder implementar un circuito integrado basado",
+        "start": 191.44,
+        "end": 197.0
+    },
+    {
+        "text": " en estos transistores. Los circuitos integrados moos actualmente",
+        "start": 197.0,
+        "end": 202.32
+    },
+    {
+        "text": " son más del 90% y, no probablemente, sea el 95%, 90 y pico por ciento, largo de la electrónica",
+        "start": 202.32,
+        "end": 212.07999999999998
+    },
+    {
+        "text": " actual, por eso también el interés de estudiar este dispositivo, tanto que para quien va a",
+        "start": 212.08,
+        "end": 217.36
+    },
+    {
+        "text": " seguir en el electrónica, porque es un dispositivo fundamental, pero también, sobre todo,",
+        "start": 217.36,
+        "end": 221.4
+    },
+    {
+        "text": " para quien no va a seguir en el electrónica y este curso le va a servir como una primera",
+        "start": 221.4,
+        "end": 226.76000000000002
+    },
+    {
+        "text": " aproximación a la electrónica y saber en qué se basa la tecnología actual, bueno,",
+        "start": 226.76000000000002,
+        "end": 231.16000000000003
+    },
+    {
+        "text": " la tecnología actual se basa en estos dispositivos, entonces yo le ayé el interés de estudiar.",
+        "start": 231.16000000000003,
+        "end": 236.96
+    },
+    {
+        "text": " Y fue el dispositivo que permitió lo que en algún momento se llamó la era BLEC, o sea, la era",
+        "start": 237.68,
+        "end": 243.8
+    },
+    {
+        "text": " de muy grande escala de integración, o sea, o en definitiva, podemos decir en otros términos",
+        "start": 243.8,
+        "end": 249.84
+    },
+    {
+        "text": " la ley de mur, de que cada año y medio se duplica la cantidad de transistores que hay en un chip,",
+        "start": 249.84,
+        "end": 255.72
+    },
+    {
+        "text": " eso fue gracias a que con los MoFET se pudieron ir fabricando cada vez más pequeños.",
+        "start": 255.72,
+        "end": 261.84000000000003
+    },
+    {
+        "text": " Al nivel que vamos a ver ahora al seguimiento, eso es lo que se nomina escalado,",
+        "start": 261.84,
+        "end": 267.84
+    },
+    {
+        "text": " es callin, y hace ya algunos años se superó la barrera de más de mil millones de transistores",
+        "start": 267.84,
+        "end": 274.0
+    },
+    {
+        "text": " en un chip, ahora vamos a ver algunos ejemplos, pero bueno, presentemos a nuestro invitado",
+        "start": 274.0,
+        "end": 281.55999999999995
+    },
+    {
+        "text": " estrella, entonces, ese es el aspecto de un esquema, digamos, simplificado físico de cómo está",
+        "start": 281.55999999999995,
+        "end": 291.15999999999997
+    },
+    {
+        "text": " hecho un transistor en hemos de enriquecimiento. Vamos a entrarnos toda la presentación",
+        "start": 291.16,
+        "end": 296.56
+    },
+    {
+        "text": " de dispositivo en el NEMOS, que es una variante, lo vamos a tener como su hermano dual que es el",
+        "start": 296.56,
+        "end": 305.02000000000004
+    },
+    {
+        "text": " PEMOS, que bueno, que una vez que entendamos este va a ser muy fácil de cambiando algunas cosas,",
+        "start": 305.02000000000004,
+        "end": 311.32000000000005
+    },
+    {
+        "text": " entender el otro, dando vuelta algún signo, cambiando alguna cosa entender el otro. Entonces,",
+        "start": 311.32000000000005,
+        "end": 316.88
+    },
+    {
+        "text": " para hacer un transistor en NEMOS se parte de un bloque de silicio dopado tipo P, o sea,",
+        "start": 317.88,
+        "end": 325.08
+    },
+    {
+        "text": " rícon huecos, no demasiado dopado, pero rícon huecos, que es lo que llamamos el sustrato,",
+        "start": 325.08,
+        "end": 330.56
+    },
+    {
+        "text": " que sería esta zona blanca, que sería el semiconductor, sería la S en la sigla MOS,",
+        "start": 330.56,
+        "end": 338.12
+    },
+    {
+        "text": " el pedazo de semiconductor que usamos. En esa zona tipo P se construyen 2 zonas,",
+        "start": 338.12,
+        "end": 344.2
+    },
+    {
+        "text": " dopada fuertemente tipo N, para que tengan baja resistencia, o sea, ricas en el electrones,",
+        "start": 345.08,
+        "end": 352.64
+    },
+    {
+        "text": " que esas 2 zonas en el definitivo van a ser los terminales principales del dispositivo,",
+        "start": 352.64,
+        "end": 359.12
+    },
+    {
+        "text": " o sea, van a ser los 2 bornes de nuestra llave, o los 2 bornes de nuestra fuente corriente,",
+        "start": 359.12,
+        "end": 364.24
+    },
+    {
+        "text": " o sea, va a ser entre quienes va a circular la corriente principal del dispositivo.",
+        "start": 364.24,
+        "end": 368.56
+    },
+    {
+        "text": " Esos 2 terminales se nominan, SURS y DRAIN en inglés, o sea, en español la",
+        "start": 369.28000000000003,
+        "end": 377.84
+    },
+    {
+        "text": " traducción sería así como fuente y DRAIN sería DRAIN, el DRAIN es, por ejemplo,",
+        "start": 377.84,
+        "end": 383.64
+    },
+    {
+        "text": " el de SAW una pileta, es en inglés, se le llama DRAIN, sería el de SAW que había",
+        "start": 383.64,
+        "end": 389.84000000000003
+    },
+    {
+        "text": " mejor raro, pero es el DRAIN, o muchas veces se castellan y se le llama DRAIN, nosotros",
+        "start": 389.84000000000003,
+        "end": 396.88
+    },
+    {
+        "text": " vamos a usar los nombres en inglés de SURS y DRAIN, que en realidad esos nombres tienen que",
+        "start": 396.88,
+        "end": 402.44
+    },
+    {
+        "text": " ver con qué es lo que hacen los portadores, cuando el MOFET conduzca, los portadores van siempre",
+        "start": 402.44,
+        "end": 409.76
+    },
+    {
+        "text": " de la fuente, que justamente se hace nombre, pues la fuente de los portadores, hacia el rena",
+        "start": 409.76,
+        "end": 414.64
+    },
+    {
+        "text": " dor, que es llevarse en nombre, pues por donde se van los portadores.",
+        "start": 414.64,
+        "end": 419.8
+    },
+    {
+        "text": " Bien, entonces arriba de este pedazo de semi conductor tenemos lo que está representado",
+        "start": 419.8,
+        "end": 428.64
+    },
+    {
+        "text": " a Kangri Césito, que es un ajilante, que tradicionalmente fue durante muchas décadas,",
+        "start": 428.64,
+        "end": 436.0
+    },
+    {
+        "text": " que se diremos casi, este fue óxido ecilicio, que es en realidad, es el mismo material con",
+        "start": 436.0,
+        "end": 444.56
+    },
+    {
+        "text": " el vidrio, el vidrio también es óxido, los vidrios comunes son óxidos ecilicios, que",
+        "start": 444.56,
+        "end": 453.88
+    },
+    {
+        "text": " sirve de ajilante, pero queríamos, en los últimos años, o en la última década, se ha ido",
+        "start": 453.88,
+        "end": 461.12
+    },
+    {
+        "text": " cambiando el material que se usa acá, porque ese óxido, a medida que el transistor se hace",
+        "start": 461.12,
+        "end": 466.16
+    },
+    {
+        "text": " como una motésia y se vuelve cada vez más chico, ese óxido cada vez iba volviendo cada",
+        "start": 466.16,
+        "end": 469.84000000000003
+    },
+    {
+        "text": " vez más chico, hasta el punto de que ya el óxido ecilicio no servía, porque era un óxido",
+        "start": 469.84000000000003,
+        "end": 477.2
+    },
+    {
+        "text": " de unas pocas capas atómicas de espesor, entonces ya empezaba a poder no funcionar bien",
+        "start": 477.2,
+        "end": 483.64
+    },
+    {
+        "text": " como ajilante, los electrones podían digamos colarse entre los átomos de ese ajilante",
+        "start": 483.64,
+        "end": 488.92
+    },
+    {
+        "text": " y pasar de un lado al otro, por una cosa se llama efecto túnel, en definitivo un óxido",
+        "start": 488.92,
+        "end": 495.24
+    },
+    {
+        "text": " tan tan finito, ya no iba a cumplir las funciones de óxido, entonces se tuvo que pasar a otros",
+        "start": 495.24,
+        "end": 501.40000000000003
+    },
+    {
+        "text": " materiales que tuvieran las mismas propiedades elécticas, pero que no fueran tan tan finitos,",
+        "start": 501.40000000000003,
+        "end": 509.40000000000003
+    },
+    {
+        "text": " tan tan finito estamos hablando de algunos pocos nanómetros, digamos, de espesor de esta",
+        "start": 509.40000000000003,
+        "end": 514.5600000000001
+    },
+    {
+        "text": " capa que iba a cadernos y bueno y finalmente tenemos el terminal de control, se acuerdan",
+        "start": 514.56,
+        "end": 523.1199999999999
+    },
+    {
+        "text": " nosotros la despasada, la despasada decíamos entonces que nosotros precisábamos o una fuente",
+        "start": 523.1199999999999,
+        "end": 539.92
+    },
+    {
+        "text": " controlada por hoy vamos a tener algo que se iba a comportar como una fuente controlada",
+        "start": 539.92,
+        "end": 546.68
+    },
+    {
+        "text": " por una cierta tensión, respecto a tierra, o que se iba a comportar como una llave también",
+        "start": 546.68,
+        "end": 555.92
+    },
+    {
+        "text": " controlada por una cierta tensión, bueno esa tensión de control de la llave o la tensión",
+        "start": 555.92,
+        "end": 562.76
+    },
+    {
+        "text": " de control de la fuente corriente, en el MOFET, va a ser la tensión que pongamos en",
+        "start": 562.76,
+        "end": 567.52
+    },
+    {
+        "text": " este terminal, en esta zona metálica, conductora que es lo que se nomina el gate o la puerta",
+        "start": 567.52,
+        "end": 574.92
+    },
+    {
+        "text": " o compuerta en inglés, entonces como ven digamos el capaz que ahí no puede empezar a intuir",
+        "start": 574.92,
+        "end": 582.28
+    },
+    {
+        "text": " el, porque el, el los FETs se llaman FETs, que en definitiva el, el terminal que usamos",
+        "start": 582.28,
+        "end": 590.4399999999999
+    },
+    {
+        "text": " para controlar no toca al lugar donde va a pasar la corriente, no tiene contacto eléctrico",
+        "start": 590.4399999999999,
+        "end": 596.84
+    },
+    {
+        "text": " directo, el contacto es a través de este islante, o sea que en definitiva lo que va a ser que",
+        "start": 596.84,
+        "end": 602.96
+    },
+    {
+        "text": " el transistor conduzca o no conduzca más o conduzca menos va a ser un efecto del campo eléctrico",
+        "start": 602.96,
+        "end": 608.9200000000001
+    },
+    {
+        "text": " que genera la tensión que pongamos acá en la puerta, o sea a través de ese islante como",
+        "start": 608.9200000000001,
+        "end": 613.52
+    },
+    {
+        "text": " a distancia si quieren por un efecto capacitivo, es otra manera de pensarlo, este, la tensión",
+        "start": 613.52,
+        "end": 620.36
+    },
+    {
+        "text": " que pongamos acá respecto al sustrato va a tener su efecto aquí abajo y este, y es lo",
+        "start": 620.36,
+        "end": 626.44
+    },
+    {
+        "text": " que va a controlar cuánta corriente pasa o no pasa por el transistor, lo primero que",
+        "start": 626.44,
+        "end": 630.96
+    },
+    {
+        "text": " vamos a ver este van a ver es aparte de algunas cosas básicas de esta estructura vamos a",
+        "start": 630.96,
+        "end": 638.44
+    },
+    {
+        "text": " ver digamos en seguida los moscas básicos funcionamientos porque no conduce así o porque",
+        "start": 638.44,
+        "end": 643.0
+    },
+    {
+        "text": " conduce, etcétera, hay unas preguntas acá, bueno cualquier cosa este avise, bien entonces",
+        "start": 643.0,
+        "end": 653.2800000000001
+    },
+    {
+        "text": " una vez que tenemos esta estructura las dimensiones básicas de un transistor son su largo y",
+        "start": 653.28,
+        "end": 661.6
+    },
+    {
+        "text": " su ancho, de hecho si uno diseño un circuito integrado como diseñador lo que puede controlar",
+        "start": 661.6,
+        "end": 668.5
+    },
+    {
+        "text": " es el largo y el ancho cada uno de los transistores que pone dentro de su chip y por supuesto",
+        "start": 668.5,
+        "end": 672.64
+    },
+    {
+        "text": " cómo los interconecta, el resto de las dimensiones por ejemplo no sé el espesor del óxido,",
+        "start": 672.64,
+        "end": 678.68
+    },
+    {
+        "text": " cómo son los dos pajes o la profundidad de los dos pajes todo eso lo define en forma",
+        "start": 678.68,
+        "end": 683.76
+    },
+    {
+        "text": " fija la fábrica que va a fabricar mi circuito integrado, yo lo que puedo controlar es de que",
+        "start": 683.76,
+        "end": 690.3199999999999
+    },
+    {
+        "text": " largo hago cada transistor y de que ancho hago cada transistor, o sea las dos dimensiones",
+        "start": 690.3199999999999,
+        "end": 695.1999999999999
+    },
+    {
+        "text": " fundamentales son al largo y el ancho que son estas dos dimensiones, que se desfidiva son",
+        "start": 695.1999999999999,
+        "end": 701.1999999999999
+    },
+    {
+        "text": " las dos dimensiones de la area que de la puerta, el largo el transistor como vamos a ver",
+        "start": 701.2,
+        "end": 710.0
+    },
+    {
+        "text": " es normalmente que por cómo quedan las ecuaciones, por cómo se fuiste dispositivo es el que normalmente",
+        "start": 710.0,
+        "end": 718.8000000000001
+    },
+    {
+        "text": " se usa más chico de los dos excepto casos especiales, es el que es más pequeñito, o sea",
+        "start": 718.8000000000001,
+        "end": 726.2
+    },
+    {
+        "text": " la escala es más o menos como se muestra ahí o más grande puede ser pero dio la diferencia",
+        "start": 726.2,
+        "end": 730.32
+    },
+    {
+        "text": " de los dos pero digo este normalmente es más grande que este y entonces el largo el transistor",
+        "start": 730.32,
+        "end": 737.44
+    },
+    {
+        "text": " que es como la dimensión mínima del transistor es lo que se usa para caracterizar una tecnología,",
+        "start": 737.44,
+        "end": 743.24
+    },
+    {
+        "text": " este capaca no ha ido a hablar por ahí, o sea tal circuito integrado está hecho una tecnología",
+        "start": 743.24,
+        "end": 748.32
+    },
+    {
+        "text": " de 45 nanómetros de 28 nanómetros, bueno ahí de lo que se está hablando es de cuál es",
+        "start": 748.32,
+        "end": 754.6800000000001
+    },
+    {
+        "text": " el largo mínimo que se pueden fabricar los transistores de ese circuito integrado, bien,",
+        "start": 754.68,
+        "end": 762.8399999999999
+    },
+    {
+        "text": " bueno vayamos a lo que sería el fin de la historia digamos, este capas que lo podemos dibujar",
+        "start": 762.8399999999999,
+        "end": 770.2399999999999
+    },
+    {
+        "text": " para acá para no perdarlo de vista, enseguida no me meteres más detalles pero básicamente",
+        "start": 770.2399999999999,
+        "end": 777.12
+    },
+    {
+        "text": " el si hacemos un corte que es lo que vamos a trabajar, o sea no lo vamos a dibujar siempre",
+        "start": 777.12,
+        "end": 783.0799999999999
+    },
+    {
+        "text": " en tres días si hacemos un corte entonces básicamente tenemos acá el gate, esto es",
+        "start": 783.08,
+        "end": 790.84
+    },
+    {
+        "text": " enemas digamos que sea el sur, esto es enemas el drain y de hecho estrictamente el transistor",
+        "start": 790.84,
+        "end": 799.36
+    },
+    {
+        "text": " es un dispositivo de cuatro terminales, el cuarto terminal es el sustrato que sería la",
+        "start": 799.36,
+        "end": 811.72
+    },
+    {
+        "text": " parte abajo, después van a ver que en algunos casos esto ya viene, no sé si uno va a comprar",
+        "start": 811.72,
+        "end": 817.2
+    },
+    {
+        "text": " a rondar un transistormos suelto le van a dar un dispositivo con tres patas, eso es porque en",
+        "start": 817.2,
+        "end": 825.64
+    },
+    {
+        "text": " realidad el sustrato ya está conectada una de estas patas pero en el fondo estrictamente es un",
+        "start": 825.64,
+        "end": 830.5600000000001
+    },
+    {
+        "text": " dispositivo de cuatro terminales, entonces si cómo se comporta un transistormos bueno,",
+        "start": 830.56,
+        "end": 842.56
+    },
+    {
+        "text": " básicamente esta es una de las curvas características esencialmente tenemos acá tenemos como es la",
+        "start": 842.56,
+        "end": 851.28
+    },
+    {
+        "text": " atención gate, esta esta referida de sustrato, o sea es el gate sustrato digamos imaginemos como",
+        "start": 851.28,
+        "end": 857.52
+    },
+    {
+        "text": " la atención gate sustrato para ya va aumentando la atención gate sustrato, acá tenemos la",
+        "start": 857.52,
+        "end": 866.4
+    },
+    {
+        "text": " atención entre drain y sur, o sea la atención en los terminales principales del transistor y",
+        "start": 866.4,
+        "end": 875.48
+    },
+    {
+        "text": " acá tenemos la idea ese o sea la corriente que pasa entre drain y sur, entonces en definitiva si quieren",
+        "start": 875.48,
+        "end": 882.76
+    },
+    {
+        "text": " no para en una primera aproximación podemos pensar que esto es el drain, esta es la sur,",
+        "start": 888.24,
+        "end": 897.3199999999999
+    },
+    {
+        "text": " este es el gate y este es sustrato, y lo mismo acá este es el drain, esta es la sur, este es el",
+        "start": 897.3199999999999,
+        "end": 907.88
+    },
+    {
+        "text": " gate y este es sustrato respecto aquí en esta referida la atención de gate, entonces el",
+        "start": 907.88,
+        "end": 913.76
+    },
+    {
+        "text": " transistor se termina comportando así fíjense que si miramos estas partes horizontales,",
+        "start": 914.3199999999999,
+        "end": 920.92
+    },
+    {
+        "text": " que tenemos que la corriente de drain no depende de la atención de sur en estos pedazos y ese es",
+        "start": 923.6,
+        "end": 930.3199999999999
+    },
+    {
+        "text": " el comportamiento de que componente, algo que la corriente no depende de la atención que le",
+        "start": 930.3199999999999,
+        "end": 936.48
+    },
+    {
+        "text": " aplico, como se llama eso, el cener tiene, no el cener, sí bueno más o menos digamos porque el",
+        "start": 936.48,
+        "end": 946.9200000000001
+    },
+    {
+        "text": " cener es como que independiente de la corriente te da una atención fija, acá se arrevese, independiente",
+        "start": 946.9200000000001,
+        "end": 951.8000000000001
+    },
+    {
+        "text": " de la atención yo da una corriente fija, bueno un cable en realidad, bueno sí está bien, si",
+        "start": 951.8000000000001,
+        "end": 963.76
+    },
+    {
+        "text": " un cable me daría una corriente infinita, un cable ideal me daría una corriente infinita para cualquier",
+        "start": 963.76,
+        "end": 969.16
+    },
+    {
+        "text": " diferencia atención o más bien me da diferencia atención, ¿sabes cómo se llama el componente que",
+        "start": 969.16,
+        "end": 972.56
+    },
+    {
+        "text": " lo tenemos lo tienen dibujado en el pizarro? Si yo digo algo que me da una corriente fija,",
+        "start": 972.56,
+        "end": 977.28
+    },
+    {
+        "text": " una fuente de corriente, exactamente, entonces si esto es la corriente no cambia,",
+        "start": 977.28,
+        "end": 982.3199999999999
+    },
+    {
+        "text": " independiente de la atención que yo le aplique, eso es un comportamiento de fuente de corriente,",
+        "start": 982.3199999999999,
+        "end": 989.3199999999999
+    },
+    {
+        "text": " que es una fuente de corriente contcolada, pues cuánta corriente me da depende de cuánto",
+        "start": 990.0400000000001,
+        "end": 995.84
+    },
+    {
+        "text": " yo de que atención yo le pongo en el gate y en el otro pedazo en la parte donde la corriente no",
+        "start": 995.84,
+        "end": 1005.88
+    },
+    {
+        "text": " es constante, si imaginamos que estas curvas que en realidad no son estrictas en tarrectas,",
+        "start": 1005.88,
+        "end": 1012.6
+    },
+    {
+        "text": " acá se nota que se va curvando digamos, pero si imagináramos que y sobre todo cerca de acá",
+        "start": 1012.6,
+        "end": 1017.96
+    },
+    {
+        "text": " del cero son bastante rectas, se pueden aproximar bastante bien por la recta, si imaginamos",
+        "start": 1018.08,
+        "end": 1023.4000000000001
+    },
+    {
+        "text": " que estas curvas es más o menos una recta quiere decir que la corriente es proporcional",
+        "start": 1023.4000000000001,
+        "end": 1028.52
+    },
+    {
+        "text": " en la atención y por lo tanto quiere decir que en esta zona el transistor se comporta",
+        "start": 1028.52,
+        "end": 1036.28
+    },
+    {
+        "text": " esencialmente como una resistencia y se va a comportar como una resistencia de valor",
+        "start": 1036.28,
+        "end": 1041.68
+    },
+    {
+        "text": " bastante bajo, lo cual quiere determina queriendo decir que es la zona en la cual la vamos a usar",
+        "start": 1041.68,
+        "end": 1049.96
+    },
+    {
+        "text": " como llave, o sea va a ser una llave que en ciertas condiciones de VG que no está dibujado acá la",
+        "start": 1049.96,
+        "end": 1057.4
+    },
+    {
+        "text": " corriente me da cero, o sea llave la puedo apagar, pero cuando lo hago conducir que sería que voy",
+        "start": 1057.4,
+        "end": 1062.5600000000002
+    },
+    {
+        "text": " a estar digamos, no sé por acá imagínemos, voy a tener una resistencia baja, que es lo que",
+        "start": 1062.5600000000002,
+        "end": 1069.0
+    },
+    {
+        "text": " quiere una llave, una llave cerrada que ha reen corto circuito, no va a ser exactamente un corto",
+        "start": 1069.08,
+        "end": 1072.88
+    },
+    {
+        "text": " circuito, pero va a ser una resistencia relativamente baja que va a depender del transistor. Entonces,",
+        "start": 1072.88,
+        "end": 1078.24
+    },
+    {
+        "text": " básicamente esas son las distintas zonas de funcionamiento, tenemos lo que se conoce como la",
+        "start": 1078.24,
+        "end": 1084.64
+    },
+    {
+        "text": " zona de saturación, que es donde funcionamos como fuente corriente, tenemos lo que se conoce como",
+        "start": 1084.64,
+        "end": 1091.6
+    },
+    {
+        "text": " la zona lineal que es donde vamos a funcionar como llave contolada por tensión y también no sé si",
+        "start": 1091.6,
+        "end": 1100.6799999999998
+    },
+    {
+        "text": " la dibujé acá, no la dibujé acá abajo estaría la zona de corte, que sería el funcionamiento como una",
+        "start": 1100.6799999999998,
+        "end": 1108.28
+    },
+    {
+        "text": " llave abierta, o sea zona de corte sería corriente cero, o esencialmente cero, o sea que esto va a",
+        "start": 1108.28,
+        "end": 1116.3999999999999
+    },
+    {
+        "text": " responder al transistormos en saturación, digo todo esto como siempre en primera aproximación,",
+        "start": 1116.4,
+        "end": 1128.8000000000002
+    },
+    {
+        "text": " después siempre la realidad es más compleja de lo que uno carría o lo que uno imagina o lo que uno",
+        "start": 1128.8000000000002,
+        "end": 1133.5600000000002
+    },
+    {
+        "text": " piensa en primera, cuando hace las primeras cuentas, se nefetiva va a haber efecto secundario,",
+        "start": 1133.5600000000002,
+        "end": 1138.8000000000002
+    },
+    {
+        "text": " la fuente corriente no va a ser perfecta, pero en primera aproximación, el transistormos en",
+        "start": 1138.8000000000002,
+        "end": 1145.52
+    },
+    {
+        "text": " saturación nos da este comportamiento y acá tenemos el transistormos en zona lineal",
+        "start": 1145.52,
+        "end": 1156.12
+    },
+    {
+        "text": " que es la llave cerrada con cierta resistencia serie y o si no también tenemos",
+        "start": 1160.8,
+        "end": 1174.48
+    },
+    {
+        "text": " en corte, en la zona de corte que va a ser la llave abierta, sí,",
+        "start": 1175.04,
+        "end": 1190.68
+    },
+    {
+        "text": " bueno eso es un voltaje que es importante que tiene distintos nombres que justamente es donde",
+        "start": 1195.4,
+        "end": 1203.56
+    },
+    {
+        "text": " está la frontera entre las dos zonas, se llama el voltaje de pinchof por eso la P, o también",
+        "start": 1203.56,
+        "end": 1209.6799999999998
+    },
+    {
+        "text": " se llama BDSAT, después lo vamos a definir, digamos ese nifetiva, en función de cuál sea la",
+        "start": 1209.6799999999998,
+        "end": 1216.9199999999998
+    },
+    {
+        "text": " tensión BD, uno va a estar en una zona o en la otra, bien, alguna otra pregunta,",
+        "start": 1216.9199999999998,
+        "end": 1226.76
+    },
+    {
+        "text": " bueno, si vamos adelante entonces, veamos un poco un pantallazo de dónde estamos parados hoy en",
+        "start": 1226.76,
+        "end": 1237.76
+    },
+    {
+        "text": " día con el transistormos que creo interesante, esta transparencia siempre está vieja, yo más",
+        "start": 1237.76,
+        "end": 1244.28
+    },
+    {
+        "text": " son la cualicé pero digo que se podía actualizar un priori, todos los años uno tiene que entrar",
+        "start": 1244.28,
+        "end": 1249.12
+    },
+    {
+        "text": " en un detalle bastante fin, sino que poner números exactos acá, pero la idea general es muy exacta,",
+        "start": 1249.12,
+        "end": 1255.8799999999999
+    },
+    {
+        "text": " uno tiene que actualizarla siempre por la tecnología se está moviendo siempre, pero en el",
+        "start": 1255.88,
+        "end": 1261.24
+    },
+    {
+        "text": " FITI, hoy en día el largo de canal de los transistoresmos que estamos estudiando acá, a",
+        "start": 1261.24,
+        "end": 1268.3600000000001
+    },
+    {
+        "text": " arranca dependiendo del caso desde más o menos 16 nanómetros, 28, yo salgo súper establecido,",
+        "start": 1268.3600000000001,
+        "end": 1274.8000000000002
+    },
+    {
+        "text": " 22 nanómetros, hay algunos, arranca más o menos en ese arranco digamos, que es algo bastante",
+        "start": 1274.8000000000002,
+        "end": 1283.2
+    },
+    {
+        "text": " chiquito digamos, no sé si piensan, no sé un pelo, nuestro tiene un diámetro como de 10",
+        "start": 1284.0,
+        "end": 1296.16
+    },
+    {
+        "text": " micras, o sea que es algo que es 10 mil nanómetros, o sea que esto es algo así como mil veces más",
+        "start": 1296.16,
+        "end": 1305.92
+    },
+    {
+        "text": " chico que un pelo digamos, y el doble vea arranca de valores un poquito mayores, en realidad como",
+        "start": 1305.92,
+        "end": 1317.92
+    },
+    {
+        "text": " ahora he seguido hoy en día y posiblemente alguno usted es capaz que en el bolsillo tiene algunos",
+        "start": 1317.92,
+        "end": 1324.3600000000001
+    },
+    {
+        "text": " transistores de 14 nanómetros, o 7 nanómetros, 7 más difícil, pero capaz que sí, pero 14",
+        "start": 1324.3600000000001,
+        "end": 1331.8400000000001
+    },
+    {
+        "text": " nanómetros en el celular, lo que ocurre es que en realidad a partir de un lugar que depende",
+        "start": 1331.84,
+        "end": 1338.72
+    },
+    {
+        "text": " de la fábrica que anda por acá, por los 20 más o menos, en realidad el transistor, se",
+        "start": 1338.72,
+        "end": 1347.32
+    },
+    {
+        "text": " quieren mover funcionamiento, sigue siendo inspirado en todo lo que vamos a ver acá, pero la estructura",
+        "start": 1347.32,
+        "end": 1352.1599999999999
+    },
+    {
+        "text": " ya no es esta, físicamente el transistor cambia su forma, su diseño para poder llegar a esos",
+        "start": 1352.1599999999999,
+        "end": 1359.36
+    },
+    {
+        "text": " tamaños tan chiquitos, entonces por eso estrictamente esto puede en un límite por acá,",
+        "start": 1359.36,
+        "end": 1364.84
+    },
+    {
+        "text": " reay cosas más chicas, pero ya no son exactamente eso que estamos mostrando hoy. Y bueno, y el",
+        "start": 1364.84,
+        "end": 1371.8799999999999
+    },
+    {
+        "text": " espesor de óxido, como hacíamos, es de algunos nanómetros, que un nanómetro son unas pocas",
+        "start": 1371.8799999999999,
+        "end": 1379.9199999999998
+    },
+    {
+        "text": " capas atómicas en el caso de casi cualquier material, pero en el caso de óxido silicio más,",
+        "start": 1379.9199999999998,
+        "end": 1385.1599999999999
+    },
+    {
+        "text": " y eso da un límite por lo que se llama la corriente de túnel, o sea el hecho de que ya un material",
+        "start": 1385.16,
+        "end": 1391.92
+    },
+    {
+        "text": " tan finito deja de ser una islante, es más fácil que deje ser un buen aislante. Entonces,",
+        "start": 1391.92,
+        "end": 1398.44
+    },
+    {
+        "text": " como hacíamos eso, llevó un cambio al material que se usa, bueno, se superó hace un tiempo los",
+        "start": 1398.44,
+        "end": 1404.44
+    },
+    {
+        "text": " mil millones de transistores en un chip y los números transistores, y la única aproximadamente,",
+        "start": 1404.44,
+        "end": 1410.72
+    },
+    {
+        "text": " cada dos años, como hice el laidemur, y bueno, y cual es la gracia todo esto? Bueno, hay una",
+        "start": 1410.72,
+        "end": 1416.28
+    },
+    {
+        "text": " primera gracia que es obviamente, si yo tengo más transistores, puede hacer funciones más complejas,",
+        "start": 1416.28,
+        "end": 1421.8
+    },
+    {
+        "text": " puede hacer, en una época se hacían cada vez procesadores más complejos, en un momento donde eso ya,",
+        "start": 1421.8,
+        "end": 1427.88
+    },
+    {
+        "text": " ya como que saturó, y hoy en día como ustedes probablemente sepan lo que se tiende a hacer muchas",
+        "start": 1427.88,
+        "end": 1433.88
+    },
+    {
+        "text": " veces, son varios procesadores en un mismo chip, y estetemos los procesadores dual core, octa core,",
+        "start": 1433.88,
+        "end": 1439.88
+    },
+    {
+        "text": " y cosas por el estilo, digamos, o sea, tenemos muchos procesadores en el mismo chip,",
+        "start": 1439.88,
+        "end": 1444.2
+    },
+    {
+        "text": " además de cada vez más memoria dentro del chip. Entonces, una primera cosa es poder hacer",
+        "start": 1444.2,
+        "end": 1450.64
+    },
+    {
+        "text": " más funciones, o las mismas funciones más barato, que es otra variante que vemos, todos",
+        "start": 1453.3200000000002,
+        "end": 1460.3600000000001
+    },
+    {
+        "text": " vemos en la comodulución de la tecnología, si bien los fabricantes se ingenian para que igual",
+        "start": 1460.3600000000001,
+        "end": 1468.3200000000002
+    },
+    {
+        "text": " queremos tener y comprar los que siguen siendo los más caros, pero en definitiva, así",
+        "start": 1468.32,
+        "end": 1474.32
+    },
+    {
+        "text": " una misma funciones que tenía hace dos, tres años, ahora sale mucho más barato, digamos.",
+        "start": 1474.32,
+        "end": 1478.48
+    },
+    {
+        "text": " Pero sobre todo, desde punto de vista más eléctrico y es algo que vamos a estudiar en la última",
+        "start": 1481.28,
+        "end": 1486.04
+    },
+    {
+        "text": " parte del curso, sobre todo cuando veamos circuitos integrados digitales, la gracia es que estos",
+        "start": 1486.04,
+        "end": 1491.12
+    },
+    {
+        "text": " dispositivos que son cada vez más pequeños, logran que las capacidades parásitas bajen,",
+        "start": 1491.12,
+        "end": 1496.28
+    },
+    {
+        "text": " eso permite que la atención de, perdón, la frecuencia, funcionamiento suba, si permite",
+        "start": 1498.48,
+        "end": 1503.8799999999999
+    },
+    {
+        "text": " ir más rápido, porque esas capacidades que son más chicas, yo las puedo cargar y escargar",
+        "start": 1503.8799999999999,
+        "end": 1508.2
+    },
+    {
+        "text": " más rápido, cargar y escargar con menos corriente, y cada vez que en un circuito digital, un",
+        "start": 1508.2,
+        "end": 1514.28
+    },
+    {
+        "text": " cero pasa un uno, o hay una capacidad que se está cargando, y cada vez que un uno pasa un cero",
+        "start": 1514.28,
+        "end": 1518.6
+    },
+    {
+        "text": " hay una, una varias capacidades que se están descargando, como contra cara de eso, digamos,",
+        "start": 1518.7199999999998,
+        "end": 1526.7199999999998
+    },
+    {
+        "text": " la atención de alimentación ha tenido que ir bajando, porque estos dispositivos tan",
+        "start": 1528.7199999999998,
+        "end": 1534.1999999999998
+    },
+    {
+        "text": " este tan chiquitos y en especial este óxido tan finito no soporta, demasiado atención sin",
+        "start": 1534.1999999999998,
+        "end": 1541.3999999999999
+    },
+    {
+        "text": " romperse, y entonces las últimas tecnologías en general andan con alimentaciones del orden de",
+        "start": 1541.3999999999999,
+        "end": 1547.12
+    },
+    {
+        "text": " menos de un bolto, cerca de un bolto, uno punto dos era bastante estándar mucho tiempo,",
+        "start": 1547.12,
+        "end": 1551.84
+    },
+    {
+        "text": " hay algunas que trabajan en punto 9, porque ya uno punto dos era demasiado alto,",
+        "start": 1551.84,
+        "end": 1557.0
+    },
+    {
+        "text": " antes de ir a eso podemos ver, vamos a dar un vistazo rápido de cuál es la situación real,",
+        "start": 1560.28,
+        "end": 1568.4799999999998
+    },
+    {
+        "text": " digamos, esta es una lista, no sé si se llega a ver algo ahí no, se llegan a leer los números,",
+        "start": 1568.48,
+        "end": 1579.0
+    },
+    {
+        "text": " usted que tiene buena vista, más o menos, puedo hacer zoom si lo pasa que me pierdo una cosa que",
+        "start": 1579.0,
+        "end": 1586.96
+    },
+    {
+        "text": " quiero que se vea, pero bueno, hagamos zoom, ahí, ahí, ahí, ahí, ahí, ahí, ahí, ahí,",
+        "start": 1586.96,
+        "end": 1598.3600000000001
+    },
+    {
+        "text": " bueno, esto es una lista compilada por distinta a gente, digamos, están guiquipedios, o sea que",
+        "start": 1599.16,
+        "end": 1605.8
+    },
+    {
+        "text": " en realidad es, bueno, vale lo que vale, pero yo creo que es bastante de distintas cosas,",
+        "start": 1605.8,
+        "end": 1610.3600000000001
+    },
+    {
+        "text": " hasta parte de buenas referencias, ¿qué tecnología ha usado Apple en sus procesadores para los",
+        "start": 1610.3600000000001,
+        "end": 1616.84
+    },
+    {
+        "text": " distintos productos? Si miramos la lista equivalente Samsung, por ejemplo, va a ser más o menos lo mismo,",
+        "start": 1616.84,
+        "end": 1623.56
+    },
+    {
+        "text": " el panorama, lo pasa que hay un poco más información sobre el caso de Apple, porque la gente le da más",
+        "start": 1623.56,
+        "end": 1627.68
+    },
+    {
+        "text": " curiosidad que hace Apple, y bueno, la primera, en esta columna, bueno, en este acá tiene el nombre",
+        "start": 1627.68,
+        "end": 1634.72
+    },
+    {
+        "text": " del procesador, acá tienen una foto del procesador, o cual es totalmente de ador, después acá, bueno,",
+        "start": 1634.72,
+        "end": 1644.88
+    },
+    {
+        "text": " capaz que podíamos abrir un dato y que interesa, pero acá tiene el dato que nos importa que es la",
+        "start": 1644.88,
+        "end": 1649.3600000000001
+    },
+    {
+        "text": " tecnología en que está fabricado ese procesador, no está el año, pero lo que si está en la última,",
+        "start": 1649.3600000000001,
+        "end": 1656.16
+    },
+    {
+        "text": " bueno, después se ha una cantidad de datos sobre que el tamaño del chip se tendió 1.000",
+        "start": 1656.16,
+        "end": 1661.88
+    },
+    {
+        "text": " metros cuadrados en el primero, y una cantidad de datos técnicos de que hay dentro que",
+        "start": 1661.88,
+        "end": 1668.8400000000001
+    },
+    {
+        "text": " es el procesador, pero en la última columna, bueno, acá está la fecha, el primero es de junio 2007,",
+        "start": 1668.8400000000001,
+        "end": 1678.96
+    },
+    {
+        "text": " y en la última columna tienen en qué producto suzo, o sea, este es el procesador del primer",
+        "start": 1678.96,
+        "end": 1683.6000000000001
+    },
+    {
+        "text": " iPhone, de la primera generación de iPhones, junio 2007 y estaba hecho una tecnología de 90 nanómetros,",
+        "start": 1683.6,
+        "end": 1690.12
+    },
+    {
+        "text": " ¿sabas que si sacamos la foto y el nombre? Tenemos todo lo que importa, bueno, y acá ustedes pueden",
+        "start": 1695.0,
+        "end": 1702.9599999999998
+    },
+    {
+        "text": " ver esa evolución constante de la tecnología, en el 2008 ya se usaban 65 nanómetros,",
+        "start": 1702.9599999999998,
+        "end": 1708.8
+    },
+    {
+        "text": " en el 2009 se saltó a 45 nanómetros, en los primeros iPod y el iPod Touch,",
+        "start": 1708.8,
+        "end": 1723.2
+    },
+    {
+        "text": " en marzo de 2012 para el iPod 2 se saltó a 32 nanómetros y ahí ven que dice 32 nanómetros",
+        "start": 1723.2,
+        "end": 1742.56
+    },
+    {
+        "text": " HKMG, eso es lo que indica que en ese momento se hizo el salto tecnológico de lo que le",
+        "start": 1742.56,
+        "end": 1749.1200000000001
+    },
+    {
+        "text": " decía yo de cambiar el material del óxido, también implica eso cambiar el material con que se hace la",
+        "start": 1749.12,
+        "end": 1754.08
+    },
+    {
+        "text": " compuerta, si seguimos bajando y acercamos al setiembre 2013, 28 nanómetros para el iPhone 5S,",
+        "start": 1754.08,
+        "end": 1767.7199999999998
+    },
+    {
+        "text": " se tiembre 2014 20 nanómetros para el iPhone 6 y acá no estamos sacando a la",
+        "start": 1767.72,
+        "end": 1784.72
+    },
+    {
+        "text": " al día de hoy, en 2015 Apple empezó a usar el 14 y 16 nanómetros pero acá ven que dice 14 y 16",
+        "start": 1784.72,
+        "end": 1793.8600000000001
+    },
+    {
+        "text": " nanómetros, 5F, eso quiere decir que ya no es el FET tradicional que nosotros estamos",
+        "start": 1793.86,
+        "end": 1798.26
+    },
+    {
+        "text": " estudiando sino que ese FET modificado, que yo le decía una de las variantes de FET modificado que",
+        "start": 1798.26,
+        "end": 1803.9799999999998
+    },
+    {
+        "text": " permite llegar a esos tamaños, bueno y una cosa no fuimos mirando pero que estaban en esta",
+        "start": 1803.9799999999998,
+        "end": 1810.3
+    },
+    {
+        "text": " tercera columna, es cuando en algunos casos es cuántos transistores tenían esos chips que",
+        "start": 1810.3,
+        "end": 1815.3799999999999
+    },
+    {
+        "text": " tienen más de 2 billones, más de 3 billones, o sea más de 3 mil millones y bueno y en realidad",
+        "start": 1815.38,
+        "end": 1821.9
+    },
+    {
+        "text": " hoy en día, si le queremos esta tabla, hoy en día Apple ya está trabajando con dispositivos",
+        "start": 1821.9,
+        "end": 1832.5400000000002
+    },
+    {
+        "text": " de 7 nanómetros en sus últimos dispositivos, en el iPhone XS y la nueva versión del iPad y",
+        "start": 1832.5400000000002,
+        "end": 1841.8200000000002
+    },
+    {
+        "text": " tenemos ya estamos cerca de los 10 billones de transistores, bueno esto para dar una idea de lo que",
+        "start": 1841.82,
+        "end": 1849.1
+    },
+    {
+        "text": " de lo que anda o se próparen el práctico no van a tener que diseñar uno de estos digamos,",
+        "start": 1849.1,
+        "end": 1854.58
+    },
+    {
+        "text": " las consoles entender cuáles son las tendencias, entonces bueno esa especie de motesis,",
+        "start": 1854.58,
+        "end": 1867.6599999999999
+    },
+    {
+        "text": " es una cosa de encogimiento que tenemos de los transistores, que no está al lejos de los límites,",
+        "start": 1867.66,
+        "end": 1873.7
+    },
+    {
+        "text": " muchos años de la historia de la microactólica se habló de que estamos llegando a los límites y que no",
+        "start": 1873.7,
+        "end": 1878.9
+    },
+    {
+        "text": " iba a ser posible a chicar más pero esos límites se habló muchas veces y en general se lograron",
+        "start": 1878.9,
+        "end": 1884.66
+    },
+    {
+        "text": " esquivarlos los distintos límites pero ahora acabé tamo más cerca de límites físicos duros",
+        "start": 1884.66,
+        "end": 1890.3400000000001
+    },
+    {
+        "text": " digamos, no, no, no, por hacer un transistor más chico que un ato, digamos, todavía no tamo",
+        "start": 1890.3400000000001,
+        "end": 1894.22
+    },
+    {
+        "text": " eso pero pero pero andamos, andamos cerca, bien y bueno y esto sería la realidad, estos son",
+        "start": 1894.22,
+        "end": 1903.3
+    },
+    {
+        "text": " transistores, fíjense son de las torturas, una reliquia, son de algo así como novede de la",
+        "start": 1903.3,
+        "end": 1908.98
+    },
+    {
+        "text": " tecnología 90 nanómetros posiblemente y lo que ve esto que dibujamos acá nosotros en la",
+        "start": 1908.98,
+        "end": 1917.6200000000001
+    },
+    {
+        "text": " realidad se ve más o menos así, esto amarillo es el gate, el óptido prácticamente no se ve,",
+        "start": 1917.62,
+        "end": 1925.6999999999998
+    },
+    {
+        "text": " es una límite ahí porque digamos, por justamente estamos hablando algo super fino en la en la escala",
+        "start": 1925.6999999999998,
+        "end": 1931.4199999999998
+    },
+    {
+        "text": " en realidad esto que yo voy a dibujar en general como si fueran del mismo espesor, en realidad",
+        "start": 1931.4199999999998,
+        "end": 1935.6999999999998
+    },
+    {
+        "text": " hay uno que es mucho más grueso que el otro digamos, no, estas son las medidas chatas acá digamos,",
+        "start": 1935.6999999999998,
+        "end": 1944.8999999999999
+    },
+    {
+        "text": " así bombe como les dibujamos casi siempre son las difusiones de enemas, o sea son las zonas",
+        "start": 1944.9,
+        "end": 1951.74
+    },
+    {
+        "text": " en demás estas que van a la zona original al surcial drain y estas cosas, parece una especie de",
+        "start": 1951.74,
+        "end": 1958.66
+    },
+    {
+        "text": " columna, son en realidad las conexiones de metal que nos permite conectarnos al transistor y que",
+        "start": 1958.66,
+        "end": 1966.26
+    },
+    {
+        "text": " suben como otro copizo dentro del chip, un circuito integrado en definitiva es una especie de gran",
+        "start": 1966.26,
+        "end": 1970.66
+    },
+    {
+        "text": " sandwich, en el cual podemos arrancar de acá abajo el sustrato, las difusiones, el óptido, la",
+        "start": 1970.66,
+        "end": 1978.5800000000002
+    },
+    {
+        "text": " comporta, pues si seguimos para arriba estas tecnologías con miles de millones de transistores",
+        "start": 1978.5800000000002,
+        "end": 1983.8600000000001
+    },
+    {
+        "text": " tienen que poder no interconectar todos con todos, pueden interconectar unos cuantos con",
+        "start": 1983.8600000000001,
+        "end": 1988.74
+    },
+    {
+        "text": " unos cuantos y eso lleva entonces a que terminan teniendo cosas del estilo entre 8 y 10 capas de",
+        "start": 1988.74,
+        "end": 1996.18
+    },
+    {
+        "text": " metal, o sea hay como 10 pizos de metal que se van cruzando para paíra siendo las distintas",
+        "start": 1996.18,
+        "end": 2002.42
+    },
+    {
+        "text": " interconecciones, entonces acá estamos viendo de hecho la primer capa de metal, o sea como se conecta",
+        "start": 2002.42,
+        "end": 2007.6200000000001
+    },
+    {
+        "text": " con el transistor y acá después viajan a conectarse entre distintas cosas, acá se ve, creo que acá",
+        "start": 2007.6200000000001,
+        "end": 2015.02
+    },
+    {
+        "text": " se es más claro estas de atrás son las que conectan con el gase y estas son las que conectan con",
+        "start": 2015.02,
+        "end": 2020.3
+    },
+    {
+        "text": " el sur y el rey, bien, bueno entonces decíamos el transistor mosa es un dispositivo simétrico de",
+        "start": 2020.86,
+        "end": 2031.58
+    },
+    {
+        "text": " cuatro terminales, no lo dijimos eso pero lo estamos diciendo ahora que era de cuatro terminales,",
+        "start": 2031.58,
+        "end": 2037.34
+    },
+    {
+        "text": " ya lo hemos dicho, lo otro importante es que es un dispositivo estrictamente totalmente simétrico,",
+        "start": 2037.34,
+        "end": 2042.78
+    },
+    {
+        "text": " o sea el sur y el drain se fabrican en forma idéntica en los transistores comunes ahí como",
+        "start": 2042.78,
+        "end": 2050.1
+    },
+    {
+        "text": " todo hay excepciones y caso particulares a esto pero dios no estáis todo comunes, sur y drain son",
+        "start": 2050.7,
+        "end": 2054.86
+    },
+    {
+        "text": " idénticos y entonces incluso vamos a ver que quién es el sur si quién es el drain depende del",
+        "start": 2054.86,
+        "end": 2064.2599999999998
+    },
+    {
+        "text": " funcionamiento del circuito y en un mismo circuito incluso puede pasar de que en cierto instante de",
+        "start": 2064.2599999999998,
+        "end": 2069.74
+    },
+    {
+        "text": " tiempo este sea el sur si este sea el drain porque la corriente está circulando en un cierto sentido y en",
+        "start": 2069.74,
+        "end": 2075.22
+    },
+    {
+        "text": " otro instante de tiempo se devuelta la cosa porque la corriente está circulando en el otro sentido",
+        "start": 2075.22,
+        "end": 2080.14
+    },
+    {
+        "text": " entonces es un dispositivo simétrico la fuente o la sur se es el terminal de donde sale en los",
+        "start": 2081.3399999999997,
+        "end": 2089.14
+    },
+    {
+        "text": " portadores y el drain como si vamos a terminar el deshago e hacia por donde se van los portadores",
+        "start": 2089.14,
+        "end": 2094.2999999999997
+    },
+    {
+        "text": " y en los transistores tenemos los portadores van a ser electrones, es decir ahora mavar que cuando",
+        "start": 2095.8199999999997,
+        "end": 2102.8199999999997
+    },
+    {
+        "text": " para que haya una corriente en el transistormos tenemos se tiene que formar un camino de electrones",
+        "start": 2102.82,
+        "end": 2111.94
+    },
+    {
+        "text": " acá que permita que los muchos electrones que están en la sur pueden viajar hasta el drain",
+        "start": 2111.94,
+        "end": 2118.1000000000004
+    },
+    {
+        "text": " porque si si si lo miramos así como esta hora digamos como está dibujado ahí",
+        "start": 2120.02,
+        "end": 2129.1400000000003
+    },
+    {
+        "text": " que tenemos una zona N una zona P en el medio que se sustrato a todos estos P y otra zona N del",
+        "start": 2129.14,
+        "end": 2143.7
+    },
+    {
+        "text": " otro lado con lo que ustedes conocen hasta ahora como lo representarían eso que componentes tendrían",
+        "start": 2143.7,
+        "end": 2150.94
+    },
+    {
+        "text": " ahí que componentes sería eso una zona P una zona N que formaba un diodo o sea que si lo",
+        "start": 2150.94,
+        "end": 2163.5
+    },
+    {
+        "text": " pensamos ese punto de vista o sea poco más simplificado yo digo bueno pero si yo tengo una zona N",
+        "start": 2163.5,
+        "end": 2170.06
+    },
+    {
+        "text": " una zona P en el medio que es lo que tengo acá y otra zona N esto sería como que tuviera un diodo",
+        "start": 2170.06,
+        "end": 2180.34
+    },
+    {
+        "text": " este P N mirando para allá y acá otro diodo P N mirando para allá",
+        "start": 2180.9,
+        "end": 2185.6600000000003
+    },
+    {
+        "text": " y esto puede conducir corriente de acá acá no porque digo siempre uno uno lo dosta al revés",
+        "start": 2191.26,
+        "end": 2198.2200000000003
+    },
+    {
+        "text": " digamos así para la par lado que vayamos y bueno y de hecho un transistor enemos cuando nace es",
+        "start": 2198.2200000000003,
+        "end": 2205.02
+    },
+    {
+        "text": " básicamente esto y no puede y está cortado por eso si vamos que era de enriquecimiento porque",
+        "start": 2205.02,
+        "end": 2210.06
+    },
+    {
+        "text": " era normalmente abierto o sea si yo no le yo no hago nada sobre esta estructura no va a poder",
+        "start": 2210.06,
+        "end": 2216.06
+    },
+    {
+        "text": " pasar corriente y va a ser como una llave abierta a través de la acción de la tensión a",
+        "start": 2216.06,
+        "end": 2223.5
+    },
+    {
+        "text": " canal gay vamos a ver qué es lo que pasa que permite revertir esa situación cambiar esto y",
+        "start": 2223.5,
+        "end": 2230.54
+    },
+    {
+        "text": " hacer que pase corriente entonces cuando pase corriente lo que va a pasar es que va a",
+        "start": 2230.54,
+        "end": 2235.22
+    },
+    {
+        "text": " ver un camino de electrones que van desde el surza hasta el drain y si hay electrones que van desde",
+        "start": 2235.22,
+        "end": 2240.9
+    },
+    {
+        "text": " el surza hasta el drain entonces quiere decir que la corriente está viniendo de drain asurso o",
+        "start": 2240.9,
+        "end": 2246.22
+    },
+    {
+        "text": " sea en el transistor enemos la corriente circula de drain asurso porque los electrones circulan",
+        "start": 2246.22,
+        "end": 2252.14
+    },
+    {
+        "text": " de surza drain los portadores sean electrones o o huecos va a ser el caso el pemos siempre salen",
+        "start": 2252.14,
+        "end": 2259.86
+    },
+    {
+        "text": " del surz por eso el sur lleva ese nombre porque es la fuente de los portadores bien bueno esto es",
+        "start": 2259.86,
+        "end": 2270.94
+    },
+    {
+        "text": " lo que estamos hablando recién al transistor enemos si uno le pone tensiones como están acá digamos",
+        "start": 2270.94,
+        "end": 2279.1
+    },
+    {
+        "text": " el sustrato a tierra el gay también a tierra que digamos que eso es como si no estuviera ahora",
+        "start": 2279.1,
+        "end": 2285.9
+    },
+    {
+        "text": " moverá alguna disquisición ahí pero imagínemos que o sea no hay diferencia potencial entre",
+        "start": 2285.9,
+        "end": 2291.08
+    },
+    {
+        "text": " callacán o hay un campo eléctrico aplicado es como si esto nos hiciera el surza tierra el",
+        "start": 2291.08,
+        "end": 2298.58
+    },
+    {
+        "text": " drain por estar a tierra por estar una tensión positiva en ese caso lo que tenemos básicamente es",
+        "start": 2298.58,
+        "end": 2304.98
+    },
+    {
+        "text": " lo que veíamos recién al cual si el drain tiene una tensión positiva le estamos aplicando una",
+        "start": 2304.98,
+        "end": 2310.42
+    },
+    {
+        "text": " diferencia potencial estos dos dios que están así espalda contra espalda como se dice a veces",
+        "start": 2310.42,
+        "end": 2316.1800000000003
+    },
+    {
+        "text": " back to back y entonces eso dio que está en espalda contra espalda por más que le apliquemos una",
+        "start": 2316.1800000000003,
+        "end": 2324.94
+    },
+    {
+        "text": " cierta tensión se van a defender y no va a pasar corriente por acá digamos y entonces esa",
+        "start": 2324.94,
+        "end": 2329.66
+    },
+    {
+        "text": " la situación de la zona de corte del transistormos donde la corriente es básicamente cero como ya",
+        "start": 2329.66,
+        "end": 2336.2200000000003
+    },
+    {
+        "text": " pueden ir a me imaginando no va a ser un cero matemático porque bueno estos son dios reales",
+        "start": 2336.22,
+        "end": 2342.1
+    },
+    {
+        "text": " que van a tener su corriente inversa su corriente fuga pero yo groso modo la corriente es prácticamente",
+        "start": 2342.1,
+        "end": 2347.98
+    },
+    {
+        "text": " bien entonces lo que sigue lo que nos vamos a meter es lo que se conoce como la estructura",
+        "start": 2352.22,
+        "end": 2359.18
+    },
+    {
+        "text": " de dos terminales o sea vamos a recortar el transistor por acá no vamos a olvidar de sur",
+        "start": 2359.18,
+        "end": 2365.22
+    },
+    {
+        "text": " si el drain y no concentrar en el corazón que es diamos donde se juega el partido que es lo que se",
+        "start": 2365.22,
+        "end": 2371.3799999999997
+    },
+    {
+        "text": " llama la estructura de dos terminales porque tiene el terminal del gate y el terminal del sustrato y",
+        "start": 2371.3799999999997,
+        "end": 2376.8199999999997
+    },
+    {
+        "text": " vamos a ver qué pasa y adentro qué pasa cuando aplicamos tensionen el gate como para tratar de",
+        "start": 2376.8199999999997,
+        "end": 2384.22
+    },
+    {
+        "text": " entender digamos preparando sacó como el transistor llega funciona pues si quieren ha sagrado",
+        "start": 2384.22,
+        "end": 2391.1
+    },
+    {
+        "text": " una paucita acá aunque es medio temprano para así después no interrumpimos esa parte nosotros",
+        "start": 2391.1,
+        "end": 2396.2599999999998
+    },
+    {
+        "text": " dijimos bueno imaginemos una situación entre que acá tengo tierra acá tengo tierra y por lo tanto",
+        "start": 2396.2599999999998,
+        "end": 2402.8599999999997
+    },
+    {
+        "text": " esta este terminal del gate que está separado por el óxido no genera un campo eléctrico",
+        "start": 2402.8599999999997,
+        "end": 2412.74
+    },
+    {
+        "text": " digamos no hay una diferencia potencial que genera un campo eléctrico que pueda tener un efecto",
+        "start": 2412.74,
+        "end": 2416.74
+    },
+    {
+        "text": " es como si no estuviera y ese es el espíritu de esta situación el único tema es que en realidad",
+        "start": 2416.74,
+        "end": 2423.54
+    },
+    {
+        "text": " como vamos a ver ahora enseguida lo primero que vamos a ver sobre esta estructura es que el punto",
+        "start": 2423.54,
+        "end": 2429.62
+    },
+    {
+        "text": " ese en el cual vale eso es como si no estuviera no es exactamente no es solo no es exactamente el",
+        "start": 2429.62,
+        "end": 2437.18
+    },
+    {
+        "text": " punto este en que pongo el el gate a tierra porque internamente hay ciertas otros efectos que van",
+        "start": 2437.18,
+        "end": 2444.8199999999997
+    },
+    {
+        "text": " a estar jugando entonces veamos lo que se domina la estructura de dos terminales o sea el el gate",
+        "start": 2444.8199999999997,
+        "end": 2451.4199999999996
+    },
+    {
+        "text": " el óxido el sustrato simplemente sin sur si sin drain y veamos el con lo que es concepto lo",
+        "start": 2451.4199999999996,
+        "end": 2460.14
+    },
+    {
+        "text": " se llama la tensión de banda plana o de flat bandel de la estructura entonces si todo esto",
+        "start": 2460.14,
+        "end": 2467.02
+    },
+    {
+        "text": " fueran los mismos o sea que tenemos el óxido y si todos los otros fueran los mismos materiales",
+        "start": 2467.02,
+        "end": 2471.2999999999997
+    },
+    {
+        "text": " que es lo que está tratado representarse acá y yo los cortos circuitos por ejemplo si el gate",
+        "start": 2471.2999999999997,
+        "end": 2478.02
+    },
+    {
+        "text": " y el sustrato los tengo la misma tensión que era lo que recién veíamos la situación es esta o",
+        "start": 2478.02,
+        "end": 2484.06
+    },
+    {
+        "text": " sea sería como que agarra un material cualquiera lo doble le ponga así sus extremos unos cerca",
+        "start": 2484.06,
+        "end": 2489.66
+    },
+    {
+        "text": " del otro y un islante perfecto en el medio no se van a acumular cargas en ningún lado no va",
+        "start": 2489.66,
+        "end": 2494.94
+    },
+    {
+        "text": " a aparecer ninguna diferencia potencial porque es el material solito si se quiere porque eléctricamente",
+        "start": 2494.94,
+        "end": 2499.66
+    },
+    {
+        "text": " esto es como si no estuviera de nuevo no es un islante no tiene un efecto eléctrico entonces si",
+        "start": 2499.66,
+        "end": 2505.46
+    },
+    {
+        "text": " todos esto fueran el mismo material material con que se hace el gate el material con que se hace el",
+        "start": 2505.46,
+        "end": 2510.2599999999998
+    },
+    {
+        "text": " conector el cable que que yo pongo por afuera el material con de este metal que está",
+        "start": 2510.2599999999998,
+        "end": 2514.98
+    },
+    {
+        "text": " abajo el material del semicontor si todo fueran el mismo pasaría esta situación y el punto si",
+        "start": 2514.98,
+        "end": 2521.82
+    },
+    {
+        "text": " quieren el cero de la estructura el cero eléctrico sería efectivamente cuando estos dos están a la",
+        "start": 2521.82,
+        "end": 2528.46
+    },
+    {
+        "text": " misma tensión ahora en la realidad hay algunas diferencias con eso la primera es que normalmente",
+        "start": 2528.46,
+        "end": 2538.42
+    },
+    {
+        "text": " cuando se fabrican este no es todo el mismo material como si hemos recién eso genera",
+        "start": 2538.42,
+        "end": 2549.3
+    },
+    {
+        "text": " lo que vimos ya también para el caso el diodo genera potenciales de contacto o sea genera como",
+        "start": 2551.14,
+        "end": 2556.86
+    },
+    {
+        "text": " diferencias pequeña diferencia tensión interna en la unión entre los dos materiales diferentes",
+        "start": 2556.86,
+        "end": 2562.42
+    },
+    {
+        "text": " por ejemplo entre el metal y el suy el semiconductor o entre este material que haga este cable y el",
+        "start": 2562.7400000000002,
+        "end": 2570.3
+    },
+    {
+        "text": " gate y además hay a veces se suman problemas tecnológicos si quieren que por ejemplo que durante",
+        "start": 2570.3,
+        "end": 2578.2200000000003
+    },
+    {
+        "text": " la fabricación del óxido pueden quedar yones atrapados dentro del óxido en soniones positivas",
+        "start": 2578.2200000000003,
+        "end": 2584.86
+    },
+    {
+        "text": " de hecho en las primeras épocas de la fabricación de los transistores mosa este un problema bastante",
+        "start": 2587.1,
+        "end": 2591.42
+    },
+    {
+        "text": " serio y una primera cosa que se dieron cuenta que la principal fuente de sociones era la",
+        "start": 2591.42,
+        "end": 2599.66
+    },
+    {
+        "text": " transpiración el cloruro de sodio de ahora la sal digamos la transpirración de los operarios",
+        "start": 2599.66,
+        "end": 2606.7000000000003
+    },
+    {
+        "text": " que manipulaban los dispositivos hoy en día una fábrica de estas que fabrica estas maravillas",
+        "start": 2606.7000000000003,
+        "end": 2615.62
+    },
+    {
+        "text": " digamos en realidad bueno los pocos operarios que hay este andan vestidos como astronautas no",
+        "start": 2615.62,
+        "end": 2621.2999999999997
+    },
+    {
+        "text": " nada de su cuerpo toca ni de este toca a los dispositivos pero además este el aire es",
+        "start": 2621.2999999999997,
+        "end": 2628.5
+    },
+    {
+        "text": " extremadamente filtrado el agua es extremadamente filtrada a todos los materiales son superpuros porque",
+        "start": 2628.5,
+        "end": 2635.58
+    },
+    {
+        "text": " imagínem estamos hablando de algo de unos pocos nanómetros no si es una célula que caiga y",
+        "start": 2635.58,
+        "end": 2642.3399999999997
+    },
+    {
+        "text": " arriba un pedazo de polvo un no hablemos de una de una espora de polen o algo así este es como que",
+        "start": 2642.34,
+        "end": 2648.9
+    },
+    {
+        "text": " le caiga un meteorito digamos y destruye la mitad del chip de un entonces este el entonces bueno",
+        "start": 2648.9,
+        "end": 2657.2200000000003
+    },
+    {
+        "text": " pero digamos si bien esas cosas sean controlados igualmente se puede esperar que haya un cierto nivel",
+        "start": 2657.2200000000003,
+        "end": 2663.38
+    },
+    {
+        "text": " o podría haber un cierto nivel de de de cargas atrapadas en el óxido por una manera o por la",
+        "start": 2663.38,
+        "end": 2670.82
+    },
+    {
+        "text": " otra digamos el hecho es que si yo corto circuito esto así mi punto de partida no es que no es",
+        "start": 2670.82,
+        "end": 2679.26
+    },
+    {
+        "text": " como este que no haya cargas acumuladas en ningún lado sino que va a haber una cierta cantidad de cargas",
+        "start": 2679.26,
+        "end": 2683.26
+    },
+    {
+        "text": " acumuladas en su trato y otra cantidad positiva sacada negativa sacada en general de manera de que",
+        "start": 2683.26,
+        "end": 2690.9
+    },
+    {
+        "text": " las suma todas las positivas igual a las negativas que todos sientes en el auto pero las cargas se van a",
+        "start": 2690.9,
+        "end": 2696.38
+    },
+    {
+        "text": " recomodar dicho una terminología más de la ingeniería eléctrica que ahora ustedes ya",
+        "start": 2696.38,
+        "end": 2701.58
+    },
+    {
+        "text": " conocen esta estructura tiene un cierto ófsep o sea no sale el cero no es el cero sino que el cero",
+        "start": 2701.58,
+        "end": 2708.1
+    },
+    {
+        "text": " está corrido digamos para que para que no haya cargas acumuladas yo preciso poner desde afuera",
+        "start": 2708.1,
+        "end": 2717.02
+    },
+    {
+        "text": " una cierta atención o sea el cero la situación donde yo arranco eléctricamente en euto en todos",
+        "start": 2717.02,
+        "end": 2723.1
+    },
+    {
+        "text": " lados no es cuando la atención de gaites igual a la atención de su trato entonces la atención",
+        "start": 2723.1,
+        "end": 2729.38
+    },
+    {
+        "text": " que me logra ese efecto que me logra que estas cargas no estén acumuladas y que esté en la situación",
+        "start": 2729.38,
+        "end": 2734.5
+    },
+    {
+        "text": " equivalente a esta es una cierta atención bgb que es distinta de cero como siamos recién y que es",
+        "start": 2734.5,
+        "end": 2741.74
+    },
+    {
+        "text": " lo que se conoce como la atención de banda plan la atención de flat band que los físicos la",
+        "start": 2741.74,
+        "end": 2746.42
+    },
+    {
+        "text": " la mira del nombre viene de la teoría banda que usan los físicos pero dio una manera de",
+        "start": 2747.42,
+        "end": 2753.54
+    },
+    {
+        "text": " pensarles qué significa físicamente sería esta que está acá entonces la situación en que el",
+        "start": 2753.54,
+        "end": 2761.7000000000003
+    },
+    {
+        "text": " gaites como si no estuviera no es cuando tiene la misma atención que su trato sino que es cuando",
+        "start": 2761.7000000000003,
+        "end": 2766.58
+    },
+    {
+        "text": " tiene respecto al su trato esta atención que se llama la atención de flat band como van a",
+        "start": 2766.58,
+        "end": 2772.1800000000003
+    },
+    {
+        "text": " ver enseguida esta atención de flat band no va a ser endefitiva el dato que vamos a manejar",
+        "start": 2772.18,
+        "end": 2780.14
+    },
+    {
+        "text": " nosotros pero vamos a manejar una atención que está vinculada a esta que agrega algún otro",
+        "start": 2780.14,
+        "end": 2784.2999999999997
+    },
+    {
+        "text": " efecto que es la que nos va a decir cuando el transistor mosa empieza a conducir y o cuando pasa a",
+        "start": 2784.2999999999997,
+        "end": 2790.94
+    },
+    {
+        "text": " estar cortado que tiene que ver con esto con qué atención le tengo que poner en el gait para que",
+        "start": 2790.94,
+        "end": 2795.7
+    },
+    {
+        "text": " el transistor conduca esa otra atención se llama atención umbral del transistor mosa que es un",
+        "start": 2795.7,
+        "end": 2801.54
+    },
+    {
+        "text": " parámetro importante que que vamos a manejar en nuestras ecuaciones. Está claro esto se ve o",
+        "start": 2801.54,
+        "end": 2810.5
+    },
+    {
+        "text": " sea que para que no tener para partir de cero para partir en todo todo digamos este neutro se",
+        "start": 2810.5,
+        "end": 2818.54
+    },
+    {
+        "text": " precise aplicar desde afuera la atención de flat band. Bien entonces si partimos de ahí si",
+        "start": 2818.54,
+        "end": 2823.82
+    },
+    {
+        "text": " partimos de la atención de flat band acá podemos ver las distintas maneras en que puede en que va",
+        "start": 2823.82,
+        "end": 2828.58
+    },
+    {
+        "text": " responder esta estructura cuando yo le aplique atención desde afuera. Entonces la primera",
+        "start": 2828.58,
+        "end": 2833.46
+    },
+    {
+        "text": " situación es que yo le aplico una atención si quieren entre comillas negativa o sea más chica",
+        "start": 2833.46,
+        "end": 2838.62
+    },
+    {
+        "text": " que el cero pero numéricamente no va a ser negativa simplemente debe ser menor que la atención de",
+        "start": 2838.62,
+        "end": 2844.2599999999998
+    },
+    {
+        "text": " flat band no puede ser positiva y en realidad también pasar eso pero dio una atención por debajo",
+        "start": 2844.2599999999998,
+        "end": 2850.18
+    },
+    {
+        "text": " de ese cero que es la atención de flat band sería para la estructura como una atención negativa y",
+        "start": 2850.18,
+        "end": 2859.02
+    },
+    {
+        "text": " se acuerdan que acá tenemos este es un material tipo P no o sea que tenemos muchos huecos",
+        "start": 2859.02,
+        "end": 2864.74
+    },
+    {
+        "text": " es un material rico en huecos",
+        "start": 2867.8599999999997,
+        "end": 2869.98
+    },
+    {
+        "text": " si vemos acá en definitiva esto va a tener muchos huecos libres cada hueco libre tiene asociada",
+        "start": 2869.98,
+        "end": 2881.34
+    },
+    {
+        "text": " un dopante un aceptor un atomofijo negativo esto se repite así y también por supuesto vamos a",
+        "start": 2881.34,
+        "end": 2891.34
+    },
+    {
+        "text": " tener algunos pocos pared selecto en hueco que se generaron por este perfecto térmico",
+        "start": 2891.34,
+        "end": 2897.02
+    },
+    {
+        "text": " o sea que tenemos acá algunos electrones y algunos huecos pero en definitiva",
+        "start": 2897.02,
+        "end": 2903.38
+    },
+    {
+        "text": " imagínense que esto es algo que está repleto huecos material tipo P y cada hueco tiene asociado",
+        "start": 2907.22,
+        "end": 2913.94
+    },
+    {
+        "text": " su átomo fijo con carga negativa entonces si uno aplica una atención negativa acá",
+        "start": 2913.94,
+        "end": 2923.38
+    },
+    {
+        "text": " aquí cargas va a traer las negativas o las positivas si la atención es negativa aquí en atrallos",
+        "start": 2923.38,
+        "end": 2933.54
+    },
+    {
+        "text": " las positivas entonces en definitiva cuando uno hace eso se dice que la estructura está en",
+        "start": 2935.2200000000003,
+        "end": 2942.06
+    },
+    {
+        "text": " acumulación y en realidad lo que pasa es que una cantidad de huecos se empiezan a golpar",
+        "start": 2942.06,
+        "end": 2948.7000000000003
+    },
+    {
+        "text": " contra el óxido porque la tiene algo que lo está trayendo desde arriba pero en el medio tienen",
+        "start": 2949.22,
+        "end": 2955.18
+    },
+    {
+        "text": " una una islante que no pueden atravesar es como si tuviera un imán del otro lado de la pared que me",
+        "start": 2955.18,
+        "end": 2961.1
+    },
+    {
+        "text": " empuja para allá pero bueno yo creo pegado contra la pared entonces se forma si quieren un",
+        "start": 2961.1,
+        "end": 2968.18
+    },
+    {
+        "text": " camino de huecos acá y se dice que la estructura está en acumulación porque está acumulando",
+        "start": 2968.18,
+        "end": 2973.1
+    },
+    {
+        "text": " los huecos en esa zona si en cambio vamos para el otro lado si vamos hacia atención",
+        "start": 2973.1,
+        "end": 2981.54
+    },
+    {
+        "text": " es positiva o más grande que el flat band entonces ahí es donde empieza a pasar las cosas interesantes",
+        "start": 2981.54,
+        "end": 2987.62
+    },
+    {
+        "text": " porque primero lo primero que lo yo lo obro es en vez de atraer los huecos repelerlos porque",
+        "start": 2987.62,
+        "end": 2993.22
+    },
+    {
+        "text": " ahora es una atención positiva que repele las cargas positivas y entonces los huecos se van a",
+        "start": 2993.22,
+        "end": 2998.7799999999997
+    },
+    {
+        "text": " empezar a lejar y me van a dejar en efectiva eléctricamente visible o sea sin tener a alguien que las",
+        "start": 2998.78,
+        "end": 3008.2200000000003
+    },
+    {
+        "text": " que las que las empareje digamos me van a dejar eléctricamente visible los satos",
+        "start": 3008.2200000000003,
+        "end": 3013.5800000000004
+    },
+    {
+        "text": " mofijos de los dopantes eso entonces me va a generar acá una zona de flexión por eso se",
+        "start": 3013.5800000000004,
+        "end": 3022.02
+    },
+    {
+        "text": " dice que la estructura está en de flexión y si damos un pasito más ahí es donde pasa lo realmente",
+        "start": 3022.02,
+        "end": 3029.42
+    },
+    {
+        "text": " interesante que es lo que es lo que permite que el transistor mofuncione que es que si",
+        "start": 3029.42,
+        "end": 3035.58
+    },
+    {
+        "text": " aun aumenta un poquito más la atención un poco más la atención entonces en algún momento voy",
+        "start": 3035.58,
+        "end": 3042.58
+    },
+    {
+        "text": " a tener acá una atención suficientemente atractiva una atención positiva suficientemente grande para",
+        "start": 3042.58,
+        "end": 3049.54
+    },
+    {
+        "text": " que los pocos electrones que hayan en su trato pero que los va a ver se vean viajen y se",
+        "start": 3049.54,
+        "end": 3054.94
+    },
+    {
+        "text": " vean atraídos y queden contra el óxido entonces cuando cuando este cuando pasa esto si uno mira",
+        "start": 3054.94,
+        "end": 3065.34
+    },
+    {
+        "text": " abajo el óxido se dice que el material se invirtió por eso se llama que el material en la estructura",
+        "start": 3065.34,
+        "end": 3075.82
+    },
+    {
+        "text": " está en inversión porque porque antes yo tenía una zona p que era rica en huecos y ahora barrito",
+        "start": 3075.82,
+        "end": 3082.78
+    },
+    {
+        "text": " los huecos eche a todos los huecos y los cambié por electrones o sea tengo una zona ahora rica en",
+        "start": 3082.78,
+        "end": 3087.94
+    },
+    {
+        "text": " electrones y esta zona rica en electrones este es donde se va a jugar el partido donde es",
+        "start": 3087.94,
+        "end": 3093.48
+    },
+    {
+        "text": " fin y va a hacer la que va a permitir que este que ahora cuando tengamos este no si ahora",
+        "start": 3093.48,
+        "end": 3102.3
+    },
+    {
+        "text": " tenemos acá lleno de electrones acá tenemos lleno de electrones también porque es un material",
+        "start": 3102.3,
+        "end": 3107.7000000000003
+    },
+    {
+        "text": " tipo N este acá tenemos lleno de electrones también entonces ahí es donde si yo aplico una",
+        "start": 3107.7000000000003,
+        "end": 3113.46
+    },
+    {
+        "text": " diferencia potencial entre que trae ni sur va a pasar una corriente como como que tuviera un",
+        "start": 3113.46,
+        "end": 3118.78
+    },
+    {
+        "text": " conductor entre que trae ni sur y ahí ya hice desaparecer estos dos dios que no me jaban",
+        "start": 3118.78,
+        "end": 3124.46
+    },
+    {
+        "text": " pasar la corriente porque es como si la zona p del medio al menos en este pedacito ahí contra el",
+        "start": 3124.46,
+        "end": 3129.98
+    },
+    {
+        "text": " óxido la huiera eliminado entonces el transistormos va a poder conducir gracias a que se",
+        "start": 3129.98,
+        "end": 3138.32
+    },
+    {
+        "text": " forme este canal de inversión como se lo conoce formado por electrones libres y que va a tener",
+        "start": 3138.32,
+        "end": 3145.7400000000002
+    },
+    {
+        "text": " una cierta carga cusuí imaginemos o ya me muolecúsuí a la carga de electrones que hay ahí",
+        "start": 3145.7400000000002,
+        "end": 3150.54
+    },
+    {
+        "text": " que esa variable cusuí va a ser importante para para deducir las ecuaciones del transistormos",
+        "start": 3150.54,
+        "end": 3157.06
+    },
+    {
+        "text": " bien alguna pregunta de esto es importante se ve más o menos se que capaz que no están muy",
+        "start": 3160.98,
+        "end": 3169.86
+    },
+    {
+        "text": " entrenados en ver cómo se van a modar las cargas y eso pero bueno de apóquito se van a tener",
+        "start": 3169.86,
+        "end": 3174.26
+    },
+    {
+        "text": " aquí de entrenado por un ratito por lo menos se van a tener aquí de entrenado",
+        "start": 3174.26,
+        "end": 3177.7400000000002
+    },
+    {
+        "text": " bien",
+        "start": 3177.74,
+        "end": 3181.2999999999997
+    },
+    {
+        "text": " ¿Qué es cuando yo tengo cuando el G está más más alta o sea tiene una diferencia potencial",
+        "start": 3181.2999999999997,
+        "end": 3193.4199999999996
+    },
+    {
+        "text": " o sea que tengo yo que se por ejemplo no sé por decir algo pongamos acá tuviera un",
+        "start": 3193.4199999999996,
+        "end": 3199.66
+    },
+    {
+        "text": " voltio entre G y B y acá tengo dos voltios entre G y B no sea el G está más alto que la",
+        "start": 3199.66,
+        "end": 3206.4599999999996
+    },
+    {
+        "text": " atención de flat bank digamos que fuera a 0 7 voltios el 8 voltios entonces si ponga una",
+        "start": 3206.46,
+        "end": 3213.42
+    },
+    {
+        "text": " atención suficientemente de alta en G se produce este fenómeno bien bueno veamos cómo se comporta",
+        "start": 3213.42,
+        "end": 3224.7
+    },
+    {
+        "text": " esa carga de inversión que nos va a ser bastante fundamental para para poder calcular cómo son",
+        "start": 3224.7,
+        "end": 3229.98
+    },
+    {
+        "text": " las ecuaciones del transistor incluso van a ver que después hay una manera de ver cómo de",
+        "start": 3229.98,
+        "end": 3236.34
+    },
+    {
+        "text": " ver las ecuaciones del transistor en una forma gráfica que es bastante a menos a mí me resulta",
+        "start": 3236.34,
+        "end": 3242.9
+    },
+    {
+        "text": " bastante útil y es una manera de acabar incluso de poder deducir rápidamente las ecuaciones y",
+        "start": 3242.9,
+        "end": 3248.1000000000004
+    },
+    {
+        "text": " no se las acuerda y tiene que ver con esta gráfica entonces el cómo va esa carga de inversión",
+        "start": 3248.1000000000004,
+        "end": 3259.02
+    },
+    {
+        "text": " como va a evolucionar en función de la atención entre gate y sustrato que aplicamos",
+        "start": 3259.62,
+        "end": 3268.1
+    },
+    {
+        "text": " entonces bueno acá tenemos una este cómo es esa evolución si se fijan en realidad",
+        "start": 3268.1,
+        "end": 3277.2599999999998
+    },
+    {
+        "text": " acaba de cubrima y cubrima y es cusui dividida W por él o sea divida el área del gate o sea",
+        "start": 3277.26,
+        "end": 3290.6800000000003
+    },
+    {
+        "text": " no se acuerdan que esto si lo poni lo miramos en 3d esta dimensión era W era L perdón y esta",
+        "start": 3290.6800000000003,
+        "end": 3298.2400000000002
+    },
+    {
+        "text": " dimensión era W entonces cuando se habla de prima es por unidad de área",
+        "start": 3298.2400000000002,
+        "end": 3303.5
+    },
+    {
+        "text": " más adelante puede ser que en un momento se nos caiga la prima porque después que vamos",
+        "start": 3303.74,
+        "end": 3309.26
+    },
+    {
+        "text": " a estar a un rato largo hablando de cosas por unidad de área puede ser que le llamemos sin la",
+        "start": 3309.26,
+        "end": 3313.98
+    },
+    {
+        "text": " prima pero digo por ahora cubrima suy es la cusui por unidad de área entonces cómo la evolución",
+        "start": 3313.98,
+        "end": 3323.66
+    },
+    {
+        "text": " de esto bueno a medida que yo comentan acá tenemos la atención de flat band que sería como",
+        "start": 3323.66,
+        "end": 3328.6
+    },
+    {
+        "text": " es el cero de nuestro dispositivo si me voy para allá estoy en acumulación que voy a estar más",
+        "start": 3328.6,
+        "end": 3334.24
+    },
+    {
+        "text": " cortado no me va a servir para que el transistor conduzca cuando me empiezo a mover para allá",
+        "start": 3334.24,
+        "end": 3339.0
+    },
+    {
+        "text": " ahí me más grande que la atención de flat band primero estoy en la zona de pleción y luego hay un",
+        "start": 3339.0,
+        "end": 3345.72
+    },
+    {
+        "text": " punto donde las se empiezan a acumular electrones por todo esto son procesos graduales continuos",
+        "start": 3345.72,
+        "end": 3352.8399999999997
+    },
+    {
+        "text": " no hay nada así que se ha discutido se van a empezar a acumular electrones en la",
+        "start": 3352.84,
+        "end": 3361.1200000000003
+    },
+    {
+        "text": " escala de la gráfica prácticamente no los veo todavía o sea cada esto empezó a levantar pero",
+        "start": 3361.1200000000003,
+        "end": 3366.0
+    },
+    {
+        "text": " no da para visualizarlo y ahí se dice que estamos en una zona que es una región que se llama",
+        "start": 3366.0,
+        "end": 3372.4
+    },
+    {
+        "text": " la inversión débil wikim version en inglés que en este curso vamos a tener que ver menos",
+        "start": 3372.4,
+        "end": 3380.96
+    },
+    {
+        "text": " con ella pero digamos que en ciertos circuitos en ciertas situaciones se usa esa zona para",
+        "start": 3380.96,
+        "end": 3387.7200000000003
+    },
+    {
+        "text": " hacer funcional transistor ahí luego en realidad empieza a ser apreciable de que la cantidad de",
+        "start": 3387.7200000000003,
+        "end": 3394.52
+    },
+    {
+        "text": " electrones empieza a crecer esto empieza a levantar y ahí estamos en lo que se nomina una zona",
+        "start": 3394.52,
+        "end": 3401.6
+    },
+    {
+        "text": " de inversión moderada y finalmente tenemos una zona donde pasa algo si quieren radicalmente",
+        "start": 3401.6,
+        "end": 3411.72
+    },
+    {
+        "text": " distinto que es que esto empieza a crecer linealmente con la atención y esa zona se le",
+        "start": 3411.72,
+        "end": 3417.58
+    },
+    {
+        "text": " conoce como zona de inversión fuerte es tron inverso y en realidad las ecuaciones que vamos a",
+        "start": 3417.58,
+        "end": 3423.7599999999998
+    },
+    {
+        "text": " ver nosotros del transistor moso y las que se veren todos los cursos básicos de electrónica del",
+        "start": 3423.7599999999998,
+        "end": 3428.16
+    },
+    {
+        "text": " mundo consideran básicamente el funcionamiento en esta zona o sea de alguna manera desprecian",
+        "start": 3428.16,
+        "end": 3434.52
+    },
+    {
+        "text": " van a ver ahora como estas otras dos zonas del modelado exacto de esta curva que no suave que",
+        "start": 3434.52,
+        "end": 3441.16
+    },
+    {
+        "text": " saca se olvidan de eso pero para interpretar si a estas cosas a veces está bueno acordarse de que",
+        "start": 3441.16,
+        "end": 3445.8799999999997
+    },
+    {
+        "text": " esto es un modelo que no está siguiendo exactamente la realidad entonces en esta zona la carga de inversión",
+        "start": 3445.8799999999997,
+        "end": 3455.04
+    },
+    {
+        "text": " es proporcional a la atención que yo aplico y bueno y la constante proporcionalidad que",
+        "start": 3455.52,
+        "end": 3463.68
+    },
+    {
+        "text": " tiene que ser una capacidad de dimensiones de capacidad porque la relación entre carga y",
+        "start": 3463.68,
+        "end": 3468.24
+    },
+    {
+        "text": " tensiones es capacidad es es se prima ox si estoy hablando de cubrimai es se prima ox que es la",
+        "start": 3468.24,
+        "end": 3479.0
+    },
+    {
+        "text": " capacidad del óxido por unidad de ariose es el épsilón del material del óxido dividido el",
+        "start": 3479.0,
+        "end": 3485.28
+    },
+    {
+        "text": " o sea se prima ox entonces es la constante de eléctrica del óxido dividido lo que vamos a",
+        "start": 3509.36,
+        "end": 3515.72
+    },
+    {
+        "text": " llamar teóx que es el espesor del óxido a serían los foquitos nanómetros de esos de los que",
+        "start": 3515.72,
+        "end": 3522.12
+    },
+    {
+        "text": " hablamos antes",
+        "start": 3522.12,
+        "end": 3522.8
+    },
+    {
+        "text": " entonces esa es la constante por la pendiente esa recta digamos la constante esa proporcionalidad",
+        "start": 3528.48,
+        "end": 3534.56
+    },
+    {
+        "text": " en esta zona que la corriente es proporcional a la atención o que crees el niñalmente con la",
+        "start": 3534.56,
+        "end": 3539.44
+    },
+    {
+        "text": " atención y el otro punto importante es que como justamente nosotros vamos a modelar la carga",
+        "start": 3539.44,
+        "end": 3549.64
+    },
+    {
+        "text": " inversión por esta recta entonces es el punto en el cual esta recta intersecta el eje de las",
+        "start": 3549.64,
+        "end": 3556.16
+    },
+    {
+        "text": " X que es lo que vamos a llamar beta 0 que es la atención umbral del transistormos que es",
+        "start": 3556.16,
+        "end": 3562.7999999999997
+    },
+    {
+        "text": " un parámetro que va a estar en la soja de datos los fabricantes que digamos que es un parámetro",
+        "start": 3562.8,
+        "end": 3569.0800000000004
+    },
+    {
+        "text": " importante en las ecuaciones entonces en definitiva",
+        "start": 3569.0800000000004,
+        "end": 3573.1600000000003
+    },
+    {
+        "text": " digamos la aproximación que vamos a usar de cubrimais y quieren",
+        "start": 3592.8,
+        "end": 3620.8
+    },
+    {
+        "text": " hacer el parámetro de los fabricantes",
+        "start": 3622.8,
+        "end": 3632.8
+    },
+    {
+        "text": " sería esta sería que la corriente vale 0 el pardon la corriente la carga vale 0 hasta la",
+        "start": 3635.2000000000003,
+        "end": 3642.6800000000003
+    },
+    {
+        "text": " atención beta 0 y de ahí en adelante crece niñalmente con la atención aplicada o sea que en",
+        "start": 3642.6800000000003,
+        "end": 3649.78
+    },
+    {
+        "text": " definitiva esta curvita suave que hay acá la vamos a obviar para que quede más manejable las",
+        "start": 3649.78,
+        "end": 3658.34
+    },
+    {
+        "text": " ecuaciones y vamos a sumir que esto siguen 0 exactamente en 0 hasta beta 0 y que después empiece a",
+        "start": 3658.34,
+        "end": 3663.78
+    },
+    {
+        "text": " crecer niñalmente y eso por supuesto nos va a dar un error si estamos trabajando cerca del",
+        "start": 3663.78,
+        "end": 3669.78
+    },
+    {
+        "text": " beta 0 es que va a ser apreciable pero bueno es un primer paso",
+        "start": 3669.78,
+        "end": 3676.34
+    },
+    {
+        "text": " entonces en definitiva para o sea cubrimais lo vamos a modelar si quieren como 0 para bgb",
+        "start": 3678.34,
+        "end": 3689.0600000000004
+    },
+    {
+        "text": " menor que beta 0 y la expresión que está apuesta ya se prima ox por bgb menos beta 0 para bgb",
+        "start": 3689.86,
+        "end": 3700.18
+    },
+    {
+        "text": " mayor igual a beta 0",
+        "start": 3700.98,
+        "end": 3702.62
+    },
+    {
+        "text": " y bueno y conocer esa carga después es lo que nosotros nos va a permitir este van a haber de",
+        "start": 3707.46,
+        "end": 3712.82
+    },
+    {
+        "text": " usarle la corriente por el transistor mos",
+        "start": 3712.82,
+        "end": 3715.6600000000003
+    },
+    {
+        "text": " hay una pregunta esto",
+        "start": 3730.1000000000004,
+        "end": 3731.5800000000004
+    },
+    {
+        "text": " bien",
+        "start": 3736.9,
+        "end": 3737.54
+    },
+    {
+        "text": " bueno con esto sabemos lo principal que precisamos saber digamos de la estructura mos de dos",
+        "start": 3742.82,
+        "end": 3751.54
+    },
+    {
+        "text": " terminales o sea sabemos que se forma este canal de inversión que va a ser que no va a permitir",
+        "start": 3751.54,
+        "end": 3756.6200000000003
+    },
+    {
+        "text": " después que pase la corriente sabemos cuánta carga y ahí tenemos un modelo si quieren para",
+        "start": 3756.6200000000003,
+        "end": 3761.6600000000003
+    },
+    {
+        "text": " cuánta carga hay en ese canal tenemos lo lo lo principal respecto a las estructuras mos de",
+        "start": 3761.6600000000003,
+        "end": 3769.82
+    },
+    {
+        "text": " dos terminales lo que vamos a ver ahora es gradualmente acercarnos al transistor y para eso vamos a",
+        "start": 3769.82,
+        "end": 3778.06
+    },
+    {
+        "text": " tratar de visualizar qué es lo que pasa cuando a esta estructura mos de dos terminales yo le",
+        "start": 3780.54,
+        "end": 3785.7400000000002
+    },
+    {
+        "text": " agrego para empezar un tercer terminal o sea todavía no tenemos el transistor completo lo que",
+        "start": 3785.7400000000002,
+        "end": 3790.38
+    },
+    {
+        "text": " vamos a hacer es decirte si quieren olvidarnos de este y conectarnos solamente de este lado a la",
+        "start": 3790.38,
+        "end": 3797.98
+    },
+    {
+        "text": " zona del canal de inversión",
+        "start": 3797.98,
+        "end": 3799.42
+    },
+    {
+        "text": " entonces este voy a considerar que tenemos acá entonces ahora un la zona de lo que veníamos",
+        "start": 3805.5,
+        "end": 3815.42
+    },
+    {
+        "text": " estudiando hasta ahora el transistor de dos terminales gate óxido sustrato pero que ahora",
+        "start": 3815.42,
+        "end": 3821.54
+    },
+    {
+        "text": " agregamos una zona enema pegada acá a la zona del canal que va a ser uno de los",
+        "start": 3821.54,
+        "end": 3827.14
+    },
+    {
+        "text": " terminales de transistor pero por agregamos uno solo o sea no va a pasar corriente por no",
+        "start": 3827.14,
+        "end": 3830.98
+    },
+    {
+        "text": " tiempo a donde ir pero este punto se conecta con esta zona a este tercer terminal le vamos a",
+        "start": 3830.98,
+        "end": 3837.9
+    },
+    {
+        "text": " llamar c que en realidad pocanar que después ese tercer terminal también nos va a representar",
+        "start": 3837.9,
+        "end": 3845.02
+    },
+    {
+        "text": " tal vez que es lo que pasa en los distintos puntos del canal",
+        "start": 3845.02,
+        "end": 3848.14
+    },
+    {
+        "text": " entonces este acá tenemos este está claro el dibujo acá tenemos el gate acá tenemos el",
+        "start": 3849.06,
+        "end": 3857.5
+    },
+    {
+        "text": " canal de inversión estos son los electrones y acá tenemos la zona de flexión los átomos fijos",
+        "start": 3857.5,
+        "end": 3862.22
+    },
+    {
+        "text": " debido a los huecos que expulsamos entonces acá de lo que se trata de alguna hora para entender",
+        "start": 3862.22,
+        "end": 3873.14
+    },
+    {
+        "text": " cómo quedan las ecuaciones después o cómo varían las ecuaciones respecto a la que recién vimos",
+        "start": 3873.46,
+        "end": 3878.58
+    },
+    {
+        "text": " de lo que se trata es de entender lo que está dicho ahí que es que",
+        "start": 3878.58,
+        "end": 3883.3799999999997
+    },
+    {
+        "text": " imagín si si si b c b fuera cero o sea así de imagínate o sea que no hay diferencia",
+        "start": 3887.42,
+        "end": 3894.58
+    },
+    {
+        "text": " potencial con el sustrato ahí no hay mucha diferencia no tenemos la misma situación que antes",
+        "start": 3894.58,
+        "end": 3903.7799999999997
+    },
+    {
+        "text": " porque digamos si si se imagina que son un electron minoritario ustedes que viven por acá por",
+        "start": 3903.7799999999997,
+        "end": 3911.86
+    },
+    {
+        "text": " el sustrato si esta tensión está encero para ustedes no le hacen caso porque como el",
+        "start": 3911.86,
+        "end": 3918.54
+    },
+    {
+        "text": " electron que son lo que les atrae son las extensiones positivas y entonces los va a traer el gate",
+        "start": 3918.54,
+        "end": 3927.7799999999997
+    },
+    {
+        "text": " van a acumularse acá y la expresión del QUI va a estar dada por lo que teníamos allá ahora",
+        "start": 3927.7799999999997,
+        "end": 3933.74
+    },
+    {
+        "text": " bien si este si esta tensión se empieza a aumentar",
+        "start": 3933.74,
+        "end": 3938.46
+    },
+    {
+        "text": " ustedes van a tener que tomar en alguna una decisión si quieren no es decir este van a poder",
+        "start": 3942.62,
+        "end": 3946.98
+    },
+    {
+        "text": " irse más o sea va a haberse atraído por esta tensión positiva de este tercer terminal o",
+        "start": 3946.98,
+        "end": 3953.86
+    },
+    {
+        "text": " haberse atraído por la tensión positiva del gate y la tensión del tercer terminal tiene una",
+        "start": 3953.86,
+        "end": 3961.22
+    },
+    {
+        "text": " diferencia con la tensión del gate que no hay la tensión del gate como si vamos me atrae",
+        "start": 3961.22,
+        "end": 3965.06
+    },
+    {
+        "text": " desde atrás del apareo o sea no está separada por el óxido digamos o sea el efecto de",
+        "start": 3965.06,
+        "end": 3970.62
+    },
+    {
+        "text": " una variación en la tensión de gate se nota acá en el canal en alguna medida tenuado mientras",
+        "start": 3971.42,
+        "end": 3978.94
+    },
+    {
+        "text": " que el efecto de una variación en la tensión de aquí del tercer terminal está como directamente",
+        "start": 3978.94,
+        "end": 3984.5
+    },
+    {
+        "text": " conectado al canal entonces si por ejemplo",
+        "start": 3984.5,
+        "end": 3989.54
+    },
+    {
+        "text": " si nosotros teníamos bcb igual a 0 de a un bcb1 que era igual a 0 teníamos un bgb1",
+        "start": 4000.62,
+        "end": 4015.8599999999997
+    },
+    {
+        "text": " un cierto bgb1 y en esta situación teníamos una cierta QUI prima 1 que iba a ser",
+        "start": 4015.8599999999997,
+        "end": 4024.46
+    },
+    {
+        "text": " se prima óx por bgb1 menos b0 si teníamos esta situación y pasamos a una situación en la cual",
+        "start": 4024.46,
+        "end": 4036.38
+    },
+    {
+        "text": " tenemos un cierto bcb2 que es un volumdel tabcb o sea que lamentamos una cierta cantidad al bcb",
+        "start": 4036.38,
+        "end": 4046.82
+    },
+    {
+        "text": " entonces si este estaba en 0 y se levanta digamos que se levanta un bolto para tener la misma carga",
+        "start": 4047.78,
+        "end": 4057.86
+    },
+    {
+        "text": " de inversión acá que tenía antes el gate se va a tener que levantar más de un bolto o sea para",
+        "start": 4057.86,
+        "end": 4063.42
+    },
+    {
+        "text": " compensar el hecho de que ahora tengo un bolto acá que me está cayendo el gate va a tener que",
+        "start": 4063.42,
+        "end": 4068.06
+    },
+    {
+        "text": " aumentar más de un bolto por la diferencia esa que le decía que es una variación en la tensión",
+        "start": 4068.06,
+        "end": 4073.82
+    },
+    {
+        "text": " de gate se vea tenuada bastante puntivisor capacitivo que termina viendo acá se vea tenuada en el",
+        "start": 4073.82,
+        "end": 4079.38
+    },
+    {
+        "text": " en el en el canal mientras que una variación en la tensión de este terminal actúa directamente",
+        "start": 4079.38,
+        "end": 4084.7400000000002
+    },
+    {
+        "text": " sobre el canal o sea si tenemos un bcb2 que es un cierto delta bcb entonces para mantener QUI",
+        "start": 4084.7400000000002,
+        "end": 4093.1400000000003
+    },
+    {
+        "text": " preisamos un delta bcb que es mayor que el delta bcb o sea si aumenta la tensión es",
+        "start": 4093.7,
+        "end": 4110.0199999999995
+    },
+    {
+        "text": " etrarse a terminar la tensión en el gate y es que aumenta más y bueno ese factor de cuanto más",
+        "start": 4110.0199999999995,
+        "end": 4116.099999999999
+    },
+    {
+        "text": " tiene que aumentar la tensión en el gate en una versión bastante simplificada al modelado porque",
+        "start": 4116.1,
+        "end": 4123.620000000001
+    },
+    {
+        "text": " esto en realidad no es lineal con bcb hay una raíz cuadrada y de por medio pero el",
+        "start": 4123.620000000001,
+        "end": 4127.860000000001
+    },
+    {
+        "text": " niñalizando eso en una especie de versión básica del asunto es lo que vamos a llamar un",
+        "start": 4127.860000000001,
+        "end": 4134.5
+    },
+    {
+        "text": " parámetro que vas a llamar delta que normalmente varía en vez de algo así como 0, 2 y 0, 6 en las",
+        "start": 4134.5,
+        "end": 4141.14
+    },
+    {
+        "text": " tecnologías más usuales o sea que en el ejemplo que aquel decíamos que si subo un bolto bcb bueno el bgb",
+        "start": 4141.14,
+        "end": 4148.9800000000005
+    },
+    {
+        "text": " para que todo que igual tiene que aumentar en 1 con 2 a 1 con 6 boltsis entonces en definitiva la",
+        "start": 4148.9800000000005,
+        "end": 4156.14
+    },
+    {
+        "text": " ecuación final para la carga de inversión es va a estar dada por estas presiones cuando bcb era",
+        "start": 4156.14,
+        "end": 4164.860000000001
+    },
+    {
+        "text": " 0 era lo mismo que teníamos antes pero cuando bcb es distinto de 0 me aparece acá restando un factor",
+        "start": 4164.86,
+        "end": 4171.54
+    },
+    {
+        "text": " que es 1 más delta por bcb, si no me aparece simplemente bcb sino que me parece 1 más delta o sea que si",
+        "start": 4171.54,
+        "end": 4178.259999999999
+    },
+    {
+        "text": " este aumenta un bolto te tiene que aumentar uno más delta boltsis para compensar el efecto y que",
+        "start": 4178.259999999999,
+        "end": 4183.94
+    },
+    {
+        "text": " todo que diga bueno este es un efecto que si ustedes van al libro es cdb por ejemplo y otros",
+        "start": 4183.94,
+        "end": 4196.86
+    },
+    {
+        "text": " libros de electrónica no todos pero muchos libros básicos en definitiva lo cuentan como al final",
+        "start": 4196.86,
+        "end": 4204.78
+    },
+    {
+        "text": " o sea si van al libro es cdb buscan efectos sustratos o efectos bodi van a encontrar una sección cita que",
+        "start": 4204.78,
+        "end": 4210.54
+    },
+    {
+        "text": " habla de estas cosas e incluso si mal lo recuerdo creo que da las ecuaciones completas esas con la",
+        "start": 4210.54,
+        "end": 4216.66
+    },
+    {
+        "text": " raíz cuadrada que son más complicadas que estas pero toda la deducción de la secuación del",
+        "start": 4216.66,
+        "end": 4222.98
+    },
+    {
+        "text": " transistor MOS las hace sin considerar este efecto nosotros no nos gusta mucho eso porque nos parece que",
+        "start": 4222.98,
+        "end": 4231.38
+    },
+    {
+        "text": " bueno que nos estamos perdiendo la oportunidad en el momento en que uno hace la educción del transistor MOS",
+        "start": 4231.38,
+        "end": 4235.9
+    },
+    {
+        "text": " incluir este efecto que tiene que importa para en el no en todas pero en unas cuantas",
+        "start": 4236.46,
+        "end": 4242.679999999999
+    },
+    {
+        "text": " aplicaciones prácticas importan y sin un no podría explicar lo que algunos circuitos básicos",
+        "start": 4242.679999999999,
+        "end": 4249.139999999999
+    },
+    {
+        "text": " por qué le está dando como le está dando entonces bueno acá vamos a ver las ecuaciones incluyendo",
+        "start": 4249.139999999999,
+        "end": 4255.74
+    },
+    {
+        "text": " el delta de sabizo eso porque bueno si van a mirar las ecuaciones del libro simplemente van a",
+        "start": 4255.74,
+        "end": 4260.66
+    },
+    {
+        "text": " ver que hay alguna diferencia con las ecuaciones que vamos a manejar acá bien bueno si no hay",
+        "start": 4260.66,
+        "end": 4270.22
+    },
+    {
+        "text": " preguntas de esto ahora sí para terminar veamos nuestro transistor completo en forma cualitativa",
+        "start": 4270.22,
+        "end": 4276.5
+    },
+    {
+        "text": " entonces nuestro transistor completo en forma cualitativa sería esto imagínemos arranquemos desde",
+        "start": 4276.5,
+        "end": 4284.26
+    },
+    {
+        "text": " la zona de deplexión o sea arranquemos con un tensión en el gate acá cuando yo tensión el",
+        "start": 4284.26,
+        "end": 4290.38
+    },
+    {
+        "text": " gate siempre es tensión gate sustratos o sea todas las tensiones vamos a las referías en",
+        "start": 4290.38,
+        "end": 4294.42
+    },
+    {
+        "text": " sustratos entonces la tensión gate sustrato sea positiva pero chiquita o sea menor que la",
+        "start": 4294.42,
+        "end": 4301.38
+    },
+    {
+        "text": " tensión de flat band entonces o incluso puede ser mayor que la tensión de flat band pero no",
+        "start": 4301.38,
+        "end": 4308.18
+    },
+    {
+        "text": " suficiente para generar el canal o sea al principio vamos a estar en deplexión vamos a tener acá vamos",
+        "start": 4308.3,
+        "end": 4315.1
+    },
+    {
+        "text": " a haber repelido algunos huecos este vamos a tener la carga de deplexión pero no vamos a tener",
+        "start": 4315.1,
+        "end": 4321.46
+    },
+    {
+        "text": " un canal de inversión por el cual puede acercular la corriente y el transistor por lo tanto en esta",
+        "start": 4321.46,
+        "end": 4326.46
+    },
+    {
+        "text": " situación va a estar cortado acá además estoy suponiendo que estas tensiones son iguales o sea",
+        "start": 4326.46,
+        "end": 4331.46
+    },
+    {
+        "text": " que nunca podría haber una corriente por no hay diferencia de potencial pero aunque las",
+        "start": 4331.46,
+        "end": 4337.38
+    },
+    {
+        "text": " pongas distintas en principio el transistor va a estar en esa situación va a estar cortado",
+        "start": 4337.38,
+        "end": 4342.06
+    },
+    {
+        "text": " si ahora seguimos subiendo la tensión de gate generamos nuestro querido canal de inversión",
+        "start": 4347.06,
+        "end": 4354.1
+    },
+    {
+        "text": " que es el que no va a permitir que pase la corriente y como la tensión de drain y de surza acá",
+        "start": 4354.1,
+        "end": 4361.58
+    },
+    {
+        "text": " están iguales en realidad acá todavía no va a pasar corriente pero tenemos la todo pronto para",
+        "start": 4361.58,
+        "end": 4369.0599999999995
+    },
+    {
+        "text": " que pasa para que pueda pasar no sería como si tener una de hemos edificiante de que hay",
+        "start": 4369.0599999999995,
+        "end": 4374.58
+    },
+    {
+        "text": " ni surza ahora tenemos como una cierta resistencia si quieren tu yo valor depende de cuánta carga",
+        "start": 4374.58,
+        "end": 4379.9
+    },
+    {
+        "text": " tengamos acá cuando más carga tengamos menor va a ser la resistencia y además lo otro que pasa",
+        "start": 4379.9,
+        "end": 4388.1
+    },
+    {
+        "text": " es que el lancho de la zona de flexión va a aumentar la carga de flexión que sube va a aumentar",
+        "start": 4388.1,
+        "end": 4394.1
+    },
+    {
+        "text": " debido a que vamos a estar repeliendo además de atraer los electrones vamos a estar repeliendo más",
+        "start": 4394.1,
+        "end": 4399.34
+    },
+    {
+        "text": " huecos voy a escribir por acá la ecuación",
+        "start": 4399.34,
+        "end": 4402.1
+    },
+    {
+        "text": " porque ahora nos va a ser útil en caso general",
+        "start": 4404.1,
+        "end": 4408.26
+    },
+    {
+        "text": " y",
+        "start": 4418.1,
+        "end": 4420.1
+    },
+    {
+        "text": " bien veamos ahora hagamos funcionar nuestro transistor",
+        "start": 4440.1,
+        "end": 4444.5
+    },
+    {
+        "text": " todavía no estamos casi por hacer los funcionas antes de hacer los funcionar hagamos una pequeña",
+        "start": 4448.1,
+        "end": 4453.9400000000005
+    },
+    {
+        "text": " variante que es en lugar de tener estos dos a tierra ahora vamos a levantarlos para levantarlos",
+        "start": 4453.9400000000005,
+        "end": 4459.5
+    },
+    {
+        "text": " los dos juntos de manera que todavía no haya diferencia potencial en el canal si hacemos eso",
+        "start": 4459.5,
+        "end": 4465.18
+    },
+    {
+        "text": " que va a pasar si hacemos eso fíjense que si levantamos los dos juntos lo que estamos haciendo es",
+        "start": 4467.02,
+        "end": 4472.700000000001
+    },
+    {
+        "text": " levantar el bcb la atención esa que poníamos en ese tercer terminal es como si estuvimos subiendo",
+        "start": 4472.7,
+        "end": 4479.38
+    },
+    {
+        "text": " y por lo tanto eso va a ser que la carga de inversión disminuya y también debido a esta",
+        "start": 4480.58,
+        "end": 4489.74
+    },
+    {
+        "text": " atención es como si la atención de esta zona respecto a su trato subiera y eso va a ser que",
+        "start": 4489.74,
+        "end": 4494.3
+    },
+    {
+        "text": " entonces la carga de deplexión aumenta yo simplemente va a mostrar en esta situación del",
+        "start": 4494.3,
+        "end": 4502.38
+    },
+    {
+        "text": " transistor completo que pasa cuando uno mueve este es lo que sería este tercer terminal cuando",
+        "start": 4502.38,
+        "end": 4507.62
+    },
+    {
+        "text": " movemos a los dos a bcb que acá cualquiera podía hacer bcb o lo dotan la misma situación pues",
+        "start": 4507.62,
+        "end": 4514.78
+    },
+    {
+        "text": " está en la misma atención cuando movemos los dos juntos no porque en definitiva entre",
+        "start": 4514.78,
+        "end": 4525.38
+    },
+    {
+        "text": " dry entre sur si sur trato y dry y sus trato si se fijan digamos contenciones positivas que es",
+        "start": 4525.38,
+        "end": 4533.099999999999
+    },
+    {
+        "text": " como lo vamos a usar algo como se usa normalmente el transistor moso básicamente uno tiene un diodo",
+        "start": 4533.099999999999,
+        "end": 4540.46
+    },
+    {
+        "text": " en inverso que tiene un diodo con la parte n acá y la parte p que de hecho eran los dos dios",
+        "start": 4540.46,
+        "end": 4547.06
+    },
+    {
+        "text": " estos estos mismos que hablan acá pero ahora mirados en las puntas digamos entonces entre que es",
+        "start": 4547.06,
+        "end": 4554.34
+    },
+    {
+        "text": " una muy buena pregunta o tal vez haber dicho dios entre que hay de que hay ni sus trato y sur si",
+        "start": 4554.34,
+        "end": 4559.3
+    },
+    {
+        "text": " sus trato uno tiene un diodo en inverso en cual el principio era podría tener una cierta fuga pero",
+        "start": 4559.3,
+        "end": 4564.46
+    },
+    {
+        "text": " dio no va a haber corriente bien entonces ahora creo que sí lo vamos a hacer conducir al transistor",
+        "start": 4564.46,
+        "end": 4570.74
+    },
+    {
+        "text": " efectivamente ahora dejamos la surza tierra y levantamos el drain con el gate en el no en el",
+        "start": 4570.74,
+        "end": 4580.9800000000005
+    },
+    {
+        "text": " valor ese que tenemos que dar un rato que nos forma el canal de inversión entonces ahora sí va",
+        "start": 4580.9800000000005,
+        "end": 4586.26
+    },
+    {
+        "text": " a haber corriente de drain o sea los electrones van a ir de surza drain los electrones van a",
+        "start": 4586.26,
+        "end": 4593.5
+    },
+    {
+        "text": " hacia la tensión positiva y la corriente viene la tensión positiva hacia tierra hacia la tensión",
+        "start": 4593.5,
+        "end": 4598.86
+    },
+    {
+        "text": " negativa ahora bien el acá pasa otra cosa que es re importante para entender el funcionamiento del",
+        "start": 4598.86,
+        "end": 4606.98
+    },
+    {
+        "text": " transistor moso que está dibujada ahí y escrita ahí que es si piensan en esta ecuación si uno",
+        "start": 4606.98,
+        "end": 4619.26
+    },
+    {
+        "text": " separa del lado de la punta del del surz es como si tuviera a veces ve igual cero y tiene",
+        "start": 4619.26,
+        "end": 4628.1
+    },
+    {
+        "text": " a tierra y bdb mayor que cero pequeña podemos mover que quiere decir exactamente pequeña que es",
+        "start": 4679.26,
+        "end": 4689.06
+    },
+    {
+        "text": " la situación que está dibujada ahí en esa en esa transparencia bueno con esta situación entonces",
+        "start": 4689.06,
+        "end": 4697.18
+    },
+    {
+        "text": " entendíamos del lado del surz tendríamos que el cubrima y vale este se prima ox por bgb menos",
+        "start": 4697.18,
+        "end": 4712.58
+    },
+    {
+        "text": " b0 porque del lado del surz o sea que al lado es como si tuvieramos un bcb igual a cero",
+        "start": 4712.58,
+        "end": 4720.42
+    },
+    {
+        "text": " ahora del lado del drain",
+        "start": 4729.38,
+        "end": 4731.0599999999995
+    },
+    {
+        "text": " la olga que vamos a tenerte hemos cubrima y va a ser se prima ox por bgb menos b0 menos",
+        "start": 4731.06,
+        "end": 4747.06
+    },
+    {
+        "text": " uno más delta por bdb o sea sería bcb es igual a bdb que es mayor que cero entonces en",
+        "start": 4747.06,
+        "end": 4761.06
+    },
+    {
+        "text": " definitiva el a lo largo del canal la carga de inversión va a tener un cierto perfil que es",
+        "start": 4761.06,
+        "end": 4767.22
+    },
+    {
+        "text": " con una especie de trapecio que es más ancho acá más grande acá tenemos más carga de este",
+        "start": 4767.22,
+        "end": 4772.26
+    },
+    {
+        "text": " lado porque acá este terminal no le está robando carga si quieren al atracción del gait mientras",
+        "start": 4772.26,
+        "end": 4779.58
+    },
+    {
+        "text": " que de este lado como ahora tenemos como los electrones acá si quieren se dividen entre los que",
+        "start": 4779.58,
+        "end": 4784.34
+    },
+    {
+        "text": " terminan yendo hacia el drain que tiene una tensión positiva y los que quedan trancados contra el",
+        "start": 4784.34,
+        "end": 4789.66
+    },
+    {
+        "text": " contra el óxido entonces en definitiva acabamos a tener menos carga que en esta punta o sea que la",
+        "start": 4789.66,
+        "end": 4797.74
+    },
+    {
+        "text": " carga de inversión va a variar a lo largo del canal esta la situación que tenemos cuando el",
+        "start": 4797.74,
+        "end": 4806.34
+    },
+    {
+        "text": " transistor se comporta como una llave cerrada que deja pasar la corriente y se dice que el transistor",
+        "start": 4806.34,
+        "end": 4813.9
+    },
+    {
+        "text": " está operando en zona lineal o la zona lineal que ya la definió más temprano también se la",
+        "start": 4813.9,
+        "end": 4820.46
+    },
+    {
+        "text": " conoce como zona triodos el nombre triodos viene de uno de los tipos de bálvulas de vacío que",
+        "start": 4820.46,
+        "end": 4827.58
+    },
+    {
+        "text": " se usaban antes de que existían los transistores entonces cuando la gente vio este comportamiento",
+        "start": 4827.58,
+        "end": 4832.9800000000005
+    },
+    {
+        "text": " y dijo a eso mira los triodos funcionan así también entonces bueno en esa época era algo",
+        "start": 4832.9800000000005,
+        "end": 4837.9800000000005
+    },
+    {
+        "text": " natural pensar que estar a la zona que funcionaba parecido un triodos bien día como funciona un",
+        "start": 4837.9800000000005,
+        "end": 4843.82
+    },
+    {
+        "text": " triodos no sé si nadie se acuerda y entonces en realidad dice poca cosa pero por ahí van a tal vez",
+        "start": 4843.82,
+        "end": 4848.9800000000005
+    },
+    {
+        "text": " lo vean escrito en ingleses Estados Unidos se usa mucho el trajado rillo no se usa mucho la",
+        "start": 4848.98,
+        "end": 4855.339999999999
+    },
+    {
+        "text": " la nombre de la zona triodos para esta zona entonces en esta situación tenemos esta este perfil de",
+        "start": 4855.339999999999,
+        "end": 4867.459999999999
+    },
+    {
+        "text": " cargas tenemos una corriente que no es que no es cero y que como dice acá es más o menos",
+        "start": 4867.459999999999,
+        "end": 4873.62
+    },
+    {
+        "text": " lineal con la ter diferencia tensión vdc y en efectiva el transistor se comporta como una",
+        "start": 4873.62,
+        "end": 4881.0199999999995
+    },
+    {
+        "text": " resistencia pequeña que además está controlada por tensión porque en efectiva si yo cambio la",
+        "start": 4881.0199999999995,
+        "end": 4887.0199999999995
+    },
+    {
+        "text": " tensión de gays me cambia cuánta carga tengo acá y me cambia la resistencia entonces ese sería",
+        "start": 4887.0199999999995,
+        "end": 4893.78
+    },
+    {
+        "text": " como el primer modo de funcionamiento del transistormos cuando está con una tensión en el",
+        "start": 4893.78,
+        "end": 4898.94
+    },
+    {
+        "text": " drag en pequeña y si ustedes piensan en este comportamiento que acabamos de describir en esta",
+        "start": 4898.94,
+        "end": 4906.74
+    },
+    {
+        "text": " distribución de la de la carga que tenemos acá en estas ecuaciones que de lado del surz tengo",
+        "start": 4906.74,
+        "end": 4915.179999999999
+    },
+    {
+        "text": " más carga que está por esto mientras que de lado el drag en tengo una carga que vale ese prima",
+        "start": 4915.179999999999,
+        "end": 4919.94
+    },
+    {
+        "text": " os por bgb menos bt 0 menos 1 más delta por la tensión de drag o sea que depende de la tensión",
+        "start": 4919.94,
+        "end": 4925.98
+    },
+    {
+        "text": " de drag como como estamos viendo cuál sería como de dónde cambiaría algo si ahora sigo aumentando",
+        "start": 4925.98,
+        "end": 4933.139999999999
+    },
+    {
+        "text": " la tensión de drag y donde tende un cambio cualitativo en esta en este comportamiento que va a",
+        "start": 4933.139999999999,
+        "end": 4942.5199999999995
+    },
+    {
+        "text": " pasar si sigo aumentando la tensión de drag que va a cambiar en ese dibujo la carga acá en el",
+        "start": 4942.52,
+        "end": 4960.3
+    },
+    {
+        "text": " surz no va a cambiar pues no depende de la tensión de drag y la que va a cambiar es la carga que",
+        "start": 4960.3,
+        "end": 4964.92
+    },
+    {
+        "text": " tengo en esta punta hay que le va a pasar si sigo aumentando la tensión de drag",
+        "start": 4964.92,
+        "end": 4969.0
+    },
+    {
+        "text": " va aumentar la resistencia de alguna medida si un poco va a aumentar la resistencia pero en",
+        "start": 4972.0,
+        "end": 4979.04
+    },
+    {
+        "text": " definitiva la carga que tengo acá va a ir bajando digamos no según aquella ecuación que está",
+        "start": 4979.04,
+        "end": 4984.36
+    },
+    {
+        "text": " abajo si vdb aumenta como este sin o menos en realidad la carga que tengo en esta punta o sea",
+        "start": 4984.36,
+        "end": 4989.88
+    },
+    {
+        "text": " este trapecio esta punta al trapecio se va a ir afinando cada vez más y bueno si quieren",
+        "start": 4989.88,
+        "end": 4997.24
+    },
+    {
+        "text": " hay un cambio un cambio cualitativo ocurre cuando la tensión de drag es suficientemente alta para",
+        "start": 4997.24,
+        "end": 5005.72
+    },
+    {
+        "text": " que la carga en este punto se haga cero que es lo que se conoce como que a veces se dice como que el",
+        "start": 5005.72,
+        "end": 5012.92
+    },
+    {
+        "text": " canal se extrangole digamos o se pesizque el vdb tal que cubrima ahí en el drag",
+        "start": 5012.92,
+        "end": 5032.52
+    },
+    {
+        "text": " es igual cero se lo conoce como vzp o que viene el p viene de tensión de pinch of",
+        "start": 5032.52,
+        "end": 5046.8
+    },
+    {
+        "text": " que pinch en inglés es pellizcar es la tensión en la cual el canal se apreta y se pellizca digamos",
+        "start": 5050.4400000000005,
+        "end": 5058.360000000001
+    },
+    {
+        "text": " donde la carga sería prácticamente cero en realidad la carga no se va a hacer realmente cero",
+        "start": 5058.92,
+        "end": 5064.5199999999995
+    },
+    {
+        "text": " este poca más y si cierra cero se cortaría la corriente que sería algo medio raro por viene",
+        "start": 5066.12,
+        "end": 5070.679999999999
+    },
+    {
+        "text": " subiendo la corriente y de repente y de repente se corta en realidad que volvemos a unas",
+        "start": 5070.679999999999,
+        "end": 5078.24
+    },
+    {
+        "text": " paratagas que la carga no sea gaseiro tiene que ver con en realidad tiene que ver con que nosotros",
+        "start": 5078.24,
+        "end": 5083.44
+    },
+    {
+        "text": " estamos razonando sobre esta recta a razonando que esto es una recta y la otra que nos aparece en",
+        "start": 5083.44,
+        "end": 5090.2
+    },
+    {
+        "text": " función de bcb también sigue siendo una recta y que cuando llegamos a este punto la carga se",
+        "start": 5090.2,
+        "end": 5095.08
+    },
+    {
+        "text": " hace exactamente cero pero en realidad en esa zona en que diríamos la carga se hace cero en realidad",
+        "start": 5095.08,
+        "end": 5099.5199999999995
+    },
+    {
+        "text": " estoy más bien funcionando en esta modalidad o sea la carga no se hizo cero sino que sigue bajando",
+        "start": 5099.5199999999995,
+        "end": 5104.48
+    },
+    {
+        "text": " gradualmente pero a los efectos de nuestro modelo simplificado es como si la carga se",
+        "start": 5104.48,
+        "end": 5109.759999999999
+    },
+    {
+        "text": " hiciera prácticamente cero ahí y ahí vamos a tener un cambio comportamiento entonces eso",
+        "start": 5109.76,
+        "end": 5115.04
+    },
+    {
+        "text": " da origen a lo que se conoce como a la funcionamiento en la otra zona en la zona de saturación una vez",
+        "start": 5115.04,
+        "end": 5121.88
+    },
+    {
+        "text": " que la carga se hizo cero en esta punta que en realidad el perfil de carga pasó de ser un",
+        "start": 5121.88,
+        "end": 5126.68
+    },
+    {
+        "text": " trapecio hacer un triángulo más bien entonces si sigo de ahí para adelante lo que tenemos es que",
+        "start": 5126.68,
+        "end": 5136.400000000001
+    },
+    {
+        "text": " el punto es donde la carga se anula a bastar cada vez más atrás o sea cuando BD es igual a",
+        "start": 5136.4,
+        "end": 5143.04
+    },
+    {
+        "text": " atención de pinchof la carga se va anular acá pero si sigo aumentando BD el punto en el cual se",
+        "start": 5143.04,
+        "end": 5149.32
+    },
+    {
+        "text": " anula la carga a bastar antes y cuando eso ocurre esencialmente lo que termina pasando es como que la",
+        "start": 5149.32,
+        "end": 5158.32
+    },
+    {
+        "text": " corriente queda determinada por lo que pase en este pedazo del transistor en la zona esta del",
+        "start": 5158.32,
+        "end": 5163.48
+    },
+    {
+        "text": " triángulo y pasa hacer independiente de alguna medida del BD en primera aproximaciones independiente",
+        "start": 5163.48,
+        "end": 5171.959999999999
+    },
+    {
+        "text": " del BD o sea si BD aumenta este punto se corre un poquito pero en definitiva la corriente no cambia",
+        "start": 5171.959999999999,
+        "end": 5178.0
+    },
+    {
+        "text": " porque queda esencialmente determinada por la cantidad de carga que tengo acá sí",
+        "start": 5178.0,
+        "end": 5182.879999999999
+    },
+    {
+        "text": " digamos el siguiente el origen físico de eso era esto digamos no es decir que si si uno",
+        "start": 5182.88,
+        "end": 5196.16
+    },
+    {
+        "text": " aumenta la atención que tenemos en este tercer terminal que en ese caso sería el del",
+        "start": 5196.16,
+        "end": 5200.64
+    },
+    {
+        "text": " drain si mantengo la atención de gate constante va a haber electrones digamos que terminan",
+        "start": 5200.64,
+        "end": 5208.68
+    },
+    {
+        "text": " yendo más atraídos hacia atención de ese tercer terminal y no atraídos por el gate y formando",
+        "start": 5208.68,
+        "end": 5213.400000000001
+    },
+    {
+        "text": " el canal y eso se refleja las ecuaciones en este término restando acá que además existe",
+        "start": 5213.400000000001,
+        "end": 5220.200000000001
+    },
+    {
+        "text": " lo que se llama el efecto sustrato que hace que aparezca este delta o sea que no sea simplemente",
+        "start": 5220.200000000001,
+        "end": 5225.240000000001
+    },
+    {
+        "text": " restar BCB si no es algo más grande que BCB entonces eso es lo que está pasando al lado del drain",
+        "start": 5225.240000000001,
+        "end": 5232.12
+    },
+    {
+        "text": " y acá pasa un poco y así aquesto se chicara pero si aumentó suficiente este término si",
+        "start": 5232.12,
+        "end": 5241.4
+    },
+    {
+        "text": " aumentó suficiente este término la carga puede llegar a ser cero o prácticamente cero que en",
+        "start": 5241.4,
+        "end": 5247.74
+    },
+    {
+        "text": " realidad no va a ser estrictamente cero de vuelta porque cerca el cero nosotros estamos",
+        "start": 5247.74,
+        "end": 5251.7
+    },
+    {
+        "text": " aproximando las cosas y nos estamos modelando la realidad bien entonces en esta situación tendríamos",
+        "start": 5251.7,
+        "end": 5261.0
+    },
+    {
+        "text": " al transistor en saturación entonces dentro de algunas semanas a esta altura vamos a deducir",
+        "start": 5261.0,
+        "end": 5271.56
+    },
+    {
+        "text": " primero las ecuaciones de la corriente en esta situación en la zona lineal y después vamos",
+        "start": 5271.56,
+        "end": 5278.36
+    },
+    {
+        "text": " entonces ir a deducir a partir de lo que pasa en este pedazo el transistor deducir cual",
+        "start": 5278.36,
+        "end": 5283.72
+    },
+    {
+        "text": " es la corriente en saturación y lo otro que vamos a ver es que este perfil de carga que me va",
+        "start": 5283.72,
+        "end": 5292.72
+    },
+    {
+        "text": " que está asociado de la corriente da origen a una manera uno puede ver esto en un diagrama",
+        "start": 5292.72,
+        "end": 5299.52
+    },
+    {
+        "text": " gráfico que le permite calcular la corriente sobre esa gráfica como una cierta área y eso a veces",
+        "start": 5299.52,
+        "end": 5305.92
+    },
+    {
+        "text": " es fácil para deducir las ecuaciones de la corriente entonces este decíamos bueno en este",
+        "start": 5305.92,
+        "end": 5313.08
+    },
+    {
+        "text": " caso tenemos que en este lado la tensión en el canal si quieren es la que tengo en el sur que",
+        "start": 5313.08,
+        "end": 5317.62
+    },
+    {
+        "text": " es cero en este punto que la carga se anula la tensión en el canal es la tensión de pinchof que",
+        "start": 5317.62,
+        "end": 5324.84
+    },
+    {
+        "text": " es la tensión a la cual la carga justamente se anula se hace prácticamente cero o cero según",
+        "start": 5324.84,
+        "end": 5329.32
+    },
+    {
+        "text": " aquella ecuación y de ahí para adelante la tensión varía entre la tensión de pinchof y la",
+        "start": 5329.32,
+        "end": 5334.68
+    },
+    {
+        "text": " tensión de dragin que yo tenga cada esta punto voy a tener la tensión de dragin",
+        "start": 5334.68,
+        "end": 5338.36
+    },
+    {
+        "text": " bueno eso es la adeusión de la tensión de pinchof que revimos allá en el pizarrón que es en",
+        "start": 5339.36,
+        "end": 5345.28
+    },
+    {
+        "text": " qué momento esto se hace cero y perdón no la vimos no dijimos lo que era pero no la vimos",
+        "start": 5345.28,
+        "end": 5350.36
+    },
+    {
+        "text": " la tensión de pinchof entonces es cuánto tiene que valer bdb para que esto valga cero que si uno",
+        "start": 5350.36,
+        "end": 5357.179999999999
+    },
+    {
+        "text": " despeja cabe debe igualando esto a cero queda esto que está acá si igual lo acá despejo bch para",
+        "start": 5357.179999999999,
+        "end": 5364.88
+    },
+    {
+        "text": " que esto me des cero me queda que ese bch es bg menos b t cero sobre uno más delta y a esa",
+        "start": 5364.88,
+        "end": 5372.0
+    },
+    {
+        "text": " tensión se la conoce también como bd sat porque es la tensión de dragin a la cual el transistor",
+        "start": 5372.0,
+        "end": 5376.64
+    },
+    {
+        "text": " satura bueno ahí decíamos que la corriente está determinada por lo que pasa en esta zona o sea",
+        "start": 5376.64,
+        "end": 5386.64
+    },
+    {
+        "text": " es la tensión de pinchof dividir una resistencia que depende de la carga de inversión que esas son",
+        "start": 5386.64,
+        "end": 5392.6
+    },
+    {
+        "text": " las cuentas que vamos a dar la próxima clase y finalmente volvemos a nuestro esquema original eso",
+        "start": 5392.6,
+        "end": 5400.240000000001
+    },
+    {
+        "text": " da origen a un comportamiento de este tipo o sea cuando yo voy aumentando bg",
+        "start": 5400.240000000001,
+        "end": 5404.92
+    },
+    {
+        "text": " cambia la corriente que tenga en función de la tensión de dragin y acá tenemos las tensiones",
+        "start": 5408.56,
+        "end": 5413.76
+    },
+    {
+        "text": " de pinchof que también van variando con bg porque van bg menos b t cero sobre uno más delta",
+        "start": 5413.76,
+        "end": 5419.72
+    },
+    {
+        "text": " a medida que aumenta bg aumenta también la tensión de pinchof y este y bueno y esa es entonces el",
+        "start": 5422.6,
+        "end": 5441.360000000001
+    },
+    {
+        "text": " comportamiento del transistor la zona de saturación la zona lineal y la zona de corte que no está",
+        "start": 5441.360000000001,
+        "end": 5446.320000000001
+    },
+    {
+        "text": " que no está dibujada quería acá bien bueno con esto avanzamos bastante les digo buena suerte en",
+        "start": 5446.32,
+        "end": 5455.4
+    },
+    {
+        "text": " los parciales en la entrega nuestra y bueno",
+        "start": 5455.4,
+        "end": 5458.32
+    }
+]
