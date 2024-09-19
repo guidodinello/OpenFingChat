@@ -77,7 +77,7 @@ print(f"ID {id}\n")
 s = model.get(id)
 print(f"Retrieved subject: {s}\n")
 
-all = model.getAll()
+all = model.get_all()
 print(f"All subjects: {all}\n")
 
 
@@ -85,7 +85,7 @@ lessons = LessonModel()
 id1 = lessons.create(id, "Clase 1","url1", "videourl1")
 id2 = lessons.create(id, "Clase 2","url2", "videourl2")
 
-allS = lessons.getAll()
+allS = lessons.get_all()
 print(f"All lessons: {allS}\n")
 
 s1 = lessons.get(id1)
@@ -93,18 +93,19 @@ print(f"Retrieved Lesson: {s1}\n")
 
 lessons.update(id1, {"transcribed": True})
 
-sTranscribed = lessons.getBy({"transcribed": False})
+sTranscribed = lessons.get_by({"transcribed": False})
 print(f"Retrieved Lesson Not Transcribed: {sTranscribed}\n")
 
 
-sWithLessons = model.get(id, True)
-print(f"Retrieved subject with lessons: {sWithLessons}\n")
+swith_lessons = model.get(id, True)
+print(f"Retrieved subject with lessons: {swith_lessons}\n")
 ```
 
 ### Embedding
 
 ## Transcriptor
-Este  modulo se encarga de transcribir las clases de las materias almacenadas en la base de datos de MongoDB. Actualmente se transcriben solo las clases de las materias definidas dentro del arreglo subjects en el archivo `transcriptor/transcriptor.py`. Para ejecutar el transcriptor, se debe correr el siguiente comando:
+
+Este modulo se encarga de transcribir las clases de las materias almacenadas en la base de datos de MongoDB. Actualmente se transcriben solo las clases de las materias definidas dentro del arreglo subjects en el archivo `transcriptor/transcriptor.py`. Para ejecutar el transcriptor, se debe correr el siguiente comando:
 
 ```bash
 python main.py transcriptor
@@ -152,38 +153,53 @@ fastapi (run | dev) backend/api.py
 
 > Note: [See FastAPI CLI docs](https://fastapi.tiangolo.com/fastapi-cli/)
 
-## Chat
+## Set up
 
-### Deploy
+1. Run the docker compose file to instantiate the mongo db
+2. Run the scrapper to load the mongo db
+3. Transcribe some lessons
+4. Merge the existing db with one with the new transcriptions
 
-Para hacer el deploy del Chat en vercel, seguir los siguientes pasos:
+## Improvements
 
-1. Instalar (globalmente) Vercel CLI:
+-   [ ] Make the scrapper async.
+-   [ ] Make the backend async or multithreaded.
+-   [ ] Standarize logging usage.
+-   [ ] Standarize argparse usage.
+-   [ ] Define a config file for the project. toml or but in a way that the ide can autocomplete.
+-   [ ] Use a free LLM model
+-   [ ] Fine tune the model to enforce the answer style. Say theres no fonud info if it got no chunks
+-   [ ] (Interesante para jugar) "perform maximum inner product search instead of minimum Euclidean search. There is also limited support for other distances (L1, Linf, etc.)." [faiss docs](https://faiss.ai/). osea que podriamos hacer algo divertido como responder lo mas opuesto a lo que se pregunta.
+-   [ ] Agregar el reranker. [bge-m3](https://huggingface.co/BAAI/bge-m3) ver el bge-reranker en el link.
+-   [ ] Leer https://cookbook.openai.com/examples/whisper_processing_guide e implementar algun audio pre processing
 
+
+## Tools
+
+-   mypy
+-   ruff
+-   pylint
+-   pyupgrade
+
+## Setting up the db
+
+```bash
+mongosh "mongodb://${MONGO_ROOT_USER}:${MONGO_ROOT_PASSWORD}@localhost:27017"
+
+Current Mongosh Log ID: xxx
+Connecting to: mongodb://<credentials>@localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.6
+Using MongoDB: 7.0.11
+Using Mongosh: 2.2.6
+
+test> use admin
+switched to db admin
+admin> db.grantRolesToUser("admin", [{ role: "readWrite", db: "openfing" }])
+{ ok: 1 }
+admin>
+
+admin> use openfing
+switched to db openfing
+openfing> show collections
+lessons
+subjects
 ```
-npm install -g vercel
-```
-
-2. Iniciar sesión con vercel
-
-```
-vercel login
-```
-
-Usar el email `webirgrupo3@gmail.com`. Luego entrar a gmail con ese correo y contraseña `WEBIRwebir` para verificar (si pide un codigo se los mando porque asocie mi telefono).
-
-Todo esto porque no permitia crear team en la version gratis.
-
-3. Ir al directorio del chat
-
-```
-cd chat
-```
-
-4. Ejecutar el script para el deploy
-
-```
-npm run deploy
-```
-
-![alt text](image-1.png)
